@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ai-chef-v1';
+const CACHE_NAME = 'ai-chef-v2';
 const BASE_PATH = '/AI-Chef';
 const urlsToCache = [
   `${BASE_PATH}/`,
@@ -17,9 +17,28 @@ self.addEventListener('install', event => {
         return cache.addAll(urlsToCache);
       })
   );
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', event => {
+  // Network First for HTML navigation to ensure we get latest updates
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          return caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        })
+        .catch(() => {
+          return caches.match(event.request);
+        })
+    );
+    return;
+  }
+
+  // Cache First for assets
   event.respondWith(
     caches.match(event.request)
       .then(response => {
