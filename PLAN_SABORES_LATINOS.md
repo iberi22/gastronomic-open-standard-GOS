@@ -1,87 +1,66 @@
-# 📖 Plan Maestro: Recetario de Sabores Latinos
+# 📖 Plan Maestro: Recetario de Sabores Latinos & AI-Chef
 
-Este documento sirve como guía central para el agentes de codificación investigacion y colaboradores. El objetivo es transformar este repositorio en la enciclopedia definitiva de la cocina latinoamericana, uniendo tradición, ciencia y comunidad.
-
----
-
-## 🌎 1. Visión del Proyecto
-
-La misión es crear un recetario digital, de código abierto y perpetuamente enriquecido que celebre la diversidad y riqueza de la gastronomía de América Latina. Cada receta no será solo una lista de pasos, sino un documento completo que incluya:
-
-- **Historia y Cultura:** El contexto y la importancia del plato.
-- **Instrucciones Claras:** Guías paso a paso, fáciles de seguir.
-- **Análisis Científico:** Perfiles nutricionales y compuestos bioactivos de los ingredientes.
-- **Sabiduría Colectiva:** Consejos, trucos y variaciones populares extraídas de la comunidad.
-- **Recursos Visuales:** Múltiples imágenes de alta calidad y enlaces a videos de referencia.
-
-## 📁 2. Estructura de Carpetas
-
-Para asegurar la escalabilidad y organización, todas las recetas se estructurarán por país. Cada receta tendrá su propia carpeta, que contendrá el archivo `.md` y una subcarpeta para imágenes.
-
-```markdown
-/dishes/
-├── /argentina/
-│   ├── /asado/
-│   │   ├── asado.md
-│   │   └── /images/
-│   └── /empanadas_tucumanas/
-├── /mexico/
-│   ├── /mole_poblano/
-│   └── /tacos_al_pastor/
-├── /peru/
-│   ├── /ceviche/
-│   └── /lomo_saltado/
-└── ... (y así sucesivamente con cada país)
-```markdown
-
-## 🛠️ 3. Metodología de Enriquecimiento de Recetas (Guía para Jules)
-
-Cada receta debe ser desarrollada siguiendo estas cinco fases metodológicas:
-
-### Fase 1: Selección y Estructura
-
-1. **Elegir un País:** Seleccionar un país para enfocar los esfuerzos (ej. Perú, México, Argentina).
-2. **Investigar Platos Emblemáticos:** Identificar entre 5 y 10 recetas icónicas que representen la diversidad de su cocina (entradas, platos fuertes, postres, bebidas).
-3. **Crear la Estructura:** Generar la estructura de carpetas y el archivo `.md` vacío para el primer plato seleccionado.
-
-### Fase 2: Receta Base
-
-1. **Investigación Inicial:** Consultar múltiples fuentes (blogs de chefs reconocidos, videos populares, libros de cocina) para entender la receta a fondo.
-2. **Redacción del Contenido Base:** Poblar el archivo `.md` con:
-    - Un título atractivo con emojis (ej. `🇵🇪 Ceviche Clásico: Frescura y Tradición`).
-    - Una breve introducción sobre la historia y cultura del plato.
-    - Información general: Dificultad, tiempo de preparación, porciones.
-    - Lista de ingredientes detallada.
-    - Instrucciones paso a paso.
-    - Sección de variaciones y consejos iniciales.
-    - Marcadores de posición para al menos 2 imágenes.
-
-### Fase 3: Análisis Científico
-
-1. **Identificar Ingredientes Clave:** Seleccionar los 5-8 ingredientes más importantes de la receta.
-2. **Investigación Nutricional:** Para cada ingrediente, buscar su perfil nutricional (calorías, macros, vitaminas, minerales) por 100g, citando fuentes fiables como el USDA.
-3. **Investigación de Compuestos Bioactivos:** Investigar y documentar compuestos de interés (ej. licopeno en tomates, capsaicina en chiles, antioxidantes en hierbas) y sus beneficios, enlazando a estudios o artículos científicos si es posible.
-
-### Fase 4: Sabiduría Colectiva
-
-1. **Análisis de Comentarios:** Revisar secciones de comentarios en blogs de recetas populares y videos de YouTube sobre el plato.
-2. **Síntesis de Consejos:** Extraer y sintetizar los 3-5 consejos, trucos o variaciones más repetidos y útiles mencionados por la comunidad (ej. "_El secreto que muchos mencionan es usar jugo de limón recién exprimido_" o "_Una variación popular es añadir un toque de jengibre rallado_").
-
-### Fase 5: Integración y Revisión Final
-
-1. **Crear la Sección de Análisis:** Añadir una nueva sección al final del `.md` llamada `🔬 Análisis Detallado y Sabiduría Colectiva`.
-2. **Integrar la Información:** Formatear y añadir toda la información recopilada en las fases 3 y 4 en esta nueva sección, asegurando que las fuentes y enlaces estén correctamente citados.
-3. **Añadir Imágenes:** Reemplazar los marcadores de posición con imágenes de alta calidad.
-4. **Revisión Final:** Leer todo el documento para asegurar coherencia, claridad y un formato impecable.
+Este documento sirve como guía central para el desarrollo del repositorio. El objetivo ha evolucionado de un simple recetario a una **plataforma de datos culinarios inteligentes**, uniendo tradición, ciencia y tecnología de vanguardia.
 
 ---
 
-## 🚀 4. Plan de Acción Inicial (Primeros Pasos para Jules)
+## 🌎 1. Visión del Proyecto: "AI-Chef"
 
-Para comenzar, se propone el siguiente plan de acción:
+La misión es crear la enciclopedia definitiva de la cocina, donde cada receta es un nodo de información conectado. No solo instrucciones, sino:
 
-1. **País de Inicio:** `Perú`.
-2. **Primera Receta:** `Ceviche Clásico`.
-3. **Ejecutar Fases:** Aplicar la metodología de enriquecimiento completa (Fases 1-5) para la receta de ceviche.
-4. **Segunda Receta:** Una vez completado el ceviche, continuar con `Lomo Saltado`.
-5. **Crear Plantilla:** Después de las dos primeras recetas, crear un archivo `template_receta.md` para estandarizar y agilizar el proceso futuro.
+-   **Ciencia de Datos**: Nutrición exacta calculada ingrediente por ingrediente.
+-   **Inteligencia Artificial**: Generación de perfiles sensoriales y análisis químico.
+-   **Interoperabilidad**: Estructura lista para APIs de comercio y apps de salud.
+
+---
+
+## 🛠️ 2. Metodología "Scientific Standard"
+
+Todas las recetas deben cumplir con el protocolo definido en `PLAN_DE_ESTANDARIZACION.md`. El flujo de trabajo es automatizado:
+
+### Fase 1: Ingesta y Estructura
+Las recetas nuevas o existentes se procesan mediante `automation/standardize_recipes.py`. Este agente de IA:
+1.  Lee el texto original.
+2.  Extrae entidades (Ingredientes, Cantidades, Unidades).
+3.  Convierte unidades a gramos para precisión científica.
+
+### Fase 2: Vinculación de Ingredientes (Linking)
+El sistema no guarda strings ("tomate"), sino referencias:
+-   Busca en la base de datos `ingredients/`.
+-   Si no existe, crea el ingrediente usando datos del USDA/Ciencia (vía IA) siguiendo `PROTOCOLO_INGREDIENTES.md`.
+-   Calcula la nutrición de la receta sumando los aportes parciales de cada ingrediente vinculado.
+
+### Fase 3: Enriquecimiento
+Se generan metadatos avanzados:
+-   **Perfil Sensorial**: Radar chart data (Salado, Umami, Amargo, etc. del 0-10).
+-   **Tags Inteligentes**: Clasificación taxonómica y cultural.
+-   **Análisis Científico**: Una sección markdown explicativa sobre las reacciones fisicoquímicas del plato.
+
+---
+
+## 📁 3. Organización del Repositorio
+
+```text
+/
+├── dishes/               # Recetas (Markdown + Frontmatter Científico)
+│   ├── colombian/
+│   ├── china/
+│   └── ...
+├── ingredients/          # Base de Datos de Ingredientes (Single Source of Truth)
+│   ├── legumes/
+│   ├── proteins/
+│   └── ...
+├── automation/           # Cerebro del Proyecto
+│   ├── standardize_recipes.py  # Script de IA
+│   ├── audit_recipes.py        # Control de Calidad
+│   └── requirements.txt
+└── site/                 # Frontend (Astro) para visualización
+```
+
+---
+
+## 🚀 4. Roadmap de Ejecución
+
+1.  **Migración Masiva**: Ejecutar los scripts de estandarización sobre todo el corpus existente (ver `TASK.md`).
+2.  **Validación de Datos**: Revisión humana de los ingredientes generados para asegurar precisión crítica (alérgenos, macros).
+3.  **API Deployment**: Exponer los datos JSON/YAML a través de endpoints para aplicaciones externas.

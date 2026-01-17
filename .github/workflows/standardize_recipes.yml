@@ -1,3 +1,36 @@
+name: Standardize Recipes with AI
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_directory:
+        description: 'Directory to process (e.g., dishes/colombian/andina)'
+        required: true
+        default: 'dishes/colombian/andina'
+      limit:
+        description: 'Max number of recipes to process'
+        required: false
+        default: '5'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  standardize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install google-generativeai PyYAML python-frontmatter pydantic
+
       - name: Run Standardization Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -5,3 +38,11 @@
           python automation/standardize_recipes.py \
             --target_directory "${{ inputs.target_directory }}" \
             --limit ${{ inputs.limit }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "AI Recipe Standardization: ${{ inputs.target_directory }}"
+          body: "Automated standardization of recipes to scientific format."
+          branch: "ai-standardize-recipes"
+          delete-branch: true
