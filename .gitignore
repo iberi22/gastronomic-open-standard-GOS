@@ -1,13 +1,29 @@
-# Dependency directories
-node_modules/
-.history
-.DS_Store
 
-.idea
-*.iml
-# ¡NO ignores .husky! Los hooks deben versionarse para Husky
-# .husky/
-mkdocs.yml
-site/dist/
-site/node_modules/
-.cache/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.astro/
+
+# Automation
+automation_log.txt
+automation/recipe_audit_report.csv

@@ -1,0 +1,7 @@
+      - name: Run Standardization Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python automation/standardize_recipes.py \
+            --target_directory "${{ inputs.target_directory }}" \
+            --limit ${{ inputs.limit }}

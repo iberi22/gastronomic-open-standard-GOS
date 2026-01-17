@@ -1,0 +1,4 @@
+google-generativeai
+PyYAML
+python-frontmatter
+pydantic
