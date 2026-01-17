@@ -1,160 +1,86 @@
-# 📡 AI-Chef Recipe API
+# API & Data Access Documentation
 
-A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically generated from markdown files.
+The **AI-Chef** project exposes its culinary database through structured JSON artifacts and CLI tools. This allows external applications (e.g., e-commerce, health apps) to consume our scientific recipe data.
 
-## Quick Start
+## 📂 Data Artifacts
 
-```bash
-# Get all recipes
-curl https://iberi22.github.io/AI-Chef/api/all.json
+We generate a static JSON index of all recipes. This is available in the `output/` directory after running the indexing script.
 
-# Get Colombian recipes
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json
+*   **Full Index**: `output/all_recipes.json` (Human readable)
+*   **Minified**: `output/all_recipes.min.json` (Bandwidth optimized)
 
-# Get Chinese recipes
-curl https://iberi22.github.io/AI-Chef/api/chinese/china.json
-```
-
-## 📊 Statistics
-
-- **Total Recipes**: 428
-- **Languages**: Chinese (325), Spanish (103)
-- **Countries**: China (324), Colombia (101), Peru (1)
-- **With Metadata**: 103 recipes (Colombian & Peruvian)
-- **Without Metadata**: 325 recipes (Chinese)
-
-## 🌐 Endpoints
-
-### Main Endpoints
-
-| Endpoint | Description | Count |
-|----------|-------------|-------|
-| `/api/index.json` | API index with all available endpoints | - |
-| `/api/all.json` | All recipes | 428 |
-| `/api/with-metadata.json` | Recipes with YAML frontmatter | 103 |
-| `/api/without-metadata.json` | Recipes without metadata (Chinese) | 325 |
-
-### By Language
-
-| Endpoint | Description | Count |
-|----------|-------------|-------|
-| `/api/spanish/index.json` | All Spanish recipes | 103 |
-| `/api/spanish/colombia.json` | Colombian recipes | 101 |
-| `/api/spanish/peru.json` | Peruvian recipes | 1 |
-| `/api/chinese/index.json` | All Chinese recipes | 325 |
-| `/api/chinese/china.json` | Chinese recipes | 324 |
-
-### By Country
-
-| Endpoint | Description | Count |
-|----------|-------------|-------|
-| `/api/countries/colombia.json` | All Colombian recipes | 101 |
-| `/api/countries/china.json` | All Chinese recipes | 324 |
-| `/api/countries/peru.json` | All Peruvian recipes | 1 |
-
-## 📦 Response Schema
+### JSON Schema
 
 ```json
 {
+  "metadata": {
+    "generated_at": "2023-10-27T10:00:00",
+    "count": 150,
+    "version": "1.0"
+  },
   "recipes": [
     {
-      "id": "colombian/nacionales/chuzo",
-      "title": "Chuzo Colombiano (Brocheta Callejera)",
-      "language": "spanish",
-      "country": "colombia",
-      "hasMetadata": true,
-      "metadata": {
-        "title": "Chuzo Colombiano...",
-        "region": "Nacional",
-        "categories": ["Snack", "Comida callejera"],
-        "difficulty": "★★☆☆☆",
-        "prep_time": "40 minutos",
-        "cook_time": "30 minutos",
-        "servings": 6
+      "id": "bandeja_paisa",
+      "title": "Bandeja Paisa",
+      "country": "Colombia",
+      "standard_compliance": "GOLD", // or "LEGACY"
+      "nutrition": {
+        "calories": 850,
+        "protein_g": 45
       },
-      "category": ["Snack", "Comida callejera"],
-      "difficulty": "★★☆☆☆",
-      "prepTime": "40 minutos",
-      "cookTime": "30 minutos",
-      "servings": 6,
-      "mainIngredients": ["Carne de res", "Pollo", "Papa salada"],
-      "tags": ["colombiano", "tradicional", "chuzo"],
-      "filePath": "dishes/colombian/nacionales/chuzo.md"
+      "sensory": {
+        "salty": 7,
+        "umami": 8
+      },
+      "ingredients": [
+        {
+          "name": "Red Beans",
+          "quantity": 200,
+          "unit": "g",
+          "ingredient_id": "legumes/kidney_bean"
+        }
+      ]
     }
-  ],
-  "count": 101
+  ]
 }
 ```
 
-## 💻 Usage Examples
+## 🛠️ CLI Tools
 
-### JavaScript / Fetch API
+### 1. Indexing (Generate the JSON)
 
-```javascript
-fetch('https://iberi22.github.io/AI-Chef/api/spanish/colombia.json')
-  .then(res => res.json())
-  .then(data => {
-    console.log(`Found ${data.count} Colombian recipes`);
-    data.recipes.forEach(recipe => {
-      console.log(`- ${recipe.title} (${recipe.difficulty})`);
-    });
-  });
-```
-
-### Python / Requests
-
-```python
-import requests
-
-response = requests.get(
-    'https://iberi22.github.io/AI-Chef/api/chinese/china.json'
-)
-data = response.json()
-
-print(f"Found {data['count']} Chinese recipes")
-for recipe in data['recipes']:
-    print(f"- {recipe['title']}")
-```
-
-### cURL + jq
+Run this to refresh the database after editing recipes.
 
 ```bash
-# Get all languages
-curl https://iberi22.github.io/AI-Chef/api/index.json | jq '.languages'
-
-# Get recipe titles from Colombia
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json | jq '.recipes[].title'
-
-# Filter recipes by difficulty
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
+python automation/index_recipes.py
 ```
 
-## 🔧 How It Works
+### 2. Search Engine
 
-1. **Scanning**: The `generate-api.js` script scans all `.md` files in `/dishes`
-2. **Detection**:
-   - Language detected by character patterns (Chinese vs Spanish)
-   - Country inferred from directory structure
-   - Metadata parsed using `gray-matter` (YAML frontmatter)
-3. **Grouping**: Recipes organized by language, country, and metadata presence
-4. **Generation**: Static JSON files created in `/public/api/`
-5. **Deployment**: Published with GitHub Pages
+Query the local database.
 
-## 📝 Notes
+```bash
+# Search by text
+python automation/search_recipes.py --query "chicken"
 
-- **Chinese recipes** don't have YAML frontmatter metadata (legacy format)
-- **Colombian & Peruvian recipes** have complete structured metadata
-- All endpoints support **CORS** - use from any domain
-- Data is **static JSON** - fast and cacheable
-- Updated automatically on every deployment
-- No authentication required - free and open
+# Search by tag
+python automation/search_recipes.py --tag "Vegetarian"
 
-## 🔗 Links
+# Output as JSON (for piping to other tools)
+python automation/search_recipes.py --query "soup" --json
+```
 
-- **API Documentation**: <https://iberi22.github.io/AI-Chef/api-docs>
-- **Main Site**: <https://iberi22.github.io/AI-Chef/>
-- **GitHub Repository**: <https://github.com/iberi22/AI-Chef>
+## 🔄 Integration Guide
 
-## 📄 License
+To use this data in your application:
 
-MIT - Same as the recipe collection
+1.  **GitHub Pages**: The `all_recipes.min.json` file is deployed to our `gh-pages` branch. You can fetch it directly via HTTP.
+    *   URL: `https://[username].github.io/[repo]/output/all_recipes.min.json`
+2.  **Submodule**: Add this repo as a submodule and read the `output/` directory.
+
+## 📊 Scientific Standard
+
+Recipes marked as `GOLD` compliance contain:
+*   Exact nutritional data calculated from ingredient mass.
+*   Links to the `ingredients/` taxonomy.
+*   Sensory profiles (0-10) for intelligent matching.

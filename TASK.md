@@ -18,6 +18,7 @@ Transformar cada receta en una estructura de datos rica (YAML) con:
 - **Herramientas de Auditoría**: ✅ Listas (`automation/audit_recipes.py`)
 - **Motor de Estandarización**: ✅ Listo (`automation/standardize_recipes.py`)
 - **Infraestructura CI/CD**: ✅ Lista (`.github/workflows/standardize_recipes.yml`)
+- **API & Indexación**: ✅ Listas (`automation/index_recipes.py`, `API_README.md`)
 
 ---
 
@@ -45,9 +46,10 @@ Transformar cada receta en una estructura de datos rica (YAML) con:
 - [ ] **Validación Humana**: Revisar los ingredientes generados por IA en `ingredients/` para asegurar que la nutrición (USDA) sea coherente.
 - [ ] **Taxonomía**: Asegurar que las carpetas (`legumes`, `proteins`, etc.) estén limpias.
 
-### Fase 4: Preparación para API
-- [ ] **Indexación**: Crear un script que genere un `all_recipes.json` gigante con toda la data calculada.
-- [ ] **Search Engine**: Implementar búsqueda por "vectores de sabor" (ej: "Buscar plato salado y crujiente con >20g proteína").
+### Fase 4: Preparación para API (Completa)
+- [x] **Indexación**: Crear script `automation/index_recipes.py` para generar `output/all_recipes.json`.
+- [x] **Search Engine**: Implementar CLI `automation/search_recipes.py` para búsquedas locales.
+- [x] **Documentación**: Crear `API_README.md`.
 
 ---
 
@@ -58,11 +60,16 @@ Transformar cada receta en una estructura de datos rica (YAML) con:
 python automation/audit_recipes.py
 ```
 
-### 2. Estandarizar un lote (Localmente)
+### 2. Generar Index API
+```bash
+python automation/index_recipes.py
+```
+
+### 3. Estandarizar un lote (Localmente)
 ```bash
 export GEMINI_API_KEY="tu_api_key"
 python automation/standardize_recipes.py --target_directory "dishes/colombian" --limit 5
 ```
 
-### 3. Estandarizar vía GitHub Actions
+### 4. Estandarizar vía GitHub Actions
 Ir a la pestaña "Actions" -> Seleccionar "Standardize Recipes with AI" -> Run workflow.
