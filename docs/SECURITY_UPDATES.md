@@ -1,8 +1,34 @@
-# Security Updates - December 2025
+# Security Updates
 
-## Vulnerabilities Fixed
+## January 2026
 
-### Date: December 9, 2025
+### Date: January 21, 2026
+
+#### devalue - High Severity (Memory Exhaustion DoS)
+
+- **Package**: devalue
+- **Previous Version**: 5.6.0
+- **Fixed Version**: 5.6.2
+- **Issue**: Denial of Service vulnerability due to memory/CPU exhaustion in `devalue.parse`
+- **Impact**: High - Could cause server crashes or resource exhaustion
+- **Resolution**: Updated via `npm install devalue@5.6.2`
+- **Verification**: Build successful (130 pages in 5.15s)
+
+#### diff (jsdiff) - Low Severity (parsePatch DoS)
+
+- **Package**: diff
+- **Previous Version**: 5.2.0
+- **Fixed Version**: 5.2.2
+- **Issue**: Denial of Service vulnerability in parsePatch and applyPatch methods
+- **Impact**: Low - Limited attack surface in static site generation
+- **Resolution**: Updated via `npm install diff@5.2.2`
+- **Verification**: Zero breaking changes detected
+
+**Commit**: `f47b36e6` - security: fix 2 high-severity vulnerabilities (devalue, diff)
+
+---
+
+## December 2025
 
 #### CVE-2025-64718 (js-yaml) - Moderate Severity
 
