@@ -13,7 +13,11 @@ def get_image_prompt(recipe_path):
     region_match = re.search(r'region: "(.*?)"', content)
     region = region_match.group(1) if region_match else "Cuisine"
 
-    prompt = f"Professional food photography of {title}, {region} style. High resolution, delicious, restaurant lighting."
+    prompt = (
+        f"Professional food photography of {title}, {region} style. "
+        f"GOS (Gastronomic Open Standard) style, Nano Banana aesthetic, "
+        f"minimalist background, cinematic lighting, 8k resolution, vibrant colors."
+    )
     return prompt
 
 if __name__ == "__main__":

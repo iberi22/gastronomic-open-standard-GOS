@@ -1,39 +1,13 @@
 # Reporte de Completitud de Recetas Científicas
 
 ## Resumen
-
-- **Completas (o casi completas):** 100
+- **Completas (o casi completas):** 102
 - **Parciales:** 50
-- **Faltantes (Prioridad Alta):** 23
+- **Faltantes (Prioridad Alta):** 0
 
 ## 🔴 Recetas sin Análisis Detallado (Prioridad)
 
-- [ ] `colombian\README.md`
-- [ ] `colombian\amazonia\README.md`
-- [ ] `colombian\andina\README.md`
-- [ ] `colombian\bebidas\README.md`
-- [ ] `colombian\caribe\README.md`
-- [ ] `colombian\condimentos\README.md`
-- [ ] `colombian\insular\README.md`
-- [ ] `colombian\nacionales\README.md`
-- [ ] `colombian\orinoquia\README.md`
-- [ ] `colombian\otras_preparaciones\README.md`
-- [ ] `colombian\pacifica\README.md`
-- [ ] `colombian\panes\README.md`
-- [ ] `colombian\snacks\README.md`
-- [ ] `peruvian\README.md`
-- [ ] `peruvian\arroz_con_pollo.md`
-- [ ] `peruvian\bebidas\README.md`
-- [ ] `peruvian\condimentos\README.md`
-- [ ] `peruvian\costa\README.md`
-- [ ] `peruvian\otras_preparaciones\README.md`
-- [ ] `peruvian\panes\README.md`
-- [ ] `peruvian\selva\README.md`
-- [ ] `peruvian\sierra\README.md`
-- [ ] `peruvian\snacks\README.md`
-
 ## 🟡 Recetas Parciales (Falta información específica)
-
 - [ ] `china\mariscos\咖喱炒蟹\咖喱炒蟹.md` _Falta: Sección Principal (Análisis Detallado/Sensorial), Datos Sensoriales_
 - [ ] `china\mariscos\响油鳝丝\响油鳝丝.md` _Falta: Sección Principal (Análisis Detallado/Sensorial), Datos Sensoriales_
 - [ ] `china\mariscos\微波葱姜黑鳕鱼\微波葱姜黑鳕鱼.md` _Falta: Sección Principal (Análisis Detallado/Sensorial), Datos Sensoriales_
@@ -86,7 +60,6 @@
 - [ ] `colombian\COLOMBIAN_RECIPES_PLAN.md` _Falta: Sección Principal (Análisis Detallado/Sensorial), Información Nutricional_
 
 ## 🟢 Recetas con Estructura Base Completa
-
 - [x] `colombian\amazonia\aji_negro\aji_negro.md`
 - [x] `colombian\amazonia\casabe\casabe\casabe.md`
 - [x] `colombian\amazonia\farina\farina.md`
@@ -106,6 +79,7 @@
 - [x] `colombian\andina\empanadas\empanadas.md`
 - [x] `colombian\andina\lechona_tolimense\lechona_tolimense.md`
 - [x] `colombian\andina\manjar_blanco\manjar_blanco.md`
+- [x] `colombian\andina\mondongo_antioqueño\mondongo_antioqueño.md`
 - [x] `colombian\andina\mute_santandereano\mute_santandereano.md`
 - [x] `colombian\andina\recetas_andinas.md`
 - [x] `colombian\andina\tamal_tolimense\tamal_tolimense.md`
@@ -187,3 +161,4 @@
 - [x] `colombian\snacks\empanada\empanada.md`
 - [x] `colombian\snacks\pandebono\pandebono.md`
 - [x] `colombian\snacks\pandeyuca\pandeyuca.md`
+- [x] `peruvian\arroz_con_pollo.md`

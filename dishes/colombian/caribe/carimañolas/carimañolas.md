@@ -2,143 +2,132 @@
 title: Carimañolas
 region: Caribe
 categories:
-- Snack
+- Frito
 - Desayuno
-- Entrada
-- Pasaboca
+- Amasijo
 sensory:
   flavor:
-  - Salado
-  - Umami
+  - Neutro (Yuca)
+  - Umami (Relleno)
+  - Graso
   texture:
-  - Crujiente
-  - Cremoso
+  - Crujiente (Corteza)
+  - Cremosa (Masa)
+  - Suave
   aroma:
-  - Ahumado
-  - Herbal
-  presentation: Se sirven calientes, recién fritas, en porciones individuales, ideales
-    para compartir y acompañar con salsas.
+  - Yuca frita
+  - Guiso criollo
+  presentation: Torpedos dorados y crujientes, servidos calientes con suero.
 main_ingredients:
 - Yuca
-- Carne molida
-- Queso costeño
+- Carne Molida (o Queso)
 - Aceite
+- Achiote
 difficulty: ★★★☆☆
 prep_time: 40 minutos
-cook_time: 30 minutos
-servings: 15
+cook_time: 20 minutos
+servings: 10
+nutrition:
+  calories: 280
+  macros:
+    protein_g: 8.0
+    fat_g: 12.0
+    carbs_g: 35.0
+tags:
+- Fritos
+- Desayuno
+- Yuca
 images:
 - url: https://pixabay.com/es/photos/carimañolas-colombia-yuca-6146265/
-  description: Carimañolas tradicionales costeñas (Pixabay)
-- url: https://unsplash.com/s/photos/carimañolas
-  description: Variaciones de carimañolas en Unsplash
+  description: Carimañolas recién fritas (Pixabay)
 sources:
 - https://www.eltiempo.com/vida/receta-carimañolas-46803
-- https://www.gastronomiacolombiana.com/foro/carimañolas
-- https://www.google.com/maps/search/carimañolas+colombianas
-- https://www.youtube.com/results?search_query=carimañolas
-- https://www.tiktok.com/tag/carimañolas
 license: MIT
-description: Las Carimañolas son un pasaboca tradicional de la región Caribe colombiana,
-  especialmente en la costa norte. Se elaboran con masa de yuca rellena de carne o
-  queso y se fríen hasta quedar doradas y crujientes. Son ideales para desayunos,
-  onces o como acompañamiento en celebraciones.
-nutrition:
-  calories: 846
-  macros:
-    protein_g: 80.6
-    fat_g: 47.4
-    carbs_g: 16.3
----## Carimañolas
+description: Las Carimañolas (o caribañolas) son la "croqueta" andina-caribeña por excelencia. Hechas de masa de yuca cocida y rellenas de carne aliñada o queso costeño, son el pilar del desayuno frito costeño.
+---
 
-Las Carimañolas son un pasaboca tradicional de la región Caribe colombiana, especialmente en la costa norte. Se elaboran con masa de yuca rellena de carne o queso y se fríen hasta quedar doradas y crujientes. Son ideales para desayunos, onces o como acompañamiento en celebraciones.
+# Carimañolas
+
+Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos costeños. Su contraste de texturas —una costra fina y crujiente que rompe hacia una masa de yuca suave como puré y un núcleo sabroso— es una obra maestra de ingeniería culinaria básica.
 
 ## Información General
 
-* **Dificultad:** ★★★☆☆
+* **Dificultad:** ★★★☆☆ (El manejo de la masa de yuca requiere tacto)
 * **Tiempo de preparación:** 40 minutos
-* **Tiempo de cocción:** 30 minutos
-* **Porciones:** 15 carimañolas
+* **Tiempo de cocción:** 20 minutos
+* **Porciones:** 10 unidades
 
 ---
 
 ## 📝 Ingredientes
 
-- 1 kg de yuca
-- 300 g de carne molida (res o cerdo) o queso costeño
-- 1 cebolla cabezona
-- 2 dientes de ajo
-- 1 tomate maduro
-- 1 cucharadita de comino
-- 1 cucharadita de color (achiote)
-- Sal y pimienta al gusto
-- Aceite para freír
+* **Masa:**
+    * 1 kg de **[Yuca/Mandioca](../../ingredients/yuca)** (pelada y cocida)
+    * Sal al gusto
+    * 1 cucharadita de aceite (para amasar)
+* **Relleno Clásico (Carne):**
+    * 250 g de carne molida magra
+    * 1/2 taza de **[Hogao](../../condimentos/hogao)** (guiso de tomate y cebolla)
+    * Comino, color y pimienta
+* **Fritura:**
+    * Abundante aceite vegetal neutro
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Preparar la yuca:** Pela y cocina la yuca en agua con sal hasta que esté blanda. Escurre y haz un puré fino.
-2. **Preparar el relleno:** Sofríe la cebolla, ajo y tomate, añade la carne, comino, color, sal y pimienta. Cocina hasta que la carne esté dorada y jugosa. Si usas queso, simplemente desmenúzalo.
-3. **Formar las carimañolas:** Toma porciones de masa de yuca, aplana, coloca una cucharada de relleno y cierra en forma de óvalo, sellando bien los bordes.
-4. **Freír:** Calienta abundante aceite y fríe las carimañolas hasta que estén doradas y crujientes.
-5. **Servir:** Escurre sobre papel absorbente y sirve calientes, acompañadas de suero costeño o ají.
+1. **Cocción de la Yuca:** Cocina la yuca en agua con sal hasta que esté blanda pero FIRME. No dejes que se deshaga. Escurre INMEDIATAMENTE y quita la vena central.
+2. **Molienda en Caliente:** Muele la yuca o pásala por un pasapurés mientras está CALIENTE. Si se enfría, el almidón se retrograda y se pone elástica/gomosa ("cauchuda"), lo cual arruina la textura.
+3. **Amasado:** Amasa el puré con un poco de aceite y sal hasta obtener una masa lisa y manejable.
+4. **Armado:** Haz bolitas, ahueca el centro con el dedo, rellena con la carne (fría y seca, sin mucho líquido) o queso costeño. Cierra formando un óvalo con puntas (forma de zepelín).
+5. **Fritura:** Fríe en aceite bien caliente (180°C) hasta que doren. La yuca ya está cocida, solo buscamos la costra.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes rellenar también con pollo o guiso de verduras para versiones vegetarianas.
-* El secreto de la crocancia está en el aceite bien caliente y la masa de yuca bien escurrida.
-* Acompaña siempre con suero costeño o ají picante.
+* **Carimañolas de Queso:** Rellenas de queso costeño picado. Al freírse, el queso se funde ligeramente.
+* **Congelar:** Se pueden armar y congelar crudas. Se fríen directo del congelador (bajando un poco la temperatura inicial).
 
 ---
 
 ## 📸 Galería
 
-![Carimañolas Costeñas](./images/1.png)
+![Carimañolas](./images/1.png)
 
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Snack, desayuno, entrada
-- **Perfil de sabor dominante:** Salado, Umami
-- **Textura principal:** Crujiente (masa de yuca frita), Cremoso (relleno de carne o queso)
-- **Aroma destacado:** Ahumado (carne y comino), Herbal (cilantro en el guiso)
-- **Presentación y experiencia:** Se sirven calientes, recién fritas, en porciones individuales, ideales para compartir y acompañar con salsas.
-- **Opiniones y experiencia de usuario:** "Las carimañolas son el mejor pasaboca de la costa, la masa de yuca crujiente y el relleno suave son irresistibles". "Perfectas para cualquier ocasión, no pueden faltar en una fiesta costeña". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Neutro, Graso        | 4/5              | Almidón frito (suave) + Relleno intenso. |
+| **Aroma**| Fritura, Maillard    | 4/5              | Reacción de Maillard en la superficie de la yuca. |
+| **Textura**| Dual (Crujiente/Suave)| 5/5            | Deshidratación superficial rápida + Gelatinización interna. |
+| **Boca** | Untuoso              | 4/5              | Absorción de aceite superficial (si la temp. es correcta). |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "Las carimañolas de la tiendita de la esquina son insuperables, siempre crocantes y llenas de sabor".
-- **Foro gastronómico:** "El suero costeño marca la diferencia, le da el toque ácido justo".
-calificación: ★★★★★ 5/5
+- **Retrogradación del Almidón:** La yuca es rica en amilopectina. Molerla caliente permite alinear las cadenas de almidón en una masa cohesiva. Si se enfría, el almidón se recristaliza (retrogradación), volviendo la masa dura y difícil de unir.
+- **La Costra:** Al entrar en aceite a 180°C, el agua superficial se evapora explosivamente, dejando una estructura porosa seca (crujiente) y dorada por caramelización.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente        | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|--------------------|-----------------|--------------|-----------|------------|----------------------|
-| Yuca               | 160             | 1            | 38        | 0          | Almidón resistente   |
-| Carne molida       | 242             | 27           | 0         | 14         | Hierro, Zinc         |
-| Queso costeño      | 321             | 21           | 4         | 25         | Calcio, Sodio        |
+- **Carbohidrato Complejo:** La yuca aporta energía de liberación media.
+- **Densidad Calórica:** Al ser frita, la densidad calórica se duplica vs. yuca cocida. No apto para dietas bajas en grasa.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
-
-## Sabiduría colectiva, trucos y consejos
-
-1. **Masa bien escurrida:** Asegúrate de que la yuca esté bien seca antes de formar las carimañolas.
-2. **Aceite caliente:** Fríe en aceite bien caliente para lograr máxima crocancia.
-3. **Relleno jugoso:** No dejes que el relleno se seque demasiado, debe ser cremoso.
+- **Desayuno Costeño:** Junto con patacón, ñame y suero, forma el desayuno típico de domingo.
+- **Nombre:** Posiblemente relacionado con "carantoña" (máscara) o raíces indígenas caribes.
 
 ---
 
-## Fuentes consultadas y enlaces
+## Sabiduría colectiva (Tips de la Comunidad)
 
-- [Receta tradicional de carimañolas - El Tiempo](https://www.eltiempo.com/vida/receta-carimañolas-46803)
-- [Google Maps: Opiniones sobre carimañolas](https://www.google.com/maps/search/carimañolas+colombianas)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/carimañolas)
+1. **Relleno Seco:** "Si el guiso tiene agua, la carimañola explota en el aceite". (Ley de oro: el agua se vaporiza y rompe la masa).
+2. **Aceite limpio:** Usa aceite limpio para que queden doradas y no manchadas.
+
+---

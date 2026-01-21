@@ -1,147 +1,143 @@
 ---
-title: Ceviche de Camarón
+title: Ceviche de Camarón Costeño
 region: Caribe
 categories:
 - Entrada
-- Snack
-- Plato frío
+- Playa
+- Fresco
 sensory:
   flavor:
-  - Ácido
-  - Salado
-  - Umami
+  - Ácido (Limón)
+  - Umami (Salsa Roja)
+  - Dulce (Sutil)
   texture:
-  - Jugoso
-  - Crujiente
+  - Firme (Camarones)
+  - Crujiente (Cebolla)
   aroma:
   - Cítrico
-  - Herbal
-  presentation: Se sirve frío, en copas o vasos, decorado con cilantro y acompañado
-    de galletas saladas. Es infaltable en playas, fiestas y reuniones costeñas.
+  - Herbal (Cilantro)
+  presentation: Copa de vidrio fría, salsa rosada/roja, galletas de soda a los lados.
 main_ingredients:
-- Camarón
+- Camarones
 - Limón
-- Cilantro
-- Tomate
-- Cebolla
+- Cebolla Roja
+- Salsa de Tomate (Ketchup)
 difficulty: ★★☆☆☆
 prep_time: 20 minutos
 cook_time: 5 minutos
-servings: 6
+servings: 4
+nutrition:
+  calories: 220
+  macros:
+    protein_g: 20.0
+    fat_g: 5.0
+    carbs_g: 22.0
+tags:
+- Playa
+- Afrodisíaco
+- Cartagena
 images:
 - url: https://pixabay.com/es/photos/ceviche-camaron-colombia-6146266/
-  description: Ceviche de camarón tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/ceviche-de-camaron
-  description: Variaciones de ceviche de camarón en Unsplash
+  description: Cóctel de camarón estilo colombiano
 sources:
 - https://www.eltiempo.com/vida/receta-ceviche-de-camaron-35794
-- https://www.gastronomiacolombiana.com/foro/ceviche-de-camaron
-- https://www.google.com/maps/search/ceviche+de+camaron
-- https://www.youtube.com/results?search_query=ceviche+de+camaron
-- https://www.tiktok.com/tag/cevichedecamaron
 license: MIT
-description: El Ceviche de Camarón es un plato fresco y vibrante de la región Caribe
-  colombiana, especialmente popular en Cartagena y Santa Marta. Consiste en camarones
-  cocidos en jugo de limón, mezclados con cebolla, tomate, cilantro y ají, servidos
-  fríos como entrada o snack refrescante.
-nutrition:
-  calories: 125
-  macros:
-    protein_g: 5.0
-    fat_g: 1.0
-    carbs_g: 29.7
----## Ceviche de Camarón
+description: El Ceviche de Camarón "Costeño" difiere del peruano clásico por el uso de salsa de tomate (ketchup) y mayonesa, creando un "cóctel" rosado. Es el rey de las playas de Cartagena y Santa Marta.
+---
 
-El Ceviche de Camarón es un plato fresco y vibrante de la región Caribe colombiana, especialmente popular en Cartagena y Santa Marta. Consiste en camarones cocidos en jugo de limón, mezclados con cebolla, tomate, cilantro y ají, servidos fríos como entrada o snack refrescante.
+# Ceviche de Camarón Costeño
+
+A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o cóctel de camarón del Caribe colombiano busca un equilibrio agridulce y cremoso. Es comida de playa por excelencia.
 
 ## Información General
 
 * **Dificultad:** ★★☆☆☆
 * **Tiempo de preparación:** 20 minutos
-* **Tiempo de cocción:** 5 minutos
-* **Porciones:** 6
+* **Tiempo de cocción:** 5 minutos (escaldado)
+* **Porciones:** 4 copas
 
 ---
 
 ## 📝 Ingredientes
 
-- 500 g de camarones medianos, pelados y limpios
-- 1 cebolla morada
-- 2 tomates maduros
-- 1 pimentón rojo
-- 1 manojo de cilantro fresco
-- 2 limones grandes (su jugo)
-- 1 naranja (opcional, para suavizar la acidez)
-- 1 ají picante (opcional)
-- Sal y pimienta al gusto
-- Salsa de tomate (opcional, estilo costeño)
-- Galletas saladas para acompañar
+* **Proteína:**
+    * 500g de camarones frescos (talla media), pelados y desvenados
+* **Vegetales:**
+    * 1 cebolla roja grande, picada en plumas finas o cuadritos
+    * 1 manojo de cilantro fresco picado
+    * Opcional: Ajo finamente picado
+* **La Salsa (El secreto):**
+    * 1/2 taza de **[Salsa de Tomate](../../condimentos/salsa_rosada)** (Ketchup) de buena calidad
+    * 2 cucharadas de mayonesa (para dar cremosidad, opcional)
+    * Jugo de 4-5 limones Tahití (jugosos)
+    * Picante (Tabasco o ají chivato) al gusto
+    * Sal y pimienta recién molida
+* **Acompañamiento:**
+    * Galletas de soda (Saltinas)
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Cocinar los camarones:** Hierve los camarones en agua con sal por 2-3 minutos hasta que cambien de color. Escurre y enfría rápidamente.
-2. **Preparar los vegetales:** Pica finamente la cebolla, tomate, pimentón, cilantro y ají.
-3. **Marinar:** Mezcla los camarones con el jugo de limón (y naranja si usas), los vegetales y salpimenta al gusto. Añade salsa de tomate si prefieres el estilo costeño.
-4. **Reposar:** Deja reposar en frío por al menos 15 minutos para integrar sabores.
-5. **Servir:** Sirve frío, acompañado de galletas saladas o patacones.
+1. **Escaldado:** En una olla con agua hirviendo y mucha sal, sumerge los camarones por 2-3 minutos exactos (hasta que se pongan rosados). Sácalos *inmediatamente* y pásalos a un baño de agua con hielo (choque térmico).
+2. **Desflemar Cebolla:** Si la cebolla es muy fuerte, lávala con agua fría y sal, luego escurre.
+3. **El Coctel:** En un bol frío, mezcla la salsa de tomate, mayonesa, jugo de limón, sal, pimienta y picante. Bate hasta emulsionar.
+4. **Ensamble:** Agrega los camarones fríos y secos, la cebolla y el cilantro a la salsa. Mezcla suavemente.
+5. **Frío:** Refrigera por 15 minutos antes de servir para que los sabores se integren.
+6. **Servir:** En copa de vidrio, decorado con una hoja de cilantro y el paquete de galletas al lado.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes añadir mango verde picado para un toque tropical.
-* El ceviche costeño suele llevar salsa de tomate y un toque de naranja.
-* Ajusta el nivel de picante según tu preferencia.
+* **Mango Biche:** Agregar cubos de mango verde aporta una acidez frutal deliciosa.
+* **Ceviche "Matrimonio":** Mitad camarón, mitad langostino o pulpo.
 
 ---
 
 ## 📸 Galería
 
-![Ceviche de Camarón](./images/1.png)
+![Ceviche Cartagenero](./images/1.png)
 
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Entrada, snack, plato frío
-- **Perfil de sabor dominante:** Ácido, Salado, Umami
-- **Textura principal:** Jugoso (camarón y vegetales), Crujiente (cebolla y galletas)
-- **Aroma destacado:** Cítrico (limón y naranja), Herbal (cilantro)
-- **Presentación y experiencia:** Se sirve frío, en copas o vasos, decorado con cilantro y acompañado de galletas saladas. Es infaltable en playas, fiestas y reuniones costeñas.
-- **Opiniones y experiencia de usuario:** "El ceviche de camarón es el snack perfecto para el calor de la costa, refrescante y lleno de sabor". "Nada como un ceviche en la playa con amigos". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ácido-Dulce          | 5/5              | Ácido cítrico + Jarabe de maíz (Ketchup). Balance adictivo. |
+| **Aroma**| Cítrico              | 5/5              | Limoneno volátil. |
+| **Textura**| Turgente (Firme)     | 5/5              | Proteínas miofibrilares coaguladas pero no endurecidas. |
+| **Visual** | Rosado Brillante     | 4/5              | Emulsión de licopeno (tomate) y grasa (mayonesa). |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El ceviche de camarón de Cartagena es insuperable, fresco y con el punto perfecto de acidez".
-- **Foro gastronómico:** "El secreto está en el jugo de naranja y el cilantro fresco, le dan el toque caribeño auténtico".  
-calificación: ★★★★★ 5/5
+- **Desnaturalización Química vs. Térmica:** Aunque se llama ceviche, el camarón NO se cocina solo con limón (riesgo bacteriológico). El escaldado térmico asegura inocuidad y textura firme ("snap"). El limón luego actúa saborizando y "apretando" la fibra externa.
+- **La Salsa Rosada:** La mezcla de Ketchup (pH ácido, azúcar) con mayonesa (grasa emulsionada) y limón crea una salsa "buffer" que suaviza la acidez extrema del limón puro, haciéndolo más palatables para el gusto colombiano que prefiere lo dulce/salado.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente     | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|-----------------|-----------------|--------------|-----------|------------|----------------------|
-| Camarón         | 99              | 24           | 0         | 0.3        | Selenio, Yodo        |
-| Limón           | 29              | 1            | 9         | 0.3        | Vitamina C           |
-| Tomate          | 18              | 0.9          | 3.9       | 0.2        | Licopeno, Vitamina A |
+- **Proteína Magra:** El camarón es casi pura proteína.
+- **Azúcares Ocultos:** Cuidado con la cantidad de salsa de tomate industrial (alta en azúcar).
+- **Colesterol:** El camarón tiene colesterol dietario, pero bajo en grasas saturadas.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Playa y Vendedores:** Es el sustento de miles de vendedores informales en las playas, que cargan las neveras de icopor al hombro.
+- **Debate:** ¿Con o sin mayonesa? Los puristas dicen solo salsa de tomate y limón; la versión moderna incluye mayonesa y hasta suero.
 
-## Sabiduría colectiva, trucos y consejos
+### 📚 Estudios y Referencias
 
-1. **Enfriar rápido:** Enfría los camarones rápidamente después de cocer para mantener la textura firme.
-2. **Cítricos frescos:** Usa jugo de limón y naranja recién exprimidos para mejor sabor.
-3. **Acompañamiento:** Sirve siempre con galletas saladas o patacones para la experiencia auténtica.
+1. *McGee, H.* "Acids and cooking".
+2. *Cartagena de Indias Turismo.* "Gastronomía popular".
 
 ---
 
-## Fuentes consultadas y enlaces
+## Sabiduría colectiva (Tips de la Comunidad)
 
-- [Receta tradicional de ceviche de camarón - El Tiempo](https://www.eltiempo.com/vida/receta-ceviche-de-camaron-35794)
-- [Google Maps: Opiniones sobre ceviche de camarón](https://www.google.com/maps/search/ceviche+de+camaron)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/ceviche-de-camaron)
+1. **"Galleta partida":** Muchos locales parten las galletas dentro de la copa para que absorban el juguito (leche de tigre roja).
+2. **Cebolla morada:** Siempre morada, la blanca es muy dulce y blanda.
+
+---

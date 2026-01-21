@@ -1,104 +1,95 @@
 ---
 title: Viudo de Pescado
-region: Caribe
+region: Caribe/Río Magdalena
 categories:
 - Plato fuerte
-- Sopa de pescado
-- Comida típica
+- Sopa
+- Tradicional
 sensory:
   flavor:
-  - Umami
-  - Salado
-  texture:
-  - Jugoso
-  - Suave
-  aroma:
-  - Marino
+  - Umami (Pescado)
   - Herbal
-  - Ahumado
-  presentation: Se sirve en platos hondos, con trozos generosos de pescado y tubérculos,
-    acompañado de arroz y ají. Es el centro de reuniones familiares y festividades
-    ribereñas.
+  - Neutro (Tubérculos)
+  texture:
+  - Suave
+  - Caldoso
+  - Desmenuzable
+  aroma:
+  - Río (Fresco)
+  - Cilantro
+  - Vapor
+  presentation: Pescado entero o en postas sobre hojas de plátano (seco), con el caldo servido aparte (o todo junto en olla de barro).
 main_ingredients:
-- Pescado de río
+- Bocachico o Capaz
 - Yuca
 - Plátano verde
-- Papa criolla
-- Mazorcas
+- Ahuyama
 difficulty: ★★★☆☆
 prep_time: 30 minutos
-cook_time: 1 hora
+cook_time: 45 minutos
 servings: 6
+nutrition:
+  calories: 450
+  macros:
+    protein_g: 35.0
+    fat_g: 10.0
+    carbs_g: 55.0
+tags:
+- Río Magdalena
+- Domingo
+- Sancocho
 images:
 - url: https://pixabay.com/es/photos/viudo-pescado-colombia-6146268/
-  description: Viudo de pescado tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/viudo-de-pescado
-  description: Variaciones de viudo de pescado en Unsplash
+  description: Viudo de pescado ribereño
 sources:
 - https://www.eltiempo.com/vida/receta-viudo-de-pescado-57933
-- https://www.gastronomiacolombiana.com/foro/viudo-de-pescado
-- https://www.google.com/maps/search/viudo+de+pescado
-- https://www.youtube.com/results?search_query=viudo+de+pescado
-- https://www.tiktok.com/tag/viudodepescado
 license: MIT
-description: El Viudo de Pescado es un plato tradicional de la región Caribe y de
-  los ríos colombianos, especialmente preparado en festividades y reuniones familiares.
-  Consiste en pescado de río cocido con yuca, plátano y verduras, servido en caldo
-  aromático y acompañado de arroz blanco y ají.
-nutrition:
-  calories: 1303
-  macros:
-    protein_g: 29.9
-    fat_g: 5.8
-    carbs_g: 300.0
----## Viudo de Pescado
+description: El Viudo de Pescado es una técnica de cocción al vapor/sudado típica del Río Magdalena. Tradicionalmente el pescado se cocina SOBRE la cama de vituallas (plátano, yuca) y se sirve "viudo" (separado del caldo) o bañado en salsa criolla.
+---
 
-El Viudo de Pescado es un plato tradicional de la región Caribe y de los ríos colombianos, especialmente preparado en festividades y reuniones familiares. Consiste en pescado de río cocido con yuca, plátano y verduras, servido en caldo aromático y acompañado de arroz blanco y ají.
+# Viudo de Pescado
+
+El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "solo" (viudo) sin el caldo, o porque un hombre que perdió a su esposa creó el plato por simplicidad. Es un festín de la tierra y el río.
 
 ## Información General
 
-* **Dificultad:** ★★★☆☆
+* **Dificultad:** ★★★☆☆ (Cuidado de no desbaratar el pescado)
 * **Tiempo de preparación:** 30 minutos
-* **Tiempo de cocción:** 1 hora
+* **Tiempo de cocción:** 45 minutos
 * **Porciones:** 6
 
 ---
 
 ## 📝 Ingredientes
 
-- 1,5 kg de pescado de río (bocachico, capaz, bagre)
-- 2 yucas medianas
-- 2 plátanos verdes
-- 4 papas criollas
-- 2 mazorcas de maíz
-- 1 cebolla cabezona
-- 2 dientes de ajo
-- 1 pimentón rojo
-- 2 tomates maduros
-- 1 manojo de cilantro
-- Jugo de 1 limón
-- Sal y pimienta al gusto
-- Comino al gusto
-- Agua suficiente
+* **El Río:**
+    * 6 postas o 3 pescados enteros medianos (**[Bocachico](../../ingredients/bocachico)** o Capaz). El Bocachico tiene muchas espinas pero más sabor.
+* **La Cama (Vituallas):**
+    * 2 plátanos verdes pelados y partidos con la mano
+    * 1 kg de yuca pelada
+    * 500g de ahuyama (calabaza) con cáscara
+* **El Guiso/Sazón:**
+    * Cebolla larga, tomate, ajo, color (achiote)
+    * Cilantro y cimarrón
+    * Sal y comino
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Preparar el pescado:** Limpia y corta el pescado en trozos. Marina con sal, pimienta, comino y jugo de limón.
-2. **Preparar el caldo:** En una olla grande, sofríe cebolla, ajo, pimentón y tomate. Añade agua y lleva a ebullición.
-3. **Agregar tubérculos y verduras:** Incorpora yuca, plátano, papa y mazorca. Cocina hasta que estén blandos.
-4. **Cocinar el pescado:** Añade el pescado y cocina a fuego medio hasta que esté tierno y jugoso.
-5. **Finalizar:** Ajusta sal y pimienta. Añade cilantro fresco antes de servir.
-6. **Servir:** Sirve caliente en platos hondos, acompañado de arroz blanco y ají casero.
+1. **Armar la Cama:** En una olla grande, coloca los plátanos al fondo (son los más duros). Luego la yuca y la ahuyama. Agrega agua que APENAS cubra los plátanos (cocción al vapor).
+2. **Cocinar Vituallas:** Tapa y cocina por 20 minutos hasta que ablanden parcialmente.
+3. **El Pescado:** Coloca el pescado sazonado ENCIMA de las verduras. No debe quedar sumergido totalmente, se cocina con el vapor aromático.
+4. **El Guiso:** Mientras tanto, prepara un hogao (salsa criolla) frita aparte.
+5. **Finalizar:** Cuando el pescado esté blanco y los ojos saltones (aprox 15 min), baña con el hogao y cocina 5 min más tapado.
+6. **Servir:** Se saca con extremo cuidado. En una bandeja las vituallas y el pescado bañado en guiso. El caldo se sirve en tazas aparte con cilantro.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes usar diferentes tipos de pescado de río según la temporada.
-* El secreto está en no sobrecocinar el pescado para que quede jugoso.
-* El viudo tradicional se sirve en ollas de barro para mantener el calor.
+* **Viudo de Capaz:** El capaz es más graso y suave, ideal para quienes temen a las espinas.
+* **Hojas de Bijao:** Cubrir la olla con hojas de bijao antes de la tapa concentra los aromas herbales.
 
 ---
 
@@ -110,43 +101,39 @@ El Viudo de Pescado es un plato tradicional de la región Caribe y de los ríos 
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, sopa de pescado
-- **Perfil de sabor dominante:** Umami, Salado
-- **Textura principal:** Jugoso (caldo y pescado), Suave (tubérculos)
-- **Aroma destacado:** Marino, Herbal (cilantro), Ahumado (si se cocina en leña)
-- **Presentación y experiencia:** Se sirve en platos hondos, con trozos generosos de pescado y tubérculos, acompañado de arroz y ají. Es el centro de reuniones familiares y festividades ribereñas.
-- **Opiniones y experiencia de usuario:** "El viudo de pescado es el plato de los grandes encuentros, su caldo es reconfortante y el pescado queda jugoso". "Nada como el sabor del pescado fresco con yuca y plátano". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Terroso (Río), Dulce | 4/5              | Geosmina del pescado de río + Azúcares de la ahuyama/plátano. |
+| **Aroma**| Vapor Herbal         | 5/5              | Aceites esenciales atrapados por la cocción tapada. |
+| **Textura**| Melosa, Suave        | 5/5              | Colágeno del pescado disuelto sobre las verduras harinosas. |
+| **Vista** | Colorido             | 4/5              | Amarillo (Ahuyama), Blanco (Yuca), Rojo (Guiso). |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El viudo de pescado en la orilla del río es una experiencia única, el pescado queda tierno y el caldo es delicioso".
-- **Foro gastronómico:** "El secreto está en el sofrito y en no dejar que el pescado se deshaga".  
-calificación: ★★★★★ 5/5
+- **Cocción Escalonada:** La técnica del viudo es una "vaporera natural". Los ingredientes duros abajo hierven; el pescado arriba se cocina suavemente con vapor a ~95°C, evitando que la turbulencia del agua rompa su carne delicada.
+- **Geosmina:** El sabor a "tierra" característico del Bocachico proviene de la geosmina. El uso de ácidos (limón en el lavado) y hierbas fuertes (cimarrón) ayuda a enmascarar este compuesto si es muy fuerte.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente     | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|-----------------|-----------------|--------------|-----------|------------|----------------------|
-| Pescado de río  | 105             | 20           | 0         | 3          | Omega-3, Selenio     |
-| Yuca            | 160             | 1            | 38        | 0          | Almidón resistente   |
-| Plátano verde   | 122             | 1.3          | 32        | 0.3        | Potasio, Fibra       |
+- **Completo:** Proteína de alta calidad + Carbohidratos complejos + Fibra.
+- **Bajo en Grasa:** Al ser sudado/vapor, no requiere aceites añadidos (salvo el guiso).
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Paseo de Olla:** Es el plato típico de los paseos al río Magdalena. Se hace un hueco en la tierra, leña, y se cocina con lo que se pesca ahí mismo.
+- **Bocachico:** Pescado insignia de la seguridad alimentaria en Colombia, aunque hoy amenazado.
 
-## Sabiduría colectiva, trucos y consejos
+### 📚 Estudios y Referencias
 
-1. **Pescado jugoso:** Cocina el pescado solo el tiempo justo para que no se deshaga.
-2. **Caldo aromático:** Usa cilantro y sofrito fresco para potenciar el sabor.
-3. **Presentación:** Sirve en olla de barro y acompaña con ají casero y arroz blanco.
+1. *Fray Juán de Santa Gertrudis.* "Maravillas de la Naturaleza" (Crónicas del s. XVIII sobre comer pescado en el Magdalena).
 
 ---
 
-## Fuentes consultadas y enlaces
+## Sabiduría colectiva (Tips de la Comunidad)
 
-- [Receta tradicional de viudo de pescado - El Tiempo](https://www.eltiempo.com/vida/receta-viudo-de-pescado-57933)
-- [Google Maps: Opiniones sobre viudo de pescado](https://www.google.com/maps/search/viudo+de+pescado)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/viudo-de-pescado)
+1. **No revolver:** Regla de oro. Si metes cucharon, rompes el pescado. Mueve la olla por las orejas.
+2. **El "Pegao":** El plátano del fondo que se dora un poquito es lo más rico.
+
+---

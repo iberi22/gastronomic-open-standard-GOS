@@ -1,52 +1,544 @@
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Patrick+Hand&display=swap');
+/* ============================================
+   GOS - GASTRONOMIC OPEN STANDARD
+   Brutalist Design System 2026
+   ============================================ */
+
+/* Import Brutalist Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;900&display=swap');
 
 :root {
-  --md-text-font: "Open Sans", sans-serif;
-  --md-code-font: "Courier New", monospace;
+  /* Brutalist Typography */
+  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --md-code-font: "Space Mono", "Courier New", monospace;
+  --font-display: "Inter", sans-serif;
 
-  /* Custom Palette - Solid Colors with Transitions */
-  --md-primary-fg-color: #ff7043; /* Warm Orange */
-  --md-primary-fg-color--light: #ff8a65;
-  --md-primary-fg-color--dark: #f4511e;
+  /* Brutalist Color Palette - High Contrast */
+  --color-black: #0a0a0a;
+  --color-white: #fafafa;
+  --color-raw-red: #ff2d2d;
+  --color-raw-yellow: #ffe600;
+  --color-raw-blue: #0066ff;
+  --color-raw-green: #00ff66;
+  --color-border: #1a1a1a;
 
-  --md-accent-fg-color: #66bb6a; /* Fresh Green */
+  /* Light Mode - Brutalist */
+  --md-primary-fg-color: var(--color-black);
+  --md-primary-fg-color--light: #333;
+  --md-primary-fg-color--dark: #000;
+  --md-accent-fg-color: var(--color-raw-red);
+  --md-default-bg-color: var(--color-white);
 
-  --transition-speed: 0.3s;
+  /* Brutalist Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+
+  /* Hard edges - NO border-radius */
+  --border-radius: 0;
+  --border-width: 3px;
+  --border-thick: 5px;
+
+  /* Raw shadows */
+  --shadow-brutal: 4px 4px 0 var(--color-black);
+  --shadow-brutal-hover: 6px 6px 0 var(--color-black);
 }
 
-/* Typography Overrides */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Patrick Hand', cursive;
-  font-weight: 400;
+/* Dark Mode - Inverted Brutalist */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--color-white);
+  --md-default-bg-color: var(--color-black);
+  --md-accent-fg-color: var(--color-raw-yellow);
+  --shadow-brutal: 4px 4px 0 var(--color-white);
+  --shadow-brutal-hover: 6px 6px 0 var(--color-white);
 }
 
-.md-header {
-  font-family: 'Patrick Hand', cursive;
-}
+/* ============================================
+   TYPOGRAPHY - Raw & Bold
+   ============================================ */
 
 body {
-  transition: background-color var(--transition-speed), color var(--transition-speed);
+  font-family: var(--md-text-font);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
 }
 
-/* Friendly/Collage Card Styling */
-.collage-card {
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transform: rotate(-1deg);
-  transition: transform var(--transition-speed) ease;
-  border: 1px solid #ddd;
+/* Headlines - Ultra Bold, Tightly Spaced */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
 }
 
-.collage-card:hover {
-  transform: rotate(0deg) scale(1.02);
-  z-index: 10;
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  border-bottom: var(--border-thick) solid currentColor;
+  padding-bottom: var(--space-sm);
 }
 
-/* Header Logo Adjustment */
-.md-header__button.md-logo img {
-  height: 36px;
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  position: relative;
+}
+
+h2::before {
+  content: "//";
+  font-family: var(--md-code-font);
+  margin-right: var(--space-sm);
+  opacity: 0.5;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+/* Monospace for code blocks - prominent */
+code, pre, .md-code {
+  font-family: var(--md-code-font);
+  font-size: 0.95em;
+  background: var(--color-black);
+  color: var(--color-raw-green);
+  border: var(--border-width) solid var(--color-border);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+[data-md-color-scheme="slate"] code,
+[data-md-color-scheme="slate"] pre {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* ============================================
+   HEADER - Industrial/Brutalist
+   ============================================ */
+
+.md-header {
+  background: var(--color-black) !important;
+  border-bottom: var(--border-thick) solid var(--color-raw-yellow);
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: var(--color-white) !important;
+  border-bottom-color: var(--color-raw-red);
+}
+
+.md-header__title {
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Logo adjustment */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 40px;
   width: auto;
+  filter: none;
+}
+
+/* ============================================
+   NAVIGATION - Grid-based Brutalist
+   ============================================ */
+
+.md-tabs {
+  background: var(--color-black);
+  border-bottom: var(--border-width) solid var(--color-raw-red);
+}
+
+.md-tabs__link {
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-md);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.1s;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  background: var(--color-raw-yellow);
+  color: var(--color-black) !important;
+}
+
+/* Sidebar - Exposed Structure */
+.md-sidebar {
+  border-right: var(--border-width) solid var(--color-border);
+}
+
+.md-nav__link {
+  font-family: var(--md-text-font);
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: all 0.1s;
+}
+
+.md-nav__link:hover {
+  background: var(--color-raw-yellow);
+  color: var(--color-black);
+  padding-left: calc(var(--space-md) + 4px);
+}
+
+.md-nav__link--active {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* ============================================
+   CONTENT AREA - Clean Brutalist
+   ============================================ */
+
+.md-content {
+  max-width: 900px;
+}
+
+.md-content__inner {
+  padding: var(--space-lg);
+}
+
+/* Links - Bold with underline */
+.md-content a {
+  color: var(--color-raw-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: all 0.1s;
+}
+
+.md-content a:hover {
+  background: var(--color-raw-yellow);
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 0 4px;
+  margin: 0 -4px;
+}
+
+/* Lists - Technical/Structured */
+.md-content ul,
+.md-content ol {
+  padding-left: var(--space-lg);
+}
+
+.md-content li {
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+
+.md-content ul > li::marker {
+  content: "→ ";
+  font-weight: bold;
+}
+
+/* ============================================
+   CARDS & ADMONITIONS - Brutalist Boxes
+   ============================================ */
+
+.admonition,
+.md-typeset .admonition {
+  border: var(--border-thick) solid var(--color-black);
+  border-radius: 0 !important;
+  box-shadow: var(--shadow-brutal);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.admonition-title,
+.md-typeset .admonition-title {
+  background: var(--color-black) !important;
+  color: var(--color-white) !important;
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+}
+
+[data-md-color-scheme="slate"] .admonition {
+  border-color: var(--color-white);
+  background: var(--color-black);
+}
+
+[data-md-color-scheme="slate"] .admonition-title {
+  background: var(--color-white) !important;
+  color: var(--color-black) !important;
+}
+
+/* Tip/Note/Warning specific colors */
+.admonition.note { border-left: var(--border-thick) solid var(--color-raw-blue); }
+.admonition.tip { border-left: var(--border-thick) solid var(--color-raw-green); }
+.admonition.warning { border-left: var(--border-thick) solid var(--color-raw-yellow); }
+.admonition.danger { border-left: var(--border-thick) solid var(--color-raw-red); }
+
+/* ============================================
+   TABLES - Grid/Brutalist
+   ============================================ */
+
+.md-typeset table {
+  border: var(--border-thick) solid var(--color-black);
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: var(--shadow-brutal);
+}
+
+.md-typeset table th {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-md);
+  border: var(--border-width) solid var(--color-black);
+}
+
+.md-typeset table td {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-black);
+  font-family: var(--md-text-font);
+}
+
+.md-typeset table tr:nth-child(even) {
+  background: rgba(0,0,0,0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table {
+  border-color: var(--color-white);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table th {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* ============================================
+   BUTTONS - Raw/Industrial
+   ============================================ */
+
+.md-button,
+button,
+.md-typeset .md-button {
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: var(--space-sm) var(--space-lg);
+  border: var(--border-thick) solid var(--color-black);
+  border-radius: 0;
+  background: var(--color-white);
+  color: var(--color-black);
+  box-shadow: var(--shadow-brutal);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.md-button:hover,
+button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-black);
+  background: var(--color-raw-yellow);
+}
+
+.md-button:active,
+button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* Primary button variant */
+.md-button--primary {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.md-button--primary:hover {
+  background: var(--color-raw-red);
+  color: var(--color-white);
+}
+
+/* ============================================
+   SEARCH - Industrial Input
+   ============================================ */
+
+.md-search__input {
+  font-family: var(--md-code-font);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: 0;
+  background: var(--color-white);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.md-search__input:focus {
+  border-color: var(--color-raw-yellow);
+  box-shadow: inset 0 0 0 2px var(--color-raw-yellow);
+}
+
+/* ============================================
+   FOOTER - Minimal Brutalist
+   ============================================ */
+
+.md-footer {
+  background: var(--color-black);
+  border-top: var(--border-thick) solid var(--color-raw-red);
+}
+
+.md-footer-meta {
+  font-family: var(--md-code-font);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   IMAGES - Raw with borders
+   ============================================ */
+
+.md-content img {
+  border: var(--border-width) solid var(--color-black);
+  box-shadow: var(--shadow-brutal);
+  transition: all 0.15s;
+}
+
+.md-content img:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-brutal-hover);
+}
+
+/* ============================================
+   SPECIAL COMPONENTS
+   ============================================ */
+
+/* Recipe Cards (custom class) */
+.recipe-card {
+  border: var(--border-thick) solid var(--color-black);
+  background: var(--color-white);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-brutal);
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+
+.recipe-card::before {
+  content: "RECIPE";
+  position: absolute;
+  top: calc(-1 * var(--space-sm));
+  left: var(--space-md);
+  background: var(--color-raw-red);
+  color: var(--color-white);
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: var(--space-xs) var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Ingredient Tags */
+.ingredient-tag {
+  display: inline-block;
+  font-family: var(--md-code-font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-sm);
+  margin: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Data Grid (for nutrition info) */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-sm);
+  border: var(--border-width) solid var(--color-black);
+  padding: var(--space-md);
+}
+
+.data-grid__item {
+  text-align: center;
+  padding: var(--space-sm);
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.data-grid__value {
+  font-family: var(--md-code-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.data-grid__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile Brutalist
+   ============================================ */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .md-content__inner {
+    padding: var(--space-md);
+  }
+
+  .md-tabs__link {
+    padding: var(--space-sm);
+    font-size: 0.8rem;
+  }
+
+  :root {
+    --border-thick: 3px;
+    --shadow-brutal: 3px 3px 0 var(--color-black);
+  }
+}
+
+/* ============================================
+   ANIMATIONS - Minimal/Functional
+   ============================================ */
+
+@keyframes brutal-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.loading {
+  animation: brutal-pulse 1s infinite;
+}
+
+/* Print styles - Strip decoration */
+@media print {
+  * {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .md-header,
+  .md-tabs,
+  .md-sidebar {
+    display: none !important;
+  }
 }

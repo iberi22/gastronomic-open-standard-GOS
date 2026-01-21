@@ -1,0 +1,524 @@
+GOS Ingredient Audit Report
+Generated: 2026-01-21T14:17:19.480620
+============================================================
+
+Total: 552
+Organized: 37
+Pending: 515
+
+PENDING INGREDIENTS (need categorization):
+  - Aceite De Achiote
+  - Aceite De Coco O Vegetal
+  - Aceite O Mantequilla
+  - Aceite Para Freír
+  - Aceite Vegetal Para Freír
+  - Achiote Para Dar Color
+  - Aguacates
+  - Aguacates Maduros
+  - Aguacate En Rodajas
+  - Agua Fría O Soda
+  - Ahuyama Pequeña
+  - Ajo O Hierbas Amazónicas
+  - Ajíes Amazónicos Frescos
+  - Ají Amazónico
+  - Ají Picante
+  - Alcaparras En Vinagre
+  - Allina Entera O Pollo De Campo
+  - Arepas Antioqueñas
+  - Arepas Pequeñas
+  - Arracacha
+  - Arroz Blanco
+  - Ata De Gaseosa Roja  O Soda
+  - Azúcar
+  - Azúcar Morena
+  - Bejucos O Cuerdas Naturales Para Atar
+  - Brasas De Leña
+  - Cabezas De Ajo
+  - Cachamas Medianas
+  - Caldo De Cocción De Las Carnes
+  - Canela En Polvo Para Decorar
+  - Caparazones De Cangrejo Limpios
+  - Chile Picante
+  - Chorizos
+  - Chorizos Santandereanos
+  - Chorizo Llanero
+  - Chorizo O Carne Desmechada
+  - Cilantro Cimarrón Para Decorar
+  - Cilantro Fresco
+  - Cilantro Fresco Para Decorar
+  - Cilantro Picado Para Decorar
+  - Clavos De Olor
+  - Cocos Frescos Rallados
+  - Coco Fresco Grande
+  - Condimento Con Color
+  - Crema De Leche
+  - Cubio
+  - Cucharadas De Aceite
+  - Cucharadas De Aceite De Achiote
+  - Cucharadas De Aceite Vegetal
+  - Cucharadas De Agua
+  - Cucharadas De Azúcar
+  - Cucharadas De Azúcar Morena
+  - Cucharadas De Color
+  - Cucharadas De Comino Molido
+  - Cucharadas De Leche
+  - Cucharadas De Leche De Coco
+  - Cucharadas De Manteca De Cerdo
+  - Cucharadas De Mantequilla
+  - Cucharadas De Mantequilla Derretida
+  - Cucharadas De Mantequilla O Aceite
+  - Cucharadas De Salsa Soya
+  - Cucharadas De Vinagre Blanco
+  - Cucharada De Color
+  - Cucharada De Jugo De Limón
+  - Cucharada De Jugo De Limón O Vinagre
+  - Cucharada De Mantequilla
+  - Cucharada De Orégano Seco
+  - Cucharada De Sal
+  - Cucharadita De Bicarbonato De Sodio
+  - Cucharadita De Canela En Polvo
+  - Cucharadita De Color
+  - Cucharadita De Comino
+  - Cucharadita De Esencia De Vainilla
+  - Cucharadita De Mostaza
+  - Cucharadita De Nuez Moscada
+  - Cucharadita De Paprika
+  - Cucharadita De Pimienta Negra
+  - Cucharadita De Polvo De Hornear
+  - Cucharadita De Ralladura De Limón
+  - Cucharadita De Sal
+  - De Aceite Vegetal O Mantequilla Derretida
+  - De Agua
+  - De Almidón De Yuca
+  - De Arroz
+  - De Arroz Blanco
+  - De Arvejas
+  - De Arvejas Precocidas
+  - De Arveja Amarilla Pelada
+  - De Arveja Verde
+  - De Avena En Hojuelas
+  - De Banano En Rodajas
+  - De Calabaza Cocida Y Hecha Puré
+  - De Calamar
+  - De Calamares
+  - De Caldo De Pescado
+  - De Camarones
+  - De Camarones Medianos
+  - De Cangrejo Azul O Cangrejo De Mar Limpio
+  - De Cangrejo O Langosta
+  - De Caracol De Mar Limpio Y Ablandado
+  - De Caracol Limpio
+  - De Carne De Cangrejo Fresca
+  - De Carne De Cerdo
+  - De Carne De Cerdo Molida
+  - De Carne De Cerdo Salada
+  - De Carne De Chigüiro
+  - De Carne De Gumarra
+  - De Carne De Res
+  - De Carne De Res Molida
+  - De Carne De Ternera
+  - De Carne De Tollo  Ahumado
+  - De Carne Molida
+  - De Carne Molida O Desmechada
+  - De Carne Molida  O Queso Costeño
+  - De Cecina
+  - De Cerdo
+  - De Cerveza Negra
+  - De Chicharrón
+  - De Chigüiro
+  - De Choclo  Desgranado
+  - De Chorizo
+  - De Cilantro Fresco
+  - De Coco Rallado
+  - De Cola De Cerdo Salada
+  - De Costilla De Cerdo
+  - De Costilla De Res
+  - De Crema De Leche
+  - De Cuero De Cerdo
+  - De Culantro  Licuado Con Un Poco De Agua
+  - De Filete De Pescado Blanco
+  - De Filete De Pirarucú
+  - De Frijoles Rojos
+  - De Frijoles Rojos O Negros
+  - De Grasa De Cerdo
+  - De Habichuelas  Picadas
+  - De Harina De Maíz
+  - De Harina De Maíz Precocida
+  - De Harina De Trigo
+  - De Harina De Yuca  O Maíz
+  - De Hogao
+  - De Jaiba
+  - De Kétchup
+  - De Leche
+  - De Leche Condensada
+  - De Leche De Coco
+  - De Leche O Crema De Leche
+  - De Leche Tibia
+  - De Levadura Seca
+  - De Mango En Cubos
+  - De Mantequilla
+  - De Mantequilla Derretida
+  - De Maní Tostado Y Molido
+  - De Masa De Maíz Precocida
+  - De Mayonesa
+  - De Maíz Pelado
+  - De Maíz Trillado
+  - De Mejillones
+  - De Miel De Caña
+  - De Morcilla
+  - De Papaya En Cubos
+  - De Papa Pastusa
+  - De Papa Sabanera
+  - De Pasta De Ají Amarillo
+  - De Pescado Blanco
+  - De Pescado Blanco Fresco
+  - De Pescado Fresco
+  - De Piangua
+  - De Piña En Cubos
+  - De Pollo
+  - De Pulpo
+  - De Queso Campesino O Doble Crema
+  - De Queso Costeño
+  - De Queso Costeño O Campesino Rallado
+  - De Queso Costeño Rallado
+  - De Queso Fresco Rallado
+  - De Queso Llanero Rallado
+  - De Queso Mozzarella O Doble Crema
+  - De Suero Costeño
+  - De Suero Costeño O Crema Agria
+  - De Tocino
+  - De Yuca
+  - De Yuca Amarga
+  - De Yuca Fresca
+  - De Zanahoria En Cubos Pequeños
+  - De Ñame
+  - Dientes De Ajo
+  - Dientes De Ajo Picados
+  - Diente De Ajo
+  - Echón  O 5 Kg De Pierna Y Costilla De Cerdo
+  - Esencia De Vainilla
+  - Frutas Confitadas O Pasas
+  - Fuente
+  - Galletas Saladas Para Acompañar
+  - Hamburguesas De Res O Pollo
+  - Hielo Picado
+  - Hogao Y Ají Para Acompañar
+  - Hojas De Bijao O Plátano
+  - Hojas De Bijao O Plátano Para Envolver
+  - Hojas De Bijao Para Envolver
+  - Hojas De Naranjo Agrio
+  - Hojas De Plátano O Bijao
+  - Hojas De Plátano Para Hornear
+  - Hojas De Plátano Soasadas
+  - Hoja De Laurel
+  - Hoja De Plátano
+  - Huevos
+  - Huevos Cocidos
+  - Huevos Duros
+  - Huevo Grande
+  - Ibras De Ñame Pelado Y En Cubos
+  - Ibra De Arroz Cocido
+  - Ibra De Arveja Amarilla Seca
+  - Ibra De Costilla De Cerdo En Trozos
+  - Ibra De Maíz Blanco Trillado
+  - Ibra De Papa En Rodajas
+  - Ibra De Papa Sabanera
+  - Ibra De Queso Costeño Duro
+  - Ibra De Tocino Con Cuero
+  - Ibra De Yuca
+  - Ibra De Zanahoria En Rodajas
+  - Imones
+  - Imones Grandes
+  - Imón
+  - Itros De Agua
+  - Itros De Leche Entera
+  - Itro De Agua
+  - Itro De Cerveza Rubia
+  - Itro De Gaseosa Roja
+  - Itro De Leche
+  - Itro De Leche De Coco
+  - Jugo De 1 Limón
+  - Lechuga
+  - Manojo De Cilantro
+  - Manojo De Cilantro Fresco
+  - Manojo De Guascas
+  - Manojo De Hojas De Plátano
+  - Manojo De Laurel Y Tomillo
+  - Manojo Grande De Guascas Frescas
+  - Manojo Pequeño De Cilantro Fresco
+  - Mazorcas De Maíz
+  - Mazorcas De Maíz Tierno
+  - Mazorcas Tiernas Y Grandes
+  - Mazorca De Maíz Tierno
+  - Mojojoys Frescos
+  - Morcillas
+  - Nabo
+  - Naranja
+  - Onganiza Boyacense
+  - Onjas De Jamón
+  - Onjas De Queso Doble Crema
+  - Palitos Para Brocheta
+  - Papas
+  - Papas Grandes
+  - Papas Medianas
+  - Papas Sabaneras
+  - Papas Sabaneras Medianas
+  - Papas Saladas Pequeñas
+  - Pechugas De Pollo
+  - Pechugas De Pollo Grandes
+  - Pechuga De Pollo En Presas
+  - Pescado De Río Entero  De 1-1.5 Kg
+  - Pescado Grande De Río
+  - Pimentones
+  - Pimentón En Trozos
+  - Pimentón Rojo
+  - Pimentón Rojo Picado
+  - Pimiento Dulce
+  - Pimiento Rojo Cortado En Tiras
+  - Pizca De Canela
+  - Pizca De Pimienta
+  - Pizca De Sal
+  - Piña Madura
+  - Plátanos Maduros
+  - Plátanos Maduros Grandes
+  - Plátanos Verdes
+  - Plátano Verde
+  - Pollo Entero Troceado
+  - Presas De Pollo
+  - Queso Campesino O Cuajada En Cubos
+  - Queso Rallado
+  - Ramas De Cilantro
+  - Ramas De Orégano Fresco
+  - Ramas De Tomillo
+  - Rama De Canela
+  - Ramita De Apio
+  - Ramita De Cilantro
+  - Ramita De Culantro
+  - Ramita De Tomillo
+  - Repollo Pequeño
+  - Rodajas De Limón
+  - Salchichas Tipo Viena O Ranchera
+  - Salsas
+  - Salsa De Tomate
+  - Sal Y Pimienta
+  - S De Agua
+  - S De Agua Tibia
+  - S De Arroz
+  - S De Arroz Blanco
+  - S De Arroz Blanco Cocido Y Frío
+  - S De Caldo De Pollo
+  - S De Caraotas  Cocidos
+  - S De Coco Fresco Rallado
+  - S De Harina De Maíz Precocida Amarilla
+  - S De Harina De Trigo
+  - S De Leche
+  - S De Leche De Coco
+  - S De Leche De Coco Fresca
+  - S De Leche Entera
+  - S De Sandía En Cubos
+  - S De Semillas De Amaranto
+  - Tabletas De Chocolate De Mesa Colombiano
+  - Tomates Maduros
+  - Tomates Rojos Maduros
+  - Tomate Grande
+  - Tomate Maduro
+  - Tomate Maduro Picado
+  - Tomate Pequeño
+  - Tripas De Cerdo Limpias
+  - Ulos Maduros
+  - Yemas De Huevo
+  - Yucas Medianas
+  - Yuca Cocida Y Plátano Frito Para Acompañar
+  - Yuca Mediana
+  - Zanahorias
+  - -4 Ajíes Picantes Frescos
+  - -8 Guineos Verdes
+  - Ámina De Masa De Hojaldre
+  - Ñames Medianos
+  - Ñame Pequeño
+  - 五香粉
+  - 八角、干辣椒
+  - 其他调味料
+  - 冬笋
+  - 冰糖
+  - 冷水
+  - 冷饭
+  - 刷子
+  - 原料
+  - 厨房秤
+  - 可乐
+  - 味素
+  - 咖喱块
+  - 咸肉
+  - 啤酒
+  - 土豆
+  - 复配食品增稠剂
+  - 大米
+  - 大葱、姜、大蒜、干辣椒
+  - 大葱、姜、大蒜、香菜、美人椒
+  - 大蒜
+  - 姜末
+  - 姜、蒜瓣、干辣椒
+  - 孜然粉
+  - 密封袋
+  - 小汤圆
+  - 小米
+  - 小米辣
+  - 小葱
+  - 巴沙鱼
+  - 干红椒
+  - 干辣椒
+  - 干面条
+  - 年糕
+  - 年糕/白粿
+  - 排骨
+  - 擀面杖
+  - 料酒
+  - 方便面
+  - 枸杞
+  - 植物油
+  - 椰浆
+  - 油泼辣子
+  - 油、盐、料酒、醋、酱油、白砂糖
+  - 油、盐、生抽、老抽、陈醋、蚝油、料酒、白糖
+  - 油、盐、鸡精、生抽、老抽、陈醋、黑胡椒粉、料酒
+  - 泡面
+  - 洋葱
+  - 海鲜酱
+  - 淀粉
+  - 淡奶油
+  - 清水
+  - 火腿
+  - 火腿肠
+  - 火腿肠或鸡胸肉
+  - 灯影牛肉丝/午餐肉/腊肠/卤肉...等熟肉
+  - 炒料
+  - 炒河粉、猪肉/牛肉
+  - 烧卖皮
+  - 热干面特有的碱水面
+  - 煲汤盅
+  - 牛奶
+  - 牛羊鱼虾等肉类
+  - 牛肉
+  - 牛肉高汤
+  - 猪五花肉
+  - 猪油
+  - 猪油渣
+  - 猪肉末
+  - 玉竹
+  - 玉米粒
+  - 甜面酱
+  - 生姜
+  - 生姜末
+  - 生抽
+  - 生粉
+  - 生菜
+  - 生菜菠菜油麦菜
+  - 生蚝
+  - 番茄
+  - 番茄酱
+  - 瘦肉
+  - 白糖
+  - 白胡椒粉
+  - 白蘑菇
+  - 皮冻
+  - 皮蛋
+  - 石斛
+  - 米饭
+  - 糯米
+  - 紫菜
+  - 红枣
+  - 红椒
+  - 红油豆瓣酱
+  - 红葱油
+  - 红豆
+  - 老姜
+  - 老干妈
+  - 老抽
+  - 肉丁/肉末
+  - 肉末
+  - 肉汤汁
+  - 肉蟹
+  - 肉馅
+  - 胡椒粉
+  - 胡萝卜
+  - 芝麻油
+  - 芝麻酱
+  - 芝麻香油
+  - 花椒
+  - 花生
+  - 花生油
+  - 芹菜
+  - 菜油
+  - 菜码
+  - 菜类材料
+  - 菜籽油
+  - 萝卜干
+  - 葱、姜、蒜
+  - 葱末
+  - 葱花
+  - 蒜末
+  - 蒜水
+  - 蒜瓣
+  - 蒸笼垫
+  - 蔬菜
+  - 蔬菜高汤
+  - 蕨根粉
+  - 藤椒油
+  - 虾仁
+  - 蚝油
+  - 蜂蜜
+  - 螃蟹
+  - 西兰花
+  - 西洋参
+  - 西红柿
+  - 调味料
+  - 豆块豆筋豆腐皮等豆制品类
+  - 豆瓣酱
+  - 辣椒油
+  - 酱油
+  - 酸豆角
+  - 醪糟
+  - 量杯
+  - 金针菇
+  - 陈皮
+  - 青椒
+  - 青椒番茄胡萝卜等蔬菜类。
+  - 青菜
+  - 青葱
+  - 青蟹
+  - 青豆
+  - 面条
+  - 面粉
+  - 面食材料
+  - 韭菜
+  - 风干快熟面/任何牌子的快熟面
+  - 食用油
+  - 食用盐
+  - 食盐
+  - 饮用水
+  - 馒头
+  - 香油
+  - 香菇
+  - 香菜
+  - 香葱
+  - 香醋
+  - 高汤或浓汤宝
+  - 鱼头一个
+  - 鲜面条）
+  - 鲤鱼、五花肉
+  - 鳝丝
+  - 鸡精
+  - 鸡腿
+  - 鸡蛋
+  - 鸡蛋鸭蛋鹅蛋鸵鸟蛋等蛋类
+  - 麦冬
+  - 麻油
+  - 黄油
+  - 黄瓜
+  - 黄瓜、面筋块、绿豆芽、鸡蛋、蒜瓣、小葱、淀粉
+  - 黄豆酱
+  - 黑椒碎
+  - 黑椒粉
+  - 黑胡椒碎
+  - 黑鳕鱼

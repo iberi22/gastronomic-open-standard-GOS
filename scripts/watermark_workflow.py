@@ -7,7 +7,7 @@ from PIL import Image, ImageOps
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DISHES_DIR = os.path.join(PROJECT_ROOT, 'dishes')
 RAW_REGISTRY_DIR = os.path.join(PROJECT_ROOT, 'assets', 'raw_images_registry')
-LOGO_PATH = os.path.join(PROJECT_ROOT, 'assets', 'images', 'logo.png')
+LOGO_PATH = os.path.join(PROJECT_ROOT, 'assets', 'images', 'logo_gos.png')
 
 # Extensions to process
 IMAGE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp')

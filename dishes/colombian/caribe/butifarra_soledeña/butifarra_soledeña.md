@@ -3,94 +3,94 @@ title: Butifarra Soledeña
 region: Caribe
 categories:
 - Snack
-- Pasaboca
-- Acompañamiento
+- Embutido
+- Identidad Cultural
 sensory:
   flavor:
   - Salado
-  - Umami
+  - Especiado (Pimienta/Comino)
+  - Cárnico
   texture:
   - Firme
-  - Jugoso
+  - Jugosa
+  - Compacta
   aroma:
-  - Especiado
-  - Cárnico
-  presentation: Se sirve en porciones pequeñas, acompañado de bollo de yuca y limón.
-    Es protagonista en ferias, mercados y celebraciones costeñas.
+  - Pimienta picante
+  - Ajo
+  - Humo (si es ahumada)
+  presentation: Bolitas pequeñas atadas en ristra, servidas con bollo de yuca y limón.
 main_ingredients:
-- Carne de res
-- Carne de cerdo
-- Grasa de cerdo
-- Tripas de cerdo
+- Carne de Res
+- Carne de Cerdo
+- Pimienta
+- Tripa natural
 difficulty: ★★★☆☆
 prep_time: 1 hora
-cook_time: 1 hora
+cook_time: 45 minutos
 servings: 30
+nutrition:
+  calories: 120
+  macros:
+    protein_g: 10.0
+    fat_g: 8.0
+    carbs_g: 1.0
+tags:
+- Soledad
+- Patrimonio
+- Callejero
 images:
 - url: https://pixabay.com/es/photos/butifarra-soledeña-colombia-6146264/
-  description: Butifarra soledeña tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/butifarra-soledeña
-  description: Variaciones de butifarra soledeña en Unsplash
+  description: Butifarras con bollo de yuca (Pixabay)
 sources:
 - https://www.eltiempo.com/vida/receta-butifarra-soledeña-35793
-- https://www.gastronomiacolombiana.com/foro/butifarra-soledeña
-- https://www.google.com/maps/search/butifarra+soledeña
-- https://www.youtube.com/results?search_query=butifarra+soledeña
-- https://www.tiktok.com/tag/butifarrasoledeña
 license: MIT
-description: La Butifarra Soledeña es un embutido típico de Soledad, Atlántico, y
-  un ícono de la gastronomía de la región Caribe colombiana. Es una pequeña salchicha
-  de carne de res y cerdo, sazonada y cocida, que se sirve tradicionalmente con bollo
-  de yuca y limón.
-nutrition:
-  calories: 2178
-  macros:
-    protein_g: 260.4
-    fat_g: 110.0
-    carbs_g: 2.0
----## Butifarra Soledeña
+description: La Butifarra Soledeña es patrimonio cultural del Caribe. A diferencia de la catalana, es redonda, pequeña y se cocina hervida (no curada), caracterizada por un fuerte perfil especiado (pimienta picante) y servida siempre con limón y bollo de yuca.
+---
 
-La Butifarra Soledeña es un embutido típico de Soledad, Atlántico, y un ícono de la gastronomía de la región Caribe colombiana. Es una pequeña salchicha de carne de res y cerdo, sazonada y cocida, que se sirve tradicionalmente con bollo de yuca y limón.
+# Butifarra Soledeña
+
+"En Soledad la butifarra es religión". Este embutido es el pasaboca callejero por excelencia en el Atlántico. Su técnica de preparación es un legado de la inmigración catalana adaptada al paladar y los ingredientes locales (más picante, cocción en agua).
 
 ## Información General
 
-* **Dificultad:** ★★★☆☆
+* **Dificultad:** ★★★☆☆ (Requiere técnica de embutido)
 * **Tiempo de preparación:** 1 hora
-* **Tiempo de cocción:** 1 hora
-* **Porciones:** 30 butifarras
+* **Tiempo de cocción:** 45 minutos
+* **Porciones:** 30 unidades (aprox.)
 
 ---
 
 ## 📝 Ingredientes
 
-- 500 g de carne de res molida
-- 500 g de carne de cerdo molida
-- 100 g de grasa de cerdo
-- 2 dientes de ajo
-- 1 cucharada de orégano seco
-- 1 cucharadita de comino
-- 1 cucharadita de pimienta negra
-- 1 cucharada de sal
-- Tripas de cerdo limpias (para embutir)
-- Agua suficiente
+* **Carnes:**
+    * 700g de carne de res magra (pulpa)
+    * 300g de tocino o papada de cerdo (la grasa es vital para la jugosidad)
+* **Condimentos:**
+    * 1 cucharada generosa de pimienta picante (chili flakes o pimienta negra molida gruesa)
+    * 1 cabeza de ajo pelada y triturada
+    * sal al gusto
+    * comino (toque sutil)
+    * canela (el secreto de algunas matronas)
+* **Tripa:**
+    * 2 metros de tripa de cerdo natural (bien lavada con limón)
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Preparar la mezcla:** Mezcla las carnes, grasa, ajo triturado, orégano, comino, pimienta y sal en un bol grande. Amasa bien para integrar todos los sabores.
-2. **Embutir:** Rellena las tripas con la mezcla, formando pequeñas salchichas de 5-7 cm. Ata los extremos con hilo de cocina.
-3. **Cocinar:** Hierve agua en una olla grande y cocina las butifarras durante 40-50 minutos hasta que estén firmes.
-4. **Finalizar:** Deja enfriar y corta en porciones pequeñas.
-5. **Servir:** Sirve las butifarras acompañadas de bollo de yuca y gajos de limón.
+1. **La Molienda:** Muele la carne de res y el tocino juntos. Se busca una textura media, no una pasta.
+2. **El Sazón (El Alma):** Agrega las especias. La butifarra soledeña DEBE picar un poco. Amasa vigorosamente por 10 minutos para desarrollar la miosina (proteína) y lograr una mezcla pegajosa y compacta.
+3. **Embutido:** Rellena la tripa con ayuda de un embudo. No la llenes a reventar porque el relleno expande al cocinar.
+4. **Amarrado:** Usa hilo de algodón para atar bolitas de unos 3-4 cm de diámetro, formando un rosario.
+5. **Cocción:** Hierve agua con sal y especias (laurel, guayabita). Introduce las butifarras y cocina por 30-40 minutos. Pincha con una aguja: si sale líquido claro, están listas.
+6. **Reposo:** Sácalas y déjalas enfriar un poco. Tradicionamente se mantienen tibias en una olla de metal.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes añadir pimentón molido o ají para un sabor más picante.
-* El secreto está en la mezcla de especias y el amasado intenso para lograr la textura tradicional.
-* Se pueden dorar ligeramente en sartén antes de servir para una textura más crujiente.
+* **Bollo de Yuca:** No hay butifarra sin bollo. La neutralidad del bollo equilibra la intensidad salada/picante de la carne.
+* **Limón:** El ácido cítrico corta la grasa del tocino en el paladar.
 
 ---
 
@@ -102,43 +102,41 @@ La Butifarra Soledeña es un embutido típico de Soledad, Atlántico, y un ícon
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Snack, pasaboca, acompañamiento
-- **Perfil de sabor dominante:** Salado, Umami
-- **Textura principal:** Firme (embutido), Jugoso
-- **Aroma destacado:** Especiado, Cárnico
-- **Presentación y experiencia:** Se sirve en porciones pequeñas, acompañado de bollo de yuca y limón. Es protagonista en ferias, mercados y celebraciones costeñas.
-- **Opiniones y experiencia de usuario:** "La butifarra soledeña es el mejor snack de la costa, perfecta con bollo y limón". "Ir a Soledad y no comer butifarra es imperdonable". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Cárnico, Picante     | 5/5              | Glutamato natural + Piperina (pimienta). |
+| **Aroma**| Ajo, Especias        | 4/5              | Alicina (ajo) y Cinamaldehído (canela sutil). |
+| **Textura**| Compacta, Jucosa     | 5/5              | Emulsión cárnica estabilizada por miosina y colágeno. |
+| **Vista** | Grisáceo/Pardo       | 3/5              | Color natural de carne cocida (mioglobina desnaturalizada), sin nitritos rosados. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "Las butifarras de la plaza de Soledad son únicas, jugosas y llenas de sabor".
-- **Foro gastronómico:** "El secreto está en el amasado y en la mezcla de especias".  
-calificación: ★★★★★ 5/5
+- **Extracción de Proteína (Miosina):** El amasado con sal no es solo para mezclar sabor; extrae la miosina de las fibras musculares. Esta proteína actúa como "pegamento" al cocinarse, evitando que la butifarra se desmorone al morderla.
+- **Tripa Natural vs. Sintética:** La tripa natural es semi-permeable y colágenosa. Aporta un chasquido ("snap") característico al morder que el plástico no tiene.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente        | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|--------------------|-----------------|--------------|-----------|------------|----------------------|
-| Carne de res       | 250             | 26           | 0         | 17         | Hierro, Zinc         |
-| Carne de cerdo     | 270             | 24           | 0         | 20         | Tiamina, Selenio     |
-| Grasa de cerdo     | 900             | 0            | 0         | 100        | Energía, Sabor       |
+- **Alta en Proteína:** Es casi pura carne.
+- **Grasa:** Depende de la cantidad de tocino usado (tradicionalmente ~30%).
+- **Sodio:** Alto contenido por la sazón y conservación.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Origen:** Deriva de la *botifarra* catalana traída por inmigrantes en el siglo XIX, pero perdió el curado y ganó el "picantico" caribeño.
+- **Consumo:** Se vende en la calle al grito de "¡Buti, buti!". Es el "finger food" oficial del Carnaval de Barranquilla.
 
-## Sabiduría colectiva, trucos y consejos
+### 📚 Estudios y Referencias
 
-1. **Amasado intenso:** Es clave para lograr la textura firme y jugosa.
-2. **Especias frescas:** Usa especias recién molidas para mayor aroma y sabor.
-3. **Acompañamiento:** Sirve siempre con bollo de yuca y limón para la experiencia auténtica.
+1. *Illera, C.* "De la Botifarra a la Butifarra: Mestizaje culinario en el Caribe".
+2. *MinCultura.* "Lista representativa de patrimonio cultural inmaterial".
 
 ---
 
-## Fuentes consultadas y enlaces
+## Sabiduría colectiva (Tips de la Comunidad)
 
-- [Receta tradicional de butifarra soledeña - El Tiempo](https://www.eltiempo.com/vida/receta-butifarra-soledeña-35793)
-- [Google Maps: Opiniones sobre butifarra soledeña](https://www.google.com/maps/search/butifarra+soledeña)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/butifarra-soledeña)
+1. **"Agua de la cocción":** No la botes. Sirve para cocinar la yuca o el bollo y que coja sabor.
+2. **Tripa seca:** Si usas tripa seca salada, hidrátala en agua tibia con vinagre por 1 hora antes.
+
+---

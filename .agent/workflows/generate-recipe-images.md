@@ -23,7 +23,7 @@ For each missing recipe:
     -   *Context*: Ensure cultural accuracy (e.g., correct serving dishes, sides like patacones).
 3.  **Generate**: Use the `generate_image` tool.
     -   `Prompt`: "[Dish Name], [Description], professional food photography..."
-    -   `ImageName`: `[dish_slug]_v1`
+    -   `ImageName`: `[dish_slug]_nano`
 
 ## 3. Save Image
 1.  Use the `run_command` or filesystem tools to move/save the generated image to the recipe's folder.
@@ -48,7 +48,7 @@ python scripts/watermark_workflow.py
 
 ## 6. Verify and Commit
 1.  Check that `assets/raw_images_registry` has the clean backup.
-2.  Check that `dishes/.../images/1.jpg` has the logo watermark.
+2.  Check that `dishes/.../images/[dish_slug]_nano.jpg` has the Nano Banana watermark.
 3.  Commit changes.
 
 // turbo

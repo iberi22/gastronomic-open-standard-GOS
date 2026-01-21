@@ -1,111 +1,139 @@
 ---
 title: Alegrías
-description: Alegrías son un dulce tradicional de la región Caribe colombiana, especialmente
-  popular en Cartagena y los pueblos costeros. Se elaboran con semillas de amaranto,
-  panela y coco, formando barras energéticas y nutritivas que son parte esencial de
-  la cultura festiva costeña.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+region: Caribe
+categories:
+- Dulce
+- Snack
+- Festivo
+sensory:
+  flavor:
+  - Dulce
+  - Nuez (Amaranto)
+  - Coco
+  texture:
+  - Crujiente
+  - Pegajoso
+  - Granulado
+  aroma:
+  - Caramelo (Panela)
+  - Coco tostado
+  presentation: Barras o bolas compactas de semillas doradas con coco, brillantes por el melado.
+main_ingredients:
+- Semillas de Amaranto
+- Panela
+- Coco fresco
+- Miel de caña
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 20
 nutrition:
-  calories: 760
+  calories: 120
   macros:
-    protein_g: 0.0
-    fat_g: 0.0
-    carbs_g: 196.0
-embedding_version: 1
+    protein_g: 2.5
+    fat_g: 3.0
+    carbs_g: 22.0
+tags:
+- Tradicional
+- Cartagena
+- Dulces típicos
+images:
+- url: https://pixabay.com/es/photos/amaranto-semillas-cereal-saludable-3788094/
+  description: Semillas de amaranto (base de las alegrías)
+sources:
+- https://www.eltiempo.com/vida/receta-alegrias-57934
+license: MIT
+description: Las Alegrías son un dulce ancestral del Caribe colombiano, herencia africana y precolombina. Son barras energéticas naturales hechas de semillas de amaranto (millo) recubiertas de un melado de panela y coco.
 ---
 
 # Alegrías
 
-Alegrías son un dulce tradicional de la región Caribe colombiana, especialmente popular en Cartagena y los pueblos costeros. Se elaboran con semillas de amaranto, panela y coco, formando barras energéticas y nutritivas que son parte esencial de la cultura festiva costeña.
+Las Alegrías son un dulce tradicional de la región Caribe colombiana, especialmente popular en Cartagena y San Basilio de Palenque. Se elaboran con semillas de amaranto tostado, panela y coco, formando barras o bolas energéticas y nutritivas que son vendidas tradicionalmente por las "palenqueras".
 
 ## Información General
 
 * **Dificultad:** ★★☆☆☆
 * **Tiempo de preparación:** 20 minutos
 * **Tiempo de cocción:** 15 minutos
-* **Porciones:** 20 barras
+* **Porciones:** 20 unidades
 
 ---
 
 ## 📝 Ingredientes
 
-- 2 tazas de semillas de amaranto (bledo)
-- 1 taza de panela rallada
-- 1 taza de coco rallado
-- 1/2 taza de miel de caña (melado)
-- 1/2 taza de agua
-- 1 pizca de sal
-- Hojas de bijao o plátano (opcional, para envolver)
+* **Base:**
+    * 2 tazas de semillas de **[Amaranto/Bledo](../../ingredients/amaranto)** (tostado)
+    * 1 taza de **[Coco](../../ingredients/coco)** rallado (fresco o deshidratado)
+* **El Melado:**
+    * 1 taza de **[Panela/Papelón](../../ingredients/panela)** rallada
+    * 1/2 taza de miel de caña
+    * 1/2 taza de agua
+    * 1 pizca de sal (para realzar el dulce)
+    * Opcional: Anís en grano
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Preparar el melado:** Disuelve la panela y la miel de caña en agua a fuego medio hasta obtener un almíbar espeso.
-2. **Agregar ingredientes secos:** Incorpora el amaranto y el coco rallado, mezcla bien hasta que todo esté cubierto por el almíbar.
-3. **Formar las alegrías:** Vierte la mezcla caliente sobre una superficie engrasada, extiende y aplana con una espátula. Deja enfriar un poco y corta en barras o cuadros.
-4. **Envolver (opcional):** Envuelve cada barra en hoja de bijao o plátano para conservar su frescura y aroma.
-5. **Servir:** Deja enfriar completamente antes de consumir.
+1. **Tostar el Amaranto:** Si las semillas están crudas, tostar en un sartén seco a fuego medio hasta que exploten (como palomitas de maíz minúsculas) y doren ligeramente. Reservar.
+2. **El Melado (Punto de Bola):** En una olla gruesa, disuelve la panela y miel en el agua. Cocina a fuego medio sin revolver demasiado hasta obtener un almíbar espeso (punto de bola blanda, aprox 115°C).
+3. **Mezcla Vigorosa:** Agrega el coco y el amaranto al melado caliente. Mezcla rápidamente con cuchara de madera. El almíbar se enfriará rápido, así que la velocidad es clave.
+4. **Formado:**
+    * *Opción A (Barras):* Vierte sobre una bandeja engrasada o con papel encerado. Aplana y corta antes de que endurezca totalmente.
+    * *Opción B (Bolas):* Con las manos húmedas (cuidado con el calor), forma bolas compactas.
+5. **Enfriado:** Deja reposar hasta que estén firmes y crujientes.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes añadir maní, ajonjolí o frutas secas para enriquecer la mezcla.
-* El secreto está en el punto del almíbar: debe estar espeso pero no caramelizado.
-* Las hojas de bijao aportan aroma y ayudan a conservar las alegrías frescas por más tiempo.
+* **Conservación:** Guárdalas en frascos herméticos por hasta 2 semanas. La humedad las ablanda.
+* **Nutrición:** Es un superalimento. El amaranto tiene una proteína de alto valor biológico.
 
 ---
 
 ## 📸 Galería
 
-![Alegrías de amaranto y coco](./images/1.png)
+![Alegrías de amaranto](./images/1.png)
 
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Dulce, snack energético
-- **Perfil de sabor dominante:** Dulce
-- **Textura principal:** Crujiente (amaranto), Masticable (coco y melado)
-- **Aroma destacado:** Tostado (amaranto), Dulce (panela y miel)
-- **Presentación y experiencia:** Se presentan en barras o cuadros, envueltos en hojas, ideales para fiestas, ferias y como snack saludable.
-- **Opiniones y experiencia de usuario:** "Las alegrías son el dulce de la infancia, crujientes y llenas de sabor a coco y panela". "Perfectas para llevar a la playa o compartir en fiestas". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Dulce, Tostado       | 5/5              | Sacarosa/Glucosa caramelizada + Pirazinas del tostado. |
+| **Aroma**| Caramelo, Coco       | 4/5              | Lactonas del coco + Compuestos de Maillard. |
+| **Textura**| Crujiente, Aglomerado| 5/5              | Matriz vítrea de azúcar uniendo partículas duras. |
+| **Boca** | Seco, Masticable     | 3/5              | Hidroscopicidad baja si está bien hecho. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "Las alegrías de Cartagena son únicas, el coco y el amaranto hacen la mezcla perfecta".
-- **Foro gastronómico:** "El secreto está en el punto del almíbar y en usar hojas frescas para envolverlas".
-calificación: ★★★★★ 5/5
+- **Transición Vítrea del Azúcar:** El éxito depende del control del agua. Al llevar la panela a "punto de bola" (concentración de azúcar >85%), al enfriarse forma una estructura amorfa sólida pero no cristalina (vidrio) que "pega" las semillas. Si queda mucha agua, queda chicloso; si se pasa de cocción, queda duro como piedra o se quema.
+- **Explosión del Amaranto:** El agua interna de la semilla se vaporiza y expande el endospermo (gelatinización flash), aumentando la digestibilidad y cambiando la textura de "piedra" a "espuma crujiente".
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente        | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|--------------------|-----------------|--------------|-----------|------------|----------------------|
-| Amaranto           | 371             | 14           | 65        | 7          | Calcio, Hierro       |
-| Panela             | 350             | 0            | 90        | 0          | Minerales, Energía   |
-| Coco rallado       | 354             | 3.3          | 15        | 33         | Ácidos grasos MCT    |
+- **Energía Rápida + Sostenida:** La panela da glucosa inmediata, mientras que la grasa del coco y la fibra/proteína del amaranto moderan la absorción.
+- **Amaranto:** Rico en lisina (aminoácido escaso en cereales) y hierro.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Las Palenqueras:** Estas mujeres, íconos de Cartagena, llevan las alegrías en palanganas sobre su cabeza. El grito "¡Alegría, con coco y anís!" es patrimonio oral.
+- **Origen:** Fusión técnica indígena (uso de semillas/amaranto) con ingredientes introducidos (caña de azúcar) y estética africana.
 
-## Sabiduría colectiva, trucos y consejos
+### 📚 Estudios y Referencias
 
-1. **Almíbar en su punto:** No dejes que se caramelice demasiado, debe ser flexible para formar las barras.
-2. **Aromatizar:** Usa hojas frescas de bijao para envolver y conservar mejor.
-3. **Conservación:** Guarda en recipiente hermético para mantener la textura crujiente.
+1. *Patiño, V.M.* "Historia de la cultura material en la América equinoccial". (Uso precolombino de amarantáceas).
+2. *MinCultura Colombia.* "Biblioteca Básica de Cocinas Tradicionales".
 
 ---
 
-## Fuentes consultadas y enlaces
+## Sabiduría colectiva (Tips de la Comunidad)
 
-- [Receta tradicional de alegrías - El Tiempo](https://www.eltiempo.com/vida/receta-alegrias-57934)
-- [Google Maps: Opiniones sobre alegrías](https://www.google.com/maps/search/alegrias+colombianas)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/alegrias)
+1. **La Pizca de Sal:** Según las abuelas, "dulce sin sal no es dulce".
+2. **Humedad:** "Si llueve, no hagas alegrías, se ponen melochas (pegajosas)". (Verdad científica: el azúcar es higroscópico).
+
+---

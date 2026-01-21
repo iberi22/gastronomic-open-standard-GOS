@@ -102,7 +102,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### 📊 Perfil Sensorial Profundo
+### 📊 Perfil Sensorial Estandarizado
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
