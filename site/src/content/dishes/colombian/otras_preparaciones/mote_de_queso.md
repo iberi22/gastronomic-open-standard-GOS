@@ -66,7 +66,7 @@ description: '* 2 libras de ñame pelado y en cubos'
 
 ## 📸 Galería
 
-![Mote de Queso Tradicional](/AI-Chef/dishes/colombian/otras_preparaciones/../caribe/mote_de_queso/images/1.webp)
+![Mote de Queso Tradicional](/gastronomic-open-standard-GOS/dishes/colombian/otras_preparaciones/../caribe/mote_de_queso/images/1.webp)
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
