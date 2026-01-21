@@ -1,58 +1,51 @@
 ---
-title: Pan de Bono
-region: Valle del Cauca
+title: "Pandebono Valluno"
+region: "Valle del Cauca"
 categories:
-- Pan
-- Snack
-- Desayuno
+  - "Amasijo"
+  - "Desayuno"
+  - "Ancestral"
 sensory:
   flavor:
-  - Lácteo
-  - Salado
-  - Ligeramente dulce
+    - "Queso Salado"
+    - "Fermento Suave"
+    - "Maíz Dulce"
   texture:
-  - Esponjoso
-  - Húmedo
-  - Elástico
+    - "Corteza Fina/Crujiente"
+    - "Miga Chiclo-Elástica"
+    - "Húmedo"
   aroma:
-  - Queso
-  - Mantequilla
-  presentation: Se sirve caliente, ideal para acompañar café o chocolate. Muy popular
-    en reuniones familiares y panaderías.
+    - "Queso Costeño horneado"
+    - "Maíz Tostado"
+    - "Mantequilla"
+  presentation: "Aros o bolas con una cavidad u 'ojo' en el centro. Deben lucir dorados pero no quemados, con la superficie lisa que indica buen hidratado del almidón."
 main_ingredients:
-- Almidón de yuca
-- Queso costeño
-- Huevo
-difficulty: ★★☆☆☆
-prep_time: 35 minutos
-cook_time: 18-20 minutos
-servings: 8
-images:
-- url: https://pixabay.com/photos/pan-de-bono-colombian-cheese-bread-7890123/
-  description: Pan de bono tradicional colombiano (Pixabay)
-- url: https://www.pexels.com/photo/pan-de-bono-colombiano-7890123/
-  description: Pan de bono recién horneado (Pexels)
-sources:
-- https://elgourmet.com/recetas/pan-de-bono/
-- https://www.youtube.com/results?search_query=pan+de+bono+colombiano
-- https://www.tiktok.com/tag/pandebono
-license: MIT
-tags:
-- colombiano
-- tradicional
-- pan
-- pandebono
-- open source
-description: El pan de bono es uno de los panes más tradicionales y queridos de Colombia,
-  especialmente en el Valle del Cauca. Esponjoso, ligeramente dulce y con intenso
-  sabor a queso, es infaltable en desayunos y onces. Su popularidad lo ha convertido
-  en tendencia en cafeterías y redes sociales.
+  - "Almidón de Yuca Agrio (Fermentado)"
+  - "Masato de Maíz o Harina de Maíz"
+  - "Queso Costeño (Salado)"
+  - "Queso Fresco (Cuajada)"
+difficulty: "Media (Equilibrio de humedades)"
+prep_time: "40"
+cook_time: "20"
+servings: 10
 nutrition:
-  calories: 1667
+  calories: 210
   macros:
-    protein_g: 45.1
-    fat_g: 59.1
-    carbs_g: 242.4
+    protein_g: 8
+    fat_g: 10
+    carbs_g: 22
+tags:
+  - "Cali"
+  - "Vía al Mar"
+  - "Sin Gluten"
+images:
+  - url: "https://im.ge/i/pandebono-1.AbC666"
+    description: "Pandebono tradicional con su textura elástica característica"
+sources:
+  - name: "Ruta del Pandebono GOS"
+    url: "https://gos.org/amasijos/pandebono"
+license: "MIT"
+description: "El rey de los amasijos vallunos. El Pandebono es un milagro de la física del almidón agrio, que logra leudar y crear alveolos gigantes sin levadura, gracias a la expansión de gases atrapados en una red de queso y almidón modificado."
 ---
 
 ## Pan de Bono
@@ -102,70 +95,35 @@ El pan de bono es uno de los panes más tradicionales y queridos de Colombia, es
 
 ---
 
-## 🔬 Análisis Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Pan, snack, desayuno
-- **Perfil de sabor dominante:** Lácteo, salado, ligeramente dulce
-- **Textura principal:** Esponjoso, húmedo, elástico
-- **Aroma destacado:** Queso, mantequilla
-- **Presentación y experiencia:** Se sirve caliente, ideal para acompañar café o chocolate. Muy popular en reuniones familiares y panaderías.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Salado-Lácteo        | 5/5              | Caseína concentrada del queso costeño. |
+| **Aroma**| Maíz/Yuca            | 4/5              | Volátiles de fermentación láctica (almidón agrio). |
+| **Textura**| Esponja Elástica    | 5/5              | Gelatinización del almidón con grasa láctea. |
+| **Vista** | Dorado Pálido       | 4/5              | Maillard ligero restringido por la acidez. |
 
-## 🗣️ Opiniones y Experiencia de Usuario
+### ⚗️ Química y Física Culinaria
 
-- "El pan de bono recién horneado es adictivo, se deshace en la boca." (Instagram)
-- "Me encanta con chocolate caliente, es mi desayuno favorito." (YouTube)
-- "En el Valle no puede faltar en la mesa." (TikTok)
+- **El Secreto del Almidón Agrio:** A diferencia del pan de yuca, el pandebono legítimo requiere **almidón de yuca fermentado** (agrio). Durante la fermentación del almidón (30+ días bajo agua), la pared del gránulo se debilita y se generan ácidos orgánicos. Al hornearse, estos ácidos reaccionan y el gránulo se expande violentamente, creando la miga aireada sin necesidad de levadura biológica ni polvo de hornear excesivo.
+- **La Matriz Proteica del Queso Costeño:** El queso no solo da sabor; es la estructura. Al ser un queso alto en sal y bajo en humedad, no se funde completamente en aceite, sino que mantiene cierta estructura granulada que soporta el peso del almidón hidratado mientras se fija la forma en el horno.
+- **Sinergia Maíz-Yuca:** La adición de harina de maíz (o masato en la receta original de la Hacienda El Bono) corta la textura gomosa pura de la yuca, aportando friabilidad (que se pueda morder fácilmente) y sabor a cereal.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## 🧬 Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Digestibilidad del Almidón:** El proceso de fermentación del almidón agrio predigiere ciertas cadenas de carbohidratos, haciéndolo más ligero para la digestión que los almidones nativos.
+- **Calcio Biodisponible:** Alta concentración de calcio procedente de la mezcla de quesos.
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Almidón de yuca  | 330             | 0.6          | 81        | 0.3        | Almidón resistente    |
-| Queso costeño    | 350             | 24           | 3         | 28         | Calcio, sodio        |
-| Huevo            | 155             | 13           | 1         | 11         | Colina, vitamina D   |
+### 🕰️ Contexto Socio-Cultural
 
-*Fuente: USDA FoodData Central, blogs de panadería colombiana*
+- **Hacienda El Bono:** La leyenda cuenta que un panadero italiano en Dagua, Valle, horneaba este pan y voceaba "Pane del Buono" (Pan del bueno). Otra versión lo liga a la Hacienda El Bono y el tiquete o "bono" que recibían los trabajadores.
+- **Patrimonio Valluno:** Es el ícono gastronómico de Cali junto con el Champús.
 
----
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-## 📚 Fuentes y Enlaces
-
-- [Receta de pan de bono - El Gourmet](https://elgourmet.com/recetas/pan-de-bono/)
-- [Pan de bono colombiano - YouTube](https://www.youtube.com/results?search_query=pan+de+bono+colombiano)
-- [TikTok #pandebono](https://www.tiktok.com/tag/pandebono)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "El secreto está en usar queso fresco y amasar bien la masa."
-- "Sírvelo caliente, recién horneado, para mejor sabor y textura."
-- "Ideal para compartir en familia o con amigos en la tarde."
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Starch, Lutein & Zeaxanthin, Butyrate, Casein, Choline, Bioactive Peptides, Sucrose
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 1667 kcal (Total receta)
-- **Proteína:** 45.1g
-- **Grasas:** 59.1g
-- **Carbohidratos:** 242.4g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "El pandebono no se amasa como pan, se integra. Si le das mucha mano, se pone duro como piedra." — *Panadero de La Kueva (Cali).*
+>
+> "Si usa almidón dulce (normal) en vez de agrio, le queda un pan de yuca pesado, no un pandebono. El agrio es el que lo infla."

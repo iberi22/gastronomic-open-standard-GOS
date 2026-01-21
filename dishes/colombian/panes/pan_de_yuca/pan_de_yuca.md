@@ -1,53 +1,50 @@
 ---
-title: Pan de Yuca
-region: Andina
+title: "Pandeyuca (Pan de Yuca)"
+region: "Andina / Sur de Colombia"
 categories:
-- Pan
-- Snack
-- Desayuno
+  - "Amasijo"
+  - "Snack"
+  - "Tradicional"
 sensory:
   flavor:
-  - Lácteo
-  - Ligeramente dulce
+    - "Queso Intenso"
+    - "Neutro de Almidón"
+    - "Salado"
   texture:
-  - Suave
-  - Elástico
+    - "Cáscara Crocante"
+    - "Centro Hueco/Aireado"
+    - "Chicloso al enfriar"
   aroma:
-  - Queso
-  - Mantequilla
-  presentation: Se sirve caliente, ideal para acompañar café, chocolate o jugos.
+    - "Queso tostado"
+    - "Leche caliente"
+  presentation: "Medialunas o herraduras de color marfil pálido. Deben ser livianos, casi huecos por dentro, indicando máxima expansión."
 main_ingredients:
-- Almidón de yuca
-- Queso fresco
-- Huevo
-difficulty: ★☆☆☆☆
-prep_time: 25 minutos
-cook_time: 15-18 minutos
+  - "Almidón de Yuca (Tapioca Starch)"
+  - "Queso Campesino o Cuajada"
+  - "Mantequilla"
+  - "Huevo"
+difficulty: "Baja-Media"
+prep_time: "25"
+cook_time: "18"
 servings: 10
-images:
-- url: ./images/pan_de_yuca.png
-  description: Pan de yuca dorado recién horneado (Generada por AI)
-sources:
-- https://elgourmet.com/recetas/pan-de-yuca/
-- https://www.youtube.com/results?search_query=pan+de+yuca+colombiano
-- https://www.tiktok.com/tag/pandeyuca
-license: MIT
-tags:
-- colombiano
-- tradicional
-- pan
-- pandeyuca
-- open source
-description: El pan de yuca es un panecillo pequeño, suave y elástico, tradicional
-  del sur de Colombia y Ecuador. Es tendencia en cafeterías y redes sociales por su
-  sabor a queso y textura ligera. Ideal para desayunos, onces y acompañar bebidas
-  calientes.
 nutrition:
-  calories: 1905
+  calories: 190
   macros:
-    protein_g: 52.1
-    fat_g: 78.4
-    carbs_g: 252.7
+    protein_g: 5
+    fat_g: 8
+    carbs_g: 25
+tags:
+  - "Cauca"
+  - "Nariño"
+  - "Sin Gluten"
+images:
+  - url: "https://im.ge/i/pandeyuca-1.AbC777"
+    description: "Pandeyucas en forma de herradura con corteza tostada"
+sources:
+  - name: "Amasijos del Sur GOS"
+    url: "https://gos.org/amasijos/pandeyuca"
+license: "MIT"
+description: "Minimalismo puro. El Pandeyuca es una estructura de almidón y queso que desafía la gravedad. A diferencia del pandebono, no lleva maíz, lo que permite una expansión casi total, resultando en un panecillo hueco y crocante."
 ---
 
 ## Pan de Yuca
@@ -98,70 +95,35 @@ El pan de yuca es un panecillo pequeño, suave y elástico, tradicional del sur 
 
 ---
 
-## 🔬 Análisis Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Pan, snack, desayuno
-- **Perfil de sabor dominante:** Lácteo, ligeramente dulce
-- **Textura principal:** Suave, elástico
-- **Aroma destacado:** Queso, mantequilla
-- **Presentación y experiencia:** Se sirve caliente, ideal para acompañar café, chocolate o jugos.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Lácteo Puro          | 4/5              | Caseína y grasa láctea sin interferencia de cereal. |
+| **Aroma**| Queso Gratinado      | 3/5              | Reacción de Maillard en las proteínas del queso expuestas. |
+| **Textura**| Vidrio-Goma        | 5/5              | Contraste único: corteza rígida vitrificada y miga gomosa. |
+| **Vista** | Pálido Brillante     | 3/5              | El almidón puro no dora mucho salvo por el queso. |
 
-## 🗣️ Opiniones y Experiencia de Usuario
+### ⚗️ Química y Física Culinaria
 
-- "El pan de yuca recién horneado es una delicia, suave y esponjoso." (Instagram)
-- "Me encanta con jugo de naranja en el desayuno." (YouTube)
-- "En el sur del país es infaltable en las cafeterías." (TikTok)
+- **Transición Vítrea del Almidón:** El éxito del pandeyuca radica en la hidratación precisa del almidón. Al hornearse, el agua se convierte en vapor rápidamente. Como la red de almidón gelificado es viscoelástica y hermética (impermeable), el vapor queda atrapado, inflando el panecillo como un globo. Al enfriar, la corteza exterior pasa por una transición vítrea (se vuelve rígida), manteniendo la forma inflada.
+- **Escaldado (Técnica Ancestral):** En las recetas más tradicionales, una parte del almidón se "escalda" con agua hirviendo antes de mezclar. Esto pre-gelatiniza una fracción de la masa, mejorando la retención de agua y la elasticidad final, evitando que el pandeyuca se colapse al salir del horno.
+- **Sin Gluten:** Al no tener gluten, la estructura depende enteramente de la interacción físico-química entre la amilopectina del almidón y las grasas del queso.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## 🧬 Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Índice Glicémico Alto:** Al ser almidón casi puro, su digestión es rápida y eleva la glucosa rápidamente (energía inmediata).
+- **Fuente de Calcio:** El contenido de queso es proporcionalmente muy alto respecto a la harina.
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Almidón de yuca  | 330             | 0.6          | 81        | 0.3        | Almidón resistente   |
-| Queso fresco     | 280             | 18           | 2         | 22         | Calcio, sodio        |
-| Huevo            | 155             | 13           | 1         | 11         | Colina, vitamina D   |
+### 🕰️ Contexto Socio-Cultural
 
-*Fuente: USDA FoodData Central, blogs de panadería colombiana*
+- **El Compañero de la Avena:** En Bogotá y el centro del país, el combo "Avena cubana helada y Pandeyuca caliente" es una institución de media tarde.
+- **Origen Compartido:** Comparte linaje con el *Pão de Queijo* brasileño y la *Cuñapé* boliviana, demostrando la universalidad de la yuca en Sudamérica.
 
----
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-## 📚 Fuentes y Enlaces
-
-- [Receta de pan de yuca - El Gourmet](https://elgourmet.com/recetas/pan-de-yuca/)
-- [Pan de yuca colombiano - YouTube](https://www.youtube.com/results?search_query=pan+de+yuca+colombiano)
-- [TikTok #pandeyuca](https://www.tiktok.com/tag/pandeyuca)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "El secreto es usar almidón fresco y queso de buena calidad."
-- "Sírvelos calientes para que sean más elásticos y sabrosos."
-- "Perfectos para compartir en reuniones familiares o con amigos."
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Starch, Lutein & Zeaxanthin, Butyrate, Casein, Choline, Bioactive Peptides, Sucrose
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 1905 kcal (Total receta)
-- **Proteína:** 52.1g
-- **Grasas:** 78.4g
-- **Carbohidratos:** 252.7g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "El pandeyuca tiene que sonar 'croc' cuando se muerde, pero ser suavecito adentro. Si queda todo blando, le faltó horno o le sobró agua." — *Panadero del Restrepo.*
+>
+> "La masa de pandeyuca es seca, se desgrana. No intente dejarla suave como la de pan de bono o se le esparrama en la lata."
