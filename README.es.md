@@ -1,23 +1,23 @@
-# AI Chef - World Recipe Collection
+# AI Chef - Colección de Recetas del Mundo
 
 [![build](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml/badge.svg)](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/Anduin2017/HowToCook)](./LICENSE)
 
-[Leer en Español](./README.es.md)
+[Read in English](./README.md)
 
-This repository is a collection of world recipes in a scientifically structured format to properly catalog recipes and ingredients. Our goal is to create the most complete open database available for this data.
+Este repositorio es una colección de recetas del mundo en un formato casi científico para catalogar de forma adecuada recetas y alimentos o ingredientes. Nuestro objetivo es tener la base de datos abierta más completa de estos datos.
 
-This project is an evolution of [HowToCook](https://github.com/Anduin2017/HowToCook), expanding into global cuisines with a focus on structured data.
+Este proyecto es una evolución de [HowToCook](https://github.com/Anduin2017/HowToCook), expandiéndose a cocinas globales con un enfoque en datos estructurados.
 
-## 📚 Table of Contents
+## 📚 Tabla de Contenidos
 
-- [Recipes Index](#recipes-index)
-- [Ingredients Index](#ingredients-index)
-- [Contributing](#contributing)
+- [Índice de Recetas](#índice-de-recetas)
+- [Índice de Ingredientes](#índice-de-ingredientes)
+- [Contribuir](#contribuir)
 
-## Recipes Index
+## Índice de Recetas
 
-### 🇨🇴 Colombian Cuisine
+### 🇨🇴 Cocina Colombiana
 
 #### Amazonia
 
@@ -147,11 +147,11 @@ This project is an evolution of [HowToCook](https://github.com/Anduin2017/HowToC
 - [Pandebono](dishes/colombian/snacks/pandebono/pandebono.md)
 - [Pandeyuca](dishes/colombian/snacks/pandeyuca/pandeyuca.md)
 
-### 🇵🇪 Peruvian Cuisine
+### 🇵🇪 Cocina Peruana
 
 - [Arroz Con Pollo](dishes/peruvian/arroz_con_pollo.md)
 
-## Ingredients Index
+## Índice de Ingredientes
 
 ### Condiments
 
@@ -217,6 +217,6 @@ This project is an evolution of [HowToCook](https://github.com/Anduin2017/HowToC
 - [Yuca](ingredients/vegetables/yuca.md)
 - [Zanahoria](ingredients/vegetables/zanahoria.md)
 
-## Contributing
+## Contribuir
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Por favor lee [CONTRIBUTING.es.md](./CONTRIBUTING.es.md) para detalles sobre nuestro código de conducta y el proceso para enviarnos pull requests.
