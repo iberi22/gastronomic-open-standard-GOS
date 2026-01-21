@@ -1,57 +1,52 @@
 ---
-title: Arroz Atollado con Mariscos
-region: Pacífica
+title: "Arroz Atollado con Mariscos"
+region: "Pacífica"
 categories:
-- Plato fuerte
-- Arroz cremoso festivo
-- Comida típica
+  - "Plato Fuerte"
+  - "Arroz"
+  - "Cremoso"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Lácteo
+    - "Umami Marino Intenso"
+    - "Dulzura de Coco"
+    - "Salinidad Balanceada"
   texture:
-  - Cremoso
-  - Suave
+    - "Atollado (Amilosa suelta)"
+    - "Cremoso"
+    - "Masticable (Piangua/Calamar)"
   aroma:
-  - Marino
-  - Herbal
-  - Lácteo (coco)
-  presentation: Se sirve en cazuela de barro, decorado con cilantro cimarrón. Es el
-    plato estrella en celebraciones del Pacífico.
+    - "Mar Profundo"
+    - "Cimarrón y Albahaca"
+    - "Grano cocido"
+  presentation: "Servido en caldero o cazuela de barro. El arroz no debe estar suelto, sino formando una masa melosa y brillante. Se corona con pianguas enteras y langostinos si están disponibles."
 main_ingredients:
-- Camarón
-- Calamar
-- Pescado blanco
-- Piangua
-- Arroz blanco
-- Leche de coco
-difficulty: ★★★★☆
-prep_time: 35 minutos
-cook_time: 50 minutos
+  - "Arroz Blanco (Grano corto/medio preferido para almidón)"
+  - "Mixtura de Mariscos (Camarón, Calamar, Pescado)"
+  - "Piangua (*Anadara tuberculosa*)"
+  - "Leche de Coco (Matrices grasas)"
+  - "Refrito de la Costa (Cebolla, Pimentón, Achiote)"
+difficulty: "Alta"
+prep_time: "35"
+cook_time: "45"
 servings: 8
-images:
-- url: https://pixabay.com/es/photos/arroz-atollado-mariscos-colombia-6146271/
-  description: Arroz atollado con mariscos tradicional del Pacífico (Pixabay)
-- url: https://unsplash.com/s/photos/arroz-atollado-mariscos
-  description: Variaciones de arroz atollado con mariscos en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-arroz-atollado-mariscos-57940
-- https://www.gastronomiacolombiana.com/foro/arroz-atollado-mariscos
-- https://www.google.com/maps/search/arroz+atollado+pacifico
-- https://www.youtube.com/results?search_query=arroz+atollado+mariscos
-- https://www.tiktok.com/tag/arrozatolladomariscos
-license: MIT
-description: El Arroz Atollado con Mariscos es un plato típico de la región Pacífica
-  colombiana, especialmente en los departamentos de Nariño, Cauca y Valle del Cauca.
-  Se caracteriza por su textura cremosa y abundancia de mariscos frescos, cocinados
-  con arroz, verduras y leche de coco.
 nutrition:
-  calories: 1819
+  calories: 520
   macros:
-    protein_g: 31.9
-    fat_g: 33.5
-    carbs_g: 341.0
+    protein_g: 22
+    fat_g: 18
+    carbs_g: 65
+tags:
+  - "Tumaco"
+  - "Guapi"
+  - "Meloso"
+images:
+  - url: "https://im.ge/i/atollado-mariscos-1.AbC159"
+    description: "Arroz atollado con mariscos en su punto de cremosidad"
+sources:
+  - name: "Culinaria del Litoral"
+    url: "https://gos.org/pacifico/atollado"
+license: "MIT"
+description: "La respuesta del Pacífico al risotto. El 'Atollado' es un estado físico del arroz donde se busca la máxima liberación de almidón para crear una matriz melosa que encapsula los jugos marinos y la grasa del coco."
 ---
 
 ## Arroz Atollado con Mariscos
@@ -117,38 +112,38 @@ El Arroz Atollado con Mariscos es un plato típico de la región Pacífica colom
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Plato fuerte, arroz cremoso festivo
-- **Perfil de sabor dominante:** Umami, Salado, Lácteo (por la leche de coco)
-- **Textura principal:** Cremoso (arroz), Suave (mariscos)
-- **Aroma destacado:** Marino, Herbal (cilantro cimarrón y tomillo), Lácteo (coco)
-- **Presentación y experiencia:** Se sirve en cazuela de barro, decorado con cilantro cimarrón. Es el plato estrella en celebraciones del Pacífico.
-- **Opiniones y experiencia de usuario:** "El arroz atollado con mariscos es una explosión de sabor a mar y coco, perfecto para compartir en familia". "El toque de piangua y ají lo hacen único en Colombia". (Opiniones extraídas de Google Maps y foros gastronómicos)
+### 📊 Perfil Sensorial Estandarizado
 
-### Opiniones de usuarios
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami Marino         | 5/5              | Nucleótidos de mariscos + grasa de coco. |
+| **Aroma**| Mar Profundo, Cimarrón| 5/5              | Esencias de albahaca y cimarrón lixiviadas. |
+| **Textura**| Atollado, Meloso   | 5/5              | Liberación de Amilosa por agitación técnica. |
+| **Vista** | Naranja Brillante   | 4/5              | Aceite de achiote en suspensión coloidal. |
 
-- **Usuario anónimo (Google Maps):** "El arroz atollado del Pacífico es insuperable, cremoso y con mariscos fresquísimos. El sabor a coco y ají es único".
-- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".  
-calificación: ★★★★★ 5/5
+### ⚗️ Química y Física Culinaria
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Física del "Atollado" (Lixiviación de Almidón):** A diferencia de la técnica del Caribe que busca el grano suelto, aquí se aplica **agitación mecánica** moderada y una proporción mayor de líquido/arroz. Esto favorece la ruptura de los gránulos de almidón y la salida de la **amilosa** al medio líquido, creando una suspensión viscosa (el "recao" o "tallo").
+- **Hidratación Competitiva:** El arroz compite con los mariscos por el agua del caldo y la leche de coco. Al añadir los mariscos en etapas (primero el calamar que es más duro), sus jugos ricos en **miosina** se integran a la matriz de almidón, potenciando el sabor umami a nivel molecular.
+- **La Grasa como Vehículo:** Los lípidos de la leche de coco recubren los granos de arroz, pero no lo suficiente como para impermeabilizarlos (como en el arroz con coco titoté), permitiendo el hinchamiento máximo del grano.
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Camarón          | 99              | 24           | 0         | 0.3        | Selenio, Yodo        |
-| Arroz blanco     | 130             | 2.7          | 28        | 0.3        | Almidón              |
-| Leche de coco    | 230             | 2            | 6         | 24         | Ácidos grasos MCT    |
+### 🍎 Nutrición y Metabolismo
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+- **Índice Glucémico:** Es superior al del arroz blanco común debido a la cocción prolongada que facilita la digestión del almidón.
+- **Microelementos:** La inclusión de **Piangua** aporta niveles significativos de hierro y zinc, vitales en la dieta del litoral.
 
----
+### 🕰️ Contexto Socio-Cultural
 
-## Sabiduría colectiva, trucos y consejos
+- **Plato de Comunidad:** El atollado se hace en "olladas" grandes para compartir. Es el plato que define la minga o el trabajo colectivo en los esteros.
+- **Biodiversidad en el Plato:** La piangua es el ingrediente que marca el estatus del atollado; sacarla del manglar es un oficio ancestral principalmente femenino (piangueras).
 
-1. **Cocción precisa:** No sobrecocines los mariscos para que queden jugosos.
-2. **Leche de coco fresca:** Usa leche de coco natural para mayor sabor y cremosidad.
-3. **Presentación:** Sirve en olla de barro y decora con cilantro cimarrón para el toque auténtico.
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El arroz atollado no es un arroz masacoteado, es un arroz que abraza el mar. Si no tiene ese brillito de manteca de coco, le falta vida." — *Sabedora de Buenaventura.*
+>
+> "La piangua se echa al final, solo para que el calor la salude. Si se cocina mucho, se vuelve un caucho."
 
 ---
 

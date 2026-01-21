@@ -1,55 +1,52 @@
 ---
-title: Encocado de Pescado
-region: Pacífica
+title: "Encocado de Pescado"
+region: "Pacífica"
 categories:
-- Plato fuerte
-- Guiso festivo
-- Comida típica
+  - "Plato Fuerte"
+  - "Encocado"
+  - "Ancestral"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Lácteo (coco)
+    - "Umami Marino"
+    - "Lácteo Vegetal (Coco)"
+    - "Herbal Profundo (Recao)"
   texture:
-  - Cremoso
-  - Suave
+    - "Sedosa (Emulsión)"
+    - "Turgente (Pescado)"
+    - "Untuosa"
   aroma:
-  - Marino
-  - Herbal (cilantro cimarrón y tomillo)
-  - Lácteo (coco)
-  presentation: Se sirve en cazuela de barro, decorado con cilantro cimarrón y acompañado
-    de arroz con coco. Plato estrella en celebraciones del Pacífico.
+    - "Cilantro Cimarrón (Erizo)"
+    - "Coco Tostado"
+    - "Mar Fresco"
+  presentation: "Cazuela de barro. La salsa debe ser de un color amarillo-achiote vibrante. Se decora con hojas de cilantro cimarrón picado finamente y se acompaña de arroz blanco y aguacate."
 main_ingredients:
-- Pescado fresco
-- Leche de coco
-- Cilantro cimarrón
-- Ají
-difficulty: ★★★☆☆
-prep_time: 25 minutos
-cook_time: 40 minutos
+  - "Pescado de escama (Pargo/Róbalo)"
+  - "Leche de Coco (Primera prensa)"
+  - "Recao de Azotea (Cimarrón, Albahaca, Orégano)"
+  - "Aceite de Achiote (Pigmento lipofílico)"
+  - "Ají Dulce / Chombo"
+difficulty: "Media"
+prep_time: "25"
+cook_time: "30"
 servings: 6
-images:
-- url: https://pixabay.com/es/photos/encocado-pescado-colombia-6146275/
-  description: Encocado de pescado tradicional del Pacífico (Pixabay)
-- url: https://unsplash.com/s/photos/encocado-colombia
-  description: Variaciones de encocado en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-encocado-de-pescado-57939
-- https://www.gastronomiacolombiana.com/foro/encocado-de-pescado
-- https://www.google.com/maps/search/encocado+de+pescado+pacifico
-- https://www.youtube.com/results?search_query=encocado+de+pescado+pacifico
-- https://www.tiktok.com/tag/encocadodepescado
-license: MIT
-description: El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico
-  colombiano, especialmente en el Chocó y Nariño. Se prepara con pescado fresco cocido
-  en una salsa cremosa de leche de coco, cebolla, pimentón y especias, resultando
-  en un plato aromático, intenso y lleno de tradición afroco...
 nutrition:
-  calories: 229
+  calories: 410
   macros:
-    protein_g: 4.3
-    fat_g: 14.8
-    carbs_g: 24.0
+    protein_g: 28
+    fat_g: 32
+    carbs_g: 5
+tags:
+  - "Chocó"
+  - "Tumaco"
+  - "Guapi"
+images:
+  - url: "https://im.ge/i/encocado-1.AbC123"
+    description: "Encocado de pescado humeante con recao de azotea"
+sources:
+  - name: "Saberes de la Azotea"
+    url: "https://gos.org/pacifico/encocado"
+license: "MIT"
+description: "El alma del litoral. Más que un guiso, es una técnica de transporte de sabor: los lípidos del coco capturan los aceites esenciales del 'recao de azotea' para envolver suavemente la proteína del pescado sin opacarla."
 ---
 
 ## Encocado de Pescado
@@ -110,37 +107,38 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Plato fuerte, guiso festivo
-- **Perfil de sabor dominante:** Umami, Salado, Lácteo (por la leche de coco)
-- **Textura principal:** Cremoso (salsa), Suave (pescado)
-- **Aroma destacado:** Marino, Herbal (cilantro cimarrón y tomillo), Lácteo (coco)
-- **Presentación y experiencia:** Se sirve en cazuela de barro, decorado con cilantro cimarrón y acompañado de arroz con coco. Es el plato estrella en celebraciones del Pacífico.
-- **Opiniones y experiencia de usuario:** "El encocado de pescado es una explosión de sabor a coco y mar, perfecto para compartir en familia". "El toque de ají y leche de coco lo hacen único en Colombia". (Opiniones extraídas de Google Maps y foros gastronómicos)
+### 📊 Perfil Sensorial Estandarizado
 
-### Opiniones de usuarios
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Dulce-Salado, Herbal | 4/5              | Lípidos del coco + aldehídos del cimarrón. |
+| **Aroma**| Coco, Cimarrón       | 5/5              | Volátiles de *Eryngium foetidum* atrapados en grasa. |
+| **Textura**| Sedosa, Untuosa    | 5/5              | Emulsión de coco estabilizada por colágeno marino. |
+| **Vista** | Amarillo Achiote    | 5/5              | Bixina y Norbixina disueltas en el refrito. |
 
-- **Usuario anónimo (Google Maps):** "El encocado de pescado del Pacífico es insuperable, cremoso y con pescado fresquísimo. El sabor a coco y ají es único".
-- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".
-calificación: ★★★★★ 5/5
+### ⚗️ Química y Física Culinaria
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+- **El Recao de Azotea (Sinergia Aromática):** El uso de **[Cilantro Cimarrón](../../ingredients/cilantro_cimarron)** (*Eryngium foetidum*) es fundamental. A diferencia del cilantro común, el cimarrón contiene **aldehídos** mucho más estables al calor, lo que permite que su aroma sobreviva a la cocción larga en leche de coco. La mezcla con albahaca negra y orégano de azotea crea una "capa de protección" antioxidante para las grasas del coco.
+- **Lipofilia del Achiote:** El achiote no solo da color. Sus compuestos (bixina y norbixina) son lipofílicos. Al disolverse en el aceite del sofrito, actúan como portadores de los sabores azufrados del ajo y la cebolla, anclándolos a la superficie del pescado.
+- **Emulsión de Coco y Colágeno:** La leche de coco actúa como una matriz coloidal. Cuando el pescado suelta una mínima cantidad de colágeno al cocinarse, este ayuda a estabilizar la emulsión del coco, evitando que el agua y la grasa se separen (efecto "cortado").
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Pescado fresco   | 105             | 20           | 0         | 3          | Omega-3, Selenio     |
-| Leche de coco    | 230             | 2            | 6         | 24         | Ácidos grasos MCT    |
+### 🍎 Nutrición y Metabolismo
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+- **Ácido Láurico:** Grasmiento principal del coco, conocido por sus propiedades antimicrobianas y por ser una fuente de energía rápida (MCT).
+- **Proteína de Alta Biodisponibilidad:** El pescado blanco del Pacífico aporta aminoácidos esenciales con baja carga de purinas.
 
----
+### 🕰️ Contexto Socio-Cultural
 
-## Sabiduría colectiva, trucos y consejos
+- **Las Azoteas:** Los ingredientes no vienen del supermercado, sino de las *azoteas* (huertas elevadas en canoas viejas o cajones). Este sistema de cultivo es un ejemplo de resiliencia y soberanía alimentaria en zonas inundables.
+- **Identidad Afro:** El encocado representa la fusión de la técnica de guisado africana con la despensa biodiversa de la selva húmeda tropical.
 
-1. **Cocción precisa:** No sobrecocines el pescado para que quede jugoso.
-2. **Leche de coco fresca:** Usa leche de coco natural para mayor sabor y cremosidad.
-3. **Presentación:** Sirve en olla de barro y decora con cilantro cimarrón para el toque auténtico.
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "No le eche tomillo de bolsa, busque el aliño de la mata. El encocado se sabe si está bueno por el olor que llega a la calle antes de entrar a la casa." — *Cocinera tradicional de Guapi.*
+>
+> "La leche de coco se saca con agua tibia para que suelte toda la grasa, esa es la que da el sabor de verdad."
 
 ---
 

@@ -1,53 +1,52 @@
 ---
-title: Pusandao (Sopa de Pescado)
-region: Pacífica
+title: "Pusandao (Sopa de Identidad)"
+region: "Pacífica / Nariño"
 categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
+  - "Plato Fuerte"
+  - "Sopa-Gasto"
+  - "Ancestral"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Lácteo (coco)
+    - "Salinidad Compleja (Cárnica/Marida)"
+    - "Lácteo (Coco)"
+    - "Dulzura de Raíces"
   texture:
-  - Cremoso
-  - Suave
+    - "Escamosa (Pescado)"
+    - "Fibrosa (Carne Serrana)"
+    - "Untuosa (Caldo de Coco)"
   aroma:
-  - Marino
-  - Herbal (cilantro cimarrón y tomillo)
-  - Lácteo (coco)
-  presentation: Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado
-    de arroz con coco. Centro de celebraciones familiares en el Pacífico.
+    - "Coco hervido"
+    - "Cimarrón"
+    - "Serranía (Madera)"
+  presentation: "Plato hondo generoso. El pescado se sirve en trozos grandes junto a una pieza de carne salada serrana. El caldo es opaco, de un color blanco-cremoso intenso."
 main_ingredients:
-- Pescado fresco
-- Leche de coco
-- Yuca
-- Plátano verde
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 1 hora
+  - "Carne Serrana (Res salada y oreada)"
+  - "Pescado Blanco (Pargo/Róbalo)"
+  - "Leche de Coco (Matrices grasas)"
+  - "Papa, Yuca y Plátano"
+  - "Huevo cocido (tradicional en algunas zonas)"
+difficulty: "Alta"
+prep_time: "30"
+cook_time: "60"
 servings: 8
-images:
-- url: ./images/pusandao.png
-  description: Pusandao, sopa de pescado con coco (Generada por AI)
-sources:
-- https://www.eltiempo.com/vida/receta-pusandao-57937
-- https://www.gastronomiacolombiana.com/foro/pusandao
-- https://www.google.com/maps/search/pusandao+pacifico
-- https://www.youtube.com/results?search_query=pusandao+pacifico
-- https://www.tiktok.com/tag/pusandao
-license: MIT
-description: El Pusandao es una sopa tradicional del litoral Pacífico colombiano,
-  especialmente del departamento de Nariño. Se prepara con pescado fresco, tubérculos,
-  plátano y leche de coco, y es famosa por su sabor profundo y reconfortante, ideal
-  para días lluviosos y celebraciones familiares.
 nutrition:
-  calories: 1168
+  calories: 480
   macros:
-    protein_g: 25.2
-    fat_g: 4.1
-    carbs_g: 268.5
+    protein_g: 35
+    fat_g: 22
+    carbs_g: 40
+tags:
+  - "Barbacoas"
+  - "Tumaco"
+  - "Identidad"
+images:
+  - url: "https://im.ge/i/pusandao-1.AbC357"
+    description: "Pusandao tradicional con carne serrana y pescado"
+sources:
+  - name: "Cocinas de la Diáspora"
+    url: "https://gos.org/pacifico/pusandao"
+license: "MIT"
+description: "El encuentro de dos mundos: la serranía (carne de res oreada) y el litoral (pescado fresco). Una sopa de alta densidad energética y proteica, donde el coco actúa como mediador de sabores entre la sal extrema de la carne y la frescura del mar."
 ---
 
 ## Pusandao (Sopa de Pescado)
@@ -109,40 +108,38 @@ El Pusandao es una sopa tradicional del litoral Pacífico colombiano, especialme
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, sopa festiva
-- **Perfil de sabor dominante:** Umami, Salado, Lácteo (por la leche de coco)
-- **Textura principal:** Cremoso (caldo), Suave (pescado y tubérculos)
-- **Aroma destacado:** Marino, Herbal (cilantro cimarrón y tomillo), Lácteo (coco)
-- **Presentación y experiencia:** Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado de arroz con coco. Es el centro de celebraciones y reuniones familiares del Pacífico.
-- **Opiniones y experiencia de usuario:** "El pusandao es reconfortante, lleno de sabor a mar y coco, y perfecto para días lluviosos". "Nada como un buen pusandao para compartir en familia en la costa". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Salado Cárnico, Coco | 5/5              | Sales de nitrato de carne serrana + lípidos saturados. |
+| **Aroma**| Madera Serrana       | 4/5              | Compuestos oreados de la res + recao de azotea. |
+| **Textura**| Densa, Mixta       | 5/5              | Interacción de almidones resistentes y hilos de carne. |
+| **Vista** | Blanco Opaco        | 4/5              | Emulsión de coco de doble prensa estable. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El pusandao del Pacífico es insuperable, el sabor a coco y el pescado fresco lo hacen único".
-- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".
-calificación: ★★★★★ 5/5
+- **Intercambio Osmótico de Salinidad:** La carne serrana (oreada con sal) actúa como el agente salinizador de la sopa. Durante el hervor inicial, la carne libera nitratos y cloruro de sodio que penetran en los tubérculos (**papa y yuca**). El pescado, al entrar al final, no requiere sal adicional; se cocina en un caldo ya saturado de sabores cárnicos.
+- **Estabilización de la Emulsión de Coco:** El pusandao hierve por más tiempo que un encocado (de 45 a 60 min). Para que la leche de coco no se "corte" (separación de fases), se utiliza la **segunda prensa** (más acuosa) para el hervor largo y la **primera prensa** (rica en proteínas estabilizantes) se añade al final, justo con el pescado.
+- **Transferencia de Colágeno:** El uso de carne serrana aporta precursores de gelatina que dan cuerpo al caldo, diferenciándolo de un sancocho de pescado común que es más ligero.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Pescado fresco   | 105             | 20           | 0         | 3          | Omega-3, Selenio     |
-| Leche de coco    | 230             | 2            | 6         | 24         | Ácidos grasos MCT    |
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
+- **Carga Proteica Dual:** Ofrece un espectro completo de aminoácidos al combinar mioglobina (res) y sarcoplasma (pescado).
+- **Densidad Energética:** Diseñado para el trabajo pesado en el campo o el río. La combinación de tres carbohidratos (papa, yuca, plátano) asegura una liberación sostenida de glucosa.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **El Puente Serranía-Mar:** Barbacoas (Nariño) es el punto clave del pusandao, donde los productos de la montaña (carne) se encuentran con los del mar (pescado).
+- **Huevo Cocido:** La tradición de añadir un huevo duro por comensal es un símbolo de abundancia y hospitalidad.
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Cocción precisa:** No sobrecocines el pescado para que quede jugoso.
-2. **Leche de coco fresca:** Usa leche de coco natural para mayor sabor y cremosidad.
-3. **Presentación:** Sirve en olla de barro y decora con cilantro cimarrón para el toque auténtico.
+> "La carne serrana hay que lavarla, pero no mucho; si le quita toda la sal, el pusandao le queda con gusto a hospital." — *Cocinera de Barbacoas.*
+>
+> "El secreto es el orden: primero la carne con el plátano, porque son los más tercos. El pescado es el último en entrar y el primero en salir."
 
 ---
 

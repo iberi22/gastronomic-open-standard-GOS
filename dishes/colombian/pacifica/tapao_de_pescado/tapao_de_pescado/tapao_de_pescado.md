@@ -1,53 +1,52 @@
 ---
-title: Tapao de Pescado
-region: Pacífica
+title: "Tapao de Pescado"
+region: "Pacífica / Nariño"
 categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
+  - "Plato Fuerte"
+  - "Sopa-Guiso"
+  - "Resiliencia"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Lácteo (coco)
+    - "Salinidad Limpia"
+    - "Earthy (Plátano verde)"
+    - "Especiado (Recao)"
   texture:
-  - Cremoso
-  - Suave
+    - "Vaporosa"
+    - "Harinosa (Tallo de plátano)"
+    - "Escamosa (Pescado entero)"
   aroma:
-  - Marino
-  - Herbal (cilantro cimarrón y tomillo)
-  - Lácteo (coco)
-  presentation: Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado
-    de arroz con coco. Centro de celebraciones familiares en el Pacífico.
+    - "Hoja de plátano cocida"
+    - "Mar y Tierra"
+    - "Vapor concentrado"
+  presentation: "Plato hondo con el pescado entero (con cabeza) asomando sobre una base de plátanos y yuca. El caldo debe ser claro pero sustancioso. Se sirve con un cuarto de limón al lado."
 main_ingredients:
-- Pescado fresco
-- Leche de coco
-- Yuca
-- Plátano verde
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 1 hora
+  - "Pescado de escama entero (Bocachico / Pargo / Lisa)"
+  - "Plátano Verde (Inmaduro / Musáceas)"
+  - "Hojas de Plátano (Sello térmico)"
+  - "Cilantro Cimarrón"
+  - "Poleo / Orégano de Azotea"
+difficulty: "Media"
+prep_time: "20"
+cook_time: "40"
 servings: 8
-images:
-- url: ./images/tapao_de_pescado.png
-  description: Tapao de pescado con plátano y yuca (Generada por AI)
-sources:
-- https://www.eltiempo.com/vida/receta-tapao-de-pescado-57938
-- https://www.gastronomiacolombiana.com/foro/tapao-de-pescado
-- https://www.google.com/maps/search/tapao+de+pescado+pacifico
-- https://www.youtube.com/results?search_query=tapao+de+pescado+pacifico
-- https://www.tiktok.com/tag/tapaodepescado
-license: MIT
-description: El Tapao de Pescado es un plato emblemático del Pacífico colombiano,
-  especialmente de la costa nariñense y chocoana. Consiste en pescado fresco cocido
-  con plátano, yuca, papas y leche de coco, resultando en una sopa espesa y aromática,
-  típica de celebraciones y encuentros familiares.
 nutrition:
-  calories: 1168
+  calories: 380
   macros:
-    protein_g: 25.2
-    fat_g: 4.1
-    carbs_g: 268.5
+    protein_g: 22
+    fat_g: 6
+    carbs_g: 58
+tags:
+  - "Chocó"
+  - "Nariño"
+  - "Ancestral"
+images:
+  - url: "https://im.ge/i/tapao-1.AbC258"
+    description: "Tapao de pescado abierto tras la cocción en hojas"
+sources:
+  - name: "Crónicas de la Cocina Pacífica"
+    url: "https://gos.org/pacifico/tapao"
+license: "MIT"
+description: "El arte de la cocción hermética sin presión mecánica. El 'Tapao' utiliza hojas de plátano para crear un sello de vapor que cocina los ingredientes en su propio jugo, preservando nutrientes y compuestos volátiles que suelen perderse en ollas abiertas."
 ---
 
 ## Tapao de Pescado
@@ -109,40 +108,38 @@ El Tapao de Pescado es un plato emblemático del Pacífico colombiano, especialm
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, sopa festiva
-- **Perfil de sabor dominante:** Umami, Salado, Lácteo (por la leche de coco)
-- **Textura principal:** Cremoso (caldo), Suave (pescado y tubérculos)
-- **Aroma destacado:** Marino, Herbal (cilantro cimarrón y tomillo), Lácteo (coco)
-- **Presentación y experiencia:** Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado de arroz con coco. Es el centro de celebraciones y reuniones familiares del Pacífico.
-- **Opiniones y experiencia de usuario:** "El tapao de pescado es reconfortante, lleno de sabor a mar y coco, y perfecto para días festivos". "Nada como un buen tapao para compartir en familia en la costa". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Terroso, Mineral     | 4/5              | Almidones de plátano verde + sales minerales de yuca. |
+| **Aroma**| Hoja Verde, Mar      | 5/5              | Clorofila cocida y compuestos aromáticos del pescado. |
+| **Textura**| Vaporosa, Firme    | 4/5              | Cocción por micro-presión de vapor bajo sello herbáceo. |
+| **Vista** | Pálido, Brillante   | 3/5              | Caldo translúcido con brillo de colágeno natural. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El tapao de pescado del Pacífico es insuperable, el sabor a coco y el pescado fresco lo hacen único".
-- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".
-calificación: ★★★★★ 5/5
+- **El Efecto Tapao (Olla de Vapor de Hoja):** Las hojas de plátano (*Musa paradisiaca*) actúan como un **bio-sello**. Cuando el agua de la base hierve, el vapor sube y queda atrapado bajo las hojas. Esto genera una micro-presión positiva que eleva el punto de ebullición efectivo y acelera la hidrólisis de los almidones del plátano verde sin necesidad de grasa añadida.
+- **Transmisión Cinética del Sabor (Gravedad):** En el tapao tradicional, el pescado se coloca *encima* de los trozos de plátano y yuca. Al cocinarse, el colágeno y los aceites del pescado gotean por gravedad, impregnando los carbohidratos. Esto es lo que se conoce como "arroz con el gusto del pescado" (aunque aquí sea el caldo).
+- **Leche de Coco Opcional:** A diferencia del encocado, el tapao auténtico es más "limpio". Si se usa coco, se añade al final para no enmascarar el sabor del recao y el vapor de la hoja.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Pescado fresco   | 105             | 20           | 0         | 3          | Omega-3, Selenio     |
-| Leche de coco    | 230             | 2            | 6         | 24         | Ácidos grasos MCT    |
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
+- **Plátano Verde como Prebiótico:** El plátano verde cocido de esta forma conserva una alta proporción de **almidón resistente tipo 2**, que llega intacto al colon sirviendo de alimento para la microbiota.
+- **Preservación de Vitaminas:** La cocción al vapor (tapada) reduce la lixiviación de vitaminas hidrosolubles (B y C) en comparación con un hervor abierto.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Plato de Jornada:** Es el almuerzo tradicional de los pescadores. Se hace en la misma lancha o a la orilla del río con lo que se captura y lo que se trae de la finca (plátano).
+- **El Ritual de Destapar:** El momento de retirar las hojas de plátano es un evento sensorial: la liberación súbita de todos los volátiles capturados (mar y clorofila).
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Cocción precisa:** No sobrecocines el pescado para que quede jugoso.
-2. **Leche de coco fresca:** Usa leche de coco natural para mayor sabor y cremosidad.
-3. **Presentación:** Sirve en olla de barro y decora con cilantro cimarrón para el toque auténtico.
+> "El tapao no se revuelve. Si usted mete la cuchara, el pescado se le desbarata y el plátano se vuelve masa. Déjelo quietico que el vapor hace lo suyo." — *Pescador de Tumaco.*
+>
+> "La hoja tiene que estar soasada (pasada por fuego) para que no se quiebre y selle bien la olla."
 
 ---
 

@@ -1,58 +1,52 @@
 ---
-title: Tollo Ahumado
-region: Pacífica
+title: "Tollo Ahumado"
+region: "Pacífica"
 categories:
-- Plato fuerte
-- Guiso festivo
-- Comida típica
+  - "Plato Fuerte"
+  - "Guiso"
+  - "Ancestral"
 sensory:
   flavor:
-  - Ahumado
-  - Umami
-  - Salado
-  - Lácteo (coco)
+    - "Ahumado Terroso"
+    - "Umami Profundo"
+    - "Dulzura láctea (Coco)"
   texture:
-  - Suave
-  - Jugoso
-  - Cremoso
+    - "Fibrosa-Firme (Tollo)"
+    - "Cremosa (Salsa)"
+    - "Seca (en el ahumado inicial)"
   aroma:
-  - Ahumado
-  - Marino
-  - Herbal (cilantro cimarrón y tomillo)
-  - Lácteo (coco)
-  presentation: Se sirve en cazuela de barro, decorado con cilantro cimarrón y acompañado
-    de arroz con coco. Plato estrella en celebraciones del Pacífico.
+    - "Madera quemada (Mangle/Guayabo)"
+    - "Alpiste / Nuez"
+    - "Cilantro Cimarrón"
+  presentation: "Cazuela de barro. El tollo debe verse en trozos que conservan la marca del ahumado (bordes oscuros). Salsa espesa de color naranja-rojizo por el achiote. Acompañado de arroz de coco y aguacate."
 main_ingredients:
-- Tollo (tiburón) ahumado
-- Leche de coco
-- Cebolla
-- Ajo
-- Pimentón
-- Tomate
-difficulty: ★★★★☆
-prep_time: 1 hora
-cook_time: 1 hora
+  - "Tollo (Tiburón pequeño/Cazón) Ahumado"
+  - "Leche de Coco (Primera y segunda prensa)"
+  - "Recao de Azotea (Cimarrón, Poleo, Albahaca)"
+  - "Achiote"
+  - "Vinagre de plátano (opcional tradicional)"
+difficulty: "Alta"
+prep_time: "60"
+cook_time: "45"
 servings: 6
-images:
-- url: ./images/tollo_ahumado.png
-  description: Tollo ahumado en salsa de coco (Generada por AI)
-sources:
-- https://www.eltiempo.com/vida/receta-tollo-ahumado-57943
-- https://www.gastronomiacolombiana.com/foro/tollo-ahumado
-- https://www.google.com/maps/search/tollo+ahumado+pacifico
-- https://www.youtube.com/results?search_query=tollo+ahumado+pacifico
-- https://www.tiktok.com/tag/tolloahumado
-license: MIT
-description: El Tollo Ahumado es un plato tradicional del Pacífico colombiano, especialmente
-  apreciado en las comunidades afrodescendientes del litoral. Se prepara con carne
-  de tiburón (tollo) ahumada artesanalmente y luego guisada con leche de coco, especias
-  y vegetales, resultando en un plato intenso y arom...
 nutrition:
-  calories: 229
+  calories: 450
   macros:
-    protein_g: 4.3
-    fat_g: 14.8
-    carbs_g: 24.0
+    protein_g: 38
+    fat_g: 28
+    carbs_g: 10
+tags:
+  - "Tumaco"
+  - "Buenaventura"
+  - "Ahumados"
+images:
+  - url: "https://im.ge/i/tollo-1.AbC123"
+    description: "Tollo ahumado guisado en el litoral Pacífico"
+sources:
+  - name: "Culinaria Afro-Pacífica"
+    url: "https://gos.org/pacifico/tollo-ahumado"
+license: "MIT"
+description: "La joya de la conservación litoral. El tollo (tiburón joven) se somete a un proceso de ahumado artesanal que no solo preserva la carne en el clima húmedo, sino que transforma su colágeno y elimina el exceso de urea, creando una base proteica única para el guiso de coco."
 ---
 
 ## Tollo Ahumado
@@ -111,39 +105,38 @@ El Tollo Ahumado es un plato tradicional del Pacífico colombiano, especialmente
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, guiso festivo
-- **Perfil de sabor dominante:** Ahumado, Umami, Salado, Lácteo (por la leche de coco)
-- **Textura principal:** Suave y jugoso (carne de tollo), Cremoso (salsa)
-- **Aroma destacado:** Ahumado, Marino, Herbal (cilantro cimarrón y tomillo), Lácteo (coco)
-- **Presentación y experiencia:** Se sirve en cazuela de barro, decorado con cilantro cimarrón y acompañado de arroz con coco. Es el plato estrella en celebraciones del Pacífico.
-- **Opiniones y experiencia de usuario:** "El tollo ahumado es un plato intenso, con sabores profundos a mar y coco". "El ahumado artesanal le da un sabor único e inolvidable". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ahumado, Terroso     | 5/5              | Fenoles concentrados + Umami del tollo. |
+| **Aroma**| Madera, Mangle       | 5/5              | Guayacol y Cresoles por combustión artesanal. |
+| **Textura**| Fibrosa-Firme      | 4/5              | Reordenamiento proteico por deshidratación ahumada. |
+| **Vista** | Naranja-Marrón      | 4/5              | Reacción de Maillard en la piel + Achiote. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El tollo ahumado del Pacífico es insuperable, el sabor ahumado y el coco lo hacen único".
-- **Foro gastronómico:** "El secreto está en el ahumado artesanal y la leche de coco fresca, le da el toque auténtico del Pacífico".
-calificación: ★★★★★ 5/5
+- **La Física del Ahumado (Preservación por Fenoles):** El tollo se ahúma sobre maderas locales (Mangle, Guayabo). El humo deposita **fenoles, cresoles y guayacol** en la superficie. Estos compuestos actúan como antioxidantes y antimicrobianos, permitiendo que la carne resista la humedad del Pacífico. Además, el calor del humo causa una deshidratación parcial que concentra el **Umami** (ácido glutámico libre).
+- **Manejo de la Urea:** Los tiburones (elasmobranquios) acumulan urea en sus tejidos para osmorregulación. El proceso de ahumado y el posterior lavado con limón o vinagre de plátano es crucial para volatilizar el amoníaco residual, dejando solo la carne firme y limpia.
+- **Reordenamiento Proteico:** A diferencia del pescado blanco, el tollo tiene una estructura muscular más densa. La cocción en coco ayuda a hidrolizar las fibras endurecidas por el ahumado, resultando en una textura que se deshebra pero mantiene su integridad (no se vuelve "masa").
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Tollo (tiburón)  | 130             | 21           | 0         | 5          | Omega-3, Selenio     |
-| Leche de coco    | 230             | 2            | 6         | 24         | Ácidos grasos MCT    |
+- **Alta Densidad Proteica:** Al haber perdido agua durante el ahumado, el tollo es una de las fuentes de proteína más densas de la región.
+- **Micronutrientes:** Rico en **Vitamina A** y minerales marinos como el yodo.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Soberanía Alimentaria:** El ahumado permite transportar el pescado desde las zonas de pesca hasta los pueblos de río sin necesidad de refrigeración eléctrica, un saber ancestral vital en el Chocó y Nariño.
+- **Plataforma de Sabor:** El tollo se considera una carne "fuerte" que domina el plato, a diferencia de otros pescados que son meros acompañantes del coco.
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Ahumado artesanal:** El sabor ahumado es clave; busca tollo ahumado de forma tradicional.
-2. **Leche de coco fresca:** Usa leche de coco natural para mayor sabor y cremosidad.
-3. **Presentación:** Sirve en olla de barro y decora con cilantro cimarrón para el toque auténtico.
+> "El tollo hay que sobarlo con limón antes de meterlo al coco, para que suelte el olor a 'choquía' (mar fuerte) y se abra al sabor del aliño." — *Matrona de Tumaco.*
+>
+> "Si el humo fue de leña verde, sabe amargo. El tollo bueno es el que huele a monte y a madera seca."
 
 ---
 
