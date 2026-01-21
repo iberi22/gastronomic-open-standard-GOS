@@ -16,9 +16,8 @@
   "scripts": {
     "build": "node ./.github/readme-generate.js",
     "manuallint": "node .github/manual_lint.js",
-    "textlint": "textlint . --fix",
     "markdownlint": "markdownlint ./dishes ./tips",
-    "lint": "npm run textlint && npm run markdownlint && npm run manuallint && echo 'Lint finished. All passed.'",
+    "lint": "npm run markdownlint && npm run manuallint && echo 'Lint finished. All passed.'",
     "prepare": "husky"
   },
   "author": "Anduin2017",

@@ -62,7 +62,7 @@ jobs:
         id: scan
         run: |
           echo "Scanning for protocol-related issues..."
-          
+
           # Look for issues labeled with 'protocol-improvement'
           ISSUES=$(gh issue list \
             --repo ${{ github.repository }} \
@@ -70,7 +70,7 @@ jobs:
             --state open \
             --json number,title,body,labels \
             --limit 10)
-          
+
           echo "Found $(echo "$ISSUES" | jq length) protocol issues"
           echo "issues=$ISSUES" >> $GITHUB_OUTPUT
         env:
@@ -81,17 +81,17 @@ jobs:
         run: |
           cat > protocol-feedback.md << 'EOF'
           ## 📊 Weekly Protocol Feedback Summary
-          
+
           **Project:** ${{ github.repository }}
           **Period:** $(date -d '7 days ago' '+%Y-%m-%d') to $(date '+%Y-%m-%d')
           **Protocol Version:** $(cat .git-core-protocol-version || echo "unknown")
-          
+
           ### Issues Encountered
-          
+
           EOF
-          
+
           echo '${{ steps.scan.outputs.issues }}' | jq -r '.[] | "- **#\(.number)**: \(.title)\n  \(.body | split("\n")[0])\n"' >> protocol-feedback.md
-          
+
           cat protocol-feedback.md
 
       - name: Report to Protocol Repo
@@ -137,41 +137,41 @@ jobs:
       - name: Create Protocol Issue
         run: |
           LABELS="${{ github.event.inputs.feedback_type }}"
-          
+
           if [ "${{ github.event.inputs.priority }}" = "high" ] || [ "${{ github.event.inputs.priority }}" = "critical" ]; then
             LABELS="$LABELS,priority-${{ github.event.inputs.priority }}"
           fi
-          
+
           # Add 'feedback' label (exists in GitCore repo)
           LABELS="$LABELS,feedback"
-          
+
           cat > issue-body.md << 'EOF'
           ## 🔍 Context
-          
+
           **Project:** ${{ github.repository }}
           **Protocol Version:** ${{ steps.version.outputs.version }}
           **Feedback Type:** ${{ github.event.inputs.feedback_type }}
           **Priority:** ${{ github.event.inputs.priority }}
           **Reported:** $(date '+%Y-%m-%d %H:%M:%S UTC')
-          
+
           ---
-          
+
           ## 📝 Description
-          
+
           ${{ github.event.inputs.description }}
-          
+
           ---
-          
+
           ## 📎 Additional Information
-          
+
           - Repository: https://github.com/${{ github.repository }}
           - Workflow Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          
+
           ---
-          
+
           *Reported via Protocol Feedback Workflow*
           EOF
-          
+
           gh issue create \
             --repo iberi22/GitCore \
             --title "${{ github.event.inputs.title }}" \

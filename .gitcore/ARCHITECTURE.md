@@ -27,12 +27,14 @@ project: Git-Core-Protocol
 | 2 | Backend | Supabase | BaaS, realtime | Firebase, custom API |
 | 3 | State | GitHub Issues | Token economy | TODO.md, JIRA |
 
-### How to use this table:
+### How to use this table
+
 1. **Before ANY implementation**, check if it conflicts with decisions above
 2. If issue mentions alternatives (e.g., "Vercel/GitHub Pages"), the decision above WINS
 3. When in doubt, ASK - don't assume
 
 **Related Documentation:**
+
 - `AGENTS.md` - Architecture Verification Rule
 - `.github/copilot-instructions.md` - Architecture First Rule
 
@@ -40,12 +42,13 @@ project: Git-Core-Protocol
 
 ## Project Context
 
-**Project Name:** Gastronomic Open Standard (GOS)  
-**Description:** Open-source initiative for scientifically structured culinary knowledge database  
-**Repository:** https://github.com/iberi22/gastronomic-open-standard-GOS  
+**Project Name:** Gastronomic Open Standard (GOS)
+**Description:** Open-source initiative for scientifically structured culinary knowledge database
+**Repository:** <https://github.com/iberi22/gastronomic-open-standard-GOS>
 **Original:** Fork/evolution of [HowToCook](https://github.com/Anduin2017/HowToCook)
 
 ## Stack
+
 - **Language:** Node.js/TypeScript (build scripts), Python (data processing)
 - **Frontend:** Astro 5.x + Svelte (site generation)
 - **Content:** Markdown (recipes & ingredients), JSON (metadata)
@@ -56,36 +59,42 @@ project: Git-Core-Protocol
 ## Key Decisions
 
 ### Decision 1: GitHub Pages for Hosting
+
 - **Date:** 2025-12-01
 - **Context:** Need zero-cost, reliable hosting for static recipe database
 - **Decision:** Use GitHub Pages instead of Vercel/Netlify
 - **Consequences:** Free hosting, git-native deployment, no vendor lock-in. Trade-off: static only (no server-side rendering)
 
 ### Decision 2: Structured Markdown Format
+
 - **Date:** 2025-11-15
 - **Context:** Need machine-readable recipe format for AI processing
 - **Decision:** YAML frontmatter + Markdown body with strict schema validation
 - **Consequences:** Enables AI batch processing, metadata extraction, multilingual support. Requires validation scripts
 
 ### Decision 3: Git-Core Protocol Integration
+
 - **Date:** 2026-01-20
 - **Context:** Multiple developers, AI agents, need coordination protocol
 - **Decision:** Adopt Git-Core Protocol v3.5.1 for state management
 - **Consequences:** GitHub Issues as single source of truth, atomic commits enforced, AI agents coordinated. Learning curve for contributors
 
 ### Decision 2: Telemetry Migration to Rust
+
 - **Date:** 2025-12-16
 - **Context:** Telemetry logic was isolated in PowerShell, causing fragmentation and platform dependencies.
 - **Decision:** Migrated client-side telemetry to `gc telemetry` command in Rust.
 - **Consequences:** Unified toolchain in `gc-cli`, removed PowerShell dependency for telemetry submission. Legacy script `send-telemetry.ps1` is deprecated.
 
 ### Decision 3: CLI Unification
+
 - **Date:** 2025-12-16
 - **Context:** Multiple PowerShell scripts (`init_project.ps1`, `equip-agent.ps1`, `ai-report.ps1`) created maintenance overhead and platform lock-in.
 - **Decision:** Consolidated all core workflows into `gc-cli` Rust binary (`gc init`, `gc context`, `gc report`, `gc ci-detect`).
 - **Consequences:** All legacy PowerShell scripts are deprecated. Future development focuses solely on `gc-cli`.
 
 ## Project Structure
+
 ```
 /
 ├── dishes/           # Recipe database (Colombian, Peruvian, etc.)
@@ -108,6 +117,7 @@ project: Git-Core-Protocol
 ```
 
 ## Dependencies
+
 | Package | Version | Purpose |
 |---------|---------|----------|
 | astro | 5.x | Static site generation |
@@ -119,6 +129,7 @@ project: Git-Core-Protocol
 | lint-staged | 15.5.x | Pre-commit linting |
 
 ## Integration Points
+
 - **Gemini API:** Batch recipe translation and metadata extraction
 - **GitHub Actions:** Automated builds, deployments, issue sync
 - **Jules Agent:** Autonomous task execution for labeled issues
@@ -139,6 +150,7 @@ project: Git-Core-Protocol
 ```
 
 ## Security Considerations
+
 - GitHub tokens stored in environment variables only (`GH_TOKEN`, `GEMINI_API_KEY`)
 - No secrets committed to repository
 - Pre-commit hooks prevent accidental credential exposure
@@ -158,4 +170,3 @@ See: `.github/workflows/protocol-feedback.yml`
 
 ---
 *Last updated by AI Agent: 2026-01-20*
-
