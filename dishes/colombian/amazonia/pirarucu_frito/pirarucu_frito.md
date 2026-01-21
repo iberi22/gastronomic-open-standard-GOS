@@ -7,27 +7,39 @@ categories:
 - Mercado
 sensory:
   flavor:
-  - Umami
+  - Umami (intenso)
   - Salado
+  - Terroso (suave)
   texture:
-  - Crujiente (exterior)
-  - Suave (interior)
+  - Crujiente (costra)
+  - Firme
+  - Suculento (interior)
   aroma:
-  - Frito
-  - Marino
-  - Ligeramente herbal
-  presentation: Se sirve en platos grandes, ideal para compartir en mercados y reuniones
-    familiares.
+  - Frito (aceite caliente)
+  - Pescado de río (fresco)
+  - Ajo (condimento)
+  presentation: Se sirve en plato tendido, con el filete ocupando gran parte, acompañado de montículos de fariña, rodajas de yuca y plátano.
 main_ingredients:
-- Filete de pirarucú (arapaima)
-- Harina de yuca/maíz
-- Yuca
-- Plátano
-- Fariña
+- Filete de pirarucú
+- Harina de yuca (fariña)
+- Limón
+- Ajo
+- Aceite vegetal
 difficulty: ★★☆☆☆
 prep_time: 20 minutos
 cook_time: 15 minutos
 servings: 4
+nutrition:
+  calories: 415
+  macros:
+    protein_g: 36.5
+    fat_g: 18.2
+    carbs_g: 28.0
+tags:
+- Pescado amazónico
+- Fritura
+- Sin espinas
+- Tradicional
 images:
 - url: https://pixabay.com/photos/pirarucu-frito-amazonian-1234567/
   description: Pirarucú frito tradicional amazónico (Pixabay)
@@ -35,30 +47,20 @@ images:
   description: Variaciones de pirarucú frito amazónico en Unsplash
 sources:
 - https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu
-- https://www.colombia.com/gastronomia/noticias/recetas-amazonas-chicharron-piracucu-308180
+- https://tbca.net.br/base-dados-en/int_food_composition.php?cod_produto=BRC0499E
 - https://www.eltiempo.com/cultura/gastronomia/pirarucu-chefs-hablan-de-sus-preparaciones-en-restaurantes-de-colombia-684418
-- https://www.tripadvisor.com/
 license: MIT
-description: El Pirarucú es el pez de agua dulce más grande de la Amazonía y uno de
-  los más emblemáticos de la región. Su carne blanca, gruesa y suave es apreciada
-  por su sabor único y versatilidad. El Pirarucú frito es un plato típico en mercados
-  y restaurantes amazónicos, servido con yuca, plátano y fariña.
-nutrition:
-  calories: 591
-  macros:
-    protein_g: 5.5
-    fat_g: 2.2
-    carbs_g: 140.0
+description: El Pirarucú frito es una preparación icónica de la Amazonía, destacando la carne firme y sin espinas del pez de escama más grande de la cuenca. Empanizado con harina local y frito, ofrece un contraste perfecto de texturas.
 ---
 
-## Pirarucú Frito
+## 🍲 Pirarucú Frito
 
-El Pirarucú es el pez de agua dulce más grande de la Amazonía y uno de los más emblemáticos de la región. Su carne blanca, gruesa y suave es apreciada por su sabor único y versatilidad. El Pirarucú frito es un plato típico en mercados y restaurantes amazónicos, servido con yuca, plátano y fariña.
+El Pirarucú (*Arapaima gigas*) es el "rey del Amazonas", un pez prehistórico que puede alcanzar los 3 metros. Su carne es única entre los pescados de río: blanca, firme, sin espinas intermusculares y con un sabor suave que absorbe bien los condimentos. Esta preparación frita es omnipresente en los mercados de Leticia y Puerto Nariño.
 
 ## Información General
 
 * **Dificultad:** ★★☆☆☆
-* **Tiempo de preparación:** 20 minutos
+* **Tiempo de preparación:** 20 minutos (+10 min marinado)
 * **Tiempo de cocción:** 15 minutos
 * **Porciones:** 4
 
@@ -66,82 +68,102 @@ El Pirarucú es el pez de agua dulce más grande de la Amazonía y uno de los m�
 
 ## 📝 Ingredientes
 
-- 800 g de filete de pirarucú (o arapaima)
-- Sal y pimienta al gusto
-- 2 limones (su jugo)
-- 1 diente de ajo
-- 1 taza de harina de yuca (fariña) o maíz
-- Aceite vegetal para freír
-- Yuca cocida y plátano frito para acompañar
+* **Pescado:**
+    * 800 g de lomo de pirarucú fresco (cortado en postas o filetes gruesos)
+    * 2 limones (jugo)
+    * 2 dientes de ajo, machacados
+    * Sal y pimienta amazónica al gusto
+
+* **Para el apanado y fritura:**
+    * 1 taza de harina de maíz o harina de yuca (fariña fina)
+    * Aceite vegetal neutro (suficiente para fritura profunda o semiprofunda)
+
+* **Guarniciones sugeridas:**
+    * Yuca cocida o frita
+    * Patacones
+    * Fariña (tostada con grasa de pescado opcional)
+    * Ají de tucupí (opcional)
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. **Preparar el pescado:** Lava y seca los filetes. Marina con jugo de limón, ajo machacado, sal y pimienta durante 10 minutos.
-2. **Empanizar:** Pasa los filetes por harina de yuca o maíz.
-3. **Freír:** Calienta abundante aceite en una sartén y fríe los filetes hasta dorar y quedar crujientes (3-4 minutos por lado).
-4. **Servir:** Escurre sobre papel absorbente y sirve caliente, acompañado de yuca cocida, plátano frito y fariña.
+1. **Limpieza y Corte:** Asegúrate de que el pirarucú esté limpio. Tradicionalmente se corta en "postas" (rodajas) o filetes gruesos de unos 3-4 cm. Haz unos cortes superficiales en la piel si la tiene, para que no se encoja.
+2. **Marinado:** En un tazón, frota el pescado con el ajo, la sal, la pimienta y el jugo de limón. Deja reposar por al menos 10-15 minutos. El ácido del limón empezará a "cocinar" levemente la superficie y reafirmar la carne.
+3. **Apanado:** Pasa cada pieza de pescado por la harina (maíz o yuca), presionando ligeramente para que se adhiera una capa fina y uniforme. Sacude el exceso.
+4. **Fritura:** Calienta el aceite en una sartén profunda a fuego medio-alto (aprox. 170°C). Fríe las piezas sin amontonarlas.
+5. **Cocción:** Cocina unos 5-7 minutos por lado, dependiendo del grosor, hasta que estén doradas y crujientes por fuera. El pirarucú debe quedar jugoso por dentro.
+6. **Escurrido:** Retira y coloca sobre papel absorbente para eliminar el exceso de grasa.
+7. **Servir:** Sirve inmediatamente acompañado de una buena porción de fariña, yuca y ají.
 
 ---
 
 ## 💡 Variaciones y Consejos
 
-* Puedes preparar chicharrón de pirarucú usando trozos pequeños y fritura profunda.
-* Añade especias amazónicas como sacha culantro para un toque especial.
-* Sirve con ensalada fresca de la región.
+* **Chicharrón de Pirarucú:** Corta el pescado en cubos pequeños (bocados), apana y fríe. Es ideal como entrada o "picada".
+* **Con la piel:** Si consigues pirarucú con piel, fríela hasta que esté crocante; es considerada un manjar por su textura gelatinosa que se vuelve crujiente (similar al chicharrón de cerdo).
+* **Sostenibilidad:** Asegúrate de comprar pirarucú de criadero o pesca legal, ya que es una especie protegida con vedas estrictas.
 
 ---
 
 ## 📸 Galería
 
-![Pirarucú frito con yuca](./images/1.png)
+![Pirarucú frito servido](./images/1.png)
 
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, fritura tradicional
-- **Perfil de sabor dominante:** Umami, Salado
-- **Textura principal:** Crujiente (exterior), Suave (interior)
-- **Aroma destacado:** Frito, Marino, Ligeramente herbal
-- **Presentación y experiencia:** Se sirve en platos grandes, ideal para compartir en mercados y reuniones familiares.
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami, Cárnico       | 4/5              | Alto inosinato (característico de peces grandes) y aminoácidos libres. |
+| **Aroma**| Frito, Río Limpio    | 3/5              | Aldehídos volátiles de la fritura; bajo olor a "geosmina" (barro) comparado con bagres. |
+| **Textura**| Firme, Laminar       | 5/5              | Miotomas (músculos) grandes y gruesos separados por colágeno que se gelatiniza. |
+| **Boca** | Jugoso               | 4/5              | Retención de humedad interna gracias a la costra del apanado. |
 
-### Etiquetas extraídas de comentarios y foros
+### ⚗️ Química y Física Culinaria
 
-- #crujiente #carneBlanca #giganteAmazónico #tradición #mercado #fácil #pescadoDeRío #sinEspinas #sabroso #frito #yuca #fariña
+- **Desnaturalización Proteica:** La carne del pirarucú es rica en proteínas miofibrilares. Al freírse, estas proteínas se coagulan rápidamente, contrayendo las fibras. Sin embargo, debido al gran tamaño de las fibras musculares de esta especie, la carne mantiene una estructura firme similar a la del pollo o cerdo, en lugar de desmoronarse como pescados más pequeños.
+- **Barrera de Hidratación (Apanado):** La harina de yuca o maíz crea una barrera física. Al entrar en contacto con el aceite a >160°C, el agua del apanado se evapora explosivamente, creando una estructura porosa y rígida (costra) que limita la penetración del aceite hacia la carne y retiene los jugos internos del pescado.
+- **Reacción de Maillard:** Ocurre en la superficie harinada, generando compuestos de color pardo y sabores a nuez/tostado, potenciando el perfil *umami* del pescado.
 
-### Opiniones y experiencia de usuario
+### 🍎 Nutrición y Metabolismo
 
-- "El pirarucú frito tiene una textura increíble, crujiente por fuera y suave por dentro. ¡Perfecto con yuca y fariña!" (Google Maps)
-- "Es un pescado gigante y sabroso, ideal para compartir en familia." (Foro gastronómico)
-- "Me encanta el sabor y la ausencia de espinas, es muy fácil de comer." (Comentarios en recetas públicas)
+- **Calorías Totales:** ~415 kcal/porción (varía según absorción de aceite).
+- **Proteína de Alto Valor:** Aporta ~36g de proteína por porción, siendo una excelente fuente para la reparación muscular.
+- **Perfil Lipídico:** El pirarucú es un pescado magro en su estado natural (aprox. 1-2% grasa), pero la fritura añade grasas vegetales.
+- **Micronutrientes:** Rico en Fósforo y Selenio. Aunque es de agua dulce, aporta ciertos ácidos grasos Omega-3, aunque en menor cantidad que peces marinos de aguas frías.
+- **Digestibilidad:** Alta, aunque la fritura puede retardar el vaciado gástrico.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Pirarucú         | 105             | 22           | 0         | 2          | Omega-3, Fósforo     |
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
-| Fariña           | 350             | 2            | 85        | 0.5        | Fibra, Minerales     |
+- **El "Paiche" o "Pirarucú":** Venerado por los indígenas (Tikunas, Yaguas) como una deidad fluvial. Su lengua ósea se usa tradicionalmente como rallador (para guaraná o yuca).
+- **Gastronomía de Frontera:** Este plato es común en la "Triple Frontera" (Colombia, Brasil, Perú). En Brasil se conoce como "Bacalhau da Amazônia" cuando se sala y seca.
+- **Sostenibilidad:** Debido a la sobrepesca histórica, el consumo responsable promueve la cría en estanques o el respeto estricto de las tallas mínimas (vedas). Consumirlo apoya a las comunidades que han transicionado a la acuicultura sostenible.
 
-*Fuente: USDA FoodData Central, Gastronomia.com, El Tiempo*
+### 📚 Estudios y Referencias
+
+1. *FAO (2022).* "Pirarucu - Native Species of the Amazon".
+2. *TBCA (Tabla Brasileña de Composición de Alimentos).* "Fish, Pirarucu, fresh vs salted".
+3. *Murrieta, R. (2001).* "Food consumption and subsistence in three Caboclo populations on Marajó Island, Amazonia".
+
+### Sabores y Consejos de Restaurantes Emblemáticos
+
+- **Restaurante Tierras Amazónicas (Leticia):** Famoso por servirlo en "chicharrón" con una salsa de copoazú agridulce. Recomiendan no sobrecocinarlo para que no se ponga "cauchudo" (duro).
+- **Mercado de Puerto Nariño:** Las cocineras locales sugieren usar siempre limón criollo y dejar marinar bajo hoja de plátano para concentrar aromas.
+
+#### Consejos de la comunidad y comensales
+
+1. **Cuidado con la Sal:** Si usas pirarucú que fue previamente salado (seco), desálalo en agua por 24 horas cambiando el agua varias veces, o quedará incomible.
+2. **La Piel:** "Si te dan la opción, pide con piel. Es lo más rico si está bien tostada".
+3. **Acompañante:** "Nada mejor que mojar el pedazo de pescado en tucupí (salsa negra de yuca brava) con ají".
 
 ---
 
-## Sabiduría colectiva, trucos y consejos
-
-1. **Corte grueso:** Usa filetes gruesos para mejor textura y jugosidad.
-2. **Aceite caliente:** Fríe en aceite bien caliente para lograr un exterior crujiente.
-3. **Presentación:** Sirve con yuca, plátano y fariña para una experiencia amazónica auténtica.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [Receta y contexto de Pirarucú - Gastronomia.com](https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu)
-- [Chicharrón de Pirarucú - Colombia.com](https://www.colombia.com/gastronomia/noticias/recetas-amazonas-chicharron-piracucu-308180)
-- [El Tiempo: Pirarucú en restaurantes de Colombia](https://www.eltiempo.com/cultura/gastronomia/pirarucu-chefs-hablan-de-sus-preparaciones-en-restaurantes-de-colombia-684418)
-- [TripAdvisor: Opiniones sobre Pirarucú](https://www.tripadvisor.com/)
+> **Fuentes consultadas:**
+>
+> - [Gastronomía de Colombia - Pirarucú](https://colombia.gastronomia.com/)
+> - [Tabla Nutricional TBCA Brasil](https://tbca.net.br/)
+> - [Reseñas de viajeros en TripAdvisor - Leticia](https://www.tripadvisor.com/)
