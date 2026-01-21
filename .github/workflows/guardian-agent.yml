@@ -53,7 +53,7 @@ jobs:
 
     steps:
       - name: 📋 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 🦀 Setup Rust (if available)
         uses: dtolnay/rust-toolchain@stable
@@ -71,35 +71,22 @@ jobs:
             echo "number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           fi
 
-      - name: 🛡️ Run Guardian Core (Rust/PowerShell Hybrid)
+      - name: 🛡️ Run Guardian Core (PowerShell)
         if: steps.pr.outputs.number != ''
         env:
           GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ github.token }}
+        shell: pwsh
         run: |
-          # Try pre-built binary first (Fastest)
-          if [ -f "bin/workflow-orchestrator-linux" ]; then
-            echo "✅ Running Pre-built Guardian Agent (Zero Compile Time)"
-            chmod +x bin/workflow-orchestrator-linux
-            ./bin/workflow-orchestrator-linux guardian \
-              --pr-number ${{ steps.pr.outputs.number }} \
-              --threshold 70 \
-              --ci-mode
-          # Fallback to Cargo (15,000x faster than PowerShell, but needs compile)
-          elif command -v cargo &> /dev/null && [ -f "tools/workflow-orchestrator/Cargo.toml" ]; then
-            echo "✅ Running Guardian Agent (Rust - High Performance)"
-            cd tools/workflow-orchestrator
-
-            # Run Guardian with CI mode for JSON output
-            cargo run --release -- guardian \
-              --pr-number ${{ steps.pr.outputs.number }} \
-              --threshold 70 \
-              --ci-mode
-          else
-            # Fallback to PowerShell (ensures zero downtime)
-            echo "⚠️  Rust not available, falling back to PowerShell"
-            pwsh ./scripts/guardian-core.ps1 \
-              -PrNumber ${{ steps.pr.outputs.number }} \
-              -CiMode \
+          # Check if PowerShell script exists
+          if (Test-Path "./scripts/guardian-core.ps1") {
+            Write-Host "✅ Running Guardian Agent (PowerShell)"
+            ./scripts/guardian-core.ps1 `
+              -PrNumber ${{ steps.pr.outputs.number }} `
+              -CiMode `
               -DryRun:$false
-          fi
+          } else {
+            Write-Host "⚠️  Guardian script not found, skipping auto-merge evaluation"
+            Write-Host "This is expected if the repository doesn't have the Guardian Agent configured."
+            exit 0
+          }
