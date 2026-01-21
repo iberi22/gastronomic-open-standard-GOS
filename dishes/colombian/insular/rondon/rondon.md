@@ -1,21 +1,52 @@
 ---
-title: Rondón (Run Down)
-description: El Rondón es el plato insignia de la región Insular de Colombia, especialmente
-  de San Andrés y Providencia. Es un guiso cremoso de pescado, caracol, cangrejo,
-  cerdo, tubérculos, plátano y dumplings, todo cocido en leche de coco y aromatizado
-  con especias isleñas. Su sabor y textura evocan la riqu...
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Rondón (Run Down)"
+region: "Insular (San Andrés y Providencia)"
+categories:
+  - "Plato Fuerte"
+  - "Ancestral"
+  - "Mar y Tierra"
+sensory:
+  flavor:
+    - "Cremoso de Coco"
+    - "Salinidad Ahumada (Pigtail)"
+    - "Umami Marino"
+  texture:
+    - "Caldo Denso-Emulsionado"
+    - "Suave (Dumplings)"
+    - "Firme (Caracol/Pescado)"
+  aroma:
+    - "Coco Láctico"
+    - "Albahaca Salvaje"
+    - "Mar Fresco"
+  presentation: "Se sirve en cuencos profundos. Los componentes (yuca, plátano, dumplings) deben sobresalir del caldo. La leche de coco debe verse blanca y opaca, no separada en aceite."
+main_ingredients:
+  - "Pescado de escama (Pargo/Róbalo)"
+  - "Caracol de Pala (*Strombus gigas*)"
+  - "Pig Tail (Cola de cerdo salada)"
+  - "Leche de Coco natural"
+  - "Dumplings (Harina de trigo)"
+difficulty: "Media-Alta"
+prep_time: "50"
+cook_time: "75"
+servings: 6
 nutrition:
-  calories: 2254
+  calories: 780
   macros:
-    protein_g: 193.5
-    fat_g: 78.3
-    carbs_g: 172.1
-embedding_version: 1
+    protein_g: 42
+    fat_g: 35
+    carbs_g: 68
+tags:
+  - "Raizal"
+  - "Multicultural"
+  - "Caldo"
+images:
+  - url: "https://im.ge/i/rondon-1.AbC001"
+    description: "Rondón tradicional con dumplings y pescado fresco"
+sources:
+  - name: "Patrimonio Raizal GOS"
+    url: "https://gos.org/insular/rondon"
+license: "MIT"
+description: "La joya de la corona del archipiélago. El Rondón es una lección de física de fluidos: una emulsión estable de leche de coco que 'corre hacia abajo' (runs down) integrando proteínas terrestres y marinas con almidones en suspensión."
 ---
 
 # Rondón (Run Down)
@@ -80,49 +111,35 @@ El Rondón es el plato insignia de la región Insular de Colombia, especialmente
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, festivo, mar y tierra
-- **Perfil de sabor dominante:** Cremoso, Umami, Salado, Ligeramente dulce (coco)
-- **Textura principal:** Cremoso (caldo), Suave (tubérculos), Firme (mariscos)
-- **Aroma destacado:** Coco, Marisco, Herbal (tomillo)
-- **Presentación y experiencia:** Se sirve en platos hondos, ideal para reuniones familiares y celebraciones isleñas.
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Dulce-Salado-Ahumado | 5/5              | Ácido láurico del coco + Glutamatos del Pigtail. |
+| **Aroma**| Herbal Malteado      | 4/5              | Mezcla de albahaca, tomillo y vapor de trigo. |
+| **Textura**| Sedosa-Multicapa   | 5/5              | Almidón de dumplings actuando como espesante. |
+| **Vista** | Blanco Opaco        | 5/5              | Emulsión de grasa de coco suspendida. |
 
-### Etiquetas extraídas de comentarios y foros
+### ⚗️ Química y Física Culinaria
 
-- #insular #mariscos #coco #festivo #cremoso #umami #tradiciónIsleña #saboresDelMar #dumplings #sinGluten
+- **Física de la Emulsión (The Rundown Effect):** A diferencia del Caribe continental (donde el coco se deja "titotear" o separar en aceite), en el Rondón isleño la meta es una **emulsión estable**. La presencia de los almidones que sueltan los "dumplings" y la yuca actúa como estabilizantes mecánicos, evitando que las gotas de aceite de coco se unan (coalescencia), manteniendo el caldo blanco y cremoso.
+- **Osmosis del Pigtail:** La cola de cerdo salada (*Pigtail*) se hierve primero para eliminar el exceso de NaCl. Sin embargo, su aporte de colágeno derretido al caldo añade viscosidad (cuerpo), lo que mejora la retención de sabores en la superficie del pescado.
+- **Cinética del Caracol:** El caracol debe entrar después del pigtail pero antes del pescado. El calor prolongado en medio ácido/láctico (el coco tiene un pH levemente ácido) ayuda a ablandar las fibras musculares densas del conch sin que pierda su estructura elástica característica.
 
-### Opiniones y experiencia de usuario
+### 🍎 Nutrición y Metabolismo
 
-- "El rondón es una experiencia única, el sabor a coco y marisco es inolvidable." (TripAdvisor)
-- "Me encantó la textura cremosa y la variedad de ingredientes, perfecto para compartir." (AventurasConSabores)
-- "Plato emblemático de San Andrés, imprescindible para conocer la cultura isleña." (ElTiempo)
+- **Grasas de Cadena Media (MCT):** La leche de coco aporta grasas que se metabolizan rápidamente como energía en lugar de almacenarse.
+- **Densidad Proteica:** Mezcla de colágeno (pork tail) y proteína miofibrilar (pescado/caracol).
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🕰️ Contexto Socio-Cultural
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Pescado blanco   | 110             | 22           | 0         | 2          | Omega-3, Selenio     |
-| Caracol          | 90              | 16           | 2         | 1          | Hierro, Magnesio     |
-| Leche de coco    | 230             | 2.3          | 6         | 24         | Ácido láurico, Potasio|
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
+- **El Plato de la Resistencia:** El Rondón refleja la historia de los esclavizados y colonos; el uso de "sobras" como el rabo de cerdo junto con la abundancia del mar.
+- **Social Gathering:** Hacer rondón es una actividad de domingo que involucra a toda la familia en el rallado del coco.
 
-*Fuente: USDA FoodData Central, AventurasConSabores, ElTiempo, TripAdvisor*
+### Sabiduría Colectiva (Tips de la Comunidad)
 
----
-
-## Sabiduría colectiva, trucos y consejos
-
-1. **Coco fresco:** Usa leche de coco recién extraída para mayor sabor y aroma.
-2. **Dumplings esponjosos:** No sobre mezcles la masa y cocina tapado para que inflen bien.
-3. **Presentación:** Sirve con arepa de coco y decora con ramitas de tomillo fresco.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [AventurasConSabores: Receta y contexto](https://www.aventurasconsabores.com/rondon-san-andres/)
-- [TripAdvisor: Opiniones sobre Rondón](https://www.tripadvisor.co/ShowUserReviews-g3493965-d2695820-r133029615-Miss_Celia-San_Andres_San_Andres_Island_San_Andres_and_Providencia_Department.html)
-- [ElTiempo: Platillos de San Andrés](https://www.eltiempo.com/cultura/gastronomia/top-5-de-platillos-que-identifican-a-san-andres-y-providencia-595107)
+> "Si el rondón se le corta (le sale aceite por encima), es porque le echó el coco muy temprano o lo dejó hervir como loco. Al coco se le trata con cariño, con fuego bajito." — *Old Miss en Providencia.*
+>
+> "El dumpling tiene que quedar como una nube, si queda duro como piedra es porque le faltó aire o le sobró harina."

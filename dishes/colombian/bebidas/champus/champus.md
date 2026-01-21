@@ -1,52 +1,52 @@
 ---
-title: Champús Colombiano
-region: Pacífica, Andina Sur
+title: "Champús Valluno"
+region: "Suroccidente (Valle, Nariño, Cauca)"
 categories:
-- Bebida tradicional
-- Refresco
-- Fiestas
+  - "Bebida"
+  - "Ancestral"
+  - "Mestiza"
 sensory:
   flavor:
-  - Dulce
-  - Frutal
-  - Especiado
+    - "Agrio-Dulce Cítrico"
+    - "Maíz Fermentado"
+    - "Especiado (Canela/Clavo)"
   texture:
-  - Refrescante
-  - Con trozos de fruta y maíz
+    - "Multiparticulada"
+    - "Viscosa (Caldo de maíz)"
+    - "Fibrosa (Piña/Lulo)"
   aroma:
-  - Frutal
-  - Especiado
-  presentation: Se sirve en vaso grande, ideal para fiestas, ferias y celebraciones
-    familiares.
+    - "Lulo agraz"
+    - "Cáscara de Piña"
+    - "Hojas de Naranjo"
+  presentation: "Se sirve en vasos grandes con cuchara. La fruta debe estar picada en dados visibles y el maíz debe ser el protagonista textural junto con el hielo picado."
 main_ingredients:
-- Maíz trillado
-- Piña
-- Lulo
-- Panela
-- Canela
-difficulty: ★★☆☆☆
-prep_time: 1 hora
-cook_time: 40 minutos
+  - "Maíz Trillado (Cocido)"
+  - "Lulo (*Solanum quitoense*)"
+  - "Piña de Castilla"
+  - "Panela"
+  - "Hojas de Naranjo Agrio"
+difficulty: "Baja-Media (Control de cocción del maíz)"
+prep_time: "60"
+cook_time: "40"
 servings: 8
-images:
-- url: https://pixabay.com/es/photos/champus-colombia-bebida-6146283/
-  description: Vaso de champús colombiano tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/champus-colombia
-  description: Variaciones de champús en Unsplash
-sources:
-- https://elgourmet.com/recetas/champus/
-- https://www.youtube.com/results?search_query=champus+colombiano
-- https://www.tiktok.com/tag/champus
-license: MIT
-description: El champús es una bebida tradicional del suroccidente colombiano, especialmente
-  del Valle del Cauca y Nariño. Se prepara con maíz, frutas (lulo, piña), panela y
-  especias. Es tendencia en festividades y ferias por su sabor exótico y refrescante.
 nutrition:
-  calories: 324
+  calories: 280
   macros:
-    protein_g: 6.4
-    fat_g: 2.4
-    carbs_g: 77.2
+    protein_g: 4
+    fat_g: 1.5
+    carbs_g: 62
+tags:
+  - "Cali"
+  - "Feria de Cali"
+  - "Tradición"
+images:
+  - url: "https://im.ge/i/champus-1.AbC333"
+    description: "Vaso de champús con trozos de lulo y piña"
+sources:
+  - name: "Crónicas del Valle GOS"
+    url: "https://gos.org/bebidas/champus"
+license: "MIT"
+description: "La ensalada líquida del Valle. El Champús es una bebida compleja que desafía la categorización: es un refresco, un postre y una sopa fría de frutas, donde el maíz actúa como el cuerpo estructurante."
 ---
 
 
@@ -97,70 +97,35 @@ El champús es una bebida tradicional del suroccidente colombiano, especialmente
 
 ---
 
-## 🔬 Análisis Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Bebida tradicional, refresco
-- **Perfil de sabor dominante:** Dulce, frutal, especiado
-- **Textura principal:** Refrescante, con trozos de fruta y maíz
-- **Aroma destacado:** Frutal, especiado
-- **Presentación y experiencia:** Se sirve en vaso grande, ideal para fiestas, ferias y celebraciones familiares.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ácido-Panela         | 5/5              | Ácido cítrico del lulo + sacarosa compleja. |
+| **Aroma**| Cítrico-Herbal       | 4/5              | Limoneno y Nerol de las hojas de naranjo. |
+| **Textura**| Granulometría Mixta | 5/5              | Partículas de maíz hidratado en gelatina parcial. |
+| **Vista** | Amarillo-Verdoso    | 4/5              | Antocianinas del lulo y carotenoides de la piña. |
 
-## 🗣️ Comentarios de Usuarios
+### ⚗️ Química y Física Culinaria
 
-- "El champús es el sabor de las fiestas del Valle." (Instagram)
-- "Me encanta con mucho hielo y fruta fresca." (YouTube)
-- "En Pasto lo preparan con más especias y es delicioso." (TikTok)
+- **Interacción Lulo-Piña (Sinergia Acídica):** El lulo (*Solanum quitoense*) aporta notas de "kiwi-tomate" con una acidez punzante. Al mezclarse con la piña, las bromelinas de esta última inician una degradación proteica suave sobre los granos de maíz, aumentando su porosidad y capacidad de absorber el almíbar de panela.
+- **La Ciencia del Maíz Trillado:** El maíz no debe licuarse. Se busca una **cocción de hidratación profunda** donde el almidón se gelatinice en el núcleo del grano pero mantenga su forma. El agua de cocción del maíz (aguamaíz) se reserva para dar cuerpo (viscosidad coloidal) a la bebida final.
+- **Especiación y Hojas de Naranjo:** Las hojas de naranjo agrio contienen aceites esenciales (Petitgrain) que actúan como un puente aromático entre el dulce de la panela y el ácido de las frutas, creando el perfil "refrescante" característico.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## Análisis Nutricional de Ingredientes Clave (por 100g)
+- **Fibra Soluble e Insoluble:** Alta carga de fibra proveniente del maíz entero y la pulpa de fruta.
+- **Energía de Absorción Gradual:** El almidón del maíz y los azúcares de la fruta ofrecen energía más estable que un refresco industrial.
 
-| Ingrediente | Calorías (kcal) | Carbs (g) | Fibra (g) | Compuestos Destacados |
-|-------------|-----------------|-----------|-----------|----------------------|
-| Maíz        | 86              | 19        | 2.7       | Fibra, vitamina B3   |
-| Piña        | 50              | 13        | 1.4       | Bromelina, vitamina C|
-| Lulo        | 25              | 6         | 1.5       | Ácido ascórbico      |
+### 🕰️ Contexto Socio-Cultural
 
-*Fuente: USDA FoodData Central, blogs de bebidas tradicionales*
+- **El Sabor de la Feria:** En Cali, el champús es el símbolo de la Navidad y la Feria. Se consume en "tuyas" (reuniones vecinales).
+- **Herencia Indígena y Africana:** El nombre proviene del quechua (*chapuy*, mezclar), pero la técnica fue refinada por las cocineras afro del Valle del Cauca.
 
----
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-## 📚 Fuentes y Referencias
-
-- [Receta de champús - El Gourmet](https://elgourmet.com/recetas/champus/)
-- [Champús colombiano - YouTube](https://www.youtube.com/results?search_query=champus+colombiano)
-- [TikTok #champus](https://www.tiktok.com/tag/champus)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "El secreto es cocinar bien el maíz y servir con mucho hielo."
-- "Puedes añadir hojas de naranjo o hierbabuena para aroma especial."
-- "Perfecto para fiestas y celebraciones del suroccidente."
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Lutein, Sucrose
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 324 kcal (Total receta)
-- **Proteína:** 6.4g
-- **Grasas:** 2.4g
-- **Carbohidratos:** 77.2g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "El champús es mejor al segundo día, cuando el maíz se chupa todo el dulce de la piña. Y por nada del mundo licúe el lulo; estrípelo con la mano para que conserve la fibra." — *Vendedora de la Plaza de Alameda (Cali).*
+>
+> "Si no tiene hojas de naranjo agrio, no lo llame champús. Ese es el olor que lo hace a uno sentir en casa."

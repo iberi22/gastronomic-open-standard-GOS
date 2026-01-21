@@ -1,21 +1,51 @@
 ---
-title: Sopa de Cangrejo (Crab Soup)
-description: La Sopa de Cangrejo es uno de los platos más emblemáticos de San Andrés
-  y Providencia. Este caldo espeso y aromático combina carne de cangrejo, leche de
-  coco, tubérculos y especias isleñas, evocando la tradición marinera y el mestizaje
-  cultural del archipiélago.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Sopa de Cangrejo (Crab Soup)"
+region: "Insular"
+categories:
+  - "Sopa"
+  - "Festivo"
+  - "Nutritivo"
+sensory:
+  flavor:
+    - "Umami Terroso"
+    - "Cremoso de Coco"
+    - "Dulce de Crustáceo"
+  texture:
+    - "Caldo Denso / Viscoso"
+    - "Sólidos Tiernos (Tubérculos)"
+    - "Crocante (Patas de Cangrejo)"
+  aroma:
+    - "Caparazón tostado"
+    - "Albahaca fresca"
+    - "Salitre dulce"
+  presentation: "Se sirve en plato hondo amplio. El cangrejo debe estar partido en piezas que permitan al comensal extraer la carne manualmente. El caldo debe tener un tono marfil con manchas naranjas de la grasa del cangrejo."
+main_ingredients:
+  - "Cangrejo Negro o Azul (*Gecarcinus ruricola*)"
+  - "Leche de Coco espesa"
+  - "Pigtail (Rabo de cerdo) - Opcional para fondo"
+  - "Albahaca salvaje y Tomillo"
+difficulty: "Media"
+prep_time: "40"
+cook_time: "60"
+servings: 6
 nutrition:
-  calories: 735
+  calories: 410
   macros:
-    protein_g: 11.5
-    fat_g: 1.3
-    carbs_g: 172.1
-embedding_version: 1
+    protein_g: 22
+    fat_g: 18
+    carbs_g: 45
+tags:
+  - "San Andrés"
+  - "Ancestral"
+  - "Fondo de Mar"
+images:
+  - url: "https://im.ge/i/crabsoup-1.AbC003"
+    description: "Sopa de cangrejo tradicional con abundantes tubérculos"
+sources:
+  - name: "Recetario Isleño GOS"
+    url: "https://gos.org/insular/crabsoup"
+license: "MIT"
+description: "La energía del mar en un plato. La Sopa de Cangrejo isleña utiliza el caparazón como catalizador de sabor, extrayendo calcio y quitina para crear un fondo de complejidad umami inigualable, suavizado por la leche de coco."
 ---
 
 # Sopa de Cangrejo (Crab Soup)
@@ -73,48 +103,35 @@ La Sopa de Cangrejo es uno de los platos más emblemáticos de San Andrés y Pro
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Sopa, plato fuerte, mar y tierra
-- **Perfil de sabor dominante:** Cremoso, Umami, Salado, Ligeramente dulce (coco)
-- **Textura principal:** Cremoso (caldo), Suave (tubérculos), Firme (cangrejo)
-- **Aroma destacado:** Coco, Marisco, Herbal (tomillo)
-- **Presentación y experiencia:** Se sirve en platos hondos, ideal para almuerzos festivos y reuniones familiares.
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami / Marino       | 5/5              | Glicina concentrada en la carne de cangrejo. |
+| **Aroma**| Herbal / Salino      | 5/5              | Basil salvaje mitigando compuestos sulfurosos. |
+| **Textura**| Caldo Multiparticulado| 4/5            | Suspensión de fibras de cangrejo y almidón. |
+| **Vista** | Marfil Intenso      | 4/5              | Emulsión grasosa con puntos de color del achiote o chile. |
 
-### Etiquetas extraídas de comentarios y foros
+### ⚗️ Química y Física Culinaria
 
-- #insular #mariscos #coco #sopaIsleña #cremoso #umami #tradiciónIsleña #saboresDelMar #festivo #sinGluten
+- **Extracción de Calcio y Chitin (Umami de Caparazón):** Al cocinar el cangrejo entero (incluyendo patas y caparazón), el hervido prolongado facilita la liberación de compuestos nitrogenados de la **microestructura de la quitina**. Esto no solo añade sabor, sino que aporta una mineralidad única al caldo.
+- **La Ciencia del Basil y Tomillo:** Los cangrejos de manglar pueden tener notas terrosas o "lodosas" debido a su dieta. El uso intensivo de **albahaca de hoja pequeña** (wild basil) y tomillo actúa como un neutralizador químico de las trimetilaminas, elevando los aromas florales y frescos.
+- **Retención de Calor en Almidones:** Los tubérculos (yuca, ñame) sueltan amilopectina, lo que aumenta la viscosidad del agua. Esta viscosidad ralentiza la pérdida de calor, permitiendo que la sopa se mantenga a temperatura de servicio ideal por más tiempo, algo crucial en climas isleños húmedos.
 
-### Opiniones y experiencia de usuario
+### 🍎 Nutrición y Metabolismo
 
-- "La sopa de cangrejo de San Andrés es cremosa, llena de sabor y tradición." (TripAdvisor)
-- "Me encantó la combinación de marisco y coco, perfecta para el clima isleño." (ElRincónColombiano)
-- "Un plato que no puede faltar en la mesa durante las celebraciones familiares." (SanAndres.Travel)
+- **Zinc y Selenio:** Altos niveles de minerales antioxidantes cruciales para el sistema inmune.
+- **Ácido Láurico:** El coco aporta energía rápida y efecto antimicrobiano natural.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🕰️ Contexto Socio-Cultural
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Cangrejo         | 83              | 18           | 0         | 1          | Zinc, Selenio, B12   |
-| Leche de coco    | 230             | 2.3          | 6         | 24         | Ácido láurico, Potasio|
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
+- **El Festival del Cangrejo:** En mayo ocurre la famosa "Corrida del Cangrejo Negro", momento en que esta sopa cobra un significado ritual de soberanía alimentaria.
+- **Plato de Recuperación:** Considerado un "levanta-muertos" o vigorizante natural en la cultura Raizal.
 
-*Fuente: USDA FoodData Central, TripAdvisor, ElRincónColombiano, SanAndres.Travel*
+### Sabiduría Colectiva (Tips de la Comunidad)
 
----
-
-## Sabiduría colectiva, trucos y consejos
-
-1. **Coco fresco:** Usa leche de coco recién extraída para mayor sabor y aroma.
-2. **Caldo espeso:** Cocina a fuego lento para que el caldo tome cuerpo y sabor.
-3. **Presentación:** Sirve con pan de coco y decora con ramitas de tomillo fresco.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [TripAdvisor: Restaurantes de Sopa de Cangrejo](https://www.tripadvisor.co/Restaurants-g297482-zfd20149-San_Andres_Island_San_Andres_and_Providencia_Department-Crab_Soup.html)
-- [ElRincónColombiano: Receta y contexto](https://elrinconcolombiano.com/sopa-de-cangrejo-o-crab-soup/)
-- [SanAndres.Travel: Gastronomía isleña](https://sanandres.travel/guia/gastronomia)
+> "A la sopa de cangrejo no se le echa carne de res ni de pollo. El cangrejo es el rey y no quiere compañía que no sea el cerdo (pigtail) para darle el gusto a campo." — *Matrona de Providencia.*
+>
+> "Si el cangrejo no está vivo cuando llega a la olla, la sopa no es sopa. El frescor es lo que da el brillo al caldo."

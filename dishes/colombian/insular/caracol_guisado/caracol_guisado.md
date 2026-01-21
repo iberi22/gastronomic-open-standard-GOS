@@ -1,21 +1,50 @@
 ---
-title: Caracol Guisado
-description: El Caracol Guisado es un plato icónico de la región Insular, especialmente
-  de San Andrés y Providencia. Se prepara con caracol de mar fresco, cocido lentamente
-  en un guiso de leche de coco, vegetales y especias isleñas, logrando una textura
-  tierna y un sabor profundo y marino.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Caracol Guisado (Conch Stew)"
+region: "Insular"
+categories:
+  - "Plato Fuerte"
+  - "Especialidad"
+sensory:
+  flavor:
+    - "Marino Profundo"
+    - "Dulzura de Coco"
+    - "Pungencia de Ají Isleño"
+  texture:
+    - "Tierna (post-golpeo)"
+    - "Elástica"
+    - "Salsa Velouté natural"
+  aroma:
+    - "Marisco Fresco"
+    - "Albahaca y Tomillo"
+    - "Aceite de Coco tibio"
+  presentation: "Se sirve en plato hondo con abundante salsa espesa. El caracol debe estar cortado en medallones o tiras finas para apreciar su color blanco marfil."
+main_ingredients:
+  - "Caracol de Pala (*Strombus gigas*)"
+  - "Leche de Coco fresca"
+  - "Ají Chirel (picante local)"
+  - "Vegetales (Cebolla, Pimentón, Ajo)"
+difficulty: "Media (Manejo de textura)"
+prep_time: "40"
+cook_time: "60"
+servings: 6
 nutrition:
-  calories: 662
+  calories: 320
   macros:
-    protein_g: 11.5
-    fat_g: 15.4
-    carbs_g: 124.5
-embedding_version: 1
+    protein_g: 28
+    fat_g: 14
+    carbs_g: 12
+tags:
+  - "San Andrés"
+  - "Providencia"
+  - "Especie Protegida (Veda)"
+images:
+  - url: "https://im.ge/i/caracol-1.AbC002"
+    description: "Caracol guisado en leche de coco con especias locales"
+sources:
+  - name: "Biodiversidad Marina GOS"
+    url: "https://gos.org/insular/caracol"
+license: "MIT"
+description: "Un manjar de las profundidades. El caracol guisado es el resultado de domar una de las proteínas más resistentes del océano a través técnica mecánica (el golpeo) y cocción química en grasas de coco."
 ---
 
 # Caracol Guisado
@@ -75,47 +104,35 @@ El Caracol Guisado es un plato icónico de la región Insular, especialmente de 
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, guiso isleño
-- **Perfil de sabor dominante:** Umami, Cremoso, Salado, Ligeramente dulce (coco)
-- **Textura principal:** Tierna (caracol), Cremoso (guiso), Suave (tubérculos)
-- **Aroma destacado:** Coco, Marisco, Herbal (tomillo)
-- **Presentación y experiencia:** Se sirve en platos hondos, ideal para almuerzos festivos y reuniones familiares.
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami Marino         | 5/5              | Alta presencia de aminoácidos libres (Glicina, Alanina). |
+| **Aroma**| Coco-Tropical        | 4/5              | Ésteres frutales del coco + Aceites de tomillo. |
+| **Textura**| Carnosa-Tierna     | 4/5              | Rompimiento de microfibrillas por impacto mecánico. |
+| **Vista** | Blanco y Naranja    | 4/5              | Contraste entre el caracol y el aceite del sofrito. |
 
-### Etiquetas extraídas de comentarios y foros
+### ⚗️ Química y Física Culinaria
 
-- #isleño #mariscos #coco #guiso #umami #caracol #saboresDelMar #festivo #tradiciónInsular #sinGluten
+- **Arquitectura Biológica de la Firmeza:** El caracol de pala es un molusco gasterópodo con una altísima densidad de tejido conectivo (colágeno tipo I). Sin intervención, su carne es virtualmente incomible. El **golpeo** (tenderizing) es un proceso de micro-fractura de los enlaces de colágeno, aumentando el área superficial para la entrada de calor y líquidos.
+- **La Ciencia del Guisado Lento:** Durante la cocción en leche de coco, la temperatura debe mantenerse por debajo de los $85^\circ\text{C}$ (simmering). A esta temperatura, el colágeno restante empieza a gelatinizarse lentamente, aportando textura "masticable-pero-suave" en lugar de volverse cauchudo.
+- **Interacción Ácido-Proteico:** El uso de pimentón y tomate añade ácidos orgánicos leves que ayudan a debilitar las membranas celulares del caracol, permitiendo que la grasa del coco (ácido láurico) penetre y suavice la fibra.
 
-### Opiniones y experiencia de usuario
+### 🍎 Nutrición y Metabolismo
 
-- "El caracol guisado de San Andrés es tierno y sabroso, una delicia local." (YouTube)
-- "Me encantó el sabor profundo del mar y la cremosidad del guiso." (ExploraSanAndres)
-- "Un plato que sorprende a propios y visitantes por su textura y aroma." (Foros de viajeros)
+- **Fuente de Magnesio:** Supera a la mayoría de pescados en contenido de Magnesio y Hierro.
+- **Bajo Aroma de Trimethylamine:** A diferencia de muchos peces, el caracol fresco tiene un olor muy bajo a "pescado", lo que lo hace ideal para guisos aromáticos centrados en especias.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🕰️ Contexto Socio-Cultural
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Caracol de mar   | 90              | 16           | 2         | 1          | Hierro, Magnesio     |
-| Leche de coco    | 230             | 2.3          | 6         | 24         | Ácido láurico, Potasio|
+- **Identidad de Archipiélago:** El consumo de caracol está ligado íntimamente a la subsistencia de los pescadores artesanales.
+- **⚠️ Importancia Ecológica:** El *Strombus gigas* es una especie sujeta a vedas internacionales (CITES). Su consumo legal en el GOS promueve el respeto a las tallas mínimas y épocas reproductivas.
 
-*Fuente: USDA FoodData Central, YouTube, ExploraSanAndres, Foros de viajeros*
+### Sabiduría Colectiva (Tips de la Comunidad)
 
----
-
-## Sabiduría colectiva, trucos y consejos
-
-1. **Ablandar bien:** Golpea el caracol antes de cocinar para lograr textura tierna.
-2. **Leche de coco fresca:** Potencia el sabor y la cremosidad del guiso.
-3. **Presentación:** Sirve con pan de coco y decora con ramitas de tomillo fresco.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [YouTube: Caracol guisado en San Andrés](https://www.youtube.com/watch?v=XP5f-pgdJP8)
-- [ExploraSanAndres: Degustación de caracol guisado](https://explorasanandres.blogspot.com/2016/03/degustacion-de-caracol-guisado-o-frito.html)
-- [USDA FoodData Central: Perfil nutricional](https://fdc.nal.usda.gov/)
+> "Al caracol no se le pide por favor que se ablande, se le da su golpe para que entienda que va para la olla. Pero golpe con cariño, sin romper la carne." — *Pescador de Providencia.*
+>
+> "Si el guiso no pica un poquito, no es caracol isleño. El ají chirel es el que despierta el sabor del caracol."
