@@ -52,14 +52,21 @@ jobs:
       - name: Detect Repository Type
         id: detect
         shell: bash
-        working-directory: tools/git-core
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          echo "Current directory: $(pwd)"
-          ls -la
-          # Explicitly pointing to declaration if needed, but working-directory should suffice
-          cargo run -q -p gc-cli --manifest-path Cargo.toml -- ci-detect
+          echo "Detecting repository type..."
+          
+          # Check if this is a Git-Core Protocol enhanced repo
+          if [ -d "tools/git-core" ]; then
+            cd tools/git-core
+            cargo run -q -p gc-cli --manifest-path Cargo.toml -- ci-detect
+          else
+            # Fallback: Simple detection based on files
+            echo "No git-core CLI found, using basic detection"
+            echo "schedule_mode=moderate" >> $GITHUB_OUTPUT
+            echo "repo_type=standard" >> $GITHUB_OUTPUT
+          fi
 
       - name: Decide Execution
         id: decide
