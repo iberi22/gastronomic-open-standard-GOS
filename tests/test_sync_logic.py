@@ -36,7 +36,9 @@ class TestSyncLogic(unittest.TestCase):
     def test_convert(self):
         data = {
             'title': "Tomato Scrambled Eggs",
-            'content': self.test_content
+            'content': self.test_content,
+            'ingredients': ['Tomato', 'Egg'],
+            'difficulty': 'Easy'
         }
         output = convert_to_ai_chef_format(data, "carnes")
         self.assertIn('title: "Tomato Scrambled Eggs"', output)

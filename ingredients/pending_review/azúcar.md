@@ -1,5 +1,5 @@
 ---
-name: "-3 Cucharadas De Azúcar"
+name: "Azúcar"
 scientific_name: "TODO"
 group: "Uncategorized"
 image: "../../images/placeholder.jpg"
@@ -10,7 +10,7 @@ i18n:
     common_name: "TODO"
     other_names: []
   es:
-    common_name: "-3 Cucharadas De Azúcar"
+    common_name: "De Azúcar"
     other_names: []
   zh:
     common_name: "TODO"
@@ -85,7 +85,7 @@ embedding_version: 2
 last_updated: "2025-12-16"
 ---
 
-# -3 Cucharadas De Azúcar
+# De Azúcar
 
 ## Description
 
