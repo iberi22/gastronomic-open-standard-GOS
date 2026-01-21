@@ -25,7 +25,7 @@ main_ingredients:
 difficulty: ★★☆☆☆
 prep_time: 1 hora
 cook_time: 30 minutos
-servings: 8 unidades
+servings: 8
 images:
 - url: https://pixabay.com/photos/papas-rellenas-colombia-snack-6146291/
   description: Papas rellenas colombianas tradicionales (Pixabay)
@@ -104,70 +104,35 @@ Las papas rellenas son un clásico de la comida callejera colombiana. Consisten 
 
 ---
 
-## 🔬 Análisis Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Snack, comida callejera, merienda
-- **Perfil de sabor dominante:** Salado
-- **Textura principal:** Crujiente por fuera, suave y jugoso por dentro
-- **Aroma destacado:** Frito, especiado
-- **Presentación y experiencia:** Se sirve caliente, ideal para comer en la calle o en reuniones informales.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Guiso Cárnico        | 5/5              | Sofrito de cebolla/tomate permeando el puré. |
+| **Aroma**| Fritura Casera       | 4/5              | Aceite caliente + Comino. |
+| **Textura**| Costra vs Puré       | 5/5              | Contraste crítico: Rebozado crocante sobre puré suave. |
+| **Vista** | Esfera Rubia/Morena  | 4/5              | Color depende del rebozado (harina vs huevo). |
 
-## 🗣️ Opiniones y Experiencia de Usuario
+### ⚗️ Química y Física Culinaria
 
-- "Las papas rellenas de la esquina son mi debilidad." (Instagram)
-- "Me gusta con mucho ají y jugo de mora." (YouTube)
-- "No hay feria sin papas rellenas." (TikTok)
+- **La Ingeniería del Rebozado:** La papa rellena es una estructura inestable (puré blando) que debe freírse. El rebozado (huevo + harina) actúa como un **cemento térmico** que coagula instantáneamente al contacto con el aceite ($180^\circ\text{C}$), creando un exoesqueleto que contiene el relleno suave y evita que se desmorone.
+- **Doble Carbohidrato (Almidón + Almidón):** La papa (almidón hidratado) se recubre de harina (almidón seco). Esta interfase absorbe la humedad superficial de la papa, permitiendo que el huevo se adhiera. Sin la harina, el huevo resbalaría por el vapor de agua saliendo de la papa.
+- **El Guiso como Emulsionante:** El relleno de carne no debe estar seco. El guiso (hogao) aporta lípidos y humedad que se emulsionan con la yema del huevo duro picado, creando una pasta sabrosa que no se siente "stoppy" (seca) al comer.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## 🧬 Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Bomba Calórica:** Combinación de fritura profunda, carbohidratos simples y grasas. Plato de alto rendimiento energético.
+- **Proteína Completa:** La combinación carne + huevo duro eleva el perfil proteico.
 
-| Ingrediente   | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|---------------|-----------------|--------------|-----------|------------|----------------------|
-| Papa          | 77              | 2            | 17        | 0.1        | Vitamina C, potasio  |
-| Carne molida  | 250             | 17           | 0         | 20         | Zinc, hierro         |
-| Huevo         | 155             | 13           | 1         | 11         | Colina, vitamina D   |
+### 🕰️ Contexto Socio-Cultural
 
-*Fuente: USDA FoodData Central, blogs de cocina callejera colombiana*
+- **El "Desvare" Universitario:** Almuerzo clásico de estudiante por su bajo costo y alta saciedad.
+- **La Salsa Rosada:** Acompañante casi obligatorio, cuya acidez grasa corta la fritura.
 
----
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-## 📚 Fuentes y Enlaces
-
-- [Receta de papas rellenas - Recetas de Colombia](https://www.recetasdecolombia.com/papas-rellenas)
-- [Papas rellenas colombianas - YouTube](https://www.youtube.com/results?search_query=papas+rellenas+colombianas)
-- [TikTok #papasrellenas](https://www.tiktok.com/tag/papasrellenas)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "El secreto es que la papa esté bien fría antes de rellenar y freír."
-- "No escatimes en relleno, ¡la sorpresa es lo mejor!"
-- "Perfectas para acompañar con ají y jugo de fruta natural."
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Starch, Lutein & Zeaxanthin, Allicin, Lycopene, Choline, Kaempferol, Lipids, Creatine
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 5150 kcal (Total receta)
-- **Proteína:** 390.2g
-- **Grasas:** 290.6g
-- **Carbohidratos:** 243.5g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "Deje enfriar el puré de papa en la nevera antes de armar. Si la papa está caliente, chupa aceite y se desbarata."
+>
+> "Si se le abren al freír, es que el aceite está frío. El aceite tiene que sellar el huevo de una."

@@ -29,7 +29,7 @@ main_ingredients:
 difficulty: ★☆☆☆☆
 prep_time: 15 minutos
 cook_time: 15 minutos
-servings: 2-3
+servings: 2
 images:
 - url: https://pixabay.com/photos/salchipapa-colombia-street-food-6146292/
   description: Salchipapa tradicional colombiana (Pixabay)
@@ -108,70 +108,35 @@ La salchipapa es uno de los platos callejeros más populares y virales de Colomb
 
 ---
 
-## 🔬 Análisis Sensorial y de Uso
+## Análisis Detallado y Sabiduría Colectiva
 
-- **Tipo de plato:** Snack, comida rápida, para compartir
-- **Perfil de sabor dominante:** Salado, umami
-- **Textura principal:** Crujiente (papa), suave (salchicha), cremoso (salsas)
-- **Aroma destacado:** Frito, ahumado, especiado
-- **Presentación y experiencia:** Se sirve en porciones generosas, ideal para compartir en reuniones, fiestas o después de salir de fiesta. Muy popular entre jóvenes y familias.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami-Graso          | 5/5              | Nitritos de la salchicha + Glutamatos del queso/salsas. |
+| **Aroma**| Fritura Industrial   | 4/5              | Aroma distintivo de papa frita + Salchicha dorada. |
+| **Textura**| Mix (Soft/Crunch)    | 5/5              | Papa crujiente, queso fundido, salchicha firme. |
+| **Vista** | Caos Colorido        | 5/5              | Amarillo (papa), Rosado (salsa), Rojo (salchicha). |
 
-## 🗣️ Opiniones y Experiencia de Usuario
+### ⚗️ Química y Física Culinaria
 
-- "La salchipapa nunca falla para un antojo nocturno, es la reina de la calle." (TikTok)
-- "Me encanta con todas las salsas y mucho queso rallado." (Instagram)
-- "En cada ciudad hay una versión diferente, pero todas son deliciosas." (YouTube)
+- **La Papa Perfecta (Doble Fritura):** Para una salchipapa de nivel superior, la papa debe freírse dos veces. La primera a baja temperatura ($140^\circ\text{C}$) para cocinar el almidón interior (gelatinización). La segunda a alta temperatura ($190^\circ\text{C}$) para deshidratar la superficie y crear la costra crujiente (Maillard).
+- **Emulsión de Salsas:** La "Salsa Rosada" no es solo mezcla; es una emulsión de una emulsión (Mayonesa + Ketchup). Su viscosidad recubre la papa evitando que se ponga pastosa inmediatamente, aunque el tiempo es enemigo de la salchipapa (humedad migra de la salsa a la costra de la papa).
+- **Nitritos y Sabor:** Las salchichas tipo "Ranchera" contienen nitritos que, al dorarse, potencian el sabor umami salado que contrasta con el dulce del ketchup/piña.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## 🧬 Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Sodio Crítico:** Plato con altísimo contenido de sodio (embutidos + salsas + sal añadida).
+- **Carga Glucémica:** Alta y rápida. Energía de choque.
 
-| Ingrediente   | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|---------------|-----------------|--------------|-----------|------------|----------------------|
-| Papa frita    | 312             | 3            | 41        | 15         | Potasio, Vitamina C  |
-| Salchicha     | 250             | 10           | 3         | 22         | Sodio, Hierro        |
-| Queso rallado | 350             | 24           | 3         | 28         | Calcio, Vitamina D   |
+### 🕰️ Contexto Socio-Cultural
 
-*Fuente: USDA FoodData Central, videos y blogs de street food*
+- **El "Remate":** Plato oficial para finalizar una noche de fiesta en Colombia.
+- **Salchipapa Costeña:** En la costa se eleva a arte con la adición de queso costeño, lechuga, tártara de ajo y papita chipeada (ripio).
 
----
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-## 📚 Fuentes y Enlaces
-
-- [Street Food Colombia - YouTube](https://www.youtube.com/results?search_query=salchipapa+colombia)
-- [Recetas de salchipapa - Cookpad](https://cookpad.com/co/buscar/salchipapa)
-- [TikTok #salchipapa](https://www.tiktok.com/tag/salchipapa)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "Para que la papa quede más crujiente, sumérgela en agua fría antes de freír."
-- "Las mejores salchipapas llevan huevo frito encima y salsas caseras."
-- "No hay reglas: ¡ponle lo que te guste y disfruta!"
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Starch, Lutein & Zeaxanthin, Choline, Bioactive Peptides, Lipids, Creatine
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 1028 kcal (Total receta)
-- **Proteína:** 66.4g
-- **Grasas:** 48.0g
-- **Carbohidratos:** 80.8g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "La salchicha se tiene que picar en 'pulpo' o sesgada para que dore más superficie."
+>
+> "Si usa papa pastusa se le desbarata; use papa R12 o Sabanera para que aguante el peso de las salsas."

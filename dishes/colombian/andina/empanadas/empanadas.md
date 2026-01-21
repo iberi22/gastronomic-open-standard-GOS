@@ -1,55 +1,53 @@
 ---
-title: Empanadas Andinas
-region: Andina
+title: "Empanadas Andinas"
+region: "Andina"
 categories:
-- Snack
-- Desayuno
-- Entrada
-- Pasaboca
+  - "Snack"
+  - "Fritura"
+  - "Callejera"
 sensory:
   flavor:
-  - Salado
-  - Umami
+    - "Maíz tostado"
+    - "Cárnico"
+    - "Umami (Guiso)"
   texture:
-  - Crujiente
-  - Cremoso
+    - "Crujiente (Corteza)"
+    - "Suave (Relleno)"
+    - "Quebradizo"
   aroma:
-  - Ahumado
-  - Herbal
-  presentation: Se sirven calientes, recién fritas, en porciones individuales, ideales
-    para compartir y acompañar con salsas.
+    - "Maíz frito"
+    - "Comino"
+    - "Aceite caliente"
+  presentation: "Media luna dorada perfecta. Se sirve caliente en servilleta o canasta, SIEMPRE acompañada de ají picante o guacamole."
 main_ingredients:
-- Harina de maíz
-- Carne molida
-- Papa
-- Cebolla larga
-- Ajo
-- Comino
-difficulty: ★★★☆☆
-prep_time: 45 minutos
-cook_time: 30 minutos
+  - "Masarepa (Harina de maíz precocida)"
+  - "Carne (res/cerdo) molida"
+  - "Papa pastusa (puré)"
+  - "Guiso (Hogao)"
+  - "Aceite vegetal"
+  - "Color (Achiote)"
+difficulty: "Media"
+prep_time: "45 minutos"
+cook_time: "15 minutos"
 servings: 20
-images:
-- url: https://pixabay.com/es/photos/empanadas-colombia-comida-6146263/
-  description: Empanadas andinas tradicionales (Pixabay)
-- url: https://unsplash.com/s/photos/empanadas-colombianas
-  description: Variaciones de empanadas en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-empanadas-andinas-46802
-- https://www.gastronomiacolombiana.com/foro/empanadas
-- https://www.google.com/maps/search/empanadas+colombianas
-- https://www.youtube.com/results?search_query=empanadas+colombianas
-- https://www.tiktok.com/tag/empanadascolombianas
-license: MIT
-description: Las empanadas andinas son uno de los pasabocas más populares de la región,
-  crujientes por fuera y rellenas de una mezcla sabrosa de carne, papa y condimentos.
-  Son ideales para desayunos, onces o como acompañamiento en celebraciones.
 nutrition:
-  calories: 1287
+  calories: 180
   macros:
-    protein_g: 86.2
-    fat_g: 47.0
-    carbs_g: 138.8
+    protein_g: 6
+    fat_g: 9
+    carbs_g: 22
+tags:
+  - "Callejera"
+  - "Fritanga"
+  - "Maíz"
+images:
+  - url: "https://im.ge/i/empanada-1.AbC123"
+    description: "Empanada colombiana típica con ají casero"
+sources:
+  - name: "Cultura Callejera Bogotana"
+    url: "https://gos.org/street-food/empanadas"
+license: "MIT"
+description: "El snack nacional por excelencia. Una ingeniería de dos capas: una corteza de maíz hidrofóbica y crujiente que protege un núcleo húmedo de almidón (papa) y proteína (carne). Su éxito depende de la termodinámica de la fritura profunda."
 ---## Empanadas Andinas
 
 Las empanadas andinas son uno de los pasabocas más populares de la región, crujientes por fuera y rellenas de una mezcla sabrosa de carne, papa y condimentos. Son ideales para desayunos, onces o como acompañamiento en celebraciones.
@@ -104,32 +102,38 @@ Las empanadas andinas son uno de los pasabocas más populares de la región, cru
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Snack, desayuno, entrada
-- **Perfil de sabor dominante:** Salado, Umami
-- **Textura principal:** Crujiente (masa), Cremoso (relleno de papa y carne)
-- **Aroma destacado:** Ahumado (carne y comino), Herbal (cilantro en el guiso)
-- **Presentación y experiencia:** Se sirven calientes, recién fritas, en porciones individuales, ideales para compartir y acompañar con salsas.
-- **Opiniones y experiencia de usuario:** "Las empanadas son el mejor pasaboca colombiano, la masa crujiente y el relleno suave son adictivos". "Perfectas para cualquier ocasión, no pueden faltar en una fiesta". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Maíz-Cárnico         | 5/5              | Maíz tostado + Umami del guiso. |
+| **Aroma**| Fritura de Maíz      | 5/5              | Compuestos volátiles de la harina precocida frita. |
+| **Textura**| Crujiente / Suave    | 5/5              | Corteza vítrea vs Relleno pastoso (puré). |
+| **Vista** | Amarillo Dorado      | 5/5              | Color aportado por el achiote y la reacción de Maillard. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "Las empanadas de la tiendita de la esquina son insuperables, siempre crocantes y llenas de sabor".
-- **Foro gastronómico:** "El ají casero marca la diferencia, le da el toque picante justo".
-calificación: ★★★★★ 5/5
+- **La Hidrofobicidad de la Corteza:** La masa de maíz, al freírse, forma una costra deshidratada rápidamente que repele el aceite. Si la masa tiene demasiada agua ("aguada"), el aceite penetra antes de que se forme la costra, resultando en una empanada grasosa. El punto crítico de hidratación es clave.
+- **Vitrificación (Crunch):** Añadir una pequeña cantidad de almidón de yuca o azúcar a la masa favorece la formación de un "vidrio" comestible en la superficie, aumentando el tiempo que permanece crujiente después de la fritura.
+- **Isotermia del Relleno:** El puré de papa tiene una alta capacidad calorífica. Esto significa que retiene el calor mucho tiempo después de que la corteza se ha enfriado, lo que causa la famosa "quemada de paladar" si no se deja reposar.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente        | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|--------------------|-----------------|--------------|-----------|------------|----------------------|
-| Harina de maíz     | 350             | 7            | 73        | 1          | Fibra, Magnesio      |
-| Carne molida       | 242             | 27           | 0         | 14         | Hierro, Zinc         |
-| Papa               | 70              | 1            | 17        | 0          | Vitamina C           |
+- **Densidad Calórica:** Alta. Una empanada promedio absorbe entre 8-12g de aceite.
+- **Carbohidrato doble:** Maíz + Papa = Alta carga glucémica. Se recomienda consumo moderado.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
+
+- **El "Monumento" Nacional:** La empanada en Colombia es un igualador social. Se come parada, con la mano y en servilleta.
+- **La Iglesia y la Empanada:** Las "empanadas de iglesia" son famosas por ser pequeñas, muy crocantes y usadas para recolectar fondos comunitarios.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El ají no es opcional, es obligatorio. Una empanada sin ají es un cuerpo sin alma."
+>
+> "Echele un chorrito de limón a la masa antes de amasar. El ácido corta la grasa y la deja más tostadita."
 
 ---
 

@@ -102,32 +102,35 @@ El hogao es la salsa base por excelencia de la cocina colombiana. Se usa como ac
 
 ---
 
-## 🤓 Sabiduría Colectiva y Consejos
+## Análisis Detallado y Sabiduría Colectiva
 
-- "El secreto es cocinarlo a fuego lento para que se concentren los sabores."
-- "No puede faltar en un buen desayuno con arepa."
-- "Hazlo en cantidad y guárdalo para la semana."
+### 📊 Perfil Sensorial Estandarizado
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami Vegetal        | 5/5              | Glutamato libre (Tomate) + Azufre suave (Cebolla cocida). |
+| **Aroma**| Sofrito Ancestral    | 5/5              | Compuestos azufrados volátiles transformados por calor. |
+| **Textura**| Pasta Rustica        | 4/5              | Pectina del tomate degradada pero no licuada. |
+| **Vista** | Rojo Ladrillo        | 5/5              | Licopeno concentrado y oxidado. |
 
-### Categorización Sensorial y de Uso
+### ⚗️ Química y Física Culinaria
 
-- **Perfil de sabor:** Rico en nutrientes activos: Linalool, Lycopene, Kaempferol, Lipids, Allicin
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
+- **Sinergia Umami:** El tomate maduro es rico en ácido glutámico natural. Al cocinarse lentamente con la cebolla (rica en compuestos de azufre) y la sal, se crea una explosión de sabor umami que potencia cualquier carne o carbohidrato al que se añada.
+- **Biodisponibilidad del Licopeno:** A diferencia del tomate crudo, el licopeno (antioxidante rojo) se absorbe mucho mejor cuando se cocina con grasas (aceite). El hogao es, químicamente, la forma más saludable de comer tomate.
+- **Reducción de Acidez:** La cocción lenta evapora los ácidos volátiles del tomate y carameliza parcialmente los azúcares naturales, suavizando el sabor sin necesidad de añadir azúcar.
 
-### Perfil Nutricional (Estimado)
+### 🍎 Nutrición y Metabolismo
 
-- **Calorías:** 357 kcal (Total receta)
-- **Proteína:** 4.7g
-- **Grasas:** 30.9g
-- **Carbohidratos:** 20.0g
+- **Antioxidante Potente:** Alta concentración de licopeno y quercetina (cebolla).
+- **Base Saludable:** A pesar de tener aceite, es mayoritariamente vegetales. Bajo en calorías por porción.
 
-### Sabiduría Colectiva
+### 🕰️ Contexto Socio-Cultural
 
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
+- **El "ADN" del Sabor Colombiano:** No existe bandeja paisa, sancocho o patacón sin hogao. Es la salsa madre de Colombia.
+- **Hogao vs Guiso:** En algunas regiones se diferencian; el hogao suele ser más confitado y aceitoso (para conservar), mientras que el guiso puede ser más caldudo.
 
-### Fuentes
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-- [Pendiente]
+> "No le ponga agua. El tomate tiene que soltar su propio jugo y secarse ahí mismo. Si le pone agua, queda salsa de tomate, no hogao."
+>
+> "La cebolla tiene que ir primero. Si echa el tomate y la cebolla al tiempo, la cebolla queda cruda y el tomate se deshace."

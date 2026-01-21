@@ -102,32 +102,35 @@ El ají es el condimento estrella de la comida callejera y casera en Colombia. E
 
 ---
 
-## 🤓 Sabiduría Colectiva y Consejos
+## Análisis Detallado y Sabiduría Colectiva
 
-- "El secreto es picar todo muy fino y dejar reposar antes de servir."
-- "Hazlo en cantidad y guárdalo en frasco para la semana."
-- "Perfecto para acompañar empanadas, papas rellenas o carnes a la parrilla."
+### 📊 Perfil Sensorial Estandarizado
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ácido-Picante        | 5/5              | Ácido acético (Vinagre) + Capsaicina. |
+| **Aroma**| Frescura Herbal      | 5/5              | Aldehídos del cilantro fresco (Coriandrol). |
+| **Textura**| Líquido con Tropezones| 3/5             | Suspensión de sólidos en fase acuosa ácida. |
+| **Vista** | Mosaico Verde/Rojo   | 5/5              | Contraste de colores vibrantes conservados por el ácido. |
 
-### Categorización Sensorial y de Uso
+### ⚗️ Química y Física Culinaria
 
-- **Perfil de sabor:** Rico en nutrientes activos: Hesperidin, Linalool, Lycopene, Kaempferol, Citric Acid, Creatine
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
+- **Extracción de Capsaicina:** La capsaicina (el compuesto picante) es liposoluble y soluble en alcohol, pero poco soluble en agua. Sin embargo, en un medio ácido (vinagre/limón), se mantiene estable. El picor se percibe más "punzante" debido a la activación simultánea de receptores de ácido y dolor en la lengua.
+- **Desnaturalización Enzimática:** El ácido del vinagre y el limón "cocina" parcialmente la cebolla y el cilantro, desnaturalizando las enzimas oxidativas. Esto permite que el ají se mantenga verde y brillante por días en la nevera, a diferencia de si estuviera solo en agua.
+- **Osmosis:** La sal y el ácido extraen el agua de los vegetales (cebolla, tomate), creando su propio "caldo" lleno de sabor vegetal.
 
-### Perfil Nutricional (Estimado)
+### 🍎 Nutrición y Metabolismo
 
-- **Calorías:** 1060 kcal (Total receta)
-- **Proteína:** 123.2g
-- **Grasas:** 50.8g
-- **Carbohidratos:** 15.8g
+- **Termogénico:** La capsaicina acelera temporalmente el metabolismo.
+- **Vitamina C:** El ají fresco y el limón son fuentes potentes de Vitamina C, aunque se oxida con el tiempo.
 
-### Sabiduría Colectiva
+### 🕰️ Contexto Socio-Cultural
 
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
+- **El "Valiente":** En las mesas colombianas siempre hay un frasco de ají. Es el reto y el placer de cada comida.
+- **Ají de Empanada:** Debe ser equilibrado; si pica demasiado, mata el sabor de la empanada.
 
-### Fuentes
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-- [Pendiente]
+> "Píquele las pepas si es bravo. Si le quita las venas y las pepas, queda solo oliendo a ají pero no pica."
+>
+> "El cilantro se echa de último y no se deja fermentar tanto como la cebolla o se pone negro."

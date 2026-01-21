@@ -98,32 +98,35 @@ El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana
 
 ---
 
-## 🤓 Sabiduría Colectiva y Consejos
+## Análisis Detallado y Sabiduría Colectiva
 
-- "El secreto es dejar fermentar el tiempo suficiente para lograr el sabor auténtico."
-- "Sírvelo frío y acompaña con arepas o yuca."
-- "Perfecto para dar cremosidad y acidez a platos costeños."
+### 📊 Perfil Sensorial Estandarizado
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ácido Láctico        | 5/5              | Conversión de lactosa en ácido láctico por bacterias. |
+| **Aroma**| Leche Agria Fresca   | 4/5              | Diacetilo (mantequilla) y notas fermentadas. |
+| **Textura**| Untuosa/Sedosa       | 5/5              | Alta concentración de grasa butírica emulsificada. |
+| **Vista** | Blanco Marfil        | 5/5              | Opacidad total debido a los glóbulos de grasa. |
 
-### Categorización Sensorial y de Uso
+### ⚗️ Química y Física Culinaria
 
-- **Perfil de sabor:** Rico en nutrientes activos: Casein, Hesperidin, Milk Fat, Citric Acid
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
+- **Fermentación Espontánea (Wild Fermentation):** Tradicionalmente, el suero se hace en "calabazos" (totumos secos) que ya tienen una colonia establecida de bacterias lácticas y levaduras salvajes. En casa, usamos limón/vinagre para acelerar la acidificación y cuajado (coagulación ácida de la caseína), simulando el efecto bacteriano.
+- **Separación de Fases (Sinéresis):** Al bajar el pH (hacia 4.6), las proteínas caseínas pierden su carga eléctrica y se agrupan, atrapando la grasa. El líquido transparente que sobra es el "suero" verdadero (whey), que se descarta para dejar la crema densa que llamamos "Suero Costeño" (técnicamente, una *creme fraiche* ácida).
+- **Grasa = Sabor:** A diferencia del kumis o yogur, el suero costeño se hace con leche rica en grasa o añadiendo crema, lo que le da esa textura de mantequilla suave.
 
-### Perfil Nutricional (Estimado)
+### 🍎 Nutrición y Metabolismo
 
-- **Calorías:** 928 kcal (Total receta)
-- **Proteína:** ~0g
-- **Grasas:** ~0g
-- **Carbohidratos:** ~0g
+- **Probióticos:** Si se hace fermentado naturalmente (sin vinagre, solo tiempo), es rico en probióticos vivos.
+- **Grasa Saturada:** Consumo moderado debido a su alto contenido lipídico.
 
-### Sabiduría Colectiva
+### 🕰️ Contexto Socio-Cultural
 
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
+- **Identidad Caribe:** El costeño no come seco; todo necesita "moje". El suero es el "moje" universal.
+- **Origen Árabe:** Se cree que deriva del *Labneh* traído por inmigrantes sirio-libaneses, adaptado al clima tropical.
 
-### Fuentes
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-- [Pendiente]
+> "No bote el 'agua' que suelta al principio. Bátalo con eso para que quede suave. Si lo seca mucho, queda queso crema, no suero."
+>
+> "Hágalo en vasija de barro o vidrio, nunca en metal porque el ácido le saca sabor a lata."
