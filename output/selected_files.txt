@@ -1,5 +1,0 @@
-dishes/colombian/amazonia/aji_negro/aji_negro.md
-dishes/colombian/amazonia/casabe/casabe.md
-dishes/colombian/amazonia/farina/farina.md
-dishes/colombian/amazonia/inchicapi/inchicapi.md
-dishes/colombian/amazonia/juanes_de_yuca/juanes_de_yuca.md

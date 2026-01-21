@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ai-chef-v2';
+const CACHE_NAME = 'gos-v2';
 const BASE_PATH = '/AI-Chef';
 const urlsToCache = [
   `${BASE_PATH}/`,

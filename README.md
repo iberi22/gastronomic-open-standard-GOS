@@ -1,11 +1,11 @@
-# AI Chef - World Recipe Collection
+# Gastronomic Open Standard (GOS)
 
 [![build](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml/badge.svg)](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/Anduin2017/HowToCook)](./LICENSE)
 
 [Leer en Español](./README.es.md)
 
-This repository is a collection of world recipes in a scientifically structured format to properly catalog recipes and ingredients. Our goal is to create the most complete open database available for this data.
+**Gastronomic Open Standard (GOS)** is an open-source initiative to establish a rigorous, scientifically structured format for documenting global culinary knowledge. This repository contains recipes and ingredients cataloged with precise metadata, creating the most comprehensive open database of culinary data available.
 
 This project is an evolution of [HowToCook](https://github.com/Anduin2017/HowToCook), expanding into global cuisines with a focus on structured data.
 
