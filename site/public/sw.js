@@ -1,5 +1,5 @@
 const CACHE_NAME = 'gos-v2';
-const BASE_PATH = '/AI-Chef';
+const BASE_PATH = '/gastronomic-open-standard-GOS';
 const urlsToCache = [
   `${BASE_PATH}/`,
   `${BASE_PATH}/index.html`,

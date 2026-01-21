@@ -16,7 +16,7 @@ const tipsPublicDir = path.resolve(__dirname, '../public/tips');
 const dishesDir = path.join(repoRoot, 'dishes');
 const tipsDir = path.join(repoRoot, 'tips');
 const placeholderPath = path.join(repoRoot, 'dishes/colombian/nacionales/img/chorizo-2314640_640.jpg');
-const baseUrl = '/AI-Chef';
+const baseUrl = '/gastronomic-open-standard-GOS';
 
 // Clean existing directories
 async function cleanDirs() {

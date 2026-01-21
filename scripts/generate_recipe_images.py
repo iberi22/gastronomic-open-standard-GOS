@@ -18,7 +18,7 @@ def get_image_prompt(recipe_path):
 
 if __name__ == "__main__":
     # Test with Curry Crab
-    target = r"e:\scripts-python\AI-Chef\dishes\china\mariscos\咖喱炒蟹\咖喱炒蟹.md"
+    target = r"e:\scripts-python\gastronomic-open-standard-GOS\dishes\china\mariscos\咖喱炒蟹\咖喱炒蟹.md"
     if os.path.exists(target):
         print(get_image_prompt(target))
     else:

@@ -1,4 +1,4 @@
-# 📡 AI-Chef Recipe API
+# 📡 gastronomic-open-standard-GOS Recipe API
 
 A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically generated from markdown files.
 
@@ -6,13 +6,13 @@ A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically
 
 ```bash
 # Get all recipes
-curl https://iberi22.github.io/AI-Chef/api/all.json
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/all.json
 
 # Get Colombian recipes
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json
 
 # Get Chinese recipes
-curl https://iberi22.github.io/AI-Chef/api/chinese/china.json
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.json
 ```
 
 ## 📊 Statistics
@@ -91,7 +91,7 @@ curl https://iberi22.github.io/AI-Chef/api/chinese/china.json
 ### JavaScript / Fetch API
 
 ```javascript
-fetch('https://iberi22.github.io/AI-Chef/api/spanish/colombia.json')
+fetch('https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json')
   .then(res => res.json())
   .then(data => {
     console.log(`Found ${data.count} Colombian recipes`);
@@ -107,7 +107,7 @@ fetch('https://iberi22.github.io/AI-Chef/api/spanish/colombia.json')
 import requests
 
 response = requests.get(
-    'https://iberi22.github.io/AI-Chef/api/chinese/china.json'
+    'https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.json'
 )
 data = response.json()
 
@@ -120,13 +120,13 @@ for recipe in data['recipes']:
 
 ```bash
 # Get all languages
-curl https://iberi22.github.io/AI-Chef/api/index.json | jq '.languages'
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/index.json | jq '.languages'
 
 # Get recipe titles from Colombia
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json | jq '.recipes[].title'
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json | jq '.recipes[].title'
 
 # Filter recipes by difficulty
-curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
+curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
 ```
 
 ## 🔧 How It Works
@@ -151,9 +151,9 @@ curl https://iberi22.github.io/AI-Chef/api/spanish/colombia.json | jq '.recipes[
 
 ## 🔗 Links
 
-- **API Documentation**: <https://iberi22.github.io/AI-Chef/api-docs>
-- **Main Site**: <https://iberi22.github.io/AI-Chef/>
-- **GitHub Repository**: <https://github.com/iberi22/AI-Chef>
+- **API Documentation**: <https://iberi22.github.io/gastronomic-open-standard-GOS/api-docs>
+- **Main Site**: <https://iberi22.github.io/gastronomic-open-standard-GOS/>
+- **GitHub Repository**: <https://github.com/iberi22/gastronomic-open-standard-GOS>
 
 ## 📄 License
 

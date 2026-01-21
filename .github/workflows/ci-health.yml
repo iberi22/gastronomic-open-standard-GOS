@@ -94,7 +94,7 @@ jobs:
                 # Public repos: Monitor all repos
                 $shouldRun = "true"
                 $repoList = @"
-          ["iberi22/Git-Core-Protocol","iberi22/software-factory","iberi22/domus-otec","iberi22/less-colegio","iberi22/synapse-protocol","iberi22/gara-g","iberi22/AI-Chef","iberi22/contratafacil","iberi22/bestof-opensorce","iberi22/obs-studio-agent","iberi22/pocket_cerebro"]
+          ["iberi22/Git-Core-Protocol","iberi22/software-factory","iberi22/domus-otec","iberi22/less-colegio","iberi22/synapse-protocol","iberi22/gara-g","iberi22/gastronomic-open-standard-GOS","iberi22/contratafacil","iberi22/bestof-opensorce","iberi22/obs-studio-agent","iberi22/pocket_cerebro"]
           "@
                 Write-Host "✅ Aggressive mode: Monitoring 11 repos"
               }

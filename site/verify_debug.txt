@@ -1,4 +1,4 @@
-­ƒöì Verifying Scientific Protocol Compliance in: E:\scripts-python\AI-Chef\dishes
+­ƒöì Verifying Scientific Protocol Compliance in: E:\scripts-python\gastronomic-open-standard-GOS\dishes
 Ô£à [PASS] ajiaco_santafere├▒o.md
 Ô£à [PASS] bandeja_paisa.md
 Ô£à [PASS] lechona_tolimense.md

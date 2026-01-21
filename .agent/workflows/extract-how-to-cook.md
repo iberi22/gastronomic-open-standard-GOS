@@ -1,5 +1,5 @@
 ---
-description: Automatically sync recipes from Anduin2017/HowToCook and integrate them into the AI-Chef repository.
+description: Automatically sync recipes from Anduin2017/HowToCook and integrate them into the gastronomic-open-standard-GOS repository.
 ---
 
 # Sync HowToCook Recipes

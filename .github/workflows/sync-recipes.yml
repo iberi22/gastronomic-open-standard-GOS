@@ -13,7 +13,7 @@ jobs:
   sync_recipes:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout AI-Chef
+      - name: Checkout gastronomic-open-standard-GOS
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -38,5 +38,5 @@ jobs:
           body: |
             Automatic sync of new recipes from [Anduin2017/HowToCook](https://github.com/Anduin2017/HowToCook).
 
-            This PR adds new recipes found in the source repository that do not currently exist in AI-Chef.
+            This PR adds new recipes found in the source repository that do not currently exist in gastronomic-open-standard-GOS.
           delete-branch: true

@@ -2,7 +2,7 @@
   "name": "AI Chef",
   "short_name": "AI Chef",
   "description": "Recetas de cocina asistidas por IA",
-  "start_url": "/AI-Chef/",
+  "start_url": "/gastronomic-open-standard-GOS/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4f46e5",
@@ -23,7 +23,7 @@
       "name": "Favorites",
       "short_name": "Favorites",
       "description": "View your favorite recipes",
-      "url": "/AI-Chef/favorites",
+      "url": "/gastronomic-open-standard-GOS/favorites",
       "icons": [{ "src": "icon-192x192.png", "sizes": "192x192" }]
     }
   ]

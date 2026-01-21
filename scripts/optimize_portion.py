@@ -6,8 +6,8 @@ import yaml
 import math
 
 # Configuration
-INGREDIENTS_DIR = r"e:\scripts-python\AI-Chef\ingredients"
-RECIPES_DIR = r"e:\scripts-python\AI-Chef\dishes\colombian"
+INGREDIENTS_DIR = r"e:\scripts-python\gastronomic-open-standard-GOS\ingredients"
+RECIPES_DIR = r"e:\scripts-python\gastronomic-open-standard-GOS\dishes\colombian"
 
 INGREDIENT_DB = {}
 

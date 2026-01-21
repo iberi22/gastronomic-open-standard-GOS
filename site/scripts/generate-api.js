@@ -272,9 +272,9 @@ function generateAPI() {
 
   console.log('\n✅ API generation complete!');
   console.log(`\n📍 Access your API at:`);
-  console.log(`   https://iberi22.github.io/AI-Chef/api/index.json`);
-  console.log(`   https://iberi22.github.io/AI-Chef/api/spanish/colombia.json`);
-  console.log(`   https://iberi22.github.io/AI-Chef/api/chinese/china.json`);
+  console.log(`   https://iberi22.github.io/gastronomic-open-standard-GOS/api/index.json`);
+  console.log(`   https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json`);
+  console.log(`   https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.json`);
 }
 
 // Run

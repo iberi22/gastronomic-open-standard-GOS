@@ -3,10 +3,10 @@ import os
 import shutil
 
 # Source: Artifacts dir
-# Destination: e:\scripts-python\AI-Chef\ingredients\images
+# Destination: e:\scripts-python\gastronomic-open-standard-GOS\ingredients\images
 
 SOURCE = r"C:\Users\belal\.gemini\antigravity\brain\1ce1c452-a4d6-46c3-8175-05747cd9122d"
-DEST = r"e:\scripts-python\AI-Chef\ingredients\images"
+DEST = r"e:\scripts-python\gastronomic-open-standard-GOS\ingredients\images"
 
 files = [
     ("maiz_tierno_1765767310922.png", "maiz.jpg"),

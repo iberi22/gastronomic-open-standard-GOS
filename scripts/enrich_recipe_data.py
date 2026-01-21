@@ -215,11 +215,11 @@ def enrich_recipe(file_path):
     # print(f"Enriched {file_path} - Cal: {int(total_stats['calories'])} (Matches: {found_count})")
 
 def process_all(directory):
-    load_ingredient_db(r"e:\scripts-python\AI-Chef\ingredients")
+    load_ingredient_db(r"e:\scripts-python\gastronomic-open-standard-GOS\ingredients")
     for root, dirs, files in os.walk(directory):
         for file in files:
             if file.endswith(".md") and "README" not in file:
                  enrich_recipe(os.path.join(root, file))
 
 if __name__ == "__main__":
-    process_all(r"e:\scripts-python\AI-Chef\dishes\colombian")
+    process_all(r"e:\scripts-python\gastronomic-open-standard-GOS\dishes\colombian")

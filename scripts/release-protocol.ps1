@@ -67,7 +67,7 @@ if ($DryRun) {
     Write-Host "     - less-colegio"
     Write-Host "     - synapse-protocol"
     Write-Host "     - gara-g"
-    Write-Host "     - AI-Chef"
+    Write-Host "     - gastronomic-open-standard-GOS"
     Write-Host "     - contratafacil"
     Write-Host "     - bestof-opensorce"
     Write-Host "     - obs-studio-agent"

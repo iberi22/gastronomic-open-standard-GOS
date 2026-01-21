@@ -2,8 +2,8 @@
 import os
 import re
 
-DISHES_DIR = r"e:\scripts-python\AI-Chef\dishes"
-OUTPUT_FILE = r"e:\scripts-python\AI-Chef\docs\RECIPE_COMPLETENESS_REPORT.md"
+DISHES_DIR = r"e:\scripts-python\gastronomic-open-standard-GOS\dishes"
+OUTPUT_FILE = r"e:\scripts-python\gastronomic-open-standard-GOS\docs\RECIPE_COMPLETENESS_REPORT.md"
 
 REQUIRED_SECTIONS = [
     "Análisis Detallado y Sabiduría Colectiva",

@@ -270,7 +270,7 @@ Si encuentras:
 - Problemas con el script de traducción
 
 Por favor abre un **Issue** o **Pull Request** en:
-<https://github.com/iberi22/AI-Chef/issues>
+<https://github.com/iberi22/gastronomic-open-standard-GOS/issues>
 
 ## Recursos adicionales
 

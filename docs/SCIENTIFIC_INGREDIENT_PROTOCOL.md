@@ -1,6 +1,6 @@
 # Protocolo de Ingredientes Científicos
 
-Este documento define el estándar para la creación y enriquecimiento de "Ingredientes Científicos" en el repositorio AI-Chef.
+Este documento define el estándar para la creación y enriquecimiento de "Ingredientes Científicos" en el repositorio gastronomic-open-standard-GOS.
 
 ## Objetivos
 

@@ -1,4 +1,4 @@
-# Protocolo de Recolección de Datos Sensoriales vía Video (AI-Chef)
+# Protocolo de Recolección de Datos Sensoriales vía Video (gastronomic-open-standard-GOS)
 
 Este documento define el estándar para la creación de videos de recetas tipo "Vlog" destinados a la recolección de datos científicos y sensoriales. El objetivo es que estos videos sirvan como **fuente de verdad** para que algoritmos de IA extraigan calificaciones, texturas y perfiles de sabor validados por humanos reales.
 
@@ -15,7 +15,7 @@ Para que nuestros algoritmos puedan procesar tu video, sigue estas reglas básic
 1. **Audio Claro:** La entrevista debe tener poco ruido de fondo. Las respuestas deben ser audibles.
 2. **Plano Detalle (Macro):** Al mostrar la textura final, acerca la cámara para ver la consistencia, el humo, la jugosidad o el crujido.
 3. **Sin Música en la Entrevista:** Evita música de fondo durante la sección de preguntas y respuestas para facilitar la transcripción automática.
-4. **Etiquetado:** En la descripción del video, incluye siempre el enlace a la receta original en `AI-Chef`.
+4. **Etiquetado:** En la descripción del video, incluye siempre el enlace a la receta original en `gastronomic-open-standard-GOS`.
 
 ---
 
@@ -25,7 +25,7 @@ Para que nuestros algoritmos puedan procesar tu video, sigue estas reglas básic
 
 *Objetivo: Validar que la receta es reproducible y mostrar los hitos químicos/físicos.*
 
-- **Intro:** "Hola, hoy voy a probar la receta científica de [Nombre del Plato] de AI-Chef".
+- **Intro:** "Hola, hoy voy a probar la receta científica de [Nombre del Plato] de gastronomic-open-standard-GOS".
 - **Hitos Clave:** Muestra brevemente los puntos críticos.
     - *Ejemplo:* "Miren cómo cambia de color la cebolla al sofreír" o "Aquí la masa ya no se pega a las manos".
 - **Resultado Final:** Plano detalle del plato servido (10 segundos estáticos o movimiento lento) para análisis de visión por computador.

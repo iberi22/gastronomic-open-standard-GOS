@@ -5,8 +5,8 @@ import yaml
 from collections import Counter
 
 # Configuration
-INGREDIENTS_DIR = r"e:\scripts-python\AI-Chef\ingredients"
-DISHES_DIR = r"e:\scripts-python\AI-Chef\dishes"
+INGREDIENTS_DIR = r"e:\scripts-python\gastronomic-open-standard-GOS\ingredients"
+DISHES_DIR = r"e:\scripts-python\gastronomic-open-standard-GOS\dishes"
 
 KNOWN_INGREDIENTS = set()
 

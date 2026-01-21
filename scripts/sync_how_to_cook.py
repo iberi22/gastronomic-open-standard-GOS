@@ -65,10 +65,10 @@ def parse_markdown_recipe(file_path):
 
 def convert_to_ai_chef_format(recipe_data, category):
     """
-    Converts raw data to AI-Chef Markdown format with RICH metadata.
+    Converts raw data to gastronomic-open-standard-GOS Markdown format with RICH metadata.
     """
 
-    # Structure for AI-Chef
+    # Structure for gastronomic-open-standard-GOS
     ingredient_list = "\n".join([f"  - {i}" for i in recipe_data['ingredients']]) if recipe_data['ingredients'] else "  - Unknown"
 
     front_matter = f"""---

@@ -1,6 +1,6 @@
-# Protocolo de Estandarización Científica para Recetas (AI-Chef)
+# Protocolo de Estandarización Científica para Recetas (gastronomic-open-standard-GOS)
 
-Este protocolo define el estándar de calidad y profundidad científica que debe tener cada receta en el repositorio `AI-Chef`. El objetivo es transformar un recetario tradicional en una base de datos de conocimiento gastronómico, químico y nutricional útil para investigación, educación y análisis estadístico.
+Este protocolo define el estándar de calidad y profundidad científica que debe tener cada receta en el repositorio `gastronomic-open-standard-GOS`. El objetivo es transformar un recetario tradicional en una base de datos de conocimiento gastronómico, químico y nutricional útil para investigación, educación y análisis estadístico.
 
 ## 1. Estructura de la Sección: "Análisis Detallado y Sabiduría Colectiva"
 

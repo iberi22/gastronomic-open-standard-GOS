@@ -42,7 +42,7 @@ function findImage(recipe: any) {
      const lastSlashIndex = recipe.id.lastIndexOf('/');
      const dir = lastSlashIndex !== -1 ? recipe.id.substring(0, lastSlashIndex) : '';
 
-     // Final path: /AI-Chef/dishes/{dir}/{image_filename}
+     // Final path: /gastronomic-open-standard-GOS/dishes/{dir}/{image_filename}
      // Note: This relies on the fact we copied 'dishes' to 'public/dishes'
      return `${import.meta.env.BASE_URL}/dishes/${dir}/${cleanPath}`.replace(/\/+/g, '/'); // ensure no double slashes
   }
