@@ -1,20 +1,48 @@
 ---
 title: Arequipe
 images:
-- https://www.misrecetas.com/fotos/photo/main/1368/arequipe_casero.jpg
-- https://www.recetasgratis.net/co/images/4/5/7/arequipe_casero_colombiano_23754_600.jpg
+  - url: "https://im.ge/i/arequipe-1.AbC444"
+    description: "Arequipe casero espeso"
 sources:
-- https://www.mycolombianrecipes.com/es/arequipe-dulce-de-leche-colombiano/
-- https://www.recetasgratis.net/receta-de-arequipe-casero-colombiano-23754.html
+  - name: "My Colombian Recipes"
+    url: "https://www.mycolombianrecipes.com/es/arequipe-dulce-de-leche-colombiano/"
+  - name: "Recetas Gratis"
+    url: "https://www.recetasgratis.net/receta-de-arequipe-casero-colombiano-23754.html"
 license: MIT
 yaml_validation: https://yaml-online-parser.appspot.com/
-description: '* 4 litros de leche entera'
+categories:
+  - "Postre"
+  - "Dulce"
+  - "Tradicional"
+sensory:
+  flavor:
+    - "Caramelo"
+    - "Lácteo"
+  texture:
+    - "Untable"
+    - "Espejo"
+  aroma:
+    - "Leche asada"
+  presentation: "En frasco de vidrio o servido con obleas, queso o brevas."
+main_ingredients:
+  - "Leche entera"
+  - "Azúcar"
+  - "Bicarbonato"
+difficulty: "Media"
+prep_time: "10 minutos"
+cook_time: "180 minutos"
+servings: 20
 nutrition:
-  calories: 6240
+  calories: 300
   macros:
-    protein_g: 128.0
-    fat_g: 132.0
-    carbs_g: 1172.0
+    protein_g: 6
+    fat_g: 6
+    carbs_g: 58
+tags:
+  - "Dulce"
+  - "Valle"
+  - "Antioquia"
+description: '* 4 litros de leche entera'
 ---
 
 ## Ingredientes
@@ -34,26 +62,34 @@ nutrition:
 6. Para probar el punto, puedes poner un poco en un plato frío; si no se esparce, está listo.
 7. Retira del fuego, quita la astilla de canela y deja enfriar. Se espesará más al enfriarse.
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Perfil de sabor:** Rico en nutrientes activos: Casein, Sucrose
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Caramelo Lácteo      | 5/5              | Reacción de Maillard intensa (Lactosa + Proteína). |
+| **Aroma**| Dulce de Leche       | 5/5              | Furaneol y maltol generados por el calor. |
+| **Textura**| Viscosa / Untable    | 5/5              | Evaporación del 60-70% del agua de la leche. |
+| **Vista** | Café Cobrizo         | 5/5              | Pigmentos melanoidinas. |
 
-### Perfil Nutricional (Estimado)
+### ⚗️ Química y Física Culinaria
 
-- **Calorías:** 6240 kcal (Total receta)
-- **Proteína:** 128.0g
-- **Grasas:** 132.0g
-- **Carbohidratos:** 1172.0g
+- **El Rol del Bicarbonato (pH):** Esta es la clave científica. La reacción de Maillard (oscurecimiento no enzimático) ocurre mucho más rápido en un medio alcalino. El bicarbonato eleva el pH de la leche, promoviendo el color dorado intenso y el sabor a nuez/caramelo. Sin bicarbonato, tendrías una leche condensada pálida y tardaría horas en coger color. Además, el bicarbonato evita que las proteínas (caseínas) se coagulen por el calor y la acidez, previniendo una textura grumosa.
+- **Punto de Bola:** Es el test físico de viscosidad. Al dejar caer una gota en agua fría, si forma una bola blanda que no se disuelve, ha alcanzado la concentración de sólidos necesaria (~68-70 Brix).
 
-### Sabiduría Colectiva
+### 🍎 Nutrición y Metabolismo
 
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
+- **Concentrado Energético:** Es leche deshidratada con azúcar. Muy calórico, rico en calcio pero también en azúcares simples.
+- **Digestibilidad:** La cocción prolongada desnaturaliza las proteínas, haciéndolas a veces más fáciles de digerir, aunque la lactosa sigue presente.
 
-### Fuentes
+### 🕰️ Contexto Socio-Cultural
 
-- [Pendiente]
+- **Patrimonio Latinoamericano:** Compartido con Argentina (Dulce de Leche) y México (Cajeta), pero el Arequipe colombiano (especialmente el del Valle y Antioquia) tiende a ser más fluido y menos "chiclosos".
+- **Obleas:** Su compañero inseparable en las calles y parques.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "Ponga unas canicas de vidrio (limpias) en la olla. El movimiento de las canicas al hervir evita que la leche se pegue al fondo si se descuida un segundo."
+>
+> "No raspe la olla si se le pegó un poquito. Si raspa el 'quemadito', le amarga todo el arequipe."
