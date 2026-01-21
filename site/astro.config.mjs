@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://iberi22.github.io',
-  base: '/AI-Chef',
+  base: '/gastronomic-open-standard-GOS',
   output: 'static',
   build: {
     assets: 'assets'
