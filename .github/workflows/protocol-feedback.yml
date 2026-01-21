@@ -118,6 +118,9 @@ jobs:
             LABELS="$LABELS,priority-${{ github.event.inputs.priority }}"
           fi
           
+          # Add 'feedback' label (exists in GitCore repo)
+          LABELS="$LABELS,feedback"
+          
           cat > issue-body.md << 'EOF'
           ## 🔍 Context
           
@@ -149,7 +152,11 @@ jobs:
             --repo iberi22/GitCore \
             --title "${{ github.event.inputs.title }}" \
             --body-file issue-body.md \
-            --label "$LABELS,from-${{ github.repository_owner }}"
+            --label "$LABELS" || \
+          gh issue create \
+            --repo iberi22/GitCore \
+            --title "${{ github.event.inputs.title }}" \
+            --body-file issue-body.md
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_PROTOCOL || secrets.GITHUB_TOKEN }}
 
