@@ -112,58 +112,45 @@ El Pirarucú (*Arapaima gigas*) es el "rey del Amazonas", un pez prehistórico q
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
 ### 📊 Perfil Sensorial Estandarizado
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Umami, Cárnico       | 4/5              | Alto inosinato (característico de peces grandes) y aminoácidos libres. |
-| **Aroma**| Frito, Río Limpio    | 3/5              | Aldehídos volátiles de la fritura; bajo olor a "geosmina" (barro) comparado con bagres. |
-| **Textura**| Firme, Laminar       | 5/5              | Miotomas (músculos) grandes y gruesos separados por colágeno que se gelatiniza. |
-| **Boca** | Jugoso               | 4/5              | Retención de humedad interna gracias a la costra del apanado. |
+| **Sabor**| Umami Cárnico        | 5/5              | Elevada concentración de ácido glutámico y creatina. |
+| **Aroma**| Río Limpio / Tostado | 4/5              | Ausencia de geosmina; aldehídos de Maillard. |
+| **Textura**| Firme-Laminar      | 5/5              | Miotomas gigantes con colágeno tipo I predominante. |
+| **Vista** | Blanco Marfil       | 4/5              | Opalescencia característica al corte. |
 
 ### ⚗️ Química y Física Culinaria
 
-- **Desnaturalización Proteica:** La carne del pirarucú es rica en proteínas miofibrilares. Al freírse, estas proteínas se coagulan rápidamente, contrayendo las fibras. Sin embargo, debido al gran tamaño de las fibras musculares de esta especie, la carne mantiene una estructura firme similar a la del pollo o cerdo, en lugar de desmoronarse como pescados más pequeños.
-- **Barrera de Hidratación (Apanado):** La harina de yuca o maíz crea una barrera física. Al entrar en contacto con el aceite a >160°C, el agua del apanado se evapora explosivamente, creando una estructura porosa y rígida (costra) que limita la penetración del aceite hacia la carne y retiene los jugos internos del pescado.
-- **Reacción de Maillard:** Ocurre en la superficie harinada, generando compuestos de color pardo y sabores a nuez/tostado, potenciando el perfil *umami* del pescado.
+- **Biología de la Firmeza (Miotomas Gigantes):** El pirarucú (*Arapaima gigas*) posee bloques musculares (miotomas) sumamente grandes. Al cocinarlo, el tejido conectivo se relaja pero no se disuelve completamente como en otros peces, resultando en una textura que se desprenden en "lajas" o láminas gruesas.
+- **La Piel como Chicharrón (Termofractura):** La piel del pirarucú es rica en **colágeno de alta densidad**. Al freírse a $180^\circ\text{C}$, el agua atrapada en el colágeno se expande, inflando las fibras y creando una textura similar al chicharrón de cerdo, sumamente crocante y sabrosa.
+- **Osmosis del Marinado:** El lomo del pirarucú es denso. El marinado con limón mandarina debe ser corto (15-20 min) para evitar que el ácido desnaturalice excesivamente las capas externas (cocción química), lo que comprometería la jugosidad final durante la fritura.
+- **Bacalhau da Amazônia:** La técnica de salarlo y secarlo (similar al bacalao europeo) es una adaptación mestiza para la conservación a largo plazo en la selva, lo que altera permanentemente la estructura proteica del pez.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Calorías Totales:** ~415 kcal/porción (varía según absorción de aceite).
-- **Proteína de Alto Valor:** Aporta ~36g de proteína por porción, siendo una excelente fuente para la reparación muscular.
-- **Perfil Lipídico:** El pirarucú es un pescado magro en su estado natural (aprox. 1-2% grasa), pero la fritura añade grasas vegetales.
-- **Micronutrientes:** Rico en Fósforo y Selenio. Aunque es de agua dulce, aporta ciertos ácidos grasos Omega-3, aunque en menor cantidad que peces marinos de aguas frías.
-- **Digestibilidad:** Alta, aunque la fritura puede retardar el vaciado gástrico.
+- **Proteína Densiva:** Es uno de los pescados con mayor densidad proteica por gramo, superando al salmón y aportando ~38g por porción.
+- **Perfil Lipídico Magro:** En estado fresco es bajísimo en grasa, lo que lo hace un vehículo ideal para absorber grasas saludables añadidas.
+- **Micronutrientes:** Rico en Fósforo y Selenio, fundamentales para la salud neurológica.
 
-### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
+### 🕰️ Contexto Socio-Cultural
 
-- **El "Paiche" o "Pirarucú":** Venerado por los indígenas (Tikunas, Yaguas) como una deidad fluvial. Su lengua ósea se usa tradicionalmente como rallador (para guaraná o yuca).
-- **Gastronomía de Frontera:** Este plato es común en la "Triple Frontera" (Colombia, Brasil, Perú). En Brasil se conoce como "Bacalhau da Amazônia" cuando se sala y seca.
-- **Sostenibilidad:** Debido a la sobrepesca histórica, el consumo responsable promueve la cría en estanques o el respeto estricto de las tallas mínimas (vedas). Consumirlo apoya a las comunidades que han transicionado a la acuicultura sostenible.
+- **El Guardián del Río:** Su pesca está regulada por ciclos de marea y vedas indígenas (Tikunas, Yaguas). Capturar un pirarucú grande es un rito de paso comunitario.
+- **Usos Ancestrales:** Su lengua ósea se usa tradicionalmente como rallador para guaraná o yuca.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *FAO (2022).* "Pirarucu - Native Species of the Amazon".
-2. *TBCA (Tabla Brasileña de Composición de Alimentos).* "Fish, Pirarucu, fresh vs salted".
-3. *Murrieta, R. (2001).* "Food consumption and subsistence in three Caboclo populations on Marajó Island, Amazonia".
-
-### Sabores y Consejos de Restaurantes Emblemáticos
-
-- **Restaurante Tierras Amazónicas (Leticia):** Famoso por servirlo en "chicharrón" con una salsa de copoazú agridulce. Recomiendan no sobrecocinarlo para que no se ponga "cauchudo" (duro).
-- **Mercado de Puerto Nariño:** Las cocineras locales sugieren usar siempre limón criollo y dejar marinar bajo hoja de plátano para concentrar aromas.
-
-#### Consejos de la comunidad y comensales
-
-1. **Cuidado con la Sal:** Si usas pirarucú que fue previamente salado (seco), desálalo en agua por 24 horas cambiando el agua varias veces, o quedará incomible.
-2. **La Piel:** "Si te dan la opción, pide con piel. Es lo más rico si está bien tostada".
-3. **Acompañante:** "Nada mejor que mojar el pedazo de pescado en tucupí (salsa negra de yuca brava) con ají".
+> "Al pirarucú no se le quita la piel para freírlo. La piel es el 'cuero' que guarda el jugo. Si se la quita, el pescado le queda seco como palo." — *Pescador de Leticia.*
+>
+> "La fariña con la que se empana debe ser la 'amarillita' (fermentada), para que el dorado sea más bonito y sepa a monte."
 
 ---
 
-> **Fuentes consultadas:**
->
-> - [Gastronomía de Colombia - Pirarucú](https://colombia.gastronomia.com/)
-> - [Tabla Nutricional TBCA Brasil](https://tbca.net.br/)
-> - [Reseñas de viajeros en TripAdvisor - Leticia](https://www.tripadvisor.com/)
+## Fuentes consultadas y enlaces
+
+- [Receta tradicional de pirarucú frito - Tierras Amazónicas](https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu)
+- [Tabla Brasileña de Composición de Alimentos (TBCA)](https://tbca.net.br/)
+- [Sostenibilidad del Paiche en la Amazonía - FAO](https://www.fao.org/3/i2153e/i2153e.pdf)

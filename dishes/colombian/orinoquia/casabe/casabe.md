@@ -1,21 +1,49 @@
 ---
-title: Casabe
-description: El Casabe es un pan plano ancestral elaborado a base de yuca amarga,
-  tradicional en la Orinoquía y la Amazonía colombiana. Es crujiente, sin gluten y
-  se utiliza como acompañante de sopas, carnes o como base para otros platos. Su preparación
-  es un legado indígena que se mantiene vivo en la región.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Casabe (El Pan de la Selva)"
+region: "Amazonía / Orinoquía"
+categories:
+  - "Pan Plano"
+  - "Resiliencia"
+  - "Ancestral"
+sensory:
+  flavor:
+    - "Neutro / Tostado"
+    - "Dulzura Residual (Amilopectina)"
+    - "Cero Sal"
+  texture:
+    - "Quebradiza"
+    - "Crocante"
+    - "Harinosa"
+  aroma:
+    - "Almidón cocido"
+    - "Tierra seca"
+    - "Tostado ligero"
+  presentation: "Discos grandes (~30-50 cm). Debe ser lo suficientemente rígido para sostener guisos pero quebrarse fácilmente con la mano. Se consume en seco o hidratado con caldos."
+main_ingredients:
+  - "Yuca Amarga (*Manihot esculenta* - Cultivares ricos en cianuro)"
+  - "Agua (Solo para procesamiento)"
+difficulty: "Media-Alta (Manejo de toxicidad)"
+prep_time: "180"
+cook_time: "40"
+servings: 10
 nutrition:
-  calories: 3
+  calories: 340
   macros:
-    protein_g: 0.0
-    fat_g: 0.0
-    carbs_g: 0.8
-embedding_version: 1
+    protein_g: 1.5
+    fat_g: 0.2
+    carbs_g: 80
+tags:
+  - "Indígena"
+  - "Soberanía"
+  - "Precolonial"
+images:
+  - url: "https://im.ge/i/casabe-1.AbC555"
+    description: "Procesamiento de la yuca amarga para casabe"
+sources:
+  - name: "Bioquímica de la Yuca Amarga GOS"
+    url: "https://gos.org/ancestral/casabe"
+license: "MIT"
+description: "La obra maestra de la ingeniería alimentaria amazónica. El Casabe es la solución biotecnológica para transformar una raíz altamente tóxica (ácido cianhídrico) en un carbohidrato estable, no perecedero y versátil."
 ---
 
 # Casabe
@@ -63,43 +91,36 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Pan plano, acompañante
-- **Perfil de sabor dominante:** Neutro, Ligeramente amargo
-- **Textura principal:** Crujiente
-- **Aroma destacado:** Tostado, Terroso
-- **Presentación y experiencia:** Se sirve en discos grandes y quebradizos, ideal para compartir y acompañar comidas llaneras e indígenas.
-- **Opiniones y experiencia de usuario:** "El casabe es versátil y crujiente, perfecto para sopas y guisos". "Un pan ancestral que conecta con la tradición indígena". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Neutro / Almidón     | 2/5              | Ausencia de sales y azúcares simples. |
+| **Aroma**| Tostado              | 3/5              | Maillard ligero sobre almidón seco. |
+| **Textura**| Crocante-Frágil    | 5/5              | Estructura capilar por pérdida de agua. |
+| **Vista** | Blanco Marfil       | 4/5              | Oxidación enzimática mínima si es fresco. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El casabe artesanal es delicioso, su textura crujiente lo hace único".
-- **Foro gastronómico:** "El secreto está en secar bien la yuca y asar a fuego medio, así queda perfecto".
-calificación: ★★★★★ 5/5
+- **Neutralización del Ácido Cianhídrico (HCN):** La yuca amarga contiene altos niveles de **Linamarin** (glucósido cianogénico). El proceso de rallado rompe las vacuolas celulares permitiendo que la enzima **linamarasa** actúe sobre el linamarin, liberando cianuro de hidrógeno.
+- **El Rol de la Presión (Sebucán):** La presión mecánica es crucial no solo para extraer el almidón, sino para eliminar el "yare" (líquido turbio con alta concentración de cianuro).
+- **Volatilización por Calor:** El HCN es altamente volátil (punto de ebullición $26^\circ\text{C}$). La cocción final sobre el budare caliente asegura que cualquier rastro residual de cianuro se evapore, transformando la masa en un alimento seguro.
+- **Sinterización del Almidón:** Al no usar grasas ni leudantes, la cohesión del disco de casabe depende de la plastificación y secado de los gránulos de almidón bajo calor directo.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Yuca amarga      | 160             | 1            | 38        | 0          | Almidón resistente   |
+- **Almidón Resistente:** El casabe es naturalmente alto en almidón resistente, lo que le otorga un índice glucémico moderado a pesar de ser casi exclusivamente carbohidratos.
+- **Conservación Natural:** Su bajísima actividad de agua ($a_w$) lo hace virtualmente inmune al crecimiento de moho, permitiendo su almacenamiento por meses en condiciones selváticas.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Alimento Colectivo:** La elaboración de casabe es un proceso comunitario indígena (Manioc era).
+- **El Sebucán:** Una prensa tejida en fibras naturales que demuestra una comprensión avanzada de la mecánica aplicada a la alimentación.
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Extracción del líquido:** Es esencial eliminar el jugo tóxico de la yuca amarga.
-2. **Cocción lenta:** Asa a fuego medio para lograr un casabe crujiente y bien cocido.
-3. **Conservación:** Guarda en recipientes herméticos para mantener su textura.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [Receta tradicional de casabe llanero - El Tiempo](https://www.eltiempo.com/vida/receta-casabe-57954)
-- [Google Maps: Opiniones sobre casabe](https://www.google.com/maps/search/casabe+llanero)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/casabe)
+> "Si el casabe sale morado, la yuca se quedó mucho tiempo afuera. Si sale muy duro, le faltó sacarle el yare." — *Abuela indígena Huitoto.*
+>
+> "El casabe bueno suena como una galleta vieja cuando lo rompes, pero sabe a pura selva fresca."

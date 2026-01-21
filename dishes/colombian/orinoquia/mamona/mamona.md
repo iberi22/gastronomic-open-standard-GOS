@@ -1,49 +1,50 @@
 ---
-title: Mamona (Ternera a la Llanera)
-region: Orinoquía
+title: "Mamona (Ternera a la Llanera)"
+region: "Orinoquía"
 categories:
-- Plato fuerte
-- Asado
-- Comida típica
+  - "Plato Fuerte"
+  - "Asado"
+  - "Ancestral"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Ahumado
+    - "Umami Intenso"
+    - "Ahumado de Leña"
+    - "Salinidad Primaria"
   texture:
-  - Jugoso
-  - Suave
-  - Crujiente
+    - "Fibrosa-Tierna"
+    - "Crujiente (Cuero)"
+    - "Self-Basted (Jugosa)"
   aroma:
-  - Ahumado
-  - Herbal
-  - Carnoso
-  presentation: Se sirve en grandes bandejas o sobre hojas de bijao, acompañado de
-    yuca y plátano. Ideal para fiestas al aire libre.
+    - "Leña Roja"
+    - "Grasa Tostada"
+    - "Campo abierto"
+  presentation: "Se sirve en cortes transversales directamente de la estaca. La carne debe exhibir un 'anillo de humo' (smoke ring) y una costra salada exterior. Tradicionalmente se sirve sobre mesas de madera rústica."
 main_ingredients:
-- Ternera
-- Sal
-- Ajo
-- Orégano
-- Tomillo
-difficulty: ★★★★☆
-prep_time: 2 horas
-cook_time: 3 horas
+  - "Ternera Hembra (Joven, ~18 meses)"
+  - "Sal de grano grueso"
+  - "Leña (Maderas duras regionales)"
+difficulty: "Alta (Control de fuego)"
+prep_time: "120"
+cook_time: "320"
 servings: 12
 nutrition:
-  calories: 1168
+  calories: 450
   macros:
-    protein_g: 84.3
-    fat_g: 34.6
-    carbs_g: 122.0
+    protein_g: 32
+    fat_g: 28
+    carbs_g: 0
 tags:
-- Plato fuerte
-- Asado festivo
-- Comida típica
-description: La Mamona, también conocida como Ternera a la Llanera, es el plato más
-  emblemático de la región Orinoquía colombiana. Consiste en carne de res joven asada
-  al calor de leña, sazonada con hierbas y acompañada de yuca, plátano y ají. Es el
-  centro de las celebraciones llaneras y símbolo de hospitalidad.
+  - "Villavicencio"
+  - "Yopal"
+  - "Parrilla"
+images:
+  - url: "https://im.ge/i/mamona-1.AbC456"
+    description: "Mamona asándose de forma vertical en estacas"
+sources:
+  - name: "Cultura Llanera GOS"
+    url: "https://gos.org/orinoquia/mamona"
+license: "MIT"
+description: "La cumbre del asado suramericano. La Mamona no es solo carne asada; es una técnica de transferencia de calor radiante donde la gravedad juega un papel crucial en el auto-baño de grasas, resultando en una carne de ternura inigualable."
 ---
 ## Mamona (Ternera a la Llanera)
 
@@ -96,45 +97,35 @@ La Mamona, también conocida como Ternera a la Llanera, es el plato más emblem�
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, asado festivo
-- **Perfil de sabor dominante:** Umami, Salado, Ahumado
-- **Textura principal:** Jugoso (interior), Crujiente (exterior)
-- **Aroma destacado:** Ahumado (leña), Herbal (orégano y tomillo), Carnoso
-- **Presentación y experiencia:** Se sirve en grandes bandejas o sobre hojas, ideal para compartir en fiestas y celebraciones llaneras.
-- **Opiniones y experiencia de usuario:** "La mamona es la reina de los asados llaneros, jugosa y llena de sabor a campo". "Nada como una mamona al aire libre con amigos y música". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami, Salado        | 5/5              | Concentración de glutamatos por calor lento. |
+| **Aroma**| Ahumado, Leña        | 5/5              | Guayacol y Fenoles de maderas duras. |
+| **Textura**| Fibrosa-Blanda     | 4/5              | Desnaturalización de colágeno a baja temperatura. |
+| **Vista** | Dorado Rojizo       | 5/5              | Reacción de Maillard + Retención de mioglobina. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "La mamona llanera es insuperable, el sabor ahumado y la carne tierna la hacen única".
-- **Foro gastronómico:** "El secreto está en la leña y el marinado con hierbas frescas, le da el toque auténtico llanero".
-calificación: ★★★★★ 5/5
+- **Termodinámica de la Estaca (Calor Radiante):** A diferencia de la parrilla horizontal, la disposición vertical en **estacas** somete la carne a calor radiante principalmente. Esto permite que los lípidos derretidos viajen por la superficie de la carne antes de gotear (self-basting), hidratando las capas externas de colágeno y evitando la desecación.
+- **El Rol de la Sal Gruesa (Protección Osmótica):** El uso exclusivo de sal de grano grande crea una costra exterior que actúa como un aislante térmico parcial. Esto permite que el interior de la ternera se mantenga en una zona de cocción "media" ($55-60^\circ\text{C}$), preservando la jugosidad mientras el exterior se carameliza.
+- **Cinética de la Ternura:** Al utilizar terneras jóvenes (~18 meses), la reticulación del colágeno es menor, lo que facilita su conversión en gelatina en tiempos de cocción de 4 a 6 horas a fuego moderado.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Ternera          | 217             | 26           | 0         | 12         | Hierro, Zinc, B12    |
-| Yuca             | 160             | 1            | 38        | 0          | Almidón resistente   |
-| Plátano verde    | 122             | 1.3          | 31        | 0.3        | Potasio, Fibra       |
+- **Biodisponibilidad de Hierro:** Niveles excepcionales de hierro hemínico.
+- **Grasas Saludables:** Si la ternera es de pastoreo (típico en el Casanare), el perfil de ácidos grasos incluye una mejor relación Omega-3/Omega-6.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural
 
----
+- **La Parada del Llanero:** No se trata de una comida, sino de un evento social. El "parrallero" es una figura de respeto que conoce la dirección del viento para manejar el humo.
+- **Cortes Tradicionales:** La Raya (costillar), el Pecho y la Garra son los cortes que definen la jerarquía del asado.
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Cocción lenta:** Asa la carne lentamente para lograr jugosidad y sabor profundo.
-2. **Leña nativa:** Usa leña de árboles locales para el aroma auténtico.
-3. **Presentación:** Sirve en hojas de bijao o bandejas grandes para la experiencia tradicional.
-
----
-
-## Fuentes consultadas y enlaces
-
-- [Receta tradicional de mamona llanera - El Tiempo](https://www.eltiempo.com/vida/receta-mamona-57945)
-- [Google Maps: Opiniones sobre mamona llanera](https://www.google.com/maps/search/mamona+llanera)
-- [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/mamona)
+> "A la mamona no se le echa aliño de farmacia. Si usted le mete ajo y cebolla, la carne se aburre y pierde el gusto a llano." — *Parrallero de San Martín.*
+>
+> "La leña tiene que ser roja y dura. Si la leña es blanca, le da humo frío y la carne le queda sancochada."

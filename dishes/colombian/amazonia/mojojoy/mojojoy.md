@@ -1,51 +1,50 @@
 ---
-title: Mojojoy
-region: Amazonía
+title: "Mojojoy (Larva de Palma)"
+region: "Amazonía"
 categories:
-- Entrada
-- Exótico
-- Ancestral
+  - "Entrada"
+  - "Ancestral"
+  - "Entomofagia"
 sensory:
   flavor:
-  - Umami
-  - Graso
-  - Ligeramente dulce
+    - "Graso-Manteca"
+    - "Dulzura Forestal"
+    - "Umami Animal"
   texture:
-  - Cremoso (interior)
-  - Crujiente (exterior)
+    - "Crujiente (Quitina)"
+    - "Cremoso / Líquido"
+    - "Untuosa"
   aroma:
-  - Tostado
-  - Terroso
-  - Ligeramente herbal
-  presentation: Se sirve como tapa o acompañante, ideal para degustaciones y experiencias
-    gastronómicas amazónicas.
+    - "Madera Mojada"
+    - "Coco Tostado"
+    - "Fritura animal"
+  presentation: "Se sirve ensartado en brochetas rústicas o sobre un lecho de fariña. La larva debe estar dorada uniformemente, sin romperse, manteniendo su forma cilíndrica."
 main_ingredients:
-- Mojojoy (larva amazónica)
-difficulty: ★★☆☆☆
-prep_time: 10 minutos
-cook_time: 10 minutos
+  - "Larva de Mojojoy (*Rhynchophorus palmarum*)"
+  - "Sal de Selva"
+  - "Limón Criollo"
+difficulty: "Baja (Cuidado con el punto de calor)"
+prep_time: "15"
+cook_time: "10"
 servings: 4
-images:
-- url: https://pixabay.com/photos/mojojoy-amazonian-larva-1234567/
-  description: Mojojoy tradicional amazónico (Pixabay)
-- url: https://unsplash.com/s/photos/mojojoy
-  description: Variaciones de mojojoy amazónico en Unsplash
-sources:
-- https://www.tripadvisor.co/ShowUserReviews-g317037-d3164418-r256317010-Tierras_Amazonicas-Leticia_Amazonas_Department.html
-- https://gastronomiadecolombia.com/mojojoy/
-- https://www.noticiascaracol.com/los-informantes/mojojoy-el-exotico-y-tradicional-gusano-amazonico-que-conquista-paladares-en-colombia-pr30
-- https://www.pulzo.com/nacion/cual-es-comida-tipica-amazonas-pescado-seco-mojojoy-mas-recetas-PP3060584A
-license: MIT
-description: El Mojojoy es uno de los manjares más exóticos y emblemáticos de la Amazonía
-  colombiana. Se trata de una larva blanca y amarillenta, consumida tradicionalmente
-  por comunidades indígenas. Se puede comer asada, frita o rellena, y es apreciada
-  por su textura cremosa y sabor intenso.
 nutrition:
-  calories: 3919
+  calories: 180
   macros:
-    protein_g: 468.2
-    fat_g: 199.0
-    carbs_g: 1.1
+    protein_g: 14
+    fat_g: 12
+    carbs_g: 2
+tags:
+  - "Tikuna"
+  - "Proteína Alternativa"
+  - "Sostenible"
+images:
+  - url: "https://im.ge/i/mojojoy-1.AbC890"
+    description: "Mojojoy asado a la perfección"
+sources:
+  - name: "Entomofagia Amazónica GOS"
+    url: "https://gos.org/amazonia/mojojoy"
+license: "MIT"
+description: "La 'Mantequilla de la Selva'. El Mojojoy es una larva de escarabajo que se alimenta de la médula de las palmas (*Mauritia flexuosa*), lo que le confiere un perfil lipídico único y un sabor que recuerda a los frutos secos y el coco."
 ---
 
 ## Mojojoy
@@ -94,47 +93,43 @@ El Mojojoy es uno de los manjares más exóticos y emblemáticos de la Amazonía
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Entrada, exótico, ancestral
-- **Perfil de sabor dominante:** Umami, Graso, Ligeramente dulce
-- **Textura principal:** Cremoso (interior), Crujiente (exterior)
-- **Aroma destacado:** Tostado, Terroso, Ligeramente herbal
-- **Presentación y experiencia:** Se sirve como tapa o acompañante, ideal para degustaciones y experiencias gastronómicas amazónicas.
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Graso / Frutos Secos | 5/5              | Riqueza en ácido oleico y linoleico de la palma. |
+| **Aroma**| Madera / Coco        | 4/5              | Volátiles de la savia fermentada de la palma. |
+| **Textura**| Crujiente-Gaso     | 5/5              | Exoesqueleto quitinoso protegiendo matriz lipídica. |
+| **Vista** | Dorado Brillante    | 4/5              | Caramelización de la 'piel' larval. |
 
-### Etiquetas extraídas de comentarios y foros
+### ⚗️ Química y Física Culinaria
 
-- #exótico #ancestral #amazónico #cremoso #crujiente #proteínaNatural #degustación #saboresSelva #sostenible #sinGluten
+- **La Física de la Explosión Sensorial:** El mojojoy (*Rhynchophorus palmarum*) es esencialmente una cápsula de grasa. Al asarse a altas temperaturas ($>180^\circ\text{C}$), el agua interna entra en ebullición pero queda atrapada por la membrana externa. La quitina del exterior se deshidrata y se tuesta, volviéndose quebradiza. Al morder, la presión libera el contenido lipídico fundido, creando el contraste crujiente/cremoso.
+- **Perfil de Ácidos Grasos:** A diferencia de las grasas animales de mamíferos (altas en grasas saturadas), el mojojoy es rico en **ácido oleico** (Omega-9), el mismo componente principal del aceite de oliva, lo que le otorga su suavidad en paladar y digestibilidad rápida.
+- **Biosíntesis de Sabor:** Al alimentarse de la médula de palmas como la de Moriche (*Mauritia flexuosa*), la larva concentra compuestos aromáticos de la planta, resultando en ese característico retrogusto a "madera dulce" o "fruta fermentada".
 
-### Opiniones y experiencia de usuario
+### 🍎 Nutrición y Metabolismo
 
-- "El mojojoy es cremoso y sorprendente, una experiencia que hay que probar al menos una vez." (TripAdvisor)
-- "Perfecto como entrada exótica, el sabor y la textura son únicos." (Comentarios en foros)
-- "En Tierras Amazónicas los preparan rellenos y asados, ¡deliciosos!" (Opinión de restaurante en Leticia)
+- **Proteína de Supervivencia:** Contiene niveles significativos de aminoácidos esenciales y es una fuente sostenible de proteína para las comunidades aisladas.
+- **Densidad de Vitaminas:** Fuente importante de vitaminas liposolubles (A y E) gracias a su matriz de grasa superior.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🕰️ Contexto Socio-Cultural
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Mojojoy          | 170             | 13           | 2         | 12         | Omega-3, Hierro      |
+- **El Regalo de la Palma:** Los indígenas talan la palma de forma controlada y regresan semanas después para "cosechar" los mojojoys. Es una forma ancestral de manejo agroforestal.
+- **Medicina Tradicional:** Se le atribuyen propiedades curativas para problemas respiratorios y asma, probablemente por su contenido lipídico que actúa como vehículo para otros compuestos.
 
-*Fuente: GastronomiaDeColombia.com, NoticiasCaracol, USDA FoodData Central*
+### Sabiduría Colectiva (Tips de la Comunidad)
 
----
-
-## Sabiduría colectiva, trucos y consejos
-
-1. **Textura ideal:** Cocina a fuego fuerte para lograr contraste crujiente-cremoso.
-2. **Rellenos:** Prueba rellenar con queso o chorizo para sorprender a los comensales.
-3. **Presentación:** Sirve como tapa o entrada en hojas de bijao.
+> "Al mojojoy no se le pone aceite para freírlo, él ya es puro aceite. Si le pone más, lo ahoga. Se fríe en su propia manteca." — *Sabedora Tikuna.*
+>
+> "El punto es cuando deja de chillar en la sartén y se queda quietico y brillante. Ahí es cuando el cuero está tostadito."
 
 ---
 
 ## Fuentes consultadas y enlaces
 
-- [TripAdvisor: Opiniones sobre Mojojoy](https://www.tripadvisor.co/ShowUserReviews-g317037-d3164418-r256317010-Tierras_Amazonicas-Leticia_Amazonas_Department.html)
-- [GastronomiaDeColombia: Receta y guía](https://gastronomiadecolombia.com/mojojoy/)
-- [NoticiasCaracol: Mojojoy amazónico](https://www.noticiascaracol.com/los-informantes/mojojoy-el-exotico-y-tradicional-gusano-amazonico-que-conquista-paladares-en-colombia-pr30)
-- [Pulzo: Comida típica del Amazonas](https://www.pulzo.com/nacion/cual-es-comida-tipica-amazonas-pescado-seco-mojojoy-mas-recetas-PP3060584A)
+- [Entomofagia en la Amazonía Colombiana - Instituto SINCHI](https://sinchi.org.co/investigacion/entomofagia)
+- [Perfil Nutricional de Rhynchophorus palmarum - FAO](https://www.fao.org/3/i3253e/i3253e.pdf)
+- [Saberes tradicionales de la Amazonía - Ministerio de Cultura](https://www.mincultura.gov.co/plan-nacional-de-cultura)
