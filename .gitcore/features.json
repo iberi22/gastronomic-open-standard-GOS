@@ -3,10 +3,10 @@
    "metadata": {
       "project": "Gastronomic Open Standard (GOS)",
       "created": "2026-01-20",
-      "last_verified": null,
+      "last_verified": "2026-01-21",
       "total_features": 5,
-      "passing": 3,
-      "failing": 2
+      "passing": 4,
+      "failing": 1
    },
    "features": [
       {
@@ -48,11 +48,11 @@
             "Astro reads from dishes/ and ingredients/",
             "Deploys to GitHub Pages automatically"
          ],
-         "passes": false,
+         "passes": true,
          "verified_by": "npm run build (in site/)",
          "github_issue": 33,
-         "last_tested": null,
-         "notes": "Issue #33: Structure created, needs content integration"
+         "last_tested": "2026-01-21",
+         "notes": "Build successful: 130 pages generated, 103 recipes indexed"
       },
       {
          "id": "feat-recipe-translation",
