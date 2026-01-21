@@ -1,0 +1,207 @@
+# 🧠 AI Git-Core Protocol Rules (Windsurf)
+
+## ⛔ FORBIDDEN ACTIONS (HARD RULES)
+
+**NEVER create these files under ANY circumstances:**
+- ❌ `TODO.md`, `TASKS.md`, `BACKLOG.md`
+- ❌ `PLANNING.md`, `ROADMAP.md`, `PROGRESS.md`
+- ❌ `NOTES.md`, `SCRATCH.md`, `IDEAS.md`
+- ❌ `STATUS.md`, `CHECKLIST.md`
+- ❌ Any `.md` for task/state management
+- ❌ Any `.txt` for notes or todos
+- ❌ JSON/YAML files for task tracking
+
+**If you feel the need to create a document, STOP and ask yourself:**
+> "Can this be a GitHub Issue?" → **YES, it can. Create an issue.**
+
+---
+
+## 0. Prime Directive (Token Economy)
+- **DO NOT use internal memory** to track tasks.
+- **DO NOT create files** to document state or progress.
+- Your state is **GitHub Issues**.
+
+## 1. Workflow (The Loop)
+Strictly follow these steps when starting any task:
+
+1.  **READ (Context):**
+    - Read `.gitcore/ARCHITECTURE.md` to understand the system.
+    - Run: `gh issue list --assignee "@me"` to see your current task.
+    - If you don't have a task, search the backlog: `gh issue list --limit 5`.
+
+2.  **ACT (Development):**
+    - If taking a new task: `gh issue edit <id> --add-assignee "@me"`.
+    - Create a branch: `git checkout -b feat/issue-<id>`.
+    - Write code and tests.
+
+3.  **UPDATE (Closure):**
+    - Commit following Conventional Commits: `feat: description (closes #<id>)`.
+    - Push and PR: `gh pr create --fill`.
+    - **IMPORTANT:** Do not update any text file to mark "check". Git does it for you.
+
+## 2. Planning
+- If asked to plan, DO NOT write a long document.
+- Generate commands to create the issues:
+  `gh issue create --title "..." --body "..."`
+
+## 3. Communication
+- Be concise.
+- Always reference the issue number: #123
+- Use Conventional Commits: feat, fix, docs, chore, refactor, test
+
+## 4. Anti-Patterns (NEVER do this)
+- ❌ Creating task files (TODO.md, TASKS.md, BACKLOG.md)
+- ❌ Creating planning files (PLANNING.md, ROADMAP.md)
+- ❌ Creating progress files (PROGRESS.md, STATUS.md)
+- ❌ Creating note files (NOTES.md, IDEAS.md, SCRATCH.md)
+- ❌ Storing state in memory or local files
+- ❌ Writing long planning documents
+- ❌ Forgetting to reference issues in commits
+- ❌ Closing issues manually (use "closes #X" in commits)
+- ❌ Creating any .md that isn't source code or real technical documentation
+
+## 5. What SHOULD be created
+- ✅ Source code (.py, .js, .ts, etc.)
+- ✅ Tests (in tests/ folder)
+- ✅ Technical configuration (docker, CI/CD, linters)
+- ✅ `.gitcore/ARCHITECTURE.md` (only this file for architecture)
+- ✅ `README.md` (project documentation)
+- ✅ `docs/agent-docs/*.md` (**ONLY when explicitly requested by user**)
+- ✅ GitHub Issues for EVERYTHING ELSE
+
+## 6. Documents Requested by User (agent-docs)
+
+When the user **EXPLICITLY** requests a persistent document:
+
+```bash
+# Create in docs/agent-docs/ with prefix:
+# PROMPT_, RESEARCH_, STRATEGY_, ANALYSIS_, SPEC_, GUIDE_, REPORT_
+
+docs/agent-docs/PROMPT_JULES_AUTH_SYSTEM.md
+```
+
+**✅ Create file ONLY when user says:**
+
+- "Save this as a document"
+- "Create a prompt file for..."
+- "Document this strategy"
+- "Write a spec for..."
+
+**❌ DO NOT create files, only respond in chat:**
+
+- "Explain how..."
+- "Summarize this..."
+- "What is the best approach..."
+
+## 7. YAML Frontmatter Meta Tags (REQUIRED)
+
+When creating `docs/agent-docs/*.md`, **ALWAYS** include YAML frontmatter:
+
+```yaml
+---
+title: "Document Title"
+type: PROMPT | RESEARCH | STRATEGY | SPEC | GUIDE | REPORT | ANALYSIS
+id: "unique-kebab-case-id"
+created: 2025-11-29
+updated: 2025-11-29
+agent: windsurf
+model: gpt-4o | claude-opus-4
+requested_by: user
+summary: |
+  1-3 sentences describing the document's purpose.
+  AI agents read this first to decide if they need the full content.
+keywords: [keyword1, keyword2, keyword3]
+tags: ["#tag1", "#tag2"]
+topics: [topic1, topic2]
+related_issues: ["#42"]
+project: project-name
+module: auth | api | ui | core
+language: typescript | python | rust
+priority: critical | high | medium | low
+status: draft | review | approved | deprecated
+confidence: 0.95
+token_estimate: 800
+complexity: simple | moderate | complex
+---
+```
+
+**Why?** Allows rapid AI scanning without reading full documents.
+
+## 8. Extended Commits (AI-Context)
+
+Use AI-Context footer for complex decisions:
+
+```text
+feat(auth): implement OAuth2 login #42
+
+Adds OAuth2 authentication with Google provider.
+
+AI-Context: architecture | Chose passport.js over custom impl for maintainability
+```
+
+## 9. Codex CLI Integration
+
+**Usage modes:**
+
+```bash
+codex                      # Interactive mode
+codex "explain this code"  # Quick query
+codex exec "..."           # Headless automation
+```
+
+**Triggers via GitHub:**
+
+- Add label `codex-review` to PR for automated review
+- Comment `/codex-review` for on-demand review
+- Comment `/codex-analyze` for codebase analysis
+
+## 10. Copilot Coding Agent
+
+**Assign issues to Copilot:**
+
+```bash
+gh issue edit <number> --add-assignee "Copilot"
+# OR
+gh issue edit <number> --add-label "copilot"
+```
+
+**Triggers in PRs:**
+
+- Mention `@copilot` in PR comments for specific tasks
+- Copilot creates branches named `copilot/*`
+
+**Monitor Copilot work:**
+
+```bash
+gh pr list --head "copilot/"
+```
+
+## 11. Google Jules Agent
+
+**Assign issues to Jules:**
+
+```bash
+# Via GitHub label (requires Jules GitHub App)
+gh issue edit <number> --add-label "jules"
+```
+
+**Via Jules CLI:**
+
+```bash
+jules new "implement feature X"
+jules new --repo owner/repo "write unit tests"
+jules remote list --session
+jules remote pull --session <id> --apply
+```
+
+## 12. Agent Load Balancing
+
+**Auto-dispatch to available agents:**
+
+```bash
+# Add ai-agent label for automatic distribution
+gh issue edit <number> --add-label "ai-agent"
+
+# Or trigger workflow manually
+gh workflow run agent-dispatcher.yml
+```

@@ -1,0 +1,248 @@
+# 🏥 CI Health Monitor
+# Unified workflow that replaces: self-healing.yml + global-self-healing.yml
+# Features: Error classification, auto-retry for transient errors, multi-repo monitoring
+
+name: 🏥 CI Health Monitor
+
+on:
+  # PRIMARY: React to workflow failures (FREE - only runs when needed)
+  workflow_run:
+    workflows: ["*"]
+    types: [completed]
+
+  # SECONDARY: Scheduled check (adaptive based on repo type)
+  schedule:
+    - cron: "0 */6 * * *"  # Every 6 hours (moderate)
+
+  workflow_dispatch:
+    inputs:
+      force_mode:
+        description: "Force schedule mode"
+        required: false
+        type: choice
+        options: [auto, aggressive, moderate, conservative]
+        default: auto
+      retry_run_id:
+        description: "Specific run ID to retry (optional)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+  actions: write
+
+jobs:
+  # ═══════════════════════════════════════════════════════════════════
+  # JOB 0: Detect Repository Configuration
+  # ═══════════════════════════════════════════════════════════════════
+  config:
+    name: 🔧 Detect Config
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      should_run: ${{ steps.decide.outputs.should_run }}
+      schedule_mode: ${{ steps.detect.outputs.schedule_mode }}
+      repo_list: ${{ steps.decide.outputs.repo_list }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect Repository Type
+        id: detect
+        shell: bash
+        working-directory: tools/git-core
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Current directory: $(pwd)"
+          ls -la
+          # Explicitly pointing to declaration if needed, but working-directory should suffice
+          cargo run -q -p gc-cli --manifest-path Cargo.toml -- ci-detect
+
+      - name: Decide Execution
+        id: decide
+        shell: pwsh
+        run: |
+          $eventName = "${{ github.event_name }}"
+          # Default to auto if step failed or empty
+          $scheduleMode = "${{ steps.detect.outputs.schedule_mode }}"
+          if ([string]::IsNullOrWhiteSpace($scheduleMode)) { $scheduleMode = "auto" }
+
+          # ... rest of logic unchanged ...
+          $forceMode = "${{ inputs.force_mode || 'auto' }}"
+
+          # Override if force mode specified
+          if ($forceMode -ne "auto") {
+            $scheduleMode = $forceMode
+          }
+
+          $shouldRun = "false"
+          $repoList = "[]"
+
+          # Always run on workflow_run events (FREE)
+          if ($eventName -eq "workflow_run") {
+            $shouldRun = "true"
+            $repoList = '["${{ github.repository }}"]'
+            Write-Host "✅ Running due to workflow_run event (FREE)"
+          }
+          # Run scheduled jobs based on repo type
+          elseif ($eventName -eq "schedule") {
+            switch ($scheduleMode) {
+              "aggressive" {
+                # Public repos: Monitor all repos
+                $shouldRun = "true"
+                $repoList = @"
+          ["iberi22/Git-Core-Protocol","iberi22/software-factory","iberi22/domus-otec","iberi22/less-colegio","iberi22/synapse-protocol","iberi22/gara-g","iberi22/AI-Chef","iberi22/contratafacil","iberi22/bestof-opensorce","iberi22/obs-studio-agent","iberi22/pocket_cerebro"]
+          "@
+                Write-Host "✅ Aggressive mode: Monitoring 11 repos"
+              }
+              "moderate" {
+                # Main private repo: Only monitor self
+                $shouldRun = "true"
+                $repoList = '["${{ github.repository }}"]'
+                Write-Host "⚠️ Moderate mode: Monitoring only this repo"
+              }
+              "conservative" {
+                # Other private repos: Skip scheduled runs
+                $shouldRun = "false"
+                Write-Host "🔒 Conservative mode: Skipping scheduled run"
+              }
+              default {
+                 # Fallback for failed detection
+                 $shouldRun = "true"
+                 $repoList = '["${{ github.repository }}"]'
+                 Write-Host "⚠️ Unknown mode '$scheduleMode', defaulting to single repo monitor"
+              }
+            }
+          }
+          # Manual dispatch: Always run
+          elseif ($eventName -eq "workflow_dispatch") {
+            $shouldRun = "true"
+            $repoList = '["${{ github.repository }}"]'
+            Write-Host "🎯 Manual dispatch: Running"
+          }
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "should_run=$shouldRun"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "repo_list=$repoList"
+
+  # ═══════════════════════════════════════════════════════════════════
+  # JOB 1: Monitor Repositories
+  # ═══════════════════════════════════════════════════════════════════
+  monitor-repos:
+    name: 🔍 Monitor
+    needs: config
+    if: needs.config.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        repo: ${{ fromJson(needs.config.outputs.repo_list) }}
+      fail-fast: false
+      max-parallel: 3
+
+    steps:
+      - name: Check Failures
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.MULTI_REPO_TOKEN || github.token }}
+        run: |
+          echo "Checking ${{ matrix.repo }} for failures..."
+
+          # Check the last 10 runs to find any recent failures
+          RUN_ID=$(gh run list \
+            --repo ${{ matrix.repo }} \
+            --limit 10 \
+            --json databaseId,conclusion \
+            --jq 'map(select(.conclusion == "failure")) | .[0].databaseId' 2>/dev/null || echo "")
+
+          if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
+            echo "No failures found in last 10 runs"
+            echo "has_failure=false" >> $GITHUB_OUTPUT
+          else
+            echo "Found failure: Run ID $RUN_ID"
+            echo "has_failure=true" >> $GITHUB_OUTPUT
+            echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
+
+            # Classify error type (from self-healing.yml logic)
+            # Fetch more log lines for better context
+            LOGS=$(gh run view $RUN_ID --repo ${{ matrix.repo }} --log 2>&1 | tail -n 200 || echo "")
+
+            # Escape logs for multiline output/json safety (basic)
+            # Saving to a file to handle it better in future steps or issue body
+            echo "$LOGS" > failure_log.txt
+
+            if echo "$LOGS" | grep -qiE "ETIMEDOUT|ECONNRESET|429|rate limit|timeout"; then
+              echo "error_type=transient" >> $GITHUB_OUTPUT
+            elif echo "$LOGS" | grep -qiE "npm ERR|yarn error|pip.*failed|cargo.*failed"; then
+              echo "error_type=dependency" >> $GITHUB_OUTPUT
+            elif echo "$LOGS" | grep -qiE "lint|prettier|eslint|clippy"; then
+              echo "error_type=lint" >> $GITHUB_OUTPUT
+            elif echo "$LOGS" | grep -qiE "test.*failed|FAIL|AssertionError"; then
+              echo "error_type=test" >> $GITHUB_OUTPUT
+            else
+              echo "error_type=code" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Auto-Retry Transient Errors
+        if: steps.check.outputs.error_type == 'transient'
+        env:
+          GH_TOKEN: ${{ secrets.MULTI_REPO_TOKEN || github.token }}
+        run: |
+          echo "🔄 Retrying transient error..."
+          gh run rerun ${{ steps.check.outputs.run_id }} --repo ${{ matrix.repo }} --failed || echo "Could not rerun"
+
+      - name: Create Issue
+        if: steps.check.outputs.has_failure == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.MULTI_REPO_TOKEN || github.token }}
+        run: |
+          RUN_ID="${{ steps.check.outputs.run_id }}"
+          REPO="${{ matrix.repo }}"
+
+          WORKFLOW_NAME=$(gh run view $RUN_ID \
+            --repo $REPO \
+            --json name \
+            --jq '.name' 2>/dev/null || echo "Unknown Workflow")
+
+          EXISTING=$(gh issue list \
+            --repo $REPO \
+            --label "bug" \
+            --search "in:title $WORKFLOW_NAME" \
+            --state open \
+            --json number \
+            --jq '.[0].number' 2>/dev/null || echo "")
+
+          if [ -n "$EXISTING" ] && [ "$EXISTING" != "null" ]; then
+            echo "Updating issue #$EXISTING"
+            gh issue comment $EXISTING --repo $REPO --body "New failure occurred: https://github.com/$REPO/actions/runs/$RUN_ID"
+            # Ensure triage label is present
+            gh issue edit $EXISTING --repo $REPO --add-label "triage-needed"
+          else
+            echo "Creating new issue"
+
+            # Construct body with logs
+            LOG_SNIPPET=$(cat failure_log.txt | head -n 20)
+            BODY="### Workflow Failed: $WORKFLOW_NAME
+
+            **Run ID:** [$RUN_ID](https://github.com/$REPO/actions/runs/$RUN_ID)
+            **Error Type:** ${{ steps.check.outputs.error_type }}
+
+            #### Log Snippet
+            \`\`\`
+            $LOG_SNIPPET
+            ...
+            \`\`\`
+
+            > Auto-generated by CI Health Monitor
+            "
+
+            gh issue create \
+              --repo $REPO \
+              --title "CI Failure: $WORKFLOW_NAME (Run $RUN_ID)" \
+              --body "$BODY" \
+              --label "bug,ai-plan,ci-failure,triage-needed" || echo "Could not create issue"
+          fi

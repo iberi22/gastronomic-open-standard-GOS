@@ -1,0 +1,71 @@
+name: 🤖 Triage Agent
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏷️ Auto-Label based on Title/Body
+        if: github.event.action == 'opened'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue;
+            const title = issue.title.toLowerCase();
+            const body = (issue.body || '').toLowerCase();
+            const labelsToAdd = [];
+
+            if (title.includes('bug') || body.includes('error') || body.includes('fail')) {
+              labelsToAdd.push('bug');
+            }
+            if (title.includes('feat') || body.includes('feature')) {
+              labelsToAdd.push('enhancement');
+            }
+            if (title.includes('ci failure') || title.includes('failure')) {
+              labelsToAdd.push('ci-failure', 'triage-needed');
+            }
+
+            if (labelsToAdd.length > 0) {
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number: issue.number,
+                labels: [...new Set(labelsToAdd)]
+              });
+              console.log(`Added labels: ${labelsToAdd.join(', ')}`);
+            }
+
+      - name: 🚦 Route 'triage-needed' Issues
+        if: contains(github.event.issue.labels.*.name, 'triage-needed')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue;
+
+            // Assign to repo owner or specific triage team
+            // For now, assigning to the issue creator if they are a maintainer, or leaving for human pick-up
+
+            const commentBody = `
+            👋 Thanks for reporting! This issue has been marked for **Triaging**.
+
+            **Action Plan:**
+            1. An agent or maintainer will review the logs.
+            2. If this is a CI failure, we will check for related PRs.
+            3. A fix will be proposed shortly.
+            `;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: issue.number,
+              body: commentBody
+            });
