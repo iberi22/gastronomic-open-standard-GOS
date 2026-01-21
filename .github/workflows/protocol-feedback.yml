@@ -2,6 +2,14 @@ name: Protocol Feedback
 
 # This workflow collects improvements and issues encountered with Git-Core Protocol
 # and reports them upstream to iberi22/GitCore repository
+#
+# SETUP REQUIRED:
+# 1. Create a GitHub Personal Access Token (classic) with 'repo' scope
+# 2. Add it as repository secret: Settings → Secrets → Actions → New secret
+# 3. Name: GH_TOKEN_PROTOCOL
+# 4. Paste your token
+#
+# Without this, the workflow will fail with "Resource not accessible" error
 
 on:
   workflow_dispatch:
@@ -103,6 +111,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Check Token
+        run: |
+          if [ -z "${{ secrets.GH_TOKEN_PROTOCOL }}" ]; then
+            echo "⚠️ GH_TOKEN_PROTOCOL secret not configured"
+            echo "This workflow requires a Personal Access Token to create issues in iberi22/GitCore"
+            echo ""
+            echo "Setup Instructions:"
+            echo "1. Go to: https://github.com/settings/tokens"
+            echo "2. Generate new token (classic) with 'repo' scope"
+            echo "3. Add as repository secret: GH_TOKEN_PROTOCOL"
+            echo ""
+            echo "For now, workflow will continue but issue creation may fail."
+          else
+            echo "✅ GH_TOKEN_PROTOCOL is configured"
+          fi
 
       - name: Get Protocol Version
         id: version
