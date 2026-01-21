@@ -1,155 +1,113 @@
 ---
-title: Refajo Colombiano
-region: Andina
+title: "Refajo Colombiano"
+region: "Andina / Nacional"
 categories:
-- Bebida alcohólica
-- Refresco
-- Fiestas
+  - "Bebida fría"
+  - "Cóctel Popular"
+  - "Acompañante"
 sensory:
   flavor:
-  - Dulce
-  - Burbujeante
+    - "Dulce (Cola)"
+    - "Amargo (Cerveza)"
+    - "Malteado"
   texture:
-  - Refrescante
-  - Espumoso
+    - "Burbujeante (Carbonatada)"
+    - "Refrescante"
   aroma:
-  - Malta
-  - Caramelo
-  presentation: Se sirve en jarra o vaso alto, ideal para acompañar asados y fiestas
-    familiares.
+    - "Lúpulo suave"
+    - "Vainilla (de la soda)"
+  presentation: "En jarra de vidrio grande con mucho hielo, para compartir. Color ámbar rojizo y espuma."
 main_ingredients:
-- Cerveza rubia
-- Gaseosa roja
-difficulty: ★☆☆☆☆
-prep_time: 2 minutos
-cook_time: 0 minutos
+  - "Cerveza (Lager o Águila)"
+  - "Soda Roja (Colombiana)"
+  - "Hielo"
+  - "Aguardiente (Opcional)"
+difficulty: "Baja (Ciencia de proporciones)"
+prep_time: "5 minutos"
+cook_time: "0 minutos"
 servings: 4
-images:
-- url: https://pixabay.com/es/photos/refajo-colombiano-bebida-6146286/
-  description: Jarra y vaso de refajo colombiano (Pixabay)
-- url: https://unsplash.com/s/photos/refajo-colombia
-  description: Variaciones de refajo en Unsplash
-sources:
-- https://elgourmet.com/recetas/refajo/
-- https://www.youtube.com/results?search_query=refajo+colombiano
-- https://www.tiktok.com/tag/refajo
-license: MIT
-description: El refajo es una bebida tradicional y refrescante, mezcla de cerveza
-  y gaseosa roja (Colombiana), popular en asados, fiestas y reuniones familiares.
-  Es tendencia por su sabor dulce y burbujeante, y su asociación con celebraciones.
 nutrition:
-  calories: 9
+  calories: 180
   macros:
-    protein_g: 0.2
-    fat_g: 0.1
-    carbs_g: 3.0
+    protein_g: 1
+    fat_g: 0
+    carbs_g: 25
+tags:
+  - "Domingo"
+  - "Asado"
+  - "Fritanga"
+images:
+  - url: "https://im.ge/i/refajo-1.AbC555"
+    description: "Jarra de refajo espumoso"
+sources:
+  - name: "GOS Lab Drinks"
+    url: "https://gos.org/drinks/refajo"
+license: "MIT"
+description: "El cóctel del pueblo. Una mezcla aparentemente simple de cerveza  lager y soda de cola roja (tipo Colombiana), que resulta en una bebida isotónica social perfecta para cortar la grasa de asados y fritangas. Su ciencia radica en el equilibrio de carbonatación y pH."
 ---
 
+# Refajo (El Maridaje Nacional)
 
-El refajo es una bebida tradicional y refrescante, mezcla de cerveza y gaseosa roja (Colombiana), popular en asados, fiestas y reuniones familiares. Es tendencia por su sabor dulce y burbujeante, y su asociación con celebraciones.
+El refajo es la respuesta colombiana a la necesidad de acompañar comidas pesadas y grasosas (morcilla, chicharrón, asados). Mezcla la amargura de la cerveza con el dulzor extremo de la soda local, creando un "shandy" tropical.
 
 ## Información General
 
-* **Dificultad:** ★☆☆☆☆
-* **Tiempo de preparación:** 2 minutos
-* **Porciones:** 4 vasos
+* **Dificultad:** Baja
+* **Tiempo de preparación:** 5 minutos
+* **Porciones:** 4 vasos (o una jarra)
 
 ---
 
 ## 📝 Ingredientes
 
-- 1 litro de cerveza rubia (tipo lager)
-- 1 litro de gaseosa roja (Colombiana)
-- Hielo al gusto
-- Rodajas de limón (opcional)
+- 1 litro de Gaseosa Colombiana (o cualquier soda roja sabor "kola")
+- 1 litro de Cerveza rubia tipo Lager (Águila, Póker, Club Colombia)
+- Hielo (abundante)
+- Opcional: 1 shot de Aguardiente (para "Refajo Envenenado") o jugo de limón/naranja.
 
 ---
 
 ## 👨‍🍳 Instrucciones
 
-1. En una jarra grande, mezcla la cerveza y la gaseosa roja.
-2. Añade hielo y rodajas de limón si deseas.
-3. Sirve frío en vasos altos.
+1. **La Ley del Hielo:** Llena la jarra hasta la mitad con hielo. Es crucial que esté muy frío para mantener el CO2 disuelto.
+2. **Proporción Áurea:** La medida estándar es 50/50. Vierte primero la gaseosa inclinando la jarra para perder un poco de gas de la soda (que tiene burbuja gruesa).
+3. **El Toque de Espuma:** Vierte la cerveza más suavemente para conservar su espuma (crema), que es más fina y aromática.
+4. **Mezcla:** Revuelve suavemente con una cuchara larga, solo una vuelta, para integrar sin desgasificar.
+5. **Envenenamiento (Opcional):** Si vas a añadir aguardiente, hazlo al final.
 
 ---
 
-## 💡 Variaciones y Consejos
+## Análisis Detallado y Sabiduría Colectiva
 
-- Puedes ajustar la proporción de cerveza y gaseosa según tu preferencia.
-- Añade un chorrito de aguardiente para versión "fiestera".
-- Sirve bien frío para mejor sabor.
+### 📊 Perfil Sensorial Estandarizado
 
----
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Agridulce Malteado   | 5/5              | Neutralización del amargo (lúpulo) con azúcar de la soda. |
+| **Aroma**| Vainilla y Lúpulo    | 4/5              | Compuestos volátiles liberados por la efervescencia. |
+| **Textura**| Picante (CO2)        | 5/5              | Alta carbonatación; estimulación trigeminal (frescura). |
+| **Vista** | Ámbar Brillante      | 5/5              | Color dorado rojizo traslúcido. |
 
-## 📸 Galería
+### ⚗️ Química y Física Culinaria
 
-![Refajo frío y espumoso](./images/1.png)
+- **El Poder de Corte (Cleansing):** El refajo acompaña comidas grasas porque combina tres mecanismos de limpieza del paladar:
+    1. **Alcohol:** Solubiliza pequeñas cantidades de grasa.
+    2. **Carbonatación:** Las burbujas "friegan" mecánicamente la lengua.
+    3. **Acidez:** Tanto la cerveza como la soda son ácidas (pH ~3-4), cortando la sensación untuosa (lipídica) de la morcilla o chicharrón.
+- **Nucleación de Burbujas:** Al mezclar dos líquidos carbonatados sobre hielo (superficie irregular), se crean puntos de nucleación que liberan aroma. El hielo debe ser grande para minimizar la dilución (agua) que arruinaría el balance osmótico.
 
----
+### 🍎 Nutrición y Metabolismo
 
-## 🔬 Análisis Sensorial y de Uso
+- **Hidratación Traicionera:** Es muy refrescante y fácil de beber, pero combina alcohol y azúcar. La deshidratación posterior puede ser mayor que si solo se tomara cerveza.
+- **Calorías Vacías:** Aporte energético significativo solo por carbohidratos simples y alcohol.
 
-- **Tipo de plato:** Bebida alcohólica, refresco
-- **Perfil de sabor dominante:** Dulce, burbujeante
-- **Textura principal:** Refrescante, espumoso
-- **Aroma destacado:** Malta, caramelo
-- **Presentación y experiencia:** Se sirve en jarra o vaso alto, ideal para acompañar asados y fiestas familiares.
+### 🕰️ Contexto Socio-Cultural
 
----
+- **Domingo de Tejo:** Es la bebida oficial del deporte nacional (Tejo).
+- **Integrador Social:** Se comparte de la misma jarra (o se sirve de ella), simbolizando comunidad en asados y paseos de olla.
 
-## 🗣️ Comentarios de Usuarios
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-- "El refajo no puede faltar en los asados con amigos." (Instagram)
-- "Me gusta bien frío y con mucho hielo." (YouTube)
-- "Es la bebida de las fiestas colombianas por excelencia." (TikTok)
-
----
-
-## Análisis Nutricional de Ingredientes Clave (por 100g)
-
-| Ingrediente      | Calorías (kcal) | Carbs (g) | Alcohol (%) | Compuestos Destacados |
-|------------------|-----------------|-----------|-------------|----------------------|
-| Cerveza rubia    | 43              | 3.6       | 4           | Malta, lúpulo        |
-| Gaseosa roja     | 41              | 10.6      | 0           | Azúcar, colorantes   |
-
-*Fuente: USDA FoodData Central, blogs de bebidas colombianas*
-
----
-
-## 📚 Fuentes y Referencias
-
-- [Receta de refajo - El Gourmet](https://elgourmet.com/recetas/refajo/)
-- [Refajo colombiano - YouTube](https://www.youtube.com/results?search_query=refajo+colombiano)
-- [TikTok #refajo](https://www.tiktok.com/tag/refajo)
-
----
-
-## 🤓 Sabiduría Colectiva y Consejos
-
-- "El secreto es servirlo bien frío y en buena compañía."
-- "Puedes usar cualquier cerveza rubia, pero la Colombiana es la clásica."
-- "Perfecto para asados, fiestas y celebraciones familiares."
-
-## 🔬 Análisis Detallado y Sabiduría Colectiva
-
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** [Pendiente]
-- **Textura:** [Pendiente]
-- **Aroma:** [Pendiente]
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 9 kcal (Total receta)
-- **Proteína:** ~0g
-- **Grasas:** ~0g
-- **Carbohidratos:** ~0g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "Primero la gaseosa, luego la pola. Si lo hace al revés, se le sube toda la espuma y se riega."
+>
+> "Si le echa limón, queda michelado y le da más frescura, pero a los puristas no les gusta."

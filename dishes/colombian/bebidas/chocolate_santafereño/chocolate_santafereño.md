@@ -23,8 +23,8 @@ main_ingredients:
 - Leche
 - Queso fresco
 difficulty: ★☆☆☆☆
-prep_time: 15 minutos
-cook_time: 10 minutos
+prep_time: "15 minutos"
+cook_time: "10 minutos"
 servings: 3
 images:
 - url: https://pixabay.com/es/photos/chocolate-colombiano-bogota-6146284/
@@ -112,50 +112,35 @@ El chocolate santafereño es una bebida caliente tradicional de Bogotá y el alt
 
 ---
 
-## Análisis Nutricional de Ingredientes Clave (por 100g)
+## Análisis Detallado y Sabiduría Colectiva
 
-| Ingrediente      | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|------------------|-----------------|--------------|-----------|------------|----------------------|
-| Chocolate de mesa| 450             | 5            | 70        | 17         | Teobromina, hierro   |
-| Leche            | 60              | 3.2          | 5         | 3.2        | Calcio, vitamina D   |
-| Queso fresco     | 280             | 18           | 2         | 22         | Calcio, sodio        |
+### 📊 Perfil Sensorial Estandarizado
 
-*Fuente: USDA FoodData Central, blogs de cocina bogotana*
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Cacao Dulce-Salado   | 5/5              | Contraste de teobromina/azúcar con la sal del queso. |
+| **Aroma**| Cacao Tostado        | 5/5              | Pirazinas y notas de canela/clavo (si tiene). |
+| **Textura**| Emulsión Aireada     | 5/5              | Espuma estabilizada por proteínas lácteas y agitación mecánica. |
+| **Vista** | Marrón Oscuro        | 5/5              | Opaco, con "corona" de espuma. |
 
----
+### ⚗️ Química y Física Culinaria
 
-## Fuentes y Referencias
+- **El Molinillo y la Espuma:** El uso del molinillo no es solo tradición; es ingeniería de fluidos. La agitación vigorosa introduce aire en la mezcla, creando una espuma. Las proteínas de la leche (caseínas) y del suero actúan como surfactantes, rodeando las burbujas de aire y estabilizándolas. Sin leche (solo agua), la espuma colapsa rápido porque la grasa del cacao rompe la tensión superficial.
+- **Emulsión de Manteca de Cacao:** El chocolate de mesa colombiano suele tener alto contenido de azúcar y grasa, pero poca lecitina. Al hervir y batir, dispersamos mecánicamente la manteca de cacao en la fase acuosa (leche/agua). Si se deja enfriar mucho sin batir, la grasa se separa arriba.
+- **La Termodinámica del Queso:** El queso campesino o doble crema tiene un punto de fusión específico. En el fondo de la taza caliente, la matriz proteica del queso se relaja y suelta grasa, pero (idealmente) no se disuelve completamente. Se vuelve elástico ("chicle"), creando una textura masticable dentro de la bebida líquida.
 
-- [Receta de chocolate santafereño - Recetas de Colombia](https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o)
-- [Chocolate con queso - YouTube](https://www.youtube.com/results?search_query=chocolate+con+queso+colombiano)
-- [TikTok #chocolateconqueso](https://www.tiktok.com/tag/chocolateconqueso)
+### 🍎 Nutrición y Metabolismo
 
----
+- **Teobromina:** Estimulante suave presente en el cacao, vasodilatador y mejorador del ánimo.
+- **Bomba Calórica:** Combinación de azúcar, grasa de cacao y grasa láctea. Desayuno energético de altura (clima frío).
 
-- "El secreto es batir bien para que salga espumoso."
-- "No olvides el queso: ¡es la tradición!"
-- "Perfecto para acompañar con almojábanas o pan blandito."
+### 🕰️ Contexto Socio-Cultural
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+- **Las "Onces":** Institución bogotana. A las 4-5 PM, tomar chocolate con almojábana para combatir el frío y la lluvia.
+- **Maridaje Ancestral:** La costumbre de echar el queso ADENTRO del chocolate es única de los Andes colombianos/ecuatorianos, chocante para extranjeros pero sagrada para locales.
 
-### Categorización Sensorial y de Uso
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-- **Perfil de sabor:** Rico en nutrientes activos: Casein, Sucrose, Bioactive Peptides
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 507 kcal (Total receta)
-- **Proteína:** 30.8g
-- **Grasas:** 33.2g
-- **Carbohidratos:** 23.2g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "Hiérvalo tres veces. Deje que suba la espuma, retire del fuego, deje bajar, y vuelva a montar. Eso cura el chocolate y lo deja más espeso."
+>
+> "Si le echa maizena queda espeso como en España, pero eso ya no es santafereño. El santafereño espesa a punta de molinillo."

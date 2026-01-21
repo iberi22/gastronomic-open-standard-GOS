@@ -24,8 +24,8 @@ main_ingredients:
 - Hielo
 - Limón
 difficulty: ★☆☆☆☆
-prep_time: 10 minutos
-cook_time: 0 minutos
+prep_time: "10 minutos"
+cook_time: "0 minutos"
 servings: 3
 images:
 - url: https://pixabay.com/es/photos/lulada-bebida-colombia-6146285/
@@ -112,51 +112,35 @@ La lulada es una bebida refrescante tradicional del Valle del Cauca y muy popula
 
 ---
 
-## Análisis Nutricional de Ingredientes Clave (por 100g)
+## Análisis Detallado y Sabiduría Colectiva
 
-| Ingrediente | Calorías (kcal) | Vitamina C (mg) | Carbs (g) | Fibra (g) | Compuestos Destacados |
-|-------------|-----------------|-----------------|-----------|-----------|----------------------|
-| Lulo        | 25              | 29              | 6         | 1.5       | Ácido ascórbico, carotenoides |
-| Limón       | 29              | 53              | 9         | 2.8       | Vitamina C, flavonoides |
+### 📊 Perfil Sensorial Estandarizado
 
-*Fuente: USDA FoodData Central, blogs de cocina colombiana*
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ácido-Cítrico        | 5/5              | Ácido cítrico dominante del lulo + Sacarosa. |
+| **Aroma**| Tropical Exótico     | 5/5              | Butanoato de metilo (nota frutal) intenso. |
+| **Textura**| Granizada / Pulposa  | 5/5              | Trozos de endocarpio de fruta intactos. |
+| **Vista** | Verde Neón           | 5/5              | Color clorofila vibrante del lulo fresco. |
 
----
+### ⚗️ Química y Física Culinaria
 
-## Fuentes y Referencias
+- **Maceración vs. Licuado:** La ciencia "Lulada" radica en la integridad celular. Si se licúa el lulo (como en un jugo normal), se rompen las semillas y la placenta, liberando compuestos amargos y aireando (oxidando) la bebida rápidamente. Al macerar (machacar) suavemente, se liberan los jugos ácidos pero se preserva la estructura de los sacos de jugo.
+- **Solubilidad del Azúcar en Frío:** Como se prepara en frío, el azúcar tarda en disolverse (baja cinética). Por eso en Cali a menudo se usa almíbar simple o se bate vigorosamente antes de echar el hielo para asegurar una solución saturada dulce equilibrada.
+- **El Lulo (*Solanum quitoense*):** Fruta solanácea única. Su color verde interior es estéticamente radioactivo pero enzimáticamente inestable; se oxida a marrón si no se consume rápido o se protege con limón (ácido ascórbico).
 
-- [Receta de lulada - El Gourmet](https://elgourmet.com/recetas/lulada/)
-- [Lulada: bebida típica de Cali - YouTube](https://www.youtube.com/results?search_query=lulada+cali)
-- [TikTok #lulada](https://www.tiktok.com/tag/lulada)
+### 🍎 Nutrición y Metabolismo
 
----
+- **Vitamina C:** Bomba antioxidante natural.
+- **Fibra:** Al consumir la pulpa entera, el aporte de fibra es significativo.
 
-## 🤓 Sabiduría Colectiva y Consejos
+### 🕰️ Contexto Socio-Cultural
 
-- "El secreto está en no licuar el lulo, sino macerarlo para conservar la textura."
-- "Sirve la lulada bien fría y con pajilla para disfrutar los trocitos de fruta."
-- "En las calles de Cali, la venden con hielo raspado y un toque de soda."
+- **Identidad Caleña:** No es un jugo, es un postre bebible. Se toma cucharado.
+- **Lulada vs Champús:** La Lulada solo tiene lulo. El Champús tiene maíz, piña y lulo. No confundir, error grave en el Valle.
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-### Categorización Sensorial y de Uso
-
-- **Perfil de sabor:** Rico en nutrientes activos: Sucrose, Hesperidin, Citric Acid
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
-
-### Perfil Nutricional (Estimado)
-
-- **Calorías:** 123 kcal (Total receta)
-- **Proteína:** 0.2g
-- **Grasas:** 0.1g
-- **Carbohidratos:** 32.4g
-
-### Sabiduría Colectiva
-
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
-
-### Fuentes
-
-- [Pendiente]
+> "No le eche limón si el lulo está biche (verde). El lulo ya es ácido."
+>
+> "El hielo tiene que estar picado finito, tipo frappé, no cubos enteros. La idea es que uno mastique hielo con lulo."
