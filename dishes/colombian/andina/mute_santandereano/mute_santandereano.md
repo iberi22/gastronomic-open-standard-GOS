@@ -1,21 +1,58 @@
 ---
-title: Mute Santandereano
-description: El Mute Santandereano es uno de los platos más tradicionales del departamento
-  de Santander, Colombia. Es una sopa robusta y rica en ingredientes, famosa por su
-  textura espesa y sabor profundo, resultado de la combinación de carnes, granos y
-  tubérculos.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Mute Santandereano"
+region: "Andina"
+categories:
+  - "Sopa"
+  - "Plato Fuerte"
+  - "Tradicional"
+sensory:
+  flavor:
+    - "Umami"
+    - "Ahumado"
+    - "Alcalino (maíz)"
+  texture:
+    - "Viscoso"
+    - "Denso"
+    - "Masticable (Callo/Carne)"
+  aroma:
+    - "Maíz pela'o (nixtamal)"
+    - "Leña"
+    - "Cilantro"
+    - "Chorizo"
+  presentation: "Cazuela profunda. El caldo debe ser muy espeso (casi estofado). Se acompaña de arepa santandereana (maíz pelado) y aguacate."
+main_ingredients:
+  - "Maíz Peto (Pelado/Nixtamalizado)"
+  - "Costilla de res"
+  - "Carne de cerdo"
+  - "Callo (Mondongo) (opcional pero tradicional)"
+  - "Mano de res (para gelatina)"
+  - "Papa criolla"
+  - "Papa sabanera"
+  - "Ahuyama"
+  - "Berenjena (regional)"
+  - "Garbanzo"
+difficulty: "Alta"
+prep_time: 720
+cook_time: 240
+servings: 10
 nutrition:
-  calories: 2169
+  calories: 750
   macros:
-    protein_g: 153.9
-    fat_g: 59.2
-    carbs_g: 252.5
-embedding_version: 1
+    protein_g: 45
+    fat_g: 30
+    carbs_g: 75
+tags:
+  - "Santander"
+  - "Maíz Pelado"
+  - "Domingo"
+images:
+  - url: "https://im.ge/i/mute-1.AbC012"
+    description: "Mute Santandereano espeso con maíz pelado"
+sources:
+  - name: "Gobernación de Santander"
+    url: "https://santander.gov.co"
+license: "MIT"
+description: "La sopa insignia de Santander. Se define por el uso de 'Maíz Pelado' (nixtamalizado con ceniza), que le da un sabor alcalino distintivo. Es una preparación monumental que combina múltiples carnes (res, cerdo, callo) y legumbres, resultando en un potaje de densidad extrema."
 ---
 
 # Mute Santandereano
@@ -89,29 +126,27 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 
 ### ⚗️ Química y Física Culinaria
 
-- **Gelatinización Alcalina (Nixtamal):** El **[Maíz Peto](../../ingredients/maiz_peto)** pre-cocido aporta un espesor único. Al cocinarse, el almidón dañado por la trilla absorbe agua masivamente, creando un "engrudo" suave que suspende los demás ingredientes.
-- **Complejidad de Tubérculos:** La mezcla de **[Papa Criolla](../../ingredients/papa_criolla)** (se disuelve, espesa), **[Papa Sabanera](../../ingredients/papa_sabanera)** (mantiene forma, textura cerosa) y **[Yuca](../../ingredients/yuca_dulce)** crea un espectro de texturas desde el puré hasta el trozo firme.
-- **Emulsión del Chorizo:** La grasa paprika/achiote del chorizo santandereano se funde y emulsiona parcialmente con el caldo espeso, distribuyendo el sabor ahumado uniformemente.
+- **Nixtamalización (Maíz Pelado):** El alma del mute. El maíz se hierve tradicionalmente con ceniza de leña (óxido de calcio/potasio). Este medio alcalino (pH > 11) disuelve la hemicelulosa del pericarpio (cáscara), liberando el grano suave. Químicamente, libera la **Niacina (Vit B3)** haciéndola digerible y genera compuestos de sabor únicos (como el *2-aminoacetofenona*) descritos como "sabor a tortilla/masa".
+- **Gelatinización Masiva:** El almidón del maíz nixtamalizado tiene mayor capacidad de absorción de agua que el crudo. Sumado a la papa criolla y la ahuyama (que se desintegran), crean un fluido no newtoniano de alta viscosidad.
+- **Colágeno de la Mano de Res:** La "mano" (pata) es crucial. Aporta cero sabor a carne pero cantidades masivas de colágeno tipo I. Al hidrolizarse, convierte el caldo en una gelatina termorreversible que "pega los labios".
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Calorías:** Extremadamente alto (>800 kcal). Comida de una sola ingesta diaria en tiempos antiguos.
-- **Fibra:** Altísima, gracias al maíz entero, garbanzos (si lleva) y vegetales.
-- **Proteína:** Completa y abundante.
-- **Micronutrientes:** La **[Ahuyama](../../ingredients/ahuyama)** aporta Vitamina A (retinol) y color dorado al caldo.
+- **Calorías:** ~700-800 kcal (denso).
+- **Bio-disponibilidad:** Gracias a la nixtamalización, el calcio aumenta hasta 300% y la niacina se vuelve asimilable, previniendo la pelagra en dietas basadas en maíz.
+- **Fibra:** Muy alta por el maíz entero y los garbanzos.
 
 ### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-- **Historia y Origen:** Plato insignia de Santander, nacido de la fusión de la cocina española de cocido con los maíces indígenas. Es comida de arrieros y campesinos para jornadas duras en el cañón del Chicamocha.
-- **Saberes Ancestrales:**
-    - "El mute sabe mejor 'trasnochado' (recalentado al día siguiente)". Esto permite que los sabores se amalgamen y el almidón retrograde.
-    - "Debe llevar mano de res o hueso de porcino para que la gelatina pegue los labios".
-    - "La ceniza de leña se usaba originalmente para pelar el maíz (nixtamalización casera)".
+- **Historia:** El "Mute" (del guaraní o quechua *mti* = maíz cocido) es un plato de resistencia. En Santander, la versión con ceniza ("pela'o") es la única aceptada.
+- **Dicho:** "Si no lleva lejía (ceniza), es sopa de maíz, no mute".
+- **Variantes:** Existe el Mute de Queso (vienes y cuaresma), pero el de carne es el rey.
 
 ### 📚 Estudios y Referencias
 
-1. *Ministerio de Cultura.* "Biblioteca Básica de Cocinas Tradicionales de Colombia".
-2. *FAO.* "Maize in human nutrition". (Nixtamalización y bio-disponibilidad).
+1. *Bressani, R.* "Chemistry and Technology of Corn". (Biblia de la nixtamalización).
+2. *Ministerio de Cultura.* "Biblioteca Básica de Cocinas Tradicionales de Colombia".
+3. *Martínez, E.* "Fogón Santandereano".
 
 ---
 

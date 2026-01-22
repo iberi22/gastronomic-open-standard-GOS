@@ -1,54 +1,54 @@
 ---
-title: Mote de Queso
-region: Caribe
+title: "Mote de Queso"
+region: "Caribe"
 categories:
-- Sopa
-- Plato fuerte
-- Comida típica
+  - "Sopa"
+  - "Plato Fuerte"
+  - "Vegetariano (casi)"
 sensory:
   flavor:
-  - Salado
-  - Lácteo
-  - Ácido
+    - "Alcalino (Queso)"
+    - "Umami lácteo"
+    - "Herbal (Bleo/Cilantro)"
   texture:
-  - Cremoso
-  - Suave
+    - "Viscoso (Baba de ñame)"
+    - "Sedoso"
+    - "Tropezudo (Queso firme)"
   aroma:
-  - Lácteo
-  - Herbal
-  presentation: Se sirve en tazón hondo, decorado con cilantro y acompañado de suero
-    costeño. Es el plato estrella en festividades y reuniones familiares de la costa
-    Caribe.
+    - "Leche fermentada"
+    - "Sofrito de ajo"
+    - "Tierra dulce (Ñame)"
+  presentation: "Cazuela rebosante. El caldo debe ser blanco y espeso, con cubos de queso visibles y un 'remolino' de suero costeño encima. Acompañado de arroz blanco y aguacate."
 main_ingredients:
-- Ñame
-- Queso costeño
-- Suero costeño
-difficulty: ★★☆☆☆
-prep_time: 20 minutos
-cook_time: 1 hora
-servings: 6
-images:
-- url: https://pixabay.com/es/photos/mote-queso-colombia-6146264/
-  description: Mote de queso tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/mote-de-queso
-  description: Variaciones de mote de queso en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-mote-de-queso-35792
-- https://www.gastronomiacolombiana.com/foro/mote-de-queso
-- https://www.google.com/maps/search/mote+de+queso
-- https://www.youtube.com/results?search_query=mote+de+queso
-- https://www.tiktok.com/tag/motedequeso
-license: MIT
-description: El Mote de Queso es una sopa cremosa y emblemática de la región Caribe,
-  especialmente popular en Córdoba y Sucre. Se prepara con ñame, queso costeño y suero,
-  resultando en un plato reconfortante, salado y ligeramente ácido, ideal para celebraciones
-  y almuerzos familiares.
+  - "Ñame Espino (Dioscorea rotundata)"
+  - "Queso Costeño (Duro/Salado)"
+  - "Suero Costeño"
+  - "Cebolla Roja"
+  - "Ajo"
+  - "Bleo de Chupa (opcional/tradicional)"
+  - "Jugo de limón (secreto)"
+difficulty: "Media"
+prep_time: "30"
+cook_time: "90"
+servings: 8
 nutrition:
-  calories: 1306
+  calories: 450
   macros:
-    protein_g: 74.0
-    fat_g: 104.5
-    carbs_g: 23.7
+    protein_g: 18
+    fat_g: 22
+    carbs_g: 48
+tags:
+  - "Sucre"
+  - "Córdoba"
+  - "Semana Santa"
+images:
+  - url: "https://im.ge/i/mote-1.AbC789"
+    description: "Mote de Queso espeso con suero y sofrito"
+sources:
+  - name: "Festival del Mote de Queso"
+    url: "https://sincelejo.gov.co"
+license: "MIT"
+description: "El emblema de la sabana caribeña. Una sopa que desafía la física: utiliza los mucílagos del ñame espino para crear una suspensión coloidal estable de queso y suero, sin cortarse. Es un estudio de la interacción entre almidones y ácidos lácteos."
 ---## Mote de Queso
 
 El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especialmente popular en Córdoba y Sucre. Se prepara con ñame, queso costeño y suero, resultando en un plato reconfortante, salado y ligeramente ácido, ideal para celebraciones y almuerzos familiares.
@@ -113,9 +113,25 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ### ⚗️ Química y Física Culinaria
 
-- **Gelatinización del Almidón:** El ñame espino (*Dioscorea rotundata*) libera amilosa y amilopectina al cocinarse por más de 45 min. Al "triturar parte del ñame" (Instrucción 3), se fuerza la dispersión de estas moléculas en el agua, aumentando drásticamente la viscosidad.
-- **Emulsificación Parcial:** Al agregar el queso costeño (rico en grasa saturada) y la mantequilla en caliente, los lípidos se emulsionan con la matriz de almidón gelatinizado, creando la textura blanca y brillante característica. El suero (ácido) estabiliza parcialmente esta emulsión.
-- **Interacción pH:** El suero costeño (pH ~4.5) corta ligeramente la riqueza grasa, limpiando el paladar y estimulando la salivación, lo que mejora la percepción del sabor salado.
+- **Hidrocoloides del Ñame (*Dioscorea rotundata*):** El ñame espino es único porque no solo libera amilosa (como la papa) sino también **mucílagos** (glicoproteínas). Estos actúan como estabilizantes naturales, permitiendo que la sopa espese con una textura "babosa" o sedosa (shear-thinning) que no se logra con otros tubérculos.
+- **Interacción Ácido-Proteína:** El suero costeño es ácido (pH ~4.5). Normalmente, agregar ácido a una sopa caliente de leche/queso la cortaría (floculación). Sin embargo, la matriz viscosa del ñame protege las micelas de caseína del queso y el suero, permitiendo una emulsión estable.
+- **El Efecto "Bleo":** El *Pereskia bleo* (Bleo de chupa) no solo da sabor; contiene oxalatos que, al interactuar con el calcio del queso, modifican la sensación en boca (astringencia controlada).
+
+### 🍎 Nutrición y Metabolismo
+
+- **Índice Glucémico:** Aunque es rico en carbohidratos, el mucílago del ñame ralentiza la absorción de glucosa.
+- **Calcio Bio-disponible:** Es quizás la sopa con mayor contenido de calcio de la cocina colombiana, debido a la saturación de queso costeño y suero.
+
+### 🕰️ Contexto Socio-Cultural
+
+- **Identidad de Sabana:** Es el plato de los departamentos ganaderos (Córdoba/Sucre). El ñame reemplaza a la papa andina como fuente de energía.
+- **Protocolo del Queso:** El queso costeño *debe* ser duro y salado. Si se usa queso campesino o mozzarella, se funde y desaparece, arruinando el plato (se vuelve un "fondue" fallido). El queso debe mantener su integridad estructural (cubos masticables).
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El ñame tiene que ser espino. Si le venden diamante, eso no espesa nunca y le toca echarle papa (sacrilegio)." — *Matrona de Sincelejo.*
+
+> "El suero no se deja hervir. Se echa ya cuando se bajó la olla, o mejor, cada uno se lo echa en el plato."
 
 ### 🍎 Nutrición y Metabolismo
 

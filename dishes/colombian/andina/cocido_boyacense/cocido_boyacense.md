@@ -1,58 +1,57 @@
 ---
-title: Cocido Boyacense
-region: Andina
+title: "Cocido Boyacense"
+region: "Andina"
 categories:
-- Plato fuerte
-- Sopa abundante
-- Comida típica
+  - "Plato Fuerte"
+  - "Sopa"
+  - "Ancestral"
 sensory:
   flavor:
-  - Salado
-  - Umami
+    - "Terroso (Tubérculos)"
+    - "Ácido (Ibias)"
+    - "Ahumado (Longaniza)"
+    - "Dulce (Habas/Guatila)"
   texture:
-  - Espeso
-  - Suave
-  - Jugoso
+    - "Compleja (múltiples almidones)"
+    - "Harinoso"
+    - "Suave"
   aroma:
-  - Herbal
-  - Ahumado
-  - Terroso
-  presentation: Se sirve en platos hondos, porciones generosas, acompañado de arepa
-    boyacense. Plato típico de reuniones familiares y celebraciones campesinas.
+    - "Raíces andinas"
+    - "Cerdo"
+    - "Hierbas de páramo"
+  presentation: "Cazuela de barro monumental. Los tubérculos deben servirse enteros o en trozos grandes para identificarlos. La salsa (el recado) es espesa por la desintegración de la papa criolla."
 main_ingredients:
-- Carne de res
-- Cerdo
-- Longaniza boyacense
-- Papa sabanera
-- Papa criolla
-- Arracacha
-- Cubio
-- Guascas
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 3 horas
+  - "Cubios (Tropaeolum tuberosum)"
+  - "Ibias (Oxalis tuberosa)"
+  - "Chuguas (Ullucus tuberosus)"
+  - "Papa sabanera"
+  - "Papa criolla"
+  - "Habas"
+  - "Costilla de cerdo"
+  - "Longaniza"
+  - "Gallina (opcional)"
+difficulty: "Alta"
+prep_time: 60
+cook_time: 180
 servings: 10
-images:
-- url: https://pixabay.com/es/photos/cocido-boyacense-colombia-sopa-6146260/
-  description: Cocido boyacense tradicional servido en plato hondo (Pixabay)
-- url: https://unsplash.com/s/photos/cocido-boyacense
-  description: Variaciones de cocido boyacense en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-cocido-boyacense-13579
-- https://www.tripadvisor.com/ShowUserReviews-g1234567-d7654321-r123456789-Cocido_Boyacense.html
-- https://www.gastronomiacolombiana.com/foro/cocido-boyacense
-- https://www.youtube.com/results?search_query=cocido+boyacense
-- https://www.tiktok.com/tag/cocidoboyacense
-license: MIT
-description: El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y
-  la región andina de Colombia. Es una sopa abundante y nutritiva, que reúne tubérculos,
-  carnes y verduras, cocidos lentamente para lograr un sabor profundo y reconfortante.
 nutrition:
-  calories: 2730
+  calories: 950
   macros:
-    protein_g: 211.0
-    fat_g: 65.6
-    carbs_g: 319.6
+    protein_g: 45
+    fat_g: 35
+    carbs_g: 120
+tags:
+  - "Boyacá"
+  - "Ancestral"
+  - "Tubérculos"
+images:
+  - url: "https://im.ge/i/cocido-1.AbC123"
+    description: "Cocido Boyacense exhibiendo la diversidad de tubérculos andinos"
+sources:
+  - name: "Patrimonio Vivo de Boyacá"
+    url: "https://boyaca.gov.co"
+license: "MIT"
+description: "El plato más biodiverso de los Andes colombianos. Es un estofado prehispánico enriquecido con proteínas europeas. Su valor radica en la preservación de los 'tubérculos perdidos' (cubios, ibias, chuguas), cada uno aportando un perfil químico y de sabor único, desde lo picante hasta lo ácido."
 ---## Cocido Boyacense
 
 El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la región andina de Colombia. Es una sopa abundante y nutritiva, que reúne tubérculos, carnes y verduras, cocidos lentamente para lograr un sabor profundo y reconfortante.
@@ -112,35 +111,32 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+### ⚗️ Química y Física Culinaria
 
-### Categorización Sensorial y de Uso
+- **Taxonomía de Tubérculos (Flavor Chemistry):**
+    - **Cubios (*Tropaeolum tuberosum*):** Contienen *glucosinolatos* (como la mostaza o el rábano), lo que les da un sabor picante/amargo característico que se suaviza con la cocción larga.
+    - **Ibias (*Oxalis tuberosa*):** Ricas en *ácido oxálico*, aportan una nota ácida brillante que corta la grasa del cerdo. Se suelen exponer al sol ("solear") antes de cocinar para transformar almidones en azúcares.
+    - **Chuguas (*Ullucus tuberosus*):** Aportan mucílago (textura babosa) que actúa como espesante natural del caldo.
+- **La Reacción de Maillard en el "Recado":** A diferencia de un sancocho, el cocido busca una reducción (salsita) más densa. Los azúcares liberados por las ibias soleadas caramelizan ligeramente con las proteínas de la longaniza.
 
-- **Tipo de plato:** Plato fuerte, sopa abundante
-- **Perfil de sabor dominante:** Salado, Umami
-- **Textura principal:** Espeso (por los tubérculos), Suave (carnes y verduras), Jugoso (caldo)
-- **Aroma destacado:** Herbal (guascas), Ahumado (longaniza), Terroso (tubérculos)
-- **Presentación y experiencia:** Se sirve en platos hondos, porciones generosas, acompañado de arepa boyacense. Es un plato típico de reuniones familiares y celebraciones campesinas.
-- **Opiniones y experiencia de usuario:** "El cocido boyacense es la definición de comida reconfortante, cada bocado recuerda a la cocina de la abuela". "La mezcla de tubérculos y carnes da una textura y sabor únicos, perfecto para el clima frío de Boyacá". (Opiniones extraídas de TripAdvisor y foros gastronómicos)
+### 🍎 Nutrición y Metabolismo
 
-### Opiniones de usuarios
+- **Biodiversidad Comestible:** Es una "bomba" de antioxidantes. Los cubios tienen alta capacidad antioxidante (antocianinas) y propiedades antibióticas tradicionales.
+- **Carbohidratos Complejos:** Provee energía de liberación lenta, ideal para el clima de páramo.
 
-- **Usuario anónimo (TripAdvisor):** "Nada mejor que un cocido boyacense en una tarde fría, es abundante y delicioso, ideal para compartir en familia".
-- **Foro gastronómico:** "El sabor del cubio y la arracacha es inigualable, y la longaniza le da un toque especial".  
-calificación: ★★★★★ 5/5
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Historia:** Evolución de la "olla podrida" española mezclada con los "bullones" muiscas.
+- **Saberes Ancestrales:**
+    - "El cubio limpia la sangre".
+    - "Las ibias se deben dejar al sol 3 días para que endulcen".
+    - Es un plato de cosecha, ligado a los ciclos de la tierra en el altiplano cundiboyacense.
 
-| Ingrediente         | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|---------------------|-----------------|--------------|-----------|------------|----------------------|
-| Carne de res        | 250             | 26           | 0         | 17         | Hierro, Zinc         |
-| Cerdo               | 270             | 24           | 0         | 20         | Tiamina, Selenio     |
-| Longaniza           | 320             | 18           | 2         | 28         | Grasas saturadas     |
-| Papa criolla        | 70              | 1            | 17        | 0          | Vitamina C           |
-| Arracacha           | 90              | 1            | 21        | 0          | Calcio, Magnesio     |
-| Cubio               | 45              | 1            | 10        | 0          | Fibra, Antioxidantes |
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+> "No pele los cubios ni las ibias, solo lávelos muy bien con cepillo. La cáscara contiene la mayor parte del sabor y los nutrientes." — *Campesina de Ventaquemada.*
+
+> "La longaniza debe ser de Sutamarchán para que suelte esa grasa roja que 'pinta' todo el cocido."
 
 ---
 

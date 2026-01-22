@@ -1,50 +1,52 @@
 ---
-title: Viudo de Pescado
-region: Caribe/Río Magdalena
+title: "Viudo de Pescado"
+region: "Caribe/Magdalena"
 categories:
-- Plato fuerte
-- Sopa
-- Tradicional
+  - "Plato Fuerte"
+  - "Río"
+  - "Ancestral"
 sensory:
   flavor:
-  - Umami (Pescado)
-  - Herbal
-  - Neutro (Tubérculos)
+    - "Terroso (Natural)"
+    - "Hogao (Umami)"
+    - "Dulce Tubérculo"
   texture:
-  - Suave
-  - Caldoso
-  - Desmenuzable
+    - "Suave (Pescado al vapor)"
+    - "Harinoso (Vituallas)"
+    - "Melosa (Ahuyama)"
   aroma:
-  - Río (Fresco)
-  - Cilantro
-  - Vapor
-  presentation: Pescado entero o en postas sobre hojas de plátano (seco), con el caldo servido aparte (o todo junto en olla de barro).
+    - "Limo de río (fresco)"
+    - "Hierba de río (Cimarrón)"
+    - "Humo de leña"
+  presentation: "Bandeja generosa. El pescado se sirve entero, bañado en hogao, sobre una cama de yuca, plátano y ahuyama. El caldo (consomé) se sirve en taza aparte."
 main_ingredients:
-- Bocachico o Capaz
-- Yuca
-- Plátano verde
-- Ahuyama
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 45 minutos
+  - "Bocachico / Capaz (Pescado de escama)"
+  - "Hojas de Plátano o Bijao (para sellar)"
+  - "Ñame / Yuca / Plátano / Ahuyama"
+  - "Hogao Criollo"
+  - "Cilantro Cimarrón"
+difficulty: "Media"
+prep_time: "30"
+cook_time: "45"
 servings: 6
 nutrition:
-  calories: 450
+  calories: 420
   macros:
-    protein_g: 35.0
-    fat_g: 10.0
-    carbs_g: 55.0
+    protein_g: 32
+    fat_g: 12
+    carbs_g: 52
 tags:
-- Río Magdalena
-- Domingo
-- Sancocho
+  - "Río Magdalena"
+  - "Tradición"
+  - "Pesca"
 images:
-- url: https://pixabay.com/es/photos/viudo-pescado-colombia-6146268/
-  description: Viudo de pescado ribereño
+  - url: "https://im.ge/i/viudo-1.AbC123"
+    description: "Viudo de pescado servido con su consomé aparte"
 sources:
-- https://www.eltiempo.com/vida/receta-viudo-de-pescado-57933
-license: MIT
-description: El Viudo de Pescado es una técnica de cocción al vapor/sudado típica del Río Magdalena. Tradicionalmente el pescado se cocina SOBRE la cama de vituallas (plátano, yuca) y se sirve "viudo" (separado del caldo) o bañado en salsa criolla.
+  - name: "Crónicas del Magdalena"
+    url: "https://gos.org/caribe/viudo-pescado"
+license: "MIT"
+description: "La técnica de cocción por niveles. El viudo es una 'vaporera biológica' donde las vituallas crean una barrera física frente al fuego, permitiendo que el pescado se cocine exclusivamente por calor latente (vapor), preservando su mioglobina y grasas delicadas."
 ---
 
 # Viudo de Pescado
@@ -112,22 +114,25 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 
 ### ⚗️ Química y Física Culinaria
 
-- **Cocción Escalonada:** La técnica del viudo es una "vaporera natural". Los ingredientes duros abajo hierven; el pescado arriba se cocina suavemente con vapor a ~95°C, evitando que la turbulencia del agua rompa su carne delicada.
-- **Geosmina:** El sabor a "tierra" característico del Bocachico proviene de la geosmina. El uso de ácidos (limón en el lavado) y hierbas fuertes (cimarrón) ayuda a enmascarar este compuesto si es muy fuerte.
+- **La Vaporera Natural (Gradiente Térmico):** Las vituallas (plátano, yuca) al fondo de la olla actúan como un **escudo térmico** y fuente de vapor. El agua hierve en la base (100°C), pero el pescado, suspendido arriba en hojas de plátano, se cocina por **calor latente** (vapor saturado) a ~95-98°C. Esto previene la sobrecocción de las proteínas sarcoplásmicas y mantiene el pescado suculento.
+- **Geosmina y Enmascaramiento:** El pescado de río suele tener compuestos de **Geosmina** (sabor a tierra/moho). La cocción al vapor con hojas de bijao/plátano y el uso intensivo de *Cilantro Cimarrón* (rico en aldehídos cítricos) actúan como antagonistas sensoriales de la geosmina, neutralizando el sabor terroso.
+- **Papillot de Hoja:** Las hojas no solo dan olor; crean una cámara hermética que aumenta ligeramente la presión parcial de vapor, acelerando la cocción del pescado sin deshidratarlo.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Completo:** Proteína de alta calidad + Carbohidratos complejos + Fibra.
-- **Bajo en Grasa:** Al ser sudado/vapor, no requiere aceites añadidos (salvo el guiso).
+- **Hidratación Extrema:** Al servirse el caldo por un lado y la carne magra por otro, es una comida que fuerza la ingesta hídrica y mineral.
+- **Ácidos Grasos:** El Bocachico/Capaz son ricos en Omega-3 y grasas poliinsaturadas, que se preservan mejor al vapor que fritos.
 
 ### 🕰️ Contexto Socio-Cultural
 
-- **Paseo de Olla:** Es el plato típico de los paseos al río Magdalena. Se hace un hueco en la tierra, leña, y se cocina con lo que se pesca ahí mismo.
-- **Bocachico:** Pescado insignia de la seguridad alimentaria en Colombia, aunque hoy amenazado.
+- **El Nombre:** Se dice "Viudo" porque el pescado aparece solo en el plato, separado de su caldo (la sopa se "murió" o se fue). También por la melancolía del pescador de río.
+- **Civilización del Magdalena:** Refleja la economía de río donde la abundancia de pescado y plátano dictaba la dieta diaria.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *Fray Juán de Santa Gertrudis.* "Maravillas de la Naturaleza" (Crónicas del s. XVIII sobre comer pescado en el Magdalena).
+> "No destape la olla por nada del mundo hasta que pasen 15 minutos de haber puesto el pescado. Si sale el vapor, el viudo se le queda 'crudo' por dentro." — *Matrona de Honda (Tolima/Río Magdalena).*
+
+> "El Bocachico se raya (cortes transversales finos) para romper las espinas intramusculares 'Y' y que se cocinen con el vapor."
 
 ---
 

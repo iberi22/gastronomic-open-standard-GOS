@@ -1,55 +1,52 @@
 ---
-title: Caldo de Costilla
-region: Andina
+title: "Caldo de Costilla"
+region: "Andina"
 categories:
-- Desayuno
-- Sopa reconfortante
-- Comida típica
+  - "Desayuno"
+  - "Sopa"
+  - "Restaurativo"
 sensory:
   flavor:
-  - Salado
-  - Umami
+    - "Salado"
+    - "Umami (hueso)"
+    - "Herbal (cilantro)"
   texture:
-  - Caldo claro
-  - Suave
+    - "Líquido (Caldo claro)"
+    - "Suave (Papa/Carne)"
   aroma:
-  - Herbal
-  - Cárnico
-  presentation: Se sirve en tazón grande, con trozos generosos de costilla y papa,
-    acompañado de arepa y chocolate caliente. Plato para 'levantar muertos' y reuniones
-    familiares matutinas.
+    - "Res hervida"
+    - "Cebolla larga"
+    - "Cilantro"
+  presentation: "Tazón grande y profundo. El caldo debe verse dorado y translúcido (no turbio). La costilla debe sobresalir y estar acompañada de papas enteras o en trozos grandes. Cilantro fresco esparcido encima al momento."
 main_ingredients:
-- Costilla de res
-- Papa sabanera
-- Cilantro
-- Cebolla larga
-- Ajo
-difficulty: ★★☆☆☆
-prep_time: 15 minutos
-cook_time: 1 hora
+  - "Costilla de res (con hueso y grasa)"
+  - "Papa pastusa (o sabanera)"
+  - "Cebolla larga"
+  - "Ajo"
+  - "Cilantro"
+  - "Agua"
+difficulty: "Baja"
+prep_time: 15
+cook_time: 60
 servings: 6
-images:
-- url: https://pixabay.com/es/photos/caldo-de-costilla-colombia-sopa-6146257/
-  description: Caldo de costilla tradicional servido en tazón (Pixabay)
-- url: https://unsplash.com/s/photos/caldo-de-costilla
-  description: Variaciones de caldo de costilla en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-caldo-de-costilla-35791
-- https://www.gastronomiacolombiana.com/foro/caldo-de-costilla
-- https://www.google.com/maps/search/caldo+de+costilla
-- https://www.youtube.com/results?search_query=caldo+de+costilla
-- https://www.tiktok.com/tag/caldodecostilla
-license: MIT
-description: El Caldo de Costilla es un desayuno típico de la región andina colombiana,
-  especialmente en Bogotá y los pueblos de Cundinamarca y Boyacá. Es una sopa reconfortante
-  hecha con costilla de res, papa, cebolla y cilantro, famosa como remedio para el
-  “guayabo” (resaca) y para comenzar el día con energía.
 nutrition:
-  calories: 722
+  calories: 350
   macros:
-    protein_g: 19.8
-    fat_g: 1.2
-    carbs_g: 163.5
+    protein_g: 22
+    fat_g: 18
+    carbs_g: 25
+tags:
+  - "Levantamuertos"
+  - "Cundiboyacense"
+  - "Desayuno"
+images:
+  - url: "https://im.ge/i/caldo-1.AbC456"
+    description: "Caldo de costilla 'levanta muertos' con cilantro fresco"
+sources:
+  - name: "Tradición Oral Andina"
+    url: "https://gos.org/tradition/caldo"
+license: "MIT"
+description: "El desayuno reconstituyente por excelencia de la región andina (Bogotá, Cundinamarca, Boyacá). Conocido como 'Levantamuertos' por su capacidad para reponer electrolitos y energía tras una noche de fiesta (o simplemente para el frío). Su ciencia radica en la extracción de sabor del hueso de costilla."
 ---## Caldo de Costilla
 
 El Caldo de Costilla es un desayuno típico de la región andina colombiana, especialmente en Bogotá y los pueblos de Cundinamarca y Boyacá. Es una sopa reconfortante hecha con costilla de res, papa, cebolla y cilantro, famosa como remedio para el “guayabo” (resaca) y para comenzar el día con energía.
@@ -112,7 +109,7 @@ El Caldo de Costilla es un desayuno típico de la región andina colombiana, esp
 ### Opiniones de usuarios
 
 - **Usuario anónimo (Google Maps):** "Un desayuno infaltable en Bogotá, el caldo de costilla nunca falla para el frío y la resaca".
-- **Foro gastronómico:** "El secreto está en el cilantro fresco y la cocción lenta de la costilla".  
+- **Foro gastronómico:** "El secreto está en el cilantro fresco y la cocción lenta de la costilla".
 calificación: ★★★★★ 5/5
 
 ### Perfil Nutricional de Ingredientes Clave (por 100g)

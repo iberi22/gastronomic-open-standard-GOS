@@ -1,21 +1,52 @@
 ---
-title: Manjar Blanco
-description: El Manjar Blanco es un postre tradicional de la región andina colombiana,
-  especialmente popular en el Valle del Cauca y Boyacá. Se elabora a base de leche,
-  azúcar y arroz, cocido lentamente hasta obtener una textura cremosa y un sabor delicadamente
-  dulce.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Manjar Blanco"
+region: "Andina"
+categories:
+  - "Postre"
+  - "Lácteo"
+  - "Ancestral"
+sensory:
+  flavor:
+    - "Dulce profundo"
+    - "Lácteo caramelizado"
+    - "Arroz tostado (residual)"
+  texture:
+    - "Elástico"
+    - "Arenoso fino (arroz)"
+    - "Denso"
+  aroma:
+    - "Leche hervida"
+    - "Canela"
+    - "Vainilla"
+  presentation: "Totuma de mate o recipiente de dulce. La superficie debe ser brillante y ligeramente más oscura (costra). Se come con cuchara o dedito, a menudo acompañado de brevas o queso cuajada."
+main_ingredients:
+  - "Leche entera (cruda idealmente)"
+  - "Azúcar (o panela)"
+  - "Arroz (remojado y molido/licuado)"
+  - "Canela"
+  - "Pasas (opcional/variante)"
+difficulty: "Media"
+prep_time: 120
+cook_time: 180
+servings: 12
 nutrition:
-  calories: 3485
+  calories: 380
   macros:
-    protein_g: 71.0
-    fat_g: 66.7
-    carbs_g: 666.0
-embedding_version: 1
+    protein_g: 8
+    fat_g: 12
+    carbs_g: 65
+tags:
+  - "Valle del Cauca"
+  - "Navidad"
+  - "Dulce"
+images:
+  - url: "https://im.ge/i/manjar-1.AbC789"
+    description: "Manjar Blanco tradicional en totuma"
+sources:
+  - name: "Tradición Valluna"
+    url: "https://gos.org/tradition/manjar"
+license: "MIT"
+description: "El dulce insignia del Valle del Cauca y el Cauca. A diferencia del arequipe (que es solo reducción), el Manjar Blanco utiliza harina de arroz como espesante, lo que le confiere una textura única, ligeramente granulosa y elástica, y un sabor menos empalagoso."
 ---
 
 # Manjar Blanco
@@ -66,32 +97,31 @@ El Manjar Blanco es un postre tradicional de la región andina colombiana, espec
 
 ---
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+### ⚗️ Química y Física Culinaria
 
-### Categorización Sensorial y de Uso
+- **Diferencia vs. Arequipe/Dulce de Leche:**
+    - **Arequipe:** Espesa por pura reducción (evaporación de agua) y caramelización de la lactosa (Reacción de Maillard).
+    - **Manjar Blanco:** Espesa por una combinación de reducción Y **gelatinización del almidón de arroz**. Esto permite obtener una textura cortable con menos tiempo de reducción y un perfil de dulzor menos agresivo.
+- **Pardeamiento No Enzimático:** El color beige característico proviene de la reacción entre los aminoácidos de la leche (caseína/suero) y los azúcares reductores (lactosa + sacarosa hidrolizada) bajo calor constante.
+- **Inhibición de Cristalización:** El almidón de arroz interfiere en la formación de cristales grandes de azúcar, manteniendo el dulce suave ("short texture") incluso después de meses de almacenamiento.
 
-- **Tipo de plato:** Postre, dulce tradicional
-- **Perfil de sabor dominante:** Dulce, Lácteo
-- **Textura principal:** Cremoso, Suave
-- **Aroma destacado:** Lácteo, Canela, Vainilla
-- **Presentación y experiencia:** Se sirve en copas o platos pequeños, espolvoreado con canela. Es el broche de oro en celebraciones y reuniones familiares.
-- **Opiniones y experiencia de usuario:** "El manjar blanco es el postre de la infancia, cremoso y delicadamente dulce, perfecto después de un almuerzo típico". "La canela y la vainilla le dan un aroma irresistible". (Opiniones extraídas de Google Maps y foros gastronómicos)
+### 🍎 Nutrición y Metabolismo
 
-### Opiniones de usuarios
+- **Energía Pura:** Es un concentrado energético.
+- **Calcio:** Al ser leche reducida, la concentración de calcio por gramo es muy alta.
 
-- **Usuario anónimo (Google Maps):** "El manjar blanco de Boyacá es el mejor, suave y nada empalagoso, ideal para acompañar con brevas".
-- **Foro gastronómico:** "El secreto está en revolver sin parar para que no se pegue y quede cremoso".
-calificación: ★★★★★ 5/5
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+- **Historia:** Herencia árabe traída por los españoles (similar al *muhalabia*). En el Valle del Cauca se estableció como la industria casera por excelencia.
+- **Saberes Ancestrales:**
+    - "El punto se sabe cuando al pasar la mecedora se ve el fondo de la paila (punto de letra/caminos)".
+    - "Debe hacerse en paila de cobre para que no se pegue y conduzca el calor parejo" (Aunque hoy se debate por toxicidad, la tradición dicta cobre).
 
-| Ingrediente     | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|-----------------|-----------------|--------------|-----------|------------|----------------------|
-| Leche entera    | 61              | 3.2          | 4.8       | 3.3        | Calcio, Vitamina D   |
-| Azúcar          | 387             | 0            | 100       | 0          | Energía rápida       |
-| Arroz           | 130             | 2.7          | 28        | 0.3        | Almidón, Magnesio    |
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+> "Remoje el arroz desde la noche anterior y licúelo con un poco de la misma leche antes de agregarlo. No use harina de arroz comercial si puede evitarlo, el sabor del arroz fresco molido es superior." — *Dulcera de Buga.*
+
+> "Si quiere que le dure más, agréguele una pizca de bicarbonato, pero cuidado que oscurece el dulce más rápido."
 
 ---
 

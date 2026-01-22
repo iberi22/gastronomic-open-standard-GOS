@@ -11,3 +11,6 @@ mkdocs.yml
 site/dist/
 site/node_modules/
 .cache/
+
+__pycache__/
+*.pyc

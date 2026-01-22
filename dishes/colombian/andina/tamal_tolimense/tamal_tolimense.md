@@ -1,21 +1,56 @@
 ---
-title: Tamal Tolimense
-description: El Tamal Tolimense es un plato tradicional del Tolima y la región andina
-  de Colombia. Se trata de una masa de maíz rellena de carnes, verduras y condimentos,
-  envuelta en hojas de plátano y cocida al vapor, resultando en un bocado suave, aromático
-  y reconfortante.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
+title: "Tamal Tolimense"
+region: "Andina"
+categories:
+  - "Plato Fuerte"
+  - "Desayuno"
+  - "Tradicional"
+sensory:
+  flavor:
+    - "Salado"
+    - "Umami"
+    - "Herbal"
+  texture:
+    - "Suave (Masa)"
+    - "Jugoso (Carnes)"
+    - "Fibroso (Hoja)"
+  aroma:
+    - "Hoja de plátano ahumada"
+    - "Cerdo"
+    - "Especias"
+  presentation: "Envuelto piramidal o cilíndrico en hojas de plátano, amarrado con pita. Al abrirse, revela una masa amarilla vibrante impregnada de jugos."
+main_ingredients:
+  - "Masa de maíz"
+  - "Pollo"
+  - "Carne de cerdo (costilla)"
+  - "Tocino"
+  - "Papa"
+  - "Zanahoria"
+  - "Arveja verde"
+  - "Huevo duro"
+  - "Hoja de plátano"
+difficulty: "Alta"
+prep_time: 60
+cook_time: 240
+servings: 10
 nutrition:
-  calories: 2525
+  calories: 720
   macros:
-    protein_g: 319.8
-    fat_g: 95.6
-    carbs_g: 71.8
-embedding_version: 1
+    protein_g: 38
+    fat_g: 42
+    carbs_g: 48
+tags:
+  - "Ibagué"
+  - "Desayuno Tradicional"
+  - "Envueltos"
+images:
+  - url: "https://im.ge/i/tamal-1.AbC456"
+    description: "Tamal Tolimense abierto mostrando su relleno de carnes y verduras"
+sources:
+  - name: "Enciclopedia de la Gastronomía Colombiana"
+    url: "https://gos.org/colombia/tamal"
+license: "MIT"
+description: "El tamal más famoso de Colombia. Se distingue por el uso de arroz y masa de maíz, la generosidad de sus carnes (pollo, cerdo, tocino) y su cocción prolongada que funde los sabores de la hoja de plátano con el relleno."
 ---
 
 # Tamal Tolimense
@@ -76,40 +111,38 @@ El Tamal Tolimense es un plato tradicional del Tolima y la región andina de Col
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Tipo de plato:** Plato fuerte, desayuno festivo
-- **Perfil de sabor dominante:** Salado, Umami
-- **Textura principal:** Suave (masa), Jugoso (relleno), Cremoso (mezcla de carnes y huevo)
-- **Aroma destacado:** Herbal (hoja de plátano), Ahumado, Especiado
-- **Presentación y experiencia:** Se sirve envuelto en hoja de plátano, porciones generosas, ideal para desayunos dominicales y celebraciones familiares.
-- **Opiniones y experiencia de usuario:** "El aroma al abrir el tamal es inconfundible, la hoja de plátano aporta un sabor único y la mezcla de carnes es jugosa y reconfortante". "Perfecto para comenzar el día con energía y tradición". (Opiniones extraídas de Google Maps y foros gastronómicos)
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami, Salado        | 4/5              | Inosinato de carnes + Ácido glutámico (arveja). |
+| **Aroma**| Herbal, Ahumado      | 5/5              | **Eugenol** y polifenoles transferidos de la hoja de plátano. |
+| **Textura**| Suave, Heterogénea  | 5/5              | Matriz de almidón gelatinizado con inclusiones sólidas. |
+| **Boca** | Sedoso, Revestido    | 4/5              | Emulsión de manteca de cerdo en la masa de maíz. |
 
-### Opiniones de usuarios
+### ⚗️ Química y Física Culinaria
 
-- **Usuario anónimo (Google Maps):** "El tamal tolimense es mi desayuno favorito, la hoja le da un toque especial y siempre viene bien acompañado de chocolate caliente".
-- **Foro gastronómico:** "La textura suave de la masa y el relleno jugoso son insuperables. Es un plato que une a la familia".
-calificación: ★★★★★ 5/5
+- **Intercambio Aromático Hoja-Masa:** La hoja de plátano (*Musa paradisiaca*), al calentarse sobre 80°C bajo presión de vapor, libera compuestos volátiles como el eugenol (aroma a clavo) y vainillina. Estos se disuelven en la fase grasa (manteca) de la masa de maíz, impregnando el tamal con su aroma "verde" y ahumado característico.
+- **Gelatinización Retrógrada:** La masa de maíz sufre una gelatinización completa durante las 4 horas de hervor. Al enfriarse ligeramente (reposo), el almidón inicia una retrogradación parcial que le da la firmeza necesaria para mantener la forma sin desmoronarse al abrir la hoja.
+- **Colágeno y Succulencia:** El uso de costilla y tocino aporta colágeno que, tras la cocción prolongada, se transforma en gelatina, creando una sensación de jugosidad extrema en el centro del tamal que amalgama las carnes con la masa.
 
-### Perfil Nutricional de Ingredientes Clave (por 100g)
+### 🍎 Nutrición y Metabolismo
 
-| Ingrediente         | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |
-|---------------------|-----------------|--------------|-----------|------------|----------------------|
-| Masa de maíz        | 110             | 2            | 23        | 1          | Fibra, Magnesio      |
-| Cerdo               | 242             | 27           | 0         | 14         | Hierro, Zinc         |
-| Pollo               | 165             | 31           | 0         | 4          | Niacina, Selenio     |
-| Huevo               | 155             | 13           | 1         | 11         | Colina, Vitamina D   |
-| Tocino              | 541             | 37           | 1         | 42         | Grasas saturadas     |
+- **Calorías:** ~700-850 kcal por unidad estándar (500g).
+- **Relación Micronutrientes:** Rico en vitaminas del complejo B (carnes) y carotenos (zanahoria, achiote).
+- **Carga Glucémica:** Moderada-Alta. La fibra del maíz y la alta presencia de grasas retardan ligeramente la absorción de los carbohidratos, evitando picos de glucosa excesivamente bruscos comparado con masas refinadas.
 
-*Fuente: USDA FoodData Central, TCAC, fuentes locales*
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
----
+- **Historia y Origen:** El tamal es una herencia prehispánica (del náhuatl *tamalli*), pero la versión tolimense es un compendio del mestizaje: maíz nativo, cerdo y pollo traídos por españoles, y la técnica de envuelto milenaria.
+- **Sabores de la Memoria:** "El secreto es el amarrado; si queda flojo, le entra agua y el tamal se 'lava', perdiendo su alma".
+- En el Tolima, el tamal no es solo comida, es un rito de identidad que se celebra cada 24 de junio (Día del Tamal).
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Hoja flexible:** Pasa la hoja de plátano por el fuego para que no se rompa al envolver.
-2. **Relleno jugoso:** No escatimes en guiso, es clave para un tamal sabroso.
-3. **Cocción lenta:** Cocina a fuego bajo y constante para que todos los sabores se integren.
+> "Para que la masa quede 'pintadita' (amarilla), el secreto es un buen aceite de achiote hecho en casa, no uses colorantes artificiales. El achiote además ayuda a conservar el tamal por más tiempo." — *Maestra Tamalera de Ibagué.*
+
+> "Las hojas deben ser 'soasadas' (pasadas por fuego) apenas hasta que cambien de color y brillen; así se vuelven elásticas y liberan el aroma que el tamal necesita absorber."
 
 ---
 

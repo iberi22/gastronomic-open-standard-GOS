@@ -112,6 +112,37 @@ El Sancocho de Pescado es una sopa tradicional y emblemática de la región Pac�
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
+### 📊 Perfil Sensorial Estandarizado
+
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Umami Marino         | 5/5              | Ácidos grasos del pescado + glutamatos naturales. |
+| **Aroma**| Herbal - Cilantro    | 5/5              | Terpenos volátiles de la hierba fresca. |
+| **Textura**| Caldo Denso        | 4/5              | Almidones de yuca y plátano disueltos. |
+| **Vista** | Amarillo Claro       | 4/5              | Color natural sin colorantes artificiales. |
+
+### ⚗️ Química y Física Culinaria
+
+- **Extracción de Colágeno:** La cocción de las cabezas y espinas libera gelatina, dando cuerpo al caldo.
+- **Emulsión de Grasas:** Los aceites naturales del pescado se emulsionan parcialmente con los almidones del plátano verde.
+- **Oxidación Controlada:** El uso de limón y hierbas frescas al final previene la oxidación de sabores delicados.
+
+### 🍎 Nutrición y Metabolismo
+
+- **Proteína Magra:** Alta calidad proteica con bajo contenido de grasas saturadas.
+- **Potasio y Fósforo:** Aporte mineral significativo del pescado y el plátano.
+
+### 🕰️ Contexto Socio-Cultural
+
+- **Alimento Diario:** Es la base de la alimentación en los pueblos costeros del Pacífico.
+- **Medicina:** Considerado reconstituyente para enfermos y puérperas.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El pescado no se revuelve, se menea la olla. Si mete cuchara, deshace la carne."
+>
+> "Si le echa leche de coco, ya es otra cosa (encocado o pusandao), el sancocho de pescado va clarito."
+
 ### Categorización Sensorial y de Uso
 
 - **Tipo de plato:** Plato fuerte, sopa festiva
@@ -124,7 +155,7 @@ El Sancocho de Pescado es una sopa tradicional y emblemática de la región Pac�
 ### Opiniones de usuarios
 
 - **Usuario anónimo (Google Maps):** "El sancocho de pescado del Pacífico es insuperable, el sabor a coco y el pescado fresco lo hacen único".
-- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".  
+- **Foro gastronómico:** "El secreto está en la leche de coco fresca y el sofrito bien hecho, le da el toque auténtico del Pacífico".
 calificación: ★★★★★ 5/5
 
 ### Perfil Nutricional de Ingredientes Clave (por 100g)

@@ -1,61 +1,54 @@
 ---
-title: Sancocho Costeño
-region: Caribe
+title: "Sancocho Costeño"
+region: "Caribe"
 categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
+  - "Plato Fuerte"
+  - "Sopa"
+  - "Festivo"
 sensory:
   flavor:
-  - Salado
-  - Umami
+    - "Salado profundo"
+    - "Umami (Trifecta de carnes)"
+    - "Cítrico (Toque final)"
   texture:
-  - Espeso
-  - Suave
-  - Jugoso
+    - "Espeso (Cremoso)"
+    - "Mantecoso (Ñame)"
+    - "Jugoso"
   aroma:
-  - Herbal
-  - Cárnico
-  - Ahumado
-  presentation: Se sirve en platos hondos, porciones generosas, acompañado de arroz
-    y aguacate. Es el centro de las celebraciones y reuniones familiares en la costa.
+    - "Leña (si se hace en fogón)"
+    - "Cilantro Cimarrón"
+    - "Maíz tierno"
+  presentation: "Plato hondo rebosante. Los tubérculos deben servirse enteros o en pedazos grandes. Se acompaña con arroz blanco (o de coco) y aguacate harinoso."
 main_ingredients:
-- Costilla de res
-- Pollo
-- Cerdo
-- Ñame
-- Yuca
-- Papa criolla
-- Plátano
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 2 horas
+  - "Costilla de Res (o Carne Salada)"
+  - "Cerdo / Pollo"
+  - "Ñame Espino (Factor espesante)"
+  - "Yuca Dulce"
+  - "Plátano Verde"
+  - "Mazorca de Maíz"
+  - "Cilantro y Cebolla"
+difficulty: "Media"
+prep_time: "40"
+cook_time: "120"
 servings: 10
 nutrition:
-  calories: 1255
+  calories: 850
   macros:
-    protein_g: 28.1
-    fat_g: 5.4
-    carbs_g: 287.7
+    protein_g: 40
+    fat_g: 35
+    carbs_g: 95
 tags:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
+  - "Domingo"
+  - "Olla Comunitaria"
+  - "Paseo de Olla"
 images:
-- url: https://pixabay.com/es/photos/sancocho-costeño-colombia-6146267/
-  description: Sancocho costeño tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/sancocho-costeño
-  description: Variaciones de sancocho costeño en Unsplash
+  - url: "https://im.ge/i/sancocho-1.AbC123"
+    description: "Sancocho costeño hirviendo en olla de aluminio fundido"
 sources:
-- https://www.eltiempo.com/vida/receta-sancocho-costeno-13580
-- https://www.gastronomiacolombiana.com/foro/sancocho-costeno
-- https://www.google.com/maps/search/sancocho+costeño
-- https://www.youtube.com/results?search_query=sancocho+costeño
-- https://www.tiktok.com/tag/sancochocosteño
-license: MIT
-description: El Sancocho Costeño es uno de los platos más representativos de la región
-  Caribe colombiana. Es una sopa abundante y festiva, preparada con variedad de carnes,
-  tubérculos y plátano, y servida en grandes reuniones familiares o celebraciones.
+  - name: "Patrimonio Inmaterial del Caribe"
+    url: "https://gos.org/caribe/sancocho"
+license: "MIT"
+description: "El sancocho es la institución social del Caribe. A diferencia de las sopas andinas, utiliza el ñame espino como hidrocoloide principal, creando un caldo denso y mantecoso que soporta una mezcla masiva de proteínas y carbohidratos complejos."
 ---## Sancocho Costeño
 
 El Sancocho Costeño es uno de los platos más representativos de la región Caribe colombiana. Es una sopa abundante y festiva, preparada con variedad de carnes, tubérculos y plátano, y servida en grandes reuniones familiares o celebraciones.
@@ -125,32 +118,28 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 
 ### ⚗️ Química y Física Culinaria
 
-- **La "Trifecta" de Almidones:** El sancocho usa **[Plátano Verde](../../ingredients/platano_verde)** (almidón resistente, estructura), **[Yuca](../../ingredients/yuca_dulce)** (gel translúcido, espesor "chicudo") y Ñame (mucílago, densidad). Esta combinación crea una viscosidad única que no se logra con harina. El ñame, en particular, debe "desbaratarse" para amarrar el caldo.
-- **Extracción de Colágeno:** La costilla de res y el hueso de cerdo requieren cocción prolongada en medio húmedo para convertir el colágeno duro en gelatina. Esta gelatina da la sensación pegajosa en los labios (*lip-sticking*) apreciada en un buen sancocho.
-- **Sinergia Umami:** Al combinar res (inosinato), pollo y cerdo, se multiplica la percepción de sabrosura (umami) exponencialmente más que usando una sola carne.
+- **Ciencia de la "Salazón" (Carne Salada):** Tradicionalmente, se usa carne curada con sal para el aporte de sabor. La sal desnaturaliza las proteínas de la carne en frío, lo que al cocinarse en el sancocho libera una mineralidad profunda y una textura "curada" que el agua sola no logra.
+- **La Trifecta de Almidones (Dinámica de Viscosidad):**
+    - **Plátano Verde:** Rico en celulosa y almidón resistente. Da estructura y "mordida".
+    - **Yuca:** Aporta viscosidad elástica (gel de amilopectina).
+    - **Ñame Espino:** Es el **Hidrocoloide** clave. Sus mucílagos se dispersan totalmente, creando la textura "leche" o cremosa del caldo, unificando las grasas de las carnes con el agua.
+- **Cocción por Convección Extrema:** El sancocho de "Paseo de Olla" (en leña) utiliza temperaturas fluctuantes y humo. El humo aporta fenoles que actúan como conservantes ligeros y potenciadores de sabor ahumado sutil.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Calorías:** Alto (~700-900 kcal). Es un plato completo.
-- **Carbohidratos:** Muy alto. Carga de glucógeno masiva por la mezcla de tubérculos + arroz acompañante.
-- **Proteína:** Alta y completa (mix de animales).
-- **Micronutrientes:**
-    - **Potasio:** Abundante en el plátano y tubérculos (excelente para rehidratación/resaca).
-    - **Vitamina C:** La **Papa Criolla** y el cilantro crudo aportan algo, si no se oxidan totalmente.
+- **Carga de Glucógeno:** Ideal para climas tropicales de alta demanda física.
+- **Electrolitos:** La combinación de tubérculos + sal lo convierte en un suero de rehidratación oral natural (perfecto para combatir la deshidratación por calor).
 
-### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
+### 🕰️ Contexto Socio-Cultural
 
-- **Historia y Origen:** Derivado del *Ajiaco Taíno* (Indígena) y la *Olla Podrida* española. Es el plato de la "Olla Comunitaria" por excelencia; símbolo de unión vecinal y celebración.
-- **Saberes Ancestrales:**
-    - "El sancocho se menea con cucharón de palo, el metal lo 'pasma' (corta el sabor)".
-    - "La carne se sella con limón primero para matar el chuquía (olor fuerte)".
-    - "Sancocho sin ñame es sopa de carne". El ñame es el diferenciador costeño clave.
+- **El Paseo de Olla:** Práctica cultural donde la comunidad cocina a la orilla del río. El río aporta humedad relativa a la cocción y el sancocho es el premio tras el baño.
+- **Democracia del Plato:** Hay sancocho de "cola", de "trifásico" (3 carnes) o de "pava" (pobre, sin carne). Todos comparten la misma base de ñame y sabiduría.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *Cartay, R.* "Historia de la alimentación en el Nuevo Mundo".
-2. *Dufour, D.L.* "Cyanide content of cassava (Manihot esculenta) cultivars used by Tukanoan Indians". (Contexto sobre yuca dulce vs amarga).
-3. *McGee, H.* "On Food and Cooking". (Hidrólisis del colágeno).
+> "No le eche papa, la papa es de los cachacos. Si quiere que espese, déle tiempo al ñame." — *Dicho popular costeño.*
+
+> "El secreto es el cilantro cimarrón (de hoja ancha), el de hoja chiquita no huele igual en el calor."
 
 ## Sabiduría colectiva, trucos y consejos
 

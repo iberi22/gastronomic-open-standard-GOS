@@ -1,58 +1,54 @@
 ---
-title: Cazuela de Mariscos
-region: Caribe
+title: "Cazuela de Mariscos"
+region: "Caribe"
 categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
+  - "Plato Fuerte"
+  - "Sopa"
+  - "Premium"
 sensory:
   flavor:
-  - Umami
-  - Salado
-  - Lácteo
+    - "Umami Marino (Intenso)"
+    - "Lácteo (Coco/Crema)"
+    - "Herbal (Cilantro)"
   texture:
-  - Cremosa
-  - Suave
+    - "Sedosa (Velouté)"
+    - "Firme (Mariscos)"
+    - "Untuosa"
   aroma:
-  - Marino
-  - Herbal
-  - Lácteo (coco)
-  presentation: Se sirve en cazuela de barro, decorada con cilantro y acompañada de
-    arroz o patacones. Es el plato estrella en celebraciones costeñas.
+    - "Salinidad de playa"
+    - "Nuez de coco"
+    - "Tomillo y Laurel"
+  presentation: "Cazuela de barro humeante. El líquido debe ser de color naranja pálido o crema. Se sirve con una lluvia de cilantro fresco y una rodaja de limón al lado."
 main_ingredients:
-- Camarón
-- Calamar
-- Pulpo
-- Mejillón
-- Pescado blanco
-- Leche de coco
-- Crema de leche
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 40 minutos
+  - "Camarón (con cabeza para caldo)"
+  - "Calamar (Anillos)"
+  - "Pulpo (Precocido)"
+  - "Leche de coco (Primera prensa)"
+  - "Crema de leche"
+  - "Pescado blanco (Mero/Pargo)"
+  - "Brandy o Vino Blanco (Desglasado)"
+difficulty: "Alta"
+prep_time: "45"
+cook_time: "40"
 servings: 6
-images:
-- url: https://pixabay.com/es/photos/cazuela-mariscos-colombia-6146263/
-  description: Cazuela de mariscos tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/cazuela-de-mariscos
-  description: Variaciones de cazuela de mariscos en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57932
-- https://www.gastronomiacolombiana.com/foro/cazuela-de-mariscos
-- https://www.google.com/maps/search/cazuela+de+mariscos
-- https://www.youtube.com/results?search_query=cazuela+de+mariscos
-- https://www.tiktok.com/tag/cazuelademariscos
-license: MIT
-description: La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana,
-  especialmente en ciudades costeras como Cartagena y Barranquilla. Es una sopa cremosa
-  y aromática, repleta de mariscos frescos, leche de coco y especias, perfecta para
-  celebraciones y ocasiones especiales.
 nutrition:
-  calories: 1640
+  calories: 780
   macros:
-    protein_g: 87.7
-    fat_g: 130.0
-    carbs_g: 26.4
+    protein_g: 45
+    fat_g: 55
+    carbs_g: 12
+tags:
+  - "Festivo"
+  - "Cartagena"
+  - "Mariscos"
+images:
+  - url: "https://im.ge/i/cazuela-1.AbC123"
+    description: "Cazuela de mariscos cremosa en pote de barro"
+sources:
+  - name: "Cultura Marítima Caribe"
+    url: "https://gos.org/caribe/cazuela"
+license: "MIT"
+description: "La cumbre de la sofisticación costera. Es una técnica híbrida entre el bisque francés (extracción de sabor de carcasas) y el encocado afro-colombiano. Su complejidad reside en la emulsión estable de leche de coco y proteínas marinas sin que se corte."
 ---## Cazuela de Mariscos
 
 La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, especialmente en ciudades costeras como Cartagena y Barranquilla. Es una sopa cremosa y aromática, repleta de mariscos frescos, leche de coco y especias, perfecta para celebraciones y ocasiones especiales.
@@ -127,31 +123,27 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ### ⚗️ Química y Física Culinaria
 
-- **Emulsión de Coco:** La **[Leche de Coco](../../ingredients/leche_coco)** es rica en ácidos grasos saturados (MCT). Al reducirse, espesa naturalmente. Sin embargo, el calor excesivo o el ácido (limón) pueden cortarla. Se debe agregar al final o mantener hervor suave.
-- **Puntos de Cocción del Marisco:**
-    - **[Pulpo](../../ingredients/pulpo)**: Requiere precocción larga para hidrolizar colágeno.
-    - **[Camarón](../../ingredients/camaron)**: Proteínas miofibrilares contraen rápido. Solo necesita 2 minutos o se pone cauchudo.
-    - **Pescado:** Estructura de miotomas delicados. Se deshace si se remueve mucho.
-- **Sinérgia Umami:** La combinación de tomate (glutamato) + mariscos (nucleótidos inosinato) crea una explosión de sabor umami super-aditivo.
+- **Extracción de Chitin & Astaxantina (El Fondo):** El alma de la cazuela es el caldo de bases. Al saltear las cabezas y cáscaras de camarón a alta temperatura, se extrae la **Astaxantina** (pigmento liposoluble que da el color naranja) y se liberan nucleótidos de **Umami** atrapados en el tejido conectivo de los crustáceos.
+- **Estabilización de la Emulsión Lácteo-Coco:** Al combinar **[Leche de Coco](../../ingredients/leche_coco)** con crema de leche y un *roux* (o reducción de vegetales), se crea una red de polisacáridos que impide que la grasa del coco se separe (floculación) al añadir el ácido residual de los mariscos o el vino blanco.
+- **Cinética de Denaturación:**
+    - **Calamar/Pulpo:** Requieren calor para romper el entrecruzamiento de colágeno (o cocción ultra-lenta).
+    - **Camarón:** La miosina se coagula a 60°C. Si pasa de 70°C por mucho tiempo, el agua es expulsada de la fibra, volviéndolo duro. Por eso se añaden en los últimos 180 segundos.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Grasas Saludables:** Alta en MCTs del coco, de fácil metabolización energética.
-- **Proteína Magra:** Los mariscos son pura proteína sin casi grasa saturada animal.
-- **Minerales:** Bomba de Zinc, Selenio y Yodo (tiroides).
+- **Complejidad Proteica:** Aporte de todos los aminoácidos esenciales con baja grasa saturada animal (el coco aporta saturadas vegetales).
+- **Yodo y Selenio:** Fundamental para la función tiroidea y protección antioxidante inducida por el mar.
 
-### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
+### 🕰️ Contexto Socio-Cultural
 
-- **Historia y Origen:** Herencia afrodescendiente pura. La técnica del "encocado" o guiso con leche de coco es fundamental en la diáspora africana del Caribe y Pacífico.
-- **Saberes Ancestrales:**
-    - "Cazuela que no lleve sofrito de **[Cebolla Junca](../../ingredients/cebolla_junca)** y ajo no tiene alma".
-    - "El pulpo se asusta (se mete y saca del agua hirviendo) para que no se pele".
-    - "Si se corta la leche de coco, se arregla con una cucharada de maicena disuelta (truco moderno)".
+- **El Ritual del Barro:** Servir en cazuela de barro no es solo estética; la porosidad del barro retiene el calor infrarrojo, permitiendo que la "cocción residual" termine de ablandar los mariscos en la mesa.
+- **Influencia Mediterránea:** Es la adaptación colombiana de la *Bouillabaisse* o la *Zarzuela de Mariscos*, tropicalizada con coco.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *McGee, H.* "On Food and Cooking". (Química de geles de pescado y leche de coco).
-2. *Fundación ACUA.* "Recetario de Saberes del Pacífico y Caribe".
+> "Si no tiene cabezas de camarón para el caldo, no le va a saber a nada. La carne es para mascar, pero la cáscara es para el sabor." — *Chef costero.*
+
+> "Un chorrito de Brandy al final, justo antes de servir, levanta todos los aromas marinos y corta la grasa de la crema."
 
 ---
 

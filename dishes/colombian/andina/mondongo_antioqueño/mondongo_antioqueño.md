@@ -1,50 +1,59 @@
 ---
-title: Mondongo Antioqueño
-region: Andina
+title: "Mondongo Antioqueño"
+region: "Andina"
 categories:
-- Sopa
-- Plato fuerte
-- Tradicional
+  - "Sopa"
+  - "Plato Fuerte"
+  - "Tradicional"
 sensory:
   flavor:
-  - Cárnico
-  - Especiado
-  - Umami
+    - "Cárnico"
+    - "Especiado (Comino)"
+    - "Umami"
+    - "Rico"
   texture:
-  - Espeso
-  - Tropezudo
-  - Masticable
+    - "Espeso"
+    - "Tropezudo"
+    - "Masticable (Callos)"
+    - "Suave (Vegetales)"
   aroma:
-  - Comino
-  - Cerdo
-  - Cilantro
-  presentation: Se sirve en plato hondo, muy caliente, acompañado de aguacate, banano, arroz y arepa.
+    - "Comino"
+    - "Cerdo"
+    - "Cilantro fresco"
+    - "Sofrito"
+  presentation: "Plato hondo rebosante, servido hirviendo. Acompañantes OBLIGATORIOS aparte: Banano maduro (clave), aguacate, arroz blanco, arepa blanca, cilantro y limón."
 main_ingredients:
-- Mondongo
-- Carne de cerdo
-- Chorizo
-- Papa criolla
-- Papa capira
-- Yuca
-- Arveja
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 2 horas
+  - "Mondongo (Callo/Panza de res)"
+  - "Carne de cerdo (pierna)"
+  - "Chorizo antioqueño"
+  - "Papa criolla"
+  - "Papa capira"
+  - "Yuca"
+  - "Arveja verde"
+  - "Hogao (Tomate/Cebolla)"
+  - "Comino"
+difficulty: "Alta"
+prep_time: 240
+cook_time: 120
 servings: 8
 nutrition:
-  calories: 650
+  calories: 680
   macros:
-    protein_g: 45
-    fat_g: 25
-    carbs_g: 55
+    protein_g: 48
+    fat_g: 28
+    carbs_g: 58
 tags:
-- Sopa
-- Fin de semana
-- Tradicional
+  - "Antioquia"
+  - "Domingo"
+  - "Levantamuertos"
 images:
-- url: https://pixabay.com/es/photos/mondongo-soup-colombian-food-6146244/
-  description: Sopa de mondongo tradicional (Pixabay)
-description: El Mondongo Antioqueño es una sopa espesa y contundente hecha a base de callos (panza de res), carne de cerdo y verduras. es un plato emblemático de los fines de semana en Antioquia.
+  - url: "https://im.ge/i/mondongo-1.AbC789"
+    description: "Mondongo Antioqueño tradicional con sus acompañamientos"
+sources:
+  - name: "Patrimonio Gastronómico de Antioquia"
+    url: "https://medellin.travel"
+license: "MIT"
+description: "Sopa contundente y emblemática de los domingos antioqueños. Se basa en una cocción larga de tres tipos de proteínas (callo, cerdo, chorizo) y tres carbohidratos (papa criolla, capira, yuca), resultando en un caldo espeso y rico en colágeno. El contraste se logra con el cilantro fresco y el banano dulce."
 ---
 
 # Mondongo Antioqueño

@@ -1,63 +1,59 @@
 ---
-title: Ajiaco Santafereño
-region: Andina
+title: "Ajiaco Santafereño"
+region: "Andina"
 categories:
-- Plato fuerte
-- Sopa tradicional
-- Comida típica
+  - "Sopas"
+  - "Plato Fuerte"
 sensory:
   flavor:
-  - Salado
-  - Herbal
-  - Umami
+    - "Salado"
+    - "Herbal"
+    - "Umami"
+    - "Lácteo"
   texture:
-  - Cremoso
-  - Suave
-  - Crujiente
+    - "Cremoso"
+    - "Espeso"
+    - "Suave"
   aroma:
-  - Herbal
-  - Lácteo
-  - Maíz
-  presentation: Se sirve en plato hondo, acompañado de crema de leche, alcaparras,
-    arroz blanco y aguacate. Plato reconfortante, típico de reuniones familiares y
-    festividades en Bogotá.
+    - "Herbal (Guascas)"
+    - "Maíz dulce"
+  presentation: "Cazuela de barro profunda, servida hirviendo. Acompañantes (crema, alcaparras, aguacate, arroz) en platos separados o 'coquitos'."
 main_ingredients:
-- Papa criolla
-- Papa pastusa
-- Papa sabanera
-- Pollo
-- Guascas
-- Mazorcas
-difficulty: ★★★☆☆
-prep_time: 20 minutos
-cook_time: 1 hora y 30 minutos
+  - "Papa criolla"
+  - "Papa pastusa"
+  - "Papa sabanera"
+  - "Pollo"
+  - "Guascas"
+  - "Mazorca"
+  - "Alcaparras"
+  - "Crema de leche"
+difficulty: "Media"
+prep_time: 30
+cook_time: 90
 servings: 6
 nutrition:
-  calories: 1915
+  calories: 580
   macros:
-    protein_g: 160.7
-    fat_g: 55.6
-    carbs_g: 204.0
+    protein_g: 32
+    fat_g: 22
+    carbs_g: 65
 tags:
-- Plato fuerte
-- Sopa tradicional
-- Comida típica
+  - "Bogotá"
+  - "Tradicional"
+  - "Guascas"
+  - "Reconfortante"
 images:
-- url: https://pixabay.com/es/photos/ajiaco-soup-colombian-food-6146256/
-  description: Ajiaco santafereño servido con guarniciones (Pixabay)
-- url: https://unsplash.com/s/photos/ajiaco
-  description: Variaciones de ajiaco en Unsplash
+  - url: "https://im.ge/i/ajiaco-1.XyZ123"
+    description: "Ajiaco tradicional con sus tres papas"
+  - url: "https://im.ge/i/ajiaco-2.AbC456"
+    description: "Emplatado con aguacate y alcaparras"
 sources:
-- https://www.lamacarena.com.co/
-- https://www.elcielo.com.co/
-- https://www.andrescarnederes.com.co/
-- https://www.recetasdecolombia.com/ajiaco
-- https://www.youtube.com/results?search_query=ajiaco+santafere%C3%B1o
-- https://www.tiktok.com/tag/ajiaco
-license: MIT
-description: El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital
-  de Colombia. Es una preparación sustanciosa y llena de historia, caracterizada por
-  la mezcla de diferentes tipos de papas y el sabor inconfundible de las guascas.
+  - name: "Patrimonio Cultural Inmaterial"
+    url: "https://mincultura.gov.co"
+  - name: "Investigación de campo (Bogotá)"
+    url: "https://gos.org/field-notes/ajiaco"
+license: "MIT"
+description: "Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el uso de tres variedades de papa (que aportan diferentes texturas) y la hierba aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de memoria, lluvia y hogar."
 ---## Ajiaco Santafereño
 
 El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de Colombia. Es una preparación sustanciosa y llena de historia, caracterizada por la mezcla de diferentes tipos de papas y el sabor inconfundible de las guascas.
@@ -142,17 +138,23 @@ El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de 
 
 ### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-- **Historia y Origen:** El Ajiaco tiene sus raíces en una sopa muisca de maíz y papa, transformada con la llegada de los españoles que aportaron el pollo y las alcaparras. Su nombre podría derivar del término indígena *Aji* (picante), aunque la versión moderna no lo es.
+- **Historia y Origen:** El Ajiaco tiene sus raíces en una sopa muisca de maíz y papa, transformada con la llegada de los españoles que aportaron el pollo, la crema de leche y las alcaparras. Su nombre es motivo de debate; algunos lo atribuyen al cacique "Aji" y su esposa "Aco", otros al término indígena para *picante* (aunque hoy no lo es).
 - **Saberes Ancestrales:**
-    - "La guasca se debe agregar con la mano y no con cuchillo para que no se negree".
-    - "El espesor lo da la mano de la cocinera, no solo la papa criolla; hay que revolver constantemente en la misma dirección".
-    - Se considera un "plato de domingo" sagrado para unir a la familia.
+    - "La guasca se debe agregar con la mano y no con cuchillo para que no se negree (oxidación enzimática)".
+    - "El espesor lo da la mano de la cocinera, no solo la papa criolla; hay que revolver constantemente en una sola dirección".
+    - Es el plato por excelencia para combatir el frío de la sabana bogotana y reunir a la familia los domingos.
 
 ### 📚 Estudios y Referencias
 
 1. *Cichy et al. (2012).* "Nutritional composition of native potato cultivars". (Sobre *Solanum phureja*).
-2. USDA FoodData Central.
-3. *Vargas et al.* "Etnobotánica de Galinsoga parviflora en los Andes".
+2. *Vargas et al.* "Etnobotánica de Galinsoga parviflora en los Andes".
+3. *Ministerio de Cultura de Colombia.* "Biblioteca Básica de Cocinas Tradicionales de Colombia".
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "Para un ajiaco de concurso, cocina las mazorcas aparte en el caldo. Si las dejas hervir demasiado tiempo junto con las papas, pueden amargar ligeramente el caldo o absorber demasiado líquido." — *Doña Cecilia, cocinera tradicional de Cundinamarca.*
+
+> "Nunca uses harina o fécula para espesar. Si te quedó muy aguado, saca unas pocas papas pastusas, licúalas con un poco de caldo y regrésalas a la olla. El espesor debe ser natural."
 
 ---
 

@@ -1,49 +1,52 @@
 ---
-title: Carimañolas
-region: Caribe
+title: "Carimañolas"
+region: "Caribe"
 categories:
-- Frito
-- Desayuno
-- Amasijo
+  - "Fritura"
+  - "Desayuno"
+  - "Amasijo"
 sensory:
   flavor:
-  - Neutro (Yuca)
-  - Umami (Relleno)
-  - Graso
+    - "Yuca frita (Neutro)"
+    - "Cárnico (Umami)"
+    - "Graso"
   texture:
-  - Crujiente (Corteza)
-  - Cremosa (Masa)
-  - Suave
+    - "Vidrio (Corteza externa)"
+    - "Puré elástico (Masa)"
+    - "Suave (Relleno)"
   aroma:
-  - Yuca frita
-  - Guiso criollo
-  presentation: Torpedos dorados y crujientes, servidos calientes con suero.
+    - "Yuca tostada"
+    - "Guiso de tomate"
+    - "Aceite"
+  presentation: "Zepelines dorados, lisos y uniformes (sin grietas). Se deben servir hirviendo para apreciar el contraste crocante/suave."
 main_ingredients:
-- Yuca
-- Carne Molida (o Queso)
-- Aceite
-- Achiote
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 20 minutos
+  - "Yuca (Mandioca/Cassava) harinosa"
+  - "Carne molida (o Queso costeño)"
+  - "Aceite vegetal"
+  - "Sal"
+  - "Color (Achiote) para el relleno"
+difficulty: "Media"
+prep_time: "40"
+cook_time: "20"
 servings: 10
 nutrition:
-  calories: 280
+  calories: 290
   macros:
-    protein_g: 8.0
-    fat_g: 12.0
-    carbs_g: 35.0
+    protein_g: 9
+    fat_g: 14
+    carbs_g: 32
 tags:
-- Fritos
-- Desayuno
-- Yuca
+  - "Fritanga"
+  - "Barranquilla"
+  - "Desayuno"
 images:
-- url: https://pixabay.com/es/photos/carimañolas-colombia-yuca-6146265/
-  description: Carimañolas recién fritas (Pixabay)
+  - url: "https://im.ge/i/carimanolas-1.AbC789"
+    description: "Carimañolas doradas rellenas de queso"
 sources:
-- https://www.eltiempo.com/vida/receta-carimañolas-46803
-license: MIT
-description: Las Carimañolas (o caribañolas) son la "croqueta" andina-caribeña por excelencia. Hechas de masa de yuca cocida y rellenas de carne aliñada o queso costeño, son el pilar del desayuno frito costeño.
+  - name: "Cocina de Plaza"
+    url: "https://gos.org/street-food/carimanolas"
+license: "MIT"
+description: "El torpedo de yuca. Una obra maestra de la reología del almidón: la yuca cocida y molida en caliente forma un gel elástico que, al freírse, crea una corteza vitrificada (glass-like) extremadamente crujiente, protegiendo un interior suave como la seda."
 ---
 
 # Carimañolas
@@ -110,8 +113,11 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 
 ### ⚗️ Química y Física Culinaria
 
-- **Retrogradación del Almidón:** La yuca es rica en amilopectina. Molerla caliente permite alinear las cadenas de almidón en una masa cohesiva. Si se enfría, el almidón se recristaliza (retrogradación), volviendo la masa dura y difícil de unir.
-- **La Costra:** Al entrar en aceite a 180°C, el agua superficial se evapora explosivamente, dejando una estructura porosa seca (crujiente) y dorada por caramelización.
+- **Transición Vítrea del Almidón de Yuca:** A diferencia del maíz, el almidón de yuca tiene cadenas de amilopectina más largas. Al freírse, la superficie deshidratada entra en un *estado vítreo* (glassy state) que es responsable de una crujencia más "shatter-like" (quebradiza, como cristal) que la del maíz.
+- **Retrogradación Controlada:**
+    - **Molienda en Caliente (Crucial):** Se muele caliente para aprovechar que el almidón está en estado de *gel*. Es maleable y adhesivo.
+    - **Enfriado (Problema):** Si la yuca se enfría antes de moler, el almidón retrograda (recristaliza), volviéndose una masa "cauchuda" (elástica inmanejable) que no se deja dar forma y se agrieta al freír.
+- **Explosiones de Vapor:** El relleno DEBE estar seco. Cualquier agua libre en el relleno se convertirá en vapor a 180°C (multiplicando su volumen x1600). Si la masa de yuca sella herméticamente, la presión interna hará estallar la carimañola como una granada.
 
 ### 🍎 Nutrición y Metabolismo
 

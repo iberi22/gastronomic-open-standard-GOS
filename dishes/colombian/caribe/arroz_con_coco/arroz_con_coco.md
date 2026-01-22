@@ -1,50 +1,53 @@
 ---
-title: Arroz con Coco (Titoté)
-region: Caribe
+title: "Arroz con Coco (Titoté)"
+region: "Caribe"
 categories:
-- Acompañamiento
-- Plato fuerte
-- Festivo
+  - "Guarnición"
+  - "Festivo"
+  - "Costeño"
 sensory:
   flavor:
-  - Dulce
-  - Salado
-  - Umami (Titoté)
+    - "Dulce-Salado (Balanceado)"
+    - "Nuez (Coco tostado)"
+    - "Umami (Maillard)"
   texture:
-  - Suelto
-  - Aceitoso (agradable)
-  - Tropezones (Titoté)
+    - "Suelto (Graneado)"
+    - "Aceitoso (Lubricado)"
+    - "Masticable (Tropezones)"
   aroma:
-  - Coco caramelizado
-  - Ahumado suave
-  - Canela (opcional)
-  presentation: Arroz de color pardo/dorado oscuro con puntos negros (titoté), brillante.
+    - "Coco glaseado"
+    - "Caramelo oscuro"
+    - "Humo (si se quema bien)"
+  presentation: "Montaña de arroz color bronce oscuro, brillante. Debe verse punteado por las motas negras de titoté. Se sirve al lado de pescados fritos o postas."
 main_ingredients:
-- Arroz blanco
-- Leche de Coco (primer extracto)
-- Azúcar / Panela
-- Sal
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 50 minutos
+  - "Leche de coco (Primera extracción/Titoté)"
+  - "Agua de coco (Segunda extracción)"
+  - "Arroz blanco (grano largo)"
+  - "Panela/Azúcar (agente caramelizante)"
+  - "Pasas (opcional controversial)"
+  - "Sal (catalizador de sabor)"
+difficulty: "Media"
+prep_time: "45"
+cook_time: "60"
 servings: 6
 nutrition:
-  calories: 380
+  calories: 420
   macros:
-    protein_g: 4.0
-    fat_g: 15.0
-    carbs_g: 55.0
+    protein_g: 5
+    fat_g: 22
+    carbs_g: 58
 tags:
-- Costa
-- Pescado
-- Domingo
+  - "Cartagena"
+  - "Titoté"
+  - "Pescado Frito"
 images:
-- url: https://pixabay.com/es/photos/arroz-con-coco-colombia-comida-6146259/
-  description: Arroz con coco y titoté (Pixabay)
+  - url: "https://im.ge/i/arroz-coco-1.AbC123"
+    description: "Arroz con coco 'negrito' con titoté visible"
 sources:
-- https://www.eltiempo.com/vida/receta-arroz-con-coco-24681
-license: MIT
-description: El Arroz con Coco (versión Titoté) es la joya de la cocina caribeña colombiana. A diferencia de otros arroces con coco blancos, este se caracteriza por freír la leche de coco hasta obtener caramelo (titoté), dándole un color bronce y sabor complejo dulce-salado.
+  - name: "Tradición Caribeña"
+    url: "https://gos.org/caribe/arroz-coco"
+license: "MIT"
+description: "La guarnición reina del Caribe. No es un simple arroz hervido en leche de coco; es una técnica compleja de separación de fases donde la proteína y el azúcar del coco se fríen en su propio aceite hasta caramelizarse (titoté) antes de añadir el arroz."
 ---
 
 # Arroz con Coco (Titoté)
@@ -111,23 +114,28 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 
 ### ⚗️ Química y Física Culinaria
 
-- **Reacción de Maillard Extrema (Titoté):** Al evaporar el agua de la emulsión de leche de coco, las proteínas y azúcares naturales del coco se concentran y reaccionan en un medio lipídico (aceite de coco) a >140°C. Esto genera una complejidad de sabor masiva (umami, nuez, caramelo).
-- **Emulsificación y Absorción:** Al agregar agua nuevamente, parte de ese aceite y sabor se emulsiona y es absorbido por el almidón del arroz durante la gelatinización, impermeabilizándolo. Por eso este arroz tiende a quedar más suelto ("graneado") que un arroz blanco hervido en agua sola.
+- **La Química del Titoté (Emulsión Inversa):**
+    1.  **Evaporación:** Al hervir la leche de coco, el agua se evapora.
+    2.  **Ruptura:** La emulsión se rompe, separando la grasa (aceite de coco) de los sólidos (proteínas y azúcares).
+    3.  **Fritura Proteica:** Los sólidos se fríen en el aceite a >150°C. Aquí ocurre la **Reacción de Maillard** (dorado) y caramelización. El punto exacto es "quemado controlado" (color café oscuro) sin llegar a carbón (amargo).
+- **Hidrofobicidad del Grano:** Al añadir el arroz al titoté aceitoso *antes* del agua, recubrimos cada grano con lípidos. Esto limita la salida de amilosa durante la cocción, resultando en un arroz que no se pega ("graneado perfecto").
+- **Poder Osmótico:** La alta cantidad de azúcar y sal crea una presión osmótica que endurece ligeramente la pared celular del arroz, contribuyendo a la textura firme.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Calórico:** Es un plato denso. Combina carbohidratos simples (azúcar/arroz) con grasas saturadas (coco). Se recomienda consumo moderado.
-- **Ácidos Grasos:** Rico en ácido láurico (triglicéridos de cadena media) del coco.
+- **Ácidos Grasos:** El aceite de coco es rico en Ácido Láurico (C12), un triglicérido de cadena media que se oxida rápidamente como energía (menos tendencia a almacenarse que grasas largas), aunque sigue siendo grasa saturada.
+- **Densidad:** Es una bomba calórica. Una taza puede tener las mismas calorías que una hamburguesa pequeña. Controlar la porción.
 
 ### 🕰️ Contexto Socio-Cultural
 
-- **El Acompañante Perfecto:** No se concibe una "Bandeja de Pescado" en la playa sin este arroz. Es el contraste necesario a la salinidad del pescado de mar.
-- **Identidad:** Diferencia la cocina del Caribe colombiano de la del Pacífico (que usa leche de coco más fresca/líquida en sus arroces atollados).
+- **Identidad:** "Si es blanco, es de dieta o del Pacífico". En Cartagena y la zona turística, el arroz *debe* ser negro (titoté).
+- **Maridaje:** Diseñado químicamente para acompañar pescado frito. El dulce corta la salinidad y la grasa del pescado, limpiando el paladar.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *Lamberts, L.* "Flavor chemistry of coconut".
-2. *Granados, C.* "Cocina del Caribe Colombiano".
+> "No bote el aceite que sobra del titoté si le salió mucho. Guárdelo en un frasquito; es oro puro para freír patacones o huevos." — *Matrona de San Basilio.*
+
+> "El punto del titoté es cuando deja de espumar y empieza a sonar 'seco' (crepitar). Ahí es cuando hay que echar el agua rápido o se quema."
 
 ---
 

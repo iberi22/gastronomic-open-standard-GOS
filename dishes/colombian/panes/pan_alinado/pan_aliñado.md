@@ -145,26 +145,34 @@ El pan aliñado es un pan suave, aromático y ligeramente dulce, típico de pana
 - "Sírvelo caliente para mejor sabor y aroma."
 - "Perfecto para acompañar con mantequilla, queso o mermelada."
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
 
-### Categorización Sensorial y de Uso
+### 📊 Perfil Sensorial Estandarizado
 
-- **Perfil de sabor:** Rico en nutrientes activos: Lutein & Zeaxanthin, Butyrate, Casein, Sucrose, Choline
-- **Textura:** Variada (Ver Ingredientes)
-- **Aroma:** Aromático y especiado
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Dulce-Especiado      | 4/5              | Canela, Clavos y Mantequilla. |
+| **Aroma**| Panadería Clásica    | 5/5              | Levadura fermentando + Especias dulces. |
+| **Textura**| Miga Algodonosa      | 5/5              | Red de gluten extensible suavizada por grasa (mantequilla/huevo). |
+| **Vista** | Dorado Brillante     | 4/5              | Barniz de huevo (Egg wash) antes de hornear. |
 
-### Perfil Nutricional (Estimado)
+### ⚗️ Química y Física Culinaria
 
-- **Calorías:** 1185 kcal (Total receta)
-- **Proteína:** 21.7g
-- **Grasas:** 84.0g
-- **Carbohidratos:** 91.6g
+- **Masa Enriquecida (Brioche Type):** El pan aliñado es técnicamente una masa enriquecida. La presencia de grasas (mantequilla, huevo, leche) recubre las proteínas de la harina, retrasando la formación de gluten. Esto exige un amasado más intenso pero resulta en una miga mucho más suave y una vida útil más larga (menor retrogradación del almidón).
+- **Extractos Especiados:** La infusión de especias (canela, clavos) en la leche tibia antes de mezclar extrae los aceites esenciales liposolubles, distribuyendo el sabor de manera homogénea en la masa grasa.
 
-### Sabiduría Colectiva
+### 🍎 Nutrición y Metabolismo
 
-- **Variantes:** [Pendiente]
-- **Consejos:** [Pendiente]
+- **Carbohidratos Simples y Complejos:** Fuente de energía rápida. Recomienda consumo moderado por el contenido de azúcar refinada.
+- **Confort Food:** Activa centros de placer por la combinación grasa/azúcar/carbohidrato.
 
-### Fuentes
+### 🕰️ Contexto Socio-Cultural
 
-- [Pendiente]
+- **El Pan de Barrio:** Es el olor característico de las panaderías colombianas a las 4 de la tarde.
+- **Acompañante Universal:** Se come con chocolate, café con leche o gaseosa (Colombiana).
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El pan aliñado no se apura. Déjelo leudar con calma hasta que tiemble como gelatina."
+>
+> "Si le echa uvas pasas, remójelas primero en vino o agua para que no le roben humedad a la masa."

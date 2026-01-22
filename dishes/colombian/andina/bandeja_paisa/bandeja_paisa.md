@@ -1,65 +1,60 @@
 ---
-title: Bandeja Paisa
-region: Andina
+title: "Bandeja Paisa"
+region: "Andina"
 categories:
-- Plato fuerte
-- Comida típica
-- Especialidad regional
+  - "Plato Fuerte"
+  - "Hipercalórico"
 sensory:
   flavor:
-  - Salado
-  - Umami
-  - Ahumado
+    - "Salado"
+    - "Umami"
+    - "Ahumado"
+    - "Graso"
   texture:
-  - Crujiente
-  - Cremoso
-  - Suave
+    - "Crujiente (Chicharrón)"
+    - "Cremoso (Frijoles)"
+    - "Suave (Arroz)"
   aroma:
-  - Ahumado
-  - Lácteo
-  - Herbal
-  presentation: Se sirve en bandeja grande, porciones generosas, acompañado de aguacate,
-    arepa y huevo frito. Ideal para reuniones familiares o celebraciones.
+    - "Cerdo frito"
+    - "Humo"
+    - "Comino"
+  presentation: "Bandeja ovalada grande. Organización visual: cama de arroz y frijoles, proteínas alrededor, huevo coronando. Abundancia visual extrema."
 main_ingredients:
-- Carne molida
-- Chicharrón
-- Frijoles rojos
-- Arroz blanco
-- Chorizo
-- Morcilla
-- Arepa
-- Plátano maduro
-- Aguacate
-- Huevo frito
-difficulty: ★★★★☆
-prep_time: 30 minutos
-cook_time: 2 horas
+  - "Frijol bola roja (o Cargamanto)"
+  - "Arroz blanco"
+  - "Carne molida"
+  - "Chicharrón"
+  - "Chorizo"
+  - "Morcilla"
+  - "Huevo frito"
+  - "Plátano maduro"
+  - "Arepa"
+  - "Aguacate"
+difficulty: "Alta"
+prep_time: 45
+cook_time: 120
 servings: 4
 nutrition:
-  calories: 3309
+  calories: 1800
   macros:
-    protein_g: 221.4
-    fat_g: 125.0
-    carbs_g: 317.2
+    protein_g: 85
+    fat_g: 110
+    carbs_g: 130
 tags:
-- Plato fuerte
-- Comida típica
-- Especialidad regional
+  - "Antioquia"
+  - "Monumental"
+  - "Domingo"
+  - "Turismo"
 images:
-- url: https://pixabay.com/es/photos/bandeja-paisa-colombia-platillo-6146254/
-  description: Bandeja Paisa tradicional servida (Pixabay)
-- url: https://unsplash.com/s/photos/bandeja-paisa
-  description: Variaciones de bandeja paisa en Unsplash
+  - url: "https://im.ge/i/bandeja-1.XyZ789"
+    description: "Bandeja Paisa con sus 9 elementos"
 sources:
-- https://mejoresrestaurantesmedellin.com/bandeja-paisa/
-- https://restaurantguru.com/bandeja-paisa-Medellin-m7916
-- https://dondecelebrar.com/restaurantes-tipicos-en-medellin/
-- https://www.youtube.com/results?search_query=bandeja+paisa
-- https://www.tiktok.com/tag/bandejapaisa
-license: MIT
-description: La Bandeja Paisa es el plato más emblemático de la región andina de Colombia,
-  especialmente de Antioquia. Es una comida abundante y deliciosa, perfecta para compartir
-  y disfrutar de una explosión de sabores tradicionales.
+  - name: "Gobernación de Antioquia"
+    url: "https://antioquia.gov.co"
+  - name: "Investigación GOS"
+    url: "https://gos.org/recipes/bandeja-paisa"
+license: "MIT"
+description: "El 'plato montañero' por excelencia. Evolución del avío de los arrieros antioqueños, diseñado para aportar la máxima energía posible (calorías y proteínas) para cruzar las cordilleras. Es un despliegue de técnicas de fritura y cocción lenta."
 ---
 
 ## 🍲 Bandeja Paisa
@@ -154,17 +149,23 @@ La Bandeja Paisa es el plato más emblemático de la región andina de Colombia,
 
 ### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
-- **Historia y Origen:** La Bandeja Paisa es una evolución moderna (siglo XX) del "Envuelto Antioqueño" que llevaban los arrieros. Era una comida hipercalórica diseñada para sostener largas jornadas de caminata cruzando montañas. Su consolidación como plato turístico "bandeja" ocurren en restaurantes de paso.
+- **Historia y Origen:** La Bandeja Paisa es una invención turística/gastronómica de mediados del siglo XX (posiblemente años 50-60 en restaurantes de paso como "El Arriero"), que buscaba presentar en un solo plato todo el "seco" que comían los arrieros. Antes se servía por separado.
 - **Saberes Ancestrales:**
-    - "El frijol debe ser cargamanto para que *cale* (espese) bien el caldo".
-    - "Al chicharrón hay que 'sobarlo' con bicarbonato para que la piel toteé (explote) y quede galleta".
-    - Se dice que los 9 ingredientes representan la abundancia de la tierra antioqueña.
+    - "El frijol debe ser cargamanto para que *cale* (espese) bien el caldo. Si usas bola roja, aplasta unos cuantos al final".
+    - "Al chicharrón hay que 'sobarlo' con bicarbonato y limón, y secarlo muy bien antes de freír, para que la piel toteé (explote) y quede galleta".
+    - Es un plato de **exceso ritual**: se come para celebrar la opulencia y la capacidad de trabajo.
 
 ### 📚 Estudios y Referencias
 
 1. *McGee, H. (2004).* "On Food and Cooking". (Mecánica de la fritura de piel de cerdo).
 2. *Reyes et al.* "Antioxidant capacity of common bean (Phaseolus vulgaris L.) cultivars grown in Colombia".
-3. USDA FoodData Central: Pork, cured, bacon.
+3. *Restrepo Manrique, C.* "La alimentación en la vida cotidiana de los antioqueños".
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "El secreto del frijol antioqueño es el 'hogao' (sofrito) que se le agrega al final, y el uso de pezuña de cerdo o 'garra' para dar sustancia y colágeno al caldo." — *Doña Rubiela, portadora de tradición.*
+
+> "Para que el plátano maduro no absorba tanto aceite, asegúrate de que el aceite esté bien caliente (170-180°C) antes de sumergirlo, y no llenes demasiado la sartén."
 
 ### Sabores y Consejos de Restaurantes Emblemáticos
 

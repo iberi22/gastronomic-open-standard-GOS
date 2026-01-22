@@ -1,48 +1,54 @@
 ---
-title: Ceviche de Camarón Costeño
-region: Caribe
+title: "Ceviche de Camarón Costeño"
+region: "Caribe"
 categories:
-- Entrada
-- Playa
-- Fresco
+  - "Entrada"
+  - "Fresco"
+  - "Ceviche"
 sensory:
   flavor:
-  - Ácido (Limón)
-  - Umami (Salsa Roja)
-  - Dulce (Sutil)
+    - "Ácido-Dulce (Equilibrado)"
+    - "Umami (Tomate)"
+    - "Picante suave"
   texture:
-  - Firme (Camarones)
-  - Crujiente (Cebolla)
+    - "Snap / Turgente (Camarón)"
+    - "Crujiente (Cebolla)"
+    - "Cremosa (Salsa)"
   aroma:
-  - Cítrico
-  - Herbal (Cilantro)
-  presentation: Copa de vidrio fría, salsa rosada/roja, galletas de soda a los lados.
+    - "Cítrico fresco"
+    - "Mar"
+    - "Ajo suave"
+  presentation: "Copa de cóctel clásica o vaso transparente. Salsa rosada brillante. Se acompaña tradicionalmente con Galletas de Soda (Saltinas)."
 main_ingredients:
-- Camarones
-- Limón
-- Cebolla Roja
-- Salsa de Tomate (Ketchup)
-difficulty: ★★☆☆☆
-prep_time: 20 minutos
-cook_time: 5 minutos
+  - "Camarón (Escaldado)"
+  - "Limón Tahití (Jugo fresco)"
+  - "Salsa de Tomate (Ketchup)"
+  - "Mayonesa (opcional/moderno)"
+  - "Cebolla Roja (Desflemada)"
+  - "Ajo"
+  - "Cilantro"
+difficulty: "Baja"
+prep_time: "20"
+cook_time: "5"
 servings: 4
 nutrition:
-  calories: 220
+  calories: 210
   macros:
-    protein_g: 20.0
-    fat_g: 5.0
-    carbs_g: 22.0
+    protein_g: 18
+    fat_g: 7
+    carbs_g: 15
 tags:
-- Playa
-- Afrodisíaco
-- Cartagena
+  - "Cartagena"
+  - "Playa"
+  - "Cóctel"
 images:
-- url: https://pixabay.com/es/photos/ceviche-camaron-colombia-6146266/
-  description: Cóctel de camarón estilo colombiano
+  - url: "https://im.ge/i/ceviche-1.AbC789"
+    description: "Ceviche de camarón costeño con salsa rosada"
 sources:
-- https://www.eltiempo.com/vida/receta-ceviche-de-camaron-35794
-license: MIT
-description: El Ceviche de Camarón "Costeño" difiere del peruano clásico por el uso de salsa de tomate (ketchup) y mayonesa, creando un "cóctel" rosado. Es el rey de las playas de Cartagena y Santa Marta.
+  - name: "Culinaria del Caribe"
+    url: "https://gos.org/caribe/ceviche"
+license: "MIT"
+description: "La versión colombiana del ceviche. A diferencia del estilo peruano, el costeño utiliza camarones pre-cocidos (técnica de seguridad en climas cálidos) y una emulsión de tomate y limón que actúa como una 'Leche de Tigre' dulce-ácida."
 ---
 
 # Ceviche de Camarón Costeño

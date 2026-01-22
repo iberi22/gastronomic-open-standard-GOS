@@ -73,6 +73,36 @@ El Pabellón Llanero es un plato representativo de la Orinoquía colombiana, ins
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
+### 📊 Perfil Sensorial Estandarizado
+
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Dulce-Salado         | 5/5              | Contraste entre caraotas/carne (sal) y plátano (dulce). |
+| **Aroma**| Comino y Sofrito     | 4/5              | Cuminol y compuestos azufrados del ajo/cebolla. |
+| **Textura**| Variada (Crunch/Soft)| 5/5              | Carne desmechada fibrosa vs Arroz suave vs Plátano frito. |
+| **Vista** | Tricolor Contrastado | 5/5              | Negro (caraotas), Blanco (arroz), Dorado (plátano), Rojo (carne). |
+
+### ⚗️ Química y Física Culinaria
+
+- **Reacción de Maillard en Plátano:** La fritura del plátano maduro carameliza sus azúcares superficiales rápidamente, creando notas amargas que equilibran el dulzor interno.
+- **Fibrosidad de la Carne:** La carne (falda o lagarto) se cocina hasta que el colágeno perimisial se disuelve, permitiendo separar las fibras musculares mecánicamente ("esmechar") sin romperlas, maximizando la superficie de absorción para el guiso (hogao).
+
+### 🍎 Nutrición y Metabolismo
+
+- **Proteína Completa:** La combinación de leguminosas (caraotas) y cereales (arroz) junto con la carne ofrece un perfil de aminoácidos saturado.
+- **Hierro Hemo y No Hemo:** Aporte dual de hierro (animal/vegetal).
+
+### 🕰️ Contexto Socio-Cultural
+
+- **Hermandad Colombo-Venezolana:** Plato compartido en toda la cuenca del Orinoco, símbolo de la cultura llanera transfronteriza.
+- **El "Caballo Viejo":** En algunas zonas se le llama así por la canción de Simón Díaz, refiriéndose a lo tradicional.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "Las caraotas sin comino no son llaneras. El comino es el que le da el golpe de tierra."
+>
+> "La carne tiene que quedar jugosa, no seca. Se devuelve al caldero con el guiso para que chupe sabor."
+
 ### Categorización Sensorial y de Uso
 
 - **Tipo de plato:** Plato fuerte, comida criolla
@@ -84,8 +114,8 @@ El Pabellón Llanero es un plato representativo de la Orinoquía colombiana, ins
 
 ### Opiniones de usuarios
 
-- **Usuario anónimo (Google Maps):** "El pabellón llanero es delicioso, la carne desmechada y el queso llanero son insuperables".
-- **Foro gastronómico:** "El secreto está en la cocción lenta de la carne y el uso de queso llanero fresco".  
+- **Usuario anónimo (Google Maps):** "El pabellón llanero es delicioso, la carne desmechada y el queso llanero son insuperable".
+- **Foro gastronómico:** "El secreto está en la cocción lenta de la carne y el uso de queso llanero fresco".
 calificación: ★★★★★ 5/5
 
 ### Perfil Nutricional de Ingredientes Clave (por 100g)

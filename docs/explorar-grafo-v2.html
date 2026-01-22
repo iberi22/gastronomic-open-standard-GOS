@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOS | Graph Database Explorer</title>
+    <script src="https://unpkg.com/force-graph"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --bg: #050505;
+            --accent: #00FF41; /* Matrix Green / Scientific */
+            --text: #F0F0F0;
+            --panel: rgba(10, 10, 10, 0.95);
+            --border: #333;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'JetBrains Mono', monospace;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* --- BRUTALIST UI --- */
+        #ui-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .panel {
+            pointer-events: auto;
+            background: var(--panel);
+            border: 2px solid var(--border);
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+        }
+
+        #left-panel {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #right-panel {
+            width: 400px;
+            height: fit-content;
+            display: none; /* Shown on node click */
+            border-color: var(--accent);
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin: 0;
+            color: var(--accent);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        .search-box {
+            background: #000;
+            border: 1px solid var(--border);
+            color: var(--accent);
+            padding: 10px;
+            width: 100%;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .search-box:focus {
+            border-color: var(--accent);
+        }
+
+        .node-details {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #222;
+            border: 1px solid #444;
+            font-size: 0.7rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.7rem;
+            color: #888;
+        }
+
+        /* --- GRAPH CANVAS --- */
+        #graph-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            pointer-events: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background: #111;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        .node-label {
+            position: absolute;
+            pointer-events: none;
+            background: rgba(0,0,0,0.8);
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 10px;
+            border: 1px solid var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="graph-container"></div>
+
+    <div id="ui-layer">
+        <aside id="left-panel" class="panel">
+            <h1>GOS GRAPH DB 1.0</h1>
+            <input type="search" id="search" class="search-box" placeholder="BUSCAR INGREDIENTE / RECETA...">
+
+            <div id="stats" class="stat-grid">
+                <div>NODOS: <span id="count-nodes">...</span></div>
+                <div>RELACIONES: <span id="count-edges">...</span></div>
+            </div>
+
+            <div class="filter-group">
+                <div style="font-size: 0.7rem; color: #555; margin-bottom: 5px;">FILTROS ACTIVOS:</div>
+                <div id="active-filters">
+                    <span class="tag">RECETAS</span>
+                    <span class="tag">INGREDIENTES</span>
+                    <span class="tag">SABORES</span>
+                </div>
+            </div>
+
+            <p style="font-size: 0.8rem; color: #666;">
+                Navega por las conexiones científicas entre platos, ingredientes y perfiles sensoriales.
+            </p>
+        </aside>
+
+        <aside id="right-panel" class="panel">
+            <div id="node-content" class="node-details">
+                <!-- Dynamic Content -->
+            </div>
+            <button onclick="closeDetails()" style="margin-top: 20px; width: 100%;">CERRAR</button>
+        </aside>
+    </div>
+
+    <div class="controls">
+        <button onclick="zoomFit()">CENTRAR</button>
+        <button onclick="toggle2D()">2D/3D</button>
+    </div>
+
+    <script>
+        const NODE_TYPE_COLORS = {
+            'recipe': '#FF6B6B',
+            'ingredient': '#4ECDC4',
+            'flavor': '#FFE66D',
+            'texture': '#F38181',
+            'region': '#AA96DA',
+            'technique': '#95E1D3'
+        };
+
+        let Graph;
+        let graphData = { nodes: [], links: [] };
+        const imgCache = {};
+
+        // Loading Data
+        fetch('graph.json')
+            .then(res => res.json())
+            .then(data => {
+                // Adapt keys for Force-Graph (source/target)
+                graphData = {
+                    nodes: data.nodes,
+                    links: data.edges.map(e => ({ ...e, source: e.source, target: e.target }))
+                };
+
+                document.getElementById('count-nodes').textContent = data.nodes.length;
+                document.getElementById('count-edges').textContent = data.edges.length;
+
+                initGraph();
+            });
+
+        function initGraph() {
+            const container = document.getElementById('graph-container');
+
+            Graph = ForceGraph()(container)
+                .graphData(graphData)
+                .nodeId('id')
+                .nodeLabel('label')
+                .nodeColor(n => NODE_TYPE_COLORS[n.type] || '#fff')
+                .nodeRelSize(6)
+                .linkDirectionalArrowLength(3)
+                .linkDirectionalArrowRelPos(1)
+                .linkCurvature(0.1)
+                .linkColor(() => '#222')
+                .onNodeClick(node => {
+                    showDetails(node);
+                    Graph.centerAt(node.x, node.y, 1000);
+                    Graph.zoom(2.5, 1000);
+                })
+                .nodeCanvasObject((node, ctx, globalScale) => {
+                    const size = node.size || 10;
+                    const r = size / 2;
+
+                    // 1. Draw Background Circle (Halo when hovered)
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, r + 1, 0, 2 * Math.PI, false);
+                    ctx.fillStyle = node.hovered ? '#00FF41' : '#111';
+                    ctx.fill();
+
+                    // 2. Draw Image or Letter
+                    if (node.image && !imgCache[node.image]) {
+                        const img = new Image();
+                        img.src = node.image;
+                        img.onload = () => { imgCache[node.image] = img; };
+                    }
+
+                    const img = imgCache[node.image];
+                    if (img) {
+                        ctx.save();
+                        ctx.beginPath();
+                        ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false);
+                        ctx.clip(); // Circular mask
+                        ctx.drawImage(img, node.x - r, node.y - r, size, size);
+                        ctx.restore();
+                    } else {
+                        // If no image, draw solid circle with type color
+                        ctx.beginPath();
+                        ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false);
+                        ctx.fillStyle = NODE_TYPE_COLORS[node.type] || '#ccc';
+                        ctx.fill();
+
+                        // Add first letter
+                        if (globalScale > 2) {
+                            ctx.font = `${r}px JetBrains Mono`;
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'middle';
+                            ctx.fillStyle = '#000';
+                            ctx.fillText(node.label[0].toUpperCase(), node.x, node.y);
+                        }
+                    }
+
+                    // 3. Draw Label below if zoomed in
+                    if (globalScale > 3) {
+                        const label = node.label;
+                        const fontSize = 12 / globalScale;
+                        ctx.font = `${fontSize}px JetBrains Mono`;
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'hanging';
+                        ctx.fillStyle = '#AAA';
+                        ctx.fillText(label, node.x, node.y + r + 2);
+                    }
+                });
+
+            // Handle Search
+            document.getElementById('search').addEventListener('input', e => {
+                const query = e.target.value.toLowerCase();
+                if (!query) return;
+
+                const found = graphData.nodes.find(n => n.label.toLowerCase().includes(query));
+                if (found) {
+                    Graph.centerAt(found.x, found.y, 1000);
+                    Graph.zoom(3, 1000);
+                    showDetails(found);
+                }
+            });
+        }
+
+        function showDetails(node) {
+            const panel = document.getElementById('right-panel');
+            const content = document.getElementById('node-content');
+            panel.style.display = 'block';
+
+            let html = `
+                <h2 style="color: var(--accent); font-size: 1.2rem; margin-top: 0;">${node.label.toUpperCase()}</h2>
+                <div style="margin-bottom: 10px;">
+                    <span class="tag" style="background: ${NODE_TYPE_COLORS[node.type]}; color: #000; font-weight: bold;">
+                        ${node.type.toUpperCase()}
+                    </span>
+                    ${node.region ? `<span class="tag">${node.region}</span>` : ''}
+                </div>
+            `;
+
+            if (node.scientific_name) {
+                html += `<p><strong>ID CIENTÍFICO:</strong><br><em style="color: #888;">${node.scientific_name}</em></p>`;
+            }
+
+            // Find related nodes
+            const related = graphData.links.filter(l =>
+                (typeof l.source === 'object' ? l.source.id : l.source) === node.id ||
+                (typeof l.target === 'object' ? l.target.id : l.target) === node.id
+            );
+
+            html += `<p><strong>CONEXIONES DIRECTAS (${related.length}):</strong></p><ul>`;
+            related.slice(0, 8).forEach(rel => {
+                const other = (typeof rel.source === 'object' ? rel.source.id : rel.source) === node.id ? rel.target : rel.source;
+                const otherNode = typeof other === 'object' ? other : graphData.nodes.find(n => n.id === other);
+                if (otherNode) {
+                    html += `<li style="cursor: pointer; color: #4ECDC4;" onclick="focusOn('${otherNode.id}')">
+                        ${otherNode.label} <small style="color: #666">(${rel.type})</small>
+                    </li>`;
+                }
+            });
+            html += `</ul>`;
+
+            content.innerHTML = html;
+        }
+
+        function focusOn(id) {
+            const node = graphData.nodes.find(n => n.id === id);
+            if (node) {
+                Graph.centerAt(node.x, node.y, 800);
+                Graph.zoom(3, 800);
+                showDetails(node);
+            }
+        }
+
+        function closeDetails() {
+            document.getElementById('right-panel').style.display = 'none';
+        }
+
+        function zoomFit() {
+            Graph.zoomToFit(1000, 50);
+        }
+
+        function toggle2D() {
+            alert('En desarrollo: El modo 3D requiere Three.js. Esta versión usa Canvas 2D de alta velocidad.');
+        }
+
+        window.addEventListener('resize', () => {
+            Graph.width(window.innerWidth);
+            Graph.height(window.innerHeight);
+        });
+    </script>
+</body>
+</html>

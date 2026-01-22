@@ -136,7 +136,37 @@ Los deditos de queso son snacks fritos o horneados, rellenos de queso fundido, p
 - "Sírvelos calientes y acompaña con salsa rosada o guacamole."
 - "Perfectos para fiestas, onces o como snack escolar."
 
-## 🔬 Análisis Detallado y Sabiduría Colectiva
+## Análisis Detallado y Sabiduría Colectiva
+
+### 📊 Perfil Sensorial Estandarizado
+
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Graso-Lácteo         | 5/5              | Diacetilo (mantequilla) y caseína fundida. |
+| **Aroma**| Hojaldre Tostado     | 4/5              | Maillard en las capas finas de masa. |
+| **Textura**| Crujiente / Elástica | 5/5              | Contraste entre láminas secas (hojaldre) y queso filante. |
+| **Vista** | Dorado en Espiral    | 4/5              | Patrón visual característico del enrollado. |
+
+### ⚗️ Química y Física Culinaria
+
+- **Laminación (Capas):** La masa de hojaldre funciona por la separación física de capas de masa mediante grasa (margarina o mantequilla). Al hornearse o freírse, el agua de la masa se evapora, empujando las capas hacia arriba (vapor), mientras la grasa se funde y frie cada capa individualmente.
+- **Punto de Fusión del Queso:** Se requiere un queso de hilado medio (como el costeño blando, doble crema o mozzarella) que funda entre $50-60^\circ\text{C}$ pero que no se licúe completamente para no salirse antes de que la masa dore.
+
+### 🍎 Nutrición y Metabolismo
+
+- **Alta Densidad Calórica:** Combinación de carbohidratos refinados y grasas saturadas. Snack de consumo ocasional.
+- ** Proteína Láctea:** Aporte significativo de proteína por el trozo generoso de queso.
+
+### 🕰️ Contexto Socio-Cultural
+
+- **El Rey de la Lonchera:** Infaltable en las cooperativas escolares y fiestas infantiles colombianas.
+- **Tequeño vs Dedito:** Aunque similares, el dedito costeño suele usar masa quebrada u hojaldrada y queso salado, mientras que el tequeño venezolano usa masa de trigo más elástica.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "Moje bien el borde de la masa para que pegue. Si se abre en el aceite, adiós dedito."
+>
+> "Si los va a freír, que el aceite no esté arrebatado o queda cruda la masa por dentro."
 
 ### Categorización Sensorial y de Uso
 

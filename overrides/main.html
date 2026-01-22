@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.css' | url }}">
+{% endblock %}
+
+{% block extrahead %}
+  <meta name="author" content="GOS - Gastronomic Open Standard">
+  <meta name="keywords" content="recipes, cooking, gastronomy, open source, database, ingredients, nutrition">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }} | GOS">
+  <meta property="og:description" content="Gastronomic Open Standard - Scientific database of world recipes and ingredients">
+  <meta property="og:image" content="{{ 'assets/images/logo_gos.png' | url }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title }} | GOS">
+{% endblock %}

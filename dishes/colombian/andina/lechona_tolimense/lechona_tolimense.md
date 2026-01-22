@@ -1,47 +1,56 @@
 ---
-title: Lechona Tolimense
-region: Andina
+title: "Lechona Tolimense"
+region: "Andina"
 categories:
-- Plato fuerte
-- Festivo
-- Cerdo
+  - "Plato Fuerte"
+  - "Festivo"
+  - "Tradicional"
 sensory:
   flavor:
-  - Salado
-  - Umami
-  - Graso
+    - "Umami"
+    - "Salado"
+    - "Graso"
   texture:
-  - Crujiente
-  - Suave
-  - Granoso
+    - "Crujiente (Cuero)"
+    - "Suave (Carne)"
+    - "Húmedo (Relleno)"
   aroma:
-  - Cerdo asado
-  - Arveja
-  - Laurel
-  presentation: Se sirve el cojín entero para cortar, con la piel dorada y crujiente
-    visible. Se acompaña de arepa blanca e insulso.
+    - "Cerdo asado"
+    - "Comino"
+    - "Ahumado (leña)"
+  presentation: "Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción que incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne y arveja."
 main_ingredients:
-- Cerdo
-- Arroz
-- Arveja
-- Piel de cerdo
-difficulty: ★★★★☆
-prep_time: 2 horas
-cook_time: 8 horas
+  - "Cerdo (pulpa y costilla)"
+  - "Cuero de cerdo"
+  - "Arveja amarilla"
+  - "Arroz"
+  - "Manteca de cerdo"
+  - "Cebolla larga"
+  - "Ajo"
+  - "Comino"
+difficulty: "Alta"
+prep_time: 120
+cook_time: 480
 servings: 20
 nutrition:
-  calories: 86
+  calories: 850
   macros:
-    protein_g: 3.2
-    fat_g: 0.3
-    carbs_g: 19.7
+    protein_g: 45
+    fat_g: 58
+    carbs_g: 42
 tags:
-- Plato festivo
-- Comida típica
-- Tolima
-description: La Lechona Tolimense es uno de los platos más emblemáticos del Tolima
-  y el centro de Colombia. Consiste en cerdo relleno de arroz, arveja y condimentos,
-  horneado lentamente hasta lograr una piel crujiente y un relleno jugoso y aromático.
+  - "Tolima"
+  - "Asado"
+  - "Cuerito"
+  - "San Pedro"
+images:
+  - url: "https://im.ge/i/lechona-1.AbC123"
+    description: "Lechona Tolimense recién salida del horno de barro"
+sources:
+  - name: "Patrimonio Gastronómico de Colombia"
+    url: "https://mincultura.gov.co"
+license: "MIT"
+description: "Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín) relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un guiso tradicional y horneado en horno de barro por hasta 12 horas hasta que la piel alcanza un estado vítreo e increíblemente crujiente."
 ---
 
 ## Lechona Tolimense
@@ -137,11 +146,11 @@ La Lechona Tolimense es uno de los platos más emblemáticos del Tolima y el cen
 
 ---
 
-## Sabiduría colectiva, trucos y consejos
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. **Piel crocante:** Seca bien la piel antes de hornear y hornéala a alta temperatura los últimos 30 minutos.
-2. **Relleno jugoso:** No sobrecocines el arroz ni la arveja para que absorban los jugos del cerdo durante el horneado.
-3. **Acompañamiento:** Servir siempre con arepa blanca y limón fresco.
+> "La lechona tolimense *verdadera* no lleva arroz para rellenar, sino solo arveja y carne. Sin embargo, en Ibagué y otras zonas se le pone arroz para que rinda más y sea menos pesada. Si le pones arroz, que sea de grano largo y que esté apenas precocido." — *Don Fabio, experto asador de Espinal.*
+
+> "El secreto del cuerito 'galleta' es pinchar la piel con una aguja en las zonas donde hay más grasa antes de meter al horno. Eso permite que la grasa salga y fría la piel desde adentro mientras el calor del horno la seca por fuera."
 
 ---
 

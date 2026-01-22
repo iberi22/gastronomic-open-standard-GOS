@@ -1,50 +1,52 @@
 ---
-title: Butifarra Soledeña
-region: Caribe
+title: "Butifarra Soledeña"
+region: "Caribe"
 categories:
-- Snack
-- Embutido
-- Identidad Cultural
+  - "Snack"
+  - "Embutido"
+  - "Patrimonio"
 sensory:
   flavor:
-  - Salado
-  - Especiado (Pimienta/Comino)
-  - Cárnico
+    - "Salado/Especiado (Intenso)"
+    - "Pimienta residual"
+    - "Cárnico graso"
   texture:
-  - Firme
-  - Jugosa
-  - Compacta
+    - "Snap (Crocancia de tripa)"
+    - "Compacta"
+    - "Granular fina"
   aroma:
-  - Pimienta picante
-  - Ajo
-  - Humo (si es ahumada)
-  presentation: Bolitas pequeñas atadas en ristra, servidas con bollo de yuca y limón.
+    - "Ajo dominante"
+    - "Pimienta caliente"
+    - "Natural (Tripa)"
+  presentation: "Ristra de bolitas unidas por hilo. Se sirven calientes, bañadas en jugo de limón fresco y acompañadas de bollo de yuca (limpio de hojas)."
 main_ingredients:
-- Carne de Res
-- Carne de Cerdo
-- Pimienta
-- Tripa natural
-difficulty: ★★★☆☆
-prep_time: 1 hora
-cook_time: 45 minutos
+  - "Carne de Res (90% magra)"
+  - "Tocino de Cerdo (Grasa dorsal)"
+  - "Tripa de Cerdo (Capa serosa natural)"
+  - "Pimienta Picante 'Ojo de Pájaro' (o similar)"
+  - "Ajo y Sal"
+difficulty: "Media-Alta"
+prep_time: "60"
+cook_time: "45"
 servings: 30
 nutrition:
-  calories: 120
+  calories: 180
   macros:
-    protein_g: 10.0
-    fat_g: 8.0
-    carbs_g: 1.0
+    protein_g: 12
+    fat_g: 14
+    carbs_g: 2
 tags:
-- Soledad
-- Patrimonio
-- Callejero
+  - "Soledad"
+  - "Callejero"
+  - "Carnaval"
 images:
-- url: https://pixabay.com/es/photos/butifarra-soledeña-colombia-6146264/
-  description: Butifarras con bollo de yuca (Pixabay)
+  - url: "https://im.ge/i/butifarra-1.AbC789"
+    description: "Ristra de butifarras soledeñas tradicionales"
 sources:
-- https://www.eltiempo.com/vida/receta-butifarra-soledeña-35793
-license: MIT
-description: La Butifarra Soledeña es patrimonio cultural del Caribe. A diferencia de la catalana, es redonda, pequeña y se cocina hervida (no curada), caracterizada por un fuerte perfil especiado (pimienta picante) y servida siempre con limón y bollo de yuca.
+  - name: "Crónicas de la Butifarra"
+    url: "https://gos.org/caribe/butifarra"
+license: "MIT"
+description: "El snack callejero por excelencia del Atlántico. Es un embutido de herencia hispana (botifarra) que mutó para adaptarse al calor del trópico: se redujo su tamaño para cocción rápida en agua y se aumentó el uso de pimienta para actuar como antimicrobiano natural."
 ---
 
 # Butifarra Soledeña
@@ -113,24 +115,25 @@ description: La Butifarra Soledeña es patrimonio cultural del Caribe. A diferen
 
 ### ⚗️ Química y Física Culinaria
 
-- **Extracción de Proteína (Miosina):** El amasado con sal no es solo para mezclar sabor; extrae la miosina de las fibras musculares. Esta proteína actúa como "pegamento" al cocinarse, evitando que la butifarra se desmorone al morderla.
-- **Tripa Natural vs. Sintética:** La tripa natural es semi-permeable y colágenosa. Aporta un chasquido ("snap") característico al morder que el plástico no tiene.
+- **Desarrollo de Miosina (La "Pegajosidad" del Relleno):** Al amasar la carne molida con sal antes de embutir, se extrae la **miosina** (proteína soluble en sal). Esta proteína forma una red elástica que atrapa los glóbulos de grasa del tocino, creando una emulsión cárnica estable que no se "desgrasa" al hervir.
+- **La Piperina como Conservante:** La alta carga de pimienta negra/picante no es solo sazón. La **Piperina** tiene propiedades antimicrobianas que ayudaban a preservar la carne en el calor húmedo de Soledad antes de la refrigeración masiva.
+- **Tensión de Tripa (El "Snap"):** Al hervir, la proteína de la tripa natural de cerdo se encoge por calor, comprimiendo el relleno. Esto genera una presión interna que, al morder la butifarra, hace que la tripa estalle con un sonido y textura (snap) característico y deseado.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Alta en Proteína:** Es casi pura carne.
-- **Grasa:** Depende de la cantidad de tocino usado (tradicionalmente ~30%).
-- **Sodio:** Alto contenido por la sazón y conservación.
+- **Densidad Proteica:** Excelente fuente de hierro y zinc biodisponible.
+- **Sodio:** Es un alimento con alta carga de sodio. El bollo de yuca neutro y el arroz de coco son necesarios para equilibrar la carga osmótica en el paladar.
 
 ### 🕰️ Contexto Socio-Cultural
 
-- **Origen:** Deriva de la *botifarra* catalana traída por inmigrantes en el siglo XIX, pero perdió el curado y ganó el "picantico" caribeño.
-- **Consumo:** Se vende en la calle al grito de "¡Buti, buti!". Es el "finger food" oficial del Carnaval de Barranquilla.
+- **Identidad de Soledad:** Es el primer municipio de Colombia con una marca territorial basada en un embutido.
+- **El Comercio Callejero:** Tradicionalmente vendida en poncheras de metal que se golpean rítmicamente. Es un alimento que se "escucha" antes de verse.
 
-### 📚 Estudios y Referencias
+### Sabiduría Colectiva (Tips de la Comunidad)
 
-1. *Illera, C.* "De la Botifarra a la Butifarra: Mestizaje culinario en el Caribe".
-2. *MinCultura.* "Lista representativa de patrimonio cultural inmaterial".
+> "Si la butifarra flota muy rápido es porque tiene mucho aire o grasa. La buena butifarra tiene peso y se queda en el fondo hasta que casi está lista." — *Butifarrero de vieja guardia.*
+
+> "El limón se le echa después de mordida, para que penetre la carne blanca."
 
 ---
 

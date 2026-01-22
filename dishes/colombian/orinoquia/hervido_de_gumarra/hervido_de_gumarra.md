@@ -73,6 +73,36 @@ El Hervido de Gumarra es una sopa tradicional de la Orinoquía colombiana, prepa
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
+### 📊 Perfil Sensorial Estandarizado
+
+| Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
+|----------|----------------------|------------------|----------------|
+| **Sabor**| Ave de Campo (Gamey) | 5/5              | Notas férricas y profundas de la gallina de campo. |
+| **Aroma**| Ahumado Leve         | 4/5              | Aroma de leña impregnado durante la cocción larga. |
+| **Textura**| Caldo Sustancioso    | 5/5              | Gelatinización del colágeno de las patas y alas. |
+| **Vista** | Dorado Oscuro        | 4/5              | Grasa natural de la gumarra (amarilla). |
+
+### ⚗️ Química y Física Culinaria
+
+- **Hidrólisis del Tejido Conectivo:** La gumarra (gallina vieja de campo) tiene carne dura rica en colágeno cruzado. La cocción prolongada (hervido) es indispensable para convertir este colágeno tenaz en gelatina suave, que a su vez espesa el caldo (viscosidad).
+- **Extracción por Decocción:** La técnica de hervido lento extrae minerales óseos y aminoácidos libres que no se obtienen en cocciones rápidas.
+
+### 🍎 Nutrición y Metabolismo
+
+- **Colágeno Biodisponible:** Excelente para la salud articular y digestiva.
+- **Densidad Calórica:** Plato energético para el trabajo de llano.
+
+### 🕰️ Contexto Socio-Cultural
+
+- **Plato de Finca:** Es la comida típica de los fines de semana en los hatos llaneros.
+- **Diferencia con Sancocho:** El hervido llanero suele ser más simple en "bastimento" (acompañantes) y se centra en el sabor puro del animal.
+
+### Sabiduría Colectiva (Tips de la Comunidad)
+
+> "La gumarra no ablanda si la mira mucho. Tápela y deje que la leña haga el trabajo."
+>
+> "Ese caldo levanta muertos, cura el guayabo y arregla el matrimonio."
+
 ### Categorización Sensorial y de Uso
 
 - **Tipo de plato:** Sopa, plato fuerte, sancocho
