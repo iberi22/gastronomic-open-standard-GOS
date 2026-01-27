@@ -45,7 +45,7 @@ jobs:
       - name: Build Knowledge Graph
         run: python scripts/build_graph.py
       - name: Upload Graph Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: knowledge-graph
           path: docs/explorar-grafo.html
