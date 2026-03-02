@@ -29,14 +29,14 @@
   "dependencies": {
     "@xenova/transformers": "^2.17.2",
     "front-matter": "^4.0.2",
-    "textlint": "^15.5.1",
+    "textlint": "^15.5.2",
     "textlint-rule-ja-space-between-half-and-full-width": "^2.2.0",
     "textlint-rule-zh-half-and-full-width-bracket": "^1.1.0"
   },
   "devDependencies": {
     "glob": "^7.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^16.3.1",
     "markdownlint-cli": "^0.47.0",
     "tar-fs": "^3.1.1",
     "ts-node": "^10.9.2",
