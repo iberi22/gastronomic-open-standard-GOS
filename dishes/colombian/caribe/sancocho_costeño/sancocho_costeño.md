@@ -130,7 +130,7 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 - **Carga de Glucógeno:** Ideal para climas tropicales de alta demanda física.
 - **Electrolitos:** La combinación de tubérculos + sal lo convierte en un suero de rehidratación oral natural (perfecto para combatir la deshidratación por calor).
 
-### 🕰️ Contexto Socio-Cultural
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
 - **El Paseo de Olla:** Práctica cultural donde la comunidad cocina a la orilla del río. El río aporta humedad relativa a la cocción y el sancocho es el premio tras el baño.
 - **Democracia del Plato:** Hay sancocho de "cola", de "trifásico" (3 carnes) o de "pava" (pobre, sin carne). Todos comparten la misma base de ñame y sabiduría.

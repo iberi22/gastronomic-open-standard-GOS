@@ -1,9 +1,8 @@
 ---
-title: Knowledge Graph
-description: Interactive visualization of recipe-ingredient connections in gastronomic data
----
-
 import GraphExplorer from '../components/GraphExplorer.astro';
+title: "Knowledge Graph"
+description: "Interactive visualization of recipe-ingredient connections in gastronomic data"
+---
 
 # Knowledge Graph
 
@@ -17,9 +16,9 @@ This visualization shows the interconnected relationships in gastronomic data:
 
 | Type | Color | Description |
 |------|-------|-------------|
-| **Recipes** | 🔴 Red | Dishes from different cuisines |
-| **Ingredients** | 🟢 Green | Raw ingredients and components |
-| **Regions** | 🔵 Blue | Geographic origins |
+| **Recipes** | Red | Dishes from different cuisines |
+| **Ingredients** | Green | Raw ingredients and components |
+| **Regions** | Blue | Geographic origins |
 
 ### Connection Types
 
@@ -37,18 +36,9 @@ Use the filter controls above the graph to:
 
 ## Data Source
 
-Graph data is generated from:
-- `/scripts/generate_graph.py` - Generates graph.json
-- Recipe files in `/dishes/{region}/`
-- Ingredient files in `/ingredients/{category}/`
-
-## Stats
-
-Currently showing the complete knowledge graph with all interconnected nodes.
+Graph data is generated from `/scripts/generate_graph.py` and stored in `/graph.json`.
 
 <GraphExplorer />
-
----
 
 ## Related
 

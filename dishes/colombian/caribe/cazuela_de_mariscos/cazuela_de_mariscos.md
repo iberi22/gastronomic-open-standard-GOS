@@ -134,7 +134,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 - **Complejidad Proteica:** Aporte de todos los aminoácidos esenciales con baja grasa saturada animal (el coco aporta saturadas vegetales).
 - **Yodo y Selenio:** Fundamental para la función tiroidea y protección antioxidante inducida por el mar.
 
-### 🕰️ Contexto Socio-Cultural
+### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 
 - **El Ritual del Barro:** Servir en cazuela de barro no es solo estética; la porosidad del barro retiene el calor infrarrojo, permitiendo que la "cocción residual" termine de ablandar los mariscos en la mesa.
 - **Influencia Mediterránea:** Es la adaptación colombiana de la *Bouillabaisse* o la *Zarzuela de Mariscos*, tropicalizada con coco.

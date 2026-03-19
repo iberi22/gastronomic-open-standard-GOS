@@ -1,0 +1,2912 @@
+{
+  "recipes": [
+    {
+      "id": "china/mariscos/咖喱炒蟹/咖喱炒蟹",
+      "title": "咖喱炒蟹的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "咖喱炒蟹的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "青蟹（别称：肉蟹）",
+          "咖喱块（推介乐惠蟹黄咖喱）",
+          "洋葱",
+          "椰浆",
+          "鸡蛋",
+          "生粉（别称：淀粉）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "青蟹（别称：肉蟹）",
+        "咖喱块（推介乐惠蟹黄咖喱）",
+        "洋葱",
+        "椰浆",
+        "鸡蛋",
+        "生粉（别称：淀粉）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/咖喱炒蟹/咖喱炒蟹.md"
+    },
+    {
+      "id": "china/mariscos/响油鳝丝/响油鳝丝",
+      "title": "响油鳝丝的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "响油鳝丝的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "鳝丝",
+          "大蒜",
+          "姜末",
+          "料酒",
+          "生抽",
+          "蚝油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "鳝丝",
+        "大蒜",
+        "姜末",
+        "料酒",
+        "生抽",
+        "蚝油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/响油鳝丝/响油鳝丝.md"
+    },
+    {
+      "id": "china/mariscos/微波葱姜黑鳕鱼/微波葱姜黑鳕鱼",
+      "title": "微波葱姜黑鳕鱼的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "微波葱姜黑鳕鱼的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "黑鳕鱼，带皮"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "黑鳕鱼，带皮"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/微波葱姜黑鳕鱼/微波葱姜黑鳕鱼.md"
+    },
+    {
+      "id": "china/mariscos/水煮鱼/水煮鱼",
+      "title": "水煮鱼的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "水煮鱼的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "巴沙鱼",
+          "蔬菜（比如土豆片……）",
+          "红油豆瓣酱",
+          "藤椒油",
+          "菜籽油",
+          "白胡椒粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "巴沙鱼",
+        "蔬菜（比如土豆片……）",
+        "红油豆瓣酱",
+        "藤椒油",
+        "菜籽油",
+        "白胡椒粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/水煮鱼/水煮鱼.md"
+    },
+    {
+      "id": "china/mariscos/清蒸生蚝/清蒸生蚝",
+      "title": "清蒸生蚝的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "清蒸生蚝的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "生蚝",
+          "葱",
+          "蒜",
+          "姜",
+          "酱油",
+          "刷子"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "生蚝",
+        "葱",
+        "蒜",
+        "姜",
+        "酱油",
+        "刷子"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/清蒸生蚝/清蒸生蚝.md"
+    },
+    {
+      "id": "china/mariscos/红烧鱼/红烧鱼",
+      "title": "红烧鱼的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "红烧鱼的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "姜、蒜瓣、干辣椒",
+          "油、盐、料酒、醋、酱油、白砂糖",
+          "鱼"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "姜、蒜瓣、干辣椒",
+        "油、盐、料酒、醋、酱油、白砂糖",
+        "鱼"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/红烧鱼/红烧鱼.md"
+    },
+    {
+      "id": "china/mariscos/红烧鱼头/红烧鱼头",
+      "title": "红烧鱼头的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "红烧鱼头的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "注：如果有可能，尽量另准备一把菜刀，超市或市场上均有廉价且刀片更厚的菜刀，刀片厚度在 - 为最佳。",
+          "大葱、姜、大蒜、香菜、美人椒",
+          "油、盐、鸡精、生抽、老抽、陈醋、黑胡椒粉、料酒",
+          "八角、干辣椒",
+          "鱼头一个",
+          "注：市场直接贩卖的鱼头一般分为两种：白鲢、花鲢。前者价格便宜，后者价格略贵，但口感也更佳！"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "注：如果有可能，尽量另准备一把菜刀，超市或市场上均有廉价且刀片更厚的菜刀，刀片厚度在 - 为最佳。",
+        "大葱、姜、大蒜、香菜、美人椒",
+        "油、盐、鸡精、生抽、老抽、陈醋、黑胡椒粉、料酒",
+        "八角、干辣椒",
+        "鱼头一个",
+        "注：市场直接贩卖的鱼头一般分为两种：白鲢、花鲢。前者价格便宜，后者价格略贵，但口感也更佳！"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/红烧鱼头/红烧鱼头.md"
+    },
+    {
+      "id": "china/mariscos/红烧鲤鱼/红烧鲤鱼",
+      "title": "红烧鲤鱼的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "红烧鲤鱼的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "大葱、姜、大蒜、干辣椒",
+          "油、盐、生抽、老抽、陈醋、蚝油、料酒、白糖",
+          "鲤鱼、五花肉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "大葱、姜、大蒜、干辣椒",
+        "油、盐、生抽、老抽、陈醋、蚝油、料酒、白糖",
+        "鲤鱼、五花肉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/红烧鲤鱼/红烧鲤鱼.md"
+    },
+    {
+      "id": "china/mariscos/肉蟹煲/肉蟹煲",
+      "title": "肉蟹煲的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "肉蟹煲的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "肉蟹（推荐优先级从高到低：缅甸黑蟹、青蟹、梭子蟹、大闸蟹）",
+          "虾（可选）",
+          "土豆",
+          "年糕（推荐硬年糕，新鲜年糕亦可）",
+          "洋葱",
+          "大蒜"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "肉蟹（推荐优先级从高到低：缅甸黑蟹、青蟹、梭子蟹、大闸蟹）",
+        "虾（可选）",
+        "土豆",
+        "年糕（推荐硬年糕，新鲜年糕亦可）",
+        "洋葱",
+        "大蒜"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/肉蟹煲/肉蟹煲.md"
+    },
+    {
+      "id": "china/mariscos/酱炖蟹/酱炖蟹",
+      "title": "酱炖蟹的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "酱炖蟹的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "mariscos",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "mariscos"
+        ],
+        "main_ingredients": [
+          "螃蟹（首选河蟹，次选梭子蟹）",
+          "豆瓣酱",
+          "冰糖（可选）",
+          "老抽",
+          "菜油（未脱色的菜籽油，俗称“毛菜油”或“土菜油”，备选花生油）",
+          "番茄酱"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "螃蟹（首选河蟹，次选梭子蟹）",
+        "豆瓣酱",
+        "冰糖（可选）",
+        "老抽",
+        "菜油（未脱色的菜籽油，俗称“毛菜油”或“土菜油”，备选花生油）",
+        "番茄酱"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "mariscos"
+      ],
+      "filePath": "dishes/china/mariscos/酱炖蟹/酱炖蟹.md"
+    },
+    {
+      "id": "china/principales/可乐炒饭/可乐炒饭",
+      "title": "可乐炒饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "可乐炒饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "米饭",
+          "可乐（含糖或无糖均可）",
+          "鸡蛋",
+          "火腿肠（或午餐肉，可选）",
+          "油",
+          "生抽"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "米饭",
+        "可乐（含糖或无糖均可）",
+        "鸡蛋",
+        "火腿肠（或午餐肉，可选）",
+        "油",
+        "生抽"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/可乐炒饭/可乐炒饭.md"
+    },
+    {
+      "id": "china/principales/咸肉菜饭/咸肉菜饭",
+      "title": "咸肉菜饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "咸肉菜饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "大米",
+          "青菜（推荐矮脚青菜，又称上海青）",
+          "咸肉（淡咸肉）",
+          "冬笋（可选）",
+          "猪油",
+          "料酒（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "大米",
+        "青菜（推荐矮脚青菜，又称上海青）",
+        "咸肉（淡咸肉）",
+        "冬笋（可选）",
+        "猪油",
+        "料酒（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/咸肉菜饭/咸肉菜饭.md"
+    },
+    {
+      "id": "china/principales/手工水饺/手工水饺",
+      "title": "手工水饺的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "手工水饺的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "擀面杖",
+          "面粉",
+          "冷水",
+          "直径  以上的盆",
+          "芝麻香油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "擀面杖",
+        "面粉",
+        "冷水",
+        "直径  以上的盆",
+        "芝麻香油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/手工水饺/手工水饺.md"
+    },
+    {
+      "id": "china/principales/汤面/汤面",
+      "title": "汤面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "汤面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。",
+          "菜类材料：建议荤素搭配，选择自己喜欢的食材洗干净即可。例如：",
+          "牛羊鱼虾等肉类（生熟皆可）",
+          "鸡蛋鸭蛋鹅蛋鸵鸟蛋等蛋类",
+          "豆块豆筋豆腐皮等豆制品类",
+          "生菜菠菜油麦菜"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。",
+        "菜类材料：建议荤素搭配，选择自己喜欢的食材洗干净即可。例如：",
+        "牛羊鱼虾等肉类（生熟皆可）",
+        "鸡蛋鸭蛋鹅蛋鸵鸟蛋等蛋类",
+        "豆块豆筋豆腐皮等豆制品类",
+        "生菜菠菜油麦菜"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/汤面/汤面.md"
+    },
+    {
+      "id": "china/principales/炒年糕/炒年糕",
+      "title": "炒年糕的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "炒年糕的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "年糕 （形状不限）",
+          "葱",
+          {
+            "调味料": "酱油，盐"
+          },
+          "（可选）：鸡蛋，青菜"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "年糕 （形状不限）",
+        "葱",
+        {
+          "调味料": "酱油，盐"
+        },
+        "（可选）：鸡蛋，青菜"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/炒年糕/炒年糕.md"
+    },
+    {
+      "id": "china/principales/炒方便面/炒方便面",
+      "title": "炒方便面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "炒方便面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "方便面",
+          "盐",
+          "鸡蛋",
+          "火腿肠（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "方便面",
+        "盐",
+        "鸡蛋",
+        "火腿肠（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/炒方便面/炒方便面.md"
+    },
+    {
+      "id": "china/principales/炒河粉/炒河粉",
+      "title": "炒河粉的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "炒河粉的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "炒河粉、猪肉",
+          "炒料：盐、味精、老抽、生抽、孜然粉（或直接用河粉料）",
+          "其他调味料：胡椒粉",
+          "黄瓜、面筋块、绿豆芽、鸡蛋、蒜瓣、小葱、淀粉",
+          "盆、盘子"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "炒河粉、猪肉",
+        "炒料：盐、味精、老抽、生抽、孜然粉（或直接用河粉料）",
+        "其他调味料：胡椒粉",
+        "黄瓜、面筋块、绿豆芽、鸡蛋、蒜瓣、小葱、淀粉",
+        "盆、盘子"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/炒河粉/炒河粉.md"
+    },
+    {
+      "id": "china/principales/炒馍/炒馍",
+      "title": "炒馍的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "炒馍的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "馒头（隔天略硬更好）",
+          "盐",
+          "油",
+          "孜然粉",
+          "五香粉",
+          "小葱"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "馒头（隔天略硬更好）",
+        "盐",
+        "油",
+        "孜然粉",
+        "五香粉",
+        "小葱"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/炒馍/炒馍.md"
+    },
+    {
+      "id": "china/principales/炸酱面/炸酱面",
+      "title": "炸酱面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "炸酱面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "肉丁",
+          "面条（挂面或普通面条）",
+          "蒜",
+          "菜码（根据个人喜好选择，通常 - 种，可选择黄瓜、白菜、萝卜等）",
+          "豆瓣酱",
+          "甜面酱"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "肉丁",
+        "面条（挂面或普通面条）",
+        "蒜",
+        "菜码（根据个人喜好选择，通常 - 种，可选择黄瓜、白菜、萝卜等）",
+        "豆瓣酱",
+        "甜面酱"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/炸酱面/炸酱面.md"
+    },
+    {
+      "id": "china/principales/热干面/热干面",
+      "title": "热干面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "热干面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "热干面特有的碱水面",
+          "小葱",
+          "酸豆角",
+          "肉末",
+          "蒜水",
+          "肉汤汁"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "热干面特有的碱水面",
+        "小葱",
+        "酸豆角",
+        "肉末",
+        "蒜水",
+        "肉汤汁"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/热干面/热干面.md"
+    },
+    {
+      "id": "china/principales/照烧鸡腿饭/照烧鸡腿饭",
+      "title": "照烧鸡腿饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "照烧鸡腿饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "鸡腿",
+          "料酒",
+          "生抽",
+          "蜂蜜（可选）",
+          "黑椒碎",
+          "黑椒粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "鸡腿",
+        "料酒",
+        "生抽",
+        "蜂蜜（可选）",
+        "黑椒碎",
+        "黑椒粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/照烧鸡腿饭/照烧鸡腿饭.md"
+    },
+    {
+      "id": "china/principales/煮泡面加蛋/煮泡面加蛋",
+      "title": "煮泡面加蛋的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "煮泡面加蛋的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "泡面",
+          "鸡蛋",
+          "水"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "泡面",
+        "鸡蛋",
+        "水"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/煮泡面加蛋/煮泡面加蛋.md"
+    },
+    {
+      "id": "china/principales/猪油拌饭/猪油拌饭",
+      "title": "猪油拌饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "猪油拌饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "米饭（推荐用粳米）",
+          "猪油",
+          "生抽（推荐用李锦记或海天）",
+          "老抽",
+          "蚝油（可选）",
+          "葱花（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "米饭（推荐用粳米）",
+        "猪油",
+        "生抽（推荐用李锦记或海天）",
+        "老抽",
+        "蚝油（可选）",
+        "葱花（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/猪油拌饭/猪油拌饭.md"
+    },
+    {
+      "id": "china/principales/老干妈拌面/老干妈拌面",
+      "title": "老干妈拌面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "老干妈拌面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "面",
+          "老干妈",
+          "酱油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "面",
+        "老干妈",
+        "酱油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/老干妈拌面/老干妈拌面.md"
+    },
+    {
+      "id": "china/principales/肉蛋盖饭/肉蛋盖饭",
+      "title": "肉蛋盖饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "肉蛋盖饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "米饭",
+          "鸡蛋",
+          "肉馅",
+          "老抽",
+          "生抽",
+          "醋"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "米饭",
+        "鸡蛋",
+        "肉馅",
+        "老抽",
+        "生抽",
+        "醋"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/肉蛋盖饭/肉蛋盖饭.md"
+    },
+    {
+      "id": "china/principales/葱油拌面/葱油拌面",
+      "title": "葱油拌面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "葱油拌面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "干面条",
+          "小葱",
+          "生抽",
+          "老抽",
+          "白糖"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "干面条",
+        "小葱",
+        "生抽",
+        "老抽",
+        "白糖"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/葱油拌面/葱油拌面.md"
+    },
+    {
+      "id": "china/principales/蒸卤面/蒸卤面",
+      "title": "蒸卤面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "蒸卤面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "猪五花肉",
+          "芹菜",
+          "鲜面条（要求必须是**最细**的，如果附近菜市场没有，请参考制作[焖面](https:)）",
+          "葱,姜,蒜",
+          "食用油（花生油最佳）",
+          "生抽,老抽,料酒,盐,五香粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "猪五花肉",
+        "芹菜",
+        "鲜面条（要求必须是**最细**的，如果附近菜市场没有，请参考制作[焖面](https:)）",
+        "葱,姜,蒜",
+        "食用油（花生油最佳）",
+        "生抽,老抽,料酒,盐,五香粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/蒸卤面/蒸卤面.md"
+    },
+    {
+      "id": "china/principales/蛋包饭/蛋包饭",
+      "title": "蛋包饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "蛋包饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "鸡蛋（建议使用土鸡蛋，口感更香）",
+          "洋葱",
+          "胡萝卜",
+          "玉米粒",
+          "青豆（可选）",
+          "火腿肠或鸡胸肉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "鸡蛋（建议使用土鸡蛋，口感更香）",
+        "洋葱",
+        "胡萝卜",
+        "玉米粒",
+        "青豆（可选）",
+        "火腿肠或鸡胸肉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/蛋包饭/蛋包饭.md"
+    },
+    {
+      "id": "china/principales/蛋炒饭/蛋炒饭",
+      "title": "蛋炒饭的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "蛋炒饭的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "冷饭",
+          "鸡蛋",
+          "火腿",
+          "黄瓜",
+          "胡萝卜",
+          "油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "冷饭",
+        "鸡蛋",
+        "火腿",
+        "黄瓜",
+        "胡萝卜",
+        "油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/蛋炒饭/蛋炒饭.md"
+    },
+    {
+      "id": "china/principales/螺蛳粉/螺蛳粉",
+      "title": "螺蛳粉的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "螺蛳粉的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "袋装螺蛳粉一包，其中应该包含：",
+          "米粉",
+          "螺蛳肉包（可能放在配料包中）",
+          "汤料包",
+          "酸笋包、花生包、豆皮包、木耳包等配料包",
+          "醋包、辣椒油等调味包"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "袋装螺蛳粉一包，其中应该包含：",
+        "米粉",
+        "螺蛳肉包（可能放在配料包中）",
+        "汤料包",
+        "酸笋包、花生包、豆皮包、木耳包等配料包",
+        "醋包、辣椒油等调味包"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/螺蛳粉/螺蛳粉.md"
+    },
+    {
+      "id": "china/principales/酸辣蕨根粉/酸辣蕨根粉",
+      "title": "酸辣蕨根粉的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "酸辣蕨根粉的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "蕨根粉",
+          "油泼辣子",
+          "酱油",
+          "香醋",
+          "小米辣（可选）",
+          "蒜（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "蕨根粉",
+        "油泼辣子",
+        "酱油",
+        "香醋",
+        "小米辣（可选）",
+        "蒜（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/酸辣蕨根粉/酸辣蕨根粉.md"
+    },
+    {
+      "id": "china/principales/醪糟小汤圆/醪糟小汤圆",
+      "title": "醪糟小汤圆的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "醪糟小汤圆的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "小汤圆",
+          "醪糟",
+          "白糖",
+          "枸杞（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "小汤圆",
+        "醪糟",
+        "白糖",
+        "枸杞（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/醪糟小汤圆/醪糟小汤圆.md"
+    },
+    {
+      "id": "china/principales/韭菜盒子/韭菜盒子",
+      "title": "韭菜盒子的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "韭菜盒子的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "韭菜",
+          "虾仁",
+          "鸡蛋",
+          "香油",
+          "盐",
+          "面粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "韭菜",
+        "虾仁",
+        "鸡蛋",
+        "香油",
+        "盐",
+        "面粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/韭菜盒子/韭菜盒子.md"
+    },
+    {
+      "id": "china/principales/鲜肉烧卖/鲜肉烧卖",
+      "title": "鲜肉烧卖的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "鲜肉烧卖的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "烧卖皮",
+          "猪肉末（肥瘦 :，如果想做低脂版本，用猪里脊肉或猪前腿肉）",
+          "生姜末",
+          "葱末（只用绿色部分）",
+          "生抽",
+          "料酒"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "烧卖皮",
+        "猪肉末（肥瘦 :，如果想做低脂版本，用猪里脊肉或猪前腿肉）",
+        "生姜末",
+        "葱末（只用绿色部分）",
+        "生抽",
+        "料酒"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/鲜肉烧卖/鲜肉烧卖.md"
+    },
+    {
+      "id": "china/principales/麻油拌面/麻油拌面",
+      "title": "麻油拌面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "麻油拌面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "风干快熟面（不需要调味料）",
+          "麻油",
+          "胡椒粉",
+          "老抽",
+          "盐"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "风干快熟面（不需要调味料）",
+        "麻油",
+        "胡椒粉",
+        "老抽",
+        "盐"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/麻油拌面/麻油拌面.md"
+    },
+    {
+      "id": "china/principales/麻辣减脂荞麦面/麻辣减脂荞麦面",
+      "title": "麻辣减脂荞麦面的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "麻辣减脂荞麦面的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "principales",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "principales"
+        ],
+        "main_ingredients": [
+          "调味料：火锅底料、花生酱、全脂牛奶、生抽、辣椒油、醋、花椒油",
+          "原料：半干荞麦面、娃娃菜、生菜",
+          "洗菜盆、直径  的小锅"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "调味料：火锅底料、花生酱、全脂牛奶、生抽、辣椒油、醋、花椒油",
+        "原料：半干荞麦面、娃娃菜、生菜",
+        "洗菜盆、直径  的小锅"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "principales"
+      ],
+      "filePath": "dishes/china/principales/麻辣减脂荞麦面/麻辣减脂荞麦面.md"
+    },
+    {
+      "id": "china/sopas/奶油蘑菇汤/奶油蘑菇汤",
+      "title": "奶油蘑菇汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "奶油蘑菇汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "白蘑菇",
+          "洋葱",
+          "黄油",
+          "面粉",
+          "牛奶",
+          "淡奶油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "白蘑菇",
+        "洋葱",
+        "黄油",
+        "面粉",
+        "牛奶",
+        "淡奶油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/奶油蘑菇汤/奶油蘑菇汤.md"
+    },
+    {
+      "id": "china/sopas/小米粥/小米粥",
+      "title": "小米粥的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "小米粥的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "小米",
+          "水（山泉水最佳）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "小米",
+        "水（山泉水最佳）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/小米粥/小米粥.md"
+    },
+    {
+      "id": "china/sopas/生汆丸子汤/生汆丸子汤",
+      "title": "生汆丸子汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "生汆丸子汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "前腿肉",
+          "盐",
+          "胡椒粉",
+          "葱姜花椒水",
+          "一个鸡蛋的鸡蛋清",
+          "土豆淀粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "前腿肉",
+        "盐",
+        "胡椒粉",
+        "葱姜花椒水",
+        "一个鸡蛋的鸡蛋清",
+        "土豆淀粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/生汆丸子汤/生汆丸子汤.md"
+    },
+    {
+      "id": "china/sopas/番茄牛肉蛋花汤/番茄牛肉蛋花汤",
+      "title": "番茄牛肉蛋花汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "番茄牛肉蛋花汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "牛肉",
+          "番茄",
+          "鸡蛋",
+          "葱、姜、蒜",
+          "盐",
+          "胡椒粉"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "牛肉",
+        "番茄",
+        "鸡蛋",
+        "葱、姜、蒜",
+        "盐",
+        "胡椒粉"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/番茄牛肉蛋花汤/番茄牛肉蛋花汤.md"
+    },
+    {
+      "id": "china/sopas/皮蛋瘦肉粥/皮蛋瘦肉粥",
+      "title": "皮蛋瘦肉粥的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "皮蛋瘦肉粥的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "饮用水",
+          "皮蛋（松花蛋）",
+          "瘦肉",
+          "大米",
+          "小葱",
+          "香菜"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "饮用水",
+        "皮蛋（松花蛋）",
+        "瘦肉",
+        "大米",
+        "小葱",
+        "香菜"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/皮蛋瘦肉粥/皮蛋瘦肉粥.md"
+    },
+    {
+      "id": "china/sopas/米粥/米粥",
+      "title": "米粥的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "米粥的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "米",
+          "水",
+          "植物油（可选）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "米",
+        "水",
+        "植物油（可选）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/米粥/米粥.md"
+    },
+    {
+      "id": "china/sopas/紫菜蛋花汤/紫菜蛋花汤",
+      "title": "紫菜蛋花汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "紫菜蛋花汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "鸡蛋",
+          "紫菜",
+          "葱花",
+          "水",
+          "盐",
+          "油"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "鸡蛋",
+        "紫菜",
+        "葱花",
+        "水",
+        "盐",
+        "油"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/紫菜蛋花汤/紫菜蛋花汤.md"
+    },
+    {
+      "id": "china/sopas/罗宋汤/罗宋汤",
+      "title": "罗宋汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "罗宋汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "蔬菜高汤（欧芹、胡萝卜、洋葱三件套）",
+          "牛肉高汤（可用〇汤宝代替）",
+          "牛肉（可选牛腩肉或牛尾肉）",
+          "番茄（番茄膏、番茄罐头）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "蔬菜高汤（欧芹、胡萝卜、洋葱三件套）",
+        "牛肉高汤（可用〇汤宝代替）",
+        "牛肉（可选牛腩肉或牛尾肉）",
+        "番茄（番茄膏、番茄罐头）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/罗宋汤/罗宋汤.md"
+    },
+    {
+      "id": "china/sopas/腊八粥/腊八粥",
+      "title": "腊八粥的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "腊八粥的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "饮用水",
+          "大米",
+          "糯米",
+          "花生",
+          "红豆",
+          "红枣"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "饮用水",
+        "大米",
+        "糯米",
+        "花生",
+        "红豆",
+        "红枣"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/腊八粥/腊八粥.md"
+    },
+    {
+      "id": "china/sopas/西红柿鸡蛋汤/西红柿鸡蛋汤",
+      "title": "西红柿鸡蛋汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "西红柿鸡蛋汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "西红柿",
+          "鸡蛋",
+          "香油",
+          "味素",
+          "盐",
+          "葱、姜、蒜"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "西红柿",
+        "鸡蛋",
+        "香油",
+        "味素",
+        "盐",
+        "葱、姜、蒜"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/西红柿鸡蛋汤/西红柿鸡蛋汤.md"
+    },
+    {
+      "id": "china/sopas/金针菇汤/金针菇汤",
+      "title": "金针菇汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "金针菇汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "金针菇",
+          "鸡蛋（如需要）"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "金针菇",
+        "鸡蛋（如需要）"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/金针菇汤/金针菇汤.md"
+    },
+    {
+      "id": "china/sopas/陈皮排骨汤/陈皮排骨汤",
+      "title": "陈皮排骨汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "陈皮排骨汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "排骨",
+          "陈皮",
+          "西洋参",
+          "石斛",
+          "玉竹",
+          "麦冬"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "排骨",
+        "陈皮",
+        "西洋参",
+        "石斛",
+        "玉竹",
+        "麦冬"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/陈皮排骨汤/陈皮排骨汤.md"
+    },
+    {
+      "id": "china/sopas/黄瓜皮蛋汤/黄瓜皮蛋汤",
+      "title": "黄瓜皮蛋汤的做法",
+      "language": "chinese",
+      "country": "unknown",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "黄瓜皮蛋汤的做法",
+        "region": "China",
+        "language": "zh",
+        "license": "MIT",
+        "source_repo": "Anduin2017/HowToCook",
+        "category": "sopas",
+        "difficulty": "★★",
+        "prep_time": "Unknown",
+        "cook_time": "Unknown",
+        "tags": [
+          "chinese_cuisine",
+          "sopas"
+        ],
+        "main_ingredients": [
+          "黄瓜",
+          "皮蛋",
+          "大蒜",
+          "小葱",
+          "食用油（推荐猪油）",
+          "盐"
+        ],
+        "sensory": {
+          "flavor": [],
+          "texture": [],
+          "aroma": []
+        },
+        "nutrition": {
+          "calories": 0,
+          "macros": {
+            "protein_g": 0,
+            "fat_g": 0,
+            "carbs_g": 0
+          }
+        }
+      },
+      "category": [],
+      "difficulty": "★★",
+      "prepTime": "Unknown",
+      "cookTime": "Unknown",
+      "servings": null,
+      "mainIngredients": [
+        "黄瓜",
+        "皮蛋",
+        "大蒜",
+        "小葱",
+        "食用油（推荐猪油）",
+        "盐"
+      ],
+      "tags": [
+        "chinese_cuisine",
+        "sopas"
+      ],
+      "filePath": "dishes/china/sopas/黄瓜皮蛋汤/黄瓜皮蛋汤.md"
+    }
+  ],
+  "count": 49
+}

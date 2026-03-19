@@ -5,15 +5,93 @@
       "title": "Arroz con Pollo Peruano",
       "language": "spanish",
       "country": "peru",
-      "hasMetadata": false,
-      "metadata": {},
-      "category": [],
-      "difficulty": null,
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
-      "tags": [],
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Arroz con Pollo Peruano",
+        "region": "Costa/Sierra",
+        "categories": [
+          "Plato fuerte",
+          "Criollo",
+          "Festivo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Herbal (Culantro)",
+            "Umami",
+            "Cerveza Negra"
+          ],
+          "texture": [
+            "Graneado",
+            "Húmedo",
+            "Tierno"
+          ],
+          "aroma": [
+            "Culantro fresco",
+            "Malta tostada",
+            "Ají amarillo"
+          ],
+          "presentation": "Se sirve con una presa de pollo dorada sobre el arroz verde, acompañado de Salsa Criolla y, a veces, Papa a la Huancaína."
+        },
+        "main_ingredients": [
+          "Pollo",
+          "Arroz",
+          "Culantro (Cilantro)",
+          "Ají Amarillo",
+          "Cerveza Negra",
+          "Arvejas"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "nutrition": {
+          "calories": 850,
+          "macros": {
+            "protein_g": 45,
+            "fat_g": 28,
+            "carbs_g": 95
+          }
+        },
+        "tags": [
+          "Criollo",
+          "Domingo",
+          "Culantro"
+        ],
+        "images": [
+          {
+            "url": "https://pixabay.com/es/photos/arroz-con-pollo-peruvian-food-6146258/",
+            "description": "Arroz con Pollo Peruano clásico (Pixabay)"
+          }
+        ],
+        "sources": [
+          "https://www.yanuq.com/",
+          "https://www.gastronomiaperu.com/"
+        ],
+        "license": "MIT",
+        "description": "El Arroz con Pollo Peruano es un ícono de la cocina criolla, famoso por su color verde intenso derivado del culantro (cilantro) y su sabor profundo aportado por la cerveza negra y el ají amarillo. Es una adaptación mestiza de la paella española."
+      },
+      "category": [
+        "Plato fuerte",
+        "Criollo",
+        "Festivo"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo",
+        "Arroz",
+        "Culantro (Cilantro)",
+        "Ají Amarillo",
+        "Cerveza Negra",
+        "Arvejas"
+      ],
+      "tags": [
+        "Criollo",
+        "Domingo",
+        "Culantro"
+      ],
       "filePath": "dishes/peruvian/arroz_con_pollo.md"
     }
   ],

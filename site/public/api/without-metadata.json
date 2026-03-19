@@ -15,23 +15,7 @@
       "mainIngredients": [],
       "tags": [],
       "filePath": "dishes/colombian/COLOMBIAN_RECIPES_PLAN.md"
-    },
-    {
-      "id": "peruvian/arroz_con_pollo",
-      "title": "Arroz con Pollo Peruano",
-      "language": "spanish",
-      "country": "peru",
-      "hasMetadata": false,
-      "metadata": {},
-      "category": [],
-      "difficulty": null,
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
-      "tags": [],
-      "filePath": "dishes/peruvian/arroz_con_pollo.md"
     }
   ],
-  "count": 2
+  "count": 1
 }

@@ -7,7 +7,7 @@
     width: 100%;
     height: 700px;
     border: 1px solid #000;
-    background: #fff;
+    background: #fafafa;
     position: relative;
     overflow: hidden;
   }
@@ -46,10 +46,6 @@
     cursor: pointer;
   }
   
-  .filter-group select:hover {
-    background: #f0f0f0;
-  }
-  
   .legend {
     position: absolute;
     bottom: 10px;
@@ -86,30 +82,6 @@
   .legend-dot.ingredient { background: #2a9d8f; }
   .legend-dot.region { background: #457b9d; }
   
-  .node {
-    cursor: pointer;
-    stroke: #000;
-    stroke-width: 1px;
-  }
-  
-  .node:hover {
-    stroke-width: 3px;
-    stroke: #000;
-  }
-  
-  .node-label {
-    font-family: 'Space Mono', monospace;
-    font-size: 9px;
-    fill: #000;
-    pointer-events: none;
-    font-weight: bold;
-  }
-  
-  .link {
-    stroke: #999;
-    stroke-opacity: 0.4;
-  }
-  
   .info-panel {
     position: absolute;
     top: 10px;
@@ -125,32 +97,11 @@
     overflow-y: auto;
   }
   
-  .info-panel.visible {
-    display: block;
-  }
-  
-  .info-panel h3 {
-    margin: 0 0 10px 0;
-    font-size: 14px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 8px;
-  }
-  
-  .info-panel dl {
-    margin: 0;
-  }
-  
-  .info-panel dt {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-  
-  .info-panel dd {
-    margin: 4px 0 0 0;
-    font-size: 12px;
-  }
+  .info-panel.visible { display: block; }
+  .info-panel h3 { margin: 0 0 10px 0; font-size: 14px; border-bottom: 1px solid #000; padding-bottom: 8px; }
+  .info-panel dl { margin: 0; }
+  .info-panel dt { font-weight: bold; margin-top: 10px; font-size: 10px; text-transform: uppercase; }
+  .info-panel dd { margin: 4px 0 0 0; font-size: 12px; }
   
   .close-btn {
     position: absolute;
@@ -163,11 +114,6 @@
     font-family: 'Space Mono', monospace;
   }
   
-  .close-btn:hover {
-    background: #000;
-    color: #fff;
-  }
-  
   .stats {
     position: absolute;
     bottom: 10px;
@@ -177,10 +123,6 @@
     padding: 8px 12px;
     font-family: 'Space Mono', monospace;
     font-size: 10px;
-  }
-  
-  .stats-item {
-    margin: 2px 0;
   }
 </style>
 
@@ -195,7 +137,6 @@
         <option value="peru">PERU</option>
       </select>
     </div>
-    
     <div class="filter-group">
       <label>TYPE:</label>
       <select id="type-filter">
@@ -205,32 +146,16 @@
         <option value="region">REGIONS</option>
       </select>
     </div>
-    
-    <div class="filter-group">
-      <label>CATEGORY:</label>
-      <select id="category-filter">
-        <option value="all">ALL</option>
-        <option value="vegetables">VEGETABLES</option>
-        <option value="proteins">PROTEINS</option>
-        <option value="dairy">DAIRY</option>
-        <option value="grains">GRAINS</option>
-        <option value="condiments">CONDIMENTS</option>
-      </select>
-    </div>
   </div>
   
   <div class="info-panel" id="info-panel">
     <button class="close-btn" id="close-info">X</button>
     <h3 id="node-title">NODE INFO</h3>
     <dl>
-      <dt>TYPE</dt>
-      <dd id="node-type">-</dd>
-      <dt>REGION</dt>
-      <dd id="node-region">-</dd>
-      <dt>CATEGORY</dt>
-      <dd id="node-category">-</dd>
-      <dt>CONNECTIONS</dt>
-      <dd id="node-connections">-</dd>
+      <dt>TYPE</dt><dd id="node-type">-</dd>
+      <dt>REGION</dt><dd id="node-region">-</dd>
+      <dt>CATEGORY</dt><dd id="node-category">-</dd>
+      <dt>CONNECTIONS</dt><dd id="node-connections">-</dd>
     </dl>
   </div>
   
@@ -241,198 +166,179 @@
   
   <div class="legend">
     <div class="legend-title">LEGEND</div>
-    <div class="legend-item">
-      <div class="legend-dot recipe"></div>
-      <span>RECIPES</span>
-    </div>
-    <div class="legend-item">
-      <div class="legend-dot ingredient"></div>
-      <span>INGREDIENTS</span>
-    </div>
-    <div class="legend-item">
-      <div class="legend-dot region"></div>
-      <span>REGIONS</span>
-    </div>
+    <div class="legend-item"><div class="legend-dot recipe"></div><span>RECIPES</span></div>
+    <div class="legend-item"><div class="legend-dot ingredient"></div><span>INGREDIENTS</span></div>
+    <div class="legend-item"><div class="legend-dot region"></div><span>REGIONS</span></div>
   </div>
   
   <svg id="graph-svg"></svg>
 </div>
 
-<script>
-  // Load graph data
-  const graphData = await fetch('/graph.json').then(r => r.json()).catch(() => ({ nodes: [], links: [] }));
-  
+<script is:inline>
+(function() {
   const container = document.getElementById('graph-container');
-  const width = container.clientWidth;
-  const height = container.clientHeight;
+  if (!container) return;
+  
+  const width = container.clientWidth || 800;
+  const height = container.clientHeight || 600;
   
   const svg = d3.select('#graph-svg')
     .attr('width', width)
     .attr('height', height);
   
-  // Create zoom behavior
-  const zoom = d3.zoom()
-    .scaleExtent([0.1, 4])
-    .on('zoom', (event) => {
-      svg.selectAll('g').attr('transform', event.transform);
-    });
-  
-  svg.call(zoom);
-  
   const g = svg.append('g');
   
-  // Update stats
-  document.getElementById('node-count').textContent = graphData.nodes?.length || 0;
-  document.getElementById('link-count').textContent = graphData.links?.length || 0;
-  
-  if (!graphData.nodes || graphData.nodes.length === 0) {
-    g.append('text')
-      .attr('x', width / 2)
-      .attr('y', height / 2)
-      .attr('text-anchor', 'middle')
-      .attr('font-family', 'Space Mono, monospace')
-      .attr('font-size', '14px')
-      .text('NO DATA - Run scripts/generate_graph.py');
-    return;
-  }
-  
-  // Color scale
-  const getColor = (d) => {
-    if (d.type === 'recipe') return '#e63946';
-    if (d.type === 'region') return '#457b9d';
-    return '#2a9d8f';
-  };
-  
-  // Size scale
-  const getSize = (d) => {
-    if (d.type === 'recipe') return 12;
-    if (d.type === 'region') return 18;
-    return 8;
-  };
-  
-  // Create simulation
-  const simulation = d3.forceSimulation(graphData.nodes)
-    .force('link', d3.forceLink(graphData.links).id(d => d.id).distance(80))
-    .force('charge', d3.forceManyBody().strength(-200))
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(25));
-  
-  // Create links
-  const link = g.append('g')
-    .selectAll('line')
-    .data(graphData.links)
-    .join('line')
-    .attr('class', 'link')
-    .attr('stroke-width', d => Math.sqrt(d.value || 1));
-  
-  // Create nodes
-  const node = g.append('g')
-    .selectAll('circle')
-    .data(graphData.nodes)
-    .join('circle')
-    .attr('class', 'node')
-    .attr('r', d => getSize(d))
-    .attr('fill', d => getColor(d))
-    .call(drag(simulation));
-  
-  // Create labels
-  const label = g.append('g')
-    .selectAll('text')
-    .data(graphData.nodes)
-    .join('text')
-    .attr('class', 'node-label')
-    .text(d => d.id)
-    .attr('font-size', '8px');
-  
-  // Update positions on tick
-  simulation.on('tick', () => {
-    link
-      .attr('x1', d => d.source.x)
-      .attr('y1', d => d.source.y)
-      .attr('x2', d => d.target.x)
-      .attr('y2', d => d.target.y);
-    
-    node
-      .attr('cx', d => d.x)
-      .attr('cy', d => d.y);
-    
-    label
-      .attr('x', d => d.x)
-      .attr('y', d => d.y + getSize(d) + 12);
-  });
-  
-  // Drag behavior
-  function drag(simulation) {
-    function dragstarted(event) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      event.subject.fx = event.subject.x;
-      event.subject.fy = event.subject.y;
-    }
-    
-    function dragged(event) {
-      event.subject.fx = event.x;
-      event.subject.fy = event.y;
-    }
-    
-    function dragended(event) {
-      if (!event.active) simulation.alphaTarget(0);
-      event.subject.fx = null;
-      event.subject.fy = null;
-    }
-    
-    return d3.drag()
-      .on('start', dragstarted)
-      .on('drag', dragged)
-      .on('end', dragended);
-  }
-  
-  // Click to show info
-  node.on('click', (event, d) => {
-    const connections = graphData.links.filter(l => 
-      l.source.id === d.id || l.target.id === d.id
-    ).length;
-    
-    document.getElementById('node-title').textContent = d.id?.toUpperCase() || 'UNKNOWN';
-    document.getElementById('node-type').textContent = (d.type || '-').toUpperCase();
-    document.getElementById('node-region').textContent = (d.region || '-').toUpperCase();
-    document.getElementById('node-category').textContent = (d.category || '-').toUpperCase();
-    document.getElementById('node-connections').textContent = connections;
-    document.getElementById('info-panel').classList.add('visible');
-  });
-  
-  document.getElementById('close-info').onclick = () => {
-    document.getElementById('info-panel').classList.remove('visible');
-  };
-  
-  // Filter functionality
-  function filterGraph() {
-    const regionFilter = document.getElementById('region-filter').value;
-    const typeFilter = document.getElementById('type-filter').value;
-    const categoryFilter = document.getElementById('category-filter').value;
-    
-    node.style('display', d => {
-      if (typeFilter !== 'all' && d.type !== typeFilter) return 'none';
-      if (regionFilter !== 'all' && d.region !== regionFilter) return 'none';
-      if (categoryFilter !== 'all' && d.category !== categoryFilter) return 'none';
-      return 'block';
+  fetch('/graph.json')
+    .then(r => r.json())
+    .then(data => {
+      const nodes = data.nodes || [];
+      const links = data.links || [];
+      
+      document.getElementById('node-count').textContent = nodes.length;
+      document.getElementById('link-count').textContent = links.length;
+      
+      if (nodes.length === 0) {
+        g.append('text')
+          .attr('x', width / 2)
+          .attr('y', height / 2)
+          .attr('text-anchor', 'middle')
+          .attr('font-family', 'Space Mono, monospace')
+          .attr('font-size', '14px')
+          .text('NO DATA');
+        return;
+      }
+      
+      const getColor = (type) => {
+        if (type === 'recipe') return '#e63946';
+        if (type === 'region') return '#457b9d';
+        return '#2a9d8f';
+      };
+      
+      const getSize = (type) => {
+        if (type === 'recipe') return 12;
+        if (type === 'region') return 18;
+        return 8;
+      };
+      
+      const simulation = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+        .force('charge', d3.forceManyBody().strength(-200))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(25));
+      
+      const link = g.append('g')
+        .selectAll('line')
+        .data(links)
+        .join('line')
+        .attr('stroke', '#999')
+        .attr('stroke-opacity', 0.4)
+        .attr('stroke-width', d => Math.sqrt(d.value || 1));
+      
+      const node = g.append('g')
+        .selectAll('circle')
+        .data(nodes)
+        .join('circle')
+        .attr('r', d => getSize(d.type))
+        .attr('fill', d => getColor(d.type))
+        .attr('stroke', '#000')
+        .attr('stroke-width', 1)
+        .style('cursor', 'pointer')
+        .call(d3.drag()
+          .on('start', (event, d) => {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+          })
+          .on('drag', (event, d) => {
+            d.fx = event.x;
+            d.fy = event.y;
+          })
+          .on('end', (event, d) => {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+          }));
+      
+      const label = g.append('g')
+        .selectAll('text')
+        .data(nodes)
+        .join('text')
+        .text(d => d.id)
+        .attr('font-size', '8px')
+        .attr('font-family', 'Space Mono, monospace')
+        .attr('fill', '#000')
+        .attr('pointer-events', 'none');
+      
+      simulation.on('tick', () => {
+        link
+          .attr('x1', d => d.source.x)
+          .attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x)
+          .attr('y2', d => d.target.y);
+        node
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y);
+        label
+          .attr('x', d => d.x)
+          .attr('y', d => d.y + getSize(d.type) + 12);
+      });
+      
+      node.on('click', (event, d) => {
+        const connections = links.filter(l => 
+          l.source.id === d.id || l.target.id === d.id
+        ).length;
+        document.getElementById('node-title').textContent = (d.id || 'UNKNOWN').toUpperCase();
+        document.getElementById('node-type').textContent = (d.type || '-').toUpperCase();
+        document.getElementById('node-region').textContent = (d.region || '-').toUpperCase();
+        document.getElementById('node-category').textContent = (d.category || '-').toUpperCase();
+        document.getElementById('node-connections').textContent = connections;
+        document.getElementById('info-panel').classList.add('visible');
+      });
+      
+      document.getElementById('close-info').onclick = () => {
+        document.getElementById('info-panel').classList.remove('visible');
+      };
+      
+      const regionSelect = document.getElementById('region-filter');
+      const typeSelect = document.getElementById('type-filter');
+      
+      function applyFilters() {
+        const regionVal = regionSelect.value;
+        const typeVal = typeSelect.value;
+        
+        node.style('display', d => {
+          if (typeVal !== 'all' && d.type !== typeVal) return 'none';
+          if (regionVal !== 'all' && d.region !== regionVal) return 'none';
+          return 'block';
+        });
+        
+        label.style('display', d => {
+          if (typeVal !== 'all' && d.type !== typeVal) return 'none';
+          if (regionVal !== 'all' && d.region !== regionVal) return 'none';
+          return 'block';
+        });
+        
+        link.style('display', d => {
+          const s = nodes.find(n => n.id === d.source.id || n.id === d.source);
+          const t = nodes.find(n => n.id === d.target.id || n.id === d.target);
+          const sVisible = !node.filter(n => n.id === s?.id).empty();
+          const tVisible = !node.filter(n => n.id === t?.id).empty();
+          return sVisible && tVisible ? 'block' : 'none';
+        });
+      }
+      
+      regionSelect.onchange = applyFilters;
+      typeSelect.onchange = applyFilters;
+    })
+    .catch(err => {
+      console.error('Error loading graph:', err);
+      g.append('text')
+        .attr('x', width / 2)
+        .attr('y', height / 2)
+        .attr('text-anchor', 'middle')
+        .attr('font-family', 'Space Mono, monospace')
+        .attr('font-size', '14px')
+        .text('ERROR LOADING DATA');
     });
-    
-    label.style('display', d => {
-      if (typeFilter !== 'all' && d.type !== typeFilter) return 'none';
-      if (regionFilter !== 'all' && d.region !== regionFilter) return 'none';
-      if (categoryFilter !== 'all' && d.category !== categoryFilter) return 'none';
-      return 'block';
-    });
-    
-    // Also filter links
-    link.style('display', d => {
-      const sourceVisible = node.filter(n => n.id === d.source.id || n.id === d.source?.id).style('display') !== 'none';
-      const targetVisible = node.filter(n => n.id === d.target.id || n.id === d.target?.id).style('display') !== 'none';
-      return sourceVisible && targetVisible ? 'block' : 'none';
-    });
-  }
-  
-  document.getElementById('region-filter').onchange = filterGraph;
-  document.getElementById('type-filter').onchange = filterGraph;
-  document.getElementById('category-filter').onchange = filterGraph;
+})();
 </script>
