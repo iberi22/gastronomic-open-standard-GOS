@@ -1,0 +1,327 @@
+---
+// GraphExplorer - D3.js Knowledge Graph Visualization
+---
+
+<style>
+  .graph-container {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    position: relative;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .filter-group label {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+  }
+  
+  .filter-group select {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    padding: 4px 8px;
+    border: 1px solid #000;
+    background: #fff;
+  }
+  
+  .legend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+  }
+  
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .node {
+    cursor: pointer;
+  }
+  
+  .node:hover {
+    stroke-width: 3px;
+  }
+  
+  .node-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    fill: #000;
+    pointer-events: none;
+  }
+  
+  .link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+  }
+  
+  .info-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 15px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    display: none;
+  }
+  
+  .info-panel.visible {
+    display: block;
+  }
+  
+  .info-panel h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+  }
+  
+  .info-panel dl {
+    margin: 0;
+  }
+  
+  .info-panel dt {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .info-panel dd {
+    margin: 4px 0 0 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="graph-container" id="graph-container">
+  <div class="controls">
+    <div class="filter-group">
+      <label>Region:</label>
+      <select id="region-filter">
+        <option value="all">All Regions</option>
+        <option value="china">China</option>
+        <option value="colombia">Colombia</option>
+        <option value="peru">Peru</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label>Category:</label>
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="proteins">Proteins</option>
+        <option value="dairy">Dairy</option>
+        <option value="grains">Grains</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label>Type:</label>
+      <select id="type-filter">
+        <option value="all">All Types</option>
+        <option value="recipe">Recipes</option>
+        <option value="ingredient">Ingredients</option>
+        <option value="region">Regions</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="info-panel" id="info-panel">
+    <button class="close-btn" id="close-info">&times;</button>
+    <h3 id="node-title">Node Info</h3>
+    <dl>
+      <dt>Type:</dt>
+      <dd id="node-type">-</dd>
+      <dt>Region:</dt>
+      <dd id="node-region">-</dd>
+      <dt>Category:</dt>
+      <dd id="node-category">-</dd>
+      <dt>Connections:</dt>
+      <dd id="node-connections">-</dd>
+    </dl>
+  </div>
+  
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-dot" style="background: #e63946;"></div>
+      <span>Recipes</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background: #2a9d8f;"></div>
+      <span>Ingredients</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background: #457b9d;"></div>
+      <span>Regions</span>
+    </div>
+  </div>
+  
+  <svg id="graph-svg" width="100%" height="100%"></svg>
+</div>
+
+<script>
+  import * as d3 from 'd3';
+  
+  // Load graph data
+  const graphData = await fetch('/graph.json').then(r => r.json());
+  
+  const svg = d3.select('#graph-svg');
+  const container = document.getElementById('graph-container');
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+  
+  // Create simulation
+  const simulation = d3.forceSimulation(graphData.nodes)
+    .force('link', d3.forceLink(graphData.links).id(d => d.id).distance(100))
+    .force('charge', d3.forceManyBody().strength(-300))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(30));
+  
+  // Create links
+  const link = svg.append('g')
+    .selectAll('line')
+    .data(graphData.links)
+    .join('line')
+    .attr('class', 'link')
+    .attr('stroke-width', d => Math.sqrt(d.value || 1));
+  
+  // Create nodes
+  const node = svg.append('g')
+    .selectAll('circle')
+    .data(graphData.nodes)
+    .join('circle')
+    .attr('class', 'node')
+    .attr('r', d => d.type === 'recipe' ? 15 : d.type === 'region' ? 20 : 10)
+    .attr('fill', d => d.type === 'recipe' ? '#e63946' : d.type === 'region' ? '#457b9d' : '#2a9d8f')
+    .call(drag(simulation));
+  
+  // Create labels
+  const label = svg.append('g')
+    .selectAll('text')
+    .data(graphData.nodes)
+    .join('text')
+    .attr('class', 'node-label')
+    .text(d => d.id)
+    .attr('dx', 15)
+    .attr('dy', 4);
+  
+  // Update positions on tick
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+    
+    node
+      .attr('cx', d => d.x)
+      .attr('cy', d => d.y);
+    
+    label
+      .attr('x', d => d.x)
+      .attr('y', d => d.y);
+  });
+  
+  // Drag behavior
+  function drag(simulation) {
+    function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+    }
+    
+    function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+    }
+    
+    function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+    }
+    
+    return d3.drag()
+      .on('start', dragstarted)
+      .on('drag', dragged)
+      .on('end', dragended);
+  }
+  
+  // Click to show info
+  node.on('click', (event, d) => {
+    const infoPanel = document.getElementById('info-panel');
+    document.getElementById('node-title').textContent = d.id;
+    document.getElementById('node-type').textContent = d.type || '-';
+    document.getElementById('node-region').textContent = d.region || '-';
+    document.getElementById('node-category').textContent = d.category || '-';
+    document.getElementById('node-connections').textContent = d.connections || '-';
+    infoPanel.classList.add('visible');
+  });
+  
+  document.getElementById('close-info').onclick = () => {
+    document.getElementById('info-panel').classList.remove('visible');
+  };
+  
+  // Filter functionality
+  function filterGraph() {
+    const regionFilter = document.getElementById('region-filter').value;
+    const categoryFilter = document.getElementById('category-filter').value;
+    const typeFilter = document.getElementById('type-filter').value;
+    
+    node.style('display', d => {
+      if (typeFilter !== 'all' && d.type !== typeFilter) return 'none';
+      if (regionFilter !== 'all' && d.region !== regionFilter) return 'none';
+      if (categoryFilter !== 'all' && d.category !== categoryFilter) return 'none';
+      return 'block';
+    });
+    
+    label.style('display', d => {
+      if (typeFilter !== 'all' && d.type !== typeFilter) return 'none';
+      if (regionFilter !== 'all' && d.region !== regionFilter) return 'none';
+      if (categoryFilter !== 'all' && d.category !== categoryFilter) return 'none';
+      return 'block';
+    });
+  }
+  
+  document.getElementById('region-filter').onchange = filterGraph;
+  document.getElementById('category-filter').onchange = filterGraph;
+  document.getElementById('type-filter').onchange = filterGraph;
+</script>

@@ -1,0 +1,31 @@
+---
+title: Knowledge Graph
+description: Interactive visualization of recipe-ingredient connections
+---
+
+import GraphExplorer from '../components/GraphExplorer.astro';
+
+# Knowledge Graph
+
+Interactive visualization of the gastronomic knowledge graph showing connections between recipes, ingredients, and regions.
+
+<GraphExplorer />
+
+## About the Graph
+
+This visualization shows:
+
+- **Red Nodes**: Recipes
+- **Green Nodes**: Ingredients  
+- **Blue Nodes**: Regions
+
+## Controls
+
+Use the filter controls above the graph to:
+- Filter by region (China, Colombia, Peru)
+- Filter by ingredient category
+- Search for specific nodes
+
+## Data Source
+
+Graph data is generated from the [generate_graph.py](https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/scripts/generate_graph.py) script.
