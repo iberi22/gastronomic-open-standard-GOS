@@ -5,10 +5,11 @@
 <style>
   .graph-container {
     width: 100%;
-    height: 600px;
-    border: 1px solid #ccc;
-    background: #fafafa;
+    height: 700px;
+    border: 1px solid #000;
+    background: #fff;
     position: relative;
+    overflow: hidden;
   }
   
   .controls {
@@ -19,6 +20,9 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #000;
   }
   
   .filter-group {
@@ -29,15 +33,21 @@
   
   .filter-group label {
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: bold;
   }
   
   .filter-group select {
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     padding: 4px 8px;
     border: 1px solid #000;
     background: #fff;
+    cursor: pointer;
+  }
+  
+  .filter-group select:hover {
+    background: #f0f0f0;
   }
   
   .legend {
@@ -46,9 +56,16 @@
     right: 10px;
     background: #fff;
     border: 1px solid #000;
-    padding: 10px;
+    padding: 12px;
     font-family: 'Space Mono', monospace;
-    font-size: 11px;
+    font-size: 10px;
+  }
+  
+  .legend-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
   }
   
   .legend-item {
@@ -59,42 +76,53 @@
   }
   
   .legend-dot {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
+    border: 1px solid #000;
   }
+  
+  .legend-dot.recipe { background: #e63946; }
+  .legend-dot.ingredient { background: #2a9d8f; }
+  .legend-dot.region { background: #457b9d; }
   
   .node {
     cursor: pointer;
+    stroke: #000;
+    stroke-width: 1px;
   }
   
   .node:hover {
     stroke-width: 3px;
+    stroke: #000;
   }
   
   .node-label {
     font-family: 'Space Mono', monospace;
-    font-size: 10px;
+    font-size: 9px;
     fill: #000;
     pointer-events: none;
+    font-weight: bold;
   }
   
   .link {
     stroke: #999;
-    stroke-opacity: 0.6;
+    stroke-opacity: 0.4;
   }
   
   .info-panel {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 250px;
+    width: 280px;
     background: #fff;
     border: 1px solid #000;
     padding: 15px;
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     display: none;
+    max-height: 400px;
+    overflow-y: auto;
   }
   
   .info-panel.visible {
@@ -104,6 +132,8 @@
   .info-panel h3 {
     margin: 0 0 10px 0;
     font-size: 14px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
   }
   
   .info-panel dl {
@@ -112,111 +142,183 @@
   
   .info-panel dt {
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
   }
   
   .info-panel dd {
     margin: 4px 0 0 0;
+    font-size: 12px;
   }
   
   .close-btn {
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 10px;
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .close-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  .stats {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 8px 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+  }
+  
+  .stats-item {
+    margin: 2px 0;
   }
 </style>
 
 <div class="graph-container" id="graph-container">
   <div class="controls">
     <div class="filter-group">
-      <label>Region:</label>
+      <label>REGION:</label>
       <select id="region-filter">
-        <option value="all">All Regions</option>
-        <option value="china">China</option>
-        <option value="colombia">Colombia</option>
-        <option value="peru">Peru</option>
+        <option value="all">ALL</option>
+        <option value="china">CHINA</option>
+        <option value="colombia">COLOMBIA</option>
+        <option value="peru">PERU</option>
       </select>
     </div>
     
     <div class="filter-group">
-      <label>Category:</label>
-      <select id="category-filter">
-        <option value="all">All Categories</option>
-        <option value="vegetables">Vegetables</option>
-        <option value="proteins">Proteins</option>
-        <option value="dairy">Dairy</option>
-        <option value="grains">Grains</option>
-      </select>
-    </div>
-    
-    <div class="filter-group">
-      <label>Type:</label>
+      <label>TYPE:</label>
       <select id="type-filter">
-        <option value="all">All Types</option>
-        <option value="recipe">Recipes</option>
-        <option value="ingredient">Ingredients</option>
-        <option value="region">Regions</option>
+        <option value="all">ALL</option>
+        <option value="recipe">RECIPES</option>
+        <option value="ingredient">INGREDIENTS</option>
+        <option value="region">REGIONS</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label>CATEGORY:</label>
+      <select id="category-filter">
+        <option value="all">ALL</option>
+        <option value="vegetables">VEGETABLES</option>
+        <option value="proteins">PROTEINS</option>
+        <option value="dairy">DAIRY</option>
+        <option value="grains">GRAINS</option>
+        <option value="condiments">CONDIMENTS</option>
       </select>
     </div>
   </div>
   
   <div class="info-panel" id="info-panel">
-    <button class="close-btn" id="close-info">&times;</button>
-    <h3 id="node-title">Node Info</h3>
+    <button class="close-btn" id="close-info">X</button>
+    <h3 id="node-title">NODE INFO</h3>
     <dl>
-      <dt>Type:</dt>
+      <dt>TYPE</dt>
       <dd id="node-type">-</dd>
-      <dt>Region:</dt>
+      <dt>REGION</dt>
       <dd id="node-region">-</dd>
-      <dt>Category:</dt>
+      <dt>CATEGORY</dt>
       <dd id="node-category">-</dd>
-      <dt>Connections:</dt>
+      <dt>CONNECTIONS</dt>
       <dd id="node-connections">-</dd>
     </dl>
   </div>
   
+  <div class="stats" id="stats">
+    <div class="stats-item">NODES: <span id="node-count">0</span></div>
+    <div class="stats-item">LINKS: <span id="link-count">0</span></div>
+  </div>
+  
   <div class="legend">
+    <div class="legend-title">LEGEND</div>
     <div class="legend-item">
-      <div class="legend-dot" style="background: #e63946;"></div>
-      <span>Recipes</span>
+      <div class="legend-dot recipe"></div>
+      <span>RECIPES</span>
     </div>
     <div class="legend-item">
-      <div class="legend-dot" style="background: #2a9d8f;"></div>
-      <span>Ingredients</span>
+      <div class="legend-dot ingredient"></div>
+      <span>INGREDIENTS</span>
     </div>
     <div class="legend-item">
-      <div class="legend-dot" style="background: #457b9d;"></div>
-      <span>Regions</span>
+      <div class="legend-dot region"></div>
+      <span>REGIONS</span>
     </div>
   </div>
   
-  <svg id="graph-svg" width="100%" height="100%"></svg>
+  <svg id="graph-svg"></svg>
 </div>
 
 <script>
-  import * as d3 from 'd3';
-  
   // Load graph data
-  const graphData = await fetch('/graph.json').then(r => r.json());
+  const graphData = await fetch('/graph.json').then(r => r.json()).catch(() => ({ nodes: [], links: [] }));
   
-  const svg = d3.select('#graph-svg');
   const container = document.getElementById('graph-container');
   const width = container.clientWidth;
   const height = container.clientHeight;
   
+  const svg = d3.select('#graph-svg')
+    .attr('width', width)
+    .attr('height', height);
+  
+  // Create zoom behavior
+  const zoom = d3.zoom()
+    .scaleExtent([0.1, 4])
+    .on('zoom', (event) => {
+      svg.selectAll('g').attr('transform', event.transform);
+    });
+  
+  svg.call(zoom);
+  
+  const g = svg.append('g');
+  
+  // Update stats
+  document.getElementById('node-count').textContent = graphData.nodes?.length || 0;
+  document.getElementById('link-count').textContent = graphData.links?.length || 0;
+  
+  if (!graphData.nodes || graphData.nodes.length === 0) {
+    g.append('text')
+      .attr('x', width / 2)
+      .attr('y', height / 2)
+      .attr('text-anchor', 'middle')
+      .attr('font-family', 'Space Mono, monospace')
+      .attr('font-size', '14px')
+      .text('NO DATA - Run scripts/generate_graph.py');
+    return;
+  }
+  
+  // Color scale
+  const getColor = (d) => {
+    if (d.type === 'recipe') return '#e63946';
+    if (d.type === 'region') return '#457b9d';
+    return '#2a9d8f';
+  };
+  
+  // Size scale
+  const getSize = (d) => {
+    if (d.type === 'recipe') return 12;
+    if (d.type === 'region') return 18;
+    return 8;
+  };
+  
   // Create simulation
   const simulation = d3.forceSimulation(graphData.nodes)
-    .force('link', d3.forceLink(graphData.links).id(d => d.id).distance(100))
-    .force('charge', d3.forceManyBody().strength(-300))
+    .force('link', d3.forceLink(graphData.links).id(d => d.id).distance(80))
+    .force('charge', d3.forceManyBody().strength(-200))
     .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(30));
+    .force('collision', d3.forceCollide().radius(25));
   
   // Create links
-  const link = svg.append('g')
+  const link = g.append('g')
     .selectAll('line')
     .data(graphData.links)
     .join('line')
@@ -224,24 +326,23 @@
     .attr('stroke-width', d => Math.sqrt(d.value || 1));
   
   // Create nodes
-  const node = svg.append('g')
+  const node = g.append('g')
     .selectAll('circle')
     .data(graphData.nodes)
     .join('circle')
     .attr('class', 'node')
-    .attr('r', d => d.type === 'recipe' ? 15 : d.type === 'region' ? 20 : 10)
-    .attr('fill', d => d.type === 'recipe' ? '#e63946' : d.type === 'region' ? '#457b9d' : '#2a9d8f')
+    .attr('r', d => getSize(d))
+    .attr('fill', d => getColor(d))
     .call(drag(simulation));
   
   // Create labels
-  const label = svg.append('g')
+  const label = g.append('g')
     .selectAll('text')
     .data(graphData.nodes)
     .join('text')
     .attr('class', 'node-label')
     .text(d => d.id)
-    .attr('dx', 15)
-    .attr('dy', 4);
+    .attr('font-size', '8px');
   
   // Update positions on tick
   simulation.on('tick', () => {
@@ -257,7 +358,7 @@
     
     label
       .attr('x', d => d.x)
-      .attr('y', d => d.y);
+      .attr('y', d => d.y + getSize(d) + 12);
   });
   
   // Drag behavior
@@ -287,13 +388,16 @@
   
   // Click to show info
   node.on('click', (event, d) => {
-    const infoPanel = document.getElementById('info-panel');
-    document.getElementById('node-title').textContent = d.id;
-    document.getElementById('node-type').textContent = d.type || '-';
-    document.getElementById('node-region').textContent = d.region || '-';
-    document.getElementById('node-category').textContent = d.category || '-';
-    document.getElementById('node-connections').textContent = d.connections || '-';
-    infoPanel.classList.add('visible');
+    const connections = graphData.links.filter(l => 
+      l.source.id === d.id || l.target.id === d.id
+    ).length;
+    
+    document.getElementById('node-title').textContent = d.id?.toUpperCase() || 'UNKNOWN';
+    document.getElementById('node-type').textContent = (d.type || '-').toUpperCase();
+    document.getElementById('node-region').textContent = (d.region || '-').toUpperCase();
+    document.getElementById('node-category').textContent = (d.category || '-').toUpperCase();
+    document.getElementById('node-connections').textContent = connections;
+    document.getElementById('info-panel').classList.add('visible');
   });
   
   document.getElementById('close-info').onclick = () => {
@@ -303,8 +407,8 @@
   // Filter functionality
   function filterGraph() {
     const regionFilter = document.getElementById('region-filter').value;
-    const categoryFilter = document.getElementById('category-filter').value;
     const typeFilter = document.getElementById('type-filter').value;
+    const categoryFilter = document.getElementById('category-filter').value;
     
     node.style('display', d => {
       if (typeFilter !== 'all' && d.type !== typeFilter) return 'none';
@@ -319,9 +423,16 @@
       if (categoryFilter !== 'all' && d.category !== categoryFilter) return 'none';
       return 'block';
     });
+    
+    // Also filter links
+    link.style('display', d => {
+      const sourceVisible = node.filter(n => n.id === d.source.id || n.id === d.source?.id).style('display') !== 'none';
+      const targetVisible = node.filter(n => n.id === d.target.id || n.id === d.target?.id).style('display') !== 'none';
+      return sourceVisible && targetVisible ? 'block' : 'none';
+    });
   }
   
   document.getElementById('region-filter').onchange = filterGraph;
-  document.getElementById('category-filter').onchange = filterGraph;
   document.getElementById('type-filter').onchange = filterGraph;
+  document.getElementById('category-filter').onchange = filterGraph;
 </script>

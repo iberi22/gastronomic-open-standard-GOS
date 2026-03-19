@@ -3,40 +3,101 @@ title: Scientific Data
 description: Nutritional data, ingredient chemistry, and recipe analytics for gastronomic research
 ---
 
+import GraphExplorer from '../components/GraphExplorer.astro';
+
 # Scientific Data Area
 
 Explore the scientific aspects of gastronomy including nutritional information, ingredient chemistry, and recipe analytics.
+
+---
 
 ## 📊 Nutritional Database
 
 Browse nutritional data for ingredients organized by category.
 
-### Categories
-- [Vegetables](/category/vegetables)
-- [Proteins](/category/proteins)
-- [Grains](/category/grains)
-- [Dairy](/category/dairy)
+### By Category
+
+| Category | Description | Count |
+|----------|-------------|-------|
+| [Grains & Starches](/docs/nutritional_database#grains) | Rice, corn, flour, potato | 9 |
+| [Proteins](/docs/nutritional_database#proteins) | Chicken, beef, pork, fish | 8 |
+| [Dairy](/docs/nutritional_database#dairy) | Milk, cream, butter, cheese | 5 |
+| [Vegetables](/docs/nutritional_database#vegetables) | Carrots, tomatoes, onions | 6 |
+| [Fruits](/docs/nutritional_database#fruits) | Apples, oranges, bananas | 5 |
+
+[View Complete Nutritional Database](/docs/nutritional_database)
+
+---
 
 ## 🔬 Ingredient Chemistry
 
 Understanding the molecular properties and cooking reactions of ingredients.
 
-### Key Topics
+### Topics
+
 - Flavor compounds
 - Cooking reactions  
 - Molecular properties
+- pH levels and preservation
+
+[View Ingredient Chemistry](/docs/ingredient_chemistry)
+
+---
 
 ## 📈 Recipe Analytics
 
 Analysis of recipes including cost, preparation time, and difficulty.
 
+### Metrics
+
+- Cost per serving
+- Preparation time
+- Difficulty level
+- Completeness score
+
+[View Recipe Analytics](/docs/recipe_analytics)
+
+---
+
 ## 🌐 Knowledge Graph
 
 Interactive visualization of recipe-ingredient connections.
 
+Explore the interconnected network of recipes, ingredients, and regions.
+
 [View Knowledge Graph](/graph)
+
+---
 
 ## 📚 Scientific Protocols
 
-- [Scientific Ingredient Protocol](/docs/SCIENTIFIC_INGREDIENT_PROTOCOL.md)
-- [Scientific Recipe Protocol](/docs/SCIENTIFIC_RECIPE_PROTOCOL.md)
+Standardized protocols for documenting gastronomic data.
+
+### Protocols
+
+- [Scientific Ingredient Protocol](/docs/SCIENTIFIC_INGREDIENT_PROTOCOL) - How to document ingredients scientifically
+- [Scientific Recipe Protocol](/docs/SCIENTIFIC_RECIPE_PROTOCOL) - How to document recipes scientifically
+
+---
+
+## 📋 Data Categories
+
+### By Region
+
+| Region | Recipes | Ingredients |
+|--------|---------|------------|
+| [China](/docs/graph-explorer#china) | 12 | 45 |
+| [Colombia](/docs/graph-explorer#colombia) | 8 | 32 |
+| [Peru](/docs/graph-explorer#peru) | 6 | 28 |
+
+### By Type
+
+| Type | Count |
+|------|-------|
+| Recipes | 26 |
+| Ingredients | 105 |
+| Regions | 3 |
+
+---
+
+*Last updated: 2026-03-19*
