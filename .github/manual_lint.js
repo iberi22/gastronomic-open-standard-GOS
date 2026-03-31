@@ -1,5 +1,4 @@
-const util = require("util");
-const glob = util.promisify(require('glob'));
+const { glob } = require("glob");
 const fs = require("fs").promises;
 const path = require('path');
 
