@@ -120,7 +120,7 @@ El Manjar Blanco es un postre tradicional de la región andina colombiana, espec
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Remoje el arroz desde la noche anterior y licúelo con un poco de la misma leche antes de agregarlo. No use harina de arroz comercial si puede evitarlo, el sabor del arroz fresco molido es superior." — *Dulcera de Buga.*
-
+>
 > "Si quiere que le dure más, agréguele una pizca de bicarbonato, pero cuidado que oscurece el dulce más rápido."
 
 ---

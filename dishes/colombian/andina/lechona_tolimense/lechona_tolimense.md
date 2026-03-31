@@ -149,7 +149,7 @@ La Lechona Tolimense es uno de los platos más emblemáticos del Tolima y el cen
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "La lechona tolimense *verdadera* no lleva arroz para rellenar, sino solo arveja y carne. Sin embargo, en Ibagué y otras zonas se le pone arroz para que rinda más y sea menos pesada. Si le pones arroz, que sea de grano largo y que esté apenas precocido." — *Don Fabio, experto asador de Espinal.*
-
+>
 > "El secreto del cuerito 'galleta' es pinchar la piel con una aguja en las zonas donde hay más grasa antes de meter al horno. Eso permite que la grasa salga y fría la piel desde adentro mientras el calor del horno la seca por fuera."
 
 ---

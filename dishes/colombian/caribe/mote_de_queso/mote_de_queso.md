@@ -130,7 +130,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "El ñame tiene que ser espino. Si le venden diamante, eso no espesa nunca y le toca echarle papa (sacrilegio)." — *Matrona de Sincelejo.*
-
+>
 > "El suero no se deja hervir. Se echa ya cuando se bajó la olla, o mejor, cada uno se lo echa en el plato."
 
 ### 🍎 Nutrición y Metabolismo

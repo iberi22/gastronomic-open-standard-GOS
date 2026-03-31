@@ -164,7 +164,7 @@ La Bandeja Paisa es el plato más emblemático de la región andina de Colombia,
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "El secreto del frijol antioqueño es el 'hogao' (sofrito) que se le agrega al final, y el uso de pezuña de cerdo o 'garra' para dar sustancia y colágeno al caldo." — *Doña Rubiela, portadora de tradición.*
-
+>
 > "Para que el plátano maduro no absorba tanto aceite, asegúrate de que el aceite esté bien caliente (170-180°C) antes de sumergirlo, y no llenes demasiado la sartén."
 
 ### Sabores y Consejos de Restaurantes Emblemáticos

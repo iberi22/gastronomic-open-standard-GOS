@@ -141,7 +141,7 @@ El Tamal Tolimense es un plato tradicional del Tolima y la región andina de Col
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Para que la masa quede 'pintadita' (amarilla), el secreto es un buen aceite de achiote hecho en casa, no uses colorantes artificiales. El achiote además ayuda a conservar el tamal por más tiempo." — *Maestra Tamalera de Ibagué.*
-
+>
 > "Las hojas deben ser 'soasadas' (pasadas por fuego) apenas hasta que cambien de color y brillen; así se vuelven elásticas y liberan el aroma que el tamal necesita absorber."
 
 ---

@@ -142,7 +142,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Si no tiene cabezas de camarón para el caldo, no le va a saber a nada. La carne es para mascar, pero la cáscara es para el sabor." — *Chef costero.*
-
+>
 > "Un chorrito de Brandy al final, justo antes de servir, levanta todos los aromas marinos y corta la grasa de la crema."
 
 ---

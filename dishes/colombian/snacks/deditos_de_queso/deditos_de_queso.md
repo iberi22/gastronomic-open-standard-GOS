@@ -155,7 +155,7 @@ Los deditos de queso son snacks fritos o horneados, rellenos de queso fundido, p
 ### 🍎 Nutrición y Metabolismo
 
 - **Alta Densidad Calórica:** Combinación de carbohidratos refinados y grasas saturadas. Snack de consumo ocasional.
-- ** Proteína Láctea:** Aporte significativo de proteína por el trozo generoso de queso.
+- **Proteína Láctea:** Aporte significativo de proteína por el trozo generoso de queso.
 
 ### 🕰️ Contexto Socio-Cultural
 

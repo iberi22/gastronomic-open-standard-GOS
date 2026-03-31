@@ -115,9 +115,9 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 ### ⚗️ Química y Física Culinaria
 
 - **La Química del Titoté (Emulsión Inversa):**
-    1.  **Evaporación:** Al hervir la leche de coco, el agua se evapora.
-    2.  **Ruptura:** La emulsión se rompe, separando la grasa (aceite de coco) de los sólidos (proteínas y azúcares).
-    3.  **Fritura Proteica:** Los sólidos se fríen en el aceite a >150°C. Aquí ocurre la **Reacción de Maillard** (dorado) y caramelización. El punto exacto es "quemado controlado" (color café oscuro) sin llegar a carbón (amargo).
+    1. **Evaporación:** Al hervir la leche de coco, el agua se evapora.
+    2. **Ruptura:** La emulsión se rompe, separando la grasa (aceite de coco) de los sólidos (proteínas y azúcares).
+    3. **Fritura Proteica:** Los sólidos se fríen en el aceite a >150°C. Aquí ocurre la **Reacción de Maillard** (dorado) y caramelización. El punto exacto es "quemado controlado" (color café oscuro) sin llegar a carbón (amargo).
 - **Hidrofobicidad del Grano:** Al añadir el arroz al titoté aceitoso *antes* del agua, recubrimos cada grano con lípidos. Esto limita la salida de amilosa durante la cocción, resultando en un arroz que no se pega ("graneado perfecto").
 - **Poder Osmótico:** La alta cantidad de azúcar y sal crea una presión osmótica que endurece ligeramente la pared celular del arroz, contribuyendo a la textura firme.
 
@@ -134,7 +134,7 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "No bote el aceite que sobra del titoté si le salió mucho. Guárdelo en un frasquito; es oro puro para freír patacones o huevos." — *Matrona de San Basilio.*
-
+>
 > "El punto del titoté es cuando deja de espumar y empieza a sonar 'seco' (crepitar). Ahí es cuando hay que echar el agua rápido o se quema."
 
 ---

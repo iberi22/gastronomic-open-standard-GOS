@@ -153,7 +153,7 @@ El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de 
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Para un ajiaco de concurso, cocina las mazorcas aparte en el caldo. Si las dejas hervir demasiado tiempo junto con las papas, pueden amargar ligeramente el caldo o absorber demasiado líquido." — *Doña Cecilia, cocinera tradicional de Cundinamarca.*
-
+>
 > "Nunca uses harina o fécula para espesar. Si te quedó muy aguado, saca unas pocas papas pastusas, licúalas con un poco de caldo y regrésalas a la olla. El espesor debe ser natural."
 
 ---

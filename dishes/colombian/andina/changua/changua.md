@@ -130,8 +130,9 @@ La Changua es una sopa de desayuno tradicional de la región andina, especialmen
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Para que no se corte la leche, mezcla primero el agua con la sal y la cebolla, deja hervir, y LUEGO agrega la leche fría. Baja el fuego antes de poner los huevos." — *Consejo de abuela rola.*
-
+>
 > "La changua sin calado es solo caldo de leche. El calado es el que le da la textura."
+
 ### Perfil Nutricional de Ingredientes Clave (por 100g)
 
 | Ingrediente     | Calorías (kcal) | Proteínas (g) | Carbs (g) | Grasas (g) | Compuestos Destacados |

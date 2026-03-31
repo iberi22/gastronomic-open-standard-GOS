@@ -138,7 +138,7 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "No le eche papa, la papa es de los cachacos. Si quiere que espese, déle tiempo al ñame." — *Dicho popular costeño.*
-
+>
 > "El secreto es el cilantro cimarrón (de hoja ancha), el de hoja chiquita no huele igual en el calor."
 
 ## Sabiduría colectiva, trucos y consejos

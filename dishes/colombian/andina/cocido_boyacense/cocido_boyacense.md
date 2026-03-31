@@ -135,7 +135,7 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "No pele los cubios ni las ibias, solo lávelos muy bien con cepillo. La cáscara contiene la mayor parte del sabor y los nutrientes." — *Campesina de Ventaquemada.*
-
+>
 > "La longaniza debe ser de Sutamarchán para que suelte esa grasa roja que 'pinta' todo el cocido."
 
 ---

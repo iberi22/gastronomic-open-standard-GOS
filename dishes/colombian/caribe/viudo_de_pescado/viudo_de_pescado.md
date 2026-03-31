@@ -131,7 +131,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "No destape la olla por nada del mundo hasta que pasen 15 minutos de haber puesto el pescado. Si sale el vapor, el viudo se le queda 'crudo' por dentro." — *Matrona de Honda (Tolima/Río Magdalena).*
-
+>
 > "El Bocachico se raya (cortes transversales finos) para romper las espinas intramusculares 'Y' y que se cocinen con el vapor."
 
 ---

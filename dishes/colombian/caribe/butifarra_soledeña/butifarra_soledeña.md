@@ -132,7 +132,7 @@ description: "El snack callejero por excelencia del Atlántico. Es un embutido d
 ### Sabiduría Colectiva (Tips de la Comunidad)
 
 > "Si la butifarra flota muy rápido es porque tiene mucho aire o grasa. La buena butifarra tiene peso y se queda en el fondo hasta que casi está lista." — *Butifarrero de vieja guardia.*
-
+>
 > "El limón se le echa después de mordida, para que penetre la carne blanca."
 
 ---
