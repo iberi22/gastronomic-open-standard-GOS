@@ -1,0 +1,10 @@
+[project]
+name = "gos"
+version = "0.1.0"
+description = "Gastronomic Open Standard"
+requires-python = ">=3.12"
+dependencies = ["pydantic", "pyyaml", "click"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
