@@ -1,0 +1,336 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const allRecipes = await getCollection('dishes');
+
+function findImage(recipe: any) {
+  const body = recipe.body;
+  let imagePath = null;
+  const mdMatch = body.match(/!\[.*?\]\(((?:[^()]+|\([^()]*\))+)\)/);
+  if (mdMatch && !mdMatch[1].endsWith('.svg')) {
+     imagePath = mdMatch[1];
+  } else {
+     const htmlMatch = body.match(/<img.*?src=["'](.*?)["']/);
+     if (htmlMatch && !htmlMatch[1].endsWith('.svg')) {
+        imagePath = htmlMatch[1];
+     }
+  }
+  if (!imagePath) return undefined;
+  if (imagePath.match(/^https?:\/\//)) return imagePath;
+  if (imagePath.startsWith('./') || !imagePath.startsWith('/')) {
+     const cleanPath = imagePath.replace(/^\.\//, '');
+     const lastSlashIndex = recipe.id.lastIndexOf('/');
+     const dir = lastSlashIndex !== -1 ? recipe.id.substring(0, lastSlashIndex) : '';
+     return `${import.meta.env.BASE_URL}/dishes/${dir}/${cleanPath}`.replace(/\/+/g, '/');
+  }
+  return imagePath;
+}
+
+function getTitle(recipe: any) {
+    if (recipe.data.title) return recipe.data.title;
+    const match = recipe.body.match(/^#\s+(.+)$/m);
+    if (match) return match[1];
+    const filename = recipe.slug.split('/').pop();
+    return filename ? decodeURIComponent(filename) : 'Untitled';
+}
+
+const recipesWithImages = allRecipes.map(recipe => ({
+  ...recipe,
+  image: findImage(recipe),
+  computedTitle: getTitle(recipe)
+})).filter(recipe => {
+    return !!recipe.data.region;
+}).sort((a, b) => {
+    const aHasImage = !!a.image;
+    const bHasImage = !!b.image;
+    if (aHasImage && !bHasImage) return -1;
+    if (!aHasImage && bHasImage) return 1;
+    return 0;
+});
+
+const categories = [
+  { id: 'colombian', label: 'Colombia', count: recipesWithImages.filter(r => r.slug.startsWith('colombian')).length },
+  { id: 'china', label: 'China', count: recipesWithImages.filter(r => r.slug.startsWith('china')).length },
+  { id: 'peruvian', label: 'Perú', count: recipesWithImages.filter(r => r.slug.startsWith('peruvian')).length },
+];
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Layout title="Recipes - GOS">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full glass-panel border-b border-[#e6e6db] dark:border-[#333]">
+      <div class="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 lg:px-10">
+        <!-- Logo -->
+        <div class="flex items-center gap-4">
+          <div class="flex size-10 items-center justify-center rounded-xl overflow-hidden shadow-neon">
+            <img src={`${baseUrl}/images/logo.png`} alt="Logo" class="h-full w-full object-cover" />
+          </div>
+          <h2 class="hidden text-xl font-bold tracking-tight md:block bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">GOS</h2>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <nav class="flex items-center gap-1 bg-black/5 dark:bg-white/5 rounded-full p-1">
+          <a href={baseUrl} class="tab-btn flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary transition-all">
+            <span class="material-symbols-outlined text-[18px]">hub</span>
+            <span>Knowledge Graph</span>
+          </a>
+          <a href={`${baseUrl}/recipes`} class="tab-btn active flex items-center gap-2 rounded-full px-5 py-2 text-sm font-bold transition-all bg-black text-white dark:bg-white dark:text-black">
+            <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+            <span>Recipes</span>
+          </a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-3 md:gap-6">
+          <div class="flex items-center gap-2 border-l border-gray-200 pl-2 dark:border-gray-800 md:pl-6">
+            <ThemeToggle />
+            <a href={`${baseUrl}/favorites`} class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-gray-600 dark:text-gray-300">
+              <span class="material-symbols-outlined">favorite</span>
+            </a>
+            <a href="https://github.com/iberi22/gastronomic-open-standard-GOS" target="_blank" class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-gray-600 dark:text-gray-300">
+              <span class="material-symbols-outlined">code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <!-- Search Bar -->
+      <div class="w-full px-6 py-8 lg:px-10">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="flex items-center gap-4">
+            <label class="relative flex h-14 flex-1 items-center overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm ring-1 ring-black/5 dark:ring-white/10 focus-within:ring-2 focus-within:ring-primary px-6">
+              <span class="material-symbols-outlined text-gray-400 mr-4">search</span>
+              <input id="search-input" class="h-full w-full border-none bg-transparent text-lg font-medium text-text-light dark:text-text-dark placeholder:text-gray-400 focus:outline-none" placeholder="Buscar recetas, ingredientes..."/>
+            </label>
+            <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+              <span class="material-symbols-outlined text-[20px]">inventory_2</span>
+              <span id="recipe-count">{recipesWithImages.length} recetas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="w-full border-b border-gray-200 bg-background-light/95 backdrop-blur dark:border-gray-800 dark:bg-background-dark/95">
+        <div class="mx-auto flex max-w-[1440px] items-center gap-3 overflow-x-auto px-6 py-4 lg:px-10 scrollbar-hide" id="category-filters">
+          <button data-category="all" class="category-btn active flex h-10 shrink-0 items-center gap-2 rounded-full border border-transparent bg-black px-5 text-sm font-bold text-white transition-all hover:scale-105">
+            <span>Todas</span>
+          </button>
+          {categories.map(category => (
+            <button data-category={category.id} class="category-btn flex h-10 shrink-0 items-center gap-2 rounded-full border border-gray-200 bg-white px-5 text-sm font-medium text-text-light transition-all hover:border-primary hover:text-primary dark:border-gray-700 dark:bg-surface-dark dark:text-text-dark capitalize">
+              <span>{category.label}</span>
+              <span class="text-xs opacity-60">({category.count})</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="mx-auto max-w-[1440px] px-6 py-8 lg:px-10">
+        <div id="recipe-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {recipesWithImages.map((recipe, index) => (
+            <div
+              class={`recipe-item ${index >= 20 ? 'hidden' : ''}`}
+              data-category={recipe.slug.split('/')[0]}
+              data-title={recipe.computedTitle.toLowerCase()}
+              data-index={index}
+            >
+              <RecipeCard
+                title={recipe.computedTitle}
+                slug={recipe.slug}
+                image={recipe.image}
+                category={recipe.slug.split('/')[0]}
+                region={recipe.data.region}
+                originalName={recipe.data.original_name}
+                difficulty={recipe.data.difficulty}
+                time={recipe.data.cook_time}
+                calories={recipe.data.nutrition?.calories}
+                rating={recipe.data.rating}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div id="loading-more" class="hidden py-8 text-center">
+          <div class="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400">
+            <span class="material-symbols-outlined animate-spin">progress_activity</span>
+            <span>Cargando más recetas...</span>
+          </div>
+        </div>
+
+        <div id="end-of-recipes" class="hidden py-8 text-center">
+          <div class="inline-flex items-center gap-2 text-gray-400 dark:text-gray-500">
+            <span class="material-symbols-outlined">check_circle</span>
+            <span>¡Has visto todas las recetas!</span>
+          </div>
+        </div>
+
+        <div id="no-results" class="hidden py-20 text-center">
+            <div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 mb-4">
+                <span class="material-symbols-outlined text-3xl text-gray-400">search_off</span>
+            </div>
+            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">No recipes found</h3>
+            <p class="text-gray-500 dark:text-gray-400">Try adjusting your search or filters.</p>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .tab-btn.active {
+    background: var(--color-primary, #ff6b35);
+    color: white;
+  }
+  .tab-btn:not(.active):hover {
+    background: rgba(0,0,0,0.05);
+    color: var(--color-primary, #ff6b35);
+  }
+  :global(.dark) .tab-btn:not(.active):hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .category-btn.active {
+    background: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+  }
+  .category-btn:not(.active):hover {
+    border-color: #ff6b35;
+    color: #ff6b35;
+  }
+</style>
+
+<script>
+  document.addEventListener('astro:page-load', async () => {
+    const searchInput = document.getElementById('search-input') as HTMLInputElement;
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const recipeGrid = document.getElementById('recipe-grid');
+    const noResults = document.getElementById('no-results');
+    const recipeCount = document.getElementById('recipe-count');
+    const loadingIndicator = document.getElementById('loading-more');
+
+    let allRecipes: any[] = [];
+    let currentCategory = 'all';
+    let currentSearch = '';
+    const baseUrl = import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL;
+
+    const getFavorites = () => JSON.parse(localStorage.getItem('ai_chef_favorites') || '[]');
+
+    try {
+        const response = await fetch(`${baseUrl}/search-index.json`);
+        allRecipes = await response.json();
+    } catch (error) {
+        console.error("Failed to load search index:", error);
+    }
+
+    recipeGrid?.addEventListener('click', (e: any) => {
+        const btn = e.target.closest('.fav-btn');
+        if (!btn) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const slug = btn.dataset.slug;
+        if (!slug) return;
+        const currentFavs = getFavorites();
+        const newFavs = currentFavs.filter((f: any) => f.slug !== slug);
+        localStorage.setItem('ai_chef_favorites', JSON.stringify(newFavs));
+        btn.classList.remove('active');
+        const span = btn.querySelector('span');
+        if (span) span.textContent = 'favorite';
+    });
+
+    function generateCardHTML(recipe: any) {
+        const imageSrc = recipe.image || '';
+        return `
+            <div
+              class="recipe-item group relative flex flex-col overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm ring-1 ring-black/5 dark:ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-neon hover:ring-primary/50"
+              data-category="${recipe.category || 'other'}"
+              data-title="${recipe.title.toLowerCase()}"
+            >
+              <a href="${baseUrl}/dishes/${recipe.slug}" class="absolute inset-0 z-0" aria-label="View recipe: ${recipe.title}"></a>
+              <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100 dark:bg-gray-800 relative pointer-events-none">
+                ${imageSrc ?
+                   `<img src="${imageSrc}" alt="${recipe.title}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />`
+                   : `<div class="flex h-full w-full items-center justify-center text-gray-300 dark:text-gray-600"><span class="material-symbols-outlined text-6xl">restaurant_menu</span></div>`
+                }
+                <div class="absolute top-3 right-3 z-20 pointer-events-auto">
+                  <button class="fav-btn flex size-8 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm text-gray-400 shadow-sm transition-all hover:scale-110 hover:text-red-500 dark:bg-black/60" data-slug="${recipe.slug}" aria-label="Add to favorites">
+                    <span class="material-symbols-outlined text-[20px]">favorite</span>
+                  </button>
+                </div>
+                ${recipe.region ? `<div class="absolute bottom-3 left-3"><span class="inline-flex items-center rounded-md bg-black/60 px-2 py-1 text-xs font-medium text-white backdrop-blur-md">${recipe.region}</span></div>` : ''}
+              </div>
+              <div class="flex flex-1 flex-col p-5 pointer-events-none">
+                 <div class="mb-2 flex items-center justify-between">
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary">${recipe.category || 'Recipe'}</span>
+                    ${recipe.rating ? `<div class="flex items-center gap-1 text-xs font-bold text-yellow-500"><span class="material-symbols-outlined text-[14px] fill-1">star</span><span>${recipe.rating}</span></div>` : ''}
+                 </div>
+                 <h3 class="mb-2 font-display text-xl font-bold leading-tight text-text-light dark:text-text-dark group-hover:text-primary transition-colors line-clamp-2">
+                    ${recipe.title}
+                 </h3>
+                 <div class="mt-auto flex items-center gap-4 text-xs font-medium text-gray-500 dark:text-gray-400">
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[16px]">schedule</span>
+                        <span>${recipe.time || 'N/A'}</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+                        <span>${recipe.calories || 'N/A'} cal</span>
+                    </div>
+                 </div>
+              </div>
+            </div>
+        `;
+    }
+
+    function renderRecipes() {
+        if (!allRecipes.length) return;
+        let filtered = allRecipes.filter((r: any) => {
+             const matchCat = currentCategory === 'all' || r.category === currentCategory;
+             const searchLower = currentSearch.toLowerCase();
+             const matchSearch = !currentSearch ||
+                                 r.title.toLowerCase().includes(searchLower) ||
+                                 (r.ingredients && r.ingredients.includes(searchLower));
+             return matchCat && matchSearch;
+        });
+
+        if (recipeCount) recipeCount.textContent = `${filtered.length} recetas`;
+
+        if (filtered.length === 0) {
+             noResults?.classList.remove('hidden');
+             if (recipeGrid) recipeGrid.innerHTML = '';
+        } else {
+             noResults?.classList.add('hidden');
+             if (recipeGrid) recipeGrid.innerHTML = filtered.map(generateCardHTML).join('');
+        }
+    }
+
+    searchInput?.addEventListener('input', (e) => {
+      currentSearch = (e.target as HTMLInputElement).value;
+      renderRecipes();
+    });
+
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        currentCategory = (btn as HTMLElement).dataset.category || 'all';
+        renderRecipes();
+      });
+    });
+
+    // Initial render
+    if (recipeCount) recipeCount.textContent = `${allRecipes.length} recetas`;
+  });
+</script>
