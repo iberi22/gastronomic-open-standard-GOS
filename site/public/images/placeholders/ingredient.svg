@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" fill="#1a1a2e" rx="8"/>
+  <ellipse cx="32" cy="32" rx="14" ry="18" fill="#4ecdc4" opacity="0.8"/>
+  <ellipse cx="32" cy="28" rx="10" ry="12" fill="#4ecdc4" opacity="0.6"/>
+  <path d="M32 14 L32 8 M28 10 L32 6 L36 10" stroke="#00ff66" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="28" cy="30" rx="3" ry="4" fill="#1a1a2e" opacity="0.3"/>
+  <ellipse cx="36" cy="32" rx="2" ry="3" fill="#1a1a2e" opacity="0.2"/>
+  <text x="32" y="58" font-family="system-ui, sans-serif" font-size="6" fill="#666" text-anchor="middle">Ingredient</text>
+</svg>
