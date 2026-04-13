@@ -1,8 +1,8 @@
 ---
 title: Cayeye
 images:
-- https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg
-- https://www.recetasgratis.net/co/images/4/5/7/cayeye_23754_600.jpg
+- url: https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg
+  description: Cayeye tradicional costeño con queso.
 sources:
 - https://www.mycolombianrecipes.com/es/cayeye-colombiano/
 - https://www.recetasgratis.net/receta-de-cayeye-23754.html
@@ -15,6 +15,21 @@ nutrition:
     protein_g: 2.7
     fat_g: 62.8
     carbs_g: 10.1
+sensory:
+  flavor:
+  - Salty (queso costeño)
+  - Creamy (butter/mash)
+  - Umami (hogao)
+  texture:
+  - Smooth (mash)
+  - Gritty (cheese)
+  aroma:
+  - Lacteal (butter)
+  - Savory (sofrito)
+  presentation: Puré de banano verde servido en montaña con queso blanco rallado encima
+    y toques rojos de hogao.
+image: https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg
+region: Caribe
 ---
 
 ## Ingredientes

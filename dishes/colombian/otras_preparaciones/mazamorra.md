@@ -1,18 +1,18 @@
 ---
 title: Mazamorra Antioqueña
 images:
-- https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg
-- https://www.recetasgratis.net/co/images/4/5/7/mazamorra_23754_600.jpg
+- url: https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg
+  description: Mazamorra antioqueña con leche y panela.
 sources:
 - https://www.mycolombianrecipes.com/es/mazamorra-antioquena/
 - https://www.recetasgratis.net/receta-de-mazamorra-antioquena-23754.html
 license: MIT
 yaml_validation: https://yaml-online-parser.appspot.com/
 main_ingredients:
-  - maíz blanco
-  - leche
-  - panela
-  - bocadillo de guayaba
+- maíz blanco
+- leche
+- panela
+- bocadillo de guayaba
 description: '* 1 libra de maíz blanco trillado'
 nutrition:
   calories: 506
@@ -20,6 +20,21 @@ nutrition:
     protein_g: 16.0
     fat_g: 6.0
     carbs_g: 114.6
+sensory:
+  flavor:
+  - Sweet (panela)
+  - Neutral (maíz)
+  - Lacteal (leche)
+  texture:
+  - Chewy (maíz)
+  - Liquid (leche)
+  aroma:
+  - Fresh Milk
+  - Cooked Corn
+  presentation: Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros
+    de panela o bocadillo.
+image: https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg
+region: Andina
 ---
 
 ## Ingredientes

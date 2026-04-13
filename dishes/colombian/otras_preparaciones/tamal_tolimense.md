@@ -1,8 +1,8 @@
 ---
 title: Tamal Tolimense
 images:
-- https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
-- https://www.recetasgratis.net/co/images/4/5/7/tamal_tolimense_23754_600.jpg
+- url: https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
+  description: Tamal tolimense envuelto en hoja de plátano.
 sources:
 - https://www.mycolombianrecipes.com/es/tamales-tolimenses/
 - https://www.recetasgratis.net/receta-de-tamales-tolimenses-23754.html
@@ -15,6 +15,23 @@ nutrition:
     protein_g: 172.5
     fat_g: 53.9
     carbs_g: 584.7
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Graso
+  texture:
+  - Soft (masa)
+  - Fibrous (meats)
+  - Tender (vegetables)
+  aroma:
+  - Banana leaf (steamed)
+  - Cumin
+  - Pork fat
+  presentation: Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado
+    en la parte superior.
+image: https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
+region: Andina
 ---
 
 ## Ingredientes

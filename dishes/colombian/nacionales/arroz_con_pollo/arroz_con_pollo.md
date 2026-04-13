@@ -20,6 +20,21 @@ nutrition:
     fat_g: 88.6
     carbs_g: 663.6
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Vegetal
+  texture:
+  - Suave (arroz)
+  - Tierno (pollo)
+  - Crujiente (verduras)
+  aroma:
+  - Especiado
+  - Aromático
+  - Avícola
+  presentation: Arroz de color amarillo brillante con verduras visibles, servido con
+    salsa de tomate y papas fritas.
 ---
 
 # Arroz con Pollo Colombiano

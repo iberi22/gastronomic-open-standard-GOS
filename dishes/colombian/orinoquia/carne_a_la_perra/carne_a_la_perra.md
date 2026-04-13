@@ -16,6 +16,25 @@ nutrition:
     fat_g: 34.5
     carbs_g: 122.0
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Ahumado
+  texture:
+  - Fibroso
+  - Jugoso
+  - Tenaz
+  aroma:
+  - Ahumado
+  - Herbal
+  - Carnoso
+  presentation: Trozos grandes de carne con costra oscura, servidos rústicamente sobre
+    hojas.
+images:
+- url: ./images/1.png
+  description: Carne a la perra asada tradicionalmente al fuego directo.
+image: ./images/1.png
 ---
 
 # Carne a la Perra

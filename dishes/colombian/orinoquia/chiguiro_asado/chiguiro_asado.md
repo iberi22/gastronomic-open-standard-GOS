@@ -16,6 +16,25 @@ nutrition:
     fat_g: 34.4
     carbs_g: 122.0
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Terroso
+  texture:
+  - Jugoso
+  - Tierno
+  - Ligeramente Fibroso
+  aroma:
+  - Ahumado
+  - Herbal
+  - Almizclado
+  presentation: Carne troceada con tonos tostados, servida sobre una base verde de
+    hojas de bijao.
+images:
+- url: ./images/1.png
+  description: Chigüiro asado, plato típico de la Orinoquía.
+image: ./images/1.png
 ---
 
 # Chigüiro Asado

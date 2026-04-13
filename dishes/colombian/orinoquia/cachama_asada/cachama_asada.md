@@ -16,6 +16,25 @@ nutrition:
     fat_g: 34.0
     carbs_g: 122.0
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Ahumado
+  texture:
+  - Jugoso
+  - Tierno
+  - Crujiente (piel)
+  aroma:
+  - Ahumado
+  - Herbal
+  - Cítrico
+  presentation: Pescado entero asado con piel dorada, servido sobre hojas de bijao
+    con acompañantes blancos y amarillos.
+images:
+- url: ./images/1.png
+  description: Cachama asada a la llanera sobre hojas de bijao.
+image: ./images/1.png
 ---
 
 # Cachama Asada

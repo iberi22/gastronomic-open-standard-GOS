@@ -16,6 +16,25 @@ nutrition:
     fat_g: 34.8
     carbs_g: 179.0
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Ahumado
+  texture:
+  - Variada
+  - Jugosa
+  - Crujiente
+  aroma:
+  - Ahumado
+  - Herbal
+  - Carnoso mixto
+  presentation: Gran bandeja con diversidad de cortes de carne asada, contrastando
+    con el blanco de la yuca.
+images:
+- url: ./images/1.png
+  description: Bandeja de entreverado llanero con mixtura de carnes.
+image: ./images/1.png
 ---
 
 # Entreverado

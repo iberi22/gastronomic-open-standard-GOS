@@ -1,8 +1,8 @@
 ---
 title: Postre de Natas
 images:
-- https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg
-- https://www.recetasgratis.net/co/images/4/5/7/postre_de_natas_23754_600.jpg
+- url: https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg
+  description: Postre de natas cremoso tradicional.
 sources:
 - https://www.mycolombianrecipes.com/es/postre-de-natas/
 - https://www.recetasgratis.net/receta-de-postre-de-natas-23754.html
@@ -15,6 +15,21 @@ nutrition:
     protein_g: 77.0
     fat_g: 77.0
     carbs_g: 293.1
+sensory:
+  flavor:
+  - Sweet
+  - Creamy
+  - Lacteal
+  texture:
+  - Smooth
+  - Silky
+  - Layered (natas)
+  aroma:
+  - Vanilla
+  - Caramelized Milk
+  presentation: Crema espesa de color marfil con capas visibles de nata, servida fría.
+image: https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg
+region: Andina
 ---
 
 ## Ingredientes

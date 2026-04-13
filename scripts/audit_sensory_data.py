@@ -16,7 +16,7 @@ from pathlib import Path
 
 def scan_recipes():
     """Scan all recipe files and extract sensory data status."""
-    base_dir = Path('E:/scripts-python/gastronomic-open-standard-GOS')
+    base_dir = Path(__file__).parent.parent
     dishes_dir = base_dir / 'dishes'
     
     recipes = []
@@ -213,7 +213,7 @@ def main():
         print(f"  {field}: {count} recipes")
     
     # Generate TODO list
-    base_dir = Path('E:/scripts-python/gastronomic-open-standard-GOS')
+    base_dir = Path(__file__).parent.parent
     todo_file = base_dir / 'SENSORY_DATA_TODO.md'
     todo_content = generate_todo_list(analysis, recipes)
     
