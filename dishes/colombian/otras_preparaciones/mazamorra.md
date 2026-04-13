@@ -8,6 +8,11 @@ sources:
 - https://www.recetasgratis.net/receta-de-mazamorra-antioquena-23754.html
 license: MIT
 yaml_validation: https://yaml-online-parser.appspot.com/
+main_ingredients:
+  - maíz blanco
+  - leche
+  - panela
+  - bocadillo de guayaba
 description: '* 1 libra de maíz blanco trillado'
 nutrition:
   calories: 506

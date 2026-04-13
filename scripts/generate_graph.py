@@ -7,9 +7,14 @@ from the markdown files in the repository.
 
 import json
 import re
+import sys
 import yaml
 from pathlib import Path
 from collections import defaultdict
+
+# Fix Windows console encoding for UTF-8 output
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 
 # Common cooking techniques/verbs (Spanish and English)
@@ -46,12 +51,135 @@ NODE_COLORS = {
     "flavor": "#95E1D3",      # Mint
     "texture": "#F38181",     # Coral
     "technique": "#AA96DA",   # Purple
+    "place": "#B2E2F2",       # Light Blue
+    "category": "#A8D8A8",   # Soft Green
 }
+
+# Ingredient category keyword mapping for auto-categorization (BELONGS_TO)
+INGREDIENT_CATEGORIES = {
+    'Proteins': ['pollo', 'carne', 'res', 'cerdo', 'pescado', 'mariscos', 'huevo', 'camarones', 'carnero', 'chivo', 'pavo', 'atun', 'salmon', 'bacalao', 'calamar', 'pulpo', 'langosta', 'cangrejo'],
+    'Dairy': ['leche', 'crema', 'mantequilla', 'queso', 'cuajada', 'yogur', 'nata', 'suero', 'leche condensada', 'queso blanco', 'queso costeño', 'arequipe'],
+    'Vegetables': ['cebolla', 'ajo', 'tomate', 'papa', 'yuca', 'platano', 'zanahoria', 'habichuela', 'coliflor', 'brocoli', 'espinaca', 'acelga', 'lechuga', 'remolacha', 'rabano', 'pimenton', 'pimiento', 'pepino', 'calabaza', 'berenjena', 'choclo', 'maiz', 'auyama'],
+    'Fruits': ['limon', 'lima', 'naranja', 'mango', 'aguacate', 'papaya', 'banano', 'manzana', 'pera', 'uva', 'fresa', 'mora', 'guanabana', 'lulo', 'maracuya', 'sandia', 'melon', 'kiwi', 'coco', 'pina'],
+    'Grains': ['arroz', 'maiz', 'trigo', 'harina', 'pan', 'fideos', 'pasta', 'tallarines', 'semola', 'avena', 'cebada', 'quinoa', 'chochorra', 'hojaldre', 'masa'],
+    'Legumes': ['frijoles', 'lentejas', 'garbanzos', 'soya', 'caraotas', 'blanquillo', 'frijol'],
+    'Oils_Fats': ['aceite', 'manteca', 'grasa', 'aceite de oliva', 'aceite vegetal', 'mantequilla', 'grasa de cerdo', 'tocino'],
+    'Condiments': ['sal', 'pimienta', 'comino', 'achiote', 'culantro', 'cilantro', 'oregano', 'tomillo', 'romero', 'laurel', 'Mejorana', 'albahaca', 'hierbabuena', 'menta', 'eneldo', 'hinojo', 'azafran', 'canela', 'clavo', 'nuez moscada', 'jengibre', 'vanilla', 'vainilla'],
+    'Sauces': ['salsa', 'aji', 'aji amarillo', 'chimichurri', 'hogao', 'sofrito', 'salsa de tomate', 'pasta de ajo', 'pasta de aji', 'merquen', 'pebre', 'guacamole', 'salsa criolla'],
+    'Spices': ['comino', 'pimenton', 'paprika', 'cayena', 'chile', 'aji molido', 'curry', 'curcuma', 'cardamomo', 'gengibre', 'canela', 'clavo', 'pimienta negra', 'pimienta roja'],
+    'Sweeteners': ['panela', 'azucar', 'miel', 'melaza', 'azucar morena', 'azucar glas', 'miel de cana'],
+    'Liquids': ['agua', 'caldo', 'consome', 'vinagre', 'vino blanco', 'vino tinto', 'cerveza', 'aguardiente', 'ron', 'whisky', 'jugo', 'jugo de naranja', 'agua de azahar'],
+    'Roots_Tubers': ['yuca', 'papa', 'name', 'arracacha', 'zanahoria', 'remolacha', 'rabano', 'nabo', 'tubérculos'],
+    'Seafood': ['pescado', 'mariscos', 'camarones', 'cangrejo', 'langosta', 'pulpo', 'calamar', 'mejillones', 'almejas', 'atun', 'salmon', 'bacalao', 'trucha', 'mojarra', 'pargo', 'robalo', 'corvina', 'bagre'],
+}
+
+# Colombian regions and their departments/cities for PLACE edges
+REGION_PLACES = {
+    'Andina': ['Antioquia', 'Bogota', 'Cundinamarca', 'Risaralda', 'Quindio', 'Caldas', 'Huila', 'Tolima', 'Narino', 'Santander', 'Boyaca', 'Norte de Santander'],
+    'Caribe': ['Barranquilla', 'Cartagena', 'Santa Marta', 'Monteria', 'Sincelejo', 'Valledupar', 'Riohacha', 'Cienaga', 'Maicao', 'Turbo'],
+    'Pacifica': ['Cali', 'Buenaventura', 'Palmira', 'Pasto', 'Popayan', 'Tumaco', 'Guadalajara de Buga'],
+    'Amazonia': ['Leticia', 'Florencia', 'San Jose del Guaviare', 'Puerto Loretoso', 'Puerto Inirida', 'Mitu', 'Vaupes'],
+    'Orinoquia': ['Villavicencio', 'Yopal', 'Arauca', 'Tunja', 'Puerto Carreno', 'Meta', 'Casanare', 'Vichada'],
+    'Valle del Cauca': ['Cali', 'Buga', 'Tulua', 'Palmira', 'Jamundi', 'Cartago', 'Buenaventura'],
+    'Insular': ['San Andres', 'Providencia', 'Santa Catalina', 'Isla de San Andres'],
+    'Nacional': ['Colombia'],
+    'China': ['Beijing', 'Shanghai', 'Guangzhou', 'Sichuan', 'Hangzhou', 'Fujian', 'Shandong'],
+    'Peruvian': ['Lima', 'Cusco', 'Arequipa', 'Trujillo', 'Chiclayo', 'Piura', 'Iquitos'],
+}
+
+
+def is_latin_text(text: str) -> bool:
+    """Check if text contains Latin characters (Spanish/English alphabet)."""
+    return bool(re.search(r'[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]', text))
+
+
+def is_list_recipe(title: str, content: str) -> bool:
+    """Detect aggregator 'list' recipe files that don't have real ingredients.
+
+    These are files like '10 recetas mas emblematicas de la region X'
+    that aggregate multiple recipes without having actual ingredients.
+    """
+    title_lower = title.lower()
+
+    # Pattern 1: "10 recetas" or similar count + region/category in title
+    list_title_patterns = [
+        r'\d+\s+recetas?\s+(?:mas\s+)?(?:emblemáticas?|famosas?|populares?|tradicionales?)\s+(?:de(?:la)?|del)?\s*',
+        r'\d+\s+platos?\s+(?:típicos?|tradicionales?|regionales?|famosos?)',
+        r'\d+\s+recetas?\s+(?:de|del|para)\s+(?:la\s+)?(?:region|colombia|colombian|andina|caribe|pacifica|amazonia|orinoquia|insular|nacional)',
+        r'^recetas?\s+de(?:la)?\s+(?:region|colombia)',
+    ]
+
+    for pattern in list_title_patterns:
+        if re.search(pattern, title_lower):
+            return True
+
+    # Pattern 2: Content that looks like a list without ingredients section
+    has_ingredientes = re.search(
+        r'^##\s*(?:[\U0001F300-\U0001F9FF\s\d]*?)?\s*(?:Ingredientes|Ingredients)',
+        content, re.IGNORECASE | re.MULTILINE
+    )
+    has_main_ingredients_fm = re.search(r'^main_ingredients:\s*\[', content, re.MULTILINE)
+
+    if not has_ingredientes and not has_main_ingredients_fm:
+        # Check if it looks like a list of recipe descriptions (many bullets but no ingredients)
+        bullet_count = len(re.findall(r'^[-*+]+\s+["\'\w]', content, re.MULTILINE))
+        if bullet_count > 5:
+            return True
+
+    return False
+
+
+def auto_categorize_ingredient(ingredient_label: str) -> str | None:
+    """Return category name if ingredient matches known category keywords."""
+    ing_lower = ingredient_label.lower()
+    for category, keywords in INGREDIENT_CATEGORIES.items():
+        for kw in keywords:
+            if kw in ing_lower:
+                return category
+    return None
+
+
+def get_or_create_category_node(nodes: dict, category_name: str) -> str:
+    """Get or create a category node and return its ID."""
+    cat_id = f"category_{sanitize_id(category_name)}"
+    if cat_id not in nodes:
+        nodes[cat_id] = {
+            "id": cat_id,
+            "label": category_name,
+            "type": "category",
+            "color": NODE_COLORS.get("category", "#A8D8A8"),
+            "size": 18,
+        }
+    return cat_id
+
+
+def add_place_edges(nodes: dict, edges: list, region_id: str, region_label: str) -> int:
+    """Add PLACE edges for cities/departments in a region. Returns count of places added."""
+    places = REGION_PLACES.get(region_label, [])
+    count = 0
+    for place_name in places:
+        place_id = f"place_{sanitize_id(place_name)}"
+        if place_id not in nodes:
+            nodes[place_id] = {
+                "id": place_id,
+                "label": place_name,
+                "type": "place",
+                "color": NODE_COLORS.get("place", "#B2E2F2"),
+                "size": 12,
+            }
+        edges.append({
+            "source": region_id,
+            "target": place_id,
+            "type": "PLACE",
+            "weight": 1,
+        })
+        count += 1
+    return count
 
 
 def extract_ingredients_from_content(content: str) -> list:
     """Extract ingredients from markdown content sections.
-    
+
     Matches headings like:
     - ## Ingredientes
     - ## 📝 Ingredientes
@@ -59,101 +187,86 @@ def extract_ingredients_from_content(content: str) -> list:
     - ## Ingredients
     - ## 🥕 Ingredients
     - Any emoji variant
-    
+
     And extracts bullet list items and numbered list items after these headings.
+    Filters out non-Latin text (e.g. Chinese characters).
     """
     ingredients = []
-    
-    # Build pattern to match any emoji prefix before Ingredientes/Ingredients
-    # The key is to match ## followed by any optional emoji/unicode and then the word
+
     heading_pattern = r'^##\s*(?:[\U0001F300-\U0001F9FF\s\d]*?)?\s*(?:Ingredientes|Ingredients)\s*$'
-    
+
     lines = content.split('\n')
     in_ingredient_section = False
-    
+
     for i, line in enumerate(lines):
-        # Check if we're entering an ingredient section
         if re.search(heading_pattern, line, re.IGNORECASE):
             in_ingredient_section = True
             continue
-        
-        # Check if we've left the ingredient section (new heading or ---)
+
         if in_ingredient_section:
             if re.match(r'^##\s+', line) or re.match(r'^---', line):
                 in_ingredient_section = False
                 continue
-            
-            # Extract bullet list items (- item or * item)
+
             bullet_match = re.match(r'^[-*+]\s+(.+?)(?:\s*[-–—]\s*(.+))?$', line)
             if bullet_match:
                 ingredient_text = bullet_match.group(1).strip()
-                # Remove quantity/preparation prefix (e.g., "500 g de" -> "")
                 ingredient_text = re.sub(
                     r'^[\d½¼¾⅓⅔⅛⅜⅝⅞/\s]+(?:g|kg|ml|l|taza|cucharada|cucharadita|cdta|cdas|kilo|libra|lb|oz|onza)s?\s+(?:de\s+)?',
                     '', ingredient_text, flags=re.IGNORECASE
                 )
                 ingredient_text = ingredient_text.strip()
-                # Skip if it's just a quantity or too short
                 if ingredient_text and len(ingredient_text) > 1 and not re.match(r'^\d+$', ingredient_text):
-                    ingredients.append(ingredient_text)
+                    # Filter non-Latin (Chinese chars, etc.)
+                    if is_latin_text(ingredient_text):
+                        ingredients.append(ingredient_text)
                 continue
-            
-            # Extract numbered list items (1. item, 2. item, etc.)
+
             numbered_match = re.match(r'^\d+\.\s+(.+?)(?:\s*[-–—]\s*(.+))?$', line)
             if numbered_match:
                 ingredient_text = numbered_match.group(1).strip()
-                # Remove quantity/preparation prefix
                 ingredient_text = re.sub(
                     r'^[\d½¼¾⅓⅔⅛⅜⅝⅞/\s]+(?:g|kg|ml|l|taza|cucharada|cucharadita|cdta|cdas|kilo|libra|lb|oz|onza)s?\s+(?:de\s+)?',
                     '', ingredient_text, flags=re.IGNORECASE
                 )
                 ingredient_text = ingredient_text.strip()
-                # Skip if it's just a quantity or too short
                 if ingredient_text and len(ingredient_text) > 1 and not re.match(r'^\d+$', ingredient_text):
-                    ingredients.append(ingredient_text)
-    
+                    if is_latin_text(ingredient_text):
+                        ingredients.append(ingredient_text)
+
     return ingredients
 
 
 def extract_techniques_from_content(content: str) -> list:
-    """Extract cooking techniques/verbs from instructions section.
-    
-    Looks for ## Instrucciones or similar headings and extracts cooking verbs.
-    """
+    """Extract cooking techniques/verbs from instructions section."""
     techniques = []
-    
-    # Pattern to match instructions section (any language, any emoji)
+
     instruction_pattern = r'^##\s*(?:[\U0001F300-\U0001F9FF\s\d]*?)?\s*(?:Instrucciones|Instructions|Preparaci(?:ó|o)n|Receta)\s*$'
-    
+
     lines = content.split('\n')
     in_instruction_section = False
-    
+
     for line in lines:
-        # Check if we're entering an instruction section
         if re.search(instruction_pattern, line, re.IGNORECASE):
             in_instruction_section = True
             continue
-        
-        # Check if we've left the section
+
         if in_instruction_section:
             if re.match(r'^##\s+', line) or re.match(r'^---', line):
                 in_instruction_section = False
                 continue
-            
-            # Clean the line of markdown formatting
-            clean_line = re.sub(r'\*\*|__|\*|_', '', line)  # Remove bold/italic
-            clean_line = re.sub(r'^\d+\.\s*', '', clean_line)  # Remove numbered list prefix
-            clean_line = re.sub(r'^[-*+]\s*', '', clean_line)  # Remove bullet prefix
-            
-            # Split into words and check each against techniques
+
+            clean_line = re.sub(r'\*\*|__|\*|_', '', line)
+            clean_line = re.sub(r'^\d+\.\s*', '', clean_line)
+            clean_line = re.sub(r'^[-*+]\s*', '', clean_line)
+
             words = re.findall(r'\b[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]+\b', clean_line.lower())
             for word in words:
                 if word in COOKING_TECHNIQUES:
-                    # Capitalize first letter for display
                     technique_display = word.capitalize()
                     if technique_display not in techniques:
                         techniques.append(technique_display)
-    
+
     return techniques
 
 
@@ -180,7 +293,14 @@ def build_graph():
     nodes = {}  # id -> node data
     edges = []  # list of {source, target, type, weight}
     recipe_ingredients = {}  # recipe_id -> list of ingredient_ids
-    recipe_regions = {}  # recipe_id -> region
+    recipe_regions = {}  # recipe_id -> region_label
+    ingredient_categories_added = set()  # track BELONGS_TO edges to avoid duplicates
+    place_edges_count = 0
+    belongs_to_count = 0
+    skipped_list_recipes = 0
+
+    # Quality gate tracking
+    quality_gate_warnings = []
 
     # Track connections for edge weighting
     ingredient_recipes = defaultdict(list)
@@ -198,12 +318,20 @@ def build_graph():
             if not fm.get("title"):
                 continue
 
-            recipe_id = f"recipe_{sanitize_id(fm['title'])}"
+            title = fm.get("title", "")
+
+            # === SKIP LIST RECIPES (aggregator files) ===
+            if is_list_recipe(title, content):
+                skipped_list_recipes += 1
+                print(f"  [SKIP] List aggregator: {title}")
+                continue
+
+            recipe_id = f"recipe_{sanitize_id(title)}"
 
             # Add recipe node
             nodes[recipe_id] = {
                 "id": recipe_id,
-                "label": fm.get("title", "Unknown"),
+                "label": title,
                 "type": "recipe",
                 "color": NODE_COLORS["recipe"],
                 "region": fm.get("region", ""),
@@ -211,20 +339,19 @@ def build_graph():
                 "size": 30,
             }
 
-            # Extract ingredients from markdown content sections (if not in frontmatter)
+            # Extract ingredients from markdown content sections
             content_ingredients = extract_ingredients_from_content(content)
-            
+
             # Combine frontmatter ingredients with content ingredients
             all_ingredients = fm.get("main_ingredients", []).copy()
             for ing in content_ingredients:
-                # Avoid duplicates
                 ing_lower = ing.lower()
                 if not any(i.lower() == ing_lower for i in all_ingredients):
                     all_ingredients.append(ing)
-            
+
             # Store recipe's ingredient IDs for RELATED_DISHES calculation
             recipe_ingredient_ids = []
-            
+
             # Process all ingredients (from frontmatter + content)
             for ing in all_ingredients:
                 ing_id = f"ingredient_{sanitize_id(ing)}"
@@ -241,7 +368,7 @@ def build_graph():
                         "size": 25,
                     }
 
-                # Create edge: recipe -> ingredient
+                # Create edge: recipe -> ingredient (USES)
                 edges.append({
                     "source": recipe_id,
                     "target": ing_id,
@@ -250,9 +377,36 @@ def build_graph():
                 })
 
                 ingredient_recipes[ing_id].append(recipe_id)
-            
+
+                # === AUTO-CATEGORIZE: BELONGS_TO edge for ingredients ===
+                category = auto_categorize_ingredient(ing)
+                if category:
+                    cat_id = get_or_create_category_node(nodes, category)
+                    belongs_key = (ing_id, cat_id)
+                    if belongs_key not in ingredient_categories_added:
+                        edges.append({
+                            "source": ing_id,
+                            "target": cat_id,
+                            "type": "BELONGS_TO",
+                            "weight": 1,
+                        })
+                        ingredient_categories_added.add(belongs_key)
+                        belongs_to_count += 1
+
             # Store for RELATED_DISHES calculation
             recipe_ingredients[recipe_id] = recipe_ingredient_ids
+
+            # === QUALITY GATES ===
+            ing_count = len(recipe_ingredient_ids)
+            has_flavor = len(fm.get("sensory", {}).get("flavor", [])) > 0
+            region_val = fm.get("region", "")
+
+            if ing_count < 3:
+                quality_gate_warnings.append(f"RECIPE <3 INGREDIENTS: {title} ({ing_count})")
+            if not has_flavor:
+                quality_gate_warnings.append(f"RECIPE NO FLAVOR: {title}")
+            if not region_val:
+                quality_gate_warnings.append(f"RECIPE NO REGION: {title}")
 
             # Process sensory profile
             sensory = fm.get("sensory", {})
@@ -298,7 +452,7 @@ def build_graph():
             region = fm.get("region", "")
             if region:
                 region_id = f"region_{sanitize_id(region)}"
-                recipe_regions[recipe_id] = region_id
+                recipe_regions[recipe_id] = region
 
                 if region_id not in nodes:
                     nodes[region_id] = {
@@ -315,12 +469,16 @@ def build_graph():
                     "type": "FROM_REGION",
                     "weight": 1.5,
                 })
-            
+
+                # === ADD PLACE EDGES for Colombian regions ===
+                place_count = add_place_edges(nodes, edges, region_id, region)
+                place_edges_count += place_count
+
             # Extract and add cooking techniques
             techniques = extract_techniques_from_content(content)
             for technique in techniques:
                 technique_id = f"technique_{sanitize_id(technique)}"
-                
+
                 if technique_id not in nodes:
                     nodes[technique_id] = {
                         "id": technique_id,
@@ -329,7 +487,7 @@ def build_graph():
                         "color": NODE_COLORS["technique"],
                         "size": 15,
                     }
-                
+
                 edges.append({
                     "source": recipe_id,
                     "target": technique_id,
@@ -339,6 +497,8 @@ def build_graph():
 
         except Exception as e:
             print(f"  [WARN] Error processing {recipe_file}: {e}")
+
+    print(f"\n[QUALITY GATES] Skipped {skipped_list_recipes} list aggregator recipes")
 
     # === PROCESS INGREDIENT FILES (if they exist) ===
     print("[INGREDIENT] Processing ingredient files...")
@@ -396,9 +556,9 @@ def build_graph():
                         })
 
             except Exception as e:
-                print(f"  ⚠️ Error processing {ing_file}: {e}")
+                print(f"  [WARN] Error processing {ing_file}: {e}")
 
-    # === CREATE RELATED_DISHES EDGES (shared ≥3 ingredients) ===
+    # === CREATE RELATED_DISHES EDGES (shared >=3 ingredients) ===
     print("[RELATED] Creating RELATED_DISHES edges (shared ingredients)...")
     related_by_ingredients = 0
     recipe_ids = list(recipe_ingredients.keys())
@@ -415,17 +575,17 @@ def build_graph():
                     "weight": len(shared),
                 })
                 related_by_ingredients += 1
-    
+
     print(f"   -> Created {related_by_ingredients} RELATED_DISHES edges (shared ingredients)")
 
     # === CREATE RELATED_DISHES EDGES (same region) ===
     print("[REGION] Creating RELATED_DISHES edges (same region)...")
     related_by_region = 0
-    # Group recipes by region
     region_recipes = defaultdict(list)
-    for recipe_id, region_id in recipe_regions.items():
+    for recipe_id, region_label in recipe_regions.items():
+        region_id = f"region_{sanitize_id(region_label)}"
         region_recipes[region_id].append(recipe_id)
-    
+
     for region_id, recipes in region_recipes.items():
         if len(recipes) < 2:
             continue
@@ -438,24 +598,28 @@ def build_graph():
                     "weight": 2,
                 })
                 related_by_region += 1
-    
+
     print(f"   -> Created {related_by_region} RELATED_DISHES edges (same region)")
 
     # === CREATE INGREDIENT-TO-INGREDIENT CONNECTIONS ===
     print("[CONNECTION] Creating ingredient similarity connections...")
+    often_together_count = 0
     for ing_id, recipes in ingredient_recipes.items():
         for other_ing_id, other_recipes in ingredient_recipes.items():
-            if ing_id >= other_ing_id:  # Avoid duplicates
+            if ing_id >= other_ing_id:
                 continue
 
             shared = set(recipes) & set(other_recipes)
-            if len(shared) >= 2:  # At least 2 shared recipes
+            if len(shared) >= 2:
                 edges.append({
                     "source": ing_id,
                     "target": other_ing_id,
                     "type": "OFTEN_TOGETHER",
                     "weight": len(shared),
                 })
+                often_together_count += 1
+
+    print(f"   -> Created {often_together_count} OFTEN_TOGETHER edges")
 
     # === FINALIZE ===
     graph = {
@@ -471,27 +635,70 @@ def build_graph():
     # Save to both locations
     OUTPUT_FILE_SITE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE_SITE.write_text(json.dumps(graph, indent=2, ensure_ascii=False), encoding="utf-8")
-    
+
     OUTPUT_FILE_DOCS.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE_DOCS.write_text(json.dumps(graph, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print(f"\n[DONE] Graph generated successfully!")
+    # === EDGE TYPE COUNTS ===
+    print(f"\n{'='*60}")
+    print(f"[DONE] Graph generated successfully!")
     print(f"   Nodes: {len(nodes)}")
     print(f"   Edges: {len(edges)}")
     print(f"   Saved to: {OUTPUT_FILE_SITE}")
     print(f"   Saved to: {OUTPUT_FILE_DOCS}")
 
-    # Count recipes
+    # Node counts
     recipe_count = len([n for n in nodes.values() if n['type'] == 'recipe'])
-    print(f"   Recipes: {recipe_count}")
-    
-    # Count related dishes edges
-    related_dishes_count = len([e for e in edges if e['type'] == 'RELATED_DISHES'])
-    print(f"   RELATED_DISHES edges: {related_dishes_count}")
-    
-    # Count technique nodes
+    ingredient_count = len([n for n in nodes.values() if n['type'] == 'ingredient'])
+    region_count = len([n for n in nodes.values() if n['type'] == 'region'])
+    flavor_count = len([n for n in nodes.values() if n['type'] == 'flavor'])
     technique_count = len([n for n in nodes.values() if n['type'] == 'technique'])
-    print(f"   Technique nodes: {technique_count}")
+    place_count = len([n for n in nodes.values() if n['type'] == 'place'])
+    category_count = len([n for n in nodes.values() if n['type'] == 'category'])
+
+    print(f"\n--- NODE COUNTS ---")
+    print(f"   recipe:     {recipe_count}")
+    print(f"   ingredient: {ingredient_count}")
+    print(f"   region:     {region_count}")
+    print(f"   flavor:     {flavor_count}")
+    print(f"   texture:    {len([n for n in nodes.values() if n['type'] == 'texture'])}")
+    print(f"   technique:  {technique_count}")
+    print(f"   place:      {place_count}")
+    print(f"   category:   {category_count}")
+
+    # Edge type counts
+    edge_types = defaultdict(int)
+    for e in edges:
+        edge_types[e['type']] += 1
+
+    print(f"\n--- EDGE TYPE COUNTS ---")
+    for edge_type, count in sorted(edge_types.items(), key=lambda x: -x[1]):
+        status = "✓" if count > 0 else "✗ ZERO"
+        print(f"   {status} {edge_type:25s}: {count}")
+
+    print(f"\n--- EDGE TYPE VERIFICATION ---")
+    critical_edges = ['FROM_REGION', 'RELATED_DISHES', 'BELONGS_TO', 'PLACE', 'USES_TECHNIQUE', 'USES', 'HAS_FLAVOR']
+    all_ok = True
+    for et in critical_edges:
+        count = edge_types.get(et, 0)
+        status = "✓" if count > 0 else "✗ ZERO - NEEDS FIX"
+        if count == 0:
+            all_ok = False
+        print(f"   {status} {et}")
+
+    print(f"\n--- QUALITY GATE WARNINGS ({len(quality_gate_warnings)}) ---")
+    if quality_gate_warnings:
+        for w in quality_gate_warnings[:20]:
+            print(f"   ! {w}")
+        if len(quality_gate_warnings) > 20:
+            print(f"   ... and {len(quality_gate_warnings) - 20} more")
+
+    print(f"\n--- SUMMARY ---")
+    print(f"   BELONGS_TO edges (auto-categorized): {belongs_to_count}")
+    print(f"   PLACE edges (cities/departments):     {place_edges_count}")
+    print(f"   Skipped list aggregator recipes:     {skipped_list_recipes}")
+    print(f"   Quality gate warnings:               {len(quality_gate_warnings)}")
+    print(f"{'='*60}")
 
     return graph
 
