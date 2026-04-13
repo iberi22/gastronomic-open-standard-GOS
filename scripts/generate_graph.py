@@ -11,6 +11,63 @@ import yaml
 from pathlib import Path
 from collections import defaultdict
 
+
+def extract_ingredients_from_content(content: str) -> list:
+    """Extract ingredients from markdown content sections.
+    
+    Matches headings like:
+    - ## Ingredientes
+    - ## 📝 Ingredientes
+    - ## 🥕 Ingredientes
+    - ## Ingredients
+    - ## 🥕 Ingredients
+    
+    And extracts bullet list items after these headings.
+    """
+    ingredients = []
+    
+    # Regex patterns for ingredient section headings (with emoji variants)
+    heading_patterns = [
+        r'##\s*[📝🥕]?\s*Ingredientes',
+        r'##\s*[📝🥕]?\s*Ingredients',
+    ]
+    
+    # Build combined pattern
+    combined_pattern = '(' + '|'.join(heading_patterns) + ')'
+    
+    lines = content.split('\n')
+    in_ingredient_section = False
+    
+    for i, line in enumerate(lines):
+        # Check if we're entering an ingredient section
+        if re.search(combined_pattern, line, re.IGNORECASE):
+            in_ingredient_section = True
+            continue
+        
+        # Check if we've left the ingredient section (new heading or ---)
+        if in_ingredient_section:
+            if re.match(r'^##\s+', line) or re.match(r'^---', line):
+                in_ingredient_section = False
+                continue
+            
+            # Extract bullet list items
+            bullet_match = re.match(r'^[-*+]\s+(.+?)(?:\s*[-–—]\s*(.+))?$', line)
+            if bullet_match:
+                ingredient_text = bullet_match.group(1).strip()
+                # Remove quantity/preparation prefix (e.g., "500 g de" -> "")
+                # Common patterns: "500 g de", "2 tazas de", "1/2 cucharadita de"
+                ingredient_text = re.sub(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞/\s]+(?:g|kg|ml|l|taza|cucharada|cucharadita|cdta|cdas|kilo|libra|lb|oz|onza)s?\s+(?:de\s+)?', '', ingredient_text, flags=re.IGNORECASE)
+                # Clean up remaining text
+                ingredient_text = ingredient_text.strip()
+                # Skip if it's just a quantity or too short
+                if ingredient_text and len(ingredient_text) > 1 and not re.match(r'^\d+$', ingredient_text):
+                    ingredients.append(ingredient_text)
+    
+    return ingredients
+
+
+
+
 # Paths
 DISHES_DIR = Path("dishes")
 INGREDIENTS_DIR = Path("ingredients")
@@ -41,6 +98,9 @@ def extract_frontmatter(content: str) -> dict:
 def sanitize_id(text: str) -> str:
     """Create a safe ID from text."""
     return re.sub(r'[^a-z0-9_]', '_', text.lower().strip())
+
+
+
 
 def build_graph():
     """Build the complete graph from all sources."""
@@ -77,8 +137,20 @@ def build_graph():
                 "size": 30,
             }
 
-            # Process main ingredients
-            for ing in fm.get("main_ingredients", []):
+            # Extract ingredients from markdown content sections (if not in frontmatter)
+            content_ingredients = extract_ingredients_from_content(content)
+            
+            # Combine frontmatter ingredients with content ingredients
+            all_ingredients = fm.get("main_ingredients", []).copy()
+            for ing in content_ingredients:
+                # Avoid duplicates
+                ing_lower = ing.lower()
+                if not any(i.lower() == ing_lower for i in all_ingredients):
+                    all_ingredients.append(ing)
+            
+            # Process all ingredients (from frontmatter + content)
+            for ing in all_ingredients:
+
                 ing_id = f"ingredient_{sanitize_id(ing)}"
 
                 # Create ingredient node if not exists
