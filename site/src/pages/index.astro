@@ -1,110 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import GraphExplorer from '../components/GraphExplorer.astro';
-import Footer from '../components/Footer.astro';
-import ThemeToggle from '../components/ThemeToggle.astro';
-
-const baseUrl = import.meta.env.BASE_URL;
+import CountrySelector from '../components/CountrySelector.astro';
+import SyncStatus from '../components/SyncStatus.astro';
 ---
 
-<Layout title="GOS - Gastronomic Open Standard">
-  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-    <!-- Navigation -->
-    <header class="sticky top-0 z-50 w-full glass-panel border-b border-[#e6e6db] dark:border-[#333]">
-      <div class="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 lg:px-10">
-        <!-- Logo -->
-        <div class="flex items-center gap-4">
-          <div class="flex size-10 items-center justify-center rounded-xl overflow-hidden shadow-neon">
-            <img src={`${baseUrl}/images/logo.png`} alt="Logo" class="h-full w-full object-cover" />
-          </div>
-          <h2 class="hidden text-xl font-bold tracking-tight md:block bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">GOS</h2>
-        </div>
-
-        <!-- Tabs Navigation -->
-        <nav class="flex items-center gap-1 bg-black/5 dark:bg-white/5 rounded-full p-1">
-          <a href={baseUrl} class="tab-btn active flex items-center gap-2 rounded-full px-5 py-2 text-sm font-bold transition-all bg-black text-white dark:bg-white dark:text-black">
-            <span class="material-symbols-outlined text-[18px]">hub</span>
-            <span>Knowledge Graph</span>
-          </a>
-          <a href={`${baseUrl}/recipes`} class="tab-btn flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary transition-all">
-            <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
-            <span>Recipes</span>
-          </a>
-        </nav>
-
-        <!-- Actions -->
-        <div class="flex items-center gap-3 md:gap-6">
-          <div class="flex items-center gap-2 border-l border-gray-200 pl-2 dark:border-gray-800 md:pl-6">
-            <ThemeToggle />
-            <a href={`${baseUrl}/favorites`} class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-gray-600 dark:text-gray-300">
-              <span class="material-symbols-outlined">favorite</span>
-            </a>
-            <a href="https://github.com/iberi22/gastronomic-open-standard-GOS" target="_blank" class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-gray-600 dark:text-gray-300">
-              <span class="material-symbols-outlined">code</span>
-            </a>
-          </div>
-        </div>
-      </div>
+<Layout title="GOS - Nodo Gastronómico">
+  <div class="max-w-4xl mx-auto">
+    <header class="text-center py-12">
+      <h1 class="text-5xl font-display mb-4 text-primary">GOS</h1>
+      <p class="text-xl text-gray-400">Gastronomic Open Standard</p>
+      <p class="text-gray-500 mt-2">Nodo Gastronómico Offline-First</p>
     </header>
 
-    <!-- Main: Full Knowledge Graph -->
-    <main class="flex-1 p-0">
-      <div class="relative" style="height: calc(100vh - 80px);">
-        <!-- Hero Overlay -->
-        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-10 text-center pointer-events-none">
-          <div class="inline-flex items-center gap-2 rounded-full border border-secondary/30 bg-black/60 backdrop-blur-md px-4 py-2 mb-3">
-            <span class="material-symbols-outlined text-secondary text-[18px]">hub</span>
-            <span class="text-xs font-bold uppercase tracking-wider text-secondary font-mono">Gastronomic Knowledge Graph</span>
-          </div>
-          <h1 class="font-display text-3xl font-black tracking-tight text-white md:text-4xl lg:text-5xl drop-shadow-lg">
-            Recetas Conectadas
-          </h1>
-          <p class="mt-2 text-sm text-white/70 max-w-md mx-auto">
-            Explora las conexiones entre ingredientes, sabores y regiones de la gastronomía colombiana y china
-          </p>
-        </div>
+    <section id="onboarding" class="mb-12">
+      <CountrySelector />
+    </section>
 
-        <!-- Graph -->
-        <div class="w-full h-full">
-          <GraphExplorer />
-        </div>
+    <section class="mb-12">
+      <SyncStatus />
+    </section>
 
-        <!-- Side Info Panel -->
-        <div class="absolute bottom-6 right-6 z-10 max-w-xs rounded-2xl border border-white/10 bg-black/70 backdrop-blur-md p-4 text-white">
-          <h3 class="font-bold text-sm mb-2 flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-[18px]">info</span>
-            Base de Datos Libre
-          </h3>
-          <p class="text-xs text-white/60 mb-3">
-            1186 nodos · 1463 conexiones · 3 países · 100% abierto
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <a href={`${baseUrl}/recipes`} class="inline-flex items-center gap-1 rounded-full bg-primary/20 border border-primary/30 px-3 py-1 text-xs font-medium text-primary hover:bg-primary/30 transition-colors">
-              <span class="material-symbols-outlined text-[14px]">restaurant_menu</span>
-              Ver Recetas
-            </a>
-            <a href={`${baseUrl}/scientific`} class="inline-flex items-center gap-1 rounded-full bg-white/10 border border-white/20 px-3 py-1 text-xs font-medium text-white/80 hover:bg-white/20 transition-colors">
-              <span class="material-symbols-outlined text-[14px]">science</span>
-              Datos Científicos
-            </a>
-          </div>
-        </div>
+    <section class="grid md:grid-cols-2 gap-6">
+      <a href="/reviews" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+        <h2 class="text-2xl font-display mb-2">📋 Reviews</h2>
+        <p class="text-gray-400">Ver y crear reseñas de restaurantes y platos</p>
+      </a>
+      <a href="/profile" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+        <h2 class="text-2xl font-display mb-2">👤 Perfil</h2>
+        <p class="text-gray-400">Tu identidad y claves criptográficas</p>
+      </a>
+      <a href="/settings" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+        <h2 class="text-2xl font-display mb-2">⚙️ Ajustes</h2>
+        <p class="text-gray-400">Configuración y sincronización</p>
+      </a>
+      <div class="block p-6 bg-white/5 rounded-xl border border-white/10 opacity-60">
+        <h2 class="text-2xl font-display mb-2">🍳 Recetas</h2>
+        <p class="text-gray-400">Base de datos científica de recetas</p>
+        <span class="text-xs text-gray-500 mt-2 block">Próximamente</span>
       </div>
-    </main>
-    <Footer />
+    </section>
+
+    <footer class="mt-12 text-center text-gray-600 text-sm">
+      <p>GOS PWA v0.1.0 | Sincronizado con GunDB</p>
+    </footer>
   </div>
 </Layout>
 
-<style>
-  .tab-btn.active {
-    background: var(--color-primary, #ff6b35);
-    color: white;
+<script>
+  // Check if user already selected country
+  const selectedCountry = localStorage.getItem('gos_country');
+  if (selectedCountry) {
+    const onboarding = document.getElementById('onboarding');
+    if (onboarding) onboarding.style.display = 'none';
   }
-  .tab-btn:not(.active):hover {
-    background: rgba(0,0,0,0.05);
-    color: var(--color-primary, #ff6b35);
-  }
-  :global(.dark) .tab-btn:not(.active):hover {
-    background: rgba(255,255,255,0.1);
-  }
-</style>
+</script>

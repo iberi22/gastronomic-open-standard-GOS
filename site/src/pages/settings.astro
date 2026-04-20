@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SyncStatus from '../components/SyncStatus.astro';
+---
+
+<Layout title="Ajustes - GOS">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-display text-primary mb-2">Ajustes</h1>
+      <p class="text-gray-400">Configuración y sincronización</p>
+    </header>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-display mb-4">Estado de Sincronización</h2>
+      <SyncStatus />
+    </section>
+
+    <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
+      <h2 class="text-xl font-display mb-4">GitHub Sync</h2>
+      <p class="text-gray-400 mb-4">
+        Sincroniza tus datos con el repositorio gos-p2p-data en GitHub.
+        Tu token se almacena de forma segura usando Web Crypto API.
+      </p>
+      <div class="space-y-4 max-w-md">
+        <div>
+          <label for="github-token" class="block text-sm text-gray-400 mb-1">Token de GitHub (PAT)</label>
+          <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx" 
+            class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:border-primary focus:outline-none" />
+        </div>
+        <div class="flex gap-2">
+          <button id="save-token" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors">
+            Guardar Token
+          </button>
+          <button id="sync-now" class="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition-colors">
+            Sincronizar Ahora
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
+      <h2 class="text-xl font-display mb-4">Datos Locales</h2>
+      <div class="space-y-2 text-gray-400">
+        <p>País: <span id="data-country" class="text-white">No seleccionado</span></p>
+        <p>Reseñas locales: <span id="data-reviews" class="text-white">0</span></p>
+        <p>Última sincronización: <span id="data-last-sync" class="text-white">Nunca</span></p>
+      </div>
+      <div class="mt-4 flex gap-2">
+        <button id="export-data" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-colors">
+          Exportar Datos
+        </button>
+        <button id="clear-data" class="px-4 py-2 bg-red-500/20 border border-red-500/30 text-red-400 rounded-lg hover:bg-red-500/30 transition-colors">
+          Limpiar Todo
+        </button>
+      </div>
+    </section>
+
+    <section class="p-6 bg-white/5 rounded-xl border border-white/10">
+      <h2 class="text-xl font-display mb-2">Sobre GOS PWA</h2>
+      <p class="text-gray-400 text-sm">
+        Versión 0.1.0 | Progressive Web App para el Gastronomic Open Standard.<br />
+        Datos sincronizados con GunDB + GitHub. Cifrado RSA-4096.
+      </p>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { saveToken, syncNow, pullData } from '../lib/github-sync';
+
+  // Load current data
+  const country = localStorage.getItem('gos_country');
+  const lastSync = localStorage.getItem('gos_last_sync');
+
+  const countryEl = document.getElementById('data-country');
+  const lastSyncEl = document.getElementById('data-last-sync');
+
+  if (countryEl) countryEl.textContent = country || 'No seleccionado';
+  if (lastSyncEl) lastSyncEl.textContent = lastSync 
+    ? new Date(parseInt(lastSync)).toLocaleString('es-CO') 
+    : 'Nunca';
+
+  document.getElementById('save-token')?.addEventListener('click', async () => {
+    const tokenInput = document.getElementById('github-token') as HTMLInputElement;
+    const token = tokenInput?.value;
+
+    if (!token) {
+      alert('Ingresa un token de GitHub');
+      return;
+    }
+
+    try {
+      await saveToken(token);
+      alert('Token guardado correctamente');
+    } catch (e) {
+      alert('Error al guardar token: ' + (e as Error).message);
+    }
+  });
+
+  document.getElementById('sync-now')?.addEventListener('click', async () => {
+    try {
+      await syncNow();
+      localStorage.setItem('gos_last_sync', Date.now().toString());
+      alert('Sincronización completada');
+      location.reload();
+    } catch (e) {
+      alert('Error en sincronización: ' + (e as Error).message);
+    }
+  });
+
+  document.getElementById('export-data')?.addEventListener('click', () => {
+    const data = {
+      country: localStorage.getItem('gos_country'),
+      username: localStorage.getItem('gos_username'),
+      reviews: localStorage.getItem('gos_reviews'),
+      publicKey: localStorage.getItem('gos_public_key'),
+      exportDate: new Date().toISOString()
+    };
+
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'gos-data-export.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById('clear-data')?.addEventListener('click', () => {
+    if (confirm('¿Estás seguro de eliminar todos los datos locales?')) {
+      localStorage.clear();
+      indexedDB.deleteDatabase('gos_pwa');
+      alert('Datos eliminados. Recarga la página.');
+    }
+  });
+</script>

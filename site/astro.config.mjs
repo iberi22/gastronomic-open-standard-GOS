@@ -8,5 +8,16 @@ export default defineConfig({
   build: {
     assets: 'assets'
   },
-  integrations: [tailwind()]
+  integrations: [
+    tailwind()
+  ],
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/[name].[hash].js',
+        }
+      }
+    }
+  }
 });

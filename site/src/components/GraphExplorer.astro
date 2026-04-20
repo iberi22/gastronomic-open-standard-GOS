@@ -56,8 +56,36 @@
   .ge-conn-item:hover { background:#1a1a2e; border-color:#2a2a3e; color:#fff; }
   .ge-conn-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
   .ge-legend { position:absolute; bottom:12px; left:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:10px; padding:9px 14px; display:flex; flex-wrap:wrap; gap:8px 14px; max-width:420px; z-index:10; }
-  .ge-legend-item { display:flex; align-items:center; gap:6px; font-size:10px; color:#6060a0; font-weight:500; }
+  .ge-zoom-btn:hover { background:#1e1e30; color:#fff; }
+  .ge-tooltip { position:absolute; background:rgba(10,10,20,0.96); border:1px solid #2a2a3e; border-radius:8px; padding:8px 12px; font-size:11px; color:#e0e0ff; pointer-events:none; z-index:25; max-width:200px; box-shadow:0 4px 20px rgba(0,0,0,0.6); display:none; white-space:nowrap; }
+  .ge-tooltip .tt-type { font-size:9px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-bottom:3px; }
+  .ge-tooltip .tt-label { font-weight:600; color:#fff; margin-bottom:3px; }
+  .ge-tooltip .tt-meta { font-size:10px; color:#8080a0; }
+  .ge-minimap { position:absolute; right:12px; bottom:48px; width:130px; height:90px; background:rgba(10,10,15,0.88); border:1px solid #1e1e2e; border-radius:8px; overflow:hidden; z-index:10; }
+  .ge-minimap svg { width:100%; height:100%; display:block; }
+  .ge-minimap-label { position:absolute; top:4px; left:6px; font-size:8px; color:#4a4a6a; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; pointer-events:none; }
+  .ge-legend-item { display:flex; align-items:center; gap:6px; font-size:10px; color:#6060a0; font-weight:500; transition:color 0.15s; cursor:pointer; }
+  .ge-legend-item:hover { color:#fff; }
   .ge-legend-item .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .ge-legend-item.dimmed { opacity:0.3; }
+  .ge-image-placeholder { width:100%; height:110px; border-radius:8px; margin-bottom:14px; display:flex; align-items:center; justify-content:center; font-size:44px; background:#12121a; border:1px solid #1e1e2e; flex-shrink:0; }
+  .ge-image-thumb { width:100%; height:110px; border-radius:8px; margin-bottom:14px; overflow:hidden; flex-shrink:0; }
+  .ge-image-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .ge-instructions { background:#0f0f18; border-radius:8px; padding:10px 12px; font-size:11px; color:#b0b0d0; line-height:1.65; border-left:3px solid #ff6b35; margin-bottom:14px; }
+  .ge-nutrition-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-bottom:14px; }
+  .ge-nutrition-item { background:#12121a; border-radius:6px; padding:6px 8px; text-align:center; }
+  .ge-nutrition-item .nv { font-size:13px; font-weight:600; color:#f9c74f; }
+  .ge-nutrition-item .nl { font-size:8px; text-transform:uppercase; color:#4a4a6a; letter-spacing:0.08em; margin-top:2px; }
+  .ge-history { background:#0f0f18; border-radius:8px; padding:10px 12px; font-size:11px; color:#b0b0d0; line-height:1.65; border-left:3px solid #7d61ff; margin-bottom:14px; }
+  .ge-technique { display:inline-flex; align-items:center; gap:5px; background:#1a1a2a; border:1px solid #2a2a3e; border-radius:4px; padding:3px 8px; font-size:10px; color:#a8e6cf; margin-bottom:14px; }
+  .ge-related-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#3a3a5a; margin-bottom:5px; }
+  .ge-related-items { display:flex; flex-direction:column; gap:3px; }
+  .ge-related-item { background:#0f0f18; border-radius:6px; padding:6px 9px; font-size:11px; color:#c0c0e0; cursor:pointer; display:flex; align-items:center; gap:7px; transition:background 0.15s; border:1px solid transparent; }
+  .ge-related-item:hover { background:#1a1a2e; border-color:#2a2a3e; color:#fff; }
+  .ge-related-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .ge-conn-item .emoji { font-size:14px; width:20px; text-align:center; }
+  .ge-meta-item.full-width { grid-column:1/-1; }
+
   .ge-stats { position:absolute; bottom:12px; right:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:8px; padding:7px 12px; font-size:10px; color:#4a4a6a; display:flex; gap:14px; z-index:10; }
   .ge-stats .s { color:#8080c0; font-weight:600; }
   .ge-loading { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; color:#4a4a6a; font-size:12px; z-index:5; }
@@ -86,6 +114,14 @@
     <button class="ge-zoom-btn" id="ge-zoom-out">&#8722;</button>
     <button class="ge-zoom-btn" id="ge-zoom-reset">&#8635;</button>
   </div>
+  <div class="ge-tooltip" id="ge-tooltip">
+    <div class="tt-type" id="ge-tt-type"></div>
+    <div class="tt-label" id="ge-tt-label"></div>
+    <div class="tt-meta" id="ge-tt-meta"></div>
+  </div>
+  <div class="ge-minimap" id="ge-minimap">
+    <span class="ge-minimap-label">Overview</span>
+  </div>
   <div class="ge-detail" id="ge-detail">
     <div class="ge-detail-header">
       <div>
@@ -113,6 +149,10 @@
   var TYPE_LABELS = { recipe:'Recipes', ingredient:'Ingredients', flavor:'Flavors', texture:'Textures', aroma:'Aromas', region:'Regions', nutrition:'Nutrition', category:'Categories' };
   var TYPE_ORDER = ['recipe','region','ingredient','flavor','texture','aroma','nutrition','category'];
 
+  var NODE_EMOJI = { recipe:'\uD83C\uDF72', ingredient:'\uD83E\uDD57', flavor:'\uD83C\uDF36', texture:'\uD83E\uDE79', aroma:'\uD83C\uDF43', region:'\uD83C\uDF0D', nutrition:'\uD83E\uDD57', category:'\uD83C\uDF74' };
+  var TYPE_SINGULAR = { recipe:'Recipe', ingredient:'Ingredient', flavor:'Flavor', texture:'Texture', aroma:'Aroma', region:'Region', nutrition:'Nutrition', category:'Category' };
+  var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition' };
+
   var wrapper = document.getElementById('ge-wrapper');
   var canvas = document.getElementById('ge-canvas');
   var loading = document.getElementById('ge-loading');
@@ -124,9 +164,14 @@
   var searchResults = document.getElementById('ge-search-results');
   var filtersEl = document.getElementById('ge-filters');
   var legendEl = document.getElementById('ge-legend');
-  var nodeCount = document.getElementById('ge-node-count');
+  var nodeCountEl = document.getElementById('ge-node-count');
   var edgeCountEl = document.getElementById('ge-edge-count');
   var recipeCountEl = document.getElementById('ge-recipe-count');
+  var tooltip = document.getElementById('ge-tooltip');
+  var minimapEl = document.getElementById('ge-minimap');
+  var ttType = document.getElementById('ge-tt-type');
+  var ttLabel = document.getElementById('ge-tt-label');
+  var ttMeta = document.getElementById('ge-tt-meta');
 
   var W, H;
   var graphData = null;
@@ -162,7 +207,7 @@
     filteredNodes.forEach(function(n) { n.connections = connCount[n.id] || 0; });
 
     var recipeNodes = data.nodes.filter(function(n) { return n.type === 'recipe'; });
-    nodeCount.textContent = data.nodes.length;
+    nodeCountEl.textContent = data.nodes.length;
     edgeCountEl.textContent = data.edges.length;
     recipeCountEl.textContent = recipeNodes.length;
 
@@ -322,6 +367,26 @@
       .attr('stroke', '#000').attr('stroke-width', 0.5)
       .style('cursor', 'pointer')
       .on('click', function(e, d) { e.stopPropagation(); showDetail(d); })
+      .on('mouseover', function(e, d) {
+        var typeColor = COLORS[d.type] || '#888';
+        ttType.textContent = TYPE_SINGULAR[d.type] || d.type;
+        ttType.style.color = typeColor;
+        ttLabel.textContent = d.label || d.id;
+        var meta = [];
+        if (d.region) meta.push(d.region);
+        if (d.connections !== undefined) meta.push(d.connections + ' connections');
+        ttMeta.textContent = meta.join(' · ');
+        tooltip.style.display = 'block';
+        tooltip.style.left = (e.offsetX + 14) + 'px';
+        tooltip.style.top = (e.offsetY - 10) + 'px';
+      })
+      .on('mousemove', function(e) {
+        tooltip.style.left = (e.offsetX + 14) + 'px';
+        tooltip.style.top = (e.offsetY - 10) + 'px';
+      })
+      .on('mouseout', function() {
+        tooltip.style.display = 'none';
+      })
       .merge(nodes)
       .attr('r', function(d) { return d.size || 8; })
       .attr('fill', function(d) { return COLORS[d.type] || '#888'; });

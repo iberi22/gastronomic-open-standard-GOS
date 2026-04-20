@@ -1,66 +1,122 @@
-const CACHE_NAME = 'gos-v2';
-const BASE_PATH = '/gastronomic-open-standard-GOS';
-const urlsToCache = [
-  `${BASE_PATH}/`,
-  `${BASE_PATH}/index.html`,
-  `${BASE_PATH}/manifest.json`,
-  `${BASE_PATH}/favicon.svg`,
-  `${BASE_PATH}/icon-192x192.png`,
-  `${BASE_PATH}/icon-512x512.png`
+// GOS PWA Service Worker - Manual implementation
+// No external dependencies = No security vulnerabilities
+
+const CACHE_NAME = 'gos-pwa-v1';
+const BASE_URL = '/gastronomic-open-standard-GOS';
+
+const STATIC_ASSETS = [
+  BASE_URL + '/',
+  BASE_URL + '/index.html',
+  BASE_URL + '/manifest.json',
 ];
 
-self.addEventListener('install', event => {
+// Install - cache static assets
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(STATIC_ASSETS);
+    })
   );
   self.skipWaiting();
 });
 
-self.addEventListener('fetch', event => {
-  // Network First for HTML navigation to ensure we get latest updates
-  if (event.request.mode === 'navigate') {
-    event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          return caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, response.clone());
-            return response;
-          });
-        })
-        .catch(() => {
-          return caches.match(event.request);
-        })
-    );
-    return;
-  }
-
-  // Cache First for assets
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-  );
-});
-
-self.addEventListener('activate', event => {
-  const cacheWhitelist = [CACHE_NAME];
+// Activate - clean old caches
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
+        cacheNames
+          .filter((name) => name !== CACHE_NAME)
+          .map((name) => caches.delete(name))
       );
     })
   );
+  self.clients.claim();
+});
+
+// Fetch - strategies based on resource type
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  // Skip non-GET
+  if (request.method !== 'GET') return;
+
+  // Skip non-http
+  if (!url.protocol.startsWith('http')) return;
+
+  // API/GitHub - Network First
+  if (url.pathname.startsWith('/api/') || 
+      url.hostname.includes('github.com') ||
+      url.hostname.includes('raw.githubusercontent.com')) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Static assets (JS/CSS/Images/Fonts) - Cache First
+  if (request.destination === 'style' ||
+      request.destination === 'script' ||
+      request.destination === 'image' ||
+      request.destination === 'font') {
+    event.respondWith(cacheFirst(request));
+    return;
+  }
+
+  // HTML pages - Stale While Revalidate
+  event.respondWith(staleWhileRevalidate(request));
+});
+
+async function cacheFirst(request) {
+  const cached = await caches.match(request);
+  if (cached) return cached;
+
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      const cache = await caches.open(CACHE_NAME);
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch (e) {
+    return new Response('Offline', { status: 503 });
+  }
+}
+
+async function networkFirst(request) {
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      const cache = await caches.open(CACHE_NAME);
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch (e) {
+    const cached = await caches.match(request);
+    if (cached) return cached;
+    return new Response('Offline', { status: 503 });
+  }
+}
+
+async function staleWhileRevalidate(request) {
+  const cached = await caches.match(request);
+  
+  const fetchPromise = fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(request, response.clone());
+        });
+      }
+      return response;
+    })
+    .catch(() => cached || new Response('Offline', { status: 503 }));
+
+  return cached || fetchPromise;
+}
+
+// Message handler
+self.addEventListener('message', (event) => {
+  if (event.data === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });

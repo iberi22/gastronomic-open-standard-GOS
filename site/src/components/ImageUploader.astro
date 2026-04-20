@@ -1,0 +1,537 @@
+---
+/**
+ * ImageUploader.astro
+ * Dropzone component for image upload with GOS PWA styling
+ * Uses GOSImageProcessor for compression and variant generation
+ */
+---
+
+<div class="image-uploader" id="image-uploader">
+  <div class="dropzone" id="dropzone">
+    <div class="dropzone-content">
+      <div class="dropzone-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="17 8 12 3 7 8"/>
+          <line x1="12" y1="3" x2="12" y2="15"/>
+        </svg>
+      </div>
+      <p class="dropzone-title">Arrastra una imagen aquí</p>
+      <p class="dropzone-subtitle">o haz clic para seleccionar</p>
+      <p class="dropzone-formats">JPEG, PNG, WebP • Máx 100MB</p>
+    </div>
+    <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp" hidden />
+  </div>
+
+  <div class="preview-section" id="preview-section" style="display: none;">
+    <div class="preview-header">
+      <h3>Vista Previa</h3>
+      <button class="btn-reset" id="btn-reset">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+        Nueva imagen
+      </button>
+    </div>
+
+    <div class="preview-grid" id="preview-grid">
+      <!-- Variants will be inserted here -->
+    </div>
+
+    <div class="manifest-section" id="manifest-section">
+      <h4>Datos del Manifiesto</h4>
+      <pre class="manifest-data" id="manifest-data"></pre>
+    </div>
+  </div>
+
+  <div class="progress-section" id="progress-section" style="display: none;">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <p class="progress-text" id="progress-text">Procesando imagen...</p>
+  </div>
+
+  <div class="error-section" id="error-section" style="display: none;">
+    <div class="error-message" id="error-message"></div>
+  </div>
+</div>
+
+<style>
+  .image-uploader {
+    --gos-bg-primary: #0f0f0f;
+    --gos-bg-secondary: #1a1a1a;
+    --gos-bg-tertiary: #252525;
+    --gos-accent: #22c55e;
+    --gos-accent-dim: rgba(34, 197, 94, 0.15);
+    --gos-text-primary: #ffffff;
+    --gos-text-secondary: #a1a1aa;
+    --gos-text-muted: #71717a;
+    --gos-border: #333333;
+    --gos-radius: 12px;
+    --gos-radius-sm: 8px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--gos-text-primary);
+    max-width: 600px;
+  }
+
+  .dropzone {
+    border: 2px dashed var(--gos-border);
+    border-radius: var(--gos-radius);
+    padding: 48px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--gos-bg-secondary);
+  }
+
+  .dropzone:hover {
+    border-color: var(--gos-accent);
+    background: var(--gos-accent-dim);
+  }
+
+  .dropzone.drag-over {
+    border-color: var(--gos-accent);
+    background: var(--gos-accent-dim);
+    transform: scale(1.02);
+  }
+
+  .dropzone-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dropzone-icon {
+    color: var(--gos-accent);
+    margin-bottom: 8px;
+  }
+
+  .dropzone-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--gos-text-primary);
+  }
+
+  .dropzone-subtitle {
+    font-size: 14px;
+    color: var(--gos-text-secondary);
+    margin: 0;
+  }
+
+  .dropzone-formats {
+    font-size: 12px;
+    color: var(--gos-text-muted);
+    margin: 8px 0 0 0;
+  }
+
+  .preview-section {
+    margin-top: 24px;
+  }
+
+  .preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .preview-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .btn-reset {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--gos-bg-tertiary);
+    border: 1px solid var(--gos-border);
+    border-radius: var(--gos-radius-sm);
+    color: var(--gos-text-secondary);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-reset:hover {
+    background: var(--gos-bg-secondary);
+    color: var(--gos-text-primary);
+    border-color: var(--gos-accent);
+  }
+
+  .preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .variant-card {
+    background: var(--gos-bg-secondary);
+    border: 1px solid var(--gos-border);
+    border-radius: var(--gos-radius-sm);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .variant-card:hover {
+    border-color: var(--gos-accent);
+    transform: translateY(-2px);
+  }
+
+  .variant-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+  }
+
+  .variant-info {
+    padding: 10px 12px;
+    border-top: 1px solid var(--gos-border);
+  }
+
+  .variant-name {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gos-accent);
+    margin: 0 0 4px 0;
+  }
+
+  .variant-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--gos-text-muted);
+    margin: 0;
+  }
+
+  .manifest-section {
+    margin-top: 20px;
+    padding: 16px;
+    background: var(--gos-bg-secondary);
+    border: 1px solid var(--gos-border);
+    border-radius: var(--gos-radius-sm);
+  }
+
+  .manifest-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gos-text-secondary);
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .manifest-data {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--gos-text-primary);
+    background: var(--gos-bg-primary);
+    padding: 12px;
+    border-radius: var(--gos-radius-sm);
+    overflow-x: auto;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .manifest-data::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .manifest-data::-webkit-scrollbar-track {
+    background: var(--gos-bg-primary);
+  }
+
+  .manifest-data::-webkit-scrollbar-thumb {
+    background: var(--gos-border);
+    border-radius: 3px;
+  }
+
+  .progress-section {
+    margin-top: 24px;
+  }
+
+  .progress-bar {
+    height: 4px;
+    background: var(--gos-bg-tertiary);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--gos-accent);
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 13px;
+    color: var(--gos-text-secondary);
+    text-align: center;
+    margin: 12px 0 0 0;
+  }
+
+  .error-section {
+    margin-top: 16px;
+    padding: 16px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: var(--gos-radius-sm);
+  }
+
+  .error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  /* Blurhash placeholder */
+  .blurhash-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gos-bg-tertiary);
+    color: var(--gos-text-muted);
+    font-size: 11px;
+  }
+</style>
+
+<script>
+  import { GOSImageProcessor } from '../lib/image-processor';
+
+  interface ImageManifest {
+    id: string;
+    blurhash: string;
+    dominantColor: string;
+    variants: {
+      thumbnail?: { width: number; height: number; size: number; format: string; dataUrl?: string };
+      small?: { width: number; height: number; size: number; format: string; dataUrl?: string };
+      medium?: { width: number; height: number; size: number; format: string; dataUrl?: string };
+      large?: { width: number; height: number; size: number; format: string; dataUrl?: string };
+      full?: { width: number; height: number; size: number; format: string; dataUrl?: string };
+    };
+    originalWidth: number;
+    originalHeight: number;
+    processedAt: number;
+  }
+
+  class ImageUploaderController {
+    private processor: GOSImageProcessor;
+    private dropzone: HTMLElement;
+    private fileInput: HTMLInputElement;
+    private previewSection: HTMLElement;
+    private previewGrid: HTMLElement;
+    private manifestSection: HTMLElement;
+    private manifestData: HTMLElement;
+    private progressSection: HTMLElement;
+    private progressFill: HTMLElement;
+    private progressText: HTMLElement;
+    private errorSection: HTMLElement;
+    private errorMessage: HTMLElement;
+    private btnReset: HTMLElement;
+
+    constructor() {
+      this.processor = new GOSImageProcessor();
+      this.dropzone = document.getElementById('dropzone')!;
+      this.fileInput = document.getElementById('file-input') as HTMLInputElement;
+      this.previewSection = document.getElementById('preview-section')!;
+      this.previewGrid = document.getElementById('preview-grid')!;
+      this.manifestSection = document.getElementById('manifest-section')!;
+      this.manifestData = document.getElementById('manifest-data')!;
+      this.progressSection = document.getElementById('progress-section')!;
+      this.progressFill = document.getElementById('progress-fill')!;
+      this.progressText = document.getElementById('progress-text')!;
+      this.errorSection = document.getElementById('error-section')!;
+      this.errorMessage = document.getElementById('error-message')!;
+      this.btnReset = document.getElementById('btn-reset')!;
+
+      this.init();
+    }
+
+    private init(): void {
+      // Click to select
+      this.dropzone.addEventListener('click', () => this.fileInput.click());
+
+      // File input change
+      this.fileInput.addEventListener('change', (e) => {
+        const file = (e.target as HTMLInputElement).files?.[0];
+        if (file) this.processFile(file);
+      });
+
+      // Drag and drop
+      this.dropzone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        this.dropzone.classList.add('drag-over');
+      });
+
+      this.dropzone.addEventListener('dragleave', () => {
+        this.dropzone.classList.remove('drag-over');
+      });
+
+      this.dropzone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        this.dropzone.classList.remove('drag-over');
+        const file = e.dataTransfer?.files[0];
+        if (file && file.type.startsWith('image/')) {
+          this.processFile(file);
+        }
+      });
+
+      // Reset button
+      this.btnReset.addEventListener('click', () => this.reset());
+    }
+
+    private async processFile(file: File): Promise<void> {
+      this.hideError();
+      this.showProgress('Procesando imagen...');
+      this.updateProgress(10);
+
+      try {
+        this.updateProgress(30);
+        const manifest = await this.processor.processImage(file, { cropRatio: 1 });
+        this.updateProgress(80);
+
+        this.renderPreview(manifest);
+        this.renderManifest(manifest);
+        this.hideProgress();
+        this.showPreview();
+        this.updateProgress(100);
+
+        // Dispatch event for parent component
+        const event = new CustomEvent('image-processed', {
+          detail: manifest,
+          bubbles: true,
+        });
+        this.dropzone.dispatchEvent(event);
+      } catch (error) {
+        this.hideProgress();
+        this.showError((error as Error).message);
+      }
+    }
+
+    private renderPreview(manifest: ImageManifest): void {
+      this.previewGrid.innerHTML = '';
+
+      const variantOrder = ['thumbnail', 'small', 'medium', 'large', 'full'] as const;
+
+      for (const variantName of variantOrder) {
+        const variant = manifest.variants[variantName];
+        if (!variant) continue;
+
+        const card = document.createElement('div');
+        card.className = 'variant-card';
+
+        const img = document.createElement('img');
+        img.className = 'variant-image';
+        img.src = variant.dataUrl || '';
+        img.alt = variantName;
+        img.loading = 'lazy';
+
+        // Background color while loading
+        img.style.backgroundColor = manifest.dominantColor;
+
+        const info = document.createElement('div');
+        info.className = 'variant-info';
+
+        const name = document.createElement('p');
+        name.className = 'variant-name';
+        name.textContent = variantName;
+
+        const meta = document.createElement('p');
+        meta.className = 'variant-meta';
+        meta.innerHTML = `${variant.width}×${variant.height} <span>•</span> ${this.formatSize(variant.size)}`;
+
+        info.appendChild(name);
+        info.appendChild(meta);
+        card.appendChild(img);
+        card.appendChild(info);
+        this.previewGrid.appendChild(card);
+      }
+    }
+
+    private renderManifest(manifest: ImageManifest): void {
+      const displayManifest = {
+        id: manifest.id,
+        blurhash: manifest.blurhash,
+        dominantColor: manifest.dominantColor,
+        variants: Object.fromEntries(
+          Object.entries(manifest.variants).map(([key, v]) => [
+            key,
+            {
+              width: v!.width,
+              height: v!.height,
+              size: v!.size,
+              format: v!.format,
+              hasDataUrl: !!v!.dataUrl,
+            },
+          ])
+        ),
+        originalWidth: manifest.originalWidth,
+        originalHeight: manifest.originalHeight,
+        processedAt: new Date(manifest.processedAt).toISOString(),
+      };
+
+      this.manifestData.textContent = JSON.stringify(displayManifest, null, 2);
+    }
+
+    private formatSize(bytes: number): string {
+      if (bytes < 1024) return `${bytes} B`;
+      if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+      return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+    }
+
+    private showPreview(): void {
+      this.previewSection.style.display = 'block';
+    }
+
+    private showProgress(text: string): void {
+      this.progressSection.style.display = 'block';
+      this.progressText.textContent = text;
+      this.progressFill.style.width = '0%';
+    }
+
+    private updateProgress(percent: number): void {
+      this.progressFill.style.width = `${percent}%`;
+    }
+
+    private hideProgress(): void {
+      this.progressSection.style.display = 'none';
+    }
+
+    private showError(message: string): void {
+      this.errorSection.style.display = 'block';
+      this.errorMessage.textContent = message;
+    }
+
+    private hideError(): void {
+      this.errorSection.style.display = 'none';
+    }
+
+    private reset(): void {
+      this.previewSection.style.display = 'none';
+      this.previewGrid.innerHTML = '';
+      this.fileInput.value = '';
+      this.hideError();
+      this.hideProgress();
+    }
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    new ImageUploaderController();
+  });
+</script>

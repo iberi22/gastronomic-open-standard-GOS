@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Perfil - GOS">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-display text-primary mb-2">Tu Perfil</h1>
+      <p class="text-gray-400">Tu identidad criptográfica en la red GOS</p>
+    </header>
+
+    <div id="profile-status" class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
+      <div class="flex items-center gap-4">
+        <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-2xl">👤</div>
+        <div>
+          <h2 id="profile-name" class="text-xl font-display">Sin identificar</h2>
+          <p id="profile-keys" class="text-gray-500 text-sm">Claves no generadas</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-8">
+      <h3 class="text-xl font-display mb-4">Generar Identidad</h3>
+      <p class="text-gray-400 mb-4">
+        Crea tu par de claves RSA-4096 para firmar tus reseñas de forma criptográfica.
+        Tu clave privada se cifra con tu contraseña antes de almacenarse.
+      </p>
+      <div class="space-y-4 max-w-md">
+        <div>
+          <label for="username" class="block text-sm text-gray-400 mb-1">Nombre de usuario</label>
+          <input type="text" id="username" placeholder="MiNombre" 
+            class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:border-primary focus:outline-none" />
+        </div>
+        <div>
+          <label for="password" class="block text-sm text-gray-400 mb-1">Contraseña (para cifrar claves)</label>
+          <input type="password" id="password" placeholder="********" 
+            class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:border-primary focus:outline-none" />
+        </div>
+        <button id="generate-keys" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors font-display">
+          Generar Claves
+        </button>
+      </div>
+    </section>
+
+    <section class="border-t border-white/10 pt-8">
+      <h3 class="text-xl font-display mb-4">Clave Pública</h3>
+      <div id="public-key-container" class="p-4 bg-white/5 rounded-xl border border-white/10">
+        <p class="text-gray-500 text-sm">Genera tus claves para ver tu clave pública</p>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { generateKeyPair, getPublicKey } from '../lib/crypto';
+
+  const generateBtn = document.getElementById('generate-keys');
+  const usernameInput = document.getElementById('username') as HTMLInputElement;
+  const passwordInput = document.getElementById('password') as HTMLInputElement;
+  const profileName = document.getElementById('profile-name');
+  const profileKeys = document.getElementById('profile-keys');
+  const publicKeyContainer = document.getElementById('public-key-container');
+
+  async function updateUI() {
+    const pubKey = await getPublicKey();
+    if (pubKey) {
+      if (profileName) profileName.textContent = localStorage.getItem('gos_username') || 'Usuario GOS';
+      if (profileKeys) profileKeys.textContent = 'Claves RSA-4096 activas';
+      if (publicKeyContainer) {
+        publicKeyContainer.innerHTML = `<pre class="text-xs text-gray-400 overflow-x-auto">${pubKey}</pre>`;
+      }
+      if (generateBtn) {
+        generateBtn.textContent = 'Regenerar Claves';
+      }
+    }
+  }
+
+  generateBtn?.addEventListener('click', async () => {
+    const username = usernameInput?.value;
+    const password = passwordInput?.value;
+
+    if (!username || !password) {
+      alert('Completa todos los campos');
+      return;
+    }
+
+    if (password.length < 8) {
+      alert('La contraseña debe tener al menos 8 caracteres');
+      return;
+    }
+
+    try {
+      generateBtn.textContent = 'Generando...';
+      generateBtn.setAttribute('disabled', 'true');
+
+      await generateKeyPair(password);
+
+      localStorage.setItem('gos_username', username);
+
+      await updateUI();
+
+      alert('¡Claves generadas correctamente!');
+    } catch (e) {
+      console.error('Error generating keys:', e);
+      alert('Error al generar claves: ' + (e as Error).message);
+    } finally {
+      if (generateBtn) {
+        generateBtn.textContent = 'Generar Claves';
+        generateBtn.removeAttribute('disabled');
+      }
+    }
+  });
+
+  updateUI();
+</script>
