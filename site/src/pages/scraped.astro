@@ -1,0 +1,321 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Scraped Data - GOS";
+---
+
+<Layout title={title}>
+  <div class="max-w-4xl mx-auto p-6">
+    <header class="mb-8">
+      <h1 class="text-4xl font-display text-primary mb-2">📥 Datos Extraídos</h1>
+      <p class="text-gray-400">Datos capturados desde la extensión de Chrome</p>
+    </header>
+
+    <!-- Sync Status -->
+    <section id="sync-status" class="mb-8 p-4 bg-white/5 rounded-xl border border-white/10">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-display text-white">Estado de Sincronización</h2>
+          <p id="sync-status-text" class="text-gray-400 text-sm">Esperando...</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-center">
+            <div id="sync-places-count" class="text-2xl font-bold text-primary">0</div>
+            <div class="text-xs text-gray-500">Lugares</div>
+          </div>
+          <div class="text-center">
+            <div id="sync-reviews-count" class="text-2xl font-bold text-secondary">0</div>
+            <div class="text-xs text-gray-500">Reviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 flex gap-3">
+        <button id="btn-sync" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition">
+          🔄 Sincronizar Ahora
+        </button>
+        <button id="btn-open-extension" class="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+          🌐 Abrir Extensión
+        </button>
+      </div>
+    </section>
+
+    <!-- Extension Check -->
+    <section id="extension-check" class="mb-8 p-4 bg-white/5 rounded-xl border border-white/10">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span id="extension-icon" class="text-2xl">❓</span>
+          <div>
+            <h3 id="extension-status" class="text-white">Verificando extensión...</h3>
+            <p class="text-gray-500 text-sm">Chrome Extension GOS Scraper</p>
+          </div>
+        </div>
+        <button id="btn-install-guide" class="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition text-sm">
+          Ver Guía de Instalación
+        </button>
+      </div>
+    </section>
+
+    <!-- Scraper Guide Modal -->
+    <dialog id="guide-modal" class="bg-[#1a1a2e] border border-white/10 rounded-xl p-6 max-w-lg w-full">
+      <h2 class="text-xl font-display text-white mb-4">📦 Instalar GOS Scraper</h2>
+      <div class="space-y-4 text-gray-300">
+        <div class="flex gap-3">
+          <span class="bg-primary/20 text-primary px-2 py-1 rounded text-sm font-bold">1</span>
+          <p>Abre Chrome y navega a <code class="bg-white/10 px-2 py-1 rounded">chrome://extensions/</code></p>
+        </div>
+        <div class="flex gap-3">
+          <span class="bg-primary/20 text-primary px-2 py-1 rounded text-sm font-bold">2</span>
+          <p>Activa "Modo desarrollador" (esquina superior derecha)</p>
+        </div>
+        <div class="flex gap-3">
+          <span class="bg-primary/20 text-primary px-2 py-1 rounded text-sm font-bold">3</span>
+          <p>Click en "Cargar extensión sin empaquetar"</p>
+        </div>
+        <div class="flex gap-3">
+          <span class="bg-primary/20 text-primary px-2 py-1 rounded text-sm font-bold">4</span>
+          <p>Selecciona la carpeta: <code class="bg-white/10 px-2 py-1 rounded">extensions/gos-scraper</code></p>
+        </div>
+      </div>
+      <div class="mt-6 flex justify-end">
+        <button id="btn-close-guide" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition">
+          Entendido
+        </button>
+      </div>
+    </dialog>
+
+    <!-- Places List -->
+    <section class="mb-8">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-display text-white">🏪 Lugares Extraídos</h2>
+        <span id="places-total" class="text-gray-500 text-sm">0 lugares</span>
+      </div>
+      <div id="places-list" class="grid gap-4 md:grid-cols-2">
+        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
+          <p>No hay lugares todavía</p>
+          <p class="text-sm mt-2">Usa la extensión para extraer lugares</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews List -->
+    <section class="mb-8">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-display text-white">⭐ Reviews Extraídas</h2>
+        <span id="reviews-total" class="text-gray-500 text-sm">0 reviews</span>
+      </div>
+      <div id="reviews-list" class="space-y-3">
+        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
+          <p>No hay reviews todavía</p>
+          <p class="text-sm mt-2">Usa la extensión para extraer reviews</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Import/Export -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-display text-white mb-4">💾 Importar / Exportar</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+          <h3 class="text-white mb-2">📤 Exportar Datos</h3>
+          <p class="text-gray-500 text-sm mb-4">Descarga todos los datos extraídos en JSON</p>
+          <button id="btn-export" class="w-full px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition">
+            Exportar JSON
+          </button>
+        </div>
+        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+          <h3 class="text-white mb-2">📥 Importar Datos</h3>
+          <p class="text-gray-500 text-sm mb-4">Importa datos desde un archivo JSON</p>
+          <label class="block w-full px-4 py-2 bg-white/10 text-white text-center rounded-lg hover:bg-white/20 transition cursor-pointer">
+            Seleccionar Archivo
+            <input type="file" id="import-file" accept=".json" class="hidden" />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clear Data -->
+    <section class="p-4 bg-red-900/20 rounded-xl border border-red-500/30">
+      <h2 class="text-xl font-display text-red-400 mb-2">⚠️ Zona de Peligro</h2>
+      <p class="text-gray-400 text-sm mb-4">Esta acción eliminará todos los datos extraídos. No se puede deshacer.</p>
+      <button id="btn-clear" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+        🗑️ Eliminar Todos los Datos
+      </button>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { userDB } from '../lib/user-db';
+  import { extensionSync } from '../lib/extension-sync';
+
+  // Elements
+  const syncStatus = document.getElementById('sync-status-text');
+  const syncPlacesCount = document.getElementById('sync-places-count');
+  const syncReviewsCount = document.getElementById('sync-reviews-count');
+  const placesList = document.getElementById('places-list');
+  const reviewsList = document.getElementById('reviews-list');
+  const placesTotal = document.getElementById('places-total');
+  const reviewsTotal = document.getElementById('reviews-total');
+  const extensionIcon = document.getElementById('extension-icon');
+  const extensionStatus = document.getElementById('extension-status');
+  const guideModal = document.getElementById('guide-modal');
+
+  // Check if extension is installed
+  async function checkExtension() {
+    try {
+      const installed = await extensionSync.isExtensionInstalled();
+      if (installed) {
+        extensionIcon.textContent = '✅';
+        extensionStatus.textContent = 'Extensión Instalada';
+        extensionStatus.className = 'text-green-400';
+      } else {
+        extensionIcon.textContent = '❌';
+        extensionStatus.textContent = 'Extensión No Detectada';
+        extensionStatus.className = 'text-red-400';
+      }
+    } catch {
+      extensionIcon.textContent = '❓';
+      extensionStatus.textContent = 'Verificación Fallida';
+    }
+  }
+
+  // Load scraped data
+  async function loadScrapedData() {
+    const places = await userDB.getScrapedPlaces();
+    const reviews = await userDB.getScrapedReviews();
+
+    // Update counts
+    syncPlacesCount.textContent = places.length.toString();
+    syncReviewsCount.textContent = reviews.length.toString();
+    placesTotal.textContent = `${places.length} lugares`;
+    reviewsTotal.textContent = `${reviews.length} reviews`;
+
+    // Render places
+    if (places.length === 0) {
+      placesList.innerHTML = `
+        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500 col-span-2">
+          <p>No hay lugares todavía</p>
+          <p class="text-sm mt-2">Usa la extensión para extraer lugares</p>
+        </div>
+      `;
+    } else {
+      placesList.innerHTML = places.map(place => `
+        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-white font-medium">${place.name}</h3>
+            <span class="text-sm text-primary">${place.source}</span>
+          </div>
+          <div class="text-gray-400 text-sm space-y-1">
+            ${place.averageRating ? `<p>⭐ ${place.averageRating} (${place.reviewCount} reviews)</p>` : ''}
+            ${place.location?.address ? `<p>📍 ${place.location.address}</p>` : ''}
+            ${place.categories?.length ? `<p>🏷️ ${place.categories.join(', ')}</p>` : ''}
+          </div>
+          ${place.sourceUrl ? `<a href="${place.sourceUrl}" target="_blank" class="text-primary text-sm hover:underline">Ver original →</a>` : ''}
+        </div>
+      `).join('');
+    }
+
+    // Render reviews
+    if (reviews.length === 0) {
+      reviewsList.innerHTML = `
+        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
+          <p>No hay reviews todavía</p>
+          <p class="text-sm mt-2">Usa la extensión para extraer reviews</p>
+        </div>
+      `;
+    } else {
+      reviewsList.innerHTML = reviews.map(review => `
+        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <span class="text-primary">${'⭐'.repeat(review.rating || 0)}</span>
+              <span class="text-gray-500 text-sm ml-2">${review.source}</span>
+            </div>
+            <span class="text-gray-500 text-xs">${review.publishDate || ''}</span>
+          </div>
+          ${review.comment ? `<p class="text-gray-300 text-sm mb-2">"${review.comment.substring(0, 200)}${review.comment.length > 200 ? '...' : ''}"</p>` : ''}
+          <p class="text-gray-500 text-xs">Por: ${review.userName || 'Anonymous'}</p>
+        </div>
+      `).join('');
+    }
+
+    syncStatus.textContent = `Última sync: ${new Date().toLocaleTimeString()}`;
+  }
+
+  // Event Listeners
+  document.getElementById('btn-sync')?.addEventListener('click', async () => {
+    const btn = document.getElementById('btn-sync');
+    if (btn) {
+      btn.textContent = 'Sincronizando...';
+      btn.setAttribute('disabled', 'true');
+    }
+    
+    await extensionSync.forceSync();
+    await loadScrapedData();
+    
+    if (btn) {
+      btn.textContent = '🔄 Sincronizar Ahora';
+      btn.removeAttribute('disabled');
+    }
+  });
+
+  document.getElementById('btn-open-extension')?.addEventListener('click', () => {
+    extensionSync.openExtension();
+  });
+
+  document.getElementById('btn-install-guide')?.addEventListener('click', () => {
+    guideModal?.showModal();
+  });
+
+  document.getElementById('btn-close-guide')?.addEventListener('click', () => {
+    guideModal?.close();
+  });
+
+  // Export
+  document.getElementById('btn-export')?.addEventListener('click', async () => {
+    const data = await userDB.exportAll();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `gos-data-${Date.now()}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // Import
+  document.getElementById('import-file')?.addEventListener('change', async (e) => {
+    const file = (e.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      await userDB.importAll(data);
+      await loadScrapedData();
+      alert('Datos importados correctamente');
+    } catch (err) {
+      alert('Error al importar: ' + (err as Error).message);
+    }
+  });
+
+  // Clear
+  document.getElementById('btn-clear')?.addEventListener('click', async () => {
+    if (!confirm('¿Estás seguro de eliminar TODOS los datos?')) return;
+    if (!confirm('Esta acción NO se puede deshacer. ¿Continuar?')) return;
+
+    await extensionSync.clearAll();
+    await loadScrapedData();
+    alert('Datos eliminados');
+  });
+
+  // Initialize
+  checkExtension();
+  await loadScrapedData();
+  await extensionSync.start();
+
+  // Listen for new data
+  extensionSync.listenToMessages(() => {
+    loadScrapedData();
+  });
+</script>

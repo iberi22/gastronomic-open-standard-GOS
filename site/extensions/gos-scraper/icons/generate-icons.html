@@ -1,0 +1,65 @@
+<!-- 
+  GOS Scraper Extension Icons
+  Generated from SVG - Open in browser to see
+  Then use browser devtools or canvas to export as PNG
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background: #0a0a0f; padding: 20px; }
+    .icon { display: inline-block; margin: 10px; }
+    h2 { color: #e94560; }
+    pre { color: #888; }
+  </style>
+</head>
+<body>
+  <h1>GOS Scraper Icons</h1>
+  <p>Right-click and save images, or use canvas to export:</p>
+  
+  <div class="icon">
+    <h2>16x16</h2>
+    <canvas id="c16" width="16" height="16"></canvas>
+    <pre>16x16.png</pre>
+  </div>
+  
+  <div class="icon">
+    <h2>48x48</h2>
+    <canvas id="c48" width="48" height="48"></canvas>
+    <pre>48x48.png</pre>
+  </div>
+  
+  <div class="icon">
+    <h2>128x128</h2>
+    <canvas id="c128" width="128" height="128"></canvas>
+    <pre>128x128.png</pre>
+  </div>
+  
+  <script>
+    function drawIcon(canvasId, size) {
+      const canvas = document.getElementById(canvasId);
+      const ctx = canvas.getContext('2d');
+      const s = canvas.width;
+      
+      // Background circle
+      ctx.fillStyle = '#e94560';
+      ctx.beginPath();
+      ctx.arc(s/2, s/2, s/2 - 2, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Fork/spoon shape
+      ctx.fillStyle = '#fff';
+      ctx.font = `bold ${s * 0.5}px sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('🍽', s/2, s/2);
+      
+      console.log(`Icon ${size}x${size} drawn. Save from:`, canvas.toDataURL());
+    }
+    
+    drawIcon('c16', 16);
+    drawIcon('c48', 48);
+    drawIcon('c128', 128);
+  </script>
+</body>
+</html>

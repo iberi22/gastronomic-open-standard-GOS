@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SyncStatus from '../components/SyncStatus.astro';
+import CountrySelector from '../components/CountrySelector.astro';
 ---
 
 <Layout title="Ajustes - GOS">
@@ -10,53 +11,139 @@ import SyncStatus from '../components/SyncStatus.astro';
       <p class="text-gray-400">Configuración y sincronización</p>
     </header>
 
+    <!-- Sync Status Section -->
     <section class="mb-8">
-      <h2 class="text-xl font-display mb-4">Estado de Sincronización</h2>
+      <h2 class="text-xl font-display mb-4">📡 Estado de Sincronización</h2>
       <SyncStatus />
     </section>
 
+    <!-- Country Selector -->
+    <section class="mb-8">
+      <CountrySelector />
+    </section>
+
+    <!-- GitHub Sync Section -->
     <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
-      <h2 class="text-xl font-display mb-4">GitHub Sync</h2>
+      <h2 class="text-xl font-display mb-4">🔗 GitHub Sync</h2>
       <p class="text-gray-400 mb-4">
-        Sincroniza tus datos con el repositorio gos-p2p-data en GitHub.
+        Sincroniza tus datos con el repositorio <code class="text-primary">iberi22/gos-p2p-data</code> en GitHub.
         Tu token se almacena de forma segura usando Web Crypto API.
       </p>
+
+      <!-- Loading/Error states -->
+      <div id="sync-message" class="mb-4 text-sm"></div>
+
       <div class="space-y-4 max-w-md">
         <div>
           <label for="github-token" class="block text-sm text-gray-400 mb-1">Token de GitHub (PAT)</label>
-          <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx" 
+          <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx"
             class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:border-primary focus:outline-none" />
         </div>
-        <div class="flex gap-2">
+        <div class="flex flex-wrap gap-2">
           <button id="save-token" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors">
-            Guardar Token
+            💾 Guardar Token
           </button>
           <button id="sync-now" class="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition-colors">
-            Sincronizar Ahora
+            🔄 Sincronizar Ahora
+          </button>
+          <button id="push-data" class="px-4 py-2 bg-green-600/80 text-white rounded-lg hover:bg-green-600 transition-colors">
+            ⬆️ Push
+          </button>
+          <button id="pull-data" class="px-4 py-2 bg-blue-600/80 text-white rounded-lg hover:bg-blue-600 transition-colors">
+            ⬇️ Pull
+          </button>
+        </div>
+      </div>
+
+      <!-- Sync Stats -->
+      <div id="sync-stats" class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="p-3 bg-white/5 rounded-lg">
+          <div id="stat-synced" class="text-2xl font-display text-primary">-</div>
+          <div class="text-xs text-gray-600">Sincronizadas</div>
+        </div>
+        <div class="p-3 bg-white/5 rounded-lg">
+          <div id="stat-local" class="text-2xl font-display text-green-400">-</div>
+          <div class="text-xs text-gray-600">Locales</div>
+        </div>
+        <div class="p-3 bg-white/5 rounded-lg">
+          <div id="stat-remote" class="text-2xl font-display text-blue-400">-</div>
+          <div class="text-xs text-gray-600">Remotas</div>
+        </div>
+        <div class="p-3 bg-white/5 rounded-lg">
+          <div id="stat-last-sync" class="text-2xl font-display text-gray-400">-</div>
+          <div class="text-xs text-gray-600">Última sync</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Management Section -->
+    <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
+      <h2 class="text-xl font-display mb-4">💾 Datos Locales</h2>
+
+      <!-- Data Info -->
+      <div id="data-info" class="space-y-2 text-gray-400 mb-4">
+        <div class="flex items-center justify-between p-2 bg-white/5 rounded-lg">
+          <span>🌍 País</span>
+          <span id="data-country" class="text-white">No seleccionado</span>
+        </div>
+        <div class="flex items-center justify-between p-2 bg-white/5 rounded-lg">
+          <span>⭐ Reseñas locales</span>
+          <span id="data-reviews" class="text-white">0</span>
+        </div>
+        <div class="flex items-center justify-between p-2 bg-white/5 rounded-lg">
+          <span>🔑 Claves generadas</span>
+          <span id="data-keys" class="text-white">No</span>
+        </div>
+        <div class="flex items-center justify-between p-2 bg-white/5 rounded-lg">
+          <span>📅 Última sincronización</span>
+          <span id="data-last-sync" class="text-white">Nunca</span>
+        </div>
+      </div>
+
+      <!-- Data Actions -->
+      <div class="flex flex-wrap gap-2">
+        <button id="export-data" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-colors">
+          📤 Exportar Datos (JSON)
+        </button>
+        <button id="export-reviews" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-colors">
+          📋 Exportar Reviews (CSV)
+        </button>
+        <button id="clear-data" class="px-4 py-2 bg-red-500/20 border border-red-500/30 text-red-400 rounded-lg hover:bg-red-500/30 transition-colors">
+          🗑️ Limpiar Todo
+        </button>
+      </div>
+    </section>
+
+    <!-- Danger Zone -->
+    <section class="p-6 bg-red-500/10 rounded-xl border border-red-500/20 mb-8">
+      <h2 class="text-xl font-display mb-4 text-red-400">⚠️ Zona de Peligro</h2>
+      <div class="space-y-4 max-w-md">
+        <div class="p-4 bg-black/20 rounded-lg">
+          <h3 class="text-sm font-display mb-2">Eliminar identidad</h3>
+          <p class="text-xs text-gray-500 mb-2">
+            Borra tu par de claves RSA y toda la información de tu perfil.
+            Esto no se puede deshacer.
+          </p>
+          <button id="reset-identity" class="px-3 py-1.5 text-sm bg-red-600/50 border border-red-500/30 text-red-300 rounded-lg hover:bg-red-600 transition-colors">
+            Eliminar identidad
+          </button>
+        </div>
+        <div class="p-4 bg-black/20 rounded-lg">
+          <h3 class="text-sm font-display mb-2">Reiniciar base de datos</h3>
+          <p class="text-xs text-gray-500 mb-2">
+            Borra toda la base de datos GunDB e IndexedDB local.
+            Perderás todas las reseñas no sincronizadas.
+          </p>
+          <button id="reset-database" class="px-3 py-1.5 text-sm bg-red-600/50 border border-red-500/30 text-red-300 rounded-lg hover:bg-red-600 transition-colors">
+            Reiniciar base de datos
           </button>
         </div>
       </div>
     </section>
 
-    <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
-      <h2 class="text-xl font-display mb-4">Datos Locales</h2>
-      <div class="space-y-2 text-gray-400">
-        <p>País: <span id="data-country" class="text-white">No seleccionado</span></p>
-        <p>Reseñas locales: <span id="data-reviews" class="text-white">0</span></p>
-        <p>Última sincronización: <span id="data-last-sync" class="text-white">Nunca</span></p>
-      </div>
-      <div class="mt-4 flex gap-2">
-        <button id="export-data" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-colors">
-          Exportar Datos
-        </button>
-        <button id="clear-data" class="px-4 py-2 bg-red-500/20 border border-red-500/30 text-red-400 rounded-lg hover:bg-red-500/30 transition-colors">
-          Limpiar Todo
-        </button>
-      </div>
-    </section>
-
+    <!-- About Section -->
     <section class="p-6 bg-white/5 rounded-xl border border-white/10">
-      <h2 class="text-xl font-display mb-2">Sobre GOS PWA</h2>
+      <h2 class="text-xl font-display mb-2">ℹ️ Sobre GOS PWA</h2>
       <p class="text-gray-400 text-sm">
         Versión 0.1.0 | Progressive Web App para el Gastronomic Open Standard.<br />
         Datos sincronizados con GunDB + GitHub. Cifrado RSA-4096.
@@ -66,71 +153,276 @@ import SyncStatus from '../components/SyncStatus.astro';
 </Layout>
 
 <script>
-  import { saveToken, syncNow, pullData } from '../lib/github-sync';
+  import { saveToken, syncNow, pullData, pushChanges, validateToken } from '../lib/github-sync';
+  import { hasKeys, deleteKeys } from '../lib/crypto';
+  import { getReviewCount, getReviews } from '../lib/gundb';
+
+  const messageEl = document.getElementById('sync-message');
+
+  function showMessage(text: string, type: 'info' | 'success' | 'error' | 'loading' = 'info') {
+    if (!messageEl) return;
+    const colors = {
+      info: 'text-gray-400',
+      success: 'text-green-400',
+      error: 'text-red-400',
+      loading: 'text-yellow-400'
+    };
+    messageEl.className = `mb-4 text-sm ${colors[type]}`;
+    messageEl.textContent = text;
+  }
+
+  function formatDate(timestamp: number | null): string {
+    if (!timestamp) return 'Nunca';
+    return new Date(timestamp).toLocaleString('es-CO', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  }
 
   // Load current data
-  const country = localStorage.getItem('gos_country');
+  const country = localStorage.getItem('gos_country') || 'No seleccionado';
   const lastSync = localStorage.getItem('gos_last_sync');
+  const lastSyncTime = lastSync ? parseInt(lastSync) : null;
 
   const countryEl = document.getElementById('data-country');
   const lastSyncEl = document.getElementById('data-last-sync');
 
-  if (countryEl) countryEl.textContent = country || 'No seleccionado';
-  if (lastSyncEl) lastSyncEl.textContent = lastSync 
-    ? new Date(parseInt(lastSync)).toLocaleString('es-CO') 
-    : 'Nunca';
+  if (countryEl) countryEl.textContent = country;
+  if (lastSyncEl) lastSyncEl.textContent = formatDate(lastSyncTime);
 
+  // Update review count
+  getReviewCount().then(count => {
+    const reviewsEl = document.getElementById('data-reviews');
+    if (reviewsEl) reviewsEl.textContent = count.toString();
+  });
+
+  // Update key status
+  hasKeys().then(hasKey => {
+    const keysEl = document.getElementById('data-keys');
+    if (keysEl) keysEl.textContent = hasKey ? 'Sí' : 'No';
+  });
+
+  // Update sync stats
+  async function updateSyncStats() {
+    try {
+      const localReviews = JSON.parse(localStorage.getItem('gos_reviews') || '[]');
+      const syncedCount = lastSync ? localReviews.length : 0;
+
+      const syncedEl = document.getElementById('stat-synced');
+      const localEl = document.getElementById('stat-local');
+      const remoteEl = document.getElementById('stat-remote');
+      const lastSyncStatEl = document.getElementById('stat-last-sync');
+
+      if (syncedEl) syncedEl.textContent = syncedCount;
+      if (localEl) localEl.textContent = localReviews.length;
+      if (lastSyncStatEl) lastSyncEl.textContent = formatDate(lastSyncTime);
+
+      // Try to get remote count
+      try {
+        const remote = await pullData();
+        if (remoteEl) remoteEl.textContent = remote.length;
+      } catch {
+        if (remoteEl) remoteEl.textContent = '?';
+      }
+    } catch (e) {
+      console.error('Error updating sync stats:', e);
+    }
+  }
+
+  updateSyncStats();
+
+  // Token validation check
+  validateToken().then(valid => {
+    if (!valid) {
+      showMessage('⚠️ Token de GitHub no configurado o inválido', 'error');
+    }
+  }).catch(() => {});
+
+  // Save token handler
   document.getElementById('save-token')?.addEventListener('click', async () => {
     const tokenInput = document.getElementById('github-token') as HTMLInputElement;
     const token = tokenInput?.value;
 
     if (!token) {
-      alert('Ingresa un token de GitHub');
+      showMessage('Ingresa un token de GitHub', 'error');
       return;
     }
 
     try {
+      showMessage('⏳ Validando token...', 'loading');
       await saveToken(token);
-      alert('Token guardado correctamente');
+      const valid = await validateToken();
+      if (valid) {
+        showMessage('✓ Token guardado y validado', 'success');
+      } else {
+        showMessage('✗ Token inválido', 'error');
+      }
     } catch (e) {
-      alert('Error al guardar token: ' + (e as Error).message);
+      showMessage('Error: ' + (e as Error).message, 'error');
     }
   });
 
+  // Sync now handler
   document.getElementById('sync-now')?.addEventListener('click', async () => {
     try {
-      await syncNow();
+      showMessage('⏳ Sincronizando...', 'loading');
+      const result = await syncNow();
       localStorage.setItem('gos_last_sync', Date.now().toString());
-      alert('Sincronización completada');
-      location.reload();
+      showMessage(`✓ Sincronizadas ${result.synced} reseñas`, 'success');
+      await updateSyncStats();
     } catch (e) {
-      alert('Error en sincronización: ' + (e as Error).message);
+      showMessage('Error: ' + (e as Error).message, 'error');
     }
   });
 
+  // Push handler
+  document.getElementById('push-data')?.addEventListener('click', async () => {
+    try {
+      showMessage('⏳ Subiendo datos a GitHub...', 'loading');
+      const localReviews = JSON.parse(localStorage.getItem('gos_reviews') || '[]');
+      const result = await pushChanges({
+        reviews: localReviews,
+        timestamp: Date.now()
+      });
+      if (result.success) {
+        localStorage.setItem('gos_last_sync', Date.now().toString());
+        showMessage('✓ Datos subidos correctamente', 'success');
+        await updateSyncStats();
+      } else {
+        showMessage('✗ ' + result.message, 'error');
+      }
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
+    }
+  });
+
+  // Pull handler
+  document.getElementById('pull-data')?.addEventListener('click', async () => {
+    try {
+      showMessage('⏳ Descargando datos desde GitHub...', 'loading');
+      const remoteReviews = await pullData();
+      showMessage(`✓ Descargadas ${remoteReviews.length} reseñas`, 'success');
+      await updateSyncStats();
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
+    }
+  });
+
+  // Export data (JSON)
   document.getElementById('export-data')?.addEventListener('click', () => {
     const data = {
       country: localStorage.getItem('gos_country'),
+      countryName: localStorage.getItem('gos_country_name'),
       username: localStorage.getItem('gos_username'),
-      reviews: localStorage.getItem('gos_reviews'),
       publicKey: localStorage.getItem('gos_public_key'),
-      exportDate: new Date().toISOString()
+      hasKeys: localStorage.getItem('gos_has_keys'),
+      reviews: localStorage.getItem('gos_reviews'),
+      lastSync: localStorage.getItem('gos_last_sync'),
+      githubToken: localStorage.getItem('gos_github_token') ? '[OCULTO]' : null,
+      exportDate: new Date().toISOString(),
+      version: '0.1.0'
     };
 
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'gos-data-export.json';
+    a.download = `gos-data-export-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
+    showMessage('✓ Datos exportados', 'success');
   });
 
-  document.getElementById('clear-data')?.addEventListener('click', () => {
-    if (confirm('¿Estás seguro de eliminar todos los datos locales?')) {
+  // Export reviews (CSV)
+  document.getElementById('export-reviews')?.addEventListener('click', async () => {
+    try {
+      const reviews = await getReviews();
+      if (reviews.length === 0) {
+        showMessage('No hay reseñas para exportar', 'info');
+        return;
+      }
+
+      const headers = ['id', 'placeName', 'location', 'rating', 'comment', 'country', 'timestamp'];
+      const csvRows = [
+        headers.join(','),
+        ...reviews.map(r => headers.map(h => {
+          const val = r[h as keyof typeof r];
+          if (typeof val === 'string' && (val.includes(',') || val.includes('"'))) {
+            return `"${val.replace(/"/g, '""')}"`;
+          }
+          return val ?? '';
+        }).join(','))
+      ];
+
+      const blob = new Blob([csvRows.join('\n')], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `gos-reviews-${new Date().toISOString().slice(0, 10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showMessage(`✓ Exportadas ${reviews.length} reseñas`, 'success');
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
+    }
+  });
+
+  // Clear all data
+  document.getElementById('clear-data')?.addEventListener('click', async () => {
+    if (!confirm('¿Estás seguro de eliminar TODOS los datos locales?\n\nEsto incluirá reseñas, país seleccionado y configuración.\n\nLos datos en GitHub no se perderán si ya están sincronizados.')) {
+      return;
+    }
+
+    try {
       localStorage.clear();
+      // Clear GunDB IndexedDB
       indexedDB.deleteDatabase('gos_pwa');
-      alert('Datos eliminados. Recarga la página.');
+      showMessage('✓ Datos eliminados. Recarga la página.', 'success');
+      setTimeout(() => location.reload(), 1500);
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
+    }
+  });
+
+  // Reset identity (delete keys)
+  document.getElementById('reset-identity')?.addEventListener('click', async () => {
+    if (!confirm('¿Eliminar tu identidad criptográfica?\n\nSe borrarán las claves RSA-4096 y tu perfil.\n\nLas reseñas que firmaste seguirán existiendo pero no podrás verificar su autenticidad.')) {
+      return;
+    }
+
+    try {
+      await deleteKeys();
+      localStorage.removeItem('gos_username');
+      localStorage.removeItem('gos_public_key');
+      showMessage('✓ Identidad eliminada', 'success');
+      setTimeout(() => location.reload(), 1500);
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
+    }
+  });
+
+  // Reset database
+  document.getElementById('reset-database')?.addEventListener('click', async () => {
+    if (!confirm('⚠️ ¿REINICIAR BASE DE DATOS?\n\nEsto eliminará:\n- Todas las reseñas locales\n- Tu par de claves\n- Configuración\n- Token de GitHub\n\nLos datos en GitHub no se perderán si están sincronizados.\n\nEsta acción NO se puede deshacer.')) {
+      return;
+    }
+
+    try {
+      // Clear all storage
+      localStorage.clear();
+
+      // Delete all IndexedDB databases
+      const databases = ['gos_pwa', 'gos_keys'];
+      for (const db of databases) {
+        indexedDB.deleteDatabase(db);
+      }
+
+      showMessage('✓ Base de datos reiniciada. Recarga la página.', 'success');
+      setTimeout(() => location.reload(), 1500);
+    } catch (e) {
+      showMessage('Error: ' + (e as Error).message, 'error');
     }
   });
 </script>
