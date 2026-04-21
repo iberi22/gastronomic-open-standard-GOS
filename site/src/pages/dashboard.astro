@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Layout title="Dashboard - GOS">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-8 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href={baseUrl} class="text-text-muted hover:text-primary transition-colors" aria-label="Back to home">
+          <span class="material-symbols-outlined text-2xl">arrow_back</span>
+        </a>
+        <div>
+          <h1 class="text-4xl font-display text-primary">Dashboard</h1>
+          <p class="text-text-muted text-sm mt-1">Your personal data at a glance</p>
+        </div>
+      </div>
+      <button
+        id="refresh-btn"
+        class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-dark border border-neutral-dark text-text-dark hover:border-primary hover:text-primary transition-all duration-200 font-display text-sm"
+        aria-label="Refresh statistics"
+      >
+        <span class="material-symbols-outlined text-lg" id="refresh-icon">refresh</span>
+        Refresh
+      </button>
+    </header>
+
+    <div id="stats-error" class="hidden mb-6 p-4 rounded-lg bg-red-900/30 border border-red-700 text-red-300 text-sm flex items-center gap-2">
+      <span class="material-symbols-outlined text-lg">error</span>
+      <span id="stats-error-msg">Failed to load statistics.</span>
+    </div>
+
+    <div id="stats-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Places Scraped -->
+      <div class="glass-panel p-6 flex flex-col gap-3 group" data-stat="places">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl">location_on</span>
+          </div>
+          <span class="stat-value text-3xl font-display text-primary" data-key="places">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Places Scraped</p>
+          <p class="text-text-muted text-xs mt-0.5">Restaurants &amp; venues collected</p>
+        </div>
+        <div class="h-0.5 w-full bg-primary/10 rounded-full">
+          <div class="h-full bg-primary/40 rounded-full transition-all duration-700" style="width: 0%" data-bar="places"></div>
+        </div>
+      </div>
+
+      <!-- Reviews Extracted -->
+      <div class="glass-panel p-6 flex flex-col gap-3 group" data-stat="reviews">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-secondary/10 text-secondary group-hover:bg-secondary/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl">rate_review</span>
+          </div>
+          <span class="stat-value text-3xl font-display text-secondary" data-key="reviews">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Reviews Extracted</p>
+          <p class="text-text-muted text-xs mt-0.5">Raw reviews from scraping</p>
+        </div>
+        <div class="h-0.5 w-full bg-secondary/10 rounded-full">
+          <div class="h-full bg-secondary/40 rounded-full transition-all duration-700" style="width: 0%" data-bar="reviews"></div>
+        </div>
+      </div>
+
+      <!-- Favorites -->
+      <div class="glass-panel p-6 flex flex-col gap-3 group" data-stat="favorites">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl">favorite</span>
+          </div>
+          <span class="stat-value text-3xl font-display text-accent" data-key="favorites">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Favorites</p>
+          <p class="text-text-muted text-xs mt-0.5">Saved items across all types</p>
+        </div>
+        <div class="h-0.5 w-full bg-accent/10 rounded-full">
+          <div class="h-full bg-accent/40 rounded-full transition-all duration-700" style="width: 0%" data-bar="favorites"></div>
+        </div>
+      </div>
+
+      <!-- Ratings -->
+      <div class="glass-panel p-6 flex flex-col gap-3 group" data-stat="ratings">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400 group-hover:bg-purple-500/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl">star</span>
+          </div>
+          <span class="stat-value text-3xl font-display text-purple-400" data-key="ratings">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Ratings</p>
+          <p class="text-text-muted text-xs mt-0.5">Your private &amp; public ratings</p>
+        </div>
+        <div class="h-0.5 w-full bg-purple-500/10 rounded-full">
+          <div class="h-full bg-purple-500/40 rounded-full transition-all duration-700" style="width: 0%" data-bar="ratings"></div>
+        </div>
+      </div>
+
+      <!-- Collections -->
+      <div class="glass-panel p-6 flex flex-col gap-3 group" data-stat="collections">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl">collections_bookmark</span>
+          </div>
+          <span class="stat-value text-3xl font-display text-blue-400" data-key="collections">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Collections</p>
+          <p class="text-text-muted text-xs mt-0.5">Recipe collections you've created</p>
+        </div>
+        <div class="h-0.5 w-full bg-blue-500/10 rounded-full">
+          <div class="h-full bg-blue-500/40 rounded-full transition-all duration-700" style="width: 0%" data-bar="collections"></div>
+        </div>
+      </div>
+
+      <!-- Last Updated -->
+      <div class="glass-panel p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <div class="p-2 rounded-lg bg-neutral-600/20 text-text-muted">
+            <span class="material-symbols-outlined text-2xl">schedule</span>
+          </div>
+          <span class="text-xs text-text-muted font-mono" id="last-updated">—</span>
+        </div>
+        <div>
+          <p class="text-text-dark font-display text-base">Last Updated</p>
+          <p class="text-text-muted text-xs mt-0.5">When stats were last refreshed</p>
+        </div>
+        <div class="h-0.5 w-full bg-neutral-700/30 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { userDB } from '../lib/user-db';
+
+  type StatKey = 'places' | 'reviews' | 'favorites' | 'ratings' | 'collections';
+
+  async function loadStats() {
+    const refreshIcon = document.getElementById('refresh-icon');
+    const errorEl = document.getElementById('stats-error') as HTMLElement;
+    const errorMsg = document.getElementById('stats-error-msg') as HTMLElement;
+
+    if (refreshIcon) {
+      refreshIcon.style.animation = 'spin 0.8s linear infinite';
+    }
+    errorEl?.classList.add('hidden');
+
+    try {
+      await userDB.init();
+
+      const [places, reviews, favorites, ratings, collections] = await Promise.all([
+        userDB.getScrapedPlaces(),
+        userDB.getScrapedReviews(),
+        userDB.getFavorites(),
+        userDB.getRatings(),
+        userDB.getCollections(),
+      ]);
+
+      const counts: Record<StatKey, number> = {
+        places: places.length,
+        reviews: reviews.length,
+        favorites: favorites.length,
+        ratings: ratings.length,
+        collections: collections.length,
+      };
+
+      const max = Math.max(...Object.values(counts), 1);
+
+      for (const [key, count] of Object.entries(counts) as [StatKey, number][]) {
+        const valueEl = document.querySelector<HTMLElement>(`[data-key="${key}"]`);
+        const barEl = document.querySelector<HTMLElement>(`[data-bar="${key}"]`);
+        if (valueEl) valueEl.textContent = count.toLocaleString();
+        if (barEl) {
+          const pct = Math.round((count / max) * 100);
+          barEl.style.width = `${pct}%`;
+        }
+      }
+
+      const lastUpdatedEl = document.getElementById('last-updated');
+      if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = new Date().toLocaleTimeString();
+      }
+    } catch (err) {
+      errorEl?.classList.remove('hidden');
+      if (errorMsg) {
+        errorMsg.textContent = err instanceof Error ? err.message : 'Failed to load statistics.';
+      }
+    } finally {
+      if (refreshIcon) {
+        refreshIcon.style.animation = '';
+      }
+    }
+  }
+
+  document.getElementById('refresh-btn')?.addEventListener('click', loadStats);
+  loadStats();
+</script>
+
+<style>
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+</style>

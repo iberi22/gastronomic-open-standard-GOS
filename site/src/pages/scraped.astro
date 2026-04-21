@@ -183,6 +183,8 @@ const title = "Scraped Data - GOS";
   async function loadScrapedData() {
     const places = await userDB.getScrapedPlaces();
     const reviews = await userDB.getScrapedReviews();
+    const favorites = await userDB.getFavorites('place');
+    const favoriteIds = new Set(favorites.map(f => f.itemId));
 
     // Update counts
     syncPlacesCount.textContent = places.length.toString();
@@ -199,7 +201,9 @@ const title = "Scraped Data - GOS";
         </div>
       `;
     } else {
-      placesList.innerHTML = places.map(place => `
+      placesList.innerHTML = places.map(place => {
+        const isFav = favoriteIds.has(place.id);
+        return `
         <div class="p-4 bg-white/5 rounded-xl border border-white/10">
           <div class="flex justify-between items-start mb-2">
             <h3 class="text-white font-medium">${place.name}</h3>
@@ -211,8 +215,53 @@ const title = "Scraped Data - GOS";
             ${place.categories?.length ? `<p>🏷️ ${place.categories.join(', ')}</p>` : ''}
           </div>
           ${place.sourceUrl ? `<a href="${place.sourceUrl}" target="_blank" class="text-primary text-sm hover:underline">Ver original →</a>` : ''}
+          <div class="mt-3 pt-3 border-t border-white/10 flex justify-between items-center">
+            <button
+              class="fav-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
+                isFav
+                  ? 'bg-red-500/20 text-red-400 border border-red-500/40'
+                  : 'bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10 hover:text-white'
+              }"
+              data-place-id="${place.id}"
+              data-place-name="${place.name}"
+              data-is-fav="${isFav}"
+            >
+              ${isFav ? '❤️ Favorito' : '🤍 Add to Favorites'}
+            </button>
+          </div>
         </div>
-      `).join('');
+      `}).join('');
+
+      // Attach click handlers for favorite buttons
+      placesList.querySelectorAll('.fav-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const el = e.currentTarget as HTMLButtonElement;
+          const placeId = el.dataset.placeId!;
+          const placeName = el.dataset.placeName!;
+          const isFav = el.dataset.isFav === 'true';
+
+          if (isFav) {
+            await userDB.removeFavorite(placeId);
+          } else {
+            await userDB.addFavorite({
+              type: 'place',
+              itemId: placeId,
+              itemName: placeName
+            });
+          }
+
+          // Toggle visual state immediately
+          const newIsFav = !isFav;
+          el.dataset.isFav = String(newIsFav);
+          if (newIsFav) {
+            el.className = 'fav-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all bg-red-500/20 text-red-400 border border-red-500/40';
+            el.textContent = '❤️ Favorito';
+          } else {
+            el.className = 'fav-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10 hover:text-white';
+            el.textContent = '🤍 Add to Favorites';
+          }
+        });
+      });
     }
 
     // Render reviews
