@@ -6,17 +6,104 @@
 const GITHUB_API = 'https://api.github.com';
 const GITHUB_REPO = 'iberi22/gos-p2p-data';
 
-const TOKEN_KEY = 'gos_github_token';
+const TOKEN_KEY = 'gos_github_token_encrypted';
+const KEY_HANDLE = 'gos_aes_key_handle';
 
 /**
- * Get stored GitHub token (encrypted in localStorage)
+ * Get or create AES-GCM encryption key (stored in sessionStorage)
  */
-function getToken(): string | null {
-  return localStorage.getItem(TOKEN_KEY);
+async function getOrCreateKey(): Promise<CryptoKey> {
+  const storedKeyData = sessionStorage.getItem(KEY_HANDLE);
+  
+  if (storedKeyData) {
+    // Re-import existing key from sessionStorage
+    const keyBuffer = Uint8Array.from(atob(storedKeyData), c => c.charCodeAt(0));
+    return crypto.subtle.importKey(
+      'raw',
+      keyBuffer,
+      { name: 'AES-GCM', length: 256 },
+      false,
+      ['encrypt', 'decrypt']
+    );
+  }
+  
+  // Generate new 256-bit AES key
+  const key = await crypto.subtle.generateKey(
+    { name: 'AES-GCM', length: 256 },
+    true, // extractable
+    ['encrypt', 'decrypt']
+  );
+  
+  // Export and store in sessionStorage (sessionStorage survives page refresh, cleared on tab close)
+  const exportedKey = await crypto.subtle.exportKey('raw', key);
+  const keyBase64 = btoa(String.fromCharCode(...new Uint8Array(exportedKey)));
+  sessionStorage.setItem(KEY_HANDLE, keyBase64);
+  
+  return key;
 }
 
 /**
- * Save GitHub token
+ * Encrypt string with AES-GCM
+ */
+async function encrypt(plaintext: string, key: CryptoKey): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(plaintext);
+  
+  // Generate random IV for each encryption
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  
+  const encrypted = await crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv },
+    key,
+    data
+  );
+  
+  // Combine IV + ciphertext and encode as base64
+  const combined = new Uint8Array(iv.length + encrypted.byteLength);
+  combined.set(iv);
+  combined.set(new Uint8Array(encrypted), iv.length);
+  
+  return btoa(String.fromCharCode(...combined));
+}
+
+/**
+ * Decrypt string with AES-GCM
+ */
+async function decrypt(ciphertext: string, key: CryptoKey): Promise<string> {
+  const combined = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+  
+  // Extract IV (first 12 bytes) and ciphertext
+  const iv = combined.slice(0, 12);
+  const data = combined.slice(12);
+  
+  const decrypted = await crypto.subtle.decrypt(
+    { name: 'AES-GCM', iv },
+    key,
+    data
+  );
+  
+  return new TextDecoder().decode(decrypted);
+}
+
+/**
+ * Get stored GitHub token (decrypted from localStorage)
+ */
+async function getToken(): Promise<string | null> {
+  const encrypted = localStorage.getItem(TOKEN_KEY);
+  if (!encrypted) return null;
+  
+  try {
+    const key = await getOrCreateKey();
+    return await decrypt(encrypted, key);
+  } catch (e) {
+    // Key mismatch or decryption failure - clear corrupted data
+    localStorage.removeItem(TOKEN_KEY);
+    return null;
+  }
+}
+
+/**
+ * Save GitHub token (encrypted in localStorage)
  */
 export async function saveToken(token: string): Promise<void> {
   if (!token || !token.startsWith('ghp_')) {
@@ -28,7 +115,9 @@ export async function saveToken(token: string): Promise<void> {
     throw new Error('Invalid token format');
   }
 
-  localStorage.setItem(TOKEN_KEY, token);
+  const key = await getOrCreateKey();
+  const encrypted = await encrypt(token, key);
+  localStorage.setItem(TOKEN_KEY, encrypted);
 }
 
 /**
@@ -36,13 +125,14 @@ export async function saveToken(token: string): Promise<void> {
  */
 export function deleteToken(): void {
   localStorage.removeItem(TOKEN_KEY);
+  sessionStorage.removeItem(KEY_HANDLE);
 }
 
 /**
  * Make authenticated GitHub API request
  */
 async function githubFetch(endpoint: string, options: RequestInit = {}): Promise<any> {
-  const token = getToken();
+  const token = await getToken();
   if (!token) {
     throw new Error('GitHub token not configured. Add token in Settings.');
   }
@@ -98,7 +188,7 @@ export async function pushChanges(changes: {
   profile?: any;
   timestamp: number;
 }): Promise<{ success: boolean; message: string }> {
-  const token = getToken();
+  const token = await getToken();
   if (!token) {
     throw new Error('GitHub token required for push');
   }
@@ -214,4 +304,18 @@ export async function validateToken(): Promise<boolean> {
   } catch {
     return false;
   }
+}
+
+/**
+ * Export all user data (token NEVER included for security)
+ */
+export function exportAll(): any {
+  return {
+    reviews: JSON.parse(localStorage.getItem('gos_reviews') || '[]'),
+    profile: JSON.parse(localStorage.getItem('gos_profile') || '{}'),
+    lastSync: localStorage.getItem('gos_last_sync'),
+    // Explicitly exclude token - it should NEVER be exported
+    githubConfigured: localStorage.getItem(TOKEN_KEY) !== null,
+    // DO NOT include the encrypted token
+  };
 }

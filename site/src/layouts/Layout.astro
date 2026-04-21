@@ -1,8 +1,9 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import MobileNav from '../components/MobileNav.astro';
 
 interface Props {
-	title: string;
+	 title: string;
 }
 
 const { title } = Astro.props;
@@ -26,6 +27,11 @@ const baseUrl = import.meta.env.BASE_URL;
 		<link rel="apple-touch-icon" href={`${baseUrl}/icons/icon-192.png`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<!-- Security Headers -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' https://translate.googleapis.com https://translate.google.com;" />
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">

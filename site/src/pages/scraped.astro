@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import EmptyState from '../components/EmptyState.astro';
+import LoadingSpinner from '../components/LoadingSpinner.astro';
 
 const title = "Scraped Data - GOS";
 ---
@@ -13,29 +15,34 @@ const title = "Scraped Data - GOS";
 
     <!-- Sync Status -->
     <section id="sync-status" class="mb-8 p-4 bg-white/5 rounded-xl border border-white/10">
-      <div class="flex items-center justify-between">
-        <div>
-          <h2 class="text-lg font-display text-white">Estado de Sincronización</h2>
-          <p id="sync-status-text" class="text-gray-400 text-sm">Esperando...</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="text-center">
-            <div id="sync-places-count" class="text-2xl font-bold text-primary">0</div>
-            <div class="text-xs text-gray-500">Lugares</div>
-          </div>
-          <div class="text-center">
-            <div id="sync-reviews-count" class="text-2xl font-bold text-secondary">0</div>
-            <div class="text-xs text-gray-500">Reviews</div>
-          </div>
-        </div>
+      <div id="sync-spinner-container" style="display:none;" class="mb-4">
+        <LoadingSpinner size="md" label="Sincronizando datos..." />
       </div>
-      <div class="mt-4 flex gap-3">
-        <button id="btn-sync" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition">
-          🔄 Sincronizar Ahora
-        </button>
-        <button id="btn-open-extension" class="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
-          🌐 Abrir Extensión
-        </button>
+      <div id="sync-content">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-lg font-display text-white">Estado de Sincronización</h2>
+            <p id="sync-status-text" class="text-gray-400 text-sm">Esperando...</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="text-center">
+              <div id="sync-places-count" class="text-2xl font-bold text-primary">0</div>
+              <div class="text-xs text-gray-500">Lugares</div>
+            </div>
+            <div class="text-center">
+              <div id="sync-reviews-count" class="text-2xl font-bold text-secondary">0</div>
+              <div class="text-xs text-gray-500">Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <button id="btn-sync" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition">
+              🔄 Sincronizar Ahora
+          </button>
+          <button id="btn-open-extension" class="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+            🌐 Abrir Extensión
+          </button>
+        </div>
       </div>
     </section>
 
@@ -90,10 +97,13 @@ const title = "Scraped Data - GOS";
         <span id="places-total" class="text-gray-500 text-sm">0 lugares</span>
       </div>
       <div id="places-list" class="grid gap-4 md:grid-cols-2">
-        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
-          <p>No hay lugares todavía</p>
-          <p class="text-sm mt-2">Usa la extensión para extraer lugares</p>
-        </div>
+        <EmptyState icon="📍" title="No hay lugares todavía" description="Usa la extensión para extraer lugares de Google Maps" ctaText="Ver Guía" ctaLink="#" />
+      </div>
+      <!-- Places Pagination -->
+      <div id="places-pagination" class="pagination-controls mt-4" style="display: none;">
+        <button id="places-prev" class="pagination-btn" disabled>← Anterior</button>
+        <span id="places-page-info" class="pagination-info">Página 1 de 1</span>
+        <button id="places-next" class="pagination-btn" disabled>Siguiente →</button>
       </div>
     </section>
 
@@ -104,10 +114,13 @@ const title = "Scraped Data - GOS";
         <span id="reviews-total" class="text-gray-500 text-sm">0 reviews</span>
       </div>
       <div id="reviews-list" class="space-y-3">
-        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
-          <p>No hay reviews todavía</p>
-          <p class="text-sm mt-2">Usa la extensión para extraer reviews</p>
-        </div>
+        <EmptyState icon="⭐" title="No hay reviews todavía" description="Usa la extensión para extraer reviews de Google Maps" />
+      </div>
+      <!-- Reviews Pagination -->
+      <div id="reviews-pagination" class="pagination-controls mt-4" style="display: none;">
+        <button id="reviews-prev" class="pagination-btn" disabled>← Anterior</button>
+        <span id="reviews-page-info" class="pagination-info">Página 1 de 1</span>
+        <button id="reviews-next" class="pagination-btn" disabled>Siguiente →</button>
       </div>
     </section>
 
@@ -117,10 +130,18 @@ const title = "Scraped Data - GOS";
       <div class="grid md:grid-cols-2 gap-4">
         <div class="p-4 bg-white/5 rounded-xl border border-white/10">
           <h3 class="text-white mb-2">📤 Exportar Datos</h3>
-          <p class="text-gray-500 text-sm mb-4">Descarga todos los datos extraídos en JSON</p>
-          <button id="btn-export" class="w-full px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition">
-            Exportar JSON
-          </button>
+          <p class="text-gray-500 text-sm mb-4">Descarga todos los datos extraídos</p>
+          <div class="flex gap-2">
+            <select id="export-format" class="flex-1 px-3 py-2 bg-white/10 text-white rounded-lg border border-white/20 focus:border-primary focus:outline-none">
+              <option value="json">JSON</option>
+              <option value="csv">CSV</option>
+              <option value="feed">RSS/Feed</option>
+            </select>
+            <button id="btn-export" class="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition">
+              Exportar
+            </button>
+          </div>
+          <p class="text-gray-600 text-xs mt-2">JSON: Full backup • CSV: Spreadsheet • RSS: Public feed</p>
         </div>
         <div class="p-4 bg-white/5 rounded-xl border border-white/10">
           <h3 class="text-white mb-2">📥 Importar Datos</h3>
@@ -147,6 +168,7 @@ const title = "Scraped Data - GOS";
 <script>
   import { userDB } from '../lib/user-db';
   import { extensionSync } from '../lib/extension-sync';
+  import { exportAll } from '../lib/export';
 
   // Elements
   const syncStatus = document.getElementById('sync-status-text');
@@ -159,6 +181,80 @@ const title = "Scraped Data - GOS";
   const extensionIcon = document.getElementById('extension-icon');
   const extensionStatus = document.getElementById('extension-status');
   const guideModal = document.getElementById('guide-modal');
+  const placesPagination = document.getElementById('places-pagination');
+  const reviewsPagination = document.getElementById('reviews-pagination');
+
+  // Pagination state
+  const ITEMS_PER_PAGE = {
+    places: 12,
+    reviews: 20
+  };
+  let currentPage = {
+    places: 1,
+    reviews: 1
+  };
+  let totalItems = {
+    places: 0,
+    reviews: 0
+  };
+  let allPlaces = [];
+  let allReviews = [];
+
+
+  // Get page from URL hash
+  function getPageFromHash() {
+    const hash = window.location.hash;
+    const match = hash.match(/page=(\d+)/);
+    return match ? parseInt(match[1], 10) : 1;
+  }
+
+
+  // Set page in URL hash
+  function setPageInHash(page) {
+    const hash = window.location.hash.replace(/page=\d+/, '');
+    if (page > 1) {
+      window.location.hash = hash + (hash ? '&' : '') + `page=${page}`;
+    } else {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  // Calculate total pages
+  function getTotalPages(count, perPage) {
+    return Math.ceil(count / perPage) || 1;
+  }
+
+  // Update pagination controls
+  function updatePaginationControls(type) {
+    const total = totalItems[type];
+    const perPage = ITEMS_PER_PAGE[type];
+    const current = currentPage[type];
+    const totalPages = getTotalPages(total, perPage);
+    const pagination = type === 'places' ? placesPagination : reviewsPagination;
+    const prevBtn = document.getElementById(`${type}-prev`);
+    const nextBtn = document.getElementById(`${type}-next`);
+    const pageInfo = document.getElementById(`${type}-page-info`);
+
+    if (pagination) {
+      pagination.style.display = total > perPage ? 'flex' : 'none';
+    }
+
+    if (prevBtn) {
+      prevBtn.disabled = current <= 1;
+    }
+    if (nextBtn) {
+      nextBtn.disabled = current >= totalPages;
+    }
+    if (pageInfo) {
+      pageInfo.textContent = `Página ${current} de ${totalPages}`;
+    }
+  }
+
+  // Paginate items
+  function paginateItems(items, page, perPage) {
+    const start = (page - 1) * perPage;
+    return items.slice(start, start + perPage);
+  }
 
   // Check if extension is installed
   async function checkExtension() {
@@ -180,28 +276,55 @@ const title = "Scraped Data - GOS";
   }
 
   // Load scraped data
-  async function loadScrapedData() {
-    const places = await userDB.getScrapedPlaces();
-    const reviews = await userDB.getScrapedReviews();
+  async function loadScrapedData(pageOverride) {
+    allPlaces = await userDB.getScrapedPlaces();
+    allReviews = await userDB.getScrapedReviews();
     const favorites = await userDB.getFavorites('place');
     const favoriteIds = new Set(favorites.map(f => f.itemId));
 
+
+    totalItems.places = allPlaces.length;
+    totalItems.reviews = allReviews.length;
+
     // Update counts
-    syncPlacesCount.textContent = places.length.toString();
-    syncReviewsCount.textContent = reviews.length.toString();
-    placesTotal.textContent = `${places.length} lugares`;
-    reviewsTotal.textContent = `${reviews.length} reviews`;
+    syncPlacesCount.textContent = allPlaces.length.toString();
+    syncReviewsCount.textContent = allReviews.length.toString();
+    placesTotal.textContent = `${allPlaces.length} lugares`;
+    reviewsTotal.textContent = `${allReviews.length} reviews`;
+
+    // Get current page from hash if no override
+    const placesPage = pageOverride?.places ?? getPageFromHash();
+    const reviewsPage = pageOverride?.reviews ?? 1;
+    currentPage.places = Math.min(placesPage, getTotalPages(totalItems.places, ITEMS_PER_PAGE.places));
+    currentPage.reviews = Math.min(reviewsPage, getTotalPages(totalItems.reviews, ITEMS_PER_PAGE.reviews));
+
+    // Update URL hash
+    if (currentPage.places > 1) {
+      setPageInHash(currentPage.places);
+    }
+
+    // Update pagination controls
+    updatePaginationControls('places');
+    updatePaginationControls('reviews');
+
+    // Get paginated items
+    const paginatedPlaces = paginateItems(allPlaces, currentPage.places, ITEMS_PER_PAGE.places);
+    const paginatedReviews = paginateItems(allReviews, currentPage.reviews, ITEMS_PER_PAGE.reviews);
 
     // Render places
-    if (places.length === 0) {
+    if (paginatedPlaces.length === 0) {
       placesList.innerHTML = `
-        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500 col-span-2">
-          <p>No hay lugares todavía</p>
-          <p class="text-sm mt-2">Usa la extensión para extraer lugares</p>
+        <div class="col-span-2">
+          <div class="flex flex-col items-center justify-center py-12 px-6 bg-white/5 rounded-xl border border-white/10 text-center">
+            <span class="text-5xl mb-4">📍</span>
+            <h3 class="text-lg font-display text-white mb-2">No hay lugares todavía</h3>
+            <p class="text-gray-400 text-sm mb-6 max-w-sm">Usa la extensión para extraer lugares de Google Maps</p>
+            <button class="px-5 py-2.5 bg-primary text-white rounded-lg font-medium hover:bg-primary/80 transition" onclick="document.getElementById('guide-modal')?.showModal()">Ver Guía</button>
+          </div>
         </div>
       `;
     } else {
-      placesList.innerHTML = places.map(place => {
+      placesList.innerHTML = paginatedPlaces.map(place => {
         const isFav = favoriteIds.has(place.id);
         return `
         <div class="p-4 bg-white/5 rounded-xl border border-white/10">
@@ -265,15 +388,16 @@ const title = "Scraped Data - GOS";
     }
 
     // Render reviews
-    if (reviews.length === 0) {
+    if (paginatedReviews.length === 0) {
       reviewsList.innerHTML = `
-        <div class="p-8 bg-white/5 rounded-xl border border-white/10 text-center text-gray-500">
-          <p>No hay reviews todavía</p>
-          <p class="text-sm mt-2">Usa la extensión para extraer reviews</p>
+        <div class="flex flex-col items-center justify-center py-12 px-6 bg-white/5 rounded-xl border border-white/10 text-center">
+          <span class="text-5xl mb-4">⭐</span>
+          <h3 class="text-lg font-display text-white mb-2">No hay reviews todavía</h3>
+          <p class="text-gray-400 text-sm mb-6 max-w-sm">Usa la extensión para extraer reviews de Google Maps</p>
         </div>
       `;
     } else {
-      reviewsList.innerHTML = reviews.map(review => `
+      reviewsList.innerHTML = paginatedReviews.map(review => `
         <div class="p-4 bg-white/5 rounded-xl border border-white/10">
           <div class="flex justify-between items-start mb-2">
             <div>
@@ -294,17 +418,28 @@ const title = "Scraped Data - GOS";
   // Event Listeners
   document.getElementById('btn-sync')?.addEventListener('click', async () => {
     const btn = document.getElementById('btn-sync');
+    const spinnerContainer = document.getElementById('sync-spinner-container');
+    const syncContent = document.getElementById('sync-content');
+
+    // Show spinner, hide content
+    if (spinnerContainer) spinnerContainer.style.display = 'block';
+    if (syncContent) syncContent.style.display = 'none';
+
     if (btn) {
-      btn.textContent = 'Sincronizando...';
       btn.setAttribute('disabled', 'true');
     }
-    
-    await extensionSync.forceSync();
-    await loadScrapedData();
-    
-    if (btn) {
-      btn.textContent = '🔄 Sincronizar Ahora';
-      btn.removeAttribute('disabled');
+
+    try {
+      await extensionSync.forceSync();
+      await loadScrapedData();
+    } finally {
+      // Hide spinner, show content
+      if (spinnerContainer) spinnerContainer.style.display = 'none';
+      if (syncContent) syncContent.style.display = 'block';
+      if (btn) {
+        btn.textContent = '🔄 Sincronizar Ahora';
+        btn.removeAttribute('disabled');
+      }
     }
   });
 
@@ -320,16 +455,10 @@ const title = "Scraped Data - GOS";
     guideModal?.close();
   });
 
-  // Export
+  // Export with format selection
   document.getElementById('btn-export')?.addEventListener('click', async () => {
-    const data = await userDB.exportAll();
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `gos-data-${Date.now()}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    const format = (document.getElementById('export-format') as HTMLSelectElement)?.value as 'json' | 'csv' | 'feed';
+    await exportAll(userDB, format);
   });
 
   // Import
@@ -363,8 +492,93 @@ const title = "Scraped Data - GOS";
   await loadScrapedData();
   await extensionSync.start();
 
+  // Listen for hash changes
+  window.addEventListener('hashchange', () => {
+    loadScrapedData({ places: getPageFromHash() });
+  });
+
   // Listen for new data
   extensionSync.listenToMessages(() => {
     loadScrapedData();
   });
+
+  // Pagination event listeners
+  document.getElementById('places-prev')?.addEventListener('click', () => {
+    if (currentPage.places > 1) {
+      currentPage.places--;
+      setPageInHash(currentPage.places);
+      updatePaginationControls('places');
+      const paginatedPlaces = paginateItems(allPlaces, currentPage.places, ITEMS_PER_PAGE.places);
+      // Re-render just the places list with updated favorites
+      loadScrapedData({ places: currentPage.places });
+    }
+  });
+
+  document.getElementById('places-next')?.addEventListener('click', () => {
+    const totalPages = getTotalPages(totalItems.places, ITEMS_PER_PAGE.places);
+    if (currentPage.places < totalPages) {
+      currentPage.places++;
+      setPageInHash(currentPage.places);
+      updatePaginationControls('places');
+      loadScrapedData({ places: currentPage.places });
+    }
+  });
+
+  document.getElementById('reviews-prev')?.addEventListener('click', () => {
+    if (currentPage.reviews > 1) {
+      currentPage.reviews--;
+      updatePaginationControls('reviews');
+      loadScrapedData({ reviews: currentPage.reviews });
+    }
+  });
+
+
+  document.getElementById('reviews-next')?.addEventListener('click', () => {
+    const totalPages = getTotalPages(totalItems.reviews, ITEMS_PER_PAGE.reviews);
+    if (currentPage.reviews < totalPages) {
+      currentPage.reviews++;
+      updatePaginationControls('reviews');
+      loadScrapedData({ reviews: currentPage.reviews });
+    }
+  });
 </script>
+
+<style>
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.75rem;
+  }
+  .pagination-btn {
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .pagination-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .pagination-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  .pagination-info {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-width: 120px;
+    text-align: center;
+  }
+</style>

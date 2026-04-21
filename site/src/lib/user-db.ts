@@ -357,15 +357,49 @@ class GOSUserDatabase {
   
   // Scraped data methods (from Chrome extension)
   async saveScrapedPlace(place: any): Promise<void> {
-    await this.put('scraped_places', place);
+    // Validate required fields
+    const requiredFields = ['id', 'name'];
+    const missingFields = requiredFields.filter(field => !place[field]);
+    if (missingFields.length > 0) {
+      throw new Error(`Missing required fields for scraped place: ${missingFields.join(', ')}`);
+    }
+    // Sanitize content
+    const sanitizedPlace = this.sanitizeScrapedData(place);
+    await this.put('scraped_places', sanitizedPlace);
   }
-  
+
   async getScrapedPlaces(): Promise<any[]> {
     return this.getAll('scraped_places');
   }
-  
+
   async saveScrapedReview(review: any): Promise<void> {
-    await this.put('scraped_reviews', review);
+    // Validate required fields
+    const requiredFields = ['id', 'itemId', 'text'];
+    const missingFields = requiredFields.filter(field => !review[field]);
+    if (missingFields.length > 0) {
+      throw new Error(`Missing required fields for scraped review: ${missingFields.join(', ')}`);
+    }
+    // Sanitize content
+    const sanitizedReview = this.sanitizeScrapedData(review);
+    await this.put('scraped_reviews', sanitizedReview);
+  }
+
+  private sanitizeScrapedData(data: any): any {
+    const result: any = {};
+    for (const [key, value] of Object.entries(data)) {
+      if (typeof value === 'string') {
+        // Remove potential XSS content and trim
+        result[key] = value
+          .replace(/<script[^>]*>.*?<\/script>/gi, '')
+          .replace(/<iframe[^>]*>.*?<\/iframe>/gi, '')
+          .replace(/javascript:/gi, '')
+          .replace(/on\w+=/gi, '')
+          .trim();
+      } else {
+        result[key] = value;
+      }
+    }
+    return result;
   }
   
   async getScrapedReviews(): Promise<any[]> {

@@ -2,14 +2,45 @@
 import Layout from '../layouts/Layout.astro';
 import SyncStatus from '../components/SyncStatus.astro';
 import CountrySelector from '../components/CountrySelector.astro';
+
+// Theme initialization
+const themeScript = `
+(function() {
+  const stored = localStorage.getItem('gos_theme') || 'system';
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = stored === 'dark' || (stored === 'system' && prefersDark);
+  if (isDark) document.documentElement.classList.add('dark');
+})();
+`;
 ---
 
 <Layout title="Ajustes - GOS">
+  <script is:inline set:html={themeScript}></script>
   <div class="max-w-4xl mx-auto">
     <header class="mb-8">
       <h1 class="text-4xl font-display text-primary mb-2">Ajustes</h1>
       <p class="text-gray-400">Configuración y sincronización</p>
     </header>
+
+    <!-- Theme Selector Section -->
+    <section class="mb-8 p-6 bg-white/5 rounded-xl border border-white/10">
+      <h2 class="text-xl font-display mb-4">🎨 Apariencia</h2>
+      <p class="text-gray-400 mb-4">Elige cómo quieres que se vea la aplicación.</p>
+
+      <div class="flex flex-wrap gap-3">
+        <button id="theme-light" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+          ☀️ Claro
+        </button>
+        <button id="theme-dark" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+          🌙 Oscuro
+        </button>
+        <button id="theme-system" class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+          💻 Sistema
+        </button>
+      </div>
+
+      <p id="theme-status" class="mt-3 text-sm text-gray-500">Tema actual: sistema</p>
+    </section>
 
     <!-- Sync Status Section -->
     <section class="mb-8">
@@ -425,4 +456,56 @@ import CountrySelector from '../components/CountrySelector.astro';
       showMessage('Error: ' + (e as Error).message, 'error');
     }
   });
+
+  // Theme switcher
+  function applyTheme(theme: 'light' | 'dark' | 'system') {
+    const root = document.documentElement;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    root.classList.remove('dark', 'light');
+
+    if (theme === 'dark' || (theme === 'system' && prefersDark)) {
+      root.classList.add('dark');
+    }
+
+    localStorage.setItem('gos_theme', theme);
+    updateThemeStatus(theme);
+  }
+
+  function updateThemeStatus(theme: string) {
+    const statusEl = document.getElementById('theme-status');
+    if (statusEl) {
+      const labels: Record<string, string> = { light: '☀️ Claro', dark: '🌙 Oscuro', system: '💻 Sistema' };
+      statusEl.textContent = `Tema actual: ${labels[theme] || theme}`;
+    }
+  }
+
+  // Initialize theme buttons
+  function initTheme() {
+    const stored = localStorage.getItem('gos_theme') || 'system';
+    updateThemeStatus(stored);
+
+    ['light', 'dark', 'system'].forEach(theme => {
+      const btn = document.getElementById(`theme-${theme}`);
+      if (btn) {
+        btn.addEventListener('click', () => applyTheme(theme as 'light' | 'dark' | 'system'));
+      }
+    });
+  }
+
+  initTheme();
 </script>
+
+<style is:global>
+  html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  html.dark {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+  }
+  html.light {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+</style>
