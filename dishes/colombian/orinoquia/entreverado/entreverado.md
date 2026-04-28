@@ -137,4 +137,6 @@ calificación: ★★★★★ 5/5
 
 - [Receta tradicional de entreverado llanero - El Tiempo](https://www.eltiempo.com/vida/receta-entreverado-57949)
 - [Google Maps: Opiniones sobre entreverado llanero](https://www.google.com/maps/search/entreverado+llanero)
+
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/entreverado)
+\n

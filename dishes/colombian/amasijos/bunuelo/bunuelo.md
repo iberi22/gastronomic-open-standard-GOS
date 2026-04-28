@@ -123,4 +123,6 @@ El Buñuelo es el rey de la Navidad en Colombia. A diferencia de los buñuelos d
 
 > "Para saber si el aceite está, tire una bolita de masa de prueba. Tiene que contar 1...2... hasta 10 antes de que flote. Si flota al 3, apague y espere." — *Buñuelero de Sabaneta.*
 >
+
 > "No apriete la masa al hacer la bola, hágala con cariño. Si la aprieta mucho, queda teso."
+\n
