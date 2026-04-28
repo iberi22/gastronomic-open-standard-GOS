@@ -9,8 +9,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 GRAPH_FILE = ROOT / "site" / "graph-data.json"
-VALID_NODE_TYPES = {"recipe", "ingredient", "flavor", "texture", "aroma", "region", "nutrition", "category", "technique"}
-VALID_EDGE_TYPES = {"HAS_RECIPE", "USES_INGREDIENT", "BELONGS_TO", "HAS_FLAVOR", "HAS_TEXTURE", "HAS_AROMA", "HAS_MACRO", "default"}
+VALID_NODE_TYPES = {"recipe", "ingredient", "flavor", "texture", "aroma", "region", "nutrition", "category", "technique", "place"}
+VALID_EDGE_TYPES = {
+    "HAS_RECIPE", "USES_INGREDIENT", "BELONGS_TO", "HAS_FLAVOR", "HAS_TEXTURE",
+    "HAS_AROMA", "HAS_MACRO", "default", "USES", "FROM_REGION", "RELATED_DISHES",
+    "PLACE", "USES_TECHNIQUE", "OFTEN_TOGETHER", "SUBSTITUTE_FOR", "PAIRS_WITH"
+}
 
 def load_graph():
     if not GRAPH_FILE.exists():
@@ -52,8 +56,10 @@ def test_recipe_has_edges(data):
     disconnected = []
     for r in recipes:
         connected = any(
-            (e.get("source",{}).get("id") == r["id"] or e.get("source") == r["id"]) or
-            (e.get("target",{}).get("id") == r["id"] or e.get("target") == r["id"])
+            (isinstance(e.get("source"), dict) and e.get("source", {}).get("id") == r["id"]) or
+            (isinstance(e.get("source"), str) and e.get("source") == r["id"]) or
+            (isinstance(e.get("target"), dict) and e.get("target", {}).get("id") == r["id"]) or
+            (isinstance(e.get("target"), str) and e.get("target") == r["id"])
             for e in edges
         )
         if not connected:
@@ -72,8 +78,8 @@ def test_region_has_recipes(data):
 
     for r in regions:
         has_recipe = any(
-            (e.get("source",{}).get("id") == r["id"] or e.get("source") == r["id"]) and
-            e.get("type") == "HAS_RECIPE"
+            ((isinstance(e.get("source"), dict) and e.get("source", {}).get("id") == r["id"]) or (isinstance(e.get("source"), str) and e.get("source") == r["id"])) and e.get("type") == "HAS_RECIPE" or
+            ((isinstance(e.get("target"), dict) and e.get("target", {}).get("id") == r["id"]) or (isinstance(e.get("target"), str) and e.get("target") == r["id"])) and e.get("type") == "FROM_REGION"
             for e in edges
         )
         assert has_recipe, f"Region '{r['id']}' has no recipes"
@@ -111,7 +117,7 @@ def test_edge_type_coverage(data):
         valid = "OK" if t in VALID_EDGE_TYPES else "UNKNOWN"
         print(f"  {t}: {c} ({valid})")
 
-    must_have = {"HAS_RECIPE", "USES_INGREDIENT"}
+    must_have = {"USES", "FROM_REGION"}
     for t in must_have:
         assert t in type_counts, f"Missing required edge type: {t}"
     print(f"[PASS] All required edge types present")

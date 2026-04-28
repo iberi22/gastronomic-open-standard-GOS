@@ -248,43 +248,58 @@ const baseUrl = import.meta.env.BASE_URL;
         if (span) span.textContent = 'favorite';
     });
 
+    function escapeHtml(str: any): string {
+        if (!str) return '';
+        const s = String(str);
+        return s
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
     function generateCardHTML(recipe: any) {
         const imageSrc = recipe.image || '';
+        const title = escapeHtml(recipe.title);
+        const slug = escapeHtml(recipe.slug);
+        const category = escapeHtml(recipe.category || 'Recipe');
+        const region = recipe.region ? escapeHtml(recipe.region) : '';
         return `
             <div
               class="recipe-item group relative flex flex-col overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm ring-1 ring-black/5 dark:ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-neon hover:ring-primary/50"
-              data-category="${recipe.category || 'other'}"
-              data-title="${recipe.title.toLowerCase()}"
+              data-category="${escapeHtml(recipe.category || 'other')}"
+              data-title="${title.toLowerCase()}"
             >
-              <a href="${baseUrl}/dishes/${recipe.slug}" class="absolute inset-0 z-0" aria-label="View recipe: ${recipe.title}"></a>
+              <a href="${baseUrl}/dishes/${slug}" class="absolute inset-0 z-0" aria-label="View recipe: ${title}"></a>
               <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100 dark:bg-gray-800 relative pointer-events-none">
                 ${imageSrc ?
-                   `<img src="${imageSrc}" alt="${recipe.title}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />`
+                   `<img src="${imageSrc}" alt="${title}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />`
                    : `<div class="flex h-full w-full items-center justify-center text-gray-300 dark:text-gray-600"><span class="material-symbols-outlined text-6xl">restaurant_menu</span></div>`
                 }
                 <div class="absolute top-3 right-3 z-20 pointer-events-auto">
-                  <button class="fav-btn flex size-8 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm text-gray-400 shadow-sm transition-all hover:scale-110 hover:text-red-500 dark:bg-black/60" data-slug="${recipe.slug}" aria-label="Add to favorites">
+                  <button class="fav-btn flex size-8 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm text-gray-400 shadow-sm transition-all hover:scale-110 hover:text-red-500 dark:bg-black/60" data-slug="${slug}" aria-label="Add to favorites">
                     <span class="material-symbols-outlined text-[20px]">favorite</span>
                   </button>
                 </div>
-                ${recipe.region ? `<div class="absolute bottom-3 left-3"><span class="inline-flex items-center rounded-md bg-black/60 px-2 py-1 text-xs font-medium text-white backdrop-blur-md">${recipe.region}</span></div>` : ''}
+                ${region ? `<div class="absolute bottom-3 left-3"><span class="inline-flex items-center rounded-md bg-black/60 px-2 py-1 text-xs font-medium text-white backdrop-blur-md">${region}</span></div>` : ''}
               </div>
               <div class="flex flex-1 flex-col p-5 pointer-events-none">
                  <div class="mb-2 flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-wider text-primary">${recipe.category || 'Recipe'}</span>
-                    ${recipe.rating ? `<div class="flex items-center gap-1 text-xs font-bold text-yellow-500"><span class="material-symbols-outlined text-[14px] fill-1">star</span><span>${recipe.rating}</span></div>` : ''}
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary">${category}</span>
+                    ${recipe.rating ? `<div class="flex items-center gap-1 text-xs font-bold text-yellow-500"><span class="material-symbols-outlined text-[14px] fill-1">star</span><span>${escapeHtml(recipe.rating)}</span></div>` : ''}
                  </div>
                  <h3 class="mb-2 font-display text-xl font-bold leading-tight text-text-light dark:text-text-dark group-hover:text-primary transition-colors line-clamp-2">
-                    ${recipe.title}
+                    ${title}
                  </h3>
                  <div class="mt-auto flex items-center gap-4 text-xs font-medium text-gray-500 dark:text-gray-400">
                     <div class="flex items-center gap-1">
                         <span class="material-symbols-outlined text-[16px]">schedule</span>
-                        <span>${recipe.time || 'N/A'}</span>
+                        <span>${escapeHtml(recipe.time || 'N/A')}</span>
                     </div>
                     <div class="flex items-center gap-1">
                         <span class="material-symbols-outlined text-[16px]">local_fire_department</span>
-                        <span>${recipe.calories || 'N/A'} cal</span>
+                        <span>${escapeHtml(recipe.calories || 'N/A')} cal</span>
                     </div>
                  </div>
               </div>

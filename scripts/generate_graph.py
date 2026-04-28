@@ -103,10 +103,11 @@ def is_list_recipe(title: str, content: str) -> bool:
 
     # Pattern 1: "10 recetas" or similar count + region/category in title
     list_title_patterns = [
-        r'\d+\s+recetas?\s+(?:mas\s+)?(?:emblemáticas?|famosas?|populares?|tradicionales?)\s+(?:de(?:la)?|del)?\s*',
+        r'\d+\s+recetas?\s+(?:m[aá]s\s+)?(?:emblemáticas?|famosas?|populares?|tradicionales?)\s+(?:de(?:la)?|del)?\s*',
         r'\d+\s+platos?\s+(?:típicos?|tradicionales?|regionales?|famosos?)',
-        r'\d+\s+recetas?\s+(?:de|del|para)\s+(?:la\s+)?(?:region|colombia|colombian|andina|caribe|pacifica|amazonia|orinoquia|insular|nacional)',
-        r'^recetas?\s+de(?:la)?\s+(?:region|colombia)',
+        r'\d+\s+recetas?\s+(?:de|del|para)\s+(?:la\s+)?(?:regi[oó]n|colombia|colombian|andina|caribe|pacifica|amazonia|orinoquia|insular|nacional)',
+        r'^recetas?\s+de(?:la)?\s+(?:regi[oó]n|colombia)',
+        r'^recetas\s+de\s+la\s+orinoquía$',
     ]
 
     for pattern in list_title_patterns:
