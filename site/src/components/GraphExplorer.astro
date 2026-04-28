@@ -143,15 +143,15 @@
 <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script is:inline>
 (function() {
-  var COLORS = { recipe:'#ff6b35', ingredient:'#00ff66', flavor:'#ffe66d', texture:'#f38181', aroma:'#a8e6cf', region:'#7d61ff', technique:'#95e1d3', nutrition:'#f9c74f', category:'#90be6d' };
-  var EDGE_COLORS = { HAS_RECIPE:'#7d61ff', USES_INGREDIENT:'#00ff66', BELONGS_TO:'#90be6d', HAS_FLAVOR:'#ffe66d', HAS_TEXTURE:'#f38181', HAS_AROMA:'#a8e6cf', HAS_MACRO:'#f9c74f' };
-  var EDGE_DIST = { HAS_RECIPE:130, USES_INGREDIENT:55, BELONGS_TO:80, HAS_FLAVOR:45, HAS_TEXTURE:45, HAS_AROMA:45, HAS_MACRO:35 };
-  var TYPE_LABELS = { recipe:'Recipes', ingredient:'Ingredients', flavor:'Flavors', texture:'Textures', aroma:'Aromas', region:'Regions', nutrition:'Nutrition', category:'Categories' };
-  var TYPE_ORDER = ['recipe','region','ingredient','flavor','texture','aroma','nutrition','category'];
+  var COLORS = { recipe:'#FF6B6B', ingredient:'#4ECDC4', flavor:'#FFE66D', texture:'#F38181', aroma:'#A8E6CF', region:'#FFE66D', technique:'#AA96DA', nutrition:'#F9C74F', category:'#A8D8A8', place:'#B2E2F2' };
+  var EDGE_COLORS = { HAS_RECIPE:'#7d61ff', USES:'#4ECDC4', USES_INGREDIENT:'#4ECDC4', BELONGS_TO:'#A8D8A8', HAS_FLAVOR:'#FFE66D', HAS_TEXTURE:'#F38181', HAS_AROMA:'#A8E6CF', HAS_MACRO:'#F9C74F', FROM_REGION:'#FFE66D', RELATED_DISHES:'#FF6B6B', PLACE:'#B2E2F2', USES_TECHNIQUE:'#AA96DA', OFTEN_TOGETHER:'#95E1D3' };
+  var EDGE_DIST = { HAS_RECIPE:130, USES:55, USES_INGREDIENT:55, BELONGS_TO:80, HAS_FLAVOR:45, HAS_TEXTURE:45, HAS_AROMA:45, HAS_MACRO:35, FROM_REGION:90, RELATED_DISHES:120, PLACE:70, USES_TECHNIQUE:60, OFTEN_TOGETHER:50 };
+  var TYPE_LABELS = { recipe:'Recipes', ingredient:'Ingredients', flavor:'Flavors', texture:'Textures', aroma:'Aromas', region:'Regions', nutrition:'Nutrition', category:'Categories', place:'Places', technique:'Techniques' };
+  var TYPE_ORDER = ['recipe','region','ingredient','flavor','texture','technique','aroma','nutrition','category','place'];
 
   var NODE_EMOJI = { recipe:'\uD83C\uDF72', ingredient:'\uD83E\uDD57', flavor:'\uD83C\uDF36', texture:'\uD83E\uDE79', aroma:'\uD83C\uDF43', region:'\uD83C\uDF0D', nutrition:'\uD83E\uDD57', category:'\uD83C\uDF74' };
   var TYPE_SINGULAR = { recipe:'Recipe', ingredient:'Ingredient', flavor:'Flavor', texture:'Texture', aroma:'Aroma', region:'Region', nutrition:'Nutrition', category:'Category' };
-  var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition' };
+  var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES:'Ingredients', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition', FROM_REGION:'Region', RELATED_DISHES:'Related Dishes', PLACE:'Places', USES_TECHNIQUE:'Techniques', OFTEN_TOGETHER:'Often Together' };
 
   var wrapper = document.getElementById('ge-wrapper');
   var canvas = document.getElementById('ge-canvas');

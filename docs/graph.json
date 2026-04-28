@@ -86,32 +86,32 @@
       "size": 25
     },
     {
-      "id": "ingredient___prote_na___",
-      "label": "**Proteína:**",
+      "id": "ingredient_prote_na_",
+      "label": "Proteína:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___base_arom_tica__aderezo____",
-      "label": "**Base Aromática (Aderezo):**",
+      "id": "ingredient_base_arom_tica__aderezo__",
+      "label": "Base Aromática (Aderezo):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___granos_y_vegetales___",
-      "label": "**Granos y Vegetales:**",
+      "id": "ingredient_granos_y_vegetales_",
+      "label": "Granos y Vegetales:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___l_quidos_y_saz_n___",
-      "label": "**Líquidos y Sazón:**",
+      "id": "ingredient_l_quidos_y_saz_n_",
+      "label": "Líquidos y Sazón:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -1079,16 +1079,16 @@
       "size": 30
     },
     {
-      "id": "ingredient___para_la_masa___",
-      "label": "**Para la masa**:",
+      "id": "ingredient_para_la_masa_",
+      "label": "Para la masa:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___para_el_relleno___",
-      "label": "**Para el relleno**:",
+      "id": "ingredient_para_el_relleno_",
+      "label": "Para el relleno:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -4925,8 +4925,8 @@
       "origin": ""
     },
     {
-      "id": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
-      "label": "**Para los dumplings:** 1 taza de harina, 1 cucharadita de polvo de hornear, 1 pizca de sal, agua",
+      "id": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "label": "Para los dumplings: 1 taza de harina, 1 cucharadita de polvo de hornear, 1 pizca de sal, agua",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -5405,16 +5405,16 @@
       "size": 18
     },
     {
-      "id": "ingredient___base___",
-      "label": "**Base:**",
+      "id": "ingredient_base_",
+      "label": "Base:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___el_melado___",
-      "label": "**El Melado:**",
+      "id": "ingredient_el_melado_",
+      "label": "El Melado:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -5597,24 +5597,24 @@
       "size": 25
     },
     {
-      "id": "ingredient___el_coco___",
-      "label": "**El Coco:**",
+      "id": "ingredient_el_coco_",
+      "label": "El Coco:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___el_grano___",
-      "label": "**El Grano:**",
+      "id": "ingredient_el_grano_",
+      "label": "El Grano:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___saz_n___",
-      "label": "**Sazón:**",
+      "id": "ingredient_saz_n_",
+      "label": "Sazón:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -5712,24 +5712,24 @@
       "size": 25
     },
     {
-      "id": "ingredient___carnes___",
-      "label": "**Carnes:**",
+      "id": "ingredient_carnes_",
+      "label": "Carnes:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___condimentos___",
-      "label": "**Condimentos:**",
+      "id": "ingredient_condimentos_",
+      "label": "Condimentos:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___tripa___",
-      "label": "**Tripa:**",
+      "id": "ingredient_tripa_",
+      "label": "Tripa:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -5811,24 +5811,24 @@
       "size": 25
     },
     {
-      "id": "ingredient___masa___",
-      "label": "**Masa:**",
+      "id": "ingredient_masa_",
+      "label": "Masa:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___relleno_cl_sico__carne____",
-      "label": "**Relleno Clásico (Carne):**",
+      "id": "ingredient_relleno_cl_sico__carne__",
+      "label": "Relleno Clásico (Carne):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___fritura___",
-      "label": "**Fritura:**",
+      "id": "ingredient_fritura_",
+      "label": "Fritura:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -6079,24 +6079,24 @@
       "origin": ""
     },
     {
-      "id": "ingredient___vegetales___",
-      "label": "**Vegetales:**",
+      "id": "ingredient_vegetales_",
+      "label": "Vegetales:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___la_salsa__el_secreto____",
-      "label": "**La Salsa (El secreto):**",
+      "id": "ingredient_la_salsa__el_secreto__",
+      "label": "La Salsa (El secreto):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___acompa_amiento___",
-      "label": "**Acompañamiento:**",
+      "id": "ingredient_acompa_amiento_",
+      "label": "Acompañamiento:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -6433,24 +6433,24 @@
       "size": 25
     },
     {
-      "id": "ingredient___el_r_o___",
-      "label": "**El Río:**",
+      "id": "ingredient_el_r_o_",
+      "label": "El Río:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___la_cama__vituallas____",
-      "label": "**La Cama (Vituallas):**",
+      "id": "ingredient_la_cama__vituallas__",
+      "label": "La Cama (Vituallas):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___el_guiso_saz_n___",
-      "label": "**El Guiso/Sazón:**",
+      "id": "ingredient_el_guiso_saz_n_",
+      "label": "El Guiso/Sazón:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -7461,16 +7461,16 @@
       "size": 25
     },
     {
-      "id": "ingredient___para_la_sopa___",
-      "label": "**Para la sopa:**",
+      "id": "ingredient_para_la_sopa_",
+      "label": "Para la sopa:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___para_servir___",
-      "label": "**Para servir:**",
+      "id": "ingredient_para_servir_",
+      "label": "Para servir:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -7527,16 +7527,16 @@
       "size": 25
     },
     {
-      "id": "ingredient___para_el_plato_principal___",
-      "label": "**Para el plato principal:**",
+      "id": "ingredient_para_el_plato_principal_",
+      "label": "Para el plato principal:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___para_el_hogao__salsa_criolla____",
-      "label": "**Para el Hogao (salsa criolla):**",
+      "id": "ingredient_para_el_hogao__salsa_criolla__",
+      "label": "Para el Hogao (salsa criolla):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -8218,8 +8218,8 @@
       "size": 25
     },
     {
-      "id": "ingredient___guiso__base____",
-      "label": "**Guiso (Base):**",
+      "id": "ingredient_guiso__base__",
+      "label": "Guiso (Base):",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -8977,24 +8977,24 @@
       "size": 25
     },
     {
-      "id": "ingredient___pescado___",
-      "label": "**Pescado:**",
+      "id": "ingredient_pescado_",
+      "label": "Pescado:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___para_el_apanado_y_fritura___",
-      "label": "**Para el apanado y fritura:**",
+      "id": "ingredient_para_el_apanado_y_fritura_",
+      "label": "Para el apanado y fritura:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
       "size": 25
     },
     {
-      "id": "ingredient___guarniciones_sugeridas___",
-      "label": "**Guarniciones sugeridas:**",
+      "id": "ingredient_guarniciones_sugeridas_",
+      "label": "Guarniciones sugeridas:",
       "type": "ingredient",
       "color": "#4ECDC4",
       "image": null,
@@ -12622,25 +12622,25 @@
     },
     {
       "source": "recipe_arroz_con_pollo_peruano",
-      "target": "ingredient___prote_na___",
+      "target": "ingredient_prote_na_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_arroz_con_pollo_peruano",
-      "target": "ingredient___base_arom_tica__aderezo____",
+      "target": "ingredient_base_arom_tica__aderezo__",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_arroz_con_pollo_peruano",
-      "target": "ingredient___granos_y_vegetales___",
+      "target": "ingredient_granos_y_vegetales_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_arroz_con_pollo_peruano",
-      "target": "ingredient___l_quidos_y_saz_n___",
+      "target": "ingredient_l_quidos_y_saz_n_",
       "type": "USES",
       "weight": 2
     },
@@ -13606,19 +13606,19 @@
     },
     {
       "source": "recipe_tamal_tolimense",
-      "target": "ingredient___para_la_masa___",
+      "target": "ingredient_para_la_masa_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___para_la_masa___",
+      "source": "ingredient_para_la_masa_",
       "target": "category_grains",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_tamal_tolimense",
-      "target": "ingredient___para_el_relleno___",
+      "target": "ingredient_para_el_relleno_",
       "type": "USES",
       "weight": 2
     },
@@ -19966,12 +19966,12 @@
     },
     {
       "source": "recipe_pollo_guisado_con_dumplings",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "source": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "target": "category_grains",
       "type": "BELONGS_TO",
       "weight": 1
@@ -20218,7 +20218,7 @@
     },
     {
       "source": "recipe_rond_n__run_down_",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "USES",
       "weight": 2
     },
@@ -20860,13 +20860,13 @@
     },
     {
       "source": "recipe_alegr_as",
-      "target": "ingredient___base___",
+      "target": "ingredient_base_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_alegr_as",
-      "target": "ingredient___el_melado___",
+      "target": "ingredient_el_melado_",
       "type": "USES",
       "weight": 2
     },
@@ -21238,25 +21238,25 @@
     },
     {
       "source": "recipe_arroz_con_coco__titot__",
-      "target": "ingredient___el_coco___",
+      "target": "ingredient_el_coco_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___el_coco___",
+      "source": "ingredient_el_coco_",
       "target": "category_fruits",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_arroz_con_coco__titot__",
-      "target": "ingredient___el_grano___",
+      "target": "ingredient_el_grano_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_arroz_con_coco__titot__",
-      "target": "ingredient___saz_n___",
+      "target": "ingredient_saz_n_",
       "type": "USES",
       "weight": 2
     },
@@ -21424,25 +21424,25 @@
     },
     {
       "source": "recipe_butifarra_solede_a",
-      "target": "ingredient___carnes___",
+      "target": "ingredient_carnes_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___carnes___",
+      "source": "ingredient_carnes_",
       "target": "category_proteins",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_butifarra_solede_a",
-      "target": "ingredient___condimentos___",
+      "target": "ingredient_condimentos_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_butifarra_solede_a",
-      "target": "ingredient___tripa___",
+      "target": "ingredient_tripa_",
       "type": "USES",
       "weight": 2
     },
@@ -21598,31 +21598,31 @@
     },
     {
       "source": "recipe_carima_olas",
-      "target": "ingredient___masa___",
+      "target": "ingredient_masa_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___masa___",
+      "source": "ingredient_masa_",
       "target": "category_grains",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_carima_olas",
-      "target": "ingredient___relleno_cl_sico__carne____",
+      "target": "ingredient_relleno_cl_sico__carne__",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___relleno_cl_sico__carne____",
+      "source": "ingredient_relleno_cl_sico__carne__",
       "target": "category_proteins",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_carima_olas",
-      "target": "ingredient___fritura___",
+      "target": "ingredient_fritura_",
       "type": "USES",
       "weight": 2
     },
@@ -22102,31 +22102,31 @@
     },
     {
       "source": "recipe_ceviche_de_camar_n_coste_o",
-      "target": "ingredient___prote_na___",
+      "target": "ingredient_prote_na_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_ceviche_de_camar_n_coste_o",
-      "target": "ingredient___vegetales___",
+      "target": "ingredient_vegetales_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_ceviche_de_camar_n_coste_o",
-      "target": "ingredient___la_salsa__el_secreto____",
+      "target": "ingredient_la_salsa__el_secreto__",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___la_salsa__el_secreto____",
+      "source": "ingredient_la_salsa__el_secreto__",
       "target": "category_condiments",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_ceviche_de_camar_n_coste_o",
-      "target": "ingredient___acompa_amiento___",
+      "target": "ingredient_acompa_amiento_",
       "type": "USES",
       "weight": 2
     },
@@ -22804,19 +22804,19 @@
     },
     {
       "source": "recipe_viudo_de_pescado",
-      "target": "ingredient___el_r_o___",
+      "target": "ingredient_el_r_o_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_viudo_de_pescado",
-      "target": "ingredient___la_cama__vituallas____",
+      "target": "ingredient_la_cama__vituallas__",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_viudo_de_pescado",
-      "target": "ingredient___el_guiso_saz_n___",
+      "target": "ingredient_el_guiso_saz_n_",
       "type": "USES",
       "weight": 2
     },
@@ -24028,13 +24028,13 @@
     },
     {
       "source": "recipe_ajiaco_santafere_o",
-      "target": "ingredient___para_la_sopa___",
+      "target": "ingredient_para_la_sopa_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_ajiaco_santafere_o",
-      "target": "ingredient___para_servir___",
+      "target": "ingredient_para_servir_",
       "type": "USES",
       "weight": 2
     },
@@ -24238,18 +24238,18 @@
     },
     {
       "source": "recipe_bandeja_paisa",
-      "target": "ingredient___para_el_plato_principal___",
+      "target": "ingredient_para_el_plato_principal_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_bandeja_paisa",
-      "target": "ingredient___para_el_hogao__salsa_criolla____",
+      "target": "ingredient_para_el_hogao__salsa_criolla__",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___para_el_hogao__salsa_criolla____",
+      "source": "ingredient_para_el_hogao__salsa_criolla__",
       "target": "category_condiments",
       "type": "BELONGS_TO",
       "weight": 1
@@ -25942,19 +25942,19 @@
     },
     {
       "source": "recipe_mondongo_antioque_o",
-      "target": "ingredient___carnes___",
+      "target": "ingredient_carnes_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_mondongo_antioque_o",
-      "target": "ingredient___vegetales___",
+      "target": "ingredient_vegetales_",
       "type": "USES",
       "weight": 2
     },
     {
       "source": "recipe_mondongo_antioque_o",
-      "target": "ingredient___guiso__base____",
+      "target": "ingredient_guiso__base__",
       "type": "USES",
       "weight": 2
     },
@@ -27502,31 +27502,31 @@
     },
     {
       "source": "recipe_piraruc__frito",
-      "target": "ingredient___pescado___",
+      "target": "ingredient_pescado_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___pescado___",
+      "source": "ingredient_pescado_",
       "target": "category_proteins",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_piraruc__frito",
-      "target": "ingredient___para_el_apanado_y_fritura___",
+      "target": "ingredient_para_el_apanado_y_fritura_",
       "type": "USES",
       "weight": 2
     },
     {
-      "source": "ingredient___para_el_apanado_y_fritura___",
+      "source": "ingredient_para_el_apanado_y_fritura_",
       "target": "category_grains",
       "type": "BELONGS_TO",
       "weight": 1
     },
     {
       "source": "recipe_piraruc__frito",
-      "target": "ingredient___guarniciones_sugeridas___",
+      "target": "ingredient_guarniciones_sugeridas_",
       "type": "USES",
       "weight": 2
     },
@@ -34258,7 +34258,7 @@
     },
     {
       "source": "ingredient_1_cebolla_larga",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -35320,7 +35320,7 @@
     },
     {
       "source": "ingredient_2_dientes_de_ajo",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -35896,7 +35896,7 @@
     },
     {
       "source": "ingredient_1_ramita_de_tomillo",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -36076,7 +36076,7 @@
     },
     {
       "source": "ingredient_1_hoja_de_laurel",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -36209,6 +36209,12 @@
     {
       "source": "ingredient_leche_de_coco",
       "target": "ingredient_leche_de_coco_fresca",
+      "type": "OFTEN_TOGETHER",
+      "weight": 2
+    },
+    {
+      "source": "ingredient_leche_de_coco",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -37300,7 +37306,7 @@
     },
     {
       "source": "ingredient_1_chile_picante__opcional_",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -37426,7 +37432,7 @@
     },
     {
       "source": "ingredient_1_pimiento_dulce",
-      "target": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "target": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
@@ -37539,14 +37545,8 @@
       "weight": 2
     },
     {
-      "source": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
+      "source": "ingredient_para_los_dumplings__1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
       "target": "ingredient_sal_y_pimienta_al_gusto",
-      "type": "OFTEN_TOGETHER",
-      "weight": 2
-    },
-    {
-      "source": "ingredient___para_los_dumplings____1_taza_de_harina__1_cucharadita_de_polvo_de_hornear__1_pizca_de_sal__agua",
-      "target": "ingredient_leche_de_coco",
       "type": "OFTEN_TOGETHER",
       "weight": 2
     },
