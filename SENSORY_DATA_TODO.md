@@ -9,8 +9,8 @@ Generated automatically
 
 ## By Country
 - peruvian: 1/1 (100.0%)
-- colombian: 78/109 (71.6%)
 - china: 0/49 (0.0%)
+- colombian: 78/109 (71.6%)
 
 ## Priority Recipes (Missing Sensory Data)
 

@@ -1,32 +1,34 @@
 ---
-title: "Buñuelo Antiecolombiano"
-region: "Nacional (Andina / Antioquia)"
+title: Buñuelo Colombiano
+region: Nacional
 categories:
-  - "Amasijo"
-  - "Frito"
-  - "Navidad"
+- Amasijo
+- Frito
+- Navidad
 sensory:
   flavor:
-    - "Queso Salado"
-    - "Dulzura de Almidón"
-    - "Suero Ácido"
+  - Queso Salado
+  - Dulzura de Almidón
+  - Suero Ácido
   texture:
-    - "Corteza Fina y Lisa"
-    - "Miga Esponjosa (Alveolada)"
-    - "Húmedo"
+  - Corteza Fina y Lisa
+  - Miga Esponjosa (Alveolada)
+  - Húmedo
   aroma:
-    - "Queso Frito"
-    - "Maíz Tostado"
-  presentation: "Esferas doradas perfectas de unos 5-7 cm de diámetro. No deben tener 'teticas', grietas ni estar aceitosos al tacto. Deben flotar y girar solos al freírse."
+  - Queso Frito
+  - Maíz Tostado
+  presentation: Esferas doradas perfectas de unos 5-7 cm de diámetro. No deben tener
+    'teticas', grietas ni estar aceitosos al tacto. Deben flotar y girar solos al
+    freírse.
 main_ingredients:
-  - "Queso Costeño (Salado/Duro)"
-  - "Fécula de Maíz (Maizena)"
-  - "Almidón de Yuca"
-  - "Azúcar"
-  - "Huevo"
-difficulty: "Alta (Control de temperatura del aceite)"
-prep_time: "30"
-cook_time: "20"
+- Queso Costeño (Salado/Duro)
+- Fécula de Maíz (Maizena)
+- Almidón de Yuca
+- Azúcar
+- Huevo
+difficulty: Alta (Control de temperatura del aceite)
+prep_time: '30'
+cook_time: '20'
 servings: 15
 nutrition:
   calories: 150
@@ -35,17 +37,19 @@ nutrition:
     fat_g: 9
     carbs_g: 14
 tags:
-  - "Navidad"
-  - "Novena"
-  - "Tradición"
+- Navidad
+- Novena
+- Tradición
 images:
-  - url: "https://im.ge/i/bunuelos-1.AbC101"
-    description: "Buñuelos perfectos dorados y redondos"
+- url: https://im.ge/i/bunuelos-1.AbC101
+  description: Buñuelos perfectos dorados y redondos
 sources:
-  - name: "Física del Buñuelo GOS"
-    url: "https://gos.org/amasijos/bunuelo"
-license: "MIT"
-description: "La esfera perfecta de la navidad. El Buñuelo Colombiano no es de viento ni de harina de trigo; es un equilibrio termodinámico complejo entre quesos salados y almidones que deben expandirse en aceite tibio sin explotar."
+- name: Física del Buñuelo GOS
+  url: https://gos.org/amasijos/bunuelo
+license: MIT
+description: La esfera perfecta de la navidad. El Buñuelo Colombiano no es de viento
+  ni de harina de trigo; es un equilibrio termodinámico complejo entre quesos salados
+  y almidones que deben expandirse en aceite tibio sin explotar.
 ---
 
 # Buñuelo (Esfera Navideña)
@@ -119,5 +123,6 @@ El Buñuelo es el rey de la Navidad en Colombia. A diferencia de los buñuelos d
 
 > "Para saber si el aceite está, tire una bolita de masa de prueba. Tiene que contar 1...2... hasta 10 antes de que flote. Si flota al 3, apague y espere." — *Buñuelero de Sabaneta.*
 >
+
 > "No apriete la masa al hacer la bola, hágala con cariño. Si la aprieta mucho, queda teso."
 \n

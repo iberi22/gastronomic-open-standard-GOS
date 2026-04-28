@@ -16,6 +16,23 @@ nutrition:
     fat_g: 146.9
     carbs_g: 501.4
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  texture:
+  - Suave
+  - Jugoso
+  aroma:
+  - Carnoso
+  - Herbal
+  - Frito
+  presentation: Se sirve en bandejas grandes, ideal para compartir en reuniones y
+    celebraciones llaneras.
+images:
+- url: ./images/1.png
+  description: Plato de Arroz Llanero con variedad de carnes y verduras.
+image: ./images/1.png
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -119,5 +136,6 @@ calificación: ★★★★★ 5/5
 
 - [Receta tradicional de arroz llanero - El Tiempo](https://www.eltiempo.com/vida/receta-arroz-llanero-57952)
 - [Google Maps: Opiniones sobre arroz llanero](https://www.google.com/maps/search/arroz+llanero)
+
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/arroz-llanero)
 \n

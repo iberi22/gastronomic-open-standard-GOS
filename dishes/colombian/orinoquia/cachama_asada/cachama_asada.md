@@ -16,6 +16,25 @@ nutrition:
     fat_g: 34.0
     carbs_g: 122.0
 embedding_version: 1
+sensory:
+  flavor:
+  - Umami
+  - Salado
+  - Ahumado
+  texture:
+  - Jugoso
+  - Tierno
+  - Crujiente (piel)
+  aroma:
+  - Ahumado
+  - Herbal
+  - Cítrico
+  presentation: Pescado entero asado con piel dorada, servido sobre hojas de bijao
+    con acompañantes blancos y amarillos.
+images:
+- url: ./images/1.png
+  description: Cachama asada a la llanera sobre hojas de bijao.
+image: ./images/1.png
 ---
 
 # Cachama Asada
@@ -112,5 +131,6 @@ calificación: ★★★★★ 5/5
 
 - [Receta tradicional de cachama asada llanera - El Tiempo](https://www.eltiempo.com/vida/receta-cachama-asada-57951)
 - [Google Maps: Opiniones sobre cachama asada](https://www.google.com/maps/search/cachama+asada+llanera)
+
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/cachama-asada)
 \n
