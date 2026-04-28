@@ -120,3 +120,4 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de arroz llanero - El Tiempo](https://www.eltiempo.com/vida/receta-arroz-llanero-57952)
 - [Google Maps: Opiniones sobre arroz llanero](https://www.google.com/maps/search/arroz+llanero)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/arroz-llanero)
+\n

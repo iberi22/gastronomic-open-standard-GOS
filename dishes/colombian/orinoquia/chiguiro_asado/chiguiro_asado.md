@@ -115,3 +115,4 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de chigüiro asado llanero - El Tiempo](https://www.eltiempo.com/vida/receta-chiguiro-asado-57947)
 - [Google Maps: Opiniones sobre chigüiro asado](https://www.google.com/maps/search/chiguiro+asado+llanero)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/chiguiro-asado)
+\n

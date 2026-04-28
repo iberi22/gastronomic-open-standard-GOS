@@ -113,3 +113,4 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de carne a la perra llanera - El Tiempo](https://www.eltiempo.com/vida/receta-carne-a-la-perra-57946)
 - [Google Maps: Opiniones sobre carne a la perra](https://www.google.com/maps/search/carne+a+la+perra+llanera)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/carne-a-la-perra)
+\n
