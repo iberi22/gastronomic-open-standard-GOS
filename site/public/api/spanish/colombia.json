@@ -6537,6 +6537,12 @@
         ],
         "license": "MIT",
         "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "main_ingredients": [
+          "maíz blanco",
+          "leche",
+          "panela",
+          "bocadillo de guayaba"
+        ],
         "description": "* 1 libra de maíz blanco trillado",
         "nutrition": {
           "calories": 506,
@@ -6552,7 +6558,12 @@
       "prepTime": null,
       "cookTime": null,
       "servings": null,
-      "mainIngredients": [],
+      "mainIngredients": [
+        "maíz blanco",
+        "leche",
+        "panela",
+        "bocadillo de guayaba"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/mazamorra.md"
     },

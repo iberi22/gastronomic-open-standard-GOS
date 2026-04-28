@@ -1,0 +1,61 @@
+---
+---
+
+<div id="sync-status" class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="flex items-center gap-3">
+    <div id="sync-indicator" class="w-3 h-3 rounded-full bg-yellow-500 animate-pulse"></div>
+    <div class="flex-1">
+      <p id="sync-text" class="text-sm text-gray-400">Sincronizando...</p>
+      <p id="sync-detail" class="text-xs text-gray-600"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function updateSyncStatus(status: 'syncing' | 'synced' | 'offline' | 'error', detail?: string) {
+    const indicator = document.getElementById('sync-indicator');
+    const text = document.getElementById('sync-text');
+    const detailEl = document.getElementById('sync-detail');
+
+    const states = {
+      syncing: { color: 'bg-yellow-500', text: 'Sincronizando...', detail: detail || 'Conectando con la red' },
+      synced: { color: 'bg-green-500', text: '✓ Sincronizado', detail: detail || 'Datos actualizados' },
+      offline: { color: 'bg-gray-500', text: '📴 Modo offline', detail: detail || 'Sin conexión' },
+      error: { color: 'bg-red-500', text: '✗ Error', detail: detail || 'Revisa la conexión' }
+    };
+
+    const state = states[status];
+    if (indicator) {
+      indicator.className = `w-3 h-3 rounded-full ${state.color}`;
+      indicator.classList.toggle('animate-pulse', status === 'syncing');
+    }
+    if (text) text.textContent = state.text;
+    if (detailEl) detailEl.textContent = state.detail || '';
+  }
+
+  // Initial check
+  if (navigator.onLine) {
+    const lastSync = localStorage.getItem('gos_last_sync');
+    if (lastSync && Date.now() - parseInt(lastSync) < 300000) {
+      updateSyncStatus('synced', 'Hace menos de 5 min');
+    } else {
+      updateSyncStatus('syncing', 'Verificando...');
+    }
+  } else {
+    updateSyncStatus('offline');
+  }
+
+  // Listen for online/offline
+  window.addEventListener('online', () => updateSyncStatus('syncing', 'Reconectando...'));
+  window.addEventListener('offline', () => updateSyncStatus('offline'));
+
+  // Periodic sync check
+  setInterval(() => {
+    if (navigator.onLine) {
+      const lastSync = localStorage.getItem('gos_last_sync');
+      if (!lastSync || Date.now() - parseInt(lastSync) > 300000) {
+        updateSyncStatus('syncing', 'Buscando actualizaciones...');
+      }
+    }
+  }, 60000);
+</script>

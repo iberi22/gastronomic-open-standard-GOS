@@ -32,9 +32,9 @@ embedding_version: 1
 
 ### Categorización Sensorial y de Uso
 
-- **Perfil de sabor:** [Pendiente]
-- **Textura:** [Pendiente]
-- **Aroma:** [Pendiente]
+- **Perfil de sabor:** Salado, tropical, con toques de coco y mariscos frescos
+- **Textura:** Variada, desde cremosa (mote de queso) hasta crujiente (carimañolas)
+- **Aroma:** Aromático a mariscos, coco tostado y especias caribeñas
 
 ### Perfil Nutricional (Estimado)
 

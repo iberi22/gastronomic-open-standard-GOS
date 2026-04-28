@@ -1,8 +1,9 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import MobileNav from '../components/MobileNav.astro';
 
 interface Props {
-	title: string;
+	 title: string;
 }
 
 const { title } = Astro.props;
@@ -14,12 +15,23 @@ const baseUrl = import.meta.env.BASE_URL;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Gastronomic Open Standard (GOS) - Scientific Recipe Database" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="theme-color" content="#ff7043" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="theme-color" content="#0a0a0f" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="GOS Node" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<link rel="manifest" href={`${baseUrl}/manifest.json`} />
+		<link rel="icon" type="image/svg+xml" href={`${baseUrl}/icons/icon-192.svg`} />
 		<link rel="icon" type="image/png" href={`${baseUrl}/images/favicon.png`} />
-		<link rel="apple-touch-icon" href={`${baseUrl}/images/favicon.png`} />
+		<link rel="apple-touch-icon" href={`${baseUrl}/icons/icon-192.png`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<!-- Security Headers -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' https://translate.googleapis.com https://translate.google.com;" />
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -77,14 +89,28 @@ const baseUrl = import.meta.env.BASE_URL;
 
 		<ViewTransitions />
 		<script is:inline define:vars={{ baseUrl }}>
-			// Service Worker Registration
+						// Service Worker Registration (Manual PWA)
 			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
-					navigator.serviceWorker.register(`${baseUrl}/sw.js`).then(registration => {
-						console.log('SW registered: ', registration);
-					}).catch(registrationError => {
-						console.log('SW registration failed: ', registrationError);
-					});
+				window.addEventListener('load', async () => {
+					try {
+						const registration = await navigator.serviceWorker.register(`${baseUrl}/sw.js`, { scope: baseUrl });
+						console.log('GOS PWA SW registered:', registration.scope);
+						
+						// Check for updates
+						registration.addEventListener('updatefound', () => {
+							const newWorker = registration.installing;
+							if (newWorker) {
+								newWorker.addEventListener('statechange', () => {
+									if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+										// New version available
+										console.log('GOS PWA: New version available');
+									}
+								});
+							}
+						});
+					} catch (err) {
+						console.log('GOS PWA SW registration failed:', err);
+					}
 				});
 			}
 
