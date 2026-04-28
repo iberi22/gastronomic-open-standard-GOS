@@ -18,6 +18,23 @@ const baseUrl = import.meta.env.BASE_URL;
 function formatNumber(num: number | undefined) {
     return num ? num.toString() : '-';
 }
+
+// Generate consistent color from title for letter placeholder
+function getPlaceholderColor(title: string): string {
+    const colors = [
+        '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
+        '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
+        '#F8B500', '#00CED1', '#FF7F50', '#9370DB', '#20B2AA'
+    ];
+    let hash = 0;
+    for (let i = 0; i < title.length; i++) {
+        hash = title.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return colors[Math.abs(hash) % colors.length];
+}
+
+const placeholderColor = getPlaceholderColor(title);
+const initial = title.charAt(0).toUpperCase();
 ---
 
 <div class="group relative flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-black shadow-sm transition-all hover:shadow-md">
@@ -47,8 +64,19 @@ function formatNumber(num: number | undefined) {
         loading="lazy"
       />
     ) : (
-      <div class="flex h-full w-full items-center justify-center text-gray-300 dark:text-gray-700">
-        <span class="material-symbols-outlined text-6xl">restaurant</span>
+      <div 
+        class="flex h-full w-full flex-col items-center justify-center transition-all duration-500 group-hover:scale-105"
+        style={`background: linear-gradient(135deg, ${placeholderColor}22 0%, ${placeholderColor}44 100%)`}
+      >
+        <div 
+          class="flex h-24 w-24 items-center justify-center rounded-2xl text-5xl font-black shadow-lg transition-transform duration-300 group-hover:scale-110"
+          style={`background-color: ${placeholderColor}; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);`}
+        >
+          {initial}
+        </div>
+        <span class="mt-3 max-w-[80%] text-center text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 line-clamp-2">
+          {title}
+        </span>
       </div>
     )}
 
