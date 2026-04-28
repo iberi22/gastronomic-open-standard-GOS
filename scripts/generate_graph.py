@@ -211,6 +211,8 @@ def extract_ingredients_from_content(content: str) -> list:
             bullet_match = re.match(r'^[-*+]\s+(.+?)(?:\s*[-–—]\s*(.+))?$', line)
             if bullet_match:
                 ingredient_text = bullet_match.group(1).strip()
+                # Strip ALL markdown syntax that could leak into ingredient names
+                ingredient_text = re.sub(r'\*\*|__|\*|_', '', ingredient_text)
                 ingredient_text = re.sub(
                     r'^[\d½¼¾⅓⅔⅛⅜⅝⅞/\s]+(?:g|kg|ml|l|taza|cucharada|cucharadita|cdta|cdas|kilo|libra|lb|oz|onza)s?\s+(?:de\s+)?',
                     '', ingredient_text, flags=re.IGNORECASE
@@ -225,6 +227,8 @@ def extract_ingredients_from_content(content: str) -> list:
             numbered_match = re.match(r'^\d+\.\s+(.+?)(?:\s*[-–—]\s*(.+))?$', line)
             if numbered_match:
                 ingredient_text = numbered_match.group(1).strip()
+                # Strip ALL markdown syntax
+                ingredient_text = re.sub(r'\*\*|__|\*|_', '', ingredient_text)
                 ingredient_text = re.sub(
                     r'^[\d½¼¾⅓⅔⅛⅜⅝⅞/\s]+(?:g|kg|ml|l|taza|cucharada|cucharadita|cdta|cdas|kilo|libra|lb|oz|onza)s?\s+(?:de\s+)?',
                     '', ingredient_text, flags=re.IGNORECASE
