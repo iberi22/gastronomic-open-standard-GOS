@@ -29,22 +29,22 @@
   "dependencies": {
     "@xenova/transformers": "^2.17.2",
     "front-matter": "^4.0.2",
-    "textlint": "^15.6.0",
+    "textlint": "^15.7.1",
     "textlint-rule-ja-space-between-half-and-full-width": "^2.2.0",
     "textlint-rule-zh-half-and-full-width-bracket": "^1.1.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/eslint-plugin": "^8.61.1",
     "@typescript-eslint/parser": "^8.57.1",
-    "eslint": "^10.2.1",
+    "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
     "glob": "^13.0.6",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "markdownlint-cli": "^0.48.0",
+    "markdownlint-cli": "^0.49.0",
     "tar-fs": "^3.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   },
   "lint-staged": {
     "*.md": "markdownlint --fix --ignore 'CHANGELOG.md'"
