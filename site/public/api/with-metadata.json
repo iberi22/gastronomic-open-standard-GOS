@@ -6325,13 +6325,13 @@
     },
     {
       "id": "colombian/amasijos/bunuelo/bunuelo",
-      "title": "Buñuelo Antiecolombiano",
+      "title": "Buñuelo Colombiano",
       "language": "spanish",
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Buñuelo Antiecolombiano",
-        "region": "Nacional (Andina / Antioquia)",
+        "title": "Buñuelo Colombiano",
+        "region": "Nacional",
         "categories": [
           "Amasijo",
           "Frito",
@@ -11213,7 +11213,25 @@
             "carbs_g": 663.6
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Vegetal"
+          ],
+          "texture": [
+            "Suave (arroz)",
+            "Tierno (pollo)",
+            "Crujiente (verduras)"
+          ],
+          "aroma": [
+            "Especiado",
+            "Aromático",
+            "Avícola"
+          ],
+          "presentation": "Arroz de color amarillo brillante con verduras visibles, servido con salsa de tomate y papas fritas."
+        }
       },
       "category": [],
       "difficulty": null,
@@ -11843,7 +11861,30 @@
             "carbs_g": 501.4
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado"
+          ],
+          "texture": [
+            "Suave",
+            "Jugoso"
+          ],
+          "aroma": [
+            "Carnoso",
+            "Herbal",
+            "Frito"
+          ],
+          "presentation": "Se sirve en bandejas grandes, ideal para compartir en reuniones y celebraciones llaneras."
+        },
+        "images": [
+          {
+            "url": "./images/1.png",
+            "description": "Plato de Arroz Llanero con variedad de carnes y verduras."
+          }
+        ],
+        "image": "./images/1.png"
       },
       "category": [],
       "difficulty": null,
@@ -11876,7 +11917,32 @@
             "carbs_g": 122
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Jugoso",
+            "Tierno",
+            "Crujiente (piel)"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Cítrico"
+          ],
+          "presentation": "Pescado entero asado con piel dorada, servido sobre hojas de bijao con acompañantes blancos y amarillos."
+        },
+        "images": [
+          {
+            "url": "./images/1.png",
+            "description": "Cachama asada a la llanera sobre hojas de bijao."
+          }
+        ],
+        "image": "./images/1.png"
       },
       "category": [],
       "difficulty": null,
@@ -11909,7 +11975,32 @@
             "carbs_g": 122
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Fibroso",
+            "Jugoso",
+            "Tenaz"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Carnoso"
+          ],
+          "presentation": "Trozos grandes de carne con costra oscura, servidos rústicamente sobre hojas."
+        },
+        "images": [
+          {
+            "url": "./images/1.png",
+            "description": "Carne a la perra asada tradicionalmente al fuego directo."
+          }
+        ],
+        "image": "./images/1.png"
       },
       "category": [],
       "difficulty": null,
@@ -12030,7 +12121,32 @@
             "carbs_g": 122
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Terroso"
+          ],
+          "texture": [
+            "Jugoso",
+            "Tierno",
+            "Ligeramente Fibroso"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Almizclado"
+          ],
+          "presentation": "Carne troceada con tonos tostados, servida sobre una base verde de hojas de bijao."
+        },
+        "images": [
+          {
+            "url": "./images/1.png",
+            "description": "Chigüiro asado, plato típico de la Orinoquía."
+          }
+        ],
+        "image": "./images/1.png"
       },
       "category": [],
       "difficulty": null,
@@ -12063,7 +12179,32 @@
             "carbs_g": 179
           }
         },
-        "embedding_version": 1
+        "embedding_version": 1,
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Variada",
+            "Jugosa",
+            "Crujiente"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Carnoso mixto"
+          ],
+          "presentation": "Gran bandeja con diversidad de cortes de carne asada, contrastando con el blanco de la yuca."
+        },
+        "images": [
+          {
+            "url": "./images/1.png",
+            "description": "Bandeja de entreverado llanero con mixtura de carnes."
+          }
+        ],
+        "image": "./images/1.png"
       },
       "category": [],
       "difficulty": null,
@@ -12547,7 +12688,8 @@
           "Valle",
           "Antioquia"
         ],
-        "description": "* 4 litros de leche entera"
+        "description": "* 4 litros de leche entera",
+        "region": "Nacional"
       },
       "category": [
         "Postre",
@@ -12579,8 +12721,10 @@
       "metadata": {
         "title": "Cayeye",
         "images": [
-          "https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg",
-          "https://www.recetasgratis.net/co/images/4/5/7/cayeye_23754_600.jpg"
+          {
+            "url": "https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg",
+            "description": "Cayeye tradicional costeño con queso."
+          }
         ],
         "sources": [
           "https://www.mycolombianrecipes.com/es/cayeye-colombiano/",
@@ -12596,7 +12740,25 @@
             "fat_g": 62.8,
             "carbs_g": 10.1
           }
-        }
+        },
+        "sensory": {
+          "flavor": [
+            "Salty (queso costeño)",
+            "Creamy (butter/mash)",
+            "Umami (hogao)"
+          ],
+          "texture": [
+            "Smooth (mash)",
+            "Gritty (cheese)"
+          ],
+          "aroma": [
+            "Lacteal (butter)",
+            "Savory (sofrito)"
+          ],
+          "presentation": "Puré de banano verde servido en montaña con queso blanco rallado encima y toques rojos de hogao."
+        },
+        "image": "https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg",
+        "region": "Caribe"
       },
       "category": [],
       "difficulty": null,
@@ -12616,8 +12778,10 @@
       "metadata": {
         "title": "Envueltos de Mazorca",
         "images": [
-          "https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg",
-          "https://www.recetasgratis.net/co/images/4/5/7/envueltos_de_mazorca_23754_600.jpg"
+          {
+            "url": "https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg",
+            "description": "Envueltos de mazorca tierna al vapor."
+          }
         ],
         "sources": [
           "https://www.mycolombianrecipes.com/es/envueltos-de-mazorca/",
@@ -12633,7 +12797,27 @@
             "fat_g": 258,
             "carbs_g": 487.5
           }
-        }
+        },
+        "sensory": {
+          "flavor": [
+            "Sweet (maíz tierno)",
+            "Lacteal (butter/milk)",
+            "Salty (queso)"
+          ],
+          "texture": [
+            "Soft",
+            "Spongy",
+            "Moist"
+          ],
+          "aroma": [
+            "Sweet Corn",
+            "Butter",
+            "Steamed leaf"
+          ],
+          "presentation": "Paquetes cilíndricos envueltos en hojas de mazorca de color verde pálido o crema, atados manualmente."
+        },
+        "image": "https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg",
+        "region": "Andina"
       },
       "category": [],
       "difficulty": null,
@@ -12653,8 +12837,10 @@
       "metadata": {
         "title": "Mazamorra Antioqueña",
         "images": [
-          "https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg",
-          "https://www.recetasgratis.net/co/images/4/5/7/mazamorra_23754_600.jpg"
+          {
+            "url": "https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg",
+            "description": "Mazamorra antioqueña con leche y panela."
+          }
         ],
         "sources": [
           "https://www.mycolombianrecipes.com/es/mazamorra-antioquena/",
@@ -12676,7 +12862,25 @@
             "fat_g": 6,
             "carbs_g": 114.6
           }
-        }
+        },
+        "sensory": {
+          "flavor": [
+            "Sweet (panela)",
+            "Neutral (maíz)",
+            "Lacteal (leche)"
+          ],
+          "texture": [
+            "Chewy (maíz)",
+            "Liquid (leche)"
+          ],
+          "aroma": [
+            "Fresh Milk",
+            "Cooked Corn"
+          ],
+          "presentation": "Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros de panela o bocadillo."
+        },
+        "image": "https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg",
+        "region": "Andina"
       },
       "category": [],
       "difficulty": null,
@@ -12875,8 +13079,10 @@
       "metadata": {
         "title": "Postre de Natas",
         "images": [
-          "https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg",
-          "https://www.recetasgratis.net/co/images/4/5/7/postre_de_natas_23754_600.jpg"
+          {
+            "url": "https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg",
+            "description": "Postre de natas cremoso tradicional."
+          }
         ],
         "sources": [
           "https://www.mycolombianrecipes.com/es/postre-de-natas/",
@@ -12892,7 +13098,26 @@
             "fat_g": 77,
             "carbs_g": 293.1
           }
-        }
+        },
+        "sensory": {
+          "flavor": [
+            "Sweet",
+            "Creamy",
+            "Lacteal"
+          ],
+          "texture": [
+            "Smooth",
+            "Silky",
+            "Layered (natas)"
+          ],
+          "aroma": [
+            "Vanilla",
+            "Caramelized Milk"
+          ],
+          "presentation": "Crema espesa de color marfil con capas visibles de nata, servida fría."
+        },
+        "image": "https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg",
+        "region": "Andina"
       },
       "category": [],
       "difficulty": null,
@@ -12912,8 +13137,10 @@
       "metadata": {
         "title": "Tamal Tolimense",
         "images": [
-          "https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg",
-          "https://www.recetasgratis.net/co/images/4/5/7/tamal_tolimense_23754_600.jpg"
+          {
+            "url": "https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg",
+            "description": "Tamal tolimense envuelto en hoja de plátano."
+          }
         ],
         "sources": [
           "https://www.mycolombianrecipes.com/es/tamales-tolimenses/",
@@ -12929,7 +13156,27 @@
             "fat_g": 53.9,
             "carbs_g": 584.7
           }
-        }
+        },
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Graso"
+          ],
+          "texture": [
+            "Soft (masa)",
+            "Fibrous (meats)",
+            "Tender (vegetables)"
+          ],
+          "aroma": [
+            "Banana leaf (steamed)",
+            "Cumin",
+            "Pork fat"
+          ],
+          "presentation": "Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la parte superior."
+        },
+        "image": "https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg",
+        "region": "Andina"
       },
       "category": [],
       "difficulty": null,
@@ -12939,100 +13186,6 @@
       "mainIngredients": [],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/tamal_tolimense.md"
-    },
-    {
-      "id": "colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado",
-      "title": "Aborrajados de Pescado",
-      "language": "spanish",
-      "country": "colombia",
-      "hasMetadata": true,
-      "metadata": {
-        "title": "Aborrajados de Pescado",
-        "region": "Pacífica/Nariño",
-        "categories": [
-          "Snack",
-          "Fritura",
-          "Entrada"
-        ],
-        "sensory": {
-          "flavor": [
-            "Dulce-Salado (Contraste)",
-            "Maillard (Crostáceo)",
-            "Marino sutil"
-          ],
-          "texture": [
-            "Crujiente (Exterior)",
-            "Mantecosa (Masa de plátano)",
-            "Jugosa (Pescado)"
-          ],
-          "aroma": [
-            "Plátano caramelizado",
-            "Mar fresco",
-            "Fritura limpia"
-          ],
-          "presentation": "Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro de limón y ají de piña. La costra exterior debe ser firme sin ser dura."
-        },
-        "main_ingredients": [
-          "Plátano Maduro (Sobre-madurado/Negro)",
-          "Pescado Blanco (Pargo/Róbalo)",
-          "Harina de Trigo (para el wrap)",
-          "Huevo y Leche (Aparejo)",
-          "Aceite vegetal (Fritura profunda)"
-        ],
-        "difficulty": "Media",
-        "prep_time": "30",
-        "cook_time": "20",
-        "servings": 12,
-        "nutrition": {
-          "calories": 280,
-          "macros": {
-            "protein_g": 15,
-            "fat_g": 14,
-            "carbs_g": 22
-          }
-        },
-        "tags": [
-          "Tumaco",
-          "Barbacoas",
-          "Fritanga"
-        ],
-        "images": [
-          {
-            "url": "https://im.ge/i/aborrajado-pescado-1.AbC789",
-            "description": "Aborrajados de pescado abiertos mostrando el relleno jugoso"
-          }
-        ],
-        "sources": [
-          {
-            "name": "Gastronomía Marítima Nariñense",
-            "url": "https://gos.org/pacifico/aborrajados"
-          }
-        ],
-        "license": "MIT",
-        "description": "El hermano marino del aborrajado valluno. Sustituye el queso por pescado fresco, encapsulado en una masa de plátano cuya caramelización actúa como barrera protectora de humedad para la proteína interna."
-      },
-      "category": [
-        "Snack",
-        "Fritura",
-        "Entrada"
-      ],
-      "difficulty": "Media",
-      "prepTime": "30",
-      "cookTime": "20",
-      "servings": 12,
-      "mainIngredients": [
-        "Plátano Maduro (Sobre-madurado/Negro)",
-        "Pescado Blanco (Pargo/Róbalo)",
-        "Harina de Trigo (para el wrap)",
-        "Huevo y Leche (Aparejo)",
-        "Aceite vegetal (Fritura profunda)"
-      ],
-      "tags": [
-        "Tumaco",
-        "Barbacoas",
-        "Fritanga"
-      ],
-      "filePath": "dishes/colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado.md"
     },
     {
       "id": "colombian/pacifica/aborrajado_valluno/aborrajado_valluno",
@@ -13128,6 +13281,100 @@
         "Frito"
       ],
       "filePath": "dishes/colombian/pacifica/aborrajado_valluno/aborrajado_valluno.md"
+    },
+    {
+      "id": "colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado",
+      "title": "Aborrajados de Pescado",
+      "language": "spanish",
+      "country": "colombia",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Aborrajados de Pescado",
+        "region": "Pacífica/Nariño",
+        "categories": [
+          "Snack",
+          "Fritura",
+          "Entrada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce-Salado (Contraste)",
+            "Maillard (Crostáceo)",
+            "Marino sutil"
+          ],
+          "texture": [
+            "Crujiente (Exterior)",
+            "Mantecosa (Masa de plátano)",
+            "Jugosa (Pescado)"
+          ],
+          "aroma": [
+            "Plátano caramelizado",
+            "Mar fresco",
+            "Fritura limpia"
+          ],
+          "presentation": "Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro de limón y ají de piña. La costra exterior debe ser firme sin ser dura."
+        },
+        "main_ingredients": [
+          "Plátano Maduro (Sobre-madurado/Negro)",
+          "Pescado Blanco (Pargo/Róbalo)",
+          "Harina de Trigo (para el wrap)",
+          "Huevo y Leche (Aparejo)",
+          "Aceite vegetal (Fritura profunda)"
+        ],
+        "difficulty": "Media",
+        "prep_time": "30",
+        "cook_time": "20",
+        "servings": 12,
+        "nutrition": {
+          "calories": 280,
+          "macros": {
+            "protein_g": 15,
+            "fat_g": 14,
+            "carbs_g": 22
+          }
+        },
+        "tags": [
+          "Tumaco",
+          "Barbacoas",
+          "Fritanga"
+        ],
+        "images": [
+          {
+            "url": "https://im.ge/i/aborrajado-pescado-1.AbC789",
+            "description": "Aborrajados de pescado abiertos mostrando el relleno jugoso"
+          }
+        ],
+        "sources": [
+          {
+            "name": "Gastronomía Marítima Nariñense",
+            "url": "https://gos.org/pacifico/aborrajados"
+          }
+        ],
+        "license": "MIT",
+        "description": "El hermano marino del aborrajado valluno. Sustituye el queso por pescado fresco, encapsulado en una masa de plátano cuya caramelización actúa como barrera protectora de humedad para la proteína interna."
+      },
+      "category": [
+        "Snack",
+        "Fritura",
+        "Entrada"
+      ],
+      "difficulty": "Media",
+      "prepTime": "30",
+      "cookTime": "20",
+      "servings": 12,
+      "mainIngredients": [
+        "Plátano Maduro (Sobre-madurado/Negro)",
+        "Pescado Blanco (Pargo/Róbalo)",
+        "Harina de Trigo (para el wrap)",
+        "Huevo y Leche (Aparejo)",
+        "Aceite vegetal (Fritura profunda)"
+      ],
+      "tags": [
+        "Tumaco",
+        "Barbacoas",
+        "Fritanga"
+      ],
+      "filePath": "dishes/colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado.md"
     },
     {
       "id": "colombian/pacifica/arroz_atollado_con_mariscos/arroz_atollado_con_mariscos",
