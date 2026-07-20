@@ -5,13 +5,15 @@
   "scripts": {
     "verify:protocol": "node scripts/verify_protocol.js",
     "dev": "node scripts/copy-content.js && astro dev",
-    "build": "npm run verify:protocol && node scripts/copy-content.js && node scripts/generate-api.js && astro build",
+    "build": "npm run verify:protocol && node scripts/copy-content.js && node scripts/generate-api.js && node ../scripts/generate-embeddings.mjs && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
+    "@xenova/transformers": "^2.17.2",
     "astro": "^5.18.1",
     "d3": "^7.9.0",
+    "dexie": "^4.4.4",
     "diff": "^8.0.4",
     "glob": "^13.0.6",
     "gray-matter": "^4.0.3",
