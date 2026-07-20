@@ -1,0 +1,92 @@
+# Guardian Agent - Auto-Merge Decision Workflow
+# Part of Git-Core Protocol v3.1 "Hybrid Intelligence"
+#
+# This workflow evaluates PRs for auto-merge eligibility using a confidence-based scoring system.
+#
+# **Performance:**
+# - Rust implementation: <200ns per evaluation (~10M ops/sec)
+# - PowerShell fallback: 2-3 seconds
+# - Fallback strategy ensures zero downtime during deployments
+#
+# **Decision Criteria:**
+# - Base: CI passes (40) + Approved reviews (40)
+# - Bonus: Has tests (+10) + Single scope (+10)
+# - Penalty: Large PRs (-5 to -20)
+# - Threshold: 70% confidence for auto-merge
+#
+# **Blockers (Immediate rejection):**
+# - high-stakes label
+# - needs-human label
+# - CI failure
+
+name: 🛡️ Guardian Agent (Auto-Merge)
+
+on:
+  pull_request_review:
+    types: [submitted]
+  check_suite:
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to evaluate"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  evaluate:
+    name: 🔍 Evaluate PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: |
+      (github.event_name == 'check_suite' && github.event.check_suite.conclusion == 'success') ||
+      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
+      github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: 📋 Checkout
+        uses: actions/checkout@v6
+
+      - name: 🦀 Setup Rust (if available)
+        uses: dtolnay/rust-toolchain@stable
+        continue-on-error: true
+
+      - name: 🔢 Resolve PR Number
+        id: pr
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "number=${{ inputs.pr_number }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "check_suite" ]; then
+            PR=$(gh pr list --head "${{ github.event.check_suite.head_branch }}" --json number --jq '.[0].number')
+            echo "number=$PR" >> $GITHUB_OUTPUT
+          else
+            echo "number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 🛡️ Run Guardian Core (PowerShell)
+        if: steps.pr.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          # Check if PowerShell script exists
+          if (Test-Path "./scripts/guardian-core.ps1") {
+            Write-Host "✅ Running Guardian Agent (PowerShell)"
+            ./scripts/guardian-core.ps1 `
+              -PrNumber ${{ steps.pr.outputs.number }} `
+              -CiMode `
+              -DryRun:$false
+          } else {
+            Write-Host "⚠️  Guardian script not found, skipping auto-merge evaluation"
+            Write-Host "This is expected if the repository doesn't have the Guardian Agent configured."
+            exit 0
+          }

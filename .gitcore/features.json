@@ -1,4 +1,5 @@
 {
+  "protocol": "3.8.0",
    "_comment": "Feature tracking file inspired by Anthropic's long-running agent research. JSON is used because LLMs are less likely to accidentally modify JSON compared to Markdown.",
    "metadata": {
       "project": "Gastronomic Open Standard (GOS)",
@@ -93,3 +94,14 @@
       "ingredient-audit": "python scripts/audit_missing_ingredients.py"
    }
 }
+
+
+
+
+
+
+
+
+
+
+
