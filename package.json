@@ -48,5 +48,8 @@
   },
   "lint-staged": {
     "*.md": "markdownlint --fix --ignore 'CHANGELOG.md'"
+  },
+  "overrides": {
+    "sharp": "^0.35.3"
   }
 }
