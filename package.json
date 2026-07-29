@@ -50,6 +50,7 @@
     "*.md": "markdownlint --fix --ignore 'CHANGELOG.md'"
   },
   "overrides": {
+    "sharp": "^0.35.3",
     "js-yaml@3": "3.15.0",
     "js-yaml@4": "4.3.0"
   }
