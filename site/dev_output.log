@@ -1,0 +1,89 @@
+
+> gos-site@1.0.0 dev
+> node scripts/copy-content.js && astro dev
+
+Cleaning existing directories...
+Copying dishes to site content and public (with optimizations)...
+Processing china...
+Processing colombian...
+Processing peruvian...
+Copying tips to site content and public...
+Processing advanced...
+Processing learn...
+Done.
+08:24:06 [types] Generated 1ms
+08:24:07 [content] Syncing content
+
+ update  ▶ New version of Astro available: 7.1.1
+  Run pnpm dlx @astrojs/upgrade to update
+
+08:24:12 [content] Synced content
+08:24:12 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.18.2 ready in 6567 ms
+
+┃ Local    http://localhost:4321/gastronomic-open-standard-GOS
+┃ Network  use --host to expose
+
+08:24:12 watching for file changes...
+08:24:13 [ERROR] [vite] Error:   Failed to scan for dependencies from entries:
+  /app/site/src/components/BreadcrumbNav.astro
+/app/site/src/components/CountrySelector.astro
+/app/site/src/components/EmptyState.astro
+/app/site/src/components/ErrorBoundary.astro
+/app/site/src/components/Footer.astro
+/app/site/src/components/GraphExplorer.astro
+/app/site/src/components/ImageUploader.astro
+/app/site/src/components/LoadingSpinner.astro
+/app/site/src/components/MobileNav.astro
+/app/site/src/components/OnboardingChecklist.astro
+/app/site/src/components/PWAGraph.astro
+/app/site/src/components/RecipeCard.astro
+/app/site/src/components/ReviewPanel.astro
+/app/site/src/components/SearchBar.astro
+/app/site/src/components/StarRating.astro
+/app/site/src/components/SyncStatus.astro
+/app/site/src/components/ThemeToggle.astro
+/app/site/src/components/ToastContainer.astro
+/app/site/src/layouts/Layout.astro
+/app/site/src/pages/api-docs.astro
+/app/site/src/pages/dashboard.astro
+/app/site/src/pages/extension-guide.astro
+/app/site/src/pages/favorites.astro
+/app/site/src/pages/graph.astro
+/app/site/src/pages/index.astro
+/app/site/src/pages/privacy.astro
+/app/site/src/pages/profile.astro
+/app/site/src/pages/pwa-test.astro
+/app/site/src/pages/recipes.astro
+/app/site/src/pages/reviews.astro
+/app/site/src/pages/scientific.astro
+/app/site/src/pages/scraped.astro
+/app/site/src/pages/settings.astro
+/app/site/src/pages/category/[category].astro
+/app/site/src/pages/recipes/[...slug].astro
+
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mInvalid assignment target[0m
+
+    script:/app/site/src/components/MobileNav.astro?id=0:26:4:
+[37m      26 │     [32m[37mtoggle?.querySelector('.material-symbols-outlined')!.textConte...
+         ╵     [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mInvalid assignment target[0m
+
+    script:/app/site/src/components/MobileNav.astro?id=0:34:4:
+[37m      34 │     [32m[37mtoggle?.querySelector('.material-symbols-outlined')!.textConte...
+         ╵     [32m^[0m
+
+
+    at failureErrorWithLog (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:1467:15)
+    at /app/site/node_modules/vite/node_modules/esbuild/lib/main.js:926:25
+    at runOnEndCallbacks (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:1307:45)
+    at buildResponseToResult (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:924:7)
+    at /app/site/node_modules/vite/node_modules/esbuild/lib/main.js:936:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:935:54)
+    at handleRequest (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:628:17)
+    at handleIncomingPacket (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:653:7)
+    at Socket.readFromStdout (/app/site/node_modules/vite/node_modules/esbuild/lib/main.js:581:7)
