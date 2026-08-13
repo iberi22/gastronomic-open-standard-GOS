@@ -45,6 +45,17 @@ self.addEventListener('fetch', (event) => {
   // Skip non-http
   if (!url.protocol.startsWith('http')) return;
 
+  // Skip HuggingFace/WebLLM model shards and wasm files
+  // Let the browser's native Cache API used by WebLLM handle them directly to avoid memory bloating
+  if (url.hostname.includes('huggingface.co') ||
+      url.hostname.includes('mlc-ai') ||
+      url.pathname.includes('web-llm') ||
+      url.pathname.includes('webllm') ||
+      url.href.endsWith('.bin') ||
+      url.href.endsWith('.wasm')) {
+    return;
+  }
+
   // API/GitHub - Network First
   if (url.pathname.startsWith('/api/') || 
       url.hostname.includes('github.com') ||
