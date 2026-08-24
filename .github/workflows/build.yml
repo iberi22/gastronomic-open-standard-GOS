@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout, install tools..
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.PAT }}
       - uses: actions/setup-node@v7
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout, install tools..
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           lfs: true
           fetch-depth: 0
