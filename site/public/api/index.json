@@ -1,21 +1,16 @@
 {
-  "totalRecipes": 209,
+  "totalRecipes": 183,
   "languages": [
     {
-      "language": "chinese",
-      "count": 98,
-      "endpoint": "/api/chinese/index.json"
-    },
-    {
       "language": "spanish",
-      "count": 111,
+      "count": 183,
       "endpoint": "/api/spanish/index.json"
     }
   ],
   "countries": [
     {
       "country": "unknown",
-      "count": 98,
+      "count": 59,
       "endpoint": "/api/countries/unknown.json"
     },
     {
@@ -25,7 +20,7 @@
     },
     {
       "country": "peru",
-      "count": 1,
+      "count": 14,
       "endpoint": "/api/countries/peru.json"
     }
   ],

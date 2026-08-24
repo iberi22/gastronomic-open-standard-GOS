@@ -73,7 +73,6 @@ const { placeholder = 'Search restaurants, products, recipes...' } = Astro.props
       const endpoints = [
         `${baseUrl}/api/index.json`,
         `${baseUrl}/api/spanish/colombia.json`,
-        `${baseUrl}/api/chinese/china.json`,
       ];
 
       const results: Array<{ title: string; slug: string; type: string; category?: string }> = [];
