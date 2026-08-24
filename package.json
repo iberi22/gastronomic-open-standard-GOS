@@ -27,10 +27,7 @@
   },
   "homepage": "https://cook.aiursoft.cn",
   "dependencies": {
-    "front-matter": "^4.0.2",
-    "textlint": "^15.6.0",
-    "textlint-rule-ja-space-between-half-and-full-width": "^2.2.0",
-    "textlint-rule-zh-half-and-full-width-bracket": "^1.1.0"
+    "front-matter": "^4.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.59.0",
