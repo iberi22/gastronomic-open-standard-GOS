@@ -1,0 +1,12 @@
+{
+  "name": "@swal/ui",
+  "version": "0.2.0",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./tokens": "./tokens.css",
+    "./antigravity.css": "./antigravity.css",
+    "./toast": "./toast.js"
+  }
+}
