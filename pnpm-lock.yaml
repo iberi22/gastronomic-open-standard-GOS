@@ -29,8 +29,8 @@ importers:
   site:
     dependencies:
       '@swal/ui':
-        specifier: file:../../../cores/swal-ui
-        version: file:../../cores/swal-ui(svelte@5.57.0)
+        specifier: github:iberi22/swal-ui
+        version: https://codeload.github.com/iberi22/swal-ui/tar.gz/a9fbf6a381a4b3d1f9af9211046a9bceedc9756c(svelte@5.57.0)
       astro:
         specifier: ^7.2.10
         version: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.0)(terser@5.51.2)(yaml@2.9.0)
@@ -1979,8 +1979,9 @@ packages:
       svelte: ^5.0.0
       vite: ^6.0.0
 
-  '@swal/ui@file:../../cores/swal-ui':
-    resolution: {directory: ../../cores/swal-ui, type: directory}
+  '@swal/ui@https://codeload.github.com/iberi22/swal-ui/tar.gz/a9fbf6a381a4b3d1f9af9211046a9bceedc9756c':
+    resolution: {gitHosted: true, integrity: sha512-4Ov9VqFco06atIiWehtDUxw35eXxL6g72aQY6Xz2FFdYSAfGeWwrsz53FQ8y55NTHmOwTOxROfOg1F92oJvV3g==, tarball: https://codeload.github.com/iberi22/swal-ui/tar.gz/a9fbf6a381a4b3d1f9af9211046a9bceedc9756c}
+    version: 0.2.0
     peerDependencies:
       svelte: ^5.0.0
 
@@ -6332,7 +6333,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@swal/ui@file:../../cores/swal-ui(svelte@5.57.0)':
+  '@swal/ui@https://codeload.github.com/iberi22/swal-ui/tar.gz/a9fbf6a381a4b3d1f9af9211046a9bceedc9756c(svelte@5.57.0)':
     dependencies:
       svelte: 5.57.0
 
