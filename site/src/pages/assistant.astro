@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import KitchenChat from '../components/KitchenChat.astro';
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Layout title="AI Kitchen Assistant">
+  <div class="min-h-screen w-full px-4 py-8 lg:px-8">
+    <div class="mx-auto max-w-[1440px]">
+      <!-- Page Header -->
+      <div class="mb-6 flex items-center gap-4">
+        <a
+          href={baseUrl}
+          class="flex size-10 items-center justify-center rounded-xl bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-text-light dark:text-text-dark hover:bg-primary hover:text-black hover:border-primary transition-all shadow-sm"
+          aria-label="Back to home"
+        >
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <div>
+          <h1 class="font-display text-2xl font-bold text-text-light dark:text-text-dark sm:text-3xl">AI Kitchen Assistant</h1>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Offline-capable culinary intelligence running directly in your browser</p>
+        </div>
+      </div>
+
+      <!-- Main Chat Component -->
+      <KitchenChat />
+    </div>
+  </div>
+</Layout>
