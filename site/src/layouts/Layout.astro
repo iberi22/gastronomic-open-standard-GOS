@@ -15,6 +15,9 @@ const baseClean = base.replace(/\/$/, '');
     <meta name="theme-color" content="#050507" />
     <link rel="manifest" href={`${baseClean}/manifest.json`} />
     <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Google+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <style is:global>
       @import '@swal/ui/tokens';
       @import '@swal/ui/antigravity.css';
@@ -38,7 +41,7 @@ const baseClean = base.replace(/\/$/, '');
   </head>
   <body class="min-h-screen relative overflow-x-hidden selection:bg-[rgba(139,92,246,0.3)] swal-scrollbar">
     <!-- Edge-hive / Antigravity topbar -->
-    <header class="sticky top-0 z-40 backdrop-blur-xl border-b" style="background: color-mix(in srgb, var(--swal-surface) 86%, transparent); border-color: var(--swal-border);">
+    <header class="sticky top-0 z-40" style="background: var(--swal-bg); border-bottom: 1px solid var(--swal-border);">
       <div class="mx-auto max-w-[1280px] px-4 h-[56px] flex items-center justify-between gap-4">
         <a href={`${baseClean}/`} class="flex items-center gap-3 group">
           <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-black text-[18px] shadow-lg" style="background: linear-gradient(135deg, var(--swal-accent), #06B6D4); box-shadow: 0 8px 24px rgba(139,92,246,0.35);">G</div>
@@ -78,7 +81,7 @@ const baseClean = base.replace(/\/$/, '');
       <slot />
     </main>
 
-    <footer class="mt-12 border-t py-8" style="border-color: var(--swal-border); background: color-mix(in srgb, var(--swal-surface) 55%, transparent);">
+    <footer class="mt-12 py-8" style="border-top: 1px solid var(--swal-border); background: var(--swal-bg);">
       <div class="mx-auto max-w-[1280px] px-4 flex flex-col md:flex-row gap-4 justify-between text-sm" style="color: var(--swal-text-muted);">
         <div>
           <div class="font-semibold" style="color: var(--swal-text);">GOS · Gastronomic Open Standard v2.0</div>
