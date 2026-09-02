@@ -7,3 +7,8 @@ overrides:
   markdown-it: "^14.3.1"
   gray-matter>js-yaml: "^3.15.0"
   front-matter>js-yaml: "^3.15.0"
+  # pines temporales: versiones publicadas <24h violan minimumReleaseAge en CI (liberar 2026-09-03+)
+  rolldown: "1.2.6"
+  "@types/node": "26.4.0"
+  electron-to-chromium: "1.5.418"
+  fast-uri: "3.1.6"
