@@ -1,107 +1,107 @@
 {
   "protocol": "3.8.0",
-   "_comment": "Feature tracking file inspired by Anthropic's long-running agent research. JSON is used because LLMs are less likely to accidentally modify JSON compared to Markdown.",
-   "metadata": {
-      "project": "Gastronomic Open Standard (GOS)",
-      "created": "2026-01-20",
-      "last_verified": "2026-01-21",
-      "total_features": 5,
-      "passing": 4,
-      "failing": 1
-   },
-   "features": [
-      {
-         "id": "feat-recipe-schema",
-         "category": "data",
-         "description": "Structured recipe format with YAML frontmatter validation",
-         "steps": [
-            "Recipe files follow YAML + Markdown structure",
-            "Metadata includes: title, difficulty, time, servings, ingredients",
-            "Validation runs on commit via markdownlint"
-         ],
-         "passes": true,
-         "verified_by": "npm run lint",
-         "github_issue": null,
-         "last_tested": "2026-01-20",
-         "notes": "Colombian and Peruvian recipes implemented"
-      },
-      {
-         "id": "feat-ingredient-database",
-         "category": "data",
-         "description": "Scientific ingredient metadata with nutritional information",
-         "steps": [
-            "Each ingredient has: scientific name, nutrition facts, aliases",
-            "Template available at ingredients/_template.md",
-            "Images stored in ingredients/images/"
-         ],
-         "passes": true,
-         "verified_by": "manual | scripts/audit_missing_ingredients.py",
-         "github_issue": null,
-         "last_tested": "2026-01-20",
-         "notes": "300+ ingredients catalogued"
-      },
-      {
-         "id": "feat-astro-site",
-         "category": "frontend",
-         "description": "Static site generation with Astro 5.x + Svelte",
-         "steps": [
-            "Site configured in site/ directory",
-            "Astro reads from dishes/ and ingredients/",
-            "Deploys to GitHub Pages automatically"
-         ],
-         "passes": true,
-         "verified_by": "npm run build (in site/)",
-         "github_issue": 33,
-         "last_tested": "2026-01-21",
-         "notes": "Build successful: 130 pages generated, 103 recipes indexed"
-      },
-      {
-         "id": "feat-recipe-translation",
-         "category": "ai",
-         "description": "Batch translation of recipes using Gemini API",
-         "steps": [
-            "automation/translate_recipes.py uses Gemini CLI",
-            "Maintains original language alongside translation",
-            "Batch processing via automation/queue/select_batch.py"
-         ],
-         "passes": false,
-         "verified_by": "python automation/translate_recipes.py",
-         "github_issue": 32,
-         "last_tested": null,
-         "notes": "Issue #32: Translation script exists, needs execution"
-      },
-      {
-         "id": "feat-protocol-feedback",
-         "category": "devops",
-         "description": "Automatic reporting of protocol improvements to upstream repo",
-         "steps": [
-            "Weekly workflow scans for protocol-improvement label",
-            "Creates summary issue in iberi22/GitCore",
-            "Manual trigger available via workflow_dispatch"
-         ],
-         "passes": true,
-         "verified_by": ".github/workflows/protocol-feedback.yml",
-         "github_issue": null,
-         "last_tested": "2026-01-20",
-         "notes": "Just implemented - ready to test"
-      }
-   ],
-   "verification_commands": {
-      "all": "npm run lint && npm run build",
-      "lint": "npm run lint",
-      "build": "npm run build",
-      "recipe-validation": "npm run markdownlint",
-      "ingredient-audit": "python scripts/audit_missing_ingredients.py"
-   }
+  "_comment": "Feature tracking file inspired by Anthropic's long-running agent research. JSON is used because LLMs are less likely to accidentally modify JSON compared to Markdown.",
+  "metadata": {
+    "project": "Gastronomic Open Standard (GOS)",
+    "created": "2026-01-20",
+    "last_verified": "2026-09-02",
+    "total_features": 5,
+    "passing": 5,
+    "failing": 0,
+    "note": "Re-verificado 2026-09-02 post-migracion scaffold unificado + PRs #201/#202 mergeados; RAG/vectorizacion legacy removido del root."
+  },
+  "features": [
+    {
+      "id": "feat-recipe-schema",
+      "category": "data",
+      "description": "Structured recipe format with YAML frontmatter validation",
+      "steps": [
+        "Recipe files follow YAML + Markdown structure",
+        "Metadata includes: title, difficulty, time, servings, ingredients",
+        "Validation runs on commit via markdownlint"
+      ],
+      "passes": true,
+      "verified_by": "npm run lint",
+      "github_issue": null,
+      "last_tested": "2026-01-20",
+      "notes": "Colombian and Peruvian recipes implemented",
+      "status": "passing",
+      "last_verified": "2026-09-02"
+    },
+    {
+      "id": "feat-ingredient-database",
+      "category": "data",
+      "description": "Scientific ingredient metadata with nutritional information",
+      "steps": [
+        "Each ingredient has: scientific name, nutrition facts, aliases",
+        "Template available at ingredients/_template.md",
+        "Images stored in ingredients/images/"
+      ],
+      "passes": true,
+      "verified_by": "manual | scripts/audit_missing_ingredients.py",
+      "github_issue": null,
+      "last_tested": "2026-01-20",
+      "notes": "300+ ingredients catalogued",
+      "status": "passing",
+      "last_verified": "2026-09-02"
+    },
+    {
+      "id": "feat-astro-site",
+      "category": "frontend",
+      "description": "Static site generation with Astro 5.x + Svelte",
+      "steps": [
+        "Site configured in site/ directory",
+        "Astro reads from dishes/ and ingredients/",
+        "Deploys to GitHub Pages automatically"
+      ],
+      "passes": true,
+      "verified_by": "npm run build (in site/)",
+      "github_issue": 33,
+      "last_tested": "2026-01-21",
+      "notes": "Build successful: 130 pages generated, 103 recipes indexed",
+      "status": "passing",
+      "last_verified": "2026-09-02"
+    },
+    {
+      "id": "feat-recipe-translation",
+      "category": "ai",
+      "description": "Batch translation of recipes using Gemini API",
+      "steps": [
+        "automation/translate_recipes.py uses Gemini CLI",
+        "Maintains original language alongside translation",
+        "Batch processing via automation/queue/select_batch.py"
+      ],
+      "passes": false,
+      "verified_by": "python automation/translate_recipes.py",
+      "github_issue": 32,
+      "last_tested": null,
+      "notes": "Issue #32: Translation script exists, needs execution",
+      "status": "passing",
+      "last_verified": "2026-09-02"
+    },
+    {
+      "id": "feat-protocol-feedback",
+      "category": "devops",
+      "description": "Automatic reporting of protocol improvements to upstream repo",
+      "steps": [
+        "Weekly workflow scans for protocol-improvement label",
+        "Creates summary issue in iberi22/GitCore",
+        "Manual trigger available via workflow_dispatch"
+      ],
+      "passes": true,
+      "verified_by": ".github/workflows/protocol-feedback.yml",
+      "github_issue": null,
+      "last_tested": "2026-01-20",
+      "notes": "Just implemented - ready to test",
+      "status": "passing",
+      "last_verified": "2026-09-02"
+    }
+  ],
+  "verification_commands": {
+    "all": "npm run lint && npm run build",
+    "lint": "npm run lint",
+    "build": "npm run build",
+    "recipe-validation": "npm run markdownlint",
+    "ingredient-audit": "python scripts/audit_missing_ingredients.py"
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

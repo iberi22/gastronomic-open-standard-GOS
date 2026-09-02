@@ -124,26 +124,17 @@ Following improved practices, created:
 - **#38**: Astro site structure (5 files, all content provided)
 - **#36**: GitHub Pages workflow (1 file, blocked by #38)
 
-## Batch selection
+## Batch selection (legacy — removed 2026-09-02)
 
-- Script: `automation/queue/select_batch.py`
-- Reads `recipes_metadata.json` and supports filters.
-- Excludes already-processed files (e.g., `recipes_vectors.jsonl`).
+- El pipeline root `automation/queue/select_batch.py` + `recipes_metadata.json` /
+  `recipes_vectors.jsonl` fue eliminado (RAG/GPU frágil removido en d3a767a9).
+- La indexación de recetas ahora la produce `site/scripts/generate-api.js` y
+  `generate-graph.js` hacia `site/dist/api` y `graph-data.json`.
 
-Example:
+## Embeddings (legacy — removed 2026-09-02)
 
-```bash
-python automation/queue/select_batch.py \
-  --metadata recipes_metadata.json \
-  --processed recipes_vectors.jsonl \
-  --count 10 \
-  --output-files automation/queue/selected_files.txt
-```
-
-## Embeddings
-
-- Default batch vectorization script: `.github/scripts_ts/vectorize_selected.ts` (embeds only selected files).
-- You can switch to Vertex AI (text-embedding-004) later using a Python script and WIF auth.
+- La vectorización local (Vertex AI / `vectorize_selected.ts`) ya no corre en este
+  repo. Búsquedas semánticas: Xavier (API :8006) o Cloudflare Workers AI en runtime.
 
 ## Conventions
 

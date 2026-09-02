@@ -13,16 +13,17 @@
 
 ```
 gastronomic-open-standard-GOS/
-├── src/                    # Código fuente
-├── recipes_metadata.json   # Metadatos de recetas
-├── recipes_vectors.jsonl   # Vectores de recetas
-├── package.json
-├── docker-compose.yml
+├── dishes/                 # 111+ recetas canónicas (YAML frontmatter + MD)
+├── ingredients/            # Condimentos + base de datos de ingredientes
+├── tips/                   # Consejos gastronómicos
+├── site/                   # Sitio Astro 7 + Svelte 5 (@swal/ui, PWA, GH/CF Pages)
+├── docs/                   # Documentación humana (SRS, metodología)
+├── scripts/                # Generación: copy-content, generate-api, generate-graph
+├── tests/                  # Suites de validación del protocolo
 ├── README.es.md
 ├── README.md
 ├── AGENTS.md               # Contrato de agentes
-├── PLAN_DE_ESTANDARIZACION.md
-└── .gitcore/              # Git-Core protocol
+└── .gitcore/               # Git-Core protocol 3.8.0
 ```
 
 ## Módulos Principales
