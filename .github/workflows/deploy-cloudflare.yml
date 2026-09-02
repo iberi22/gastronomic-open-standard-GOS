@@ -61,9 +61,10 @@ jobs:
         working-directory: ./site
         run: pnpm exec astro build
 
-      - name: Deploy to Cloudflare Pages
-        working-directory: ./site
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-        run: pnpm exec wrangler pages deploy dist --project-name=gos-site --branch=main --commit-dirty=true
+      - name: ⚡ Deploy to Cloudflare Pages (patrón canónico worldexams: wrangler-action)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: "site"
+          command: pages deploy dist --project-name=gos-site --branch=main --commit-dirty=true
