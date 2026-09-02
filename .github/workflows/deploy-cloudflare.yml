@@ -28,7 +28,7 @@ jobs:
         with:
           lfs: true
 
-      - name: Checkout @swal/ui (file: dep del workspace)
+      - name: "Checkout @swal/ui (dependencia file: del workspace)"
         uses: actions/checkout@v7
         with:
           repository: iberi22/swal-ui

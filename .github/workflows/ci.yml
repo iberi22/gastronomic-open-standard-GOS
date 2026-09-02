@@ -14,7 +14,7 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 11
-      - name: Checkout @swal/ui (file: dep del workspace)
+      - name: "Checkout @swal/ui (dependencia file: del workspace)"
         uses: actions/checkout@v7
         with:
           repository: iberi22/swal-ui
