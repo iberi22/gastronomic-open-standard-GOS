@@ -1,6 +1,11 @@
 packages:
   - "site"
 
+onlyBuiltDependencies:
+  - esbuild
+  - workerd
+  - sharp
+
 overrides:
   sharp: "^0.35.3"
   js-yaml: "^5.4.1"
