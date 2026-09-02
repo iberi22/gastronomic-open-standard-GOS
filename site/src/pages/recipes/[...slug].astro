@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { recipeJsonLd } from '../../lib/seo';
+
 export async function getStaticPaths() {
   const col = await getCollection('dishes');
   return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
@@ -8,8 +10,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const jsonLd = recipeJsonLd(entry);
 ---
 <Layout title={`${(entry.data as any).title || entry.id} — Receta GOS`}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)}></script>
   <a href={`${base}/recipes`} class="back">← Recetas</a>
   <article class="article">
     <h1>{(entry.data as any).title || entry.id}</h1>

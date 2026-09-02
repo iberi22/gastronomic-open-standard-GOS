@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SubstanceCard from '../components/SubstanceCard.svelte';
+import { getCollection } from 'astro:content';
+
 const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const substances = await getCollection('substances');
+const topSubstances = substances.slice(0, 6);
 ---
 <Layout title="Ciencia — Vitaminas, substancias y afecciones — GOS">
   <h1 class="title">Capa científica</h1>
-  <p class="sub">Micronutrientes, compuestos bioactivos y <strong>health registry</strong> conectados a afecciones. Cada ficha de ingrediente alimenta el grafo con nodos <code>vitamin/ nutrient / substance / condition</code>.</p>
+  <p class="sub">Micronutrientes, compuestos bioactivos y <strong>health registry</strong> conectados a afecciones. Cada ficha de ingrediente alimenta el grafo con nodos <code>vitamin / nutrient / substance / condition</code>.</p>
 
   <div class="grid">
     <div class="card">
@@ -18,14 +23,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
       <a href={`${base}/ingredients`} class="link">Explorar ingredientes →</a>
     </div>
     <div class="card accent">
-      <h3>⚗️ Substancias & Descubrimientos</h3>
-      <p>De <code>active_compounds</code>: Alicina (ajo), Dodecenal (cilantro), Cuminaldehído (comino), Gingerol (jengibre). Cada sustancia es un nodo morado conectado a ingredientes y afecciones.</p>
+      <h3>⚗️ Enciclopedia de Substancias (30)</h3>
+      <p>Catálogo completo de principios activos: Alicina, Capsaicina, Curcumina, Gingerol, Piperina, etc. Con fórmula, sazón, sabor y evidencias PubMed.</p>
       <ul>
-        <li>Alicina → hipertensión, hiperlipidemia</li>
-        <li>Gingerol → náusea, inflamación (COX-2)</li>
-        <li>Dodecenal → Salmonella</li>
+        <li>30 Fichas con fotografías reales</li>
+        <li>Mapeo de sazón, sabor y textura</li>
+        <li>Evidencia médica registrada</li>
       </ul>
-      <a href={`${base}/graph`} class="link">Ver en grafo →</a>
+      <a href={`${base}/substances`} class="link">Ver Enciclopedia de Substancias (30) →</a>
     </div>
     <div class="card danger">
       <h3>♥ Afecciones & Beneficios</h3>
@@ -49,6 +54,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
     </div>
   </div>
 
+  <section class="substances-section">
+    <div class="section-head">
+      <h2>Substancias Bioactivas Destacadas</h2>
+      <a href={`${base}/substances`} class="link-all">Ver las 30 substancias →</a>
+    </div>
+    <div class="substances-grid">
+      {topSubstances.map(substance => (
+        <SubstanceCard substance={substance as any} base={base} client:load />
+      ))}
+    </div>
+  </section>
+
   <div class="protocols">
     <h3>Protocolos científicos</h3>
     <p>Para enriquecer ingredientes/recetas sigue <code>docs/SCIENTIFIC_INGREDIENT_PROTOCOL.md</code> y <code>SCIENTIFIC_RECIPE_PROTOCOL.md</code>. Investigaciones recientes se agregan como <code>substance.discovery_year</code> y <code>studies.doi</code>.</p>
@@ -68,7 +85,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
   .card ul{ margin:8px 0 0 18px; color: var(--swal-text-secondary); font-size:13px; line-height:1.7; }
   .card code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
   .link{ color: var(--swal-accent); text-decoration:none; font-size:13px; font-weight:600; display:inline-block; margin-top:10px; }
-  .protocols{ margin-top:18px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
+
+  .substances-section{ margin-top:28px; }
+  .section-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+  .section-head h2{ margin:0; font-size:18px; font-weight:800; color: var(--swal-text); }
+  .link-all{ color: var(--swal-accent); font-size:13px; font-weight:600; text-decoration:none; }
+  .substances-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:16px; }
+
+  .protocols{ margin-top:28px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
   .protocols h3{ margin:0 0 6px; font-size:14px; color: var(--swal-text); }
   .protocols p{ color: var(--swal-text-muted); font-size:12px; line-height:1.6; }
   .protocols code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }

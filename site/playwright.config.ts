@@ -22,5 +22,7 @@ export default defineConfig({
   },
   projects: [
     { name: 'mobile-antigravity', testMatch: /theme-antigravity-mobile\.spec\.ts/ },
+    { name: 'aui-render', testMatch: /aui-render\.spec\.ts/ },
+    { name: 'substance-encyclopedia', testMatch: /substance-encyclopedia\.spec\.ts/ },
   ],
 });

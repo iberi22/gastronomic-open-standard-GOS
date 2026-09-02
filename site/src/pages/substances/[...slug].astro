@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { substanceJsonLd } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const col = await getCollection('substances');
+  return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const data = entry.data as any;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const jsonLd = substanceJsonLd(entry);
+---
+
+<Layout title={`${data.name} (${data.formula || ''}) — Enciclopedia GOS`} description={`${data.name}: ${data.benefit || ''}. Perfil culinario de sazón, sabor y textura en Gastronomic Open Standard.`}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)}></script>
+
+  <a href={`${base}/substances`} class="back">← Enciclopedia de Substancias</a>
+
+  <article class="article">
+    <header class="header">
+      <div class="title-row">
+        <h1>{data.name}</h1>
+        {data.formula && <span class="formula">{data.formula}</span>}
+      </div>
+      <div class="meta-row">
+        {data.discovery_year && <span class="pill">Año descubrimiento: {data.discovery_year}</span>}
+        {data.source_ingredient && <span class="pill accent">Fuente: {data.source_ingredient}</span>}
+        <a href={`${base}/graph?filter=substance:${encodeURIComponent((data.name || '').toLowerCase())}`} class="pill graph-link">🕸️ Ver en Grafo GOS</a>
+      </div>
+    </header>
+
+    {data.image && (
+      <div class="image-container">
+        <img src={`${base}${data.image}`} alt={data.name} class="hero-image" />
+        {data.image_attribution && <span class="attribution">Foto: {data.image_attribution}</span>}
+      </div>
+    )}
+
+    <div class="grid-summary">
+      <div class="box">
+        <h3> Sazón</h3>
+        <p>{data.sazon || 'No especificado'}</p>
+      </div>
+      <div class="box">
+        <h3> Sabor</h3>
+        <p>{data.sabor || 'No especificado'}</p>
+      </div>
+      <div class="box">
+        <h3> Textura</h3>
+        <p>{data.textura || 'No especificado'}</p>
+      </div>
+    </div>
+
+    {data.benefit && (
+      <div class="benefit-box">
+        <h3>Beneficios de Salud & Efectos Bioactivos</h3>
+        <p>{data.benefit}</p>
+      </div>
+    )}
+
+    {data.health_registry && data.health_registry.length > 0 && (
+      <div class="health-registry">
+        <h3>Health Registry — Evidencia Médica & Ensayos</h3>
+        {data.health_registry.map((item: any) => (
+          <div class="health-item">
+            <div class="health-head">
+              <strong>{item.condition}</strong>
+              {item.evidence_level && <span class="badge">{item.evidence_level} Evidence</span>}
+            </div>
+            {item.mechanism && <p class="mechanism"><strong>Mecanismo:</strong> {item.mechanism}</p>}
+            {item.studies && item.studies.length > 0 && (
+              <ul class="studies">
+                {item.studies.map((st: any) => (
+                  <li>
+                    <span>{st.title}</span> — <em>{st.source}</em>
+                    {st.doi && <a href={`https://doi.org/${st.doi}`} target="_blank" rel="noopener noreferrer">DOI: {st.doi}</a>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {data.sources && data.sources.length > 0 && (
+      <footer class="sources-footer">
+        <strong>Fuentes científicas:</strong> {data.sources.join(' · ')}
+      </footer>
+    )}
+
+    <div class="discussions-footer">
+      <h3>💬 ¿Puntos de vista o hallazgos científicos sobre {data.name}?</h3>
+      <p>Aporta a la comunidad investigadora y comparte tus observaciones en el foro de discusión de GOS.</p>
+      <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/discussions" target="_blank" rel="noopener noreferrer" class="btn-discussion">
+        Discutir en GitHub Discussions →
+      </a>
+    </div>
+  </article>
+
+  <style>
+    .back { color: var(--swal-accent); text-decoration: none; font-size: 13px; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+    .article { border: 1px solid var(--swal-border); background: var(--swal-surface); border-radius: 20px; padding: 24px; }
+    .header { margin-bottom: 20px; }
+    .title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .title-row h1 { margin: 0; font-size: 28px; font-weight: 800; color: var(--swal-text); }
+    .formula { font-family: var(--swal-font-mono); font-size: 16px; color: var(--swal-accent); font-weight: 700; background: var(--swal-bg); padding: 2px 10px; border-radius: 8px; border: 1px solid var(--swal-border); }
+    .meta-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .pill { font-size: 11px; padding: 4px 10px; border-radius: 999px; background: var(--swal-bg); border: 1px solid var(--swal-border); color: var(--swal-text-secondary); }
+    .pill.accent { color: var(--swal-accent); border-color: color-mix(in srgb, var(--swal-accent) 30%, transparent); }
+    .graph-link { color: var(--swal-text); text-decoration: none; background: var(--swal-surface); }
+    .graph-link:hover { border-color: var(--swal-accent); color: var(--swal-accent); }
+    .image-container { position: relative; margin: 16px 0 20px 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--swal-border); max-height: 380px; }
+    .hero-image { width: 100%; height: 100%; max-height: 380px; object-fit: cover; display: block; }
+    .attribution { position: absolute; bottom: 8px; right: 12px; font-size: 10px; color: #d4d4d8; background: rgba(5,5,7,0.75); padding: 2px 8px; border-radius: 4px; backdrop-filter: blur(4px); }
+    .grid-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px; }
+    .box { border: 1px solid var(--swal-border); background: var(--swal-bg); border-radius: 12px; padding: 14px; }
+    .box h3 { margin: 0 0 6px 0; font-size: 12px; text-transform: uppercase; color: var(--swal-text-muted); letter-spacing: 0.05em; }
+    .box p { margin: 0; font-size: 13px; color: var(--swal-text); line-height: 1.5; }
+    .benefit-box { border: 1px solid color-mix(in srgb, var(--swal-accent) 30%, var(--swal-border)); background: color-mix(in srgb, var(--swal-accent) 5%, var(--swal-bg)); border-radius: 14px; padding: 16px; margin-bottom: 20px; }
+    .benefit-box h3 { margin: 0 0 6px 0; font-size: 14px; color: var(--swal-accent); }
+    .benefit-box p { margin: 0; font-size: 13px; color: var(--swal-text); line-height: 1.6; }
+    .health-registry { border: 1px solid var(--swal-border); background: var(--swal-bg); border-radius: 16px; padding: 16px; margin-bottom: 20px; }
+    .health-registry h3 { margin: 0 0 12px 0; font-size: 14px; color: var(--swal-text); }
+    .health-item { border-top: 1px solid var(--swal-border); padding-top: 10px; margin-top: 10px; }
+    .health-item:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+    .health-head { display: flex; justify-content: space-between; align-items: center; }
+    .badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--swal-accent) 15%, transparent); color: var(--swal-accent); border: 1px solid color-mix(in srgb, var(--swal-accent) 30%, transparent); }
+    .mechanism { font-size: 12px; color: var(--swal-text-secondary); margin: 6px 0; }
+    .studies { margin: 4px 0 0 16px; padding: 0; font-size: 12px; color: var(--swal-text-muted); }
+    .studies a { color: var(--swal-accent); text-decoration: none; margin-left: 6px; }
+    .prose { color: var(--swal-text-secondary); line-height: 1.7; margin-bottom: 20px; }
+    .sources-footer { font-size: 11px; color: var(--swal-text-muted); border-top: 1px solid var(--swal-border); padding-top: 12px; margin-bottom: 20px; }
+    .discussions-footer { border: 1px solid var(--swal-border); background: var(--swal-bg); border-radius: 16px; padding: 20px; text-align: center; }
+    .discussions-footer h3 { margin: 0 0 6px 0; font-size: 15px; color: var(--swal-text); }
+    .discussions-footer p { margin: 0 0 14px 0; font-size: 12px; color: var(--swal-text-muted); }
+    .btn-discussion { display: inline-block; padding: 8px 18px; border-radius: 10px; background: var(--swal-surface); border: 1px solid var(--swal-border); color: var(--swal-accent); font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+    .btn-discussion:hover { border-color: var(--swal-accent); background: color-mix(in srgb, var(--swal-accent) 10%, var(--swal-surface)); }
+  </style>
+</Layout>

@@ -1,0 +1,31 @@
+name: GOS Knowledge & Science Discussion
+description: Propón hallazgos científicos, correcciones de sustancias bioactivas o puntos de vista sobre recetas.
+title: "[Conocimiento] "
+labels: ["gos", "science", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por contribuir al Gastronomic Open Standard (GOS).
+  - type: input
+    id: entity
+    attributes:
+      label: Sustancia o Ingrediente
+      description: Nombre de la sustancia bioactiva o ingrediente relacionado (ej. Alicina, Capsaicina, Ajo).
+      placeholder: Ej. Alicina / Allium sativum
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Punto de Vista / Propuesta
+      description: Describe tus observaciones, evidencias o propuestas de mejora en la ficha.
+      placeholder: Describe el hallazgo o corrección...
+    validations:
+      required: true
+  - type: input
+    id: doi
+    attributes:
+      label: Referencia Científica / DOI / PubMed
+      description: Enlace o DOI del estudio que respalda la evidencia (opcional).
+      placeholder: Ej. 10.1186/1471-2261-8-13
