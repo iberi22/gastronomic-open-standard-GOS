@@ -28,6 +28,12 @@ jobs:
         with:
           lfs: true
 
+      - name: Checkout @swal/ui (file: dep del workspace)
+        uses: actions/checkout@v7
+        with:
+          repository: iberi22/swal-ui
+          path: ../../../cores/swal-ui
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
