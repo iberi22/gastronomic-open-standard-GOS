@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iberi22.github.io/gastronomic-open-standard-GOS/sitemap.xml

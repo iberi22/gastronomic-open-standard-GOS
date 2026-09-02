@@ -1,0 +1,12 @@
+# GOS — Gastronomic Open Standard — AI Agent Protocol
+# appId: gos
+# Graph: /graph-data.json (1282 nodes, 7622 edges)
+# Catalog: /api/countries/catalog.json (top 20 per country, via GOS-01)
+# Ingredients: /api/ingredients/variants.json (via GOS-02)
+# Substances: /api/substances.json (via GOS-03)
+# Paywall: POST /api/agent/pay with {tier: "socio"} -> JWT via Cloudflare KV/D1 billing 20% handling (see site/src/lib/billing.ts)
+# Billing: tier socio 20% handling, infra 100% + AI*1.1 (Cloudflare Workers AI), JWT required for /graph-data.json when agents scale
+# SEO: JSON-LD Recipe/Ingredient/ChemicalSubstance via site/src/lib/seo.ts (GOS-03), sitemap.xml, robots.txt
+# Docs: https://github.com/iberi22/gastronomic-open-standard-GOS
+# PWA: https://iberi22.github.io/gastronomic-open-standard-GOS/
+# Discussions: https://github.com/iberi22/gastronomic-open-standard-GOS/discussions (anchored to recipes/ingredients/substances)
