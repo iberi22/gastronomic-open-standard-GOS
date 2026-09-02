@@ -1,0 +1,181 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { substanceJsonLd } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const col = await getCollection('substances');
+  return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const s = entry.data as any;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const title = `${s.name} (${s.formula ?? ''}) — Sustancia GOS`;
+const desc = s.benefit ?? s.sazon ?? `${s.name} sustancia bioactiva`;
+const jsonLd = substanceJsonLd({ slug: entry.id, data: s });
+const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`;
+const discussUrl = `https://github.com/iberi22/gastronomic-open-standard-GOS/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`;
+---
+
+<Layout title={title} description={desc}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline></script>
+
+  <a href={`${baseUrl}/substances`} class="back">← Substances</a>
+
+  <article class="article">
+    <div class="header">
+      <div class="head-main">
+        <div class="eyebrow">GOS · SUBSTANCE · {s.formula ?? ''} {s.discovery_year ? `· ${s.discovery_year}` : ''}</div>
+        <h1 class="h1">{s.name} <span class="formula">{s.formula ? `· ${s.formula}` : ''}</span></h1>
+        {s.source_ingredient && <p class="source">Fuente: {s.source_ingredient}</p>}
+        {s.benefit && <p class="benefit">{s.benefit}</p>}
+      </div>
+      {s.image && (
+        <div class="media">
+          <img src={s.image} alt={s.name} loading="eager" width="800" height="600" />
+          {s.image_attribution && <span class="attr">{s.image_attribution}</span>}
+        </div>
+      )}
+    </div>
+
+    <div class="chips">
+      {s.formula && <span class="chip mono">{s.formula}</span>}
+      {s.discovery_year && <span class="chip">Descubierta {s.discovery_year}</span>}
+      {s.tags?.map(t => <span class="chip">{t}</span>)}
+    </div>
+
+    <div class="grid3">
+      {s.sazon && (
+        <div class="box">
+          <h3>Sazón</h3>
+          <p>{s.sazon}</p>
+        </div>
+      )}
+      {s.sabor && (
+        <div class="box">
+          <h3>Sabor</h3>
+          <p>{s.sabor}</p>
+        </div>
+      )}
+      {s.textura && (
+        <div class="box">
+          <h3>Textura</h3>
+          <p>{s.textura}</p>
+        </div>
+      )}
+    </div>
+
+    {(s.vitaminas?.length || s.compuestos?.length) && (
+      <div class="row">
+        {s.vitaminas?.length && (
+          <div class="box">
+            <h3>Vitaminas asociadas</h3>
+            <div class="tagrow">{s.vitaminas.map(v => <span class="tag">{v}</span>)}</div>
+          </div>
+        )}
+        {s.compuestos?.length && (
+          <div class="box">
+            <h3>Compuestos relacionados</h3>
+            <div class="tagrow">{s.compuestos.map(c => <span class="tag mono">{c}</span>)}</div>
+          </div>
+        )}
+      </div>
+    )}
+
+    {s.health_registry?.length && (
+      <div class="box accent">
+        <h3>Health registry</h3>
+        {s.health_registry.map(h => (
+          <div class="health">
+            <div class="hhead">
+              <strong>{h.condition}</strong>
+              <span class="badge">{h.evidence_level}</span>
+            </div>
+            {h.mechanism && <p class="mech">{h.mechanism}</p>}
+            {h.compounds && <p class="comps">Compuestos: {h.compounds.join(', ')}</p>}
+            {h.studies && (
+              <ul class="studies">
+                {h.studies.map(st => (
+                  <li>
+                    {st.title} — <em>{st.source}{st.year ? ` ${st.year}` : ''}</em>
+                    {st.doi && <a href={`https://doi.org/${st.doi}`} target="_blank" rel="noopener"> {st.doi}</a>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    )}
+
+    <div class="prose"><Content /></div>
+
+    <div class="actions">
+      <a href={graphUrl} class="btn primary">Ver en grafo</a>
+      <a href={discussUrl} target="_blank" rel="noopener" class="btn">Discutir en GitHub Discussions</a>
+      <button type="button" class="btn ghost" id="share-btn">Compartir</button>
+    </div>
+
+    <p class="seo-note">JSON-LD <code>ChemicalSubstance</code> embebido — validable en <a href="https://validator.schema.org" target="_blank">validator.schema.org</a>. Fotos en <code>public/images/substances/{entry.id}.jpg</code>.</p>
+  </article>
+
+  <script is:inline define:vars={{ entryId: entry.id, sName: s.name }}>
+    document.getElementById('share-btn')?.addEventListener('click', async () => {
+      const data = { title: `${sName} — GOS`, text: `${sName} sustancia bioactiva del GOS`, url: location.href };
+      try {
+        if (navigator.share) await navigator.share(data);
+        else if (navigator.clipboard) { await navigator.clipboard.writeText(location.href); alert('Enlace copiado'); }
+      } catch {}
+    });
+  </script>
+
+  <style>
+    .back{ color: var(--swal-accent); text-decoration:none; font-size:12px; }
+    .article{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:20px; padding:22px; margin-top:12px; }
+    .header{ display:grid; grid-template-columns: 1.2fr 0.8fr; gap:16px; align-items:start; }
+    @media (max-width: 880px){ .header{ grid-template-columns: 1fr; } }
+    .eyebrow{ font-size:10px; letter-spacing:0.12em; font-weight:700; color: var(--swal-accent); }
+    .h1{ margin:6px 0 8px; font-size:28px; font-weight:850; letter-spacing:-0.03em; color: var(--swal-text); }
+    .formula{ font-weight:400; color: var(--swal-text-muted); font-family: var(--swal-font-mono); font-size:16px; }
+    .source{ margin:0; color: var(--swal-text-muted); font-style:italic; font-size:12px; }
+    .benefit{ margin:8px 0 0; color: var(--swal-text-secondary); line-height:1.6; font-size:13px; }
+    .media{ border:1px solid var(--swal-border); border-radius:16px; overflow:hidden; background: var(--swal-bg); }
+    .media img{ width:100%; height:auto; display:block; }
+    .attr{ display:block; font-size:11px; color: var(--swal-text-muted); padding:6px 10px; border-top:1px solid var(--swal-border); font-style:italic; }
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+    .chip{ font-size:11px; padding:5px 10px; border-radius:999px; background: var(--swal-bg); border:1px solid var(--swal-border); color: var(--swal-text-secondary); }
+    .chip.mono{ font-family: var(--swal-font-mono); font-weight:700; color: var(--swal-text); border-color: color-mix(in srgb, var(--swal-accent) 25%, var(--swal-border)); }
+    .grid3{ display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:16px; }
+    @media (max-width: 760px){ .grid3{ grid-template-columns: 1fr; } }
+    .row{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px; }
+    @media (max-width: 760px){ .row{ grid-template-columns: 1fr; } }
+    .box{ border:1px solid var(--swal-border); border-radius:16px; padding:14px; background: var(--swal-bg); }
+    .box.accent{ border-color: color-mix(in srgb, var(--swal-accent) 25%, var(--swal-border)); background: color-mix(in srgb, var(--swal-accent) 6%, var(--swal-surface)); }
+    .box h3{ margin:0 0 8px; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color: var(--swal-text-muted); }
+    .box p{ margin:0; color: var(--swal-text-secondary); font-size:13px; line-height:1.6; }
+    .tagrow{ display:flex; flex-wrap:wrap; gap:6px; }
+    .tag{ font-size:11px; padding:4px 8px; border-radius:999px; background: var(--swal-surface); border:1px solid var(--swal-border); color: var(--swal-text-secondary); }
+    .tag.mono{ font-family: var(--swal-font-mono); }
+    .health{ border-top:1px solid var(--swal-border); padding-top:10px; margin-top:10px; }
+    .health:first-child{ border-top:none; padding-top:0; margin-top:0; }
+    .hhead{ display:flex; align-items:center; gap:8px; }
+    .hhead strong{ color: var(--swal-text); font-size:13px; }
+    .badge{ font-size:10px; padding:2px 6px; border-radius:6px; border:1px solid var(--swal-border); background: var(--swal-surface); color: var(--swal-accent); font-weight:700; text-transform:uppercase; letter-spacing:0.06em; }
+    .mech{ color: var(--swal-text-secondary); font-size:13px; line-height:1.6; margin:6px 0 0; }
+    .comps{ font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-muted); margin:6px 0 0; }
+    .studies{ margin:8px 0 0 18px; color: var(--swal-text-secondary); font-size:12px; line-height:1.6; }
+    .studies a{ color: var(--swal-accent); }
+    .prose{ color: var(--swal-text-secondary); line-height:1.75; margin-top:16px; }
+    .prose :global(h2){ color: var(--swal-text); margin-top:1.2em; }
+    .prose :global(img){ max-width:100%; border-radius:12px; border:1px solid var(--swal-border); }
+    .actions{ display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+    .btn{ font-size:13px; font-weight:600; padding:8px 14px; border-radius:999px; text-decoration:none; border:1px solid var(--swal-border); background: var(--swal-bg); color: var(--swal-text); cursor:pointer; }
+    .btn.primary{ background: var(--swal-accent); color: white; border-color: var(--swal-accent); }
+    .btn.ghost{ background: transparent; }
+    .seo-note{ margin-top:14px; font-size:11px; color: var(--swal-text-muted); line-height:1.6; }
+    .seo-note code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
+    .seo-note a{ color: var(--swal-accent); }
+  </style>
+</Layout>

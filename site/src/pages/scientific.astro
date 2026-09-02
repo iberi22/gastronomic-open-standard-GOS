@@ -25,7 +25,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
         <li>Gingerol → náusea, inflamación (COX-2)</li>
         <li>Dodecenal → Salmonella</li>
       </ul>
-      <a href={`${base}/graph`} class="link">Ver en grafo →</a>
+      <a href={`${base}/substances`} class="link">Enciclopedia 30 sustancias →</a>
+      <a href={`${base}/graph`} class="link" style="margin-left:10px;">Ver en grafo →</a>
     </div>
     <div class="card danger">
       <h3>♥ Afecciones & Beneficios</h3>
@@ -49,6 +50,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
     </div>
   </div>
 
+  <div class="showcase">
+    <h3>Enciclopedia de Sustancias (30) — preview</h3>
+    <p>Descubre fórmula química, sazón, sabor, textura y <em>health registry</em> con fotos 800×600. Antigravity single tone, JSON-LD ChemicalSubstance validado.</p>
+    <div class="showcase-grid">
+      <a href={`${base}/substances/alicina`} class="mini"><span class="mini-formula">C6H10OS2</span><strong>Alicina</strong><span>ajo · 1944 · pungente sulfuroso</span></a>
+      <a href={`${base}/substances/capsaicina`} class="mini"><span class="mini-formula">C18H27NO3</span><strong>Capsaicina</strong><span>ají · 1816 · TRPV1 quemante</span></a>
+      <a href={`${base}/substances/curcumina`} class="mini"><span class="mini-formula">C21H20O6</span><strong>Curcumina</strong><span>cúrcuma · 1815 · terrosa amarga</span></a>
+      <a href={`${base}/substances/gingerol`} class="mini"><span class="mini-formula">C17H26O4</span><strong>Gingerol</strong><span>jengibre · 1879 · pungente cítrico</span></a>
+      <a href={`${base}/substances/licopeno`} class="mini"><span class="mini-formula">C40H56</span><strong>Licopeno</strong><span>tomate · 1873 · antioxidante rojo</span></a>
+      <a href={`${base}/substances/piperina`} class="mini"><span class="mini-formula">C17H19NO3</span><strong>Piperina</strong><span>pimienta · 1819 · potenciador 20×</span></a>
+    </div>
+    <a href={`${base}/substances`} class="link">Ver 30 sustancias →</a>
+  </div>
+
   <div class="protocols">
     <h3>Protocolos científicos</h3>
     <p>Para enriquecer ingredientes/recetas sigue <code>docs/SCIENTIFIC_INGREDIENT_PROTOCOL.md</code> y <code>SCIENTIFIC_RECIPE_PROTOCOL.md</code>. Investigaciones recientes se agregan como <code>substance.discovery_year</code> y <code>studies.doi</code>.</p>
@@ -68,6 +83,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/,'');
   .card ul{ margin:8px 0 0 18px; color: var(--swal-text-secondary); font-size:13px; line-height:1.7; }
   .card code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
   .link{ color: var(--swal-accent); text-decoration:none; font-size:13px; font-weight:600; display:inline-block; margin-top:10px; }
+  .showcase{ margin-top:18px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
+  .showcase h3{ margin:0 0 6px; font-size:14px; color: var(--swal-text); }
+  .showcase p{ color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin:0; }
+  .showcase-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap:10px; margin:12px 0; }
+  .mini{ display:flex; flex-direction:column; gap:4px; border:1px solid var(--swal-border); background: var(--swal-bg); border-radius:14px; padding:12px; text-decoration:none; transition: border-color 0.15s; }
+  .mini:hover{ border-color: color-mix(in srgb, var(--swal-accent) 30%, var(--swal-border)); }
+  .mini-formula{ font-family: var(--swal-font-mono); font-size:11px; font-weight:700; color: var(--swal-accent); }
+  .mini strong{ color: var(--swal-text); font-size:14px; }
+  .mini span:last-child{ color: var(--swal-text-muted); font-size:11px; line-height:1.4; }
   .protocols{ margin-top:18px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
   .protocols h3{ margin:0 0 6px; font-size:14px; color: var(--swal-text); }
   .protocols p{ color: var(--swal-text-muted); font-size:12px; line-height:1.6; }

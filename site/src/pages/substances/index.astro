@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import SubstanceCard from '../../components/SubstanceCard.svelte';
+
+const substances = await getCollection('substances');
+// sort by discovery_year asc then name
+substances.sort((a,b) => {
+  const ay = (a.data as any).discovery_year ?? 9999;
+  const by = (b.data as any).discovery_year ?? 9999;
+  if (ay !== by) return ay - by;
+  return ((a.data as any).name ?? a.id).localeCompare((b.data as any).name ?? b.id);
+});
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const title = `Substances — Enciclopedia de Sustancias Bioactivas — GOS (${substances.length})`;
+const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y health_registry. Antigravity single tone.`;
+---
+
+<Layout title={title} description={description}>
+  <div class="hero">
+    <div class="eyebrow">GOS · ENCICLOPEDIA · SUSTANCIAS BIOACTIVAS</div>
+    <h1 class="h1">Substances Encyclopedia</h1>
+    <p class="sub">{substances.length} sustancias con fórmula química, sazón / sabor / textura, vitaminas y <em>health registry</em> enlazado al grafo global. Fotos reales 800×600 en <code>public/images/substances/*.jpg</code>.</p>
+    <div class="actions">
+      <a href={`${baseUrl}/graph`} class="btn primary">Ver en grafo →</a>
+      <a href={`${baseUrl}/scientific`} class="btn">Capa científica</a>
+      <button id="share-enc" class="btn ghost" type="button">Compartir</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    {substances.map(entry => (
+      <SubstanceCard substance={entry as any} href={`${baseUrl}/substances/${entry.id}`} client:load />
+    ))}
+  </div>
+
+  <div class="footer-note">
+    <p>¿Falta una sustancia? Propón en <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/discussions" target="_blank" rel="noopener">GitHub Discussions</a>. Cada ficha enlaza a <code>/graph?filter=substance:allicin</code> y expone JSON-LD <code>ChemicalSubstance</code>.</p>
+  </div>
+
+  <script is:inline>
+    document.getElementById('share-enc')?.addEventListener('click', async () => {
+      const data = { title: document.title, text: 'GOS Substance Encyclopedia — 30 sustancias bioactivas', url: location.href };
+      try {
+        if (navigator.share) await navigator.share(data);
+        else if (navigator.clipboard) { await navigator.clipboard.writeText(location.href); alert('Enlace copiado'); }
+      } catch {}
+    });
+  </script>
+
+  <style>
+    .hero{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:20px; padding:22px; }
+    .eyebrow{ font-size:10px; letter-spacing:0.14em; font-weight:700; color: var(--swal-accent); }
+    .h1{ margin:6px 0 8px; font-size:28px; font-weight:850; letter-spacing:-0.03em; color: var(--swal-text); }
+    .sub{ color: var(--swal-text-secondary); line-height:1.7; font-size:13px; max-width:880px; margin:0; }
+    .sub code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 6px; border-radius:6px; }
+    .actions{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+    .btn{ font-size:13px; font-weight:600; padding:8px 14px; border-radius:999px; text-decoration:none; border:1px solid var(--swal-border); background: var(--swal-bg); color: var(--swal-text); }
+    .btn.primary{ background: var(--swal-accent); color: white; border-color: var(--swal-accent); }
+    .btn.ghost{ background: transparent; }
+    .grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap:16px; margin-top:18px; }
+    .footer-note{ margin-top:18px; border:1px dashed var(--swal-border); border-radius:16px; padding:14px; color: var(--swal-text-muted); font-size:12px; line-height:1.6; background: color-mix(in srgb, var(--swal-accent) 4%, var(--swal-surface)); }
+    .footer-note a{ color: var(--swal-accent); }
+  </style>
+</Layout>
