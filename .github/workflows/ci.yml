@@ -21,6 +21,8 @@ jobs:
           node-version: '22'
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
+        env:
+          npm_config_ignore_scripts: "true"
       - run: pnpm run lint
 
   gos-audit:

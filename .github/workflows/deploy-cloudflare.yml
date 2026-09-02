@@ -44,6 +44,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        env:
+          npm_config_ignore_scripts: "true"
         working-directory: ./site
 
       - name: Generate content (recipes, API, graph)
@@ -51,6 +53,8 @@ jobs:
         run: |
           node scripts/copy-content.js
           node scripts/generate-api.js
+          node scripts/generate-catalog.js
+          node scripts/enrich-ingredients.js
           node scripts/generate-graph.js
 
       - name: Build Astro site
