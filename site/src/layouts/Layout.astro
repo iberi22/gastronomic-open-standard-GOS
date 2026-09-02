@@ -1,243 +1,131 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-import MobileNav from '../components/MobileNav.astro';
-
-interface Props {
-	 title: string;
-}
-
-const { title } = Astro.props;
-const baseUrl = import.meta.env.BASE_URL;
+import { Toaster } from '@swal/ui';
+interface Props { title?: string; description?: string; }
+const { title = 'GOS — Gastronomic Open Standard', description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const baseClean = base.replace(/\/$/, '');
 ---
-
 <!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Gastronomic Open Standard (GOS) - Scientific Recipe Database" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="theme-color" content="#0a0a0f" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="apple-mobile-web-app-title" content="GOS Node" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<link rel="manifest" href={`${baseUrl}/manifest.json`} />
-		<link rel="icon" type="image/svg+xml" href={`${baseUrl}/icons/icon-192.svg`} />
-		<link rel="icon" type="image/png" href={`${baseUrl}/images/favicon.png`} />
-		<link rel="apple-touch-icon" href={`${baseUrl}/icons/icon-192.png`} />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+<html lang="es" data-theme="antigravity">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#050507" />
+    <link rel="manifest" href={`${baseClean}/manifest.json`} />
+    <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />
+    <style is:global>
+      @import '@swal/ui/tokens';
+      @import '@swal/ui/antigravity.css';
+      html { background: var(--swal-bg); color: var(--swal-text); scroll-behavior: smooth; }
+      body { margin: 0; font-family: var(--swal-font); -webkit-font-smoothing: antialiased; }
+      /* scrollbar antigravity */
+      * { scrollbar-width: thin; scrollbar-color: #27272A transparent; }
+      :root[data-theme="antigravity-light"] * { scrollbar-color: #D6D3D1 transparent; }
+    </style>
+    <script is:inline>
+      // dual theme persistence: antigravity | antigravity-light
+      (function(){
+        const k='gos-theme';
+        const saved = localStorage.getItem(k);
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        const theme = saved || (prefersLight ? 'antigravity-light' : 'antigravity');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.style.colorScheme = theme.includes('light') ? 'light' : 'dark';
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen relative overflow-x-hidden selection:bg-[rgba(139,92,246,0.3)] swal-scrollbar">
+    <!-- Edge-hive / Antigravity topbar -->
+    <header class="sticky top-0 z-40 backdrop-blur-xl border-b" style="background: color-mix(in srgb, var(--swal-surface) 86%, transparent); border-color: var(--swal-border);">
+      <div class="mx-auto max-w-[1280px] px-4 h-[56px] flex items-center justify-between gap-4">
+        <a href={`${baseClean}/`} class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-black text-[18px] shadow-lg" style="background: linear-gradient(135deg, var(--swal-accent), #06B6D4); box-shadow: 0 8px 24px rgba(139,92,246,0.35);">G</div>
+          <div class="leading-none">
+            <div class="font-bold tracking-tight" style="color: var(--swal-text); font-size: 16px;">GOS</div>
+            <div class="text-[10px] tracking-[0.14em] font-semibold" style="color: var(--swal-accent);">GASTRONOMIC OPEN STANDARD</div>
+          </div>
+          <span class="hidden sm:inline-flex items-center gap-1.5 ml-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium border" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: color-mix(in srgb, var(--swal-accent) 30%, transparent);">
+            <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background: var(--swal-accent);"></span>
+            GRAFO · ONLINE
+          </span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href={`${baseClean}/`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Explorar</a>
+          <a href={`${baseClean}/graph`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Grafo</a>
+          <a href={`${baseClean}/recipes`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Recetas</a>
+          <a href={`${baseClean}/ingredients`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Ingredientes</a>
+          <a href={`${baseClean}/scientific`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Ciencia</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="gos-theme-toggle" class="w-9 h-9 rounded-lg border flex items-center justify-center hover:opacity-80 transition" style="background: var(--swal-surface); border-color: var(--swal-border); color: var(--swal-text-secondary);" aria-label="Toggle theme" title="Cambiar tema">
+            <span id="gos-theme-icon">◐</span>
+          </button>
+          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-accent);">Abrir Grafo</a>
+        </div>
+      </div>
+      <!-- mobile nav -->
+      <div class="lg:hidden flex items-center gap-1 px-3 pb-2 overflow-x-auto">
+        <a href={`${baseClean}/graph`} class="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: var(--swal-border);">🕸️ Grafo</a>
+        <a href={`${baseClean}/recipes`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🍳 Recetas</a>
+        <a href={`${baseClean}/ingredients`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🌿 Ingredientes</a>
+        <a href={`${baseClean}/scientific`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🧬 Ciencia</a>
+      </div>
+    </header>
 
-		<!-- Security Headers -->
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' https://translate.googleapis.com https://translate.google.com;" />
-		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-		<meta http-equiv="X-Frame-Options" content="DENY" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <main class="mx-auto max-w-[1280px] px-4 py-6 md:py-8">
+      <slot />
+    </main>
 
-		<!-- Google Translate Integration -->
-		<script type="text/javascript">
-			function googleTranslateElementInit() {
-				// Get browser language
-				const browserLang = navigator.language || navigator.userLanguage;
-				const langCode = browserLang.split('-')[0]; // Get base language code (e.g., 'en' from 'en-US')
+    <footer class="mt-12 border-t py-8" style="border-color: var(--swal-border); background: color-mix(in srgb, var(--swal-surface) 55%, transparent);">
+      <div class="mx-auto max-w-[1280px] px-4 flex flex-col md:flex-row gap-4 justify-between text-sm" style="color: var(--swal-text-muted);">
+        <div>
+          <div class="font-semibold" style="color: var(--swal-text);">GOS · Gastronomic Open Standard v2.0</div>
+          <div class="text-xs mt-1">Grafo abierto: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias.</div>
+          <div class="text-[11px] mt-2">Astro 7 · Svelte 5 · @swal/ui antigravity · <span class="font-mono">edge-hive + Xavier + mesh</span></div>
+        </div>
+        <div class="text-xs flex flex-col gap-1">
+          <a href="https://github.com/iberi22/gastronomic-open-standard-GOS" class="hover:underline" style="color: var(--swal-accent);">GitHub · iberi22/GOS</a>
+          <span>Base: <code class="px-1.5 py-0.5 rounded" style="background: var(--swal-surface); border: 1px solid var(--swal-border);">{baseClean || '/'}</code></span>
+          <span>Tema dual: <code class="font-mono">antigravity</code> #050507 ↔ <code class="font-mono">hueso #FDFCF8</code></span>
+        </div>
+      </div>
+    </footer>
 
-				new window.google.translate.TranslateElement({
-					pageLanguage: 'es',
-					includedLanguages: 'en,es,pt,fr,de,it,zh-CN,ja,ko,ru,ar',
-					layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-					autoDisplay: false
-				}, 'google_translate_element');
-
-				// Auto-translate if browser language is not Spanish
-				if (langCode !== 'es') {
-					setTimeout(() => {
-						const select = document.querySelector('.goog-te-combo');
-						if (select) {
-							select.value = langCode;
-							select.dispatchEvent(new Event('change'));
-						}
-					}, 1000);
-				}
-			}
-		</script>
-		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-		<style>
-			/* Hide Google Translate banner and improve widget styling */
-			.goog-te-banner-frame { display: none !important; }
-			body { top: 0 !important; }
-			.goog-te-gadget { font-family: inherit !important; }
-			.goog-te-gadget-simple {
-				background-color: transparent !important;
-				border: none !important;
-				padding: 0 !important;
-			}
-			.goog-te-gadget-simple .goog-te-menu-value {
-				color: inherit !important;
-			}
-			.goog-te-gadget-simple .goog-te-menu-value span {
-				color: #6b7280 !important;
-			}
-			.VIpgJd-ZVi9od-l4eHX-hSRGPd { display: none !important; }
-			#google_translate_element {
-				display: inline-flex;
-				align-items: center;
-			}
-		</style>
-
-		<ViewTransitions />
-		<script is:inline define:vars={{ baseUrl }}>
-						// Service Worker Registration (Manual PWA)
-			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', async () => {
-					try {
-						const registration = await navigator.serviceWorker.register(`${baseUrl}/sw.js`, { scope: baseUrl });
-						console.log('GOS PWA SW registered:', registration.scope);
-						
-						// Check for updates
-						registration.addEventListener('updatefound', () => {
-							const newWorker = registration.installing;
-							if (newWorker) {
-								newWorker.addEventListener('statechange', () => {
-									if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-										// New version available
-										console.log('GOS PWA: New version available');
-									}
-								});
-							}
-						});
-					} catch (err) {
-						console.log('GOS PWA SW registration failed:', err);
-					}
-				});
-			}
-
-			const setDarkMode = (document) => {
-				const getThemePreference = () => {
-					if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-						return localStorage.getItem('theme');
-					}
-					return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-				};
-				const isDark = getThemePreference() === 'dark';
-				document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
-			};
-
-			setDarkMode(document);
-
-			document.addEventListener('astro:after-swap', () => {
-				setDarkMode(document);
-			});
-
-			// History Tracking
-			document.addEventListener('astro:page-load', () => {
-				if (window.location.pathname === '/' || window.location.pathname === baseUrl + '/') return;
-
-				const history = JSON.parse(localStorage.getItem('recipe_history') || '[]');
-				const currentPath = window.location.pathname;
-				const currentTitle = document.title;
-
-				// Remove existing entry for this path to move it to top
-				const filteredHistory = history.filter(item => item.path !== currentPath);
-
-				filteredHistory.unshift({
-					path: currentPath,
-					title: currentTitle,
-					timestamp: Date.now()
-				});
-
-				// Keep last 20 items
-				const newHistory = filteredHistory.slice(0, 20);
-
-				localStorage.setItem('recipe_history', JSON.stringify(newHistory));
-			});
-		</script>
-	</head>
-	<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark min-h-screen font-display selection:bg-primary selection:text-black transition-colors duration-300">
-		<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-[#1a1a2e] dark:via-background-dark dark:to-background-dark">
-			<slot />
-		</div>
-	</body>
+    <Toaster client:load />
+    <script is:inline>
+      document.getElementById('gos-theme-toggle')?.addEventListener('click', () => {
+        const cur = document.documentElement.getAttribute('data-theme') || 'antigravity';
+        const next = cur === 'antigravity' ? 'antigravity-light' : 'antigravity';
+        document.documentElement.setAttribute('data-theme', next);
+        document.documentElement.style.colorScheme = next.includes('light') ? 'light' : 'dark';
+        localStorage.setItem('gos-theme', next);
+        const icon = document.getElementById('gos-theme-icon');
+        if(icon) icon.textContent = next.includes('light') ? '☀' : '◐';
+      });
+      // init icon
+      const cur0 = document.documentElement.getAttribute('data-theme') || 'antigravity';
+      const icon0 = document.getElementById('gos-theme-icon');
+      if(icon0) icon0.textContent = cur0.includes('light') ? '☀' : '◐';
+    </script>
+    <style is:global>
+      /* subtle grid behind content for antigravity dark */
+      body::before {
+        content: '';
+        position: fixed; inset: 0;
+        background-image:
+          linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+        z-index: -1;
+      }
+      :root[data-theme="antigravity-light"] body::before {
+        background-image:
+          linear-gradient(rgba(28,25,23,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(28,25,23,0.04) 1px, transparent 1px);
+      }
+    </style>
+  </body>
 </html>
-
-<style is:global>
-	:root {
-		--font-display: 'Patrick Hand', cursive;
-		--font-body: 'Open Sans', sans-serif;
-
-		/* Food App Palette - Tomato Red & Fresh Green */
-		--color-primary: #FF6347;
-		--color-secondary: #4CAF50;
-	}
-
-	body {
-		font-family: var(--font-body);
-	}
-
-	h1, h2, h3, h4, h5, h6, .font-display {
-		font-family: var(--font-display);
-	}
-
-	.glass-panel {
-		background: rgba(255, 255, 255, 0.85);
-		backdrop-filter: blur(12px);
-		border: 1px solid rgba(0, 0, 0, 0.05);
-	}
-	.dark .glass-panel {
-		background: rgba(18, 18, 18, 0.85);
-		backdrop-filter: blur(16px);
-		border: 1px solid rgba(255, 255, 255, 0.08);
-	}
-
-	.card-glass {
-		background: #fff;
-		border: 1px solid #e5e7eb;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-		transition: transform 0.2s, box-shadow 0.2s;
-	}
-	/* Collage effect for cards */
-	.card-glass:hover {
-		transform: rotate(-1deg) scale(1.02);
-		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-		z-index: 10;
-	}
-
-	.dark .card-glass {
-		background: #1f2937;
-		border-color: #374151;
-	}
-
-	/* Custom scrollbar */
-	::-webkit-scrollbar {
-		width: 8px;
-	}
-	::-webkit-scrollbar-track {
-		background: transparent;
-	}
-	::-webkit-scrollbar-thumb {
-		background: var(--color-primary);
-		border-radius: 4px;
-	}
-	.dark ::-webkit-scrollbar-thumb {
-		background: var(--color-primary);
-	}
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--color-primary);
-		filter: brightness(1.1);
-	}
-
-    @media print {
-        header, footer, .no-print { display: none !important; }
-        body { background: white !important; color: black !important; }
-        .glass-panel, .card-glass { background: transparent !important; border: none !important; box-shadow: none !important; }
-        .min-h-screen { min-height: 0 !important; }
-
-        /* Ensure content is visible */
-        article, main { width: 100% !important; margin: 0 !important; padding: 0 !important; }
-
-        /* Hide animations and interactive elements */
-        .animate-fade-in-up { opacity: 1 !important; transform: none !important; }
-    }
-</style>

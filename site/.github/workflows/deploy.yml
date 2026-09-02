@@ -1,0 +1,95 @@
+name: deploy-template
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "public/**"
+      - "workers/**"
+      - "migrations/**"
+      - "astro.config.mjs"
+      - "wrangler.toml"
+      - "package.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  deployments: write
+  id-token: write
+
+concurrency:
+  group: deploy-template-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Fase 1: Preflight
+  audit-and-verify:
+    name: "🛡️ Preflight Audit"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 9 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run check
+      - run: pnpm test
+      - run: pnpm exec playwright test
+
+  # Fase 3: Deploy SSR Worker (Pages vs Workers: SSR >26MB → wrangler deploy, no pages-action)
+  deploy-template:
+    name: "🚀 Deploy Template Worker"
+    needs: audit-and-verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 9 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Build SSR
+        run: pnpm run build
+      - name: Normalize Wrangler Production Config
+        run: node scripts/normalize-wrangler-config.mjs --target production
+      - name: Pre-deploy Check
+        run: node scripts/pre-deploy-check.js
+      - name: Deploy Worker to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.127.1"
+          command: deploy --config dist/server/wrangler.json
+
+  # Fase 4+5: Smoke + Version Tag
+  smoke-test:
+    name: "🩺 Smoke"
+    needs: deploy-template
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Smoke
+        run: bash scripts/deploy-smoke.sh
+        env:
+          APP_URL: https://swal-app-template.iberi22.workers.dev
+
+  version-tag:
+    name: "🏷️ Tag"
+    needs: smoke-test
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: |
+          VERSION=$(node -p "require('./package.json').version")
+          TAG="v${VERSION}-deploy-$(date +'%Y%m%d-%H%M%S')-$(echo ${{ github.sha }} | cut -c1-8)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "Deploy $TAG" && git push origin "$TAG" && echo "Tag $TAG"

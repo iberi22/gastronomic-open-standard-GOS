@@ -1,0 +1,21 @@
+{
+  "recipes": [
+    {
+      "id": "colombian/COLOMBIAN_RECIPES_PLAN",
+      "title": "🚀 Fase Actual: Región Andina - Enriquecimiento de Recetas",
+      "language": "spanish",
+      "country": "colombia",
+      "hasMetadata": false,
+      "metadata": {},
+      "category": [],
+      "difficulty": null,
+      "prepTime": null,
+      "cookTime": null,
+      "servings": null,
+      "mainIngredients": [],
+      "tags": [],
+      "filePath": "dishes/colombian/COLOMBIAN_RECIPES_PLAN.md"
+    }
+  ],
+  "count": 1
+}

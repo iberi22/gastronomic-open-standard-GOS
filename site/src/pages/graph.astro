@@ -1,47 +1,65 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import GraphExplorer from '../components/GraphExplorer.astro';
-title: "Knowledge Graph"
-description: "Interactive visualization of recipe-ingredient connections in gastronomic data"
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
 ---
+<Layout title="Grafo — GOS Knowledge Graph" description="Grafo global D3: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias">
+  <div class="page-head">
+    <div>
+      <h1 class="title">Grafo gastronómico global</h1>
+      <p class="subtitle">Explora el grafo de conocimiento: <strong>recetas</strong> ↔ <strong>ingredientes</strong> ↔ <strong>vitaminas/nutrientes</strong> ↔ <strong>sabores & técnicas</strong> ↔ <strong>substancias</strong> ↔ <strong>afecciones</strong> ↔ <strong>dietas</strong> ↔ <strong>regiones</strong>. Toca un nodo para ver detalle, filtra por tipo, busca por nombre.</p>
+    </div>
+    <div class="head-actions">
+      <a href={`${base}/recipes`} class="chip">🍳 Recetas</a>
+      <a href={`${base}/ingredients`} class="chip">🌿 Ingredientes</a>
+      <a href={`${base}/scientific`} class="chip">🧬 Ciencia</a>
+    </div>
+  </div>
 
-# Knowledge Graph
+  <div class="legend-bar">
+    <span class="legend"><span class="dot" style="background:#FF6B6B"></span>Recetas</span>
+    <span class="legend"><span class="dot" style="background:#4ECDC4"></span>Ingredientes</span>
+    <span class="legend"><span class="dot" style="background:#F9C74F"></span>Vitaminas/Nutrientes</span>
+    <span class="legend"><span class="dot" style="background:#9D4EDD"></span>Substancias</span>
+    <span class="legend"><span class="dot" style="background:#F94144"></span>Afecciones</span>
+    <span class="legend"><span class="dot" style="background:#06D6A0"></span>Dietas</span>
+    <span class="legend"><span class="dot" style="background:#95E1D3"></span>Sabores</span>
+    <span class="legend"><span class="dot" style="background:#FFE66D"></span>Regiones</span>
+  </div>
 
-Interactive visualization of the gastronomic knowledge graph showing connections between **recipes**, **ingredients**, and **regions**.
+  <GraphExplorer />
 
-## About the Graph
+  <section class="explain">
+    <div class="explain-card">
+      <h3>Cómo usar</h3>
+      <ol>
+        <li>Filtra por tipo (recetas, ingredientes, vitaminas, substancias, afecciones, dietas, regiones).</li>
+        <li>Busca por nombre (ej: “ajo”, “alicina”, “hipertensión”, “vegano”).</li>
+        <li>Haz clic en un nodo → panel detalle con compuestos, mecanismo y estudios.</li>
+        <li>Zoom con rueda / pinch; minimapa abajo a la derecha.</li>
+      </ol>
+    </div>
+    <div class="explain-card">
+      <h3>Fuentes</h3>
+      <p>Front-matter de <code>ingredients/condiments/*.md</code> (USDA, PubMed, NIH) + <code>dishes/**/*.md</code>. Generación vía <code>scripts/generate-graph.js</code> → <code>public/graph-data.json</code>. Las aristas <code>HELPS_CONDITION / TREATS / HAS_SUBSTANCE / CONTAINS_VITAMIN</code> emergen del <code>health_registry</code>.</p>
+    </div>
+  </section>
 
-This visualization shows the interconnected relationships in gastronomic data:
-
-### Node Types
-
-| Type | Color | Description |
-|------|-------|-------------|
-| **Recipes** | Red | Dishes from different cuisines |
-| **Ingredients** | Green | Raw ingredients and components |
-| **Regions** | Blue | Geographic origins |
-
-### Connection Types
-
-- **Uses** - Ingredient used in a recipe
-- **Grows in** - Ingredient originates from region
-- **Originates from** - Recipe comes from region
-
-## Controls
-
-Use the filter controls above the graph to:
-
-1. **Filter by Region** - China, Colombia, Peru
-2. **Filter by Type** - Recipes, Ingredients, Regions
-3. **Filter by Category** - Vegetables, Proteins, Dairy, Grains, Condiments
-
-## Data Source
-
-Graph data is generated from `/scripts/generate_graph.py` and stored in `/graph.json`.
-
-<GraphExplorer />
-
-## Related
-
-- [Scientific Data Overview](/scientific)
-- [Nutritional Database](/docs/nutritional_database)
-- [Ingredient Chemistry](/docs/ingredient_chemistry)
+<style>
+  .page-head { display:flex; gap:16px; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; margin-bottom:12px; }
+  .title { font-size: 22px; font-weight:850; letter-spacing:-0.02em; color: var(--swal-text); margin:0; }
+  .subtitle { color: var(--swal-text-secondary); line-height:1.6; max-width: 760px; margin-top:6px; font-size:13px; }
+  .subtitle strong{ color: var(--swal-text); }
+  .head-actions{ display:flex; gap:8px; flex-wrap:wrap; }
+  .chip { padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600; text-decoration:none; border:1px solid var(--swal-border); background: var(--swal-surface); color: var(--swal-text-secondary); }
+  .legend-bar{ display:flex; gap:12px; flex-wrap:wrap; padding:10px 0; border-top:1px solid var(--swal-border); border-bottom:1px solid var(--swal-border); margin-bottom:12px; }
+  .legend{ display:flex; align-items:center; gap:6px; font-size:11px; color: var(--swal-text-secondary); }
+  .dot{ width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .explain{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
+  @media(max-width:900px){ .explain{ grid-template-columns:1fr; } }
+  .explain-card{ border:1px solid var(--swal-border); border-radius:16px; padding:16px; background: var(--swal-surface); }
+  .explain-card h3{ margin:0 0 8px; font-size:14px; color: var(--swal-text); }
+  .explain-card p, .explain-card li{ color: var(--swal-text-secondary); font-size:13px; line-height:1.6; }
+  .explain-card code{ font-family: var(--swal-font-mono); font-size:12px; background: var(--swal-bg); padding: 1px 6px; border-radius:6px; border:1px solid var(--swal-border); }
+</style>
+</Layout>

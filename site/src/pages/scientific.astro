@@ -1,102 +1,76 @@
 ---
-import GraphExplorer from '../components/GraphExplorer.astro';
-title: "Scientific Data"
-description: "Nutritional data, ingredient chemistry, and recipe analytics for gastronomic research"
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
 ---
+<Layout title="Ciencia — Vitaminas, substancias y afecciones — GOS">
+  <h1 class="title">Capa científica</h1>
+  <p class="sub">Micronutrientes, compuestos bioactivos y <strong>health registry</strong> conectados a afecciones. Cada ficha de ingrediente alimenta el grafo con nodos <code>vitamin/ nutrient / substance / condition</code>.</p>
 
-# Scientific Data Area
+  <div class="grid">
+    <div class="card">
+      <h3>🧬 Vitaminas & Nutrientes</h3>
+      <p>Extraídos de <code>micronutrients</code> y <code>nutrition_per_100g</code> en <code>ingredients/*.md</code>. Arista <code>CONTAINS_VITAMIN</code> y <code>HAS_NUTRIENT</code>.</p>
+      <ul>
+        <li>Vitamina C (ajo 31 mg/100g, cilantro 27 mg)</li>
+        <li>Manganeso, Vitamina B6, Selenio</li>
+        <li>Hierro (comino 66 mg), Calcio, Potasio</li>
+      </ul>
+      <a href={`${base}/ingredients`} class="link">Explorar ingredientes →</a>
+    </div>
+    <div class="card accent">
+      <h3>⚗️ Substancias & Descubrimientos</h3>
+      <p>De <code>active_compounds</code>: Alicina (ajo), Dodecenal (cilantro), Cuminaldehído (comino), Gingerol (jengibre). Cada sustancia es un nodo morado conectado a ingredientes y afecciones.</p>
+      <ul>
+        <li>Alicina → hipertensión, hiperlipidemia</li>
+        <li>Gingerol → náusea, inflamación (COX-2)</li>
+        <li>Dodecenal → Salmonella</li>
+      </ul>
+      <a href={`${base}/graph`} class="link">Ver en grafo →</a>
+    </div>
+    <div class="card danger">
+      <h3>♥ Afecciones & Beneficios</h3>
+      <p>De <code>health_registry</code>: hipertensión, inflamación, detox metales pesados, digestión, huesos. Evidencia High/Medium y mecanismos (NO synthase, COX-2, quelación).</p>
+      <ul>
+        <li>Hipertensión — ajo (alicina) · evidencia High</li>
+        <li>Náusea — jengibre · High (5-HT3)</li>
+        <li>Digestión — comino · High (amilasa/lipasa)</li>
+      </ul>
+      <a href={`${base}/graph`} class="link">Filtrar “condition” →</a>
+    </div>
+    <div class="card success">
+      <h3>🥗 Dietas & Capacidades</h3>
+      <p>Nodos <code>diet</code> (vegano, vegetariano, sin gluten, keto, mediterránea) conectados vía <code>FITS_DIET</code> desde tags. Permite filtrar ingredientes por dieta.</p>
+      <ul>
+        <li>Sin gluten — casabe (yuca amarga)</li>
+        <li>Vegano / Vegetariano — múltiples</li>
+        <li>Mediterránea — ajo, aceite, vegetales</li>
+      </ul>
+      <a href={`${base}/graph`} class="link">Filtrar “diet” →</a>
+    </div>
+  </div>
 
-Explore the scientific aspects of gastronomy including nutritional information, ingredient chemistry, and recipe analytics.
+  <div class="protocols">
+    <h3>Protocolos científicos</h3>
+    <p>Para enriquecer ingredientes/recetas sigue <code>docs/SCIENTIFIC_INGREDIENT_PROTOCOL.md</code> y <code>SCIENTIFIC_RECIPE_PROTOCOL.md</code>. Investigaciones recientes se agregan como <code>substance.discovery_year</code> y <code>studies.doi</code>.</p>
+  </div>
 
----
-
-## 📊 Nutritional Database
-
-Browse nutritional data for ingredients organized by category.
-
-### By Category
-
-| Category | Description | Count |
-|----------|-------------|-------|
-| [Grains & Starches](/docs/nutritional_database#grains) | Rice, corn, flour, potato | 9 |
-| [Proteins](/docs/nutritional_database#proteins) | Chicken, beef, pork, fish | 8 |
-| [Dairy](/docs/nutritional_database#dairy) | Milk, cream, butter, cheese | 5 |
-| [Vegetables](/docs/nutritional_database#vegetables) | Carrots, tomatoes, onions | 6 |
-| [Fruits](/docs/nutritional_database#fruits) | Apples, oranges, bananas | 5 |
-
-[View Complete Nutritional Database](/docs/nutritional_database)
-
----
-
-## 🔬 Ingredient Chemistry
-
-Understanding the molecular properties and cooking reactions of ingredients.
-
-### Topics
-
-- Flavor compounds
-- Cooking reactions  
-- Molecular properties
-- pH levels and preservation
-
-[View Ingredient Chemistry](/docs/ingredient_chemistry)
-
----
-
-## 📈 Recipe Analytics
-
-Analysis of recipes including cost, preparation time, and difficulty.
-
-### Metrics
-
-- Cost per serving
-- Preparation time
-- Difficulty level
-- Completeness score
-
-[View Recipe Analytics](/docs/recipe_analytics)
-
----
-
-## 🌐 Knowledge Graph
-
-Interactive visualization of recipe-ingredient connections.
-
-Explore the interconnected network of recipes, ingredients, and regions.
-
-[View Knowledge Graph](/graph)
-
----
-
-## 📚 Scientific Protocols
-
-Standardized protocols for documenting gastronomic data.
-
-### Protocols
-
-- [Scientific Ingredient Protocol](/docs/SCIENTIFIC_INGREDIENT_PROTOCOL) - How to document ingredients scientifically
-- [Scientific Recipe Protocol](/docs/SCIENTIFIC_RECIPE_PROTOCOL) - How to document recipes scientifically
-
----
-
-## 📋 Data Categories
-
-### By Region
-
-| Region | Recipes | Ingredients |
-|--------|---------|------------|
-| [China](/docs/graph-explorer#china) | 12 | 45 |
-| [Colombia](/docs/graph-explorer#colombia) | 8 | 32 |
-| [Peru](/docs/graph-explorer#peru) | 6 | 28 |
-
-### By Type
-
-| Type | Count |
-|------|-------|
-| Recipes | 26 |
-| Ingredients | 105 |
-| Regions | 3 |
-
----
-
-*Last updated: 2026-03-19*
+<style>
+  .title{ font-size:22px; font-weight:850; margin:0; color: var(--swal-text); }
+  .sub{ color: var(--swal-text-secondary); line-height:1.6; font-size:13px; max-width:820px; }
+  .sub code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-surface); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
+  .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:14px; margin-top:18px; }
+  .card{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:20px; padding:18px; }
+  .card.accent{ border-color: color-mix(in srgb, #9D4EDD 30%, var(--swal-border)); }
+  .card.danger{ border-color: color-mix(in srgb, #F94144 30%, var(--swal-border)); }
+  .card.success{ border-color: color-mix(in srgb, #06D6A0 30%, var(--swal-border)); }
+  .card h3{ margin:0 0 8px; font-size:14px; color: var(--swal-text); }
+  .card p{ color: var(--swal-text-secondary); font-size:13px; line-height:1.6; }
+  .card ul{ margin:8px 0 0 18px; color: var(--swal-text-secondary); font-size:13px; line-height:1.7; }
+  .card code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
+  .link{ color: var(--swal-accent); text-decoration:none; font-size:13px; font-weight:600; display:inline-block; margin-top:10px; }
+  .protocols{ margin-top:18px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
+  .protocols h3{ margin:0 0 6px; font-size:14px; color: var(--swal-text); }
+  .protocols p{ color: var(--swal-text-muted); font-size:12px; line-height:1.6; }
+  .protocols code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-bg); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
+</style>
+</Layout>

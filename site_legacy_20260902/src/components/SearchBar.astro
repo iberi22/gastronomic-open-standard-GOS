@@ -1,0 +1,211 @@
+---
+interface Props {
+  placeholder?: string;
+}
+
+const { placeholder = 'Search restaurants, products, recipes...' } = Astro.props;
+---
+
+<div class="relative w-full max-w-xl" id="search-container">
+  <div class="relative">
+    <!-- Search Icon -->
+    <span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 dark:text-gray-500">search</span>
+
+    <!-- Input -->
+    <input
+      type="text"
+      id="search-input"
+      placeholder={placeholder}
+      autocomplete="off"
+      class="w-full pl-12 pr-12 py-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary dark:focus:ring-primary/50 dark:focus:border-primary transition-all shadow-sm dark:shadow-none"
+    />
+
+    <!-- Clear Button -->
+    <button
+      id="search-clear"
+      type="button"
+      class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hidden transition-colors"
+      aria-label="Clear search"
+    >
+      close
+    </button>
+  </div>
+
+  <!-- Results Dropdown -->
+  <div
+    id="search-results"
+    class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg dark:shadow-xl overflow-hidden hidden z-50 max-h-80 overflow-y-auto"
+  >
+    <div id="search-results-content"></div>
+  </div>
+</div>
+
+<style>
+  #search-results::-webkit-scrollbar {
+    width: 6px;
+  }
+  #search-results::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  #search-results::-webkit-scrollbar-thumb {
+    background: #FF6347;
+    border-radius: 3px;
+  }
+</style>
+
+<script>
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const clearBtn = document.getElementById('search-clear') as HTMLButtonElement;
+  const resultsContainer = document.getElementById('search-results') as HTMLDivElement;
+  const resultsContent = document.getElementById('search-results-content') as HTMLDivElement;
+
+  let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+  let currentQuery = '';
+
+  async function fetchResults(query: string) {
+    if (!query.trim()) {
+      hideResults();
+      return;
+    }
+
+    try {
+      const baseUrl = import.meta.env.BASE_URL;
+      const endpoints = [
+        `${baseUrl}/api/index.json`,
+        `${baseUrl}/api/all.json`,
+      ];
+
+      const results: Array<{ title: string; slug: string; type: string; category?: string }> = [];
+
+      await Promise.all(
+        endpoints.map(async (endpoint) => {
+          try {
+            const res = await fetch(endpoint);
+            if (res.ok) {
+              const data = await res.json();
+              const items = Array.isArray(data) ? data : (data.recipes || data.items || []);
+              items.forEach((item: any) => {
+                if (
+                  item.title?.toLowerCase().includes(query.toLowerCase()) ||
+                  item.name?.toLowerCase().includes(query.toLowerCase()) ||
+                  item.originalName?.toLowerCase().includes(query.toLowerCase()) ||
+                  item.category?.toLowerCase().includes(query.toLowerCase())
+                ) {
+                  results.push({
+                    title: item.title || item.name,
+                    slug: item.slug || item.id || `#`,
+                    type: item.type || 'recipe',
+                    category: item.category,
+                  });
+                }
+              });
+            }
+          } catch (e) {
+            // silently skip failed endpoints
+          }
+        })
+      );
+
+      renderResults(results, query);
+    } catch (e) {
+      console.error('Search error:', e);
+    }
+  }
+
+  function renderResults(results: Array<{ title: string; slug: string; type: string; category?: string }>, query: string) {
+    resultsContent.innerHTML = '';
+
+    if (results.length === 0) {
+      resultsContent.innerHTML = `
+        <div class="p-4 text-center text-gray-500 dark:text-gray-400">
+          <span class="material-symbols-outlined text-3xl mb-2">search_off</span>
+          <p class="text-sm">No results found</p>
+        </div>
+      `;
+      resultsContainer.classList.remove('hidden');
+      return;
+    }
+
+    const uniqueResults = results.slice(0, 20);
+
+    uniqueResults.forEach((result) => {
+      const div = document.createElement('a');
+      div.href = `${import.meta.env.BASE_URL}/recipes/${result.slug}`;
+      div.class = 'flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 border-b border-gray-100 dark:border-gray-800 last:border-0 transition-colors cursor-pointer';
+
+      const iconMap: Record<string, string> = {
+        recipe: 'restaurant',
+        restaurant: 'storefront',
+        product: 'inventory_2',
+      };
+
+      div.innerHTML = `
+        <span class="material-symbols-outlined text-primary">${iconMap[result.type] || 'search'}</span>
+        <div class="flex flex-col min-w-0">
+          <span class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">${highlightMatch(result.title, query)}</span>
+          ${result.category ? `<span class="text-xs text-gray-400 dark:text-gray-500 capitalize">${result.category}</span>` : ''}
+        </div>
+        <span class="ml-auto material-symbols-outlined text-gray-300 dark:text-gray-600 text-sm">arrow_forward</span>
+      `;
+
+      resultsContent.appendChild(div);
+    });
+
+    resultsContainer.classList.remove('hidden');
+  }
+
+  function highlightMatch(text: string, query: string): string {
+    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    return text.replace(regex, '<mark class="bg-primary/20 text-primary rounded px-0.5">$1</mark>');
+  }
+
+  function escapeRegex(str: string): string {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function hideResults() {
+    resultsContainer.classList.add('hidden');
+    resultsContent.innerHTML = '';
+  }
+
+  // Event Listeners
+  input.addEventListener('input', (e) => {
+    const value = (e.target as HTMLInputElement).value;
+    currentQuery = value;
+
+    if (value) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+      hideResults();
+      return;
+    }
+
+    if (debounceTimer) clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => fetchResults(value), 300);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    currentQuery = '';
+    clearBtn.classList.add('hidden');
+    hideResults();
+    input.focus();
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    const container = document.getElementById('search-container');
+    if (container && !container.contains(e.target as Node)) {
+      hideResults();
+    }
+  });
+
+  // Keyboard navigation
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hideResults();
+      input.blur();
+    }
+  });
+</script>

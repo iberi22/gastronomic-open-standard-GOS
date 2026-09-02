@@ -72,8 +72,7 @@ const { placeholder = 'Search restaurants, products, recipes...' } = Astro.props
       const baseUrl = import.meta.env.BASE_URL;
       const endpoints = [
         `${baseUrl}/api/index.json`,
-        `${baseUrl}/api/spanish/colombia.json`,
-        `${baseUrl}/api/chinese/china.json`,
+        `${baseUrl}/api/all.json`,
       ];
 
       const results: Array<{ title: string; slug: string; type: string; category?: string }> = [];
@@ -132,7 +131,7 @@ const { placeholder = 'Search restaurants, products, recipes...' } = Astro.props
     uniqueResults.forEach((result) => {
       const div = document.createElement('a');
       div.href = `${import.meta.env.BASE_URL}/recipes/${result.slug}`;
-      div.class = 'flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 border-b border-gray-100 dark:border-gray-800 last:border-0 transition-colors cursor-pointer';
+      div.className = 'flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 border-b border-gray-100 dark:border-gray-800 last:border-0 transition-colors cursor-pointer';
 
       const iconMap: Record<string, string> = {
         recipe: 'restaurant',

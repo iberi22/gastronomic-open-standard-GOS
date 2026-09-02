@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CountrySelector from '../components/CountrySelector.astro';
+import SyncStatus from '../components/SyncStatus.astro';
+import OnboardingChecklist from '../components/OnboardingChecklist.astro';
+import ToastContainer from '../components/ToastContainer.astro';
+import ErrorBoundary from '../components/ErrorBoundary.astro';
+---
+
+<Layout title="GOS - Nodo Gastronómico">
+  <div class="max-w-4xl mx-auto">
+    <header class="text-center py-12">
+      <h1 class="text-5xl font-display mb-4 text-primary">GOS</h1>
+      <p class="text-xl text-gray-400">Gastronomic Open Standard</p>
+      <p class="text-gray-500 mt-2">Nodo Gastronómico Offline-First</p>
+    </header>
+
+    <section id="onboarding" class="mb-12">
+      <CountrySelector />
+    </section>
+
+    <section id="checklist-section" class="mb-12">
+      <OnboardingChecklist />
+    </section>
+
+    <section class="mb-12">
+      <SyncStatus />
+    </section>
+
+    <ErrorBoundary>
+      <section class="grid md:grid-cols-2 gap-6">
+        <a href="/reviews" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">📋 Reviews</h2>
+          <p class="text-gray-400">Ver y crear reseñas de restaurantes y platos</p>
+        </a>
+        <a href="/profile" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">👤 Perfil</h2>
+          <p class="text-gray-400">Tu identidad y claves criptográficas</p>
+        </a>
+        <a href="/settings" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">⚙️ Ajustes</h2>
+          <p class="text-gray-400">Configuración y sincronización</p>
+        </a>
+        <a href="/scraped" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">📥 Importar Datos</h2>
+          <p class="text-gray-400">Datos extraídos desde Yelp y Google Maps</p>
+        </a>
+        <a href="/extension-guide" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">🔧 Instalar Extensión</h2>
+          <p class="text-gray-400">Guía de instalación del GOS Scraper para Chrome</p>
+        </a>
+        <a href="/graph" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
+          <h2 class="text-2xl font-display mb-2">🕸️ Grafo</h2>
+          <p class="text-gray-400">Visualiza productos, reviews y usuarios</p>
+        </a>
+        <div class="block p-6 bg-white/5 rounded-xl border border-white/10 opacity-60">
+          <h2 class="text-2xl font-display mb-2">🍳 Recetas</h2>
+          <p class="text-gray-400">Base de datos científica de recetas</p>
+          <span class="text-xs text-gray-500 mt-2 block">Próximamente</span>
+        </div>
+      </section>
+    </ErrorBoundary>
+
+    <footer class="mt-12 text-center text-gray-600 text-sm">
+      <p>GOS PWA v0.1.0 | Sincronizado con GunDB</p>
+    </footer>
+  </div>
+
+  <ToastContainer />
+</Layout>
+
+<script>
+  // Check if user already selected country
+  const selectedCountry = localStorage.getItem('gos_country');
+  if (selectedCountry) {
+    const onboarding = document.getElementById('onboarding');
+    if (onboarding) onboarding.style.display = 'none';
+  }
+
+  // Hide onboarding checklist if user has completed all steps
+  const completedSteps = (() => {
+    try {
+      const raw = localStorage.getItem('gos_onboarding_completed');
+      return raw ? JSON.parse(raw) : [];
+    } catch { return []; }
+  })();
+  const allSteps = ['country', 'extension', 'scraped', 'favorites', 'graph'];
+  if (allSteps.every(s => completedSteps.includes(s))) {
+    const checklistSection = document.getElementById('checklist-section');
+    if (checklistSection) checklistSection.style.display = 'none';
+  }
+</script>

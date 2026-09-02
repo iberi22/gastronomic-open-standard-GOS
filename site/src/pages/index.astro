@@ -1,92 +1,138 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CountrySelector from '../components/CountrySelector.astro';
-import SyncStatus from '../components/SyncStatus.astro';
-import OnboardingChecklist from '../components/OnboardingChecklist.astro';
-import ToastContainer from '../components/ToastContainer.astro';
-import ErrorBoundary from '../components/ErrorBoundary.astro';
+import { Card, Badge, Button } from '@swal/ui';
+import GosGraph from '../components/GosGraph.svelte';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+// stats will be hydrated via GosGraph; static fallback numbers approximate
+const highlights = [
+  { k: 'Recetas', v: '400+', desc: 'De Colombia, Perú y mundo • con sensoria, técnica y región', color: '#FF6B6B' },
+  { k: 'Ingredientes', v: '250+', desc: 'Con ficha científica: nutrientes, compuestos y beneficios', color: '#4ECDC4' },
+  { k: 'Vitaminas', v: '40+', desc: 'Micronutrientes extraídos de ingredients/*.md', color: '#F9C74F' },
+  { k: 'Afecciones', v: '35+', desc: 'Health registry: hipertensión, inflamación, detox...', color: '#F94144' },
+  { k: 'Substancias', v: '30+', desc: 'Alicina, gingerol, cuminaldehído, polifenoles...', color: '#9D4EDD' },
+  { k: 'Dietas', v: '5', desc: 'Vegana, vegetariana, sin gluten, keto, mediterránea', color: '#06D6A0' },
+];
 ---
 
-<Layout title="GOS - Nodo Gastronómico">
-  <div class="max-w-4xl mx-auto">
-    <header class="text-center py-12">
-      <h1 class="text-5xl font-display mb-4 text-primary">GOS</h1>
-      <p class="text-xl text-gray-400">Gastronomic Open Standard</p>
-      <p class="text-gray-500 mt-2">Nodo Gastronómico Offline-First</p>
-    </header>
+<Layout title="GOS — Grafo Gastronómico Global">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="eyebrow">
+        <Badge variant="info" pulse>Antigravity dual theme</Badge>
+        <span class="eyebrow-text">Astro 7 + Svelte 5 + @swal/ui · edge-hive + Xavier</span>
+      </div>
+      <h1 class="h1">Grafo gastronómico <span class="accent">global</span>: recetas son nodos.</h1>
+      <p class="lead">
+        Presentación de <strong>recetas e ingredientes de todo el mundo</strong> interconectados en un grafo que une <strong>vitaminas, sabores, técnicas, substancias bioactivas</strong> y <strong>soluciones a afecciones</strong> — con capacidades alimenticias por <strong>dieta</strong> y hallazgos de investigaciones recientes.
+      </p>
+      <div class="cta">
+        <a href={`${base}/graph`} class="btn primary">🕸️ Explorar grafo global</a>
+        <a href={`${base}/recipes`} class="btn ghost">🍳 Ver recetas →</a>
+        <a href={`${base}/ingredients`} class="btn ghost">🌿 Ingredientes científicos →</a>
+      </div>
+      <div class="meta">
+        <span class="pill">CVE fix: vite ≥6.4.2 · astro ≥7.2</span>
+        <span class="pill">base {base || '/'} · static + PWA + D3</span>
+        <span class="pill">data-theme <code>antigravity</code> #050507 ↔ hueso #FDFCF8</span>
+      </div>
+    </div>
 
-    <section id="onboarding" class="mb-12">
-      <CountrySelector />
-    </section>
+    <div class="graph-shell">
+      <GosGraph client:load />
+      <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    </div>
+  </section>
 
-    <section id="checklist-section" class="mb-12">
-      <OnboardingChecklist />
-    </section>
-
-    <section class="mb-12">
-      <SyncStatus />
-    </section>
-
-    <ErrorBoundary>
-      <section class="grid md:grid-cols-2 gap-6">
-        <a href="/reviews" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">📋 Reviews</h2>
-          <p class="text-gray-400">Ver y crear reseñas de restaurantes y platos</p>
-        </a>
-        <a href="/profile" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">👤 Perfil</h2>
-          <p class="text-gray-400">Tu identidad y claves criptográficas</p>
-        </a>
-        <a href="/settings" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">⚙️ Ajustes</h2>
-          <p class="text-gray-400">Configuración y sincronización</p>
-        </a>
-        <a href="/scraped" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">📥 Importar Datos</h2>
-          <p class="text-gray-400">Datos extraídos desde Yelp y Google Maps</p>
-        </a>
-        <a href="/extension-guide" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">🔧 Instalar Extensión</h2>
-          <p class="text-gray-400">Guía de instalación del GOS Scraper para Chrome</p>
-        </a>
-        <a href="/graph" class="block p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-1">
-          <h2 class="text-2xl font-display mb-2">🕸️ Grafo</h2>
-          <p class="text-gray-400">Visualiza productos, reviews y usuarios</p>
-        </a>
-        <div class="block p-6 bg-white/5 rounded-xl border border-white/10 opacity-60">
-          <h2 class="text-2xl font-display mb-2">🍳 Recetas</h2>
-          <p class="text-gray-400">Base de datos científica de recetas</p>
-          <span class="text-xs text-gray-500 mt-2 block">Próximamente</span>
+  <section class="grid-highlights">
+    {highlights.map(h => (
+      <Card variant="surface" padding="md">
+        <div class="hl">
+          <div class="hl-head">
+            <span class="dot" style={`background:${h.color}`}></span>
+            <span class="hl-k">{h.k}</span>
+            <Badge variant="neutral">{h.v}</Badge>
+          </div>
+          <p class="hl-desc">{h.desc}</p>
         </div>
-      </section>
-    </ErrorBoundary>
+      </Card>
+    ))}
+  </section>
 
-    <footer class="mt-12 text-center text-gray-600 text-sm">
-      <p>GOS PWA v0.1.0 | Sincronizado con GunDB</p>
-    </footer>
-  </div>
+  <section class="two-col">
+    <Card variant="elevated" padding="lg">
+      <h2>Qué modela el grafo</h2>
+      <ul class="list">
+        <li><strong>recipe —[USES]→ ingredient —[CONTAINS]→ vitamin/nutrient</strong></li>
+        <li><strong>ingredient —[HAS_SUBSTANCE]→ substance —[TREATS]→ condition</strong></li>
+        <li><strong>ingredient —[HAS_FLAVOR]→ flavor · —[HAS_TEXTURE]→ texture</strong></li>
+        <li><strong>recipe —[FITS]→ diet · —[USES_TECHNIQUE]→ technique · —[FROM_REGION]→ region → place</strong></li>
+      </ul>
+      <p class="hint">Generado por <code>scripts/generate-graph.js</code> + <code>copy-content.js</code> desde <code>dishes/ ingredients/</code> (front-matter científico). Cada ingrediente con <code>micronutrients / active_compounds / health_registry</code> expande el grafo automáticamente.</p>
+      <div class="actions">
+        <Button variant="primary" onclick={() => location.href = `${base}/graph`}>Abrir grafo interactivo</Button>
+        <Button variant="secondary" onclick={() => location.href = `${base}/scientific`}>Ver capa científica</Button>
+      </div>
+    </Card>
+    <Card variant="surface" padding="lg">
+      <h2>Antigravity — tema dual</h2>
+      <p class="hint">Edge-hive es la base. Antigravity es la capa dual encima: <code>data-theme="antigravity"</code> dark (#050507/#0F0F10) y <code>antigravity-light</code> hueso (#FDFCF8) — toggle persistente en header. Todos los tokens via <code>@swal/ui/tokens + antigravity.css</code>.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#050507; color:#E5E5E5; border-color: rgba(255,255,255,0.06);">
+          <span>dark</span><code>#050507</code>
+        </div>
+        <div class="swatch" style="background:#FDFCF8; color:#1C1917; border-color: rgba(28,25,23,0.08);">
+          <span>hueso</span><code>#FDFCF8</code>
+        </div>
+        <div class="swatch" style="background:#8B5CF6; color:white;">
+          <span>accent</span><code>#8B5CF6</code>
+        </div>
+      </div>
+      <p class="hint">ConfigFloatingWindow (Xavier) disponible como island Svelte si activas edge-mesh.</p>
+    </Card>
+  </section>
 
-  <ToastContainer />
+  <section class="quick-links">
+    <a href={`${base}/recipes`} class="ql"><span>🍳</span><strong>Recetas</strong><em>Colección dishes/</em></a>
+    <a href={`${base}/ingredients`} class="ql"><span>🌿</span><strong>Ingredientes</strong><em>Fichas científicas</em></a>
+    <a href={`${base}/graph`} class="ql"><span>🕸️</span><strong>Grafo</strong><em>Explorador D3</em></a>
+    <a href={`${base}/scientific`} class="ql"><span>🧬</span><strong>Ciencia</strong><em>Vitaminas & substancias</em></a>
+  </section>
+
+<style>
+  .hero { display:grid; gap:18px; }
+  .hero-card { border:1px solid var(--swal-border); border-radius: 20px; padding: 22px; background: linear-gradient(180deg, color-mix(in srgb, var(--swal-surface) 92%, transparent), var(--swal-bg)); }
+  .eyebrow { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:10px; }
+  .eyebrow-text { font-size:12px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
+  .h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 850; letter-spacing:-0.02em; line-height:1.05; margin:8px 0 10px; color: var(--swal-text); }
+  .accent { color: var(--swal-accent); }
+  .lead { color: var(--swal-text-secondary); line-height:1.7; max-width: 880px; }
+  .lead strong { color: var(--swal-text); }
+  .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+  .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--swal-border); }
+  .btn.primary { background: var(--swal-accent); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
+  .btn.ghost { background: var(--swal-surface); color: var(--swal-text); }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .pill { font-size:11px; color: var(--swal-text-muted); background: var(--swal-surface); border:1px solid var(--swal-border); padding:5px 10px; border-radius:999px; font-family: var(--swal-font-mono); }
+  .graph-shell { border-radius: 20px; overflow:hidden; }
+  .grid-highlights { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:12px; margin-top:18px; }
+  .hl-head { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .hl-k { font-weight:700; color: var(--swal-text); }
+  .hl-desc { color: var(--swal-text-secondary); font-size:13px; line-height:1.5; }
+  .two-col { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:12px; margin-top:18px; }
+  @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
+  .list { margin:10px 0 0 18px; color: var(--swal-text-secondary); line-height:1.9; font-size:14px; }
+  .hint { color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin-top:10px; }
+  .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+  .swatches { display:flex; gap:10px; margin-top:12px; }
+  .swatch { flex:1; border:1px solid; border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; font-family: var(--swal-font-mono); font-size:12px; }
+  .swatch span{ font-weight:700; text-transform:uppercase; letter-spacing:0.08em; font-family: var(--swal-font); }
+  .quick-links { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:10px; margin-top:18px; }
+  .ql { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:4px; text-decoration:none; color: var(--swal-text); transition: transform 0.15s; }
+  .ql:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--swal-accent) 40%, var(--swal-border)); }
+  .ql span{ font-size:20px; }
+  .ql strong{ font-size:14px; }
+  .ql em{ font-size:12px; color: var(--swal-text-muted); font-style:normal; }
+</style>
 </Layout>
-
-<script>
-  // Check if user already selected country
-  const selectedCountry = localStorage.getItem('gos_country');
-  if (selectedCountry) {
-    const onboarding = document.getElementById('onboarding');
-    if (onboarding) onboarding.style.display = 'none';
-  }
-
-  // Hide onboarding checklist if user has completed all steps
-  const completedSteps = (() => {
-    try {
-      const raw = localStorage.getItem('gos_onboarding_completed');
-      return raw ? JSON.parse(raw) : [];
-    } catch { return []; }
-  })();
-  const allSteps = ['country', 'extension', 'scraped', 'favorites', 'graph'];
-  if (allSteps.every(s => completedSteps.includes(s))) {
-    const checklistSection = document.getElementById('checklist-section');
-    if (checklistSection) checklistSection.style.display = 'none';
-  }
-</script>

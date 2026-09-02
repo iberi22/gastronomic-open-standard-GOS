@@ -1,0 +1,83 @@
+---
+const countries = [
+  { code: 'CO', name: 'Colombia', flag: '🇨🇴' },
+  { code: 'PE', name: 'Perú', flag: '🇵🇪' },
+  { code: 'MX', name: 'México', flag: '🇲🇽' },
+  { code: 'AR', name: 'Argentina', flag: '🇦🇷' },
+  { code: 'US', name: 'Estados Unidos', flag: '🇺🇸' }
+];
+---
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/10">
+  <h2 class="text-xl font-display mb-4 text-primary">🌍 Selecciona tu país</h2>
+  <p class="text-gray-400 mb-6">Esto determinará qué datos se descargan inicialmente a tu dispositivo.</p>
+  
+  <div id="country-grid" class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    {countries.map(country => (
+      <button
+        data-country={country.code}
+        class="country-btn p-4 bg-white/5 rounded-lg border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all text-left"
+      >
+        <span class="text-2xl block mb-1">{country.flag}</span>
+        <span class="text-sm">{country.name}</span>
+      </button>
+    ))}
+  </div>
+
+  <div id="country-status" class="mt-4 text-sm text-gray-500"></div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.country-btn');
+  const status = document.getElementById('country-status');
+
+  async function selectCountry(code) {
+    localStorage.setItem('gos_country', code);
+
+    buttons.forEach(btn => {
+      btn.classList.remove('border-primary', 'bg-primary/20');
+      if (btn.getAttribute('data-country') === code) {
+        btn.classList.add('border-primary', 'bg-primary/20');
+      }
+    });
+
+    if (status) {
+      status.textContent = 'Descargando datos para ' + code + '...';
+    }
+
+    // Simulate data download
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    localStorage.setItem('gos_country_name', code);
+    
+    if (status) {
+      status.textContent = '✓ Datos descargados.country: ' + code;
+    }
+
+    // Hide onboarding after selection
+    const onboarding = document.getElementById('onboarding');
+    if (onboarding) {
+      setTimeout(() => {
+        onboarding.style.display = 'none';
+        location.reload();
+      }, 2000);
+    }
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const code = btn.getAttribute('data-country');
+      if (code) selectCountry(code);
+    });
+  });
+
+  // Check if already selected
+  const currentCountry = localStorage.getItem('gos_country');
+  if (currentCountry) {
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-country') === currentCountry) {
+        btn.classList.add('border-primary', 'bg-primary/20');
+      }
+    });
+  }
+</script>

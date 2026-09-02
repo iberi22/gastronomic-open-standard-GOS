@@ -1,7 +1,9 @@
 node_modules
-.astro
 dist
-
-src/content/dishes
-src/content/tips
-src/content/*.md
+.astro
+.wrangler
+.dev.vars
+.env
+*.log
+test-results
+coverage

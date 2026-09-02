@@ -1,0 +1,29 @@
+name = "gos-site"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# GitHub Pages base: /gastronomic-open-standard-GOS -> keep for Cloudflare Pages as well
+# When deploying to Cloudflare Pages, set base to "/" in astro.config if needed
+
+[[r2_buckets]]
+binding = "SWAL_R2"
+bucket_name = "gos-site-r2"
+
+[[d1_databases]]
+binding = "SWAL_D1"
+database_name = "gos-billing"
+database_id = "1c920534-54fc-449e-b944-180bf96ffe37"
+
+[[kv_namespaces]]
+binding = "SESSION"
+id = "57e68d72ca7545c39630c03677f3ac9d"
+
+[[kv_namespaces]]
+binding = "SWAL_KV"
+id = "9aef690dde244d51982f2947dba2d7aa"
+
+[ai]
+binding = "AI"
+
+[vars]
+NODE_VERSION = "20"

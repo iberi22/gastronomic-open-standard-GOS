@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const col = await getCollection('ingredients');
+  return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+---
+<Layout title={`${(entry.data as any).name} — Ingrediente GOS`}>
+  <a href={`${base}/ingredients`} class="back">← Ingredientes</a>
+  <article class="article">
+    <h1>{(entry.data as any).name} <span class="sci">{(entry.data as any).scientific_name ? `(${(entry.data as any).scientific_name})` : ''}</span></h1>
+    {(entry.data as any).group && <p class="group">Grupo: <strong>{(entry.data as any).group}</strong></p>}
+    {(entry.data as any).nutrition_per_100g && (
+      <div class="box">
+        <h3>Nutrición por 100 g</h3>
+        <div class="grid-nut">
+          {Object.entries((entry.data as any).nutrition_per_100g).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
+        </div>
+      </div>
+    )}
+    {(entry.data as any).micronutrients && (
+      <div class="box">
+        <h3>Micronutrientes</h3>
+        <div class="grid-nut">
+          {Object.entries((entry.data as any).micronutrients).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
+        </div>
+      </div>
+    )}
+    {(entry.data as any).active_compounds && (
+      <div class="box">
+        <h3>Compuestos bioactivos</h3>
+        <ul>{(entry.data as any).active_compounds.map(c=> <li><strong>{c.name}:</strong> {c.benefit} {c.scientific_ref && <em>({c.scientific_ref})</em>}</li>)}</ul>
+      </div>
+    )}
+    {(entry.data as any).health_registry && (
+      <div class="box accent">
+        <h3>Health registry — afecciones & beneficios</h3>
+        {(entry.data as any).health_registry.map(h=> (
+          <div class="health-item">
+            <div class="hhead"><strong>{h.condition}</strong> <span class="badge">{h.evidence_level}</span></div>
+            <div class="mech">{h.mechanism}</div>
+            {h.compounds && <div class="comps">Compuestos: {h.compounds.join(', ')}</div>}
+            {h.studies && <ul>{h.studies.map(s=> <li>{s.title} — <em>{s.source} {s.year}</em> {s.doi && <a href={`https://doi.org/${s.doi}`} target="_blank">{s.doi}</a>}</li>)}</ul>}
+          </div>
+        ))}
+      </div>
+    )}
+    <div class="prose"><Content /></div>
+  </article>
+<style>
+  .back{ font-size:12px; color: var(--swal-accent); text-decoration:none; }
+  .article{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:20px; padding:22px; margin-top:12px; }
+  .article h1{ margin:0; font-size:26px; color: var(--swal-text); }
+  .sci{ font-weight:400; color: var(--swal-text-muted); font-size:16px; font-style:italic; }
+  .group{ color: var(--swal-text-secondary); }
+  .box{ border:1px solid var(--swal-border); border-radius:16px; padding:14px; background: var(--swal-bg); margin:16px 0; }
+  .box.accent{ border-color: color-mix(in srgb, var(--swal-accent) 25%, var(--swal-border)); background: color-mix(in srgb, var(--swal-accent) 6%, var(--swal-surface)); }
+  .box h3{ margin:0 0 8px; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color: var(--swal-text-muted); }
+  .grid-nut{ display:grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap:8px; }
+  .nut{ display:flex; justify-content:space-between; border:1px solid var(--swal-border); background: var(--swal-surface); padding:8px 10px; border-radius:10px; font-family: var(--swal-font-mono); font-size:12px; }
+  .k{ color: var(--swal-text-muted); } .v{ color: var(--swal-text); font-weight:700; }
+  .health-item{ border-top:1px solid var(--swal-border); padding:10px 0; }
+  .hhead{ display:flex; gap:8px; align-items:center; }
+  .badge{ font-size:11px; padding:2px 8px; border-radius:999px; background: var(--swal-accent-muted); color: var(--swal-accent); border:1px solid color-mix(in srgb, var(--swal-accent) 25%, transparent); }
+  .mech{ color: var(--swal-text-secondary); font-size:13px; margin-top:4px; }
+  .comps{ font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-muted); }
+  .prose{ color: var(--swal-text-secondary); line-height:1.7; }
+  .prose :global(h2){ color: var(--swal-text); }
+</style>
+</Layout>

@@ -125,3 +125,52 @@ GitHub Actions desactivados por defecto en era privada SWAL; tests locales prefe
 
 *Add domain-specific REQ-008+ below. Keep numbering stable.*
 
+---
+
+## REQ-008: Recipe Schema (feature feat-recipe-schema)
+
+- **Category:** Functional
+- **Priority:** P2
+- **SRS Status:** `active`
+- **Files:** *(see .gitcore/features.json feature feat-recipe-schema)*
+
+### Description
+Structured recipe format with YAML frontmatter validation
+
+*Feature: `feat-recipe-schema` · status: pending*
+
+## REQ-009: Ingredient Database (feature feat-ingredient-database)
+
+- **Category:** Functional
+- **Priority:** P2
+- **SRS Status:** `active`
+- **Files:** *(see .gitcore/features.json feature feat-ingredient-database)*
+
+### Description
+Scientific ingredient metadata with nutritional information
+
+*Feature: `feat-ingredient-database` · status: pending*
+
+## REQ-010: Astro Site (feature feat-astro-site)
+
+- **Category:** Functional
+- **Priority:** P2
+- **SRS Status:** `active`
+- **Files:** *(see .gitcore/features.json feature feat-astro-site)*
+
+### Description
+Static site generation with Astro 5.x + Svelte
+
+*Feature: `feat-astro-site` · status: pending*
+
+## REQ-011: Recipe Translation (feature feat-recipe-translation)
+
+- **Category:** Functional
+- **Priority:** P2
+- **SRS Status:** `active`
+- **Files:** *(see .gitcore/features.json feature feat-recipe-translation)*
+
+### Description
+Batch translation of recipes using Gemini API
+
+*Feature: `feat-recipe-translation` · status: pending*

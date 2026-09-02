@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "lib": ["es2020", "webworker"],
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": false,
+    "declaration": false,
+    "types": []
+  },
+  "include": ["src/workers/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

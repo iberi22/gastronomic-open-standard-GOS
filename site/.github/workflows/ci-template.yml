@@ -1,0 +1,31 @@
+name: ci-template
+
+on:
+  push:
+    paths:
+      - "cores/swal-app-template/**"
+      - ".github/workflows/ci-template.yml"
+  pull_request:
+    paths:
+      - "cores/swal-app-template/**"
+  workflow_dispatch:
+
+jobs:
+  check-build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 9 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm --filter @swal/app-template install
+        working-directory: cores/swal-app-template
+      - run: pnpm --filter @swal/app-template run check
+        working-directory: cores/swal-app-template
+      - run: pnpm --filter @swal/app-template run build
+        working-directory: cores/swal-app-template
+      - run: pnpm --filter @swal/app-template test
+        working-directory: cores/swal-app-template
+      - run: pnpm --filter @swal/app-template exec playwright test
+        working-directory: cores/swal-app-template

@@ -1,0 +1,36 @@
+{
+  "name": "GOS - Gastronomic Open Standard",
+  "short_name": "GOS Node",
+  "description": "Base de datos gastronómica open source con recetas, ingredientes y reviews distribuidas P2P",
+  "start_url": "/gastronomic-open-standard-GOS/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0f",
+  "theme_color": "#e94560",
+  "lang": "es",
+  "dir": "ltr",
+  "scope": "/gastronomic-open-standard-GOS/",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "social"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

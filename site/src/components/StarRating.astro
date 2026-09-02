@@ -35,7 +35,7 @@ const { id = 'rating' } = Astro.props;
 
     container.addEventListener('mouseleave', () => {
       const checked = container.querySelector('input:checked');
-      const checkedIndex = checked ? parseInt(checked.value) - 1 : -1;
+      const checkedIndex = checked ? parseInt((checked as HTMLInputElement).value) - 1 : -1;
       labels.forEach((l, i) => {
         l.classList.toggle('text-yellow-400', i <= checkedIndex);
         l.classList.toggle('text-gray-600', i > checkedIndex);

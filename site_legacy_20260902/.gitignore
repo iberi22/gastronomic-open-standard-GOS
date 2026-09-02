@@ -1,0 +1,7 @@
+node_modules
+.astro
+dist
+
+src/content/dishes
+src/content/tips
+src/content/*.md
