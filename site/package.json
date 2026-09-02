@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "GOS \u2014 Gastronomic Open Standard \u00b7 grafo global recetas\u2194ingredientes\u2194vitaminas\u2194sabores\u2194afecciones\u2194dietas\u2194substancias \u2014 Astro 7 + Svelte 5 + @swal/ui antigravity",
+  "description": "GOS — Gastronomic Open Standard · grafo global recetas↔ingredientes↔vitaminas↔sabores↔afecciones↔dietas↔substancias — Astro 7 + Svelte 5 + @swal/ui antigravity",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
@@ -16,30 +16,31 @@
   "dependencies": {
     "@swal/ui": "file:../../../cores/swal-ui",
     "astro": "^7.2.10",
+    "d3": "^7.9.0",
+    "diff": "^8.0.4",
+    "glob": "^13.0.6",
+    "gray-matter": "^4.0.3",
     "idb": "8.0.3",
+    "sharp": "^0.35.3",
     "y-indexeddb": "9.0.12",
     "y-webrtc": "10.3.0",
-    "yjs": "13.6.32",
-    "gray-matter": "^4.0.3",
-    "glob": "^13.0.6",
-    "sharp": "^0.35.3",
-    "d3": "^7.9.0",
-    "diff": "^8.0.4"
+    "yjs": "13.6.32"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/cloudflare": "^14.2.5",
     "@astrojs/svelte": "^7.2.5",
     "@playwright/test": "1.62.1",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@types/node": "26.4.1",
     "autoprefixer": "10.5.4",
     "jsdom": "30.0.1",
     "postcss": "8.5.26",
     "svelte": "^5.0.0",
     "typescript": "^5.5.4",
     "vite-plugin-pwa": "^1.3.0",
-    "vitest": "4.1.11",
-    "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/container-queries": "^0.1.1"
+    "vitest": "4.1.11"
   },
   "overrides": {
     "js-yaml@3": "3.15.0",

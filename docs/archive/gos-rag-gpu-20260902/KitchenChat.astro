@@ -313,14 +313,14 @@
         systemPrompt += "\n\nUse the following verified recipes from our Gastronomic Open Standard database to answer the user's question. Focus on their details, sensory descriptors, and ingredients:\n\n";
         ragResults.forEach((recipe, i) => {
           systemPrompt += `[Recipe ${i+1}]: ${recipe.title}\n`;
-          if (recipe.region) systemPrompt += `- Region: ${recipe.region}\n`;
-          if (recipe.mainIngredients) systemPrompt += `- Ingredients: ${recipe.mainIngredients.join(', ')}\n`;
-          if (recipe.description) systemPrompt += `- Description: ${recipe.description}\n`;
+          if ((recipe as any).region) systemPrompt += `- Region: ${(recipe as any).region}\n`;
+          if ((recipe as any).mainIngredients) systemPrompt += `- Ingredients: ${(recipe as any).mainIngredients.join(', ')}\n`;
+          if ((recipe as any).description) systemPrompt += `- Description: ${(recipe as any).description}\n`;
           systemPrompt += `\n`;
         });
       }
 
-      const promptMessages = [
+      const promptMessages: any = [
         { role: "system", content: systemPrompt },
         ...chatHistory,
         { role: "user", content: query }
@@ -427,7 +427,7 @@
           <div class="min-w-0">
             <p class="text-xs font-bold text-gray-800 dark:text-gray-200 truncate">${escapeHTML(recipe.title)}</p>
             <p class="text-[10px] text-gray-500 dark:text-gray-400 capitalize truncate">
-              ${recipe.region ? `${recipe.region} • ` : ''}Difficulty: ${recipe.difficulty || 'Easy'}
+              ${(recipe as any).region ? `${(recipe as any).region} • ` : ''}Difficulty: ${(recipe as any).difficulty || 'Easy'}
             </p>
           </div>
           <span class="material-symbols-outlined text-gray-400 text-sm ml-auto">chevron_right</span>

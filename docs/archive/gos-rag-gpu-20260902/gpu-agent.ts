@@ -17,7 +17,7 @@ export async function getOrInitGPUEngine(
   modelId: string = DEFAULT_MODEL,
   onProgress?: ProgressCallback
 ): Promise<WebWorkerMLCEngine> {
-  if (typeof navigator === 'undefined' || !navigator.gpu) {
+  if (typeof navigator === 'undefined' || !(navigator as any).gpu) {
     throw new Error("WebGPU is not supported or not enabled in this browser.");
   }
 
@@ -54,7 +54,7 @@ export async function getOrInitGPUEngine(
       {
         initProgressCallback,
         appConfig: {
-          cacheBackend: "cache"
+          cacheBackend: "cache", model_list: [] as any
         }
       }
     );
@@ -72,7 +72,7 @@ export async function getOrInitGPUEngine(
  * Checks if WebGPU is supported on the current device.
  */
 export function isWebGPUSupported(): boolean {
-  return typeof navigator !== 'undefined' && !!navigator.gpu;
+  return typeof navigator !== 'undefined' && !!(navigator as any).gpu;
 }
 
 /**
@@ -102,7 +102,8 @@ export async function* streamGPUCompletion(
 
   const completion = await engine.chat.completions.create(chatOpts);
 
-  for await (const chunk of completion) {
+  // @ts-ignore
+        for await (const chunk of (completion as any)) {
     const content = chunk.choices[0]?.delta?.content || "";
     if (content) {
       yield content;
