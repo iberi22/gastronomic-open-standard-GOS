@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const dishes = await getCollection('dishes');
+  const countrySlugs = [...new Set(dishes.map(d => d.id.split('/')[0]))];
+
+  return countrySlugs.map(country => {
+    const countryDishes = dishes.filter(d => d.id.startsWith(`${country}/`));
+    return {
+      params: { country },
+      props: { dishes: countryDishes, country }
+    };
+  });
+}
+
+const { country, dishes } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+
+const COUNTRY_NAMES: Record<string, { name: string; flag: string }> = {
+  colombian: { name: 'Colombia', flag: '🇨🇴' },
+  mexican: { name: 'México', flag: '🇲🇽' },
+  japanese: { name: 'Japón', flag: '🇯🇵' },
+  italian: { name: 'Italia', flag: '🇮🇹' },
+  indian: { name: 'India', flag: '🇮🇳' },
+  french: { name: 'Francia', flag: '🇫🇷' },
+  thai: { name: 'Tailandia', flag: '🇹🇭' },
+  spanish: { name: 'España', flag: '🇪🇸' },
+  american: { name: 'Estados Unidos', flag: '🇺🇸' },
+  moroccan: { name: 'Marruecos', flag: '🇲🇦' },
+  greek: { name: 'Grecia', flag: '🇬🇷' },
+  argentinian: { name: 'Argentina', flag: '🇦🇷' },
+  brazilian: { name: 'Brasil', flag: '🇧🇷' },
+  chilean: { name: 'Chile', flag: '🇨🇱' },
+  cuban: { name: 'Cuba', flag: '🇨🇺' },
+  dominican: { name: 'República Dominicana', flag: '🇩🇴' },
+  peruvian: { name: 'Perú', flag: '🇵🇪' },
+  'puerto-rican': { name: 'Puerto Rico', flag: '🇵🇷' }
+};
+
+const meta = COUNTRY_NAMES[country] || { name: country.toUpperCase(), flag: '🌐' };
+
+const sorted = dishes.sort((a,b) => ((a.data as any).title||a.id).localeCompare((b.data as any).title||b.id));
+---
+
+<Layout title={`Recetas de ${meta.name} — GOS`}>
+  <a href={`${base}/countries`} class="back">← Catálogo de Países</a>
+
+  <div class="header">
+    <h1 class="title">{meta.flag} Recetas Auténticas de {meta.name}</h1>
+    <p class="sub">
+      Mostrando <strong>{sorted.length}</strong> recetas tradicionales estandarizadas científicamente con perfil sensorial e ingredientes.
+    </p>
+  </div>
+
+  <div class="grid">
+    {sorted.map(r => (
+      <a href={`${base}/recipes/${r.id}`} class="card">
+        <div class="card-title">{(r.data as any).title || r.id.split('/').pop()}</div>
+
+        <div class="meta-row">
+          {(r.data as any).region && <span class="pill">{(r.data as any).region}</span>}
+          {(r.data as any).difficulty && <span class="pill muted">{(r.data as any).difficulty}</span>}
+          {(r.data as any).servings && <span class="pill">🍽️ {(r.data as any).servings}</span>}
+        </div>
+
+        {(r.data as any).sensory?.flavor && (
+          <div class="sensory-row">
+            <strong>Sabor:</strong> {Array.isArray((r.data as any).sensory.flavor) ? (r.data as any).sensory.flavor.join(', ') : (r.data as any).sensory.flavor}
+          </div>
+        )}
+
+        {(r.data as any).main_ingredients?.length && (
+          <div class="ings">
+            <strong>Ingredientes:</strong> {(r.data as any).main_ingredients.slice(0, 4).join(' • ')}
+          </div>
+        )}
+      </a>
+    ))}
+  </div>
+
+<style>
+  .back { color: var(--swal-accent); text-decoration: none; font-size: 13px; font-weight: 600; }
+  .header { margin: 16px 0 24px; }
+  .title { font-size: 24px; font-weight: 850; color: var(--swal-text); margin: 0; }
+  .sub { color: var(--swal-text-secondary); font-size: 13px; margin-top: 4px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .card {
+    border: 1px solid var(--swal-border);
+    background: var(--swal-surface);
+    border-radius: 16px;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--swal-text);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.2s ease;
+  }
+  .card:hover { border-color: var(--swal-accent); }
+  .card-title { font-weight: 750; font-size: 16px; color: var(--swal-text); line-height: 1.3; }
+  .meta-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: var(--swal-bg); border: 1px solid var(--swal-border); color: var(--swal-text-secondary); }
+  .pill.muted { color: var(--swal-text-muted); }
+  .sensory-row { font-size: 11px; color: var(--swal-text-secondary); }
+  .ings { font-size: 11px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
+</style>
+</Layout>
