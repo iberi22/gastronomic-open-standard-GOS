@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const allDishes = await getCollection('dishes');
+
+const COUNTRY_MAP: Record<string, { name: string; flag: string; defaultRegion: string }> = {
+  colombian: { name: 'Colombia', flag: '🇨🇴', defaultRegion: 'Andina / Caribe' },
+  mexican: { name: 'México', flag: '🇲🇽', defaultRegion: 'Puebla / Oaxaca / Michoacán' },
+  japanese: { name: 'Japón', flag: '🇯🇵', defaultRegion: 'Tokyo / Osaka / Kyoto' },
+  italian: { name: 'Italia', flag: '🇮🇹', defaultRegion: 'Roma / Nápoles / Milán' },
+  indian: { name: 'India', flag: '🇮🇳', defaultRegion: 'Punjab / Hyderabad' },
+  french: { name: 'Francia', flag: '🇫🇷', defaultRegion: 'París / Borgoña / Provenza' },
+  thai: { name: 'Tailandia', flag: '🇹🇭', defaultRegion: 'Bangkok / Chiang Mai' },
+  spanish: { name: 'España', flag: '🇪🇸', defaultRegion: 'Valencia / Andalucía / Galicia' },
+  american: { name: 'Estados Unidos', flag: '🇺🇸', defaultRegion: 'Texas / Nueva York / Louisiana' },
+  moroccan: { name: 'Marruecos', flag: '🇲🇦', defaultRegion: 'Marrakech / Fez' },
+  greek: { name: 'Grecia', flag: '🇬🇷', defaultRegion: 'Atenas / Creta' },
+  argentinian: { name: 'Argentina', flag: '🇦🇷', defaultRegion: 'Pampa / Buenos Aires' },
+  brazilian: { name: 'Brasil', flag: '🇧🇷', defaultRegion: 'Bahia / Minas Gerais' },
+  chilean: { name: 'Chile', flag: '🇨🇱', defaultRegion: 'Valparaíso / Santiago' },
+  cuban: { name: 'Cuba', flag: '🇨🇺', defaultRegion: 'La Habana' },
+  dominican: { name: 'República Dominicana', flag: '🇩🇴', defaultRegion: 'Santo Domingo' },
+  peruvian: { name: 'Perú', flag: '🇵🇪', defaultRegion: 'Lima / Cusco' },
+  'puerto-rican': { name: 'Puerto Rico', flag: '🇵🇷', defaultRegion: 'San Juan' }
+};
+
+const grouped: Record<string, { count: number; sampleFlavors: string[]; name: string; flag: string; region: string }> = {};
+
+for (const dish of allDishes) {
+  const parts = dish.id.split('/');
+  const countrySlug = parts[0];
+  if (!grouped[countrySlug]) {
+    const meta = COUNTRY_MAP[countrySlug] || { name: countrySlug.toUpperCase(), flag: '🌐', defaultRegion: (dish.data as any).region || 'Nacional' };
+    grouped[countrySlug] = {
+      count: 0,
+      sampleFlavors: [],
+      name: meta.name,
+      flag: meta.flag,
+      region: meta.defaultRegion
+    };
+  }
+  grouped[countrySlug].count++;
+  if ((dish.data as any).sensory?.flavor && grouped[countrySlug].sampleFlavors.length < 3) {
+    const flavors = Array.isArray((dish.data as any).sensory.flavor) ? (dish.data as any).sensory.flavor : [(dish.data as any).sensory.flavor];
+    for (const f of flavors) {
+      if (!grouped[countrySlug].sampleFlavors.includes(f) && grouped[countrySlug].sampleFlavors.length < 3) {
+        grouped[countrySlug].sampleFlavors.push(f);
+      }
+    }
+  }
+}
+
+const countryList = Object.keys(grouped).map(slug => ({
+  slug,
+  ...grouped[slug]
+})).sort((a,b) => b.count - a.count);
+---
+
+<Layout title="Catálogo Mundial de Países — GOS">
+  <div class="header">
+    <h1 class="title">Catálogo Culinario Mundial (Top 20)</h1>
+    <p class="sub">
+      Explora la base de datos de <strong>{allDishes.length}</strong> recetas estandarizadas científicamente clasificadas por país y región.
+    </p>
+  </div>
+
+  <div class="grid">
+    {countryList.map(c => (
+      <a href={`${base}/countries/${c.slug}`} class="country-card">
+        <div class="card-header">
+          <span class="flag">{c.flag}</span>
+          <div>
+            <h2 class="c-name">{c.name}</h2>
+            <span class="c-region">{c.region}</span>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-pill">
+            <span class="stat-val">{c.count}</span>
+            <span class="stat-lbl">Recetas</span>
+          </div>
+        </div>
+
+        {c.sampleFlavors.length > 0 && (
+          <div class="flavors">
+            <small>Sabores clave:</small>
+            <div class="tags">
+              {c.sampleFlavors.map(f => <span class="tag">{f}</span>)}
+            </div>
+          </div>
+        )}
+      </a>
+    ))}
+  </div>
+
+<style>
+  .header { margin-bottom: 24px; }
+  .title { font-size: 26px; font-weight: 850; color: var(--swal-text); margin: 0; }
+  .sub { color: var(--swal-text-secondary); font-size: 14px; margin-top: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .country-card {
+    background: var(--swal-surface);
+    border: 1px solid var(--swal-border);
+    border-radius: 20px;
+    padding: 18px;
+    text-decoration: none;
+    color: var(--swal-text);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .country-card:hover {
+    border-color: var(--swal-accent);
+    transform: translateY(-2px);
+  }
+  .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .flag { font-size: 36px; line-height: 1; }
+  .c-name { font-size: 18px; font-weight: 750; margin: 0; line-height: 1.2; }
+  .c-region { font-size: 11px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
+  .stats { margin: 8px 0; }
+  .stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--swal-bg);
+    border: 1px solid var(--swal-border);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .stat-val { font-weight: 800; color: var(--swal-accent); font-size: 14px; }
+  .stat-lbl { font-size: 11px; color: var(--swal-text-secondary); }
+  .flavors { margin-top: 10px; font-size: 11px; color: var(--swal-text-muted); }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag {
+    background: var(--swal-accent-muted);
+    color: var(--swal-accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+</style>
+</Layout>
