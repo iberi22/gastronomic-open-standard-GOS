@@ -22,3 +22,4 @@ __pycache__/
 bin/
 *.exe
 archive/site-cleanup/
+site_legacy_20260902/
