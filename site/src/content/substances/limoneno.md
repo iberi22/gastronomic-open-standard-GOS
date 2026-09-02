@@ -11,7 +11,7 @@ vitaminas: ["Vitamin C", "Vitamin B6", "Potassium"]
 compuestos: ["Citral", "Linalool", "Beta-pinene"]
 sources: ["PubMed", "NIH"]
 tags: ["citrico", "anxiolitico", "digestivo"]
-image: "/gastronomic-open-standard-GOS/images/substances/limoneno.jpg"
+image: "/images/substances/limoneno.jpg"
 image_attribution: "Pixabay — Citrus limon"
 health_registry:
   - condition: "GERD / Heartburn"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1000/altmed.12.1.0"
 ---
 
-![Limoneno](/gastronomic-open-standard-GOS/images/substances/limoneno.jpg)
+![Limoneno](/images/substances/limoneno.jpg)
 *Foto: Pixabay — Citrus limon — placeholder real photo path `public/images/substances/limoneno.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

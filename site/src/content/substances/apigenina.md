@@ -11,7 +11,7 @@ vitaminas: ["Calcium", "Magnesium", "Vitamin A"]
 compuestos: ["Luteolin", "Chrysin", "Apigenin-7-glucoside"]
 sources: ["PubMed", "NIH"]
 tags: ["manzanilla", "ansiolitico", "flavona"]
-image: "/gastronomic-open-standard-GOS/images/substances/apigenina.jpg"
+image: "/images/substances/apigenina.jpg"
 image_attribution: "Pixabay — Matricaria chamomilla"
 health_registry:
   - condition: "Anxiety / Insomnia"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1002/ptr.4895"
 ---
 
-![Apigenina](/gastronomic-open-standard-GOS/images/substances/apigenina.jpg)
+![Apigenina](/images/substances/apigenina.jpg)
 *Foto: Pixabay — Matricaria chamomilla — placeholder real photo path `public/images/substances/apigenina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

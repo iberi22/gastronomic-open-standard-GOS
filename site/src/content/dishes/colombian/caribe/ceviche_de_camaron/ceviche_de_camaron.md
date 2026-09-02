@@ -73,7 +73,7 @@ A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o c
     * 1 manojo de cilantro fresco picado
     * Opcional: Ajo finamente picado
 * **La Salsa (El secreto):**
-    * 1/2 taza de **[Salsa de Tomate](/gastronomic-open-standard-GOS/dishes/colombian/caribe/ceviche_de_camaron/../../condimentos/salsa_rosada)** (Ketchup) de buena calidad
+    * 1/2 taza de **[Salsa de Tomate](/dishes/colombian/caribe/ceviche_de_camaron/../../condimentos/salsa_rosada)** (Ketchup) de buena calidad
     * 2 cucharadas de mayonesa (para dar cremosidad, opcional)
     * Jugo de 4-5 limones Tahití (jugosos)
     * Picante (Tabasco o ají chivato) al gusto
@@ -103,7 +103,7 @@ A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o c
 
 ## 📸 Galería
 
-![Ceviche Cartagenero](/gastronomic-open-standard-GOS/dishes/colombian/caribe/ceviche_de_camaron/images/1.webp)
+![Ceviche Cartagenero](/dishes/colombian/caribe/ceviche_de_camaron/images/1.webp)
 
 ---
 

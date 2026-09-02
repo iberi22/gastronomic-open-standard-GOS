@@ -86,7 +86,7 @@ La Cachama Asada es un plato típico de la Orinoquía colombiana, preparado con 
 
 ## 📸 Galería
 
-![Cachama Asada Llanera](/gastronomic-open-standard-GOS/dishes/colombian/orinoquia/cachama_asada/images/1.webp)
+![Cachama Asada Llanera](/dishes/colombian/orinoquia/cachama_asada/images/1.webp)
 
 ---
 

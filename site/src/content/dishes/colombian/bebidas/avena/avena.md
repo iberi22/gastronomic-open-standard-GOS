@@ -81,7 +81,7 @@ La avena es una bebida refrescante y cremosa, tradicional en hogares y ventas ca
 
 ## Galería
 
-![Avena fría cremosa](/gastronomic-open-standard-GOS/dishes/colombian/bebidas/avena/images/1.webp)
+![Avena fría cremosa](/dishes/colombian/bebidas/avena/images/1.webp)
 
 ## Análisis Sensorial y de Uso
 

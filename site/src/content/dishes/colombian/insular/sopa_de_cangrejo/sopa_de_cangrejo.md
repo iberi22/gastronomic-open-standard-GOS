@@ -99,7 +99,7 @@ La Sopa de Cangrejo es uno de los platos más emblemáticos de San Andrés y Pro
 
 ## 📸 Galería
 
-![Sopa de cangrejo cremosa](/gastronomic-open-standard-GOS/dishes/colombian/insular/sopa_de_cangrejo/images/1.webp)
+![Sopa de cangrejo cremosa](/dishes/colombian/insular/sopa_de_cangrejo/images/1.webp)
 
 ---
 

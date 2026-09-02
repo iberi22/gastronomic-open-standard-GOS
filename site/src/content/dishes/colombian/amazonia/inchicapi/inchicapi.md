@@ -100,7 +100,7 @@ El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región por
 
 ## 📸 Galería
 
-![Inchicapi en tazón de barro](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/inchicapi/images/1.webp)
+![Inchicapi en tazón de barro](/dishes/colombian/amazonia/inchicapi/images/1.webp)
 
 ---
 

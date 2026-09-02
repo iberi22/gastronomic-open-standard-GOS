@@ -90,7 +90,7 @@ El chocolate santafereño es una bebida caliente tradicional de Bogotá y el alt
 
 ## 📸 Galería
 
-![Chocolate santafereño con queso](/gastronomic-open-standard-GOS/dishes/colombian/bebidas/chocolate_santafereño/images/1.webp)
+![Chocolate santafereño con queso](/dishes/colombian/bebidas/chocolate_santafereño/images/1.webp)
 
 ---
 

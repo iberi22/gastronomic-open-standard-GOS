@@ -110,7 +110,7 @@ El Pollo Guisado es el rey de la comida casera dominicana. Se trata de una prepa
 
 ## 📸 Galería
 
-![Plato abundante de pollo guisado dominicano recién servido](/gastronomic-open-standard-GOS/dishes/dominican/images/pollo_dom_1.webp)
+![Plato abundante de pollo guisado dominicano recién servido](/dishes/dominican/images/pollo_dom_1.webp)
 
 ---
 

@@ -90,7 +90,7 @@ El Arroz Llanero es un plato emblemático de la Orinoquía colombiana, preparado
 
 ## 📸 Galería
 
-![Arroz Llanero](/gastronomic-open-standard-GOS/dishes/colombian/orinoquia/arroz_llanero/images/1.webp)
+![Arroz Llanero](/dishes/colombian/orinoquia/arroz_llanero/images/1.webp)
 
 ---
 

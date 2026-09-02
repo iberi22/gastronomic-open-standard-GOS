@@ -20,7 +20,7 @@
       // try both base forms
       let data: any;
       try { data = await fetch(`${base}/graph-data.json`.replace('//','/')).then(r=>r.json()); }
-      catch { data = await fetch(`/gastronomic-open-standard-GOS/graph-data.json`).then(r=>r.json()); }
+      catch { data = await fetch(`/graph-data.json`).then(r=>r.json()); }
       stats = {
         nodes: data.nodes?.length || 0,
         edges: data.edges?.length || 0,

@@ -1,0 +1,9 @@
+packages:
+  - "site"
+
+overrides:
+  sharp: "^0.35.3"
+  js-yaml: "^5.4.1"
+  markdown-it: "^14.3.1"
+  gray-matter>js-yaml: "^3.15.0"
+  front-matter>js-yaml: "^3.15.0"

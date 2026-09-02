@@ -11,7 +11,7 @@ vitaminas: ["Vitamin B6", "Vitamin C", "Selenium"]
 compuestos: ["S-allylcysteine", "Ajoene"]
 sources: ["NIH", "PubMed"]
 tags: ["sazon", "antihipertensivo", "antimicrobiano"]
-image: "/gastronomic-open-standard-GOS/images/substances/alicina.jpg"
+image: "/images/substances/alicina.jpg"
 image_attribution: "Wikimedia Commons / Pixabay — Allium sativum"
 health_registry:
   - condition: "Hypertension"
@@ -32,7 +32,7 @@ health_registry:
         doi: "10.1111/j.1365-2796.1993.tb00630.x"
 ---
 
-![Alicina](/gastronomic-open-standard-GOS/images/substances/alicina.jpg)
+![Alicina](/images/substances/alicina.jpg)
 *Foto: Wikimedia Commons / Pixabay — Allium sativum — placeholder real photo path `public/images/substances/alicina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

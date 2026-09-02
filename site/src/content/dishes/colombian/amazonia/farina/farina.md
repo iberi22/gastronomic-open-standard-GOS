@@ -84,7 +84,7 @@ La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca 
 
 ## 📸 Galería
 
-![Fariña en cuenco de madera](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/farina/images/1.webp)
+![Fariña en cuenco de madera](/dishes/colombian/amazonia/farina/images/1.webp)
 
 ---
 

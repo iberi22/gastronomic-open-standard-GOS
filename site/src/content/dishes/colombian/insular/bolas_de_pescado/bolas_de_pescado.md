@@ -66,7 +66,7 @@ Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés y Provi
 
 ## 📸 Galería
 
-![Bolas de pescado fritas](/gastronomic-open-standard-GOS/dishes/colombian/insular/bolas_de_pescado/images/1.webp)
+![Bolas de pescado fritas](/dishes/colombian/insular/bolas_de_pescado/images/1.webp)
 
 ---
 

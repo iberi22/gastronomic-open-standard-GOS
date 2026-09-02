@@ -124,7 +124,7 @@ El Sancocho de Siete Carnes es el monarca absoluto de la mesa dominicana. No es 
 
 ## 📸 Galería
 
-![Olla comunitaria de Sancocho de Siete Carnes dominicano listo para servir](/gastronomic-open-standard-GOS/dishes/dominican/images/sancocho_1.webp)
+![Olla comunitaria de Sancocho de Siete Carnes dominicano listo para servir](/dishes/dominican/images/sancocho_1.webp)
 
 ---
 

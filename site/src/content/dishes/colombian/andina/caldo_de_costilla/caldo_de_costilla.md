@@ -91,7 +91,7 @@ El Caldo de Costilla es un desayuno típico de la región andina colombiana, esp
 
 ## 📸 Galería
 
-![Caldo de Costilla](/gastronomic-open-standard-GOS/dishes/colombian/andina/caldo_de_costilla/images/1.webp)
+![Caldo de Costilla](/dishes/colombian/andina/caldo_de_costilla/images/1.webp)
 
 ---
 

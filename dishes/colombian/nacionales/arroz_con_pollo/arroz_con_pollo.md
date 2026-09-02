@@ -108,6 +108,5 @@ Este plato tiene variantes en toda América Latina. Puedes ver la [versión peru
 
 ### Fuentes
 
-
 - [Pendiente]
 \n

@@ -68,7 +68,7 @@ Este plato es una de las recetas tradicionales de la región Insular, especialme
 
 ## 📸 Galería
 
-![Frijoles con cola de cerdo](/gastronomic-open-standard-GOS/dishes/colombian/insular/frijoles_con_cola_de_cerdo/images/1.webp)
+![Frijoles con cola de cerdo](/dishes/colombian/insular/frijoles_con_cola_de_cerdo/images/1.webp)
 
 ---
 

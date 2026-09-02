@@ -76,7 +76,7 @@ El Rocoto Relleno es el rey de las picanterías arequipeñas. Su característica
 * **El Picadillo de Relleno:**
     * 500 g de carne de res tierna (Lomo o cadera), cortada minuciosamente a cuchillo en cubitos muy pequeños
     * 1 cebolla roja grande, picada en cuadritos finos
-    * 2 cucharadas de pasta de **[Ají Panca](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/../../ingredients/aji_panca)**
+    * 2 cucharadas de pasta de **[Ají Panca](/dishes/peruvian/sierra/../../ingredients/aji_panca)**
     * 1 cucharadita de ajo molido
     * 1/4 taza de pasas negras (hidratadas en agua caliente o pisco)
     * 1/4 taza de maní (cacahuate) tostado y molido medianamente
@@ -120,7 +120,7 @@ El Rocoto Relleno es el rey de las picanterías arequipeñas. Su característica
 
 ## 📸 Galería
 
-![Rocoto Relleno](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/images/rocoto_relleno.webp)
+![Rocoto Relleno](/dishes/peruvian/sierra/images/rocoto_relleno.webp)
 
 ---
 

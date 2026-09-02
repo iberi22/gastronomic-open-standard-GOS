@@ -85,7 +85,7 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 
 ## 📸 Galería
 
-![Casabe Amazónico](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/casabe/casabe/images/1.webp)
+![Casabe Amazónico](/dishes/colombian/amazonia/casabe/casabe/images/1.webp)
 
 ---
 

@@ -11,7 +11,7 @@ vitaminas: ["Manganese", "Vitamin K", "Iron"]
 compuestos: ["Linalyl acetate", "Geraniol", "Terpineol"]
 sources: ["PubMed", "NIH"]
 tags: ["floral", "ansiolitico", "albahaca"]
-image: "/gastronomic-open-standard-GOS/images/substances/linalool.jpg"
+image: "/images/substances/linalool.jpg"
 image_attribution: "Pixabay — Ocimum basilicum"
 health_registry:
   - condition: "Anxiety"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.3389/fnbeh.2017.00241"
 ---
 
-![Linalool](/gastronomic-open-standard-GOS/images/substances/linalool.jpg)
+![Linalool](/images/substances/linalool.jpg)
 *Foto: Pixabay — Ocimum basilicum — placeholder real photo path `public/images/substances/linalool.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

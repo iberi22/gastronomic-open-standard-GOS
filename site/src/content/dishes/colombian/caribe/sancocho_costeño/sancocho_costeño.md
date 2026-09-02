@@ -101,7 +101,7 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 
 ## 📸 Galería
 
-![Sancocho Costeño Servido](/gastronomic-open-standard-GOS/dishes/colombian/caribe/sancocho_costeño/images/1.webp)
+![Sancocho Costeño Servido](/dishes/colombian/caribe/sancocho_costeño/images/1.webp)
 
 ---
 
@@ -112,8 +112,8 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Salado, Umami        | 5/5              | Sinergia de glutamatos (3 carnes) + nucleótidos. |
-| **Aroma**| Cárnico, Herbal      | 5/5              | Aldehídos del **[Cilantro](/gastronomic-open-standard-GOS/dishes/colombian/caribe/sancocho_costeño/../../ingredients/cilantro)** y terpenos del comino. |
-| **Textura**| Espesa, Tropezuda    | 5/5              | Suspensión de almidones de **[Yuca](/gastronomic-open-standard-GOS/dishes/colombian/caribe/sancocho_costeño/../../ingredients/yuca_dulce)** y ñame. |
+| **Aroma**| Cárnico, Herbal      | 5/5              | Aldehídos del **[Cilantro](/dishes/colombian/caribe/sancocho_costeño/../../ingredients/cilantro)** y terpenos del comino. |
+| **Textura**| Espesa, Tropezuda    | 5/5              | Suspensión de almidones de **[Yuca](/dishes/colombian/caribe/sancocho_costeño/../../ingredients/yuca_dulce)** y ñame. |
 | **Boca** | Untuoso, Llenador    | 5/5              | Grasa emulsionada de la costilla y colágeno disuelto. |
 
 ### ⚗️ Química y Física Culinaria

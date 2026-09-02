@@ -112,7 +112,7 @@ El Lomo Saltado es uno de los platos más populares y queridos de la gastronomí
 
 ## 📸 Galería
 
-![Lomo Saltado](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/lomo_saltado.webp)
+![Lomo Saltado](/dishes/peruvian/costa/images/lomo_saltado.webp)
 
 ---
 

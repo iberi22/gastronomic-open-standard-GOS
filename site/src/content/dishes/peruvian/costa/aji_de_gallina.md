@@ -80,7 +80,7 @@ El Ají de Gallina es uno de los platos más representativos y queridos del Per�
 * **El Aderezo Base:**
     * 1 cebolla roja grande, picada fina en cuadritos (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 3/4 taza de pasta de **[Ají Amarillo](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_amarillo)** (sin pepas ni venas, hervido previamente)
+    * 3/4 taza de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)** (sin pepas ni venas, hervido previamente)
     * 2 cucharadas de aceite vegetal
     * 1/2 cucharadita de palillo (cúrcuma peruana, opcional para resaltar color)
 * **Toque Final y Enriquecedores:**
@@ -117,7 +117,7 @@ El Ají de Gallina es uno de los platos más representativos y queridos del Per�
 
 ## 📸 Galería
 
-![Ají de Gallina](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/aji_de_gallina.webp)
+![Ají de Gallina](/dishes/peruvian/costa/images/aji_de_gallina.webp)
 
 ---
 

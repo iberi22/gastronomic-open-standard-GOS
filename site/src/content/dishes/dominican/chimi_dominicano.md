@@ -120,7 +120,7 @@ El Chimichurri Dominicano, o simplemente *Chimi*, es la comida callejera nocturn
 
 ## 📸 Galería
 
-![Chimichurri Dominicano servido caliente listo para comer](/gastronomic-open-standard-GOS/dishes/dominican/images/chimi_1.webp)
+![Chimichurri Dominicano servido caliente listo para comer](/dishes/dominican/images/chimi_1.webp)
 
 ---
 

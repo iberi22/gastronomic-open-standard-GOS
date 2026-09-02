@@ -109,15 +109,15 @@ La empanada es uno de los snacks más emblemáticos y queridos de Colombia. Su v
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Salado, Maíz, Umami  | 5/5              | Maíz tostado + relleno condimentado con comino y **[Achiote](/gastronomic-open-standard-GOS/dishes/colombian/snacks/empanada/../../ingredients/achiote)**. |
+| **Sabor**| Salado, Maíz, Umami  | 5/5              | Maíz tostado + relleno condimentado con comino y **[Achiote](/dishes/colombian/snacks/empanada/../../ingredients/achiote)**. |
 | **Aroma**| Fritura, Especiado   | 5/5              | Aldehídos de la Reacción de Maillard y terpenos del comino. |
 | **Textura**| Crujiente / Suave    | 5/5              | Costra vítrea externa vs. interior húmedo y suave. |
 | **Boca** | Caliente, Grasosa    | 4/5              | Sensación térmica y lipídica placentera. |
 
 ### ⚗️ Química y Física Culinaria
 
-- **Transición Vítrea (Glass Transition):** Al freír la **[Harina de Maíz](/gastronomic-open-standard-GOS/dishes/colombian/snacks/empanada/../../ingredients/harina_maiz)** a >170°C, el agua superficial se evapora instantáneamente, dejando una matriz de almidón y proteína deshidratada que forma una estructura "vidriosa" y crujiente. Si la temperatura baja, absorbe aceite y queda grasosa.
-- **Color y Sabor del Achiote:** El **[Achiote](/gastronomic-open-standard-GOS/dishes/colombian/snacks/empanada/../../ingredients/achiote)** no solo da el color amarillo solar; la bixina liposoluble y trazas de compuestos aromáticos aportan un sabor "terroso" que complementa el maíz.
+- **Transición Vítrea (Glass Transition):** Al freír la **[Harina de Maíz](/dishes/colombian/snacks/empanada/../../ingredients/harina_maiz)** a >170°C, el agua superficial se evapora instantáneamente, dejando una matriz de almidón y proteína deshidratada que forma una estructura "vidriosa" y crujiente. Si la temperatura baja, absorbe aceite y queda grasosa.
+- **Color y Sabor del Achiote:** El **[Achiote](/dishes/colombian/snacks/empanada/../../ingredients/achiote)** no solo da el color amarillo solar; la bixina liposoluble y trazas de compuestos aromáticos aportan un sabor "terroso" que complementa el maíz.
 - **Relleno Húmedo:** La papa actúa como matriz que retiene los jugos de la carne y el guiso, evitando que la empanada se sienta seca por dentro a pesar de la fritura profunda.
 
 ### 🍎 Nutrición y Metabolismo

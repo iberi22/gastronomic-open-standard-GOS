@@ -98,7 +98,7 @@ description: "El snack callejero por excelencia del Atlántico. Es un embutido d
 
 ## 📸 Galería
 
-![Butifarra Soledeña](/gastronomic-open-standard-GOS/dishes/colombian/caribe/butifarra_soledeña/images/1.webp)
+![Butifarra Soledeña](/dishes/colombian/caribe/butifarra_soledeña/images/1.webp)
 
 ---
 

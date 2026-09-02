@@ -103,17 +103,20 @@ La Bandera Dominicana es el pilar culinario cotidiano de la República Dominican
 ## 👨‍🍳 Instrucciones
 
 ### Parte 1: El Pollo Guisado
+
 1. **Marinar el Pollo:** Limpia el pollo con jugo de limón o naranja agria. En un tazón grande, mezcla las piezas de pollo con el ajo machacado, el orégano dominicano, la cebolla, el pimiento verde y la mitad del cilantro fresco. Sazona con sal y pimienta. Deja marinar por 20 minutos.
 2. **Caramelizar con Azúcar (El Dorado Dominicano - Paso Crítico):** En un caldero de hierro fundido grande a fuego medio-alto, vierte las 3 cucharadas de aceite de cocina. Añade la cucharada de azúcar blanca refinada en el aceite caliente. Observa de forma constante: el azúcar comenzará a derretirse y caramelizarse, tiñéndose de un color marrón dorado oscuro brillante.
 3. **Sellar el Pollo:** En el momento exacto en que el azúcar se torne de un color caramelo oscuro brillante, añade las piezas de pollo marinadas (escurridas de sus vegetales de marinado) directamente al caldero caliente. El pollo comenzará a chirriar y absorberá inmediatamente el caramelo, tiñendo su piel de un espectacular color dorado brillante. Sella por todos sus lados durante 8-10 minutos.
 4. **Guisar el Pollo:** Añade los vegetales del marinado que quedaron en el tazón, la pasta de tomate y las aceitunas si las usas. Mezcla bien de forma constante. Vierte una taza de agua caliente, tapa el caldero, reduce el fuego a medio-bajo y cocina lentamente por 25-30 minutos hasta que el pollo esté sumamente tierno.
 
 ### Parte 2: Las Habichuelas Rojas Guisadas
+
 1. **Sofreír la Base:** En una olla mediana a fuego medio, calienta un poco de aceite y sofríe la cebolla, el ajo machacado, el pimiento cubanela, el orégano dominicano y la pasta de tomate durante 3-4 minutos.
 2. **Guisar las Habichuelas:** Añade las habichuelas rojas con su líquido de cocción y la ramita de cilantro ancho. Incorpora la calabaza cocida y licuada.
 3. **Concentrar el Caldo:** Deja hervir a fuego medio-bajo durante unos 15-20 minutos, aplastando un par de cucharones de habichuelas contra los bordes de la olla. Cocina hasta lograr un caldo sumamente espeso.
 
 ### Parte 3: El Arroz Blanco y el Concón
+
 1. **Hervir el Agua:** En un caldero mediano de hierro fundido, hierve las 4 tazas de agua junto con 2 cucharadas de aceite vegetal y la sal fina.
 2. **Agregar el Arroz:** Añade el arroz blanco limpio de grano largo. Revuelve suavemente una vez. Cocina a fuego medio-alto sin tapar hasta que el agua se evapore por completo de la superficie.
 3. **El Graneado y la Tapa:** Reduce el fuego al mínimo absoluto. Vierte las otras 2 cucharadas de aceite por encima (esto ayuda a que el grano quede suelto y facilita la formación del concón). Tapa herméticamente y cocina a fuego mínimo durante 20 minutos sin destapar para nada.

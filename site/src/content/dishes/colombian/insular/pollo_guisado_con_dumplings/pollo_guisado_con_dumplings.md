@@ -107,7 +107,7 @@ El Pollo Guisado con Dumplings es un plato reconfortante y festivo de la región
 
 ## 📸 Galería
 
-![Pollo guisado con dumplings](/gastronomic-open-standard-GOS/dishes/colombian/insular/pollo_guisado_con_dumplings/images/1.webp)
+![Pollo guisado con dumplings](/dishes/colombian/insular/pollo_guisado_con_dumplings/images/1.webp)
 
 ---
 

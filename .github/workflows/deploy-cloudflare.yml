@@ -1,0 +1,62 @@
+name: Deploy GOS to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'dishes/**'
+      - 'ingredients/**'
+      - 'tips/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-cloudflare.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cf-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          lfs: true
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: ./site
+
+      - name: Generate content (recipes, API, graph)
+        working-directory: ./site
+        run: |
+          node scripts/copy-content.js
+          node scripts/generate-api.js
+          node scripts/generate-graph.js
+
+      - name: Build Astro site
+        working-directory: ./site
+        run: pnpm exec astro build
+
+      - name: Deploy to Cloudflare Pages
+        working-directory: ./site
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: pnpm exec wrangler pages deploy dist --project-name=gos-site --branch=main --commit-dirty=true

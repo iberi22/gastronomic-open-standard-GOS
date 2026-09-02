@@ -100,7 +100,7 @@ El Mojito es el embajador líquido de Cuba en el mundo entero. Su origen se remo
 
 ## 📸 Galería
 
-![Mojito Cubano tradicional servido frío con yerbabuena](/gastronomic-open-standard-GOS/dishes/cuban/images/mojito_1.webp)
+![Mojito Cubano tradicional servido frío con yerbabuena](/dishes/cuban/images/mojito_1.webp)
 
 ---
 

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SITE = 'https://iberi22.github.io/gastronomic-open-standard-GOS';
+const SITE = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev';
 const publicDir = path.resolve(__dirname, '../public');
 const contentDir = path.resolve(__dirname, '../src/content');
 

@@ -109,7 +109,7 @@ La Papa a la Huancaína es un clásico indiscutible que acompaña casi cualquier
 
 ## 📸 Galería
 
-![Papa a la Huancaína](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/images/huancaina.webp)
+![Papa a la Huancaína](/dishes/peruvian/sierra/images/huancaina.webp)
 
 ---
 

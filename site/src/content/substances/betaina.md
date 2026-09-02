@@ -11,7 +11,7 @@ vitaminas: ["Folate", "Manganese", "Potassium"]
 compuestos: ["Choline", "Glycine", "Betaine aldehyde"]
 sources: ["PubMed", "NIH"]
 tags: ["remolacha", "osmolito", "hepatico"]
-image: "/gastronomic-open-standard-GOS/images/substances/betaina.jpg"
+image: "/images/substances/betaina.jpg"
 image_attribution: "Pixabay — Beta vulgaris"
 health_registry:
   - condition: "NAFLD / Fatty liver"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.3390/nu13041280"
 ---
 
-![Betaína](/gastronomic-open-standard-GOS/images/substances/betaina.jpg)
+![Betaína](/images/substances/betaina.jpg)
 *Foto: Pixabay — Beta vulgaris — placeholder real photo path `public/images/substances/betaina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

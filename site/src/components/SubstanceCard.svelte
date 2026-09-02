@@ -29,7 +29,7 @@
   let { substance, href }: { substance: Substance; href?: string } = $props();
 
   const s = $derived(substance.data);
-  const url = $derived(href ?? `/gastronomic-open-standard-GOS/substances/${substance.slug}`);
+  const url = $derived(href ?? `/substances/${substance.slug}`);
 </script>
 
 <a href={url} class="substance-link" aria-label={s.name}>

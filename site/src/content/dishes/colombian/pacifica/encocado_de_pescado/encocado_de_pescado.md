@@ -101,7 +101,7 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ## 📸 Galería
 
-![Encocado de Pescado del Pacífico](/gastronomic-open-standard-GOS/dishes/colombian/pacifica/encocado_de_pescado/images/1.webp)
+![Encocado de Pescado del Pacífico](/dishes/colombian/pacifica/encocado_de_pescado/images/1.webp)
 
 ---
 
@@ -120,7 +120,7 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ### ⚗️ Química y Física Culinaria
 
-- **El Recao de Azotea (Sinergia Aromática):** El uso de **[Cilantro Cimarrón](/gastronomic-open-standard-GOS/dishes/colombian/pacifica/encocado_de_pescado/../../ingredients/cilantro_cimarron)** (*Eryngium foetidum*) es fundamental. A diferencia del cilantro común, el cimarrón contiene **aldehídos** mucho más estables al calor, lo que permite que su aroma sobreviva a la cocción larga en leche de coco. La mezcla con albahaca negra y orégano de azotea crea una "capa de protección" antioxidante para las grasas del coco.
+- **El Recao de Azotea (Sinergia Aromática):** El uso de **[Cilantro Cimarrón](/dishes/colombian/pacifica/encocado_de_pescado/../../ingredients/cilantro_cimarron)** (*Eryngium foetidum*) es fundamental. A diferencia del cilantro común, el cimarrón contiene **aldehídos** mucho más estables al calor, lo que permite que su aroma sobreviva a la cocción larga en leche de coco. La mezcla con albahaca negra y orégano de azotea crea una "capa de protección" antioxidante para las grasas del coco.
 - **Lipofilia del Achiote:** El achiote no solo da color. Sus compuestos (bixina y norbixina) son lipofílicos. Al disolverse en el aceite del sofrito, actúan como portadores de los sabores azufrados del ajo y la cebolla, anclándolos a la superficie del pescado.
 - **Emulsión de Coco y Colágeno:** La leche de coco actúa como una matriz coloidal. Cuando el pescado suelta una mínima cantidad de colágeno al cocinarse, este ayuda a estabilizar la emulsión del coco, evitando que el agua y la grasa se separen (efecto "cortado").
 

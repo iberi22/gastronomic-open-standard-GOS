@@ -11,7 +11,7 @@ vitaminas: ["Vitamin A", "Vitamin C", "Lutein"]
 compuestos: ["Lutein", "Beta-carotene", "Meso-zeaxanthin"]
 sources: ["PubMed", "NIH"]
 tags: ["maiz", "ocular", "macular"]
-image: "/gastronomic-open-standard-GOS/images/substances/zeaxantina.jpg"
+image: "/images/substances/zeaxantina.jpg"
 image_attribution: "Pixabay — Zea mays"
 health_registry:
   - condition: "AMD / Macular degeneration"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1001/jamaophthalmol.2013.4403"
 ---
 
-![Zeaxantina](/gastronomic-open-standard-GOS/images/substances/zeaxantina.jpg)
+![Zeaxantina](/images/substances/zeaxantina.jpg)
 *Foto: Pixabay — Zea mays — placeholder real photo path `public/images/substances/zeaxantina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

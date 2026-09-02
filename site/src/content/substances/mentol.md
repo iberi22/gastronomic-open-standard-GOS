@@ -11,7 +11,7 @@ vitaminas: ["Vitamin A", "Iron", "Manganese"]
 compuestos: ["Menthone", "Menthofuran", "Limonene"]
 sources: ["PubMed", "NIH"]
 tags: ["refrescante", "menta", "analgesico"]
-image: "/gastronomic-open-standard-GOS/images/substances/mentol.jpg"
+image: "/images/substances/mentol.jpg"
 image_attribution: "Pixabay — Mentha piperita"
 health_registry:
   - condition: "IBS pain"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1097/MCG.0000000000000043"
 ---
 
-![Mentol](/gastronomic-open-standard-GOS/images/substances/mentol.jpg)
+![Mentol](/images/substances/mentol.jpg)
 *Foto: Pixabay — Mentha piperita — placeholder real photo path `public/images/substances/mentol.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

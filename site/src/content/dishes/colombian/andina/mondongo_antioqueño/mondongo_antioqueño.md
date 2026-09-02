@@ -72,13 +72,13 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
 ## 📝 Ingredientes
 
 * **Carnes:**
-    * 1 kg de **[Mondongo (Callo)](/gastronomic-open-standard-GOS/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)** (panal o librito), muy limpio y picado en cuadros pequeños.
+    * 1 kg de **[Mondongo (Callo)](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)** (panal o librito), muy limpio y picado en cuadros pequeños.
     * 500 g de carne de cerdo (pierna o paleta), picada en cuadros.
     * 3 chorizos antioqueños, cortados en rodajas.
 * **Vegetales:**
     * 500 g de papa capira (o pastusa), pelada y en cuadros.
-    * 250 g de **[Papa Criolla](/gastronomic-open-standard-GOS/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/papa_criolla)**, para espesar.
-    * 250 g de **[Yuca Dulce](/gastronomic-open-standard-GOS/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/yuca_dulce)**, picada en cuadros.
+    * 250 g de **[Papa Criolla](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/papa_criolla)**, para espesar.
+    * 250 g de **[Yuca Dulce](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/yuca_dulce)**, picada en cuadros.
     * 1 taza de arvejas verdes frescas.
     * 1 zanahoria rallada o picada muy fino.
 * **Guiso (Base):**
@@ -87,7 +87,7 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
     * 2 dientes de ajo, triturados.
     * 1 cucharadita de comino.
     * Sal y pimienta.
-    * **[Cilantro](/gastronomic-open-standard-GOS/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/cilantro)** fresco al gusto.
+    * **[Cilantro](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/cilantro)** fresco al gusto.
 
 ---
 
@@ -117,7 +117,7 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Cárnico, Comino      | 5/5              | Cuminaldehído (comino) enmascara notas viscerales. |
 | **Aroma**| Complejo             | 4/5              | Mezcla de sofrito criollo y cerdo. |
-| **Textura**| Masticable/Espesa    | 5/5              | Contraste entre el mondongo elástico (**[Mondongo](/gastronomic-open-standard-GOS/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)**) y el caldo almidonoso. |
+| **Textura**| Masticable/Espesa    | 5/5              | Contraste entre el mondongo elástico (**[Mondongo](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)**) y el caldo almidonoso. |
 | **Boca** | Sedosa               | 4/5              | Gelatina disuelta del mondongo + almidón de papa. |
 
 ### ⚗️ Química y Física Culinaria

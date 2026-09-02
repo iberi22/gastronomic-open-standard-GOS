@@ -73,7 +73,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
 * **El Aderezo Base:**
     * 1 cebolla roja grande, picada en cuadritos muy pequeños (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 1/2 taza de pasta de **[Ají Panca](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/../../ingredients/aji_panca)** de buena calidad
+    * 1/2 taza de pasta de **[Ají Panca](/dishes/peruvian/sierra/../../ingredients/aji_panca)** de buena calidad
     * 2 cucharadas de aceite vegetal o de manteca de cerdo
     * Sal, pimienta y comino al gusto
 * **Los Elementos de Sustento:**
@@ -82,7 +82,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
     * 1 choclo grande, cortado en rodajas gruesas
     * 1/2 taza de habas verdes frescas (peladas)
     * 1/2 taza de arvejas (guisantes) frescas
-    * 1 rama grande de **[Huacatay](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/../../ingredients/huacatay)** (hierba aromática andina)
+    * 1 rama grande de **[Huacatay](/dishes/peruvian/sierra/../../ingredients/huacatay)** (hierba aromática andina)
 * **Ligantes y Acabado:**
     * 1 taza de leche evaporada entera
     * 200 g de queso paria o queso fresco andino salado, cortado en cubos de 2 cm
@@ -115,7 +115,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
 
 ## 📸 Galería
 
-![Chupe de Camarones](/gastronomic-open-standard-GOS/dishes/peruvian/sierra/images/chupe.webp)
+![Chupe de Camarones](/dishes/peruvian/sierra/images/chupe.webp)
 
 ---
 

@@ -108,7 +108,7 @@ El ceviche limeño es el plato bandera del Perú, conocido por su frescura, equi
 
 ## 📸 Galería
 
-![Ceviche Limeño](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/ceviche.webp)
+![Ceviche Limeño](/dishes/peruvian/costa/images/ceviche.webp)
 
 ---
 

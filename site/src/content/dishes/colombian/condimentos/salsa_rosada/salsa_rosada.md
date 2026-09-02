@@ -57,7 +57,7 @@ La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla de mayon
 
 ## 📸 Galería
 
-![Salsa rosada clásica](/gastronomic-open-standard-GOS/dishes/colombian/condimentos/salsa_rosada/images/1.webp)
+![Salsa rosada clásica](/dishes/colombian/condimentos/salsa_rosada/images/1.webp)
 
 ---
 

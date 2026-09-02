@@ -16,7 +16,7 @@ const title = `${s.name} (${s.formula ?? ''}) — Sustancia GOS`;
 const desc = s.benefit ?? s.sazon ?? `${s.name} sustancia bioactiva`;
 const jsonLd = substanceJsonLd({ slug: entry.id, data: s });
 const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`;
-const discussUrl = `https://github.com/iberi22/gastronomic-open-standard-GOS/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`;
+const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`;
 ---
 
 <Layout title={title} description={desc}>

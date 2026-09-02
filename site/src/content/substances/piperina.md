@@ -11,7 +11,7 @@ vitaminas: ["Vitamin K", "Manganese", "Iron"]
 compuestos: ["Chavicine", "Piperyline", "Piperettine"]
 sources: ["PubMed", "NIH"]
 tags: ["potenciador", "picante", "digestivo"]
-image: "/gastronomic-open-standard-GOS/images/substances/piperina.jpg"
+image: "/images/substances/piperina.jpg"
 image_attribution: "Pixabay — Piper nigrum"
 health_registry:
   - condition: "Nutrient malabsorption"
@@ -32,7 +32,7 @@ health_registry:
         doi: "10.1007/s00011-015-0824-3"
 ---
 
-![Piperina](/gastronomic-open-standard-GOS/images/substances/piperina.jpg)
+![Piperina](/images/substances/piperina.jpg)
 *Foto: Pixabay — Piper nigrum — placeholder real photo path `public/images/substances/piperina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

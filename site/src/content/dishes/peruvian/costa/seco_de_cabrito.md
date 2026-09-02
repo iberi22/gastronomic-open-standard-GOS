@@ -75,9 +75,9 @@ El Seco de Cabrito es el guiso más emblemático y festivo de las regiones de La
 * **El Aderezo Verde:**
     * 1 cebolla roja grande, picada en cuadritos muy finos (brunoise)
     * 1.5 cucharadas de ajo molido fresco
-    * 1.5 tazas de hojas de **[Cilantro/Culantro](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/cilantro)** fresco, licuado con un chorrito de agua o chicha de jora
-    * 1/2 taza de pasta de **[Ají Amarillo](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_amarillo)**
-    * 2 cucharadas de pasta de **[Ají Mirasol](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_mirasol)**
+    * 1.5 tazas de hojas de **[Cilantro/Culantro](/dishes/peruvian/costa/../../ingredients/cilantro)** fresco, licuado con un chorrito de agua o chicha de jora
+    * 1/2 taza de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)**
+    * 2 cucharadas de pasta de **[Ají Mirasol](/dishes/peruvian/costa/../../ingredients/aji_mirasol)**
     * 1/2 taza de zapallo loche norteño rallado con su cáscara (esencial para el sabor norteño)
     * 3 cucharadas de aceite vegetal o manteca de cerdo
 * **Líquidos y Acompañamientos:**
@@ -111,7 +111,7 @@ El Seco de Cabrito es el guiso más emblemático y festivo de las regiones de La
 
 ## 📸 Galería
 
-![Seco de Cabrito](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/seco.webp)
+![Seco de Cabrito](/dishes/peruvian/costa/images/seco.webp)
 
 ---
 

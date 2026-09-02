@@ -11,7 +11,7 @@ vitaminas: ["Vitamin C", "Manganese", "Fiber"]
 compuestos: ["Pelargonidin", "Peonidin", "Malvidin"]
 sources: ["PubMed", "NIH"]
 tags: ["morado", "antioxidante", "maiz"]
-image: "/gastronomic-open-standard-GOS/images/substances/antocianina.jpg"
+image: "/images/substances/antocianina.jpg"
 image_attribution: "Pixabay — Zea mays morado"
 health_registry:
   - condition: "Inflammation / Metabolic syndrome"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.3945/an.116.014084"
 ---
 
-![Antocianina (Cianidina)](/gastronomic-open-standard-GOS/images/substances/antocianina.jpg)
+![Antocianina (Cianidina)](/images/substances/antocianina.jpg)
 *Foto: Pixabay — Zea mays morado — placeholder real photo path `public/images/substances/antocianina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

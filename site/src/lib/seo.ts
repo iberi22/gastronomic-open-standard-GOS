@@ -50,7 +50,7 @@ export interface SubstanceLDInput {
   };
 }
 
-const SITE_URL = "https://iberi22.github.io/gastronomic-open-standard-GOS";
+const SITE_URL = (import.meta.env.PUBLIC_SITE_URL || "https://gos-site.pages.dev").replace(/\/$/, "");
 
 function absUrl(path: string): string {
   if (!path) return SITE_URL;

@@ -11,7 +11,7 @@ vitaminas: ["Potassium", "Magnesium", "Vitamin B3"]
 compuestos: ["Theobromine", "Theophylline", "Chlorogenic acid"]
 sources: ["PubMed", "NIH"]
 tags: ["estimulante", "cafe", "neuroprotector"]
-image: "/gastronomic-open-standard-GOS/images/substances/cafeina.jpg"
+image: "/images/substances/cafeina.jpg"
 image_attribution: "Pixabay — Coffea arabica"
 health_registry:
   - condition: "Fatigue / Alertness"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1007/s00213-010-1900-8"
 ---
 
-![Cafeína](/gastronomic-open-standard-GOS/images/substances/cafeina.jpg)
+![Cafeína](/images/substances/cafeina.jpg)
 *Foto: Pixabay — Coffea arabica — placeholder real photo path `public/images/substances/cafeina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

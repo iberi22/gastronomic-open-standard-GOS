@@ -71,7 +71,7 @@ Los Anticuchos de Corazón son el emblema indiscutible de la cocina callejera y 
 * **La Carne (Corazón):**
     * 1 corazón de res entero, fresco (aproximadamente 1.2 kg)
 * **El Adobo o Marinado (Clave del sabor):**
-    * 3/4 taza de pasta de **[Ají Panca](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_panca)** (sin picante, solo pulpa licuada)
+    * 3/4 taza de pasta de **[Ají Panca](/dishes/peruvian/costa/../../ingredients/aji_panca)** (sin picante, solo pulpa licuada)
     * 4 cucharadas de ajo molido fresco
     * 1/2 taza de vinagre tinto de vino
     * 1/2 taza de cerveza rubia (o chicha de jora tradicional)
@@ -115,7 +115,7 @@ Los Anticuchos de Corazón son el emblema indiscutible de la cocina callejera y 
 
 ## 📸 Galería
 
-![Anticuchos de Corazón](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/anticuchos.webp)
+![Anticuchos de Corazón](/dishes/peruvian/costa/images/anticuchos.webp)
 
 ---
 

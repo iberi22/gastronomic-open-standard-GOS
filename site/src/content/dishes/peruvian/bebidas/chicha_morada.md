@@ -104,7 +104,7 @@ La Chicha Morada es el refresco nacional del Perú, amado por niños y adultos p
 
 ## 📸 Galería
 
-![Chicha Morada](/gastronomic-open-standard-GOS/dishes/peruvian/bebidas/images/chicha_morada.webp)
+![Chicha Morada](/dishes/peruvian/bebidas/images/chicha_morada.webp)
 
 ---
 

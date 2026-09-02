@@ -96,7 +96,7 @@ Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía, especialm
 
 ## 📸 Galería
 
-![Juanes de yuca en hoja de bijao](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/juanes_de_yuca/images/1.webp)
+![Juanes de yuca en hoja de bijao](/dishes/colombian/amazonia/juanes_de_yuca/images/1.webp)
 
 ---
 

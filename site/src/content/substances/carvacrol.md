@@ -11,7 +11,7 @@ vitaminas: ["Vitamin K", "Iron", "Manganese"]
 compuestos: ["Thymol", "p-Cymene", "Rosmarinic acid"]
 sources: ["PubMed", "NIH"]
 tags: ["antibiotico", "oregano", "antifungico"]
-image: "/gastronomic-open-standard-GOS/images/substances/carvacrol.jpg"
+image: "/images/substances/carvacrol.jpg"
 image_attribution: "Pixabay — Origanum vulgare"
 health_registry:
   - condition: "Bacterial infection"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.3389/fmicb.2014.00136"
 ---
 
-![Carvacrol](/gastronomic-open-standard-GOS/images/substances/carvacrol.jpg)
+![Carvacrol](/images/substances/carvacrol.jpg)
 *Foto: Pixabay — Origanum vulgare — placeholder real photo path `public/images/substances/carvacrol.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

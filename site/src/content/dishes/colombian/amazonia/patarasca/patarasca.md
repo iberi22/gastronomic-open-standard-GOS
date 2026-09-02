@@ -101,7 +101,7 @@ La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana 
 
 ## 📸 Galería
 
-![Patarasca servida con patacones](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/patarasca/images/1.webp)
+![Patarasca servida con patacones](/dishes/colombian/amazonia/patarasca/images/1.webp)
 
 ---
 

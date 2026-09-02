@@ -113,7 +113,7 @@ La Moqueca es una de las joyas de la corona de la cocina del estado de Bahía, B
 
 ## 📸 Galería
 
-![Moqueca Baiana servida en olla de barro tradicional](/gastronomic-open-standard-GOS/dishes/brazilian/images/moqueca_1.webp)
+![Moqueca Baiana servida en olla de barro tradicional](/dishes/brazilian/images/moqueca_1.webp)
 
 ---
 

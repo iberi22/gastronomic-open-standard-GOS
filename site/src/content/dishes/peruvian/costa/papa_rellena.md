@@ -78,7 +78,7 @@ La Papa Rellena es una de las entradas y "snacks" al paso más populares del Per
     * 300 g de carne de res molida o picada finamente a cuchillo
     * 1 cebolla roja grande, picada en cuadritos pequeños (brunoise)
     * 1 cucharada de ajo molido fresco
-    * 2 cucharadas de pasta de **[Ají Panca](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_panca)**
+    * 2 cucharadas de pasta de **[Ají Panca](/dishes/peruvian/costa/../../ingredients/aji_panca)**
     * 1/4 taza de pasas negras (opcional, tradicional)
     * 2 huevos cocidos (duros), picados en trozos pequeños
     * 6 aceitunas negras (tipo botija), cortadas en mitades
@@ -117,7 +117,7 @@ La Papa Rellena es una de las entradas y "snacks" al paso más populares del Per
 
 ## 📸 Galería
 
-![Papa Rellena](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/papa_rellena.webp)
+![Papa Rellena](/dishes/peruvian/costa/images/papa_rellena.webp)
 
 ---
 

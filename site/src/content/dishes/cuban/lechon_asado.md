@@ -103,7 +103,7 @@ El Lechón Asado es sinónimo de fiesta familiar y celebración tradicional en C
 
 ## 📸 Galería
 
-![Porción de lechón asado con cuerito crujiente cubano](/gastronomic-open-standard-GOS/dishes/cuban/images/lechon_1.webp)
+![Porción de lechón asado con cuerito crujiente cubano](/dishes/cuban/images/lechon_1.webp)
 
 ---
 

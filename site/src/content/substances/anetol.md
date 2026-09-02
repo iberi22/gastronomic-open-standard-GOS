@@ -11,7 +11,7 @@ vitaminas: ["Iron", "Manganese", "Calcium"]
 compuestos: ["Estragole", "Anisaldehyde", "Linalool"]
 sources: ["PubMed", "NIH"]
 tags: ["anisado", "digestivo", "dulce"]
-image: "/gastronomic-open-standard-GOS/images/substances/anetol.jpg"
+image: "/images/substances/anetol.jpg"
 image_attribution: "Pixabay — Pimpinella anisum"
 health_registry:
   - condition: "Dyspepsia"
@@ -32,7 +32,7 @@ health_registry:
         doi: "10.1002/ptr.4990"
 ---
 
-![Anetol](/gastronomic-open-standard-GOS/images/substances/anetol.jpg)
+![Anetol](/images/substances/anetol.jpg)
 *Foto: Pixabay — Pimpinella anisum — placeholder real photo path `public/images/substances/anetol.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 
 export const GET: APIRoute = async () => {
   const payload = {
-    graph: "/gastronomic-open-standard-GOS/graph-data.json",
+    graph: "/graph-data.json",
     catalog: "/api/countries/catalog.json",
     ingredients: "/api/ingredients/variants.json",
     substances: "/api/substances.json",

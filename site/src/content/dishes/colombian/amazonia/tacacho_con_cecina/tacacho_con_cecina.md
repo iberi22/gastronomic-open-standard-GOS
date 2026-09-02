@@ -92,7 +92,7 @@ El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente po
 
 ## 📸 Galería
 
-![Tacacho con cecina](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/tacacho_con_cecina/images/1.webp)
+![Tacacho con cecina](/dishes/colombian/amazonia/tacacho_con_cecina/images/1.webp)
 
 ---
 

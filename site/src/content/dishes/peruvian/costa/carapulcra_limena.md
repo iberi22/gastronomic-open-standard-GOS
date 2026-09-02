@@ -75,8 +75,8 @@ La Carapulcra es una de las joyas más antiguas y complejas de la gastronomía p
 * **El Aderozo Criollo:**
     * 1 cebolla roja grande, picada en cuadritos muy finos (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 3/4 taza de pasta de **[Ají Panca](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_panca)** de alta calidad
-    * 2 cucharadas de pasta de **[Ají Mirasol](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_mirasol)** (opcional, para complejidad de sabor)
+    * 3/4 taza de pasta de **[Ají Panca](/dishes/peruvian/costa/../../ingredients/aji_panca)** de alta calidad
+    * 2 cucharadas de pasta de **[Ají Mirasol](/dishes/peruvian/costa/../../ingredients/aji_mirasol)** (opcional, para complejidad de sabor)
     * 3 cucharadas de manteca de cerdo (o aceite vegetal)
 * **Líquidos y Especias de Cocción:**
     * 1.5 litros de caldo de cerdo o de pollo caliente
@@ -115,7 +115,7 @@ La Carapulcra es una de las joyas más antiguas y complejas de la gastronomía p
 
 ## 📸 Galería
 
-![Carapulcra Limeña](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/carapulcra.webp)
+![Carapulcra Limeña](/dishes/peruvian/costa/images/carapulcra.webp)
 
 ---
 

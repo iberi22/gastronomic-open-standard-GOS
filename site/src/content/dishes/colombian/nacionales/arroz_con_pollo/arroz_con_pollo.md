@@ -78,7 +78,7 @@ El arroz con pollo colombiano es un clásico de las celebraciones familiares, fi
 
 ## 📸 Galería
 
-![Arroz con pollo colombiano con papas](/gastronomic-open-standard-GOS/dishes/colombian/nacionales/arroz_con_pollo/images/1.webp)
+![Arroz con pollo colombiano con papas](/dishes/colombian/nacionales/arroz_con_pollo/images/1.webp)
 
 ---
 
@@ -107,7 +107,6 @@ Este plato tiene variantes en toda América Latina. Puedes ver la [versión peru
 - **Consejos:** [Pendiente]
 
 ### Fuentes
-
 
 - [Pendiente]
 \n

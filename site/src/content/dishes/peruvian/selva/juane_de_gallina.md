@@ -80,7 +80,7 @@ El Juane de Gallina es el símbolo indiscutible de la cocina amazónica peruana.
 * **El Arroz Juane:**
     * 4 tazas de arroz blanco de grano largo
     * 1/2 taza de manteca de cerdo derretida (para dar suavidad al arroz)
-    * 1/2 taza de hojas de **[Sacha Culantro](/gastronomic-open-standard-GOS/dishes/peruvian/selva/../../ingredients/sacha_culantro)** (cilantro amazónico de hoja ancha) picado finamente
+    * 1/2 taza de hojas de **[Sacha Culantro](/dishes/peruvian/selva/../../ingredients/sacha_culantro)** (cilantro amazónico de hoja ancha) picado finamente
     * 4 huevos crudos enteros
 * **Los Rellenos y la Envoltura:**
     * 4 huevos cocidos (duros) enteros, pelados
@@ -118,7 +118,7 @@ El Juane de Gallina es el símbolo indiscutible de la cocina amazónica peruana.
 
 ## 📸 Galería
 
-![Juane de Gallina](/gastronomic-open-standard-GOS/dishes/peruvian/selva/images/juane.webp)
+![Juane de Gallina](/dishes/peruvian/selva/images/juane.webp)
 
 ---
 

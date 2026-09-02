@@ -67,7 +67,7 @@ La Torta de Calabaza es un postre tradicional de las islas de San Andrés y Prov
 
 ## 📸 Galería
 
-![Torta de calabaza especiada](/gastronomic-open-standard-GOS/dishes/colombian/insular/torta_de_calabaza/images/1.webp)
+![Torta de calabaza especiada](/dishes/colombian/insular/torta_de_calabaza/images/1.webp)
 
 ---
 

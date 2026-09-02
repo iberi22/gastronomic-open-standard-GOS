@@ -109,7 +109,7 @@ La fritanga es un festín de carnes y fritos típico de reuniones familiares, ce
 
 ## 📸 Galería
 
-![Fritanga Colombiana](/gastronomic-open-standard-GOS/dishes/colombian/nacionales/fritanga/images/1.webp)
+![Fritanga Colombiana](/dishes/colombian/nacionales/fritanga/images/1.webp)
 
 ---
 

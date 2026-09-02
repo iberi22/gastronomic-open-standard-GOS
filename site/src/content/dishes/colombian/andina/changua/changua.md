@@ -94,7 +94,7 @@ La Changua es una sopa de desayuno tradicional de la región andina, especialmen
 
 ## 📸 Galería
 
-![Changua Colombiana](/gastronomic-open-standard-GOS/dishes/colombian/andina/changua/images/1.webp)
+![Changua Colombiana](/dishes/colombian/andina/changua/images/1.webp)
 
 ---
 

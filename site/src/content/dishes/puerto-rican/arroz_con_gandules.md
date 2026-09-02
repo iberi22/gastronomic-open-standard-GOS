@@ -101,7 +101,7 @@ El Arroz con Gandules es el corazón culinario de Puerto Rico. Este arroz destac
 
 ## 📸 Galería
 
-![Arroz con gandules puertorriqueño navideño](/gastronomic-open-standard-GOS/dishes/puerto-rican/images/gandules_1.webp)
+![Arroz con gandules puertorriqueño navideño](/dishes/puerto-rican/images/gandules_1.webp)
 
 ---
 

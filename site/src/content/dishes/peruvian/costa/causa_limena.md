@@ -70,7 +70,7 @@ La Causa Limeña es uno de los platos más vistosos y deliciosos del recetario c
 
 * **Para la Masa de Causa:**
     * 1 kg de papa amarilla peruana (o papas arenosas adecuadas para puré seco)
-    * 4 cucharadas de pasta de **[Ají Amarillo](/gastronomic-open-standard-GOS/dishes/peruvian/costa/../../ingredients/aji_amarillo)** pura (sin venas ni pepas, hervida y licuada)
+    * 4 cucharadas de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)** pura (sin venas ni pepas, hervida y licuada)
     * 1/4 taza de jugo de limón sutil (lima verde) recién exprimido
     * 1/4 taza de aceite vegetal neutro (para dar brillo y elasticidad)
     * Sal fina al gusto
@@ -113,7 +113,7 @@ La Causa Limeña es uno de los platos más vistosos y deliciosos del recetario c
 
 ## 📸 Galería
 
-![Causa Limeña](/gastronomic-open-standard-GOS/dishes/peruvian/costa/images/causa_limena.webp)
+![Causa Limeña](/dishes/peruvian/costa/images/causa_limena.webp)
 
 ---
 

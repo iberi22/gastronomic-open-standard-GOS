@@ -11,7 +11,7 @@ vitaminas: ["Vitamin K", "Iron", "Manganese"]
 compuestos: ["Carvacrol", "p-Cymene", "Gamma-terpinene"]
 sources: ["PubMed", "NIH"]
 tags: ["antiseptico", "herbal", "expectorante"]
-image: "/gastronomic-open-standard-GOS/images/substances/timol.jpg"
+image: "/images/substances/timol.jpg"
 image_attribution: "Pixabay — Thymus vulgaris"
 health_registry:
   - condition: "Respiratory infection"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.1111/j.1365-2672.2012.05270.x"
 ---
 
-![Timol](/gastronomic-open-standard-GOS/images/substances/timol.jpg)
+![Timol](/images/substances/timol.jpg)
 *Foto: Pixabay — Thymus vulgaris — placeholder real photo path `public/images/substances/timol.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

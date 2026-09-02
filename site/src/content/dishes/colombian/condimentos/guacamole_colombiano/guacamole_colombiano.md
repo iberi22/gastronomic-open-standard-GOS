@@ -59,7 +59,7 @@ El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión 
 
 ## 📸 Galería
 
-![Guacamole colombiano rústico](/gastronomic-open-standard-GOS/dishes/colombian/condimentos/guacamole_colombiano/images/1.webp)
+![Guacamole colombiano rústico](/dishes/colombian/condimentos/guacamole_colombiano/images/1.webp)
 
 ---
 

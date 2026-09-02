@@ -106,7 +106,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ## 📸 Galería
 
-![Cazuela de Mariscos Tradicional](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/images/1.webp)
+![Cazuela de Mariscos Tradicional](/dishes/colombian/caribe/cazuela_de_mariscos/images/1.webp)
 
 ---
 
@@ -116,15 +116,15 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Dulce/Salado, Coco   | 5/5              | Lactonas del **[Leche de Coco](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** + Salinidad marina + **[Camarón](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)**. |
+| **Sabor**| Dulce/Salado, Coco   | 5/5              | Lactonas del **[Leche de Coco](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** + Salinidad marina + **[Camarón](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)**. |
 | **Aroma**| Coco, Mar            | 5/5              | Compuestos sulfurosos volátiles de mariscos frescos. |
-| **Textura**| Cremosa, Tropezones  | 4/5              | Emulsión densa con trozos firmes de **[Pulpo](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/pulpo)** y suaves de pescado. |
+| **Textura**| Cremosa, Tropezones  | 4/5              | Emulsión densa con trozos firmes de **[Pulpo](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/pulpo)** y suaves de pescado. |
 | **Boca** | Aterciopelada        | 5/5              | Grasa de coco + colágeno disuelto de pescado. |
 
 ### ⚗️ Química y Física Culinaria
 
 - **Extracción de Chitin & Astaxantina (El Fondo):** El alma de la cazuela es el caldo de bases. Al saltear las cabezas y cáscaras de camarón a alta temperatura, se extrae la **Astaxantina** (pigmento liposoluble que da el color naranja) y se liberan nucleótidos de **Umami** atrapados en el tejido conectivo de los crustáceos.
-- **Estabilización de la Emulsión Lácteo-Coco:** Al combinar **[Leche de Coco](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** con crema de leche y un *roux* (o reducción de vegetales), se crea una red de polisacáridos que impide que la grasa del coco se separe (floculación) al añadir el ácido residual de los mariscos o el vino blanco.
+- **Estabilización de la Emulsión Lácteo-Coco:** Al combinar **[Leche de Coco](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** con crema de leche y un *roux* (o reducción de vegetales), se crea una red de polisacáridos que impide que la grasa del coco se separe (floculación) al añadir el ácido residual de los mariscos o el vino blanco.
 - **Cinética de Denaturación:**
     - **Calamar/Pulpo:** Requieren calor para romper el entrecruzamiento de colágeno (o cocción ultra-lenta).
     - **Camarón:** La miosina se coagula a 60°C. Si pasa de 70°C por mucho tiempo, el agua es expulsada de la fibra, volviéndolo duro. Por eso se añaden en los últimos 180 segundos.
@@ -149,7 +149,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ## Sabiduría colectiva, trucos y consejos
 
-1. **Cocción escalonada:** No tirar todo junto. Primero el sofrito, luego líquidos, luego pulpo precocido, calamar, pescado, y **[Camarón](/gastronomic-open-standard-GOS/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)** al apagar el fuego.
+1. **Cocción escalonada:** No tirar todo junto. Primero el sofrito, luego líquidos, luego pulpo precocido, calamar, pescado, y **[Camarón](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)** al apagar el fuego.
 2. **Leche de Coco:** Usar la "primera leche" (crema espesa) solo al final para máxima cremosidad.
 3. **Cazuela de Barro:** Mantiene el calor por 20 minutos en la mesa. Curarla antes de usar.
 

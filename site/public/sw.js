@@ -2,7 +2,7 @@
 // No external dependencies = No security vulnerabilities
 
 const CACHE_NAME = 'gos-pwa-v1';
-const BASE_URL = '/gastronomic-open-standard-GOS';
+const BASE_URL = '';
 
 const STATIC_ASSETS = [
   BASE_URL + '/',

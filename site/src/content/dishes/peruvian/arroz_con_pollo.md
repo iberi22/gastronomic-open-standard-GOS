@@ -68,8 +68,8 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 * **Proteína:**
     * 6 presas de pollo (pierna con muslo o pechuga)
 * **Base Aromática (Aderezo):**
-    * 1 taza de hojas de **[Culantro/Cilantro](/gastronomic-open-standard-GOS/dishes/peruvian/../../ingredients/cilantro)** (sin tallos gruesos)
-    * 1/2 taza de pasta de **[Ají Amarillo](/gastronomic-open-standard-GOS/dishes/peruvian/../../ingredients/aji_amarillo)**
+    * 1 taza de hojas de **[Culantro/Cilantro](/dishes/peruvian/../../ingredients/cilantro)** (sin tallos gruesos)
+    * 1/2 taza de pasta de **[Ají Amarillo](/dishes/peruvian/../../ingredients/aji_amarillo)**
     * 1 cebolla roja grande, picada en cuadritos
     * 1 cucharada de ajo molido
     * 1/2 taza de cerveza negra (Malta)
@@ -108,7 +108,7 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 
 ## 📸 Galería
 
-![Arroz con Pollo Peruano](/gastronomic-open-standard-GOS/dishes/peruvian/images/1.webp)
+![Arroz con Pollo Peruano](/dishes/peruvian/images/1.webp)
 
 ---
 
@@ -118,10 +118,10 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Herbal, Umami        | 5/5              | Aldehídos del **[Cilantro](/gastronomic-open-standard-GOS/dishes/peruvian/../../ingredients/cilantro)** + Glutamato del **[Pollo](/gastronomic-open-standard-GOS/dishes/peruvian/../../ingredients/pollo)** y levaduras de la cerveza. |
+| **Sabor**| Herbal, Umami        | 5/5              | Aldehídos del **[Cilantro](/dishes/peruvian/../../ingredients/cilantro)** + Glutamato del **[Pollo](/dishes/peruvian/../../ingredients/pollo)** y levaduras de la cerveza. |
 | **Aroma**| Culantro, Malta      | 5/5              | Compuestos volátiles del cilantro (E-2-decenal) preservados en grasa. |
 | **Textura**| Granulado, Húmedo    | 4/5              | Arroz impregnado de grasa y colágeno, no seco. |
-| **Boca** | Especiado (Leve)     | 3/5              | Capsaicinoides del **[Ají Amarillo](/gastronomic-open-standard-GOS/dishes/peruvian/../../ingredients/aji_amarillo)** (picante aromático, no agresivo). |
+| **Boca** | Especiado (Leve)     | 3/5              | Capsaicinoides del **[Ají Amarillo](/dishes/peruvian/../../ingredients/aji_amarillo)** (picante aromático, no agresivo). |
 
 ### ⚗️ Química y Física Culinaria
 

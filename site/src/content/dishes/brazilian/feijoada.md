@@ -109,7 +109,7 @@ La Feijoada es el plato nacional y el corazón de la gastronomía de Brasil. Est
 
 ## 📸 Galería
 
-![Feijoada Completa en Vasija de Barro](/gastronomic-open-standard-GOS/dishes/brazilian/images/feijoada_1.webp)
+![Feijoada Completa en Vasija de Barro](/dishes/brazilian/images/feijoada_1.webp)
 
 ---
 

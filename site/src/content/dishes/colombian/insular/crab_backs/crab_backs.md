@@ -67,7 +67,7 @@ Crab Backs es uno de los platos más representativos de San Andrés y Providenci
 
 ## 📸 Galería
 
-![Cangrejos rellenos gratinados](/gastronomic-open-standard-GOS/dishes/colombian/insular/crab_backs/images/1.webp)
+![Cangrejos rellenos gratinados](/dishes/colombian/insular/crab_backs/images/1.webp)
 
 ---
 

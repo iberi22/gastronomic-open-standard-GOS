@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const filePath = 'e:/scripts-python/gastronomic-open-standard-GOS/dishes/colombian/snacks/pandebono/images/1.png';
+const filePath = 'e:/scripts-python/dishes/colombian/snacks/pandebono/images/1.png';
 
 try {
     const buffer = fs.readFileSync(filePath);

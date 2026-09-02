@@ -6,6 +6,8 @@ import matter from 'gray-matter';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const ORIGIN = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev';
+
 const repoRoot = path.resolve(__dirname, '../../');
 const dishesDir = path.join(repoRoot, 'dishes');
 const apiDir = path.join(__dirname, '../public/api');
@@ -264,8 +266,8 @@ function generateAPI() {
 
   console.log('\n✅ API generation complete!');
   console.log(`\n📍 Access your API at:`);
-  console.log(`   https://iberi22.github.io/gastronomic-open-standard-GOS/api/index.json`);
-  console.log(`   https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json`);
+  console.log(`   ${ORIGIN}/api/index.json`);
+  console.log(`   ${ORIGIN}/api/spanish/colombia.json`);
 }
 
 // Run

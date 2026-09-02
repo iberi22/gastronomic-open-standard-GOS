@@ -53,7 +53,7 @@ export const POST: APIRoute = async ({ request }) => {
       monthlyCredit: tier.monthlyCredit,
       ledger,
       jwt: mockJwt,
-      graph: "/gastronomic-open-standard-GOS/graph-data.json",
+      graph: "/graph-data.json",
       message: "JWT emitido via D1/KV billing 20% handling - usar Authorization: Bearer <jwt> para /graph-data.json escalado",
     }, 200, { "X-GOS-Paywall": "D1/KV - JWT issued" });
 

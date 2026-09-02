@@ -102,7 +102,7 @@ La Yuca con Mojo es una de las joyas más humildes y sabrosas de la cocina cuban
 
 ## 📸 Galería
 
-![Plato de yuca con mojo caliente y aromático con cebollas](/gastronomic-open-standard-GOS/dishes/cuban/images/yuca_1.webp)
+![Plato de yuca con mojo caliente y aromático con cebollas](/dishes/cuban/images/yuca_1.webp)
 
 ---
 

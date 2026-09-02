@@ -107,7 +107,7 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 
 ## 📸 Galería
 
-![Cocido Boyacense](/gastronomic-open-standard-GOS/dishes/colombian/andina/cocido_boyacense/images/1.webp)
+![Cocido Boyacense](/dishes/colombian/andina/cocido_boyacense/images/1.webp)
 
 ---
 

@@ -86,7 +86,7 @@ El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana, ut
 
 ## 📸 Galería
 
-![Pescado moqueado en hojas](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/pescado_moqueado/images/1.webp)
+![Pescado moqueado en hojas](/dishes/colombian/amazonia/pescado_moqueado/images/1.webp)
 
 ---
 

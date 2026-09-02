@@ -109,7 +109,7 @@ El Picadillo a la Habanera es un plato hogareño y tradicional por excelencia en
 
 ## 📸 Galería
 
-![Picadillo a la Habanera caliente acompañado de arroz y tostones](/gastronomic-open-standard-GOS/dishes/cuban/images/picadillo_1.webp)
+![Picadillo a la Habanera caliente acompañado de arroz y tostones](/dishes/cuban/images/picadillo_1.webp)
 
 ---
 

@@ -65,12 +65,12 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 ## 📝 Ingredientes
 
 * **Masa:**
-    * 1 kg de **[Yuca/Mandioca](/gastronomic-open-standard-GOS/dishes/colombian/caribe/carimañolas/../../ingredients/yuca)** (pelada y cocida)
+    * 1 kg de **[Yuca/Mandioca](/dishes/colombian/caribe/carimañolas/../../ingredients/yuca)** (pelada y cocida)
     * Sal al gusto
     * 1 cucharadita de aceite (para amasar)
 * **Relleno Clásico (Carne):**
     * 250 g de carne molida magra
-    * 1/2 taza de **[Hogao](/gastronomic-open-standard-GOS/dishes/colombian/caribe/carimañolas/../../condimentos/hogao)** (guiso de tomate y cebolla)
+    * 1/2 taza de **[Hogao](/dishes/colombian/caribe/carimañolas/../../condimentos/hogao)** (guiso de tomate y cebolla)
     * Comino, color y pimienta
 * **Fritura:**
     * Abundante aceite vegetal neutro
@@ -96,7 +96,7 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 
 ## 📸 Galería
 
-![Carimañolas](/gastronomic-open-standard-GOS/dishes/colombian/caribe/carimañolas/images/1.webp)
+![Carimañolas](/dishes/colombian/caribe/carimañolas/images/1.webp)
 
 ---
 

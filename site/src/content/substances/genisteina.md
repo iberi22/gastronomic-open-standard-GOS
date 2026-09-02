@@ -11,7 +11,7 @@ vitaminas: ["Iron", "Calcium", "Folate"]
 compuestos: ["Daidzein", "Glycitein", "Genistin"]
 sources: ["PubMed", "NIH"]
 tags: ["soya", "fitoestrogeno", "oseo"]
-image: "/gastronomic-open-standard-GOS/images/substances/genisteina.jpg"
+image: "/images/substances/genisteina.jpg"
 image_attribution: "Pixabay — Glycine max"
 health_registry:
   - condition: "Postmenopausal osteoporosis"
@@ -24,7 +24,7 @@ health_registry:
         doi: "10.3945/jn.109.107979"
 ---
 
-![Genisteína](/gastronomic-open-standard-GOS/images/substances/genisteina.jpg)
+![Genisteína](/images/substances/genisteina.jpg)
 *Foto: Pixabay — Glycine max — placeholder real photo path `public/images/substances/genisteina.jpg` (800×600 webp/jpg, atribución en frontmatter).*
 
 ## Descripción

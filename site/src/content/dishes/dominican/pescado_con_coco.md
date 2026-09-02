@@ -109,7 +109,7 @@ El Pescado con Coco es el plato insignia de la cocina costera dominicana, espec�
 
 ## 📸 Galería
 
-![Plato tradicional de Pescado con Coco dominicano caliente](/gastronomic-open-standard-GOS/dishes/dominican/images/pescado_coco_1.webp)
+![Plato tradicional de Pescado con Coco dominicano caliente](/dishes/dominican/images/pescado_coco_1.webp)
 
 ---
 

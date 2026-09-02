@@ -20,8 +20,8 @@ export const GET: APIRoute = async () => {
       tags: d.tags,
       image: d.image,
       health_registry: d.health_registry,
-      url: `/gastronomic-open-standard-GOS/substances/${e.id}`,
-      graph: `/gastronomic-open-standard-GOS/graph?filter=substance:${e.id}`,
+      url: `/substances/${e.id}`,
+      graph: `/graph?filter=substance:${e.id}`,
     };
   }).sort((a,b) => a.name.localeCompare(b.name));
 

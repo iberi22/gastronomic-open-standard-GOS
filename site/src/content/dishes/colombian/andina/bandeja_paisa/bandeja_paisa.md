@@ -114,9 +114,9 @@ La Bandeja Paisa es el plato más emblemático de la región andina de Colombia,
 
 ## 📸 Galería
 
-![Bandeja Paisa servida](/gastronomic-open-standard-GOS/dishes/colombian/andina/bandeja_paisa/images/1.webp)
+![Bandeja Paisa servida](/dishes/colombian/andina/bandeja_paisa/images/1.webp)
 
-![Detalle de los ingredientes](/gastronomic-open-standard-GOS/dishes/colombian/andina/bandeja_paisa/images/2.webp)
+![Detalle de los ingredientes](/dishes/colombian/andina/bandeja_paisa/images/2.webp)
 
 ---
 

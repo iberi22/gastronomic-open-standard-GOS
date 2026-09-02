@@ -86,7 +86,7 @@ La Carne a la Perra es un plato tradicional de los llanos orientales de Colombia
 
 ## 📸 Galería
 
-![Carne a la Perra Llanera](/gastronomic-open-standard-GOS/dishes/colombian/orinoquia/carne_a_la_perra/images/1.webp)
+![Carne a la Perra Llanera](/dishes/colombian/orinoquia/carne_a_la_perra/images/1.webp)
 
 ---
 

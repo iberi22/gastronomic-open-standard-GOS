@@ -95,7 +95,7 @@ Los Tostones son indispensables en la mesa cubana. Acompañan tanto un almuerzo 
 
 ## 📸 Galería
 
-![Tostones cubanos crujientes y espolvoreados con sal marina](/gastronomic-open-standard-GOS/dishes/cuban/images/tostones_1.webp)
+![Tostones cubanos crujientes y espolvoreados con sal marina](/dishes/cuban/images/tostones_1.webp)
 
 ---
 

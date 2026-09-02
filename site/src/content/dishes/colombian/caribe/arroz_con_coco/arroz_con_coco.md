@@ -66,12 +66,12 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 ## 📝 Ingredientes
 
 * **El Coco:**
-    * 2 tazas de **[Leche de Coco](/gastronomic-open-standard-GOS/dishes/colombian/caribe/arroz_con_coco/../../ingredients/leche_de_coco)** espesa (primera extracción o lata *full fat*)
+    * 2 tazas de **[Leche de Coco](/dishes/colombian/caribe/arroz_con_coco/../../ingredients/leche_de_coco)** espesa (primera extracción o lata *full fat*)
     * 2 tazas de agua de coco o segunda extracción (para cocinar el arroz)
 * **El Grano:**
     * 2 tazas de arroz blanco de grano largo
 * **Sazón:**
-    * 3-4 cucharadas de **[Panela](/gastronomic-open-standard-GOS/dishes/colombian/caribe/arroz_con_coco/../../ingredients/panela)** o azúcar morena (ajustar al gusto)
+    * 3-4 cucharadas de **[Panela](/dishes/colombian/caribe/arroz_con_coco/../../ingredients/panela)** o azúcar morena (ajustar al gusto)
     * 1 1/2 cucharaditas de sal (el contraste es vital)
     * Opcional: Uvas pasas (muy común en fiestas)
 
@@ -97,7 +97,7 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 
 ## 📸 Galería
 
-![Arroz con Coco](/gastronomic-open-standard-GOS/dishes/colombian/caribe/arroz_con_coco/images/1.webp)
+![Arroz con Coco](/dishes/colombian/caribe/arroz_con_coco/images/1.webp)
 
 ---
 

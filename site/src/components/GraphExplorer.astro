@@ -192,7 +192,7 @@
 
   var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition' };
 
-  fetch('/gastronomic-open-standard-GOS/graph-data.json').then(function(r) { return r.json(); }).then(function(data) {
+  fetch('/graph-data.json').then(function(r) { return r.json(); }).then(function(data) {
     graphData = data;
     filteredNodes = data.nodes.map(function(n) { return Object.assign({}, n); });
     filteredLinks = data.edges.map(function(e) { return Object.assign({}, e); });

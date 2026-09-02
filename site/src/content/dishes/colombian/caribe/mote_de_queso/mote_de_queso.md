@@ -96,7 +96,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ## 📸 Galería
 
-![Mote de Queso Costeño](/gastronomic-open-standard-GOS/dishes/colombian/caribe/mote_de_queso/images/1.webp)
+![Mote de Queso Costeño](/dishes/colombian/caribe/mote_de_queso/images/1.webp)
 
 ---
 
@@ -161,7 +161,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ## 📸 Galería y Evidencia
 
-![Mote de Queso Costeño](/gastronomic-open-standard-GOS/dishes/colombian/caribe/mote_de_queso/images/1.webp)
+![Mote de Queso Costeño](/dishes/colombian/caribe/mote_de_queso/images/1.webp)
 
 ### Etiquetas extraídas de comentarios
 

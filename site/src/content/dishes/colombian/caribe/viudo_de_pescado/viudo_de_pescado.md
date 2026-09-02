@@ -65,7 +65,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 ## 📝 Ingredientes
 
 * **El Río:**
-    * 6 postas o 3 pescados enteros medianos (**[Bocachico](/gastronomic-open-standard-GOS/dishes/colombian/caribe/viudo_de_pescado/../../ingredients/bocachico)** o Capaz). El Bocachico tiene muchas espinas pero más sabor.
+    * 6 postas o 3 pescados enteros medianos (**[Bocachico](/dishes/colombian/caribe/viudo_de_pescado/../../ingredients/bocachico)** o Capaz). El Bocachico tiene muchas espinas pero más sabor.
 * **La Cama (Vituallas):**
     * 2 plátanos verdes pelados y partidos con la mano
     * 1 kg de yuca pelada
@@ -97,7 +97,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 
 ## 📸 Galería
 
-![Viudo de Pescado](/gastronomic-open-standard-GOS/dishes/colombian/caribe/viudo_de_pescado/images/1.webp)
+![Viudo de Pescado](/dishes/colombian/caribe/viudo_de_pescado/images/1.webp)
 
 ---
 

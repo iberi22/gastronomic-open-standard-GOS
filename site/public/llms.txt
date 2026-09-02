@@ -8,5 +8,5 @@
 # Billing: tier socio 20% handling, infra 100% + AI*1.1 (Cloudflare Workers AI), JWT required for /graph-data.json when agents scale
 # SEO: JSON-LD Recipe/Ingredient/ChemicalSubstance via site/src/lib/seo.ts (GOS-03), sitemap.xml, robots.txt
 # Docs: https://github.com/iberi22/gastronomic-open-standard-GOS
-# PWA: https://iberi22.github.io/gastronomic-open-standard-GOS/
+# PWA: https://gos-site.pages.dev/
 # Discussions: https://github.com/iberi22/gastronomic-open-standard-GOS/discussions (anchored to recipes/ingredients/substances)

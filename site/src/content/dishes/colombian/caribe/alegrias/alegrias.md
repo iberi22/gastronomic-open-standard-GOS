@@ -62,10 +62,10 @@ Las Alegrías son un dulce tradicional de la región Caribe colombiana, especial
 ## 📝 Ingredientes
 
 * **Base:**
-    * 2 tazas de semillas de **[Amaranto/Bledo](/gastronomic-open-standard-GOS/dishes/colombian/caribe/alegrias/../../ingredients/amaranto)** (tostado)
-    * 1 taza de **[Coco](/gastronomic-open-standard-GOS/dishes/colombian/caribe/alegrias/../../ingredients/coco)** rallado (fresco o deshidratado)
+    * 2 tazas de semillas de **[Amaranto/Bledo](/dishes/colombian/caribe/alegrias/../../ingredients/amaranto)** (tostado)
+    * 1 taza de **[Coco](/dishes/colombian/caribe/alegrias/../../ingredients/coco)** rallado (fresco o deshidratado)
 * **El Melado:**
-    * 1 taza de **[Panela/Papelón](/gastronomic-open-standard-GOS/dishes/colombian/caribe/alegrias/../../ingredients/panela)** rallada
+    * 1 taza de **[Panela/Papelón](/dishes/colombian/caribe/alegrias/../../ingredients/panela)** rallada
     * 1/2 taza de miel de caña
     * 1/2 taza de agua
     * 1 pizca de sal (para realzar el dulce)
@@ -94,7 +94,7 @@ Las Alegrías son un dulce tradicional de la región Caribe colombiana, especial
 
 ## 📸 Galería
 
-![Alegrías de amaranto](/gastronomic-open-standard-GOS/dishes/colombian/caribe/alegrias/images/1.webp)
+![Alegrías de amaranto](/dishes/colombian/caribe/alegrias/images/1.webp)
 
 ---
 

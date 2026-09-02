@@ -108,7 +108,7 @@ El Pirarucú (*Arapaima gigas*) es el "rey del Amazonas", un pez prehistórico q
 
 ## 📸 Galería
 
-![Pirarucú frito servido](/gastronomic-open-standard-GOS/dishes/colombian/amazonia/pirarucu_frito/images/1.webp)
+![Pirarucú frito servido](/dishes/colombian/amazonia/pirarucu_frito/images/1.webp)
 
 ---
 

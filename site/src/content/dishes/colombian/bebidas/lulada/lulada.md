@@ -90,7 +90,7 @@ La lulada es una bebida refrescante tradicional del Valle del Cauca y muy popula
 
 ## 📸 Galería
 
-![Lulada caleña bien fría](/gastronomic-open-standard-GOS/dishes/colombian/bebidas/lulada/images/1.webp)
+![Lulada caleña bien fría](/dishes/colombian/bebidas/lulada/images/1.webp)
 
 ---
 

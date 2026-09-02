@@ -101,7 +101,7 @@ El Pão de Queijo es uno de los bocados más queridos y famosos de Brasil. Nacid
 
 ## 📸 Galería
 
-![Panecillos de queso Mineiros recién salidos del horno](/gastronomic-open-standard-GOS/dishes/brazilian/images/pao_de_queijo_1.webp)
+![Panecillos de queso Mineiros recién salidos del horno](/dishes/brazilian/images/pao_de_queijo_1.webp)
 
 ---
 

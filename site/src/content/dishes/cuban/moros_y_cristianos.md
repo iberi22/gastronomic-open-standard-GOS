@@ -108,7 +108,7 @@ Moros y Cristianos es el arroz que define la mesa cubana. A diferencia de los ar
 
 ## 📸 Galería
 
-![Moros y Cristianos sueltos y bien decorados](/gastronomic-open-standard-GOS/dishes/cuban/images/moros_1.webp)
+![Moros y Cristianos sueltos y bien decorados](/dishes/cuban/images/moros_1.webp)
 
 ---
 

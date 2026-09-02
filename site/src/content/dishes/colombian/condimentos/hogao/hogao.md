@@ -61,7 +61,7 @@ El hogao es la salsa base por excelencia de la cocina colombiana. Se usa como ac
 
 ## 📸 Galería
 
-![Hogao casero](/gastronomic-open-standard-GOS/dishes/colombian/condimentos/hogao/images/1.webp)
+![Hogao casero](/dishes/colombian/condimentos/hogao/images/1.webp)
 
 ---
 

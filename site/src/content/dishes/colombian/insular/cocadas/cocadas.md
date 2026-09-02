@@ -63,7 +63,7 @@ Las cocadas son uno de los dulces más tradicionales de la región Insular y de 
 
 ## 📸 Galería
 
-![Cocadas de coco doradas](/gastronomic-open-standard-GOS/dishes/colombian/insular/cocadas/images/1.webp)
+![Cocadas de coco doradas](/dishes/colombian/insular/cocadas/images/1.webp)
 
 ---
 

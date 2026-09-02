@@ -109,7 +109,7 @@ El Vatapá es una de las preparaciones culinarias más ricas y complejas de Bah�
 
 ## 📸 Galería
 
-![Vatapá cremoso baiano servido con camarones secos enteros](/gastronomic-open-standard-GOS/dishes/brazilian/images/vatapa_1.webp)
+![Vatapá cremoso baiano servido con camarones secos enteros](/dishes/brazilian/images/vatapa_1.webp)
 
 ---
 

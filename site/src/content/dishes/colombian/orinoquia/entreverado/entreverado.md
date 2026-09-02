@@ -91,7 +91,7 @@ El Entreverado es un plato típico de la Orinoquía colombiana, especialmente en
 
 ## 📸 Galería
 
-![Entreverado Llanero](/gastronomic-open-standard-GOS/dishes/colombian/orinoquia/entreverado/images/1.webp)
+![Entreverado Llanero](/dishes/colombian/orinoquia/entreverado/images/1.webp)
 
 ---
 

@@ -107,7 +107,7 @@ El Rondón es el plato insignia de la región Insular de Colombia, especialmente
 
 ## 📸 Galería
 
-![Rondón isleño cremoso](/gastronomic-open-standard-GOS/dishes/colombian/insular/rondon/images/1.webp)
+![Rondón isleño cremoso](/dishes/colombian/insular/rondon/images/1.webp)
 
 ---
 

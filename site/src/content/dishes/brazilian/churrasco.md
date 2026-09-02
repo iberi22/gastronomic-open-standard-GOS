@@ -95,7 +95,7 @@ El Churrasco es más que una comida en Brasil; es una institución social, un ar
 
 ## 📸 Galería
 
-![Corte de picanha jugoso en espada de churrasco](/gastronomic-open-standard-GOS/dishes/brazilian/images/churrasco_1.webp)
+![Corte de picanha jugoso en espada de churrasco](/dishes/brazilian/images/churrasco_1.webp)
 
 ---
 

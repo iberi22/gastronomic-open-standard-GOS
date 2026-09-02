@@ -109,7 +109,7 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 
 ## 📸 Galería
 
-![Mute santandereano sustancioso](/gastronomic-open-standard-GOS/dishes/colombian/andina/mute_santandereano/images/1.webp)
+![Mute santandereano sustancioso](/dishes/colombian/andina/mute_santandereano/images/1.webp)
 
 ---
 
@@ -121,7 +121,7 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Umami, Ahumado       | 5/5              | Inosinato (Carnes) y Fenoles (Chorizo Ahumado). |
 | **Aroma**| Maíz, Humo           | 5/5              | 2-Acetil-1-pirrolina (Maíz) y Guayacol (Humo). |
-| **Textura**| Viscosa, Densa       | 5/5              | Gel de almidón de **[Maíz Peto](/gastronomic-open-standard-GOS/dishes/colombian/andina/mute_santandereano/../../ingredients/maiz_peto)** y **[Papa Sabanera](/gastronomic-open-standard-GOS/dishes/colombian/andina/mute_santandereano/../../ingredients/papa_sabanera)**. |
+| **Textura**| Viscosa, Densa       | 5/5              | Gel de almidón de **[Maíz Peto](/dishes/colombian/andina/mute_santandereano/../../ingredients/maiz_peto)** y **[Papa Sabanera](/dishes/colombian/andina/mute_santandereano/../../ingredients/papa_sabanera)**. |
 | **Boca** | Masticable           | 4/5              | Callos (si lleva), carne desmechada, maíz entero. |
 
 ### ⚗️ Química y Física Culinaria

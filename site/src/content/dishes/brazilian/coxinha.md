@@ -113,7 +113,7 @@ La Coxinha (literalmente "muslito") es la reina indiscutible de las panaderías 
 
 ## 📸 Galería
 
-![Coxinhas de pollo listas para servir acompañadas de salsa picante](/gastronomic-open-standard-GOS/dishes/brazilian/images/coxinha_1.webp)
+![Coxinhas de pollo listas para servir acompañadas de salsa picante](/dishes/brazilian/images/coxinha_1.webp)
 
 ---
 
