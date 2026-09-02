@@ -45,3 +45,17 @@ class RecipeFrontmatter(BaseModel):
 
     class Config:
         extra = "ignore" # Allow extra fields but valid ones must match
+
+    @validator("prep_time", "cook_time", pre=True)
+    def _coerce_time(cls, v):
+        if isinstance(v, (int, float)):
+            return f"{int(v)} min"
+        return v
+
+    @validator("servings", pre=True)
+    def _coerce_servings(cls, v):
+        if isinstance(v, str):
+            import re as _re
+            m = _re.search(r"\d+", v)
+            return int(m.group()) if m else None
+        return v
