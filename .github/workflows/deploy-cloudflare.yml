@@ -29,7 +29,7 @@ jobs:
           lfs: true
 
       - name: "Traer @swal/ui (dependencia file: fuera del repo)"
-        run: git clone --depth 1 https://github.com/iberi22/swal-ui "$GITHUB_WORKSPACE/../../../cores/swal-ui"
+        run: git clone --depth 1 https://github.com/iberi22/swal-ui "$GITHUB_WORKSPACE/../../cores/swal-ui"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
