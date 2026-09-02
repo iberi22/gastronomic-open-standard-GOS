@@ -34,7 +34,13 @@ This file is for **ephemeral session notes only**. Do not store permanent inform
 - Base '/' + site https://gos-site.pages.dev en astro.config (DEPLOY_TARGET=github-pages conserva subpath GH). manifest/sw/robots/sitemap/llms/api/seo rebaseados a raíz; content regenerado.
 
 ### Blockers
-- CI→CF requiere secrets CLOUDFLARE_API_TOKEN (crear en dash.cloudflare.com, permisos Pages:Escribir) + CLOUDFLARE_ACCOUNT_ID=963f01052b7f84cb785e72ba2b4d6e12
+## Session: 2026-09-02 (opencode) — DESPLIEGUE CF
+- Deploy inicial publicado: https://gos-site.pages.dev (proyecto Pages gos-site, rama main=producción, 1137 assets). Smoke Fase 5: 15/15 endpoints 200 (/, /graph/, /recipes/, /countries/, /substances/, /scientific/, manifest, sw, robots, sitemap, llms, graph-data 4MB, api catalog/variants/knowledge).
+- CI completa verde en GitHub Actions: markdown-lint (pnpm 11.24.0 + ignore_scripts + strictDepBuilds false + pines <24h), gos-audit (480/480 esquema OK tras coerción schemas.py y plan→docs/), build-graph.
+- PR #202 resultó SER VACÍO (0 archivos, commit mensaje inventado): implementado de verdad site/scripts/enrich-ingredients.js → variants.json 552 slugs + by-origin.json (0 orígenes = deuda de contenido: falta campo origin en MD de ingredientes).
+- swal-ui (core) tenía cambios sin push que rompían el build en CI → commiteados/pusheados (a9fbf6a).
+- Pendiente único: secret repo CLOUDFLARE_API_TOKEN (Pages:Escribir + Account:Miembro de lectura) para que deploy-cloudflare.yml despliegue solo; Account ID ya está como repo variable.
+- Deuda rastreadas: #125 secciones sensoriales (345), origen/producción en ingredientes, liberar pines <24h 2026-09-03.
 
 ---
 
