@@ -23,6 +23,34 @@ jobs:
           npm_config_ignore_scripts: "true"
       - run: pnpm run lint
 
+  astro-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter gos-site exec astro check
+
+  vitest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter gos-site test
+
   gos-audit:
     runs-on: ubuntu-latest
     continue-on-error: true
@@ -40,7 +68,7 @@ jobs:
 
   build-graph:
     runs-on: ubuntu-latest
-    needs: [gos-audit]
+    needs: [gos-audit, astro-check]
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
