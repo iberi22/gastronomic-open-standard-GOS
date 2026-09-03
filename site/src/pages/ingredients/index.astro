@@ -1,40 +1,62 @@
 ---
+// site/src/pages/ingredients/index.astro — searchable + faceted ingredient catalog
 import Layout from '../../layouts/Layout.astro';
+import SearchBar from '../../components/SearchBar.astro';
 import { getCollection } from 'astro:content';
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const ingredients = await getCollection('ingredients');
-const sorted = ingredients.sort((a,b)=> ((a.data as any).name||'').localeCompare((b.data as any).name||''));
+
+// Build search index data (full list, no slicing)
+const items = ingredients
+  .map((e) => ({
+    id: e.id,
+    name: (e.data as any).name || e.id,
+    group: (e.data as any).group || '',
+    scientific_name: (e.data as any).scientific_name || '',
+    health: (e.data as any).health_registry?.[0]?.condition || '',
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+// Compute unique facets (group only — top 20 to avoid clutter)
+const allGroups = items.map((i) => i.group).filter(Boolean);
+const groupCounts = new Map<string, number>();
+allGroups.forEach((g) => groupCounts.set(g, (groupCounts.get(g) || 0) + 1));
+const facets = [...groupCounts.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 20)
+  .map(([g]) => g);
 ---
+
 <Layout title="Ingredientes — GOS">
   <h1 class="title">Ingredientes científicos</h1>
-  <p class="sub">Fichas con <strong>nutrición, compuestos activos, vitaminas</strong> y <strong>health registry</strong> (mecanismo, evidencia, estudios PubMed). El grafo genera nodos <code>vitamin</code>, <code>substance</code> y <code>condition</code> automáticamente.</p>
+  <p class="sub">
+    Fichas con <strong>nutrición, compuestos activos, vitaminas</strong> y <strong>health registry</strong>
+    (mecanismo, evidencia, estudios PubMed). El grafo genera nodos
+    <code>vitamin</code>, <code>substance</code> y <code>condition</code> automáticamente.
+  </p>
+  <p class="stats">
+    <strong>{items.length}</strong> ingredientes · <strong>{facets.length}</strong> grupos
+  </p>
 
-  <div class="grid">
-    {sorted.slice(0,60).map(entry => (
-      <a href={`${base}/ingredients/${entry.id}`} class="card">
-        <div class="name">{(entry.data as any).name}</div>
-        <div class="sci">{(entry.data as any).scientific_name || ''}</div>
-        <div class="meta">
-          {(entry.data as any).group && <span class="pill">{(entry.data as any).group}</span>}
-          {(entry.data as any).active_compounds?.[0] && <span class="pill accent">{(entry.data as any).active_compounds[0].name}</span>}
-        </div>
-        {(entry.data as any).health_registry?.[0] && <div class="health">♥ {(entry.data as any).health_registry[0].condition} · {(entry.data as any).health_registry[0].evidence_level}</div>}
-      </a>
-    ))}
-  </div>
+  <SearchBar
+    items={items}
+    baseHref={`${base}/ingredients`}
+    placeholder="Buscar por nombre, nombre científico o afección..."
+    facets={facets}
+    fuseKeys={['name', 'scientific_name', 'health']}
+  />
+
+  <p class="back-link"><a href={`${base}/`}>← Volver al inicio</a></p>
+</Layout>
 
 <style>
-  .title{ font-size:22px; font-weight:850; margin:0; color: var(--swal-text); }
-  .sub{ color: var(--swal-text-secondary); line-height:1.6; font-size:13px; max-width:800px; }
-  .sub code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-surface); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
-  .grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:12px; margin-top:18px; }
-  .card{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; text-decoration:none; color: var(--swal-text); display:flex; flex-direction:column; gap:6px; }
-  .card:hover{ border-color: color-mix(in srgb, var(--swal-accent) 30%, var(--swal-border)); transform: translateY(-2px); }
-  .name{ font-weight:700; }
-  .sci{ font-style: italic; color: var(--swal-text-muted); font-size:12px; }
-  .meta{ display:flex; gap:6px; flex-wrap:wrap; }
-  .pill{ font-size:11px; padding:3px 8px; border-radius:999px; background: var(--swal-bg); border:1px solid var(--swal-border); color: var(--swal-text-secondary);}
-  .pill.accent{ background: var(--swal-accent-muted); color: var(--swal-accent); border-color: color-mix(in srgb, var(--swal-accent) 25%, transparent); }
-  .health{ font-size:11px; color: var(--swal-accent); font-family: var(--swal-font-mono); }
+  .title { font-size: 26px; font-weight: 850; margin: 0; color: var(--swal-text); }
+  .sub { color: var(--swal-text-secondary); line-height: 1.6; font-size: 13px; max-width: 800px; margin-top: 8px; }
+  .sub code { font-family: var(--swal-font-mono); font-size: 11px; background: var(--swal-surface); border: 1px solid var(--swal-border); padding: 1px 5px; border-radius: 6px; }
+  .stats { color: var(--swal-text-muted); font-size: 12px; font-family: var(--swal-font-mono); margin-top: 6px; }
+  .stats strong { color: var(--swal-accent); }
+  .back-link { margin-top: 32px; font-size: 13px; }
+  .back-link a { color: var(--swal-accent); text-decoration: none; }
+  .back-link a:hover { text-decoration: underline; }
 </style>
-</Layout>
