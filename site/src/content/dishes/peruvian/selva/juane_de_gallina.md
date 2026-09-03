@@ -73,7 +73,7 @@ El Juane de Gallina es el símbolo indiscutible de la cocina amazónica peruana.
 
 ## 📸 Galería
 
-![Juane de Gallina](./images/juane.jpg)
+
 
 ---
 

@@ -56,7 +56,7 @@ El Chigüiro Asado es un plato tradicional y emblemático de la Orinoquía colom
 
 ## 📸 Galería
 
-![Chigüiro Asado Llanero](./images/1.png)
+
 
 ---
 

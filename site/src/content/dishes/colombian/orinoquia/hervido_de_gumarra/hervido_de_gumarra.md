@@ -55,7 +55,7 @@ El Hervido de Gumarra es una sopa tradicional de la Orinoquía colombiana, prepa
 
 ## 📸 Galería
 
-![Hervido de Gumarra](./images/1.png)
+
 
 ---
 

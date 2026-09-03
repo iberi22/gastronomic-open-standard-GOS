@@ -63,7 +63,7 @@ El Mofongo de Camarones es el almuerzo playero por excelencia en Puerto Rico. Es
 
 ## 📸 Galería
 
-![Mofongo boricua de camarones en salsa criolla](./images/mofongo_cam_1.jpg)
+
 
 ---
 

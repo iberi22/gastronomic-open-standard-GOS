@@ -2,7 +2,6 @@
 name: "Aguacate (Hass/Papelillo)"
 scientific_name: "Persea americana"
 group: "Fruit"
-image: "../../images/aguacate.jpg"
 portions:
   default_g: 100 # Half medium avocado
 nutrition_per_100g:

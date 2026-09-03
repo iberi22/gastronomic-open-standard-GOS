@@ -2,7 +2,6 @@
 name: "Pechugas De Pollo Grandes"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

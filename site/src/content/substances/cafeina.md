@@ -11,7 +11,6 @@ vitaminas: ["Potassium", "Magnesium", "Vitamin B3"]
 compuestos: ["Theobromine", "Theophylline", "Chlorogenic acid"]
 sources: ["PubMed", "NIH"]
 tags: ["estimulante", "cafe", "neuroprotector"]
-image: "/images/substances/cafeina.jpg"
 image_attribution: "Pixabay — Coffea arabica"
 health_registry:
   - condition: "Fatigue / Alertness"

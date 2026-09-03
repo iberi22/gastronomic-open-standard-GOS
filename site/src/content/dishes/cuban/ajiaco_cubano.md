@@ -71,7 +71,7 @@ El Ajiaco es el plato nacional de Cuba. No es una simple sopa; es un crisol de s
 
 ## 📸 Galería
 
-![Cazuela de barro humeante de Ajiaco Criollo Cubano](./images/ajiaco_1.jpg)
+
 
 ---
 

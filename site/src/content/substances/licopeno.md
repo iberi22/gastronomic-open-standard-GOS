@@ -11,7 +11,6 @@ vitaminas: ["Vitamin A", "Vitamin C", "Potassium"]
 compuestos: ["Phytoene", "Phytofluene", "Beta-carotene"]
 sources: ["NIH", "PubMed"]
 tags: ["antioxidante", "cardioprotector", "mediterraneo"]
-image: "/images/substances/licopeno.jpg"
 image_attribution: "Pixabay — Solanum lycopersicum"
 health_registry:
   - condition: "Prostate cancer"

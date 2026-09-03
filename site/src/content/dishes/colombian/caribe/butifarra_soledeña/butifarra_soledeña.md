@@ -57,7 +57,7 @@ servings: "30"
 
 ## 📸 Galería
 
-![Butifarra Soledeña](./images/1.png)
+
 
 ---
 

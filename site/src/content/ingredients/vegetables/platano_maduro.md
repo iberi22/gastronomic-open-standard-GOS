@@ -2,7 +2,6 @@
 name: "Plátano Maduro"
 scientific_name: "Musa paradisiaca"
 group: "Fruit"
-image: "../../images/platano_maduro.jpg"
 portions:
   default_g: 150 # Portion
 nutrition_per_100g:

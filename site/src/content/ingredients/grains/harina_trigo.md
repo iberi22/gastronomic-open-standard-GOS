@@ -2,7 +2,6 @@
 name: "Harina de Trigo"
 scientific_name: "Triticum aestivum"
 group: "Grain"
-image: "../../images/harina_trigo.jpg"
 portions:
   default_g: 125 # 1 cup
 nutrition_per_100g:

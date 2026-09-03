@@ -52,7 +52,7 @@ La Arepa de Huevo es uno de los íconos de la gastronomía costeña colombiana, 
 
 ## 📸 Galería
 
-![Arepa de Huevo con Suero](./images/1.jpg)
+
 
 ---
 

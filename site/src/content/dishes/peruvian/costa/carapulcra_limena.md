@@ -70,7 +70,7 @@ La Carapulcra es una de las joyas más antiguas y complejas de la gastronomía p
 
 ## 📸 Galería
 
-![Carapulcra Limeña](./images/carapulcra.jpg)
+
 
 ---
 

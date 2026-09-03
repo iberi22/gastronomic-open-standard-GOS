@@ -56,7 +56,7 @@ Las Crab Patties o empanadas de cangrejo son una delicia típica de San Andrés 
 
 ## 📸 Galería
 
-![Empanadas de cangrejo fritas](./images/1.png)
+
 
 ---
 

@@ -2,7 +2,6 @@
 name: "De Queso Campesino O Doble Crema"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

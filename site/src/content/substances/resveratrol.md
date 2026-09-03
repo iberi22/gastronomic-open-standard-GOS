@@ -11,7 +11,6 @@ vitaminas: ["Vitamin C", "Vitamin K", "Potassium"]
 compuestos: ["Pterostilbene", "Piceid", "Quercetin"]
 sources: ["PubMed", "NIH"]
 tags: ["vino", "cardioprotector", "longevidad"]
-image: "/images/substances/resveratrol.jpg"
 image_attribution: "Pixabay — Vitis vinifera"
 health_registry:
   - condition: "Cardiovascular disease"

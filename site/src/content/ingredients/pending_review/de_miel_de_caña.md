@@ -2,7 +2,6 @@
 name: "De Miel De Caña"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -2,7 +2,6 @@
 name: "Cucharada De Jugo De Limón O Vinagre"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -64,7 +64,7 @@ Las Masitas de Cerdo (o masitas de puerco) son una de las preparaciones de carne
 
 ## 📸 Galería
 
-![Plato abundante de masitas de cerdo fritas con cebolla por encima](./images/masitas_1.jpg)
+
 
 ---
 

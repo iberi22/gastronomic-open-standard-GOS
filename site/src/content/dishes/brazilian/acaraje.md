@@ -66,7 +66,7 @@ El Acarajé es una de las expresiones gastronómicas y culturales más poderosas
 
 ## 📸 Galería
 
-![Acarajé fresco, relleno y listo para comer](./images/acaraje_1.jpg)
+
 
 ---
 

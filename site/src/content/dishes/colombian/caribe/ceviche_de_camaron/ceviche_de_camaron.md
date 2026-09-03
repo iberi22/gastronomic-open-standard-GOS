@@ -60,7 +60,7 @@ A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o c
 
 ## 📸 Galería
 
-![Ceviche Cartagenero](./images/1.png)
+
 
 ---
 

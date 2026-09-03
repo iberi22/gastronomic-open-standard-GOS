@@ -64,7 +64,7 @@ El Mangú es el alma de la cocina dominicana. Consumido a diario en el desayuno 
 
 ## 📸 Galería
 
-![Plato tradicional de Mangú con Los Tres Golpes dominicano](./images/mangu_1.jpg)
+
 
 ---
 

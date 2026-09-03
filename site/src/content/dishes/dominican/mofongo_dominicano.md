@@ -60,7 +60,7 @@ El Mofongo es un ícono de la gastronomía de la República Dominicana y Puerto 
 
 ## 📸 Galería
 
-![Mofongo dominicano recién moldeado con chicharrón crujiente](./images/mofongo_1.jpg)
+
 
 ---
 

@@ -52,7 +52,7 @@ El Manjar Blanco es un postre tradicional de la región andina colombiana, espec
 
 ## 📸 Galería
 
-![Manjar blanco cremoso](./images/1.png)
+
 
 ---
 

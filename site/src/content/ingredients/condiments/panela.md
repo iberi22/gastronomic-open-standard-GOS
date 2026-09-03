@@ -2,7 +2,6 @@
 name: "Panela (Piloncillo/Papelón)"
 scientific_name: "Saccharum officinarum (derivado)"
 group: "Sugar"
-image: "../../images/panela.jpg"
 portions:
   default_g: 20 # chunk for aguapanela
 nutrition_per_100g:

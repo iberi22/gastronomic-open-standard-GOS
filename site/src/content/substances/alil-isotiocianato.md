@@ -11,7 +11,6 @@ vitaminas: ["Selenium", "Magnesium", "Sinigrin"]
 compuestos: ["Sinigrin", "Brassic acid", "Allyl cyanide"]
 sources: ["PubMed", "NIH"]
 tags: ["mostaza", "lacrimogeno", "wasabi"]
-image: "/images/substances/alil-isotiocianato.jpg"
 image_attribution: "Pixabay — Brassica nigra"
 health_registry:
   - condition: "Sinus congestion"

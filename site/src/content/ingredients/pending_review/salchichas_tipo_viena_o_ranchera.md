@@ -2,7 +2,6 @@
 name: "Salchichas Tipo Viena O Ranchera"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

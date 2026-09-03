@@ -2,7 +2,6 @@
 name: "Papa Pastusa/Sabanera (Blanca)"
 scientific_name: "Solanum tuberosum"
 group: "Vegetable"
-image: "../../images/papa_pastusa.jpg"
 portions:
   default_g: 150 # 1 medium potato
 nutrition_per_100g:

@@ -2,7 +2,6 @@
 name: "Carne de Res (Cortes Magros)"
 scientific_name: "Bos taurus"
 group: "Protein"
-image: "../../images/carne_res.jpg"
 portions:
   default_g: 150 # Steak portion
 nutrition_per_100g:

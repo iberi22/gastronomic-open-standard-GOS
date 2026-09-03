@@ -11,7 +11,6 @@ vitaminas: ["Vitamin C", "Manganese", "Fiber"]
 compuestos: ["Pelargonidin", "Peonidin", "Malvidin"]
 sources: ["PubMed", "NIH"]
 tags: ["morado", "antioxidante", "maiz"]
-image: "/images/substances/antocianina.jpg"
 image_attribution: "Pixabay — Zea mays morado"
 health_registry:
   - condition: "Inflammation / Metabolic syndrome"

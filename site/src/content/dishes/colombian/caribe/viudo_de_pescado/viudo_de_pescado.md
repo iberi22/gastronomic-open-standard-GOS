@@ -56,7 +56,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 
 ## 📸 Galería
 
-![Viudo de Pescado](./images/1.png)
+
 
 ---
 

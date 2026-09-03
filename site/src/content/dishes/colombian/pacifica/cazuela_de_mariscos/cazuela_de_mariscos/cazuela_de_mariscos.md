@@ -64,7 +64,7 @@ La Cazuela de Mariscos en la región Pacífica de Colombia es un plato festivo y
 
 ## 📸 Galería
 
-![Cazuela de Mariscos](./images/1.jpg)
+
 
 ---
 

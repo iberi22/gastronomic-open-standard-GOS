@@ -55,7 +55,7 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 
 ## 📸 Galería
 
-![Carimañolas](./images/1.png)
+
 
 ---
 

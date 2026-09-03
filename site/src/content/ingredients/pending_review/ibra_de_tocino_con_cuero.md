@@ -2,7 +2,6 @@
 name: "Ibra De Tocino Con Cuero"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

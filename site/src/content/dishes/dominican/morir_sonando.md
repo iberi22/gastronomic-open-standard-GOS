@@ -50,7 +50,7 @@ El Morir Soñando es la bebida por excelencia del verano dominicano. Su sugerent
 
 ## 📸 Galería
 
-![Vaso helado y espumoso de Morir Soñando dominicano](./images/morir_sonando_1.jpg)
+
 
 ---
 

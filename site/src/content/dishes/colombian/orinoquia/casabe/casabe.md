@@ -49,7 +49,7 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 
 ## 📸 Galería
 
-![Casabe Tradicional Llanero](./images/1.png)
+
 
 ---
 

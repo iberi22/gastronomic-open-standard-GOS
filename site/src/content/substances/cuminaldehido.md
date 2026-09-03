@@ -11,7 +11,6 @@ vitaminas: ["Iron", "Manganese", "Magnesium"]
 compuestos: ["Cuminalcohol", "Cymene", "Gamma-terpinene"]
 sources: ["PubMed", "NIH"]
 tags: ["digestivo", "sazon", "empanadas"]
-image: "/images/substances/cuminaldehido.jpg"
 image_attribution: "Pixabay — Cuminum cyminum seeds"
 health_registry:
   - condition: "Dyspepsia / Bloating"

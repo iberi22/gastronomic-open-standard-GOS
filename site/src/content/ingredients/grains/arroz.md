@@ -2,7 +2,6 @@
 name: "Arroz Blanco"
 scientific_name: "Oryza sativa"
 group: "Grain"
-image: "../../images/arroz_blanco.jpg"
 portions:
   default_g: 50 # Dry weight
 nutrition_per_100g:

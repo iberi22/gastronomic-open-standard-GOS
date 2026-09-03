@@ -58,7 +58,7 @@ Las empanadas andinas son uno de los pasabocas más populares de la región, cru
 
 ## 📸 Galería
 
-![Empanadas Andinas Colombianas](./images/1.png)
+
 
 ---
 

@@ -2,7 +2,6 @@
 name: "Cucharadas De Aceite Vegetal"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

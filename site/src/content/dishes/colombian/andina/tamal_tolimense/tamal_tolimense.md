@@ -60,7 +60,7 @@ El Tamal Tolimense es un plato tradicional del Tolima y la región andina de Col
 
 ## 📸 Galería
 
-![Tamal Tolimense Tradicional](./images/1.png)
+
 
 ---
 

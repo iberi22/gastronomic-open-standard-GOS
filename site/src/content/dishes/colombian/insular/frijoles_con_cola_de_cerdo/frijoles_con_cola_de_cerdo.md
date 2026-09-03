@@ -55,7 +55,7 @@ Este plato es una de las recetas tradicionales de la región Insular, especialme
 
 ## 📸 Galería
 
-![Frijoles con cola de cerdo](./images/1.png)
+
 
 ---
 

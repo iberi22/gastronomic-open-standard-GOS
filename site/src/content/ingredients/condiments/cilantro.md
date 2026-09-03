@@ -2,7 +2,6 @@
 name: "Cilantro"
 scientific_name: "Coriandrum sativum"
 group: "Condiment"
-image: "../../images/cilantro.jpg"
 portions:
   default_g: 15 # Chopped generous garnish
 nutrition_per_100g:

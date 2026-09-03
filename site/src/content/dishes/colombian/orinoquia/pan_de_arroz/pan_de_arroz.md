@@ -51,7 +51,7 @@ El Pan de Arroz es una delicia tradicional de la Orinoquía colombiana, especial
 
 ## 📸 Galería
 
-![Pan de Arroz Llanero](./images/1.png)
+
 
 ---
 

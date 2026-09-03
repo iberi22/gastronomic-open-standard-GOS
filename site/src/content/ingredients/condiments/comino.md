@@ -2,7 +2,6 @@
 name: "Comino"
 scientific_name: "Cuminum cyminum"
 group: "Condiment"
-image: "../../images/comino.jpg"
 portions:
   default_g: 2 # teaspoon
 nutrition_per_100g:

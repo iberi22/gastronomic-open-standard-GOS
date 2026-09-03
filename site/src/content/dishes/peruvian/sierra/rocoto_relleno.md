@@ -75,7 +75,7 @@ El Rocoto Relleno es el rey de las picanterías arequipeñas. Su característica
 
 ## 📸 Galería
 
-![Rocoto Relleno](./images/rocoto_relleno.jpg)
+
 
 ---
 

@@ -2,7 +2,6 @@
 name: "De Aceite Vegetal O Mantequilla Derretida"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -68,7 +68,7 @@ La Ropa Vieja es la indiscutible carta de presentación de la culinaria de Cuba.
 
 ## 📸 Galería
 
-![Plato de Ropa Vieja cubana servido tradicionalmente](./images/ropa_vieja_1.jpg)
+
 
 ---
 

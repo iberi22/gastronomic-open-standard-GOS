@@ -2,7 +2,6 @@
 name: "Jengibre"
 scientific_name: "Zingiber officinale"
 group: "Condiment"
-image: "../../images/jengibre.jpg"
 portions:
   default_g: 5 # slices
 nutrition_per_100g:

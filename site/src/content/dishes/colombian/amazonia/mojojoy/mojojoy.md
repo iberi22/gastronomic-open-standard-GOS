@@ -50,7 +50,7 @@ El Mojojoy es uno de los manjares más exóticos y emblemáticos de la Amazonía
 
 ## 📸 Galería
 
-![Mojojoy asado y dorado](./images/1.png)
+
 
 ---
 

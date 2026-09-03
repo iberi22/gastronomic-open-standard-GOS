@@ -11,7 +11,6 @@ vitaminas: ["Vitamin E", "Vitamin K", "Polyphenols"]
 compuestos: ["Oleuropein", "Hydroxytyrosol", "Oleacein"]
 sources: ["PubMed", "NIH"]
 tags: ["oliva", "ibuprofeno", "mediterraneo"]
-image: "/images/substances/oleocanthal.jpg"
 image_attribution: "Pixabay — Olea europaea"
 health_registry:
   - condition: "Alzheimer / Inflammation"

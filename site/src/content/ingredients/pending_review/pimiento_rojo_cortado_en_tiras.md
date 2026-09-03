@@ -2,7 +2,6 @@
 name: "Pimiento Rojo Cortado En Tiras"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

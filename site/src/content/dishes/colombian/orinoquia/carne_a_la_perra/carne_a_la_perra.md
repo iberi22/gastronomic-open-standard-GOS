@@ -54,7 +54,7 @@ La Carne a la Perra es un plato tradicional de los llanos orientales de Colombia
 
 ## 📸 Galería
 
-![Carne a la Perra Llanera](./images/1.png)
+
 
 ---
 

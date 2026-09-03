@@ -60,7 +60,7 @@ El Flan de Huevo es la culminación dulce indiscutible de cualquier comida cuban
 
 ## 📸 Galería
 
-![Porción de Flan de huevo cubano bañado en caramelo oscuro](./images/flan_1.jpg)
+
 
 ---
 

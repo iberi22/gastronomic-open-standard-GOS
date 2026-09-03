@@ -2,7 +2,6 @@
 name: "Pechuga De Pollo En Presas"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

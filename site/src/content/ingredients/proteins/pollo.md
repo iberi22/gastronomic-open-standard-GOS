@@ -2,7 +2,6 @@
 name: "Pollo (Pechuga sin piel)"
 scientific_name: "Gallus gallus domesticus"
 group: "Protein"
-image: "../../images/pollo_crudo.jpg"
 portions:
   default_g: 150 # Fillet
 nutrition_per_100g:

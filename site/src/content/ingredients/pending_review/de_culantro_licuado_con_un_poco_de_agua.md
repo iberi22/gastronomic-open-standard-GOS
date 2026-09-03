@@ -2,7 +2,6 @@
 name: "De Culantro  Licuado Con Un Poco De Agua"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

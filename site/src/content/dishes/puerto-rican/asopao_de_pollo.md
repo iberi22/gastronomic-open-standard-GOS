@@ -62,7 +62,7 @@ El Asopao de Pollo es el plato reconfortante supremo de Puerto Rico. A medio cam
 
 ## 📸 Galería
 
-![Asopao de pollo boricua caliente servido en plato hondo](./images/asopao_1.jpg)
+
 
 ---
 

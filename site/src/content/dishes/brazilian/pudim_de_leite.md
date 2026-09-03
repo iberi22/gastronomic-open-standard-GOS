@@ -56,7 +56,7 @@ El Pudim de Leite es el dulce más querido de la mesa familiar brasileña. Es el
 
 ## 📸 Galería
 
-![Pudim de Leite brasileño con caramelo ámbar perfecto](./images/pudim_1.jpg)
+
 
 ---
 

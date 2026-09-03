@@ -2,7 +2,6 @@
 name: "Queso Campesino O Cuajada En Cubos"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

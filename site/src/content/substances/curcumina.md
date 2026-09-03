@@ -11,7 +11,6 @@ vitaminas: ["Vitamin C", "Vitamin E", "Manganese"]
 compuestos: ["Demethoxycurcumin", "Bisdemethoxycurcumin", "Turmerone"]
 sources: ["NIH", "PubMed"]
 tags: ["antiinflamatorio", "antioxidante", "curry"]
-image: "/images/substances/curcumina.jpg"
 image_attribution: "Pixabay — Curcuma longa rhizome"
 health_registry:
   - condition: "Inflammation / Arthritis"

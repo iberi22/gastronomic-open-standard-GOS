@@ -11,7 +11,6 @@ vitaminas: ["Magnesium", "Iron", "Copper"]
 compuestos: ["Caffeine", "Theophylline", "Flavanols"]
 sources: ["PubMed", "NIH"]
 tags: ["chocolate", "vasodilatador", "antitusivo"]
-image: "/images/substances/teobromina.jpg"
 image_attribution: "Pixabay — Theobroma cacao"
 health_registry:
   - condition: "Hypertension"

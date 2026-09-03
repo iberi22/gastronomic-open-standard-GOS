@@ -2,7 +2,6 @@
 name: "Sal (Cloruro de Sodio)"
 scientific_name: "NaCl"
 group: "Condiment"
-image: "../../images/sal.jpg"
 portions:
   default_g: 1 # Pinch
 nutrition_per_100g:

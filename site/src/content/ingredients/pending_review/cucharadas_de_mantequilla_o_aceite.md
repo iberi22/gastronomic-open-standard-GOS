@@ -2,7 +2,6 @@
 name: "Cucharadas De Mantequilla O Aceite"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

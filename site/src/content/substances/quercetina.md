@@ -11,7 +11,6 @@ vitaminas: ["Vitamin C", "Vitamin B6", "Manganese"]
 compuestos: ["Rutin", "Isoquercitrin", "Kaempferol"]
 sources: ["PubMed", "NIH"]
 tags: ["flavonoide", "antioxidante", "antihistaminico"]
-image: "/images/substances/quercetina.jpg"
 image_attribution: "Pixabay — Allium cepa"
 health_registry:
   - condition: "Allergy / Histamine"

@@ -11,7 +11,6 @@ vitaminas: ["Vitamin K", "Vitamin A", "Vitamin C"]
 compuestos: ["Dodecanal", "Decenal", "Linalool"]
 sources: ["PubMed", "NIH"]
 tags: ["cilantro", "antibacteriano", "salmonella"]
-image: "/images/substances/dodecenal.jpg"
 image_attribution: "Pixabay — Coriandrum sativum"
 health_registry:
   - condition: "Salmonellosis"

@@ -55,7 +55,7 @@ La hamburguesa colombiana es una versión local de este clásico internacional, 
 
 ## 📸 Galería
 
-![Hamburguesa colombiana completa](./images/1.png)
+
 
 ---
 

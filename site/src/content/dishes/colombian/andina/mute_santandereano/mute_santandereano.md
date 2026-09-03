@@ -62,7 +62,7 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 
 ## 📸 Galería
 
-![Mute santandereano sustancioso](./images/1.png)
+
 
 ---
 

@@ -2,7 +2,6 @@
 name: "Cucharadas De Aceite De Achiote"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -2,7 +2,6 @@
 name: "Pescado De Río Entero  De 1-1.5 Kg"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

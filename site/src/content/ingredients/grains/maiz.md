@@ -2,7 +2,6 @@
 name: "Maíz (Mazorca/Grano)"
 scientific_name: "Zea mays"
 group: "Grain"
-image: "../../images/maiz.jpg"
 portions:
   default_g: 100 # Corn kernels
 nutrition_per_100g:

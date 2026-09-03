@@ -72,7 +72,7 @@ El Ají de Gallina es uno de los platos más representativos y queridos del Per�
 
 ## 📸 Galería
 
-![Ají de Gallina](./images/aji_de_gallina.jpg)
+
 
 ---
 

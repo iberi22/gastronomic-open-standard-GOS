@@ -67,7 +67,7 @@ La Moqueca es una de las joyas de la corona de la cocina del estado de Bahía, B
 
 ## 📸 Galería
 
-![Moqueca Baiana servida en olla de barro tradicional](./images/moqueca_1.jpg)
+
 
 ---
 

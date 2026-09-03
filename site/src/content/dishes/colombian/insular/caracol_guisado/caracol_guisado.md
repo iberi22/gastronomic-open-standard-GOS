@@ -61,7 +61,7 @@ El Caracol Guisado es un plato icónico de la región Insular, especialmente de 
 
 ## 📸 Galería
 
-![Caracol guisado con coco](./images/1.png)
+
 
 ---
 

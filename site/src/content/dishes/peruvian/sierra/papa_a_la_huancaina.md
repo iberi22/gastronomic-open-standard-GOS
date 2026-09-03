@@ -64,7 +64,7 @@ La Papa a la Huancaína es un clásico indiscutible que acompaña casi cualquier
 
 ## 📸 Galería
 
-![Papa a la Huancaína](./images/huancaina.jpg)
+
 
 ---
 

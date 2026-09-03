@@ -68,7 +68,7 @@ La Causa Limeña es uno de los platos más vistosos y deliciosos del recetario c
 
 ## 📸 Galería
 
-![Causa Limeña](./images/causa_limena.jpg)
+
 
 ---
 

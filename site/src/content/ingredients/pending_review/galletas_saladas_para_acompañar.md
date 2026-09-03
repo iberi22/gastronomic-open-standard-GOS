@@ -2,7 +2,6 @@
 name: "Galletas Saladas Para Acompañar"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -55,7 +55,7 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 
 ## 📸 Galería
 
-![Arroz con Coco](./images/1.png)
+
 
 ---
 

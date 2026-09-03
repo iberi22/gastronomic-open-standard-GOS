@@ -2,7 +2,6 @@
 name: "S De Harina De Maíz Precocida Amarilla"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

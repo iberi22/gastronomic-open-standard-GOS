@@ -2,7 +2,6 @@
 name: "Manojo Grande De Guascas Frescas"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

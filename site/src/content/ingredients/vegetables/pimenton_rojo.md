@@ -2,7 +2,6 @@
 name: "Pimentón Rojo (Pimiento)"
 scientific_name: "Capsicum annuum"
 group: "Vegetable"
-image: "../../images/pimenton_rojo.jpg"
 portions:
   default_g: 50 # chopped
 nutrition_per_100g:

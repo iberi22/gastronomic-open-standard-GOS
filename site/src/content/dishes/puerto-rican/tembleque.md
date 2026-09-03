@@ -56,7 +56,7 @@ El Tembleque recibe su divertido nombre de su consistencia característica: un f
 
 ## 📸 Galería
 
-![Plato tradicional de tembleque de coco boricua listo para el postre](./images/tembleque_1.jpg)
+
 
 ---
 

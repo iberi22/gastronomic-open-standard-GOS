@@ -2,7 +2,6 @@
 name: "De Harina De Maíz Precocida"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

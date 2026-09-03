@@ -2,7 +2,6 @@
 name: "Ata De Gaseosa Roja  O Soda"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

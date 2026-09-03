@@ -2,7 +2,6 @@
 name: "Aceite de Ajonjolí (Sésamo)"
 scientific_name: "Sesamum indicum"
 group: "Oil"
-image: "../../images/aceite_ajonjoli.jpg"
 portions:
   default_g: 5 # 1 tsp
 nutrition_per_100g:

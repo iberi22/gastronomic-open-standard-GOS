@@ -2,7 +2,6 @@
 name: "Hojas De Plátano Para Hornear"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

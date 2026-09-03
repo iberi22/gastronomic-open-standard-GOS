@@ -57,7 +57,7 @@ El Pernil Asado es el corazón de las fiestas puertorriqueñas. El aroma del per
 
 ## 📸 Galería
 
-![Porción crujiente de pernil asado boricua de Navidad](./images/pernil_1.jpg)
+
 
 ---
 

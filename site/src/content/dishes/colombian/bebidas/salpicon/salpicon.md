@@ -54,7 +54,7 @@ El salpicón es una bebida-postre refrescante y colorida, tradicional en ferias,
 
 ## 📸 Galería
 
-![Salpicón de frutas colorido](./images/1.png)
+
 
 ---
 

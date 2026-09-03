@@ -2,7 +2,6 @@
 name: "Yuca (Mandioca)"
 scientific_name: "Manihot esculenta"
 group: "Vegetable"
-image: "../../images/yuca.jpg"
 portions:
   default_g: 150 # Portion
 nutrition_per_100g:

@@ -55,7 +55,7 @@ Los Tostones dominicanos, conocidos coloquialmente como *fritos verdes*, son un 
 
 ## 📸 Galería
 
-![Plato abundante de tostones dominicanos calientes y crujientes con sal marina](./images/tostones_dom_1.jpg)
+
 
 ---
 

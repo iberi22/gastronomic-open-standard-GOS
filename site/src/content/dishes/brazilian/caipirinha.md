@@ -52,7 +52,7 @@ La Caipirinha es la máxima expresión de la coctelería brasileña. Protegida p
 
 ## 📸 Galería
 
-![Caipirinha brasileña con hielo y limón fresco](./images/caipirinha_1.jpg)
+
 
 ---
 

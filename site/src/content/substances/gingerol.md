@@ -11,7 +11,6 @@ vitaminas: ["Vitamin B6", "Vitamin C", "Magnesium"]
 compuestos: ["6-Shogaol", "Zingerone", "Paradol"]
 sources: ["PubMed", "NIH"]
 tags: ["antiemetico", "antiinflamatorio", "digestivo"]
-image: "/images/substances/gingerol.jpg"
 image_attribution: "Pixabay — Zingiber officinale"
 health_registry:
   - condition: "Nausea / Motion sickness"

@@ -2,7 +2,6 @@
 name: "De Cangrejo Azul O Cangrejo De Mar Limpio"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

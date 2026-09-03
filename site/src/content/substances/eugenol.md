@@ -11,7 +11,6 @@ vitaminas: ["Vitamin K", "Manganese", "Iron"]
 compuestos: ["Isoeugenol", "Methyleugenol", "Caryophyllene"]
 sources: ["NIH", "PubMed"]
 tags: ["analgesico", "especiado", "antiseptico"]
-image: "/images/substances/eugenol.jpg"
 image_attribution: "Pixabay — Syzygium aromaticum"
 health_registry:
   - condition: "Dental pain"

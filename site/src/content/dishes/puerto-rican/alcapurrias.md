@@ -63,7 +63,7 @@ Las Alcapurrias son una de las máximas expresiones de la cultura de las fritura
 
 ## 📸 Galería
 
-![Alcapurrias de masa calientes puertorriqueñas](./images/alcapurrias_1.jpg)
+
 
 ---
 

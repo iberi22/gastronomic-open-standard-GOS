@@ -2,7 +2,6 @@
 name: "Cerdo (Lomo/Pulpa)"
 scientific_name: "Sus scrofa domesticus"
 group: "Protein"
-image: "../../images/cerdo.jpg"
 portions:
   default_g: 150
 nutrition_per_100g:

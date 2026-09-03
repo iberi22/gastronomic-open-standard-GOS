@@ -2,7 +2,6 @@
 name: "Caldo De Cocción De Las Carnes"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

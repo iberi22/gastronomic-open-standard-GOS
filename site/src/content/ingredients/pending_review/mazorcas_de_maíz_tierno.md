@@ -2,7 +2,6 @@
 name: "Mazorcas De Maíz Tierno"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

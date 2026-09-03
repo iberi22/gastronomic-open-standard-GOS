@@ -2,7 +2,6 @@
 name: "Ajo"
 scientific_name: "Allium sativum"
 group: "Condiment"
-image: "../../images/ajo.jpg"
 portions:
   default_g: 3 # approx 1 clove
 nutrition_per_100g:

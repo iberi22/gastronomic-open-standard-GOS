@@ -2,7 +2,6 @@
 name: "Caparazones De Cangrejo Limpios"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -60,7 +60,7 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ## 📸 Galería
 
-![Encocado de Pescado del Pacífico](./images/1.png)
+
 
 ---
 

@@ -2,7 +2,6 @@
 name: "De Maní Tostado Y Molido"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

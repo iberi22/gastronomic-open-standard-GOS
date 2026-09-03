@@ -58,7 +58,7 @@ El Trifongo es una obra de arte culinaria de Puerto Rico. Al unir de forma equil
 
 ## 📸 Galería
 
-![Domo caliente de trifongo boricua recién moldeado](./images/trifongo_1.jpg)
+
 
 ---
 

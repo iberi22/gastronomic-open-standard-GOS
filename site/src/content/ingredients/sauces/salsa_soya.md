@@ -2,7 +2,6 @@
 name: "Salsa de Soya (Sillao)"
 scientific_name: "Glycine max (fermented)"
 group: "Sauce"
-image: "../../images/salsa_soya.jpg"
 portions:
   default_g: 15 # 1 tbsp
 nutrition_per_100g:

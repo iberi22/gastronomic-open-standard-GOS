@@ -59,7 +59,7 @@ La Sopa de Cangrejo es uno de los platos más emblemáticos de San Andrés y Pro
 
 ## 📸 Galería
 
-![Sopa de cangrejo cremosa](./images/1.png)
+
 
 ---
 

@@ -65,7 +65,7 @@ Las Habichuelas con Dulce son la cumbre de la originalidad culinaria de la Repú
 
 ## 📸 Galería
 
-![Tazas listas de Habichuelas con Dulce dominicanas decoradas con galletas](./images/habichuelas_1.jpg)
+
 
 ---
 

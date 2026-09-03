@@ -11,7 +11,6 @@ vitaminas: ["Vitamin A", "Iron", "Manganese"]
 compuestos: ["Menthone", "Menthofuran", "Limonene"]
 sources: ["PubMed", "NIH"]
 tags: ["refrescante", "menta", "analgesico"]
-image: "/images/substances/mentol.jpg"
 image_attribution: "Pixabay — Mentha piperita"
 health_registry:
   - condition: "IBS pain"

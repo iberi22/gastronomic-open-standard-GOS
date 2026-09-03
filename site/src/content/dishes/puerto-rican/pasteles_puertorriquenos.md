@@ -66,7 +66,7 @@ Los Pasteles de Masa son el alma de la Navidad en Puerto Rico. No se preparan de
 
 ## 📸 Galería
 
-![Pastel de masa navideño boricua recién servido desenvuelto](./images/pasteles_1.jpg)
+
 
 ---
 

@@ -49,7 +49,7 @@ El Ají Negro es una salsa ancestral de la Amazonía, elaborada a partir de ají
 
 ## 📸 Galería
 
-![Ají negro en cuenco de barro](./images/1.png)
+
 
 ---
 

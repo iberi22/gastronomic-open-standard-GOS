@@ -11,7 +11,6 @@ vitaminas: ["Vitamin B6", "Vitamin C", "Selenium"]
 compuestos: ["S-allylcysteine", "Ajoene"]
 sources: ["NIH", "PubMed"]
 tags: ["sazon", "antihipertensivo", "antimicrobiano"]
-image: "/images/substances/alicina.jpg"
 image_attribution: "Wikimedia Commons / Pixabay — Allium sativum"
 health_registry:
   - condition: "Hypertension"

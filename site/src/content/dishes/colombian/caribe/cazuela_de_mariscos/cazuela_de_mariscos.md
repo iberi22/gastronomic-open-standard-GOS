@@ -65,7 +65,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ## 📸 Galería
 
-![Cazuela de Mariscos Tradicional](./images/1.png)
+
 
 ---
 

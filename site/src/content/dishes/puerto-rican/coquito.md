@@ -55,7 +55,7 @@ El Coquito es el ponche navideño que define la Navidad en Puerto Rico. Es el re
 
 ## 📸 Galería
 
-![Botellas decoradas con coquito puertorriqueño de Navidad](./images/coquito_1.jpg)
+
 
 ---
 

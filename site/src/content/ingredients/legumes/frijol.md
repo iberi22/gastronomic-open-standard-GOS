@@ -2,7 +2,6 @@
 name: "Frijol Bola Roja/Cargamanto (Seco)"
 scientific_name: "Phaseolus vulgaris"
 group: "Legume"
-image: "../../images/frijol.jpg"
 portions:
   default_g: 100 # Dry weight
 nutrition_per_100g:

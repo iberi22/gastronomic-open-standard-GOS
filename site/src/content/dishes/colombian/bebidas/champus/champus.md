@@ -52,7 +52,7 @@ El champús es una bebida tradicional del suroccidente colombiano, especialmente
 
 ## 📸 Galería
 
-![Champús valluno refrescante](./images/1.png)
+
 
 ---
 

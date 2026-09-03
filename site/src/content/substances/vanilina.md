@@ -11,7 +11,6 @@ vitaminas: ["Manganese", "Magnesium", "Potassium"]
 compuestos: ["Vanillic acid", "Vanillyl alcohol", "Ethylvanillin"]
 sources: ["PubMed", "NIH"]
 tags: ["vainilla", "dulce", "aroma"]
-image: "/images/substances/vanilina.jpg"
 image_attribution: "Pixabay — Vanilla planifolia"
 health_registry:
   - condition: "Anxiety / Appetite"

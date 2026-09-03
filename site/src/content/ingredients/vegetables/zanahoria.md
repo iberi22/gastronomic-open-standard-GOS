@@ -2,7 +2,6 @@
 name: "Zanahoria"
 scientific_name: "Daucus carota"
 group: "Vegetable"
-image: "../../images/zanahoria.jpg"
 portions:
   default_g: 61 # 1 medium carrot
 nutrition_per_100g:

@@ -70,7 +70,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
 
 ## 📸 Galería
 
-![Chupe de Camarones](./images/chupe.jpg)
+
 
 ---
 

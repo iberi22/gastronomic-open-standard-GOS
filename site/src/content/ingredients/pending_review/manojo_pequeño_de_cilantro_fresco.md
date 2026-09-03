@@ -2,7 +2,6 @@
 name: "Manojo Pequeño De Cilantro Fresco"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -11,7 +11,6 @@ vitaminas: ["Vitamin C", "Vitamin K", "Sulfur"]
 compuestos: ["Glucoraphanin", "Sulforaphane nitrile", "Iberin"]
 sources: ["PubMed", "NIH"]
 tags: ["brocoli", "anticancer", "detox"]
-image: "/images/substances/sulforafano.jpg"
 image_attribution: "Pixabay — Brassica oleracea"
 health_registry:
   - condition: "Cancer prevention"

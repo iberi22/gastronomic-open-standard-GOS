@@ -2,7 +2,6 @@
 name: "Tomate Rojo (Maduro)"
 scientific_name: "Solanum lycopersicum"
 group: "Vegetable"
-image: "../../images/tomate.jpg"
 portions:
   default_g: 120 # 1 medium tomato
 nutrition_per_100g:

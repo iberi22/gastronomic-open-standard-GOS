@@ -70,7 +70,7 @@ Los Anticuchos de Corazón son el emblema indiscutible de la cocina callejera y 
 
 ## 📸 Galería
 
-![Anticuchos de Corazón](./images/anticuchos.jpg)
+
 
 ---
 

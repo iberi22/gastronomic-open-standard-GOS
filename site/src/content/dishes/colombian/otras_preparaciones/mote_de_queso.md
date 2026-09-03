@@ -32,7 +32,7 @@ servings: "6"
 
 ## 📸 Galería
 
-![Mote de Queso Tradicional](../caribe/mote_de_queso/images/1.png)
+
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 

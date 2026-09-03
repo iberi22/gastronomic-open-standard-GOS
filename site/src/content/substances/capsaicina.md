@@ -11,7 +11,6 @@ vitaminas: ["Vitamin A", "Vitamin C", "Vitamin B6"]
 compuestos: ["Dihydrocapsaicin", "Nordihydrocapsaicin"]
 sources: ["PubMed", "NIH"]
 tags: ["picante", "analgesico", "termogenico"]
-image: "/images/substances/capsaicina.jpg"
 image_attribution: "Pixabay — Capsicum annuum"
 health_registry:
   - condition: "Pain / Neuropathy"

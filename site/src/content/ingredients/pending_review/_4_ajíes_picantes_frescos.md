@@ -2,7 +2,6 @@
 name: "-4 Ajíes Picantes Frescos"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -60,7 +60,7 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 
 ## 📸 Galería
 
-![Sancocho Costeño Servido](./images/1.jpg)
+
 
 ---
 

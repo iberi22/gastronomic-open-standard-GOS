@@ -2,7 +2,6 @@
 name: "Pescado Blanco (Bagre/Mojarra/Tilapia)"
 scientific_name: "Oreochromis niloticus / Pseudoplatystoma"
 group: "Protein"
-image: "../../images/pescado_blanco.jpg"
 portions:
   default_g: 200 # Whole fillet
 nutrition_per_100g:

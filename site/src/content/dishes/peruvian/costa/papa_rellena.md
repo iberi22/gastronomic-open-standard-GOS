@@ -72,7 +72,7 @@ La Papa Rellena es una de las entradas y "snacks" al paso más populares del Per
 
 ## 📸 Galería
 
-![Papa Rellena](./images/papa_rellena.jpg)
+
 
 ---
 

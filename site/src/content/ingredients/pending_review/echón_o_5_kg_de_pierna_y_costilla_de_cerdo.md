@@ -2,7 +2,6 @@
 name: "Echón  O 5 Kg De Pierna Y Costilla De Cerdo"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

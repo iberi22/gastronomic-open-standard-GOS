@@ -66,7 +66,7 @@ El Seco de Cabrito es el guiso más emblemático y festivo de las regiones de La
 
 ## 📸 Galería
 
-![Seco de Cabrito](./images/seco.jpg)
+
 
 ---
 

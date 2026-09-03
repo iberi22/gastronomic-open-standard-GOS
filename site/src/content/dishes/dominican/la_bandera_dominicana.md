@@ -85,7 +85,7 @@ La Bandera Dominicana es el pilar culinario cotidiano de la República Dominican
 
 ## 📸 Galería
 
-![Plato tradicional de La Bandera Dominicana listo para el almuerzo](./images/bandera_1.jpg)
+
 
 ---
 

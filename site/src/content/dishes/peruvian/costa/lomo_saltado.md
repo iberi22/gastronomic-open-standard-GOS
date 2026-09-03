@@ -66,7 +66,7 @@ El Lomo Saltado es uno de los platos más populares y queridos de la gastronomí
 
 ## 📸 Galería
 
-![Lomo Saltado](./images/lomo_saltado.jpg)
+
 
 ---
 

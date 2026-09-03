@@ -2,7 +2,6 @@
 name: "Esencia De Vainilla"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

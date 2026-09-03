@@ -55,7 +55,7 @@ El Brigadeiro es, sin duda alguna, el rey indiscutible de la repostería brasile
 
 ## 📸 Galería
 
-![Brigadeiros brasileños tradicionales en sus capacillos de papel](./images/brigadeiro_1.jpg)
+
 
 ---
 

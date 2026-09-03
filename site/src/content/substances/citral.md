@@ -11,7 +11,6 @@ vitaminas: ["Vitamin A", "Manganese", "Potassium"]
 compuestos: ["Geranial", "Neral", "Myrcene"]
 sources: ["PubMed", "NIH"]
 tags: ["citrico", "limoncillo", "antimicrobiano"]
-image: "/images/substances/citral.jpg"
 image_attribution: "Pixabay — Cymbopogon citratus"
 health_registry:
   - condition: "Anxiety"

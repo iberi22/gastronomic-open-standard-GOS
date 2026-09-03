@@ -2,7 +2,6 @@
 name: "Papa Criolla (Amarilla)"
 scientific_name: "Solanum phureja"
 group: "Vegetable"
-image: "../../images/papa_criolla.jpg"
 portions:
   default_g: 100
 nutrition_per_100g:

@@ -2,7 +2,6 @@
 name: "Ibra De Queso Costeño Duro"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

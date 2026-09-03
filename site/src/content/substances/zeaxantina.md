@@ -11,7 +11,6 @@ vitaminas: ["Vitamin A", "Vitamin C", "Lutein"]
 compuestos: ["Lutein", "Beta-carotene", "Meso-zeaxanthin"]
 sources: ["PubMed", "NIH"]
 tags: ["maiz", "ocular", "macular"]
-image: "/images/substances/zeaxantina.jpg"
 image_attribution: "Pixabay — Zea mays"
 health_registry:
   - condition: "AMD / Macular degeneration"

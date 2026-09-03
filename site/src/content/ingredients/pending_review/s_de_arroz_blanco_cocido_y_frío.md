@@ -2,7 +2,6 @@
 name: "S De Arroz Blanco Cocido Y Frío"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

@@ -11,7 +11,6 @@ vitaminas: ["Manganese", "Calcium", "Iron"]
 compuestos: ["Eugenol", "Cinnamic acid", "Coumarin"]
 sources: ["PubMed", "NIH"]
 tags: ["canela", "hipoglucemiante", "antimicrobiano"]
-image: "/images/substances/cinamaldehido.jpg"
 image_attribution: "Pixabay — Cinnamomum verum"
 health_registry:
   - condition: "Type 2 Diabetes"

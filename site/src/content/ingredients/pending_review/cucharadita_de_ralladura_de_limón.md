@@ -2,7 +2,6 @@
 name: "Cucharadita De Ralladura De Limón"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:

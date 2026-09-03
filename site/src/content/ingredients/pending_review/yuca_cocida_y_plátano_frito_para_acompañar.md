@@ -2,7 +2,6 @@
 name: "Yuca Cocida Y Plátano Frito Para Acompañar"
 scientific_name: "TODO"
 group: "Uncategorized"
-image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:
