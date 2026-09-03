@@ -1,49 +1,11 @@
 ---
-title: "Quesadillas de Flor de Calabaza"
-region: "Ciudad de México"
-categories:
-  - "Antojito"
-  - "Vegetariano"
-sensory:
-  flavor:
-    - "Sutil vegetal"
-    - "Salado"
-    - "Epazote aromático"
-  texture:
-    - "Suave"
-    - "Queso derretido elástico"
-  aroma:
-    - "Flor de calabaza salteada"
-    - "Maíz azul o blanco"
-  presentation: "Tortillas dobladas a la mitad cocinadas al comal con queso Oaxaca y flores salteadas."
-main_ingredients:
-  - "Masa de maíz"
-  - "Flores de calabaza frescas"
-  - "Queso Oaxaca (hebra)"
-  - "Epazote fresco"
-  - "Cebolla"
-  - "Chile verde"
+title: "Quesadillas De Flor De Calabaza"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "15 minutos"
-servings: 4
-nutrition:
-  calories: 320
-  macros:
-    protein_g: 12.0
-    fat_g: 14.0
-    carbs_g: 38.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Quesadillas de Flor de Calabaza tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Las Quesadillas de Flor de Calabaza son un antojito de mercado típico del centro de México, destacando la delicada flor de calabaza con queso derretido y epazote."
+servings: "4"
 ---
 
 # Quesadillas de Flor de Calabaza

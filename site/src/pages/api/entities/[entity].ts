@@ -1,9 +1,6 @@
-// site/src/pages/api/entities/[entity].ts — REST CRUD router for whitelisted entities
-// GET /api/entities/:entity       → list (filtered by instanceId)
-// GET /api/entities/:entity?id=x → single
-// POST /api/entities/:entity      → create (with Xavier sync via agentDomain)
-// PUT /api/entities/:entity?id=x  → update
-// DELETE /api/entities/:entity?id=x → delete
+export function getStaticPaths() {
+  return ALLOWED.map((entity) => ({ params: { entity } }));
+}
 
 import type { APIRoute } from 'astro';
 import {
@@ -23,7 +20,7 @@ const ALLOWED = [
   'condition',
   'diet',
   'substance',
-  'tip',
+
   'technique',
 ];
 

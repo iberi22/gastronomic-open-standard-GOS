@@ -1,58 +1,11 @@
 ---
-title: "Choripán Argentino"
-region: "Río de la Plata / Pampeana / Nacional"
-categories:
-  - "Plato fuerte"
-  - "Sandwich"
-  - "Tradicional"
-  - "Parrilla"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Ahumado"
-    - "Ácido sutil"
-    - "Especiado"
-  texture:
-    - "Masa crujiente"
-    - "Embutido firme"
-    - "Extremadamente jugoso"
-  aroma:
-    - "Chorizo asado"
-    - "Pan tostado"
-    - "Ajo"
-    - "Vinagre y especias"
-  presentation: "Se sirve caliente, colocando el chorizo criollo mariposa dentro del pan tostado crujiente con abundante salsa chimichurri untada en ambas caras."
-main_ingredients:
-  - "Chorizos criollos frescos"
-  - "Pan francés o pan de campo"
-  - "Salsa chimichurri casera"
-  - "Carbón vegetal o leña"
+title: "ChoripáN Argentino"
+region: "Argentina"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "15 minutos"
 cook_time: "20 minutos"
-servings: 4
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 18
-    fat_g: 26
-    carbs_g: 38
-tags:
-  - "Argentina"
-  - "Choripan"
-  - "Parrilla"
-  - "Callejero"
-  - "Chimichurri"
-  - "Rápido"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Choripán argentino con salsa chimichurri en pan francés tostado"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "El Choripán es el emparedado callejero y parrillero más popular de la Argentina. Consiste simplemente en un chorizo criollo de excelente calidad asado a la parrilla, cortado en sentido longitudinal (técnica 'mariposa') y servido caliente dentro de un trozo de pan francés crujiente con salsa chimichurri."
+servings: "4"
 ---
 
 # Choripán Argentino

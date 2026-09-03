@@ -1,54 +1,66 @@
 ---
-title: "Arepa de Huevo"
-region: "Caribe"
+title: Arepa de Huevo
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Fritura"
-  - "Desayuno"
-  - "Callejera"
+  - Fritura
+  - Desayuno
+  - Callejera
+difficulty: ★★★★☆
+prep_time: '30'
+cook_time: '15'
+servings: 10
+tags:
+  - Luruaco
+  - Fritanga
+  - Desayuno
+main_ingredients:
+  - Maíz Amarillo (Masa)
+  - Huevo (AAA)
+  - Carne molida (opcional)
+  - Aceite vegetal (fritura profunda)
+  - Sal
 sensory:
   flavor:
-    - "Maíz tostado"
-    - "Graso (yema)"
-    - "Salado"
-    - "Ácido (si hay suero)"
+    - Maíz tostado
+    - Graso (yema)
+    - Salado
+    - Ácido (si hay suero)
   texture:
-    - "Crocante (Corteza)"
-    - "Vaporoso (Interior)"
-    - "Cremoso (Huevo)"
+    - Crocante (Corteza)
+    - Vaporoso (Interior)
+    - Cremoso (Huevo)
   aroma:
-    - "Maíz frito"
-    - "Aceite caliente"
-    - "Huevo cocido"
-  presentation: "Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño aparte."
-main_ingredients:
-  - "Maíz Amarillo (Masa)"
-  - "Huevo (AAA)"
-  - "Carne molida (opcional)"
-  - "Aceite vegetal (fritura profunda)"
-  - "Sal"
-difficulty: "Alta"
-prep_time: "30"
-cook_time: "15"
-servings: 10
+    - Maíz frito
+    - Aceite caliente
+    - Huevo cocido
+  presentation: >-
+    Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible
+    pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño
+    aparte.
 nutrition:
   calories: 350
   macros:
     protein_g: 12
     fat_g: 18
     carbs_g: 35
-tags:
-  - "Luruaco"
-  - "Fritanga"
-  - "Desayuno"
 images:
-  - url: "https://im.ge/i/arepa-huevo-1.AbC456"
-    description: "Arepa de huevo inflada y dorada (Luruaco style)"
-sources:
-  - name: "Festival de la Arepa de Huevo"
-    url: "https://luruaco.gov.co"
-license: "MIT"
-description: "La ingeniería hecha arepa. El único plato del mundo donde se introduce un huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito depende de la termodinámica del vapor para crear la cavidad interna ('la cama del huevo')."
----## Arepa de Huevo
+  - url: 'https://im.ge/i/arepa-huevo-1.AbC456'
+    description: Arepa de huevo inflada y dorada (Luruaco style)
+description: >-
+  La ingeniería hecha arepa. El único plato del mundo donde se introduce un
+  huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito
+  depende de la termodinámica del vapor para crear la cavidad interna ('la cama
+  del huevo').
+---
+
+## Arepa de Huevo
 
 La Arepa de Huevo es uno de los íconos de la gastronomía costeña colombiana, especialmente popular en Barranquilla y Cartagena. Es una arepa de maíz frita, rellena con huevo y, a veces, carne, crujiente por fuera y suave por dentro. Ideal para desayunos, meriendas o como pasaboca en celebraciones.
 

@@ -1,50 +1,58 @@
 ---
-title: "Chicken Katsu Curry"
-region: "Osaka"
+title: Chicken Katsu Curry
+region: Osaka
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Yoshoku"
+  - Plato fuerte
+  - Yoshoku
+difficulty: ★★☆☆☆
+prep_time: 25 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Pechuga de pollo
+  - Panko (pan rallado japonés)
+  - Arroz japonés
+  - Pastilla de curry japonés
+  - Zanahoria
+  - Patata
+  - Cebolla
 sensory:
   flavor:
-    - "Curry especiado dulce"
-    - "Umami de caldo"
-    - "Salado"
+    - Curry especiado dulce
+    - Umami de caldo
+    - Salado
   texture:
-    - "Pollo empanado crujiente"
-    - "Salsa densa y tersa"
+    - Pollo empanado crujiente
+    - Salsa densa y tersa
   aroma:
-    - "Polvo de curry japonés"
-    - "Panko crujiente"
-  presentation: "Filete de pollo empanado en panko sobre arroz blanco, cubierto parcialmente con salsa de curry espeso."
-main_ingredients:
-  - "Pechuga de pollo"
-  - "Panko (pan rallado japonés)"
-  - "Arroz japonés"
-  - "Pastilla de curry japonés"
-  - "Zanahoria"
-  - "Patata"
-  - "Cebolla"
-difficulty: "★★☆☆☆"
-prep_time: "25 minutos"
-cook_time: "30 minutos"
-servings: 4
+    - Polvo de curry japonés
+    - Panko crujiente
+  presentation: >-
+    Filete de pollo empanado en panko sobre arroz blanco, cubierto parcialmente
+    con salsa de curry espeso.
 nutrition:
   calories: 780
   macros:
-    protein_g: 34.0
-    fat_g: 28.0
-    carbs_g: 96.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 34
+    fat_g: 28
+    carbs_g: 96
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Chicken Katsu Curry tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Chicken Katsu Curry combina un crujiente filete de pollo empanado en panko con una salsa de curry japonesa espesa, suave y reconfortante."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Chicken Katsu Curry tradicional
+description: >-
+  El Chicken Katsu Curry combina un crujiente filete de pollo empanado en panko
+  con una salsa de curry japonesa espesa, suave y reconfortante.
 ---
 
 # Chicken Katsu Curry

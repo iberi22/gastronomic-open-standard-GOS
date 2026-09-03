@@ -1,52 +1,11 @@
 ---
 title: "Enchiladas Verdes"
-region: "Centro de México"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Picante medio"
-    - "Ácido (tomatillo)"
-    - "Salado"
-  texture:
-    - "Jugoso"
-    - "Suave"
-    - "Queso fundido"
-  aroma:
-    - "Tomatillo cocido"
-    - "Cilantro"
-    - "Tortilla frita"
-  presentation: "Tortillas rellenas de pollo gratinadas con queso fresco, crema agria y cebolla en rodajas."
-main_ingredients:
-  - "Tortillas de maíz"
-  - "Pollo deshebrado"
-  - "Tomatillos (tomate verde)"
-  - "Chile jalapeño"
-  - "Crema agria"
-  - "Queso fresco"
-  - "Cilantro"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "25 minutos"
 cook_time: "20 minutos"
-servings: 4
-nutrition:
-  calories: 520
-  macros:
-    protein_g: 28.0
-    fat_g: 24.0
-    carbs_g: 48.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Enchiladas Verdes tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Las Enchiladas Verdes son tortillas de maíz ligeramente fritas, rellenas de pollo y bañadas en una salsa tibia de tomatillo y chiles verdes."
+servings: "4"
 ---
 
 # Enchiladas Verdes

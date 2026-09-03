@@ -1,56 +1,11 @@
 ---
 title: "Pastelitos Criollos Argentinos"
-region: "Pampeana / Nacional"
-categories:
-  - "Postre"
-  - "Dulce"
-  - "Tradicional"
-  - "Fritura"
-sensory:
-  flavor:
-    - "Muy dulce"
-    - "Frutal denso"
-    - "Grasoso agradable"
-  texture:
-    - "Masa hojaldrada crujiente"
-    - "Blando interior"
-    - "Almibarado"
-  aroma:
-    - "Masa frita caliente"
-    - "Membrillo caramelizado"
-    - "Almíbar de limón"
-  presentation: "Se sirven fríos o templados, recién fritos, pintados generosamente con almíbar brillante y espolvoreados con granas o chispas de azúcar de colores en su centro."
-main_ingredients:
-  - "Harina de trigo"
-  - "Mantequilla o grasa de cerdo"
-  - "Dulce de membrillo o dulce de batata"
-  - "Azúcar granulada"
-  - "Aceite vegetal o manteca de freír"
+region: "Argentina"
+categories: ["Plato"]
 difficulty: "★★★★☆"
 prep_time: "1 hora"
 cook_time: "20 minutos"
-servings: 8
-nutrition:
-  calories: 410
-  macros:
-    protein_g: 5
-    fat_g: 19
-    carbs_g: 56
-tags:
-  - "Argentina"
-  - "Pastelitos"
-  - "Hojaldre"
-  - "Membrillo"
-  - "Fritura"
-  - "Patrias"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Pastelitos criollos argentinos de hojaldre fritos rellenos de membrillo"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "Los Pastelitos Criollos son una delicia dulce tradicional argentina de masa hojaldrada frita. Consisten en un relleno dulce de membrillo o batata encerrado entre dos láminas cuadradas de masa de hojaldre casera dispuestas en forma de estrella, fritas de manera especial para que las capas se abran en forma de pétalos, y bañadas en almíbar brillante."
+servings: "8"
 ---
 
 # Pastelitos Criollos Argentinos

@@ -1,58 +1,14 @@
 ---
 title: "Cocido Boyacense"
-region: "Andina"
-categories:
-  - "Plato Fuerte"
-  - "Sopa"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Terroso (Tubérculos)"
-    - "Ácido (Ibias)"
-    - "Ahumado (Longaniza)"
-    - "Dulce (Habas/Guatila)"
-  texture:
-    - "Compleja (múltiples almidones)"
-    - "Harinoso"
-    - "Suave"
-  aroma:
-    - "Raíces andinas"
-    - "Cerdo"
-    - "Hierbas de páramo"
-  presentation: "Cazuela de barro monumental. Los tubérculos deben servirse enteros o en trozos grandes para identificarlos. La salsa (el recado) es espesa por la desintegración de la papa criolla."
-main_ingredients:
-  - "Cubios (Tropaeolum tuberosum)"
-  - "Ibias (Oxalis tuberosa)"
-  - "Chuguas (Ullucus tuberosus)"
-  - "Papa sabanera"
-  - "Papa criolla"
-  - "Habas"
-  - "Costilla de cerdo"
-  - "Longaniza"
-  - "Gallina (opcional)"
-difficulty: "Alta"
-prep_time: 60
-cook_time: 180
-servings: 10
-nutrition:
-  calories: 950
-  macros:
-    protein_g: 45
-    fat_g: 35
-    carbs_g: 120
-tags:
-  - "Boyacá"
-  - "Ancestral"
-  - "Tubérculos"
-images:
-  - url: "https://im.ge/i/cocido-1.AbC123"
-    description: "Cocido Boyacense exhibiendo la diversidad de tubérculos andinos"
-sources:
-  - name: "Patrimonio Vivo de Boyacá"
-    url: "https://boyaca.gov.co"
-license: "MIT"
-description: "El plato más biodiverso de los Andes colombianos. Es un estofado prehispánico enriquecido con proteínas europeas. Su valor radica en la preservación de los 'tubérculos perdidos' (cubios, ibias, chuguas), cada uno aportando un perfil químico y de sabor único, desde lo picante hasta lo ácido."
----## Cocido Boyacense
+region: "Colombia"
+categories: ["Cocido_boyacense"]
+difficulty: "★★★★☆"
+prep_time: "60"
+cook_time: "180"
+servings: "10"
+---
+
+## Cocido Boyacense
 
 El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la región andina de Colombia. Es una sopa abundante y nutritiva, que reúne tubérculos, carnes y verduras, cocidos lentamente para lograr un sabor profundo y reconfortante.
 
@@ -107,7 +63,7 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 
 ## 📸 Galería
 
-![Cocido Boyacense](/dishes/colombian/andina/cocido_boyacense/images/1.webp)
+![Cocido Boyacense](./images/1.png)
 
 ---
 

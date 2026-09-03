@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Nacionales"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetas Nacionales y Populares de Colombia
 
 Esta sección reúne las preparaciones más consumidas en todo el país, que no pertenecen a una sola región pero son tendencia en redes y forman parte de la identidad urbana y contemporánea. Aquí encontrarás snacks, comidas rápidas, platos virales y clásicos de la calle colombiana.

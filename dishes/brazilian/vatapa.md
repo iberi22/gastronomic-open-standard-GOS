@@ -1,57 +1,66 @@
 ---
 title: Vatapá Baiano Tradicional
 region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/9605-vatapa.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Acompañamiento
-- Guiso
-- Afrobrasileño
-sensory:
-  flavor:
-  - Salado
-  - Nueces (maní y caju)
-  - Lácteo (coco)
-  - Sutilmente picante
-  texture:
-  - Cremoso
-  - Espeso
-  - Sedoso
-  aroma:
-  - Camarón seco
-  - Coco y dendê
-  - Jengibre fresco
-  presentation: Servido templado en cazuelas de barro o como relleno indispensable del acarajé tradicional baiano.
-main_ingredients:
-- Camarón seco deshidratado
-- Leche de coco
-- Pan de molde (o pan de agua)
-- Cacahuetes (maní) tostados
-- Nueces de la India (anacardos o caju)
-- Aceite de dendê (palma)
+  - Acompañamiento
+  - Guiso
+  - Afrobrasileño
 difficulty: ★★★★☆
 prep_time: 30 minutos
 cook_time: 25 minutos
 servings: 6
+tags:
+  - Camarón
+  - Coco
+  - Maní
+  - Dendê
+  - Bahía
+  - Crema
+main_ingredients:
+  - Camarón seco deshidratado
+  - Leche de coco
+  - Pan de molde (o pan de agua)
+  - Cacahuetes (maní) tostados
+  - Nueces de la India (anacardos o caju)
+  - Aceite de dendê (palma)
+sensory:
+  flavor:
+    - Salado
+    - Nueces (maní y caju)
+    - Lácteo (coco)
+    - Sutilmente picante
+  texture:
+    - Cremoso
+    - Espeso
+    - Sedoso
+  aroma:
+    - Camarón seco
+    - Coco y dendê
+    - Jengibre fresco
+  presentation: >-
+    Servido templado en cazuelas de barro o como relleno indispensable del
+    acarajé tradicional baiano.
 nutrition:
   calories: 450
   macros:
-    protein_g: 12.0
-    fat_g: 32.0
-    carbs_g: 28.0
-tags:
-- Camarón
-- Coco
-- Maní
-- Dendê
-- Bahía
-- Crema
+    protein_g: 12
+    fat_g: 32
+    carbs_g: 28
 images:
-- url: https://images.unsplash.com/photo-1541518763669-27fef04b14ea
-  description: Crema de vatapá servida en vasija con cilantro (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/9605-vatapa.html
-- https://www.panelinha.com.br/receita/Vatapa
-license: MIT
-description: El Vatapá es una cremosa, espesa y aromática pasta de la cocina afrobrasileña, sumamente típica en Bahía. Se prepara licuando pan del día anterior remojado en leche de coco con camarones secos, cacahuetes, nueces de la India tostadas, jengibre y cebolla, cocinándolo todo a fuego lento con el indispensable aceite de dendê.
+  - url: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea'
+    description: Crema de vatapá servida en vasija con cilantro (Unsplash)
+description: >-
+  El Vatapá es una cremosa, espesa y aromática pasta de la cocina afrobrasileña,
+  sumamente típica en Bahía. Se prepara licuando pan del día anterior remojado
+  en leche de coco con camarones secos, cacahuetes, nueces de la India tostadas,
+  jengibre y cebolla, cocinándolo todo a fuego lento con el indispensable aceite
+  de dendê.
 ---
 
 # Vatapá Baiano Tradicional

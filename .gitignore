@@ -28,3 +28,5 @@ site_legacy_20260902/
 test-results/
 playwright-report/
 playwright/.cache/
+
+dishes_backup/

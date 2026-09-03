@@ -1,51 +1,11 @@
 ---
 title: "Guacamole Tradicional"
-region: "Michoacán"
-categories:
-  - "Entrante"
-  - "Dip"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Grado de acidez equilibrado"
-    - "Salado"
-    - "Fresco"
-  texture:
-    - "Cremoso"
-    - "Crujiente (cebolla/totopos)"
-  aroma:
-    - "Aguacate fresco"
-    - "Cilantro"
-    - "Lima"
-  presentation: "Servido en molcajete de piedra volcánica acompañado de totopos de maíz recién fritos."
-main_ingredients:
-  - "Aguacate Hass"
-  - "Cilantro fresco"
-  - "Cebolla morada"
-  - "Chile serrano"
-  - "Jugo de lima"
-  - "Sal de grano"
+region: "México"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "15 minutos"
 cook_time: "0 minutos"
-servings: 4
-nutrition:
-  calories: 250
-  macros:
-    protein_g: 3.0
-    fat_g: 22.0
-    carbs_g: 12.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Guacamole Tradicional tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Guacamole es una salsa/dip ancestral mexicana a base de aguacate machacado en molcajete con chile, cilantro, cebolla y lima."
+servings: "4"
 ---
 
 # Guacamole Tradicional

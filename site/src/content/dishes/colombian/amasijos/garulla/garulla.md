@@ -1,51 +1,11 @@
 ---
 title: "Garulla Soachuna"
-region: "Andina (Soacha / Cundinamarca)"
-categories:
-  - "Amasijo"
-  - "Patrimonio"
-  - "Media Tarde"
-sensory:
-  flavor:
-    - "Maíz Tostado"
-    - "Cuajada"
-    - "Dulce de Panela"
-  texture:
-    - "Costra Dura y Dulce"
-    - "Centro Arenoso-Húmedo"
-    - "Base Tostada"
-  aroma:
-    - "Manteca de Cerdo"
-    - "Hoja de Plátano (si se asó en hoja)"
-    - "Horno de leña"
-  presentation: "Disco rústico irregular, con manchas oscuras en la superficie (quemadito de la cuajada). A veces se sirve sobre un pedazo de hoja de plátano."
-main_ingredients:
-  - "Harina de Maíz Porva"
-  - "Cuajada Fresca"
-  - "Manteca de Cerdo"
-  - "Huevo"
-difficulty: "Alta (Técnica de envoltura y horneado)"
+region: "Colombia"
+categories: ["Garulla"]
+difficulty: "★★★★☆"
 prep_time: "45"
 cook_time: "25"
-servings: 10
-nutrition:
-  calories: 310
-  macros:
-    protein_g: 8
-    fat_g: 15
-    carbs_g: 35
-tags:
-  - "Soacha"
-  - "Picada"
-  - "Tradición"
-images:
-  - url: "https://im.ge/i/garulla-1.AbC999"
-    description: "Garulla tradicional de Soacha con su costra tostada"
-sources:
-  - name: "Patrimonio de Soacha GOS"
-    url: "https://gos.org/amasijos/garulla"
-license: "MIT"
-description: "El tesoro olvidado de Cundinamarca. La Garulla es un híbrido complejo entre una arepa y una almojábana, enriquecida con manteca de cerdo y horneada a alta temperatura para crear una costra protectora única."
+servings: "10"
 ---
 
 # Garulla Soachuna

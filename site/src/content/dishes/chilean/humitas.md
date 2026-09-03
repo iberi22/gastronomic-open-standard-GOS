@@ -1,55 +1,11 @@
 ---
 title: "Humitas Chilenas"
-region: "Central / Valles Agrícolas"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-  - "Maiz"
-sensory:
-  flavor:
-    - "Dulce sutil"
-    - "Salado"
-    - "Herbal"
-  texture:
-    - "Suave"
-    - "Cremosa"
-    - "Pastosa"
-  aroma:
-    - "Maíz tierno"
-    - "Albahaca"
-    - "Manteca caliente"
-  presentation: "Se sirven calientes, envueltas en sus propias chalas (hojas de maíz) amarradas, acompañadas tradicionalmente de una ensalada chilena (tomate picado con cebolla y aceite)."
-main_ingredients:
-  - "Maíz choclo pastelero"
-  - "Manteca de cerdo"
-  - "Cebolla"
-  - "Albahaca fresca"
-  - "Leche entera"
-  - "Hojas de maíz (chalas)"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "40 minutos"
 cook_time: "45 minutos"
-servings: 6
-nutrition:
-  calories: 350
-  macros:
-    protein_g: 8
-    fat_g: 14
-    carbs_g: 48
-tags:
-  - "Chile"
-  - "Maíz"
-  - "Humita"
-  - "Verano"
-  - "Tradicional"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Humitas chilenas calientes envueltas en chalas de maíz"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "Las Humitas son una preparación tradicional chilena de herencia andina, consumida principalmente durante el verano. Consisten en una pasta espesa de maíz choclo fresco molido con albahaca y cebolla frita en manteca, envuelta en hojas tiernas de maíz y hervida en agua con sal."
+servings: "6"
 ---
 
 # Humitas Chilenas

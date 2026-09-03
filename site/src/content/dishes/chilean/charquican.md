@@ -1,58 +1,11 @@
 ---
-title: "Charquicán Chileno"
-region: "Central / Sur"
-categories:
-  - "Plato fuerte"
-  - "Guiso"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Dulce sutil"
-  texture:
-    - "Cremoso"
-    - "Pastoso"
-    - "Troceado"
-  aroma:
-    - "Carne sofrita"
-    - "Orégano"
-    - "Zapallo"
-  presentation: "Se sirve caliente en plato hondo de arcilla, coronado con un huevo frito con la yema líquida y espolvoreado con perejil fresco o cebollín picado."
-main_ingredients:
-  - "Carne de vacuno"
-  - "Papas"
-  - "Zapallo amarillo"
-  - "Maíz en grano"
-  - "Arvejas (guisantes)"
-  - "Cebolla"
-  - "Comino y orégano"
-  - "Huevo"
+title: "CharquicáN Chileno"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "25 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 390
-  macros:
-    protein_g: 22
-    fat_g: 14
-    carbs_g: 44
-tags:
-  - "Chile"
-  - "Guiso"
-  - "Zapallo"
-  - "Papa"
-  - "Huevo"
-  - "Tradición"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Charquicán chileno servido con un huevo frito encima"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "El Charquicán es un guiso tradicional chileno, espeso y colorido, elaborado a base de papas y zapallo amarillo machacados, mezclados con carne de vacuno sofrita, cebolla, condimentos, choclo desgranado y arvejas. Se corona comúnmente con un huevo frito."
+servings: "4"
 ---
 
 # Charquicán Chileno

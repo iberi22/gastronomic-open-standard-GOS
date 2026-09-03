@@ -1,7 +1,11 @@
 ---
-title: "Arroz Con Pollo"
+title: "Arroz Con Pollo Peruano"
 region: "Perú"
 categories: ["Plato"]
+difficulty: "★★★☆☆"
+prep_time: "30 minutos"
+cook_time: "45 minutos"
+servings: "6"
 ---
 
 # Arroz con Pollo Peruano
@@ -62,7 +66,7 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 
 ## 📸 Galería
 
-
+![Arroz con Pollo Peruano](./images/1.jpg)
 
 ---
 

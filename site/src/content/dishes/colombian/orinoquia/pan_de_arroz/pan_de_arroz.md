@@ -1,21 +1,8 @@
 ---
-title: Pan de Arroz
-description: El Pan de Arroz es una delicia tradicional de la Orinoquía colombiana,
-  especialmente popular en los Llanos Orientales. Se elabora con arroz molido, queso
-  llanero y manteca, resultando en un panecillo crujiente por fuera y suave por dentro,
-  perfecto para acompañar desayunos o meriendas.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 2272
-  macros:
-    protein_g: 70.8
-    fat_g: 72.6
-    carbs_g: 326.6
-embedding_version: 1
+title: "Pan De Arroz"
+region: "Colombia"
+categories: ["Pan_de_arroz"]
+difficulty: "★★☆☆☆"
 ---
 
 # Pan de Arroz
@@ -64,7 +51,7 @@ El Pan de Arroz es una delicia tradicional de la Orinoquía colombiana, especial
 
 ## 📸 Galería
 
-![Pan de Arroz Llanero](/dishes/colombian/orinoquia/pan_de_arroz/images/1.webp)
+![Pan de Arroz Llanero](./images/1.png)
 
 ---
 

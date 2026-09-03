@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Pacifica"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetas Emblemáticas de la Región Pacífica de Colombia
 
 Este directorio reúne las 10 recetas más representativas de la región Pacífica, enriquecidas con metodología científica, sensorial y colectiva, siguiendo el estándar del proyecto de cocina latinoamericana.

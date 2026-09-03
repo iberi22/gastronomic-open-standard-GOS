@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Plato"]
+difficulty: "★★☆☆☆"
+---
+
 # 📚 Recetario Regional Colombiano
 
 ¡Bienvenido al gran libro digital de recetas emblemáticas de Colombia! Aquí encontrarás un recorrido sensorial, cultural y científico por las seis regiones gastronómicas del país. Cada sección enlaza a su carpeta regional, donde podrás descubrir las recetas más representativas, enriquecidas con análisis, opiniones, datos nutricionales y fuentes confiables.

@@ -1,55 +1,67 @@
 ---
-title: "Mote de Queso"
-region: "Caribe"
+title: Mote de Queso
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Vegetariano (casi)"
+  - Sopa
+  - Plato Fuerte
+  - Vegetariano (casi)
+difficulty: ★★★☆☆
+prep_time: '30'
+cook_time: '90'
+servings: 8
+tags:
+  - Sucre
+  - Córdoba
+  - Semana Santa
+main_ingredients:
+  - Ñame Espino (Dioscorea rotundata)
+  - Queso Costeño (Duro/Salado)
+  - Suero Costeño
+  - Cebolla Roja
+  - Ajo
+  - Bleo de Chupa (opcional/tradicional)
+  - Jugo de limón (secreto)
 sensory:
   flavor:
-    - "Alcalino (Queso)"
-    - "Umami lácteo"
-    - "Herbal (Bleo/Cilantro)"
+    - Alcalino (Queso)
+    - Umami lácteo
+    - Herbal (Bleo/Cilantro)
   texture:
-    - "Viscoso (Baba de ñame)"
-    - "Sedoso"
-    - "Tropezudo (Queso firme)"
+    - Viscoso (Baba de ñame)
+    - Sedoso
+    - Tropezudo (Queso firme)
   aroma:
-    - "Leche fermentada"
-    - "Sofrito de ajo"
-    - "Tierra dulce (Ñame)"
-  presentation: "Cazuela rebosante. El caldo debe ser blanco y espeso, con cubos de queso visibles y un 'remolino' de suero costeño encima. Acompañado de arroz blanco y aguacate."
-main_ingredients:
-  - "Ñame Espino (Dioscorea rotundata)"
-  - "Queso Costeño (Duro/Salado)"
-  - "Suero Costeño"
-  - "Cebolla Roja"
-  - "Ajo"
-  - "Bleo de Chupa (opcional/tradicional)"
-  - "Jugo de limón (secreto)"
-difficulty: "Media"
-prep_time: "30"
-cook_time: "90"
-servings: 8
+    - Leche fermentada
+    - Sofrito de ajo
+    - Tierra dulce (Ñame)
+  presentation: >-
+    Cazuela rebosante. El caldo debe ser blanco y espeso, con cubos de queso
+    visibles y un 'remolino' de suero costeño encima. Acompañado de arroz blanco
+    y aguacate.
 nutrition:
   calories: 450
   macros:
     protein_g: 18
     fat_g: 22
     carbs_g: 48
-tags:
-  - "Sucre"
-  - "Córdoba"
-  - "Semana Santa"
 images:
-  - url: "https://im.ge/i/mote-1.AbC789"
-    description: "Mote de Queso espeso con suero y sofrito"
-sources:
-  - name: "Festival del Mote de Queso"
-    url: "https://sincelejo.gov.co"
-license: "MIT"
-description: "El emblema de la sabana caribeña. Una sopa que desafía la física: utiliza los mucílagos del ñame espino para crear una suspensión coloidal estable de queso y suero, sin cortarse. Es un estudio de la interacción entre almidones y ácidos lácteos."
----## Mote de Queso
+  - url: 'https://im.ge/i/mote-1.AbC789'
+    description: Mote de Queso espeso con suero y sofrito
+description: >-
+  El emblema de la sabana caribeña. Una sopa que desafía la física: utiliza los
+  mucílagos del ñame espino para crear una suspensión coloidal estable de queso
+  y suero, sin cortarse. Es un estudio de la interacción entre almidones y
+  ácidos lácteos.
+---
+
+## Mote de Queso
 
 El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especialmente popular en Córdoba y Sucre. Se prepara con ñame, queso costeño y suero, resultando en un plato reconfortante, salado y ligeramente ácido, ideal para celebraciones y almuerzos familiares.
 

@@ -1,51 +1,11 @@
 ---
-title: "Sopa de Cangrejo (Crab Soup)"
-region: "Insular"
-categories:
-  - "Sopa"
-  - "Festivo"
-  - "Nutritivo"
-sensory:
-  flavor:
-    - "Umami Terroso"
-    - "Cremoso de Coco"
-    - "Dulce de Crustáceo"
-  texture:
-    - "Caldo Denso / Viscoso"
-    - "Sólidos Tiernos (Tubérculos)"
-    - "Crocante (Patas de Cangrejo)"
-  aroma:
-    - "Caparazón tostado"
-    - "Albahaca fresca"
-    - "Salitre dulce"
-  presentation: "Se sirve en plato hondo amplio. El cangrejo debe estar partido en piezas que permitan al comensal extraer la carne manualmente. El caldo debe tener un tono marfil con manchas naranjas de la grasa del cangrejo."
-main_ingredients:
-  - "Cangrejo Negro o Azul (*Gecarcinus ruricola*)"
-  - "Leche de Coco espesa"
-  - "Pigtail (Rabo de cerdo) - Opcional para fondo"
-  - "Albahaca salvaje y Tomillo"
-difficulty: "Media"
+title: "Sopa De Cangrejo (Crab Soup)"
+region: "Colombia"
+categories: ["Sopa_de_cangrejo"]
+difficulty: "★★★☆☆"
 prep_time: "40"
 cook_time: "60"
-servings: 6
-nutrition:
-  calories: 410
-  macros:
-    protein_g: 22
-    fat_g: 18
-    carbs_g: 45
-tags:
-  - "San Andrés"
-  - "Ancestral"
-  - "Fondo de Mar"
-images:
-  - url: "https://im.ge/i/crabsoup-1.AbC003"
-    description: "Sopa de cangrejo tradicional con abundantes tubérculos"
-sources:
-  - name: "Recetario Isleño GOS"
-    url: "https://gos.org/insular/crabsoup"
-license: "MIT"
-description: "La energía del mar en un plato. La Sopa de Cangrejo isleña utiliza el caparazón como catalizador de sabor, extrayendo calcio y quitina para crear un fondo de complejidad umami inigualable, suavizado por la leche de coco."
+servings: "6"
 ---
 
 # Sopa de Cangrejo (Crab Soup)
@@ -99,7 +59,7 @@ La Sopa de Cangrejo es uno de los platos más emblemáticos de San Andrés y Pro
 
 ## 📸 Galería
 
-![Sopa de cangrejo cremosa](/dishes/colombian/insular/sopa_de_cangrejo/images/1.webp)
+![Sopa de cangrejo cremosa](./images/1.png)
 
 ---
 

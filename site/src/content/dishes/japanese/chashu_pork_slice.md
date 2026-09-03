@@ -1,49 +1,11 @@
 ---
-title: "Chashu de Cerdo para Ramen"
-region: "Fukuoka"
-categories:
-  - "Acompañamiento"
-  - "Ramen Topping"
-sensory:
-  flavor:
-    - "Umami dulce salado profundo"
-    - "Ajo y jengibre"
-  texture:
-    - "Panceta melosa deshecha y mantequillosa"
-  aroma:
-    - "Panceta enrollada atada"
-    - "Salsa de soja y sake reducidos"
-  presentation: "Rodajas circulares de panceta enrollada caramelizadas superficialmente con soplete."
-main_ingredients:
-  - "Panceta de cerdo con piel"
-  - "Salsa de soja"
-  - "Sake"
-  - "Mirin"
-  - "Azúcar"
-  - "Jengibre en rodajas"
-  - "Ajo"
-  - "Verdeo"
+title: "Chashu De Cerdo Para Ramen"
+region: "Japón"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "30 minutos"
 cook_time: "2 horas 30 minutos"
-servings: 6
-nutrition:
-  calories: 740
-  macros:
-    protein_g: 22.0
-    fat_g: 68.0
-    carbs_g: 10.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Chashu de Cerdo para Ramen tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Chashu es el infaltable topping de panceta de cerdo enrollada y guisada a fuego lento en un adobo concentrado de soja y sake hasta quedar fundente."
+servings: "6"
 ---
 
 # Chashu de Cerdo para Ramen

@@ -1,52 +1,11 @@
 ---
-title: "Arroz Atollado con Mariscos"
-region: "Pacífica"
-categories:
-  - "Plato Fuerte"
-  - "Arroz"
-  - "Cremoso"
-sensory:
-  flavor:
-    - "Umami Marino Intenso"
-    - "Dulzura de Coco"
-    - "Salinidad Balanceada"
-  texture:
-    - "Atollado (Amilosa suelta)"
-    - "Cremoso"
-    - "Masticable (Piangua/Calamar)"
-  aroma:
-    - "Mar Profundo"
-    - "Cimarrón y Albahaca"
-    - "Grano cocido"
-  presentation: "Servido en caldero o cazuela de barro. El arroz no debe estar suelto, sino formando una masa melosa y brillante. Se corona con pianguas enteras y langostinos si están disponibles."
-main_ingredients:
-  - "Arroz Blanco (Grano corto/medio preferido para almidón)"
-  - "Mixtura de Mariscos (Camarón, Calamar, Pescado)"
-  - "Piangua (*Anadara tuberculosa*)"
-  - "Leche de Coco (Matrices grasas)"
-  - "Refrito de la Costa (Cebolla, Pimentón, Achiote)"
-difficulty: "Alta"
+title: "Arroz Atollado Con Mariscos"
+region: "Colombia"
+categories: ["Arroz_atollado_con_mariscos"]
+difficulty: "★★★★☆"
 prep_time: "35"
 cook_time: "45"
-servings: 8
-nutrition:
-  calories: 520
-  macros:
-    protein_g: 22
-    fat_g: 18
-    carbs_g: 65
-tags:
-  - "Tumaco"
-  - "Guapi"
-  - "Meloso"
-images:
-  - url: "https://im.ge/i/atollado-mariscos-1.AbC159"
-    description: "Arroz atollado con mariscos en su punto de cremosidad"
-sources:
-  - name: "Culinaria del Litoral"
-    url: "https://gos.org/pacifico/atollado"
-license: "MIT"
-description: "La respuesta del Pacífico al risotto. El 'Atollado' es un estado físico del arroz donde se busca la máxima liberación de almidón para crear una matriz melosa que encapsula los jugos marinos y la grasa del coco."
+servings: "8"
 ---
 
 ## Arroz Atollado con Mariscos

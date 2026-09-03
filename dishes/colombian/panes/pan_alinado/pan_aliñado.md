@@ -1,54 +1,56 @@
 ---
 title: Pan Aliñado Colombiano
 region: Nacional
+language: es
+license: MIT
+source:
+  name: elgourmet.com
+  url: 'https://elgourmet.com/recetas/pan-ali%C3%B1ado/'
+  date_retrieved: '2026-09-03'
 categories:
-- Pan
-- Desayuno
-- Merienda
-sensory:
-  flavor:
-  - Dulce
-  - Lácteo
-  - Especiado
-  texture:
-  - Suave
-  - Esponjoso
-  aroma:
-  - Mantequilla
-  - Canela
-  - Vainilla
-  presentation: Se sirve en bollos, ideal para acompañar café, chocolate o jugos.
-main_ingredients:
-- Harina de trigo
-- Mantequilla
-- Huevo
+  - Pan
+  - Desayuno
+  - Merienda
 difficulty: ★★☆☆☆
 prep_time: 2 horas (incluye levado)
 cook_time: 20-25 minutos
 servings: 10
-images:
-- url: ./images/pan_aliñado.png
-  description: Pan aliñado dorado y esponjoso (Generada por AI)
-sources:
-- https://elgourmet.com/recetas/pan-ali%C3%B1ado/
-- https://www.youtube.com/results?search_query=pan+aliñado+colombiano
-- https://www.tiktok.com/tag/panaliñado
-license: MIT
 tags:
-- colombiano
-- tradicional
-- pan
-- aliñado
-- open source
-description: El pan aliñado es un pan suave, aromático y ligeramente dulce, típico
-  de panaderías colombianas. Se caracteriza por su aroma a mantequilla y especias,
-  y es tendencia por su versatilidad en desayunos y meriendas.
+  - colombiano
+  - tradicional
+  - pan
+  - aliñado
+  - open source
+main_ingredients:
+  - Harina de trigo
+  - Mantequilla
+  - Huevo
+sensory:
+  flavor:
+    - Dulce
+    - Lácteo
+    - Especiado
+  texture:
+    - Suave
+    - Esponjoso
+  aroma:
+    - Mantequilla
+    - Canela
+    - Vainilla
+  presentation: 'Se sirve en bollos, ideal para acompañar café, chocolate o jugos.'
 nutrition:
   calories: 1185
   macros:
     protein_g: 21.7
-    fat_g: 84.0
+    fat_g: 84
     carbs_g: 91.6
+images:
+  - url: ./images/pan_aliñado.png
+    description: Pan aliñado dorado y esponjoso (Generada por AI)
+description: >-
+  El pan aliñado es un pan suave, aromático y ligeramente dulce, típico de
+  panaderías colombianas. Se caracteriza por su aroma a mantequilla y especias,
+  y es tendencia por su versatilidad en desayunos y meriendas.
 ---
 
 ## Pan Aliñado Colombiano

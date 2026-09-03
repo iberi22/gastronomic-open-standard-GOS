@@ -1,60 +1,11 @@
 ---
 title: "Carbonada Criolla"
-region: "Pampeana / Noroeste"
-categories:
-  - "Plato fuerte"
-  - "Guiso"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Dulce natural"
-    - "Umami"
-    - "Especiado sutil"
-  texture:
-    - "Espeso"
-    - "Suave"
-    - "Troceado tierno"
-  aroma:
-    - "Carne de vacuno sofrita"
-    - "Zapallo horneado"
-    - "Frutas dulces"
-  presentation: "Se sirve de manera espectacular dentro de un zapallo criollo entero previamente horneado, abriendo la tapa del zapallo en la mesa para servir el guiso humeante."
-main_ingredients:
-  - "Un zapallo criollo redondo entero (tipo plomo u hokkaido)"
-  - "Carne de vacuno (lomo o nalga)"
-  - "Zapallo amarillo en cubos"
-  - "Papas"
-  - "Choclo en rodajas"
-  - "Duraznos deshidratados (orejones)"
-  - "Cebolla"
-  - "Vino tinto"
+region: "Argentina"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "40 minutos"
 cook_time: "1 hora y 10 minutos"
-servings: 6
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 28
-    fat_g: 14
-    carbs_g: 58
-tags:
-  - "Argentina"
-  - "Guiso"
-  - "Zapallo"
-  - "Carne"
-  - "Duraznos"
-  - "Invierno"
-  - "Presentación"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Carbonada criolla argentina servida dentro de un zapallo entero horneado"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "La Carbonada Criolla es un guiso tradicional argentino, sabroso y sumamente pintoresco. Combina carne de vacuno picada con papas, zapallo amarillo, granos de maíz y trozos de orejones de durazno dulce, cocinado lentamente y servido de forma tradicional dentro de la corteza de un zapallo criollo grande previamente horneado."
+servings: "6"
 ---
 
 # Carbonada Criolla

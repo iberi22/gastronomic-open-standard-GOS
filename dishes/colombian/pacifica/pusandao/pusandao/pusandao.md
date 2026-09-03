@@ -1,52 +1,62 @@
 ---
-title: "Pusandao (Sopa de Identidad)"
-region: "Pacífica / Nariño"
+title: Pusandao (Sopa de Identidad)
+region: Pacífica / Nariño
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Sopa-Gasto"
-  - "Ancestral"
+  - Plato Fuerte
+  - Sopa-Gasto
+  - Ancestral
+difficulty: ★★★★☆
+prep_time: '30'
+cook_time: '60'
+servings: 8
+tags:
+  - Barbacoas
+  - Tumaco
+  - Identidad
+main_ingredients:
+  - Carne Serrana (Res salada y oreada)
+  - Pescado Blanco (Pargo/Róbalo)
+  - Leche de Coco (Matrices grasas)
+  - 'Papa, Yuca y Plátano'
+  - Huevo cocido (tradicional en algunas zonas)
 sensory:
   flavor:
-    - "Salinidad Compleja (Cárnica/Marida)"
-    - "Lácteo (Coco)"
-    - "Dulzura de Raíces"
+    - Salinidad Compleja (Cárnica/Marida)
+    - Lácteo (Coco)
+    - Dulzura de Raíces
   texture:
-    - "Escamosa (Pescado)"
-    - "Fibrosa (Carne Serrana)"
-    - "Untuosa (Caldo de Coco)"
+    - Escamosa (Pescado)
+    - Fibrosa (Carne Serrana)
+    - Untuosa (Caldo de Coco)
   aroma:
-    - "Coco hervido"
-    - "Cimarrón"
-    - "Serranía (Madera)"
-  presentation: "Plato hondo generoso. El pescado se sirve en trozos grandes junto a una pieza de carne salada serrana. El caldo es opaco, de un color blanco-cremoso intenso."
-main_ingredients:
-  - "Carne Serrana (Res salada y oreada)"
-  - "Pescado Blanco (Pargo/Róbalo)"
-  - "Leche de Coco (Matrices grasas)"
-  - "Papa, Yuca y Plátano"
-  - "Huevo cocido (tradicional en algunas zonas)"
-difficulty: "Alta"
-prep_time: "30"
-cook_time: "60"
-servings: 8
+    - Coco hervido
+    - Cimarrón
+    - Serranía (Madera)
+  presentation: >-
+    Plato hondo generoso. El pescado se sirve en trozos grandes junto a una
+    pieza de carne salada serrana. El caldo es opaco, de un color blanco-cremoso
+    intenso.
 nutrition:
   calories: 480
   macros:
     protein_g: 35
     fat_g: 22
     carbs_g: 40
-tags:
-  - "Barbacoas"
-  - "Tumaco"
-  - "Identidad"
 images:
-  - url: "https://im.ge/i/pusandao-1.AbC357"
-    description: "Pusandao tradicional con carne serrana y pescado"
-sources:
-  - name: "Cocinas de la Diáspora"
-    url: "https://gos.org/pacifico/pusandao"
-license: "MIT"
-description: "El encuentro de dos mundos: la serranía (carne de res oreada) y el litoral (pescado fresco). Una sopa de alta densidad energética y proteica, donde el coco actúa como mediador de sabores entre la sal extrema de la carne y la frescura del mar."
+  - url: 'https://im.ge/i/pusandao-1.AbC357'
+    description: Pusandao tradicional con carne serrana y pescado
+description: >-
+  El encuentro de dos mundos: la serranía (carne de res oreada) y el litoral
+  (pescado fresco). Una sopa de alta densidad energética y proteica, donde el
+  coco actúa como mediador de sabores entre la sal extrema de la carne y la
+  frescura del mar.
 ---
 
 ## Pusandao (Sopa de Pescado)

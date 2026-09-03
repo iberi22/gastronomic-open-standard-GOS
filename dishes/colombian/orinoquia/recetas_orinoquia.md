@@ -1,18 +1,23 @@
 ---
 title: Recetas de la Orinoquía
-description: La gastronomía de la Orinoquía colombiana es un reflejo de su cultura
-  llanera, con una fuerte presencia de carnes a la parrilla y productos locales.
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 nutrition:
   calories: 0
   macros:
     protein_g: 0
     fat_g: 0
     carbs_g: 0
+description: >-
+  La gastronomía de la Orinoquía colombiana es un reflejo de su cultura llanera,
+  con una fuerte presencia de carnes a la parrilla y productos locales.
+media: []
 embedding_version: 1
 ---
 

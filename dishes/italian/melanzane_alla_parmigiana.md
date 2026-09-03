@@ -1,49 +1,57 @@
 ---
-title: "Parmigiana di Melanzane"
-region: "Campania / Sicilia"
+title: Parmigiana di Melanzane
+region: Campania / Sicilia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Vegetariano"
+  - Plato fuerte
+  - Vegetariano
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 40 minutos
+servings: 6
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Berenjenas grandes
+  - Tomate triturado
+  - Mozzarella de búfala
+  - Parmigiano Reggiano
+  - Albahaca fresca
+  - Harina
+  - Aceite de oliva para freír
 sensory:
   flavor:
-    - "Berenjena frita terrosa"
-    - "Salsa de tomate dulce"
-    - "Queso derretido lácteo"
+    - Berenjena frita terrosa
+    - Salsa de tomate dulce
+    - Queso derretido lácteo
   texture:
-    - "Melosa y tierna que se deshace en boca"
+    - Melosa y tierna que se deshace en boca
   aroma:
-    - "Berenjenas fritas previo horneado"
-    - "Mozzarella y Parmigiano"
-  presentation: "Pastel horneado de capas de berenjena dorada con salsa de tomate, mozzarella y albahaca."
-main_ingredients:
-  - "Berenjenas grandes"
-  - "Tomate triturado"
-  - "Mozzarella de búfala"
-  - "Parmigiano Reggiano"
-  - "Albahaca fresca"
-  - "Harina"
-  - "Aceite de oliva para freír"
-difficulty: "★★★☆☆"
-prep_time: "40 minutos"
-cook_time: "40 minutos"
-servings: 6
+    - Berenjenas fritas previo horneado
+    - Mozzarella y Parmigiano
+  presentation: >-
+    Pastel horneado de capas de berenjena dorada con salsa de tomate, mozzarella
+    y albahaca.
 nutrition:
   calories: 520
   macros:
-    protein_g: 20.0
-    fat_g: 34.0
-    carbs_g: 32.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 20
+    fat_g: 34
+    carbs_g: 32
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Parmigiana di Melanzane tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La Parmigiana di Melanzane es un pastel del sur de Italia elaborado con capas de berenjenas fritas, salsa de tomate casera, albahaca y abundante mozzarella."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Parmigiana di Melanzane tradicional
+description: >-
+  La Parmigiana di Melanzane es un pastel del sur de Italia elaborado con capas
+  de berenjenas fritas, salsa de tomate casera, albahaca y abundante mozzarella.
 ---
 
 # Parmigiana di Melanzane

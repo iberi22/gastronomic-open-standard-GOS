@@ -1,50 +1,11 @@
 ---
-title: Avena Colombiana (Bebida Fría)
-region: Nacional
-categories:
-- Bebida fría
-- Desayuno
-- Merienda
-sensory:
-  flavor:
-  - Dulce
-  - Cremoso
-  texture:
-  - Cremosa
-  - Espesa
-  aroma:
-  - Canela
-  - Vainilla
-  presentation: Se sirve en vaso alto, bien fría, ideal para refrescar y nutrir. Muy
-    popular en colegios y hogares.
-main_ingredients:
-- Avena en hojuelas
-- Leche
-- Canela
-- Azúcar
-difficulty: ★☆☆☆☆
-prep_time: 20 minutos
-cook_time: 15 minutos
-servings: 4
-images:
-- url: https://pixabay.com/es/photos/avena-bebida-colombia-6146282/
-  description: Vaso de avena fría colombiana (Pixabay)
-- url: https://unsplash.com/s/photos/avena-colombiana
-  description: Variaciones de avena fría en Unsplash
-sources:
-- https://elgourmet.com/recetas/avena/
-- https://www.youtube.com/results?search_query=avena+fria+colombiana
-- https://www.tiktok.com/tag/avenafria
-license: MIT
-description: La avena es una bebida refrescante y cremosa, tradicional en hogares
-  y ventas callejeras de Colombia. Se prepara con avena, leche, canela y azúcar, y
-  es tendencia por su sabor suave y su aporte nutricional.
-nutrition:
-  calories: 838
-  macros:
-    protein_g: 32.0
-    fat_g: 33.0
-    carbs_g: 106.8
+title: "Avena Colombiana (Bebida FríA)"
+region: "Colombia"
+categories: ["Avena"]
+difficulty: "★☆☆☆☆"
+prep_time: "20 minutos"
+cook_time: "15 minutos"
+servings: "4"
 ---
 
 
@@ -81,7 +42,7 @@ La avena es una bebida refrescante y cremosa, tradicional en hogares y ventas ca
 
 ## Galería
 
-![Avena fría cremosa](/dishes/colombian/bebidas/avena/images/1.webp)
+![Avena fría cremosa](./images/1.png)
 
 ## Análisis Sensorial y de Uso
 

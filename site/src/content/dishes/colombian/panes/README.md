@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Panes"]
+difficulty: "★★☆☆☆"
+---
+
 # 🍞 Panes Típicos Colombianos
 
 Selección de los panes y masas más representativos de Colombia, ideales para desayunos, onces y acompañamientos.

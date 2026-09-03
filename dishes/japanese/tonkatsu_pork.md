@@ -1,49 +1,57 @@
 ---
-title: "Tonkatsu de Cerdo"
-region: "Tokyo"
+title: Tonkatsu de Cerdo
+region: Tokyo
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Yoshoku"
+  - Plato fuerte
+  - Yoshoku
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 2
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Lomo o solomillo de cerdo
+  - Panko japonés
+  - Harina
+  - Huevo
+  - Col blanca rallada finísima
+  - Salsa Tonkatsu
+  - Mostaza Karashi
 sensory:
   flavor:
-    - "Umami de cerdo jugoso"
-    - "Dulce ácido de salsa tonkatsu"
+    - Umami de cerdo jugoso
+    - Dulce ácido de salsa tonkatsu
   texture:
-    - "Empanado hiper crujiente de panko"
-    - "Carne tierna"
+    - Empanado hiper crujiente de panko
+    - Carne tierna
   aroma:
-    - "Panko dorado"
-    - "Salsa tonkatsu especiada"
-  presentation: "Chuleta gruesa de cerdo empanada y cortada en tiras, servida con col fina picada y mostaza karashi."
-main_ingredients:
-  - "Lomo o solomillo de cerdo"
-  - "Panko japonés"
-  - "Harina"
-  - "Huevo"
-  - "Col blanca rallada finísima"
-  - "Salsa Tonkatsu"
-  - "Mostaza Karashi"
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "15 minutos"
-servings: 2
+    - Panko dorado
+    - Salsa tonkatsu especiada
+  presentation: >-
+    Chuleta gruesa de cerdo empanada y cortada en tiras, servida con col fina
+    picada y mostaza karashi.
 nutrition:
   calories: 620
   macros:
-    protein_g: 36.0
-    fat_g: 32.0
-    carbs_g: 45.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 36
+    fat_g: 32
+    carbs_g: 45
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Tonkatsu de Cerdo tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Tonkatsu es una chuleta gruesa de cerdo rebozada en copos de panko crujientes y frita a la perfección, servida con abundante col rallada."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Tonkatsu de Cerdo tradicional
+description: >-
+  El Tonkatsu es una chuleta gruesa de cerdo rebozada en copos de panko
+  crujientes y frita a la perfección, servida con abundante col rallada.
 ---
 
 # Tonkatsu de Cerdo

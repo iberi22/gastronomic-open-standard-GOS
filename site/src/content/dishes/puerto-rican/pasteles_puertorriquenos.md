@@ -1,57 +1,11 @@
 ---
-title: Pasteles Puertorriqueños de Masa
-region: Puerto Rico
-categories:
-- Plato fuerte
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de cerdo
-  - Herbal (recaito)
-  - Achiote y oliva
-  texture:
-  - Suave (masa blanda húmeda)
-  - Desmenuzado (cerdo guisado)
-  aroma:
-  - Hoja de plátano hervida
-  - Cerdo sofrito con sofrito
-  - Achiote y masa
-  presentation: Servidos calientes desenvueltos sobre un plato plano, de forma rectangular perfecta con la superficie de la masa de un color naranja-amarillo brillante, decorados con aceitunas verdes y pimientos.
-main_ingredients:
-- Guineos verdes (bananas verdes)
-- Yautía blanca
-- Aceite de achiote
-- Carne de cerdo (paleta)
-- Sofrito puertorriqueño (recaito)
-- Hojas de plátano
-- Hilo de cocina (para amarrar)
-difficulty: ★★★★★
-prep_time: 1 hora 30 minutos
-cook_time: 1 hora
-servings: 8
-nutrition:
-  calories: 490
-  macros:
-    protein_g: 24.0
-    fat_g: 28.0
-    carbs_g: 42.0
-tags:
-- Envoltura
-- Cerdo
-- Guineo verde
-- Achiote
-- Hoja de plátano
-- Puerto Rico
-- Navidad
-images:
-- url: https://images.unsplash.com/photo-1585503415901-274e303bc869
-  description: Pastel puertorriqueño de masa desenvuelto caliente en plato (Unsplash)
-sources:
-- https://www.elboricua.com/pasteles.html
-- https://www.quericavida.com/recetas/pasteles-puertorriquenos/
-license: MIT
-description: Los Pasteles de Masa son el plato tradicional de Navidad más sagrado y complejo de Puerto Rico. Consisten en una masa elaborada rallando finamente guineos verdes y yautía blanca mezclada con aceite de achiote para darle suavidad y color, rellena de un guiso rico de cerdo sofrito, envuelto herméticamente en hojas de plátano soasadas y hervido en agua con sal.
+title: "Pasteles PuertorriqueñOs De Masa"
+region: "Puerto Rico"
+categories: ["Plato"]
+difficulty: "★★★★★"
+prep_time: "1 hora 30 minutos"
+cook_time: "1 hora"
+servings: "8"
 ---
 
 # Pasteles Puertorriqueños de Masa
@@ -112,7 +66,7 @@ Los Pasteles de Masa son el alma de la Navidad en Puerto Rico. No se preparan de
 
 ## 📸 Galería
 
-![Pastel de masa navideño boricua recién servido desenvuelto](/dishes/puerto-rican/images/pasteles_1.webp)
+![Pastel de masa navideño boricua recién servido desenvuelto](./images/pasteles_1.jpg)
 
 ---
 

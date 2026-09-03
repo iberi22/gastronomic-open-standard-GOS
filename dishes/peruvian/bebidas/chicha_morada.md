@@ -1,10 +1,33 @@
 ---
 title: Chicha Morada
 region: Sierra/Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Bebida
   - Tradicional
   - Refrescante
+difficulty: ★☆☆☆☆
+prep_time: 15 minutos
+cook_time: 45 minutos
+servings: 8
+tags:
+  - Chicha
+  - Morada
+  - Bebida
+  - Maiz
+main_ingredients:
+  - Maíz morado entero (mazorcas)
+  - Cáscara de piña madura
+  - Membrillo o manzana de agua
+  - Canela en rama
+  - Clavo de olor entero
+  - Limón sutil (lima verde)
 sensory:
   flavor:
     - Dulce-Ácido (Maíz morado y limón)
@@ -17,39 +40,24 @@ sensory:
     - Canela caliente y clavo de olor
     - Cáscara de piña hervida
     - Cítrico fresco de limón
-  presentation: Servida bien helada en jarras transparentes de vidrio, de un color púrpura oscuro intenso y brillante, decorada con cubitos pequeños de manzana roja y piña en el fondo del vaso.
-main_ingredients:
-  - Maíz morado entero (mazorcas)
-  - Cáscara de piña madura
-  - Membrillo o manzana de agua
-  - Canela en rama
-  - Clavo de olor entero
-  - Limón sutil (lima verde)
-difficulty: ★☆☆☆☆
-prep_time: 15 minutos
-cook_time: 45 minutos
-servings: 8
+  presentation: >-
+    Servida bien helada en jarras transparentes de vidrio, de un color púrpura
+    oscuro intenso y brillante, decorada con cubitos pequeños de manzana roja y
+    piña en el fondo del vaso.
 nutrition:
   calories: 120
   macros:
     protein_g: 0.5
     fat_g: 0.1
     carbs_g: 30
-tags:
-  - Chicha
-  - Morada
-  - Bebida
-  - Maiz
 images:
-  - url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'
     description: Chicha Morada helada tradicional peruana
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: La Chicha Morada es la bebida refrescante no alcohólica más famosa del Perú. De origen prehispánico, se prepara hirviendo mazorcas de maíz morado andino junto con cáscaras de piña, manzana, canela y clavo, y se sirve fría con jugo de limón sutil y azúcar.
+description: >-
+  La Chicha Morada es la bebida refrescante no alcohólica más famosa del Perú.
+  De origen prehispánico, se prepara hirviendo mazorcas de maíz morado andino
+  junto con cáscaras de piña, manzana, canela y clavo, y se sirve fría con jugo
+  de limón sutil y azúcar.
 ---
 
 # Chicha Morada

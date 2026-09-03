@@ -1,38 +1,44 @@
 ---
 title: Arroz Llanero
-description: El Arroz Llanero es un plato emblemático de la Orinoquía colombiana,
-  preparado con arroz, carnes variadas (res, cerdo, pollo), verduras y condimentos
-  locales. Es una receta festiva, ideal para grandes reuniones y celebraciones en
-  los llanos.
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Umami
+    - Salado
+  texture:
+    - Suave
+    - Jugoso
+  aroma:
+    - Carnoso
+    - Herbal
+    - Frito
+  presentation: >-
+    Se sirve en bandejas grandes, ideal para compartir en reuniones y
+    celebraciones llaneras.
 nutrition:
   calories: 5405
   macros:
     protein_g: 461.1
     fat_g: 146.9
     carbs_g: 501.4
-embedding_version: 1
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  texture:
-  - Suave
-  - Jugoso
-  aroma:
-  - Carnoso
-  - Herbal
-  - Frito
-  presentation: Se sirve en bandejas grandes, ideal para compartir en reuniones y
-    celebraciones llaneras.
 images:
-- url: ./images/1.png
-  description: Plato de Arroz Llanero con variedad de carnes y verduras.
+  - url: ./images/1.png
+    description: Plato de Arroz Llanero con variedad de carnes y verduras.
 image: ./images/1.png
+description: >-
+  El Arroz Llanero es un plato emblemático de la Orinoquía colombiana, preparado
+  con arroz, carnes variadas (res, cerdo, pollo), verduras y condimentos
+  locales. Es una receta festiva, ideal para grandes reuniones y celebraciones
+  en los llanos.
+media: []
+embedding_version: 1
 ---
 
 <!-- markdownlint-disable MD025 -->

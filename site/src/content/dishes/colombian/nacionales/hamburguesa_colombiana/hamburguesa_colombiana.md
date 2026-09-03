@@ -1,62 +1,11 @@
 ---
-title: Hamburguesa Colombiana
-region: Nacional
-categories:
-- Comida rápida
-- Plato fuerte
-- Street food
-- Para compartir
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Cremoso
-  texture:
-  - Crujiente (papa)
-  - Jugoso (carne)
-  - Cremoso (salsas)
-  aroma:
-  - Parrilla
-  - Queso
-  - Salsas
-  presentation: Se sirve en porción generosa, ideal para compartir o como cena urbana.
-main_ingredients:
-- Pan de hamburguesa
-- Carne de res
-- Queso
-- Jamón
-- Papa frita
-- Huevo
-- Salsas
-difficulty: ★★☆☆☆
-prep_time: 30 minutos
-cook_time: 20 minutos
-servings: 4
-images:
-- url: https://pixabay.com/photos/hamburguesa-colombiana-street-food-6146293/
-  description: Hamburguesa colombiana tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/hamburguesa-colombiana
-  description: Variaciones de hamburguesa colombiana en Unsplash
-sources:
-- https://www.recetasdecolombia.com/hamburguesa-colombiana
-- https://www.youtube.com/results?search_query=hamburguesa+colombiana
-- https://www.tiktok.com/tag/hamburguesacolombiana
-license: MIT
-tags:
-- colombiano
-- tradicional
-- hamburguesa colombiana
-- open source
-description: La hamburguesa colombiana es una versión local de este clásico internacional,
-  famosa por su abundancia de ingredientes y salsas. Se caracteriza por incluir papas
-  a la francesa, queso, jamón, huevo y variedad de salsas, convirtiéndose en tendencia
-  en redes y food trucks urbanos.
-nutrition:
-  calories: 1967
-  macros:
-    protein_g: 239.6
-    fat_g: 81.9
-    carbs_g: 58.4
+title: "Hamburguesa Colombiana"
+region: "Colombia"
+categories: ["Hamburguesa_colombiana"]
+difficulty: "★★☆☆☆"
+prep_time: "30 minutos"
+cook_time: "20 minutos"
+servings: "4"
 ---
 
 
@@ -106,7 +55,7 @@ La hamburguesa colombiana es una versión local de este clásico internacional, 
 
 ## 📸 Galería
 
-![Hamburguesa colombiana completa](/dishes/colombian/nacionales/hamburguesa_colombiana/images/1.webp)
+![Hamburguesa colombiana completa](./images/1.png)
 
 ---
 

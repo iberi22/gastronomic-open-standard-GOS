@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Insular"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetas Emblemáticas de la Región Insular de Colombia
 
 Este directorio reúne las 10 recetas más representativas de San Andrés, Providencia y Santa Catalina, enriquecidas con metodología científica, sensorial y colectiva, siguiendo el estándar del proyecto de cocina latinoamericana.

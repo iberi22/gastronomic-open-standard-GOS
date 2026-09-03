@@ -1,58 +1,11 @@
 ---
 title: "Mute Santandereano"
-region: "Andina"
-categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Umami"
-    - "Ahumado"
-    - "Alcalino (maíz)"
-  texture:
-    - "Viscoso"
-    - "Denso"
-    - "Masticable (Callo/Carne)"
-  aroma:
-    - "Maíz pela'o (nixtamal)"
-    - "Leña"
-    - "Cilantro"
-    - "Chorizo"
-  presentation: "Cazuela profunda. El caldo debe ser muy espeso (casi estofado). Se acompaña de arepa santandereana (maíz pelado) y aguacate."
-main_ingredients:
-  - "Maíz Peto (Pelado/Nixtamalizado)"
-  - "Costilla de res"
-  - "Carne de cerdo"
-  - "Callo (Mondongo) (opcional pero tradicional)"
-  - "Mano de res (para gelatina)"
-  - "Papa criolla"
-  - "Papa sabanera"
-  - "Ahuyama"
-  - "Berenjena (regional)"
-  - "Garbanzo"
-difficulty: "Alta"
-prep_time: 720
-cook_time: 240
-servings: 10
-nutrition:
-  calories: 750
-  macros:
-    protein_g: 45
-    fat_g: 30
-    carbs_g: 75
-tags:
-  - "Santander"
-  - "Maíz Pelado"
-  - "Domingo"
-images:
-  - url: "https://im.ge/i/mute-1.AbC012"
-    description: "Mute Santandereano espeso con maíz pelado"
-sources:
-  - name: "Gobernación de Santander"
-    url: "https://santander.gov.co"
-license: "MIT"
-description: "La sopa insignia de Santander. Se define por el uso de 'Maíz Pelado' (nixtamalizado con ceniza), que le da un sabor alcalino distintivo. Es una preparación monumental que combina múltiples carnes (res, cerdo, callo) y legumbres, resultando en un potaje de densidad extrema."
+region: "Colombia"
+categories: ["Mute_santandereano"]
+difficulty: "★★★★☆"
+prep_time: "720"
+cook_time: "240"
+servings: "10"
 ---
 
 # Mute Santandereano
@@ -109,7 +62,7 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 
 ## 📸 Galería
 
-![Mute santandereano sustancioso](/dishes/colombian/andina/mute_santandereano/images/1.webp)
+![Mute santandereano sustancioso](./images/1.png)
 
 ---
 
@@ -121,7 +74,7 @@ El Mute Santandereano es uno de los platos más tradicionales del departamento d
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Umami, Ahumado       | 5/5              | Inosinato (Carnes) y Fenoles (Chorizo Ahumado). |
 | **Aroma**| Maíz, Humo           | 5/5              | 2-Acetil-1-pirrolina (Maíz) y Guayacol (Humo). |
-| **Textura**| Viscosa, Densa       | 5/5              | Gel de almidón de **[Maíz Peto](/dishes/colombian/andina/mute_santandereano/../../ingredients/maiz_peto)** y **[Papa Sabanera](/dishes/colombian/andina/mute_santandereano/../../ingredients/papa_sabanera)**. |
+| **Textura**| Viscosa, Densa       | 5/5              | Gel de almidón de **[Maíz Peto](../../ingredients/maiz_peto)** y **[Papa Sabanera](../../ingredients/papa_sabanera)**. |
 | **Boca** | Masticable           | 4/5              | Callos (si lleva), carne desmechada, maíz entero. |
 
 ### ⚗️ Química y Física Culinaria

@@ -1,51 +1,11 @@
 ---
-title: "Aguachile Verde de Camarón"
-region: "Sinaloa"
-categories:
-  - "Entrante"
-  - "Marisco"
-  - "Fresco"
-sensory:
-  flavor:
-    - "Muy picante"
-    - "Muy ácido (lima)"
-    - "Salino y fresco"
-  texture:
-    - "Camarón firme y tierno"
-    - "Pepino crujiente"
-  aroma:
-    - "Chile serrano machacado"
-    - "Lima fresca"
-    - "Cilantro"
-  presentation: "Camarones abiertos en mariposa marinados al instante en salsa verde de chile y lima con cebolla morada."
-main_ingredients:
-  - "Camarones frescos limpios"
-  - "Jugo de lima fresco"
-  - "Chile serrano"
-  - "Cilantro"
-  - "Pepino en rodajas"
-  - "Cebolla morada en pluma"
+title: "Aguachile Verde De CamaróN"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "0 minutos"
-servings: 4
-nutrition:
-  calories: 210
-  macros:
-    protein_g: 24.0
-    fat_g: 3.0
-    carbs_g: 15.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Aguachile Verde de Camarón tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Aguachile Verde es un plato marinero del Pacífico mexicano donde los camarones se curtieron rápidamente en una mezcla viva de lima, chile serrano y cilantro."
+servings: "4"
 ---
 
 # Aguachile Verde de Camarón

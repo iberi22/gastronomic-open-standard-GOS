@@ -1,50 +1,59 @@
 ---
-title: "Guarapo (Elixir de Caña)"
-region: "Nacional (Andina / Cafetera)"
+title: Guarapo (Elixir de Caña)
+region: Nacional (Andina / Cafetera)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Bebida"
-  - "Fermentación"
-  - "Recuperación"
+  - Bebida
+  - Fermentación
+  - Recuperación
+difficulty: ★★☆☆☆
+prep_time: '30'
+cook_time: '5'
+servings: 10
+tags:
+  - Campesino
+  - Energizante
+  - Jura
+main_ingredients:
+  - Panela (Miel de caña sólida)
+  - Agua potabilizada
+  - Hojas de Limonaria (opcional)
+  - Jugo de Limón (opcional)
 sensory:
   flavor:
-    - "Dulce-Ácido"
-    - "Floral (Miel)"
-    - "Aromático"
+    - Dulce-Ácido
+    - Floral (Miel)
+    - Aromático
   texture:
-    - "Líquida / Acuosa"
-    - "Ligera efervescencia"
+    - Líquida / Acuosa
+    - Ligera efervescencia
   aroma:
-    - "Caña de azúcar fresca"
-    - "Leve vinagre (si está fuerte)"
-    - "Panela"
-  presentation: "Se sirve en vasos de vidrio o cerámica. El color puede ser ámbar claro o café oscuro. Se sirve tradicionalmente muy frío para mitigar el picor de la fermentación."
-main_ingredients:
-  - "Panela (Miel de caña sólida)"
-  - "Agua potabilizada"
-  - "Hojas de Limonaria (opcional)"
-  - "Jugo de Limón (opcional)"
-difficulty: "Baja-Media"
-prep_time: "30"
-cook_time: "5"
-servings: 10
+    - Caña de azúcar fresca
+    - Leve vinagre (si está fuerte)
+    - Panela
+  presentation: >-
+    Se sirve en vasos de vidrio o cerámica. El color puede ser ámbar claro o
+    café oscuro. Se sirve tradicionalmente muy frío para mitigar el picor de la
+    fermentación.
 nutrition:
   calories: 150
   macros:
     protein_g: 0.1
     fat_g: 0
     carbs_g: 38
-tags:
-  - "Campesino"
-  - "Energizante"
-  - "Jura"
 images:
-  - url: "https://im.ge/i/guarapo-1.AbC555"
-    description: "Guarapo de panela fermentando en vasija tradicional"
-sources:
-  - name: "Cultura Cafetera GOS"
-    url: "https://gos.org/bebidas/guarapo"
-license: "MIT"
-description: "El combustible del campo colombiano. El Guarapo es una fermentación rápida y espontánea de la panela que ofrece una hidratación cargada de electrolitos y energía rápida, fundamental para las jornadas de cosecha."
+  - url: 'https://im.ge/i/guarapo-1.AbC555'
+    description: Guarapo de panela fermentando en vasija tradicional
+description: >-
+  El combustible del campo colombiano. El Guarapo es una fermentación rápida y
+  espontánea de la panela que ofrece una hidratación cargada de electrolitos y
+  energía rápida, fundamental para las jornadas de cosecha.
 ---
 
 # Guarapo (Elixir de Caña)

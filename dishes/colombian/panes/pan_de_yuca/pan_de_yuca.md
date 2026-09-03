@@ -1,50 +1,58 @@
 ---
-title: "Pandeyuca (Pan de Yuca)"
-region: "Andina / Sur de Colombia"
+title: Pandeyuca (Pan de Yuca)
+region: Andina / Sur de Colombia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Amasijo"
-  - "Snack"
-  - "Tradicional"
+  - Amasijo
+  - Snack
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: '25'
+cook_time: '18'
+servings: 10
+tags:
+  - Cauca
+  - Nariño
+  - Sin Gluten
+main_ingredients:
+  - Almidón de Yuca (Tapioca Starch)
+  - Queso Campesino o Cuajada
+  - Mantequilla
+  - Huevo
 sensory:
   flavor:
-    - "Queso Intenso"
-    - "Neutro de Almidón"
-    - "Salado"
+    - Queso Intenso
+    - Neutro de Almidón
+    - Salado
   texture:
-    - "Cáscara Crocante"
-    - "Centro Hueco/Aireado"
-    - "Chicloso al enfriar"
+    - Cáscara Crocante
+    - Centro Hueco/Aireado
+    - Chicloso al enfriar
   aroma:
-    - "Queso tostado"
-    - "Leche caliente"
-  presentation: "Medialunas o herraduras de color marfil pálido. Deben ser livianos, casi huecos por dentro, indicando máxima expansión."
-main_ingredients:
-  - "Almidón de Yuca (Tapioca Starch)"
-  - "Queso Campesino o Cuajada"
-  - "Mantequilla"
-  - "Huevo"
-difficulty: "Baja-Media"
-prep_time: "25"
-cook_time: "18"
-servings: 10
+    - Queso tostado
+    - Leche caliente
+  presentation: >-
+    Medialunas o herraduras de color marfil pálido. Deben ser livianos, casi
+    huecos por dentro, indicando máxima expansión.
 nutrition:
   calories: 190
   macros:
     protein_g: 5
     fat_g: 8
     carbs_g: 25
-tags:
-  - "Cauca"
-  - "Nariño"
-  - "Sin Gluten"
 images:
-  - url: "https://im.ge/i/pandeyuca-1.AbC777"
-    description: "Pandeyucas en forma de herradura con corteza tostada"
-sources:
-  - name: "Amasijos del Sur GOS"
-    url: "https://gos.org/amasijos/pandeyuca"
-license: "MIT"
-description: "Minimalismo puro. El Pandeyuca es una estructura de almidón y queso que desafía la gravedad. A diferencia del pandebono, no lleva maíz, lo que permite una expansión casi total, resultando en un panecillo hueco y crocante."
+  - url: 'https://im.ge/i/pandeyuca-1.AbC777'
+    description: Pandeyucas en forma de herradura con corteza tostada
+description: >-
+  Minimalismo puro. El Pandeyuca es una estructura de almidón y queso que
+  desafía la gravedad. A diferencia del pandebono, no lleva maíz, lo que permite
+  una expansión casi total, resultando en un panecillo hueco y crocante.
 ---
 
 ## Pan de Yuca

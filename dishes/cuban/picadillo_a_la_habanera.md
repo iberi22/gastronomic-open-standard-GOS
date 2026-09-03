@@ -1,55 +1,64 @@
 ---
 title: Picadillo a la Habanera
 region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/picadillo-a-la-habanera/'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Carnes
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Agridulce (pasas y aceitunas)
-  - Umami de res
-  - Sutilmente ácido (vino y tomate)
-  texture:
-  - Suave (grano fino de carne)
-  - Jugosa
-  aroma:
-  - Res guisada con sofrito
-  - Dulzor de pasas calientes
-  - Aceituna y comino
-  presentation: Servido caliente en un tazón o plato llano, acompañado de arroz blanco, frijoles negros, plátanos maduros fritos y un huevo frito por encima.
-main_ingredients:
-- Carne de res molida (ground beef)
-- Pasas de uva (raisins)
-- Aceitunas verdes (olives)
-- Alcaparras (capers)
-- Vino seco (vino blanco seco de cocina)
-- Puré de tomate
+  - Plato fuerte
+  - Carnes
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 15 minutos
 cook_time: 25 minutos
 servings: 4
+tags:
+  - Res
+  - Agridulce
+  - Sofrito
+  - Cuba
+  - Tradicional
+main_ingredients:
+  - Carne de res molida (ground beef)
+  - Pasas de uva (raisins)
+  - Aceitunas verdes (olives)
+  - Alcaparras (capers)
+  - Vino seco (vino blanco seco de cocina)
+  - Puré de tomate
+sensory:
+  flavor:
+    - Salado
+    - Agridulce (pasas y aceitunas)
+    - Umami de res
+    - Sutilmente ácido (vino y tomate)
+  texture:
+    - Suave (grano fino de carne)
+    - Jugosa
+  aroma:
+    - Res guisada con sofrito
+    - Dulzor de pasas calientes
+    - Aceituna y comino
+  presentation: >-
+    Servido caliente en un tazón o plato llano, acompañado de arroz blanco,
+    frijoles negros, plátanos maduros fritos y un huevo frito por encima.
 nutrition:
   calories: 320
   macros:
-    protein_g: 24.0
-    fat_g: 16.0
-    carbs_g: 18.0
-tags:
-- Res
-- Agridulce
-- Sofrito
-- Cuba
-- Tradicional
+    protein_g: 24
+    fat_g: 16
+    carbs_g: 18
 images:
-- url: https://images.unsplash.com/photo-1544025162-d76694265947
-  description: Picadillo cubano guisado servido en plato hondo (Unsplash)
-sources:
-- https://www.recetascubanas.org/picadillo-a-la-habanera/
-- https://www.cubaenmiami.com/receta-de-picadillo-a-la-habanera-cubano/
-license: MIT
-description: El Picadillo a la Habanera es uno de los platos más populares y queridos de Cuba. Consiste en carne de res molida de grano fino guisada a fuego lento en una salsa untuosa y agridulce. El perfil de sabor agridulce único de La Habana se logra combinando aceitunas verdes saladas, pasas dulces de uva, alcaparras ácidas, un sofrito abundante con comino, vino seco y tomate.
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Picadillo cubano guisado servido en plato hondo (Unsplash)
+description: >-
+  El Picadillo a la Habanera es uno de los platos más populares y queridos de
+  Cuba. Consiste en carne de res molida de grano fino guisada a fuego lento en
+  una salsa untuosa y agridulce. El perfil de sabor agridulce único de La Habana
+  se logra combinando aceitunas verdes saladas, pasas dulces de uva, alcaparras
+  ácidas, un sofrito abundante con comino, vino seco y tomate.
 ---
 
 # Picadillo a la Habanera

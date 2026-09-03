@@ -1,50 +1,59 @@
 ---
-title: "Ossobuco alla Milanese con Gremolata"
-region: "Lombardía"
+title: Ossobuco alla Milanese con Gremolata
+region: Lombardía
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Estofado"
+  - Plato fuerte
+  - Estofado
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 2 horas
+servings: 4
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Jarrete de ternera (Ossobuco)
+  - Vino blanco seco
+  - Caldo de carne
+  - Cáscara de limón rallada
+  - Ajo
+  - Perejil fresco
+  - Mantequilla
+  - Harina
 sensory:
   flavor:
-    - "Rico estofado de ternera"
-    - "Cítrico de gremolata"
-    - "Tuétano cremoso"
+    - Rico estofado de ternera
+    - Cítrico de gremolata
+    - Tuétano cremoso
   texture:
-    - "Carne melosa que se desprende del hueso"
+    - Carne melosa que se desprende del hueso
   aroma:
-    - "Gremolata (limón, ajo, perejil)"
-    - "Vino blanco y caldo"
-  presentation: "Rodaja de jarrete de ternera con hueso central y tuétano sobre lecho de risotto o polenta."
-main_ingredients:
-  - "Jarrete de ternera (Ossobuco)"
-  - "Vino blanco seco"
-  - "Caldo de carne"
-  - "Cáscara de limón rallada"
-  - "Ajo"
-  - "Perejil fresco"
-  - "Mantequilla"
-  - "Harina"
-difficulty: "★★★☆☆"
-prep_time: "30 minutos"
-cook_time: "2 horas"
-servings: 4
+    - 'Gremolata (limón, ajo, perejil)'
+    - Vino blanco y caldo
+  presentation: >-
+    Rodaja de jarrete de ternera con hueso central y tuétano sobre lecho de
+    risotto o polenta.
 nutrition:
   calories: 730
   macros:
-    protein_g: 48.0
-    fat_g: 42.0
-    carbs_g: 18.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 48
+    fat_g: 42
+    carbs_g: 18
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Ossobuco alla Milanese con Gremolata tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Ossobuco alla Milanese es un corte transversal de jarrete de ternera estofado con vino blanco y coronado con gremolata fresca de limón, ajo y perejil."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Ossobuco alla Milanese con Gremolata tradicional
+description: >-
+  El Ossobuco alla Milanese es un corte transversal de jarrete de ternera
+  estofado con vino blanco y coronado con gremolata fresca de limón, ajo y
+  perejil.
 ---
 
 # Ossobuco alla Milanese con Gremolata

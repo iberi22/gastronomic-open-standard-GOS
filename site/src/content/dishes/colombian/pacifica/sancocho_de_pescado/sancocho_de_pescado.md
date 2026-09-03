@@ -1,54 +1,11 @@
 ---
-title: Sancocho de Pescado Pacífico
-region: Pacífica
-categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Lácteo (coco)
-  texture:
-  - Cremoso
-  - Suave
-  aroma:
-  - Marino
-  - Herbal (cilantro cimarrón y tomillo)
-  - Lácteo (coco)
-  presentation: Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado
-    de arroz con coco. Centro de celebraciones familiares en el Pacífico.
-main_ingredients:
-- Pescado fresco
-- Leche de coco
-- Yuca
-- Plátano verde
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 1 hora
-servings: 8
-images:
-- url: https://pixabay.com/es/photos/sancocho-pacifico-colombia-6146277/
-  description: Sancocho de pescado tradicional del Pacífico colombiano (Pixabay)
-- url: https://unsplash.com/s/photos/sancocho-pescado-colombia
-  description: Variaciones de sancocho de pescado en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936
-- https://www.gastronomiacolombiana.com/foro/sancocho-de-pescado
-- https://www.google.com/maps/search/sancocho+de+pescado+pacifico
-- https://www.youtube.com/results?search_query=sancocho+de+pescado+pacifico
-- https://www.tiktok.com/tag/sancochodepescado
-license: MIT
-description: El Sancocho de Pescado es una sopa tradicional y emblemática de la región
-  Pacífica de Colombia. Se prepara con pescado fresco, tubérculos, plátano y leche
-  de coco, resultando en un plato reconfortante, aromático y lleno de sabor afrocolombiano.
-nutrition:
-  calories: 1168
-  macros:
-    protein_g: 25.2
-    fat_g: 4.1
-    carbs_g: 268.5
+title: "Sancocho De Pescado PacíFico"
+region: "Colombia"
+categories: ["Sancocho_de_pescado"]
+difficulty: "★★★☆☆"
+prep_time: "30 minutos"
+cook_time: "1 hora"
+servings: "8"
 ---
 
 ## Sancocho de Pescado Pacífico
@@ -106,7 +63,7 @@ El Sancocho de Pescado es una sopa tradicional y emblemática de la región Pac�
 
 ## 📸 Galería
 
-![Sancocho de Pescado del Pacífico](/dishes/colombian/pacifica/sancocho_de_pescado/images/1.webp)
+![Sancocho de Pescado del Pacífico](./images/1.png)
 
 ---
 

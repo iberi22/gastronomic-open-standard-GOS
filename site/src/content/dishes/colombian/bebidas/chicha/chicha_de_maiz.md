@@ -1,51 +1,11 @@
 ---
-title: "Chicha de Maíz Ancestral"
-region: "Nacional (Andina / Altiplano)"
-categories:
-  - "Bebida"
-  - "Fermentación"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Ácido Láctico"
-    - "Dulzura Fermentada"
-    - "Cereales Tostados"
-  texture:
-    - "Viscosa / Sedada"
-    - "Granular Fina"
-    - "Con cuerpo"
-  aroma:
-    - "Cereal fermentado"
-    - "Panela ahumada"
-    - "Fruta madura"
-  presentation: "Se sirve en totumas o vasos de barro. La superficie puede presentar una ligera espuma natural. El color varía del amarillo pálido al café oscuro dependiendo de la panela y el maíz usado."
-main_ingredients:
-  - "Maíz Amarillo o Porva"
-  - "Panela (Miel de caña)"
-  - "Clavos y Canela"
-  - "Hojas de Arrayán (Tradicional)"
-difficulty: "Media-Alta (Control de fermentación anaeróbica)"
+title: "Chicha De MaíZ Ancestral"
+region: "Colombia"
+categories: ["Chicha"]
+difficulty: "★★★★☆"
 prep_time: "480"
 cook_time: "120"
-servings: 20
-nutrition:
-  calories: 210
-  macros:
-    protein_g: 3
-    fat_g: 2
-    carbs_g: 45
-tags:
-  - "Muisca"
-  - "Bicentenario"
-  - "Patrimonio"
-images:
-  - url: "https://im.ge/i/chicha-1.AbC444"
-    description: "Chicha de maíz servida en totuma ancestral"
-sources:
-  - name: "Historia de la Chicha GOS"
-    url: "https://gos.org/bebidas/chicha"
-license: "MIT"
-description: "La sangre de los ancestros. La Chicha es la bebida sagrada de los pueblos andinos, un proceso biotecnológico precolonial que transforma el maíz en un elixir fermentado de alta densidad energética y mística."
+servings: "20"
 ---
 
 # Chicha de Maíz Ancestral

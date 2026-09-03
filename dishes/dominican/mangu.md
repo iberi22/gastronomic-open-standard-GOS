@@ -1,57 +1,69 @@
 ---
 title: Mangú Dominicano con Los Tres Golpes
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: elfogondelulublog.com
+  url: 'https://www.elfogondelulublog.com/receta-de-mangu-dominicano/'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Desayuno
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Sutilmente dulce (plátano)
-  - Ácido (cebolla al vinagre)
-  texture:
-  - Cremoso (puré denso)
-  - Crujiente (salami y queso frito)
-  - Suave
-  aroma:
-  - Plátano hervido caliente
-  - Cebollas al vinagre salteadas
-  - Salami frito
-  presentation: Una base circular generosa de puré de plátano verde suave (mangú), coronada con abundante cebolla roja encurtida de color rosa brillante, rodeada de salami frito, queso frito y huevos fritos.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Cebolla roja (morada)
-- Vinagre blanco
-- Salami dominicano (salami para freír)
-- Queso para freír (queso blanco firme)
-- Huevos enteros
-- Mantequilla sin sal
+  - Plato fuerte
+  - Desayuno
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 15 minutos
 cook_time: 25 minutos
 servings: 4
+tags:
+  - Plátano
+  - Puré
+  - Desayuno
+  - Tres Golpes
+  - Salami
+  - República Dominicana
+main_ingredients:
+  - Plátano verde (plátano macho verde)
+  - Cebolla roja (morada)
+  - Vinagre blanco
+  - Salami dominicano (salami para freír)
+  - Queso para freír (queso blanco firme)
+  - Huevos enteros
+  - Mantequilla sin sal
+sensory:
+  flavor:
+    - Salado
+    - Sutilmente dulce (plátano)
+    - Ácido (cebolla al vinagre)
+  texture:
+    - Cremoso (puré denso)
+    - Crujiente (salami y queso frito)
+    - Suave
+  aroma:
+    - Plátano hervido caliente
+    - Cebollas al vinagre salteadas
+    - Salami frito
+  presentation: >-
+    Una base circular generosa de puré de plátano verde suave (mangú), coronada
+    con abundante cebolla roja encurtida de color rosa brillante, rodeada de
+    salami frito, queso frito y huevos fritos.
 nutrition:
   calories: 580
   macros:
-    protein_g: 22.0
-    fat_g: 34.0
-    carbs_g: 52.0
-tags:
-- Plátano
-- Puré
-- Desayuno
-- Tres Golpes
-- Salami
-- República Dominicana
+    protein_g: 22
+    fat_g: 34
+    carbs_g: 52
 images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Mangú dominicano con cebolla morada por encima y acompañantes (Unsplash)
-sources:
-- https://www.elfogondelulublog.com/receta-de-mangu-dominicano/
-- https://www.cocinadominicana.com/mangu-receta-tradicional/
-license: MIT
-description: El Mangú es el desayuno nacional y el plato más emblemático de la República Dominicana. Consiste en un terso, cremoso y denso puré elaborado con plátanos verdes hervidos machacados con mantequilla, aceite y un poco de su agua fría de cocción para mantenerlo sumamente suave. Se sirve tradicionalmente coronado con cebollas rojas encurtidas en vinagre y acompañado de salami dominicano frito, queso frito y huevo frito, combinación conocida popularmente como "Los Tres Golpes".
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Mangú dominicano con cebolla morada por encima y acompañantes (Unsplash)
+description: >-
+  El Mangú es el desayuno nacional y el plato más emblemático de la República
+  Dominicana. Consiste en un terso, cremoso y denso puré elaborado con plátanos
+  verdes hervidos machacados con mantequilla, aceite y un poco de su agua fría
+  de cocción para mantenerlo sumamente suave. Se sirve tradicionalmente coronado
+  con cebollas rojas encurtidas en vinagre y acompañado de salami dominicano
+  frito, queso frito y huevo frito, combinación conocida popularmente como "Los
+  Tres Golpes".
 ---
 
 # Mangú Dominicano con Los Tres Golpes

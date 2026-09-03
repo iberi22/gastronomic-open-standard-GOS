@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Otras_preparaciones"]
+difficulty: "★★☆☆☆"
+---
+
 # 🍲 Otras Preparaciones Colombianas
 
 Aquí se agrupan recetas que no encajan en las categorías anteriores pero son parte esencial de la mesa colombiana: masas, bases, acompañamientos especiales y más.

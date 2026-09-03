@@ -1,51 +1,11 @@
 ---
-title: "Ginger Beer (Cerveza de Jengibre Ancestral)"
-region: "Insular (San Andrés y Providencia)"
-categories:
-  - "Bebida"
-  - "Fermentación"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Pungente / Picante"
-    - "Ácido Cítrico"
-    - "Dulzor Residual"
-  texture:
-    - "Efervescente (Natural)"
-    - "Ligera"
-    - "Sedimentada (Si no se filtra)"
-  aroma:
-    - "Jengibre Fresco"
-    - "Levadura Activa"
-    - "Limón"
-  presentation: "Se sirve en vasos de vidrio frío, a menudo con hielo. Debe presentar una corona de burbujas finas y persistentes. Puede ser translúcida u opaca dependiendo del tiempo de fermentación."
-main_ingredients:
-  - "Jengibre Fresco (*Zingiber officinale*)"
-  - "Azúcar Morena o Panela"
-  - "Limón Criollo"
-  - "Agua de Lluvia o filtrada"
-difficulty: "Media-Alta (Manejo de presión y levaduras)"
+title: "Ginger Beer (Cerveza De Jengibre Ancestral)"
+region: "Colombia"
+categories: ["Ginger_beer"]
+difficulty: "★★★★☆"
 prep_time: "480"
 cook_time: "20"
-servings: 10
-nutrition:
-  calories: 120
-  macros:
-    protein_g: 0.5
-    fat_g: 0.1
-    carbs_g: 28
-tags:
-  - "Raizal"
-  - "Probiótico"
-  - "Legacy"
-images:
-  - url: "https://im.ge/i/gingerbeer-1.AbC111"
-    description: "Ginger Beer artesanal con burbujas de fermentación natural"
-sources:
-  - name: "Etnobotánica del Archipiélago GOS"
-    url: "https://gos.org/insular/gingerbeer"
-license: "MIT"
-description: "Más que una bebida, es un tónico probiótico. La Ginger Beer isleña es el resultado de una fermentación salvaje donde el jengibre actúa como fuente de sabor y como regulador selectivo de microorganismos, creando un refugio de efervescencia natural."
+servings: "10"
 ---
 
 # Ginger Beer (Cerveza de Jengibre Ancestral)

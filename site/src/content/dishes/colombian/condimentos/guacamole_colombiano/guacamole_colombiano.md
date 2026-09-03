@@ -2,6 +2,7 @@
 title: "Guacamole Colombiano"
 region: "Colombia"
 categories: ["Guacamole_colombiano"]
+difficulty: "★★☆☆☆"
 ---
 
 # Guacamole Colombiano
@@ -46,7 +47,7 @@ El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión 
 
 ## 📸 Galería
 
-
+![Guacamole colombiano rústico](./images/1.png)
 
 ---
 

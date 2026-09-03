@@ -1,52 +1,62 @@
 ---
-title: "Tollo Ahumado"
-region: "Pacífica"
+title: Tollo Ahumado
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Guiso"
-  - "Ancestral"
+  - Plato Fuerte
+  - Guiso
+  - Ancestral
+difficulty: ★★★★☆
+prep_time: '60'
+cook_time: '45'
+servings: 6
+tags:
+  - Tumaco
+  - Buenaventura
+  - Ahumados
+main_ingredients:
+  - Tollo (Tiburón pequeño/Cazón) Ahumado
+  - Leche de Coco (Primera y segunda prensa)
+  - 'Recao de Azotea (Cimarrón, Poleo, Albahaca)'
+  - Achiote
+  - Vinagre de plátano (opcional tradicional)
 sensory:
   flavor:
-    - "Ahumado Terroso"
-    - "Umami Profundo"
-    - "Dulzura láctea (Coco)"
+    - Ahumado Terroso
+    - Umami Profundo
+    - Dulzura láctea (Coco)
   texture:
-    - "Fibrosa-Firme (Tollo)"
-    - "Cremosa (Salsa)"
-    - "Seca (en el ahumado inicial)"
+    - Fibrosa-Firme (Tollo)
+    - Cremosa (Salsa)
+    - Seca (en el ahumado inicial)
   aroma:
-    - "Madera quemada (Mangle/Guayabo)"
-    - "Alpiste / Nuez"
-    - "Cilantro Cimarrón"
-  presentation: "Cazuela de barro. El tollo debe verse en trozos que conservan la marca del ahumado (bordes oscuros). Salsa espesa de color naranja-rojizo por el achiote. Acompañado de arroz de coco y aguacate."
-main_ingredients:
-  - "Tollo (Tiburón pequeño/Cazón) Ahumado"
-  - "Leche de Coco (Primera y segunda prensa)"
-  - "Recao de Azotea (Cimarrón, Poleo, Albahaca)"
-  - "Achiote"
-  - "Vinagre de plátano (opcional tradicional)"
-difficulty: "Alta"
-prep_time: "60"
-cook_time: "45"
-servings: 6
+    - Madera quemada (Mangle/Guayabo)
+    - Alpiste / Nuez
+    - Cilantro Cimarrón
+  presentation: >-
+    Cazuela de barro. El tollo debe verse en trozos que conservan la marca del
+    ahumado (bordes oscuros). Salsa espesa de color naranja-rojizo por el
+    achiote. Acompañado de arroz de coco y aguacate.
 nutrition:
   calories: 450
   macros:
     protein_g: 38
     fat_g: 28
     carbs_g: 10
-tags:
-  - "Tumaco"
-  - "Buenaventura"
-  - "Ahumados"
 images:
-  - url: "https://im.ge/i/tollo-1.AbC123"
-    description: "Tollo ahumado guisado en el litoral Pacífico"
-sources:
-  - name: "Culinaria Afro-Pacífica"
-    url: "https://gos.org/pacifico/tollo-ahumado"
-license: "MIT"
-description: "La joya de la conservación litoral. El tollo (tiburón joven) se somete a un proceso de ahumado artesanal que no solo preserva la carne en el clima húmedo, sino que transforma su colágeno y elimina el exceso de urea, creando una base proteica única para el guiso de coco."
+  - url: 'https://im.ge/i/tollo-1.AbC123'
+    description: Tollo ahumado guisado en el litoral Pacífico
+description: >-
+  La joya de la conservación litoral. El tollo (tiburón joven) se somete a un
+  proceso de ahumado artesanal que no solo preserva la carne en el clima húmedo,
+  sino que transforma su colágeno y elimina el exceso de urea, creando una base
+  proteica única para el guiso de coco.
 ---
 
 ## Tollo Ahumado

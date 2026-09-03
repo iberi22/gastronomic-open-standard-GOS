@@ -1,49 +1,11 @@
 ---
-title: "Spaghetti alla Carbonara"
-region: "Lazio (Roma)"
-categories:
-  - "Plato fuerte"
-  - "Pasta Tradicional"
-sensory:
-  flavor:
-    - "Salado curado (Guanciale)"
-    - "Umami de Pecorino Romano"
-    - "Pimienta negra picante"
-  texture:
-    - "Pasta al dente"
-    - "Salsa cremosa emulsionada sin nata"
-  aroma:
-    - "Guanciale dorado"
-    - "Pecorino Romano recién rallado"
-    - "Pimienta recién molida"
-  presentation: "Spaghetti envueltos en crema dorada de yema y queso con trozos crujientes de guanciale."
-main_ingredients:
-  - "Spaghetti de sémola"
-  - "Guanciale de cerdo"
-  - "Yemas de huevo frescas"
-  - "Pecorino Romano DOP"
-  - "Pimienta negra entera"
+title: "Spaghetti Alla Carbonara"
+region: "Italia"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "15 minutos"
 cook_time: "15 minutos"
-servings: 4
-nutrition:
-  calories: 620
-  macros:
-    protein_g: 26.0
-    fat_g: 28.0
-    carbs_g: 66.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Spaghetti alla Carbonara tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La auténtica Carbonara romana no lleva nata ni cebolla: se basa en la emulsión de yemas de huevo, queso Pecorino Romano, grasa de guanciale y abundante pimienta."
+servings: "4"
 ---
 
 # Spaghetti alla Carbonara

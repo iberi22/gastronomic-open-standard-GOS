@@ -1,52 +1,61 @@
 ---
-title: "Pan de Coco (Coconut Bread)"
-region: "Insular"
+title: Pan de Coco (Coconut Bread)
+region: Insular
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Pan"
-  - "Acompañante"
-  - "Tradicional"
+  - Pan
+  - Acompañante
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: '120'
+cook_time: '35'
+servings: 12
+tags:
+  - Bakery
+  - Vegano (si se usa aceite)
+  - San Andrés
+main_ingredients:
+  - Harina de trigo de fuerza
+  - Leche de Coco natural (Primera extracción)
+  - Coco rallado fresco
+  - Mantequilla o Aceite de Coco
+  - Levadura
 sensory:
   flavor:
-    - "Dulzor Suave"
-    - "Gruta de Coco"
-    - "Ligeramente Salado"
+    - Dulzor Suave
+    - Gruta de Coco
+    - Ligeramente Salado
   texture:
-    - "Miga Densa y Húmeda"
-    - "Corteza Suave-Dorada"
-    - "Untuosa"
+    - Miga Densa y Húmeda
+    - Corteza Suave-Dorada
+    - Untuosa
   aroma:
-    - "Aceite de Coco tibio"
-    - "Pan horneado"
-    - "Leche evaporada"
-  presentation: "Bollos redondos o trenzados de color dorado canela. La miga debe ser blanca y mostrar pequeños trozos de coco rallado si es artesanal."
-main_ingredients:
-  - "Harina de trigo de fuerza"
-  - "Leche de Coco natural (Primera extracción)"
-  - "Coco rallado fresco"
-  - "Mantequilla o Aceite de Coco"
-  - "Levadura"
-difficulty: "Media"
-prep_time: "120"
-cook_time: "35"
-servings: 12
+    - Aceite de Coco tibio
+    - Pan horneado
+    - Leche evaporada
+  presentation: >-
+    Bollos redondos o trenzados de color dorado canela. La miga debe ser blanca
+    y mostrar pequeños trozos de coco rallado si es artesanal.
 nutrition:
   calories: 280
   macros:
     protein_g: 6
     fat_g: 14
     carbs_g: 32
-tags:
-  - "Bakery"
-  - "Vegano (si se usa aceite)"
-  - "San Andrés"
 images:
-  - url: "https://im.ge/i/pancoco-1.AbC222"
-    description: "Pan de coco isleño con su corteza dorada característica"
-sources:
-  - name: "Panadería del Archipiélago GOS"
-    url: "https://gos.org/insular/pandecoco"
-license: "MIT"
-description: "El sustento del isleño. El Pan de Coco es una obra maestra de la panificación tropical, donde el agua de la leche de coco hidrata la masa mientras que sus grasas naturales inhiben parcialmente el gluten, creando una miga de una humedad excepcional."
+  - url: 'https://im.ge/i/pancoco-1.AbC222'
+    description: Pan de coco isleño con su corteza dorada característica
+description: >-
+  El sustento del isleño. El Pan de Coco es una obra maestra de la panificación
+  tropical, donde el agua de la leche de coco hidrata la masa mientras que sus
+  grasas naturales inhiben parcialmente el gluten, creando una miga de una
+  humedad excepcional.
 ---
 
 # Pan de Coco (Coconut Bread)

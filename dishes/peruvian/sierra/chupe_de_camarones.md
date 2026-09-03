@@ -1,10 +1,33 @@
 ---
 title: Chupe de Camarones
 region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Sopa
   - Marino
   - Festivo
+difficulty: ★★★★☆
+prep_time: 35 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Chupe
+  - Camarones
+  - Arequipa
+  - Sopa
+main_ingredients:
+  - Camarones enteros frescos (río)
+  - Pasta de ají panca
+  - Leche evaporada entera
+  - Queso fresco paria (andino)
+  - Arroz blanco
+  - Huacatay fresco (Minthostachys mollis)
 sensory:
   flavor:
     - Umami Profundo (Camarón y coral)
@@ -18,39 +41,25 @@ sensory:
     - Camarón tostado y ajo frito
     - Huacatay fresco
     - Ají panca y orégano
-  presentation: Servido en un plato sopero hondo muy caliente, con camarones enteros gigantes coronando el caldo rojo-anaranjado, decorado con un huevo escalfado, dados de queso fresco que se derriten lentamente, choclo y un hilo de huacatay fresco picado.
-main_ingredients:
-  - Camarones enteros frescos (río)
-  - Pasta de ají panca
-  - Leche evaporada entera
-  - Queso fresco paria (andino)
-  - Arroz blanco
-  - Huacatay fresco (Minthostachys mollis)
-difficulty: ★★★★☆
-prep_time: 35 minutos
-cook_time: 30 minutos
-servings: 4
+  presentation: >-
+    Servido en un plato sopero hondo muy caliente, con camarones enteros
+    gigantes coronando el caldo rojo-anaranjado, decorado con un huevo
+    escalfado, dados de queso fresco que se derriten lentamente, choclo y un
+    hilo de huacatay fresco picado.
 nutrition:
   calories: 720
   macros:
     protein_g: 48
     fat_g: 24
     carbs_g: 62
-tags:
-  - Chupe
-  - Camarones
-  - Arequipa
-  - Sopa
 images:
-  - url: https://images.unsplash.com/photo-1534422298391-e4f8c172dddb
+  - url: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb'
     description: Chupe de Camarones arequipeño tradicional
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: El Chupe de Camarones es una sopa soberbia y reconstituyente, insignia de la culinaria de Arequipa. Fusiona camarones de río frescos, papas, choclo, habas, arroz y queso andino en un caldo sustancioso aromatizado con ají panca y huacatay, enriquecido con leche evaporada y huevo.
+description: >-
+  El Chupe de Camarones es una sopa soberbia y reconstituyente, insignia de la
+  culinaria de Arequipa. Fusiona camarones de río frescos, papas, choclo, habas,
+  arroz y queso andino en un caldo sustancioso aromatizado con ají panca y
+  huacatay, enriquecido con leche evaporada y huevo.
 ---
 
 # Chupe de Camarones

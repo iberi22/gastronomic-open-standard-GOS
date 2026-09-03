@@ -1,56 +1,11 @@
 ---
-title: "Mote con Huesillos"
-region: "Central / Metropolitana"
-categories:
-  - "Postre"
-  - "Bebida"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Dulce"
-    - "Especiado"
-    - "Ácido sutil"
-  texture:
-    - "Líquido"
-    - "Masticable"
-    - "Suave"
-  aroma:
-    - "Caramelo"
-    - "Canela"
-    - "Durazno cocido"
-  presentation: "Se sirve extremadamente frío en vasos altos de vidrio transparentes, con una cuchara larga para poder comer el mote de trigo y los duraznos enteros al final."
-main_ingredients:
-  - "Huesillos (duraznos deshidratados)"
-  - "Mote de trigo (trigo cocido)"
-  - "Chancaca (piloncillo)"
-  - "Azúcar granulada"
-  - "Canela en rama"
-  - "Cáscara de naranja"
+title: "Mote Con Huesillos"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "10 minutos (más remojo de huesillos)"
 cook_time: "45 minutos"
-servings: 6
-nutrition:
-  calories: 280
-  macros:
-    protein_g: 3
-    fat_g: 0.5
-    carbs_g: 68
-tags:
-  - "Chile"
-  - "Bebida"
-  - "Dulce"
-  - "Verano"
-  - "Mote"
-  - "Durazno"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Mote con huesillos chileno servido frío en vaso"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "El Mote con Huesillos es la bebida-postre tradicional de Chile. Consiste en una infusión dulce y fría a base de duraznos deshidratados (huesillos) cocidos en agua con canela, chancaca y azúcar, servido con trigo mote tierno cocido en el fondo del vaso."
+servings: "6"
 ---
 
 # Mote con Huesillos

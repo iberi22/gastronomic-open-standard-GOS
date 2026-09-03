@@ -1,58 +1,67 @@
 ---
-title: "Mute Santandereano"
-region: "Andina"
+title: Mute Santandereano
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Umami"
-    - "Ahumado"
-    - "Alcalino (maíz)"
-  texture:
-    - "Viscoso"
-    - "Denso"
-    - "Masticable (Callo/Carne)"
-  aroma:
-    - "Maíz pela'o (nixtamal)"
-    - "Leña"
-    - "Cilantro"
-    - "Chorizo"
-  presentation: "Cazuela profunda. El caldo debe ser muy espeso (casi estofado). Se acompaña de arepa santandereana (maíz pelado) y aguacate."
-main_ingredients:
-  - "Maíz Peto (Pelado/Nixtamalizado)"
-  - "Costilla de res"
-  - "Carne de cerdo"
-  - "Callo (Mondongo) (opcional pero tradicional)"
-  - "Mano de res (para gelatina)"
-  - "Papa criolla"
-  - "Papa sabanera"
-  - "Ahuyama"
-  - "Berenjena (regional)"
-  - "Garbanzo"
-difficulty: "Alta"
+  - Sopa
+  - Plato Fuerte
+  - Tradicional
+difficulty: ★★★★☆
 prep_time: 720
 cook_time: 240
 servings: 10
+tags:
+  - Santander
+  - Maíz Pelado
+  - Domingo
+main_ingredients:
+  - Maíz Peto (Pelado/Nixtamalizado)
+  - Costilla de res
+  - Carne de cerdo
+  - Callo (Mondongo) (opcional pero tradicional)
+  - Mano de res (para gelatina)
+  - Papa criolla
+  - Papa sabanera
+  - Ahuyama
+  - Berenjena (regional)
+  - Garbanzo
+sensory:
+  flavor:
+    - Umami
+    - Ahumado
+    - Alcalino (maíz)
+  texture:
+    - Viscoso
+    - Denso
+    - Masticable (Callo/Carne)
+  aroma:
+    - Maíz pela'o (nixtamal)
+    - Leña
+    - Cilantro
+    - Chorizo
+  presentation: >-
+    Cazuela profunda. El caldo debe ser muy espeso (casi estofado). Se acompaña
+    de arepa santandereana (maíz pelado) y aguacate.
 nutrition:
   calories: 750
   macros:
     protein_g: 45
     fat_g: 30
     carbs_g: 75
-tags:
-  - "Santander"
-  - "Maíz Pelado"
-  - "Domingo"
 images:
-  - url: "https://im.ge/i/mute-1.AbC012"
-    description: "Mute Santandereano espeso con maíz pelado"
-sources:
-  - name: "Gobernación de Santander"
-    url: "https://santander.gov.co"
-license: "MIT"
-description: "La sopa insignia de Santander. Se define por el uso de 'Maíz Pelado' (nixtamalizado con ceniza), que le da un sabor alcalino distintivo. Es una preparación monumental que combina múltiples carnes (res, cerdo, callo) y legumbres, resultando en un potaje de densidad extrema."
+  - url: 'https://im.ge/i/mute-1.AbC012'
+    description: Mute Santandereano espeso con maíz pelado
+description: >-
+  La sopa insignia de Santander. Se define por el uso de 'Maíz Pelado'
+  (nixtamalizado con ceniza), que le da un sabor alcalino distintivo. Es una
+  preparación monumental que combina múltiples carnes (res, cerdo, callo) y
+  legumbres, resultando en un potaje de densidad extrema.
 ---
 
 # Mute Santandereano

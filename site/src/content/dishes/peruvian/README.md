@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Plato"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetario Peruano
 
 La gastronomía peruana es reconocida mundialmente por su diversidad, riqueza sensorial y fusión de tradiciones ancestrales con influencias globales. Este recetario está organizado por regiones y categorías emblemáticas, siguiendo la metodología de enriquecimiento sensorial y nutricional del proyecto.

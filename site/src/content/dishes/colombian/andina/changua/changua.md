@@ -1,56 +1,14 @@
 ---
 title: "Changua"
-region: "Andina"
-categories:
-  - "Desayuno"
-  - "Sopa"
-  - "Lácteo"
-sensory:
-  flavor:
-    - "Lácteo (neutro)"
-    - "Salado"
-    - "Herbal (Cilantro/Cebolla)"
-  texture:
-    - "Líquido Cremoso"
-    - "Suave (Huevo escalfado)"
-    - "Esponjoso (Calado húmedo)"
-  aroma:
-    - "Leche caliente"
-    - "Cilantro"
-    - "Cebolla"
-  presentation: "Cazuela ancha. El pan calado debe estar en el fondo absorbiendo el líquido, el huevo entero (escalfado) encima, y todo cubierto con una capa generosa de cilantro y cebolla fina."
-main_ingredients:
-  - "Leche entera"
-  - "Agua"
-  - "Huevo"
-  - "Cebolla larga"
-  - "Cilantro"
-  - "Sal"
-  - "Pan Calado (tostada)"
-  - "Mantequilla (opcional)"
-difficulty: "Baja"
-prep_time: 10
-cook_time: 15
-servings: 4
-nutrition:
-  calories: 280
-  macros:
-    protein_g: 14
-    fat_g: 12
-    carbs_g: 28
-tags:
-  - "Bogotá"
-  - "Desayuno"
-  - "Controversial"
-images:
-  - url: "https://im.ge/i/changua-1.AbC789"
-    description: "Changua cachaca con calado y huevo"
-sources:
-  - name: "Bogotá Turismo"
-    url: "https://bogota.gov.co"
-license: "MIT"
-description: "Quizás el plato más controversial de Colombia. Amada por los bogotanos y temida por el resto, es una sopa de leche simple y delicada. Su ciencia radica en el equilibrio osmótico para escalfar el huevo perfectamente en una dilución de leche y agua."
----## Changua
+region: "Colombia"
+categories: ["Changua"]
+difficulty: "★☆☆☆☆"
+prep_time: "10"
+cook_time: "15"
+servings: "4"
+---
+
+## Changua
 
 La Changua es una sopa de desayuno tradicional de la región andina, especialmente popular en Bogotá y Boyacá. Se prepara a base de leche, agua, huevo y cebolla, y se sirve con pan (calado) en el mismo tazón. Es reconfortante, suave y perfecta para los días fríos.
 
@@ -94,7 +52,7 @@ La Changua es una sopa de desayuno tradicional de la región andina, especialmen
 
 ## 📸 Galería
 
-![Changua Colombiana](/dishes/colombian/andina/changua/images/1.webp)
+![Changua Colombiana](./images/1.png)
 
 ---
 

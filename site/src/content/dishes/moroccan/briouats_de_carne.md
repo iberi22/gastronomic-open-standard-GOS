@@ -1,46 +1,11 @@
 ---
-title: "Briouats de Carne Picada Especiada"
-region: "Marruecos Nacional"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
-  texture:
-    - "Crujiente exterior"
-    - "Interior tierno"
-  aroma:
-    - "Aroma característico de Briouats de Carne Picada Especiada"
-  presentation: "Briouats de Carne Picada Especiada presentado de forma vistosa tradicional."
-main_ingredients:
-  - "Ingrediente principal 1"
-  - "Ingrediente principal 2"
-  - "Especias"
-  - "Aceite de oliva"
+title: "Briouats De Carne Picada Especiada"
+region: "Marruecos"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 550
-  macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 45.0
-tags:
-  - "Moroccan"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Briouats de Carne Picada Especiada tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Briouats de Carne Picada Especiada es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+servings: "4"
 ---
 
 # Briouats de Carne Picada Especiada

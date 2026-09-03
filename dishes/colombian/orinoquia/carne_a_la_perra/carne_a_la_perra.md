@@ -1,40 +1,46 @@
 ---
 title: Carne a la Perra
-description: La Carne a la Perra es un plato tradicional de los llanos orientales
-  de Colombia, característico por su preparación rústica al fuego directo. Se trata
-  de carne de res asada en grandes trozos sobre brasas, sazonada con hierbas y servida
-  con yuca, plátano y ají llanero. Es símbolo de fraternidad y ...
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Ahumado
+  texture:
+    - Fibroso
+    - Jugoso
+    - Tenaz
+  aroma:
+    - Ahumado
+    - Herbal
+    - Carnoso
+  presentation: >-
+    Trozos grandes de carne con costra oscura, servidos rústicamente sobre
+    hojas.
 nutrition:
   calories: 1166
   macros:
-    protein_g: 84.0
+    protein_g: 84
     fat_g: 34.5
-    carbs_g: 122.0
-embedding_version: 1
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Ahumado
-  texture:
-  - Fibroso
-  - Jugoso
-  - Tenaz
-  aroma:
-  - Ahumado
-  - Herbal
-  - Carnoso
-  presentation: Trozos grandes de carne con costra oscura, servidos rústicamente sobre
-    hojas.
+    carbs_g: 122
 images:
-- url: ./images/1.png
-  description: Carne a la perra asada tradicionalmente al fuego directo.
+  - url: ./images/1.png
+    description: Carne a la perra asada tradicionalmente al fuego directo.
 image: ./images/1.png
+description: >-
+  La Carne a la Perra es un plato tradicional de los llanos orientales de
+  Colombia, característico por su preparación rústica al fuego directo. Se trata
+  de carne de res asada en grandes trozos sobre brasas, sazonada con hierbas y
+  servida con yuca, plátano y ají llanero. Es símbolo de fraternidad y ...
+media: []
+embedding_version: 1
 ---
 
 # Carne a la Perra

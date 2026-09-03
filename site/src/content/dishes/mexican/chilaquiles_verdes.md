@@ -1,50 +1,11 @@
 ---
-title: "Chilaquiles Verdes con Huevo"
-region: "México DF"
-categories:
-  - "Desayuno"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Picante brillante"
-    - "Ácido"
-    - "Salado"
-  texture:
-    - "Totopos crujientes suavizados por la salsa"
-  aroma:
-    - "Tomatillo frito"
-    - "Epazote"
-    - "Cilantro"
-  presentation: "Totopos bañados en salsa verde caliente, coronados con huevo frito, crema, queso y cebolla."
-main_ingredients:
-  - "Totopos de maíz fritos"
-  - "Tomatillos verdes"
-  - "Chile jalapeño"
-  - "Epazote"
-  - "Huevos"
-  - "Queso fresco"
-  - "Crema agria"
+title: "Chilaquiles Verdes Con Huevo"
+region: "México"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "15 minutos"
 cook_time: "15 minutos"
-servings: 2
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 18.0
-    fat_g: 24.0
-    carbs_g: 48.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Chilaquiles Verdes con Huevo tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Los Chilaquiles Verdes son el desayuno reconfortante definitivo en México: totopos de tortilla bañados en salsa verde hirviendo y acompañados de huevos o pollo."
+servings: "2"
 ---
 
 # Chilaquiles Verdes con Huevo

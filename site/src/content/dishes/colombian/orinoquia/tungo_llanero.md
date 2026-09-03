@@ -1,51 +1,11 @@
 ---
 title: "Tungos Llaneros"
-region: "Orinoquía"
-categories:
-  - "Snack"
-  - "Envuelto"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Ligeramente Ácido (Láctico)"
-    - "Especiado (Canela/Clavo)"
-    - "Dulzor de Panela"
-  texture:
-    - "Gelatinosa / Firme"
-    - "Elástica"
-    - "Fina (Masa de arroz)"
-  aroma:
-    - "Arroz fermentado"
-    - "Hoja de Bijao"
-    - "Canela"
-  presentation: "Envueltos delgados y cilíndricos, atados en parejas (mancuernas). La masa debe ser blanca e inmaculada, con una superficie lisa y brillante."
-main_ingredients:
-  - "Arroz (Remojado y molido)"
-  - "Leche Agria / Suero"
-  - "Panela o Azúcar"
-  - "Clavos y Canela"
-difficulty: "Media (Control de fermentación)"
+region: "Colombia"
+categories: ["Orinoquia"]
+difficulty: "★★★☆☆"
 prep_time: "480"
 cook_time: "60"
-servings: 15
-nutrition:
-  calories: 220
-  macros:
-    protein_g: 4
-    fat_g: 6
-    carbs_g: 42
-tags:
-  - "San Martín"
-  - "Entretenimiento"
-  - "Tradición"
-images:
-  - url: "https://im.ge/i/tungo-1.AbC901"
-    description: "Tungos llaneros recién salidos del vapor"
-sources:
-  - name: "Patrimonio Gastronómico del Meta"
-    url: "https://gos.org/orinoquia/tungos"
-license: "MIT"
-description: "La versión llanera del bollo de arroz. El Tungo se diferencia por un proceso de fermentación láctica del arroz que altera las propiedades del almidón, resultando en una textura elástica y un sabor sutilmente ácido que armoniza con el dulce de la panela."
+servings: "15"
 ---
 
 # Tungos Llaneros

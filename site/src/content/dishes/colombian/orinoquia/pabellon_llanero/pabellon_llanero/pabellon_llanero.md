@@ -1,21 +1,8 @@
 ---
-title: Pabellón Llanero
-description: El Pabellón Llanero es un plato representativo de la Orinoquía colombiana,
-  inspirado en la cocina criolla de los llanos. Consiste en carne desmechada, arroz
-  blanco, tajadas de plátano maduro, caraotas (frijoles negros) y queso rallado, todo
-  dispuesto en un solo plato colorido y abundante.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 3502
-  macros:
-    protein_g: 155.7
-    fat_g: 61.4
-    carbs_g: 581.3
-embedding_version: 1
+title: "PabellóN Llanero"
+region: "Colombia"
+categories: ["Pabellon_llanero"]
+difficulty: "★★☆☆☆"
 ---
 
 # Pabellón Llanero

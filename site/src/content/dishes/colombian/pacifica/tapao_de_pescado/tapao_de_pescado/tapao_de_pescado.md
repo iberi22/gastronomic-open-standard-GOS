@@ -1,52 +1,11 @@
 ---
-title: "Tapao de Pescado"
-region: "Pacífica / Nariño"
-categories:
-  - "Plato Fuerte"
-  - "Sopa-Guiso"
-  - "Resiliencia"
-sensory:
-  flavor:
-    - "Salinidad Limpia"
-    - "Earthy (Plátano verde)"
-    - "Especiado (Recao)"
-  texture:
-    - "Vaporosa"
-    - "Harinosa (Tallo de plátano)"
-    - "Escamosa (Pescado entero)"
-  aroma:
-    - "Hoja de plátano cocida"
-    - "Mar y Tierra"
-    - "Vapor concentrado"
-  presentation: "Plato hondo con el pescado entero (con cabeza) asomando sobre una base de plátanos y yuca. El caldo debe ser claro pero sustancioso. Se sirve con un cuarto de limón al lado."
-main_ingredients:
-  - "Pescado de escama entero (Bocachico / Pargo / Lisa)"
-  - "Plátano Verde (Inmaduro / Musáceas)"
-  - "Hojas de Plátano (Sello térmico)"
-  - "Cilantro Cimarrón"
-  - "Poleo / Orégano de Azotea"
-difficulty: "Media"
+title: "Tapao De Pescado"
+region: "Colombia"
+categories: ["Tapao_de_pescado"]
+difficulty: "★★★☆☆"
 prep_time: "20"
 cook_time: "40"
-servings: 8
-nutrition:
-  calories: 380
-  macros:
-    protein_g: 22
-    fat_g: 6
-    carbs_g: 58
-tags:
-  - "Chocó"
-  - "Nariño"
-  - "Ancestral"
-images:
-  - url: "https://im.ge/i/tapao-1.AbC258"
-    description: "Tapao de pescado abierto tras la cocción en hojas"
-sources:
-  - name: "Crónicas de la Cocina Pacífica"
-    url: "https://gos.org/pacifico/tapao"
-license: "MIT"
-description: "El arte de la cocción hermética sin presión mecánica. El 'Tapao' utiliza hojas de plátano para crear un sello de vapor que cocina los ingredientes en su propio jugo, preservando nutrientes y compuestos volátiles que suelen perderse en ollas abiertas."
+servings: "8"
 ---
 
 ## Tapao de Pescado

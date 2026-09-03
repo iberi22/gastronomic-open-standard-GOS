@@ -1,53 +1,55 @@
 ---
 title: Inchicapi (Sopa de Gallina con Maní)
 region: Amazonía
+language: es
+license: MIT
+source:
+  name: jameaperu.com
+  url: 'https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/'
+  date_retrieved: '2026-09-03'
 categories:
-- Sopa
-- Plato fuerte
-- Tradicional
-sensory:
-  flavor:
-  - Umami
-  - Cremoso
-  - Ligeramente dulce
-  texture:
-  - Cremoso
-  - Suave
-  aroma:
-  - Herbal (cilantro)
-  - Maní
-  - Cocido
-  presentation: Se sirve en platos hondos, ideal para compartir en reuniones familiares
-    o festividades.
-main_ingredients:
-- Gallina o pollo
-- Maní
-- Maíz
-- Yuca
+  - Sopa
+  - Plato fuerte
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 30 minutos
 cook_time: 1 hora
 servings: 6
-images:
-- url: https://pixabay.com/photos/inchicapi-amazonian-soup-1234567/
-  description: Inchicapi tradicional amazónico (Pixabay)
-- url: https://unsplash.com/s/photos/inchicapi
-  description: Variaciones de inchicapi amazónico en Unsplash
-sources:
-- https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/
-- https://inforegion.pe/inchicapi-un-caldo-amazonico-ideal-para-calentarnos-en-invierno/
-- https://www.recetasnestle.com.pe/recetas/inchicapi-de-gallina
-- https://www.comida-peruana.com/recetas/sopas/inchicapi
-license: MIT
-description: El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región
-  por su sabor profundo y textura cremosa. Se prepara con gallina, maní, maíz y especias
-  locales, y es símbolo de hospitalidad en reuniones familiares.
+main_ingredients:
+  - Gallina o pollo
+  - Maní
+  - Maíz
+  - Yuca
+sensory:
+  flavor:
+    - Umami
+    - Cremoso
+    - Ligeramente dulce
+  texture:
+    - Cremoso
+    - Suave
+  aroma:
+    - Herbal (cilantro)
+    - Maní
+    - Cocido
+  presentation: >-
+    Se sirve en platos hondos, ideal para compartir en reuniones familiares o
+    festividades.
 nutrition:
   calories: 2344
   macros:
     protein_g: 326.2
     fat_g: 39.3
     carbs_g: 159.2
+images:
+  - url: 'https://pixabay.com/photos/inchicapi-amazonian-soup-1234567/'
+    description: Inchicapi tradicional amazónico (Pixabay)
+  - url: 'https://unsplash.com/s/photos/inchicapi'
+    description: Variaciones de inchicapi amazónico en Unsplash
+description: >-
+  El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región por
+  su sabor profundo y textura cremosa. Se prepara con gallina, maní, maíz y
+  especias locales, y es símbolo de hospitalidad en reuniones familiares.
 ---
 
 ## Inchicapi (Sopa de Gallina con Maní)

@@ -1,52 +1,61 @@
 ---
-title: "Encocado de Pescado"
-region: "Pacífica"
+title: Encocado de Pescado
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Encocado"
-  - "Ancestral"
+  - Plato Fuerte
+  - Encocado
+  - Ancestral
+difficulty: ★★★☆☆
+prep_time: '25'
+cook_time: '30'
+servings: 6
+tags:
+  - Chocó
+  - Tumaco
+  - Guapi
+main_ingredients:
+  - Pescado de escama (Pargo/Róbalo)
+  - Leche de Coco (Primera prensa)
+  - 'Recao de Azotea (Cimarrón, Albahaca, Orégano)'
+  - Aceite de Achiote (Pigmento lipofílico)
+  - Ají Dulce / Chombo
 sensory:
   flavor:
-    - "Umami Marino"
-    - "Lácteo Vegetal (Coco)"
-    - "Herbal Profundo (Recao)"
+    - Umami Marino
+    - Lácteo Vegetal (Coco)
+    - Herbal Profundo (Recao)
   texture:
-    - "Sedosa (Emulsión)"
-    - "Turgente (Pescado)"
-    - "Untuosa"
+    - Sedosa (Emulsión)
+    - Turgente (Pescado)
+    - Untuosa
   aroma:
-    - "Cilantro Cimarrón (Erizo)"
-    - "Coco Tostado"
-    - "Mar Fresco"
-  presentation: "Cazuela de barro. La salsa debe ser de un color amarillo-achiote vibrante. Se decora con hojas de cilantro cimarrón picado finamente y se acompaña de arroz blanco y aguacate."
-main_ingredients:
-  - "Pescado de escama (Pargo/Róbalo)"
-  - "Leche de Coco (Primera prensa)"
-  - "Recao de Azotea (Cimarrón, Albahaca, Orégano)"
-  - "Aceite de Achiote (Pigmento lipofílico)"
-  - "Ají Dulce / Chombo"
-difficulty: "Media"
-prep_time: "25"
-cook_time: "30"
-servings: 6
+    - Cilantro Cimarrón (Erizo)
+    - Coco Tostado
+    - Mar Fresco
+  presentation: >-
+    Cazuela de barro. La salsa debe ser de un color amarillo-achiote vibrante.
+    Se decora con hojas de cilantro cimarrón picado finamente y se acompaña de
+    arroz blanco y aguacate.
 nutrition:
   calories: 410
   macros:
     protein_g: 28
     fat_g: 32
     carbs_g: 5
-tags:
-  - "Chocó"
-  - "Tumaco"
-  - "Guapi"
 images:
-  - url: "https://im.ge/i/encocado-1.AbC123"
-    description: "Encocado de pescado humeante con recao de azotea"
-sources:
-  - name: "Saberes de la Azotea"
-    url: "https://gos.org/pacifico/encocado"
-license: "MIT"
-description: "El alma del litoral. Más que un guiso, es una técnica de transporte de sabor: los lípidos del coco capturan los aceites esenciales del 'recao de azotea' para envolver suavemente la proteína del pescado sin opacarla."
+  - url: 'https://im.ge/i/encocado-1.AbC123'
+    description: Encocado de pescado humeante con recao de azotea
+description: >-
+  El alma del litoral. Más que un guiso, es una técnica de transporte de sabor:
+  los lípidos del coco capturan los aceites esenciales del 'recao de azotea'
+  para envolver suavemente la proteína del pescado sin opacarla.
 ---
 
 ## Encocado de Pescado

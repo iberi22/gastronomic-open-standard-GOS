@@ -1,55 +1,58 @@
 ---
 title: Empanada Colombiana
 region: Nacional
+language: es
+license: MIT
+source:
+  name: recetasdecolombia.com
+  url: 'https://www.recetasdecolombia.com/empanadas'
+  date_retrieved: '2026-09-03'
 categories:
-- Snack
-- Entrada
-- Comida callejera
-sensory:
-  flavor:
-  - Salado
-  - Especiado
-  texture:
-  - Crujiente por fuera
-  - Suave y jugoso por dentro
-  aroma:
-  - Frito
-  - Especiado
-  presentation: Se sirve caliente, en servilleta o bandeja, ideal para compartir o
-    como merienda rápida.
-main_ingredients:
-- Harina de maíz
-- Papa
-- Carne molida
+  - Snack
+  - Entrada
+  - Comida callejera
 difficulty: ★★☆☆☆
 prep_time: 40 minutos
 cook_time: 15 minutos
 servings: 15
-images:
-- url: ./images/empanada.png
-  description: Empanadas Colombianas fritas y crocantes (Generada por AI)
-sources:
-- https://www.recetasdecolombia.com/empanadas
-- https://www.youtube.com/results?search_query=empanada+colombiana
-- https://www.tiktok.com/tag/empanadacolombiana
-license: MIT
 tags:
-- colombiano
-- tradicional
-- snack
-- callejero
-- empanada
-- open source
-description: La empanada es uno de los snacks más emblemáticos y queridos de Colombia.
-  Su versión más popular es la empanada de papa y carne, frita y crocante, presente
-  en cada esquina, feria y reunión familiar. Es tendencia en redes por su versatilidad
-  y el ritual de acompañarla con ají casero.
+  - colombiano
+  - tradicional
+  - snack
+  - callejero
+  - empanada
+  - open source
+main_ingredients:
+  - Harina de maíz
+  - Papa
+  - Carne molida
+sensory:
+  flavor:
+    - Salado
+    - Especiado
+  texture:
+    - Crujiente por fuera
+    - Suave y jugoso por dentro
+  aroma:
+    - Frito
+    - Especiado
+  presentation: >-
+    Se sirve caliente, en servilleta o bandeja, ideal para compartir o como
+    merienda rápida.
 nutrition:
   calories: 1514
   macros:
-    protein_g: 92.0
+    protein_g: 92
     fat_g: 47.3
     carbs_g: 190.3
+images:
+  - url: ./images/empanada.png
+    description: Empanadas Colombianas fritas y crocantes (Generada por AI)
+description: >-
+  La empanada es uno de los snacks más emblemáticos y queridos de Colombia. Su
+  versión más popular es la empanada de papa y carne, frita y crocante, presente
+  en cada esquina, feria y reunión familiar. Es tendencia en redes por su
+  versatilidad y el ritual de acompañarla con ají casero.
 ---
 
 ## Empanada Colombiana

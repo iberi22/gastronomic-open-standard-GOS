@@ -1,56 +1,11 @@
 ---
-title: Chupe de Camarones
-region: Costa/Sierra
-categories:
-  - Sopa
-  - Marino
-  - Festivo
-sensory:
-  flavor:
-    - Umami Profundo (Camarón y coral)
-    - Lácteo (Leche evaporada y queso)
-    - Herbal (Huacatay)
-  texture:
-    - Líquida-Sedosa (Caldo espeso)
-    - Carnosa (Colas de camarón)
-    - Cremosa (Huevo poche y queso paria)
-  aroma:
-    - Camarón tostado y ajo frito
-    - Huacatay fresco
-    - Ají panca y orégano
-  presentation: Servido en un plato sopero hondo muy caliente, con camarones enteros gigantes coronando el caldo rojo-anaranjado, decorado con un huevo escalfado, dados de queso fresco que se derriten lentamente, choclo y un hilo de huacatay fresco picado.
-main_ingredients:
-  - Camarones enteros frescos (río)
-  - Pasta de ají panca
-  - Leche evaporada entera
-  - Queso fresco paria (andino)
-  - Arroz blanco
-  - Huacatay fresco (Minthostachys mollis)
-difficulty: ★★★★☆
-prep_time: 35 minutos
-cook_time: 30 minutos
-servings: 4
-nutrition:
-  calories: 720
-  macros:
-    protein_g: 48
-    fat_g: 24
-    carbs_g: 62
-tags:
-  - Chupe
-  - Camarones
-  - Arequipa
-  - Sopa
-images:
-  - url: https://images.unsplash.com/photo-1534422298391-e4f8c172dddb
-    description: Chupe de Camarones arequipeño tradicional
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: El Chupe de Camarones es una sopa soberbia y reconstituyente, insignia de la culinaria de Arequipa. Fusiona camarones de río frescos, papas, choclo, habas, arroz y queso andino en un caldo sustancioso aromatizado con ají panca y huacatay, enriquecido con leche evaporada y huevo.
+title: "Chupe De Camarones"
+region: "Perú"
+categories: ["Sierra"]
+difficulty: "★★★★☆"
+prep_time: "35 minutos"
+cook_time: "30 minutos"
+servings: "4"
 ---
 
 # Chupe de Camarones
@@ -73,7 +28,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
 * **El Aderezo Base:**
     * 1 cebolla roja grande, picada en cuadritos muy pequeños (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 1/2 taza de pasta de **[Ají Panca](/dishes/peruvian/sierra/../../ingredients/aji_panca)** de buena calidad
+    * 1/2 taza de pasta de **[Ají Panca](../../ingredients/aji_panca)** de buena calidad
     * 2 cucharadas de aceite vegetal o de manteca de cerdo
     * Sal, pimienta y comino al gusto
 * **Los Elementos de Sustento:**
@@ -82,7 +37,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
     * 1 choclo grande, cortado en rodajas gruesas
     * 1/2 taza de habas verdes frescas (peladas)
     * 1/2 taza de arvejas (guisantes) frescas
-    * 1 rama grande de **[Huacatay](/dishes/peruvian/sierra/../../ingredients/huacatay)** (hierba aromática andina)
+    * 1 rama grande de **[Huacatay](../../ingredients/huacatay)** (hierba aromática andina)
 * **Ligantes y Acabado:**
     * 1 taza de leche evaporada entera
     * 200 g de queso paria o queso fresco andino salado, cortado en cubos de 2 cm
@@ -115,7 +70,7 @@ El Chupe de Camarones es un plato monumental, cumbre de la cocina de picantería
 
 ## 📸 Galería
 
-![Chupe de Camarones](/dishes/peruvian/sierra/images/chupe.webp)
+![Chupe de Camarones](./images/chupe.jpg)
 
 ---
 

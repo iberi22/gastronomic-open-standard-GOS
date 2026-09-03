@@ -1,51 +1,11 @@
 ---
-title: "Gyudon (Donburi de Res)"
-region: "Tokyo"
-categories:
-  - "Plato fuerte"
-  - "Donburi"
-sensory:
-  flavor:
-    - "Dulce salado (Shoyu + Mirin)"
-    - "Umami de res"
-    - "Cebolla pochada dulce"
-  texture:
-    - "Finas láminas de carne muy tiernas"
-    - "Arroz impregnado de salsa"
-  aroma:
-    - "Mirin y dashi"
-    - "Cebolla dulce"
-  presentation: "Cuenco de arroz caliente cubierto con fina carne de res y cebolla cocinada en dashi dulce."
-main_ingredients:
-  - "Carne de res cortada muy fina"
-  - "Cebolla"
-  - "Arroz japonés"
-  - "Caldo dashi"
-  - "Salsa de soja"
-  - "Mirin"
-  - "Sake de cocina"
-  - "Beni shoga"
+title: "Gyudon (Donburi De Res)"
+region: "Japón"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "10 minutos"
 cook_time: "15 minutos"
-servings: 2
-nutrition:
-  calories: 580
-  macros:
-    protein_g: 26.0
-    fat_g: 18.0
-    carbs_g: 78.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Gyudon (Donburi de Res) tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Gyudon es un popular donburi japonés consistente en finísimas lonchas de res y cebolla cocidas a fuego lento en un dashi sazonado con soja y mirin."
+servings: "2"
 ---
 
 # Gyudon (Donburi de Res)

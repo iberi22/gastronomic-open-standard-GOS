@@ -1,56 +1,11 @@
 ---
-title: Pescado con Coco Estilo Samaná
-region: República Dominicana
-categories:
-- Plato fuerte
-- Mariscos
-- Tradicional
-sensory:
-  flavor:
-  - Lácteo (coco)
-  - Salado
-  - Sutilmente dulce
-  texture:
-  - Suave (pescado delicado)
-  - Cremoso (salsa de coco espesa)
-  aroma:
-  - Coco dulce fresco
-  - Pescado frito caliente
-  - Pimientos y cilantro ancho
-  presentation: Servido de inmediato sobre un plato llano hondo, cubierto generosamente con la salsa de coco de color amarillo pálido brillante.
-main_ingredients:
-- Pescado entero (chillo o pargo rojo)
-- Leche de coco fresca
-- Pimiento verde y rojo
-- Cebolla roja
-- Ajo fresco
-- Aceite de coco (o vegetal)
-- Cilantro ancho
-difficulty: ★★★☆☆
-prep_time: 20 minutos
-cook_time: 25 minutos
-servings: 4
-nutrition:
-  calories: 460
-  macros:
-    protein_g: 32.0
-    fat_g: 28.0
-    carbs_g: 12.0
-tags:
-- Pescado
-- Coco
-- Samaná
-- Mariscos
-- República Dominicana
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1534422298391-e4f8c172dddb
-  description: Pescado entero bañado en salsa de coco cremosa (Unsplash)
-sources:
-- https://www.cocinadominicana.com/pescado-con-coco-receta/
-- https://www.elfogondelulublog.com/receta-de-pescado-con-coco/
-license: MIT
-description: El Pescado con Coco es la joya gastronómica de la península de Samaná, en la costa noreste de la República Dominicana. Consiste en filetes o pescados enteros frescos que se sazonan con limón, se sellan ligeramente y luego se cocinan a fuego lento en una exquisita y cremosa salsa de leche de coco.
+title: "Pescado Con Coco Estilo Samaná"
+region: "República Dominicana"
+categories: ["Plato"]
+difficulty: "★★★☆☆"
+prep_time: "20 minutos"
+cook_time: "25 minutos"
+servings: "4"
 ---
 
 # Pescado con Coco Estilo Samaná
@@ -109,7 +64,7 @@ El Pescado con Coco es el plato insignia de la cocina costera dominicana, espec�
 
 ## 📸 Galería
 
-![Plato tradicional de Pescado con Coco dominicano caliente](/dishes/dominican/images/pescado_coco_1.webp)
+![Plato tradicional de Pescado con Coco dominicano caliente](./images/pescado_coco_1.jpg)
 
 ---
 

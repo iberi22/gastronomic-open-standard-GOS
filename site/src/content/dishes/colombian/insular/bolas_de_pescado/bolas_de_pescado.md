@@ -1,21 +1,8 @@
 ---
-title: Bolas de Pescado (Fish Balls)
-description: Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés
-  y Providencia. Se preparan a partir de pescado fresco desmenuzado, sazonado con
-  especias y vegetales, y luego se forman bolas que se fríen hasta dorar. Son ideales
-  como entrada, acompañante o plato principal.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 1359
-  macros:
-    protein_g: 139.3
-    fat_g: 74.9
-    carbs_g: 16.9
-embedding_version: 1
+title: "Bolas De Pescado (Fish Balls)"
+region: "Colombia"
+categories: ["Bolas_de_pescado"]
+difficulty: "★★☆☆☆"
 ---
 
 # Bolas de Pescado (Fish Balls)
@@ -66,7 +53,7 @@ Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés y Provi
 
 ## 📸 Galería
 
-![Bolas de pescado fritas](/dishes/colombian/insular/bolas_de_pescado/images/1.webp)
+![Bolas de pescado fritas](./images/1.png)
 
 ---
 

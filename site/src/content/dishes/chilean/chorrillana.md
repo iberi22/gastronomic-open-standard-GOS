@@ -1,55 +1,11 @@
 ---
 title: "Chorrillana Chilena"
-region: "Valparaíso"
-categories:
-  - "Plato fuerte"
-  - "Para compartir"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Dulce sutil"
-  texture:
-    - "Crujiente"
-    - "Blanda"
-    - "Masticable"
-  aroma:
-    - "Papas fritas"
-    - "Carne salteada"
-    - "Cebolla frita"
-  presentation: "Se sirve típicamente en una gran fuente de metal o plato ovalado gigante al centro de la mesa, con todos los ingredientes apilados en capas abundantes y coronado con huevos fritos o revueltos."
-main_ingredients:
-  - "Papas"
-  - "Carne de vacuno (lomo o posta)"
-  - "Cebolla"
-  - "Huevos"
-  - "Aceite vegetal (para freír)"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "20 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 780
-  macros:
-    protein_g: 38
-    fat_g: 42
-    carbs_g: 64
-tags:
-  - "Chile"
-  - "Papas Fritas"
-  - "Carne"
-  - "Compartir"
-  - "Bar"
-  - "Valparaíso"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Chorrillana clásica de Valparaíso abundante con papas fritas y carne"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "La Chorrillana es un plato chileno abundante originario de la ciudad portuaria de Valparaíso, ideal para compartir entre amigos en bares tradicionales. Consiste en una base generosa de papas fritas crujientes cubiertas con carne de vacuno salteada, cebolla caramelizada y huevos fritos o revueltos."
+servings: "4"
 ---
 
 # Chorrillana Chilena

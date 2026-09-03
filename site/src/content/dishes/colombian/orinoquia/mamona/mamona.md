@@ -1,51 +1,13 @@
 ---
-title: "Mamona (Ternera a la Llanera)"
-region: "Orinoquía"
-categories:
-  - "Plato Fuerte"
-  - "Asado"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Umami Intenso"
-    - "Ahumado de Leña"
-    - "Salinidad Primaria"
-  texture:
-    - "Fibrosa-Tierna"
-    - "Crujiente (Cuero)"
-    - "Self-Basted (Jugosa)"
-  aroma:
-    - "Leña Roja"
-    - "Grasa Tostada"
-    - "Campo abierto"
-  presentation: "Se sirve en cortes transversales directamente de la estaca. La carne debe exhibir un 'anillo de humo' (smoke ring) y una costra salada exterior. Tradicionalmente se sirve sobre mesas de madera rústica."
-main_ingredients:
-  - "Ternera Hembra (Joven, ~18 meses)"
-  - "Sal de grano grueso"
-  - "Leña (Maderas duras regionales)"
-difficulty: "Alta (Control de fuego)"
+title: "Mamona (Ternera A La Llanera)"
+region: "Colombia"
+categories: ["Mamona"]
+difficulty: "★★★★☆"
 prep_time: "120"
 cook_time: "320"
-servings: 12
-nutrition:
-  calories: 450
-  macros:
-    protein_g: 32
-    fat_g: 28
-    carbs_g: 0
-tags:
-  - "Villavicencio"
-  - "Yopal"
-  - "Parrilla"
-images:
-  - url: "https://im.ge/i/mamona-1.AbC456"
-    description: "Mamona asándose de forma vertical en estacas"
-sources:
-  - name: "Cultura Llanera GOS"
-    url: "https://gos.org/orinoquia/mamona"
-license: "MIT"
-description: "La cumbre del asado suramericano. La Mamona no es solo carne asada; es una técnica de transferencia de calor radiante donde la gravedad juega un papel crucial en el auto-baño de grasas, resultando en una carne de ternura inigualable."
+servings: "12"
 ---
+
 ## Mamona (Ternera a la Llanera)
 
 La Mamona, también conocida como Ternera a la Llanera, es el plato más emblemático de la región Orinoquía colombiana. Consiste en carne de res joven asada al calor de leña, sazonada con hierbas y acompañada de yuca, plátano y ají. Es el centro de las celebraciones llaneras y símbolo de hospitalidad.

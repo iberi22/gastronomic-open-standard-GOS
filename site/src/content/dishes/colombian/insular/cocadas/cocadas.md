@@ -1,21 +1,8 @@
 ---
-title: Cocadas
-description: Las cocadas son uno de los dulces más tradicionales de la región Insular
-  y de toda la costa Caribe colombiana. En San Andrés y Providencia, se preparan con
-  coco fresco rallado, azúcar y, en ocasiones, leche condensada o frutas tropicales.
-  Son ideales como postre o snack para compartir.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 2510
-  macros:
-    protein_g: 110.4
-    fat_g: 50.6
-    carbs_g: 401.6
-embedding_version: 1
+title: "Cocadas"
+region: "Colombia"
+categories: ["Cocadas"]
+difficulty: "★★☆☆☆"
 ---
 
 # Cocadas
@@ -63,7 +50,7 @@ Las cocadas son uno de los dulces más tradicionales de la región Insular y de 
 
 ## 📸 Galería
 
-![Cocadas de coco doradas](/dishes/colombian/insular/cocadas/images/1.webp)
+![Cocadas de coco doradas](./images/1.png)
 
 ---
 

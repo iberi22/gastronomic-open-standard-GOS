@@ -2,6 +2,10 @@
 title: "Mote De Queso"
 region: "Colombia"
 categories: ["Otras_preparaciones"]
+difficulty: "★★★☆☆"
+prep_time: "20 minutos"
+cook_time: "1 hora"
+servings: "6"
 ---
 
 ## Ingredientes
@@ -28,7 +32,7 @@ categories: ["Otras_preparaciones"]
 
 ## 📸 Galería
 
-
+![Mote de Queso Tradicional](../caribe/mote_de_queso/images/1.png)
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 

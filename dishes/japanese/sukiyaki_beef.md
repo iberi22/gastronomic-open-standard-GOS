@@ -1,50 +1,59 @@
 ---
-title: "Sukiyaki Nabemono"
-region: "Kanto"
+title: Sukiyaki Nabemono
+region: Kanto
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Nabemono / Cazuela"
+  - Plato fuerte
+  - Nabemono / Cazuela
+difficulty: ★★★☆☆
+prep_time: 25 minutos
+cook_time: 20 minutos
+servings: 4
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Carne de res para sukiyaki (wagyu)
+  - Tofu frito
+  - Fideos Shirataki
+  - Col china
+  - Setas enoki y shiitake
+  - Warishita tare
+  - Huevos frescos
 sensory:
   flavor:
-    - "Dulce intenso (Warishita)"
-    - "Umami rico"
-    - "Cremoso de huevo crudo"
+    - Dulce intenso (Warishita)
+    - Umami rico
+    - Cremoso de huevo crudo
   texture:
-    - "Carne de res marmolada suave"
-    - "Vegetales crujientes"
+    - Carne de res marmolada suave
+    - Vegetales crujientes
   aroma:
-    - "Warishita (soja + azúcar + mirin)"
-    - "Carne marmolada"
-  presentation: "Cazuela de hierro en la mesa cocinando carne y verduras, que se mojan en tazón de huevo batido crudo."
-main_ingredients:
-  - "Carne de res para sukiyaki (wagyu)"
-  - "Tofu frito"
-  - "Fideos Shirataki"
-  - "Col china"
-  - "Setas enoki y shiitake"
-  - "Warishita tare"
-  - "Huevos frescos"
-difficulty: "★★★☆☆"
-prep_time: "25 minutos"
-cook_time: "20 minutos"
-servings: 4
+    - Warishita (soja + azúcar + mirin)
+    - Carne marmolada
+  presentation: >-
+    Cazuela de hierro en la mesa cocinando carne y verduras, que se mojan en
+    tazón de huevo batido crudo.
 nutrition:
   calories: 710
   macros:
-    protein_g: 40.0
-    fat_g: 38.0
-    carbs_g: 52.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 40
+    fat_g: 38
+    carbs_g: 52
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Sukiyaki Nabemono tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Sukiyaki es un plato de cazuela (nabemono) donde finas láminas de res de alta calidad se cocinan en la mesa en una salsa dulce y densa de soja y azúcar."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Sukiyaki Nabemono tradicional
+description: >-
+  El Sukiyaki es un plato de cazuela (nabemono) donde finas láminas de res de
+  alta calidad se cocinan en la mesa en una salsa dulce y densa de soja y
+  azúcar.
 ---
 
 # Sukiyaki Nabemono

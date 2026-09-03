@@ -2,6 +2,10 @@
 title: "Viudo De Pescado"
 region: "Colombia"
 categories: ["Viudo_de_pescado"]
+difficulty: "★★★☆☆"
+prep_time: "30"
+cook_time: "45"
+servings: "6"
 ---
 
 # Viudo de Pescado
@@ -52,7 +56,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 
 ## 📸 Galería
 
-
+![Viudo de Pescado](./images/1.png)
 
 ---
 

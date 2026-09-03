@@ -1,10 +1,33 @@
 ---
 title: Seco de Cabrito
 region: Costa (Norte)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Plato fuerte
   - Criollo
   - Festivo
+difficulty: ★★★★☆
+prep_time: 30 minutos
+cook_time: 1 hora 15 minutos
+servings: 6
+tags:
+  - Seco
+  - Cabrito
+  - Chiclayo
+  - Criollo
+main_ingredients:
+  - Carne de cabrito (o cordero tierno)
+  - Culantro (Cilantro) fresco
+  - Chicha de jora (maíz fermentado)
+  - Pasta de ají amarillo
+  - Pasta de ají mirasol
+  - Loche (zapallo loche norteño)
 sensory:
   flavor:
     - Ácido (Chicha de Jora)
@@ -18,39 +41,23 @@ sensory:
     - Cilantro fresco sofrito
     - Chicha de jora fermentada
     - Comino y ajo dorado
-  presentation: Trozos tiernos de cabrito bañados en una espesa salsa verde oscura de cilantro, acompañados tradicionalmente de frijoles bayos, arroz blanco graneado, yucas cocidas y salsa criolla.
-main_ingredients:
-  - Carne de cabrito (o cordero tierno)
-  - Culantro (Cilantro) fresco
-  - Chicha de jora (maíz fermentado)
-  - Pasta de ají amarillo
-  - Pasta de ají mirasol
-  - Loche (zapallo loche norteño)
-difficulty: ★★★★☆
-prep_time: 30 minutos
-cook_time: 1 hora 15 minutos
-servings: 6
+  presentation: >-
+    Trozos tiernos de cabrito bañados en una espesa salsa verde oscura de
+    cilantro, acompañados tradicionalmente de frijoles bayos, arroz blanco
+    graneado, yucas cocidas y salsa criolla.
 nutrition:
   calories: 680
   macros:
     protein_g: 42
     fat_g: 26
     carbs_g: 54
-tags:
-  - Seco
-  - Cabrito
-  - Chiclayo
-  - Criollo
 images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
     description: Seco de Cabrito norteño tradicional
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: El Seco de Cabrito es el guiso rey de la costa norte peruana. Consiste en trozos de cabrito de leche macerados en chicha de jora y cocidos lentamente en un aderezo espeso de cilantro licuado, ajíes locales y zapallo loche rallado.
+description: >-
+  El Seco de Cabrito es el guiso rey de la costa norte peruana. Consiste en
+  trozos de cabrito de leche macerados en chicha de jora y cocidos lentamente en
+  un aderezo espeso de cilantro licuado, ajíes locales y zapallo loche rallado.
 ---
 
 # Seco de Cabrito

@@ -1,57 +1,66 @@
 ---
 title: Pollo Guisado Dominicano
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: cocinadominicana.com
+  url: 'https://www.cocinadominicana.com/pollo-guisado/'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Carnes
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de carne intenso
-  - Sutilmente agridulce (azúcar caramelizada)
-  texture:
-  - Extremadamente tierno (se desprende del hueso)
-  - Jugoso
-  - Suave
-  aroma:
-  - Orégano dominicano y cilantro ancho
-  - Ajo y cebolla pochados
-  - Salsa espesa de tomate
-  presentation: Servido caliente en un tazón o plato llano, bañado abundantemente con su salsa de color marrón rojizo brillante.
-main_ingredients:
-- Pollo entero troceado
-- Azúcar blanca (para caramelizar)
-- Orégano dominicano
-- Cilantro ancho
-- Pasta de tomate
-- Pimiento verde cubanela
-- Aceitunas verdes
+  - Plato fuerte
+  - Carnes
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 20 minutos
 cook_time: 40 minutos
 servings: 6
+tags:
+  - Pollo
+  - Guisado
+  - Caramelizado
+  - Sofrito
+  - República Dominicana
+  - Tradicional
+main_ingredients:
+  - Pollo entero troceado
+  - Azúcar blanca (para caramelizar)
+  - Orégano dominicano
+  - Cilantro ancho
+  - Pasta de tomate
+  - Pimiento verde cubanela
+  - Aceitunas verdes
+sensory:
+  flavor:
+    - Salado
+    - Umami de carne intenso
+    - Sutilmente agridulce (azúcar caramelizada)
+  texture:
+    - Extremadamente tierno (se desprende del hueso)
+    - Jugoso
+    - Suave
+  aroma:
+    - Orégano dominicano y cilantro ancho
+    - Ajo y cebolla pochados
+    - Salsa espesa de tomate
+  presentation: >-
+    Servido caliente en un tazón o plato llano, bañado abundantemente con su
+    salsa de color marrón rojizo brillante.
 nutrition:
   calories: 380
   macros:
-    protein_g: 34.0
-    fat_g: 18.0
-    carbs_g: 8.0
-tags:
-- Pollo
-- Guisado
-- Caramelizado
-- Sofrito
-- República Dominicana
-- Tradicional
+    protein_g: 34
+    fat_g: 18
+    carbs_g: 8
 images:
-- url: https://images.unsplash.com/photo-1544025162-d76694265947
-  description: Pollo guisado dominicano jugoso de tono dorado intenso (Unsplash)
-sources:
-- https://www.cocinadominicana.com/pollo-guisado/
-- https://www.elfogondelulublog.com/receta-de-pollo-guisado-dominicano/
-license: MIT
-description: El Pollo Guisado es la preparación de carne más común de la República Dominicana, componente esencial del almuerzo diario "La Bandera". Destaca por su técnica de dorar el pollo utilizando azúcar blanca caramelizada directamente en el aceite caliente, seguida de una cocción lenta en una salsa criolla sumamente rica y aromática.
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Pollo guisado dominicano jugoso de tono dorado intenso (Unsplash)
+description: >-
+  El Pollo Guisado es la preparación de carne más común de la República
+  Dominicana, componente esencial del almuerzo diario "La Bandera". Destaca por
+  su técnica de dorar el pollo utilizando azúcar blanca caramelizada
+  directamente en el aceite caliente, seguida de una cocción lenta en una salsa
+  criolla sumamente rica y aromática.
 ---
 
 # Pollo Guisado Dominicano

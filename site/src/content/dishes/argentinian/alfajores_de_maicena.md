@@ -1,58 +1,11 @@
 ---
-title: "Alfajores de Maicena"
-region: "Buenos Aires / Nacional"
-categories:
-  - "Postre"
-  - "Dulce"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Muy dulce"
-    - "Lácteo intenso"
-    - "Vainilla sutil"
-  texture:
-    - "Extremadamente quebradizo"
-    - "Suave en boca"
-    - "Pastosa"
-  aroma:
-    - "Dulce de leche"
-    - "Mantequilla horneada"
-    - "Coco rallado"
-    - "Limón sutil"
-  presentation: "Se sirven fríos, espolvoreados con azúcar impalpable fina en su cara superior y acomodados de forma prolija en platos de postre o bandejas de té."
-main_ingredients:
-  - "Fécula de maíz (maicena)"
-  - "Harina de trigo"
-  - "Mantequilla"
-  - "Yemas de huevo"
-  - "Dulce de leche repostero"
-  - "Coco rallado"
-  - "Ralladura de limón"
+title: "Alfajores De Maicena"
+region: "Argentina"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "30 minutos"
 cook_time: "12 minutos"
-servings: 12
-nutrition:
-  calories: 320
-  macros:
-    protein_g: 4
-    fat_g: 14
-    carbs_g: 45
-tags:
-  - "Argentina"
-  - "Alfajor"
-  - "Maicena"
-  - "Dulce de Leche"
-  - "Coco"
-  - "Postre"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Alfajores de maicena argentinos espolvoreados con coco rallado"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "El Alfajor de Maicena es una de las delicias de repostería más queridas y populares de la Argentina. Consiste en dos tapas extremadamente tiernas y quebradizas hechas con una mezcla de fécula de maíz y mantequilla, unidas por un abundante relleno de dulce de leche repostero y decoradas en su borde circular con coco rallado fino."
+servings: "12"
 ---
 
 # Alfajores de Maicena

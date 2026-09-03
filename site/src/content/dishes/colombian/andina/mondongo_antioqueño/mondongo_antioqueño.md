@@ -1,59 +1,11 @@
 ---
-title: "Mondongo Antioqueño"
-region: "Andina"
-categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Cárnico"
-    - "Especiado (Comino)"
-    - "Umami"
-    - "Rico"
-  texture:
-    - "Espeso"
-    - "Tropezudo"
-    - "Masticable (Callos)"
-    - "Suave (Vegetales)"
-  aroma:
-    - "Comino"
-    - "Cerdo"
-    - "Cilantro fresco"
-    - "Sofrito"
-  presentation: "Plato hondo rebosante, servido hirviendo. Acompañantes OBLIGATORIOS aparte: Banano maduro (clave), aguacate, arroz blanco, arepa blanca, cilantro y limón."
-main_ingredients:
-  - "Mondongo (Callo/Panza de res)"
-  - "Carne de cerdo (pierna)"
-  - "Chorizo antioqueño"
-  - "Papa criolla"
-  - "Papa capira"
-  - "Yuca"
-  - "Arveja verde"
-  - "Hogao (Tomate/Cebolla)"
-  - "Comino"
-difficulty: "Alta"
-prep_time: 240
-cook_time: 120
-servings: 8
-nutrition:
-  calories: 680
-  macros:
-    protein_g: 48
-    fat_g: 28
-    carbs_g: 58
-tags:
-  - "Antioquia"
-  - "Domingo"
-  - "Levantamuertos"
-images:
-  - url: "https://im.ge/i/mondongo-1.AbC789"
-    description: "Mondongo Antioqueño tradicional con sus acompañamientos"
-sources:
-  - name: "Patrimonio Gastronómico de Antioquia"
-    url: "https://medellin.travel"
-license: "MIT"
-description: "Sopa contundente y emblemática de los domingos antioqueños. Se basa en una cocción larga de tres tipos de proteínas (callo, cerdo, chorizo) y tres carbohidratos (papa criolla, capira, yuca), resultando en un caldo espeso y rico en colágeno. El contraste se logra con el cilantro fresco y el banano dulce."
+title: "Mondongo AntioqueñO"
+region: "Colombia"
+categories: ["Mondongo_antioqueñO"]
+difficulty: "★★★★☆"
+prep_time: "240"
+cook_time: "120"
+servings: "8"
 ---
 
 # Mondongo Antioqueño
@@ -72,13 +24,13 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
 ## 📝 Ingredientes
 
 * **Carnes:**
-    * 1 kg de **[Mondongo (Callo)](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)** (panal o librito), muy limpio y picado en cuadros pequeños.
+    * 1 kg de **[Mondongo (Callo)](../../ingredients/mondongo)** (panal o librito), muy limpio y picado en cuadros pequeños.
     * 500 g de carne de cerdo (pierna o paleta), picada en cuadros.
     * 3 chorizos antioqueños, cortados en rodajas.
 * **Vegetales:**
     * 500 g de papa capira (o pastusa), pelada y en cuadros.
-    * 250 g de **[Papa Criolla](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/papa_criolla)**, para espesar.
-    * 250 g de **[Yuca Dulce](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/yuca_dulce)**, picada en cuadros.
+    * 250 g de **[Papa Criolla](../../ingredients/papa_criolla)**, para espesar.
+    * 250 g de **[Yuca Dulce](../../ingredients/yuca_dulce)**, picada en cuadros.
     * 1 taza de arvejas verdes frescas.
     * 1 zanahoria rallada o picada muy fino.
 * **Guiso (Base):**
@@ -87,7 +39,7 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
     * 2 dientes de ajo, triturados.
     * 1 cucharadita de comino.
     * Sal y pimienta.
-    * **[Cilantro](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/cilantro)** fresco al gusto.
+    * **[Cilantro](../../ingredients/cilantro)** fresco al gusto.
 
 ---
 
@@ -117,7 +69,7 @@ El Mondongo Antioqueño es mucho más que una sopa; es una institución de los d
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Cárnico, Comino      | 5/5              | Cuminaldehído (comino) enmascara notas viscerales. |
 | **Aroma**| Complejo             | 4/5              | Mezcla de sofrito criollo y cerdo. |
-| **Textura**| Masticable/Espesa    | 5/5              | Contraste entre el mondongo elástico (**[Mondongo](/dishes/colombian/andina/mondongo_antioqueño/../../ingredients/mondongo)**) y el caldo almidonoso. |
+| **Textura**| Masticable/Espesa    | 5/5              | Contraste entre el mondongo elástico (**[Mondongo](../../ingredients/mondongo)**) y el caldo almidonoso. |
 | **Boca** | Sedosa               | 4/5              | Gelatina disuelta del mondongo + almidón de papa. |
 
 ### ⚗️ Química y Física Culinaria

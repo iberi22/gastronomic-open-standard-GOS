@@ -1,55 +1,14 @@
 ---
-title: "Mote de Queso"
-region: "Caribe"
-categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Vegetariano (casi)"
-sensory:
-  flavor:
-    - "Alcalino (Queso)"
-    - "Umami lácteo"
-    - "Herbal (Bleo/Cilantro)"
-  texture:
-    - "Viscoso (Baba de ñame)"
-    - "Sedoso"
-    - "Tropezudo (Queso firme)"
-  aroma:
-    - "Leche fermentada"
-    - "Sofrito de ajo"
-    - "Tierra dulce (Ñame)"
-  presentation: "Cazuela rebosante. El caldo debe ser blanco y espeso, con cubos de queso visibles y un 'remolino' de suero costeño encima. Acompañado de arroz blanco y aguacate."
-main_ingredients:
-  - "Ñame Espino (Dioscorea rotundata)"
-  - "Queso Costeño (Duro/Salado)"
-  - "Suero Costeño"
-  - "Cebolla Roja"
-  - "Ajo"
-  - "Bleo de Chupa (opcional/tradicional)"
-  - "Jugo de limón (secreto)"
-difficulty: "Media"
+title: "Mote De Queso"
+region: "Colombia"
+categories: ["Mote_de_queso"]
+difficulty: "★★★☆☆"
 prep_time: "30"
 cook_time: "90"
-servings: 8
-nutrition:
-  calories: 450
-  macros:
-    protein_g: 18
-    fat_g: 22
-    carbs_g: 48
-tags:
-  - "Sucre"
-  - "Córdoba"
-  - "Semana Santa"
-images:
-  - url: "https://im.ge/i/mote-1.AbC789"
-    description: "Mote de Queso espeso con suero y sofrito"
-sources:
-  - name: "Festival del Mote de Queso"
-    url: "https://sincelejo.gov.co"
-license: "MIT"
-description: "El emblema de la sabana caribeña. Una sopa que desafía la física: utiliza los mucílagos del ñame espino para crear una suspensión coloidal estable de queso y suero, sin cortarse. Es un estudio de la interacción entre almidones y ácidos lácteos."
----## Mote de Queso
+servings: "8"
+---
+
+## Mote de Queso
 
 El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especialmente popular en Córdoba y Sucre. Se prepara con ñame, queso costeño y suero, resultando en un plato reconfortante, salado y ligeramente ácido, ideal para celebraciones y almuerzos familiares.
 
@@ -96,7 +55,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ## 📸 Galería
 
-![Mote de Queso Costeño](/dishes/colombian/caribe/mote_de_queso/images/1.webp)
+![Mote de Queso Costeño](./images/1.png)
 
 ---
 
@@ -161,7 +120,7 @@ El Mote de Queso es una sopa cremosa y emblemática de la región Caribe, especi
 
 ## 📸 Galería y Evidencia
 
-![Mote de Queso Costeño](/dishes/colombian/caribe/mote_de_queso/images/1.webp)
+![Mote de Queso Costeño](./images/1.png)
 
 ### Etiquetas extraídas de comentarios
 

@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Panes"]
+difficulty: "★★☆☆☆"
+---
+
 # Panes Peruanos
 
 El pan en el Perú tiene una historia rica y diversa, con variedades regionales y técnicas tradicionales.

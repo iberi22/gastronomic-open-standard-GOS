@@ -1,51 +1,11 @@
 ---
-title: Chocolate Santafereño
-region: Andina
-categories:
-- Bebida caliente
-- Desayuno
-- Merienda
-sensory:
-  flavor:
-  - Dulce
-  - Lácteo
-  - Chocolate
-  texture:
-  - Cremoso
-  - Espumoso
-  aroma:
-  - Chocolate
-  - Leche
-  presentation: Se sirve en tazas grandes, ideal para mañanas frías o onces bogotanas.
-    El queso derretido es la sorpresa.
-main_ingredients:
-- Chocolate de mesa
-- Leche
-- Queso fresco
-difficulty: ★☆☆☆☆
+title: "Chocolate SantafereñO"
+region: "Colombia"
+categories: ["Chocolate_santafereñO"]
+difficulty: "★☆☆☆☆"
 prep_time: "15 minutos"
 cook_time: "10 minutos"
-servings: 3
-images:
-- url: https://pixabay.com/es/photos/chocolate-colombiano-bogota-6146284/
-  description: Taza de chocolate santafereño con queso (Pixabay)
-- url: https://unsplash.com/s/photos/chocolate-colombia
-  description: Variaciones de chocolate caliente en Unsplash
-sources:
-- https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o
-- https://www.youtube.com/results?search_query=chocolate+con+queso+colombiano
-- https://www.tiktok.com/tag/chocolateconqueso
-license: MIT
-description: El chocolate santafereño es una bebida caliente tradicional de Bogotá
-  y el altiplano cundiboyacense. Se prepara con chocolate de mesa, leche y agua, y
-  se sirve con queso, almojábana o pan. Es tendencia por su ritual de "chocolate con
-  queso" y su presencia en desayunos y onces.
-nutrition:
-  calories: 507
-  macros:
-    protein_g: 30.8
-    fat_g: 33.2
-    carbs_g: 23.2
+servings: "3"
 ---
 
 
@@ -90,7 +50,7 @@ El chocolate santafereño es una bebida caliente tradicional de Bogotá y el alt
 
 ## 📸 Galería
 
-![Chocolate santafereño con queso](/dishes/colombian/bebidas/chocolate_santafereño/images/1.webp)
+![Chocolate santafereño con queso](./images/1.png)
 
 ---
 

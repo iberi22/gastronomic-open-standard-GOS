@@ -1,52 +1,61 @@
 ---
 title: Morir Soñando Dominicano
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: cocinadominicana.com
+  url: 'https://www.cocinadominicana.com/morir-sonando-receta/'
+  date_retrieved: '2026-09-03'
 categories:
-- Bebida
-- Tradicional
-sensory:
-  flavor:
-  - Dulce
-  - Cítrico (naranja)
-  - Lácteo cremoso
-  texture:
-  - Líquido
-  - Espumoso
-  - Sedoso
-  aroma:
-  - Naranja fresca exprimida
-  - Leche condensada y vainilla
-  presentation: Servido muy frío en vasos altos de vidrio con abundante hielo picado, decorado con una rodaja de naranja fresca en el borde.
-main_ingredients:
-- Jugo de naranja fresca
-- Leche evaporada
-- Azúcar blanca refinada
-- Esencia de vainilla
-- Hielo picado
+  - Bebida
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 5 minutos
 cook_time: 0 minutos
 servings: 2
+tags:
+  - Bebida
+  - Naranja
+  - Leche
+  - República Dominicana
+  - Tradicional
+main_ingredients:
+  - Jugo de naranja fresca
+  - Leche evaporada
+  - Azúcar blanca refinada
+  - Esencia de vainilla
+  - Hielo picado
+sensory:
+  flavor:
+    - Dulce
+    - Cítrico (naranja)
+    - Lácteo cremoso
+  texture:
+    - Líquido
+    - Espumoso
+    - Sedoso
+  aroma:
+    - Naranja fresca exprimida
+    - Leche condensada y vainilla
+  presentation: >-
+    Servido muy frío en vasos altos de vidrio con abundante hielo picado,
+    decorado con una rodaja de naranja fresca en el borde.
 nutrition:
   calories: 220
   macros:
     protein_g: 4.5
-    fat_g: 5.0
-    carbs_g: 38.0
-tags:
-- Bebida
-- Naranja
-- Leche
-- República Dominicana
-- Tradicional
+    fat_g: 5
+    carbs_g: 38
 images:
-- url: https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd
-  description: Vaso alto de Morir Soñando frío y espumoso con naranja (Unsplash)
-sources:
-- https://www.cocinadominicana.com/morir-sonando-receta/
-- https://www.elfogondelulublog.com/receta-de-morir-sonando-dominicano/
-license: MIT
-description: El Morir Soñando es la bebida refrescante más famosa de la República Dominicana. Consiste en una deliciosa y espumosa mezcla de jugo de naranja fresca y leche evaporada dulce con vainilla y abundante hielo picado, mezclada de forma física muy específica para evitar que la acidez de la naranja corte la leche.
+  - url: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd'
+    description: Vaso alto de Morir Soñando frío y espumoso con naranja (Unsplash)
+description: >-
+  El Morir Soñando es la bebida refrescante más famosa de la República
+  Dominicana. Consiste en una deliciosa y espumosa mezcla de jugo de naranja
+  fresca y leche evaporada dulce con vainilla y abundante hielo picado, mezclada
+  de forma física muy específica para evitar que la acidez de la naranja corte
+  la leche.
 ---
 
 # Morir Soñando Dominicano

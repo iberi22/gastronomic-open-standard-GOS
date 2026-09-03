@@ -1,56 +1,11 @@
 ---
-title: Papa a la Huancaína
-region: Sierra/Costa
-categories:
-  - Entrada
-  - Criollo
-  - Frío
-sensory:
-  flavor:
-    - Lácteo-Salado (Queso fresco)
-    - Picante Muy Suave (Ají Amarillo)
-    - Umami (Galletas de soda)
-  texture:
-    - Aterciopelada (Salsa huancaína)
-    - Arenosa-Tierna (Papa cocida)
-    - Firme (Huevo duro)
-  aroma:
-    - Ají amarillo sofrito y queso fresco
-    - Papa andina cocida
-    - Aceituna botija
-  presentation: Rodajas homogéneas de papa andina cocida dispuestas sobre hojas de lechuga, cubiertas generosamente por una salsa cremosa de color amarillo brillante, decoradas con gajos de huevo duro y aceituna negra de botija.
-main_ingredients:
-  - Papas amarillas (o blancas arenosas)
-  - Ají amarillo fresco
-  - Queso fresco andino salado
-  - Leche evaporada entera
-  - Galletas de soda clásicas
-  - Aceite vegetal neutro
-difficulty: ★★☆☆☆
-prep_time: 20 minutos
-cook_time: 15 minutos
-servings: 6
-nutrition:
-  calories: 310
-  macros:
-    protein_g: 10
-    fat_g: 16
-    carbs_g: 32
-tags:
-  - Papa
-  - Huancaina
-  - Entrada
-  - Clasico
-images:
-  - url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c
-    description: Papa a la Huancaína tradicional peruana
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: La Papa a la Huancaína es una de las entradas más populares, sencillas y emblemáticas del Perú. Consiste en papas andinas cocidas bañadas en una salsa de textura aterciopelada elaborada a base de queso fresco, ají amarillo sofrito, leche evaporada y galletas de soda.
+title: "Papa A La HuancaíNa"
+region: "Perú"
+categories: ["Sierra"]
+difficulty: "★★☆☆☆"
+prep_time: "20 minutos"
+cook_time: "15 minutos"
+servings: "6"
 ---
 
 # Papa a la Huancaína
@@ -109,7 +64,7 @@ La Papa a la Huancaína es un clásico indiscutible que acompaña casi cualquier
 
 ## 📸 Galería
 
-![Papa a la Huancaína](/dishes/peruvian/sierra/images/huancaina.webp)
+![Papa a la Huancaína](./images/huancaina.jpg)
 
 ---
 

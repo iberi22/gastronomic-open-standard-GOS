@@ -1,49 +1,11 @@
 ---
-title: "Casabe (El Pan de la Selva)"
-region: "Amazonía / Orinoquía"
-categories:
-  - "Pan Plano"
-  - "Resiliencia"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Neutro / Tostado"
-    - "Dulzura Residual (Amilopectina)"
-    - "Cero Sal"
-  texture:
-    - "Quebradiza"
-    - "Crocante"
-    - "Harinosa"
-  aroma:
-    - "Almidón cocido"
-    - "Tierra seca"
-    - "Tostado ligero"
-  presentation: "Discos grandes (~30-50 cm). Debe ser lo suficientemente rígido para sostener guisos pero quebrarse fácilmente con la mano. Se consume en seco o hidratado con caldos."
-main_ingredients:
-  - "Yuca Amarga (*Manihot esculenta* - Cultivares ricos en cianuro)"
-  - "Agua (Solo para procesamiento)"
-difficulty: "Media-Alta (Manejo de toxicidad)"
+title: "Casabe (El Pan De La Selva)"
+region: "Colombia"
+categories: ["Casabe"]
+difficulty: "★★★★☆"
 prep_time: "180"
 cook_time: "40"
-servings: 10
-nutrition:
-  calories: 340
-  macros:
-    protein_g: 1.5
-    fat_g: 0.2
-    carbs_g: 80
-tags:
-  - "Indígena"
-  - "Soberanía"
-  - "Precolonial"
-images:
-  - url: "https://im.ge/i/casabe-1.AbC555"
-    description: "Procesamiento de la yuca amarga para casabe"
-sources:
-  - name: "Bioquímica de la Yuca Amarga GOS"
-    url: "https://gos.org/ancestral/casabe"
-license: "MIT"
-description: "La obra maestra de la ingeniería alimentaria amazónica. El Casabe es la solución biotecnológica para transformar una raíz altamente tóxica (ácido cianhídrico) en un carbohidrato estable, no perecedero y versátil."
+servings: "10"
 ---
 
 # Casabe
@@ -87,7 +49,7 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 
 ## 📸 Galería
 
-![Casabe Tradicional Llanero](/dishes/colombian/orinoquia/casabe/images/1.webp)
+![Casabe Tradicional Llanero](./images/1.png)
 
 ---
 

@@ -1,57 +1,11 @@
 ---
-title: Asopao de Pollo Puertorriqueño
-region: Puerto Rico
-categories:
-- Plato fuerte
-- Sopa
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de pollo intenso
-  - Herbal (recaito)
-  - Sutilmente dulce
-  texture:
-  - Espeso (sopa de arroz cremosa)
-  - Suave (pollo desmenuzado)
-  aroma:
-  - Recaito sofrito (culantro)
-  - Pollo hervido caliente
-  - Laurel y orégano
-  presentation: Servido muy caliente en platos hondos de barro, decorado con guisantes verdes y tiras de pimiento morrón rojo brillante.
-main_ingredients:
-- Pollo entero troceado
-- Arroz de grano medio
-- Sofrito puertorriqueño (recaito)
-- Salsa de tomate
-- Aceitunas verdes con alcaparras
-- Guisantes (arvejas) verdes
-- Pimientos morrones
-difficulty: ★★★☆☆
-prep_time: 15 minutos
-cook_time: 40 minutos
-servings: 6
-nutrition:
-  calories: 420
-  macros:
-    protein_g: 32.0
-    fat_g: 14.0
-    carbs_g: 45.0
-tags:
-- Sopa
-- Pollo
-- Arroz
-- Sofrito
-- Puerto Rico
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1541518763669-27fef04b14ea
-  description: Cazuela de asopao de pollo caliente con pimientos por encima (Unsplash)
-sources:
-- https://www.elboricua.com/asopao.html
-- https://www.quericavida.com/recetas/asopao-de-pollo-puertorriqueno/
-license: MIT
-description: El Asopao de Pollo es la sopa reconfortante por excelencia de Puerto Rico. Consiste en un guiso o sopa de arroz de grano medio.
+title: "Asopao De Pollo PuertorriqueñO"
+region: "Puerto Rico"
+categories: ["Plato"]
+difficulty: "★★★☆☆"
+prep_time: "15 minutos"
+cook_time: "40 minutos"
+servings: "6"
 ---
 
 # Asopao de Pollo Puertorriqueño
@@ -108,7 +62,7 @@ El Asopao de Pollo es el plato reconfortante supremo de Puerto Rico. A medio cam
 
 ## 📸 Galería
 
-![Asopao de pollo boricua caliente servido en plato hondo](/dishes/puerto-rican/images/asopao_1.webp)
+![Asopao de pollo boricua caliente servido en plato hondo](./images/asopao_1.jpg)
 
 ---
 

@@ -1,48 +1,57 @@
 ---
-title: "Kitsune Udon"
-region: "Osaka"
+title: Kitsune Udon
+region: Osaka
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Sopa de fideos"
+  - Plato fuerte
+  - Sopa de fideos
+difficulty: ★☆☆☆☆
+prep_time: 15 minutos
+cook_time: 15 minutos
+servings: 2
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Fideos Udon frescos
+  - Caldo Dashi estilo Kansai
+  - Aburaage (tofu frito dulce)
+  - Salsa de soja clara
+  - Mirin
+  - Cebollín picado
 sensory:
   flavor:
-    - "Dulce salado equilibrado"
-    - "Dashi limpio de Kansai"
+    - Dulce salado equilibrado
+    - Dashi limpio de Kansai
   texture:
-    - "Fideos udon gruesos y muy masticables (koshi)"
-    - "Tofu frito jugoso"
+    - Fideos udon gruesos y muy masticables (koshi)
+    - Tofu frito jugoso
   aroma:
-    - "Aburaage agridulce"
-    - "Dashi de alga kombu"
-  presentation: "Cuenco de caldo claro con fideos de 5mm de grosor cubiertos por una gran lámina dorada de aburaage."
-main_ingredients:
-  - "Fideos Udon frescos"
-  - "Caldo Dashi estilo Kansai"
-  - "Aburaage (tofu frito dulce)"
-  - "Salsa de soja clara"
-  - "Mirin"
-  - "Cebollín picado"
-difficulty: "★☆☆☆☆"
-prep_time: "15 minutos"
-cook_time: "15 minutos"
-servings: 2
+    - Aburaage agridulce
+    - Dashi de alga kombu
+  presentation: >-
+    Cuenco de caldo claro con fideos de 5mm de grosor cubiertos por una gran
+    lámina dorada de aburaage.
 nutrition:
   calories: 460
   macros:
-    protein_g: 15.0
-    fat_g: 8.0
-    carbs_g: 82.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 15
+    fat_g: 8
+    carbs_g: 82
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Kitsune Udon tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Kitsune Udon destaca por sus reconfortantes fideos gruesos de trigo servidos en un caldo ligero con un bolsillo de tofu frito (aburaage) guisado dulce."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Kitsune Udon tradicional
+description: >-
+  El Kitsune Udon destaca por sus reconfortantes fideos gruesos de trigo
+  servidos en un caldo ligero con un bolsillo de tofu frito (aburaage) guisado
+  dulce.
 ---
 
 # Kitsune Udon

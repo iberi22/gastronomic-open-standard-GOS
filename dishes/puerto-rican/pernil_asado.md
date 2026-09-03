@@ -1,55 +1,62 @@
 ---
 title: Pernil Asado Puertorriqueño
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/pernil.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Carnes
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de cerdo intenso
-  - Ajo y orégano
-  - Sutilmente ácido (vinagre)
-  texture:
-  - Extremadamente tierno (se desmenuza)
-  - Extremadamente crujiente (cuerito exterior)
-  aroma:
-  - Cerdo asado al horno
-  - Adobo boricua picante
-  presentation: Cortado en lascas grandes de carne jugosa, coronado de forma vistosa con trozos grandes de cuerito dorado y soplado súper crujiente.
-main_ingredients:
-- Pernil de cerdo (pork shoulder/picnic)
-- Ajo fresco
-- Orégano seco
-- Vinagre blanco
-- Aceite de oliva
-- Pimienta negra
+  - Plato fuerte
+  - Carnes
+  - Tradicional
 difficulty: ★★★★☆
 prep_time: 24 horas
 cook_time: 4 horas 30 minutos
 servings: 8
+tags:
+  - Cerdo
+  - Asado
+  - Adobo
+  - Navidad
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Pernil de cerdo (pork shoulder/picnic)
+  - Ajo fresco
+  - Orégano seco
+  - Vinagre blanco
+  - Aceite de oliva
+  - Pimienta negra
+sensory:
+  flavor:
+    - Salado
+    - Umami de cerdo intenso
+    - Ajo y orégano
+    - Sutilmente ácido (vinagre)
+  texture:
+    - Extremadamente tierno (se desmenuza)
+    - Extremadamente crujiente (cuerito exterior)
+  aroma:
+    - Cerdo asado al horno
+    - Adobo boricua picante
+  presentation: >-
+    Cortado en lascas grandes de carne jugosa, coronado de forma vistosa con
+    trozos grandes de cuerito dorado y soplado súper crujiente.
 nutrition:
   calories: 480
   macros:
-    protein_g: 44.0
-    fat_g: 32.0
-    carbs_g: 1.0
-tags:
-- Cerdo
-- Asado
-- Adobo
-- Navidad
-- Puerto Rico
-- Tradicional
+    protein_g: 44
+    fat_g: 32
+    carbs_g: 1
 images:
-- url: https://images.unsplash.com/photo-1544025162-d76694265947
-  description: Pernil asado boricua jugoso con cuerito crujiente (Unsplash)
-sources:
-- https://www.elboricua.com/pernil.html
-- https://www.quericavida.com/recetas/pernil-puertorriqueno/
-license: MIT
-description: El Pernil Asado es el plato de carne supremo de Puerto Rico, rey indiscutible de las cenas navideñas de la isla. Consiste en un pernil de cerdo con piel y hueso, sazonado con un adobo mojado tradicional boricua.
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Pernil asado boricua jugoso con cuerito crujiente (Unsplash)
+description: >-
+  El Pernil Asado es el plato de carne supremo de Puerto Rico, rey indiscutible
+  de las cenas navideñas de la isla. Consiste en un pernil de cerdo con piel y
+  hueso, sazonado con un adobo mojado tradicional boricua.
 ---
 
 # Pernil Asado Puertorriqueño

@@ -1,52 +1,60 @@
 ---
-title: "Enchiladas Verdes"
-region: "Centro de México"
+title: Enchiladas Verdes
+region: Centro de México
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Tradicional"
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 25 minutos
+cook_time: 20 minutos
+servings: 4
+tags:
+  - Mexican
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Tortillas de maíz
+  - Pollo deshebrado
+  - Tomatillos (tomate verde)
+  - Chile jalapeño
+  - Crema agria
+  - Queso fresco
+  - Cilantro
 sensory:
   flavor:
-    - "Picante medio"
-    - "Ácido (tomatillo)"
-    - "Salado"
+    - Picante medio
+    - Ácido (tomatillo)
+    - Salado
   texture:
-    - "Jugoso"
-    - "Suave"
-    - "Queso fundido"
+    - Jugoso
+    - Suave
+    - Queso fundido
   aroma:
-    - "Tomatillo cocido"
-    - "Cilantro"
-    - "Tortilla frita"
-  presentation: "Tortillas rellenas de pollo gratinadas con queso fresco, crema agria y cebolla en rodajas."
-main_ingredients:
-  - "Tortillas de maíz"
-  - "Pollo deshebrado"
-  - "Tomatillos (tomate verde)"
-  - "Chile jalapeño"
-  - "Crema agria"
-  - "Queso fresco"
-  - "Cilantro"
-difficulty: "★★☆☆☆"
-prep_time: "25 minutos"
-cook_time: "20 minutos"
-servings: 4
+    - Tomatillo cocido
+    - Cilantro
+    - Tortilla frita
+  presentation: >-
+    Tortillas rellenas de pollo gratinadas con queso fresco, crema agria y
+    cebolla en rodajas.
 nutrition:
   calories: 520
   macros:
-    protein_g: 28.0
-    fat_g: 24.0
-    carbs_g: 48.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 28
+    fat_g: 24
+    carbs_g: 48
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Enchiladas Verdes tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Las Enchiladas Verdes son tortillas de maíz ligeramente fritas, rellenas de pollo y bañadas en una salsa tibia de tomatillo y chiles verdes."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Enchiladas Verdes tradicional
+description: >-
+  Las Enchiladas Verdes son tortillas de maíz ligeramente fritas, rellenas de
+  pollo y bañadas en una salsa tibia de tomatillo y chiles verdes.
 ---
 
 # Enchiladas Verdes

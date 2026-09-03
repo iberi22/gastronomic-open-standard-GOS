@@ -1,51 +1,11 @@
 ---
 title: "Hayaca Llanera"
-region: "Orinoquía"
-categories:
-  - "Plato Fuerte"
-  - "Envuelto"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Complejo (Dulce/Salado)"
-    - "Especiado"
-    - "Herbal (Hoja)"
-  texture:
-    - "Sedosa (Masa)"
-    - "Masticable (Carnes)"
-    - "Untuosa"
-  aroma:
-    - "Hoja de Plátano ahumada"
-    - "Guiso madurado"
-    - "Maíz cocido"
-  presentation: "Envuelto rectangular perfecto, atado con pabilo. Al abrirse, debe liberar un vapor denso y aromático. La masa debe estar teñida de naranja brillante por el onoto (achiote)."
-main_ingredients:
-  - "Maíz Pilado (Masa hidratada)"
-  - "Carnes (Res, Cerdo, Gallina)"
-  - "Guiso (Cebolla, Pimentón, Achiote, Alcaparras)"
-  - "Hojas de Plátano soasadas"
-difficulty: "Alta (Complejidad de ensamble)"
+region: "Colombia"
+categories: ["Orinoquia"]
+difficulty: "★★★★☆"
 prep_time: "180"
 cook_time: "240"
-servings: 12
-nutrition:
-  calories: 420
-  macros:
-    protein_g: 18
-    fat_g: 22
-    carbs_g: 38
-tags:
-  - "Navidad"
-  - "Llanos"
-  - "Mestizaje"
-images:
-  - url: "https://im.ge/i/hayaca-1.AbC678"
-    description: "Hayaca llanera abierta mostrando su masa sedosa y carnes"
-sources:
-  - name: "Crónicas del Fogón Llanero"
-    url: "https://gos.org/orinoquia/hayaca"
-license: "MIT"
-description: "La versión llanera del tamal, influenciada por la hallaca venezolana. Se distingue por una masa mucho más fina y sedosa, un guiso más condimentado con alcaparras y aceitunas, y una técnica de atado que garantiza un sello hermético durante el hervido largo."
+servings: "12"
 ---
 
 # Hayaca Llanera

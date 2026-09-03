@@ -1,17 +1,21 @@
 ---
 title: 10 recetas más emblemáticas de la región Pacífica de Colombia
-description: 1. Cazuela de Mariscos
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 nutrition:
   calories: 0
   macros:
     protein_g: 0
     fat_g: 0
     carbs_g: 0
+description: 1. Cazuela de Mariscos
+media: []
 embedding_version: 1
 ---
 

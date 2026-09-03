@@ -1,53 +1,62 @@
 ---
 title: Pudim de Leite Condensado
 region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Postre
-- Dulce
-- Tradicional
-sensory:
-  flavor:
-  - Extremadamente dulce
-  - Lácteo (leche caramelizada)
-  - Vainilla
-  texture:
-  - Sedoso
-  - Extremadamente suave
-  - Firme pero cremoso
-  aroma:
-  - Caramelo tostado
-  - Vainilla y leche cocida
-  presentation: Servido frío en un plato hondo, bañado generosamente con su propio almíbar de caramelo ámbar brillante líquido.
-main_ingredients:
-- Leche condensada
-- Leche entera
-- Huevos
-- Azúcar refinada (para el caramelo)
-- Esencia de vainilla
+  - Postre
+  - Dulce
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 15 minutos
 cook_time: 1 hora 15 minutos
 servings: 8
+tags:
+  - Leche condensada
+  - Caramelo
+  - Postre
+  - Dulce
+  - Horno
+main_ingredients:
+  - Leche condensada
+  - Leche entera
+  - Huevos
+  - Azúcar refinada (para el caramelo)
+  - Esencia de vainilla
+sensory:
+  flavor:
+    - Extremadamente dulce
+    - Lácteo (leche caramelizada)
+    - Vainilla
+  texture:
+    - Sedoso
+    - Extremadamente suave
+    - Firme pero cremoso
+  aroma:
+    - Caramelo tostado
+    - Vainilla y leche cocida
+  presentation: >-
+    Servido frío en un plato hondo, bañado generosamente con su propio almíbar
+    de caramelo ámbar brillante líquido.
 nutrition:
   calories: 310
   macros:
-    protein_g: 8.0
-    fat_g: 9.0
-    carbs_g: 48.0
-tags:
-- Leche condensada
-- Caramelo
-- Postre
-- Dulce
-- Horno
+    protein_g: 8
+    fat_g: 9
+    carbs_g: 48
 images:
-- url: https://images.unsplash.com/photo-1541783245831-57d6fb0926d3
-  description: Pudim de leite condensado con caramelo líquido brillante (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html
-- https://www.panelinha.com.br/receita/Pudim-de-leite-condensado
-license: MIT
-description: El Pudim de Leite Condensado es el postre dominical por excelencia en todo hogar brasileño. A diferencia del flan tradicional europeo que usa crema de leche o leche evaporada, la versión brasileña destaca por utilizar leche condensada como base principal, resultando en un dulce sumamente denso, sedoso y suave que se hornea a baño María y se sirve bañado de caramelo.
+  - url: 'https://images.unsplash.com/photo-1541783245831-57d6fb0926d3'
+    description: Pudim de leite condensado con caramelo líquido brillante (Unsplash)
+description: >-
+  El Pudim de Leite Condensado es el postre dominical por excelencia en todo
+  hogar brasileño. A diferencia del flan tradicional europeo que usa crema de
+  leche o leche evaporada, la versión brasileña destaca por utilizar leche
+  condensada como base principal, resultando en un dulce sumamente denso, sedoso
+  y suave que se hornea a baño María y se sirve bañado de caramelo.
 ---
 
 # Pudim de Leite Condensado

@@ -1,50 +1,59 @@
 ---
-title: "Pizza Margherita Napoletana"
-region: "Campania (Nápoles)"
+title: Pizza Margherita Napoletana
+region: Campania (Nápoles)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Pizza STG"
+  - Plato fuerte
+  - Pizza STG
+difficulty: ★★★☆☆
+prep_time: 45 minutos
+cook_time: 2 minutos
+servings: 2
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Harina Tipo 00
+  - Agua
+  - Levadura fresca
+  - Tomate San Marzano DOP
+  - Mozzarella de Búfala
+  - Albahaca fresca
+  - Aceite de oliva extra virgen
 sensory:
   flavor:
-    - "Acidez fresca del tomate San Marzano"
-    - "Lácteo de mozzarella"
-    - "Albahaca herbal"
+    - Acidez fresca del tomate San Marzano
+    - Lácteo de mozzarella
+    - Albahaca herbal
   texture:
-    - "Masa con alveolado alto suave y masticable (cornicione)"
+    - Masa con alveolado alto suave y masticable (cornicione)
   aroma:
-    - "Horno de leña 450°C"
-    - "Albahaca fresca"
-    - "Aceite de oliva virgen extra"
-  presentation: "Pizza circular de borde prominente moteado de tostado con tomate rojo, mozzarella melted y albahaca."
-main_ingredients:
-  - "Harina Tipo 00"
-  - "Agua"
-  - "Levadura fresca"
-  - "Tomate San Marzano DOP"
-  - "Mozzarella de Búfala"
-  - "Albahaca fresca"
-  - "Aceite de oliva extra virgen"
-difficulty: "★★★☆☆"
-prep_time: "45 minutos"
-cook_time: "2 minutos"
-servings: 2
+    - Horno de leña 450°C
+    - Albahaca fresca
+    - Aceite de oliva virgen extra
+  presentation: >-
+    Pizza circular de borde prominente moteado de tostado con tomate rojo,
+    mozzarella melted y albahaca.
 nutrition:
   calories: 750
   macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 110.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 110
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Pizza Margherita Napoletana tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La Pizza Margherita es el estandarte de Nápoles, creada en honor a la reina Margarita con los colores de la bandera italiana: tomate, mozzarella y albahaca."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Pizza Margherita Napoletana tradicional
+description: >-
+  La Pizza Margherita es el estandarte de Nápoles, creada en honor a la reina
+  Margarita con los colores de la bandera italiana: tomate, mozzarella y
+  albahaca.
 ---
 
 # Pizza Margherita Napoletana

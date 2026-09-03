@@ -1,55 +1,14 @@
 ---
-title: "Sancocho Costeño"
-region: "Caribe"
-categories:
-  - "Plato Fuerte"
-  - "Sopa"
-  - "Festivo"
-sensory:
-  flavor:
-    - "Salado profundo"
-    - "Umami (Trifecta de carnes)"
-    - "Cítrico (Toque final)"
-  texture:
-    - "Espeso (Cremoso)"
-    - "Mantecoso (Ñame)"
-    - "Jugoso"
-  aroma:
-    - "Leña (si se hace en fogón)"
-    - "Cilantro Cimarrón"
-    - "Maíz tierno"
-  presentation: "Plato hondo rebosante. Los tubérculos deben servirse enteros o en pedazos grandes. Se acompaña con arroz blanco (o de coco) y aguacate harinoso."
-main_ingredients:
-  - "Costilla de Res (o Carne Salada)"
-  - "Cerdo / Pollo"
-  - "Ñame Espino (Factor espesante)"
-  - "Yuca Dulce"
-  - "Plátano Verde"
-  - "Mazorca de Maíz"
-  - "Cilantro y Cebolla"
-difficulty: "Media"
+title: "Sancocho CosteñO"
+region: "Colombia"
+categories: ["Sancocho_costeñO"]
+difficulty: "★★★☆☆"
 prep_time: "40"
 cook_time: "120"
-servings: 10
-nutrition:
-  calories: 850
-  macros:
-    protein_g: 40
-    fat_g: 35
-    carbs_g: 95
-tags:
-  - "Domingo"
-  - "Olla Comunitaria"
-  - "Paseo de Olla"
-images:
-  - url: "https://im.ge/i/sancocho-1.AbC123"
-    description: "Sancocho costeño hirviendo en olla de aluminio fundido"
-sources:
-  - name: "Patrimonio Inmaterial del Caribe"
-    url: "https://gos.org/caribe/sancocho"
-license: "MIT"
-description: "El sancocho es la institución social del Caribe. A diferencia de las sopas andinas, utiliza el ñame espino como hidrocoloide principal, creando un caldo denso y mantecoso que soporta una mezcla masiva de proteínas y carbohidratos complejos."
----## Sancocho Costeño
+servings: "10"
+---
+
+## Sancocho Costeño
 
 El Sancocho Costeño es uno de los platos más representativos de la región Caribe colombiana. Es una sopa abundante y festiva, preparada con variedad de carnes, tubérculos y plátano, y servida en grandes reuniones familiares o celebraciones.
 
@@ -101,7 +60,7 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 
 ## 📸 Galería
 
-![Sancocho Costeño Servido](/dishes/colombian/caribe/sancocho_costeño/images/1.webp)
+![Sancocho Costeño Servido](./images/1.jpg)
 
 ---
 
@@ -112,8 +71,8 @@ El Sancocho Costeño es uno de los platos más representativos de la región Car
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
 | **Sabor**| Salado, Umami        | 5/5              | Sinergia de glutamatos (3 carnes) + nucleótidos. |
-| **Aroma**| Cárnico, Herbal      | 5/5              | Aldehídos del **[Cilantro](/dishes/colombian/caribe/sancocho_costeño/../../ingredients/cilantro)** y terpenos del comino. |
-| **Textura**| Espesa, Tropezuda    | 5/5              | Suspensión de almidones de **[Yuca](/dishes/colombian/caribe/sancocho_costeño/../../ingredients/yuca_dulce)** y ñame. |
+| **Aroma**| Cárnico, Herbal      | 5/5              | Aldehídos del **[Cilantro](../../ingredients/cilantro)** y terpenos del comino. |
+| **Textura**| Espesa, Tropezuda    | 5/5              | Suspensión de almidones de **[Yuca](../../ingredients/yuca_dulce)** y ñame. |
 | **Boca** | Untuoso, Llenador    | 5/5              | Grasa emulsionada de la costilla y colágeno disuelto. |
 
 ### ⚗️ Química y Física Culinaria

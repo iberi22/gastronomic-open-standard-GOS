@@ -1,57 +1,68 @@
 ---
 title: Tembleque de Coco Puertorriqueño
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/tembleque.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Postre
-- Dulce
-- Tradicional
-sensory:
-  flavor:
+  - Postre
   - Dulce
-  - Coco cremoso
-  - Especiado (canela)
-  texture:
-  - Sedoso
-  - Tembloroso (gelatina suave)
-  - Firme
-  aroma:
-  - Coco dulce cocido
-  - Canela molida fresca
-  presentation: Moldeado en formas individuales circulares de bordes limpios, servido frío en platitos, espolvoreado con una línea fina de canela molida en forma de cruz.
-main_ingredients:
-- Leche de coco (coconut milk)
-- Crema de coco
-- Azúcar blanca refinada
-- Fécula de maíz (cornstarch)
-- Canela en rama y en polvo
-- Una pizca de sal
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 10 minutos
 cook_time: 15 minutos
 servings: 6
+tags:
+  - Postre
+  - Dulce
+  - Coco
+  - Canela
+  - Sin gluten
+  - Vegano
+  - Puerto Rico
+  - Navidad
+main_ingredients:
+  - Leche de coco (coconut milk)
+  - Crema de coco
+  - Azúcar blanca refinada
+  - Fécula de maíz (cornstarch)
+  - Canela en rama y en polvo
+  - Una pizca de sal
+sensory:
+  flavor:
+    - Dulce
+    - Coco cremoso
+    - Especiado (canela)
+  texture:
+    - Sedoso
+    - Tembloroso (gelatina suave)
+    - Firme
+  aroma:
+    - Coco dulce cocido
+    - Canela molida fresca
+  presentation: >-
+    Moldeado en formas individuales circulares de bordes limpios, servido frío
+    en platitos, espolvoreado con una línea fina de canela molida en forma de
+    cruz.
 nutrition:
   calories: 220
   macros:
     protein_g: 1.5
-    fat_g: 12.0
-    carbs_g: 28.0
-tags:
-- Postre
-- Dulce
-- Coco
-- Canela
-- Sin gluten
-- Vegano
-- Puerto Rico
-- Navidad
+    fat_g: 12
+    carbs_g: 28
 images:
-- url: https://images.unsplash.com/photo-1541783245831-57d6fb0926d3
-  description: Postre tradicional de tembleque de coco boricua (Unsplash)
-sources:
-- https://www.elboricua.com/tembleque.html
-- https://www.quericavida.com/recetas/tembleque-puertorriqueno/
-license: MIT
-description: El Tembleque es el postre frío de coco más famoso y consumido de Puerto Rico, protagonista de las festividades navideñas. Consiste en un budín o flan sumamente suave y tembloroso elaborado cocinando leche de coco y crema de coco con azúcar y fécula de maíz como espesante natural, aromatizado con canela y servido frío con canela en polvo. Es un postre naturalmente libre de gluten y vegano.
+  - url: 'https://images.unsplash.com/photo-1541783245831-57d6fb0926d3'
+    description: Postre tradicional de tembleque de coco boricua (Unsplash)
+description: >-
+  El Tembleque es el postre frío de coco más famoso y consumido de Puerto Rico,
+  protagonista de las festividades navideñas. Consiste en un budín o flan
+  sumamente suave y tembloroso elaborado cocinando leche de coco y crema de coco
+  con azúcar y fécula de maíz como espesante natural, aromatizado con canela y
+  servido frío con canela en polvo. Es un postre naturalmente libre de gluten y
+  vegano.
 ---
 
 # Tembleque de Coco Puertorriqueño

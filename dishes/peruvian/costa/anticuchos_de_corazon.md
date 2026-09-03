@@ -1,10 +1,33 @@
 ---
 title: Anticuchos de Corazón
 region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Plato fuerte
   - Criollo
   - Parrilla
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 15 minutos
+servings: 6
+tags:
+  - Anticuchos
+  - Corazon
+  - Criollo
+  - Parrilla
+main_ingredients:
+  - Corazón de res entero
+  - Pasta de ají panca
+  - Ajo molido
+  - Vinagre tinto
+  - Orégano seco
+  - Cerveza rubia (o chicha de jora)
 sensory:
   flavor:
     - Umami Profundo (Carne de corazón)
@@ -18,39 +41,23 @@ sensory:
     - Carbón de leña y humo
     - Vinagre caliente y comino
     - Ají panca tostado
-  presentation: Trozos de corazón ensartados en palitos de caña, dorados al carbón, brillando con su adobo de ají panca, acompañados de papas doradas cocidas y rodajas de choclo, servidos con salsa de ají de anticucho.
-main_ingredients:
-  - Corazón de res entero
-  - Pasta de ají panca
-  - Ajo molido
-  - Vinagre tinto
-  - Orégano seco
-  - Cerveza rubia (o chicha de jora)
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 15 minutos
-servings: 6
+  presentation: >-
+    Trozos de corazón ensartados en palitos de caña, dorados al carbón,
+    brillando con su adobo de ají panca, acompañados de papas doradas cocidas y
+    rodajas de choclo, servidos con salsa de ají de anticucho.
 nutrition:
   calories: 340
   macros:
     protein_g: 36
     fat_g: 14
     carbs_g: 16
-tags:
-  - Anticuchos
-  - Corazon
-  - Criollo
-  - Parrilla
 images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
     description: Anticuchos de Corazón peruanos tradicionales
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: Los Anticuchos de Corazón son brochetas de corazón de res marinado en una potente mezcla de ají panca, vinagre tinto, ajo y especias, asadas rápidamente a la parrilla de carbón. Un clásico absoluto de la cocina callejera peruana.
+description: >-
+  Los Anticuchos de Corazón son brochetas de corazón de res marinado en una
+  potente mezcla de ají panca, vinagre tinto, ajo y especias, asadas rápidamente
+  a la parrilla de carbón. Un clásico absoluto de la cocina callejera peruana.
 ---
 
 # Anticuchos de Corazón

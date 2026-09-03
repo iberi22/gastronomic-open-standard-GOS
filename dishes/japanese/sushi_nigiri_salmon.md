@@ -1,48 +1,56 @@
 ---
-title: "Nigiri Sushi de Salmón"
-region: "Tokyo"
+title: Nigiri Sushi de Salmón
+region: Tokyo
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Tradicional"
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 20 minutos
+servings: 2
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Arroz de grano corto para sushi
+  - Vinagre de arroz
+  - Salmón fresco de calidad sushi
+  - Wasabi fresco
+  - Salsa de soja shoyu
 sensory:
   flavor:
-    - "Vinagre de arroz equilibrado"
-    - "Grasa limpia de salmón"
-    - "Umami de wasabi"
+    - Vinagre de arroz equilibrado
+    - Grasa limpia de salmón
+    - Umami de wasabi
   texture:
-    - "Arroz tibio y suelto"
-    - "Pescado suave que se derrite"
+    - Arroz tibio y suelto
+    - Pescado suave que se derrite
   aroma:
-    - "Arroz vinagrado"
-    - "Salmón fresco grado sushi"
-  presentation: "Bocado individual de arroz moldeado a mano coronado con una lámina de salmón fresco brillante."
-main_ingredients:
-  - "Arroz de grano corto para sushi"
-  - "Vinagre de arroz"
-  - "Salmón fresco de calidad sushi"
-  - "Wasabi fresco"
-  - "Salsa de soja shoyu"
-difficulty: "★★★☆☆"
-prep_time: "40 minutos"
-cook_time: "20 minutos"
-servings: 2
+    - Arroz vinagrado
+    - Salmón fresco grado sushi
+  presentation: >-
+    Bocado individual de arroz moldeado a mano coronado con una lámina de salmón
+    fresco brillante.
 nutrition:
   calories: 340
   macros:
-    protein_g: 20.0
-    fat_g: 10.0
-    carbs_g: 42.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 20
+    fat_g: 10
+    carbs_g: 42
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Nigiri Sushi de Salmón tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Nigiri Sushi es la máxima expresión de simplicidad japonesa: una bola de arroz sazonada con vinagre y moldeada a mano coronada con pescado fresco."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Nigiri Sushi de Salmón tradicional
+description: >-
+  El Nigiri Sushi es la máxima expresión de simplicidad japonesa: una bola de
+  arroz sazonada con vinagre y moldeada a mano coronada con pescado fresco.
 ---
 
 # Nigiri Sushi de Salmón

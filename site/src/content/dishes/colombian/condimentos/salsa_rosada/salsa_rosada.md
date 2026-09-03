@@ -1,7 +1,8 @@
 ---
-title: "Salsa Rosada"
+title: "Salsa Rosada Colombiana"
 region: "Colombia"
 categories: ["Salsa_rosada"]
+difficulty: "★★☆☆☆"
 ---
 
 # Salsa Rosada Colombiana
@@ -44,7 +45,7 @@ La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla de mayon
 
 ## 📸 Galería
 
-
+![Salsa rosada clásica](./images/1.png)
 
 ---
 

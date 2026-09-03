@@ -1,46 +1,54 @@
 ---
-title: "Unadon (Anguila sobre Arroz)"
-region: "Hamamatsu"
+title: Unadon (Anguila sobre Arroz)
+region: Hamamatsu
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Tradicional"
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 20 minutos
+cook_time: 25 minutos
+servings: 2
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Filetes de anguila (Unagi)
+  - 'Salsa Kabayaki (Soja, Mirin, Sake, Azúcar)'
+  - Arroz para sushi
+  - Pimienta japonesa Sansho
 sensory:
   flavor:
-    - "Umami dulce intenso"
-    - "Ahumado rico"
-    - "Especiado sutil de sansho"
+    - Umami dulce intenso
+    - Ahumado rico
+    - Especiado sutil de sansho
   texture:
-    - "Carne de anguila tierna y mantecosa"
+    - Carne de anguila tierna y mantecosa
   aroma:
-    - "Salsa kabayaki caramelizada"
-    - "Pimienta sansho"
-  presentation: "Filete de anguila glaseado y dorado sobre lecho de arroz caliente en caja de laca juzyu."
-main_ingredients:
-  - "Filetes de anguila (Unagi)"
-  - "Salsa Kabayaki (Soja, Mirin, Sake, Azúcar)"
-  - "Arroz para sushi"
-  - "Pimienta japonesa Sansho"
-difficulty: "★★★☆☆"
-prep_time: "20 minutos"
-cook_time: "25 minutos"
-servings: 2
+    - Salsa kabayaki caramelizada
+    - Pimienta sansho
+  presentation: >-
+    Filete de anguila glaseado y dorado sobre lecho de arroz caliente en caja de
+    laca juzyu.
 nutrition:
   calories: 650
   macros:
-    protein_g: 30.0
-    fat_g: 28.0
-    carbs_g: 68.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 30
+    fat_g: 28
+    carbs_g: 68
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Unadon (Anguila sobre Arroz) tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Unadon es un lujoso tazón de arroz coronado con anguila de agua dulce abierta, ensartada y asada con un rico glaseado carmelizado (Kabayaki)."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Unadon (Anguila sobre Arroz) tradicional
+description: >-
+  El Unadon es un lujoso tazón de arroz coronado con anguila de agua dulce
+  abierta, ensartada y asada con un rico glaseado carmelizado (Kabayaki).
 ---
 
 # Unadon (Anguila sobre Arroz)

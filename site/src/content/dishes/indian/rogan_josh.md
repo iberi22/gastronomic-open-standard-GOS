@@ -1,46 +1,11 @@
 ---
-title: "Rogan Josh de Cordero"
-region: "Cachemira"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
-  texture:
-    - "Crujiente exterior"
-    - "Interior tierno"
-  aroma:
-    - "Aroma característico de Rogan Josh de Cordero"
-  presentation: "Rogan Josh de Cordero presentado de forma vistosa tradicional."
-main_ingredients:
-  - "Ingrediente principal 1"
-  - "Ingrediente principal 2"
-  - "Especias"
-  - "Aceite de oliva"
+title: "Rogan Josh De Cordero"
+region: "India"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 550
-  macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 45.0
-tags:
-  - "Indian"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Rogan Josh de Cordero tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Rogan Josh de Cordero es uno de los platos más emblemáticos de la gastronomía de Cachemira, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+servings: "4"
 ---
 
 # Rogan Josh de Cordero

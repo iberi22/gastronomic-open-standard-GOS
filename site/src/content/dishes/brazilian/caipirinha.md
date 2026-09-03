@@ -1,53 +1,11 @@
 ---
-title: Caipirinha Tradicional Brasileira
-region: Brasil
-categories:
-- Bebida
-- Cóctel
-- Tradicional
-sensory:
-  flavor:
-  - Ácido
-  - Dulce
-  - Alcohólico (cachaça)
-  - Amargo (corteza de limón)
-  texture:
-  - Líquido
-  - Refrescante
-  aroma:
-  - Limón fresco exprimido
-  - Caña de azúcar
-  - Alcohol de caña (cachaça)
-  presentation: Servido en un vaso corto (old fashioned o de caipirinha), decorado con rodajas o cuñas de limón machacadas y abundante hielo picado, con dos popotes cortos.
-main_ingredients:
-- Cachaça
-- Limón tahití (lima verde brasileña)
-- Azúcar blanca refinada
-- Hielo picado
-difficulty: ★☆☆☆☆
-prep_time: 5 minutos
-cook_time: 0 minutos
-servings: 1
-nutrition:
-  calories: 180
-  macros:
-    protein_g: 0.1
-    fat_g: 0.0
-    carbs_g: 15.0
-tags:
-- Cachaça
-- Limón
-- Cóctel
-- Bebida
-- Refrescante
-images:
-- url: https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd
-  description: Caipirinha brasileña fresca con rodajas de limón y hielo (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/1220-caipirinha.html
-- https://www.panelinha.com.br/receita/Caipirinha
-license: MIT
-description: La Caipirinha es la bebida nacional de Brasil y su cóctel más famoso en todo el mundo. Elaborada de manera extremadamente sencilla utilizando únicamente cachaça (destilado de caña de azúcar brasileño), limón fresco machacado, azúcar blanca refinada y abundante hielo, destaca por su sabor cítrico, dulce y sumamente refrescante.
+title: "Caipirinha Tradicional Brasileira"
+region: "Brasil"
+categories: ["Plato"]
+difficulty: "★☆☆☆☆"
+prep_time: "5 minutos"
+cook_time: "0 minutos"
+servings: "1"
 ---
 
 # Caipirinha Tradicional Brasileira
@@ -94,7 +52,7 @@ La Caipirinha es la máxima expresión de la coctelería brasileña. Protegida p
 
 ## 📸 Galería
 
-![Caipirinha brasileña con hielo y limón fresco](/dishes/brazilian/images/caipirinha_1.webp)
+![Caipirinha brasileña con hielo y limón fresco](./images/caipirinha_1.jpg)
 
 ---
 

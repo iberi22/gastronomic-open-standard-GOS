@@ -1,55 +1,14 @@
 ---
-title: "Cazuela de Mariscos"
-region: "Caribe"
-categories:
-  - "Plato Fuerte"
-  - "Sopa"
-  - "Premium"
-sensory:
-  flavor:
-    - "Umami Marino (Intenso)"
-    - "Lácteo (Coco/Crema)"
-    - "Herbal (Cilantro)"
-  texture:
-    - "Sedosa (Velouté)"
-    - "Firme (Mariscos)"
-    - "Untuosa"
-  aroma:
-    - "Salinidad de playa"
-    - "Nuez de coco"
-    - "Tomillo y Laurel"
-  presentation: "Cazuela de barro humeante. El líquido debe ser de color naranja pálido o crema. Se sirve con una lluvia de cilantro fresco y una rodaja de limón al lado."
-main_ingredients:
-  - "Camarón (con cabeza para caldo)"
-  - "Calamar (Anillos)"
-  - "Pulpo (Precocido)"
-  - "Leche de coco (Primera prensa)"
-  - "Crema de leche"
-  - "Pescado blanco (Mero/Pargo)"
-  - "Brandy o Vino Blanco (Desglasado)"
-difficulty: "Alta"
+title: "Cazuela De Mariscos"
+region: "Colombia"
+categories: ["Cazuela_de_mariscos"]
+difficulty: "★★★★☆"
 prep_time: "45"
 cook_time: "40"
-servings: 6
-nutrition:
-  calories: 780
-  macros:
-    protein_g: 45
-    fat_g: 55
-    carbs_g: 12
-tags:
-  - "Festivo"
-  - "Cartagena"
-  - "Mariscos"
-images:
-  - url: "https://im.ge/i/cazuela-1.AbC123"
-    description: "Cazuela de mariscos cremosa en pote de barro"
-sources:
-  - name: "Cultura Marítima Caribe"
-    url: "https://gos.org/caribe/cazuela"
-license: "MIT"
-description: "La cumbre de la sofisticación costera. Es una técnica híbrida entre el bisque francés (extracción de sabor de carcasas) y el encocado afro-colombiano. Su complejidad reside en la emulsión estable de leche de coco y proteínas marinas sin que se corte."
----## Cazuela de Mariscos
+servings: "6"
+---
+
+## Cazuela de Mariscos
 
 La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, especialmente en ciudades costeras como Cartagena y Barranquilla. Es una sopa cremosa y aromática, repleta de mariscos frescos, leche de coco y especias, perfecta para celebraciones y ocasiones especiales.
 
@@ -106,7 +65,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ## 📸 Galería
 
-![Cazuela de Mariscos Tradicional](/dishes/colombian/caribe/cazuela_de_mariscos/images/1.webp)
+![Cazuela de Mariscos Tradicional](./images/1.png)
 
 ---
 
@@ -116,15 +75,15 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Dulce/Salado, Coco   | 5/5              | Lactonas del **[Leche de Coco](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** + Salinidad marina + **[Camarón](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)**. |
+| **Sabor**| Dulce/Salado, Coco   | 5/5              | Lactonas del **[Leche de Coco](../../ingredients/leche_coco)** + Salinidad marina + **[Camarón](../../ingredients/camaron)**. |
 | **Aroma**| Coco, Mar            | 5/5              | Compuestos sulfurosos volátiles de mariscos frescos. |
-| **Textura**| Cremosa, Tropezones  | 4/5              | Emulsión densa con trozos firmes de **[Pulpo](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/pulpo)** y suaves de pescado. |
+| **Textura**| Cremosa, Tropezones  | 4/5              | Emulsión densa con trozos firmes de **[Pulpo](../../ingredients/pulpo)** y suaves de pescado. |
 | **Boca** | Aterciopelada        | 5/5              | Grasa de coco + colágeno disuelto de pescado. |
 
 ### ⚗️ Química y Física Culinaria
 
 - **Extracción de Chitin & Astaxantina (El Fondo):** El alma de la cazuela es el caldo de bases. Al saltear las cabezas y cáscaras de camarón a alta temperatura, se extrae la **Astaxantina** (pigmento liposoluble que da el color naranja) y se liberan nucleótidos de **Umami** atrapados en el tejido conectivo de los crustáceos.
-- **Estabilización de la Emulsión Lácteo-Coco:** Al combinar **[Leche de Coco](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/leche_coco)** con crema de leche y un *roux* (o reducción de vegetales), se crea una red de polisacáridos que impide que la grasa del coco se separe (floculación) al añadir el ácido residual de los mariscos o el vino blanco.
+- **Estabilización de la Emulsión Lácteo-Coco:** Al combinar **[Leche de Coco](../../ingredients/leche_coco)** con crema de leche y un *roux* (o reducción de vegetales), se crea una red de polisacáridos que impide que la grasa del coco se separe (floculación) al añadir el ácido residual de los mariscos o el vino blanco.
 - **Cinética de Denaturación:**
     - **Calamar/Pulpo:** Requieren calor para romper el entrecruzamiento de colágeno (o cocción ultra-lenta).
     - **Camarón:** La miosina se coagula a 60°C. Si pasa de 70°C por mucho tiempo, el agua es expulsada de la fibra, volviéndolo duro. Por eso se añaden en los últimos 180 segundos.
@@ -149,7 +108,7 @@ La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, esp
 
 ## Sabiduría colectiva, trucos y consejos
 
-1. **Cocción escalonada:** No tirar todo junto. Primero el sofrito, luego líquidos, luego pulpo precocido, calamar, pescado, y **[Camarón](/dishes/colombian/caribe/cazuela_de_mariscos/../../ingredients/camaron)** al apagar el fuego.
+1. **Cocción escalonada:** No tirar todo junto. Primero el sofrito, luego líquidos, luego pulpo precocido, calamar, pescado, y **[Camarón](../../ingredients/camaron)** al apagar el fuego.
 2. **Leche de Coco:** Usar la "primera leche" (crema espesa) solo al final para máxima cremosidad.
 3. **Cazuela de Barro:** Mantiene el calor por 20 minutos en la mesa. Curarla antes de usar.
 

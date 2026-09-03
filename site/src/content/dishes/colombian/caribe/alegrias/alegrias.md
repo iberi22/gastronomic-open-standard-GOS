@@ -1,7 +1,11 @@
 ---
-title: "Alegrias"
+title: "AlegríAs"
 region: "Colombia"
 categories: ["Alegrias"]
+difficulty: "★★☆☆☆"
+prep_time: "20 minutos"
+cook_time: "15 minutos"
+servings: "20"
 ---
 
 # Alegrías
@@ -52,7 +56,7 @@ Las Alegrías son un dulce tradicional de la región Caribe colombiana, especial
 
 ## 📸 Galería
 
-
+![Alegrías de amaranto](./images/1.png)
 
 ---
 

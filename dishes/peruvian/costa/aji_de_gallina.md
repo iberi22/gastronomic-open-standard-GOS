@@ -1,10 +1,33 @@
 ---
 title: Ají de Gallina
 region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Plato fuerte
   - Criollo
   - Guiso
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 40 minutos
+servings: 6
+tags:
+  - Aji
+  - Gallina
+  - Criollo
+  - Guiso
+main_ingredients:
+  - Pechuga de gallina (o pollo)
+  - Pasta de ají amarillo
+  - Pan de molde (o galletas de soda)
+  - Leche evaporada
+  - Nueces (Pecanas)
+  - Queso Parmesano
 sensory:
   flavor:
     - Dulce-Picante (Ají Amarillo)
@@ -18,39 +41,23 @@ sensory:
     - Ají sofrito y ajo
     - Queso parmesano fundido
     - Nuez tostada
-  presentation: Guiso cremoso amarillo profundo con hebras de gallina, servido sobre papas cocidas, decorado con cuartos de huevo duro, aceitunas negras botija y acompañado de arroz blanco graneado.
-main_ingredients:
-  - Pechuga de gallina (o pollo)
-  - Pasta de ají amarillo
-  - Pan de molde (o galletas de soda)
-  - Leche evaporada
-  - Nueces (Pecanas)
-  - Queso Parmesano
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 40 minutos
-servings: 6
+  presentation: >-
+    Guiso cremoso amarillo profundo con hebras de gallina, servido sobre papas
+    cocidas, decorado con cuartos de huevo duro, aceitunas negras botija y
+    acompañado de arroz blanco graneado.
 nutrition:
   calories: 620
   macros:
     protein_g: 42
     fat_g: 28
     carbs_g: 50
-tags:
-  - Aji
-  - Gallina
-  - Criollo
-  - Guiso
 images:
-  - url: https://images.unsplash.com/photo-1512621776951-a57141f2eefd
+  - url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd'
     description: Ají de Gallina cremoso con arroz
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: El Ají de Gallina es un exquisito guiso cremoso criollo peruano. Consiste en una reducción de caldo de gallina espesada con pan, leche evaporada, pecanas licuadas y enriquecida con abundante pasta de ají amarillo aromático.
+description: >-
+  El Ají de Gallina es un exquisito guiso cremoso criollo peruano. Consiste en
+  una reducción de caldo de gallina espesada con pan, leche evaporada, pecanas
+  licuadas y enriquecida con abundante pasta de ají amarillo aromático.
 ---
 
 # Ají de Gallina

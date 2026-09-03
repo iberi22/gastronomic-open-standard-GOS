@@ -1,19 +1,25 @@
 ---
 title: Hervido de Gumarra
-description: El Hervido de Gumarra es una sopa tradicional de la Orinoquía colombiana,
-  preparada con carne de gumarra (pez de río), tubérculos y verduras locales. Es un
-  plato reconfortante, muy apreciado en las comunidades ribereñas de los llanos orientales.
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 nutrition:
   calories: 1169
   macros:
     protein_g: 25.4
     fat_g: 4.2
     carbs_g: 268.5
+description: >-
+  El Hervido de Gumarra es una sopa tradicional de la Orinoquía colombiana,
+  preparada con carne de gumarra (pez de río), tubérculos y verduras locales. Es
+  un plato reconfortante, muy apreciado en las comunidades ribereñas de los
+  llanos orientales.
+media: []
 embedding_version: 1
 ---
 
