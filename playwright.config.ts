@@ -12,7 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [['list']],
   use: {
-    baseURL: 'http://localhost:4321',
+    baseURL: 'http://localhost:4331',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
@@ -23,9 +23,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'pnpm --filter gos-site dev',
-    url: 'http://localhost:4321',
+    command: 'cd site && pnpm run dev --port 4331',
+    url: 'http://localhost:4331',
     reuseExistingServer: !process.env.CI,
-    timeout: 120000,
+    timeout: 180000,
   },
 });

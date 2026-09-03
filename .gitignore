@@ -23,3 +23,8 @@ bin/
 *.exe
 archive/site-cleanup/
 site_legacy_20260902/
+
+# Playwright artifacts
+test-results/
+playwright-report/
+playwright/.cache/
