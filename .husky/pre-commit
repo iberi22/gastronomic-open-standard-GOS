@@ -1,1 +1,1 @@
-npx lint-staged
+cd site && npx --yes astro check
