@@ -1,5 +1,6 @@
 ---
 import { Toaster } from '@swal/ui';
+import OfflineBanner from '../components/OfflineBanner.astro';
 interface Props { title?: string; description?: string; }
 const { title = 'GOS — Gastronomic Open Standard', description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity' } = Astro.props;
 const base = import.meta.env.BASE_URL;
@@ -40,6 +41,7 @@ const baseClean = base.replace(/\/$/, '');
     </script>
   </head>
   <body class="min-h-screen relative overflow-x-hidden selection:bg-[rgba(139,92,246,0.3)] swal-scrollbar">
+    <OfflineBanner />
     <!-- Edge-hive / Antigravity topbar -->
     <header class="sticky top-0 z-40" style="background: var(--swal-bg); border-bottom: 1px solid var(--swal-border);">
       <div class="mx-auto max-w-[1280px] px-4 h-[56px] flex items-center justify-between gap-4">

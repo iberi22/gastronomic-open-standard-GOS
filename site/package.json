@@ -11,7 +11,8 @@
     "check": "astro check",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@swal/ui": "github:iberi22/swal-ui",

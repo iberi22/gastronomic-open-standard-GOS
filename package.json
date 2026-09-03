@@ -17,7 +17,8 @@
     "build": "node ./.github/readme-generate.js",
     "manuallint": "node .github/manual_lint.js",
     "markdownlint": "markdownlint ./dishes ./tips",
-    "lint": "pnpm run markdownlint && pnpm run manuallint && echo 'Lint finished. All passed.'"
+    "lint": "pnpm run markdownlint && pnpm run manuallint && echo 'Lint finished. All passed.'",
+    "test:e2e": "playwright test"
   },
   "author": "Brahyan Belalcazar <iberi22>",
   "license": "Unlicense",
