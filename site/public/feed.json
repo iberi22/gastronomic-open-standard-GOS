@@ -1,0 +1,359 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "GOS — Gastronomic Open Standard",
+  "home_page_url": "https://gos-site.pages.dev",
+  "feed_url": "https://gos-site.pages.dev/feed.json",
+  "description": "Grafo gastronómico global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias",
+  "items": [
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/apple_pie_traditional",
+      "url": "https://gos-site.pages.dev/recipes/american/apple_pie_traditional",
+      "title": "Apple_pie_traditional",
+      "collection": "dishes",
+      "slug": "american/apple_pie_traditional"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/bbq_pork_ribs",
+      "url": "https://gos-site.pages.dev/recipes/american/bbq_pork_ribs",
+      "title": "Bbq_pork_ribs",
+      "collection": "dishes",
+      "slug": "american/bbq_pork_ribs"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings",
+      "url": "https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings",
+      "title": "Buffalo_chicken_wings",
+      "collection": "dishes",
+      "slug": "american/buffalo_chicken_wings"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/clam_chowder_boston",
+      "url": "https://gos-site.pages.dev/recipes/american/clam_chowder_boston",
+      "title": "Clam_chowder_boston",
+      "collection": "dishes",
+      "slug": "american/clam_chowder_boston"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/classic_cheeseburger",
+      "url": "https://gos-site.pages.dev/recipes/american/classic_cheeseburger",
+      "title": "Classic_cheeseburger",
+      "collection": "dishes",
+      "slug": "american/classic_cheeseburger"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton",
+      "url": "https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton",
+      "title": "Cobbler_de_melocoton",
+      "collection": "dishes",
+      "slug": "american/cobbler_de_melocoton"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/cornbread_southern",
+      "url": "https://gos-site.pages.dev/recipes/american/cornbread_southern",
+      "title": "Cornbread_southern",
+      "collection": "dishes",
+      "slug": "american/cornbread_southern"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/eggs_benedict",
+      "url": "https://gos-site.pages.dev/recipes/american/eggs_benedict",
+      "title": "Eggs_benedict",
+      "collection": "dishes",
+      "slug": "american/eggs_benedict"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/fried_chicken_southern",
+      "url": "https://gos-site.pages.dev/recipes/american/fried_chicken_southern",
+      "title": "Fried_chicken_southern",
+      "collection": "dishes",
+      "slug": "american/fried_chicken_southern"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/gumbo_louisiana",
+      "url": "https://gos-site.pages.dev/recipes/american/gumbo_louisiana",
+      "title": "Gumbo_louisiana",
+      "collection": "dishes",
+      "slug": "american/gumbo_louisiana"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/jambalaya_cajun",
+      "url": "https://gos-site.pages.dev/recipes/american/jambalaya_cajun",
+      "title": "Jambalaya_cajun",
+      "collection": "dishes",
+      "slug": "american/jambalaya_cajun"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/key_lime_pie",
+      "url": "https://gos-site.pages.dev/recipes/american/key_lime_pie",
+      "title": "Key_lime_pie",
+      "collection": "dishes",
+      "slug": "american/key_lime_pie"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/macaroni_and_cheese",
+      "url": "https://gos-site.pages.dev/recipes/american/macaroni_and_cheese",
+      "title": "Macaroni_and_cheese",
+      "collection": "dishes",
+      "slug": "american/macaroni_and_cheese"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze",
+      "url": "https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze",
+      "title": "Meatloaf_with_glaze",
+      "collection": "dishes",
+      "slug": "american/meatloaf_with_glaze"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup",
+      "url": "https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup",
+      "title": "Pancakes_maple_syrup",
+      "collection": "dishes",
+      "slug": "american/pancakes_maple_syrup"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/philly_cheesesteak",
+      "url": "https://gos-site.pages.dev/recipes/american/philly_cheesesteak",
+      "title": "Philly_cheesesteak",
+      "collection": "dishes",
+      "slug": "american/philly_cheesesteak"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/pot_roast_american",
+      "url": "https://gos-site.pages.dev/recipes/american/pot_roast_american",
+      "title": "Pot_roast_american",
+      "collection": "dishes",
+      "slug": "american/pot_roast_american"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich",
+      "url": "https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich",
+      "title": "Pulled_pork_sandwich",
+      "collection": "dishes",
+      "slug": "american/pulled_pork_sandwich"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/reuben_sandwich",
+      "url": "https://gos-site.pages.dev/recipes/american/reuben_sandwich",
+      "title": "Reuben_sandwich",
+      "collection": "dishes",
+      "slug": "american/reuben_sandwich"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/american/texas_chili_con_carne",
+      "url": "https://gos-site.pages.dev/recipes/american/texas_chili_con_carne",
+      "title": "Texas_chili_con_carne",
+      "collection": "dishes",
+      "slug": "american/texas_chili_con_carne"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/alfajores_de_maicena",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/alfajores_de_maicena",
+      "title": "Alfajores_de_maicena",
+      "collection": "dishes",
+      "slug": "argentinian/alfajores_de_maicena"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/asado_criollo",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/asado_criollo",
+      "title": "Asado_criollo",
+      "collection": "dishes",
+      "slug": "argentinian/asado_criollo"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/carbonada_criolla",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/carbonada_criolla",
+      "title": "Carbonada_criolla",
+      "collection": "dishes",
+      "slug": "argentinian/carbonada_criolla"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/choripan",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/choripan",
+      "title": "Choripan",
+      "collection": "dishes",
+      "slug": "argentinian/choripan"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/empanadas_tucumanas",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/empanadas_tucumanas",
+      "title": "Empanadas_tucumanas",
+      "collection": "dishes",
+      "slug": "argentinian/empanadas_tucumanas"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/humita_en_chala",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/humita_en_chala",
+      "title": "Humita_en_chala",
+      "collection": "dishes",
+      "slug": "argentinian/humita_en_chala"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/locro_criollo",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/locro_criollo",
+      "title": "Locro_criollo",
+      "collection": "dishes",
+      "slug": "argentinian/locro_criollo"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/milanesa_a_la_napolitana",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/milanesa_a_la_napolitana",
+      "title": "Milanesa_a_la_napolitana",
+      "collection": "dishes",
+      "slug": "argentinian/milanesa_a_la_napolitana"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/pastelitos_criollos",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/pastelitos_criollos",
+      "title": "Pastelitos_criollos",
+      "collection": "dishes",
+      "slug": "argentinian/pastelitos_criollos"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/argentinian/provoleta",
+      "url": "https://gos-site.pages.dev/recipes/argentinian/provoleta",
+      "title": "Provoleta",
+      "collection": "dishes",
+      "slug": "argentinian/provoleta"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/acaraje",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/acaraje",
+      "title": "Acaraje",
+      "collection": "dishes",
+      "slug": "brazilian/acaraje"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/brigadeiro",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/brigadeiro",
+      "title": "Brigadeiro",
+      "collection": "dishes",
+      "slug": "brazilian/brigadeiro"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/caipirinha",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/caipirinha",
+      "title": "Caipirinha",
+      "collection": "dishes",
+      "slug": "brazilian/caipirinha"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/churrasco",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/churrasco",
+      "title": "Churrasco",
+      "collection": "dishes",
+      "slug": "brazilian/churrasco"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/coxinha",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/coxinha",
+      "title": "Coxinha",
+      "collection": "dishes",
+      "slug": "brazilian/coxinha"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/feijoada",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/feijoada",
+      "title": "Feijoada",
+      "collection": "dishes",
+      "slug": "brazilian/feijoada"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/moqueca_de_peixe",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/moqueca_de_peixe",
+      "title": "Moqueca_de_peixe",
+      "collection": "dishes",
+      "slug": "brazilian/moqueca_de_peixe"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/pao_de_queijo",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/pao_de_queijo",
+      "title": "Pao_de_queijo",
+      "collection": "dishes",
+      "slug": "brazilian/pao_de_queijo"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/pudim_de_leite",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/pudim_de_leite",
+      "title": "Pudim_de_leite",
+      "collection": "dishes",
+      "slug": "brazilian/pudim_de_leite"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/brazilian/vatapa",
+      "url": "https://gos-site.pages.dev/recipes/brazilian/vatapa",
+      "title": "Vatapa",
+      "collection": "dishes",
+      "slug": "brazilian/vatapa"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/caldillo_de_congrio",
+      "url": "https://gos-site.pages.dev/recipes/chilean/caldillo_de_congrio",
+      "title": "Caldillo_de_congrio",
+      "collection": "dishes",
+      "slug": "chilean/caldillo_de_congrio"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/cazuela_de_vacuno",
+      "url": "https://gos-site.pages.dev/recipes/chilean/cazuela_de_vacuno",
+      "title": "Cazuela_de_vacuno",
+      "collection": "dishes",
+      "slug": "chilean/cazuela_de_vacuno"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/charquican",
+      "url": "https://gos-site.pages.dev/recipes/chilean/charquican",
+      "title": "Charquican",
+      "collection": "dishes",
+      "slug": "chilean/charquican"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/chorrillana",
+      "url": "https://gos-site.pages.dev/recipes/chilean/chorrillana",
+      "title": "Chorrillana",
+      "collection": "dishes",
+      "slug": "chilean/chorrillana"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/empanada_de_pino",
+      "url": "https://gos-site.pages.dev/recipes/chilean/empanada_de_pino",
+      "title": "Empanada_de_pino",
+      "collection": "dishes",
+      "slug": "chilean/empanada_de_pino"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/humitas",
+      "url": "https://gos-site.pages.dev/recipes/chilean/humitas",
+      "title": "Humitas",
+      "collection": "dishes",
+      "slug": "chilean/humitas"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/mote_con_huesillos",
+      "url": "https://gos-site.pages.dev/recipes/chilean/mote_con_huesillos",
+      "title": "Mote_con_huesillos",
+      "collection": "dishes",
+      "slug": "chilean/mote_con_huesillos"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/pastel_de_choclo",
+      "url": "https://gos-site.pages.dev/recipes/chilean/pastel_de_choclo",
+      "title": "Pastel_de_choclo",
+      "collection": "dishes",
+      "slug": "chilean/pastel_de_choclo"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/porotos_con_riendas",
+      "url": "https://gos-site.pages.dev/recipes/chilean/porotos_con_riendas",
+      "title": "Porotos_con_riendas",
+      "collection": "dishes",
+      "slug": "chilean/porotos_con_riendas"
+    },
+    {
+      "id": "https://gos-site.pages.dev/recipes/chilean/sopaipillas",
+      "url": "https://gos-site.pages.dev/recipes/chilean/sopaipillas",
+      "title": "Sopaipillas",
+      "collection": "dishes",
+      "slug": "chilean/sopaipillas"
+    }
+  ]
+}
