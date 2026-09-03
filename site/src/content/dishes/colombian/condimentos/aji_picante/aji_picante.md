@@ -1,20 +1,7 @@
 ---
-title: Ají Picante Colombiano
-description: El ají es el condimento estrella de la comida callejera y casera en Colombia.
-  Existen muchas variantes, pero la base es una mezcla de ají fresco, cebolla, cilantro,
-  tomate y vinagre. Es tendencia por su presencia en snacks, empanadas y fritos.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 1060
-  macros:
-    protein_g: 123.2
-    fat_g: 50.8
-    carbs_g: 15.8
-embedding_version: 1
+title: "Aji Picante"
+region: "Colombia"
+categories: ["Aji_picante"]
 ---
 
 # Ají Picante Colombiano
@@ -60,7 +47,7 @@ El ají es el condimento estrella de la comida callejera y casera en Colombia. E
 
 ## 📸 Galería
 
-![Ají picante fresco](/dishes/colombian/condimentos/aji_picante/images/1.webp)
+![Ají picante fresco](./images/1.png)
 
 ---
 

@@ -1,20 +1,7 @@
 ---
-title: Guacamole Colombiano
-description: El guacamole colombiano es una salsa fresca y sencilla, diferente a la
-  versión mexicana. Se prepara con aguacate, cebolla, tomate y cilantro, y es tendencia
-  por su uso en asados, arepas y comidas rápidas.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 412
-  macros:
-    protein_g: 10.4
-    fat_g: 31.4
-    carbs_g: 36.7
-embedding_version: 1
+title: "Guacamole Colombiano"
+region: "Colombia"
+categories: ["Guacamole_colombiano"]
 ---
 
 # Guacamole Colombiano
@@ -59,7 +46,7 @@ El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión 
 
 ## 📸 Galería
 
-![Guacamole colombiano rústico](/dishes/colombian/condimentos/guacamole_colombiano/images/1.webp)
+![Guacamole colombiano rústico](./images/1.png)
 
 ---
 

@@ -1,20 +1,7 @@
 ---
-title: Salsa Rosada Colombiana
-description: La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla
-  de mayonesa y kétchup, usada en salchipapas, hamburguesas, perros calientes y snacks.
-  Es tendencia por su sabor suave y su presencia en la comida rápida urbana.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 4
-  macros:
-    protein_g: 0.1
-    fat_g: 0.0
-    carbs_g: 1.5
-embedding_version: 1
+title: "Salsa Rosada"
+region: "Colombia"
+categories: ["Salsa_rosada"]
 ---
 
 # Salsa Rosada Colombiana
@@ -57,7 +44,7 @@ La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla de mayon
 
 ## 📸 Galería
 
-![Salsa rosada clásica](/dishes/colombian/condimentos/salsa_rosada/images/1.webp)
+![Salsa rosada clásica](./images/1.png)
 
 ---
 
