@@ -1,52 +1,7 @@
 ---
-title: "Carimañolas"
-region: "Caribe"
-categories:
-  - "Fritura"
-  - "Desayuno"
-  - "Amasijo"
-sensory:
-  flavor:
-    - "Yuca frita (Neutro)"
-    - "Cárnico (Umami)"
-    - "Graso"
-  texture:
-    - "Vidrio (Corteza externa)"
-    - "Puré elástico (Masa)"
-    - "Suave (Relleno)"
-  aroma:
-    - "Yuca tostada"
-    - "Guiso de tomate"
-    - "Aceite"
-  presentation: "Zepelines dorados, lisos y uniformes (sin grietas). Se deben servir hirviendo para apreciar el contraste crocante/suave."
-main_ingredients:
-  - "Yuca (Mandioca/Cassava) harinosa"
-  - "Carne molida (o Queso costeño)"
-  - "Aceite vegetal"
-  - "Sal"
-  - "Color (Achiote) para el relleno"
-difficulty: "Media"
-prep_time: "40"
-cook_time: "20"
-servings: 10
-nutrition:
-  calories: 290
-  macros:
-    protein_g: 9
-    fat_g: 14
-    carbs_g: 32
-tags:
-  - "Fritanga"
-  - "Barranquilla"
-  - "Desayuno"
-images:
-  - url: "https://im.ge/i/carimanolas-1.AbC789"
-    description: "Carimañolas doradas rellenas de queso"
-sources:
-  - name: "Cocina de Plaza"
-    url: "https://gos.org/street-food/carimanolas"
-license: "MIT"
-description: "El torpedo de yuca. Una obra maestra de la reología del almidón: la yuca cocida y molida en caliente forma un gel elástico que, al freírse, crea una corteza vitrificada (glass-like) extremadamente crujiente, protegiendo un interior suave como la seda."
+title: "CarimañOlas"
+region: "Colombia"
+categories: ["CarimañOlas"]
 ---
 
 # Carimañolas
@@ -65,12 +20,12 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 ## 📝 Ingredientes
 
 * **Masa:**
-    * 1 kg de **[Yuca/Mandioca](/dishes/colombian/caribe/carimañolas/../../ingredients/yuca)** (pelada y cocida)
+    * 1 kg de **[Yuca/Mandioca](../../ingredients/yuca)** (pelada y cocida)
     * Sal al gusto
     * 1 cucharadita de aceite (para amasar)
 * **Relleno Clásico (Carne):**
     * 250 g de carne molida magra
-    * 1/2 taza de **[Hogao](/dishes/colombian/caribe/carimañolas/../../condimentos/hogao)** (guiso de tomate y cebolla)
+    * 1/2 taza de **[Hogao](../../condimentos/hogao)** (guiso de tomate y cebolla)
     * Comino, color y pimienta
 * **Fritura:**
     * Abundante aceite vegetal neutro
@@ -96,7 +51,7 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 
 ## 📸 Galería
 
-![Carimañolas](/dishes/colombian/caribe/carimañolas/images/1.webp)
+![Carimañolas](./images/1.png)
 
 ---
 
