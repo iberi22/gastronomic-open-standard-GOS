@@ -47,7 +47,7 @@ El ají es el condimento estrella de la comida callejera y casera en Colombia. E
 
 ## 📸 Galería
 
-![Ají picante fresco](./images/1.png)
+
 
 ---
 

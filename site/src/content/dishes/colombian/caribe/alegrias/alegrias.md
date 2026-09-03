@@ -52,7 +52,7 @@ Las Alegrías son un dulce tradicional de la región Caribe colombiana, especial
 
 ## 📸 Galería
 
-![Alegrías de amaranto](./images/1.png)
+
 
 ---
 

@@ -34,7 +34,6 @@ sensory:
 images:
 - url: ./images/1.png
   description: Carne a la perra asada tradicionalmente al fuego directo.
-image: ./images/1.png
 ---
 
 # Carne a la Perra

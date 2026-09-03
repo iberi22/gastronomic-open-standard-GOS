@@ -34,7 +34,6 @@ sensory:
 images:
 - url: ./images/1.png
   description: Cachama asada a la llanera sobre hojas de bijao.
-image: ./images/1.png
 ---
 
 # Cachama Asada

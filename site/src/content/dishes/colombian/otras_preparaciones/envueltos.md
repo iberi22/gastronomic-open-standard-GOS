@@ -30,7 +30,6 @@ sensory:
   - Steamed leaf
   presentation: Paquetes cilíndricos envueltos en hojas de mazorca de color verde
     pálido o crema, atados manualmente.
-image: https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg
 region: Andina
 ---
 

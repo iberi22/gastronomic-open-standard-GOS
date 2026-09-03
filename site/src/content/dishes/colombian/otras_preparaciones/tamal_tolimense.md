@@ -30,7 +30,6 @@ sensory:
   - Pork fat
   presentation: Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado
     en la parte superior.
-image: https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
 region: Andina
 ---
 

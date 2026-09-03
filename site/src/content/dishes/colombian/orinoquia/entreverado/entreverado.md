@@ -34,7 +34,6 @@ sensory:
 images:
 - url: ./images/1.png
   description: Bandeja de entreverado llanero con mixtura de carnes.
-image: ./images/1.png
 ---
 
 # Entreverado

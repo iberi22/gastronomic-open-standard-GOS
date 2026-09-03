@@ -28,7 +28,6 @@ sensory:
   - Savory (sofrito)
   presentation: Puré de banano verde servido en montaña con queso blanco rallado encima
     y toques rojos de hogao.
-image: https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg
 region: Caribe
 ---
 

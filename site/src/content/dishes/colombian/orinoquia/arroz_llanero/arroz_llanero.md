@@ -32,7 +32,6 @@ sensory:
 images:
 - url: ./images/1.png
   description: Plato de Arroz Llanero con variedad de carnes y verduras.
-image: ./images/1.png
 ---
 
 <!-- markdownlint-disable MD025 -->

@@ -33,7 +33,6 @@ sensory:
   - Cooked Corn
   presentation: Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros
     de panela o bocadillo.
-image: https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg
 region: Andina
 ---
 

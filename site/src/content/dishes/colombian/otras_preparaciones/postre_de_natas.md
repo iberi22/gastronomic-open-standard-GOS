@@ -28,7 +28,6 @@ sensory:
   - Vanilla
   - Caramelized Milk
   presentation: Crema espesa de color marfil con capas visibles de nata, servida fría.
-image: https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg
 region: Andina
 ---
 

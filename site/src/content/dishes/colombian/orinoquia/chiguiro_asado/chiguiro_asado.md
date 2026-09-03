@@ -34,7 +34,6 @@ sensory:
 images:
 - url: ./images/1.png
   description: Chigüiro asado, plato típico de la Orinoquía.
-image: ./images/1.png
 ---
 
 # Chigüiro Asado

@@ -44,7 +44,7 @@ El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana
 
 ## 📸 Galería
 
-![Suero costeño cremoso](./images/1.png)
+
 
 ---
 
