@@ -8,8 +8,27 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const data = entry.data as any;
+const ingredientUrl = `https://gos-site.pages.dev/ingredients/${entry.id}`;
+const nutrition = data.nutrition_per_100g || {};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'IndividualProduct',
+  name: data.name || entry.id,
+  url: ingredientUrl,
+  description: `${data.name || entry.id} — ${data.group || 'ingrediente'} — contenido nutricional por 100g`,
+  category: data.group || 'Food',
+  nutrition: {
+    '@type': 'NutritionInformation',
+    calories: nutrition.calories ? `${nutrition.calories} kcal` : undefined,
+    proteinContent: nutrition.protein_g ? `${nutrition.protein_g}g` : undefined,
+    fatContent: nutrition.fat_g ? `${nutrition.fat_g}g` : undefined,
+    carbohydrateContent: nutrition.carbs_g ? `${nutrition.carbs_g}g` : undefined,
+  },
+};
 ---
 <Layout title={`${(entry.data as any).name} — Ingrediente GOS`}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <a href={`${base}/ingredients`} class="back">← Ingredientes</a>
   <article class="article">
     <h1>{(entry.data as any).name} <span class="sci">{(entry.data as any).scientific_name ? `(${(entry.data as any).scientific_name})` : ''}</span></h1>
