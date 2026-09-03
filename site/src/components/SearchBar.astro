@@ -1,211 +1,217 @@
 ---
-interface Props {
-  placeholder?: string;
+// site/src/components/SearchBar.astro — client-side fuzzy search + faceted filtering
+// Uses Fuse.js (already a dep). No server round-trip — pure client filtering of the static catalog.
+import Fuse from 'fuse.js';
+
+export interface SearchItem {
+  id: string;
+  name: string;
+  group?: string;
+  region?: string;
+  difficulty?: string;
+  scientific_name?: string;
+  health?: string;
 }
 
-const { placeholder = 'Search restaurants, products, recipes...' } = Astro.props;
+interface Props {
+  items: SearchItem[];
+  baseHref: string;
+  placeholder?: string;
+  facets?: string[]; // optional facet fields to show as pills (group, region, difficulty)
+  fuseKeys?: string[]; // default: ['name', 'scientific_name', 'health']
+}
+
+const {
+  items,
+  baseHref,
+  placeholder = 'Buscar...',
+  facets = [],
+  fuseKeys = ['name', 'scientific_name', 'health'],
+} = Astro.props;
 ---
 
-<div class="relative w-full max-w-xl" id="search-container">
-  <div class="relative">
-    <!-- Search Icon -->
-    <span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 dark:text-gray-500">search</span>
-
-    <!-- Input -->
-    <input
-      type="text"
-      id="search-input"
-      placeholder={placeholder}
-      autocomplete="off"
-      class="w-full pl-12 pr-12 py-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary dark:focus:ring-primary/50 dark:focus:border-primary transition-all shadow-sm dark:shadow-none"
-    />
-
-    <!-- Clear Button -->
-    <button
-      id="search-clear"
-      type="button"
-      class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hidden transition-colors"
-      aria-label="Clear search"
-    >
-      close
-    </button>
+<div class="search-container" data-items={JSON.stringify(items)} data-base={baseHref} data-fuse-keys={JSON.stringify(fuseKeys)}>
+  <div class="search-row">
+    <input type="search" class="search-input" placeholder={placeholder} aria-label="Search" />
+    {facets.length > 0 && (
+      <div class="facet-row">
+        <button class="pill active" data-facet="" data-value="">Todas</button>
+        {facets.map((f) => (
+          <>
+            <button class="pill" data-facet={f} data-value={f}>{f}</button>
+          </>
+        ))}
+      </div>
+    )}
   </div>
-
-  <!-- Results Dropdown -->
-  <div
-    id="search-results"
-    class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg dark:shadow-xl overflow-hidden hidden z-50 max-h-80 overflow-y-auto"
-  >
-    <div id="search-results-content"></div>
-  </div>
+  <div class="result-count"><span class="count">0</span> resultados</div>
+  <div class="search-results"></div>
 </div>
 
 <style>
-  #search-results::-webkit-scrollbar {
-    width: 6px;
+  .search-container { margin: 16px 0; }
+  .search-row { display: flex; flex-direction: column; gap: 8px; }
+  .search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--swal-border);
+    border-radius: 12px;
+    background: var(--swal-bg);
+    color: var(--swal-text);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s;
   }
-  #search-results::-webkit-scrollbar-track {
-    background: transparent;
+  .search-input:focus {
+    border-color: var(--swal-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--swal-accent) 15%, transparent);
   }
-  #search-results::-webkit-scrollbar-thumb {
-    background: #FF6347;
-    border-radius: 3px;
+  .facet-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--swal-surface);
+    border: 1px solid var(--swal-border);
+    color: var(--swal-text-secondary);
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.12s;
+    font-family: inherit;
+  }
+  .pill:hover { border-color: var(--swal-accent); color: var(--swal-text); }
+  .pill.active {
+    background: var(--swal-accent-muted);
+    color: var(--swal-accent);
+    border-color: color-mix(in srgb, var(--swal-accent) 30%, transparent);
+  }
+  .result-count {
+    font-size: 12px;
+    color: var(--swal-text-muted);
+    font-family: var(--swal-font-mono);
+    margin-top: 8px;
+  }
+  .search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .search-results :global(.result-card) {
+    border: 1px solid var(--swal-border);
+    background: var(--swal-surface);
+    border-radius: 16px;
+    padding: 14px;
+    text-decoration: none;
+    color: var(--swal-text);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.12s, border-color 0.12s;
+  }
+  .search-results :global(.result-card:hover) {
+    border-color: color-mix(in srgb, var(--swal-accent) 30%, var(--swal-border));
+    transform: translateY(-2px);
+  }
+  .search-results :global(.result-card .r-name) { font-weight: 700; }
+  .search-results :global(.result-card .r-meta) {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+  .search-results :global(.result-card .r-meta .pill) { cursor: default; }
+  .search-results :global(.result-card .r-sci) {
+    font-style: italic;
+    color: var(--swal-text-muted);
+    font-size: 12px;
   }
 </style>
 
 <script>
-  const input = document.getElementById('search-input') as HTMLInputElement;
-  const clearBtn = document.getElementById('search-clear') as HTMLButtonElement;
-  const resultsContainer = document.getElementById('search-results') as HTMLDivElement;
-  const resultsContent = document.getElementById('search-results-content') as HTMLDivElement;
+  import Fuse from 'fuse.js';
 
-  let debounceTimer: ReturnType<typeof setTimeout> | null = null;
-  let currentQuery = '';
+  function init(container: HTMLElement) {
+    const items = JSON.parse(container.dataset.items || '[]');
+    const base = container.dataset.base || '';
+    const fuseKeys = JSON.parse(container.dataset.fuseKeys || '["name"]');
+    const input = container.querySelector('.search-input') as HTMLInputElement;
+    const resultEl = container.querySelector('.search-results') as HTMLElement;
+    const countEl = container.querySelector('.count') as HTMLElement;
+    const facetButtons = container.querySelectorAll<HTMLButtonElement>('[data-facet]');
+    const activeFacets: Record<string, string> = {};
 
-  async function fetchResults(query: string) {
-    if (!query.trim()) {
-      hideResults();
-      return;
-    }
-
-    try {
-      const baseUrl = import.meta.env.BASE_URL;
-      const endpoints = [
-        `${baseUrl}/api/index.json`,
-        `${baseUrl}/api/all.json`,
-      ];
-
-      const results: Array<{ title: string; slug: string; type: string; category?: string }> = [];
-
-      await Promise.all(
-        endpoints.map(async (endpoint) => {
-          try {
-            const res = await fetch(endpoint);
-            if (res.ok) {
-              const data = await res.json();
-              const items = Array.isArray(data) ? data : (data.recipes || data.items || []);
-              items.forEach((item: any) => {
-                if (
-                  item.title?.toLowerCase().includes(query.toLowerCase()) ||
-                  item.name?.toLowerCase().includes(query.toLowerCase()) ||
-                  item.originalName?.toLowerCase().includes(query.toLowerCase()) ||
-                  item.category?.toLowerCase().includes(query.toLowerCase())
-                ) {
-                  results.push({
-                    title: item.title || item.name,
-                    slug: item.slug || item.id || `#`,
-                    type: item.type || 'recipe',
-                    category: item.category,
-                  });
-                }
-              });
-            }
-          } catch (e) {
-            // silently skip failed endpoints
-          }
-        })
-      );
-
-      renderResults(results, query);
-    } catch (e) {
-      console.error('Search error:', e);
-    }
-  }
-
-  function renderResults(results: Array<{ title: string; slug: string; type: string; category?: string }>, query: string) {
-    resultsContent.innerHTML = '';
-
-    if (results.length === 0) {
-      resultsContent.innerHTML = `
-        <div class="p-4 text-center text-gray-500 dark:text-gray-400">
-          <span class="material-symbols-outlined text-3xl mb-2">search_off</span>
-          <p class="text-sm">No results found</p>
-        </div>
-      `;
-      resultsContainer.classList.remove('hidden');
-      return;
-    }
-
-    const uniqueResults = results.slice(0, 20);
-
-    uniqueResults.forEach((result) => {
-      const div = document.createElement('a');
-      div.href = `${import.meta.env.BASE_URL}/recipes/${result.slug}`;
-      div.className = 'flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 border-b border-gray-100 dark:border-gray-800 last:border-0 transition-colors cursor-pointer';
-
-      const iconMap: Record<string, string> = {
-        recipe: 'restaurant',
-        restaurant: 'storefront',
-        product: 'inventory_2',
-      };
-
-      div.innerHTML = `
-        <span class="material-symbols-outlined text-primary">${iconMap[result.type] || 'search'}</span>
-        <div class="flex flex-col min-w-0">
-          <span class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">${highlightMatch(result.title, query)}</span>
-          ${result.category ? `<span class="text-xs text-gray-400 dark:text-gray-500 capitalize">${result.category}</span>` : ''}
-        </div>
-        <span class="ml-auto material-symbols-outlined text-gray-300 dark:text-gray-600 text-sm">arrow_forward</span>
-      `;
-
-      resultsContent.appendChild(div);
+    const fuse = new Fuse(items, {
+      keys: fuseKeys,
+      threshold: 0.3,
+      includeScore: true,
     });
 
-    resultsContainer.classList.remove('hidden');
-  }
-
-  function highlightMatch(text: string, query: string): string {
-    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
-    return text.replace(regex, '<mark class="bg-primary/20 text-primary rounded px-0.5">$1</mark>');
-  }
-
-  function escapeRegex(str: string): string {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-
-  function hideResults() {
-    resultsContainer.classList.add('hidden');
-    resultsContent.innerHTML = '';
-  }
-
-  // Event Listeners
-  input.addEventListener('input', (e) => {
-    const value = (e.target as HTMLInputElement).value;
-    currentQuery = value;
-
-    if (value) {
-      clearBtn.classList.remove('hidden');
-    } else {
-      clearBtn.classList.add('hidden');
-      hideResults();
-      return;
+    function render(items: any[]) {
+      countEl.textContent = String(items.length);
+      resultEl.innerHTML = items
+        .slice(0, 200)
+        .map(
+          (item) => `
+            <a href="${base}/${item.id}" class="result-card">
+              <div class="r-name">${escapeHtml(item.name)}</div>
+              ${item.scientific_name ? `<div class="r-sci">${escapeHtml(item.scientific_name)}</div>` : ''}
+              <div class="r-meta">
+                ${item.group ? `<span class="pill">${escapeHtml(item.group)}</span>` : ''}
+                ${item.region ? `<span class="pill">${escapeHtml(item.region)}</span>` : ''}
+                ${item.difficulty ? `<span class="pill">${escapeHtml(item.difficulty)}</span>` : ''}
+                ${item.health ? `<span class="pill">${escapeHtml(item.health)}</span>` : ''}
+              </div>
+            </a>`,
+        )
+        .join('');
+      if (items.length === 0) {
+        resultEl.innerHTML = '<div style="color: var(--swal-text-muted); padding: 24px; text-align: center; font-style: italic;">Sin resultados. Probá con otro término.</div>';
+      }
     }
 
-    if (debounceTimer) clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => fetchResults(value), 300);
-  });
-
-  clearBtn.addEventListener('click', () => {
-    input.value = '';
-    currentQuery = '';
-    clearBtn.classList.add('hidden');
-    hideResults();
-    input.focus();
-  });
-
-  // Close on click outside
-  document.addEventListener('click', (e) => {
-    const container = document.getElementById('search-container');
-    if (container && !container.contains(e.target as Node)) {
-      hideResults();
+    function escapeHtml(s: string): string {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
     }
-  });
 
-  // Keyboard navigation
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      hideResults();
-      input.blur();
+    function applyFilters() {
+      const query = (input?.value || '').trim();
+      let result = query.length > 0 ? fuse.search(query).map((r) => r.item) : items;
+
+      // Apply facets
+      const facetKeys = Object.keys(activeFacets).filter((k) => activeFacets[k]);
+      if (facetKeys.length > 0) {
+        result = result.filter((item: any) =>
+          facetKeys.every((k) => String(item[k] || '').toLowerCase() === activeFacets[k].toLowerCase()),
+        );
+      }
+      render(result);
     }
-  });
+
+    input?.addEventListener('input', () => applyFilters());
+
+    facetButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const facet = btn.dataset.facet || '';
+        const value = btn.dataset.value || '';
+        // Single-select per facet
+        facetButtons.forEach((b) => {
+          if (b.dataset.facet === facet) b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        activeFacets[facet] = value;
+        applyFilters();
+      });
+    });
+
+    // Initial render
+    render(items);
+  }
+
+  document.querySelectorAll<HTMLElement>('.search-container').forEach((el) => init(el));
 </script>
