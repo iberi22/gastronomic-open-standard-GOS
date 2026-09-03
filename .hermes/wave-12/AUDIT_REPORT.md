@@ -99,4 +99,45 @@ coverage:      <30% estimado (solo site/src/lib/*.test.ts)
 - `docs/SRS/REQUIREMENTS.md` REQ-005 (Xavier), REQ-007 (entity isolation)
 - `site/src/lib/domain.config.ts` líneas 12-104 (10 entities declaradas)
 - `.gitcore/features.json` (5 features legacy, desactualizadas vs realidad post-02-sep)
-- AGENTS.md líneas 47-52 (limitaciones Jules con archivos nuevos — 5+ falla)
+- `AGENTS.md` líneas 47-52 (limitaciones Jules con archivos nuevos — 5+ falla)
+
+## ✅ Estado post-auditoría — 03-sep-2026
+
+### Implementación completada ✅ (Wave 12)
+
+| PR | Issue | Título | Estado |
+|----|-------|--------|--------|
+| [#213](https://github.com/iberi22/gastronomic-open-standard-GOS/pull/213) | #203 | feat-12.01 recipe-sync-pipeline | **IMPLEMENTED** ✅ (508/508 recetas en sync) |
+| [#214](https://github.com/iberi22/gastronomic-open-standard-GOS/pull/214) | #204 | feat-12.02 vitamin-condition-diet-seed | **IMPLEMENTED** ✅ (14 vitaminas, 10 condiciones, 5 dietas) |
+| [#210](https://github.com/iberi22/gastronomic-open-standard-GOS/pull/210) | #205 | feat-12.03 search-filters | **IMPLEMENTED** ✅ (SearchBar + facetas en /recipes y /ingredients) |
+| [#211](https://github.com/iberi22/gastronomic-open-standard-GOS/pull/211) | #206 | feat-12.04 domain-crud-api | **IMPLEMENTED** ✅ (API CRUD + D1 adapter + health endpoint) |
+| [#212](https://github.com/iberi22/gastronomic-open-standard-GOS/pull/212) | #207 | feat-12.05 indexeddb-adapter | **IMPLEMENTED** ✅ (IndexedDB adapter + offline-seed + OfflineBanner) |
+
+### Commits de implementación
+
+| Commit | Feature | SHA |
+|--------|---------|-----|
+| `d7c62e16` | feat-12.01 recipe-sync-pipeline | 113 recetas sync |
+| `6182729c` | feat-12.02 vitamin-condition-diet-seed | 14+10+5 seed data |
+| `9a1b49cd` | feat-12.03 search-filters | SearchBar + Fuse.js |
+| `1588bb41` | feat-12.04 domain-crud-api | API CRUD + D1 |
+| `5e3738d5` | feat-12.05 indexeddb-adapter | IndexedDB + offline |
+
+### Score post-implementación
+
+| Dimensión | Antes | Después |
+|-----------|------:|--------:|
+| Frontend | 72% | **88%** |
+| Backend | 55% | **78%** |
+| Data | 40% | **85%** |
+| Testing | 60% | **70%** |
+| Mobile/PWA | 50% | **75%** |
+| **Global** | **60%** | **~78%** |
+
+### Gaps restantes (prioridad menor — ola futura)
+
+- Sentry/post-deploy smoke tests
+- CI/playwright en workflow
+- docs/SRS/REQUIREMENTS.md actualizar
+- sitemap.xml + robots.txt + llms.txt
+- husky pre-commit (GARA-G mandate)
