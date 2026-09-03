@@ -1,56 +1,11 @@
 ---
 title: "Tamal Tolimense"
-region: "Andina"
-categories:
-  - "Plato Fuerte"
-  - "Desayuno"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Herbal"
-  texture:
-    - "Suave (Masa)"
-    - "Jugoso (Carnes)"
-    - "Fibroso (Hoja)"
-  aroma:
-    - "Hoja de plátano ahumada"
-    - "Cerdo"
-    - "Especias"
-  presentation: "Envuelto piramidal o cilíndrico en hojas de plátano, amarrado con pita. Al abrirse, revela una masa amarilla vibrante impregnada de jugos."
-main_ingredients:
-  - "Masa de maíz"
-  - "Pollo"
-  - "Carne de cerdo (costilla)"
-  - "Tocino"
-  - "Papa"
-  - "Zanahoria"
-  - "Arveja verde"
-  - "Huevo duro"
-  - "Hoja de plátano"
-difficulty: "Alta"
-prep_time: 60
-cook_time: 240
-servings: 10
-nutrition:
-  calories: 720
-  macros:
-    protein_g: 38
-    fat_g: 42
-    carbs_g: 48
-tags:
-  - "Ibagué"
-  - "Desayuno Tradicional"
-  - "Envueltos"
-images:
-  - url: "https://im.ge/i/tamal-1.AbC456"
-    description: "Tamal Tolimense abierto mostrando su relleno de carnes y verduras"
-sources:
-  - name: "Enciclopedia de la Gastronomía Colombiana"
-    url: "https://gos.org/colombia/tamal"
-license: "MIT"
-description: "El tamal más famoso de Colombia. Se distingue por el uso de arroz y masa de maíz, la generosidad de sus carnes (pollo, cerdo, tocino) y su cocción prolongada que funde los sabores de la hoja de plátano con el relleno."
+region: "Colombia"
+categories: ["Tamal_tolimense"]
+difficulty: "★★★★☆"
+prep_time: "60"
+cook_time: "240"
+servings: "10"
 ---
 
 # Tamal Tolimense
@@ -105,7 +60,7 @@ El Tamal Tolimense es un plato tradicional del Tolima y la región andina de Col
 
 ## 📸 Galería
 
-![Tamal Tolimense Tradicional](/dishes/colombian/andina/tamal_tolimense/images/1.webp)
+![Tamal Tolimense Tradicional](./images/1.png)
 
 ---
 

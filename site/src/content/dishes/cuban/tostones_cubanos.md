@@ -1,51 +1,11 @@
 ---
-title: Tostones Cubanos (Chatinos)
-region: Cuba
-categories:
-- Acompañamiento
-- Snack
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Sutilmente dulce
-  - Almidonado
-  texture:
-  - Extremadamente crujiente (exterior)
-  - Sumamente suave y harinoso (interior)
-  aroma:
-  - Plátano frito caliente
-  - Ajo machacado
-  presentation: Servidos calientes en un plato llano cubierto de papel absorbente, espolvoreados con sal gruesa y acompañados de mojo de ajo fresco de inmediato.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Aceite vegetal para freír
-- Sal marina
-difficulty: ★★☆☆☆
-prep_time: 10 minutos
-cook_time: 15 minutos
-servings: 4
-nutrition:
-  calories: 190
-  macros:
-    protein_g: 1.5
-    fat_g: 9.0
-    carbs_g: 31.0
-tags:
-- Plátano
-- Frito
-- Snack
-- Crujiente
-- Cuba
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Tostones crujientes dorados listos para comer (Unsplash)
-sources:
-- https://www.recetascubanas.org/tostones/
-- https://www.cubaenmiami.com/receta-de-los-tostones-cubanos/
-license: MIT
-description: Los Tostones (también conocidos en el oriente de Cuba como "Chatinos") son el acompañamiento frito más popular de la isla. Consisten en rodajas gruesas de plátano verde que se fríen ligeramente en aceite para ablandarlas por dentro, luego se aplastan de forma física para formar discos planos y se vuelven a freír a alta temperatura hasta lograr una costra dorada extremadamente crujiente y un interior suave y harinoso.
+title: "Tostones Cubanos (Chatinos)"
+region: "Cuba"
+categories: ["Plato"]
+difficulty: "★★☆☆☆"
+prep_time: "10 minutos"
+cook_time: "15 minutos"
+servings: "4"
 ---
 
 # Tostones Cubanos (Chatinos)
@@ -95,7 +55,7 @@ Los Tostones son indispensables en la mesa cubana. Acompañan tanto un almuerzo 
 
 ## 📸 Galería
 
-![Tostones cubanos crujientes y espolvoreados con sal marina](/dishes/cuban/images/tostones_1.webp)
+![Tostones cubanos crujientes y espolvoreados con sal marina](./images/tostones_1.jpg)
 
 ---
 

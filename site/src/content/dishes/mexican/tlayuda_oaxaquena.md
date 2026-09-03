@@ -1,50 +1,11 @@
 ---
-title: "Tlayuda Oaxaqueña con Tasajo"
-region: "Oaxaca"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Ahumar de tasajo"
-    - "Asiento salado"
-    - "Quesillo terroso"
-  texture:
-    - "Tortilla gigante tostada y crocante"
-  aroma:
-    - "Asiento de cerdo"
-    - "Tasajo a las brasas"
-    - "Quesillo"
-  presentation: "Tortilla tostada gigante de 30 cm con asiento, frijoles refritos, quesillo deshebrado y tasajo asado."
-main_ingredients:
-  - "Tortilla tlayuda de maíz de 30cm"
-  - "Asiento de cerdo"
-  - "Frijoles negros refritos"
-  - "Quesillo oaxaqueño"
-  - "Tasajo de res"
-  - "Aguacate"
-  - "Repollo picado"
+title: "Tlayuda OaxaqueñA Con Tasajo"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "25 minutos"
 cook_time: "20 minutos"
-servings: 2
-nutrition:
-  calories: 790
-  macros:
-    protein_g: 42.0
-    fat_g: 36.0
-    carbs_g: 75.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Tlayuda Oaxaqueña con Tasajo tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La Tlayuda es bautizada como la 'pizza oaxaqueña': una enorme tortilla tostada al carbón untada con asiento de cerdo, frijoles, quesillo y filete de tasajo."
+servings: "2"
 ---
 
 # Tlayuda Oaxaqueña con Tasajo

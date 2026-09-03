@@ -1,55 +1,64 @@
 ---
-title: "Porotos con Riendas"
-region: "Central"
+title: Porotos con Riendas
+region: Central
+language: es
+license: MIT
+source:
+  name: recetaschilenas.cl
+  url: 'https://www.recetaschilenas.cl/'
+  date_retrieved: '2026-09-03'
 categories:
-  - "Plato fuerte"
-  - "Guiso"
-  - "Tradicional"
+  - Plato fuerte
+  - Guiso
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 15 minutos (más remojo de porotos)
+cook_time: 1 hora y 15 minutos
+servings: 6
+tags:
+  - Chile
+  - Legumbres
+  - Pasta
+  - Chorizo
+  - Invierno
+main_ingredients:
+  - Porotos (frijoles) blancos
+  - Tallarines (pasta)
+  - Zapallo amarillo
+  - Chorizo o longaniza
+  - Cebolla
+  - Comino y orégano
 sensory:
   flavor:
-    - "Salado"
-    - "Umami"
-    - "Ahumado"
+    - Salado
+    - Umami
+    - Ahumado
   texture:
-    - "Cremoso"
-    - "Al dente"
-    - "Untuoso"
+    - Cremoso
+    - Al dente
+    - Untuoso
   aroma:
-    - "Chorizo frito"
-    - "Legumbres cocidas"
-    - "Orégano"
-  presentation: "Se sirve caliente en plato hondo de arcilla, coronado con un trozo de chorizo frito crujiente y espolvoreado con color chilena (aceite de ají de color caliente)."
-main_ingredients:
-  - "Porotos (frijoles) blancos"
-  - "Tallarines (pasta)"
-  - "Zapallo amarillo"
-  - "Chorizo o longaniza"
-  - "Cebolla"
-  - "Comino y orégano"
-difficulty: "★★☆☆☆"
-prep_time: "15 minutos (más remojo de porotos)"
-cook_time: "1 hora y 15 minutos"
-servings: 6
+    - Chorizo frito
+    - Legumbres cocidas
+    - Orégano
+  presentation: >-
+    Se sirve caliente en plato hondo de arcilla, coronado con un trozo de
+    chorizo frito crujiente y espolvoreado con color chilena (aceite de ají de
+    color caliente).
 nutrition:
   calories: 540
   macros:
     protein_g: 24
     fat_g: 19
     carbs_g: 72
-tags:
-  - "Chile"
-  - "Legumbres"
-  - "Pasta"
-  - "Chorizo"
-  - "Invierno"
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Porotos con riendas chilenos tradicionales con un toque de color"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "Los Porotos con Riendas son un plato clásico del invierno chileno. Consiste en un guiso espeso de porotos blancos cocidos con zapallo que se sirve con tallarines (las 'riendas') y se corona con un trozo de chorizo o tocino dorado."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Porotos con riendas chilenos tradicionales con un toque de color
+description: >-
+  Los Porotos con Riendas son un plato clásico del invierno chileno. Consiste en
+  un guiso espeso de porotos blancos cocidos con zapallo que se sirve con
+  tallarines (las 'riendas') y se corona con un trozo de chorizo o tocino
+  dorado.
 ---
 
 # Porotos con Riendas

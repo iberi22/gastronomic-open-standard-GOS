@@ -1,53 +1,11 @@
 ---
-title: "Arroz con Coco (Titoté)"
-region: "Caribe"
-categories:
-  - "Guarnición"
-  - "Festivo"
-  - "Costeño"
-sensory:
-  flavor:
-    - "Dulce-Salado (Balanceado)"
-    - "Nuez (Coco tostado)"
-    - "Umami (Maillard)"
-  texture:
-    - "Suelto (Graneado)"
-    - "Aceitoso (Lubricado)"
-    - "Masticable (Tropezones)"
-  aroma:
-    - "Coco glaseado"
-    - "Caramelo oscuro"
-    - "Humo (si se quema bien)"
-  presentation: "Montaña de arroz color bronce oscuro, brillante. Debe verse punteado por las motas negras de titoté. Se sirve al lado de pescados fritos o postas."
-main_ingredients:
-  - "Leche de coco (Primera extracción/Titoté)"
-  - "Agua de coco (Segunda extracción)"
-  - "Arroz blanco (grano largo)"
-  - "Panela/Azúcar (agente caramelizante)"
-  - "Pasas (opcional controversial)"
-  - "Sal (catalizador de sabor)"
-difficulty: "Media"
+title: "Arroz Con Coco (Titoté)"
+region: "Colombia"
+categories: ["Arroz_con_coco"]
+difficulty: "★★★☆☆"
 prep_time: "45"
 cook_time: "60"
-servings: 6
-nutrition:
-  calories: 420
-  macros:
-    protein_g: 5
-    fat_g: 22
-    carbs_g: 58
-tags:
-  - "Cartagena"
-  - "Titoté"
-  - "Pescado Frito"
-images:
-  - url: "https://im.ge/i/arroz-coco-1.AbC123"
-    description: "Arroz con coco 'negrito' con titoté visible"
-sources:
-  - name: "Tradición Caribeña"
-    url: "https://gos.org/caribe/arroz-coco"
-license: "MIT"
-description: "La guarnición reina del Caribe. No es un simple arroz hervido en leche de coco; es una técnica compleja de separación de fases donde la proteína y el azúcar del coco se fríen en su propio aceite hasta caramelizarse (titoté) antes de añadir el arroz."
+servings: "6"
 ---
 
 # Arroz con Coco (Titoté)
@@ -66,12 +24,12 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 ## 📝 Ingredientes
 
 * **El Coco:**
-    * 2 tazas de **[Leche de Coco](/dishes/colombian/caribe/arroz_con_coco/../../ingredients/leche_de_coco)** espesa (primera extracción o lata *full fat*)
+    * 2 tazas de **[Leche de Coco](../../ingredients/leche_de_coco)** espesa (primera extracción o lata *full fat*)
     * 2 tazas de agua de coco o segunda extracción (para cocinar el arroz)
 * **El Grano:**
     * 2 tazas de arroz blanco de grano largo
 * **Sazón:**
-    * 3-4 cucharadas de **[Panela](/dishes/colombian/caribe/arroz_con_coco/../../ingredients/panela)** o azúcar morena (ajustar al gusto)
+    * 3-4 cucharadas de **[Panela](../../ingredients/panela)** o azúcar morena (ajustar al gusto)
     * 1 1/2 cucharaditas de sal (el contraste es vital)
     * Opcional: Uvas pasas (muy común en fiestas)
 
@@ -97,7 +55,7 @@ Es el acompañante indiscutible del pescado frito y los patacones en la costa Ca
 
 ## 📸 Galería
 
-![Arroz con Coco](/dishes/colombian/caribe/arroz_con_coco/images/1.webp)
+![Arroz con Coco](./images/1.png)
 
 ---
 

@@ -1,46 +1,11 @@
 ---
-title: "Coq au Vin"
-region: "Borgoña"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
-  texture:
-    - "Crujiente exterior"
-    - "Interior tierno"
-  aroma:
-    - "Aroma característico de Coq au Vin"
-  presentation: "Coq au Vin presentado de forma vistosa tradicional."
-main_ingredients:
-  - "Ingrediente principal 1"
-  - "Ingrediente principal 2"
-  - "Especias"
-  - "Aceite de oliva"
+title: "Coq Au Vin"
+region: "Francia"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 550
-  macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 45.0
-tags:
-  - "French"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Coq au Vin tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Coq au Vin es uno de los platos más emblemáticos de la gastronomía de Borgoña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+servings: "4"
 ---
 
 # Coq au Vin

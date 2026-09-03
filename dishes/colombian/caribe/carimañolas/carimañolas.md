@@ -1,52 +1,61 @@
 ---
-title: "Carimañolas"
-region: "Caribe"
+title: Carimañolas
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Fritura"
-  - "Desayuno"
-  - "Amasijo"
+  - Fritura
+  - Desayuno
+  - Amasijo
+difficulty: ★★★☆☆
+prep_time: '40'
+cook_time: '20'
+servings: 10
+tags:
+  - Fritanga
+  - Barranquilla
+  - Desayuno
+main_ingredients:
+  - Yuca (Mandioca/Cassava) harinosa
+  - Carne molida (o Queso costeño)
+  - Aceite vegetal
+  - Sal
+  - Color (Achiote) para el relleno
 sensory:
   flavor:
-    - "Yuca frita (Neutro)"
-    - "Cárnico (Umami)"
-    - "Graso"
+    - Yuca frita (Neutro)
+    - Cárnico (Umami)
+    - Graso
   texture:
-    - "Vidrio (Corteza externa)"
-    - "Puré elástico (Masa)"
-    - "Suave (Relleno)"
+    - Vidrio (Corteza externa)
+    - Puré elástico (Masa)
+    - Suave (Relleno)
   aroma:
-    - "Yuca tostada"
-    - "Guiso de tomate"
-    - "Aceite"
-  presentation: "Zepelines dorados, lisos y uniformes (sin grietas). Se deben servir hirviendo para apreciar el contraste crocante/suave."
-main_ingredients:
-  - "Yuca (Mandioca/Cassava) harinosa"
-  - "Carne molida (o Queso costeño)"
-  - "Aceite vegetal"
-  - "Sal"
-  - "Color (Achiote) para el relleno"
-difficulty: "Media"
-prep_time: "40"
-cook_time: "20"
-servings: 10
+    - Yuca tostada
+    - Guiso de tomate
+    - Aceite
+  presentation: >-
+    Zepelines dorados, lisos y uniformes (sin grietas). Se deben servir
+    hirviendo para apreciar el contraste crocante/suave.
 nutrition:
   calories: 290
   macros:
     protein_g: 9
     fat_g: 14
     carbs_g: 32
-tags:
-  - "Fritanga"
-  - "Barranquilla"
-  - "Desayuno"
 images:
-  - url: "https://im.ge/i/carimanolas-1.AbC789"
-    description: "Carimañolas doradas rellenas de queso"
-sources:
-  - name: "Cocina de Plaza"
-    url: "https://gos.org/street-food/carimanolas"
-license: "MIT"
-description: "El torpedo de yuca. Una obra maestra de la reología del almidón: la yuca cocida y molida en caliente forma un gel elástico que, al freírse, crea una corteza vitrificada (glass-like) extremadamente crujiente, protegiendo un interior suave como la seda."
+  - url: 'https://im.ge/i/carimanolas-1.AbC789'
+    description: Carimañolas doradas rellenas de queso
+description: >-
+  El torpedo de yuca. Una obra maestra de la reología del almidón: la yuca
+  cocida y molida en caliente forma un gel elástico que, al freírse, crea una
+  corteza vitrificada (glass-like) extremadamente crujiente, protegiendo un
+  interior suave como la seda.
 ---
 
 # Carimañolas

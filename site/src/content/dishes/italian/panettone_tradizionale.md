@@ -1,49 +1,11 @@
 ---
 title: "Panettone Artigianale"
-region: "Lombardía (Milán)"
-categories:
-  - "Panadería"
-  - "Navideño"
-sensory:
-  flavor:
-    - "Mantequilla rica"
-    - "Cítrico de naranja escarchada"
-    - "Vainilla y pasas"
-  texture:
-    - "Miga alvéolada larguísima extremadamente esponjosa y suave"
-  aroma:
-    - "Masa madre viva (Lievito Madre)"
-    - "Mantequilla de alta pureza"
-  presentation: "Pan cónico alto con cúpula dorada brillante y aroma complejo fermentado."
-main_ingredients:
-  - "Harina panificable de gran fuerza"
-  - "Lievito Madre (masa madre)"
-  - "Mantequilla dulce"
-  - "Yemas de huevo"
-  - "Naranja confitada"
-  - "Pasas Sultanas"
-  - "Vainilla"
+region: "Italia"
+categories: ["Plato"]
 difficulty: "★★★★☆"
 prep_time: "2 horas"
 cook_time: "1 hora"
-servings: 10
-nutrition:
-  calories: 410
-  macros:
-    protein_g: 8.0
-    fat_g: 18.0
-    carbs_g: 54.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Panettone Artigianale tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Panettone milanés es la joya de la repostería navideña italiana: un pan dulce de masa madre con 48h de fermentación, repleto de mantequilla y frutas confitadas."
+servings: "10"
 ---
 
 # Panettone Artigianale

@@ -1,55 +1,11 @@
 ---
-title: Empanada Colombiana
-region: Nacional
-categories:
-- Snack
-- Entrada
-- Comida callejera
-sensory:
-  flavor:
-  - Salado
-  - Especiado
-  texture:
-  - Crujiente por fuera
-  - Suave y jugoso por dentro
-  aroma:
-  - Frito
-  - Especiado
-  presentation: Se sirve caliente, en servilleta o bandeja, ideal para compartir o
-    como merienda rápida.
-main_ingredients:
-- Harina de maíz
-- Papa
-- Carne molida
-difficulty: ★★☆☆☆
-prep_time: 40 minutos
-cook_time: 15 minutos
-servings: 15
-images:
-- url: ./images/empanada.png
-  description: Empanadas Colombianas fritas y crocantes (Generada por AI)
-sources:
-- https://www.recetasdecolombia.com/empanadas
-- https://www.youtube.com/results?search_query=empanada+colombiana
-- https://www.tiktok.com/tag/empanadacolombiana
-license: MIT
-tags:
-- colombiano
-- tradicional
-- snack
-- callejero
-- empanada
-- open source
-description: La empanada es uno de los snacks más emblemáticos y queridos de Colombia.
-  Su versión más popular es la empanada de papa y carne, frita y crocante, presente
-  en cada esquina, feria y reunión familiar. Es tendencia en redes por su versatilidad
-  y el ritual de acompañarla con ají casero.
-nutrition:
-  calories: 1514
-  macros:
-    protein_g: 92.0
-    fat_g: 47.3
-    carbs_g: 190.3
+title: "Empanada Colombiana"
+region: "Colombia"
+categories: ["Empanada"]
+difficulty: "★★☆☆☆"
+prep_time: "40 minutos"
+cook_time: "15 minutos"
+servings: "15"
 ---
 
 ## Empanada Colombiana
@@ -109,15 +65,15 @@ La empanada es uno de los snacks más emblemáticos y queridos de Colombia. Su v
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Salado, Maíz, Umami  | 5/5              | Maíz tostado + relleno condimentado con comino y **[Achiote](/dishes/colombian/snacks/empanada/../../ingredients/achiote)**. |
+| **Sabor**| Salado, Maíz, Umami  | 5/5              | Maíz tostado + relleno condimentado con comino y **[Achiote](../../ingredients/achiote)**. |
 | **Aroma**| Fritura, Especiado   | 5/5              | Aldehídos de la Reacción de Maillard y terpenos del comino. |
 | **Textura**| Crujiente / Suave    | 5/5              | Costra vítrea externa vs. interior húmedo y suave. |
 | **Boca** | Caliente, Grasosa    | 4/5              | Sensación térmica y lipídica placentera. |
 
 ### ⚗️ Química y Física Culinaria
 
-- **Transición Vítrea (Glass Transition):** Al freír la **[Harina de Maíz](/dishes/colombian/snacks/empanada/../../ingredients/harina_maiz)** a >170°C, el agua superficial se evapora instantáneamente, dejando una matriz de almidón y proteína deshidratada que forma una estructura "vidriosa" y crujiente. Si la temperatura baja, absorbe aceite y queda grasosa.
-- **Color y Sabor del Achiote:** El **[Achiote](/dishes/colombian/snacks/empanada/../../ingredients/achiote)** no solo da el color amarillo solar; la bixina liposoluble y trazas de compuestos aromáticos aportan un sabor "terroso" que complementa el maíz.
+- **Transición Vítrea (Glass Transition):** Al freír la **[Harina de Maíz](../../ingredients/harina_maiz)** a >170°C, el agua superficial se evapora instantáneamente, dejando una matriz de almidón y proteína deshidratada que forma una estructura "vidriosa" y crujiente. Si la temperatura baja, absorbe aceite y queda grasosa.
+- **Color y Sabor del Achiote:** El **[Achiote](../../ingredients/achiote)** no solo da el color amarillo solar; la bixina liposoluble y trazas de compuestos aromáticos aportan un sabor "terroso" que complementa el maíz.
 - **Relleno Húmedo:** La papa actúa como matriz que retiene los jugos de la carne y el guiso, evitando que la empanada se sienta seca por dentro a pesar de la fritura profunda.
 
 ### 🍎 Nutrición y Metabolismo

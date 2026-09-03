@@ -1,52 +1,55 @@
 ---
 title: Lulada
 region: Pacífica
+language: es
+license: MIT
+source:
+  name: elgourmet.com
+  url: 'https://elgourmet.com/recetas/lulada/'
+  date_retrieved: '2026-09-03'
 categories:
-- Bebida refrescante
-- Postre líquido
-- Fiestas
+  - Bebida refrescante
+  - Postre líquido
+  - Fiestas
+difficulty: ★☆☆☆☆
+prep_time: 10 minutos
+cook_time: 0 minutos
+servings: 3
+main_ingredients:
+  - Lulo
+  - Azúcar
+  - Hielo
+  - Limón
 sensory:
   flavor:
-  - Ácido
-  - Dulce
-  - Frutal
+    - Ácido
+    - Dulce
+    - Frutal
   texture:
-  - Refrescante
-  - Con trozos de fruta y hielo
+    - Refrescante
+    - Con trozos de fruta y hielo
   aroma:
-  - Frutal
-  - Cítrico
-  presentation: Se sirve en vasos altos, con mucho hielo, ideal para días calurosos
-    o reuniones familiares. Muy popular en ferias y fiestas caleñas.
-main_ingredients:
-- Lulo
-- Azúcar
-- Hielo
-- Limón
-difficulty: ★☆☆☆☆
-prep_time: "10 minutos"
-cook_time: "0 minutos"
-servings: 3
-images:
-- url: https://pixabay.com/es/photos/lulada-bebida-colombia-6146285/
-  description: Vaso de lulada tradicional colombiana (Pixabay)
-- url: https://unsplash.com/s/photos/lulada-colombia
-  description: Variaciones de lulada en Unsplash
-sources:
-- https://elgourmet.com/recetas/lulada/
-- https://www.youtube.com/results?search_query=lulada+cali
-- https://www.tiktok.com/tag/lulada
-license: MIT
-description: La lulada es una bebida refrescante tradicional del Valle del Cauca y
-  muy popular en todo el suroccidente colombiano. Su base es la pulpa de lulo fresca,
-  mezclada con hielo, azúcar y, a veces, limón o soda. Es símbolo de la cultura caleña
-  y tendencia en redes sociales por su color y sabor exótico.
+    - Frutal
+    - Cítrico
+  presentation: >-
+    Se sirve en vasos altos, con mucho hielo, ideal para días calurosos o
+    reuniones familiares. Muy popular en ferias y fiestas caleñas.
 nutrition:
   calories: 123
   macros:
     protein_g: 0.2
     fat_g: 0.1
     carbs_g: 32.4
+images:
+  - url: 'https://pixabay.com/es/photos/lulada-bebida-colombia-6146285/'
+    description: Vaso de lulada tradicional colombiana (Pixabay)
+  - url: 'https://unsplash.com/s/photos/lulada-colombia'
+    description: Variaciones de lulada en Unsplash
+description: >-
+  La lulada es una bebida refrescante tradicional del Valle del Cauca y muy
+  popular en todo el suroccidente colombiano. Su base es la pulpa de lulo
+  fresca, mezclada con hielo, azúcar y, a veces, limón o soda. Es símbolo de la
+  cultura caleña y tendencia en redes sociales por su color y sabor exótico.
 ---
 
 

@@ -1,49 +1,57 @@
 ---
 title: Alegrías
 region: Caribe
+language: es
+license: MIT
+source:
+  name: eltiempo.com
+  url: 'https://www.eltiempo.com/vida/receta-alegrias-57934'
+  date_retrieved: '2026-09-03'
 categories:
-- Dulce
-- Snack
-- Festivo
-sensory:
-  flavor:
   - Dulce
-  - Nuez (Amaranto)
-  - Coco
-  texture:
-  - Crujiente
-  - Pegajoso
-  - Granulado
-  aroma:
-  - Caramelo (Panela)
-  - Coco tostado
-  presentation: Barras o bolas compactas de semillas doradas con coco, brillantes por el melado.
-main_ingredients:
-- Semillas de Amaranto
-- Panela
-- Coco fresco
-- Miel de caña
+  - Snack
+  - Festivo
 difficulty: ★★☆☆☆
 prep_time: 20 minutos
 cook_time: 15 minutos
 servings: 20
+tags:
+  - Tradicional
+  - Cartagena
+  - Dulces típicos
+main_ingredients:
+  - Semillas de Amaranto
+  - Panela
+  - Coco fresco
+  - Miel de caña
+sensory:
+  flavor:
+    - Dulce
+    - Nuez (Amaranto)
+    - Coco
+  texture:
+    - Crujiente
+    - Pegajoso
+    - Granulado
+  aroma:
+    - Caramelo (Panela)
+    - Coco tostado
+  presentation: >-
+    Barras o bolas compactas de semillas doradas con coco, brillantes por el
+    melado.
 nutrition:
   calories: 120
   macros:
     protein_g: 2.5
-    fat_g: 3.0
-    carbs_g: 22.0
-tags:
-- Tradicional
-- Cartagena
-- Dulces típicos
+    fat_g: 3
+    carbs_g: 22
 images:
-- url: https://pixabay.com/es/photos/amaranto-semillas-cereal-saludable-3788094/
-  description: Semillas de amaranto (base de las alegrías)
-sources:
-- https://www.eltiempo.com/vida/receta-alegrias-57934
-license: MIT
-description: Las Alegrías son un dulce ancestral del Caribe colombiano, herencia africana y precolombina. Son barras energéticas naturales hechas de semillas de amaranto (millo) recubiertas de un melado de panela y coco.
+  - url: 'https://pixabay.com/es/photos/amaranto-semillas-cereal-saludable-3788094/'
+    description: Semillas de amaranto (base de las alegrías)
+description: >-
+  Las Alegrías son un dulce ancestral del Caribe colombiano, herencia africana y
+  precolombina. Son barras energéticas naturales hechas de semillas de amaranto
+  (millo) recubiertas de un melado de panela y coco.
 ---
 
 # Alegrías

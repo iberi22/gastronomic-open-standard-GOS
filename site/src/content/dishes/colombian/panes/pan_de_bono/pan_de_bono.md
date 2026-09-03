@@ -1,51 +1,11 @@
 ---
 title: "Pandebono Valluno"
-region: "Valle del Cauca"
-categories:
-  - "Amasijo"
-  - "Desayuno"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Queso Salado"
-    - "Fermento Suave"
-    - "Maíz Dulce"
-  texture:
-    - "Corteza Fina/Crujiente"
-    - "Miga Chiclo-Elástica"
-    - "Húmedo"
-  aroma:
-    - "Queso Costeño horneado"
-    - "Maíz Tostado"
-    - "Mantequilla"
-  presentation: "Aros o bolas con una cavidad u 'ojo' en el centro. Deben lucir dorados pero no quemados, con la superficie lisa que indica buen hidratado del almidón."
-main_ingredients:
-  - "Almidón de Yuca Agrio (Fermentado)"
-  - "Masato de Maíz o Harina de Maíz"
-  - "Queso Costeño (Salado)"
-  - "Queso Fresco (Cuajada)"
-difficulty: "Media (Equilibrio de humedades)"
+region: "Colombia"
+categories: ["Pan_de_bono"]
+difficulty: "★★★☆☆"
 prep_time: "40"
 cook_time: "20"
-servings: 10
-nutrition:
-  calories: 210
-  macros:
-    protein_g: 8
-    fat_g: 10
-    carbs_g: 22
-tags:
-  - "Cali"
-  - "Vía al Mar"
-  - "Sin Gluten"
-images:
-  - url: "https://im.ge/i/pandebono-1.AbC666"
-    description: "Pandebono tradicional con su textura elástica característica"
-sources:
-  - name: "Ruta del Pandebono GOS"
-    url: "https://gos.org/amasijos/pandebono"
-license: "MIT"
-description: "El rey de los amasijos vallunos. El Pandebono es un milagro de la física del almidón agrio, que logra leudar y crear alveolos gigantes sin levadura, gracias a la expansión de gases atrapados en una red de queso y almidón modificado."
+servings: "10"
 ---
 
 ## Pan de Bono

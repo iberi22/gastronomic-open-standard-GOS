@@ -1,59 +1,11 @@
 ---
-title: "Caldillo de Congrio"
-region: "Litoral / Coquimbo / Valparaíso"
-categories:
-  - "Plato fuerte"
-  - "Sopas"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Ácido sutil"
-    - "Herbal"
-  texture:
-    - "Líquido"
-    - "Suave"
-    - "Troceado"
-  aroma:
-    - "Pescado fresco"
-    - "Vino blanco"
-    - "Cebolla sofrita"
-    - "Cilantro"
-  presentation: "Se sirve extremadamente caliente en plato hondo de greda, decorado con una rodaja de limón, cilantro fresco espolvoreado y un chorrito de crema de leche fresca sobre el caldo hirviendo."
-main_ingredients:
-  - "Congrio dorado o negro"
-  - "Papas"
-  - "Cebolla"
-  - "Tomates"
-  - "Pimentón"
-  - "Vino blanco"
-  - "Crema de leche"
-  - "Cilantro"
+title: "Caldillo De Congrio"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "30 minutos"
 cook_time: "40 minutos"
-servings: 4
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 32
-    fat_g: 18
-    carbs_g: 28
-tags:
-  - "Chile"
-  - "Pescado"
-  - "Sopa"
-  - "Neruda"
-  - "Litoral"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Caldillo de Congrio tradicional servido en pocillo de greda"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "El Caldillo de Congrio es un plato marino emblemático de las costas chilenas, inmortalizado por el poeta Pablo Neruda en su famosa oda. Es una sopa rica y densa hecha con congrio (dorado o negro), papas cocidas, verduras sofritas y aromatizado con vino blanco y cilantro."
+servings: "4"
 ---
 
 # Caldillo de Congrio

@@ -1,60 +1,14 @@
 ---
-title: "Ajiaco Santafereño"
-region: "Andina"
-categories:
-  - "Sopas"
-  - "Plato Fuerte"
-sensory:
-  flavor:
-    - "Salado"
-    - "Herbal"
-    - "Umami"
-    - "Lácteo"
-  texture:
-    - "Cremoso"
-    - "Espeso"
-    - "Suave"
-  aroma:
-    - "Herbal (Guascas)"
-    - "Maíz dulce"
-  presentation: "Cazuela de barro profunda, servida hirviendo. Acompañantes (crema, alcaparras, aguacate, arroz) en platos separados o 'coquitos'."
-main_ingredients:
-  - "Papa criolla"
-  - "Papa pastusa"
-  - "Papa sabanera"
-  - "Pollo"
-  - "Guascas"
-  - "Mazorca"
-  - "Alcaparras"
-  - "Crema de leche"
-difficulty: "Media"
-prep_time: 30
-cook_time: 90
-servings: 6
-nutrition:
-  calories: 580
-  macros:
-    protein_g: 32
-    fat_g: 22
-    carbs_g: 65
-tags:
-  - "Bogotá"
-  - "Tradicional"
-  - "Guascas"
-  - "Reconfortante"
-images:
-  - url: "https://im.ge/i/ajiaco-1.XyZ123"
-    description: "Ajiaco tradicional con sus tres papas"
-  - url: "https://im.ge/i/ajiaco-2.AbC456"
-    description: "Emplatado con aguacate y alcaparras"
-sources:
-  - name: "Patrimonio Cultural Inmaterial"
-    url: "https://mincultura.gov.co"
-  - name: "Investigación de campo (Bogotá)"
-    url: "https://gos.org/field-notes/ajiaco"
-license: "MIT"
-description: "Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el uso de tres variedades de papa (que aportan diferentes texturas) y la hierba aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de memoria, lluvia y hogar."
----## Ajiaco Santafereño
+title: "Ajiaco SantafereñO"
+region: "Colombia"
+categories: ["Ajiaco_santafereñO"]
+difficulty: "★★★☆☆"
+prep_time: "30"
+cook_time: "90"
+servings: "6"
+---
+
+## Ajiaco Santafereño
 
 El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de Colombia. Es una preparación sustanciosa y llena de historia, caracterizada por la mezcla de diferentes tipos de papas y el sabor inconfundible de las guascas.
 
@@ -160,9 +114,9 @@ El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de 
 
 ## 📸 Galería
 
-![Ajiaco servido](/dishes/colombian/andina/ajiaco_santafereño/images/1.webp)
+![Ajiaco servido](./images/1.jpg)
 
-![Ingredientes](/dishes/colombian/andina/ajiaco_santafereño/images/2.webp)
+![Ingredientes](./images/2.jpg)
 
 Referencias:
 

@@ -1,7 +1,8 @@
 ---
-title: "Aji Picante"
+title: "Ají Picante Colombiano"
 region: "Colombia"
 categories: ["Aji_picante"]
+difficulty: "★★☆☆☆"
 ---
 
 # Ají Picante Colombiano
@@ -47,7 +48,7 @@ El ají es el condimento estrella de la comida callejera y casera en Colombia. E
 
 ## 📸 Galería
 
-
+![Ají picante fresco](./images/1.png)
 
 ---
 

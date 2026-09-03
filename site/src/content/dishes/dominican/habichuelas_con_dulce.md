@@ -1,61 +1,11 @@
 ---
-title: Habichuelas con Dulce Dominicanas
-region: República Dominicana
-categories:
-- Postre
-- Dulce
-- Tradicional
-sensory:
-  flavor:
-  - Extremadamente dulce
-  - Lácteo (coco y leche)
-  - Especiado (canela y clavo)
-  - Sutilmente terroso (habichuelas)
-  texture:
-  - Cremosa
-  - Espesa (sopa dulce densa)
-  - Suave (trozos de batata cocida)
-  aroma:
-  - Canela y clavos de olor
-  - Coco y leche condensada calientes
-  - Pasas dulces
-  presentation: Servidas templadas o frías en tazas hondas, decoradas con galletitas de leche redondas con una cruz, y pasas de uva flotando de forma tradicional.
-main_ingredients:
-- Habichuelas rojas (frijoles rojos)
-- Leche evaporada
-- Leche de coco
-- Azúcar blanca o morena
-- Batata (sweet potato/camote)
-- Pasas de uva
-- Canela en rama
-- Clavos de olor
-- Galletitas de leche dominicanas (guarina)
-difficulty: ★竖☆☆☆
-prep_time: 12 horas
-cook_time: 45 minutos
-servings: 8
-nutrition:
-  calories: 390
-  macros:
-    protein_g: 9.0
-    fat_g: 11.0
-    carbs_g: 68.0
-tags:
-- Postre
-- Dulce
-- Habichuelas
-- Cuaresma
-- Coco
-- República Dominicana
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1541783245831-57d6fb0926d3
-  description: Tazón de habichuelas con dulce dominicanas decorado con galletas (Unsplash)
-sources:
-- https://www.cocinadominicana.com/habichuelas-con-dulce-receta/
-- https://www.elfogondelulublog.com/receta-de-habichuelas-con-dulce/
-license: MIT
-description: Las Habichuelas con Dulce son un postre místico único en el mundo, exclusivo de la República Dominicana, consumido tradicionalmente durante la época de Cuaresma y Semana Santa. Consiste en una crema líquida, espesa y dulce de habichuelas rojas hervidas y licuadas con leche de coco, leche evaporada y azúcar de forma tradicional.
+title: "Habichuelas Con Dulce Dominicanas"
+region: "República Dominicana"
+categories: ["Plato"]
+difficulty: "★☆☆☆☆"
+prep_time: "12 horas"
+cook_time: "45 minutos"
+servings: "8"
 ---
 
 # Habichuelas con Dulce Dominicanas
@@ -115,7 +65,7 @@ Las Habichuelas con Dulce son la cumbre de la originalidad culinaria de la Repú
 
 ## 📸 Galería
 
-![Tazas listas de Habichuelas con Dulce dominicanas decoradas con galletas](/dishes/dominican/images/habichuelas_1.webp)
+![Tazas listas de Habichuelas con Dulce dominicanas decoradas con galletas](./images/habichuelas_1.jpg)
 
 ---
 

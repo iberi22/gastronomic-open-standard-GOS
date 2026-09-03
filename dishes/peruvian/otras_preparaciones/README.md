@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # Otras Preparaciones Peruanas
 
 En esta sección se agrupan preparaciones tradicionales que no encajan en las categorías anteriores, pero son parte fundamental de la cultura culinaria peruana.

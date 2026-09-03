@@ -1,40 +1,8 @@
 ---
-title: Arroz con Pollo Colombiano
-description: El arroz con pollo colombiano es un clásico de las celebraciones familiares,
-  fiestas de cumpleaños y paseos. Es un plato muy completo y rendidor, caracterizado
-  por su color amarillo y la mezcla de pollo desmechado con verduras.
-region: Colombia
-language: es
-license: MIT
-sources: []
-compilation_data:
-  description: El arroz con pollo colombiano es un clásico de las celebraciones familiares,
-    fiestas de cumpleaños y paseos. Es un plato muy completo y rendidor, caracterizado
-    por su color amarillo y la mezcla de pollo desmechado con verduras.
-  category: Plato Principal
-media: []
-nutrition:
-  calories: 6283
-  macros:
-    protein_g: 649.6
-    fat_g: 88.6
-    carbs_g: 663.6
-embedding_version: 1
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Vegetal
-  texture:
-  - Suave (arroz)
-  - Tierno (pollo)
-  - Crujiente (verduras)
-  aroma:
-  - Especiado
-  - Aromático
-  - Avícola
-  presentation: Arroz de color amarillo brillante con verduras visibles, servido con
-    salsa de tomate y papas fritas.
+title: "Arroz Con Pollo Colombiano"
+region: "Colombia"
+categories: ["Arroz_con_pollo"]
+difficulty: "★★☆☆☆"
 ---
 
 # Arroz con Pollo Colombiano
@@ -78,7 +46,7 @@ El arroz con pollo colombiano es un clásico de las celebraciones familiares, fi
 
 ## 📸 Galería
 
-![Arroz con pollo colombiano con papas](/dishes/colombian/nacionales/arroz_con_pollo/images/1.webp)
+![Arroz con pollo colombiano con papas](./images/1.png)
 
 ---
 

@@ -1,46 +1,11 @@
 ---
-title: "Gai Pad Med Mamuang (Pollo con Anacardos)"
-region: "Bangkok"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
-  texture:
-    - "Crujiente exterior"
-    - "Interior tierno"
-  aroma:
-    - "Aroma característico de Gai Pad Med Mamuang (Pollo con Anacardos)"
-  presentation: "Gai Pad Med Mamuang (Pollo con Anacardos) presentado de forma vistosa tradicional."
-main_ingredients:
-  - "Ingrediente principal 1"
-  - "Ingrediente principal 2"
-  - "Especias"
-  - "Aceite de oliva"
+title: "Gai Pad Med Mamuang (Pollo Con Anacardos)"
+region: "Tailandia"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "20 minutos"
 cook_time: "30 minutos"
-servings: 4
-nutrition:
-  calories: 550
-  macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 45.0
-tags:
-  - "Thai"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Gai Pad Med Mamuang (Pollo con Anacardos) tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Gai Pad Med Mamuang (Pollo con Anacardos) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+servings: "4"
 ---
 
 # Gai Pad Med Mamuang (Pollo con Anacardos)

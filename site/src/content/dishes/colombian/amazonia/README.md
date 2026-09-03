@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Amazonia"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetas Emblemáticas de la Región Amazonía de Colombia
 
 Este directorio reúne las 10 recetas más representativas de la Amazonía colombiana, enriquecidas con metodología científica, sensorial y colectiva, siguiendo el estándar del proyecto de cocina latinoamericana.

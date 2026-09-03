@@ -1,10 +1,33 @@
 ---
 title: Papa a la Huancaína
 region: Sierra/Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Entrada
   - Criollo
   - Frío
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 6
+tags:
+  - Papa
+  - Huancaina
+  - Entrada
+  - Clasico
+main_ingredients:
+  - Papas amarillas (o blancas arenosas)
+  - Ají amarillo fresco
+  - Queso fresco andino salado
+  - Leche evaporada entera
+  - Galletas de soda clásicas
+  - Aceite vegetal neutro
 sensory:
   flavor:
     - Lácteo-Salado (Queso fresco)
@@ -18,39 +41,24 @@ sensory:
     - Ají amarillo sofrito y queso fresco
     - Papa andina cocida
     - Aceituna botija
-  presentation: Rodajas homogéneas de papa andina cocida dispuestas sobre hojas de lechuga, cubiertas generosamente por una salsa cremosa de color amarillo brillante, decoradas con gajos de huevo duro y aceituna negra de botija.
-main_ingredients:
-  - Papas amarillas (o blancas arenosas)
-  - Ají amarillo fresco
-  - Queso fresco andino salado
-  - Leche evaporada entera
-  - Galletas de soda clásicas
-  - Aceite vegetal neutro
-difficulty: ★★☆☆☆
-prep_time: 20 minutos
-cook_time: 15 minutos
-servings: 6
+  presentation: >-
+    Rodajas homogéneas de papa andina cocida dispuestas sobre hojas de lechuga,
+    cubiertas generosamente por una salsa cremosa de color amarillo brillante,
+    decoradas con gajos de huevo duro y aceituna negra de botija.
 nutrition:
   calories: 310
   macros:
     protein_g: 10
     fat_g: 16
     carbs_g: 32
-tags:
-  - Papa
-  - Huancaina
-  - Entrada
-  - Clasico
 images:
-  - url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'
     description: Papa a la Huancaína tradicional peruana
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: La Papa a la Huancaína es una de las entradas más populares, sencillas y emblemáticas del Perú. Consiste en papas andinas cocidas bañadas en una salsa de textura aterciopelada elaborada a base de queso fresco, ají amarillo sofrito, leche evaporada y galletas de soda.
+description: >-
+  La Papa a la Huancaína es una de las entradas más populares, sencillas y
+  emblemáticas del Perú. Consiste en papas andinas cocidas bañadas en una salsa
+  de textura aterciopelada elaborada a base de queso fresco, ají amarillo
+  sofrito, leche evaporada y galletas de soda.
 ---
 
 # Papa a la Huancaína

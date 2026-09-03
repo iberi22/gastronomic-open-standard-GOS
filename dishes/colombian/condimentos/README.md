@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # 🥣 Condimentos, Salsas y Acompañamientos Colombianos
 
 Descubre las salsas, aderezos y acompañamientos que realzan el sabor de los platos colombianos.

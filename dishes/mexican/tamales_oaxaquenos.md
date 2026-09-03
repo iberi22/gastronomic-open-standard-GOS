@@ -1,49 +1,55 @@
 ---
-title: "Tamales Oaxaqueños"
-region: "Oaxaca"
+title: Tamales Oaxaqueños
+region: Oaxaca
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Desayuno"
-  - "Tradicional"
-  - "Ancestral"
+  - Desayuno
+  - Tradicional
+  - Ancestral
+difficulty: ★★★☆☆
+prep_time: 45 minutos
+cook_time: 1 hora 30 minutos
+servings: 8
+tags:
+  - Mexican
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Masa de maíz nixtamalizado
+  - Manteca de cerdo
+  - Carne de cerdo o pollo
+  - Mole negro o verde
+  - Hojas de plátano
 sensory:
   flavor:
-    - "Umami"
-    - "Picante suave"
-    - "Masa sazonada"
+    - Umami
+    - Picante suave
+    - Masa sazonada
   texture:
-    - "Masa esponjosa y húmeda"
-    - "Carne tierna"
+    - Masa esponjosa y húmeda
+    - Carne tierna
   aroma:
-    - "Hoja de plátano tostada"
-    - "Mole negro"
-  presentation: "Servido envuelto en la propia hoja de plátano humeante."
-main_ingredients:
-  - "Masa de maíz nixtamalizado"
-  - "Manteca de cerdo"
-  - "Carne de cerdo o pollo"
-  - "Mole negro o verde"
-  - "Hojas de plátano"
-difficulty: "★★★☆☆"
-prep_time: "45 minutos"
-cook_time: "1 hora 30 minutos"
-servings: 8
+    - Hoja de plátano tostada
+    - Mole negro
+  presentation: Servido envuelto en la propia hoja de plátano humeante.
 nutrition:
   calories: 420
   macros:
-    protein_g: 16.0
-    fat_g: 22.0
-    carbs_g: 40.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 16
+    fat_g: 22
+    carbs_g: 40
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Tamales Oaxaqueños tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Los Tamales Oaxaqueños se distinguen por estar envueltos en hoja de plátano en lugar de totomoxtle, manteniendo una masa de maíz sumamente húmeda y sabrosa."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Tamales Oaxaqueños tradicional
+description: >-
+  Los Tamales Oaxaqueños se distinguen por estar envueltos en hoja de plátano en
+  lugar de totomoxtle, manteniendo una masa de maíz sumamente húmeda y sabrosa.
 ---
 
 # Tamales Oaxaqueños

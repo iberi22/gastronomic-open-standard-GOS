@@ -1,56 +1,11 @@
 ---
-title: Rocoto Relleno
-region: Sierra
-categories:
-  - Plato fuerte
-  - Arequipeño
-  - Picante
-sensory:
-  flavor:
-    - Dulce-Picante (Rocoto desalado)
-    - Umami (Picadillo de carne)
-    - Lácteo (Queso fresco derretido)
-  texture:
-    - Firme (Rocoto horneado)
-    - Jugoso (Relleno de carne y pasas)
-    - Cremoso-Hilante (Queso derretido)
-  aroma:
-    - Ají rocoto horneado
-    - Comino y canela tostada
-    - Queso y leche evaporada caliente
-  presentation: Rocoto rojo brillante relleno de un jugoso picadillo de carne de res picada, cubierto con una lámina dorada de queso fresco derretido, bañado en una salsa de huevo y leche, acompañado tradicionalmente de Pastel de Papa.
-main_ingredients:
-  - Rocotos medianos enteros
-  - Carne de res (lomo o cadera)
-  - Cebolla roja
-  - Maní tostado molido
-  - Pasas negras
-  - Queso fresco serrano (paria o similar)
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 30 minutos
-servings: 6
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 26
-    fat_g: 22
-    carbs_g: 34
-tags:
-  - Rocoto
-  - Relleno
-  - Arequipa
-  - Picante
-images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
-    description: Rocoto Relleno arequipeño tradicional
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: El Rocoto Relleno es el plato insignia de la gastronomía de Arequipa (Sierra Sur peruana). Consiste en rocotos previamente desalados para atenuar su picor, rellenos con un guiso dulce de carne picada a cuchillo, maní y pasas, cubiertos de queso y horneados.
+title: "Rocoto Relleno"
+region: "Perú"
+categories: ["Sierra"]
+difficulty: "★★★★☆"
+prep_time: "45 minutos"
+cook_time: "30 minutos"
+servings: "6"
 ---
 
 # Rocoto Relleno
@@ -76,7 +31,7 @@ El Rocoto Relleno es el rey de las picanterías arequipeñas. Su característica
 * **El Picadillo de Relleno:**
     * 500 g de carne de res tierna (Lomo o cadera), cortada minuciosamente a cuchillo en cubitos muy pequeños
     * 1 cebolla roja grande, picada en cuadritos finos
-    * 2 cucharadas de pasta de **[Ají Panca](/dishes/peruvian/sierra/../../ingredients/aji_panca)**
+    * 2 cucharadas de pasta de **[Ají Panca](../../ingredients/aji_panca)**
     * 1 cucharadita de ajo molido
     * 1/4 taza de pasas negras (hidratadas en agua caliente o pisco)
     * 1/4 taza de maní (cacahuate) tostado y molido medianamente
@@ -120,7 +75,7 @@ El Rocoto Relleno es el rey de las picanterías arequipeñas. Su característica
 
 ## 📸 Galería
 
-![Rocoto Relleno](/dishes/peruvian/sierra/images/rocoto_relleno.webp)
+![Rocoto Relleno](./images/rocoto_relleno.jpg)
 
 ---
 

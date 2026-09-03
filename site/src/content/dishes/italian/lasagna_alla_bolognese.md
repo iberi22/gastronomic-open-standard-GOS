@@ -1,51 +1,11 @@
 ---
-title: "Lasagna alla Bolognese"
-region: "Emilia-Romaña (Bolonia)"
-categories:
-  - "Plato fuerte"
-  - "Pasta al Forno"
-sensory:
-  flavor:
-    - "Ragù espeso y cárnico"
-    - "Bechamel cremosa láctea"
-    - "Umami horneado"
-  texture:
-    - "Capas finas suaves de pasta"
-    - "Corteza de queso gratinada crujiente"
-  aroma:
-    - "Ragù de cocción lenta (3h)"
-    - "Bechamel recién hecha"
-  presentation: "Porción rectangular mostrando múltiples capas de pasta verde/huevo, ragù y bechamel dorada."
-main_ingredients:
-  - "Láminas de pasta al huevo"
-  - "Carne picada de res y cerdo"
-  - "Pancetta"
-  - "Vino tinto"
-  - "Concentrado de tomate"
-  - "Leche entera"
-  - "Mantequilla"
-  - "Parmigiano"
+title: "Lasagna Alla Bolognese"
+region: "Italia"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "1 hora"
 cook_time: "2 horas"
-servings: 6
-nutrition:
-  calories: 820
-  macros:
-    protein_g: 38.0
-    fat_g: 44.0
-    carbs_g: 68.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Lasagna alla Bolognese tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La Lasagna alla Bolognese es un festín de Bolonia compuesto por finas capas de pasta al huevo intercaladas con ragù cárnico tradicional y salsa bechamel."
+servings: "6"
 ---
 
 # Lasagna alla Bolognese

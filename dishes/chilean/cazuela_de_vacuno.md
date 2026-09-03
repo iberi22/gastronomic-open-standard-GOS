@@ -1,56 +1,65 @@
 ---
-title: "Cazuela de Vacuno"
-region: "Andina / Central"
+title: Cazuela de Vacuno
+region: Andina / Central
+language: es
+license: MIT
+source:
+  name: recetaschilenas.cl
+  url: 'https://www.recetaschilenas.cl/'
+  date_retrieved: '2026-09-03'
 categories:
-  - "Plato fuerte"
-  - "Sopa"
-  - "Tradicional"
+  - Plato fuerte
+  - Sopa
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 1 hora
+servings: 6
+tags:
+  - Chile
+  - Sopa
+  - Carne
+  - Invierno
+  - Reconfortante
+main_ingredients:
+  - Carne de vacuno con hueso
+  - Papas
+  - Zapallo amarillo
+  - Maíz en mazorca
+  - Zanahoria
+  - Arroz
+  - Cilantro fresco
 sensory:
   flavor:
-    - "Salado"
-    - "Umami"
-    - "Herbal"
+    - Salado
+    - Umami
+    - Herbal
   texture:
-    - "Líquido"
-    - "Suave"
-    - "Troceado"
+    - Líquido
+    - Suave
+    - Troceado
   aroma:
-    - "Caldo de carne"
-    - "Zapallo cocido"
-    - "Cilantro"
-  presentation: "Se sirve en plato hondo de greda bien caliente, colocando en el centro una presa de carne, una papa entera, un trozo de zapallo, una mazorca de maíz y abundante caldo espolvoreado con cilantro fresco."
-main_ingredients:
-  - "Carne de vacuno con hueso"
-  - "Papas"
-  - "Zapallo amarillo"
-  - "Maíz en mazorca"
-  - "Zanahoria"
-  - "Arroz"
-  - "Cilantro fresco"
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "1 hora"
-servings: 6
+    - Caldo de carne
+    - Zapallo cocido
+    - Cilantro
+  presentation: >-
+    Se sirve en plato hondo de greda bien caliente, colocando en el centro una
+    presa de carne, una papa entera, un trozo de zapallo, una mazorca de maíz y
+    abundante caldo espolvoreado con cilantro fresco.
 nutrition:
   calories: 420
   macros:
     protein_g: 28
     fat_g: 18
     carbs_g: 36
-tags:
-  - "Chile"
-  - "Sopa"
-  - "Carne"
-  - "Invierno"
-  - "Reconfortante"
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Cazuela de vacuno chilena clásica servida caliente"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "La Cazuela de Vacuno es un caldo reconfortante y nutritivo consumido en todo Chile. Se compone de un sustancioso caldo de carne con hueso cocido junto a papas enteras, trozos grandes de zapallo, mazorcas de maíz, verduras finas y un toque de arroz."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Cazuela de vacuno chilena clásica servida caliente
+description: >-
+  La Cazuela de Vacuno es un caldo reconfortante y nutritivo consumido en todo
+  Chile. Se compone de un sustancioso caldo de carne con hueso cocido junto a
+  papas enteras, trozos grandes de zapallo, mazorcas de maíz, verduras finas y
+  un toque de arroz.
 ---
 
 # Cazuela de Vacuno

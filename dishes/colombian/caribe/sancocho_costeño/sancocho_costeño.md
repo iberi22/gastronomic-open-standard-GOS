@@ -1,55 +1,66 @@
 ---
-title: "Sancocho Costeño"
-region: "Caribe"
+title: Sancocho Costeño
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Sopa"
-  - "Festivo"
+  - Plato Fuerte
+  - Sopa
+  - Festivo
+difficulty: ★★★☆☆
+prep_time: '40'
+cook_time: '120'
+servings: 10
+tags:
+  - Domingo
+  - Olla Comunitaria
+  - Paseo de Olla
+main_ingredients:
+  - Costilla de Res (o Carne Salada)
+  - Cerdo / Pollo
+  - Ñame Espino (Factor espesante)
+  - Yuca Dulce
+  - Plátano Verde
+  - Mazorca de Maíz
+  - Cilantro y Cebolla
 sensory:
   flavor:
-    - "Salado profundo"
-    - "Umami (Trifecta de carnes)"
-    - "Cítrico (Toque final)"
+    - Salado profundo
+    - Umami (Trifecta de carnes)
+    - Cítrico (Toque final)
   texture:
-    - "Espeso (Cremoso)"
-    - "Mantecoso (Ñame)"
-    - "Jugoso"
+    - Espeso (Cremoso)
+    - Mantecoso (Ñame)
+    - Jugoso
   aroma:
-    - "Leña (si se hace en fogón)"
-    - "Cilantro Cimarrón"
-    - "Maíz tierno"
-  presentation: "Plato hondo rebosante. Los tubérculos deben servirse enteros o en pedazos grandes. Se acompaña con arroz blanco (o de coco) y aguacate harinoso."
-main_ingredients:
-  - "Costilla de Res (o Carne Salada)"
-  - "Cerdo / Pollo"
-  - "Ñame Espino (Factor espesante)"
-  - "Yuca Dulce"
-  - "Plátano Verde"
-  - "Mazorca de Maíz"
-  - "Cilantro y Cebolla"
-difficulty: "Media"
-prep_time: "40"
-cook_time: "120"
-servings: 10
+    - Leña (si se hace en fogón)
+    - Cilantro Cimarrón
+    - Maíz tierno
+  presentation: >-
+    Plato hondo rebosante. Los tubérculos deben servirse enteros o en pedazos
+    grandes. Se acompaña con arroz blanco (o de coco) y aguacate harinoso.
 nutrition:
   calories: 850
   macros:
     protein_g: 40
     fat_g: 35
     carbs_g: 95
-tags:
-  - "Domingo"
-  - "Olla Comunitaria"
-  - "Paseo de Olla"
 images:
-  - url: "https://im.ge/i/sancocho-1.AbC123"
-    description: "Sancocho costeño hirviendo en olla de aluminio fundido"
-sources:
-  - name: "Patrimonio Inmaterial del Caribe"
-    url: "https://gos.org/caribe/sancocho"
-license: "MIT"
-description: "El sancocho es la institución social del Caribe. A diferencia de las sopas andinas, utiliza el ñame espino como hidrocoloide principal, creando un caldo denso y mantecoso que soporta una mezcla masiva de proteínas y carbohidratos complejos."
----## Sancocho Costeño
+  - url: 'https://im.ge/i/sancocho-1.AbC123'
+    description: Sancocho costeño hirviendo en olla de aluminio fundido
+description: >-
+  El sancocho es la institución social del Caribe. A diferencia de las sopas
+  andinas, utiliza el ñame espino como hidrocoloide principal, creando un caldo
+  denso y mantecoso que soporta una mezcla masiva de proteínas y carbohidratos
+  complejos.
+---
+
+## Sancocho Costeño
 
 El Sancocho Costeño es uno de los platos más representativos de la región Caribe colombiana. Es una sopa abundante y festiva, preparada con variedad de carnes, tubérculos y plátano, y servida en grandes reuniones familiares o celebraciones.
 

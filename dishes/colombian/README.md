@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # 📚 Recetario Regional Colombiano
 
 ¡Bienvenido al gran libro digital de recetas emblemáticas de Colombia! Aquí encontrarás un recorrido sensorial, cultural y científico por las seis regiones gastronómicas del país. Cada sección enlaza a su carpeta regional, donde podrás descubrir las recetas más representativas, enriquecidas con análisis, opiniones, datos nutricionales y fuentes confiables.

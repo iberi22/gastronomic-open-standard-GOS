@@ -1,54 +1,11 @@
 ---
-title: Coxinha de Frango Tradicional
-region: Brasil
-categories:
-- Snack
-- Comida callejera
-- Fritura
-sensory:
-  flavor:
-  - Salado
-  - Umami de pollo
-  - Cremoso (queso requeijão)
-  texture:
-  - Muy crujiente (exterior)
-  - Suave y blando (masa)
-  - Desmechado (relleno)
-  aroma:
-  - Pollo sofrito
-  - Ajo y cebolla
-  - Masa frita caliente
-  presentation: Moldeadas en su forma característica de gota o muslo de pollo, servidas calientes sobre papel absorbente en bandejas de panadería.
-main_ingredients:
-- Pollo desmechado
-- Harina de trigo
-- Caldo de pollo concentrado
-- Queso Catupiry o requeijão
-- Pan rallado (farinha de rosca)
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 30 minutos
-servings: 6
-nutrition:
-  calories: 320
-  macros:
-    protein_g: 14.0
-    fat_g: 16.0
-    carbs_g: 30.0
-tags:
-- Pollo
-- Frito
-- Snack
-- Catupiry
-- Salgadinho
-images:
-- url: https://images.unsplash.com/photo-1585503415901-274e303bc869
-  description: Coxinhas de frango crujientes servidas calientes (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/1142-coxinha-de-frango-maravilhosa.html
-- https://www.panelinha.com.br/receita/Coxinha-de-frango
-license: MIT
-description: La Coxinha de Frango es el bocadillo o "salgadinho" frito más popular de todo Brasil. Consiste en una masa suave hecha a base de caldo de pollo concentrado y harina de trigo, rellena de pechuga de pollo desmechada sazonada con sofrito de cebolla, ajo, tomate y opcionalmente queso Catupiry o requeijão, moldeada con forma de muslo de pollo, empanada y frita.
+title: "Coxinha De Frango Tradicional"
+region: "Brasil"
+categories: ["Plato"]
+difficulty: "★★★★☆"
+prep_time: "45 minutos"
+cook_time: "30 minutos"
+servings: "6"
 ---
 
 # Coxinha de Frango Tradicional
@@ -113,7 +70,7 @@ La Coxinha (literalmente "muslito") es la reina indiscutible de las panaderías 
 
 ## 📸 Galería
 
-![Coxinhas de pollo listas para servir acompañadas de salsa picante](/dishes/brazilian/images/coxinha_1.webp)
+![Coxinhas de pollo listas para servir acompañadas de salsa picante](./images/coxinha_1.jpg)
 
 ---
 

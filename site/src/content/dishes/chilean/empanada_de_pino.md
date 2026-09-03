@@ -1,57 +1,11 @@
 ---
-title: "Empanada de Pino Chilena"
-region: "Valparaíso / Metropolitana"
-categories:
-  - "Plato fuerte"
-  - "Masa"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
-  texture:
-    - "Crujiente"
-    - "Troceado"
-    - "Jugoso"
-  aroma:
-    - "Masa horneada"
-    - "Comino"
-    - "Cebolla guisada"
-  presentation: "Se sirve caliente, recién sacada del horno, envuelta en una servilleta de tela para mantener el calor. Tradicionalmente consumida con la mano."
-main_ingredients:
-  - "Harina de trigo"
-  - "Manteca de cerdo"
-  - "Carne de vacuno"
-  - "Cebolla"
-  - "Comino molido"
-  - "Huevos duros"
-  - "Aceitunas negras"
-  - "Pasas"
+title: "Empanada De Pino Chilena"
+region: "Chile"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "50 minutos"
 cook_time: "35 minutos"
-servings: 8
-nutrition:
-  calories: 480
-  macros:
-    protein_g: 18
-    fat_g: 22
-    carbs_g: 52
-tags:
-  - "Chile"
-  - "Empanada"
-  - "Pino"
-  - "Horno"
-  - "Fiestas Patrias"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Empanada de pino chilena dorada al horno"
-sources:
-  - "https://www.recetaschilenas.cl/"
-  - "https://www.chileanfoodandgarden.com/"
-license: "MIT"
-description: "La Empanada de Pino es la reina de la gastronomía chilena, especialmente popular durante las Fiestas Patrias en septiembre. Consiste en una masa de trigo horneada y rellena de un guiso jugoso de carne de vacuno, cebolla, condimentos, huevo duro, aceituna y pasas."
+servings: "8"
 ---
 
 # Empanada de Pino Chilena

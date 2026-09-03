@@ -1,53 +1,62 @@
 ---
-title: "Arroz con Coco (Titoté)"
-region: "Caribe"
+title: Arroz con Coco (Titoté)
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Guarnición"
-  - "Festivo"
-  - "Costeño"
+  - Guarnición
+  - Festivo
+  - Costeño
+difficulty: ★★★☆☆
+prep_time: '45'
+cook_time: '60'
+servings: 6
+tags:
+  - Cartagena
+  - Titoté
+  - Pescado Frito
+main_ingredients:
+  - Leche de coco (Primera extracción/Titoté)
+  - Agua de coco (Segunda extracción)
+  - Arroz blanco (grano largo)
+  - Panela/Azúcar (agente caramelizante)
+  - Pasas (opcional controversial)
+  - Sal (catalizador de sabor)
 sensory:
   flavor:
-    - "Dulce-Salado (Balanceado)"
-    - "Nuez (Coco tostado)"
-    - "Umami (Maillard)"
+    - Dulce-Salado (Balanceado)
+    - Nuez (Coco tostado)
+    - Umami (Maillard)
   texture:
-    - "Suelto (Graneado)"
-    - "Aceitoso (Lubricado)"
-    - "Masticable (Tropezones)"
+    - Suelto (Graneado)
+    - Aceitoso (Lubricado)
+    - Masticable (Tropezones)
   aroma:
-    - "Coco glaseado"
-    - "Caramelo oscuro"
-    - "Humo (si se quema bien)"
-  presentation: "Montaña de arroz color bronce oscuro, brillante. Debe verse punteado por las motas negras de titoté. Se sirve al lado de pescados fritos o postas."
-main_ingredients:
-  - "Leche de coco (Primera extracción/Titoté)"
-  - "Agua de coco (Segunda extracción)"
-  - "Arroz blanco (grano largo)"
-  - "Panela/Azúcar (agente caramelizante)"
-  - "Pasas (opcional controversial)"
-  - "Sal (catalizador de sabor)"
-difficulty: "Media"
-prep_time: "45"
-cook_time: "60"
-servings: 6
+    - Coco glaseado
+    - Caramelo oscuro
+    - Humo (si se quema bien)
+  presentation: >-
+    Montaña de arroz color bronce oscuro, brillante. Debe verse punteado por las
+    motas negras de titoté. Se sirve al lado de pescados fritos o postas.
 nutrition:
   calories: 420
   macros:
     protein_g: 5
     fat_g: 22
     carbs_g: 58
-tags:
-  - "Cartagena"
-  - "Titoté"
-  - "Pescado Frito"
 images:
-  - url: "https://im.ge/i/arroz-coco-1.AbC123"
-    description: "Arroz con coco 'negrito' con titoté visible"
-sources:
-  - name: "Tradición Caribeña"
-    url: "https://gos.org/caribe/arroz-coco"
-license: "MIT"
-description: "La guarnición reina del Caribe. No es un simple arroz hervido en leche de coco; es una técnica compleja de separación de fases donde la proteína y el azúcar del coco se fríen en su propio aceite hasta caramelizarse (titoté) antes de añadir el arroz."
+  - url: 'https://im.ge/i/arroz-coco-1.AbC123'
+    description: Arroz con coco 'negrito' con titoté visible
+description: >-
+  La guarnición reina del Caribe. No es un simple arroz hervido en leche de
+  coco; es una técnica compleja de separación de fases donde la proteína y el
+  azúcar del coco se fríen en su propio aceite hasta caramelizarse (titoté)
+  antes de añadir el arroz.
 ---
 
 # Arroz con Coco (Titoté)

@@ -1,48 +1,11 @@
 ---
-title: "Albóndigas en Salsa de Chipotle"
-region: "Centro de México"
-categories:
-  - "Plato fuerte"
-  - "Casero"
-sensory:
-  flavor:
-    - "Jitomate dulce"
-    - "Chipotle ahumado picante"
-    - "Salado"
-  texture:
-    - "Albóndiga jugosa y blanda"
-  aroma:
-    - "Chipotle en adobo"
-    - "Hierbabuena fresca"
-  presentation: "Albóndigas esponjosas cocidas en un guiso terso de jitomate y chile chipotle ahumado."
-main_ingredients:
-  - "Carne molida de res y cerdo"
-  - "Arroz precocido"
-  - "Chile chipotle en adobo"
-  - "Jitomates maduros"
-  - "Huevo"
-  - "Hierbabuena picada"
+title: "AlbóNdigas En Salsa De Chipotle"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "25 minutos"
 cook_time: "35 minutos"
-servings: 4
-nutrition:
-  calories: 540
-  macros:
-    protein_g: 32.0
-    fat_g: 26.0
-    carbs_g: 42.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Albóndigas en Salsa de Chipotle tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Las Albóndigas en Chipotle son un clásico reconfortante del hogar mexicano, donde bolitas de carne sazonadas con hierbabuena se cocinan en salsa de chipotle."
+servings: "4"
 ---
 
 # Albóndigas en Salsa de Chipotle

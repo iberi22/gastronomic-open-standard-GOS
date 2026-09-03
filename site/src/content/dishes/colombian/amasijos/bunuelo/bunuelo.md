@@ -1,55 +1,11 @@
 ---
-title: Buñuelo Colombiano
-region: Nacional
-categories:
-- Amasijo
-- Frito
-- Navidad
-sensory:
-  flavor:
-  - Queso Salado
-  - Dulzura de Almidón
-  - Suero Ácido
-  texture:
-  - Corteza Fina y Lisa
-  - Miga Esponjosa (Alveolada)
-  - Húmedo
-  aroma:
-  - Queso Frito
-  - Maíz Tostado
-  presentation: Esferas doradas perfectas de unos 5-7 cm de diámetro. No deben tener
-    'teticas', grietas ni estar aceitosos al tacto. Deben flotar y girar solos al
-    freírse.
-main_ingredients:
-- Queso Costeño (Salado/Duro)
-- Fécula de Maíz (Maizena)
-- Almidón de Yuca
-- Azúcar
-- Huevo
-difficulty: Alta (Control de temperatura del aceite)
-prep_time: '30'
-cook_time: '20'
-servings: 15
-nutrition:
-  calories: 150
-  macros:
-    protein_g: 4
-    fat_g: 9
-    carbs_g: 14
-tags:
-- Navidad
-- Novena
-- Tradición
-images:
-- url: https://im.ge/i/bunuelos-1.AbC101
-  description: Buñuelos perfectos dorados y redondos
-sources:
-- name: Física del Buñuelo GOS
-  url: https://gos.org/amasijos/bunuelo
-license: MIT
-description: La esfera perfecta de la navidad. El Buñuelo Colombiano no es de viento
-  ni de harina de trigo; es un equilibrio termodinámico complejo entre quesos salados
-  y almidones que deben expandirse en aceite tibio sin explotar.
+title: "BuñUelo Colombiano"
+region: "Colombia"
+categories: ["Bunuelo"]
+difficulty: "★★★★☆"
+prep_time: "30"
+cook_time: "20"
+servings: "15"
 ---
 
 # Buñuelo (Esfera Navideña)

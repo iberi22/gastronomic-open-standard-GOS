@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # Recetas Emblemáticas de la Región Insular de Colombia
 
 Este directorio reúne las 10 recetas más representativas de San Andrés, Providencia y Santa Catalina, enriquecidas con metodología científica, sensorial y colectiva, siguiendo el estándar del proyecto de cocina latinoamericana.

@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # 🍲 Otras Preparaciones Colombianas
 
 Aquí se agrupan recetas que no encajan en las categorías anteriores pero son parte esencial de la mesa colombiana: masas, bases, acompañamientos especiales y más.

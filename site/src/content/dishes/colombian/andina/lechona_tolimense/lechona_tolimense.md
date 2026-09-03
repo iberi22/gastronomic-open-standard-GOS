@@ -1,56 +1,11 @@
 ---
 title: "Lechona Tolimense"
-region: "Andina"
-categories:
-  - "Plato Fuerte"
-  - "Festivo"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Umami"
-    - "Salado"
-    - "Graso"
-  texture:
-    - "Crujiente (Cuero)"
-    - "Suave (Carne)"
-    - "Húmedo (Relleno)"
-  aroma:
-    - "Cerdo asado"
-    - "Comino"
-    - "Ahumado (leña)"
-  presentation: "Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción que incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne y arveja."
-main_ingredients:
-  - "Cerdo (pulpa y costilla)"
-  - "Cuero de cerdo"
-  - "Arveja amarilla"
-  - "Arroz"
-  - "Manteca de cerdo"
-  - "Cebolla larga"
-  - "Ajo"
-  - "Comino"
-difficulty: "Alta"
-prep_time: 120
-cook_time: 480
-servings: 20
-nutrition:
-  calories: 850
-  macros:
-    protein_g: 45
-    fat_g: 58
-    carbs_g: 42
-tags:
-  - "Tolima"
-  - "Asado"
-  - "Cuerito"
-  - "San Pedro"
-images:
-  - url: "https://im.ge/i/lechona-1.AbC123"
-    description: "Lechona Tolimense recién salida del horno de barro"
-sources:
-  - name: "Patrimonio Gastronómico de Colombia"
-    url: "https://mincultura.gov.co"
-license: "MIT"
-description: "Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín) relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un guiso tradicional y horneado en horno de barro por hasta 12 horas hasta que la piel alcanza un estado vítreo e increíblemente crujiente."
+region: "Colombia"
+categories: ["Lechona_tolimense"]
+difficulty: "★★★★☆"
+prep_time: "120"
+cook_time: "480"
+servings: "20"
 ---
 
 ## Lechona Tolimense

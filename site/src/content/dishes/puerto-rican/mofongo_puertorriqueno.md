@@ -1,54 +1,11 @@
 ---
-title: Mofongo Puertorriqueño de Camarones
-region: Puerto Rico
-categories:
-- Plato fuerte
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Ajo intenso
-  - Marino (camarón)
-  texture:
-  - Crujiente (chicharrón de cerdo)
-  - Denso (plátano machacado)
-  - Suave (camarón cocido)
-  aroma:
-  - Ajo fresco machacado
-  - Salsa criolla de mariscos
-  presentation: Servido caliente en un tazón grande de cerámica o plato hondo, moldeado en forma de domo y cubierto generosamente con camarones calientes en salsa criolla.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Chicharrón de cerdo crujiente
-- Ajo fresco
-- Aceite de oliva
-- Camarones limpios
-- Salsa criolla (tomate, pimiento, cebolla)
-difficulty: ★★★☆☆
-prep_time: 15 minutos
-cook_time: 25 minutos
-servings: 2
-nutrition:
-  calories: 460
-  macros:
-    protein_g: 22.0
-    fat_g: 20.0
-    carbs_g: 48.0
-tags:
-- Plátano
-- Chicharrón
-- Ajo
-- Camarones
-- Puerto Rico
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Mofongo puertorriqueño coronado con camarones al ajillo (Unsplash)
-sources:
-- https://www.elboricua.com/mofongo.html
-- https://www.quericavida.com/recetas/mofongo-puertorriqueno/
-license: MIT
-description: El Mofongo de Camarones es uno de los platos más populares y codiciados de Puerto Rico. Consiste en una base de mofongo tradicional coronado generosamente con camarones en salsa criolla boricua.
+title: "Mofongo PuertorriqueñO De Camarones"
+region: "Puerto Rico"
+categories: ["Plato"]
+difficulty: "★★★☆☆"
+prep_time: "15 minutos"
+cook_time: "25 minutos"
+servings: "2"
 ---
 
 # Mofongo Puertorriqueño de Camarones
@@ -106,7 +63,7 @@ El Mofongo de Camarones es el almuerzo playero por excelencia en Puerto Rico. Es
 
 ## 📸 Galería
 
-![Mofongo boricua de camarones en salsa criolla](/dishes/puerto-rican/images/mofongo_cam_1.webp)
+![Mofongo boricua de camarones en salsa criolla](./images/mofongo_cam_1.jpg)
 
 ---
 

@@ -1,54 +1,14 @@
 ---
 title: "Empanadas Andinas"
-region: "Andina"
-categories:
-  - "Snack"
-  - "Fritura"
-  - "Callejera"
-sensory:
-  flavor:
-    - "Maíz tostado"
-    - "Cárnico"
-    - "Umami (Guiso)"
-  texture:
-    - "Crujiente (Corteza)"
-    - "Suave (Relleno)"
-    - "Quebradizo"
-  aroma:
-    - "Maíz frito"
-    - "Comino"
-    - "Aceite caliente"
-  presentation: "Media luna dorada perfecta. Se sirve caliente en servilleta o canasta, SIEMPRE acompañada de ají picante o guacamole."
-main_ingredients:
-  - "Masarepa (Harina de maíz precocida)"
-  - "Carne (res/cerdo) molida"
-  - "Papa pastusa (puré)"
-  - "Guiso (Hogao)"
-  - "Aceite vegetal"
-  - "Color (Achiote)"
-difficulty: "Media"
+region: "Colombia"
+categories: ["Empanadas"]
+difficulty: "★★★☆☆"
 prep_time: "45 minutos"
 cook_time: "15 minutos"
-servings: 20
-nutrition:
-  calories: 180
-  macros:
-    protein_g: 6
-    fat_g: 9
-    carbs_g: 22
-tags:
-  - "Callejera"
-  - "Fritanga"
-  - "Maíz"
-images:
-  - url: "https://im.ge/i/empanada-1.AbC123"
-    description: "Empanada colombiana típica con ají casero"
-sources:
-  - name: "Cultura Callejera Bogotana"
-    url: "https://gos.org/street-food/empanadas"
-license: "MIT"
-description: "El snack nacional por excelencia. Una ingeniería de dos capas: una corteza de maíz hidrofóbica y crujiente que protege un núcleo húmedo de almidón (papa) y proteína (carne). Su éxito depende de la termodinámica de la fritura profunda."
----## Empanadas Andinas
+servings: "20"
+---
+
+## Empanadas Andinas
 
 Las empanadas andinas son uno de los pasabocas más populares de la región, crujientes por fuera y rellenas de una mezcla sabrosa de carne, papa y condimentos. Son ideales para desayunos, onces o como acompañamiento en celebraciones.
 
@@ -98,7 +58,7 @@ Las empanadas andinas son uno de los pasabocas más populares de la región, cru
 
 ## 📸 Galería
 
-![Empanadas Andinas Colombianas](/dishes/colombian/andina/empanadas/images/1.webp)
+![Empanadas Andinas Colombianas](./images/1.png)
 
 ---
 

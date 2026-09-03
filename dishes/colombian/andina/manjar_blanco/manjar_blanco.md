@@ -1,52 +1,62 @@
 ---
-title: "Manjar Blanco"
-region: "Andina"
+title: Manjar Blanco
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Postre"
-  - "Lácteo"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Dulce profundo"
-    - "Lácteo caramelizado"
-    - "Arroz tostado (residual)"
-  texture:
-    - "Elástico"
-    - "Arenoso fino (arroz)"
-    - "Denso"
-  aroma:
-    - "Leche hervida"
-    - "Canela"
-    - "Vainilla"
-  presentation: "Totuma de mate o recipiente de dulce. La superficie debe ser brillante y ligeramente más oscura (costra). Se come con cuchara o dedito, a menudo acompañado de brevas o queso cuajada."
-main_ingredients:
-  - "Leche entera (cruda idealmente)"
-  - "Azúcar (o panela)"
-  - "Arroz (remojado y molido/licuado)"
-  - "Canela"
-  - "Pasas (opcional/variante)"
-difficulty: "Media"
+  - Postre
+  - Lácteo
+  - Ancestral
+difficulty: ★★★☆☆
 prep_time: 120
 cook_time: 180
 servings: 12
+tags:
+  - Valle del Cauca
+  - Navidad
+  - Dulce
+main_ingredients:
+  - Leche entera (cruda idealmente)
+  - Azúcar (o panela)
+  - Arroz (remojado y molido/licuado)
+  - Canela
+  - Pasas (opcional/variante)
+sensory:
+  flavor:
+    - Dulce profundo
+    - Lácteo caramelizado
+    - Arroz tostado (residual)
+  texture:
+    - Elástico
+    - Arenoso fino (arroz)
+    - Denso
+  aroma:
+    - Leche hervida
+    - Canela
+    - Vainilla
+  presentation: >-
+    Totuma de mate o recipiente de dulce. La superficie debe ser brillante y
+    ligeramente más oscura (costra). Se come con cuchara o dedito, a menudo
+    acompañado de brevas o queso cuajada.
 nutrition:
   calories: 380
   macros:
     protein_g: 8
     fat_g: 12
     carbs_g: 65
-tags:
-  - "Valle del Cauca"
-  - "Navidad"
-  - "Dulce"
 images:
-  - url: "https://im.ge/i/manjar-1.AbC789"
-    description: "Manjar Blanco tradicional en totuma"
-sources:
-  - name: "Tradición Valluna"
-    url: "https://gos.org/tradition/manjar"
-license: "MIT"
-description: "El dulce insignia del Valle del Cauca y el Cauca. A diferencia del arequipe (que es solo reducción), el Manjar Blanco utiliza harina de arroz como espesante, lo que le confiere una textura única, ligeramente granulosa y elástica, y un sabor menos empalagoso."
+  - url: 'https://im.ge/i/manjar-1.AbC789'
+    description: Manjar Blanco tradicional en totuma
+description: >-
+  El dulce insignia del Valle del Cauca y el Cauca. A diferencia del arequipe
+  (que es solo reducción), el Manjar Blanco utiliza harina de arroz como
+  espesante, lo que le confiere una textura única, ligeramente granulosa y
+  elástica, y un sabor menos empalagoso.
 ---
 
 # Manjar Blanco

@@ -1,50 +1,11 @@
 ---
-title: "Almojábana (Boyacense/Bogotana)"
-region: "Andina (Cundiboyacense)"
-categories:
-  - "Amasijo"
-  - "Desayuno"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Maíz Dulce"
-    - "Cuajada Ácida"
-    - "Suave Salinidad"
-  texture:
-    - "Esponjoso-Húmedo"
-    - "Corteza Suave y Dorada"
-    - "Miga Alveolada"
-  aroma:
-    - "Maíz horneado"
-    - "Leche fermentada (Cuajada)"
-  presentation: "Panecillos redondos, chatos, de color dorado intenso. Al partirlos deben mostrar una miga amarilla y húmeda, nunca seca."
-main_ingredients:
-  - "Harina de Maíz (Porva o Peto)"
-  - "Cuajada Fresca (Queso no prensado)"
-  - "Huevo"
-  - "Polvo de Hornear / Bicarbonato"
-difficulty: "Media (Punto de la masa)"
+title: "AlmojáBana (Boyacense/Bogotana)"
+region: "Colombia"
+categories: ["Almojabana"]
+difficulty: "★★★☆☆"
 prep_time: "30"
 cook_time: "20"
-servings: 12
-nutrition:
-  calories: 180
-  macros:
-    protein_g: 6
-    fat_g: 9
-    carbs_g: 20
-tags:
-  - "Paipa"
-  - "Arcabuco"
-  - "Desayuno"
-images:
-  - url: "https://im.ge/i/almojabana-1.AbC888"
-    description: "Almojábanas doradas del altiplano"
-sources:
-  - name: "Tradición Boyacense GOS"
-    url: "https://gos.org/amasijos/almojabana"
-license: "MIT"
-description: "El sol del altiplano. La Almojábana (del árabe 'al-muyabbana', la que tiene queso) es la reina de los andes. Su magia química reside en la acidez de la cuajada fresca reaccionando con el leudante para esponjar una masa densa de maíz."
+servings: "12"
 ---
 
 # Almojábana (Boyacense/Bogotana)

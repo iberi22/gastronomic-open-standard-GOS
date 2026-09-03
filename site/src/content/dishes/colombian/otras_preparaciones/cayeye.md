@@ -1,34 +1,8 @@
 ---
-title: Cayeye
-images:
-- url: https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg
-  description: Cayeye tradicional costeño con queso.
-sources:
-- https://www.mycolombianrecipes.com/es/cayeye-colombiano/
-- https://www.recetasgratis.net/receta-de-cayeye-23754.html
-license: MIT
-yaml_validation: https://yaml-online-parser.appspot.com/
-description: '* 6-8 guineos verdes (bananos verdes pequeños)'
-nutrition:
-  calories: 592
-  macros:
-    protein_g: 2.7
-    fat_g: 62.8
-    carbs_g: 10.1
-sensory:
-  flavor:
-  - Salty (queso costeño)
-  - Creamy (butter/mash)
-  - Umami (hogao)
-  texture:
-  - Smooth (mash)
-  - Gritty (cheese)
-  aroma:
-  - Lacteal (butter)
-  - Savory (sofrito)
-  presentation: Puré de banano verde servido en montaña con queso blanco rallado encima
-    y toques rojos de hogao.
-region: Caribe
+title: "Cayeye"
+region: "Colombia"
+categories: ["Otras_preparaciones"]
+difficulty: "★★☆☆☆"
 ---
 
 ## Ingredientes

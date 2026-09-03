@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Condimentos"]
+difficulty: "★★☆☆☆"
+---
+
 # Condimentos y Salsas Peruanas
 
 Los condimentos y salsas son esenciales en la cocina peruana, aportando sabor, color y complejidad a los platos.

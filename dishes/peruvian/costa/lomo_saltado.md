@@ -1,10 +1,34 @@
 ---
 title: Lomo Saltado
 region: Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Plato fuerte
   - Criollo
   - Fusión
+difficulty: ★★★☆☆
+prep_time: 25 minutos
+cook_time: 10 minutos
+servings: 4
+tags:
+  - Lomo
+  - Saltado
+  - Criollo
+  - Chifa
+main_ingredients:
+  - Carne de res (Lomo fino)
+  - Papas amarillas (para freír)
+  - Cebolla roja
+  - Tomate maduro
+  - Salsa de soya (Sillao)
+  - Vinagre tinto
+  - Ají amarillo
 sensory:
   flavor:
     - Umami (Salsa de soya y carne)
@@ -18,40 +42,24 @@ sensory:
     - Carne sellada al wok
     - Vinagre y soya caramelizados
     - Cilantro fresco
-  presentation: Tiras de carne doradas y jugosas mezcladas con cebolla roja, pimiento y tomate, servidas sobre papas fritas crocantes y acompañadas de una porción de arroz blanco graneado.
-main_ingredients:
-  - Carne de res (Lomo fino)
-  - Papas amarillas (para freír)
-  - Cebolla roja
-  - Tomate maduro
-  - Salsa de soya (Sillao)
-  - Vinagre tinto
-  - Ají amarillo
-difficulty: ★★★☆☆
-prep_time: 25 minutos
-cook_time: 10 minutos
-servings: 4
+  presentation: >-
+    Tiras de carne doradas y jugosas mezcladas con cebolla roja, pimiento y
+    tomate, servidas sobre papas fritas crocantes y acompañadas de una porción
+    de arroz blanco graneado.
 nutrition:
   calories: 680
   macros:
     protein_g: 38
     fat_g: 22
     carbs_g: 78
-tags:
-  - Lomo
-  - Saltado
-  - Criollo
-  - Chifa
 images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
     description: Lomo Saltado servido con arroz y papas fritas
-sources:
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-license: MIT
-description: El Lomo Saltado es un plato emblemático peruano nacido de la fusión chino-peruana (chifa) en el siglo XIX. Combina lomo de res saltado a fuego vivo en un wok con vegetales, salsa de soya, vinagre y papas fritas autóctonas.
+description: >-
+  El Lomo Saltado es un plato emblemático peruano nacido de la fusión
+  chino-peruana (chifa) en el siglo XIX. Combina lomo de res saltado a fuego
+  vivo en un wok con vegetales, salsa de soya, vinagre y papas fritas
+  autóctonas.
 ---
 
 # Lomo Saltado

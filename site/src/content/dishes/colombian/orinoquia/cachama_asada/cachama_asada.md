@@ -1,39 +1,8 @@
 ---
-title: Cachama Asada
-description: La Cachama Asada es un plato típico de la Orinoquía colombiana, preparado
-  con cachama (pez de río) asada a la brasa y acompañada de yuca, plátano y ají llanero.
-  Es muy apreciado en las zonas ribereñas y en festividades llaneras por su sabor
-  suave y carne jugosa.
-region: Colombia
-language: es
-license: MIT
-sources: []
-media: []
-nutrition:
-  calories: 1157
-  macros:
-    protein_g: 83.0
-    fat_g: 34.0
-    carbs_g: 122.0
-embedding_version: 1
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Ahumado
-  texture:
-  - Jugoso
-  - Tierno
-  - Crujiente (piel)
-  aroma:
-  - Ahumado
-  - Herbal
-  - Cítrico
-  presentation: Pescado entero asado con piel dorada, servido sobre hojas de bijao
-    con acompañantes blancos y amarillos.
-images:
-- url: ./images/1.png
-  description: Cachama asada a la llanera sobre hojas de bijao.
+title: "Cachama Asada"
+region: "Colombia"
+categories: ["Cachama_asada"]
+difficulty: "★★☆☆☆"
 ---
 
 # Cachama Asada
@@ -85,7 +54,7 @@ La Cachama Asada es un plato típico de la Orinoquía colombiana, preparado con 
 
 ## 📸 Galería
 
-![Cachama Asada Llanera](/dishes/colombian/orinoquia/cachama_asada/images/1.webp)
+![Cachama Asada Llanera](./images/1.png)
 
 ---
 

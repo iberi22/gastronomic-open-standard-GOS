@@ -1,10 +1,33 @@
 ---
 title: Juane de Gallina
 region: Selva
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Plato fuerte
   - Amazónico
   - Festivo
+difficulty: ★★★★☆
+prep_time: 45 minutos
+cook_time: 1 hora
+servings: 4
+tags:
+  - Juane
+  - Selva
+  - Amazonico
+  - San Juan
+main_ingredients:
+  - Arroz blanco
+  - Pechuga o pierna de gallina de chacra
+  - Mishquina (pasta de cúrcuma y especias)
+  - Hojas de bijao (para envolver)
+  - Sacha culantro (cilantro silvestre amazónico)
+  - Huevos duros enteros
 sensory:
   flavor:
     - Herbal-Aromático (Mishquina y sacha culantro)
@@ -18,39 +41,24 @@ sensory:
     - Hoja de bijao asada
     - Cúrcuma y sacha culantro
     - Manteca de cerdo caliente
-  presentation: Masa redonda y compacta de arroz amarillo envuelta artísticamente en hojas de bijao asadas, atada en la parte superior asemejando una cabeza, rellena de una presa de gallina y un huevo duro entero.
-main_ingredients:
-  - Arroz blanco
-  - Pechuga o pierna de gallina de chacra
-  - Mishquina (pasta de cúrcuma y especias)
-  - Hojas de bijao (para envolver)
-  - Sacha culantro (cilantro silvestre amazónico)
-  - Huevos duros enteros
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 1 hora
-servings: 4
+  presentation: >-
+    Masa redonda y compacta de arroz amarillo envuelta artísticamente en hojas
+    de bijao asadas, atada en la parte superior asemejando una cabeza, rellena
+    de una presa de gallina y un huevo duro entero.
 nutrition:
   calories: 690
   macros:
     protein_g: 36
     fat_g: 24
     carbs_g: 82
-tags:
-  - Juane
-  - Selva
-  - Amazonico
-  - San Juan
 images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
     description: Juane de Gallina tradicional de la selva peruana
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: El Juane de Gallina es el plato más emblemático de la Amazonía peruana, consumido tradicionalmente durante la fiesta de San Juan Bautista (24 de junio). Consiste en arroz sazonado con especias amazónicas y sacha culantro, relleno de gallina, envuelto en hojas de bijao y cocido al vapor.
+description: >-
+  El Juane de Gallina es el plato más emblemático de la Amazonía peruana,
+  consumido tradicionalmente durante la fiesta de San Juan Bautista (24 de
+  junio). Consiste en arroz sazonado con especias amazónicas y sacha culantro,
+  relleno de gallina, envuelto en hojas de bijao y cocido al vapor.
 ---
 
 # Juane de Gallina

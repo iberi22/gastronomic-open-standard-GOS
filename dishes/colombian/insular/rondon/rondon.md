@@ -1,52 +1,61 @@
 ---
-title: "Rondón (Run Down)"
-region: "Insular (San Andrés y Providencia)"
+title: Rondón (Run Down)
+region: Insular (San Andrés y Providencia)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Ancestral"
-  - "Mar y Tierra"
+  - Plato Fuerte
+  - Ancestral
+  - Mar y Tierra
+difficulty: ★★★★☆
+prep_time: '50'
+cook_time: '75'
+servings: 6
+tags:
+  - Raizal
+  - Multicultural
+  - Caldo
+main_ingredients:
+  - Pescado de escama (Pargo/Róbalo)
+  - Caracol de Pala (*Strombus gigas*)
+  - Pig Tail (Cola de cerdo salada)
+  - Leche de Coco natural
+  - Dumplings (Harina de trigo)
 sensory:
   flavor:
-    - "Cremoso de Coco"
-    - "Salinidad Ahumada (Pigtail)"
-    - "Umami Marino"
+    - Cremoso de Coco
+    - Salinidad Ahumada (Pigtail)
+    - Umami Marino
   texture:
-    - "Caldo Denso-Emulsionado"
-    - "Suave (Dumplings)"
-    - "Firme (Caracol/Pescado)"
+    - Caldo Denso-Emulsionado
+    - Suave (Dumplings)
+    - Firme (Caracol/Pescado)
   aroma:
-    - "Coco Láctico"
-    - "Albahaca Salvaje"
-    - "Mar Fresco"
-  presentation: "Se sirve en cuencos profundos. Los componentes (yuca, plátano, dumplings) deben sobresalir del caldo. La leche de coco debe verse blanca y opaca, no separada en aceite."
-main_ingredients:
-  - "Pescado de escama (Pargo/Róbalo)"
-  - "Caracol de Pala (*Strombus gigas*)"
-  - "Pig Tail (Cola de cerdo salada)"
-  - "Leche de Coco natural"
-  - "Dumplings (Harina de trigo)"
-difficulty: "Media-Alta"
-prep_time: "50"
-cook_time: "75"
-servings: 6
+    - Coco Láctico
+    - Albahaca Salvaje
+    - Mar Fresco
+  presentation: >-
+    Se sirve en cuencos profundos. Los componentes (yuca, plátano, dumplings)
+    deben sobresalir del caldo. La leche de coco debe verse blanca y opaca, no
+    separada en aceite.
 nutrition:
   calories: 780
   macros:
     protein_g: 42
     fat_g: 35
     carbs_g: 68
-tags:
-  - "Raizal"
-  - "Multicultural"
-  - "Caldo"
 images:
-  - url: "https://im.ge/i/rondon-1.AbC001"
-    description: "Rondón tradicional con dumplings y pescado fresco"
-sources:
-  - name: "Patrimonio Raizal GOS"
-    url: "https://gos.org/insular/rondon"
-license: "MIT"
-description: "La joya de la corona del archipiélago. El Rondón es una lección de física de fluidos: una emulsión estable de leche de coco que 'corre hacia abajo' (runs down) integrando proteínas terrestres y marinas con almidones en suspensión."
+  - url: 'https://im.ge/i/rondon-1.AbC001'
+    description: Rondón tradicional con dumplings y pescado fresco
+description: >-
+  La joya de la corona del archipiélago. El Rondón es una lección de física de
+  fluidos: una emulsión estable de leche de coco que 'corre hacia abajo' (runs
+  down) integrando proteínas terrestres y marinas con almidones en suspensión.
 ---
 
 # Rondón (Run Down)

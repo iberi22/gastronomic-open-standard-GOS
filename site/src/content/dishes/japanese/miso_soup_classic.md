@@ -1,48 +1,11 @@
 ---
-title: "Sopa de Miso Clásica"
-region: "Japón Nacional"
-categories:
-  - "Sopa"
-  - "Acompañamiento"
-sensory:
-  flavor:
-    - "Umami terroso (Miso)"
-    - "Salado delicado"
-    - "Marino (Wakame)"
-  texture:
-    - "Caldo fluido y reconfortante"
-    - "Tofu sedoso"
-  aroma:
-    - "Pasta de miso fermentado"
-    - "Dashi de kombu y katsuobushi"
-  presentation: "Tazón pequeño de caldo tibio turbio con cubitos flotantes de tofu, algas wakame y cebollín."
-main_ingredients:
-  - "Caldo Dashi"
-  - "Pasta de miso rojo o blanco"
-  - "Tofu firme o sedoso"
-  - "Alga Wakame deshidratada"
-  - "Cebollín verde"
+title: "Sopa De Miso CláSica"
+region: "Japón"
+categories: ["Plato"]
 difficulty: "★☆☆☆☆"
 prep_time: "5 minutos"
 cook_time: "10 minutos"
-servings: 4
-nutrition:
-  calories: 80
-  macros:
-    protein_g: 5.0
-    fat_g: 3.0
-    carbs_g: 7.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Sopa de Miso Clásica tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La Sopa de Miso es la espina dorsal de cualquier comida tradicional japonesa, combinando el poder probiótico de la pasta de soja con dashi aromático."
+servings: "4"
 ---
 
 # Sopa de Miso Clásica

@@ -1,62 +1,14 @@
 ---
-title: Cazuela de Mariscos Pacífica
-region: Pacífica
-categories:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Lácteo
-  texture:
-  - Cremosa
-  - Suave
-  aroma:
-  - Marino
-  - Herbal
-  - Lácteo (coco)
-  presentation: Se sirve en cazuela de barro, decorada con cilantro cimarrón y acompañada
-    de arroz o patacones. Es el plato estrella en celebraciones del Pacífico.
-main_ingredients:
-- Camarón
-- Piangua
-- Calamar
-- Jaiba
-- Pescado blanco
-- Leche de coco
-difficulty: ★★★★☆
-prep_time: 45 minutos
-cook_time: 40 minutos
-servings: 6
-nutrition:
-  calories: 359
-  macros:
-    protein_g: 3.9
-    fat_g: 30.7
-    carbs_g: 21.0
-tags:
-- Plato fuerte
-- Sopa festiva
-- Comida típica
-images:
-- url: https://pixabay.com/es/photos/cazuela-mariscos-colombia-6146272/
-  description: Cazuela de mariscos tradicional del Pacífico (Pixabay)
-- url: https://unsplash.com/s/photos/cazuela-mariscos
-  description: Variaciones de cazuela de mariscos en Unsplash
-sources:
-- https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935
-- https://www.gastronomiacolombiana.com/foro/cazuela-de-mariscos
-- https://www.google.com/maps/search/cazuela+de+mariscos+pacifico
-- https://www.youtube.com/results?search_query=cazuela+de+mariscos+pacifico
-- https://www.tiktok.com/tag/cazuelademariscos
-license: MIT
-description: La Cazuela de Mariscos en la región Pacífica de Colombia es un plato
-  festivo y abundante, preparado con mariscos frescos, leche de coco y especias autóctonas.
-  Es símbolo de la riqueza gastronómica afrocolombiana y se sirve en celebraciones
-  y reuniones familiares.
----## Cazuela de Mariscos Pacífica
+title: "Cazuela De Mariscos PacíFica"
+region: "Colombia"
+categories: ["Cazuela_de_mariscos"]
+difficulty: "★★★★☆"
+prep_time: "45 minutos"
+cook_time: "40 minutos"
+servings: "6"
+---
+
+## Cazuela de Mariscos Pacífica
 
 La Cazuela de Mariscos en la región Pacífica de Colombia es un plato festivo y abundante, preparado con mariscos frescos, leche de coco y especias autóctonas. Es símbolo de la riqueza gastronómica afrocolombiana y se sirve en celebraciones y reuniones familiares.
 
@@ -112,7 +64,7 @@ La Cazuela de Mariscos en la región Pacífica de Colombia es un plato festivo y
 
 ## 📸 Galería
 
-![Cazuela de Mariscos](/dishes/colombian/pacifica/cazuela_de_mariscos/cazuela_de_mariscos/images/1.webp)
+![Cazuela de Mariscos](./images/1.jpg)
 
 ---
 

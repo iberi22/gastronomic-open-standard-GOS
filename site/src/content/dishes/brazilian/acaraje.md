@@ -1,53 +1,11 @@
 ---
-title: Acarajé Baiano
-region: Brasil
-categories:
-- Entrada
-- Comida callejera
-- Afrobrasileño
-sensory:
-  flavor:
-  - Salado
-  - Picante
-  - Marino
-  - Afrutado (aceite de dendê)
-  texture:
-  - Extremadamente crujiente (exterior)
-  - Cremoso y denso (interior)
-  aroma:
-  - Frito en dendê (aceite de palma)
-  - Camarón seco
-  - Cebolla y ajo tostados
-  presentation: Servido cortado por la mitad, relleno generosamente con vatapá, caruru (guiso de quingombó), camarones secos salteados y salsa de chile picante.
-main_ingredients:
-- Frijol carilla (feijão fradinho)
-- Aceite de dendê (palma)
-- Cebolla picada
-- Camarones secos salados
-difficulty: ★★★★★
-prep_time: 24 horas
-cook_time: 30 minutos
-servings: 6
-nutrition:
-  calories: 490
-  macros:
-    protein_g: 18.0
-    fat_g: 28.0
-    carbs_g: 42.0
-tags:
-- Frijol carilla
-- Dendê
-- Camarón seco
-- Bahía
-- Frito
-images:
-- url: https://images.unsplash.com/photo-1563245372-f21724e3856d
-  description: Acarajé frito en aceite de dendê caliente (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/23114-acaraje-da-bahia.html
-- https://www.panelinha.com.br/receita/Acaraje
-license: MIT
-description: El Acarajé es el bocado de comida callejera más famoso del noreste brasileño. Se trata de un buñuelo crujiente y aireado elaborado a partir de una masa batida de frijol carilla y cebolla, frito en abundante aceite de dendê. Es un alimento sagrado del Candomblé y símbolo cultural de las Baianas de Acarajé.
+title: "Acarajé Baiano"
+region: "Brasil"
+categories: ["Plato"]
+difficulty: "★★★★★"
+prep_time: "24 horas"
+cook_time: "30 minutos"
+servings: "6"
 ---
 
 # Acarajé Baiano
@@ -108,7 +66,7 @@ El Acarajé es una de las expresiones gastronómicas y culturales más poderosas
 
 ## 📸 Galería
 
-![Acarajé fresco, relleno y listo para comer](/dishes/brazilian/images/acaraje_1.webp)
+![Acarajé fresco, relleno y listo para comer](./images/acaraje_1.jpg)
 
 ---
 

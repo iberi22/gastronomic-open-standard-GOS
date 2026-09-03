@@ -1,53 +1,11 @@
 ---
-title: Arroz con Gandules Puertorriqueño
-region: Puerto Rico
-categories:
-- Plato fuerte
-- Arroces
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de cerdo
-  - Herbal (sofrito)
-  texture:
-  - Graneado (suelto)
-  - Al dente
-  aroma:
-  - Sofrito boricua (recaito)
-  - Achiote y tocino
-  - Laurel y gandules
-  presentation: Servido caliente en un tazón grande, de un característico color amarillo-naranja brillante, decorado con tiras de pimiento morrón y aceitunas verdes.
-main_ingredients:
-- Arroz de grano medio
-- Gandules verdes (pigeon peas)
-- Sofrito puertorriqueño
-- Aceite de achiote
-- Tocino o jamón de cocinar
-difficulty: ★★★☆☆
-prep_time: 15 minutos
-cook_time: 30 minutos
-servings: 6
-nutrition:
-  calories: 410
-  macros:
-    protein_g: 10.0
-    fat_g: 12.0
-    carbs_g: 65.0
-tags:
-- Arroz
-- Gandules
-- Sofrito
-- Puerto Rico
-- Navidad
-images:
-- url: https://images.unsplash.com/photo-1536304997881-a372c179924b
-  description: Arroz con gandules puertorriqueño tradicional en caldero (Unsplash)
-sources:
-- https://www.elboricua.com/arrozcongandules.html
-- https://www.quericavida.com/recetas/arroz-con-gandules/
-license: MIT
-description: El Arroz con Gandules es la obra maestra culinaria de Puerto Rico, protagonista indiscutible de las cenas navideñas y celebraciones festivas. Consiste en arroz de grano medio cocinado directamente en un caldo rico de gandules verdes saborizado con sofrito boricua.
+title: "Arroz Con Gandules PuertorriqueñO"
+region: "Puerto Rico"
+categories: ["Plato"]
+difficulty: "★★★☆☆"
+prep_time: "15 minutos"
+cook_time: "30 minutos"
+servings: "6"
 ---
 
 # Arroz con Gandules Puertorriqueño
@@ -101,7 +59,7 @@ El Arroz con Gandules es el corazón culinario de Puerto Rico. Este arroz destac
 
 ## 📸 Galería
 
-![Arroz con gandules puertorriqueño navideño](/dishes/puerto-rican/images/gandules_1.webp)
+![Arroz con gandules puertorriqueño navideño](./images/gandules_1.jpg)
 
 ---
 

@@ -1,58 +1,66 @@
 ---
-title: La Bandera Dominicana (Arroz, Habichuelas y Carne)
+title: 'La Bandera Dominicana (Arroz, Habichuelas y Carne)'
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: cocinadominicana.com
+  url: 'https://www.cocinadominicana.com/la-bandera-dominicana-receta/'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Almuerzo
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de carne guisada
-  - Terroso (habichuelas)
-  - Dulzor sutil (tomate)
-  texture:
-  - Cremoso (habichuelas licuadas/espesas)
-  - Graneado (arroz blanco)
-  - Jugoso y desmenuzado (pollo)
-  aroma:
-  - Orégano dominicano y ajo
-  - Arroz blanco caliente
-  - Pollo guisado al cilantro
-  presentation: Dispuestos los tres componentes en un mismo plato de forma vistosa y colorida.
-main_ingredients:
-- Arroz blanco de grano largo
-- Frijoles rojos (habichuelas rojas)
-- Pollo entero troceado
-- Orégano dominicano
-- Cilantro ancho
-- Pasta de tomate
-- Azúcar (para caramelizar el pollo)
+  - Plato fuerte
+  - Almuerzo
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 30 minutos
 cook_time: 1 hora
 servings: 6
+tags:
+  - Arroz
+  - Habichuelas
+  - Pollo
+  - Almuerzo
+  - República Dominicana
+  - Tradicional
+main_ingredients:
+  - Arroz blanco de grano largo
+  - Frijoles rojos (habichuelas rojas)
+  - Pollo entero troceado
+  - Orégano dominicano
+  - Cilantro ancho
+  - Pasta de tomate
+  - Azúcar (para caramelizar el pollo)
+sensory:
+  flavor:
+    - Salado
+    - Umami de carne guisada
+    - Terroso (habichuelas)
+    - Dulzor sutil (tomate)
+  texture:
+    - Cremoso (habichuelas licuadas/espesas)
+    - Graneado (arroz blanco)
+    - Jugoso y desmenuzado (pollo)
+  aroma:
+    - Orégano dominicano y ajo
+    - Arroz blanco caliente
+    - Pollo guisado al cilantro
+  presentation: >-
+    Dispuestos los tres componentes en un mismo plato de forma vistosa y
+    colorida.
 nutrition:
   calories: 690
   macros:
-    protein_g: 38.0
-    fat_g: 18.0
-    carbs_g: 88.0
-tags:
-- Arroz
-- Habichuelas
-- Pollo
-- Almuerzo
-- República Dominicana
-- Tradicional
+    protein_g: 38
+    fat_g: 18
+    carbs_g: 88
 images:
-- url: https://images.unsplash.com/photo-1544025162-d76694265947
-  description: Mesa dominicana con la tradicional Bandera Dominicana (Unsplash)
-sources:
-- https://www.cocinadominicana.com/la-bandera-dominicana-receta/
-- https://www.elfogondelulublog.com/la-bandera-dominicana-receta/
-license: MIT
-description: "La Bandera Dominicana es el almuerzo diario nacional por excelencia de la República Dominicana. El nombre rinde homenaje a la bandera patria debido a que combina los tres colores de la identidad dominicana: el blanco (arroz), el rojo (habichuelas rojas) y la carne guisada (pollo o res)."
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Mesa dominicana con la tradicional Bandera Dominicana (Unsplash)
+description: >-
+  La Bandera Dominicana es el almuerzo diario nacional por excelencia de la
+  República Dominicana. El nombre rinde homenaje a la bandera patria debido a
+  que combina los tres colores de la identidad dominicana: el blanco (arroz), el
+  rojo (habichuelas rojas) y la carne guisada (pollo o res).
 ---
 
 # La Bandera Dominicana (Arroz, Habichuelas y Carne)

@@ -1,57 +1,11 @@
 ---
-title: Chuzo Colombiano (Brocheta Callejera)
-region: Nacional
-categories:
-- Snack
-- Comida callejera
-- Plato fuerte
-- Street food
-sensory:
-  flavor:
-  - Umami
-  - Ahumado
-  texture:
-  - Jugoso
-  - Dorado por fuera
-  aroma:
-  - Ahumado
-  - Especiado
-  presentation: Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir
-    en fiestas y eventos nocturnas.
-main_ingredients:
-- Carne de res
-- Pollo
-- Papa salada
-- Arepa
-difficulty: ★★☆☆☆
-prep_time: 40 minutos
-cook_time: 30 minutos
-servings: 6
-images:
-- url: https://pixabay.com/photos/chorizo-parrilla-barbacoa-2314640/
-  description: Chuzo colombiano en parrilla (Pixabay)
-- url: https://unsplash.com/s/photos/chuzo-colombia
-  description: Variaciones de chuzo en Unsplash
-sources:
-- https://www.recetasdecolombia.com/chuzo
-- https://www.youtube.com/results?search_query=chuzo+colombiano
-- https://www.tiktok.com/tag/chuzo
-license: MIT
-tags:
-- colombiano
-- tradicional
-- chuzo
-- open source
-description: El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a
-  la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con
-  papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en
-  celebraciones nocturnas.
-nutrition:
-  calories: 1832
-  macros:
-    protein_g: 174.5
-    fat_g: 49.0
-    carbs_g: 168.8
+title: "Chuzo Colombiano (Brocheta Callejera)"
+region: "Colombia"
+categories: ["Chuzo"]
+difficulty: "★★☆☆☆"
+prep_time: "40 minutos"
+cook_time: "30 minutos"
+servings: "6"
 ---
 
 El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en celebraciones nocturnas.
@@ -100,7 +54,7 @@ El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla
 
 ## 📸 Galería
 
-![Chuzo Colombiano - Brocheta de Carne](/dishes/colombian/nacionales/chuzo/images/1.webp)
+![Chuzo Colombiano - Brocheta de Carne](./images/1.png)
 
 *Imagen generada por gastronomic-open-standard-GOS.*
 

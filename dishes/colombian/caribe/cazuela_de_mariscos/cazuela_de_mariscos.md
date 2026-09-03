@@ -1,55 +1,67 @@
 ---
-title: "Cazuela de Mariscos"
-region: "Caribe"
+title: Cazuela de Mariscos
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato Fuerte"
-  - "Sopa"
-  - "Premium"
+  - Plato Fuerte
+  - Sopa
+  - Premium
+difficulty: ★★★★☆
+prep_time: '45'
+cook_time: '40'
+servings: 6
+tags:
+  - Festivo
+  - Cartagena
+  - Mariscos
+main_ingredients:
+  - Camarón (con cabeza para caldo)
+  - Calamar (Anillos)
+  - Pulpo (Precocido)
+  - Leche de coco (Primera prensa)
+  - Crema de leche
+  - Pescado blanco (Mero/Pargo)
+  - Brandy o Vino Blanco (Desglasado)
 sensory:
   flavor:
-    - "Umami Marino (Intenso)"
-    - "Lácteo (Coco/Crema)"
-    - "Herbal (Cilantro)"
+    - Umami Marino (Intenso)
+    - Lácteo (Coco/Crema)
+    - Herbal (Cilantro)
   texture:
-    - "Sedosa (Velouté)"
-    - "Firme (Mariscos)"
-    - "Untuosa"
+    - Sedosa (Velouté)
+    - Firme (Mariscos)
+    - Untuosa
   aroma:
-    - "Salinidad de playa"
-    - "Nuez de coco"
-    - "Tomillo y Laurel"
-  presentation: "Cazuela de barro humeante. El líquido debe ser de color naranja pálido o crema. Se sirve con una lluvia de cilantro fresco y una rodaja de limón al lado."
-main_ingredients:
-  - "Camarón (con cabeza para caldo)"
-  - "Calamar (Anillos)"
-  - "Pulpo (Precocido)"
-  - "Leche de coco (Primera prensa)"
-  - "Crema de leche"
-  - "Pescado blanco (Mero/Pargo)"
-  - "Brandy o Vino Blanco (Desglasado)"
-difficulty: "Alta"
-prep_time: "45"
-cook_time: "40"
-servings: 6
+    - Salinidad de playa
+    - Nuez de coco
+    - Tomillo y Laurel
+  presentation: >-
+    Cazuela de barro humeante. El líquido debe ser de color naranja pálido o
+    crema. Se sirve con una lluvia de cilantro fresco y una rodaja de limón al
+    lado.
 nutrition:
   calories: 780
   macros:
     protein_g: 45
     fat_g: 55
     carbs_g: 12
-tags:
-  - "Festivo"
-  - "Cartagena"
-  - "Mariscos"
 images:
-  - url: "https://im.ge/i/cazuela-1.AbC123"
-    description: "Cazuela de mariscos cremosa en pote de barro"
-sources:
-  - name: "Cultura Marítima Caribe"
-    url: "https://gos.org/caribe/cazuela"
-license: "MIT"
-description: "La cumbre de la sofisticación costera. Es una técnica híbrida entre el bisque francés (extracción de sabor de carcasas) y el encocado afro-colombiano. Su complejidad reside en la emulsión estable de leche de coco y proteínas marinas sin que se corte."
----## Cazuela de Mariscos
+  - url: 'https://im.ge/i/cazuela-1.AbC123'
+    description: Cazuela de mariscos cremosa en pote de barro
+description: >-
+  La cumbre de la sofisticación costera. Es una técnica híbrida entre el bisque
+  francés (extracción de sabor de carcasas) y el encocado afro-colombiano. Su
+  complejidad reside en la emulsión estable de leche de coco y proteínas marinas
+  sin que se corte.
+---
+
+## Cazuela de Mariscos
 
 La Cazuela de Mariscos es un plato icónico de la región Caribe colombiana, especialmente en ciudades costeras como Cartagena y Barranquilla. Es una sopa cremosa y aromática, repleta de mariscos frescos, leche de coco y especias, perfecta para celebraciones y ocasiones especiales.
 

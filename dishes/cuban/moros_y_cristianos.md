@@ -1,55 +1,65 @@
 ---
 title: Moros y Cristianos Tradicionales
 region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/moros-y-cristianos/'
+  date_retrieved: '2026-09-03'
 categories:
-- Acompañamiento
-- Arroces
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Terroso (frijol negro)
-  - Umami de tocino
-  texture:
-  - Graneado (suelto)
-  - Al dente
-  - Seco
-  aroma:
-  - Frijoles negros cocidos
-  - Orégano y comino
-  - Ajo frito
-  presentation: Servido como molde redondo o corona en el plato, de un característico color grisáceo-oscuro uniforme, decorado con chicharrones crujientes por encima.
-main_ingredients:
-- Arroz blanco de grano largo
-- Frijoles negros
-- Tocino (bacon)
-- Pimiento verde
-- Comino molido
-- Orégano seco
+  - Acompañamiento
+  - Arroces
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 12 horas
 cook_time: 45 minutos
 servings: 6
+tags:
+  - Arroz
+  - Frijoles
+  - Tocino
+  - Cuba
+  - Tradicional
+main_ingredients:
+  - Arroz blanco de grano largo
+  - Frijoles negros
+  - Tocino (bacon)
+  - Pimiento verde
+  - Comino molido
+  - Orégano seco
+sensory:
+  flavor:
+    - Salado
+    - Terroso (frijol negro)
+    - Umami de tocino
+  texture:
+    - Graneado (suelto)
+    - Al dente
+    - Seco
+  aroma:
+    - Frijoles negros cocidos
+    - Orégano y comino
+    - Ajo frito
+  presentation: >-
+    Servido como molde redondo o corona en el plato, de un característico color
+    grisáceo-oscuro uniforme, decorado con chicharrones crujientes por encima.
 nutrition:
   calories: 310
   macros:
-    protein_g: 8.0
-    fat_g: 6.0
-    carbs_g: 54.0
-tags:
-- Arroz
-- Frijoles
-- Tocino
-- Cuba
-- Tradicional
+    protein_g: 8
+    fat_g: 6
+    carbs_g: 54
 images:
-- url: https://images.unsplash.com/photo-1536304997881-a372c179924b
-  description: Plato de moros y cristianos cubanos con tostones (Unsplash)
-sources:
-- https://www.recetascubanas.org/moros-y-cristianos/
-- https://www.cubaenmiami.com/receta-de-moros-y-cristianos/
-license: MIT
-description: Moros y Cristianos (también conocido simplemente como "Moros" o "Congrí") es el arroz clásico de Cuba. Consiste en cocinar arroz blanco de grano largo directamente en el caldo oscuro de los frijoles negros, sazonado con un sofrito de pimiento verde, cebolla, ajo, comino, orégano y tocino o tocino de cerdo, logrando que los granos de arroz absorban el color y el sabor terroso de los frijoles negros.
+  - url: 'https://images.unsplash.com/photo-1536304997881-a372c179924b'
+    description: Plato de moros y cristianos cubanos con tostones (Unsplash)
+description: >-
+  Moros y Cristianos (también conocido simplemente como "Moros" o "Congrí") es
+  el arroz clásico de Cuba. Consiste en cocinar arroz blanco de grano largo
+  directamente en el caldo oscuro de los frijoles negros, sazonado con un
+  sofrito de pimiento verde, cebolla, ajo, comino, orégano y tocino o tocino de
+  cerdo, logrando que los granos de arroz absorban el color y el sabor terroso
+  de los frijoles negros.
 ---
 
 # Moros y Cristianos Tradicionales

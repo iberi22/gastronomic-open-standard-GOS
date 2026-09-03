@@ -1,54 +1,62 @@
 ---
 title: Flan de Huevo Tradicional Cubano
 region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/flan-de-huevo/'
+  date_retrieved: '2026-09-03'
 categories:
-- Postre
-- Dulce
-- Tradicional
-sensory:
-  flavor:
-  - Extremadamente dulce
-  - Lácteo (vainilla)
-  - Huevo suave
-  texture:
-  - Cremoso
-  - Extremadamente blando
-  - Sedoso
-  aroma:
-  - Caramelo quemado
-  - Vainilla dulce
-  - Huevo y leche tibia
-  presentation: Servido frío en platitos de postre, bañado de forma abundante con el almíbar de caramelo líquido de tono ámbar oscuro brillante.
-main_ingredients:
-- Huevos enteros
-- Leche condensada
-- Leche evaporada (o leche entera)
-- Azúcar blanca (para el caramelo)
-- Esencia de vainilla
+  - Postre
+  - Dulce
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 15 minutos
 cook_time: 55 minutos
 servings: 8
+tags:
+  - Postre
+  - Dulce
+  - Leche condensada
+  - Horno
+  - Cuba
+main_ingredients:
+  - Huevos enteros
+  - Leche condensada
+  - Leche evaporada (o leche entera)
+  - Azúcar blanca (para el caramelo)
+  - Esencia de vainilla
+sensory:
+  flavor:
+    - Extremadamente dulce
+    - Lácteo (vainilla)
+    - Huevo suave
+  texture:
+    - Cremoso
+    - Extremadamente blando
+    - Sedoso
+  aroma:
+    - Caramelo quemado
+    - Vainilla dulce
+    - Huevo y leche tibia
+  presentation: >-
+    Servido frío en platitos de postre, bañado de forma abundante con el almíbar
+    de caramelo líquido de tono ámbar oscuro brillante.
 nutrition:
   calories: 290
   macros:
-    protein_g: 7.0
-    fat_g: 8.0
-    carbs_g: 46.0
-tags:
-- Postre
-- Dulce
-- Leche condensada
-- Horno
-- Cuba
+    protein_g: 7
+    fat_g: 8
+    carbs_g: 46
 images:
-- url: https://images.unsplash.com/photo-1541783245831-57d6fb0926d3
-  description: Flan de huevo cubano con caramelo líquido bañado (Unsplash)
-sources:
-- https://www.recetascubanas.org/flan-de-huevo/
-- https://www.cubaenmiami.com/receta-de-flan-de-huevo-cubano/
-license: MIT
-description: El Flan de Huevo es el postre dulce más popular de Cuba. Elaborado tradicionalmente combinando huevos enteros frescos con leche condensada azucarada y leche evaporada, se aromatiza con vainilla y un toque de canela, horneándose lentamente a baño María.
+  - url: 'https://images.unsplash.com/photo-1541783245831-57d6fb0926d3'
+    description: Flan de huevo cubano con caramelo líquido bañado (Unsplash)
+description: >-
+  El Flan de Huevo es el postre dulce más popular de Cuba. Elaborado
+  tradicionalmente combinando huevos enteros frescos con leche condensada
+  azucarada y leche evaporada, se aromatiza con vainilla y un toque de canela,
+  horneándose lentamente a baño María.
 ---
 
 # Flan de Huevo Tradicional Cubano

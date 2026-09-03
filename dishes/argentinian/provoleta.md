@@ -1,58 +1,68 @@
 ---
-title: "Provoleta Argentina"
-region: "Pampeana"
+title: Provoleta Argentina
+region: Pampeana
+language: es
+license: MIT
+source:
+  name: recetasargentinas.net
+  url: 'https://www.recetasargentinas.net/'
+  date_retrieved: '2026-09-03'
 categories:
-  - "Entrada"
-  - "Queso"
-  - "Tradicional"
-  - "Parrilla"
+  - Entrada
+  - Queso
+  - Tradicional
+  - Parrilla
+difficulty: ★★☆☆☆
+prep_time: 10 minutos (más tiempo de secado)
+cook_time: 10 minutos
+servings: 2
+tags:
+  - Argentina
+  - Queso
+  - Provoleta
+  - Asado
+  - Parrilla
+  - Entrada
+main_ingredients:
+  - Queso provolone hilado (en rodajas gruesas)
+  - Harina de trigo o maicena
+  - Orégano seco
+  - Ají molido
+  - Aceite de oliva
 sensory:
   flavor:
-    - "Salado"
-    - "Umami"
-    - "Lácteo intenso"
-    - "Ahumado sutil"
+    - Salado
+    - Umami
+    - Lácteo intenso
+    - Ahumado sutil
   texture:
-    - "Crujiente exterior"
-    - "Viscoso"
-    - "Elástico interior"
+    - Crujiente exterior
+    - Viscoso
+    - Elástico interior
   aroma:
-    - "Queso tostado"
-    - "Orégano"
-    - "Aceite de oliva"
-    - "Carbón"
-  presentation: "Se sirve extremadamente caliente en cazuela de hierro o directamente sobre una tabla de madera, espolvoreada con orégano, ají molido y un chorrito de aceite de oliva."
-main_ingredients:
-  - "Queso provolone hilado (en rodajas gruesas)"
-  - "Harina de trigo o maicena"
-  - "Orégano seco"
-  - "Ají molido"
-  - "Aceite de oliva"
-difficulty: "★★☆☆☆"
-prep_time: "10 minutos (más tiempo de secado)"
-cook_time: "10 minutos"
-servings: 2
+    - Queso tostado
+    - Orégano
+    - Aceite de oliva
+    - Carbón
+  presentation: >-
+    Se sirve extremadamente caliente en cazuela de hierro o directamente sobre
+    una tabla de madera, espolvoreada con orégano, ají molido y un chorrito de
+    aceite de oliva.
 nutrition:
   calories: 380
   macros:
     protein_g: 24
     fat_g: 31
     carbs_g: 2
-tags:
-  - "Argentina"
-  - "Queso"
-  - "Provoleta"
-  - "Asado"
-  - "Parrilla"
-  - "Entrada"
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Provoleta argentina gratinada a la parrilla crujiente"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "La Provoleta es una de las entradas calientes más tradicionales del asado argentino. Consiste en una rodaja gruesa de queso provolone hilado argentino, deshidratada ligeramente y cocinada a la parrilla de manera que forme una costra dorada y extremadamente crujiente por fuera mientras se mantiene fundida e hilada en su interior."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Provoleta argentina gratinada a la parrilla crujiente
+description: >-
+  La Provoleta es una de las entradas calientes más tradicionales del asado
+  argentino. Consiste en una rodaja gruesa de queso provolone hilado argentino,
+  deshidratada ligeramente y cocinada a la parrilla de manera que forme una
+  costra dorada y extremadamente crujiente por fuera mientras se mantiene
+  fundida e hilada en su interior.
 ---
 
 # Provoleta Argentina

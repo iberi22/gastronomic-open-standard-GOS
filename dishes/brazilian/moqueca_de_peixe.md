@@ -1,57 +1,65 @@
 ---
 title: Moqueca de Peixe Baiana
 region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Guiso de pescado
-- Afrobrasileño
-sensory:
-  flavor:
-  - Lácteo (coco)
-  - Salado
-  - Cítrico
-  - Terroso (aceite de dendê)
-  texture:
-  - Cremoso
-  - Delicado
-  aroma:
-  - Pescado fresco
-  - Coco dulce
-  - Cilantro fresco
-  - Aceite de palma (dendê)
-  presentation: Servido hirviendo en una cacerola de barro tradicional negra (panela de barro), espolvoreado con cilantro y cebollín fresco picado.
-main_ingredients:
-- Pescado blanco (lomo o postas)
-- Leche de coco
-- Aceite de dendê (palma)
-- Pimiento verde
-- Pimiento rojo
-- Tomates maduros
-- Cilantro
+  - Plato fuerte
+  - Guiso de pescado
+  - Afrobrasileño
 difficulty: ★★★☆☆
 prep_time: 30 minutos
 cook_time: 25 minutos
 servings: 4
+tags:
+  - Pescado
+  - Coco
+  - Dendê
+  - Bahía
+  - Mariscos
+main_ingredients:
+  - Pescado blanco (lomo o postas)
+  - Leche de coco
+  - Aceite de dendê (palma)
+  - Pimiento verde
+  - Pimiento rojo
+  - Tomates maduros
+  - Cilantro
+sensory:
+  flavor:
+    - Lácteo (coco)
+    - Salado
+    - Cítrico
+    - Terroso (aceite de dendê)
+  texture:
+    - Cremoso
+    - Delicado
+  aroma:
+    - Pescado fresco
+    - Coco dulce
+    - Cilantro fresco
+    - Aceite de palma (dendê)
+  presentation: >-
+    Servido hirviendo en una cacerola de barro tradicional negra (panela de
+    barro), espolvoreado con cilantro y cebollín fresco picado.
 nutrition:
   calories: 410
   macros:
-    protein_g: 28.0
-    fat_g: 26.0
-    carbs_g: 14.0
-tags:
-- Pescado
-- Coco
-- Dendê
-- Bahía
-- Mariscos
+    protein_g: 28
+    fat_g: 26
+    carbs_g: 14
 images:
-- url: https://images.unsplash.com/photo-1534422298391-e4f8c172dddb
-  description: Moqueca hirviendo en olla tradicional de barro (Unsplash)
-sources:
-- https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html
-- https://www.panelinha.com.br/receita/Moqueca-de-peixe
-license: MIT
-description: La Moqueca de Peixe es un aromático y cremoso guiso de pescado de origen indígena y afrobrasileño. En Bahía, se cocina lentamente en ollas de barro utilizando leche de coco fresca, pimientos, tomates, cebolla, cilantro y el indispensable aceite de dendê.
+  - url: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb'
+    description: Moqueca hirviendo en olla tradicional de barro (Unsplash)
+description: >-
+  La Moqueca de Peixe es un aromático y cremoso guiso de pescado de origen
+  indígena y afrobrasileño. En Bahía, se cocina lentamente en ollas de barro
+  utilizando leche de coco fresca, pimientos, tomates, cebolla, cilantro y el
+  indispensable aceite de dendê.
 ---
 
 # Moqueca de Peixe Baiana

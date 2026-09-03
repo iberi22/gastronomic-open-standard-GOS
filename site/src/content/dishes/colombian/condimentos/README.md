@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Condimentos"]
+difficulty: "★★☆☆☆"
+---
+
 # 🥣 Condimentos, Salsas y Acompañamientos Colombianos
 
 Descubre las salsas, aderezos y acompañamientos que realzan el sabor de los platos colombianos.

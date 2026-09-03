@@ -1,20 +1,25 @@
 ---
 title: Crab Backs (Cangrejo Relleno)
-description: Crab Backs es uno de los platos más representativos de San Andrés y Providencia.
-  Consiste en cangrejo fresco desmenuzado, mezclado con especias, vegetales y pan
-  rallado, luego rellenado en su propio caparazón y gratinado al horno. Es una delicia
-  isleña que destaca por su sabor marino y su present...
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 nutrition:
   calories: 1287
   macros:
     protein_g: 137.9
-    fat_g: 72.0
+    fat_g: 72
     carbs_g: 6.2
+description: >-
+  Crab Backs es uno de los platos más representativos de San Andrés y
+  Providencia. Consiste en cangrejo fresco desmenuzado, mezclado con especias,
+  vegetales y pan rallado, luego rellenado en su propio caparazón y gratinado al
+  horno. Es una delicia isleña que destaca por su sabor marino y su present...
+media: []
 embedding_version: 1
 ---
 

@@ -1,58 +1,11 @@
 ---
-title: Sancocho Dominicano de Siete Carnes
-region: República Dominicana
-categories:
-- Plato fuerte
-- Guiso
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami extremadamente intenso
-  - Ácido (naranja agria)
-  - Herbal (cilantro ancho)
-  texture:
-  - Caldo extremadamente espeso (consistencia espesa de crema)
-  - Tubérculos sumamente suaves
-  aroma:
-  - Carnes mixtas estofadas
-  - Orégano dominicano y cilantro ancho
-  - Naranja agria fresca
-  presentation: Servido muy caliente en platos hondos de barro, acompañado tradicionalmente de arroz blanco graneado, aguacate maduro en rodajas y un chorrito de jugo de naranja agria adicional.
-main_ingredients:
-- Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)
-- Plátano verde
-- Yuca
-- Yautía (blanca y amarilla)
-- Ñame
-- Calabaza (ahuyama)
-- Maíz tierno (mazorcas)
-- Naranja agria
-difficulty: ★★★★★
-prep_time: 45 minutos
-cook_time: 2 horas
-servings: 10
-nutrition:
-  calories: 780
-  macros:
-    protein_g: 54.0
-    fat_g: 32.0
-    carbs_g: 78.0
-tags:
-- Sopa
-- Guiso
-- Carnes mixtas
-- Viandas
-- República Dominicana
-- Tradicional
-images:
-- url: https://images.unsplash.com/photo-1541518763669-27fef04b14ea
-  description: Gran olla de sancocho dominicano espeso hirviendo (Unsplash)
-sources:
-- https://www.cocinadominicana.com/sancocho-dominicano-receta/
-- https://www.elfogondelulublog.com/receta-del-sancocho-dominicano/
-license: MIT
-description: El Sancocho es el plato de celebración supremo de la República Dominicana, reservado para días de lluvia, reuniones de año nuevo o festividades de gran envergadura. Su versión más gloriosa es el "Sancocho de Siete Carnes", un guiso suntuoso y denso que combina múltiples carnes de res, cerdo y pollo con raíces tropicales.
+title: "Sancocho Dominicano De Siete Carnes"
+region: "República Dominicana"
+categories: ["Plato"]
+difficulty: "★★★★★"
+prep_time: "45 minutos"
+cook_time: "2 horas"
+servings: "10"
 ---
 
 # Sancocho Dominicano de Siete Carnes
@@ -124,7 +77,7 @@ El Sancocho de Siete Carnes es el monarca absoluto de la mesa dominicana. No es 
 
 ## 📸 Galería
 
-![Olla comunitaria de Sancocho de Siete Carnes dominicano listo para servir](/dishes/dominican/images/sancocho_1.webp)
+![Olla comunitaria de Sancocho de Siete Carnes dominicano listo para servir](./images/sancocho_1.jpg)
 
 ---
 

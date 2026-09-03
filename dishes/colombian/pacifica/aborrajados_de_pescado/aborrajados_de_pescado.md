@@ -1,53 +1,63 @@
 ---
-title: "Aborrajados de Pescado"
-region: "Pacífica/Nariño"
+title: Aborrajados de Pescado
+region: Pacífica/Nariño
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Snack"
-  - "Fritura"
-  - "Entrada"
+  - Snack
+  - Fritura
+  - Entrada
+difficulty: ★★★☆☆
+prep_time: '30'
+cook_time: '20'
+servings: 12
+tags:
+  - Tumaco
+  - Barbacoas
+  - Fritanga
+main_ingredients:
+  - Plátano Maduro (Sobre-madurado/Negro)
+  - Pescado Blanco (Pargo/Róbalo)
+  - Harina de Trigo (para el wrap)
+  - Huevo y Leche (Aparejo)
+  - Aceite vegetal (Fritura profunda)
 sensory:
   flavor:
-    - "Dulce-Salado (Contraste)"
-    - "Maillard (Crostáceo)"
-    - "Marino sutil"
+    - Dulce-Salado (Contraste)
+    - Maillard (Crostáceo)
+    - Marino sutil
   texture:
-    - "Crujiente (Exterior)"
-    - "Mantecosa (Masa de plátano)"
-    - "Jugosa (Pescado)"
+    - Crujiente (Exterior)
+    - Mantecosa (Masa de plátano)
+    - Jugosa (Pescado)
   aroma:
-    - "Plátano caramelizado"
-    - "Mar fresco"
-    - "Fritura limpia"
-  presentation: "Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro de limón y ají de piña. La costra exterior debe ser firme sin ser dura."
-main_ingredients:
-  - "Plátano Maduro (Sobre-madurado/Negro)"
-  - "Pescado Blanco (Pargo/Róbalo)"
-  - "Harina de Trigo (para el wrap)"
-  - "Huevo y Leche (Aparejo)"
-  - "Aceite vegetal (Fritura profunda)"
-difficulty: "Media"
-prep_time: "30"
-cook_time: "20"
-servings: 12
+    - Plátano caramelizado
+    - Mar fresco
+    - Fritura limpia
+  presentation: >-
+    Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro
+    de limón y ají de piña. La costra exterior debe ser firme sin ser dura.
 nutrition:
   calories: 280
   macros:
     protein_g: 15
     fat_g: 14
     carbs_g: 22
-tags:
-  - "Tumaco"
-  - "Barbacoas"
-  - "Fritanga"
 images:
-  - url: "https://im.ge/i/aborrajado-pescado-1.AbC789"
-    description: "Aborrajados de pescado abiertos mostrando el relleno jugoso"
-sources:
-  - name: "Gastronomía Marítima Nariñense"
-    url: "https://gos.org/pacifico/aborrajados"
-license: "MIT"
-description: "El hermano marino del aborrajado valluno. Sustituye el queso por pescado fresco, encapsulado en una masa de plátano cuya caramelización actúa como barrera protectora de humedad para la proteína interna."
----## Aborrajados de Pescado
+  - url: 'https://im.ge/i/aborrajado-pescado-1.AbC789'
+    description: Aborrajados de pescado abiertos mostrando el relleno jugoso
+description: >-
+  El hermano marino del aborrajado valluno. Sustituye el queso por pescado
+  fresco, encapsulado en una masa de plátano cuya caramelización actúa como
+  barrera protectora de humedad para la proteína interna.
+---
+
+## Aborrajados de Pescado
 
 Los Aborrajados de Pescado son una delicia tradicional del Pacífico colombiano, especialmente en las zonas costeras de Nariño y Cauca. Consisten en trozos de pescado fresco envueltos en una masa de plátano maduro y fritos hasta quedar dorados y crujientes. Son populares como entrada, snack o acompañamiento en celebraciones familiares.
 

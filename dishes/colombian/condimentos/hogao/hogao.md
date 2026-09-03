@@ -1,20 +1,25 @@
 ---
 title: Hogao Colombiano
-description: El hogao es la salsa base por excelencia de la cocina colombiana. Se
-  usa como acompañamiento de arepas, carnes, empanadas y muchos otros platos. Su mezcla
-  de tomate, cebolla y especias es símbolo de hogar y tradición, y tendencia en recetas
-  virales por su sabor casero.
 region: Colombia
 language: es
 license: MIT
-sources: []
-media: []
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 nutrition:
   calories: 357
   macros:
     protein_g: 4.7
     fat_g: 30.9
-    carbs_g: 20.0
+    carbs_g: 20
+description: >-
+  El hogao es la salsa base por excelencia de la cocina colombiana. Se usa como
+  acompañamiento de arepas, carnes, empanadas y muchos otros platos. Su mezcla
+  de tomate, cebolla y especias es símbolo de hogar y tradición, y tendencia en
+  recetas virales por su sabor casero.
+media: []
 embedding_version: 1
 ---
 

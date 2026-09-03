@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Otras_preparaciones"]
+difficulty: "★★☆☆☆"
+---
+
 # Otras Preparaciones Peruanas
 
 En esta sección se agrupan preparaciones tradicionales que no encajan en las categorías anteriores, pero son parte fundamental de la cultura culinaria peruana.

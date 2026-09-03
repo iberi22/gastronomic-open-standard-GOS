@@ -1,50 +1,11 @@
 ---
-title: "Risotto alla Milanese"
-region: "Lombardía (Milán)"
-categories:
-  - "Plato fuerte"
-  - "Risotto"
-sensory:
-  flavor:
-    - "Azafrán refinado terroso"
-    - "Umami de Parmigiano"
-    - "Mantequilla rica"
-  texture:
-    - "Textura mantecada al onda (fluida y cremosa)"
-  aroma:
-    - "Azafrán en hebras"
-    - "Tuétano de res (midollo)"
-    - "Vino blanco seco"
-  presentation: "Plato llano con risotto de color amarillo oro intenso y brillo de mantecatura."
-main_ingredients:
-  - "Arroz Carnaroli o Arborio"
-  - "Azafrán puro en hebras"
-  - "Tuétano de res"
-  - "Mantequilla de calidad"
-  - "Parmigiano Reggiano DOP"
-  - "Caldo de res"
-  - "Vino blanco"
+title: "Risotto Alla Milanese"
+region: "Italia"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "15 minutos"
 cook_time: "25 minutos"
-servings: 4
-nutrition:
-  calories: 540
-  macros:
-    protein_g: 14.0
-    fat_g: 24.0
-    carbs_g: 66.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Risotto alla Milanese tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Risotto alla Milanese brilla por el color y aroma del azafrán puro, elaborado con arroz Carnaroli mantecado con mantequilla y Parmigiano Reggiano."
+servings: "4"
 ---
 
 # Risotto alla Milanese

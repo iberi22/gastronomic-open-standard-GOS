@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Bebidas"]
+difficulty: "★★☆☆☆"
+---
+
 # Bebidas Peruanas
 
 Perú cuenta con una variedad de bebidas tradicionales que reflejan su diversidad cultural y geográfica. Aquí se incluyen refrescos, infusiones, licores y bebidas ancestrales.

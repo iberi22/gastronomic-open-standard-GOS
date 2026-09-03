@@ -2,6 +2,10 @@
 title: "CarimañOlas"
 region: "Colombia"
 categories: ["CarimañOlas"]
+difficulty: "★★★☆☆"
+prep_time: "40"
+cook_time: "20"
+servings: "10"
 ---
 
 # Carimañolas
@@ -51,7 +55,7 @@ Si la arepa de huevo es la reina, la carimañola es la princesa de los fritos co
 
 ## 📸 Galería
 
-
+![Carimañolas](./images/1.png)
 
 ---
 

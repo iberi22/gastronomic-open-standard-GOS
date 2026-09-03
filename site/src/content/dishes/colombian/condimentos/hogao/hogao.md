@@ -1,7 +1,8 @@
 ---
-title: "Hogao"
+title: "Hogao Colombiano"
 region: "Colombia"
 categories: ["Hogao"]
+difficulty: "★★☆☆☆"
 ---
 
 # Hogao Colombiano
@@ -47,7 +48,7 @@ El hogao es la salsa base por excelencia de la cocina colombiana. Se usa como ac
 
 ## 📸 Galería
 
-
+![Hogao casero](./images/1.png)
 
 ---
 

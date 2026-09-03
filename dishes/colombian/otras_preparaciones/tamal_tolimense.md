@@ -1,37 +1,41 @@
 ---
 title: Tamal Tolimense
-images:
-- url: https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
-  description: Tamal tolimense envuelto en hoja de plátano.
-sources:
-- https://www.mycolombianrecipes.com/es/tamales-tolimenses/
-- https://www.recetasgratis.net/receta-de-tamales-tolimenses-23754.html
+region: Andina
+language: es
 license: MIT
-yaml_validation: https://yaml-online-parser.appspot.com/
-description: '* **Para la masa**:'
+source:
+  name: mycolombianrecipes.com
+  url: 'https://www.mycolombianrecipes.com/es/tamales-tolimenses/'
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Graso
+  texture:
+    - Soft (masa)
+    - Fibrous (meats)
+    - Tender (vegetables)
+  aroma:
+    - Banana leaf (steamed)
+    - Cumin
+    - Pork fat
+  presentation: >-
+    Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la
+    parte superior.
 nutrition:
   calories: 3523
   macros:
     protein_g: 172.5
     fat_g: 53.9
     carbs_g: 584.7
-sensory:
-  flavor:
-  - Umami
-  - Salado
-  - Graso
-  texture:
-  - Soft (masa)
-  - Fibrous (meats)
-  - Tender (vegetables)
-  aroma:
-  - Banana leaf (steamed)
-  - Cumin
-  - Pork fat
-  presentation: Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado
-    en la parte superior.
-image: https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg
-region: Andina
+images:
+  - url: 'https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg'
+    description: Tamal tolimense envuelto en hoja de plátano.
+image: 'https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg'
+description: '* **Para la masa**:'
+yaml_validation: 'https://yaml-online-parser.appspot.com/'
 ---
 
 ## Ingredientes

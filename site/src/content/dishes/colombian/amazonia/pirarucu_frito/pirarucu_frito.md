@@ -1,56 +1,11 @@
 ---
-title: Pirarucú Frito
-region: Amazonía
-categories:
-- Plato fuerte
-- Fritura tradicional
-- Mercado
-sensory:
-  flavor:
-  - Umami (intenso)
-  - Salado
-  - Terroso (suave)
-  texture:
-  - Crujiente (costra)
-  - Firme
-  - Suculento (interior)
-  aroma:
-  - Frito (aceite caliente)
-  - Pescado de río (fresco)
-  - Ajo (condimento)
-  presentation: Se sirve en plato tendido, con el filete ocupando gran parte, acompañado de montículos de fariña, rodajas de yuca y plátano.
-main_ingredients:
-- Filete de pirarucú
-- Harina de yuca (fariña)
-- Limón
-- Ajo
-- Aceite vegetal
-difficulty: ★★☆☆☆
-prep_time: 20 minutos
-cook_time: 15 minutos
-servings: 4
-nutrition:
-  calories: 415
-  macros:
-    protein_g: 36.5
-    fat_g: 18.2
-    carbs_g: 28.0
-tags:
-- Pescado amazónico
-- Fritura
-- Sin espinas
-- Tradicional
-images:
-- url: https://pixabay.com/photos/pirarucu-frito-amazonian-1234567/
-  description: Pirarucú frito tradicional amazónico (Pixabay)
-- url: https://unsplash.com/s/photos/pirarucu-frito
-  description: Variaciones de pirarucú frito amazónico en Unsplash
-sources:
-- https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu
-- https://tbca.net.br/base-dados-en/int_food_composition.php?cod_produto=BRC0499E
-- https://www.eltiempo.com/cultura/gastronomia/pirarucu-chefs-hablan-de-sus-preparaciones-en-restaurantes-de-colombia-684418
-license: MIT
-description: El Pirarucú frito es una preparación icónica de la Amazonía, destacando la carne firme y sin espinas del pez de escama más grande de la cuenca. Empanizado con harina local y frito, ofrece un contraste perfecto de texturas.
+title: "Pirarucú Frito"
+region: "Colombia"
+categories: ["Pirarucu_frito"]
+difficulty: "★★☆☆☆"
+prep_time: "20 minutos"
+cook_time: "15 minutos"
+servings: "4"
 ---
 
 ## 🍲 Pirarucú Frito
@@ -108,7 +63,7 @@ El Pirarucú (*Arapaima gigas*) es el "rey del Amazonas", un pez prehistórico q
 
 ## 📸 Galería
 
-![Pirarucú frito servido](/dishes/colombian/amazonia/pirarucu_frito/images/1.webp)
+![Pirarucú frito servido](./images/1.png)
 
 ---
 

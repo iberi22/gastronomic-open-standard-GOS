@@ -1,54 +1,62 @@
 ---
 title: Mofongo Puertorriqueño de Camarones
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/mofongo.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Ajo intenso
-  - Marino (camarón)
-  texture:
-  - Crujiente (chicharrón de cerdo)
-  - Denso (plátano machacado)
-  - Suave (camarón cocido)
-  aroma:
-  - Ajo fresco machacado
-  - Salsa criolla de mariscos
-  presentation: Servido caliente en un tazón grande de cerámica o plato hondo, moldeado en forma de domo y cubierto generosamente con camarones calientes en salsa criolla.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Chicharrón de cerdo crujiente
-- Ajo fresco
-- Aceite de oliva
-- Camarones limpios
-- Salsa criolla (tomate, pimiento, cebolla)
+  - Plato fuerte
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 15 minutos
 cook_time: 25 minutos
 servings: 2
+tags:
+  - Plátano
+  - Chicharrón
+  - Ajo
+  - Camarones
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Plátano verde (plátano macho verde)
+  - Chicharrón de cerdo crujiente
+  - Ajo fresco
+  - Aceite de oliva
+  - Camarones limpios
+  - 'Salsa criolla (tomate, pimiento, cebolla)'
+sensory:
+  flavor:
+    - Salado
+    - Ajo intenso
+    - Marino (camarón)
+  texture:
+    - Crujiente (chicharrón de cerdo)
+    - Denso (plátano machacado)
+    - Suave (camarón cocido)
+  aroma:
+    - Ajo fresco machacado
+    - Salsa criolla de mariscos
+  presentation: >-
+    Servido caliente en un tazón grande de cerámica o plato hondo, moldeado en
+    forma de domo y cubierto generosamente con camarones calientes en salsa
+    criolla.
 nutrition:
   calories: 460
   macros:
-    protein_g: 22.0
-    fat_g: 20.0
-    carbs_g: 48.0
-tags:
-- Plátano
-- Chicharrón
-- Ajo
-- Camarones
-- Puerto Rico
-- Tradicional
+    protein_g: 22
+    fat_g: 20
+    carbs_g: 48
 images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Mofongo puertorriqueño coronado con camarones al ajillo (Unsplash)
-sources:
-- https://www.elboricua.com/mofongo.html
-- https://www.quericavida.com/recetas/mofongo-puertorriqueno/
-license: MIT
-description: El Mofongo de Camarones es uno de los platos más populares y codiciados de Puerto Rico. Consiste en una base de mofongo tradicional coronado generosamente con camarones en salsa criolla boricua.
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Mofongo puertorriqueño coronado con camarones al ajillo (Unsplash)
+description: >-
+  El Mofongo de Camarones es uno de los platos más populares y codiciados de
+  Puerto Rico. Consiste en una base de mofongo tradicional coronado
+  generosamente con camarones en salsa criolla boricua.
 ---
 
 # Mofongo Puertorriqueño de Camarones

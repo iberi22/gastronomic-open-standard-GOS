@@ -1,49 +1,58 @@
 ---
-title: "Spaghetti alla Carbonara"
-region: "Lazio (Roma)"
+title: Spaghetti alla Carbonara
+region: Lazio (Roma)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Pasta Tradicional"
+  - Plato fuerte
+  - Pasta Tradicional
+difficulty: ★★☆☆☆
+prep_time: 15 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Spaghetti de sémola
+  - Guanciale de cerdo
+  - Yemas de huevo frescas
+  - Pecorino Romano DOP
+  - Pimienta negra entera
 sensory:
   flavor:
-    - "Salado curado (Guanciale)"
-    - "Umami de Pecorino Romano"
-    - "Pimienta negra picante"
+    - Salado curado (Guanciale)
+    - Umami de Pecorino Romano
+    - Pimienta negra picante
   texture:
-    - "Pasta al dente"
-    - "Salsa cremosa emulsionada sin nata"
+    - Pasta al dente
+    - Salsa cremosa emulsionada sin nata
   aroma:
-    - "Guanciale dorado"
-    - "Pecorino Romano recién rallado"
-    - "Pimienta recién molida"
-  presentation: "Spaghetti envueltos en crema dorada de yema y queso con trozos crujientes de guanciale."
-main_ingredients:
-  - "Spaghetti de sémola"
-  - "Guanciale de cerdo"
-  - "Yemas de huevo frescas"
-  - "Pecorino Romano DOP"
-  - "Pimienta negra entera"
-difficulty: "★★☆☆☆"
-prep_time: "15 minutos"
-cook_time: "15 minutos"
-servings: 4
+    - Guanciale dorado
+    - Pecorino Romano recién rallado
+    - Pimienta recién molida
+  presentation: >-
+    Spaghetti envueltos en crema dorada de yema y queso con trozos crujientes de
+    guanciale.
 nutrition:
   calories: 620
   macros:
-    protein_g: 26.0
-    fat_g: 28.0
-    carbs_g: 66.0
-tags:
-  - "Italian"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 26
+    fat_g: 28
+    carbs_g: 66
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Spaghetti alla Carbonara tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "La auténtica Carbonara romana no lleva nata ni cebolla: se basa en la emulsión de yemas de huevo, queso Pecorino Romano, grasa de guanciale y abundante pimienta."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Spaghetti alla Carbonara tradicional
+description: >-
+  La auténtica Carbonara romana no lleva nata ni cebolla: se basa en la emulsión
+  de yemas de huevo, queso Pecorino Romano, grasa de guanciale y abundante
+  pimienta.
 ---
 
 # Spaghetti alla Carbonara

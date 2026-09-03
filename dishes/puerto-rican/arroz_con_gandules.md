@@ -1,53 +1,62 @@
 ---
 title: Arroz con Gandules Puertorriqueño
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/arrozcongandules.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Arroces
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de cerdo
-  - Herbal (sofrito)
-  texture:
-  - Graneado (suelto)
-  - Al dente
-  aroma:
-  - Sofrito boricua (recaito)
-  - Achiote y tocino
-  - Laurel y gandules
-  presentation: Servido caliente en un tazón grande, de un característico color amarillo-naranja brillante, decorado con tiras de pimiento morrón y aceitunas verdes.
-main_ingredients:
-- Arroz de grano medio
-- Gandules verdes (pigeon peas)
-- Sofrito puertorriqueño
-- Aceite de achiote
-- Tocino o jamón de cocinar
+  - Plato fuerte
+  - Arroces
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 15 minutos
 cook_time: 30 minutos
 servings: 6
+tags:
+  - Arroz
+  - Gandules
+  - Sofrito
+  - Puerto Rico
+  - Navidad
+main_ingredients:
+  - Arroz de grano medio
+  - Gandules verdes (pigeon peas)
+  - Sofrito puertorriqueño
+  - Aceite de achiote
+  - Tocino o jamón de cocinar
+sensory:
+  flavor:
+    - Salado
+    - Umami de cerdo
+    - Herbal (sofrito)
+  texture:
+    - Graneado (suelto)
+    - Al dente
+  aroma:
+    - Sofrito boricua (recaito)
+    - Achiote y tocino
+    - Laurel y gandules
+  presentation: >-
+    Servido caliente en un tazón grande, de un característico color
+    amarillo-naranja brillante, decorado con tiras de pimiento morrón y
+    aceitunas verdes.
 nutrition:
   calories: 410
   macros:
-    protein_g: 10.0
-    fat_g: 12.0
-    carbs_g: 65.0
-tags:
-- Arroz
-- Gandules
-- Sofrito
-- Puerto Rico
-- Navidad
+    protein_g: 10
+    fat_g: 12
+    carbs_g: 65
 images:
-- url: https://images.unsplash.com/photo-1536304997881-a372c179924b
-  description: Arroz con gandules puertorriqueño tradicional en caldero (Unsplash)
-sources:
-- https://www.elboricua.com/arrozcongandules.html
-- https://www.quericavida.com/recetas/arroz-con-gandules/
-license: MIT
-description: El Arroz con Gandules es la obra maestra culinaria de Puerto Rico, protagonista indiscutible de las cenas navideñas y celebraciones festivas. Consiste en arroz de grano medio cocinado directamente en un caldo rico de gandules verdes saborizado con sofrito boricua.
+  - url: 'https://images.unsplash.com/photo-1536304997881-a372c179924b'
+    description: Arroz con gandules puertorriqueño tradicional en caldero (Unsplash)
+description: >-
+  El Arroz con Gandules es la obra maestra culinaria de Puerto Rico,
+  protagonista indiscutible de las cenas navideñas y celebraciones festivas.
+  Consiste en arroz de grano medio cocinado directamente en un caldo rico de
+  gandules verdes saborizado con sofrito boricua.
 ---
 
 # Arroz con Gandules Puertorriqueño

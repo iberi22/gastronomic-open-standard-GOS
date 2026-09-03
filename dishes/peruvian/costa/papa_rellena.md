@@ -1,10 +1,33 @@
 ---
 title: Papa Rellena
 region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
   - Entrada
   - Criollo
   - Fritura
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 20 minutos
+servings: 6
+tags:
+  - Papa
+  - Rellena
+  - Frito
+  - Criollo
+main_ingredients:
+  - Papa blanca y papa amarilla
+  - Carne de res molida o picada
+  - Cebolla roja
+  - Pasta de ají panca
+  - Huevo duro picado
+  - Harina de trigo
 sensory:
   flavor:
     - Umami (Picadillo de carne)
@@ -18,39 +41,23 @@ sensory:
     - Fritura de papa caliente
     - Ají panca tostado
     - Comino y ajo sofrito
-  presentation: Óvalo dorado y crocante de papa frita, servido caliente sobre hojas de lechuga, acompañado de abundante Salsa Criolla de cebolla roja y limón.
-main_ingredients:
-  - Papa blanca y papa amarilla
-  - Carne de res molida o picada
-  - Cebolla roja
-  - Pasta de ají panca
-  - Huevo duro picado
-  - Harina de trigo
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 20 minutos
-servings: 6
+  presentation: >-
+    Óvalo dorado y crocante de papa frita, servido caliente sobre hojas de
+    lechuga, acompañado de abundante Salsa Criolla de cebolla roja y limón.
 nutrition:
   calories: 390
   macros:
     protein_g: 14
     fat_g: 18
     carbs_g: 44
-tags:
-  - Papa
-  - Rellena
-  - Frito
-  - Criollo
 images:
-  - url: https://images.unsplash.com/photo-1544025162-d76694265947
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
     description: Papas Rellenas peruanas doradas y crujientes
-sources:
-  - name: Yanuq Cocina Peruana
-    url: https://www.yanuq.com
-  - name: Gastronomía Perú
-    url: https://www.gastronomiaperu.com
-license: MIT
-description: La Papa Rellena es una entrada clásica de la gastronomía criolla peruana. Consiste en una masa maleable de papa cocida y prensada, rellena de un jugoso picadillo de carne con pasas, huevo duro y aceituna, moldeada en forma de óvalo, enharinada y frita hasta quedar crocante.
+description: >-
+  La Papa Rellena es una entrada clásica de la gastronomía criolla peruana.
+  Consiste en una masa maleable de papa cocida y prensada, rellena de un jugoso
+  picadillo de carne con pasas, huevo duro y aceituna, moldeada en forma de
+  óvalo, enharinada y frita hasta quedar crocante.
 ---
 
 # Papa Rellena

@@ -1,54 +1,11 @@
 ---
 title: "Mole Poblano"
-region: "Puebla"
-categories:
-  - "Plato fuerte"
-  - "Festivo"
-  - "Ancestral"
-sensory:
-  flavor:
-    - "Complejo"
-    - "Dulce amargo (chocolate)"
-    - "Picante especiado"
-    - "Umami"
-  texture:
-    - "Salsa tersa y espesa"
-    - "Carne tierna"
-  aroma:
-    - "Chocolate amargo"
-    - "Chiles tostados"
-    - "Especias dulces"
-  presentation: "Pollo bañado generosamente con mole oscuro brillante, espolvoreado con ajonjolí tostado."
-main_ingredients:
-  - "Pollo entero"
-  - "Chile mulato"
-  - "Chile pasilla"
-  - "Chile ancho"
-  - "Chocolate negro sin azúcar"
-  - "Ajonjolí"
-  - "Almendras"
-  - "Canela"
+region: "México"
+categories: ["Plato"]
 difficulty: "★★★★☆"
 prep_time: "1 hora"
 cook_time: "2 horas"
-servings: 6
-nutrition:
-  calories: 780
-  macros:
-    protein_g: 45.0
-    fat_g: 38.0
-    carbs_g: 65.0
-tags:
-  - "Mexican"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Mole Poblano tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Mole Poblano es la cúspide de la gastronomía barroca mexicana, combinando más de 20 ingredientes entre chiles secos, chocolate, frutos secos y especias."
+servings: "6"
 ---
 
 # Mole Poblano

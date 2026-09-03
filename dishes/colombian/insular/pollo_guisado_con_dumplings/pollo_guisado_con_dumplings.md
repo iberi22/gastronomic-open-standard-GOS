@@ -1,56 +1,60 @@
 ---
 title: Pollo Guisado con Dumplings
 region: Insular
+language: es
+license: MIT
+source:
+  name: comidadecolombia.blogspot.com
+  url: >-
+    https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Guiso isleño
-- Comida típica
-sensory:
-  flavor:
-  - Umami
-  - Cremoso
-  - Salado
-  - Ligeramente dulce (coco)
-  texture:
-  - Jugoso (pollo)
-  - Esponjoso (dumplings)
-  - Cremoso (caldo)
-  aroma:
-  - Coco
-  - Herbal (tomillo)
-  - Sofrito
-  presentation: Se sirve en platos hondos, decorado con ramitas de tomillo fresco.
-    Ideal para almuerzos familiares y celebraciones.
-main_ingredients:
-- Pollo
-- Harina de trigo
-- Leche de coco
-- Cebolla
-- Tomillo
+  - Plato fuerte
+  - Guiso isleño
+  - Comida típica
 difficulty: ★★★☆☆
 prep_time: 30 minutos
 cook_time: 1 hora
 servings: 6
-images:
-- url: https://pixabay.com/photos/chicken-stew-dumplings-culinary-1234567/
-  description: Pollo guisado con dumplings tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/chicken-dumplings
-  description: Variaciones de pollo guisado con dumplings en Unsplash
-sources:
-- https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html
-- https://elrinconcolombiano.com/dumplings-drop-dumplings/
-- https://astelus.com/platos-tipicos-colombia/la-preparacion-de-los-dumplings-de-san-andres-y-providencia/
-license: MIT
-description: El Pollo Guisado con Dumplings es un plato reconfortante y festivo de
-  la región Insular, especialmente en San Andrés y Providencia. Combina pollo sazonado
-  y guisado lentamente con vegetales y especias isleñas, acompañado de dumplings esponjosos
-  cocidos en el mismo caldo, creando una experiencia r...
+main_ingredients:
+  - Pollo
+  - Harina de trigo
+  - Leche de coco
+  - Cebolla
+  - Tomillo
+sensory:
+  flavor:
+    - Umami
+    - Cremoso
+    - Salado
+    - Ligeramente dulce (coco)
+  texture:
+    - Jugoso (pollo)
+    - Esponjoso (dumplings)
+    - Cremoso (caldo)
+  aroma:
+    - Coco
+    - Herbal (tomillo)
+    - Sofrito
+  presentation: >-
+    Se sirve en platos hondos, decorado con ramitas de tomillo fresco. Ideal
+    para almuerzos familiares y celebraciones.
 nutrition:
   calories: 2501
   macros:
     protein_g: 437.4
-    fat_g: 65.0
-    carbs_g: 15.0
+    fat_g: 65
+    carbs_g: 15
+images:
+  - url: 'https://pixabay.com/photos/chicken-stew-dumplings-culinary-1234567/'
+    description: Pollo guisado con dumplings tradicional (Pixabay)
+  - url: 'https://unsplash.com/s/photos/chicken-dumplings'
+    description: Variaciones de pollo guisado con dumplings en Unsplash
+description: >-
+  El Pollo Guisado con Dumplings es un plato reconfortante y festivo de la
+  región Insular, especialmente en San Andrés y Providencia. Combina pollo
+  sazonado y guisado lentamente con vegetales y especias isleñas, acompañado de
+  dumplings esponjosos cocidos en el mismo caldo, creando una experiencia r...
 ---
 
 ## Pollo Guisado con Dumplings

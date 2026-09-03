@@ -1,50 +1,11 @@
 ---
-title: "Mojojoy (Larva de Palma)"
-region: "Amazonía"
-categories:
-  - "Entrada"
-  - "Ancestral"
-  - "Entomofagia"
-sensory:
-  flavor:
-    - "Graso-Manteca"
-    - "Dulzura Forestal"
-    - "Umami Animal"
-  texture:
-    - "Crujiente (Quitina)"
-    - "Cremoso / Líquido"
-    - "Untuosa"
-  aroma:
-    - "Madera Mojada"
-    - "Coco Tostado"
-    - "Fritura animal"
-  presentation: "Se sirve ensartado en brochetas rústicas o sobre un lecho de fariña. La larva debe estar dorada uniformemente, sin romperse, manteniendo su forma cilíndrica."
-main_ingredients:
-  - "Larva de Mojojoy (*Rhynchophorus palmarum*)"
-  - "Sal de Selva"
-  - "Limón Criollo"
-difficulty: "Baja (Cuidado con el punto de calor)"
+title: "Mojojoy (Larva De Palma)"
+region: "Colombia"
+categories: ["Mojojoy"]
+difficulty: "★☆☆☆☆"
 prep_time: "15"
 cook_time: "10"
-servings: 4
-nutrition:
-  calories: 180
-  macros:
-    protein_g: 14
-    fat_g: 12
-    carbs_g: 2
-tags:
-  - "Tikuna"
-  - "Proteína Alternativa"
-  - "Sostenible"
-images:
-  - url: "https://im.ge/i/mojojoy-1.AbC890"
-    description: "Mojojoy asado a la perfección"
-sources:
-  - name: "Entomofagia Amazónica GOS"
-    url: "https://gos.org/amazonia/mojojoy"
-license: "MIT"
-description: "La 'Mantequilla de la Selva'. El Mojojoy es una larva de escarabajo que se alimenta de la médula de las palmas (*Mauritia flexuosa*), lo que le confiere un perfil lipídico único y un sabor que recuerda a los frutos secos y el coco."
+servings: "4"
 ---
 
 ## Mojojoy
@@ -89,7 +50,7 @@ El Mojojoy es uno de los manjares más exóticos y emblemáticos de la Amazonía
 
 ## 📸 Galería
 
-![Mojojoy asado y dorado](/dishes/colombian/amazonia/mojojoy/images/1.webp)
+![Mojojoy asado y dorado](./images/1.png)
 
 ---
 

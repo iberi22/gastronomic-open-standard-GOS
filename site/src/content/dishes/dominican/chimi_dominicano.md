@@ -1,59 +1,11 @@
 ---
-title: Chimichurri Dominicano (Chimi)
-region: República Dominicana
-categories:
-- Plato fuerte
-- Comida callejera
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de res frita
-  - Dulce sutil (salsa chimi)
-  - Ácido (repollo al vinagre)
-  texture:
-  - Crujiente (pan de agua tostado)
-  - Suave (carne de res jugosa)
-  - Crujiente y jugoso (repollo frito)
-  aroma:
-  - Carne sazonada a la plancha
-  - Pan caliente tostado
-  - Sazón criollo de ajo y cebolla
-  presentation: Servido envuelto en papel encerado o papel de aluminio de forma rústica.
-main_ingredients:
-- Carne de res molida (ground beef)
-- Pan de agua
-- Repollo blanco (col)
-- Salsa chimi (kétchup y mayonesa)
-- Cebolla roja
-- Ajo fresco
-- Ají gustoso o pimiento verde
-difficulty: ★★☆☆☆
-prep_time: 15 minutos
-cook_time: 15 minutos
-servings: 2
-nutrition:
-  calories: 490
-  macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 44.0
-tags:
-- Res
-- Pan
-- Sandwich
-- Chimi
-- Repollo
-- República Dominicana
-- Calle
-images:
-- url: https://images.unsplash.com/photo-1568901346375-23c9450c58cd
-  description: Hamburguesa dominicana chimi de carne jugosa a la plancha (Unsplash)
-sources:
-- https://www.cocinadominicana.com/chimichurri-chimi-receta/
-- https://www.elfogondelulublog.com/receta-de-chimichurri-dominicano-chimi/
-license: MIT
-description: El Chimichurri dominicano es el emparedado o hamburguesa de comida callejera más famoso de la República Dominicana, rey de los puestos nocturnos urbanos. Consiste en una masa de carne de res molida sazonada con ajo, cebolla, perejil y ají gustoso.
+title: "Chimichurri Dominicano (Chimi)"
+region: "República Dominicana"
+categories: ["Plato"]
+difficulty: "★★☆☆☆"
+prep_time: "15 minutos"
+cook_time: "15 minutos"
+servings: "2"
 ---
 
 # Chimichurri Dominicano (Chimi)
@@ -120,7 +72,7 @@ El Chimichurri Dominicano, o simplemente *Chimi*, es la comida callejera nocturn
 
 ## 📸 Galería
 
-![Chimichurri Dominicano servido caliente listo para comer](/dishes/dominican/images/chimi_1.webp)
+![Chimichurri Dominicano servido caliente listo para comer](./images/chimi_1.jpg)
 
 ---
 

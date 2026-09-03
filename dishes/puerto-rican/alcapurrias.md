@@ -1,54 +1,61 @@
 ---
 title: Alcapurrias de Masa Puertorriqueñas
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/alcapurrias.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Entrada
-- Fritura
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de carne intenso
-  - Achiote y sofrito
-  texture:
-  - Extremadamente crujiente (exterior)
-  - Suave (masa interior)
-  - Desmenuzado (picadillo)
-  aroma:
-  - Fritura caliente en aceite de achiote
-  - Carne sofrita de res con aceitunas
-  presentation: De forma alargada y cilíndrica, servidas calientes sobre papel absorbente, con la costra dorada de color naranja brillante.
-main_ingredients:
-- Guineos verdes (bananas verdes)
-- Yautía blanca
-- Aceite de achiote
-- Carne de res molida (picadillo boricua)
-- Sofrito puertorriqueño
+  - Entrada
+  - Fritura
+  - Tradicional
 difficulty: ★★★★★
 prep_time: 45 minutos
 cook_time: 20 minutos
 servings: 4
+tags:
+  - Fritura
+  - Guineo verde
+  - Picadillo
+  - Achiote
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Guineos verdes (bananas verdes)
+  - Yautía blanca
+  - Aceite de achiote
+  - Carne de res molida (picadillo boricua)
+  - Sofrito puertorriqueño
+sensory:
+  flavor:
+    - Salado
+    - Umami de carne intenso
+    - Achiote y sofrito
+  texture:
+    - Extremadamente crujiente (exterior)
+    - Suave (masa interior)
+    - Desmenuzado (picadillo)
+  aroma:
+    - Fritura caliente en aceite de achiote
+    - Carne sofrita de res con aceitunas
+  presentation: >-
+    De forma alargada y cilíndrica, servidas calientes sobre papel absorbente,
+    con la costra dorada de color naranja brillante.
 nutrition:
   calories: 380
   macros:
-    protein_g: 14.0
-    fat_g: 22.0
-    carbs_g: 34.0
-tags:
-- Fritura
-- Guineo verde
-- Picadillo
-- Achiote
-- Puerto Rico
-- Tradicional
+    protein_g: 14
+    fat_g: 22
+    carbs_g: 34
 images:
-- url: https://images.unsplash.com/photo-1585503415901-274e303bc869
-  description: Alcapurria frita de masa crujiente dorada de Puerto Rico (Unsplash)
-sources:
-- https://www.elboricua.com/alcapurrias.html
-- https://www.quericavida.com/recetas/alcapurrias-puertorriquenas/
-license: MIT
-description: Las Alcapurrias son la fritura playera más icónica y popular de Puerto Rico. Consisten en un frito de masa alargado cuya masa se elabora rallando guineos verdes y yautía blanca, rellenas de un picadillo de carne de res.
+  - url: 'https://images.unsplash.com/photo-1585503415901-274e303bc869'
+    description: Alcapurria frita de masa crujiente dorada de Puerto Rico (Unsplash)
+description: >-
+  Las Alcapurrias son la fritura playera más icónica y popular de Puerto Rico.
+  Consisten en un frito de masa alargado cuya masa se elabora rallando guineos
+  verdes y yautía blanca, rellenas de un picadillo de carne de res.
 ---
 
 # Alcapurrias de Masa Puertorriqueñas

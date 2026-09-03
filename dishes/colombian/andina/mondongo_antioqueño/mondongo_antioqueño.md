@@ -1,59 +1,70 @@
 ---
-title: "Mondongo Antioqueño"
-region: "Andina"
+title: Mondongo Antioqueño
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Sopa"
-  - "Plato Fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Cárnico"
-    - "Especiado (Comino)"
-    - "Umami"
-    - "Rico"
-  texture:
-    - "Espeso"
-    - "Tropezudo"
-    - "Masticable (Callos)"
-    - "Suave (Vegetales)"
-  aroma:
-    - "Comino"
-    - "Cerdo"
-    - "Cilantro fresco"
-    - "Sofrito"
-  presentation: "Plato hondo rebosante, servido hirviendo. Acompañantes OBLIGATORIOS aparte: Banano maduro (clave), aguacate, arroz blanco, arepa blanca, cilantro y limón."
-main_ingredients:
-  - "Mondongo (Callo/Panza de res)"
-  - "Carne de cerdo (pierna)"
-  - "Chorizo antioqueño"
-  - "Papa criolla"
-  - "Papa capira"
-  - "Yuca"
-  - "Arveja verde"
-  - "Hogao (Tomate/Cebolla)"
-  - "Comino"
-difficulty: "Alta"
+  - Sopa
+  - Plato Fuerte
+  - Tradicional
+difficulty: ★★★★☆
 prep_time: 240
 cook_time: 120
 servings: 8
+tags:
+  - Antioquia
+  - Domingo
+  - Levantamuertos
+main_ingredients:
+  - Mondongo (Callo/Panza de res)
+  - Carne de cerdo (pierna)
+  - Chorizo antioqueño
+  - Papa criolla
+  - Papa capira
+  - Yuca
+  - Arveja verde
+  - Hogao (Tomate/Cebolla)
+  - Comino
+sensory:
+  flavor:
+    - Cárnico
+    - Especiado (Comino)
+    - Umami
+    - Rico
+  texture:
+    - Espeso
+    - Tropezudo
+    - Masticable (Callos)
+    - Suave (Vegetales)
+  aroma:
+    - Comino
+    - Cerdo
+    - Cilantro fresco
+    - Sofrito
+  presentation: >-
+    Plato hondo rebosante, servido hirviendo. Acompañantes OBLIGATORIOS aparte:
+    Banano maduro (clave), aguacate, arroz blanco, arepa blanca, cilantro y
+    limón.
 nutrition:
   calories: 680
   macros:
     protein_g: 48
     fat_g: 28
     carbs_g: 58
-tags:
-  - "Antioquia"
-  - "Domingo"
-  - "Levantamuertos"
 images:
-  - url: "https://im.ge/i/mondongo-1.AbC789"
-    description: "Mondongo Antioqueño tradicional con sus acompañamientos"
-sources:
-  - name: "Patrimonio Gastronómico de Antioquia"
-    url: "https://medellin.travel"
-license: "MIT"
-description: "Sopa contundente y emblemática de los domingos antioqueños. Se basa en una cocción larga de tres tipos de proteínas (callo, cerdo, chorizo) y tres carbohidratos (papa criolla, capira, yuca), resultando en un caldo espeso y rico en colágeno. El contraste se logra con el cilantro fresco y el banano dulce."
+  - url: 'https://im.ge/i/mondongo-1.AbC789'
+    description: Mondongo Antioqueño tradicional con sus acompañamientos
+description: >-
+  Sopa contundente y emblemática de los domingos antioqueños. Se basa en una
+  cocción larga de tres tipos de proteínas (callo, cerdo, chorizo) y tres
+  carbohidratos (papa criolla, capira, yuca), resultando en un caldo espeso y
+  rico en colágeno. El contraste se logra con el cilantro fresco y el banano
+  dulce.
 ---
 
 # Mondongo Antioqueño

@@ -1,46 +1,52 @@
 ---
-title: "Dal Makhani"
-region: "Punjab"
+title: Dal Makhani
+region: Punjab
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Plato fuerte"
-  - "Tradicional"
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Indian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
 sensory:
   flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado"
+    - Salado
+    - Umami
+    - Especiado
   texture:
-    - "Crujiente exterior"
-    - "Interior tierno"
+    - Crujiente exterior
+    - Interior tierno
   aroma:
-    - "Aroma característico de Dal Makhani"
-  presentation: "Dal Makhani presentado de forma vistosa tradicional."
-main_ingredients:
-  - "Ingrediente principal 1"
-  - "Ingrediente principal 2"
-  - "Especias"
-  - "Aceite de oliva"
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: 4
+    - Aroma característico de Dal Makhani
+  presentation: Dal Makhani presentado de forma vistosa tradicional.
 nutrition:
   calories: 550
   macros:
-    protein_g: 28.0
-    fat_g: 22.0
-    carbs_g: 45.0
-tags:
-  - "Indian"
-  - "GOS Catalog"
-  - "Top 20"
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Dal Makhani tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "Dal Makhani es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Dal Makhani tradicional
+description: >-
+  Dal Makhani es uno de los platos más emblemáticos de la gastronomía de Punjab,
+  conocido por su equilibrio de sabores e ingredientes de alta calidad.
 ---
 
 # Dal Makhani

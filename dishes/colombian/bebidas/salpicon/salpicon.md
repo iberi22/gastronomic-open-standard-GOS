@@ -1,60 +1,62 @@
 ---
 title: Salpicón Colombiano
 region: Nacional
+language: es
+license: MIT
+source:
+  name: elgourmet.com
+  url: 'https://elgourmet.com/recetas/salpicon/'
+  date_retrieved: '2026-09-03'
 categories:
-- Bebida
-- Postre
-- Merienda
-- Refresco
-sensory:
-  flavor:
-  - Dulce
-  - Frutal
-  texture:
-  - Refrescante
-  - Jugoso
-  - Con trozos de fruta
-  aroma:
-  - Frutal
-  - Cítrico
-  presentation: Se sirve en vasos grandes, ideal para días calurosos y fiestas infantiles.
-main_ingredients:
-- Sandía
-- Papaya
-- Piña
-- Banano
-- Mango
-- Gaseosa roja
+  - Bebida
+  - Postre
+  - Merienda
+  - Refresco
 difficulty: ★☆☆☆☆
 prep_time: 15 minutos
 cook_time: 0 minutos
 servings: 4
-images:
-- url: https://pixabay.com/photos/salpicon-colombiano-bebida-6146287/
-  description: Vaso de salpicón colombiano tradicional (Pixabay)
-- url: https://unsplash.com/s/photos/salpicon-colombia
-  description: Variaciones de salpicón en Unsplash
-sources:
-- https://elgourmet.com/recetas/salpicon/
-- https://www.youtube.com/results?search_query=salpicon+colombiano
-- https://www.tiktok.com/tag/salpicon
-license: MIT
 tags:
-- colombiano
-- tradicional
-- bebida
-- salpicon
-- open source
-description: El salpicón es una bebida-postre refrescante y colorida, tradicional
-  en ferias, plazas y cafeterías de Colombia. Se prepara con frutas frescas picadas
-  y jugo de sandía o gaseosa roja, y es tendencia en redes por su presentación vistosa
-  y sabor frutal.
+  - colombiano
+  - tradicional
+  - bebida
+  - salpicon
+  - open source
+main_ingredients:
+  - Sandía
+  - Papaya
+  - Piña
+  - Banano
+  - Mango
+  - Gaseosa roja
+sensory:
+  flavor:
+    - Dulce
+    - Frutal
+  texture:
+    - Refrescante
+    - Jugoso
+    - Con trozos de fruta
+  aroma:
+    - Frutal
+    - Cítrico
+  presentation: 'Se sirve en vasos grandes, ideal para días calurosos y fiestas infantiles.'
 nutrition:
   calories: 157
   macros:
-    protein_g: 4.0
+    protein_g: 4
     fat_g: 0.2
-    carbs_g: 36.0
+    carbs_g: 36
+images:
+  - url: 'https://pixabay.com/photos/salpicon-colombiano-bebida-6146287/'
+    description: Vaso de salpicón colombiano tradicional (Pixabay)
+  - url: 'https://unsplash.com/s/photos/salpicon-colombia'
+    description: Variaciones de salpicón en Unsplash
+description: >-
+  El salpicón es una bebida-postre refrescante y colorida, tradicional en
+  ferias, plazas y cafeterías de Colombia. Se prepara con frutas frescas picadas
+  y jugo de sandía o gaseosa roja, y es tendencia en redes por su presentación
+  vistosa y sabor frutal.
 ---
 
 ## Salpicón Colombiano

@@ -1,46 +1,11 @@
 ---
-title: Pescado Moqueado
-region: Amazonía
-categories:
-- Plato fuerte
-- Técnica ancestral
-- Tradicional
-sensory:
-  flavor:
-  - Ahumado
-  - Salado
-  - Umami
-  texture:
-  - Firme
-  - Jugoso
-  aroma:
-  - Ahumado
-  - Herbal
-  - Terroso
-  presentation: Se sirve en porciones grandes, ideal para compartir y celebrar la
-    tradición indígena.
-main_ingredients:
-- Pescado de río
-- Hojas de plátano/bijao
-- Sal
-difficulty: ★★★☆☆
-prep_time: 30 minutos
-cook_time: 2-3 horas
-servings: 6
-images:
-- url: https://pixabay.com/photos/pescado-moqueado-amazonian-1234567/
-  description: Pescado moqueado tradicional amazónico (Pixabay)
-- url: https://unsplash.com/s/photos/pescado-moqueado
-  description: Variaciones de pescado moqueado amazónico en Unsplash
-sources:
-- https://www.elespectador.com/gastronomia-y-recetas/pescado-muquiado-un-plato-que-resalta-los-sabores-de-la-etnias-del-guaviare/
-- https://colombia.gastronomia.com/noticia/8830/tradicion-amazonica-pescado-moqueado
-- https://comidadecolombia.blogspot.com/2010/11/pescado-moquiao.html
-license: MIT
-description: El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana,
-  utilizada por pueblos indígenas para conservar y realzar el sabor del pescado de
-  río. Consiste en ahumar el pescado lentamente sobre brasas y hojas, lo que le otorga
-  un aroma y sabor únicos, además de una textura firme.
+title: "Pescado Moqueado"
+region: "Colombia"
+categories: ["Pescado_moqueado"]
+difficulty: "★★★☆☆"
+prep_time: "30 minutos"
+cook_time: "2-3 horas"
+servings: "6"
 ---
 
 ## Pescado Moqueado
@@ -86,7 +51,7 @@ El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana, ut
 
 ## 📸 Galería
 
-![Pescado moqueado en hojas](/dishes/colombian/amazonia/pescado_moqueado/images/1.webp)
+![Pescado moqueado en hojas](./images/1.png)
 
 ---
 

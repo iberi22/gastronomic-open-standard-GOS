@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Perú"
+categories: ["Snacks"]
+difficulty: "★★☆☆☆"
+---
+
 # Snacks Peruanos
 
 Los snacks peruanos incluyen preparaciones ligeras, frituras, bocados y antojitos típicos de la costa, sierra y selva.

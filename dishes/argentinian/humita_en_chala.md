@@ -1,59 +1,68 @@
 ---
-title: "Humita en Chala"
-region: "Noroeste Argentino (Jujuy / Salta / Tucumán)"
+title: Humita en Chala
+region: Noroeste Argentino (Jujuy / Salta / Tucumán)
+language: es
+license: MIT
+source:
+  name: recetasargentinas.net
+  url: 'https://www.recetasargentinas.net/'
+  date_retrieved: '2026-09-03'
 categories:
-  - "Plato fuerte"
-  - "Tradicional"
-  - "Maiz"
+  - Plato fuerte
+  - Tradicional
+  - Maiz
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 40 minutos
+servings: 6
+tags:
+  - Argentina
+  - Maíz
+  - Humita
+  - Chala
+  - Noroeste
+  - Tradición
+main_ingredients:
+  - Maíz choclo fresco entero
+  - Zapallo amarillo
+  - Grasa de pella
+  - Queso de cabra o queso fresco criollo
+  - Cebolla
+  - Comino y pimentón
+  - Hojas de maíz (chalas)
 sensory:
   flavor:
-    - "Dulce sutil"
-    - "Salado"
-    - "Especiado"
-    - "Lácteo"
+    - Dulce sutil
+    - Salado
+    - Especiado
+    - Lácteo
   texture:
-    - "Cremoso"
-    - "Suave"
-    - "Blando con grumos"
+    - Cremoso
+    - Suave
+    - Blando con grumos
   aroma:
-    - "Maíz tierno"
-    - "Queso derretido"
-    - "Cebolla sofrita"
-    - "Comino"
-  presentation: "Se sirve caliente en su propio paquete de chala de maíz amarrado con tiritas vegetales en forma de cruz, que se abre directamente en el plato al comer."
-main_ingredients:
-  - "Maíz choclo fresco entero"
-  - "Zapallo amarillo"
-  - "Grasa de pella"
-  - "Queso de cabra o queso fresco criollo"
-  - "Cebolla"
-  - "Comino y pimentón"
-  - "Hojas de maíz (chalas)"
-difficulty: "★★★☆☆"
-prep_time: "40 minutos"
-cook_time: "40 minutos"
-servings: 6
+    - Maíz tierno
+    - Queso derretido
+    - Cebolla sofrita
+    - Comino
+  presentation: >-
+    Se sirve caliente en su propio paquete de chala de maíz amarrado con tiritas
+    vegetales en forma de cruz, que se abre directamente en el plato al comer.
 nutrition:
   calories: 340
   macros:
     protein_g: 10
     fat_g: 15
     carbs_g: 42
-tags:
-  - "Argentina"
-  - "Maíz"
-  - "Humita"
-  - "Chala"
-  - "Noroeste"
-  - "Tradición"
 images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Humitas en chala tradicionales argentinas amarradas en cruz"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "La Humita en Chala es un plato emblemático del noroeste argentino. Consiste en una pasta untuosa de maíz choclo fresco rallado a mano cocinado con puré de zapallo dulce sofrito en grasa de pella con cebolla, comino y pimentón, con un trozo de queso fresco en su centro, envuelto en hojas tiernas de maíz (chalas) y hervido."
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Humitas en chala tradicionales argentinas amarradas en cruz
+description: >-
+  La Humita en Chala es un plato emblemático del noroeste argentino. Consiste en
+  una pasta untuosa de maíz choclo fresco rallado a mano cocinado con puré de
+  zapallo dulce sofrito en grasa de pella con cebolla, comino y pimentón, con un
+  trozo de queso fresco en su centro, envuelto en hojas tiernas de maíz (chalas)
+  y hervido.
 ---
 
 # Humita en Chala

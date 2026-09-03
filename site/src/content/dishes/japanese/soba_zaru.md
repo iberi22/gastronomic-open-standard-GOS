@@ -1,46 +1,11 @@
 ---
-title: "Zaru Soba (Fideos de Trigo Sarraceno)"
-region: "Nagano"
-categories:
-  - "Plato fuerte"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Nuez terrosa del trigo sarraceno"
-    - "Umami de tsuyu helado"
-  texture:
-    - "Fideos firmes y elásticos"
-  aroma:
-    - "Trigo sarraceno tostado"
-    - "Wasabi fresco"
-  presentation: "Fideos soba fríos presentados sobre estera de bambú (zaru) con tazón lateral de mentsuyu."
-main_ingredients:
-  - "Fideos Soba (80% trigo sarraceno)"
-  - "Caldo Mentsuyu concentrado"
-  - "Alga nori cortada fina"
-  - "Wasabi"
-  - "Cebolleta picada"
+title: "Zaru Soba (Fideos De Trigo Sarraceno)"
+region: "Japón"
+categories: ["Plato"]
 difficulty: "★★☆☆☆"
 prep_time: "15 minutos"
 cook_time: "8 minutos"
-servings: 2
-nutrition:
-  calories: 340
-  macros:
-    protein_g: 14.0
-    fat_g: 2.0
-    carbs_g: 68.0
-tags:
-  - "Japanese"
-  - "GOS Catalog"
-  - "Top 20"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Zaru Soba (Fideos de Trigo Sarraceno) tradicional"
-sources:
-  - "Gastronomic Open Standard (GOS) Database"
-license: "MIT"
-description: "El Zaru Soba consiste en fideos de trigo sarraceno servidos helados sobre bambú, diseñados para remojarse en un sabroso dashi frío sazonado con wasabi."
+servings: "2"
 ---
 
 # Zaru Soba (Fideos de Trigo Sarraceno)

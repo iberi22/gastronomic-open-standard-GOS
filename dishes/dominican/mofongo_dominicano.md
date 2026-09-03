@@ -1,56 +1,66 @@
 ---
 title: Mofongo Dominicano Tradicional
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: cocinadominicana.com
+  url: 'https://www.cocinadominicana.com/mofongo-dominicano-receta/'
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Snack
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Umami de chicharrón
-  - Ajo fuerte
-  texture:
-  - Crujiente (chicharrón de cerdo)
-  - Denso (plátano machacado)
-  - Seco pero tierno
-  aroma:
-  - Ajo machacado en aceite de oliva
-  - Chicharrón frito crujiente
-  - Plátano frito caliente
-  presentation: Moldeado en forma de domo, servido caliente en un plato hondo o tazón, acompañado de una taza pequeña de caldo de carne de res o pollo al ajo caliente.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Chicharrón de cerdo crujiente
-- Ajo fresco
-- Aceite de oliva
-- Sal de mesa
-- Caldo de carne para acompañar
+  - Plato fuerte
+  - Snack
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 15 minutos
 cook_time: 20 minutos
 servings: 2
+tags:
+  - Plátano
+  - Chicharrón
+  - Ajo
+  - Pilón
+  - República Dominicana
+  - Tradicional
+main_ingredients:
+  - Plátano verde (plátano macho verde)
+  - Chicharrón de cerdo crujiente
+  - Ajo fresco
+  - Aceite de oliva
+  - Sal de mesa
+  - Caldo de carne para acompañar
+sensory:
+  flavor:
+    - Salado
+    - Umami de chicharrón
+    - Ajo fuerte
+  texture:
+    - Crujiente (chicharrón de cerdo)
+    - Denso (plátano machacado)
+    - Seco pero tierno
+  aroma:
+    - Ajo machacado en aceite de oliva
+    - Chicharrón frito crujiente
+    - Plátano frito caliente
+  presentation: >-
+    Moldeado en forma de domo, servido caliente en un plato hondo o tazón,
+    acompañado de una taza pequeña de caldo de carne de res o pollo al ajo
+    caliente.
 nutrition:
   calories: 420
   macros:
-    protein_g: 14.0
-    fat_g: 22.0
-    carbs_g: 44.0
-tags:
-- Plátano
-- Chicharrón
-- Ajo
-- Pilón
-- República Dominicana
-- Tradicional
+    protein_g: 14
+    fat_g: 22
+    carbs_g: 44
 images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Mofongo dominicano servido en su pilón de madera tradicional (Unsplash)
-sources:
-- https://www.cocinadominicana.com/mofongo-dominicano-receta/
-- https://www.elfogondelulublog.com/receta-de-mofongo-dominicano/
-license: MIT
-description: El Mofongo es una de las preparaciones de plátano más icónicas del Caribe. Consiste en rodajas de plátano verde fritas que luego se machacan de forma enérgica dentro de un pilón de madera junto con abundante ajo fresco, sal, aceite de oliva y trozos crujientes de chicharrón de cerdo, sirviéndose con una taza de caldo de res caliente.
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Mofongo dominicano servido en su pilón de madera tradicional (Unsplash)
+description: >-
+  El Mofongo es una de las preparaciones de plátano más icónicas del Caribe.
+  Consiste en rodajas de plátano verde fritas que luego se machacan de forma
+  enérgica dentro de un pilón de madera junto con abundante ajo fresco, sal,
+  aceite de oliva y trozos crujientes de chicharrón de cerdo, sirviéndose con
+  una taza de caldo de res caliente.
 ---
 
 # Mofongo Dominicano Tradicional

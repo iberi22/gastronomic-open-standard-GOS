@@ -2,6 +2,7 @@
 title: "Suero CosteñO"
 region: "Colombia"
 categories: ["Suero_costeñO"]
+difficulty: "★★☆☆☆"
 ---
 
 # Suero Costeño
@@ -44,7 +45,7 @@ El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana
 
 ## 📸 Galería
 
-
+![Suero costeño cremoso](./images/1.png)
 
 ---
 

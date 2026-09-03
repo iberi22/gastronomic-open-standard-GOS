@@ -1,49 +1,11 @@
 ---
-title: Arequipe
-images:
-- url: https://im.ge/i/arequipe-1.AbC444
-  description: Arequipe casero espeso
-sources:
-- name: My Colombian Recipes
-  url: https://www.mycolombianrecipes.com/es/arequipe-dulce-de-leche-colombiano/
-- name: Recetas Gratis
-  url: https://www.recetasgratis.net/receta-de-arequipe-casero-colombiano-23754.html
-license: MIT
-yaml_validation: https://yaml-online-parser.appspot.com/
-categories:
-- Postre
-- Dulce
-- Tradicional
-sensory:
-  flavor:
-  - Caramelo
-  - Lácteo
-  texture:
-  - Untable
-  - Espejo
-  aroma:
-  - Leche asada
-  presentation: En frasco de vidrio o servido con obleas, queso o brevas.
-main_ingredients:
-- Leche entera
-- Azúcar
-- Bicarbonato
-difficulty: Media
-prep_time: 10 minutos
-cook_time: 180 minutos
-servings: 20
-nutrition:
-  calories: 300
-  macros:
-    protein_g: 6
-    fat_g: 6
-    carbs_g: 58
-tags:
-- Dulce
-- Valle
-- Antioquia
-description: '* 4 litros de leche entera'
-region: Nacional
+title: "Arequipe"
+region: "Colombia"
+categories: ["Arequipe"]
+difficulty: "★★★☆☆"
+prep_time: "10 minutos"
+cook_time: "180 minutos"
+servings: "20"
 ---
 
 ## Ingredientes

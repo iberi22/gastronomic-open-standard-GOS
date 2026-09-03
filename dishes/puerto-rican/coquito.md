@@ -1,57 +1,67 @@
 ---
 title: Coquito Puertorriqueño Tradicional
 region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/coquito.html'
+  date_retrieved: '2026-09-03'
 categories:
-- Bebida
-- Dulce
-- Tradicional
-sensory:
-  flavor:
-  - Extremadamente dulce
-  - Lácteo cremoso (coco)
-  - Alcohólico (ron)
-  - Especiado (canela y nuez moscada)
-  texture:
-  - Líquido espeso (consistencia cremosa)
-  - Sedoso
-  aroma:
-  - Coco dulce caliente
-  - Ron puertorriqueño
-  - Canela y vainilla
-  presentation: Servido muy frío en vasitos pequeños de chupito o copas cortas, espolvoreado con canela molida por encima y decorado con una ramita de canela entera dentro del vaso.
-main_ingredients:
-- Leche de coco (coconut milk)
-- Crema de coco (sweetened coconut cream)
-- Leche evaporada
-- Leche condensada
-- Ron blanco puertorriqueño
-- Canela molida y en rama
-- Esencia de vainilla
+  - Bebida
+  - Dulce
+  - Tradicional
 difficulty: ★☆☆☆☆
 prep_time: 10 minutos
 cook_time: 0 minutos
 servings: 12
+tags:
+  - Bebida
+  - Cóctel
+  - Coco
+  - Navidad
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Leche de coco (coconut milk)
+  - Crema de coco (sweetened coconut cream)
+  - Leche evaporada
+  - Leche condensada
+  - Ron blanco puertorriqueño
+  - Canela molida y en rama
+  - Esencia de vainilla
+sensory:
+  flavor:
+    - Extremadamente dulce
+    - Lácteo cremoso (coco)
+    - Alcohólico (ron)
+    - Especiado (canela y nuez moscada)
+  texture:
+    - Líquido espeso (consistencia cremosa)
+    - Sedoso
+  aroma:
+    - Coco dulce caliente
+    - Ron puertorriqueño
+    - Canela y vainilla
+  presentation: >-
+    Servido muy frío en vasitos pequeños de chupito o copas cortas, espolvoreado
+    con canela molida por encima y decorado con una ramita de canela entera
+    dentro del vaso.
 nutrition:
   calories: 290
   macros:
     protein_g: 4.5
-    fat_g: 11.0
-    carbs_g: 34.0
-tags:
-- Bebida
-- Cóctel
-- Coco
-- Navidad
-- Puerto Rico
-- Tradicional
+    fat_g: 11
+    carbs_g: 34
 images:
-- url: https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd
-  description: Botellas de cristal con Coquito boricua navideño frío (Unsplash)
-sources:
-- https://www.elboricua.com/coquito.html
-- https://www.quericavida.com/recetas/coquito-puertorriqueno/
-license: MIT
-description: El Coquito es la bebida o ponche navideño más famoso e indispensable de Puerto Rico. Consiste en una cremosa, densa y dulce mezcla de crema de coco, leche de coco, leche condensada y leche evaporada batida con abundante ron blanco puertorriqueño de buena calidad, saborizada de forma espectacular con canela, nuez moscada y vainilla, sirviéndose sumamente frío.
+  - url: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd'
+    description: Botellas de cristal con Coquito boricua navideño frío (Unsplash)
+description: >-
+  El Coquito es la bebida o ponche navideño más famoso e indispensable de Puerto
+  Rico. Consiste en una cremosa, densa y dulce mezcla de crema de coco, leche de
+  coco, leche condensada y leche evaporada batida con abundante ron blanco
+  puertorriqueño de buena calidad, saborizada de forma espectacular con canela,
+  nuez moscada y vainilla, sirviéndose sumamente frío.
 ---
 
 # Coquito Puertorriqueño Tradicional

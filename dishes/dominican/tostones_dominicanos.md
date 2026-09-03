@@ -1,53 +1,62 @@
 ---
 title: Tostones Dominicanos con Agua de Ajo
 region: República Dominicana
+language: es
+license: MIT
+source:
+  name: cocinadominicana.com
+  url: 'https://www.cocinadominicana.com/tostones-receta/'
+  date_retrieved: '2026-09-03'
 categories:
-- Acompañamiento
-- Snack
-- Tradicional
-sensory:
-  flavor:
-  - Salado
-  - Almidonado
-  - Ajo suave
-  texture:
-  - Extremadamente crujiente (exterior)
-  - Suave (interior)
-  aroma:
-  - Plátano frito
-  - Ajo fresco
-  presentation: Servidos calientes en un plato hondo o bandeja de mimbre cubiertos de papel absorbente, acompañados de mojo de ajo dominicano para mojar de inmediato.
-main_ingredients:
-- Plátano verde (plátano macho verde)
-- Aceite vegetal para freír
-- Ajo fresco
-- Sal fina
-- Agua fría
+  - Acompañamiento
+  - Snack
+  - Tradicional
 difficulty: ★★☆☆☆
 prep_time: 10 minutos
 cook_time: 15 minutos
 servings: 4
+tags:
+  - Plátano
+  - Frito
+  - Snack
+  - Crujiente
+  - República Dominicana
+  - Tradicional
+main_ingredients:
+  - Plátano verde (plátano macho verde)
+  - Aceite vegetal para freír
+  - Ajo fresco
+  - Sal fina
+  - Agua fría
+sensory:
+  flavor:
+    - Salado
+    - Almidonado
+    - Ajo suave
+  texture:
+    - Extremadamente crujiente (exterior)
+    - Suave (interior)
+  aroma:
+    - Plátano frito
+    - Ajo fresco
+  presentation: >-
+    Servidos calientes en un plato hondo o bandeja de mimbre cubiertos de papel
+    absorbente, acompañados de mojo de ajo dominicano para mojar de inmediato.
 nutrition:
   calories: 210
   macros:
     protein_g: 1.5
-    fat_g: 11.0
-    carbs_g: 31.0
-tags:
-- Plátano
-- Frito
-- Snack
-- Crujiente
-- República Dominicana
-- Tradicional
+    fat_g: 11
+    carbs_g: 31
 images:
-- url: https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e
-  description: Tostones dominicanos crujientes y dorados (Unsplash)
-sources:
-- https://www.cocinadominicana.com/tostones-receta/
-- https://www.elfogondelulublog.com/receta-de-tostones-dominicanos/
-license: MIT
-description: Los Tostones dominicanos son el acompañamiento frito más popular de la República Dominicana. Consisten en rodajas gruesas de plátano verde que se fríen ligeramente para ablandarse, luego se aplastan y se sumergen brevemente en un baño de agua salada con ajo machacado antes de la segunda fritura rápida.
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Tostones dominicanos crujientes y dorados (Unsplash)
+description: >-
+  Los Tostones dominicanos son el acompañamiento frito más popular de la
+  República Dominicana. Consisten en rodajas gruesas de plátano verde que se
+  fríen ligeramente para ablandarse, luego se aplastan y se sumergen brevemente
+  en un baño de agua salada con ajo machacado antes de la segunda fritura
+  rápida.
 ---
 
 # Tostones Dominicanos con Agua de Ajo

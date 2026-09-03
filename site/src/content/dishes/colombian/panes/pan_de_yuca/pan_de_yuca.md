@@ -1,50 +1,11 @@
 ---
-title: "Pandeyuca (Pan de Yuca)"
-region: "Andina / Sur de Colombia"
-categories:
-  - "Amasijo"
-  - "Snack"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Queso Intenso"
-    - "Neutro de Almidón"
-    - "Salado"
-  texture:
-    - "Cáscara Crocante"
-    - "Centro Hueco/Aireado"
-    - "Chicloso al enfriar"
-  aroma:
-    - "Queso tostado"
-    - "Leche caliente"
-  presentation: "Medialunas o herraduras de color marfil pálido. Deben ser livianos, casi huecos por dentro, indicando máxima expansión."
-main_ingredients:
-  - "Almidón de Yuca (Tapioca Starch)"
-  - "Queso Campesino o Cuajada"
-  - "Mantequilla"
-  - "Huevo"
-difficulty: "Baja-Media"
+title: "Pandeyuca (Pan De Yuca)"
+region: "Colombia"
+categories: ["Pan_de_yuca"]
+difficulty: "★★☆☆☆"
 prep_time: "25"
 cook_time: "18"
-servings: 10
-nutrition:
-  calories: 190
-  macros:
-    protein_g: 5
-    fat_g: 8
-    carbs_g: 25
-tags:
-  - "Cauca"
-  - "Nariño"
-  - "Sin Gluten"
-images:
-  - url: "https://im.ge/i/pandeyuca-1.AbC777"
-    description: "Pandeyucas en forma de herradura con corteza tostada"
-sources:
-  - name: "Amasijos del Sur GOS"
-    url: "https://gos.org/amasijos/pandeyuca"
-license: "MIT"
-description: "Minimalismo puro. El Pandeyuca es una estructura de almidón y queso que desafía la gravedad. A diferencia del pandebono, no lleva maíz, lo que permite una expansión casi total, resultando en un panecillo hueco y crocante."
+servings: "10"
 ---
 
 ## Pan de Yuca

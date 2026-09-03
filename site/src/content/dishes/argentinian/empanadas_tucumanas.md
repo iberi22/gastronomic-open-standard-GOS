@@ -1,58 +1,11 @@
 ---
 title: "Empanadas Tucumanas"
-region: "Tucumán / Noroeste Argentino"
-categories:
-  - "Entrada"
-  - "Masa"
-  - "Tradicional"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami"
-    - "Especiado sutil"
-  texture:
-    - "Crujiente exterior"
-    - "Troceado tierno"
-    - "Extremadamente jugoso"
-  aroma:
-    - "Masa horneada"
-    - "Comino"
-    - "Grasa de pella"
-  presentation: "Se sirven calientes, recién horneadas, acompañadas opcionalmente de un gajo de limón fresco para rociar sobre el relleno al momento de morder."
-main_ingredients:
-  - "Matambre de vacuno (falda de res)"
-  - "Harina de trigo"
-  - "Grasa de pella (manteca de vacuno)"
-  - "Cebolla"
-  - "Cebolla de verdeo (cebollín)"
-  - "Comino molido"
-  - "Pimentón dulce"
-  - "Huevos duros"
+region: "Argentina"
+categories: ["Plato"]
 difficulty: "★★★☆☆"
 prep_time: "45 minutos"
 cook_time: "20 minutos"
-servings: 8
-nutrition:
-  calories: 360
-  macros:
-    protein_g: 14
-    fat_g: 18
-    carbs_g: 35
-tags:
-  - "Argentina"
-  - "Empanada"
-  - "Matambre"
-  - "Horno"
-  - "Tucumán"
-  - "Noroeste"
-images:
-  - url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-    description: "Empanadas tucumanas auténticas horneadas y muy jugosas"
-sources:
-  - "https://www.recetasargentinas.net/"
-  - "https://www.cocinerosargentinos.com/"
-license: "MIT"
-description: "La Empanada Tucumana es una de las joyas culinarias del norte argentino, celebrada por su relleno extremadamente jugoso de matambre de vacuno cortado a cuchillo, cocinado con grasa de pella, cebolla, comino y pimentón, y horneado a temperaturas muy altas."
+servings: "8"
 ---
 
 # Empanadas Tucumanas

@@ -1,51 +1,11 @@
 ---
-title: Juanes de Yuca
-region: Amazonía
-categories:
-- Plato festivo
-- Tamal amazónico
-- Tradicional
-sensory:
-  flavor:
-  - Suave
-  - Ligeramente herbal
-  - Umami
-  texture:
-  - Suave (masa)
-  - Jugoso (relleno)
-  aroma:
-  - Herbal (bijao, culantro)
-  - Cocido
-  presentation: Se sirve envuelto en hojas, ideal para celebraciones y reuniones familiares.
-main_ingredients:
-- Yuca
-- Carne de pollo/cerdo/pescado
-- Huevo
-- Hojas de bijao
-difficulty: ★★★☆☆
-prep_time: 45 minutos
-cook_time: 1 hora
-servings: 8
-images:
-- url: https://pixabay.com/photos/juanes-yuca-amazonian-1234567/
-  description: Juanes de yuca tradicionales amazónicos (Pixabay)
-- url: https://unsplash.com/s/photos/juanes-yuca
-  description: Variaciones de juanes de yuca en Unsplash
-sources:
-- https://elcomercio.pe/provecho/recetas/receta-de-juanes-de-yuca-y-paiche-noticia/
-- https://www.deperu.com/recetas-cocina/plato-de-fondo-o-segundo/juane-de-yuca-de-amazonas-672
-- https://www.ahorrarnuncafuetanbueno.com.pe/recetas/receta-de-juane/
-license: MIT
-description: Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía,
-  especialmente asociado a la festividad de San Juan. Consisten en una masa de yuca
-  rellena con carne (pollo, pescado o cerdo), envuelta en hojas de bijao y cocida
-  al vapor. Son símbolo de identidad y celebración en la región.
-nutrition:
-  calories: 1155
-  macros:
-    protein_g: 169.5
-    fat_g: 43.1
-    carbs_g: 13.1
+title: "Juanes De Yuca"
+region: "Colombia"
+categories: ["Juanes_de_yuca"]
+difficulty: "★★★☆☆"
+prep_time: "45 minutos"
+cook_time: "1 hora"
+servings: "8"
 ---
 
 ## Juanes de Yuca
@@ -96,7 +56,7 @@ Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía, especialm
 
 ## 📸 Galería
 
-![Juanes de yuca en hoja de bijao](/dishes/colombian/amazonia/juanes_de_yuca/images/1.webp)
+![Juanes de yuca en hoja de bijao](./images/1.png)
 
 ---
 

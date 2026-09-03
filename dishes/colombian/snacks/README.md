@@ -1,3 +1,13 @@
+---
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+---
+
 # 🍢 Snacks y Antojitos Colombianos
 
 Aquí encontrarás los antojitos más queridos de las calles, panaderías y cafeterías de Colombia. Son ideales para compartir, picar entre comidas o acompañar una bebida.

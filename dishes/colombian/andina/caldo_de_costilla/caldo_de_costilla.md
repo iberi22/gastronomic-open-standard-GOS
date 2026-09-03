@@ -1,53 +1,65 @@
 ---
-title: "Caldo de Costilla"
-region: "Andina"
+title: Caldo de Costilla
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Desayuno"
-  - "Sopa"
-  - "Restaurativo"
-sensory:
-  flavor:
-    - "Salado"
-    - "Umami (hueso)"
-    - "Herbal (cilantro)"
-  texture:
-    - "Líquido (Caldo claro)"
-    - "Suave (Papa/Carne)"
-  aroma:
-    - "Res hervida"
-    - "Cebolla larga"
-    - "Cilantro"
-  presentation: "Tazón grande y profundo. El caldo debe verse dorado y translúcido (no turbio). La costilla debe sobresalir y estar acompañada de papas enteras o en trozos grandes. Cilantro fresco esparcido encima al momento."
-main_ingredients:
-  - "Costilla de res (con hueso y grasa)"
-  - "Papa pastusa (o sabanera)"
-  - "Cebolla larga"
-  - "Ajo"
-  - "Cilantro"
-  - "Agua"
-difficulty: "Baja"
+  - Desayuno
+  - Sopa
+  - Restaurativo
+difficulty: ★☆☆☆☆
 prep_time: 15
 cook_time: 60
 servings: 6
+tags:
+  - Levantamuertos
+  - Cundiboyacense
+  - Desayuno
+main_ingredients:
+  - Costilla de res (con hueso y grasa)
+  - Papa pastusa (o sabanera)
+  - Cebolla larga
+  - Ajo
+  - Cilantro
+  - Agua
+sensory:
+  flavor:
+    - Salado
+    - Umami (hueso)
+    - Herbal (cilantro)
+  texture:
+    - Líquido (Caldo claro)
+    - Suave (Papa/Carne)
+  aroma:
+    - Res hervida
+    - Cebolla larga
+    - Cilantro
+  presentation: >-
+    Tazón grande y profundo. El caldo debe verse dorado y translúcido (no
+    turbio). La costilla debe sobresalir y estar acompañada de papas enteras o
+    en trozos grandes. Cilantro fresco esparcido encima al momento.
 nutrition:
   calories: 350
   macros:
     protein_g: 22
     fat_g: 18
     carbs_g: 25
-tags:
-  - "Levantamuertos"
-  - "Cundiboyacense"
-  - "Desayuno"
 images:
-  - url: "https://im.ge/i/caldo-1.AbC456"
-    description: "Caldo de costilla 'levanta muertos' con cilantro fresco"
-sources:
-  - name: "Tradición Oral Andina"
-    url: "https://gos.org/tradition/caldo"
-license: "MIT"
-description: "El desayuno reconstituyente por excelencia de la región andina (Bogotá, Cundinamarca, Boyacá). Conocido como 'Levantamuertos' por su capacidad para reponer electrolitos y energía tras una noche de fiesta (o simplemente para el frío). Su ciencia radica en la extracción de sabor del hueso de costilla."
----## Caldo de Costilla
+  - url: 'https://im.ge/i/caldo-1.AbC456'
+    description: Caldo de costilla 'levanta muertos' con cilantro fresco
+description: >-
+  El desayuno reconstituyente por excelencia de la región andina (Bogotá,
+  Cundinamarca, Boyacá). Conocido como 'Levantamuertos' por su capacidad para
+  reponer electrolitos y energía tras una noche de fiesta (o simplemente para el
+  frío). Su ciencia radica en la extracción de sabor del hueso de costilla.
+---
+
+## Caldo de Costilla
 
 El Caldo de Costilla es un desayuno típico de la región andina colombiana, especialmente en Bogotá y los pueblos de Cundinamarca y Boyacá. Es una sopa reconfortante hecha con costilla de res, papa, cebolla y cilantro, famosa como remedio para el “guayabo” (resaca) y para comenzar el día con energía.
 

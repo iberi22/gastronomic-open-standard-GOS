@@ -1,50 +1,59 @@
 ---
-title: "Mojojoy (Larva de Palma)"
-region: "Amazonía"
+title: Mojojoy (Larva de Palma)
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
 categories:
-  - "Entrada"
-  - "Ancestral"
-  - "Entomofagia"
+  - Entrada
+  - Ancestral
+  - Entomofagia
+difficulty: ★☆☆☆☆
+prep_time: '15'
+cook_time: '10'
+servings: 4
+tags:
+  - Tikuna
+  - Proteína Alternativa
+  - Sostenible
+main_ingredients:
+  - Larva de Mojojoy (*Rhynchophorus palmarum*)
+  - Sal de Selva
+  - Limón Criollo
 sensory:
   flavor:
-    - "Graso-Manteca"
-    - "Dulzura Forestal"
-    - "Umami Animal"
+    - Graso-Manteca
+    - Dulzura Forestal
+    - Umami Animal
   texture:
-    - "Crujiente (Quitina)"
-    - "Cremoso / Líquido"
-    - "Untuosa"
+    - Crujiente (Quitina)
+    - Cremoso / Líquido
+    - Untuosa
   aroma:
-    - "Madera Mojada"
-    - "Coco Tostado"
-    - "Fritura animal"
-  presentation: "Se sirve ensartado en brochetas rústicas o sobre un lecho de fariña. La larva debe estar dorada uniformemente, sin romperse, manteniendo su forma cilíndrica."
-main_ingredients:
-  - "Larva de Mojojoy (*Rhynchophorus palmarum*)"
-  - "Sal de Selva"
-  - "Limón Criollo"
-difficulty: "Baja (Cuidado con el punto de calor)"
-prep_time: "15"
-cook_time: "10"
-servings: 4
+    - Madera Mojada
+    - Coco Tostado
+    - Fritura animal
+  presentation: >-
+    Se sirve ensartado en brochetas rústicas o sobre un lecho de fariña. La
+    larva debe estar dorada uniformemente, sin romperse, manteniendo su forma
+    cilíndrica.
 nutrition:
   calories: 180
   macros:
     protein_g: 14
     fat_g: 12
     carbs_g: 2
-tags:
-  - "Tikuna"
-  - "Proteína Alternativa"
-  - "Sostenible"
 images:
-  - url: "https://im.ge/i/mojojoy-1.AbC890"
-    description: "Mojojoy asado a la perfección"
-sources:
-  - name: "Entomofagia Amazónica GOS"
-    url: "https://gos.org/amazonia/mojojoy"
-license: "MIT"
-description: "La 'Mantequilla de la Selva'. El Mojojoy es una larva de escarabajo que se alimenta de la médula de las palmas (*Mauritia flexuosa*), lo que le confiere un perfil lipídico único y un sabor que recuerda a los frutos secos y el coco."
+  - url: 'https://im.ge/i/mojojoy-1.AbC890'
+    description: Mojojoy asado a la perfección
+description: >-
+  La 'Mantequilla de la Selva'. El Mojojoy es una larva de escarabajo que se
+  alimenta de la médula de las palmas (*Mauritia flexuosa*), lo que le confiere
+  un perfil lipídico único y un sabor que recuerda a los frutos secos y el coco.
 ---
 
 ## Mojojoy

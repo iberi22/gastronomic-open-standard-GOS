@@ -1,55 +1,58 @@
 ---
 title: Patarasca (Pescado en Hojas)
 region: Amazonía
+language: es
+license: MIT
+source:
+  name: contarproteinas.com
+  url: >-
+    https://www.contarproteinas.com/recetas_resultado/ver/Patarasca-amazonica-26326
+  date_retrieved: '2026-09-03'
 categories:
-- Plato fuerte
-- Asado ancestral
-- Tradicional
-sensory:
-  flavor:
-  - Umami
-  - Herbal
-  - Ahumado
-  texture:
-  - Jugoso (pescado)
-  - Suave (relleno)
-  aroma:
-  - Herbal (hojas, cilantro)
-  - Ahumado
-  - Fresco
-  presentation: Se sirve envuelto en hojas, ideal para compartir en reuniones familiares
-    o festividades amazónicas.
-main_ingredients:
-- Pescado de río
-- Hojas de bijao/plátano
-- Cilantro
-- Ajo
-- Limón
+  - Plato fuerte
+  - Asado ancestral
+  - Tradicional
 difficulty: ★★★☆☆
 prep_time: 30 minutos
 cook_time: 40 minutos
 servings: 4
-images:
-- url: https://pixabay.com/photos/patarasca-amazonian-fish-1234567/
-  description: Patarasca tradicional amazónica (Pixabay)
-- url: https://unsplash.com/s/photos/patarasca
-  description: Variaciones de patarasca amazónica en Unsplash
-sources:
-- https://www.contarproteinas.com/recetas_resultado/ver/Patarasca-amazonica-26326
-- https://www.comida-peruana.com/recetas/plato-principal/patarashca
-- https://www.tripadvisor.com/
-- https://www.gastronomiacolombiana.com/foro/patarasca
-license: MIT
-description: La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana
-  y peruana. Consiste en pescado fresco, típicamente de río, marinado y envuelto en
-  hojas de bijao o plátano, luego asado u horneado. Es un platillo ancestral, lleno
-  de aromas selváticos y apreciado por su jugosidad y sabo...
+main_ingredients:
+  - Pescado de río
+  - Hojas de bijao/plátano
+  - Cilantro
+  - Ajo
+  - Limón
+sensory:
+  flavor:
+    - Umami
+    - Herbal
+    - Ahumado
+  texture:
+    - Jugoso (pescado)
+    - Suave (relleno)
+  aroma:
+    - 'Herbal (hojas, cilantro)'
+    - Ahumado
+    - Fresco
+  presentation: >-
+    Se sirve envuelto en hojas, ideal para compartir en reuniones familiares o
+    festividades amazónicas.
 nutrition:
   calories: 195
   macros:
     protein_g: 2.3
     fat_g: 14.4
-    carbs_g: 18.0
+    carbs_g: 18
+images:
+  - url: 'https://pixabay.com/photos/patarasca-amazonian-fish-1234567/'
+    description: Patarasca tradicional amazónica (Pixabay)
+  - url: 'https://unsplash.com/s/photos/patarasca'
+    description: Variaciones de patarasca amazónica en Unsplash
+description: >-
+  La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana y
+  peruana. Consiste en pescado fresco, típicamente de río, marinado y envuelto
+  en hojas de bijao o plátano, luego asado u horneado. Es un platillo ancestral,
+  lleno de aromas selváticos y apreciado por su jugosidad y sabo...
 ---
 
 ## Patarasca (Pescado en Hojas)

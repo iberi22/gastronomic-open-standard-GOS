@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Bebidas"]
+difficulty: "★★☆☆☆"
+---
+
 # 🥤 Bebidas Populares de Colombia
 
 Selección de bebidas frías y calientes que acompañan la mesa colombiana, desde jugos y refrescos hasta cafés y bebidas tradicionales.

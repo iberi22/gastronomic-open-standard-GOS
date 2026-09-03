@@ -1,3 +1,10 @@
+---
+title: "README"
+region: "Colombia"
+categories: ["Orinoquia"]
+difficulty: "★★☆☆☆"
+---
+
 # Recetas Emblemáticas de la Región Orinoquía de Colombia
 
 Este directorio reúne las 10 recetas más representativas de la Orinoquía colombiana, enriquecidas con metodología científica, sensorial y colectiva, siguiendo el estándar del proyecto de cocina latinoamericana.
