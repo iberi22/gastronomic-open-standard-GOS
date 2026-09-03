@@ -1,0 +1,33 @@
+---
+// site/src/components/OfflineBanner.astro — visible when navigator.onLine === false
+---
+
+<div id="offline-banner" class="offline-banner" hidden role="status" aria-live="polite">
+  <span>📴 Modo offline — datos guardados localmente en este dispositivo</span>
+</div>
+
+<script>
+  function updateOnlineStatus() {
+    const banner = document.getElementById('offline-banner');
+    if (banner) banner.hidden = navigator.onLine;
+  }
+  window.addEventListener('online', updateOnlineStatus);
+  window.addEventListener('offline', updateOnlineStatus);
+  // Initial state
+  updateOnlineStatus();
+</script>
+
+<style>
+  .offline-banner {
+    background: var(--swal-accent, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+</style>

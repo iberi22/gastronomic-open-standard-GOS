@@ -74,6 +74,29 @@ const memory = new MemoryAdapter();
 // Por ahora template usa memory para build verde; en browser se puede swap a indexedDB adapter sin cambiar API.
 let adapter: StorageAdapter = memory;
 
+// Auto-detect: if running in a browser context with IndexedDB, switch to IndexedDB adapter.
+// Lazy-loaded to avoid bundling browser-only code into SSR builds.
+async function autoDetectAdapter(): Promise<StorageAdapter> {
+  if (typeof indexedDB === 'undefined') return memory;
+  try {
+    const { IndexedDBStorageAdapter, isIndexedDBAvailable } = await import('./indexeddb');
+    if (isIndexedDBAvailable()) {
+      console.log('[domain] Auto-selected IndexedDBStorageAdapter');
+      return new IndexedDBStorageAdapter();
+    }
+  } catch (err) {
+    console.warn('[domain] IndexedDB unavailable, using memory:', err);
+  }
+  return memory;
+}
+
+// Auto-trigger detection on module load (browser-side only)
+if (typeof window !== 'undefined') {
+  autoDetectAdapter().then((a) => {
+    adapter = a;
+  });
+}
+
 export function setStorageAdapter(a: StorageAdapter) {
   adapter = a;
 }
