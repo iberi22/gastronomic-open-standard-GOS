@@ -62,6 +62,7 @@ First stable release of GOS. Reached feature completeness for v1.0.0 targets.
 ### Fixed
 
 - Recipe drift: 102 recipes existed in `dishes/` but were not in `site/src/content/dishes/`
+- 20 recipe .md files had broken `./images/1.png` local references that blocked `astro build` (ImageNotFound error) — removed all local image references pointing to non-existent files
 - Vitamin/condition/diet content: all grew from 1 entry to full seed sets
 - CI: `pnpm install` now works from repo root with `pnpm --filter gos-site`
 
