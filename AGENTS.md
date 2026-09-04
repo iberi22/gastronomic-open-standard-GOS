@@ -171,3 +171,11 @@ Following improved practices, created:
 ## SDD One-Page + SRS Mapping
 > Spec efimero `.gitcore/sdd/specs/###-feat/onepage.md` referencia `REQ-xxx` durable de `docs/SRS/REQUIREMENTS.md` (IEEE 830 reduced). Drift detector `srs-src-drift-detector` mantiene traceabilidad. Docs humanos estables en `docs/`, specs AI en `.gitcore/sdd/` aislado.
 <!-- SWAL-SDD-END -->
+
+<!-- SWAL-TAG-PROTOCOL-START -->
+## Release Tag Protocol
+**NUNCA** crear tag sin completar el checklist de `~/.hermes/skills/swal-tag-protocol/SKILL.md`.
+- Pre-tag: working tree clean + score<7d ≥80% B gaps:[] + features HOY + CI verde + tests corridos + srs drift + CHANGELOG al día
+- Evidence bundle OBLIGATORIO en `.gitcore/releases/<tag>-evidence.md` ANTES de taggear
+- Incident 2026-09-04: tag v1.0.0 retirado por 8 gaps (ver `.gitcore/releases/v1.0.0-RETIRED.md`)
+<!-- SWAL-TAG-PROTOCOL-END -->

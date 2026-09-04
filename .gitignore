@@ -30,3 +30,7 @@ playwright-report/
 playwright/.cache/
 
 dishes_backup/
+
+# Astro + Husky leftovers (2026-09-04)
+.astro/
+.husky/*.orig
