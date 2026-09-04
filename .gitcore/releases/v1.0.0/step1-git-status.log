@@ -1,0 +1,5 @@
+$ git status --porcelain
+exit_code: 0
+output: '?? .gitcore/releases/v1.0.0/step1-git-status.log\n?? .gitcore/releases/v1.0.0/step4-ci-status.log\n'
+
+Verdict: DIRTY
