@@ -13,7 +13,7 @@ Final stable release of GOS. Promoted from `v1.0.0-rc.1` after re-running the co
 
 ### Changed (since v1.0.0-rc.1)
 - `site/playwright.config.ts` — webServer command now uses `DEPLOY_TARGET=github-pages` (matches CI environment; provided by Jules in PR #231, cherry-picked manually).
-- PR #229 (dependabot `@astrojs/cloudflare` 14.2.5 → 14.2.6): merged.
+- PR #229 (dependabot `@astrojs/cloudflare` 14.2.5 → 14.2.6): merged in commit `79c0ed2c` AFTER the v1.0.0 tag (`cff4db41`). Post-tag verification: astro-check 0/0/79, gos-audit 480/0, gos-audit schema compliant. **The v1.0.0 tag points to `cff4db41` (pre-PR-229); the cloudflare 14.2.6 bump is post-tag and will roll into v1.0.1 or later.**
 
 ### Closed (post-rc.1)
 - PR #231 (Jules re-release v1.0.0): closed because the work was already merged to main directly. Jules' evidence bundle archived in branch `release-v1.0.0-swal-tag-protocol-10892572875000321754`.
