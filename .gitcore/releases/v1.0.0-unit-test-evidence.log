@@ -1,0 +1,124 @@
+$ pnpm --filter gos-site test
+$ vitest run
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.11 [39m[90m/app/site[39m
+
+ [32m✓[39m src/lib/indexeddb.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 28[2mms[22m[39m
+[90mstderr[2m | src/lib/llmBilling.test.ts[2m > [22m[2mllm billing gate[2m > [22m[2mpermite con socio y va via local si no hay CF
+[22m[39m[billing] cfAiInfer fallback a llm local TypeError: Failed to parse URL from /api/ai/infer
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at cfAiInfer [90m(/app/site/[39msrc/lib/billing.ts:90:17[90m)[39m
+    at llmComplete [90m(/app/site/[39msrc/lib/llm.ts:32:18[90m)[39m
+    at [90m/app/site/[39msrc/lib/llmBilling.test.ts:12:17
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: TypeError: Invalid URL
+  [90m    at new URL (node:internal/url:818:25)[39m
+      at new URL (file:///app/node_modules/[4m.pnpm[24m/vitest@4.1.11_@types+node@26.4.0_jsdom@30.0.1_vite@8.2.2_@types+node@26.4.0_esbuild@0.28.2_terser@5.51.2_yaml@2.9.0_/node_modules/[4mvitest[24m/dist/chunks/index.DC7d2Pf8.js:557:2)
+  [90m    at new Request (node:internal/deps/undici/undici:9776:25)[39m
+  [90m    at fetch (node:internal/deps/undici/undici:10505:25)[39m
+  [90m    at fetch (node:internal/deps/undici/undici:14900:10)[39m
+  [90m    at fetch (node:internal/bootstrap/web/exposed-window-or-worker:75:12)[39m
+      at cfAiInfer [90m(/app/site/[39msrc/lib/billing.ts:90:23[90m)[39m
+      at llmComplete [90m(/app/site/[39msrc/lib/llm.ts:32:24[90m)[39m
+  [90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+      at [90m/app/site/[39msrc/lib/llmBilling.test.ts:12:17 {
+    code: [32m'ERR_INVALID_URL'[39m,
+    input: [32m'/api/ai/infer'[39m
+  }
+}
+
+[90mstdout[2m | src/lib/llmBilling.test.ts[2m > [22m[2mllm billing gate[2m > [22m[2mpermite con socio y va via local si no hay CF
+[22m[39m[llm] complete { model: [32m'auto'[39m, via: [32m'local'[39m, prompt: [32m'test socio'[39m }
+
+ [32m✓[39m src/lib/llmBilling.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+[90mstderr[2m | src/lib/agentDomain.test.ts[2m > [22m[2magentDomain 100% agentico[2m > [22m[2magentCreate crea fila + memoria + mesh
+[22m[39m[xavier] add queued offline TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at xavierAdd [90m(/app/site/[39msrc/lib/xavier.ts:34:17[90m)[39m
+    at agentCreate [90m(/app/site/[39msrc/lib/agentDomain.ts:30:9[90m)[39m
+    at [90m/app/site/[39msrc/lib/agentDomain.test.ts:9:22
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: AggregateError:
+  [90m    at internalConnectMultiple (node:net:1134:18)[39m
+  [90m    at afterConnectMultiple (node:net:1715:7)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+
+[90mstderr[2m | src/lib/agentDomain.test.ts[2m > [22m[2magentDomain 100% agentico[2m > [22m[2magentSearch combina memoria + records
+[22m[39m[xavier] add queued offline TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at xavierAdd [90m(/app/site/[39msrc/lib/xavier.ts:34:17[90m)[39m
+    at agentCreate [90m(/app/site/[39msrc/lib/agentDomain.ts:30:9[90m)[39m
+    at [90m/app/site/[39msrc/lib/agentDomain.test.ts:21:5
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: AggregateError:
+  [90m    at internalConnectMultiple (node:net:1134:18)[39m
+  [90m    at afterConnectMultiple (node:net:1715:7)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+
+[90mstderr[2m | src/lib/agentDomain.test.ts[2m > [22m[2magentDomain 100% agentico[2m > [22m[2magentSearch combina memoria + records
+[22m[39m[xavier] search offline fallback TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at xavierSearch [90m(/app/site/[39msrc/lib/xavier.ts:18:17[90m)[39m
+    at agentSearch [90m(/app/site/[39msrc/lib/agentDomain.ts:73:15[90m)[39m
+    at [90m/app/site/[39msrc/lib/agentDomain.test.ts:22:17
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: AggregateError:
+  [90m    at internalConnectMultiple (node:net:1134:18)[39m
+  [90m    at afterConnectMultiple (node:net:1715:7)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+
+[90mstderr[2m | src/lib/agentDomain.test.ts[2m > [22m[2magentDomain 100% agentico[2m > [22m[2magentDelete borra y genera memoria delete
+[22m[39m[xavier] add queued offline TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at xavierAdd [90m(/app/site/[39msrc/lib/xavier.ts:34:17[90m)[39m
+    at agentCreate [90m(/app/site/[39msrc/lib/agentDomain.ts:30:9[90m)[39m
+    at [90m/app/site/[39msrc/lib/agentDomain.test.ts:29:22
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: AggregateError:
+  [90m    at internalConnectMultiple (node:net:1134:18)[39m
+  [90m    at afterConnectMultiple (node:net:1715:7)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+
+[90mstderr[2m | src/lib/agentDomain.test.ts[2m > [22m[2magentDomain 100% agentico[2m > [22m[2magentDelete borra y genera memoria delete
+[22m[39m[xavier] add queued offline TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:14902:13[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at xavierAdd [90m(/app/site/[39msrc/lib/xavier.ts:34:17[90m)[39m
+    at agentDelete [90m(/app/site/[39msrc/lib/agentDomain.ts:62:11[90m)[39m
+    at [90m/app/site/[39msrc/lib/agentDomain.test.ts:30:12
+    at file:///app/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20 {
+  [cause]: AggregateError:
+  [90m    at internalConnectMultiple (node:net:1134:18)[39m
+  [90m    at afterConnectMultiple (node:net:1715:7)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+
+ [32m✓[39m src/lib/agentDomain.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 209[2mms[22m[39m
+ [32m✓[39m src/lib/worker.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 24[2mms[22m[39m
+ [32m✓[39m src/lib/domain.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/lib/aui.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/lib/billing.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m7 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[32m34 passed[39m[22m[90m (34)[39m
+[2m   Start at [22m 17:15:35
+[2m   Duration [22m 5.25s[2m (transform 548ms, setup 0ms, import 819ms, tests 306ms, environment 9.43s)[22m

@@ -19,11 +19,17 @@ _Not yet released. All wave-13 items pending merge to main._
 
 ---
 
-## [1.0.0] — 2026-09-03
+## [1.0.0] — 2026-09-04
 
-First stable release of GOS. Reached feature completeness for v1.0.0 targets.
+Re-release of `v1.0.0` following post-incident audit and complete execution of `swal-tag-protocol` checklist.
 
 ### Added
+
+- **Release Evidence Bundle:** Created `.gitcore/releases/v1.0.0-evidence.md` documenting resolution of all 8 retirement gaps.
+- **Captured Test Evidence:** Added test execution logs in `.gitcore/releases/`:
+  - `v1.0.0-unit-test-evidence.log` (34/34 vitest unit tests passed)
+  - `v1.0.0-e2e-test-evidence.log` (5/5 Playwright E2E tests passed)
+  - `v1.0.0-astro-check-evidence.log` (0 errors, 0 warnings across 79 Astro files)
 
 **Content & Data**
 - Recipe sync pipeline: 113 new recipes from `dishes/` to `site/src/content/dishes/`
@@ -46,7 +52,11 @@ First stable release of GOS. Reached feature completeness for v1.0.0 targets.
 - `site/src/components/OfflineBanner.astro` — offline status banner
 - `site/src/lib/indexeddb.test.ts` — 4 unit tests for IndexedDB adapter
 
-**Infrastructure**
+**Infrastructure & Protocol**
+- Protocol Score: Regenerated `.gitcore/implementation-score.json` (Overall 100.0%, Grade A, Gaps `[]`).
+- Feature Matrix: Re-verified `.gitcore/features.json` on 2026-09-04 (`last_verified: 2026-09-04`).
+- Playwright E2E configuration: updated `site/playwright.config.ts` preview command with `DEPLOY_TARGET=github-pages` and `/usr/bin/google-chrome` path.
+- Root test scripts: added `"test"` and `"test:e2e"` wrappers to root `package.json`.
 - `astro-check` job in CI pipeline: runs `pnpm --filter gos-site exec astro check`
 - `vitest` job in CI pipeline: runs `pnpm --filter gos-site test`
 - Both jobs block merge on failure (no `continue-on-error: true`)

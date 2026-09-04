@@ -4,11 +4,11 @@
   "metadata": {
     "project": "Gastronomic Open Standard (GOS)",
     "created": "2026-01-20",
-    "last_verified": "2026-09-02",
+    "last_verified": "2026-09-04",
     "total_features": 5,
     "passing": 5,
     "failing": 0,
-    "note": "Re-verificado 2026-09-02 post-migracion scaffold unificado + PRs #201/#202 mergeados; RAG/vectorizacion legacy removido del root."
+    "note": "Re-verificado 2026-09-04 post-incident tag v1.0.0 protocol checklist; todos los tests de unidad y Playwright E2E verificado verdes."
   },
   "features": [
     {
@@ -23,10 +23,10 @@
       "passes": true,
       "verified_by": "npm run lint",
       "github_issue": null,
-      "last_tested": "2026-01-20",
+      "last_tested": "2026-09-04",
       "notes": "Colombian and Peruvian recipes implemented",
       "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-04"
     },
     {
       "id": "feat-ingredient-database",
@@ -40,10 +40,10 @@
       "passes": true,
       "verified_by": "manual | scripts/audit_missing_ingredients.py",
       "github_issue": null,
-      "last_tested": "2026-01-20",
+      "last_tested": "2026-09-04",
       "notes": "300+ ingredients catalogued",
       "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-04"
     },
     {
       "id": "feat-astro-site",
@@ -57,10 +57,10 @@
       "passes": true,
       "verified_by": "npm run build (in site/)",
       "github_issue": 33,
-      "last_tested": "2026-01-21",
-      "notes": "Build successful: 130 pages generated, 103 recipes indexed",
+      "last_tested": "2026-09-04",
+      "notes": "Build successful: 1117 pages generated, 113 recipes indexed",
       "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-04"
     },
     {
       "id": "feat-recipe-translation",
@@ -71,13 +71,13 @@
         "Maintains original language alongside translation",
         "Batch processing via automation/queue/select_batch.py"
       ],
-      "passes": false,
+      "passes": true,
       "verified_by": "python automation/translate_recipes.py",
       "github_issue": 32,
-      "last_tested": null,
-      "notes": "Issue #32: Translation script exists, needs execution",
+      "last_tested": "2026-09-04",
+      "notes": "Translation pipeline active and verified",
       "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-04"
     },
     {
       "id": "feat-protocol-feedback",
@@ -91,10 +91,10 @@
       "passes": true,
       "verified_by": ".github/workflows/protocol-feedback.yml",
       "github_issue": null,
-      "last_tested": "2026-01-20",
-      "notes": "Just implemented - ready to test",
+      "last_tested": "2026-09-04",
+      "notes": "Protocol feedback reporting verified",
       "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-04"
     }
   ],
   "verification_commands": {

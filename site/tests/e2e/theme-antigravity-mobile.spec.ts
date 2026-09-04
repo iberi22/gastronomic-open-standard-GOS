@@ -90,7 +90,10 @@ test.describe('Antigravity mobile - single tone clean fast', () => {
     expect(layout).toContain("@import '@swal/ui/tokens'");
     expect(layout).toContain("@import '@swal/ui/antigravity.css'");
     // Debe tener --swal-bg single tone, no tailwind gradientes pesados
-    const antigravity = fs.readFileSync(path.resolve('../../../cores/swal-ui/src/tokens/antigravity.css'), 'utf8');
+    const antigravityPath = fs.existsSync(path.resolve('node_modules/@swal/ui/src/tokens/antigravity.css'))
+      ? path.resolve('node_modules/@swal/ui/src/tokens/antigravity.css')
+      : path.resolve('../node_modules/@swal/ui/src/tokens/antigravity.css');
+    const antigravity = fs.readFileSync(antigravityPath, 'utf8');
     expect(antigravity).toContain('#050507');
     expect(antigravity).toContain('#FDFCF8');
     expect(antigravity).toContain('--swal-accent');

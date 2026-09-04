@@ -10,12 +10,12 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:4321',
     launchOptions: {
-      executablePath: '/run/current-system/sw/bin/chromium',
+      executablePath: process.env.CHROMIUM_PATH || '/usr/bin/google-chrome',
       args: ['--no-sandbox', '--allow-loopback-in-peer-connection'],
     },
   },
   webServer: {
-    command: 'pnpm exec astro preview --host 0.0.0.0 --port 4321',
+    command: 'DEPLOY_TARGET=github-pages pnpm exec astro preview --host 0.0.0.0 --port 4321',
     url: 'http://localhost:4321/gastronomic-open-standard-GOS/',
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,

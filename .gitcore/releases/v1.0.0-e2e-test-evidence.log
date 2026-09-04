@@ -1,0 +1,12 @@
+$ pnpm --filter gos-site test:e2e
+$ playwright test
+
+Running 5 tests using 1 worker
+
+  ✓  1 [mobile-antigravity] › tests/e2e/theme-antigravity-mobile.spec.ts:16:5 › Antigravity mobile - single tone clean fast › mobile iPhone 14 renders single tone without heavy borders (2.0s)
+  ✓  2 [mobile-antigravity] › tests/e2e/theme-antigravity-mobile.spec.ts:16:5 › Antigravity mobile - single tone clean fast › mobile Pixel 7 renders single tone without heavy borders (1.3s)
+  ✓  3 [mobile-antigravity] › tests/e2e/theme-antigravity-mobile.spec.ts:16:5 › Antigravity mobile - single tone clean fast › mobile iPad Mini renders single tone without heavy borders (1.4s)
+  ✓  4 [mobile-antigravity] › tests/e2e/theme-antigravity-mobile.spec.ts:87:3 › Antigravity mobile - single tone clean fast › tokens antigravity validan single tone (6ms)
+  ✓  5 [mobile-antigravity] › tests/e2e/theme-antigravity-mobile.spec.ts:102:3 › Antigravity mobile - single tone clean fast › grafos interconectados validan edges entre todos los tipos (51ms)
+
+  5 passed (9.7s)

@@ -19,6 +19,7 @@ __pycache__/
 
 # Prune hygiene (2026-08-24)
 *.log
+!.gitcore/releases/*.log
 bin/
 *.exe
 archive/site-cleanup/

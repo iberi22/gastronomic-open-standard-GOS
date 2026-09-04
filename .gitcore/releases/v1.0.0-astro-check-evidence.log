@@ -1,0 +1,357 @@
+17:15:56 [WARN] [vite] warning: `optimizeDeps.esbuildOptions` option was specified by "vite-plugin-svelte" plugin. This option is deprecated, please use `optimizeDeps.rolldownOptions` instead.
+17:15:56 [WARN] [vite] You or a plugin you are using have set `optimizeDeps.esbuildOptions` but this option is now deprecated. Vite now uses Rolldown to optimize the dependencies. Please use `optimizeDeps.rolldownOptions` instead.
+17:15:57 [content] Syncing content
+17:15:57 [content] Astro config changed
+17:15:57 [content] Clearing content store
+17:15:59 [content] Synced content
+17:15:59 [types] Generated 3.70s
+17:15:59 [check] Getting diagnostics for Astro files in /app/site...
+[96mplaywright.config.ts[0m:[93m1[0m:[93m24[0m - [93mwarning[0m[90m ts(6133): [0m'devices' is declared but its value is never read.
+
+[7m1[0m import { defineConfig, devices } from '@playwright/test';
+[7m [0m [93m                       ~~~~~~~[0m
+
+[96mscripts/audit-deps.mjs[0m:[93m50[0m:[93m19[0m - [93mwarning[0m[90m ts(6133): [0m'version' is declared but its value is never read.
+
+[7m50[0m for (const [name, version] of Object.entries(pkg.devDependencies)) {
+[7m  [0m [93m                  ~~~~~~~[0m
+
+[96mscripts/debug-lfs.js[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'path' is declared but its value is never read.
+
+[7m2[0m import path from 'path';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/generate-feed.mjs[0m:[93m5[0m:[93m26[0m - [93mwarning[0m[90m ts(6133): [0m'dirname' is declared but its value is never read.
+
+[7m5[0m import { join, basename, dirname } from 'path';
+[7m [0m [93m                         ~~~~~~~[0m
+[96mscripts/generate-feed.mjs[0m:[93m4[0m:[93m19[0m - [93mwarning[0m[90m ts(6133): [0m'readFile' is declared but its value is never read.
+
+[7m4[0m import { readdir, readFile } from 'fs/promises';
+[7m [0m [93m                  ~~~~~~~~[0m
+
+[96mscripts/generate-graph.js[0m:[93m245[0m:[93m35[0m - [93mwarning[0m[90m ts(6133): [0m'val' is declared but its value is never read.
+
+[7m245[0m               for (const [nutKey, val] of Object.entries(fm.micronutrients)) {
+[7m   [0m [93m                                  ~~~[0m
+[96mscripts/generate-graph.js[0m:[93m100[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'matter_local' is declared but its value is never read.
+
+[7m100[0m   const matter_local = matter;
+[7m   [0m [93m        ~~~~~~~~~~~~[0m
+[96mscripts/generate-graph.js[0m:[93m99[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'fs_local' is declared but its value is never read.
+
+[7m99[0m   const fs_local = fs;
+[7m  [0m [93m        ~~~~~~~~[0m
+[96mscripts/generate-graph.js[0m:[93m97[0m:[93m10[0m - [93mwarning[0m[90m ts(6133): [0m'parseIngredientsScience' is declared but its value is never read.
+
+[7m97[0m function parseIngredientsScience() {
+[7m  [0m [93m         ~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mscripts/generate-graph.js[0m:[93m92[0m:[93m10[0m - [93mwarning[0m[90m ts(6133): [0m'ensureNode' is declared but its value is never read.
+
+[7m92[0m function ensureNode(id, label, type, color, size, extra={}) {
+[7m  [0m [93m         ~~~~~~~~~~[0m
+
+[96mscripts/seed-conditions-remaining.mjs[0m:[93m7[0m:[93m17[0m - [93mwarning[0m[90m ts(6133): [0m'readdir' is declared but its value is never read.
+
+[7m7[0m import { mkdir, readdir, writeFile } from 'fs/promises';
+[7m [0m [93m                ~~~~~~~[0m
+
+[96mscripts/seed-vitamins-conditions-diets.mjs[0m:[93m7[0m:[93m17[0m - [93mwarning[0m[90m ts(6133): [0m'readdir' is declared but its value is never read.
+
+[7m7[0m import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
+[7m [0m [93m                ~~~~~~~[0m
+
+[96mscripts/seed-vitamins-remaining.mjs[0m:[93m7[0m:[93m17[0m - [93mwarning[0m[90m ts(6133): [0m'readdir' is declared but its value is never read.
+
+[7m7[0m import { mkdir, readdir, writeFile } from 'fs/promises';
+[7m [0m [93m                ~~~~~~~[0m
+
+[96mscripts/sync-recipes.mjs[0m:[93m18[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'FRONTMATTER_FIELDS' is declared but its value is never read.
+
+[7m18[0m const FRONTMATTER_FIELDS = ['title', 'region', 'categories', 'difficulty', 'prep_time', 'cook_time', 'servings', 'main_ingredients', 'tags'];
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~[0m
+[96mscripts/sync-recipes.mjs[0m:[93m7[0m:[93m35[0m - [93mwarning[0m[90m ts(6133): [0m'extname' is declared but its value is never read.
+
+[7m7[0m import { join, dirname, relative, extname } from 'path';
+[7m [0m [93m                                  ~~~~~~~[0m
+[96mscripts/sync-recipes.mjs[0m:[93m6[0m:[93m40[0m - [93mwarning[0m[90m ts(6133): [0m'stat' is declared but its value is never read.
+
+[7m6[0m import { readFile, writeFile, readdir, stat, mkdir } from 'fs/promises';
+[7m [0m [93m                                       ~~~~[0m
+
+[96mscripts/test-pwa.cjs[0m:[93m151[0m:[93m45[0m - [93mwarning[0m[90m ts(6133): [0m'test' is declared but its value is never read.
+
+[7m151[0m   resourceChecks.forEach(({ pattern, label, test }) => {
+[7m   [0m [93m                                            ~~~~[0m
+
+[96mscripts/watermark.js[0m:[93m8[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'DISHES_DIR' is declared but its value is never read.
+
+[7m8[0m const DISHES_DIR = path.join(process.cwd(), '../dishes');
+[7m [0m [93m      ~~~~~~~~~~[0m
+
+[96msrc/content.config.ts[0m:[93m64[0m:[93m6[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{ name: ZodString; discovery_year: ZodOptional<ZodNumber>; benefit: ZodOptional<ZodString>; }, $loose>' is deprecated.
+
+[7m64[0m   }).passthrough(),
+[7m  [0m [93m     ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m63[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m63[0m     benefit: z.string().optional(),
+[7m  [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m62[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m62[0m     discovery_year: z.number().optional(),
+[7m  [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m61[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m61[0m     name: z.string(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m60[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m60[0m   schema: z.object({
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m55[0m:[93m6[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{ name: ZodString; description: ZodOptional<ZodString>; }, $loose>' is deprecated.
+
+[7m55[0m   }).passthrough(),
+[7m  [0m [93m     ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m54[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m54[0m     description: z.string().optional(),
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m53[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m53[0m     name: z.string(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m52[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m52[0m   schema: z.object({
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m47[0m:[93m6[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{ name: ZodString; category: ZodOptional<ZodString>; evidence_level: ZodOptional<ZodString>; }, $loose>' is deprecated.
+
+[7m47[0m   }).passthrough(),
+[7m  [0m [93m     ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m46[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m46[0m     evidence_level: z.string().optional(),
+[7m  [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m45[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m45[0m     category: z.string().optional(),
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m44[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m44[0m     name: z.string(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m43[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m43[0m   schema: z.object({
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m38[0m:[93m6[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{ code: ZodOptional<ZodString>; name: ZodOptional<ZodString>; group: ZodOptional<ZodString>; unit: ZodOptional<...>; }, $loose>' is deprecated.
+
+[7m38[0m   }).passthrough(),
+[7m  [0m [93m     ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m37[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m37[0m     unit: z.string().optional(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m36[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m36[0m     group: z.string().optional(),
+[7m  [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m35[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m35[0m     name: z.string().optional(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m34[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m34[0m     code: z.string().optional(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m33[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m33[0m   schema: z.object({
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m28[0m:[93m6[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{ name: ZodOptional<ZodString>; scientific_name: ZodOptional<ZodString>; group: ZodOptional<ZodString>; ... 7 more ...; tags: ZodOptional<...>; }, $loose>' is deprecated.
+
+[7m28[0m   }).passthrough(),
+[7m  [0m [93m     ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m27[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m27[0m       tags: z.array(z.string()).optional(),
+[7m  [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m27[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m27[0m       tags: z.array(z.string()).optional(),
+[7m  [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m26[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m26[0m       sources: z.array(z.string()).optional(),
+[7m  [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m26[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m26[0m       sources: z.array(z.string()).optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m25[0m:[93m32[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m25[0m       health_registry: z.array(z.any()).optional(),
+[7m  [0m [93m                               ~[0m
+[96msrc/content.config.ts[0m:[93m25[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m25[0m       health_registry: z.array(z.any()).optional(),
+[7m  [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m24[0m:[93m33[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m24[0m       active_compounds: z.array(z.any()).optional(),
+[7m  [0m [93m                                ~[0m
+[96msrc/content.config.ts[0m:[93m24[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m24[0m       active_compounds: z.array(z.any()).optional(),
+[7m  [0m [93m                        ~[0m
+[96msrc/content.config.ts[0m:[93m23[0m:[93m23[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m23[0m       micronutrients: z.any().optional(),
+[7m  [0m [93m                      ~[0m
+[96msrc/content.config.ts[0m:[93m22[0m:[93m27[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m22[0m       nutrition_per_100g: z.any().optional(),
+[7m  [0m [93m                          ~[0m
+[96msrc/content.config.ts[0m:[93m21[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m21[0m       portions: z.any().optional(),
+[7m  [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m20[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m20[0m       image: z.string().optional(),
+[7m  [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m19[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m19[0m       group: z.string().optional(),
+[7m  [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m18[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m18[0m       scientific_name: z.string().optional(),
+[7m  [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m17[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m17[0m       name: z.string().optional(),
+[7m  [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m16[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m16[0m   schema: z.object({
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m11[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{}, $loose>' is deprecated.
+
+[7m11[0m   schema: z.object({}).passthrough(),
+[7m  [0m [93m                       ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m11[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m11[0m   schema: z.object({}).passthrough(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m6[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'(): ZodObject<{}, $loose>' is deprecated.
+
+[7m6[0m   schema: z.object({}).passthrough(),
+[7m [0m [93m                       ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m6[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m6[0m   schema: z.object({}).passthrough(),
+[7m [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m1[0m:[93m28[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m1[0m import { defineCollection, z } from 'astro:content';
+[7m [0m [93m                           ~[0m
+
+[96msrc/components/GraphExplorer.astro[0m:[93m171[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'minimapEl' is declared but its value is never read.
+
+[7m171[0m   var minimapEl = document.getElementById('ge-minimap');
+[7m   [0m [93m      ~~~~~~~~~[0m
+[96msrc/components/GraphExplorer.astro[0m:[93m156[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'wrapper' is declared but its value is never read.
+
+[7m156[0m   var wrapper = document.getElementById('ge-wrapper');
+[7m   [0m [93m      ~~~~~~~[0m
+[96msrc/components/GraphExplorer.astro[0m:[93m152[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'NODE_EMOJI' is declared but its value is never read.
+
+[7m152[0m   var NODE_EMOJI = { recipe:'\uD83C\uDF72', ingredient:'\uD83E\uDD57', flavor:'\uD83C\uDF36', texture:'\uD83E\uDE79', aroma:'\uD83C\uDF43', region:'\uD83C\uDF0D', nutrition:'\uD83E\uDD57', category:'\uD83C\uDF74' };
+[7m   [0m [93m      ~~~~~~~~~~[0m
+
+[96msrc/components/RecipeCard.astro[0m:[93m18[0m:[93m10[0m - [93mwarning[0m[90m ts(6133): [0m'formatNumber' is declared but its value is never read.
+
+[7m18[0m function formatNumber(num: number | undefined) {
+[7m  [0m [93m         ~~~~~~~~~~~~[0m
+
+[96msrc/components/SearchBar.astro[0m:[93m4[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'Fuse' is declared but its value is never read.
+
+[7m4[0m import Fuse from 'fuse.js';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/StarRating.astro[0m:[93m24[0m:[93m11[0m - [93mwarning[0m[90m ts(6133): [0m'stars' is declared but its value is never read.
+
+[7m24[0m     const stars = container.querySelectorAll('input[type="radio"]');
+[7m  [0m [93m          ~~~~~[0m
+
+[96msrc/lib/domain.ts[0m:[93m130[0m:[93m34[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'f' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m130[0m   const fields = def.fields.map((f) => `DEFINE FIELD ${f} ON ${entity} TYPE string;`).join('\n');
+[7m   [0m [93m                                 ~[0m
+
+[96msrc/lib/indexeddb.test.ts[0m:[93m43[0m:[93m15[0m - [93mwarning[0m[90m ts(6133): [0m'name' is declared but its value is never read.
+
+[7m43[0m   constructor(name: string, _mode: string) {
+[7m  [0m [93m              ~~~~[0m
+[96msrc/lib/indexeddb.test.ts[0m:[93m1[0m:[93m44[0m - [93mwarning[0m[90m ts(6133): [0m'vi' is declared but its value is never read.
+
+[7m1[0m import { describe, it, expect, beforeEach, vi } from 'vitest';
+[7m [0m [93m                                           ~~[0m
+
+[96msrc/pages/ingredients/[...slug].astro[0m:[93m66[0m:[93m46[0m - [93mwarning[0m[90m ts(7044): [0mParameter 's' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m66[0m             {h.studies && <ul>{h.studies.map(s=> <li>{s.title} — <em>{s.source} {s.year}</em> {s.doi && <a href={`https://doi.org/${s.doi}`} target="_blank">{s.doi}</a>}</li>)}</ul>}
+[7m  [0m [93m                                             ~[0m
+[96msrc/pages/ingredients/[...slug].astro[0m:[93m61[0m:[93m50[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'h' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m61[0m         {(entry.data as any).health_registry.map(h=> (
+[7m  [0m [93m                                                 ~[0m
+[96msrc/pages/ingredients/[...slug].astro[0m:[93m55[0m:[93m55[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'c' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m55[0m         <ul>{(entry.data as any).active_compounds.map(c=> <li><strong>{c.name}:</strong> {c.benefit} {c.scientific_ref && <em>({c.scientific_ref})</em>}</li>)}</ul>
+[7m  [0m [93m                                                      ~[0m
+[96msrc/pages/ingredients/[...slug].astro[0m:[93m31[0m:[93m11[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m31[0m   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+[7m  [0m [93m          ~~~~[0m
+
+[96msrc/pages/recipes/[...slug].astro[0m:[93m30[0m:[93m11[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m30[0m   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+[7m  [0m [93m          ~~~~[0m
+
+[96msrc/pages/substances/[...slug].astro[0m:[93m100[0m:[93m32[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'st' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m100[0m                 {h.studies.map(st => (
+[7m   [0m [93m                               ~~[0m
+[96msrc/pages/substances/[...slug].astro[0m:[93m90[0m:[93m32[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'h' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m90[0m         {s.health_registry.map(h => (
+[7m  [0m [93m                               ~[0m
+[96msrc/pages/substances/[...slug].astro[0m:[93m81[0m:[93m51[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'c' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m81[0m             <div class="tagrow">{s.compuestos.map(c => <span class="tag mono">{c}</span>)}</div>
+[7m  [0m [93m                                                  ~[0m
+[96msrc/pages/substances/[...slug].astro[0m:[93m75[0m:[93m50[0m - [93mwarning[0m[90m ts(7044): [0mParameter 'v' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m75[0m             <div class="tagrow">{s.vitaminas.map(v => <span class="tag">{v}</span>)}</div>
+[7m  [0m [93m                                                 ~[0m
+[96msrc/pages/substances/[...slug].astro[0m:[93m46[0m:[93m20[0m - [93mwarning[0m[90m ts(7044): [0mParameter 't' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m46[0m       {s.tags?.map(t => <span class="chip">{t}</span>)}
+[7m  [0m [93m                   ~[0m
+
+Result (79 files):
+- 0 errors
+- 0 warnings
+- 79 hints
