@@ -137,7 +137,7 @@ GitHub Actions desactivados por defecto en era privada SWAL; tests locales prefe
 ### Description
 Structured recipe format with YAML frontmatter validation
 
-*Feature: `feat-recipe-schema` · status: pending*
+*Feature: `feat-recipe-schema` · status: passing*
 
 ## REQ-009: Ingredient Database (feature feat-ingredient-database)
 
@@ -149,7 +149,7 @@ Structured recipe format with YAML frontmatter validation
 ### Description
 Scientific ingredient metadata with nutritional information
 
-*Feature: `feat-ingredient-database` · status: pending*
+*Feature: `feat-ingredient-database` · status: passing*
 
 ## REQ-010: Astro Site (feature feat-astro-site)
 
@@ -161,7 +161,7 @@ Scientific ingredient metadata with nutritional information
 ### Description
 Static site generation with Astro 5.x + Svelte
 
-*Feature: `feat-astro-site` · status: pending*
+*Feature: `feat-astro-site` · status: passing*
 
 ## REQ-011: Recipe Translation (feature feat-recipe-translation)
 
@@ -173,4 +173,4 @@ Static site generation with Astro 5.x + Svelte
 ### Description
 Batch translation of recipes using Gemini API
 
-*Feature: `feat-recipe-translation` · status: pending*
+*Feature: `feat-recipe-translation` · status: failing*
