@@ -1,0 +1,36 @@
+# Build evidence — post-retirement audit (2026-09-04)
+# Purpose: verify that the changes made to retract v1.0.0 did not break the site
+# Changes: .gitignore (+2 lines), AGENTS.md (cleanup dupes + add tag-protocol block), new .gitcore/releases/v1.0.0-RETIRED.md
+
+## astro check
+$ pnpm exec astro check
+Result (79 files): 0 errors, 0 warnings, 79 hints
+Hints are pre-existing ts(7044) 'any' type warnings in substances/[...slug].astro callbacks — not introduced by this change.
+
+## astro build
+$ pnpm exec astro build
+[build] 1117 page(s) built in 4.71s
+[build] Complete!
+exit_code: 0
+
+## vitest
+$ pnpm test (vitest run)
+Test Files  7 passed (7)
+Tests       34 passed (34)
+Duration    1.91s
+exit_code: 0
+
+## git status
+$ git status
+nothing to commit, working tree clean
+On branch main
+Your branch is up to date with 'origin/main'.
+
+## Tags after retraction
+$ git tag -l
+gos-v0.3-substances
+(v1.0.0 successfully deleted locally + remotely)
+
+## GitHub tracking
+Issue #230: Re-release v1.0.0 following swal-tag-protocol checklist (post-incident 4sep26)
+URL: https://github.com/iberi22/gastronomic-open-standard-GOS/issues/230

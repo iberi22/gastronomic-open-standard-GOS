@@ -24,6 +24,10 @@ bin/
 archive/site-cleanup/
 site_legacy_20260902/
 
+# Release evidence bundles MUST be committed (overrides *.log above)
+!.gitcore/releases/*.log
+!.gitcore/releases/*.md
+
 # Playwright artifacts
 test-results/
 playwright-report/
