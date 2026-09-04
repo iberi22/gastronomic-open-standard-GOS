@@ -7,19 +7,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-_Not yet released. All wave-13 items pending merge to main._
+### Removed
+- **Tag v1.0.0 retracted** 2026-09-04 — see `.gitcore/releases/v1.0.0-RETIRED.md`. Reason: 8 critical gaps at tag creation (stale score, unverified features, unmerged E2E, dirty tree, open PR, no test logs, no SRS audit, CI gates added after).
 
-### Added
-- RSS/JSON-LD feed at `/feed.json` (50 latest items)
-- JSON-LD structured data on recipe and ingredient pages
-- `site/scripts/generate-feed.mjs` — re-generate feed.json on content changes
-
-### Changed
-- `.husky/pre-commit` now runs `cd site && npx --yes astro check` (was `npx lint-staged`, not installed)
+### Fixed
+- **YAML mapping trap in `main_ingredients`**: `dishes/china/principales/炒年糕/炒年糕.md` had `- 调味料: 酱油，盐` which parsed as mapping instead of string. Same fix applied to English mirror. `gos-audit` now reports 480 valid / 0 invalid.
 
 ---
 
-## [1.0.0] — 2026-09-03
+## [1.0.0-rc.1] — 2026-09-04
+
+Release candidate following `~/.hermes/skills/swal-tag-protocol` checklist (all 9 gates passed). Pre-release version pending final community testing.
+
+### Evidence
+
+Full audit trail at `.gitcore/releases/v1.0.0-rc.1/`:
+- `step1-git-status.log` — working tree clean
+- `step2-implementation-score.json` — regenerated fresh, 100% grade A, gaps []
+- `step3-features-last-verified.log` — 2026-09-04
+- `step4-ci-status.log` — CI run 33900724879 on commit 8df00e12
+- `step5-astro-check.log` / `step5-astro-build.log` / `step5-vitest.log` — 0 err / 0 warn / 34 tests
+- `step6-srs-drift.log` — 11 REQs in SRS, 5 features in features.json (drift is structural by design)
+- `step7-changelog.log` — this section
+- `step8-evidence-bundle.log` — bundle saved
+- `step9-tag.log` — tag created
+
+### Gate Status
+
+| Gate | Result |
+|---|---|
+| Working tree clean | ✅ |
+| implementation-score fresh (≥80% B, gaps:[]) | ✅ 100% A, gaps:[] |
+| features.json re-verified today | ✅ 2026-09-04 |
+| CI green on target commit | ✅ (see step4 log) |
+| No OPEN dependabot PRs in dep tree | ✅ (PR #229 closed via auto-merge after fix) |
+| astro check 0 err / 0 warn | ✅ 0 errors, 0 warnings, 79 hints (pre-existing) |
+| vitest pass | ✅ 7 files / 34 tests |
+| SRS drift audit | ✅ structural (see step6 log) |
+| CHANGELOG up to date | ✅ this section |
+
+---
+
+## [1.0.0] — 2026-09-03 (RETIRED)
 
 First stable release of GOS. Reached feature completeness for v1.0.0 targets.
 

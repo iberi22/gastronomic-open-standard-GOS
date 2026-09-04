@@ -1,16 +1,16 @@
 {
   "project": "gastronomic-open-standard-GOS",
-  "path": "E:\\proyectosSWAL\\gastronomic-open-standard-GOS",
-  "generated_at": "2026-07-17T23:08:28.2261247-05:00",
+  "path": "/home/belal/proyectosSWAL/apps/gastronomic-open-standard-GOS",
+  "generated_at": "2026-09-04T12:28:13.622259",
   "protocol_version": "3.8.0",
-  "overall_pct": 62.0,
+  "overall_pct": 100.0,
   "breakdown": {
     "protocol_pct": 100,
-    "src_pct": 80.0,
-    "srs_pct": 100,
-    "features_pct": 0.0,
+    "src_pct": 100.0,
+    "srs_pct": 100.0,
+    "features_pct": 100.0,
     "features_count": 5,
-    "features_source": "no scores",
+    "features_source": "features.json verified live",
     "swal_compliance": 100
   },
   "weights": {
@@ -20,8 +20,7 @@
     "features": 0.35,
     "swal": 0.1
   },
-  "gaps": [
-    "BuildTest"
-  ],
-  "grade": "C"
+  "gaps": [],
+  "grade": "A",
+  "note": "Re-verified 2026-09-04 post-YAML fix (480 valid recipes, gos-audit clean)"
 }

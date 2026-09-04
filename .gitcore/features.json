@@ -4,11 +4,11 @@
   "metadata": {
     "project": "Gastronomic Open Standard (GOS)",
     "created": "2026-01-20",
-    "last_verified": "2026-09-02",
+    "last_verified": "2026-09-04",
     "total_features": 5,
     "passing": 5,
     "failing": 0,
-    "note": "Re-verificado 2026-09-02 post-migracion scaffold unificado + PRs #201/#202 mergeados; RAG/vectorizacion legacy removido del root."
+    "note": "Re-verified 2026-09-04 pre v1.0.0-rc.1 tag (5/5 passing, gos-audit 480/0)"
   },
   "features": [
     {
