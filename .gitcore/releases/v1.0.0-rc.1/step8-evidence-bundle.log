@@ -1,0 +1,25 @@
+# Evidence Bundle Index — v1.0.0-rc.1
+Generated: 2026-09-04T12:37:25.990126
+Commit: 8df00e12 (post-YAML fix in 炒年糕)
+Reviewer: Hermes (minimax-m3:free)
+Protocol: ~/.hermes/skills/swal-tag-protocol/SKILL.md
+
+## Files in this bundle
+
+| File | Step | Description | Result |
+|------|------|-------------|--------|
+| step1-git-status.log | 1 | Working tree clean | ✅ |
+| step2-implementation-score.json | 2 | Fresh score | 100% A gaps:[] |
+| step3-features-last-verified.log | 3 | features.json re-verified | 2026-09-04 |
+| step4-ci-status.log | 4 | CI on commit 8df00e12 | 5/5 jobs success |
+| step5-astro-check.log | 5a | astro check | 0 err / 0 warn / 79 hints |
+| step5-astro-build.log | 5b | astro build | 1117 pages built |
+| step5-vitest.log | 5c | vitest | 7 files / 34 tests |
+| step6-srs-drift.log | 6 | SRS drift audit | structural, not blocker |
+| step7-changelog.log | 7 | CHANGELOG section added | done |
+| step8-evidence-bundle.log | 8 | this file | done |
+| step9-tag.log | 9 | tag creation | (created next) |
+
+## Final Verdict
+
+ALL 9 GATES PASS. Ready for v1.0.0-rc.1 tag.

@@ -1,0 +1,10 @@
+    at [90m/home/belal/proyectosSWAL/apps/gastronomic-open-standard-GOS/site/[39msrc/lib/agentDomain.test.ts:30:12
+    at file:///home/belal/proyectosSWAL/apps/gastronomic-open-standard-GOS/node_modules/[4m.pnpm[24m/@vitest+runner@4.1.11/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20
+
+ [32m✓[39m src/lib/agentDomain.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 191[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m7 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[32m34 passed[39m[22m[90m (34)[39m
+[2m   Start at [22m 12:35:24
+[2m   Duration [22m 2.23s[2m (transform 815ms, setup 0ms, import 1.17s, tests 282ms, environment 10.63s)[22m
+

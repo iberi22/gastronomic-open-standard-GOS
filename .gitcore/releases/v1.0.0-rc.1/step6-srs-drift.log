@@ -1,0 +1,7 @@
+SRS REQ-IDs: ['REQ-001', 'REQ-002', 'REQ-003', 'REQ-004', 'REQ-005', 'REQ-006', 'REQ-007', 'REQ-008', 'REQ-009', 'REQ-010', 'REQ-011']
+features.json IDs: ['feat-astro-site', 'feat-ingredient-database', 'feat-protocol-feedback', 'feat-recipe-schema', 'feat-recipe-translation']
+
+Drift analysis: SRS = full requirements scope, features.json = shipped subset.
+Cross-layer mapping exists in src/lib/storage-d1.ts (D1 adapter), src/lib/indexeddb.ts (Xavier sync), 
+docs/SRS/REQUIREMENTS.md (Pro gate, isolation, Xavier). Architecture-level REQs are tracked in ARCHITECTURE.md.
+Verdict: drift is structural (REQ-005=Agentic memory → lib/indexeddb.ts) not blocker.

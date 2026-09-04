@@ -1,0 +1,10 @@
+[96msrc/pages/substances/[...slug].astro[0m:[93m46[0m:[93m20[0m - [93mwarning[0m[90m ts(7044): [0mParameter 't' implicitly has an 'any' type, but a better type may be inferred from usage.
+
+[7m46[0m       {s.tags?.map(t => <span class="chip">{t}</span>)}
+[7m  [0m [93m                   ~[0m
+
+Result (79 files): 
+- 0 errors
+- 0 warnings
+- 79 hints
+

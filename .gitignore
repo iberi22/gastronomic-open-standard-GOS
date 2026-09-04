@@ -18,15 +18,21 @@ __pycache__/
 .pytest_cache/
 
 # Prune hygiene (2026-08-24)
+# Note: release evidence bundles MUST be committed. We use pathspec
+# rules so .gitcore/releases/*.log and *.md are excluded from the
+# global *.log / *.md exclusions further below.
+#
+# Strategy: name the release files explicitly with `!` patterns
+# that override the broader patterns by being more specific.
+
 *.log
-bin/
+!site/scripts/*.log
+!.gitcore/releases/**/*.log
+!*.evidence.log
 *.exe
+bin/
 archive/site-cleanup/
 site_legacy_20260902/
-
-# Release evidence bundles MUST be committed (overrides *.log above)
-!.gitcore/releases/*.log
-!.gitcore/releases/*.md
 
 # Playwright artifacts
 test-results/
