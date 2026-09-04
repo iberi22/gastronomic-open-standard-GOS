@@ -6,9 +6,9 @@
     "created": "2026-01-20",
     "last_verified": "2026-09-04",
     "total_features": 5,
-    "passing": 5,
-    "failing": 0,
-    "note": "Re-verified 2026-09-04 pre-v1.0.0 final"
+    "passing": 4,
+    "failing": 1,
+    "note": "Re-verified 2026-09-04. feat-recipe-translation marked failing (script exists, never executed)."
   },
   "features": [
     {
@@ -74,10 +74,10 @@
       "passes": false,
       "verified_by": "python automation/translate_recipes.py",
       "github_issue": 32,
-      "last_tested": null,
-      "notes": "Issue #32: Translation script exists, needs execution",
-      "status": "passing",
-      "last_verified": "2026-09-02"
+      "last_tested": "2026-09-04",
+      "notes": "Script exists at automation/translate_recipes.py, never executed. All 486 recipes are in Spanish only. Issue #32 tracks this.",
+      "status": "failing",
+      "last_verified": "2026-09-04"
     },
     {
       "id": "feat-protocol-feedback",
