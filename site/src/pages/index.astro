@@ -27,9 +27,18 @@ const highlights = [
         Presentación de <strong>recetas e ingredientes de todo el mundo</strong> interconectados en un grafo que une <strong>vitaminas, sabores, técnicas, substancias bioactivas</strong> y <strong>soluciones a afecciones</strong> — con capacidades alimenticias por <strong>dieta</strong> y hallazgos de investigaciones recientes.
       </p>
       <div class="cta">
-        <a href={`${base}/graph`} class="btn primary">🕸️ Explorar grafo global</a>
-        <a href={`${base}/recipes`} class="btn ghost">🍳 Ver recetas →</a>
-        <a href={`${base}/ingredients`} class="btn ghost">🌿 Ingredientes científicos →</a>
+        <a href={`${base}/graph`} class="btn primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
+          Explorar grafo global
+        </a>
+        <a href={`${base}/recipes`} class="btn ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
+          Ver recetas →
+        </a>
+        <a href={`${base}/ingredients`} class="btn ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
+          Ingredientes científicos →
+        </a>
       </div>
       <div class="meta">
         <span class="pill">CVE fix: vite ≥6.4.2 · astro ≥7.2</span>
@@ -40,7 +49,6 @@ const highlights = [
 
     <div class="graph-shell">
       <GosGraph client:load />
-      <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     </div>
   </section>
 
@@ -93,10 +101,26 @@ const highlights = [
   </section>
 
   <section class="quick-links">
-    <a href={`${base}/recipes`} class="ql"><span>🍳</span><strong>Recetas</strong><em>Colección dishes/</em></a>
-    <a href={`${base}/ingredients`} class="ql"><span>🌿</span><strong>Ingredientes</strong><em>Fichas científicas</em></a>
-    <a href={`${base}/graph`} class="ql"><span>🕸️</span><strong>Grafo</strong><em>Explorador D3</em></a>
-    <a href={`${base}/scientific`} class="ql"><span>🧬</span><strong>Ciencia</strong><em>Vitaminas & substancias</em></a>
+    <a href={`${base}/recipes`} class="ql">
+      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
+      <strong>Recetas</strong>
+      <em>Colección dishes/</em>
+    </a>
+    <a href={`${base}/ingredients`} class="ql">
+      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
+      <strong>Ingredientes</strong>
+      <em>Fichas científicas</em>
+    </a>
+    <a href={`${base}/graph`} class="ql">
+      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
+      <strong>Grafo</strong>
+      <em>Explorador D3</em>
+    </a>
+    <a href={`${base}/scientific`} class="ql">
+      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 002 2h12a2 2 0 002-2L15 8V2M9 2h6M7 14h10"/></svg>
+      <strong>Ciencia</strong>
+      <em>Vitaminas & substancias</em>
+    </a>
   </section>
 
 <style>
@@ -109,7 +133,7 @@ const highlights = [
   .lead { color: var(--swal-text-secondary); line-height:1.7; max-width: 880px; }
   .lead strong { color: var(--swal-text); }
   .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
-  .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--swal-border); }
+  .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid var(--swal-border); }
   .btn.primary { background: var(--swal-accent); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
   .btn.ghost { background: var(--swal-surface); color: var(--swal-text); }
   .meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
@@ -131,7 +155,7 @@ const highlights = [
   .quick-links { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:10px; margin-top:18px; }
   .ql { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:4px; text-decoration:none; color: var(--swal-text); transition: transform 0.15s; }
   .ql:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--swal-accent) 40%, var(--swal-border)); }
-  .ql span{ font-size:20px; }
+  .ql-icon { color: var(--swal-accent); margin-bottom: 4px; }
   .ql strong{ font-size:14px; }
   .ql em{ font-size:12px; color: var(--swal-text-muted); font-style:normal; }
 </style>

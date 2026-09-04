@@ -43,8 +43,8 @@ const baseClean = base.replace(/\/$/, '');
   <body class="min-h-screen relative overflow-x-hidden selection:bg-[rgba(139,92,246,0.3)] swal-scrollbar">
     <OfflineBanner />
     <!-- Edge-hive / Antigravity topbar -->
-    <header class="sticky top-0 z-40" style="background: var(--swal-bg); border-bottom: 1px solid var(--swal-border);">
-      <div class="mx-auto max-w-[1280px] px-4 h-[56px] flex items-center justify-between gap-4">
+    <header class="sticky top-0 z-40 pt-2" style="background: var(--swal-bg); border-bottom: 1px solid var(--swal-border);">
+      <div class="mx-auto max-w-[1280px] px-4 sm:px-6 py-3 flex items-center justify-between gap-4 min-h-[56px]">
         <a href={`${baseClean}/`} class="flex items-center gap-3 group">
           <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-black text-[18px] shadow-lg" style="background: linear-gradient(135deg, var(--swal-accent), #06B6D4); box-shadow: 0 8px 24px rgba(139,92,246,0.35);">G</div>
           <div class="leading-none">
@@ -71,11 +71,23 @@ const baseClean = base.replace(/\/$/, '');
         </div>
       </div>
       <!-- mobile nav -->
-      <div class="lg:hidden flex items-center gap-1 px-3 pb-2 overflow-x-auto">
-        <a href={`${baseClean}/graph`} class="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: var(--swal-border);">🕸️ Grafo</a>
-        <a href={`${baseClean}/recipes`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🍳 Recetas</a>
-        <a href={`${baseClean}/ingredients`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🌿 Ingredientes</a>
-        <a href={`${baseClean}/scientific`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">🧬 Ciencia</a>
+      <div class="lg:hidden flex items-center gap-1 px-4 sm:px-6 pb-2 overflow-x-auto">
+        <a href={`${baseClean}/graph`} class="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border inline-flex items-center gap-1.5" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: var(--swal-border);">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
+          Grafo
+        </a>
+        <a href={`${baseClean}/recipes`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
+          Recetas
+        </a>
+        <a href={`${baseClean}/ingredients`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
+          Ingredientes
+        </a>
+        <a href={`${baseClean}/scientific`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 002 2h12a2 2 0 002-2L15 8V2M9 2h6M7 14h10"/></svg>
+          Ciencia
+        </a>
       </div>
     </header>
 
