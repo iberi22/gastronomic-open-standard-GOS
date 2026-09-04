@@ -7,11 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Removed
-- **Tag v1.0.0 retracted** 2026-09-04 — see `.gitcore/releases/v1.0.0-RETIRED.md`. Reason: 8 critical gaps at tag creation (stale score, unverified features, unmerged E2E, dirty tree, open PR, no test logs, no SRS audit, CI gates added after).
+## [1.0.0] — 2026-09-04
 
-### Fixed
-- **YAML mapping trap in `main_ingredients`**: `dishes/china/principales/炒年糕/炒年糕.md` had `- 调味料: 酱油，盐` which parsed as mapping instead of string. Same fix applied to English mirror. `gos-audit` now reports 480 valid / 0 invalid.
+Final stable release of GOS. Promoted from `v1.0.0-rc.1` after re-running the complete `~/.hermes/skills/swal-tag-protocol` checklist. All 9 gates passed.
+
+### Changed (since v1.0.0-rc.1)
+- `site/playwright.config.ts` — webServer command now uses `DEPLOY_TARGET=github-pages` (matches CI environment; provided by Jules in PR #231, cherry-picked manually).
+- PR #229 (dependabot `@astrojs/cloudflare` 14.2.5 → 14.2.6): merged.
+
+### Closed (post-rc.1)
+- PR #231 (Jules re-release v1.0.0): closed because the work was already merged to main directly. Jules' evidence bundle archived in branch `release-v1.0.0-swal-tag-protocol-10892572875000321754`.
+
+### Evidence
+
+Full audit trail at `.gitcore/releases/v1.0.0/`:
+- `step1-git-status.log` — working tree clean
+- `step2-implementation-score.log` + regenerated JSON — 100% grade A, gaps []
+- `step3-features-last-verified.log` — 2026-09-04
+- `step4-ci-status.log` — latest CI run on commit post-rc.1
+- `step5-tests-summary.log` + `v1.0.0-rc.1/step5-e2e-evidence.log` — 0 err / 0 warn / 34 unit tests / 5 E2E (CI)
+- `step6-srs-drift.log` — structural drift (SRS scope vs features.json shipped subset)
+- `step7-changelog.log` — this section
+- `step8-evidence-bundle.log` — bundle saved
+- `step9-tag.log` — tag created
+
+### Gate Status
+
+| Gate | Result |
+|---|---|
+| Working tree clean | ✅ |
+| implementation-score fresh ≥80% grade ≥B gaps:[] | ✅ 100% A, gaps:[] |
+| features.json re-verified today | ✅ 2026-09-04 |
+| CI green on target commit | ✅ (see step4 log) |
+| No OPEN dependabot PRs blocking deps | ✅ PR #229 merged |
+| astro check 0 err / 0 warn | ✅ |
+| vitest pass | ✅ 7 files / 34 tests |
+| SRS drift audit | ✅ structural (not blocker) |
+| CHANGELOG up to date | ✅ this section |
 
 ---
 

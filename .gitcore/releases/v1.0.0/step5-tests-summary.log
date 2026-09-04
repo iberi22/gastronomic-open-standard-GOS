@@ -1,0 +1,5 @@
+astro check: 0 errors / 0 warnings / 79 hints (pre-existing ts(7044))
+astro build: 1117 pages built
+vitest: 7 files / 34 tests passed
+E2E (mobile-antigravity): CI passes per run 33843022377/33900145462 (Jules evidence)
+E2E local: 3 timeouts (networkidle) — see step5-e2e-evidence.log in v1.0.0-rc.1/

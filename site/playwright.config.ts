@@ -15,7 +15,7 @@ export default defineConfig({
     },
   },
   webServer: {
-    command: 'pnpm exec astro preview --host 0.0.0.0 --port 4321',
+    command: 'DEPLOY_TARGET=github-pages pnpm exec astro preview --host 0.0.0.0 --port 4321',
     url: 'http://localhost:4321/gastronomic-open-standard-GOS/',
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,

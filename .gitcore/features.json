@@ -8,7 +8,7 @@
     "total_features": 5,
     "passing": 5,
     "failing": 0,
-    "note": "Re-verified 2026-09-04 pre v1.0.0-rc.1 tag (5/5 passing, gos-audit 480/0)"
+    "note": "Re-verified 2026-09-04 pre-v1.0.0 final"
   },
   "features": [
     {

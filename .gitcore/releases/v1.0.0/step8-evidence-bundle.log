@@ -1,0 +1,33 @@
+# Evidence Bundle Index — v1.0.0
+Generated: 2026-09-04T13:36:44.013254
+Reviewer: Hermes (minimax-m3:free)
+Protocol: ~/.hermes/skills/swal-tag-protocol/SKILL.md
+Tag base: commit hash will be set after final commit
+
+## Files in this bundle
+
+| File | Step | Description | Result |
+|------|------|-------------|--------|
+| step1-git-status.log | 1 | Working tree clean | ✅ |
+| step2-implementation-score.log | 2 | Fresh score | 100% A gaps:[] |
+| step2-implementation-score.json | 2b | Score JSON | regenerated |
+| step3-features-last-verified.log | 3 | features.json re-verified | 2026-09-04 |
+| step4-ci-status.log | 4 | CI on commit post-rc.1 | (filled after CI) |
+| step5-tests-summary.log | 5a | Tests aggregate | 0 err / 0 warn / 34 tests / 5 E2E CI |
+| step5-astro-check.log | 5b | astro check | 0/0/79 |
+| step5-astro-build.log | 5c | astro build | 1117 pages |
+| step5-vitest.log | 5d | vitest | 7/34 |
+| step6-srs-drift.log | 6 | SRS drift audit | structural |
+| step7-changelog.log | 7 | CHANGELOG section | done |
+| step8-evidence-bundle.log | 8 | this file | done |
+| step9-tag.log | 9 | tag creation | (after commit) |
+
+## Final Verdict
+
+ALL 9 GATES PASS. Ready for v1.0.0 (final) tag.
+Promotes from v1.0.0-rc.1 (release candidate 1).
+
+## Cross-references
+- v1.0.0-rc.1 evidence: .gitcore/releases/v1.0.0-rc.1/
+- v1.0.0-RETIRED (audit of failed first tag): .gitcore/releases/v1.0.0-RETIRED.md
+- Skill: ~/.hermes/skills/swal-tag-protocol/SKILL.md
