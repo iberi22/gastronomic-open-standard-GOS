@@ -2,17 +2,17 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const dishesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/dishes' }),
+  loader: glob({ pattern: '**/*.md', base: '../../dishes' }),
   schema: z.object({}).passthrough(),
 });
 
 const tipsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/tips' }),
+  loader: glob({ pattern: '**/*.md', base: '../../tips' }),
   schema: z.object({}).passthrough(),
 });
 
 const ingredientsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/ingredients' }),
+  loader: glob({ pattern: '**/*.md', base: '../../ingredients' }),
   schema: z.object({
       name: z.string().optional(),
       scientific_name: z.string().optional(),
