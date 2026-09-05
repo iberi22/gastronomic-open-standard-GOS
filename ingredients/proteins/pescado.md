@@ -20,13 +20,26 @@ active_compounds:
     benefit: "Anti-inflammatory fatty acids (levels vary by species)."
     scientific_ref: "PubMed"
 health_registry:
-  - condition: "Brain Health"
-    mechanism: "DHA is a major structural component of the brain."
-    compounds: ["DHA", "Vitamin D"]
+  - condition: "Brain Health / Cognitive Decline"
+    mechanism: "DHA is incorporated into neuronal membrane phospholipids, supporting synaptic plasticity."
+    compounds: ["DHA", "EPA", "Vitamin D"]
     evidence_level: "High"
     studies:
-      - title: "Fish consumption and cognitive decline"
+      - title: "Fish consumption, n-3 fatty acids, and risk of cognitive decline"
         source: "Neurology"
+        year: 2004
+        doi: "10.1212/01.WNL.0000138430.13318.EE"
+        url: "https://pubmed.ncbi.nlm.nih.gov/15365124/"
+  - condition: "Thyroid Function"
+    mechanism: "Selenium acts as essential cofactor for iodothyronine deiodinases converting T4 to active T3 thyroid hormone."
+    compounds: ["Selenium"]
+    evidence_level: "High"
+    studies:
+      - title: "Selenium and thyroid disease: from pathophysiology to clinical practice"
+        source: "Endocrine Reviews"
+        year: 2017
+        doi: "10.1210/er.2016-1040"
+        url: "https://pubmed.ncbi.nlm.nih.gov/28323958/"
 sources:
   - "USDA FoodData Central"
 tags:

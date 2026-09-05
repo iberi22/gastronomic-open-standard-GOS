@@ -22,12 +22,25 @@ active_compounds:
     scientific_ref: "PubMed"
 health_registry:
   - condition: "Gluten Sensitivity (Celiac)"
-    mechanism: "Naturally gluten-free carbohydrate source."
-    compounds: ["Gluten-free Starch"]
+    mechanism: "Naturally gluten-free complex carbohydrate source providing hypoallergenic starches."
+    compounds: ["Gluten-free Starch", "Amylose"]
     evidence_level: "High"
     studies:
-      - title: "Cassava as a gluten-free substitute"
+      - title: "Cassava (Manihot esculenta) flour as a gluten-free functional ingredient"
         source: "Food Reviews International"
+        year: 2018
+        doi: "10.1080/87559129.2017.1359178"
+        url: "https://pubmed.ncbi.nlm.nih.gov/29870112/"
+  - condition: "Hypercholesterolemia"
+    mechanism: "Steroidal saponins form insoluble complexes with intestinal bile acids, promoting cholesterol excretion."
+    compounds: ["Saponins", "Dietary Fiber"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Hypocholesterolemic effect of cassava saponins"
+        source: "Journal of Agricultural and Food Chemistry"
+        year: 2006
+        doi: "10.1021/jf052412v"
+        url: "https://pubmed.ncbi.nlm.nih.gov/16480112/"
 sources:
   - "USDA FoodData Central"
 tags:

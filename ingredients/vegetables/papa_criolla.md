@@ -25,12 +25,21 @@ health_registry:
     compounds: ["Potassium"]
     evidence_level: "High"
     studies:
-      - title: "Potassium intake and blood pressure"
-        source: "WHO Guidelines"
-  - condition: "Digestive Health"
-    mechanism: "High digestibility starch (easily broken down) suitable for convalescence."
-    compounds: ["Starch"]
-    evidence_level: "Medium"
+      - title: "Potassium intake, stroke, and cardiovascular disease: a meta-analysis of prospective trials"
+        source: "Journal of the American College of Cardiology"
+        year: 2011
+        doi: "10.1016/j.jacc.2010.09.070"
+        url: "https://pubmed.ncbi.nlm.nih.gov/21371638/"
+  - condition: "Macular Degeneration"
+    mechanism: "Zeaxanthin accumulates in macular pigment, filtering damaging blue light wavelengths."
+    compounds: ["Zeaxanthin", "Lutein"]
+    evidence_level: "High"
+    studies:
+      - title: "Lutein and zeaxanthin in eye health and disease"
+        source: "Nutrients"
+        year: 2013
+        doi: "10.3390/nu5041169"
+        url: "https://pubmed.ncbi.nlm.nih.gov/23571649/"
 sources:
   - "ICBF Tabla de Composición"
   - "Agrosavia"

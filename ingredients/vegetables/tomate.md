@@ -21,8 +21,8 @@ active_compounds:
     benefit: "Carotenoid pigment, potent antioxidant."
     scientific_ref: "NIH"
 health_registry:
-  - condition: "Prostate Health"
-    mechanism: "Lycopene accumulates in prostate tissue and reduces DNA damage via antioxidant action."
+  - condition: "Prostate Cancer / Prostate Health"
+    mechanism: "Lycopene concentrates in prostatic tissue and scavenges reactive oxygen species, downregulating androgen receptor expression."
     compounds: ["Lycopene"]
     evidence_level: "High"
     studies:
@@ -30,8 +30,9 @@ health_registry:
         source: "Medicine (Baltimore)"
         year: 2015
         doi: "10.1097/MD.0000000000001351"
-  - condition: "Cardiovascular Health"
-    mechanism: "Reduction of LDL oxidation and improvement of endothelial function."
+        url: "https://pubmed.ncbi.nlm.nih.gov/26222459/"
+  - condition: "Atherosclerosis / Endothelial Dysfunction"
+    mechanism: "Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion molecules."
     compounds: ["Lycopene", "Beta-carotene"]
     evidence_level: "High"
     studies:
@@ -39,6 +40,7 @@ health_registry:
         source: "Atherosclerosis"
         year: 2017
         doi: "10.1016/j.atherosclerosis.2017.03.004"
+        url: "https://pubmed.ncbi.nlm.nih.gov/28351743/"
 sources:
   - "USDA FoodData Central"
 tags:

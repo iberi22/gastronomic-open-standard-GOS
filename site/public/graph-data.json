@@ -25468,7 +25468,7 @@
       "color": "#F94144",
       "size": 18,
       "category": "Medium",
-      "mechanism": "Inhibits cholesterol synthesis (HMG-CoA reductase inhibitor behavior)."
+      "mechanism": "Inhibits cholesterol synthesis via HMG-CoA reductase inhibition."
     },
     {
       "id": "vitamin_vitamin_k",
@@ -25501,16 +25501,16 @@
       "color": "#F94144",
       "size": 18,
       "category": "Medium",
-      "mechanism": "Chelating agents in cilantro bind to lead and mercury facilitating excretion."
+      "mechanism": "Polyphenolic chelating agents in cilantro bind to heavy metals facilitating urinary/fecal excretion."
     },
     {
-      "id": "condition_bone_health",
-      "label": "Bone Health",
+      "id": "condition_osteoporosis___bone_health",
+      "label": "Osteoporosis / Bone Health",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Extremely high Vitamin K supports osteocalcin carboxylation."
+      "mechanism": "High concentration of Phylloquinone (Vitamin K1) catalyzes gamma-carboxylation of osteocalcin."
     },
     {
       "id": "vitamin_iron",
@@ -25529,13 +25529,48 @@
       "benefit": "Stimulates salivary glands and digestive enzymes."
     },
     {
-      "id": "condition_digestion",
-      "label": "Digestion",
+      "id": "condition_dyspepsia___indigestion",
+      "label": "Dyspepsia / Indigestion",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Increases activity of digestive enzymes (amylase, protease, lipase)."
+      "mechanism": "Increases activity of digestive enzymes (pancreatic lipase, amylase, trypsin, chymotrypsin) and bile secretion."
+    },
+    {
+      "id": "condition_irritable_bowel_syndrome__ibs_",
+      "label": "Irritable Bowel Syndrome (IBS)",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "Medium",
+      "mechanism": "Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic effects."
+    },
+    {
+      "id": "substance_curcurmin",
+      "label": "Curcurmin",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16,
+      "benefit": "Potent anti-inflammatory polyphenol and NF-kB inhibitor."
+    },
+    {
+      "id": "condition_osteoarthritis___joint_inflammation",
+      "label": "Osteoarthritis / Joint Inflammation",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Downregulates inflammatory cytokines (TNF-alpha, IL-6) and inhibits NF-kB pathway."
+    },
+    {
+      "id": "condition_metabolic_syndrome",
+      "label": "Metabolic Syndrome",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Reduces oxidative stress and improves lipid peroxidation markers."
     },
     {
       "id": "substance_gingerol",
@@ -25560,8 +25595,8 @@
       "type": "condition",
       "color": "#F94144",
       "size": 18,
-      "category": "Medium",
-      "mechanism": "Inhibits COX-2 enzyme similarly to NSAIDs."
+      "category": "High",
+      "mechanism": "Inhibits COX-2 enzyme and lipoxygenase pathways similarly to NSAIDs."
     },
     {
       "id": "vitamin_calcium",
@@ -25711,22 +25746,13 @@
       "benefit": "Plant sterol that helps maintain healthy cholesterol levels."
     },
     {
-      "id": "condition_cardiovascular_health",
-      "label": "Cardiovascular Health",
+      "id": "condition_hypercholesterolemia___cardiovascular_disease",
+      "label": "Hypercholesterolemia / Cardiovascular Disease",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Lowers LDL cholesterol and increases HDL via phytosterols and monounsaturated fats."
-    },
-    {
-      "id": "condition_metabolic_syndrome",
-      "label": "Metabolic Syndrome",
-      "type": "condition",
-      "color": "#F94144",
-      "size": 18,
-      "category": "Medium",
-      "mechanism": "High potassium and fiber improve blood pressure and satiety."
+      "mechanism": "Phytosterols and monounsaturated fatty acids compete for intestinal cholesterol absorption, lowering serum LDL-C."
     },
     {
       "id": "substance_citric_acid",
@@ -25751,16 +25777,16 @@
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Vitamin C and citric acid significantly increase non-heme iron absorption (from beans/lentils) by converting ferric iron to ferrous iron."
+      "mechanism": "Ascorbic acid and citric acid reduce ferric iron (Fe3+) to soluble ferrous iron (Fe2+), enhancing non-heme iron uptake in duodenum."
     },
     {
-      "id": "condition_kidney_stones",
-      "label": "Kidney Stones",
+      "id": "condition_urolithiasis___kidney_stones",
+      "label": "Urolithiasis / Kidney Stones",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
-      "category": "Medium",
-      "mechanism": "Citrate binds urinary calcium, preventing crystallization."
+      "category": "High",
+      "mechanism": "Citrate binds to urinary calcium, inhibiting calcium oxalate crystallization."
     },
     {
       "id": "substance_starch",
@@ -25905,6 +25931,15 @@
       "benefit": "Antioxidant and anti-inflammatory effects."
     },
     {
+      "id": "condition_cardiovascular_health",
+      "label": "Cardiovascular Health",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "High fiber and folate lower homocysteine levels and improve lipid profile."
+    },
+    {
       "id": "condition_weight_management",
       "label": "Weight Management",
       "type": "condition",
@@ -26038,13 +26073,22 @@
       "benefit": "Anti-inflammatory fatty acids (levels vary by species)."
     },
     {
-      "id": "condition_brain_health",
-      "label": "Brain Health",
+      "id": "condition_brain_health___cognitive_decline",
+      "label": "Brain Health / Cognitive Decline",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "DHA is a major structural component of the brain."
+      "mechanism": "DHA is incorporated into neuronal membrane phospholipids, supporting synaptic plasticity."
+    },
+    {
+      "id": "condition_thyroid_function",
+      "label": "Thyroid Function",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Selenium acts as essential cofactor for iodothyronine deiodinases converting T4 to active T3 thyroid hormone."
     },
     {
       "id": "substance_carnosine",
@@ -26088,13 +26132,22 @@
       "benefit": "Phytoestrogens with antioxidant properties (varies by fermentation)."
     },
     {
-      "id": "condition_vegetarian_nutrition",
-      "label": "Vegetarian Nutrition",
+      "id": "condition_digestive_secretion___umami_stimulation",
+      "label": "Digestive Secretion / Umami Stimulation",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Provides Umami flavor (Glutamate) increasing palatability of plant-based dishes."
+      "mechanism": "Free glutamate triggers T1R1/T1R3 umami taste receptors, stimulating gastric secretion and intestinal motility."
+    },
+    {
+      "id": "condition_gastrointestinal_microbiota",
+      "label": "Gastrointestinal Microbiota",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "Medium",
+      "mechanism": "Melanoidins produced during soy sauce fermentation act as prebiotics to improve gut microbial diversity."
     },
     {
       "id": "substance_quercetin",
@@ -26122,6 +26175,15 @@
       "benefit": "Antioxidant flavonoid."
     },
     {
+      "id": "condition_oxidative_stress___cellular_aging",
+      "label": "Oxidative Stress / Cellular Aging",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Flavonoids kaempferol and quercetin neutralize hydroxyl and peroxyl radicals, downregulating lipid peroxidation."
+    },
+    {
       "id": "substance_zeaxanthin",
       "label": "Zeaxanthin",
       "type": "substance",
@@ -26139,13 +26201,13 @@
       "mechanism": "High potassium content counters sodium effects, relaxing blood vessel walls."
     },
     {
-      "id": "condition_digestive_health",
-      "label": "Digestive Health",
+      "id": "condition_macular_degeneration",
+      "label": "Macular Degeneration",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
-      "category": "Medium",
-      "mechanism": "High digestibility starch (easily broken down) suitable for convalescence."
+      "category": "High",
+      "mechanism": "Zeaxanthin accumulates in macular pigment, filtering damaging blue light wavelengths."
     },
     {
       "id": "substance_kukoamines",
@@ -26173,13 +26235,22 @@
       "benefit": "Red carotenoid, strong antioxidant."
     },
     {
-      "id": "condition_immune_support",
-      "label": "Immune Support",
+      "id": "condition_immune_function___infection_defense",
+      "label": "Immune Function / Infection Defense",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Contains 200% DV of Vitamin C per 100g, supporting white blood cell function."
+      "mechanism": "Ascorbic acid enhances neutrophil chemotaxis and phagocytosis while protecting host tissue from reactive oxygen species."
+    },
+    {
+      "id": "condition_cardiovascular_disease",
+      "label": "Cardiovascular Disease",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "Medium",
+      "mechanism": "Capsanthin increases high-density lipoprotein (HDL) cholesterol levels and reduces plasma triglyceride accumulation."
     },
     {
       "id": "substance_simple_sugars__sucrose_glucose_",
@@ -26224,6 +26295,15 @@
       "benefit": "Acts as soluble fiber, feeding beneficial gut bacteria."
     },
     {
+      "id": "condition_digestive_health",
+      "label": "Digestive Health",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Prebiotic effect: increases Short-Chain Fatty Acids (Butyrate) production in colon."
+    },
+    {
       "id": "condition_glycemic_control",
       "label": "Glycemic Control",
       "type": "condition",
@@ -26233,13 +26313,22 @@
       "mechanism": "Reduces postprandial glucose response and insulin sensitivity due to indigestible fraction."
     },
     {
-      "id": "condition_prostate_health",
-      "label": "Prostate Health",
+      "id": "condition_prostate_cancer___prostate_health",
+      "label": "Prostate Cancer / Prostate Health",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Lycopene accumulates in prostate tissue and reduces DNA damage via antioxidant action."
+      "mechanism": "Lycopene concentrates in prostatic tissue and scavenges reactive oxygen species, downregulating androgen receptor expression."
+    },
+    {
+      "id": "condition_atherosclerosis___endothelial_dysfunction",
+      "label": "Atherosclerosis / Endothelial Dysfunction",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion molecules."
     },
     {
       "id": "substance_saponins",
@@ -26256,7 +26345,16 @@
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Naturally gluten-free carbohydrate source."
+      "mechanism": "Naturally gluten-free complex carbohydrate source providing hypoallergenic starches."
+    },
+    {
+      "id": "condition_hypercholesterolemia",
+      "label": "Hypercholesterolemia",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "Medium",
+      "mechanism": "Steroidal saponins form insoluble complexes with intestinal bile acids, promoting cholesterol excretion."
     },
     {
       "id": "substance_beta_carotene",
@@ -26267,13 +26365,22 @@
       "benefit": "Pro-vitamin A, powerful antioxidant."
     },
     {
-      "id": "condition_vision__night_blindness_",
-      "label": "Vision (Night Blindness)",
+      "id": "condition_nyctalopia___night_blindness",
+      "label": "Nyctalopia / Night Blindness",
       "type": "condition",
       "color": "#F94144",
       "size": 18,
       "category": "High",
-      "mechanism": "Beta-carotene converts to Retinol, essential for rhodopsin formation in the retina."
+      "mechanism": "Beta-carotene undergoes cleavage by BCO1 enzyme into retinaldehyde, essential for rhodopsin regeneration in retinal rod cells."
+    },
+    {
+      "id": "condition_age_related_macular_degeneration__amd_",
+      "label": "Age-Related Macular Degeneration (AMD)",
+      "type": "condition",
+      "color": "#F94144",
+      "size": 18,
+      "category": "High",
+      "mechanism": "Carotenoid accumulation in macula lutea filters high-energy blue light and quenches singlet oxygen."
     },
     {
       "id": "diet_vegano",
@@ -26324,21 +26431,293 @@
       "rule": "Proteínas magras"
     },
     {
-      "id": "ingredient_name__e_g___tomate_chonto_",
-      "label": "Name (e.g., Tomate Chonto)",
+      "id": "mixture_ajo___lim_n",
+      "label": "Ajo + Limón",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Vascular & Antimicrobial Potentiation",
+      "synergy_mechanism": "Citric acid stabilizes organosulfur compounds while vitamin C and allicin work synergistically to enhance endothelial nitric oxide production.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "substance_alicina",
+      "label": "Alicina",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance__cido_c_trico",
+      "label": "Ácido Cítrico",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_vitamina_c",
+      "label": "Vitamina C",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_cebolla___ajo",
+      "label": "Cebolla + Ajo",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Cardiovascular & Broad-Spectrum Antimicrobial Synergism",
+      "synergy_mechanism": "Complementary organosulfur pathways decrease platelet aggregation and suppress inflammatory NF-kB activation.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_cebolla_cabezona_blanca",
+      "label": "Cebolla Cabezona Blanca",
       "type": "ingredient",
       "color": "#4ECDC4",
-      "scientific_name": "Scientific Name (e.g., Solanum lycopersicum)",
-      "group": "Group (e.g., Vegetable)",
+      "size": 25,
+      "scientific_name": "Allium cepa",
+      "group": "Vegetable"
+    },
+    {
+      "id": "substance_quercetina",
+      "label": "Quercetina",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_disulfuro_de_dialilo",
+      "label": "Disulfuro de Dialilo",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_comino___cilantro",
+      "label": "Comino + Cilantro",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Digestive Spasmolytic & Anticholinergic Alignment",
+      "synergy_mechanism": "Cuminaldehyde stimulates digestive fluid secretion while linalool relaxes intestinal smooth muscle, alleviating postprandial cramping.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "substance_cuminaldeh_do",
+      "label": "Cuminaldehído",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_linalool",
+      "label": "Linalool",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_c_rcuma___pimienta_negra",
+      "label": "Cúrcuma + Pimienta Negra",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Bioavailability Enhancement",
+      "synergy_mechanism": "Piperine inhibits hepatic and intestinal glucuronidation of curcumin, increasing its bioavailability by 2000%.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_c_rcuma",
+      "label": "Cúrcuma",
+      "type": "ingredient",
+      "color": "#4ECDC4",
+      "size": 25,
+      "scientific_name": "Curcuma longa",
+      "group": "Condiment"
+    },
+    {
+      "id": "substance_curcumina",
+      "label": "Curcumina",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_piperina",
+      "label": "Piperina",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_espinaca___lim_n",
+      "label": "Espinaca + Limón",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Oxalate Inhibition & Iron Uptake",
+      "synergy_mechanism": "Ascorbic acid outcompetes oxalate binding to non-heme iron, preventing insoluble iron oxalate precipitation.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_espinaca",
+      "label": "Espinaca",
+      "type": "ingredient",
+      "color": "#4ECDC4",
       "size": 25
+    },
+    {
+      "id": "substance_hierro_no_h_mico",
+      "label": "Hierro No Hémico",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_oxalatos",
+      "label": "Oxalatos",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_fr_jol___lim_n",
+      "label": "Fríjol + Limón",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Micronutrient Absorption Catalysis",
+      "synergy_mechanism": "Ascorbic acid and citric acid reduce non-heme ferric iron (Fe3+) to soluble ferrous iron (Fe2+) and form soluble chelates resistant to phytates.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_frijol",
+      "label": "Frijol",
+      "type": "ingredient",
+      "color": "#4ECDC4",
+      "size": 25
+    },
+    {
+      "id": "substance__cido_asc_rbico",
+      "label": "Ácido Ascórbico",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_jengibre___lim_n",
+      "label": "Jengibre + Limón",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Antiemetic & Immunomodulatory Potentiation",
+      "synergy_mechanism": "Gingerols modulate gastric motility while flavonoids and vitamin C support respiratory mucosal immunity.",
+      "evidence_level": "High",
+      "size": 22
     },
     {
       "id": "ingredient_jengibre",
       "label": "Jengibre",
       "type": "ingredient",
       "color": "#4ECDC4",
+      "size": 25,
       "scientific_name": "Zingiber officinale",
-      "group": "Condiment",
+      "group": "Condiment"
+    },
+    {
+      "id": "substance_hesperidina",
+      "label": "Hesperidina",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_t__verde___lim_n",
+      "label": "Té Verde + Limón",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Polyphenol Stabilization",
+      "synergy_mechanism": "Ascorbic acid creates an acidic environment that prevents alkaline degradation of catechins (EGCG) in the intestinal lumen.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_t__verde",
+      "label": "Té Verde",
+      "type": "ingredient",
+      "color": "#4ECDC4",
+      "size": 25
+    },
+    {
+      "id": "substance_egcg__epigallocatechin_gallate_",
+      "label": "EGCG (Epigallocatechin gallate)",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_tomate___aceite_de_oliva",
+      "label": "Tomate + Aceite de Oliva",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Lipophilic Absorption Enhancement",
+      "synergy_mechanism": "Lipids from olive oil dissolve fat-soluble lycopene carotenoid, enhancing micellarization and lymphatic transport during digestion.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "ingredient_tomate",
+      "label": "Tomate",
+      "type": "ingredient",
+      "color": "#4ECDC4",
+      "size": 25
+    },
+    {
+      "id": "substance_licopeno",
+      "label": "Licopeno",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance__cido_oleico",
+      "label": "Ácido Oleico",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "mixture_zanahoria___aceite",
+      "label": "Zanahoria + Aceite",
+      "type": "mixture",
+      "color": "#E76F51",
+      "synergy_type": "Carotenoid Bioavailability Enhancement",
+      "synergy_mechanism": "Dietary lipids trigger cholecystokinin release and bile secretion, incorporating fat-soluble beta-carotene into mixed micelles for intestinal absorption.",
+      "evidence_level": "High",
+      "size": 22
+    },
+    {
+      "id": "substance_beta_caroteno",
+      "label": "Beta-caroteno",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "substance_triglic_ridos",
+      "label": "Triglicéridos",
+      "type": "substance",
+      "color": "#9D4EDD",
+      "size": 16
+    },
+    {
+      "id": "ingredient_name__e_g___tomate_chonto_",
+      "label": "Name (e.g., Tomate Chonto)",
+      "type": "ingredient",
+      "color": "#4ECDC4",
+      "scientific_name": "Scientific Name (e.g., Solanum lycopersicum)",
+      "group": "Group (e.g., Vegetable)",
       "size": 25
     },
     {
@@ -29048,15 +29427,6 @@
       "color": "#4ECDC4",
       "scientific_name": "N/A",
       "group": "Sauce",
-      "size": 25
-    },
-    {
-      "id": "ingredient_cebolla_cabezona_blanca",
-      "label": "Cebolla Cabezona Blanca",
-      "type": "ingredient",
-      "color": "#4ECDC4",
-      "scientific_name": "Allium cepa",
-      "group": "Vegetable",
       "size": 25
     },
     {
@@ -68438,7 +68808,7 @@
     },
     {
       "source": "ingredient_cilantro",
-      "target": "condition_bone_health",
+      "target": "condition_osteoporosis___bone_health",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
@@ -68486,15 +68856,93 @@
     },
     {
       "source": "ingredient_comino",
-      "target": "condition_digestion",
+      "target": "condition_dyspepsia___indigestion",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
       "source": "substance_cuminaldehyde",
-      "target": "condition_digestion",
+      "target": "condition_dyspepsia___indigestion",
       "type": "TREATS",
       "weight": 1
+    },
+    {
+      "source": "ingredient_comino",
+      "target": "condition_irritable_bowel_syndrome__ibs_",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_cuminaldehyde",
+      "target": "condition_irritable_bowel_syndrome__ibs_",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "vitamin_iron",
+      "type": "CONTAINS_VITAMIN",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "vitamin_manganese",
+      "type": "CONTAINS_VITAMIN",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "vitamin_potassium",
+      "type": "CONTAINS_VITAMIN",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "nutrient_protein",
+      "type": "HAS_NUTRIENT",
+      "weight": 0.6
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "nutrient_fat",
+      "type": "HAS_NUTRIENT",
+      "weight": 0.6
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "nutrient_carbs",
+      "type": "HAS_NUTRIENT",
+      "weight": 0.6
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "nutrient_fiber",
+      "type": "HAS_NUTRIENT",
+      "weight": 0.6
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "substance_curcurmin",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1
+    },
+    {
+      "source": "substance_curcurmin",
+      "target": "ingredient_c_rcuma",
+      "type": "FOUND_IN",
+      "weight": 0.7
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "condition_osteoarthritis___joint_inflammation",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "condition_metabolic_syndrome",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
     },
     {
       "source": "ingredient_jengibre",
@@ -68936,19 +69384,19 @@
     },
     {
       "source": "ingredient_aguacate__hass_papelillo_",
-      "target": "condition_cardiovascular_health",
+      "target": "condition_hypercholesterolemia___cardiovascular_disease",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
       "source": "substance_oleic_acid",
-      "target": "condition_cardiovascular_health",
+      "target": "condition_hypercholesterolemia___cardiovascular_disease",
       "type": "TREATS",
       "weight": 1
     },
     {
       "source": "substance_beta_sitosterol",
-      "target": "condition_cardiovascular_health",
+      "target": "condition_hypercholesterolemia___cardiovascular_disease",
       "type": "TREATS",
       "weight": 1
     },
@@ -69032,9 +69480,15 @@
     },
     {
       "source": "ingredient_lim_n__lim_n_tahit__criollo_",
-      "target": "condition_kidney_stones",
+      "target": "condition_urolithiasis___kidney_stones",
       "type": "HELPS_CONDITION",
       "weight": 1.2
+    },
+    {
+      "source": "substance_citric_acid",
+      "target": "condition_urolithiasis___kidney_stones",
+      "type": "TREATS",
+      "weight": 1
     },
     {
       "source": "ingredient_almid_n_de_yuca__tapioca_",
@@ -69531,6 +69985,18 @@
     {
       "source": "substance_sesamin",
       "target": "condition_hypertension",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_aceite_de_ajonjol___s_samo_",
+      "target": "condition_hyperlipidemia",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_sesamin",
+      "target": "condition_hyperlipidemia",
       "type": "TREATS",
       "weight": 1
     },
@@ -97634,7 +98100,13 @@
     },
     {
       "source": "ingredient_pescado_blanco__bagre_mojarra_tilapia_",
-      "target": "condition_brain_health",
+      "target": "condition_brain_health___cognitive_decline",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "ingredient_pescado_blanco__bagre_mojarra_tilapia_",
+      "target": "condition_thyroid_function",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
@@ -97802,7 +98274,19 @@
     },
     {
       "source": "ingredient_salsa_de_soya__sillao_",
-      "target": "condition_vegetarian_nutrition",
+      "target": "condition_digestive_secretion___umami_stimulation",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_isoflavones",
+      "target": "condition_digestive_secretion___umami_stimulation",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_salsa_de_soya__sillao_",
+      "target": "condition_gastrointestinal_microbiota",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
@@ -97933,6 +98417,30 @@
       "weight": 0.7
     },
     {
+      "source": "ingredient_cebolla_larga__junca_",
+      "target": "condition_oxidative_stress___cellular_aging",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_kaempferol",
+      "target": "condition_oxidative_stress___cellular_aging",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_cebolla_larga__junca_",
+      "target": "condition_hypertension",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_kaempferol",
+      "target": "condition_hypertension",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
       "source": "ingredient_papa_criolla__amarilla_",
       "target": "vitamin_potassium",
       "type": "CONTAINS_VITAMIN",
@@ -97988,13 +98496,13 @@
     },
     {
       "source": "ingredient_papa_criolla__amarilla_",
-      "target": "condition_digestive_health",
+      "target": "condition_macular_degeneration",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
-      "source": "substance_starch",
-      "target": "condition_digestive_health",
+      "source": "substance_zeaxanthin",
+      "target": "condition_macular_degeneration",
       "type": "TREATS",
       "weight": 1
     },
@@ -98132,9 +98640,33 @@
     },
     {
       "source": "ingredient_piment_n_rojo__pimiento_",
-      "target": "condition_immune_support",
+      "target": "condition_immune_function___infection_defense",
       "type": "HELPS_CONDITION",
       "weight": 1.2
+    },
+    {
+      "source": "substance_capsanthin",
+      "target": "condition_immune_function___infection_defense",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_piment_n_rojo__pimiento_",
+      "target": "condition_cardiovascular_disease",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_capsanthin",
+      "target": "condition_cardiovascular_disease",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "substance_quercetin",
+      "target": "condition_cardiovascular_disease",
+      "type": "TREATS",
+      "weight": 1
     },
     {
       "source": "ingredient_pl_tano_maduro",
@@ -98342,25 +98874,25 @@
     },
     {
       "source": "ingredient_tomate_rojo__maduro_",
-      "target": "condition_prostate_health",
+      "target": "condition_prostate_cancer___prostate_health",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
       "source": "substance_lycopene",
-      "target": "condition_prostate_health",
+      "target": "condition_prostate_cancer___prostate_health",
       "type": "TREATS",
       "weight": 1
     },
     {
       "source": "ingredient_tomate_rojo__maduro_",
-      "target": "condition_cardiovascular_health",
+      "target": "condition_atherosclerosis___endothelial_dysfunction",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
       "source": "substance_lycopene",
-      "target": "condition_cardiovascular_health",
+      "target": "condition_atherosclerosis___endothelial_dysfunction",
       "type": "TREATS",
       "weight": 1
     },
@@ -98425,6 +98957,18 @@
       "weight": 1.2
     },
     {
+      "source": "ingredient_yuca__mandioca_",
+      "target": "condition_hypercholesterolemia",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_saponins",
+      "target": "condition_hypercholesterolemia",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
       "source": "ingredient_zanahoria",
       "target": "vitamin_vitamin_a",
       "type": "CONTAINS_VITAMIN",
@@ -98480,15 +99024,363 @@
     },
     {
       "source": "ingredient_zanahoria",
-      "target": "condition_vision__night_blindness_",
+      "target": "condition_nyctalopia___night_blindness",
       "type": "HELPS_CONDITION",
       "weight": 1.2
     },
     {
       "source": "substance_beta_carotene",
-      "target": "condition_vision__night_blindness_",
+      "target": "condition_nyctalopia___night_blindness",
       "type": "TREATS",
       "weight": 1
+    },
+    {
+      "source": "ingredient_zanahoria",
+      "target": "condition_age_related_macular_degeneration__amd_",
+      "type": "HELPS_CONDITION",
+      "weight": 1.2
+    },
+    {
+      "source": "substance_beta_carotene",
+      "target": "condition_age_related_macular_degeneration__amd_",
+      "type": "TREATS",
+      "weight": 1
+    },
+    {
+      "source": "ingredient_ajo",
+      "target": "mixture_ajo___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_lim_n",
+      "target": "mixture_ajo___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_ajo",
+      "target": "ingredient_lim_n",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_ajo___lim_n",
+      "target": "substance_alicina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_ajo___lim_n",
+      "target": "substance__cido_c_trico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_ajo___lim_n",
+      "target": "substance_vitamina_c",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_cebolla_cabezona_blanca",
+      "target": "mixture_cebolla___ajo",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_ajo",
+      "target": "mixture_cebolla___ajo",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_cebolla_cabezona_blanca",
+      "target": "ingredient_ajo",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_cebolla___ajo",
+      "target": "substance_quercetina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_cebolla___ajo",
+      "target": "substance_alicina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_cebolla___ajo",
+      "target": "substance_disulfuro_de_dialilo",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_comino",
+      "target": "mixture_comino___cilantro",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_cilantro",
+      "target": "mixture_comino___cilantro",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_comino",
+      "target": "ingredient_cilantro",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_comino___cilantro",
+      "target": "substance_cuminaldeh_do",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_comino___cilantro",
+      "target": "substance_linalool",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_comino___cilantro",
+      "target": "substance_dodecenal",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "mixture_c_rcuma___pimienta_negra",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_pimienta_negra",
+      "target": "mixture_c_rcuma___pimienta_negra",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_c_rcuma",
+      "target": "ingredient_pimienta_negra",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_c_rcuma___pimienta_negra",
+      "target": "substance_curcumina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_c_rcuma___pimienta_negra",
+      "target": "substance_piperina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_espinaca",
+      "target": "mixture_espinaca___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_lim_n",
+      "target": "mixture_espinaca___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_espinaca",
+      "target": "ingredient_lim_n",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_espinaca___lim_n",
+      "target": "substance_hierro_no_h_mico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_espinaca___lim_n",
+      "target": "substance_oxalatos",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_espinaca___lim_n",
+      "target": "substance_vitamina_c",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_frijol",
+      "target": "mixture_fr_jol___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_lim_n",
+      "target": "mixture_fr_jol___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_frijol",
+      "target": "ingredient_lim_n",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_fr_jol___lim_n",
+      "target": "substance_hierro_no_h_mico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_fr_jol___lim_n",
+      "target": "substance__cido_asc_rbico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_fr_jol___lim_n",
+      "target": "substance__cido_c_trico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_jengibre",
+      "target": "mixture_jengibre___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_lim_n",
+      "target": "mixture_jengibre___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_jengibre",
+      "target": "ingredient_lim_n",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_jengibre___lim_n",
+      "target": "substance_gingerol",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_jengibre___lim_n",
+      "target": "substance_vitamina_c",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_jengibre___lim_n",
+      "target": "substance_hesperidina",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_t__verde",
+      "target": "mixture_t__verde___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_lim_n",
+      "target": "mixture_t__verde___lim_n",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_t__verde",
+      "target": "ingredient_lim_n",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_t__verde___lim_n",
+      "target": "substance_egcg__epigallocatechin_gallate_",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_t__verde___lim_n",
+      "target": "substance__cido_asc_rbico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_tomate",
+      "target": "mixture_tomate___aceite_de_oliva",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_aceite_de_oliva",
+      "target": "mixture_tomate___aceite_de_oliva",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_tomate",
+      "target": "ingredient_aceite_de_oliva",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_tomate___aceite_de_oliva",
+      "target": "substance_licopeno",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_tomate___aceite_de_oliva",
+      "target": "substance__cido_oleico",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_zanahoria",
+      "target": "mixture_zanahoria___aceite",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_aceite",
+      "target": "mixture_zanahoria___aceite",
+      "type": "PART_OF_MIXTURE",
+      "weight": 1.5
+    },
+    {
+      "source": "ingredient_zanahoria",
+      "target": "ingredient_aceite",
+      "type": "SYNERGIZES",
+      "weight": 2.5
+    },
+    {
+      "source": "mixture_zanahoria___aceite",
+      "target": "substance_beta_caroteno",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
+    },
+    {
+      "source": "mixture_zanahoria___aceite",
+      "target": "substance_triglic_ridos",
+      "type": "HAS_SUBSTANCE",
+      "weight": 1.5
     },
     {
       "source": "ingredient__4_aj_es_picantes_frescos",
@@ -174002,8 +174894,8 @@
     }
   ],
   "metadata": {
-    "total_nodes": 3260,
-    "total_edges": 24146,
+    "total_nodes": 3305,
+    "total_edges": 24233,
     "node_types": [
       "recipe",
       "ingredient",
@@ -174017,7 +174909,8 @@
       "condition",
       "substance",
       "diet",
-      "nutrient"
+      "nutrient",
+      "mixture"
     ]
   }
 }

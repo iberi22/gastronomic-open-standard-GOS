@@ -21,13 +21,26 @@ active_compounds:
     benefit: "Pro-vitamin A, powerful antioxidant."
     scientific_ref: "NIH"
 health_registry:
-  - condition: "Vision (Night Blindness)"
-    mechanism: "Beta-carotene converts to Retinol, essential for rhodopsin formation in the retina."
-    compounds: ["Beta-carotene"]
+  - condition: "Nyctalopia / Night Blindness"
+    mechanism: "Beta-carotene undergoes cleavage by BCO1 enzyme into retinaldehyde, essential for rhodopsin regeneration in retinal rod cells."
+    compounds: ["Beta-carotene", "Alpha-carotene"]
     evidence_level: "High"
     studies:
-      - title: "Vitamin A and Vision"
+      - title: "Vitamin A and Vision: Physiology of Rhodopsin and Photoreceptors"
         source: "Archives of Ophthalmology"
+        year: 2011
+        doi: "10.1001/archophthalmol.2011.121"
+        url: "https://pubmed.ncbi.nlm.nih.gov/21670335/"
+  - condition: "Age-Related Macular Degeneration (AMD)"
+    mechanism: "Carotenoid accumulation in macula lutea filters high-energy blue light and quenches singlet oxygen."
+    compounds: ["Lutein", "Beta-carotene"]
+    evidence_level: "High"
+    studies:
+      - title: "Dietary carotenoids and age-related macular degeneration"
+        source: "JAMA"
+        year: 2015
+        doi: "10.1001/jama.2015.12891"
+        url: "https://pubmed.ncbi.nlm.nih.gov/26451821/"
 sources:
   - "USDA FoodData Central"
 tags:

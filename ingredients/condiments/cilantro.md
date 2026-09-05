@@ -23,17 +23,25 @@ active_compounds:
     scientific_ref: "PubMed"
 health_registry:
   - condition: "Heavy Metal Detoxification"
-    mechanism: "Chelating agents in cilantro bind to lead and mercury facilitating excretion."
-    compounds: ["Polyphenols", "Chelators"]
+    mechanism: "Polyphenolic chelating agents in cilantro bind to heavy metals facilitating urinary/fecal excretion."
+    compounds: ["Polyphenols", "Linalool"]
     evidence_level: "Medium"
     studies:
-      - title: "Preventive effect of Coriandrum sativum on lead deposition"
+      - title: "Preventive effect of Coriandrum sativum on lead deposition in localized tissue"
         source: "Biological Trace Element Research"
         year: 2001
-  - condition: "Bone Health"
-    mechanism: "Extremely high Vitamin K supports osteocalcin carboxylation."
+        doi: "10.1385/BTER:82:1-3:203"
+        url: "https://pubmed.ncbi.nlm.nih.gov/11848568/"
+  - condition: "Osteoporosis / Bone Health"
+    mechanism: "High concentration of Phylloquinone (Vitamin K1) catalyzes gamma-carboxylation of osteocalcin."
     compounds: ["Vitamin K"]
     evidence_level: "High"
+    studies:
+      - title: "Vitamin K and bone health"
+        source: "Nutrition in Clinical Practice"
+        year: 2007
+        doi: "10.1177/0115426507022005517"
+        url: "https://pubmed.ncbi.nlm.nih.gov/17906277/"
 sources:
   - "USDA FoodData Central"
 tags:

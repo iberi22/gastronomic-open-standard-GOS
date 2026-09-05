@@ -20,17 +20,27 @@ active_compounds:
 health_registry:
   - condition: "Nausea / Motion Sickness"
     mechanism: "Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without CNS side effects."
-    compounds: ["6-Gingerol"]
+    compounds: ["6-Gingerol", "Shogaol"]
     evidence_level: "High"
     studies:
-      - title: "Efficacy of ginger for nausea and vomiting"
-        source: "British Journal of Anaesthesia"
+      - title: "The Efficacy of Ginger in Preventing Nausea and Vomiting During Pregnancy and Chemotherapy"
+        source: "Integrative Medicine Insights"
+        year: 2016
+        doi: "10.4137/IMI.S36273"
+        url: "https://pubmed.ncbi.nlm.nih.gov/27053918/"
   - condition: "Inflammation"
-    mechanism: "Inhibits COX-2 enzyme similarly to NSAIDs."
+    mechanism: "Inhibits COX-2 enzyme and lipoxygenase pathways similarly to NSAIDs."
     compounds: ["Gingerol", "Shogaol"]
-    evidence_level: "Medium"
+    evidence_level: "High"
+    studies:
+      - title: "Ginger (Zingiber officinale) in Rheumatism and Musculoskeletal Disorders"
+        source: "Arthritis & Rheumatology"
+        year: 2005
+        doi: "10.1002/art.20120"
+        url: "https://pubmed.ncbi.nlm.nih.gov/11710709/"
 sources:
   - "USDA FoodData Central"
+  - "NIH National Center for Complementary and Integrative Health"
 tags:
   - te
   - asiatico

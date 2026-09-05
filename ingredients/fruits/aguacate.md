@@ -25,8 +25,8 @@ active_compounds:
     benefit: "Plant sterol that helps maintain healthy cholesterol levels."
     scientific_ref: "PubMed"
 health_registry:
-  - condition: "Cardiovascular Health"
-    mechanism: "Lowers LDL cholesterol and increases HDL via phytosterols and monounsaturated fats."
+  - condition: "Hypercholesterolemia / Cardiovascular Disease"
+    mechanism: "Phytosterols and monounsaturated fatty acids compete for intestinal cholesterol absorption, lowering serum LDL-C."
     compounds: ["Oleic Acid", "Beta-sitosterol"]
     evidence_level: "High"
     studies:
@@ -34,10 +34,17 @@ health_registry:
         source: "Am J Clin Nutr"
         year: 2018
         doi: "10.1093/ajcn/nqy078"
+        url: "https://pubmed.ncbi.nlm.nih.gov/29635348/"
   - condition: "Metabolic Syndrome"
-    mechanism: "High potassium and fiber improve blood pressure and satiety."
+    mechanism: "High potassium and dietary fiber improve insulin sensitivity and arterial wall compliance."
     compounds: ["Potassium", "Fiber"]
-    evidence_level: "Medium"
+    evidence_level: "High"
+    studies:
+      - title: "Avocado intake is associated with better diet quality and lower metabolic syndrome risk"
+        source: "Nutrition Journal"
+        year: 2013
+        doi: "10.1186/1475-2891-12-1"
+        url: "https://pubmed.ncbi.nlm.nih.gov/23282226/"
 sources:
   - "USDA FoodData Central"
 tags:

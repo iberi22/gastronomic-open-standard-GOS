@@ -31,13 +31,21 @@ health_registry:
         source: "Public Health Nutrition"
         year: 2009
         doi: "10.1017/s1368980009990273"
+        url: "https://pubmed.ncbi.nlm.nih.gov/19712523/"
       - title: "Glycemic response to beans"
         source: "Nutrition Reviews"
         year: 2014
+        url: "https://pubmed.ncbi.nlm.nih.gov/25227183/"
   - condition: "Gut Health"
     mechanism: "Prebiotic fermentation produces Short-Chain Fatty Acids (SCFAs) like butyrate."
     compounds: ["Resistant Starch", "Oligosaccharides"]
     evidence_level: "Medium"
+    studies:
+      - title: "Fermentation of resistant starch and gut microbiota short-chain fatty acid production"
+        source: "Frontiers in Nutrition"
+        year: 2019
+        doi: "10.3389/fnut.2019.00145"
+        url: "https://pubmed.ncbi.nlm.nih.gov/31572733/"
 sources:
   - "USDA FoodData Central"
 tags:
