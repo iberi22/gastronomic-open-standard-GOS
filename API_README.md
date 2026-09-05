@@ -117,6 +117,20 @@ GOS provides multi-language translation and alias lookup across 20 canonical loc
 curl "https://gos-site.pages.dev/api/v1/translate?entity=ajo&locale=en"
 ```
 
+> Nota de despliegue: GOS es 100% estático (sin SSR), así que este endpoint
+> se prerenderiza como **catálogo completo** (`count` ~987 con `all_aliases`
+> por locale). El filtrado por `entity`/`locale` se hace en cliente:
+
+```js
+const catalog = await fetch(
+  'https://gos-site.pages.dev/api/v1/translate',
+).then((r) => r.json())
+const ajoEn = catalog.results.filter(
+  (r) =>
+    r.id.includes('ajo') || r.name.toLowerCase().includes('ajo'),
+)
+```
+
 ### Response Schema
 
 ```json

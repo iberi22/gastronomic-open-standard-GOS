@@ -2,6 +2,10 @@ import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
 import { buildCatalog, translateEntity } from '../../../lib/translateService'
 
+// NOTA: GOS es output:'static' sin adapter SSR, así que esta ruta se
+// prerenderiza en build como catálogo completo (sin query). Los consumidores
+// filtran en cliente por id/name/all_aliases. El filtrado server-side por
+// query params solo aplicaría con SSR (fuera del alcance del deploy actual).
 export const GET: APIRoute = async ({ url }) => {
   const entity =
     url.searchParams.get('entity') || url.searchParams.get('q') || undefined
