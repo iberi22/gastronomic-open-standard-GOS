@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
+import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // Deploy target: Cloudflare Pages (gos-site.pages.dev, base '/').
@@ -13,6 +14,7 @@ export default defineConfig({
   ],
   vite: {
     plugins: [
+      tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'icons/*', 'images/*'],
