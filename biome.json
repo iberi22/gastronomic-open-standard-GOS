@@ -1,0 +1,47 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.12/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2 },
+  "linter": { "enabled": true },
+  "javascript": {
+    "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "site/dist/**",
+        "site/.astro/**",
+        "site/public/api/**",
+        "site/public/graph-data.json",
+        "site/src/content/**",
+        "dishes/**",
+        "ingredients/**",
+        "tips/**",
+        "**/*.md",
+        "node_modules/**",
+        ".gitcore/**",
+        ".atl/**",
+        ".github/issues/**",
+        ".github/agents/**",
+        "automation/*.json",
+        "docs/archive/**",
+        "docs/explorar-grafo*.html",
+        "**/*.d.ts"
+      ],
+      "formatter": { "enabled": false },
+      "linter": { "enabled": false },
+      "assist": { "enabled": false }
+    },
+    {
+      "includes": ["**/*.astro", "**/*.svelte"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ]
+}

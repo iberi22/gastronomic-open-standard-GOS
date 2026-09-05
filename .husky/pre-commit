@@ -1,1 +1,2 @@
-cd site && npx --yes astro check
+pnpm exec biome ci .
+cd site && pnpm exec astro check

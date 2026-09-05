@@ -7,18 +7,23 @@
 // 2) sino fallback a MemoryAdapter (tests) o IndexedDB (offline).
 // Para Fase 2 no se despliega edge-hive local — solo documenta patron y deja switch listo.
 
-import type { StorageAdapter, DomainRecord } from './domain';
-import { domainConfig } from './domain.config';
+import type { DomainRecord, StorageAdapter } from './domain'
+import { domainConfig } from './domain.config'
 
-const EDGE_HIVE_URL = (import.meta as any).env?.PUBLIC_EDGE_HIVE_URL as string | undefined;
+const EDGE_HIVE_URL = import.meta.env?.PUBLIC_EDGE_HIVE_URL as
+  | string
+  | undefined
 
 // Esqueleto Surreal adapter — no importa surrealdb.js para no romper build si no esta instalado.
 // Cuando se quiera prod, `pnpm add surrealdb` y descomentar el import.
 export class SurrealAdapter implements StorageAdapter {
-  private url: string;
+  private url: string
   constructor(url = EDGE_HIVE_URL) {
-    if (!url) throw new Error('EDGE_HIVE_URL no configurado — usa MemoryAdapter o define PUBLIC_EDGE_HIVE_URL');
-    this.url = url;
+    if (!url)
+      throw new Error(
+        'EDGE_HIVE_URL no configurado — usa MemoryAdapter o define PUBLIC_EDGE_HIVE_URL',
+      )
+    this.url = url
   }
 
   // Nota: estas implementaciones son fetch HTTP placeholder. En produccion usarias:
@@ -31,42 +36,61 @@ export class SurrealAdapter implements StorageAdapter {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(record),
-    });
-    if (!res.ok) throw new Error(`surreal create ${res.status}`);
-    return (await res.json()) as DomainRecord;
+    })
+    if (!res.ok) throw new Error(`surreal create ${res.status}`)
+    return (await res.json()) as DomainRecord
   }
 
   async list(entity: string, instanceId: string): Promise<DomainRecord[]> {
-    const res = await fetch(`${this.url}/api/${domainConfig.appId}/${entity}?instance_id=${encodeURIComponent(instanceId)}`);
-    if (!res.ok) throw new Error(`surreal list ${res.status}`);
-    return (await res.json()) as DomainRecord[];
+    const res = await fetch(
+      `${this.url}/api/${domainConfig.appId}/${entity}?instance_id=${encodeURIComponent(instanceId)}`,
+    )
+    if (!res.ok) throw new Error(`surreal list ${res.status}`)
+    return (await res.json()) as DomainRecord[]
   }
 
-  async get(entity: string, id: string, instanceId: string): Promise<DomainRecord | null> {
-    const res = await fetch(`${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`);
-    if (res.status === 404) return null;
-    if (!res.ok) throw new Error(`surreal get ${res.status}`);
-    return (await res.json()) as DomainRecord;
+  async get(
+    entity: string,
+    id: string,
+    instanceId: string,
+  ): Promise<DomainRecord | null> {
+    const res = await fetch(
+      `${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`,
+    )
+    if (res.status === 404) return null
+    if (!res.ok) throw new Error(`surreal get ${res.status}`)
+    return (await res.json()) as DomainRecord
   }
 
-  async update(entity: string, id: string, patch: Record<string, unknown>, instanceId: string): Promise<DomainRecord | null> {
-    const res = await fetch(`${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(patch),
-    });
-    if (res.status === 404) return null;
-    if (!res.ok) throw new Error(`surreal update ${res.status}`);
-    return (await res.json()) as DomainRecord;
+  async update(
+    entity: string,
+    id: string,
+    patch: Record<string, unknown>,
+    instanceId: string,
+  ): Promise<DomainRecord | null> {
+    const res = await fetch(
+      `${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`,
+      {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(patch),
+      },
+    )
+    if (res.status === 404) return null
+    if (!res.ok) throw new Error(`surreal update ${res.status}`)
+    return (await res.json()) as DomainRecord
   }
 
   async del(entity: string, id: string, instanceId: string): Promise<boolean> {
-    const res = await fetch(`${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`, {
-      method: 'DELETE',
-    });
-    if (res.status === 404) return false;
-    if (!res.ok) throw new Error(`surreal del ${res.status}`);
-    return true;
+    const res = await fetch(
+      `${this.url}/api/${domainConfig.appId}/${entity}/${encodeURIComponent(id)}?instance_id=${encodeURIComponent(instanceId)}`,
+      {
+        method: 'DELETE',
+      },
+    )
+    if (res.status === 404) return false
+    if (!res.ok) throw new Error(`surreal del ${res.status}`)
+    return true
   }
 }
 

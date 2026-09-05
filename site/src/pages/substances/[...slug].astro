@@ -1,22 +1,22 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection, render } from 'astro:content';
-import { substanceJsonLd } from '../../lib/seo';
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import { substanceJsonLd } from '../../lib/seo'
 
 export async function getStaticPaths() {
-  const col = await getCollection('substances');
-  return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+  const col = await getCollection('substances')
+  return col.map((entry) => ({ params: { slug: entry.id }, props: { entry } }))
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
-const s = entry.data as any;
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const title = `${s.name} (${s.formula ?? ''}) — Sustancia GOS`;
-const desc = s.benefit ?? s.sazon ?? `${s.name} sustancia bioactiva`;
-const jsonLd = substanceJsonLd({ slug: entry.id, data: s });
-const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`;
-const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`;
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const s = entry.data
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
+const title = `${s.name} (${s.formula ?? ''}) — Sustancia GOS`
+const desc = s.benefit ?? s.sazon ?? `${s.name} sustancia bioactiva`
+const jsonLd = substanceJsonLd({ slug: entry.id, data: s })
+const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`
+const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`
 ---
 
 <Layout title={title} description={desc} image={s.image}>
@@ -94,7 +94,6 @@ const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-know
               <span class="badge">{h.evidence_level}</span>
             </div>
             {h.mechanism && <p class="mech">{h.mechanism}</p>}
-            {h.compounds && <p class="comps">Compuestos: {h.compounds.join(', ')}</p>}
             {h.studies && (
               <ul class="studies">
                 {h.studies.map(st => (

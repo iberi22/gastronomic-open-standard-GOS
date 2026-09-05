@@ -1,14 +1,14 @@
 ---
-import { Toaster } from '@swal/ui';
-import OfflineBanner from '../components/OfflineBanner.astro';
-import '../styles/global.css';
+import { Toaster } from '@swal/ui'
+import OfflineBanner from '../components/OfflineBanner.astro'
+import '../styles/global.css'
 
 interface Props {
-  title?: string;
-  description?: string;
-  image?: string;
-  canonical?: string;
-  type?: string;
+  title?: string
+  description?: string
+  image?: string
+  canonical?: string
+  type?: string
 }
 
 const {
@@ -16,17 +16,23 @@ const {
   description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity',
   image,
   canonical,
-  type = 'website'
-} = Astro.props;
+  type = 'website',
+} = Astro.props
 
-const base = import.meta.env.BASE_URL;
-const baseClean = base.replace(/\/$/, '');
-const siteOrigin = 'https://gos-site.pages.dev';
+const base = import.meta.env.BASE_URL
+const baseClean = base.replace(/\/$/, '')
+const siteOrigin = 'https://gos-site.pages.dev'
 
-const pathname = Astro.url?.pathname || '/';
-const canonicalUrl = canonical || `${siteOrigin}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
-const defaultImage = `${siteOrigin}/favicon.svg`;
-const imageUrl = image ? (image.startsWith('http') ? image : `${siteOrigin}${image.startsWith('/') ? image : `/${image}`}`) : defaultImage;
+const pathname = Astro.url?.pathname || '/'
+const canonicalUrl =
+  canonical ||
+  `${siteOrigin}${pathname.startsWith('/') ? pathname : `/${pathname}`}`
+const defaultImage = `${siteOrigin}/favicon.svg`
+const imageUrl = image
+  ? image.startsWith('http')
+    ? image
+    : `${siteOrigin}${image.startsWith('/') ? image : `/${image}`}`
+  : defaultImage
 ---
 <!doctype html>
 <html lang="es" data-theme="antigravity">

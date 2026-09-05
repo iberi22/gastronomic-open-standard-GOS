@@ -1,22 +1,24 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection, render } from 'astro:content';
-import { recipeJsonLd } from '../../lib/seo';
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import { recipeJsonLd } from '../../lib/seo'
 
 export async function getStaticPaths() {
-  const col = await getCollection('dishes');
-  return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+  const col = await getCollection('dishes')
+  return col.map((entry) => ({ params: { slug: entry.id }, props: { entry } }))
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
-const data = entry.data as any;
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const data = entry.data
 
 const jsonLd = recipeJsonLd({
   slug: entry.id,
   title: data.title || entry.id,
-  description: data.sensory?.presentation || `${data.title || entry.id} — receta tradicional del Gastronomic Open Standard`,
+  description:
+    data.sensory?.presentation ||
+    `${data.title || entry.id} — receta tradicional del Gastronomic Open Standard`,
   image: data.images?.[0]?.url,
   prepTime: data.prep_time ? `PT${data.prep_time}M` : undefined,
   cookTime: data.cook_time ? `PT${data.cook_time}M` : undefined,
@@ -26,7 +28,7 @@ const jsonLd = recipeJsonLd({
   recipeCuisine: data.region || 'Colombian',
   keywords: data.tags || [],
   nutrition: data.nutrition_per_serving,
-});
+})
 ---
 <Layout
   title={`${data.title || entry.id} — Receta GOS`}
@@ -53,7 +55,6 @@ const jsonLd = recipeJsonLd({
     )}
     <div class="prose"><Content /></div>
     {data.main_ingredients && <p class="ings"><strong>Ingredientes clave:</strong> {data.main_ingredients.join(' • ')}</p>}
-    {data.sources && <p class="src"><small>Fuentes: {data.sources.join(' · ')}</small></p>}
   </article>
 <style>
   .back{ color: var(--swal-accent); text-decoration:none; font-size:12px; }

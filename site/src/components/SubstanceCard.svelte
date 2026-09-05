@@ -1,35 +1,40 @@
 <script lang="ts">
-  import { Card, Badge } from '@swal/ui';
+import { Badge, Card } from '@swal/ui'
 
-  interface Substance {
-    slug: string;
-    data: {
-      name: string;
-      formula?: string;
-      discovery_year?: number;
-      source_ingredient?: string;
-      benefit?: string;
-      sazon?: string;
-      sabor?: string;
-      textura?: string;
-      vitaminas?: string[];
-      compuestos?: string[];
-      tags?: string[];
-      image?: string;
-      image_attribution?: string;
-      health_registry?: Array<{
-        condition: string;
-        mechanism?: string;
-        evidence_level?: string;
-        studies?: Array<{title:string; source:string; year?:number; doi?:string}>;
-      }>;
-    };
+interface Substance {
+  slug: string
+  data: {
+    name: string
+    formula?: string
+    discovery_year?: number
+    source_ingredient?: string
+    benefit?: string
+    sazon?: string
+    sabor?: string
+    textura?: string
+    vitaminas?: string[]
+    compuestos?: string[]
+    tags?: string[]
+    image?: string
+    image_attribution?: string
+    health_registry?: Array<{
+      condition: string
+      mechanism?: string
+      evidence_level?: string
+      studies?: Array<{
+        title: string
+        source: string
+        year?: number
+        doi?: string
+      }>
+    }>
   }
+}
 
-  let { substance, href }: { substance: Substance; href?: string } = $props();
+let { substance, href }: { substance: Substance; href?: string } = $props()
 
-  const s = $derived(substance.data);
-  const url = $derived(href ?? `/substances/${substance.slug}`);
+const s = $derived(substance.data)
+const url = $derived(href ?? `/substances/${substance.slug}`)
 </script>
 
 <a href={url} class="substance-link" aria-label={s.name}>

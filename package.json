@@ -17,8 +17,9 @@
     "build": "node ./.github/readme-generate.js",
     "manuallint": "node .github/manual_lint.js",
     "markdownlint": "markdownlint ./dishes ./tips",
-    "lint": "pnpm run markdownlint && pnpm run manuallint && echo 'Lint finished. All passed.'",
-    "test:e2e": "playwright test"
+    "lint": "pnpm exec biome ci . && pnpm run markdownlint && pnpm run manuallint && echo 'Lint finished. All passed.'",
+    "lint:code": "pnpm exec biome ci .",
+    "prepare": "git config core.hooksPath .husky"
   },
   "author": "Brahyan Belalcazar <iberi22>",
   "license": "Unlicense",
@@ -27,7 +28,9 @@
   },
   "homepage": "https://github.com/iberi22/gastronomic-open-standard-GOS",
   "devDependencies": {
+    "@biomejs/biome": "2.5.12",
     "glob": "^13.0.6",
+    "husky": "9.1.7",
     "markdownlint-cli": "^0.49.1"
   },
   "overrides": {

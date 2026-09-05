@@ -1,20 +1,40 @@
 ---
+import { getCollection } from 'astro:content'
+import SearchBar from '../../components/SearchBar.astro'
 // site/src/pages/recipes/index.astro — searchable + faceted recipe catalog
-import Layout from '../../layouts/Layout.astro';
-import SearchBar from '../../components/SearchBar.astro';
-import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro'
 
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const recipes = await getCollection('dishes');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+interface DishFrontmatter {
+  title?: string
+  region?: string
+  difficulty?: string
+  servings?: string
+  prep_time?: string
+  cook_time?: string
+  sources?: string[]
+  categories?: string[]
+  sensory?: {
+    flavor?: string | string[]
+    texture?: string | string[]
+    aroma?: string | string[]
+  }
+  main_ingredients?: string[]
+}
+const fd = (d: unknown): DishFrontmatter => d as DishFrontmatter
+
+const recipes = await getCollection('dishes')
 const sorted = recipes
-  .filter((r) => (r.data as any).region)
+  .filter((r) => fd(r.data).region)
   .sort((a, b) =>
-    ((a.data as any).title || a.id).localeCompare((b.data as any).title || b.id),
-  );
+    String(fd(a.data).title || a.id).localeCompare(
+      String(fd(b.data).title || b.id),
+    ),
+  )
 
 // Build search index (full list, no slicing)
 const items = sorted.map((r) => {
-  const d = r.data as any;
+  const d = r.data as DishFrontmatter
   return {
     id: r.id,
     name: d.title || r.id.split('/').pop() || r.id,
@@ -22,20 +42,23 @@ const items = sorted.map((r) => {
     difficulty: d.difficulty || '',
     scientific_name: d.categories?.join(', ') || '',
     health: (d.main_ingredients || []).join(', '),
-  };
-});
+  }
+})
 
 // Compute unique facets (top regions by count)
-const regionCounts = new Map<string, number>();
-items.forEach((i) => regionCounts.set(i.region, (regionCounts.get(i.region) || 0) + 1));
+const regionCounts = new Map<string, number>()
+items.forEach((i) => {
+  regionCounts.set(i.region, (regionCounts.get(i.region) || 0) + 1)
+})
 const regionFacets = [...regionCounts.entries()]
   .sort((a, b) => b[1] - a[1])
   .slice(0, 18)
-  .map(([r]) => r);
+  .map(([r]) => r)
 
 // Difficulty facets (top 6)
-const difficultyFacets = [...new Set(items.map((i) => i.difficulty).filter(Boolean))]
-  .slice(0, 6);
+const difficultyFacets = [
+  ...new Set(items.map((i) => i.difficulty).filter(Boolean)),
+].slice(0, 6)
 ---
 
 <Layout title="Recetas — GOS">

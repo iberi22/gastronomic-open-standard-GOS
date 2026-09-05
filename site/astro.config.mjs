@@ -1,7 +1,7 @@
-import { defineConfig } from 'astro/config';
-import svelte from '@astrojs/svelte';
-import tailwindcss from '@tailwindcss/vite';
-import { VitePWA } from 'vite-plugin-pwa';
+import svelte from '@astrojs/svelte'
+import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'astro/config'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Deploy target: Cloudflare Pages (gos-site.pages.dev, base '/').
 // GitHub Pages retired 2026-09-05 (unpublished): single canonical deploy.
@@ -9,9 +9,7 @@ export default defineConfig({
   site: 'https://gos-site.pages.dev',
   base: '/',
   output: 'static',
-  integrations: [
-    svelte(),
-  ],
+  integrations: [svelte()],
   vite: {
     plugins: [
       tailwindcss(),
@@ -25,11 +23,14 @@ export default defineConfig({
             {
               urlPattern: /^https:\/\/api\.swal\.dev\/.*/i,
               handler: 'NetworkFirst',
-              options: { cacheName: 'swal-api', expiration: { maxEntries: 100, maxAgeSeconds: 60 * 5 } },
+              options: {
+                cacheName: 'swal-api',
+                expiration: { maxEntries: 100, maxAgeSeconds: 60 * 5 },
+              },
             },
           ],
         },
       }),
     ],
   },
-});
+})

@@ -1,31 +1,33 @@
 ---
+import { getCollection } from 'astro:content'
+import SearchBar from '../../components/SearchBar.astro'
 // site/src/pages/ingredients/index.astro — searchable + faceted ingredient catalog
-import Layout from '../../layouts/Layout.astro';
-import SearchBar from '../../components/SearchBar.astro';
-import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro'
 
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const ingredients = await getCollection('ingredients');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const ingredients = await getCollection('ingredients')
 
 // Build search index data (full list, no slicing)
 const items = ingredients
   .map((e) => ({
     id: e.id,
-    name: (e.data as any).name || e.id,
-    group: (e.data as any).group || '',
-    scientific_name: (e.data as any).scientific_name || '',
-    health: (e.data as any).health_registry?.[0]?.condition || '',
+    name: e.data.name || e.id,
+    group: e.data.group || '',
+    scientific_name: e.data.scientific_name || '',
+    health: e.data.health_registry?.[0]?.condition || '',
   }))
-  .sort((a, b) => a.name.localeCompare(b.name));
+  .sort((a, b) => a.name.localeCompare(b.name))
 
 // Compute unique facets (group only — top 20 to avoid clutter)
-const allGroups = items.map((i) => i.group).filter(Boolean);
-const groupCounts = new Map<string, number>();
-allGroups.forEach((g) => groupCounts.set(g, (groupCounts.get(g) || 0) + 1));
+const allGroups = items.map((i) => i.group).filter(Boolean)
+const groupCounts = new Map<string, number>()
+allGroups.forEach((g) => {
+  groupCounts.set(g, (groupCounts.get(g) || 0) + 1)
+})
 const facets = [...groupCounts.entries()]
   .sort((a, b) => b[1] - a[1])
   .slice(0, 20)
-  .map(([g]) => g);
+  .map(([g]) => g)
 ---
 
 <Layout title="Ingredientes — GOS">

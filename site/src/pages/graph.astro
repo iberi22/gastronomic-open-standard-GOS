@@ -1,7 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import GraphExplorer from '../components/GraphExplorer.astro';
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+import GraphExplorer from '../components/GraphExplorer.astro'
+import Layout from '../layouts/Layout.astro'
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 ---
 <Layout title="Grafo — GOS Knowledge Graph" description="Grafo global D3: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias">
   <div class="page-head">

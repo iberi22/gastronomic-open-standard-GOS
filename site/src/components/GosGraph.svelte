@@ -1,136 +1,158 @@
 <script lang="ts">
-  import { onMount, tick } from 'svelte';
-  import { Network } from 'vis-network/peer';
-  import { DataSet } from 'vis-data/peer';
-  import type { Edge, Node, Options } from 'vis-network/peer';
+import { onMount, tick } from 'svelte'
+import { DataSet } from 'vis-data/peer'
+import type { Edge, Node, Options } from 'vis-network/peer'
+import { Network } from 'vis-network/peer'
 
-  // Shared graph types for the explorer (issue #235)
-  interface GNodeDatum {
-    id: string;
-    label?: string;
-    type?: string;
-    size?: number;
-  }
-  interface GEdgeDatum {
-    source: string;
-    target: string;
-  }
-  interface GraphData {
-    nodes: GNodeDatum[];
-    edges: GEdgeDatum[];
-  }
+// Shared graph types for the explorer (issue #235)
+interface GNodeDatum {
+  id: string
+  label?: string
+  type?: string
+  size?: number
+}
+interface GEdgeDatum {
+  source: string
+  target: string
+}
+interface GraphData {
+  nodes: GNodeDatum[]
+  edges: GEdgeDatum[]
+}
 
-  let container: HTMLDivElement;
-  let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 });
-  let loading = $state(true);
-  let error = $state<string|null>(null);
+let container: HTMLDivElement
+let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 })
+let loading = $state(true)
+let error = $state<string | null>(null)
 
-  const COLORS: Record<string,string> = {
-    recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
-    flavor: '#FFE66D', texture: '#F38181', technique: '#AA96DA', region: '#7D61FF',
-    place: '#B2E2F2', category: '#90BE6D', condition: '#F94144', substance: '#9D4EDD', diet: '#06D6A0'
-  };
+const COLORS: Record<string, string> = {
+  recipe: '#FF6B6B',
+  ingredient: '#4ECDC4',
+  vitamin: '#F9C74F',
+  nutrient: '#F9C74F',
+  flavor: '#FFE66D',
+  texture: '#F38181',
+  technique: '#AA96DA',
+  region: '#7D61FF',
+  place: '#B2E2F2',
+  category: '#90BE6D',
+  condition: '#F94144',
+  substance: '#9D4EDD',
+  diet: '#06D6A0',
+}
 
-  async function loadGraphData(): Promise<GraphData> {
-    const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
-    const candidates = [
-      `${base}/graph-data.json`,
-      '/graph-data.json',
-      `./graph-data.json`,
-    ];
-    for (const url of candidates) {
-      try {
-        const r = await fetch(url);
-        if (r.ok) return (await r.json()) as GraphData;
-      } catch {}
-    }
-    throw new Error('graph-data.json no encontrado');
-  }
-
-  onMount(async () => {
+async function loadGraphData(): Promise<GraphData> {
+  const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
+  const candidates = [
+    `${base}/graph-data.json`,
+    '/graph-data.json',
+    `./graph-data.json`,
+  ]
+  for (const url of candidates) {
     try {
-      const data = await loadGraphData();
-      stats = {
-        nodes: data.nodes?.length || 0,
-        edges: data.edges?.length || 0,
-        recipes: data.nodes?.filter((n)=>n.type==='recipe').length || 0,
-        ingredients: data.nodes?.filter((n)=>n.type==='ingredient').length || 0
-      };
-      loading = false;
-      await tick();
-      if (container) renderVisNetwork(container, data);
-      else error = 'graph container not mounted';
-    } catch (e) { error = e instanceof Error ? e.message : String(e); loading = false; }
-  });
-
-  function renderVisNetwork(el: HTMLDivElement, data: GraphData) {
-    const nodes: Node[] = (data.nodes || []).slice(0, 180).map((n) => ({
-      id: n.id,
-      label: n.label || n.id,
-      shape: 'dot',
-      size: n.size ? Math.max(8, Math.min(20, n.size / 2)) : 10,
-      color: {
-        background: COLORS[n.type || ''] || '#888888',
-        border: '#000000',
-        highlight: { background: COLORS[n.type || ''] || '#888888', border: '#ffffff' }
-      },
-      font: { color: '#e0e0ff', size: 10, face: 'Inter, system-ui, sans-serif' }
-    }));
-
-    const nodeIds = new Set(nodes.map((n) => n.id));
-    const edges: Edge[] = (data.edges || [])
-      .filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target))
-      .slice(0, 350)
-      .map((e) => ({
-        from: e.source,
-        to: e.target,
-        color: { color: '#2a2a3e', opacity: 0.4 },
-        width: 1
-      }));
-
-    const visData = {
-      nodes: new DataSet(nodes),
-      edges: new DataSet(edges)
-    };
-
-    const options: Options = {
-      nodes: { borderWidth: 1 },
-      edges: {
-        smooth: {
-          enabled: true,
-          type: 'continuous',
-          roundness: 0.5,
-        },
-      },
-      interaction: { hover: true, tooltipDelay: 200 },
-      physics: {
-        solver: 'forceAtlas2Based',
-        forceAtlas2Based: { gravitationalConstant: -30, centralGravity: 0.01, springLength: 60, springConstant: 0.08 },
-        maxVelocity: 40,
-        minVelocity: 0.75,
-        stabilization: { enabled: true, iterations: 100 }
-      }
-    };
-
-    const network = new Network(el, visData, options);
-
-    network.on('stabilizationIterationsDone', () => {
-      network.setOptions({ physics: { enabled: false } });
-    });
-
-    setTimeout(() => {
-      network.setOptions({ physics: { enabled: false } });
-    }, 2500);
-
-    // Clicking a node in homepage mini-graph navigates to /graph?node=<node_id>
-    network.on('click', (params) => {
-      if (params.nodes.length > 0) {
-        const nodeId = params.nodes[0];
-        const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
-        window.location.href = `${base}/graph?node=${encodeURIComponent(nodeId)}`;
-      }
-    });
+      const r = await fetch(url)
+      if (r.ok) return (await r.json()) as GraphData
+    } catch {}
   }
+  throw new Error('graph-data.json no encontrado')
+}
+
+onMount(async () => {
+  try {
+    const data = await loadGraphData()
+    stats = {
+      nodes: data.nodes?.length || 0,
+      edges: data.edges?.length || 0,
+      recipes: data.nodes?.filter((n) => n.type === 'recipe').length || 0,
+      ingredients:
+        data.nodes?.filter((n) => n.type === 'ingredient').length || 0,
+    }
+    loading = false
+    await tick()
+    if (container) renderVisNetwork(container, data)
+    else error = 'graph container not mounted'
+  } catch (e) {
+    error = e instanceof Error ? e.message : String(e)
+    loading = false
+  }
+})
+
+function renderVisNetwork(el: HTMLDivElement, data: GraphData) {
+  const nodes: Node[] = (data.nodes || []).slice(0, 180).map((n) => ({
+    id: n.id,
+    label: n.label || n.id,
+    shape: 'dot',
+    size: n.size ? Math.max(8, Math.min(20, n.size / 2)) : 10,
+    color: {
+      background: COLORS[n.type || ''] || '#888888',
+      border: '#000000',
+      highlight: {
+        background: COLORS[n.type || ''] || '#888888',
+        border: '#ffffff',
+      },
+    },
+    font: { color: '#e0e0ff', size: 10, face: 'Inter, system-ui, sans-serif' },
+  }))
+
+  const nodeIds = new Set(nodes.map((n) => n.id))
+  const edges: Edge[] = (data.edges || [])
+    .filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target))
+    .slice(0, 350)
+    .map((e) => ({
+      from: e.source,
+      to: e.target,
+      color: { color: '#2a2a3e', opacity: 0.4 },
+      width: 1,
+    }))
+
+  const visData = {
+    nodes: new DataSet(nodes),
+    edges: new DataSet(edges),
+  }
+
+  const options: Options = {
+    nodes: { borderWidth: 1 },
+    edges: {
+      smooth: {
+        enabled: true,
+        type: 'continuous',
+        roundness: 0.5,
+      },
+    },
+    interaction: { hover: true, tooltipDelay: 200 },
+    physics: {
+      solver: 'forceAtlas2Based',
+      forceAtlas2Based: {
+        gravitationalConstant: -30,
+        centralGravity: 0.01,
+        springLength: 60,
+        springConstant: 0.08,
+      },
+      maxVelocity: 40,
+      minVelocity: 0.75,
+      stabilization: { enabled: true, iterations: 100 },
+    },
+  }
+
+  const network = new Network(el, visData, options)
+
+  network.on('stabilizationIterationsDone', () => {
+    network.setOptions({ physics: { enabled: false } })
+  })
+
+  setTimeout(() => {
+    network.setOptions({ physics: { enabled: false } })
+  }, 2500)
+
+  // Clicking a node in homepage mini-graph navigates to /graph?node=<node_id>
+  network.on('click', (params) => {
+    if (params.nodes.length > 0) {
+      const nodeId = params.nodes[0]
+      const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
+      window.location.href = `${base}/graph?node=${encodeURIComponent(nodeId)}`
+    }
+  })
+}
 </script>
 
 <div class="gos-graph-wrap">
