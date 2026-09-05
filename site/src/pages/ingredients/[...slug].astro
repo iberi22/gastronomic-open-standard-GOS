@@ -1,69 +1,70 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { ingredientJsonLd } from '../../lib/seo';
+
 export async function getStaticPaths() {
   const col = await getCollection('ingredients');
   return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
 }
+
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const base = import.meta.env.BASE_URL.replace(/\/$/,'');
 const data = entry.data as any;
-const ingredientUrl = `https://gos-site.pages.dev/ingredients/${entry.id}`;
-const nutrition = data.nutrition_per_100g || {};
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'IndividualProduct',
+
+const jsonLd = ingredientJsonLd({
+  slug: entry.id,
   name: data.name || entry.id,
-  url: ingredientUrl,
-  description: `${data.name || entry.id} — ${data.group || 'ingrediente'} — contenido nutricional por 100g`,
-  category: data.group || 'Food',
-  nutrition: {
-    '@type': 'NutritionInformation',
-    calories: nutrition.calories ? `${nutrition.calories} kcal` : undefined,
-    proteinContent: nutrition.protein_g ? `${nutrition.protein_g}g` : undefined,
-    fatContent: nutrition.fat_g ? `${nutrition.fat_g}g` : undefined,
-    carbohydrateContent: nutrition.carbs_g ? `${nutrition.carbs_g}g` : undefined,
-  },
-};
+  scientific_name: data.scientific_name,
+  group: data.group,
+  description: `${data.name || entry.id} — ${data.group || 'ingrediente'} — perfil nutricional y científico del GOS`,
+  image: data.image,
+  nutrition_per_100g: data.nutrition_per_100g,
+  health_registry: data.health_registry,
+});
 ---
-<Layout title={`${(entry.data as any).name} — Ingrediente GOS`}>
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<Layout
+  title={`${data.name || entry.id} — Ingrediente GOS`}
+  description={`${data.name || entry.id} — ${data.group || 'ingrediente'} — información nutricional, compuestos activos y registro de salud`}
+  image={data.image}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <a href={`${base}/ingredients`} class="back">← Ingredientes</a>
   <article class="article">
-    <h1>{(entry.data as any).name} <span class="sci">{(entry.data as any).scientific_name ? `(${(entry.data as any).scientific_name})` : ''}</span></h1>
-    {(entry.data as any).group && <p class="group">Grupo: <strong>{(entry.data as any).group}</strong></p>}
-    {(entry.data as any).nutrition_per_100g && (
+    <h1>{data.name} <span class="sci">{data.scientific_name ? `(${data.scientific_name})` : ''}</span></h1>
+    {data.group && <p class="group">Grupo: <strong>{data.group}</strong></p>}
+    {data.nutrition_per_100g && (
       <div class="box">
         <h3>Nutrición por 100 g</h3>
         <div class="grid-nut">
-          {Object.entries((entry.data as any).nutrition_per_100g).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
+          {Object.entries(data.nutrition_per_100g).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
         </div>
       </div>
     )}
-    {(entry.data as any).micronutrients && (
+    {data.micronutrients && (
       <div class="box">
         <h3>Micronutrientes</h3>
         <div class="grid-nut">
-          {Object.entries((entry.data as any).micronutrients).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
+          {Object.entries(data.micronutrients).map(([k,v])=> <div class="nut"><span class="k">{k}</span><span class="v">{String(v)}</span></div>)}
         </div>
       </div>
     )}
-    {(entry.data as any).active_compounds && (
+    {data.active_compounds && (
       <div class="box">
         <h3>Compuestos bioactivos</h3>
-        <ul>{(entry.data as any).active_compounds.map(c=> <li><strong>{c.name}:</strong> {c.benefit} {c.scientific_ref && <em>({c.scientific_ref})</em>}</li>)}</ul>
+        <ul>{data.active_compounds.map((c: any)=> <li><strong>{c.name}:</strong> {c.benefit} {c.scientific_ref && <em>({c.scientific_ref})</em>}</li>)}</ul>
       </div>
     )}
-    {(entry.data as any).health_registry && (
+    {data.health_registry && (
       <div class="box accent">
         <h3>Health registry — afecciones & beneficios</h3>
-        {(entry.data as any).health_registry.map(h=> (
+        {data.health_registry.map((h: any)=> (
           <div class="health-item">
             <div class="hhead"><strong>{h.condition}</strong> <span class="badge">{h.evidence_level}</span></div>
             <div class="mech">{h.mechanism}</div>
             {h.compounds && <div class="comps">Compuestos: {h.compounds.join(', ')}</div>}
-            {h.studies && <ul>{h.studies.map(s=> <li>{s.title} — <em>{s.source} {s.year}</em> {s.doi && <a href={`https://doi.org/${s.doi}`} target="_blank">{s.doi}</a>}</li>)}</ul>}
+            {h.studies && <ul>{h.studies.map((s: any)=> <li>{s.title} — <em>{s.source} {s.year}</em> {s.doi && <a href={`https://doi.org/${s.doi}`} target="_blank" rel="noopener">{s.doi}</a>}</li>)}</ul>}
           </div>
         ))}
       </div>

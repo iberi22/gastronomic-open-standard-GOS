@@ -19,7 +19,7 @@ const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`;
 const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`;
 ---
 
-<Layout title={title} description={desc}>
+<Layout title={title} description={desc} image={s.image}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline></script>
 
   <a href={`${baseUrl}/substances`} class="back">← Substances</a>

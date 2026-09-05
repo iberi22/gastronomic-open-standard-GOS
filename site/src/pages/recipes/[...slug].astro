@@ -1,53 +1,59 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { recipeJsonLd } from '../../lib/seo';
+
 export async function getStaticPaths() {
   const col = await getCollection('dishes');
   return col.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
 }
+
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const base = import.meta.env.BASE_URL.replace(/\/$/,'');
 const data = entry.data as any;
-const recipeUrl = `https://gos-site.pages.dev/recipes/${entry.id}`;
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Recipe',
-  name: data.title || entry.id,
-  url: recipeUrl,
-  description: data.sensory?.presentation || `${data.title || entry.id} — receta tradicional`,
-  image: data.images?.[0]?.url || undefined,
+
+const jsonLd = recipeJsonLd({
+  slug: entry.id,
+  title: data.title || entry.id,
+  description: data.sensory?.presentation || `${data.title || entry.id} — receta tradicional del Gastronomic Open Standard`,
+  image: data.images?.[0]?.url,
   prepTime: data.prep_time ? `PT${data.prep_time}M` : undefined,
   cookTime: data.cook_time ? `PT${data.cook_time}M` : undefined,
   recipeYield: data.servings ? `${data.servings} servings` : undefined,
   recipeIngredient: data.main_ingredients || [],
   recipeCategory: data.categories?.[0] || 'Main dish',
-  keywords: (data.tags || []).join(', '),
-  about: { '@type': 'Thing', name: data.region || 'Regional' },
-};
+  recipeCuisine: data.region || 'Colombian',
+  keywords: data.tags || [],
+  nutrition: data.nutrition_per_serving,
+});
 ---
-<Layout title={`${(entry.data as any).title || entry.id} — Receta GOS`}>
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<Layout
+  title={`${data.title || entry.id} — Receta GOS`}
+  description={data.sensory?.presentation || `${data.title || entry.id} — receta tradicional del Gastronomic Open Standard`}
+  image={data.images?.[0]?.url}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <a href={`${base}/recipes`} class="back">← Recetas</a>
   <article class="article">
-    <h1>{(entry.data as any).title || entry.id}</h1>
+    <h1>{data.title || entry.id}</h1>
     <div class="meta">
-      {(entry.data as any).region && <span class="pill">{(entry.data as any).region}</span>}
-      {(entry.data as any).difficulty && <span class="pill">{(entry.data as any).difficulty}</span>}
-      {(entry.data as any).prep_time && <span class="pill muted">prep {(entry.data as any).prep_time}</span>}
-      {(entry.data as any).cook_time && <span class="pill muted">cook {(entry.data as any).cook_time}</span>}
-      {(entry.data as any).servings && <span class="pill">🍽️ {(entry.data as any).servings}</span>}
+      {data.region && <span class="pill">{data.region}</span>}
+      {data.difficulty && <span class="pill">{data.difficulty}</span>}
+      {data.prep_time && <span class="pill muted">prep {data.prep_time} min</span>}
+      {data.cook_time && <span class="pill muted">cook {data.cook_time} min</span>}
+      {data.servings && <span class="pill">🍽️ {data.servings}</span>}
     </div>
-    {(entry.data as any).sensory && (
+    {data.sensory && (
       <div class="sensory">
-        {(entry.data as any).sensory.flavor && <div><strong>Sabor:</strong> {Array.isArray((entry.data as any).sensory.flavor) ? (entry.data as any).sensory.flavor.join(', ') : (entry.data as any).sensory.flavor}</div>}
-        {(entry.data as any).sensory.texture && <div><strong>Textura:</strong> {Array.isArray((entry.data as any).sensory.texture) ? (entry.data as any).sensory.texture.join(', ') : (entry.data as any).sensory.texture}</div>}
-        {(entry.data as any).sensory.aroma && <div><strong>Aroma:</strong> {Array.isArray((entry.data as any).sensory.aroma) ? (entry.data as any).sensory.aroma.join(', ') : (entry.data as any).sensory.aroma}</div>}
+        {data.sensory.flavor && <div><strong>Sabor:</strong> {Array.isArray(data.sensory.flavor) ? data.sensory.flavor.join(', ') : data.sensory.flavor}</div>}
+        {data.sensory.texture && <div><strong>Textura:</strong> {Array.isArray(data.sensory.texture) ? data.sensory.texture.join(', ') : data.sensory.texture}</div>}
+        {data.sensory.aroma && <div><strong>Aroma:</strong> {Array.isArray(data.sensory.aroma) ? data.sensory.aroma.join(', ') : data.sensory.aroma}</div>}
       </div>
     )}
     <div class="prose"><Content /></div>
-    {(entry.data as any).main_ingredients && <p class="ings"><strong>Ingredientes clave:</strong> {(entry.data as any).main_ingredients.join(' • ')}</p>}
-    {(entry.data as any).sources && <p class="src"><small>Fuentes: {(entry.data as any).sources.join(' · ')}</small></p>}
+    {data.main_ingredients && <p class="ings"><strong>Ingredientes clave:</strong> {data.main_ingredients.join(' • ')}</p>}
+    {data.sources && <p class="src"><small>Fuentes: {data.sources.join(' · ')}</small></p>}
   </article>
 <style>
   .back{ color: var(--swal-accent); text-decoration:none; font-size:12px; }
