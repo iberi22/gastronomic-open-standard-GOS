@@ -29,15 +29,17 @@ health_registry:
         source: "Nutrients"
         year: 2016
         doi: "10.3390/nu8030167"
+        url: "https://pubmed.ncbi.nlm.nih.gov/26978396/"
   - condition: "Diabetes Management"
     mechanism: "Hypoglycemic effects via increased insulin secretion and sensitivity."
     compounds: ["Sulfur compounds", "Quercetin"]
     evidence_level: "Medium"
     studies:
-      - title: "Effect of raw and cooked onion on blood glucose levels"
+      - title: "Effect of raw and cooked onion on blood glucose levels in type 1 and type 2 diabetic patients"
         source: "Environmental Health Insights"
         year: 2010
         doi: "10.4137/EHI.S5540"
+        url: "https://pubmed.ncbi.nlm.nih.gov/21151698/"
 sources:
   - "USDA FoodData Central"
 tags:

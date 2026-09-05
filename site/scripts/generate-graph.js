@@ -10,6 +10,7 @@ const repoRoot = path.resolve(__dirname, '../../');
 const dishesDir = path.join(repoRoot, 'dishes');
 const ingredientsDir = path.join(repoRoot, 'ingredients');
 const siteContentIngredientsDir = path.join(__dirname, '../src/content/ingredients');
+const siteContentMixturesDir = path.join(__dirname, '../src/content/mixtures');
 
 const outputFileSite = path.join(__dirname, '../graph-data.json');
 const outputFilePublic = path.join(__dirname, '../public/graph-data.json');
@@ -45,6 +46,7 @@ const NODE_COLORS = {
   substance: '#9D4EDD',
   diet: '#06D6A0',
   nutrient: '#F9C74F',
+  mixture: '#E76F51',
 };
 
 const INGREDIENT_CATEGORIES = {
@@ -88,19 +90,6 @@ const DIETS = [
   { id: 'diet_mediterranea', label: 'Mediterránea', rule: 'Aceite oliva, pescado, vegetales' },
   { id: 'diet_alta_proteina', label: 'Alta proteína', rule: 'Proteínas magras' },
 ];
-
-function ensureNode(id, label, type, color, size, extra={}) {
-  if (!nodes.has(id)) nodes.set(id, { id, label, type, color, size, ...extra });
-  return id;
-}
-
-function parseIngredientsScience() {
-  // called inside generateGraph after recipe scan, scans ingredients/ for vitamins/conditions/substances
-  const fs_local = fs;
-  const matter_local = matter;
-  // we need to access nodes/edges from closure; so we will inline later inside generateGraph
-  return;
-}
 
 function isLatinText(text) {
   return /[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]/.test(text) && !/[\u4e00-\u9fa5]/.test(text);
@@ -247,7 +236,6 @@ export function generateGraph() {
                 const vitId = `vitamin_${sanitizeId(vitLabel)}`;
                 if (!nodes.has(vitId)) nodes.set(vitId, { id: vitId, label: vitLabel, type: 'vitamin', color: NODE_COLORS.vitamin, size: 14, unit: nutKey.match(/_(mg|ug|iu)$/)?.[1] || '' });
                 edges.push({ source: ingId, target: vitId, type: 'CONTAINS_VITAMIN', weight: 1 });
-                // vitamin -> condition via health_registry? handle later
               }
             }
             if (fm.nutrition_per_100g) {
@@ -309,6 +297,93 @@ export function generateGraph() {
     walk(ingredientsDir);
     // ensure diet hubs exist even if no tag
     for (const d of DIETS) if (!nodes.has(d.id)) nodes.set(d.id, { id: d.id, label: d.label, type: 'diet', color: NODE_COLORS.diet, size: 18, rule: d.rule });
+  }
+
+  // Scan mixtures content directory
+  function scanMixtures() {
+    if (!fs.existsSync(siteContentMixturesDir)) return;
+    const files = fs.readdirSync(siteContentMixturesDir);
+    for (const file of files) {
+      if (!file.endsWith('.md')) continue;
+      const filePath = path.join(siteContentMixturesDir, file);
+      try {
+        const raw = fs.readFileSync(filePath, 'utf8');
+        const parsed = matter(raw);
+        const fm = parsed.data;
+        if (!fm.name) continue;
+
+        const mixId = `mixture_${sanitizeId(fm.name)}`;
+        nodes.set(mixId, {
+          id: mixId,
+          label: fm.name,
+          type: 'mixture',
+          color: NODE_COLORS.mixture,
+          synergy_type: fm.synergy_type || '',
+          synergy_mechanism: fm.synergy_mechanism || '',
+          evidence_level: fm.evidence_level || '',
+          size: 22
+        });
+
+        // Connect mixture with its ingredients & emit SYNERGIZES edge between ingredients
+        const ingList = Array.isArray(fm.ingredients) ? fm.ingredients : [];
+        const ingIdsList = [];
+        for (const ing of ingList) {
+          const ingId = `ingredient_${sanitizeId(ing)}`;
+          ingIdsList.push(ingId);
+          if (!nodes.has(ingId)) {
+            nodes.set(ingId, {
+              id: ingId,
+              label: ing,
+              type: 'ingredient',
+              color: NODE_COLORS.ingredient,
+              size: 25
+            });
+          }
+          edges.push({
+            source: ingId,
+            target: mixId,
+            type: 'PART_OF_MIXTURE',
+            weight: 1.5
+          });
+        }
+
+        // Add SYNERGIZES edge between all ingredient pairs in the mixture
+        for (let i = 0; i < ingIdsList.length; i++) {
+          for (let j = i + 1; j < ingIdsList.length; j++) {
+            edges.push({
+              source: ingIdsList[i],
+              target: ingIdsList[j],
+              type: 'SYNERGIZES',
+              weight: 2.5
+            });
+          }
+        }
+
+        // Active compounds -> substance nodes + HAS_SUBSTANCE edges
+        if (Array.isArray(fm.active_compounds)) {
+          for (const comp of fm.active_compounds) {
+            const subId = `substance_${sanitizeId(comp)}`;
+            if (!nodes.has(subId)) {
+              nodes.set(subId, {
+                id: subId,
+                label: comp,
+                type: 'substance',
+                color: NODE_COLORS.substance,
+                size: 16
+              });
+            }
+            edges.push({
+              source: mixId,
+              target: subId,
+              type: 'HAS_SUBSTANCE',
+              weight: 1.5
+            });
+          }
+        }
+      } catch (e) {
+        console.warn(`Warning reading mixture ${filePath}:`, e.message);
+      }
+    }
   }
 
   // Find all recipe files in dishesDir
@@ -514,6 +589,7 @@ export function generateGraph() {
 
   scanDishes(dishesDir);
   scanIngredientsScience();
+  scanMixtures();
 
   // Scan scientific ingredient files
   function scanIngredients(dir) {

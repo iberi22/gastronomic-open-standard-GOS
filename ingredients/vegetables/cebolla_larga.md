@@ -17,6 +17,27 @@ active_compounds:
   - name: "Kaempferol"
     benefit: "Antioxidant flavonoid."
     scientific_ref: "PubMed"
+health_registry:
+  - condition: "Oxidative Stress / Cellular Aging"
+    mechanism: "Flavonoids kaempferol and quercetin neutralize hydroxyl and peroxyl radicals, downregulating lipid peroxidation."
+    compounds: ["Kaempferol", "Fistuloside"]
+    evidence_level: "High"
+    studies:
+      - title: "Antioxidant and anti-inflammatory properties of Allium fistulosum L."
+        source: "Food Chemistry"
+        year: 2013
+        doi: "10.1016/j.foodchem.2012.09.112"
+        url: "https://pubmed.ncbi.nlm.nih.gov/23265512/"
+  - condition: "Hypertension"
+    mechanism: "Inhibits angiotensin-converting enzyme (ACE) activity via organosulfur volatiles."
+    compounds: ["Organosulfur compounds", "Kaempferol"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Vasodilatory effect of Welsh onion (Allium fistulosum) extract"
+        source: "Journal of Ethnopharmacology"
+        year: 2011
+        doi: "10.1016/j.jep.2011.02.015"
+        url: "https://pubmed.ncbi.nlm.nih.gov/21356294/"
 sources:
   - "USDA FoodData Central"
 tags:

@@ -31,15 +31,16 @@ health_registry:
         source: "BMC Cardiovascular Disorders"
         year: 2008
         doi: "10.1186/1471-2261-8-13"
+        url: "https://pubmed.ncbi.nlm.nih.gov/18559017/"
   - condition: "Hyperlipidemia"
-    mechanism: "Inhibits cholesterol synthesis (HMG-CoA reductase inhibitor behavior)."
+    mechanism: "Inhibits cholesterol synthesis via HMG-CoA reductase inhibition."
     compounds: ["Ajoene", "Allicin"]
     evidence_level: "Medium"
     studies:
       - title: "Garlic and serum lipids: A meta-analysis"
         source: "J. R. Coll. Physicians"
         year: 1993
-        link: "https://pubmed.ncbi.nlm.nih.gov/8374089/"
+        url: "https://pubmed.ncbi.nlm.nih.gov/8374089/"
 sources:
   - "USDA FoodData Central"
   - "NIH National Center for Complementary and Integrative Health"
@@ -56,7 +57,7 @@ El ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su prin
 
 ## Culinary Uses
 - **Adobos:** Base para marinar carnes y pescados.
-- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).
+- **Arroces:** Se sofríe en el aceite antes de añadir el arroz (arroz de ajo).
 - **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.
 
 ## Health Benefits

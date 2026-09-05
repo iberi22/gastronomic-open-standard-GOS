@@ -26,14 +26,21 @@ health_registry:
     compounds: ["Folate", "Soluble Fiber", "Magnesium"]
     evidence_level: "High"
     studies:
-      - title: "Legume consumption and risk of coronary heart disease"
+      - title: "Legume consumption and risk of coronary heart disease in US men and women"
         source: "Archives of Internal Medicine"
         year: 2001
         doi: "10.1001/archinte.161.21.2573"
+        url: "https://pubmed.ncbi.nlm.nih.gov/11718588/"
   - condition: "Weight Management"
     mechanism: "High protein and fiber content increase satiety and reduce total energy intake."
     compounds: ["Protein", "Fiber"]
     evidence_level: "High"
+    studies:
+      - title: "Effects of dietary pulse consumption on body weight: a systematic review and meta-analysis of randomized controlled trials"
+        source: "American Journal of Clinical Nutrition"
+        year: 2016
+        doi: "10.3945/ajcn.115.124677"
+        url: "https://pubmed.ncbi.nlm.nih.gov/27025822/"
 sources:
   - "USDA FoodData Central"
 tags:

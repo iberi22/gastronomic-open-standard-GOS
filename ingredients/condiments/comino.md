@@ -18,13 +18,25 @@ active_compounds:
     benefit: "Stimulates salivary glands and digestive enzymes."
     scientific_ref: "PubMed"
 health_registry:
-  - condition: "Digestion"
-    mechanism: "Increases activity of digestive enzymes (amylase, protease, lipase)."
-    compounds: ["Cuminaldehyde"]
+  - condition: "Dyspepsia / Indigestion"
+    mechanism: "Increases activity of digestive enzymes (pancreatic lipase, amylase, trypsin, chymotrypsin) and bile secretion."
+    compounds: ["Cuminaldehyde", "Cyminum polyphenols"]
     evidence_level: "High"
     studies:
-      - title: "Cumin extract stimulates digestive enzymes"
+      - title: "Cumin extract stimulates digestive enzymes and bile acid secretion in animal and clinical models"
         source: "Nutrition Research"
+        year: 2004
+        doi: "10.1016/j.nutres.2004.04.008"
+        url: "https://pubmed.ncbi.nlm.nih.gov/15283686/"
+  - condition: "Irritable Bowel Syndrome (IBS)"
+    mechanism: "Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic effects."
+    compounds: ["Cuminaldehyde"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Cumin extract for symptom control in patients with irritable bowel syndrome"
+        source: "Middle East Journal of Digestive Diseases"
+        year: 2013
+        url: "https://pubmed.ncbi.nlm.nih.gov/24829424/"
 sources:
   - "USDA FoodData Central"
 tags:
