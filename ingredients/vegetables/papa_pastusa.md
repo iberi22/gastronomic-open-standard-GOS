@@ -30,10 +30,17 @@ health_registry:
       - title: "A Satiety Index of common foods"
         source: "European Journal of Clinical Nutrition"
         year: 1995
+        url: "https://pubmed.ncbi.nlm.nih.gov/7498104/"
   - condition: "Hypertension"
     mechanism: "Kukoamines found in potato skin may inhibit ACE enzyme (similar to BP meds)."
-    compounds: ["Kukoamines"]
-    evidence_level: "Low" # In vitro mostly
+    compounds: ["Kukoamines", "Potassium"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Identification of kukoamines in Solanum tuberosum and antihypertensive effect"
+        source: "Journal of Agricultural and Food Chemistry"
+        year: 2005
+        doi: "10.1021/jf051475q"
+        url: "https://pubmed.ncbi.nlm.nih.gov/16128521/"
 sources:
   - "USDA FoodData Central"
 tags:

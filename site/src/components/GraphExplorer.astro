@@ -1,6 +1,6 @@
 ---
-// GraphExplorer - Premium D3.js Knowledge Graph for GOS
-// Data: /graph-data.json (1176 nodes, 1465 edges)
+// GraphExplorer - Premium vis-network Knowledge Graph for GOS
+// Data: /graph-data.json (3260 nodes, 24k edges)
 ---
 
 <style>
@@ -32,9 +32,11 @@
   .ge-filter-btn.on.region { color:#7d61ff; border-color:#7d61ff; }
   .ge-filter-btn.on.nutrition { color:#f9c74f; border-color:#f9c74f; }
   .ge-filter-btn.on.category { color:#90be6d; border-color:#90be6d; }
+  .ge-filter-btn.on.substance { color:#9d4edd; border-color:#9d4edd; }
+  .ge-filter-btn.on.condition { color:#f94144; border-color:#f94144; }
+  .ge-filter-btn.on.diet { color:#06d6a0; border-color:#06d6a0; }
   .ge-canvas { position:absolute; top:56px; left:0; right:0; bottom:0; }
-  .ge-canvas svg { width:100%; height:100%; display:block; }
-  .ge-detail { position:absolute; top:56px; right:0; width:300px; height:calc(100% - 56px); background:rgba(12,12,20,0.97); border-left:1px solid #1e1e2e; transform:translateX(100%); transition:transform 0.3s cubic-bezier(0.4,0,0.2,1); z-index:15; overflow-y:auto; }
+  .ge-detail { position:absolute; top:56px; right:0; width:340px; height:calc(100% - 56px); background:rgba(12,12,20,0.97); border-left:1px solid #1e1e2e; transform:translateX(100%); transition:transform 0.3s cubic-bezier(0.4,0,0.2,1); z-index:15; overflow-y:auto; }
   .ge-detail.open { transform:translateX(0); }
   .ge-detail-header { padding:14px 16px; border-bottom:1px solid #1e1e2e; display:flex; align-items:flex-start; justify-content:space-between; position:sticky; top:0; background:rgba(12,12,20,0.98); z-index:2; }
   .ge-detail-type { font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:3px 8px; border-radius:4px; margin-bottom:7px; display:inline-block; }
@@ -55,40 +57,14 @@
   .ge-conn-item { background:#0f0f18; border-radius:6px; padding:6px 9px; font-size:11px; color:#c0c0e0; cursor:pointer; display:flex; align-items:center; gap:7px; transition:background 0.15s; border:1px solid transparent; }
   .ge-conn-item:hover { background:#1a1a2e; border-color:#2a2a3e; color:#fff; }
   .ge-conn-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-  .ge-legend { position:absolute; bottom:12px; left:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:10px; padding:9px 14px; display:flex; flex-wrap:wrap; gap:8px 14px; max-width:420px; z-index:10; }
+  .ge-legend { position:absolute; bottom:12px; left:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:10px; padding:9px 14px; display:flex; flex-wrap:wrap; gap:8px 14px; max-width:480px; z-index:10; }
   .ge-zoom-btn:hover { background:#1e1e30; color:#fff; }
-  .ge-tooltip { position:absolute; background:rgba(10,10,20,0.96); border:1px solid #2a2a3e; border-radius:8px; padding:8px 12px; font-size:11px; color:#e0e0ff; pointer-events:none; z-index:25; max-width:200px; box-shadow:0 4px 20px rgba(0,0,0,0.6); display:none; white-space:nowrap; }
-  .ge-tooltip .tt-type { font-size:9px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-bottom:3px; }
-  .ge-tooltip .tt-label { font-weight:600; color:#fff; margin-bottom:3px; }
-  .ge-tooltip .tt-meta { font-size:10px; color:#8080a0; }
-  .ge-minimap { position:absolute; right:12px; bottom:48px; width:130px; height:90px; background:rgba(10,10,15,0.88); border:1px solid #1e1e2e; border-radius:8px; overflow:hidden; z-index:10; }
-  .ge-minimap svg { width:100%; height:100%; display:block; }
-  .ge-minimap-label { position:absolute; top:4px; left:6px; font-size:8px; color:#4a4a6a; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; pointer-events:none; }
   .ge-legend-item { display:flex; align-items:center; gap:6px; font-size:10px; color:#6060a0; font-weight:500; transition:color 0.15s; cursor:pointer; }
   .ge-legend-item:hover { color:#fff; }
   .ge-legend-item .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-  .ge-legend-item.dimmed { opacity:0.3; }
-  .ge-image-placeholder { width:100%; height:110px; border-radius:8px; margin-bottom:14px; display:flex; align-items:center; justify-content:center; font-size:44px; background:#12121a; border:1px solid #1e1e2e; flex-shrink:0; }
-  .ge-image-thumb { width:100%; height:110px; border-radius:8px; margin-bottom:14px; overflow:hidden; flex-shrink:0; }
-  .ge-image-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
-  .ge-instructions { background:#0f0f18; border-radius:8px; padding:10px 12px; font-size:11px; color:#b0b0d0; line-height:1.65; border-left:3px solid #ff6b35; margin-bottom:14px; }
-  .ge-nutrition-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-bottom:14px; }
-  .ge-nutrition-item { background:#12121a; border-radius:6px; padding:6px 8px; text-align:center; }
-  .ge-nutrition-item .nv { font-size:13px; font-weight:600; color:#f9c74f; }
-  .ge-nutrition-item .nl { font-size:8px; text-transform:uppercase; color:#4a4a6a; letter-spacing:0.08em; margin-top:2px; }
-  .ge-history { background:#0f0f18; border-radius:8px; padding:10px 12px; font-size:11px; color:#b0b0d0; line-height:1.65; border-left:3px solid #7d61ff; margin-bottom:14px; }
-  .ge-technique { display:inline-flex; align-items:center; gap:5px; background:#1a1a2a; border:1px solid #2a2a3e; border-radius:4px; padding:3px 8px; font-size:10px; color:#a8e6cf; margin-bottom:14px; }
-  .ge-related-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#3a3a5a; margin-bottom:5px; }
-  .ge-related-items { display:flex; flex-direction:column; gap:3px; }
-  .ge-related-item { background:#0f0f18; border-radius:6px; padding:6px 9px; font-size:11px; color:#c0c0e0; cursor:pointer; display:flex; align-items:center; gap:7px; transition:background 0.15s; border:1px solid transparent; }
-  .ge-related-item:hover { background:#1a1a2e; border-color:#2a2a3e; color:#fff; }
-  .ge-related-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-  .ge-conn-item .emoji { font-size:14px; width:20px; text-align:center; }
-  .ge-meta-item.full-width { grid-column:1/-1; }
-
   .ge-stats { position:absolute; bottom:12px; right:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:8px; padding:7px 12px; font-size:10px; color:#4a4a6a; display:flex; gap:14px; z-index:10; }
   .ge-stats .s { color:#8080c0; font-weight:600; }
-  .ge-loading { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; color:#4a4a6a; font-size:12px; z-index:5; }
+  .ge-loading { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; color:#4a4a6a; font-size:12px; z-index:5; background:rgba(10,10,15,0.9); }
   .ge-spinner { width:32px; height:32px; border:2px solid #1e1e2e; border-top-color:#7d61ff; border-radius:50%; animation:ge-spin 0.8s linear infinite; }
   @keyframes ge-spin { to{transform:rotate(360deg)} }
   .ge-zoom-btns { position:absolute; right:12px; top:68px; display:flex; flex-direction:column; gap:4px; z-index:10; }
@@ -101,26 +77,18 @@
     <div class="ge-title">GOS Knowledge Graph</div>
     <div class="ge-search">
       <span class="ge-search-icon">&#8981;</span>
-      <input type="text" id="ge-search-input" placeholder="Search recipes, ingredients..." autocomplete="off"/>
+      <input type="text" id="ge-search-input" placeholder="Search recipes, ingredients, compounds..." autocomplete="off"/>
       <div class="ge-search-results" id="ge-search-results"></div>
     </div>
     <div class="ge-filters" id="ge-filters"></div>
   </div>
   <div class="ge-canvas" id="ge-canvas">
-    <div class="ge-loading" id="ge-loading"><div class="ge-spinner"></div><span>Loading knowledge graph...</span></div>
+    <div class="ge-loading" id="ge-loading"><div class="ge-spinner"></div><span>Stabilizing knowledge graph...</span></div>
   </div>
   <div class="ge-zoom-btns">
     <button class="ge-zoom-btn" id="ge-zoom-in">+</button>
     <button class="ge-zoom-btn" id="ge-zoom-out">&#8722;</button>
     <button class="ge-zoom-btn" id="ge-zoom-reset">&#8635;</button>
-  </div>
-  <div class="ge-tooltip" id="ge-tooltip">
-    <div class="tt-type" id="ge-tt-type"></div>
-    <div class="tt-label" id="ge-tt-label"></div>
-    <div class="tt-meta" id="ge-tt-meta"></div>
-  </div>
-  <div class="ge-minimap" id="ge-minimap">
-    <span class="ge-minimap-label">Overview</span>
   </div>
   <div class="ge-detail" id="ge-detail">
     <div class="ge-detail-header">
@@ -140,20 +108,32 @@
   </div>
 </div>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
 <script is:inline>
 (function() {
-  var COLORS = { recipe:'#FF6B6B', ingredient:'#4ECDC4', flavor:'#FFE66D', texture:'#F38181', aroma:'#A8E6CF', region:'#FFE66D', technique:'#AA96DA', nutrition:'#F9C74F', category:'#A8D8A8', place:'#B2E2F2' };
-  var EDGE_COLORS = { HAS_RECIPE:'#7d61ff', USES:'#4ECDC4', USES_INGREDIENT:'#4ECDC4', BELONGS_TO:'#A8D8A8', HAS_FLAVOR:'#FFE66D', HAS_TEXTURE:'#F38181', HAS_AROMA:'#A8E6CF', HAS_MACRO:'#F9C74F', FROM_REGION:'#FFE66D', RELATED_DISHES:'#FF6B6B', PLACE:'#B2E2F2', USES_TECHNIQUE:'#AA96DA', OFTEN_TOGETHER:'#95E1D3' };
-  var EDGE_DIST = { HAS_RECIPE:130, USES:55, USES_INGREDIENT:55, BELONGS_TO:80, HAS_FLAVOR:45, HAS_TEXTURE:45, HAS_AROMA:45, HAS_MACRO:35, FROM_REGION:90, RELATED_DISHES:120, PLACE:70, USES_TECHNIQUE:60, OFTEN_TOGETHER:50 };
-  var TYPE_LABELS = { recipe:'Recipes', ingredient:'Ingredients', flavor:'Flavors', texture:'Textures', aroma:'Aromas', region:'Regions', nutrition:'Nutrition', category:'Categories', place:'Places', technique:'Techniques' };
-  var TYPE_ORDER = ['recipe','region','ingredient','flavor','texture','technique','aroma','nutrition','category','place'];
+  var COLORS = {
+    recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
+    substance: '#9D4EDD', condition: '#F94144', diet: '#06D6A0', flavor: '#FFE66D',
+    texture: '#F38181', aroma: '#A8E6CF', region: '#7D61FF', category: '#90BE6D',
+    place: '#B2E2F2', technique: '#AA96DA'
+  };
 
-  var NODE_EMOJI = { recipe:'\uD83C\uDF72', ingredient:'\uD83E\uDD57', flavor:'\uD83C\uDF36', texture:'\uD83E\uDE79', aroma:'\uD83C\uDF43', region:'\uD83C\uDF0D', nutrition:'\uD83E\uDD57', category:'\uD83C\uDF74' };
-  var TYPE_SINGULAR = { recipe:'Recipe', ingredient:'Ingredient', flavor:'Flavor', texture:'Texture', aroma:'Aroma', region:'Region', nutrition:'Nutrition', category:'Category' };
-  var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES:'Ingredients', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition', FROM_REGION:'Region', RELATED_DISHES:'Related Dishes', PLACE:'Places', USES_TECHNIQUE:'Techniques', OFTEN_TOGETHER:'Often Together' };
+  var TYPE_LABELS = {
+    recipe: 'Recipes', ingredient: 'Ingredients', substance: 'Substances', condition: 'Conditions',
+    diet: 'Diets', flavor: 'Flavors', texture: 'Textures', aroma: 'Aromas',
+    region: 'Regions', category: 'Categories', place: 'Places', technique: 'Techniques'
+  };
 
-  var wrapper = document.getElementById('ge-wrapper');
+  var TYPE_ORDER = ['recipe','ingredient','substance','condition','diet','flavor','texture','aroma','region','category','place','technique'];
+
+  var ETYPE_LABELS = {
+    HAS_RECIPE: 'Recipes', USES: 'Ingredients', USES_INGREDIENT: 'Ingredients', BELONGS_TO: 'Category',
+    HAS_FLAVOR: 'Flavors', HAS_TEXTURE: 'Textures', HAS_AROMA: 'Aromas', HAS_MACRO: 'Nutrition',
+    FROM_REGION: 'Region', RELATED_DISHES: 'Related Dishes', PLACE: 'Places', USES_TECHNIQUE: 'Techniques',
+    OFTEN_TOGETHER: 'Often Together', HELPS_CONDITION: 'Helps Condition', TREATS: 'Treats',
+    HAS_SUBSTANCE: 'Substances', CONTAINS_VITAMIN: 'Vitamins'
+  };
+
   var canvas = document.getElementById('ge-canvas');
   var loading = document.getElementById('ge-loading');
   var detail = document.getElementById('ge-detail');
@@ -167,45 +147,36 @@
   var nodeCountEl = document.getElementById('ge-node-count');
   var edgeCountEl = document.getElementById('ge-edge-count');
   var recipeCountEl = document.getElementById('ge-recipe-count');
-  var tooltip = document.getElementById('ge-tooltip');
-  var minimapEl = document.getElementById('ge-minimap');
-  var ttType = document.getElementById('ge-tt-type');
-  var ttLabel = document.getElementById('ge-tt-label');
-  var ttMeta = document.getElementById('ge-tt-meta');
 
-  var W, H;
   var graphData = null;
-  var filteredNodes = null;
-  var filteredLinks = null;
-  var simulation = null;
-  var svgSel = null;
-  var gSel = null;
-  var zoomBehavior = null;
-  var currentTransform = d3.zoomIdentity;
+  var network = null;
+  var nodesDataSet = null;
+  var edgesDataSet = null;
   var activeTypes = new Set(Object.keys(COLORS));
+  var highlightedNodeId = null;
 
-  function resize() {
-    W = canvas.clientWidth || 900;
-    H = canvas.clientHeight || 660;
-  }
-  resize();
+  var baseUrl = (document.querySelector('meta[name="base-url"]')?.getAttribute('content') || '/').replace(/\/$/, '');
+  var candidates = [baseUrl + '/graph-data.json', '/graph-data.json', './graph-data.json', 'graph-data.json'];
 
-  var ETYPE_LABELS = { HAS_RECIPE:'Recipes', USES_INGREDIENT:'Ingredients', BELONGS_TO:'Category', HAS_FLAVOR:'Flavors', HAS_TEXTURE:'Textures', HAS_AROMA:'Aromas', HAS_MACRO:'Nutrition' };
-
-  fetch('/graph-data.json').then(function(r) { return r.json(); }).then(function(data) {
-    graphData = data;
-    filteredNodes = data.nodes.map(function(n) { return Object.assign({}, n); });
-    filteredLinks = data.edges.map(function(e) { return Object.assign({}, e); });
-
-    var connCount = {};
-    data.edges.forEach(function(e) {
-      var s = e.source && (e.source.id || e.source);
-      var t = e.target && (e.target.id || e.target);
-      if (s) connCount[s] = (connCount[s] || 0) + 1;
-      if (t) connCount[t] = (connCount[t] || 0) + 1;
+  function loadData(index) {
+    if (index >= candidates.length) {
+      loading.innerHTML = '<span style="color:#f38181">Error loading graph data</span>';
+      return;
+    }
+    fetch(candidates[index]).then(function(r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function(data) {
+      onDataLoaded(data);
+    }).catch(function() {
+      loadData(index + 1);
     });
-    filteredNodes.forEach(function(n) { n.connections = connCount[n.id] || 0; });
+  }
 
+  loadData(0);
+
+  function onDataLoaded(data) {
+    graphData = data;
     var recipeNodes = data.nodes.filter(function(n) { return n.type === 'recipe'; });
     nodeCountEl.textContent = data.nodes.length;
     edgeCountEl.textContent = data.edges.length;
@@ -213,11 +184,29 @@
 
     buildFilters(data.nodes);
     buildLegend(data.nodes);
-    initGraph();
-    loading.style.display = 'none';
-  }).catch(function() {
-    loading.innerHTML = '<span style="color:#f38181">Error loading graph data</span>';
-  });
+    initVisNetwork();
+
+    // Check for query parameters ?node= or ?filter=
+    var params = new URLSearchParams(window.location.search);
+    var targetNode = params.get('node');
+    var filterQuery = params.get('filter');
+
+    if (targetNode) {
+      setTimeout(function() { focusAndShowNode(targetNode); }, 800);
+    } else if (filterQuery) {
+      var parts = filterQuery.split(':');
+      if (parts.length === 2) {
+        var fType = parts[0];
+        var fVal = parts[1].toLowerCase();
+        var match = graphData.nodes.find(function(n) {
+          return n.type === fType && (n.id.toLowerCase().includes(fVal) || (n.label && n.label.toLowerCase().includes(fVal)));
+        });
+        if (match) {
+          setTimeout(function() { focusAndShowNode(match.id); }, 800);
+        }
+      }
+    }
+  }
 
   function buildFilters(nodes) {
     var counts = {};
@@ -230,9 +219,9 @@
       btn.dataset.type = t;
       var dot = document.createElement('span');
       dot.className = 'dot';
-      dot.style.background = COLORS[t];
+      dot.style.background = COLORS[t] || '#888';
       btn.appendChild(dot);
-      btn.appendChild(document.createTextNode(TYPE_LABELS[t] + ' (' + counts[t] + ')'));
+      btn.appendChild(document.createTextNode((TYPE_LABELS[t] || t) + ' (' + counts[t] + ')'));
       btn.onclick = function() { toggleType(t, btn); };
       filtersEl.appendChild(btn);
     });
@@ -259,156 +248,247 @@
       item.className = 'ge-legend-item';
       var dot = document.createElement('span');
       dot.className = 'dot';
-      dot.style.background = COLORS[t];
+      dot.style.background = COLORS[t] || '#888';
       item.appendChild(dot);
-      item.appendChild(document.createTextNode(TYPE_LABELS[t] + ' (' + counts[t] + ')'));
+      item.appendChild(document.createTextNode((TYPE_LABELS[t] || t) + ' (' + counts[t] + ')'));
       legendEl.appendChild(item);
     });
   }
 
   function applyFilters() {
-    filteredNodes = graphData.nodes.filter(function(n) {
-      return activeTypes.has(n.type) && (n.connections || 0) >= 0;
-    });
-    var nodeIds = {};
-    filteredNodes.forEach(function(n) { nodeIds[n.id] = true; });
-    filteredLinks = graphData.edges.filter(function(e) {
-      var s = e.source && (e.source.id || e.source);
-      var t = e.target && (e.target.id || e.target);
-      return nodeIds[s] && nodeIds[t];
-    });
-    updateGraph();
+    if (!nodesDataSet || !edgesDataSet || !graphData) return;
+
+    var filteredNodes = graphData.nodes.filter(function(n) {
+      return activeTypes.has(n.type);
+    }).map(formatVisNode);
+
+    var validNodeIds = new Set(filteredNodes.map(function(n) { return n.id; }));
+
+    var filteredEdges = graphData.edges.filter(function(e) {
+      return validNodeIds.has(e.source) && validNodeIds.has(e.target);
+    }).map(formatVisEdge);
+
+    nodesDataSet.clear();
+    edgesDataSet.clear();
+    nodesDataSet.add(filteredNodes);
+    edgesDataSet.add(filteredEdges);
   }
 
-  function initGraph() {
-    svgSel = d3.select(canvas).append('svg').attr('width', '100%').attr('height', '100%');
-
-    var defs = svgSel.append('defs');
-    Object.keys(COLORS).forEach(function(type) {
-      var f = defs.append('filter').attr('id', 'glow-' + type).attr('x','-50%').attr('y','-50%').attr('width','200%').attr('height','200%');
-      f.append('feGaussianBlur').attr('stdDeviation','3').attr('result','blur');
-      var merge = f.append('feMerge');
-      merge.append('feMergeNode').attr('in','blur');
-      merge.append('feMergeNode').attr('in','SourceGraphic');
-    });
-
-    defs.append('clipPath').attr('id','clip').append('rect').attr('width',W).attr('height',H);
-
-    zoomBehavior = d3.zoom().scaleExtent([0.08, 10]).on('zoom', function(e) {
-      currentTransform = e.transform;
-      gSel.attr('transform', e.transform);
-    });
-    svgSel.call(zoomBehavior).on('dblclick.zoom', null);
-
-    gSel = svgSel.append('g').attr('clip-path', 'url(#clip)');
-    gSel.append('g').attr('class', 'edges');
-    gSel.append('g').attr('class', 'nodes');
-
-    simulation = d3.forceSimulation(filteredNodes)
-      .force('link', d3.forceLink(filteredLinks).id(function(n) { return n.id; }).distance(function(e) { return EDGE_DIST[e.type] || 70; }).strength(0.5))
-      .force('charge', d3.forceManyBody().strength(-160).distanceMax(350))
-      .force('center', d3.forceCenter(W/2, H/2))
-      .force('collision', d3.forceCollide().radius(function(n) { return (n.size || 8) + 10; }))
-      .force('x', d3.forceX(W/2).strength(0.025))
-      .force('y', d3.forceY(H/2).strength(0.025))
-      .alphaDecay(0.022);
-
-    simulation.on('tick', ticked);
-    updateGraph();
-
-    var drag = d3.drag()
-      .on('start', function(e, d) { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-      .on('drag', function(e, d) { d.fx = e.x; d.fy = e.y; })
-      .on('end', function(e, d) { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; });
-    svgSel.call(drag);
+  function formatVisNode(n) {
+    var color = COLORS[n.type] || '#888888';
+    var size = n.size ? Math.max(10, Math.min(25, n.size / 2)) : 12;
+    return {
+      id: n.id,
+      label: n.label || n.id,
+      shape: 'dot',
+      size: size,
+      color: {
+        background: color,
+        border: '#000000',
+        highlight: { background: color, border: '#ffffff' },
+        hover: { background: color, border: '#ffffff' }
+      },
+      font: { color: '#e0e0ff', size: 11, face: 'Inter, system-ui, sans-serif' },
+      type: n.type,
+      raw: n
+    };
   }
 
-  function ticked() {
-    gSel.select('.edges').selectAll('line')
-      .attr('x1', function(d) { return Math.max(0, Math.min(W, d.source.x || 0)); })
-      .attr('y1', function(d) { return Math.max(0, Math.min(H, d.source.y || 0)); })
-      .attr('x2', function(d) { return Math.max(0, Math.min(W, d.target.x || 0)); })
-      .attr('y2', function(d) { return Math.max(0, Math.min(H, d.target.y || 0)); });
-    gSel.select('.nodes').selectAll('circle')
-      .attr('cx', function(d) { return Math.max(0, Math.min(W, d.x || 0)); })
-      .attr('cy', function(d) { return Math.max(0, Math.min(H, d.y || 0)); });
-    gSel.select('.nodes').selectAll('text')
-      .attr('x', function(d) { return Math.max(0, Math.min(W, d.x || 0)); })
-      .attr('y', function(d) { return Math.max(0, Math.min(H, (d.y || 0) + (d.size || 8) + 13)); })
-      .attr('opacity', currentTransform.k > 1.3 ? 1 : 0);
+  function formatVisEdge(e, idx) {
+    return {
+      id: e.id ? (e.id + '-' + idx) : (e.source + '-' + e.target + '-' + idx),
+      from: e.source,
+      to: e.target,
+      color: { color: '#2a2a3e', highlight: '#7d61ff', hover: '#7d61ff', opacity: 0.5 },
+      width: 1,
+      raw: e
+    };
   }
 
-  function updateGraph() {
-    if (!gSel || !simulation) return;
+  function initVisNetwork() {
+    var initialNodes = graphData.nodes.map(formatVisNode);
+    var validNodeIds = new Set(initialNodes.map(function(n) { return n.id; }));
+    var initialEdges = graphData.edges.filter(function(e) {
+      return validNodeIds.has(e.source) && validNodeIds.has(e.target);
+    }).map(formatVisEdge);
 
-    var edgeData = filteredLinks;
-    var nodeIds = {};
-    filteredNodes.forEach(function(n) { nodeIds[n.id] = true; });
+    nodesDataSet = new vis.DataSet(initialNodes);
+    edgesDataSet = new vis.DataSet(initialEdges);
 
-    var edges = gSel.select('.edges').selectAll('line')
-      .data(edgeData, function(d) {
-        var s = d.source && (d.source.id || d.source);
-        var t = d.target && (d.target.id || d.target);
-        return s + '-' + t;
+    var visData = { nodes: nodesDataSet, edges: edgesDataSet };
+
+    var options = {
+      nodes: {
+        borderWidth: 1,
+        shadow: true
+      },
+      edges: {
+        smooth: { type: 'continuous' }
+      },
+      interaction: {
+        hover: true,
+        hoverConnectedEdges: true,
+        selectConnectedEdges: true,
+        tooltipDelay: 200
+      },
+      physics: {
+        solver: 'barnesHut',
+        barnesHut: {
+          gravitationalConstant: -4000,
+          centralGravity: 0.3,
+          springLength: 95,
+          springConstant: 0.04,
+          damping: 0.09
+        },
+        maxVelocity: 50,
+        minVelocity: 0.75,
+        stabilization: {
+          enabled: true,
+          iterations: 100,
+          updateInterval: 25
+        }
+      }
+    };
+
+    network = new vis.Network(canvas, visData, options);
+
+    network.on('stabilizationProgress', function(params) {
+      var progress = Math.round((params.iteration / params.total) * 100);
+      loading.querySelector('span').textContent = 'Stabilizing knowledge graph... ' + progress + '%';
+    });
+
+    network.on('stabilizationIterationsDone', function() {
+      loading.style.display = 'none';
+      network.setOptions({ physics: { enabled: false } }); // Freeze after fast stabilization for performance
+    });
+
+    // Fallback timer for physics stabilization < 3s
+    setTimeout(function() {
+      if (loading.style.display !== 'none') {
+        loading.style.display = 'none';
+        network.setOptions({ physics: { enabled: false } });
+      }
+    }, 2800);
+
+    // Click Node Event
+    network.on('click', function(params) {
+      if (params.nodes.length > 0) {
+        var nodeId = params.nodes[0];
+        highlightNeighborhood(nodeId);
+        showDetailById(nodeId);
+      } else {
+        resetHighlight();
+        detail.classList.remove('open');
+      }
+    });
+
+    // Hover Node Event
+    network.on('hoverNode', function(params) {
+      if (!highlightedNodeId) {
+        highlightNeighborhood(params.node);
+      }
+    });
+
+    network.on('blurNode', function() {
+      if (!highlightedNodeId) {
+        resetHighlight();
+      }
+    });
+  }
+
+  function highlightNeighborhood(nodeId) {
+    if (!network || !nodesDataSet || !edgesDataSet) return;
+
+    var connectedNodes = network.getConnectedNodes(nodeId);
+    var connectedEdges = network.getConnectedEdges(nodeId);
+    var allNodes = nodesDataSet.get();
+    var allEdges = edgesDataSet.get();
+
+    var connectedNodeSet = new Set(connectedNodes);
+    connectedNodeSet.add(nodeId);
+    var connectedEdgeSet = new Set(connectedEdges);
+
+    var updatedNodes = [];
+    allNodes.forEach(function(n) {
+      var isConnected = connectedNodeSet.has(n.id);
+      var opacity = isConnected ? 1.0 : 0.15;
+      var color = COLORS[n.type] || '#888';
+      updatedNodes.push({
+        id: n.id,
+        color: {
+          background: isConnected ? color : 'rgba(40,40,60,0.3)',
+          border: isConnected ? (n.id === nodeId ? '#ffffff' : '#000000') : 'rgba(20,20,30,0.3)'
+        },
+        font: { color: isConnected ? '#ffffff' : 'rgba(100,100,140,0.3)' }
       });
-    edges.enter().append('line')
-      .attr('stroke', function(d) { return EDGE_COLORS[d.type] || '#333'; })
-      .attr('stroke-opacity', 0.45)
-      .attr('stroke-width', 1.5)
-      .merge(edges)
-      .attr('stroke', function(d) { return EDGE_COLORS[d.type] || '#333'; });
-    edges.exit().remove();
+    });
 
-    var nodes = gSel.select('.nodes').selectAll('circle')
-      .data(filteredNodes, function(d) { return d.id; });
-    nodes.enter().append('circle')
-      .attr('r', function(d) { return d.size || 8; })
-      .attr('fill', function(d) { return COLORS[d.type] || '#888'; })
-      .attr('stroke', '#000').attr('stroke-width', 0.5)
-      .style('cursor', 'pointer')
-      .on('click', function(e, d) { e.stopPropagation(); showDetail(d); })
-      .on('mouseover', function(e, d) {
-        var typeColor = COLORS[d.type] || '#888';
-        ttType.textContent = TYPE_SINGULAR[d.type] || d.type;
-        ttType.style.color = typeColor;
-        ttLabel.textContent = d.label || d.id;
-        var meta = [];
-        if (d.region) meta.push(d.region);
-        if (d.connections !== undefined) meta.push(d.connections + ' connections');
-        ttMeta.textContent = meta.join(' · ');
-        tooltip.style.display = 'block';
-        tooltip.style.left = (e.offsetX + 14) + 'px';
-        tooltip.style.top = (e.offsetY - 10) + 'px';
-      })
-      .on('mousemove', function(e) {
-        tooltip.style.left = (e.offsetX + 14) + 'px';
-        tooltip.style.top = (e.offsetY - 10) + 'px';
-      })
-      .on('mouseout', function() {
-        tooltip.style.display = 'none';
-      })
-      .merge(nodes)
-      .attr('r', function(d) { return d.size || 8; })
-      .attr('fill', function(d) { return COLORS[d.type] || '#888'; });
-    nodes.exit().remove();
+    var updatedEdges = [];
+    allEdges.forEach(function(e) {
+      var isConnected = connectedEdgeSet.has(e.id);
+      updatedEdges.push({
+        id: e.id,
+        color: { color: isConnected ? '#7d61ff' : 'rgba(30,30,50,0.1)', opacity: isConnected ? 0.9 : 0.05 },
+        width: isConnected ? 2 : 1
+      });
+    });
 
-    var labels = gSel.select('.nodes').selectAll('text')
-      .data(filteredNodes, function(d) { return d.id; });
-    labels.enter().append('text')
-      .text(function(d) { return d.label || d.id; })
-      .attr('font-size', '9px')
-      .attr('font-family', 'Inter, system-ui, sans-serif')
-      .attr('fill', '#5050a0')
-      .attr('text-anchor', 'middle')
-      .attr('pointer-events', 'none')
-      .merge(labels)
-      .text(function(d) { return d.label || d.id; })
-      .attr('opacity', currentTransform.k > 1.3 ? 1 : 0);
-    labels.exit().remove();
+    nodesDataSet.update(updatedNodes);
+    edgesDataSet.update(updatedEdges);
+  }
 
-    simulation.nodes(filteredNodes);
-    simulation.force('link').links(edgeData);
-    simulation.alpha(0.6).restart();
+  function resetHighlight() {
+    if (!nodesDataSet || !edgesDataSet) return;
+    highlightedNodeId = null;
+
+    var allNodes = nodesDataSet.get();
+    var allEdges = edgesDataSet.get();
+
+    var updatedNodes = allNodes.map(function(n) {
+      var color = COLORS[n.type] || '#888';
+      return {
+        id: n.id,
+        color: {
+          background: color,
+          border: '#000000'
+        },
+        font: { color: '#e0e0ff' }
+      };
+    });
+
+    var updatedEdges = allEdges.map(function(e) {
+      return {
+        id: e.id,
+        color: { color: '#2a2a3e', opacity: 0.5 },
+        width: 1
+      };
+    });
+
+    nodesDataSet.update(updatedNodes);
+    edgesDataSet.update(updatedEdges);
+  }
+
+  function focusAndShowNode(id) {
+    if (!graphData || !network) return;
+    highlightedNodeId = id;
+    highlightNeighborhood(id);
+    showDetailById(id);
+    network.focus(id, {
+      scale: 1.2,
+      animation: { duration: 600, easingFunction: 'easeInOutQuad' }
+    });
+  }
+
+  window.focusNode = function(id) {
+    searchResults.classList.remove('active');
+    searchInput.value = '';
+    focusAndShowNode(id);
+  };
+
+  function showDetailById(nodeId) {
+    var rawNode = graphData.nodes.find(function(n) { return n.id === nodeId; });
+    if (!rawNode) return;
+    showDetail(rawNode);
   }
 
   function showDetail(node) {
@@ -419,8 +499,8 @@
 
     var conns = {};
     graphData.edges.forEach(function(e) {
-      var s = e.source && (e.source.id || e.source);
-      var t = e.target && (e.target.id || e.target);
+      var s = e.source;
+      var t = e.target;
       if (s === node.id || t === node.id) {
         var other = s === node.id ? t : s;
         if (!conns[e.type]) conns[e.type] = [];
@@ -430,9 +510,7 @@
     });
 
     var connTotal = graphData.edges.filter(function(e) {
-      var s = e.source && (e.source.id || e.source);
-      var t = e.target && (e.target.id || e.target);
-      return s === node.id || t === node.id;
+      return e.source === node.id || e.target === node.id;
     }).length;
 
     var html = '';
@@ -448,11 +526,32 @@
 
     html += '<div class="ge-meta-item" style="margin-bottom:14px"><div class="l">Connections</div><div class="v">'+connTotal+'</div></div>';
 
+    // Scientific details: compounds, mechanism, studies, linked recipes
+    if (node.active_compounds && node.active_compounds.length) {
+      html += '<div class="ge-section-title">Active Compounds</div><div class="ge-tag-list">';
+      node.active_compounds.forEach(function(c) { html += '<span class="ge-tag" style="border-color:#9d4edd;color:#c896ff">'+c+'</span>'; });
+      html += '</div>';
+    }
+
+    if (node.mechanism) {
+      html += '<div class="ge-section-title">Action Mechanism</div>';
+      html += '<div class="ge-instructions" style="border-left-color:#9d4edd">'+node.mechanism+'</div>';
+    }
+
+    if (node.studies && node.studies.length) {
+      html += '<div class="ge-section-title">Scientific Studies / PubMed</div><div class="ge-tag-list">';
+      node.studies.forEach(function(s) {
+        html += '<a href="'+(s.url || '#')+'" target="_blank" rel="noopener" class="ge-tag" style="color:#00ff66;text-decoration:underline">'+(s.title || s.id || 'Study')+'</a>';
+      });
+      html += '</div>';
+    }
+
     if (node.tags && node.tags.length) {
       html += '<div class="ge-section-title">Tags</div><div class="ge-tag-list">';
       node.tags.forEach(function(t) { html += '<span class="ge-tag">'+t+'</span>'; });
       html += '</div>';
     }
+
     if (node.categories && node.categories.length) {
       html += '<div class="ge-section-title">Categories</div><div class="ge-tag-list">';
       node.categories.forEach(function(c) { html += '<span class="ge-tag">'+c+'</span>'; });
@@ -480,6 +579,7 @@
     detail.classList.add('open');
   }
 
+  // Search input handler
   searchInput.addEventListener('input', function(e) {
     var q = e.target.value.toLowerCase().trim();
     searchResults.classList.remove('active');
@@ -496,34 +596,33 @@
     }).join('');
     searchResults.classList.add('active');
   });
+
   searchInput.addEventListener('blur', function() { setTimeout(function() { searchResults.classList.remove('active'); }, 150); });
 
-  window.focusNode = function(id) {
-    var node = graphData && graphData.nodes.find(function(n) { return n.id === id; });
-    if (!node) return;
-    searchResults.classList.remove('active');
-    searchInput.value = '';
-    showDetail(node);
-    if (node.x !== undefined && node.y !== undefined) {
-      var scale = 3;
-      var tx = W/2 - node.x * scale;
-      var ty = H/2 - node.y * scale;
-      svgSel.transition().duration(800).call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+  document.getElementById('ge-zoom-in').onclick = function() {
+    if (network) {
+      var scale = network.getScale();
+      network.moveTo({ scale: scale * 1.3, animation: { duration: 300 } });
     }
   };
-
-  document.getElementById('ge-zoom-in').onclick = function() { svgSel.transition().duration(300).call(zoomBehavior.scaleBy, 1.5); };
-  document.getElementById('ge-zoom-out').onclick = function() { svgSel.transition().duration(300).call(zoomBehavior.scaleBy, 0.67); };
-  document.getElementById('ge-zoom-reset').onclick = function() { svgSel.transition().duration(500).call(zoomBehavior.transform, d3.zoomIdentity); };
-  document.getElementById('ge-detail-close').onclick = function() { detail.classList.remove('open'); };
+  document.getElementById('ge-zoom-out').onclick = function() {
+    if (network) {
+      var scale = network.getScale();
+      network.moveTo({ scale: scale * 0.7, animation: { duration: 300 } });
+    }
+  };
+  document.getElementById('ge-zoom-reset').onclick = function() {
+    if (network) {
+      network.fit({ animation: { duration: 500 } });
+    }
+  };
+  document.getElementById('ge-detail-close').onclick = function() {
+    detail.classList.remove('open');
+    resetHighlight();
+  };
 
   window.addEventListener('resize', function() {
-    resize();
-    if (svgSel) {
-      svgSel.attr('width', W).attr('height', H);
-      svgSel.select('#clip rect').attr('width', W).attr('height', H);
-      if (simulation) { simulation.force('center', d3.forceCenter(W/2, H/2)); simulation.alpha(0.3).restart(); }
-    }
+    if (network) network.redraw();
   });
 })();
 </script>

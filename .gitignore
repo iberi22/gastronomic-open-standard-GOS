@@ -41,6 +41,10 @@ playwright/.cache/
 
 dishes_backup/
 
+# Cloudflare Worker / Wrangler dev state
+.wrangler/
+worker/.wrangler/
+
 # Astro + Husky leftovers (2026-09-04)
 .astro/
 .husky/*.orig

@@ -19,10 +19,26 @@ active_compounds:
     benefit: "Phytoestrogens with antioxidant properties (varies by fermentation)."
     scientific_ref: "PubMed"
 health_registry:
-  - condition: "Vegetarian Nutrition"
-    mechanism: "Provides Umami flavor (Glutamate) increasing palatability of plant-based dishes."
-    compounds: ["Glutamate"]
+  - condition: "Digestive Secretion / Umami Stimulation"
+    mechanism: "Free glutamate triggers T1R1/T1R3 umami taste receptors, stimulating gastric secretion and intestinal motility."
+    compounds: ["Glutamate", "Isoflavones"]
     evidence_level: "High"
+    studies:
+      - title: "Umami taste perception and salivary/gastric secretion"
+        source: "American Journal of Clinical Nutrition"
+        year: 2009
+        doi: "10.3945/ajcn.2009.27462J"
+        url: "https://pubmed.ncbi.nlm.nih.gov/19640957/"
+  - condition: "Gastrointestinal Microbiota"
+    mechanism: "Melanoidins produced during soy sauce fermentation act as prebiotics to improve gut microbial diversity."
+    compounds: ["Melanoidins"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Prebiotic potential of fermented soy sauce melanoidins"
+        source: "Journal of Agricultural and Food Chemistry"
+        year: 2014
+        doi: "10.1021/jf501239e"
+        url: "https://pubmed.ncbi.nlm.nih.gov/24854580/"
 sources:
   - "USDA FoodData Central"
 tags:

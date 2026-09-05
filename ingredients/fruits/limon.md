@@ -23,17 +23,24 @@ active_compounds:
     scientific_ref: "PubMed"
 health_registry:
   - condition: "Iron Deficiency Anemia"
-    mechanism: "Vitamin C and citric acid significantly increase non-heme iron absorption (from beans/lentils) by converting ferric iron to ferrous iron."
+    mechanism: "Ascorbic acid and citric acid reduce ferric iron (Fe3+) to soluble ferrous iron (Fe2+), enhancing non-heme iron uptake in duodenum."
     compounds: ["Vitamin C", "Citric Acid"]
     evidence_level: "High"
     studies:
-      - title: "Ascorbic acid and iron absorption"
+      - title: "Ascorbic acid and iron absorption from legumes and vegetables"
         source: "International Journal for Vitamin and Nutrition Research"
         year: 2004
-  - condition: "Kidney Stones"
-    mechanism: "Citrate binds urinary calcium, preventing crystallization."
-    compounds: ["Citrate"]
-    evidence_level: "Medium"
+        url: "https://pubmed.ncbi.nlm.nih.gov/15535312/"
+  - condition: "Urolithiasis / Kidney Stones"
+    mechanism: "Citrate binds to urinary calcium, inhibiting calcium oxalate crystallization."
+    compounds: ["Citrate", "Citric Acid"]
+    evidence_level: "High"
+    studies:
+      - title: "Lemonade therapy reduces urinary calcium oxalate supersaturation"
+        source: "Journal of Urology"
+        year: 2008
+        doi: "10.1016/j.juro.2007.10.032"
+        url: "https://pubmed.ncbi.nlm.nih.gov/18280518/"
 sources:
   - "USDA FoodData Central"
 tags:

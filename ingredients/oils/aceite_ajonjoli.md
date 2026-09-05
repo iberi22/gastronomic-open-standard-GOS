@@ -19,9 +19,24 @@ active_compounds:
     scientific_ref: "PubMed"
 health_registry:
   - condition: "Hypertension"
-    mechanism: "Sesamin and Sesamol improve endothelial function and reduce oxidative stress."
+    mechanism: "Sesamin and sesamolin lignans increase endothelial nitric oxide synthase expression, lowering arterial blood pressure."
+    compounds: ["Sesamin", "Sesamolin"]
+    evidence_level: "High"
+    studies:
+      - title: "Effect of sesame oil on blood pressure and lipid peroxidation in hypertensive patients"
+        source: "Yale Journal of Biology and Medicine"
+        year: 2006
+        url: "https://pubmed.ncbi.nlm.nih.gov/17873849/"
+  - condition: "Hyperlipidemia"
+    mechanism: "Inhibits intestinal cholesterol absorption and upregulates hepatic gene expression for fatty acid oxidation."
     compounds: ["Sesamin"]
-    evidence_level: "Medium"
+    evidence_level: "High"
+    studies:
+      - title: "Sesamin decreases serum cholesterol levels in hypocholesterolemic subjects"
+        source: "Journal of Nutritional Science and Vitaminology"
+        year: 2012
+        doi: "10.3177/jnsv.58.206"
+        url: "https://pubmed.ncbi.nlm.nih.gov/22878438/"
 sources:
   - "USDA FoodData Central"
 tags:

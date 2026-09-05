@@ -20,10 +20,26 @@ active_compounds:
     benefit: "Red carotenoid, strong antioxidant."
     scientific_ref: "PubMed"
 health_registry:
-  - condition: "Immune Support"
-    mechanism: "Contains 200% DV of Vitamin C per 100g, supporting white blood cell function."
-    compounds: ["Vitamin C"]
+  - condition: "Immune Function / Infection Defense"
+    mechanism: "Ascorbic acid enhances neutrophil chemotaxis and phagocytosis while protecting host tissue from reactive oxygen species."
+    compounds: ["Vitamin C", "Capsanthin"]
     evidence_level: "High"
+    studies:
+      - title: "Vitamin C and Immune Function"
+        source: "Nutrients"
+        year: 2017
+        doi: "10.3390/nu9111211"
+        url: "https://pubmed.ncbi.nlm.nih.gov/29099763/"
+  - condition: "Cardiovascular Disease"
+    mechanism: "Capsanthin increases high-density lipoprotein (HDL) cholesterol levels and reduces plasma triglyceride accumulation."
+    compounds: ["Capsanthin", "Quercetin"]
+    evidence_level: "Medium"
+    studies:
+      - title: "Capsanthin, a carotenoid from paprika, increases HDL-cholesterol levels in rats"
+        source: "British Journal of Nutrition"
+        year: 2009
+        doi: "10.1017/S0007114508144005"
+        url: "https://pubmed.ncbi.nlm.nih.gov/19087363/"
 sources:
   - "USDA FoodData Central"
 tags:

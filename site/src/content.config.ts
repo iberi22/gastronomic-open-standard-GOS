@@ -64,6 +64,27 @@ const substancesCollection = defineCollection({
   }).passthrough(),
 });
 
+const mixturesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/mixtures' }),
+  schema: z.object({
+    name: z.string(),
+    ingredients: z.array(z.string()),
+    active_compounds: z.array(z.string()).optional(),
+    synergy_type: z.string().optional(),
+    synergy_mechanism: z.string().optional(),
+    contraindications: z.array(z.string()).optional(),
+    evidence_level: z.string().optional(),
+    sources: z.array(z.string()).optional(),
+    studies: z.array(z.object({
+      title: z.string(),
+      source: z.string(),
+      year: z.number().optional(),
+      doi: z.string().optional(),
+      url: z.string().optional(),
+    })).optional(),
+  }).passthrough(),
+});
+
 export const collections = {
   'dishes': dishesCollection,
   'tips': tipsCollection,
@@ -72,4 +93,5 @@ export const collections = {
   'conditions': conditionsCollection,
   'diets': dietsCollection,
   'substances': substancesCollection,
+  'mixtures': mixturesCollection,
 };

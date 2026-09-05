@@ -2,10 +2,31 @@
 import { Toaster } from '@swal/ui';
 import OfflineBanner from '../components/OfflineBanner.astro';
 import '../styles/global.css';
-interface Props { title?: string; description?: string; }
-const { title = 'GOS — Gastronomic Open Standard', description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity' } = Astro.props;
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: string;
+}
+
+const {
+  title = 'GOS — Gastronomic Open Standard',
+  description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity',
+  image,
+  canonical,
+  type = 'website'
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL;
 const baseClean = base.replace(/\/$/, '');
+const siteOrigin = 'https://gos-site.pages.dev';
+
+const pathname = Astro.url?.pathname || '/';
+const canonicalUrl = canonical || `${siteOrigin}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
+const defaultImage = `${siteOrigin}/favicon.svg`;
+const imageUrl = image ? (image.startsWith('http') ? image : `${siteOrigin}${image.startsWith('/') ? image : `/${image}`}`) : defaultImage;
 ---
 <!doctype html>
 <html lang="es" data-theme="antigravity">
@@ -15,6 +36,26 @@ const baseClean = base.replace(/\/$/, '');
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="theme-color" content="#050507" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="Gastronomic Open Standard" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gos_standard" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
     <link rel="manifest" href={`${baseClean}/manifest.json`} />
     <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +114,7 @@ const baseClean = base.replace(/\/$/, '');
       <!-- mobile nav -->
       <div class="lg:hidden flex items-center gap-1 px-4 sm:px-6 pb-2 overflow-x-auto">
         <a href={`${baseClean}/graph`} class="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border inline-flex items-center gap-1.5" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: var(--swal-border);">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
           Grafo
         </a>
         <a href={`${baseClean}/recipes`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
