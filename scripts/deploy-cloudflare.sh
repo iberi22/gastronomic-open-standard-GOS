@@ -40,7 +40,7 @@ echo "==> [1/4] install (frozen lockfile)"
 echo "==> [2/4] generate content"
 (cd "$SITE_DIR" && node scripts/copy-content.js && node scripts/generate-api.js \
   && node scripts/generate-catalog.js && node scripts/enrich-ingredients.js \
-  && node scripts/generate-graph.js)
+  && node scripts/generate-graph.js && node scripts/export-vectors.mjs)
 
 echo "==> [3/4] astro build"
 (cd "$SITE_DIR" && pnpm exec astro build)

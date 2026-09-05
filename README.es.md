@@ -217,6 +217,17 @@ Este proyecto es una evolución de [HowToCook](https://github.com/Anduin2017/How
 - [Yuca](ingredients/vegetables/yuca.md)
 - [Zanahoria](ingredients/vegetables/zanahoria.md)
 
+## 🧠 Snapshots de Vectores y Embeddings (Descarga Masiva GOS DB)
+
+GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 383 platos, 30 substancias**).
+
+- **Manifiesto**: [`/api/vectors/index.json`](https://gos-site.pages.dev/api/vectors/index.json)
+- **Vectores Fragmentados**: `/api/vectors/vectors-1.json`, `vectors-2.json` (<10MB cada archivo)
+- **Modelo por Defecto**: `Xenova/all-MiniLM-L6-v2` (384 dimensiones)
+- **Esquema de Registro**: `{ "id": string, "type": "ingredient"|"dish"|"substance", "text": string, "embedding": number[] }`
+
+Ver documentación detallada de la API en [API_README.md](./API_README.md).
+
 ## Contribuir
 
 Por favor lee [CONTRIBUTING.es.md](./CONTRIBUTING.es.md) para detalles sobre nuestro código de conducta y el proceso para enviarnos pull requests.

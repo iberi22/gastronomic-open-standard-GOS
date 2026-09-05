@@ -132,6 +132,17 @@ docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
 - [Oil Temperature Judgment Techniques](tips/advanced/Oil Temperature Judgment Techniques.md)
 - [Sugar Color Stir-Frying](tips/advanced/Sugar Color Stir-Frying.md)
 
+## 🧠 Vector Embeddings Snapshot (GOS DB Bulk Download)
+
+GOS exports a versioned vector embeddings snapshot covering live collections (**552 ingredients, 383 dishes, 30 substances**).
+
+- **Manifest Endpoint**: [`/api/vectors/index.json`](https://gos-site.pages.dev/api/vectors/index.json)
+- **Sharded Embeddings**: `/api/vectors/vectors-1.json`, `vectors-2.json` (<10MB each)
+- **Default Model**: `Xenova/all-MiniLM-L6-v2` (384 dimensions)
+- **Record Format**: `{ "id": string, "type": "ingredient"|"dish"|"substance", "text": string, "embedding": number[] }`
+
+Full API documentation available in [API_README.md](./API_README.md).
+
 ## 衍生作品推荐
 
 - [HowToCook-mcp 让 AI 助手变身私人大厨，为你的一日三餐出谋划策](https://github.com/worryzyy/HowToCook-mcp)
