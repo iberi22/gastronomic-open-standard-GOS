@@ -1,4 +1,4 @@
-// seo.ts — JSON-LD generators for schema.org Recipe / Ingredient / ChemicalSubstance (GOS-03)
+// seo.ts — JSON-LD generators for schema.org Recipe / Ingredient / ChemicalSubstance (GOS-03/GOS-06)
 // Used in recipes, ingredients, substances pages via <script type="application/ld+json">
 
 export interface RecipeLDInput {
@@ -13,6 +13,8 @@ export interface RecipeLDInput {
   recipeCuisine?: string;
   cookTime?: string;
   prepTime?: string;
+  recipeYield?: string;
+  recipeIngredient?: string[];
   nutrition?: Record<string, unknown>;
 }
 
@@ -20,6 +22,7 @@ export interface IngredientLDInput {
   slug: string;
   name: string;
   scientific_name?: string;
+  group?: string;
   description?: string;
   image?: string;
   nutrition_per_100g?: Record<string, unknown>;
@@ -50,11 +53,11 @@ export interface SubstanceLDInput {
   };
 }
 
-const SITE_URL = (import.meta.env.PUBLIC_SITE_URL || "https://gos-site.pages.dev").replace(/\/$/, "");
+const SITE_URL = (import.meta.env?.PUBLIC_SITE_URL || "https://gos-site.pages.dev").replace(/\/$/, "");
 
-function absUrl(path: string): string {
+export function absUrl(path?: string): string {
   if (!path) return SITE_URL;
-  if (path.startsWith("http")) return path;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
   const clean = path.startsWith("/") ? path : `/${path}`;
   return `${SITE_URL}${clean}`;
 }
@@ -68,12 +71,13 @@ export function recipeJsonLd(input: RecipeLDInput) {
     author: input.author ? { "@type": "Person", name: input.author } : { "@type": "Organization", name: "GOS" },
     datePublished: input.datePublished,
     description: input.description ?? `Receta ${input.title} del Gastronomic Open Standard`,
-    keywords: input.keywords?.join(", "),
-    recipeCategory: input.recipeCategory,
+    keywords: Array.isArray(input.keywords) ? input.keywords.join(", ") : input.keywords,
+    recipeCategory: input.recipeCategory ?? "Main dish",
     recipeCuisine: input.recipeCuisine ?? "Colombian",
     prepTime: input.prepTime,
     cookTime: input.cookTime,
-    recipeIngredient: undefined, // populated by page from ingredients list if available
+    recipeYield: input.recipeYield,
+    recipeIngredient: input.recipeIngredient ?? [],
     nutrition: input.nutrition ? { "@type": "NutritionInformation", ...input.nutrition } : undefined,
     url: absUrl(`/recipes/${input.slug}`),
     isPartOf: { "@type": "WebSite", name: "Gastronomic Open Standard", url: SITE_URL },
@@ -81,22 +85,29 @@ export function recipeJsonLd(input: RecipeLDInput) {
 }
 
 export function ingredientJsonLd(input: IngredientLDInput) {
-  // Use schema.org FoodIngredient / DefinedTerm pattern — Ingredients are food entities
+  const nutrition = input.nutrition_per_100g || {};
   return {
     "@context": "https://schema.org",
-    "@type": "Ingredient" as unknown as string, // Ingredient is proposed; fallback to Food + DefinedTerm
+    "@type": "IndividualProduct",
     name: input.name,
     alternateName: input.scientific_name,
-    description: input.description ?? `${input.name} — ingrediente del grafo GOS`,
+    description: input.description ?? `${input.name} — ${input.group || 'ingrediente'} del grafo GOS`,
+    category: input.group || "Food",
     image: input.image ? absUrl(input.image) : undefined,
     url: absUrl(`/ingredients/${input.slug}`),
-    nutrition: input.nutrition_per_100g ? { "@type": "NutritionInformation", ...input.nutrition_per_100g } : undefined,
-    // health_registry as associated health claims
+    nutrition: Object.keys(nutrition).length > 0 ? {
+      "@type": "NutritionInformation",
+      calories: nutrition.calories ? `${nutrition.calories} kcal` : undefined,
+      proteinContent: nutrition.protein_g ? `${nutrition.protein_g}g` : undefined,
+      fatContent: nutrition.fat_g ? `${nutrition.fat_g}g` : undefined,
+      carbohydrateContent: nutrition.carbs_g ? `${nutrition.carbs_g}g` : undefined,
+      ...nutrition
+    } : undefined,
     healthClaim: input.health_registry,
+    isPartOf: { "@type": "Dataset", name: "GOS Ingredient Encyclopedia", url: absUrl("/ingredients") },
   };
 }
 
-// Primary for GOS-03: ChemicalSubstance per schema.org
 export function substanceJsonLd(input: SubstanceLDInput) {
   const d = input.data;
   const studies = (d.health_registry ?? []).flatMap(h => h.studies ?? []).map(s => ({
@@ -112,9 +123,8 @@ export function substanceJsonLd(input: SubstanceLDInput) {
     "@type": "ChemicalSubstance",
     name: d.name,
     alternateName: d.formula,
-    chemicalComposition: d.formula, // e.g., C6H10OS2
+    chemicalComposition: d.formula,
     description: d.benefit ?? d.sazon ?? `Sustancia bioactiva ${d.name} del GOS`,
-    // discovery as additionalProperty
     additionalProperty: [
       d.discovery_year ? { "@type": "PropertyValue", name: "discovery_year", value: d.discovery_year } : null,
       d.source_ingredient ? { "@type": "PropertyValue", name: "source_ingredient", value: d.source_ingredient } : null,
@@ -122,11 +132,8 @@ export function substanceJsonLd(input: SubstanceLDInput) {
       d.sabor ? { "@type": "PropertyValue", name: "sabor", value: d.sabor } : null,
       d.textura ? { "@type": "PropertyValue", name: "textura", value: d.textura } : null,
     ].filter(Boolean),
-    // vitamins as contains
     contains: d.vitaminas?.map(v => ({ "@type": "Vitamin" as unknown as string, name: v })),
-    // related compounds
     isRelatedTo: d.compuestos?.map(c => ({ "@type": "ChemicalSubstance", name: c })),
-    // health registry → associatedDisease with evidence
     associatedDisease: (d.health_registry ?? []).map(h => ({
       "@type": "MedicalCondition",
       name: h.condition,
@@ -140,7 +147,6 @@ export function substanceJsonLd(input: SubstanceLDInput) {
   };
 }
 
-// Helper to stringify safely for <script>
 export function toJsonLdString(obj: unknown): string {
   return JSON.stringify(obj, null, 2);
 }

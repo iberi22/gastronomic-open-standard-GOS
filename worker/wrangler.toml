@@ -1,0 +1,17 @@
+name = "gos-api-gateway"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ORIGIN_URL = "https://gos-site.pages.dev"
+FREE_DAILY_LIMIT = "100"
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "9aef690dde244d51982f2947dba2d7aa"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gos-billing"
+database_id = "1c920534-54fc-449e-b944-180bf96ffe37"

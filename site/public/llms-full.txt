@@ -1,0 +1,476 @@
+# GOS — Gastronomic Open Standard — Full Dataset & Agent Specification
+# appId: gos
+# Web: https://gos-site.pages.dev
+# Repository: https://github.com/iberi22/gastronomic-open-standard-GOS
+
+## Executive Overview
+The Gastronomic Open Standard (GOS) is an open-source, scientifically validated knowledge graph connecting world recipes, ingredients, micronutrients, bioactive chemical substances, sensory profiles (flavor/aroma/texture), medical health registries, and dietary fits.
+
+## Live Graph Breakdown
+- Total Nodes: 3260
+- Total Edges: 24146
+- Node Types Breakdown:
+  - recipe: 381
+  - ingredient: 1724
+  - category: 14
+  - flavor: 423
+  - texture: 388
+  - region: 157
+  - place: 43
+  - technique: 14
+  - vitamin: 23
+  - nutrient: 4
+  - substance: 43
+  - condition: 40
+  - diet: 6
+
+## Knowledge Graph Relational Schema
+GOS links entities via strictly typed edge relationships:
+- USES: Recipe -> Ingredient
+- FROM_REGION: Recipe -> Region
+- HAS_FLAVOR: Recipe -> Flavor
+- HAS_TEXTURE: Recipe -> Texture
+- USES_TECHNIQUE: Recipe -> Cooking Technique
+- CONTAINS_VITAMIN: Ingredient -> Vitamin
+- HAS_SUBSTANCE: Ingredient -> Bioactive Substance
+- HELPS_CONDITION: Ingredient / Substance -> Medical Condition
+- FITS_DIET: Ingredient / Recipe -> Diet
+- RELATED_DISHES: Recipe -> Recipe (shared ingredients >= 3 or region)
+- SUBSTITUTE_FOR: Ingredient -> Ingredient
+
+## Country Recipe Catalog (18 Countries)
+
+### Country: COLOMBIAN (122 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/colombian.json
+Sample Dishes:
+  - README (ID: colombian/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - Achiras del Huila (ID: colombian/amasijos/achiras/achiras, Region: Andina (Huila), Difficulty: ★★★☆☆)
+  - Almojábana (Boyacense/Bogotana) (ID: colombian/amasijos/almojabana/almojabana, Region: Andina (Cundiboyacense), Difficulty: ★★★☆☆)
+  - Buñuelo Colombiano (ID: colombian/amasijos/bunuelo/bunuelo, Region: Nacional, Difficulty: ★★★★☆)
+  - Garulla Soachuna (ID: colombian/amasijos/garulla/garulla, Region: Andina (Soacha / Cundinamarca), Difficulty: ★★★★☆)
+  - README (ID: colombian/amazonia/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - Ají Negro (Salsa Amazónica Fermentada) (ID: colombian/amazonia/aji_negro/aji_negro, Region: Amazonía, Difficulty: ★★★★☆)
+  - Casabe (Pan de Yuca Amazónico) (ID: colombian/amazonia/casabe/casabe/casabe, Region: Amazonía, Difficulty: ★★★☆☆)
+  - Fariña (Farofa Amazónica) (ID: colombian/amazonia/farina/farina, Region: Amazonía, Difficulty: ★★☆☆☆)
+  - Inchicapi (Sopa de Gallina con Maní) (ID: colombian/amazonia/inchicapi/inchicapi, Region: Amazonía, Difficulty: ★★★☆☆)
+  - Juanes de Yuca (ID: colombian/amazonia/juanes_de_yuca/juanes_de_yuca, Region: Amazonía, Difficulty: ★★★☆☆)
+  - Mojojoy (Larva de Palma) (ID: colombian/amazonia/mojojoy/mojojoy, Region: Amazonía, Difficulty: ★☆☆☆☆)
+  - Patarasca (Pescado en Hojas) (ID: colombian/amazonia/patarasca/patarasca, Region: Amazonía, Difficulty: ★★★☆☆)
+  - Pescado Moqueado (ID: colombian/amazonia/pescado_moqueado/pescado_moqueado, Region: Amazonía, Difficulty: ★★★☆☆)
+  - Pirarucú Frito (ID: colombian/amazonia/pirarucu_frito/pirarucu_frito, Region: Amazonía, Difficulty: ★★☆☆☆)
+  ... and 107 more dishes
+
+### Country: PERUVIAN (23 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/peruvian.json
+Sample Dishes:
+  - README (ID: peruvian/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - Arroz con Pollo Peruano (ID: peruvian/arroz_con_pollo, Region: Costa/Sierra, Difficulty: ★★★☆☆)
+  - README (ID: peruvian/bebidas/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - Chicha Morada (ID: peruvian/bebidas/chicha_morada, Region: Sierra/Costa, Difficulty: ★☆☆☆☆)
+  - README (ID: peruvian/condimentos/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - README (ID: peruvian/costa/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  - Ají de Gallina (ID: peruvian/costa/aji_de_gallina, Region: Costa/Sierra, Difficulty: ★★★☆☆)
+  - Anticuchos de Corazón (ID: peruvian/costa/anticuchos_de_corazon, Region: Costa/Sierra, Difficulty: ★★★☆☆)
+  - Carapulcra Limeña (ID: peruvian/costa/carapulcra_limena, Region: Costa/Sierra, Difficulty: ★★★☆☆)
+  - Causa Limeña (ID: peruvian/costa/causa_limena, Region: Costa, Difficulty: ★★★☆☆)
+  - Ceviche Limeño (ID: peruvian/costa/ceviche_limeno, Region: Costa, Difficulty: ★★☆☆☆)
+  - Lomo Saltado (ID: peruvian/costa/lomo_saltado, Region: Costa, Difficulty: ★★★☆☆)
+  - Papa Rellena (ID: peruvian/costa/papa_rellena, Region: Costa/Sierra, Difficulty: ★★★☆☆)
+  - Seco de Cabrito (ID: peruvian/costa/seco_de_cabrito, Region: Costa (Norte), Difficulty: ★★★★☆)
+  - README (ID: peruvian/otras_preparaciones/README, Region: Nacional, Difficulty: ★★☆☆☆)
+  ... and 8 more dishes
+
+### Country: AMERICAN (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/american.json
+Sample Dishes:
+  - Traditional American Apple Pie (ID: american/apple_pie_traditional, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
+  - St. Louis Style BBQ Pork Ribs (ID: american/bbq_pork_ribs, Region: Missouri / Memphis, Difficulty: ★★☆☆☆)
+  - Buffalo Chicken Wings (ID: american/buffalo_chicken_wings, Region: Buffalo, NY, Difficulty: ★★☆☆☆)
+  - New England Clam Chowder (ID: american/clam_chowder_boston, Region: Boston, MA, Difficulty: ★★☆☆☆)
+  - Classic American Cheeseburger (ID: american/classic_cheeseburger, Region: Texas / California, Difficulty: ★★☆☆☆)
+  - Georgia Peach Cobbler (ID: american/cobbler_de_melocoton, Region: Georgia, Difficulty: ★★☆☆☆)
+  - Southern Skillet Cornbread (ID: american/cornbread_southern, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
+  - Eggs Benedict (ID: american/eggs_benedict, Region: Nueva York, NY, Difficulty: ★★☆☆☆)
+  - Southern Crispy Fried Chicken (ID: american/fried_chicken_southern, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
+  - Louisiana Seafood Gumbo (ID: american/gumbo_louisiana, Region: Nueva Orleans, LA, Difficulty: ★★☆☆☆)
+  - Cajun Jambalaya (ID: american/jambalaya_cajun, Region: Nueva Orleans, LA, Difficulty: ★★☆☆☆)
+  - Florida Key Lime Pie (ID: american/key_lime_pie, Region: Florida Keys, Difficulty: ★★☆☆☆)
+  - Baked Macaroni and Cheese (ID: american/macaroni_and_cheese, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
+  - Classic Glazed Meatloaf (ID: american/meatloaf_with_glaze, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
+  - Fluffy Pancakes con Maple Syrup (ID: american/pancakes_maple_syrup, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: FRENCH (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/french.json
+Sample Dishes:
+  - Boeuf Bourguignon (ID: french/boeuf_bourguignon, Region: Borgoña, Difficulty: ★★☆☆☆)
+  - Daube Provençale (ID: french/boeuf_en_daube, Region: Provenza, Difficulty: ★★☆☆☆)
+  - Bouillabaisse de Marsella (ID: french/bouillabaisse, Region: Marsella, Difficulty: ★★☆☆☆)
+  - Cassoulet de Castelnaudary (ID: french/cassoulet_de_castelnaudary, Region: Languedoc, Difficulty: ★★☆☆☆)
+  - Coq au Vin (ID: french/coq_au_vin, Region: Borgoña, Difficulty: ★★☆☆☆)
+  - Crème Brûlée (ID: french/creme_brulee, Region: Francia Nacional, Difficulty: ★★☆☆☆)
+  - Crêpes Suzette (ID: french/crepes_suzette, Region: Costa Azul, Difficulty: ★★☆☆☆)
+  - Croque Monsieur (ID: french/croque_monsieur, Region: París, Difficulty: ★★☆☆☆)
+  - Confit de Canard (ID: french/duck_confit, Region: Gascuña, Difficulty: ★★☆☆☆)
+  - Escargots de Bourgogne (ID: french/escargots_de_bourgogne, Region: Borgoña, Difficulty: ★★☆☆☆)
+  - Gratin Dauphinois (ID: french/gratin_dauphinois, Region: Delfinado, Difficulty: ★★☆☆☆)
+  - Mousse au Chocolat (ID: french/mousse_au_chocolat, Region: París, Difficulty: ★★☆☆☆)
+  - Pot-au-Feu Tradicional (ID: french/pot_au_feu, Region: Francia Nacional, Difficulty: ★★☆☆☆)
+  - Quiche Lorraine (ID: french/quiche_lorraine, Region: Lorena, Difficulty: ★★☆☆☆)
+  - Ratatouille Provençale (ID: french/ratatouille_provencale, Region: Niza / Provenza, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: GREEK (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/greek.json
+Sample Dishes:
+  - Baklava Griego con Nueces y Miel (ID: greek/baklava_griego, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Dolmades (Hojas de Parra Rellenas) (ID: greek/dolmades_hojas_de_parra, Region: Creta, Difficulty: ★★☆☆☆)
+  - Revithokeftedes (Croquetas de Garbanzo) (ID: greek/falafel_griego, Region: Sifnos, Difficulty: ★★☆☆☆)
+  - Fasolada (Sopa de Alubias Blancas) (ID: greek/fasolada_sopa, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Galaktoboureko (Pastel de Semola y Miel) (ID: greek/galaktoboureko, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Gigantes Plaki (Alubias al Horno) (ID: greek/gigantes_plaki, Region: Macedonia Griega, Difficulty: ★★☆☆☆)
+  - Gyros de Pollo en Pan Pita (ID: greek/gyros_de_pollo, Region: Tesalónica, Difficulty: ★★☆☆☆)
+  - Horiatiki (Ensalada Griega Tradicional) (ID: greek/horiatiki_greek_salad, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Keftedes (Albóndigas Griegas de Menta) (ID: greek/keftedes_griegas, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Kleftiko de Cordero en Papel (ID: greek/kleftiko_de_cordero, Region: Grecia Central, Difficulty: ★★☆☆☆)
+  - Kolokithokeftedes (Buñuelos de Calabacín) (ID: greek/kolokithokeftedes, Region: Creta, Difficulty: ★★☆☆☆)
+  - Loukoumades con Miel y Canela (ID: greek/loukoumades_miel, Region: Atenas, Difficulty: ★★☆☆☆)
+  - Moussaka Griega Tradicional (ID: greek/moussaka_griega, Region: Atenas / Grecia Nacional, Difficulty: ★★☆☆☆)
+  - Pastitsio (Lasaña Griega) (ID: greek/pastitsio_al_horno, Region: Atenas, Difficulty: ★★☆☆☆)
+  - Garides Saganaki (Camarones con Feta) (ID: greek/saganaki_queso_frito, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: INDIAN (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/indian.json
+Sample Dishes:
+  - Aloo Gobi (ID: indian/aloo_gobi, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Hyderabadi Biryani (ID: indian/biryani_hyderabadi, Region: Hyderabad, Difficulty: ★★☆☆☆)
+  - Butter Chicken (Murgh Makhani) (ID: indian/butter_chicken, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Chana Masala (ID: indian/chana_masala, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Chicken Korma (ID: indian/chicken_korma, Region: Mogolla, Difficulty: ★★☆☆☆)
+  - Chicken Tikka Masala (ID: indian/chicken_tikka_masala, Region: Punjab / U.K., Difficulty: ★★☆☆☆)
+  - Dal Makhani (ID: indian/dal_makhani, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Masala Dosa (ID: indian/dosa_masala, Region: Sur de India, Difficulty: ★★☆☆☆)
+  - Amritsari Fish Fry (ID: indian/fish_amritsari, Region: Amritsar, Difficulty: ★★☆☆☆)
+  - Gulab Jamun (ID: indian/gulab_jamun, Region: Norte de India, Difficulty: ★★☆☆☆)
+  - Malai Kofta (ID: indian/malai_kofta, Region: Norte de India, Difficulty: ★★☆☆☆)
+  - Ajo Naan (Pan Naan) (ID: indian/naan_de_ajo, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Palak Paneer (ID: indian/palak_paneer, Region: Norte de India, Difficulty: ★★☆☆☆)
+  - Paneer Butter Masala (ID: indian/paneer_butter_masala, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Pani Puri (Golgappa) (ID: indian/pani_puri, Region: Mumbai, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: ITALIAN (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/italian.json
+Sample Dishes:
+  - Arancini Siciliani di Riso (ID: italian/arancini_siciliani, Region: Sicilia, Difficulty: ★★★☆☆)
+  - Spaghetti Cacio e Pepe (ID: italian/cacio_e_pepe, Region: Lazio (Roma), Difficulty: ★★★☆☆)
+  - Cannoli Siciliani al Pistacchio (ID: italian/cannoli_siciliani, Region: Sicilia (Palermo), Difficulty: ★★★☆☆)
+  - Insalata Caprese Tradizionale (ID: italian/caprese_salad, Region: Campania (Capri), Difficulty: ★☆☆☆☆)
+  - Focaccia Barese con Pomodorini (ID: italian/focaccia_barese, Region: Puglia (Bari), Difficulty: ★★☆☆☆)
+  - Gnocchi di Patate al Pesto (ID: italian/gnocchi_di_patate, Region: Liguria (Génova), Difficulty: ★★★☆☆)
+  - Lasagna alla Bolognese (ID: italian/lasagna_alla_bolognese, Region: Emilia-Romaña (Bolonia), Difficulty: ★★★☆☆)
+  - Parmigiana di Melanzane (ID: italian/melanzane_alla_parmigiana, Region: Campania / Sicilia, Difficulty: ★★★☆☆)
+  - Minestrone alla Genovese (ID: italian/minestrone_alla_genovese, Region: Liguria, Difficulty: ★★☆☆☆)
+  - Ossobuco alla Milanese con Gremolata (ID: italian/ossobuco_alla_milanese, Region: Lombardía, Difficulty: ★★★☆☆)
+  - Panettone Artigianale (ID: italian/panettone_tradizionale, Region: Lombardía (Milán), Difficulty: ★★★★☆)
+  - Pizza Margherita Napoletana (ID: italian/pizza_margherita, Region: Campania (Nápoles), Difficulty: ★★★☆☆)
+  - Pollo alla Cacciatora (ID: italian/pollo_alla_cacciatora, Region: Toscana, Difficulty: ★★☆☆☆)
+  - Porchetta di Ariccia (ID: italian/porchetta_di_ariccia, Region: Lazio (Ariccia), Difficulty: ★★★★☆)
+  - Risotto alla Milanese (ID: italian/risotto_alla_milanese, Region: Lombardía (Milán), Difficulty: ★★★☆☆)
+  ... and 5 more dishes
+
+### Country: JAPANESE (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/japanese.json
+Sample Dishes:
+  - Agedashi Tofu (ID: japanese/agedashi_tofu, Region: Tokyo, Difficulty: ★★☆☆☆)
+  - Chashu de Cerdo para Ramen (ID: japanese/chashu_pork_slice, Region: Fukuoka, Difficulty: ★★★☆☆)
+  - Chawanmushi (Flan Salado) (ID: japanese/chawanmushi, Region: Kyoto, Difficulty: ★★★☆☆)
+  - Chicken Katsu Curry (ID: japanese/chicken_katsu_curry, Region: Osaka, Difficulty: ★★☆☆☆)
+  - Gyudon (Donburi de Res) (ID: japanese/gyudon_beef_bowl, Region: Tokyo, Difficulty: ★☆☆☆☆)
+  - Chicken Karaage (ID: japanese/karaage_chicken, Region: Japón Nacional, Difficulty: ★★☆☆☆)
+  - Sopa de Miso Clásica (ID: japanese/miso_soup_classic, Region: Japón Nacional, Difficulty: ★☆☆☆☆)
+  - Nikujaga (Res con Patatas) (ID: japanese/nikujaga_home, Region: Japón Nacional, Difficulty: ★☆☆☆☆)
+  - Okonomiyaki Estilo Osaka (ID: japanese/okonomiyaki_osaka, Region: Osaka, Difficulty: ★★☆☆☆)
+  - Shoyu Ramen Tradicional (ID: japanese/ramen_shoyu, Region: Tokyo, Difficulty: ★★★☆☆)
+  - Zaru Soba (Fideos de Trigo Sarraceno) (ID: japanese/soba_zaru, Region: Nagano, Difficulty: ★★☆☆☆)
+  - Sukiyaki Nabemono (ID: japanese/sukiyaki_beef, Region: Kanto, Difficulty: ★★★☆☆)
+  - Nigiri Sushi de Salmón (ID: japanese/sushi_nigiri_salmon, Region: Tokyo, Difficulty: ★★★☆☆)
+  - Takoyaki de Osaka (ID: japanese/takoyaki_osaka, Region: Osaka, Difficulty: ★★★☆☆)
+  - Tamagoyaki (Tortilla Dulce) (ID: japanese/tamagoyaki_omelet, Region: Tokyo, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: MEXICAN (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/mexican.json
+Sample Dishes:
+  - Aguachile Verde de Camarón (ID: mexican/aguachile_verde, Region: Sinaloa, Difficulty: ★★☆☆☆)
+  - Albóndigas en Salsa de Chipotle (ID: mexican/albondigas_en_chipotle, Region: Centro de México, Difficulty: ★★☆☆☆)
+  - Birria de Res con Consomé (ID: mexican/birria_de_res, Region: Jalisco, Difficulty: ★★★☆☆)
+  - Carnitas de Michoacán (ID: mexican/carnitas_de_michoacan, Region: Michoacán, Difficulty: ★★★☆☆)
+  - Chilaquiles Verdes con Huevo (ID: mexican/chilaquiles_verdes, Region: México DF, Difficulty: ★☆☆☆☆)
+  - Chiles en Nogada (ID: mexican/chiles_en_nogada, Region: Puebla, Difficulty: ★★★★☆)
+  - Cochinita Pibil (ID: mexican/cochinita_pibil, Region: Yucatán, Difficulty: ★★★☆☆)
+  - Enchiladas Verdes (ID: mexican/enchiladas_verdes, Region: Centro de México, Difficulty: ★★☆☆☆)
+  - Enmoladas de Pollo (ID: mexican/enmoladas_de_pollo, Region: Oaxaca, Difficulty: ★★☆☆☆)
+  - Guacamole Tradicional (ID: mexican/guacamole_tradicional, Region: Michoacán, Difficulty: ★☆☆☆☆)
+  - Mole Poblano (ID: mexican/mole_poblano, Region: Puebla, Difficulty: ★★★★☆)
+  - Pambazo de Papa con Chorizo (ID: mexican/pambazo_de_papa_con_chorizo, Region: Ciudad de México, Difficulty: ★★☆☆☆)
+  - Panuchos Yucatecos (ID: mexican/panuchos_yucatecos, Region: Yucatán, Difficulty: ★★★☆☆)
+  - Pozole Rojo de Jalisco (ID: mexican/pozole_rojo, Region: Jalisco, Difficulty: ★★★☆☆)
+  - Quesadillas de Flor de Calabaza (ID: mexican/quesadillas_de_flor_de_calabaza, Region: Ciudad de México, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: MOROCCAN (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/moroccan.json
+Sample Dishes:
+  - Baghrir (Panqueques de Mil Hoyos) (ID: moroccan/baghrir_panqueques, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Briouats de Carne Picada Especiada (ID: moroccan/briouats_de_carne, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Chebakia de Sésamo y Miel (ID: moroccan/chebakia_miel, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Couscous Real aux Sept Légumes (ID: moroccan/couscous_sept_legumes, Region: Fez, Difficulty: ★★☆☆☆)
+  - Ghriba de Almendra y Sésamo (ID: moroccan/ghriba_almond, Region: Fez, Difficulty: ★★☆☆☆)
+  - Sopa Harira Tradicional (ID: moroccan/harira_marroqui, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Tajine de Kefta con Tomate y Huevos (ID: moroccan/kefta_tagine_con_huevos, Region: Marrakech, Difficulty: ★★☆☆☆)
+  - Mechoui de Cordero Asado (ID: moroccan/mechoui_de_cordero, Region: Atlas / Marrakech, Difficulty: ★★☆☆☆)
+  - Msemmen (Pan Hojaldrado Marroquí) (ID: moroccan/msemmen_pan, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Pastilla (Bastilla) de Pollo y Almendras (ID: moroccan/pastilla_de_pollo, Region: Fez, Difficulty: ★★☆☆☆)
+  - Rfissa de Pollo con Lentejas (ID: moroccan/rfissa_de_pollo, Region: Casablanca, Difficulty: ★★☆☆☆)
+  - Seffa Medfouna con Pollo (ID: moroccan/seffa_medfouna, Region: Fez, Difficulty: ★★☆☆☆)
+  - Sellou (Sfouf) Tradicional (ID: moroccan/sellou_marroqui, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
+  - Tajine de Cordero con Ciruelas y Almendras (ID: moroccan/tajine_de_cordero_con_ciruelas, Region: Marrakech, Difficulty: ★★☆☆☆)
+  - Tajine de Pescado con Chermoula (ID: moroccan/tajine_de_pescado_chermoula, Region: Essaouira, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: SPANISH (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/spanish.json
+Sample Dishes:
+  - Bacalao al Pil-Pil (ID: spanish/bacalao_al_pil_pil, Region: País Vasco, Difficulty: ★★☆☆☆)
+  - Calamares en su Tinta (ID: spanish/calamares_en_su_tinta, Region: País Vasco, Difficulty: ★★☆☆☆)
+  - Churros con Chocolate (ID: spanish/churros_con_chocolate, Region: Madrid, Difficulty: ★★☆☆☆)
+  - Cocido Madrileño (ID: spanish/cocido_madrileno, Region: Madrid, Difficulty: ★★☆☆☆)
+  - Crema Catalana (ID: spanish/crema_catalana, Region: Cataluña, Difficulty: ★★☆☆☆)
+  - Croquetas de Jamón Ibérico (ID: spanish/croquetas_de_jamon, Region: España Nacional, Difficulty: ★★☆☆☆)
+  - Empanada Gallega de Atún (ID: spanish/empanada_gallega, Region: Galicia, Difficulty: ★★☆☆☆)
+  - Fabada Asturiana (ID: spanish/fabada_asturiana, Region: Asturias, Difficulty: ★★☆☆☆)
+  - Gambas al Ajillo (ID: spanish/gambas_al_ajillo, Region: Andalucía, Difficulty: ★★☆☆☆)
+  - Gazpacho Andaluz (ID: spanish/gazpacho_andaluz, Region: Andalucía, Difficulty: ★★☆☆☆)
+  - Jamón Ibérico de Bellota (ID: spanish/jamon_iberico_tabla, Region: Extremadura / Jabugo, Difficulty: ★★☆☆☆)
+  - Leche Frita Tradicional (ID: spanish/leche_frita, Region: Castilla y León, Difficulty: ★★☆☆☆)
+  - Paella Valenciana Tradicional (ID: spanish/paella_valenciana, Region: Comunidad Valenciana, Difficulty: ★★☆☆☆)
+  - Patatas Bravas (ID: spanish/patatas_bravas, Region: Madrid, Difficulty: ★★☆☆☆)
+  - Pimientos del Padrón (ID: spanish/pimientos_del_padron, Region: Galicia, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: THAI (20 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/thai.json
+Sample Dishes:
+  - Kuay Teow Reua (Boat Noodles) (ID: thai/boat_noodles, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Gaeng Phet Ped Yang (ID: thai/curry_rojo_pato, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Gai Pad Med Mamuang (Pollo con Anacardos) (ID: thai/gai_pad_med_mamuang, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Gaeng Keow Wan (Curry Verde) (ID: thai/green_curry_chicken, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Khao Soi Gai (ID: thai/khao_soi_gai, Region: Chiang Mai, Difficulty: ★★☆☆☆)
+  - Larb Gai (Ensalada de Pollo) (ID: thai/larb_gai, Region: Isan, Difficulty: ★★☆☆☆)
+  - Khao Niew Mamuang (Mango Sticky Rice) (ID: thai/mango_sticky_rice, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Massaman Curry de Res (ID: thai/massaman_curry, Region: Sur de Tailandia, Difficulty: ★★☆☆☆)
+  - Pad Krapow Moo (Cerdo con Albahaca) (ID: thai/pad_krapow_moo, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Pad See Ew (ID: thai/pad_see_ew, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Pad Thai Kung (con Camarones) (ID: thai/pad_thai_kung, Region: Bangkok, Difficulty: ★★☆☆☆)
+  - Panang Curry (ID: thai/panang_curry, Region: Central Thailand, Difficulty: ★★☆☆☆)
+  - Satay Gai con Salsa de Cacahuete (ID: thai/satay_gai, Region: Sur de Tailandia, Difficulty: ★★☆☆☆)
+  - Som Tum (Ensalada de Papaya) (ID: thai/som_tum_papaya, Region: Isan, Difficulty: ★★☆☆☆)
+  - Khao Pad Kung (ID: thai/thai_fried_rice, Region: Bangkok, Difficulty: ★★☆☆☆)
+  ... and 5 more dishes
+
+### Country: ARGENTINIAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/argentinian.json
+Sample Dishes:
+  - Alfajores de Maicena (ID: argentinian/alfajores_de_maicena, Region: Buenos Aires / Nacional, Difficulty: ★★☆☆☆)
+  - Asado Criollo Argentino (ID: argentinian/asado_criollo, Region: La Pampa / Pampeana, Difficulty: ★★★☆☆)
+  - Carbonada Criolla (ID: argentinian/carbonada_criolla, Region: Pampeana / Noroeste, Difficulty: ★★★☆☆)
+  - Choripán Argentino (ID: argentinian/choripan, Region: Río de la Plata / Pampeana / Nacional, Difficulty: ★☆☆☆☆)
+  - Empanadas Tucumanas (ID: argentinian/empanadas_tucumanas, Region: Tucumán / Noroeste Argentino, Difficulty: ★★★☆☆)
+  - Humita en Chala (ID: argentinian/humita_en_chala, Region: Noroeste Argentino (Jujuy / Salta / Tucumán), Difficulty: ★★★☆☆)
+  - Locro Criollo Argentino (ID: argentinian/locro_criollo, Region: Noroeste / Pampeana / Nacional, Difficulty: ★★★★☆)
+  - Milanesa a la Napolitana (ID: argentinian/milanesa_a_la_napolitana, Region: Buenos Aires / Pampeana, Difficulty: ★★☆☆☆)
+  - Pastelitos Criollos Argentinos (ID: argentinian/pastelitos_criollos, Region: Pampeana / Nacional, Difficulty: ★★★★☆)
+  - Provoleta Argentina (ID: argentinian/provoleta, Region: Pampeana, Difficulty: ★★☆☆☆)
+
+### Country: BRAZILIAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/brazilian.json
+Sample Dishes:
+  - Acarajé Baiano (ID: brazilian/acaraje, Region: Brasil, Difficulty: ★★★★★)
+  - Brigadeiro Tradicional Brasileiro (ID: brazilian/brigadeiro, Region: Brasil, Difficulty: ★☆☆☆☆)
+  - Caipirinha Tradicional Brasileira (ID: brazilian/caipirinha, Region: Brasil, Difficulty: ★☆☆☆☆)
+  - Churrasco Gaúcho de Picanha (ID: brazilian/churrasco, Region: Brasil, Difficulty: ★★☆☆☆)
+  - Coxinha de Frango Tradicional (ID: brazilian/coxinha, Region: Brasil, Difficulty: ★★★★☆)
+  - Feijoada Completa Brasileira (ID: brazilian/feijoada, Region: Brasil, Difficulty: ★★★★☆)
+  - Moqueca de Peixe Baiana (ID: brazilian/moqueca_de_peixe, Region: Brasil, Difficulty: ★★★☆☆)
+  - Pão de Queijo Mineiro (ID: brazilian/pao_de_queijo, Region: Brasil, Difficulty: ★★☆☆☆)
+  - Pudim de Leite Condensado (ID: brazilian/pudim_de_leite, Region: Brasil, Difficulty: ★★☆☆☆)
+  - Vatapá Baiano Tradicional (ID: brazilian/vatapa, Region: Brasil, Difficulty: ★★★★☆)
+
+### Country: CHILEAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/chilean.json
+Sample Dishes:
+  - Caldillo de Congrio (ID: chilean/caldillo_de_congrio, Region: Litoral / Coquimbo / Valparaíso, Difficulty: ★★★☆☆)
+  - Cazuela de Vacuno (ID: chilean/cazuela_de_vacuno, Region: Andina / Central, Difficulty: ★★☆☆☆)
+  - Charquicán Chileno (ID: chilean/charquican, Region: Central / Sur, Difficulty: ★★☆☆☆)
+  - Chorrillana Chilena (ID: chilean/chorrillana, Region: Valparaíso, Difficulty: ★☆☆☆☆)
+  - Empanada de Pino Chilena (ID: chilean/empanada_de_pino, Region: Valparaíso / Metropolitana, Difficulty: ★★★☆☆)
+  - Humitas Chilenas (ID: chilean/humitas, Region: Central / Valles Agrícolas, Difficulty: ★★★☆☆)
+  - Mote con Huesillos (ID: chilean/mote_con_huesillos, Region: Central / Metropolitana, Difficulty: ★☆☆☆☆)
+  - Pastel de Choclo Chileno (ID: chilean/pastel_de_choclo, Region: Metropolitana, Difficulty: ★★★☆☆)
+  - Porotos con Riendas (ID: chilean/porotos_con_riendas, Region: Central, Difficulty: ★★☆☆☆)
+  - Sopaipillas Chilenas (ID: chilean/sopaipillas, Region: Central / Sur, Difficulty: ★★☆☆☆)
+
+### Country: CUBAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/cuban.json
+Sample Dishes:
+  - Ajiaco Criollo Cubano (ID: cuban/ajiaco_cubano, Region: Cuba, Difficulty: ★★★★☆)
+  - Flan de Huevo Tradicional Cubano (ID: cuban/flan_de_huevo, Region: Cuba, Difficulty: ★★☆☆☆)
+  - Lechón Asado Cubano (ID: cuban/lechon_asado, Region: Cuba, Difficulty: ★★★★☆)
+  - Masitas de Cerdo Fritas Cubanas (ID: cuban/masitas_de_cerdo, Region: Cuba, Difficulty: ★★★☆☆)
+  - Mojito Cubano Tradicional (ID: cuban/mojito, Region: Cuba, Difficulty: ★☆☆☆☆)
+  - Moros y Cristianos Tradicionales (ID: cuban/moros_y_cristianos, Region: Cuba, Difficulty: ★★★☆☆)
+  - Picadillo a la Habanera (ID: cuban/picadillo_a_la_habanera, Region: Cuba, Difficulty: ★★☆☆☆)
+  - Ropa Vieja Cubana (ID: cuban/ropa_vieja, Region: Cuba, Difficulty: ★★★☆☆)
+  - Tostones Cubanos (Chatinos) (ID: cuban/tostones_cubanos, Region: Cuba, Difficulty: ★★☆☆☆)
+  - Yuca con Mojo Cubana (ID: cuban/yuca_con_mojo, Region: Cuba, Difficulty: ★★☆☆☆)
+
+### Country: DOMINICAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/dominican.json
+Sample Dishes:
+  - Chimichurri Dominicano (Chimi) (ID: dominican/chimi_dominicano, Region: República Dominicana, Difficulty: ★★☆☆☆)
+  - Habichuelas con Dulce Dominicanas (ID: dominican/habichuelas_con_dulce, Region: República Dominicana, Difficulty: ★☆☆☆☆)
+  - La Bandera Dominicana (Arroz, Habichuelas y Carne) (ID: dominican/la_bandera_dominicana, Region: República Dominicana, Difficulty: ★★★☆☆)
+  - Mangú Dominicano con Los Tres Golpes (ID: dominican/mangu, Region: República Dominicana, Difficulty: ★★☆☆☆)
+  - Mofongo Dominicano Tradicional (ID: dominican/mofongo_dominicano, Region: República Dominicana, Difficulty: ★★★☆☆)
+  - Morir Soñando Dominicano (ID: dominican/morir_sonando, Region: República Dominicana, Difficulty: ★★☆☆☆)
+  - Pescado con Coco Estilo Samaná (ID: dominican/pescado_con_coco, Region: República Dominicana, Difficulty: ★★★☆☆)
+  - Pollo Guisado Dominicano (ID: dominican/pollo_guisado_dominicano, Region: República Dominicana, Difficulty: ★★★☆☆)
+  - Sancocho Dominicano de Siete Carnes (ID: dominican/sancocho_dominicano, Region: República Dominicana, Difficulty: ★★★★★)
+  - Tostones Dominicanos con Agua de Ajo (ID: dominican/tostones_dominicanos, Region: República Dominicana, Difficulty: ★★☆☆☆)
+
+### Country: PUERTO-RICAN (10 recipes)
+Endpoint: https://gos-site.pages.dev/api/by-country/puerto-rican.json
+Sample Dishes:
+  - Alcapurrias de Masa Puertorriqueñas (ID: puerto-rican/alcapurrias, Region: Puerto Rico, Difficulty: ★★★★★)
+  - Arroz con Gandules Puertorriqueño (ID: puerto-rican/arroz_con_gandules, Region: Puerto Rico, Difficulty: ★★★☆☆)
+  - Asopao de Pollo Puertorriqueño (ID: puerto-rican/asopao_de_pollo, Region: Puerto Rico, Difficulty: ★★★☆☆)
+  - Coquito Puertorriqueño Tradicional (ID: puerto-rican/coquito, Region: Puerto Rico, Difficulty: ★☆☆☆☆)
+  - Mofongo Puertorriqueño de Camarones (ID: puerto-rican/mofongo_puertorriqueno, Region: Puerto Rico, Difficulty: ★★★☆☆)
+  - Pasteles Puertorriqueños de Masa (ID: puerto-rican/pasteles_puertorriquenos, Region: Puerto Rico, Difficulty: ★★★★★)
+  - Pernil Asado Puertorriqueño (ID: puerto-rican/pernil_asado, Region: Puerto Rico, Difficulty: ★★★★☆)
+  - Pinchos de Pollo Puertorriqueños (ID: puerto-rican/pinchos_de_pollo, Region: Puerto Rico, Difficulty: ★☆☆☆☆)
+  - Tembleque de Coco Puertorriqueño (ID: puerto-rican/tembleque, Region: Puerto Rico, Difficulty: ★★☆☆☆)
+  - Trifongo Puertorriqueño de Chicharrón (ID: puerto-rican/trifongo, Region: Puerto Rico, Difficulty: ★★★☆☆)
+
+
+## Sample Bioactive Substances (43 Total)
+- Compound Name (e.g., Lycopene) (substance_compound_name__e_g___lycopene_): Short benefit description [Source: https://gos-site.pages.dev/substances/compound_name__e_g___lycopene_]
+- Allicin (substance_allicin): Potent antimicrobial, lowers blood pressure, anti-inflammatory. [Source: https://gos-site.pages.dev/substances/allicin]
+- Dodecenal (substance_dodecenal): Antibacterial compound specifically effective against Salmonella. [Source: https://gos-site.pages.dev/substances/dodecenal]
+- Cuminaldehyde (substance_cuminaldehyde): Stimulates salivary glands and digestive enzymes. [Source: https://gos-site.pages.dev/substances/cuminaldehyde]
+- Gingerol (substance_gingerol): Potent anti-inflammatory and anti-nausea compound. [Source: https://gos-site.pages.dev/substances/gingerol]
+- Policosanols (substance_policosanols): Waxy alcohols found in cane, potential cholesterol benefits (trace amounts). [Source: https://gos-site.pages.dev/substances/policosanols]
+- Sodium (substance_sodium): Electrolyte balance. [Source: https://gos-site.pages.dev/substances/sodium]
+- Iodine (substance_iodine): Thyroid function. [Source: https://gos-site.pages.dev/substances/iodine]
+- Milk Fat (substance_milk_fat): Texture and flavor carrier. [Source: https://gos-site.pages.dev/substances/milk_fat]
+- Casein (substance_casein): Slow digesting protein. [Source: https://gos-site.pages.dev/substances/casein]
+- Butyrate (substance_butyrate): Short-chain fatty acid, gut health. [Source: https://gos-site.pages.dev/substances/butyrate]
+- Bioactive Peptides (substance_bioactive_peptides): Generated during fermentation (depends on cheese type). [Source: https://gos-site.pages.dev/substances/bioactive_peptides]
+- Oleic Acid (substance_oleic_acid): Monounsaturated fatty acid, anti-inflammatory. [Source: https://gos-site.pages.dev/substances/oleic_acid]
+- Beta-sitosterol (substance_beta_sitosterol): Plant sterol that helps maintain healthy cholesterol levels. [Source: https://gos-site.pages.dev/substances/beta_sitosterol]
+- Citric Acid (substance_citric_acid): Enhances iron absorption, prevents kidney stones. [Source: https://gos-site.pages.dev/substances/citric_acid]
+- Hesperidin (substance_hesperidin): Flavonoid with vascular benefits. [Source: https://gos-site.pages.dev/substances/hesperidin]
+- Starch (substance_starch): Gluten-free energy source. [Source: https://gos-site.pages.dev/substances/starch]
+- Starch (Amylopectin/Amylose) (substance_starch__amylopectin_amylose_): Rapid energy source. [Source: https://gos-site.pages.dev/substances/starch__amylopectin_amylose_]
+- Gluten (substance_gluten): Structural protein giving elasticity to dough. [Source: https://gos-site.pages.dev/substances/gluten]
+- Lutein & Zeaxanthin (substance_lutein___zeaxanthin): Carotenoids essential for eye health. [Source: https://gos-site.pages.dev/substances/lutein___zeaxanthin]
+- Ferulic Acid (substance_ferulic_acid): Antioxidant found in cell walls. [Source: https://gos-site.pages.dev/substances/ferulic_acid]
+- Anthocyanins (substance_anthocyanins): Antioxidant found in the red skin. [Source: https://gos-site.pages.dev/substances/anthocyanins]
+- Polyphenols (substance_polyphenols): Antioxidant and anti-inflammatory effects. [Source: https://gos-site.pages.dev/substances/polyphenols]
+- Lipids (substance_lipids): Energy density and nutrient absorption. [Source: https://gos-site.pages.dev/substances/lipids]
+- Sesamin (substance_sesamin): Lignin that inhibits cholesterol absorption. [Source: https://gos-site.pages.dev/substances/sesamin]
+- Unknown (substance_unknown): Unknown [Source: https://gos-site.pages.dev/substances/unknown]
+- Heme Iron (substance_heme_iron): Highly bioavailable form of iron. [Source: https://gos-site.pages.dev/substances/heme_iron]
+- Thiamin (B1) (substance_thiamin__b1_): Critical for energy metabolism and nerve function. [Source: https://gos-site.pages.dev/substances/thiamin__b1_]
+- Choline (substance_choline): Essential for brain development and liver function. [Source: https://gos-site.pages.dev/substances/choline]
+- Omega-3 (DHA/EPA) (substance_omega_3__dha_epa_): Anti-inflammatory fatty acids (levels vary by species). [Source: https://gos-site.pages.dev/substances/omega_3__dha_epa_]
+- Carnosine (substance_carnosine): Dipeptide with antiglycation properties. [Source: https://gos-site.pages.dev/substances/carnosine]
+- Lycopene (substance_lycopene): Bioavailability increased by cooking in oil. [Source: https://gos-site.pages.dev/substances/lycopene]
+- Isoflavones (substance_isoflavones): Phytoestrogens with antioxidant properties (varies by fermentation). [Source: https://gos-site.pages.dev/substances/isoflavones]
+- Quercetin (substance_quercetin): Potent antioxidant flavanol. [Source: https://gos-site.pages.dev/substances/quercetin]
+- Kaempferol (substance_kaempferol): Antioxidant flavonoid. [Source: https://gos-site.pages.dev/substances/kaempferol]
+- Zeaxanthin (substance_zeaxanthin): Carotenoid giving yellow color, supports eye health. [Source: https://gos-site.pages.dev/substances/zeaxanthin]
+- Kukoamines (substance_kukoamines): Compounds in potato skin linked to lowering blood pressure. [Source: https://gos-site.pages.dev/substances/kukoamines]
+- Capsanthin (substance_capsanthin): Red carotenoid, strong antioxidant. [Source: https://gos-site.pages.dev/substances/capsanthin]
+- Simple Sugars (Sucrose/Glucose) (substance_simple_sugars__sucrose_glucose_): Quick energy. [Source: https://gos-site.pages.dev/substances/simple_sugars__sucrose_glucose_]
+- Carotenoids (substance_carotenoids): Antioxidant (increases with ripening). [Source: https://gos-site.pages.dev/substances/carotenoids]
+- Resistant Starch (Type 2) (substance_resistant_starch__type_2_): Acts as soluble fiber, feeding beneficial gut bacteria. [Source: https://gos-site.pages.dev/substances/resistant_starch__type_2_]
+- Saponins (substance_saponins): Potential cholesterol lowering effect. [Source: https://gos-site.pages.dev/substances/saponins]
+- Beta-carotene (substance_beta_carotene): Pro-vitamin A, powerful antioxidant. [Source: https://gos-site.pages.dev/substances/beta_carotene]
+
+## Sample Scientific Ingredients (1724 Total)
+- Ingrediente principal 1  [ID: ingredient_ingrediente_principal_1]
+- Ingrediente principal 2  [ID: ingredient_ingrediente_principal_2]
+- Especias  [ID: ingredient_especias]
+- Aceite de oliva  [ID: ingredient_aceite_de_oliva]
+- Fécula de maíz (maicena)  [ID: ingredient_f_cula_de_ma_z__maicena_]
+- Harina de trigo (Triticum aestivum) [ID: ingredient_harina_de_trigo]
+- Mantequilla  [ID: ingredient_mantequilla]
+- Yemas de huevo (TODO) [ID: ingredient_yemas_de_huevo]
+- Dulce de leche repostero  [ID: ingredient_dulce_de_leche_repostero]
+- Coco rallado  [ID: ingredient_coco_rallado]
+- Ralladura de limón  [ID: ingredient_ralladura_de_lim_n]
+- Para las tapas de alfajor:  [ID: ingredient_para_las_tapas_de_alfajor_]
+- Para el relleno y decoración:  [ID: ingredient_para_el_relleno_y_decoraci_n_]
+- Costillar de vacuno (tira de asado)  [ID: ingredient_costillar_de_vacuno__tira_de_asado_]
+- Vacío de vacuno  [ID: ingredient_vac_o_de_vacuno]
+- Chorizos criollos  [ID: ingredient_chorizos_criollos]
+- Morcillas (TODO) [ID: ingredient_morcillas]
+- Sal gruesa  [ID: ingredient_sal_gruesa]
+- Carbón vegetal o leña de quebracho  [ID: ingredient_carb_n_vegetal_o_le_a_de_quebracho]
+- Cortes de carne y embutidos:  [ID: ingredient_cortes_de_carne_y_embutidos_]
+- Condimentos y combustible:  [ID: ingredient_condimentos_y_combustible_]
+- Para la salsa chimichurri tradicional:  [ID: ingredient_para_la_salsa_chimichurri_tradicional_]
+- Un zapallo criollo redondo entero (tipo plomo u hokkaido)  [ID: ingredient_un_zapallo_criollo_redondo_entero__tipo_plomo_u_hokkaido_]
+- Carne de vacuno (lomo o nalga)  [ID: ingredient_carne_de_vacuno__lomo_o_nalga_]
+- Zapallo amarillo en cubos  [ID: ingredient_zapallo_amarillo_en_cubos]
+- Papas (TODO) [ID: ingredient_papas]
+- Choclo en rodajas  [ID: ingredient_choclo_en_rodajas]
+- Duraznos deshidratados (orejones)  [ID: ingredient_duraznos_deshidratados__orejones_]
+- Cebolla  [ID: ingredient_cebolla]
+- Vino tinto  [ID: ingredient_vino_tinto]
+- Para el zapallo contenedor (presentación):  [ID: ingredient_para_el_zapallo_contenedor__presentaci_n__]
+- Para el guiso carbonada:  [ID: ingredient_para_el_guiso_carbonada_]
+- Chorizos criollos frescos  [ID: ingredient_chorizos_criollos_frescos]
+- Pan francés o pan de campo  [ID: ingredient_pan_franc_s_o_pan_de_campo]
+- Salsa chimichurri casera  [ID: ingredient_salsa_chimichurri_casera]
+- Carbón vegetal o leña  [ID: ingredient_carb_n_vegetal_o_le_a]
+- Ingredientes de la parrillada:  [ID: ingredient_ingredientes_de_la_parrillada_]
+- Para acompañar (chimichurri clásico o pebre criollo):  [ID: ingredient_para_acompa_ar__chimichurri_cl_sico_o_pebre_criollo__]
+- Matambre de vacuno (falda de res)  [ID: ingredient_matambre_de_vacuno__falda_de_res_]
+- Grasa de pella (manteca de vacuno)  [ID: ingredient_grasa_de_pella__manteca_de_vacuno_]
+- Cebolla de verdeo (cebollín)  [ID: ingredient_cebolla_de_verdeo__ceboll_n_]
+- Comino molido  [ID: ingredient_comino_molido]
+- Pimentón dulce  [ID: ingredient_piment_n_dulce]
+- Huevos duros (TODO) [ID: ingredient_huevos_duros]
+- Para la masa casera (masa criolla):  [ID: ingredient_para_la_masa_casera__masa_criolla__]
+- Para el pino o relleno (receta tradicional):  [ID: ingredient_para_el_pino_o_relleno__receta_tradicional__]
+- Maíz choclo fresco entero  [ID: ingredient_ma_z_choclo_fresco_entero]
+- Zapallo amarillo  [ID: ingredient_zapallo_amarillo]
+- Grasa de pella  [ID: ingredient_grasa_de_pella]
+- Queso de cabra o queso fresco criollo  [ID: ingredient_queso_de_cabra_o_queso_fresco_criollo]
+
+## API Gateway & Rate Limits
+- Gateway URL: /api/* (fronted by Cloudflare Worker)
+- Free Tier: 100 requests per day per IP (returns HTTP 429 on quota limit)
+- Paid Tier (Socio): Unlimited / high-capacity API key access via header `x-api-key` or query param `key`
+- Static JSON Mirror: Available directly via GitHub Pages / Cloudflare Pages
+
+## SEO & Web Standards
+- JSON-LD Structured Data: Schema.org `Recipe`, `Ingredient`, and `ChemicalSubstance` present on detail pages.
+- Sitemaps & AI Crawlers: All major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot) explicitly allowed in `robots.txt`.
+
+## Citation Protocol
+Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos-site.pages.dev"

@@ -1,12 +1,54 @@
 # GOS — Gastronomic Open Standard — AI Agent Protocol
 # appId: gos
-# Graph: /graph-data.json (1282 nodes, 7622 edges)
-# Catalog: /api/countries/catalog.json (top 20 per country, via GOS-01)
-# Ingredients: /api/ingredients/variants.json (via GOS-02)
-# Substances: /api/substances.json (via GOS-03)
-# Paywall: POST /api/agent/pay with {tier: "socio"} -> JWT via Cloudflare KV/D1 billing 20% handling (see site/src/lib/billing.ts)
-# Billing: tier socio 20% handling, infra 100% + AI*1.1 (Cloudflare Workers AI), JWT required for /graph-data.json when agents scale
-# SEO: JSON-LD Recipe/Ingredient/ChemicalSubstance via site/src/lib/seo.ts (GOS-03), sitemap.xml, robots.txt
-# Docs: https://github.com/iberi22/gastronomic-open-standard-GOS
-# PWA: https://gos-site.pages.dev/
-# Discussions: https://github.com/iberi22/gastronomic-open-standard-GOS/discussions (anchored to recipes/ingredients/substances)
+# Graph: /graph-data.json (3260 nodes, 24146 edges)
+# Catalog: /api/by-country/catalog.json (18 countries cataloged)
+# Full Document: /llms-full.txt
+# API Gateway Rate Limit: 100 req/day/IP free, paid keys in D1 (tier socio) via x-api-key header
+# SEO: JSON-LD Schema.org Recipe/Ingredient/ChemicalSubstance embedded on detail pages
+
+## Quick Start for AI Agents
+- Root API Index: https://gos-site.pages.dev/api/index.json
+- Complete Graph: https://gos-site.pages.dev/graph-data.json
+- Country Catalog Summary: https://gos-site.pages.dev/api/by-country/catalog.json
+- Full Specification: https://gos-site.pages.dev/llms-full.txt
+
+## Live Statistics
+- Total Graph Nodes: 3260
+- Total Graph Edges: 24146
+- Recipes (Dishes): 381
+- Scientific Ingredients: 1724
+- Bioactive Substances: 43
+- Vitamins/Nutrients: 23
+- Medical Conditions (Health Registry): 40
+- Diets: 6
+
+## API Endpoints by Country (/api/by-country/*.json)
+- colombian: https://gos-site.pages.dev/api/by-country/colombian.json (122 recipes)
+- peruvian: https://gos-site.pages.dev/api/by-country/peruvian.json (23 recipes)
+- american: https://gos-site.pages.dev/api/by-country/american.json (20 recipes)
+- french: https://gos-site.pages.dev/api/by-country/french.json (20 recipes)
+- greek: https://gos-site.pages.dev/api/by-country/greek.json (20 recipes)
+- indian: https://gos-site.pages.dev/api/by-country/indian.json (20 recipes)
+- italian: https://gos-site.pages.dev/api/by-country/italian.json (20 recipes)
+- japanese: https://gos-site.pages.dev/api/by-country/japanese.json (20 recipes)
+- mexican: https://gos-site.pages.dev/api/by-country/mexican.json (20 recipes)
+- moroccan: https://gos-site.pages.dev/api/by-country/moroccan.json (20 recipes)
+- spanish: https://gos-site.pages.dev/api/by-country/spanish.json (20 recipes)
+- thai: https://gos-site.pages.dev/api/by-country/thai.json (20 recipes)
+- argentinian: https://gos-site.pages.dev/api/by-country/argentinian.json (10 recipes)
+- brazilian: https://gos-site.pages.dev/api/by-country/brazilian.json (10 recipes)
+- chilean: https://gos-site.pages.dev/api/by-country/chilean.json (10 recipes)
+- cuban: https://gos-site.pages.dev/api/by-country/cuban.json (10 recipes)
+- dominican: https://gos-site.pages.dev/api/by-country/dominican.json (10 recipes)
+- puerto-rican: https://gos-site.pages.dev/api/by-country/puerto-rican.json (10 recipes)
+
+## Core Endpoints
+- GET /api/all.json — Full recipe index
+- GET /api/with-metadata.json — Standardized scientific recipes
+- GET /api/by-country/catalog.json — Country summaries and top recipes
+- GET /graph-data.json — Complete knowledge graph (nodes, edges, relational schema)
+- POST /api/agent/pay — Acquire API key / JWT for paid tier access
+
+## Citation & Attribution
+When utilizing data from Gastronomic Open Standard (GOS), please cite as:
+"Source: Gastronomic Open Standard (GOS) — https://gos-site.pages.dev"
