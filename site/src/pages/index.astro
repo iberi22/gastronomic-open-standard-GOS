@@ -153,6 +153,21 @@ const highlights = [
     </a>
   </section>
 
+  <section class="api-banner">
+    <div class="api-copy">
+      <span class="eyebrow-text">API PARA DESARROLLADORES</span>
+      <h2>Usa los datos de GOS en tu app</h2>
+      <p class="hint">Recetas, ingredientes, nutrientes, substancias y vectores en JSON + descargas masivas. Plan gratuito para desarrollo y pruebas con límite de peticiones; límites ampliados para producción.</p>
+      <div class="actions">
+        <a href={`${base}/api`} class="btn primary">Explorar la API →</a>
+        <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md" class="btn ghost" target="_blank" rel="noopener">Documentación</a>
+      </div>
+    </div>
+    <div class="api-code">
+      <code>GET /api/recipes?limit=10<br />GET /api/ingredients/canela<br />GET /api/vectors/index.json</code>
+    </div>
+  </section>
+
 <style>
   .hero { display:grid; gap:18px; }
   .hero-card { border:1px solid var(--swal-border); border-radius: 20px; padding: 22px; background: linear-gradient(180deg, color-mix(in srgb, var(--swal-surface) 92%, transparent), var(--swal-bg)); }
@@ -188,5 +203,9 @@ const highlights = [
   .ql-icon { color: var(--swal-accent); margin-bottom: 4px; }
   .ql strong{ font-size:14px; }
   .ql em{ font-size:12px; color: var(--swal-text-muted); font-style:normal; }
+  .api-banner { margin-top:18px; border:1px solid color-mix(in srgb, var(--swal-accent) 35%, var(--swal-border)); border-radius:20px; padding:22px; display:grid; grid-template-columns: 1.2fr 0.8fr; gap:18px; align-items:center; background: linear-gradient(135deg, color-mix(in srgb, var(--swal-accent) 10%, var(--swal-surface)), var(--swal-surface)); }
+  @media (max-width: 900px){ .api-banner{ grid-template-columns: 1fr; } }
+  .api-banner h2 { margin:8px 0 6px; font-size:22px; color: var(--swal-text); }
+  .api-code { background: var(--swal-bg); border:1px solid var(--swal-border); border-radius:12px; padding:14px; font-family: var(--swal-font-mono); font-size:12px; line-height:2; color: var(--swal-text-secondary); overflow-x:auto; }
 </style>
 </Layout>

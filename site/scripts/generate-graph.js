@@ -1,6 +1,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import Graph from 'graphology'
+import forceAtlas2 from 'graphology-layout-forceatlas2'
 import matter from 'gray-matter'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -1144,6 +1146,11 @@ export function generateGraph() {
     }
   }
 
+  // ForceAtlas2 layout precomputado (sigma.js/WebGL renderiza x,y estaticos:
+  // cero fisica en cliente, pan/zoom por GPU). Determinista via seed LCG para
+  // diffs estables entre builds.
+  computeLayout(nodes, edges)
+
   const graph = {
     nodes: Array.from(nodes.values()),
     edges: edges,
@@ -1170,6 +1177,52 @@ export function generateGraph() {
 
   console.log(
     `✅ Knowledge graph generated: ${nodes.size} nodes, ${edges.length} edges`,
+  )
+}
+
+// Layout ForceAtlas2 sincrono con seed determinista (LCG). Escribe x,y en cada
+// nodo para render estatico WebGL (sigma.js). Barns-Hut activado para grafos
+// grandes; iteraciones via FA2_LAYOUT_ITERATIONS (default 250).
+function computeLayout(nodes, edges) {
+  const iterations = Number(process.env.FA2_LAYOUT_ITERATIONS || 250)
+  let seed = 0x9e3779b9
+  const rand = () => {
+    seed = (seed + 0x6d2b79f5) | 0
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+  const g = new Graph({ multi: true, allowSelfLoops: false })
+  for (const n of nodes.values()) {
+    g.addNode(n.id, { x: rand() * 100, y: rand() * 100 })
+  }
+  let skipped = 0
+  for (const e of edges) {
+    if (!g.hasNode(e.source) || !g.hasNode(e.target) || e.source === e.target) {
+      skipped++
+      continue
+    }
+    try {
+      g.addEdge(e.source, e.target)
+    } catch {
+      skipped++
+    }
+  }
+  const settings = forceAtlas2.inferSettings(g)
+  settings.barnesHutOptimize = true
+  settings.barnesHutTheta = 0.6
+  settings.scalingRatio = 20
+  settings.gravity = 0.02
+  forceAtlas2.assign(g, { iterations, settings })
+  g.forEachNode((id, attrs) => {
+    const n = nodes.get(id)
+    if (n) {
+      n.x = attrs.x
+      n.y = attrs.y
+    }
+  })
+  console.log(
+    `✅ FA2 layout: ${g.order} nodos, ${g.size} aristas, ${iterations} iters, ${skipped} aristas omitidas`,
   )
 }
 
