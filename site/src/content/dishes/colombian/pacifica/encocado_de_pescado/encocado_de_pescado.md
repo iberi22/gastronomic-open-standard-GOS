@@ -1,11 +1,61 @@
 ---
-title: "Encocado De Pescado"
-region: "Colombia"
-categories: ["Encocado_de_pescado"]
-difficulty: "★★★☆☆"
-prep_time: "25"
-cook_time: "30"
-servings: "6"
+title: Encocado de Pescado
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato Fuerte
+  - Encocado
+  - Ancestral
+difficulty: ★★★☆☆
+prep_time: '25'
+cook_time: '30'
+servings: 6
+tags:
+  - Chocó
+  - Tumaco
+  - Guapi
+main_ingredients:
+  - Pescado de escama (Pargo/Róbalo)
+  - Leche de Coco (Primera prensa)
+  - 'Recao de Azotea (Cimarrón, Albahaca, Orégano)'
+  - Aceite de Achiote (Pigmento lipofílico)
+  - Ají Dulce / Chombo
+sensory:
+  flavor:
+    - Umami Marino
+    - Lácteo Vegetal (Coco)
+    - Herbal Profundo (Recao)
+  texture:
+    - Sedosa (Emulsión)
+    - Turgente (Pescado)
+    - Untuosa
+  aroma:
+    - Cilantro Cimarrón (Erizo)
+    - Coco Tostado
+    - Mar Fresco
+  presentation: >-
+    Cazuela de barro. La salsa debe ser de un color amarillo-achiote vibrante.
+    Se decora con hojas de cilantro cimarrón picado finamente y se acompaña de
+    arroz blanco y aguacate.
+nutrition:
+  calories: 410
+  macros:
+    protein_g: 28
+    fat_g: 32
+    carbs_g: 5
+images:
+  - url: 'https://im.ge/i/encocado-1.AbC123'
+    description: Encocado de pescado humeante con recao de azotea
+description: >-
+  El alma del litoral. Más que un guiso, es una técnica de transporte de sabor:
+  los lípidos del coco capturan los aceites esenciales del 'recao de azotea'
+  para envolver suavemente la proteína del pescado sin opacarla.
 ---
 
 ## Encocado de Pescado
@@ -60,7 +110,7 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ## 📸 Galería
 
-
+![Encocado de Pescado del Pacífico](/dishes/colombian/pacifica/encocado_de_pescado/images/1.webp)
 
 ---
 
@@ -79,7 +129,7 @@ El Encocado de Pescado es uno de los platos más emblemáticos del Pacífico col
 
 ### ⚗️ Química y Física Culinaria
 
-- **El Recao de Azotea (Sinergia Aromática):** El uso de **[Cilantro Cimarrón](../../ingredients/cilantro_cimarron)** (*Eryngium foetidum*) es fundamental. A diferencia del cilantro común, el cimarrón contiene **aldehídos** mucho más estables al calor, lo que permite que su aroma sobreviva a la cocción larga en leche de coco. La mezcla con albahaca negra y orégano de azotea crea una "capa de protección" antioxidante para las grasas del coco.
+- **El Recao de Azotea (Sinergia Aromática):** El uso de **[Cilantro Cimarrón](/dishes/colombian/pacifica/encocado_de_pescado/../../ingredients/cilantro_cimarron)** (*Eryngium foetidum*) es fundamental. A diferencia del cilantro común, el cimarrón contiene **aldehídos** mucho más estables al calor, lo que permite que su aroma sobreviva a la cocción larga en leche de coco. La mezcla con albahaca negra y orégano de azotea crea una "capa de protección" antioxidante para las grasas del coco.
 - **Lipofilia del Achiote:** El achiote no solo da color. Sus compuestos (bixina y norbixina) son lipofílicos. Al disolverse en el aceite del sofrito, actúan como portadores de los sabores azufrados del ajo y la cebolla, anclándolos a la superficie del pescado.
 - **Emulsión de Coco y Colágeno:** La leche de coco actúa como una matriz coloidal. Cuando el pescado suelta una mínima cantidad de colágeno al cocinarse, este ayuda a estabilizar la emulsión del coco, evitando que el agua y la grasa se separen (efecto "cortado").
 

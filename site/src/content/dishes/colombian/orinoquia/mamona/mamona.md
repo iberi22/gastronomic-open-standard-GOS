@@ -1,11 +1,60 @@
 ---
-title: "Mamona (Ternera A La Llanera)"
-region: "Colombia"
-categories: ["Mamona"]
-difficulty: "★★★★☆"
-prep_time: "120"
-cook_time: "320"
-servings: "12"
+title: Mamona (Ternera a la Llanera)
+region: Orinoquía
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato Fuerte
+  - Asado
+  - Ancestral
+difficulty: ★★★★☆
+prep_time: '120'
+cook_time: '320'
+servings: 12
+tags:
+  - Villavicencio
+  - Yopal
+  - Parrilla
+main_ingredients:
+  - 'Ternera Hembra (Joven, ~18 meses)'
+  - Sal de grano grueso
+  - Leña (Maderas duras regionales)
+sensory:
+  flavor:
+    - Umami Intenso
+    - Ahumado de Leña
+    - Salinidad Primaria
+  texture:
+    - Fibrosa-Tierna
+    - Crujiente (Cuero)
+    - Self-Basted (Jugosa)
+  aroma:
+    - Leña Roja
+    - Grasa Tostada
+    - Campo abierto
+  presentation: >-
+    Se sirve en cortes transversales directamente de la estaca. La carne debe
+    exhibir un 'anillo de humo' (smoke ring) y una costra salada exterior.
+    Tradicionalmente se sirve sobre mesas de madera rústica.
+nutrition:
+  calories: 450
+  macros:
+    protein_g: 32
+    fat_g: 28
+    carbs_g: 0
+images:
+  - url: 'https://im.ge/i/mamona-1.AbC456'
+    description: Mamona asándose de forma vertical en estacas
+description: >-
+  La cumbre del asado suramericano. La Mamona no es solo carne asada; es una
+  técnica de transferencia de calor radiante donde la gravedad juega un papel
+  crucial en el auto-baño de grasas, resultando en una carne de ternura
+  inigualable.
 ---
 
 ## Mamona (Ternera a la Llanera)

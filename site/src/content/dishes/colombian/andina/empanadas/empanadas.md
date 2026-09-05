@@ -1,11 +1,61 @@
 ---
-title: "Empanadas Andinas"
-region: "Colombia"
-categories: ["Empanadas"]
-difficulty: "★★★☆☆"
-prep_time: "45 minutos"
-cook_time: "15 minutos"
-servings: "20"
+title: Empanadas Andinas
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Snack
+  - Fritura
+  - Callejera
+difficulty: ★★★☆☆
+prep_time: 45 minutos
+cook_time: 15 minutos
+servings: 20
+tags:
+  - Callejera
+  - Fritanga
+  - Maíz
+main_ingredients:
+  - Masarepa (Harina de maíz precocida)
+  - Carne (res/cerdo) molida
+  - Papa pastusa (puré)
+  - Guiso (Hogao)
+  - Aceite vegetal
+  - Color (Achiote)
+sensory:
+  flavor:
+    - Maíz tostado
+    - Cárnico
+    - Umami (Guiso)
+  texture:
+    - Crujiente (Corteza)
+    - Suave (Relleno)
+    - Quebradizo
+  aroma:
+    - Maíz frito
+    - Comino
+    - Aceite caliente
+  presentation: >-
+    Media luna dorada perfecta. Se sirve caliente en servilleta o canasta,
+    SIEMPRE acompañada de ají picante o guacamole.
+nutrition:
+  calories: 180
+  macros:
+    protein_g: 6
+    fat_g: 9
+    carbs_g: 22
+images:
+  - url: 'https://im.ge/i/empanada-1.AbC123'
+    description: Empanada colombiana típica con ají casero
+description: >-
+  El snack nacional por excelencia. Una ingeniería de dos capas: una corteza de
+  maíz hidrofóbica y crujiente que protege un núcleo húmedo de almidón (papa) y
+  proteína (carne). Su éxito depende de la termodinámica de la fritura profunda.
 ---
 
 ## Empanadas Andinas
@@ -58,7 +108,7 @@ Las empanadas andinas son uno de los pasabocas más populares de la región, cru
 
 ## 📸 Galería
 
-
+![Empanadas Andinas Colombianas](/dishes/colombian/andina/empanadas/images/1.webp)
 
 ---
 

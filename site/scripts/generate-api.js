@@ -186,7 +186,7 @@ function generateAPI() {
     countries: Object.keys(grouped.byCountry).map(country => ({
       country: country,
       count: grouped.byCountry[country].length,
-      endpoint: `/api/countries/${country}.json`
+      endpoint: `/api/by-country/${country}.json`
     })),
     endpoints: {
       all: '/api/all.json',
@@ -253,7 +253,7 @@ function generateAPI() {
   });
 
   // 6. Countries directory
-  const countriesDir = path.join(apiDir, 'countries');
+  const countriesDir = path.join(apiDir, 'by-country');
   fs.mkdirSync(countriesDir, { recursive: true });
 
   Object.entries(grouped.byCountry).forEach(([country, recipesList]) => {
@@ -261,7 +261,7 @@ function generateAPI() {
       path.join(countriesDir, `${country}.json`),
       JSON.stringify({ recipes: recipesList, count: recipesList.length }, null, 2)
     );
-    console.log(`   ✓ /api/countries/${country}.json (${recipesList.length} recipes)`);
+    console.log(`   ✓ /api/by-country/${country}.json (${recipesList.length} recipes)`);
   });
 
   console.log('\n✅ API generation complete!');

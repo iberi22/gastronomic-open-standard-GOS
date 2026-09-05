@@ -1,11 +1,68 @@
 ---
-title: "Mojito Cubano Tradicional"
-region: "Cuba"
-categories: ["Plato"]
-difficulty: "★☆☆☆☆"
-prep_time: "5 minutos"
-cook_time: "0 minutos"
-servings: "1"
+title: Mojito Cubano Tradicional
+region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/mojito/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Bebida
+  - Cóctel
+  - Tradicional
+difficulty: ★☆☆☆☆
+prep_time: 5 minutos
+cook_time: 0 minutos
+servings: 1
+tags:
+  - Ron
+  - Limón
+  - Yerbabuena
+  - Cóctel
+  - Bebida
+  - Cuba
+  - Refrescante
+main_ingredients:
+  - Ron blanco cubano (carta blanca)
+  - Yerbabuena (o menta fresca)
+  - Jugo de limón fresco
+  - Azúcar blanca refinada
+  - Agua con gas (soda o club soda)
+  - Hielo en cubos
+sensory:
+  flavor:
+    - Cítrico
+    - Dulce
+    - Alcohólico (ron blanco)
+    - Herbal (yerbabuena)
+  texture:
+    - Líquido
+    - Refrescante
+  aroma:
+    - Menta fresca y yerbabuena machacadas
+    - Ron de caña
+    - Limón fresco exprimido
+  presentation: >-
+    Servido en un vaso alto (highball) transparente, con abundante hielo en
+    cubos medianos, decorado con una ramita frondosa de yerbabuena fresca en el
+    borde y un popote.
+nutrition:
+  calories: 140
+  macros:
+    protein_g: 0.1
+    fat_g: 0
+    carbs_g: 9
+images:
+  - url: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd'
+    description: Mojito cubano frío y refrescante con yerbabuena y limón (Unsplash)
+description: >-
+  El Mojito es el cóctel cubano más famoso y consumido en todo el mundo,
+  inmortalizado por celebridades como Ernest Hemingway en La Bodeguita del Medio
+  en La Habana. Elaborado con ron blanco, jugo de limón fresco, azúcar blanca
+  refinada, agua con gas, hielo y hojas de yerbabuena machacadas suavemente para
+  liberar sus aromas herbales refrescantes, destaca por su carácter sumamente
+  fresco y cítrico.
 ---
 
 # Mojito Cubano Tradicional
@@ -54,7 +111,7 @@ El Mojito es el embajador líquido de Cuba en el mundo entero. Su origen se remo
 
 ## 📸 Galería
 
-
+![Mojito Cubano tradicional servido frío con yerbabuena](/dishes/cuban/images/mojito_1.webp)
 
 ---
 

@@ -1,11 +1,63 @@
 ---
-title: "Ají De Gallina"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★★☆☆"
-prep_time: "30 minutos"
-cook_time: "40 minutos"
-servings: "6"
+title: Ají de Gallina
+region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Criollo
+  - Guiso
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 40 minutos
+servings: 6
+tags:
+  - Aji
+  - Gallina
+  - Criollo
+  - Guiso
+main_ingredients:
+  - Pechuga de gallina (o pollo)
+  - Pasta de ají amarillo
+  - Pan de molde (o galletas de soda)
+  - Leche evaporada
+  - Nueces (Pecanas)
+  - Queso Parmesano
+sensory:
+  flavor:
+    - Dulce-Picante (Ají Amarillo)
+    - Lácteo (Leche evaporada)
+    - Umami (Gallina y queso)
+  texture:
+    - Cremosa (Crema espesa)
+    - Hilachosa (Pechuga deshilachada)
+    - Crujiente (Nueces/Pecanas)
+  aroma:
+    - Ají sofrito y ajo
+    - Queso parmesano fundido
+    - Nuez tostada
+  presentation: >-
+    Guiso cremoso amarillo profundo con hebras de gallina, servido sobre papas
+    cocidas, decorado con cuartos de huevo duro, aceitunas negras botija y
+    acompañado de arroz blanco graneado.
+nutrition:
+  calories: 620
+  macros:
+    protein_g: 42
+    fat_g: 28
+    carbs_g: 50
+images:
+  - url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd'
+    description: Ají de Gallina cremoso con arroz
+description: >-
+  El Ají de Gallina es un exquisito guiso cremoso criollo peruano. Consiste en
+  una reducción de caldo de gallina espesada con pan, leche evaporada, pecanas
+  licuadas y enriquecida con abundante pasta de ají amarillo aromático.
 ---
 
 # Ají de Gallina
@@ -35,7 +87,7 @@ El Ají de Gallina es uno de los platos más representativos y queridos del Per�
 * **El Aderezo Base:**
     * 1 cebolla roja grande, picada fina en cuadritos (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 3/4 taza de pasta de **[Ají Amarillo](../../ingredients/aji_amarillo)** (sin pepas ni venas, hervido previamente)
+    * 3/4 taza de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)** (sin pepas ni venas, hervido previamente)
     * 2 cucharadas de aceite vegetal
     * 1/2 cucharadita de palillo (cúrcuma peruana, opcional para resaltar color)
 * **Toque Final y Enriquecedores:**
@@ -72,7 +124,7 @@ El Ají de Gallina es uno de los platos más representativos y queridos del Per�
 
 ## 📸 Galería
 
-
+![Ají de Gallina](/dishes/peruvian/costa/images/aji_de_gallina.webp)
 
 ---
 

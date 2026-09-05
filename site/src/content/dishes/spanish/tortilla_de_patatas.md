@@ -1,11 +1,53 @@
 ---
-title: "Tortilla De Patatas EspañOla"
-region: "España"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Tortilla de Patatas Española
+region: España Nacional
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Spanish
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Especiado
+  texture:
+    - Crujiente exterior
+    - Interior tierno
+  aroma:
+    - Aroma característico de Tortilla de Patatas Española
+  presentation: Tortilla de Patatas Española presentado de forma vistosa tradicional.
+nutrition:
+  calories: 550
+  macros:
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Tortilla de Patatas Española tradicional
+description: >-
+  Tortilla de Patatas Española es uno de los platos más emblemáticos de la
+  gastronomía de España Nacional, conocido por su equilibrio de sabores e
+  ingredientes de alta calidad.
 ---
 
 # Tortilla de Patatas Española

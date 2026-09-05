@@ -1,11 +1,65 @@
 ---
-title: "LechóN Asado Cubano"
-region: "Cuba"
-categories: ["Plato"]
-difficulty: "★★★★☆"
-prep_time: "12 horas"
-cook_time: "4 horas"
-servings: "8"
+title: Lechón Asado Cubano
+region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/lechon-asado/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Carnes
+  - Tradicional
+difficulty: ★★★★☆
+prep_time: 12 horas
+cook_time: 4 horas
+servings: 8
+tags:
+  - Cerdo
+  - Asado
+  - Cítrico
+  - Mojo
+  - Navidad
+  - Cuba
+main_ingredients:
+  - Pierna de cerdo (pork shoulder/leg)
+  - Naranja agria (sour orange)
+  - Ajo fresco
+  - Orégano seco
+  - Comino molido
+sensory:
+  flavor:
+    - Salado
+    - Umami de cerdo
+    - Cítrico (naranja agria)
+    - Ajo intenso
+  texture:
+    - Muy tierno (interior)
+    - Extremadamente crujiente (cuerito exterior)
+  aroma:
+    - Cerdo asado
+    - Mojo de ajo y cítricos
+    - Laurel y comino
+  presentation: >-
+    Servido en lascas o desmenuzado con abundante mojo caliente vertido por
+    encima, acompañado de arroz congrí y yuca con mojo.
+nutrition:
+  calories: 450
+  macros:
+    protein_g: 42
+    fat_g: 28
+    carbs_g: 2
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Lechón asado con piel crujiente dorada (Unsplash)
+description: >-
+  El Lechón Asado es el plato festivo por excelencia de Cuba, protagonista
+  indiscutible de las cenas de Nochebuena y fin de año. Consiste en una pierna o
+  paleta de cerdo marinada durante horas en un mojo de abundante ajo machacado,
+  jugo de naranja agria, comino, orégano y laurel, y luego asada lentamente al
+  horno hasta que la carne quede extremadamente tierna y la piel exterior se
+  transforme en un cuerito super crujiente.
 ---
 
 # Lechón Asado Cubano
@@ -59,7 +113,7 @@ El Lechón Asado es sinónimo de fiesta familiar y celebración tradicional en C
 
 ## 📸 Galería
 
-
+![Porción de lechón asado con cuerito crujiente cubano](/dishes/cuban/images/lechon_1.webp)
 
 ---
 

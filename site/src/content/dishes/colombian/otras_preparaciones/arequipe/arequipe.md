@@ -1,11 +1,50 @@
 ---
-title: "Arequipe"
-region: "Colombia"
-categories: ["Arequipe"]
-difficulty: "★★★☆☆"
-prep_time: "10 minutos"
-cook_time: "180 minutos"
-servings: "20"
+title: Arequipe
+region: Nacional
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Postre
+  - Dulce
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 10 minutos
+cook_time: 180 minutos
+servings: 20
+tags:
+  - Dulce
+  - Valle
+  - Antioquia
+main_ingredients:
+  - Leche entera
+  - Azúcar
+  - Bicarbonato
+sensory:
+  flavor:
+    - Caramelo
+    - Lácteo
+  texture:
+    - Untable
+    - Espejo
+  aroma:
+    - Leche asada
+  presentation: 'En frasco de vidrio o servido con obleas, queso o brevas.'
+nutrition:
+  calories: 300
+  macros:
+    protein_g: 6
+    fat_g: 6
+    carbs_g: 58
+images:
+  - url: 'https://im.ge/i/arequipe-1.AbC444'
+    description: Arequipe casero espeso
+description: '* 4 litros de leche entera'
+yaml_validation: 'https://yaml-online-parser.appspot.com/'
 ---
 
 ## Ingredientes

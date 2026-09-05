@@ -1,11 +1,61 @@
 ---
-title: "ChampúS Valluno"
-region: "Colombia"
-categories: ["Champus"]
-difficulty: "★★☆☆☆"
-prep_time: "60"
-cook_time: "40"
-servings: "8"
+title: Champús Valluno
+region: 'Suroccidente (Valle, Nariño, Cauca)'
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Bebida
+  - Ancestral
+  - Mestiza
+difficulty: ★★☆☆☆
+prep_time: '60'
+cook_time: '40'
+servings: 8
+tags:
+  - Cali
+  - Feria de Cali
+  - Tradición
+main_ingredients:
+  - Maíz Trillado (Cocido)
+  - Lulo (*Solanum quitoense*)
+  - Piña de Castilla
+  - Panela
+  - Hojas de Naranjo Agrio
+sensory:
+  flavor:
+    - Agrio-Dulce Cítrico
+    - Maíz Fermentado
+    - Especiado (Canela/Clavo)
+  texture:
+    - Multiparticulada
+    - Viscosa (Caldo de maíz)
+    - Fibrosa (Piña/Lulo)
+  aroma:
+    - Lulo agraz
+    - Cáscara de Piña
+    - Hojas de Naranjo
+  presentation: >-
+    Se sirve en vasos grandes con cuchara. La fruta debe estar picada en dados
+    visibles y el maíz debe ser el protagonista textural junto con el hielo
+    picado.
+nutrition:
+  calories: 280
+  macros:
+    protein_g: 4
+    fat_g: 1.5
+    carbs_g: 62
+images:
+  - url: 'https://im.ge/i/champus-1.AbC333'
+    description: Vaso de champús con trozos de lulo y piña
+description: >-
+  La ensalada líquida del Valle. El Champús es una bebida compleja que desafía
+  la categorización: es un refresco, un postre y una sopa fría de frutas, donde
+  el maíz actúa como el cuerpo estructurante.
 ---
 
 
@@ -52,7 +102,7 @@ El champús es una bebida tradicional del suroccidente colombiano, especialmente
 
 ## 📸 Galería
 
-
+![Champús valluno refrescante](/dishes/colombian/bebidas/champus/images/1.webp)
 
 ---
 

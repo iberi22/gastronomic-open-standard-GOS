@@ -1,11 +1,66 @@
 ---
-title: "Ajiaco Criollo Cubano"
-region: "Cuba"
-categories: ["Plato"]
-difficulty: "★★★★☆"
-prep_time: "12 horas"
-cook_time: "2 horas"
-servings: "8"
+title: Ajiaco Criollo Cubano
+region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/ajiaco-criollo-cubano/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Sopa
+  - Tradicional
+difficulty: ★★★★☆
+prep_time: 12 horas
+cook_time: 2 horas
+servings: 8
+tags:
+  - Sopa
+  - Viandas
+  - Carnes mixtas
+  - Cuba
+  - Tradicional
+main_ingredients:
+  - Tasajo (carne salada de res)
+  - Carne de cerdo
+  - Plátano verde
+  - Plátano maduro
+  - Yuca
+  - Malanga
+  - Maíz tierno (mazorca)
+sensory:
+  flavor:
+    - Salado
+    - Terroso (viandas)
+    - Umami de carnes mixtas
+    - Ligeramente cítrico
+  texture:
+    - Espeso (caldo denso)
+    - Suave (tubérculos cocidos)
+  aroma:
+    - Viandas hervidas (plátano y yuca)
+    - Cerdo asado y tasajo
+    - Limón y ajo
+  presentation: >-
+    Servido muy caliente en cazuelas hondas de barro, con trozos de plátano,
+    maíz y tubérculos sobresaliendo del caldo espeso.
+nutrition:
+  calories: 490
+  macros:
+    protein_g: 28
+    fat_g: 14
+    carbs_g: 64
+images:
+  - url: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea'
+    description: Ajiaco criollo espeso servido en cazuela de barro (Unsplash)
+description: >-
+  El Ajiaco es el plato nacional e histórico más importante de Cuba, considerado
+  por intelectuales como la metáfora de la identidad cubana. Es una sopa o guiso
+  denso y espeso elaborado a partir de la cocción de carnes mixtas (tasajo, res,
+  cerdo, gallina) combinadas con una gran variedad de raíces tropicales y
+  "viandas" como yuca, malanga, ñame, plátanos verdes y maduros, maíz y
+  calabaza, sazonada con un sofrito de ajo y limón.
 ---
 
 # Ajiaco Criollo Cubano
@@ -71,7 +126,7 @@ El Ajiaco es el plato nacional de Cuba. No es una simple sopa; es un crisol de s
 
 ## 📸 Galería
 
-
+![Cazuela de barro humeante de Ajiaco Criollo Cubano](/dishes/cuban/images/ajiaco_1.webp)
 
 ---
 

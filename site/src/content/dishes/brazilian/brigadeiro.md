@@ -1,11 +1,62 @@
 ---
-title: "Brigadeiro Tradicional Brasileiro"
-region: "Brasil"
-categories: ["Plato"]
-difficulty: "★☆☆☆☆"
-prep_time: "15 minutos"
-cook_time: "15 minutos"
-servings: "12"
+title: Brigadeiro Tradicional Brasileiro
+region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/114-brigadeiro.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Postre
+  - Dulce
+  - Festivo
+difficulty: ★☆☆☆☆
+prep_time: 15 minutos
+cook_time: 15 minutos
+servings: 12
+tags:
+  - Chocolate
+  - Dulce
+  - Leche condensada
+  - Fiesta
+  - Postre
+main_ingredients:
+  - Leche condensada
+  - Cacao en polvo
+  - Mantequilla sin sal
+  - Granillo de chocolate
+sensory:
+  flavor:
+    - Dulce
+    - Chocolate intenso
+    - Lácteo (caramelo)
+  texture:
+    - Cremoso
+    - Pegajoso
+    - Suave
+  aroma:
+    - Cacao tostado
+    - Leche condensada cocida
+    - Mantequilla
+  presentation: >-
+    Servido en pequeños capacillos (pirotines) de papel de colores, cubierto
+    uniformemente con chispas o granas de chocolate.
+nutrition:
+  calories: 90
+  macros:
+    protein_g: 1.5
+    fat_g: 3.5
+    carbs_g: 14
+images:
+  - url: 'https://images.unsplash.com/photo-1599819811279-d5ad9cccf838'
+    description: Trufas de brigadeiro decoradas con chispas de chocolate (Unsplash)
+description: >-
+  El Brigadeiro es el dulce de chocolate más emblemático de Brasil. Elaborado
+  con solo tres ingredientes principales—leche condensada, cacao en polvo y
+  mantequilla—este fudge suave se cocina hasta espesar, se enrolla en bolitas y
+  se cubre con fideos de chocolate. Es indispensable en todos los cumpleaños
+  brasileños.
 ---
 
 # Brigadeiro Tradicional Brasileiro
@@ -55,7 +106,7 @@ El Brigadeiro es, sin duda alguna, el rey indiscutible de la repostería brasile
 
 ## 📸 Galería
 
-
+![Brigadeiros brasileños tradicionales en sus capacillos de papel](/dishes/brazilian/images/brigadeiro_1.webp)
 
 ---
 

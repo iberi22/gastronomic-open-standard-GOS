@@ -1,11 +1,57 @@
 ---
-title: "Papas Aborrajadas"
-region: "Colombia"
-categories: ["Papas_aborrajadas"]
-difficulty: "★☆☆☆☆"
-prep_time: "30 minutos"
-cook_time: "20 minutos"
-servings: "12 unidades"
+title: Papas Aborrajadas
+region: Nacional
+language: es
+license: MIT
+source:
+  name: recetasdecolombia.com
+  url: 'https://www.recetasdecolombia.com/papas-aborrajadas'
+  date_retrieved: '2026-09-03'
+categories:
+  - Snack
+  - Comida callejera
+  - Merienda
+  - Tradicional
+difficulty: ★☆☆☆☆
+prep_time: 30 minutos
+cook_time: 20 minutos
+servings: 12 unidades
+tags:
+  - colombiano
+  - tradicional
+  - papas aborrajadas
+  - open source
+main_ingredients:
+  - Papa
+  - Harina de trigo
+  - Huevo
+  - Aceite
+sensory:
+  flavor:
+    - Salado
+  texture:
+    - Crujiente por fuera
+    - Suave por dentro
+  aroma:
+    - Frito
+    - Cereal
+  presentation: >-
+    Se sirven calientes, ideales para compartir en reuniones o como snack
+    escolar.
+nutrition:
+  calories: 785
+  macros:
+    protein_g: 24.9
+    fat_g: 26.7
+    carbs_g: 115.1
+images:
+  - url: ./images/papas_aborrajadas.png
+    description: Papas aborrajadas doradas y crujientes (Generada por AI)
+description: >-
+  Las papas aborrajadas son un snack callejero y casero, típico de ferias y
+  ventas ambulantes en Colombia. Consisten en rodajas de papa cocida, rebozadas
+  en masa y fritas hasta lograr una textura crujiente por fuera y suave por
+  dentro. Son tendencia por su sencillez y sabor reconfortante.
 ---
 
 

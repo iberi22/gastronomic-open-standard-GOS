@@ -1,88 +1,32 @@
 {
-  "totalRecipes": 486,
+  "totalRecipes": 383,
   "languages": [
     {
       "language": "spanish",
-      "count": 486
+      "count": 383,
+      "endpoint": "/api/spanish/index.json"
     }
   ],
   "countries": [
     {
-      "name": "colombian",
-      "count": 109
+      "country": "unknown",
+      "count": 260,
+      "endpoint": "/api/by-country/unknown.json"
     },
     {
-      "name": "china",
-      "count": 103
+      "country": "colombia",
+      "count": 109,
+      "endpoint": "/api/by-country/colombia.json"
     },
     {
-      "name": "mexican",
-      "count": 20
-    },
-    {
-      "name": "thai",
-      "count": 20
-    },
-    {
-      "name": "greek",
-      "count": 20
-    },
-    {
-      "name": "indian",
-      "count": 20
-    },
-    {
-      "name": "italian",
-      "count": 20
-    },
-    {
-      "name": "japanese",
-      "count": 20
-    },
-    {
-      "name": "moroccan",
-      "count": 20
-    },
-    {
-      "name": "american",
-      "count": 20
-    },
-    {
-      "name": "spanish",
-      "count": 20
-    },
-    {
-      "name": "french",
-      "count": 20
-    },
-    {
-      "name": "peruvian",
-      "count": 14
-    },
-    {
-      "name": "chilean",
-      "count": 10
-    },
-    {
-      "name": "cuban",
-      "count": 10
-    },
-    {
-      "name": "puerto-rican",
-      "count": 10
-    },
-    {
-      "name": "dominican",
-      "count": 10
-    },
-    {
-      "name": "brazilian",
-      "count": 10
-    },
-    {
-      "name": "argentinian",
-      "count": 10
+      "country": "peru",
+      "count": 14,
+      "endpoint": "/api/by-country/peru.json"
     }
   ],
-  "generated_at": "2026-09-04T17:00:00Z"
+  "endpoints": {
+    "all": "/api/all.json",
+    "withMetadata": "/api/with-metadata.json",
+    "withoutMetadata": "/api/without-metadata.json"
+  }
 }

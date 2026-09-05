@@ -1,11 +1,64 @@
 ---
-title: "Yuca Con Mojo Cubana"
-region: "Cuba"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "15 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Yuca con Mojo Cubana
+region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/yuca-con-mojo/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Acompañamiento
+  - Vegetales
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 15 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Yuca
+  - Mojo
+  - Ajo
+  - Cítrico
+  - Cuba
+  - Vegetales
+main_ingredients:
+  - Yuca (mandioca o cassava) fresca
+  - Naranja agria (sour orange)
+  - Ajo fresco
+  - Manteca de cerdo (o aceite de oliva)
+  - Cebolla blanca
+sensory:
+  flavor:
+    - Salado
+    - Cítrico (naranja agria)
+    - Ajo fuerte
+  texture:
+    - Harinosa (suave)
+    - Cremosa
+    - Ligeramente fibrosa
+  aroma:
+    - Ajo frito en manteca
+    - Naranja agria fresca
+    - Yuca hervida caliente
+  presentation: >-
+    Dispuestas las yucas calientes en un platón hondo, bañadas generosamente con
+    el mojo de ajo burbujeante y rodajas de cebolla pochada por encima.
+nutrition:
+  calories: 280
+  macros:
+    protein_g: 2.5
+    fat_g: 9
+    carbs_g: 48
+images:
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Plato de yuca cocida bañada en salsa de ajo (Unsplash)
+description: >-
+  La Yuca con Mojo es el acompañamiento cubano por excelencia, compañero
+  inseparable del lechón asado. Consiste en tubérculos de yuca (mandioca)
+  hervidos hasta quedar sumamente suaves y harinosos, bañados en un espectacular
+  aderezo o "mojo" caliente de ajo machacado frito en manteca de cerdo, jugo de
+  naranja agria y rodajas finas de cebolla.
 ---
 
 # Yuca con Mojo Cubana
@@ -58,7 +111,7 @@ La Yuca con Mojo es una de las joyas más humildes y sabrosas de la cocina cuban
 
 ## 📸 Galería
 
-
+![Plato de yuca con mojo caliente y aromático con cebollas](/dishes/cuban/images/yuca_1.webp)
 
 ---
 

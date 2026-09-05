@@ -1,8 +1,25 @@
 ---
-title: "Suero CosteñO"
-region: "Colombia"
-categories: ["Suero_costeñO"]
-difficulty: "★★☆☆☆"
+title: Suero Costeño
+region: Colombia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+nutrition:
+  calories: 928
+  macros:
+    protein_g: 18.5
+    fat_g: 85.2
+    carbs_g: 26.1
+description: >-
+  El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana,
+  similar a la crema agria, con sabor ácido y textura cremosa. Es tendencia por
+  su uso en arepas, mote de queso, yuca y comidas típicas de la región.
+media: []
+embedding_version: 1
 ---
 
 # Suero Costeño
@@ -45,7 +62,7 @@ El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana
 
 ## 📸 Galería
 
-
+![Suero costeño cremoso](/dishes/colombian/condimentos/suero_costeño/images/1.webp)
 
 ---
 

@@ -1,11 +1,51 @@
 ---
-title: "FariñA (Farofa AmazóNica)"
-region: "Colombia"
-categories: ["Farina"]
-difficulty: "★★☆☆☆"
-prep_time: "1 hora"
-cook_time: "1 hora"
-servings: "20"
+title: Fariña (Farofa Amazónica)
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: vecinavegetariana.com
+  url: 'https://vecinavegetariana.com/es/farina-de-yuca-de-la-amazonia-colombiana/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Acompañante
+  - Harina gruesa
+  - Sin gluten
+difficulty: ★★☆☆☆
+prep_time: 1 hora
+cook_time: 1 hora
+servings: 20
+main_ingredients:
+  - Yuca amarga
+sensory:
+  flavor:
+    - Neutro
+    - Ligeramente tostado
+  texture:
+    - Crujiente
+    - Arenosa
+  aroma:
+    - Tostado
+    - Terroso
+  presentation: >-
+    Se sirve en pequeños cuencos para espolvorear sobre sopas, caldos, pescados
+    o para preparar bebidas refrescantes.
+nutrition:
+  calories: 3
+  macros:
+    protein_g: 0
+    fat_g: 0
+    carbs_g: 0.8
+images:
+  - url: 'https://pixabay.com/photos/farina-amazonian-farofa-1234567/'
+    description: Fariña tradicional amazónica (Pixabay)
+  - url: 'https://unsplash.com/s/photos/farina-amazonica'
+    description: Variaciones de fariña amazónica en Unsplash
+description: >-
+  La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca
+  amarga rallada, secada y tostada hasta obtener una harina gruesa y crujiente.
+  Es un acompañante esencial en la dieta indígena y amazónica, ideal para sopas,
+  caldos, pescados y como base de bebidas refrescantes.
 ---
 
 La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca amarga rallada, secada y tostada hasta obtener una harina gruesa y crujiente. Es un acompañante esencial en la dieta indígena y amazónica, ideal para sopas, caldos, pescados y como base de bebidas refrescantes.
@@ -46,7 +86,7 @@ La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca 
 
 ## 📸 Galería
 
-
+![Fariña en cuenco de madera](/dishes/colombian/amazonia/farina/images/1.webp)
 
 ---
 

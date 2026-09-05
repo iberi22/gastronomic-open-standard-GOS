@@ -1,11 +1,58 @@
 ---
-title: "Caracol Guisado (Conch Stew)"
-region: "Colombia"
-categories: ["Caracol_guisado"]
-difficulty: "★★★☆☆"
-prep_time: "40"
-cook_time: "60"
-servings: "6"
+title: Caracol Guisado (Conch Stew)
+region: Insular
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato Fuerte
+  - Especialidad
+difficulty: ★★★☆☆
+prep_time: '40'
+cook_time: '60'
+servings: 6
+tags:
+  - San Andrés
+  - Providencia
+  - Especie Protegida (Veda)
+main_ingredients:
+  - Caracol de Pala (*Strombus gigas*)
+  - Leche de Coco fresca
+  - Ají Chirel (picante local)
+  - 'Vegetales (Cebolla, Pimentón, Ajo)'
+sensory:
+  flavor:
+    - Marino Profundo
+    - Dulzura de Coco
+    - Pungencia de Ají Isleño
+  texture:
+    - Tierna (post-golpeo)
+    - Elástica
+    - Salsa Velouté natural
+  aroma:
+    - Marisco Fresco
+    - Albahaca y Tomillo
+    - Aceite de Coco tibio
+  presentation: >-
+    Se sirve en plato hondo con abundante salsa espesa. El caracol debe estar
+    cortado en medallones o tiras finas para apreciar su color blanco marfil.
+nutrition:
+  calories: 320
+  macros:
+    protein_g: 28
+    fat_g: 14
+    carbs_g: 12
+images:
+  - url: 'https://im.ge/i/caracol-1.AbC002'
+    description: Caracol guisado en leche de coco con especias locales
+description: >-
+  Un manjar de las profundidades. El caracol guisado es el resultado de domar
+  una de las proteínas más resistentes del océano a través técnica mecánica (el
+  golpeo) y cocción química en grasas de coco.
 ---
 
 # Caracol Guisado
@@ -61,7 +108,7 @@ El Caracol Guisado es un plato icónico de la región Insular, especialmente de 
 
 ## 📸 Galería
 
-
+![Caracol guisado con coco](/dishes/colombian/insular/caracol_guisado/images/1.webp)
 
 ---
 

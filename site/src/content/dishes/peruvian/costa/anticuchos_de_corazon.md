@@ -1,11 +1,63 @@
 ---
-title: "Anticuchos De CorazóN"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★★☆☆"
-prep_time: "40 minutos"
-cook_time: "15 minutos"
-servings: "6"
+title: Anticuchos de Corazón
+region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Criollo
+  - Parrilla
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 15 minutos
+servings: 6
+tags:
+  - Anticuchos
+  - Corazon
+  - Criollo
+  - Parrilla
+main_ingredients:
+  - Corazón de res entero
+  - Pasta de ají panca
+  - Ajo molido
+  - Vinagre tinto
+  - Orégano seco
+  - Cerveza rubia (o chicha de jora)
+sensory:
+  flavor:
+    - Umami Profundo (Carne de corazón)
+    - Especiado-Ahumado (Comino y ajo)
+    - Ácido (Vinagre de ají)
+  texture:
+    - Firme y Elástica
+    - Jugosa
+    - Crocante en bordes
+  aroma:
+    - Carbón de leña y humo
+    - Vinagre caliente y comino
+    - Ají panca tostado
+  presentation: >-
+    Trozos de corazón ensartados en palitos de caña, dorados al carbón,
+    brillando con su adobo de ají panca, acompañados de papas doradas cocidas y
+    rodajas de choclo, servidos con salsa de ají de anticucho.
+nutrition:
+  calories: 340
+  macros:
+    protein_g: 36
+    fat_g: 14
+    carbs_g: 16
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Anticuchos de Corazón peruanos tradicionales
+description: >-
+  Los Anticuchos de Corazón son brochetas de corazón de res marinado en una
+  potente mezcla de ají panca, vinagre tinto, ajo y especias, asadas rápidamente
+  a la parrilla de carbón. Un clásico absoluto de la cocina callejera peruana.
 ---
 
 # Anticuchos de Corazón
@@ -26,7 +78,7 @@ Los Anticuchos de Corazón son el emblema indiscutible de la cocina callejera y 
 * **La Carne (Corazón):**
     * 1 corazón de res entero, fresco (aproximadamente 1.2 kg)
 * **El Adobo o Marinado (Clave del sabor):**
-    * 3/4 taza de pasta de **[Ají Panca](../../ingredients/aji_panca)** (sin picante, solo pulpa licuada)
+    * 3/4 taza de pasta de **[Ají Panca](/dishes/peruvian/costa/../../ingredients/aji_panca)** (sin picante, solo pulpa licuada)
     * 4 cucharadas de ajo molido fresco
     * 1/2 taza de vinagre tinto de vino
     * 1/2 taza de cerveza rubia (o chicha de jora tradicional)
@@ -70,7 +122,7 @@ Los Anticuchos de Corazón son el emblema indiscutible de la cocina callejera y 
 
 ## 📸 Galería
 
-
+![Anticuchos de Corazón](/dishes/peruvian/costa/images/anticuchos.webp)
 
 ---
 

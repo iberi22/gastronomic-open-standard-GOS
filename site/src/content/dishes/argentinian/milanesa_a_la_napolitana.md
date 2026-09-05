@@ -1,11 +1,68 @@
 ---
-title: "Milanesa A La Napolitana"
-region: "Argentina"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "25 minutos"
-cook_time: "15 minutos"
-servings: "4"
+title: Milanesa a la Napolitana
+region: Buenos Aires / Pampeana
+language: es
+license: MIT
+source:
+  name: recetasargentinas.net
+  url: 'https://www.recetasargentinas.net/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Fritura
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 25 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Argentina
+  - Milanesa
+  - Napolitana
+  - Queso
+  - Carne
+  - Clásico
+main_ingredients:
+  - Carne de vacuno (bola de lomo o nalga)
+  - Pan rallado
+  - Huevos
+  - Salsa de tomate para pizza
+  - Jamón cocido
+  - Queso mozzarella
+  - Orégano seco
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Ácido sutil
+    - Lácteo
+  texture:
+    - Crujiente exterior
+    - Tierno interior
+    - Cremoso superior
+  aroma:
+    - Pan frito
+    - Salsa de tomate picante
+    - Queso derretido
+    - Orégano
+  presentation: >-
+    Se sirve caliente en plato plano amplio, acompañada de una abundante porción
+    de papas fritas bastón recién hechas.
+nutrition:
+  calories: 620
+  macros:
+    protein_g: 45
+    fat_g: 32
+    carbs_g: 38
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: 'Milanesa a la napolitana argentina clásica con jamón, salsa y queso'
+description: >-
+  La Milanesa a la Napolitana es un clásico de la gastronomía urbana argentina,
+  nacido en un restaurante porteño en los años 40. Consiste en un filete de
+  carne de vacuno empanado y frito, cubierto con salsa de tomate condimentada,
+  rebanadas de jamón cocido, abundante queso mozzarella derretido y un toque de
+  orégano.
 ---
 
 # Milanesa a la Napolitana

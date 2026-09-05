@@ -1,11 +1,58 @@
 ---
-title: "Yakitori De Pollo En Tare"
-region: "Japón"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "15 minutos"
-servings: "4"
+title: Yakitori de Pollo en Tare
+region: Tokyo
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Izakaya
+  - Parrilla
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Muslo de pollo troceado
+  - Cebolleta japonesa (Negi)
+  - Salsa de soja
+  - Mirin
+  - Sake
+  - Azúcar
+  - Brochetas de bambú
+sensory:
+  flavor:
+    - Umami glaseado
+    - Dulce salado
+    - Ahumado de carbón sumi
+  texture:
+    - Carne de pollo jugosa
+    - Piel crujiente caramelizada
+  aroma:
+    - Carbón Binchotan
+    - Salsa Tare reducida
+  presentation: >-
+    Brochetas de bambú doradas al carbón con glaseado brillante de tare y
+    cebolleta intercalada.
+nutrition:
+  calories: 390
+  macros:
+    protein_g: 28
+    fat_g: 16
+    carbs_g: 18
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Yakitori de Pollo en Tare tradicional
+description: >-
+  El Yakitori en Tare son brochetas de pollo ensartadas con cebolleta, asadas a
+  fuego vivo de carbón y sumergidas en un glaseado umami concentrado.
 ---
 
 # Yakitori de Pollo en Tare

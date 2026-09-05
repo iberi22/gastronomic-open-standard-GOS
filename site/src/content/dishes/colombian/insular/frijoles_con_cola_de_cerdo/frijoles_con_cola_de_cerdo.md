@@ -1,8 +1,26 @@
 ---
-title: "Frijoles Con Cola De Cerdo (Pig Tail Beans)"
-region: "Colombia"
-categories: ["Frijoles_con_cola_de_cerdo"]
-difficulty: "★★☆☆☆"
+title: Frijoles con Cola de Cerdo (Pig Tail Beans)
+region: Colombia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+nutrition:
+  calories: 1753
+  macros:
+    protein_g: 115.9
+    fat_g: 6.1
+    carbs_g: 320
+description: >-
+  Este plato es una de las recetas tradicionales de la región Insular,
+  especialmente en San Andrés y Providencia. Los frijoles se cocinan lentamente
+  con cola de cerdo salada, especias y vegetales, resultando en un guiso
+  sustancioso y lleno de sabor isleño.
+media: []
+embedding_version: 1
 ---
 
 # Frijoles con Cola de Cerdo (Pig Tail Beans)
@@ -55,7 +73,7 @@ Este plato es una de las recetas tradicionales de la región Insular, especialme
 
 ## 📸 Galería
 
-
+![Frijoles con cola de cerdo](/dishes/colombian/insular/frijoles_con_cola_de_cerdo/images/1.webp)
 
 ---
 

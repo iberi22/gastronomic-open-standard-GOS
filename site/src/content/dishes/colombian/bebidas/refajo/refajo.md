@@ -1,11 +1,58 @@
 ---
-title: "Refajo Colombiano"
-region: "Colombia"
-categories: ["Refajo"]
-difficulty: "★☆☆☆☆"
-prep_time: "5 minutos"
-cook_time: "0 minutos"
-servings: "4"
+title: Refajo Colombiano
+region: Andina / Nacional
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Bebida fría
+  - Cóctel Popular
+  - Acompañante
+difficulty: ★☆☆☆☆
+prep_time: 5 minutos
+cook_time: 0 minutos
+servings: 4
+tags:
+  - Domingo
+  - Asado
+  - Fritanga
+main_ingredients:
+  - Cerveza (Lager o Águila)
+  - Soda Roja (Colombiana)
+  - Hielo
+  - Aguardiente (Opcional)
+sensory:
+  flavor:
+    - Dulce (Cola)
+    - Amargo (Cerveza)
+    - Malteado
+  texture:
+    - Burbujeante (Carbonatada)
+    - Refrescante
+  aroma:
+    - Lúpulo suave
+    - Vainilla (de la soda)
+  presentation: >-
+    En jarra de vidrio grande con mucho hielo, para compartir. Color ámbar
+    rojizo y espuma.
+nutrition:
+  calories: 180
+  macros:
+    protein_g: 1
+    fat_g: 0
+    carbs_g: 25
+images:
+  - url: 'https://im.ge/i/refajo-1.AbC555'
+    description: Jarra de refajo espumoso
+description: >-
+  El cóctel del pueblo. Una mezcla aparentemente simple de cerveza  lager y soda
+  de cola roja (tipo Colombiana), que resulta en una bebida isotónica social
+  perfecta para cortar la grasa de asados y fritangas. Su ciencia radica en el
+  equilibrio de carbonatación y pH.
 ---
 
 # Refajo (El Maridaje Nacional)

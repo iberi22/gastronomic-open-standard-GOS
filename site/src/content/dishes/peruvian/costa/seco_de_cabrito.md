@@ -1,11 +1,63 @@
 ---
-title: "Seco De Cabrito"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★★★☆"
-prep_time: "30 minutos"
-cook_time: "1 hora 15 minutos"
-servings: "6"
+title: Seco de Cabrito
+region: Costa (Norte)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Criollo
+  - Festivo
+difficulty: ★★★★☆
+prep_time: 30 minutos
+cook_time: 1 hora 15 minutos
+servings: 6
+tags:
+  - Seco
+  - Cabrito
+  - Chiclayo
+  - Criollo
+main_ingredients:
+  - Carne de cabrito (o cordero tierno)
+  - Culantro (Cilantro) fresco
+  - Chicha de jora (maíz fermentado)
+  - Pasta de ají amarillo
+  - Pasta de ají mirasol
+  - Loche (zapallo loche norteño)
+sensory:
+  flavor:
+    - Ácido (Chicha de Jora)
+    - Herbal (Cilantro/Culantro)
+    - Umami (Cabrito)
+  texture:
+    - Tierna-Desmenuzable (Carne cocida a fuego lento)
+    - Cremosa (Salsa espesa)
+    - Graneada (Arroz y frijoles de acompañamiento)
+  aroma:
+    - Cilantro fresco sofrito
+    - Chicha de jora fermentada
+    - Comino y ajo dorado
+  presentation: >-
+    Trozos tiernos de cabrito bañados en una espesa salsa verde oscura de
+    cilantro, acompañados tradicionalmente de frijoles bayos, arroz blanco
+    graneado, yucas cocidas y salsa criolla.
+nutrition:
+  calories: 680
+  macros:
+    protein_g: 42
+    fat_g: 26
+    carbs_g: 54
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Seco de Cabrito norteño tradicional
+description: >-
+  El Seco de Cabrito es el guiso rey de la costa norte peruana. Consiste en
+  trozos de cabrito de leche macerados en chicha de jora y cocidos lentamente en
+  un aderezo espeso de cilantro licuado, ajíes locales y zapallo loche rallado.
 ---
 
 # Seco de Cabrito
@@ -30,9 +82,9 @@ El Seco de Cabrito es el guiso más emblemático y festivo de las regiones de La
 * **El Aderezo Verde:**
     * 1 cebolla roja grande, picada en cuadritos muy finos (brunoise)
     * 1.5 cucharadas de ajo molido fresco
-    * 1.5 tazas de hojas de **[Cilantro/Culantro](../../ingredients/cilantro)** fresco, licuado con un chorrito de agua o chicha de jora
-    * 1/2 taza de pasta de **[Ají Amarillo](../../ingredients/aji_amarillo)**
-    * 2 cucharadas de pasta de **[Ají Mirasol](../../ingredients/aji_mirasol)**
+    * 1.5 tazas de hojas de **[Cilantro/Culantro](/dishes/peruvian/costa/../../ingredients/cilantro)** fresco, licuado con un chorrito de agua o chicha de jora
+    * 1/2 taza de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)**
+    * 2 cucharadas de pasta de **[Ají Mirasol](/dishes/peruvian/costa/../../ingredients/aji_mirasol)**
     * 1/2 taza de zapallo loche norteño rallado con su cáscara (esencial para el sabor norteño)
     * 3 cucharadas de aceite vegetal o manteca de cerdo
 * **Líquidos y Acompañamientos:**
@@ -66,7 +118,7 @@ El Seco de Cabrito es el guiso más emblemático y festivo de las regiones de La
 
 ## 📸 Galería
 
-
+![Seco de Cabrito](/dishes/peruvian/costa/images/seco.webp)
 
 ---
 

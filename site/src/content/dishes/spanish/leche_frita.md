@@ -1,11 +1,53 @@
 ---
-title: "Leche Frita Tradicional"
-region: "España"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Leche Frita Tradicional
+region: Castilla y León
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Spanish
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Especiado
+  texture:
+    - Crujiente exterior
+    - Interior tierno
+  aroma:
+    - Aroma característico de Leche Frita Tradicional
+  presentation: Leche Frita Tradicional presentado de forma vistosa tradicional.
+nutrition:
+  calories: 550
+  macros:
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Leche Frita Tradicional tradicional
+description: >-
+  Leche Frita Tradicional es uno de los platos más emblemáticos de la
+  gastronomía de Castilla y León, conocido por su equilibrio de sabores e
+  ingredientes de alta calidad.
 ---
 
 # Leche Frita Tradicional

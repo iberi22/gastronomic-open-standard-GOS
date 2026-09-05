@@ -1,11 +1,57 @@
 ---
-title: "Enmoladas De Pollo"
-region: "México"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "20 minutos"
-servings: "4"
+title: Enmoladas de Pollo
+region: Oaxaca
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 20 minutos
+servings: 4
+tags:
+  - Mexican
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Tortillas de maíz
+  - Pollo desmenuzado
+  - Mole negro preparado
+  - Queso fresco
+  - Ajonjolí tostado
+  - Cebolla morada
+sensory:
+  flavor:
+    - Sabor profundo a mole
+    - Dulce picante
+    - Salado
+  texture:
+    - Tortilla suave impregnada de mole
+    - Relleno jugoso
+  aroma:
+    - Mole negro u oscuro
+    - Ajonjolí tostado
+  presentation: >-
+    Tortillas pasadas por aceite y sumergidas en mole caliente, dobladas sobre
+    pollo y decoradas con ajonjolí.
+nutrition:
+  calories: 580
+  macros:
+    protein_g: 30
+    fat_g: 22
+    carbs_g: 64
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Enmoladas de Pollo tradicional
+description: >-
+  Las Enmoladas son primas de las enchiladas pero bañadas en un mole rico y
+  complejo, representando la calidez de la cocina casera oaxaqueña.
 ---
 
 # Enmoladas de Pollo

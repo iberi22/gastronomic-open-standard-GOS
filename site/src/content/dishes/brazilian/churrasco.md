@@ -1,11 +1,61 @@
 ---
-title: "Churrasco GaúCho De Picanha"
-region: "Brasil"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "15 minutos"
-cook_time: "20 minutos"
-servings: "6"
+title: Churrasco Gaúcho de Picanha
+region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/1897-churrasco-de-picanha.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Carnes
+  - Barbacoa
+difficulty: ★★☆☆☆
+prep_time: 15 minutos
+cook_time: 20 minutos
+servings: 6
+tags:
+  - Res
+  - Picanha
+  - Asado
+  - Gaúcho
+  - Carbón
+main_ingredients:
+  - Picanha (tapa de cuadril) de res
+  - Sal gruesa (sal grosso)
+  - Carbón vegetal
+sensory:
+  flavor:
+    - Salado
+    - Umami intenso
+    - Ahumado
+  texture:
+    - Jugoso
+    - Firme
+    - Tierno
+  aroma:
+    - Carne asada al carbón
+    - Grasa de res tostada
+  presentation: >-
+    Cortado en rodajas delgadas directamente desde la espada o espiedo sobre una
+    tabla de madera, acompañado de farofa de mantequilla y salsa vinagreta
+    brasileña.
+nutrition:
+  calories: 460
+  macros:
+    protein_g: 38
+    fat_g: 34
+    carbs_g: 0
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Cortes de picanha asándose al carbón en espadas (Unsplash)
+description: >-
+  El Churrasco es el legendario asado brasileño originario de la cultura gaúcha
+  del sur del país. Su corte estrella es la Picanha (tapa de cuadril), famosa
+  por su jugosidad y su gruesa capa de grasa exterior. Cocinada al carbón
+  utilizando únicamente sal gruesa, conserva el sabor más puro e intenso de la
+  carne de res.
 ---
 
 # Churrasco Gaúcho de Picanha
@@ -55,7 +105,7 @@ El Churrasco es más que una comida en Brasil; es una institución social, un ar
 
 ## 📸 Galería
 
-
+![Corte de picanha jugoso en espada de churrasco](/dishes/brazilian/images/churrasco_1.webp)
 
 ---
 

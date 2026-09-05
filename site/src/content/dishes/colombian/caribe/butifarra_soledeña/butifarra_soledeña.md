@@ -1,11 +1,61 @@
 ---
-title: "Butifarra SoledeñA"
-region: "Colombia"
-categories: ["Butifarra_soledeñA"]
-difficulty: "★★★★☆"
-prep_time: "60"
-cook_time: "45"
-servings: "30"
+title: Butifarra Soledeña
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Snack
+  - Embutido
+  - Patrimonio
+difficulty: ★★★★☆
+prep_time: '60'
+cook_time: '45'
+servings: 30
+tags:
+  - Soledad
+  - Callejero
+  - Carnaval
+main_ingredients:
+  - Carne de Res (90% magra)
+  - Tocino de Cerdo (Grasa dorsal)
+  - Tripa de Cerdo (Capa serosa natural)
+  - Pimienta Picante 'Ojo de Pájaro' (o similar)
+  - Ajo y Sal
+sensory:
+  flavor:
+    - Salado/Especiado (Intenso)
+    - Pimienta residual
+    - Cárnico graso
+  texture:
+    - Snap (Crocancia de tripa)
+    - Compacta
+    - Granular fina
+  aroma:
+    - Ajo dominante
+    - Pimienta caliente
+    - Natural (Tripa)
+  presentation: >-
+    Ristra de bolitas unidas por hilo. Se sirven calientes, bañadas en jugo de
+    limón fresco y acompañadas de bollo de yuca (limpio de hojas).
+nutrition:
+  calories: 180
+  macros:
+    protein_g: 12
+    fat_g: 14
+    carbs_g: 2
+images:
+  - url: 'https://im.ge/i/butifarra-1.AbC789'
+    description: Ristra de butifarras soledeñas tradicionales
+description: >-
+  El snack callejero por excelencia del Atlántico. Es un embutido de herencia
+  hispana (botifarra) que mutó para adaptarse al calor del trópico: se redujo su
+  tamaño para cocción rápida en agua y se aumentó el uso de pimienta para actuar
+  como antimicrobiano natural.
 ---
 
 # Butifarra Soledeña
@@ -57,7 +107,7 @@ servings: "30"
 
 ## 📸 Galería
 
-
+![Butifarra Soledeña](/dishes/colombian/caribe/butifarra_soledeña/images/1.webp)
 
 ---
 

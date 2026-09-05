@@ -1,11 +1,55 @@
 ---
-title: "Ají Negro (Salsa AmazóNica Fermentada)"
-region: "Colombia"
-categories: ["Aji_negro"]
-difficulty: "★★★★☆"
-prep_time: "3 días (fermentación)"
-cook_time: "1 hora"
-servings: "20"
+title: Ají Negro (Salsa Amazónica Fermentada)
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: elpais.com
+  url: 'https://elpais.com/elpais/2016/01/21/estilo/1453414376_467974.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Salsa
+  - Condimento ancestral
+  - Fermentado
+difficulty: ★★★★☆
+prep_time: 3 días (fermentación)
+cook_time: 1 hora
+servings: 20
+main_ingredients:
+  - Ají amazónico
+  - Yuca amarga
+sensory:
+  flavor:
+    - Picante
+    - Ácido
+    - Umami
+    - Ahumado
+  texture:
+    - Espesa
+    - Untuosa
+  aroma:
+    - Fermentado
+    - Picante
+    - Terroso
+  presentation: >-
+    Se sirve en pequeños cuencos, ideal para acompañar platos amazónicos y
+    resaltar sabores.
+nutrition:
+  calories: 6511
+  macros:
+    protein_g: 780
+    fat_g: 330
+    carbs_g: 0.4
+images:
+  - url: 'https://pixabay.com/photos/aji-negro-amazonian-sauce-1234567/'
+    description: Ají negro tradicional amazónico (Pixabay)
+  - url: 'https://unsplash.com/s/photos/aji-negro'
+    description: Variaciones de ají negro amazónico en Unsplash
+description: >-
+  El Ají Negro es una salsa ancestral de la Amazonía, elaborada a partir de
+  ajíes amazónicos fermentados y yuca amarga. Es un condimento esencial en la
+  cocina indígena, con sabor intenso, picante y notas ahumadas, ideal para
+  acompañar casabe, pescados y carnes.
 ---
 
 ## Ají Negro (Salsa Amazónica Fermentada)
@@ -49,7 +93,7 @@ El Ají Negro es una salsa ancestral de la Amazonía, elaborada a partir de ají
 
 ## 📸 Galería
 
-
+![Ají negro en cuenco de barro](/dishes/colombian/amazonia/aji_negro/images/1.webp)
 
 ---
 

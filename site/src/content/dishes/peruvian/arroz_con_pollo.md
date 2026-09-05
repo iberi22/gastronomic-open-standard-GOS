@@ -1,11 +1,61 @@
 ---
-title: "Arroz Con Pollo Peruano"
-region: "Perú"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "30 minutos"
-cook_time: "45 minutos"
-servings: "6"
+title: Arroz con Pollo Peruano
+region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: yanuq.com
+  url: 'https://www.yanuq.com/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Criollo
+  - Festivo
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 45 minutos
+servings: 6
+tags:
+  - Criollo
+  - Domingo
+  - Culantro
+main_ingredients:
+  - Pollo
+  - Arroz
+  - Culantro (Cilantro)
+  - Ají Amarillo
+  - Cerveza Negra
+  - Arvejas
+sensory:
+  flavor:
+    - Herbal (Culantro)
+    - Umami
+    - Cerveza Negra
+  texture:
+    - Graneado
+    - Húmedo
+    - Tierno
+  aroma:
+    - Culantro fresco
+    - Malta tostada
+    - Ají amarillo
+  presentation: >-
+    Se sirve con una presa de pollo dorada sobre el arroz verde, acompañado de
+    Salsa Criolla y, a veces, Papa a la Huancaína.
+nutrition:
+  calories: 850
+  macros:
+    protein_g: 45
+    fat_g: 28
+    carbs_g: 95
+images:
+  - url: 'https://pixabay.com/es/photos/arroz-con-pollo-peruvian-food-6146258/'
+    description: Arroz con Pollo Peruano clásico (Pixabay)
+description: >-
+  El Arroz con Pollo Peruano es un ícono de la cocina criolla, famoso por su
+  color verde intenso derivado del culantro (cilantro) y su sabor profundo
+  aportado por la cerveza negra y el ají amarillo. Es una adaptación mestiza de
+  la paella española.
 ---
 
 # Arroz con Pollo Peruano
@@ -26,8 +76,8 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 * **Proteína:**
     * 6 presas de pollo (pierna con muslo o pechuga)
 * **Base Aromática (Aderezo):**
-    * 1 taza de hojas de **[Culantro/Cilantro](../../ingredients/cilantro)** (sin tallos gruesos)
-    * 1/2 taza de pasta de **[Ají Amarillo](../../ingredients/aji_amarillo)**
+    * 1 taza de hojas de **[Culantro/Cilantro](/dishes/peruvian/../../ingredients/cilantro)** (sin tallos gruesos)
+    * 1/2 taza de pasta de **[Ají Amarillo](/dishes/peruvian/../../ingredients/aji_amarillo)**
     * 1 cebolla roja grande, picada en cuadritos
     * 1 cucharada de ajo molido
     * 1/2 taza de cerveza negra (Malta)
@@ -66,7 +116,7 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 
 ## 📸 Galería
 
-
+![Arroz con Pollo Peruano](/dishes/peruvian/images/1.webp)
 
 ---
 
@@ -76,10 +126,10 @@ El arroz con pollo peruano es uno de los platos más emblemáticos de la gastron
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Herbal, Umami        | 5/5              | Aldehídos del **[Cilantro](../../ingredients/cilantro)** + Glutamato del **[Pollo](../../ingredients/pollo)** y levaduras de la cerveza. |
+| **Sabor**| Herbal, Umami        | 5/5              | Aldehídos del **[Cilantro](/dishes/peruvian/../../ingredients/cilantro)** + Glutamato del **[Pollo](/dishes/peruvian/../../ingredients/pollo)** y levaduras de la cerveza. |
 | **Aroma**| Culantro, Malta      | 5/5              | Compuestos volátiles del cilantro (E-2-decenal) preservados en grasa. |
 | **Textura**| Granulado, Húmedo    | 4/5              | Arroz impregnado de grasa y colágeno, no seco. |
-| **Boca** | Especiado (Leve)     | 3/5              | Capsaicinoides del **[Ají Amarillo](../../ingredients/aji_amarillo)** (picante aromático, no agresivo). |
+| **Boca** | Especiado (Leve)     | 3/5              | Capsaicinoides del **[Ají Amarillo](/dishes/peruvian/../../ingredients/aji_amarillo)** (picante aromático, no agresivo). |
 
 ### ⚗️ Química y Física Culinaria
 

@@ -1,11 +1,60 @@
 ---
-title: "Aborrajado Valluno"
-region: "Colombia"
-categories: ["Aborrajado_valluno"]
-difficulty: "★★★☆☆"
-prep_time: "40"
-cook_time: "15"
-servings: "8"
+title: Aborrajado Valluno
+region: Pacífica / Valle del Cauca
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Fritura
+  - Dulce-Salado
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: '40'
+cook_time: '15'
+servings: 8
+tags:
+  - Cali
+  - Valluno
+  - Frito
+main_ingredients:
+  - Plátano Maduro (Cáscara negra)
+  - Queso Fresco / Mozzarella
+  - Bocadillo de Guayaba (Variante)
+  - Harina de Trigo
+  - Huevo
+  - Leche
+sensory:
+  flavor:
+    - Plátano Maduro (Dulce)
+    - Queso (Salado)
+    - Bocadillo (Opcional)
+  texture:
+    - Corteza Crocante (Rebozado)
+    - Interior Cremoso
+    - Queso Filante
+  aroma:
+    - Plátano frito caramelizado
+    - Vainilla (en el rebozado)
+  presentation: >-
+    Cilindro dorado y abultado. Al partirlo debe fluir el queso derretido
+    contrastando con el plátano meloso.
+nutrition:
+  calories: 380
+  macros:
+    protein_g: 8
+    fat_g: 18
+    carbs_g: 48
+images:
+  - url: 'https://im.ge/i/aborrajado-1.AbC222'
+    description: Aborrajado valluno abierto mostrando el queso
+description: >-
+  El matrimonio perfecto. El Aborrajado es la máxima expresión del contraste
+  dulce-salado en Colombia. Un plátano muy maduro se aplasta, se rellena de
+  queso, se cierra y se reboza en una mezcla especial (funga) para ser frito.
 ---
 
 # Aborrajado Valluno

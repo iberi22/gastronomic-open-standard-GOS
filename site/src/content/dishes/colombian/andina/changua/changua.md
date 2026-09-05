@@ -1,11 +1,65 @@
 ---
-title: "Changua"
-region: "Colombia"
-categories: ["Changua"]
-difficulty: "★☆☆☆☆"
-prep_time: "10"
-cook_time: "15"
-servings: "4"
+title: Changua
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Desayuno
+  - Sopa
+  - Lácteo
+difficulty: ★☆☆☆☆
+prep_time: 10
+cook_time: 15
+servings: 4
+tags:
+  - Bogotá
+  - Desayuno
+  - Controversial
+main_ingredients:
+  - Leche entera
+  - Agua
+  - Huevo
+  - Cebolla larga
+  - Cilantro
+  - Sal
+  - Pan Calado (tostada)
+  - Mantequilla (opcional)
+sensory:
+  flavor:
+    - Lácteo (neutro)
+    - Salado
+    - Herbal (Cilantro/Cebolla)
+  texture:
+    - Líquido Cremoso
+    - Suave (Huevo escalfado)
+    - Esponjoso (Calado húmedo)
+  aroma:
+    - Leche caliente
+    - Cilantro
+    - Cebolla
+  presentation: >-
+    Cazuela ancha. El pan calado debe estar en el fondo absorbiendo el líquido,
+    el huevo entero (escalfado) encima, y todo cubierto con una capa generosa de
+    cilantro y cebolla fina.
+nutrition:
+  calories: 280
+  macros:
+    protein_g: 14
+    fat_g: 12
+    carbs_g: 28
+images:
+  - url: 'https://im.ge/i/changua-1.AbC789'
+    description: Changua cachaca con calado y huevo
+description: >-
+  Quizás el plato más controversial de Colombia. Amada por los bogotanos y
+  temida por el resto, es una sopa de leche simple y delicada. Su ciencia radica
+  en el equilibrio osmótico para escalfar el huevo perfectamente en una dilución
+  de leche y agua.
 ---
 
 ## Changua
@@ -52,7 +106,7 @@ La Changua es una sopa de desayuno tradicional de la región andina, especialmen
 
 ## 📸 Galería
 
-
+![Changua Colombiana](/dishes/colombian/andina/changua/images/1.webp)
 
 ---
 

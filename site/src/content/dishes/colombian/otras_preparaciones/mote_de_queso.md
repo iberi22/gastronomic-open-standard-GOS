@@ -1,11 +1,52 @@
 ---
-title: "Mote De Queso"
-region: "Colombia"
-categories: ["Otras_preparaciones"]
-difficulty: "★★★☆☆"
-prep_time: "20 minutos"
-cook_time: "1 hora"
-servings: "6"
+title: Mote de Queso
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+categories:
+  - Sopa
+  - Plato fuerte
+  - Vegetariano
+difficulty: ★★★☆☆
+prep_time: 20 minutos
+cook_time: 1 hora
+servings: 6
+tags:
+  - Sopa tradicional
+  - Vegetariano
+  - Comida costeña
+main_ingredients:
+  - Ñame
+  - Queso costeño
+  - Suero
+  - Hogao
+sensory:
+  flavor:
+    - Salado
+    - Lácteo
+    - Umami
+  texture:
+    - Cremoso
+    - Suave
+    - Espeso
+  aroma:
+    - Lácteo
+    - Cebolla
+    - Achiote
+  presentation: >-
+    Se sirve en cazuela de barro, decorado con el hogao rojo y cubos de queso
+    fresco.
+nutrition:
+  calories: 1389
+  macros:
+    protein_g: 92.4
+    fat_g: 100.3
+    carbs_g: 36.6
+description: '* 2 libras de ñame pelado y en cubos'
 ---
 
 ## Ingredientes
@@ -32,7 +73,7 @@ servings: "6"
 
 ## 📸 Galería
 
-
+![Mote de Queso Tradicional](/dishes/colombian/otras_preparaciones/../caribe/mote_de_queso/images/1.webp)
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 

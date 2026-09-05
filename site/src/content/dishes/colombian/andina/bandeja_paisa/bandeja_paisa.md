@@ -1,11 +1,67 @@
 ---
-title: "Bandeja Paisa"
-region: "Colombia"
-categories: ["Bandeja_paisa"]
-difficulty: "★★★★☆"
-prep_time: "45"
-cook_time: "120"
-servings: "4"
+title: Bandeja Paisa
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato Fuerte
+  - Hipercalórico
+difficulty: ★★★★☆
+prep_time: 45
+cook_time: 120
+servings: 4
+tags:
+  - Antioquia
+  - Monumental
+  - Domingo
+  - Turismo
+main_ingredients:
+  - Frijol bola roja (o Cargamanto)
+  - Arroz blanco
+  - Carne molida
+  - Chicharrón
+  - Chorizo
+  - Morcilla
+  - Huevo frito
+  - Plátano maduro
+  - Arepa
+  - Aguacate
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Ahumado
+    - Graso
+  texture:
+    - Crujiente (Chicharrón)
+    - Cremoso (Frijoles)
+    - Suave (Arroz)
+  aroma:
+    - Cerdo frito
+    - Humo
+    - Comino
+  presentation: >-
+    Bandeja ovalada grande. Organización visual: cama de arroz y frijoles,
+    proteínas alrededor, huevo coronando. Abundancia visual extrema.
+nutrition:
+  calories: 1800
+  macros:
+    protein_g: 85
+    fat_g: 110
+    carbs_g: 130
+images:
+  - url: 'https://im.ge/i/bandeja-1.XyZ789'
+    description: Bandeja Paisa con sus 9 elementos
+description: >-
+  El 'plato montañero' por excelencia. Evolución del avío de los arrieros
+  antioqueños, diseñado para aportar la máxima energía posible (calorías y
+  proteínas) para cruzar las cordilleras. Es un despliegue de técnicas de
+  fritura y cocción lenta.
 ---
 
 ## 🍲 Bandeja Paisa
@@ -65,9 +121,9 @@ La Bandeja Paisa es el plato más emblemático de la región andina de Colombia,
 
 ## 📸 Galería
 
+![Bandeja Paisa servida](/dishes/colombian/andina/bandeja_paisa/images/1.webp)
 
-
-
+![Detalle de los ingredientes](/dishes/colombian/andina/bandeja_paisa/images/2.webp)
 
 ---
 

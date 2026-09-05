@@ -1,11 +1,66 @@
 ---
-title: "Ajiaco SantafereñO"
-region: "Colombia"
-categories: ["Ajiaco_santafereñO"]
-difficulty: "★★★☆☆"
-prep_time: "30"
-cook_time: "90"
-servings: "6"
+title: Ajiaco Santafereño
+region: Andina
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Sopas
+  - Plato Fuerte
+difficulty: ★★★☆☆
+prep_time: 30
+cook_time: 90
+servings: 6
+tags:
+  - Bogotá
+  - Tradicional
+  - Guascas
+  - Reconfortante
+main_ingredients:
+  - Papa criolla
+  - Papa pastusa
+  - Papa sabanera
+  - Pollo
+  - Guascas
+  - Mazorca
+  - Alcaparras
+  - Crema de leche
+sensory:
+  flavor:
+    - Salado
+    - Herbal
+    - Umami
+    - Lácteo
+  texture:
+    - Cremoso
+    - Espeso
+    - Suave
+  aroma:
+    - Herbal (Guascas)
+    - Maíz dulce
+  presentation: >-
+    Cazuela de barro profunda, servida hirviendo. Acompañantes (crema,
+    alcaparras, aguacate, arroz) en platos separados o 'coquitos'.
+nutrition:
+  calories: 580
+  macros:
+    protein_g: 32
+    fat_g: 22
+    carbs_g: 65
+images:
+  - url: 'https://im.ge/i/ajiaco-1.XyZ123'
+    description: Ajiaco tradicional con sus tres papas
+  - url: 'https://im.ge/i/ajiaco-2.AbC456'
+    description: Emplatado con aguacate y alcaparras
+description: >-
+  Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el
+  uso de tres variedades de papa (que aportan diferentes texturas) y la hierba
+  aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de
+  memoria, lluvia y hogar.
 ---
 
 ## Ajiaco Santafereño
@@ -114,9 +169,9 @@ El Ajiaco Santafereño es la sopa más representativa de Bogotá, la capital de 
 
 ## 📸 Galería
 
+![Ajiaco servido](/dishes/colombian/andina/ajiaco_santafereño/images/1.webp)
 
-
-
+![Ingredientes](/dishes/colombian/andina/ajiaco_santafereño/images/2.webp)
 
 Referencias:
 

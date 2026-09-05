@@ -1,11 +1,64 @@
 ---
-title: "Papa A La HuancaíNa"
-region: "Perú"
-categories: ["Sierra"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "15 minutos"
-servings: "6"
+title: Papa a la Huancaína
+region: Sierra/Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Entrada
+  - Criollo
+  - Frío
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 6
+tags:
+  - Papa
+  - Huancaina
+  - Entrada
+  - Clasico
+main_ingredients:
+  - Papas amarillas (o blancas arenosas)
+  - Ají amarillo fresco
+  - Queso fresco andino salado
+  - Leche evaporada entera
+  - Galletas de soda clásicas
+  - Aceite vegetal neutro
+sensory:
+  flavor:
+    - Lácteo-Salado (Queso fresco)
+    - Picante Muy Suave (Ají Amarillo)
+    - Umami (Galletas de soda)
+  texture:
+    - Aterciopelada (Salsa huancaína)
+    - Arenosa-Tierna (Papa cocida)
+    - Firme (Huevo duro)
+  aroma:
+    - Ají amarillo sofrito y queso fresco
+    - Papa andina cocida
+    - Aceituna botija
+  presentation: >-
+    Rodajas homogéneas de papa andina cocida dispuestas sobre hojas de lechuga,
+    cubiertas generosamente por una salsa cremosa de color amarillo brillante,
+    decoradas con gajos de huevo duro y aceituna negra de botija.
+nutrition:
+  calories: 310
+  macros:
+    protein_g: 10
+    fat_g: 16
+    carbs_g: 32
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'
+    description: Papa a la Huancaína tradicional peruana
+description: >-
+  La Papa a la Huancaína es una de las entradas más populares, sencillas y
+  emblemáticas del Perú. Consiste en papas andinas cocidas bañadas en una salsa
+  de textura aterciopelada elaborada a base de queso fresco, ají amarillo
+  sofrito, leche evaporada y galletas de soda.
 ---
 
 # Papa a la Huancaína
@@ -64,7 +117,7 @@ La Papa a la Huancaína es un clásico indiscutible que acompaña casi cualquier
 
 ## 📸 Galería
 
-
+![Papa a la Huancaína](/dishes/peruvian/sierra/images/huancaina.webp)
 
 ---
 

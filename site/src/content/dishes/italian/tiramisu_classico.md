@@ -1,11 +1,57 @@
 ---
-title: "Tiramisù Classico"
-region: "Italia"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "30 minutos"
-cook_time: "0 minutos"
-servings: "8"
+title: Tiramisù Classico
+region: Véneto (Treviso)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Postre
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 30 minutos
+cook_time: 0 minutos
+servings: 8
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Bizcochos Savoiardi (soletillas)
+  - Queso Mascarpone
+  - Huevos frescos
+  - Azúcar
+  - Café espresso fuerte
+  - Cacao amargo en polvo
+  - Licor Amaretto o Marsala
+sensory:
+  flavor:
+    - Café espresso amargo
+    - Dulce cremoso de Mascarpone
+    - Cacao amargo
+  texture:
+    - Bizcocho empapado suave
+    - Crema sedosa aireada
+  aroma:
+    - Café espresso intenso
+    - Queso Mascarpone
+    - Cacao en polvo
+  presentation: Capa superior espolvoreada de cacao oscuro sobre crema suave de mascarpone.
+nutrition:
+  calories: 480
+  macros:
+    protein_g: 10
+    fat_g: 28
+    carbs_g: 48
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Tiramisù Classico tradicional
+description: >-
+  El Tiramisù es el postre italiano más famoso del mundo: bizcochos Savoiardi
+  impregnados de espresso y licor, alternados con crema de mascarpone y cacao.
 ---
 
 # Tiramisù Classico

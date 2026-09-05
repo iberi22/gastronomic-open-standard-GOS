@@ -1,11 +1,65 @@
 ---
-title: "Ropa Vieja Cubana"
-region: "Cuba"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "20 minutos"
-cook_time: "1 hora 30 minutos"
-servings: "6"
+title: Ropa Vieja Cubana
+region: Cuba
+language: es
+license: MIT
+source:
+  name: recetascubanas.org
+  url: 'https://www.recetascubanas.org/ropa-vieja/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Guiso
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 20 minutos
+cook_time: 1 hora 30 minutos
+servings: 6
+tags:
+  - Res
+  - Desmechado
+  - Sofrito
+  - Tradicional
+  - Cuba
+main_ingredients:
+  - Falda de res (flank steak)
+  - Pimiento verde
+  - Pimiento rojo
+  - Cebolla
+  - Vino seco (vino blanco de cocina)
+  - Tomate triturado
+sensory:
+  flavor:
+    - Salado
+    - Umami intenso
+    - Dulce (pimiento)
+    - Ácido (vino y tomate)
+  texture:
+    - Desmechado (hebras tiernas)
+    - Jugoso
+    - Suave
+  aroma:
+    - Carne estofada
+    - Comino y orégano
+    - Sofrito dulce
+  presentation: >-
+    Servido en hebras largas y jugosas sobre un plato hondo o plano, acompañado
+    tradicionalmente de arroz blanco, frijoles negros, tostones o maduros
+    fritos.
+nutrition:
+  calories: 340
+  macros:
+    protein_g: 32
+    fat_g: 14
+    carbs_g: 12
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Carne de res desmechada guisada al estilo cubano (Unsplash)
+description: >-
+  La Ropa Vieja es el plato más emblemático de la gastronomía cubana. Consiste
+  en carne de falda de res cocida hasta que esté sumamente tierna, desmechada en
+  hebras finas y luego guisada a fuego lento en una salsa aromática a base de
+  sofrito de ajo, cebolla, pimientos, tomate, vino seco, comino y orégano.
 ---
 
 # Ropa Vieja Cubana
@@ -68,7 +122,7 @@ La Ropa Vieja es la indiscutible carta de presentación de la culinaria de Cuba.
 
 ## 📸 Galería
 
-
+![Plato de Ropa Vieja cubana servido tradicionalmente](/dishes/cuban/images/ropa_vieja_1.webp)
 
 ---
 

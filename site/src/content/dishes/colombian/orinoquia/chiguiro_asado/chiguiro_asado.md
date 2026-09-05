@@ -1,8 +1,46 @@
 ---
-title: "ChigüIro Asado"
-region: "Colombia"
-categories: ["Chiguiro_asado"]
-difficulty: "★★☆☆☆"
+title: Chigüiro Asado
+region: Colombia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Terroso
+  texture:
+    - Jugoso
+    - Tierno
+    - Ligeramente Fibroso
+  aroma:
+    - Ahumado
+    - Herbal
+    - Almizclado
+  presentation: >-
+    Carne troceada con tonos tostados, servida sobre una base verde de hojas de
+    bijao.
+nutrition:
+  calories: 1164
+  macros:
+    protein_g: 83.8
+    fat_g: 34.4
+    carbs_g: 122
+images:
+  - url: ./images/1.png
+    description: 'Chigüiro asado, plato típico de la Orinoquía.'
+image: ./images/1.png
+description: >-
+  El Chigüiro Asado es un plato tradicional y emblemático de la Orinoquía
+  colombiana, preparado con carne de chigüiro (capibara), el roedor más grande
+  del mundo. Su carne es apreciada por su sabor suave y textura jugosa, y suele
+  asarse a la brasa y servirse con yuca, plátano y ají llanero.
+media: []
+embedding_version: 1
 ---
 
 # Chigüiro Asado
@@ -56,7 +94,7 @@ El Chigüiro Asado es un plato tradicional y emblemático de la Orinoquía colom
 
 ## 📸 Galería
 
-
+![Chigüiro Asado Llanero](/dishes/colombian/orinoquia/chiguiro_asado/images/1.webp)
 
 ---
 

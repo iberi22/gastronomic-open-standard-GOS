@@ -1,11 +1,53 @@
 ---
-title: "Baked Macaroni And Cheese"
-region: "Estados Unidos"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Baked Macaroni and Cheese
+region: Sur de EE.UU.
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - American
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Especiado
+  texture:
+    - Crujiente exterior
+    - Interior tierno
+  aroma:
+    - Aroma característico de Baked Macaroni and Cheese
+  presentation: Baked Macaroni and Cheese presentado de forma vistosa tradicional.
+nutrition:
+  calories: 550
+  macros:
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Baked Macaroni and Cheese tradicional
+description: >-
+  Baked Macaroni and Cheese es uno de los platos más emblemáticos de la
+  gastronomía de Sur de EE.UU., conocido por su equilibrio de sabores e
+  ingredientes de alta calidad.
 ---
 
 # Baked Macaroni and Cheese

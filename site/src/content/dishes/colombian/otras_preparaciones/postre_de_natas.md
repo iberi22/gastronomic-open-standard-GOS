@@ -1,8 +1,38 @@
 ---
-title: "Postre De Natas"
-region: "Colombia"
-categories: ["Otras_preparaciones"]
-difficulty: "★★☆☆☆"
+title: Postre de Natas
+region: Andina
+language: es
+license: MIT
+source:
+  name: mycolombianrecipes.com
+  url: 'https://www.mycolombianrecipes.com/es/postre-de-natas/'
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Sweet
+    - Creamy
+    - Lacteal
+  texture:
+    - Smooth
+    - Silky
+    - Layered (natas)
+  aroma:
+    - Vanilla
+    - Caramelized Milk
+  presentation: 'Crema espesa de color marfil con capas visibles de nata, servida fría.'
+nutrition:
+  calories: 2135
+  macros:
+    protein_g: 77
+    fat_g: 77
+    carbs_g: 293.1
+images:
+  - url: 'https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg'
+    description: Postre de natas cremoso tradicional.
+image: 'https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg'
+description: '* 2 litros de leche entera'
+yaml_validation: 'https://yaml-online-parser.appspot.com/'
 ---
 
 ## Ingredientes

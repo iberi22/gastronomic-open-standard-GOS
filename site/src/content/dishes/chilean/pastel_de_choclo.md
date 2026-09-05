@@ -1,11 +1,63 @@
 ---
-title: "Pastel De Choclo Chileno"
-region: "Chile"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "45 minutos"
-cook_time: "45 minutos"
-servings: "6"
+title: Pastel de Choclo Chileno
+region: Metropolitana
+language: es
+license: MIT
+source:
+  name: recetaschilenas.cl
+  url: 'https://www.recetaschilenas.cl/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 45 minutos
+cook_time: 45 minutos
+servings: 6
+tags:
+  - Chile
+  - Maíz
+  - Greda
+  - Pino
+  - Otoño
+main_ingredients:
+  - Maíz (choclo)
+  - Carne de vacuno
+  - Pechuga de pollo
+  - Cebolla
+  - Albahaca fresca
+  - Huevos duros
+  - Aceitunas negras
+  - Pasas
+sensory:
+  flavor:
+    - Dulce
+    - Salado
+    - Umami
+  texture:
+    - Cremoso
+    - Suave
+    - Troceado
+  aroma:
+    - Maíz tierno
+    - Albahaca
+    - Carne asada
+  presentation: >-
+    Se sirve tradicionalmente en pocillos de greda (arcilla) calientes, directo
+    del horno, espolvoreado con una ligera capa de azúcar granulada dorada.
+nutrition:
+  calories: 650
+  macros:
+    protein_g: 35
+    fat_g: 28
+    carbs_g: 68
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Pastel de Choclo chileno servido en plato de greda tradicional
+description: >-
+  El Pastel de Choclo es uno de los platos más emblemáticos de la gastronomía
+  chilena, combinando una base sabrosa de pino de carne con una cubierta dulce y
+  cremosa de maíz tierno y albahaca cocida al horno.
 ---
 
 # Pastel de Choclo Chileno
