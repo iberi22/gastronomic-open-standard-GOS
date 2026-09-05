@@ -52,6 +52,49 @@ curl https://gos-site.pages.dev/api/chinese/china.json
 | `/api/countries/china.json` | All Chinese recipes | 324 |
 | `/api/countries/peru.json` | All Peruvian recipes | 1 |
 
+### Vector Embeddings Snapshot
+
+| Endpoint | Description |
+|----------|-------------|
+| `/api/vectors/index.json` | Vector embeddings manifest (model, dimensions, counts, shards) |
+| `/api/vectors/vectors-1.json` | Sharded vector embeddings snapshot (`{id, type, text, embedding}`) |
+
+## 🧠 Vector Embeddings Snapshot Download
+
+GOS exports a bulk versioned embeddings snapshot of the entire database (ingredients + dishes + substances).
+
+### Manifest Schema (`/api/vectors/index.json`)
+
+```json
+{
+  "version": "1.0.0",
+  "generated_at": "2026-09-05T03:00:10.060Z",
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "dim": 384,
+  "count": {
+    "total": 965,
+    "ingredients": 552,
+    "dishes": 383,
+    "substances": 30
+  },
+  "shards": [
+    { "file": "vectors-1.json", "count": 500, "size_bytes": 5514104 },
+    { "file": "vectors-2.json", "count": 465, "size_bytes": 5339274 }
+  ]
+}
+```
+
+### Vector Object Schema (`/api/vectors/vectors-*.json`)
+
+```json
+{
+  "id": "condiments/ajo",
+  "type": "ingredient",
+  "text": "Ajo (garlic) - Allium sativum. Group: Condiment...",
+  "embedding": [0.0123, -0.0456, 0.0789]
+}
+```
+
 ## 📦 Response Schema
 
 ```json

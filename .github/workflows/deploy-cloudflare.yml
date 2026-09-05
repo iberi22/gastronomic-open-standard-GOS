@@ -53,6 +53,7 @@ jobs:
           node scripts/generate-catalog.js
           node scripts/enrich-ingredients.js
           node scripts/generate-graph.js
+          node scripts/export-vectors.mjs
 
       - name: Build Astro site
         working-directory: ./site

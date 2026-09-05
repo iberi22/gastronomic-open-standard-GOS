@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-09-05T03:03:47.466Z",
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "dim": 384,
+  "count": {
+    "total": 965,
+    "ingredients": 552,
+    "dishes": 383,
+    "substances": 30
+  },
+  "shards": [
+    {
+      "file": "vectors-1.json",
+      "count": 500,
+      "size_bytes": 5514105
+    },
+    {
+      "file": "vectors-2.json",
+      "count": 465,
+      "size_bytes": 5339275
+    }
+  ]
+}

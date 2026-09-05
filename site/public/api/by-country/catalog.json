@@ -1,0 +1,2540 @@
+[
+  {
+    "country": "colombian",
+    "count": 122,
+    "recipes": [
+      {
+        "id": "colombian/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/amasijos/achiras/achiras",
+        "title": "Achiras del Huila",
+        "region": "Andina (Huila)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amasijos/almojabana/almojabana",
+        "title": "Almojábana (Boyacense/Bogotana)",
+        "region": "Andina (Cundiboyacense)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amasijos/bunuelo/bunuelo",
+        "title": "Buñuelo Colombiano",
+        "region": "Nacional",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/amasijos/garulla/garulla",
+        "title": "Garulla Soachuna",
+        "region": "Andina (Soacha / Cundinamarca)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/amazonia/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/amazonia/aji_negro/aji_negro",
+        "title": "Ají Negro (Salsa Amazónica Fermentada)",
+        "region": "Amazonía",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/amazonia/casabe/casabe/casabe",
+        "title": "Casabe (Pan de Yuca Amazónico)",
+        "region": "Amazonía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amazonia/farina/farina",
+        "title": "Fariña (Farofa Amazónica)",
+        "region": "Amazonía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/amazonia/inchicapi/inchicapi",
+        "title": "Inchicapi (Sopa de Gallina con Maní)",
+        "region": "Amazonía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amazonia/juanes_de_yuca/juanes_de_yuca",
+        "title": "Juanes de Yuca",
+        "region": "Amazonía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amazonia/mojojoy/mojojoy",
+        "title": "Mojojoy (Larva de Palma)",
+        "region": "Amazonía",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/amazonia/patarasca/patarasca",
+        "title": "Patarasca (Pescado en Hojas)",
+        "region": "Amazonía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amazonia/pescado_moqueado/pescado_moqueado",
+        "title": "Pescado Moqueado",
+        "region": "Amazonía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/amazonia/pirarucu_frito/pirarucu_frito",
+        "title": "Pirarucú Frito",
+        "region": "Amazonía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/amazonia/recetas_amazonia",
+        "title": "10 recetas más emblemáticas de la región Amazónica de Colombia",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/amazonia/tacacho_con_cecina/tacacho_con_cecina",
+        "title": "Tacacho con Cecina",
+        "region": "Amazonía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/andina/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/andina/ajiaco_santafereño/ajiaco_santafereño",
+        "title": "Ajiaco Santafereño",
+        "region": "Andina",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/andina/bandeja_paisa/bandeja_paisa",
+        "title": "Bandeja Paisa",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/andina/caldo_de_costilla/caldo_de_costilla",
+        "title": "Caldo de Costilla",
+        "region": "Andina",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/andina/changua/changua",
+        "title": "Changua",
+        "region": "Andina",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/andina/cocido_boyacense/cocido_boyacense",
+        "title": "Cocido Boyacense",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/andina/empanadas/empanadas",
+        "title": "Empanadas Andinas",
+        "region": "Andina",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/andina/lechona_tolimense/lechona_tolimense",
+        "title": "Lechona Tolimense",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/andina/manjar_blanco/manjar_blanco",
+        "title": "Manjar Blanco",
+        "region": "Andina",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/andina/mondongo_antioqueño/mondongo_antioqueño",
+        "title": "Mondongo Antioqueño",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/andina/mute_santandereano/mute_santandereano",
+        "title": "Mute Santandereano",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/andina/recetas_andinas",
+        "title": "10 recetas más emblemáticas de la región Andina de Colombia",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/andina/tamal_tolimense/tamal_tolimense",
+        "title": "Tamal Tolimense",
+        "region": "Andina",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/bebidas/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/avena/avena",
+        "title": "Avena Colombiana (Bebida Fría)",
+        "region": "Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/champus/champus",
+        "title": "Champús Valluno",
+        "region": "Suroccidente (Valle, Nariño, Cauca)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/chicha/chicha_de_maiz",
+        "title": "Chicha de Maíz Ancestral",
+        "region": "Nacional (Andina / Altiplano)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/bebidas/chocolate_santafereño/chocolate_santafereño",
+        "title": "Chocolate Santafereño",
+        "region": "Andina",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/guarapo/guarapo",
+        "title": "Guarapo (Elixir de Caña)",
+        "region": "Nacional (Andina / Cafetera)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/lulada/lulada",
+        "title": "Lulada",
+        "region": "Pacífica",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/refajo/refajo",
+        "title": "Refajo Colombiano",
+        "region": "Andina / Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/bebidas/salpicon/salpicon",
+        "title": "Salpicón Colombiano",
+        "region": "Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/caribe/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/caribe/alegrias/alegrias",
+        "title": "Alegrías",
+        "region": "Caribe",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/caribe/arepa_de_huevo/arepa_de_huevo",
+        "title": "Arepa de Huevo",
+        "region": "Caribe",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/caribe/arroz_con_coco/arroz_con_coco",
+        "title": "Arroz con Coco (Titoté)",
+        "region": "Caribe",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/caribe/butifarra_soledeña/butifarra_soledeña",
+        "title": "Butifarra Soledeña",
+        "region": "Caribe",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/caribe/carimañolas/carimañolas",
+        "title": "Carimañolas",
+        "region": "Caribe",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/caribe/cazuela_de_mariscos/cazuela_de_mariscos",
+        "title": "Cazuela de Mariscos",
+        "region": "Caribe",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/caribe/ceviche_de_camaron/ceviche_de_camaron",
+        "title": "Ceviche de Camarón Costeño",
+        "region": "Caribe",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/caribe/mote_de_queso/mote_de_queso",
+        "title": "Mote de Queso",
+        "region": "Caribe",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/caribe/recetas_caribe",
+        "title": "10 recetas más emblemáticas de la región Caribe de Colombia",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/caribe/sancocho_costeño/sancocho_costeño",
+        "title": "Sancocho Costeño",
+        "region": "Caribe",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/caribe/viudo_de_pescado/viudo_de_pescado",
+        "title": "Viudo de Pescado",
+        "region": "Caribe/Magdalena",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/condimentos/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/condimentos/aji_picante/aji_picante",
+        "title": "Ají Picante Colombiano",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/condimentos/guacamole_colombiano/guacamole_colombiano",
+        "title": "Guacamole Colombiano",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/condimentos/hogao/hogao",
+        "title": "Hogao Colombiano",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/condimentos/salsa_rosada/salsa_rosada",
+        "title": "Salsa Rosada Colombiana",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/condimentos/suero_costeño/suero_costeño",
+        "title": "Suero Costeño",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/bolas_de_pescado/bolas_de_pescado",
+        "title": "Bolas de Pescado (Fish Balls)",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/caracol_guisado/caracol_guisado",
+        "title": "Caracol Guisado (Conch Stew)",
+        "region": "Insular",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/insular/cocadas/cocadas",
+        "title": "Cocadas",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/crab_backs/crab_backs",
+        "title": "Crab Backs (Cangrejo Relleno)",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/crab_patty/crab_patty",
+        "title": "Crab Patty (Empanada de Cangrejo)",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/frijoles_con_cola_de_cerdo/frijoles_con_cola_de_cerdo",
+        "title": "Frijoles con Cola de Cerdo (Pig Tail Beans)",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/ginger_beer/ginger_beer",
+        "title": "Ginger Beer (Cerveza de Jengibre Ancestral)",
+        "region": "Insular (San Andrés y Providencia)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/insular/pan_de_coco/pan_de_coco",
+        "title": "Pan de Coco (Coconut Bread)",
+        "region": "Insular",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/insular/pollo_guisado_con_dumplings/pollo_guisado_con_dumplings",
+        "title": "Pollo Guisado con Dumplings",
+        "region": "Insular",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/insular/recetas_insulares",
+        "title": "10 recetas más emblemáticas de la región Insular de Colombia",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/insular/rondon/rondon",
+        "title": "Rondón (Run Down)",
+        "region": "Insular (San Andrés y Providencia)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/insular/sopa_de_cangrejo/sopa_de_cangrejo",
+        "title": "Sopa de Cangrejo (Crab Soup)",
+        "region": "Insular",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/insular/torta_de_calabaza/torta_de_calabaza",
+        "title": "Torta de Calabaza (Pumpkin Cake)",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/arroz_con_pollo/arroz_con_pollo",
+        "title": "Arroz con Pollo Colombiano",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/chuzo/chuzo",
+        "title": "Chuzo Colombiano (Brocheta Callejera)",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/fritanga/fritanga",
+        "title": "Fritanga Colombiana",
+        "region": "Nacional",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/nacionales/hamburguesa_colombiana/hamburguesa_colombiana",
+        "title": "Hamburguesa Colombiana",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/papas_aborrajadas/papas_aborrajadas/papas_aborrajadas",
+        "title": "Papas Aborrajadas",
+        "region": "Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/papas_rellenas/papas_rellenas",
+        "title": "Papas Rellenas Colombianas",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/nacionales/salchipapa/salchipapa",
+        "title": "Salchipapa",
+        "region": "Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/arroz_llanero/arroz_llanero",
+        "title": "Arroz Llanero",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/cachama_asada/cachama_asada",
+        "title": "Cachama Asada",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/carne_a_la_perra/carne_a_la_perra",
+        "title": "Carne a la Perra",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/casabe/casabe",
+        "title": "Casabe (El Pan de la Selva)",
+        "region": "Amazonía / Orinoquía",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/orinoquia/chiguiro_asado/chiguiro_asado",
+        "title": "Chigüiro Asado",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/entreverado/entreverado",
+        "title": "Entreverado",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/hayaca_llanera",
+        "title": "Hayaca Llanera",
+        "region": "Orinoquía",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/orinoquia/hervido_de_gumarra/hervido_de_gumarra",
+        "title": "Hervido de Gumarra",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/mamona/mamona",
+        "title": "Mamona (Ternera a la Llanera)",
+        "region": "Orinoquía",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/orinoquia/pabellon_llanero/pabellon_llanero/pabellon_llanero",
+        "title": "Pabellón Llanero",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/pan_de_arroz/pan_de_arroz",
+        "title": "Pan de Arroz",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/recetas_orinoquia",
+        "title": "Recetas de la Orinoquía",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/orinoquia/tungo_llanero",
+        "title": "Tungos Llaneros",
+        "region": "Orinoquía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/arequipe/arequipe",
+        "title": "Arequipe",
+        "region": "Nacional",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/cayeye",
+        "title": "Cayeye",
+        "region": "Caribe",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/envueltos",
+        "title": "Envueltos de Mazorca",
+        "region": "Andina",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/mazamorra",
+        "title": "Mazamorra Antioqueña",
+        "region": "Andina",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/mote_de_queso",
+        "title": "Mote de Queso",
+        "region": "Caribe",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/natilla/natilla",
+        "title": "Natilla Colombiana",
+        "region": "Andina / Nacional",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/postre_de_natas",
+        "title": "Postre de Natas",
+        "region": "Andina",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/otras_preparaciones/tamal_tolimense",
+        "title": "Tamal Tolimense",
+        "region": "Andina",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/pacifica/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/pacifica/aborrajado_valluno/aborrajado_valluno",
+        "title": "Aborrajado Valluno",
+        "region": "Pacífica / Valle del Cauca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado",
+        "title": "Aborrajados de Pescado",
+        "region": "Pacífica/Nariño",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/arroz_atollado_con_mariscos/arroz_atollado_con_mariscos",
+        "title": "Arroz Atollado con Mariscos",
+        "region": "Pacífica",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/pacifica/cazuela_de_mariscos/cazuela_de_mariscos/cazuela_de_mariscos",
+        "title": "Cazuela de Mariscos Pacífica",
+        "region": "Pacífica",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/pacifica/chancacas/chancacas/chancacas",
+        "title": "Chancacas (Cocadas del Pacífico)",
+        "region": "Pacífica",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/pacifica/empanadas_de_jaiba/empanadas_de_jaiba/empanadas_de_jaiba",
+        "title": "Empanadas de Jaiba",
+        "region": "Pacífica",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/encocado_de_pescado/encocado_de_pescado",
+        "title": "Encocado de Pescado",
+        "region": "Pacífica",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/pusandao/pusandao/pusandao",
+        "title": "Pusandao (Sopa de Identidad)",
+        "region": "Pacífica / Nariño",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/pacifica/recetas_pacificas",
+        "title": "10 recetas más emblemáticas de la región Pacífica de Colombia",
+        "region": "Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/pacifica/sancocho_de_pescado/sancocho_de_pescado",
+        "title": "Sancocho de Pescado Pacífico",
+        "region": "Pacífica",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/tapao_de_pescado/tapao_de_pescado/tapao_de_pescado",
+        "title": "Tapao de Pescado",
+        "region": "Pacífica / Nariño",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/pacifica/tollo_ahumado/tollo_ahumado/tollo_ahumado",
+        "title": "Tollo Ahumado",
+        "region": "Pacífica",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "colombian/panes/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/panes/pan_alinado/pan_aliñado",
+        "title": "Pan Aliñado Colombiano",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/panes/pan_de_bono/pan_de_bono",
+        "title": "Pandebono Valluno",
+        "region": "Valle del Cauca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "colombian/panes/pan_de_yuca/pan_de_yuca",
+        "title": "Pandeyuca (Pan de Yuca)",
+        "region": "Andina / Sur de Colombia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/snacks/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "colombian/snacks/deditos_de_queso/deditos_de_queso",
+        "title": "Deditos de Queso",
+        "region": "Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "colombian/snacks/empanada/empanada",
+        "title": "Empanada Colombiana",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "peruvian",
+    "count": 23,
+    "recipes": [
+      {
+        "id": "peruvian/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/arroz_con_pollo",
+        "title": "Arroz con Pollo Peruano",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/bebidas/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/bebidas/chicha_morada",
+        "title": "Chicha Morada",
+        "region": "Sierra/Costa",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "peruvian/condimentos/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/costa/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/costa/aji_de_gallina",
+        "title": "Ají de Gallina",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/anticuchos_de_corazon",
+        "title": "Anticuchos de Corazón",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/carapulcra_limena",
+        "title": "Carapulcra Limeña",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/causa_limena",
+        "title": "Causa Limeña",
+        "region": "Costa",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/ceviche_limeno",
+        "title": "Ceviche Limeño",
+        "region": "Costa",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/costa/lomo_saltado",
+        "title": "Lomo Saltado",
+        "region": "Costa",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/papa_rellena",
+        "title": "Papa Rellena",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "peruvian/costa/seco_de_cabrito",
+        "title": "Seco de Cabrito",
+        "region": "Costa (Norte)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "peruvian/otras_preparaciones/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/panes/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/selva/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/selva/juane_de_gallina",
+        "title": "Juane de Gallina",
+        "region": "Selva",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "peruvian/sierra/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/sierra/chupe_de_camarones",
+        "title": "Chupe de Camarones",
+        "region": "Costa/Sierra",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "peruvian/sierra/papa_a_la_huancaina",
+        "title": "Papa a la Huancaína",
+        "region": "Sierra/Costa",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "peruvian/sierra/rocoto_relleno",
+        "title": "Rocoto Relleno",
+        "region": "Sierra",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "peruvian/snacks/README",
+        "title": "README",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "american",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "american/apple_pie_traditional",
+        "title": "Traditional American Apple Pie",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/bbq_pork_ribs",
+        "title": "St. Louis Style BBQ Pork Ribs",
+        "region": "Missouri / Memphis",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/buffalo_chicken_wings",
+        "title": "Buffalo Chicken Wings",
+        "region": "Buffalo, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/clam_chowder_boston",
+        "title": "New England Clam Chowder",
+        "region": "Boston, MA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/classic_cheeseburger",
+        "title": "Classic American Cheeseburger",
+        "region": "Texas / California",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/cobbler_de_melocoton",
+        "title": "Georgia Peach Cobbler",
+        "region": "Georgia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/cornbread_southern",
+        "title": "Southern Skillet Cornbread",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/eggs_benedict",
+        "title": "Eggs Benedict",
+        "region": "Nueva York, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/fried_chicken_southern",
+        "title": "Southern Crispy Fried Chicken",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/gumbo_louisiana",
+        "title": "Louisiana Seafood Gumbo",
+        "region": "Nueva Orleans, LA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/jambalaya_cajun",
+        "title": "Cajun Jambalaya",
+        "region": "Nueva Orleans, LA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/key_lime_pie",
+        "title": "Florida Key Lime Pie",
+        "region": "Florida Keys",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/macaroni_and_cheese",
+        "title": "Baked Macaroni and Cheese",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/meatloaf_with_glaze",
+        "title": "Classic Glazed Meatloaf",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pancakes_maple_syrup",
+        "title": "Fluffy Pancakes con Maple Syrup",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/philly_cheesesteak",
+        "title": "Philly Cheesesteak",
+        "region": "Filadelfia, PA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pot_roast_american",
+        "title": "Classic American Pot Roast",
+        "region": "Medio Oeste",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pulled_pork_sandwich",
+        "title": "Carolina Pulled Pork Sandwich",
+        "region": "Carolina del Norte",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/reuben_sandwich",
+        "title": "Classic Reuben Sandwich",
+        "region": "Nueva York, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/texas_chili_con_carne",
+        "title": "Texas Chili con Carne",
+        "region": "Texas",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "french",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "french/boeuf_bourguignon",
+        "title": "Boeuf Bourguignon",
+        "region": "Borgoña",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/boeuf_en_daube",
+        "title": "Daube Provençale",
+        "region": "Provenza",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/bouillabaisse",
+        "title": "Bouillabaisse de Marsella",
+        "region": "Marsella",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/cassoulet_de_castelnaudary",
+        "title": "Cassoulet de Castelnaudary",
+        "region": "Languedoc",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/coq_au_vin",
+        "title": "Coq au Vin",
+        "region": "Borgoña",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/creme_brulee",
+        "title": "Crème Brûlée",
+        "region": "Francia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/crepes_suzette",
+        "title": "Crêpes Suzette",
+        "region": "Costa Azul",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/croque_monsieur",
+        "title": "Croque Monsieur",
+        "region": "París",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/duck_confit",
+        "title": "Confit de Canard",
+        "region": "Gascuña",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/escargots_de_bourgogne",
+        "title": "Escargots de Bourgogne",
+        "region": "Borgoña",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/gratin_dauphinois",
+        "title": "Gratin Dauphinois",
+        "region": "Delfinado",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/mousse_au_chocolat",
+        "title": "Mousse au Chocolat",
+        "region": "París",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/pot_au_feu",
+        "title": "Pot-au-Feu Tradicional",
+        "region": "Francia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/quiche_lorraine",
+        "title": "Quiche Lorraine",
+        "region": "Lorena",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/ratatouille_provencale",
+        "title": "Ratatouille Provençale",
+        "region": "Niza / Provenza",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/salade_nicoise",
+        "title": "Salade Niçoise",
+        "region": "Niza",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/souffle_au_fromage",
+        "title": "Soufflé au Fromage",
+        "region": "París",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/soupe_a_l_oignon",
+        "title": "Soupe à l'Oignon Gratinée",
+        "region": "París",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/steak_frites_bernaise",
+        "title": "Steak Frites con Salsa Béarnaise",
+        "region": "París",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "french/tarte_tatin",
+        "title": "Tarte Tatin",
+        "region": "Valle del Loira",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "greek",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "greek/baklava_griego",
+        "title": "Baklava Griego con Nueces y Miel",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/dolmades_hojas_de_parra",
+        "title": "Dolmades (Hojas de Parra Rellenas)",
+        "region": "Creta",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/falafel_griego",
+        "title": "Revithokeftedes (Croquetas de Garbanzo)",
+        "region": "Sifnos",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/fasolada_sopa",
+        "title": "Fasolada (Sopa de Alubias Blancas)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/galaktoboureko",
+        "title": "Galaktoboureko (Pastel de Semola y Miel)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/gigantes_plaki",
+        "title": "Gigantes Plaki (Alubias al Horno)",
+        "region": "Macedonia Griega",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/gyros_de_pollo",
+        "title": "Gyros de Pollo en Pan Pita",
+        "region": "Tesalónica",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/horiatiki_greek_salad",
+        "title": "Horiatiki (Ensalada Griega Tradicional)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/keftedes_griegas",
+        "title": "Keftedes (Albóndigas Griegas de Menta)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/kleftiko_de_cordero",
+        "title": "Kleftiko de Cordero en Papel",
+        "region": "Grecia Central",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/kolokithokeftedes",
+        "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
+        "region": "Creta",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/loukoumades_miel",
+        "title": "Loukoumades con Miel y Canela",
+        "region": "Atenas",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/moussaka_griega",
+        "title": "Moussaka Griega Tradicional",
+        "region": "Atenas / Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/pastitsio_al_horno",
+        "title": "Pastitsio (Lasaña Griega)",
+        "region": "Atenas",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/saganaki_queso_frito",
+        "title": "Garides Saganaki (Camarones con Feta)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/souvlaki_de_cerdo",
+        "title": "Souvlaki de Cerdo con Pita",
+        "region": "Atenas",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/spanakopita_pastel",
+        "title": "Spanakopita (Pastel de Espinacas y Feta)",
+        "region": "Epiro",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/stifado_de_ternera",
+        "title": "Stifado de Ternera con Cebollitas",
+        "region": "Peloponeso",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/tiropita_pastel_de_queso",
+        "title": "Tiropita (Pastel Hojaldrado de Feta)",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "greek/tzatziki_casero",
+        "title": "Tzatziki Tradicional",
+        "region": "Grecia Nacional",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "indian",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "indian/aloo_gobi",
+        "title": "Aloo Gobi",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/biryani_hyderabadi",
+        "title": "Hyderabadi Biryani",
+        "region": "Hyderabad",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/butter_chicken",
+        "title": "Butter Chicken (Murgh Makhani)",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chana_masala",
+        "title": "Chana Masala",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chicken_korma",
+        "title": "Chicken Korma",
+        "region": "Mogolla",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chicken_tikka_masala",
+        "title": "Chicken Tikka Masala",
+        "region": "Punjab / U.K.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/dal_makhani",
+        "title": "Dal Makhani",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/dosa_masala",
+        "title": "Masala Dosa",
+        "region": "Sur de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/fish_amritsari",
+        "title": "Amritsari Fish Fry",
+        "region": "Amritsar",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/gulab_jamun",
+        "title": "Gulab Jamun",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/malai_kofta",
+        "title": "Malai Kofta",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/naan_de_ajo",
+        "title": "Ajo Naan (Pan Naan)",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/palak_paneer",
+        "title": "Palak Paneer",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/paneer_butter_masala",
+        "title": "Paneer Butter Masala",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/pani_puri",
+        "title": "Pani Puri (Golgappa)",
+        "region": "Mumbai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/pav_bhaji",
+        "title": "Pav Bhaji",
+        "region": "Mumbai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/rogan_josh",
+        "title": "Rogan Josh de Cordero",
+        "region": "Cachemira",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/samosa_de_patata",
+        "title": "Samosa de Patata y Guisantes",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/tandoori_chicken",
+        "title": "Tandoori Chicken",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/vada_pav",
+        "title": "Vada Pav",
+        "region": "Bombay / Mumbai",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "italian",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "italian/arancini_siciliani",
+        "title": "Arancini Siciliani di Riso",
+        "region": "Sicilia",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/cacio_e_pepe",
+        "title": "Spaghetti Cacio e Pepe",
+        "region": "Lazio (Roma)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/cannoli_siciliani",
+        "title": "Cannoli Siciliani al Pistacchio",
+        "region": "Sicilia (Palermo)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/caprese_salad",
+        "title": "Insalata Caprese Tradizionale",
+        "region": "Campania (Capri)",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "italian/focaccia_barese",
+        "title": "Focaccia Barese con Pomodorini",
+        "region": "Puglia (Bari)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/gnocchi_di_patate",
+        "title": "Gnocchi di Patate al Pesto",
+        "region": "Liguria (Génova)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/lasagna_alla_bolognese",
+        "title": "Lasagna alla Bolognese",
+        "region": "Emilia-Romaña (Bolonia)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/melanzane_alla_parmigiana",
+        "title": "Parmigiana di Melanzane",
+        "region": "Campania / Sicilia",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/minestrone_alla_genovese",
+        "title": "Minestrone alla Genovese",
+        "region": "Liguria",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/ossobuco_alla_milanese",
+        "title": "Ossobuco alla Milanese con Gremolata",
+        "region": "Lombardía",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/panettone_tradizionale",
+        "title": "Panettone Artigianale",
+        "region": "Lombardía (Milán)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "italian/pizza_margherita",
+        "title": "Pizza Margherita Napoletana",
+        "region": "Campania (Nápoles)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/pollo_alla_cacciatora",
+        "title": "Pollo alla Cacciatora",
+        "region": "Toscana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/porchetta_di_ariccia",
+        "title": "Porchetta di Ariccia",
+        "region": "Lazio (Ariccia)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "italian/risotto_alla_milanese",
+        "title": "Risotto alla Milanese",
+        "region": "Lombardía (Milán)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/saltimbocca_alla_romana",
+        "title": "Saltimbocca alla Romana",
+        "region": "Lazio (Roma)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/spaghetti_carbonara",
+        "title": "Spaghetti alla Carbonara",
+        "region": "Lazio (Roma)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/tagliatelle_al_ragu",
+        "title": "Tagliatelle al Ragù Bolognese",
+        "region": "Emilia-Romaña",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "italian/tiramisu_classico",
+        "title": "Tiramisù Classico",
+        "region": "Véneto (Treviso)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "italian/vitello_tonnato",
+        "title": "Vitello Tonnato",
+        "region": "Piamonte",
+        "difficulty": "★★★☆☆"
+      }
+    ]
+  },
+  {
+    "country": "japanese",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "japanese/agedashi_tofu",
+        "title": "Agedashi Tofu",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/chashu_pork_slice",
+        "title": "Chashu de Cerdo para Ramen",
+        "region": "Fukuoka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/chawanmushi",
+        "title": "Chawanmushi (Flan Salado)",
+        "region": "Kyoto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/chicken_katsu_curry",
+        "title": "Chicken Katsu Curry",
+        "region": "Osaka",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/gyudon_beef_bowl",
+        "title": "Gyudon (Donburi de Res)",
+        "region": "Tokyo",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/karaage_chicken",
+        "title": "Chicken Karaage",
+        "region": "Japón Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/miso_soup_classic",
+        "title": "Sopa de Miso Clásica",
+        "region": "Japón Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/nikujaga_home",
+        "title": "Nikujaga (Res con Patatas)",
+        "region": "Japón Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/okonomiyaki_osaka",
+        "title": "Okonomiyaki Estilo Osaka",
+        "region": "Osaka",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/ramen_shoyu",
+        "title": "Shoyu Ramen Tradicional",
+        "region": "Tokyo",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/soba_zaru",
+        "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
+        "region": "Nagano",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/sukiyaki_beef",
+        "title": "Sukiyaki Nabemono",
+        "region": "Kanto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/sushi_nigiri_salmon",
+        "title": "Nigiri Sushi de Salmón",
+        "region": "Tokyo",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/takoyaki_osaka",
+        "title": "Takoyaki de Osaka",
+        "region": "Osaka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/tamagoyaki_omelet",
+        "title": "Tamagoyaki (Tortilla Dulce)",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/tempura_moriawase",
+        "title": "Tempura Moriawase",
+        "region": "Kyoto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/tonkatsu_pork",
+        "title": "Tonkatsu de Cerdo",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/udon_kitsune",
+        "title": "Kitsune Udon",
+        "region": "Osaka",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/unadon_unagi",
+        "title": "Unadon (Anguila sobre Arroz)",
+        "region": "Hamamatsu",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/yakitori_tare",
+        "title": "Yakitori de Pollo en Tare",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "mexican",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "mexican/aguachile_verde",
+        "title": "Aguachile Verde de Camarón",
+        "region": "Sinaloa",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/albondigas_en_chipotle",
+        "title": "Albóndigas en Salsa de Chipotle",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/birria_de_res",
+        "title": "Birria de Res con Consomé",
+        "region": "Jalisco",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/carnitas_de_michoacan",
+        "title": "Carnitas de Michoacán",
+        "region": "Michoacán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/chilaquiles_verdes",
+        "title": "Chilaquiles Verdes con Huevo",
+        "region": "México DF",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/chiles_en_nogada",
+        "title": "Chiles en Nogada",
+        "region": "Puebla",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "mexican/cochinita_pibil",
+        "title": "Cochinita Pibil",
+        "region": "Yucatán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/enchiladas_verdes",
+        "title": "Enchiladas Verdes",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/enmoladas_de_pollo",
+        "title": "Enmoladas de Pollo",
+        "region": "Oaxaca",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/guacamole_tradicional",
+        "title": "Guacamole Tradicional",
+        "region": "Michoacán",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/mole_poblano",
+        "title": "Mole Poblano",
+        "region": "Puebla",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "mexican/pambazo_de_papa_con_chorizo",
+        "title": "Pambazo de Papa con Chorizo",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/panuchos_yucatecos",
+        "title": "Panuchos Yucatecos",
+        "region": "Yucatán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/pozole_rojo",
+        "title": "Pozole Rojo de Jalisco",
+        "region": "Jalisco",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/quesadillas_de_flor_de_calabaza",
+        "title": "Quesadillas de Flor de Calabaza",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/sopas_de_tortilla",
+        "title": "Sopa de Tortilla (Ateca)",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/sopes_tradicionales",
+        "title": "Sopes Tradicionales",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/tacos_al_pastor",
+        "title": "Tacos al Pastor",
+        "region": "México DF / Puebla",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/tamales_oaxaquenos",
+        "title": "Tamales Oaxaqueños",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/tlayuda_oaxaquena",
+        "title": "Tlayuda Oaxaqueña con Tasajo",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      }
+    ]
+  },
+  {
+    "country": "moroccan",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "moroccan/baghrir_panqueques",
+        "title": "Baghrir (Panqueques de Mil Hoyos)",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/briouats_de_carne",
+        "title": "Briouats de Carne Picada Especiada",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/chebakia_miel",
+        "title": "Chebakia de Sésamo y Miel",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/couscous_sept_legumes",
+        "title": "Couscous Real aux Sept Légumes",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/ghriba_almond",
+        "title": "Ghriba de Almendra y Sésamo",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/harira_marroqui",
+        "title": "Sopa Harira Tradicional",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/kefta_tagine_con_huevos",
+        "title": "Tajine de Kefta con Tomate y Huevos",
+        "region": "Marrakech",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/mechoui_de_cordero",
+        "title": "Mechoui de Cordero Asado",
+        "region": "Atlas / Marrakech",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/msemmen_pan",
+        "title": "Msemmen (Pan Hojaldrado Marroquí)",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/pastilla_de_pollo",
+        "title": "Pastilla (Bastilla) de Pollo y Almendras",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/rfissa_de_pollo",
+        "title": "Rfissa de Pollo con Lentejas",
+        "region": "Casablanca",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/seffa_medfouna",
+        "title": "Seffa Medfouna con Pollo",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/sellou_marroqui",
+        "title": "Sellou (Sfouf) Tradicional",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/tajine_de_cordero_con_ciruelas",
+        "title": "Tajine de Cordero con Ciruelas y Almendras",
+        "region": "Marrakech",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/tajine_de_pescado_chermoula",
+        "title": "Tajine de Pescado con Chermoula",
+        "region": "Essaouira",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/tajine_de_pollo_con_limon",
+        "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
+        "region": "Casablanca",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/tajine_de_ternera_con_membrillo",
+        "title": "Tajine de Ternera con Membrillo Caramelizado",
+        "region": "Meknes",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/taktouka_de_pimientos",
+        "title": "Taktouka de Pimientos Asados",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/te_de_menta_marroqui",
+        "title": "Té Verde Marroquí con Menta Fresca",
+        "region": "Marruecos Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "moroccan/zaalouk_de_berenjena",
+        "title": "Zaalouk de Berenjena y Tomate",
+        "region": "Fez",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "spanish",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "spanish/bacalao_al_pil_pil",
+        "title": "Bacalao al Pil-Pil",
+        "region": "País Vasco",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/calamares_en_su_tinta",
+        "title": "Calamares en su Tinta",
+        "region": "País Vasco",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/churros_con_chocolate",
+        "title": "Churros con Chocolate",
+        "region": "Madrid",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/cocido_madrileno",
+        "title": "Cocido Madrileño",
+        "region": "Madrid",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/crema_catalana",
+        "title": "Crema Catalana",
+        "region": "Cataluña",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/croquetas_de_jamon",
+        "title": "Croquetas de Jamón Ibérico",
+        "region": "España Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/empanada_gallega",
+        "title": "Empanada Gallega de Atún",
+        "region": "Galicia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/fabada_asturiana",
+        "title": "Fabada Asturiana",
+        "region": "Asturias",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/gambas_al_ajillo",
+        "title": "Gambas al Ajillo",
+        "region": "Andalucía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/gazpacho_andaluz",
+        "title": "Gazpacho Andaluz",
+        "region": "Andalucía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/jamon_iberico_tabla",
+        "title": "Jamón Ibérico de Bellota",
+        "region": "Extremadura / Jabugo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/leche_frita",
+        "title": "Leche Frita Tradicional",
+        "region": "Castilla y León",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/paella_valenciana",
+        "title": "Paella Valenciana Tradicional",
+        "region": "Comunidad Valenciana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/patatas_bravas",
+        "title": "Patatas Bravas",
+        "region": "Madrid",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/pimientos_del_padron",
+        "title": "Pimientos del Padrón",
+        "region": "Galicia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/pulpo_a_la_gallega",
+        "title": "Pulpo a la Gallega (Polbo á Feira)",
+        "region": "Galicia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/rabo_de_toro",
+        "title": "Rabo de Toro Estofado",
+        "region": "Andalucía",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/salmorejo_cordobes",
+        "title": "Salmorejo Cordobés",
+        "region": "Córdoba",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/tarta_de_santiago",
+        "title": "Tarta de Santiago",
+        "region": "Galicia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "spanish/tortilla_de_patatas",
+        "title": "Tortilla de Patatas Española",
+        "region": "España Nacional",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "thai",
+    "count": 20,
+    "recipes": [
+      {
+        "id": "thai/boat_noodles",
+        "title": "Kuay Teow Reua (Boat Noodles)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/curry_rojo_pato",
+        "title": "Gaeng Phet Ped Yang",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/gai_pad_med_mamuang",
+        "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/green_curry_chicken",
+        "title": "Gaeng Keow Wan (Curry Verde)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/khao_soi_gai",
+        "title": "Khao Soi Gai",
+        "region": "Chiang Mai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/larb_gai",
+        "title": "Larb Gai (Ensalada de Pollo)",
+        "region": "Isan",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/mango_sticky_rice",
+        "title": "Khao Niew Mamuang (Mango Sticky Rice)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/massaman_curry",
+        "title": "Massaman Curry de Res",
+        "region": "Sur de Tailandia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/pad_krapow_moo",
+        "title": "Pad Krapow Moo (Cerdo con Albahaca)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/pad_see_ew",
+        "title": "Pad See Ew",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/pad_thai_kung",
+        "title": "Pad Thai Kung (con Camarones)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/panang_curry",
+        "title": "Panang Curry",
+        "region": "Central Thailand",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/satay_gai",
+        "title": "Satay Gai con Salsa de Cacahuete",
+        "region": "Sur de Tailandia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/som_tum_papaya",
+        "title": "Som Tum (Ensalada de Papaya)",
+        "region": "Isan",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/thai_fried_rice",
+        "title": "Khao Pad Kung",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/thai_spring_rolls",
+        "title": "Por Pia Tod (Rollitos Tailandeses)",
+        "region": "Bangkok",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/tod_mun_pla",
+        "title": "Tod Mun Pla (Pasteles de Pescado)",
+        "region": "Central Thailand",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/tom_kha_gai",
+        "title": "Tom Kha Gai",
+        "region": "Central Thailand",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/tom_yum_goong",
+        "title": "Tom Yum Goong",
+        "region": "Central Thailand",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "thai/yam_nua",
+        "title": "Yam Nua (Ensalada de Res Picante)",
+        "region": "Central Thailand",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "argentinian",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "argentinian/alfajores_de_maicena",
+        "title": "Alfajores de Maicena",
+        "region": "Buenos Aires / Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "argentinian/asado_criollo",
+        "title": "Asado Criollo Argentino",
+        "region": "La Pampa / Pampeana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "argentinian/carbonada_criolla",
+        "title": "Carbonada Criolla",
+        "region": "Pampeana / Noroeste",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "argentinian/choripan",
+        "title": "Choripán Argentino",
+        "region": "Río de la Plata / Pampeana / Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "argentinian/empanadas_tucumanas",
+        "title": "Empanadas Tucumanas",
+        "region": "Tucumán / Noroeste Argentino",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "argentinian/humita_en_chala",
+        "title": "Humita en Chala",
+        "region": "Noroeste Argentino (Jujuy / Salta / Tucumán)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "argentinian/locro_criollo",
+        "title": "Locro Criollo Argentino",
+        "region": "Noroeste / Pampeana / Nacional",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "argentinian/milanesa_a_la_napolitana",
+        "title": "Milanesa a la Napolitana",
+        "region": "Buenos Aires / Pampeana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "argentinian/pastelitos_criollos",
+        "title": "Pastelitos Criollos Argentinos",
+        "region": "Pampeana / Nacional",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "argentinian/provoleta",
+        "title": "Provoleta Argentina",
+        "region": "Pampeana",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "brazilian",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "brazilian/acaraje",
+        "title": "Acarajé Baiano",
+        "region": "Brasil",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "brazilian/brigadeiro",
+        "title": "Brigadeiro Tradicional Brasileiro",
+        "region": "Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/caipirinha",
+        "title": "Caipirinha Tradicional Brasileira",
+        "region": "Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/churrasco",
+        "title": "Churrasco Gaúcho de Picanha",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/coxinha",
+        "title": "Coxinha de Frango Tradicional",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/feijoada",
+        "title": "Feijoada Completa Brasileira",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/moqueca_de_peixe",
+        "title": "Moqueca de Peixe Baiana",
+        "region": "Brasil",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "brazilian/pao_de_queijo",
+        "title": "Pão de Queijo Mineiro",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/pudim_de_leite",
+        "title": "Pudim de Leite Condensado",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/vatapa",
+        "title": "Vatapá Baiano Tradicional",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      }
+    ]
+  },
+  {
+    "country": "chilean",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "chilean/caldillo_de_congrio",
+        "title": "Caldillo de Congrio",
+        "region": "Litoral / Coquimbo / Valparaíso",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "chilean/cazuela_de_vacuno",
+        "title": "Cazuela de Vacuno",
+        "region": "Andina / Central",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "chilean/charquican",
+        "title": "Charquicán Chileno",
+        "region": "Central / Sur",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "chilean/chorrillana",
+        "title": "Chorrillana Chilena",
+        "region": "Valparaíso",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "chilean/empanada_de_pino",
+        "title": "Empanada de Pino Chilena",
+        "region": "Valparaíso / Metropolitana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "chilean/humitas",
+        "title": "Humitas Chilenas",
+        "region": "Central / Valles Agrícolas",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "chilean/mote_con_huesillos",
+        "title": "Mote con Huesillos",
+        "region": "Central / Metropolitana",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "chilean/pastel_de_choclo",
+        "title": "Pastel de Choclo Chileno",
+        "region": "Metropolitana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "chilean/porotos_con_riendas",
+        "title": "Porotos con Riendas",
+        "region": "Central",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "chilean/sopaipillas",
+        "title": "Sopaipillas Chilenas",
+        "region": "Central / Sur",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "cuban",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "cuban/ajiaco_cubano",
+        "title": "Ajiaco Criollo Cubano",
+        "region": "Cuba",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "cuban/flan_de_huevo",
+        "title": "Flan de Huevo Tradicional Cubano",
+        "region": "Cuba",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "cuban/lechon_asado",
+        "title": "Lechón Asado Cubano",
+        "region": "Cuba",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "cuban/masitas_de_cerdo",
+        "title": "Masitas de Cerdo Fritas Cubanas",
+        "region": "Cuba",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "cuban/mojito",
+        "title": "Mojito Cubano Tradicional",
+        "region": "Cuba",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "cuban/moros_y_cristianos",
+        "title": "Moros y Cristianos Tradicionales",
+        "region": "Cuba",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "cuban/picadillo_a_la_habanera",
+        "title": "Picadillo a la Habanera",
+        "region": "Cuba",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "cuban/ropa_vieja",
+        "title": "Ropa Vieja Cubana",
+        "region": "Cuba",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "cuban/tostones_cubanos",
+        "title": "Tostones Cubanos (Chatinos)",
+        "region": "Cuba",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "cuban/yuca_con_mojo",
+        "title": "Yuca con Mojo Cubana",
+        "region": "Cuba",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "dominican",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "dominican/chimi_dominicano",
+        "title": "Chimichurri Dominicano (Chimi)",
+        "region": "República Dominicana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "dominican/habichuelas_con_dulce",
+        "title": "Habichuelas con Dulce Dominicanas",
+        "region": "República Dominicana",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "dominican/la_bandera_dominicana",
+        "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
+        "region": "República Dominicana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "dominican/mangu",
+        "title": "Mangú Dominicano con Los Tres Golpes",
+        "region": "República Dominicana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "dominican/mofongo_dominicano",
+        "title": "Mofongo Dominicano Tradicional",
+        "region": "República Dominicana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "dominican/morir_sonando",
+        "title": "Morir Soñando Dominicano",
+        "region": "República Dominicana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "dominican/pescado_con_coco",
+        "title": "Pescado con Coco Estilo Samaná",
+        "region": "República Dominicana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "dominican/pollo_guisado_dominicano",
+        "title": "Pollo Guisado Dominicano",
+        "region": "República Dominicana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "dominican/sancocho_dominicano",
+        "title": "Sancocho Dominicano de Siete Carnes",
+        "region": "República Dominicana",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "dominican/tostones_dominicanos",
+        "title": "Tostones Dominicanos con Agua de Ajo",
+        "region": "República Dominicana",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "puerto-rican",
+    "count": 10,
+    "recipes": [
+      {
+        "id": "puerto-rican/alcapurrias",
+        "title": "Alcapurrias de Masa Puertorriqueñas",
+        "region": "Puerto Rico",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "puerto-rican/arroz_con_gandules",
+        "title": "Arroz con Gandules Puertorriqueño",
+        "region": "Puerto Rico",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "puerto-rican/asopao_de_pollo",
+        "title": "Asopao de Pollo Puertorriqueño",
+        "region": "Puerto Rico",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "puerto-rican/coquito",
+        "title": "Coquito Puertorriqueño Tradicional",
+        "region": "Puerto Rico",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "puerto-rican/mofongo_puertorriqueno",
+        "title": "Mofongo Puertorriqueño de Camarones",
+        "region": "Puerto Rico",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "puerto-rican/pasteles_puertorriquenos",
+        "title": "Pasteles Puertorriqueños de Masa",
+        "region": "Puerto Rico",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "puerto-rican/pernil_asado",
+        "title": "Pernil Asado Puertorriqueño",
+        "region": "Puerto Rico",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "puerto-rican/pinchos_de_pollo",
+        "title": "Pinchos de Pollo Puertorriqueños",
+        "region": "Puerto Rico",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "puerto-rican/tembleque",
+        "title": "Tembleque de Coco Puertorriqueño",
+        "region": "Puerto Rico",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "puerto-rican/trifongo",
+        "title": "Trifongo Puertorriqueño de Chicharrón",
+        "region": "Puerto Rico",
+        "difficulty": "★★★☆☆"
+      }
+    ]
+  }
+]
