@@ -1,7 +1,11 @@
 ---
+import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const substances = (await getCollection('substances')).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name, 'es'),
+)
 ---
 <Layout title="Ciencia — Vitaminas, substancias y afecciones — GOS">
   <h1 class="title">Capa científica</h1>
@@ -52,18 +56,37 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
   </div>
 
   <div class="showcase">
-    <h3>Enciclopedia de Sustancias (30) — preview</h3>
-    <p>Descubre fórmula química, sazón, sabor, textura y <em>health registry</em> con fotos 800×600. Antigravity single tone, JSON-LD ChemicalSubstance validado.</p>
-    <div class="showcase-grid">
-      <a href={`${base}/substances/alicina`} class="mini"><span class="mini-formula">C6H10OS2</span><strong>Alicina</strong><span>ajo · 1944 · pungente sulfuroso</span></a>
-      <a href={`${base}/substances/capsaicina`} class="mini"><span class="mini-formula">C18H27NO3</span><strong>Capsaicina</strong><span>ají · 1816 · TRPV1 quemante</span></a>
-      <a href={`${base}/substances/curcumina`} class="mini"><span class="mini-formula">C21H20O6</span><strong>Curcumina</strong><span>cúrcuma · 1815 · terrosa amarga</span></a>
-      <a href={`${base}/substances/gingerol`} class="mini"><span class="mini-formula">C17H26O4</span><strong>Gingerol</strong><span>jengibre · 1879 · pungente cítrico</span></a>
-      <a href={`${base}/substances/licopeno`} class="mini"><span class="mini-formula">C40H56</span><strong>Licopeno</strong><span>tomate · 1873 · antioxidante rojo</span></a>
-      <a href={`${base}/substances/piperina`} class="mini"><span class="mini-formula">C17H19NO3</span><strong>Piperina</strong><span>pimienta · 1819 · potenciador 20×</span></a>
+    <h3>Catálogo científico de sustancias ({substances.length})</h3>
+    <p>Fórmula, origen, beneficio y registro de salud con evidencia. Antigravity single tone, JSON-LD ChemicalSubstance validado.</p>
+    <input id="sci-search" class="sci-search" type="search" placeholder="Buscar sustancia, fórmula, beneficio… (p. ej. alicina, C6H10OS2, hipertensión)" />
+    <div class="showcase-grid" id="sci-grid">
+      {substances.map((s) => {
+        const ev = s.data.health_registry?.[0];
+        const hay = `${s.data.name} ${s.data.formula ?? ''} ${s.data.benefit ?? ''} ${s.data.source_ingredient ?? ''} ${ev?.condition ?? ''}`.toLowerCase();
+        return (
+          <a href={`${base}/substances/${s.id}`} class="mini" data-hay={hay}>
+            <span class="mini-formula">{s.data.formula ?? '—'}</span>
+            <strong>{s.data.name}</strong>
+            <span>{s.data.source_ingredient ?? ''}{s.data.discovery_year ? ` · ${s.data.discovery_year}` : ''}</span>
+            {ev && <span class="mini-ev">{ev.condition}{ev.evidence_level ? ` · ${ev.evidence_level}` : ''}</span>}
+          </a>
+        );
+      })}
     </div>
-    <a href={`${base}/substances`} class="link">Ver 30 sustancias →</a>
+    <a href={`${base}/substances`} class="link">Ver enciclopedia completa →</a>
   </div>
+
+  <script>
+    const q = document.getElementById('sci-search');
+    const grid = document.getElementById('sci-grid');
+    q?.addEventListener('input', () => {
+      const v = (q as HTMLInputElement).value.toLowerCase().trim();
+      grid?.querySelectorAll('.mini').forEach((el) => {
+        const hay = (el as HTMLElement).dataset.hay || '';
+        (el as HTMLElement).style.display = !v || hay.includes(v) ? '' : 'none';
+      });
+    });
+  </script>
 
   <div class="protocols">
     <h3>Protocolos científicos</h3>
@@ -93,6 +116,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
   .mini-formula{ font-family: var(--swal-font-mono); font-size:11px; font-weight:700; color: var(--swal-accent); }
   .mini strong{ color: var(--swal-text); font-size:14px; }
   .mini span:last-child{ color: var(--swal-text-muted); font-size:11px; line-height:1.4; }
+  .mini-ev{ color: #06d6a0 !important; font-size:11px; font-weight:700; }
+  .sci-search{ width:100%; margin-top:12px; padding:10px 14px; border-radius:12px; border:1px solid var(--swal-border); background: var(--swal-bg); color: var(--swal-text); font-size:13px; }
   .protocols{ margin-top:18px; border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:16px; }
   .protocols h3{ margin:0 0 6px; font-size:14px; color: var(--swal-text); }
   .protocols p{ color: var(--swal-text-muted); font-size:12px; line-height:1.6; }

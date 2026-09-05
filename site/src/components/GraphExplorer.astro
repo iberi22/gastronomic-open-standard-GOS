@@ -49,6 +49,7 @@
   .ge-meta-item .l { font-size:9px; font-weight:600; text-transform:uppercase; color:#4a4a6a; letter-spacing:0.08em; margin-bottom:3px; }
   .ge-meta-item .v { font-size:13px; color:#e0e0ff; font-weight:500; }
   .ge-section-title { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#4a4a6a; margin:14px 0 7px 0; padding-bottom:5px; border-bottom:1px solid #1a1a2a; }
+  .ge-ficha-btn { display:block; text-align:center; font-size:12px; font-weight:700; color:#fff; background:#7d61ff; border-radius:8px; padding:9px 12px; margin-bottom:14px; text-decoration:none; }
   .ge-tag-list { display:flex; flex-wrap:wrap; gap:5px; }
   .ge-tag { background:#1a1a2a; border:1px solid #2a2a3e; border-radius:4px; padding:3px 8px; font-size:10px; color:#9090b0; }
   .ge-conn-group { margin-bottom:10px; }
@@ -416,6 +417,20 @@ import Graph from 'graphology';
     detailType.style.background = COLORS[node.type] || '#333';
     detailType.style.color = '#000';
 
+    // Enlace a ficha: directo solo donde el mapeo esta verificado
+    // (recipes 381/381 con slug). Resto → catálogo del tipo.
+    var fichaUrl = null;
+    var fichaLabel = 'Ver ficha completa →';
+    if (node.type === 'recipe' && node.slug) {
+      fichaUrl = baseUrl + '/recipes/' + node.slug;
+    } else if (node.type === 'substance') {
+      fichaUrl = baseUrl + '/substances';
+      fichaLabel = 'Ver catálogo de substancias →';
+    } else if (node.type === 'ingredient') {
+      fichaUrl = baseUrl + '/ingredients';
+      fichaLabel = 'Ver catálogo de ingredientes →';
+    }
+
     var conns = {};
     graphData.edges.forEach(function(e) {
       var s = e.source;
@@ -433,6 +448,10 @@ import Graph from 'graphology';
     }).length;
 
     var html = '';
+
+    if (fichaUrl) {
+      html += '<a href="' + fichaUrl + '" class="ge-ficha-btn">' + fichaLabel + '</a>';
+    }
 
     if (node.region || node.difficulty || node.prep_time || node.cook_time) {
       html += '<div class="ge-meta-grid">';
