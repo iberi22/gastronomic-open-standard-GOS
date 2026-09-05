@@ -108,8 +108,10 @@
   </div>
 </div>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
-<script is:inline>
+<script>
+// @ts-nocheck — legacy vanilla-JS explorer (types enforced at the vis-network API boundary)
+import { Network } from 'vis-network/peer';
+import { DataSet } from 'vis-data/peer';
 (function() {
   var COLORS = {
     recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
@@ -312,8 +314,8 @@
       return validNodeIds.has(e.source) && validNodeIds.has(e.target);
     }).map(formatVisEdge);
 
-    nodesDataSet = new vis.DataSet(initialNodes);
-    edgesDataSet = new vis.DataSet(initialEdges);
+    nodesDataSet = new DataSet(initialNodes);
+    edgesDataSet = new DataSet(initialEdges);
 
     var visData = { nodes: nodesDataSet, edges: edgesDataSet };
 
@@ -323,7 +325,7 @@
         shadow: true
       },
       edges: {
-        smooth: { type: 'continuous' }
+        smooth: { enabled: true, type: 'continuous', roundness: 0.5 }
       },
       interaction: {
         hover: true,
@@ -350,7 +352,7 @@
       }
     };
 
-    network = new vis.Network(canvas, visData, options);
+    network = new Network(canvas, visData, options);
 
     network.on('stabilizationProgress', function(params) {
       var progress = Math.round((params.iteration / params.total) * 100);

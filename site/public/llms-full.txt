@@ -7,11 +7,11 @@
 The Gastronomic Open Standard (GOS) is an open-source, scientifically validated knowledge graph connecting world recipes, ingredients, micronutrients, bioactive chemical substances, sensory profiles (flavor/aroma/texture), medical health registries, and dietary fits.
 
 ## Live Graph Breakdown
-- Total Nodes: 3260
-- Total Edges: 24146
+- Total Nodes: 3305
+- Total Edges: 24233
 - Node Types Breakdown:
   - recipe: 381
-  - ingredient: 1724
+  - ingredient: 1729
   - category: 14
   - flavor: 423
   - texture: 388
@@ -20,9 +20,10 @@ The Gastronomic Open Standard (GOS) is an open-source, scientifically validated 
   - technique: 14
   - vitamin: 23
   - nutrient: 4
-  - substance: 43
-  - condition: 40
+  - substance: 62
+  - condition: 51
   - diet: 6
+  - mixture: 10
 
 ## Knowledge Graph Relational Schema
 GOS links entities via strictly typed edge relationships:
@@ -365,11 +366,12 @@ Sample Dishes:
   - Trifongo Puertorriqueño de Chicharrón (ID: puerto-rican/trifongo, Region: Puerto Rico, Difficulty: ★★★☆☆)
 
 
-## Sample Bioactive Substances (43 Total)
+## Sample Bioactive Substances (62 Total)
 - Compound Name (e.g., Lycopene) (substance_compound_name__e_g___lycopene_): Short benefit description [Source: https://gos-site.pages.dev/substances/compound_name__e_g___lycopene_]
 - Allicin (substance_allicin): Potent antimicrobial, lowers blood pressure, anti-inflammatory. [Source: https://gos-site.pages.dev/substances/allicin]
 - Dodecenal (substance_dodecenal): Antibacterial compound specifically effective against Salmonella. [Source: https://gos-site.pages.dev/substances/dodecenal]
 - Cuminaldehyde (substance_cuminaldehyde): Stimulates salivary glands and digestive enzymes. [Source: https://gos-site.pages.dev/substances/cuminaldehyde]
+- Curcurmin (substance_curcurmin): Potent anti-inflammatory polyphenol and NF-kB inhibitor. [Source: https://gos-site.pages.dev/substances/curcurmin]
 - Gingerol (substance_gingerol): Potent anti-inflammatory and anti-nausea compound. [Source: https://gos-site.pages.dev/substances/gingerol]
 - Policosanols (substance_policosanols): Waxy alcohols found in cane, potential cholesterol benefits (trace amounts). [Source: https://gos-site.pages.dev/substances/policosanols]
 - Sodium (substance_sodium): Electrolyte balance. [Source: https://gos-site.pages.dev/substances/sodium]
@@ -409,8 +411,26 @@ Sample Dishes:
 - Resistant Starch (Type 2) (substance_resistant_starch__type_2_): Acts as soluble fiber, feeding beneficial gut bacteria. [Source: https://gos-site.pages.dev/substances/resistant_starch__type_2_]
 - Saponins (substance_saponins): Potential cholesterol lowering effect. [Source: https://gos-site.pages.dev/substances/saponins]
 - Beta-carotene (substance_beta_carotene): Pro-vitamin A, powerful antioxidant. [Source: https://gos-site.pages.dev/substances/beta_carotene]
+- Alicina (substance_alicina): Bioactive compound [Source: https://gos-site.pages.dev/substances/alicina]
+- Ácido Cítrico (substance__cido_c_trico): Bioactive compound [Source: https://gos-site.pages.dev/substances/_cido_c_trico]
+- Vitamina C (substance_vitamina_c): Bioactive compound [Source: https://gos-site.pages.dev/substances/vitamina_c]
+- Quercetina (substance_quercetina): Bioactive compound [Source: https://gos-site.pages.dev/substances/quercetina]
+- Disulfuro de Dialilo (substance_disulfuro_de_dialilo): Bioactive compound [Source: https://gos-site.pages.dev/substances/disulfuro_de_dialilo]
+- Cuminaldehído (substance_cuminaldeh_do): Bioactive compound [Source: https://gos-site.pages.dev/substances/cuminaldeh_do]
+- Linalool (substance_linalool): Bioactive compound [Source: https://gos-site.pages.dev/substances/linalool]
+- Curcumina (substance_curcumina): Bioactive compound [Source: https://gos-site.pages.dev/substances/curcumina]
+- Piperina (substance_piperina): Bioactive compound [Source: https://gos-site.pages.dev/substances/piperina]
+- Hierro No Hémico (substance_hierro_no_h_mico): Bioactive compound [Source: https://gos-site.pages.dev/substances/hierro_no_h_mico]
+- Oxalatos (substance_oxalatos): Bioactive compound [Source: https://gos-site.pages.dev/substances/oxalatos]
+- Ácido Ascórbico (substance__cido_asc_rbico): Bioactive compound [Source: https://gos-site.pages.dev/substances/_cido_asc_rbico]
+- Hesperidina (substance_hesperidina): Bioactive compound [Source: https://gos-site.pages.dev/substances/hesperidina]
+- EGCG (Epigallocatechin gallate) (substance_egcg__epigallocatechin_gallate_): Bioactive compound [Source: https://gos-site.pages.dev/substances/egcg__epigallocatechin_gallate_]
+- Licopeno (substance_licopeno): Bioactive compound [Source: https://gos-site.pages.dev/substances/licopeno]
+- Ácido Oleico (substance__cido_oleico): Bioactive compound [Source: https://gos-site.pages.dev/substances/_cido_oleico]
+- Beta-caroteno (substance_beta_caroteno): Bioactive compound [Source: https://gos-site.pages.dev/substances/beta_caroteno]
+- Triglicéridos (substance_triglic_ridos): Bioactive compound [Source: https://gos-site.pages.dev/substances/triglic_ridos]
 
-## Sample Scientific Ingredients (1724 Total)
+## Sample Scientific Ingredients (1729 Total)
 - Ingrediente principal 1  [ID: ingredient_ingrediente_principal_1]
 - Ingrediente principal 2  [ID: ingredient_ingrediente_principal_2]
 - Especias  [ID: ingredient_especias]
