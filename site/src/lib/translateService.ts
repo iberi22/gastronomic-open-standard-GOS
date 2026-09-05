@@ -1,5 +1,4 @@
-import { getCollection } from 'astro:content'
-import { SUPPORTED_LOCALES, alias } from './locales'
+import { alias, SUPPORTED_LOCALES } from './locales'
 
 export interface TranslateResult {
   id: string
@@ -16,7 +15,53 @@ export interface TranslateOptions {
   type?: string
 }
 
-export async function translateEntity(options: TranslateOptions) {
+export interface CatalogItem {
+  id: string
+  type: 'dish' | 'ingredient' | 'substance'
+  name: string
+  aliases: Record<string, string[]>
+}
+
+interface RawEntry {
+  id: string
+  data: Record<string, unknown>
+}
+
+// Convierte colecciones Astro en catálogo plano. Recibe entradas crudas para
+// no importar 'astro:content' (no resoluble en vitest); el endpoint hace
+// getCollection y pasa el resultado.
+export function buildCatalog(entries: {
+  dishes: RawEntry[]
+  ingredients: RawEntry[]
+  substances: RawEntry[]
+}): CatalogItem[] {
+  const items: CatalogItem[] = []
+  for (const d of entries.dishes) {
+    const name = String(
+      d.data.title || d.data.name || d.id.split('/').pop() || d.id,
+    )
+    const aliases = (d.data.aliases as Record<string, string[]>) || {}
+    items.push({ id: d.id, type: 'dish', name, aliases })
+  }
+  for (const i of entries.ingredients) {
+    const name = String(
+      i.data.name || i.data.title || i.id.split('/').pop() || i.id,
+    )
+    const aliases = (i.data.aliases as Record<string, string[]>) || {}
+    items.push({ id: i.id, type: 'ingredient', name, aliases })
+  }
+  for (const s of entries.substances) {
+    const name = String(s.data.name || s.data.title || s.id)
+    const aliases = (s.data.aliases as Record<string, string[]>) || {}
+    items.push({ id: s.id, type: 'substance', name, aliases })
+  }
+  return items
+}
+
+export function translateEntity(
+  options: TranslateOptions,
+  catalog: CatalogItem[],
+) {
   const { entity, locale, type } = options
   const targetLocale = locale ? locale.toLowerCase() : undefined
 
@@ -31,42 +76,14 @@ export async function translateEntity(options: TranslateOptions) {
   const fetchIngs = !type || type === 'ingredient' || type === 'ingredients'
   const fetchSubs = !type || type === 'substance' || type === 'substances'
 
-  const [dishes, ingredients, substances] = await Promise.all([
-    fetchDishes ? getCollection('dishes') : [],
-    fetchIngs ? getCollection('ingredients') : [],
-    fetchSubs ? getCollection('substances') : [],
-  ])
+  const allItems = catalog.filter(
+    (item) =>
+      (item.type === 'dish' && fetchDishes) ||
+      (item.type === 'ingredient' && fetchIngs) ||
+      (item.type === 'substance' && fetchSubs),
+  )
 
   const term = entity ? entity.toLowerCase().trim() : ''
-
-  const allItems: {
-    id: string
-    type: 'dish' | 'ingredient' | 'substance'
-    name: string
-    aliases: Record<string, string[]>
-  }[] = []
-
-  for (const d of dishes) {
-    const data = d.data as Record<string, unknown>
-    const name = String(data.title || data.name || d.id.split('/').pop() || d.id)
-    const aliases = (data.aliases as Record<string, string[]>) || {}
-    allItems.push({ id: d.id, type: 'dish', name, aliases })
-  }
-
-  for (const i of ingredients) {
-    const data = i.data as Record<string, unknown>
-    const name = String(data.name || data.title || i.id.split('/').pop() || i.id)
-    const aliases = (data.aliases as Record<string, string[]>) || {}
-    allItems.push({ id: i.id, type: 'ingredient', name, aliases })
-  }
-
-  for (const s of substances) {
-    const data = s.data as Record<string, unknown>
-    const name = String(data.name || data.title || s.id)
-    const aliases = (data.aliases as Record<string, string[]>) || {}
-    allItems.push({ id: s.id, type: 'substance', name, aliases })
-  }
-
   const results: TranslateResult[] = []
 
   for (const item of allItems) {

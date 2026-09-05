@@ -11,7 +11,12 @@ export const LOCALES: Record<string, LocaleInfo> = {
   zh: { code: 'zh', name: 'Chinese', nativeName: '中文', hreflang: 'zh' },
   hi: { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी', hreflang: 'hi' },
   ar: { code: 'ar', name: 'Arabic', nativeName: 'العربية', hreflang: 'ar' },
-  pt: { code: 'pt', name: 'Portuguese', nativeName: 'Português', hreflang: 'pt' },
+  pt: {
+    code: 'pt',
+    name: 'Portuguese',
+    nativeName: 'Português',
+    hreflang: 'pt',
+  },
   bn: { code: 'bn', name: 'Bengali', nativeName: 'বাংলা', hreflang: 'bn' },
   ru: { code: 'ru', name: 'Russian', nativeName: 'Русский', hreflang: 'ru' },
   ja: { code: 'ja', name: 'Japanese', nativeName: '日本語', hreflang: 'ja' },
@@ -19,9 +24,19 @@ export const LOCALES: Record<string, LocaleInfo> = {
   de: { code: 'de', name: 'German', nativeName: 'Deutsch', hreflang: 'de' },
   jv: { code: 'jv', name: 'Javanese', nativeName: 'Basa Jawa', hreflang: 'jv' },
   wu: { code: 'wu', name: 'Wu Chinese', nativeName: '吴语', hreflang: 'wuu' },
-  ms: { code: 'ms', name: 'Malay', nativeName: 'Bahasa Melayu', hreflang: 'ms' },
+  ms: {
+    code: 'ms',
+    name: 'Malay',
+    nativeName: 'Bahasa Melayu',
+    hreflang: 'ms',
+  },
   te: { code: 'te', name: 'Telugu', nativeName: 'తెలుగు', hreflang: 'te' },
-  vi: { code: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', hreflang: 'vi' },
+  vi: {
+    code: 'vi',
+    name: 'Vietnamese',
+    nativeName: 'Tiếng Việt',
+    hreflang: 'vi',
+  },
   ko: { code: 'ko', name: 'Korean', nativeName: '한국어', hreflang: 'ko' },
   fr: { code: 'fr', name: 'French', nativeName: 'Français', hreflang: 'fr' },
   ta: { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்', hreflang: 'ta' },
@@ -40,7 +55,11 @@ export interface EntityWithAliases {
  * Returns alias list for a given entity or aliases dictionary and locale.
  */
 export function alias(
-  entityOrAliases: EntityWithAliases | Record<string, string[]> | undefined | null,
+  entityOrAliases:
+    | EntityWithAliases
+    | Record<string, string[]>
+    | undefined
+    | null,
   locale: string,
 ): string[] {
   if (!entityOrAliases) return []
