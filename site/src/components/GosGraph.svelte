@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
-  import * as d3 from 'd3';
   let container: HTMLDivElement;
   let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 });
   let loading = $state(true);
@@ -8,12 +7,9 @@
 
   const COLORS: Record<string,string> = {
     recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
-    flavor: '#95E1D3', texture: '#F38181', technique: '#AA96DA', region: '#FFE66D',
-    place: '#B2E2F2', category: '#A8D8A8', condition: '#F94144', substance: '#9D4EDD', diet: '#06D6A0'
+    flavor: '#FFE66D', texture: '#F38181', technique: '#AA96DA', region: '#7D61FF',
+    place: '#B2E2F2', category: '#90BE6D', condition: '#F94144', substance: '#9D4EDD', diet: '#06D6A0'
   };
-
-  // D3 imported statically above — no race condition with <script> CDN load
-  function loadD3(): any { return d3; }
 
   async function loadGraphData(): Promise<any> {
     const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
@@ -31,65 +27,95 @@
     throw new Error('graph-data.json no encontrado');
   }
 
+  async function loadVisNetwork(): Promise<any> {
+    if ((window as any).vis) return (window as any).vis;
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js';
+      script.onload = () => resolve((window as any).vis);
+      script.onerror = () => reject(new Error('No se pudo cargar vis-network CDN'));
+      document.head.appendChild(script);
+    });
+  }
+
   onMount(async () => {
     try {
-      const data = await loadGraphData();
+      const [data, vis] = await Promise.all([loadGraphData(), loadVisNetwork()]);
       stats = {
         nodes: data.nodes?.length || 0,
         edges: data.edges?.length || 0,
         recipes: data.nodes?.filter((n:any)=>n.type==='recipe').length || 0,
         ingredients: data.nodes?.filter((n:any)=>n.type==='ingredient').length || 0
       };
-      const d3lib = loadD3();
       loading = false;
-      // Wait for Svelte to mount the .gos-canvas div (else-branch) before
-      // reading bind:this — otherwise container is undefined and the graph
-      // never renders (empty canvas bug).
       await tick();
-      if (container) renderD3(container, data, d3lib);
+      if (container) renderVisNetwork(container, data, vis);
       else error = 'graph container not mounted';
     } catch (e:any) { error = e.message; loading = false; }
   });
 
-  function renderD3(el: HTMLDivElement, data: any, d3: any) {
-    if (!d3) return;
-    const nodes = data.nodes.slice(0, 250);
-    const edges = data.edges
-      .filter((e:any) => nodes.find((n:any) => n.id === e.source) && nodes.find((n:any) => n.id === e.target))
-      .slice(0, 600);
-    const width = el.clientWidth || 900;
-    const height = 480;
-    el.innerHTML = '';
-    const svg = d3.select(el)
-      .append('svg')
-      .attr('width', width)
-      .attr('height', height)
-      .attr('viewBox', [0, 0, width, height]);
-    const g = svg.append('g');
-    const sim = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(edges).id((d:any) => d.id).distance(40))
-      .force('charge', d3.forceManyBody().strength(-130))
-      .force('center', d3.forceCenter(width / 2, height / 2));
-    const link = g.selectAll('line').data(edges).join('line')
-      .attr('stroke', '#2A2A3E')
-      .attr('stroke-opacity', 0.4)
-      .attr('stroke-width', 0.7);
-    const node = g.selectAll('circle').data(nodes).join('circle')
-      .attr('r', (d:any) => d.size ? Math.max(4, Math.min(10, d.size / 2.5)) : 6)
-      .attr('fill', (d:any) => COLORS[d.type] || '#888')
-      .attr('stroke', 'rgba(255,255,255,0.12)')
-      .attr('stroke-width', 1)
-      .call(d3.drag()
-        .on('start', (e:any, d:any) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-        .on('drag', (e:any, d:any) => { d.fx = e.x; d.fy = e.y; })
-        .on('end', (e:any, d:any) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
-    node.append('title').text((d:any) => `${d.label} [${d.type}]`);
-    sim.on('tick', () => {
-      link.attr('x1', (d:any) => d.source.x).attr('y1', (d:any) => d.source.y)
-        .attr('x2', (d:any) => d.target.x).attr('y2', (d:any) => d.target.y);
-      node.attr('cx', (d:any) => d.x).attr('cy', (d:any) => d.y);
+  function renderVisNetwork(el: HTMLDivElement, data: any, vis: any) {
+    if (!vis) return;
+    const nodes = (data.nodes || []).slice(0, 180).map((n: any) => ({
+      id: n.id,
+      label: n.label || n.id,
+      shape: 'dot',
+      size: n.size ? Math.max(8, Math.min(20, n.size / 2)) : 10,
+      color: {
+        background: COLORS[n.type] || '#888888',
+        border: '#000000',
+        highlight: { background: COLORS[n.type] || '#888888', border: '#ffffff' }
+      },
+      font: { color: '#e0e0ff', size: 10, face: 'Inter, system-ui, sans-serif' }
+    }));
+
+    const nodeIds = new Set(nodes.map((n: any) => n.id));
+    const edges = (data.edges || [])
+      .filter((e: any) => nodeIds.has(e.source) && nodeIds.has(e.target))
+      .slice(0, 350)
+      .map((e: any) => ({
+        from: e.source,
+        to: e.target,
+        color: { color: '#2a2a3e', opacity: 0.4 },
+        width: 1
+      }));
+
+    const visData = {
+      nodes: new vis.DataSet(nodes),
+      edges: new vis.DataSet(edges)
+    };
+
+    const options = {
+      nodes: { borderWidth: 1 },
+      edges: { smooth: { type: 'continuous' } },
+      interaction: { hover: true, tooltipDelay: 200 },
+      physics: {
+        solver: 'forceAtlas2Based',
+        forceAtlas2Based: { gravitationalConstant: -30, centralGravity: 0.01, springLength: 60, springConstant: 0.08 },
+        maxVelocity: 40,
+        minVelocity: 0.75,
+        stabilization: { enabled: true, iterations: 100 }
+      }
+    };
+
+    const network = new vis.Network(el, visData, options);
+
+    network.on('stabilizationIterationsDone', () => {
+      network.setOptions({ physics: { enabled: false } });
     });
-    svg.call(d3.zoom().on('zoom', (e:any) => g.attr('transform', e.transform)));
+
+    setTimeout(() => {
+      network.setOptions({ physics: { enabled: false } });
+    }, 2500);
+
+    // Clicking a node in homepage mini-graph navigates to /graph?node=<node_id>
+    network.on('click', (params: any) => {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+        window.location.href = `${base}/graph?node=${encodeURIComponent(nodeId)}`;
+      }
+    });
   }
 </script>
 
