@@ -1,74 +1,76 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-const sitePublicDir = path.resolve(__dirname, '../public');
-const graphFilePath = path.join(sitePublicDir, 'graph-data.json');
-const catalogFilePath = path.join(sitePublicDir, 'api/by-country/catalog.json');
-const apiIndexFilePath = path.join(sitePublicDir, 'api/index.json');
-const llmsTxtPath = path.join(sitePublicDir, 'llms.txt');
-const llmsFullTxtPath = path.join(sitePublicDir, 'llms-full.txt');
+const sitePublicDir = path.resolve(__dirname, '../public')
+const graphFilePath = path.join(sitePublicDir, 'graph-data.json')
+const catalogFilePath = path.join(sitePublicDir, 'api/by-country/catalog.json')
+const llmsTxtPath = path.join(sitePublicDir, 'llms.txt')
+const llmsFullTxtPath = path.join(sitePublicDir, 'llms-full.txt')
 
-const ORIGIN = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev';
+const ORIGIN = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev'
 
 function generateLLMFiles() {
-  console.log('🤖 Generating llms.txt and llms-full.txt from LIVE data...');
+  console.log('🤖 Generating llms.txt and llms-full.txt from LIVE data...')
 
   // 1. Read Graph Data
-  let totalNodes = 0;
-  let totalEdges = 0;
-  let nodeTypeCounts = {};
-  let nodes = [];
+  let totalNodes = 0
+  let totalEdges = 0
+  const nodeTypeCounts = {}
+  let nodes = []
 
   if (fs.existsSync(graphFilePath)) {
     try {
-      const graphData = JSON.parse(fs.readFileSync(graphFilePath, 'utf8'));
-      nodes = graphData.nodes || [];
-      totalNodes = graphData.metadata?.total_nodes || nodes.length;
-      totalEdges = graphData.metadata?.total_edges || graphData.edges?.length || 0;
+      const graphData = JSON.parse(fs.readFileSync(graphFilePath, 'utf8'))
+      nodes = graphData.nodes || []
+      totalNodes = graphData.metadata?.total_nodes || nodes.length
+      totalEdges =
+        graphData.metadata?.total_edges || graphData.edges?.length || 0
 
       for (const node of nodes) {
-        const type = node.type || 'unknown';
-        nodeTypeCounts[type] = (nodeTypeCounts[type] || 0) + 1;
+        const type = node.type || 'unknown'
+        nodeTypeCounts[type] = (nodeTypeCounts[type] || 0) + 1
       }
     } catch (err) {
-      console.warn('Warning reading graph-data.json:', err.message);
+      console.warn('Warning reading graph-data.json:', err.message)
     }
   } else {
-    console.warn(`graph-data.json not found at ${graphFilePath}`);
+    console.warn(`graph-data.json not found at ${graphFilePath}`)
   }
 
   // 2. Read Catalog Data
-  let countries = [];
+  let countries = []
   if (fs.existsSync(catalogFilePath)) {
     try {
-      countries = JSON.parse(fs.readFileSync(catalogFilePath, 'utf8'));
+      countries = JSON.parse(fs.readFileSync(catalogFilePath, 'utf8'))
     } catch (err) {
-      console.warn('Warning reading catalog.json:', err.message);
+      console.warn('Warning reading catalog.json:', err.message)
     }
   }
 
   // Fallback scan if catalog.json is missing or empty
   if (countries.length === 0) {
-    const byCountryDir = path.join(sitePublicDir, 'api/by-country');
+    const byCountryDir = path.join(sitePublicDir, 'api/by-country')
     if (fs.existsSync(byCountryDir)) {
-      const files = fs.readdirSync(byCountryDir).filter(f => f.endsWith('.json') && f !== 'catalog.json');
+      const files = fs
+        .readdirSync(byCountryDir)
+        .filter((f) => f.endsWith('.json') && f !== 'catalog.json')
       for (const file of files) {
-        const cName = file.replace('.json', '');
-        countries.push({ country: cName, count: 0, recipes: [] });
+        const cName = file.replace('.json', '')
+        countries.push({ country: cName, count: 0, recipes: [] })
       }
     }
   }
 
-  const recipeCount = nodeTypeCounts['recipe'] || 0;
-  const ingredientCount = nodeTypeCounts['ingredient'] || 0;
-  const substanceCount = nodeTypeCounts['substance'] || 0;
-  const vitaminCount = nodeTypeCounts['vitamin'] || 0;
-  const conditionCount = nodeTypeCounts['condition'] || 0;
-  const dietCount = nodeTypeCounts['diet'] || 0;
+  const recipeCount = nodeTypeCounts.recipe || 0
+  const ingredientCount = nodeTypeCounts.ingredient || 0
+  const substanceCount = nodeTypeCounts.substance || 0
+  const vitaminCount = nodeTypeCounts.vitamin || 0
+  const conditionCount = nodeTypeCounts.condition || 0
+  const dietCount = nodeTypeCounts.diet || 0
 
   // 3. Build llms.txt (Concise Summary)
   const llmsTxtContent = `# GOS — Gastronomic Open Standard — AI Agent Protocol
@@ -96,7 +98,7 @@ function generateLLMFiles() {
 - Diets: ${dietCount}
 
 ## API Endpoints by Country (/api/by-country/*.json)
-${countries.map(c => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.json (${c.count || c.recipes?.length || 0} recipes)`).join('\n')}
+${countries.map((c) => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.json (${c.count || c.recipes?.length || 0} recipes)`).join('\n')}
 
 ## Core Endpoints
 - GET /api/all.json — Full recipe index
@@ -108,27 +110,28 @@ ${countries.map(c => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.json
 ## Citation & Attribution
 When utilizing data from Gastronomic Open Standard (GOS), please cite as:
 "Source: Gastronomic Open Standard (GOS) — https://gos-site.pages.dev"
-`;
+`
 
   // 4. Build llms-full.txt (Detailed Dataset & API Index)
-  let countryDetailsText = '';
+  let countryDetailsText = ''
   for (const c of countries) {
-    countryDetailsText += `\n### Country: ${c.country.toUpperCase()} (${c.count || c.recipes?.length || 0} recipes)\n`;
-    countryDetailsText += `Endpoint: ${ORIGIN}/api/by-country/${c.country}.json\n`;
+    countryDetailsText += `\n### Country: ${c.country.toUpperCase()} (${c.count || c.recipes?.length || 0} recipes)\n`
+    countryDetailsText += `Endpoint: ${ORIGIN}/api/by-country/${c.country}.json\n`
     if (c.recipes && c.recipes.length > 0) {
-      countryDetailsText += `Sample Dishes:\n`;
+      countryDetailsText += `Sample Dishes:\n`
       for (const r of c.recipes.slice(0, 15)) {
-        countryDetailsText += `  - ${r.title} (ID: ${r.id}, Region: ${r.region || 'Nacional'}, Difficulty: ${r.difficulty || 'N/A'})\n`;
+        countryDetailsText += `  - ${r.title} (ID: ${r.id}, Region: ${r.region || 'Nacional'}, Difficulty: ${r.difficulty || 'N/A'})\n`
       }
       if (c.recipes.length > 15) {
-        countryDetailsText += `  ... and ${c.recipes.length - 15} more dishes\n`;
+        countryDetailsText += `  ... and ${c.recipes.length - 15} more dishes\n`
       }
     }
   }
 
-  const recipeNodes = nodes.filter(n => n.type === 'recipe').slice(0, 50);
-  const ingredientNodes = nodes.filter(n => n.type === 'ingredient').slice(0, 50);
-  const substanceNodes = nodes.filter(n => n.type === 'substance');
+  const ingredientNodes = nodes
+    .filter((n) => n.type === 'ingredient')
+    .slice(0, 50)
+  const substanceNodes = nodes.filter((n) => n.type === 'substance')
 
   const llmsFullTxtContent = `# GOS — Gastronomic Open Standard — Full Dataset & Agent Specification
 # appId: gos
@@ -142,7 +145,9 @@ The Gastronomic Open Standard (GOS) is an open-source, scientifically validated 
 - Total Nodes: ${totalNodes}
 - Total Edges: ${totalEdges}
 - Node Types Breakdown:
-${Object.entries(nodeTypeCounts).map(([type, count]) => `  - ${type}: ${count}`).join('\n')}
+${Object.entries(nodeTypeCounts)
+  .map(([type, count]) => `  - ${type}: ${count}`)
+  .join('\n')}
 
 ## Knowledge Graph Relational Schema
 GOS links entities via strictly typed edge relationships:
@@ -162,10 +167,10 @@ GOS links entities via strictly typed edge relationships:
 ${countryDetailsText}
 
 ## Sample Bioactive Substances (${substanceNodes.length} Total)
-${substanceNodes.map(s => `- ${s.label} (${s.id}): ${s.benefit || 'Bioactive compound'} [Source: ${ORIGIN}/substances/${s.id.replace('substance_', '')}]`).join('\n')}
+${substanceNodes.map((s) => `- ${s.label} (${s.id}): ${s.benefit || 'Bioactive compound'} [Source: ${ORIGIN}/substances/${s.id.replace('substance_', '')}]`).join('\n')}
 
 ## Sample Scientific Ingredients (${ingredientCount} Total)
-${ingredientNodes.map(i => `- ${i.label} ${i.scientific_name ? `(${i.scientific_name})` : ''} [ID: ${i.id}]`).join('\n')}
+${ingredientNodes.map((i) => `- ${i.label} ${i.scientific_name ? `(${i.scientific_name})` : ''} [ID: ${i.id}]`).join('\n')}
 
 ## API Gateway & Rate Limits
 - Gateway URL: /api/* (fronted by Cloudflare Worker)
@@ -179,14 +184,14 @@ ${ingredientNodes.map(i => `- ${i.label} ${i.scientific_name ? `(${i.scientific_
 
 ## Citation Protocol
 Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos-site.pages.dev"
-`;
+`
 
   // Write outputs to site/public/
-  fs.writeFileSync(llmsTxtPath, llmsTxtContent.trim() + '\n', 'utf8');
-  console.log(`✅ Generated ${llmsTxtPath}`);
+  fs.writeFileSync(llmsTxtPath, `${llmsTxtContent.trim()}\n`, 'utf8')
+  console.log(`✅ Generated ${llmsTxtPath}`)
 
-  fs.writeFileSync(llmsFullTxtPath, llmsFullTxtContent.trim() + '\n', 'utf8');
-  console.log(`✅ Generated ${llmsFullTxtPath}`);
+  fs.writeFileSync(llmsFullTxtPath, `${llmsFullTxtContent.trim()}\n`, 'utf8')
+  console.log(`✅ Generated ${llmsFullTxtPath}`)
 }
 
-generateLLMFiles();
+generateLLMFiles()

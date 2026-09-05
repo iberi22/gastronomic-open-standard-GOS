@@ -1,24 +1,35 @@
 <script lang="ts">
-  import { Button, Card, Badge, Input, Table, Tabs, Skeleton, Modal, StatusBadge } from '@swal/ui';
-  import type { AuiSpec } from '../lib/aui';
+import {
+  Badge,
+  Button,
+  Card,
+  Input,
+  Modal,
+  Skeleton,
+  StatusBadge,
+  Table,
+  Tabs,
+} from '@swal/ui'
+import type { Component } from 'svelte'
+import type { AuiSpec } from '../lib/aui'
 
-  let { spec }: { spec: AuiSpec } = $props();
+let { spec }: { spec: AuiSpec } = $props()
 
-  // Mapa whitelisteado type -> componente Svelte real
-  const MAP: Record<string, any> = {
-    Card,
-    Button,
-    Badge,
-    Input,
-    Table,
-    Tabs,
-    Modal,
-    StatusBadge,
-    Skeleton,
-  };
+// Mapa whitelisteado type -> componente Svelte real
+const MAP: Record<string, Component> = {
+  Card,
+  Button,
+  Badge,
+  Input,
+  Table,
+  Tabs,
+  Modal,
+  StatusBadge,
+  Skeleton,
+}
 
-  // Render helper: si el agente pide data.kind/query, aqui se haria fetch a Xavier/mesh (stub ahora)
-  // Para build verde dejamos data sin resolver — el componente recibe props tal cual
+// Render helper: si el agente pide data.kind/query, aqui se haria fetch a Xavier/mesh (stub ahora)
+// Para build verde dejamos data sin resolver — el componente recibe props tal cual
 </script>
 
 <div class="aui">
@@ -42,28 +53,28 @@
       {#if Comp}
         <div class="aui-cell" data-aui-id={c.id} data-aui-type={c.type}>
           {#if c.type === 'Card'}
-            <Card {...c.props as any}>
-              {#if (c.props as any).title}<strong>{(c.props as any).title}</strong>{/if}
-              {#if (c.props as any).content}<p>{(c.props as any).content}</p>{/if}
+            <Card {...c.props as Record<string, string>}>
+              {#if (c.props as Record<string, string>).title}<strong>{(c.props as Record<string, string>).title}</strong>{/if}
+              {#if (c.props as Record<string, string>).content}<p>{(c.props as Record<string, string>).content}</p>{/if}
             </Card>
           {:else if c.type === 'Button'}
-            <Button {...c.props as any}>{(c.props as any).label ?? (c.props as any).children ?? 'Acción'}</Button>
+            <Button {...c.props as Record<string, string>}>{(c.props as Record<string, string>).label ?? (c.props as Record<string, string>).children ?? 'Acción'}</Button>
           {:else if c.type === 'Badge'}
-            <Badge {...c.props as any}>{(c.props as any).label ?? 'Badge'}</Badge>
+            <Badge {...c.props as Record<string, string>}>{(c.props as Record<string, string>).label ?? 'Badge'}</Badge>
           {:else if c.type === 'Input'}
-            <Input {...c.props as any} />
+            <Input {...c.props as Record<string, string>} />
           {:else if c.type === 'Table'}
-            <Table {...c.props as any} />
+            <Table {...c.props as Record<string, string>} />
           {:else if c.type === 'Tabs'}
-            <Tabs {...c.props as any} />
+            <Tabs {...c.props as Record<string, string>} />
           {:else if c.type === 'Modal'}
-            <Modal {...c.props as any} />
+            <Modal {...c.props as Record<string, string>} />
           {:else if c.type === 'StatusBadge'}
-            <StatusBadge {...c.props as any} />
+            <StatusBadge {...c.props as Record<string, string>} />
           {:else if c.type === 'Skeleton'}
-            <Skeleton {...c.props as any} />
+            <Skeleton {...c.props as Record<string, string>} />
           {:else}
-            <Comp {...c.props as any} />
+            <Comp {...c.props as Record<string, string>} />
           {/if}
         </div>
       {:else}

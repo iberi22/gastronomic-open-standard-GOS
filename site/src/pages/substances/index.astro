@@ -1,20 +1,20 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
-import SubstanceCard from '../../components/SubstanceCard.svelte';
+import { getCollection } from 'astro:content'
+import SubstanceCard from '../../components/SubstanceCard.svelte'
+import Layout from '../../layouts/Layout.astro'
 
-const substances = await getCollection('substances');
+const substances = await getCollection('substances')
 // sort by discovery_year asc then name
-substances.sort((a,b) => {
-  const ay = (a.data as any).discovery_year ?? 9999;
-  const by = (b.data as any).discovery_year ?? 9999;
-  if (ay !== by) return ay - by;
-  return ((a.data as any).name ?? a.id).localeCompare((b.data as any).name ?? b.id);
-});
+substances.sort((a, b) => {
+  const ay = a.data.discovery_year ?? 9999
+  const by = b.data.discovery_year ?? 9999
+  if (ay !== by) return ay - by
+  return (a.data.name ?? a.id).localeCompare(b.data.name ?? b.id)
+})
 
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const title = `Substances — Enciclopedia de Sustancias Bioactivas — GOS (${substances.length})`;
-const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y health_registry. Antigravity single tone.`;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
+const title = `Substances — Enciclopedia de Sustancias Bioactivas — GOS (${substances.length})`
+const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y health_registry. Antigravity single tone.`
 ---
 
 <Layout title={title} description={description}>
@@ -31,7 +31,7 @@ const description = `Enciclopedia GOS: ${substances.length} sustancias bioactiva
 
   <div class="grid">
     {substances.map(entry => (
-      <SubstanceCard substance={entry as any} href={`${baseUrl}/substances/${entry.id}`} client:load />
+      <SubstanceCard substance={{ slug: entry.id, data: entry.data }} href={`${baseUrl}/substances/${entry.id}`} client:load />
     ))}
   </div>
 

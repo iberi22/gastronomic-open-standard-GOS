@@ -53,3 +53,6 @@ worker/.wrangler/
 /graph.json
 docs/graph.json
 site/graph-data.json
+docs/explorar-grafo.html
+docs/explorar-grafo-standalone.html
+site/public/graph-data.json

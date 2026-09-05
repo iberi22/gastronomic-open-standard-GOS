@@ -6,16 +6,8 @@
     "strictNullChecks": false,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "coverage",
-    "tests",
-    "src/lib/legacy",
-    "dist"
-  ]
+  "exclude": ["node_modules", "coverage", "tests", "src/lib/legacy", "dist"]
 }

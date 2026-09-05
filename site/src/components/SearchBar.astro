@@ -1,24 +1,23 @@
 ---
 // site/src/components/SearchBar.astro — client-side fuzzy search + faceted filtering
 // Uses Fuse.js (already a dep). No server round-trip — pure client filtering of the static catalog.
-import Fuse from 'fuse.js';
 
 export interface SearchItem {
-  id: string;
-  name: string;
-  group?: string;
-  region?: string;
-  difficulty?: string;
-  scientific_name?: string;
-  health?: string;
+  id: string
+  name: string
+  group?: string
+  region?: string
+  difficulty?: string
+  scientific_name?: string
+  health?: string
 }
 
 interface Props {
-  items: SearchItem[];
-  baseHref: string;
-  placeholder?: string;
-  facets?: string[]; // optional facet fields to show as pills (group, region, difficulty)
-  fuseKeys?: string[]; // default: ['name', 'scientific_name', 'health']
+  items: SearchItem[]
+  baseHref: string
+  placeholder?: string
+  facets?: string[] // optional facet fields to show as pills (group, region, difficulty)
+  fuseKeys?: string[] // default: ['name', 'scientific_name', 'health']
 }
 
 const {
@@ -27,7 +26,7 @@ const {
   placeholder = 'Buscar...',
   facets = [],
   fuseKeys = ['name', 'scientific_name', 'health'],
-} = Astro.props;
+} = Astro.props
 ---
 
 <div class="search-container" data-items={JSON.stringify(items)} data-base={baseHref} data-fuse-keys={JSON.stringify(fuseKeys)}>

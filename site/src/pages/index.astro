@@ -1,18 +1,48 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Card, Badge, Button } from '@swal/ui';
-import GosGraph from '../components/GosGraph.svelte';
+import { Badge, Button, Card } from '@swal/ui'
+import GosGraph from '../components/GosGraph.svelte'
+import Layout from '../layouts/Layout.astro'
 
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 // stats will be hydrated via GosGraph; static fallback numbers approximate
 const highlights = [
-  { k: 'Recetas', v: '400+', desc: 'De Colombia, Perú y mundo • con sensoria, técnica y región', color: '#FF6B6B' },
-  { k: 'Ingredientes', v: '250+', desc: 'Con ficha científica: nutrientes, compuestos y beneficios', color: '#4ECDC4' },
-  { k: 'Vitaminas', v: '40+', desc: 'Micronutrientes extraídos de ingredients/*.md', color: '#F9C74F' },
-  { k: 'Afecciones', v: '35+', desc: 'Health registry: hipertensión, inflamación, detox...', color: '#F94144' },
-  { k: 'Substancias', v: '30+', desc: 'Alicina, gingerol, cuminaldehído, polifenoles...', color: '#9D4EDD' },
-  { k: 'Dietas', v: '5', desc: 'Vegana, vegetariana, sin gluten, keto, mediterránea', color: '#06D6A0' },
-];
+  {
+    k: 'Recetas',
+    v: '400+',
+    desc: 'De Colombia, Perú y mundo • con sensoria, técnica y región',
+    color: '#FF6B6B',
+  },
+  {
+    k: 'Ingredientes',
+    v: '250+',
+    desc: 'Con ficha científica: nutrientes, compuestos y beneficios',
+    color: '#4ECDC4',
+  },
+  {
+    k: 'Vitaminas',
+    v: '40+',
+    desc: 'Micronutrientes extraídos de ingredients/*.md',
+    color: '#F9C74F',
+  },
+  {
+    k: 'Afecciones',
+    v: '35+',
+    desc: 'Health registry: hipertensión, inflamación, detox...',
+    color: '#F94144',
+  },
+  {
+    k: 'Substancias',
+    v: '30+',
+    desc: 'Alicina, gingerol, cuminaldehído, polifenoles...',
+    color: '#9D4EDD',
+  },
+  {
+    k: 'Dietas',
+    v: '5',
+    desc: 'Vegana, vegetariana, sin gluten, keto, mediterránea',
+    color: '#06D6A0',
+  },
+]
 ---
 
 <Layout title="GOS — Grafo Gastronómico Global">

@@ -1,61 +1,146 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
 
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
-const allDishes = await getCollection('dishes');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const allDishes = await getCollection('dishes')
 
-const COUNTRY_MAP: Record<string, { name: string; flag: string; defaultRegion: string }> = {
+const COUNTRY_MAP: Record<
+  string,
+  { name: string; flag: string; defaultRegion: string }
+> = {
   colombian: { name: 'Colombia', flag: '🇨🇴', defaultRegion: 'Andina / Caribe' },
-  mexican: { name: 'México', flag: '🇲🇽', defaultRegion: 'Puebla / Oaxaca / Michoacán' },
-  japanese: { name: 'Japón', flag: '🇯🇵', defaultRegion: 'Tokyo / Osaka / Kyoto' },
-  italian: { name: 'Italia', flag: '🇮🇹', defaultRegion: 'Roma / Nápoles / Milán' },
+  mexican: {
+    name: 'México',
+    flag: '🇲🇽',
+    defaultRegion: 'Puebla / Oaxaca / Michoacán',
+  },
+  japanese: {
+    name: 'Japón',
+    flag: '🇯🇵',
+    defaultRegion: 'Tokyo / Osaka / Kyoto',
+  },
+  italian: {
+    name: 'Italia',
+    flag: '🇮🇹',
+    defaultRegion: 'Roma / Nápoles / Milán',
+  },
   indian: { name: 'India', flag: '🇮🇳', defaultRegion: 'Punjab / Hyderabad' },
-  french: { name: 'Francia', flag: '🇫🇷', defaultRegion: 'París / Borgoña / Provenza' },
-  thai: { name: 'Tailandia', flag: '🇹🇭', defaultRegion: 'Bangkok / Chiang Mai' },
-  spanish: { name: 'España', flag: '🇪🇸', defaultRegion: 'Valencia / Andalucía / Galicia' },
-  american: { name: 'Estados Unidos', flag: '🇺🇸', defaultRegion: 'Texas / Nueva York / Louisiana' },
+  french: {
+    name: 'Francia',
+    flag: '🇫🇷',
+    defaultRegion: 'París / Borgoña / Provenza',
+  },
+  thai: {
+    name: 'Tailandia',
+    flag: '🇹🇭',
+    defaultRegion: 'Bangkok / Chiang Mai',
+  },
+  spanish: {
+    name: 'España',
+    flag: '🇪🇸',
+    defaultRegion: 'Valencia / Andalucía / Galicia',
+  },
+  american: {
+    name: 'Estados Unidos',
+    flag: '🇺🇸',
+    defaultRegion: 'Texas / Nueva York / Louisiana',
+  },
   moroccan: { name: 'Marruecos', flag: '🇲🇦', defaultRegion: 'Marrakech / Fez' },
   greek: { name: 'Grecia', flag: '🇬🇷', defaultRegion: 'Atenas / Creta' },
-  argentinian: { name: 'Argentina', flag: '🇦🇷', defaultRegion: 'Pampa / Buenos Aires' },
-  brazilian: { name: 'Brasil', flag: '🇧🇷', defaultRegion: 'Bahia / Minas Gerais' },
-  chilean: { name: 'Chile', flag: '🇨🇱', defaultRegion: 'Valparaíso / Santiago' },
+  argentinian: {
+    name: 'Argentina',
+    flag: '🇦🇷',
+    defaultRegion: 'Pampa / Buenos Aires',
+  },
+  brazilian: {
+    name: 'Brasil',
+    flag: '🇧🇷',
+    defaultRegion: 'Bahia / Minas Gerais',
+  },
+  chilean: {
+    name: 'Chile',
+    flag: '🇨🇱',
+    defaultRegion: 'Valparaíso / Santiago',
+  },
   cuban: { name: 'Cuba', flag: '🇨🇺', defaultRegion: 'La Habana' },
-  dominican: { name: 'República Dominicana', flag: '🇩🇴', defaultRegion: 'Santo Domingo' },
+  dominican: {
+    name: 'República Dominicana',
+    flag: '🇩🇴',
+    defaultRegion: 'Santo Domingo',
+  },
   peruvian: { name: 'Perú', flag: '🇵🇪', defaultRegion: 'Lima / Cusco' },
-  'puerto-rican': { name: 'Puerto Rico', flag: '🇵🇷', defaultRegion: 'San Juan' }
-};
+  'puerto-rican': {
+    name: 'Puerto Rico',
+    flag: '🇵🇷',
+    defaultRegion: 'San Juan',
+  },
+}
 
-const grouped: Record<string, { count: number; sampleFlavors: string[]; name: string; flag: string; region: string }> = {};
+const grouped: Record<
+  string,
+  {
+    count: number
+    sampleFlavors: string[]
+    name: string
+    flag: string
+    region: string
+  }
+> = {}
+
+interface DishFrontmatter {
+  title?: string
+  region?: string
+  difficulty?: string
+  servings?: string
+  sensory?: { flavor?: string | string[] }
+  main_ingredients?: string[]
+}
+const fd = (d: unknown): DishFrontmatter => d as DishFrontmatter
 
 for (const dish of allDishes) {
-  const parts = dish.id.split('/');
-  const countrySlug = parts[0];
+  const parts = dish.id.split('/')
+  const countrySlug = parts[0]
   if (!grouped[countrySlug]) {
-    const meta = COUNTRY_MAP[countrySlug] || { name: countrySlug.toUpperCase(), flag: '🌐', defaultRegion: (dish.data as any).region || 'Nacional' };
+    const meta = COUNTRY_MAP[countrySlug] || {
+      name: countrySlug.toUpperCase(),
+      flag: '🌐',
+      defaultRegion: (dish.data as DishFrontmatter).region || 'Nacional',
+    }
     grouped[countrySlug] = {
       count: 0,
       sampleFlavors: [],
       name: meta.name,
       flag: meta.flag,
-      region: meta.defaultRegion
-    };
+      region: meta.defaultRegion,
+    }
   }
-  grouped[countrySlug].count++;
-  if ((dish.data as any).sensory?.flavor && grouped[countrySlug].sampleFlavors.length < 3) {
-    const flavors = Array.isArray((dish.data as any).sensory.flavor) ? (dish.data as any).sensory.flavor : [(dish.data as any).sensory.flavor];
+  grouped[countrySlug].count++
+  if (
+    (dish.data as DishFrontmatter).sensory?.flavor &&
+    grouped[countrySlug].sampleFlavors.length < 3
+  ) {
+    const rawFlavor = (dish.data as DishFrontmatter).sensory?.flavor
+    const flavors = Array.isArray(rawFlavor)
+      ? rawFlavor
+      : [String(rawFlavor ?? '')]
     for (const f of flavors) {
-      if (!grouped[countrySlug].sampleFlavors.includes(f) && grouped[countrySlug].sampleFlavors.length < 3) {
-        grouped[countrySlug].sampleFlavors.push(f);
+      if (
+        !grouped[countrySlug].sampleFlavors.includes(f) &&
+        grouped[countrySlug].sampleFlavors.length < 3
+      ) {
+        grouped[countrySlug].sampleFlavors.push(f)
       }
     }
   }
 }
 
-const countryList = Object.keys(grouped).map(slug => ({
-  slug,
-  ...grouped[slug]
-})).sort((a,b) => b.count - a.count);
+const countryList = Object.keys(grouped)
+  .map((slug) => ({
+    slug,
+    ...grouped[slug],
+  }))
+  .sort((a, b) => b.count - a.count)
 ---
 
 <Layout title="Catálogo Mundial de Países — GOS">

@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Recipe placeholder</title>
   <rect width="64" height="64" fill="#1a1a2e" rx="8"/>
   <circle cx="32" cy="28" r="16" fill="#ff6b6b" opacity="0.8"/>
   <ellipse cx="32" cy="42" rx="18" ry="8" fill="#ff6b6b" opacity="0.6"/>

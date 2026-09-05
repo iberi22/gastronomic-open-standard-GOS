@@ -47,4 +47,4 @@ export default app;
 // Si mode === 'swal-managed', todo se factura en la cuenta SWAL y se cobra total al socio en el mismo sub (Stripe/socio).
 // En ambos casos Cloudflare es el que ejecuta inferencia (Workers AI) y almacenamiento (R2).
 
-export {};
+export {}

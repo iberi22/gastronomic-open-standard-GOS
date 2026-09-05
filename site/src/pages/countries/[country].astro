@@ -1,22 +1,22 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
 
 export async function getStaticPaths() {
-  const dishes = await getCollection('dishes');
-  const countrySlugs = [...new Set(dishes.map(d => d.id.split('/')[0]))];
+  const dishes = await getCollection('dishes')
+  const countrySlugs = [...new Set(dishes.map((d) => d.id.split('/')[0]))]
 
-  return countrySlugs.map(country => {
-    const countryDishes = dishes.filter(d => d.id.startsWith(`${country}/`));
+  return countrySlugs.map((country) => {
+    const countryDishes = dishes.filter((d) => d.id.startsWith(`${country}/`))
     return {
       params: { country },
-      props: { dishes: countryDishes, country }
-    };
-  });
+      props: { dishes: countryDishes, country },
+    }
+  })
 }
 
-const { country, dishes } = Astro.props;
-const base = import.meta.env.BASE_URL.replace(/\/$/,'');
+const { country, dishes } = Astro.props
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 const COUNTRY_NAMES: Record<string, { name: string; flag: string }> = {
   colombian: { name: 'Colombia', flag: '🇨🇴' },
@@ -36,12 +36,29 @@ const COUNTRY_NAMES: Record<string, { name: string; flag: string }> = {
   cuban: { name: 'Cuba', flag: '🇨🇺' },
   dominican: { name: 'República Dominicana', flag: '🇩🇴' },
   peruvian: { name: 'Perú', flag: '🇵🇪' },
-  'puerto-rican': { name: 'Puerto Rico', flag: '🇵🇷' }
-};
+  'puerto-rican': { name: 'Puerto Rico', flag: '🇵🇷' },
+}
 
-const meta = COUNTRY_NAMES[country] || { name: country.toUpperCase(), flag: '🌐' };
+interface DishFrontmatter {
+  title?: string
+  region?: string
+  difficulty?: string
+  servings?: string
+  sensory?: { flavor?: string | string[] }
+  main_ingredients?: string[]
+}
+const fd = (d: unknown): DishFrontmatter => d as DishFrontmatter
 
-const sorted = dishes.sort((a,b) => ((a.data as any).title||a.id).localeCompare((b.data as any).title||b.id));
+const meta = COUNTRY_NAMES[country] || {
+  name: country.toUpperCase(),
+  flag: '🌐',
+}
+
+const sorted = dishes.sort((a, b) => {
+  const ta = String(fd(a.data).title || a.id)
+  const tb = String(fd(b.data).title || b.id)
+  return ta.localeCompare(tb)
+})
 ---
 
 <Layout title={`Recetas de ${meta.name} — GOS`}>
@@ -57,23 +74,23 @@ const sorted = dishes.sort((a,b) => ((a.data as any).title||a.id).localeCompare(
   <div class="grid">
     {sorted.map(r => (
       <a href={`${base}/recipes/${r.id}`} class="card">
-        <div class="card-title">{(r.data as any).title || r.id.split('/').pop()}</div>
+        <div class="card-title">{fd(r.data).title || r.id.split('/').pop()}</div>
 
         <div class="meta-row">
-          {(r.data as any).region && <span class="pill">{(r.data as any).region}</span>}
-          {(r.data as any).difficulty && <span class="pill muted">{(r.data as any).difficulty}</span>}
-          {(r.data as any).servings && <span class="pill">🍽️ {(r.data as any).servings}</span>}
+          {fd(r.data).region && <span class="pill">{fd(r.data).region}</span>}
+          {fd(r.data).difficulty && <span class="pill muted">{fd(r.data).difficulty}</span>}
+          {fd(r.data).servings && <span class="pill">🍽️ {fd(r.data).servings}</span>}
         </div>
 
-        {(r.data as any).sensory?.flavor && (
+        {fd(r.data).sensory?.flavor && (
           <div class="sensory-row">
-            <strong>Sabor:</strong> {Array.isArray((r.data as any).sensory.flavor) ? (r.data as any).sensory.flavor.join(', ') : (r.data as any).sensory.flavor}
+            <strong>Sabor:</strong> {Array.isArray(fd(r.data).sensory?.flavor) ? (fd(r.data).sensory?.flavor as string[]).join(', ') : String(fd(r.data).sensory?.flavor ?? '')}
           </div>
         )}
 
-        {(r.data as any).main_ingredients?.length && (
+        {(fd(r.data).main_ingredients?.length ?? 0) > 0 && (
           <div class="ings">
-            <strong>Ingredientes:</strong> {(r.data as any).main_ingredients.slice(0, 4).join(' • ')}
+            <strong>Ingredientes:</strong> {(fd(r.data).main_ingredients ?? []).slice(0, 4).join(' • ')}
           </div>
         )}
       </a>
