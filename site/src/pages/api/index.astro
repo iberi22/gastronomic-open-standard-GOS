@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const endpoints = [
+  {
+    m: 'GET',
+    p: '/api/recipes?limit=10',
+    d: 'Recetas con ficha científica y sensoria.',
+  },
+  {
+    m: 'GET',
+    p: '/api/ingredients/{slug}',
+    d: 'Ficha de ingrediente: nutrientes, compuestos, health registry.',
+  },
+  {
+    m: 'GET',
+    p: '/api/substances.json',
+    d: 'Catálogo de substancias bioactivas.',
+  },
+  {
+    m: 'GET',
+    p: '/api/countries',
+    d: 'Agregado por país (top: colombian 122).',
+  },
+  {
+    m: 'GET',
+    p: '/api/vectors/index.json',
+    d: 'Snapshot versionado de vectores para RAG/agentes.',
+  },
+  { m: 'GET', p: '/api/health', d: 'Estado del servicio.' },
+  {
+    m: 'POST',
+    p: '/api/ai/infer',
+    d: 'Inferencia con socio tier (free / socio / socio-managed).',
+  },
+  {
+    m: 'GET',
+    p: '/api/entities/{entity}',
+    d: 'Entidad genérica del grafo por tipo.',
+  },
+]
+---
+
+<Layout
+  title="API para desarrolladores — GOS"
+  description="Usa los datos abiertos de GOS en tu app: recetas, ingredientes, substancias, vectores. Plan gratuito para desarrollo."
+>
+  <a href={`${base}/`} class="back">← GOS</a>
+  <h1 class="h1">API para desarrolladores</h1>
+  <p class="sub">
+    Datos abiertos del grafo gastronómico para apps de salud, dietas y nutrición.
+    Plan gratuito para desarrollo y pruebas con límite de peticiones;
+    <strong>límites ampliados para producción</strong> escribiendo a
+    <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/discussions">la comunidad GOS</a>.
+  </p>
+
+  <div class="plans">
+    <div class="plan">
+      <h2>Gratis · Desarrollo</h2>
+      <p class="price">0 — con rate limit</p>
+      <ul>
+        <li>Lectura de todos los endpoints JSON</li>
+        <li>Descarga de snapshots de vectores</li>
+        <li>Ideal para prototipos y pruebas</li>
+      </ul>
+    </div>
+    <div class="plan hi">
+      <h2>Producción · Apps</h2>
+      <p class="price">Límites ampliados</p>
+      <ul>
+        <li>Mayor throughput y SLA para tu app</li>
+        <li>Soporte de esquema y migraciones</li>
+        <li>Contacto vía la comunidad GOS</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="h2">Endpoints</h2>
+  <div class="eps">
+    {endpoints.map((e) => (
+      <div class="ep">
+        <span class={`m ${e.m === 'GET' ? 'get' : 'post'}`}>{e.m}</span>
+        <code>{e.p}</code>
+        <span class="d">{e.d}</span>
+      </div>
+    ))}
+  </div>
+
+  <p class="sub">
+    Base: <code>{`https://gos-site.pages.dev/api`}</code> ·
+    Documentación completa en <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md">API_README.md</a>.
+  </p>
+</Layout>
+
+<style>
+  .back { color: var(--swal-accent); text-decoration: none; font-size: 12px; }
+  .h1 { font-size: clamp(26px, 4vw, 38px); margin: 8px 0; color: var(--swal-text); }
+  .h2 { font-size: 20px; margin: 26px 0 12px; color: var(--swal-text); }
+  .sub { color: var(--swal-text-secondary); line-height: 1.7; max-width: 860px; }
+  .sub a { color: var(--swal-accent); }
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 18px 0; }
+  .plan { border: 1px solid var(--swal-border); border-radius: 16px; padding: 18px; background: var(--swal-surface); }
+  .plan.hi { border-color: color-mix(in srgb, var(--swal-accent) 45%, var(--swal-border)); }
+  .plan h2 { font-size: 16px; margin: 0 0 4px; color: var(--swal-text); }
+  .price { font-family: var(--swal-font-mono); font-size: 12px; color: var(--swal-accent); margin: 0 0 10px; }
+  .plan ul { margin: 0 0 0 18px; color: var(--swal-text-secondary); font-size: 13px; line-height: 1.8; }
+  .eps { display: grid; gap: 8px; }
+  .ep { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; border: 1px solid var(--swal-border); border-radius: 12px; padding: 10px 14px; background: var(--swal-surface); }
+  .m { font-family: var(--swal-font-mono); font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 6px; }
+  .m.get { background: rgba(6, 214, 160, 0.15); color: #06d6a0; }
+  .m.post { background: rgba(255, 107, 107, 0.15); color: #ff6b6b; }
+  .ep code { font-size: 12px; color: var(--swal-text); }
+  .ep .d { font-size: 12px; color: var(--swal-text-muted); }
+</style>

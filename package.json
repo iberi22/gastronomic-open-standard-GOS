@@ -1,7 +1,7 @@
 {
   "name": "gastronomic-open-standard",
   "description": "Gastronomic Open Standard (GOS) - A scientifically structured, open database of world recipes and ingredients.",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@11.24.0",
   "repository": {
     "type": "git",

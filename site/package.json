@@ -1,6 +1,6 @@
 {
   "name": "gos-site",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "description": "GOS — Gastronomic Open Standard · grafo global recetas↔ingredientes↔vitaminas↔sabores↔afecciones↔dietas↔substancias — Astro 7 + Svelte 5 + @swal/ui antigravity",
@@ -23,11 +23,12 @@
     "diff": "^8.0.4",
     "fuse.js": "7.5.0",
     "glob": "^13.0.6",
+    "graphology": "0.26.0",
+    "graphology-layout-forceatlas2": "0.10.1",
     "gray-matter": "^4.0.3",
     "idb": "8.0.3",
     "sharp": "^0.35.3",
-    "vis-data": "^8.0.4",
-    "vis-network": "^10.1.2",
+    "sigma": "3.0.3",
     "y-indexeddb": "9.0.12",
     "y-webrtc": "10.3.0",
     "yjs": "13.6.32"

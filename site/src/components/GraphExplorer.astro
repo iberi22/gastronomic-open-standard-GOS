@@ -1,5 +1,5 @@
 ---
-// GraphExplorer - Premium vis-network Knowledge Graph for GOS
+// GraphExplorer - sigma.js/WebGL Knowledge Graph for GOS
 // Data: /graph-data.json (3260 nodes, 24k edges)
 ---
 
@@ -109,9 +109,11 @@
 </div>
 
 <script>
-// @ts-nocheck — legacy vanilla-JS explorer (types enforced at the vis-network API boundary)
-import { Network } from 'vis-network/peer';
-import { DataSet } from 'vis-data/peer';
+// @ts-nocheck — vanilla-JS explorer (sigma/graphology API boundary tipada en build)
+// Sigma.js/WebGL explorer — posiciones FA2 precomputadas en build (graph-data.json x,y).
+// Cero fisica en cliente: filtrado por atributo 'hidden' + reducers para highlight.
+import Sigma from 'sigma';
+import Graph from 'graphology';
 (function() {
   var COLORS = {
     recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
@@ -151,13 +153,12 @@ import { DataSet } from 'vis-data/peer';
   var recipeCountEl = document.getElementById('ge-recipe-count');
 
   var graphData = null;
-  var network = null;
-  var nodesDataSet = null;
-  var edgesDataSet = null;
+  var graph = null;
+  var renderer = null;
   var activeTypes = new Set(Object.keys(COLORS));
   // Vista inicial legible: los tipos hoja masivos (ingredientes/sabores/texturas
-  // suman ~2500 nodos y colapsan el layout en un hairball). Empiezan apagados;
-  // el usuario los enciende con los botones de filtro.
+  // suman ~2500 nodos y colapsan la vista). Empiezan apagados; el usuario los
+  // enciende con los botones de filtro.
   ['ingredient', 'flavor', 'texture'].forEach(function(t) { activeTypes.delete(t); });
   var highlightedNodeId = null;
 
@@ -181,6 +182,10 @@ import { DataSet } from 'vis-data/peer';
 
   loadData(0);
 
+  function nodeSize(n) {
+    return n.size ? Math.max(2, Math.min(8, n.size / 4)) : 4;
+  }
+
   function onDataLoaded(data) {
     graphData = data;
     var recipeNodes = data.nodes.filter(function(n) { return n.type === 'recipe'; });
@@ -190,7 +195,7 @@ import { DataSet } from 'vis-data/peer';
 
     buildFilters(data.nodes);
     buildLegend(data.nodes);
-    initVisNetwork();
+    initSigma();
 
     // Check for query parameters ?node= or ?filter=
     var params = new URLSearchParams(window.location.search);
@@ -262,237 +267,135 @@ import { DataSet } from 'vis-data/peer';
   }
 
   function applyFilters() {
-    if (!nodesDataSet || !edgesDataSet || !graphData) return;
-
-    var filteredNodes = graphData.nodes.filter(function(n) {
-      return activeTypes.has(n.type);
-    }).map(formatVisNode);
-
-    var validNodeIds = new Set(filteredNodes.map(function(n) { return n.id; }));
-
-    var filteredEdges = graphData.edges.filter(function(e) {
-      return validNodeIds.has(e.source) && validNodeIds.has(e.target);
-    }).map(formatVisEdge);
-
-    nodesDataSet.clear();
-    edgesDataSet.clear();
-    nodesDataSet.add(filteredNodes);
-    edgesDataSet.add(filteredEdges);
-    // Re-estabilizar corto tras cada cambio de filtros (el handler
-    // stabilizationIterationsDone hace fit + freeze solo).
-    if (network) {
-      network.setOptions({ physics: { enabled: true, stabilization: { iterations: 400, updateInterval: 50 } } });
-      network.stabilize();
-    }
+    if (!graph || !renderer || !graphData) return;
+    var visible = new Set();
+    graph.forEachNode(function(id, attrs) {
+      var show = activeTypes.has(attrs.ntype);
+      graph.setNodeAttribute(id, 'hidden', !show);
+      if (show) visible.add(id);
+    });
+    graph.forEachEdge(function(id, attrs, source, target) {
+      graph.setEdgeAttribute(id, 'hidden', !(visible.has(source) && visible.has(target)));
+    });
+    resetHighlight();
+    renderer.refresh();
   }
 
-  function formatVisNode(n) {
-    var color = COLORS[n.type] || '#888888';
-    var size = n.size ? Math.max(10, Math.min(25, n.size / 2)) : 12;
-    return {
-      id: n.id,
-      label: n.label || n.id,
-      shape: 'dot',
-      size: size,
-      color: {
-        background: color,
-        border: '#000000',
-        highlight: { background: color, border: '#ffffff' },
-        hover: { background: color, border: '#ffffff' }
-      },
-      font: { color: '#e0e0ff', size: 11, face: 'Inter, system-ui, sans-serif' },
-      type: n.type,
-      raw: n
-    };
-  }
-
-  function formatVisEdge(e, idx) {
-    return {
-      id: e.id ? (e.id + '-' + idx) : (e.source + '-' + e.target + '-' + idx),
-      from: e.source,
-      to: e.target,
-      color: { color: '#2a2a3e', highlight: '#7d61ff', hover: '#7d61ff', opacity: 0.5 },
-      width: 1,
-      raw: e
-    };
-  }
-
-  function initVisNetwork() {
-    var initialNodes = graphData.nodes.filter(function(n) {
-      return activeTypes.has(n.type);
-    }).map(formatVisNode);
-    var validNodeIds = new Set(initialNodes.map(function(n) { return n.id; }));
-    var initialEdges = graphData.edges.filter(function(e) {
-      return validNodeIds.has(e.source) && validNodeIds.has(e.target);
-    }).map(formatVisEdge);
-
-    nodesDataSet = new DataSet(initialNodes);
-    edgesDataSet = new DataSet(initialEdges);
-
-    var visData = { nodes: nodesDataSet, edges: edgesDataSet };
-
-    var options = {
-      nodes: {
-        borderWidth: 1,
-        shadow: true
-      },
-      edges: {
-        smooth: { enabled: true, type: 'continuous', roundness: 0.5 }
-      },
-      interaction: {
-        hover: true,
-        hoverConnectedEdges: true,
-        selectConnectedEdges: true,
-        tooltipDelay: 200
-      },
-      physics: {
-        solver: 'barnesHut',
-        barnesHut: {
-          gravitationalConstant: -4000,
-          centralGravity: 0.05,
-          springLength: 160,
-          springConstant: 0.04,
-          damping: 0.09
-        },
-        maxVelocity: 50,
-        minVelocity: 0.5,
-        stabilization: {
-          enabled: true,
-          iterations: 1500,
-          updateInterval: 50
-        }
-      }
-    };
-
-    network = new Network(canvas, visData, options);
-
-    network.on('stabilizationProgress', function(params) {
-      var progress = Math.round((params.iteration / params.total) * 100);
-      loading.querySelector('span').textContent = 'Stabilizing knowledge graph... ' + progress + '%';
+  function initSigma() {
+    graph = new Graph({ multi: true });
+    graphData.nodes.forEach(function(n, i) {
+      graph.addNode(n.id, {
+        label: n.label || n.id,
+        size: nodeSize(n),
+        color: COLORS[n.type] || '#888888',
+        x: typeof n.x === 'number' ? n.x : Math.cos(i) * 10,
+        y: typeof n.y === 'number' ? n.y : Math.sin(i) * 10,
+        ntype: n.type,
+        hidden: !activeTypes.has(n.type),
+      });
+    });
+    graphData.edges.forEach(function(e, idx) {
+      if (!graph.hasNode(e.source) || !graph.hasNode(e.target)) return;
+      var key = (e.id ? e.id + '-' + idx : e.source + '-' + e.target + '-' + idx);
+      try {
+        graph.addEdgeWithKey(key, e.source, e.target, {
+          color: '#1c1c28',
+          size: 0.6,
+          hidden: !(activeTypes.has(graph.getNodeAttribute(e.source, 'ntype')) && activeTypes.has(graph.getNodeAttribute(e.target, 'ntype'))),
+        });
+      } catch (err) {}
     });
 
-    network.on('stabilizationIterationsDone', function() {
-      loading.style.display = 'none';
-      network.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
-      network.setOptions({ physics: { enabled: false } }); // Freeze after stabilization for performance
+    if (renderer) renderer.kill();
+    renderer = new Sigma(graph, canvas, {
+      defaultEdgeColor: '#2a2a3e',
+      defaultEdgeType: 'line',
+      labelDensity: 1,
+      labelGridCellSize: 60,
+      labelRenderedSizeThreshold: 12,
+      labelSize: 12,
+      labelColor: { color: '#e0e0ff' },
+      minCameraRatio: 0.02,
+      maxCameraRatio: 5,
     });
 
-    // Fallback: if full stabilization takes too long, fit + freeze anyway
-    setTimeout(function() {
-      if (loading.style.display !== 'none') {
-        loading.style.display = 'none';
-        network.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
-        network.setOptions({ physics: { enabled: false } });
-      }
-    }, 20000);
+    loading.style.display = 'none';
 
-    // Click Node Event
-    network.on('click', function(params) {
-      if (params.nodes.length > 0) {
-        var nodeId = params.nodes[0];
-        highlightNeighborhood(nodeId);
-        showDetailById(nodeId);
-      } else {
-        resetHighlight();
-        detail.classList.remove('open');
-      }
+    renderer.on('clickNode', function(params) {
+      highlightNeighborhood(params.node);
+      showDetailById(params.node);
     });
 
-    // Hover Node Event
-    network.on('hoverNode', function(params) {
-      if (!highlightedNodeId) {
-        highlightNeighborhood(params.node);
-      }
+    renderer.on('clickStage', function() {
+      resetHighlight();
+      detail.classList.remove('open');
     });
 
-    network.on('blurNode', function() {
-      if (!highlightedNodeId) {
-        resetHighlight();
-      }
+    renderer.on('enterNode', function(params) {
+      if (!highlightedNodeId) highlightNeighborhood(params.node);
+    });
+
+    renderer.on('leaveNode', function() {
+      if (!highlightedNodeId) resetHighlight();
     });
   }
 
   function highlightNeighborhood(nodeId) {
-    if (!network || !nodesDataSet || !edgesDataSet) return;
+    if (!graph || !renderer) return;
+    highlightedNodeId = nodeId;
+    var keep = {};
+    keep[nodeId] = true;
+    graph.neighbors(nodeId).forEach(function(n) { keep[n] = true; });
+    var keepEdges = {};
+    graph.edges(nodeId).forEach(function(e) { keepEdges[e] = true; });
 
-    var connectedNodes = network.getConnectedNodes(nodeId);
-    var connectedEdges = network.getConnectedEdges(nodeId);
-    var allNodes = nodesDataSet.get();
-    var allEdges = edgesDataSet.get();
-
-    var connectedNodeSet = new Set(connectedNodes);
-    connectedNodeSet.add(nodeId);
-    var connectedEdgeSet = new Set(connectedEdges);
-
-    var updatedNodes = [];
-    allNodes.forEach(function(n) {
-      var isConnected = connectedNodeSet.has(n.id);
-      var opacity = isConnected ? 1.0 : 0.15;
-      var color = COLORS[n.type] || '#888';
-      updatedNodes.push({
-        id: n.id,
-        color: {
-          background: isConnected ? color : 'rgba(40,40,60,0.3)',
-          border: isConnected ? (n.id === nodeId ? '#ffffff' : '#000000') : 'rgba(20,20,30,0.3)'
-        },
-        font: { color: isConnected ? '#ffffff' : 'rgba(100,100,140,0.3)' }
-      });
+    renderer.setSetting('nodeReducer', function(node, data) {
+      var res = Object.assign({}, data);
+      if (!keep[node]) {
+        res.color = 'rgba(40,40,60,0.25)';
+        res.label = '';
+      } else if (node === nodeId) {
+        res.highlighted = true;
+      }
+      return res;
     });
-
-    var updatedEdges = [];
-    allEdges.forEach(function(e) {
-      var isConnected = connectedEdgeSet.has(e.id);
-      updatedEdges.push({
-        id: e.id,
-        color: { color: isConnected ? '#7d61ff' : 'rgba(30,30,50,0.1)', opacity: isConnected ? 0.9 : 0.05 },
-        width: isConnected ? 2 : 1
-      });
+    renderer.setSetting('edgeReducer', function(edge, data) {
+      var res = Object.assign({}, data);
+      if (!keepEdges[edge]) {
+        res.color = 'rgba(30,30,50,0.06)';
+        res.hidden = true;
+      } else {
+        res.color = '#7d61ff';
+        res.size = 2;
+      }
+      return res;
     });
-
-    nodesDataSet.update(updatedNodes);
-    edgesDataSet.update(updatedEdges);
+    renderer.refresh();
   }
 
   function resetHighlight() {
-    if (!nodesDataSet || !edgesDataSet) return;
+    if (!renderer) return;
     highlightedNodeId = null;
-
-    var allNodes = nodesDataSet.get();
-    var allEdges = edgesDataSet.get();
-
-    var updatedNodes = allNodes.map(function(n) {
-      var color = COLORS[n.type] || '#888';
-      return {
-        id: n.id,
-        color: {
-          background: color,
-          border: '#000000'
-        },
-        font: { color: '#e0e0ff' }
-      };
-    });
-
-    var updatedEdges = allEdges.map(function(e) {
-      return {
-        id: e.id,
-        color: { color: '#2a2a3e', opacity: 0.5 },
-        width: 1
-      };
-    });
-
-    nodesDataSet.update(updatedNodes);
-    edgesDataSet.update(updatedEdges);
+    renderer.setSetting('nodeReducer', null);
+    renderer.setSetting('edgeReducer', null);
+    renderer.refresh();
   }
 
   function focusAndShowNode(id) {
-    if (!graphData || !network) return;
+    if (!graphData || !renderer || !graph || !graph.hasNode(id)) return;
     highlightedNodeId = id;
+    // Enciende el tipo si estaba filtrado
+    var t = graph.getNodeAttribute(id, 'ntype');
+    if (t && !activeTypes.has(t)) {
+      activeTypes.add(t);
+      var btn = filtersEl.querySelector('[data-type="' + t + '"]');
+      if (btn) btn.classList.add('on');
+      applyFilters();
+    }
     highlightNeighborhood(id);
     showDetailById(id);
-    network.focus(id, {
-      scale: 1.2,
-      animation: { duration: 600, easingFunction: 'easeInOutQuad' }
-    });
+    var attrs = graph.getNodeAttributes(id);
+    renderer.getCamera().animate({ x: attrs.x, y: attrs.y, ratio: 0.15 }, { duration: 600 });
   }
 
   window.focusNode = function(id) {
@@ -616,21 +519,13 @@ import { DataSet } from 'vis-data/peer';
   searchInput.addEventListener('blur', function() { setTimeout(function() { searchResults.classList.remove('active'); }, 150); });
 
   document.getElementById('ge-zoom-in').onclick = function() {
-    if (network) {
-      var scale = network.getScale();
-      network.moveTo({ scale: scale * 1.3, animation: { duration: 300 } });
-    }
+    if (renderer) renderer.getCamera().animatedZoom({ duration: 300 });
   };
   document.getElementById('ge-zoom-out').onclick = function() {
-    if (network) {
-      var scale = network.getScale();
-      network.moveTo({ scale: scale * 0.7, animation: { duration: 300 } });
-    }
+    if (renderer) renderer.getCamera().animatedUnzoom({ duration: 300 });
   };
   document.getElementById('ge-zoom-reset').onclick = function() {
-    if (network) {
-      network.fit({ animation: { duration: 500 } });
-    }
+    if (renderer) renderer.getCamera().animatedReset({ duration: 500 });
   };
   document.getElementById('ge-detail-close').onclick = function() {
     detail.classList.remove('open');
@@ -638,7 +533,7 @@ import { DataSet } from 'vis-data/peer';
   };
 
   window.addEventListener('resize', function() {
-    if (network) network.redraw();
+    if (renderer) renderer.refresh();
   });
 })();
 </script>

@@ -1,15 +1,17 @@
 <script lang="ts">
+import Graph from 'graphology'
+import type { Sigma as SigmaType } from 'sigma'
+import Sigma from 'sigma'
 import { onMount, tick } from 'svelte'
-import { DataSet } from 'vis-data/peer'
-import type { Edge, Node, Options } from 'vis-network/peer'
-import { Network } from 'vis-network/peer'
 
-// Shared graph types for the explorer (issue #235)
+// Shared graph types for the explorer
 interface GNodeDatum {
   id: string
   label?: string
   type?: string
   size?: number
+  x?: number
+  y?: number
 }
 interface GEdgeDatum {
   source: string
@@ -21,6 +23,7 @@ interface GraphData {
 }
 
 let container: HTMLDivElement
+let renderer: SigmaType | null = null
 let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 })
 let loading = $state(true)
 let error = $state<string | null>(null)
@@ -57,104 +60,88 @@ async function loadGraphData(): Promise<GraphData> {
   throw new Error('graph-data.json no encontrado')
 }
 
-onMount(async () => {
-  try {
-    const data = await loadGraphData()
-    stats = {
-      nodes: data.nodes?.length || 0,
-      edges: data.edges?.length || 0,
-      recipes: data.nodes?.filter((n) => n.type === 'recipe').length || 0,
-      ingredients:
-        data.nodes?.filter((n) => n.type === 'ingredient').length || 0,
+onMount(() => {
+  void (async () => {
+    try {
+      const data = await loadGraphData()
+      stats = {
+        nodes: data.nodes?.length || 0,
+        edges: data.edges?.length || 0,
+        recipes: data.nodes?.filter((n) => n.type === 'recipe').length || 0,
+        ingredients:
+          data.nodes?.filter((n) => n.type === 'ingredient').length || 0,
+      }
+      loading = false
+      await tick()
+      if (container) renderSigma(container, data)
+      else error = 'graph container not mounted'
+    } catch (e) {
+      error = e instanceof Error ? e.message : String(e)
+      loading = false
     }
-    loading = false
-    await tick()
-    if (container) renderVisNetwork(container, data)
-    else error = 'graph container not mounted'
-  } catch (e) {
-    error = e instanceof Error ? e.message : String(e)
-    loading = false
+  })()
+  return () => {
+    renderer?.kill()
+    renderer = null
   }
 })
 
-function renderVisNetwork(el: HTMLDivElement, data: GraphData) {
-  const nodes: Node[] = (data.nodes || []).slice(0, 180).map((n) => ({
-    id: n.id,
-    label: n.label || n.id,
-    shape: 'dot',
-    size: n.size ? Math.max(8, Math.min(20, n.size / 2)) : 10,
-    color: {
-      background: COLORS[n.type || ''] || '#888888',
-      border: '#000000',
-      highlight: {
-        background: COLORS[n.type || ''] || '#888888',
-        border: '#ffffff',
-      },
-    },
-    font: { color: '#e0e0ff', size: 10, face: 'Inter, system-ui, sans-serif' },
-  }))
-
-  const nodeIds = new Set(nodes.map((n) => n.id))
-  const edges: Edge[] = (data.edges || [])
+function renderSigma(el: HTMLDivElement, data: GraphData) {
+  // Mini-grafo home: muestra estratificada por tipo con posiciones FA2
+  // precomputadas (build). Cero fisica en cliente: render WebGL estatico.
+  const byType = new Map<string, GNodeDatum[]>()
+  for (const n of data.nodes || []) {
+    const t = n.type || 'misc'
+    const list = byType.get(t)
+    if (list) list.push(n)
+    else byType.set(t, [n])
+  }
+  const PER_TYPE = 14
+  const subset: GNodeDatum[] = []
+  for (const list of byType.values()) {
+    const step = Math.max(1, Math.floor(list.length / PER_TYPE))
+    for (let i = 0; i < list.length && subset.length < 180; i += step) {
+      subset.push(list[i])
+      if (subset.filter((s) => s.type === list[i].type).length >= PER_TYPE)
+        break
+    }
+  }
+  const nodeIds = new Set(subset.map((n) => n.id))
+  const g = new Graph({ multi: true })
+  subset.forEach((n, i) => {
+    g.addNode(n.id, {
+      label: n.label || n.id,
+      size: n.size ? Math.max(4, Math.min(10, n.size / 2)) : 5,
+      color: COLORS[n.type || ''] || '#888888',
+      x: typeof n.x === 'number' ? n.x : Math.cos(i) * 10,
+      y: typeof n.y === 'number' ? n.y : Math.sin(i) * 10,
+    })
+  })
+  ;(data.edges || [])
     .filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target))
     .slice(0, 350)
-    .map((e) => ({
-      from: e.source,
-      to: e.target,
-      color: { color: '#2a2a3e', opacity: 0.4 },
-      width: 1,
-    }))
+    .forEach((e) => {
+      try {
+        g.addEdge(e.source, e.target, { color: '#2a2a3e', size: 1 })
+      } catch {}
+    })
 
-  const visData = {
-    nodes: new DataSet(nodes),
-    edges: new DataSet(edges),
-  }
-
-  const options: Options = {
-    nodes: { borderWidth: 1 },
-    edges: {
-      smooth: {
-        enabled: true,
-        type: 'continuous',
-        roundness: 0.5,
-      },
-    },
-    interaction: { hover: true, tooltipDelay: 200 },
-    physics: {
-      solver: 'forceAtlas2Based',
-      forceAtlas2Based: {
-        gravitationalConstant: -30,
-        centralGravity: 0.01,
-        springLength: 60,
-        springConstant: 0.08,
-      },
-      maxVelocity: 40,
-      minVelocity: 0.75,
-      stabilization: { enabled: true, iterations: 100 },
-    },
-  }
-
-  const network = new Network(el, visData, options)
-
-  network.on('stabilizationIterationsDone', () => {
-    network.setOptions({ physics: { enabled: false } })
+  renderer?.kill()
+  renderer = new Sigma(g, el, {
+    defaultEdgeColor: '#2a2a3e',
+    defaultEdgeType: 'line',
+    labelRenderedSizeThreshold: 99999,
+    minCameraRatio: 0.05,
+    maxCameraRatio: 3,
   })
 
-  setTimeout(() => {
-    network.setOptions({ physics: { enabled: false } })
-  }, 2500)
-
-  // Clicking a node in homepage mini-graph navigates to /graph?node=<node_id>
-  network.on('click', (params) => {
-    if (params.nodes.length > 0) {
-      const nodeId = params.nodes[0]
-      const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
-      window.location.href = `${base}/graph?node=${encodeURIComponent(nodeId)}`
-    }
+  // Click en mini-grafo home navega a /graph?node=<id>
+  renderer.on('clickNode', (e) => {
+    const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
+    window.location.href = `${base}/graph?node=${encodeURIComponent(e.node)}`
   })
 }
 </script>
-
 <div class="gos-graph-wrap">
   <div class="gos-toolbar">
     <div class="gos-toolbar-left">
