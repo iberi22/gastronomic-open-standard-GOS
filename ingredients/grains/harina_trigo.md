@@ -1,35 +1,39 @@
 ---
-name: "Harina de Trigo"
-scientific_name: "Triticum aestivum"
-group: "Grain"
-image: "../../images/harina_trigo.jpg"
-portions:
-  default_g: 125 # 1 cup
+active_compounds:
+- benefit: Structural protein giving elasticity to dough.
+  name: Gluten
+  scientific_ref: Food Chem
+aliases:
+  en:
+  - wheat flour
+group: Grain
+health_registry:
+- compounds:
+  - Starch
+  condition: Energy
+  evidence_level: High
+  mechanism: Dense source of complex carbohydrates.
+image: ../../images/harina_trigo.jpg
+micronutrients:
+  folate_ug: 120
+  iron_mg: 4.6
+  thiamin_mg: 0.8
+name: Harina de Trigo
 nutrition_per_100g:
   calories: 364
-  protein_g: 10
-  fat_g: 1
   carbs_g: 76
+  fat_g: 1
   fiber_g: 2.7
-micronutrients:
-  folate_ug: 120 # Fortified usually
-  iron_mg: 4.6 # Fortified
-  thiamin_mg: 0.8
-active_compounds:
-  - name: "Gluten"
-    benefit: "Structural protein giving elasticity to dough."
-    scientific_ref: "Food Chem"
-health_registry:
-  - condition: "Energy"
-    mechanism: "Dense source of complex carbohydrates."
-    compounds: ["Starch"]
-    evidence_level: "High"
+  protein_g: 10
+portions:
+  default_g: 125
+scientific_name: Triticum aestivum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - pan
-  - arepa_harina
-  - espesante
+- pan
+- arepa_harina
+- espesante
 ---
 
 # Scientific Analysis & Culinary Use

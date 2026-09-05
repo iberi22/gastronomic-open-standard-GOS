@@ -1,62 +1,64 @@
 ---
-title: Birria de Res con Consomé
-region: Jalisco
+aliases:
+  en:
+  - Beef Birria
+  - Birria Stew
+categories:
+- Plato fuerte
+- Taquería
+- Tradicional
+cook_time: 3 horas
+description: La Birria de Res es un guiso tradicional jalisciense de carne adobada
+  en especias y cocida lentamente hasta quedar suave, servida junto con su consomé
+  aromático.
+difficulty: ★★★☆☆
+images:
+- description: Birria de Res con Consomé tradicional
+  url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Plato fuerte
-  - Taquería
-  - Tradicional
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 3 horas
-servings: 6
-tags:
-  - Mexican
-  - GOS Catalog
-  - Top 20
 main_ingredients:
-  - Carne de res (diezmillo/morcillo)
-  - Chile guajillo
-  - Chile ancho
-  - Jitomate
-  - Vinagre blanco
-  - Comino
-  - Orégano
-  - Canela
-sensory:
-  flavor:
-    - Concentrado de res
-    - Especiado
-    - Picante sabroso
-  texture:
-    - Carne melosa que se deshace
-    - Consomé espeso
-  aroma:
-    - Comino
-    - Clavo
-    - Chile ancho y guajillo
-  presentation: >-
-    Carne servida en tazón con consomé rojo, acompañada de tortillas frotadas en
-    la grasa del caldo.
+- Carne de res (diezmillo/morcillo)
+- Chile guajillo
+- Chile ancho
+- Jitomate
+- Vinagre blanco
+- Comino
+- Orégano
+- Canela
 nutrition:
   calories: 720
   macros:
-    protein_g: 48
-    fat_g: 35
     carbs_g: 50
-images:
-  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
-    description: Birria de Res con Consomé tradicional
-description: >-
-  La Birria de Res es un guiso tradicional jalisciense de carne adobada en
-  especias y cocida lentamente hasta quedar suave, servida junto con su consomé
-  aromático.
+    fat_g: 35
+    protein_g: 48
+prep_time: 40 minutos
+region: Jalisco
+sensory:
+  aroma:
+  - Comino
+  - Clavo
+  - Chile ancho y guajillo
+  flavor:
+  - Concentrado de res
+  - Especiado
+  - Picante sabroso
+  presentation: Carne servida en tazón con consomé rojo, acompañada de tortillas frotadas
+    en la grasa del caldo.
+  texture:
+  - Carne melosa que se deshace
+  - Consomé espeso
+servings: 6
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Mexican
+- GOS Catalog
+- Top 20
+title: Birria de Res con Consomé
 ---
 
 # Birria de Res con Consomé

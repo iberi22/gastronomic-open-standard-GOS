@@ -1,34 +1,49 @@
 ---
-name: "Anetol"
-formula: "C10H12O"
+aliases:
+  en:
+  - anethole
+benefit: Digestivo, expectorante, carminativo
+compuestos:
+- Estragole
+- Anisaldehyde
+- Linalool
 discovery_year: 1846
-source_ingredient: "anís (Pimpinella anisum)"
-benefit: "Digestivo, expectorante, carminativo"
-sazon: "Anisado dulce regaliz, base aguardiente y galletas"
-sabor: "Dulce licoroso anisado 13x más dulce que azúcar, nota anís estrellado"
-textura: "Fenilpropeno cristalino oleoso, 80-90% aceite esencial anís, efecto ouzo blanquecino"
-vitaminas: ["Iron", "Manganese", "Calcium"]
-compuestos: ["Estragole", "Anisaldehyde", "Linalool"]
-sources: ["PubMed", "NIH"]
-tags: ["anisado", "digestivo", "dulce"]
-image_attribution: "Pixabay — Pimpinella anisum"
+formula: C10H12O
 health_registry:
-  - condition: "Dyspepsia"
-    mechanism: "Carminative, relaxes GI smooth muscle"
-    evidence_level: "Medium"
-    studies:
-      - title: "Anise and functional dyspepsia"
-        source: "J Ethnopharmacol"
-        year: 2010
-        doi: "10.1016/j.jep.2010.03.005"
-  - condition: "Cough / Bronchitis"
-    mechanism: "Expectorant via mucus clearance"
-    evidence_level: "Medium"
-    studies:
-      - title: "Anethole expectorant review"
-        source: "Phytother Res"
-        year: 2013
-        doi: "10.1002/ptr.4990"
+- condition: Dyspepsia
+  evidence_level: Medium
+  mechanism: Carminative, relaxes GI smooth muscle
+  studies:
+  - doi: 10.1016/j.jep.2010.03.005
+    source: J Ethnopharmacol
+    title: Anise and functional dyspepsia
+    year: 2010
+- condition: Cough / Bronchitis
+  evidence_level: Medium
+  mechanism: Expectorant via mucus clearance
+  studies:
+  - doi: 10.1002/ptr.4990
+    source: Phytother Res
+    title: Anethole expectorant review
+    year: 2013
+image_attribution: Pixabay — Pimpinella anisum
+name: Anetol
+sabor: Dulce licoroso anisado 13x más dulce que azúcar, nota anís estrellado
+sazon: Anisado dulce regaliz, base aguardiente y galletas
+source_ingredient: anís (Pimpinella anisum)
+sources:
+- PubMed
+- NIH
+tags:
+- anisado
+- digestivo
+- dulce
+textura: Fenilpropeno cristalino oleoso, 80-90% aceite esencial anís, efecto ouzo
+  blanquecino
+vitaminas:
+- Iron
+- Manganese
+- Calcium
 ---
 
 ![Anetol](/images/substances/anetol.jpg)

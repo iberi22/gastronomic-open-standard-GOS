@@ -1,43 +1,52 @@
 ---
-name: "Papa Pastusa/Sabanera (Blanca)"
-scientific_name: "Solanum tuberosum"
-group: "Vegetable"
-portions:
-  default_g: 150 # 1 medium potato
+active_compounds:
+- benefit: Compounds in potato skin linked to lowering blood pressure.
+  name: Kukoamines
+  scientific_ref: PubMed
+aliases:
+  en:
+  - Andean potato
+  - pastusa potato
+group: Vegetable
+health_registry:
+- compounds:
+  - Starch
+  - Protein (Patatin)
+  condition: Satiety & Weight Management
+  evidence_level: High
+  mechanism: High Satiety Index (highest of common foods) reduces subsequent calorie
+    intake.
+  studies:
+  - source: European Journal of Clinical Nutrition
+    title: A Satiety Index of common foods
+    year: 1995
+- compounds:
+  - Kukoamines
+  condition: Hypertension
+  evidence_level: Low
+  mechanism: Kukoamines found in potato skin may inhibit ACE enzyme (similar to BP
+    meds).
+micronutrients:
+  magnesium_mg: 23
+  potassium_mg: 421
+  vitamin_b6_mg: 0.3
+  vitamin_c_mg: 19.7
+name: Papa Pastusa/Sabanera (Blanca)
 nutrition_per_100g:
   calories: 77
-  protein_g: 2.0
-  fat_g: 0.1
   carbs_g: 17.5
+  fat_g: 0.1
   fiber_g: 2.2
+  protein_g: 2.0
   sugar_g: 0.8
-micronutrients:
-  potassium_mg: 421
-  vitamin_c_mg: 19.7
-  vitamin_b6_mg: 0.3
-  magnesium_mg: 23
-active_compounds:
-  - name: "Kukoamines"
-    benefit: "Compounds in potato skin linked to lowering blood pressure."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Satiety & Weight Management"
-    mechanism: "High Satiety Index (highest of common foods) reduces subsequent calorie intake."
-    compounds: ["Starch", "Protein (Patatin)"]
-    evidence_level: "High"
-    studies:
-      - title: "A Satiety Index of common foods"
-        source: "European Journal of Clinical Nutrition"
-        year: 1995
-  - condition: "Hypertension"
-    mechanism: "Kukoamines found in potato skin may inhibit ACE enzyme (similar to BP meds)."
-    compounds: ["Kukoamines"]
-    evidence_level: "Low" # In vitro mostly
+portions:
+  default_g: 150
+scientific_name: Solanum tuberosum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - sopa
-  - salada
+- sopa
+- salada
 ---
 
 # Scientific Analysis & Culinary Use

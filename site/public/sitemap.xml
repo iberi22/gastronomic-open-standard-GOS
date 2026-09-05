@@ -1,81 +1,1102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gos-site.pages.dev/</loc><priority>1.0</priority></url>
-  <url><loc>https://gos-site.pages.dev/graph</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/graph-data.json</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/ajo</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/cilantro</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/comino</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/jengibre</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/panela</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/condiments/sal</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/dairy/crema_leche</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/dairy/leche</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/dairy/mantequilla</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/dairy/queso</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/fruits/aguacate</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/fruits/limon</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/grains/almidon_yuca</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/grains/arroz</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/grains/harina_trigo</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/grains/maiz</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/legumes/frijol</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/legumes/lentejas</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/oils/aceite</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/ingredients/oils/aceite_ajonjoli</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/apple_pie_traditional</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/bbq_pork_ribs</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/clam_chowder_boston</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/classic_cheeseburger</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/cornbread_southern</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/eggs_benedict</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/fried_chicken_southern</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/gumbo_louisiana</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/jambalaya_cajun</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/key_lime_pie</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/macaroni_and_cheese</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/philly_cheesesteak</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/pot_roast_american</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/reuben_sandwich</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/recipes/american/texas_chili_con_carne</loc><priority>0.6</priority></url>
-  <url><loc>https://gos-site.pages.dev/scientific</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances</loc><priority>0.8</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/alicina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/alil-isotiocianato</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/anetol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/antocianina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/apigenina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/betaina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/cafeina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/capsaicina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/carvacrol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/cinamaldehido</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/citral</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/cuminaldehido</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/curcumina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/dodecenal</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/eugenol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/genisteina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/gingerol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/licopeno</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/limoneno</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/linalool</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/mentol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/oleocanthal</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/piperina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/quercetina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/resveratrol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/sulforafano</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/teobromina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/timol</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/vanilina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/substances/zeaxantina</loc><priority>0.7</priority></url>
-  <url><loc>https://gos-site.pages.dev/vitamins/vitamina-c</loc><priority>0.5</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gos-site.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/D50</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/D50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/D50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/D50" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E03</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E03" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E03" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E03" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E05</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E05" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E05" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E05" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E11</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E11" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E11" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E11" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E13</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E13" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E13" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E40</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E40" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E40" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E40" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E50</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E50" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E51</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E51" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E51" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E51" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E53</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E53" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E53" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E53" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E55</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E55" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E55" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E55" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E66</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E66" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E66" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E66" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/E78</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/E78" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/E78" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/E78" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/F32</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/F32" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/F32" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/F32" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/F41</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/F41" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/F41" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/F41" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/G43</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/G43" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/G43" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/G43" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/G47</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/G47" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/G47" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/G47" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I10</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I10" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I10" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I25</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I25" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I25" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I25" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I48</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I48" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I48" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I48" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I50</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I50" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I70</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I70" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I70" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I70" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/I73</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/I73" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/I73" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/I73" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/J44</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/J44" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/J44" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/J44" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/J45</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/J45" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/J45" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/J45" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/K21</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/K21" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/K21" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/K21" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/K25</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/K25" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/K25" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/K25" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/K50</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/K50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/K50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/K50" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/K51</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/K51" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/K51" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/K51" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/L40</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/L40" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/L40" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/L40" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/M05</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/M05" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/M05" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/M05" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/M32</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/M32" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/M32" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/M32" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/M79</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/M79" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/M79" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/M79" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/M81</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/M81" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/M81" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/M81" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/N18</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/N18" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/N18" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/N18" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/conditions/R10</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/conditions/R10" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/conditions/R10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/conditions/R10" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/diets/dash</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/diets/dash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/diets/dash" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/diets/dash" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/diets/low-carb-keto</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/diets/low-carb-keto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/diets/low-carb-keto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/diets/low-carb-keto" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/diets/low-fodmap</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/diets/low-fodmap" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/diets/low-fodmap" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/diets/low-fodmap" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/diets/mediterranean</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/diets/mediterranean" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/diets/mediterranean" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/diets/mediterranean" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/diets/vegan</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/diets/vegan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/diets/vegan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/diets/vegan" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/graph</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/graph" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/graph" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/graph" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/graph-data.json</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/graph-data.json" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/graph-data.json" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/graph-data.json" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/ajo</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/ajo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/ajo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/ajo" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/cilantro</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/cilantro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/cilantro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/cilantro" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/comino</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/comino" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/comino" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/comino" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/jengibre</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/jengibre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/jengibre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/jengibre" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/panela</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/panela" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/panela" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/panela" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/condiments/sal</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/condiments/sal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/condiments/sal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/condiments/sal" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/dairy/crema_leche</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/dairy/crema_leche" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/dairy/crema_leche" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/dairy/crema_leche" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/dairy/leche</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/dairy/leche" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/dairy/leche" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/dairy/leche" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/dairy/mantequilla</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/dairy/mantequilla" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/dairy/mantequilla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/dairy/mantequilla" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/dairy/queso</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/dairy/queso" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/dairy/queso" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/dairy/queso" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/fruits/aguacate</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/fruits/aguacate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/fruits/aguacate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/fruits/aguacate" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/fruits/limon</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/fruits/limon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/fruits/limon" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/fruits/limon" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/grains/almidon_yuca</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/grains/almidon_yuca" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/grains/almidon_yuca" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/grains/almidon_yuca" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/grains/arroz</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/grains/arroz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/grains/arroz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/grains/arroz" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/grains/harina_trigo</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/grains/harina_trigo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/grains/harina_trigo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/grains/harina_trigo" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/grains/maiz</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/grains/maiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/grains/maiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/grains/maiz" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/legumes/frijol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/legumes/frijol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/legumes/frijol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/legumes/frijol" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/legumes/lentejas</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/legumes/lentejas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/legumes/lentejas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/legumes/lentejas" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/oils/aceite</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/oils/aceite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/oils/aceite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/oils/aceite" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/ingredients/oils/aceite_ajonjoli</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/ingredients/oils/aceite_ajonjoli" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/ingredients/oils/aceite_ajonjoli" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/ingredients/oils/aceite_ajonjoli" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/apple_pie_traditional</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/apple_pie_traditional" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/apple_pie_traditional" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/apple_pie_traditional" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/bbq_pork_ribs</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/bbq_pork_ribs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/bbq_pork_ribs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/bbq_pork_ribs" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/clam_chowder_boston</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/clam_chowder_boston" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/clam_chowder_boston" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/clam_chowder_boston" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/classic_cheeseburger</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/classic_cheeseburger" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/classic_cheeseburger" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/classic_cheeseburger" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/cornbread_southern</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/cornbread_southern" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/cornbread_southern" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/cornbread_southern" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/eggs_benedict</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/eggs_benedict" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/eggs_benedict" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/eggs_benedict" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/fried_chicken_southern</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/fried_chicken_southern" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/fried_chicken_southern" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/fried_chicken_southern" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/gumbo_louisiana</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/gumbo_louisiana" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/gumbo_louisiana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/gumbo_louisiana" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/jambalaya_cajun</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/jambalaya_cajun" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/jambalaya_cajun" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/jambalaya_cajun" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/key_lime_pie</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/key_lime_pie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/key_lime_pie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/key_lime_pie" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/macaroni_and_cheese</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/macaroni_and_cheese" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/macaroni_and_cheese" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/macaroni_and_cheese" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/philly_cheesesteak</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/philly_cheesesteak" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/philly_cheesesteak" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/philly_cheesesteak" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/pot_roast_american</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/pot_roast_american" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/pot_roast_american" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/pot_roast_american" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/reuben_sandwich</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/reuben_sandwich" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/reuben_sandwich" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/reuben_sandwich" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/recipes/american/texas_chili_con_carne</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/recipes/american/texas_chili_con_carne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/recipes/american/texas_chili_con_carne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/recipes/american/texas_chili_con_carne" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/scientific</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/scientific" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/scientific" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/scientific" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/alicina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/alicina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/alicina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/alicina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/alil-isotiocianato</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/alil-isotiocianato" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/alil-isotiocianato" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/alil-isotiocianato" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/anetol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/anetol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/anetol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/anetol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/antocianina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/antocianina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/antocianina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/antocianina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/apigenina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/apigenina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/apigenina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/apigenina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/betaina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/betaina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/betaina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/betaina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/cafeina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/cafeina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/cafeina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/cafeina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/capsaicina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/capsaicina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/capsaicina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/capsaicina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/carvacrol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/carvacrol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/carvacrol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/carvacrol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/cinamaldehido</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/cinamaldehido" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/cinamaldehido" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/cinamaldehido" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/citral</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/citral" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/citral" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/citral" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/cuminaldehido</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/cuminaldehido" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/cuminaldehido" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/cuminaldehido" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/curcumina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/curcumina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/curcumina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/curcumina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/dodecenal</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/dodecenal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/dodecenal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/dodecenal" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/eugenol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/eugenol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/eugenol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/eugenol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/genisteina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/genisteina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/genisteina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/genisteina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/gingerol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/gingerol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/gingerol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/gingerol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/licopeno</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/licopeno" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/licopeno" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/licopeno" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/limoneno</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/limoneno" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/limoneno" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/limoneno" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/linalool</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/linalool" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/linalool" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/linalool" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/mentol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/mentol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/mentol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/mentol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/oleocanthal</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/oleocanthal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/oleocanthal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/oleocanthal" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/piperina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/piperina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/piperina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/piperina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/quercetina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/quercetina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/quercetina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/quercetina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/resveratrol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/resveratrol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/resveratrol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/resveratrol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/sulforafano</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/sulforafano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/sulforafano" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/sulforafano" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/teobromina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/teobromina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/teobromina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/teobromina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/timol</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/timol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/timol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/timol" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/vanilina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/vanilina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/vanilina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/vanilina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/substances/zeaxantina</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/substances/zeaxantina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/substances/zeaxantina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/substances/zeaxantina" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/a-a</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/a-a" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/a-a" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/a-a" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b1-b1</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b1-b1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b1-b1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b1-b1" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b10-b10</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b10-b10" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b10-b10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b10-b10" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b12-b12</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b12-b12" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b12-b12" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b12-b12" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b13-b13</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b13-b13" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b13-b13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b13-b13" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b14-b14</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b14-b14" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b14-b14" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b14-b14" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b15-b15</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b15-b15" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b15-b15" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b15-b15" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b16-b16</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b16-b16" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b16-b16" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b16-b16" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b17-b17</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b17-b17" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b17-b17" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b17-b17" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b2-b2</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b2-b2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b2-b2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b2-b2" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b3-b3</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b3-b3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b3-b3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b3-b3" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b4-b4</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b4-b4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b4-b4" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b4-b4" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b5-b5</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b5-b5" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b5-b5" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b5-b5" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b6-b6</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b6-b6" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b6-b6" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b6-b6" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b7-b7</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b7-b7" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b7-b7" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b7-b7" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b8-b8</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b8-b8" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b8-b8" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b8-b8" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/b9-b9</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/b9-b9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/b9-b9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/b9-b9" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/bx-bx</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/bx-bx" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/bx-bx" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/bx-bx" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/c-c</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/c-c" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/c-c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/c-c" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/d-d</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/d-d" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/d-d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/d-d" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/d3-d3</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/d3-d3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/d3-d3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/d3-d3" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/e-e</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/e-e" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/e-e" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/e-e" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/f-f</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/f-f" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/f-f" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/f-f" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/g-g</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/g-g" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/g-g" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/g-g" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k1-k1</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k1-k1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k1-k1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k1-k1" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k2-k2</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k2-k2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k2-k2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k2-k2" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k3-k3</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k3-k3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k3-k3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k3-k3" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k4-k4</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k4-k4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k4-k4" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k4-k4" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k5-k5</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k5-k5" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k5-k5" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k5-k5" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k6-k6</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k6-k6" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k6-k6" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k6-k6" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/k7-k7</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/k7-k7" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/k7-k7" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/k7-k7" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/l-l</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/l-l" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/l-l" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/l-l" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/n-n</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/n-n" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/n-n" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/n-n" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/om3-om3</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/om3-om3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/om3-om3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/om3-om3" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/p-p</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/p-p" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/p-p" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/p-p" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/q-q</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/q-q" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/q-q" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/q-q" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/s-s</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/s-s" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/s-s" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/s-s" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/t-t</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/t-t" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/t-t" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/t-t" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/u-u</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/u-u" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/u-u" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/u-u" />
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gos-site.pages.dev/vitamins/vitamina-c</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gos-site.pages.dev/vitamins/vitamina-c" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gos-site.pages.dev/vitamins/vitamina-c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gos-site.pages.dev/vitamins/vitamina-c" />
+    <priority>0.5</priority>
+  </url>
 </urlset>

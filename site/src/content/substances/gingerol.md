@@ -1,34 +1,48 @@
 ---
-name: "Gingerol"
-formula: "C17H26O4"
+aliases:
+  en:
+  - gingerol
+benefit: Antiemético, antiinflamatorio, digestivo
+compuestos:
+- 6-Shogaol
+- Zingerone
+- Paradol
 discovery_year: 1879
-source_ingredient: "jengibre (Zingiber officinale)"
-benefit: "Antiemético, antiinflamatorio, digestivo"
-sazon: "Picante cítrico, base salteados y tés"
-sabor: "Pungente fresco cítrico, se convierte en shogaol picante al secar/calentar"
-textura: "Oleoresina viscosa, soluble en alcohol y aceite, cristal estable"
-vitaminas: ["Vitamin B6", "Vitamin C", "Magnesium"]
-compuestos: ["6-Shogaol", "Zingerone", "Paradol"]
-sources: ["PubMed", "NIH"]
-tags: ["antiemetico", "antiinflamatorio", "digestivo"]
-image_attribution: "Pixabay — Zingiber officinale"
+formula: C17H26O4
 health_registry:
-  - condition: "Nausea / Motion sickness"
-    mechanism: "5-HT3 receptor antagonism in gut"
-    evidence_level: "High"
-    studies:
-      - title: "Efficacy of ginger for nausea and vomiting: systematic review"
-        source: "British Journal of Anaesthesia"
-        year: 2000
-        doi: "10.1093/bja/84.3.367"
-  - condition: "Inflammation"
-    mechanism: "COX-2 inhibition similar to NSAIDs"
-    evidence_level: "Medium"
-    studies:
-      - title: "Gingerol and shogaol anti-inflammatory mechanisms"
-        source: "Int J Food Sci Nutr"
-        year: 2016
-        doi: "10.1080/09637486.2016.1244665"
+- condition: Nausea / Motion sickness
+  evidence_level: High
+  mechanism: 5-HT3 receptor antagonism in gut
+  studies:
+  - doi: 10.1093/bja/84.3.367
+    source: British Journal of Anaesthesia
+    title: 'Efficacy of ginger for nausea and vomiting: systematic review'
+    year: 2000
+- condition: Inflammation
+  evidence_level: Medium
+  mechanism: COX-2 inhibition similar to NSAIDs
+  studies:
+  - doi: 10.1080/09637486.2016.1244665
+    source: Int J Food Sci Nutr
+    title: Gingerol and shogaol anti-inflammatory mechanisms
+    year: 2016
+image_attribution: Pixabay — Zingiber officinale
+name: Gingerol
+sabor: Pungente fresco cítrico, se convierte en shogaol picante al secar/calentar
+sazon: Picante cítrico, base salteados y tés
+source_ingredient: jengibre (Zingiber officinale)
+sources:
+- PubMed
+- NIH
+tags:
+- antiemetico
+- antiinflamatorio
+- digestivo
+textura: Oleoresina viscosa, soluble en alcohol y aceite, cristal estable
+vitaminas:
+- Vitamin B6
+- Vitamin C
+- Magnesium
 ---
 
 ![Gingerol](/images/substances/gingerol.jpg)

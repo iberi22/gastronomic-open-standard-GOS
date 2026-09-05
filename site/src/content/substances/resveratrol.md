@@ -1,26 +1,40 @@
 ---
-name: "Resveratrol"
-formula: "C14H12O3"
+aliases:
+  en:
+  - resveratrol
+benefit: Antioxidante, cardioprotector, mimético restricción calórica
+compuestos:
+- Pterostilbene
+- Piceid
+- Quercetin
 discovery_year: 1939
-source_ingredient: "uva (Vitis vinifera)"
-benefit: "Antioxidante, cardioprotector, mimético restricción calórica"
-sazon: "Vino tinto astringente, hollejo uva isabela"
-sabor: "Astringente tanino suave, trans-resveratrol activo"
-textura: "Estilbeno polifenol cristal, trans-isómero activo"
-vitaminas: ["Vitamin C", "Vitamin K", "Potassium"]
-compuestos: ["Pterostilbene", "Piceid", "Quercetin"]
-sources: ["PubMed", "NIH"]
-tags: ["vino", "cardioprotector", "longevidad"]
-image_attribution: "Pixabay — Vitis vinifera"
+formula: C14H12O3
 health_registry:
-  - condition: "Cardiovascular disease"
-    mechanism: "SIRT1 activation, endothelial NO"
-    evidence_level: "Medium"
-    studies:
-      - title: "Resveratrol and CVD: systematic review"
-        source: "Nutrients"
-        year: 2019
-        doi: "10.3390/nu11092147"
+- condition: Cardiovascular disease
+  evidence_level: Medium
+  mechanism: SIRT1 activation, endothelial NO
+  studies:
+  - doi: 10.3390/nu11092147
+    source: Nutrients
+    title: 'Resveratrol and CVD: systematic review'
+    year: 2019
+image_attribution: Pixabay — Vitis vinifera
+name: Resveratrol
+sabor: Astringente tanino suave, trans-resveratrol activo
+sazon: Vino tinto astringente, hollejo uva isabela
+source_ingredient: uva (Vitis vinifera)
+sources:
+- PubMed
+- NIH
+tags:
+- vino
+- cardioprotector
+- longevidad
+textura: Estilbeno polifenol cristal, trans-isómero activo
+vitaminas:
+- Vitamin C
+- Vitamin K
+- Potassium
 ---
 
 ![Resveratrol](/images/substances/resveratrol.jpg)

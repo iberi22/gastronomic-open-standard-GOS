@@ -1,26 +1,40 @@
 ---
-name: "Carvacrol"
-formula: "C10H14O"
+aliases:
+  en:
+  - carvacrol
+benefit: Antibiótico natural, antifúngico, antioxidante
+compuestos:
+- Thymol
+- p-Cymene
+- Rosmarinic acid
 discovery_year: 1880
-source_ingredient: "orégano (Origanum vulgare)"
-benefit: "Antibiótico natural, antifúngico, antioxidante"
-sazon: "Orégano pungente cálido, firma pizzas y adobos"
-sabor: "Picante cálido herbáceo más fuerte que timol"
-textura: "Fenol oleoso isómero timol, 60-90% aceite orégano"
-vitaminas: ["Vitamin K", "Iron", "Manganese"]
-compuestos: ["Thymol", "p-Cymene", "Rosmarinic acid"]
-sources: ["PubMed", "NIH"]
-tags: ["antibiotico", "oregano", "antifungico"]
-image_attribution: "Pixabay — Origanum vulgare"
+formula: C10H14O
 health_registry:
-  - condition: "Bacterial infection"
-    mechanism: "Membrane permeabilization, ATP depletion"
-    evidence_level: "Medium"
-    studies:
-      - title: "Carvacrol antimicrobial mechanisms"
-        source: "Front Microbiol"
-        year: 2014
-        doi: "10.3389/fmicb.2014.00136"
+- condition: Bacterial infection
+  evidence_level: Medium
+  mechanism: Membrane permeabilization, ATP depletion
+  studies:
+  - doi: 10.3389/fmicb.2014.00136
+    source: Front Microbiol
+    title: Carvacrol antimicrobial mechanisms
+    year: 2014
+image_attribution: Pixabay — Origanum vulgare
+name: Carvacrol
+sabor: Picante cálido herbáceo más fuerte que timol
+sazon: Orégano pungente cálido, firma pizzas y adobos
+source_ingredient: orégano (Origanum vulgare)
+sources:
+- PubMed
+- NIH
+tags:
+- antibiotico
+- oregano
+- antifungico
+textura: Fenol oleoso isómero timol, 60-90% aceite orégano
+vitaminas:
+- Vitamin K
+- Iron
+- Manganese
 ---
 
 ![Carvacrol](/images/substances/carvacrol.jpg)

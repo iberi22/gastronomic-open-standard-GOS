@@ -1,51 +1,59 @@
 ---
-name: "Ajo"
-scientific_name: "Allium sativum"
-group: "Condiment"
-portions:
-  default_g: 3 # approx 1 clove
-nutrition_per_100g:
-  calories: 149
-  protein_g: 6.4
-  fat_g: 0.5
-  carbs_g: 33
-  fiber_g: 2.1
-  sugar_g: 1
+active_compounds:
+- benefit: Potent antimicrobial, lowers blood pressure, anti-inflammatory.
+  name: Allicin
+  scientific_ref: NIH - Garlic (Allium sativum L.)
+aliases:
+  en:
+  - garlic
+  - allium
+group: Condiment
+health_registry:
+- compounds:
+  - Allicin
+  - S-allylcysteine
+  condition: Hypertension
+  evidence_level: High
+  mechanism: Promotes nitric oxide synthesis leading to vasodilation.
+  studies:
+  - doi: 10.1186/1471-2261-8-13
+    source: BMC Cardiovascular Disorders
+    title: 'Garlic for hypertension: A systematic review and meta-analysis'
+    year: 2008
+- compounds:
+  - Ajoene
+  - Allicin
+  condition: Hyperlipidemia
+  evidence_level: Medium
+  mechanism: Inhibits cholesterol synthesis (HMG-CoA reductase inhibitor behavior).
+  studies:
+  - link: https://pubmed.ncbi.nlm.nih.gov/8374089/
+    source: J. R. Coll. Physicians
+    title: 'Garlic and serum lipids: A meta-analysis'
+    year: 1993
 micronutrients:
   manganese_mg: 1.67
+  selenium_ug: 14.2
   vitamin_b6_mg: 1.2
   vitamin_c_mg: 31
-  selenium_ug: 14.2
-active_compounds:
-  - name: "Allicin"
-    benefit: "Potent antimicrobial, lowers blood pressure, anti-inflammatory."
-    scientific_ref: "NIH - Garlic (Allium sativum L.)"
-health_registry:
-  - condition: "Hypertension"
-    mechanism: "Promotes nitric oxide synthesis leading to vasodilation."
-    compounds: ["Allicin", "S-allylcysteine"]
-    evidence_level: "High"
-    studies:
-      - title: "Garlic for hypertension: A systematic review and meta-analysis"
-        source: "BMC Cardiovascular Disorders"
-        year: 2008
-        doi: "10.1186/1471-2261-8-13"
-  - condition: "Hyperlipidemia"
-    mechanism: "Inhibits cholesterol synthesis (HMG-CoA reductase inhibitor behavior)."
-    compounds: ["Ajoene", "Allicin"]
-    evidence_level: "Medium"
-    studies:
-      - title: "Garlic and serum lipids: A meta-analysis"
-        source: "J. R. Coll. Physicians"
-        year: 1993
-        link: "https://pubmed.ncbi.nlm.nih.gov/8374089/"
+name: Ajo
+nutrition_per_100g:
+  calories: 149
+  carbs_g: 33
+  fat_g: 0.5
+  fiber_g: 2.1
+  protein_g: 6.4
+  sugar_g: 1
+portions:
+  default_g: 3
+scientific_name: Allium sativum
 sources:
-  - "USDA FoodData Central"
-  - "NIH National Center for Complementary and Integrative Health"
+- USDA FoodData Central
+- NIH National Center for Complementary and Integrative Health
 tags:
-  - esencial
-  - condimento
-  - medicinal
+- esencial
+- condimento
+- medicinal
 ---
 
 # Scientific Analysis & Culinary Use

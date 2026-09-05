@@ -1,26 +1,40 @@
 ---
-name: "Vanilina"
-formula: "C8H8O3"
+aliases:
+  en:
+  - vanillin
+benefit: Aroma, ansiolítico suave, antioxidante
+compuestos:
+- Vanillic acid
+- Vanillyl alcohol
+- Ethylvanillin
 discovery_year: 1858
-source_ingredient: "vainilla (Vanilla planifolia)"
-benefit: "Aroma, ansiolítico suave, antioxidante"
-sazon: "Vainilla dulce balsámica, base postres y arequipe"
-sabor: "Dulce balsámica cremosa, 2% vainilla curada"
-textura: "Aldehído fenólico cristal, vanillina 2% peso seco"
-vitaminas: ["Manganese", "Magnesium", "Potassium"]
-compuestos: ["Vanillic acid", "Vanillyl alcohol", "Ethylvanillin"]
-sources: ["PubMed", "NIH"]
-tags: ["vainilla", "dulce", "aroma"]
-image_attribution: "Pixabay — Vanilla planifolia"
+formula: C8H8O3
 health_registry:
-  - condition: "Anxiety / Appetite"
-    mechanism: "Olfactory GABA potentiation"
-    evidence_level: "Low"
-    studies:
-      - title: "Vanillin aroma and mood: pilot"
-        source: "Appetite"
-        year: 2014
-        doi: "10.1016/j.appet.2014.03.010"
+- condition: Anxiety / Appetite
+  evidence_level: Low
+  mechanism: Olfactory GABA potentiation
+  studies:
+  - doi: 10.1016/j.appet.2014.03.010
+    source: Appetite
+    title: 'Vanillin aroma and mood: pilot'
+    year: 2014
+image_attribution: Pixabay — Vanilla planifolia
+name: Vanilina
+sabor: Dulce balsámica cremosa, 2% vainilla curada
+sazon: Vainilla dulce balsámica, base postres y arequipe
+source_ingredient: vainilla (Vanilla planifolia)
+sources:
+- PubMed
+- NIH
+tags:
+- vainilla
+- dulce
+- aroma
+textura: Aldehído fenólico cristal, vanillina 2% peso seco
+vitaminas:
+- Manganese
+- Magnesium
+- Potassium
 ---
 
 ![Vanilina](/images/substances/vanilina.jpg)

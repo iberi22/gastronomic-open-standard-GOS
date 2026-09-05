@@ -1,34 +1,49 @@
 ---
-name: "Quercetina"
-formula: "C15H10O7"
+aliases:
+  en:
+  - quercetin
+benefit: Antioxidante, antihistamínico, cardioprotector
+compuestos:
+- Rutin
+- Isoquercitrin
+- Kaempferol
 discovery_year: 1854
-source_ingredient: "cebolla (Allium cepa)"
-benefit: "Antioxidante, antihistamínico, cardioprotector"
-sazon: "Flavonol amargo, piel cebolla, base guisos caramelizados"
-sabor: "Amargo astringente suave, se concentra al caramelizar"
-textura: "Cristal amarillo lipofílico, glicosido (quercetina-3-glucósido) soluble en agua caliente"
-vitaminas: ["Vitamin C", "Vitamin B6", "Manganese"]
-compuestos: ["Rutin", "Isoquercitrin", "Kaempferol"]
-sources: ["PubMed", "NIH"]
-tags: ["flavonoide", "antioxidante", "antihistaminico"]
-image_attribution: "Pixabay — Allium cepa"
+formula: C15H10O7
 health_registry:
-  - condition: "Allergy / Histamine"
-    mechanism: "Mast cell stabilizer, inhibits histamine release"
-    evidence_level: "Medium"
-    studies:
-      - title: "Quercetin and allergic diseases"
-        source: "Molecules"
-        year: 2016
-        doi: "10.3390/molecules21050623"
-  - condition: "Hypertension"
-    mechanism: "Endothelium-dependent vasodilation"
-    evidence_level: "Medium"
-    studies:
-      - title: "Quercetin and blood pressure: meta-analysis"
-        source: "J Am Heart Assoc"
-        year: 2016
-        doi: "10.1161/JAHA.115.002713"
+- condition: Allergy / Histamine
+  evidence_level: Medium
+  mechanism: Mast cell stabilizer, inhibits histamine release
+  studies:
+  - doi: 10.3390/molecules21050623
+    source: Molecules
+    title: Quercetin and allergic diseases
+    year: 2016
+- condition: Hypertension
+  evidence_level: Medium
+  mechanism: Endothelium-dependent vasodilation
+  studies:
+  - doi: 10.1161/JAHA.115.002713
+    source: J Am Heart Assoc
+    title: 'Quercetin and blood pressure: meta-analysis'
+    year: 2016
+image_attribution: Pixabay — Allium cepa
+name: Quercetina
+sabor: Amargo astringente suave, se concentra al caramelizar
+sazon: Flavonol amargo, piel cebolla, base guisos caramelizados
+source_ingredient: cebolla (Allium cepa)
+sources:
+- PubMed
+- NIH
+tags:
+- flavonoide
+- antioxidante
+- antihistaminico
+textura: Cristal amarillo lipofílico, glicosido (quercetina-3-glucósido) soluble en
+  agua caliente
+vitaminas:
+- Vitamin C
+- Vitamin B6
+- Manganese
 ---
 
 ![Quercetina](/images/substances/quercetina.jpg)

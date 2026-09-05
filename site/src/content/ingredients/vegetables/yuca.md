@@ -1,38 +1,43 @@
 ---
-name: "Yuca (Mandioca)"
-scientific_name: "Manihot esculenta"
-group: "Vegetable"
-portions:
-  default_g: 150 # Portion
+active_compounds:
+- benefit: Potential cholesterol lowering effect.
+  name: Saponins
+  scientific_ref: PubMed
+aliases:
+  en:
+  - cassava
+  - yuca
+group: Vegetable
+health_registry:
+- compounds:
+  - Gluten-free Starch
+  condition: Gluten Sensitivity (Celiac)
+  evidence_level: High
+  mechanism: Naturally gluten-free carbohydrate source.
+  studies:
+  - source: Food Reviews International
+    title: Cassava as a gluten-free substitute
+micronutrients:
+  folate_ug: 27
+  potassium_mg: 271
+  vitamin_c_mg: 20.6
+name: Yuca (Mandioca)
 nutrition_per_100g:
   calories: 160
-  protein_g: 1.4
-  fat_g: 0.3
   carbs_g: 38
+  fat_g: 0.3
   fiber_g: 1.8
+  protein_g: 1.4
   sugar_g: 1.7
-micronutrients:
-  vitamin_c_mg: 20.6
-  potassium_mg: 271
-  folate_ug: 27
-active_compounds:
-  - name: "Saponins"
-    benefit: "Potential cholesterol lowering effect."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Gluten Sensitivity (Celiac)"
-    mechanism: "Naturally gluten-free carbohydrate source."
-    compounds: ["Gluten-free Starch"]
-    evidence_level: "High"
-    studies:
-      - title: "Cassava as a gluten-free substitute"
-        source: "Food Reviews International"
+portions:
+  default_g: 150
+scientific_name: Manihot esculenta
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - sancocho
-  - energia
-  - sin_gluten
+- sancocho
+- energia
+- sin_gluten
 ---
 
 # Scientific Analysis & Culinary Use

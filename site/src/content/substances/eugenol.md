@@ -1,34 +1,48 @@
 ---
-name: "Eugenol"
-formula: "C10H12O2"
+aliases:
+  en:
+  - eugenol
+benefit: Analgésico dental, antiséptico, antiinflamatorio
+compuestos:
+- Isoeugenol
+- Methyleugenol
+- Caryophyllene
 discovery_year: 1858
-source_ingredient: "clavo de olor (Syzygium aromaticum)"
-benefit: "Analgésico dental, antiséptico, antiinflamatorio"
-sazon: "Clavo especiado cálido, anestesia lingual leve, base natilla y jamón"
-sabor: "Dulce picante alcanforado, anestésico local inmediato"
-textura: "Fenilpropeno oleoso viscoso, eugenol 72-90% del aceite esencial"
-vitaminas: ["Vitamin K", "Manganese", "Iron"]
-compuestos: ["Isoeugenol", "Methyleugenol", "Caryophyllene"]
-sources: ["NIH", "PubMed"]
-tags: ["analgesico", "especiado", "antiseptico"]
-image_attribution: "Pixabay — Syzygium aromaticum"
+formula: C10H12O2
 health_registry:
-  - condition: "Dental pain"
-    mechanism: "TRPV1 blockade and local anesthetic (Na+ channel)"
-    evidence_level: "High"
-    studies:
-      - title: "Eugenol in dentistry: review"
-        source: "J Dent"
-        year: 2015
-        doi: "10.1016/j.jdent.2015.03.010"
-  - condition: "Inflammation"
-    mechanism: "COX-2 and 5-LOX inhibition"
-    evidence_level: "Medium"
-    studies:
-      - title: "Eugenol anti-inflammatory review"
-        source: "Phytother Res"
-        year: 2012
-        doi: "10.1002/ptr.3711"
+- condition: Dental pain
+  evidence_level: High
+  mechanism: TRPV1 blockade and local anesthetic (Na+ channel)
+  studies:
+  - doi: 10.1016/j.jdent.2015.03.010
+    source: J Dent
+    title: 'Eugenol in dentistry: review'
+    year: 2015
+- condition: Inflammation
+  evidence_level: Medium
+  mechanism: COX-2 and 5-LOX inhibition
+  studies:
+  - doi: 10.1002/ptr.3711
+    source: Phytother Res
+    title: Eugenol anti-inflammatory review
+    year: 2012
+image_attribution: Pixabay — Syzygium aromaticum
+name: Eugenol
+sabor: Dulce picante alcanforado, anestésico local inmediato
+sazon: Clavo especiado cálido, anestesia lingual leve, base natilla y jamón
+source_ingredient: clavo de olor (Syzygium aromaticum)
+sources:
+- NIH
+- PubMed
+tags:
+- analgesico
+- especiado
+- antiseptico
+textura: Fenilpropeno oleoso viscoso, eugenol 72-90% del aceite esencial
+vitaminas:
+- Vitamin K
+- Manganese
+- Iron
 ---
 
 ![Eugenol](/images/substances/eugenol.jpg)

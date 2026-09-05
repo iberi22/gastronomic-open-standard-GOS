@@ -1,63 +1,63 @@
 ---
-title: Arepa de Huevo
-region: Caribe
+aliases:
+  en:
+  - Arepa with Egg
+  - Egg Arepa
+categories:
+- Fritura
+- Desayuno
+- Callejera
+cook_time: '15'
+description: La ingeniería hecha arepa. El único plato del mundo donde se introduce
+  un huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito depende
+  de la termodinámica del vapor para crear la cavidad interna ('la cama del huevo').
+difficulty: ★★★★☆
+images:
+- description: Arepa de huevo inflada y dorada (Luruaco style)
+  url: https://im.ge/i/arepa-huevo-1.AbC456
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Fritura
-  - Desayuno
-  - Callejera
-difficulty: ★★★★☆
-prep_time: '30'
-cook_time: '15'
-servings: 10
-tags:
-  - Luruaco
-  - Fritanga
-  - Desayuno
 main_ingredients:
-  - Maíz Amarillo (Masa)
-  - Huevo (AAA)
-  - Carne molida (opcional)
-  - Aceite vegetal (fritura profunda)
-  - Sal
-sensory:
-  flavor:
-    - Maíz tostado
-    - Graso (yema)
-    - Salado
-    - Ácido (si hay suero)
-  texture:
-    - Crocante (Corteza)
-    - Vaporoso (Interior)
-    - Cremoso (Huevo)
-  aroma:
-    - Maíz frito
-    - Aceite caliente
-    - Huevo cocido
-  presentation: >-
-    Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible
-    pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño
-    aparte.
+- Maíz Amarillo (Masa)
+- Huevo (AAA)
+- Carne molida (opcional)
+- Aceite vegetal (fritura profunda)
+- Sal
 nutrition:
   calories: 350
   macros:
-    protein_g: 12
-    fat_g: 18
     carbs_g: 35
-images:
-  - url: 'https://im.ge/i/arepa-huevo-1.AbC456'
-    description: Arepa de huevo inflada y dorada (Luruaco style)
-description: >-
-  La ingeniería hecha arepa. El único plato del mundo donde se introduce un
-  huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito
-  depende de la termodinámica del vapor para crear la cavidad interna ('la cama
-  del huevo').
+    fat_g: 18
+    protein_g: 12
+prep_time: '30'
+region: Caribe
+sensory:
+  aroma:
+  - Maíz frito
+  - Aceite caliente
+  - Huevo cocido
+  flavor:
+  - Maíz tostado
+  - Graso (yema)
+  - Salado
+  - Ácido (si hay suero)
+  presentation: Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible
+    pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño aparte.
+  texture:
+  - Crocante (Corteza)
+  - Vaporoso (Interior)
+  - Cremoso (Huevo)
+servings: 10
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Luruaco
+- Fritanga
+- Desayuno
+title: Arepa de Huevo
 ---
 
 ## Arepa de Huevo

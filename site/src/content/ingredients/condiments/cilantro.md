@@ -1,44 +1,51 @@
 ---
-name: "Cilantro"
-scientific_name: "Coriandrum sativum"
-group: "Condiment"
-portions:
-  default_g: 15 # Chopped generous garnish
-nutrition_per_100g:
-  calories: 23
-  protein_g: 2.1
-  fat_g: 0.5
-  carbs_g: 3.7
-  fiber_g: 2.8
-  sugar_g: 0.8
+active_compounds:
+- benefit: Antibacterial compound specifically effective against Salmonella.
+  name: Dodecenal
+  scientific_ref: PubMed
+aliases:
+  en:
+  - coriander
+  - cilantro
+group: Condiment
+health_registry:
+- compounds:
+  - Polyphenols
+  - Chelators
+  condition: Heavy Metal Detoxification
+  evidence_level: Medium
+  mechanism: Chelating agents in cilantro bind to lead and mercury facilitating excretion.
+  studies:
+  - source: Biological Trace Element Research
+    title: Preventive effect of Coriandrum sativum on lead deposition
+    year: 2001
+- compounds:
+  - Vitamin K
+  condition: Bone Health
+  evidence_level: High
+  mechanism: Extremely high Vitamin K supports osteocalcin carboxylation.
 micronutrients:
-  vitamin_k_ug: 310
+  manganese_mg: 0.4
   vitamin_a_iu: 6748
   vitamin_c_mg: 27
-  manganese_mg: 0.4
-active_compounds:
-  - name: "Dodecenal"
-    benefit: "Antibacterial compound specifically effective against Salmonella."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Heavy Metal Detoxification"
-    mechanism: "Chelating agents in cilantro bind to lead and mercury facilitating excretion."
-    compounds: ["Polyphenols", "Chelators"]
-    evidence_level: "Medium"
-    studies:
-      - title: "Preventive effect of Coriandrum sativum on lead deposition"
-        source: "Biological Trace Element Research"
-        year: 2001
-  - condition: "Bone Health"
-    mechanism: "Extremely high Vitamin K supports osteocalcin carboxylation."
-    compounds: ["Vitamin K"]
-    evidence_level: "High"
+  vitamin_k_ug: 310
+name: Cilantro
+nutrition_per_100g:
+  calories: 23
+  carbs_g: 3.7
+  fat_g: 0.5
+  fiber_g: 2.8
+  protein_g: 2.1
+  sugar_g: 0.8
+portions:
+  default_g: 15
+scientific_name: Coriandrum sativum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - finalizador
-  - sopa
-  - detox
+- finalizador
+- sopa
+- detox
 ---
 
 # Scientific Analysis & Culinary Use

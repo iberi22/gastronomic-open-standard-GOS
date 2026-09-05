@@ -1,4 +1,4 @@
-// generate-sitemap.js — generates site/public/sitemap.xml with >50 URLs (recipes/ingredients/substances)
+// generate-sitemap.js — generates site/public/sitemap.xml with >50 URLs (recipes/ingredients/substances) with hreflang tags
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -93,11 +93,21 @@ if (urls.length < 50) {
 urls.sort((a, b) => a.loc.localeCompare(b.loc))
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${u.loc}</loc><priority>${u.priority}</priority></url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls
+  .map(
+    (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="${u.loc}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${u.loc}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${u.loc}" />
+    <priority>${u.priority}</priority>
+  </url>`,
+  )
+  .join('\n')}
 </urlset>
 `
 
 fs.mkdirSync(publicDir, { recursive: true })
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml, 'utf8')
-console.log(`sitemap.xml generated with ${urls.length} URLs`)
+console.log(`sitemap.xml generated with ${urls.length} URLs (hreflang enabled)`)

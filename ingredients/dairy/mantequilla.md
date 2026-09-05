@@ -1,26 +1,29 @@
 ---
-name: "Mantequilla (Sin Sal)"
-scientific_name: "Bos taurus"
-group: "Dairy"
-portions:
-  default_g: 14 # 1 tbsp
-nutrition_per_100g:
-  calories: 717
-  protein_g: 0.9
-  fat_g: 81
-  carbs_g: 0.1
-  fiber_g: 0
+active_compounds:
+- benefit: Short-chain fatty acid, gut health.
+  name: Butyrate
+  scientific_ref: PubMed
+aliases:
+  en:
+  - butter
+group: Dairy
 micronutrients:
   vitamin_a_iu: 2499
-active_compounds:
-  - name: "Butyrate"
-    benefit: "Short-chain fatty acid, gut health."
-    scientific_ref: "PubMed"
+name: Mantequilla (Sin Sal)
+nutrition_per_100g:
+  calories: 717
+  carbs_g: 0.1
+  fat_g: 81
+  fiber_g: 0
+  protein_g: 0.9
+portions:
+  default_g: 14
+scientific_name: Bos taurus
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - grasa
-  - reposteria
+- grasa
+- reposteria
 ---
 
 # Scientific Analysis & Culinary Use

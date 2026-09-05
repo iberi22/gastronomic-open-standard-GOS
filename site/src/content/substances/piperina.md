@@ -1,34 +1,48 @@
 ---
-name: "Piperina"
-formula: "C17H19NO3"
+aliases:
+  en:
+  - piperine
+benefit: Bio potenciador, digestivo, termogénico
+compuestos:
+- Chavicine
+- Piperyline
+- Piperettine
 discovery_year: 1819
-source_ingredient: "pimienta negra (Piper nigrum)"
-benefit: "Bio potenciador, digestivo, termogénico"
-sazon: "Pungencia que pica lengua y nariz, base adobos universales"
-sabor: "Picante agudo aromático, activa TRPV1 y TRPA1 simultáneamente"
-textura: "Cristal alcaloide amarillento, lipofílico, estable al calor seco"
-vitaminas: ["Vitamin K", "Manganese", "Iron"]
-compuestos: ["Chavicine", "Piperyline", "Piperettine"]
-sources: ["PubMed", "NIH"]
-tags: ["potenciador", "picante", "digestivo"]
-image_attribution: "Pixabay — Piper nigrum"
+formula: C17H19NO3
 health_registry:
-  - condition: "Nutrient malabsorption"
-    mechanism: "Inhibits drug-metabolizing enzymes (CYP3A4) and P-gp, increases bioavailability"
-    evidence_level: "High"
-    studies:
-      - title: "Piperine: bioenhancer for drug and nutrient absorption"
-        source: "J Ayurveda Integr Med"
-        year: 2013
-        doi: "10.4103/0975-9476.113033"
-  - condition: "Inflammation"
-    mechanism: "NF-kB suppression, antioxidant"
-    evidence_level: "Medium"
-    studies:
-      - title: "Piperine anti-inflammatory review"
-        source: "Inflammation Res"
-        year: 2015
-        doi: "10.1007/s00011-015-0824-3"
+- condition: Nutrient malabsorption
+  evidence_level: High
+  mechanism: Inhibits drug-metabolizing enzymes (CYP3A4) and P-gp, increases bioavailability
+  studies:
+  - doi: 10.4103/0975-9476.113033
+    source: J Ayurveda Integr Med
+    title: 'Piperine: bioenhancer for drug and nutrient absorption'
+    year: 2013
+- condition: Inflammation
+  evidence_level: Medium
+  mechanism: NF-kB suppression, antioxidant
+  studies:
+  - doi: 10.1007/s00011-015-0824-3
+    source: Inflammation Res
+    title: Piperine anti-inflammatory review
+    year: 2015
+image_attribution: Pixabay — Piper nigrum
+name: Piperina
+sabor: Picante agudo aromático, activa TRPV1 y TRPA1 simultáneamente
+sazon: Pungencia que pica lengua y nariz, base adobos universales
+source_ingredient: pimienta negra (Piper nigrum)
+sources:
+- PubMed
+- NIH
+tags:
+- potenciador
+- picante
+- digestivo
+textura: Cristal alcaloide amarillento, lipofílico, estable al calor seco
+vitaminas:
+- Vitamin K
+- Manganese
+- Iron
 ---
 
 ![Piperina](/images/substances/piperina.jpg)

@@ -1,66 +1,68 @@
 ---
-title: Ajiaco Santafereño
-region: Andina
+aliases:
+  en:
+  - Ajiaco
+  - Bogota Chicken Corn Soup
+categories:
+- Sopas
+- Plato Fuerte
+cook_time: 90
+description: Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside
+  en el uso de tres variedades de papa (que aportan diferentes texturas) y la hierba
+  aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de memoria,
+  lluvia y hogar.
+difficulty: ★★★☆☆
+images:
+- description: Ajiaco tradicional con sus tres papas
+  url: https://im.ge/i/ajiaco-1.XyZ123
+- description: Emplatado con aguacate y alcaparras
+  url: https://im.ge/i/ajiaco-2.AbC456
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Sopas
-  - Plato Fuerte
-difficulty: ★★★☆☆
-prep_time: 30
-cook_time: 90
-servings: 6
-tags:
-  - Bogotá
-  - Tradicional
-  - Guascas
-  - Reconfortante
 main_ingredients:
-  - Papa criolla
-  - Papa pastusa
-  - Papa sabanera
-  - Pollo
-  - Guascas
-  - Mazorca
-  - Alcaparras
-  - Crema de leche
-sensory:
-  flavor:
-    - Salado
-    - Herbal
-    - Umami
-    - Lácteo
-  texture:
-    - Cremoso
-    - Espeso
-    - Suave
-  aroma:
-    - Herbal (Guascas)
-    - Maíz dulce
-  presentation: >-
-    Cazuela de barro profunda, servida hirviendo. Acompañantes (crema,
-    alcaparras, aguacate, arroz) en platos separados o 'coquitos'.
+- Papa criolla
+- Papa pastusa
+- Papa sabanera
+- Pollo
+- Guascas
+- Mazorca
+- Alcaparras
+- Crema de leche
 nutrition:
   calories: 580
   macros:
-    protein_g: 32
-    fat_g: 22
     carbs_g: 65
-images:
-  - url: 'https://im.ge/i/ajiaco-1.XyZ123'
-    description: Ajiaco tradicional con sus tres papas
-  - url: 'https://im.ge/i/ajiaco-2.AbC456'
-    description: Emplatado con aguacate y alcaparras
-description: >-
-  Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el
-  uso de tres variedades de papa (que aportan diferentes texturas) y la hierba
-  aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de
-  memoria, lluvia y hogar.
+    fat_g: 22
+    protein_g: 32
+prep_time: 30
+region: Andina
+sensory:
+  aroma:
+  - Herbal (Guascas)
+  - Maíz dulce
+  flavor:
+  - Salado
+  - Herbal
+  - Umami
+  - Lácteo
+  presentation: Cazuela de barro profunda, servida hirviendo. Acompañantes (crema,
+    alcaparras, aguacate, arroz) en platos separados o 'coquitos'.
+  texture:
+  - Cremoso
+  - Espeso
+  - Suave
+servings: 6
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Bogotá
+- Tradicional
+- Guascas
+- Reconfortante
+title: Ajiaco Santafereño
 ---
 
 ## Ajiaco Santafereño

@@ -1,27 +1,31 @@
 ---
-name: "Cebolla Larga (Junca)"
-scientific_name: "Allium fistulosum"
-group: "Vegetable"
-portions:
-  default_g: 50 # Bunch
+active_compounds:
+- benefit: Antioxidant flavonoid.
+  name: Kaempferol
+  scientific_ref: PubMed
+aliases:
+  en:
+  - scallion
+  - green onion
+group: Vegetable
+micronutrients:
+  vitamin_c_mg: 18.8
+  vitamin_k_ug: 207
+name: Cebolla Larga (Junca)
 nutrition_per_100g:
   calories: 32
-  protein_g: 1.8
-  fat_g: 0.2
   carbs_g: 7.3
+  fat_g: 0.2
   fiber_g: 2.6
-micronutrients:
-  vitamin_k_ug: 207
-  vitamin_c_mg: 18.8
-active_compounds:
-  - name: "Kaempferol"
-    benefit: "Antioxidant flavonoid."
-    scientific_ref: "PubMed"
+  protein_g: 1.8
+portions:
+  default_g: 50
+scientific_name: Allium fistulosum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - guiso
-  - sopa
+- guiso
+- sopa
 ---
 
 # Scientific Analysis & Culinary Use

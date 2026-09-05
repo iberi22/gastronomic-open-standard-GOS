@@ -1,26 +1,40 @@
 ---
-name: "Timol"
-formula: "C10H14O"
+aliases:
+  en:
+  - thymol
+benefit: Antiséptico, expectorante, antioxidante
+compuestos:
+- Carvacrol
+- p-Cymene
+- Gamma-terpinene
 discovery_year: 1853
-source_ingredient: "tomillo (Thymus vulgaris)"
-benefit: "Antiséptico, expectorante, antioxidante"
-sazon: "Herbal cálido medicinal, base enjuagues"
-sabor: "Picante herbáceo alcanforado, fuerte aroma timol"
-textura: "Fenol cristalino, isómero carvacrol, soluble alcohol"
-vitaminas: ["Vitamin K", "Iron", "Manganese"]
-compuestos: ["Carvacrol", "p-Cymene", "Gamma-terpinene"]
-sources: ["PubMed", "NIH"]
-tags: ["antiseptico", "herbal", "expectorante"]
-image_attribution: "Pixabay — Thymus vulgaris"
+formula: C10H14O
 health_registry:
-  - condition: "Respiratory infection"
-    mechanism: "Antiseptic via membrane disruption"
-    evidence_level: "Medium"
-    studies:
-      - title: "Thymol antimicrobial review"
-        source: "J Appl Microbiol"
-        year: 2012
-        doi: "10.1111/j.1365-2672.2012.05270.x"
+- condition: Respiratory infection
+  evidence_level: Medium
+  mechanism: Antiseptic via membrane disruption
+  studies:
+  - doi: 10.1111/j.1365-2672.2012.05270.x
+    source: J Appl Microbiol
+    title: Thymol antimicrobial review
+    year: 2012
+image_attribution: Pixabay — Thymus vulgaris
+name: Timol
+sabor: Picante herbáceo alcanforado, fuerte aroma timol
+sazon: Herbal cálido medicinal, base enjuagues
+source_ingredient: tomillo (Thymus vulgaris)
+sources:
+- PubMed
+- NIH
+tags:
+- antiseptico
+- herbal
+- expectorante
+textura: Fenol cristalino, isómero carvacrol, soluble alcohol
+vitaminas:
+- Vitamin K
+- Iron
+- Manganese
 ---
 
 ![Timol](/images/substances/timol.jpg)

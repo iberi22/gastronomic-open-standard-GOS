@@ -1,56 +1,67 @@
 ---
-name: "Aguacate (Hass/Papelillo)"
-scientific_name: "Persea americana"
-group: "Fruit"
-image: "../../images/aguacate.jpg"
-portions:
-  default_g: 100 # Half medium avocado
-nutrition_per_100g:
-  calories: 160
-  protein_g: 2
-  fat_g: 15
-  carbs_g: 9
-  fiber_g: 7
-  sugar_g: 0.7
+active_compounds:
+- benefit: Monounsaturated fatty acid, anti-inflammatory.
+  name: Oleic Acid
+  scientific_ref: NIH
+- benefit: Plant sterol that helps maintain healthy cholesterol levels.
+  name: Beta-sitosterol
+  scientific_ref: PubMed
+aliases:
+  en:
+  - avocado
+group: Fruit
+health_registry:
+- compounds:
+  - Oleic Acid
+  - Beta-sitosterol
+  condition: Hypercholesterolemia / Cardiovascular Disease
+  evidence_level: High
+  mechanism: Phytosterols and monounsaturated fatty acids compete for intestinal cholesterol
+    absorption, lowering serum LDL-C.
+  studies:
+  - doi: 10.1093/ajcn/nqy078
+    source: Am J Clin Nutr
+    title: 'Avocado consumption and risk factors for heart disease: a systematic review
+      and meta-analysis'
+    url: https://pubmed.ncbi.nlm.nih.gov/29635348/
+    year: 2018
+- compounds:
+  - Potassium
+  - Fiber
+  condition: Metabolic Syndrome
+  evidence_level: High
+  mechanism: High potassium and dietary fiber improve insulin sensitivity and arterial
+    wall compliance.
+  studies:
+  - doi: 10.1186/1475-2891-12-1
+    source: Nutrition Journal
+    title: Avocado intake is associated with better diet quality and lower metabolic
+      syndrome risk
+    url: https://pubmed.ncbi.nlm.nih.gov/23282226/
+    year: 2013
+image: ../../images/aguacate.jpg
 micronutrients:
-  potassium_mg: 485
   folate_ug: 81
+  potassium_mg: 485
   vitamin_e_mg: 2.1
   vitamin_k_ug: 21
-active_compounds:
-  - name: "Oleic Acid"
-    benefit: "Monounsaturated fatty acid, anti-inflammatory."
-    scientific_ref: "NIH"
-  - name: "Beta-sitosterol"
-    benefit: "Plant sterol that helps maintain healthy cholesterol levels."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Hypercholesterolemia / Cardiovascular Disease"
-    mechanism: "Phytosterols and monounsaturated fatty acids compete for intestinal cholesterol absorption, lowering serum LDL-C."
-    compounds: ["Oleic Acid", "Beta-sitosterol"]
-    evidence_level: "High"
-    studies:
-      - title: "Avocado consumption and risk factors for heart disease: a systematic review and meta-analysis"
-        source: "Am J Clin Nutr"
-        year: 2018
-        doi: "10.1093/ajcn/nqy078"
-        url: "https://pubmed.ncbi.nlm.nih.gov/29635348/"
-  - condition: "Metabolic Syndrome"
-    mechanism: "High potassium and dietary fiber improve insulin sensitivity and arterial wall compliance."
-    compounds: ["Potassium", "Fiber"]
-    evidence_level: "High"
-    studies:
-      - title: "Avocado intake is associated with better diet quality and lower metabolic syndrome risk"
-        source: "Nutrition Journal"
-        year: 2013
-        doi: "10.1186/1475-2891-12-1"
-        url: "https://pubmed.ncbi.nlm.nih.gov/23282226/"
+name: Aguacate (Hass/Papelillo)
+nutrition_per_100g:
+  calories: 160
+  carbs_g: 9
+  fat_g: 15
+  fiber_g: 7
+  protein_g: 2
+  sugar_g: 0.7
+portions:
+  default_g: 100
+scientific_name: Persea americana
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - grasa_saludable
-  - ajiaco
-  - bandeja_paisa
+- grasa_saludable
+- ajiaco
+- bandeja_paisa
 ---
 
 # Scientific Analysis & Culinary Use

@@ -1,42 +1,49 @@
 ---
-name: "Papa Criolla (Amarilla)"
-scientific_name: "Solanum phureja"
-group: "Vegetable"
-portions:
-  default_g: 100
-nutrition_per_100g:
-  calories: 98
-  protein_g: 2.3
-  fat_g: 0.1
-  carbs_g: 22.5
-  fiber_g: 2.5
-  sugar_g: 0.8
+active_compounds:
+- benefit: Carotenoid giving yellow color, supports eye health.
+  name: Zeaxanthin
+  scientific_ref: Agrosavia
+aliases:
+  en:
+  - yellow potato
+  - creole potato
+group: Vegetable
+health_registry:
+- compounds:
+  - Potassium
+  condition: Hypertension / Cardiovascular Health
+  evidence_level: High
+  mechanism: High potassium content counters sodium effects, relaxing blood vessel
+    walls.
+  studies:
+  - source: WHO Guidelines
+    title: Potassium intake and blood pressure
+- compounds:
+  - Starch
+  condition: Digestive Health
+  evidence_level: Medium
+  mechanism: High digestibility starch (easily broken down) suitable for convalescence.
 micronutrients:
   potassium_mg: 440
   vitamin_c_mg: 19.7
-active_compounds:
-  - name: "Zeaxanthin"
-    benefit: "Carotenoid giving yellow color, supports eye health."
-    scientific_ref: "Agrosavia"
-health_registry:
-  - condition: "Hypertension / Cardiovascular Health"
-    mechanism: "High potassium content counters sodium effects, relaxing blood vessel walls."
-    compounds: ["Potassium"]
-    evidence_level: "High"
-    studies:
-      - title: "Potassium intake and blood pressure"
-        source: "WHO Guidelines"
-  - condition: "Digestive Health"
-    mechanism: "High digestibility starch (easily broken down) suitable for convalescence."
-    compounds: ["Starch"]
-    evidence_level: "Medium"
+name: Papa Criolla (Amarilla)
+nutrition_per_100g:
+  calories: 98
+  carbs_g: 22.5
+  fat_g: 0.1
+  fiber_g: 2.5
+  protein_g: 2.3
+  sugar_g: 0.8
+portions:
+  default_g: 100
+scientific_name: Solanum phureja
 sources:
-  - "ICBF Tabla de Composición"
-  - "Agrosavia"
+- ICBF Tabla de Composición
+- Agrosavia
 tags:
-  - ajiaco
-  - frita
-  - esencial
+- ajiaco
+- frita
+- esencial
 ---
 
 # Scientific Analysis & Culinary Use

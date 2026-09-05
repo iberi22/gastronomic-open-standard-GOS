@@ -1,68 +1,69 @@
 ---
-title: Sancocho Dominicano de Siete Carnes
-region: República Dominicana
+aliases:
+  en:
+  - Dominican Sancocho
+  - 7-Meat Stew
+categories:
+- Plato fuerte
+- Guiso
+- Tradicional
+cook_time: 2 horas
+description: El Sancocho es el plato de celebración supremo de la República Dominicana,
+  reservado para días de lluvia, reuniones de año nuevo o festividades de gran envergadura.
+  Su versión más gloriosa es el "Sancocho de Siete Carnes", un guiso suntuoso y denso
+  que combina múltiples carnes de res, cerdo y pollo con raíces tropicales.
+difficulty: ★★★★★
+images:
+- description: Gran olla de sancocho dominicano espeso hirviendo (Unsplash)
+  url: https://images.unsplash.com/photo-1541518763669-27fef04b14ea
 language: es
 license: MIT
-source:
-  name: cocinadominicana.com
-  url: 'https://www.cocinadominicana.com/sancocho-dominicano-receta/'
-  date_retrieved: '2026-09-03'
-categories:
-  - Plato fuerte
-  - Guiso
-  - Tradicional
-difficulty: ★★★★★
-prep_time: 45 minutos
-cook_time: 2 horas
-servings: 10
-tags:
-  - Sopa
-  - Guiso
-  - Carnes mixtas
-  - Viandas
-  - República Dominicana
-  - Tradicional
 main_ingredients:
-  - 'Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)'
-  - Plátano verde
-  - Yuca
-  - Yautía (blanca y amarilla)
-  - Ñame
-  - Calabaza (ahuyama)
-  - Maíz tierno (mazorcas)
-  - Naranja agria
-sensory:
-  flavor:
-    - Salado
-    - Umami extremadamente intenso
-    - Ácido (naranja agria)
-    - Herbal (cilantro ancho)
-  texture:
-    - Caldo extremadamente espeso (consistencia espesa de crema)
-    - Tubérculos sumamente suaves
-  aroma:
-    - Carnes mixtas estofadas
-    - Orégano dominicano y cilantro ancho
-    - Naranja agria fresca
-  presentation: >-
-    Servido muy caliente en platos hondos de barro, acompañado tradicionalmente
-    de arroz blanco graneado, aguacate maduro en rodajas y un chorrito de jugo
-    de naranja agria adicional.
+- Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)
+- Plátano verde
+- Yuca
+- Yautía (blanca y amarilla)
+- Ñame
+- Calabaza (ahuyama)
+- Maíz tierno (mazorcas)
+- Naranja agria
 nutrition:
   calories: 780
   macros:
-    protein_g: 54
-    fat_g: 32
     carbs_g: 78
-images:
-  - url: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea'
-    description: Gran olla de sancocho dominicano espeso hirviendo (Unsplash)
-description: >-
-  El Sancocho es el plato de celebración supremo de la República Dominicana,
-  reservado para días de lluvia, reuniones de año nuevo o festividades de gran
-  envergadura. Su versión más gloriosa es el "Sancocho de Siete Carnes", un
-  guiso suntuoso y denso que combina múltiples carnes de res, cerdo y pollo con
-  raíces tropicales.
+    fat_g: 32
+    protein_g: 54
+prep_time: 45 minutos
+region: República Dominicana
+sensory:
+  aroma:
+  - Carnes mixtas estofadas
+  - Orégano dominicano y cilantro ancho
+  - Naranja agria fresca
+  flavor:
+  - Salado
+  - Umami extremadamente intenso
+  - Ácido (naranja agria)
+  - Herbal (cilantro ancho)
+  presentation: Servido muy caliente en platos hondos de barro, acompañado tradicionalmente
+    de arroz blanco graneado, aguacate maduro en rodajas y un chorrito de jugo de
+    naranja agria adicional.
+  texture:
+  - Caldo extremadamente espeso (consistencia espesa de crema)
+  - Tubérculos sumamente suaves
+servings: 10
+source:
+  date_retrieved: '2026-09-03'
+  name: cocinadominicana.com
+  url: https://www.cocinadominicana.com/sancocho-dominicano-receta/
+tags:
+- Sopa
+- Guiso
+- Carnes mixtas
+- Viandas
+- República Dominicana
+- Tradicional
+title: Sancocho Dominicano de Siete Carnes
 ---
 
 # Sancocho Dominicano de Siete Carnes

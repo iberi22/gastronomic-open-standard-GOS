@@ -1,52 +1,61 @@
 ---
-name: "Tomate Rojo (Maduro)"
-scientific_name: "Solanum lycopersicum"
-group: "Vegetable"
-image: "../../images/tomate.jpg"
-portions:
-  default_g: 120 # 1 medium tomato
+active_compounds:
+- benefit: Carotenoid pigment, potent antioxidant.
+  name: Lycopene
+  scientific_ref: NIH
+aliases:
+  en:
+  - tomato
+group: Vegetable
+health_registry:
+- compounds:
+  - Lycopene
+  condition: Prostate Cancer / Prostate Health
+  evidence_level: High
+  mechanism: Lycopene concentrates in prostatic tissue and scavenges reactive oxygen
+    species, downregulating androgen receptor expression.
+  studies:
+  - doi: 10.1097/MD.0000000000001351
+    source: Medicine (Baltimore)
+    title: 'Lycopene/tomato consumption and the risk of prostate cancer: a systematic
+      review and meta-analysis'
+    url: https://pubmed.ncbi.nlm.nih.gov/26222459/
+    year: 2015
+- compounds:
+  - Lycopene
+  - Beta-carotene
+  condition: Atherosclerosis / Endothelial Dysfunction
+  evidence_level: High
+  mechanism: Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion molecules.
+  studies:
+  - doi: 10.1016/j.atherosclerosis.2017.03.004
+    source: Atherosclerosis
+    title: 'Tomato and lycopene supplementation and cardiovascular risk factors: A
+      systematic review and meta-analysis'
+    url: https://pubmed.ncbi.nlm.nih.gov/28351743/
+    year: 2017
+image: ../../images/tomate.jpg
+micronutrients:
+  potassium_mg: 237
+  vitamin_c_mg: 13.7
+  vitamin_k_ug: 7.9
+name: Tomate Rojo (Maduro)
 nutrition_per_100g:
   calories: 18
-  protein_g: 0.9
-  fat_g: 0.2
   carbs_g: 3.9
+  fat_g: 0.2
   fiber_g: 1.2
+  protein_g: 0.9
   sugar_g: 2.6
-micronutrients:
-  vitamin_c_mg: 13.7
-  potassium_mg: 237
-  vitamin_k_ug: 7.9
-active_compounds:
-  - name: "Lycopene"
-    benefit: "Carotenoid pigment, potent antioxidant."
-    scientific_ref: "NIH"
-health_registry:
-  - condition: "Prostate Cancer / Prostate Health"
-    mechanism: "Lycopene concentrates in prostatic tissue and scavenges reactive oxygen species, downregulating androgen receptor expression."
-    compounds: ["Lycopene"]
-    evidence_level: "High"
-    studies:
-      - title: "Lycopene/tomato consumption and the risk of prostate cancer: a systematic review and meta-analysis"
-        source: "Medicine (Baltimore)"
-        year: 2015
-        doi: "10.1097/MD.0000000000001351"
-        url: "https://pubmed.ncbi.nlm.nih.gov/26222459/"
-  - condition: "Atherosclerosis / Endothelial Dysfunction"
-    mechanism: "Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion molecules."
-    compounds: ["Lycopene", "Beta-carotene"]
-    evidence_level: "High"
-    studies:
-      - title: "Tomato and lycopene supplementation and cardiovascular risk factors: A systematic review and meta-analysis"
-        source: "Atherosclerosis"
-        year: 2017
-        doi: "10.1016/j.atherosclerosis.2017.03.004"
-        url: "https://pubmed.ncbi.nlm.nih.gov/28351743/"
+portions:
+  default_g: 120
+scientific_name: Solanum lycopersicum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - guiso
-  - licopeno
-  - salud_prostata
+- guiso
+- licopeno
+- salud_prostata
 ---
 
 # Scientific Analysis & Culinary Use

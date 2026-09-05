@@ -1,67 +1,68 @@
 ---
-title: Bandeja Paisa
-region: Andina
+aliases:
+  en:
+  - Bandeja Paisa
+  - Paisa Tray
+categories:
+- Plato Fuerte
+- Hipercalórico
+cook_time: 120
+description: El 'plato montañero' por excelencia. Evolución del avío de los arrieros
+  antioqueños, diseñado para aportar la máxima energía posible (calorías y proteínas)
+  para cruzar las cordilleras. Es un despliegue de técnicas de fritura y cocción lenta.
+difficulty: ★★★★☆
+images:
+- description: Bandeja Paisa con sus 9 elementos
+  url: https://im.ge/i/bandeja-1.XyZ789
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Plato Fuerte
-  - Hipercalórico
-difficulty: ★★★★☆
-prep_time: 45
-cook_time: 120
-servings: 4
-tags:
-  - Antioquia
-  - Monumental
-  - Domingo
-  - Turismo
 main_ingredients:
-  - Frijol bola roja (o Cargamanto)
-  - Arroz blanco
-  - Carne molida
-  - Chicharrón
-  - Chorizo
-  - Morcilla
-  - Huevo frito
-  - Plátano maduro
-  - Arepa
-  - Aguacate
-sensory:
-  flavor:
-    - Salado
-    - Umami
-    - Ahumado
-    - Graso
-  texture:
-    - Crujiente (Chicharrón)
-    - Cremoso (Frijoles)
-    - Suave (Arroz)
-  aroma:
-    - Cerdo frito
-    - Humo
-    - Comino
-  presentation: >-
-    Bandeja ovalada grande. Organización visual: cama de arroz y frijoles,
-    proteínas alrededor, huevo coronando. Abundancia visual extrema.
+- Frijol bola roja (o Cargamanto)
+- Arroz blanco
+- Carne molida
+- Chicharrón
+- Chorizo
+- Morcilla
+- Huevo frito
+- Plátano maduro
+- Arepa
+- Aguacate
 nutrition:
   calories: 1800
   macros:
-    protein_g: 85
-    fat_g: 110
     carbs_g: 130
-images:
-  - url: 'https://im.ge/i/bandeja-1.XyZ789'
-    description: Bandeja Paisa con sus 9 elementos
-description: >-
-  El 'plato montañero' por excelencia. Evolución del avío de los arrieros
-  antioqueños, diseñado para aportar la máxima energía posible (calorías y
-  proteínas) para cruzar las cordilleras. Es un despliegue de técnicas de
-  fritura y cocción lenta.
+    fat_g: 110
+    protein_g: 85
+prep_time: 45
+region: Andina
+sensory:
+  aroma:
+  - Cerdo frito
+  - Humo
+  - Comino
+  flavor:
+  - Salado
+  - Umami
+  - Ahumado
+  - Graso
+  presentation: 'Bandeja ovalada grande. Organización visual: cama de arroz y frijoles,
+    proteínas alrededor, huevo coronando. Abundancia visual extrema.'
+  texture:
+  - Crujiente (Chicharrón)
+  - Cremoso (Frijoles)
+  - Suave (Arroz)
+servings: 4
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Antioquia
+- Monumental
+- Domingo
+- Turismo
+title: Bandeja Paisa
 ---
 
 ## 🍲 Bandeja Paisa

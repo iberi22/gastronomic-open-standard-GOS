@@ -1,26 +1,40 @@
 ---
-name: "Teobromina"
-formula: "C7H8N4O2"
+aliases:
+  en:
+  - theobromine
+benefit: Diurético, vasodilatador, antitúsico
+compuestos:
+- Caffeine
+- Theophylline
+- Flavanols
 discovery_year: 1841
-source_ingredient: "cacao (Theobroma cacao)"
-benefit: "Diurético, vasodilatador, antitúsico"
-sazon: "Chocolate amargo suave, menos estimulante que cafeína"
-sabor: "Amarga suave achocolatada, 10x más lenta que cafeína"
-textura: "Alcaloide cristal blanco, 1-2% cacao, estable al calor"
-vitaminas: ["Magnesium", "Iron", "Copper"]
-compuestos: ["Caffeine", "Theophylline", "Flavanols"]
-sources: ["PubMed", "NIH"]
-tags: ["chocolate", "vasodilatador", "antitusivo"]
-image_attribution: "Pixabay — Theobroma cacao"
+formula: C7H8N4O2
 health_registry:
-  - condition: "Hypertension"
-    mechanism: "Phosphodiesterase inhibition, vasodilation"
-    evidence_level: "Medium"
-    studies:
-      - title: "Theobromine and blood pressure: review"
-        source: "Front Pharmacol"
-        year: 2017
-        doi: "10.3389/fphar.2017.00460"
+- condition: Hypertension
+  evidence_level: Medium
+  mechanism: Phosphodiesterase inhibition, vasodilation
+  studies:
+  - doi: 10.3389/fphar.2017.00460
+    source: Front Pharmacol
+    title: 'Theobromine and blood pressure: review'
+    year: 2017
+image_attribution: Pixabay — Theobroma cacao
+name: Teobromina
+sabor: Amarga suave achocolatada, 10x más lenta que cafeína
+sazon: Chocolate amargo suave, menos estimulante que cafeína
+source_ingredient: cacao (Theobroma cacao)
+sources:
+- PubMed
+- NIH
+tags:
+- chocolate
+- vasodilatador
+- antitusivo
+textura: Alcaloide cristal blanco, 1-2% cacao, estable al calor
+vitaminas:
+- Magnesium
+- Iron
+- Copper
 ---
 
 ![Teobromina](/images/substances/teobromina.jpg)

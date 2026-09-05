@@ -1,27 +1,30 @@
 ---
-name: "Queso Campesino/Cuajada/Costeño"
-scientific_name: "N/A"
-group: "Dairy"
-portions:
-  default_g: 30 # slice
-nutrition_per_100g:
-  calories: 260
-  protein_g: 18
-  fat_g: 20
-  carbs_g: 3
-  fiber_g: 0
+active_compounds:
+- benefit: Generated during fermentation (depends on cheese type).
+  name: Bioactive Peptides
+  scientific_ref: Dairy Science
+aliases:
+  en:
+  - cheese
+group: Dairy
 micronutrients:
   calcium_mg: 500
-active_compounds:
-  - name: "Bioactive Peptides"
-    benefit: "Generated during fermentation (depends on cheese type)."
-    scientific_ref: "Dairy Science"
+name: Queso Campesino/Cuajada/Costeño
+nutrition_per_100g:
+  calories: 260
+  carbs_g: 3
+  fat_g: 20
+  fiber_g: 0
+  protein_g: 18
+portions:
+  default_g: 30
+scientific_name: N/A
 sources:
-  - "ICBF Tabla de Composición"
+- ICBF Tabla de Composición
 tags:
-  - arepa
-  - chocolate
-  - acompaniamiento
+- arepa
+- chocolate
+- acompaniamiento
 ---
 
 # Scientific Analysis & Culinary Use
