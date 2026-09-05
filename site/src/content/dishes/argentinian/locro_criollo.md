@@ -1,11 +1,69 @@
 ---
-title: "Locro Criollo Argentino"
-region: "Argentina"
-categories: ["Plato"]
-difficulty: "★★★★☆"
-prep_time: "1 hora (más remojo previo)"
-cook_time: "3 horas"
-servings: "8"
+title: Locro Criollo Argentino
+region: Noroeste / Pampeana / Nacional
+language: es
+license: MIT
+source:
+  name: recetasargentinas.net
+  url: 'https://www.recetasargentinas.net/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Guiso
+  - Tradicional
+difficulty: ★★★★☆
+prep_time: 1 hora (más remojo previo)
+cook_time: 3 horas
+servings: 8
+tags:
+  - Argentina
+  - Locro
+  - Maíz
+  - Cerdo
+  - Patrias
+  - Invierno
+main_ingredients:
+  - Maíz blanco partido
+  - Porotos (frijoles) blancos
+  - Zapallo criollo (plomo)
+  - Pechito de cerdo
+  - Panceta ahumada
+  - Chorizo colorado
+  - Falda de vacuno
+  - Patitas y cuerito de cerdo
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Dulce natural
+    - Ahumado
+  texture:
+    - Espeso
+    - Cremoso
+    - Blando con trozos
+  aroma:
+    - Puerco cocido
+    - Maíz blanco
+    - Ají frito
+  presentation: >-
+    Se sirve caliente en cazuelas de barro profundo, coronado con una cucharada
+    de salsa quiquirimichi (salsa picante de aceite con pimentón, ají molido y
+    cebolla de verdeo frita).
+nutrition:
+  calories: 680
+  macros:
+    protein_g: 38
+    fat_g: 34
+    carbs_g: 56
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Locro criollo argentino espeso y humeante
+description: >-
+  El Locro Criollo es el guiso nacional argentino por excelencia, consumido
+  masivamente durante las fechas patrias de invierno. Se elabora con una base de
+  maíz blanco y porotos blancos cocidos lentamente junto a trozos de calabaza
+  zapallo, carnes vacunas y porcinas (falda, patitas, cueritos, panceta y
+  chorizo colorado) hasta lograr un guiso cremoso y espeso.
 ---
 
 # Locro Criollo Argentino

@@ -1,11 +1,64 @@
 ---
-title: "Causa LimeñA"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★★☆☆"
-prep_time: "35 minutos"
-cook_time: "20 minutos"
-servings: "6"
+title: Causa Limeña
+region: Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Entrada
+  - Criollo
+  - Frío
+difficulty: ★★★☆☆
+prep_time: 35 minutos
+cook_time: 20 minutos
+servings: 6
+tags:
+  - Causa
+  - Limeña
+  - Entrada
+  - Frío
+main_ingredients:
+  - Papa amarilla peruana
+  - Pasta de ají amarillo
+  - Jugo de limón sutil
+  - Pechuga de pollo (o atún)
+  - Palta (Aguacate)
+  - Mayonesa casera
+sensory:
+  flavor:
+    - Ácido (Limón)
+    - Picante Suave (Ají Amarillo)
+    - Umami (Pollo/Atún)
+  texture:
+    - Sedosa (Puré de papa)
+    - Cremosa (Mayonesa)
+    - Tersa (Palta)
+  aroma:
+    - Papa prensada fría
+    - Cítrico y ají aromático
+    - Cilantro fresco
+  presentation: >-
+    Presentado en capas cilíndricas perfectas de puré amarillo brillante,
+    relleno de ensalada de pollo deshilachado con mayonesa y láminas de palta
+    (aguacate) cremosa, decorado con huevo duro y aceituna botija negra.
+nutrition:
+  calories: 420
+  macros:
+    protein_g: 16
+    fat_g: 24
+    carbs_g: 38
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'
+    description: Causa Limeña decorada con huevo y aceituna
+description: >-
+  La Causa Limeña es un plato frío prehispánico que consiste en una masa sedosa
+  de papa amarilla prensada condimentada con pasta de ají amarillo, limón sutil
+  y aceite, rellena tradicionalmente de pollo deshilachado o atún con mayonesa y
+  palta.
 ---
 
 # Causa Limeña
@@ -25,7 +78,7 @@ La Causa Limeña es uno de los platos más vistosos y deliciosos del recetario c
 
 * **Para la Masa de Causa:**
     * 1 kg de papa amarilla peruana (o papas arenosas adecuadas para puré seco)
-    * 4 cucharadas de pasta de **[Ají Amarillo](../../ingredients/aji_amarillo)** pura (sin venas ni pepas, hervida y licuada)
+    * 4 cucharadas de pasta de **[Ají Amarillo](/dishes/peruvian/costa/../../ingredients/aji_amarillo)** pura (sin venas ni pepas, hervida y licuada)
     * 1/4 taza de jugo de limón sutil (lima verde) recién exprimido
     * 1/4 taza de aceite vegetal neutro (para dar brillo y elasticidad)
     * Sal fina al gusto
@@ -68,7 +121,7 @@ La Causa Limeña es uno de los platos más vistosos y deliciosos del recetario c
 
 ## 📸 Galería
 
-
+![Causa Limeña](/dishes/peruvian/costa/images/causa_limena.webp)
 
 ---
 

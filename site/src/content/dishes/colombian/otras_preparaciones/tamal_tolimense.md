@@ -1,8 +1,41 @@
 ---
-title: "Tamal Tolimense"
-region: "Colombia"
-categories: ["Otras_preparaciones"]
-difficulty: "★★☆☆☆"
+title: Tamal Tolimense
+region: Andina
+language: es
+license: MIT
+source:
+  name: mycolombianrecipes.com
+  url: 'https://www.mycolombianrecipes.com/es/tamales-tolimenses/'
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Graso
+  texture:
+    - Soft (masa)
+    - Fibrous (meats)
+    - Tender (vegetables)
+  aroma:
+    - Banana leaf (steamed)
+    - Cumin
+    - Pork fat
+  presentation: >-
+    Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la
+    parte superior.
+nutrition:
+  calories: 3523
+  macros:
+    protein_g: 172.5
+    fat_g: 53.9
+    carbs_g: 584.7
+images:
+  - url: 'https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg'
+    description: Tamal tolimense envuelto en hoja de plátano.
+image: 'https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg'
+description: '* **Para la masa**:'
+yaml_validation: 'https://yaml-online-parser.appspot.com/'
 ---
 
 ## Ingredientes

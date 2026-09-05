@@ -1,8 +1,22 @@
 ---
-title: "10 Recetas MáS EmblemáTicas De La RegióN AmazóNica De Colombia"
-region: "Colombia"
-categories: ["Amazonia"]
-difficulty: "★★☆☆☆"
+title: 10 recetas más emblemáticas de la región Amazónica de Colombia
+region: Colombia
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+nutrition:
+  calories: 0
+  macros:
+    protein_g: 0
+    fat_g: 0
+    carbs_g: 0
+description: 1. Patarasca (Pescado en Hojas)
+media: []
+embedding_version: 1
 ---
 
 # 10 recetas más emblemáticas de la región Amazónica de Colombia

@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const repoRoot = path.resolve(__dirname, '../../');
 const dishesDir = path.join(repoRoot, 'dishes');
-const outputDir = path.resolve(__dirname, '../public/api/countries');
+const outputDir = path.resolve(__dirname, '../public/api/by-country');
 const outputFile = path.join(outputDir, 'catalog.json');
 
 function getMarkdownFiles(dir) {

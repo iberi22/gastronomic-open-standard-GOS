@@ -1,8 +1,11 @@
 ---
-title: "README"
-region: "Colombia"
-categories: ["Insular"]
-difficulty: "★★☆☆☆"
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
 ---
 
 # Recetas Emblemáticas de la Región Insular de Colombia

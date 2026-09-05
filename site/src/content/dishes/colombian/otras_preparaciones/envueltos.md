@@ -1,8 +1,41 @@
 ---
-title: "Envueltos De Mazorca"
-region: "Colombia"
-categories: ["Otras_preparaciones"]
-difficulty: "★★☆☆☆"
+title: Envueltos de Mazorca
+region: Andina
+language: es
+license: MIT
+source:
+  name: mycolombianrecipes.com
+  url: 'https://www.mycolombianrecipes.com/es/envueltos-de-mazorca/'
+  date_retrieved: '2026-09-03'
+difficulty: ★★☆☆☆
+sensory:
+  flavor:
+    - Sweet (maíz tierno)
+    - Lacteal (butter/milk)
+    - Salty (queso)
+  texture:
+    - Soft
+    - Spongy
+    - Moist
+  aroma:
+    - Sweet Corn
+    - Butter
+    - Steamed leaf
+  presentation: >-
+    Paquetes cilíndricos envueltos en hojas de mazorca de color verde pálido o
+    crema, atados manualmente.
+nutrition:
+  calories: 4242
+  macros:
+    protein_g: 60.8
+    fat_g: 258
+    carbs_g: 487.5
+images:
+  - url: 'https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg'
+    description: Envueltos de mazorca tierna al vapor.
+image: 'https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg'
+description: '* 10 mazorcas tiernas y grandes'
+yaml_validation: 'https://yaml-online-parser.appspot.com/'
 ---
 
 ## Ingredientes

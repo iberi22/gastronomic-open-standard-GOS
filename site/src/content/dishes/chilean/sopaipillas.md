@@ -1,11 +1,67 @@
 ---
-title: "Sopaipillas Chilenas"
-region: "Chile"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "30 minutos"
-cook_time: "15 minutos"
-servings: "6"
+title: Sopaipillas Chilenas
+region: Central / Sur
+language: es
+license: MIT
+source:
+  name: recetaschilenas.cl
+  url: 'https://www.recetaschilenas.cl/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Acompañamiento
+  - Pan
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 30 minutos
+cook_time: 15 minutos
+servings: 6
+tags:
+  - Chile
+  - Fritura
+  - Zapallo
+  - Sopaipilla
+  - Callejero
+  - Lluvia
+main_ingredients:
+  - Harina de trigo
+  - Puré de zapallo amarillo
+  - Manteca de cerdo
+  - Aceite de freír
+  - Levadura seca (opcional)
+  - Sal
+sensory:
+  flavor:
+    - Salado sutil
+    - Dulce natural de calabaza
+    - Grasoso agradable
+  texture:
+    - Crujiente exterior
+    - Suave interior
+    - Masticable
+  aroma:
+    - Harina frita
+    - Zapallo cocido
+    - Manteca
+  presentation: >-
+    Se sirven calientes, recién fritas, solas (secas) para untar con pebre
+    (salsa de tomate, cebolla, ajo y cilantro picado con ají) o mostaza
+    callejera, o bien pasadas por almíbar de chancaca caliente (sopaipillas
+    pasadas).
+nutrition:
+  calories: 220
+  macros:
+    protein_g: 4
+    fat_g: 10
+    carbs_g: 29
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: 'Sopaipillas chilenas redondas y calientes, recién fritas'
+description: >-
+  Las Sopaipillas son una de las preparaciones de masas fritas más populares de
+  Chile, consumidas de forma masiva en carritos callejeros y hogares,
+  especialmente en los días lluviosos de invierno. Se elaboran con una masa de
+  harina de trigo enriquecida con puré de zapallo amarillo maduro cocido y
+  manteca, cortada en discos circulares y frita en aceite caliente.
 ---
 
 # Sopaipillas Chilenas

@@ -1,11 +1,58 @@
 ---
-title: "Chawanmushi (Flan Salado)"
-region: "Japón"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "20 minutos"
-cook_time: "15 minutos"
-servings: "2"
+title: Chawanmushi (Flan Salado)
+region: Kyoto
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Entrante
+  - Kaiseki
+difficulty: ★★★☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 2
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Huevos frescos
+  - Dashi de primera extracción
+  - Salsa de soja clara
+  - Pollo picado
+  - Langostino
+  - Seta Shiitake
+  - Mitsuba
+sensory:
+  flavor:
+    - Umami sutil y limpio
+    - Salado suave
+    - Aroma marino
+  texture:
+    - Flan de huevo seda que se deshace instantáneamente
+  aroma:
+    - Dashi clarificado
+    - Seta shiitake
+    - Mirin
+  presentation: >-
+    Servido caliente en cuenco de cerámica con tapa decorado con hoja de
+    mitsuba.
+nutrition:
+  calories: 140
+  macros:
+    protein_g: 10
+    fat_g: 8
+    carbs_g: 6
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Chawanmushi (Flan Salado) tradicional
+description: >-
+  El Chawanmushi es un natilla o flan salado al vapor preparado a partir de
+  huevo y caldo dashi enriquecido con pollo, langostino y setas.
 ---
 
 # Chawanmushi (Flan Salado)

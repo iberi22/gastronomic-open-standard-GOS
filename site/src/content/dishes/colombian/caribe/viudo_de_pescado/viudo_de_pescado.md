@@ -1,11 +1,61 @@
 ---
-title: "Viudo De Pescado"
-region: "Colombia"
-categories: ["Viudo_de_pescado"]
-difficulty: "★★★☆☆"
-prep_time: "30"
-cook_time: "45"
-servings: "6"
+title: Viudo de Pescado
+region: Caribe/Magdalena
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato Fuerte
+  - Río
+  - Ancestral
+difficulty: ★★★☆☆
+prep_time: '30'
+cook_time: '45'
+servings: 6
+tags:
+  - Río Magdalena
+  - Tradición
+  - Pesca
+main_ingredients:
+  - Bocachico / Capaz (Pescado de escama)
+  - Hojas de Plátano o Bijao (para sellar)
+  - Ñame / Yuca / Plátano / Ahuyama
+  - Hogao Criollo
+  - Cilantro Cimarrón
+sensory:
+  flavor:
+    - Terroso (Natural)
+    - Hogao (Umami)
+    - Dulce Tubérculo
+  texture:
+    - Suave (Pescado al vapor)
+    - Harinoso (Vituallas)
+    - Melosa (Ahuyama)
+  aroma:
+    - Limo de río (fresco)
+    - Hierba de río (Cimarrón)
+    - Humo de leña
+  presentation: >-
+    Bandeja generosa. El pescado se sirve entero, bañado en hogao, sobre una
+    cama de yuca, plátano y ahuyama. El caldo (consomé) se sirve en taza aparte.
+nutrition:
+  calories: 420
+  macros:
+    protein_g: 32
+    fat_g: 12
+    carbs_g: 52
+images:
+  - url: 'https://im.ge/i/viudo-1.AbC123'
+    description: Viudo de pescado servido con su consomé aparte
+description: >-
+  La técnica de cocción por niveles. El viudo es una 'vaporera biológica' donde
+  las vituallas crean una barrera física frente al fuego, permitiendo que el
+  pescado se cocine exclusivamente por calor latente (vapor), preservando su
+  mioglobina y grasas delicadas.
 ---
 
 # Viudo de Pescado
@@ -24,7 +74,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 ## 📝 Ingredientes
 
 * **El Río:**
-    * 6 postas o 3 pescados enteros medianos (**[Bocachico](../../ingredients/bocachico)** o Capaz). El Bocachico tiene muchas espinas pero más sabor.
+    * 6 postas o 3 pescados enteros medianos (**[Bocachico](/dishes/colombian/caribe/viudo_de_pescado/../../ingredients/bocachico)** o Capaz). El Bocachico tiene muchas espinas pero más sabor.
 * **La Cama (Vituallas):**
     * 2 plátanos verdes pelados y partidos con la mano
     * 1 kg de yuca pelada
@@ -56,7 +106,7 @@ El nombre "Viudo" proviene, según la leyenda, de que el pescado se servía "sol
 
 ## 📸 Galería
 
-
+![Viudo de Pescado](/dishes/colombian/caribe/viudo_de_pescado/images/1.webp)
 
 ---
 

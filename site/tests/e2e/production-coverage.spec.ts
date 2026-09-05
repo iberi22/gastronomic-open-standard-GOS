@@ -100,6 +100,8 @@ test.describe('Production coverage — search and filters', () => {
 
   test('/ingredients page renders ingredient entries', async ({ page }) => {
     await page.goto(`${PROD}/ingredients`, { waitUntil: 'domcontentloaded' });
+    // Entries render client-side via SearchBar (Fuse.js) — wait for hydration.
+    await page.waitForSelector('a[href*="/ingredients/"]', { timeout: 20000 });
     const entryCount = await page.evaluate(() => document.querySelectorAll('a[href*="/ingredients/"]').length);
     expect(entryCount).toBeGreaterThan(5);
   });

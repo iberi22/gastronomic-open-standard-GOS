@@ -1,11 +1,57 @@
 ---
-title: "Tempura Moriawase"
-region: "Japón"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "25 minutos"
-cook_time: "15 minutos"
-servings: "4"
+title: Tempura Moriawase
+region: Kyoto
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Entrante
+  - Fritura
+difficulty: ★★★☆☆
+prep_time: 25 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Japanese
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Langostinos grandes
+  - Calabaza kabocha
+  - Berenjena
+  - Harina de trigo fría
+  - Huevo helado
+  - Agua con hielo
+  - Caldo dashi
+sensory:
+  flavor:
+    - Dulzor natural de verdura/marisco
+    - Salado suave
+    - Umami de dashi
+  texture:
+    - Rebozado extremadamente crujiente y liviano
+  aroma:
+    - Aceite de sésamo caliente
+    - Salsa tentsuyu
+  presentation: >-
+    Langostinos y vegetales fritos en rebozado pálido y crujiente servidos con
+    sal de sésamo o tentsuyu.
+nutrition:
+  calories: 450
+  macros:
+    protein_g: 18
+    fat_g: 22
+    carbs_g: 44
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Tempura Moriawase tradicional
+description: >-
+  Tempura Moriawase es un variado de mariscos y verduras fritos en un rebozado
+  helado que crea una capa crujiente casi transparente y no grasosa.
 ---
 
 # Tempura Moriawase

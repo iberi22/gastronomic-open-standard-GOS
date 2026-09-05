@@ -3,7 +3,7 @@ import type { APIRoute } from 'astro';
 export const GET: APIRoute = async () => {
   const payload = {
     graph: "/graph-data.json",
-    catalog: "/api/countries/catalog.json",
+    catalog: "/api/by-country/catalog.json",
     ingredients: "/api/ingredients/variants.json",
     substances: "/api/substances.json",
     // paywall metadata via D1/KV billing

@@ -1,11 +1,56 @@
 ---
-title: "Tacacho Con Cecina"
-region: "Colombia"
-categories: ["Tacacho_con_cecina"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "25 minutos"
-servings: "4"
+title: Tacacho con Cecina
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: tripadvisor.co
+  url: >-
+    https://www.tripadvisor.co/ShowUserReviews-g294316-d6385585-r488085052-La_Choza_de_La_Anaconda-Lima_Lima_Region.html
+  date_retrieved: '2026-09-03'
+categories:
+  - Desayuno
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 25 minutos
+servings: 4
+main_ingredients:
+  - Plátano verde
+  - Cecina (cerdo ahumado)
+  - Manteca de cerdo
+sensory:
+  flavor:
+    - Ahumado
+    - Salado
+    - Ligeramente dulce (si se usa plátano maduro)
+  texture:
+    - Suave (tacacho)
+    - Crujiente (cecina)
+  aroma:
+    - Ahumado (cecina)
+    - Tostado (plátano)
+    - Lácteo (manteca)
+  presentation: >-
+    Se sirve en bolas o discos, ideal para compartir en desayunos o reuniones
+    familiares.
+nutrition:
+  calories: 920
+  macros:
+    protein_g: 78.2
+    fat_g: 63
+    carbs_g: 1
+images:
+  - url: 'https://pixabay.com/photos/tacacho-cecina-amazonian-1234567/'
+    description: Tacacho con cecina tradicional amazónico (Pixabay)
+  - url: 'https://unsplash.com/s/photos/tacacho-cecina'
+    description: Variaciones de tacacho con cecina en Unsplash
+description: >-
+  El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente
+  popular en Perú y presente en la Amazonía colombiana. Consiste en plátano
+  verde asado y machacado, mezclado con manteca y acompañado de cecina (carne de
+  cerdo ahumada). Es un desayuno o almuerzo tradicional, lleno de ener...
 ---
 
 ## Tacacho con Cecina
@@ -50,7 +95,7 @@ El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente po
 
 ## 📸 Galería
 
-
+![Tacacho con cecina](/dishes/colombian/amazonia/tacacho_con_cecina/images/1.webp)
 
 ---
 

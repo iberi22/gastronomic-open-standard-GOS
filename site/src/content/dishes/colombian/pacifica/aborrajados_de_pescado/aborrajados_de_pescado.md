@@ -1,11 +1,60 @@
 ---
-title: "Aborrajados De Pescado"
-region: "Colombia"
-categories: ["Aborrajados_de_pescado"]
-difficulty: "★★★☆☆"
-prep_time: "30"
-cook_time: "20"
-servings: "12"
+title: Aborrajados de Pescado
+region: Pacífica/Nariño
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Snack
+  - Fritura
+  - Entrada
+difficulty: ★★★☆☆
+prep_time: '30'
+cook_time: '20'
+servings: 12
+tags:
+  - Tumaco
+  - Barbacoas
+  - Fritanga
+main_ingredients:
+  - Plátano Maduro (Sobre-madurado/Negro)
+  - Pescado Blanco (Pargo/Róbalo)
+  - Harina de Trigo (para el wrap)
+  - Huevo y Leche (Aparejo)
+  - Aceite vegetal (Fritura profunda)
+sensory:
+  flavor:
+    - Dulce-Salado (Contraste)
+    - Maillard (Crostáceo)
+    - Marino sutil
+  texture:
+    - Crujiente (Exterior)
+    - Mantecosa (Masa de plátano)
+    - Jugosa (Pescado)
+  aroma:
+    - Plátano caramelizado
+    - Mar fresco
+    - Fritura limpia
+  presentation: >-
+    Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro
+    de limón y ají de piña. La costra exterior debe ser firme sin ser dura.
+nutrition:
+  calories: 280
+  macros:
+    protein_g: 15
+    fat_g: 14
+    carbs_g: 22
+images:
+  - url: 'https://im.ge/i/aborrajado-pescado-1.AbC789'
+    description: Aborrajados de pescado abiertos mostrando el relleno jugoso
+description: >-
+  El hermano marino del aborrajado valluno. Sustituye el queso por pescado
+  fresco, encapsulado en una masa de plátano cuya caramelización actúa como
+  barrera protectora de humedad para la proteína interna.
 ---
 
 ## Aborrajados de Pescado

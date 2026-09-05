@@ -1,11 +1,63 @@
 ---
-title: "Arepa De Huevo"
-region: "Colombia"
-categories: ["Arepa_de_huevo"]
-difficulty: "★★★★☆"
-prep_time: "30"
-cook_time: "15"
-servings: "10"
+title: Arepa de Huevo
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Fritura
+  - Desayuno
+  - Callejera
+difficulty: ★★★★☆
+prep_time: '30'
+cook_time: '15'
+servings: 10
+tags:
+  - Luruaco
+  - Fritanga
+  - Desayuno
+main_ingredients:
+  - Maíz Amarillo (Masa)
+  - Huevo (AAA)
+  - Carne molida (opcional)
+  - Aceite vegetal (fritura profunda)
+  - Sal
+sensory:
+  flavor:
+    - Maíz tostado
+    - Graso (yema)
+    - Salado
+    - Ácido (si hay suero)
+  texture:
+    - Crocante (Corteza)
+    - Vaporoso (Interior)
+    - Cremoso (Huevo)
+  aroma:
+    - Maíz frito
+    - Aceite caliente
+    - Huevo cocido
+  presentation: >-
+    Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible
+    pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño
+    aparte.
+nutrition:
+  calories: 350
+  macros:
+    protein_g: 12
+    fat_g: 18
+    carbs_g: 35
+images:
+  - url: 'https://im.ge/i/arepa-huevo-1.AbC456'
+    description: Arepa de huevo inflada y dorada (Luruaco style)
+description: >-
+  La ingeniería hecha arepa. El único plato del mundo donde se introduce un
+  huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito
+  depende de la termodinámica del vapor para crear la cavidad interna ('la cama
+  del huevo').
 ---
 
 ## Arepa de Huevo
@@ -52,7 +104,7 @@ La Arepa de Huevo es uno de los íconos de la gastronomía costeña colombiana, 
 
 ## 📸 Galería
 
-
+![Arepa de Huevo con Suero](/dishes/colombian/caribe/arepa_de_huevo/images/1.webp)
 
 ---
 
@@ -62,22 +114,22 @@ La Arepa de Huevo es uno de los íconos de la gastronomía costeña colombiana, 
 
 | Atributo | Descriptor Principal | Intensidad (1-5) | Notas Químicas |
 |----------|----------------------|------------------|----------------|
-| **Sabor**| Salado, Graso, Maíz  | 5/5              | Yema fluida + Maíz frito. Contraste ácido si se usa **[Suero Costeño](../../ingredients/suero_costeno)**. |
+| **Sabor**| Salado, Graso, Maíz  | 5/5              | Yema fluida + Maíz frito. Contraste ácido si se usa **[Suero Costeño](/dishes/colombian/caribe/arepa_de_huevo/../../ingredients/suero_costeno)**. |
 | **Aroma**| Fritura, Maíz Tostado| 5/5              | Pirazinas (Maíz tostado) y aldehídos lipídicos. |
 | **Textura**| Dual (Crocante/Suave)| 5/5              | Costra exterior rígida vs interior vaporoso y huevo tierno. |
 | **Boca** | Caliente, Untuoso    | 5/5              | La yema líquida actúa como salsa interna. |
 
 ### ⚗️ Química y Física Culinaria
 
-- **La "Cámara de Aire":** El secreto es que la masa de **[Harina de Maíz](../../ingredients/harina_maiz)** se infle en la primera fritura. Esto ocurre porque el agua de la masa se evapora violentamente, y si la costra externa sella rápido, el vapor presuriza el interior, separando las paredes.
-- **Cocción Diferencial:** El **[Huevo](../../ingredients/huevo)** entra crudo. Al volver a freír, la masa protege al huevo del contacto directo con el aceite (180°C). El huevo se cocina esencialmente "al vapor" dentro de la arepa, permitiendo una clara coagulada pero una yema aún cremosa.
+- **La "Cámara de Aire":** El secreto es que la masa de **[Harina de Maíz](/dishes/colombian/caribe/arepa_de_huevo/../../ingredients/harina_maiz)** se infle en la primera fritura. Esto ocurre porque el agua de la masa se evapora violentamente, y si la costra externa sella rápido, el vapor presuriza el interior, separando las paredes.
+- **Cocción Diferencial:** El **[Huevo](/dishes/colombian/caribe/arepa_de_huevo/../../ingredients/huevo)** entra crudo. Al volver a freír, la masa protege al huevo del contacto directo con el aceite (180°C). El huevo se cocina esencialmente "al vapor" dentro de la arepa, permitiendo una clara coagulada pero una yema aún cremosa.
 - **Sellado con Masa:** El uso de masa cruda para sellar el orificio crea un "tapón" de almidón que gelatiniza instantáneamente al tocar el aceite, hermetizando la arepa.
 
 ### 🍎 Nutrición y Metabolismo
 
-- **Proteína Completa:** Combinación de cereal (Maíz) + Proteína animal de alto valor (**[Huevo](../../ingredients/huevo)**).
+- **Proteína Completa:** Combinación de cereal (Maíz) + Proteína animal de alto valor (**[Huevo](/dishes/colombian/caribe/arepa_de_huevo/../../ingredients/huevo)**).
 - **Densidad Energética:** Alta debido a la doble absorción de aceite.
-- **Recomendación:** Consumir con moderación o escurrir muy bien. El **[Suero Costeño](../../ingredients/suero_costeno)** añade probióticos (si es artesanal) pero también más grasa.
+- **Recomendación:** Consumir con moderación o escurrir muy bien. El **[Suero Costeño](/dishes/colombian/caribe/arepa_de_huevo/../../ingredients/suero_costeno)** añade probióticos (si es artesanal) pero también más grasa.
 
 ### 🕰️ Contexto Socio-Cultural y Saberes Ancestrales
 

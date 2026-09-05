@@ -1,11 +1,58 @@
 ---
-title: "Minestrone Alla Genovese"
-region: "Italia"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "25 minutos"
-cook_time: "45 minutos"
-servings: "6"
+title: Minestrone alla Genovese
+region: Liguria
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Sopa
+  - Casera
+difficulty: ★★☆☆☆
+prep_time: 25 minutos
+cook_time: 45 minutos
+servings: 6
+tags:
+  - Italian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Alubias blancas (Canellini)
+  - Patatas
+  - Calabacín
+  - Zanahoria
+  - Espinacas
+  - Pasta corta (Ditalini)
+  - Pesto de albahaca
+  - Parmigiano
+sensory:
+  flavor:
+    - Vegetal fresco terroso
+    - Pesto majado herbal
+    - Legumbre suave
+  texture:
+    - Caldo reconfortante con trozos de verduras y pasta
+  aroma:
+    - Pesto alla Genovese añadido al final
+    - Verduras de temporada
+  presentation: >-
+    Sopa densa de vegetales multicolores terminada con una cucharada verde de
+    pesto fresco.
+nutrition:
+  calories: 320
+  macros:
+    protein_g: 12
+    fat_g: 10
+    carbs_g: 46
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Minestrone alla Genovese tradicional
+description: >-
+  El Minestrone alla Genovese es una rica sopa de verduras de estación y alubias
+  cuyo secreto radica en enriquecerse al final con auténtico pesto lígur.
 ---
 
 # Minestrone alla Genovese

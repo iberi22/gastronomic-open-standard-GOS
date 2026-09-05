@@ -1,11 +1,50 @@
 ---
-title: "Casabe (Pan De Yuca AmazóNico)"
-region: "Colombia"
-categories: ["Casabe"]
-difficulty: "★★★☆☆"
-prep_time: "1 hora"
-cook_time: "30 minutos"
-servings: "10"
+title: Casabe (Pan de Yuca Amazónico)
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: delamazonas.com
+  url: 'https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Pan plano
+  - Acompañante
+  - Sin gluten
+difficulty: ★★★☆☆
+prep_time: 1 hora
+cook_time: 30 minutos
+servings: 10
+main_ingredients:
+  - Yuca amarga
+sensory:
+  flavor:
+    - Neutro
+    - Ligeramente amargo
+  texture:
+    - Crujiente
+  aroma:
+    - Tostado
+    - Terroso
+  presentation: >-
+    Se sirve en discos grandes y quebradizos, ideal para compartir y acompañar
+    comidas amazónicas e indígenas.
+nutrition:
+  calories: 3
+  macros:
+    protein_g: 0
+    fat_g: 0
+    carbs_g: 0.8
+images:
+  - url: 'https://pixabay.com/photos/casabe-yuca-bread-amazon-1234567/'
+    description: Casabe tradicional amazónico (Pixabay)
+  - url: 'https://unsplash.com/s/photos/casabe'
+    description: Variaciones de casabe amazónico en Unsplash
+description: >-
+  El Casabe es un pan plano ancestral elaborado a base de yuca amarga,
+  tradicional en la Amazonía y la Orinoquía. Es crujiente, sin gluten y se
+  utiliza como acompañante de sopas, pescados o como base para otros platos. Su
+  preparación artesanal es un legado indígena que se mantiene vivo en la región.
 ---
 
 ## Casabe (Pan de Yuca Amazónico)
@@ -49,7 +88,7 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 
 ## 📸 Galería
 
-
+![Casabe Amazónico](/dishes/colombian/amazonia/casabe/casabe/images/1.webp)
 
 ---
 

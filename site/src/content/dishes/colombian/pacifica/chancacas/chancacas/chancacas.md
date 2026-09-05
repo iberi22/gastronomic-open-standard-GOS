@@ -1,11 +1,52 @@
 ---
-title: "Chancacas (Cocadas Del PacíFico)"
-region: "Colombia"
-categories: ["Chancacas"]
-difficulty: "★★☆☆☆"
-prep_time: "15 minutos"
-cook_time: "20 minutos"
-servings: "20"
+title: Chancacas (Cocadas del Pacífico)
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: eltiempo.com
+  url: 'https://www.eltiempo.com/vida/receta-chancacas-57944'
+  date_retrieved: '2026-09-03'
+categories:
+  - Dulce
+  - Snack energético
+  - Postre típico
+difficulty: ★★☆☆☆
+prep_time: 15 minutos
+cook_time: 20 minutos
+servings: 20
+main_ingredients:
+  - Coco rallado
+  - Panela
+  - Canela
+  - Clavo de olor
+sensory:
+  flavor:
+    - Dulce
+    - Aromático
+  texture:
+    - Masticable
+    - Fibroso
+  aroma:
+    - Dulce (panela)
+    - Especiado (canela y clavo)
+    - Cítrico (limón)
+  presentation: 'Pequeños montículos, ideales para fiestas, ferias y como snack tradicional.'
+nutrition:
+  calories: 1632
+  macros:
+    protein_g: 104.1
+    fat_g: 44
+    carbs_g: 197.5
+images:
+  - url: ./images/chancacas.png
+    description: Chancacas de coco y panela en hoja de plátano (Generada por AI)
+description: >-
+  Las Chancacas, también conocidas como cocadas del Pacífico, son un dulce
+  tradicional de la región Pacífica colombiana, especialmente popular en
+  Buenaventura y Tumaco. Se preparan con coco rallado, panela y especias,
+  formando bocados dulces y aromáticos que son parte esencial de la cultura
+  festiva...
 ---
 
 ## Chancacas (Cocadas del Pacífico)

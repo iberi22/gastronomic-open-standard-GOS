@@ -4,7 +4,7 @@ import path from 'path';
 
 test.describe('Top 20 Worldwide Catalog Verification', () => {
   test('catalog.json exists and contains required country recipe counts', async () => {
-    const catalogPath = path.resolve(process.cwd(), 'public/api/countries/catalog.json');
+    const catalogPath = path.resolve(process.cwd(), 'public/api/by-country/catalog.json');
     expect(fs.existsSync(catalogPath)).toBe(true);
 
     const content = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));

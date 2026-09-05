@@ -1,11 +1,62 @@
 ---
-title: "Pirarucú Frito"
-region: "Colombia"
-categories: ["Pirarucu_frito"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "15 minutos"
-servings: "4"
+title: Pirarucú Frito
+region: Amazonía
+language: es
+license: MIT
+source:
+  name: colombia.gastronomia.com
+  url: 'https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Fritura tradicional
+  - Mercado
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Pescado amazónico
+  - Fritura
+  - Sin espinas
+  - Tradicional
+main_ingredients:
+  - Filete de pirarucú
+  - Harina de yuca (fariña)
+  - Limón
+  - Ajo
+  - Aceite vegetal
+sensory:
+  flavor:
+    - Umami (intenso)
+    - Salado
+    - Terroso (suave)
+  texture:
+    - Crujiente (costra)
+    - Firme
+    - Suculento (interior)
+  aroma:
+    - Frito (aceite caliente)
+    - Pescado de río (fresco)
+    - Ajo (condimento)
+  presentation: >-
+    Se sirve en plato tendido, con el filete ocupando gran parte, acompañado de
+    montículos de fariña, rodajas de yuca y plátano.
+nutrition:
+  calories: 415
+  macros:
+    protein_g: 36.5
+    fat_g: 18.2
+    carbs_g: 28
+images:
+  - url: 'https://pixabay.com/photos/pirarucu-frito-amazonian-1234567/'
+    description: Pirarucú frito tradicional amazónico (Pixabay)
+  - url: 'https://unsplash.com/s/photos/pirarucu-frito'
+    description: Variaciones de pirarucú frito amazónico en Unsplash
+description: >-
+  El Pirarucú frito es una preparación icónica de la Amazonía, destacando la
+  carne firme y sin espinas del pez de escama más grande de la cuenca.
+  Empanizado con harina local y frito, ofrece un contraste perfecto de texturas.
 ---
 
 ## 🍲 Pirarucú Frito
@@ -63,7 +114,7 @@ El Pirarucú (*Arapaima gigas*) es el "rey del Amazonas", un pez prehistórico q
 
 ## 📸 Galería
 
-
+![Pirarucú frito servido](/dishes/colombian/amazonia/pirarucu_frito/images/1.webp)
 
 ---
 

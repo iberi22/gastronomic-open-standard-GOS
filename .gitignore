@@ -44,3 +44,8 @@ dishes_backup/
 # Astro + Husky leftovers (2026-09-04)
 .astro/
 .husky/*.orig
+
+# Generated graph intermediates (regenerated every build by site/scripts/generate-graph.js)
+/graph.json
+docs/graph.json
+site/graph-data.json

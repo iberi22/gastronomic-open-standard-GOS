@@ -1,11 +1,61 @@
 ---
-title: "Pinchos De Pollo PuertorriqueñOs"
-region: "Puerto Rico"
-categories: ["Plato"]
-difficulty: "★☆☆☆☆"
-prep_time: "15 minutos"
-cook_time: "15 minutos"
-servings: "4"
+title: Pinchos de Pollo Puertorriqueños
+region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/pinchos.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Snack
+  - Comida callejera
+difficulty: ★☆☆☆☆
+prep_time: 15 minutos
+cook_time: 15 minutos
+servings: 4
+tags:
+  - Pollo
+  - Brocheta
+  - Carbón
+  - Barbacoa
+  - Calle
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Muslos de pollo deshuesados
+  - Adobo puertorriqueño
+  - Salsa barbacoa (BBQ)
+  - Pan de agua
+  - Brochetas de madera
+sensory:
+  flavor:
+    - Salado
+    - Umami de pollo frito
+    - Dulce y ahumado (salsa BBQ)
+  texture:
+    - Jugosa (carne terna)
+    - Crujiente (bordes asados)
+  aroma:
+    - Pollo asado al carbón
+    - Salsa barbacoa caramelizada
+  presentation: >-
+    Ensartados en brochetas largas de madera, coronados de forma vistosa con un
+    trozo de pan de agua o tostada caliente en la punta del pincho.
+nutrition:
+  calories: 290
+  macros:
+    protein_g: 26
+    fat_g: 12
+    carbs_g: 18
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Pinchos de pollo boricuas asados a la parrilla (Unsplash)
+description: >-
+  Los Pinchos de Pollo son el bocadillo de comida callejera de paso más común de
+  todo Puerto Rico. Consisten en cubos de muslo de pollo deshuesados marinados
+  en adobo boricua, asados al carbón con salsa BBQ.
 ---
 
 # Pinchos de Pollo Puertorriqueños
@@ -54,7 +104,7 @@ Los Pinchos de Pollo son el bocado por excelencia de la comida rápida boricua. 
 
 ## 📸 Galería
 
-
+![Brocheta caliente de pincho de pollo boricua](/dishes/puerto-rican/images/pincho_1.webp)
 
 ---
 

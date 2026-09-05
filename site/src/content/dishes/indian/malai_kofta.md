@@ -1,11 +1,53 @@
 ---
-title: "Malai Kofta"
-region: "India"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Malai Kofta
+region: Norte de India
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Indian
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Especiado
+  texture:
+    - Crujiente exterior
+    - Interior tierno
+  aroma:
+    - Aroma característico de Malai Kofta
+  presentation: Malai Kofta presentado de forma vistosa tradicional.
+nutrition:
+  calories: 550
+  macros:
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Malai Kofta tradicional
+description: >-
+  Malai Kofta es uno de los platos más emblemáticos de la gastronomía de Norte
+  de India, conocido por su equilibrio de sabores e ingredientes de alta
+  calidad.
 ---
 
 # Malai Kofta

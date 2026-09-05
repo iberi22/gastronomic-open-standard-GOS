@@ -9,10 +9,34 @@
       "metadata": {
         "title": "Arroz con Pollo Peruano",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "yanuq.com",
+          "url": "https://www.yanuq.com/",
+          "date_retrieved": "2026-09-03"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Festivo"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Criollo",
+          "Domingo",
+          "Culantro"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Arroz",
+          "Culantro (Cilantro)",
+          "Ají Amarillo",
+          "Cerveza Negra",
+          "Arvejas"
         ],
         "sensory": {
           "flavor": [
@@ -32,18 +56,6 @@
           ],
           "presentation": "Se sirve con una presa de pollo dorada sobre el arroz verde, acompañado de Salsa Criolla y, a veces, Papa a la Huancaína."
         },
-        "main_ingredients": [
-          "Pollo",
-          "Arroz",
-          "Culantro (Cilantro)",
-          "Ají Amarillo",
-          "Cerveza Negra",
-          "Arvejas"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "30 minutos",
-        "cook_time": "45 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 850,
           "macros": {
@@ -52,22 +64,12 @@
             "carbs_g": 95
           }
         },
-        "tags": [
-          "Criollo",
-          "Domingo",
-          "Culantro"
-        ],
         "images": [
           {
             "url": "https://pixabay.com/es/photos/arroz-con-pollo-peruvian-food-6146258/",
             "description": "Arroz con Pollo Peruano clásico (Pixabay)"
           }
         ],
-        "sources": [
-          "https://www.yanuq.com/",
-          "https://www.gastronomiaperu.com/"
-        ],
-        "license": "MIT",
         "description": "El Arroz con Pollo Peruano es un ícono de la cocina criolla, famoso por su color verde intenso derivado del culantro (cilantro) y su sabor profundo aportado por la cerveza negra y el ají amarillo. Es una adaptación mestiza de la paella española."
       },
       "category": [
@@ -103,10 +105,36 @@
       "metadata": {
         "title": "Chicha Morada",
         "region": "Sierra/Costa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Bebida",
           "Tradicional",
           "Refrescante"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "45 minutos",
+        "servings": 8,
+        "tags": [
+          "Chicha",
+          "Morada",
+          "Bebida",
+          "Maiz"
+        ],
+        "main_ingredients": [
+          "Maíz morado entero (mazorcas)",
+          "Cáscara de piña madura",
+          "Membrillo o manzana de agua",
+          "Canela en rama",
+          "Clavo de olor entero",
+          "Limón sutil (lima verde)"
         ],
         "sensory": {
           "flavor": [
@@ -125,18 +153,6 @@
           ],
           "presentation": "Servida bien helada en jarras transparentes de vidrio, de un color púrpura oscuro intenso y brillante, decorada con cubitos pequeños de manzana roja y piña en el fondo del vaso."
         },
-        "main_ingredients": [
-          "Maíz morado entero (mazorcas)",
-          "Cáscara de piña madura",
-          "Membrillo o manzana de agua",
-          "Canela en rama",
-          "Clavo de olor entero",
-          "Limón sutil (lima verde)"
-        ],
-        "difficulty": "★☆☆☆☆",
-        "prep_time": "15 minutos",
-        "cook_time": "45 minutos",
-        "servings": 8,
         "nutrition": {
           "calories": 120,
           "macros": {
@@ -145,29 +161,12 @@
             "carbs_g": 30
           }
         },
-        "tags": [
-          "Chicha",
-          "Morada",
-          "Bebida",
-          "Maiz"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
             "description": "Chicha Morada helada tradicional peruana"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "La Chicha Morada es la bebida refrescante no alcohólica más famosa del Perú. De origen prehispánico, se prepara hirviendo mazorcas de maíz morado andino junto con cáscaras de piña, manzana, canela y clavo, y se sirve fría con jugo de limón sutil y azúcar."
       },
       "category": [
@@ -204,10 +203,36 @@
       "metadata": {
         "title": "Ají de Gallina",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Guiso"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Aji",
+          "Gallina",
+          "Criollo",
+          "Guiso"
+        ],
+        "main_ingredients": [
+          "Pechuga de gallina (o pollo)",
+          "Pasta de ají amarillo",
+          "Pan de molde (o galletas de soda)",
+          "Leche evaporada",
+          "Nueces (Pecanas)",
+          "Queso Parmesano"
         ],
         "sensory": {
           "flavor": [
@@ -227,18 +252,6 @@
           ],
           "presentation": "Guiso cremoso amarillo profundo con hebras de gallina, servido sobre papas cocidas, decorado con cuartos de huevo duro, aceitunas negras botija y acompañado de arroz blanco graneado."
         },
-        "main_ingredients": [
-          "Pechuga de gallina (o pollo)",
-          "Pasta de ají amarillo",
-          "Pan de molde (o galletas de soda)",
-          "Leche evaporada",
-          "Nueces (Pecanas)",
-          "Queso Parmesano"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "30 minutos",
-        "cook_time": "40 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 620,
           "macros": {
@@ -247,29 +260,12 @@
             "carbs_g": 50
           }
         },
-        "tags": [
-          "Aji",
-          "Gallina",
-          "Criollo",
-          "Guiso"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
             "description": "Ají de Gallina cremoso con arroz"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Ají de Gallina es un exquisito guiso cremoso criollo peruano. Consiste en una reducción de caldo de gallina espesada con pan, leche evaporada, pecanas licuadas y enriquecida con abundante pasta de ají amarillo aromático."
       },
       "category": [
@@ -306,10 +302,36 @@
       "metadata": {
         "title": "Anticuchos de Corazón",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Parrilla"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Anticuchos",
+          "Corazon",
+          "Criollo",
+          "Parrilla"
+        ],
+        "main_ingredients": [
+          "Corazón de res entero",
+          "Pasta de ají panca",
+          "Ajo molido",
+          "Vinagre tinto",
+          "Orégano seco",
+          "Cerveza rubia (o chicha de jora)"
         ],
         "sensory": {
           "flavor": [
@@ -329,18 +351,6 @@
           ],
           "presentation": "Trozos de corazón ensartados en palitos de caña, dorados al carbón, brillando con su adobo de ají panca, acompañados de papas doradas cocidas y rodajas de choclo, servidos con salsa de ají de anticucho."
         },
-        "main_ingredients": [
-          "Corazón de res entero",
-          "Pasta de ají panca",
-          "Ajo molido",
-          "Vinagre tinto",
-          "Orégano seco",
-          "Cerveza rubia (o chicha de jora)"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "40 minutos",
-        "cook_time": "15 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 340,
           "macros": {
@@ -349,29 +359,12 @@
             "carbs_g": 16
           }
         },
-        "tags": [
-          "Anticuchos",
-          "Corazon",
-          "Criollo",
-          "Parrilla"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Anticuchos de Corazón peruanos tradicionales"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "Los Anticuchos de Corazón son brochetas de corazón de res marinado en una potente mezcla de ají panca, vinagre tinto, ajo y especias, asadas rápidamente a la parrilla de carbón. Un clásico absoluto de la cocina callejera peruana."
       },
       "category": [
@@ -408,10 +401,36 @@
       "metadata": {
         "title": "Carapulcra Limeña",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Festivo"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "1 hora",
+        "servings": 6,
+        "tags": [
+          "Carapulcra",
+          "Criollo",
+          "Festivo",
+          "Chincha"
+        ],
+        "main_ingredients": [
+          "Papa seca peruana (papa deshidratada)",
+          "Carne de cerdo (panceta o bondiola)",
+          "Pasta de ají panca",
+          "Maní tostado molido",
+          "Canela y clavo de olor",
+          "Cerveza negra o Oporto"
         ],
         "sensory": {
           "flavor": [
@@ -431,18 +450,6 @@
           ],
           "presentation": "Guiso espeso de color marrón chocolate brillante con pequeños cubos granulados de papa seca hidratada, trozos de carne de cerdo dorada, espolvoreado con maní tostado y acompañado de Sopa Seca (fideos condimentados) y Salsa Criolla."
         },
-        "main_ingredients": [
-          "Papa seca peruana (papa deshidratada)",
-          "Carne de cerdo (panceta o bondiola)",
-          "Pasta de ají panca",
-          "Maní tostado molido",
-          "Canela y clavo de olor",
-          "Cerveza negra o Oporto"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "45 minutos",
-        "cook_time": "1 hora",
-        "servings": 6,
         "nutrition": {
           "calories": 740,
           "macros": {
@@ -451,29 +458,12 @@
             "carbs_g": 58
           }
         },
-        "tags": [
-          "Carapulcra",
-          "Criollo",
-          "Festivo",
-          "Chincha"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Carapulcra tradicional peruana con Sopa Seca"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "La Carapulcra es un guiso mestizo peruano de origen prehispánico, considerado uno de los platos más antiguos del país. Elaborado a base de papa seca (papa andina deshidratada y tostada), guisada lentamente con carne de cerdo, abundante ají panca, ajo, comino, vino dulce y maní molido."
       },
       "category": [
@@ -510,10 +500,36 @@
       "metadata": {
         "title": "Causa Limeña",
         "region": "Costa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Entrada",
           "Criollo",
           "Frío"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "35 minutos",
+        "cook_time": "20 minutos",
+        "servings": 6,
+        "tags": [
+          "Causa",
+          "Limeña",
+          "Entrada",
+          "Frío"
+        ],
+        "main_ingredients": [
+          "Papa amarilla peruana",
+          "Pasta de ají amarillo",
+          "Jugo de limón sutil",
+          "Pechuga de pollo (o atún)",
+          "Palta (Aguacate)",
+          "Mayonesa casera"
         ],
         "sensory": {
           "flavor": [
@@ -533,18 +549,6 @@
           ],
           "presentation": "Presentado en capas cilíndricas perfectas de puré amarillo brillante, relleno de ensalada de pollo deshilachado con mayonesa y láminas de palta (aguacate) cremosa, decorado con huevo duro y aceituna botija negra."
         },
-        "main_ingredients": [
-          "Papa amarilla peruana",
-          "Pasta de ají amarillo",
-          "Jugo de limón sutil",
-          "Pechuga de pollo (o atún)",
-          "Palta (Aguacate)",
-          "Mayonesa casera"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "35 minutos",
-        "cook_time": "20 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 420,
           "macros": {
@@ -553,29 +557,12 @@
             "carbs_g": 38
           }
         },
-        "tags": [
-          "Causa",
-          "Limeña",
-          "Entrada",
-          "Frío"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
             "description": "Causa Limeña decorada con huevo y aceituna"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "La Causa Limeña es un plato frío prehispánico que consiste en una masa sedosa de papa amarilla prensada condimentada con pasta de ají amarillo, limón sutil y aceite, rellena tradicionalmente de pollo deshilachado o atún con mayonesa y palta."
       },
       "category": [
@@ -612,10 +599,37 @@
       "metadata": {
         "title": "Ceviche Limeño",
         "region": "Costa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Marino",
           "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "0 minutos",
+        "servings": 4,
+        "tags": [
+          "Ceviche",
+          "Limeño",
+          "Fresco",
+          "Marino"
+        ],
+        "main_ingredients": [
+          "Pescado blanco (Lenguado o Corvina)",
+          "Limón sutil (Lima verde)",
+          "Ají limo",
+          "Cebolla roja",
+          "Cilantro fresco",
+          "Choclo (Maíz)",
+          "Camote (Batata)"
         ],
         "sensory": {
           "flavor": [
@@ -635,19 +649,6 @@
           ],
           "presentation": "Servido en un plato hondo con trozos de pescado blanco, bañado en leche de tigre, acompañado de camote glaseado, choclo desgranado, cebolla en pluma y hojas de cilantro."
         },
-        "main_ingredients": [
-          "Pescado blanco (Lenguado o Corvina)",
-          "Limón sutil (Lima verde)",
-          "Ají limo",
-          "Cebolla roja",
-          "Cilantro fresco",
-          "Choclo (Maíz)",
-          "Camote (Batata)"
-        ],
-        "difficulty": "★★☆☆☆",
-        "prep_time": "20 minutos",
-        "cook_time": "0 minutos",
-        "servings": 4,
         "nutrition": {
           "calories": 220,
           "macros": {
@@ -656,29 +657,12 @@
             "carbs_g": 22
           }
         },
-        "tags": [
-          "Ceviche",
-          "Limeño",
-          "Fresco",
-          "Marino"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
             "description": "Ceviche Peruano Clásico"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Ceviche Limeño es la joya de la corona de la gastronomía costera del Perú. Consiste en cubos de pescado blanco fresco marinados brevemente en jugo de limón recién exprimido, sazonados con sal, ají limo picado y cebolla roja en plumas."
       },
       "category": [
@@ -716,10 +700,37 @@
       "metadata": {
         "title": "Lomo Saltado",
         "region": "Costa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Fusión"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "10 minutos",
+        "servings": 4,
+        "tags": [
+          "Lomo",
+          "Saltado",
+          "Criollo",
+          "Chifa"
+        ],
+        "main_ingredients": [
+          "Carne de res (Lomo fino)",
+          "Papas amarillas (para freír)",
+          "Cebolla roja",
+          "Tomate maduro",
+          "Salsa de soya (Sillao)",
+          "Vinagre tinto",
+          "Ají amarillo"
         ],
         "sensory": {
           "flavor": [
@@ -739,19 +750,6 @@
           ],
           "presentation": "Tiras de carne doradas y jugosas mezcladas con cebolla roja, pimiento y tomate, servidas sobre papas fritas crocantes y acompañadas de una porción de arroz blanco graneado."
         },
-        "main_ingredients": [
-          "Carne de res (Lomo fino)",
-          "Papas amarillas (para freír)",
-          "Cebolla roja",
-          "Tomate maduro",
-          "Salsa de soya (Sillao)",
-          "Vinagre tinto",
-          "Ají amarillo"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "25 minutos",
-        "cook_time": "10 minutos",
-        "servings": 4,
         "nutrition": {
           "calories": 680,
           "macros": {
@@ -760,29 +758,12 @@
             "carbs_g": 78
           }
         },
-        "tags": [
-          "Lomo",
-          "Saltado",
-          "Criollo",
-          "Chifa"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Lomo Saltado servido con arroz y papas fritas"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Lomo Saltado es un plato emblemático peruano nacido de la fusión chino-peruana (chifa) en el siglo XIX. Combina lomo de res saltado a fuego vivo en un wok con vegetales, salsa de soya, vinagre y papas fritas autóctonas."
       },
       "category": [
@@ -820,10 +801,36 @@
       "metadata": {
         "title": "Papa Rellena",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Entrada",
           "Criollo",
           "Fritura"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "20 minutos",
+        "servings": 6,
+        "tags": [
+          "Papa",
+          "Rellena",
+          "Frito",
+          "Criollo"
+        ],
+        "main_ingredients": [
+          "Papa blanca y papa amarilla",
+          "Carne de res molida o picada",
+          "Cebolla roja",
+          "Pasta de ají panca",
+          "Huevo duro picado",
+          "Harina de trigo"
         ],
         "sensory": {
           "flavor": [
@@ -843,18 +850,6 @@
           ],
           "presentation": "Óvalo dorado y crocante de papa frita, servido caliente sobre hojas de lechuga, acompañado de abundante Salsa Criolla de cebolla roja y limón."
         },
-        "main_ingredients": [
-          "Papa blanca y papa amarilla",
-          "Carne de res molida o picada",
-          "Cebolla roja",
-          "Pasta de ají panca",
-          "Huevo duro picado",
-          "Harina de trigo"
-        ],
-        "difficulty": "★★★☆☆",
-        "prep_time": "40 minutos",
-        "cook_time": "20 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 390,
           "macros": {
@@ -863,29 +858,12 @@
             "carbs_g": 44
           }
         },
-        "tags": [
-          "Papa",
-          "Rellena",
-          "Frito",
-          "Criollo"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Papas Rellenas peruanas doradas y crujientes"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "La Papa Rellena es una entrada clásica de la gastronomía criolla peruana. Consiste en una masa maleable de papa cocida y prensada, rellena de un jugoso picadillo de carne con pasas, huevo duro y aceituna, moldeada en forma de óvalo, enharinada y frita hasta quedar crocante."
       },
       "category": [
@@ -922,10 +900,36 @@
       "metadata": {
         "title": "Seco de Cabrito",
         "region": "Costa (Norte)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Criollo",
           "Festivo"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "30 minutos",
+        "cook_time": "1 hora 15 minutos",
+        "servings": 6,
+        "tags": [
+          "Seco",
+          "Cabrito",
+          "Chiclayo",
+          "Criollo"
+        ],
+        "main_ingredients": [
+          "Carne de cabrito (o cordero tierno)",
+          "Culantro (Cilantro) fresco",
+          "Chicha de jora (maíz fermentado)",
+          "Pasta de ají amarillo",
+          "Pasta de ají mirasol",
+          "Loche (zapallo loche norteño)"
         ],
         "sensory": {
           "flavor": [
@@ -945,18 +949,6 @@
           ],
           "presentation": "Trozos tiernos de cabrito bañados en una espesa salsa verde oscura de cilantro, acompañados tradicionalmente de frijoles bayos, arroz blanco graneado, yucas cocidas y salsa criolla."
         },
-        "main_ingredients": [
-          "Carne de cabrito (o cordero tierno)",
-          "Culantro (Cilantro) fresco",
-          "Chicha de jora (maíz fermentado)",
-          "Pasta de ají amarillo",
-          "Pasta de ají mirasol",
-          "Loche (zapallo loche norteño)"
-        ],
-        "difficulty": "★★★★☆",
-        "prep_time": "30 minutos",
-        "cook_time": "1 hora 15 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 680,
           "macros": {
@@ -965,29 +957,12 @@
             "carbs_g": 54
           }
         },
-        "tags": [
-          "Seco",
-          "Cabrito",
-          "Chiclayo",
-          "Criollo"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Seco de Cabrito norteño tradicional"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Seco de Cabrito es el guiso rey de la costa norte peruana. Consiste en trozos de cabrito de leche macerados en chicha de jora y cocidos lentamente en un aderezo espeso de cilantro licuado, ajíes locales y zapallo loche rallado."
       },
       "category": [
@@ -1024,10 +999,36 @@
       "metadata": {
         "title": "Juane de Gallina",
         "region": "Selva",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Amazónico",
           "Festivo"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "1 hora",
+        "servings": 4,
+        "tags": [
+          "Juane",
+          "Selva",
+          "Amazonico",
+          "San Juan"
+        ],
+        "main_ingredients": [
+          "Arroz blanco",
+          "Pechuga o pierna de gallina de chacra",
+          "Mishquina (pasta de cúrcuma y especias)",
+          "Hojas de bijao (para envolver)",
+          "Sacha culantro (cilantro silvestre amazónico)",
+          "Huevos duros enteros"
         ],
         "sensory": {
           "flavor": [
@@ -1047,18 +1048,6 @@
           ],
           "presentation": "Masa redonda y compacta de arroz amarillo envuelta artísticamente en hojas de bijao asadas, atada en la parte superior asemejando una cabeza, rellena de una presa de gallina y un huevo duro entero."
         },
-        "main_ingredients": [
-          "Arroz blanco",
-          "Pechuga o pierna de gallina de chacra",
-          "Mishquina (pasta de cúrcuma y especias)",
-          "Hojas de bijao (para envolver)",
-          "Sacha culantro (cilantro silvestre amazónico)",
-          "Huevos duros enteros"
-        ],
-        "difficulty": "★★★★☆",
-        "prep_time": "45 minutos",
-        "cook_time": "1 hora",
-        "servings": 4,
         "nutrition": {
           "calories": 690,
           "macros": {
@@ -1067,29 +1056,12 @@
             "carbs_g": 82
           }
         },
-        "tags": [
-          "Juane",
-          "Selva",
-          "Amazonico",
-          "San Juan"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Juane de Gallina tradicional de la selva peruana"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Juane de Gallina es el plato más emblemático de la Amazonía peruana, consumido tradicionalmente durante la fiesta de San Juan Bautista (24 de junio). Consiste en arroz sazonado con especias amazónicas y sacha culantro, relleno de gallina, envuelto en hojas de bijao y cocido al vapor."
       },
       "category": [
@@ -1126,10 +1098,36 @@
       "metadata": {
         "title": "Chupe de Camarones",
         "region": "Costa/Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Sopa",
           "Marino",
           "Festivo"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "35 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Chupe",
+          "Camarones",
+          "Arequipa",
+          "Sopa"
+        ],
+        "main_ingredients": [
+          "Camarones enteros frescos (río)",
+          "Pasta de ají panca",
+          "Leche evaporada entera",
+          "Queso fresco paria (andino)",
+          "Arroz blanco",
+          "Huacatay fresco (Minthostachys mollis)"
         ],
         "sensory": {
           "flavor": [
@@ -1149,18 +1147,6 @@
           ],
           "presentation": "Servido en un plato sopero hondo muy caliente, con camarones enteros gigantes coronando el caldo rojo-anaranjado, decorado con un huevo escalfado, dados de queso fresco que se derriten lentamente, choclo y un hilo de huacatay fresco picado."
         },
-        "main_ingredients": [
-          "Camarones enteros frescos (río)",
-          "Pasta de ají panca",
-          "Leche evaporada entera",
-          "Queso fresco paria (andino)",
-          "Arroz blanco",
-          "Huacatay fresco (Minthostachys mollis)"
-        ],
-        "difficulty": "★★★★☆",
-        "prep_time": "35 minutos",
-        "cook_time": "30 minutos",
-        "servings": 4,
         "nutrition": {
           "calories": 720,
           "macros": {
@@ -1169,29 +1155,12 @@
             "carbs_g": 62
           }
         },
-        "tags": [
-          "Chupe",
-          "Camarones",
-          "Arequipa",
-          "Sopa"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
             "description": "Chupe de Camarones arequipeño tradicional"
           }
         ],
-        "sources": [
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          },
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Chupe de Camarones es una sopa soberbia y reconstituyente, insignia de la culinaria de Arequipa. Fusiona camarones de río frescos, papas, choclo, habas, arroz y queso andino en un caldo sustancioso aromatizado con ají panca y huacatay, enriquecido con leche evaporada y huevo."
       },
       "category": [
@@ -1228,10 +1197,36 @@
       "metadata": {
         "title": "Papa a la Huancaína",
         "region": "Sierra/Costa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Entrada",
           "Criollo",
           "Frío"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Papa",
+          "Huancaina",
+          "Entrada",
+          "Clasico"
+        ],
+        "main_ingredients": [
+          "Papas amarillas (o blancas arenosas)",
+          "Ají amarillo fresco",
+          "Queso fresco andino salado",
+          "Leche evaporada entera",
+          "Galletas de soda clásicas",
+          "Aceite vegetal neutro"
         ],
         "sensory": {
           "flavor": [
@@ -1251,18 +1246,6 @@
           ],
           "presentation": "Rodajas homogéneas de papa andina cocida dispuestas sobre hojas de lechuga, cubiertas generosamente por una salsa cremosa de color amarillo brillante, decoradas con gajos de huevo duro y aceituna negra de botija."
         },
-        "main_ingredients": [
-          "Papas amarillas (o blancas arenosas)",
-          "Ají amarillo fresco",
-          "Queso fresco andino salado",
-          "Leche evaporada entera",
-          "Galletas de soda clásicas",
-          "Aceite vegetal neutro"
-        ],
-        "difficulty": "★★☆☆☆",
-        "prep_time": "20 minutos",
-        "cook_time": "15 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 310,
           "macros": {
@@ -1271,29 +1254,12 @@
             "carbs_g": 32
           }
         },
-        "tags": [
-          "Papa",
-          "Huancaina",
-          "Entrada",
-          "Clasico"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
             "description": "Papa a la Huancaína tradicional peruana"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "La Papa a la Huancaína es una de las entradas más populares, sencillas y emblemáticas del Perú. Consiste en papas andinas cocidas bañadas en una salsa de textura aterciopelada elaborada a base de queso fresco, ají amarillo sofrito, leche evaporada y galletas de soda."
       },
       "category": [
@@ -1330,10 +1296,36 @@
       "metadata": {
         "title": "Rocoto Relleno",
         "region": "Sierra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
         "categories": [
           "Plato fuerte",
           "Arequipeño",
           "Picante"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Rocoto",
+          "Relleno",
+          "Arequipa",
+          "Picante"
+        ],
+        "main_ingredients": [
+          "Rocotos medianos enteros",
+          "Carne de res (lomo o cadera)",
+          "Cebolla roja",
+          "Maní tostado molido",
+          "Pasas negras",
+          "Queso fresco serrano (paria o similar)"
         ],
         "sensory": {
           "flavor": [
@@ -1353,18 +1345,6 @@
           ],
           "presentation": "Rocoto rojo brillante relleno de un jugoso picadillo de carne de res picada, cubierto con una lámina dorada de queso fresco derretido, bañado en una salsa de huevo y leche, acompañado tradicionalmente de Pastel de Papa."
         },
-        "main_ingredients": [
-          "Rocotos medianos enteros",
-          "Carne de res (lomo o cadera)",
-          "Cebolla roja",
-          "Maní tostado molido",
-          "Pasas negras",
-          "Queso fresco serrano (paria o similar)"
-        ],
-        "difficulty": "★★★★☆",
-        "prep_time": "45 minutos",
-        "cook_time": "30 minutos",
-        "servings": 6,
         "nutrition": {
           "calories": 480,
           "macros": {
@@ -1373,29 +1353,12 @@
             "carbs_g": 34
           }
         },
-        "tags": [
-          "Rocoto",
-          "Relleno",
-          "Arequipa",
-          "Picante"
-        ],
         "images": [
           {
             "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
             "description": "Rocoto Relleno arequipeño tradicional"
           }
         ],
-        "sources": [
-          {
-            "name": "Yanuq Cocina Peruana",
-            "url": "https://www.yanuq.com"
-          },
-          {
-            "name": "Gastronomía Perú",
-            "url": "https://www.gastronomiaperu.com"
-          }
-        ],
-        "license": "MIT",
         "description": "El Rocoto Relleno es el plato insignia de la gastronomía de Arequipa (Sierra Sur peruana). Consiste en rocotos previamente desalados para atenuar su picor, rellenos con un guiso dulce de carne picada a cuchillo, maní y pasas, cubiertos de queso y horneados."
       },
       "category": [

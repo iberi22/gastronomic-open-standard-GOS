@@ -1,11 +1,59 @@
 ---
-title: "Achiras Del Huila"
-region: "Colombia"
-categories: ["Achiras"]
-difficulty: "★★★☆☆"
-prep_time: "40"
-cook_time: "40"
-servings: "20"
+title: Achiras del Huila
+region: Andina (Huila)
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Amasijo
+  - Snack
+  - Crocante
+difficulty: ★★★☆☆
+prep_time: '40'
+cook_time: '40'
+servings: 20
+tags:
+  - Opita
+  - Biscocho
+  - Denominación de Origen
+main_ingredients:
+  - Almidón de Achira (Canna indica)
+  - Cuajada Fresca (con punto de acidez)
+  - Mantequilla
+  - Yema de Huevo
+sensory:
+  flavor:
+    - Cuajada Tostada
+    - Mantequilla
+    - Mineral
+  texture:
+    - Crocante (Hard Crack)
+    - Arenoso al final
+    - Seco
+  aroma:
+    - Queso Maduro (por horneado)
+    - Horno de barro
+  presentation: >-
+    Pequeños cilindros o 'deditos' de color amarillo oro uniforme. Deben ser
+    totalmente secos al tacto y partirse con un chasquido.
+nutrition:
+  calories: 120
+  macros:
+    protein_g: 4
+    fat_g: 6
+    carbs_g: 14
+images:
+  - url: 'https://im.ge/i/achira-1.AbC000'
+    description: Achiras huilenses crocantes
+description: >-
+  El snack de oro de Colombia. Las Achiras son el único amasijo popular hecho
+  con el almidón de la planta de sagú (Canna indica). Su característica
+  principal es la textura crocante y arenosa que se deshace en la boca, lograda
+  por la alta temperatura de cristalización del almidón.
 ---
 
 # Achiras del Huila (Bizcocho de Achira)

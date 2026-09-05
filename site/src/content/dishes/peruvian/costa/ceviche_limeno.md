@@ -1,11 +1,65 @@
 ---
-title: "Ceviche LimeñO"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "0 minutos"
-servings: "4"
+title: Ceviche Limeño
+region: Costa
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Marino
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 0 minutos
+servings: 4
+tags:
+  - Ceviche
+  - Limeño
+  - Fresco
+  - Marino
+main_ingredients:
+  - Pescado blanco (Lenguado o Corvina)
+  - Limón sutil (Lima verde)
+  - Ají limo
+  - Cebolla roja
+  - Cilantro fresco
+  - Choclo (Maíz)
+  - Camote (Batata)
+sensory:
+  flavor:
+    - Ácido Cítrico
+    - Umami (Pescado)
+    - Picante (Ají Limo)
+  texture:
+    - Firme (Pescado fresco)
+    - Crujiente (Cebolla roja)
+    - Cremoso (Camote)
+  aroma:
+    - Limón fresco
+    - Cilantro
+    - Brisa marina
+  presentation: >-
+    Servido en un plato hondo con trozos de pescado blanco, bañado en leche de
+    tigre, acompañado de camote glaseado, choclo desgranado, cebolla en pluma y
+    hojas de cilantro.
+nutrition:
+  calories: 220
+  macros:
+    protein_g: 28
+    fat_g: 2
+    carbs_g: 22
+images:
+  - url: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb'
+    description: Ceviche Peruano Clásico
+description: >-
+  El Ceviche Limeño es la joya de la corona de la gastronomía costera del Perú.
+  Consiste en cubos de pescado blanco fresco marinados brevemente en jugo de
+  limón recién exprimido, sazonados con sal, ají limo picado y cebolla roja en
+  plumas.
 ---
 
 # Ceviche Limeño
@@ -62,7 +116,7 @@ El ceviche limeño es el plato bandera del Perú, conocido por su frescura, equi
 
 ## 📸 Galería
 
-
+![Ceviche Limeño](/dishes/peruvian/costa/images/ceviche.webp)
 
 ---
 

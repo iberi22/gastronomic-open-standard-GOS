@@ -1,11 +1,63 @@
 ---
-title: "Feijoada Completa Brasileira"
-region: "Brasil"
-categories: ["Plato"]
-difficulty: "★★★★☆"
-prep_time: "12 horas"
-cook_time: "3 horas"
-servings: "8"
+title: Feijoada Completa Brasileira
+region: Brasil
+language: pt
+license: MIT
+source:
+  name: tudogostoso.com.br
+  url: 'https://www.tudogostoso.com.br/receita/2911-feijoada-completa.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Guiso
+  - Tradicional
+difficulty: ★★★★☆
+prep_time: 12 horas
+cook_time: 3 horas
+servings: 8
+tags:
+  - Frijoles negros
+  - Cerdo
+  - Ahumado
+  - Bahía
+  - Río de Janeiro
+main_ingredients:
+  - Frijoles negros
+  - Costilla de cerdo
+  - Carne de sol
+  - Chorizo calabresa
+  - Tocino (bacon)
+  - Laurel
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Ahumado
+  texture:
+    - Cremoso
+    - Suave
+    - Espeso
+  aroma:
+    - Frijol negro cocido
+    - Carnes ahumadas
+    - Laurel y ajo
+  presentation: >-
+    Servido en olla de barro, acompañado de arroz blanco, farofa, couve mineira
+    (col rizada), gajos de naranja y vinagreta.
+nutrition:
+  calories: 850
+  macros:
+    protein_g: 52
+    fat_g: 38
+    carbs_g: 75
+images:
+  - url: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea'
+    description: Feijoada tradicional servida en vasija de barro (Unsplash)
+description: >-
+  La Feijoada es el plato nacional de Brasil. Se trata de un guiso espeso de
+  frijoles negros cocidos a fuego lento con una gran variedad de carnes saladas,
+  ahumadas y frescas de cerdo y res. Es un plato festivo que celebra la unión y
+  la diversidad cultural de Brasil.
 ---
 
 # Feijoada Completa Brasileira
@@ -65,7 +117,7 @@ La Feijoada es el plato nacional y el corazón de la gastronomía de Brasil. Est
 
 ## 📸 Galería
 
-
+![Feijoada Completa en Vasija de Barro](/dishes/brazilian/images/feijoada_1.webp)
 
 ---
 

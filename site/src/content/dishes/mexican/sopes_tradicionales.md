@@ -1,11 +1,58 @@
 ---
-title: "Sopes Tradicionales"
-region: "México"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "30 minutos"
-cook_time: "20 minutos"
-servings: "4"
+title: Sopes Tradicionales
+region: Centro de México
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Antojito
+  - Cena
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 30 minutos
+cook_time: 20 minutos
+servings: 4
+tags:
+  - Mexican
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Masa de maíz nixtamalizado
+  - Frijoles negros refritos
+  - Lechuga picada
+  - Queso Cotija
+  - Crema fresca
+  - Salsa verde
+sensory:
+  flavor:
+    - Salado
+    - Maíz tostado
+    - Frijol refrito
+  texture:
+    - Base firme con bordes pellizcados
+    - Cremoso de frijol
+  aroma:
+    - Maíz frito en manteca
+    - Queso cotija
+  presentation: >-
+    Tortillas gruesas con pellizco lateral rellenas de frijol, lechuga, crema,
+    queso y salsa.
+nutrition:
+  calories: 440
+  macros:
+    protein_g: 14
+    fat_g: 18
+    carbs_g: 56
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Sopes Tradicionales tradicional
+description: >-
+  Los Sopes son pellizcadas de masa gruesa de maíz fritas en manteca, servidas
+  con una capa base de frijoles refritos y coberturas tradicionales.
 ---
 
 # Sopes Tradicionales

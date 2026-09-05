@@ -1,11 +1,59 @@
 ---
-title: "Sopa De Tortilla (Ateca)"
-region: "México"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Sopa de Tortilla (Ateca)
+region: Ciudad de México
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Sopa
+  - Entrante
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Mexican
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Caldo de pollo
+  - Jitomates asados
+  - Chile pasilla seco
+  - Tiras de tortilla de maíz
+  - Aguacate
+  - Queso fresco
+  - Crema
+sensory:
+  flavor:
+    - Jitomate asado
+    - Chile pasilla ahumado
+    - Salado
+  texture:
+    - Tiras de tortilla crujientes
+    - Caldo reconfortante
+    - Cremoso de aguacate
+  aroma:
+    - Chile pasilla frito
+    - Caldo de pollo frito
+  presentation: >-
+    Caldo rojo servido hirviendo sobre tiras crujientes de tortilla frita,
+    cubierto con aguacate, queso y crema.
+nutrition:
+  calories: 380
+  macros:
+    protein_g: 15
+    fat_g: 18
+    carbs_g: 40
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Sopa de Tortilla (Ateca) tradicional
+description: >-
+  La Sopa de Tortilla es una sopa tradicional mexicana cuyo caldo concentrado de
+  jitomate y chile pasilla se vierte sobre crujientes tiras de tortilla de maíz.
 ---
 
 # Sopa de Tortilla (Ateca)

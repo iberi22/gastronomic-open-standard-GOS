@@ -1,11 +1,65 @@
 ---
-title: "Asado Criollo Argentino"
-region: "Argentina"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "30 minutos"
-cook_time: "2 horas y 30 minutos"
-servings: "6"
+title: Asado Criollo Argentino
+region: La Pampa / Pampeana
+language: es
+license: MIT
+source:
+  name: recetasargentinas.net
+  url: 'https://www.recetasargentinas.net/'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Parrilla
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 2 horas y 30 minutos
+servings: 6
+tags:
+  - Argentina
+  - Asado
+  - Parrilla
+  - Carne
+  - Chimichurri
+  - Tradición
+main_ingredients:
+  - Costillar de vacuno (tira de asado)
+  - Vacío de vacuno
+  - Chorizos criollos
+  - Morcillas
+  - Sal gruesa
+  - Carbón vegetal o leña de quebracho
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Ahumado
+  texture:
+    - Crujiente exterior
+    - Suave interior
+    - Masticable
+  aroma:
+    - Carne asada
+    - Madera quemada
+    - Ahumado
+  presentation: >-
+    Se sirve caliente, directo de la parrilla sobre una tabla de madera gruesa,
+    acompañado de salsa chimichurri y ensalada mixta de lechuga, tomate y
+    cebolla.
+nutrition:
+  calories: 780
+  macros:
+    protein_g: 52
+    fat_g: 64
+    carbs_g: 0
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Asado argentino criollo cocinado lentamente a las brasas
+description: >-
+  El Asado Criollo es la ceremonia culinaria y social por excelencia de la
+  Argentina. Consiste en cortes seleccionados de carne de vacuno, achuras y
+  embutidos cocinados lentamente a fuego indirecto sobre las brasas de leña o
+  carbón vegetal, sazonados únicamente con sal gruesa.
 ---
 
 # Asado Criollo Argentino

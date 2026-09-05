@@ -1,11 +1,56 @@
 ---
-title: "Sancocho De Pescado PacíFico"
-region: "Colombia"
-categories: ["Sancocho_de_pescado"]
-difficulty: "★★★☆☆"
-prep_time: "30 minutos"
-cook_time: "1 hora"
-servings: "8"
+title: Sancocho de Pescado Pacífico
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: eltiempo.com
+  url: 'https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Sopa festiva
+  - Comida típica
+difficulty: ★★★☆☆
+prep_time: 30 minutos
+cook_time: 1 hora
+servings: 8
+main_ingredients:
+  - Pescado fresco
+  - Leche de coco
+  - Yuca
+  - Plátano verde
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Lácteo (coco)
+  texture:
+    - Cremoso
+    - Suave
+  aroma:
+    - Marino
+    - Herbal (cilantro cimarrón y tomillo)
+    - Lácteo (coco)
+  presentation: >-
+    Se sirve en platos hondos, decorado con cilantro cimarrón y acompañado de
+    arroz con coco. Centro de celebraciones familiares en el Pacífico.
+nutrition:
+  calories: 1168
+  macros:
+    protein_g: 25.2
+    fat_g: 4.1
+    carbs_g: 268.5
+images:
+  - url: 'https://pixabay.com/es/photos/sancocho-pacifico-colombia-6146277/'
+    description: Sancocho de pescado tradicional del Pacífico colombiano (Pixabay)
+  - url: 'https://unsplash.com/s/photos/sancocho-pescado-colombia'
+    description: Variaciones de sancocho de pescado en Unsplash
+description: >-
+  El Sancocho de Pescado es una sopa tradicional y emblemática de la región
+  Pacífica de Colombia. Se prepara con pescado fresco, tubérculos, plátano y
+  leche de coco, resultando en un plato reconfortante, aromático y lleno de
+  sabor afrocolombiano.
 ---
 
 ## Sancocho de Pescado Pacífico
@@ -63,7 +108,7 @@ El Sancocho de Pescado es una sopa tradicional y emblemática de la región Pac�
 
 ## 📸 Galería
 
-
+![Sancocho de Pescado del Pacífico](/dishes/colombian/pacifica/sancocho_de_pescado/images/1.webp)
 
 ---
 

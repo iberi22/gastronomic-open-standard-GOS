@@ -1,11 +1,62 @@
 ---
-title: "Ceviche De CamaróN CosteñO"
-region: "Colombia"
-categories: ["Ceviche_de_camaron"]
-difficulty: "★☆☆☆☆"
-prep_time: "20"
-cook_time: "5"
-servings: "4"
+title: Ceviche de Camarón Costeño
+region: Caribe
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Entrada
+  - Fresco
+  - Ceviche
+difficulty: ★☆☆☆☆
+prep_time: '20'
+cook_time: '5'
+servings: 4
+tags:
+  - Cartagena
+  - Playa
+  - Cóctel
+main_ingredients:
+  - Camarón (Escaldado)
+  - Limón Tahití (Jugo fresco)
+  - Salsa de Tomate (Ketchup)
+  - Mayonesa (opcional/moderno)
+  - Cebolla Roja (Desflemada)
+  - Ajo
+  - Cilantro
+sensory:
+  flavor:
+    - Ácido-Dulce (Equilibrado)
+    - Umami (Tomate)
+    - Picante suave
+  texture:
+    - Snap / Turgente (Camarón)
+    - Crujiente (Cebolla)
+    - Cremosa (Salsa)
+  aroma:
+    - Cítrico fresco
+    - Mar
+    - Ajo suave
+  presentation: >-
+    Copa de cóctel clásica o vaso transparente. Salsa rosada brillante. Se
+    acompaña tradicionalmente con Galletas de Soda (Saltinas).
+nutrition:
+  calories: 210
+  macros:
+    protein_g: 18
+    fat_g: 7
+    carbs_g: 15
+images:
+  - url: 'https://im.ge/i/ceviche-1.AbC789'
+    description: Ceviche de camarón costeño con salsa rosada
+description: >-
+  La versión colombiana del ceviche. A diferencia del estilo peruano, el costeño
+  utiliza camarones pre-cocidos (técnica de seguridad en climas cálidos) y una
+  emulsión de tomate y limón que actúa como una 'Leche de Tigre' dulce-ácida.
 ---
 
 # Ceviche de Camarón Costeño
@@ -30,7 +81,7 @@ A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o c
     * 1 manojo de cilantro fresco picado
     * Opcional: Ajo finamente picado
 * **La Salsa (El secreto):**
-    * 1/2 taza de **[Salsa de Tomate](../../condimentos/salsa_rosada)** (Ketchup) de buena calidad
+    * 1/2 taza de **[Salsa de Tomate](/dishes/colombian/caribe/ceviche_de_camaron/../../condimentos/salsa_rosada)** (Ketchup) de buena calidad
     * 2 cucharadas de mayonesa (para dar cremosidad, opcional)
     * Jugo de 4-5 limones Tahití (jugosos)
     * Picante (Tabasco o ají chivato) al gusto
@@ -60,7 +111,7 @@ A diferencia del ceviche peruano (leche de tigre ácida/picante), el ceviche o c
 
 ## 📸 Galería
 
-
+![Ceviche Cartagenero](/dishes/colombian/caribe/ceviche_de_camaron/images/1.webp)
 
 ---
 

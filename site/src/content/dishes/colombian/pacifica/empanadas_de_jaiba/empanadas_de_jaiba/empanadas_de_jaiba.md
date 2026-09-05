@@ -1,11 +1,49 @@
 ---
-title: "Empanadas De Jaiba"
-region: "Colombia"
-categories: ["Empanadas_de_jaiba"]
-difficulty: "★★★☆☆"
-prep_time: "40 minutos"
-cook_time: "20 minutos"
-servings: "20"
+title: Empanadas de Jaiba
+region: Pacífica
+language: es
+license: MIT
+source:
+  name: eltiempo.com
+  url: 'https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941'
+  date_retrieved: '2026-09-03'
+categories:
+  - Snack
+  - Entrada
+  - Comida callejera
+  - Comida típica
+difficulty: ★★★☆☆
+prep_time: 40 minutos
+cook_time: 20 minutos
+servings: 20
+main_ingredients:
+  - Carne de jaiba
+  - Harina de maíz
+  - Cilantro cimarrón
+  - Ají
+sensory:
+  flavor:
+    - Umami
+    - Salado
+    - Picante
+  texture:
+    - Crujiente
+    - Suave
+  aroma:
+    - Marino (jaiba)
+    - Herbal (cilantro y tomillo)
+    - Frito
+  presentation: >-
+    Se sirven calientes, acompañadas de ají o limón. Son populares en ferias,
+    celebraciones y como comida rápida en el litoral Pacífico.
+images:
+  - url: ./images/empanadas_de_jaiba.png
+    description: Empanadas de jaiba crocantes con ají (Generada por AI)
+description: >-
+  Las Empanadas de Jaiba son un bocadillo tradicional del Pacífico colombiano,
+  especialmente de Buenaventura y Tumaco. Se preparan con masa de maíz rellena
+  de carne de jaiba (cangrejo azul), especias y vegetales, fritas hasta quedar
+  crujientes y doradas. Son populares en fiestas, ferias y como snac...
 ---
 
 ## Empanadas de Jaiba

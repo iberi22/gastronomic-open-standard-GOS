@@ -1,11 +1,65 @@
 ---
-title: "Carapulcra LimeñA"
-region: "Perú"
-categories: ["Costa"]
-difficulty: "★★★☆☆"
-prep_time: "45 minutos"
-cook_time: "1 hora"
-servings: "6"
+title: Carapulcra Limeña
+region: Costa/Sierra
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Criollo
+  - Festivo
+difficulty: ★★★☆☆
+prep_time: 45 minutos
+cook_time: 1 hora
+servings: 6
+tags:
+  - Carapulcra
+  - Criollo
+  - Festivo
+  - Chincha
+main_ingredients:
+  - Papa seca peruana (papa deshidratada)
+  - Carne de cerdo (panceta o bondiola)
+  - Pasta de ají panca
+  - Maní tostado molido
+  - Canela y clavo de olor
+  - Cerveza negra o Oporto
+sensory:
+  flavor:
+    - Umami Profundo (Pork and poultry)
+    - Especiado-Ahumado (Ají Panca y comino)
+    - Dulce-Tostado (Maní y chocolate)
+  texture:
+    - Granulada-Gomosa (Papa seca hidratada)
+    - Tierna (Carne de cerdo)
+    - Crujiente (Maní espolvoreado)
+  aroma:
+    - Ají panca tostado
+    - Malta de cerveza y comino
+    - Manteca de cerdo y carne asada
+  presentation: >-
+    Guiso espeso de color marrón chocolate brillante con pequeños cubos
+    granulados de papa seca hidratada, trozos de carne de cerdo dorada,
+    espolvoreado con maní tostado y acompañado de Sopa Seca (fideos
+    condimentados) y Salsa Criolla.
+nutrition:
+  calories: 740
+  macros:
+    protein_g: 44
+    fat_g: 38
+    carbs_g: 58
+images:
+  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
+    description: Carapulcra tradicional peruana con Sopa Seca
+description: >-
+  La Carapulcra es un guiso mestizo peruano de origen prehispánico, considerado
+  uno de los platos más antiguos del país. Elaborado a base de papa seca (papa
+  andina deshidratada y tostada), guisada lentamente con carne de cerdo,
+  abundante ají panca, ajo, comino, vino dulce y maní molido.
 ---
 
 # Carapulcra Limeña
@@ -30,8 +84,8 @@ La Carapulcra es una de las joyas más antiguas y complejas de la gastronomía p
 * **El Aderozo Criollo:**
     * 1 cebolla roja grande, picada en cuadritos muy finos (brunoise)
     * 2 cucharadas de ajo molido fresco
-    * 3/4 taza de pasta de **[Ají Panca](../../ingredients/aji_panca)** de alta calidad
-    * 2 cucharadas de pasta de **[Ají Mirasol](../../ingredients/aji_mirasol)** (opcional, para complejidad de sabor)
+    * 3/4 taza de pasta de **[Ají Panca](/dishes/peruvian/costa/../../ingredients/aji_panca)** de alta calidad
+    * 2 cucharadas de pasta de **[Ají Mirasol](/dishes/peruvian/costa/../../ingredients/aji_mirasol)** (opcional, para complejidad de sabor)
     * 3 cucharadas de manteca de cerdo (o aceite vegetal)
 * **Líquidos y Especias de Cocción:**
     * 1.5 litros de caldo de cerdo o de pollo caliente
@@ -70,7 +124,7 @@ La Carapulcra es una de las joyas más antiguas y complejas de la gastronomía p
 
 ## 📸 Galería
 
-
+![Carapulcra Limeña](/dishes/peruvian/costa/images/carapulcra.webp)
 
 ---
 

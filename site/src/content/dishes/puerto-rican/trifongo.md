@@ -1,11 +1,68 @@
 ---
-title: "Trifongo PuertorriqueñO De ChicharróN"
-region: "Puerto Rico"
-categories: ["Plato"]
-difficulty: "★★★☆☆"
-prep_time: "20 minutos"
-cook_time: "25 minutos"
-servings: "2"
+title: Trifongo Puertorriqueño de Chicharrón
+region: Puerto Rico
+language: es
+license: MIT
+source:
+  name: elboricua.com
+  url: 'https://www.elboricua.com/mofongo.html'
+  date_retrieved: '2026-09-03'
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★★☆☆
+prep_time: 20 minutos
+cook_time: 25 minutos
+servings: 2
+tags:
+  - Plátano verde
+  - Plátano maduro
+  - Yuca
+  - Mofongo
+  - Trifongo
+  - Puerto Rico
+  - Tradicional
+main_ingredients:
+  - Plátano verde (plátano macho verde)
+  - Plátano maduro (amarillo)
+  - Yuca fresca
+  - Chicharrón de cerdo crujiente
+  - Ajo fresco
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami de chicharrón intenso
+    - Ajo fuerte
+    - Sutil dulzor (plátano maduro)
+  texture:
+    - Crujiente (chicharrón de cerdo)
+    - Denso pero suave (tres almidones)
+    - Esponjoso
+  aroma:
+    - Ajo machacado en oliva
+    - Plátano frito dulce y verde
+    - Chicharrón caliente frito
+  presentation: >-
+    Moldeado en forma de domo semiesférico, de un hermoso color dorado con
+    destellos amarillos y naranjas, servido caliente con una taza de caldo de
+    carne de res al ajo.
+nutrition:
+  calories: 490
+  macros:
+    protein_g: 14
+    fat_g: 24
+    carbs_g: 58
+images:
+  - url: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e'
+    description: Plato tradicional de trifongo puertorriqueño en pilón (Unsplash)
+description: >-
+  El Trifongo es una sofisticada y deliciosa variación puertorriqueña del
+  mofongo tradicional. Destaca por combinar tres almidones y tubérculos
+  tropicales fritos a partes iguales en su preparación en el pilón—plátano
+  verde, plátano maduro (amarillo) y yuca fresca—machacándose de forma enérgica
+  con ajo machacado, aceite de oliva y trozos crujientes de chicharrón de cerdo,
+  logrando una masa cohesiva y densa de sabor sutilmente agridulce inigualable.
 ---
 
 # Trifongo Puertorriqueño de Chicharrón
@@ -58,7 +115,7 @@ El Trifongo es una obra de arte culinaria de Puerto Rico. Al unir de forma equil
 
 ## 📸 Galería
 
-
+![Domo caliente de trifongo boricua recién moldeado](/dishes/puerto-rican/images/trifongo_1.webp)
 
 ---
 

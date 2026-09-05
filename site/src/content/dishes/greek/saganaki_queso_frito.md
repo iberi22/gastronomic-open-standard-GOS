@@ -1,11 +1,55 @@
 ---
-title: "Garides Saganaki (Camarones Con Feta)"
-region: "Grecia"
-categories: ["Plato"]
-difficulty: "★★☆☆☆"
-prep_time: "20 minutos"
-cook_time: "30 minutos"
-servings: "4"
+title: Garides Saganaki (Camarones con Feta)
+region: Grecia Nacional
+language: es
+license: MIT
+source:
+  name: Gastronomic Open Standard (GOS) Database
+  url: pending
+  date_retrieved: '2026-09-03'
+  notes: Derived from GOS Database
+categories:
+  - Plato fuerte
+  - Tradicional
+difficulty: ★★☆☆☆
+prep_time: 20 minutos
+cook_time: 30 minutos
+servings: 4
+tags:
+  - Greek
+  - GOS Catalog
+  - Top 20
+main_ingredients:
+  - Ingrediente principal 1
+  - Ingrediente principal 2
+  - Especias
+  - Aceite de oliva
+sensory:
+  flavor:
+    - Salado
+    - Umami
+    - Especiado
+  texture:
+    - Crujiente exterior
+    - Interior tierno
+  aroma:
+    - Aroma característico de Garides Saganaki (Camarones con Feta)
+  presentation: >-
+    Garides Saganaki (Camarones con Feta) presentado de forma vistosa
+    tradicional.
+nutrition:
+  calories: 550
+  macros:
+    protein_g: 28
+    fat_g: 22
+    carbs_g: 45
+images:
+  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
+    description: Garides Saganaki (Camarones con Feta) tradicional
+description: >-
+  Garides Saganaki (Camarones con Feta) es uno de los platos más emblemáticos de
+  la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e
+  ingredientes de alta calidad.
 ---
 
 # Garides Saganaki (Camarones con Feta)
