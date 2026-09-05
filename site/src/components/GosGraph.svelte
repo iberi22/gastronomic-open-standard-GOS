@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import * as d3 from 'd3';
   let container: HTMLDivElement;
   let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 });
@@ -41,8 +41,13 @@
         ingredients: data.nodes?.filter((n:any)=>n.type==='ingredient').length || 0
       };
       const d3lib = loadD3();
-      if (container) renderD3(container, data, d3lib);
       loading = false;
+      // Wait for Svelte to mount the .gos-canvas div (else-branch) before
+      // reading bind:this — otherwise container is undefined and the graph
+      // never renders (empty canvas bug).
+      await tick();
+      if (container) renderD3(container, data, d3lib);
+      else error = 'graph container not mounted';
     } catch (e:any) { error = e.message; loading = false; }
   });
 

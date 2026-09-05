@@ -1,6 +1,7 @@
 ---
 import { Toaster } from '@swal/ui';
 import OfflineBanner from '../components/OfflineBanner.astro';
+import '../styles/global.css';
 interface Props { title?: string; description?: string; }
 const { title = 'GOS — Gastronomic Open Standard', description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity' } = Astro.props;
 const base = import.meta.env.BASE_URL;
@@ -20,8 +21,7 @@ const baseClean = base.replace(/\/$/, '');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Google+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <style is:global>
-      @import '@swal/ui/tokens';
-      @import '@swal/ui/antigravity.css';
+      /* tokens + antigravity theme load via src/styles/global.css (tailwind v4) */
       html { background: var(--swal-bg); color: var(--swal-text); scroll-behavior: smooth; }
       body { margin: 0; font-family: var(--swal-font); -webkit-font-smoothing: antialiased; }
       /* scrollbar antigravity */
