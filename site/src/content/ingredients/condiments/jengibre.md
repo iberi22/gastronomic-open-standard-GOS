@@ -1,39 +1,46 @@
 ---
-name: "Jengibre"
-scientific_name: "Zingiber officinale"
-group: "Condiment"
-portions:
-  default_g: 5 # slices
-nutrition_per_100g:
-  calories: 80
-  protein_g: 1.8
-  fat_g: 0.7
-  carbs_g: 17
-  fiber_g: 2
+active_compounds:
+- benefit: Potent anti-inflammatory and anti-nausea compound.
+  name: Gingerol
+  scientific_ref: PubMed
+aliases:
+  en:
+  - ginger
+group: Condiment
+health_registry:
+- compounds:
+  - 6-Gingerol
+  condition: Nausea / Motion Sickness
+  evidence_level: High
+  mechanism: Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without
+    CNS side effects.
+  studies:
+  - source: British Journal of Anaesthesia
+    title: Efficacy of ginger for nausea and vomiting
+- compounds:
+  - Gingerol
+  - Shogaol
+  condition: Inflammation
+  evidence_level: Medium
+  mechanism: Inhibits COX-2 enzyme similarly to NSAIDs.
 micronutrients:
   potassium_mg: 415
-active_compounds:
-  - name: "Gingerol"
-    benefit: "Potent anti-inflammatory and anti-nausea compound."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Nausea / Motion Sickness"
-    mechanism: "Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without CNS side effects."
-    compounds: ["6-Gingerol"]
-    evidence_level: "High"
-    studies:
-      - title: "Efficacy of ginger for nausea and vomiting"
-        source: "British Journal of Anaesthesia"
-  - condition: "Inflammation"
-    mechanism: "Inhibits COX-2 enzyme similarly to NSAIDs."
-    compounds: ["Gingerol", "Shogaol"]
-    evidence_level: "Medium"
+name: Jengibre
+nutrition_per_100g:
+  calories: 80
+  carbs_g: 17
+  fat_g: 0.7
+  fiber_g: 2
+  protein_g: 1.8
+portions:
+  default_g: 5
+scientific_name: Zingiber officinale
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - te
-  - asiatico
-  - antiinflamatorio
+- te
+- asiatico
+- antiinflamatorio
 ---
 
 # Scientific Analysis & Culinary Use

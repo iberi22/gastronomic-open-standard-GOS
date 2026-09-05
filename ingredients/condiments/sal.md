@@ -1,33 +1,37 @@
 ---
-name: "Sal (Cloruro de Sodio)"
-scientific_name: "NaCl"
-group: "Condiment"
-image: "../../images/sal.jpg"
-portions:
-  default_g: 1 # Pinch
+active_compounds:
+- benefit: Electrolyte balance.
+  name: Sodium
+- benefit: Thyroid function.
+  name: Iodine
+aliases:
+  en:
+  - salt
+group: Condiment
+health_registry:
+- compounds:
+  - Sodium
+  condition: Hydration
+  evidence_level: High
+  mechanism: Critical electrolyte for fluid retention and nerve transmission.
+image: ../../images/sal.jpg
+micronutrients:
+  iodine_ug: 4000
+  sodium_mg: 38758
+name: Sal (Cloruro de Sodio)
 nutrition_per_100g:
   calories: 0
-  protein_g: 0
-  fat_g: 0
   carbs_g: 0
-micronutrients:
-  sodium_mg: 38758
-  iodine_ug: 4000 # Fortified
-active_compounds:
-  - name: "Sodium"
-    benefit: "Electrolyte balance."
-  - name: "Iodine"
-    benefit: "Thyroid function."
-health_registry:
-  - condition: "Hydration"
-    mechanism: "Critical electrolyte for fluid retention and nerve transmission."
-    compounds: ["Sodium"]
-    evidence_level: "High"
+  fat_g: 0
+  protein_g: 0
+portions:
+  default_g: 1
+scientific_name: NaCl
 sources:
-  - "USDA"
+- USDA
 tags:
-  - esencial
-  - sabor
+- esencial
+- sabor
 ---
 
 # Scientific Analysis & Culinary Use

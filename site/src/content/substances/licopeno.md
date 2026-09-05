@@ -1,34 +1,48 @@
 ---
-name: "Licopeno"
-formula: "C40H56"
+aliases:
+  en:
+  - lycopene
+benefit: Antioxidante, cardioprotector, fotoprotector
+compuestos:
+- Phytoene
+- Phytofluene
+- Beta-carotene
 discovery_year: 1873
-source_ingredient: "tomate (Solanum lycopersicum)"
-benefit: "Antioxidante, cardioprotector, fotoprotector"
-sazon: "Base sofritos mediterráneos, potenciado con cocción y aceite"
-sabor: "Umami suave dulce, sin picor, biodisponible cocido > crudo"
-textura: "Carotenoide lipofílico cristalino rojo, isomeriza con calor (trans→cis)"
-vitaminas: ["Vitamin A", "Vitamin C", "Potassium"]
-compuestos: ["Phytoene", "Phytofluene", "Beta-carotene"]
-sources: ["NIH", "PubMed"]
-tags: ["antioxidante", "cardioprotector", "mediterraneo"]
-image_attribution: "Pixabay — Solanum lycopersicum"
+formula: C40H56
 health_registry:
-  - condition: "Prostate cancer"
-    mechanism: "Antioxidant, modulates cell cycle and apoptosis"
-    evidence_level: "Medium"
-    studies:
-      - title: "Tomato and lycopene in prostate cancer prevention"
-        source: "Cancer Epidemiol Biomarkers Prev"
-        year: 2004
-        doi: "10.1158/1055-9965.1503.13.4"
-  - condition: "Cardiovascular disease"
-    mechanism: "LDL oxidation inhibition"
-    evidence_level: "Medium"
-    studies:
-      - title: "Lycopene and CVD risk: meta-analysis"
-        source: "Atherosclerosis"
-        year: 2014
-        doi: "10.1016/j.atherosclerosis.2014.09.001"
+- condition: Prostate cancer
+  evidence_level: Medium
+  mechanism: Antioxidant, modulates cell cycle and apoptosis
+  studies:
+  - doi: 10.1158/1055-9965.1503.13.4
+    source: Cancer Epidemiol Biomarkers Prev
+    title: Tomato and lycopene in prostate cancer prevention
+    year: 2004
+- condition: Cardiovascular disease
+  evidence_level: Medium
+  mechanism: LDL oxidation inhibition
+  studies:
+  - doi: 10.1016/j.atherosclerosis.2014.09.001
+    source: Atherosclerosis
+    title: 'Lycopene and CVD risk: meta-analysis'
+    year: 2014
+image_attribution: Pixabay — Solanum lycopersicum
+name: Licopeno
+sabor: Umami suave dulce, sin picor, biodisponible cocido > crudo
+sazon: Base sofritos mediterráneos, potenciado con cocción y aceite
+source_ingredient: tomate (Solanum lycopersicum)
+sources:
+- NIH
+- PubMed
+tags:
+- antioxidante
+- cardioprotector
+- mediterraneo
+textura: Carotenoide lipofílico cristalino rojo, isomeriza con calor (trans→cis)
+vitaminas:
+- Vitamin A
+- Vitamin C
+- Potassium
 ---
 
 ![Licopeno](/images/substances/licopeno.jpg)

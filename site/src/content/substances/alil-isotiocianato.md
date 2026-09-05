@@ -1,26 +1,40 @@
 ---
-name: "Alil isotiocianato"
-formula: "C4H5NS"
+aliases:
+  en:
+  - allyl isothiocyanate
+benefit: Anticancer, despeja senos, lacrimógeno
+compuestos:
+- Sinigrin
+- Brassic acid
+- Allyl cyanide
 discovery_year: 1844
-source_ingredient: "mostaza (Brassica nigra)"
-benefit: "Anticancer, despeja senos, lacrimógeno"
-sazon: "Mostaza pungente nariz-lacrimal, wasabi-like"
-sabor: "Pungente nariz que hace llorar, vaporiza, activa TRPA1"
-textura: "Isotiocianato alifático volátil, sinigrina + mirosinasa"
-vitaminas: ["Selenium", "Magnesium", "Sinigrin"]
-compuestos: ["Sinigrin", "Brassic acid", "Allyl cyanide"]
-sources: ["PubMed", "NIH"]
-tags: ["mostaza", "lacrimogeno", "wasabi"]
-image_attribution: "Pixabay — Brassica nigra"
+formula: C4H5NS
 health_registry:
-  - condition: "Sinus congestion"
-    mechanism: "TRPA1 activation, mucus clearance"
-    evidence_level: "Medium"
-    studies:
-      - title: "Allyl isothiocyanate and airway clearance"
-        source: "J Agric Food Chem"
-        year: 2010
-        doi: "10.1021/jf903822e"
+- condition: Sinus congestion
+  evidence_level: Medium
+  mechanism: TRPA1 activation, mucus clearance
+  studies:
+  - doi: 10.1021/jf903822e
+    source: J Agric Food Chem
+    title: Allyl isothiocyanate and airway clearance
+    year: 2010
+image_attribution: Pixabay — Brassica nigra
+name: Alil isotiocianato
+sabor: Pungente nariz que hace llorar, vaporiza, activa TRPA1
+sazon: Mostaza pungente nariz-lacrimal, wasabi-like
+source_ingredient: mostaza (Brassica nigra)
+sources:
+- PubMed
+- NIH
+tags:
+- mostaza
+- lacrimogeno
+- wasabi
+textura: Isotiocianato alifático volátil, sinigrina + mirosinasa
+vitaminas:
+- Selenium
+- Magnesium
+- Sinigrin
 ---
 
 ![Alil isotiocianato](/images/substances/alil-isotiocianato.jpg)

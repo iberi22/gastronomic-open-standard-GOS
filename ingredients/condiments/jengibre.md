@@ -1,50 +1,59 @@
 ---
-name: "Jengibre"
-scientific_name: "Zingiber officinale"
-group: "Condiment"
-image: "../../images/jengibre.jpg"
-portions:
-  default_g: 5 # slices
-nutrition_per_100g:
-  calories: 80
-  protein_g: 1.8
-  fat_g: 0.7
-  carbs_g: 17
-  fiber_g: 2
+active_compounds:
+- benefit: Potent anti-inflammatory and anti-nausea compound.
+  name: Gingerol
+  scientific_ref: PubMed
+aliases:
+  en:
+  - ginger
+group: Condiment
+health_registry:
+- compounds:
+  - 6-Gingerol
+  - Shogaol
+  condition: Nausea / Motion Sickness
+  evidence_level: High
+  mechanism: Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without
+    CNS side effects.
+  studies:
+  - doi: 10.4137/IMI.S36273
+    source: Integrative Medicine Insights
+    title: The Efficacy of Ginger in Preventing Nausea and Vomiting During Pregnancy
+      and Chemotherapy
+    url: https://pubmed.ncbi.nlm.nih.gov/27053918/
+    year: 2016
+- compounds:
+  - Gingerol
+  - Shogaol
+  condition: Inflammation
+  evidence_level: High
+  mechanism: Inhibits COX-2 enzyme and lipoxygenase pathways similarly to NSAIDs.
+  studies:
+  - doi: 10.1002/art.20120
+    source: Arthritis & Rheumatology
+    title: Ginger (Zingiber officinale) in Rheumatism and Musculoskeletal Disorders
+    url: https://pubmed.ncbi.nlm.nih.gov/11710709/
+    year: 2005
+image: ../../images/jengibre.jpg
 micronutrients:
   potassium_mg: 415
-active_compounds:
-  - name: "Gingerol"
-    benefit: "Potent anti-inflammatory and anti-nausea compound."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Nausea / Motion Sickness"
-    mechanism: "Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without CNS side effects."
-    compounds: ["6-Gingerol", "Shogaol"]
-    evidence_level: "High"
-    studies:
-      - title: "The Efficacy of Ginger in Preventing Nausea and Vomiting During Pregnancy and Chemotherapy"
-        source: "Integrative Medicine Insights"
-        year: 2016
-        doi: "10.4137/IMI.S36273"
-        url: "https://pubmed.ncbi.nlm.nih.gov/27053918/"
-  - condition: "Inflammation"
-    mechanism: "Inhibits COX-2 enzyme and lipoxygenase pathways similarly to NSAIDs."
-    compounds: ["Gingerol", "Shogaol"]
-    evidence_level: "High"
-    studies:
-      - title: "Ginger (Zingiber officinale) in Rheumatism and Musculoskeletal Disorders"
-        source: "Arthritis & Rheumatology"
-        year: 2005
-        doi: "10.1002/art.20120"
-        url: "https://pubmed.ncbi.nlm.nih.gov/11710709/"
+name: Jengibre
+nutrition_per_100g:
+  calories: 80
+  carbs_g: 17
+  fat_g: 0.7
+  fiber_g: 2
+  protein_g: 1.8
+portions:
+  default_g: 5
+scientific_name: Zingiber officinale
 sources:
-  - "USDA FoodData Central"
-  - "NIH National Center for Complementary and Integrative Health"
+- USDA FoodData Central
+- NIH National Center for Complementary and Integrative Health
 tags:
-  - te
-  - asiatico
-  - antiinflamatorio
+- te
+- asiatico
+- antiinflamatorio
 ---
 
 # Scientific Analysis & Culinary Use

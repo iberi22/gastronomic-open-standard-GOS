@@ -1,26 +1,40 @@
 ---
-name: "Antocianina (Cianidina)"
-formula: "C15H11O6"
+aliases:
+  en:
+  - anthocyanin
+benefit: Antioxidante, antiinflamatorio, visión
+compuestos:
+- Pelargonidin
+- Peonidin
+- Malvidin
 discovery_year: 1913
-source_ingredient: "maíz morado (Zea mays amylacea)"
-benefit: "Antioxidante, antiinflamatorio, visión"
-sazon: "Maíz morado dulce terroso, base chicha y colada morada"
-sabor: "Dulce terroso con astringencia, pH-dependiente morado→rojo→azul"
-textura: "Antocianina glicosilada (cyanidin-3-glucoside), soluble agua, pH sensible"
-vitaminas: ["Vitamin C", "Manganese", "Fiber"]
-compuestos: ["Pelargonidin", "Peonidin", "Malvidin"]
-sources: ["PubMed", "NIH"]
-tags: ["morado", "antioxidante", "maiz"]
-image_attribution: "Pixabay — Zea mays morado"
+formula: C15H11O6
 health_registry:
-  - condition: "Inflammation / Metabolic syndrome"
-    mechanism: "NF-kB inhibition, antioxidant"
-    evidence_level: "Medium"
-    studies:
-      - title: "Anthocyanins and metabolic health: review"
-        source: "Adv Nutr"
-        year: 2017
-        doi: "10.3945/an.116.014084"
+- condition: Inflammation / Metabolic syndrome
+  evidence_level: Medium
+  mechanism: NF-kB inhibition, antioxidant
+  studies:
+  - doi: 10.3945/an.116.014084
+    source: Adv Nutr
+    title: 'Anthocyanins and metabolic health: review'
+    year: 2017
+image_attribution: Pixabay — Zea mays morado
+name: Antocianina (Cianidina)
+sabor: Dulce terroso con astringencia, pH-dependiente morado→rojo→azul
+sazon: Maíz morado dulce terroso, base chicha y colada morada
+source_ingredient: maíz morado (Zea mays amylacea)
+sources:
+- PubMed
+- NIH
+tags:
+- morado
+- antioxidante
+- maiz
+textura: Antocianina glicosilada (cyanidin-3-glucoside), soluble agua, pH sensible
+vitaminas:
+- Vitamin C
+- Manganese
+- Fiber
 ---
 
 ![Antocianina (Cianidina)](/images/substances/antocianina.jpg)

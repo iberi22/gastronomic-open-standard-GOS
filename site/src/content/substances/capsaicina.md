@@ -1,34 +1,47 @@
 ---
-name: "Capsaicina"
-formula: "C18H27NO3"
+aliases:
+  en:
+  - capsaicin
+benefit: Analgésico, termogénico, antiinflamatorio
+compuestos:
+- Dihydrocapsaicin
+- Nordihydrocapsaicin
 discovery_year: 1816
-source_ingredient: "ají picante (Capsicum annuum)"
-benefit: "Analgésico, termogénico, antiinflamatorio"
-sazon: "Pungencia intensa, escala Scoville 30k-2M"
-sabor: "Picante quemante, activa TRPV1, persistente en paladar"
-textura: "Oleosa lipofílica, soluble en grasa, no en agua"
-vitaminas: ["Vitamin A", "Vitamin C", "Vitamin B6"]
-compuestos: ["Dihydrocapsaicin", "Nordihydrocapsaicin"]
-sources: ["PubMed", "NIH"]
-tags: ["picante", "analgesico", "termogenico"]
-image_attribution: "Pixabay — Capsicum annuum"
+formula: C18H27NO3
 health_registry:
-  - condition: "Pain / Neuropathy"
-    mechanism: "TRPV1 agonist desensitization, substance P depletion"
-    evidence_level: "High"
-    studies:
-      - title: "Capsaicin for pain management: mechanisms and clinical uses"
-        source: "Molecules"
-        year: 2020
-        doi: "10.3390/molecules25092152"
-  - condition: "Obesity / Metabolic syndrome"
-    mechanism: "TRPV1-mediated thermogenesis and satiety"
-    evidence_level: "Medium"
-    studies:
-      - title: "Capsaicin and energy balance"
-        source: "Appetite"
-        year: 2012
-        doi: "10.1016/j.appet.2012.05.020"
+- condition: Pain / Neuropathy
+  evidence_level: High
+  mechanism: TRPV1 agonist desensitization, substance P depletion
+  studies:
+  - doi: 10.3390/molecules25092152
+    source: Molecules
+    title: 'Capsaicin for pain management: mechanisms and clinical uses'
+    year: 2020
+- condition: Obesity / Metabolic syndrome
+  evidence_level: Medium
+  mechanism: TRPV1-mediated thermogenesis and satiety
+  studies:
+  - doi: 10.1016/j.appet.2012.05.020
+    source: Appetite
+    title: Capsaicin and energy balance
+    year: 2012
+image_attribution: Pixabay — Capsicum annuum
+name: Capsaicina
+sabor: Picante quemante, activa TRPV1, persistente en paladar
+sazon: Pungencia intensa, escala Scoville 30k-2M
+source_ingredient: ají picante (Capsicum annuum)
+sources:
+- PubMed
+- NIH
+tags:
+- picante
+- analgesico
+- termogenico
+textura: Oleosa lipofílica, soluble en grasa, no en agua
+vitaminas:
+- Vitamin A
+- Vitamin C
+- Vitamin B6
 ---
 
 ![Capsaicina](/images/substances/capsaicina.jpg)

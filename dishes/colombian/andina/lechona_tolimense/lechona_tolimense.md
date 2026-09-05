@@ -1,66 +1,68 @@
 ---
-title: Lechona Tolimense
-region: Andina
+aliases:
+  en:
+  - Lechona Tolimense
+  - Colombian Stuffed Roast Pork
+categories:
+- Plato Fuerte
+- Festivo
+- Tradicional
+cook_time: 480
+description: Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín)
+  relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un guiso
+  tradicional y horneado en horno de barro por hasta 12 horas hasta que la piel alcanza
+  un estado vítreo e increíblemente crujiente.
+difficulty: ★★★★☆
+images:
+- description: Lechona Tolimense recién salida del horno de barro
+  url: https://im.ge/i/lechona-1.AbC123
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Plato Fuerte
-  - Festivo
-  - Tradicional
-difficulty: ★★★★☆
-prep_time: 120
-cook_time: 480
-servings: 20
-tags:
-  - Tolima
-  - Asado
-  - Cuerito
-  - San Pedro
 main_ingredients:
-  - Cerdo (pulpa y costilla)
-  - Cuero de cerdo
-  - Arveja amarilla
-  - Arroz
-  - Manteca de cerdo
-  - Cebolla larga
-  - Ajo
-  - Comino
-sensory:
-  flavor:
-    - Umami
-    - Salado
-    - Graso
-  texture:
-    - Crujiente (Cuero)
-    - Suave (Carne)
-    - Húmedo (Relleno)
-  aroma:
-    - Cerdo asado
-    - Comino
-    - Ahumado (leña)
-  presentation: >-
-    Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción que
-    incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne y
-    arveja.
+- Cerdo (pulpa y costilla)
+- Cuero de cerdo
+- Arveja amarilla
+- Arroz
+- Manteca de cerdo
+- Cebolla larga
+- Ajo
+- Comino
 nutrition:
   calories: 850
   macros:
-    protein_g: 45
-    fat_g: 58
     carbs_g: 42
-images:
-  - url: 'https://im.ge/i/lechona-1.AbC123'
-    description: Lechona Tolimense recién salida del horno de barro
-description: >-
-  Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín)
-  relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un
-  guiso tradicional y horneado en horno de barro por hasta 12 horas hasta que la
-  piel alcanza un estado vítreo e increíblemente crujiente.
+    fat_g: 58
+    protein_g: 45
+prep_time: 120
+region: Andina
+sensory:
+  aroma:
+  - Cerdo asado
+  - Comino
+  - Ahumado (leña)
+  flavor:
+  - Umami
+  - Salado
+  - Graso
+  presentation: Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción
+    que incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne
+    y arveja.
+  texture:
+  - Crujiente (Cuero)
+  - Suave (Carne)
+  - Húmedo (Relleno)
+servings: 20
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Tolima
+- Asado
+- Cuerito
+- San Pedro
+title: Lechona Tolimense
 ---
 
 ## Lechona Tolimense

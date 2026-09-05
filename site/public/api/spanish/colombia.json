@@ -17,12 +17,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Snack", "Crocante"],
+        "categories": [
+          "Amasijo",
+          "Snack",
+          "Crocante"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "40",
         "servings": 20,
-        "tags": ["Opita", "Biscocho", "Denominación de Origen"],
+        "tags": [
+          "Opita",
+          "Biscocho",
+          "Denominación de Origen"
+        ],
         "main_ingredients": [
           "Almidón de Achira (Canna indica)",
           "Cuajada Fresca (con punto de acidez)",
@@ -30,9 +38,20 @@
           "Yema de Huevo"
         ],
         "sensory": {
-          "flavor": ["Cuajada Tostada", "Mantequilla", "Mineral"],
-          "texture": ["Crocante (Hard Crack)", "Arenoso al final", "Seco"],
-          "aroma": ["Queso Maduro (por horneado)", "Horno de barro"],
+          "flavor": [
+            "Cuajada Tostada",
+            "Mantequilla",
+            "Mineral"
+          ],
+          "texture": [
+            "Crocante (Hard Crack)",
+            "Arenoso al final",
+            "Seco"
+          ],
+          "aroma": [
+            "Queso Maduro (por horneado)",
+            "Horno de barro"
+          ],
           "presentation": "Pequeños cilindros o 'deditos' de color amarillo oro uniforme. Deben ser totalmente secos al tacto y partirse con un chasquido."
         },
         "nutrition": {
@@ -51,7 +70,11 @@
         ],
         "description": "El snack de oro de Colombia. Las Achiras son el único amasijo popular hecho con el almidón de la planta de sagú (Canna indica). Su característica principal es la textura crocante y arenosa que se deshace en la boca, lograda por la alta temperatura de cristalización del almidón."
       },
-      "category": ["Amasijo", "Snack", "Crocante"],
+      "category": [
+        "Amasijo",
+        "Snack",
+        "Crocante"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "40",
@@ -62,7 +85,11 @@
         "Mantequilla",
         "Yema de Huevo"
       ],
-      "tags": ["Opita", "Biscocho", "Denominación de Origen"],
+      "tags": [
+        "Opita",
+        "Biscocho",
+        "Denominación de Origen"
+      ],
       "filePath": "dishes/colombian/amasijos/achiras/achiras.md"
     },
     {
@@ -82,12 +109,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Desayuno", "Ancestral"],
+        "categories": [
+          "Amasijo",
+          "Desayuno",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30",
         "cook_time": "20",
         "servings": 12,
-        "tags": ["Paipa", "Arcabuco", "Desayuno"],
+        "tags": [
+          "Paipa",
+          "Arcabuco",
+          "Desayuno"
+        ],
         "main_ingredients": [
           "Harina de Maíz (Porva o Peto)",
           "Cuajada Fresca (Queso no prensado)",
@@ -95,13 +130,20 @@
           "Polvo de Hornear / Bicarbonato"
         ],
         "sensory": {
-          "flavor": ["Maíz Dulce", "Cuajada Ácida", "Suave Salinidad"],
+          "flavor": [
+            "Maíz Dulce",
+            "Cuajada Ácida",
+            "Suave Salinidad"
+          ],
           "texture": [
             "Esponjoso-Húmedo",
             "Corteza Suave y Dorada",
             "Miga Alveolada"
           ],
-          "aroma": ["Maíz horneado", "Leche fermentada (Cuajada)"],
+          "aroma": [
+            "Maíz horneado",
+            "Leche fermentada (Cuajada)"
+          ],
           "presentation": "Panecillos redondos, chatos, de color dorado intenso. Al partirlos deben mostrar una miga amarilla y húmeda, nunca seca."
         },
         "nutrition": {
@@ -120,7 +162,11 @@
         ],
         "description": "El sol del altiplano. La Almojábana (del árabe 'al-muyabbana', la que tiene queso) es la reina de los andes. Su magia química reside en la acidez de la cuajada fresca reaccionando con el leudante para esponjar una masa densa de maíz."
       },
-      "category": ["Amasijo", "Desayuno", "Ancestral"],
+      "category": [
+        "Amasijo",
+        "Desayuno",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30",
       "cookTime": "20",
@@ -131,7 +177,11 @@
         "Huevo",
         "Polvo de Hornear / Bicarbonato"
       ],
-      "tags": ["Paipa", "Arcabuco", "Desayuno"],
+      "tags": [
+        "Paipa",
+        "Arcabuco",
+        "Desayuno"
+      ],
       "filePath": "dishes/colombian/amasijos/almojabana/almojabana.md"
     },
     {
@@ -151,12 +201,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Frito", "Navidad"],
+        "categories": [
+          "Amasijo",
+          "Frito",
+          "Navidad"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "30",
         "cook_time": "20",
         "servings": 15,
-        "tags": ["Navidad", "Novena", "Tradición"],
+        "tags": [
+          "Navidad",
+          "Novena",
+          "Tradición"
+        ],
         "main_ingredients": [
           "Queso Costeño (Salado/Duro)",
           "Fécula de Maíz (Maizena)",
@@ -165,13 +223,20 @@
           "Huevo"
         ],
         "sensory": {
-          "flavor": ["Queso Salado", "Dulzura de Almidón", "Suero Ácido"],
+          "flavor": [
+            "Queso Salado",
+            "Dulzura de Almidón",
+            "Suero Ácido"
+          ],
           "texture": [
             "Corteza Fina y Lisa",
             "Miga Esponjosa (Alveolada)",
             "Húmedo"
           ],
-          "aroma": ["Queso Frito", "Maíz Tostado"],
+          "aroma": [
+            "Queso Frito",
+            "Maíz Tostado"
+          ],
           "presentation": "Esferas doradas perfectas de unos 5-7 cm de diámetro. No deben tener 'teticas', grietas ni estar aceitosos al tacto. Deben flotar y girar solos al freírse."
         },
         "nutrition": {
@@ -190,7 +255,11 @@
         ],
         "description": "La esfera perfecta de la navidad. El Buñuelo Colombiano no es de viento ni de harina de trigo; es un equilibrio termodinámico complejo entre quesos salados y almidones que deben expandirse en aceite tibio sin explotar."
       },
-      "category": ["Amasijo", "Frito", "Navidad"],
+      "category": [
+        "Amasijo",
+        "Frito",
+        "Navidad"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "30",
       "cookTime": "20",
@@ -202,7 +271,11 @@
         "Azúcar",
         "Huevo"
       ],
-      "tags": ["Navidad", "Novena", "Tradición"],
+      "tags": [
+        "Navidad",
+        "Novena",
+        "Tradición"
+      ],
       "filePath": "dishes/colombian/amasijos/bunuelo/bunuelo.md"
     },
     {
@@ -222,12 +295,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Patrimonio", "Media Tarde"],
+        "categories": [
+          "Amasijo",
+          "Patrimonio",
+          "Media Tarde"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "45",
         "cook_time": "25",
         "servings": 10,
-        "tags": ["Soacha", "Picada", "Tradición"],
+        "tags": [
+          "Soacha",
+          "Picada",
+          "Tradición"
+        ],
         "main_ingredients": [
           "Harina de Maíz Porva",
           "Cuajada Fresca",
@@ -235,7 +316,11 @@
           "Huevo"
         ],
         "sensory": {
-          "flavor": ["Maíz Tostado", "Cuajada", "Dulce de Panela"],
+          "flavor": [
+            "Maíz Tostado",
+            "Cuajada",
+            "Dulce de Panela"
+          ],
           "texture": [
             "Costra Dura y Dulce",
             "Centro Arenoso-Húmedo",
@@ -264,7 +349,11 @@
         ],
         "description": "El tesoro olvidado de Cundinamarca. La Garulla es un híbrido complejo entre una arepa y una almojábana, enriquecida con manteca de cerdo y horneada a alta temperatura para crear una costra protectora única."
       },
-      "category": ["Amasijo", "Patrimonio", "Media Tarde"],
+      "category": [
+        "Amasijo",
+        "Patrimonio",
+        "Media Tarde"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "45",
       "cookTime": "25",
@@ -275,7 +364,11 @@
         "Manteca de Cerdo",
         "Huevo"
       ],
-      "tags": ["Soacha", "Picada", "Tradición"],
+      "tags": [
+        "Soacha",
+        "Picada",
+        "Tradición"
+      ],
       "filePath": "dishes/colombian/amasijos/garulla/garulla.md"
     },
     {
@@ -294,16 +387,35 @@
           "url": "https://elpais.com/elpais/2016/01/21/estilo/1453414376_467974.html",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Salsa", "Condimento ancestral", "Fermentado"],
+        "categories": [
+          "Salsa",
+          "Condimento ancestral",
+          "Fermentado"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "3 días (fermentación)",
         "cook_time": "1 hora",
         "servings": 20,
-        "main_ingredients": ["Ají amazónico", "Yuca amarga"],
+        "main_ingredients": [
+          "Ají amazónico",
+          "Yuca amarga"
+        ],
         "sensory": {
-          "flavor": ["Picante", "Ácido", "Umami", "Ahumado"],
-          "texture": ["Espesa", "Untuosa"],
-          "aroma": ["Fermentado", "Picante", "Terroso"],
+          "flavor": [
+            "Picante",
+            "Ácido",
+            "Umami",
+            "Ahumado"
+          ],
+          "texture": [
+            "Espesa",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Fermentado",
+            "Picante",
+            "Terroso"
+          ],
           "presentation": "Se sirve en pequeños cuencos, ideal para acompañar platos amazónicos y resaltar sabores."
         },
         "nutrition": {
@@ -326,12 +438,19 @@
         ],
         "description": "El Ají Negro es una salsa ancestral de la Amazonía, elaborada a partir de ajíes amazónicos fermentados y yuca amarga. Es un condimento esencial en la cocina indígena, con sabor intenso, picante y notas ahumadas, ideal para acompañar casabe, pescados y carnes."
       },
-      "category": ["Salsa", "Condimento ancestral", "Fermentado"],
+      "category": [
+        "Salsa",
+        "Condimento ancestral",
+        "Fermentado"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "3 días (fermentación)",
       "cookTime": "1 hora",
       "servings": 20,
-      "mainIngredients": ["Ají amazónico", "Yuca amarga"],
+      "mainIngredients": [
+        "Ají amazónico",
+        "Yuca amarga"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/amazonia/aji_negro/aji_negro.md"
     },
@@ -351,16 +470,30 @@
           "url": "https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Pan plano", "Acompañante", "Sin gluten"],
+        "categories": [
+          "Pan plano",
+          "Acompañante",
+          "Sin gluten"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "1 hora",
         "cook_time": "30 minutos",
         "servings": 10,
-        "main_ingredients": ["Yuca amarga"],
+        "main_ingredients": [
+          "Yuca amarga"
+        ],
         "sensory": {
-          "flavor": ["Neutro", "Ligeramente amargo"],
-          "texture": ["Crujiente"],
-          "aroma": ["Tostado", "Terroso"],
+          "flavor": [
+            "Neutro",
+            "Ligeramente amargo"
+          ],
+          "texture": [
+            "Crujiente"
+          ],
+          "aroma": [
+            "Tostado",
+            "Terroso"
+          ],
           "presentation": "Se sirve en discos grandes y quebradizos, ideal para compartir y acompañar comidas amazónicas e indígenas."
         },
         "nutrition": {
@@ -383,12 +516,18 @@
         ],
         "description": "El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional en la Amazonía y la Orinoquía. Es crujiente, sin gluten y se utiliza como acompañante de sopas, pescados o como base para otros platos. Su preparación artesanal es un legado indígena que se mantiene vivo en la región."
       },
-      "category": ["Pan plano", "Acompañante", "Sin gluten"],
+      "category": [
+        "Pan plano",
+        "Acompañante",
+        "Sin gluten"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "1 hora",
       "cookTime": "30 minutos",
       "servings": 10,
-      "mainIngredients": ["Yuca amarga"],
+      "mainIngredients": [
+        "Yuca amarga"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/amazonia/casabe/casabe/casabe.md"
     },
@@ -408,16 +547,31 @@
           "url": "https://vecinavegetariana.com/es/farina-de-yuca-de-la-amazonia-colombiana/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Acompañante", "Harina gruesa", "Sin gluten"],
+        "categories": [
+          "Acompañante",
+          "Harina gruesa",
+          "Sin gluten"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "1 hora",
         "cook_time": "1 hora",
         "servings": 20,
-        "main_ingredients": ["Yuca amarga"],
+        "main_ingredients": [
+          "Yuca amarga"
+        ],
         "sensory": {
-          "flavor": ["Neutro", "Ligeramente tostado"],
-          "texture": ["Crujiente", "Arenosa"],
-          "aroma": ["Tostado", "Terroso"],
+          "flavor": [
+            "Neutro",
+            "Ligeramente tostado"
+          ],
+          "texture": [
+            "Crujiente",
+            "Arenosa"
+          ],
+          "aroma": [
+            "Tostado",
+            "Terroso"
+          ],
           "presentation": "Se sirve en pequeños cuencos para espolvorear sobre sopas, caldos, pescados o para preparar bebidas refrescantes."
         },
         "nutrition": {
@@ -440,12 +594,18 @@
         ],
         "description": "La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca amarga rallada, secada y tostada hasta obtener una harina gruesa y crujiente. Es un acompañante esencial en la dieta indígena y amazónica, ideal para sopas, caldos, pescados y como base de bebidas refrescantes."
       },
-      "category": ["Acompañante", "Harina gruesa", "Sin gluten"],
+      "category": [
+        "Acompañante",
+        "Harina gruesa",
+        "Sin gluten"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "1 hora",
       "cookTime": "1 hora",
       "servings": 20,
-      "mainIngredients": ["Yuca amarga"],
+      "mainIngredients": [
+        "Yuca amarga"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/amazonia/farina/farina.md"
     },
@@ -465,16 +625,36 @@
           "url": "https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Sopa", "Plato fuerte", "Tradicional"],
+        "categories": [
+          "Sopa",
+          "Plato fuerte",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30 minutos",
         "cook_time": "1 hora",
         "servings": 6,
-        "main_ingredients": ["Gallina o pollo", "Maní", "Maíz", "Yuca"],
+        "main_ingredients": [
+          "Gallina o pollo",
+          "Maní",
+          "Maíz",
+          "Yuca"
+        ],
         "sensory": {
-          "flavor": ["Umami", "Cremoso", "Ligeramente dulce"],
-          "texture": ["Cremoso", "Suave"],
-          "aroma": ["Herbal (cilantro)", "Maní", "Cocido"],
+          "flavor": [
+            "Umami",
+            "Cremoso",
+            "Ligeramente dulce"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Herbal (cilantro)",
+            "Maní",
+            "Cocido"
+          ],
           "presentation": "Se sirve en platos hondos, ideal para compartir en reuniones familiares o festividades."
         },
         "nutrition": {
@@ -497,12 +677,21 @@
         ],
         "description": "El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región por su sabor profundo y textura cremosa. Se prepara con gallina, maní, maíz y especias locales, y es símbolo de hospitalidad en reuniones familiares."
       },
-      "category": ["Sopa", "Plato fuerte", "Tradicional"],
+      "category": [
+        "Sopa",
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30 minutos",
       "cookTime": "1 hora",
       "servings": 6,
-      "mainIngredients": ["Gallina o pollo", "Maní", "Maíz", "Yuca"],
+      "mainIngredients": [
+        "Gallina o pollo",
+        "Maní",
+        "Maíz",
+        "Yuca"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/amazonia/inchicapi/inchicapi.md"
     },
@@ -522,7 +711,11 @@
           "url": "https://elcomercio.pe/provecho/recetas/receta-de-juanes-de-yuca-y-paiche-noticia/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato festivo", "Tamal amazónico", "Tradicional"],
+        "categories": [
+          "Plato festivo",
+          "Tamal amazónico",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "45 minutos",
         "cook_time": "1 hora",
@@ -534,9 +727,19 @@
           "Hojas de bijao"
         ],
         "sensory": {
-          "flavor": ["Suave", "Ligeramente herbal", "Umami"],
-          "texture": ["Suave (masa)", "Jugoso (relleno)"],
-          "aroma": ["Herbal (bijao, culantro)", "Cocido"],
+          "flavor": [
+            "Suave",
+            "Ligeramente herbal",
+            "Umami"
+          ],
+          "texture": [
+            "Suave (masa)",
+            "Jugoso (relleno)"
+          ],
+          "aroma": [
+            "Herbal (bijao, culantro)",
+            "Cocido"
+          ],
           "presentation": "Se sirve envuelto en hojas, ideal para celebraciones y reuniones familiares."
         },
         "nutrition": {
@@ -559,7 +762,11 @@
         ],
         "description": "Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía, especialmente asociado a la festividad de San Juan. Consisten en una masa de yuca rellena con carne (pollo, pescado o cerdo), envuelta en hojas de bijao y cocida al vapor. Son símbolo de identidad y celebración en la región."
       },
-      "category": ["Plato festivo", "Tamal amazónico", "Tradicional"],
+      "category": [
+        "Plato festivo",
+        "Tamal amazónico",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "45 minutos",
       "cookTime": "1 hora",
@@ -590,21 +797,41 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Entrada", "Ancestral", "Entomofagia"],
+        "categories": [
+          "Entrada",
+          "Ancestral",
+          "Entomofagia"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "15",
         "cook_time": "10",
         "servings": 4,
-        "tags": ["Tikuna", "Proteína Alternativa", "Sostenible"],
+        "tags": [
+          "Tikuna",
+          "Proteína Alternativa",
+          "Sostenible"
+        ],
         "main_ingredients": [
           "Larva de Mojojoy (*Rhynchophorus palmarum*)",
           "Sal de Selva",
           "Limón Criollo"
         ],
         "sensory": {
-          "flavor": ["Graso-Manteca", "Dulzura Forestal", "Umami Animal"],
-          "texture": ["Crujiente (Quitina)", "Cremoso / Líquido", "Untuosa"],
-          "aroma": ["Madera Mojada", "Coco Tostado", "Fritura animal"],
+          "flavor": [
+            "Graso-Manteca",
+            "Dulzura Forestal",
+            "Umami Animal"
+          ],
+          "texture": [
+            "Crujiente (Quitina)",
+            "Cremoso / Líquido",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Madera Mojada",
+            "Coco Tostado",
+            "Fritura animal"
+          ],
           "presentation": "Se sirve ensartado en brochetas rústicas o sobre un lecho de fariña. La larva debe estar dorada uniformemente, sin romperse, manteniendo su forma cilíndrica."
         },
         "nutrition": {
@@ -623,7 +850,11 @@
         ],
         "description": "La 'Mantequilla de la Selva'. El Mojojoy es una larva de escarabajo que se alimenta de la médula de las palmas (*Mauritia flexuosa*), lo que le confiere un perfil lipídico único y un sabor que recuerda a los frutos secos y el coco."
       },
-      "category": ["Entrada", "Ancestral", "Entomofagia"],
+      "category": [
+        "Entrada",
+        "Ancestral",
+        "Entomofagia"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "15",
       "cookTime": "10",
@@ -633,7 +864,11 @@
         "Sal de Selva",
         "Limón Criollo"
       ],
-      "tags": ["Tikuna", "Proteína Alternativa", "Sostenible"],
+      "tags": [
+        "Tikuna",
+        "Proteína Alternativa",
+        "Sostenible"
+      ],
       "filePath": "dishes/colombian/amazonia/mojojoy/mojojoy.md"
     },
     {
@@ -652,7 +887,11 @@
           "url": "https://www.contarproteinas.com/recetas_resultado/ver/Patarasca-amazonica-26326",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Asado ancestral", "Tradicional"],
+        "categories": [
+          "Plato fuerte",
+          "Asado ancestral",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30 minutos",
         "cook_time": "40 minutos",
@@ -665,9 +904,20 @@
           "Limón"
         ],
         "sensory": {
-          "flavor": ["Umami", "Herbal", "Ahumado"],
-          "texture": ["Jugoso (pescado)", "Suave (relleno)"],
-          "aroma": ["Herbal (hojas, cilantro)", "Ahumado", "Fresco"],
+          "flavor": [
+            "Umami",
+            "Herbal",
+            "Ahumado"
+          ],
+          "texture": [
+            "Jugoso (pescado)",
+            "Suave (relleno)"
+          ],
+          "aroma": [
+            "Herbal (hojas, cilantro)",
+            "Ahumado",
+            "Fresco"
+          ],
           "presentation": "Se sirve envuelto en hojas, ideal para compartir en reuniones familiares o festividades amazónicas."
         },
         "nutrition": {
@@ -690,7 +940,11 @@
         ],
         "description": "La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana y peruana. Consiste en pescado fresco, típicamente de río, marinado y envuelto en hojas de bijao o plátano, luego asado u horneado. Es un platillo ancestral, lleno de aromas selváticos y apreciado por su jugosidad y sabo..."
       },
-      "category": ["Plato fuerte", "Asado ancestral", "Tradicional"],
+      "category": [
+        "Plato fuerte",
+        "Asado ancestral",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30 minutos",
       "cookTime": "40 minutos",
@@ -721,16 +975,35 @@
           "url": "https://www.elespectador.com/gastronomia-y-recetas/pescado-muquiado-un-plato-que-resalta-los-sabores-de-la-etnias-del-guaviare/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Técnica ancestral", "Tradicional"],
+        "categories": [
+          "Plato fuerte",
+          "Técnica ancestral",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30 minutos",
         "cook_time": "2-3 horas",
         "servings": 6,
-        "main_ingredients": ["Pescado de río", "Hojas de plátano/bijao", "Sal"],
+        "main_ingredients": [
+          "Pescado de río",
+          "Hojas de plátano/bijao",
+          "Sal"
+        ],
         "sensory": {
-          "flavor": ["Ahumado", "Salado", "Umami"],
-          "texture": ["Firme", "Jugoso"],
-          "aroma": ["Ahumado", "Herbal", "Terroso"],
+          "flavor": [
+            "Ahumado",
+            "Salado",
+            "Umami"
+          ],
+          "texture": [
+            "Firme",
+            "Jugoso"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Terroso"
+          ],
           "presentation": "Se sirve en porciones grandes, ideal para compartir y celebrar la tradición indígena."
         },
         "images": [
@@ -745,12 +1018,20 @@
         ],
         "description": "El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana, utilizada por pueblos indígenas para conservar y realzar el sabor del pescado de río. Consiste en ahumar el pescado lentamente sobre brasas y hojas, lo que le otorga un aroma y sabor únicos, además de una textura firme."
       },
-      "category": ["Plato fuerte", "Técnica ancestral", "Tradicional"],
+      "category": [
+        "Plato fuerte",
+        "Técnica ancestral",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30 minutos",
       "cookTime": "2-3 horas",
       "servings": 6,
-      "mainIngredients": ["Pescado de río", "Hojas de plátano/bijao", "Sal"],
+      "mainIngredients": [
+        "Pescado de río",
+        "Hojas de plátano/bijao",
+        "Sal"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/amazonia/pescado_moqueado/pescado_moqueado.md"
     },
@@ -770,12 +1051,21 @@
           "url": "https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Fritura tradicional", "Mercado"],
+        "categories": [
+          "Plato fuerte",
+          "Fritura tradicional",
+          "Mercado"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "20 minutos",
         "cook_time": "15 minutos",
         "servings": 4,
-        "tags": ["Pescado amazónico", "Fritura", "Sin espinas", "Tradicional"],
+        "tags": [
+          "Pescado amazónico",
+          "Fritura",
+          "Sin espinas",
+          "Tradicional"
+        ],
         "main_ingredients": [
           "Filete de pirarucú",
           "Harina de yuca (fariña)",
@@ -784,8 +1074,16 @@
           "Aceite vegetal"
         ],
         "sensory": {
-          "flavor": ["Umami (intenso)", "Salado", "Terroso (suave)"],
-          "texture": ["Crujiente (costra)", "Firme", "Suculento (interior)"],
+          "flavor": [
+            "Umami (intenso)",
+            "Salado",
+            "Terroso (suave)"
+          ],
+          "texture": [
+            "Crujiente (costra)",
+            "Firme",
+            "Suculento (interior)"
+          ],
           "aroma": [
             "Frito (aceite caliente)",
             "Pescado de río (fresco)",
@@ -813,7 +1111,11 @@
         ],
         "description": "El Pirarucú frito es una preparación icónica de la Amazonía, destacando la carne firme y sin espinas del pez de escama más grande de la cuenca. Empanizado con harina local y frito, ofrece un contraste perfecto de texturas."
       },
-      "category": ["Plato fuerte", "Fritura tradicional", "Mercado"],
+      "category": [
+        "Plato fuerte",
+        "Fritura tradicional",
+        "Mercado"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "20 minutos",
       "cookTime": "15 minutos",
@@ -825,7 +1127,12 @@
         "Ajo",
         "Aceite vegetal"
       ],
-      "tags": ["Pescado amazónico", "Fritura", "Sin espinas", "Tradicional"],
+      "tags": [
+        "Pescado amazónico",
+        "Fritura",
+        "Sin espinas",
+        "Tradicional"
+      ],
       "filePath": "dishes/colombian/amazonia/pirarucu_frito/pirarucu_frito.md"
     },
     {
@@ -882,7 +1189,11 @@
           "url": "https://www.tripadvisor.co/ShowUserReviews-g294316-d6385585-r488085052-La_Choza_de_La_Anaconda-Lima_Lima_Region.html",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Desayuno", "Plato fuerte", "Tradicional"],
+        "categories": [
+          "Desayuno",
+          "Plato fuerte",
+          "Tradicional"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "20 minutos",
         "cook_time": "25 minutos",
@@ -898,7 +1209,10 @@
             "Salado",
             "Ligeramente dulce (si se usa plátano maduro)"
           ],
-          "texture": ["Suave (tacacho)", "Crujiente (cecina)"],
+          "texture": [
+            "Suave (tacacho)",
+            "Crujiente (cecina)"
+          ],
           "aroma": [
             "Ahumado (cecina)",
             "Tostado (plátano)",
@@ -926,7 +1240,11 @@
         ],
         "description": "El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente popular en Perú y presente en la Amazonía colombiana. Consiste en plátano verde asado y machacado, mezclado con manteca y acompañado de cecina (carne de cerdo ahumada). Es un desayuno o almuerzo tradicional, lleno de ener..."
       },
-      "category": ["Desayuno", "Plato fuerte", "Tradicional"],
+      "category": [
+        "Desayuno",
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "20 minutos",
       "cookTime": "25 minutos",
@@ -946,22 +1264,31 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Ajiaco Santafereño",
-        "region": "Andina",
+        "aliases": {
+          "en": [
+            "Ajiaco",
+            "Bogota Chicken Corn Soup"
+          ]
+        },
+        "categories": [
+          "Sopas",
+          "Plato Fuerte"
+        ],
+        "cook_time": 90,
+        "description": "Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el uso de tres variedades de papa (que aportan diferentes texturas) y la hierba aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de memoria, lluvia y hogar.",
+        "difficulty": "★★★☆☆",
+        "images": [
+          {
+            "description": "Ajiaco tradicional con sus tres papas",
+            "url": "https://im.ge/i/ajiaco-1.XyZ123"
+          },
+          {
+            "description": "Emplatado con aguacate y alcaparras",
+            "url": "https://im.ge/i/ajiaco-2.AbC456"
+          }
+        ],
         "language": "es",
         "license": "MIT",
-        "source": {
-          "name": "Gastronomic Open Standard (GOS) Database",
-          "url": "pending",
-          "date_retrieved": "2026-09-03",
-          "notes": "Derived from GOS Database"
-        },
-        "categories": ["Sopas", "Plato Fuerte"],
-        "difficulty": "★★★☆☆",
-        "prep_time": 30,
-        "cook_time": 90,
-        "servings": 6,
-        "tags": ["Bogotá", "Tradicional", "Guascas", "Reconfortante"],
         "main_ingredients": [
           "Papa criolla",
           "Papa pastusa",
@@ -972,33 +1299,53 @@
           "Alcaparras",
           "Crema de leche"
         ],
-        "sensory": {
-          "flavor": ["Salado", "Herbal", "Umami", "Lácteo"],
-          "texture": ["Cremoso", "Espeso", "Suave"],
-          "aroma": ["Herbal (Guascas)", "Maíz dulce"],
-          "presentation": "Cazuela de barro profunda, servida hirviendo. Acompañantes (crema, alcaparras, aguacate, arroz) en platos separados o 'coquitos'."
-        },
         "nutrition": {
           "calories": 580,
           "macros": {
-            "protein_g": 32,
+            "carbs_g": 65,
             "fat_g": 22,
-            "carbs_g": 65
+            "protein_g": 32
           }
         },
-        "images": [
-          {
-            "url": "https://im.ge/i/ajiaco-1.XyZ123",
-            "description": "Ajiaco tradicional con sus tres papas"
-          },
-          {
-            "url": "https://im.ge/i/ajiaco-2.AbC456",
-            "description": "Emplatado con aguacate y alcaparras"
-          }
+        "prep_time": 30,
+        "region": "Andina",
+        "sensory": {
+          "aroma": [
+            "Herbal (Guascas)",
+            "Maíz dulce"
+          ],
+          "flavor": [
+            "Salado",
+            "Herbal",
+            "Umami",
+            "Lácteo"
+          ],
+          "presentation": "Cazuela de barro profunda, servida hirviendo. Acompañantes (crema, alcaparras, aguacate, arroz) en platos separados o 'coquitos'.",
+          "texture": [
+            "Cremoso",
+            "Espeso",
+            "Suave"
+          ]
+        },
+        "servings": 6,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
+        },
+        "tags": [
+          "Bogotá",
+          "Tradicional",
+          "Guascas",
+          "Reconfortante"
         ],
-        "description": "Sopa emblemática de Bogotá y el altiplano cundiboyacense. Su alma reside en el uso de tres variedades de papa (que aportan diferentes texturas) y la hierba aromática 'Guascas', que le confiere su sabor inconfundible. Es un plato de memoria, lluvia y hogar."
+        "title": "Ajiaco Santafereño"
       },
-      "category": ["Sopas", "Plato Fuerte"],
+      "category": [
+        "Sopas",
+        "Plato Fuerte"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": 30,
       "cookTime": 90,
@@ -1013,7 +1360,12 @@
         "Alcaparras",
         "Crema de leche"
       ],
-      "tags": ["Bogotá", "Tradicional", "Guascas", "Reconfortante"],
+      "tags": [
+        "Bogotá",
+        "Tradicional",
+        "Guascas",
+        "Reconfortante"
+      ],
       "filePath": "dishes/colombian/andina/ajiaco_santafereño/ajiaco_santafereño.md"
     },
     {
@@ -1023,22 +1375,27 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Bandeja Paisa",
-        "region": "Andina",
+        "aliases": {
+          "en": [
+            "Bandeja Paisa",
+            "Paisa Tray"
+          ]
+        },
+        "categories": [
+          "Plato Fuerte",
+          "Hipercalórico"
+        ],
+        "cook_time": 120,
+        "description": "El 'plato montañero' por excelencia. Evolución del avío de los arrieros antioqueños, diseñado para aportar la máxima energía posible (calorías y proteínas) para cruzar las cordilleras. Es un despliegue de técnicas de fritura y cocción lenta.",
+        "difficulty": "★★★★☆",
+        "images": [
+          {
+            "description": "Bandeja Paisa con sus 9 elementos",
+            "url": "https://im.ge/i/bandeja-1.XyZ789"
+          }
+        ],
         "language": "es",
         "license": "MIT",
-        "source": {
-          "name": "Gastronomic Open Standard (GOS) Database",
-          "url": "pending",
-          "date_retrieved": "2026-09-03",
-          "notes": "Derived from GOS Database"
-        },
-        "categories": ["Plato Fuerte", "Hipercalórico"],
-        "difficulty": "★★★★☆",
-        "prep_time": 45,
-        "cook_time": 120,
-        "servings": 4,
-        "tags": ["Antioquia", "Monumental", "Domingo", "Turismo"],
         "main_ingredients": [
           "Frijol bola roja (o Cargamanto)",
           "Arroz blanco",
@@ -1051,33 +1408,54 @@
           "Arepa",
           "Aguacate"
         ],
+        "nutrition": {
+          "calories": 1800,
+          "macros": {
+            "carbs_g": 130,
+            "fat_g": 110,
+            "protein_g": 85
+          }
+        },
+        "prep_time": 45,
+        "region": "Andina",
         "sensory": {
-          "flavor": ["Salado", "Umami", "Ahumado", "Graso"],
+          "aroma": [
+            "Cerdo frito",
+            "Humo",
+            "Comino"
+          ],
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ahumado",
+            "Graso"
+          ],
+          "presentation": "Bandeja ovalada grande. Organización visual: cama de arroz y frijoles, proteínas alrededor, huevo coronando. Abundancia visual extrema.",
           "texture": [
             "Crujiente (Chicharrón)",
             "Cremoso (Frijoles)",
             "Suave (Arroz)"
-          ],
-          "aroma": ["Cerdo frito", "Humo", "Comino"],
-          "presentation": "Bandeja ovalada grande. Organización visual: cama de arroz y frijoles, proteínas alrededor, huevo coronando. Abundancia visual extrema."
+          ]
         },
-        "nutrition": {
-          "calories": 1800,
-          "macros": {
-            "protein_g": 85,
-            "fat_g": 110,
-            "carbs_g": 130
-          }
+        "servings": 4,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
         },
-        "images": [
-          {
-            "url": "https://im.ge/i/bandeja-1.XyZ789",
-            "description": "Bandeja Paisa con sus 9 elementos"
-          }
+        "tags": [
+          "Antioquia",
+          "Monumental",
+          "Domingo",
+          "Turismo"
         ],
-        "description": "El 'plato montañero' por excelencia. Evolución del avío de los arrieros antioqueños, diseñado para aportar la máxima energía posible (calorías y proteínas) para cruzar las cordilleras. Es un despliegue de técnicas de fritura y cocción lenta."
+        "title": "Bandeja Paisa"
       },
-      "category": ["Plato Fuerte", "Hipercalórico"],
+      "category": [
+        "Plato Fuerte",
+        "Hipercalórico"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 45,
       "cookTime": 120,
@@ -1094,7 +1472,12 @@
         "Arepa",
         "Aguacate"
       ],
-      "tags": ["Antioquia", "Monumental", "Domingo", "Turismo"],
+      "tags": [
+        "Antioquia",
+        "Monumental",
+        "Domingo",
+        "Turismo"
+      ],
       "filePath": "dishes/colombian/andina/bandeja_paisa/bandeja_paisa.md"
     },
     {
@@ -1114,12 +1497,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Desayuno", "Sopa", "Restaurativo"],
+        "categories": [
+          "Desayuno",
+          "Sopa",
+          "Restaurativo"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": 15,
         "cook_time": 60,
         "servings": 6,
-        "tags": ["Levantamuertos", "Cundiboyacense", "Desayuno"],
+        "tags": [
+          "Levantamuertos",
+          "Cundiboyacense",
+          "Desayuno"
+        ],
         "main_ingredients": [
           "Costilla de res (con hueso y grasa)",
           "Papa pastusa (o sabanera)",
@@ -1129,9 +1520,20 @@
           "Agua"
         ],
         "sensory": {
-          "flavor": ["Salado", "Umami (hueso)", "Herbal (cilantro)"],
-          "texture": ["Líquido (Caldo claro)", "Suave (Papa/Carne)"],
-          "aroma": ["Res hervida", "Cebolla larga", "Cilantro"],
+          "flavor": [
+            "Salado",
+            "Umami (hueso)",
+            "Herbal (cilantro)"
+          ],
+          "texture": [
+            "Líquido (Caldo claro)",
+            "Suave (Papa/Carne)"
+          ],
+          "aroma": [
+            "Res hervida",
+            "Cebolla larga",
+            "Cilantro"
+          ],
           "presentation": "Tazón grande y profundo. El caldo debe verse dorado y translúcido (no turbio). La costilla debe sobresalir y estar acompañada de papas enteras o en trozos grandes. Cilantro fresco esparcido encima al momento."
         },
         "nutrition": {
@@ -1150,7 +1552,11 @@
         ],
         "description": "El desayuno reconstituyente por excelencia de la región andina (Bogotá, Cundinamarca, Boyacá). Conocido como 'Levantamuertos' por su capacidad para reponer electrolitos y energía tras una noche de fiesta (o simplemente para el frío). Su ciencia radica en la extracción de sabor del hueso de costilla."
       },
-      "category": ["Desayuno", "Sopa", "Restaurativo"],
+      "category": [
+        "Desayuno",
+        "Sopa",
+        "Restaurativo"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": 15,
       "cookTime": 60,
@@ -1163,7 +1569,11 @@
         "Cilantro",
         "Agua"
       ],
-      "tags": ["Levantamuertos", "Cundiboyacense", "Desayuno"],
+      "tags": [
+        "Levantamuertos",
+        "Cundiboyacense",
+        "Desayuno"
+      ],
       "filePath": "dishes/colombian/andina/caldo_de_costilla/caldo_de_costilla.md"
     },
     {
@@ -1183,12 +1593,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Desayuno", "Sopa", "Lácteo"],
+        "categories": [
+          "Desayuno",
+          "Sopa",
+          "Lácteo"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": 10,
         "cook_time": 15,
         "servings": 4,
-        "tags": ["Bogotá", "Desayuno", "Controversial"],
+        "tags": [
+          "Bogotá",
+          "Desayuno",
+          "Controversial"
+        ],
         "main_ingredients": [
           "Leche entera",
           "Agua",
@@ -1200,13 +1618,21 @@
           "Mantequilla (opcional)"
         ],
         "sensory": {
-          "flavor": ["Lácteo (neutro)", "Salado", "Herbal (Cilantro/Cebolla)"],
+          "flavor": [
+            "Lácteo (neutro)",
+            "Salado",
+            "Herbal (Cilantro/Cebolla)"
+          ],
           "texture": [
             "Líquido Cremoso",
             "Suave (Huevo escalfado)",
             "Esponjoso (Calado húmedo)"
           ],
-          "aroma": ["Leche caliente", "Cilantro", "Cebolla"],
+          "aroma": [
+            "Leche caliente",
+            "Cilantro",
+            "Cebolla"
+          ],
           "presentation": "Cazuela ancha. El pan calado debe estar en el fondo absorbiendo el líquido, el huevo entero (escalfado) encima, y todo cubierto con una capa generosa de cilantro y cebolla fina."
         },
         "nutrition": {
@@ -1225,7 +1651,11 @@
         ],
         "description": "Quizás el plato más controversial de Colombia. Amada por los bogotanos y temida por el resto, es una sopa de leche simple y delicada. Su ciencia radica en el equilibrio osmótico para escalfar el huevo perfectamente en una dilución de leche y agua."
       },
-      "category": ["Desayuno", "Sopa", "Lácteo"],
+      "category": [
+        "Desayuno",
+        "Sopa",
+        "Lácteo"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": 10,
       "cookTime": 15,
@@ -1240,7 +1670,11 @@
         "Pan Calado (tostada)",
         "Mantequilla (opcional)"
       ],
-      "tags": ["Bogotá", "Desayuno", "Controversial"],
+      "tags": [
+        "Bogotá",
+        "Desayuno",
+        "Controversial"
+      ],
       "filePath": "dishes/colombian/andina/changua/changua.md"
     },
     {
@@ -1260,12 +1694,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Sopa", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Sopa",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": 60,
         "cook_time": 180,
         "servings": 10,
-        "tags": ["Boyacá", "Ancestral", "Tubérculos"],
+        "tags": [
+          "Boyacá",
+          "Ancestral",
+          "Tubérculos"
+        ],
         "main_ingredients": [
           "Cubios (Tropaeolum tuberosum)",
           "Ibias (Oxalis tuberosa)",
@@ -1284,8 +1726,16 @@
             "Ahumado (Longaniza)",
             "Dulce (Habas/Guatila)"
           ],
-          "texture": ["Compleja (múltiples almidones)", "Harinoso", "Suave"],
-          "aroma": ["Raíces andinas", "Cerdo", "Hierbas de páramo"],
+          "texture": [
+            "Compleja (múltiples almidones)",
+            "Harinoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Raíces andinas",
+            "Cerdo",
+            "Hierbas de páramo"
+          ],
           "presentation": "Cazuela de barro monumental. Los tubérculos deben servirse enteros o en trozos grandes para identificarlos. La salsa (el recado) es espesa por la desintegración de la papa criolla."
         },
         "nutrition": {
@@ -1304,7 +1754,11 @@
         ],
         "description": "El plato más biodiverso de los Andes colombianos. Es un estofado prehispánico enriquecido con proteínas europeas. Su valor radica en la preservación de los 'tubérculos perdidos' (cubios, ibias, chuguas), cada uno aportando un perfil químico y de sabor único, desde lo picante hasta lo ácido."
       },
-      "category": ["Plato Fuerte", "Sopa", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Sopa",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 60,
       "cookTime": 180,
@@ -1320,7 +1774,11 @@
         "Longaniza",
         "Gallina (opcional)"
       ],
-      "tags": ["Boyacá", "Ancestral", "Tubérculos"],
+      "tags": [
+        "Boyacá",
+        "Ancestral",
+        "Tubérculos"
+      ],
       "filePath": "dishes/colombian/andina/cocido_boyacense/cocido_boyacense.md"
     },
     {
@@ -1340,12 +1798,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Snack", "Fritura", "Callejera"],
+        "categories": [
+          "Snack",
+          "Fritura",
+          "Callejera"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "45 minutos",
         "cook_time": "15 minutos",
         "servings": 20,
-        "tags": ["Callejera", "Fritanga", "Maíz"],
+        "tags": [
+          "Callejera",
+          "Fritanga",
+          "Maíz"
+        ],
         "main_ingredients": [
           "Masarepa (Harina de maíz precocida)",
           "Carne (res/cerdo) molida",
@@ -1355,9 +1821,21 @@
           "Color (Achiote)"
         ],
         "sensory": {
-          "flavor": ["Maíz tostado", "Cárnico", "Umami (Guiso)"],
-          "texture": ["Crujiente (Corteza)", "Suave (Relleno)", "Quebradizo"],
-          "aroma": ["Maíz frito", "Comino", "Aceite caliente"],
+          "flavor": [
+            "Maíz tostado",
+            "Cárnico",
+            "Umami (Guiso)"
+          ],
+          "texture": [
+            "Crujiente (Corteza)",
+            "Suave (Relleno)",
+            "Quebradizo"
+          ],
+          "aroma": [
+            "Maíz frito",
+            "Comino",
+            "Aceite caliente"
+          ],
           "presentation": "Media luna dorada perfecta. Se sirve caliente en servilleta o canasta, SIEMPRE acompañada de ají picante o guacamole."
         },
         "nutrition": {
@@ -1376,7 +1854,11 @@
         ],
         "description": "El snack nacional por excelencia. Una ingeniería de dos capas: una corteza de maíz hidrofóbica y crujiente que protege un núcleo húmedo de almidón (papa) y proteína (carne). Su éxito depende de la termodinámica de la fritura profunda."
       },
-      "category": ["Snack", "Fritura", "Callejera"],
+      "category": [
+        "Snack",
+        "Fritura",
+        "Callejera"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "45 minutos",
       "cookTime": "15 minutos",
@@ -1389,7 +1871,11 @@
         "Aceite vegetal",
         "Color (Achiote)"
       ],
-      "tags": ["Callejera", "Fritanga", "Maíz"],
+      "tags": [
+        "Callejera",
+        "Fritanga",
+        "Maíz"
+      ],
       "filePath": "dishes/colombian/andina/empanadas/empanadas.md"
     },
     {
@@ -1399,22 +1885,28 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Lechona Tolimense",
-        "region": "Andina",
+        "aliases": {
+          "en": [
+            "Lechona Tolimense",
+            "Colombian Stuffed Roast Pork"
+          ]
+        },
+        "categories": [
+          "Plato Fuerte",
+          "Festivo",
+          "Tradicional"
+        ],
+        "cook_time": 480,
+        "description": "Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín) relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un guiso tradicional y horneado en horno de barro por hasta 12 horas hasta que la piel alcanza un estado vítreo e increíblemente crujiente.",
+        "difficulty": "★★★★☆",
+        "images": [
+          {
+            "description": "Lechona Tolimense recién salida del horno de barro",
+            "url": "https://im.ge/i/lechona-1.AbC123"
+          }
+        ],
         "language": "es",
         "license": "MIT",
-        "source": {
-          "name": "Gastronomic Open Standard (GOS) Database",
-          "url": "pending",
-          "date_retrieved": "2026-09-03",
-          "notes": "Derived from GOS Database"
-        },
-        "categories": ["Plato Fuerte", "Festivo", "Tradicional"],
-        "difficulty": "★★★★☆",
-        "prep_time": 120,
-        "cook_time": 480,
-        "servings": 20,
-        "tags": ["Tolima", "Asado", "Cuerito", "San Pedro"],
         "main_ingredients": [
           "Cerdo (pulpa y costilla)",
           "Cuero de cerdo",
@@ -1425,29 +1917,54 @@
           "Ajo",
           "Comino"
         ],
-        "sensory": {
-          "flavor": ["Umami", "Salado", "Graso"],
-          "texture": ["Crujiente (Cuero)", "Suave (Carne)", "Húmedo (Relleno)"],
-          "aroma": ["Cerdo asado", "Comino", "Ahumado (leña)"],
-          "presentation": "Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción que incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne y arveja."
-        },
         "nutrition": {
           "calories": 850,
           "macros": {
-            "protein_g": 45,
+            "carbs_g": 42,
             "fat_g": 58,
-            "carbs_g": 42
+            "protein_g": 45
           }
         },
-        "images": [
-          {
-            "url": "https://im.ge/i/lechona-1.AbC123",
-            "description": "Lechona Tolimense recién salida del horno de barro"
-          }
+        "prep_time": 120,
+        "region": "Andina",
+        "sensory": {
+          "aroma": [
+            "Cerdo asado",
+            "Comino",
+            "Ahumado (leña)"
+          ],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Graso"
+          ],
+          "presentation": "Cojín de cerdo entero con la piel dorada y vítrea. Se sirve una porción que incluya una lámina de cuero crujiente ('el tesoro') y el relleno de carne y arveja.",
+          "texture": [
+            "Crujiente (Cuero)",
+            "Suave (Carne)",
+            "Húmedo (Relleno)"
+          ]
+        },
+        "servings": 20,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
+        },
+        "tags": [
+          "Tolima",
+          "Asado",
+          "Cuerito",
+          "San Pedro"
         ],
-        "description": "Plato monumental del Tolima Grande. Consiste en un cerdo entero (o cojín) relleno de carne de cerdo picada, arveja amarilla y arroz, adobado con un guiso tradicional y horneado en horno de barro por hasta 12 horas hasta que la piel alcanza un estado vítreo e increíblemente crujiente."
+        "title": "Lechona Tolimense"
       },
-      "category": ["Plato Fuerte", "Festivo", "Tradicional"],
+      "category": [
+        "Plato Fuerte",
+        "Festivo",
+        "Tradicional"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 120,
       "cookTime": 480,
@@ -1462,7 +1979,12 @@
         "Ajo",
         "Comino"
       ],
-      "tags": ["Tolima", "Asado", "Cuerito", "San Pedro"],
+      "tags": [
+        "Tolima",
+        "Asado",
+        "Cuerito",
+        "San Pedro"
+      ],
       "filePath": "dishes/colombian/andina/lechona_tolimense/lechona_tolimense.md"
     },
     {
@@ -1482,12 +2004,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Postre", "Lácteo", "Ancestral"],
+        "categories": [
+          "Postre",
+          "Lácteo",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": 120,
         "cook_time": 180,
         "servings": 12,
-        "tags": ["Valle del Cauca", "Navidad", "Dulce"],
+        "tags": [
+          "Valle del Cauca",
+          "Navidad",
+          "Dulce"
+        ],
         "main_ingredients": [
           "Leche entera (cruda idealmente)",
           "Azúcar (o panela)",
@@ -1501,8 +2031,16 @@
             "Lácteo caramelizado",
             "Arroz tostado (residual)"
           ],
-          "texture": ["Elástico", "Arenoso fino (arroz)", "Denso"],
-          "aroma": ["Leche hervida", "Canela", "Vainilla"],
+          "texture": [
+            "Elástico",
+            "Arenoso fino (arroz)",
+            "Denso"
+          ],
+          "aroma": [
+            "Leche hervida",
+            "Canela",
+            "Vainilla"
+          ],
           "presentation": "Totuma de mate o recipiente de dulce. La superficie debe ser brillante y ligeramente más oscura (costra). Se come con cuchara o dedito, a menudo acompañado de brevas o queso cuajada."
         },
         "nutrition": {
@@ -1521,7 +2059,11 @@
         ],
         "description": "El dulce insignia del Valle del Cauca y el Cauca. A diferencia del arequipe (que es solo reducción), el Manjar Blanco utiliza harina de arroz como espesante, lo que le confiere una textura única, ligeramente granulosa y elástica, y un sabor menos empalagoso."
       },
-      "category": ["Postre", "Lácteo", "Ancestral"],
+      "category": [
+        "Postre",
+        "Lácteo",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": 120,
       "cookTime": 180,
@@ -1533,7 +2075,11 @@
         "Canela",
         "Pasas (opcional/variante)"
       ],
-      "tags": ["Valle del Cauca", "Navidad", "Dulce"],
+      "tags": [
+        "Valle del Cauca",
+        "Navidad",
+        "Dulce"
+      ],
       "filePath": "dishes/colombian/andina/manjar_blanco/manjar_blanco.md"
     },
     {
@@ -1553,12 +2099,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Sopa", "Plato Fuerte", "Tradicional"],
+        "categories": [
+          "Sopa",
+          "Plato Fuerte",
+          "Tradicional"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": 240,
         "cook_time": 120,
         "servings": 8,
-        "tags": ["Antioquia", "Domingo", "Levantamuertos"],
+        "tags": [
+          "Antioquia",
+          "Domingo",
+          "Levantamuertos"
+        ],
         "main_ingredients": [
           "Mondongo (Callo/Panza de res)",
           "Carne de cerdo (pierna)",
@@ -1571,14 +2125,24 @@
           "Comino"
         ],
         "sensory": {
-          "flavor": ["Cárnico", "Especiado (Comino)", "Umami", "Rico"],
+          "flavor": [
+            "Cárnico",
+            "Especiado (Comino)",
+            "Umami",
+            "Rico"
+          ],
           "texture": [
             "Espeso",
             "Tropezudo",
             "Masticable (Callos)",
             "Suave (Vegetales)"
           ],
-          "aroma": ["Comino", "Cerdo", "Cilantro fresco", "Sofrito"],
+          "aroma": [
+            "Comino",
+            "Cerdo",
+            "Cilantro fresco",
+            "Sofrito"
+          ],
           "presentation": "Plato hondo rebosante, servido hirviendo. Acompañantes OBLIGATORIOS aparte: Banano maduro (clave), aguacate, arroz blanco, arepa blanca, cilantro y limón."
         },
         "nutrition": {
@@ -1597,7 +2161,11 @@
         ],
         "description": "Sopa contundente y emblemática de los domingos antioqueños. Se basa en una cocción larga de tres tipos de proteínas (callo, cerdo, chorizo) y tres carbohidratos (papa criolla, capira, yuca), resultando en un caldo espeso y rico en colágeno. El contraste se logra con el cilantro fresco y el banano dulce."
       },
-      "category": ["Sopa", "Plato Fuerte", "Tradicional"],
+      "category": [
+        "Sopa",
+        "Plato Fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 240,
       "cookTime": 120,
@@ -1613,7 +2181,11 @@
         "Hogao (Tomate/Cebolla)",
         "Comino"
       ],
-      "tags": ["Antioquia", "Domingo", "Levantamuertos"],
+      "tags": [
+        "Antioquia",
+        "Domingo",
+        "Levantamuertos"
+      ],
       "filePath": "dishes/colombian/andina/mondongo_antioqueño/mondongo_antioqueño.md"
     },
     {
@@ -1633,12 +2205,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Sopa", "Plato Fuerte", "Tradicional"],
+        "categories": [
+          "Sopa",
+          "Plato Fuerte",
+          "Tradicional"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": 720,
         "cook_time": 240,
         "servings": 10,
-        "tags": ["Santander", "Maíz Pelado", "Domingo"],
+        "tags": [
+          "Santander",
+          "Maíz Pelado",
+          "Domingo"
+        ],
         "main_ingredients": [
           "Maíz Peto (Pelado/Nixtamalizado)",
           "Costilla de res",
@@ -1652,9 +2232,22 @@
           "Garbanzo"
         ],
         "sensory": {
-          "flavor": ["Umami", "Ahumado", "Alcalino (maíz)"],
-          "texture": ["Viscoso", "Denso", "Masticable (Callo/Carne)"],
-          "aroma": ["Maíz pela'o (nixtamal)", "Leña", "Cilantro", "Chorizo"],
+          "flavor": [
+            "Umami",
+            "Ahumado",
+            "Alcalino (maíz)"
+          ],
+          "texture": [
+            "Viscoso",
+            "Denso",
+            "Masticable (Callo/Carne)"
+          ],
+          "aroma": [
+            "Maíz pela'o (nixtamal)",
+            "Leña",
+            "Cilantro",
+            "Chorizo"
+          ],
           "presentation": "Cazuela profunda. El caldo debe ser muy espeso (casi estofado). Se acompaña de arepa santandereana (maíz pelado) y aguacate."
         },
         "nutrition": {
@@ -1673,7 +2266,11 @@
         ],
         "description": "La sopa insignia de Santander. Se define por el uso de 'Maíz Pelado' (nixtamalizado con ceniza), que le da un sabor alcalino distintivo. Es una preparación monumental que combina múltiples carnes (res, cerdo, callo) y legumbres, resultando en un potaje de densidad extrema."
       },
-      "category": ["Sopa", "Plato Fuerte", "Tradicional"],
+      "category": [
+        "Sopa",
+        "Plato Fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 720,
       "cookTime": 240,
@@ -1690,7 +2287,11 @@
         "Berenjena (regional)",
         "Garbanzo"
       ],
-      "tags": ["Santander", "Maíz Pelado", "Domingo"],
+      "tags": [
+        "Santander",
+        "Maíz Pelado",
+        "Domingo"
+      ],
       "filePath": "dishes/colombian/andina/mute_santandereano/mute_santandereano.md"
     },
     {
@@ -1748,12 +2349,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Desayuno", "Tradicional"],
+        "categories": [
+          "Plato Fuerte",
+          "Desayuno",
+          "Tradicional"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": 60,
         "cook_time": 240,
         "servings": 10,
-        "tags": ["Ibagué", "Desayuno Tradicional", "Envueltos"],
+        "tags": [
+          "Ibagué",
+          "Desayuno Tradicional",
+          "Envueltos"
+        ],
         "main_ingredients": [
           "Masa de maíz",
           "Pollo",
@@ -1766,9 +2375,21 @@
           "Hoja de plátano"
         ],
         "sensory": {
-          "flavor": ["Salado", "Umami", "Herbal"],
-          "texture": ["Suave (Masa)", "Jugoso (Carnes)", "Fibroso (Hoja)"],
-          "aroma": ["Hoja de plátano ahumada", "Cerdo", "Especias"],
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Herbal"
+          ],
+          "texture": [
+            "Suave (Masa)",
+            "Jugoso (Carnes)",
+            "Fibroso (Hoja)"
+          ],
+          "aroma": [
+            "Hoja de plátano ahumada",
+            "Cerdo",
+            "Especias"
+          ],
           "presentation": "Envuelto piramidal o cilíndrico en hojas de plátano, amarrado con pita. Al abrirse, revela una masa amarilla vibrante impregnada de jugos."
         },
         "nutrition": {
@@ -1787,7 +2408,11 @@
         ],
         "description": "El tamal más famoso de Colombia. Se distingue por el uso de arroz y masa de maíz, la generosidad de sus carnes (pollo, cerdo, tocino) y su cocción prolongada que funde los sabores de la hoja de plátano con el relleno."
       },
-      "category": ["Plato Fuerte", "Desayuno", "Tradicional"],
+      "category": [
+        "Plato Fuerte",
+        "Desayuno",
+        "Tradicional"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": 60,
       "cookTime": 240,
@@ -1803,7 +2428,11 @@
         "Huevo duro",
         "Hoja de plátano"
       ],
-      "tags": ["Ibagué", "Desayuno Tradicional", "Envueltos"],
+      "tags": [
+        "Ibagué",
+        "Desayuno Tradicional",
+        "Envueltos"
+      ],
       "filePath": "dishes/colombian/andina/tamal_tolimense/tamal_tolimense.md"
     },
     {
@@ -1822,16 +2451,34 @@
           "url": "https://elgourmet.com/recetas/avena/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Bebida fría", "Desayuno", "Merienda"],
+        "categories": [
+          "Bebida fría",
+          "Desayuno",
+          "Merienda"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "20 minutos",
         "cook_time": "15 minutos",
         "servings": 4,
-        "main_ingredients": ["Avena en hojuelas", "Leche", "Canela", "Azúcar"],
+        "main_ingredients": [
+          "Avena en hojuelas",
+          "Leche",
+          "Canela",
+          "Azúcar"
+        ],
         "sensory": {
-          "flavor": ["Dulce", "Cremoso"],
-          "texture": ["Cremosa", "Espesa"],
-          "aroma": ["Canela", "Vainilla"],
+          "flavor": [
+            "Dulce",
+            "Cremoso"
+          ],
+          "texture": [
+            "Cremosa",
+            "Espesa"
+          ],
+          "aroma": [
+            "Canela",
+            "Vainilla"
+          ],
           "presentation": "Se sirve en vaso alto, bien fría, ideal para refrescar y nutrir. Muy popular en colegios y hogares."
         },
         "nutrition": {
@@ -1854,12 +2501,21 @@
         ],
         "description": "La avena es una bebida refrescante y cremosa, tradicional en hogares y ventas callejeras de Colombia. Se prepara con avena, leche, canela y azúcar, y es tendencia por su sabor suave y su aporte nutricional."
       },
-      "category": ["Bebida fría", "Desayuno", "Merienda"],
+      "category": [
+        "Bebida fría",
+        "Desayuno",
+        "Merienda"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "20 minutos",
       "cookTime": "15 minutos",
       "servings": 4,
-      "mainIngredients": ["Avena en hojuelas", "Leche", "Canela", "Azúcar"],
+      "mainIngredients": [
+        "Avena en hojuelas",
+        "Leche",
+        "Canela",
+        "Azúcar"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/bebidas/avena/avena.md"
     },
@@ -1880,12 +2536,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Bebida", "Ancestral", "Mestiza"],
+        "categories": [
+          "Bebida",
+          "Ancestral",
+          "Mestiza"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "60",
         "cook_time": "40",
         "servings": 8,
-        "tags": ["Cali", "Feria de Cali", "Tradición"],
+        "tags": [
+          "Cali",
+          "Feria de Cali",
+          "Tradición"
+        ],
         "main_ingredients": [
           "Maíz Trillado (Cocido)",
           "Lulo (*Solanum quitoense*)",
@@ -1904,7 +2568,11 @@
             "Viscosa (Caldo de maíz)",
             "Fibrosa (Piña/Lulo)"
           ],
-          "aroma": ["Lulo agraz", "Cáscara de Piña", "Hojas de Naranjo"],
+          "aroma": [
+            "Lulo agraz",
+            "Cáscara de Piña",
+            "Hojas de Naranjo"
+          ],
           "presentation": "Se sirve en vasos grandes con cuchara. La fruta debe estar picada en dados visibles y el maíz debe ser el protagonista textural junto con el hielo picado."
         },
         "nutrition": {
@@ -1923,7 +2591,11 @@
         ],
         "description": "La ensalada líquida del Valle. El Champús es una bebida compleja que desafía la categorización: es un refresco, un postre y una sopa fría de frutas, donde el maíz actúa como el cuerpo estructurante."
       },
-      "category": ["Bebida", "Ancestral", "Mestiza"],
+      "category": [
+        "Bebida",
+        "Ancestral",
+        "Mestiza"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "60",
       "cookTime": "40",
@@ -1935,7 +2607,11 @@
         "Panela",
         "Hojas de Naranjo Agrio"
       ],
-      "tags": ["Cali", "Feria de Cali", "Tradición"],
+      "tags": [
+        "Cali",
+        "Feria de Cali",
+        "Tradición"
+      ],
       "filePath": "dishes/colombian/bebidas/champus/champus.md"
     },
     {
@@ -1955,12 +2631,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Bebida", "Fermentación", "Ancestral"],
+        "categories": [
+          "Bebida",
+          "Fermentación",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "480",
         "cook_time": "120",
         "servings": 20,
-        "tags": ["Muisca", "Bicentenario", "Patrimonio"],
+        "tags": [
+          "Muisca",
+          "Bicentenario",
+          "Patrimonio"
+        ],
         "main_ingredients": [
           "Maíz Amarillo o Porva",
           "Panela (Miel de caña)",
@@ -1973,8 +2657,16 @@
             "Dulzura Fermentada",
             "Cereales Tostados"
           ],
-          "texture": ["Viscosa / Sedada", "Granular Fina", "Con cuerpo"],
-          "aroma": ["Cereal fermentado", "Panela ahumada", "Fruta madura"],
+          "texture": [
+            "Viscosa / Sedada",
+            "Granular Fina",
+            "Con cuerpo"
+          ],
+          "aroma": [
+            "Cereal fermentado",
+            "Panela ahumada",
+            "Fruta madura"
+          ],
           "presentation": "Se sirve en totumas o vasos de barro. La superficie puede presentar una ligera espuma natural. El color varía del amarillo pálido al café oscuro dependiendo de la panela y el maíz usado."
         },
         "nutrition": {
@@ -1993,7 +2685,11 @@
         ],
         "description": "La sangre de los ancestros. La Chicha es la bebida sagrada de los pueblos andinos, un proceso biotecnológico precolonial que transforma el maíz en un elixir fermentado de alta densidad energética y mística."
       },
-      "category": ["Bebida", "Fermentación", "Ancestral"],
+      "category": [
+        "Bebida",
+        "Fermentación",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "480",
       "cookTime": "120",
@@ -2004,7 +2700,11 @@
         "Clavos y Canela",
         "Hojas de Arrayán (Tradicional)"
       ],
-      "tags": ["Muisca", "Bicentenario", "Patrimonio"],
+      "tags": [
+        "Muisca",
+        "Bicentenario",
+        "Patrimonio"
+      ],
       "filePath": "dishes/colombian/bebidas/chicha/chicha_de_maiz.md"
     },
     {
@@ -2023,16 +2723,34 @@
           "url": "https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Bebida caliente", "Desayuno", "Merienda"],
+        "categories": [
+          "Bebida caliente",
+          "Desayuno",
+          "Merienda"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "15 minutos",
         "cook_time": "10 minutos",
         "servings": 3,
-        "main_ingredients": ["Chocolate de mesa", "Leche", "Queso fresco"],
+        "main_ingredients": [
+          "Chocolate de mesa",
+          "Leche",
+          "Queso fresco"
+        ],
         "sensory": {
-          "flavor": ["Dulce", "Lácteo", "Chocolate"],
-          "texture": ["Cremoso", "Espumoso"],
-          "aroma": ["Chocolate", "Leche"],
+          "flavor": [
+            "Dulce",
+            "Lácteo",
+            "Chocolate"
+          ],
+          "texture": [
+            "Cremoso",
+            "Espumoso"
+          ],
+          "aroma": [
+            "Chocolate",
+            "Leche"
+          ],
           "presentation": "Se sirve en tazas grandes, ideal para mañanas frías o onces bogotanas. El queso derretido es la sorpresa."
         },
         "nutrition": {
@@ -2055,12 +2773,20 @@
         ],
         "description": "El chocolate santafereño es una bebida caliente tradicional de Bogotá y el altiplano cundiboyacense. Se prepara con chocolate de mesa, leche y agua, y se sirve con queso, almojábana o pan. Es tendencia por su ritual de \"chocolate con queso\" y su presencia en desayunos y onces."
       },
-      "category": ["Bebida caliente", "Desayuno", "Merienda"],
+      "category": [
+        "Bebida caliente",
+        "Desayuno",
+        "Merienda"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "15 minutos",
       "cookTime": "10 minutos",
       "servings": 3,
-      "mainIngredients": ["Chocolate de mesa", "Leche", "Queso fresco"],
+      "mainIngredients": [
+        "Chocolate de mesa",
+        "Leche",
+        "Queso fresco"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/bebidas/chocolate_santafereño/chocolate_santafereño.md"
     },
@@ -2081,12 +2807,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Bebida", "Fermentación", "Recuperación"],
+        "categories": [
+          "Bebida",
+          "Fermentación",
+          "Recuperación"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "30",
         "cook_time": "5",
         "servings": 10,
-        "tags": ["Campesino", "Energizante", "Jura"],
+        "tags": [
+          "Campesino",
+          "Energizante",
+          "Jura"
+        ],
         "main_ingredients": [
           "Panela (Miel de caña sólida)",
           "Agua potabilizada",
@@ -2094,8 +2828,15 @@
           "Jugo de Limón (opcional)"
         ],
         "sensory": {
-          "flavor": ["Dulce-Ácido", "Floral (Miel)", "Aromático"],
-          "texture": ["Líquida / Acuosa", "Ligera efervescencia"],
+          "flavor": [
+            "Dulce-Ácido",
+            "Floral (Miel)",
+            "Aromático"
+          ],
+          "texture": [
+            "Líquida / Acuosa",
+            "Ligera efervescencia"
+          ],
           "aroma": [
             "Caña de azúcar fresca",
             "Leve vinagre (si está fuerte)",
@@ -2119,7 +2860,11 @@
         ],
         "description": "El combustible del campo colombiano. El Guarapo es una fermentación rápida y espontánea de la panela que ofrece una hidratación cargada de electrolitos y energía rápida, fundamental para las jornadas de cosecha."
       },
-      "category": ["Bebida", "Fermentación", "Recuperación"],
+      "category": [
+        "Bebida",
+        "Fermentación",
+        "Recuperación"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "30",
       "cookTime": "5",
@@ -2130,7 +2875,11 @@
         "Hojas de Limonaria (opcional)",
         "Jugo de Limón (opcional)"
       ],
-      "tags": ["Campesino", "Energizante", "Jura"],
+      "tags": [
+        "Campesino",
+        "Energizante",
+        "Jura"
+      ],
       "filePath": "dishes/colombian/bebidas/guarapo/guarapo.md"
     },
     {
@@ -2149,16 +2898,35 @@
           "url": "https://elgourmet.com/recetas/lulada/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Bebida refrescante", "Postre líquido", "Fiestas"],
+        "categories": [
+          "Bebida refrescante",
+          "Postre líquido",
+          "Fiestas"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "10 minutos",
         "cook_time": "0 minutos",
         "servings": 3,
-        "main_ingredients": ["Lulo", "Azúcar", "Hielo", "Limón"],
+        "main_ingredients": [
+          "Lulo",
+          "Azúcar",
+          "Hielo",
+          "Limón"
+        ],
         "sensory": {
-          "flavor": ["Ácido", "Dulce", "Frutal"],
-          "texture": ["Refrescante", "Con trozos de fruta y hielo"],
-          "aroma": ["Frutal", "Cítrico"],
+          "flavor": [
+            "Ácido",
+            "Dulce",
+            "Frutal"
+          ],
+          "texture": [
+            "Refrescante",
+            "Con trozos de fruta y hielo"
+          ],
+          "aroma": [
+            "Frutal",
+            "Cítrico"
+          ],
           "presentation": "Se sirve en vasos altos, con mucho hielo, ideal para días calurosos o reuniones familiares. Muy popular en ferias y fiestas caleñas."
         },
         "nutrition": {
@@ -2181,12 +2949,21 @@
         ],
         "description": "La lulada es una bebida refrescante tradicional del Valle del Cauca y muy popular en todo el suroccidente colombiano. Su base es la pulpa de lulo fresca, mezclada con hielo, azúcar y, a veces, limón o soda. Es símbolo de la cultura caleña y tendencia en redes sociales por su color y sabor exótico."
       },
-      "category": ["Bebida refrescante", "Postre líquido", "Fiestas"],
+      "category": [
+        "Bebida refrescante",
+        "Postre líquido",
+        "Fiestas"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "10 minutos",
       "cookTime": "0 minutos",
       "servings": 3,
-      "mainIngredients": ["Lulo", "Azúcar", "Hielo", "Limón"],
+      "mainIngredients": [
+        "Lulo",
+        "Azúcar",
+        "Hielo",
+        "Limón"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/bebidas/lulada/lulada.md"
     },
@@ -2207,12 +2984,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Bebida fría", "Cóctel Popular", "Acompañante"],
+        "categories": [
+          "Bebida fría",
+          "Cóctel Popular",
+          "Acompañante"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "5 minutos",
         "cook_time": "0 minutos",
         "servings": 4,
-        "tags": ["Domingo", "Asado", "Fritanga"],
+        "tags": [
+          "Domingo",
+          "Asado",
+          "Fritanga"
+        ],
         "main_ingredients": [
           "Cerveza (Lager o Águila)",
           "Soda Roja (Colombiana)",
@@ -2220,9 +3005,19 @@
           "Aguardiente (Opcional)"
         ],
         "sensory": {
-          "flavor": ["Dulce (Cola)", "Amargo (Cerveza)", "Malteado"],
-          "texture": ["Burbujeante (Carbonatada)", "Refrescante"],
-          "aroma": ["Lúpulo suave", "Vainilla (de la soda)"],
+          "flavor": [
+            "Dulce (Cola)",
+            "Amargo (Cerveza)",
+            "Malteado"
+          ],
+          "texture": [
+            "Burbujeante (Carbonatada)",
+            "Refrescante"
+          ],
+          "aroma": [
+            "Lúpulo suave",
+            "Vainilla (de la soda)"
+          ],
           "presentation": "En jarra de vidrio grande con mucho hielo, para compartir. Color ámbar rojizo y espuma."
         },
         "nutrition": {
@@ -2241,7 +3036,11 @@
         ],
         "description": "El cóctel del pueblo. Una mezcla aparentemente simple de cerveza  lager y soda de cola roja (tipo Colombiana), que resulta en una bebida isotónica social perfecta para cortar la grasa de asados y fritangas. Su ciencia radica en el equilibrio de carbonatación y pH."
       },
-      "category": ["Bebida fría", "Cóctel Popular", "Acompañante"],
+      "category": [
+        "Bebida fría",
+        "Cóctel Popular",
+        "Acompañante"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "5 minutos",
       "cookTime": "0 minutos",
@@ -2252,7 +3051,11 @@
         "Hielo",
         "Aguardiente (Opcional)"
       ],
-      "tags": ["Domingo", "Asado", "Fritanga"],
+      "tags": [
+        "Domingo",
+        "Asado",
+        "Fritanga"
+      ],
       "filePath": "dishes/colombian/bebidas/refajo/refajo.md"
     },
     {
@@ -2271,7 +3074,12 @@
           "url": "https://elgourmet.com/recetas/salpicon/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Bebida", "Postre", "Merienda", "Refresco"],
+        "categories": [
+          "Bebida",
+          "Postre",
+          "Merienda",
+          "Refresco"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "15 minutos",
         "cook_time": "0 minutos",
@@ -2292,9 +3100,19 @@
           "Gaseosa roja"
         ],
         "sensory": {
-          "flavor": ["Dulce", "Frutal"],
-          "texture": ["Refrescante", "Jugoso", "Con trozos de fruta"],
-          "aroma": ["Frutal", "Cítrico"],
+          "flavor": [
+            "Dulce",
+            "Frutal"
+          ],
+          "texture": [
+            "Refrescante",
+            "Jugoso",
+            "Con trozos de fruta"
+          ],
+          "aroma": [
+            "Frutal",
+            "Cítrico"
+          ],
           "presentation": "Se sirve en vasos grandes, ideal para días calurosos y fiestas infantiles."
         },
         "nutrition": {
@@ -2317,7 +3135,12 @@
         ],
         "description": "El salpicón es una bebida-postre refrescante y colorida, tradicional en ferias, plazas y cafeterías de Colombia. Se prepara con frutas frescas picadas y jugo de sandía o gaseosa roja, y es tendencia en redes por su presentación vistosa y sabor frutal."
       },
-      "category": ["Bebida", "Postre", "Merienda", "Refresco"],
+      "category": [
+        "Bebida",
+        "Postre",
+        "Merienda",
+        "Refresco"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "15 minutos",
       "cookTime": "0 minutos",
@@ -2355,12 +3178,20 @@
           "url": "https://www.eltiempo.com/vida/receta-alegrias-57934",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Dulce", "Snack", "Festivo"],
+        "categories": [
+          "Dulce",
+          "Snack",
+          "Festivo"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "20 minutos",
         "cook_time": "15 minutos",
         "servings": 20,
-        "tags": ["Tradicional", "Cartagena", "Dulces típicos"],
+        "tags": [
+          "Tradicional",
+          "Cartagena",
+          "Dulces típicos"
+        ],
         "main_ingredients": [
           "Semillas de Amaranto",
           "Panela",
@@ -2368,9 +3199,20 @@
           "Miel de caña"
         ],
         "sensory": {
-          "flavor": ["Dulce", "Nuez (Amaranto)", "Coco"],
-          "texture": ["Crujiente", "Pegajoso", "Granulado"],
-          "aroma": ["Caramelo (Panela)", "Coco tostado"],
+          "flavor": [
+            "Dulce",
+            "Nuez (Amaranto)",
+            "Coco"
+          ],
+          "texture": [
+            "Crujiente",
+            "Pegajoso",
+            "Granulado"
+          ],
+          "aroma": [
+            "Caramelo (Panela)",
+            "Coco tostado"
+          ],
           "presentation": "Barras o bolas compactas de semillas doradas con coco, brillantes por el melado."
         },
         "nutrition": {
@@ -2389,7 +3231,11 @@
         ],
         "description": "Las Alegrías son un dulce ancestral del Caribe colombiano, herencia africana y precolombina. Son barras energéticas naturales hechas de semillas de amaranto (millo) recubiertas de un melado de panela y coco."
       },
-      "category": ["Dulce", "Snack", "Festivo"],
+      "category": [
+        "Dulce",
+        "Snack",
+        "Festivo"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "20 minutos",
       "cookTime": "15 minutos",
@@ -2400,7 +3246,11 @@
         "Coco fresco",
         "Miel de caña"
       ],
-      "tags": ["Tradicional", "Cartagena", "Dulces típicos"],
+      "tags": [
+        "Tradicional",
+        "Cartagena",
+        "Dulces típicos"
+      ],
       "filePath": "dishes/colombian/caribe/alegrias/alegrias.md"
     },
     {
@@ -2410,22 +3260,28 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Arepa de Huevo",
-        "region": "Caribe",
+        "aliases": {
+          "en": [
+            "Arepa with Egg",
+            "Egg Arepa"
+          ]
+        },
+        "categories": [
+          "Fritura",
+          "Desayuno",
+          "Callejera"
+        ],
+        "cook_time": "15",
+        "description": "La ingeniería hecha arepa. El único plato del mundo donde se introduce un huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito depende de la termodinámica del vapor para crear la cavidad interna ('la cama del huevo').",
+        "difficulty": "★★★★☆",
+        "images": [
+          {
+            "description": "Arepa de huevo inflada y dorada (Luruaco style)",
+            "url": "https://im.ge/i/arepa-huevo-1.AbC456"
+          }
+        ],
         "language": "es",
         "license": "MIT",
-        "source": {
-          "name": "Gastronomic Open Standard (GOS) Database",
-          "url": "pending",
-          "date_retrieved": "2026-09-03",
-          "notes": "Derived from GOS Database"
-        },
-        "categories": ["Fritura", "Desayuno", "Callejera"],
-        "difficulty": "★★★★☆",
-        "prep_time": "30",
-        "cook_time": "15",
-        "servings": 10,
-        "tags": ["Luruaco", "Fritanga", "Desayuno"],
         "main_ingredients": [
           "Maíz Amarillo (Masa)",
           "Huevo (AAA)",
@@ -2433,38 +3289,54 @@
           "Aceite vegetal (fritura profunda)",
           "Sal"
         ],
+        "nutrition": {
+          "calories": 350,
+          "macros": {
+            "carbs_g": 35,
+            "fat_g": 18,
+            "protein_g": 12
+          }
+        },
+        "prep_time": "30",
+        "region": "Caribe",
         "sensory": {
+          "aroma": [
+            "Maíz frito",
+            "Aceite caliente",
+            "Huevo cocido"
+          ],
           "flavor": [
             "Maíz tostado",
             "Graso (yema)",
             "Salado",
             "Ácido (si hay suero)"
           ],
+          "presentation": "Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño aparte.",
           "texture": [
             "Crocante (Corteza)",
             "Vaporoso (Interior)",
             "Cremoso (Huevo)"
-          ],
-          "aroma": ["Maíz frito", "Aceite caliente", "Huevo cocido"],
-          "presentation": "Disco dorado e inflado. Debe tener el 'ombligo' (donde se selló) visible pero cerrado. Se sirve hirviendo, escurriendo aceite, con suero costeño aparte."
+          ]
         },
-        "nutrition": {
-          "calories": 350,
-          "macros": {
-            "protein_g": 12,
-            "fat_g": 18,
-            "carbs_g": 35
-          }
+        "servings": 10,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
         },
-        "images": [
-          {
-            "url": "https://im.ge/i/arepa-huevo-1.AbC456",
-            "description": "Arepa de huevo inflada y dorada (Luruaco style)"
-          }
+        "tags": [
+          "Luruaco",
+          "Fritanga",
+          "Desayuno"
         ],
-        "description": "La ingeniería hecha arepa. El único plato del mundo donde se introduce un huevo crudo dentro de una masa ya frita para una segunda cocción. Su éxito depende de la termodinámica del vapor para crear la cavidad interna ('la cama del huevo')."
+        "title": "Arepa de Huevo"
       },
-      "category": ["Fritura", "Desayuno", "Callejera"],
+      "category": [
+        "Fritura",
+        "Desayuno",
+        "Callejera"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "30",
       "cookTime": "15",
@@ -2476,7 +3348,11 @@
         "Aceite vegetal (fritura profunda)",
         "Sal"
       ],
-      "tags": ["Luruaco", "Fritanga", "Desayuno"],
+      "tags": [
+        "Luruaco",
+        "Fritanga",
+        "Desayuno"
+      ],
       "filePath": "dishes/colombian/caribe/arepa_de_huevo/arepa_de_huevo.md"
     },
     {
@@ -2496,12 +3372,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Guarnición", "Festivo", "Costeño"],
+        "categories": [
+          "Guarnición",
+          "Festivo",
+          "Costeño"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "45",
         "cook_time": "60",
         "servings": 6,
-        "tags": ["Cartagena", "Titoté", "Pescado Frito"],
+        "tags": [
+          "Cartagena",
+          "Titoté",
+          "Pescado Frito"
+        ],
         "main_ingredients": [
           "Leche de coco (Primera extracción/Titoté)",
           "Agua de coco (Segunda extracción)",
@@ -2544,7 +3428,11 @@
         ],
         "description": "La guarnición reina del Caribe. No es un simple arroz hervido en leche de coco; es una técnica compleja de separación de fases donde la proteína y el azúcar del coco se fríen en su propio aceite hasta caramelizarse (titoté) antes de añadir el arroz."
       },
-      "category": ["Guarnición", "Festivo", "Costeño"],
+      "category": [
+        "Guarnición",
+        "Festivo",
+        "Costeño"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "45",
       "cookTime": "60",
@@ -2557,7 +3445,11 @@
         "Pasas (opcional controversial)",
         "Sal (catalizador de sabor)"
       ],
-      "tags": ["Cartagena", "Titoté", "Pescado Frito"],
+      "tags": [
+        "Cartagena",
+        "Titoté",
+        "Pescado Frito"
+      ],
       "filePath": "dishes/colombian/caribe/arroz_con_coco/arroz_con_coco.md"
     },
     {
@@ -2577,12 +3469,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Snack", "Embutido", "Patrimonio"],
+        "categories": [
+          "Snack",
+          "Embutido",
+          "Patrimonio"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "60",
         "cook_time": "45",
         "servings": 30,
-        "tags": ["Soledad", "Callejero", "Carnaval"],
+        "tags": [
+          "Soledad",
+          "Callejero",
+          "Carnaval"
+        ],
         "main_ingredients": [
           "Carne de Res (90% magra)",
           "Tocino de Cerdo (Grasa dorsal)",
@@ -2596,8 +3496,16 @@
             "Pimienta residual",
             "Cárnico graso"
           ],
-          "texture": ["Snap (Crocancia de tripa)", "Compacta", "Granular fina"],
-          "aroma": ["Ajo dominante", "Pimienta caliente", "Natural (Tripa)"],
+          "texture": [
+            "Snap (Crocancia de tripa)",
+            "Compacta",
+            "Granular fina"
+          ],
+          "aroma": [
+            "Ajo dominante",
+            "Pimienta caliente",
+            "Natural (Tripa)"
+          ],
           "presentation": "Ristra de bolitas unidas por hilo. Se sirven calientes, bañadas en jugo de limón fresco y acompañadas de bollo de yuca (limpio de hojas)."
         },
         "nutrition": {
@@ -2616,7 +3524,11 @@
         ],
         "description": "El snack callejero por excelencia del Atlántico. Es un embutido de herencia hispana (botifarra) que mutó para adaptarse al calor del trópico: se redujo su tamaño para cocción rápida en agua y se aumentó el uso de pimienta para actuar como antimicrobiano natural."
       },
-      "category": ["Snack", "Embutido", "Patrimonio"],
+      "category": [
+        "Snack",
+        "Embutido",
+        "Patrimonio"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "60",
       "cookTime": "45",
@@ -2628,7 +3540,11 @@
         "Pimienta Picante 'Ojo de Pájaro' (o similar)",
         "Ajo y Sal"
       ],
-      "tags": ["Soledad", "Callejero", "Carnaval"],
+      "tags": [
+        "Soledad",
+        "Callejero",
+        "Carnaval"
+      ],
       "filePath": "dishes/colombian/caribe/butifarra_soledeña/butifarra_soledeña.md"
     },
     {
@@ -2648,12 +3564,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Fritura", "Desayuno", "Amasijo"],
+        "categories": [
+          "Fritura",
+          "Desayuno",
+          "Amasijo"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "20",
         "servings": 10,
-        "tags": ["Fritanga", "Barranquilla", "Desayuno"],
+        "tags": [
+          "Fritanga",
+          "Barranquilla",
+          "Desayuno"
+        ],
         "main_ingredients": [
           "Yuca (Mandioca/Cassava) harinosa",
           "Carne molida (o Queso costeño)",
@@ -2662,13 +3586,21 @@
           "Color (Achiote) para el relleno"
         ],
         "sensory": {
-          "flavor": ["Yuca frita (Neutro)", "Cárnico (Umami)", "Graso"],
+          "flavor": [
+            "Yuca frita (Neutro)",
+            "Cárnico (Umami)",
+            "Graso"
+          ],
           "texture": [
             "Vidrio (Corteza externa)",
             "Puré elástico (Masa)",
             "Suave (Relleno)"
           ],
-          "aroma": ["Yuca tostada", "Guiso de tomate", "Aceite"],
+          "aroma": [
+            "Yuca tostada",
+            "Guiso de tomate",
+            "Aceite"
+          ],
           "presentation": "Zepelines dorados, lisos y uniformes (sin grietas). Se deben servir hirviendo para apreciar el contraste crocante/suave."
         },
         "nutrition": {
@@ -2687,7 +3619,11 @@
         ],
         "description": "El torpedo de yuca. Una obra maestra de la reología del almidón: la yuca cocida y molida en caliente forma un gel elástico que, al freírse, crea una corteza vitrificada (glass-like) extremadamente crujiente, protegiendo un interior suave como la seda."
       },
-      "category": ["Fritura", "Desayuno", "Amasijo"],
+      "category": [
+        "Fritura",
+        "Desayuno",
+        "Amasijo"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "20",
@@ -2699,7 +3635,11 @@
         "Sal",
         "Color (Achiote) para el relleno"
       ],
-      "tags": ["Fritanga", "Barranquilla", "Desayuno"],
+      "tags": [
+        "Fritanga",
+        "Barranquilla",
+        "Desayuno"
+      ],
       "filePath": "dishes/colombian/caribe/carimañolas/carimañolas.md"
     },
     {
@@ -2719,12 +3659,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Sopa", "Premium"],
+        "categories": [
+          "Plato Fuerte",
+          "Sopa",
+          "Premium"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "45",
         "cook_time": "40",
         "servings": 6,
-        "tags": ["Festivo", "Cartagena", "Mariscos"],
+        "tags": [
+          "Festivo",
+          "Cartagena",
+          "Mariscos"
+        ],
         "main_ingredients": [
           "Camarón (con cabeza para caldo)",
           "Calamar (Anillos)",
@@ -2740,8 +3688,16 @@
             "Lácteo (Coco/Crema)",
             "Herbal (Cilantro)"
           ],
-          "texture": ["Sedosa (Velouté)", "Firme (Mariscos)", "Untuosa"],
-          "aroma": ["Salinidad de playa", "Nuez de coco", "Tomillo y Laurel"],
+          "texture": [
+            "Sedosa (Velouté)",
+            "Firme (Mariscos)",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Salinidad de playa",
+            "Nuez de coco",
+            "Tomillo y Laurel"
+          ],
           "presentation": "Cazuela de barro humeante. El líquido debe ser de color naranja pálido o crema. Se sirve con una lluvia de cilantro fresco y una rodaja de limón al lado."
         },
         "nutrition": {
@@ -2760,7 +3716,11 @@
         ],
         "description": "La cumbre de la sofisticación costera. Es una técnica híbrida entre el bisque francés (extracción de sabor de carcasas) y el encocado afro-colombiano. Su complejidad reside en la emulsión estable de leche de coco y proteínas marinas sin que se corte."
       },
-      "category": ["Plato Fuerte", "Sopa", "Premium"],
+      "category": [
+        "Plato Fuerte",
+        "Sopa",
+        "Premium"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "45",
       "cookTime": "40",
@@ -2774,7 +3734,11 @@
         "Pescado blanco (Mero/Pargo)",
         "Brandy o Vino Blanco (Desglasado)"
       ],
-      "tags": ["Festivo", "Cartagena", "Mariscos"],
+      "tags": [
+        "Festivo",
+        "Cartagena",
+        "Mariscos"
+      ],
       "filePath": "dishes/colombian/caribe/cazuela_de_mariscos/cazuela_de_mariscos.md"
     },
     {
@@ -2794,12 +3758,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Entrada", "Fresco", "Ceviche"],
+        "categories": [
+          "Entrada",
+          "Fresco",
+          "Ceviche"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "20",
         "cook_time": "5",
         "servings": 4,
-        "tags": ["Cartagena", "Playa", "Cóctel"],
+        "tags": [
+          "Cartagena",
+          "Playa",
+          "Cóctel"
+        ],
         "main_ingredients": [
           "Camarón (Escaldado)",
           "Limón Tahití (Jugo fresco)",
@@ -2820,7 +3792,11 @@
             "Crujiente (Cebolla)",
             "Cremosa (Salsa)"
           ],
-          "aroma": ["Cítrico fresco", "Mar", "Ajo suave"],
+          "aroma": [
+            "Cítrico fresco",
+            "Mar",
+            "Ajo suave"
+          ],
           "presentation": "Copa de cóctel clásica o vaso transparente. Salsa rosada brillante. Se acompaña tradicionalmente con Galletas de Soda (Saltinas)."
         },
         "nutrition": {
@@ -2839,7 +3815,11 @@
         ],
         "description": "La versión colombiana del ceviche. A diferencia del estilo peruano, el costeño utiliza camarones pre-cocidos (técnica de seguridad en climas cálidos) y una emulsión de tomate y limón que actúa como una 'Leche de Tigre' dulce-ácida."
       },
-      "category": ["Entrada", "Fresco", "Ceviche"],
+      "category": [
+        "Entrada",
+        "Fresco",
+        "Ceviche"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "20",
       "cookTime": "5",
@@ -2853,7 +3833,11 @@
         "Ajo",
         "Cilantro"
       ],
-      "tags": ["Cartagena", "Playa", "Cóctel"],
+      "tags": [
+        "Cartagena",
+        "Playa",
+        "Cóctel"
+      ],
       "filePath": "dishes/colombian/caribe/ceviche_de_camaron/ceviche_de_camaron.md"
     },
     {
@@ -2873,12 +3857,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Sopa", "Plato Fuerte", "Vegetariano (casi)"],
+        "categories": [
+          "Sopa",
+          "Plato Fuerte",
+          "Vegetariano (casi)"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30",
         "cook_time": "90",
         "servings": 8,
-        "tags": ["Sucre", "Córdoba", "Semana Santa"],
+        "tags": [
+          "Sucre",
+          "Córdoba",
+          "Semana Santa"
+        ],
         "main_ingredients": [
           "Ñame Espino (Dioscorea rotundata)",
           "Queso Costeño (Duro/Salado)",
@@ -2922,7 +3914,11 @@
         ],
         "description": "El emblema de la sabana caribeña. Una sopa que desafía la física: utiliza los mucílagos del ñame espino para crear una suspensión coloidal estable de queso y suero, sin cortarse. Es un estudio de la interacción entre almidones y ácidos lácteos."
       },
-      "category": ["Sopa", "Plato Fuerte", "Vegetariano (casi)"],
+      "category": [
+        "Sopa",
+        "Plato Fuerte",
+        "Vegetariano (casi)"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30",
       "cookTime": "90",
@@ -2936,7 +3932,11 @@
         "Bleo de Chupa (opcional/tradicional)",
         "Jugo de limón (secreto)"
       ],
-      "tags": ["Sucre", "Córdoba", "Semana Santa"],
+      "tags": [
+        "Sucre",
+        "Córdoba",
+        "Semana Santa"
+      ],
       "filePath": "dishes/colombian/caribe/mote_de_queso/mote_de_queso.md"
     },
     {
@@ -2994,12 +3994,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Sopa", "Festivo"],
+        "categories": [
+          "Plato Fuerte",
+          "Sopa",
+          "Festivo"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "120",
         "servings": 10,
-        "tags": ["Domingo", "Olla Comunitaria", "Paseo de Olla"],
+        "tags": [
+          "Domingo",
+          "Olla Comunitaria",
+          "Paseo de Olla"
+        ],
         "main_ingredients": [
           "Costilla de Res (o Carne Salada)",
           "Cerdo / Pollo",
@@ -3015,7 +4023,11 @@
             "Umami (Trifecta de carnes)",
             "Cítrico (Toque final)"
           ],
-          "texture": ["Espeso (Cremoso)", "Mantecoso (Ñame)", "Jugoso"],
+          "texture": [
+            "Espeso (Cremoso)",
+            "Mantecoso (Ñame)",
+            "Jugoso"
+          ],
           "aroma": [
             "Leña (si se hace en fogón)",
             "Cilantro Cimarrón",
@@ -3039,7 +4051,11 @@
         ],
         "description": "El sancocho es la institución social del Caribe. A diferencia de las sopas andinas, utiliza el ñame espino como hidrocoloide principal, creando un caldo denso y mantecoso que soporta una mezcla masiva de proteínas y carbohidratos complejos."
       },
-      "category": ["Plato Fuerte", "Sopa", "Festivo"],
+      "category": [
+        "Plato Fuerte",
+        "Sopa",
+        "Festivo"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "120",
@@ -3053,7 +4069,11 @@
         "Mazorca de Maíz",
         "Cilantro y Cebolla"
       ],
-      "tags": ["Domingo", "Olla Comunitaria", "Paseo de Olla"],
+      "tags": [
+        "Domingo",
+        "Olla Comunitaria",
+        "Paseo de Olla"
+      ],
       "filePath": "dishes/colombian/caribe/sancocho_costeño/sancocho_costeño.md"
     },
     {
@@ -3073,12 +4093,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Río", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Río",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30",
         "cook_time": "45",
         "servings": 6,
-        "tags": ["Río Magdalena", "Tradición", "Pesca"],
+        "tags": [
+          "Río Magdalena",
+          "Tradición",
+          "Pesca"
+        ],
         "main_ingredients": [
           "Bocachico / Capaz (Pescado de escama)",
           "Hojas de Plátano o Bijao (para sellar)",
@@ -3087,7 +4115,11 @@
           "Cilantro Cimarrón"
         ],
         "sensory": {
-          "flavor": ["Terroso (Natural)", "Hogao (Umami)", "Dulce Tubérculo"],
+          "flavor": [
+            "Terroso (Natural)",
+            "Hogao (Umami)",
+            "Dulce Tubérculo"
+          ],
           "texture": [
             "Suave (Pescado al vapor)",
             "Harinoso (Vituallas)",
@@ -3116,7 +4148,11 @@
         ],
         "description": "La técnica de cocción por niveles. El viudo es una 'vaporera biológica' donde las vituallas crean una barrera física frente al fuego, permitiendo que el pescado se cocine exclusivamente por calor latente (vapor), preservando su mioglobina y grasas delicadas."
       },
-      "category": ["Plato Fuerte", "Río", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Río",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30",
       "cookTime": "45",
@@ -3128,7 +4164,11 @@
         "Hogao Criollo",
         "Cilantro Cimarrón"
       ],
-      "tags": ["Río Magdalena", "Tradición", "Pesca"],
+      "tags": [
+        "Río Magdalena",
+        "Tradición",
+        "Pesca"
+      ],
       "filePath": "dishes/colombian/caribe/viudo_de_pescado/viudo_de_pescado.md"
     },
     {
@@ -3376,12 +4416,19 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Especialidad"],
+        "categories": [
+          "Plato Fuerte",
+          "Especialidad"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "60",
         "servings": 6,
-        "tags": ["San Andrés", "Providencia", "Especie Protegida (Veda)"],
+        "tags": [
+          "San Andrés",
+          "Providencia",
+          "Especie Protegida (Veda)"
+        ],
         "main_ingredients": [
           "Caracol de Pala (*Strombus gigas*)",
           "Leche de Coco fresca",
@@ -3422,7 +4469,10 @@
         ],
         "description": "Un manjar de las profundidades. El caracol guisado es el resultado de domar una de las proteínas más resistentes del océano a través técnica mecánica (el golpeo) y cocción química en grasas de coco."
       },
-      "category": ["Plato Fuerte", "Especialidad"],
+      "category": [
+        "Plato Fuerte",
+        "Especialidad"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "60",
@@ -3433,7 +4483,11 @@
         "Ají Chirel (picante local)",
         "Vegetales (Cebolla, Pimentón, Ajo)"
       ],
-      "tags": ["San Andrés", "Providencia", "Especie Protegida (Veda)"],
+      "tags": [
+        "San Andrés",
+        "Providencia",
+        "Especie Protegida (Veda)"
+      ],
       "filePath": "dishes/colombian/insular/caracol_guisado/caracol_guisado.md"
     },
     {
@@ -3605,12 +4659,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Bebida", "Fermentación", "Ancestral"],
+        "categories": [
+          "Bebida",
+          "Fermentación",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "480",
         "cook_time": "20",
         "servings": 10,
-        "tags": ["Raizal", "Probiótico", "Legacy"],
+        "tags": [
+          "Raizal",
+          "Probiótico",
+          "Legacy"
+        ],
         "main_ingredients": [
           "Jengibre Fresco (*Zingiber officinale*)",
           "Azúcar Morena o Panela",
@@ -3618,13 +4680,21 @@
           "Agua de Lluvia o filtrada"
         ],
         "sensory": {
-          "flavor": ["Pungente / Picante", "Ácido Cítrico", "Dulzor Residual"],
+          "flavor": [
+            "Pungente / Picante",
+            "Ácido Cítrico",
+            "Dulzor Residual"
+          ],
           "texture": [
             "Efervescente (Natural)",
             "Ligera",
             "Sedimentada (Si no se filtra)"
           ],
-          "aroma": ["Jengibre Fresco", "Levadura Activa", "Limón"],
+          "aroma": [
+            "Jengibre Fresco",
+            "Levadura Activa",
+            "Limón"
+          ],
           "presentation": "Se sirve en vasos de vidrio frío, a menudo con hielo. Debe presentar una corona de burbujas finas y persistentes. Puede ser translúcida u opaca dependiendo del tiempo de fermentación."
         },
         "nutrition": {
@@ -3643,7 +4713,11 @@
         ],
         "description": "Más que una bebida, es un tónico probiótico. La Ginger Beer isleña es el resultado de una fermentación salvaje donde el jengibre actúa como fuente de sabor y como regulador selectivo de microorganismos, creando un refugio de efervescencia natural."
       },
-      "category": ["Bebida", "Fermentación", "Ancestral"],
+      "category": [
+        "Bebida",
+        "Fermentación",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "480",
       "cookTime": "20",
@@ -3654,7 +4728,11 @@
         "Limón Criollo",
         "Agua de Lluvia o filtrada"
       ],
-      "tags": ["Raizal", "Probiótico", "Legacy"],
+      "tags": [
+        "Raizal",
+        "Probiótico",
+        "Legacy"
+      ],
       "filePath": "dishes/colombian/insular/ginger_beer/ginger_beer.md"
     },
     {
@@ -3674,12 +4752,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Pan", "Acompañante", "Tradicional"],
+        "categories": [
+          "Pan",
+          "Acompañante",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "120",
         "cook_time": "35",
         "servings": 12,
-        "tags": ["Bakery", "Vegano (si se usa aceite)", "San Andrés"],
+        "tags": [
+          "Bakery",
+          "Vegano (si se usa aceite)",
+          "San Andrés"
+        ],
         "main_ingredients": [
           "Harina de trigo de fuerza",
           "Leche de Coco natural (Primera extracción)",
@@ -3688,9 +4774,21 @@
           "Levadura"
         ],
         "sensory": {
-          "flavor": ["Dulzor Suave", "Gruta de Coco", "Ligeramente Salado"],
-          "texture": ["Miga Densa y Húmeda", "Corteza Suave-Dorada", "Untuosa"],
-          "aroma": ["Aceite de Coco tibio", "Pan horneado", "Leche evaporada"],
+          "flavor": [
+            "Dulzor Suave",
+            "Gruta de Coco",
+            "Ligeramente Salado"
+          ],
+          "texture": [
+            "Miga Densa y Húmeda",
+            "Corteza Suave-Dorada",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Aceite de Coco tibio",
+            "Pan horneado",
+            "Leche evaporada"
+          ],
           "presentation": "Bollos redondos o trenzados de color dorado canela. La miga debe ser blanca y mostrar pequeños trozos de coco rallado si es artesanal."
         },
         "nutrition": {
@@ -3709,7 +4807,11 @@
         ],
         "description": "El sustento del isleño. El Pan de Coco es una obra maestra de la panificación tropical, donde el agua de la leche de coco hidrata la masa mientras que sus grasas naturales inhiben parcialmente el gluten, creando una miga de una humedad excepcional."
       },
-      "category": ["Pan", "Acompañante", "Tradicional"],
+      "category": [
+        "Pan",
+        "Acompañante",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "120",
       "cookTime": "35",
@@ -3721,7 +4823,11 @@
         "Mantequilla o Aceite de Coco",
         "Levadura"
       ],
-      "tags": ["Bakery", "Vegano (si se usa aceite)", "San Andrés"],
+      "tags": [
+        "Bakery",
+        "Vegano (si se usa aceite)",
+        "San Andrés"
+      ],
       "filePath": "dishes/colombian/insular/pan_de_coco/pan_de_coco.md"
     },
     {
@@ -3740,7 +4846,11 @@
           "url": "https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Guiso isleño", "Comida típica"],
+        "categories": [
+          "Plato fuerte",
+          "Guiso isleño",
+          "Comida típica"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30 minutos",
         "cook_time": "1 hora",
@@ -3753,13 +4863,22 @@
           "Tomillo"
         ],
         "sensory": {
-          "flavor": ["Umami", "Cremoso", "Salado", "Ligeramente dulce (coco)"],
+          "flavor": [
+            "Umami",
+            "Cremoso",
+            "Salado",
+            "Ligeramente dulce (coco)"
+          ],
           "texture": [
             "Jugoso (pollo)",
             "Esponjoso (dumplings)",
             "Cremoso (caldo)"
           ],
-          "aroma": ["Coco", "Herbal (tomillo)", "Sofrito"],
+          "aroma": [
+            "Coco",
+            "Herbal (tomillo)",
+            "Sofrito"
+          ],
           "presentation": "Se sirve en platos hondos, decorado con ramitas de tomillo fresco. Ideal para almuerzos familiares y celebraciones."
         },
         "nutrition": {
@@ -3782,7 +4901,11 @@
         ],
         "description": "El Pollo Guisado con Dumplings es un plato reconfortante y festivo de la región Insular, especialmente en San Andrés y Providencia. Combina pollo sazonado y guisado lentamente con vegetales y especias isleñas, acompañado de dumplings esponjosos cocidos en el mismo caldo, creando una experiencia r..."
       },
-      "category": ["Plato fuerte", "Guiso isleño", "Comida típica"],
+      "category": [
+        "Plato fuerte",
+        "Guiso isleño",
+        "Comida típica"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30 minutos",
       "cookTime": "1 hora",
@@ -3852,12 +4975,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Ancestral", "Mar y Tierra"],
+        "categories": [
+          "Plato Fuerte",
+          "Ancestral",
+          "Mar y Tierra"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "50",
         "cook_time": "75",
         "servings": 6,
-        "tags": ["Raizal", "Multicultural", "Caldo"],
+        "tags": [
+          "Raizal",
+          "Multicultural",
+          "Caldo"
+        ],
         "main_ingredients": [
           "Pescado de escama (Pargo/Róbalo)",
           "Caracol de Pala (*Strombus gigas*)",
@@ -3876,7 +5007,11 @@
             "Suave (Dumplings)",
             "Firme (Caracol/Pescado)"
           ],
-          "aroma": ["Coco Láctico", "Albahaca Salvaje", "Mar Fresco"],
+          "aroma": [
+            "Coco Láctico",
+            "Albahaca Salvaje",
+            "Mar Fresco"
+          ],
           "presentation": "Se sirve en cuencos profundos. Los componentes (yuca, plátano, dumplings) deben sobresalir del caldo. La leche de coco debe verse blanca y opaca, no separada en aceite."
         },
         "nutrition": {
@@ -3895,7 +5030,11 @@
         ],
         "description": "La joya de la corona del archipiélago. El Rondón es una lección de física de fluidos: una emulsión estable de leche de coco que 'corre hacia abajo' (runs down) integrando proteínas terrestres y marinas con almidones en suspensión."
       },
-      "category": ["Plato Fuerte", "Ancestral", "Mar y Tierra"],
+      "category": [
+        "Plato Fuerte",
+        "Ancestral",
+        "Mar y Tierra"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "50",
       "cookTime": "75",
@@ -3907,7 +5046,11 @@
         "Leche de Coco natural",
         "Dumplings (Harina de trigo)"
       ],
-      "tags": ["Raizal", "Multicultural", "Caldo"],
+      "tags": [
+        "Raizal",
+        "Multicultural",
+        "Caldo"
+      ],
       "filePath": "dishes/colombian/insular/rondon/rondon.md"
     },
     {
@@ -3927,12 +5070,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Sopa", "Festivo", "Nutritivo"],
+        "categories": [
+          "Sopa",
+          "Festivo",
+          "Nutritivo"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "60",
         "servings": 6,
-        "tags": ["San Andrés", "Ancestral", "Fondo de Mar"],
+        "tags": [
+          "San Andrés",
+          "Ancestral",
+          "Fondo de Mar"
+        ],
         "main_ingredients": [
           "Cangrejo Negro o Azul (*Gecarcinus ruricola*)",
           "Leche de Coco espesa",
@@ -3940,13 +5091,21 @@
           "Albahaca salvaje y Tomillo"
         ],
         "sensory": {
-          "flavor": ["Umami Terroso", "Cremoso de Coco", "Dulce de Crustáceo"],
+          "flavor": [
+            "Umami Terroso",
+            "Cremoso de Coco",
+            "Dulce de Crustáceo"
+          ],
           "texture": [
             "Caldo Denso / Viscoso",
             "Sólidos Tiernos (Tubérculos)",
             "Crocante (Patas de Cangrejo)"
           ],
-          "aroma": ["Caparazón tostado", "Albahaca fresca", "Salitre dulce"],
+          "aroma": [
+            "Caparazón tostado",
+            "Albahaca fresca",
+            "Salitre dulce"
+          ],
           "presentation": "Se sirve en plato hondo amplio. El cangrejo debe estar partido en piezas que permitan al comensal extraer la carne manualmente. El caldo debe tener un tono marfil con manchas naranjas de la grasa del cangrejo."
         },
         "nutrition": {
@@ -3965,7 +5124,11 @@
         ],
         "description": "La energía del mar en un plato. La Sopa de Cangrejo isleña utiliza el caparazón como catalizador de sabor, extrayendo calcio y quitina para crear un fondo de complejidad umami inigualable, suavizado por la leche de coco."
       },
-      "category": ["Sopa", "Festivo", "Nutritivo"],
+      "category": [
+        "Sopa",
+        "Festivo",
+        "Nutritivo"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "60",
@@ -3976,7 +5139,11 @@
         "Pigtail (Rabo de cerdo) - Opcional para fondo",
         "Albahaca salvaje y Tomillo"
       ],
-      "tags": ["San Andrés", "Ancestral", "Fondo de Mar"],
+      "tags": [
+        "San Andrés",
+        "Ancestral",
+        "Fondo de Mar"
+      ],
       "filePath": "dishes/colombian/insular/sopa_de_cangrejo/sopa_de_cangrejo.md"
     },
     {
@@ -4035,13 +5202,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Vegetal"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Vegetal"
+          ],
           "texture": [
             "Suave (arroz)",
             "Tierno (pollo)",
             "Crujiente (verduras)"
           ],
-          "aroma": ["Especiado", "Aromático", "Avícola"],
+          "aroma": [
+            "Especiado",
+            "Aromático",
+            "Avícola"
+          ],
           "presentation": "Arroz de color amarillo brillante con verduras visibles, servido con salsa de tomate y papas fritas."
         },
         "nutrition": {
@@ -4076,14 +5251,11 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Chuzo Colombiano (Brocheta Callejera)",
-        "region": "Nacional",
-        "language": "es",
-        "license": "MIT",
-        "source": {
-          "name": "recetasdecolombia.com",
-          "url": "https://www.recetasdecolombia.com/chuzo",
-          "date_retrieved": "2026-09-03"
+        "aliases": {
+          "en": [
+            "Colombian Chuzo",
+            "Street Skewer"
+          ]
         },
         "categories": [
           "Snack",
@@ -4091,45 +5263,88 @@
           "Plato fuerte",
           "Street food"
         ],
-        "difficulty": "★★☆☆☆",
-        "prep_time": "40 minutos",
         "cook_time": "30 minutos",
-        "servings": 6,
-        "tags": ["colombiano", "tradicional", "chuzo", "open source"],
-        "main_ingredients": ["Carne de res", "Pollo", "Papa salada", "Arepa"],
-        "sensory": {
-          "flavor": ["Umami", "Ahumado"],
-          "texture": ["Jugoso", "Dorado por fuera"],
-          "aroma": ["Ahumado", "Especiado"],
-          "presentation": "Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir en fiestas y eventos nocturnas."
-        },
+        "description": "El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en celebraciones nocturnas.",
+        "difficulty": "★★☆☆☆",
+        "images": [
+          {
+            "description": "Chuzo colombiano en parrilla (Pixabay)",
+            "url": "https://pixabay.com/photos/chorizo-parrilla-barbacoa-2314640/"
+          },
+          {
+            "description": "Variaciones de chuzo en Unsplash",
+            "url": "https://unsplash.com/s/photos/chuzo-colombia"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Carne de res",
+          "Pollo",
+          "Papa salada",
+          "Arepa"
+        ],
         "nutrition": {
           "calories": 1832,
           "macros": {
-            "protein_g": 174.5,
+            "carbs_g": 168.8,
             "fat_g": 49,
-            "carbs_g": 168.8
+            "protein_g": 174.5
           }
         },
-        "images": [
-          {
-            "url": "https://pixabay.com/photos/chorizo-parrilla-barbacoa-2314640/",
-            "description": "Chuzo colombiano en parrilla (Pixabay)"
-          },
-          {
-            "url": "https://unsplash.com/s/photos/chuzo-colombia",
-            "description": "Variaciones de chuzo en Unsplash"
-          }
+        "prep_time": "40 minutos",
+        "region": "Nacional",
+        "sensory": {
+          "aroma": [
+            "Ahumado",
+            "Especiado"
+          ],
+          "flavor": [
+            "Umami",
+            "Ahumado"
+          ],
+          "presentation": "Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir en fiestas y eventos nocturnas.",
+          "texture": [
+            "Jugoso",
+            "Dorado por fuera"
+          ]
+        },
+        "servings": 6,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "recetasdecolombia.com",
+          "url": "https://www.recetasdecolombia.com/chuzo"
+        },
+        "tags": [
+          "colombiano",
+          "tradicional",
+          "chuzo",
+          "open source"
         ],
-        "description": "El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en celebraciones nocturnas."
+        "title": "Chuzo Colombiano (Brocheta Callejera)"
       },
-      "category": ["Snack", "Comida callejera", "Plato fuerte", "Street food"],
+      "category": [
+        "Snack",
+        "Comida callejera",
+        "Plato fuerte",
+        "Street food"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "40 minutos",
       "cookTime": "30 minutos",
       "servings": 6,
-      "mainIngredients": ["Carne de res", "Pollo", "Papa salada", "Arepa"],
-      "tags": ["colombiano", "tradicional", "chuzo", "open source"],
+      "mainIngredients": [
+        "Carne de res",
+        "Pollo",
+        "Papa salada",
+        "Arepa"
+      ],
+      "tags": [
+        "colombiano",
+        "tradicional",
+        "chuzo",
+        "open source"
+      ],
       "filePath": "dishes/colombian/nacionales/chuzo/chuzo.md"
     },
     {
@@ -4176,9 +5391,20 @@
           "Arepa"
         ],
         "sensory": {
-          "flavor": ["Salado", "Umami"],
-          "texture": ["Crujiente", "Jugoso", "Suave"],
-          "aroma": ["Frito", "Ahumado", "Especiado"],
+          "flavor": [
+            "Salado",
+            "Umami"
+          ],
+          "texture": [
+            "Crujiente",
+            "Jugoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Frito",
+            "Ahumado",
+            "Especiado"
+          ],
           "presentation": "Se sirve en bandeja grande o canasta, sobre hojas de plátano, para compartir en ambiente festivo."
         },
         "nutrition": {
@@ -4272,9 +5498,21 @@
           "Salsas"
         ],
         "sensory": {
-          "flavor": ["Umami", "Salado", "Cremoso"],
-          "texture": ["Crujiente (papa)", "Jugoso (carne)", "Cremoso (salsas)"],
-          "aroma": ["Parrilla", "Queso", "Salsas"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Cremoso"
+          ],
+          "texture": [
+            "Crujiente (papa)",
+            "Jugoso (carne)",
+            "Cremoso (salsas)"
+          ],
+          "aroma": [
+            "Parrilla",
+            "Queso",
+            "Salsas"
+          ],
           "presentation": "Se sirve en porción generosa, ideal para compartir o como cena urbana."
         },
         "nutrition": {
@@ -4340,7 +5578,12 @@
           "url": "https://www.recetasdecolombia.com/papas-aborrajadas",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Snack", "Comida callejera", "Merienda", "Tradicional"],
+        "categories": [
+          "Snack",
+          "Comida callejera",
+          "Merienda",
+          "Tradicional"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "30 minutos",
         "cook_time": "20 minutos",
@@ -4351,11 +5594,24 @@
           "papas aborrajadas",
           "open source"
         ],
-        "main_ingredients": ["Papa", "Harina de trigo", "Huevo", "Aceite"],
+        "main_ingredients": [
+          "Papa",
+          "Harina de trigo",
+          "Huevo",
+          "Aceite"
+        ],
         "sensory": {
-          "flavor": ["Salado"],
-          "texture": ["Crujiente por fuera", "Suave por dentro"],
-          "aroma": ["Frito", "Cereal"],
+          "flavor": [
+            "Salado"
+          ],
+          "texture": [
+            "Crujiente por fuera",
+            "Suave por dentro"
+          ],
+          "aroma": [
+            "Frito",
+            "Cereal"
+          ],
           "presentation": "Se sirven calientes, ideales para compartir en reuniones o como snack escolar."
         },
         "nutrition": {
@@ -4374,13 +5630,28 @@
         ],
         "description": "Las papas aborrajadas son un snack callejero y casero, típico de ferias y ventas ambulantes en Colombia. Consisten en rodajas de papa cocida, rebozadas en masa y fritas hasta lograr una textura crujiente por fuera y suave por dentro. Son tendencia por su sencillez y sabor reconfortante."
       },
-      "category": ["Snack", "Comida callejera", "Merienda", "Tradicional"],
+      "category": [
+        "Snack",
+        "Comida callejera",
+        "Merienda",
+        "Tradicional"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "30 minutos",
       "cookTime": "20 minutos",
       "servings": "12 unidades",
-      "mainIngredients": ["Papa", "Harina de trigo", "Huevo", "Aceite"],
-      "tags": ["colombiano", "tradicional", "papas aborrajadas", "open source"],
+      "mainIngredients": [
+        "Papa",
+        "Harina de trigo",
+        "Huevo",
+        "Aceite"
+      ],
+      "tags": [
+        "colombiano",
+        "tradicional",
+        "papas aborrajadas",
+        "open source"
+      ],
       "filePath": "dishes/colombian/nacionales/papas_aborrajadas/papas_aborrajadas/papas_aborrajadas.md"
     },
     {
@@ -4399,12 +5670,22 @@
           "url": "https://www.recetasdecolombia.com/papas-rellenas",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Snack", "Comida callejera", "Merienda", "Tradicional"],
+        "categories": [
+          "Snack",
+          "Comida callejera",
+          "Merienda",
+          "Tradicional"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "1 hora",
         "cook_time": "30 minutos",
         "servings": 8,
-        "tags": ["colombiano", "tradicional", "papas rellenas", "open source"],
+        "tags": [
+          "colombiano",
+          "tradicional",
+          "papas rellenas",
+          "open source"
+        ],
         "main_ingredients": [
           "Papa",
           "Carne molida",
@@ -4413,9 +5694,17 @@
           "Aceite"
         ],
         "sensory": {
-          "flavor": ["Salado"],
-          "texture": ["Crujiente por fuera", "Suave y jugoso por dentro"],
-          "aroma": ["Frito", "Especiado"],
+          "flavor": [
+            "Salado"
+          ],
+          "texture": [
+            "Crujiente por fuera",
+            "Suave y jugoso por dentro"
+          ],
+          "aroma": [
+            "Frito",
+            "Especiado"
+          ],
           "presentation": "Se sirve caliente, ideal para comer en la calle o en reuniones informales."
         },
         "nutrition": {
@@ -4438,7 +5727,12 @@
         ],
         "description": "Las papas rellenas son un clásico de la comida callejera colombiana. Consisten en papas cocidas y rellenas de carne, huevo y condimentos, empanizadas y fritas hasta lograr una corteza dorada y crujiente. Son tendencia por su sabor reconfortante y su presencia en ferias y ventas ambulantes."
       },
-      "category": ["Snack", "Comida callejera", "Merienda", "Tradicional"],
+      "category": [
+        "Snack",
+        "Comida callejera",
+        "Merienda",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "1 hora",
       "cookTime": "30 minutos",
@@ -4450,7 +5744,12 @@
         "Harina de trigo",
         "Aceite"
       ],
-      "tags": ["colombiano", "tradicional", "papas rellenas", "open source"],
+      "tags": [
+        "colombiano",
+        "tradicional",
+        "papas rellenas",
+        "open source"
+      ],
       "filePath": "dishes/colombian/nacionales/papas_rellenas/papas_rellenas.md"
     },
     {
@@ -4460,14 +5759,11 @@
       "country": "colombia",
       "hasMetadata": true,
       "metadata": {
-        "title": "Salchipapa",
-        "region": "Nacional",
-        "language": "es",
-        "license": "MIT",
-        "source": {
-          "name": "cookpad.com",
-          "url": "https://cookpad.com/co/buscar/salchipapa",
-          "date_retrieved": "2026-09-03"
+        "aliases": {
+          "en": [
+            "Salchipapa",
+            "Sausage and Fries"
+          ]
         },
         "categories": [
           "Snack",
@@ -4475,11 +5771,21 @@
           "Street food",
           "Para compartir"
         ],
-        "difficulty": "★☆☆☆☆",
-        "prep_time": "15 minutos",
         "cook_time": "15 minutos",
-        "servings": 2,
-        "tags": ["colombiano", "tradicional", "salchipapa", "open source"],
+        "description": "La salchipapa es uno de los platos callejeros más populares y virales de Colombia. Consiste en papas fritas cortadas en bastones y salchichas fritas, acompañadas de salsas, queso rallado y a veces huevo, carne o chorizo. Es un ícono de la comida rápida urbana y protagonista de ferias, puestos noc...",
+        "difficulty": "★☆☆☆☆",
+        "images": [
+          {
+            "description": "Salchipapa tradicional colombiana (Pixabay)",
+            "url": "https://pixabay.com/photos/salchipapa-colombia-street-food-6146292/"
+          },
+          {
+            "description": "Variaciones de salchipapa en Unsplash",
+            "url": "https://unsplash.com/s/photos/salchipapa"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
         "main_ingredients": [
           "Papa frita",
           "Salchicha",
@@ -4487,37 +5793,53 @@
           "Salsas",
           "Huevo"
         ],
+        "nutrition": {
+          "calories": 1028,
+          "macros": {
+            "carbs_g": 80.8,
+            "fat_g": 48,
+            "protein_g": 66.4
+          }
+        },
+        "prep_time": "15 minutos",
+        "region": "Nacional",
         "sensory": {
-          "flavor": ["Salado", "Umami"],
+          "aroma": [
+            "Frito",
+            "Ahumado",
+            "Especiado"
+          ],
+          "flavor": [
+            "Salado",
+            "Umami"
+          ],
+          "presentation": "Se sirve en porciones generosas, ideal para compartir en reuniones, fiestas o después de salir de fiesta. Muy popular entre jóvenes y familias.",
           "texture": [
             "Crujiente (papa)",
             "Suave (salchicha)",
             "Cremoso (salsas)"
-          ],
-          "aroma": ["Frito", "Ahumado", "Especiado"],
-          "presentation": "Se sirve en porciones generosas, ideal para compartir en reuniones, fiestas o después de salir de fiesta. Muy popular entre jóvenes y familias."
+          ]
         },
-        "nutrition": {
-          "calories": 1028,
-          "macros": {
-            "protein_g": 66.4,
-            "fat_g": 48,
-            "carbs_g": 80.8
-          }
+        "servings": 2,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "cookpad.com",
+          "url": "https://cookpad.com/co/buscar/salchipapa"
         },
-        "images": [
-          {
-            "url": "https://pixabay.com/photos/salchipapa-colombia-street-food-6146292/",
-            "description": "Salchipapa tradicional colombiana (Pixabay)"
-          },
-          {
-            "url": "https://unsplash.com/s/photos/salchipapa",
-            "description": "Variaciones de salchipapa en Unsplash"
-          }
+        "tags": [
+          "colombiano",
+          "tradicional",
+          "salchipapa",
+          "open source"
         ],
-        "description": "La salchipapa es uno de los platos callejeros más populares y virales de Colombia. Consiste en papas fritas cortadas en bastones y salchichas fritas, acompañadas de salsas, queso rallado y a veces huevo, carne o chorizo. Es un ícono de la comida rápida urbana y protagonista de ferias, puestos noc..."
+        "title": "Salchipapa"
       },
-      "category": ["Snack", "Comida rápida", "Street food", "Para compartir"],
+      "category": [
+        "Snack",
+        "Comida rápida",
+        "Street food",
+        "Para compartir"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "15 minutos",
       "cookTime": "15 minutos",
@@ -4529,7 +5851,12 @@
         "Salsas",
         "Huevo"
       ],
-      "tags": ["colombiano", "tradicional", "salchipapa", "open source"],
+      "tags": [
+        "colombiano",
+        "tradicional",
+        "salchipapa",
+        "open source"
+      ],
       "filePath": "dishes/colombian/nacionales/salchipapa/salchipapa.md"
     },
     {
@@ -4550,9 +5877,19 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado"],
-          "texture": ["Suave", "Jugoso"],
-          "aroma": ["Carnoso", "Herbal", "Frito"],
+          "flavor": [
+            "Umami",
+            "Salado"
+          ],
+          "texture": [
+            "Suave",
+            "Jugoso"
+          ],
+          "aroma": [
+            "Carnoso",
+            "Herbal",
+            "Frito"
+          ],
           "presentation": "Se sirve en bandejas grandes, ideal para compartir en reuniones y celebraciones llaneras."
         },
         "nutrition": {
@@ -4601,9 +5938,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Ahumado"],
-          "texture": ["Jugoso", "Tierno", "Crujiente (piel)"],
-          "aroma": ["Ahumado", "Herbal", "Cítrico"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Jugoso",
+            "Tierno",
+            "Crujiente (piel)"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Cítrico"
+          ],
           "presentation": "Pescado entero asado con piel dorada, servido sobre hojas de bijao con acompañantes blancos y amarillos."
         },
         "nutrition": {
@@ -4652,9 +6001,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Ahumado"],
-          "texture": ["Fibroso", "Jugoso", "Tenaz"],
-          "aroma": ["Ahumado", "Herbal", "Carnoso"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Fibroso",
+            "Jugoso",
+            "Tenaz"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Carnoso"
+          ],
           "presentation": "Trozos grandes de carne con costra oscura, servidos rústicamente sobre hojas."
         },
         "nutrition": {
@@ -4702,12 +6063,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Pan Plano", "Resiliencia", "Ancestral"],
+        "categories": [
+          "Pan Plano",
+          "Resiliencia",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "180",
         "cook_time": "40",
         "servings": 10,
-        "tags": ["Indígena", "Soberanía", "Precolonial"],
+        "tags": [
+          "Indígena",
+          "Soberanía",
+          "Precolonial"
+        ],
         "main_ingredients": [
           "Yuca Amarga (*Manihot esculenta* - Cultivares ricos en cianuro)",
           "Agua (Solo para procesamiento)"
@@ -4718,8 +6087,16 @@
             "Dulzura Residual (Amilopectina)",
             "Cero Sal"
           ],
-          "texture": ["Quebradiza", "Crocante", "Harinosa"],
-          "aroma": ["Almidón cocido", "Tierra seca", "Tostado ligero"],
+          "texture": [
+            "Quebradiza",
+            "Crocante",
+            "Harinosa"
+          ],
+          "aroma": [
+            "Almidón cocido",
+            "Tierra seca",
+            "Tostado ligero"
+          ],
           "presentation": "Discos grandes (~30-50 cm). Debe ser lo suficientemente rígido para sostener guisos pero quebrarse fácilmente con la mano. Se consume en seco o hidratado con caldos."
         },
         "nutrition": {
@@ -4738,7 +6115,11 @@
         ],
         "description": "La obra maestra de la ingeniería alimentaria amazónica. El Casabe es la solución biotecnológica para transformar una raíz altamente tóxica (ácido cianhídrico) en un carbohidrato estable, no perecedero y versátil."
       },
-      "category": ["Pan Plano", "Resiliencia", "Ancestral"],
+      "category": [
+        "Pan Plano",
+        "Resiliencia",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "180",
       "cookTime": "40",
@@ -4747,7 +6128,11 @@
         "Yuca Amarga (*Manihot esculenta* - Cultivares ricos en cianuro)",
         "Agua (Solo para procesamiento)"
       ],
-      "tags": ["Indígena", "Soberanía", "Precolonial"],
+      "tags": [
+        "Indígena",
+        "Soberanía",
+        "Precolonial"
+      ],
       "filePath": "dishes/colombian/orinoquia/casabe/casabe.md"
     },
     {
@@ -4768,9 +6153,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Terroso"],
-          "texture": ["Jugoso", "Tierno", "Ligeramente Fibroso"],
-          "aroma": ["Ahumado", "Herbal", "Almizclado"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Terroso"
+          ],
+          "texture": [
+            "Jugoso",
+            "Tierno",
+            "Ligeramente Fibroso"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Almizclado"
+          ],
           "presentation": "Carne troceada con tonos tostados, servida sobre una base verde de hojas de bijao."
         },
         "nutrition": {
@@ -4819,9 +6216,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Ahumado"],
-          "texture": ["Variada", "Jugosa", "Crujiente"],
-          "aroma": ["Ahumado", "Herbal", "Carnoso mixto"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Ahumado"
+          ],
+          "texture": [
+            "Variada",
+            "Jugosa",
+            "Crujiente"
+          ],
+          "aroma": [
+            "Ahumado",
+            "Herbal",
+            "Carnoso mixto"
+          ],
           "presentation": "Gran bandeja con diversidad de cortes de carne asada, contrastando con el blanco de la yuca."
         },
         "nutrition": {
@@ -4869,12 +6278,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Envuelto", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Envuelto",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "180",
         "cook_time": "240",
         "servings": 12,
-        "tags": ["Navidad", "Llanos", "Mestizaje"],
+        "tags": [
+          "Navidad",
+          "Llanos",
+          "Mestizaje"
+        ],
         "main_ingredients": [
           "Maíz Pilado (Masa hidratada)",
           "Carnes (Res, Cerdo, Gallina)",
@@ -4882,9 +6299,21 @@
           "Hojas de Plátano soasadas"
         ],
         "sensory": {
-          "flavor": ["Complejo (Dulce/Salado)", "Especiado", "Herbal (Hoja)"],
-          "texture": ["Sedosa (Masa)", "Masticable (Carnes)", "Untuosa"],
-          "aroma": ["Hoja de Plátano ahumada", "Guiso madurado", "Maíz cocido"],
+          "flavor": [
+            "Complejo (Dulce/Salado)",
+            "Especiado",
+            "Herbal (Hoja)"
+          ],
+          "texture": [
+            "Sedosa (Masa)",
+            "Masticable (Carnes)",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Hoja de Plátano ahumada",
+            "Guiso madurado",
+            "Maíz cocido"
+          ],
           "presentation": "Envuelto rectangular perfecto, atado con pabilo. Al abrirse, debe liberar un vapor denso y aromático. La masa debe estar teñida de naranja brillante por el onoto (achiote)."
         },
         "nutrition": {
@@ -4903,7 +6332,11 @@
         ],
         "description": "La versión llanera del tamal, influenciada por la hallaca venezolana. Se distingue por una masa mucho más fina y sedosa, un guiso más condimentado con alcaparras y aceitunas, y una técnica de atado que garantiza un sello hermético durante el hervido largo."
       },
-      "category": ["Plato Fuerte", "Envuelto", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Envuelto",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "180",
       "cookTime": "240",
@@ -4914,7 +6347,11 @@
         "Guiso (Cebolla, Pimentón, Achiote, Alcaparras)",
         "Hojas de Plátano soasadas"
       ],
-      "tags": ["Navidad", "Llanos", "Mestizaje"],
+      "tags": [
+        "Navidad",
+        "Llanos",
+        "Mestizaje"
+      ],
       "filePath": "dishes/colombian/orinoquia/hayaca_llanera.md"
     },
     {
@@ -4972,25 +6409,41 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Asado", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Asado",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "120",
         "cook_time": "320",
         "servings": 12,
-        "tags": ["Villavicencio", "Yopal", "Parrilla"],
+        "tags": [
+          "Villavicencio",
+          "Yopal",
+          "Parrilla"
+        ],
         "main_ingredients": [
           "Ternera Hembra (Joven, ~18 meses)",
           "Sal de grano grueso",
           "Leña (Maderas duras regionales)"
         ],
         "sensory": {
-          "flavor": ["Umami Intenso", "Ahumado de Leña", "Salinidad Primaria"],
+          "flavor": [
+            "Umami Intenso",
+            "Ahumado de Leña",
+            "Salinidad Primaria"
+          ],
           "texture": [
             "Fibrosa-Tierna",
             "Crujiente (Cuero)",
             "Self-Basted (Jugosa)"
           ],
-          "aroma": ["Leña Roja", "Grasa Tostada", "Campo abierto"],
+          "aroma": [
+            "Leña Roja",
+            "Grasa Tostada",
+            "Campo abierto"
+          ],
           "presentation": "Se sirve en cortes transversales directamente de la estaca. La carne debe exhibir un 'anillo de humo' (smoke ring) y una costra salada exterior. Tradicionalmente se sirve sobre mesas de madera rústica."
         },
         "nutrition": {
@@ -5009,7 +6462,11 @@
         ],
         "description": "La cumbre del asado suramericano. La Mamona no es solo carne asada; es una técnica de transferencia de calor radiante donde la gravedad juega un papel crucial en el auto-baño de grasas, resultando en una carne de ternura inigualable."
       },
-      "category": ["Plato Fuerte", "Asado", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Asado",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "120",
       "cookTime": "320",
@@ -5019,7 +6476,11 @@
         "Sal de grano grueso",
         "Leña (Maderas duras regionales)"
       ],
-      "tags": ["Villavicencio", "Yopal", "Parrilla"],
+      "tags": [
+        "Villavicencio",
+        "Yopal",
+        "Parrilla"
+      ],
       "filePath": "dishes/colombian/orinoquia/mamona/mamona.md"
     },
     {
@@ -5153,12 +6614,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Snack", "Envuelto", "Ancestral"],
+        "categories": [
+          "Snack",
+          "Envuelto",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "480",
         "cook_time": "60",
         "servings": 15,
-        "tags": ["San Martín", "Entretenimiento", "Tradición"],
+        "tags": [
+          "San Martín",
+          "Entretenimiento",
+          "Tradición"
+        ],
         "main_ingredients": [
           "Arroz (Remojado y molido)",
           "Leche Agria / Suero",
@@ -5171,8 +6640,16 @@
             "Especiado (Canela/Clavo)",
             "Dulzor de Panela"
           ],
-          "texture": ["Gelatinosa / Firme", "Elástica", "Fina (Masa de arroz)"],
-          "aroma": ["Arroz fermentado", "Hoja de Bijao", "Canela"],
+          "texture": [
+            "Gelatinosa / Firme",
+            "Elástica",
+            "Fina (Masa de arroz)"
+          ],
+          "aroma": [
+            "Arroz fermentado",
+            "Hoja de Bijao",
+            "Canela"
+          ],
           "presentation": "Envueltos delgados y cilíndricos, atados en parejas (mancuernas). La masa debe ser blanca e inmaculada, con una superficie lisa y brillante."
         },
         "nutrition": {
@@ -5191,7 +6668,11 @@
         ],
         "description": "La versión llanera del bollo de arroz. El Tungo se diferencia por un proceso de fermentación láctica del arroz que altera las propiedades del almidón, resultando en una textura elástica y un sabor sutilmente ácido que armoniza con el dulce de la panela."
       },
-      "category": ["Snack", "Envuelto", "Ancestral"],
+      "category": [
+        "Snack",
+        "Envuelto",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "480",
       "cookTime": "60",
@@ -5202,7 +6683,11 @@
         "Panela o Azúcar",
         "Clavos y Canela"
       ],
-      "tags": ["San Martín", "Entretenimiento", "Tradición"],
+      "tags": [
+        "San Martín",
+        "Entretenimiento",
+        "Tradición"
+      ],
       "filePath": "dishes/colombian/orinoquia/tungo_llanero.md"
     },
     {
@@ -5222,17 +6707,37 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Postre", "Dulce", "Tradicional"],
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "10 minutos",
         "cook_time": "180 minutos",
         "servings": 20,
-        "tags": ["Dulce", "Valle", "Antioquia"],
-        "main_ingredients": ["Leche entera", "Azúcar", "Bicarbonato"],
+        "tags": [
+          "Dulce",
+          "Valle",
+          "Antioquia"
+        ],
+        "main_ingredients": [
+          "Leche entera",
+          "Azúcar",
+          "Bicarbonato"
+        ],
         "sensory": {
-          "flavor": ["Caramelo", "Lácteo"],
-          "texture": ["Untable", "Espejo"],
-          "aroma": ["Leche asada"],
+          "flavor": [
+            "Caramelo",
+            "Lácteo"
+          ],
+          "texture": [
+            "Untable",
+            "Espejo"
+          ],
+          "aroma": [
+            "Leche asada"
+          ],
           "presentation": "En frasco de vidrio o servido con obleas, queso o brevas."
         },
         "nutrition": {
@@ -5252,13 +6757,25 @@
         "description": "* 4 litros de leche entera",
         "yaml_validation": "https://yaml-online-parser.appspot.com/"
       },
-      "category": ["Postre", "Dulce", "Tradicional"],
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "10 minutos",
       "cookTime": "180 minutos",
       "servings": 20,
-      "mainIngredients": ["Leche entera", "Azúcar", "Bicarbonato"],
-      "tags": ["Dulce", "Valle", "Antioquia"],
+      "mainIngredients": [
+        "Leche entera",
+        "Azúcar",
+        "Bicarbonato"
+      ],
+      "tags": [
+        "Dulce",
+        "Valle",
+        "Antioquia"
+      ],
       "filePath": "dishes/colombian/otras_preparaciones/arequipe/arequipe.md"
     },
     {
@@ -5284,8 +6801,14 @@
             "Creamy (butter/mash)",
             "Umami (hogao)"
           ],
-          "texture": ["Smooth (mash)", "Gritty (cheese)"],
-          "aroma": ["Lacteal (butter)", "Savory (sofrito)"],
+          "texture": [
+            "Smooth (mash)",
+            "Gritty (cheese)"
+          ],
+          "aroma": [
+            "Lacteal (butter)",
+            "Savory (sofrito)"
+          ],
           "presentation": "Puré de banano verde servido en montaña con queso blanco rallado encima y toques rojos de hogao."
         },
         "nutrition": {
@@ -5338,8 +6861,16 @@
             "Lacteal (butter/milk)",
             "Salty (queso)"
           ],
-          "texture": ["Soft", "Spongy", "Moist"],
-          "aroma": ["Sweet Corn", "Butter", "Steamed leaf"],
+          "texture": [
+            "Soft",
+            "Spongy",
+            "Moist"
+          ],
+          "aroma": [
+            "Sweet Corn",
+            "Butter",
+            "Steamed leaf"
+          ],
           "presentation": "Paquetes cilíndricos envueltos en hojas de mazorca de color verde pálido o crema, atados manualmente."
         },
         "nutrition": {
@@ -5393,9 +6924,19 @@
           "bocadillo de guayaba"
         ],
         "sensory": {
-          "flavor": ["Sweet (panela)", "Neutral (maíz)", "Lacteal (leche)"],
-          "texture": ["Chewy (maíz)", "Liquid (leche)"],
-          "aroma": ["Fresh Milk", "Cooked Corn"],
+          "flavor": [
+            "Sweet (panela)",
+            "Neutral (maíz)",
+            "Lacteal (leche)"
+          ],
+          "texture": [
+            "Chewy (maíz)",
+            "Liquid (leche)"
+          ],
+          "aroma": [
+            "Fresh Milk",
+            "Cooked Corn"
+          ],
           "presentation": "Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros de panela o bocadillo."
         },
         "nutrition": {
@@ -5446,17 +6987,42 @@
           "url": "pending",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Sopa", "Plato fuerte", "Vegetariano"],
+        "categories": [
+          "Sopa",
+          "Plato fuerte",
+          "Vegetariano"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "20 minutos",
         "cook_time": "1 hora",
         "servings": 6,
-        "tags": ["Sopa tradicional", "Vegetariano", "Comida costeña"],
-        "main_ingredients": ["Ñame", "Queso costeño", "Suero", "Hogao"],
+        "tags": [
+          "Sopa tradicional",
+          "Vegetariano",
+          "Comida costeña"
+        ],
+        "main_ingredients": [
+          "Ñame",
+          "Queso costeño",
+          "Suero",
+          "Hogao"
+        ],
         "sensory": {
-          "flavor": ["Salado", "Lácteo", "Umami"],
-          "texture": ["Cremoso", "Suave", "Espeso"],
-          "aroma": ["Lácteo", "Cebolla", "Achiote"],
+          "flavor": [
+            "Salado",
+            "Lácteo",
+            "Umami"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave",
+            "Espeso"
+          ],
+          "aroma": [
+            "Lácteo",
+            "Cebolla",
+            "Achiote"
+          ],
           "presentation": "Se sirve en cazuela de barro, decorado con el hogao rojo y cubos de queso fresco."
         },
         "nutrition": {
@@ -5469,13 +7035,26 @@
         },
         "description": "* 2 libras de ñame pelado y en cubos"
       },
-      "category": ["Sopa", "Plato fuerte", "Vegetariano"],
+      "category": [
+        "Sopa",
+        "Plato fuerte",
+        "Vegetariano"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "20 minutos",
       "cookTime": "1 hora",
       "servings": 6,
-      "mainIngredients": ["Ñame", "Queso costeño", "Suero", "Hogao"],
-      "tags": ["Sopa tradicional", "Vegetariano", "Comida costeña"],
+      "mainIngredients": [
+        "Ñame",
+        "Queso costeño",
+        "Suero",
+        "Hogao"
+      ],
+      "tags": [
+        "Sopa tradicional",
+        "Vegetariano",
+        "Comida costeña"
+      ],
       "filePath": "dishes/colombian/otras_preparaciones/mote_de_queso.md"
     },
     {
@@ -5495,12 +7074,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Postre", "Navidad", "Tradicional"],
+        "categories": [
+          "Postre",
+          "Navidad",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "15 minutos",
         "cook_time": "45 minutos",
         "servings": 12,
-        "tags": ["Navidad", "Novena", "Postre"],
+        "tags": [
+          "Navidad",
+          "Novena",
+          "Postre"
+        ],
         "main_ingredients": [
           "Maíz (Fécula o Grano)",
           "Leche",
@@ -5510,9 +7097,20 @@
           "Coco (Opcional)"
         ],
         "sensory": {
-          "flavor": ["Maíz Dulce", "Panela (Melaza)", "Canela y Clavos"],
-          "texture": ["Gelatinosa Firme", "Suave", "Corte Limpio"],
-          "aroma": ["Navidad (Especias)", "Maíz cocido"],
+          "flavor": [
+            "Maíz Dulce",
+            "Panela (Melaza)",
+            "Canela y Clavos"
+          ],
+          "texture": [
+            "Gelatinosa Firme",
+            "Suave",
+            "Corte Limpio"
+          ],
+          "aroma": [
+            "Navidad (Especias)",
+            "Maíz cocido"
+          ],
           "presentation": "Bloques firmes de color caramelo oscuro (si es con panela) o blanco (si es con azúcar). Se sirve con buñuelos y dulce de mora."
         },
         "nutrition": {
@@ -5531,7 +7129,11 @@
         ],
         "description": "El postre insignia de la Navidad colombiana. Técnicamente es un flan de almidón (pudín) firme, gelificado por la amilosa del maíz y endulzado tradicionalmente con panela. Su preparación es un ritual familiar que requiere revolver constantemente."
       },
-      "category": ["Postre", "Navidad", "Tradicional"],
+      "category": [
+        "Postre",
+        "Navidad",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "15 minutos",
       "cookTime": "45 minutos",
@@ -5544,7 +7146,11 @@
         "Canela",
         "Coco (Opcional)"
       ],
-      "tags": ["Navidad", "Novena", "Postre"],
+      "tags": [
+        "Navidad",
+        "Novena",
+        "Postre"
+      ],
       "filePath": "dishes/colombian/otras_preparaciones/natilla/natilla.md"
     },
     {
@@ -5565,9 +7171,20 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Sweet", "Creamy", "Lacteal"],
-          "texture": ["Smooth", "Silky", "Layered (natas)"],
-          "aroma": ["Vanilla", "Caramelized Milk"],
+          "flavor": [
+            "Sweet",
+            "Creamy",
+            "Lacteal"
+          ],
+          "texture": [
+            "Smooth",
+            "Silky",
+            "Layered (natas)"
+          ],
+          "aroma": [
+            "Vanilla",
+            "Caramelized Milk"
+          ],
           "presentation": "Crema espesa de color marfil con capas visibles de nata, servida fría."
         },
         "nutrition": {
@@ -5615,9 +7232,21 @@
         },
         "difficulty": "★★☆☆☆",
         "sensory": {
-          "flavor": ["Umami", "Salado", "Graso"],
-          "texture": ["Soft (masa)", "Fibrous (meats)", "Tender (vegetables)"],
-          "aroma": ["Banana leaf (steamed)", "Cumin", "Pork fat"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Graso"
+          ],
+          "texture": [
+            "Soft (masa)",
+            "Fibrous (meats)",
+            "Tender (vegetables)"
+          ],
+          "aroma": [
+            "Banana leaf (steamed)",
+            "Cumin",
+            "Pork fat"
+          ],
           "presentation": "Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la parte superior."
         },
         "nutrition": {
@@ -5664,12 +7293,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Fritura", "Dulce-Salado", "Tradicional"],
+        "categories": [
+          "Fritura",
+          "Dulce-Salado",
+          "Tradicional"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "15",
         "servings": 8,
-        "tags": ["Cali", "Valluno", "Frito"],
+        "tags": [
+          "Cali",
+          "Valluno",
+          "Frito"
+        ],
         "main_ingredients": [
           "Plátano Maduro (Cáscara negra)",
           "Queso Fresco / Mozzarella",
@@ -5689,7 +7326,10 @@
             "Interior Cremoso",
             "Queso Filante"
           ],
-          "aroma": ["Plátano frito caramelizado", "Vainilla (en el rebozado)"],
+          "aroma": [
+            "Plátano frito caramelizado",
+            "Vainilla (en el rebozado)"
+          ],
           "presentation": "Cilindro dorado y abultado. Al partirlo debe fluir el queso derretido contrastando con el plátano meloso."
         },
         "nutrition": {
@@ -5708,7 +7348,11 @@
         ],
         "description": "El matrimonio perfecto. El Aborrajado es la máxima expresión del contraste dulce-salado en Colombia. Un plátano muy maduro se aplasta, se rellena de queso, se cierra y se reboza en una mezcla especial (funga) para ser frito."
       },
-      "category": ["Fritura", "Dulce-Salado", "Tradicional"],
+      "category": [
+        "Fritura",
+        "Dulce-Salado",
+        "Tradicional"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "15",
@@ -5721,7 +7365,11 @@
         "Huevo",
         "Leche"
       ],
-      "tags": ["Cali", "Valluno", "Frito"],
+      "tags": [
+        "Cali",
+        "Valluno",
+        "Frito"
+      ],
       "filePath": "dishes/colombian/pacifica/aborrajado_valluno/aborrajado_valluno.md"
     },
     {
@@ -5741,12 +7389,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Snack", "Fritura", "Entrada"],
+        "categories": [
+          "Snack",
+          "Fritura",
+          "Entrada"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30",
         "cook_time": "20",
         "servings": 12,
-        "tags": ["Tumaco", "Barbacoas", "Fritanga"],
+        "tags": [
+          "Tumaco",
+          "Barbacoas",
+          "Fritanga"
+        ],
         "main_ingredients": [
           "Plátano Maduro (Sobre-madurado/Negro)",
           "Pescado Blanco (Pargo/Róbalo)",
@@ -5765,7 +7421,11 @@
             "Mantecosa (Masa de plátano)",
             "Jugosa (Pescado)"
           ],
-          "aroma": ["Plátano caramelizado", "Mar fresco", "Fritura limpia"],
+          "aroma": [
+            "Plátano caramelizado",
+            "Mar fresco",
+            "Fritura limpia"
+          ],
           "presentation": "Pepas doradas de forma ovoidal. Se sirven calientes, ideales con un chorro de limón y ají de piña. La costra exterior debe ser firme sin ser dura."
         },
         "nutrition": {
@@ -5784,7 +7444,11 @@
         ],
         "description": "El hermano marino del aborrajado valluno. Sustituye el queso por pescado fresco, encapsulado en una masa de plátano cuya caramelización actúa como barrera protectora de humedad para la proteína interna."
       },
-      "category": ["Snack", "Fritura", "Entrada"],
+      "category": [
+        "Snack",
+        "Fritura",
+        "Entrada"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30",
       "cookTime": "20",
@@ -5796,7 +7460,11 @@
         "Huevo y Leche (Aparejo)",
         "Aceite vegetal (Fritura profunda)"
       ],
-      "tags": ["Tumaco", "Barbacoas", "Fritanga"],
+      "tags": [
+        "Tumaco",
+        "Barbacoas",
+        "Fritanga"
+      ],
       "filePath": "dishes/colombian/pacifica/aborrajados_de_pescado/aborrajados_de_pescado.md"
     },
     {
@@ -5816,12 +7484,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Arroz", "Cremoso"],
+        "categories": [
+          "Plato Fuerte",
+          "Arroz",
+          "Cremoso"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "35",
         "cook_time": "45",
         "servings": 8,
-        "tags": ["Tumaco", "Guapi", "Meloso"],
+        "tags": [
+          "Tumaco",
+          "Guapi",
+          "Meloso"
+        ],
         "main_ingredients": [
           "Arroz Blanco (Grano corto/medio preferido para almidón)",
           "Mixtura de Mariscos (Camarón, Calamar, Pescado)",
@@ -5840,7 +7516,11 @@
             "Cremoso",
             "Masticable (Piangua/Calamar)"
           ],
-          "aroma": ["Mar Profundo", "Cimarrón y Albahaca", "Grano cocido"],
+          "aroma": [
+            "Mar Profundo",
+            "Cimarrón y Albahaca",
+            "Grano cocido"
+          ],
           "presentation": "Servido en caldero o cazuela de barro. El arroz no debe estar suelto, sino formando una masa melosa y brillante. Se corona con pianguas enteras y langostinos si están disponibles."
         },
         "nutrition": {
@@ -5859,7 +7539,11 @@
         ],
         "description": "La respuesta del Pacífico al risotto. El 'Atollado' es un estado físico del arroz donde se busca la máxima liberación de almidón para crear una matriz melosa que encapsula los jugos marinos y la grasa del coco."
       },
-      "category": ["Plato Fuerte", "Arroz", "Cremoso"],
+      "category": [
+        "Plato Fuerte",
+        "Arroz",
+        "Cremoso"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "35",
       "cookTime": "45",
@@ -5871,7 +7555,11 @@
         "Leche de Coco (Matrices grasas)",
         "Refrito de la Costa (Cebolla, Pimentón, Achiote)"
       ],
-      "tags": ["Tumaco", "Guapi", "Meloso"],
+      "tags": [
+        "Tumaco",
+        "Guapi",
+        "Meloso"
+      ],
       "filePath": "dishes/colombian/pacifica/arroz_atollado_con_mariscos/arroz_atollado_con_mariscos.md"
     },
     {
@@ -5890,12 +7578,20 @@
           "url": "https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+        "categories": [
+          "Plato fuerte",
+          "Sopa festiva",
+          "Comida típica"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "45 minutos",
         "cook_time": "40 minutos",
         "servings": 6,
-        "tags": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+        "tags": [
+          "Plato fuerte",
+          "Sopa festiva",
+          "Comida típica"
+        ],
         "main_ingredients": [
           "Camarón",
           "Piangua",
@@ -5905,9 +7601,20 @@
           "Leche de coco"
         ],
         "sensory": {
-          "flavor": ["Umami", "Salado", "Lácteo"],
-          "texture": ["Cremosa", "Suave"],
-          "aroma": ["Marino", "Herbal", "Lácteo (coco)"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Lácteo"
+          ],
+          "texture": [
+            "Cremosa",
+            "Suave"
+          ],
+          "aroma": [
+            "Marino",
+            "Herbal",
+            "Lácteo (coco)"
+          ],
           "presentation": "Se sirve en cazuela de barro, decorada con cilantro cimarrón y acompañada de arroz o patacones. Es el plato estrella en celebraciones del Pacífico."
         },
         "nutrition": {
@@ -5930,7 +7637,11 @@
         ],
         "description": "La Cazuela de Mariscos en la región Pacífica de Colombia es un plato festivo y abundante, preparado con mariscos frescos, leche de coco y especias autóctonas. Es símbolo de la riqueza gastronómica afrocolombiana y se sirve en celebraciones y reuniones familiares."
       },
-      "category": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+      "category": [
+        "Plato fuerte",
+        "Sopa festiva",
+        "Comida típica"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "45 minutos",
       "cookTime": "40 minutos",
@@ -5943,7 +7654,11 @@
         "Pescado blanco",
         "Leche de coco"
       ],
-      "tags": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+      "tags": [
+        "Plato fuerte",
+        "Sopa festiva",
+        "Comida típica"
+      ],
       "filePath": "dishes/colombian/pacifica/cazuela_de_mariscos/cazuela_de_mariscos/cazuela_de_mariscos.md"
     },
     {
@@ -5962,7 +7677,11 @@
           "url": "https://www.eltiempo.com/vida/receta-chancacas-57944",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Dulce", "Snack energético", "Postre típico"],
+        "categories": [
+          "Dulce",
+          "Snack energético",
+          "Postre típico"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "15 minutos",
         "cook_time": "20 minutos",
@@ -5974,8 +7693,14 @@
           "Clavo de olor"
         ],
         "sensory": {
-          "flavor": ["Dulce", "Aromático"],
-          "texture": ["Masticable", "Fibroso"],
+          "flavor": [
+            "Dulce",
+            "Aromático"
+          ],
+          "texture": [
+            "Masticable",
+            "Fibroso"
+          ],
           "aroma": [
             "Dulce (panela)",
             "Especiado (canela y clavo)",
@@ -5999,12 +7724,21 @@
         ],
         "description": "Las Chancacas, también conocidas como cocadas del Pacífico, son un dulce tradicional de la región Pacífica colombiana, especialmente popular en Buenaventura y Tumaco. Se preparan con coco rallado, panela y especias, formando bocados dulces y aromáticos que son parte esencial de la cultura festiva..."
       },
-      "category": ["Dulce", "Snack energético", "Postre típico"],
+      "category": [
+        "Dulce",
+        "Snack energético",
+        "Postre típico"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "15 minutos",
       "cookTime": "20 minutos",
       "servings": 20,
-      "mainIngredients": ["Coco rallado", "Panela", "Canela", "Clavo de olor"],
+      "mainIngredients": [
+        "Coco rallado",
+        "Panela",
+        "Canela",
+        "Clavo de olor"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/pacifica/chancacas/chancacas/chancacas.md"
     },
@@ -6024,7 +7758,12 @@
           "url": "https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Snack", "Entrada", "Comida callejera", "Comida típica"],
+        "categories": [
+          "Snack",
+          "Entrada",
+          "Comida callejera",
+          "Comida típica"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40 minutos",
         "cook_time": "20 minutos",
@@ -6036,9 +7775,20 @@
           "Ají"
         ],
         "sensory": {
-          "flavor": ["Umami", "Salado", "Picante"],
-          "texture": ["Crujiente", "Suave"],
-          "aroma": ["Marino (jaiba)", "Herbal (cilantro y tomillo)", "Frito"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Picante"
+          ],
+          "texture": [
+            "Crujiente",
+            "Suave"
+          ],
+          "aroma": [
+            "Marino (jaiba)",
+            "Herbal (cilantro y tomillo)",
+            "Frito"
+          ],
           "presentation": "Se sirven calientes, acompañadas de ají o limón. Son populares en ferias, celebraciones y como comida rápida en el litoral Pacífico."
         },
         "images": [
@@ -6049,7 +7799,12 @@
         ],
         "description": "Las Empanadas de Jaiba son un bocadillo tradicional del Pacífico colombiano, especialmente de Buenaventura y Tumaco. Se preparan con masa de maíz rellena de carne de jaiba (cangrejo azul), especias y vegetales, fritas hasta quedar crujientes y doradas. Son populares en fiestas, ferias y como snac..."
       },
-      "category": ["Snack", "Entrada", "Comida callejera", "Comida típica"],
+      "category": [
+        "Snack",
+        "Entrada",
+        "Comida callejera",
+        "Comida típica"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40 minutos",
       "cookTime": "20 minutos",
@@ -6080,12 +7835,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Encocado", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Encocado",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "25",
         "cook_time": "30",
         "servings": 6,
-        "tags": ["Chocó", "Tumaco", "Guapi"],
+        "tags": [
+          "Chocó",
+          "Tumaco",
+          "Guapi"
+        ],
         "main_ingredients": [
           "Pescado de escama (Pargo/Róbalo)",
           "Leche de Coco (Primera prensa)",
@@ -6099,8 +7862,16 @@
             "Lácteo Vegetal (Coco)",
             "Herbal Profundo (Recao)"
           ],
-          "texture": ["Sedosa (Emulsión)", "Turgente (Pescado)", "Untuosa"],
-          "aroma": ["Cilantro Cimarrón (Erizo)", "Coco Tostado", "Mar Fresco"],
+          "texture": [
+            "Sedosa (Emulsión)",
+            "Turgente (Pescado)",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Cilantro Cimarrón (Erizo)",
+            "Coco Tostado",
+            "Mar Fresco"
+          ],
           "presentation": "Cazuela de barro. La salsa debe ser de un color amarillo-achiote vibrante. Se decora con hojas de cilantro cimarrón picado finamente y se acompaña de arroz blanco y aguacate."
         },
         "nutrition": {
@@ -6119,7 +7890,11 @@
         ],
         "description": "El alma del litoral. Más que un guiso, es una técnica de transporte de sabor: los lípidos del coco capturan los aceites esenciales del 'recao de azotea' para envolver suavemente la proteína del pescado sin opacarla."
       },
-      "category": ["Plato Fuerte", "Encocado", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Encocado",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "25",
       "cookTime": "30",
@@ -6131,7 +7906,11 @@
         "Aceite de Achiote (Pigmento lipofílico)",
         "Ají Dulce / Chombo"
       ],
-      "tags": ["Chocó", "Tumaco", "Guapi"],
+      "tags": [
+        "Chocó",
+        "Tumaco",
+        "Guapi"
+      ],
       "filePath": "dishes/colombian/pacifica/encocado_de_pescado/encocado_de_pescado.md"
     },
     {
@@ -6151,12 +7930,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Sopa-Gasto", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Sopa-Gasto",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "30",
         "cook_time": "60",
         "servings": 8,
-        "tags": ["Barbacoas", "Tumaco", "Identidad"],
+        "tags": [
+          "Barbacoas",
+          "Tumaco",
+          "Identidad"
+        ],
         "main_ingredients": [
           "Carne Serrana (Res salada y oreada)",
           "Pescado Blanco (Pargo/Róbalo)",
@@ -6175,7 +7962,11 @@
             "Fibrosa (Carne Serrana)",
             "Untuosa (Caldo de Coco)"
           ],
-          "aroma": ["Coco hervido", "Cimarrón", "Serranía (Madera)"],
+          "aroma": [
+            "Coco hervido",
+            "Cimarrón",
+            "Serranía (Madera)"
+          ],
           "presentation": "Plato hondo generoso. El pescado se sirve en trozos grandes junto a una pieza de carne salada serrana. El caldo es opaco, de un color blanco-cremoso intenso."
         },
         "nutrition": {
@@ -6194,7 +7985,11 @@
         ],
         "description": "El encuentro de dos mundos: la serranía (carne de res oreada) y el litoral (pescado fresco). Una sopa de alta densidad energética y proteica, donde el coco actúa como mediador de sabores entre la sal extrema de la carne y la frescura del mar."
       },
-      "category": ["Plato Fuerte", "Sopa-Gasto", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Sopa-Gasto",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "30",
       "cookTime": "60",
@@ -6206,7 +8001,11 @@
         "Papa, Yuca y Plátano",
         "Huevo cocido (tradicional en algunas zonas)"
       ],
-      "tags": ["Barbacoas", "Tumaco", "Identidad"],
+      "tags": [
+        "Barbacoas",
+        "Tumaco",
+        "Identidad"
+      ],
       "filePath": "dishes/colombian/pacifica/pusandao/pusandao/pusandao.md"
     },
     {
@@ -6263,7 +8062,11 @@
           "url": "https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+        "categories": [
+          "Plato fuerte",
+          "Sopa festiva",
+          "Comida típica"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "30 minutos",
         "cook_time": "1 hora",
@@ -6275,8 +8078,15 @@
           "Plátano verde"
         ],
         "sensory": {
-          "flavor": ["Umami", "Salado", "Lácteo (coco)"],
-          "texture": ["Cremoso", "Suave"],
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Lácteo (coco)"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave"
+          ],
           "aroma": [
             "Marino",
             "Herbal (cilantro cimarrón y tomillo)",
@@ -6304,7 +8114,11 @@
         ],
         "description": "El Sancocho de Pescado es una sopa tradicional y emblemática de la región Pacífica de Colombia. Se prepara con pescado fresco, tubérculos, plátano y leche de coco, resultando en un plato reconfortante, aromático y lleno de sabor afrocolombiano."
       },
-      "category": ["Plato fuerte", "Sopa festiva", "Comida típica"],
+      "category": [
+        "Plato fuerte",
+        "Sopa festiva",
+        "Comida típica"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "30 minutos",
       "cookTime": "1 hora",
@@ -6335,12 +8149,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Sopa-Guiso", "Resiliencia"],
+        "categories": [
+          "Plato Fuerte",
+          "Sopa-Guiso",
+          "Resiliencia"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "20",
         "cook_time": "40",
         "servings": 8,
-        "tags": ["Chocó", "Nariño", "Ancestral"],
+        "tags": [
+          "Chocó",
+          "Nariño",
+          "Ancestral"
+        ],
         "main_ingredients": [
           "Pescado de escama entero (Bocachico / Pargo / Lisa)",
           "Plátano Verde (Inmaduro / Musáceas)",
@@ -6382,7 +8204,11 @@
         ],
         "description": "El arte de la cocción hermética sin presión mecánica. El 'Tapao' utiliza hojas de plátano para crear un sello de vapor que cocina los ingredientes en su propio jugo, preservando nutrientes y compuestos volátiles que suelen perderse en ollas abiertas."
       },
-      "category": ["Plato Fuerte", "Sopa-Guiso", "Resiliencia"],
+      "category": [
+        "Plato Fuerte",
+        "Sopa-Guiso",
+        "Resiliencia"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "20",
       "cookTime": "40",
@@ -6394,7 +8220,11 @@
         "Cilantro Cimarrón",
         "Poleo / Orégano de Azotea"
       ],
-      "tags": ["Chocó", "Nariño", "Ancestral"],
+      "tags": [
+        "Chocó",
+        "Nariño",
+        "Ancestral"
+      ],
       "filePath": "dishes/colombian/pacifica/tapao_de_pescado/tapao_de_pescado/tapao_de_pescado.md"
     },
     {
@@ -6414,12 +8244,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Plato Fuerte", "Guiso", "Ancestral"],
+        "categories": [
+          "Plato Fuerte",
+          "Guiso",
+          "Ancestral"
+        ],
         "difficulty": "★★★★☆",
         "prep_time": "60",
         "cook_time": "45",
         "servings": 6,
-        "tags": ["Tumaco", "Buenaventura", "Ahumados"],
+        "tags": [
+          "Tumaco",
+          "Buenaventura",
+          "Ahumados"
+        ],
         "main_ingredients": [
           "Tollo (Tiburón pequeño/Cazón) Ahumado",
           "Leche de Coco (Primera y segunda prensa)",
@@ -6461,7 +8299,11 @@
         ],
         "description": "La joya de la conservación litoral. El tollo (tiburón joven) se somete a un proceso de ahumado artesanal que no solo preserva la carne en el clima húmedo, sino que transforma su colágeno y elimina el exceso de urea, creando una base proteica única para el guiso de coco."
       },
-      "category": ["Plato Fuerte", "Guiso", "Ancestral"],
+      "category": [
+        "Plato Fuerte",
+        "Guiso",
+        "Ancestral"
+      ],
       "difficulty": "★★★★☆",
       "prepTime": "60",
       "cookTime": "45",
@@ -6473,7 +8315,11 @@
         "Achiote",
         "Vinagre de plátano (opcional tradicional)"
       ],
-      "tags": ["Tumaco", "Buenaventura", "Ahumados"],
+      "tags": [
+        "Tumaco",
+        "Buenaventura",
+        "Ahumados"
+      ],
       "filePath": "dishes/colombian/pacifica/tollo_ahumado/tollo_ahumado/tollo_ahumado.md"
     },
     {
@@ -6492,17 +8338,42 @@
           "url": "https://elgourmet.com/recetas/pan-ali%C3%B1ado/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Pan", "Desayuno", "Merienda"],
+        "categories": [
+          "Pan",
+          "Desayuno",
+          "Merienda"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "2 horas (incluye levado)",
         "cook_time": "20-25 minutos",
         "servings": 10,
-        "tags": ["colombiano", "tradicional", "pan", "aliñado", "open source"],
-        "main_ingredients": ["Harina de trigo", "Mantequilla", "Huevo"],
+        "tags": [
+          "colombiano",
+          "tradicional",
+          "pan",
+          "aliñado",
+          "open source"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Mantequilla",
+          "Huevo"
+        ],
         "sensory": {
-          "flavor": ["Dulce", "Lácteo", "Especiado"],
-          "texture": ["Suave", "Esponjoso"],
-          "aroma": ["Mantequilla", "Canela", "Vainilla"],
+          "flavor": [
+            "Dulce",
+            "Lácteo",
+            "Especiado"
+          ],
+          "texture": [
+            "Suave",
+            "Esponjoso"
+          ],
+          "aroma": [
+            "Mantequilla",
+            "Canela",
+            "Vainilla"
+          ],
           "presentation": "Se sirve en bollos, ideal para acompañar café, chocolate o jugos."
         },
         "nutrition": {
@@ -6521,13 +8392,27 @@
         ],
         "description": "El pan aliñado es un pan suave, aromático y ligeramente dulce, típico de panaderías colombianas. Se caracteriza por su aroma a mantequilla y especias, y es tendencia por su versatilidad en desayunos y meriendas."
       },
-      "category": ["Pan", "Desayuno", "Merienda"],
+      "category": [
+        "Pan",
+        "Desayuno",
+        "Merienda"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "2 horas (incluye levado)",
       "cookTime": "20-25 minutos",
       "servings": 10,
-      "mainIngredients": ["Harina de trigo", "Mantequilla", "Huevo"],
-      "tags": ["colombiano", "tradicional", "pan", "aliñado", "open source"],
+      "mainIngredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Huevo"
+      ],
+      "tags": [
+        "colombiano",
+        "tradicional",
+        "pan",
+        "aliñado",
+        "open source"
+      ],
       "filePath": "dishes/colombian/panes/pan_alinado/pan_aliñado.md"
     },
     {
@@ -6547,12 +8432,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Desayuno", "Ancestral"],
+        "categories": [
+          "Amasijo",
+          "Desayuno",
+          "Ancestral"
+        ],
         "difficulty": "★★★☆☆",
         "prep_time": "40",
         "cook_time": "20",
         "servings": 10,
-        "tags": ["Cali", "Vía al Mar", "Sin Gluten"],
+        "tags": [
+          "Cali",
+          "Vía al Mar",
+          "Sin Gluten"
+        ],
         "main_ingredients": [
           "Almidón de Yuca Agrio (Fermentado)",
           "Masato de Maíz o Harina de Maíz",
@@ -6560,13 +8453,21 @@
           "Queso Fresco (Cuajada)"
         ],
         "sensory": {
-          "flavor": ["Queso Salado", "Fermento Suave", "Maíz Dulce"],
+          "flavor": [
+            "Queso Salado",
+            "Fermento Suave",
+            "Maíz Dulce"
+          ],
           "texture": [
             "Corteza Fina/Crujiente",
             "Miga Chiclo-Elástica",
             "Húmedo"
           ],
-          "aroma": ["Queso Costeño horneado", "Maíz Tostado", "Mantequilla"],
+          "aroma": [
+            "Queso Costeño horneado",
+            "Maíz Tostado",
+            "Mantequilla"
+          ],
           "presentation": "Aros o bolas con una cavidad u 'ojo' en el centro. Deben lucir dorados pero no quemados, con la superficie lisa que indica buen hidratado del almidón."
         },
         "nutrition": {
@@ -6585,7 +8486,11 @@
         ],
         "description": "El rey de los amasijos vallunos. El Pandebono es un milagro de la física del almidón agrio, que logra leudar y crear alveolos gigantes sin levadura, gracias a la expansión de gases atrapados en una red de queso y almidón modificado."
       },
-      "category": ["Amasijo", "Desayuno", "Ancestral"],
+      "category": [
+        "Amasijo",
+        "Desayuno",
+        "Ancestral"
+      ],
       "difficulty": "★★★☆☆",
       "prepTime": "40",
       "cookTime": "20",
@@ -6596,7 +8501,11 @@
         "Queso Costeño (Salado)",
         "Queso Fresco (Cuajada)"
       ],
-      "tags": ["Cali", "Vía al Mar", "Sin Gluten"],
+      "tags": [
+        "Cali",
+        "Vía al Mar",
+        "Sin Gluten"
+      ],
       "filePath": "dishes/colombian/panes/pan_de_bono/pan_de_bono.md"
     },
     {
@@ -6616,12 +8525,20 @@
           "date_retrieved": "2026-09-03",
           "notes": "Derived from GOS Database"
         },
-        "categories": ["Amasijo", "Snack", "Tradicional"],
+        "categories": [
+          "Amasijo",
+          "Snack",
+          "Tradicional"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "25",
         "cook_time": "18",
         "servings": 10,
-        "tags": ["Cauca", "Nariño", "Sin Gluten"],
+        "tags": [
+          "Cauca",
+          "Nariño",
+          "Sin Gluten"
+        ],
         "main_ingredients": [
           "Almidón de Yuca (Tapioca Starch)",
           "Queso Campesino o Cuajada",
@@ -6629,13 +8546,20 @@
           "Huevo"
         ],
         "sensory": {
-          "flavor": ["Queso Intenso", "Neutro de Almidón", "Salado"],
+          "flavor": [
+            "Queso Intenso",
+            "Neutro de Almidón",
+            "Salado"
+          ],
           "texture": [
             "Cáscara Crocante",
             "Centro Hueco/Aireado",
             "Chicloso al enfriar"
           ],
-          "aroma": ["Queso tostado", "Leche caliente"],
+          "aroma": [
+            "Queso tostado",
+            "Leche caliente"
+          ],
           "presentation": "Medialunas o herraduras de color marfil pálido. Deben ser livianos, casi huecos por dentro, indicando máxima expansión."
         },
         "nutrition": {
@@ -6654,7 +8578,11 @@
         ],
         "description": "Minimalismo puro. El Pandeyuca es una estructura de almidón y queso que desafía la gravedad. A diferencia del pandebono, no lleva maíz, lo que permite una expansión casi total, resultando en un panecillo hueco y crocante."
       },
-      "category": ["Amasijo", "Snack", "Tradicional"],
+      "category": [
+        "Amasijo",
+        "Snack",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "25",
       "cookTime": "18",
@@ -6665,7 +8593,11 @@
         "Mantequilla",
         "Huevo"
       ],
-      "tags": ["Cauca", "Nariño", "Sin Gluten"],
+      "tags": [
+        "Cauca",
+        "Nariño",
+        "Sin Gluten"
+      ],
       "filePath": "dishes/colombian/panes/pan_de_yuca/pan_de_yuca.md"
     },
     {
@@ -6684,7 +8616,11 @@
           "url": "https://elgourmet.com/recetas/deditos-de-queso/",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Snack", "Desayuno", "Merienda"],
+        "categories": [
+          "Snack",
+          "Desayuno",
+          "Merienda"
+        ],
         "difficulty": "★☆☆☆☆",
         "prep_time": "25 minutos",
         "cook_time": "12-15 minutos",
@@ -6697,11 +8633,23 @@
           "deditos",
           "open source"
         ],
-        "main_ingredients": ["Queso", "Masa de hojaldre"],
+        "main_ingredients": [
+          "Queso",
+          "Masa de hojaldre"
+        ],
         "sensory": {
-          "flavor": ["Lácteo", "Salado"],
-          "texture": ["Crujiente por fuera", "Fundido por dentro"],
-          "aroma": ["Queso", "Mantequilla"],
+          "flavor": [
+            "Lácteo",
+            "Salado"
+          ],
+          "texture": [
+            "Crujiente por fuera",
+            "Fundido por dentro"
+          ],
+          "aroma": [
+            "Queso",
+            "Mantequilla"
+          ],
           "presentation": "Se sirven calientes, ideales para fiestas, onces o como snack escolar."
         },
         "nutrition": {
@@ -6720,12 +8668,19 @@
         ],
         "description": "Los deditos de queso son snacks fritos o horneados, rellenos de queso fundido, populares en panaderías, colegios y fiestas infantiles de Colombia. Son tendencia por su sencillez y sabor irresistible."
       },
-      "category": ["Snack", "Desayuno", "Merienda"],
+      "category": [
+        "Snack",
+        "Desayuno",
+        "Merienda"
+      ],
       "difficulty": "★☆☆☆☆",
       "prepTime": "25 minutos",
       "cookTime": "12-15 minutos",
       "servings": 12,
-      "mainIngredients": ["Queso", "Masa de hojaldre"],
+      "mainIngredients": [
+        "Queso",
+        "Masa de hojaldre"
+      ],
       "tags": [
         "colombiano",
         "tradicional",
@@ -6752,7 +8707,11 @@
           "url": "https://www.recetasdecolombia.com/empanadas",
           "date_retrieved": "2026-09-03"
         },
-        "categories": ["Snack", "Entrada", "Comida callejera"],
+        "categories": [
+          "Snack",
+          "Entrada",
+          "Comida callejera"
+        ],
         "difficulty": "★★☆☆☆",
         "prep_time": "40 minutos",
         "cook_time": "15 minutos",
@@ -6765,11 +8724,24 @@
           "empanada",
           "open source"
         ],
-        "main_ingredients": ["Harina de maíz", "Papa", "Carne molida"],
+        "main_ingredients": [
+          "Harina de maíz",
+          "Papa",
+          "Carne molida"
+        ],
         "sensory": {
-          "flavor": ["Salado", "Especiado"],
-          "texture": ["Crujiente por fuera", "Suave y jugoso por dentro"],
-          "aroma": ["Frito", "Especiado"],
+          "flavor": [
+            "Salado",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente por fuera",
+            "Suave y jugoso por dentro"
+          ],
+          "aroma": [
+            "Frito",
+            "Especiado"
+          ],
           "presentation": "Se sirve caliente, en servilleta o bandeja, ideal para compartir o como merienda rápida."
         },
         "nutrition": {
@@ -6788,12 +8760,20 @@
         ],
         "description": "La empanada es uno de los snacks más emblemáticos y queridos de Colombia. Su versión más popular es la empanada de papa y carne, frita y crocante, presente en cada esquina, feria y reunión familiar. Es tendencia en redes por su versatilidad y el ritual de acompañarla con ají casero."
       },
-      "category": ["Snack", "Entrada", "Comida callejera"],
+      "category": [
+        "Snack",
+        "Entrada",
+        "Comida callejera"
+      ],
       "difficulty": "★★☆☆☆",
       "prepTime": "40 minutos",
       "cookTime": "15 minutos",
       "servings": 15,
-      "mainIngredients": ["Harina de maíz", "Papa", "Carne molida"],
+      "mainIngredients": [
+        "Harina de maíz",
+        "Papa",
+        "Carne molida"
+      ],
       "tags": [
         "colombiano",
         "tradicional",

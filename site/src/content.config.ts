@@ -15,6 +15,7 @@ const dishesCollection = defineCollection({
       servings: z.union([z.string(), z.number()]).optional(),
       categories: z.array(z.string()).optional(),
       tags: z.array(z.string()).optional(),
+      aliases: z.record(z.string(), z.array(z.string())).optional(),
       main_ingredients: z.array(z.string()).optional(),
       nutrition_per_serving: z.record(z.string(), z.unknown()).optional(),
       images: z
@@ -58,6 +59,7 @@ const ingredientsCollection = defineCollection({
       health_registry: z.array(z.any()).optional(),
       sources: z.array(z.string()).optional(),
       tags: z.array(z.string()).optional(),
+      aliases: z.record(z.string(), z.array(z.string())).optional(),
     })
     .passthrough(),
 })
@@ -110,6 +112,7 @@ const substancesCollection = defineCollection({
       vitaminas: z.array(z.string()).optional(),
       compuestos: z.array(z.string()).optional(),
       tags: z.array(z.string()).optional(),
+      aliases: z.record(z.string(), z.array(z.string())).optional(),
       image: z.string().optional(),
       image_attribution: z.string().optional(),
       health_registry: z

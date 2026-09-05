@@ -1,42 +1,48 @@
 ---
-name: "Pollo (Pechuga sin piel)"
-scientific_name: "Gallus gallus domesticus"
-group: "Protein"
-portions:
-  default_g: 150 # Fillet
-nutrition_per_100g:
-  calories: 110
-  protein_g: 23
-  fat_g: 1.2
-  carbs_g: 0
-  fiber_g: 0
+active_compounds:
+- benefit: Dipeptide with antiglycation properties.
+  name: Carnosine
+  scientific_ref: PubMed
+aliases:
+  en:
+  - chicken
+group: Protein
+health_registry:
+- compounds:
+  - Essential Amino Acids
+  - Leucine
+  condition: Muscle Maintenance
+  evidence_level: High
+  mechanism: High bioavailability protein supports myofibrillar protein synthesis.
+  studies:
+  - source: FAO/WHO
+    title: Protein digestibility and quality
+- compounds:
+  - Protein
+  condition: Weight Management
+  evidence_level: High
+  mechanism: High satiety per calorie and thermic effect of food (TEF).
 micronutrients:
   niacin_mg: 13.7
-  vitamin_b6_mg: 0.6
-  selenium_ug: 27.6
   phosphorus_mg: 228
-active_compounds:
-  - name: "Carnosine"
-    benefit: "Dipeptide with antiglycation properties."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Muscle Maintenance"
-    mechanism: "High bioavailability protein supports myofibrillar protein synthesis."
-    compounds: ["Essential Amino Acids", "Leucine"]
-    evidence_level: "High"
-    studies:
-      - title: "Protein digestibility and quality"
-        source: "FAO/WHO"
-  - condition: "Weight Management"
-    mechanism: "High satiety per calorie and thermic effect of food (TEF)."
-    compounds: ["Protein"]
-    evidence_level: "High"
+  selenium_ug: 27.6
+  vitamin_b6_mg: 0.6
+name: Pollo (Pechuga sin piel)
+nutrition_per_100g:
+  calories: 110
+  carbs_g: 0
+  fat_g: 1.2
+  fiber_g: 0
+  protein_g: 23
+portions:
+  default_g: 150
+scientific_name: Gallus gallus domesticus
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - proteina_magra
-  - ajiaco
-  - dieta
+- proteina_magra
+- ajiaco
+- dieta
 ---
 
 # Scientific Analysis & Culinary Use

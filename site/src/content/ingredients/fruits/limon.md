@@ -1,45 +1,53 @@
 ---
-name: "Limón (Limón Tahití/Criollo)"
-scientific_name: "Citrus latifolia / Citrus aurantifolia"
-group: "Fruit"
-portions:
-  default_g: 30 # Juice of 1 lime
+active_compounds:
+- benefit: Enhances iron absorption, prevents kidney stones.
+  name: Citric Acid
+  scientific_ref: NIH
+- benefit: Flavonoid with vascular benefits.
+  name: Hesperidin
+  scientific_ref: PubMed
+aliases:
+  en:
+  - lemon
+  - lime
+group: Fruit
+health_registry:
+- compounds:
+  - Vitamin C
+  - Citric Acid
+  condition: Iron Deficiency Anemia
+  evidence_level: High
+  mechanism: Vitamin C and citric acid significantly increase non-heme iron absorption
+    (from beans/lentils) by converting ferric iron to ferrous iron.
+  studies:
+  - source: International Journal for Vitamin and Nutrition Research
+    title: Ascorbic acid and iron absorption
+    year: 2004
+- compounds:
+  - Citrate
+  condition: Kidney Stones
+  evidence_level: Medium
+  mechanism: Citrate binds urinary calcium, preventing crystallization.
+micronutrients:
+  potassium_mg: 102
+  vitamin_c_mg: 29.1
+name: Limón (Limón Tahití/Criollo)
 nutrition_per_100g:
   calories: 30
-  protein_g: 0.7
-  fat_g: 0.2
   carbs_g: 10
+  fat_g: 0.2
   fiber_g: 2.8
+  protein_g: 0.7
   sugar_g: 1.7
-micronutrients:
-  vitamin_c_mg: 29.1
-  potassium_mg: 102
-active_compounds:
-  - name: "Citric Acid"
-    benefit: "Enhances iron absorption, prevents kidney stones."
-    scientific_ref: "NIH"
-  - name: "Hesperidin"
-    benefit: "Flavonoid with vascular benefits."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Iron Deficiency Anemia"
-    mechanism: "Vitamin C and citric acid significantly increase non-heme iron absorption (from beans/lentils) by converting ferric iron to ferrous iron."
-    compounds: ["Vitamin C", "Citric Acid"]
-    evidence_level: "High"
-    studies:
-      - title: "Ascorbic acid and iron absorption"
-        source: "International Journal for Vitamin and Nutrition Research"
-        year: 2004
-  - condition: "Kidney Stones"
-    mechanism: "Citrate binds urinary calcium, preventing crystallization."
-    compounds: ["Citrate"]
-    evidence_level: "Medium"
+portions:
+  default_g: 30
+scientific_name: Citrus latifolia / Citrus aurantifolia
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - vitamina_c
-  - sancocho
-  - empanada
+- vitamina_c
+- sancocho
+- empanada
 ---
 
 # Scientific Analysis & Culinary Use

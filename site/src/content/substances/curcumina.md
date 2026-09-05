@@ -1,34 +1,48 @@
 ---
-name: "Curcumina"
-formula: "C21H20O6"
+aliases:
+  en:
+  - curcumin
+benefit: Antiinflamatorio, antioxidante, neuroprotector
+compuestos:
+- Demethoxycurcumin
+- Bisdemethoxycurcumin
+- Turmerone
 discovery_year: 1815
-source_ingredient: "cúrcuma (Curcuma longa)"
-benefit: "Antiinflamatorio, antioxidante, neuroprotector"
-sazon: "Terrosa amarga, color amarillo intenso, base curry"
-sabor: "Amarga terrosa con nota pimienta, necesita pimienta negra (piperina) para biodisponibilidad"
-textura: "Polvo lipofílico, soluble en aceite, mancha permanente"
-vitaminas: ["Vitamin C", "Vitamin E", "Manganese"]
-compuestos: ["Demethoxycurcumin", "Bisdemethoxycurcumin", "Turmerone"]
-sources: ["NIH", "PubMed"]
-tags: ["antiinflamatorio", "antioxidante", "curry"]
-image_attribution: "Pixabay — Curcuma longa rhizome"
+formula: C21H20O6
 health_registry:
-  - condition: "Inflammation / Arthritis"
-    mechanism: "NF-kB and COX-2 inhibition"
-    evidence_level: "High"
-    studies:
-      - title: "Curcumin and inflammation: systematic review"
-        source: "J Med Food"
-        year: 2021
-        doi: "10.1089/jmf.2020.0078"
-  - condition: "Alzheimer / Cognitive decline"
-    mechanism: "Amyloid aggregation inhibition, antioxidant"
-    evidence_level: "Medium"
-    studies:
-      - title: "Curcumin in Alzheimer's disease: review"
-        source: "Int J Mol Sci"
-        year: 2019
-        doi: "10.3390/ijms20030492"
+- condition: Inflammation / Arthritis
+  evidence_level: High
+  mechanism: NF-kB and COX-2 inhibition
+  studies:
+  - doi: 10.1089/jmf.2020.0078
+    source: J Med Food
+    title: 'Curcumin and inflammation: systematic review'
+    year: 2021
+- condition: Alzheimer / Cognitive decline
+  evidence_level: Medium
+  mechanism: Amyloid aggregation inhibition, antioxidant
+  studies:
+  - doi: 10.3390/ijms20030492
+    source: Int J Mol Sci
+    title: 'Curcumin in Alzheimer''s disease: review'
+    year: 2019
+image_attribution: Pixabay — Curcuma longa rhizome
+name: Curcumina
+sabor: Amarga terrosa con nota pimienta, necesita pimienta negra (piperina) para biodisponibilidad
+sazon: Terrosa amarga, color amarillo intenso, base curry
+source_ingredient: cúrcuma (Curcuma longa)
+sources:
+- NIH
+- PubMed
+tags:
+- antiinflamatorio
+- antioxidante
+- curry
+textura: Polvo lipofílico, soluble en aceite, mancha permanente
+vitaminas:
+- Vitamin C
+- Vitamin E
+- Manganese
 ---
 
 ![Curcumina](/images/substances/curcumina.jpg)

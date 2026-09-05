@@ -1,63 +1,64 @@
 ---
-title: Masitas de Cerdo Fritas Cubanas
-region: Cuba
+aliases:
+  en:
+  - Cuban Pork Chunks
+  - Masitas de Cerdo
+categories:
+- Plato fuerte
+- Carnes
+- Tradicional
+cook_time: 40 minutos
+description: Las Masitas de Cerdo Fritas son un pilar de la gastronomía cubana. Consisten
+  en jugosos trozos de paleta de cerdo marinados en un mojo de ajo machacado y naranja
+  agria, que luego se cocinan lentamente en una olla con agua hasta que esta se evapora
+  por completo, permitiendo que la carne se fría de forma crujiente en su propia grasa
+  natural derretida, quedando doradas por fuera pero tiernas y jugosas por dentro.
+difficulty: ★★★☆☆
+images:
+- description: Masitas de cerdo fritas doradas y crujientes (Unsplash)
+  url: https://images.unsplash.com/photo-1544025162-d76694265947
 language: es
 license: MIT
-source:
-  name: recetascubanas.org
-  url: 'https://www.recetascubanas.org/masitas-de-cerdo-fritas/'
-  date_retrieved: '2026-09-03'
-categories:
-  - Plato fuerte
-  - Carnes
-  - Tradicional
-difficulty: ★★★☆☆
-prep_time: 4 horas
-cook_time: 40 minutos
-servings: 4
-tags:
-  - Cerdo
-  - Frito
-  - Mojo
-  - Crujiente
-  - Cuba
 main_ingredients:
-  - Carne de cerdo (paleta o pierna)
-  - Naranja agria (sour orange)
-  - Ajo fresco
-  - Orégano seco
-  - Comino molido
-sensory:
-  flavor:
-    - Salado
-    - Umami de cerdo intenso
-    - Cítrico y ajo
-  texture:
-    - Extremadamente crujiente (exterior)
-    - Sumamente tierno y jugoso (interior)
-  aroma:
-    - Carne de cerdo frita
-    - Ajo tostado
-    - Cebolla frita con naranja agria
-  presentation: >-
-    Servidas calientes sobre una bandeja, decoradas con abundante mojo de
-    cebollas en rodajas por encima, acompañadas de arroz congrí y tostones.
+- Carne de cerdo (paleta o pierna)
+- Naranja agria (sour orange)
+- Ajo fresco
+- Orégano seco
+- Comino molido
 nutrition:
   calories: 410
   macros:
-    protein_g: 34
-    fat_g: 28
     carbs_g: 4
-images:
-  - url: 'https://images.unsplash.com/photo-1544025162-d76694265947'
-    description: Masitas de cerdo fritas doradas y crujientes (Unsplash)
-description: >-
-  Las Masitas de Cerdo Fritas son un pilar de la gastronomía cubana. Consisten
-  en jugosos trozos de paleta de cerdo marinados en un mojo de ajo machacado y
-  naranja agria, que luego se cocinan lentamente en una olla con agua hasta que
-  esta se evapora por completo, permitiendo que la carne se fría de forma
-  crujiente en su propia grasa natural derretida, quedando doradas por fuera
-  pero tiernas y jugosas por dentro.
+    fat_g: 28
+    protein_g: 34
+prep_time: 4 horas
+region: Cuba
+sensory:
+  aroma:
+  - Carne de cerdo frita
+  - Ajo tostado
+  - Cebolla frita con naranja agria
+  flavor:
+  - Salado
+  - Umami de cerdo intenso
+  - Cítrico y ajo
+  presentation: Servidas calientes sobre una bandeja, decoradas con abundante mojo
+    de cebollas en rodajas por encima, acompañadas de arroz congrí y tostones.
+  texture:
+  - Extremadamente crujiente (exterior)
+  - Sumamente tierno y jugoso (interior)
+servings: 4
+source:
+  date_retrieved: '2026-09-03'
+  name: recetascubanas.org
+  url: https://www.recetascubanas.org/masitas-de-cerdo-fritas/
+tags:
+- Cerdo
+- Frito
+- Mojo
+- Crujiente
+- Cuba
+title: Masitas de Cerdo Fritas Cubanas
 ---
 
 # Masitas de Cerdo Fritas Cubanas

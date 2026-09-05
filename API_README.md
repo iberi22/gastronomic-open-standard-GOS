@@ -52,6 +52,12 @@ curl https://gos-site.pages.dev/api/chinese/china.json
 | `/api/countries/china.json` | All Chinese recipes | 324 |
 | `/api/countries/peru.json` | All Peruvian recipes | 1 |
 
+### Translation & i18n
+
+| Endpoint | Description |
+|----------|-------------|
+| `/api/v1/translate?entity=ajo&locale=en` | Get canonical name and localized aliases across dishes, ingredients, and substances |
+
 ### Vector Embeddings Snapshot
 
 | Endpoint | Description |
@@ -92,6 +98,50 @@ GOS exports a bulk versioned embeddings snapshot of the entire database (ingredi
   "type": "ingredient",
   "text": "Ajo (garlic) - Allium sativum. Group: Condiment...",
   "embedding": [0.0123, -0.0456, 0.0789]
+}
+```
+
+## 🌐 Translation API (`/api/v1/translate`)
+
+GOS provides multi-language translation and alias lookup across 20 canonical locales (`es`, `en`, `zh`, `hi`, `ar`, `pt`, `bn`, `ru`, `ja`, `pa`, `de`, `jv`, `wu`, `ms`, `te`, `vi`, `ko`, `fr`, `ta`, `ur`).
+
+### Parameters
+
+- `entity` (or `q`): Entity ID or search term (e.g. `ajo`, `alicina`, `bandeja_paisa`).
+- `locale` (or `lang`): Target locale code (e.g. `en`, `fr`). Optional.
+- `type`: Filter by `dish`, `ingredient`, or `substance`. Optional.
+
+### Example Request
+
+```bash
+curl "https://gos-site.pages.dev/api/v1/translate?entity=ajo&locale=en"
+```
+
+### Response Schema
+
+```json
+{
+  "query": {
+    "entity": "ajo",
+    "locale": "en"
+  },
+  "count": 1,
+  "results": [
+    {
+      "id": "condiments/ajo",
+      "type": "ingredient",
+      "name": "Ajo",
+      "locale": "en",
+      "aliases": ["garlic", "allium"],
+      "all_aliases": {
+        "en": ["garlic", "allium"]
+      }
+    }
+  ],
+  "supported_locales": [
+    "es", "en", "zh", "hi", "ar", "pt", "bn", "ru", "ja", "pa",
+    "de", "jv", "wu", "ms", "te", "vi", "ko", "fr", "ta", "ur"
+  ]
 }
 ```
 

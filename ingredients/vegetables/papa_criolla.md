@@ -1,52 +1,62 @@
 ---
-name: "Papa Criolla (Amarilla)"
-scientific_name: "Solanum phureja"
-group: "Vegetable"
-image: "../../images/papa_criolla.jpg"
-portions:
-  default_g: 100
-nutrition_per_100g:
-  calories: 98
-  protein_g: 2.3
-  fat_g: 0.1
-  carbs_g: 22.5
-  fiber_g: 2.5
-  sugar_g: 0.8
+active_compounds:
+- benefit: Carotenoid giving yellow color, supports eye health.
+  name: Zeaxanthin
+  scientific_ref: Agrosavia
+aliases:
+  en:
+  - yellow potato
+  - creole potato
+group: Vegetable
+health_registry:
+- compounds:
+  - Potassium
+  condition: Hypertension / Cardiovascular Health
+  evidence_level: High
+  mechanism: High potassium content counters sodium effects, relaxing blood vessel
+    walls.
+  studies:
+  - doi: 10.1016/j.jacc.2010.09.070
+    source: Journal of the American College of Cardiology
+    title: 'Potassium intake, stroke, and cardiovascular disease: a meta-analysis
+      of prospective trials'
+    url: https://pubmed.ncbi.nlm.nih.gov/21371638/
+    year: 2011
+- compounds:
+  - Zeaxanthin
+  - Lutein
+  condition: Macular Degeneration
+  evidence_level: High
+  mechanism: Zeaxanthin accumulates in macular pigment, filtering damaging blue light
+    wavelengths.
+  studies:
+  - doi: 10.3390/nu5041169
+    source: Nutrients
+    title: Lutein and zeaxanthin in eye health and disease
+    url: https://pubmed.ncbi.nlm.nih.gov/23571649/
+    year: 2013
+image: ../../images/papa_criolla.jpg
 micronutrients:
   potassium_mg: 440
   vitamin_c_mg: 19.7
-active_compounds:
-  - name: "Zeaxanthin"
-    benefit: "Carotenoid giving yellow color, supports eye health."
-    scientific_ref: "Agrosavia"
-health_registry:
-  - condition: "Hypertension / Cardiovascular Health"
-    mechanism: "High potassium content counters sodium effects, relaxing blood vessel walls."
-    compounds: ["Potassium"]
-    evidence_level: "High"
-    studies:
-      - title: "Potassium intake, stroke, and cardiovascular disease: a meta-analysis of prospective trials"
-        source: "Journal of the American College of Cardiology"
-        year: 2011
-        doi: "10.1016/j.jacc.2010.09.070"
-        url: "https://pubmed.ncbi.nlm.nih.gov/21371638/"
-  - condition: "Macular Degeneration"
-    mechanism: "Zeaxanthin accumulates in macular pigment, filtering damaging blue light wavelengths."
-    compounds: ["Zeaxanthin", "Lutein"]
-    evidence_level: "High"
-    studies:
-      - title: "Lutein and zeaxanthin in eye health and disease"
-        source: "Nutrients"
-        year: 2013
-        doi: "10.3390/nu5041169"
-        url: "https://pubmed.ncbi.nlm.nih.gov/23571649/"
+name: Papa Criolla (Amarilla)
+nutrition_per_100g:
+  calories: 98
+  carbs_g: 22.5
+  fat_g: 0.1
+  fiber_g: 2.5
+  protein_g: 2.3
+  sugar_g: 0.8
+portions:
+  default_g: 100
+scientific_name: Solanum phureja
 sources:
-  - "ICBF Tabla de Composición"
-  - "Agrosavia"
+- ICBF Tabla de Composición
+- Agrosavia
 tags:
-  - ajiaco
-  - frita
-  - esencial
+- ajiaco
+- frita
+- esencial
 ---
 
 # Scientific Analysis & Culinary Use

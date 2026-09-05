@@ -1,62 +1,64 @@
 ---
-title: Tacos al Pastor
-region: México DF / Puebla
+aliases:
+  en:
+  - Tacos al Pastor
+  - Pork Tacos
+categories:
+- Plato fuerte
+- Taquería
+- Tradicional
+cook_time: 30 minutos
+description: Los Tacos al Pastor son un ícono gastronómico de la Ciudad de México
+  con influencia libanesa (shawarma). Consisten en fina carne de cerdo marinada en
+  achiote y chiles, asada en un trompo vertical y servida con piña.
+difficulty: ★★★☆☆
+images:
+- description: Tacos al Pastor tradicional
+  url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600
 language: es
 license: MIT
-source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
-  date_retrieved: '2026-09-03'
-  notes: Derived from GOS Database
-categories:
-  - Plato fuerte
-  - Taquería
-  - Tradicional
-difficulty: ★★★☆☆
-prep_time: 40 minutos
-cook_time: 30 minutos
-servings: 4
-tags:
-  - Mexican
-  - GOS Catalog
-  - Top 20
 main_ingredients:
-  - Carne de cerdo
-  - Adobo de achiote y chiles guajillo
-  - Piña fresca
-  - Tortillas de maíz
-  - Cilantro
-  - Cebolla picada
-sensory:
-  flavor:
-    - Salado
-    - Picante
-    - Dulce de piña
-    - Umami
-  texture:
-    - Suave (tortilla)
-    - Tierna (carne)
-    - Jugoso
-  aroma:
-    - Achiote
-    - Carne asada
-    - Cilantro y cebolla
-  presentation: >-
-    Servido en tortillas de maíz calientes con piña asada, cebolla, cilantro y
-    salsa verde o roja.
+- Carne de cerdo
+- Adobo de achiote y chiles guajillo
+- Piña fresca
+- Tortillas de maíz
+- Cilantro
+- Cebolla picada
 nutrition:
   calories: 650
   macros:
-    protein_g: 32
-    fat_g: 28
     carbs_g: 62
-images:
-  - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
-    description: Tacos al Pastor tradicional
-description: >-
-  Los Tacos al Pastor son un ícono gastronómico de la Ciudad de México con
-  influencia libanesa (shawarma). Consisten en fina carne de cerdo marinada en
-  achiote y chiles, asada en un trompo vertical y servida con piña.
+    fat_g: 28
+    protein_g: 32
+prep_time: 40 minutos
+region: México DF / Puebla
+sensory:
+  aroma:
+  - Achiote
+  - Carne asada
+  - Cilantro y cebolla
+  flavor:
+  - Salado
+  - Picante
+  - Dulce de piña
+  - Umami
+  presentation: Servido en tortillas de maíz calientes con piña asada, cebolla, cilantro
+    y salsa verde o roja.
+  texture:
+  - Suave (tortilla)
+  - Tierna (carne)
+  - Jugoso
+servings: 4
+source:
+  date_retrieved: '2026-09-03'
+  name: Gastronomic Open Standard (GOS) Database
+  notes: Derived from GOS Database
+  url: pending
+tags:
+- Mexican
+- GOS Catalog
+- Top 20
+title: Tacos al Pastor
 ---
 
 # Tacos al Pastor

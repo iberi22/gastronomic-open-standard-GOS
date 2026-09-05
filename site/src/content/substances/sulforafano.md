@@ -1,26 +1,40 @@
 ---
-name: "Sulforafano"
-formula: "C6H11NOS2"
+aliases:
+  en:
+  - sulforaphane
+benefit: Anticancer, detox fase II, antioxidante indirecto
+compuestos:
+- Glucoraphanin
+- Sulforaphane nitrile
+- Iberin
 discovery_year: 1992
-source_ingredient: "brócoli (Brassica oleracea)"
-benefit: "Anticancer, detox fase II, antioxidante indirecto"
-sazon: "Brécol picante mostaza, activar triturando + reposo 40min"
-sabor: "Pungente mostaza leve, isotiocianato volátil, se forma con mirosinasa"
-textura: "Isotiocianato oleoso, precursor glucorafanina, inestable al hervir"
-vitaminas: ["Vitamin C", "Vitamin K", "Sulfur"]
-compuestos: ["Glucoraphanin", "Sulforaphane nitrile", "Iberin"]
-sources: ["PubMed", "NIH"]
-tags: ["brocoli", "anticancer", "detox"]
-image_attribution: "Pixabay — Brassica oleracea"
+formula: C6H11NOS2
 health_registry:
-  - condition: "Cancer prevention"
-    mechanism: "Nrf2 activation → Phase II detox enzymes (GST, NQO1)"
-    evidence_level: "High"
-    studies:
-      - title: "Sulforaphane and Nrf2 chemoprevention: review"
-        source: "Cancer Prev Res"
-        year: 2019
-        doi: "10.1158/1940-6207.CAPR-19-0010"
+- condition: Cancer prevention
+  evidence_level: High
+  mechanism: Nrf2 activation → Phase II detox enzymes (GST, NQO1)
+  studies:
+  - doi: 10.1158/1940-6207.CAPR-19-0010
+    source: Cancer Prev Res
+    title: 'Sulforaphane and Nrf2 chemoprevention: review'
+    year: 2019
+image_attribution: Pixabay — Brassica oleracea
+name: Sulforafano
+sabor: Pungente mostaza leve, isotiocianato volátil, se forma con mirosinasa
+sazon: Brécol picante mostaza, activar triturando + reposo 40min
+source_ingredient: brócoli (Brassica oleracea)
+sources:
+- PubMed
+- NIH
+tags:
+- brocoli
+- anticancer
+- detox
+textura: Isotiocianato oleoso, precursor glucorafanina, inestable al hervir
+vitaminas:
+- Vitamin C
+- Vitamin K
+- Sulfur
 ---
 
 ![Sulforafano](/images/substances/sulforafano.jpg)

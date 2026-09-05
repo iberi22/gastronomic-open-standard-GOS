@@ -1,60 +1,62 @@
 ---
-title: Chuzo Colombiano (Brocheta Callejera)
-region: Nacional
+aliases:
+  en:
+  - Colombian Chuzo
+  - Street Skewer
+categories:
+- Snack
+- Comida callejera
+- Plato fuerte
+- Street food
+cook_time: 30 minutos
+description: El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a
+  la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con
+  papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en
+  celebraciones nocturnas.
+difficulty: ★★☆☆☆
+images:
+- description: Chuzo colombiano en parrilla (Pixabay)
+  url: https://pixabay.com/photos/chorizo-parrilla-barbacoa-2314640/
+- description: Variaciones de chuzo en Unsplash
+  url: https://unsplash.com/s/photos/chuzo-colombia
 language: es
 license: MIT
-source:
-  name: recetasdecolombia.com
-  url: 'https://www.recetasdecolombia.com/chuzo'
-  date_retrieved: '2026-09-03'
-categories:
-  - Snack
-  - Comida callejera
-  - Plato fuerte
-  - Street food
-difficulty: ★★☆☆☆
-prep_time: 40 minutos
-cook_time: 30 minutos
-servings: 6
-tags:
-  - colombiano
-  - tradicional
-  - chuzo
-  - open source
 main_ingredients:
-  - Carne de res
-  - Pollo
-  - Papa salada
-  - Arepa
-sensory:
-  flavor:
-    - Umami
-    - Ahumado
-  texture:
-    - Jugoso
-    - Dorado por fuera
-  aroma:
-    - Ahumado
-    - Especiado
-  presentation: >-
-    Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir en
-    fiestas y eventos nocturnas.
+- Carne de res
+- Pollo
+- Papa salada
+- Arepa
 nutrition:
   calories: 1832
   macros:
-    protein_g: 174.5
-    fat_g: 49
     carbs_g: 168.8
-images:
-  - url: 'https://pixabay.com/photos/chorizo-parrilla-barbacoa-2314640/'
-    description: Chuzo colombiano en parrilla (Pixabay)
-  - url: 'https://unsplash.com/s/photos/chuzo-colombia'
-    description: Variaciones de chuzo en Unsplash
-description: >-
-  El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la
-  parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con
-  papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia
-  en celebraciones nocturnas.
+    fat_g: 49
+    protein_g: 174.5
+prep_time: 40 minutos
+region: Nacional
+sensory:
+  aroma:
+  - Ahumado
+  - Especiado
+  flavor:
+  - Umami
+  - Ahumado
+  presentation: Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir
+    en fiestas y eventos nocturnas.
+  texture:
+  - Jugoso
+  - Dorado por fuera
+servings: 6
+source:
+  date_retrieved: '2026-09-03'
+  name: recetasdecolombia.com
+  url: https://www.recetasdecolombia.com/chuzo
+tags:
+- colombiano
+- tradicional
+- chuzo
+- open source
+title: Chuzo Colombiano (Brocheta Callejera)
 ---
 
 El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla, muy popular en ventas ambulantes y ferias de Colombia. Se sirve con papa salada, arepa y salsas. Es tendencia por su sabor ahumado y su presencia en celebraciones nocturnas.

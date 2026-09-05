@@ -1,39 +1,47 @@
 ---
-name: "Panela (Piloncillo/Papelón)"
-scientific_name: "Saccharum officinarum (derivado)"
-group: "Sugar"
-portions:
-  default_g: 20 # chunk for aguapanela
+active_compounds:
+- benefit: Waxy alcohols found in cane, potential cholesterol benefits (trace amounts).
+  name: Policosanols
+  scientific_ref: PubMed
+aliases:
+  en:
+  - panela
+  - unrefined cane sugar
+group: Sugar
+health_registry:
+- compounds:
+  - Sucrose
+  - Water
+  condition: Hydration / Energy
+  evidence_level: High
+  mechanism: Rapid glucose source combined with water (Aguapanela) restores glycogen.
+- compounds:
+  - Heat
+  - Sugar
+  condition: Common Cold (Folk)
+  evidence_level: Anecdotal/Medium
+  mechanism: Hot aguapanela with lemon soothes throat (demulcent effect).
+micronutrients:
+  calcium_mg: 80
+  iron_mg: 2.5
+  potassium_mg: 150
+name: Panela (Piloncillo/Papelón)
 nutrition_per_100g:
   calories: 380
-  protein_g: 0
-  fat_g: 0
   carbs_g: 98
+  fat_g: 0
   fiber_g: 0
+  protein_g: 0
   sugar_g: 98
-micronutrients:
-  iron_mg: 2.5 # Trace minerals retained
-  calcium_mg: 80
-  potassium_mg: 150
-active_compounds:
-  - name: "Policosanols"
-    benefit: "Waxy alcohols found in cane, potential cholesterol benefits (trace amounts)."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Hydration / Energy"
-    mechanism: "Rapid glucose source combined with water (Aguapanela) restores glycogen."
-    compounds: ["Sucrose", "Water"]
-    evidence_level: "High"
-  - condition: "Common Cold (Folk)"
-    mechanism: "Hot aguapanela with lemon soothes throat (demulcent effect)."
-    compounds: ["Heat", "Sugar"]
-    evidence_level: "Anecdotal/Medium"
+portions:
+  default_g: 20
+scientific_name: Saccharum officinarum (derivado)
 sources:
-  - "Agrosavia"
+- Agrosavia
 tags:
-  - aguapanela
-  - bebida
-  - energia
+- aguapanela
+- bebida
+- energia
 ---
 
 # Scientific Analysis & Culinary Use

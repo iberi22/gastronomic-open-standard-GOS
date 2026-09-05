@@ -1,26 +1,40 @@
 ---
-name: "Apigenina"
-formula: "C15H10O5"
+aliases:
+  en:
+  - apigenin
+benefit: Ansiolítico, antiinflamatorio, estrogénico suave
+compuestos:
+- Luteolin
+- Chrysin
+- Apigenin-7-glucoside
 discovery_year: 1900
-source_ingredient: "manzanilla (Matricaria chamomilla)"
-benefit: "Ansiolítico, antiinflamatorio, estrogénico suave"
-sazon: "Manzanilla dulce herbal, base infusiones nocturnas"
-sabor: "Suave dulce amarga, soluble flavon glicosido"
-textura: "Flavona cristal amarillo, 0.8-1.2% manzanilla seca"
-vitaminas: ["Calcium", "Magnesium", "Vitamin A"]
-compuestos: ["Luteolin", "Chrysin", "Apigenin-7-glucoside"]
-sources: ["PubMed", "NIH"]
-tags: ["manzanilla", "ansiolitico", "flavona"]
-image_attribution: "Pixabay — Matricaria chamomilla"
+formula: C15H10O5
 health_registry:
-  - condition: "Anxiety / Insomnia"
-    mechanism: "GABA-A benzodiazepine site modulator"
-    evidence_level: "Medium"
-    studies:
-      - title: "Apigenin and anxiety: review"
-        source: "Phytother Res"
-        year: 2013
-        doi: "10.1002/ptr.4895"
+- condition: Anxiety / Insomnia
+  evidence_level: Medium
+  mechanism: GABA-A benzodiazepine site modulator
+  studies:
+  - doi: 10.1002/ptr.4895
+    source: Phytother Res
+    title: 'Apigenin and anxiety: review'
+    year: 2013
+image_attribution: Pixabay — Matricaria chamomilla
+name: Apigenina
+sabor: Suave dulce amarga, soluble flavon glicosido
+sazon: Manzanilla dulce herbal, base infusiones nocturnas
+source_ingredient: manzanilla (Matricaria chamomilla)
+sources:
+- PubMed
+- NIH
+tags:
+- manzanilla
+- ansiolitico
+- flavona
+textura: Flavona cristal amarillo, 0.8-1.2% manzanilla seca
+vitaminas:
+- Calcium
+- Magnesium
+- Vitamin A
 ---
 
 ![Apigenina](/images/substances/apigenina.jpg)

@@ -1,34 +1,38 @@
 ---
-name: "Comino"
-scientific_name: "Cuminum cyminum"
-group: "Condiment"
-portions:
-  default_g: 2 # teaspoon
+active_compounds:
+- benefit: Stimulates salivary glands and digestive enzymes.
+  name: Cuminaldehyde
+  scientific_ref: PubMed
+aliases:
+  en:
+  - cumin
+group: Condiment
+health_registry:
+- compounds:
+  - Cuminaldehyde
+  condition: Digestion
+  evidence_level: High
+  mechanism: Increases activity of digestive enzymes (amylase, protease, lipase).
+  studies:
+  - source: Nutrition Research
+    title: Cumin extract stimulates digestive enzymes
+micronutrients:
+  iron_mg: 66
+name: Comino
 nutrition_per_100g:
   calories: 375
-  protein_g: 18
-  fat_g: 22
   carbs_g: 44
+  fat_g: 22
   fiber_g: 10
-micronutrients:
-  iron_mg: 66 # Highly concentrated
-active_compounds:
-  - name: "Cuminaldehyde"
-    benefit: "Stimulates salivary glands and digestive enzymes."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Digestion"
-    mechanism: "Increases activity of digestive enzymes (amylase, protease, lipase)."
-    compounds: ["Cuminaldehyde"]
-    evidence_level: "High"
-    studies:
-      - title: "Cumin extract stimulates digestive enzymes"
-        source: "Nutrition Research"
+  protein_g: 18
+portions:
+  default_g: 2
+scientific_name: Cuminum cyminum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - sazon
-  - digestion
+- sazon
+- digestion
 ---
 
 # Scientific Analysis & Culinary Use

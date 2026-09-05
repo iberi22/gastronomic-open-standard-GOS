@@ -1,26 +1,40 @@
 ---
-name: "Cafeína"
-formula: "C8H10N4O2"
+aliases:
+  en:
+  - caffeine
+benefit: Estimulante, termogénico, neuroprotector
+compuestos:
+- Theobromine
+- Theophylline
+- Chlorogenic acid
 discovery_year: 1819
-source_ingredient: "café (Coffea arabica)"
-benefit: "Estimulante, termogénico, neuroprotector"
-sazon: "Amarga estimulante, base tinto colombiano"
-sabor: "Amarga intensa, soluble agua caliente, bloquea adenosina"
-textura: "Alcaloide cristal blanco inodoro, sublimable"
-vitaminas: ["Potassium", "Magnesium", "Vitamin B3"]
-compuestos: ["Theobromine", "Theophylline", "Chlorogenic acid"]
-sources: ["PubMed", "NIH"]
-tags: ["estimulante", "cafe", "neuroprotector"]
-image_attribution: "Pixabay — Coffea arabica"
+formula: C8H10N4O2
 health_registry:
-  - condition: "Fatigue / Alertness"
-    mechanism: "Adenosine A1/A2A receptor antagonism"
-    evidence_level: "High"
-    studies:
-      - title: "Caffeine and cognitive performance meta-analysis"
-        source: "Psychopharmacology"
-        year: 2010
-        doi: "10.1007/s00213-010-1900-8"
+- condition: Fatigue / Alertness
+  evidence_level: High
+  mechanism: Adenosine A1/A2A receptor antagonism
+  studies:
+  - doi: 10.1007/s00213-010-1900-8
+    source: Psychopharmacology
+    title: Caffeine and cognitive performance meta-analysis
+    year: 2010
+image_attribution: Pixabay — Coffea arabica
+name: Cafeína
+sabor: Amarga intensa, soluble agua caliente, bloquea adenosina
+sazon: Amarga estimulante, base tinto colombiano
+source_ingredient: café (Coffea arabica)
+sources:
+- PubMed
+- NIH
+tags:
+- estimulante
+- cafe
+- neuroprotector
+textura: Alcaloide cristal blanco inodoro, sublimable
+vitaminas:
+- Potassium
+- Magnesium
+- Vitamin B3
 ---
 
 ![Cafeína](/images/substances/cafeina.jpg)

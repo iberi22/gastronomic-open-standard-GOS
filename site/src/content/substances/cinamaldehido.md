@@ -1,26 +1,40 @@
 ---
-name: "Cinamaldehído"
-formula: "C9H8O"
+aliases:
+  en:
+  - cinnamaldehyde
+benefit: Antimicrobiano, hipoglucemiante, circulatorio
+compuestos:
+- Eugenol
+- Cinnamic acid
+- Coumarin
 discovery_year: 1834
-source_ingredient: "canela (Cinnamomum verum)"
-benefit: "Antimicrobiano, hipoglucemiante, circulatorio"
-sazon: "Canela cálida dulce picante, base arroz con leche"
-sabor: "Dulce picante cálido intenso, 60-80% aceite canela"
-textura: "Aldehído aromático oleoso, trans-isómero estable"
-vitaminas: ["Manganese", "Calcium", "Iron"]
-compuestos: ["Eugenol", "Cinnamic acid", "Coumarin"]
-sources: ["PubMed", "NIH"]
-tags: ["canela", "hipoglucemiante", "antimicrobiano"]
-image_attribution: "Pixabay — Cinnamomum verum"
+formula: C9H8O
 health_registry:
-  - condition: "Type 2 Diabetes"
-    mechanism: "Insulin sensitivity via PPARδ/γ and TRPA1"
-    evidence_level: "Medium"
-    studies:
-      - title: "Cinnamon and glucose: meta-analysis"
-        source: "Ann Fam Med"
-        year: 2013
-        doi: "10.1370/afm.1516"
+- condition: Type 2 Diabetes
+  evidence_level: Medium
+  mechanism: Insulin sensitivity via PPARδ/γ and TRPA1
+  studies:
+  - doi: 10.1370/afm.1516
+    source: Ann Fam Med
+    title: 'Cinnamon and glucose: meta-analysis'
+    year: 2013
+image_attribution: Pixabay — Cinnamomum verum
+name: Cinamaldehído
+sabor: Dulce picante cálido intenso, 60-80% aceite canela
+sazon: Canela cálida dulce picante, base arroz con leche
+source_ingredient: canela (Cinnamomum verum)
+sources:
+- PubMed
+- NIH
+tags:
+- canela
+- hipoglucemiante
+- antimicrobiano
+textura: Aldehído aromático oleoso, trans-isómero estable
+vitaminas:
+- Manganese
+- Calcium
+- Iron
 ---
 
 ![Cinamaldehído](/images/substances/cinamaldehido.jpg)

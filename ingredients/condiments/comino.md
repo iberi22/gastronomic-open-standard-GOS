@@ -1,47 +1,56 @@
 ---
-name: "Comino"
-scientific_name: "Cuminum cyminum"
-group: "Condiment"
-image: "../../images/comino.jpg"
-portions:
-  default_g: 2 # teaspoon
+active_compounds:
+- benefit: Stimulates salivary glands and digestive enzymes.
+  name: Cuminaldehyde
+  scientific_ref: PubMed
+aliases:
+  en:
+  - cumin
+group: Condiment
+health_registry:
+- compounds:
+  - Cuminaldehyde
+  - Cyminum polyphenols
+  condition: Dyspepsia / Indigestion
+  evidence_level: High
+  mechanism: Increases activity of digestive enzymes (pancreatic lipase, amylase,
+    trypsin, chymotrypsin) and bile secretion.
+  studies:
+  - doi: 10.1016/j.nutres.2004.04.008
+    source: Nutrition Research
+    title: Cumin extract stimulates digestive enzymes and bile acid secretion in animal
+      and clinical models
+    url: https://pubmed.ncbi.nlm.nih.gov/15283686/
+    year: 2004
+- compounds:
+  - Cuminaldehyde
+  condition: Irritable Bowel Syndrome (IBS)
+  evidence_level: Medium
+  mechanism: Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic
+    effects.
+  studies:
+  - source: Middle East Journal of Digestive Diseases
+    title: Cumin extract for symptom control in patients with irritable bowel syndrome
+    url: https://pubmed.ncbi.nlm.nih.gov/24829424/
+    year: 2013
+image: ../../images/comino.jpg
+micronutrients:
+  iron_mg: 66
+name: Comino
 nutrition_per_100g:
   calories: 375
-  protein_g: 18
-  fat_g: 22
   carbs_g: 44
+  fat_g: 22
   fiber_g: 10
-micronutrients:
-  iron_mg: 66 # Highly concentrated
-active_compounds:
-  - name: "Cuminaldehyde"
-    benefit: "Stimulates salivary glands and digestive enzymes."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Dyspepsia / Indigestion"
-    mechanism: "Increases activity of digestive enzymes (pancreatic lipase, amylase, trypsin, chymotrypsin) and bile secretion."
-    compounds: ["Cuminaldehyde", "Cyminum polyphenols"]
-    evidence_level: "High"
-    studies:
-      - title: "Cumin extract stimulates digestive enzymes and bile acid secretion in animal and clinical models"
-        source: "Nutrition Research"
-        year: 2004
-        doi: "10.1016/j.nutres.2004.04.008"
-        url: "https://pubmed.ncbi.nlm.nih.gov/15283686/"
-  - condition: "Irritable Bowel Syndrome (IBS)"
-    mechanism: "Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic effects."
-    compounds: ["Cuminaldehyde"]
-    evidence_level: "Medium"
-    studies:
-      - title: "Cumin extract for symptom control in patients with irritable bowel syndrome"
-        source: "Middle East Journal of Digestive Diseases"
-        year: 2013
-        url: "https://pubmed.ncbi.nlm.nih.gov/24829424/"
+  protein_g: 18
+portions:
+  default_g: 2
+scientific_name: Cuminum cyminum
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - sazon
-  - digestion
+- sazon
+- digestion
 ---
 
 # Scientific Analysis & Culinary Use

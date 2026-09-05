@@ -1,27 +1,31 @@
 ---
-name: "Aceite Vegetal (Mezcla)"
-scientific_name: "N/A"
-group: "Oil"
-portions:
-  default_g: 14 # 1 tablespoon
-nutrition_per_100g:
-  calories: 884
-  protein_g: 0
-  fat_g: 100
-  carbs_g: 0
-  fiber_g: 0
-  sugar_g: 0
+active_compounds:
+- benefit: Energy density and nutrient absorption.
+  name: Lipids
+  scientific_ref: General Nutrition
+aliases:
+  en:
+  - cooking oil
+  - vegetable oil
+group: Oil
 micronutrients:
   vitamin_e_mg: 15
-active_compounds:
-  - name: "Lipids"
-    benefit: "Energy density and nutrient absorption."
-    scientific_ref: "General Nutrition"
+name: Aceite Vegetal (Mezcla)
+nutrition_per_100g:
+  calories: 884
+  carbs_g: 0
+  fat_g: 100
+  fiber_g: 0
+  protein_g: 0
+  sugar_g: 0
+portions:
+  default_g: 14
+scientific_name: N/A
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - grasa
-  - coccion
+- grasa
+- coccion
 ---
 
 # Scientific Analysis & Culinary Use

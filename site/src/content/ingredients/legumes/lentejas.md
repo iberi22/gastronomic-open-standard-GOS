@@ -1,46 +1,55 @@
 ---
-name: "Lentejas (Secas)"
-scientific_name: "Lens culinaris"
-group: "Legume"
-portions:
-  default_g: 100 # Dry
-nutrition_per_100g:
-  calories: 353
-  protein_g: 26
-  fat_g: 1
-  carbs_g: 60
-  fiber_g: 30
-  sugar_g: 2
+active_compounds:
+- benefit: Antioxidant and anti-inflammatory effects.
+  name: Polyphenols
+  scientific_ref: PubMed
+aliases:
+  en:
+  - lentils
+group: Legume
+health_registry:
+- compounds:
+  - Folate
+  - Soluble Fiber
+  - Magnesium
+  condition: Cardiovascular Health
+  evidence_level: High
+  mechanism: High fiber and folate lower homocysteine levels and improve lipid profile.
+  studies:
+  - doi: 10.1001/archinte.161.21.2573
+    source: Archives of Internal Medicine
+    title: Legume consumption and risk of coronary heart disease
+    year: 2001
+- compounds:
+  - Protein
+  - Fiber
+  condition: Weight Management
+  evidence_level: High
+  mechanism: High protein and fiber content increase satiety and reduce total energy
+    intake.
 micronutrients:
-  iron_mg: 7.5
   folate_ug: 479
+  iron_mg: 7.5
   potassium_mg: 955
   thiamin_mg: 0.87
-active_compounds:
-  - name: "Polyphenols"
-    benefit: "Antioxidant and anti-inflammatory effects."
-    scientific_ref: "PubMed"
-health_registry:
-  - condition: "Cardiovascular Health"
-    mechanism: "High fiber and folate lower homocysteine levels and improve lipid profile."
-    compounds: ["Folate", "Soluble Fiber", "Magnesium"]
-    evidence_level: "High"
-    studies:
-      - title: "Legume consumption and risk of coronary heart disease"
-        source: "Archives of Internal Medicine"
-        year: 2001
-        doi: "10.1001/archinte.161.21.2573"
-  - condition: "Weight Management"
-    mechanism: "High protein and fiber content increase satiety and reduce total energy intake."
-    compounds: ["Protein", "Fiber"]
-    evidence_level: "High"
+name: Lentejas (Secas)
+nutrition_per_100g:
+  calories: 353
+  carbs_g: 60
+  fat_g: 1
+  fiber_g: 30
+  protein_g: 26
+  sugar_g: 2
+portions:
+  default_g: 100
+scientific_name: Lens culinaris
 sources:
-  - "USDA FoodData Central"
+- USDA FoodData Central
 tags:
-  - almuerzo
-  - sopa
-  - corazon_sano
-  - hierro
+- almuerzo
+- sopa
+- corazon_sano
+- hierro
 ---
 
 # Scientific Analysis & Culinary Use
