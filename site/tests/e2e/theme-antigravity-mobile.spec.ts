@@ -20,10 +20,10 @@ test.describe('Antigravity mobile - single tone clean fast', () => {
       // use built dist or dev? Build already has dist
       // Start with file:// via serving dist? Simpler: check static HTML + CSS tokens directly
       // But we test live via file://dist/index.html if exists
-      // Use preview server (http://localhost:4321/gastronomic-open-standard-GOS/) - file:// breaks CSS @import resolution
+      // Use preview server (http://localhost:4321/) - file:// breaks CSS @import resolution
       // NOTE: 'networkidle' fails locally because Google Fonts CDN keeps the connection warm.
       // CI passes because the runner has no DNS hiccup; locally we use 'load' which is stable.
-      await page.goto('/gastronomic-open-standard-GOS/', { waitUntil: 'load', timeout: 60000 });
+      await page.goto('/', { waitUntil: 'load', timeout: 60000 });
       // Wait for Antigravity tokens to hydrate (--swal-bg is set in @swal/ui/antigravity.css :root)
       // Skip waitForFunction locally — it can hang if the token is in a separate stylesheet not yet parsed
       await page.waitForLoadState('domcontentloaded');

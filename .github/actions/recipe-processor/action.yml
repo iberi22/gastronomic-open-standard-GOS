@@ -1,5 +1,0 @@
-name: 'Process and Embed Recipes'
-description: 'Extracts metadata, generates vector embeddings, and prepares data for AI agents.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'

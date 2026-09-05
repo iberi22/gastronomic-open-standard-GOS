@@ -6,13 +6,13 @@ A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically
 
 ```bash
 # Get all recipes
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/all.json
+curl https://gos-site.pages.dev/api/all.json
 
 # Get Colombian recipes
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json
+curl https://gos-site.pages.dev/api/spanish/colombia.json
 
 # Get Chinese recipes
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.json
+curl https://gos-site.pages.dev/api/chinese/china.json
 ```
 
 ## 📊 Statistics
@@ -91,7 +91,7 @@ curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.j
 ### JavaScript / Fetch API
 
 ```javascript
-fetch('https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json')
+fetch('https://gos-site.pages.dev/api/spanish/colombia.json')
   .then(res => res.json())
   .then(data => {
     console.log(`Found ${data.count} Colombian recipes`);
@@ -107,7 +107,7 @@ fetch('https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colom
 import requests
 
 response = requests.get(
-    'https://iberi22.github.io/gastronomic-open-standard-GOS/api/chinese/china.json'
+    'https://gos-site.pages.dev/api/chinese/china.json'
 )
 data = response.json()
 
@@ -120,13 +120,13 @@ for recipe in data['recipes']:
 
 ```bash
 # Get all languages
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/index.json | jq '.languages'
+curl https://gos-site.pages.dev/api/index.json | jq '.languages'
 
 # Get recipe titles from Colombia
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json | jq '.recipes[].title'
+curl https://gos-site.pages.dev/api/spanish/colombia.json | jq '.recipes[].title'
 
 # Filter recipes by difficulty
-curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
+curl https://gos-site.pages.dev/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
 ```
 
 ## 🔧 How It Works
@@ -151,8 +151,8 @@ curl https://iberi22.github.io/gastronomic-open-standard-GOS/api/spanish/colombi
 
 ## 🔗 Links
 
-- **API Documentation**: <https://iberi22.github.io/gastronomic-open-standard-GOS/api-docs>
-- **Main Site**: <https://iberi22.github.io/gastronomic-open-standard-GOS/>
+- **API Documentation**: <https://gos-site.pages.dev/api-docs>
+- **Main Site**: <https://gos-site.pages.dev/>
 - **GitHub Repository**: <https://github.com/iberi22/gastronomic-open-standard-GOS>
 
 ## 📄 License

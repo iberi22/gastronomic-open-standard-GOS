@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-// Production E2E coverage — points at the live GitHub Pages deployment.
+// Production E2E coverage — points at the live Cloudflare Pages deployment.
 // baseURL is set in playwright.config.ts to PRODUCTION_BASE.
 
-const PROD = process.env.PRODUCTION_BASE || 'https://iberi22.github.io/gastronomic-open-standard-GOS';
+const PROD = process.env.PRODUCTION_BASE || 'https://gos-site.pages.dev';
 
 const topLevelRoutes = [
   '/',
