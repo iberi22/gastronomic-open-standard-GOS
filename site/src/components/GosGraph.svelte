@@ -1,5 +1,25 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
+  import { Network } from 'vis-network/peer';
+  import { DataSet } from 'vis-data/peer';
+  import type { Edge, Node, Options } from 'vis-network/peer';
+
+  // Shared graph types for the explorer (issue #235)
+  interface GNodeDatum {
+    id: string;
+    label?: string;
+    type?: string;
+    size?: number;
+  }
+  interface GEdgeDatum {
+    source: string;
+    target: string;
+  }
+  interface GraphData {
+    nodes: GNodeDatum[];
+    edges: GEdgeDatum[];
+  }
+
   let container: HTMLDivElement;
   let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 });
   let loading = $state(true);
@@ -11,7 +31,7 @@
     place: '#B2E2F2', category: '#90BE6D', condition: '#F94144', substance: '#9D4EDD', diet: '#06D6A0'
   };
 
-  async function loadGraphData(): Promise<any> {
+  async function loadGraphData(): Promise<GraphData> {
     const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
     const candidates = [
       `${base}/graph-data.json`,
@@ -21,59 +41,47 @@
     for (const url of candidates) {
       try {
         const r = await fetch(url);
-        if (r.ok) return await r.json();
+        if (r.ok) return (await r.json()) as GraphData;
       } catch {}
     }
     throw new Error('graph-data.json no encontrado');
   }
 
-  async function loadVisNetwork(): Promise<any> {
-    if ((window as any).vis) return (window as any).vis;
-    return new Promise((resolve, reject) => {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js';
-      script.onload = () => resolve((window as any).vis);
-      script.onerror = () => reject(new Error('No se pudo cargar vis-network CDN'));
-      document.head.appendChild(script);
-    });
-  }
-
   onMount(async () => {
     try {
-      const [data, vis] = await Promise.all([loadGraphData(), loadVisNetwork()]);
+      const data = await loadGraphData();
       stats = {
         nodes: data.nodes?.length || 0,
         edges: data.edges?.length || 0,
-        recipes: data.nodes?.filter((n:any)=>n.type==='recipe').length || 0,
-        ingredients: data.nodes?.filter((n:any)=>n.type==='ingredient').length || 0
+        recipes: data.nodes?.filter((n)=>n.type==='recipe').length || 0,
+        ingredients: data.nodes?.filter((n)=>n.type==='ingredient').length || 0
       };
       loading = false;
       await tick();
-      if (container) renderVisNetwork(container, data, vis);
+      if (container) renderVisNetwork(container, data);
       else error = 'graph container not mounted';
-    } catch (e:any) { error = e.message; loading = false; }
+    } catch (e) { error = e instanceof Error ? e.message : String(e); loading = false; }
   });
 
-  function renderVisNetwork(el: HTMLDivElement, data: any, vis: any) {
-    if (!vis) return;
-    const nodes = (data.nodes || []).slice(0, 180).map((n: any) => ({
+  function renderVisNetwork(el: HTMLDivElement, data: GraphData) {
+    const nodes: Node[] = (data.nodes || []).slice(0, 180).map((n) => ({
       id: n.id,
       label: n.label || n.id,
       shape: 'dot',
       size: n.size ? Math.max(8, Math.min(20, n.size / 2)) : 10,
       color: {
-        background: COLORS[n.type] || '#888888',
+        background: COLORS[n.type || ''] || '#888888',
         border: '#000000',
-        highlight: { background: COLORS[n.type] || '#888888', border: '#ffffff' }
+        highlight: { background: COLORS[n.type || ''] || '#888888', border: '#ffffff' }
       },
       font: { color: '#e0e0ff', size: 10, face: 'Inter, system-ui, sans-serif' }
     }));
 
-    const nodeIds = new Set(nodes.map((n: any) => n.id));
-    const edges = (data.edges || [])
-      .filter((e: any) => nodeIds.has(e.source) && nodeIds.has(e.target))
+    const nodeIds = new Set(nodes.map((n) => n.id));
+    const edges: Edge[] = (data.edges || [])
+      .filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target))
       .slice(0, 350)
-      .map((e: any) => ({
+      .map((e) => ({
         from: e.source,
         to: e.target,
         color: { color: '#2a2a3e', opacity: 0.4 },
@@ -81,13 +89,19 @@
       }));
 
     const visData = {
-      nodes: new vis.DataSet(nodes),
-      edges: new vis.DataSet(edges)
+      nodes: new DataSet(nodes),
+      edges: new DataSet(edges)
     };
 
-    const options = {
+    const options: Options = {
       nodes: { borderWidth: 1 },
-      edges: { smooth: { type: 'continuous' } },
+      edges: {
+        smooth: {
+          enabled: true,
+          type: 'continuous',
+          roundness: 0.5,
+        },
+      },
       interaction: { hover: true, tooltipDelay: 200 },
       physics: {
         solver: 'forceAtlas2Based',
@@ -98,7 +112,7 @@
       }
     };
 
-    const network = new vis.Network(el, visData, options);
+    const network = new Network(el, visData, options);
 
     network.on('stabilizationIterationsDone', () => {
       network.setOptions({ physics: { enabled: false } });
@@ -109,7 +123,7 @@
     }, 2500);
 
     // Clicking a node in homepage mini-graph navigates to /graph?node=<node_id>
-    network.on('click', (params: any) => {
+    network.on('click', (params) => {
       if (params.nodes.length > 0) {
         const nodeId = params.nodes[0];
         const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
