@@ -155,6 +155,10 @@ import { DataSet } from 'vis-data/peer';
   var nodesDataSet = null;
   var edgesDataSet = null;
   var activeTypes = new Set(Object.keys(COLORS));
+  // Vista inicial legible: los tipos hoja masivos (ingredientes/sabores/texturas
+  // suman ~2500 nodos y colapsan el layout en un hairball). Empiezan apagados;
+  // el usuario los enciende con los botones de filtro.
+  ['ingredient', 'flavor', 'texture'].forEach(function(t) { activeTypes.delete(t); });
   var highlightedNodeId = null;
 
   var baseUrl = (document.querySelector('meta[name="base-url"]')?.getAttribute('content') || '/').replace(/\/$/, '');
@@ -217,7 +221,7 @@ import { DataSet } from 'vis-data/peer';
     TYPE_ORDER.forEach(function(t) {
       if (!counts[t]) return;
       var btn = document.createElement('button');
-      btn.className = 'ge-filter-btn ' + t + ' on';
+      btn.className = 'ge-filter-btn ' + t + (activeTypes.has(t) ? ' on' : '');
       btn.dataset.type = t;
       var dot = document.createElement('span');
       dot.className = 'dot';
@@ -274,6 +278,12 @@ import { DataSet } from 'vis-data/peer';
     edgesDataSet.clear();
     nodesDataSet.add(filteredNodes);
     edgesDataSet.add(filteredEdges);
+    // Re-estabilizar corto tras cada cambio de filtros (el handler
+    // stabilizationIterationsDone hace fit + freeze solo).
+    if (network) {
+      network.setOptions({ physics: { enabled: true, stabilization: { iterations: 400, updateInterval: 50 } } });
+      network.stabilize();
+    }
   }
 
   function formatVisNode(n) {
@@ -308,7 +318,9 @@ import { DataSet } from 'vis-data/peer';
   }
 
   function initVisNetwork() {
-    var initialNodes = graphData.nodes.map(formatVisNode);
+    var initialNodes = graphData.nodes.filter(function(n) {
+      return activeTypes.has(n.type);
+    }).map(formatVisNode);
     var validNodeIds = new Set(initialNodes.map(function(n) { return n.id; }));
     var initialEdges = graphData.edges.filter(function(e) {
       return validNodeIds.has(e.source) && validNodeIds.has(e.target);
@@ -337,17 +349,17 @@ import { DataSet } from 'vis-data/peer';
         solver: 'barnesHut',
         barnesHut: {
           gravitationalConstant: -4000,
-          centralGravity: 0.3,
-          springLength: 95,
+          centralGravity: 0.05,
+          springLength: 160,
           springConstant: 0.04,
           damping: 0.09
         },
         maxVelocity: 50,
-        minVelocity: 0.75,
+        minVelocity: 0.5,
         stabilization: {
           enabled: true,
-          iterations: 100,
-          updateInterval: 25
+          iterations: 1500,
+          updateInterval: 50
         }
       }
     };
@@ -361,16 +373,18 @@ import { DataSet } from 'vis-data/peer';
 
     network.on('stabilizationIterationsDone', function() {
       loading.style.display = 'none';
-      network.setOptions({ physics: { enabled: false } }); // Freeze after fast stabilization for performance
+      network.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+      network.setOptions({ physics: { enabled: false } }); // Freeze after stabilization for performance
     });
 
-    // Fallback timer for physics stabilization < 3s
+    // Fallback: if full stabilization takes too long, fit + freeze anyway
     setTimeout(function() {
       if (loading.style.display !== 'none') {
         loading.style.display = 'none';
+        network.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
         network.setOptions({ physics: { enabled: false } });
       }
-    }, 2800);
+    }, 20000);
 
     // Click Node Event
     network.on('click', function(params) {
