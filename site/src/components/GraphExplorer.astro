@@ -78,7 +78,7 @@
     <div class="ge-title">Grafo de conocimiento GOS</div>
     <div class="ge-search">
       <span class="ge-search-icon">&#8981;</span>
-      <input type="text" id="ge-search-input" placeholder="Buscar recetas, ingredientes, compuestos..." autocomplete="off"/>
+      <input type="text" id="ge-search-input" aria-label="Buscar en el grafo" placeholder="Buscar recetas, ingredientes, compuestos..." autocomplete="off"/>
       <div class="ge-search-results" id="ge-search-results"></div>
     </div>
     <div class="ge-filters" id="ge-filters"></div>
@@ -87,9 +87,9 @@
     <div class="ge-loading" id="ge-loading"><div class="ge-spinner"></div><span>Cargando grafo de conocimiento...</span></div>
   </div>
   <div class="ge-zoom-btns">
-    <button class="ge-zoom-btn" id="ge-zoom-in">+</button>
-    <button class="ge-zoom-btn" id="ge-zoom-out">&#8722;</button>
-    <button class="ge-zoom-btn" id="ge-zoom-reset">&#8635;</button>
+    <button class="ge-zoom-btn" id="ge-zoom-in" aria-label="Acercar">+</button>
+    <button class="ge-zoom-btn" id="ge-zoom-out" aria-label="Alejar">&#8722;</button>
+    <button class="ge-zoom-btn" id="ge-zoom-reset" aria-label="Restablecer vista">&#8635;</button>
   </div>
   <div class="ge-detail" id="ge-detail">
     <div class="ge-detail-header">
@@ -97,7 +97,7 @@
         <div class="ge-detail-type" id="ge-detail-type">NODE</div>
         <div class="ge-detail-title" id="ge-detail-title">-</div>
       </div>
-      <button class="ge-detail-close" id="ge-detail-close">&#10005;</button>
+      <button class="ge-detail-close" id="ge-detail-close" aria-label="Cerrar detalle">&#10005;</button>
     </div>
     <div class="ge-detail-body" id="ge-detail-body"></div>
   </div>

@@ -111,7 +111,8 @@ async function autoDetectAdapter(): Promise<StorageAdapter> {
       './indexeddb'
     )
     if (isIndexedDBAvailable()) {
-      console.log('[domain] Auto-selected IndexedDBStorageAdapter')
+      if (import.meta.env.DEV)
+        console.log('[domain] Auto-selected IndexedDBStorageAdapter')
       return new IndexedDBStorageAdapter()
     }
   } catch (err) {

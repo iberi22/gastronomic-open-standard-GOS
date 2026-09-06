@@ -86,7 +86,7 @@ const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-know
 
     {s.health_registry?.length && (
       <div class="box accent">
-        <h3>Health registry</h3>
+        <h3>Registro de salud</h3>
         {s.health_registry.map(h => (
           <div class="health">
             <div class="hhead">
@@ -117,7 +117,6 @@ const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-know
       <button type="button" class="btn ghost" id="share-btn">Compartir</button>
     </div>
 
-    <p class="seo-note">JSON-LD <code>ChemicalSubstance</code> embebido — validable en <a href="https://validator.schema.org" target="_blank">validator.schema.org</a>. Fotos en <code>public/images/substances/{entry.id}.jpg</code>.</p>
   </article>
 
   <script is:inline define:vars={{ entryId: entry.id, sName: s.name }}>

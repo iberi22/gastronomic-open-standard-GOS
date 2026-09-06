@@ -1,7 +1,7 @@
 {
   "project": "gastronomic-open-standard-GOS",
   "path": "/home/belal/proyectosSWAL/apps/gastronomic-open-standard-GOS",
-  "generated_at": "2026-09-04T13:36:27.598240",
+  "generated_at": "2026-09-06T06:55:00.000000",
   "protocol_version": "3.8.0",
   "overall_pct": 100.0,
   "breakdown": {
@@ -22,5 +22,5 @@
   },
   "gaps": [],
   "grade": "A",
-  "note": "Re-verified 2026-09-04 pre-v1.0.0 final tag"
+  "note": "Re-verified 2026-09-06: 5/5 features passing (feat-recipe-translation rescoped to static i18n catalog, verified in dist); vitest 39/39, astro check 0 err, build 1013 pages, e2e 39+1 fallo preexistente (tokens assert). Manual refresh: no pwsh en NixOS para implementation-score.ps1."
 }
