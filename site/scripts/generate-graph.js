@@ -1151,12 +1151,31 @@ export function generateGraph() {
   // diffs estables entre builds.
   computeLayout(nodes, edges)
 
+  // Poda de aristas huérfanas: emisiones que referencian nodos inexistentes
+  // (nombres vacíos/no-latinos, sustitutos fuera de la DB). Evita ~10% de
+  // aristas muertas en el JSON y reporta los ids para depurar fuentes.
+  const missingIds = new Set()
+  const cleanEdges = edges.filter((e) => {
+    const ok =
+      nodes.has(e.source) && nodes.has(e.target) && e.source !== e.target
+    if (!ok) {
+      if (!nodes.has(e.source)) missingIds.add(e.source)
+      if (!nodes.has(e.target)) missingIds.add(e.target)
+    }
+    return ok
+  })
+  if (missingIds.size > 0) {
+    console.log(
+      `⚠️ ${edges.length - cleanEdges.length} aristas huérfanas podadas (${missingIds.size} ids faltantes): ${[...missingIds].slice(0, 12).join(', ')}${missingIds.size > 12 ? ', …' : ''}`,
+    )
+  }
+
   const graph = {
     nodes: Array.from(nodes.values()),
-    edges: edges,
+    edges: cleanEdges,
     metadata: {
       total_nodes: nodes.size,
-      total_edges: edges.length,
+      total_edges: cleanEdges.length,
       node_types: Object.keys(NODE_COLORS),
     },
   }
@@ -1176,7 +1195,7 @@ export function generateGraph() {
   } catch {}
 
   console.log(
-    `✅ Knowledge graph generated: ${nodes.size} nodes, ${edges.length} edges`,
+    `✅ Knowledge graph generated: ${nodes.size} nodes, ${cleanEdges.length} edges`,
   )
 }
 

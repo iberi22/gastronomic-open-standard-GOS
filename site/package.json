@@ -6,7 +6,7 @@
   "description": "GOS — Gastronomic Open Standard · grafo global recetas↔ingredientes↔vitaminas↔sabores↔afecciones↔dietas↔substancias — Astro 7 + Svelte 5 + @swal/ui antigravity",
   "scripts": {
     "dev": "astro dev",
-    "generate": "node scripts/copy-content.js && node scripts/generate-api.js && node scripts/generate-catalog.js && node scripts/enrich-ingredients.js && node scripts/generate-graph.js && node scripts/export-vectors.mjs && node scripts/generate-llms.mjs",
+    "generate": "node scripts/copy-content.js && node scripts/generate-api.js && node scripts/generate-catalog.js && node scripts/enrich-ingredients.js && node scripts/generate-graph.js && node scripts/export-vectors.mjs && node scripts/generate-llms.mjs && node scripts/generate-sitemap.js",
     "prebuild": "pnpm run generate",
     "build": "pnpm run prebuild && astro check && astro build",
     "preview": "astro preview",

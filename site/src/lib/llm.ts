@@ -76,11 +76,12 @@ export async function llmComplete(req: LLMRequest): Promise<LLMResponse> {
   }
   const system = req.system ? `${req.system}\n` : ''
   const ctx = context ? `Context:\n${context}\n\n` : ''
-  console.log('[llm] complete', {
-    model: req.model ?? 'auto',
-    via: 'local',
-    prompt: req.prompt.slice(0, 80),
-  })
+  if (import.meta.env.DEV)
+    console.log('[llm] complete', {
+      model: req.model ?? 'auto',
+      via: 'local',
+      prompt: req.prompt.slice(0, 80),
+    })
   return {
     text: `${system}${ctx}LLM local stub (sin CF): implementa ProviderRouter en src/lib/llm.ts (ver swal-agent-runner llm-provider-manager.ts)`,
     model: req.model ?? 'stub',
