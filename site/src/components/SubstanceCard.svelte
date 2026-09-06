@@ -99,7 +99,7 @@ const url = $derived(href ?? `/substances/${substance.slug}`)
 
       {#if s.health_registry?.length}
         <div class="health">
-          <span class="health-label">{s.health_registry.length} registro(s) health</span>
+          <span class="health-label">{s.health_registry.length} registro(s) de salud</span>
           <span class="health-conditions">
             {s.health_registry.map(h=>h.condition).slice(0,2).join(" · ")}
           </span>

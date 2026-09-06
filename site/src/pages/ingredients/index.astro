@@ -33,9 +33,9 @@ const facets = [...groupCounts.entries()]
 <Layout title="Ingredientes — GOS">
   <h1 class="title">Ingredientes científicos</h1>
   <p class="sub">
-    Fichas con <strong>nutrición, compuestos activos, vitaminas</strong> y <strong>health registry</strong>
-    (mecanismo, evidencia, estudios PubMed). El grafo genera nodos
-    <code>vitamin</code>, <code>substance</code> y <code>condition</code> automáticamente.
+    Fichas con <strong>nutrición, compuestos activos, vitaminas</strong> y <strong>registro de salud</strong>
+    (mecanismo, evidencia, estudios PubMed). Cada ficha alimenta el grafo
+    con sus vitaminas, substancias y afecciones.
   </p>
   <p class="stats">
     <strong>{items.length}</strong> ingredientes · <strong>{facets.length}</strong> grupos

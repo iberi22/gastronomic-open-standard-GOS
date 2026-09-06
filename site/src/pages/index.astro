@@ -21,13 +21,13 @@ const highlights = [
   {
     k: 'Vitaminas',
     v: '40+',
-    desc: 'Micronutrientes extraídos de ingredients/*.md',
+    desc: 'Micronutrientes y vitaminas por ingrediente',
     color: '#F9C74F',
   },
   {
     k: 'Afecciones',
     v: '35+',
-    desc: 'Health registry: hipertensión, inflamación, detox...',
+    desc: 'Registro de salud: hipertensión, inflamación, digestión...',
     color: '#F94144',
   },
   {
@@ -49,8 +49,8 @@ const highlights = [
   <section class="hero">
     <div class="hero-card">
       <div class="eyebrow">
-        <Badge variant="info" pulse>Antigravity dual theme</Badge>
-        <span class="eyebrow-text">Astro 7 + Svelte 5 + @swal/ui · edge-hive + Xavier</span>
+        <Badge variant="info" pulse>Grafo gastronómico abierto</Badge>
+        <span class="eyebrow-text">Recetas · ingredientes · ciencia</span>
       </div>
       <h1 class="h1">Grafo gastronómico <span class="accent">global</span>: recetas son nodos.</h1>
       <p class="lead">
@@ -71,9 +71,8 @@ const highlights = [
         </a>
       </div>
       <div class="meta">
-        <span class="pill">CVE fix: vite ≥6.4.2 · astro ≥7.2</span>
-        <span class="pill">base {base || '/'} · static + PWA + D3</span>
-        <span class="pill">data-theme <code>antigravity</code> #050507 ↔ hueso #FDFCF8</span>
+        <span class="pill">Grafo interactivo · recetas ↔ ingredientes ↔ ciencia</span>
+        <span class="pill">Funciona sin conexión (PWA) · modo oscuro y claro</span>
       </div>
     </div>
 
@@ -106,15 +105,15 @@ const highlights = [
         <li><strong>ingredient —[HAS_FLAVOR]→ flavor · —[HAS_TEXTURE]→ texture</strong></li>
         <li><strong>recipe —[FITS]→ diet · —[USES_TECHNIQUE]→ technique · —[FROM_REGION]→ region → place</strong></li>
       </ul>
-      <p class="hint">Generado por <code>scripts/generate-graph.js</code> + <code>copy-content.js</code> desde <code>dishes/ ingredients/</code> (front-matter científico). Cada ingrediente con <code>micronutrients / active_compounds / health_registry</code> expande el grafo automáticamente.</p>
+      <p class="hint">El grafo se genera desde las recetas y los ingredientes: cada ficha con vitaminas, compuestos activos y beneficios amplía el grafo automáticamente.</p>
       <div class="actions">
         <Button variant="primary" onclick={() => location.href = `${base}/graph`}>Abrir grafo interactivo</Button>
         <Button variant="secondary" onclick={() => location.href = `${base}/scientific`}>Ver capa científica</Button>
       </div>
     </Card>
     <Card variant="surface" padding="lg">
-      <h2>Antigravity — tema dual</h2>
-      <p class="hint">Edge-hive es la base. Antigravity es la capa dual encima: <code>data-theme="antigravity"</code> dark (#050507/#0F0F10) y <code>antigravity-light</code> hueso (#FDFCF8) — toggle persistente en header. Todos los tokens via <code>@swal/ui/tokens + antigravity.css</code>.</p>
+      <h2>Modo oscuro y claro</h2>
+      <p class="hint">Elige entre tema oscuro y hueso (claro) con el interruptor del encabezado. Tu preferencia se guarda automáticamente.</p>
       <div class="swatches">
         <div class="swatch" style="background:#050507; color:#E5E5E5; border-color: rgba(255,255,255,0.06);">
           <span>dark</span><code>#050507</code>
@@ -126,7 +125,6 @@ const highlights = [
           <span>accent</span><code>#8B5CF6</code>
         </div>
       </div>
-      <p class="hint">ConfigFloatingWindow (Xavier) disponible como island Svelte si activas edge-mesh.</p>
     </Card>
   </section>
 
@@ -134,7 +132,7 @@ const highlights = [
     <a href={`${base}/recipes`} class="ql">
       <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
       <strong>Recetas</strong>
-      <em>Colección dishes/</em>
+      <em>Recetas del mundo</em>
     </a>
     <a href={`${base}/ingredients`} class="ql">
       <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
@@ -144,7 +142,7 @@ const highlights = [
     <a href={`${base}/graph`} class="ql">
       <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
       <strong>Grafo</strong>
-      <em>Explorador D3</em>
+      <em>Grafo interactivo</em>
     </a>
     <a href={`${base}/scientific`} class="ql">
       <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 002 2h12a2 2 0 002-2L15 8V2M9 2h6M7 14h10"/></svg>

@@ -65,19 +65,20 @@
     {
       "id": "feat-recipe-translation",
       "category": "ai",
-      "description": "Batch translation of recipes using Gemini API",
+      "description": "Static i18n catalog: 20 canonical locales, aliases schema, sitemap hreflang, /api/v1/translate prerendered (no SSR)",
       "steps": [
-        "automation/translate_recipes.py uses Gemini CLI",
-        "Maintains original language alongside translation",
-        "Batch processing via automation/queue/select_batch.py"
+        "site/src/lib/locales.ts defines 20 canonical locales + aliases schema",
+        "site/src/pages/api/v1/translate.ts prerenders full catalog at build (output static)",
+        "sitemap.xml exposes hreflang en/es/x-default; consumers filter client-side",
+        "Supersedes Gemini batch approach (#250 static catalog, #251 honest docs, PR #238-#251)"
       ],
-      "passes": false,
-      "verified_by": "python automation/translate_recipes.py",
+      "passes": true,
+      "verified_by": "vitest translateService+locales + dist/api/v1/translate content check",
       "github_issue": 32,
-      "last_tested": "2026-09-04",
-      "notes": "Script exists at automation/translate_recipes.py, never executed. All 486 recipes are in Spanish only. Issue #32 tracks this.",
-      "status": "failing",
-      "last_verified": "2026-09-04"
+      "last_tested": "2026-09-06",
+      "notes": "Verified 2026-09-06: dist/api/v1/translate holds 987 entities, 20 supported_locales; src/lib/translateService.test.ts + locales.test.ts pass (39/39 vitest). Full-recipe Gemini batch abandoned by design (static-first, no SSR).",
+      "status": "passing",
+      "last_verified": "2026-09-06"
     },
     {
       "id": "feat-protocol-feedback",
