@@ -72,7 +72,8 @@ export async function meshPublish(
   instanceId?: string,
 ) {
   if (typeof window === 'undefined') {
-    console.log(`[mesh stub SSR] ${meshRoom(instanceId)}/${topic}`, payload)
+    if (import.meta.env.DEV)
+      console.log(`[mesh stub SSR] ${meshRoom(instanceId)}/${topic}`, payload)
     return
   }
   const room = meshRoom(instanceId)
@@ -81,7 +82,8 @@ export async function meshPublish(
     b.push([{ topic, payload, ts: Date.now(), appId: domainConfig.appId }])
   } catch (e) {
     console.warn('[mesh] publish fallback', e)
-    console.log(`[mesh fallback] ${room}/${topic}`, payload)
+    if (import.meta.env.DEV)
+      console.log(`[mesh fallback] ${room}/${topic}`, payload)
   }
 }
 
@@ -113,5 +115,5 @@ export async function meshPublishFallback(
   instanceId?: string,
 ) {
   const room = meshRoom(instanceId)
-  console.log(`[mesh] publish ${room}/${topic}`, payload)
+  if (import.meta.env.DEV) console.log(`[mesh] publish ${room}/${topic}`, payload)
 }

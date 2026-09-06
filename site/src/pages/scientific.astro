@@ -58,7 +58,7 @@ const substances = (await getCollection('substances')).sort((a, b) =>
   <div class="showcase">
     <h3>Catálogo científico de sustancias ({substances.length})</h3>
     <p>Fórmula, origen, beneficio y registro de salud con evidencia. Antigravity single tone, JSON-LD ChemicalSubstance validado.</p>
-    <input id="sci-search" class="sci-search" type="search" placeholder="Buscar sustancia, fórmula, beneficio… (p. ej. alicina, C6H10OS2, hipertensión)" />
+    <input id="sci-search" class="sci-search" type="search" aria-label="Buscar sustancias" placeholder="Buscar sustancia, fórmula, beneficio… (p. ej. alicina, C6H10OS2, hipertensión)" />
     <div class="showcase-grid" id="sci-grid">
       {substances.map((s) => {
         const ev = s.data.health_registry?.[0];

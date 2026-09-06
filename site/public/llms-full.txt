@@ -8,7 +8,7 @@ The Gastronomic Open Standard (GOS) is an open-source, scientifically validated 
 
 ## Live Graph Breakdown
 - Total Nodes: 3273
-- Total Edges: 24177
+- Total Edges: 21845
 - Node Types Breakdown:
   - recipe: 381
   - ingredient: 1725
