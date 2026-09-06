@@ -15,3 +15,6 @@ id = "9aef690dde244d51982f2947dba2d7aa"
 binding = "DB"
 database_name = "gos-billing"
 database_id = "1c920534-54fc-449e-b944-180bf96ffe37"
+
+[ai]
+binding = "AI"

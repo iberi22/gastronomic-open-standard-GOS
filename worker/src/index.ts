@@ -1,6 +1,12 @@
 export interface Env {
   RATE_LIMIT_KV?: KVNamespace
   DB?: D1Database
+  AI?: {
+    run: (
+      model: string,
+      opts: { prompt: string },
+    ) => Promise<{ response?: string; result?: string }>
+  }
   ORIGIN_URL?: string
   FREE_DAILY_LIMIT?: string
 }
@@ -185,6 +191,100 @@ export default {
         }
       }
       currentCount++
+    }
+
+    // 3b. POST /api/ai/infer — inferencia socio via Workers AI (solo paid keys).
+    // Fuente: site/workers/ai.ts adaptado a bindings del gateway (DB/RATE_LIMIT_KV,
+    // sin tablas nuevas: ledger en KV. Pricing = billing.ts calculatePrice inline).
+    if (path === '/api/ai/infer') {
+      if (request.method !== 'POST') {
+        return jsonResponse({ error: 'method not allowed, use POST' }, 405)
+      }
+      if (!isPaidKey) {
+        return jsonResponse(
+          {
+            error: 'tier sin credito: inferencia requiere x-api-key de socio',
+            tier: 'free',
+          },
+          402,
+        )
+      }
+      let body: { prompt?: unknown; appId?: unknown }
+      try {
+        body = (await request.json()) as typeof body
+      } catch {
+        return jsonResponse({ error: 'invalid json' }, 400)
+      }
+      const prompt = typeof body.prompt === 'string' ? body.prompt : ''
+      const appId =
+        typeof body.appId === 'string' && body.appId ? body.appId : 'gos'
+      if (!prompt) return jsonResponse({ error: 'prompt required' }, 400)
+
+      // TIERS socio/socio-managed comparten monthlyCredit 50000 (billing.ts)
+      const monthlyCredit = 50000
+      const kvKey = `credits:${appId}`
+      let used = 0
+      try {
+        const cached = env.RATE_LIMIT_KV
+          ? await env.RATE_LIMIT_KV.get(kvKey)
+          : null
+        used = cached ? parseInt(cached, 10) : 0
+      } catch {
+        used = 0
+      }
+      const estimated = Math.ceil(prompt.length / 4)
+      if (used + estimated > monthlyCredit) {
+        return jsonResponse(
+          { error: 'credito agotado', used, limit: monthlyCredit },
+          402,
+        )
+      }
+      if (!env.AI) {
+        return jsonResponse({ error: 'AI binding no disponible' }, 501)
+      }
+      let text = ''
+      try {
+        const aiRes = await env.AI.run('@cf/meta/llama-3-8b-instruct', {
+          prompt,
+        })
+        text = aiRes?.response ?? aiRes?.result ?? ''
+      } catch (err) {
+        return jsonResponse(
+          {
+            error: 'Workers AI error',
+            details: String(err instanceof Error ? err.message : err),
+          },
+          502,
+        )
+      }
+      const tokensUsed = Math.ceil(text.length / 4) || estimated
+      const newUsed = used + tokensUsed
+      try {
+        await env.RATE_LIMIT_KV?.put(kvKey, String(newUsed), {
+          expirationTtl: 2592000,
+        })
+      } catch {}
+      // billing.ts: AI*1.10 margen, subtotal + 20% handling
+      const aiWithMargin = tokensUsed * 0.00001 * 1.1
+      const subtotal = 0.02 + aiWithMargin
+      const handling = subtotal * 0.2
+      return jsonResponse({
+        text,
+        tokensUsed,
+        cost: subtotal + handling,
+        breakdown: {
+          infra: 0.02,
+          aiBase: tokensUsed * 0.00001,
+          aiWithMargin,
+          handling,
+          total: subtotal + handling,
+        },
+        credit: {
+          used: newUsed,
+          limit: monthlyCredit,
+          remaining: monthlyCredit - newUsed,
+        },
+      })
     }
 
     // 4. Proxy Static Data
