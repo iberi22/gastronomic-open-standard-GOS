@@ -115,5 +115,6 @@ export async function meshPublishFallback(
   instanceId?: string,
 ) {
   const room = meshRoom(instanceId)
-  if (import.meta.env.DEV) console.log(`[mesh] publish ${room}/${topic}`, payload)
+  if (import.meta.env.DEV)
+    console.log(`[mesh] publish ${room}/${topic}`, payload)
 }

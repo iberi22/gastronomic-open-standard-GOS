@@ -88,4 +88,6 @@ ${deduped
 
 fs.mkdirSync(publicDir, { recursive: true })
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml, 'utf8')
-console.log(`sitemap.xml generated with ${deduped.length} URLs (hreflang enabled)`)
+console.log(
+  `sitemap.xml generated with ${deduped.length} URLs (hreflang enabled)`,
+)
