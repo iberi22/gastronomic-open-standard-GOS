@@ -11,6 +11,12 @@ export default defineConfig({
   output: 'static',
   integrations: [svelte()],
   vite: {
+    // sigma/graphology se importan dinámicamente (SSR-safe): forzar
+    // pre-bundle para que /node_modules/.vite/deps/*.js exista en dev.
+    // Sin esto el browser da 504 Outdated Optimize Dep.
+    optimizeDeps: {
+      include: ['graphology', 'graphology-layout-forceatlas2', 'sigma'],
+    },
     plugins: [
       tailwindcss(),
       VitePWA({
