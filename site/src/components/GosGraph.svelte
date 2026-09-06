@@ -44,6 +44,22 @@ const COLORS: Record<string, string> = {
   diet: '#06D6A0',
 }
 
+const LABELS: Record<string, string> = {
+  recipe: 'Recetas',
+  ingredient: 'Ingredientes',
+  vitamin: 'Vitaminas',
+  nutrient: 'Vitaminas',
+  flavor: 'Sabores',
+  texture: 'Texturas',
+  technique: 'Técnicas',
+  region: 'Regiones',
+  place: 'Lugares',
+  category: 'Categorías',
+  condition: 'Afecciones',
+  substance: 'Substancias',
+  diet: 'Dietas',
+}
+
 async function loadGraphData(): Promise<GraphData> {
   const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
   const candidates = [
@@ -145,7 +161,7 @@ function renderSigma(el: HTMLDivElement, data: GraphData) {
 <div class="gos-graph-wrap">
   <div class="gos-toolbar">
     <div class="gos-toolbar-left">
-      <span class="gos-title">GOS Knowledge Graph</span>
+      <span class="gos-title">Grafo de conocimiento GOS</span>
       <span class="gos-stats">{stats.nodes} nodos • {stats.edges} aristas • {stats.recipes} recetas</span>
     </div>
     <div class="gos-toolbar-right">
@@ -164,7 +180,7 @@ function renderSigma(el: HTMLDivElement, data: GraphData) {
   {/if}
   <div class="gos-legend">
     {#each Object.entries(COLORS) as [k, c]}
-      <span class="legend-item"><span class="dot" style={`background:${c}`}></span>{k}</span>
+      <span class="legend-item"><span class="dot" style={`background:${c}`}></span>{LABELS[k] || k}</span>
     {/each}
   </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 // GraphExplorer - sigma.js/WebGL Knowledge Graph for GOS
-// Data: /graph-data.json (3273 nodes, 24k edges, posiciones FA2 precomputadas)
+// Datos: /graph-data.json (3273 nodos, 24k aristas, posiciones FA2 precomputadas)
 ---
 
 <style>
@@ -75,10 +75,10 @@
 
 <div class="ge-wrapper" id="ge-wrapper">
   <div class="ge-topbar">
-    <div class="ge-title">GOS Knowledge Graph</div>
+    <div class="ge-title">Grafo de conocimiento GOS</div>
     <div class="ge-search">
       <span class="ge-search-icon">&#8981;</span>
-      <input type="text" id="ge-search-input" aria-label="Buscar en el grafo" placeholder="Search recipes, ingredients, compounds..." autocomplete="off"/>
+      <input type="text" id="ge-search-input" aria-label="Buscar en el grafo" placeholder="Buscar recetas, ingredientes, compuestos..." autocomplete="off"/>
       <div class="ge-search-results" id="ge-search-results"></div>
     </div>
     <div class="ge-filters" id="ge-filters"></div>
@@ -103,16 +103,16 @@
   </div>
   <div class="ge-legend" id="ge-legend"></div>
   <div class="ge-stats">
-    <span>NODES <span class="s" id="ge-node-count">0</span></span>
-    <span>EDGES <span class="s" id="ge-edge-count">0</span></span>
-    <span>RECIPES <span class="s" id="ge-recipe-count">0</span></span>
+    <span>NODOS <span class="s" id="ge-node-count">0</span></span>
+    <span>ARISTAS <span class="s" id="ge-edge-count">0</span></span>
+    <span>RECETAS <span class="s" id="ge-recipe-count">0</span></span>
   </div>
 </div>
 
 <script>
 // @ts-nocheck — vanilla-JS explorer (sigma/graphology API boundary tipada en build)
-// Sigma.js/WebGL explorer — posiciones FA2 precomputadas en build (graph-data.json x,y).
-// Cero fisica en cliente: filtrado por atributo 'hidden' + reducers para highlight.
+// Explorador sigma.js/WebGL — posiciones FA2 precomputadas en build (graph-data.json x,y).
+// Cero física en cliente: filtrado por atributo 'hidden' + reducers para highlight.
 import Sigma from 'sigma';
 import Graph from 'graphology';
 (function() {
@@ -124,19 +124,20 @@ import Graph from 'graphology';
   };
 
   var TYPE_LABELS = {
-    recipe: 'Recipes', ingredient: 'Ingredients', substance: 'Substances', condition: 'Conditions',
-    diet: 'Diets', flavor: 'Flavors', texture: 'Textures', aroma: 'Aromas',
-    region: 'Regions', category: 'Categories', place: 'Places', technique: 'Techniques'
+    recipe: 'Recetas', ingredient: 'Ingredientes', substance: 'Substancias', condition: 'Afecciones',
+    diet: 'Dietas', flavor: 'Sabores', texture: 'Texturas', aroma: 'Aromas',
+    region: 'Regiones', category: 'Categorías', place: 'Lugares', technique: 'Técnicas'
   };
 
   var TYPE_ORDER = ['recipe','ingredient','substance','condition','diet','flavor','texture','aroma','region','category','place','technique'];
 
   var ETYPE_LABELS = {
-    HAS_RECIPE: 'Recipes', USES: 'Ingredients', USES_INGREDIENT: 'Ingredients', BELONGS_TO: 'Category',
-    HAS_FLAVOR: 'Flavors', HAS_TEXTURE: 'Textures', HAS_AROMA: 'Aromas', HAS_MACRO: 'Nutrition',
-    FROM_REGION: 'Region', RELATED_DISHES: 'Related Dishes', PLACE: 'Places', USES_TECHNIQUE: 'Techniques',
-    OFTEN_TOGETHER: 'Often Together', HELPS_CONDITION: 'Helps Condition', TREATS: 'Treats',
-    HAS_SUBSTANCE: 'Substances', CONTAINS_VITAMIN: 'Vitamins'
+    HAS_RECIPE: 'Recetas', USES: 'Ingredientes', USES_INGREDIENT: 'Ingredientes', BELONGS_TO: 'Categoría',
+    HAS_FLAVOR: 'Sabores', HAS_TEXTURE: 'Texturas', HAS_AROMA: 'Aromas', HAS_MACRO: 'Nutrición',
+    FROM_REGION: 'Región', RELATED_DISHES: 'Platos relacionados', PLACE: 'Lugares', USES_TECHNIQUE: 'Técnicas',
+    OFTEN_TOGETHER: 'Suelen ir juntos', HELPS_CONDITION: 'Ayuda contra', TREATS: 'Trata',
+    HAS_SUBSTANCE: 'Substancias', CONTAINS_VITAMIN: 'Vitaminas',
+    HAS_NUTRIENT: 'Nutrientes', FOUND_IN: 'Presente en', SUBSTITUTE_FOR: 'Sustitutos'
   };
 
   var canvas = document.getElementById('ge-canvas');
@@ -168,7 +169,7 @@ import Graph from 'graphology';
 
   function loadData(index) {
     if (index >= candidates.length) {
-      loading.innerHTML = '<span style="color:#f38181">Error loading graph data</span>';
+      loading.innerHTML = '<span style="color:#f38181">Error cargando datos del grafo</span>';
       return;
     }
     fetch(candidates[index]).then(function(r) {
@@ -413,7 +414,7 @@ import Graph from 'graphology';
 
   function showDetail(node) {
     detailTitle.textContent = node.label || node.id;
-    detailType.textContent = (node.type || 'node').toUpperCase();
+    detailType.textContent = (TYPE_LABELS[node.type] || node.type || 'nodo').toUpperCase();
     detailType.style.background = COLORS[node.type] || '#333';
     detailType.style.color = '#000';
 
@@ -455,29 +456,29 @@ import Graph from 'graphology';
 
     if (node.region || node.difficulty || node.prep_time || node.cook_time) {
       html += '<div class="ge-meta-grid">';
-      if (node.region) html += '<div class="ge-meta-item"><div class="l">Region</div><div class="v">'+node.region+'</div></div>';
-      if (node.difficulty) html += '<div class="ge-meta-item"><div class="l">Difficulty</div><div class="v">'+node.difficulty+'</div></div>';
-      if (node.prep_time) html += '<div class="ge-meta-item"><div class="l">Prep</div><div class="v">'+node.prep_time+'</div></div>';
-      if (node.cook_time) html += '<div class="ge-meta-item"><div class="l">Cook</div><div class="v">'+node.cook_time+'</div></div>';
+      if (node.region) html += '<div class="ge-meta-item"><div class="l">Región</div><div class="v">'+node.region+'</div></div>';
+      if (node.difficulty) html += '<div class="ge-meta-item"><div class="l">Dificultad</div><div class="v">'+node.difficulty+'</div></div>';
+      if (node.prep_time) html += '<div class="ge-meta-item"><div class="l">Preparación</div><div class="v">'+node.prep_time+'</div></div>';
+      if (node.cook_time) html += '<div class="ge-meta-item"><div class="l">Cocción</div><div class="v">'+node.cook_time+'</div></div>';
       html += '</div>';
     }
 
-    html += '<div class="ge-meta-item" style="margin-bottom:14px"><div class="l">Connections</div><div class="v">'+connTotal+'</div></div>';
+    html += '<div class="ge-meta-item" style="margin-bottom:14px"><div class="l">Conexiones</div><div class="v">'+connTotal+'</div></div>';
 
     // Scientific details: compounds, mechanism, studies, linked recipes
     if (node.active_compounds && node.active_compounds.length) {
-      html += '<div class="ge-section-title">Active Compounds</div><div class="ge-tag-list">';
+      html += '<div class="ge-section-title">Compuestos activos</div><div class="ge-tag-list">';
       node.active_compounds.forEach(function(c) { html += '<span class="ge-tag" style="border-color:#9d4edd;color:#c896ff">'+c+'</span>'; });
       html += '</div>';
     }
 
     if (node.mechanism) {
-      html += '<div class="ge-section-title">Action Mechanism</div>';
+      html += '<div class="ge-section-title">Mecanismo de acción</div>';
       html += '<div class="ge-instructions" style="border-left-color:#9d4edd">'+node.mechanism+'</div>';
     }
 
     if (node.studies && node.studies.length) {
-      html += '<div class="ge-section-title">Scientific Studies / PubMed</div><div class="ge-tag-list">';
+      html += '<div class="ge-section-title">Estudios científicos / PubMed</div><div class="ge-tag-list">';
       node.studies.forEach(function(s) {
         html += '<a href="'+(s.url || '#')+'" target="_blank" rel="noopener" class="ge-tag" style="color:#00ff66;text-decoration:underline">'+(s.title || s.id || 'Study')+'</a>';
       });
@@ -485,13 +486,13 @@ import Graph from 'graphology';
     }
 
     if (node.tags && node.tags.length) {
-      html += '<div class="ge-section-title">Tags</div><div class="ge-tag-list">';
+      html += '<div class="ge-section-title">Etiquetas</div><div class="ge-tag-list">';
       node.tags.forEach(function(t) { html += '<span class="ge-tag">'+t+'</span>'; });
       html += '</div>';
     }
 
     if (node.categories && node.categories.length) {
-      html += '<div class="ge-section-title">Categories</div><div class="ge-tag-list">';
+      html += '<div class="ge-section-title">Categorías</div><div class="ge-tag-list">';
       node.categories.forEach(function(c) { html += '<span class="ge-tag">'+c+'</span>'; });
       html += '</div>';
     }
@@ -509,7 +510,7 @@ import Graph from 'graphology';
         html += '<span>' + (other.label || other.id) + '</span>';
         html += '</div>';
       });
-      if (items.length > 25) html += '<div class="ge-conn-item" style="color:#4a4a6a;cursor:default">+' + (items.length - 25) + ' more</div>';
+      if (items.length > 25) html += '<div class="ge-conn-item" style="color:#4a4a6a;cursor:default">+' + (items.length - 25) + ' más</div>';
       html += '</div></div>';
     });
 
