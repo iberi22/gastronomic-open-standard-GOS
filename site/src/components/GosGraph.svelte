@@ -1,7 +1,6 @@
 <script lang="ts">
-import Graph from 'graphology'
+import type GraphType from 'graphology'
 import type { Sigma as SigmaType } from 'sigma'
-import Sigma from 'sigma'
 import { onMount, tick } from 'svelte'
 
 // Shared graph types for the explorer
@@ -22,7 +21,7 @@ interface GraphData {
   edges: GEdgeDatum[]
 }
 
-let container: HTMLDivElement
+let container = $state<HTMLDivElement | null>(null)
 let renderer: SigmaType | null = null
 let stats = $state({ nodes: 0, edges: 0, recipes: 0, ingredients: 0 })
 let loading = $state(true)
@@ -79,6 +78,12 @@ async function loadGraphData(): Promise<GraphData> {
 onMount(() => {
   void (async () => {
     try {
+      // Imports dinámicos: sigma/WebGL solo existe en cliente.
+      // Import estático revienta el SSR (dev) con WebGL2RenderingContext is not defined.
+      const [{ default: Graph }, { default: Sigma }] = await Promise.all([
+        import('graphology'),
+        import('sigma'),
+      ])
       const data = await loadGraphData()
       stats = {
         nodes: data.nodes?.length || 0,
@@ -89,7 +94,7 @@ onMount(() => {
       }
       loading = false
       await tick()
-      if (container) renderSigma(container, data)
+      if (container) renderSigma(container, data, Graph, Sigma)
       else error = 'graph container not mounted'
     } catch (e) {
       error = e instanceof Error ? e.message : String(e)
@@ -102,7 +107,16 @@ onMount(() => {
   }
 })
 
-function renderSigma(el: HTMLDivElement, data: GraphData) {
+function renderSigma(
+  el: HTMLDivElement,
+  data: GraphData,
+  Graph: typeof GraphType,
+  Sigma: new (
+    graph: GraphType,
+    container: HTMLElement,
+    settings?: Record<string, unknown>,
+  ) => SigmaType,
+) {
   // Mini-grafo home: muestra estratificada por tipo con posiciones FA2
   // precomputadas (build). Cero fisica en cliente: render WebGL estatico.
   const byType = new Map<string, GNodeDatum[]>()
