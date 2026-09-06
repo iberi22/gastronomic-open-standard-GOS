@@ -132,8 +132,13 @@ test.describe('Antigravity mobile - single tone clean fast', () => {
       'utf8',
     )
     expect(layout).toContain('data-theme="antigravity"')
-    expect(layout).toContain("@import '@swal/ui/tokens'")
-    expect(layout).toContain("@import '@swal/ui/antigravity.css'")
+    // Los imports de tokens viven en src/styles/global.css (no en Layout)
+    const globalCss = fs.readFileSync(
+      path.resolve('src/styles/global.css'),
+      'utf8',
+    )
+    expect(globalCss).toContain('@swal/ui/tokens')
+    expect(globalCss).toContain('@swal/ui/antigravity.css')
     // Debe tener --swal-bg single tone, no tailwind gradientes pesados
     const antigravity = fs.readFileSync(
       path.resolve('../../../cores/swal-ui/src/tokens/antigravity.css'),

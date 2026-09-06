@@ -14,14 +14,14 @@ substances.sort((a, b) => {
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
 const title = `Substances — Enciclopedia de Sustancias Bioactivas — GOS (${substances.length})`
-const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y health_registry. Antigravity single tone.`
+const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y beneficios para la salud.`
 ---
 
 <Layout title={title} description={description}>
   <div class="hero">
     <div class="eyebrow">GOS · ENCICLOPEDIA · SUSTANCIAS BIOACTIVAS</div>
     <h1 class="h1">Substances Encyclopedia</h1>
-    <p class="sub">{substances.length} sustancias con fórmula química, sazón / sabor / textura, vitaminas y <em>health registry</em> enlazado al grafo global. Fotos reales 800×600 en <code>public/images/substances/*.jpg</code>.</p>
+    <p class="sub">{substances.length} sustancias con fórmula química, sazón / sabor / textura, vitaminas y beneficios para la salud, enlazadas al grafo global.</p>
     <div class="actions">
       <a href={`${baseUrl}/graph`} class="btn primary">Ver en grafo →</a>
       <a href={`${baseUrl}/scientific`} class="btn">Capa científica</a>
@@ -36,7 +36,7 @@ const description = `Enciclopedia GOS: ${substances.length} sustancias bioactiva
   </div>
 
   <div class="footer-note">
-    <p>¿Falta una sustancia? Propón en <a href="https://github.com/iberi22/discussions" target="_blank" rel="noopener">GitHub Discussions</a>. Cada ficha enlaza a <code>/graph?filter=substance:allicin</code> y expone JSON-LD <code>ChemicalSubstance</code>.</p>
+    <p>¿Falta una sustancia? Propón en <a href="https://github.com/iberi22/discussions" target="_blank" rel="noopener">GitHub Discussions</a>. Cada ficha enlaza al grafo interactivo.</p>
   </div>
 
   <script is:inline>
