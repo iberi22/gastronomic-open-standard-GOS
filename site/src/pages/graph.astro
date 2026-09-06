@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 ---
-<Layout title="Grafo — GOS Knowledge Graph" description="Grafo global D3: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias">
+<Layout title="Grafo — GOS Knowledge Graph" description="Grafo global interactivo: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias">
   <div class="page-head">
     <div>
       <h1 class="title">Grafo gastronómico global</h1>
@@ -37,12 +37,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
         <li>Filtra por tipo (recetas, ingredientes, vitaminas, substancias, afecciones, dietas, regiones).</li>
         <li>Busca por nombre (ej: “ajo”, “alicina”, “hipertensión”, “vegano”).</li>
         <li>Haz clic en un nodo → panel detalle con compuestos, mecanismo y estudios.</li>
-        <li>Zoom con rueda / pinch; minimapa abajo a la derecha.</li>
+        <li>Zoom con rueda / pinch; usa los filtros por tipo para mostrar u ocultar capas del grafo.</li>
       </ol>
     </div>
     <div class="explain-card">
       <h3>Fuentes</h3>
-      <p>Front-matter de <code>ingredients/condiments/*.md</code> (USDA, PubMed, NIH) + <code>dishes/**/*.md</code>. Generación vía <code>scripts/generate-graph.js</code> → <code>public/graph-data.json</code>. Las aristas <code>HELPS_CONDITION / TREATS / HAS_SUBSTANCE / CONTAINS_VITAMIN</code> emergen del <code>health_registry</code>.</p>
+      <p>Datos de recetas e ingredientes con respaldo científico (USDA, PubMed, NIH). El grafo conecta recetas, ingredientes, vitaminas, substancias, afecciones, dietas y regiones: toca un nodo para ver sus conexiones.</p>
     </div>
   </section>
 
