@@ -38,5 +38,6 @@ export default defineConfig({
       testMatch: /theme-antigravity-mobile\.spec\.ts/,
     },
     { name: 'production-coverage', testMatch: /production-coverage\.spec\.ts/ },
+    { name: 'graph-paper', testMatch: /graph-paper-style\.spec\.ts/ },
   ],
 })

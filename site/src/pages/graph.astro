@@ -7,60 +7,62 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 <Layout title="Grafo — GOS Knowledge Graph" description="Grafo global interactivo: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias">
   <div class="page-head">
     <div>
+      <div class="kicker">Grafo de conocimiento</div>
       <h1 class="title">Grafo gastronómico global</h1>
-      <p class="subtitle">Explora el grafo de conocimiento: <strong>recetas</strong> ↔ <strong>ingredientes</strong> ↔ <strong>vitaminas/nutrientes</strong> ↔ <strong>sabores & técnicas</strong> ↔ <strong>substancias</strong> ↔ <strong>afecciones</strong> ↔ <strong>dietas</strong> ↔ <strong>regiones</strong>. Toca un nodo para ver detalle, filtra por tipo, busca por nombre.</p>
+      <p class="subtitle">
+        Todo el estándar en un solo mapa: <strong>recetas</strong> ↔ <strong>ingredientes</strong> ↔
+        <strong>vitaminas/nutrientes</strong> ↔ <strong>sabores &amp; técnicas</strong> ↔
+        <strong>substancias</strong> ↔ <strong>afecciones</strong> ↔ <strong>dietas</strong> ↔
+        <strong>regiones</strong>. Cada burbuja es una entidad; su tamaño y su tono marcan cuántas
+        relaciones tiene. Toca una para abrir su ficha.
+      </p>
     </div>
-    <div class="head-actions">
-      <a href={`${base}/recipes`} class="chip">🍳 Recetas</a>
-      <a href={`${base}/ingredients`} class="chip">🌿 Ingredientes</a>
-      <a href={`${base}/scientific`} class="chip">🧬 Ciencia</a>
-    </div>
-  </div>
-
-  <div class="legend-bar">
-    <span class="legend"><span class="dot" style="background:#FF6B6B"></span>Recetas</span>
-    <span class="legend"><span class="dot" style="background:#4ECDC4"></span>Ingredientes</span>
-    <span class="legend"><span class="dot" style="background:#F9C74F"></span>Vitaminas/Nutrientes</span>
-    <span class="legend"><span class="dot" style="background:#9D4EDD"></span>Substancias</span>
-    <span class="legend"><span class="dot" style="background:#F94144"></span>Afecciones</span>
-    <span class="legend"><span class="dot" style="background:#06D6A0"></span>Dietas</span>
-    <span class="legend"><span class="dot" style="background:#95E1D3"></span>Sabores</span>
-    <span class="legend"><span class="dot" style="background:#FFE66D"></span>Regiones</span>
+    <nav class="head-actions" aria-label="Secciones relacionadas">
+      <a href={`${base}/recipes`}>Recetas</a>
+      <a href={`${base}/ingredients`}>Ingredientes</a>
+      <a href={`${base}/scientific`}>Ciencia</a>
+    </nav>
   </div>
 
   <GraphExplorer />
 
   <section class="explain">
     <div class="explain-card">
-      <h3>Cómo usar</h3>
+      <h3>Cómo se lee</h3>
       <ol>
-        <li>Filtra por tipo (recetas, ingredientes, vitaminas, substancias, afecciones, dietas, regiones).</li>
-        <li>Busca por nombre (ej: “ajo”, “alicina”, “hipertensión”, “vegano”).</li>
-        <li>Haz clic en un nodo → panel detalle con compuestos, mecanismo y estudios.</li>
-        <li>Zoom con rueda / pinch; usa los filtros por tipo para mostrar u ocultar capas del grafo.</li>
+        <li>Las burbujas grandes y oscuras son los <strong>hubs</strong>: el ingrediente, nutriente o categoría con más conexiones.</li>
+        <li>Los puntos pequeños y claros son entidades de cola: recetas concretas, lugares, técnicas.</li>
+        <li>Las líneas finas son relaciones (usa, contiene, trata, pertenece a…): se encienden al tocar un nodo.</li>
+        <li>Arrastra para mover el mapa, rueda o pinza para acercar, y usa los tipos de arriba para apagar o encender capas.</li>
       </ol>
     </div>
     <div class="explain-card">
       <h3>Fuentes</h3>
-      <p>Datos de recetas e ingredientes con respaldo científico (USDA, PubMed, NIH). El grafo conecta recetas, ingredientes, vitaminas, substancias, afecciones, dietas y regiones: toca un nodo para ver sus conexiones.</p>
+      <p>
+        Datos de recetas e ingredientes con respaldo científico (USDA, PubMed, NIH). El grafo conecta
+        recetas, ingredientes, vitaminas, substancias, afecciones, dietas y regiones: toca un nodo para
+        ver su detalle, sus conexiones y su ficha de catálogo.
+      </p>
     </div>
   </section>
 
 <style>
-  .page-head { display:flex; gap:16px; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; margin-bottom:12px; }
-  .title { font-size: 22px; font-weight:850; letter-spacing:-0.02em; color: var(--swal-text); margin:0; }
-  .subtitle { color: var(--swal-text-secondary); line-height:1.6; max-width: 760px; margin-top:6px; font-size:13px; }
-  .subtitle strong{ color: var(--swal-text); }
-  .head-actions{ display:flex; gap:8px; flex-wrap:wrap; }
-  .chip { padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600; text-decoration:none; border:1px solid var(--swal-border); background: var(--swal-surface); color: var(--swal-text-secondary); }
-  .legend-bar{ display:flex; gap:12px; flex-wrap:wrap; padding:10px 0; border-top:1px solid var(--swal-border); border-bottom:1px solid var(--swal-border); margin-bottom:12px; }
-  .legend{ display:flex; align-items:center; gap:6px; font-size:11px; color: var(--swal-text-secondary); }
-  .dot{ width:8px; height:8px; border-radius:50%; display:inline-block; }
-  .explain{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
-  @media(max-width:900px){ .explain{ grid-template-columns:1fr; } }
-  .explain-card{ border:1px solid var(--swal-border); border-radius:16px; padding:16px; background: var(--swal-surface); }
-  .explain-card h3{ margin:0 0 8px; font-size:14px; color: var(--swal-text); }
-  .explain-card p, .explain-card li{ color: var(--swal-text-secondary); font-size:13px; line-height:1.6; }
-  .explain-card code{ font-family: var(--swal-font-mono); font-size:12px; background: var(--swal-bg); padding: 1px 6px; border-radius:6px; border:1px solid var(--swal-border); }
+  .page-head { display:flex; gap:22px; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; margin-bottom:16px; }
+  .kicker { font-family: var(--swal-font-mono); font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color: var(--swal-text-muted); margin-bottom:8px; }
+  .title { font-size: 26px; font-weight:650; letter-spacing:-0.02em; color: var(--swal-text); margin:0; }
+  .subtitle { color: var(--swal-text-secondary); line-height:1.65; max-width: 760px; margin-top:8px; font-size:13.5px; }
+  .subtitle strong{ color: var(--swal-text); font-weight:600; }
+  .head-actions{ display:flex; gap:18px; flex-wrap:wrap; }
+  .head-actions a { font-family: var(--swal-font-mono); font-size:10px; text-transform:uppercase; letter-spacing:0.14em; text-decoration:none; color: var(--swal-text-muted); border-bottom:1px solid transparent; padding-bottom:2px; transition: color .2s ease, border-color .2s ease; }
+  .head-actions a:hover { color: var(--swal-text); border-bottom-color: var(--swal-border-light); }
+  .explain{ display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:28px; }
+  @media(max-width:900px){ .explain{ grid-template-columns:1fr; gap:24px; } }
+  .explain-card{ padding-top:16px; border-top:1px solid var(--swal-border); }
+  .explain-card h3{ margin:0 0 10px; font-family: var(--swal-font-mono); font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.16em; color: var(--swal-text-muted); }
+  .explain-card p, .explain-card li{ color: var(--swal-text-secondary); font-size:13px; line-height:1.7; }
+  .explain-card ol { margin:0; padding-left:18px; }
+  .explain-card li + li { margin-top:6px; }
+  .explain-card strong { color: var(--swal-text); font-weight:600; }
+  .explain-card code{ font-family: var(--swal-font-mono); font-size:12px; background: var(--swal-bg); padding: 1px 6px; border-radius:6px; }
 </style>
 </Layout>
