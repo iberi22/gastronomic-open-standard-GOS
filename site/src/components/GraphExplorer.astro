@@ -1,139 +1,397 @@
 ---
-// GraphExplorer - sigma.js/WebGL Knowledge Graph for GOS
-// Datos: /graph-data.json (3273 nodos, 24k aristas, posiciones FA2 precomputadas)
+// GraphExplorer — sigma.js/WebGL, estilo "paper & ink".
+// Referencia de estilo: aicodingdictionary.com (three.js + d3-force monocromo).
+// Aquí: 2 tonos (papel + tinta), cero bordes, jerarquía por grado (tamaño+opacidad),
+// tipografía mono, etiquetas con halo, layout re-encuadrado al aspecto del viewport.
+// Datos: /graph-data.json (posiciones FA2 precomputadas en build).
+// NOTA: <style is:global> a propósito — los controles (filtros, resultados, ficha)
+// se construyen por JS y el scope de Astro no alcanza nodos creados en runtime.
 ---
 
-<style>
-  .ge-wrapper { width:100%; height:720px; background:#0a0a0f; position:relative; overflow:hidden; border-radius:12px; border:1px solid #1e1e2e; font-family:Inter,system-ui,sans-serif; }
-  .ge-topbar { position:absolute; top:0; left:0; right:0; height:56px; background:rgba(10,10,15,0.92); backdrop-filter:blur(12px); border-bottom:1px solid #1e1e2e; display:flex; align-items:center; padding:0 16px; gap:10px; z-index:20; }
-  .ge-title { font-size:12px; font-weight:700; color:#7d61ff; letter-spacing:0.08em; text-transform:uppercase; white-space:nowrap; }
-  .ge-search { flex:1; max-width:320px; position:relative; }
-  .ge-search input { width:100%; background:#12121a; border:1px solid #2a2a3e; border-radius:8px; color:#e0e0ff; font-size:12px; padding:7px 12px 7px 34px; outline:none; transition:border-color 0.2s; box-sizing:border-box; }
-  .ge-search input:focus { border-color:#7d61ff; }
-  .ge-search input::placeholder { color:#4a4a6a; }
-  .ge-search-icon { position:absolute; left:10px; top:50%; transform:translateY(-50%); color:#4a4a6a; font-size:13px; }
-  .ge-search-results { position:absolute; top:calc(100% + 4px); left:0; right:0; background:#12121a; border:1px solid #2a2a3e; border-radius:8px; max-height:240px; overflow-y:auto; display:none; z-index:30; }
-  .ge-search-results.active { display:block; }
-  .ge-search-item { padding:8px 12px; font-size:12px; color:#c0c0e0; cursor:pointer; border-bottom:1px solid #1a1a2a; display:flex; align-items:center; gap:8px; transition:background 0.15s; }
-  .ge-search-item:last-child { border-bottom:none; }
-  .ge-search-item:hover { background:#1e1e30; color:#fff; }
-  .ge-search-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-  .ge-search-item .t { font-weight:600; color:#fff; flex:1; }
-  .ge-search-item .sub { font-size:10px; color:#666; }
-  .ge-filters { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
-  .ge-filter-btn { background:#12121a; border:1px solid #2a2a3e; border-radius:6px; color:#8080a0; font-size:10px; font-weight:600; padding:4px 9px; cursor:pointer; letter-spacing:0.05em; text-transform:uppercase; transition:all 0.15s; display:flex; align-items:center; gap:5px; }
-  .ge-filter-btn .dot { width:7px; height:7px; border-radius:50%; }
-  .ge-filter-btn.on { color:#fff; }
-  .ge-filter-btn.on.recipe { color:#ff6b35; border-color:#ff6b35; }
-  .ge-filter-btn.on.ingredient { color:#00ff66; border-color:#00ff66; }
-  .ge-filter-btn.on.flavor { color:#ffe66d; border-color:#ffe66d; }
-  .ge-filter-btn.on.texture { color:#f38181; border-color:#f38181; }
-  .ge-filter-btn.on.aroma { color:#a8e6cf; border-color:#a8e6cf; }
-  .ge-filter-btn.on.region { color:#7d61ff; border-color:#7d61ff; }
-  .ge-filter-btn.on.nutrition { color:#f9c74f; border-color:#f9c74f; }
-  .ge-filter-btn.on.category { color:#90be6d; border-color:#90be6d; }
-  .ge-filter-btn.on.substance { color:#9d4edd; border-color:#9d4edd; }
-  .ge-filter-btn.on.condition { color:#f94144; border-color:#f94144; }
-  .ge-filter-btn.on.diet { color:#06d6a0; border-color:#06d6a0; }
-  .ge-canvas { position:absolute; top:56px; left:0; right:0; bottom:0; }
-  .ge-detail { position:absolute; top:56px; right:0; width:340px; height:calc(100% - 56px); background:rgba(12,12,20,0.97); border-left:1px solid #1e1e2e; transform:translateX(100%); transition:transform 0.3s cubic-bezier(0.4,0,0.2,1); z-index:15; overflow-y:auto; }
-  .ge-detail.open { transform:translateX(0); }
-  .ge-detail-header { padding:14px 16px; border-bottom:1px solid #1e1e2e; display:flex; align-items:flex-start; justify-content:space-between; position:sticky; top:0; background:rgba(12,12,20,0.98); z-index:2; }
-  .ge-detail-type { font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:3px 8px; border-radius:4px; margin-bottom:7px; display:inline-block; }
-  .ge-detail-title { font-size:15px; font-weight:700; color:#fff; line-height:1.3; }
-  .ge-detail-close { background:none; border:none; color:#4a4a6a; font-size:18px; cursor:pointer; padding:0; line-height:1; flex-shrink:0; margin-left:8px; }
-  .ge-detail-close:hover { color:#fff; }
-  .ge-detail-body { padding:14px 16px; }
-  .ge-meta-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-bottom:14px; }
-  .ge-meta-item { background:#12121a; border-radius:8px; padding:7px 10px; }
-  .ge-meta-item .l { font-size:9px; font-weight:600; text-transform:uppercase; color:#4a4a6a; letter-spacing:0.08em; margin-bottom:3px; }
-  .ge-meta-item .v { font-size:13px; color:#e0e0ff; font-weight:500; }
-  .ge-section-title { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#4a4a6a; margin:14px 0 7px 0; padding-bottom:5px; border-bottom:1px solid #1a1a2a; }
-  .ge-ficha-btn { display:block; text-align:center; font-size:12px; font-weight:700; color:#fff; background:#7d61ff; border-radius:8px; padding:9px 12px; margin-bottom:14px; text-decoration:none; }
-  .ge-tag-list { display:flex; flex-wrap:wrap; gap:5px; }
-  .ge-tag { background:#1a1a2a; border:1px solid #2a2a3e; border-radius:4px; padding:3px 8px; font-size:10px; color:#9090b0; }
-  .ge-conn-group { margin-bottom:10px; }
-  .ge-conn-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#3a3a5a; margin-bottom:5px; }
-  .ge-conn-items { display:flex; flex-direction:column; gap:3px; }
-  .ge-conn-item { background:#0f0f18; border-radius:6px; padding:6px 9px; font-size:11px; color:#c0c0e0; cursor:pointer; display:flex; align-items:center; gap:7px; transition:background 0.15s; border:1px solid transparent; }
-  .ge-conn-item:hover { background:#1a1a2e; border-color:#2a2a3e; color:#fff; }
-  .ge-conn-item .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-  .ge-legend { position:absolute; bottom:12px; left:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:10px; padding:9px 14px; display:flex; flex-wrap:wrap; gap:8px 14px; max-width:480px; z-index:10; }
-  .ge-zoom-btn:hover { background:#1e1e30; color:#fff; }
-  .ge-legend-item { display:flex; align-items:center; gap:6px; font-size:10px; color:#6060a0; font-weight:500; transition:color 0.15s; cursor:pointer; }
-  .ge-legend-item:hover { color:#fff; }
-  .ge-legend-item .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-  .ge-stats { position:absolute; bottom:12px; right:12px; background:rgba(10,10,15,0.88); backdrop-filter:blur(8px); border:1px solid #1e1e2e; border-radius:8px; padding:7px 12px; font-size:10px; color:#4a4a6a; display:flex; gap:14px; z-index:10; }
-  .ge-stats .s { color:#8080c0; font-weight:600; }
-  .ge-loading { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; color:#4a4a6a; font-size:12px; z-index:5; background:rgba(10,10,15,0.9); }
-  .ge-spinner { width:32px; height:32px; border:2px solid #1e1e2e; border-top-color:#7d61ff; border-radius:50%; animation:ge-spin 0.8s linear infinite; }
-  @keyframes ge-spin { to{transform:rotate(360deg)} }
-  .ge-zoom-btns { position:absolute; right:12px; top:68px; display:flex; flex-direction:column; gap:4px; z-index:10; }
-  .ge-hl-chip { position:absolute; top:68px; left:12px; z-index:12; background:rgba(12,12,20,0.92); border:1px solid #7d61ff; color:#e0e0ff; border-radius:999px; padding:6px 12px; font-size:11px; font-weight:600; cursor:pointer; max-width:60%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .ge-hl-chip[hidden] { display:none; }
-  .ge-zoom-btn { width:30px; height:30px; background:rgba(12,12,20,0.9); border:1px solid #2a2a3e; border-radius:6px; color:#8080a0; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.15s; }
-  .ge-zoom-btn:hover { background:#1e1e30; color:#fff; }
+<style is:global>
+  /* ============ 2 tonos: papel + tinta ============ */
+  .ge-wrapper {
+    --g-paper: #eaeae8;
+    --g-ink: #171717;
+    --g-rgb: 23, 23, 23;
+    --g-edge-a: 0.26;
+    --g-hair: color-mix(in srgb, var(--g-ink) 16%, transparent);
+    --g-hair-soft: color-mix(in srgb, var(--g-ink) 9%, transparent);
+    --g-faint: color-mix(in srgb, var(--g-ink) 60%, transparent);
+    --g-muted: color-mix(in srgb, var(--g-ink) 76%, transparent);
+    --g-sheet: color-mix(in srgb, var(--g-ink) 4%, var(--g-paper));
+    --g-hover: color-mix(in srgb, var(--g-ink) 6%, transparent);
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: clamp(480px, 80vh, 860px);
+    background: var(--g-paper);
+    overflow: hidden;
+    font-family: var(--swal-font-mono, monospace);
+    color: var(--g-ink);
+    isolation: isolate;
+  }
+  [data-theme="antigravity"] .ge-wrapper {
+    --g-paper: #0b0b0c;
+    --g-ink: #dededa;
+    --g-rgb: 222, 222, 218;
+    --g-edge-a: 0.2;
+  }
+  .ge-grain {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.05'/></svg>");
+  }
+  [data-theme="antigravity"] .ge-grain { mix-blend-mode: screen; opacity: 0.35; }
+
+  /* ============ chrome mínimo (sin bordes) ============ */
+  .ge-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    padding: 20px 26px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background: linear-gradient(to bottom, var(--g-paper) 0%, color-mix(in srgb, var(--g-paper) 82%, transparent) 55%, transparent 100%);
+    pointer-events: none;
+  }
+  /* solo los controles reciben eventos: el resto de la franja deja pasar el grafo */
+  .ge-search { pointer-events: auto; }
+  .ge-filter-btn { pointer-events: auto; }
+  .ge-row-top { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+  .ge-search { position: relative; flex: 0 1 290px; min-width: 170px; display: flex; align-items: center; gap: 9px; }
+  .ge-search-icon { width: 15px; height: 15px; flex: none; color: var(--g-faint); }
+  .ge-search input {
+    width: 100%;
+    background: none;
+    border: 0;
+    outline: none;
+    padding: 3px 0;
+    font: inherit;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--g-ink);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease;
+  }
+  .ge-search input::placeholder { color: var(--g-faint); }
+  .ge-search input:focus { border-bottom-color: var(--g-hair); }
+  .ge-search-results {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -12px;
+    right: -12px;
+    background: var(--g-paper);
+    border: 1px solid var(--g-hair-soft);
+    border-radius: 10px;
+    max-height: 288px;
+    overflow-y: auto;
+    display: none;
+    z-index: 30;
+    box-shadow: 0 20px 44px color-mix(in srgb, var(--g-ink) 12%, transparent);
+  }
+  .ge-search-results.active { display: block; }
+  .ge-search-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 13px;
+    font-size: 11.5px;
+    letter-spacing: 0.03em;
+    color: var(--g-muted);
+    cursor: pointer;
+    border-bottom: 1px solid var(--g-hair-soft);
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .ge-search-item:last-child { border-bottom: 0; }
+  .ge-search-item:hover { background: var(--g-hover); color: var(--g-ink); }
+  .ge-search-item .t { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ge-search-item .sub { font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--g-faint); }
+  .ge-search-empty { padding: 11px 13px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--g-faint); }
+
+  .ge-filters { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
+  .ge-filter-btn {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--g-faint);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .ge-filter-btn .n { color: color-mix(in srgb, var(--g-ink) 36%, transparent); margin-left: 7px; letter-spacing: 0.06em; }
+  .ge-filter-btn:hover { color: var(--g-muted); }
+  .ge-filter-btn.on { color: var(--g-ink); }
+  .ge-filter-btn.on .n { color: var(--g-faint); }
+
+  /* ============ lienzo ============ */
+  .ge-canvas { position: absolute; inset: 0; z-index: 1; }
+  /* velo inferior: mantiene legibles stats y controles sobre el grafo */
+  .ge-bottom-veil {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 112px;
+    z-index: 11;
+    pointer-events: none;
+    background: linear-gradient(to top, var(--g-paper) 0%, color-mix(in srgb, var(--g-paper) 88%, transparent) 45%, transparent 100%);
+  }
+  .ge-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--g-faint);
+  }
+  .ge-loader { width: 140px; height: 1px; background: var(--g-hair-soft); overflow: hidden; }
+  .ge-loader i { display: block; width: 40%; height: 100%; background: var(--g-ink); animation: ge-sweep 1.4s ease-in-out infinite; }
+  @keyframes ge-sweep { 0% { transform: translateX(-110%); } 100% { transform: translateX(320%); } }
+
+  /* ============ controles flotantes ============ */
+  .ge-zooms { position: absolute; right: 24px; bottom: 22px; z-index: 12; display: flex; gap: 16px; align-items: center; }
+  .ge-zoom-btn {
+    background: none;
+    border: 0;
+    padding: 2px;
+    width: 26px;
+    height: 26px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--g-muted);
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  .ge-zoom-btn:hover { color: var(--g-ink); }
+  .ge-zoom-btn:active { transform: scale(0.9); }
+
+  .ge-bottom {
+    position: absolute;
+    left: 26px;
+    bottom: 20px;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--g-faint);
+    pointer-events: none;
+  }
+  .ge-stats { display: flex; gap: 16px; }
+  .ge-stats .s { color: var(--g-muted); }
+  .ge-hint { color: color-mix(in srgb, var(--g-ink) 52%, transparent); }
+
+  .ge-hl-chip {
+    position: absolute;
+    bottom: 66px;
+    left: 26px;
+    z-index: 14;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--g-muted);
+    cursor: pointer;
+    max-width: 62%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    transition: color 0.2s ease;
+  }
+  .ge-hl-chip:hover { color: var(--g-ink); }
+  .ge-hl-chip[hidden] { display: none; }
+
+  /* ============ ficha (hoja sin bordes) ============ */
+  .ge-detail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    height: 100%;
+    background: var(--g-sheet);
+    backdrop-filter: blur(16px);
+    transform: translateX(101%);
+    transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 15;
+    overflow-y: auto;
+    box-shadow: -1px 0 0 var(--g-hair-soft);
+  }
+  .ge-detail.open { transform: translateX(0); }
+  .ge-detail-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; padding: 22px 24px 12px; }
+  .ge-detail-type { font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--g-faint); }
+  .ge-detail-close {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1;
+    color: var(--g-faint);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .ge-detail-close:hover { color: var(--g-ink); }
+  .ge-detail-title { padding: 0 24px 16px; font-size: 19px; font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; color: var(--g-ink); }
+  .ge-detail-body { padding: 0 24px 28px; }
+
+  .ge-rows { display: flex; flex-direction: column; border-top: 1px solid var(--g-hair-soft); }
+  .ge-row { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--g-hair-soft); }
+  .ge-row .k { font-size: 9px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--g-faint); }
+  .ge-row .v { font-size: 12px; letter-spacing: 0.02em; color: var(--g-ink); text-align: right; }
+
+  .ge-section-title { margin: 22px 0 9px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--g-faint); }
+  .ge-prose { font-family: var(--swal-font, sans-serif); font-size: 12.5px; line-height: 1.65; color: var(--g-muted); }
+  .ge-tag-list { display: flex; flex-wrap: wrap; gap: 5px; }
+  .ge-tag {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    color: var(--g-muted);
+    background: color-mix(in srgb, var(--g-ink) 5%, transparent);
+    border-radius: 3px;
+    padding: 3px 7px;
+  }
+  a.ge-tag { text-decoration: none; transition: color 0.2s ease, background 0.2s ease; }
+  a.ge-tag:hover { color: var(--g-ink); background: color-mix(in srgb, var(--g-ink) 10%, transparent); }
+
+  .ge-ficha-btn {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--g-ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--g-hair);
+    padding-bottom: 2px;
+    transition: border-color 0.2s ease;
+  }
+  .ge-ficha-btn:hover { border-color: var(--g-ink); }
+
+  .ge-conn-group { margin-top: 18px; }
+  .ge-conn-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--g-faint); margin-bottom: 7px; }
+  .ge-conn-items { display: flex; flex-direction: column; }
+  .ge-conn-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 7px 8px;
+    margin: 0 -8px;
+    font-size: 11.5px;
+    color: var(--g-muted);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .ge-conn-item:hover { background: var(--g-hover); color: var(--g-ink); }
+  .ge-conn-item .cn { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ge-conn-item .ct { font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.12em; color: color-mix(in srgb, var(--g-ink) 55%, transparent); }
+  .ge-conn-item.more { color: var(--g-faint); cursor: default; justify-content: flex-start; }
+  .ge-conn-item.more:hover { background: none; color: var(--g-faint); }
+
+  @media (max-width: 680px) {
+    .ge-top { padding: 15px 16px 34px; gap: 11px; }
+    .ge-search { flex: 1 1 100%; }
+    .ge-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
+    .ge-filters::-webkit-scrollbar { display: none; }
+    .ge-filter-btn { white-space: nowrap; }
+    .ge-hl-chip { bottom: 58px; left: 16px; }
+    .ge-detail { width: 100%; }
+    .ge-detail-header { padding: 18px 16px 10px; }
+    .ge-detail-title { padding: 0 16px 14px; font-size: 17px; }
+    .ge-detail-body { padding: 0 16px 24px; }
+    .ge-bottom { left: 16px; bottom: 16px; }
+    .ge-zooms { right: 14px; bottom: 16px; }
+    .ge-hint { display: none; }
+  }
 </style>
 
 <div class="ge-wrapper" id="ge-wrapper">
-  <div class="ge-topbar">
-    <div class="ge-title">Grafo de conocimiento GOS</div>
-    <div class="ge-search">
-      <span class="ge-search-icon">&#8981;</span>
-      <input type="text" id="ge-search-input" aria-label="Buscar en el grafo" placeholder="Buscar recetas, ingredientes, compuestos..." autocomplete="off"/>
-      <div class="ge-search-results" id="ge-search-results"></div>
+  <div class="ge-grain" aria-hidden="true"></div>
+
+  <div class="ge-top">
+    <div class="ge-row-top">
+      <div class="ge-search">
+        <svg class="ge-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="text" id="ge-search-input" aria-label="Buscar en el grafo" placeholder="Buscar en el grafo…" autocomplete="off" />
+        <div class="ge-search-results" id="ge-search-results"></div>
+      </div>
+      <div class="ge-filters" id="ge-filters"></div>
     </div>
-    <div class="ge-filters" id="ge-filters"></div>
   </div>
+
   <div class="ge-canvas" id="ge-canvas">
-    <div class="ge-loading" id="ge-loading"><div class="ge-spinner"></div><span>Cargando grafo de conocimiento...</span></div>
+    <div class="ge-loading" id="ge-loading"><div class="ge-loader"><i></i></div><span>Cargando grafo…</span></div>
   </div>
-  <div class="ge-zoom-btns">
-    <button class="ge-zoom-btn" id="ge-zoom-in" aria-label="Acercar">+</button>
-    <button class="ge-zoom-btn" id="ge-zoom-out" aria-label="Alejar">&#8722;</button>
-    <button class="ge-zoom-btn" id="ge-zoom-reset" aria-label="Restablecer vista">&#8635;</button>
-  </div>
+
   <button class="ge-hl-chip" id="ge-hl-chip" hidden></button>
+  <div class="ge-bottom-veil" aria-hidden="true"></div>
+
   <div class="ge-detail" id="ge-detail">
     <div class="ge-detail-header">
-      <div>
-        <div class="ge-detail-type" id="ge-detail-type">NODE</div>
-        <div class="ge-detail-title" id="ge-detail-title">-</div>
-      </div>
-      <button class="ge-detail-close" id="ge-detail-close" aria-label="Cerrar detalle">&#10005;</button>
+      <div class="ge-detail-type" id="ge-detail-type">NODO</div>
+      <button class="ge-detail-close" id="ge-detail-close" aria-label="Cerrar detalle">✕</button>
     </div>
+    <div class="ge-detail-title" id="ge-detail-title">—</div>
     <div class="ge-detail-body" id="ge-detail-body"></div>
   </div>
-  <div class="ge-legend" id="ge-legend"></div>
-  <div class="ge-stats">
-    <span>NODOS <span class="s" id="ge-node-count">0</span></span>
-    <span>ARISTAS <span class="s" id="ge-edge-count">0</span></span>
-    <span>RECETAS <span class="s" id="ge-recipe-count">0</span></span>
+
+  <div class="ge-bottom">
+    <div class="ge-stats">
+      <span>Visibles <span class="s" id="ge-visible-count">0</span></span>
+      <span>Nodos <span class="s" id="ge-node-count">0</span></span>
+      <span>Aristas <span class="s" id="ge-edge-count">0</span></span>
+      <span>Recetas <span class="s" id="ge-recipe-count">0</span></span>
+    </div>
+    <div class="ge-hint">Arrastra para mover · rueda para acercar · clic en un nodo · los tipos de arriba encienden o apagan capas</div>
+  </div>
+  <div class="ge-zooms">
+    <button class="ge-zoom-btn" id="ge-zoom-in" aria-label="Acercar">+</button>
+    <button class="ge-zoom-btn" id="ge-zoom-out" aria-label="Alejar">−</button>
+    <button class="ge-zoom-btn" id="ge-zoom-reset" aria-label="Restablecer vista">↺</button>
   </div>
 </div>
 
 <script>
-// @ts-nocheck — vanilla-JS explorer (sigma/graphology API boundary tipada en build)
-// Explorador sigma.js/WebGL — posiciones FA2 precomputadas en build (graph-data.json x,y).
-// Cero física en cliente: filtrado por atributo 'hidden' + reducers para highlight.
+// @ts-nocheck — explorer vanilla (sigma/graphology). Paper & ink: 2 tonos,
+// jerarquía por grado (tamaño + opacidad), aristas hairline, etiquetas mono con
+// halo solo en nodos importantes, cero física en cliente (FA2 precomputado).
+// El layout se re-encuadra al aspecto real del contenedor (sin bandas vacías).
 import Sigma from 'sigma';
 import Graph from 'graphology';
 (function() {
-  var COLORS = {
-    recipe: '#FF6B6B', ingredient: '#4ECDC4', vitamin: '#F9C74F', nutrient: '#F9C74F',
-    substance: '#9D4EDD', condition: '#F94144', diet: '#06D6A0', flavor: '#FFE66D',
-    texture: '#F38181', aroma: '#A8E6CF', region: '#7D61FF', category: '#90BE6D',
-    place: '#B2E2F2', technique: '#AA96DA'
-  };
-
   var TYPE_LABELS = {
     recipe: 'Recetas', ingredient: 'Ingredientes', substance: 'Substancias', condition: 'Afecciones',
     diet: 'Dietas', flavor: 'Sabores', texture: 'Texturas', aroma: 'Aromas',
-    region: 'Regiones', category: 'Categorías', place: 'Lugares', technique: 'Técnicas'
+    region: 'Regiones', category: 'Categorías', place: 'Lugares', technique: 'Técnicas',
+    vitamin: 'Vitaminas', nutrient: 'Nutrientes'
   };
-
-  var TYPE_ORDER = ['recipe','ingredient','substance','condition','diet','flavor','texture','aroma','region','category','place','technique'];
-
+  var TYPE_ORDER = ['recipe','ingredient','vitamin','nutrient','substance','condition','diet','flavor','texture','aroma','region','category','place','technique'];
   var ETYPE_LABELS = {
     HAS_RECIPE: 'Recetas', USES: 'Ingredientes', USES_INGREDIENT: 'Ingredientes', BELONGS_TO: 'Categoría',
     HAS_FLAVOR: 'Sabores', HAS_TEXTURE: 'Texturas', HAS_AROMA: 'Aromas', HAS_MACRO: 'Nutrición',
@@ -142,7 +400,14 @@ import Graph from 'graphology';
     HAS_SUBSTANCE: 'Substancias', CONTAINS_VITAMIN: 'Vitaminas',
     HAS_NUTRIENT: 'Nutrientes', FOUND_IN: 'Presente en', SUBSTITUTE_FOR: 'Sustitutos'
   };
+  // Tipos densos arrancan apagados: 4.2k nodos juntos = bola de pelo ilegible.
+  // Pero al hacer clic en un nodo se encienden SUS vecinos aunque su capa esté
+  // apagada (progressive disclosure contextual).
+  var OFF_BY_DEFAULT = ['ingredient', 'flavor', 'texture'];
+  var FIT_PADDING = 0.955;   // margen del encuadre
+  var MAX_STRETCH = 3.4;     // límite de estiramiento del layout para llenar el viewport
 
+  var wrapper = document.getElementById('ge-wrapper');
   var canvas = document.getElementById('ge-canvas');
   var loading = document.getElementById('ge-loading');
   var detail = document.getElementById('ge-detail');
@@ -152,76 +417,90 @@ import Graph from 'graphology';
   var searchInput = document.getElementById('ge-search-input');
   var searchResults = document.getElementById('ge-search-results');
   var filtersEl = document.getElementById('ge-filters');
-  var legendEl = document.getElementById('ge-legend');
   var nodeCountEl = document.getElementById('ge-node-count');
   var edgeCountEl = document.getElementById('ge-edge-count');
   var recipeCountEl = document.getElementById('ge-recipe-count');
+  var visibleCountEl = document.getElementById('ge-visible-count');
   var hlChip = document.getElementById('ge-hl-chip');
 
   var graphData = null;
   var graph = null;
   var renderer = null;
-  var fitState = { x: 0, y: 0, angle: 0, ratio: 1 };
-  var activeTypes = new Set(Object.keys(COLORS));
-  // Vista inicial legible: los tipos hoja masivos (ingredientes/sabores/texturas
-  // suman ~2500 nodos y colapsan la vista). Empiezan apagados; el usuario los
-  // enciende con los botones de filtro.
-  ['ingredient', 'flavor', 'texture'].forEach(function(t) { activeTypes.delete(t); });
+  var degrees = {};
+  var maxDeg = 1;
+  var rawPos = {};           // id -> { x0, y0 } tal como salen de build (FA2)
+  var activeTypes = new Set(Object.keys(TYPE_LABELS));
+  OFF_BY_DEFAULT.forEach(function(t) { activeTypes.delete(t); });
   var highlightedNodeId = null;
+  var fitState = { x: 0.5, y: 0.5, angle: 0, ratio: 1 };
 
   var baseUrl = (document.querySelector('meta[name="base-url"]')?.getAttribute('content') || '/').replace(/\/$/, '');
   var candidates = [baseUrl + '/graph-data.json', '/graph-data.json', './graph-data.json', 'graph-data.json'];
 
+  function cssVar(name) { return getComputedStyle(wrapper).getPropertyValue(name).trim(); }
+  function inkRgb() { return cssVar('--g-rgb') || '23,23,23'; }
+  function rgba(a) { return 'rgba(' + inkRgb() + ',' + a + ')'; }
+  function edgeAlpha() { return parseFloat(cssVar('--g-edge-a')) || 0.24; }
+
+  // sangrado exacto al ancho del cliente (sin el hueco de la barra de scroll).
+  // Se mide la propia caja: robusto a cualquier contenedor y a shifts del layout.
+  function applyBleed() {
+    var vw = document.documentElement.clientWidth;
+    if (!vw || !wrapper.isConnected) return;
+    var rect = wrapper.getBoundingClientRect();
+    var ml = parseFloat(getComputedStyle(wrapper).marginLeft) || 0;
+    wrapper.style.width = vw + 'px';
+    wrapper.style.marginLeft = (ml - rect.left) + 'px';
+    wrapper.style.marginRight = '0px';
+  }
+  applyBleed();
+
   function loadData(index) {
-    if (index >= candidates.length) {
-      loading.innerHTML = '<span style="color:#f38181">Error cargando datos del grafo</span>';
-      return;
-    }
+    if (index >= candidates.length) { loading.innerHTML = '<span>Sin datos del grafo</span>'; return; }
     fetch(candidates[index]).then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    }).then(function(data) {
-      onDataLoaded(data);
-    }).catch(function() {
-      loadData(index + 1);
-    });
+    }).then(onDataLoaded).catch(function() { loadData(index + 1); });
   }
-
   loadData(0);
 
-  function nodeSize(n) {
-    return n.size ? Math.max(2, Math.min(8, n.size / 4)) : 4;
-  }
+  // jerarquía: grado → tamaño y opacidad (hubs oscuros y grandes, como la referencia)
+  function importance(id) { return Math.sqrt(degrees[id] || 0) / Math.sqrt(maxDeg || 1); }
+  function nodeSize(id) { return 2 + 7.5 * importance(id); }
+  function nodeAlpha(id) { return 0.22 + 0.64 * importance(id); }
+  function labelAlpha(id) { return 0.52 + 0.38 * importance(id); }
 
   function onDataLoaded(data) {
     graphData = data;
-    var recipeNodes = data.nodes.filter(function(n) { return n.type === 'recipe'; });
-    nodeCountEl.textContent = data.nodes.length;
-    edgeCountEl.textContent = data.edges.length;
-    recipeCountEl.textContent = recipeNodes.length;
-
+    degrees = {};
+    maxDeg = 1;
+    data.edges.forEach(function(e) {
+      degrees[e.source] = (degrees[e.source] || 0) + 1;
+      degrees[e.target] = (degrees[e.target] || 0) + 1;
+    });
+    data.nodes.forEach(function(n) {
+      rawPos[n.id] = { x0: typeof n.x === 'number' ? n.x : 0.5, y0: typeof n.y === 'number' ? n.y : 0.5 };
+      if ((degrees[n.id] || 0) > maxDeg) maxDeg = degrees[n.id];
+    });
+    nodeCountEl.textContent = data.nodes.length.toLocaleString('es');
+    edgeCountEl.textContent = data.edges.length.toLocaleString('es');
+    recipeCountEl.textContent = data.nodes.filter(function(n) { return n.type === 'recipe'; }).length.toLocaleString('es');
+    visibleCountEl.textContent = data.nodes.filter(function(n) { return activeTypes.has(n.type); }).length.toLocaleString('es');
     buildFilters(data.nodes);
-    buildLegend(data.nodes);
+    applyBleed();
     initSigma();
-
-    // Check for query parameters ?node= or ?filter=
     var params = new URLSearchParams(window.location.search);
     var targetNode = params.get('node');
     var filterQuery = params.get('filter');
-
-    if (targetNode) {
-      setTimeout(function() { focusAndShowNode(targetNode); }, 800);
-    } else if (filterQuery) {
+    if (targetNode) setTimeout(function() { focusAndShowNode(targetNode); }, 900);
+    else if (filterQuery) {
       var parts = filterQuery.split(':');
       if (parts.length === 2) {
-        var fType = parts[0];
         var fVal = parts[1].toLowerCase();
-        var match = graphData.nodes.find(function(n) {
-          return n.type === fType && (n.id.toLowerCase().includes(fVal) || (n.label && n.label.toLowerCase().includes(fVal)));
+        var match = data.nodes.find(function(n) {
+          return n.type === parts[0] && (n.id.toLowerCase().includes(fVal) || (n.label && n.label.toLowerCase().includes(fVal)));
         });
-        if (match) {
-          setTimeout(function() { focusAndShowNode(match.id); }, 800);
-        }
+        if (match) setTimeout(function() { focusAndShowNode(match.id); }, 900);
       }
     }
   }
@@ -233,79 +512,200 @@ import Graph from 'graphology';
     TYPE_ORDER.forEach(function(t) {
       if (!counts[t]) return;
       var btn = document.createElement('button');
-      btn.className = 'ge-filter-btn ' + t + (activeTypes.has(t) ? ' on' : '');
+      btn.className = 'ge-filter-btn' + (activeTypes.has(t) ? ' on' : '');
       btn.dataset.type = t;
-      var dot = document.createElement('span');
-      dot.className = 'dot';
-      dot.style.background = COLORS[t] || '#888';
-      btn.appendChild(dot);
-      btn.appendChild(document.createTextNode((TYPE_LABELS[t] || t) + ' (' + counts[t] + ')'));
+      btn.appendChild(document.createTextNode(TYPE_LABELS[t] || t));
+      var n = document.createElement('span');
+      n.className = 'n';
+      n.textContent = counts[t].toLocaleString('es');
+      btn.appendChild(n);
       btn.onclick = function() { toggleType(t, btn); };
       filtersEl.appendChild(btn);
     });
   }
 
   function toggleType(t, btn) {
-    if (activeTypes.has(t)) {
-      activeTypes.delete(t);
-      btn.classList.remove('on');
-    } else {
-      activeTypes.add(t);
-      btn.classList.add('on');
-    }
+    if (activeTypes.has(t)) { activeTypes.delete(t); btn.classList.remove('on'); }
+    else { activeTypes.add(t); btn.classList.add('on'); }
     applyFilters();
   }
 
-  function buildLegend(nodes) {
-    var counts = {};
-    nodes.forEach(function(n) { counts[n.type] = (counts[n.type] || 0) + 1; });
-    legendEl.innerHTML = '';
-    TYPE_ORDER.forEach(function(t) {
-      if (!counts[t]) return;
-      var item = document.createElement('div');
-      item.className = 'ge-legend-item';
-      var dot = document.createElement('span');
-      dot.className = 'dot';
-      dot.style.background = COLORS[t] || '#888';
-      item.appendChild(dot);
-      item.appendChild(document.createTextNode((TYPE_LABELS[t] || t) + ' (' + counts[t] + ')'));
-      legendEl.appendChild(item);
+  // Recalcula 'hidden' de nodos y aristas según los tipos activos (única fuente
+  // de verdad: la usan el filtrado y el fin del resaltado).
+  function applyFilterState() {
+    var visible = {};
+    graph.forEachNode(function(id, attrs) {
+      var show = activeTypes.has(attrs.ntype);
+      graph.setNodeAttribute(id, 'hidden', !show);
+      if (show) visible[id] = true;
     });
+    graph.forEachEdge(function(id, attrs, source, target) {
+      graph.setEdgeAttribute(id, 'hidden', !(visible[source] && visible[target]));
+    });
+    return visible;
   }
 
   function applyFilters() {
     if (!graph || !renderer || !graphData) return;
-    var visible = new Set();
-    graph.forEachNode(function(id, attrs) {
-      var show = activeTypes.has(attrs.ntype);
-      graph.setNodeAttribute(id, 'hidden', !show);
-      if (show) visible.add(id);
-    });
-    graph.forEachEdge(function(id, attrs, source, target) {
-      graph.setEdgeAttribute(id, 'hidden', !(visible.has(source) && visible.has(target)));
-    });
+    var visible = applyFilterState();
+    if (visibleCountEl) visibleCountEl.textContent = Object.keys(visible).length.toLocaleString('es');
     resetHighlight();
+    fitLayout();          // re-encuadra sobre la capa visible
     renderer.refresh();
   }
 
-  function fitCameraToData() {
-    // Los datos van normalizados a [0,1] en build: la cámara default de
-    // sigma (0.5, 0.5, ratio 1) los encuadra por convención. Este helper
-    // existe para re-encuadrar tras resize (zoom-reset lo reutiliza).
-    var state = { x: 0.5, y: 0.5, angle: 0, ratio: 1 };
-    renderer.getCamera().setState(state);
+  /* ---- encuadre: estira el layout al aspecto del contenedor y lo lleva a
+     unidades tipo-píxel (así sigma con autoRescale:false lo encaja exacto).
+     Los nodos ocultos se aparcan en el centro: no se ven y no deforman la
+     extensión que sigma usa para normalizar. ---- */
+  // transformación vigente del encuadre (la usan fitLayout y el revelado)
+  var fitParams = null;
+
+  // coords finales de un nodo según el encuadre actual (con el anclaje de outliers)
+  function fitCoords(p) {
+    if (!fitParams || !p) return null;
+    var f = fitParams;
+    var nx = (p.x0 - f.minX) * f.sx * f.k + f.ox;
+    var ny = (p.y0 - f.minY) * f.sy * f.k + f.oy;
+    return {
+      x: Math.min(Math.max(nx, f.ox + 10), f.ox + f.boxW - 10),
+      y: Math.min(Math.max(ny, f.oy + 10), f.oy + f.boxH - 10),
+    };
+  }
+
+  function fitLayout() {
+    if (!graph) return;
+    var W = canvas.clientWidth || wrapper.clientWidth;
+    var H = canvas.clientHeight || wrapper.clientHeight;
+    if (!W || !H) return;
+    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    var any = false;
+    var xs = [], ys = [];
+    graph.forEachNode(function(id, attrs) {
+      if (attrs.hidden) return;
+      var p = rawPos[id];
+      if (!p) return;
+      any = true;
+      xs.push(p.x0); ys.push(p.y0);
+    });
+    if (!any) return;
+    // extensión robusta: recorta el 1% extremo por lado para que un puñado de
+    // outliers no encoja el encuadre (los outliers quedan al borde, como en la referencia)
+    xs.sort(function(a, b) { return a - b; });
+    ys.sort(function(a, b) { return a - b; });
+    var trim = Math.floor(xs.length * 0.01);
+    minX = xs[trim]; maxX = xs[xs.length - 1 - trim];
+    minY = ys[trim]; maxY = ys[ys.length - 1 - trim];
+    var gw0 = Math.max(maxX - minX, 1e-6);
+    var gh0 = Math.max(maxY - minY, 1e-6);
+    var targetAspect = W / H;
+    var ga = gw0 / gh0;
+    var sx = 1, sy = 1;
+    if (ga < targetAspect) sx = Math.min(targetAspect / ga, MAX_STRETCH);
+    else sy = Math.min(ga / targetAspect, MAX_STRETCH);
+    var gw = gw0 * sx, gh = gh0 * sy;
+    // caja = FIT_PADDING del contenedor, en unidades tipo-píxel
+    var k = (FIT_PADDING * W) / gw;
+    var boxW = gw * k, boxH = gh * k;
+    var ox = (W - boxW) / 2, oy = (H - boxH) / 2;
+    fitParams = { minX: minX, minY: minY, sx: sx, sy: sy, k: k, ox: ox, oy: oy, boxW: boxW, boxH: boxH, W: W, H: H };
+    graph.forEachNode(function(id, attrs) {
+      var p = rawPos[id];
+      if (!p) return;
+      if (attrs.hidden) { graph.setNodeAttribute(id, 'x', W / 2); graph.setNodeAttribute(id, 'y', H / 2); return; }
+      var c = fitCoords(p);
+      if (!c) return;
+      graph.setNodeAttribute(id, 'x', c.x);
+      graph.setNodeAttribute(id, 'y', c.y);
+    });
+  }
+
+  /* ---- cámara: encuadra un conjunto de nodos (usado por el foco contextual) ---- */
+  function sigmaExtent() {
+    var ext = graphExtent();
+    var W = canvas.clientWidth || 1, H = canvas.clientHeight || 1;
+    var cx = (ext.minX + ext.maxX) / 2, cy = (ext.minY + ext.maxY) / 2;
+    var spanX = Math.max(ext.maxX - ext.minX, W, 1e-6);
+    var spanY = Math.max(ext.maxY - ext.minY, H, 1e-6);
+    return { minX: cx - spanX / 2, maxX: cx + spanX / 2, minY: cy - spanY / 2, maxY: cy + spanY / 2 };
+  }
+  function cameraForBBox(minX, maxX, minY, maxY, pad, padRightPx) {
+    var W = canvas.clientWidth || 1, H = canvas.clientHeight || 1;
+    var WEff = Math.max(W - (padRightPx || 0), 120); // área realmente visible
+    var ext = sigmaExtent();
+    var maxDim = Math.max(ext.maxX - ext.minX, ext.maxY - ext.minY, 1e-6);
+    var vr = H / W;
+    var gr = (ext.maxY - ext.minY) / Math.max(ext.maxX - ext.minX, 1e-6);
+    var cr = ((vr < 1 && gr > 1) || (vr > 1 && gr < 1)) ? 1 : Math.min(Math.max(gr, 1 / gr), Math.max(1 / vr, vr));
+    var minDim = Math.min(W, H);
+    var normW = (maxX - minX) / maxDim;
+    var normH = (maxY - minY) / maxDim;
+    var ratio = Math.max((normW * minDim * cr) / WEff, (normH * minDim * cr) / H) * (1 + pad);
+    var cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    var state = {
+      x: 0.5 + (cx - (ext.minX + ext.maxX) / 2) / maxDim,
+      y: 0.5 + (cy - (ext.minY + ext.maxY) / 2) / maxDim,
+      angle: 0,
+      ratio: Math.min(Math.max(ratio, 0.05), 4),
+      cr: cr,
+      minDim: minDim,
+    };
+    // centra el contenido en el área visible (no bajo el panel)
+    if (padRightPx) {
+      state.x += ((padRightPx / 2) * state.ratio) / (minDim * cr);
+    }
     return state;
+  }
+
+  /* ---- etiquetas mono con halo del color del papel + anti-colisión por frame ---- */
+  var labelBoxes = [];
+  function drawHaloLabel(context, data, settings) {
+    if (!data.label) return;
+    var size = settings.labelSize;
+    var weight = settings.labelWeight;
+    var color = settings.labelColor.attribute
+      ? (data[settings.labelColor.attribute] || settings.labelColor.color || '#000')
+      : settings.labelColor.color;
+    context.font = weight + ' ' + size + 'px ' + settings.labelFont;
+    context.textAlign = 'center';
+    context.textBaseline = 'top';
+    var x = data.x;
+    var y = data.y + (data.size || 0) + 4;
+    // anti-colisión: si la caja del texto pisa otra etiqueta ya dibujada, se omite
+    var w = context.measureText(data.label).width;
+    var box = { x0: x - w / 2 - 3, x1: x + w / 2 + 3, y0: y - 2, y1: y + size + 3 };
+    for (var i = 0; i < labelBoxes.length; i++) {
+      var b = labelBoxes[i];
+      if (box.x1 > b.x0 && box.x0 < b.x1 && box.y1 > b.y0 && box.y0 < b.y1) return;
+    }
+    labelBoxes.push(box);
+    context.lineJoin = 'round';
+    context.lineWidth = 3.5;
+    context.strokeStyle = cssVar('--g-paper');
+    context.strokeText(data.label, x, y);
+    context.fillStyle = color;
+    context.fillText(data.label, x, y);
+  }
+
+  /* ---- hover minimalista: anillo fino, sin caja de etiqueta ---- */
+  function drawRingHover(context, data) {
+    context.beginPath();
+    context.arc(data.x, data.y, (data.size || 3) + 2.5, 0, Math.PI * 2);
+    context.strokeStyle = rgba(0.55);
+    context.lineWidth = 1;
+    context.stroke();
   }
 
   function initSigma() {
     graph = new Graph({ multi: true });
-    graphData.nodes.forEach(function(n, i) {
+    graphData.nodes.forEach(function(n) {
       graph.addNode(n.id, {
-        label: n.label || n.id,
-        size: nodeSize(n),
-        color: COLORS[n.type] || '#888888',
-        x: typeof n.x === 'number' ? n.x : Math.cos(i) * 10,
-        y: typeof n.y === 'number' ? n.y : Math.sin(i) * 10,
+        label: (n.label || n.id).toUpperCase(),
+        size: nodeSize(n.id),
+        color: rgba(nodeAlpha(n.id)),
+        lcolor: rgba(labelAlpha(n.id)),
+        x: rawPos[n.id] ? rawPos[n.id].x0 : 0.5,
+        y: rawPos[n.id] ? rawPos[n.id].y0 : 0.5,
         ntype: n.type,
         hidden: !activeTypes.has(n.type),
       });
@@ -315,8 +715,8 @@ import Graph from 'graphology';
       var key = (e.id ? e.id + '-' + idx : e.source + '-' + e.target + '-' + idx);
       try {
         graph.addEdgeWithKey(key, e.source, e.target, {
-          color: '#1c1c28',
-          size: 0.6,
+          color: rgba(edgeAlpha()),
+          size: 0.5,
           hidden: !(activeTypes.has(graph.getNodeAttribute(e.source, 'ntype')) && activeTypes.has(graph.getNodeAttribute(e.target, 'ntype'))),
         });
       } catch (err) {}
@@ -324,76 +724,211 @@ import Graph from 'graphology';
 
     if (renderer) renderer.kill();
     renderer = new Sigma(graph, canvas, {
-      defaultEdgeColor: '#2a2a3e',
+      autoRescale: false,          // el encuadre lo controla fitLayout()
+      defaultEdgeColor: rgba(edgeAlpha()),
       defaultEdgeType: 'line',
-      labelDensity: 1,
-      labelGridCellSize: 60,
-      labelRenderedSizeThreshold: 12,
-      labelSize: 12,
-      labelColor: { color: '#e0e0ff' },
+      defaultNodeColor: rgba(0.4),
+      labelFont: "'Geist Mono', ui-monospace, monospace",
+      labelSize: 10,
+      labelWeight: '500',
+      labelColor: { attribute: 'lcolor', color: rgba(0.4) },
+      labelDensity: 0.75,
+      labelGridCellSize: 100,
+      labelRenderedSizeThreshold: 5.7,
+      defaultDrawNodeLabel: drawHaloLabel,
+      defaultDrawNodeHover: drawRingHover,
+      renderEdgeLabels: false,
+      minEdgeThickness: 1,
+      // fluidez: inercia al arrastrar, zoom amortiguado, sin rotación accidental
+      inertiaDuration: 520,
+      inertiaRatio: 4,
+      zoomDuration: 460,
+      zoomingRatio: 1.35,
+      doubleClickZoomingDuration: 560,
+      doubleClickZoomingRatio: 2,
+      hideLabelsOnMove: true,
+      enableCameraRotation: false,
       minCameraRatio: 0.02,
-      maxCameraRatio: 5,
+      maxCameraRatio: 6,
     });
-    fitState = fitCameraToData();
+    fitLayout();
+    fitState = { x: 0.5, y: 0.5, angle: 0, ratio: 1 };
+    // entrada suave: arranca algo alejado y se asienta
+    renderer.getCamera().setState({ x: 0.5, y: 0.5, angle: 0, ratio: 1.55 });
+    renderer.getCamera().animate(fitState, { duration: 1100, easing: 'quadraticOut' });
 
     loading.style.display = 'none';
+    window.__ge = { renderer: renderer, graph: graph };  // sonda de verificación
 
     renderer.on('clickNode', function(params) {
-      highlightNeighborhood(params.node);
-      showDetailById(params.node);
+      showDetailById(params.node);                       // abre el panel primero…
+      highlightNeighborhood(params.node, { focus: true }); // …para encuadrar su hueco
     });
-
+    // reinicia el registro de colisiones de etiquetas en cada frame
+    renderer.on('beforeRender', function() { labelBoxes.length = 0; });
     renderer.on('clickStage', function() {
       resetHighlight();
       detail.classList.remove('open');
     });
-
     renderer.on('enterNode', function(params) {
       if (!highlightedNodeId) highlightNeighborhood(params.node);
     });
-
     renderer.on('leaveNode', function() {
       if (!highlightedNodeId) resetHighlight();
     });
+
+    // hook de verificación (e2e / debug): bbox real en pantalla vs ventana visible,
+    // ambos en el espacio normalizado de sigma (medición empírica, sin teoría).
+    window.__geDebug = function() {
+      var c = renderer.getCamera().getState();
+      var ext = graphExtent();
+      var W = canvas.clientWidth || 1, H = canvas.clientHeight || 1;
+      var minDim = Math.min(W, H), maxDim = Math.max(W, H);
+      var gW = Math.max(ext.maxX - ext.minX, 1e-9), gH = Math.max(ext.maxY - ext.minY, 1e-9);
+      var vr = H / W, gr = gH / gW;
+      var cr = ((vr < 1 && gr > 1) || (vr > 1 && gr < 1)) ? 1 : Math.min(Math.max(gr, 1 / gr), Math.max(1 / vr, vr));
+      var winW = W * c.ratio / (minDim * cr), winH = H * c.ratio / (minDim * cr);
+      // bbox normalizado (lo que sigma dibuja)
+      var minNX = Infinity, maxNX = -Infinity, minNY = Infinity, maxNY = -Infinity;
+      graph.forEachNode(function(id, a) {
+        if (a.hidden) return;
+        var d = renderer.getNodeDisplayData(id);
+        if (!d) return;
+        if (d.x < minNX) minNX = d.x; if (d.x > maxNX) maxNX = d.x;
+        if (d.y < minNY) minNY = d.y; if (d.y > maxNY) maxNY = d.y;
+      });
+      var covX = (maxNX - minNX) / winW, covY = (maxNY - minNY) / winH;
+      return {
+        camera: c,
+        nodes: graph.order,
+        edges: graph.size,
+        visible: graph.nodes().filter(function(id) { return !graph.getNodeAttribute(id, 'hidden'); }).length,
+        revealed: revealedNodes.length,
+        container: { w: W, h: H },
+        extent: ext,
+        bbox: { minX: minNX, maxX: maxNX, minY: minNY, maxY: maxNY },
+        window: { w: winW, h: winH },
+        coverage: { x: covX, y: covY, fill: Math.min(covX, covY) },
+      };
+    };
   }
 
-  function highlightNeighborhood(nodeId) {
+  function graphExtent() {
+    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    graph.forEachNode(function(id, attrs) {
+      if (attrs.hidden) return;
+      if (attrs.x < minX) minX = attrs.x; if (attrs.x > maxX) maxX = attrs.x;
+      if (attrs.y < minY) minY = attrs.y; if (attrs.y > maxY) maxY = attrs.y;
+    });
+    return { minX: minX, maxX: maxX, minY: minY, maxY: maxY };
+  }
+
+  /* ---- cambio de tema: repinta toda la paleta (papel ↔ tinta) ---- */
+  function repaintPalette() {
+    if (!graph || !renderer) return;
+    graph.forEachNode(function(id, a) {
+      graph.setNodeAttribute(id, 'color', rgba(nodeAlpha(id)));
+      graph.setNodeAttribute(id, 'lcolor', rgba(labelAlpha(id)));
+    });
+    graph.forEachEdge(function(id) { graph.setEdgeAttribute(id, 'color', rgba(edgeAlpha())); });
+    renderer.setSetting('defaultEdgeColor', rgba(edgeAlpha()));
+    renderer.setSetting('labelColor', { attribute: 'lcolor', color: rgba(0.4) });
+    resetHighlight();
+    renderer.refresh();
+  }
+  new MutationObserver(repaintPalette).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  var revealedNodes = [];
+  var revealedEdges = [];
+
+  function highlightNeighborhood(nodeId, opts) {
     if (!graph || !renderer) return;
     highlightedNodeId = nodeId;
-    // Chip explicito: sin esto el dim parece un error ("pantalla oscura").
+    // revelado contextual: los vecinos de una capa apagada se encienden
+    // (sigma respeta 'hidden' antes de los reducers, hay que tocar el grafo)
+    revealedNodes.length = 0;
+    revealedEdges.length = 0;
+    graph.neighbors(nodeId).forEach(function(n) {
+      if (graph.getNodeAttribute(n, 'hidden')) {
+        graph.setNodeAttribute(n, 'hidden', false);
+        var c = fitCoords(rawPos[n]);          // dejan el "aparcadero" del centro
+        if (c) {
+          graph.setNodeAttribute(n, 'x', c.x);
+          graph.setNodeAttribute(n, 'y', c.y);
+        }
+        revealedNodes.push(n);
+      }
+    });
+    graph.edges(nodeId).forEach(function(e) {
+      if (graph.getEdgeAttribute(e, 'hidden')) {
+        graph.setEdgeAttribute(e, 'hidden', false);
+        revealedEdges.push(e);
+      }
+    });
     if (hlChip && graphData) {
       var hlNode = graphData.nodes.find(function(n) { return n.id === nodeId; });
-      hlChip.textContent = 'Resaltando vecinos de ' + ((hlNode && (hlNode.label || hlNode.id)) || nodeId) + ' ✕';
+      hlChip.textContent = 'Resaltando ' + ((hlNode && (hlNode.label || hlNode.id)) || nodeId) + ' — limpiar';
       hlChip.hidden = false;
     }
     var keep = {};
     keep[nodeId] = true;
-    graph.neighbors(nodeId).forEach(function(n) { keep[n] = true; });
+    var neighbors = graph.neighbors(nodeId);
+    neighbors.forEach(function(n) { keep[n] = true; });
     var keepEdges = {};
     graph.edges(nodeId).forEach(function(e) { keepEdges[e] = true; });
+    // etiquetas: solo el top-N del vecindario (476 labels a la vez = ruido)
+    var LABEL_TOP_N = 24;
+    var labelKeep = {};
+    labelKeep[nodeId] = true;
+    neighbors
+      .slice()
+      .sort(function(a, b) { return (degrees[b] || 0) - (degrees[a] || 0); })
+      .slice(0, LABEL_TOP_N)
+      .forEach(function(n) { labelKeep[n] = true; });
 
     renderer.setSetting('nodeReducer', function(node, data) {
       var res = Object.assign({}, data);
       if (!keep[node]) {
-        res.color = 'rgba(40,40,60,0.25)';
+        res.color = rgba(0.12);   // fantasma: contexto sin competir con el foco
         res.label = '';
       } else if (node === nodeId) {
-        res.highlighted = true;
+        res.color = rgba(0.94);
+        res.size = Math.max(data.size, 10);
+        res.labelColor = rgba(0.95);
+      } else {
+        res.color = rgba(0.82);
+        res.size = Math.max(data.size, 6.3);
+        res.labelColor = rgba(0.88);
+        if (labelKeep[node]) res.forceLabel = true;  // salta el grid de etiquetas
+        else res.label = '';
       }
       return res;
     });
     renderer.setSetting('edgeReducer', function(edge, data) {
       var res = Object.assign({}, data);
-      if (!keepEdges[edge]) {
-        res.color = 'rgba(30,30,50,0.06)';
-        res.hidden = true;
-      } else {
-        res.color = '#7d61ff';
-        res.size = 2;
-      }
+      if (!keepEdges[edge]) { res.hidden = true; }
+      else { res.color = rgba(0.34); res.size = 1; res.hidden = false; }
       return res;
     });
     renderer.refresh();
+    // zoom suave al vecindario revelado (solo en clic/foco explícito, no en hover)
+    if (opts && opts.focus && revealedNodes.length) {
+      var mnX = Infinity, mxX = -Infinity, mnY = Infinity, mxY = -Infinity;
+      var ids = revealedNodes.concat([nodeId]);
+      ids.forEach(function(id) {
+        if (!graph.hasNode(id)) return;
+        var a = graph.getNodeAttributes(id);
+        if (a.x < mnX) mnX = a.x; if (a.x > mxX) mxX = a.x;
+        if (a.y < mnY) mnY = a.y; if (a.y > mxY) mxY = a.y;
+      });
+      if (mnX < mxX) {
+        var W2 = canvas.clientWidth || 1;
+        var panelW = W2 > 680 && detail.classList.contains('open') ? 360 : 0;
+        var state = cameraForBBox(mnX, mxX, mnY, mxY, 0.2, panelW);
+        state.ratio = Math.max(state.ratio, 0.3);   // sin zooms absurdos
+        renderer.getCamera().animate(state, { duration: 900, easing: 'quadraticOut' });
+      }
+    }
   }
 
   function resetHighlight() {
@@ -402,13 +937,22 @@ import Graph from 'graphology';
     if (hlChip) hlChip.hidden = true;
     renderer.setSetting('nodeReducer', null);
     renderer.setSetting('edgeReducer', null);
+    if (revealedNodes.length) {
+      var W = canvas.clientWidth || 0, H = canvas.clientHeight || 0;
+      revealedNodes.forEach(function(id) {
+        graph.setNodeAttribute(id, 'x', W / 2);
+        graph.setNodeAttribute(id, 'y', H / 2);
+      });
+    }
+    revealedNodes.length = 0;
+    revealedEdges.length = 0;
+    if (graph) applyFilterState(); // los revelados vuelven a su estado de filtro
     renderer.refresh();
   }
 
   function focusAndShowNode(id) {
     if (!graphData || !renderer || !graph || !graph.hasNode(id)) return;
     highlightedNodeId = id;
-    // Enciende el tipo si estaba filtrado
     var t = graph.getNodeAttribute(id, 'ntype');
     if (t && !activeTypes.has(t)) {
       activeTypes.add(t);
@@ -419,9 +963,8 @@ import Graph from 'graphology';
     highlightNeighborhood(id);
     showDetailById(id);
     var attrs = graph.getNodeAttributes(id);
-    renderer.getCamera().animate({ x: attrs.x, y: attrs.y, ratio: 0.15 }, { duration: 600 });
+    renderer.getCamera().animate({ x: attrs.x, y: attrs.y, ratio: 0.22 }, { duration: 900, easing: 'quadraticOut' });
   }
-
   window.focusNode = function(id) {
     searchResults.classList.remove('active');
     searchInput.value = '';
@@ -437,85 +980,57 @@ import Graph from 'graphology';
   function showDetail(node) {
     detailTitle.textContent = node.label || node.id;
     detailType.textContent = (TYPE_LABELS[node.type] || node.type || 'nodo').toUpperCase();
-    detailType.style.background = COLORS[node.type] || '#333';
-    detailType.style.color = '#000';
 
-    // Enlace a ficha: directo solo donde el mapeo esta verificado
-    // (recipes 381/381 con slug). Resto → catálogo del tipo.
     var fichaUrl = null;
     var fichaLabel = 'Ver ficha completa →';
-    if (node.type === 'recipe' && node.slug) {
-      fichaUrl = baseUrl + '/recipes/' + node.slug;
-    } else if (node.type === 'substance') {
-      fichaUrl = baseUrl + '/substances';
-      fichaLabel = 'Ver catálogo de substancias →';
-    } else if (node.type === 'ingredient') {
-      fichaUrl = baseUrl + '/ingredients';
-      fichaLabel = 'Ver catálogo de ingredientes →';
-    }
+    if (node.type === 'recipe' && node.slug) fichaUrl = baseUrl + '/recipes/' + node.slug;
+    else if (node.type === 'substance') { fichaUrl = baseUrl + '/substances'; fichaLabel = 'Catálogo de substancias →'; }
+    else if (node.type === 'ingredient') { fichaUrl = baseUrl + '/ingredients'; fichaLabel = 'Catálogo de ingredientes →'; }
 
     var conns = {};
+    var connTotal = 0;
+    var nodeIndex = {};
+    graphData.nodes.forEach(function(n) { nodeIndex[n.id] = n; });
     graphData.edges.forEach(function(e) {
-      var s = e.source;
-      var t = e.target;
-      if (s === node.id || t === node.id) {
-        var other = s === node.id ? t : s;
-        if (!conns[e.type]) conns[e.type] = [];
-        var otherNode = graphData.nodes.find(function(n) { return n.id === other; });
-        if (otherNode) conns[e.type].push(otherNode);
-      }
+      if (e.source !== node.id && e.target !== node.id) return;
+      connTotal++;
+      var other = e.source === node.id ? e.target : e.source;
+      if (!conns[e.type]) conns[e.type] = [];
+      if (nodeIndex[other]) conns[e.type].push(nodeIndex[other]);
     });
 
-    var connTotal = graphData.edges.filter(function(e) {
-      return e.source === node.id || e.target === node.id;
-    }).length;
+    var rows = '';
+    if (node.region) rows += '<div class="ge-row"><span class="k">Región</span><span class="v">' + node.region + '</span></div>';
+    if (node.difficulty) rows += '<div class="ge-row"><span class="k">Dificultad</span><span class="v">' + node.difficulty + '</span></div>';
+    if (node.prep_time) rows += '<div class="ge-row"><span class="k">Preparación</span><span class="v">' + node.prep_time + '</span></div>';
+    if (node.cook_time) rows += '<div class="ge-row"><span class="k">Cocción</span><span class="v">' + node.cook_time + '</span></div>';
+    rows += '<div class="ge-row"><span class="k">Conexiones</span><span class="v">' + connTotal.toLocaleString('es') + '</span></div>';
 
     var html = '';
+    if (fichaUrl) html += '<a href="' + fichaUrl + '" class="ge-ficha-btn">' + fichaLabel + '</a>';
+    html += '<div class="ge-rows" style="margin-top:14px">' + rows + '</div>';
 
-    if (fichaUrl) {
-      html += '<a href="' + fichaUrl + '" class="ge-ficha-btn">' + fichaLabel + '</a>';
-    }
-
-    if (node.region || node.difficulty || node.prep_time || node.cook_time) {
-      html += '<div class="ge-meta-grid">';
-      if (node.region) html += '<div class="ge-meta-item"><div class="l">Región</div><div class="v">'+node.region+'</div></div>';
-      if (node.difficulty) html += '<div class="ge-meta-item"><div class="l">Dificultad</div><div class="v">'+node.difficulty+'</div></div>';
-      if (node.prep_time) html += '<div class="ge-meta-item"><div class="l">Preparación</div><div class="v">'+node.prep_time+'</div></div>';
-      if (node.cook_time) html += '<div class="ge-meta-item"><div class="l">Cocción</div><div class="v">'+node.cook_time+'</div></div>';
-      html += '</div>';
-    }
-
-    html += '<div class="ge-meta-item" style="margin-bottom:14px"><div class="l">Conexiones</div><div class="v">'+connTotal+'</div></div>';
-
-    // Scientific details: compounds, mechanism, studies, linked recipes
     if (node.active_compounds && node.active_compounds.length) {
       html += '<div class="ge-section-title">Compuestos activos</div><div class="ge-tag-list">';
-      node.active_compounds.forEach(function(c) { html += '<span class="ge-tag" style="border-color:#9d4edd;color:#c896ff">'+c+'</span>'; });
+      node.active_compounds.forEach(function(c) { html += '<span class="ge-tag">' + c + '</span>'; });
       html += '</div>';
     }
-
-    if (node.mechanism) {
-      html += '<div class="ge-section-title">Mecanismo de acción</div>';
-      html += '<div class="ge-instructions" style="border-left-color:#9d4edd">'+node.mechanism+'</div>';
-    }
-
+    if (node.mechanism) html += '<div class="ge-section-title">Mecanismo de acción</div><div class="ge-prose">' + node.mechanism + '</div>';
     if (node.studies && node.studies.length) {
-      html += '<div class="ge-section-title">Estudios científicos / PubMed</div><div class="ge-tag-list">';
+      html += '<div class="ge-section-title">Estudios / PubMed</div><div class="ge-tag-list">';
       node.studies.forEach(function(s) {
-        html += '<a href="'+(s.url || '#')+'" target="_blank" rel="noopener" class="ge-tag" style="color:#00ff66;text-decoration:underline">'+(s.title || s.id || 'Study')+'</a>';
+        html += '<a href="' + (s.url || '#') + '" target="_blank" rel="noopener" class="ge-tag">' + (s.title || s.id || 'Estudio') + '</a>';
       });
       html += '</div>';
     }
-
     if (node.tags && node.tags.length) {
       html += '<div class="ge-section-title">Etiquetas</div><div class="ge-tag-list">';
-      node.tags.forEach(function(t) { html += '<span class="ge-tag">'+t+'</span>'; });
+      node.tags.forEach(function(t) { html += '<span class="ge-tag">' + t + '</span>'; });
       html += '</div>';
     }
-
     if (node.categories && node.categories.length) {
       html += '<div class="ge-section-title">Categorías</div><div class="ge-tag-list">';
-      node.categories.forEach(function(c) { html += '<span class="ge-tag">'+c+'</span>'; });
+      node.categories.forEach(function(c) { html += '<span class="ge-tag">' + c + '</span>'; });
       html += '</div>';
     }
 
@@ -523,16 +1038,15 @@ import Graph from 'graphology';
       var items = conns[type];
       if (!items || !items.length) return;
       html += '<div class="ge-conn-group">';
-      html += '<div class="ge-conn-label">' + (ETYPE_LABELS[type] || type) + ' (' + items.length + ')</div>';
+      html += '<div class="ge-conn-label">' + (ETYPE_LABELS[type] || type) + ' · ' + items.length + '</div>';
       html += '<div class="ge-conn-items">';
       items.slice(0, 25).forEach(function(other) {
-        var color = COLORS[other.type] || '#888';
-        html += '<div class="ge-conn-item" onclick="window.focusNode(\''+other.id+'\')">';
-        html += '<div class="dot" style="background:'+color+'"></div>';
-        html += '<span>' + (other.label || other.id) + '</span>';
+        html += '<div class="ge-conn-item" onclick="window.focusNode(\'' + other.id + '\')">';
+        html += '<span class="cn">' + (other.label || other.id) + '</span>';
+        html += '<span class="ct">' + (TYPE_LABELS[other.type] || other.type || '') + '</span>';
         html += '</div>';
       });
-      if (items.length > 25) html += '<div class="ge-conn-item" style="color:#4a4a6a;cursor:default">+' + (items.length - 25) + ' más</div>';
+      if (items.length > 25) html += '<div class="ge-conn-item more">+' + (items.length - 25) + ' más</div>';
       html += '</div></div>';
     });
 
@@ -540,45 +1054,44 @@ import Graph from 'graphology';
     detail.classList.add('open');
   }
 
-  // Search input handler
   searchInput.addEventListener('input', function(e) {
     var q = e.target.value.toLowerCase().trim();
     searchResults.classList.remove('active');
-    if (q.length < 2) return;
-    var results = graphData.nodes.filter(function(n) {
-      return (n.label || n.id).toLowerCase().includes(q);
-    }).slice(0, 12);
-    if (!results.length) return;
+    if (q.length < 2 || !graphData) return;
+    var results = graphData.nodes.filter(function(n) { return (n.label || n.id).toLowerCase().includes(q); }).slice(0, 12);
+    if (!results.length) {
+      searchResults.innerHTML = '<div class="ge-search-empty">Sin resultados</div>';
+      searchResults.classList.add('active');
+      return;
+    }
     searchResults.innerHTML = results.map(function(n) {
-      return '<div class="ge-search-item" onclick="window.focusNode(\''+n.id+'\')">' +
-        '<div class="dot" style="background:'+(COLORS[n.type]||'#888')+'"></div>' +
-        '<span class="t">'+(n.label||n.id)+'</span>' +
-        '<span class="sub">'+n.type+'</span></div>';
+      return '<div class="ge-search-item" onclick="window.focusNode(\'' + n.id + '\')">' +
+        '<span class="t">' + (n.label || n.id) + '</span>' +
+        '<span class="sub">' + (TYPE_LABELS[n.type] || n.type) + '</span></div>';
     }).join('');
     searchResults.classList.add('active');
   });
+  searchInput.addEventListener('blur', function() { setTimeout(function() { searchResults.classList.remove('active'); }, 160); });
 
-  searchInput.addEventListener('blur', function() { setTimeout(function() { searchResults.classList.remove('active'); }, 150); });
-
-  document.getElementById('ge-zoom-in').onclick = function() {
-    if (renderer) renderer.getCamera().animatedZoom({ duration: 300 });
-  };
-  document.getElementById('ge-zoom-out').onclick = function() {
-    if (renderer) renderer.getCamera().animatedUnzoom({ duration: 300 });
-  };
-  document.getElementById('ge-zoom-reset').onclick = function() {
-    if (renderer) renderer.getCamera().animate(fitState, { duration: 500 });
-  };
-  if (hlChip) {
-    hlChip.onclick = function() { resetHighlight(); };
-  }
+  document.getElementById('ge-zoom-in').onclick = function() { if (renderer) renderer.getCamera().animatedZoom({ duration: 420 }); };
+  document.getElementById('ge-zoom-out').onclick = function() { if (renderer) renderer.getCamera().animatedUnzoom({ duration: 420 }); };
+  document.getElementById('ge-zoom-reset').onclick = function() { if (renderer) renderer.getCamera().animate(fitState, { duration: 700, easing: 'quadraticOut' }); };
+  if (hlChip) hlChip.onclick = function() { resetHighlight(); };
   document.getElementById('ge-detail-close').onclick = function() {
     detail.classList.remove('open');
     resetHighlight();
   };
 
-  window.addEventListener('resize', function() {
-    if (renderer) renderer.refresh();
-  });
+  var resizeTimer = null;
+  function scheduleResize() {
+    if (!renderer) return;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() { applyBleed(); fitLayout(); renderer.refresh(); }, 160);
+  }
+  window.addEventListener('resize', scheduleResize);
+  if (window.ResizeObserver) {
+    // el contenedor puede cambiar de tamaño sin evento de window (móvil, zoom de UI)
+    new ResizeObserver(scheduleResize).observe(wrapper);
+  }
 })();
 </script>
