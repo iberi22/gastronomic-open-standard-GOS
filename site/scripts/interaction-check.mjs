@@ -179,6 +179,73 @@ await step('filtro-visibles', async () => {
   return `off=${mid} (fill ${fillOff}) · on=${after} (fill ${fillOn})`
 })
 
+// 4.5) revelado contextual: clic en un hub con capas apagadas enciende sus vecinos
+await step('revelado-contextual', async () => {
+  await page.evaluate(() => document.getElementById('ge-zoom-reset')?.click())
+  await page.waitForTimeout(1200)
+  // asegura que las capas densas están apagadas
+  for (const t of ['ingredient', 'flavor', 'texture']) {
+    const on = await page.evaluate(
+      (tt) =>
+        document
+          .querySelector(`.ge-filter-btn[data-type="${tt}"]`)
+          ?.classList.contains('on'),
+      t,
+    )
+    if (on) {
+      await page.evaluate(
+        (tt) =>
+          document.querySelector(`.ge-filter-btn[data-type="${tt}"]`)?.click(),
+        t,
+      )
+      await page.waitForTimeout(400)
+    }
+  }
+  const base = await page.evaluate(() => window.__geDebug().visible)
+  const target = await page.evaluate(() => {
+    const { graph: g, renderer: r } = window.__ge
+    let best = null,
+      bestDeg = -1
+    for (const cand of [
+      'category_proteins',
+      'category_vegetables',
+      'category_grains',
+    ]) {
+      if (!g.hasNode(cand)) continue
+      const deg = g.neighbors(cand).length
+      if (deg > bestDeg) {
+        bestDeg = deg
+        best = cand
+      }
+    }
+    const d = r.getNodeDisplayData(best)
+    const vp = r.framedGraphToViewport(d)
+    const rect = document.getElementById('ge-canvas').getBoundingClientRect()
+    return { x: rect.left + vp.x, y: rect.top + vp.y, id: best, deg: bestDeg }
+  })
+  await page.mouse.move(target.x, target.y)
+  await page.mouse.down()
+  await page.mouse.up()
+  await page.waitForTimeout(2600)
+  const after = await page.evaluate(() => {
+    const d = window.__geDebug()
+    return { visible: d.visible, revealed: d.revealed }
+  })
+  await page.screenshot({ path: `${out}/revelado.png` })
+  // limpiar y comprobar reversibilidad
+  await page.evaluate(() => document.getElementById('ge-hl-chip')?.click())
+  await page.waitForTimeout(1200)
+  const cleaned = await page.evaluate(() => {
+    const d = window.__geDebug()
+    return { visible: d.visible, revealed: d.revealed }
+  })
+  if (!(after.revealed > 100))
+    throw new Error(`no reveló vecinos (revealed=${after.revealed})`)
+  if (cleaned.revealed !== 0 || cleaned.visible !== base)
+    throw new Error(`no revirtió (${JSON.stringify(cleaned)} vs base ${base})`)
+  return `${target.id} (${target.deg} vecinos): ${base} → ${after.visible} revelados=${after.revealed} → limpiado ${cleaned.visible}`
+})
+
 // 5) cambio de tema en vivo → repintado
 await step('repintado-tema', async () => {
   const colorBefore = await page.evaluate(() => {

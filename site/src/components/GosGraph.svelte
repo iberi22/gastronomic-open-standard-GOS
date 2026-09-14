@@ -339,6 +339,53 @@ function renderSigma(
   renderer.on('beforeRender', () => {
     boxes = []
   })
+
+  // hook de verificación (e2e / debug): bbox normalizado vs ventana visible
+  ;(window as unknown as { __ggDebug?: () => unknown }).__ggDebug = () => {
+    const c = renderer?.getCamera().getState()
+    if (!renderer || !c) return null
+    const W = el.clientWidth || 1
+    const H = el.clientHeight || 1
+    let minNX = Number.POSITIVE_INFINITY
+    let maxNX = Number.NEGATIVE_INFINITY
+    let minNY = Number.POSITIVE_INFINITY
+    let maxNY = Number.NEGATIVE_INFINITY
+    let mnX = Number.POSITIVE_INFINITY
+    let mxX = Number.NEGATIVE_INFINITY
+    let mnY = Number.POSITIVE_INFINITY
+    let mxY = Number.NEGATIVE_INFINITY
+    g.forEachNode((id, a) => {
+      if (a.x < mnX) mnX = a.x
+      if (a.x > mxX) mxX = a.x
+      if (a.y < mnY) mnY = a.y
+      if (a.y > mxY) mxY = a.y
+      const d = renderer?.getNodeDisplayData(id)
+      if (!d) return
+      if (d.x < minNX) minNX = d.x
+      if (d.x > maxNX) maxNX = d.x
+      if (d.y < minNY) minNY = d.y
+      if (d.y > maxNY) maxNY = d.y
+    })
+    const minDim = Math.min(W, H)
+    const gW = Math.max(mxX - mnX, 1e-9)
+    const gH = Math.max(mxY - mnY, 1e-9)
+    const vr = H / W
+    const gr = gH / gW
+    const cr =
+      (vr < 1 && gr > 1) || (vr > 1 && gr < 1)
+        ? 1
+        : Math.min(Math.max(gr, 1 / gr), Math.max(1 / vr, vr))
+    const winW = (W * c.ratio) / (minDim * cr)
+    const winH = (H * c.ratio) / (minDim * cr)
+    const covX = (maxNX - minNX) / winW
+    const covY = (maxNY - minNY) / winH
+    return {
+      container: { w: W, h: H },
+      graphSpan: { w: gW, h: gH },
+      coverage: { x: covX, y: covY, fill: Math.min(covX, covY) },
+      camera: c,
+    }
+  }
   const el2 = el as HTMLElement & { _ro?: ResizeObserver }
   if (typeof ResizeObserver !== 'undefined') {
     el2._ro = new ResizeObserver(() => {

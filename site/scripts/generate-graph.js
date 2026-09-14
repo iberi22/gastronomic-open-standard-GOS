@@ -476,6 +476,23 @@ function sanitizeId(text) {
     .replace(/[^a-z0-9_]/g, '_')
 }
 
+// Nombres que no aportan información ("unknown", vacíos o pura puntuación).
+// Evita ids fantasma tipo ingredient_unknown / ingredient____ en aristas.
+function isPlaceholderName(text) {
+  const t = String(text ?? '').trim()
+  if (!t) return true
+  if (/^(unknown|n\/?a|none|null|tbd|desconocido|sin datos)$/i.test(t))
+    return true
+  const slug = sanitizeId(t)
+  return slug.length === 0 || /^_+$/.test(slug)
+}
+
+// Carpeta de staging: ingredientes auto-generados sin curar (nombres no latinos,
+// etiquetas con cantidad+unidad, substitutes "Unknown"). No entra al grafo
+// público: ensuciaba el mapa con nodos-stub y ~2.300 aristas fantasma que luego
+// se podaban en silencio. El catálogo /ingredients sí puede seguir usándola.
+const PENDING_REVIEW_DIRNAME = 'pending_review'
+
 function autoCategorizeIngredient(ingredientLabel) {
   const ingLower = ingredientLabel.toLowerCase()
   for (const [category, keywords] of Object.entries(INGREDIENT_CATEGORIES)) {
@@ -619,14 +636,26 @@ export function generateGraph() {
     const walk = (dir) => {
       for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
         const p = path.join(dir, e.name)
-        if (e.isDirectory()) walk(p)
-        else if (e.isFile() && e.name.endsWith('.md')) {
+        if (e.isDirectory()) {
+          if (e.name === PENDING_REVIEW_DIRNAME) {
+            for (const f of fs.readdirSync(p)) {
+              if (f.endsWith('.md')) pendingFilesSkipped.add(f) // basename: dedupe entre copias
+            }
+            continue
+          }
+          walk(p)
+        } else if (e.isFile() && e.name.endsWith('.md')) {
           try {
             const raw = fs.readFileSync(p, 'utf8')
             const pm = matter(raw)
             const fm = pm.data
-            const ingName = fm.name || path.basename(p, '.md')
-            const ingId = `ingredient_${sanitizeId(ingName)}`
+            // MISMO criterio que scanIngredients(): si el archivo no va a tener
+            // nodo (sin name latino), no se emiten aristas hacia un id fantasma.
+            if (!fm.name || !isLatinText(fm.name)) {
+              excludedSkips.noLatin++
+              continue
+            }
+            const ingId = `ingredient_${sanitizeId(fm.name)}`
             // micronutrients -> vitamin nodes
             if (fm.micronutrients && typeof fm.micronutrients === 'object') {
               for (const [nutKey] of Object.entries(fm.micronutrients)) {
@@ -1013,6 +1042,10 @@ export function generateGraph() {
     }
   }
 
+  // Archivos de ingredients/ excluidos del grafo (se reportan al final)
+  const excludedSkips = { pending: 0, noLatin: 0, placeholder: 0 }
+  const pendingFilesSkipped = new Set()
+
   scanDishes(dishesDir)
   scanIngredientsScience()
 
@@ -1024,6 +1057,12 @@ export function generateGraph() {
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name)
       if (entry.isDirectory()) {
+        if (entry.name === PENDING_REVIEW_DIRNAME) {
+          for (const f of fs.readdirSync(fullPath)) {
+            if (f.endsWith('.md')) pendingFilesSkipped.add(f) // basename: dedupe entre copias
+          }
+          continue
+        }
         scanIngredients(fullPath)
       } else if (
         entry.isFile() &&
@@ -1034,7 +1073,14 @@ export function generateGraph() {
           const content = fs.readFileSync(fullPath, 'utf8')
           const parsed = matter(content)
           const fm = parsed.data
-          if (!fm.name || !isLatinText(fm.name)) continue
+          if (!fm.name || !isLatinText(fm.name)) {
+            excludedSkips.noLatin++
+            continue
+          }
+          if (isPlaceholderName(fm.name)) {
+            excludedSkips.placeholder++
+            continue
+          }
 
           const ingId = `ingredient_${sanitizeId(fm.name)}`
           if (nodes.has(ingId)) {
@@ -1056,7 +1102,11 @@ export function generateGraph() {
           if (Array.isArray(fm.substitutes)) {
             for (const sub of fm.substitutes) {
               const subName = typeof sub === 'string' ? sub : sub.name || ''
-              if (subName && isLatinText(subName)) {
+              if (
+                subName &&
+                isLatinText(subName) &&
+                !isPlaceholderName(subName)
+              ) {
                 const subId = `ingredient_${sanitizeId(subName)}`
                 if (subId !== ingId) {
                   edges.push({
@@ -1165,8 +1215,30 @@ export function generateGraph() {
     return ok
   })
   if (missingIds.size > 0) {
+    // Reporte completo para depurar las FUENTES: id + nº de aristas que lo
+    // referenciaban (el aviso original truncaba a 12 ids y se perdía el resto).
+    const orphanCounts = new Map()
+    for (const e of edges) {
+      for (const end of [e.source, e.target]) {
+        if (missingIds.has(end))
+          orphanCounts.set(end, (orphanCounts.get(end) || 0) + 1)
+      }
+    }
+    const ordered = [...orphanCounts.entries()].sort((a, b) => b[1] - a[1])
     console.log(
-      `⚠️ ${edges.length - cleanEdges.length} aristas huérfanas podadas (${missingIds.size} ids faltantes): ${[...missingIds].slice(0, 12).join(', ')}${missingIds.size > 12 ? ', …' : ''}`,
+      `⚠️ ${edges.length - cleanEdges.length} aristas huérfanas podadas (${missingIds.size} ids faltantes):`,
+    )
+    for (const [id, n] of ordered.slice(0, 40)) {
+      console.log(`   ${String(n).padStart(5)} aristas ← ${id}`)
+    }
+    if (ordered.length > 40)
+      console.log(`   … y ${ordered.length - 40} ids más`)
+  }
+  const totalSkips =
+    pendingFilesSkipped.size + excludedSkips.noLatin + excludedSkips.placeholder
+  if (totalSkips > 0) {
+    console.log(
+      `ℹ️ ingredients/: ${totalSkips} omisiones — staging "${PENDING_REVIEW_DIRNAME}": ${pendingFilesSkipped.size} archivos (repo + copia del sitio) · sin nombre latino: ${excludedSkips.noLatin} · placeholders: ${excludedSkips.placeholder}`,
     )
   }
 
@@ -1201,9 +1273,22 @@ export function generateGraph() {
 
 // Layout ForceAtlas2 sincrono con seed determinista (LCG). Escribe x,y en cada
 // nodo para render estatico WebGL (sigma.js). Barns-Hut activado para grafos
-// grandes; iteraciones via FA2_LAYOUT_ITERATIONS (default 250).
+// grandes; iteraciones via FA2_LAYOUT_ITERATIONS (default 400).
+//
+// Ajuste de compacidad (medido con scripts/layout-stats.mjs sobre 3.625 nodos):
+//  - strongGravityMode: la gravedad es un tiron CONSTANTE hacia el centro
+//    (independiente de la distancia); en modo debil cae con 1/d y los nodos
+//    perifericos escapan -> "tendriles" largos y bandas vacias.
+//  - gravity 0.30 (subido desde 0.02) + scalingRatio 10 (bajado desde 20):
+//    mas atraccion al centro, menos repulsion. Medido: ocupacion de la rejilla
+//    16x16 pasa de 75.8% a 89.5% y tendril (full/p99) de 1.24 a 1.05.
+//  - Compresion radial suave de la cola (>p95) en la normalizacion: acerca los
+//    ultimos outliers sin apilarlos en el borde (el clamp solo ya los pegaba).
 function computeLayout(nodes, edges) {
-  const iterations = Number(process.env.FA2_LAYOUT_ITERATIONS || 250)
+  const iterations = Number(process.env.FA2_LAYOUT_ITERATIONS || 400)
+  const gravity = Number(process.env.FA2_GRAVITY || 0.3)
+  const scalingRatio = Number(process.env.FA2_SCALING_RATIO || 10)
+  const tailCompression = Number(process.env.FA2_TAIL_COMPRESSION || 0.35)
   let seed = 0x9e3779b9
   const rand = () => {
     seed = (seed + 0x6d2b79f5) | 0
@@ -1230,13 +1315,15 @@ function computeLayout(nodes, edges) {
   const settings = forceAtlas2.inferSettings(g)
   settings.barnesHutOptimize = true
   settings.barnesHutTheta = 0.6
-  settings.scalingRatio = 20
-  settings.gravity = 0.02
+  settings.strongGravityMode = true
+  settings.scalingRatio = scalingRatio
+  settings.gravity = gravity
   forceAtlas2.assign(g, { iterations, settings })
   // Normalización ROBUSTA a [0,1] (convención sigma: cámara default
   // (0.5, 0.5, ratio 1) encuadra [0,1]). Mediana + span p99-p1 (NO min-max:
   // unos pocos outliers estiraban el frame y la masa densa quedaba en un
-  // rincón). Clamp de outliers a [0,1]. Determinista.
+  // rincón) + compresión radial suave de la cola (>p95) + clamp de seguridad.
+  // Determinista.
   const xs = []
   const ys = []
   g.forEachNode((_id, a) => {
@@ -1254,10 +1341,25 @@ function computeLayout(nodes, edges) {
     q(ys, 0.99) - q(ys, 0.01),
     1e-9,
   )
+  // radio p95 alrededor de la mediana: más allá, la cola se comprime
+  const radii = []
+  g.forEachNode((_id, a) => {
+    radii.push(Math.hypot(a.x - xmed, a.y - ymed))
+  })
+  radii.sort((a, b) => a - b)
+  const r95 = q(radii, 0.95) || 1e-9
   const clamp01 = (v) => Math.min(1, Math.max(0, v))
   g.forEachNode((id, a) => {
-    g.setNodeAttribute(id, 'x', clamp01(0.5 + ((a.x - xmed) / span) * 0.8))
-    g.setNodeAttribute(id, 'y', clamp01(0.5 + ((a.y - ymed) / span) * 0.8))
+    let dx = a.x - xmed
+    let dy = a.y - ymed
+    const r = Math.hypot(dx, dy)
+    if (tailCompression > 0 && r > r95) {
+      const s = (r95 + (r - r95) * tailCompression) / r
+      dx *= s
+      dy *= s
+    }
+    g.setNodeAttribute(id, 'x', clamp01(0.5 + (dx / span) * 0.8))
+    g.setNodeAttribute(id, 'y', clamp01(0.5 + (dy / span) * 0.8))
   })
   g.forEachNode((id, attrs) => {
     const n = nodes.get(id)

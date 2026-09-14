@@ -204,7 +204,7 @@
 
   .ge-hl-chip {
     position: absolute;
-    top: 100px;
+    bottom: 66px;
     left: 26px;
     z-index: 14;
     background: none;
@@ -320,7 +320,7 @@
     .ge-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
     .ge-filters::-webkit-scrollbar { display: none; }
     .ge-filter-btn { white-space: nowrap; }
-    .ge-hl-chip { top: 96px; left: 16px; }
+    .ge-hl-chip { bottom: 58px; left: 16px; }
     .ge-detail { width: 100%; }
     .ge-detail-header { padding: 18px 16px 10px; }
     .ge-detail-title { padding: 0 16px 14px; font-size: 17px; }
@@ -400,7 +400,9 @@ import Graph from 'graphology';
     HAS_SUBSTANCE: 'Substancias', CONTAINS_VITAMIN: 'Vitaminas',
     HAS_NUTRIENT: 'Nutrientes', FOUND_IN: 'Presente en', SUBSTITUTE_FOR: 'Sustitutos'
   };
-  // Tipos densos arrancan apagados: 3.6k nodos juntos = bola de pelo ilegible.
+  // Tipos densos arrancan apagados: 4.2k nodos juntos = bola de pelo ilegible.
+  // Pero al hacer clic en un nodo se encienden SUS vecinos aunque su capa esté
+  // apagada (progressive disclosure contextual).
   var OFF_BY_DEFAULT = ['ingredient', 'flavor', 'texture'];
   var FIT_PADDING = 0.955;   // margen del encuadre
   var MAX_STRETCH = 3.4;     // límite de estiramiento del layout para llenar el viewport
@@ -528,8 +530,9 @@ import Graph from 'graphology';
     applyFilters();
   }
 
-  function applyFilters() {
-    if (!graph || !renderer || !graphData) return;
+  // Recalcula 'hidden' de nodos y aristas según los tipos activos (única fuente
+  // de verdad: la usan el filtrado y el fin del resaltado).
+  function applyFilterState() {
     var visible = {};
     graph.forEachNode(function(id, attrs) {
       var show = activeTypes.has(attrs.ntype);
@@ -539,6 +542,12 @@ import Graph from 'graphology';
     graph.forEachEdge(function(id, attrs, source, target) {
       graph.setEdgeAttribute(id, 'hidden', !(visible[source] && visible[target]));
     });
+    return visible;
+  }
+
+  function applyFilters() {
+    if (!graph || !renderer || !graphData) return;
+    var visible = applyFilterState();
     if (visibleCountEl) visibleCountEl.textContent = Object.keys(visible).length.toLocaleString('es');
     resetHighlight();
     fitLayout();          // re-encuadra sobre la capa visible
@@ -549,6 +558,21 @@ import Graph from 'graphology';
      unidades tipo-píxel (así sigma con autoRescale:false lo encaja exacto).
      Los nodos ocultos se aparcan en el centro: no se ven y no deforman la
      extensión que sigma usa para normalizar. ---- */
+  // transformación vigente del encuadre (la usan fitLayout y el revelado)
+  var fitParams = null;
+
+  // coords finales de un nodo según el encuadre actual (con el anclaje de outliers)
+  function fitCoords(p) {
+    if (!fitParams || !p) return null;
+    var f = fitParams;
+    var nx = (p.x0 - f.minX) * f.sx * f.k + f.ox;
+    var ny = (p.y0 - f.minY) * f.sy * f.k + f.oy;
+    return {
+      x: Math.min(Math.max(nx, f.ox + 10), f.ox + f.boxW - 10),
+      y: Math.min(Math.max(ny, f.oy + 10), f.oy + f.boxH - 10),
+    };
+  }
+
   function fitLayout() {
     if (!graph) return;
     var W = canvas.clientWidth || wrapper.clientWidth;
@@ -584,16 +608,53 @@ import Graph from 'graphology';
     var k = (FIT_PADDING * W) / gw;
     var boxW = gw * k, boxH = gh * k;
     var ox = (W - boxW) / 2, oy = (H - boxH) / 2;
+    fitParams = { minX: minX, minY: minY, sx: sx, sy: sy, k: k, ox: ox, oy: oy, boxW: boxW, boxH: boxH, W: W, H: H };
     graph.forEachNode(function(id, attrs) {
       var p = rawPos[id];
       if (!p) return;
       if (attrs.hidden) { graph.setNodeAttribute(id, 'x', W / 2); graph.setNodeAttribute(id, 'y', H / 2); return; }
-      // los outliers se anclan al borde de la caja: siguen visibles y clicables
-      var nx = (p.x0 - minX) * sx * k + ox;
-      var ny = (p.y0 - minY) * sy * k + oy;
-      graph.setNodeAttribute(id, 'x', Math.min(Math.max(nx, ox + 10), ox + boxW - 10));
-      graph.setNodeAttribute(id, 'y', Math.min(Math.max(ny, oy + 10), oy + boxH - 10));
+      var c = fitCoords(p);
+      if (!c) return;
+      graph.setNodeAttribute(id, 'x', c.x);
+      graph.setNodeAttribute(id, 'y', c.y);
     });
+  }
+
+  /* ---- cámara: encuadra un conjunto de nodos (usado por el foco contextual) ---- */
+  function sigmaExtent() {
+    var ext = graphExtent();
+    var W = canvas.clientWidth || 1, H = canvas.clientHeight || 1;
+    var cx = (ext.minX + ext.maxX) / 2, cy = (ext.minY + ext.maxY) / 2;
+    var spanX = Math.max(ext.maxX - ext.minX, W, 1e-6);
+    var spanY = Math.max(ext.maxY - ext.minY, H, 1e-6);
+    return { minX: cx - spanX / 2, maxX: cx + spanX / 2, minY: cy - spanY / 2, maxY: cy + spanY / 2 };
+  }
+  function cameraForBBox(minX, maxX, minY, maxY, pad, padRightPx) {
+    var W = canvas.clientWidth || 1, H = canvas.clientHeight || 1;
+    var WEff = Math.max(W - (padRightPx || 0), 120); // área realmente visible
+    var ext = sigmaExtent();
+    var maxDim = Math.max(ext.maxX - ext.minX, ext.maxY - ext.minY, 1e-6);
+    var vr = H / W;
+    var gr = (ext.maxY - ext.minY) / Math.max(ext.maxX - ext.minX, 1e-6);
+    var cr = ((vr < 1 && gr > 1) || (vr > 1 && gr < 1)) ? 1 : Math.min(Math.max(gr, 1 / gr), Math.max(1 / vr, vr));
+    var minDim = Math.min(W, H);
+    var normW = (maxX - minX) / maxDim;
+    var normH = (maxY - minY) / maxDim;
+    var ratio = Math.max((normW * minDim * cr) / WEff, (normH * minDim * cr) / H) * (1 + pad);
+    var cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    var state = {
+      x: 0.5 + (cx - (ext.minX + ext.maxX) / 2) / maxDim,
+      y: 0.5 + (cy - (ext.minY + ext.maxY) / 2) / maxDim,
+      angle: 0,
+      ratio: Math.min(Math.max(ratio, 0.05), 4),
+      cr: cr,
+      minDim: minDim,
+    };
+    // centra el contenido en el área visible (no bajo el panel)
+    if (padRightPx) {
+      state.x += ((padRightPx / 2) * state.ratio) / (minDim * cr);
+    }
+    return state;
   }
 
   /* ---- etiquetas mono con halo del color del papel + anti-colisión por frame ---- */
@@ -700,8 +761,8 @@ import Graph from 'graphology';
     window.__ge = { renderer: renderer, graph: graph };  // sonda de verificación
 
     renderer.on('clickNode', function(params) {
-      highlightNeighborhood(params.node);
-      showDetailById(params.node);
+      showDetailById(params.node);                       // abre el panel primero…
+      highlightNeighborhood(params.node, { focus: true }); // …para encuadrar su hueco
     });
     // reinicia el registro de colisiones de etiquetas en cada frame
     renderer.on('beforeRender', function() { labelBoxes.length = 0; });
@@ -742,6 +803,7 @@ import Graph from 'graphology';
         nodes: graph.order,
         edges: graph.size,
         visible: graph.nodes().filter(function(id) { return !graph.getNodeAttribute(id, 'hidden'); }).length,
+        revealed: revealedNodes.length,
         container: { w: W, h: H },
         extent: ext,
         bbox: { minX: minNX, maxX: maxNX, minY: minNY, maxY: maxNY },
@@ -776,9 +838,33 @@ import Graph from 'graphology';
   }
   new MutationObserver(repaintPalette).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
-  function highlightNeighborhood(nodeId) {
+  var revealedNodes = [];
+  var revealedEdges = [];
+
+  function highlightNeighborhood(nodeId, opts) {
     if (!graph || !renderer) return;
     highlightedNodeId = nodeId;
+    // revelado contextual: los vecinos de una capa apagada se encienden
+    // (sigma respeta 'hidden' antes de los reducers, hay que tocar el grafo)
+    revealedNodes.length = 0;
+    revealedEdges.length = 0;
+    graph.neighbors(nodeId).forEach(function(n) {
+      if (graph.getNodeAttribute(n, 'hidden')) {
+        graph.setNodeAttribute(n, 'hidden', false);
+        var c = fitCoords(rawPos[n]);          // dejan el "aparcadero" del centro
+        if (c) {
+          graph.setNodeAttribute(n, 'x', c.x);
+          graph.setNodeAttribute(n, 'y', c.y);
+        }
+        revealedNodes.push(n);
+      }
+    });
+    graph.edges(nodeId).forEach(function(e) {
+      if (graph.getEdgeAttribute(e, 'hidden')) {
+        graph.setEdgeAttribute(e, 'hidden', false);
+        revealedEdges.push(e);
+      }
+    });
     if (hlChip && graphData) {
       var hlNode = graphData.nodes.find(function(n) { return n.id === nodeId; });
       hlChip.textContent = 'Resaltando ' + ((hlNode && (hlNode.label || hlNode.id)) || nodeId) + ' — limpiar';
@@ -786,33 +872,63 @@ import Graph from 'graphology';
     }
     var keep = {};
     keep[nodeId] = true;
-    graph.neighbors(nodeId).forEach(function(n) { keep[n] = true; });
+    var neighbors = graph.neighbors(nodeId);
+    neighbors.forEach(function(n) { keep[n] = true; });
     var keepEdges = {};
     graph.edges(nodeId).forEach(function(e) { keepEdges[e] = true; });
+    // etiquetas: solo el top-N del vecindario (476 labels a la vez = ruido)
+    var LABEL_TOP_N = 24;
+    var labelKeep = {};
+    labelKeep[nodeId] = true;
+    neighbors
+      .slice()
+      .sort(function(a, b) { return (degrees[b] || 0) - (degrees[a] || 0); })
+      .slice(0, LABEL_TOP_N)
+      .forEach(function(n) { labelKeep[n] = true; });
 
     renderer.setSetting('nodeReducer', function(node, data) {
       var res = Object.assign({}, data);
       if (!keep[node]) {
-        res.color = rgba(0.05);
+        res.color = rgba(0.12);   // fantasma: contexto sin competir con el foco
         res.label = '';
       } else if (node === nodeId) {
         res.color = rgba(0.94);
-        res.size = Math.max(data.size, 8);
+        res.size = Math.max(data.size, 10);
         res.labelColor = rgba(0.95);
       } else {
         res.color = rgba(0.82);
         res.size = Math.max(data.size, 6.3);
         res.labelColor = rgba(0.88);
+        if (labelKeep[node]) res.forceLabel = true;  // salta el grid de etiquetas
+        else res.label = '';
       }
       return res;
     });
     renderer.setSetting('edgeReducer', function(edge, data) {
       var res = Object.assign({}, data);
       if (!keepEdges[edge]) { res.hidden = true; }
-      else { res.color = rgba(0.55); res.size = 1.2; res.hidden = false; }
+      else { res.color = rgba(0.34); res.size = 1; res.hidden = false; }
       return res;
     });
     renderer.refresh();
+    // zoom suave al vecindario revelado (solo en clic/foco explícito, no en hover)
+    if (opts && opts.focus && revealedNodes.length) {
+      var mnX = Infinity, mxX = -Infinity, mnY = Infinity, mxY = -Infinity;
+      var ids = revealedNodes.concat([nodeId]);
+      ids.forEach(function(id) {
+        if (!graph.hasNode(id)) return;
+        var a = graph.getNodeAttributes(id);
+        if (a.x < mnX) mnX = a.x; if (a.x > mxX) mxX = a.x;
+        if (a.y < mnY) mnY = a.y; if (a.y > mxY) mxY = a.y;
+      });
+      if (mnX < mxX) {
+        var W2 = canvas.clientWidth || 1;
+        var panelW = W2 > 680 && detail.classList.contains('open') ? 360 : 0;
+        var state = cameraForBBox(mnX, mxX, mnY, mxY, 0.2, panelW);
+        state.ratio = Math.max(state.ratio, 0.3);   // sin zooms absurdos
+        renderer.getCamera().animate(state, { duration: 900, easing: 'quadraticOut' });
+      }
+    }
   }
 
   function resetHighlight() {
@@ -821,6 +937,16 @@ import Graph from 'graphology';
     if (hlChip) hlChip.hidden = true;
     renderer.setSetting('nodeReducer', null);
     renderer.setSetting('edgeReducer', null);
+    if (revealedNodes.length) {
+      var W = canvas.clientWidth || 0, H = canvas.clientHeight || 0;
+      revealedNodes.forEach(function(id) {
+        graph.setNodeAttribute(id, 'x', W / 2);
+        graph.setNodeAttribute(id, 'y', H / 2);
+      });
+    }
+    revealedNodes.length = 0;
+    revealedEdges.length = 0;
+    if (graph) applyFilterState(); // los revelados vuelven a su estado de filtro
     renderer.refresh();
   }
 
