@@ -104,7 +104,7 @@ beforeAll(() => {
       degrees.set(e.target, (degrees.get(e.target) || 0) + 1)
     }
   }
-})
+}, 120_000) // fix: fresh-checkout graph generation exceeds vitest's 10s default hookTimeout
 
 describe('Knowledge Graph Integrity Suite', () => {
   it('artifact parses and metadata counts match nodes and edges arrays', () => {
