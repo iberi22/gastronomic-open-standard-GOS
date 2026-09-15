@@ -465,6 +465,99 @@ const DIETS = [
   },
 ]
 
+const DIET_SYNONYMS = {
+  diet_vegano: ['vegano', 'vegan', 'vegana', 'veganism', 'veganismo'],
+  diet_vegetariano: ['vegetariano', 'vegetarian', 'vegetariana'],
+  diet_sin_gluten: [
+    'sin gluten',
+    'gluten free',
+    'gluten-free',
+    'glutenfree',
+    'sin_gluten',
+    'celiaco',
+    'celíaca',
+    'celiac',
+  ],
+  diet_keto: [
+    'keto',
+    'cetogenico',
+    'cetogénico',
+    'cetogenica',
+    'cetogénica',
+    'low-carb',
+    'low carb',
+    'lchf',
+    'ceto',
+    'grasa_saludable',
+  ],
+  diet_mediterranea: [
+    'mediterranea',
+    'mediterránea',
+    'mediterranean',
+    'mediterraneo',
+    'mediterráneo',
+    'aceite de oliva',
+    'pescado',
+  ],
+  diet_alta_proteina: [
+    'alta proteina',
+    'alta proteína',
+    'high protein',
+    'high-protein',
+    'highprotein',
+    'proteina',
+    'proteína',
+    'proteico',
+    'proteica',
+    'proteina_magra',
+  ],
+}
+
+function normalizeText(text) {
+  return String(text || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+}
+
+function getMatchingDiets(items) {
+  const matched = new Set()
+  const list = Array.isArray(items) ? items : [items]
+  for (const raw of list) {
+    if (!raw) continue
+    const norm = normalizeText(raw)
+    for (const [dietId, synonyms] of Object.entries(DIET_SYNONYMS)) {
+      for (const syn of synonyms) {
+        const normSyn = normalizeText(syn)
+        if (norm.includes(normSyn)) {
+          matched.add(dietId)
+        }
+      }
+    }
+  }
+  return Array.from(matched)
+}
+
+function extractAliasStrings(aliases) {
+  const list = []
+  if (!aliases) return list
+  if (typeof aliases === 'string') {
+    list.push(aliases)
+  } else if (Array.isArray(aliases)) {
+    for (const item of aliases) {
+      if (typeof item === 'string') list.push(item)
+      else if (typeof item === 'object' && item !== null) {
+        list.push(...extractAliasStrings(item))
+      }
+    }
+  } else if (typeof aliases === 'object') {
+    for (const val of Object.values(aliases)) {
+      list.push(...extractAliasStrings(val))
+    }
+  }
+  return list
+}
+
 function isLatinText(text) {
   return /[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]/.test(text) && !/[\u4e00-\u9fa5]/.test(text)
 }
@@ -593,6 +686,69 @@ export function generateGraph() {
   const recipeRegions = new Map()
   const ingredientCategoriesAdded = new Set()
   const ingredientRecipes = new Map()
+
+  // Seed diet nodes
+  for (const d of DIETS) {
+    if (!nodes.has(d.id)) {
+      nodes.set(d.id, {
+        id: d.id,
+        label: d.label,
+        type: 'diet',
+        color: NODE_COLORS.diet,
+        size: 18,
+        rule: d.rule,
+      })
+    }
+  }
+
+  // Canonical linking map from curated ingredient files (ingredients/**)
+  const canonicalByAlias = new Map()
+  let totalAliasesDeclared = 0
+  let aliasLinksCount = 0
+
+  function scanAliases(dir) {
+    if (!fs.existsSync(dir)) return
+    const entries = fs.readdirSync(dir, { withFileTypes: true })
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name)
+      if (entry.isDirectory()) {
+        if (entry.name === PENDING_REVIEW_DIRNAME || entry.name === '_archive')
+          continue
+        scanAliases(fullPath)
+      } else if (
+        entry.isFile() &&
+        entry.name.endsWith('.md') &&
+        entry.name !== 'README.md'
+      ) {
+        try {
+          const content = fs.readFileSync(fullPath, 'utf8')
+          const parsed = matter(content)
+          const fm = parsed.data
+          if (!fm.name || !isLatinText(fm.name) || isPlaceholderName(fm.name))
+            continue
+          const canonicalName = fm.name
+          const canonicalId = `ingredient_${sanitizeId(canonicalName)}`
+          canonicalByAlias.set(sanitizeId(canonicalName), canonicalId)
+
+          const aliasStrings = extractAliasStrings(fm.aliases)
+          for (const alias of aliasStrings) {
+            const sAlias = sanitizeId(alias)
+            if (sAlias && sAlias !== sanitizeId(canonicalName)) {
+              canonicalByAlias.set(sAlias, canonicalId)
+              totalAliasesDeclared++
+            }
+          }
+        } catch {}
+      }
+    }
+  }
+
+  scanAliases(ingredientsDir)
+  scanAliases(siteContentIngredientsDir)
+
+  if (totalAliasesDeclared === 0) {
+    console.log('⚠️ aliases: none found — canonical linking skipped')
+  }
 
   function getOrCreateCategoryNode(categoryName) {
     const catId = `category_${sanitizeId(categoryName)}`
@@ -772,38 +928,19 @@ export function generateGraph() {
                 }
               }
             }
-            // diet inference via tags
-            if (Array.isArray(fm.tags)) {
-              const tagMap = {
-                'sin gluten': 'diet_sin_gluten',
-                vegano: 'diet_vegano',
-                vegetariano: 'diet_vegetariano',
-                keto: 'diet_keto',
-                mediterranea: 'diet_mediterranea',
-              }
-              for (const tg of fm.tags) {
-                const key = String(tg).toLowerCase()
-                for (const [k, dietId] of Object.entries(tagMap)) {
-                  if (key.includes(k)) {
-                    const dietLabel =
-                      DIETS.find((d) => d.id === dietId)?.label || k
-                    if (!nodes.has(dietId))
-                      nodes.set(dietId, {
-                        id: dietId,
-                        label: dietLabel,
-                        type: 'diet',
-                        color: NODE_COLORS.diet,
-                        size: 20,
-                      })
-                    edges.push({
-                      source: ingId,
-                      target: dietId,
-                      type: 'FITS_DIET',
-                      weight: 0.8,
-                    })
-                  }
-                }
-              }
+            // diet inference via tags and group
+            const ingDietItems = [
+              ...(Array.isArray(fm.tags) ? fm.tags : fm.tags ? [fm.tags] : []),
+              ...(fm.group ? [fm.group] : []),
+            ]
+            const matchedIngDiets = getMatchingDiets(ingDietItems)
+            for (const dietId of matchedIngDiets) {
+              edges.push({
+                source: ingId,
+                target: dietId,
+                type: 'FITS_DIET',
+                weight: 1,
+              })
             }
           } catch {
             /* ignore */
@@ -881,6 +1018,36 @@ export function generateGraph() {
             size: 30,
           })
 
+          // Diet inference for recipes
+          const recipeDietItems = [
+            ...(Array.isArray(fm.tags) ? fm.tags : fm.tags ? [fm.tags] : []),
+            ...(Array.isArray(categories)
+              ? categories
+              : categories
+                ? [categories]
+                : []),
+            ...(Array.isArray(fm.category)
+              ? fm.category
+              : fm.category
+                ? [fm.category]
+                : []),
+            ...(Array.isArray(fm.diet) ? fm.diet : fm.diet ? [fm.diet] : []),
+            ...(Array.isArray(fm.diets)
+              ? fm.diets
+              : fm.diets
+                ? [fm.diets]
+                : []),
+          ]
+          const recipeDiets = getMatchingDiets(recipeDietItems)
+          for (const dietId of recipeDiets) {
+            edges.push({
+              source: recipeId,
+              target: dietId,
+              type: 'FITS_DIET',
+              weight: 1,
+            })
+          }
+
           // Extract ingredients
           const contentIngredients = extractIngredientsFromContent(
             parsed.content,
@@ -900,7 +1067,20 @@ export function generateGraph() {
 
           for (const ing of allIngredients) {
             if (!isLatinText(ing)) continue
-            const ingId = `ingredient_${sanitizeId(ing)}`
+            const rawSlug = sanitizeId(ing)
+            let ingId
+            let isAliasMatch = false
+
+            if (canonicalByAlias.has(rawSlug)) {
+              ingId = canonicalByAlias.get(rawSlug)
+              if (ingId !== `ingredient_${rawSlug}`) {
+                aliasLinksCount++
+                isAliasMatch = true
+              }
+            } else {
+              ingId = `ingredient_${rawSlug}`
+            }
+
             currentRecipeIngIds.push(ingId)
 
             if (!nodes.has(ingId)) {
@@ -910,7 +1090,11 @@ export function generateGraph() {
                 type: 'ingredient',
                 color: NODE_COLORS.ingredient,
                 size: 25,
+                ...(isAliasMatch ? { matched_alias: true } : {}),
               })
+            } else if (isAliasMatch) {
+              const existingNode = nodes.get(ingId)
+              existingNode.matched_alias = true
             }
 
             edges.push({
@@ -1099,24 +1283,42 @@ export function generateGraph() {
             })
           }
 
-          if (Array.isArray(fm.substitutes)) {
-            for (const sub of fm.substitutes) {
-              const subName = typeof sub === 'string' ? sub : sub.name || ''
-              if (
-                subName &&
-                isLatinText(subName) &&
-                !isPlaceholderName(subName)
-              ) {
-                const subId = `ingredient_${sanitizeId(subName)}`
-                if (subId !== ingId) {
-                  edges.push({
-                    source: ingId,
-                    target: subId,
-                    type: 'SUBSTITUTE_FOR',
-                    weight: 3,
-                  })
-                }
+          const ingDietItems = [
+            ...(Array.isArray(fm.tags) ? fm.tags : fm.tags ? [fm.tags] : []),
+            ...(fm.group ? [fm.group] : []),
+          ]
+          const matchedIngDiets = getMatchingDiets(ingDietItems)
+          for (const dietId of matchedIngDiets) {
+            edges.push({
+              source: ingId,
+              target: dietId,
+              type: 'FITS_DIET',
+              weight: 1,
+            })
+          }
+
+          const substitutesList = extractAliasStrings(fm.substitutes)
+          for (const subName of substitutesList) {
+            if (!subName || !isLatinText(subName) || isPlaceholderName(subName))
+              continue
+            const sSub = sanitizeId(subName)
+            const subId = canonicalByAlias.get(sSub) || `ingredient_${sSub}`
+            if (subId !== ingId) {
+              if (!nodes.has(subId)) {
+                nodes.set(subId, {
+                  id: subId,
+                  label: subName,
+                  type: 'ingredient',
+                  color: NODE_COLORS.ingredient,
+                  size: 25,
+                })
               }
+              edges.push({
+                source: ingId,
+                target: subId,
+                type: 'SUBSTITUTE_FOR',
+                weight: 1,
+              })
             }
           }
         } catch (e) {
@@ -1196,16 +1398,26 @@ export function generateGraph() {
     }
   }
 
+  // Deduplicate edges per (source, target, type)
+  const edgeDedupeMap = new Map()
+  for (const e of edges) {
+    const key = `${e.source}|${e.target}|${e.type}`
+    if (!edgeDedupeMap.has(key)) {
+      edgeDedupeMap.set(key, e)
+    }
+  }
+  const uniqueEdges = Array.from(edgeDedupeMap.values())
+
   // ForceAtlas2 layout precomputado (sigma.js/WebGL renderiza x,y estaticos:
   // cero fisica en cliente, pan/zoom por GPU). Determinista via seed LCG para
   // diffs estables entre builds.
-  computeLayout(nodes, edges)
+  computeLayout(nodes, uniqueEdges)
 
   // Poda de aristas huérfanas: emisiones que referencian nodos inexistentes
   // (nombres vacíos/no-latinos, sustitutos fuera de la DB). Evita ~10% de
   // aristas muertas en el JSON y reporta los ids para depurar fuentes.
   const missingIds = new Set()
-  const cleanEdges = edges.filter((e) => {
+  const cleanEdges = uniqueEdges.filter((e) => {
     const ok =
       nodes.has(e.source) && nodes.has(e.target) && e.source !== e.target
     if (!ok) {
@@ -1241,6 +1453,26 @@ export function generateGraph() {
       `ℹ️ ingredients/: ${totalSkips} omisiones — staging "${PENDING_REVIEW_DIRNAME}": ${pendingFilesSkipped.size} archivos (repo + copia del sitio) · sin nombre latino: ${excludedSkips.noLatin} · placeholders: ${excludedSkips.placeholder}`,
     )
   }
+
+  // Integrity check: count degrees and isolated nodes
+  const degrees = new Map()
+  for (const nodeId of nodes.keys()) degrees.set(nodeId, 0)
+  for (const e of cleanEdges) {
+    degrees.set(e.source, (degrees.get(e.source) || 0) + 1)
+    degrees.set(e.target, (degrees.get(e.target) || 0) + 1)
+  }
+
+  const isolatedNodes = Array.from(nodes.values()).filter(
+    (n) => (degrees.get(n.id) || 0) === 0,
+  )
+  const edgeTypesCount = new Set(cleanEdges.map((e) => e.type)).size
+
+  if (totalAliasesDeclared > 0) {
+    console.log(`ℹ️ alias links: ${aliasLinksCount}`)
+  }
+  console.log(
+    `ℹ️ integridad: ${isolatedNodes.length} nodos aislados · vocabulario: ${edgeTypesCount} tipos de arista`,
+  )
 
   const graph = {
     nodes: Array.from(nodes.values()),
