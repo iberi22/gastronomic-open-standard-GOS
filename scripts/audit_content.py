@@ -29,7 +29,16 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-import yaml
+
+try:
+    import yaml
+except ModuleNotFoundError:  # mensaje accionable en lugar de traceback crudo
+    sys.stderr.write(
+        "Se requiere PyYAML para auditar el frontmatter. Usa el venv del repo "
+        "(`.venv/bin/python scripts/audit_content.py ...`) o instálalo: "
+        "`pip install pyyaml`.\n"
+    )
+    raise SystemExit(2)
 
 # Canonical Latin character set (ASCII + Spanish accents/diacritics & standard punctuation)
 LATIN_CHARSET = set(
