@@ -6,6 +6,10 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 ORIGIN_URL = "https://gos-site.pages.dev"
 FREE_DAILY_LIMIT = "100"
+# Billing central SWAL (opcional; sin esto rige legacy D1+free).
+# BILLING_URL = "https://swal-billing.<tu-cuenta>.workers.dev"
+# SERVICE_SHARED_SECRET va por secreto, nunca aquí:
+#   wrangler secret put SERVICE_SHARED_SECRET
 
 [[kv_namespaces]]
 binding = "RATE_LIMIT_KV"

@@ -9,7 +9,11 @@ export interface Env {
   }
   ORIGIN_URL?: string
   FREE_DAILY_LIMIT?: string
+  BILLING_URL?: string
+  BILLING_SERVICE_SECRET?: string
 }
+
+import { reportSwalUsage, verifySwalKey } from './swal-billing'
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -96,8 +100,41 @@ export default {
 
     let isPaidKey = false
     let keyTier = 'free'
+    let swalKey: string | null = null
+    let swalRemaining = 0
 
-    if (apiKey) {
+    // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
+    if (
+      apiKey &&
+      apiKey.startsWith('swal_') &&
+      env.BILLING_URL &&
+      env.BILLING_SERVICE_SECRET
+    ) {
+      const verdict = await verifySwalKey(
+        env.BILLING_URL,
+        env.BILLING_SERVICE_SECRET,
+        apiKey,
+      )
+      if (!verdict) {
+        return jsonResponse(
+          { error: 'Billing unavailable: retry shortly' },
+          503,
+        )
+      }
+      if (!verdict.active) {
+        return jsonResponse(
+          {
+            error: 'Unauthorized: Invalid or inactive API key',
+            tier: 'invalid',
+          },
+          401,
+        )
+      }
+      isPaidKey = true
+      keyTier = `swal:${verdict.plan}`
+      swalKey = apiKey
+      swalRemaining = verdict.remaining
+    } else if (apiKey) {
       if (env.DB) {
         try {
           const stmt = env.DB.prepare(
@@ -209,6 +246,13 @@ export default {
           402,
         )
       }
+      // Cuota del billing central para keys swal_* (el plan free/legacy no llega aquí).
+      if (swalKey && swalRemaining <= 0) {
+        return jsonResponse(
+          { error: 'cuota diaria agotada', tier: keyTier, remaining: 0 },
+          429,
+        )
+      }
       let body: { prompt?: unknown; appId?: unknown }
       try {
         body = (await request.json()) as typeof body
@@ -268,6 +312,14 @@ export default {
       const aiWithMargin = tokensUsed * 0.00001 * 1.1
       const subtotal = 0.02 + aiWithMargin
       const handling = subtotal * 0.2
+      // Reporta consumo al billing central (best-effort, no bloquea respuesta).
+      if (swalKey && env.BILLING_URL && env.BILLING_SERVICE_SECRET) {
+        await reportSwalUsage(
+          env.BILLING_URL,
+          env.BILLING_SERVICE_SECRET,
+          swalKey,
+        )
+      }
       return jsonResponse({
         text,
         tokensUsed,
