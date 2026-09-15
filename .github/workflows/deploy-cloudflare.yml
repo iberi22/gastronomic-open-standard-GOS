@@ -61,7 +61,7 @@ jobs:
         run: pnpm exec astro build
 
       - name: ⚡ Deploy to Cloudflare Pages (wrangler-action, patrón canónico worldexams/gara-g)
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
