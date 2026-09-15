@@ -1,40 +1,50 @@
 ---
 active_compounds:
-- benefit: Antioxidant and anti-inflammatory effects.
-  name: Polyphenols
-  scientific_ref: PubMed
+  - benefit: Antioxidant and anti-inflammatory effects.
+    name: Polyphenols
+    scientific_ref: PubMed
 aliases:
+  es:
+    - lenteja
+    - lentejas
+    - lentejas secas
   en:
-  - lentils
+    - lentils
+    - lentil
+    - dry lentils
 group: Legume
 health_registry:
-- compounds:
-  - Folate
-  - Soluble Fiber
-  - Magnesium
-  condition: Cardiovascular Health
-  evidence_level: High
-  mechanism: High fiber and folate lower homocysteine levels and improve lipid profile.
-  studies:
-  - doi: 10.1001/archinte.161.21.2573
-    source: Archives of Internal Medicine
-    title: Legume consumption and risk of coronary heart disease in US men and women
-    url: https://pubmed.ncbi.nlm.nih.gov/11718588/
-    year: 2001
-- compounds:
-  - Protein
-  - Fiber
-  condition: Weight Management
-  evidence_level: High
-  mechanism: High protein and fiber content increase satiety and reduce total energy
-    intake.
-  studies:
-  - doi: 10.3945/ajcn.115.124677
-    source: American Journal of Clinical Nutrition
-    title: 'Effects of dietary pulse consumption on body weight: a systematic review
-      and meta-analysis of randomized controlled trials'
-    url: https://pubmed.ncbi.nlm.nih.gov/27025822/
-    year: 2016
+  - compounds:
+      - Folate
+      - Soluble Fiber
+      - Magnesium
+    condition: Cardiovascular Health
+    evidence_level: High
+    mechanism: High fiber and folate lower homocysteine levels and improve lipid profile.
+    studies:
+      - doi: 10.1001/archinte.161.21.2573
+        source: Archives of Internal Medicine
+        title: >-
+          Legume consumption and risk of coronary heart disease in US men and
+          women
+        url: 'https://pubmed.ncbi.nlm.nih.gov/11718588/'
+        year: 2001
+  - compounds:
+      - Protein
+      - Fiber
+    condition: Weight Management
+    evidence_level: High
+    mechanism: >-
+      High protein and fiber content increase satiety and reduce total energy
+      intake.
+    studies:
+      - doi: 10.3945/ajcn.115.124677
+        source: American Journal of Clinical Nutrition
+        title: >-
+          Effects of dietary pulse consumption on body weight: a systematic
+          review and meta-analysis of randomized controlled trials
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27025822/'
+        year: 2016
 micronutrients:
   folate_ug: 479
   iron_mg: 7.5
@@ -52,12 +62,12 @@ portions:
   default_g: 100
 scientific_name: Lens culinaris
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- almuerzo
-- sopa
-- corazon_sano
-- hierro
+  - almuerzo
+  - sopa
+  - corazon_sano
+  - hierro
 ---
 
 # Scientific Analysis & Culinary Use

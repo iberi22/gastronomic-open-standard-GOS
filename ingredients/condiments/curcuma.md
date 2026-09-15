@@ -1,37 +1,45 @@
 ---
 active_compounds:
-- benefit: Potent anti-inflammatory polyphenol and NF-kB inhibitor.
-  name: Curcurmin
-  scientific_ref: NIH
+  - benefit: Potent anti-inflammatory polyphenol and NF-kB inhibitor.
+    name: Curcurmin
+    scientific_ref: NIH
 aliases:
+  es:
+    - curcuma
+    - cúrcuma
+    - curcuma molida
+    - turmeric
   en:
-  - turmeric
+    - turmeric
+    - ground turmeric
 group: Condiment
 health_registry:
-- compounds:
-  - Curcumin
-  condition: Osteoarthritis / Joint Inflammation
-  evidence_level: High
-  mechanism: Downregulates inflammatory cytokines (TNF-alpha, IL-6) and inhibits NF-kB
-    pathway.
-  studies:
-  - doi: 10.1089/jmf.2016.3705
-    source: Journal of Medicinal Food
-    title: 'Efficacy of Turmeric Extracts and Curcumin for Alleviating the Symptoms
-      of Joint Arthritis: A Systematic Review and Meta-Analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/27533649/
-    year: 2016
-- compounds:
-  - Curcuminoids
-  condition: Metabolic Syndrome
-  evidence_level: High
-  mechanism: Reduces oxidative stress and improves lipid peroxidation markers.
-  studies:
-  - doi: 10.3390/nu9101047
-    source: Nutrients
-    title: 'Curcumin and Health: A Comprehensive Review'
-    url: https://pubmed.ncbi.nlm.nih.gov/29065496/
-    year: 2017
+  - compounds:
+      - Curcumin
+    condition: Osteoarthritis / Joint Inflammation
+    evidence_level: High
+    mechanism: >-
+      Downregulates inflammatory cytokines (TNF-alpha, IL-6) and inhibits NF-kB
+      pathway.
+    studies:
+      - doi: 10.1089/jmf.2016.3705
+        source: Journal of Medicinal Food
+        title: >-
+          Efficacy of Turmeric Extracts and Curcumin for Alleviating the
+          Symptoms of Joint Arthritis: A Systematic Review and Meta-Analysis
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27533649/'
+        year: 2016
+  - compounds:
+      - Curcuminoids
+    condition: Metabolic Syndrome
+    evidence_level: High
+    mechanism: Reduces oxidative stress and improves lipid peroxidation markers.
+    studies:
+      - doi: 10.3390/nu9101047
+        source: Nutrients
+        title: 'Curcumin and Health: A Comprehensive Review'
+        url: 'https://pubmed.ncbi.nlm.nih.gov/29065496/'
+        year: 2017
 image: ../../images/curcuma.jpg
 micronutrients:
   iron_mg: 55
@@ -48,12 +56,12 @@ portions:
   default_g: 3
 scientific_name: Curcuma longa
 sources:
-- USDA FoodData Central
-- NIH National Center for Complementary and Integrative Health
+  - USDA FoodData Central
+  - NIH National Center for Complementary and Integrative Health
 tags:
-- antiinflamatorio
-- especias
-- colorante_natural
+  - antiinflamatorio
+  - especias
+  - colorante_natural
 ---
 
 # Scientific Analysis & Culinary Use

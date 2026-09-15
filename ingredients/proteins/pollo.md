@@ -1,27 +1,36 @@
 ---
 active_compounds:
-- benefit: Dipeptide with antiglycation properties.
-  name: Carnosine
-  scientific_ref: PubMed
+  - benefit: Dipeptide with antiglycation properties.
+    name: Carnosine
+    scientific_ref: PubMed
 aliases:
+  es:
+    - pollo
+    - pechuga de pollo
+    - carne de pollo
+    - pollo desmechado
+    - pollo picado
+    - muslo de pollo
   en:
-  - chicken
+    - chicken
+    - chicken breast
+    - poultry
 group: Protein
 health_registry:
-- compounds:
-  - Essential Amino Acids
-  - Leucine
-  condition: Muscle Maintenance
-  evidence_level: High
-  mechanism: High bioavailability protein supports myofibrillar protein synthesis.
-  studies:
-  - source: FAO/WHO
-    title: Protein digestibility and quality
-- compounds:
-  - Protein
-  condition: Weight Management
-  evidence_level: High
-  mechanism: High satiety per calorie and thermic effect of food (TEF).
+  - compounds:
+      - Essential Amino Acids
+      - Leucine
+    condition: Muscle Maintenance
+    evidence_level: High
+    mechanism: High bioavailability protein supports myofibrillar protein synthesis.
+    studies:
+      - source: FAO/WHO
+        title: Protein digestibility and quality
+  - compounds:
+      - Protein
+    condition: Weight Management
+    evidence_level: High
+    mechanism: High satiety per calorie and thermic effect of food (TEF).
 image: ../../images/pollo_crudo.jpg
 micronutrients:
   niacin_mg: 13.7
@@ -39,11 +48,18 @@ portions:
   default_g: 150
 scientific_name: Gallus gallus domesticus
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- proteina_magra
-- ajiaco
-- dieta
+  - proteina_magra
+  - ajiaco
+  - dieta
+substitutes:
+  - name: Carne de Res (Cortes Magros)
+    similarity_score: 0.8
+    notes: 'Proteína magra alternativa para sopas, guisos y salteados. Fuente: USDA.'
+  - name: Cerdo (Lomo/Pulpa)
+    similarity_score: 0.85
+    notes: Sustituto directo en cortes magros para salteados y sudados.
 ---
 
 # Scientific Analysis & Culinary Use

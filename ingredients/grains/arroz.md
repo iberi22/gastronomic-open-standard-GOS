@@ -1,10 +1,10 @@
 ---
-name: "Arroz Blanco"
-scientific_name: "Oryza sativa"
-group: "Grain"
-image: "../../images/arroz_blanco.jpg"
+name: Arroz Blanco
+scientific_name: Oryza sativa
+group: Grain
+image: ../../images/arroz_blanco.jpg
 portions:
-  default_g: 50 # Dry weight
+  default_g: 50
 nutrition_per_100g:
   calories: 365
   protein_g: 7.1
@@ -18,28 +18,44 @@ micronutrients:
   thiamin_mg: 0.6
   niacin_mg: 1.6
 active_compounds:
-  - name: "Starch (Amylopectin/Amylose)"
-    benefit: "Rapid energy source."
-    scientific_ref: "USDA"
+  - name: Starch (Amylopectin/Amylose)
+    benefit: Rapid energy source.
+    scientific_ref: USDA
 health_registry:
-  - condition: "Energy Recovery"
-    mechanism: "High glycemic index carbohydrates replenish muscle glycogen rapidly after exercise."
-    compounds: ["Amylopectin"]
-    evidence_level: "High"
+  - condition: Energy Recovery
+    mechanism: >-
+      High glycemic index carbohydrates replenish muscle glycogen rapidly after
+      exercise.
+    compounds:
+      - Amylopectin
+    evidence_level: High
     studies:
-      - title: "Carbohydrates for training and competition"
-        source: "Journal of Sports Sciences"
+      - title: Carbohydrates for training and competition
+        source: Journal of Sports Sciences
         year: 2011
-  - condition: "Digestive Tolerance"
-    mechanism: "Low fiber and low residue make it ideal for managing gastrointestinal distress (BRAT diet)."
-    compounds: ["Easily digestible starch"]
-    evidence_level: "Medium"
+  - condition: Digestive Tolerance
+    mechanism: >-
+      Low fiber and low residue make it ideal for managing gastrointestinal
+      distress (BRAT diet).
+    compounds:
+      - Easily digestible starch
+    evidence_level: Medium
 sources:
-  - "USDA FoodData Central"
+  - USDA FoodData Central
 tags:
   - base
   - energia
   - sin_gluten
+aliases:
+  es:
+    - arroz
+    - arroz blanco
+    - arroz grano largo
+    - arroz cocido
+  en:
+    - rice
+    - white rice
+    - cooked rice
 ---
 
 # Scientific Analysis & Culinary Use
