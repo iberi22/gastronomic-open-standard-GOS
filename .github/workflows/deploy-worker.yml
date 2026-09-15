@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: ⚡ Deploy API Gateway Worker (dry-run primero en PRs)
         uses: cloudflare/wrangler-action@v3
