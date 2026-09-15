@@ -348,6 +348,8 @@
 
 Este reporte es generado de forma determinista mediante el script `scripts/audit_content.py`.
 
+**Requisito:** Python 3.11+ con **PyYAML** (`pip install pyyaml`, o usa el venv del repo: `.venv/bin/python scripts/audit_content.py ...`).
+
 ### Comandos principales
 ```bash
 # Generar reporte Markdown y exportar métricas JSON
