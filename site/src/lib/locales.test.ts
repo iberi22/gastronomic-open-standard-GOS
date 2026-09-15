@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { alias, LOCALES, SUPPORTED_LOCALES } from './locales'
 
 describe('locales module', () => {
-  it('contains 20 canonical locales', () => {
-    expect(SUPPORTED_LOCALES).toHaveLength(20)
+  it('contains 22 canonical locales', () => {
+    expect(SUPPORTED_LOCALES).toHaveLength(22)
     const expected = [
       'es',
       'en',
@@ -25,6 +25,8 @@ describe('locales module', () => {
       'fr',
       'ta',
       'ur',
+      'id',
+      'mr',
     ]
     for (const code of expected) {
       expect(LOCALES[code]).toBeDefined()

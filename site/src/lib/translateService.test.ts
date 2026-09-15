@@ -37,7 +37,7 @@ describe('translateService', () => {
 
   it('returns all supported locales when no locale is provided', () => {
     const res = translateEntity({ entity: 'alicina' }, catalog)
-    expect(res.supported_locales).toHaveLength(20)
+    expect(res.supported_locales).toHaveLength(22)
     expect(res.count).toBeGreaterThan(0)
   })
 })
