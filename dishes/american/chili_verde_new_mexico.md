@@ -84,6 +84,13 @@ En Nuevo México, el chile verde no es solo un ingrediente, sino una religión c
 * Asar los chiles a fuego vivo es imprescindible para impartir ese toque ahumado característico de la cocina de Nuevo México.
 * Este estofado mejora ostensiblemente su sabor al día siguiente de su preparación.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante, Ácido, Umami, Ahumado
+* **Textura:** Tierna, Caldosa, Espesa
+* **Aroma:** Chiles asados, Cerdo estofado, Comino y ajo
+* **Presentación:** Estofado verde espeso con tiernos dados de cerdo sumergidos en una salsa brillante de chiles verdes asados, servido con tortillas de harina tibias.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

@@ -87,3 +87,12 @@ nutrition:
 
 * 四川老泡菜在厌氧发酵过程中产生大量乳酸（lactic acid）与有机酸，有效去腥并提升鱼肉蛋白质的鲜味感知。
 * 泡菜中的植物乳杆菌（Lactobacillus plantarum）发酵代谢产物富含风味酯类。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sour, Spicy, Savory, Umami, Refreshing
+* **Textura:** Tender fish, Crunchy pickles
+* **Aroma:** lacto-fermented sourness, pickled chili, scallion
+* **Presentación:** Pao Cai Yu (Sichuan Pickled Vegetable Fish) presentado de forma vistosa tradicional.

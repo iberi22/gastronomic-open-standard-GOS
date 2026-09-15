@@ -94,6 +94,13 @@ Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés y Provi
 
 ![Bolas de pescado fritas](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Marino, Especiado
+* **Textura:** Crujiente exterior, Pollo tierno
+* **Aroma:** Fritura de pescado
+* **Presentación:** Bolas de Pescado (Fish Balls) presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

@@ -98,6 +98,13 @@ El Mole Negro Oaxaqueño representa el pináculo de la gastronomía de Oaxaca. E
 * El chile chilhuacle negro es endémico de la Cañada de Oaxaca; en su ausencia se combina pasilla con ancho tatemado.
 * Las hojas de aguacate criollo otorgan un aroma anisado único e insustituible.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce amargo, Especiado, Umami
+* **Textura:** Tersa, Espesa, Terciopelo
+* **Aroma:** Chiles tatemados, Cacao, Hoja de aguacate tostada
+* **Presentación:** Pieza de guajolote o pollo sumergida en una densa y brillante salsa negra profunda, decorada con ajonjolí blanco tostado.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

@@ -92,3 +92,12 @@ nutrition:
 
 * 长时间小火慢炖促使肌肉组织中的胶原蛋白（collagen）充分热解转化为可溶性明胶（gelatin），形成入口即化的细腻质感。
 * 黄酒中的乙醇与有机酸与酱油中的氨基酸在高温下发生美拉德反应（Maillard reaction），赋予肉块特有的红亮色彩与醇厚香气。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Savory, Sweet, Rich, Umami
+* **Textura:** Melt-in-the-mouth, Tender, Gelatinous
+* **Aroma:** shaoxing wine, caramelized sugar, soy sauce
+* **Presentación:** Dongpo Rou (Dongpo Pork) presentado de forma vistosa tradicional.

@@ -106,6 +106,13 @@ El Arroz Llanero es un plato emblemático de la Orinoquía colombiana, preparado
 
 ![Arroz Llanero](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado
+* **Textura:** Suave, Jugoso
+* **Aroma:** Carnoso, Herbal, Frito
+* **Presentación:** Se sirve en bandejas grandes, ideal para compartir en reuniones y celebraciones llaneras.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

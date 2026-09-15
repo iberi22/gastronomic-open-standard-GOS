@@ -85,6 +85,13 @@ Surgido a mediados del siglo XIX entre los inmigrantes italianos y portugueses e
 * Usar caldo de almeja natural de buena calidad marca la diferencia en la profundidad marina de la sopa.
 * Deja reposar la sopa una hora antes de servir para que los sabores del tomate y el marisco se integren.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Ácido, Marino, Ahumado
+* **Textura:** Caldosa, Tierna, Crujiente
+* **Aroma:** Caldo de almejas, Tomate cocido, Tocineta dorada
+* **Presentación:** Sopa de caldo de tomate rojo vibrante repleta de almejas troceadas, patatas en cubos y verduras aromáticas.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

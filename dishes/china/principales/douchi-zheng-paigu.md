@@ -85,3 +85,12 @@ nutrition:
 
 * 豆豉（Douchi）经米曲霉（Aspergillus oryzae）发酵，富含大量由蛋白质降解产生的游离谷氨酸（glutamic acid）与小肽，赋予排骨天然强烈的鲜味。
 * 玉米淀粉糊在加热过程中包覆排骨表面，阻止肌纤维内部水分蒸发，使蒸出的排骨极其幼嫩。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Savory, Umami, Garlic, Salty
+* **Textura:** Juicy, Tender, Succulent
+* **Aroma:** fermented black bean, garlic, steamed pork
+* **Presentación:** Douchi Zheng Paigu (Steamed Pork Ribs with Fermented Black Beans) presentado de forma vistosa tradicional.

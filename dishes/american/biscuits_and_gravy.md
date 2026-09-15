@@ -80,6 +80,13 @@ Nacido como una comida de trabajo económica y calórica para leñadores y agric
 * Abundante pimienta negra es el sello distintivo de esta receta; no escatimes.
 * Si la salsa queda demasiado espesa al reposar, añade un chorrito extra de leche para aligerarla.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Creamy, Salado, Especiado, Mantequilloso
+* **Textura:** Esponjosa, Cremosa, Crujiente
+* **Aroma:** Salchicha dorada, Mantequilla horneada, Pimienta negra molida
+* **Presentación:** Biscuits caseros esponjosos cortados por la mitad, bañados generosamente con una salsa blanca es pesada y cargada de trozos de salchicha sazonada.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

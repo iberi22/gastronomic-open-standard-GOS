@@ -74,6 +74,17 @@ description: '* 2 libras de ñame pelado y en cubos'
 
 ![Mote de Queso Tradicional](../caribe/mote_de_queso/images/1.png)
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Lácteo, Umami
+* **Textura:** Cremoso, Suave, Espeso
+* **Aroma:** Lácteo, Cebolla, Achiote
+* **Presentación:** Se sirve en cazuela de barro, decorado con el hogao rojo y cubos de queso fresco.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

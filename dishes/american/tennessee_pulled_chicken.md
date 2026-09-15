@@ -79,6 +79,13 @@ En Tennessee y el centro del Sur estadounidense, la barbacoa no se limita al cer
 * Usar muslos de pollo en lugar de pechuga garantiza una textura extremadamente jugosa que no se seca durante el ahumado.
 * Añadir un toque de vinagre de manzana al final equilibra el dulzor de la salsa barbacoa.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce, Picante, Ácido
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Humo de nogal, Salsa dulce barbacoa, Especias tostadas
+* **Presentación:** Manojo de jugoso pollo desmenuzado en hebras impregnado de salsa barbacoa brillante, servido sobre bollos brioche tostados.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

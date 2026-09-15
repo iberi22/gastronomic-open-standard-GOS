@@ -116,3 +116,12 @@ O Tutu de Feijão é um ícone da fartura e tradição da cozinha caipira mineir
 - [Panelinha: Receita de Tutu de Feijão](https://www.panelinha.com.br/receita/tutu-de-feijao)
 - [Wikipédia PT: Tutu de feijão](https://pt.wikipedia.org/wiki/Tutu_de_feij%C3%A3o)
 - [Estadão Paladar: Culinária Mineira](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Defumado, Umami, Terroso
+* **Textura:** Purê denso, Cremoso, Pedacinhos crocantes de linguiça
+* **Aroma:** Bacon e linguiça fritos, Alho dourado, Feijão caseiro
+* **Presentación:** Servido em travessa de cerâmica ou ferro, coberto com rodelas de linguiça frita, bacon crocante, ovos cozidos fatiados e couve refogada ao lado.

@@ -133,6 +133,17 @@ El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión 
 - "Sírvelo justo antes de comer para evitar que se oxide."
 - "Perfecto para asados, arepas y comidas rápidas."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Suave, Cremoso, Cítrico
+* **Textura:** Cremoso con trozos de vegetales
+* **Aroma:** Aguacate fresco y cilantro
+* **Presentación:** Guacamole Colombiano presentado de forma vistosa tradicional.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

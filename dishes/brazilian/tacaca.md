@@ -115,3 +115,12 @@ O Tacacá é uma das sopas mais singulares do planeta, patrimônio cultural imat
 - [Folha de S.Paulo: Tacacá o Caldo Amazônico](https://www1.folha.uol.com.br/comida/2021/10/tacaca-caldo-amazonico.shtml)
 - [Wikipédia PT: Tacacá](https://pt.wikipedia.org/wiki/Tacac%C3%A1)
 - [Panelinha: Ingredientes Amazônicos](https://www.panelinha.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ácido, Umami, Salgado, Formigante (espilantol)
+* **Textura:** Caldo fluido, Goma viscosa, Camarão crocante
+* **Aroma:** Fermentado, Herbal, Picante
+* **Presentación:** Servido quentíssimo em uma cuia de cabaça tradicional, sem uso de talheres, tomado diretamente da cuia com auxílio de palito para os camarões.

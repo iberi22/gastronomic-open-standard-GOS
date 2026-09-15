@@ -17,16 +17,16 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Frijol bola roja (o Cargamanto)
-- Arroz blanco
-- Carne molida
-- Chicharrón
-- Chorizo
-- Morcilla
-- Huevo frito
-- Plátano maduro
-- Arepa
-- Aguacate
+  - Frijol bola roja (o Cargamanto)
+  - Arroz blanco
+  - Carne molida
+  - Chicharrón
+  - Chorizo
+  - Morcilla
+  - Huevo frito
+  - Plátano maduro
+  - Arepa
+  - Aguacate
 nutrition:
   calories: 1800
   macros:

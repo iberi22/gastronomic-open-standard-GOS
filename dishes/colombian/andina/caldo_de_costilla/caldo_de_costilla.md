@@ -104,6 +104,13 @@ El Caldo de Costilla es un desayuno típico de la región andina colombiana, esp
 
 ![Caldo de Costilla](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Umami (hueso), Herbal (cilantro)
+* **Textura:** Líquido (Caldo claro), Suave (Papa/Carne)
+* **Aroma:** Res hervida, Cebolla larga, Cilantro
+* **Presentación:** Tazón grande y profundo. El caldo debe verse dorado y translúcido (no turbio). La costilla debe sobresalir y estar acompañada de papas enteras o en trozos grandes. Cilantro fresco esparcido encima al momento.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

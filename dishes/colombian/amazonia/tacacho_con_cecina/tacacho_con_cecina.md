@@ -96,6 +96,13 @@ El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente po
 
 ![Tacacho con cecina](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Ligeramente dulce (si se usa plátano maduro)
+* **Textura:** Suave (tacacho), Crujiente (cecina)
+* **Aroma:** Ahumado (cecina), Tostado (plátano), Lácteo (manteca)
+* **Presentación:** Se sirve en bolas o discos, ideal para compartir en desayunos o reuniones familiares.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

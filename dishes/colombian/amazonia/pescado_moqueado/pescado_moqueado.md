@@ -91,6 +91,13 @@ El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana, ut
 
 ![Pescado moqueado en hojas](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Umami
+* **Textura:** Firme, Jugoso
+* **Aroma:** Ahumado, Herbal, Terroso
+* **Presentación:** Se sirve en porciones grandes, ideal para compartir y celebrar la tradición indígena.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

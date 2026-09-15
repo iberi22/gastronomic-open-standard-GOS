@@ -86,3 +86,12 @@ nutrition:
 
 * 土豆淀粉含有较多直链淀粉，高温复炸（200°C）时形成致密的玻璃态糊化淀粉膜，赋予极其持久的硬脆口感。
 * 米醋中的乙酸与白糖在热锅中快速浓缩，形成爽口的酸甜口味平衡。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet, Sour, Savory
+* **Textura:** Super crispy, Crunchy exterior, Tender interior
+* **Aroma:** fried batter, sweet vinegar, ginger and garlic
+* **Presentación:** Guobao Rou (东北锅包肉 / Crispy Sweet and Sour Pork) presentado de forma vistosa tradicional.

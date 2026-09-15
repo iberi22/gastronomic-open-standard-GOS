@@ -80,6 +80,13 @@ Mencionado desde las crónicas de Fray Bernardino de Sahagún, el pipián es uno
 4. **Sazonar pipián:** Fríe el puré verde en una cazuela con manteca caliente y cocina a fuego lento hasta que espese y suelte sus aceites.
 5. **Incorporar pollo:** Añade el pollo al pipián y deja dar un hervor de 15 minutos antes de servir.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Nuez terrosa, Herbal fresco, Levemente picante
+* **Textura:** Salsa granulosa suave, Untuosa
+* **Aroma:** Pepita tostada, Hoja santa
+* **Presentación:** Piezas de pollo bañadas en una espesa salsa verde esmeralda con un sutil brillo de aceite de pepita.
+
 ---
 
 ## Fuentes consultadas y enlaces

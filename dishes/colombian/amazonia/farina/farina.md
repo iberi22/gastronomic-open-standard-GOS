@@ -87,6 +87,13 @@ La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca 
 
 ![Fariña en cuenco de madera](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Neutro, Ligeramente tostado
+* **Textura:** Crujiente, Arenosa
+* **Aroma:** Tostado, Terroso
+* **Presentación:** Se sirve en pequeños cuencos para espolvorear sobre sopas, caldos, pescados o para preparar bebidas refrescantes.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

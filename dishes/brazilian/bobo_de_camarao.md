@@ -115,3 +115,12 @@ O Bobó de Camarão é uma das obras-primas da gastronomia baiana e afro-brasile
 - [Panelinha: Receita de Bobó de Camarão](https://www.panelinha.com.br/receita/bobo-de-camarao)
 - [Wikipédia PT: Bobó de camarão](https://pt.wikipedia.org/wiki/Bob%C3%B3_de_camar%C3%A3o)
 - [Folha Comida: Gastronomia Baiana](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Cremoso, Lácteo (coco), Terroso (dendê)
+* **Textura:** Velouté denso, Camarão firme e suculento
+* **Aroma:** Dendê, Camarão salteado, Leite de coco
+* **Presentación:** Servido em travessa de barro, decorado com camarões inteiros grelhados, folhas de coentro e um fio de azeite de dendê.

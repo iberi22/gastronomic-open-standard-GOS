@@ -95,6 +95,13 @@ Crab Backs es uno de los platos más representativos de San Andrés y Providenci
 
 ![Cangrejos rellenos gratinados](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Marino intenso, Especiado
+* **Textura:** Gratinado suave interior
+* **Aroma:** Cangrejo horneado
+* **Presentación:** Crab Backs (Cangrejo Relleno) presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

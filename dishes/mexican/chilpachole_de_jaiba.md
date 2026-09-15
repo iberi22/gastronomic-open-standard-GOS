@@ -80,6 +80,13 @@ Especialidad mestiza del puerto y costas de Veracruz, el Chilpachole destaca por
 4. **Caldo y masa:** Agrega 1.5 litros de agua o caldo de pescado. Disuelve la masa de maíz en un poco de agua fría y agrégala hirviendo para espesar.
 5. **Cocer jaiba:** Agrega las jaibas y el epazote. Deja hervir durante 20 minutos a fuego medio hasta que las jaibas tomen color rojo vivo y el caldo sazone.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante intenso, Umami marino, Herbal
+* **Textura:** Caldo espeso terso
+* **Aroma:** Mariscos frescos, Epazote, Chiles asados
+* **Presentación:** Caldo rojo espeso servido en cazuela de barro con jaibas enteras partidas a la mitad y hojas de epazote fresco.
+
 ---
 
 ## Fuentes consultadas y enlaces

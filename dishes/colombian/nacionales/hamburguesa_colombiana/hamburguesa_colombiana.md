@@ -153,6 +153,17 @@ La hamburguesa colombiana es una versión local de este clásico internacional, 
 - "No puede faltar el huevo frito y el jamón."
 - "Perfecta para compartir en reuniones o después de salir de fiesta."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Cremoso
+* **Textura:** Crujiente (papa), Jugoso (carne), Cremoso (salsas)
+* **Aroma:** Parrilla, Queso, Salsas
+* **Presentación:** Se sirve en porción generosa, ideal para compartir o como cena urbana.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

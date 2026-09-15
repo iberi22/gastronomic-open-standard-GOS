@@ -81,6 +81,13 @@ El Crawfish Boil no es solo una receta, sino un evento social emblemático de la
 * También se suelen agregar champiñones frescos, cebollas y alcachofas al hervido.
 * Para pelar el cangrejo: gira y separa la cabeza de la cola, pellizca la cola para liberar la carne y disfruta.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante, Citrico, Especiado, Salado
+* **Textura:** Crujiente, Tierna, Jugosa
+* **Aroma:** Especias cajún, Limón hervido, Marisco especiado
+* **Presentación:** Servido comunitariamente extendido sobre mesas cubiertas con papel de periódico, acompañado de rodajas de limón y mazorcas de maíz.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

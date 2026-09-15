@@ -79,6 +79,13 @@ Patrimonio gastronómico del estado de Hidalgo, la barbacoa integra técnicas pr
 4. **Envolver y cocer:** Enuelve la carne herméticamente con las pencas, tapa y cocina a fuego muy bajo durante 6 horas hasta que la carne se desprenda del hueso.
 5. **Servir:** Sirve la carne en tacos con tortillas de maíz azul, acompañada del consomé bien caliente y salsa borracha de pulque.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami intenso, Ahumado por maguey, Jugoso salado
+* **Textura:** Carne extremadamente suave que se deshace
+* **Aroma:** Maguey tatemado, Grasa de borrego, Especias
+* **Presentación:** Carne suave deshebrada servida sobre penca de maguey asada acompañada de un tazón de consomé con garbanzos y salsa borracha con pulque.
+
 ---
 
 ## Fuentes consultadas y enlaces

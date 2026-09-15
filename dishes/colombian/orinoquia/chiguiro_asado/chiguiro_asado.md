@@ -103,6 +103,13 @@ El Chigüiro Asado es un plato tradicional y emblemático de la Orinoquía colom
 
 ![Chigüiro Asado Llanero](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Terroso
+* **Textura:** Jugoso, Tierno, Ligeramente Fibroso
+* **Aroma:** Ahumado, Herbal, Almizclado
+* **Presentación:** Carne troceada con tonos tostados, servida sobre una base verde de hojas de bijao.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
