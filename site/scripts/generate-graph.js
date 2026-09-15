@@ -712,7 +712,8 @@ export function generateGraph() {
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name)
       if (entry.isDirectory()) {
-        if (entry.name === PENDING_REVIEW_DIRNAME || entry.name === '_archive') continue
+        if (entry.name === PENDING_REVIEW_DIRNAME || entry.name === '_archive')
+          continue
         scanAliases(fullPath)
       } else if (
         entry.isFile() &&
@@ -723,7 +724,8 @@ export function generateGraph() {
           const content = fs.readFileSync(fullPath, 'utf8')
           const parsed = matter(content)
           const fm = parsed.data
-          if (!fm.name || !isLatinText(fm.name) || isPlaceholderName(fm.name)) continue
+          if (!fm.name || !isLatinText(fm.name) || isPlaceholderName(fm.name))
+            continue
           const canonicalName = fm.name
           const canonicalId = `ingredient_${sanitizeId(canonicalName)}`
           canonicalByAlias.set(sanitizeId(canonicalName), canonicalId)
@@ -1019,10 +1021,22 @@ export function generateGraph() {
           // Diet inference for recipes
           const recipeDietItems = [
             ...(Array.isArray(fm.tags) ? fm.tags : fm.tags ? [fm.tags] : []),
-            ...(Array.isArray(categories) ? categories : categories ? [categories] : []),
-            ...(Array.isArray(fm.category) ? fm.category : fm.category ? [fm.category] : []),
+            ...(Array.isArray(categories)
+              ? categories
+              : categories
+                ? [categories]
+                : []),
+            ...(Array.isArray(fm.category)
+              ? fm.category
+              : fm.category
+                ? [fm.category]
+                : []),
             ...(Array.isArray(fm.diet) ? fm.diet : fm.diet ? [fm.diet] : []),
-            ...(Array.isArray(fm.diets) ? fm.diets : fm.diets ? [fm.diets] : []),
+            ...(Array.isArray(fm.diets)
+              ? fm.diets
+              : fm.diets
+                ? [fm.diets]
+                : []),
           ]
           const recipeDiets = getMatchingDiets(recipeDietItems)
           for (const dietId of recipeDiets) {
@@ -1285,11 +1299,7 @@ export function generateGraph() {
 
           const substitutesList = extractAliasStrings(fm.substitutes)
           for (const subName of substitutesList) {
-            if (
-              !subName ||
-              !isLatinText(subName) ||
-              isPlaceholderName(subName)
-            )
+            if (!subName || !isLatinText(subName) || isPlaceholderName(subName))
               continue
             const sSub = sanitizeId(subName)
             const subId = canonicalByAlias.get(sSub) || `ingredient_${sSub}`
