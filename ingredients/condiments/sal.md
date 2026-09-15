@@ -1,19 +1,28 @@
 ---
 active_compounds:
-- benefit: Electrolyte balance.
-  name: Sodium
-- benefit: Thyroid function.
-  name: Iodine
+  - benefit: Electrolyte balance.
+    name: Sodium
+  - benefit: Thyroid function.
+    name: Iodine
 aliases:
+  es:
+    - sal
+    - sal marina
+    - sal de mesa
+    - sal fina
+    - sal gruesa
+    - sal de roca
   en:
-  - salt
+    - salt
+    - sea salt
+    - table salt
 group: Condiment
 health_registry:
-- compounds:
-  - Sodium
-  condition: Hydration
-  evidence_level: High
-  mechanism: Critical electrolyte for fluid retention and nerve transmission.
+  - compounds:
+      - Sodium
+    condition: Hydration
+    evidence_level: High
+    mechanism: Critical electrolyte for fluid retention and nerve transmission.
 image: ../../images/sal.jpg
 micronutrients:
   iodine_ug: 4000
@@ -28,10 +37,21 @@ portions:
   default_g: 1
 scientific_name: NaCl
 sources:
-- USDA
+  - USDA
 tags:
-- esencial
-- sabor
+  - esencial
+  - sabor
+substitutes:
+  - name: Salsa de Soya (Sillao)
+    similarity_score: 0.85
+    notes: >-
+      Aporta sodio y sazón umami en platos salados y marinados. Fuente: Cook's
+      Illustrated.
+  - name: Limón (Limón Tahití/Criollo)
+    similarity_score: 0.65
+    notes: >-
+      La acidez realza la percepción salina natural de los alimentos sin añadir
+      cloruro de sodio.
 ---
 
 # Scientific Analysis & Culinary Use

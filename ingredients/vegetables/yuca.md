@@ -1,40 +1,51 @@
 ---
 active_compounds:
-- benefit: Potential cholesterol lowering effect.
-  name: Saponins
-  scientific_ref: PubMed
+  - benefit: Potential cholesterol lowering effect.
+    name: Saponins
+    scientific_ref: PubMed
 aliases:
+  es:
+    - yuca
+    - mandioca
+    - casabe
+    - yuca cocida
+    - yuca frita
   en:
-  - cassava
-  - yuca
+    - cassava
+    - yuca
+    - manioc
 group: Vegetable
 health_registry:
-- compounds:
-  - Gluten-free Starch
-  - Amylose
-  condition: Gluten Sensitivity (Celiac)
-  evidence_level: High
-  mechanism: Naturally gluten-free complex carbohydrate source providing hypoallergenic
-    starches.
-  studies:
-  - doi: 10.1080/87559129.2017.1359178
-    source: Food Reviews International
-    title: Cassava (Manihot esculenta) flour as a gluten-free functional ingredient
-    url: https://pubmed.ncbi.nlm.nih.gov/29870112/
-    year: 2018
-- compounds:
-  - Saponins
-  - Dietary Fiber
-  condition: Hypercholesterolemia
-  evidence_level: Medium
-  mechanism: Steroidal saponins form insoluble complexes with intestinal bile acids,
-    promoting cholesterol excretion.
-  studies:
-  - doi: 10.1021/jf052412v
-    source: Journal of Agricultural and Food Chemistry
-    title: Hypocholesterolemic effect of cassava saponins
-    url: https://pubmed.ncbi.nlm.nih.gov/16480112/
-    year: 2006
+  - compounds:
+      - Gluten-free Starch
+      - Amylose
+    condition: Gluten Sensitivity (Celiac)
+    evidence_level: High
+    mechanism: >-
+      Naturally gluten-free complex carbohydrate source providing hypoallergenic
+      starches.
+    studies:
+      - doi: 10.1080/87559129.2017.1359178
+        source: Food Reviews International
+        title: >-
+          Cassava (Manihot esculenta) flour as a gluten-free functional
+          ingredient
+        url: 'https://pubmed.ncbi.nlm.nih.gov/29870112/'
+        year: 2018
+  - compounds:
+      - Saponins
+      - Dietary Fiber
+    condition: Hypercholesterolemia
+    evidence_level: Medium
+    mechanism: >-
+      Steroidal saponins form insoluble complexes with intestinal bile acids,
+      promoting cholesterol excretion.
+    studies:
+      - doi: 10.1021/jf052412v
+        source: Journal of Agricultural and Food Chemistry
+        title: Hypocholesterolemic effect of cassava saponins
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16480112/'
+        year: 2006
 image: ../../images/yuca.jpg
 micronutrients:
   folate_ug: 27
@@ -52,11 +63,11 @@ portions:
   default_g: 150
 scientific_name: Manihot esculenta
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- sancocho
-- energia
-- sin_gluten
+  - sancocho
+  - energia
+  - sin_gluten
 ---
 
 # Scientific Analysis & Culinary Use

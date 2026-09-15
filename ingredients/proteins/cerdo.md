@@ -1,22 +1,32 @@
 ---
 active_compounds:
-- benefit: Critical for energy metabolism and nerve function.
-  name: Thiamin (B1)
-  scientific_ref: NIH
+  - benefit: Critical for energy metabolism and nerve function.
+    name: Thiamin (B1)
+    scientific_ref: NIH
 aliases:
+  es:
+    - cerdo
+    - carne de cerdo
+    - lomo de cerdo
+    - pulpa de cerdo
+    - chicharron
+    - tocino
   en:
-  - pork
+    - pork
+    - pork meat
+    - pork loin
 group: Protein
 health_registry:
-- compounds:
-  - Thiamin
-  condition: Energy Metabolism
-  evidence_level: High
-  mechanism: Pork is one of the richest sources of Thiamin, essential for converting
-    glucose to energy.
-  studies:
-  - source: Journal of Food Science
-    title: Thiamin content of meat
+  - compounds:
+      - Thiamin
+    condition: Energy Metabolism
+    evidence_level: High
+    mechanism: >-
+      Pork is one of the richest sources of Thiamin, essential for converting
+      glucose to energy.
+    studies:
+      - source: Journal of Food Science
+        title: Thiamin content of meat
 image: ../../images/cerdo.jpg
 micronutrients:
   selenium_ug: 40.3
@@ -34,10 +44,10 @@ portions:
   default_g: 150
 scientific_name: Sus scrofa domesticus
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- plato_fuerte
-- proteina
+  - plato_fuerte
+  - proteina
 ---
 
 # Scientific Analysis & Culinary Use

@@ -1,26 +1,39 @@
 ---
 active_compounds:
-- benefit: Waxy alcohols found in cane, potential cholesterol benefits (trace amounts).
-  name: Policosanols
-  scientific_ref: PubMed
+  - benefit: >-
+      Waxy alcohols found in cane, potential cholesterol benefits (trace
+      amounts).
+    name: Policosanols
+    scientific_ref: PubMed
 aliases:
+  es:
+    - panela
+    - piloncillo
+    - papelon
+    - papelón
+    - chancaca
+    - raspadura
+    - azucar
+    - azúcar
+    - azucar de caña
   en:
-  - panela
-  - unrefined cane sugar
+    - panela
+    - unrefined cane sugar
+    - jaggery
 group: Sugar
 health_registry:
-- compounds:
-  - Sucrose
-  - Water
-  condition: Hydration / Energy
-  evidence_level: High
-  mechanism: Rapid glucose source combined with water (Aguapanela) restores glycogen.
-- compounds:
-  - Heat
-  - Sugar
-  condition: Common Cold (Folk)
-  evidence_level: Anecdotal/Medium
-  mechanism: Hot aguapanela with lemon soothes throat (demulcent effect).
+  - compounds:
+      - Sucrose
+      - Water
+    condition: Hydration / Energy
+    evidence_level: High
+    mechanism: Rapid glucose source combined with water (Aguapanela) restores glycogen.
+  - compounds:
+      - Heat
+      - Sugar
+    condition: Common Cold (Folk)
+    evidence_level: Anecdotal/Medium
+    mechanism: Hot aguapanela with lemon soothes throat (demulcent effect).
 image: ../../images/panela.jpg
 micronutrients:
   calcium_mg: 80
@@ -38,11 +51,11 @@ portions:
   default_g: 20
 scientific_name: Saccharum officinarum (derivado)
 sources:
-- Agrosavia
+  - Agrosavia
 tags:
-- aguapanela
-- bebida
-- energia
+  - aguapanela
+  - bebida
+  - energia
 ---
 
 # Scientific Analysis & Culinary Use

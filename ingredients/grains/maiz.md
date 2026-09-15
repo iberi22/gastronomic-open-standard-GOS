@@ -1,10 +1,10 @@
 ---
-name: "Maíz (Mazorca/Grano)"
-scientific_name: "Zea mays"
-group: "Grain"
-image: "../../images/maiz.jpg"
+name: Maíz (Mazorca/Grano)
+scientific_name: Zea mays
+group: Grain
+image: ../../images/maiz.jpg
 portions:
-  default_g: 100 # Corn kernels
+  default_g: 100
 nutrition_per_100g:
   calories: 86
   protein_g: 3.2
@@ -18,27 +18,43 @@ micronutrients:
   folate_ug: 46
   magnesium_mg: 37
 active_compounds:
-  - name: "Lutein & Zeaxanthin"
-    benefit: "Carotenoids essential for eye health."
-    scientific_ref: "PubMed"
-  - name: "Ferulic Acid"
-    benefit: "Antioxidant found in cell walls."
-    scientific_ref: "NIH"
+  - name: Lutein & Zeaxanthin
+    benefit: Carotenoids essential for eye health.
+    scientific_ref: PubMed
+  - name: Ferulic Acid
+    benefit: Antioxidant found in cell walls.
+    scientific_ref: NIH
 health_registry:
-  - condition: "Eye Health"
-    mechanism: "Reduces risk of cataracts and macular degeneration by filtering blue light in the retina."
-    compounds: ["Lutein", "Zeaxanthin"]
-    evidence_level: "High"
+  - condition: Eye Health
+    mechanism: >-
+      Reduces risk of cataracts and macular degeneration by filtering blue light
+      in the retina.
+    compounds:
+      - Lutein
+      - Zeaxanthin
+    evidence_level: High
     studies:
-      - title: "Lutein and Zeaxanthin and the Risk of Cataract"
-        source: "Archives of Ophthalmology"
+      - title: Lutein and Zeaxanthin and the Risk of Cataract
+        source: Archives of Ophthalmology
         year: 2008
 sources:
-  - "USDA FoodData Central"
+  - USDA FoodData Central
 tags:
   - ajiaco
   - arepa
   - vision
+aliases:
+  es:
+    - maiz
+    - maíz
+    - choclo
+    - jocote
+    - mazorca
+    - grano de maiz
+  en:
+    - corn
+    - maize
+    - sweet corn
 ---
 
 # Scientific Analysis & Culinary Use

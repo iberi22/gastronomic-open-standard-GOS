@@ -1,40 +1,50 @@
 ---
 active_compounds:
-- benefit: Antibacterial compound specifically effective against Salmonella.
-  name: Dodecenal
-  scientific_ref: PubMed
+  - benefit: Antibacterial compound specifically effective against Salmonella.
+    name: Dodecenal
+    scientific_ref: PubMed
 aliases:
+  es:
+    - cilantro
+    - cilantro fresco
+    - hojas de cilantro
+    - culantro
+    - coriandro
   en:
-  - coriander
-  - cilantro
+    - coriander
+    - cilantro
+    - fresh cilantro
 group: Condiment
 health_registry:
-- compounds:
-  - Polyphenols
-  - Linalool
-  condition: Heavy Metal Detoxification
-  evidence_level: Medium
-  mechanism: Polyphenolic chelating agents in cilantro bind to heavy metals facilitating
-    urinary/fecal excretion.
-  studies:
-  - doi: 10.1385/BTER:82:1-3:203
-    source: Biological Trace Element Research
-    title: Preventive effect of Coriandrum sativum on lead deposition in localized
-      tissue
-    url: https://pubmed.ncbi.nlm.nih.gov/11848568/
-    year: 2001
-- compounds:
-  - Vitamin K
-  condition: Osteoporosis / Bone Health
-  evidence_level: High
-  mechanism: High concentration of Phylloquinone (Vitamin K1) catalyzes gamma-carboxylation
-    of osteocalcin.
-  studies:
-  - doi: 10.1177/0115426507022005517
-    source: Nutrition in Clinical Practice
-    title: Vitamin K and bone health
-    url: https://pubmed.ncbi.nlm.nih.gov/17906277/
-    year: 2007
+  - compounds:
+      - Polyphenols
+      - Linalool
+    condition: Heavy Metal Detoxification
+    evidence_level: Medium
+    mechanism: >-
+      Polyphenolic chelating agents in cilantro bind to heavy metals
+      facilitating urinary/fecal excretion.
+    studies:
+      - doi: '10.1385/BTER:82:1-3:203'
+        source: Biological Trace Element Research
+        title: >-
+          Preventive effect of Coriandrum sativum on lead deposition in
+          localized tissue
+        url: 'https://pubmed.ncbi.nlm.nih.gov/11848568/'
+        year: 2001
+  - compounds:
+      - Vitamin K
+    condition: Osteoporosis / Bone Health
+    evidence_level: High
+    mechanism: >-
+      High concentration of Phylloquinone (Vitamin K1) catalyzes
+      gamma-carboxylation of osteocalcin.
+    studies:
+      - doi: 10.1177/0115426507022005517
+        source: Nutrition in Clinical Practice
+        title: Vitamin K and bone health
+        url: 'https://pubmed.ncbi.nlm.nih.gov/17906277/'
+        year: 2007
 image: ../../images/cilantro.jpg
 micronutrients:
   manganese_mg: 0.4
@@ -53,11 +63,18 @@ portions:
   default_g: 15
 scientific_name: Coriandrum sativum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- finalizador
-- sopa
-- detox
+  - finalizador
+  - sopa
+  - detox
+substitutes:
+  - name: Cebolla Larga (Junca)
+    similarity_score: 0.65
+    notes: Aporta frescura herbal y color verde para terminación de sopas y caldos.
+  - name: Limón (Limón Tahití/Criollo)
+    similarity_score: 0.6
+    notes: Aporta notas cítricas y frescura final en ceviches y ensaladas.
 ---
 
 # Scientific Analysis & Culinary Use

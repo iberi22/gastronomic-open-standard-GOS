@@ -1,18 +1,25 @@
 ---
 active_compounds:
-- benefit: Structural protein giving elasticity to dough.
-  name: Gluten
-  scientific_ref: Food Chem
+  - benefit: Structural protein giving elasticity to dough.
+    name: Gluten
+    scientific_ref: Food Chem
 aliases:
+  es:
+    - harina de trigo
+    - harina de trigo todo uso
+    - harina todo uso
+    - harina trigo
   en:
-  - wheat flour
+    - wheat flour
+    - all-purpose flour
+    - flour
 group: Grain
 health_registry:
-- compounds:
-  - Starch
-  condition: Energy
-  evidence_level: High
-  mechanism: Dense source of complex carbohydrates.
+  - compounds:
+      - Starch
+    condition: Energy
+    evidence_level: High
+    mechanism: Dense source of complex carbohydrates.
 image: ../../images/harina_trigo.jpg
 micronutrients:
   folate_ug: 120
@@ -29,11 +36,11 @@ portions:
   default_g: 125
 scientific_name: Triticum aestivum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- pan
-- arepa_harina
-- espesante
+  - pan
+  - arepa_harina
+  - espesante
 ---
 
 # Scientific Analysis & Culinary Use

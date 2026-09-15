@@ -1,39 +1,51 @@
 ---
 active_compounds:
-- benefit: Potent antioxidant flavanol.
-  name: Quercetin
-  scientific_ref: NIH
+  - benefit: Potent antioxidant flavanol.
+    name: Quercetin
+    scientific_ref: NIH
 aliases:
+  es:
+    - cebolla
+    - cebolla cabezona
+    - cebolla blanca
+    - cebolla roja
+    - cebolla morada
+    - cebolla picada
   en:
-  - onion
-  - bulb onion
+    - onion
+    - bulb onion
+    - white onion
+    - red onion
 group: Vegetable
 health_registry:
-- compounds:
-  - Quercetin
-  - Sulfur compounds
-  condition: Inflammation
-  evidence_level: High
-  mechanism: Quercetin inhibits production of COX-2 and LOX enzymes involved in inflammation.
-  studies:
-  - doi: 10.3390/nu8030167
-    source: Nutrients
-    title: Quercetin, Inflammation and Immunity
-    url: https://pubmed.ncbi.nlm.nih.gov/26978396/
-    year: 2016
-- compounds:
-  - Sulfur compounds
-  - Quercetin
-  condition: Diabetes Management
-  evidence_level: Medium
-  mechanism: Hypoglycemic effects via increased insulin secretion and sensitivity.
-  studies:
-  - doi: 10.4137/EHI.S5540
-    source: Environmental Health Insights
-    title: Effect of raw and cooked onion on blood glucose levels in type 1 and type
-      2 diabetic patients
-    url: https://pubmed.ncbi.nlm.nih.gov/21151698/
-    year: 2010
+  - compounds:
+      - Quercetin
+      - Sulfur compounds
+    condition: Inflammation
+    evidence_level: High
+    mechanism: >-
+      Quercetin inhibits production of COX-2 and LOX enzymes involved in
+      inflammation.
+    studies:
+      - doi: 10.3390/nu8030167
+        source: Nutrients
+        title: 'Quercetin, Inflammation and Immunity'
+        url: 'https://pubmed.ncbi.nlm.nih.gov/26978396/'
+        year: 2016
+  - compounds:
+      - Sulfur compounds
+      - Quercetin
+    condition: Diabetes Management
+    evidence_level: Medium
+    mechanism: Hypoglycemic effects via increased insulin secretion and sensitivity.
+    studies:
+      - doi: 10.4137/EHI.S5540
+        source: Environmental Health Insights
+        title: >-
+          Effect of raw and cooked onion on blood glucose levels in type 1 and
+          type 2 diabetic patients
+        url: 'https://pubmed.ncbi.nlm.nih.gov/21151698/'
+        year: 2010
 micronutrients:
   folate_ug: 19
   potassium_mg: 146
@@ -50,11 +62,11 @@ portions:
   default_g: 100
 scientific_name: Allium cepa
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- base
-- guiso
-- antiinflamatorio
+  - base
+  - guiso
+  - antiinflamatorio
 ---
 
 # Scientific Analysis & Culinary Use

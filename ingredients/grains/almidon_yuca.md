@@ -1,7 +1,7 @@
 ---
-name: "Almidón de Yuca (Tapioca)"
-scientific_name: "Manihot esculenta (Starch)"
-group: "Grain"
+name: Almidón de Yuca (Tapioca)
+scientific_name: Manihot esculenta (Starch)
+group: Grain
 portions:
   default_g: 100
 nutrition_per_100g:
@@ -14,14 +14,25 @@ nutrition_per_100g:
 micronutrients:
   calcium_mg: 20
 active_compounds:
-  - name: "Starch"
-    benefit: "Gluten-free energy source."
-    scientific_ref: "USDA"
+  - name: Starch
+    benefit: Gluten-free energy source.
+    scientific_ref: USDA
 sources:
-  - "USDA FoodData Central"
+  - USDA FoodData Central
 tags:
   - panaderia
   - sin_gluten
+aliases:
+  es:
+    - almidon de yuca
+    - almidón de yuca
+    - tapioca
+    - harina de yuca
+    - almidon agrio
+  en:
+    - tapioca starch
+    - cassava starch
+    - tapioca
 ---
 
 # Scientific Analysis & Culinary Use

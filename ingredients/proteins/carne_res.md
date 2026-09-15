@@ -1,28 +1,38 @@
 ---
 active_compounds:
-- benefit: Highly bioavailable form of iron.
-  name: Heme Iron
-  scientific_ref: NIH
+  - benefit: Highly bioavailable form of iron.
+    name: Heme Iron
+    scientific_ref: NIH
 aliases:
+  es:
+    - carne de res
+    - carne res
+    - res
+    - carne molida
+    - carne picada
+    - lomo de res
   en:
-  - beef
+    - beef
+    - ground beef
+    - beef meat
 group: Protein
 health_registry:
-- compounds:
-  - Heme Iron
-  condition: Iron Deficiency Anemia
-  evidence_level: High
-  mechanism: Heme iron is absorbed 2-3x better than plant iron and aids absorption
-    of non-heme iron (Meat Factor).
-  studies:
-  - source: Annual Review of Nutrition
-    title: Bioavailability of dietary iron
-- compounds:
-  - Leucine
-  - Creatine
-  condition: Muscle Growth (Sarcopenia)
-  evidence_level: High
-  mechanism: High quality protein rich in Leucine stimulates mTOR pathway.
+  - compounds:
+      - Heme Iron
+    condition: Iron Deficiency Anemia
+    evidence_level: High
+    mechanism: >-
+      Heme iron is absorbed 2-3x better than plant iron and aids absorption of
+      non-heme iron (Meat Factor).
+    studies:
+      - source: Annual Review of Nutrition
+        title: Bioavailability of dietary iron
+  - compounds:
+      - Leucine
+      - Creatine
+    condition: Muscle Growth (Sarcopenia)
+    evidence_level: High
+    mechanism: High quality protein rich in Leucine stimulates mTOR pathway.
 image: ../../images/carne_res.jpg
 micronutrients:
   iron_mg: 2.6
@@ -40,11 +50,11 @@ portions:
   default_g: 150
 scientific_name: Bos taurus
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- plato_fuerte
-- hierro
-- sudado
+  - plato_fuerte
+  - hierro
+  - sudado
 ---
 
 # Scientific Analysis & Culinary Use
