@@ -81,6 +81,13 @@ La unión de pollo frito y waffles es una combinación icónica que fusiona el d
 * Puedes añadir salsa picante (hot honey) o mantequilla con miel para un toque picante y dulce adicional.
 * Servir inmediatamente garantiza el contraste entre la crocancia del pollo y la suavidad del waffle.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Salado, Crujiente, Especiado
+* **Textura:** Crujiente, Esponjosa, Jugosa
+* **Aroma:** Pollo frito, Mantequilla tostada, Jarabe de arce caliente
+* **Presentación:** Piezas de pollo frito crujiente apiladas sobre waffles dorados recién hechos, bañados con jarabe de arce tibia y mantequilla.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

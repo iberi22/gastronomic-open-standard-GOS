@@ -15,11 +15,11 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Mozzarella de Búfala Campana DOP
-- Tomates maduros grandes (Cuore di Bue)
-- Hojas de albahaca fresca
-- Aceite de oliva virgen extra
-- Sal marina
+  - Mozzarella de Búfala Campana DOP
+  - Tomates maduros grandes (Cuore di Bue)
+  - Hojas de albahaca fresca
+  - Aceite de oliva virgen extra
+  - Sal marina
 nutrition:
   calories: 380
   macros:

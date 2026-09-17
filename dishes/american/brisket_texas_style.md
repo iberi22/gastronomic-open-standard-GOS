@@ -79,6 +79,13 @@ El brisket estilo Texas es un icono de la gastronomía de los ahumaderos norteam
 * Usar papel de carnicero conserva la textura crujiente de la corteza a la vez que retiene la humedad interna.
 * Sirve tradicionalmente con pepinillos en vinagre, cebolla cruda rebanada, pan blanco y salsa barbacoa a un lado.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Umami, Especiado
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Ahumado de roble, Pimienta tostada, Carne asada
+* **Presentación:** Trinchado en lonchas gruesas perpendicularmente a la fibra muscular, revelando un anillo de humo rosado profundo y una corteza oscura salpimentada.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

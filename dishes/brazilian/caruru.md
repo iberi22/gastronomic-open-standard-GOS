@@ -114,3 +114,12 @@ O Caruru é uma das preparações mais antigas e sagradas da culinária afro-bra
 - [Panelinha: Receita de Caruru](https://www.panelinha.com.br/receita/caruru)
 - [Wikipédia PT: Caruru](https://pt.wikipedia.org/wiki/Caruru)
 - [Folha Comida: Cosme e Damião e o Caruru](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salgado, Terroso (dendê e quiabo), Oleaginoso (nozes)
+* **Textura:** Mucinoso viscoso, Pastoso, Crocante (pedacinhos de castanha)
+* **Aroma:** Dendê, Camarão seco, Castanha torrada
+* **Presentación:** Servido em cuia de barro verde-brilhante salpicada com camarões secos inteiros por cima, como acompanhamento indispensável do acarajé ou vatapá.

@@ -20,14 +20,14 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Papa criolla
-- Papa pastusa
-- Papa sabanera
-- Pollo
-- Guascas
-- Mazorca
-- Alcaparras
-- Crema de leche
+  - Papa criolla
+  - Papa pastusa
+  - Papa sabanera
+  - Pollo
+  - Guascas
+  - Mazorca
+  - Alcaparras
+  - Crema de leche
 nutrition:
   calories: 580
   macros:

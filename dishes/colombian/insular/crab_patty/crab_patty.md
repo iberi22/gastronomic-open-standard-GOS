@@ -98,6 +98,13 @@ Las Crab Patties o empanadas de cangrejo son una delicia típica de San Andrés 
 
 ![Empanadas de cangrejo fritas](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Picante suave, Marino
+* **Textura:** Masa crujiente, Relleno jugoso
+* **Aroma:** Empanada de cangrejo frita
+* **Presentación:** Crab Patty (Empanada de Cangrejo) presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

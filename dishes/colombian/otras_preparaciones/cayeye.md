@@ -64,6 +64,17 @@ categories:
 6. Mezcla todo bien hasta que los ingredientes estén completamente integrados.
 7. Sirve caliente, espolvoreado generosamente con queso costeño rallado.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salty (queso costeño), Creamy (butter/mash), Umami (hogao)
+* **Textura:** Smooth (mash), Gritty (cheese)
+* **Aroma:** Lacteal (butter), Savory (sofrito)
+* **Presentación:** Puré de banano verde servido en montaña con queso blanco rallado encima y toques rojos de hogao.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

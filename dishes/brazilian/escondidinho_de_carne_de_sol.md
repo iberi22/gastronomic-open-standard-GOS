@@ -115,3 +115,12 @@ O nome "Escondidinho" descreve perfeitamente a estrutura do prato: um recheio sa
 - [Panelinha: Escondidinho de Carne de Sol](https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol)
 - [Wikipédia PT: Escondidinho](https://pt.wikipedia.org/wiki/Escondidinho)
 - [Estadão Paladar: Receitas Nordestinas](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Umami, Lácteo, Amanteigado
+* **Textura:** Purê cremoso, Carne desfiada macia, Crosta de queijo gratinado
+* **Aroma:** Queijo tostado, Carne curada, Manteiga de garrafa
+* **Presentación:** Servido em refratário de cerâmica individual ou grande, com superfície dourada e bolhas de queijo coalho gratinado.

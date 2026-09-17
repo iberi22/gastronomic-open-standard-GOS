@@ -1,0 +1,4 @@
+🕸️ Generating GOS Knowledge Graph...
+✅ FA2 layout: 4267 nodos, 11846 aristas, 400 iters, 0 aristas omitidas
+ℹ️ ingredients/: 515 omisiones — staging "pending_review": 515 archivos (repo + copia del sitio) · sin nombre latino: 0 · placeholders: 0
+✅ Knowledge graph generated: 4267 nodes, 11846 edges

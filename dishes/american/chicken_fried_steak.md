@@ -85,6 +85,13 @@ Derivado del Schnitzel traído por los inmigrantes alemanes y austriacos al cent
 * Golpear bien la carne asegura que quede tierna y mantenga su tamaño durante la rápida fritura.
 * Servir el gravy por encima en el último momento preserva el crocante de la cobertura.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Crujiente, Creamy, Umami
+* **Textura:** Crocante, Tierna, Cremosa
+* **Aroma:** Fritura dorada, Carne frita, Salsa de pimienta
+* **Presentación:** Filete de ternera emparedado en rebozado crujiente dorado, totalmente cubierto por una espesa salsa de crema y pimienta negra.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

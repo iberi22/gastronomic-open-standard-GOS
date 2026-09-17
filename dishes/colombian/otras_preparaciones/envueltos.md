@@ -71,6 +71,17 @@ categories:
 8. En una olla grande, coloca una base de tusas (el corazón de la mazorca) y un poco de agua.
 9. Coloca los envueltos parados sobre las tusas, tapa la olla y cocina al vapor durante 45-60 minutos, o hasta que al insertar un palillo, este salga limpio.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet (maíz tierno), Lacteal (butter/milk), Salty (queso)
+* **Textura:** Soft, Spongy, Moist
+* **Aroma:** Sweet Corn, Butter, Steamed leaf
+* **Presentación:** Paquetes cilíndricos envueltos en hojas de mazorca de color verde pálido o crema, atados manualmente.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

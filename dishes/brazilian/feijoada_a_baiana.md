@@ -123,3 +123,12 @@ A Feijoada à Baiana é a celebração festiva da Bahia, combinando a robustez d
 - [Panelinha: Receita de Feijoada Completa](https://www.panelinha.com.br/receita/feijoada-completa)
 - [Wikipédia PT: Feijoada](https://pt.wikipedia.org/wiki/Feijoada)
 - [Folha Comida: Feijoada e suas Variantes](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami profundo, Salgado, Defumado, Terroso leve
+* **Textura:** Caldo espesso e aveludado, Carnes macias, Legumes tenros
+* **Aroma:** Carnes defumadas, Louro apurado, Feijão cozido lentamente
+* **Presentación:** Servida em panelas fundas de barro separando o feijão com carnes das travessas de legumes cozidos, acompanhada de arroz branco, couve, farofa e laranja.

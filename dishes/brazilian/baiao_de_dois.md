@@ -115,3 +115,12 @@ O Baião de Dois immortalizado pela canção de Luiz Gonzaga e Humberto Teixeira
 - [Panelinha: Baião de Dois](https://www.panelinha.com.br/receita/baiao-de-dois)
 - [Wikipédia PT: Baião de dois](https://pt.wikipedia.org/wiki/Bai%C3%A3o_de_dois)
 - [Estadão Paladar: Sabores do Sertão](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Umami, Lácteo (queijo assado), Defumado
+* **Textura:** Grãos soltos e úmidos, Queijo macio e derretido
+* **Aroma:** Manteiga de garrafa, Carne de sol tostada, Coentro
+* **Presentación:** Servido em travessa grande com cubos de queijo coalho grelhados dourados por cima e salpicado com bastante coentro e pimenta-biquinho.

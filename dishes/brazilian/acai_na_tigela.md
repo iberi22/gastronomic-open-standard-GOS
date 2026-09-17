@@ -110,3 +110,12 @@ O Açaí na Tigela tornou-se um fenónemo global de alimentação saudável a pa
 - [Panelinha: Açaí na Tigela](https://www.panelinha.com.br/receita/acai-na-tigela)
 - [Wikipédia PT: Açaí](https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD)
 - [Folha Comida: O Açaí e seus Benefícios](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Doce, Terroso, Ácido, Frutado
+* **Textura:** Cremoso, Gelado, Crocante (granola)
+* **Aroma:** Frutado silvestre, Terroso característico
+* **Presentación:** Servido em tigela funda, decorado simetricamente com fatias de banana, morangos, granola e polvilhado com guaraná.

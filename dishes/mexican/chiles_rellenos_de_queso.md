@@ -79,6 +79,13 @@ Técnica clásica que demuestra el dominio del capeado en huevo, un arte heredad
 4. **Freír:** Fríe los chiles en aceite caliente hasta que el capeado adquiera un dorado uniforme.
 5. **Caldillo:** Licúa los jitomates con ajo y cebolla; fríe la salsa en una cacerola y sazona con sal y orégano. Sirve los chiles bañados con el caldillo bien caliente.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami lacteo, Picante vegetal suave, Dulce ácido por caldillo
+* **Textura:** Capeado esponjoso, Queso fundido suave
+* **Aroma:** Chile poblano asado, Caldillo de jitomate
+* **Presentación:** Chile poblano capeado bañado en caldillo rojo ligero de jitomate con orégano.
+
 ---
 
 ## Fuentes consultadas y enlaces

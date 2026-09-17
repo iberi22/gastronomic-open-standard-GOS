@@ -18,13 +18,13 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carne de res (Lomo fino)
-- Papas amarillas (para freír)
-- Cebolla roja
-- Tomate maduro
-- Salsa de soya (Sillao)
-- Vinagre tinto
-- Ají amarillo
+  - Carne de res (Lomo fino)
+  - Papas amarillas (para freír)
+  - Cebolla roja
+  - Tomate maduro
+  - Salsa de soya (Sillao)
+  - Vinagre tinto
+  - Ají amarillo
 nutrition:
   calories: 680
   macros:
