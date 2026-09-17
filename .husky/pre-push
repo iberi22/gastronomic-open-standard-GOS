@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+# SWAL anti-leak gate — pre-push (GitCore protocol 3.9.1)
+#
+# Catches internal material that slipped past the commit-time check, or that
+# was committed with --no-verify. Same path-resolution rule as pre-commit.
+set -e
+
+SWAL_ROOT="${SWAL_ROOT:-$HOME/proyectosSWAL}"
+GATE="$SWAL_ROOT/periferia/GitCore/scripts/swal-leak-gate.mjs"
+SHIM="$SWAL_ROOT/scripts/swal-husky-guard.mjs"
+
+if command -v node >/dev/null 2>&1; then
+  if [ -f "$GATE" ]; then
+    node "$GATE" --push || exit 1
+  elif [ -f "$SHIM" ]; then
+    node "$SHIM" --push || exit 1
+  else
+    echo "⚠ SWAL leak gate not found at \$SWAL_ROOT; push proceeding WITHOUT anti-leak checks." >&2
+  fi
+fi
