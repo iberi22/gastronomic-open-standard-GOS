@@ -2,7 +2,6 @@
 node_modules/
 .history
 .DS_Store
-
 .idea
 *.iml
 # ¡NO ignores .husky! Los hooks deben versionarse para Husky
@@ -11,12 +10,10 @@ mkdocs.yml
 site/dist/
 site/node_modules/
 .cache/
-
 __pycache__/
 *.pyc
 *.egg-info/
 .pytest_cache/
-
 # Prune hygiene (2026-08-24)
 # Note: release evidence bundles MUST be committed. We use pathspec
 # rules so .gitcore/releases/*.log and *.md are excluded from the
@@ -24,7 +21,6 @@ __pycache__/
 #
 # Strategy: name the release files explicitly with `!` patterns
 # that override the broader patterns by being more specific.
-
 *.log
 !site/scripts/*.log
 !.gitcore/releases/**/*.log
@@ -33,22 +29,17 @@ __pycache__/
 bin/
 archive/site-cleanup/
 site_legacy_20260902/
-
 # Playwright artifacts
 test-results/
 playwright-report/
 playwright/.cache/
-
 dishes_backup/
-
 # Cloudflare Worker / Wrangler dev state
 .wrangler/
 worker/.wrangler/
-
 # Astro + Husky leftovers (2026-09-04)
 .astro/
 .husky/*.orig
-
 # Generated graph intermediates (regenerated every build by site/scripts/generate-graph.js)
 /graph.json
 docs/graph.json
@@ -75,6 +66,7 @@ site/public/graph-data.json
 .gitcore/chronicles/
 .gitcore/waves/
 .gitcore/sdd/
+.gitcore/releases/
 .gitcore/issues/
 .gitcore/features.details/
 .gitcore/CONTEXT_LOG.md
@@ -94,6 +86,7 @@ site/public/graph-data.json
 .atl/
 .gestalt/
 .jules/
+.xavier/
 .xavier-backups/
 .skill-registry.cache.json
 

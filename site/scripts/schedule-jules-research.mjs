@@ -18,7 +18,7 @@ import path from 'node:path'
 const DRY = process.argv.includes('--dry-run')
 const REPO =
   process.env.GOS_REPO ||
-  '/home/belal/proyectosSWAL/apps/gastronomic-open-standard-GOS'
+  '<repo-root>'
 const QUEUE = path.join(REPO, 'docs/research/queue.json')
 
 function gh(...args) {

@@ -1,3 +1,0 @@
-$ git status --porcelain
-exit_code: 0
---- STDOUT ---

@@ -5,7 +5,8 @@ import shutil
 # Source: Artifacts dir
 # Destination: e:\scripts-python\gastronomic-open-standard-GOS\ingredients\images
 
-SOURCE = r"C:\Users\belal\.gemini\antigravity\brain\1ce1c452-a4d6-46c3-8175-05747cd9122d"
+# Source directory holding the images to migrate. Override with GOS_IMAGE_SOURCE.
+SOURCE = os.environ.get("GOS_IMAGE_SOURCE", "images")
 DEST = r"e:\scripts-python\gastronomic-open-standard-GOS\ingredients\images"
 
 files = [
