@@ -27,6 +27,17 @@ main_ingredients:
   - Aguacate
   - Queso fresco
   - Crema
+studies:
+  - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
+    source: "Comprehensive Reviews in Food Science and Food Safety"
+    year: 2016
+    doi: "10.1111/1541-4337.12216"
+    url: "https://doi.org/10.1111/1541-4337.12216"
+  - title: "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas"
+    source: "Plant Foods Hum Nutr"
+    year: 2025
+    doi: "10.1007/s11130-024-01245-z"
+    url: "https://doi.org/10.1007/s11130-024-01245-z"
 sensory:
   flavor:
     - Jitomate asado
@@ -74,7 +85,7 @@ La Sopa de Tortilla es una sopa tradicional mexicana cuyo caldo concentrado de j
 - Caldo de pollo
 - Jitomates asados
 - Chile pasilla seco
-- Tiras de tortilla de maíz
+- Tiras de tortilla de maíz nixtamalizado
 - Aguacate
 - Queso fresco
 - Crema
@@ -86,6 +97,11 @@ La Sopa de Tortilla es una sopa tradicional mexicana cuyo caldo concentrado de j
 1. **Preparación previa:** Organizar y medir todos los ingredientes principales. Limpiar las superficies de trabajo.
 2. **Cocción principal:** Seguir los tiempos de cocción indicados manteniendo la temperatura controlada.
 3. **Emplatado y presentación:** Servir caliente prestando especial atención a la presentación sensorial descrita.
+
+---
+
+## 🧪 Química de la Nixtamalización en la Tortilla
+Las tiras de tortilla provienen de masa de maíz tratada térmicamente con $Ca(OH)_2$. Este proceso transforma el almidón, descompone la hemicelulosa para liberar la niacina bloqueada (previendo la pelagra) y aporta una alta bioaccesibilidad de calcio sin degradar los carotenoides ni los ácidos fenólicos propios del grano.
 
 ---
 
