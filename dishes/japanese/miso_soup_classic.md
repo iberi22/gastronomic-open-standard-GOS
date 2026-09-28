@@ -48,6 +48,22 @@ nutrition:
 images:
   - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
     description: Sopa de Miso Clásica tradicional
+studies:
+  - title: "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor"
+    source: "Biomed Research International"
+    year: 2015
+    doi: "10.1155/2015/189402"
+    url: "https://pubmed.ncbi.nlm.nih.gov/26247011/"
+  - title: "Re-evaluation of glutamic acid (E 620), sodium glutamate (E 621), potassium glutamate (E 622) as food additives"
+    source: "EFSA Journal"
+    year: 2017
+    doi: "10.2903/j.efsa.2017.4910"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32625571/"
+  - title: "Monosodium Glutamate in the Diet Does Not Raise Brain Glutamate Concentrations or Disrupt Brain Functions"
+    source: "Annals of Nutrition and Metabolism"
+    year: 2018
+    doi: "10.1159/000494782"
+    url: "https://pubmed.ncbi.nlm.nih.gov/30508818/"
 description: >-
   La Sopa de Miso es la espina dorsal de cualquier comida tradicional japonesa,
   combinando el poder probiótico de la pasta de soja con dashi aromático.
@@ -90,3 +106,12 @@ La Sopa de Miso es la espina dorsal de cualquier comida tradicional japonesa, co
 * **Textura:** Caldo fluido y reconfortante, Tofu sedoso
 * **Aroma:** Pasta de miso fermentado, Dashi de kombu y katsuobushi
 * **Presentación:** Tazón pequeño de caldo tibio turbio con cubitos flotantes de tofu, algas wakame y cebollín.
+
+---
+
+## 🔬 Sinergia Bioquímica y Ciencia del Umami
+
+La sopa de miso es un ejemplo emblemático de sinergia de umami en la gastronomía japonesa:
+* **Aporte de Glutamato:** La pasta de miso (200 - 600 mg/100g) y el alga kombu del dashi (1200 - 3000 mg/100g) aportan elevadas concentraciones de ácido L-glutámico libre.
+* **Potenciación por Ribonucleótidos:** El katsuobushi integrado en el dashi aporta 5'-inosina monofosfato (IMP, 470 - 800 mg/100g), el cual se une alostéricamente al receptor gustativo T1R1/T1R3 en la lengua.
+* **Respuesta Neurofisiológica:** Esta interacción simultánea incrementa drásticamente la afinidad del receptor por el glutamato, multiplicando la percepción del sabor sabroso sin requerir adición excesiva de sal de mesa.
