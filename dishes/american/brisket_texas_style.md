@@ -37,6 +37,17 @@ sensory:
     Trinchado en lonchas gruesas perpendicularmente a la fibra muscular, revelando un anillo de humo rosado profundo y una corteza oscura salpimentada.
 description: >-
   El Brisket Estilo Texas es la joya de la corona del barbacoa del centro de Texas. Se ahúma lentamente a baja temperatura utilizando madera de roble post oak, sazonado únicamente con sal gruesa, pimienta negra recién molida y ajo.
+studies:
+  - title: "Insight about methods used for polycyclic aromatic hydrocarbons reduction in smoked or grilled fishery and meat products for future re-engineering: A systematic review"
+    source: "Food and Chemical Toxicology"
+    year: 2020
+    doi: "10.1016/j.fct.2020.111372"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32334111/"
+  - title: "A review of hazards in meat products: Multiple pathways, hazards and mitigation of polycyclic aromatic hydrocarbons"
+    source: "Food Chemistry"
+    year: 2024
+    doi: "10.1016/j.foodchem.2024.138718"
+    url: "https://pubmed.ncbi.nlm.nih.gov/38364501/"
 ---
 ## Brisket Estilo Texas (Punta de Pecho Ahumada)
 
@@ -90,6 +101,19 @@ El brisket estilo Texas es un icono de la gastronomía de los ahumaderos norteam
 - **Textura principal:** Tierna, Jugosa, Mantequillosa
 - **Aroma destacado:** Ahumado de roble, Pimienta tostada, Carne asada
 - **Presentación y experiencia:** Lonchas gruesas que muestran el famoso anillo de humo (bark) rosado producido por la reacción entre los gases de combustión y la mioglobina de la carne.
+
+## 🔬 Química del Ahumado y Mitigación de HAP
+
+### Química de la Combustión y Fenoles del Humo
+Durante la pirólisis de la madera de roble (*post oak*) a temperaturas de 200 °C a 400 °C, la degradación térmica de la lignina libera compuestos aromáticos volátiles característicos: **guaiacol** (que aporta notas de humo picante y madera) y **siringol** (responsable del aroma dulce y ahumado). La mioglobina de la carne reacciona con el monóxido de nitrógeno (NO) presente en el humo de madera para formar nitrosomioglobina, creando el distintivo anillo de humo rosa (*smoke ring*) en los primeros milímetros bajo la corteza.
+
+### Formación de Hidrocarburos Aromáticos Policíclicos (HAP) y Aminas Heterocíclicas (AHC)
+Cuando la grasa fundida gotea directamente sobre las brasas o la fuente de calor a temperaturas superiores a 400 °C, la pirólisis de los lípidos genera **hidrocarburos aromáticos policíclicos (HAP)** como el benzo[a]pireno, que ascienden transportados por los vapores de humo y se depositan en la superficie de la carne. Asimismo, la exposición prolongada a alta temperatura favorece la reacción entre aminoácidos libres, creatina y azúcares reductores para formar **aminas aromáticas heterocíclicas (AHC)**.
+
+### Estrategias de Mitigación en el Brisket
+1. **Ahumado Indirecto y Control Térmico:** Mantener una cocción baja y lenta (105 °C - 120 °C) en un ahumador offset evita que la grasa gotee directamente sobre el foco de combustión, reduciendo drásticamente la pirólisis lipídica primaria.
+2. **Barrera Mecánica ("Texas Crutch" con Papel de Carnicero):** El envoltorio firme con *butcher paper* a partir de los 75 °C internos detiene la deposición superficial continua de partículas de hollín y vapores con alto contenido de HAP, reteniendo al mismo tiempo la humedad sin vaporizar en exceso la corteza (*bark*).
+3. **Rub Antioxidante:** La piperina de la pimienta negra molida gruesa y los compuestos organosulfurados del ajo actúan como atrapadores de radicales libres, inhibiendo parcialmente las reacciones de oxidación lipídica previa a la formación de HAP y AHC.
 
 ### Fuentes consultadas y enlaces
 
