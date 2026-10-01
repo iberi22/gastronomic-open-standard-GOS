@@ -105,9 +105,11 @@ St. Louis Style BBQ Pork Ribs es uno de los platos más emblemáticos de la gast
 ## 🔬 Química del Ahumado y Mitigación de HAP
 
 ### Generación de HAP en Carne de Cerdo Ahumada
+
 En el cocinado de costillas de cerdo, la alta proporción de grasa subcutánea e intramuscular reacciona a temperaturas elevadas. Cuando la grasa fundida cae sobre las brasas o se expone a pirolisis intensa (>300 °C), se forman hidrocarburos aromáticos policíclicos (HAP) como el benzo[a]pireno y el criseno, los cuales se re-depositan en la carne a través de la corriente de humo.
 
 ### Mecanismos de Mitigación Mediante Adobos y Coberturas
+
 1. **Marinadas Ricas en Polifenoles:** El uso de adobos o marinadas con extractos ricos en antioxidantes (como té verde, cerveza de malta, ajo y pimentón) inhibe significativamente las reacciones en cadena de radicales libres responsables de la formación de benzo[a]pireno durante el asado y ahumado.
 2. **Aplicación Tardía del Glaseado de Miel:** Los azúcares reductores presentes en la miel y la salsa BBQ sufren caramelización y pirólisis acelerada si se aplican desde el inicio. Barnizar las costillas únicamente en los últimos 15-20 minutos de cocción minimiza la carbonización y la pirolisis de carbohidratos.
 3. **Ahumado a Baja Temperatura y Fuego Indirecto:** Mantener la cocción indirecta previene el contacto directo de la grasa fundida con las brasas encendidas, reduciendo la concentración de HAP totales en más de un 70%.

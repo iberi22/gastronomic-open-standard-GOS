@@ -105,9 +105,11 @@ San Luis, Misuri, es famoso por consumir más salsa barbacoa per cápita que cua
 ## 🔬 Química del Ahumado y Mitigación de HAP
 
 ### Pirólisis del Rub y Generación de HAP/AHC
+
 El *rub* seco tradicional utilizado en las costillas estilo San Luis contiene azúcar moreno, pimentón, ajo, cebolla y pimientas. Durante el ahumado, el azúcar experimenta reacciones de caramelización y pirólisis a partir de los 160 °C, mientras que los aminoácidos de la carne y los azúcares reductores forman aminas aromáticas heterocíclicas (AHC). Si la temperatura supera los 300 °C o la grasa derretida gotea directamente sobre el carbón o la madera en combustión, los vapores ascendentes depositan hidrocarburos aromáticos policíclicos (HAP) en la superficie de la corteza (*bark*).
 
 ### Estrategias de Mitigación en el Método 3-2-1
+
 1. **Acción Protectora de Especias Antioxidantes:** El pimentón (capsaicina y carotenoides) y el ajo (compuestos organosulfurados) del rub actúan como potentes barreras antioxidantes que neutralizan radicales libres intermediarios, reduciendo significativamente la síntesis de benzo[a]pireno y de AHC primarias.
 2. **Efecto Escudo del Envoltorio (Fase 2 del Método 3-2-1):** Envolver las costillas en papel de aluminio con líquido (jugo de manzana y vinagre de manzana) interrumpe la deposición directa del humo de madera y genera un entorno con vapor húmedo que previene temperaturas superficiales excesivas, deteniendo la formación de HAP durante esa fase de cocción.
 3. **Acidificación de la Superficie:** El rociado periódico con vinagre de manzana (ácido acético) disminuye el pH superficial de la carne, lo que ayuda a inhibir ciertas rutas de degradación térmica de aminoácidos previa a la formación de mutágenos AHC.
