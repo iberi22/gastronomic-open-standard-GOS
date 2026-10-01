@@ -53,6 +53,36 @@ describe('ingredientDescription', () => {
     expect(d).toContain('revision')
   })
 
+  it('descarta el 0 en la ruta normal, sin depender de pendingReview', () => {
+    // El test de arriba pasa por el early-return de Uncategorized, asi que
+    // nunca llega a num(). Este caso es el que protege num() de verdad:
+    // grupo con taxonomia valida y nutrientes en cero.
+    //
+    // Control negativo: cambiar num() a `Number.isFinite(n)` (quitando el
+    // `n > 0`) hacia aparecer "0 kcal" y este test caia. Con el `n > 0`
+    // puesto pasa. Comprobado.
+    const d = ingredientDescription({
+      name: 'Ajo',
+      group: 'Condiment',
+      nutrition: { calories: 0, protein_g: 0, fiber_g: 0 },
+    })
+    expect(d).not.toMatch(/(?<!\d)0 kcal/)
+    expect(d).not.toMatch(/(?<!\d)0(\.0)? g/)
+    // y aun asi cumple el rango de longitud
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('conserva el valor real cuando es mayor que cero', () => {
+    // Contrapeso del anterior: num() no debe descartar numeros legitimos.
+    const d = ingredientDescription({
+      name: 'Ajo',
+      group: 'Condiment',
+      nutrition: { calories: 149, protein_g: 6.4, fiber_g: 2.1 },
+    })
+    expect(d).toContain('149 kcal')
+    expect(d).toContain('6.4 g de proteina')
+  })
+
   it('pending_review no repite la palabra ingrediente', () => {
     const d = ingredientDescription({
       name: 'Papas',
