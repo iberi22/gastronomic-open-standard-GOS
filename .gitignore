@@ -7,6 +7,8 @@ node_modules/
 # ¡NO ignores .husky! Los hooks deben versionarse para Husky
 # .husky/
 mkdocs.yml
+# Índice de dificultad regenerado por .github/readme-generate.js en cada build
+starsystem/
 site/dist/
 site/node_modules/
 .cache/
