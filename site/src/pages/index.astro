@@ -126,6 +126,118 @@ const relations = RELATIONS.map((r) => ({
   count: edgeCount(r.type),
 })).sort((a, b) => b.count - a.count)
 
+// Capa científica. Leemos las mismas colecciones que usa /api/evidence.json,
+// para que la portada y el endpoint no puedan discrepar. Solo entran las
+// entradas que declaran al menos un estudio: una ficha sin estudio no es
+// evidencia, y no aporta nada en una sección que habla de evidencia.
+const KIND_META: Record<string, { label: string; route: string }> = {
+  vitamin: { label: 'Vitaminas', route: 'vitamins' },
+  substance: { label: 'Substancias bioactivas', route: 'substances' },
+  diet: { label: 'Dietas', route: 'diets' },
+}
+const SHOWN_PER_KIND = 5
+
+type EvStudy = {
+  title?: string
+  source?: string
+  year?: number
+  doi?: string
+  pmid?: string
+  status?: string
+}
+type EvEntry = { kind: string; id: string; name: string; study?: EvStudy }
+
+/** Extrae los estudios de una entrada, igual que hace /api/evidence.json.
+ *
+ *  Las vitaminas y dietas declaran `studies:` en el frontmatter; las
+ *  substancias los declaran anidados en `health_registry[].studies`. Leer solo
+ *  el primer caso dejaba 30 de las 48 entradas sin ver, que es justo lo que la
+ *  sección científica debe mostrar.
+ */
+function studiesOf(entry: unknown): EvStudy[] {
+  const data = (entry as { data?: Record<string, unknown> })?.data
+  if (!data) return []
+
+  const out: EvStudy[] = []
+  const collect = (raw: unknown) => {
+    if (!Array.isArray(raw)) return
+    for (const s of raw) {
+      if (!s || typeof s !== 'object') continue
+      const o = s as Record<string, unknown>
+      out.push({
+        title: typeof o.title === 'string' ? o.title : undefined,
+        source: typeof o.source === 'string' ? o.source : undefined,
+        year: typeof o.year === 'number' ? o.year : undefined,
+        doi: typeof o.doi === 'string' ? o.doi : undefined,
+        pmid: typeof o.pmid === 'string' ? o.pmid : undefined,
+        status: typeof o.doi_status === 'string' ? o.doi_status : undefined,
+      })
+    }
+  }
+
+  collect(data.studies)
+  const registry = data.health_registry
+  if (Array.isArray(registry)) {
+    for (const row of registry) {
+      if (row && typeof row === 'object')
+        collect((row as Record<string, unknown>).studies)
+    }
+  }
+  // `doi_status: unverified` marca un DOI que no resuelve: se conserva en la
+  // ficha pero no cuenta como verificado, igual que hace /api/evidence.json.
+  return out.filter((s) => s.doi && s.status !== 'unverified')
+}
+
+const COL_KINDS = [
+  { col: 'vitamins', kind: 'vitamin' },
+  { col: 'substances', kind: 'substance' },
+  { col: 'diets', kind: 'diet' },
+] as const
+
+const evEntries: EvEntry[] = (
+  await Promise.all(
+    COL_KINDS.map(async ({ col, kind }) => {
+      const entries = (await getCollection(col as never)) as unknown as {
+        id: string
+        data: Record<string, unknown>
+      }[]
+      return entries.map((e): EvEntry | null => {
+        const studies = studiesOf(e)
+        const withDoi = studies.find((s) => s.doi) ?? studies[0]
+        if (!withDoi) return null
+        return {
+          kind,
+          id: e.id,
+          name: String(e.data.name ?? e.id),
+          study: withDoi,
+        }
+      })
+    }),
+  )
+)
+  .flat()
+  .filter((x): x is EvEntry => x !== null)
+
+const ev = {
+  withStudies: evEntries.length,
+  withDoi: evEntries.filter((e) => e.study?.doi).length,
+  kinds: Object.entries(KIND_META).map(([kind, meta]) => {
+    const of = evEntries.filter((e) => e.kind === kind)
+    return {
+      ...meta,
+      count: of.length,
+      more: Math.max(0, of.length - SHOWN_PER_KIND),
+      samples: of.slice(0, SHOWN_PER_KIND).map((e) => ({
+        name: e.name,
+        href: e.study?.doi
+          ? `https://doi.org/${e.study.doi}`
+          : `${base}/${meta.route}/${e.id}`,
+        study: e.study,
+      })),
+    }
+  }),
+}
+
 const highlights = [
   {
     k: 'Nodos',
@@ -292,18 +404,72 @@ const highlights = [
     </a>
   </section>
 
+  <section class="science">
+    <div class="science-head">
+      <div>
+        <span class="eyebrow-text">LA CAPA CIENTÍFICA</span>
+        <h2>Qué sostiene cada afirmación, y con qué estudio</h2>
+        <p class="hint">
+          Cada vitamina, sustancia y dieta de GOS declara los estudios que la respaldan:
+          {ev.withStudies} entradas con evidencia, {ev.withDoi} de ellas apoyadas en un
+          estudio con DOI verificable. Ninguna se cita sin fuente. El nivel de evidencia
+          distingue un ensayo clínico de una revisión narrativa o de un estudio in vitro,
+          para que no se confundan.
+        </p>
+      </div>
+      <a href={`${base}/api/evidence.json`} class="btn ghost small">Ver el índice completo →</a>
+    </div>
+
+    <div class="ev-grid">
+      {ev.kinds.map(k => (
+        <div class="ev-card">
+          <div class="ev-card-head">
+            <span class="ev-kind">{k.label}</span>
+            <span class="ev-count">{k.count}</span>
+          </div>
+          <ul class="ev-list">
+            {k.samples.map(s => (
+              <li>
+                <a href={s.href} class="ev-name">{s.name}</a>
+                {s.study && (
+                  <span class="ev-study">
+                    {s.study.source}{s.study.year ? `, ${s.study.year}` : ''}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+          {k.more > 0 && <span class="ev-more">+{k.more} más en el índice</span>}
+        </div>
+      ))}
+    </div>
+
+    <div class="evidence-note">
+      <strong>Alcance de la evidencia.</strong> Un DOI verificado significa que el estudio
+      existe y trata del tema; no significa que GOS recomendene el consumo. Los niveles
+      <code>Low</code>, <code>Medium</code> y <code>High</code> corresponden al diseño del
+      estudio (in vitro, revisión narrativa, ensayo en humanos) y las fichas llevan la
+      nota que delimita el alcance. Ninguna afirmación de GOS sustituye consejo médico.
+    </div>
+  </section>
+
   <section class="api-banner">
     <div class="api-copy">
-      <span class="eyebrow-text">API PARA DESARROLLADORES</span>
+      <span class="eyebrow-text">PARA AGENTES Y DESARROLLADORES</span>
       <h2>Usa los datos de GOS en tu app</h2>
-      <p class="hint">Recetas, ingredientes, nutrientes, substancias y vectores en JSON + descargas masivas. Plan gratuito para desarrollo y pruebas con límite de peticiones; límites ampliados para producción.</p>
+      <p class="hint">
+        Todo el grafo en JSON, con IDs estables y relaciones tipadas. Empieza por
+        <code>llms.txt</code> para el mapa de endpoints, o por <code>graph-data.json</code>
+        si quieres el grafo entero ({total} nodos, {edges.length} aristas, 3.2 MB).
+      </p>
       <div class="actions">
         <a href={`${base}/api`} class="btn primary">Explorar la API →</a>
+        <a href={`${base}/llms.txt`} class="btn ghost" target="_blank" rel="noopener">llms.txt</a>
         <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md" class="btn ghost" target="_blank" rel="noopener">Documentación</a>
       </div>
     </div>
     <div class="api-code">
-      <code>GET /api/recipes?limit=10<br />GET /api/ingredients/canela<br />GET /api/vectors/index.json</code>
+      <code>GET /llms.txt<br />GET /api/agent/knowledge.json<br />GET /api/evidence.json<br />GET /graph-data.json</code>
     </div>
   </section>
 
@@ -353,6 +519,25 @@ const highlights = [
     .rels td.num { text-align:left; }
     .rels td.path, .rels td code { white-space:normal; }
   }
+  .science { margin-top:22px; }
+  .science-head { display:flex; gap:14px; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; }
+  .science-head h2 { font-size:20px; font-weight:750; letter-spacing:-0.01em; margin:6px 0 0; color: var(--swal-text); }
+  .science-head .hint { max-width:68ch; margin-top:6px; }
+  .btn.small { padding:6px 11px; font-size:12px; }
+  .ev-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:12px; margin-top:16px; }
+  .ev-card { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; }
+  .ev-card-head { display:flex; align-items:baseline; justify-content:space-between; gap:8px; padding-bottom:9px; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 50%, transparent); }
+  .ev-kind { font-size:12px; font-weight:650; color: var(--swal-text); }
+  .ev-count { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-accent); }
+  .ev-list { list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:9px; }
+  .ev-list li { display:flex; flex-direction:column; gap:2px; }
+  .ev-name { font-size:13px; color: var(--swal-text); text-decoration:none; font-weight:550; }
+  .ev-name:hover { color: var(--swal-accent); text-decoration:underline; }
+  .ev-study { font-size:11px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
+  .ev-more { display:block; margin-top:10px; font-size:11px; color: var(--swal-text-muted); }
+  .evidence-note { margin-top:14px; padding:13px 15px; border:1px solid var(--swal-border); border-left:3px solid var(--swal-accent); border-radius:12px; background: var(--swal-surface); color: var(--swal-text-secondary); font-size:12.5px; line-height:1.65; }
+  .evidence-note strong { color: var(--swal-text); }
+  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); }
   .hint { color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin-top:10px; }
   .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
   .swatches { display:flex; gap:10px; margin-top:12px; }

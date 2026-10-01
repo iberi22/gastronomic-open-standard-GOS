@@ -18,6 +18,7 @@ health_registry:
     source: Psychopharmacology
     title: Caffeine and cognitive performance meta-analysis
     year: 2010
+    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
 image_attribution: Pixabay — Coffea arabica
 name: Cafeína
 sabor: Amarga intensa, soluble agua caliente, bloquea adenosina

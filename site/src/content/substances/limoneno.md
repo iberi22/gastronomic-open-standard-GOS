@@ -21,6 +21,7 @@ health_registry:
         source: "Alt Med Rev"
         year: 2007
         doi: "10.1000/altmed.12.1.0"
+        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
 ---
 
 ![Limoneno](/images/substances/limoneno.jpg)

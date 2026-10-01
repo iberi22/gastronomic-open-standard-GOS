@@ -14,10 +14,10 @@ health_registry:
   evidence_level: High
   mechanism: Nrf2 activation → Phase II detox enzymes (GST, NQO1)
   studies:
-  - doi: 10.1158/1940-6207.CAPR-19-0010
-    source: Cancer Prev Res
-    title: 'Sulforaphane and Nrf2 chemoprevention: review'
-    year: 2019
+  - doi: 10.1053/j.seminoncol.2015.09.013
+    source: Seminars in Oncology
+    title: 'Frugal chemoprevention: targeting Nrf2 with foods rich in sulforaphane'
+    year: 2016
 image_attribution: Pixabay — Brassica oleracea
 name: Sulforafano
 sabor: Pungente mostaza leve, isotiocianato volátil, se forma con mirosinasa

@@ -18,6 +18,7 @@ health_registry:
     source: J Ayurveda Integr Med
     title: 'Piperine: bioenhancer for drug and nutrient absorption'
     year: 2013
+    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
 - condition: Inflammation
   evidence_level: Medium
   mechanism: NF-kB suppression, antioxidant
@@ -26,6 +27,7 @@ health_registry:
     source: Inflammation Res
     title: Piperine anti-inflammatory review
     year: 2015
+    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
 image_attribution: Pixabay — Piper nigrum
 name: Piperina
 sabor: Picante agudo aromático, activa TRPV1 y TRPA1 simultáneamente

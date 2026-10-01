@@ -14,9 +14,9 @@ health_registry:
   evidence_level: Medium
   mechanism: NF-kB inhibition, antioxidant
   studies:
-  - doi: 10.3945/an.116.014084
+  - doi: 10.3945/an.116.014852
     source: Adv Nutr
-    title: 'Anthocyanins and metabolic health: review'
+    title: 'Effects of Anthocyanins on Cardiometabolic Health: A Systematic Review and Meta-Analysis of Randomized Controlled Trials'
     year: 2017
 image_attribution: Pixabay — Zea mays morado
 name: Antocianina (Cianidina)

@@ -14,18 +14,18 @@ health_registry:
   evidence_level: High
   mechanism: 5-HT3 receptor antagonism in gut
   studies:
-  - doi: 10.1093/bja/84.3.367
+  - doi: 10.1093/oxfordjournals.bja.a013442
     source: British Journal of Anaesthesia
-    title: 'Efficacy of ginger for nausea and vomiting: systematic review'
+    title: 'Efficacy of ginger for nausea and vomiting: a systematic review of randomised trials'
     year: 2000
 - condition: Inflammation
   evidence_level: Medium
   mechanism: COX-2 inhibition similar to NSAIDs
   studies:
-  - doi: 10.1080/09637486.2016.1244665
-    source: Int J Food Sci Nutr
-    title: Gingerol and shogaol anti-inflammatory mechanisms
-    year: 2016
+  - doi: 10.1016/j.jep.2009.10.004
+    source: Journal of Ethnopharmacology
+    title: 'Comparative antioxidant and anti-inflammatory effects of [6]-gingerol, [6]-shogaol and [1]-shogaol'
+    year: 2010
 image_attribution: Pixabay — Zingiber officinale
 name: Gingerol
 sabor: Pungente fresco cítrico, se convierte en shogaol picante al secar/calentar

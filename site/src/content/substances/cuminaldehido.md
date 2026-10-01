@@ -21,6 +21,7 @@ health_registry:
         source: "Nutrition Research"
         year: 1999
         doi: "10.1016/S0271-5317(99)00031-1"
+        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
   - condition: "Irritable bowel"
     mechanism: "Carminative and spasmolytic"
     evidence_level: "Medium"
@@ -29,6 +30,7 @@ health_registry:
         source: "Middle East J Dig Dis"
         year: 2013
         doi: "10.17795/middleeastjdd-12123"
+        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
 ---
 
 ![Cuminaldehído](/images/substances/cuminaldehido.jpg)

@@ -28,6 +28,9 @@ type Study = {
   // Solo para las entradas de health_registry en sustancias.
   condition?: string
   evidence_level?: string
+  // false cuando el DOI está marcado como no verificado en la ficha: se
+  // publica en `studies` pero no cuenta para `studies_with_doi`.
+  verified?: boolean
 }
 
 function pickStudies(d: Record<string, unknown>): Study[] {
@@ -57,6 +60,15 @@ function pickStudies(d: Record<string, unknown>): Study[] {
             ? `https://doi.org/${doi}`
             : undefined,
     })
+    // Un DOI marcado `doi_status: unverified` se conserva en la ficha, pero no
+    // se cuenta como verificado: no resolvería en doi.org y publicarlo daría
+    // falsa confianza. Ver scripts/verify_dois.py, que es quien lo marca.
+    if (
+      r.doi_status === 'unverified' ||
+      r.doi_status === 'unverified_verified'
+    ) {
+      out[out.length - 1].verified = false
+    }
   }
   return out
 }
@@ -74,13 +86,21 @@ export const GET: APIRoute = async () => {
 
   const push = (kind: string, id: string, name: string, studies: Study[]) => {
     if (!studies.length) return
-    const verified = studies.filter((s) => s.doi)
+    const verified = studies.filter((s) => s.doi && s.verified !== false)
+    // Si tras filtrar no queda ninguno verificado, la entrada no se publica:
+    // un agente veria "Cafeina: studies: []" y concluiria que no hay
+    // literatura, cuando en realidad sus DOI no resuelven. La ficha sigue
+    // viva en el sitio, pero no se anuncia como evidencia.
+    if (!verified.length) {
+      unverified += studies.length
+      return
+    }
     unverified += studies.length - verified.length
     items.push({
       kind,
       id,
       name,
-      studies: verified.length ? verified : studies,
+      studies: verified,
       verified_count: verified.length,
     })
   }
@@ -121,6 +141,9 @@ export const GET: APIRoute = async () => {
             evidence_level: String(
               (entry as Record<string, unknown>).evidence_level ?? '',
             ),
+            // Igual que en pickStudies: un DOI marcado como no verificado no
+            // cuenta para studies_with_doi.
+            verified: r.doi_status !== 'unverified',
           })
         }
       }
@@ -135,7 +158,9 @@ export const GET: APIRoute = async () => {
     byKind[k] = (byKind[k] ?? 0) + 1
     const list = it.studies
     if (Array.isArray(list)) {
-      doiCount += list.filter((s) => Boolean((s as Study).doi)).length
+      doiCount += list.filter(
+        (s) => Boolean((s as Study).doi) && (s as Study).verified !== false,
+      ).length
     }
   }
 

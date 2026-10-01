@@ -21,6 +21,7 @@ health_registry:
         source: "J Nutr"
         year: 2009
         doi: "10.3945/jn.109.107979"
+        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
 ---
 
 ![Genisteína](/images/substances/genisteina.jpg)

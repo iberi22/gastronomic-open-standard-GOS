@@ -130,6 +130,10 @@ const substancesCollection = defineCollection({
                     source: z.string(),
                     year: z.number().optional(),
                     doi: z.string().optional(),
+                    // Marca un DOI que no resuelve en Crossref. Sin esta clave
+                    // el campo lo descarta Zod y el endpoint lo contaria como
+                    // verificado. La escribe scripts/verify_dois.py.
+                    doi_status: z.string().optional(),
                   }),
                 )
                 .optional(),

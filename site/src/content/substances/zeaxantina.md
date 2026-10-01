@@ -17,10 +17,10 @@ health_registry:
     mechanism: "Macular pigment optical density, blue light filter"
     evidence_level: "High"
     studies:
-      - title: "AREDS2: lutein/zeaxanthin and AMD"
-        source: "JAMA Ophthalmol"
+      - title: 'Lutein + Zeaxanthin and Omega-3 Fatty Acids for Age-Related Macular Degeneration'
+        source: 'JAMA'
         year: 2013
-        doi: "10.1001/jamaophthalmol.2013.4403"
+        doi: '10.1001/jama.2013.4997'
 ---
 
 ![Zeaxantina](/images/substances/zeaxantina.jpg)
