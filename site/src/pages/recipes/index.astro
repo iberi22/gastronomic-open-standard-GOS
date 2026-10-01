@@ -4,6 +4,7 @@ import RecipeVault from '../../components/RecipeVault.svelte'
 import SearchBar from '../../components/SearchBar.astro'
 // site/src/pages/recipes/index.astro — searchable + faceted recipe catalog
 import Layout from '../../layouts/Layout.astro'
+import { recipeIndexDescription } from '../../lib/meta-description'
 import { formatMinutes } from '../../lib/recipe-standard'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
@@ -68,7 +69,7 @@ const difficultyFacets = [
 ].slice(0, 6)
 ---
 
-<Layout title="Recetas — GOS">
+<Layout title="Recetas — GOS" description={recipeIndexDescription(sorted.length)}>
   <h1 class="title">Recetas del grafo global</h1>
   <p class="sub">
     Base de <strong>{sorted.length}</strong> recetas del mundo — con región,

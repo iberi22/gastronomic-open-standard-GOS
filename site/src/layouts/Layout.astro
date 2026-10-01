@@ -2,6 +2,7 @@
 import { Toaster } from '@swal/ui'
 import OfflineBanner from '../components/OfflineBanner.astro'
 import TranslateMenu from '../components/TranslateMenu.astro'
+import { ogMeta } from '../lib/images'
 import { SITE_URL } from '../lib/seo'
 import '../styles/global.css'
 
@@ -11,15 +12,23 @@ interface Props {
   image?: string
   canonical?: string
   type?: string
+  /** Saca la pagina del indice de buscadores. Para fichas sin datos aun. */
+  noindex?: boolean
 }
 
 const {
   title = 'GOS — Gastronomic Open Standard',
-  description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity',
+  // Default sin stack tecnico: el texto anterior ("· Astro 7 + Svelte 5 +
+  // Antigravity") no le dice nada a quien busca y empujaba a 576 paginas a
+  // compartir la misma description. Describe el sitio, no la tecnologia.
+  description = 'Base de conocimiento gastronomica abierta: recetas de todo el mundo conectadas con ingredientes, vitaminas, sabores, micronutrientes, afecciones y substancias bioactivas.',
   image,
   canonical,
   type = 'website',
+  noindex = false,
 } = Astro.props
+
+const robots = noindex ? 'noindex, follow' : 'index, follow'
 
 const base = import.meta.env.BASE_URL
 const baseClean = base.replace(/\/$/, '')
@@ -29,12 +38,10 @@ const pathname = Astro.url?.pathname || '/'
 const canonicalUrl =
   canonical ||
   `${siteOrigin}${pathname.startsWith('/') ? pathname : `/${pathname}`}`
-const defaultImage = `${siteOrigin}/favicon.svg`
-const imageUrl = image
-  ? image.startsWith('http')
-    ? image
-    : `${siteOrigin}${image.startsWith('/') ? image : `/${image}`}`
-  : defaultImage
+// Google y los crawlers sociales no aceptan SVG en og:image/twitter:image.
+// ogMeta() mapea cada SVG a su PNG de 1200x630, cae a og-default.png y deja
+// intactas las imagenes raster que el sitio ya emitia.
+const og = ogMeta(image, siteOrigin)
 ---
 <!doctype html>
 <html lang="es" data-theme="antigravity">
@@ -43,6 +50,7 @@ const imageUrl = image
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <meta name="theme-color" content="#050507" />
 
     <!-- Canonical URL -->
@@ -54,7 +62,16 @@ const imageUrl = image
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image" content={og.url} />
+    <meta property="og:image:type" content={og.type} />
+    {
+      og.width && (
+        <>
+          <meta property="og:image:width" content={String(og.width)} />
+          <meta property="og:image:height" content={String(og.height)} />
+        </>
+      )
+    }
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -62,7 +79,7 @@ const imageUrl = image
     <meta name="twitter:url" content={canonicalUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image" content={og.url} />
 
     <link rel="manifest" href={`${baseClean}/manifest.json`} />
     <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />

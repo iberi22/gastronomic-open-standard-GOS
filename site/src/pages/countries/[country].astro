@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
+import { countryDescription } from '../../lib/meta-description'
 
 export async function getStaticPaths() {
   const dishes = await getCollection('dishes')
@@ -59,9 +60,28 @@ const sorted = dishes.sort((a, b) => {
   const tb = String(fd(b.data).title || b.id)
   return ta.localeCompare(tb)
 })
+
+// Region mas frecuente del pais (dato real del frontmatter, no inventado) y
+// los primeros sabores declarados: dan variety a la description sin inventar.
+const regionOfCountry =
+  sorted.find((d) => fd(d.data).region)?.data.region || 'todo el país'
+const flavorList = (d: DishFrontmatter): string[] => {
+  const raw = d.sensory?.flavor
+  if (!raw) return []
+  return Array.isArray(raw) ? raw.map(String) : [String(raw)]
+}
+const countryDescriptionText = countryDescription({
+  name: meta.name,
+  region: String(regionOfCountry),
+  recipeCount: sorted.length,
+  highlights: sorted.flatMap((d) => flavorList(fd(d.data))),
+})
 ---
 
-<Layout title={`Recetas de ${meta.name} — GOS`}>
+<Layout
+  title={`Recetas de ${meta.name} — GOS`}
+  description={countryDescriptionText}
+>
   <a href={`${base}/countries`} class="back">← Catálogo de Países</a>
 
   <div class="header">

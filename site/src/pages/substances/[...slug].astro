@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
+import { substanceDescription } from '../../lib/meta-description'
 import { substanceJsonLd } from '../../lib/seo'
 
 export async function getStaticPaths() {
@@ -13,7 +14,17 @@ const { Content } = await render(entry)
 const s = entry.data
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
 const title = `${s.name} (${s.formula ?? ''}) — Sustancia GOS`
-const desc = s.benefit ?? s.sazon ?? `${s.name} sustancia bioactiva`
+// Antes era `s.benefit ?? s.sazon` pelado: 31 de 34 paginas quedaban en
+// 31-106 caracteres. Ahora se compone con formula, origen y sazon reales.
+const desc = substanceDescription({
+  name: s.name,
+  formula: s.formula,
+  benefit: s.benefit,
+  sazon: s.sazon,
+  sabor: s.sabor,
+  sourceIngredient: s.source_ingredient,
+  vitamins: s.vitaminas,
+})
 const jsonLd = substanceJsonLd({ slug: entry.id, data: s })
 const graphUrl = `${baseUrl}/graph?filter=substance:${entry.id}`
 const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-knowledge&title=${encodeURIComponent(`[Substance] ${s.name}`)}`
