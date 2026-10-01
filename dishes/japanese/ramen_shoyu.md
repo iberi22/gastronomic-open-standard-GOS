@@ -51,6 +51,17 @@ nutrition:
 images:
   - url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600'
     description: Shoyu Ramen Tradicional tradicional
+studies:
+  - title: "The Importance of the Presence of a 5'-Ribonucleotide and the Contribution of the T1R1 + T1R3 Heterodimer in Taste Detection of l-Glutamate"
+    source: "The Journal of Neuroscience"
+    year: 2014
+    doi: "10.1523/JNEUROSCI.0417-14.2014"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25253867/"
+  - title: "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor"
+    source: "Biomed Research International"
+    year: 2015
+    doi: "10.1155/2015/189402"
+    url: "https://pubmed.ncbi.nlm.nih.gov/26247011/"
 description: >-
   El Shoyu Ramen es el estilo clásico de Tokio con caldo claro a base de pollo,
   cerdo y dashi, sazonado con tare de salsa de soja fermentada.
@@ -95,3 +106,13 @@ El Shoyu Ramen es el estilo clásico de Tokio con caldo claro a base de pollo, c
 * **Textura:** Fideos al dente (katame), Chashu meloso
 * **Aroma:** Caldo de cerdo y pollo, Shoyu tare, Aceite de ajo molido
 * **Presentación:** Tazón profundo de caldo oscuro brillante con fideos ondulados, chashu, ajitsuke tamago y nori.
+
+---
+
+## 🔬 Sinergia Compleja de Umami y Nucleótidos
+
+El caldo del Shoyu Ramen integra múltiples fuentes complejas de sabor umami:
+
+* **Salsa de Soja Shoyu (Tare):** Contiene entre 700 y 1200 mg/100g de L-glutamato libre producido por la hidrólisis enzimática de proteínas durante la fermentación con *Aspergillus oryzae*.
+* **Dashi Marino (Kombu y Katsuobushi):** Aporta L-glutamato (kombu) e inosinato monofosfato (IMP del katsuobushi, 470 - 800 mg/100g).
+* **Caldo de Huesos y Cerdo/Pollo:** La cocción prolongada descompone el colágeno y libera nucleótidos y aminoácidos libres adicionales, generando una potente sinergia de estimulación alostérica sobre los heterodímeros gustativos T1R1/T1R3.
