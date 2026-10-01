@@ -21,6 +21,11 @@ studies:
     year: 2021
     doi: "10.17268/agroind.sci.2021.03.11"
     url: "https://doi.org/10.17268/agroind.sci.2021.03.11"
+  - title: "Amazonian Fruits for Treatment of Non-Communicable Diseases"
+    source: "Current Nutrition Reports"
+    year: 2024
+    doi: "10.1007/s13668-024-00553-9"
+    url: "https://doi.org/10.1007/s13668-024-00553-9"
 ---
 
 # Cupuaçu y Cacau: Sinergia Filogenética de Bioactivos
