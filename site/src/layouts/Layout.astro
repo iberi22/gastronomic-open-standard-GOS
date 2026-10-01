@@ -78,23 +78,22 @@ const imageUrl = image
       :root[data-theme="antigravity-light"] * { scrollbar-color: #D6D3D1 transparent; }
 
       /* Accesibilidad: --swal-text-muted y --swal-accent vienen de @swal/ui con
-         valores que no llegan a WCAG AA sobre nuestras superficies. Medido con
-         composicion de alfa real y contra los 4 fondos que usa el sitio
-         (page, card, elevated, elevated-850):
-           muted  #6b7280 -> 3.96:1 sobre card, 3.3:1 sobre elevated
-           accent #8b5cf6 -> 4.10:1 como texto sobre elevated
+         valores que no llegan a WCAG AA. Medido contra los 4 fondos que usa el
+         tema (card #0f0f10, page #050507, elevated #1a1a1d, elevated-850):
+           muted  #6b7280 -> 3.45 a 4.21:1  (el peor, elevated-850)
+           accent #8b5cf6 -> 3.94 a 4.81:1  como texto
          Se suben al primer tono que pasa 4.5:1 en los cuatro, sin tocar el
-         paquete. Afecta a 12 archivos, casi todos con texto de 9-12px. */
+         paquete. El acento se parte en dos usos: como texto necesita un tono
+         mas claro, como fondo de boton uno mas oscuro. Afecta a 12 archivos,
+         casi todos con texto de 9-12px. */
       :root[data-theme="antigravity"] {
         --swal-text-muted: #808790;
-        /* Acento como texto. El boton primario usa --swal-btn-bg aparte. */
         --swal-accent-text: #9a68f9;
         --swal-btn-bg: #7c3aed;
       }
       :root[data-theme="antigravity-light"] { --swal-text-muted: #6e6863; }
 
-      /* .swal-btn primary viene de @swal/ui con el acento como fondo: blanco
-         sobre #8b5cf6 da 4.23:1. Se le pasa el fondo corregido. */
+      /* Boton primario de @swal/ui: blanco sobre --swal-accent da 4.23:1. */
       .swal-btn.primary, .swal-btn.swal-btn-primary {
         background: var(--swal-btn-bg, var(--swal-accent)) !important;
       }

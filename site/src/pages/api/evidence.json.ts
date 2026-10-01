@@ -158,9 +158,9 @@ export const GET: APIRoute = async () => {
     byKind[k] = (byKind[k] ?? 0) + 1
     const list = it.studies
     if (Array.isArray(list)) {
-      doiCount += list.filter(
-        (s) => Boolean((s as Study).doi) && (s as Study).verified !== false,
-      ).length
+      // `list` ya viene filtrado por `push`, asi que solo hace falta contar
+      // los que ademas tienen DOI.
+      doiCount += list.filter((s) => Boolean((s as Study).doi)).length
     }
   }
 
