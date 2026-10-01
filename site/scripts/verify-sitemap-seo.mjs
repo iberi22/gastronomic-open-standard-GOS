@@ -86,6 +86,11 @@ const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
 const orphans = locs.filter(orphan)
 const noSlash = locs.filter((u) => !u.endsWith('/'))
 const notEs = [...langs.entries()].filter(([l]) => l !== 'es')
+// El dominio del sitemap se comprueba aparte del canonical del HTML: un
+// sitemap entero servido desde gos-site.pages.dev seguiria dando rc=0 porque
+// los canonical de cada pagina si son correctos. Control negativo ejecutado:
+// sustituir SITE por pages.dev en el sitemap debe dar rc=1.
+const smWrongHost = locs.filter((u) => !u.startsWith(`${SITE}/`))
 
 // El sitemap lista solo páginas indexables: las noindex (stubs de
 // pending_review) quedan fuera a propósito, luego locs < HTML totales.
@@ -100,6 +105,7 @@ const T = [
   ['loc de sitemap sin / final', noSlash.length, 0],
   ['Duplicados en sitemap', locs.length - new Set(locs).size, 0],
   ['xhtml:link en sitemap', (sitemap.match(/xhtml:link/gi) || []).length, 0],
+  ['loc de sitemap fuera del dominio canonico', smWrongHost.length, 0],
   ['Paginas HTML con hreflang', hreflangPages, 0],
   [
     'Canonical correcto (sin pages.dev)',
