@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { absUrl } from '../../lib/seo'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const endpoints = [
@@ -98,7 +99,7 @@ const endpoints = [
   </div>
 
   <p class="sub">
-    Base: <code>{`https://gos-site.pages.dev/api`}</code> ·
+    Base: <code>{absUrl('/api')}</code> ·
     Documentación completa en <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md">API_README.md</a>.
   </p>
 </Layout>

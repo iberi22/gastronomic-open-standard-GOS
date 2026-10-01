@@ -59,8 +59,10 @@ export interface SubstanceLDInput {
 }
 
 const SITE_URL = (
-  import.meta.env?.PUBLIC_SITE_URL || 'https://gos-site.pages.dev'
+  import.meta.env?.PUBLIC_SITE_URL || 'https://gos.swal.network'
 ).replace(/\/$/, '')
+
+export { SITE_URL }
 
 export function absUrl(path?: string): string {
   if (!path) return SITE_URL

@@ -2,6 +2,7 @@
 import { Toaster } from '@swal/ui'
 import OfflineBanner from '../components/OfflineBanner.astro'
 import TranslateMenu from '../components/TranslateMenu.astro'
+import { SITE_URL } from '../lib/seo'
 import '../styles/global.css'
 
 interface Props {
@@ -22,7 +23,7 @@ const {
 
 const base = import.meta.env.BASE_URL
 const baseClean = base.replace(/\/$/, '')
-const siteOrigin = 'https://gos-site.pages.dev'
+const siteOrigin = SITE_URL
 
 const pathname = Astro.url?.pathname || '/'
 const canonicalUrl =

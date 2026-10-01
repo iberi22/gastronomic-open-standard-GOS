@@ -2,7 +2,7 @@
 // site/scripts/generate-feed.mjs
 // Generates site/public/feed.json with latest content items (up to 20 per type)
 import { readdir } from 'node:fs/promises'
-import { join } from 'node:path'
+import { basename, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
@@ -54,12 +54,20 @@ async function main() {
         const title = slugToTitle(basename(rel))
         allItems.push({ collection: col, slug: rel, url, title })
       }
-    } catch {
-      // Collection doesn't exist
+    } catch (err) {
+      // Antes era `catch {}`: un ReferenceError por `basename` no importado
+      // dejo el feed entero en 0 items sin dejar rastro. Si la coleccion no
+      // existe se avisa, pero el fallo real nunca se traga.
+      console.warn(`  [feed] ${col}: ${err.message}`)
     }
   }
 
-  const feedItems = allItems.slice(0, 50).map((item) => ({
+  // 20 por coleccion (lo que dice el header del script), no un slice global:
+  // dishes tiene 495 .md y se comia las 5 colecciones restantes del feed.
+  const PER_COLLECTION = 20
+  const feedItems = COLLECTIONS.flatMap((col) =>
+    allItems.filter((i) => i.collection === col).slice(0, PER_COLLECTION),
+  ).map((item) => ({
     id: item.url,
     url: item.url,
     title: item.title,
@@ -80,7 +88,8 @@ async function main() {
   const { writeFile } = await import('node:fs/promises')
   await writeFile(
     join(__dirname, '../public/feed.json'),
-    JSON.stringify(feed, null, 2),
+    // newline final: sin el, `biome check` falla el formato del JSON
+    JSON.stringify(feed, null, 2) + '\n',
   )
   console.log(`feed.json: ${feedItems.length} items (${allItems.length} total)`)
 }

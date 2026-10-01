@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
 import { INGREDIENT_PLACEHOLDER, resolveIngredientHero } from '../../lib/images'
+import { absUrl } from '../../lib/seo'
 export async function getStaticPaths() {
   const col = await getCollection('ingredients')
   return col.map((entry) => ({ params: { slug: entry.id }, props: { entry } }))
@@ -14,7 +15,7 @@ const data = entry.data
 // imagen hoy; el pipeline de contenido las generará — gap anotado).
 const heroImage = resolveIngredientHero(data)
 const heroIsPlaceholder = heroImage === INGREDIENT_PLACEHOLDER
-const ingredientUrl = `https://gos-site.pages.dev/ingredients/${entry.id}`
+const ingredientUrl = absUrl(`/ingredients/${entry.id}`)
 const nutrition = data.nutrition_per_100g || {}
 const jsonLd = {
   '@context': 'https://schema.org',

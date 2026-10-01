@@ -1,359 +1,751 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "GOS — Gastronomic Open Standard",
-  "home_page_url": "https://gos-site.pages.dev",
-  "feed_url": "https://gos-site.pages.dev/feed.json",
+  "home_page_url": "https://gos.swal.network",
+  "feed_url": "https://gos.swal.network/feed.json",
   "description": "Grafo gastronómico global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias",
   "items": [
     {
-      "id": "https://gos-site.pages.dev/recipes/american/apple_pie_traditional",
-      "url": "https://gos-site.pages.dev/recipes/american/apple_pie_traditional",
+      "id": "https://gos.swal.network/recipes/american/apple_pie_traditional",
+      "url": "https://gos.swal.network/recipes/american/apple_pie_traditional",
       "title": "Apple_pie_traditional",
       "collection": "dishes",
       "slug": "american/apple_pie_traditional"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/bbq_pork_ribs",
-      "url": "https://gos-site.pages.dev/recipes/american/bbq_pork_ribs",
+      "id": "https://gos.swal.network/recipes/american/bbq_pork_ribs",
+      "url": "https://gos.swal.network/recipes/american/bbq_pork_ribs",
       "title": "Bbq_pork_ribs",
       "collection": "dishes",
       "slug": "american/bbq_pork_ribs"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings",
-      "url": "https://gos-site.pages.dev/recipes/american/buffalo_chicken_wings",
+      "id": "https://gos.swal.network/recipes/american/biscuits_and_gravy",
+      "url": "https://gos.swal.network/recipes/american/biscuits_and_gravy",
+      "title": "Biscuits_and_gravy",
+      "collection": "dishes",
+      "slug": "american/biscuits_and_gravy"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/brisket_texas_style",
+      "url": "https://gos.swal.network/recipes/american/brisket_texas_style",
+      "title": "Brisket_texas_style",
+      "collection": "dishes",
+      "slug": "american/brisket_texas_style"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/brunswick_stew",
+      "url": "https://gos.swal.network/recipes/american/brunswick_stew",
+      "title": "Brunswick_stew",
+      "collection": "dishes",
+      "slug": "american/brunswick_stew"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/buffalo_chicken_wings",
+      "url": "https://gos.swal.network/recipes/american/buffalo_chicken_wings",
       "title": "Buffalo_chicken_wings",
       "collection": "dishes",
       "slug": "american/buffalo_chicken_wings"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/clam_chowder_boston",
-      "url": "https://gos-site.pages.dev/recipes/american/clam_chowder_boston",
+      "id": "https://gos.swal.network/recipes/american/chicken_and_waffles",
+      "url": "https://gos.swal.network/recipes/american/chicken_and_waffles",
+      "title": "Chicken_and_waffles",
+      "collection": "dishes",
+      "slug": "american/chicken_and_waffles"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/chicken_fried_steak",
+      "url": "https://gos.swal.network/recipes/american/chicken_fried_steak",
+      "title": "Chicken_fried_steak",
+      "collection": "dishes",
+      "slug": "american/chicken_fried_steak"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/chili_verde_new_mexico",
+      "url": "https://gos.swal.network/recipes/american/chili_verde_new_mexico",
+      "title": "Chili_verde_new_mexico",
+      "collection": "dishes",
+      "slug": "american/chili_verde_new_mexico"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/clam_chowder_boston",
+      "url": "https://gos.swal.network/recipes/american/clam_chowder_boston",
       "title": "Clam_chowder_boston",
       "collection": "dishes",
       "slug": "american/clam_chowder_boston"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/classic_cheeseburger",
-      "url": "https://gos-site.pages.dev/recipes/american/classic_cheeseburger",
+      "id": "https://gos.swal.network/recipes/american/clam_chowder_manhattan",
+      "url": "https://gos.swal.network/recipes/american/clam_chowder_manhattan",
+      "title": "Clam_chowder_manhattan",
+      "collection": "dishes",
+      "slug": "american/clam_chowder_manhattan"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/classic_cheeseburger",
+      "url": "https://gos.swal.network/recipes/american/classic_cheeseburger",
       "title": "Classic_cheeseburger",
       "collection": "dishes",
       "slug": "american/classic_cheeseburger"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton",
-      "url": "https://gos-site.pages.dev/recipes/american/cobbler_de_melocoton",
+      "id": "https://gos.swal.network/recipes/american/cobbler_de_melocoton",
+      "url": "https://gos.swal.network/recipes/american/cobbler_de_melocoton",
       "title": "Cobbler_de_melocoton",
       "collection": "dishes",
       "slug": "american/cobbler_de_melocoton"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/cornbread_southern",
-      "url": "https://gos-site.pages.dev/recipes/american/cornbread_southern",
+      "id": "https://gos.swal.network/recipes/american/collard_greens_southern",
+      "url": "https://gos.swal.network/recipes/american/collard_greens_southern",
+      "title": "Collard_greens_southern",
+      "collection": "dishes",
+      "slug": "american/collard_greens_southern"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/cornbread_southern",
+      "url": "https://gos.swal.network/recipes/american/cornbread_southern",
       "title": "Cornbread_southern",
       "collection": "dishes",
       "slug": "american/cornbread_southern"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/eggs_benedict",
-      "url": "https://gos-site.pages.dev/recipes/american/eggs_benedict",
+      "id": "https://gos.swal.network/recipes/american/crawfish_boil_louisiana",
+      "url": "https://gos.swal.network/recipes/american/crawfish_boil_louisiana",
+      "title": "Crawfish_boil_louisiana",
+      "collection": "dishes",
+      "slug": "american/crawfish_boil_louisiana"
+    },
+    {
+      "id": "https://gos.swal.network/recipes/american/eggs_benedict",
+      "url": "https://gos.swal.network/recipes/american/eggs_benedict",
       "title": "Eggs_benedict",
       "collection": "dishes",
       "slug": "american/eggs_benedict"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/fried_chicken_southern",
-      "url": "https://gos-site.pages.dev/recipes/american/fried_chicken_southern",
+      "id": "https://gos.swal.network/recipes/american/fried_chicken_southern",
+      "url": "https://gos.swal.network/recipes/american/fried_chicken_southern",
       "title": "Fried_chicken_southern",
       "collection": "dishes",
       "slug": "american/fried_chicken_southern"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/gumbo_louisiana",
-      "url": "https://gos-site.pages.dev/recipes/american/gumbo_louisiana",
+      "id": "https://gos.swal.network/recipes/american/gumbo_louisiana",
+      "url": "https://gos.swal.network/recipes/american/gumbo_louisiana",
       "title": "Gumbo_louisiana",
       "collection": "dishes",
       "slug": "american/gumbo_louisiana"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/jambalaya_cajun",
-      "url": "https://gos-site.pages.dev/recipes/american/jambalaya_cajun",
+      "id": "https://gos.swal.network/recipes/american/jambalaya_cajun",
+      "url": "https://gos.swal.network/recipes/american/jambalaya_cajun",
       "title": "Jambalaya_cajun",
       "collection": "dishes",
       "slug": "american/jambalaya_cajun"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/key_lime_pie",
-      "url": "https://gos-site.pages.dev/recipes/american/key_lime_pie",
-      "title": "Key_lime_pie",
-      "collection": "dishes",
-      "slug": "american/key_lime_pie"
+      "id": "https://gos.swal.network/ingredients/condiments/ajo",
+      "url": "https://gos.swal.network/ingredients/condiments/ajo",
+      "title": "Ajo",
+      "collection": "ingredients",
+      "slug": "condiments/ajo"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/macaroni_and_cheese",
-      "url": "https://gos-site.pages.dev/recipes/american/macaroni_and_cheese",
-      "title": "Macaroni_and_cheese",
-      "collection": "dishes",
-      "slug": "american/macaroni_and_cheese"
+      "id": "https://gos.swal.network/ingredients/condiments/cilantro",
+      "url": "https://gos.swal.network/ingredients/condiments/cilantro",
+      "title": "Cilantro",
+      "collection": "ingredients",
+      "slug": "condiments/cilantro"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze",
-      "url": "https://gos-site.pages.dev/recipes/american/meatloaf_with_glaze",
-      "title": "Meatloaf_with_glaze",
-      "collection": "dishes",
-      "slug": "american/meatloaf_with_glaze"
+      "id": "https://gos.swal.network/ingredients/condiments/comino",
+      "url": "https://gos.swal.network/ingredients/condiments/comino",
+      "title": "Comino",
+      "collection": "ingredients",
+      "slug": "condiments/comino"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup",
-      "url": "https://gos-site.pages.dev/recipes/american/pancakes_maple_syrup",
-      "title": "Pancakes_maple_syrup",
-      "collection": "dishes",
-      "slug": "american/pancakes_maple_syrup"
+      "id": "https://gos.swal.network/ingredients/condiments/jengibre",
+      "url": "https://gos.swal.network/ingredients/condiments/jengibre",
+      "title": "Jengibre",
+      "collection": "ingredients",
+      "slug": "condiments/jengibre"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/philly_cheesesteak",
-      "url": "https://gos-site.pages.dev/recipes/american/philly_cheesesteak",
-      "title": "Philly_cheesesteak",
-      "collection": "dishes",
-      "slug": "american/philly_cheesesteak"
+      "id": "https://gos.swal.network/ingredients/condiments/panela",
+      "url": "https://gos.swal.network/ingredients/condiments/panela",
+      "title": "Panela",
+      "collection": "ingredients",
+      "slug": "condiments/panela"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/pot_roast_american",
-      "url": "https://gos-site.pages.dev/recipes/american/pot_roast_american",
-      "title": "Pot_roast_american",
-      "collection": "dishes",
-      "slug": "american/pot_roast_american"
+      "id": "https://gos.swal.network/ingredients/condiments/sal",
+      "url": "https://gos.swal.network/ingredients/condiments/sal",
+      "title": "Sal",
+      "collection": "ingredients",
+      "slug": "condiments/sal"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich",
-      "url": "https://gos-site.pages.dev/recipes/american/pulled_pork_sandwich",
-      "title": "Pulled_pork_sandwich",
-      "collection": "dishes",
-      "slug": "american/pulled_pork_sandwich"
+      "id": "https://gos.swal.network/ingredients/dairy/crema_leche",
+      "url": "https://gos.swal.network/ingredients/dairy/crema_leche",
+      "title": "Crema_leche",
+      "collection": "ingredients",
+      "slug": "dairy/crema_leche"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/reuben_sandwich",
-      "url": "https://gos-site.pages.dev/recipes/american/reuben_sandwich",
-      "title": "Reuben_sandwich",
-      "collection": "dishes",
-      "slug": "american/reuben_sandwich"
+      "id": "https://gos.swal.network/ingredients/dairy/leche",
+      "url": "https://gos.swal.network/ingredients/dairy/leche",
+      "title": "Leche",
+      "collection": "ingredients",
+      "slug": "dairy/leche"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/american/texas_chili_con_carne",
-      "url": "https://gos-site.pages.dev/recipes/american/texas_chili_con_carne",
-      "title": "Texas_chili_con_carne",
-      "collection": "dishes",
-      "slug": "american/texas_chili_con_carne"
+      "id": "https://gos.swal.network/ingredients/dairy/mantequilla",
+      "url": "https://gos.swal.network/ingredients/dairy/mantequilla",
+      "title": "Mantequilla",
+      "collection": "ingredients",
+      "slug": "dairy/mantequilla"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/alfajores_de_maicena",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/alfajores_de_maicena",
-      "title": "Alfajores_de_maicena",
-      "collection": "dishes",
-      "slug": "argentinian/alfajores_de_maicena"
+      "id": "https://gos.swal.network/ingredients/dairy/queso",
+      "url": "https://gos.swal.network/ingredients/dairy/queso",
+      "title": "Queso",
+      "collection": "ingredients",
+      "slug": "dairy/queso"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/asado_criollo",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/asado_criollo",
-      "title": "Asado_criollo",
-      "collection": "dishes",
-      "slug": "argentinian/asado_criollo"
+      "id": "https://gos.swal.network/ingredients/fruits/aguacate",
+      "url": "https://gos.swal.network/ingredients/fruits/aguacate",
+      "title": "Aguacate",
+      "collection": "ingredients",
+      "slug": "fruits/aguacate"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/carbonada_criolla",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/carbonada_criolla",
-      "title": "Carbonada_criolla",
-      "collection": "dishes",
-      "slug": "argentinian/carbonada_criolla"
+      "id": "https://gos.swal.network/ingredients/fruits/limon",
+      "url": "https://gos.swal.network/ingredients/fruits/limon",
+      "title": "Limon",
+      "collection": "ingredients",
+      "slug": "fruits/limon"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/choripan",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/choripan",
-      "title": "Choripan",
-      "collection": "dishes",
-      "slug": "argentinian/choripan"
+      "id": "https://gos.swal.network/ingredients/grains/almidon_yuca",
+      "url": "https://gos.swal.network/ingredients/grains/almidon_yuca",
+      "title": "Almidon_yuca",
+      "collection": "ingredients",
+      "slug": "grains/almidon_yuca"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/empanadas_tucumanas",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/empanadas_tucumanas",
-      "title": "Empanadas_tucumanas",
-      "collection": "dishes",
-      "slug": "argentinian/empanadas_tucumanas"
+      "id": "https://gos.swal.network/ingredients/grains/arroz",
+      "url": "https://gos.swal.network/ingredients/grains/arroz",
+      "title": "Arroz",
+      "collection": "ingredients",
+      "slug": "grains/arroz"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/humita_en_chala",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/humita_en_chala",
-      "title": "Humita_en_chala",
-      "collection": "dishes",
-      "slug": "argentinian/humita_en_chala"
+      "id": "https://gos.swal.network/ingredients/grains/harina_trigo",
+      "url": "https://gos.swal.network/ingredients/grains/harina_trigo",
+      "title": "Harina_trigo",
+      "collection": "ingredients",
+      "slug": "grains/harina_trigo"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/locro_criollo",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/locro_criollo",
-      "title": "Locro_criollo",
-      "collection": "dishes",
-      "slug": "argentinian/locro_criollo"
+      "id": "https://gos.swal.network/ingredients/grains/maiz",
+      "url": "https://gos.swal.network/ingredients/grains/maiz",
+      "title": "Maiz",
+      "collection": "ingredients",
+      "slug": "grains/maiz"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/milanesa_a_la_napolitana",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/milanesa_a_la_napolitana",
-      "title": "Milanesa_a_la_napolitana",
-      "collection": "dishes",
-      "slug": "argentinian/milanesa_a_la_napolitana"
+      "id": "https://gos.swal.network/ingredients/legumes/frijol",
+      "url": "https://gos.swal.network/ingredients/legumes/frijol",
+      "title": "Frijol",
+      "collection": "ingredients",
+      "slug": "legumes/frijol"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/pastelitos_criollos",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/pastelitos_criollos",
-      "title": "Pastelitos_criollos",
-      "collection": "dishes",
-      "slug": "argentinian/pastelitos_criollos"
+      "id": "https://gos.swal.network/ingredients/legumes/lentejas",
+      "url": "https://gos.swal.network/ingredients/legumes/lentejas",
+      "title": "Lentejas",
+      "collection": "ingredients",
+      "slug": "legumes/lentejas"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/argentinian/provoleta",
-      "url": "https://gos-site.pages.dev/recipes/argentinian/provoleta",
-      "title": "Provoleta",
-      "collection": "dishes",
-      "slug": "argentinian/provoleta"
+      "id": "https://gos.swal.network/ingredients/oils/aceite",
+      "url": "https://gos.swal.network/ingredients/oils/aceite",
+      "title": "Aceite",
+      "collection": "ingredients",
+      "slug": "oils/aceite"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/acaraje",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/acaraje",
-      "title": "Acaraje",
-      "collection": "dishes",
-      "slug": "brazilian/acaraje"
+      "id": "https://gos.swal.network/ingredients/oils/aceite_ajonjoli",
+      "url": "https://gos.swal.network/ingredients/oils/aceite_ajonjoli",
+      "title": "Aceite_ajonjoli",
+      "collection": "ingredients",
+      "slug": "oils/aceite_ajonjoli"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/brigadeiro",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/brigadeiro",
-      "title": "Brigadeiro",
-      "collection": "dishes",
-      "slug": "brazilian/brigadeiro"
+      "id": "https://gos.swal.network/vitamins/a-a",
+      "url": "https://gos.swal.network/vitamins/a-a",
+      "title": "A-a",
+      "collection": "vitamins",
+      "slug": "a-a"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/caipirinha",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/caipirinha",
-      "title": "Caipirinha",
-      "collection": "dishes",
-      "slug": "brazilian/caipirinha"
+      "id": "https://gos.swal.network/vitamins/b1-b1",
+      "url": "https://gos.swal.network/vitamins/b1-b1",
+      "title": "B1-b1",
+      "collection": "vitamins",
+      "slug": "b1-b1"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/churrasco",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/churrasco",
-      "title": "Churrasco",
-      "collection": "dishes",
-      "slug": "brazilian/churrasco"
+      "id": "https://gos.swal.network/vitamins/b10-b10",
+      "url": "https://gos.swal.network/vitamins/b10-b10",
+      "title": "B10-b10",
+      "collection": "vitamins",
+      "slug": "b10-b10"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/coxinha",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/coxinha",
-      "title": "Coxinha",
-      "collection": "dishes",
-      "slug": "brazilian/coxinha"
+      "id": "https://gos.swal.network/vitamins/b12-b12",
+      "url": "https://gos.swal.network/vitamins/b12-b12",
+      "title": "B12-b12",
+      "collection": "vitamins",
+      "slug": "b12-b12"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/feijoada",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/feijoada",
-      "title": "Feijoada",
-      "collection": "dishes",
-      "slug": "brazilian/feijoada"
+      "id": "https://gos.swal.network/vitamins/b13-b13",
+      "url": "https://gos.swal.network/vitamins/b13-b13",
+      "title": "B13-b13",
+      "collection": "vitamins",
+      "slug": "b13-b13"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/moqueca_de_peixe",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/moqueca_de_peixe",
-      "title": "Moqueca_de_peixe",
-      "collection": "dishes",
-      "slug": "brazilian/moqueca_de_peixe"
+      "id": "https://gos.swal.network/vitamins/b14-b14",
+      "url": "https://gos.swal.network/vitamins/b14-b14",
+      "title": "B14-b14",
+      "collection": "vitamins",
+      "slug": "b14-b14"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/pao_de_queijo",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/pao_de_queijo",
-      "title": "Pao_de_queijo",
-      "collection": "dishes",
-      "slug": "brazilian/pao_de_queijo"
+      "id": "https://gos.swal.network/vitamins/b15-b15",
+      "url": "https://gos.swal.network/vitamins/b15-b15",
+      "title": "B15-b15",
+      "collection": "vitamins",
+      "slug": "b15-b15"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/pudim_de_leite",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/pudim_de_leite",
-      "title": "Pudim_de_leite",
-      "collection": "dishes",
-      "slug": "brazilian/pudim_de_leite"
+      "id": "https://gos.swal.network/vitamins/b16-b16",
+      "url": "https://gos.swal.network/vitamins/b16-b16",
+      "title": "B16-b16",
+      "collection": "vitamins",
+      "slug": "b16-b16"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/brazilian/vatapa",
-      "url": "https://gos-site.pages.dev/recipes/brazilian/vatapa",
-      "title": "Vatapa",
-      "collection": "dishes",
-      "slug": "brazilian/vatapa"
+      "id": "https://gos.swal.network/vitamins/b17-b17",
+      "url": "https://gos.swal.network/vitamins/b17-b17",
+      "title": "B17-b17",
+      "collection": "vitamins",
+      "slug": "b17-b17"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/caldillo_de_congrio",
-      "url": "https://gos-site.pages.dev/recipes/chilean/caldillo_de_congrio",
-      "title": "Caldillo_de_congrio",
-      "collection": "dishes",
-      "slug": "chilean/caldillo_de_congrio"
+      "id": "https://gos.swal.network/vitamins/b2-b2",
+      "url": "https://gos.swal.network/vitamins/b2-b2",
+      "title": "B2-b2",
+      "collection": "vitamins",
+      "slug": "b2-b2"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/cazuela_de_vacuno",
-      "url": "https://gos-site.pages.dev/recipes/chilean/cazuela_de_vacuno",
-      "title": "Cazuela_de_vacuno",
-      "collection": "dishes",
-      "slug": "chilean/cazuela_de_vacuno"
+      "id": "https://gos.swal.network/vitamins/b3-b3",
+      "url": "https://gos.swal.network/vitamins/b3-b3",
+      "title": "B3-b3",
+      "collection": "vitamins",
+      "slug": "b3-b3"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/charquican",
-      "url": "https://gos-site.pages.dev/recipes/chilean/charquican",
-      "title": "Charquican",
-      "collection": "dishes",
-      "slug": "chilean/charquican"
+      "id": "https://gos.swal.network/vitamins/b4-b4",
+      "url": "https://gos.swal.network/vitamins/b4-b4",
+      "title": "B4-b4",
+      "collection": "vitamins",
+      "slug": "b4-b4"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/chorrillana",
-      "url": "https://gos-site.pages.dev/recipes/chilean/chorrillana",
-      "title": "Chorrillana",
-      "collection": "dishes",
-      "slug": "chilean/chorrillana"
+      "id": "https://gos.swal.network/vitamins/b5-b5",
+      "url": "https://gos.swal.network/vitamins/b5-b5",
+      "title": "B5-b5",
+      "collection": "vitamins",
+      "slug": "b5-b5"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/empanada_de_pino",
-      "url": "https://gos-site.pages.dev/recipes/chilean/empanada_de_pino",
-      "title": "Empanada_de_pino",
-      "collection": "dishes",
-      "slug": "chilean/empanada_de_pino"
+      "id": "https://gos.swal.network/vitamins/b6-b6",
+      "url": "https://gos.swal.network/vitamins/b6-b6",
+      "title": "B6-b6",
+      "collection": "vitamins",
+      "slug": "b6-b6"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/humitas",
-      "url": "https://gos-site.pages.dev/recipes/chilean/humitas",
-      "title": "Humitas",
-      "collection": "dishes",
-      "slug": "chilean/humitas"
+      "id": "https://gos.swal.network/vitamins/b7-b7",
+      "url": "https://gos.swal.network/vitamins/b7-b7",
+      "title": "B7-b7",
+      "collection": "vitamins",
+      "slug": "b7-b7"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/mote_con_huesillos",
-      "url": "https://gos-site.pages.dev/recipes/chilean/mote_con_huesillos",
-      "title": "Mote_con_huesillos",
-      "collection": "dishes",
-      "slug": "chilean/mote_con_huesillos"
+      "id": "https://gos.swal.network/vitamins/b8-b8",
+      "url": "https://gos.swal.network/vitamins/b8-b8",
+      "title": "B8-b8",
+      "collection": "vitamins",
+      "slug": "b8-b8"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/pastel_de_choclo",
-      "url": "https://gos-site.pages.dev/recipes/chilean/pastel_de_choclo",
-      "title": "Pastel_de_choclo",
-      "collection": "dishes",
-      "slug": "chilean/pastel_de_choclo"
+      "id": "https://gos.swal.network/vitamins/b9-b9",
+      "url": "https://gos.swal.network/vitamins/b9-b9",
+      "title": "B9-b9",
+      "collection": "vitamins",
+      "slug": "b9-b9"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/porotos_con_riendas",
-      "url": "https://gos-site.pages.dev/recipes/chilean/porotos_con_riendas",
-      "title": "Porotos_con_riendas",
-      "collection": "dishes",
-      "slug": "chilean/porotos_con_riendas"
+      "id": "https://gos.swal.network/vitamins/bx-bx",
+      "url": "https://gos.swal.network/vitamins/bx-bx",
+      "title": "Bx-bx",
+      "collection": "vitamins",
+      "slug": "bx-bx"
     },
     {
-      "id": "https://gos-site.pages.dev/recipes/chilean/sopaipillas",
-      "url": "https://gos-site.pages.dev/recipes/chilean/sopaipillas",
-      "title": "Sopaipillas",
-      "collection": "dishes",
-      "slug": "chilean/sopaipillas"
+      "id": "https://gos.swal.network/vitamins/c-c",
+      "url": "https://gos.swal.network/vitamins/c-c",
+      "title": "C-c",
+      "collection": "vitamins",
+      "slug": "c-c"
+    },
+    {
+      "id": "https://gos.swal.network/vitamins/d-d",
+      "url": "https://gos.swal.network/vitamins/d-d",
+      "title": "D-d",
+      "collection": "vitamins",
+      "slug": "d-d"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/D50",
+      "url": "https://gos.swal.network/conditions/D50",
+      "title": "D50",
+      "collection": "conditions",
+      "slug": "D50"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E03",
+      "url": "https://gos.swal.network/conditions/E03",
+      "title": "E03",
+      "collection": "conditions",
+      "slug": "E03"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E05",
+      "url": "https://gos.swal.network/conditions/E05",
+      "title": "E05",
+      "collection": "conditions",
+      "slug": "E05"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E11",
+      "url": "https://gos.swal.network/conditions/E11",
+      "title": "E11",
+      "collection": "conditions",
+      "slug": "E11"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E13",
+      "url": "https://gos.swal.network/conditions/E13",
+      "title": "E13",
+      "collection": "conditions",
+      "slug": "E13"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E40",
+      "url": "https://gos.swal.network/conditions/E40",
+      "title": "E40",
+      "collection": "conditions",
+      "slug": "E40"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E50",
+      "url": "https://gos.swal.network/conditions/E50",
+      "title": "E50",
+      "collection": "conditions",
+      "slug": "E50"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E51",
+      "url": "https://gos.swal.network/conditions/E51",
+      "title": "E51",
+      "collection": "conditions",
+      "slug": "E51"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E53",
+      "url": "https://gos.swal.network/conditions/E53",
+      "title": "E53",
+      "collection": "conditions",
+      "slug": "E53"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E55",
+      "url": "https://gos.swal.network/conditions/E55",
+      "title": "E55",
+      "collection": "conditions",
+      "slug": "E55"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E66",
+      "url": "https://gos.swal.network/conditions/E66",
+      "title": "E66",
+      "collection": "conditions",
+      "slug": "E66"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/E78",
+      "url": "https://gos.swal.network/conditions/E78",
+      "title": "E78",
+      "collection": "conditions",
+      "slug": "E78"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/F32",
+      "url": "https://gos.swal.network/conditions/F32",
+      "title": "F32",
+      "collection": "conditions",
+      "slug": "F32"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/F41",
+      "url": "https://gos.swal.network/conditions/F41",
+      "title": "F41",
+      "collection": "conditions",
+      "slug": "F41"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/G43",
+      "url": "https://gos.swal.network/conditions/G43",
+      "title": "G43",
+      "collection": "conditions",
+      "slug": "G43"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/G47",
+      "url": "https://gos.swal.network/conditions/G47",
+      "title": "G47",
+      "collection": "conditions",
+      "slug": "G47"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/I10",
+      "url": "https://gos.swal.network/conditions/I10",
+      "title": "I10",
+      "collection": "conditions",
+      "slug": "I10"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/I25",
+      "url": "https://gos.swal.network/conditions/I25",
+      "title": "I25",
+      "collection": "conditions",
+      "slug": "I25"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/I48",
+      "url": "https://gos.swal.network/conditions/I48",
+      "title": "I48",
+      "collection": "conditions",
+      "slug": "I48"
+    },
+    {
+      "id": "https://gos.swal.network/conditions/I50",
+      "url": "https://gos.swal.network/conditions/I50",
+      "title": "I50",
+      "collection": "conditions",
+      "slug": "I50"
+    },
+    {
+      "id": "https://gos.swal.network/diets/dash",
+      "url": "https://gos.swal.network/diets/dash",
+      "title": "Dash",
+      "collection": "diets",
+      "slug": "dash"
+    },
+    {
+      "id": "https://gos.swal.network/diets/low-carb-keto",
+      "url": "https://gos.swal.network/diets/low-carb-keto",
+      "title": "Low-carb-keto",
+      "collection": "diets",
+      "slug": "low-carb-keto"
+    },
+    {
+      "id": "https://gos.swal.network/diets/low-fodmap",
+      "url": "https://gos.swal.network/diets/low-fodmap",
+      "title": "Low-fodmap",
+      "collection": "diets",
+      "slug": "low-fodmap"
+    },
+    {
+      "id": "https://gos.swal.network/diets/mediterranean",
+      "url": "https://gos.swal.network/diets/mediterranean",
+      "title": "Mediterranean",
+      "collection": "diets",
+      "slug": "mediterranean"
+    },
+    {
+      "id": "https://gos.swal.network/diets/placeholder",
+      "url": "https://gos.swal.network/diets/placeholder",
+      "title": "Placeholder",
+      "collection": "diets",
+      "slug": "placeholder"
+    },
+    {
+      "id": "https://gos.swal.network/diets/vegan",
+      "url": "https://gos.swal.network/diets/vegan",
+      "title": "Vegan",
+      "collection": "diets",
+      "slug": "vegan"
+    },
+    {
+      "id": "https://gos.swal.network/substances/alicina",
+      "url": "https://gos.swal.network/substances/alicina",
+      "title": "Alicina",
+      "collection": "substances",
+      "slug": "alicina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/alil-isotiocianato",
+      "url": "https://gos.swal.network/substances/alil-isotiocianato",
+      "title": "Alil-isotiocianato",
+      "collection": "substances",
+      "slug": "alil-isotiocianato"
+    },
+    {
+      "id": "https://gos.swal.network/substances/anetol",
+      "url": "https://gos.swal.network/substances/anetol",
+      "title": "Anetol",
+      "collection": "substances",
+      "slug": "anetol"
+    },
+    {
+      "id": "https://gos.swal.network/substances/antocianina",
+      "url": "https://gos.swal.network/substances/antocianina",
+      "title": "Antocianina",
+      "collection": "substances",
+      "slug": "antocianina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/apigenina",
+      "url": "https://gos.swal.network/substances/apigenina",
+      "title": "Apigenina",
+      "collection": "substances",
+      "slug": "apigenina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/betaina",
+      "url": "https://gos.swal.network/substances/betaina",
+      "title": "Betaina",
+      "collection": "substances",
+      "slug": "betaina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/cafeina",
+      "url": "https://gos.swal.network/substances/cafeina",
+      "title": "Cafeina",
+      "collection": "substances",
+      "slug": "cafeina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/capsaicina",
+      "url": "https://gos.swal.network/substances/capsaicina",
+      "title": "Capsaicina",
+      "collection": "substances",
+      "slug": "capsaicina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/carvacrol",
+      "url": "https://gos.swal.network/substances/carvacrol",
+      "title": "Carvacrol",
+      "collection": "substances",
+      "slug": "carvacrol"
+    },
+    {
+      "id": "https://gos.swal.network/substances/cinamaldehido",
+      "url": "https://gos.swal.network/substances/cinamaldehido",
+      "title": "Cinamaldehido",
+      "collection": "substances",
+      "slug": "cinamaldehido"
+    },
+    {
+      "id": "https://gos.swal.network/substances/citral",
+      "url": "https://gos.swal.network/substances/citral",
+      "title": "Citral",
+      "collection": "substances",
+      "slug": "citral"
+    },
+    {
+      "id": "https://gos.swal.network/substances/cuminaldehido",
+      "url": "https://gos.swal.network/substances/cuminaldehido",
+      "title": "Cuminaldehido",
+      "collection": "substances",
+      "slug": "cuminaldehido"
+    },
+    {
+      "id": "https://gos.swal.network/substances/curcumina",
+      "url": "https://gos.swal.network/substances/curcumina",
+      "title": "Curcumina",
+      "collection": "substances",
+      "slug": "curcumina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/dodecenal",
+      "url": "https://gos.swal.network/substances/dodecenal",
+      "title": "Dodecenal",
+      "collection": "substances",
+      "slug": "dodecenal"
+    },
+    {
+      "id": "https://gos.swal.network/substances/eugenol",
+      "url": "https://gos.swal.network/substances/eugenol",
+      "title": "Eugenol",
+      "collection": "substances",
+      "slug": "eugenol"
+    },
+    {
+      "id": "https://gos.swal.network/substances/genisteina",
+      "url": "https://gos.swal.network/substances/genisteina",
+      "title": "Genisteina",
+      "collection": "substances",
+      "slug": "genisteina"
+    },
+    {
+      "id": "https://gos.swal.network/substances/gingerol",
+      "url": "https://gos.swal.network/substances/gingerol",
+      "title": "Gingerol",
+      "collection": "substances",
+      "slug": "gingerol"
+    },
+    {
+      "id": "https://gos.swal.network/substances/licopeno",
+      "url": "https://gos.swal.network/substances/licopeno",
+      "title": "Licopeno",
+      "collection": "substances",
+      "slug": "licopeno"
+    },
+    {
+      "id": "https://gos.swal.network/substances/limoneno",
+      "url": "https://gos.swal.network/substances/limoneno",
+      "title": "Limoneno",
+      "collection": "substances",
+      "slug": "limoneno"
+    },
+    {
+      "id": "https://gos.swal.network/substances/linalool",
+      "url": "https://gos.swal.network/substances/linalool",
+      "title": "Linalool",
+      "collection": "substances",
+      "slug": "linalool"
     }
   ]
 }
