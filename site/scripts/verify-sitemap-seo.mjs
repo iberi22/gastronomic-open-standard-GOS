@@ -55,7 +55,17 @@ for (const f of html) {
 
   const route = routeOf(f)
   const c = h.match(/<link rel="canonical" href="([^"]+)"/)
-  const ok = c && !/pages\.dev/.test(c[1]) && sameUrl(c[1], `${SITE}${route}`)
+  // Excepcion: la pagina 404 canoniza al home a proposito. Una pagina de
+  // error no debe canonicalizarse a si misma, porque eso la convierte en
+  // contenido indexable. routeOf solo normaliza 'index.html', asi que aqui
+  // el fichero se llama 404.html y la ruta sale como '/404.html/'.
+  const isNotFound = /\/404(\.html)?\/?$/.test(route)
+  // El canonical del home lleva barra final y SITE no: hay que comparar
+  // contra SITE + '/', no contra SITE a secas.
+  const ok =
+    c &&
+    !/pages\.dev/.test(c[1]) &&
+    (isNotFound ? sameUrl(c[1], `${SITE}/`) : sameUrl(c[1], `${SITE}${route}`))
   if (!ok) canonicalBad.push(`${route} -> ${c ? c[1] : 'SIN canonical'}`)
 
   const l = h.match(/<html[^>]*\slang="([^"]+)"/)?.[1] ?? '(sin lang)'
