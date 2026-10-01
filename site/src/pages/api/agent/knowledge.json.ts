@@ -6,6 +6,7 @@ export const GET: APIRoute = async () => {
     catalog: '/api/by-country/catalog.json',
     ingredients: '/api/ingredients/variants.json',
     substances: '/api/substances.json',
+    evidence: '/api/evidence.json',
     // paywall metadata via D1/KV billing
     paywall: {
       endpoint: '/api/agent/pay',

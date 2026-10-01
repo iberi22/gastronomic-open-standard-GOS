@@ -105,6 +105,8 @@ ${countries.map((c) => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.js
 - GET /api/with-metadata.json — Standardized scientific recipes
 - GET /api/by-country/catalog.json — Country summaries and top recipes
 - GET /graph-data.json — Complete knowledge graph (nodes, edges, relational schema)
+- GET /api/evidence.json — Scientific evidence index: vitamins, diets and substances with resolvable DOIs (cite from here)
+- GET /api/substances.json — Bioactive substances with health_registry studies
 - POST /api/agent/pay — Acquire API key / JWT for paid tier access
 
 ## Citation & Attribution
