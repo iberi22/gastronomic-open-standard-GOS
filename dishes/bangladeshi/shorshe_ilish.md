@@ -51,6 +51,22 @@ nutrition:
 images:
   - url: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600'
     description: 'Shorshe Ilish tradicional con salsa picante de mostaza'
+studies:
+  - title: "DHA and EPA Content and Fatty Acid Profile of 39 Food Fishes from India"
+    source: "BioMed Research International"
+    year: 2016
+    doi: "10.1155/2016/4027437"
+    url: "https://pubmed.ncbi.nlm.nih.gov/27579313/"
+  - title: "Nutrigenomic studies on hilsa to evaluate flesh quality attributes and genes associated with fatty acid metabolism from the rivers Hooghly and Padma"
+    source: "Food Research International"
+    year: 2018
+    doi: "10.1016/j.foodres.2017.10.017"
+    url: "https://pubmed.ncbi.nlm.nih.gov/29389608/"
+  - title: "Paradoxical Effects of Erucic Acid-A Fatty Acid With Two-Faced Implications"
+    source: "Nutrition Reviews"
+    year: 2025
+    doi: "10.1093/nutrit/nuaf032"
+    url: "https://pubmed.ncbi.nlm.nih.gov/40202517/"
 description: >-
   Shorshe Ilish es el plato nacional por excelencia de Bangladesh, donde el majestuoso pescado Hilsa cocinado en una potente salsa de semillas de mostaza molidas y aceite de mostaza crudo encarna la identidad gastronómica bengalí.
 ---
@@ -102,3 +118,12 @@ Shorshe Ilish es el plato nacional por excelencia de Bangladesh, donde el majest
 ## 💡 Contexto e Historia Cultural
 
 El Shorshe Ilish es una obra maestra de la cocina bengalí que resalta el sabor del pescado Hilsa (Tenualosa ilisha). La interacción entre los aceites naturales del pescado rico en ácidos grasos omega-3 y la glucosinolata pungente de la mostaza molida crea una experiencia sensorial inigualable.
+
+---
+
+## 🔬 Investigación Científica y Perfil Nutricional
+
+El Shorshe Ilish constituye un ejemplo sobresaliente de matriz alimentaria donde convergen lípidos marinos de alta densidad biológica y fitoquímicos bioactivos:
+
+* **Perfil de Ácidos Grasos del Pescado Hilsa (*Tenualosa ilisha*):** La investigación en nutrigenómica y perfil lipídico demuestra que el Hilsa es una fuente marina de primer orden de ácidos grasos poliinsaturados omega-3, destacando por sus concentraciones de ácido eicosapentaenoico (EPA) y ácido docosahexaenoico (DHA). Estos compuestos participan activamente en la modulación del perfil lipídico sanguíneo y la reducción de marcadores inflamatorios vasculares.
+* **Balance Nutricional del Aceite de Mostaza (*Brassica juncea*):** El aceite de mostaza no refinado tradicionalmente utilizado aporta ácido erúcico y alil isotiocianato (AITC). Las revisiones biomédicas sobre el ácido erúcico señalan efectos fisiológicos complejos y paradójicos, donde su uso culinario tradicional en dosis moderadas, junto a los potentes antioxidantes e isotiocianatos de la semilla de mostaza molida, ofrece un perfil cardioprotector y antimicrobiano característico.
