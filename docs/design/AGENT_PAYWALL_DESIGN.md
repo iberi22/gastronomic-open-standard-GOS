@@ -124,7 +124,7 @@ Los tres canales de descubrimiento a tocar: `robots.txt` (arriba), `/llms.txt` (
 
 ## 4. Riesgos de seguridad y abuso
 
-**R1 — Key por query string (CRÍTICO, ya presente).** `worker/src/index.ts` acepta la key por tres vías: `x-api-key`, `Authorization: Bearer` y **`?key=<KEY>`**. Con `?key=` la credencial va al log de Cloudflare, al `Referer`, al historial y al error 405 que ya vemos en prod. Peor: `worker/schema.sql:10` inserta `('gos_paid_socio_key_2026','tiersocio','health_app_client','active')` — **una key real hardcodeada en el repo versionado**. *Mitigación:* eliminar `?key=` del camino premium (legacy con sunset), rotar esa key ya, sacarla del control de versiones, una key por cliente. No verificado si sigue en el historial de git.
+**R1 — Key por query string (CRÍTICO, ya presente).** `worker/src/index.ts` acepta la key por tres vías: `x-api-key`, `Authorization: Bearer` y **`?key=<KEY>`**. Con `?key=` la credencial va al log de Cloudflare, al `Referer`, al historial y al error 405 que ya vemos en prod. Peor: `worker/schema.sql:10` insertaba una key de pago de nivel `socio` como literal SQL versionado — **credencial real en el repositorio público**. Verificado 2026-10-01: presente en el historial desde el commit `e0ecaa91`, no solo en el archivo actual; eliminarla del archivo no la borra del historial de git. *Mitigación:* rotar esa key, mover el seed a `wrangler secret put`, eliminar `?key=` del camino premium (legacy con sunset), una key por cliente. Eliminado del archivo y de este informe el 2026-10-01.
 
 **R2 — JWT sin firma (CRÍTICO, ya presente).** `api/agent/pay.ts:67` firma `mock-signature-kv-d1`; cualquiera fabrica `{"tier":"socio","exp":<futuro>}`. Sin verificación, sin `jti`, sin revocación. *Mitigación:* HMAC-SHA256 real con secreto en KV (`wrangler secret put`), claims `tier/exp(<=15min)/iat/jti/aud/sub`; o mejor, **API key opaca + D1**, que es lo que el gateway ya sabe hacer.
 
@@ -152,7 +152,7 @@ Los tres canales de descubrimiento a tocar: `robots.txt` (arriba), `/llms.txt` (
 ### PUEDO IMPLEMENTAR SIN PREGUNTAR
 
 1. Desplegar `worker/` y apuntar `ORIGIN_URL` (hoy `gos-site.pages.dev`) a `https://gos.swal.network`. Sin esto no hay peaje.
-2. Rotar `gos_paid_socio_key_2026` y sacarla de `schema.sql`.
+2. Rotar la key de pago `socio` que estaba sembrada en `schema.sql` y sacarla del control de versiones (hecho 2026-10-01 en el archivo; **la rotación y la limpieza del historial siguen pendientes**).
 3. Quitar `?key=` del camino premium; añadir el bloque de descubrimiento + `Crawl-delay` a `robots.txt`.
 4. Los 8 endpoints de §2 con el contrato completo, **con precios en cero** hasta que haya decisión.
 5. Test de regresión: el build falla si un campo premium aparece en un payload `free`.
