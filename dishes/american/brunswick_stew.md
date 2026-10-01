@@ -85,6 +85,13 @@ El Brunswick Stew es una de las preparaciones comunitarias más antiguas de la g
 * Se puede agregar una pizca de azúcar moreno o vinagre de sidra para balancear la acidez del tomate según el gusto personal.
 * Es un plato ideal para aprovechar los restos de barbacoa de cerdo o pollo ahumado del día anterior.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Dulce, Ácido, Ahumado
+* **Textura:** Espesa, Tierna, Caldosa
+* **Aroma:** Carne ahumada, Tomate dulce, Maíz tierno
+* **Presentación:** Estofado espeso y reconfortante lleno de carnes desmenuzadas, granos de maíz dorados, habas y patatas en caldo rojo espeso.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

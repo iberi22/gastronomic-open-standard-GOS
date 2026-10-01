@@ -83,6 +83,13 @@ El Mole Amarillo se consume cotidianamente en Oaxaca. Es versátil y su consiste
 4. **Cocinar:** Vierte la salsa en un caldo hirviendo. Disuelve la masa de maíz en un poco de caldo e incorpórala para dar textura.
 5. **Perfumar:** Añade la hoja santa al final para que libere sus aceites esenciales. Deja hervir 15 minutos más.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante especiado, Terroso, Ácido suave
+* **Textura:** Caldosa, Espesa con masa
+* **Aroma:** Hoja santa, Chile ahumado amarillo
+* **Presentación:** Caldo denso de color naranja amarillento con carne de res, trozos de chayote, papa y ejote fresco.
+
 ---
 
 ## Fuentes consultadas y enlaces

@@ -106,6 +106,13 @@ El Entreverado es un plato típico de la Orinoquía colombiana, especialmente en
 
 ![Entreverado Llanero](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Variada, Jugosa, Crujiente
+* **Aroma:** Ahumado, Herbal, Carnoso mixto
+* **Presentación:** Gran bandeja con diversidad de cortes de carne asada, contrastando con el blanco de la yuca.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

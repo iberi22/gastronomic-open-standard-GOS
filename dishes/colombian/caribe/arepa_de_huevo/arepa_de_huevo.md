@@ -18,11 +18,11 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Maíz Amarillo (Masa)
-- Huevo (AAA)
-- Carne molida (opcional)
-- Aceite vegetal (fritura profunda)
-- Sal
+  - Maíz Amarillo (Masa)
+  - Huevo (AAA)
+  - Carne molida (opcional)
+  - Aceite vegetal (fritura profunda)
+  - Sal
 nutrition:
   calories: 350
   macros:

@@ -103,6 +103,13 @@ El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región por
 
 ![Inchicapi en tazón de barro](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Cremoso, Ligeramente dulce
+* **Textura:** Cremoso, Suave
+* **Aroma:** Herbal (cilantro), Maní, Cocido
+* **Presentación:** Se sirve en platos hondos, ideal para compartir en reuniones familiares o festividades.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

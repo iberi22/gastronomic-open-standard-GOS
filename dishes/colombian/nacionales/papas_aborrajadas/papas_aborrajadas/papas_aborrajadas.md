@@ -142,6 +142,17 @@ Las papas aborrajadas son un snack callejero y casero, típico de ferias y venta
 - "Puedes rellenar con queso para versión más cremosa."
 - "Perfectas para acompañar con jugo de fruta natural."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado
+* **Textura:** Crujiente por fuera, Suave por dentro
+* **Aroma:** Frito, Cereal
+* **Presentación:** Se sirven calientes, ideales para compartir en reuniones o como snack escolar.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

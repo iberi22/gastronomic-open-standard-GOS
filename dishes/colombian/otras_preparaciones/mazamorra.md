@@ -63,6 +63,17 @@ categories:
 6. Para servir, toma una porción de maíz con un poco de su agua y añade leche fría al gusto. Se sirve tradicionalmente como postre o acompañamiento.
 7. Acompaña con panela rallada o un trozo de bocadillo de guayaba.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet (panela), Neutral (maíz), Lacteal (leche)
+* **Textura:** Chewy (maíz), Liquid (leche)
+* **Aroma:** Fresh Milk, Cooked Corn
+* **Presentación:** Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros de panela o bocadillo.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

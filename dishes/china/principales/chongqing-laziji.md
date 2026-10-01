@@ -85,3 +85,12 @@ nutrition:
 
 * 两次高温复炸通过急剧蒸发表面水分形成酥脆外壳（crispy crust），同时避免内部肉质过度脱水。
 * 辣椒素（capsaicin）与山椒素（sanshool）在油热提取下释放出极高的香气与麻辣感。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Fiery, Numbing, Savory, Aromatic
+* **Textura:** Crispy, Crunchy, Tender inside
+* **Aroma:** toasted chili, dry peppercorn, fried chicken
+* **Presentación:** Chongqing Laziji (Firecracker Spicy Chicken) presentado de forma vistosa tradicional.

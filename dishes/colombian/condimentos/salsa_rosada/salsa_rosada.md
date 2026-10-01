@@ -129,6 +129,17 @@ La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla de mayon
 - "Ajusta el limón para darle más frescura."
 - "Perfecta para acompañar papas, snacks y comida rápida."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce suave, Cremoso, Ligeramente ácido
+* **Textura:** Cremoso suave
+* **Aroma:** Mayonesa y tomate
+* **Presentación:** Salsa Rosada Colombiana presentado de forma vistosa tradicional.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

@@ -82,6 +82,13 @@ Nacido en el histórico puerto de Veracruz, este platillo destaca por la salsa v
 4. **Cocer pescado:** Acomoda los filetes de pescado dentro de la salsa, tapa el sartén y cocina a fuego medio por 10-12 minutos hasta que el pescado esté firme y bien cocido.
 5. **Servir:** Sirve el filete bañándolo generosamente con la salsa veracruzana y acompaña con arroz blanco.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce ácido por jitomate, Salado picante por aceitunas y alcaparras, Fresco marino
+* **Textura:** Pescado suave y jugoso, Salsa espesa con tropiezos
+* **Aroma:** Laurel y orégano, Aceituna y alcaparra sofrita
+* **Presentación:** Filete blanco de pescado cubierto espléndidamente con un sofrito rojo de jitomate, aceitunas verdes entero, alcaparras y chiles güeros enteros.
+
 ---
 
 ## Fuentes consultadas y enlaces

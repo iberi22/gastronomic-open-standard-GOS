@@ -105,6 +105,13 @@ La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana 
 
 ![Patarasca servida con patacones](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Herbal, Ahumado
+* **Textura:** Jugoso (pescado), Suave (relleno)
+* **Aroma:** Herbal (hojas, cilantro), Ahumado, Fresco
+* **Presentación:** Se sirve envuelto en hojas, ideal para compartir en reuniones familiares o festividades amazónicas.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

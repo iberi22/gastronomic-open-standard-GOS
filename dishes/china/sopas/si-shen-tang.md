@@ -90,3 +90,12 @@ nutrition:
 * 茯苓含有茯苓聚糖（Pachyman）与三萜类化合物，具有调节免疫与利水抗炎作用。
 * 淮山与芡实富含抗性淀粉（resistant starch）与黏蛋白，对胃肠道粘膜具有良好的保护作用。
 * 薏仁含有薏苡素与不饱和脂肪酸，有助于促进代谢。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Mild, Nutty, Herbal, Savory, Soothing
+* **Textura:** Soft, Chewy herbs, Comforting broth
+* **Aroma:** herbal, rice-like, pork broth
+* **Presentación:** Si Shen Tang (Four Herbs Tonic Soup) presentado de forma vistosa tradicional.

@@ -94,6 +94,13 @@ La Torta de Calabaza es un postre tradicional de las islas de San Andrés y Prov
 
 ![Torta de calabaza especiada](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Especiado
+* **Textura:** Bizcocho suave humedecido
+* **Aroma:** Calabaza horneada y canela
+* **Presentación:** Torta de Calabaza (Pumpkin Cake) presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

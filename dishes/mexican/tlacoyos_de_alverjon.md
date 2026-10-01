@@ -76,6 +76,13 @@ Alimento nutritivo de origen mesoamericano que constituía la base alimenticia d
 3. **Cocer en comal:** Cocina los tlacoyos en un comal bien caliente sin aceite hasta que la masa esté totalmente cocida por ambos lados.
 4. **Servir:** Sirve calientes cubiertos con la ensalada de nopales, queso cotija y salsa roja.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Terroso, Salado herbal, Maíz tostado
+* **Textura:** Base firme de maíz, Relleno cremoso de legumbre
+* **Aroma:** Masa azul al comal, Nopal asado
+* **Presentación:** Masa azul romboidal cocida al comal, rellena de alverjón y cubierta con ensalada de nopales, queso rallado y salsa.
+
 ---
 
 ## Fuentes consultadas y enlaces

@@ -101,6 +101,13 @@ La Carne a la Perra es un plato tradicional de los llanos orientales de Colombia
 
 ![Carne a la Perra Llanera](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Fibroso, Jugoso, Tenaz
+* **Aroma:** Ahumado, Herbal, Carnoso
+* **Presentación:** Trozos grandes de carne con costra oscura, servidos rústicamente sobre hojas.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

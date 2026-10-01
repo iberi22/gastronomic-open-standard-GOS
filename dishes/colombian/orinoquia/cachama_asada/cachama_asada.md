@@ -101,6 +101,13 @@ La Cachama Asada es un plato típico de la Orinoquía colombiana, preparado con 
 
 ![Cachama Asada Llanera](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Jugoso, Tierno, Crujiente (piel)
+* **Aroma:** Ahumado, Herbal, Cítrico
+* **Presentación:** Pescado entero asado con piel dorada, servido sobre hojas de bijao con acompañantes blancos y amarillos.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

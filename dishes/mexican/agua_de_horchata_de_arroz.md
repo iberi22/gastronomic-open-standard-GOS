@@ -78,6 +78,13 @@ Bebida icónica que acompaña tacos, tortas y banquetes en todo México. Aunque 
 4. **Mezclar y endulzar:** Agrega la leche evaporada, la leche condensada, la vainilla y el resto del agua fría. Remueve muy bien hasta homogeneizar.
 5. **Servir:** Sirve en un vaso alto con abundante hielo y espolvorea canela molida encima.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce cremoso, Canela aromática, Vainilla suave
+* **Textura:** Bebida sedosa y refrescante
+* **Aroma:** Canela recién molida, Vainilla, Arroz dulce
+* **Presentación:** Servida en jarra o vaso de vidrio repleto de hielo, espolvoreada con canela en polvo por encima.
+
 ---
 
 ## Fuentes consultadas y enlaces

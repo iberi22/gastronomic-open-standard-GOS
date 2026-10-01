@@ -19,14 +19,14 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)
-- Plátano verde
-- Yuca
-- Yautía (blanca y amarilla)
-- Ñame
-- Calabaza (ahuyama)
-- Maíz tierno (mazorcas)
-- Naranja agria
+  - Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)
+  - Plátano verde
+  - Yuca
+  - Yautía (blanca y amarilla)
+  - Ñame
+  - Calabaza (ahuyama)
+  - Maíz tierno (mazorcas)
+  - Naranja agria
 nutrition:
   calories: 780
   macros:

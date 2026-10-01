@@ -83,6 +83,13 @@ El Shrimp and Grits pasó de ser un humilde plato de pescadores costeros en la r
 * Usar sémola molida en piedra garantiza una textura rica y auténtica en comparación con la sémola instantánea.
 * Se pueden agregar hongos crimini salteados o salchicha andouille para una versión aún más sustanciosa.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Creamy, Ahumado, Umami
+* **Textura:** Cremosa, Tierna, Crujiente
+* **Aroma:** Mantequilla, Tocineta dorada, Mariscos salteados
+* **Presentación:** Servido en plato hondo con una base cremosa de grits de queso coronada por camarones jugosos en salsa de tocineta y limon.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

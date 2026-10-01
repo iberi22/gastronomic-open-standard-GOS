@@ -22,10 +22,10 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carne de res
-- Pollo
-- Papa salada
-- Arepa
+  - Carne de res
+  - Pollo
+  - Papa salada
+  - Arepa
 nutrition:
   calories: 1832
   macros:
@@ -153,6 +153,17 @@ El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla
 - "El secreto es marinar bien la carne y asar a fuego alto."
 - "Sirve con papa salada y arepa para experiencia completa."
 - "Perfecto para eventos, ferias y reuniones nocturnas."
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Ahumado
+* **Textura:** Jugoso, Dorado por fuera
+* **Aroma:** Ahumado, Especiado
+* **Presentación:** Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir en fiestas y eventos nocturnas.
+
+---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 

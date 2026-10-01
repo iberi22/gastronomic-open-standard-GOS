@@ -79,6 +79,13 @@ Nacido en los mercados del centro y oriente de la CDMX, el huarache combina la t
 3. **Asar cecina:** Asa las tiras de cecina de res en sartén o comal a fuego alto durante 2 minutos por lado.
 4. **Montar:** Cubre el huarache con más frijoles refritos, coloca la cecina encima y termina con abundante salsa verde, queso fresco, crema y cebolla picada.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado ahumado, Umami, Picante fresco
+* **Textura:** Base de maíz crujiente por fuera y suave por dentro, Cecina firme
+* **Aroma:** Maíz tostado, Carne asada, Frijol frito
+* **Presentación:** Base alargada de maíz en forma de huarache, cubierta de frijoles refritos, una sábana de cecina asada, salsa verde, queso rallado y crema.
+
 ---
 
 ## Fuentes consultadas y enlaces

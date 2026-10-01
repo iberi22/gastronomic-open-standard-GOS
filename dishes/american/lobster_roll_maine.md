@@ -80,6 +80,13 @@ Icono estival del estado de Maine, este bocadillo celebra la frescura de la lang
 * No sobrecargues de mayonesa; la protagonista absoluta debe ser la carne de langosta.
 * Utilizar panes con corte lateral (split-top) permite dorar una gran superficie con mantequilla.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Marino, Dulce, Mantequilloso, Fresco
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Langosta al vapor, Mantequilla dorada, Pan tostado
+* **Presentación:** Pan brioche tostado por ambos lados dorados rebozante de trozos grandes de carne roja y blanca de langosta de Maine.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

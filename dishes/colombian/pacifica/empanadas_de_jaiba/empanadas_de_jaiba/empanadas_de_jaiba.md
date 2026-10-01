@@ -105,6 +105,13 @@ Las Empanadas de Jaiba son un bocadillo tradicional del Pacífico colombiano, es
 
 *Próximamente...*
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Picante
+* **Textura:** Crujiente, Suave
+* **Aroma:** Marino (jaiba), Herbal (cilantro y tomillo), Frito
+* **Presentación:** Se sirven calientes, acompañadas de ají o limón. Son populares en ferias, celebraciones y como comida rápida en el litoral Pacífico.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

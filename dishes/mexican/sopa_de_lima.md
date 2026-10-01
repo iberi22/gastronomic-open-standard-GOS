@@ -80,6 +80,13 @@ Sopa clásica peninsular que combina el caldo de pavo o pollo sazonado con un re
 3. **Integrar:** Agrega las verduras sofritas al caldo de pollo e incorpora el jugo de 2 limas agrias. Deja dar un hervor suave de 10 minutos.
 4. **Servir:** En cada plato coloca pollo deshebrado, tiras de tortilla frita, rodajas finas de lima fresca y vierte el caldo hirviendo encima.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Cítrico refrescante, Dulce ligero, Caldo salado herbal
+* **Textura:** Caldo ligero, Crujiente por tortilla
+* **Aroma:** Lima agria, Orégano, Caldo de ave
+* **Presentación:** Caldo transparente servido en tazón profundo, repleto de tiras crujientes de tortilla frita y rodajas de lima agria flotando.
+
 ---
 
 ## Fuentes consultadas y enlaces

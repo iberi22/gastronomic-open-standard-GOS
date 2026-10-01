@@ -83,6 +83,13 @@ El Po' Boy nació durante la huelga de tranviarios de Nueva Orleans en 1929, cua
 * La preparación "dressed" es el estándar en Nueva Orleans; omítela solo si prefieres el sándwich plano.
 * La clave del verdadero Po' Boy radica en usar un pan de corteza extremadamente crujiente pero con miga muy aireada.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Crujiente, Picante, Ácido, Salado
+* **Textura:** Crocante, Esponjosa, Jugosa
+* **Aroma:** Fritura marina, Pan horneado, Especias remoulade
+* **Presentación:** Bocadillo abierto repleto de camarones fritos dorados, sobresaliendo de un pan baguette crujiente con lechuga, tomate y salsa.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

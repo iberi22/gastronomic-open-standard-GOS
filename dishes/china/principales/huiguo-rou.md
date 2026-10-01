@@ -90,3 +90,12 @@ nutrition:
 
 * 先煮后炒的工艺可将部分游离脂肪溶出，降低肉片的油脂感，同时锁住水分。
 * 郫县豆瓣酱与甜面酱的复配富含挥发性香气成分（吡嗪类与酯类），在高温爆炒下产生独特的浓郁酱香。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Savory, Spicy, Sweet, Rich, Umami
+* **Textura:** Chewy, Tender, Crispy edges
+* **Aroma:** garlic scallion, fermented bean, pork lard
+* **Presentación:** Huiguo Rou (Twice-Cooked Pork) presentado de forma vistosa tradicional.

@@ -18,14 +18,14 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carne de res (diezmillo/morcillo)
-- Chile guajillo
-- Chile ancho
-- Jitomate
-- Vinagre blanco
-- Comino
-- Orégano
-- Canela
+  - Carne de res (diezmillo/morcillo)
+  - Chile guajillo
+  - Chile ancho
+  - Jitomate
+  - Vinagre blanco
+  - Comino
+  - Orégano
+  - Canela
 nutrition:
   calories: 720
   macros:

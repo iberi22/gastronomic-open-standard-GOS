@@ -86,3 +86,12 @@ nutrition:
 * 当归含有阿魏酸（ferulic acid）与藁本内酯（ligustilide），具有显著的抗氧化与造血促进作用。
 * 生姜中的姜辣素（gingerols）与黄酒有效挥发羊肉中的短链脂肪酸（羊膻味来源），显著去膻增香。
 * 羊肉富含血红素铁（heme iron）与 L-肉碱（L-carnitine），促进脂肪酸 β-氧化产生热量。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Rich, Warming, Herbal, Savory, Slightly sweet
+* **Textura:** Tender lamb, Rich broth
+* **Aroma:** angelica root, ginger, braised mutton
+* **Presentación:** Danggui Yangrou Tang (Angelica Root and Mutton Medicinal Soup) presentado de forma vistosa tradicional.

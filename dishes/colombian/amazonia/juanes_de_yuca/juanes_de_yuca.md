@@ -100,6 +100,13 @@ Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía, especialm
 
 ![Juanes de yuca en hoja de bijao](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Suave, Ligeramente herbal, Umami
+* **Textura:** Suave (masa), Jugoso (relleno)
+* **Aroma:** Herbal (bijao, culantro), Cocido
+* **Presentación:** Se sirve envuelto en hojas, ideal para celebraciones y reuniones familiares.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

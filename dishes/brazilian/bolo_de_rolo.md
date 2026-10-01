@@ -115,3 +115,12 @@ O Bolo de Rolo é considerado patrimônio cultural e imaterial do Estado de Pern
 - [Panelinha: Receita de Bolo de Rolo](https://www.panelinha.com.br/receita/bolo-de-rolo)
 - [Wikipédia PT: Bolo de rolo](https://pt.wikipedia.org/wiki/Bolo_de_rolo)
 - [Estadão Paladar: Tradição Pernambucana](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Doce, Mantecoso, Levemente ácido (goiaba), Delicado
+* **Textura:** Camadas finíssimas e macias, Aveludado, Derrete na boca
+* **Aroma:** Manteiga assada, Goiaba quente, Baunilha
+* **Presentación:** Servido fatiado em rodelas muito finas mostrando o roredondilho espiral de dezenas de camadas finíssimas de massa e goiabada, polvilhado com açúcar refinado.

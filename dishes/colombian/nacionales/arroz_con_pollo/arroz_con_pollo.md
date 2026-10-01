@@ -107,6 +107,17 @@ El arroz con pollo colombiano es un clásico de las celebraciones familiares, fi
 
 Este plato tiene variantes en toda América Latina. Puedes ver la [versión peruana aquí](../../peruvian/arroz_con_pollo.md) para comparar las diferencias.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Vegetal
+* **Textura:** Suave (arroz), Tierno (pollo), Crujiente (verduras)
+* **Aroma:** Especiado, Aromático, Avícola
+* **Presentación:** Arroz de color amarillo brillante con verduras visibles, servido con salsa de tomate y papas fritas.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

@@ -65,6 +65,17 @@ categories:
 7. Retira del fuego, añade la vainilla y las pasas con el licor (si los usas).
 8. Vierte en moldes individuales o en una refractaria y deja enfriar. Refrigera por al menos 4 horas antes de servir.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet, Creamy, Lacteal
+* **Textura:** Smooth, Silky, Layered (natas)
+* **Aroma:** Vanilla, Caramelized Milk
+* **Presentación:** Crema espesa de color marfil con capas visibles de nata, servida fría.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

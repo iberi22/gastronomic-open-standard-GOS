@@ -91,3 +91,12 @@ nutrition:
 
 * 白胡椒中的胡椒碱（piperine）刺激 TRPV1 神经受体，产生温暖发汗感，并促进胃蛋白酶分泌。
 * 酿造醋中的乙酸（acetic acid）降解部分淀粉，同时与胡椒碱形成独特的刺激性酸辣口感协同效应。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sour, Peppery hot, Savory, Umami
+* **Textura:** Silky, Crunchy mushrooms, Thickened soup
+* **Aroma:** white pepper, vinegar, sesame oil
+* **Presentación:** Sichuan Suan La Tang (Sichuan Hot and Sour Soup) presentado de forma vistosa tradicional.

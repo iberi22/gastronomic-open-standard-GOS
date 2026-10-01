@@ -81,6 +81,17 @@ categories:
 5. **Cocinar los tamales**: En una olla grande (tamalera), coloca una base de hojas de plátano sobrantes y agua. Coloca los tamales, tapa bien y cocina al vapor durante al menos 3-4 horas. Asegúrate de que la olla no se quede sin agua.
 6. El tamal está listo cuando la masa se desprende fácilmente de la hoja. Se sirve caliente, tradicionalmente con arepa y chocolate.
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Graso
+* **Textura:** Soft (masa), Fibrous (meats), Tender (vegetables)
+* **Aroma:** Banana leaf (steamed), Cumin, Pork fat
+* **Presentación:** Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la parte superior.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

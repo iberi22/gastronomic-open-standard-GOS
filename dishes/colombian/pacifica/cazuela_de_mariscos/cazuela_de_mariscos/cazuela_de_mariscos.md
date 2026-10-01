@@ -116,6 +116,13 @@ La Cazuela de Mariscos en la región Pacífica de Colombia es un plato festivo y
 
 ![Cazuela de Mariscos](./images/1.jpg)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Lácteo
+* **Textura:** Cremosa, Suave
+* **Aroma:** Marino, Herbal, Lácteo (coco)
+* **Presentación:** Se sirve en cazuela de barro, decorada con cilantro cimarrón y acompañada de arroz o patacones. Es el plato estrella en celebraciones del Pacífico.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

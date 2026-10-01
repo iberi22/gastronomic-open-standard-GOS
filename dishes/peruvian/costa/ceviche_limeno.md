@@ -18,13 +18,13 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Pescado blanco (Lenguado o Corvina)
-- Limón sutil (Lima verde)
-- Ají limo
-- Cebolla roja
-- Cilantro fresco
-- Choclo (Maíz)
-- Camote (Batata)
+  - Pescado blanco (Lenguado o Corvina)
+  - Limón sutil (Lima verde)
+  - Ají limo
+  - Cebolla roja
+  - Cilantro fresco
+  - Choclo (Maíz)
+  - Camote (Batata)
 nutrition:
   calories: 220
   macros:

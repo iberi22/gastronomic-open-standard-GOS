@@ -82,6 +82,13 @@ Asociado indiscutiblemente con las cenas de Acción de Gracias y Navidad, el Pec
 * Servir con una bola de helado de vainilla o crema batida fresca contrarresta el dulzor intenso de la tarta.
 * Tostar ligeramente las nueces pacanas antes de agregarlas al relleno intensifica su sabor a frutos secos.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Caramelizado, Mantecoso, Tostado
+* **Textura:** Crujiente, Cremosa, Densamente suave
+* **Aroma:** Nueces tostadas, Caramelo, Vainilla y mantequilla
+* **Presentación:** Tarta horneada en molde clásico con una capa geométrica superior de nueces pacanas enteras doradas sobre un relleno de caramelo espeso.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

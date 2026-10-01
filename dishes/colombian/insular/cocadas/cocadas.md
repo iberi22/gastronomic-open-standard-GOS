@@ -90,6 +90,13 @@ Las cocadas son uno de los dulces más tradicionales de la región Insular y de 
 
 ![Cocadas de coco doradas](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Acaramelado, Coco
+* **Textura:** Masticable, Crujiente de coco
+* **Aroma:** Coco tostado y panela
+* **Presentación:** Cocadas presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

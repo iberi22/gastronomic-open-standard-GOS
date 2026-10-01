@@ -18,12 +18,12 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carne de cerdo
-- Adobo de achiote y chiles guajillo
-- Piña fresca
-- Tortillas de maíz
-- Cilantro
-- Cebolla picada
+  - Carne de cerdo
+  - Adobo de achiote y chiles guajillo
+  - Piña fresca
+  - Tortillas de maíz
+  - Cilantro
+  - Cebolla picada
 nutrition:
   calories: 650
   macros:

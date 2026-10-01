@@ -79,6 +79,13 @@ San Luis, Misuri, es famoso por consumir más salsa barbacoa per cápita que cua
 * Retirar la membrana posterior es fundamental para que el rub penetre la carne y las costillas queden tiernas.
 * El punto perfecto es cuando la carne cede suavemente al morder sin deshacerse por completo.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce, Ácido, Especiado
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Humo de manzana, Caramelo y especias, Carne de cerdo asada
+* **Presentación:** Costillar de corte rectangular perfecto con una brillante capa de glaseado de salsa barbacoa y corteza especiada caramelizada.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

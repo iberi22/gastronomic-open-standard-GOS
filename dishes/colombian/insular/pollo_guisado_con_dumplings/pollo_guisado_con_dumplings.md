@@ -112,6 +112,13 @@ El Pollo Guisado con Dumplings es un plato reconfortante y festivo de la región
 
 ![Pollo guisado con dumplings](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Cremoso, Salado, Ligeramente dulce (coco)
+* **Textura:** Jugoso (pollo), Esponjoso (dumplings), Cremoso (caldo)
+* **Aroma:** Coco, Herbal (tomillo), Sofrito
+* **Presentación:** Se sirve en platos hondos, decorado con ramitas de tomillo fresco. Ideal para almuerzos familiares y celebraciones.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

@@ -94,6 +94,13 @@ Las Chancacas, también conocidas como cocadas del Pacífico, son un dulce tradi
 
 *Próximamente...*
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Aromático
+* **Textura:** Masticable, Fibroso
+* **Aroma:** Dulce (panela), Especiado (canela y clavo), Cítrico (limón)
+* **Presentación:** Pequeños montículos, ideales para fiestas, ferias y como snack tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

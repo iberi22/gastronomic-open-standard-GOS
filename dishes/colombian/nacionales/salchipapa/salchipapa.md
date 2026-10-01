@@ -22,11 +22,11 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Papa frita
-- Salchicha
-- Queso rallado
-- Salsas
-- Huevo
+  - Papa frita
+  - Salchicha
+  - Queso rallado
+  - Salsas
+  - Huevo
 nutrition:
   calories: 1028
   macros:

@@ -90,6 +90,13 @@ El Pan de Arroz es una delicia tradicional de la Orinoquía colombiana, especial
 
 ![Pan de Arroz Llanero](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Quesero, Tostado
+* **Textura:** Crocante rosca horneada
+* **Aroma:** Queso horneado y arroz tostado
+* **Presentación:** Pan de Arroz presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

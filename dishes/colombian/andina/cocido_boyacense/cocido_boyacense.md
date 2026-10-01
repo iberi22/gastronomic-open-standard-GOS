@@ -114,6 +114,13 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 * El cubio y la arracacha son esenciales para el sabor auténtico.
 * El cocido tradicional se sirve en ollas de barro para conservar el calor.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Terroso (Tubérculos), Ácido (Ibias), Ahumado (Longaniza), Dulce (Habas/Guatila)
+* **Textura:** Compleja (múltiples almidones), Harinoso, Suave
+* **Aroma:** Raíces andinas, Cerdo, Hierbas de páramo
+* **Presentación:** Cazuela de barro monumental. Los tubérculos deben servirse enteros o en trozos grandes para identificarlos. La salsa (el recado) es espesa por la desintegración de la papa criolla.
+
 ---
 
 ## 📸 Galería

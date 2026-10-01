@@ -89,3 +89,12 @@ nutrition:
 * 鸡肉提供优质蛋白质与必需氨基酸。
 * 花椒中的羟基-α-山椒素（hydroxy-alpha-sanshool）与辣椒中的辣椒素（capsaicin）产生协同麻辣感，刺激口腔神经感受器。
 * 熟花生米含有不饱和脂肪酸，增加菜肴的香脆口感与营养价值。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Spicy, Sweet, Sour, Umami, Numbing
+* **Textura:** Tender, Crunchy
+* **Aroma:** toasted chili, sichuan pepper, garlic
+* **Presentación:** Gongbao Jiding (Kung Pao Chicken) presentado de forma vistosa tradicional.

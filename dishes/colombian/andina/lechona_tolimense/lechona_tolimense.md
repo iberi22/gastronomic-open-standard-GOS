@@ -19,14 +19,14 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Cerdo (pulpa y costilla)
-- Cuero de cerdo
-- Arveja amarilla
-- Arroz
-- Manteca de cerdo
-- Cebolla larga
-- Ajo
-- Comino
+  - Cerdo (pulpa y costilla)
+  - Cuero de cerdo
+  - Arveja amarilla
+  - Arroz
+  - Manteca de cerdo
+  - Cebolla larga
+  - Ajo
+  - Comino
 nutrition:
   calories: 850
   macros:

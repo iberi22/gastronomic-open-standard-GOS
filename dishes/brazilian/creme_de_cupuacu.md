@@ -107,3 +107,12 @@ O Cupuaçu (*Theobroma grandiflorum*) é um fruto amazônico parente próximo do
 - [TudoGostoso: Receita de Creme de Cupuaçu](https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html)
 - [Wikipédia PT: Cupuaçu](https://pt.wikipedia.org/wiki/Cupua%C3%A7u)
 - [Estadão Paladar: Sabores da Amazônia](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ácido, Doce, Lácteo, Aromático tropical
+* **Textura:** Cremoso, Aveludado, Leve
+* **Aroma:** Cupuaçu intenso, Lácteo doce
+* **Presentación:** Servido em taças individuais de vidro, bem gelado, decorado com raspas de chocolate amargo ou castanha-do-pará picada.

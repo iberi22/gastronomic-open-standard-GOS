@@ -81,6 +81,13 @@ Los Collard Greens encarnan la historia culinaria del Afro-Sur. Las hojas verdes
 * Un chorrito adicional de vinagre de sidra o salsa de picante al servir realza la acidez y corta la grasa del cerdo.
 * Se pueden utilizar pavos ahumados (pavo ahumado o alas) como alternativa más magra al cerdo.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Ahumado, Ácido, Amargo
+* **Textura:** Suave, Tierna, Jugosa
+* **Aroma:** Cerdo ahumado, Vinagre hervido, Hojas verdes estofadas
+* **Presentación:** Hojas de berza verde oscuro estofadas y tiernas, servidas en tazón hondo con su reconfortante caldo (potlikker).
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

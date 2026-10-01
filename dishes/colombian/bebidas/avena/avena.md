@@ -119,6 +119,17 @@ La avena es una bebida refrescante y cremosa, tradicional en hogares y ventas ca
 - "Sírvela bien fría y agita antes de servir."
 - "Perfecta para acompañar empanadas o desayunos ligeros."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Cremoso
+* **Textura:** Cremosa, Espesa
+* **Aroma:** Canela, Vainilla
+* **Presentación:** Se sirve en vaso alto, bien fría, ideal para refrescar y nutrir. Muy popular en colegios y hogares.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

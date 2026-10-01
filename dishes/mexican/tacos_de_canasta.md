@@ -81,6 +81,13 @@ Icono indiscutible del desayuno urbano en la zona central de México, los tacos 
 4. **Acomodar y sudar:** Forra una canasta con bolsa de plástico y franela. Acomoda capas de tacos alternadas con cebolla desflemada y baña cada capa con el aceite de guajillo hirviendo.
 5. **Reposar:** Cierra herméticamente la canasta y deja reposar durante 45 minutos para que sudan y se suavicen por completo.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami especiado, Salado, Suave ahumado
+* **Textura:** Tortilla suave y sudada, Relleno cremoso
+* **Aroma:** Guajolote frito, Cebolla desflemada, Maíz humectado
+* **Presentación:** Tacos doblados y sudados envueltos en papel estraza dentro de una canasta de mimbre, acompañados de salsa verde cruda con aguacate.
+
 ---
 
 ## Fuentes consultadas y enlaces

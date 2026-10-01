@@ -20,11 +20,11 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Carne de cerdo (paleta o pierna)
-- Naranja agria (sour orange)
-- Ajo fresco
-- Orégano seco
-- Comino molido
+  - Carne de cerdo (paleta o pierna)
+  - Naranja agria (sour orange)
+  - Ajo fresco
+  - Orégano seco
+  - Comino molido
 nutrition:
   calories: 410
   macros:

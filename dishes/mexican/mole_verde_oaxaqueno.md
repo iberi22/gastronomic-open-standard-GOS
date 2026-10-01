@@ -86,6 +86,13 @@ A diferencia de los moles oscuros de cocción prolongada, el Mole Verde Oaxaque�
 5. **Espesar:** Disuelve la masa de maíz y la pepita molida en caldo caliente y agrégala a la cazuela.
 6. **Integrar:** Añade la carne de cerdo y deja sazonar a fuego bajo durante 20 minutos hasta que espese y tome un verde intenso.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Herbal, Levemente ácido, Picante fresco, Umami
+* **Textura:** Ligera, Sedosa
+* **Aroma:** Hoja santa, Epazote fresco, Tomatillo
+* **Presentación:** Carne de cerdo bañada en un espeso mole verde brillante, acompañado de chayote y ejotes cocidos.
+
 ---
 
 ## 🔬 Análisis Detallado

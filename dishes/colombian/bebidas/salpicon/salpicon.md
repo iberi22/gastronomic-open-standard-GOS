@@ -152,6 +152,17 @@ El salpicón es una bebida-postre refrescante y colorida, tradicional en ferias,
 - "En Bogotá lo venden en la calle con cuchara y pajilla."
 - "Ideal para refrescarse en días de calor o después de hacer ejercicio."
 
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Frutal
+* **Textura:** Refrescante, Jugoso, Con trozos de fruta
+* **Aroma:** Frutal, Cítrico
+* **Presentación:** Se sirve en vasos grandes, ideal para días calurosos y fiestas infantiles.
+
+---
+
 ## 🔬 Análisis Detallado y Sabiduría Colectiva
 
 ### Categorización Sensorial y de Uso

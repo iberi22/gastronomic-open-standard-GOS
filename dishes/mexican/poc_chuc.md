@@ -79,6 +79,13 @@ Plato tradicional de Oxkutzcab y de toda la península de Yucatán. La acidez pe
 4. **Asar a las brasas:** Asa la carne de cerdo sobre carbón o parrilla bien caliente durante 3-4 minutos por lado hasta que esté bien dorada y jugosa.
 5. **Servir:** Acompaña la carne recién asada con la cebolla curtida, salsa chiltomate, frijoles colados y tortillas calientes.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Cítrico marcado, Ahumado a la leña, Salado especiado
+* **Textura:** Carne asada jugosa con bordes crujientes
+* **Aroma:** Carbón de leña, Naranja agria asada
+* **Presentación:** Filetes de cerdo asados al carbón acompañados de cebolla morada curtida asada, chiltomate (salsa de tomate asado), frijoles colados y aguacate.
+
 ---
 
 ## Fuentes consultadas y enlaces

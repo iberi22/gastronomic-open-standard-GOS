@@ -112,3 +112,12 @@ O Pato no Tucupi representa a máxima celebração da gastronomia paraense e ama
 - [Estadão Paladar: Pato no Tucupi e Tradições](https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234)
 - [Wikipédia PT: Pato no tucupi](https://pt.wikipedia.org/wiki/Pato_no_tucupi)
 - [Folha Comida: Culinária do Pará](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ácido, Umami, Salgado, Formigante (espilantol)
+* **Textura:** Carne macia e suculenta, Caldo encorpado
+* **Aroma:** Tucupi fervido, Pato assado, Ervas amazônicas
+* **Presentación:** Servido em travessa funda com o caldo amarelo radiante do tucupi, coberto com folhas de jambu e acompanhado de farinha de mandioca d'água.

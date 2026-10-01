@@ -78,6 +78,13 @@ Popularísimo en plazas y esquinas de todo México, el esquite es la botana por 
 2. **Hervir con epazote:** Agrega el agua y las ramas de epazote fresco. Tapa y cocina a fuego medio por 25 minutos hasta que el elote esté suave.
 3. **Servir:** Sirve caliente en vasos con un poco de su caldo, una cucharada generosa de mayonesa, queso cotija rallado, chile piquín y limón.
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Maíz tierno dulce, Herbal penetrante (epazote), Umami cremoso, Picante ácido
+* **Textura:** Granos jugosos y tiernos, Cremosa por mayonesa
+* **Aroma:** Vapor de epazote, Elote tierno
+* **Presentación:** Servido en vaso térmico con su caldo caliente, coronado con mayonesa, queso cotija desmoronado, chile en polvo y jugo de limón.
+
 ---
 
 ## Fuentes consultadas y enlaces

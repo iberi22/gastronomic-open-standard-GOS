@@ -97,6 +97,13 @@ Este plato es una de las recetas tradicionales de la región Insular, especialme
 
 ![Frijoles con cola de cerdo](./images/1.png)
 
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Sustancioso umami, Ahogado
+* **Textura:** Frijoles cremosos, Carne melosa
+* **Aroma:** Guiso de frijoles y cerdo
+* **Presentación:** Frijoles con Cola de Cerdo (Pig Tail Beans) presentado de forma vistosa tradicional.
+
 ---
 
 ## 🔬 Análisis Detallado y Sabiduría Colectiva

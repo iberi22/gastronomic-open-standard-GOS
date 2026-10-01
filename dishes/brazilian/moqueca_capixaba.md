@@ -115,3 +115,12 @@ A Moqueca Capixaba é uma das expressões culinárias mais autênticas do sudest
 - [Panelinha: Receita de Moqueca Capixaba](https://www.panelinha.com.br/receita/moqueca-capixaba)
 - [Estadão Paladar: Culinária Capixaba e Tradição](https://paladar.estadao.com.br)
 - [Wikipédia PT: Moqueca Capixaba](https://pt.wikipedia.org/wiki/Moqueca_capixaba)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Cítrico, Herbal, Levemente terroso
+* **Textura:** Suave, Delicada, Caldo leve
+* **Aroma:** Peixe fresco, Coentro, Tomate cozido
+* **Presentación:** Servida fervilhando em panela de barro capixaba tradicional, acompanhada de pirão e arroz branco.

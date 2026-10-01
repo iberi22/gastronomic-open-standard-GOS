@@ -19,12 +19,12 @@ images:
 language: es
 license: MIT
 main_ingredients:
-- Papa blanca y papa amarilla
-- Carne de res molida o picada
-- Cebolla roja
-- Pasta de ají panca
-- Huevo duro picado
-- Harina de trigo
+  - Papa blanca y papa amarilla
+  - Carne de res molida o picada
+  - Cebolla roja
+  - Pasta de ají panca
+  - Huevo duro picado
+  - Harina de trigo
 nutrition:
   calories: 390
   macros:
