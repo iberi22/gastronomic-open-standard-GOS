@@ -15,11 +15,12 @@ image_attribution: "Pixabay — Cuminum cyminum seeds"
 health_registry:
   - condition: "Dyspepsia / Bloating"
     mechanism: "Increases amylase, protease, lipase activity"
-    # Bajado de High a Medium: el DOI anterior (10.1016/S0271-5317...) no
-    # existia en Crossref. El sustituto que si existe y encaja con el
-    # mecanismo (amilasa/lipasa pancreatica, cumin entre las especias) es
-    # in vitro sobre rata: preclinico, no evidencia clinica en humanos.
-    evidence_level: "Medium"
+    evidence_level: "Low"
+    # Bajado dos veces. El DOI original (10.1016/S0271-5317...) no existe en
+    # Crossref. El sustituto que si existe y encaja con el mecanismo
+    # (amilasa/lipasa pancreatica, cumin entre las especias testeadas) es
+    # in vitro sobre enzimas de RATA. Criterio aplicado: in vitro o animal
+    # = Low, nunca Medium ni High, porque no hay condicion clinica humana.
     studies:
       - title: "In vitro influence of spices and spice-active principles on digestive enzymes of rat pancreas and small intestine"
         source: "Food / Nahrung"
@@ -29,7 +30,7 @@ health_registry:
         doi_status: verified
   - condition: "Irritable bowel"
     mechanism: "Carminative and spasmolytic"
-    evidence_level: "Medium"
+    evidence_level: "Low"
     studies:
       - title: "The effect of Cuminum cyminum on the return of bowel motility after abdominal surgery: a triple-blind randomized clinical trial"
         source: "BMC Complement Med Ther"
@@ -37,9 +38,10 @@ health_registry:
         doi: "10.1186/s12906-024-04530-1"
         evidence_type: randomized clinical trial
         # POBLACION DISTINTA A LA DEL CLAIM: el ensayo es post-quirurgico
-        # (74 pacientes), no IBS. Sustituye por mecanismo carminativo, no por
-        # la misma condicion clinica. Se mantiene Medium.
+        # (tras cirugia abdominal), no IBS. Aunque sea un ECA triple ciego,
+        # no sostiene la condicion clinica declarada, asi que Low.
         doi_status: verified
+
 ---
 
 ![Cuminaldehído](/images/substances/cuminaldehido.jpg)

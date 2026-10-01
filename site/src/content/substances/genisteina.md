@@ -22,6 +22,11 @@ health_registry:
         year: 2007
         doi: "10.1136/bmj.39287.690475.ad"
         evidence_type: clinical trial report
+          # NO subir a High pese a ser BMJ: EuropePMC clasifica este registro
+          # como pubType ['In Brief', 'in-brief'], es decir una NOTA BREVE, no
+          # el informe completo de un ensayo. Sin abstract disponible ni
+          # diseño verificable, Medium es el techo defendible. Subirlo a High
+          # seria una afirmacion sin respaldo.
         doi_status: verified
 ---
 

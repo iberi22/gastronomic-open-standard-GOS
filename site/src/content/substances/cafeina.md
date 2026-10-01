@@ -19,6 +19,7 @@ health_registry:
     title: "Caffeine as an attention enhancer: reviewing existing assumptions"
     year: 2012
     evidence_type: narrative review
+    doi_status: verified
     # Bajado de High a Medium: el DOI anterior no existia (404 en
     # Crossref) y era un meta-analysis inventado. El sustituto es una
     # revision narrativa (McLellan et al.), no un ensayo clinico.

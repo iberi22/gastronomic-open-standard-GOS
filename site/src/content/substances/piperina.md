@@ -27,7 +27,12 @@ health_registry:
       evidence_type: human trial
       doi_status: verified
 - condition: Inflammation
-  evidence_level: Medium
+  evidence_level: "Low"
+    # Medium -> Low: el DOI original era una revision (Inflammation Res, 2015,
+    # ademas con DOI inventado que daba 404). El sustituto verificado es un
+    # estudio en RATA con artritis inducida. Aunque el mecanismo (NF-kB,
+    # antioxidante) siga siendo coherente, no hay condicion clinica humana
+    # que lo sostenga, asi que Low por el mismo criterio aplicado a cumin.
   mechanism: NF-kB suppression, antioxidant
   studies:
     - doi: "10.1007/s10753-012-9448-3"

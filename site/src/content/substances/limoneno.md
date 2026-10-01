@@ -15,13 +15,17 @@ image_attribution: "Pixabay — Citrus limon"
 health_registry:
   - condition: "GERD / Heartburn"
     mechanism: "Gastric motility and coating"
-    evidence_level: "Medium"
+    evidence_level: "Low"
     studies:
       - title: "D-limonene for GERD: trial"
         source: "Alt Med Rev"
         year: 2007
         doi: "10.1000/altmed.12.1.0"
         evidence_type: sin identificar
+          # Low, no Medium: no hay NI UN ESTUDIO publicable que sostenga
+          # GERD con limoneno. Una busqueda amplia en Crossref (limonene +
+          # GERD/reflux + randomized) solo devuelve capitulos de libro de
+          # farmacos, ningun ensayo. Declarar Medium seria evidencia inventada.
         # SIN EQUIVALENTE IDENTIFICABLE (verificado 2026-10-01, busqueda
         # en Crossref por el titulo y el claim): el DOI 404, y ningun
         # candidato tiene coherencia tematica suficiente con GERD. El
