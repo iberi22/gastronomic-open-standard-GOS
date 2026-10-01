@@ -14,4 +14,12 @@ deficiency: |
   raquitismo (niños), osteomalacia (adultos), osteoporosis, hiperparatiroidismo secundario, fragilidad muscular
 excess: |
   hipercalcemia (náuseas, confusión, nefrocalcinosis, arritmias) por acumulación grasa
+studies:
+  - title: 'Calcium, vitamin D, or combined supplementation to prevent fractures in older adults: systematic review and meta-analysis'
+    source: 'BMJ'
+    year: 2026
+    doi: '10.1136/bmj-2025-088050'
+    pmid: '42161415'
+    url: 'https://doi.org/10.1136/bmj-2025-088050'
+
 ---

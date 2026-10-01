@@ -10,6 +10,13 @@ functions: "Antiinflamatorio (resolvinas/protectinas), salud cardiovascular (red
 deficiency: "Cambios en la piel (dermatitis), deterioro cognitivo, fatty liver, resistencia a insulina"
 excess: "Anticoagulación (sangrado si + warfarina), LDL alto en algunos, immunosupresión a dosis muy altas"
 type: "vitamin"
+studies:
+  - title: 'Role of Omega-3 Fatty Acids in Improving Metabolic Dysfunctions'
+    source: 'Nutrients'
+    year: 2024
+    doi: '10.3390/nu16172961'
+    url: 'https://doi.org/10.3390/nu16172961'
+
 ---
 
 Omega-3 (EPA/DHA) es un ácido graso poliinsaturado esencial del grupo omega-3. El cuerpo no puede sintetizar ALA (precursor) por lo que debe obtenerse de la dieta. EPA y DHA son las formas activas.
