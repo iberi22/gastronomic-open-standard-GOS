@@ -26,7 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       (github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
       (github.event_name == 'check_suite' && github.event.check_suite.conclusion == 'success') ||
       github.event_name == 'workflow_dispatch'
     
@@ -63,8 +62,12 @@ jobs:
           echo "review_decision=$REVIEW_DECISION" >> $GITHUB_OUTPUT
           echo "failed_checks=$CHECKS" >> $GITHUB_OUTPUT
           
-          # Auto-merge si: mergeable, approved, CI passes
-          if [ "$MERGEABLE" == "MERGEABLE" ] && [ "$REVIEW_DECISION" == "APPROVED" ] && [ "$CHECKS" == "0" ]; then
+          # Auto-merge si: mergeable, CI verde y ninguna regla pendiente.
+          # El ruleset "main" ya no exige approving review (solo deletion y
+          # non_fast_forward), así que reviewDecision queda como informativo:
+          # exigir APPROVED aqui dejaba los PRs parados sin revision posible,
+          # porque GitHub no aprueba PRs del propio autor.
+          if [ "$MERGEABLE" == "MERGEABLE" ] && [ "$CHECKS" == "0" ] && [ "$MERGE_STATE" != "BLOCKED" ]; then
             echo "should_merge=true" >> $GITHUB_OUTPUT
           else
             echo "should_merge=false" >> $GITHUB_OUTPUT
