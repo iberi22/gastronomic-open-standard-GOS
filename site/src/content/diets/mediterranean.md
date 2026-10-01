@@ -11,4 +11,12 @@ key_components: ["≥4 cucharadas aceite de oliva/día", "≥7 porciones verdura
 contraindications: |
   Ninguna absoluta. DASH también applicable. Evitar en fenilcetonuria (PKU) por fenilalanina en legumbres.
 sources: ["Estruch R et al. PREDIMED trial. N Engl J Med 2013;368:1279-90.", "Sofi F et al. Mediterranean diet and health outcomes. BMJ 2014;349:g6850."]
+studies:
+  - title: 'The role of the Mediterranean diet in reducing the risk of cardiovascular disease and cancer: a systematic review and meta-analysis'
+    source: 'GeroScience'
+    year: 2025
+    doi: '10.1007/s11357-024-01488-3'
+    pmid: '39797935'
+    url: 'https://doi.org/10.1007/s11357-024-01488-3'
+
 ---

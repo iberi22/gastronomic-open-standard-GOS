@@ -1,0 +1,72 @@
+{
+  "desc": "Referencias verificadas para site/src/content/diets/. Cada DOI comprobado en Crossref y PMID en PubMed. No sustituyen las citas clinicas ya presentes en sources: (ensayos originales); estas son revisions y meta-analisis actuales.",
+  "verified_on": "2026-10-01",
+  "method": "PubMed esearch/esummary por dieta + verificacion de DOI en Crossref (api.crossref.org/works?filter=doi:).",
+  "diets": [
+    {
+      "key": "mediterranean",
+      "file": "mediterranean.md",
+      "studies": [
+        {
+          "title": "The role of the Mediterranean diet in reducing the risk of cardiovascular disease and cancer: a systematic review and meta-analysis",
+          "journal": "GeroScience",
+          "year": 2025,
+          "doi": "10.1007/s11357-024-01488-3",
+          "pmid": "39797935"
+        }
+      ]
+    },
+    {
+      "key": "dash",
+      "file": "dash.md",
+      "studies": [
+        {
+          "title": "Dietary Approaches to Stop Hypertension (DASH) Diet and Blood Pressure: A Systematic Review and Meta-Analysis",
+          "journal": "Advances in Nutrition",
+          "year": 2020,
+          "doi": "10.1093/advances/nmaa041",
+          "pmid": "32330233"
+        }
+      ]
+    },
+    {
+      "key": "low-carb-keto",
+      "file": "low-carb-keto.md",
+      "studies": [
+        {
+          "title": "The Effect of Low-Fat and Low-Carbohydrate Diets on Weight Loss in Adults: A Systematic Review and Meta-Analysis",
+          "journal": "Nutrients",
+          "year": 2020,
+          "doi": "10.3390/nu12123774",
+          "pmid": "33317019"
+        }
+      ]
+    },
+    {
+      "key": "low-fodmap",
+      "file": "low-fodmap.md",
+      "studies": [
+        {
+          "title": "Efficacy of a low FODMAP diet in irritable bowel syndrome: systematic review and network meta-analysis",
+          "journal": "Gut",
+          "year": 2021,
+          "doi": "10.1136/gutjnl-2021-325214",
+          "pmid": "34376515"
+        }
+      ]
+    },
+    {
+      "key": "vegan",
+      "file": "vegan.md",
+      "studies": [
+        {
+          "title": "Vegan Diet and Bone Health - Results from the Cross-Sectional NutriNet-Sante Study",
+          "journal": "Nutrients",
+          "year": 2021,
+          "doi": "10.3390/nu13020685",
+          "pmid": "33669942"
+        }
+      ]
+    }
+  ]
+}

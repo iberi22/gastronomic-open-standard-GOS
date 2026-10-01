@@ -11,4 +11,12 @@ key_components: ["<2300mg Na/día (vers. estándar) o <1500mg (vers. baja en sal
 contraindications: |
   Insuficiencia renal avanzada (↑potasio), fenilcetonuria (restricción fenilalanina).
 sources: ["Appel LJ et al. DASH trial. N Engl J Med 1997;336:1117-24.", "Sacks FM et al. DASH-Sodium trial. N Engl J Med 2001;344:3-10."]
+studies:
+  - title: 'Dietary Approaches to Stop Hypertension (DASH) Diet and Blood Pressure: A Systematic Review and Meta-Analysis'
+    source: 'Advances in Nutrition'
+    year: 2020
+    doi: '10.1093/advances/nmaa041'
+    pmid: '32330233'
+    url: 'https://doi.org/10.1093/advances/nmaa041'
+
 ---

@@ -11,4 +11,12 @@ key_components: ["Fase 1 (0-6 sem): eliminar todos los FODMAPs altos (trigo, lac
 contraindications: |
   Enfermedad celíaca (primero eliminar gluten), EII en flare activo, дисбиоз severo. No usar como dieta de mantenimiento (puede afectar microbiota).
 sources: ["Halpert et al. Low-FODMAP diet for IBS. Gastroenterology 2020;158:1249-61.", "Tuck CJ et al. Low-FODMAPs: a critique of the evidence. J Nutr 2023;153:2679-91."]
+studies:
+  - title: 'Efficacy of a low FODMAP diet in irritable bowel syndrome: systematic review and network meta-analysis'
+    source: 'Gut'
+    year: 2021
+    doi: '10.1136/gutjnl-2021-325214'
+    pmid: '34376515'
+    url: 'https://doi.org/10.1136/gutjnl-2021-325214'
+
 ---
