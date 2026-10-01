@@ -5,6 +5,7 @@ import {
   DESC_MAX,
   ingredientDescription,
   isDescriptionLength,
+  recipeDescription,
   recipeIndexDescription,
   substanceDescription,
 } from './meta-description'
@@ -203,6 +204,101 @@ describe('substanceDescription', () => {
 
   it('no queda corta cuando solo hay nombre', () => {
     const d = substanceDescription({ name: 'Genisteína' })
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+})
+
+describe('recipeDescription', () => {
+  it('usa pais y region reales, no texto generico', () => {
+    const d = recipeDescription({
+      name: 'Ají Negro',
+      country: 'Colombia',
+      region: 'Amazonía',
+      category: 'Salsa',
+      flavors: ['Picante', 'Ácido', 'Umami'],
+    })
+    expect(d).toContain('Colombia')
+    expect(d).toContain('Amazonía')
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('no pega dos frases cuando un campo falta', () => {
+    // Con category Y flavors presentes, el `${head} ${tipo}${sabores}` sin
+    // filtro daba "Plato de salsa.Sabores: ...". Con category y SIN flavors
+    // no se reproducia, asi que el caso tiene que traer los dos campos.
+    const d = recipeDescription({
+      name: 'Ají Negro',
+      country: 'Colombia',
+      category: 'Salsa',
+      flavors: ['Picante', 'Ácido', 'Umami'],
+    })
+    expect(d).not.toMatch(/\.\w/) // ningun punto seguido de letra
+    expect(d).not.toContain('.Sabores')
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('no repite una frase de relleno aunque no quepa la siguiente', () => {
+    // La rama de desborde de padTo metia fallbacks[0] sin comprobar si ya
+    // estaba: en dist/ una pagina salia con "Ficha abierta en el grafo de
+    // GOS. Ficha abierta en el grafo de GOS."
+    //
+    // El caso que lo dispara es ingredientDescription SIN condicion: la cola
+    // era FILLER[0] en el texto base y padTo la anadia otra vez. Con solo
+    // name+group el texto llega a 155 caracteres con la frase repetida.
+    const d = ingredientDescription({
+      name: 'Sal (condimento)',
+      group: 'Condiment',
+    })
+    const filler = 'Ficha abierta en el grafo de GOS.'
+    const apariciones = d.split(filler).length - 1
+    expect(apariciones, d).toBe(1)
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('nunca excede 158 aunque la entrada sea enorme', () => {
+    // El corte por DESC_MIN dentro de padTo es una optimizacion, no la
+    // garantia: si se quitara, el texto sigue dentro de rango porque
+    // clampDescription lo recorta. Este test fija ese comportamiento para
+    // que el recorte aguas abajo no se pueda relajar sin notarlo.
+    const d = recipeDescription({
+      name: 'Sal (condimento)',
+      category: 'C'.repeat(400),
+      flavors: ['Picante', 'Ácido', 'Umami'],
+      textures: ['Espesa', 'Untuosa'],
+      presentation: 'Se usa para sazonar.'.repeat(20),
+    })
+    expect(d.length, `${d.length}: ${d.slice(0, 60)}`).toBeLessThanOrEqual(
+      DESC_MAX,
+    )
+  })
+
+  it('acepta textura como lista, que es como viene en los datos', () => {
+    // 585 de 585 recetas declaran sensory.texture como array. La primera
+    // version de recipeDescription llamaba .toLowerCase() sobre ella y el
+    // build reventaba con "input.texture.toLowerCase is not a function".
+    const d = recipeDescription({
+      name: 'Ají Negro',
+      country: 'Colombia',
+      textures: ['Espesa', 'Untuosa'],
+    })
+    expect(d).toContain('Textura')
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('rellena hasta el minimo cuando solo hay nombre y presentacion', () => {
+    // El caso que falla si padTo no se usa: con los campos minimos la
+    // descripcion se queda muy corta.
+    const d = recipeDescription({
+      name: 'Sal (condimento)',
+      presentation: 'Se usa para sazonar.',
+    })
+    expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
+  })
+
+  it('no inventa datos que la receta no declara', () => {
+    // Sin pais ni region, no debe colarse el nombre de ningun pais.
+    const d = recipeDescription({ name: 'Sal (condimento)' })
+    expect(d).not.toMatch(/receta de [A-ZÁÉÍÓÚ]/) // sin lugar inventado
     expect(isDescriptionLength(d), `${d.length}: ${d}`).toBe(true)
   })
 })

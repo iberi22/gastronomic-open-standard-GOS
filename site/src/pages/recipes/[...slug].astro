@@ -7,6 +7,7 @@ import {
   RECIPE_PLACEHOLDER,
   resolveDishHero,
 } from '../../lib/images'
+import { recipeDescription } from '../../lib/meta-description'
 import { extractInstructionTexts } from '../../lib/recipe-instructions'
 import { getRecipeMarkdown } from '../../lib/recipe-markdown'
 import {
@@ -74,6 +75,43 @@ const tags = ((data as { tags?: unknown }).tags as string[]) || []
 const description = (data as { description?: unknown }).description as
   | string
   | undefined
+
+const recipeTitle = (data as { title?: unknown }).title || entry.id
+
+// Una sola description para el JSON-LD y el <meta>: antes se calculaba dos
+// veces y eran distintas. Con sensory.presentation pelado, 330 de 496 recetas
+// (66%) caian por debajo de los 120 caracteres del rango SEO.
+const sensory = data.sensory as
+  | {
+      presentation?: string
+      flavor?: string | string[]
+      /** Lista en la practica: 585/585 recetas declaran textura como array. */
+      texture?: string | string[]
+    }
+  | undefined
+const metaDescription = recipeDescription({
+  name: recipeTitle,
+  country,
+  region: data.region as string | undefined,
+  category: categories[0],
+  flavors:
+    typeof sensory?.flavor === 'string'
+      ? [sensory.flavor]
+      : Array.isArray(sensory?.flavor)
+        ? sensory.flavor
+        : undefined,
+  textures:
+    typeof sensory?.texture === 'string'
+      ? [sensory.texture]
+      : Array.isArray(sensory?.texture)
+        ? sensory.texture
+        : undefined,
+  presentation: sensory?.presentation,
+  servings: servings as string | undefined,
+  difficulty: (data as { difficulty?: unknown }).difficulty as
+    | string
+    | undefined,
+})
 const nutrition = (data as { nutrition?: unknown }).nutrition as
   | {
       calories?: unknown
@@ -97,14 +135,10 @@ const nutritionLd = showNutrition
         : undefined,
     }
   : undefined
-const recipeTitle = (data as { title?: unknown }).title || entry.id
-
 const jsonLd = recipeJsonLd({
   slug: entry.id,
   title: recipeTitle,
-  description:
-    data.sensory?.presentation ||
-    `${recipeTitle} — receta tradicional del Gastronomic Open Standard`,
+  description: metaDescription,
   image: heroImage,
   prepTime: prep ? `PT${prep.replace(/\D/g, '')}M` : undefined,
   cookTime: cook ? `PT${cook.replace(/\D/g, '')}M` : undefined,
@@ -125,7 +159,7 @@ const jsonLd = recipeJsonLd({
 ---
 <Layout
   title={`${recipeTitle} — Receta GOS`}
-  description={data.sensory?.presentation || `${recipeTitle} — receta tradicional del Gastronomic Open Standard`}
+  description={metaDescription}
   image={heroIsPlaceholder ? RECIPE_OG_PLACEHOLDER : heroImage}
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />

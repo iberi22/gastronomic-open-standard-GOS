@@ -85,22 +85,52 @@ function padTo(
 ): string {
   let out = text
   const queue = [...extras, ...fallbacks]
+  // Piezas ya usadas: se comparan por identidad de la frase, no por si el
+  // texto acumulado la contiene. Antes se usaba out.includes(extra), que no
+  // impedia que la rama del desborde metiera fallbacks[0] dos veces seguidas:
+  // medido en dist/, una pagina quedaba con "Ficha abierta en el grafo de
+  // GOS. Ficha abierta en el grafo de GOS."
+  const usadas = new Set<string>()
   for (const extra of queue) {
     if (out.length >= DESC_MIN) break
-    if (!extra || out.includes(extra)) continue
+    if (!extra || usadas.has(extra)) continue
     const next = `${out} ${extra}`
-    out = next.length > DESC_MAX ? `${out} ${fallbacks[0]}` : next
+    if (next.length > DESC_MAX) continue // esta no cabe: probar la siguiente
+    out = next
+    usadas.add(extra)
+  }
+  // Ultimo recurso: si sigue corto y hay hueco, anadir la frase de relleno
+  // mas corta que quepa. Sin esto el texto se queda en 105-112 caracteres y la
+  // pagina sale del rango SEO.
+  if (out.length < DESC_MIN) {
+    const caben = fallbacks
+      .filter((f) => !usadas.has(f))
+      .map((f) => ({ f, len: `${out} ${f}`.length }))
+      .filter((x) => x.len <= DESC_MAX)
+      .sort((a, b) => a.len - b.len)
+    if (caben.length > 0) out = `${out} ${caben[0].f}`
   }
   return out
 }
 
-/** Colas genéricas para rellenar cuando los datos reales no alcanzan el minimo. */
-// Suficientes para el caso mas corto medido (108 chars: "Sal (condimento)"):
-// la lista se recorre en orden y se detiene al llegar a DESC_MIN.
+/**
+ * Frases de relleno, en orden de preferencia.
+ *
+ * Las tres primeras son las "largas" y describen el sitio. Las cortas existen
+ * por un motivo medido: con solo las largas, una ficha minima como
+ * "Sal (condimento)." se queda en 51 caracteres y ninguna cabe a continuacion
+ * sin pasarse de 158 (51 + 34 = 85, corto; 51 + 57 = 108, sigue corto; y
+ * anadir otra ya excede el maximo). Medido con ingredientDescription({name:
+ * 'Sal', group: 'Condiment'}) y con 'Ajo' con solo calorias.
+ *
+ * Son cortas a proposito: son el puente que lleva de 85 a ~120.
+ */
 const FILLER = [
   'Ficha abierta en el grafo de GOS.',
   'Se puede consultar y citar desde la base abierta de GOS.',
   'Datos abiertos y citables por maquinas y por humanos.',
+  'Consulta abierta.',
+  'Texto abierto y reutilizable.',
 ]
 
 export interface IngredientDescInput {
@@ -150,7 +180,10 @@ export function ingredientDescription(input: IngredientDescInput): string {
     ? conditionES(String(input.conditions[0]))
     : undefined
 
-  const tail = condition ? `Componentes asociados a ${condition}.` : FILLER[0]
+  // Sin condicion, NO se mete FILLER[0] aqui: padTo la anade despues y el
+  // texto salia duplicado ("Ficha abierta en el grafo de GOS. Ficha abierta
+  // en el grafo de GOS."). El relleno es responsabilidad de padTo.
+  const tail = condition ? `Componentes asociados a ${condition}.` : ''
 
   // Relleno honesto con lo que exista: micronutriente real o nombre cientifico.
   const micro = Object.entries(input.micronutrients ?? {}).find(
@@ -246,4 +279,67 @@ export function substanceDescription(input: SubstanceDescInput): string {
     FILLER,
   )
   return clampDescription(text)
+}
+
+export interface RecipeDescInput {
+  name: string
+  country?: string
+  region?: string
+  category?: string
+  flavors?: string[]
+  /** En los datos es SIEMPRE una lista: 585 de 585 recetas lo declaran asi. */
+  textures?: string[]
+  presentation?: string
+  servings?: string
+  difficulty?: string
+}
+
+/**
+ * Description de una receta.
+ *
+ * Antes de esto, /recipes/ usaba `sensory.presentation` pelado, que por si
+ * solo mide 76-88 caracteres en la mayoria de las recetas ("Se sirve en
+ * pequenos cuencos, ideal para acompanar platos amazonicos"). Medido sobre
+ * dist/: 330 de 496 recetas (66%) caian por debajo de 120 caracteres, con
+ * mediana de 92. Google rellena ese hueco con texto que el no eligio.
+ *
+ * Aqui no se inventa nada: se usan los campos que la receta ya declara
+ * (pais, region, categoria, sabores, textura y presentacion). El
+ * `presentation` entra al final y solo como relleno: es informacion real, pero
+ * por si sola no describe la receta.
+ */
+export function recipeDescription(input: RecipeDescInput): string {
+  const name = input.name || ''
+  const lugar = [input.region, input.country].filter(Boolean).join(', ')
+
+  // Presentacion primero: es el texto mas especifico de la receta.
+  const head = lugar
+    ? `${name}, receta de ${lugar}.`
+    : `${name}, receta tradicional.`
+
+  const tipo = input.category ? `Plato de ${input.category.toLowerCase()}.` : ''
+  const sabores = input.flavors?.length
+    ? `Sabores: ${input.flavors.slice(0, 3).join(', ')}.`
+    : ''
+  const textura = input.textures?.length
+    ? `Textura ${input.textures.slice(0, 2).join(', ').toLowerCase()}.`
+    : ''
+  const raciones = input.servings ? `Rinde ${input.servings}.` : ''
+  const nivel = input.difficulty
+    ? `Nivel ${input.difficulty.toLowerCase()}.`
+    : ''
+
+  // Cada pieza termina en punto y se unen con espacio: sin el, un campo
+  // vacio produce "Plato de salsa.Sabores: ...". Medido en el build.
+  const cuerpo = [head, tipo, sabores].filter(Boolean).join(' ')
+
+  return clampDescription(
+    padTo(
+      cuerpo,
+      [raciones, textura, nivel, input.presentation].filter((x): x is string =>
+        Boolean(x),
+      ),
+      FILLER,
+    ),
+  )
 }
