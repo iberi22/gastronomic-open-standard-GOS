@@ -970,21 +970,17 @@ export function generateGraph() {
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name)
       if (entry.isDirectory()) {
-        // Skip china directory or Chinese named directories
-        if (
-          entry.name.toLowerCase() === 'china' ||
-          /[\u4e00-\u9fa5]/.test(entry.name)
-        ) {
-          continue
-        }
+        // Las carpetas cuyo nombre es chino se ignoran porque sus recetas no
+        // son indexables (ver isLatinText). Pero dishes/china/english/ SI tiene
+        // las traducciones con title en inglés, y esas recetas deben entrar al
+        // grafo: se recorren y isLatinText hace el resto del filtro.
+        if (/[一-龥]/.test(entry.name)) continue
         scanDishes(fullPath)
       } else if (
         entry.isFile() &&
         entry.name.endsWith('.md') &&
         entry.name !== 'README.md'
       ) {
-        if (/[\u4e00-\u9fa5]/.test(entry.name)) continue
-
         try {
           const content = fs.readFileSync(fullPath, 'utf8')
           const parsed = matter(content)
@@ -992,6 +988,30 @@ export function generateGraph() {
 
           const title = fm.title || entry.name.replace('.md', '')
           if (!title || !isLatinText(title)) continue
+
+          // Una receta sin ni un ingrediente resoluble queda como nodo muerto en
+          // el grafo (0 aristas USES) y rompe el invariante de graph-integrity.
+          // Pasa con las traducciones de dishes/china/english/ cuyo
+          // main_ingredients sigue en chino: mejor no indexarlas que indexarlas
+          // sin interconexion. La web las sirve igual.
+          const fmIngredients = Array.isArray(fm.main_ingredients)
+            ? fm.main_ingredients
+            : fm.main_ingredients
+              ? [fm.main_ingredients]
+              : []
+          const hasResolvableIngredient =
+            fmIngredients.length > 0 &&
+            fmIngredients.some(
+              (ing) => typeof ing === 'string' && isLatinText(ing),
+            )
+          if (
+            !hasResolvableIngredient &&
+            !extractIngredientsFromContent(content).some((ing) =>
+              isLatinText(ing),
+            )
+          ) {
+            continue
+          }
 
           // Compute relative slug for route navigation
           const relPath = path
