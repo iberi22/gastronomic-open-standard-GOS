@@ -102,6 +102,7 @@ El Pozole Rojo es una sopa festiva ancestral a base de granos de maíz cacahuazi
 ---
 
 ## 🧪 Química de la Nixtamalización en el Pozole
+
 El uso de maíz cacahuazintle sometido a cocción alcalina prolongada (*nixtamalización*) libera la niacina ligada (vitamina B3), incrementa la absorción de calcio biodisponible y desintegra las micotoxinas (aflatoxinas/fumonisinas) hacia la fase acuosa (*nejayote*). El reblandecimiento del pericarpio alcalino permite la gelatinización completa del almidón y el florecido característico del grano.
 
 ---

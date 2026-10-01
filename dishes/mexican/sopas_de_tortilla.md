@@ -101,6 +101,7 @@ La Sopa de Tortilla es una sopa tradicional mexicana cuyo caldo concentrado de j
 ---
 
 ## 🧪 Química de la Nixtamalización en la Tortilla
+
 Las tiras de tortilla provienen de masa de maíz tratada térmicamente con $Ca(OH)_2$. Este proceso transforma el almidón, descompone la hemicelulosa para liberar la niacina bloqueada (previendo la pelagra) y aporta una alta bioaccesibilidad de calcio sin degradar los carotenoides ni los ácidos fenólicos propios del grano.
 
 ---

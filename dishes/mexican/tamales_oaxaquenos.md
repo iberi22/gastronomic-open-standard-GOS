@@ -95,6 +95,7 @@ Los Tamales Oaxaqueños se distinguen por estar envueltos en hoja de plátano en
 ---
 
 ## 🧪 Química de la Nixtamalización en el Tamal
+
 La masa de maíz nixtamalizado cocida al vapor en hojas de plátano sufre una retrogradación parcial del almidón enriquecida por la interacción de iones de calcio ($Ca^{2+}$). La alcalinización previa libera la niacina (Vitamina B3) libre y reduce los antinutrientes como fitatos, mejorando la digestibilidad proteica de la masa.
 
 ---
