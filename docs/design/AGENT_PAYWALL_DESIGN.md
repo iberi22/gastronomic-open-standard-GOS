@@ -5,7 +5,14 @@ Auditoría + diseño. **No es código de producción.** Fecha 2026-10-01 · domi
 ## 0. Hallazgos que condicionan todo
 
 1. **`site/astro.config.mjs:11` tiene `output: 'static'`** y ningún `APIRoute` exporta `prerender = false`. Todo endpoint se evalúa en build y se escribe como archivo plano en `dist/`. Por eso `POST /api/agent/pay` en prod responde **405, `content-length: 0`** — Astro nunca corre la función. `GET` al mismo archivo devuelve el mensaje de error del handler `GET`. Mismo fallo en `/api/entities/{x}`: devuelve HTML de 44 KB.
-2. **La columna vertebral del peaje ya existe y es correcta**: `worker/src/index.ts` (gateway `gos-api-gateway`) ya valida `x-api-key` contra D1 `gos-billing`, ya tiene rate limit KV de 100 req/día free, ya devuelve **402** en `/api/ai/infer` sin key, ya delega claves `swal_*` a billing central. **El problema es que no está desplegado**: `gos-api-gateway.workers.dev/api` → `000`, no resuelve.
+2. **La columna vertebral del peaje ya existe y es correcta**: `worker/src/index.ts` (gateway `gos-api-gateway`) ya valida `x-api-key` contra D1 `gos-billing`, ya tiene rate limit KV de 100 req/día free, ya devuelve **402** en `/api/ai/infer` sin key, ya delega claves `swal_*` a billing central. **CORREGIDO 2026-10-01 tras verificar en producción**: el gateway **SÍ está desplegado y vivo**. La URL real es `https://gos-api-gateway.iberi22.workers.dev` (200); el host `gos-api-gateway.workers.dev` no resuelve porque el subdominio no está habilitado en la cuenta, no porque falte el despliegue. `wrangler deployments list` muestra 2 despliegues: 2026-09-07 y 2026-10-01T19:02:51Z. `wrangler whoami` autentica como `iberi22@gmail.com` vía `CLOUDFLARE_API_TOKEN`.
+
+Lo que hace hoy, medido con curl:
+- proxy transparente al origen, con `ORIGIN_URL = "https://gos-site.pages.dev"` (host viejo, pendiente de corregir)
+- `/api/agent/knowledge.json` → **200 `application/json`** y devuelve un bloque `paywall` que el sitio directo **no** tiene: `{"endpoint":"/api/agent/pay","tier":"socio","handling":"20% sobre infra 100% + AI*1.1 (Cloudflare Workers AI)","billing_lib":"site/src/lib/billing.ts"}`
+- rutas sin proxyear (`/`, `/health`, `/v1/status`) devuelven el HTML del sitio, no 404: el fallback del origen las absorbe
+
+Corrección pendiente: `ORIGIN_URL` debe apuntar a `https://gos.swal.network`; hoy el gateway sirve el despliegue de Pages, que ya no es el dominio canónico.
 3. **El producto vendible ya existe en el repo y hoy no está publicado**: ver §1.
 
 Estado verificado por curl hoy: funcionan `/api/index.json`, `/api/all.json` (1.299.954 B), `/api/with-metadata.json` (**byte-idéntico a `all.json`, es un alias**), `/api/by-country/catalog.json` (90.942 B), `/api/agent/knowledge.json` (589 B), `/api/evidence.json` (23.705 B), `/api/substances.json`, `/api/vectors/*.json` (**11.9 MB, 1.055 embeddings de 384 dim, público**), `/llms-full.txt` (43.375 B).
