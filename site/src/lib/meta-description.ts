@@ -30,7 +30,7 @@ export function isDescriptionLength(text: string): boolean {
   return text.length >= DESC_MIN && text.length <= DESC_MAX
 }
 
-/** group del frontmatter (inglés,Controlled Vocabulary) → español legible. */
+/** group del frontmatter (inglés, controlled vocabulary) → español legible. */
 const GROUP_ES: Record<string, string> = {
   Vegetable: 'vegetal',
   Fruit: 'fruta',
@@ -72,7 +72,7 @@ const fmt = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1))
 
 /**
  * Rellena hasta DESC_MIN con los datos que queden, en orden de utilidad, y
- * solo al final usa una cola generica. Nunca inventa cifras: los remiendos son
+ * solo al final usa una cola genérica. Nunca inventa cifras: los remiendos son
  * nombre cientifico, region o la mencion del grafo.
  *
  * El bucle es necesario porque un solo pase no basta: con un solo campo
@@ -94,10 +94,13 @@ function padTo(
   return out
 }
 
-/** Colas genicas para rellenar cuando los datos reales no alcanzan el minimo. */
+/** Colas genéricas para rellenar cuando los datos reales no alcanzan el minimo. */
+// Suficientes para el caso mas corto medido (108 chars: "Sal (condimento)"):
+// la lista se recorre en orden y se detiene al llegar a DESC_MIN.
 const FILLER = [
   'Ficha abierta en el grafo de GOS.',
   'Se puede consultar y citar desde la base abierta de GOS.',
+  'Datos abiertos y citables por maquinas y por humanos.',
 ]
 
 export interface IngredientDescInput {
@@ -107,7 +110,7 @@ export interface IngredientDescInput {
   nutrition?: Record<string, unknown>
   micronutrients?: Record<string, unknown>
   conditions?: string[]
-  /** Ficha en pending_review: los camposscientificos/nutricionales son TODO/0. */
+  /** Ficha en pending_review: los campos científicos/nutricionales son TODO/0. */
   pendingReview?: boolean
 }
 
@@ -122,10 +125,9 @@ export function ingredientDescription(input: IngredientDescInput): string {
 
   if (input.pendingReview) {
     // Honesto: la ficha existe y esta en revision, no se le atribuye nada.
-    // "Uncategorized" ya traduce a "ingrediente"; decir
+    // "Uncategorized" ya traduce a "ingrediente": decir
     // "ingrediente ingrediente" repetia la palabra en las 515.
-    const label =
-      groupES === 'ingrediente' ? 'ingrediente' : `ingrediente ${groupES}`
+    const label = groupES === 'ingrediente' ? groupES : `ingrediente ${groupES}`
     return clampDescription(
       `${name}, ${label} registrado en GOS y en revision de datos: su composicion, nutricion y compuestos bioactivos aun no fueron verificados cientificamente.`,
     )
@@ -148,9 +150,7 @@ export function ingredientDescription(input: IngredientDescInput): string {
     ? conditionES(String(input.conditions[0]))
     : undefined
 
-  const tail = condition
-    ? `Componentes asociados a ${condition}.`
-    : 'Ficha abierta en el grafo gastronomico global de GOS.'
+  const tail = condition ? `Componentes asociados a ${condition}.` : FILLER[0]
 
   // Relleno honesto con lo que exista: micronutriente real o nombre cientifico.
   const micro = Object.entries(input.micronutrients ?? {}).find(
@@ -209,7 +209,7 @@ export function countryIndexDescription(
 /** Description de /recipes (indice). */
 export function recipeIndexDescription(recipeCount: number): string {
   return clampDescription(
-    `${recipeCount} recetas de ${'todo el mundo'} con region, dificultad, ingredientes y pasos de preparacion, conectadas a su perfil nutricional y a la ciencia que las sustenta.`,
+    `${recipeCount} recetas de todo el mundo con región, dificultad, ingredientes y pasos de preparacion, conectadas a su perfil nutricional y a la ciencia que las sustenta.`,
   )
 }
 

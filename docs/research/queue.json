@@ -175,7 +175,7 @@
     {
       "day": 10,
       "id": "gingerol-ayurveda",
-      "status": "pending",
+      "status": "done",
       "lang": "HI/EN",
       "topic": "jengibre ayurvédico",
       "title": "Ginger gingerol roundup",
@@ -187,7 +187,9 @@
       "q1": "अदरक स्वास्थ्य लाभ आयुर्वेद",
       "q2": "gingerol shogaol clinical trial inflammation",
       "q3": "ginger digestive systematic review",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov ginger"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov ginger",
+      "issue": 334,
+      "dispatched_at": "2026-10-01T11:00:32.362Z"
     },
     {
       "day": 11,
