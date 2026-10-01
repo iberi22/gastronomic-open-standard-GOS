@@ -17,11 +17,12 @@ health_registry:
     mechanism: "Phytoestrogen binds ERβ, inhibits osteoclasts"
     evidence_level: "Medium"
     studies:
-      - title: "Genistein and bone health: meta-analysis"
-        source: "J Nutr"
-        year: 2009
-        doi: "10.3945/jn.109.107979"
-        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
+      - title: "Soy phytoestrogen genistein increases bone mineral density in postmenopausal women"
+        source: "BMJ"
+        year: 2007
+        doi: "10.1136/bmj.39287.690475.ad"
+        evidence_type: clinical trial report
+        doi_status: verified
 ---
 
 ![Genisteína](/images/substances/genisteina.jpg)
