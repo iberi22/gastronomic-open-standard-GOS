@@ -76,6 +76,28 @@ const imageUrl = image
       /* scrollbar antigravity */
       * { scrollbar-width: thin; scrollbar-color: #27272A transparent; }
       :root[data-theme="antigravity-light"] * { scrollbar-color: #D6D3D1 transparent; }
+
+      /* Accesibilidad: --swal-text-muted y --swal-accent vienen de @swal/ui con
+         valores que no llegan a WCAG AA sobre nuestras superficies. Medido con
+         composicion de alfa real y contra los 4 fondos que usa el sitio
+         (page, card, elevated, elevated-850):
+           muted  #6b7280 -> 3.96:1 sobre card, 3.3:1 sobre elevated
+           accent #8b5cf6 -> 4.10:1 como texto sobre elevated
+         Se suben al primer tono que pasa 4.5:1 en los cuatro, sin tocar el
+         paquete. Afecta a 12 archivos, casi todos con texto de 9-12px. */
+      :root[data-theme="antigravity"] {
+        --swal-text-muted: #808790;
+        /* Acento como texto. El boton primario usa --swal-btn-bg aparte. */
+        --swal-accent-text: #9a68f9;
+        --swal-btn-bg: #7c3aed;
+      }
+      :root[data-theme="antigravity-light"] { --swal-text-muted: #6e6863; }
+
+      /* .swal-btn primary viene de @swal/ui con el acento como fondo: blanco
+         sobre #8b5cf6 da 4.23:1. Se le pasa el fondo corregido. */
+      .swal-btn.primary, .swal-btn.swal-btn-primary {
+        background: var(--swal-btn-bg, var(--swal-accent)) !important;
+      }
     </style>
     <script is:inline>
       // dual theme persistence: antigravity | antigravity-light
@@ -117,7 +139,7 @@ const imageUrl = image
           <button id="gos-theme-toggle" class="w-9 h-9 rounded-lg border flex items-center justify-center hover:opacity-80 transition" style="background: var(--swal-surface); border-color: var(--swal-border); color: var(--swal-text-secondary);" aria-label="Toggle theme" title="Cambiar tema">
             <span id="gos-theme-icon">◐</span>
           </button>
-          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-accent);">Abrir Grafo</a>
+          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-btn-bg, var(--swal-accent));">Abrir Grafo</a>
         </div>
       </div>
       <!-- mobile nav -->

@@ -480,8 +480,10 @@ function renderSigma(
     --g-ink: #171717;
     --g-rgb: 23, 23, 23;
     --g-hair: color-mix(in srgb, var(--g-ink) 16%, transparent);
-    --g-muted: color-mix(in srgb, var(--g-ink) 76%, transparent);
-    --g-faint: color-mix(in srgb, var(--g-ink) 60%, transparent);
+    --g-muted: color-mix(in srgb, var(--g-ink) 82%, transparent);
+    /* 60% daba 4.40:1 con el ink oscuro (#e5e5e5 sobre #0f0f10) y fallaba
+       AA en textos de 9.5-10px. 76% deja el mismo margen que secondary. */
+    --g-faint: color-mix(in srgb, var(--g-ink) 76%, transparent);
     --g-sheet: color-mix(in srgb, var(--g-ink) 4%, var(--g-paper));
     --g-hover: color-mix(in srgb, var(--g-ink) 6%, transparent);
     position: relative;

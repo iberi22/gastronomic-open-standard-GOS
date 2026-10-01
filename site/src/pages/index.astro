@@ -374,7 +374,9 @@ const highlights = [
         <div class="swatch" style="background:#FDFCF8; color:#1C1917; border-color: rgba(28,25,23,0.08);">
           <span>hueso</span><code>#FDFCF8</code>
         </div>
-        <div class="swatch" style="background:#8B5CF6; color:white;">
+        {/* Muestra de color: el texto va sobre el color que representa, asi que
+            blanco no sirve (4.23:1). Negro da 4.76:1 sobre #8B5CF6. */}
+        <div class="swatch" style="background:#8B5CF6; color:#0B0B0C;">
           <span>accent</span><code>#8B5CF6</code>
         </div>
       </div>
@@ -484,7 +486,9 @@ const highlights = [
   .lead strong { color: var(--swal-text); }
   .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
   .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid var(--swal-border); }
-  .btn.primary { background: var(--swal-accent); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
+  /* --swal-btn-bg lo define Layout.astro para todo el sitio (AA con texto
+     blanco en tema oscuro). Aqui solo se consume. */
+  .btn.primary { background: var(--swal-btn-bg, var(--swal-accent)); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
   .btn.ghost { background: var(--swal-surface); color: var(--swal-text); }
   .meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
   .pill { font-size:11px; color: var(--swal-text-muted); background: var(--swal-surface); border:1px solid var(--swal-border); padding:5px 10px; border-radius:999px; font-family: var(--swal-font-mono); }
@@ -500,7 +504,7 @@ const highlights = [
   .rels { width:100%; border-collapse:collapse; margin-top:12px; font-size:12.5px; }
   .rels th { text-align:left; font-weight:600; color: var(--swal-text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; padding:0 8px 7px 0; border-bottom:1px solid var(--swal-border); }
   .rels td { padding:7px 8px 7px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); vertical-align:top; }
-  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); white-space:nowrap; }
+  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); white-space:nowrap; }
   .rels td.path { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-secondary); white-space:nowrap; }
   .rels td.reads { color: var(--swal-text-secondary); line-height:1.5; }
   .rels td.num { text-align:right; font-variant-numeric: tabular-nums; color: var(--swal-text-muted); white-space:nowrap; }
@@ -533,12 +537,14 @@ const highlights = [
   .ev-list li { display:flex; flex-direction:column; gap:2px; }
   .ev-name { font-size:13px; color: var(--swal-text); text-decoration:none; font-weight:550; }
   .ev-name:hover { color: var(--swal-accent); text-decoration:underline; }
-  .ev-study { font-size:11px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
-  .ev-more { display:block; margin-top:10px; font-size:11px; color: var(--swal-text-muted); }
+  /* secondary, no muted: muted (#a8a29e) da 2.52:1 sobre tarjeta blanca y
+     falla WCAG AA. Para texto de 11-12px hace falta secondary (#57534e). */
+  .ev-study { font-size:11px; color: var(--swal-text-secondary); font-family: var(--swal-font-mono); }
+  .ev-more { display:block; margin-top:10px; font-size:11px; color: var(--swal-text-secondary); }
   .evidence-note { margin-top:14px; padding:13px 15px; border:1px solid var(--swal-border); border-left:3px solid var(--swal-accent); border-radius:12px; background: var(--swal-surface); color: var(--swal-text-secondary); font-size:12.5px; line-height:1.65; }
   .evidence-note strong { color: var(--swal-text); }
-  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); }
-  .hint { color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin-top:10px; }
+  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); }
+  .hint { color: var(--swal-text-secondary); font-size:12px; line-height:1.6; margin-top:10px; }
   .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
   .swatches { display:flex; gap:10px; margin-top:12px; }
   .swatch { flex:1; border:1px solid; border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; font-family: var(--swal-font-mono); font-size:12px; }
