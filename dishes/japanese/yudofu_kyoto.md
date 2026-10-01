@@ -115,5 +115,6 @@ Con origen en la cocina vegetariana Zen (Shojin Ryori) alrededor del templo Nanz
 ## 🔬 Sinergia Bioquímica y Extracción Mínima de Umami
 
 En la preparación Zen del Yudofu, la extracción de L-glutamato del alga Kombu (*Saccharina japonica*) ocurre mediante una infusión suave a baja temperatura (60°C - 65°C):
+
 * **L-Glutamato Libre:** El alga kombu contiene de 1200 a 3100 mg/100g de L-glutamato libre. Mantener la temperatura por debajo del punto de ebullición maximiza la disolución de las sales de glutamato mientras inhibe la liberación de alginatos amargos y polifenoles astringentes.
 * **Activación Receptor T1R1/T1R3:** El caldo infusionado estimula directamente los receptores de umami en la papila gustativa lingual, realzando el dulzor natural de las proteínas de la soja.

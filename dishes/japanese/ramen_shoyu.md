@@ -112,6 +112,7 @@ El Shoyu Ramen es el estilo clásico de Tokio con caldo claro a base de pollo, c
 ## 🔬 Sinergia Compleja de Umami y Nucleótidos
 
 El caldo del Shoyu Ramen integra múltiples fuentes complejas de sabor umami:
+
 * **Salsa de Soja Shoyu (Tare):** Contiene entre 700 y 1200 mg/100g de L-glutamato libre producido por la hidrólisis enzimática de proteínas durante la fermentación con *Aspergillus oryzae*.
 * **Dashi Marino (Kombu y Katsuobushi):** Aporta L-glutamato (kombu) e inosinato monofosfato (IMP del katsuobushi, 470 - 800 mg/100g).
 * **Caldo de Huesos y Cerdo/Pollo:** La cocción prolongada descompone el colágeno y libera nucleótidos y aminoácidos libres adicionales, generando una potente sinergia de estimulación alostérica sobre los heterodímeros gustativos T1R1/T1R3.

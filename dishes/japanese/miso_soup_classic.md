@@ -112,6 +112,7 @@ La Sopa de Miso es la espina dorsal de cualquier comida tradicional japonesa, co
 ## 🔬 Sinergia Bioquímica y Ciencia del Umami
 
 La sopa de miso es un ejemplo emblemático de sinergia de umami en la gastronomía japonesa:
+
 * **Aporte de Glutamato:** La pasta de miso (200 - 600 mg/100g) y el alga kombu del dashi (1200 - 3000 mg/100g) aportan elevadas concentraciones de ácido L-glutámico libre.
 * **Potenciación por Ribonucleótidos:** El katsuobushi integrado en el dashi aporta 5'-inosina monofosfato (IMP, 470 - 800 mg/100g), el cual se une alostéricamente al receptor gustativo T1R1/T1R3 en la lengua.
 * **Respuesta Neurofisiológica:** Esta interacción simultánea incrementa drásticamente la afinidad del receptor por el glutamato, multiplicando la percepción del sabor sabroso sin requerir adición excesiva de sal de mesa.
