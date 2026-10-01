@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content'
 import dishImages from '../../data/dish-images.json'
 import Layout from '../../layouts/Layout.astro'
 import { resolveDishHero } from '../../lib/images'
+import { extractInstructionTexts } from '../../lib/recipe-instructions'
+import { getRecipeMarkdown } from '../../lib/recipe-markdown'
 import {
   buildIngredientLinker,
   countryFromSlug,
@@ -104,6 +106,13 @@ const jsonLd = recipeJsonLd({
   cookTime: cook ? `PT${cook.replace(/\D/g, '')}M` : undefined,
   recipeYield: servings ? `${servings} servings` : undefined,
   recipeIngredient: linked.map((l) => l.name),
+  // 495/495 recetas emitian JSON-LD sin recipeInstructions (auditoria
+  // 2026-10-01): el campo es requerido para el rich result y el dato ya
+  // estaba en el markdown. extractInstructionTexts solo devuelve la lista
+  // numerada; si no hay pasos, el campo se omite.
+  recipeInstructions: extractInstructionTexts(
+    await getRecipeMarkdown(entry.id),
+  ),
   recipeCategory: categories[0] || 'Main dish',
   recipeCuisine: country || data.region || 'Colombian',
   keywords: tags,
