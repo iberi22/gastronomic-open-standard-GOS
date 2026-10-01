@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
+import RecipeVault from '../../components/RecipeVault.svelte'
 import SearchBar from '../../components/SearchBar.astro'
 // site/src/pages/recipes/index.astro — searchable + faceted recipe catalog
 import Layout from '../../layouts/Layout.astro'
@@ -82,6 +83,8 @@ const difficultyFacets = [
     facets={[...regionFacets, ...difficultyFacets]}
     fuseKeys={['name', 'region', 'scientific_name', 'health']}
   />
+
+  <RecipeVault client:visible />
 
   <p class="back-link"><a href={`${base}/`}>← Volver al inicio</a></p>
 </Layout>
