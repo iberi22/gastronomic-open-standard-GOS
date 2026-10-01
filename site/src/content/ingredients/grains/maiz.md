@@ -41,13 +41,14 @@ health_registry:
   - condition: "Niacin Bioavailability & Pellagra Prevention"
     mechanism: "Thermal-alkaline processing (nixtamalization) cleaves hemicellulose ester bonds, converting bound niacytin into free bioavailable niacin."
     compounds: ["Free Niacin (Vitamin B3)"]
-    evidence_level: "High"
+    evidence_level: "Medium"
     studies:
       - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
         source: "Comprehensive Reviews in Food Science and Food Safety"
         year: 2016
         doi: "10.1111/1541-4337.12216"
         url: "https://doi.org/10.1111/1541-4337.12216"
+        evidence_note: "Narrative review of measured nutrient content across processing methods. Establishes that nixtamalization raises free niacin, but is not an intervention measuring niacin status or pellagra outcomes."
   - condition: "Mycotoxin Detoxification"
     mechanism: "Alkaline treatment hydrolyzes ester bonds and ring structures of toxic aflatoxins and fumonisins, drastically reducing dietary mycotoxin exposure."
     compounds: ["Alkaline-hydrolyzed mycotoxins"]
@@ -63,16 +64,18 @@ health_registry:
         year: 2025
         doi: "10.3390/toxins17110527"
         url: "https://doi.org/10.3390/toxins17110527"
+        evidence_note: "Human biomonitoring intervention with measured exposure markers, so this entry rests on the intervention study rather than on the accompanying review."
   - condition: "Calcium Fortification & Digestibility"
     mechanism: "Alkaline steeping enriches corn masa with calcium ions and modifies starch gelatinization to form beneficial resistant starch."
     compounds: ["Bioavailable Calcium"]
-    evidence_level: "High"
+    evidence_level: "Low"
     studies:
       - title: "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas"
         source: "Plant Foods Hum Nutr"
         year: 2025
         doi: "10.1007/s11130-024-01245-z"
         url: "https://doi.org/10.1007/s11130-024-01245-z"
+        evidence_note: "In vitro digestibility assay. Supports a plausible mechanism for calcium retention and resistant-starch formation, not a demonstrated calcium bioavailability in humans."
 sources:
   - "USDA FoodData Central"
   - "PubMed - Nixtamalization Research Collection"
