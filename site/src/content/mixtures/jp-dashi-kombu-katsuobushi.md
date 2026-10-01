@@ -17,11 +17,11 @@ sources:
   - "Ajinomoto Umami Information Center"
   - "EFSA Journal - Re-evaluation of glutamic acid and glutamates"
 studies:
-  - title: "Synergistic effect of L-glutamate and 5'-ribonucleotides on the umami taste receptor T1R1/T1R3"
-    source: "Chemical Senses"
-    year: 1998
-    doi: "10.1093/chemse/23.4.471"
-    url: "https://pubmed.ncbi.nlm.nih.gov/9787123/"
+  - title: "The Importance of the Presence of a 5'-Ribonucleotide and the Contribution of the T1R1 + T1R3 Heterodimer in Taste Detection of l-Glutamate"
+    source: "The Journal of Neuroscience"
+    year: 2014
+    doi: "10.1523/JNEUROSCI.0417-14.2014"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25253867/"
   - title: "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor"
     source: "Biomed Research International"
     year: 2015
