@@ -21,7 +21,14 @@ health_registry:
         source: "Alt Med Rev"
         year: 2007
         doi: "10.1000/altmed.12.1.0"
-        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
+        evidence_type: sin identificar
+        # SIN EQUIVALENTE IDENTIFICABLE (verificado 2026-10-01, busqueda
+        # en Crossref por el titulo y el claim): el DOI 404, y ningun
+        # candidato tiene coherencia tematica suficiente con GERD. El
+        # comparador mas cercano (doi 10.1002/...sobre reflujo y limoneno)
+        # es murino y no sostiene la condicion clinica humana.
+        # Se mantiene unverified: NO se publica como evidencia verificada.
+        doi_status: unverified
 ---
 
 ![Limoneno](/images/substances/limoneno.jpg)

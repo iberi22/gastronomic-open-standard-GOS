@@ -14,20 +14,28 @@ health_registry:
   evidence_level: High
   mechanism: Inhibits drug-metabolizing enzymes (CYP3A4) and P-gp, increases bioavailability
   studies:
-  - doi: 10.4103/0975-9476.113033
-    source: J Ayurveda Integr Med
-    title: 'Piperine: bioenhancer for drug and nutrient absorption'
-    year: 2013
-    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
+    - doi: "10.1055/s-2006-957450"
+      source: "Planta Medica"
+      title: "Influence of Piperine on the Pharmacokinetics of Curcumin in Animals and Human Volunteers"
+      year: 1998
+      evidence_type: human trial + animal
+      doi_status: verified
+    - doi: "10.1007/s00228-016-2173-3"
+      source: "Eur J Clin Pharmacol"
+      title: "The influence of piperine on the pharmacokinetics of fexofenadine, a P-glycoprotein substrate, in healthy volunteers"
+      year: 2016
+      evidence_type: human trial
+      doi_status: verified
 - condition: Inflammation
   evidence_level: Medium
   mechanism: NF-kB suppression, antioxidant
   studies:
-  - doi: 10.1007/s00011-015-0824-3
-    source: Inflammation Res
-    title: Piperine anti-inflammatory review
-    year: 2015
-    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
+    - doi: "10.1007/s10753-012-9448-3"
+      source: "Inflammation"
+      title: "Anti-inflammatory Effect of Piperine in Adjuvant-Induced Arthritic Rats"
+      year: 2012
+      evidence_type: preclinical (rat)
+      doi_status: verified
 image_attribution: Pixabay — Piper nigrum
 name: Piperina
 sabor: Picante agudo aromático, activa TRPV1 y TRPA1 simultáneamente

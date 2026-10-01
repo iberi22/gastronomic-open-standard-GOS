@@ -11,14 +11,17 @@ discovery_year: 1819
 formula: C8H10N4O2
 health_registry:
 - condition: Fatigue / Alertness
-  evidence_level: High
+  evidence_level: Medium
   mechanism: Adenosine A1/A2A receptor antagonism
   studies:
-  - doi: 10.1007/s00213-010-1900-8
+  - doi: 10.1007/s00213-012-2917-4
     source: Psychopharmacology
-    title: Caffeine and cognitive performance meta-analysis
-    year: 2010
-    doi_status: unverified  # no resuelve en Crossref (404): revisar transcripcion
+    title: "Caffeine as an attention enhancer: reviewing existing assumptions"
+    year: 2012
+    evidence_type: narrative review
+    # Bajado de High a Medium: el DOI anterior no existia (404 en
+    # Crossref) y era un meta-analysis inventado. El sustituto es una
+    # revision narrativa (McLellan et al.), no un ensayo clinico.
 image_attribution: Pixabay — Coffea arabica
 name: Cafeína
 sabor: Amarga intensa, soluble agua caliente, bloquea adenosina

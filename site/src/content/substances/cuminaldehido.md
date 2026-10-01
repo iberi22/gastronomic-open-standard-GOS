@@ -15,22 +15,31 @@ image_attribution: "Pixabay — Cuminum cyminum seeds"
 health_registry:
   - condition: "Dyspepsia / Bloating"
     mechanism: "Increases amylase, protease, lipase activity"
-    evidence_level: "High"
+    # Bajado de High a Medium: el DOI anterior (10.1016/S0271-5317...) no
+    # existia en Crossref. El sustituto que si existe y encaja con el
+    # mecanismo (amilasa/lipasa pancreatica, cumin entre las especias) es
+    # in vitro sobre rata: preclinico, no evidencia clinica en humanos.
+    evidence_level: "Medium"
     studies:
-      - title: "Cumin and digestive enzyme stimulation"
-        source: "Nutrition Research"
-        year: 1999
-        doi: "10.1016/S0271-5317(99)00031-1"
-        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
+      - title: "In vitro influence of spices and spice-active principles on digestive enzymes of rat pancreas and small intestine"
+        source: "Food / Nahrung"
+        year: 2003
+        doi: "10.1002/food.200390091"
+        evidence_type: in vitro + rat
+        doi_status: verified
   - condition: "Irritable bowel"
     mechanism: "Carminative and spasmolytic"
     evidence_level: "Medium"
     studies:
-      - title: "Cumin extract and IBS symptoms: pilot"
-        source: "Middle East J Dig Dis"
-        year: 2013
-        doi: "10.17795/middleeastjdd-12123"
-        doi_status: unverified  # no resuelve en Crossref (404): sin equivalente identificable
+      - title: "The effect of Cuminum cyminum on the return of bowel motility after abdominal surgery: a triple-blind randomized clinical trial"
+        source: "BMC Complement Med Ther"
+        year: 2024
+        doi: "10.1186/s12906-024-04530-1"
+        evidence_type: randomized clinical trial
+        # POBLACION DISTINTA A LA DEL CLAIM: el ensayo es post-quirurgico
+        # (74 pacientes), no IBS. Sustituye por mecanismo carminativo, no por
+        # la misma condicion clinica. Se mantiene Medium.
+        doi_status: verified
 ---
 
 ![Cuminaldehído](/images/substances/cuminaldehido.jpg)
