@@ -53,11 +53,9 @@ def parse_sensory_block(fm: str) -> dict | None:
     KEYS = ("flavor", "texture", "aroma", "presentation")
     out: dict[str, list[str] | str] = {}
     key: str | None = None
-    i = start + 1
-    while i < len(lines):
-        raw = lines[i]
+
+    for raw in lines[start + 1 :]:
         if not raw.strip():
-            i += 1
             continue
         indent = len(raw) - len(raw.lstrip())
         stripped = raw.strip()
@@ -68,31 +66,25 @@ def parse_sensory_block(fm: str) -> dict | None:
         if indent == 2:
             name, sep, rest = stripped.partition(":")
             # `flavor:` -> rest vacio (es una lista). `presentation: >-` -> folded.
-            key = name.strip() if sep else None
-            if key in KEYS:
-                rest = rest.strip()
+            name = name.strip() if sep else ""
+            rest = rest.strip()
+            key = name if name in KEYS else None
+            if key:
                 out[key] = rest if rest and rest not in (">-", "|", ">") else []
-            else:
-                key = None
-            i += 1
             continue
         # indent >= 4: item de lista o continuacion de folded scalar
-        if key:
-            if stripped.startswith("- "):
-                bucket = out.get(key)
-                if not isinstance(bucket, list):
-                    bucket = []
-                    out[key] = bucket
-                bucket.append(stripped[2:].strip())
-            else:
-                prev = out.get(key)
-                joined = prev if isinstance(prev, str) else " ".join(prev or [])
-                out[key] = f"{joined} {stripped}".strip()
-        i += 1
+        if not key:
+            continue
+        if stripped.startswith("- "):
+            bucket = out.get(key)
+            if not isinstance(bucket, list):
+                bucket = out[key] = []
+            bucket.append(stripped[2:].strip())
+        else:
+            prev = out.get(key)
+            out[key] = f"{prev if isinstance(prev, str) else ' '.join(prev or [])} {stripped}".strip()
 
-    if not any(v for v in out.values()):
-        return None
-    return out
+    return out if any(out.values()) else None
 
 
 def render(sensory: dict) -> str:
