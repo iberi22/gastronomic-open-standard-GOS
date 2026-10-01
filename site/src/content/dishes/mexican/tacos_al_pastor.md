@@ -51,9 +51,9 @@ sensory:
 servings: 4
 source:
   date_retrieved: '2026-09-03'
-  name: Gastronomic Open Standard (GOS) Database
+  name: Animal Gourmet
   notes: Derived from GOS Database
-  url: pending
+  url: 'https://animalgourmet.com/2021/01/15/receta-de-tacos-al-pastor-caseros/'
 tags:
 - Mexican
 - GOS Catalog

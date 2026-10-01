@@ -160,3 +160,12 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de cazuela de mariscos del Pacífico - El Tiempo](https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935)
 - [Google Maps: Opiniones sobre cazuela de mariscos Pacífico](https://www.google.com/maps/search/cazuela+de+mariscos+pacifico)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/cazuela-de-mariscos)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Lácteo
+* **Textura:** Cremosa, Suave
+* **Aroma:** Marino, Herbal, Lácteo (coco)
+* **Presentación:** Se sirve en cazuela de barro, decorada con cilantro cimarrón y acompañada de arroz o patacones. Es el plato estrella en celebraciones del Pacífico.

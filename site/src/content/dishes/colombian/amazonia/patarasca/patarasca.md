@@ -152,3 +152,12 @@ La Patarasca es uno de los platos más emblemáticos de la Amazonía colombiana 
 - [Receta y contexto de Patarashca - Comida Peruana](https://www.comida-peruana.com/recetas/plato-principal/patarashca)
 - [TripAdvisor: Opiniones sobre Patarasca](https://www.tripadvisor.com/)
 - [Foro gastronómico: Experiencias con Patarasca](https://www.gastronomiacolombiana.com/foro/patarasca)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Herbal, Ahumado
+* **Textura:** Jugoso (pescado), Suave (relleno)
+* **Aroma:** 'Herbal (hojas, cilantro)', Ahumado, Fresco
+* **Presentación:** Se sirve envuelto en hojas, ideal para compartir en reuniones familiares o festividades amazónicas.

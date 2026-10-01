@@ -5,7 +5,7 @@ vitaminas ↔ sustancias bioactivas ↔ sabores ↔ técnicas ↔ afecciones ↔
 Los `.md` del repo SON la base de datos (405 platos, 552 ingredientes, 40 vitaminas,
 35 afecciones, 30 sustancias, 6 dietas). Astro 7 + Svelte 5 + Tailwind v4.
 
-En vivo: **https://gos-site.pages.dev** (Cloudflare Pages, único deploy canónico)
+En vivo: **https://gos.swal.network** (Cloudflare Pages, único deploy canónico)
 
 ## Finalidad
 
@@ -28,7 +28,7 @@ Gates: `pnpm run lint` (Biome + markdownlint + manuallint), `astro check`,
 
 ## API gratuita y vectores
 
-Base `https://gos-site.pages.dev/api` — ver [API_README.md](./API_README.md).
+Base `https://gos.swal.network/api` — ver [API_README.md](./API_README.md).
 Vectores en bloque: snapshot versionado en `/api/vectors/` (index.json + shards,
 regenerado en cada build por `site/scripts/export-vectors.mjs`).
 
@@ -36,7 +36,7 @@ regenerado en cada build por `site/scripts/export-vectors.mjs`).
 
 GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 383 platos, 30 substancias**).
 
-- **Manifiesto**: [`/api/vectors/index.json`](https://gos-site.pages.dev/api/vectors/index.json)
+- **Manifiesto**: [`/api/vectors/index.json`](https://gos.swal.network/api/vectors/index.json)
 - **Vectores Fragmentados**: `/api/vectors/vectors-1.json`, `vectors-2.json` (<10MB cada archivo)
 - **Modelo por Defecto**: `Xenova/all-MiniLM-L6-v2` (384 dimensiones)
 - **Esquema de Registro**: `{ "id": string, "type": "ingredient"|"dish"|"substance", "text": string, "embedding": number[] }`

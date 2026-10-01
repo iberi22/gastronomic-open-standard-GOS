@@ -139,3 +139,11 @@ Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés y Provi
 
 - [Facebook: Diversidad de platos isleños](https://www.facebook.com/ViajarOlimpica/videos/san-andr%C3%A9s-sin-duda-alguna-tiene-diversidad-de-platos-en-su-gastronom%C3%ADa-tal-es-e/5683439221673745/)
 - [TripAdvisor: Foros y opiniones](https://www.tripadvisor.com.ar/ShowTopic-g297482-i3902-k7119826-Comidas_tipicas-San_Andres_Island_San_Andres_and_Providencia_Department.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Marino, Especiado
+* **Textura:** Crujiente exterior, Pollo tierno
+* **Aroma:** Fritura de pescado

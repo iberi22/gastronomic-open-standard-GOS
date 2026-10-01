@@ -134,3 +134,12 @@ El Casabe es un pan plano ancestral elaborado a base de yuca amarga, tradicional
 - [DelAmazonas: Historia y preparación del casabe](https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/)
 - [GreenForestEcoLodge: Importancia del casabe](https://www.greenforestecolodge.com/blog/importancia-del-casabe)
 - [TripAdvisor: Opiniones sobre Casabe](https://www.tripadvisor.com.mx/ShowUserReviews-g664838-d1049853-r55338727-Casabe-Cabo_Rojo_Puerto_Rico.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Neutro, Ligeramente amargo
+* **Textura:** Crujiente
+* **Aroma:** Tostado, Terroso
+* **Presentación:** Se sirve en discos grandes y quebradizos, ideal para compartir y acompañar comidas amazónicas e indígenas.

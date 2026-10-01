@@ -143,3 +143,12 @@ El Tacacho con Cecina es un plato emblemático de la Amazonía, especialmente po
 - [WebTurismoPeru: Tacacho con Cecina](https://webturismoperu.com/tacacho-con-cecina-la-delicia-de-la-selva-amazonica-que-debes-probar-ya/)
 - [PeruSabroso: Receta tradicional](https://perusabroso.net/cocina-regional/tacacho-cecina-desayuno-amazonico-conquistara-tu-paladar/)
 - [MiRecetaDeHoy: Consejos y variantes](https://mirecetadehoy.com/receta-tacacho-con-cecina/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Ligeramente dulce (si se usa plátano maduro)
+* **Textura:** Suave (tacacho), Crujiente (cecina)
+* **Aroma:** Ahumado (cecina), Tostado (plátano), Lácteo (manteca)
+* **Presentación:** Se sirve en bolas o discos, ideal para compartir en desayunos o reuniones familiares.

@@ -4,8 +4,8 @@ region: Puebla
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: El Universal Menú
+  url: 'https://www.eluniversal.com.mx/menu/receta-de-chiles-en-nogada-tradicional-de-puebla/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

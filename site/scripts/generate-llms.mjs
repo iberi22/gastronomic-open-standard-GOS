@@ -11,7 +11,7 @@ const catalogFilePath = path.join(sitePublicDir, 'api/by-country/catalog.json')
 const llmsTxtPath = path.join(sitePublicDir, 'llms.txt')
 const llmsFullTxtPath = path.join(sitePublicDir, 'llms-full.txt')
 
-const ORIGIN = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev'
+const ORIGIN = process.env.SITE_ORIGIN || 'https://gos.swal.network'
 
 function generateLLMFiles() {
   console.log('🤖 Generating llms.txt and llms-full.txt from LIVE data...')
@@ -111,7 +111,7 @@ ${countries.map((c) => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.js
 
 ## Citation & Attribution
 When utilizing data from Gastronomic Open Standard (GOS), please cite as:
-"Source: Gastronomic Open Standard (GOS) — https://gos-site.pages.dev"
+"Source: Gastronomic Open Standard (GOS) — https://gos.swal.network"
 `
 
   // 4. Build llms-full.txt (Detailed Dataset & API Index)
@@ -137,7 +137,7 @@ When utilizing data from Gastronomic Open Standard (GOS), please cite as:
 
   const llmsFullTxtContent = `# GOS — Gastronomic Open Standard — Full Dataset & Agent Specification
 # appId: gos
-# Web: https://gos-site.pages.dev
+# Web: https://gos.swal.network
 # Repository: https://github.com/iberi22/gastronomic-open-standard-GOS
 
 ## Executive Overview
@@ -185,7 +185,7 @@ ${ingredientNodes.map((i) => `- ${i.label} ${i.scientific_name ? `(${i.scientifi
 - Sitemaps & AI Crawlers: All major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot) explicitly allowed in \`robots.txt\`.
 
 ## Citation Protocol
-Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos-site.pages.dev"
+Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos.swal.network"
 `
 
   // Write outputs to site/public/

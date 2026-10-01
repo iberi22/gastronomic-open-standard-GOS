@@ -4,8 +4,8 @@ region: Yucatán
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2021/01/27/cochinita-pibil-receta-tradicional-yucateca/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:
@@ -20,6 +20,17 @@ tags:
   - Mexican
   - GOS Catalog
   - Top 20
+studies:
+  - title: "Peppers and their constituents against obesity"
+    source: "Biologia Futura"
+    year: 2023
+    doi: "10.1007/s42977-023-00174-3"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37493973/"
+  - title: "Capsaicin camphor and caffeic acid reduce adipogenesis and promote lipolysis with TRPV1 involvement"
+    source: "Scientific Reports"
+    year: 2025
+    doi: "10.1038/s41598-025-31073-3"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41331337/"
 main_ingredients:
   - Carne de cerdo (cabeza de lomo)
   - Pasta de achiote

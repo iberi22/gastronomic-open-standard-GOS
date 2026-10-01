@@ -1,10 +1,18 @@
 User-agent: *
 Allow: /
 
+# Agentes de IA: GOS es un estandar abierto y su contenido esta pensado
+# para ser consultado por maquinas. Se permite el rastreo completo.
 User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
@@ -16,4 +24,17 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://gos-site.pages.dev/sitemap.xml
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Canales de descubrimiento para agentes. Empezar por llms.txt.
+#   /api/knowledge.json  indice de endpoints
+#   /api/evidence.json  indice de evidencia cientifica con DOI
+#   /graph-data.json     grafo completo (4499 nodos, 13075 aristas)
+# El sitemap lo genera site/scripts/generate-sitemap.js como sitemap.xml
+# (un unico <urlset>, no un indice). Ojo: /sitemap-index.xml responde 200 con
+# la pagina de fallback de Astro, no con un indice real.
+Sitemap: https://gos.swal.network/sitemap.xml

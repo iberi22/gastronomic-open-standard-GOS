@@ -738,6 +738,1026 @@
     ]
   },
   {
+    "country": "american",
+    "count": 35,
+    "recipes": [
+      {
+        "id": "american/apple_pie_traditional",
+        "title": "Traditional American Apple Pie",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/bbq_pork_ribs",
+        "title": "St. Louis Style BBQ Pork Ribs",
+        "region": "Missouri / Memphis",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/biscuits_and_gravy",
+        "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
+        "region": "Sur de Estados Unidos",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/brisket_texas_style",
+        "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
+        "region": "Texas",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "american/brunswick_stew",
+        "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
+        "region": "Virginia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/buffalo_chicken_wings",
+        "title": "Buffalo Chicken Wings",
+        "region": "Buffalo, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/chicken_and_waffles",
+        "title": "Chicken and Waffles (Pollo Frito con Waffles)",
+        "region": "Sur de Estados Unidos",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "american/chicken_fried_steak",
+        "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
+        "region": "Texas",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "american/chili_verde_new_mexico",
+        "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
+        "region": "Nuevo México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/clam_chowder_boston",
+        "title": "New England Clam Chowder",
+        "region": "Boston, MA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/clam_chowder_manhattan",
+        "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
+        "region": "Nueva York",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/classic_cheeseburger",
+        "title": "Classic American Cheeseburger",
+        "region": "Texas / California",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/cobbler_de_melocoton",
+        "title": "Georgia Peach Cobbler",
+        "region": "Georgia",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/collard_greens_southern",
+        "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
+        "region": "Sur de Estados Unidos",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/cornbread_southern",
+        "title": "Southern Skillet Cornbread",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/crawfish_boil_louisiana",
+        "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
+        "region": "Luisiana",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "american/eggs_benedict",
+        "title": "Eggs Benedict",
+        "region": "Nueva York, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/fried_chicken_southern",
+        "title": "Southern Crispy Fried Chicken",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/gumbo_louisiana",
+        "title": "Louisiana Seafood Gumbo",
+        "region": "Nueva Orleans, LA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/jambalaya_cajun",
+        "title": "Cajun Jambalaya",
+        "region": "Nueva Orleans, LA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/key_lime_pie",
+        "title": "Florida Key Lime Pie",
+        "region": "Florida Keys",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/lobster_roll_maine",
+        "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
+        "region": "Maine",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/macaroni_and_cheese",
+        "title": "Baked Macaroni and Cheese",
+        "region": "Sur de EE.UU.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/meatloaf_with_glaze",
+        "title": "Classic Glazed Meatloaf",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pancakes_maple_syrup",
+        "title": "Fluffy Pancakes con Maple Syrup",
+        "region": "EE.UU. Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pecan_pie_traditional",
+        "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
+        "region": "Sur de Estados Unidos",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/philly_cheesesteak",
+        "title": "Philly Cheesesteak",
+        "region": "Filadelfia, PA",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/po_boy_shrimp",
+        "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
+        "region": "Luisiana",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pot_roast_american",
+        "title": "Classic American Pot Roast",
+        "region": "Medio Oeste",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/pulled_pork_sandwich",
+        "title": "Carolina Pulled Pork Sandwich",
+        "region": "Carolina del Norte",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/reuben_sandwich",
+        "title": "Classic Reuben Sandwich",
+        "region": "Nueva York, NY",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/shrimp_and_grits",
+        "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
+        "region": "Carolina del Sur",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "american/st_louis_ribs_bbq",
+        "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
+        "region": "Misuri",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "american/tennessee_pulled_chicken",
+        "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
+        "region": "Tennessee",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "american/texas_chili_con_carne",
+        "title": "Texas Chili con Carne",
+        "region": "Texas",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "indian",
+    "count": 35,
+    "recipes": [
+      {
+        "id": "indian/aloo_gobi",
+        "title": "Aloo Gobi",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/baingan_bharta",
+        "title": "Baingan Bharta",
+        "region": "Punjab / Norte de la India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/biryani_hyderabadi",
+        "title": "Hyderabadi Biryani",
+        "region": "Hyderabad",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/bisi_bele_bath",
+        "title": "Bisi Bele Bath",
+        "region": "Karnataka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "indian/butter_chicken",
+        "title": "Butter Chicken (Murgh Makhani)",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chana_masala",
+        "title": "Chana Masala",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chicken_korma",
+        "title": "Chicken Korma",
+        "region": "Mogolla",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/chicken_tikka_masala",
+        "title": "Chicken Tikka Masala",
+        "region": "Punjab / U.K.",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/dal_makhani",
+        "title": "Dal Makhani",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/dhokla_gujarati",
+        "title": "Dhokla Gujarati",
+        "region": "Gujarat",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/dosa_masala",
+        "title": "Masala Dosa",
+        "region": "Sur de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/fish_amritsari",
+        "title": "Amritsari Fish Fry",
+        "region": "Amritsar",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/gulab_jamun",
+        "title": "Gulab Jamun",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/hyderabadi_haleem",
+        "title": "Hyderabadi Haleem",
+        "region": "Telangana / Hyderabad",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "indian/idli_sambar",
+        "title": "Idli Sambar",
+        "region": "Tamil Nadu / Sur de la India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/kathi_roll_kolkata",
+        "title": "Kathi Roll de Kolkata",
+        "region": "Bengala Occidental / Kolkata",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/kheer_de_arroz",
+        "title": "Kheer de Arroz",
+        "region": "Pan-India",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "indian/litti_chokha",
+        "title": "Litti Chokha",
+        "region": "Bihar",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "indian/malai_kofta",
+        "title": "Malai Kofta",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/misal_pav",
+        "title": "Misal Pav",
+        "region": "Maharashtra",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "indian/naan_de_ajo",
+        "title": "Ajo Naan (Pan Naan)",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/palak_paneer",
+        "title": "Palak Paneer",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/paneer_butter_masala",
+        "title": "Paneer Butter Masala",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/pani_puri",
+        "title": "Pani Puri (Golgappa)",
+        "region": "Mumbai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/pav_bhaji",
+        "title": "Pav Bhaji",
+        "region": "Mumbai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/poha_indori",
+        "title": "Indori Poha",
+        "region": "Madhya Pradesh / Indore",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "indian/rajma_chawal",
+        "title": "Rajma Chawal",
+        "region": "Norte de la India / Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/rasam_de_tomate",
+        "title": "Rasam de Tomate",
+        "region": "Tamil Nadu / Sur de la India",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "indian/rasgulla",
+        "title": "Rasgulla",
+        "region": "Bengala Occidental / Odisha",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "indian/rogan_josh",
+        "title": "Rogan Josh de Cordero",
+        "region": "Cachemira",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/samosa_de_patata",
+        "title": "Samosa de Patata y Guisantes",
+        "region": "Norte de India",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/tandoori_chicken",
+        "title": "Tandoori Chicken",
+        "region": "Punjab",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/thalipeeth",
+        "title": "Thalipeeth",
+        "region": "Maharashtra",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/vada_pav",
+        "title": "Vada Pav",
+        "region": "Bombay / Mumbai",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "indian/vindaloo_de_cerdo",
+        "title": "Vindaloo de Cerdo",
+        "region": "Goa",
+        "difficulty": "★★★☆☆"
+      }
+    ]
+  },
+  {
+    "country": "japanese",
+    "count": 35,
+    "recipes": [
+      {
+        "id": "japanese/agedashi_tofu",
+        "title": "Agedashi Tofu",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/asari_no_sakamushi",
+        "title": "Asari no Sakamushi",
+        "region": "Izakaya / Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/buri_daikon",
+        "title": "Buri Daikon",
+        "region": "Toyama / Hokuriku",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/chanchan_yaki",
+        "title": "Chanchan Yaki",
+        "region": "Hokkaido",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/chashu_pork_slice",
+        "title": "Chashu de Cerdo para Ramen",
+        "region": "Fukuoka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/chawanmushi",
+        "title": "Chawanmushi (Flan Salado)",
+        "region": "Kyoto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/chicken_katsu_curry",
+        "title": "Chicken Katsu Curry",
+        "region": "Osaka",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/chikuzenni",
+        "title": "Chikuzenni",
+        "region": "Fukuoka (Kyushu)",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/dorayaki",
+        "title": "Dorayaki",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/gyudon_beef_bowl",
+        "title": "Gyudon (Donburi de Res)",
+        "region": "Tokyo",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/hida_houba_miso",
+        "title": "Hida Houba Miso",
+        "region": "Gifu (Takayama)",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/ichigo_daifuku",
+        "title": "Ichigo Daifuku",
+        "region": "Tokyo / Kansai",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/imoni_yamagata",
+        "title": "Imoni Yamagata",
+        "region": "Yamagata",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/ishikari_nabe",
+        "title": "Ishikari Nabe",
+        "region": "Hokkaido",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/karaage_chicken",
+        "title": "Chicken Karaage",
+        "region": "Japón Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/kenchin_jiru",
+        "title": "Kenchin Jiru",
+        "region": "Kamakura",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/kiriotanpo_nabe",
+        "title": "Kiriotanpo Nabe",
+        "region": "Akita",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/matcha_miso_dengaku",
+        "title": "Matcha Miso Dengaku",
+        "region": "Aichi (Nagoya) / Kyoto",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/miso_soup_classic",
+        "title": "Sopa de Miso Clásica",
+        "region": "Japón Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/nikujaga_home",
+        "title": "Nikujaga (Res con Patatas)",
+        "region": "Japón Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/okonomiyaki_osaka",
+        "title": "Okonomiyaki Estilo Osaka",
+        "region": "Osaka",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/ramen_shoyu",
+        "title": "Shoyu Ramen Tradicional",
+        "region": "Tokyo",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/saba_no_miso_ni",
+        "title": "Saba no Miso-ni",
+        "region": "Nacional",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/soba_zaru",
+        "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
+        "region": "Nagano",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/sukiyaki_beef",
+        "title": "Sukiyaki Nabemono",
+        "region": "Kanto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/sushi_nigiri_salmon",
+        "title": "Nigiri Sushi de Salmón",
+        "region": "Tokyo",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/takoyaki_osaka",
+        "title": "Takoyaki de Osaka",
+        "region": "Osaka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/tamagoyaki_omelet",
+        "title": "Tamagoyaki (Tortilla Dulce)",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/tempura_moriawase",
+        "title": "Tempura Moriawase",
+        "region": "Kyoto",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/tonkatsu_pork",
+        "title": "Tonkatsu de Cerdo",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/udon_kitsune",
+        "title": "Kitsune Udon",
+        "region": "Osaka",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "japanese/unadon_unagi",
+        "title": "Unadon (Anguila sobre Arroz)",
+        "region": "Hamamatsu",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "japanese/unagi_no_kabayaki",
+        "title": "Unagi no Kabayaki",
+        "region": "Shizuoka (Hamamatsu)",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "japanese/yakitori_tare",
+        "title": "Yakitori de Pollo en Tare",
+        "region": "Tokyo",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "japanese/yudofu_kyoto",
+        "title": "Yudofu Kyoto",
+        "region": "Kyoto",
+        "difficulty": "★☆☆☆☆"
+      }
+    ]
+  },
+  {
+    "country": "mexican",
+    "count": 35,
+    "recipes": [
+      {
+        "id": "mexican/agua_de_horchata_de_arroz",
+        "title": "Agua de Horchata de Arroz",
+        "region": "Tradicional Nacional",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/aguachile_verde",
+        "title": "Aguachile Verde de Camarón",
+        "region": "Sinaloa",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/albondigas_en_chipotle",
+        "title": "Albóndigas en Salsa de Chipotle",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/barbacoa_de_borrego",
+        "title": "Barbacoa de Borrego",
+        "region": "Hidalgo",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "mexican/birria_de_res",
+        "title": "Birria de Res con Consomé",
+        "region": "Jalisco",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/carnitas_de_michoacan",
+        "title": "Carnitas de Michoacán",
+        "region": "Michoacán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/chilaquiles_verdes",
+        "title": "Chilaquiles Verdes con Huevo",
+        "region": "México DF",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/chiles_en_nogada",
+        "title": "Chiles en Nogada",
+        "region": "Puebla",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "mexican/chiles_rellenos_de_queso",
+        "title": "Chiles Rellenos de Queso",
+        "region": "Puebla",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/chilpachole_de_jaiba",
+        "title": "Chilpachole de Jaiba",
+        "region": "Veracruz",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/cochinita_pibil",
+        "title": "Cochinita Pibil",
+        "region": "Yucatán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/enchiladas_verdes",
+        "title": "Enchiladas Verdes",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/enmoladas_de_pollo",
+        "title": "Enmoladas de Pollo",
+        "region": "Oaxaca",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/esquites_con_epazote",
+        "title": "Esquites con Epazote",
+        "region": "Centro de México",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/guacamole_tradicional",
+        "title": "Guacamole Tradicional",
+        "region": "Michoacán",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "mexican/huarache_de_cecina",
+        "title": "Huarache de Cecina",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/mole_amarillo",
+        "title": "Mole Amarillo Oaxaqueño",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/mole_negro_oaxaqueno",
+        "title": "Mole Negro Oaxaqueño",
+        "region": "Oaxaca",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "mexican/mole_poblano",
+        "title": "Mole Poblano",
+        "region": "Puebla",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "mexican/mole_verde_oaxaqueno",
+        "title": "Mole Verde Oaxaqueño",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/pambazo_de_papa_con_chorizo",
+        "title": "Pambazo de Papa con Chorizo",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/panuchos_yucatecos",
+        "title": "Panuchos Yucatecos",
+        "region": "Yucatán",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/pescado_a_la_veracruzana",
+        "title": "Pescado a la Veracruzana",
+        "region": "Veracruz",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/pipian_verde",
+        "title": "Pipián Verde",
+        "region": "Puebla",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/poc_chuc",
+        "title": "Poc Chuc",
+        "region": "Yucatán",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/pozole_rojo",
+        "title": "Pozole Rojo de Jalisco",
+        "region": "Jalisco",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/quesadillas_de_flor_de_calabaza",
+        "title": "Quesadillas de Flor de Calabaza",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/sopa_de_lima",
+        "title": "Sopa de Lima",
+        "region": "Yucatán",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/sopas_de_tortilla",
+        "title": "Sopa de Tortilla (Ateca)",
+        "region": "Ciudad de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/sopes_tradicionales",
+        "title": "Sopes Tradicionales",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/tacos_al_pastor",
+        "title": "Tacos al Pastor",
+        "region": "México DF / Puebla",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/tacos_de_canasta",
+        "title": "Tacos de Canasta",
+        "region": "Tlaxcala",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/tamales_oaxaquenos",
+        "title": "Tamales Oaxaqueños",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "mexican/tlacoyos_de_alverjon",
+        "title": "Tlacoyos de Alverjón",
+        "region": "Centro de México",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "mexican/tlayuda_oaxaquena",
+        "title": "Tlayuda Oaxaqueña con Tasajo",
+        "region": "Oaxaca",
+        "difficulty": "★★★☆☆"
+      }
+    ]
+  },
+  {
+    "country": "brazilian",
+    "count": 25,
+    "recipes": [
+      {
+        "id": "brazilian/acai_na_tigela",
+        "title": "Açaí na Tigela",
+        "region": "Pará / Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/acaraje",
+        "title": "Acarajé Baiano",
+        "region": "Brasil",
+        "difficulty": "★★★★★"
+      },
+      {
+        "id": "brazilian/baiao_de_dois",
+        "title": "Baião de Dois",
+        "region": "Ceará / Nordeste, Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/bobo_de_camarao",
+        "title": "Bobó de Camarão",
+        "region": "Bahia, Brasil",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "brazilian/bolo_de_rolo",
+        "title": "Bolo de Rolo Pernambucano",
+        "region": "Pernambuco, Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/brigadeiro",
+        "title": "Brigadeiro Tradicional Brasileiro",
+        "region": "Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/caipirinha",
+        "title": "Caipirinha Tradicional Brasileira",
+        "region": "Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/caruru",
+        "title": "Caruru Baiano",
+        "region": "Bahia, Brasil",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "brazilian/churrasco",
+        "title": "Churrasco Gaúcho de Picanha",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/coxinha",
+        "title": "Coxinha de Frango Tradicional",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/creme_de_cupuacu",
+        "title": "Creme de Cupuaçu",
+        "region": "Amazonas / Pará, Brasil",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/escondidinho_de_carne_de_sol",
+        "title": "Escondidinho de Carne de Sol",
+        "region": "Nordeste / Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/farofa_de_mandioca",
+        "title": "Farofa de Mandioca Tradicional",
+        "region": "Brasil (Nacional)",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "brazilian/feijoada",
+        "title": "Feijoada Completa Brasileira",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/feijoada_a_baiana",
+        "title": "Feijoada à Baiana",
+        "region": "Bahia, Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/galinhada",
+        "title": "Galinhada Mineira e Goiana",
+        "region": "Minas Gerais / Goiás, Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/moqueca_capixaba",
+        "title": "Moqueca Capixaba",
+        "region": "Espírito Santo, Brasil",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "brazilian/moqueca_de_peixe",
+        "title": "Moqueca de Peixe Baiana",
+        "region": "Brasil",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "brazilian/pao_de_queijo",
+        "title": "Pão de Queijo Mineiro",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/pastel_de_feira",
+        "title": "Pastel de Feira",
+        "region": "São Paulo / Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/pato_no_tucupi",
+        "title": "Pato no Tucupi",
+        "region": "Pará, Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/pudim_de_leite",
+        "title": "Pudim de Leite Condensado",
+        "region": "Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/tacaca",
+        "title": "Tacacá Amazônico",
+        "region": "Pará, Brasil",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "brazilian/tutu_de_feijao",
+        "title": "Tutu de Feijão",
+        "region": "Minas Gerais, Brasil",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "brazilian/vatapa",
+        "title": "Vatapá Baiano Tradicional",
+        "region": "Brasil",
+        "difficulty": "★★★★☆"
+      }
+    ]
+  },
+  {
     "country": "peruvian",
     "count": 23,
     "recipes": [
@@ -877,132 +1897,6 @@
         "id": "peruvian/snacks/README",
         "title": "README",
         "region": "Nacional",
-        "difficulty": "★★☆☆☆"
-      }
-    ]
-  },
-  {
-    "country": "american",
-    "count": 20,
-    "recipes": [
-      {
-        "id": "american/apple_pie_traditional",
-        "title": "Traditional American Apple Pie",
-        "region": "EE.UU. Nacional",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/bbq_pork_ribs",
-        "title": "St. Louis Style BBQ Pork Ribs",
-        "region": "Missouri / Memphis",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/buffalo_chicken_wings",
-        "title": "Buffalo Chicken Wings",
-        "region": "Buffalo, NY",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/clam_chowder_boston",
-        "title": "New England Clam Chowder",
-        "region": "Boston, MA",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/classic_cheeseburger",
-        "title": "Classic American Cheeseburger",
-        "region": "Texas / California",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/cobbler_de_melocoton",
-        "title": "Georgia Peach Cobbler",
-        "region": "Georgia",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/cornbread_southern",
-        "title": "Southern Skillet Cornbread",
-        "region": "Sur de EE.UU.",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/eggs_benedict",
-        "title": "Eggs Benedict",
-        "region": "Nueva York, NY",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/fried_chicken_southern",
-        "title": "Southern Crispy Fried Chicken",
-        "region": "Sur de EE.UU.",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/gumbo_louisiana",
-        "title": "Louisiana Seafood Gumbo",
-        "region": "Nueva Orleans, LA",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/jambalaya_cajun",
-        "title": "Cajun Jambalaya",
-        "region": "Nueva Orleans, LA",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/key_lime_pie",
-        "title": "Florida Key Lime Pie",
-        "region": "Florida Keys",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/macaroni_and_cheese",
-        "title": "Baked Macaroni and Cheese",
-        "region": "Sur de EE.UU.",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/meatloaf_with_glaze",
-        "title": "Classic Glazed Meatloaf",
-        "region": "EE.UU. Nacional",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/pancakes_maple_syrup",
-        "title": "Fluffy Pancakes con Maple Syrup",
-        "region": "EE.UU. Nacional",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/philly_cheesesteak",
-        "title": "Philly Cheesesteak",
-        "region": "Filadelfia, PA",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/pot_roast_american",
-        "title": "Classic American Pot Roast",
-        "region": "Medio Oeste",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/pulled_pork_sandwich",
-        "title": "Carolina Pulled Pork Sandwich",
-        "region": "Carolina del Norte",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/reuben_sandwich",
-        "title": "Classic Reuben Sandwich",
-        "region": "Nueva York, NY",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "american/texas_chili_con_carne",
-        "title": "Texas Chili con Carne",
-        "region": "Texas",
         "difficulty": "★★☆☆☆"
       }
     ]
@@ -1260,132 +2154,6 @@
     ]
   },
   {
-    "country": "indian",
-    "count": 20,
-    "recipes": [
-      {
-        "id": "indian/aloo_gobi",
-        "title": "Aloo Gobi",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/biryani_hyderabadi",
-        "title": "Hyderabadi Biryani",
-        "region": "Hyderabad",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/butter_chicken",
-        "title": "Butter Chicken (Murgh Makhani)",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/chana_masala",
-        "title": "Chana Masala",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/chicken_korma",
-        "title": "Chicken Korma",
-        "region": "Mogolla",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/chicken_tikka_masala",
-        "title": "Chicken Tikka Masala",
-        "region": "Punjab / U.K.",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/dal_makhani",
-        "title": "Dal Makhani",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/dosa_masala",
-        "title": "Masala Dosa",
-        "region": "Sur de India",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/fish_amritsari",
-        "title": "Amritsari Fish Fry",
-        "region": "Amritsar",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/gulab_jamun",
-        "title": "Gulab Jamun",
-        "region": "Norte de India",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/malai_kofta",
-        "title": "Malai Kofta",
-        "region": "Norte de India",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/naan_de_ajo",
-        "title": "Ajo Naan (Pan Naan)",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/palak_paneer",
-        "title": "Palak Paneer",
-        "region": "Norte de India",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/paneer_butter_masala",
-        "title": "Paneer Butter Masala",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/pani_puri",
-        "title": "Pani Puri (Golgappa)",
-        "region": "Mumbai",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/pav_bhaji",
-        "title": "Pav Bhaji",
-        "region": "Mumbai",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/rogan_josh",
-        "title": "Rogan Josh de Cordero",
-        "region": "Cachemira",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/samosa_de_patata",
-        "title": "Samosa de Patata y Guisantes",
-        "region": "Norte de India",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/tandoori_chicken",
-        "title": "Tandoori Chicken",
-        "region": "Punjab",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "indian/vada_pav",
-        "title": "Vada Pav",
-        "region": "Bombay / Mumbai",
-        "difficulty": "★★☆☆☆"
-      }
-    ]
-  },
-  {
     "country": "italian",
     "count": 20,
     "recipes": [
@@ -1507,258 +2275,6 @@
         "id": "italian/vitello_tonnato",
         "title": "Vitello Tonnato",
         "region": "Piamonte",
-        "difficulty": "★★★☆☆"
-      }
-    ]
-  },
-  {
-    "country": "japanese",
-    "count": 20,
-    "recipes": [
-      {
-        "id": "japanese/agedashi_tofu",
-        "title": "Agedashi Tofu",
-        "region": "Tokyo",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/chashu_pork_slice",
-        "title": "Chashu de Cerdo para Ramen",
-        "region": "Fukuoka",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/chawanmushi",
-        "title": "Chawanmushi (Flan Salado)",
-        "region": "Kyoto",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/chicken_katsu_curry",
-        "title": "Chicken Katsu Curry",
-        "region": "Osaka",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/gyudon_beef_bowl",
-        "title": "Gyudon (Donburi de Res)",
-        "region": "Tokyo",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "japanese/karaage_chicken",
-        "title": "Chicken Karaage",
-        "region": "Japón Nacional",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/miso_soup_classic",
-        "title": "Sopa de Miso Clásica",
-        "region": "Japón Nacional",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "japanese/nikujaga_home",
-        "title": "Nikujaga (Res con Patatas)",
-        "region": "Japón Nacional",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "japanese/okonomiyaki_osaka",
-        "title": "Okonomiyaki Estilo Osaka",
-        "region": "Osaka",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/ramen_shoyu",
-        "title": "Shoyu Ramen Tradicional",
-        "region": "Tokyo",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/soba_zaru",
-        "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
-        "region": "Nagano",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/sukiyaki_beef",
-        "title": "Sukiyaki Nabemono",
-        "region": "Kanto",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/sushi_nigiri_salmon",
-        "title": "Nigiri Sushi de Salmón",
-        "region": "Tokyo",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/takoyaki_osaka",
-        "title": "Takoyaki de Osaka",
-        "region": "Osaka",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/tamagoyaki_omelet",
-        "title": "Tamagoyaki (Tortilla Dulce)",
-        "region": "Tokyo",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/tempura_moriawase",
-        "title": "Tempura Moriawase",
-        "region": "Kyoto",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/tonkatsu_pork",
-        "title": "Tonkatsu de Cerdo",
-        "region": "Tokyo",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "japanese/udon_kitsune",
-        "title": "Kitsune Udon",
-        "region": "Osaka",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "japanese/unadon_unagi",
-        "title": "Unadon (Anguila sobre Arroz)",
-        "region": "Hamamatsu",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "japanese/yakitori_tare",
-        "title": "Yakitori de Pollo en Tare",
-        "region": "Tokyo",
-        "difficulty": "★★☆☆☆"
-      }
-    ]
-  },
-  {
-    "country": "mexican",
-    "count": 20,
-    "recipes": [
-      {
-        "id": "mexican/aguachile_verde",
-        "title": "Aguachile Verde de Camarón",
-        "region": "Sinaloa",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/albondigas_en_chipotle",
-        "title": "Albóndigas en Salsa de Chipotle",
-        "region": "Centro de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/birria_de_res",
-        "title": "Birria de Res con Consomé",
-        "region": "Jalisco",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/carnitas_de_michoacan",
-        "title": "Carnitas de Michoacán",
-        "region": "Michoacán",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/chilaquiles_verdes",
-        "title": "Chilaquiles Verdes con Huevo",
-        "region": "México DF",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "mexican/chiles_en_nogada",
-        "title": "Chiles en Nogada",
-        "region": "Puebla",
-        "difficulty": "★★★★☆"
-      },
-      {
-        "id": "mexican/cochinita_pibil",
-        "title": "Cochinita Pibil",
-        "region": "Yucatán",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/enchiladas_verdes",
-        "title": "Enchiladas Verdes",
-        "region": "Centro de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/enmoladas_de_pollo",
-        "title": "Enmoladas de Pollo",
-        "region": "Oaxaca",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/guacamole_tradicional",
-        "title": "Guacamole Tradicional",
-        "region": "Michoacán",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "mexican/mole_poblano",
-        "title": "Mole Poblano",
-        "region": "Puebla",
-        "difficulty": "★★★★☆"
-      },
-      {
-        "id": "mexican/pambazo_de_papa_con_chorizo",
-        "title": "Pambazo de Papa con Chorizo",
-        "region": "Ciudad de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/panuchos_yucatecos",
-        "title": "Panuchos Yucatecos",
-        "region": "Yucatán",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/pozole_rojo",
-        "title": "Pozole Rojo de Jalisco",
-        "region": "Jalisco",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/quesadillas_de_flor_de_calabaza",
-        "title": "Quesadillas de Flor de Calabaza",
-        "region": "Ciudad de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/sopas_de_tortilla",
-        "title": "Sopa de Tortilla (Ateca)",
-        "region": "Ciudad de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/sopes_tradicionales",
-        "title": "Sopes Tradicionales",
-        "region": "Centro de México",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "mexican/tacos_al_pastor",
-        "title": "Tacos al Pastor",
-        "region": "México DF / Puebla",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/tamales_oaxaquenos",
-        "title": "Tamales Oaxaqueños",
-        "region": "Oaxaca",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "mexican/tlayuda_oaxaquena",
-        "title": "Tlayuda Oaxaqueña con Tasajo",
-        "region": "Oaxaca",
         "difficulty": "★★★☆☆"
       }
     ]
@@ -2142,6 +2658,102 @@
     ]
   },
   {
+    "country": "bangladeshi",
+    "count": 15,
+    "recipes": [
+      {
+        "id": "bangladeshi/aloo_bhorta",
+        "title": "Aloo Bhorta",
+        "region": "Barisal",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "bangladeshi/begun_bhorta",
+        "title": "Begun Bhorta",
+        "region": "Khulna",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "bangladeshi/bhapa_pitha",
+        "title": "Bhapa Pitha",
+        "region": "Mymensingh",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "bangladeshi/borhani",
+        "title": "Borhani",
+        "region": "Old Dhaka",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "bangladeshi/chingri_malai_curry",
+        "title": "Chingri Malai Curry",
+        "region": "Khulna",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "bangladeshi/chitol_mach_kofta",
+        "title": "Chitol Macher Muitha",
+        "region": "Dhaka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "bangladeshi/kacchi_biryani",
+        "title": "Dhakai Kacchi Biryani",
+        "region": "Old Dhaka",
+        "difficulty": "★★★★☆"
+      },
+      {
+        "id": "bangladeshi/mishti_doi",
+        "title": "Mishti Doi",
+        "region": "Bogra",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "bangladeshi/morog_polao",
+        "title": "Dhakai Morog Polao",
+        "region": "Old Dhaka",
+        "difficulty": "★★★☆☆"
+      },
+      {
+        "id": "bangladeshi/panta_bhat",
+        "title": "Panta Bhat",
+        "region": "Dhaka",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "bangladeshi/patishapta_pitha",
+        "title": "Patishapta Pitha",
+        "region": "Rangpur",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "bangladeshi/rui_mach_jhol",
+        "title": "Rui Macher Jhol",
+        "region": "Rajshahi",
+        "difficulty": "★☆☆☆☆"
+      },
+      {
+        "id": "bangladeshi/shorshe_ilish",
+        "title": "Shorshe Ilish",
+        "region": "Barisal",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "bangladeshi/shutki_bhorta",
+        "title": "Shutki Bhorta",
+        "region": "Chittagong",
+        "difficulty": "★★☆☆☆"
+      },
+      {
+        "id": "bangladeshi/vuna_khichuri",
+        "title": "Bhuna Khichuri",
+        "region": "Sylhet",
+        "difficulty": "★★☆☆☆"
+      }
+    ]
+  },
+  {
     "country": "argentinian",
     "count": 10,
     "recipes": [
@@ -2204,72 +2816,6 @@
         "title": "Provoleta Argentina",
         "region": "Pampeana",
         "difficulty": "★★☆☆☆"
-      }
-    ]
-  },
-  {
-    "country": "brazilian",
-    "count": 10,
-    "recipes": [
-      {
-        "id": "brazilian/acaraje",
-        "title": "Acarajé Baiano",
-        "region": "Brasil",
-        "difficulty": "★★★★★"
-      },
-      {
-        "id": "brazilian/brigadeiro",
-        "title": "Brigadeiro Tradicional Brasileiro",
-        "region": "Brasil",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "brazilian/caipirinha",
-        "title": "Caipirinha Tradicional Brasileira",
-        "region": "Brasil",
-        "difficulty": "★☆☆☆☆"
-      },
-      {
-        "id": "brazilian/churrasco",
-        "title": "Churrasco Gaúcho de Picanha",
-        "region": "Brasil",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "brazilian/coxinha",
-        "title": "Coxinha de Frango Tradicional",
-        "region": "Brasil",
-        "difficulty": "★★★★☆"
-      },
-      {
-        "id": "brazilian/feijoada",
-        "title": "Feijoada Completa Brasileira",
-        "region": "Brasil",
-        "difficulty": "★★★★☆"
-      },
-      {
-        "id": "brazilian/moqueca_de_peixe",
-        "title": "Moqueca de Peixe Baiana",
-        "region": "Brasil",
-        "difficulty": "★★★☆☆"
-      },
-      {
-        "id": "brazilian/pao_de_queijo",
-        "title": "Pão de Queijo Mineiro",
-        "region": "Brasil",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "brazilian/pudim_de_leite",
-        "title": "Pudim de Leite Condensado",
-        "region": "Brasil",
-        "difficulty": "★★☆☆☆"
-      },
-      {
-        "id": "brazilian/vatapa",
-        "title": "Vatapá Baiano Tradicional",
-        "region": "Brasil",
-        "difficulty": "★★★★☆"
       }
     ]
   },

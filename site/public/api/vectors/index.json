@@ -1,24 +1,29 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-05T21:50:18.406Z",
+  "generated_at": "2026-10-01T06:25:04.724Z",
   "model": "Xenova/all-MiniLM-L6-v2",
   "dim": 384,
   "count": {
-    "total": 965,
+    "total": 1055,
     "ingredients": 552,
-    "dishes": 383,
+    "dishes": 473,
     "substances": 30
   },
   "shards": [
     {
       "file": "vectors-1.json",
       "count": 500,
-      "size_bytes": 5514105
+      "size_bytes": 5514286
     },
     {
       "file": "vectors-2.json",
-      "count": 465,
-      "size_bytes": 5339275
+      "count": 500,
+      "size_bytes": 5754547
+    },
+    {
+      "file": "vectors-3.json",
+      "count": 55,
+      "size_bytes": 631513
     }
   ]
 }

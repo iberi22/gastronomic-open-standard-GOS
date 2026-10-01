@@ -5,7 +5,7 @@ language: es
 license: MIT
 source:
   name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  url: https://food.ndtv.com/recipe-butter-chicken-218228
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

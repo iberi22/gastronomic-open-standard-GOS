@@ -4,8 +4,8 @@ region: México DF
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Cocina Vital
+  url: 'https://www.cocinavital.mx/recetas/desayunos/chilaquiles-verdes-con-pollo/2018/05/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

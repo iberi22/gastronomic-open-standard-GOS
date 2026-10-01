@@ -156,3 +156,11 @@ El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión 
 ### Fuentes
 
 - [Pendiente]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Suave, Cremoso, Cítrico
+* **Textura:** Cremoso con trozos de vegetales
+* **Aroma:** Aguacate fresco y cilantro

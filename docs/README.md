@@ -1,6 +1,6 @@
 # GOS docs — map (2026-09-05)
 
-Single canonical deploy: https://gos-site.pages.dev (Cloudflare Pages).
+Single canonical deploy: https://gos.swal.network (Cloudflare Pages).
 GitHub Pages retired. Stack: Astro 7 + Svelte 5 + Tailwind v4 + @swal/ui antigravity.
 
 ## Current (source of truth)

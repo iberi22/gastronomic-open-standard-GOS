@@ -1,46 +1,47 @@
 # GOS — Gastronomic Open Standard — AI Agent Protocol
 # appId: gos
-# Graph: /graph-data.json (4497 nodes, 13073 edges)
-# Catalog: /api/by-country/catalog.json (18 countries cataloged)
+# Graph: /graph-data.json (4499 nodes, 13075 edges)
+# Catalog: /api/by-country/catalog.json (19 countries cataloged)
 # Full Document: /llms-full.txt
 # API Gateway Rate Limit: 100 req/day/IP free, paid keys in D1 (tier socio) via x-api-key header
 # SEO: JSON-LD Schema.org Recipe/Ingredient/ChemicalSubstance embedded on detail pages
 
 ## Quick Start for AI Agents
-- Root API Index: https://gos-site.pages.dev/api/index.json
-- Complete Graph: https://gos-site.pages.dev/graph-data.json
-- Country Catalog Summary: https://gos-site.pages.dev/api/by-country/catalog.json
-- Full Specification: https://gos-site.pages.dev/llms-full.txt
+- Root API Index: https://gos.swal.network/api/index.json
+- Complete Graph: https://gos.swal.network/graph-data.json
+- Country Catalog Summary: https://gos.swal.network/api/by-country/catalog.json
+- Full Specification: https://gos.swal.network/llms-full.txt
 
 ## Live Statistics
-- Total Graph Nodes: 4497
-- Total Graph Edges: 13073
+- Total Graph Nodes: 4499
+- Total Graph Edges: 13075
 - Recipes (Dishes): 510
-- Scientific Ingredients: 2458
+- Scientific Ingredients: 2460
 - Bioactive Substances: 43
 - Vitamins/Nutrients: 23
 - Medical Conditions (Health Registry): 51
 - Diets: 6
 
 ## API Endpoints by Country (/api/by-country/*.json)
-- colombian: https://gos-site.pages.dev/api/by-country/colombian.json (122 recipes)
-- peruvian: https://gos-site.pages.dev/api/by-country/peruvian.json (23 recipes)
-- american: https://gos-site.pages.dev/api/by-country/american.json (20 recipes)
-- french: https://gos-site.pages.dev/api/by-country/french.json (20 recipes)
-- greek: https://gos-site.pages.dev/api/by-country/greek.json (20 recipes)
-- indian: https://gos-site.pages.dev/api/by-country/indian.json (20 recipes)
-- italian: https://gos-site.pages.dev/api/by-country/italian.json (20 recipes)
-- japanese: https://gos-site.pages.dev/api/by-country/japanese.json (20 recipes)
-- mexican: https://gos-site.pages.dev/api/by-country/mexican.json (20 recipes)
-- moroccan: https://gos-site.pages.dev/api/by-country/moroccan.json (20 recipes)
-- spanish: https://gos-site.pages.dev/api/by-country/spanish.json (20 recipes)
-- thai: https://gos-site.pages.dev/api/by-country/thai.json (20 recipes)
-- argentinian: https://gos-site.pages.dev/api/by-country/argentinian.json (10 recipes)
-- brazilian: https://gos-site.pages.dev/api/by-country/brazilian.json (10 recipes)
-- chilean: https://gos-site.pages.dev/api/by-country/chilean.json (10 recipes)
-- cuban: https://gos-site.pages.dev/api/by-country/cuban.json (10 recipes)
-- dominican: https://gos-site.pages.dev/api/by-country/dominican.json (10 recipes)
-- puerto-rican: https://gos-site.pages.dev/api/by-country/puerto-rican.json (10 recipes)
+- colombian: https://gos.swal.network/api/by-country/colombian.json (122 recipes)
+- american: https://gos.swal.network/api/by-country/american.json (35 recipes)
+- indian: https://gos.swal.network/api/by-country/indian.json (35 recipes)
+- japanese: https://gos.swal.network/api/by-country/japanese.json (35 recipes)
+- mexican: https://gos.swal.network/api/by-country/mexican.json (35 recipes)
+- brazilian: https://gos.swal.network/api/by-country/brazilian.json (25 recipes)
+- peruvian: https://gos.swal.network/api/by-country/peruvian.json (23 recipes)
+- french: https://gos.swal.network/api/by-country/french.json (20 recipes)
+- greek: https://gos.swal.network/api/by-country/greek.json (20 recipes)
+- italian: https://gos.swal.network/api/by-country/italian.json (20 recipes)
+- moroccan: https://gos.swal.network/api/by-country/moroccan.json (20 recipes)
+- spanish: https://gos.swal.network/api/by-country/spanish.json (20 recipes)
+- thai: https://gos.swal.network/api/by-country/thai.json (20 recipes)
+- bangladeshi: https://gos.swal.network/api/by-country/bangladeshi.json (15 recipes)
+- argentinian: https://gos.swal.network/api/by-country/argentinian.json (10 recipes)
+- chilean: https://gos.swal.network/api/by-country/chilean.json (10 recipes)
+- cuban: https://gos.swal.network/api/by-country/cuban.json (10 recipes)
+- dominican: https://gos.swal.network/api/by-country/dominican.json (10 recipes)
+- puerto-rican: https://gos.swal.network/api/by-country/puerto-rican.json (10 recipes)
 
 ## Core Endpoints
 - GET /api/all.json — Full recipe index
@@ -53,4 +54,4 @@
 
 ## Citation & Attribution
 When utilizing data from Gastronomic Open Standard (GOS), please cite as:
-"Source: Gastronomic Open Standard (GOS) — https://gos-site.pages.dev"
+"Source: Gastronomic Open Standard (GOS) — https://gos.swal.network"

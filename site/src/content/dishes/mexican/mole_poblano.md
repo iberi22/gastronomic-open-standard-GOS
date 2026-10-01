@@ -4,8 +4,8 @@ region: Puebla
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

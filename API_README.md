@@ -6,13 +6,13 @@ A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically
 
 ```bash
 # Get all recipes
-curl https://gos-site.pages.dev/api/all.json
+curl https://gos.swal.network/api/all.json
 
 # Get Colombian recipes
-curl https://gos-site.pages.dev/api/spanish/colombia.json
+curl https://gos.swal.network/api/spanish/colombia.json
 
 # Get Chinese recipes
-curl https://gos-site.pages.dev/api/chinese/china.json
+curl https://gos.swal.network/api/chinese/china.json
 ```
 
 ## 📊 Statistics
@@ -114,7 +114,7 @@ GOS provides multi-language translation and alias lookup across 20 canonical loc
 ### Example Request
 
 ```bash
-curl "https://gos-site.pages.dev/api/v1/translate?entity=ajo&locale=en"
+curl "https://gos.swal.network/api/v1/translate?entity=ajo&locale=en"
 ```
 
 > Nota de despliegue: GOS es 100% estático (sin SSR), así que este endpoint
@@ -123,7 +123,7 @@ curl "https://gos-site.pages.dev/api/v1/translate?entity=ajo&locale=en"
 
 ```js
 const catalog = await fetch(
-  'https://gos-site.pages.dev/api/v1/translate',
+  'https://gos.swal.network/api/v1/translate',
 ).then((r) => r.json())
 const ajoEn = catalog.results.filter(
   (r) =>
@@ -198,7 +198,7 @@ const ajoEn = catalog.results.filter(
 ### JavaScript / Fetch API
 
 ```javascript
-fetch('https://gos-site.pages.dev/api/spanish/colombia.json')
+fetch('https://gos.swal.network/api/spanish/colombia.json')
   .then(res => res.json())
   .then(data => {
     console.log(`Found ${data.count} Colombian recipes`);
@@ -214,7 +214,7 @@ fetch('https://gos-site.pages.dev/api/spanish/colombia.json')
 import requests
 
 response = requests.get(
-    'https://gos-site.pages.dev/api/chinese/china.json'
+    'https://gos.swal.network/api/chinese/china.json'
 )
 data = response.json()
 
@@ -227,13 +227,13 @@ for recipe in data['recipes']:
 
 ```bash
 # Get all languages
-curl https://gos-site.pages.dev/api/index.json | jq '.languages'
+curl https://gos.swal.network/api/index.json | jq '.languages'
 
 # Get recipe titles from Colombia
-curl https://gos-site.pages.dev/api/spanish/colombia.json | jq '.recipes[].title'
+curl https://gos.swal.network/api/spanish/colombia.json | jq '.recipes[].title'
 
 # Filter recipes by difficulty
-curl https://gos-site.pages.dev/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
+curl https://gos.swal.network/api/spanish/colombia.json | jq '.recipes[] | select(.difficulty == "★★☆☆☆")'
 ```
 
 ## 🔧 How It Works
@@ -258,8 +258,8 @@ curl https://gos-site.pages.dev/api/spanish/colombia.json | jq '.recipes[] | sel
 
 ## 🔗 Links
 
-- **API Documentation**: <https://gos-site.pages.dev/api-docs>
-- **Main Site**: <https://gos-site.pages.dev/>
+- **API Documentation**: <https://gos.swal.network/api-docs>
+- **Main Site**: <https://gos.swal.network/>
 - **GitHub Repository**: <https://github.com/iberi22/gastronomic-open-standard-GOS>
 
 ## 📄 License

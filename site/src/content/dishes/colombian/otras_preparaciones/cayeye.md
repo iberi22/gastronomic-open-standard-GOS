@@ -88,3 +88,12 @@ categories:
 
 - [Pendiente]
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salty (queso costeño), Creamy (butter/mash), Umami (hogao)
+* **Textura:** Smooth (mash), Gritty (cheese)
+* **Aroma:** Lacteal (butter), Savory (sofrito)
+* **Presentación:** Puré de banano verde servido en montaña con queso blanco rallado encima y toques rojos de hogao.

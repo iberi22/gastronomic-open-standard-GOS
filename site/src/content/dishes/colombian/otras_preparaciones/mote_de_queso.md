@@ -97,3 +97,12 @@ description: '* 2 libras de ñame pelado y en cubos'
 ### Fuentes
 
 - [Pendiente]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Lácteo, Umami
+* **Textura:** Cremoso, Suave, Espeso
+* **Aroma:** Lácteo, Cebolla, Achiote
+* **Presentación:** Se sirve en cazuela de barro, decorado con el hogao rojo y cubos de queso fresco.

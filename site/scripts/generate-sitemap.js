@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const SITE = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev'
+const SITE = process.env.SITE_ORIGIN || 'https://gos.swal.network'
 const publicDir = path.resolve(__dirname, '../public')
 const contentDir = path.resolve(__dirname, '../src/content')
 

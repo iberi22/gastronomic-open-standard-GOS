@@ -4,8 +4,8 @@ region: Michoacán
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

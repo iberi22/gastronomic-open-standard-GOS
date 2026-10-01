@@ -4,8 +4,8 @@ region: Oaxaca
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2021/03/10/tlayuda-oaxaquena-receta-tradicional/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

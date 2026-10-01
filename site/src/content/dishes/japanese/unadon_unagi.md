@@ -5,7 +5,7 @@ language: es
 license: MIT
 source:
   name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  url: https://ja.wikipedia.org/wiki/%E9%B0%BB%E9%87%8D
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

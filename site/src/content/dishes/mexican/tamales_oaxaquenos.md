@@ -4,8 +4,8 @@ region: Oaxaca
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2021/01/29/tamales-oaxaquenos-de-mole-negro-receta/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:
@@ -26,6 +26,17 @@ main_ingredients:
   - Carne de cerdo o pollo
   - Mole negro o verde
   - Hojas de plátano
+studies:
+  - title: "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas"
+    source: "Plant Foods Hum Nutr"
+    year: 2025
+    doi: "10.1007/s11130-024-01245-z"
+    url: "https://doi.org/10.1007/s11130-024-01245-z"
+  - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
+    source: "Comprehensive Reviews in Food Science and Food Safety"
+    year: 2016
+    doi: "10.1111/1541-4337.12216"
+    url: "https://doi.org/10.1111/1541-4337.12216"
 sensory:
   flavor:
     - Umami
@@ -80,6 +91,12 @@ Los Tamales Oaxaqueños se distinguen por estar envueltos en hoja de plátano en
 1. **Preparación previa:** Organizar y medir todos los ingredientes principales. Limpiar las superficies de trabajo.
 2. **Cocción principal:** Seguir los tiempos de cocción indicados manteniendo la temperatura controlada.
 3. **Emplatado y presentación:** Servir caliente prestando especial atención a la presentación sensorial descrita.
+
+---
+
+## 🧪 Química de la Nixtamalización en el Tamal
+
+La masa de maíz nixtamalizado cocida al vapor en hojas de plátano sufre una retrogradación parcial del almidón enriquecida por la interacción de iones de calcio ($Ca^{2+}$). La alcalinización previa libera la niacina (Vitamina B3) libre y reduce los antinutrientes como fitatos, mejorando la digestibilidad proteica de la masa.
 
 ---
 

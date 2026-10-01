@@ -136,3 +136,12 @@ El Pescado Moqueado es una preparación ancestral de la Amazonía colombiana, ut
 - [ElEspectador: Pescado moqueado y tradición](https://www.elespectador.com/gastronomia-y-recetas/pescado-muquiado-un-plato-que-resalta-los-sabores-de-la-etnias-del-guaviare/)
 - [Gastronomia.com: Técnica y contexto](https://colombia.gastronomia.com/noticia/8830/tradicion-amazonica-pescado-moqueado)
 - [ComidaDeColombia: Receta de pescado moqueado](https://comidadecolombia.blogspot.com/2010/11/pescado-moquiao.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Umami
+* **Textura:** Firme, Jugoso
+* **Aroma:** Ahumado, Herbal, Terroso
+* **Presentación:** Se sirve en porciones grandes, ideal para compartir y celebrar la tradición indígena.

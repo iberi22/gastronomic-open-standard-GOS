@@ -4,8 +4,8 @@ region: Sinaloa
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Animal Gourmet
+  url: 'https://animalgourmet.com/2021/04/14/receta-aguachile-verde-de-camaron/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:
@@ -20,6 +20,17 @@ tags:
   - Mexican
   - GOS Catalog
   - Top 20
+studies:
+  - title: "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence"
+    source: "Appetite"
+    year: 2012
+    doi: "10.1016/j.appet.2012.05.015"
+    url: "https://pubmed.ncbi.nlm.nih.gov/22634197/"
+  - title: "Peppers and their constituents against obesity"
+    source: "Biologia Futura"
+    year: 2023
+    doi: "10.1007/s42977-023-00174-3"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37493973/"
 main_ingredients:
   - Camarones frescos limpios
   - Jugo de lima fresco

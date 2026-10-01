@@ -50,7 +50,7 @@ async function main() {
         const rel = file.replace(`${colPath}/`, '').replace('.md', '')
         // Build URL: dishes/colombian/andina/bandeja_paisa -> /recipes/colombian/andina/bandeja_paisa
         const route = col === 'dishes' ? 'recipes' : col
-        const url = `https://gos-site.pages.dev/${route}/${rel}`
+        const url = `https://gos.swal.network/${route}/${rel}`
         const title = slugToTitle(basename(rel))
         allItems.push({ collection: col, slug: rel, url, title })
       }
@@ -70,8 +70,8 @@ async function main() {
   const feed = {
     version: 'https://jsonfeed.org/version/1.1',
     title: 'GOS — Gastronomic Open Standard',
-    home_page_url: 'https://gos-site.pages.dev',
-    feed_url: 'https://gos-site.pages.dev/feed.json',
+    home_page_url: 'https://gos.swal.network',
+    feed_url: 'https://gos.swal.network/feed.json',
     description:
       'Grafo gastronómico global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias',
     items: feedItems,

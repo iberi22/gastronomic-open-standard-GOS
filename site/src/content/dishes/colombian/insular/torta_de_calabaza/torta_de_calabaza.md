@@ -140,3 +140,11 @@ La Torta de Calabaza es un postre tradicional de las islas de San Andrés y Prov
 
 - [Cookpad: Torta de calabaza](https://cookpad.com/ec/recetas/13035799-torta-de-calabaza-tipo-starbucks)
 - [Recetas familiares y foros de cocina]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Especiado
+* **Textura:** Bizcocho suave humedecido
+* **Aroma:** Calabaza horneada y canela
