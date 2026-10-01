@@ -37,7 +37,7 @@ El **Amazake** (甘酒) es una bebida nutritiva tradicional japonesa descrita hi
 A diferencia de las bebidas alcohólicas, el amazake de koji no involucra fermentación alcohólica por levaduras:
 * Manteniendo el arroz cocido y el koji a una temperatura constante de **55°C - 60°C**, las enzimas **α-amilasa** y **glucoamilasa** secretadas por *Aspergillus oryzae* operan en su punto térmico óptimo.
 * El almidón insoluble (amilosa y amilopectina) se escinde eficientemente en **maltosa, glucosa libre y disacáridos prebióticos** como la **isomaltosa**.
-* Investigaciones recientes demuestran que los procesos de doble sacarificación incrementan significativamente la concentración de isomaltosa y glucooligosacáridos, modulando favorablemente la microbiota intestinal al incrementar géneros beneficiosos como *Bifidobacterium* y favorecer la integridad de la barrera mucosa.
+* Investigaciones en **modelo murino** demuestran que los procesos de doble sacarificación incrementan significativamente la concentración de isomaltosa y glucooligosacáridos, modulando la microbiota intestinal al incrementar géneros beneficiosos como *Bifidobacterium* y favorecer la integridad de la barrera mucosa. Estos efectos se han observado en ratones, no en personas.
 * Simultáneamente, el metabolismo fúngico aporta vitaminas del grupo B hidrosolubles (B1, B2, B6, niacina, biotina) y folatos predigeridos.
 
 ## Utilización Nutricional y Beneficios Digestivos

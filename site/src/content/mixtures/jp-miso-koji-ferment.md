@@ -26,6 +26,12 @@ studies:
     year: 2024
     doi: "10.1016/j.foodres.2024.114273"
     url: "https://pubmed.ncbi.nlm.nih.gov/38609250/"
+  - title: "Antihypertensive effect of soybean bioactive peptides: A review"
+    source: "Current Opinion in Pharmacology"
+    year: 2022
+    doi: "10.1016/j.coph.2021.11.005"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34929528/"
+    evidence_note: "Cites ACE-inhibitory peptides from soy hydrolysates. The koji papers above establish that fungal proteases release small peptides from soybean globulins; this review is the source for the antihypertensive claim itself."
 ---
 # Soja y Aspergillus oryzae: Fermentación y Biodisponibilidad Bioactiva
 
@@ -38,7 +44,7 @@ Las isoflavonas nativas de la soja cruda o hervida se encuentran mayoritariament
 Durante los meses o años de fermentación del miso:
 * Las **β-glucosidasas** de *Aspergillus oryzae* hidrolizan los enlaces glucosídicos, liberando **isoflavonas agliconas** (genisteína y daidzeína).
 * Las agliconas se absorben directamente a través de la mucosa intestinal, ejerciendo una potente actividad antioxidante y moduladora cardiovascular.
-* Las proteasas fúngicas (ácidas, neutras y alcalinas) y las carboxipeptidasas fragmentan las globulinas de soja (glicinina y β-conglicinina) en **pequeños oligopéptidos bioactivos** e hidrolizados proteicos con capacidad de inhibición de la enzima convertidora de angiotensina (ECA).
+* Las proteasas fúngicas (ácidas, neutras y alcalinas) y las carboxipeptidasas fragmentan las globulinas de soja (glicinina y β-conglicinina) en **pequeños oligopéptidos bioactivos** e hidrolizados proteicos con **actividad inhibitora de la enzima convertidora de angiotensina (ECA)** medida en ensayos de laboratorio. El efecto antihipertensivo en personas está recopilado en revisiones de péptidos bioactivos de soja, no demostrado en ensayos clínicos sobre miso.
 
 ## Comparativa Científica de Productos de Fermentación por Koji
 
@@ -46,7 +52,7 @@ A continuación se resumen los perfiles enzimáticos, sustratos y compuestos res
 
 | Producto | Sustrato Principal | Enzimas Predominantes | Compuestos Clave Generados | Mecanismo Fisiológico / Perfil |
 | :--- | :--- | :--- | :--- | :--- |
-| **Miso (味噌)** | Soja + Sal + Koji de Arroz | β-glucosidasas, Proteasas ácidas/neutras, Peptidasas | Isoflavonas agliconas (genisteína), Péptidos inhibidores de ECA, Melanoidinas | Alta densidad bioactiva antioxidante y antihipertensiva con perfil umami salado. |
+| **Miso (味噌)** | Soja + Sal + Koji de Arroz | β-glucosidasas, Proteasas ácidas/neutras, Peptidasas | Isoflavonas agliconas (genisteína), Péptidos con actividad inhibidora de ECA medida in vitro, Melanoidinas | Alta densidad bioactiva antioxidante; la actividad antihipertensiva de los péptidos se ha medida en laboratorio y se recoge en revisiones de péptidos de soja, no en ensayos clínicos sobre miso. |
 | **Shoyu (醤油)** | Soja + Trigo + Sal + Koji | Endoproteasas, Carboxipeptidasas, Glutaminasas, Amilasas | Glutamato libre, Péptidos pequeños umami, Furanonas (HEMF) | Extensa proteólisis proteica que genera aroma complejo y potenciación umami. |
 | **Amazake (甘酒)** | Arroz Glutinoso + Koji | α-amilasa, Glucoamilasa, Alfa-glucosidasa | Glucosa libre, Isomaltosa, Complejo vitamínico B | Sacarificación completa del almidón en azúcares simples y oligosacáridos prebióticos. |
 
