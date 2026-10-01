@@ -28,6 +28,17 @@ main_ingredients:
   - Rábanos
   - Lechuga
   - Orégano
+studies:
+  - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
+    source: "Comprehensive Reviews in Food Science and Food Safety"
+    year: 2016
+    doi: "10.1111/1541-4337.12216"
+    url: "https://doi.org/10.1111/1541-4337.12216"
+  - title: "Mycotoxins during the Processes of Nixtamalization and Tortilla Production"
+    source: "Toxins"
+    year: 2019
+    doi: "10.3390/toxins11040227"
+    url: "https://doi.org/10.3390/toxins11040227"
 sensory:
   flavor:
     - Umami intenso
@@ -72,7 +83,7 @@ El Pozole Rojo es una sopa festiva ancestral a base de granos de maíz cacahuazi
 
 ## 📝 Ingredientes
 
-- Maíz cacahuazintle precocido
+- Maíz cacahuazintle precocido (nixtamalizado)
 - Cabeza y lomo de cerdo
 - Chile guajillo
 - Chile ancho
@@ -85,8 +96,14 @@ El Pozole Rojo es una sopa festiva ancestral a base de granos de maíz cacahuazi
 ## 👨‍🍳 Instrucciones
 
 1. **Preparación previa:** Organizar y medir todos los ingredientes principales. Limpiar las superficies de trabajo.
-2. **Cocción principal:** Seguir los tiempos de cocción indicados manteniendo la temperatura controlada.
+2. **Cocción principal:** Seguir los tiempos de cocción indicados manteniendo la temperatura controlada hasta que el grano de maíz cacahuazintle florezca.
 3. **Emplatado y presentación:** Servir caliente prestando especial atención a la presentación sensorial descrita.
+
+---
+
+## 🧪 Química de la Nixtamalización en el Pozole
+
+El uso de maíz cacahuazintle sometido a cocción alcalina prolongada (*nixtamalización*) libera la niacina ligada (vitamina B3), incrementa la absorción de calcio biodisponible y desintegra las micotoxinas (aflatoxinas/fumonisinas) hacia la fase acuosa (*nejayote*). El reblandecimiento del pericarpio alcalino permite la gelatinización completa del almidón y el florecido característico del grano.
 
 ---
 
