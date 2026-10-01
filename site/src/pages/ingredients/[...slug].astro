@@ -1,7 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
-import { INGREDIENT_PLACEHOLDER, resolveIngredientHero } from '../../lib/images'
+import {
+  INGREDIENT_OG_PLACEHOLDER,
+  INGREDIENT_PLACEHOLDER,
+  resolveIngredientHero,
+} from '../../lib/images'
+import { ingredientDescription } from '../../lib/meta-description'
 import { absUrl } from '../../lib/seo'
 export async function getStaticPaths() {
   const col = await getCollection('ingredients')
@@ -35,8 +40,38 @@ const jsonLd = {
       : undefined,
   },
 }
+
+// Descripcion unica por ingrediente. Reusa los datos que la pagina ya
+// tiene a la mano; no inventa nada.
+//
+// 515/552 fichas viven en pending_review/ y llegan con los campos TODO
+// (scientific_name: "TODO", TODas las nutrientes en 0, active_compounds
+// con benefit: "Unknown"). Para esas la description lo dice en vez de
+// afirmar nutricion inexistente. Ademas se marcan noindex: son stubs y no
+// deben competir en el indice con las 37 fichas reales.
+const isPendingReview = entry.id.startsWith('pending_review/')
+const conditions = ((data.health_registry as { condition?: string }[]) || [])
+  .map((h) => String(h?.condition || ''))
+  .filter(Boolean)
+const metaDescription = ingredientDescription({
+  name: String(data.name || entry.id),
+  group: data.group,
+  scientificName:
+    data.scientific_name && data.scientific_name !== 'TODO'
+      ? String(data.scientific_name)
+      : undefined,
+  nutrition: nutrition as Record<string, unknown>,
+  micronutrients: (data.micronutrients as Record<string, unknown>) || {},
+  conditions,
+  pendingReview: isPendingReview,
+})
 ---
-<Layout title={`${(entry.data as any).name} — Ingrediente GOS`} image={heroIsPlaceholder ? undefined : heroImage}>
+<Layout
+  title={`${(entry.data as any).name} — Ingrediente GOS`}
+  description={metaDescription}
+  image={heroIsPlaceholder ? INGREDIENT_OG_PLACEHOLDER : heroImage}
+  noindex={isPendingReview}
+>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <a href={`${base}/ingredients`} class="back">← Ingredientes</a>
   <article class="article">

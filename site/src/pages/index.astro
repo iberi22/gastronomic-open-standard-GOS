@@ -4,6 +4,7 @@ import { Badge, Button, Card } from '@swal/ui'
 import graphData from '../../public/graph-data.json'
 import GosGraph from '../components/GosGraph.svelte'
 import Layout from '../layouts/Layout.astro'
+import { clampDescription } from '../lib/meta-description'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -218,6 +219,12 @@ const evEntries: EvEntry[] = (
   .flat()
   .filter((x): x is EvEntry => x !== null)
 
+// Description de portada con las cifras REALES del grafo generado
+// (graph-data.json), no con numeros redondos inventados.
+const homeDescription = clampDescription(
+  `Grafo gastronomico abierto: ${byType('recipe')} recetas, ${ingFichas} ingredientes, ${byType('substance')} substancias y ${byType('condition')} afecciones, con ${nodes.length} nodos y ${edges.length} relaciones.`,
+)
+
 const ev = {
   withStudies: evEntries.length,
   withDoi: evEntries.filter((e) => e.study?.doi).length,
@@ -278,7 +285,7 @@ const highlights = [
 ]
 ---
 
-<Layout title="GOS — Grafo Gastronómico Global">
+<Layout title="GOS — Grafo Gastronómico Global" description={homeDescription}>
   <section class="hero">
     <div class="hero-card">
       <div class="eyebrow">
