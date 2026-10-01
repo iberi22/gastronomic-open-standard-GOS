@@ -1,46 +1,167 @@
 ---
+import { getCollection } from 'astro:content'
 import { Badge, Button, Card } from '@swal/ui'
+import graphData from '../../public/graph-data.json'
 import GosGraph from '../components/GosGraph.svelte'
 import Layout from '../layouts/Layout.astro'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-// stats will be hydrated via GosGraph; static fallback numbers approximate
+
+// Los numeros salen del grafo generado, no de aproximaciones: si el contenido
+// crece, la portada deja de mentir. Ver scripts/generate-graph.js.
+const nodes = graphData.nodes
+const edges = graphData.edges
+const byType = (t: string) => nodes.filter((n) => n.type === t).length
+
+const total = nodes.length
+
+// Ingredientes con ficha propia, contados desde la content collection (la
+// fuente real). El grafo tambien incluye los que solo citan las recetas, asi
+// que no son la misma cifra: 554 en disco vs 2460 nodos en el grafo.
+const ingFichas = (await getCollection('ingredients')).length
+
+// Las 16 relaciones del grafo, con su conteo real y su lectura en lenguaje claro.
+// El orden es por peso: primero lo que sostiene el grafo, despues la ciencia.
+const RELATIONS: { type: string; from: string; to: string; reads: string }[] = [
+  {
+    type: 'USES',
+    from: 'recipe',
+    to: 'ingredient',
+    reads: 'cada receta declara qué ingredientes usa',
+  },
+  {
+    type: 'RELATED_DISHES',
+    from: 'recipe',
+    to: 'recipe',
+    reads: 'recetas que comparten técnica o familia',
+  },
+  {
+    type: 'HAS_FLAVOR',
+    from: 'ingredient',
+    to: 'flavor',
+    reads: 'qué sabor aporta cada ingrediente',
+  },
+  {
+    type: 'BELONGS_TO',
+    from: 'dish*',
+    to: 'category',
+    reads: 'a qué categoría culinaria pertenece cada plato',
+  },
+  {
+    type: 'HAS_TEXTURE',
+    from: 'ingredient',
+    to: 'texture',
+    reads: 'la textura que aporta al plato',
+  },
+  {
+    type: 'OFTEN_TOGETHER',
+    from: 'ingredient',
+    to: 'ingredient',
+    reads: 'pares que aparecen juntos en las recetas',
+  },
+  {
+    type: 'FROM_REGION',
+    from: 'dish*',
+    to: 'region',
+    reads: 'de qué región es cada plato',
+  },
+  {
+    type: 'HAS_NUTRIENT',
+    from: 'ingredient',
+    to: 'nutrient',
+    reads: 'nutrientes que aporta',
+  },
+  {
+    type: 'CONTAINS_VITAMIN',
+    from: 'ingredient',
+    to: 'vitamin',
+    reads: 'vitaminas que contiene',
+  },
+  {
+    type: 'HELPS_CONDITION',
+    from: 'ingredient',
+    to: 'condition',
+    reads: 'afecciones que ayuda a aliviar',
+  },
+  {
+    type: 'HAS_SUBSTANCE',
+    from: 'ingredient',
+    to: 'substance',
+    reads: 'substancias bioactivas que contiene',
+  },
+  {
+    type: 'FOUND_IN',
+    from: 'substance',
+    to: 'ingredient',
+    reads: 'en qué ingredientes se hallan las substancias',
+  },
+  {
+    type: 'PLACE',
+    from: 'region',
+    to: 'place',
+    reads: 'dónde está la región en el mapa',
+  },
+  {
+    type: 'FITS_DIET',
+    from: 'dish*',
+    to: 'diet',
+    reads: 'qué dietas admite cada plato',
+  },
+  {
+    type: 'TREATS',
+    from: 'substance',
+    to: 'condition',
+    reads: 'qué sustancia actúa sobre qué afección',
+  },
+  {
+    type: 'USES_TECHNIQUE',
+    from: 'recipe',
+    to: 'technique',
+    reads: 'técnicas de cocción que requiere',
+  },
+]
+const edgeCount = (t: string) => edges.filter((e) => e.type === t).length
+const relations = RELATIONS.map((r) => ({
+  ...r,
+  count: edgeCount(r.type),
+})).sort((a, b) => b.count - a.count)
+
 const highlights = [
   {
-    k: 'Recetas',
-    v: '400+',
-    desc: 'De Colombia, Perú y mundo • con sensoria, técnica y región',
+    k: 'Nodos',
+    v: String(total),
+    desc: 'Recetas, ingredientes, ciencia y territorio en un solo grafo',
     color: '#FF6B6B',
   },
   {
-    k: 'Ingredientes',
-    v: '250+',
-    desc: 'Con ficha científica: nutrientes, compuestos y beneficios',
+    k: 'Relaciones',
+    v: String(edges.length),
+    desc: `${relations.length} tipos de arista distintos, de USES a TREATS`,
     color: '#4ECDC4',
   },
   {
-    k: 'Vitaminas',
-    v: '40+',
-    desc: 'Micronutrientes y vitaminas por ingrediente',
+    k: 'Recetas',
+    v: String(byType('recipe') + byType('dish')),
+    desc: 'Con perfil sensorial, técnica y región',
     color: '#F9C74F',
   },
   {
-    k: 'Afecciones',
-    v: '35+',
-    desc: 'Registro de salud: hipertensión, inflamación, digestión...',
+    k: 'Ingredientes',
+    v: String(byType('ingredient')),
+    desc: `${ingFichas} con ficha científica en el repositorio; el resto son los que citan las recetas`,
+    color: '#06D6A0',
+  },
+  {
+    k: 'Vitaminas',
+    v: String(byType('vitamin')),
+    desc: 'Micronutrientes conectados a los ingredientes que los contienen',
     color: '#F94144',
   },
   {
-    k: 'Substancias',
-    v: '30+',
-    desc: 'Alicina, gingerol, cuminaldehído, polifenoles...',
+    k: 'Afecciones',
+    v: String(byType('condition')),
+    desc: 'Relacionadas con ingredientes y substancias',
     color: '#9D4EDD',
-  },
-  {
-    k: 'Dietas',
-    v: '5',
-    desc: 'Vegana, vegetariana, sin gluten, keto, mediterránea',
-    color: '#06D6A0',
   },
 ]
 ---
@@ -99,13 +220,33 @@ const highlights = [
   <section class="two-col">
     <Card variant="elevated" padding="lg">
       <h2>Qué modela el grafo</h2>
-      <ul class="list">
-        <li><strong>recipe —[USES]→ ingredient —[CONTAINS]→ vitamin/nutrient</strong></li>
-        <li><strong>ingredient —[HAS_SUBSTANCE]→ substance —[TREATS]→ condition</strong></li>
-        <li><strong>ingredient —[HAS_FLAVOR]→ flavor · —[HAS_TEXTURE]→ texture</strong></li>
-        <li><strong>recipe —[FITS]→ diet · —[USES_TECHNIQUE]→ technique · —[FROM_REGION]→ region → place</strong></li>
-      </ul>
-      <p class="hint">El grafo se genera desde las recetas y los ingredientes: cada ficha con vitaminas, compuestos activos y beneficios amplía el grafo automáticamente.</p>
+      <p class="hint">
+        Cada fila es una arista real del grafo, con el conteo que sale de
+        <code>graph-data.json</code>. En el explorador puedes recorrerlas: haz clic en un
+        nodo y verás a qué nodos conecta a dos saltos.
+      </p>
+      <table class="rels">
+        <thead>
+          <tr><th>Relación</th><th>De → a</th><th>Qué significa</th><th class="num">Aristas</th></tr>
+        </thead>
+        <tbody>
+          {relations.map(r => (
+            <tr>
+              <td data-lbl="Relación"><code>{r.type}</code></td>
+              <td data-lbl="Camino" class="path">{r.from} → {r.to}</td>
+              <td data-lbl="Qué significa" class="reads">{r.reads}</td>
+              <td data-lbl="Aristas" class="num">{r.count.toLocaleString('es-CO')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="hint">
+        <strong>Por qué importa:</strong> estas aristas son lo que convierte la base en
+        grafo. No son recetas sueltas en una tabla — el camino de un ingrediente a una
+        afección (ingrediente → sustancia → condición, con los estudios que lo sostienen)
+        es lo que permite preguntar, por ejemplo, qué platos con cúrcuma tienen
+        evidencia al respecto y citarla con su DOI.
+      </p>
       <div class="actions">
         <Button variant="primary" onclick={() => location.href = `${base}/graph`}>Abrir grafo interactivo</Button>
         <Button variant="secondary" onclick={() => location.href = `${base}/scientific`}>Ver capa científica</Button>
@@ -190,6 +331,28 @@ const highlights = [
   .two-col { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:12px; margin-top:18px; }
   @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
   .list { margin:10px 0 0 18px; color: var(--swal-text-secondary); line-height:1.9; font-size:14px; }
+  .rels { width:100%; border-collapse:collapse; margin-top:12px; font-size:12.5px; }
+  .rels th { text-align:left; font-weight:600; color: var(--swal-text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; padding:0 8px 7px 0; border-bottom:1px solid var(--swal-border); }
+  .rels td { padding:7px 8px 7px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); vertical-align:top; }
+  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); white-space:nowrap; }
+  .rels td.path { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-secondary); white-space:nowrap; }
+  .rels td.reads { color: var(--swal-text-secondary); line-height:1.5; }
+  .rels td.num { text-align:right; font-variant-numeric: tabular-nums; color: var(--swal-text-muted); white-space:nowrap; }
+  .rels tr:last-child td { border-bottom:none; }
+  /* En movil la tabla de 4 columnas deja la descripcion en ~12 chars por
+     linea, ilegible. Cada fila se convierte en una ficha apilada: el nombre de
+     la columna va como etiqueta y el valor ocupa el ancho completo. */
+  @media (max-width: 720px) {
+    .rels thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path: inset(50%); }
+    .rels, .rels tbody, .rels tr, .rels td { display:block; width:auto; }
+    .rels tr { padding:11px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); }
+    .rels tr:last-child { border-bottom:none; }
+    .rels td { border:none; padding:2px 0; }
+    .rels td::before { content: attr(data-lbl) ": "; color: var(--swal-text-muted); font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; }
+    .rels td:first-child::before { content:none; }
+    .rels td.num { text-align:left; }
+    .rels td.path, .rels td code { white-space:normal; }
+  }
   .hint { color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin-top:10px; }
   .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
   .swatches { display:flex; gap:10px; margin-top:12px; }
