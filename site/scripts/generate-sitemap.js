@@ -34,7 +34,14 @@ function collectMd(base) {
 }
 
 const urls = []
-const add = (loc, priority) => urls.push({ loc: `${SITE}${loc}`, priority })
+// Normalizar a '/final': el canonical que emite Layout.astro SIEMPRE lleva
+// barra final (https://gos.swal.network/api/). Sin esto el sitemap lista
+// /api y el HTML declara /api/ — contradicción que también resta calidad.
+const add = (loc, priority) =>
+  urls.push({
+    loc: `${SITE}${loc.length > 1 && !loc.endsWith('/') ? `${loc}/` : loc}`,
+    priority,
+  })
 
 // paginas estaticas (rutas verificadas en src/pages)
 for (const p of [
@@ -54,9 +61,17 @@ for (const p of [
 for (const id of collectMd(path.join(contentDir, 'substances')))
   add(`/substances/${id}`, '0.7')
 
-// ingredients (todos, con subdirectorios)
-for (const id of collectMd(path.join(contentDir, 'ingredients')))
+// ingredients (todos, con subdirectorios) MENOS pending_review.
+//
+// Las 515 fichas de pending_review son stubs: frontmatter con scientific_name
+// "TODO", nutrientes en 0 y benefit "Unknown". Se sirven con noindex en
+// /ingredients/[...slug].astro, asi que listarlas aqui seria contradecir la
+// propia pagina (un sitemap manda "indexame"). No se borran: siguen
+// accesibles por URL directa para el pipeline de revision.
+for (const id of collectMd(path.join(contentDir, 'ingredients'))) {
+  if (id.startsWith('pending_review/')) continue
   add(`/ingredients/${id}`, '0.6')
+}
 
 // recipes = coleccion dishes (todos, con subdirectorios pais/plato)
 const dishIds = collectMd(path.join(contentDir, 'dishes'))
@@ -70,15 +85,21 @@ const seen = new Set()
 const deduped = urls.filter((u) => !seen.has(u.loc) && seen.add(u.loc))
 deduped.sort((a, b) => a.loc.localeCompare(b.loc))
 
+// SIN hreflang (decisión deliberada, 2026-10-01):
+// GOS tiene UNA sola URL por contenido. La traducción es on-device del DOM
+// (Chrome/Edge Translator API, src/lib/chrome-translate.ts) y NO existen
+// /en/, /zh/, /hi/, /fr/ — 0 páginas con prefijo de idioma en dist/.
+// hreflang promete URLs alternativas indexables; aquí todas las etiquetas
+// apuntaban a la MISMA URL (es/en/x-default idénticos), lo que es una
+// contradicción y una señal de calidad negativa. Cuando existan páginas
+// reales por idioma, volver a emitir xhtml:link aquí Y añadir
+// <link rel="alternate" hreflang> correspondiente en el HTML.
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${deduped
   .map(
     (u) => `  <url>
     <loc>${u.loc}</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="${u.loc}" />
-    <xhtml:link rel="alternate" hreflang="en" href="${u.loc}" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${u.loc}" />
     <priority>${u.priority}</priority>
   </url>`,
   )
@@ -89,5 +110,5 @@ ${deduped
 fs.mkdirSync(publicDir, { recursive: true })
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml, 'utf8')
 console.log(
-  `sitemap.xml generated with ${deduped.length} URLs (hreflang enabled)`,
+  `sitemap.xml generated with ${deduped.length} URLs (no hreflang: single-URL site, client-side translation)`,
 )
