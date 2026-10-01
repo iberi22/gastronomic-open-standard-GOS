@@ -54,6 +54,7 @@ jobs:
           node scripts/enrich-ingredients.js
           node scripts/generate-graph.js
           node scripts/export-vectors.mjs
+          node scripts/generate-og-images.mjs
           node scripts/generate-llms.mjs
           node scripts/generate-feed.mjs
           node scripts/generate-sitemap.js
@@ -61,6 +62,14 @@ jobs:
       - name: Build Astro site
         working-directory: ./site
         run: pnpm exec astro build
+
+      - name: 🔍 Verificar invariantes SEO (canonical, sitemap, noindex)
+        working-directory: ./site
+        # Gate real: falla si el canonical no es el canonico, si el sitemap
+        # trae URLs huerfanas o duplicadas, si hreflang vuelve a aparecer, o
+        # si pending_review se cuela en el indice. Sin esto, un cambio de
+        # routing puede romper 1104 paginas y el build sigue en verde.
+        run: node scripts/verify-sitemap-seo.mjs
 
       - name: ⚡ Deploy to Cloudflare Pages (wrangler-action, patrón canónico worldexams/gara-g)
         uses: cloudflare/wrangler-action@v4
