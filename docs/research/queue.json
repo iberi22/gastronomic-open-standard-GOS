@@ -4,7 +4,7 @@
     {
       "day": 1,
       "id": "curcumin-bioavailability",
-      "status": "pending",
+      "status": "done",
       "lang": "EN",
       "topic": "curcumin + piperine synergy",
       "title": "Curcumin/piperine synergy studies roundup",
@@ -16,12 +16,14 @@
       "q1": "curcumin piperine bioavailability enhancement 2024",
       "q2": "curcumin nanoparticle liposomal delivery trial",
       "q3": "curcumin synergy black pepper review",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov curcumin bioavailability"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov curcumin bioavailability",
+      "issue": 314,
+      "dispatched_at": "2026-09-28T07:00:07.419Z"
     },
     {
       "day": 2,
       "id": "capsaicin-metabolism",
-      "status": "pending",
+      "status": "done",
       "lang": "ES/EN",
       "topic": "capsaicina y metabolismo",
       "title": "Capsaicin metabolism studies roundup",
@@ -33,12 +35,14 @@
       "q1": "capsaicin thermogenesis metabolism human trial",
       "q2": "TRPV1 capsaicin review 2024",
       "q3": "chile picante metabolismo estudio",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov capsaicin"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov capsaicin",
+      "issue": 315,
+      "dispatched_at": "2026-09-28T07:00:34.738Z"
     },
     {
       "day": 3,
       "id": "nixtamalization",
-      "status": "pending",
+      "status": "done",
       "lang": "ES/EN",
       "topic": "nixtamalización",
       "title": "Nixtamalization chemistry roundup",
@@ -50,12 +54,14 @@
       "q1": "nixtamalization niacin bioavailability chemistry",
       "q2": "nixtamalización micotoxinas reducción estudio",
       "q3": "lime cooking corn calcium nutrition",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov nixtamalization"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov nixtamalization",
+      "issue": 316,
+      "dispatched_at": "2026-09-28T07:01:59.507Z"
     },
     {
       "day": 4,
       "id": "umami-glutamate",
-      "status": "pending",
+      "status": "done",
       "lang": "JA/EN",
       "topic": "umami y glutamato",
       "title": "Umami glutamate science roundup",
@@ -67,12 +73,14 @@
       "q1": "うま味 グルタミン酸 科学",
       "q2": "umami taste receptor glutamate safety review",
       "q3": "kombu dashi glutamate content study",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov umami"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov umami",
+      "issue": 317,
+      "dispatched_at": "2026-09-28T07:02:04.347Z"
     },
     {
       "day": 5,
       "id": "koji-fermentation",
-      "status": "pending",
+      "status": "done",
       "lang": "JA/EN",
       "topic": "fermentación koji",
       "title": "Koji fermentation roundup",
@@ -84,12 +92,14 @@
       "q1": "麹 発酵 健康 味噌 醤油",
       "q2": "koji aspergillus oryzae enzymes review",
       "q3": "miso health benefits cohort study",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov koji"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov koji",
+      "issue": 318,
+      "dispatched_at": "2026-09-28T07:02:23.167Z"
     },
     {
       "day": 6,
       "id": "acai-anthocyanins",
-      "status": "pending",
+      "status": "done",
       "lang": "PT/EN",
       "topic": "açaí y antocianinas",
       "title": "Acai anthocyanins roundup",
@@ -101,12 +111,14 @@
       "q1": "açaí antocianinas antioxidante estudo",
       "q2": "acai berry anthocyanin clinical trial",
       "q3": "cupuaçu composition study",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov acai"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov acai",
+      "issue": 319,
+      "dispatched_at": "2026-09-28T07:02:27.716Z"
     },
     {
       "day": 7,
       "id": "tea-polyphenols",
-      "status": "pending",
+      "status": "done",
       "lang": "ZH/EN",
       "topic": "polifenoles del té",
       "title": "Tea polyphenols roundup",
@@ -118,12 +130,14 @@
       "q1": "普洱茶 多酚 发酵 健康",
       "q2": "tea polyphenols fermentation pu-erh study",
       "q3": "l-theanine cognition trial",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov tea polyphenol"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov tea polyphenol",
+      "issue": 326,
+      "dispatched_at": "2026-09-28T11:00:34.315Z"
     },
     {
       "day": 8,
       "id": "mustard-hilsa",
-      "status": "pending",
+      "status": "done",
       "lang": "BN/EN",
       "topic": "mostaza e hilsa",
       "title": "Mustard oil and hilsa roundup",
@@ -135,12 +149,14 @@
       "q1": "সরষের তেল স্বাস্থ্য ইলিশ",
       "q2": "mustard oil erucic acid safety review",
       "q3": "hilsa fish omega-3 study",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov hilsa"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov hilsa",
+      "issue": 328,
+      "dispatched_at": "2026-09-29T11:00:17.243Z"
     },
     {
       "day": 9,
       "id": "smoke-bbq",
-      "status": "pending",
+      "status": "done",
       "lang": "EN",
       "topic": "humo y BBQ",
       "title": "Smoke and BBQ chemistry roundup",
@@ -152,7 +168,9 @@
       "q1": "smoked meat PAH polycyclic aromatic mitigation marinade",
       "q2": "BBQ wood smoke flavor compounds study",
       "q3": "grilling heterocyclic amines reduction",
-      "q4": "site:pubmed.ncbi.nlm.nih.gov smoked meat"
+      "q4": "site:pubmed.ncbi.nlm.nih.gov smoked meat",
+      "issue": 330,
+      "dispatched_at": "2026-09-30T11:00:31.903Z"
     },
     {
       "day": 10,

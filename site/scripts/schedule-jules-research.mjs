@@ -16,9 +16,13 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const DRY = process.argv.includes('--dry-run')
-const REPO =
-  process.env.GOS_REPO ||
-  '<repo-root>'
+const REPO = process.env.GOS_REPO
+if (!REPO) {
+  console.error(
+    'GOS_REPO no esta definido. Uso: GOS_REPO=/ruta/al/repo node site/scripts/schedule-jules-research.mjs',
+  )
+  process.exit(4)
+}
 const QUEUE = path.join(REPO, 'docs/research/queue.json')
 
 function gh(...args) {
@@ -162,7 +166,10 @@ function main() {
   next.status = 'done'
   next.issue = Number(num)
   next.dispatched_at = new Date().toISOString()
-  fs.writeFileSync(QUEUE, `${JSON.stringify(q, null, 1)}\n`)
+  // indent 2: lo exige biome.json (formatter.indentWidth=2), y `biome ci` es
+  // el primer paso de `pnpm run lint`. Con indent 1 este archivo dejaba
+  // queue.json fuera de formato y bloqueaba todos los PRs de la ola.
+  fs.writeFileSync(QUEUE, `${JSON.stringify(q, null, 2)}\n`)
   console.log('QUEUE-ADVANCED')
 }
 
