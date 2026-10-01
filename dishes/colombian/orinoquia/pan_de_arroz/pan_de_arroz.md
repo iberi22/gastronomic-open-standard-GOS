@@ -134,3 +134,11 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de pan de arroz llanero - El Tiempo](https://www.eltiempo.com/vida/receta-pan-de-arroz-57953)
 - [Google Maps: Opiniones sobre pan de arroz](https://www.google.com/maps/search/pan+de+arroz+llanero)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/pan-de-arroz)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Quesero, Tostado
+* **Textura:** Crocante rosca horneada
+* **Aroma:** Queso horneado y arroz tostado

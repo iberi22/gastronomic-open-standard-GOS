@@ -89,3 +89,12 @@ categories:
 
 - [Pendiente]
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet, Creamy, Lacteal
+* **Textura:** Smooth, Silky, Layered (natas)
+* **Aroma:** Vanilla, Caramelized Milk
+* **Presentación:** 'Crema espesa de color marfil con capas visibles de nata, servida fría.'

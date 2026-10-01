@@ -95,3 +95,12 @@ categories:
 
 - [Pendiente]
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet (maíz tierno), Lacteal (butter/milk), Salty (queso)
+* **Textura:** Soft, Spongy, Moist
+* **Aroma:** Sweet Corn, Butter, Steamed leaf
+* **Presentación:** Paquetes cilíndricos envueltos en hojas de mazorca de color verde pálido o crema, atados manualmente.

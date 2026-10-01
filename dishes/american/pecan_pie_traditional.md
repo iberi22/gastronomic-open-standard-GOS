@@ -98,3 +98,12 @@ Asociado indiscutiblemente con las cenas de Acción de Gracias y Navidad, el Pec
 
 - [Southern Living: Southern Pecan Pie Recipe](https://www.southernliving.com/recipes/southern-pecan-pie-recipe)
 - [NYT Cooking: Traditional Pecan Pie](https://cooking.nytimes.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Caramelizado, Mantecoso, Tostado
+* **Textura:** Crujiente, Cremosa, Densamente suave
+* **Aroma:** Nueces tostadas, Caramelo, Vainilla y mantequilla
+* **Presentación:** Tarta horneada en molde clásico con una capa geométrica superior de nueces pacanas enteras doradas sobre un relleno de caramelo espeso.

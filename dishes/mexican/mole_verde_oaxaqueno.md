@@ -102,3 +102,12 @@ A diferencia de los moles oscuros de cocción prolongada, el Mole Verde Oaxaque�
 
 - [Cocina Vital: Mole verde oaxaqueño tradicional](https://www.cocinavital.mx/recetas/salsas-y-moles/mole-verde-oaxaqueno-tradicional/2021/05/)
 - [El Universal Menú: Gastronomía de Oaxaca](https://www.eluniversal.com.mx/menu/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Herbal, Levemente ácido, Picante fresco, Umami
+* **Textura:** Ligera, Sedosa
+* **Aroma:** Hoja santa, Epazote fresco, Tomatillo
+* **Presentación:** Carne de cerdo bañada en un espeso mole verde brillante, acompañado de chayote y ejotes cocidos.

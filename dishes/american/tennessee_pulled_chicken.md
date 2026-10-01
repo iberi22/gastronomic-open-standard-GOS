@@ -95,3 +95,12 @@ En Tennessee y el centro del Sur estadounidense, la barbacoa no se limita al cer
 
 - [Southern Living: Pulled Chicken Recipe](https://www.southernliving.com/recipes/pulled-chicken-recipe)
 - [Eater: The BBQ Traditions of Tennessee](https://www.eater.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce, Picante, Ácido
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Humo de nogal, Salsa dulce barbacoa, Especias tostadas
+* **Presentación:** Manojo de jugoso pollo desmenuzado en hebras impregnado de salsa barbacoa brillante, servido sobre bollos brioche tostados.

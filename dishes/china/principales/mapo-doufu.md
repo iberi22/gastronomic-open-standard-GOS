@@ -92,3 +92,11 @@ nutrition:
 * 豆腐富含植物蛋白与大豆异黄酮（isoflavones）。
 * 郫县豆瓣酱与豆豉在长期发酵过程中产生大量游离氨基酸（如谷氨酸）与小肽，显著提升菜肴的鲜味（umami）。
 * 花椒粉中的山椒素引发口舌轻微麻痹感，激活口腔 TRPV1 与 TRPA1 感受器。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** numbing, spicy, umami, savory, salty
+* **Textura:** soft, tender, silky
+* **Aroma:** sichuan pepper, fermented bean, garlic

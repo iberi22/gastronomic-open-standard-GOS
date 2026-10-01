@@ -81,3 +81,12 @@ Alimento nutritivo de origen mesoamericano que constituía la base alimenticia d
 ## Fuentes consultadas y enlaces
 
 - [El Universal Menú: Receta de tlacoyos de alverjón](https://www.eluniversal.com.mx/menu/receta-de-tlacoyos-de-alverjon-tradicionales/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Terroso, Salado herbal, Maíz tostado
+* **Textura:** Base firme de maíz, Relleno cremoso de legumbre
+* **Aroma:** Masa azul al comal, Nopal asado
+* **Presentación:** Masa azul romboidal cocida al comal, rellena de alverjón y cubierta con ensalada de nopales, queso rallado y salsa.

@@ -159,3 +159,12 @@ El Pollo Guisado con Dumplings es un plato reconfortante y festivo de la región
 - [ComidaDeColombia: Pollo guisado con dumpling](https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html)
 - [ElRincónColombiano: Dumplings y contexto](https://elrinconcolombiano.com/dumplings-drop-dumplings/)
 - [Astelus: Preparación de dumplings isleños](https://astelus.com/platos-tipicos-colombia/la-preparacion-de-los-dumplings-de-san-andres-y-providencia/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Cremoso, Salado, Ligeramente dulce (coco)
+* **Textura:** Jugoso (pollo), Esponjoso (dumplings), Cremoso (caldo)
+* **Aroma:** Coco, Herbal (tomillo), Sofrito
+* **Presentación:** Se sirve en platos hondos, decorado con ramitas de tomillo fresco. Ideal para almuerzos familiares y celebraciones.

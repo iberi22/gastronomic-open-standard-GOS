@@ -97,3 +97,12 @@ Los Collard Greens encarnan la historia culinaria del Afro-Sur. Las hojas verdes
 
 - [Southern Living: Southern Collard Greens](https://www.southernliving.com/recipes/southern-collard-greens)
 - [NYT Cooking: Southern Collard Greens](https://cooking.nytimes.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Ahumado, Ácido, Amargo
+* **Textura:** Suave, Tierna, Jugosa
+* **Aroma:** Cerdo ahumado, Vinagre hervido, Hojas verdes estofadas
+* **Presentación:** Hojas de berza verde oscuro estofadas y tiernas, servidas en tazón hondo con su reconfortante caldo (potlikker).

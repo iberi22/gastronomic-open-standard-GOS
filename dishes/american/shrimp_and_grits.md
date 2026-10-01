@@ -99,3 +99,12 @@ El Shrimp and Grits pasó de ser un humilde plato de pescadores costeros en la r
 
 - [NYT Cooking: Shrimp and Grits Recipe](https://cooking.nytimes.com/recipes/1018610-shrimp-and-grits)
 - [Southern Living: Classic Shrimp and Grits](https://www.southernliving.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Creamy, Ahumado, Umami
+* **Textura:** Cremosa, Tierna, Crujiente
+* **Aroma:** Mantequilla, Tocineta dorada, Mariscos salteados
+* **Presentación:** Servido en plato hondo con una base cremosa de grits de queso coronada por camarones jugosos en salsa de tocineta y limon.

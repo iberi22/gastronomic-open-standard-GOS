@@ -123,3 +123,12 @@ El Mole Negro Oaxaqueño representa el pináculo de la gastronomía de Oaxaca. E
 
 - [Animal Gourmet: Historia y receta del Mole Negro Oaxaqueño](https://animalgourmet.com/2021/10/28/historia-y-receta-del-mole-negro-oaxaqueno/)
 - [Gobierno de México: Gastronomía de Oaxaca](https://www.gob.mx/agricultura/articulos/mole-negro-de-oaxaca)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce amargo, Especiado, Umami
+* **Textura:** Tersa, Espesa, Terciopelo
+* **Aroma:** Chiles tatemados, Cacao, Hoja de aguacate tostada
+* **Presentación:** Pieza de guajolote o pollo sumergida en una densa y brillante salsa negra profunda, decorada con ajonjolí blanco tostado.

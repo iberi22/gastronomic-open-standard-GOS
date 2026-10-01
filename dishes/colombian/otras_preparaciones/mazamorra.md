@@ -87,3 +87,12 @@ categories:
 
 - [Pendiente]
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Sweet (panela), Neutral (maíz), Lacteal (leche)
+* **Textura:** Chewy (maíz), Liquid (leche)
+* **Aroma:** Fresh Milk, Cooked Corn
+* **Presentación:** Plato de granos blancos en líquido lácteo, acompañado de trozos oscuros de panela o bocadillo.

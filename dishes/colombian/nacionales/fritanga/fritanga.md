@@ -180,3 +180,12 @@ La fritanga es un festín de carnes y fritos típico de reuniones familiares, ce
 ### Fuentes
 
 - [Pendiente]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Umami
+* **Textura:** Crujiente, Jugoso, Suave
+* **Aroma:** Frito, Ahumado, Especiado
+* **Presentación:** Se sirve en bandeja grande o canasta, sobre hojas de plátano, para compartir en ambiente festivo.

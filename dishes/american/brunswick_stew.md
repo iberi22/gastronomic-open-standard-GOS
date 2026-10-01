@@ -101,3 +101,12 @@ El Brunswick Stew es una de las preparaciones comunitarias más antiguas de la g
 
 - [Southern Living: Brunswick Stew Recipe](https://www.southernliving.com/recipes/brunswick-stew-recipe)
 - [NYT Cooking: Traditional Brunswick Stew](https://cooking.nytimes.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Dulce, Ácido, Ahumado
+* **Textura:** Espesa, Tierna, Caldosa
+* **Aroma:** Carne ahumada, Tomate dulce, Maíz tierno
+* **Presentación:** Estofado espeso y reconfortante lleno de carnes desmenuzadas, granos de maíz dorados, habas y patatas en caldo rojo espeso.

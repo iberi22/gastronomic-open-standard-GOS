@@ -109,3 +109,12 @@ A Farofa é um pilar insubstituível na mesa de todas as regiões brasileiras. H
 - [Panelinha: Receita de Farofa de Mandioca](https://www.panelinha.com.br/receita/farofa-de-mandioca)
 - [Wikipédia PT: Farofa](https://pt.wikipedia.org/wiki/Farofa)
 - [Estadão Paladar: O Segredo da Melhor Farofa](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Amanteigado, Defumado, Crocante tostado
+* **Textura:** Crocante, Granulada, Levemente úmida
+* **Aroma:** Manteiga dourada, Bacon tostado, Mandioca assada
+* **Presentación:** Servida em tigela de cerâmica, salpicada com salsinha fresca picada, sendo o acompanhamento perfeito para feijoada, churrasco e moquecas.

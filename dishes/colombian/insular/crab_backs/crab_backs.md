@@ -141,3 +141,11 @@ Crab Backs es uno de los platos más representativos de San Andrés y Providenci
 
 - [SanAndresTravel: Receta de crab backs](https://sanandrestravel.com/receta-crab-backs/)
 - [ElRincónColombiano: Crab backs y contexto](https://elrinconcolombiano.com/crab-backs-o-cangrejos-rellenos/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Marino intenso, Especiado
+* **Textura:** Gratinado suave interior
+* **Aroma:** Cangrejo horneado

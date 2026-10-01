@@ -175,3 +175,12 @@ El salpicón es una bebida-postre refrescante y colorida, tradicional en ferias,
 ### Fuentes
 
 - [Pendiente]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Frutal
+* **Textura:** Refrescante, Jugoso, Con trozos de fruta
+* **Aroma:** Frutal, Cítrico
+* **Presentación:** 'Se sirve en vasos grandes, ideal para días calurosos y fiestas infantiles.'

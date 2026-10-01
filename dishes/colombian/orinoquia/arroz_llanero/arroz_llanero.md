@@ -153,3 +153,12 @@ calificación: ★★★★★ 5/5
 
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/arroz-llanero)
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado
+* **Textura:** Suave, Jugoso
+* **Aroma:** Carnoso, Herbal, Frito
+* **Presentación:** Se sirve en bandejas grandes, ideal para compartir en reuniones y celebraciones llaneras.

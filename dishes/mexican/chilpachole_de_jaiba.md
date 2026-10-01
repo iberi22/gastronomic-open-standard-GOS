@@ -85,3 +85,12 @@ Especialidad mestiza del puerto y costas de Veracruz, el Chilpachole destaca por
 ## Fuentes consultadas y enlaces
 
 - [El Universal Menú: Receta de chilpachole de jaiba de Veracruz](https://www.eluniversal.com.mx/menu/receta-de-chilpachole-de-jaiba-tradicional-de-veracruz/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante intenso, Umami marino, Herbal
+* **Textura:** Caldo espeso terso
+* **Aroma:** Mariscos frescos, Epazote, Chiles asados
+* **Presentación:** Caldo rojo espeso servido en cazuela de barro con jaibas enteras partidas a la mitad y hojas de epazote fresco.

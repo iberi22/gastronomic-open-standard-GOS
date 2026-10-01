@@ -96,3 +96,12 @@ Nacido como una comida de trabajo económica y calórica para leñadores y agric
 
 - [Southern Living: Sausage Gravy and Biscuits](https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits)
 - [NYT Cooking: Classic Sausage Gravy](https://cooking.nytimes.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Creamy, Salado, Especiado, Mantequilloso
+* **Textura:** Esponjosa, Cremosa, Crujiente
+* **Aroma:** Salchicha dorada, Mantequilla horneada, Pimienta negra molida
+* **Presentación:** Biscuits caseros esponjosos cortados por la mitad, bañados generosamente con una salsa blanca es pesada y cargada de trozos de salchicha sazonada.

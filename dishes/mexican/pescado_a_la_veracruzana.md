@@ -87,3 +87,12 @@ Nacido en el histórico puerto de Veracruz, este platillo destaca por la salsa v
 ## Fuentes consultadas y enlaces
 
 - [El Universal Menú: Receta de pescado a la veracruzana paso a paso](https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce ácido por jitomate, Salado picante por aceitunas y alcaparras, Fresco marino
+* **Textura:** Pescado suave y jugoso, Salsa espesa con tropiezos
+* **Aroma:** Laurel y orégano, Aceituna y alcaparra sofrita
+* **Presentación:** Filete blanco de pescado cubierto espléndidamente con un sofrito rojo de jitomate, aceitunas verdes entero, alcaparras y chiles güeros enteros.

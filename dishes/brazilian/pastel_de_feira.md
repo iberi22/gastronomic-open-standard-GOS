@@ -116,3 +116,12 @@ O Pastel de Feira é um dos ícones urbanos mais populares do Brasil. Introduzid
 - [Panelinha: Receita de Pastel de Carne](https://www.panelinha.com.br/receita/pastel-de-carne)
 - [Wikipédia PT: Pastel (culinária)](https://pt.wikipedia.org/wiki/Pastel_(culin%C3%A1ria))
 - [Folha Comida: História do Pastel de Feira](https://www1.folha.uol.com.br/comida)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Umami, Frito crocante, Temperado
+* **Textura:** Crosta muito crocante e leve com bolhas, Recheio suculento
+* **Aroma:** Fritura quente, Carne refogada com cebola e alho
+* **Presentación:** Servido quente em guardanapo de papel, acompanhado tradicionalmente de molho de pimenta caseiro e vinagrete fresco com copo de caldo de cana gelado.

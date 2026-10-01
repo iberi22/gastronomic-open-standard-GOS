@@ -116,3 +116,12 @@ A Galinhada é um dos pratos mais emblemáticos da culinária caipira do interio
 - [Panelinha: Receita de Galinhada](https://www.panelinha.com.br/receita/galinhada)
 - [Wikipédia PT: Galinhada](https://pt.wikipedia.org/wiki/Galinhada)
 - [Estadão Paladar: Culinária de Goiás e Minas](https://paladar.estadao.com.br)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salgado, Umami, Herbal, Levemente cítrico
+* **Textura:** Frango macio e suculento, Arroz solto e molhado
+* **Aroma:** Açafrão cozido, Frango refogado, Pequi (na versão goiana)
+* **Presentación:** Servida diretamente em panela grande de ferro fundido, polvilhada com bastante cheiro-verde fresco e pimenta-biquinho.

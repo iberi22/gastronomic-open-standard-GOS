@@ -140,3 +140,12 @@ El Ají Negro es una salsa ancestral de la Amazonía, elaborada a partir de ají
 - [ElPaís: Ají negro y tradición amazónica](https://elpais.com/elpais/2016/01/21/estilo/1453414376_467974.html)
 - [DelAmazonas: Preparación y contexto](https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/)
 - [USDA FoodData Central: Perfil nutricional](https://fdc.nal.usda.gov/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante, Ácido, Umami, Ahumado
+* **Textura:** Espesa, Untuosa
+* **Aroma:** Fermentado, Picante, Terroso
+* **Presentación:** Se sirve en pequeños cuencos, ideal para acompañar platos amazónicos y resaltar sabores.

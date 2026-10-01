@@ -88,3 +88,12 @@ El Mole Amarillo se consume cotidianamente en Oaxaca. Es versátil y su consiste
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Receta de mole amarillo de Oaxaca](https://animalgourmet.com/2018/07/19/receta-mole-amarillo-oaxaca/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante especiado, Terroso, Ácido suave
+* **Textura:** Caldosa, Espesa con masa
+* **Aroma:** Hoja santa, Chile ahumado amarillo
+* **Presentación:** Caldo denso de color naranja amarillento con carne de res, trozos de chayote, papa y ejote fresco.

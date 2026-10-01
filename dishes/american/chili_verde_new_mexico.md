@@ -100,3 +100,12 @@ En Nuevo México, el chile verde no es solo un ingrediente, sino una religión c
 
 - [Eater: Hatch Green Chile Season in New Mexico](https://www.eater.com/2019/9/25/20882191/hatch-green-chile-season-new-mexico)
 - [NYT Cooking: New Mexico Green Chile Stew](https://cooking.nytimes.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante, Ácido, Umami, Ahumado
+* **Textura:** Tierna, Caldosa, Espesa
+* **Aroma:** Chiles asados, Cerdo estofado, Comino y ajo
+* **Presentación:** Estofado verde espeso con tiernos dados de cerdo sumergidos en una salsa brillante de chiles verdes asados, servido con tortillas de harina tibias.

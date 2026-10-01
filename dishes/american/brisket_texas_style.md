@@ -95,3 +95,12 @@ El brisket estilo Texas es un icono de la gastronomía de los ahumaderos norteam
 
 - [Southern Living: Texas Smoked Brisket Recipe](https://www.southernliving.com/recipes/texas-smoked-brisket)
 - [Eater: The History of Central Texas BBQ](https://www.eater.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Salado, Umami, Especiado
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Ahumado de roble, Pimienta tostada, Carne asada
+* **Presentación:** Trinchado en lonchas gruesas perpendicularmente a la fibra muscular, revelando un anillo de humo rosado profundo y una corteza oscura salpimentada.

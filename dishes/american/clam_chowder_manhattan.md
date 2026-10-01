@@ -101,3 +101,12 @@ Surgido a mediados del siglo XIX entre los inmigrantes italianos y portugueses e
 
 - [NYT Cooking: Manhattan Clam Chowder](https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder)
 - [Eater: The Clam Chowder Debate](https://www.eater.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Ácido, Marino, Ahumado
+* **Textura:** Caldosa, Tierna, Crujiente
+* **Aroma:** Caldo de almejas, Tomate cocido, Tocineta dorada
+* **Presentación:** Sopa de caldo de tomate rojo vibrante repleta de almejas troceadas, patatas en cubos y verduras aromáticas.

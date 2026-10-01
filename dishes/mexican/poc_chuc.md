@@ -84,3 +84,12 @@ Plato tradicional de Oxkutzcab y de toda la península de Yucatán. La acidez pe
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Poc chuc yucateco receta](https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Cítrico marcado, Ahumado a la leña, Salado especiado
+* **Textura:** Carne asada jugosa con bordes crujientes
+* **Aroma:** Carbón de leña, Naranja agria asada
+* **Presentación:** Filetes de cerdo asados al carbón acompañados de cebolla morada curtida asada, chiltomate (salsa de tomate asado), frijoles colados y aguacate.

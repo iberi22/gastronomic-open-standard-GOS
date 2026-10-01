@@ -90,3 +90,11 @@ nutrition:
 
 * 先煮后炒的工艺可将部分游离脂肪溶出，降低肉片的油脂感，同时锁住水分。
 * 郫县豆瓣酱与甜面酱的复配富含挥发性香气成分（吡嗪类与酯类），在高温爆炒下产生独特的浓郁酱香。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** savory, spicy, sweet, rich, umami
+* **Textura:** chewy, tender, crispy edges
+* **Aroma:** garlic scallion, fermented bean, pork lard

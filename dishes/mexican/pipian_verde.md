@@ -85,3 +85,12 @@ Mencionado desde las crónicas de Fray Bernardino de Sahagún, el pipián es uno
 ## Fuentes consultadas y enlaces
 
 - [Cocina Vital: Pipián verde con pollo receta fácil](https://www.cocinavital.mx/recetas/salsas-y-moles/pipian-verde-con-pollo-receta-facil/2018/10/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Nuez terrosa, Herbal fresco, Levemente picante
+* **Textura:** Salsa granulosa suave, Untuosa
+* **Aroma:** Pepita tostada, Hoja santa
+* **Presentación:** Piezas de pollo bañadas en una espesa salsa verde esmeralda con un sutil brillo de aceite de pepita.

@@ -97,3 +97,12 @@ El Crawfish Boil no es solo una receta, sino un evento social emblemático de la
 
 - [Eater: Louisiana Crawfish Boil Guide](https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide)
 - [Southern Living: How to Throw a Crawfish Boil](https://www.southernliving.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Picante, Citrico, Especiado, Salado
+* **Textura:** Crujiente, Tierna, Jugosa
+* **Aroma:** Especias cajún, Limón hervido, Marisco especiado
+* **Presentación:** Servido comunitariamente extendido sobre mesas cubiertas con papel de periódico, acompañado de rodajas de limón y mazorcas de maíz.

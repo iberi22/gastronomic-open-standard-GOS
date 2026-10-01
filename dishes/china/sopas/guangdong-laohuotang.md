@@ -89,3 +89,11 @@ nutrition:
 
 * 长时间慢炖使猪骨中的骨胶原（collagen）与游离氨基酸（如脯氨酸、甘氨酸）缓缓释放入汤中，呈现顺滑黏稠感。
 * 蜜枣与无花果提供天然多糖（polysaccharides）与果糖，给予汤液怡人的天然清甜与抗氧化物质。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** sweet, savory, mild, umami, herbal
+* **Textura:** rich broth, tender pork
+* **Aroma:** sweet date, pork bone broth, herbal

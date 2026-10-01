@@ -86,3 +86,12 @@ Icono indiscutible del desayuno urbano en la zona central de México, los tacos 
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Tacos de canasta historia y receta](https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami especiado, Salado, Suave ahumado
+* **Textura:** Tortilla suave y sudada, Relleno cremoso
+* **Aroma:** Guajolote frito, Cebolla desflemada, Maíz humectado
+* **Presentación:** Tacos doblados y sudados envueltos en papel estraza dentro de una canasta de mimbre, acompañados de salsa verde cruda con aguacate.

@@ -83,3 +83,12 @@ Popularísimo en plazas y esquinas de todo México, el esquite es la botana por 
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Receta de esquites tradicionales con epazote](https://animalgourmet.com/2021/08/11/receta-de-esquites-tradicionales-con-epazote/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Maíz tierno dulce, Herbal penetrante (epazote), Umami cremoso, Picante ácido
+* **Textura:** Granos jugosos y tiernos, Cremosa por mayonesa
+* **Aroma:** Vapor de epazote, Elote tierno
+* **Presentación:** Servido en vaso térmico con su caldo caliente, coronado con mayonesa, queso cotija desmoronado, chile en polvo y jugo de limón.

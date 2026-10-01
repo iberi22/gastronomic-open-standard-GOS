@@ -146,3 +146,12 @@ Los Juanes de Yuca son un plato festivo y tradicional de la Amazonía, especialm
 - [ElComercio.pe: Receta de juanes de yuca y paiche](https://elcomercio.pe/provecho/recetas/receta-de-juanes-de-yuca-y-paiche-noticia/)
 - [DePeru.com: Juane de yuca de Amazonas](https://www.deperu.com/recetas-cocina/plato-de-fondo-o-segundo/juane-de-yuca-de-amazonas-672)
 - [AhorrarNuncaFueTanBueno: Receta de juane](https://www.ahorrarnuncafuetanbueno.com.pe/recetas/receta-de-juane/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Suave, Ligeramente herbal, Umami
+* **Textura:** Suave (masa), Jugoso (relleno)
+* **Aroma:** 'Herbal (bijao, culantro)', Cocido
+* **Presentación:** 'Se sirve envuelto en hojas, ideal para celebraciones y reuniones familiares.'

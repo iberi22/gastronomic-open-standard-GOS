@@ -95,3 +95,12 @@ San Luis, Misuri, es famoso por consumir más salsa barbacoa per cápita que cua
 
 - [Eater: St. Louis BBQ Ribs Guide](https://www.eater.com/2016/6/17/11956792/st-louis-bbq-ribs-guide)
 - [Southern Living: St. Louis Style Ribs](https://www.southernliving.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Ahumado, Dulce, Ácido, Especiado
+* **Textura:** Tierna, Jugosa, Mantequillosa
+* **Aroma:** Humo de manzana, Caramelo y especias, Carne de cerdo asada
+* **Presentación:** Costillar de corte rectangular perfecto con una brillante capa de glaseado de salsa barbacoa y corteza especiada caramelizada.

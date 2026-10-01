@@ -99,3 +99,12 @@ El Po' Boy nació durante la huelga de tranviarios de Nueva Orleans en 1929, cua
 
 - [Eater: Best Po' Boys in New Orleans](https://www.eater.com/maps/best-po-boys-new-orleans)
 - [Southern Living: Classic Shrimp Po' Boy](https://www.southernliving.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Crujiente, Picante, Ácido, Salado
+* **Textura:** Crocante, Esponjosa, Jugosa
+* **Aroma:** Fritura marina, Pan horneado, Especias remoulade
+* **Presentación:** Bocadillo abierto repleto de camarones fritos dorados, sobresaliendo de un pan baguette crujiente con lechuga, tomate y salsa.

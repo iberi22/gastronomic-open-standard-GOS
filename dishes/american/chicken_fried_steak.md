@@ -101,3 +101,12 @@ Derivado del Schnitzel traído por los inmigrantes alemanes y austriacos al cent
 
 - [Southern Living: Classic Chicken Fried Steak](https://www.southernliving.com/recipes/chicken-fried-steak)
 - [Eater: Texas Comfort Food History](https://www.eater.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Crujiente, Creamy, Umami
+* **Textura:** Crocante, Tierna, Cremosa
+* **Aroma:** Fritura dorada, Carne frita, Salsa de pimienta
+* **Presentación:** Filete de ternera emparedado en rebozado crujiente dorado, totalmente cubierto por una espesa salsa de crema y pimienta negra.

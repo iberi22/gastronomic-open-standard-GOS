@@ -148,3 +148,12 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de empanadas de jaiba del Pacífico - El Tiempo](https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941)
 - [Google Maps: Opiniones sobre empanadas de jaiba Pacífico](https://www.google.com/maps/search/empanadas+de+jaiba+pacifico)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/empanadas-de-jaiba)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Picante
+* **Textura:** Crujiente, Suave
+* **Aroma:** Marino (jaiba), Herbal (cilantro y tomillo), Frito
+* **Presentación:** Se sirven calientes, acompañadas de ají o limón. Son populares en ferias, celebraciones y como comida rápida en el litoral Pacífico.

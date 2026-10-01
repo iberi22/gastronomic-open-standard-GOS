@@ -97,3 +97,12 @@ La unión de pollo frito y waffles es una combinación icónica que fusiona el d
 
 - [Southern Living: Classic Chicken and Waffles](https://www.southernliving.com/recipes/classic-chicken-and-waffles)
 - [Eater: The History of Chicken and Waffles](https://www.eater.com)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Salado, Crujiente, Especiado
+* **Textura:** Crujiente, Esponjosa, Jugosa
+* **Aroma:** Pollo frito, Mantequilla tostada, Jarabe de arce caliente
+* **Presentación:** Piezas de pollo frito crujiente apiladas sobre waffles dorados recién hechos, bañados con jarabe de arce tibia y mantequilla.

@@ -89,3 +89,11 @@ nutrition:
 
 * 牛肉逆纹切断粗肌纤维，配合蛋清与淀粉形成的保水水凝胶，使肌肉蛋白在加热时不缩紧失水，保持极致滑嫩。
 * 高温滚油（200°C）瞬间促使干辣椒与花椒中的芳香油脂（Limonene, Linalool, Capsaicin）挥发溶解。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** fiery, numbing, savory, umami, hot
+* **Textura:** velvety tender, crunchy vegetables
+* **Aroma:** hot chili oil, toasted sichuan pepper, garlic

@@ -84,3 +84,12 @@ Patrimonio gastronómico del estado de Hidalgo, la barbacoa integra técnicas pr
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Receta de barbacoa estilo Hidalgo](https://animalgourmet.com/2020/02/12/receta-de-barbacoa-estilo-hidalgo/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami intenso, Ahumado por maguey, Jugoso salado
+* **Textura:** Carne extremadamente suave que se deshace
+* **Aroma:** Maguey tatemado, Grasa de borrego, Especias
+* **Presentación:** Carne suave deshebrada servida sobre penca de maguey asada acompañada de un tazón de consomé con garbanzos y salsa borracha con pulque.

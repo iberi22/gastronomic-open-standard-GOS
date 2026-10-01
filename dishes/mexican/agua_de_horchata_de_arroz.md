@@ -83,3 +83,12 @@ Bebida icónica que acompaña tacos, tortas y banquetes en todo México. Aunque 
 ## Fuentes consultadas y enlaces
 
 - [Cocina Vital: Agua de horchata de arroz tradicional](https://www.cocinavital.mx/recetas/bebidas/agua-de-horchata-de-arroz-tradicional/2018/03/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce cremoso, Canela aromática, Vainilla suave
+* **Textura:** Bebida sedosa y refrescante
+* **Aroma:** Canela recién molida, Vainilla, Arroz dulce
+* **Presentación:** Servida en jarra o vaso de vidrio repleto de hielo, espolvoreada con canela en polvo por encima.

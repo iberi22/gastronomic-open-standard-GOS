@@ -84,3 +84,12 @@ Nacido en los mercados del centro y oriente de la CDMX, el huarache combina la t
 ## Fuentes consultadas y enlaces
 
 - [Cocina Vital: Huarache de cecina con frijoles](https://www.cocinavital.mx/recetas/antojitos-mexicanos/huarache-de-cecina-con-frijoles/2020/09/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado ahumado, Umami, Picante fresco
+* **Textura:** Base de maíz crujiente por fuera y suave por dentro, Cecina firme
+* **Aroma:** Maíz tostado, Carne asada, Frijol frito
+* **Presentación:** Base alargada de maíz en forma de huarache, cubierta de frijoles refritos, una sábana de cecina asada, salsa verde, queso rallado y crema.

@@ -84,3 +84,12 @@ Técnica clásica que demuestra el dominio del capeado en huevo, un arte heredad
 ## Fuentes consultadas y enlaces
 
 - [Cocina Vital: Chiles rellenos de queso capeados](https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami lacteo, Picante vegetal suave, Dulce ácido por caldillo
+* **Textura:** Capeado esponjoso, Queso fundido suave
+* **Aroma:** Chile poblano asado, Caldillo de jitomate
+* **Presentación:** Chile poblano capeado bañado en caldillo rojo ligero de jitomate con orégano.

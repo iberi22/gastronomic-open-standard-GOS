@@ -85,3 +85,12 @@ Sopa clásica peninsular que combina el caldo de pavo o pollo sazonado con un re
 ## Fuentes consultadas y enlaces
 
 - [Animal Gourmet: Sopa de lima yucateca receta](https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Cítrico refrescante, Dulce ligero, Caldo salado herbal
+* **Textura:** Caldo ligero, Crujiente por tortilla
+* **Aroma:** Lima agria, Orégano, Caldo de ave
+* **Presentación:** Caldo transparente servido en tazón profundo, repleto de tiras crujientes de tortilla frita y rodajas de lima agria flotando.
