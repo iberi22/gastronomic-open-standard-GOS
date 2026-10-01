@@ -214,5 +214,19 @@ const imageUrl = image
           linear-gradient(90deg, rgba(28,25,23,0.04) 1px, transparent 1px);
       }
     </style>
+    <script is:inline>
+      // PWA: registrar el service worker. Sin esto /sw.js existe y sirve 200,
+      // pero el navegador nunca lo instala (medido 2026-10-01 en produccion:
+      // 0 registros, 0 caches) y la app no funciona offline.
+      // vite-plugin-pwa genera dist/registerSW.js pero ningun layout lo
+      // importaba, asi que el snippet se replica aqui a proposito.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {
+            // Sin SW la app sigue usable online; no romper la carga.
+          })
+        })
+      }
+    </script>
   </body>
 </html>
