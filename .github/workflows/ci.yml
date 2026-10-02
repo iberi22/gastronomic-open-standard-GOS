@@ -59,6 +59,34 @@ jobs:
       # TODO(wave-C.05): python3 scripts/audit_content.py --check
       - run: pnpm --filter gos-site test
 
+  # Tests del gateway de agentes.
+  #
+  # Este job no existia y su ausencia era el agujero por el que volvio el
+  # bypass de autenticacion: deploy-worker.yml despliega en cada push a
+  # worker/** y nunca ejecutaba estos tests, asi que un cambio que
+  # reintrodujera el fallback por substring habria llegado a produccion
+  # sin que nadie lo notara. Los 54 tests de worker/test/ son lo unico que
+  # detecta esa regresion.
+  worker-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Install worker dependencies
+        working-directory: ./worker
+        run: npm install --no-audit --no-fund
+        env:
+          # ningun lifecycle script corre en el worker
+          npm_config_ignore_scripts: 'true'
+      - name: Typecheck
+        working-directory: ./worker
+        run: npm run typecheck
+      - name: Tests
+        working-directory: ./worker
+        run: npm test
+
   gos-audit:
     runs-on: ubuntu-latest
     continue-on-error: true

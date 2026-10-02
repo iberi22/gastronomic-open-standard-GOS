@@ -18,9 +18,34 @@ concurrency:
 jobs:
   deploy-worker:
     runs-on: ubuntu-latest
+    # Gate obligatorio, ejecutando los tests AQUI y no como needs: de otro
+    # workflow. GitHub Actions no permite que 'needs' referencie un job de
+    # otro workflow, asi que la unica forma de que el deploy dependa de los
+    # tests es correrlos en este mismo job, antes del paso de despliegue.
+    #
+    # El gateway es la superficie que quedo expuesta por el bypass de
+    # autenticacion y este workflow despliega en CADA push a worker/**. Sin
+    # este gate, reintroducir el fallback por substring se desplegaba solo.
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Install worker dependencies
+        working-directory: ./worker
+        run: npm install --no-audit --no-fund
+        env:
+          npm_config_ignore_scripts: 'true'
+
+      - name: Typecheck
+        working-directory: ./worker
+        run: npm run typecheck
+
+      - name: Tests
+        working-directory: ./worker
+        run: npm test
 
       - name: ⚡ Deploy API Gateway Worker (dry-run primero en PRs)
         uses: cloudflare/wrangler-action@v4
