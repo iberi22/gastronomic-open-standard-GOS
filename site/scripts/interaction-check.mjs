@@ -32,7 +32,7 @@ const step = async (name, fn) => {
     results.push({
       step: name,
       ok: false,
-      detalle: 'EXC ' + String(e).slice(0, 180).replace(/\s+/g, ' '),
+      detalle: `EXC ${String(e).slice(0, 180).replace(/\s+/g, ' ')}`,
     })
   }
 }
@@ -48,7 +48,7 @@ page.on('console', (m) => {
   if (m.type() === 'error') errors.push(m.text().slice(0, 200))
 })
 page.on('pageerror', (e) =>
-  errors.push('PAGEERROR: ' + String(e).slice(0, 200)),
+  errors.push(`PAGEERROR: ${String(e).slice(0, 200)}`),
 )
 
 await page.goto(`${base}/graph`, {
@@ -95,7 +95,7 @@ await step('hover-nodo', async () => {
   })
   await page.screenshot({ path: `${out}/hover.png` })
   if (!chip) throw new Error('sin chip de resaltado')
-  return chip + ' · nodo=' + hub.label
+  return `${chip} · nodo=${hub.label}`
 })
 
 // 2) búsqueda → resultado → ficha (cierra la ficha al terminar)
@@ -143,7 +143,7 @@ await step('cobertura-tras-foco', async () => {
     const d = window.__geDebug()
     return { fill: +d.coverage.fill.toFixed(3), visible: d.visible }
   })
-  if (c.fill <= 0.85) throw new Error('fill ' + c.fill)
+  if (c.fill <= 0.85) throw new Error(`fill ${c.fill}`)
   return JSON.stringify(c)
 })
 
@@ -284,10 +284,10 @@ await step('movil', async () => {
   })
   const mpage = await mctx.newPage()
   mpage.on('console', (m) => {
-    if (m.type() === 'error') errors.push('MOVIL: ' + m.text().slice(0, 200))
+    if (m.type() === 'error') errors.push(`MOVIL: ${m.text().slice(0, 200)}`)
   })
   mpage.on('pageerror', (e) =>
-    errors.push('MOVIL PAGEERROR: ' + String(e).slice(0, 200)),
+    errors.push(`MOVIL PAGEERROR: ${String(e).slice(0, 200)}`),
   )
   await mpage.goto(`${base}/graph`, {
     waitUntil: 'domcontentloaded',
@@ -328,7 +328,7 @@ await step('movil', async () => {
   )
   await mpage.screenshot({ path: `${out}/movil-390.png` })
   await mctx.close()
-  if (cov.fill <= 0.85) throw new Error('fill ' + cov.fill)
+  if (cov.fill <= 0.85) throw new Error(`fill ${cov.fill}`)
   if (!open) throw new Error('el tap no abrió la ficha')
   if (overflow) throw new Error('overflow horizontal en 390px')
   return `fill=${cov.fill} cont=${cov.cont.w}x${cov.cont.h} · tap-ficha=ok · filtro visibles=${vis}`
@@ -344,6 +344,6 @@ for (const r of results)
   console.log(`${r.ok ? 'PASS' : 'FAIL'}  ${r.step.padEnd(22)} ${r.detalle}`)
 console.log(`errores de consola: ${errors.length}`)
 errors.slice(0, 5).forEach((e) => {
-  console.log('  ↳ ' + e)
+  console.log(`  ↳ ${e}`)
 })
 console.log('capturas →', out)

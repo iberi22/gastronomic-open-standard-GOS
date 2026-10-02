@@ -170,7 +170,6 @@ function renderSigma(
   const paper = () =>
     getComputedStyle(el).getPropertyValue('--g-paper').trim() || '#faf9f5'
 
-
   const g = new Graph({ multi: true })
   subset.forEach((n, i) => {
     g.addNode(n.id, {

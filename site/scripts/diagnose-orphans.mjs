@@ -22,7 +22,7 @@ if (sample) {
   const prefix = sample.split('_')[0]
   const parecidos = d.nodes
     .filter(
-      (n) => n.id.startsWith(prefix + '_') && n.id.length < sample.length + 8,
+      (n) => n.id.startsWith(`${prefix}_`) && n.id.length < sample.length + 8,
     )
     .slice(0, 10)
   console.log(`\nnodos con prefijo "${prefix}_" (muestra):`)

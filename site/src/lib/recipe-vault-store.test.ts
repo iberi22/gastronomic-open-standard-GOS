@@ -8,7 +8,6 @@
 // Usa la capa headless (recipe-vault.ts), no el componente Svelte: vitest no
 // tiene plugin de Svelte en este repo, y la lógica debe ser testeable igual.
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import type { DomainRecord } from './domain'
 import { IndexedDBStorageAdapter } from './indexeddb'
 import {
   nextVaultRecipeId,

@@ -16,7 +16,7 @@ const sanitizeId = (t) =>
     .toLowerCase()
     .trim()
     .replace(/[^a-z0-9_]/g, '_')
-const isLatinText = (t) => /[a-zA-ZÀ-ÿ]/.test(String(t || ''))
+const _isLatinText = (t) => /[a-zA-ZÀ-ÿ]/.test(String(t || ''))
 
 // ids que produciría el escáner de ciencia (name || basename)
 const sciIds = new Set()

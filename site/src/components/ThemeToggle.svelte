@@ -1,32 +1,40 @@
 <script lang="ts">
-  import { Icon } from '@swal/ui'
-  import { setTheme } from '@swal/ui/theme-boot'
-  import { onMount } from 'svelte'
-  import '../lib/gos-icons'
+import { Icon } from '@swal/ui'
+import { setTheme } from '@swal/ui/theme-boot'
+import { onMount } from 'svelte'
+import '../lib/gos-icons'
 
-  // Claro / oscuro / sistema. El script de arranque del <head> aplica la
-  // eleccion guardada antes de pintar; aqui solo se cambia y persiste en
-  // runtime. 'system' borra la eleccion y deja que el CSS siga al sistema.
-  type Mode = 'system' | 'light' | 'dark'
-  const ORDER: Mode[] = ['system', 'light', 'dark']
-  const LABEL: Record<Mode, string> = { system: 'Sistema', light: 'Claro', dark: 'Oscuro' }
-  const ICON: Record<Mode, string> = { system: 'monitor', light: 'sun', dark: 'moon' }
+// Claro / oscuro / sistema. El script de arranque del <head> aplica la
+// eleccion guardada antes de pintar; aqui solo se cambia y persiste en
+// runtime. 'system' borra la eleccion y deja que el CSS siga al sistema.
+type Mode = 'system' | 'light' | 'dark'
+const ORDER: Mode[] = ['system', 'light', 'dark']
+const LABEL: Record<Mode, string> = {
+  system: 'Sistema',
+  light: 'Claro',
+  dark: 'Oscuro',
+}
+const ICON: Record<Mode, string> = {
+  system: 'monitor',
+  light: 'sun',
+  dark: 'moon',
+}
 
-  let mode = $state<Mode>('system')
+let mode = $state<Mode>('system')
 
-  onMount(() => {
-    try {
-      const saved = localStorage.getItem('swal-theme')
-      if (saved === 'light' || saved === 'dark') mode = saved
-    } catch {
-      /* localStorage bloqueado: se sigue al sistema */
-    }
-  })
-
-  function next() {
-    mode = ORDER[(ORDER.indexOf(mode) + 1) % ORDER.length]
-    setTheme(mode)
+onMount(() => {
+  try {
+    const saved = localStorage.getItem('swal-theme')
+    if (saved === 'light' || saved === 'dark') mode = saved
+  } catch {
+    /* localStorage bloqueado: se sigue al sistema */
   }
+})
+
+function next() {
+  mode = ORDER[(ORDER.indexOf(mode) + 1) % ORDER.length]
+  setTheme(mode)
+}
 </script>
 
 <button

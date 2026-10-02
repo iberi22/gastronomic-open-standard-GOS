@@ -177,7 +177,9 @@ describe('N-04: throttle antes de D1', () => {
   it('sin binding RL_AUTH falla abierto (no tumba el servicio)', async () => {
     const { env } = setup()
     const res = await worker.fetch(
-      new Request(`${GW}/api/all.json`, { headers: { 'x-api-key': 'nope_key1' } }),
+      new Request(`${GW}/api/all.json`, {
+        headers: { 'x-api-key': 'nope_key1' },
+      }),
       env as never,
     )
     expect(res.status).toBe(401)

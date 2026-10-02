@@ -62,7 +62,7 @@ let transport = $state<'local' | 'endpoint' | null>(null)
 let endpointNote = $state('')
 
 function creditKey(t: SocioTier['id']): string {
-  return 'credits:gos:' + t
+  return `credits:gos:${t}`
 }
 
 /**
@@ -198,7 +198,7 @@ async function ask() {
       body: JSON.stringify({ question: q, tierId, used: usedTokens }),
     }).catch(() => null)
 
-    if (res && res.ok) {
+    if (res?.ok) {
       const body = (await res.json().catch(() => null)) as {
         data?: GroundedAnswer
       } | null
