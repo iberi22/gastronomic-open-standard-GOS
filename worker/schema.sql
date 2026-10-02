@@ -43,3 +43,14 @@ CREATE TABLE IF NOT EXISTS credit_ledger (
   used INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (key_id, period)
 );
+
+-- Cuota diaria del tier free por IP (hash sha256 truncado, nunca la IP en
+-- claro). Se incrementa con UN solo UPSERT atomico por peticion NO estatica.
+-- Los dias viejos no se leen; se pueden purgar con:
+--   DELETE FROM free_quota WHERE day < date('now', '-2 day');
+CREATE TABLE IF NOT EXISTS free_quota (
+  ip_key TEXT NOT NULL,
+  day TEXT NOT NULL,              -- YYYY-MM-DD
+  n INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (ip_key, day)
+);

@@ -174,4 +174,10 @@ CREATE TABLE IF NOT EXISTS credit_ledger (
   used INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (key_id, period)
 );
+CREATE TABLE IF NOT EXISTS free_quota (
+  ip_key TEXT NOT NULL,
+  day TEXT NOT NULL,
+  n INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (ip_key, day)
+);
 `

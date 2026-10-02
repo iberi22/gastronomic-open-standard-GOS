@@ -1,12 +1,7 @@
 // Tipos mínimos Cloudflare para typecheck sin @cloudflare/workers-types
 // (red medida: sin installs; el deploy real valida con wrangler).
-interface KVNamespace {
-  get(key: string): Promise<string | null>
-  put(
-    key: string,
-    value: string,
-    opts?: { expirationTtl?: number },
-  ): Promise<void>
+interface RateLimit {
+  limit(opts: { key: string }): Promise<{ success: boolean }>
 }
 
 interface D1PreparedStatement {
@@ -18,4 +13,9 @@ interface D1PreparedStatement {
 
 interface D1Database {
   prepare(sql: string): D1PreparedStatement
+}
+
+interface Cache {
+  match(req: Request): Promise<Response | undefined>
+  put(req: Request, res: Response): Promise<void>
 }

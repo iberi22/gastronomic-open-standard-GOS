@@ -7,15 +7,18 @@ import { createFakeD1, type FakeD1 } from './d1-fake'
 
 const GW = 'https://gos-api-gateway.test'
 
-function fakeKV() {
-  const m = new Map<string, string>()
+/** Mock del Rate Limiting binding: ventana fija sin reloj, N por clave. */
+function fakeRL(limit: number) {
+  const m = new Map<string, number>()
+  const calls: string[] = []
   return {
     m,
-    async get(k: string) {
-      return m.get(k) ?? null
-    },
-    async put(k: string, v: string) {
-      m.set(k, v)
+    calls,
+    async limit({ key }: { key: string }) {
+      calls.push(key)
+      const n = (m.get(key) ?? 0) + 1
+      m.set(key, n)
+      return { success: n <= limit }
     },
   }
 }
@@ -36,17 +39,15 @@ function setup(opts: { aiChars?: number } = {}) {
   const fake = createFakeD1({ applySchema: true })
   fake.seed({ key: 'gs_key_alpha', tier: 'socio' })
   fake.seed({ key: 'gs_key_beta', tier: 'socio' })
-  const kv = fakeKV()
   const { db, c } = countingDb(fake)
   const env = {
     ORIGIN_URL: 'https://origin.test',
     DB: db,
-    RATE_LIMIT_KV: kv,
     AI: {
       run: async () => ({ response: 'x'.repeat(opts.aiChars ?? 40) }),
     },
   }
-  return { fake, kv, env, c }
+  return { fake, env, c }
 }
 
 function infer(
@@ -136,9 +137,9 @@ describe('N-04: throttle antes de D1', () => {
     expect(c.prepares).toBe(0)
   })
 
-  it('tras AUTH_FAIL_LIMIT fallos, la IP recibe 429 y D1 deja de consultarse', async () => {
+  it('tras agotar el binding RL_AUTH, la IP recibe 429 y D1 deja de consultarse', async () => {
     const { env, c } = setup()
-    const e = { ...env, AUTH_FAIL_LIMIT: '3' }
+    const e = { ...env, RL_AUTH: fakeRL(3) }
     const hit = (key: string) =>
       worker.fetch(
         new Request(`${GW}/api/all.json`, {
@@ -146,18 +147,19 @@ describe('N-04: throttle antes de D1', () => {
         }),
         e as never,
       )
+    // El gate cuenta ip y prefijo; claves con prefijo distinto aislan la IP.
     for (let i = 0; i < 3; i++)
-      expect((await hit(`bad_key_${i}x`)).status).toBe(401)
+      expect((await hit(`bad${i}_key_x`)).status).toBe(401)
     const before = c.prepares
     expect(before).toBe(3)
     for (let i = 10; i < 20; i++)
-      expect((await hit(`bad_key_${i}x`)).status).toBe(429)
+      expect((await hit(`bad${i}_key_x`)).status).toBe(429)
     expect(c.prepares).toBe(before)
   })
 
   it('throttle por prefijo de key aunque cambie la IP', async () => {
     const { env, c } = setup()
-    const e = { ...env, AUTH_FAIL_LIMIT: '2' }
+    const e = { ...env, RL_AUTH: fakeRL(2) }
     const hit = (ip: string) =>
       worker.fetch(
         new Request(`${GW}/api/all.json`, {
@@ -170,6 +172,143 @@ describe('N-04: throttle antes de D1', () => {
     const before = c.prepares
     expect((await hit('3.3.3.3')).status).toBe(429)
     expect(c.prepares).toBe(before)
+  })
+
+  it('sin binding RL_AUTH falla abierto (no tumba el servicio)', async () => {
+    const { env } = setup()
+    const res = await worker.fetch(
+      new Request(`${GW}/api/all.json`, { headers: { 'x-api-key': 'nope_key1' } }),
+      env as never,
+    )
+    expect(res.status).toBe(401)
+  })
+})
+
+describe('rate limit free: binding + D1, sin KV', () => {
+  const origin = () =>
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('{"ok":true}', { status: 200 })),
+    )
+  const get = (path: string, env: unknown, ip = '5.5.5.5') =>
+    worker.fetch(
+      new Request(`${GW}${path}`, { headers: { 'cf-connecting-ip': ip } }),
+      env as never,
+    )
+
+  it('rutas estaticas nunca tocan D1 (ni KV): cache primero, sin prepare()', async () => {
+    const { env, c } = setup()
+    const store = new Map<string, Response>()
+    vi.stubGlobal('caches', {
+      default: {
+        match: async (r: Request) => store.get(r.url)?.clone(),
+        put: async (r: Request, res: Response) => {
+          store.set(r.url, res)
+        },
+      },
+    })
+    origin()
+    const kv = { get: vi.fn(), put: vi.fn() }
+    const e = { ...env, RATE_LIMIT_KV: kv, RL_FREE_BURST: fakeRL(1000) }
+    for (const p of [
+      '/api/all.json',
+      '/api/by-country/mx.json',
+      '/api/v1/recipes',
+      '/graph-data.json',
+    ]) {
+      expect((await get(p, e)).status).toBe(200)
+    }
+    // segunda lectura: viene de cache, el origen no se vuelve a llamar
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const calls = f.mock.calls.length
+    expect((await get('/api/all.json', e)).status).toBe(200)
+    expect(f.mock.calls.length).toBe(calls)
+    vi.unstubAllGlobals()
+    expect(c.prepares).toBe(0)
+    expect(kv.get).not.toHaveBeenCalled()
+    expect(kv.put).not.toHaveBeenCalled()
+  })
+
+  it('rafaga: superado el limite del binding responde 429 sin D1 ni origen', async () => {
+    const { env, c } = setup()
+    origin()
+    const e = { ...env, RL_FREE_BURST: fakeRL(3) }
+    const st: number[] = []
+    for (let i = 0; i < 5; i++) st.push((await get('/api/all.json', e)).status)
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    expect(f.mock.calls.length).toBe(3)
+    vi.unstubAllGlobals()
+    expect(st).toEqual([200, 200, 200, 429, 429])
+    expect(c.prepares).toBe(0)
+  })
+
+  it('rafaga: es por IP', async () => {
+    const { env } = setup()
+    origin()
+    const e = { ...env, RL_FREE_BURST: fakeRL(1) }
+    expect((await get('/api/all.json', e, '1.1.1.1')).status).toBe(200)
+    expect((await get('/api/all.json', e, '1.1.1.1')).status).toBe(429)
+    expect((await get('/api/all.json', e, '2.2.2.2')).status).toBe(200)
+    vi.unstubAllGlobals()
+  })
+
+  it('cuota diaria en D1: un UPSERT por peticion no estatica y 429 al agotarse', async () => {
+    const { fake, env, c } = setup()
+    origin()
+    const e = { ...env, FREE_DAILY_LIMIT: '3' }
+    const st: number[] = []
+    let last: Response | undefined
+    for (let i = 0; i < 5; i++) {
+      last = await get('/api/entities/recipe', e)
+      st.push(last.status)
+    }
+    vi.unstubAllGlobals()
+    expect(st).toEqual([200, 200, 200, 429, 429])
+    expect(last?.headers.get('retry-after')).toBe('86400')
+    expect(c.sqls.filter((q) => q.includes('free_quota'))).toHaveLength(5)
+    const row = await fake.db
+      .prepare('SELECT ip_key, n FROM free_quota')
+      .all<{ ip_key: string; n: number }>()
+    expect(row.results).toHaveLength(1)
+    expect(row.results?.[0].n).toBe(3)
+    expect(row.results?.[0].ip_key).not.toContain('5.5.5.5')
+  })
+
+  it('cuota diaria: concurrencia atomica, caben exactamente 4 de 10', async () => {
+    const { env } = setup()
+    origin()
+    const e = { ...env, FREE_DAILY_LIMIT: '4' }
+    const rs = await Promise.all(
+      Array.from({ length: 10 }, () => get('/api/entities/x', e)),
+    )
+    vi.unstubAllGlobals()
+    expect(rs.filter((r) => r.status === 200)).toHaveLength(4)
+  })
+
+  it('una key de pago no cuenta cuota ni rafaga free', async () => {
+    const { env, c } = setup()
+    origin()
+    const rl = fakeRL(0)
+    const e = { ...env, RL_FREE_BURST: rl, FREE_DAILY_LIMIT: '1' }
+    const r = await worker.fetch(
+      new Request(`${GW}/api/entities/recipe`, {
+        headers: { 'x-api-key': 'gs_key_alpha' },
+      }),
+      e as never,
+    )
+    vi.unstubAllGlobals()
+    expect(r.status).toBe(200)
+    expect(rl.calls).toHaveLength(0)
+    expect(c.sqls.some((q) => q.includes('free_quota'))).toBe(false)
+  })
+
+  it('D1 caida en la cuota free: falla abierto, la rafaga sigue protegiendo', async () => {
+    const { env } = setup()
+    origin()
+    const bad = createFakeD1({ mode: 'throws', applySchema: true })
+    const r = await get('/api/entities/recipe', { ...env, DB: bad.db })
+    vi.unstubAllGlobals()
+    expect(r.status).toBe(200)
   })
 })
 
