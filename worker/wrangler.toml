@@ -14,9 +14,20 @@ FREE_DAILY_LIMIT = "100"
 # SERVICE_SHARED_SECRET va por secreto, nunca aquí:
 #   wrangler secret put SERVICE_SHARED_SECRET
 
-[[kv_namespaces]]
-binding = "RATE_LIMIT_KV"
-id = "9aef690dde244d51982f2947dba2d7aa"
+# Sin KV: el namespace compartido 9aef... (SWAL_KV del sitio) superaba las
+# 1000 escrituras/dia del free tier. Todo el limitado va por Rate Limiting
+# bindings (sin cuota de KV/D1) y la cuota diaria free por un UPSERT en D1.
+# namespace_id: entero propio de esta cuenta, unico por limiter.
+[[ratelimits]]
+name = "RL_FREE_BURST"
+namespace_id = "7101"
+simple = { limit = 30, period = 60 }
+
+# Compuerta de intentos con key (por IP y por prefijo de key) antes de D1.
+[[ratelimits]]
+name = "RL_AUTH"
+namespace_id = "7102"
+simple = { limit = 20, period = 60 }
 
 [[d1_databases]]
 binding = "DB"

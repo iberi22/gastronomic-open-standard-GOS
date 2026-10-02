@@ -1,5 +1,8 @@
 export interface Env {
-  RATE_LIMIT_KV?: KVNamespace
+  /** Workers Rate Limiting binding: rafaga free por IP (30/60s). */
+  RL_FREE_BURST?: RateLimit
+  /** Workers Rate Limiting binding: compuerta de intentos con key (ip / prefijo). */
+  RL_AUTH?: RateLimit
   DB?: D1Database
   /**
    * Key de desarrollo, solo para local sin binding D1. NUNCA en produccion:
@@ -23,8 +26,6 @@ export interface Env {
    * SERVICE_SHARED_SECRET. Se retirara cuando el deploy ya no lo defina.
    */
   BILLING_SERVICE_SECRET?: string
-  /** Fallos de auth por IP/prefijo y hora antes de cortar sin tocar D1. */
-  AUTH_FAIL_LIMIT?: string
 }
 
 import { reportSwalUsage, verifySwalKey } from './swal-billing'
@@ -74,51 +75,43 @@ async function ledgerKeyId(apiKey: string): Promise<string> {
   return `key:${(await sha256Hex(apiKey)).slice(0, 32)}`
 }
 
-function hourKey(): string {
-  return new Date().toISOString().slice(0, 13)
-}
-
-async function authFailCount(
-  kv: KVNamespace | undefined,
-  keys: string[],
-): Promise<number> {
-  if (!kv) return 0
-  let max = 0
-  for (const k of keys) {
-    try {
-      const v = await kv.get(k)
-      max = Math.max(max, v ? parseInt(v, 10) || 0 : 0)
-    } catch (err) {
-      console.error('KV auth-fail get error:', err)
-    }
-  }
-  return max
-}
-
-async function recordAuthFail(
-  kv: KVNamespace | undefined,
-  keys: string[],
-): Promise<void> {
-  if (!kv) return
-  for (const k of keys) {
-    try {
-      const v = await kv.get(k)
-      await kv.put(k, String((v ? parseInt(v, 10) || 0 : 0) + 1), {
-        expirationTtl: 3600,
-      })
-    } catch (err) {
-      console.error('KV auth-fail put error:', err)
-    }
+/**
+ * Consulta un Rate Limiting binding. Fail-open si falta o falla: el limiter
+ * es defensa en profundidad, no puede tumbar el servicio.
+ */
+async function allowed(
+  rl: RateLimit | undefined,
+  key: string,
+): Promise<boolean> {
+  if (!rl) return true
+  try {
+    return (await rl.limit({ key })).success
+  } catch (err) {
+    console.error('rate limit binding error:', err)
+    return true
   }
 }
 
-function getTodayKey(ip: string): string {
-  const today = new Date().toISOString().split('T')[0]
-  return `rl:${ip}:${today}`
+/**
+ * Datos estaticos cacheables: JSON de /api (excepto rutas dinamicas) y los
+ * archivos del sitio. Se sirven desde Cache API y no tocan D1.
+ */
+function isStaticCacheable(path: string, method: string): boolean {
+  if (method !== 'GET' && method !== 'HEAD') return false
+  if (/^\/api\/(ai|entities|agent)(\/|$)/.test(path)) return false
+  if (path.startsWith('/api/v1/')) return true
+  if (path.startsWith('/api/') && path.endsWith('.json')) return true
+  return path === '/graph-data.json' || /^\/llms(-full)?\.txt$/.test(path)
 }
+
+const STATIC_TTL = 3600
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(
+    request: Request,
+    env: Env,
+    ctx?: { waitUntil(p: Promise<unknown>): void },
+  ): Promise<Response> {
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: CORS_HEADERS })
     }
@@ -179,7 +172,6 @@ export default {
 
     // 2a. Rechazo barato ANTES de cualquier D1/billing: forma invalida y
     // throttle de fallos por IP y por prefijo de key.
-    let failKeys: string[] = []
     if (apiKey) {
       if (!KEY_SHAPE.test(apiKey)) {
         return jsonResponse(
@@ -190,17 +182,16 @@ export default {
           401,
         )
       }
-      const hour = hourKey()
-      failKeys = [
-        `authfail:ip:${clientIp}:${hour}`,
-        `authfail:pfx:${apiKey.slice(0, 8)}:${hour}`,
-      ]
-      const failLimit = parseInt(env.AUTH_FAIL_LIMIT || '20', 10)
-      if ((await authFailCount(env.RATE_LIMIT_KV, failKeys)) >= failLimit) {
+      // Compuerta de intentos por IP y por prefijo de key (binding, sin
+      // KV ni D1). Cuenta intentos, no solo fallos: un binding no se puede
+      // consultar sin incrementarlo.
+      const okIp = await allowed(env.RL_AUTH, `ip:${clientIp}`)
+      const okPfx = await allowed(env.RL_AUTH, `pfx:${apiKey.slice(0, 8)}`)
+      if (!okIp || !okPfx) {
         return jsonResponse(
-          { error: 'Too many failed key attempts', tier: 'throttled' },
+          { error: 'Too many key attempts', tier: 'throttled' },
           429,
-          { 'Retry-After': '3600' },
+          { 'Retry-After': '60' },
         )
       }
     }
@@ -224,7 +215,6 @@ export default {
         )
       }
       if (!verdict.active) {
-        await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
         return jsonResponse(
           {
             error: 'Unauthorized: Invalid or inactive API key',
@@ -252,8 +242,7 @@ export default {
             isPaidKey = true
             keyTier = result.tier || 'socio'
           } else {
-            await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
-            return jsonResponse(
+                return jsonResponse(
               {
                 error: 'Unauthorized: Invalid or inactive API key',
                 tier: 'invalid',
@@ -284,8 +273,7 @@ export default {
           isPaidKey = true
           keyTier = 'tiersocio'
         } else {
-          await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
-          return jsonResponse(
+            return jsonResponse(
             {
               error: 'Unauthorized: no key store configured',
               tier: 'no-store',
@@ -308,55 +296,66 @@ export default {
       )
     }
 
-    // 3. Rate Limiting for Free Tier (KV)
+    // 3. Rate limiting del tier free: rafaga por binding (30/60s por IP) y
+    // cuota diaria en D1 con UN UPSERT atomico, solo en rutas no estaticas.
+    // Las estaticas se sirven de Cache API y no tocan D1 ni KV.
+    const staticRoute = isStaticCacheable(path, request.method)
     let currentCount = 0
-    const kvKey = getTodayKey(clientIp)
 
     if (!isPaidKey) {
-      if (env.RATE_LIMIT_KV) {
-        try {
-          const val = await env.RATE_LIMIT_KV.get(kvKey)
-          currentCount = val ? parseInt(val, 10) : 0
-        } catch (kvErr) {
-          console.error('KV get error:', kvErr)
-        }
-      }
-
-      if (currentCount >= freeDailyLimit) {
+      if (!(await allowed(env.RL_FREE_BURST, `ip:${clientIp}`))) {
         return jsonResponse(
           {
-            error: 'Rate limit exceeded: 100 req/day for free tier.',
+            error: 'Rate limit exceeded: too many requests, slow down.',
             tier: 'free',
-            limit: freeDailyLimit,
-            remaining: 0,
-            message:
-              'Provide a valid paid key in header x-api-key for unlimited access.',
+            message: 'Burst limit: 30 requests/minute per IP.',
           },
           429,
-          {
-            'Retry-After': '86400',
-            'X-RateLimit-Limit': String(freeDailyLimit),
-            'X-RateLimit-Remaining': '0',
-            'X-RateLimit-Tier': 'free',
-          },
+          { 'Retry-After': '60', 'X-RateLimit-Tier': 'free' },
         )
       }
 
-      // Increment KV count
-      if (env.RATE_LIMIT_KV) {
+      if (!staticRoute && env.DB) {
+        const day = new Date().toISOString().slice(0, 10)
         try {
-          await env.RATE_LIMIT_KV.put(kvKey, String(currentCount + 1), {
-            expirationTtl: 86400,
-          })
-        } catch (kvErr) {
-          console.error('KV put error:', kvErr)
+          const ipKey = `ip:${(await sha256Hex(clientIp)).slice(0, 32)}`
+          // Sin fila RETURNING = cuota agotada (el WHERE del DO UPDATE falla).
+          const row = await env.DB.prepare(
+            'INSERT INTO free_quota (ip_key, day, n) VALUES (?, ?, 1) ' +
+              'ON CONFLICT(ip_key, day) DO UPDATE SET n = n + 1 WHERE n < ? ' +
+              'RETURNING n',
+          )
+            .bind(ipKey, day, freeDailyLimit)
+            .first<{ n: number }>()
+          if (!row) {
+            return jsonResponse(
+              {
+                error: `Rate limit exceeded: ${freeDailyLimit} req/day for free tier.`,
+                tier: 'free',
+                limit: freeDailyLimit,
+                remaining: 0,
+                message:
+                  'Provide a valid paid key in header x-api-key for unlimited access.',
+              },
+              429,
+              {
+                'Retry-After': '86400',
+                'X-RateLimit-Limit': String(freeDailyLimit),
+                'X-RateLimit-Remaining': '0',
+                'X-RateLimit-Tier': 'free',
+              },
+            )
+          }
+          currentCount = row.n
+        } catch (dbErr) {
+          // Fail-open: la rafaga del binding sigue protegiendo.
+          console.error('D1 free quota error:', dbErr)
         }
       }
-      currentCount++
     }
 
     // 3b. POST /api/ai/infer — inferencia socio via Workers AI (solo paid keys).
-    // Fuente: site/workers/ai.ts adaptado a bindings del gateway (DB/RATE_LIMIT_KV,
+    // Fuente: site/workers/ai.ts adaptado a bindings del gateway (DB,
     // ledger en D1 tabla credit_ledger. Pricing = billing.ts calculatePrice inline).
     if (path === '/api/ai/infer') {
       if (request.method !== 'POST') {
@@ -512,14 +511,38 @@ export default {
     const fwdQs = fwd.toString()
     const targetUrl = `${originUrl}${path}${fwdQs ? `?${fwdQs}` : ''}`
     try {
-      const originRes = await fetch(targetUrl, {
-        method: request.method,
-        body: isReadMethod ? undefined : await request.arrayBuffer(),
-        headers: {
-          'User-Agent': 'GOS-API-Gateway/1.0',
-          Accept: 'application/json, text/plain, */*',
-        },
-      })
+      const cacheStore: Cache | undefined = staticRoute
+        ? (globalThis as unknown as { caches?: { default: Cache } }).caches
+            ?.default
+        : undefined
+      const cacheReq = new Request(targetUrl, { method: 'GET' })
+      let originRes: Response | undefined
+      if (cacheStore) {
+        try {
+          originRes = await cacheStore.match(cacheReq)
+        } catch (err) {
+          console.error('cache match error:', err)
+        }
+      }
+      if (!originRes) {
+        originRes = await fetch(targetUrl, {
+          method: request.method,
+          body: isReadMethod ? undefined : await request.arrayBuffer(),
+          headers: {
+            'User-Agent': 'GOS-API-Gateway/1.0',
+            Accept: 'application/json, text/plain, */*',
+          },
+        })
+        if (cacheStore && originRes.status === 200 && request.method === 'GET') {
+          const toCache = new Response(originRes.clone().body, originRes)
+          toCache.headers.set('Cache-Control', `public, max-age=${STATIC_TTL}`)
+          const put = cacheStore.put(cacheReq, toCache).catch((err: unknown) => {
+            console.error('cache put error:', err)
+          })
+          if (ctx) ctx.waitUntil(put)
+          else await put
+        }
+      }
 
       const resHeaders = new Headers(originRes.headers)
       for (const [k, v] of Object.entries(CORS_HEADERS)) resHeaders.set(k, v)
