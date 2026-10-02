@@ -35,3 +35,8 @@ testpaths = [
     "automation/test_graph_edges.py",
     "scripts/test_gos_compliance.py",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
