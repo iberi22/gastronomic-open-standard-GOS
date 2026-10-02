@@ -51,6 +51,18 @@ Versioned snapshot over live collections (552 ingredients, 405 dishes,
 - Record: `{ id, type: "ingredient"|"dish"|"substance", text, embedding }`
 - Spot-check: cosine(ajo, garlic) > 0.8
 
+## Ecosistema
+
+GOS es la fuente de datos de comida para los proyectos del ecosistema SWAL:
+
+- **Fize** — datos de recetas e ingredientes para la plataforma de hosteleria.
+- **swal-training** — material de capacitacion basado en el dataset de GOS.
+- **OrionHealth** — integracion de datos de alimentos y salud (ingredientes,
+  bioactivos, vitaminsas y condiciones de salud).
+
+Los consumidores y el contrato de datos se describen en
+[docs/CONSUMERS.md](./docs/CONSUMERS.md).
+
 ## Contribute
 
 Content: copy a template, keep YAML front-matter schema
