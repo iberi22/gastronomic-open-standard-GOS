@@ -2,12 +2,12 @@
 
 ## Project Overview
 
-**Gastronomic Open Standard (GOS)** is a recipe and ingredient graph standardization project with an interactive Astro web viewer at https://iberi22.github.io/gastronomic-open-standard-GOS/
+**Gastronomic Open Standard (GOS)** is a recipe and ingredient graph standardization project with an interactive Astro web viewer at https://gos.swal.network (Cloudflare Pages)
 
 ## Tech Stack
 
 - **Frontend**: Astro + Svelte + TailwindCSS (site/)
-- **Content**: Markdown recipes in `dishes/` (colombian/, chinese/, peruvian/)
+- **Content**: Markdown recipes in `dishes/<country>/` (20 country folders) and ingredients in `ingredients/<group>/`; published copies in `site/src/content/`
 - **Graph**: Python scripts in `scripts/build_graph*.py`
 - **Multi-agent**: GitHub Agents system in `.github/agents/`
 - **Protocol**: Scientific recipe standardization in `dishes/`
@@ -23,14 +23,12 @@ gastronomic-open-standard-GOS/
 │   │   └── layouts/     # Page layouts
 │   └── dist/            # Built output (auto-generated)
 ├── dishes/             # Recipe source files
-│   ├── colombian/       # Colombian recipes (110+)
-│   ├── chinese/         # Chinese recipes (49)
-│   └── peruvian/        # Peruvian recipes
+│   └── <country>/       # 20 folders (american … thai), 613 .md; 495 published
 ├── gos/                # Graph ontology (ingredients, dishes, techniques)
 ├── scripts/            # Build scripts (build_graph.py, copy-content.js)
 ├── .github/
 │   ├── agents/         # Multi-agent system (architect, code-review, etc.)
-│   ├── workflows/      # CI/CD (deploy-astro.yml, ci.yml)
+│   ├── workflows/      # CI/CD (ci.yml, deploy-cloudflare.yml, deploy-worker.yml)
 │   └── issues/         # Project issues
 └── automation/         # Recipe processing automation
 ```
@@ -43,15 +41,14 @@ cd site && npm ci && npm run build
 
 # Deploy (automatic on push to main)
 git push origin main
-# GitHub Actions → deploy-astro.yml → GitHub Pages
+# GitHub Actions → deploy-cloudflare.yml → Cloudflare Pages (gos.swal.network)
 ```
 
 ## API Endpoints (generated at build)
 
 - `/api/index.json` - All recipes
-- `/api/spanish/colombia.json` - Colombian recipes
-- `/api/chinese/china.json` - Chinese recipes
-- `/api/countries/[country].json` - By country
+- `/api/by-country/[country].json` - By country
+- `/api/v1/` - Versioned contract for consumers (see docs/CONSUMERS.md)
 
 ## Multi-Agent System
 
@@ -64,6 +61,6 @@ The `.github/agents/` directory contains SWAL's multi-agent protocol:
 ## Important Notes
 
 - Protocol compliance is verified at build time (`npm run verify:protocol`)
-- 160 recipes, 159 with full metadata
-- Deploy uses GitHub Pages (not custom domain)
+- 495 published recipes, 552 ingredient cards (515 still `pending_review`)
+- Deploy uses Cloudflare Pages at gos.swal.network
 - Branch protection: `main` requires PR + 1 review
