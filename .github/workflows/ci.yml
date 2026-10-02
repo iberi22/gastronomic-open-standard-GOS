@@ -102,6 +102,24 @@ jobs:
         working-directory: site
         run: python3 scripts/verify-dois.py
 
+  # Gate de evidencia: todo evidence_level debe ser High, Medium o Low.
+  # Antes de este gate, 43 de 175 estaban fuera de rango (texto libre en
+  # espanol) y 5 eran bloques multilinea que ninguna pagina podia leer como
+  # valor. Falla si vuelve a colarse uno.
+  verify-evidence:
+    name: evidence (nivel High/Medium/Low)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar evidence_level
+        working-directory: site
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 scripts/verify-evidence.py
+
   gos-audit:
     runs-on: ubuntu-latest
     continue-on-error: true

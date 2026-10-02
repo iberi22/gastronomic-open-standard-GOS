@@ -14,7 +14,7 @@ synergy_type: "Glycemic Modulation and Electrolyte Hydration"
 synergy_mechanism: "Acetic acid delays gastric emptying and enhances skeletal muscle glucose uptake, while gingerols reduce gastrointestinal motility discomfort during physical labor, working synergistically with maple electrolytes."
 contraindications:
   - "Severe acid reflux"
-evidence_level: "Moderate"
+evidence_level: "Medium"
 sources:
   - "PubMed - The Journal of Nutritional Biochemistry"
 studies:

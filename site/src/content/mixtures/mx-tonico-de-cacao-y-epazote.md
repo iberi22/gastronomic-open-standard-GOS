@@ -12,7 +12,7 @@ synergy_mechanism: "Cacao flavanols stimulate endothelial nitric oxide synthase 
 contraindications:
   - "Pregnancy (high concentration of ascaridole)"
   - "Tachycardia"
-evidence_level: "Moderate"
+evidence_level: "Medium"
 sources:
   - "Journal of Agricultural and Food Chemistry"
   - "Planta Medica"

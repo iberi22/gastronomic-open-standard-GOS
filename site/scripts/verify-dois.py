@@ -15,6 +15,7 @@ Uso: python3 verify-dois.py [--json]
 """
 import json
 import re
+import unicodedata
 import sys
 import time
 import urllib.parse
@@ -72,9 +73,22 @@ def crossref(doi):
 
 
 def norm(s):
-    """Normaliza para comparar: minusculas, sin puntuacion, sin acentos ruido."""
-    s = s.lower()
-    s = re.sub(r"[a-z0-9 ]", " ", s)
+    """Normaliza para comparar: minusculas, sin puntuacion, sin acentos.
+
+    Se SUSTITUYE lo que no es alfanumerico por espacio (para no pegar
+    "anti-allergic" en una sola palabra), y se elimina lo sobrante.
+
+    El fallo anterior era usar re.sub(r"[a-z0-9 ]", " ", s), que reemplaza
+    cada caracter por un espacio: "peppermint" se convertia en 10 espacios y
+    todo titulo terminaba en cadena vacia. Con eso palabras() no encontraba
+    nada, la cobertura era 0 y los 44 DOI salian MISMATCH.
+    """
+    s = str(s).lower()
+    # quitar diacriticos antes de decidir que es alfanumerico
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    # todo lo que no sea [a-z0-9] pasa a espacio
+    s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 
 

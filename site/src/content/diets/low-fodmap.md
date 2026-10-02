@@ -3,8 +3,9 @@ name: "Dieta baja en FODMAPs"
 aliases: "Dieta FODMAP, dieta para SII"
 description: |
   Protocolo temporal (6-8 semanas) desarrollado por Monash University para el Síndrome de Intestino Irritable (SII). Restringe carbohidratos fermentables que producen gas por osmosis y fermentación bacteriana en el colon (hinchazón, dolor, alteración del ritmo). three fases: eliminación → reintroducción sistemática → personalización.
-evidence_level: |
-  Sólida para SII (meta-análisis: ↓43% síntomas vs. placebo dietético; 10 ECA randomizados). No para SIBO (evidencia débil).
+evidence_level: High
+evidence_note: |
+  (meta-análisis: ↓43% síntomas vs. placebo dietético; 10 ECA randomizados). No para SIBO (evidencia débil).
 outcomes: |
   ↓hinchazón abdominal (-50%), ↓dolor (-40%), ↓flatulencia (-45%), ↓diarrea/estreñimiento (en SII-D y SII-C)
 key_components: ["Fase 1 (0-6 sem): eliminar todos los FODMAPs altos (trigo, lactosa, legumbres, cebolla, ajo, manzana, pera, mango, sandía, miel, High-Fructose Corn Syrup)", "Fase 2 (7-10 sem): reintroducción gradual por grupos (lactosa, fructanos, manitol, sorbitol, galactanos)", "Fase 3 (>10 sem): solo FODMAPs problemáticos para el individuo (personalización)"]
