@@ -9,7 +9,7 @@
 
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { beforeAll, describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 const SITE_ROOT = join(import.meta.dirname, '..', '..')
 const SW_PATH = join(SITE_ROOT, 'public', 'sw.js')
@@ -26,7 +26,7 @@ function readBaseUrl(): string {
 function readPrecacheList(): string[] {
   const match = SW_SOURCE.match(/const STATIC_ASSETS\s*=\s*(\[[\s\S]*?\n\])/)
   if (!match) throw new Error('STATIC_ASSETS no encontrado en sw.js')
-  // biome-ignore lint/security/noGlobalEval: lista literal del propio archivo
+
   return new Function('BASE_URL', `return ${match[1]}`)(
     readBaseUrl(),
   ) as string[]

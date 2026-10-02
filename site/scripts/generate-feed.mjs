@@ -89,7 +89,7 @@ async function main() {
   await writeFile(
     join(__dirname, '../public/feed.json'),
     // newline final: sin el, `biome check` falla el formato del JSON
-    JSON.stringify(feed, null, 2) + '\n',
+    `${JSON.stringify(feed, null, 2)}\n`,
   )
   console.log(`feed.json: ${feedItems.length} items (${allItems.length} total)`)
 }

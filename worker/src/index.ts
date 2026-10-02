@@ -242,7 +242,7 @@ export default {
             isPaidKey = true
             keyTier = result.tier || 'socio'
           } else {
-                return jsonResponse(
+            return jsonResponse(
               {
                 error: 'Unauthorized: Invalid or inactive API key',
                 tier: 'invalid',
@@ -250,12 +250,12 @@ export default {
               401,
             )
           }
-        } catch (dbErr) {
+        } catch (_dbErr) {
           // Fail-closed. Si D1 no responde NO se puede saber si la key es
           // valida, y adivinar concede acceso a quien mande una key con la
           // palabra 'socio' o 'paid' en el cuerpo. Antes este catch hacia
           // justo eso: produccion sirve 404 a esas keys mientras D1 falla.
-          console.error('D1 key check error:', dbErr)
+
           return jsonResponse(
             {
               error: 'Service Unavailable: key validation unavailable',
@@ -273,7 +273,7 @@ export default {
           isPaidKey = true
           keyTier = 'tiersocio'
         } else {
-            return jsonResponse(
+          return jsonResponse(
             {
               error: 'Unauthorized: no key store configured',
               tier: 'no-store',
@@ -347,9 +347,8 @@ export default {
             )
           }
           currentCount = row.n
-        } catch (dbErr) {
+        } catch (_dbErr) {
           // Fail-open: la rafaga del binding sigue protegiendo.
-          console.error('D1 free quota error:', dbErr)
         }
       }
     }
@@ -533,12 +532,18 @@ export default {
             Accept: 'application/json, text/plain, */*',
           },
         })
-        if (cacheStore && originRes.status === 200 && request.method === 'GET') {
+        if (
+          cacheStore &&
+          originRes.status === 200 &&
+          request.method === 'GET'
+        ) {
           const toCache = new Response(originRes.clone().body, originRes)
           toCache.headers.set('Cache-Control', `public, max-age=${STATIC_TTL}`)
-          const put = cacheStore.put(cacheReq, toCache).catch((err: unknown) => {
-            console.error('cache put error:', err)
-          })
+          const put = cacheStore
+            .put(cacheReq, toCache)
+            .catch((err: unknown) => {
+              console.error('cache put error:', err)
+            })
           if (ctx) ctx.waitUntil(put)
           else await put
         }

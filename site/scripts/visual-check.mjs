@@ -50,7 +50,7 @@ for (const t of targets) {
         if (m.type() === 'error') errors.push(m.text().slice(0, 260))
       })
       page.on('pageerror', (e) =>
-        errors.push('PAGEERROR: ' + String(e).slice(0, 260)),
+        errors.push(`PAGEERROR: ${String(e).slice(0, 260)}`),
       )
       let status = 0
       try {
@@ -60,7 +60,7 @@ for (const t of targets) {
         })
         status = resp ? resp.status() : 0
       } catch (e) {
-        errors.push('GOTO: ' + String(e).slice(0, 200))
+        errors.push(`GOTO: ${String(e).slice(0, 200)}`)
       }
       try {
         await page.waitForSelector(`${t.sel} canvas`, { timeout: 30000 })
@@ -90,7 +90,7 @@ for (const t of targets) {
         return {
           hasCanvas: !!document.querySelector(`${sel} canvas`),
           wrapperBg: cs ? cs.backgroundColor : null,
-          border: cs ? cs.borderTopWidth + ' ' + cs.borderTopStyle : null,
+          border: cs ? `${cs.borderTopWidth} ${cs.borderTopStyle}` : null,
           radius: cs ? cs.borderRadius : null,
           hOverflow:
             document.documentElement.scrollWidth > window.innerWidth + 1,
@@ -102,7 +102,7 @@ for (const t of targets) {
             const b = document.querySelector('.ge-filter-btn')
             if (!b) return null
             const s = getComputedStyle(b)
-            return s.fontSize + ' ' + s.textTransform + ' ' + s.letterSpacing
+            return `${s.fontSize} ${s.textTransform} ${s.letterSpacing}`
           })(),
           graph: dbg
             ? {
@@ -144,7 +144,7 @@ for (const r of report) {
         : ''),
   )
   r.firstErrors.forEach((e) => {
-    console.log('    ↳ ' + e)
+    console.log(`    ↳ ${e}`)
   })
 }
 console.log('shots →', out)

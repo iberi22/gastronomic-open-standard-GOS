@@ -48,8 +48,9 @@ interface LinkedIngredient {
   name: string
   href: string | null
 }
-// biome-ignore lint/suspicious/noExplicitAny: colecciones con passthrough, como ingredients/[...slug]
+
 const { entry, linked } = Astro.props as {
+  // biome-ignore lint/suspicious/noExplicitAny: colecciones con passthrough, como ingredients/[...slug]
   entry: any
   linked: LinkedIngredient[]
 }
