@@ -17,10 +17,12 @@ health_registry:
     mechanism: "TRPM8 activation, Ca2+ channel blockade, antispasmodic"
     evidence_level: "High"
     studies:
-      - title: "Peppermint oil and IBS: meta-analysis"
+      - title: "Peppermint oil for the treatment of irritable bowel syndrome: a systematic review and meta-analysis"
         source: "J Clin Gastroenterol"
         year: 2014
-        doi: "10.1097/MCG.0000000000000043"
+        doi: "10.1097/mcg.0b013e3182a88357"
+        url: "https://doi.org/10.1097/mcg.0b013e3182a88357"
+        pmid: "24100754"
 ---
 
 ![Mentol](/images/substances/mentol.jpg)
