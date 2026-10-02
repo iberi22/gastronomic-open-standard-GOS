@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gos.swal.network/schemas/ecosystem/v1/meal-log.schema.json",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "properties": {
+        "schema": {
+          "const": "swal.health/v1/meal-log"
+        }
+      },
+      "type": "object"
+    }
+  ],
+  "$defs": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "consumedAt": {
+          "$ref": "envelope.schema.json#/$defs/datetime"
+        },
+        "mealType": {
+          "type": "string",
+          "enum": ["breakfast", "lunch", "dinner", "snack"]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ref": {
+                "oneOf": [
+                  {
+                    "$ref": "envelope.schema.json#/$defs/dish"
+                  },
+                  {
+                    "$ref": "envelope.schema.json#/$defs/ingredient"
+                  }
+                ]
+              },
+              "servings": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": 0
+              },
+              "grams": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": ["ref"],
+            "additionalProperties": false,
+            "oneOf": [
+              {
+                "required": ["servings"],
+                "not": {
+                  "required": ["grams"],
+                  "type": "object",
+                  "properties": {
+                    "grams": {}
+                  }
+                },
+                "type": "object",
+                "properties": {
+                  "servings": {}
+                }
+              },
+              {
+                "required": ["grams"],
+                "not": {
+                  "required": ["servings"],
+                  "type": "object",
+                  "properties": {
+                    "servings": {}
+                  }
+                },
+                "type": "object",
+                "properties": {
+                  "grams": {}
+                }
+              }
+            ]
+          },
+          "minItems": 1
+        },
+        "nutrition": {
+          "type": "object",
+          "properties": {
+            "calories": {
+              "type": "number",
+              "minimum": 0
+            },
+            "protein_g": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fat_g": {
+              "type": "number",
+              "minimum": 0
+            },
+            "carbs_g": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fiber_g": {
+              "type": "number",
+              "minimum": 0
+            },
+            "sugar_g": {
+              "type": "number",
+              "minimum": 0
+            },
+            "micros": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+              },
+              "additionalProperties": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          },
+          "required": [
+            "calories",
+            "protein_g",
+            "fat_g",
+            "carbs_g",
+            "fiber_g",
+            "sugar_g",
+            "micros"
+          ],
+          "additionalProperties": false
+        },
+        "nutritionSource": {
+          "type": "string",
+          "enum": ["computed", "declared", "unknown"]
+        },
+        "origin": {
+          "type": "object",
+          "properties": {
+            "app": {
+              "type": "string",
+              "enum": ["fize", "orionhealth", "gos"]
+            },
+            "venue": {
+              "type": "string",
+              "minLength": 1
+            },
+            "orderId": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": ["app"],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "consumedAt",
+        "mealType",
+        "items",
+        "nutrition",
+        "nutritionSource",
+        "origin"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "type": "object"
+}

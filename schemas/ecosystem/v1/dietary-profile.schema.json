@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gos.swal.network/schemas/ecosystem/v1/dietary-profile.schema.json",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "properties": {
+        "schema": {
+          "const": "swal.health/v1/dietary-profile"
+        }
+      },
+      "type": "object"
+    }
+  ],
+  "$defs": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "allergens": {
+          "type": "array",
+          "items": {
+            "$ref": "envelope.schema.json#/$defs/allergen"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "diets": {
+          "type": "array",
+          "items": {
+            "$ref": "envelope.schema.json#/$defs/diet"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "targets": {
+          "type": "object",
+          "properties": {
+            "kcalPerDay": {
+              "type": "number",
+              "minimum": 0,
+              "exclusiveMinimum": 0
+            },
+            "proteinGPerDay": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "expiresAt": {
+          "$ref": "envelope.schema.json#/$defs/datetime"
+        }
+      },
+      "required": ["allergens", "diets", "targets", "expiresAt"],
+      "additionalProperties": false
+    }
+  },
+  "type": "object"
+}

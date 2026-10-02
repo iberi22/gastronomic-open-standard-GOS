@@ -1,5 +1,6 @@
 packages:
   - "site"
+  - "packages/health-contract"
 
 allowBuilds:
   esbuild: set this to true or false
