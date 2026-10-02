@@ -2,7 +2,7 @@
 title: Sopa de Tortilla (Ateca)
 region: Ciudad de México
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/sopas-cremas-y-caldos/sopa-de-tortilla-tradicional-azteca/2018/01/'

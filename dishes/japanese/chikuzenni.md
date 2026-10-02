@@ -2,7 +2,7 @@
 title: Chikuzenni
 region: Fukuoka (Kyushu)
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E7%AD%91%E5%89%8D%E7%85%AE

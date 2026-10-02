@@ -2,7 +2,7 @@
 title: Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)
 region: Sur de Estados Unidos
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits'

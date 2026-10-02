@@ -2,7 +2,7 @@
 title: Pescado a la Veracruzana
 region: Veracruz
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: El Universal Menú
   url: 'https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/'

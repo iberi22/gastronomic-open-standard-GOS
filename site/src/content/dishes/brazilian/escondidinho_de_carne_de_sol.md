@@ -2,7 +2,7 @@
 title: Escondidinho de Carne de Sol
 region: Nordeste / Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: panelinha.com.br
   url: 'https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol'

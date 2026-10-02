@@ -2,7 +2,7 @@
 title: Fuqi Feipian (Sliced Beef and Offal in Chili Oil)
 region: China
 language: zh
-license: MIT
+license: Apache-2.0
 source:
   name: Xiachufang Food Recipes
   url: 'https://www.xiachufang.com/recipe/1000185/'

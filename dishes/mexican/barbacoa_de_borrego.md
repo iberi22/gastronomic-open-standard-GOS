@@ -2,7 +2,7 @@
 title: Barbacoa de Borrego
 region: Hidalgo
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2020/02/12/receta-de-barbacoa-estilo-hidalgo/'

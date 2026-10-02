@@ -2,7 +2,7 @@
 title: Papas Aborrajadas
 region: Nacional
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetasdecolombia.com
   url: 'https://www.recetasdecolombia.com/papas-aborrajadas'

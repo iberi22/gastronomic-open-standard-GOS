@@ -2,7 +2,7 @@
 title: Pollo Guisado con Dumplings
 region: Insular
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: comidadecolombia.blogspot.com
   url: >-

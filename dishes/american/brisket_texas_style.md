@@ -2,7 +2,7 @@
 title: Brisket Estilo Texas (Punta de Pecho Ahumada)
 region: Texas
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/texas-smoked-brisket'

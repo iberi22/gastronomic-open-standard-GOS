@@ -2,7 +2,7 @@
 title: Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)
 region: Luisiana
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eater.com
   url: 'https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide'

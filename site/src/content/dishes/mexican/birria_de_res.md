@@ -16,7 +16,7 @@ images:
 - description: Birria de Res con Consomé tradicional
   url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Carne de res (diezmillo/morcillo)
 - Chile guajillo

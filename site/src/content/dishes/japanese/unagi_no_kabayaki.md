@@ -2,7 +2,7 @@
 title: Unagi no Kabayaki
 region: Shizuoka (Hamamatsu)
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E8%92%B2%E7%84%BC

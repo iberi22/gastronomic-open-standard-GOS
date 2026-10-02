@@ -2,7 +2,7 @@
 title: Shoyu Ramen Tradicional
 region: Tokyo
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E8%8D%80%E6%B2%B9%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3

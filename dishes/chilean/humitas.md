@@ -2,7 +2,7 @@
 title: Humitas Chilenas
 region: Central / Valles Agrícolas
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetaschilenas.cl
   url: 'https://www.recetaschilenas.cl/'

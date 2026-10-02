@@ -25,7 +25,7 @@ Este repositorio contiene recetas del mundo, en múltiples idiomas, con foco en 
 title: "Arroz con pollo"
 region: "Latinoamérica"
 language: "es"
-license: "MIT"
+license: Apache-2.0
 sources:
   - name: "Wikipedia"
     url: "https://es.wikipedia.org/wiki/Arroz_con_pollo"

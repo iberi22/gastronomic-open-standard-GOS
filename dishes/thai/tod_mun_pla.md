@@ -2,7 +2,7 @@
 title: Tod Mun Pla (Pasteles de Pescado)
 region: Central Thailand
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

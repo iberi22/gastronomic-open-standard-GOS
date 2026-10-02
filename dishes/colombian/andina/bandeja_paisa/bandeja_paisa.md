@@ -15,7 +15,7 @@ images:
 - description: Bandeja Paisa con sus 9 elementos
   url: https://im.ge/i/bandeja-1.XyZ789
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Frijol bola roja (o Cargamanto)
 - Arroz blanco

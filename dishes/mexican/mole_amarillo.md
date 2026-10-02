@@ -2,7 +2,7 @@
 title: Mole Amarillo Oaxaqueño
 region: Oaxaca
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2018/07/19/receta-mole-amarillo-oaxaca/'

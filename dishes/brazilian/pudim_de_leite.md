@@ -2,7 +2,7 @@
 title: Pudim de Leite Condensado
 region: Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html'

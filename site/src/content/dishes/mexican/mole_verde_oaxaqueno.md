@@ -2,7 +2,7 @@
 title: Mole Verde Oaxaqueño
 region: Oaxaca
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/salsas-y-moles/mole-verde-oaxaqueno-tradicional/2021/05/'

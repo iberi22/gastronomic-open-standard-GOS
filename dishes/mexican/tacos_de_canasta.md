@@ -2,7 +2,7 @@
 title: Tacos de Canasta
 region: Tlaxcala
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/'

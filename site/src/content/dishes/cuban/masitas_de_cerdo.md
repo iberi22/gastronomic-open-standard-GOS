@@ -18,7 +18,7 @@ images:
 - description: Masitas de cerdo fritas doradas y crujientes (Unsplash)
   url: https://images.unsplash.com/photo-1544025162-d76694265947
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Carne de cerdo (paleta o pierna)
 - Naranja agria (sour orange)

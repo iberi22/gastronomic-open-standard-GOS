@@ -2,7 +2,7 @@
 title: Tajine de Kefta con Tomate y Huevos
 region: Marrakech
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

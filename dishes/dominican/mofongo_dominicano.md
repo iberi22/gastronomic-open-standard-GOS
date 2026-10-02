@@ -2,7 +2,7 @@
 title: Mofongo Dominicano Tradicional
 region: República Dominicana
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: cocinadominicana.com
   url: 'https://www.cocinadominicana.com/mofongo-dominicano-receta/'

@@ -2,7 +2,7 @@
 title: Tembleque de Coco Puertorriqueño
 region: Puerto Rico
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elboricua.com
   url: 'https://www.elboricua.com/tembleque.html'

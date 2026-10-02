@@ -2,7 +2,7 @@
 title: Guacamole Tradicional
 region: Michoacán
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/01/21/receta-de-guacamole-tradicional-mexicano/'

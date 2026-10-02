@@ -2,7 +2,7 @@
 title: Baked Macaroni and Cheese
 region: Sur de EE.UU.
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

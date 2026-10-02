@@ -2,7 +2,7 @@
 title: Carnitas de Michoacán
 region: Michoacán
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/'

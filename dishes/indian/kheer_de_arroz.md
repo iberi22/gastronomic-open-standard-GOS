@@ -2,7 +2,7 @@
 title: Kheer de Arroz
 region: Pan-India
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%96%E0%A5%80%E0%A4%B0

@@ -2,7 +2,7 @@
 title: Sopaipillas Chilenas
 region: Central / Sur
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetaschilenas.cl
   url: 'https://www.recetaschilenas.cl/'

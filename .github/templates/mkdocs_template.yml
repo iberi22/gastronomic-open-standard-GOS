@@ -73,7 +73,7 @@ plugins:
   - search
   - with-pdf:
       author: GitHub Community
-      copyright: The Unlicense
+      copyright: Apache-2.0
       cover_title: How To Cook
       cover_subtitle: 程序员做饭指南
       output_path: document.pdf

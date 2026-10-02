@@ -2,7 +2,7 @@
 title: Pozole Rojo de Jalisco
 region: Jalisco
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: El Universal Menú
   url: 'https://www.eluniversal.com.mx/menu/receta-de-pozole-rojo-tradicional-mexicano/'

@@ -18,7 +18,7 @@ images:
 - description: Emplatado con aguacate y alcaparras
   url: https://im.ge/i/ajiaco-2.AbC456
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Papa criolla
 - Papa pastusa

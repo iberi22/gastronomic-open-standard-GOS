@@ -2,7 +2,7 @@
 title: Pão de Queijo Mineiro
 region: Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/2228-pao-de-queijo-mineiro.html'

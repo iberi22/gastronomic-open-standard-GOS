@@ -2,7 +2,7 @@
 title: Arroz con Pollo Peruano
 region: Costa/Sierra
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: yanuq.com
   url: 'https://www.yanuq.com/'

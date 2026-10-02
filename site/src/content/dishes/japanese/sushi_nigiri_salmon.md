@@ -2,7 +2,7 @@
 title: Nigiri Sushi de Salmón
 region: Tokyo
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E6%8F%A1%E3%82%8A%E5%BF%BF%E3%81%97

@@ -17,7 +17,7 @@ images:
 - description: Lechona Tolimense recién salida del horno de barro
   url: https://im.ge/i/lechona-1.AbC123
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Cerdo (pulpa y costilla)
 - Cuero de cerdo

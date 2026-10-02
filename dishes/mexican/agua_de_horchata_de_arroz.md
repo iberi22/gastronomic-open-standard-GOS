@@ -2,7 +2,7 @@
 title: Agua de Horchata de Arroz
 region: Tradicional Nacional
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/bebidas/agua-de-horchata-de-arroz-tradicional/2018/03/'

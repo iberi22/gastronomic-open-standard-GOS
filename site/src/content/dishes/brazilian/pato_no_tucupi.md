@@ -2,7 +2,7 @@
 title: Pato no Tucupi
 region: Pará, Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: estadao.com.br
   url: 'https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234'

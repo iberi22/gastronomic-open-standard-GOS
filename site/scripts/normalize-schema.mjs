@@ -199,7 +199,7 @@ function processRecipe(filePath, rawContent, htcMap) {
   newData.language = lang
   newData.difficulty = diff
   newData.source = sourceObj
-  newData.license = data.license || 'MIT'
+  newData.license = data.license || 'Apache-2.0'
 
   // Remove deprecated / migrated keys
   delete newData.source_repo

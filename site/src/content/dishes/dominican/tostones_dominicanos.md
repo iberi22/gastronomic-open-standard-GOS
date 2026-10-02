@@ -2,7 +2,7 @@
 title: Tostones Dominicanos con Agua de Ajo
 region: República Dominicana
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: cocinadominicana.com
   url: 'https://www.cocinadominicana.com/tostones-receta/'

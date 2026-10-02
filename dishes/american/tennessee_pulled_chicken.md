@@ -2,7 +2,7 @@
 title: Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)
 region: Tennessee
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/pulled-chicken-recipe'

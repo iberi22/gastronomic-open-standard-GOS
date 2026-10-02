@@ -2,7 +2,7 @@
 title: Sancocho de Pescado Pacífico
 region: Pacífica
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eltiempo.com
   url: 'https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936'

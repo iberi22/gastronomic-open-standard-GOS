@@ -2,7 +2,7 @@
 title: Caldillo de Congrio
 region: Litoral / Coquimbo / Valparaíso
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetaschilenas.cl
   url: 'https://www.recetaschilenas.cl/'

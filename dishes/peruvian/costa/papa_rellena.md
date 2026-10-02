@@ -17,7 +17,7 @@ images:
 - description: Papas Rellenas peruanas doradas y crujientes
   url: https://images.unsplash.com/photo-1544025162-d76694265947
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Papa blanca y papa amarilla
 - Carne de res molida o picada

@@ -2,7 +2,7 @@
 title: Brunswick Stew (Estofado Tradicional de Virginia)
 region: Virginia
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/brunswick-stew-recipe'

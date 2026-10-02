@@ -2,7 +2,7 @@
 title: Juanes de Yuca
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elcomercio.pe
   url: >-

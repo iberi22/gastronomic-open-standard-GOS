@@ -2,7 +2,7 @@
 title: Maine Lobster Roll (Bocadillo de Langosta de Maine)
 region: Maine
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eater.com
   url: 'https://www.eater.com/maps/best-lobster-rolls-maine'

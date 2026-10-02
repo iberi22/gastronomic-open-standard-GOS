@@ -2,7 +2,7 @@
 title: Aloo Gobi
 region: Punjab
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%B2%E0%A5%82_%E0%A4%97%E0%A5%8B%E0%A4%AD%E0%A5%80

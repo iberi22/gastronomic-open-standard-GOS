@@ -2,7 +2,7 @@
 title: Panuchos Yucatecos
 region: Yucatán
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/05/19/receta-de-panuchos-yucatecos-tradicionales/'

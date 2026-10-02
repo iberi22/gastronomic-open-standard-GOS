@@ -2,7 +2,7 @@
 title: Chocolate Santafereño
 region: Andina
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetasdecolombia.com
   url: 'https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o'

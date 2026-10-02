@@ -29,7 +29,7 @@ class RecipeFrontmatter(BaseModel):
     title: str
     region: Optional[str] = None
     language: str = "es"
-    license: str = "MIT"
+    license: str = "Apache-2.0"
     categories: List[str] = []
     tags: List[str] = []
     sensory: Optional[SensoryProfile] = None

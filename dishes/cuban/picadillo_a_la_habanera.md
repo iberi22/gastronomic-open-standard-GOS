@@ -2,7 +2,7 @@
 title: Picadillo a la Habanera
 region: Cuba
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetascubanas.org
   url: 'https://www.recetascubanas.org/picadillo-a-la-habanera/'

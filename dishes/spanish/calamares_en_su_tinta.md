@@ -14,7 +14,7 @@ images:
 - description: Calamares en su Tinta tradicional
   url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
   - Calamares frescos
   - Tinta de calamar

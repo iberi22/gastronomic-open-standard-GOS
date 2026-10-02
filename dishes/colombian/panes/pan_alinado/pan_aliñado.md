@@ -2,7 +2,7 @@
 title: Pan Aliñado Colombiano
 region: Nacional
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elgourmet.com
   url: 'https://elgourmet.com/recetas/pan-ali%C3%B1ado/'

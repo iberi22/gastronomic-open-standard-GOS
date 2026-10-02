@@ -2,7 +2,7 @@
 title: Quesadillas de Flor de Calabaza
 region: Ciudad de México
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/07/08/receta-de-quesadillas-de-flor-de-calabaza/'

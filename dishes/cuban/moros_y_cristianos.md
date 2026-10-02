@@ -2,7 +2,7 @@
 title: Moros y Cristianos Tradicionales
 region: Cuba
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: recetascubanas.org
   url: 'https://www.recetascubanas.org/moros-y-cristianos/'

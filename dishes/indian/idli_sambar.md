@@ -2,7 +2,7 @@
 title: Idli Sambar
 region: Tamil Nadu / Sur de la India
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%87%E0%A4%A1%E0%A4%B2%E0%A5%80

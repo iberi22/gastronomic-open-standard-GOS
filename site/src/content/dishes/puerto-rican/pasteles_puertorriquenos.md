@@ -2,7 +2,7 @@
 title: Pasteles Puertorriqueños de Masa
 region: Puerto Rico
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elboricua.com
   url: 'https://www.elboricua.com/pasteles.html'

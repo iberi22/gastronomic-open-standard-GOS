@@ -2,7 +2,7 @@
 title: Sopa de Lima
 region: Yucatán
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/'

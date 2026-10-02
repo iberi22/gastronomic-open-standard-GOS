@@ -2,7 +2,7 @@
 title: Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)
 region: Carolina del Sur
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: nytimes.com
   url: 'https://cooking.nytimes.com/recipes/1018610-shrimp-and-grits'

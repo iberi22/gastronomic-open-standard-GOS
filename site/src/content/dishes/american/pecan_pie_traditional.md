@@ -2,7 +2,7 @@
 title: Pecan Pie Tradicional (Tarta de Nueces Pacanas)
 region: Sur de Estados Unidos
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/southern-pecan-pie-recipe'

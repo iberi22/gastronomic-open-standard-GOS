@@ -2,7 +2,7 @@
 title: Massaman Curry de Res
 region: Sur de Tailandia
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

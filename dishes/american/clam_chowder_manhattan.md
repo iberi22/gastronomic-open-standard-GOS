@@ -2,7 +2,7 @@
 title: Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)
 region: Nueva York
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: nytimes.com
   url: 'https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder'

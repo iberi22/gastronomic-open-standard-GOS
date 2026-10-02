@@ -2,7 +2,7 @@
 title: Chiles Rellenos de Queso
 region: Puebla
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/'

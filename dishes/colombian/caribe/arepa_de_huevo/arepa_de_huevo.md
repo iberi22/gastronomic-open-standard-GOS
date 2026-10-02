@@ -16,7 +16,7 @@ images:
 - description: Arepa de huevo inflada y dorada (Luruaco style)
   url: https://im.ge/i/arepa-huevo-1.AbC456
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Maíz Amarillo (Masa)
 - Huevo (AAA)

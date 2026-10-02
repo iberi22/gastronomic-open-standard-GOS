@@ -20,7 +20,7 @@ images:
 - description: Variaciones de chuzo en Unsplash
   url: https://unsplash.com/s/photos/chuzo-colombia
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Carne de res
 - Pollo

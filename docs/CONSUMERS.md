@@ -115,15 +115,15 @@ entrenamiento consume nutrición; GOS v1 no contiene ejercicios ni rutinas.
 
 ## Licencia y atribución
 
-`manifest.license` contiene el texto exacto de `LICENSE` (GNU AGPL v3).
-Las licencias de frontmatter y fuentes individuales se conservan; muchas
-entradas dicen MIT y el package.json raíz dice Unlicense. Este contrato no
-resuelve esa discrepancia ni concede una licencia nueva de datos. Los
-consumidores deben conservar el manifiesto/licencia, la procedencia de cada
-entrada y la atribución a Gastronomic Open Standard y a sus fuentes cuando
-corresponda; una URL `pending` sigue siendo procedencia incompleta.
-Antes de redistribuir datasets con otra licencia, hace falta una decisión
-expresa del propietario sobre la política de datos.
+`manifest.license` contiene el texto exacto de `LICENSE` (Apache-2.0).
+Desde 2026-10-02 el código y los datos de GOS (recetas, ingredientes,
+nutrición, mezclas, sustancias y schemas) se publican bajo Apache-2.0; el
+frontmatter `license` de cada entrada lo refleja. Los consumidores deben
+conservar el manifiesto/licencia y el archivo `NOTICE`, la procedencia de
+cada entrada y la atribución a Gastronomic Open Standard y a sus fuentes
+cuando corresponda; una URL `pending` sigue siendo procedencia incompleta.
+Contenido de terceros con licencia propia (p. ej. IDs de ejercicios de
+`@bryllim/workout-guide`, CC BY-SA 4.0) conserva su licencia y atribución.
 
 ## Generar y verificar
 

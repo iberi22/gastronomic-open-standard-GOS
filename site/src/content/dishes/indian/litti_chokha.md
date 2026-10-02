@@ -2,7 +2,7 @@
 title: Litti Chokha
 region: Bihar
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A5%80_%E0%A4%9A%E0%A5%8B%E0%A4%96%E0%A4%BE

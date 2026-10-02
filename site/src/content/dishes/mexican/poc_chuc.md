@@ -2,7 +2,7 @@
 title: Poc Chuc
 region: Yucatán
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/'

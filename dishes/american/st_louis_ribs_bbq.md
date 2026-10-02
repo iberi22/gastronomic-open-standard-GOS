@@ -2,7 +2,7 @@
 title: St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)
 region: Misuri
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eater.com
   url: 'https://www.eater.com/2016/6/17/11956792/st-louis-bbq-ribs-guide'

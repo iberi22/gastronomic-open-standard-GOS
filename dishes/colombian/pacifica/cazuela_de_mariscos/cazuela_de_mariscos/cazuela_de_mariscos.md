@@ -2,7 +2,7 @@
 title: Cazuela de Mariscos Pacífica
 region: Pacífica
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eltiempo.com
   url: 'https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935'

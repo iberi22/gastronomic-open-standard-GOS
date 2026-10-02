@@ -2,7 +2,7 @@
 title: St. Louis Style BBQ Pork Ribs
 region: Missouri / Memphis
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://open.gastrostandard.org/dishes/american/bbq_pork_ribs

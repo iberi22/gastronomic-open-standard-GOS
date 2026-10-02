@@ -2,7 +2,7 @@
 title: Enmoladas de Pollo
 region: Oaxaca
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/platos-fuertes/enmoladas-de-pollo-con-queso/2019/02/'

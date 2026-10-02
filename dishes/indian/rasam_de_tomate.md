@@ -2,7 +2,7 @@
 title: Rasam de Tomate
 region: Tamil Nadu / Sur de la India
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%AE

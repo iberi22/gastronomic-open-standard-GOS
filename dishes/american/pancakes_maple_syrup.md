@@ -2,7 +2,7 @@
 title: Fluffy Pancakes con Maple Syrup
 region: EE.UU. Nacional
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

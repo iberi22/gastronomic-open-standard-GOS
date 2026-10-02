@@ -2,7 +2,7 @@
 title: Lulada
 region: Pacífica
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elgourmet.com
   url: 'https://elgourmet.com/recetas/lulada/'

@@ -2,7 +2,7 @@
 title: Dhakai Morog Polao
 region: Old Dhaka
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://www.dhakatribune.com/food/289123/dhaka-morog-polao-a-royal-heritage

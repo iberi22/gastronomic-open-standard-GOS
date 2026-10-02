@@ -2,7 +2,7 @@
 title: Fariña (Farofa Amazónica)
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: vecinavegetariana.com
   url: 'https://vecinavegetariana.com/es/farina-de-yuca-de-la-amazonia-colombiana/'

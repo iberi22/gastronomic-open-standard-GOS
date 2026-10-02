@@ -2,7 +2,7 @@
 title: Sopes Tradicionales
 region: Centro de México
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/'

@@ -17,7 +17,7 @@ images:
 - description: Gran olla de sancocho dominicano espeso hirviendo (Unsplash)
   url: https://images.unsplash.com/photo-1541518763669-27fef04b14ea
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)
 - Plátano verde

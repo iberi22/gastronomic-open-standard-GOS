@@ -2,7 +2,7 @@
 title: Hida Houba Miso
 region: Gifu (Takayama)
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E6%9C%B4%E8%90%89%E2%80%93%E3%81%BF%E3%81%9D

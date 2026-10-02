@@ -13,7 +13,7 @@ images:
 - description: Insalata Caprese Tradizionale tradicional
   url: https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Mozzarella de Búfala Campana DOP
 - Tomates maduros grandes (Cuore di Bue)

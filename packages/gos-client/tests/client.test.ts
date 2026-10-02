@@ -44,7 +44,7 @@ function fixture(cache = memoryCache()) {
         dishes: 1,
         nutrition: { computed: 0, declared: 0, unknown: 1 },
       },
-      license: 'Unlicense',
+      license: 'Apache-2.0',
       files: {
         ingredients: 'ingredients.json',
         dishes: 'dishes.json',

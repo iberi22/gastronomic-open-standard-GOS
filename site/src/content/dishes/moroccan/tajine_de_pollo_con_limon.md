@@ -2,7 +2,7 @@
 title: Tajine de Pollo con Limón Encurtido y Aceitunas
 region: Casablanca
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

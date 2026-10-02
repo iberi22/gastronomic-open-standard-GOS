@@ -2,7 +2,7 @@
 title: Empanadas de Jaiba
 region: Pacífica
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eltiempo.com
   url: 'https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941'

@@ -2,7 +2,7 @@
 title: 'La Bandera Dominicana (Arroz, Habichuelas y Carne)'
 region: República Dominicana
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: cocinadominicana.com
   url: 'https://www.cocinadominicana.com/la-bandera-dominicana-receta/'

@@ -2,7 +2,7 @@
 title: Creme de Cupuaçu
 region: Amazonas / Pará, Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html'

@@ -2,7 +2,7 @@
 title: Acarajé Baiano
 region: Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/23114-acaraje-da-bahia.html'

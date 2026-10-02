@@ -2,7 +2,7 @@
 title: Baingan Bharta
 region: Punjab / Norte de la India
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%97%E0%A4%A8_%E0%A4%95%E0%A4%BE_%E0%A4%AD%E0%A4%B0%E0%A4%A4%E0%A4%BE

@@ -2,7 +2,7 @@
 title: Vatapá Baiano Tradicional
 region: Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/9605-vatapa.html'

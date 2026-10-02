@@ -2,7 +2,7 @@
 title: Tiropita (Pastel Hojaldrado de Feta)
 region: Grecia Nacional
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

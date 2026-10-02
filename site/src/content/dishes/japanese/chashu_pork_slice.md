@@ -2,7 +2,7 @@
 title: Chashu de Cerdo para Ramen
 region: Fukuoka
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://www.nhk.or.jp/lifestyle/kp/

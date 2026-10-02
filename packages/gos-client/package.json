@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "description": "Cliente sin dependencias para el contrato GOS v1",
-  "license": "AGPL-3.0-only",
+  "license": "Apache-2.0",
   "files": [
     "dist",
     "README.md",

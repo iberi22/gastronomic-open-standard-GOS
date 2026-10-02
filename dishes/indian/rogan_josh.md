@@ -2,7 +2,7 @@
 title: Rogan Josh de Cordero
 region: Cachemira
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://food.ndtv.com/recipe-mutton-rogan-josh-218358

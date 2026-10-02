@@ -16,7 +16,7 @@ images:
 - description: Ceviche Peruano Clásico
   url: https://images.unsplash.com/photo-1534422298391-e4f8c172dddb
 language: es
-license: MIT
+license: Apache-2.0
 main_ingredients:
 - Pescado blanco (Lenguado o Corvina)
 - Limón sutil (Lima verde)

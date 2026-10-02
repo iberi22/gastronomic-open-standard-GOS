@@ -2,7 +2,7 @@
 title: Amritsari Fish Fry
 region: Amritsar
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://food.ndtv.com/recipe-amritsari-fish-218336

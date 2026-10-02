@@ -2,7 +2,7 @@
 title: Chilpachole de Jaiba
 region: Veracruz
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: El Universal Menú
   url: 'https://www.eluniversal.com.mx/menu/receta-de-chilpachole-de-jaiba-tradicional-de-veracruz/'

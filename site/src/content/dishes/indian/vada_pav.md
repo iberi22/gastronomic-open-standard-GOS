@@ -2,7 +2,7 @@
 title: Vada Pav
 region: Bombay / Mumbai
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%AA%E0%A4%BE%E0%A4%B5

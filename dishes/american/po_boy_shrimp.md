@@ -2,7 +2,7 @@
 title: Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)
 region: Luisiana
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: eater.com
   url: 'https://www.eater.com/maps/best-po-boys-new-orleans'

@@ -2,7 +2,7 @@
 title: Yudofu Kyoto
 region: Kyoto
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E6%B9%AF%E2%80%93%E8%B1%86%E8%85%90

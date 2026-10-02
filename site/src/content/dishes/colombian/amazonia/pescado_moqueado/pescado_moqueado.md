@@ -2,7 +2,7 @@
 title: Pescado Moqueado
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: elespectador.com
   url: >-

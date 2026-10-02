@@ -2,7 +2,7 @@
 title: Casabe (Pan de Yuca Amazónico)
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: delamazonas.com
   url: 'https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/'

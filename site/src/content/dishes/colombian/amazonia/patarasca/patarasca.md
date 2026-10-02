@@ -2,7 +2,7 @@
 title: Patarasca (Pescado en Hojas)
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: contarproteinas.com
   url: >-

@@ -2,7 +2,7 @@
 title: Zaru Soba (Fideos de Trigo Sarraceno)
 region: Nagano
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://park.ajinomoto.co.jp/recipe/card/704112/

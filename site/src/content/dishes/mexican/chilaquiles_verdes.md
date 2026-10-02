@@ -2,7 +2,7 @@
 title: Chilaquiles Verdes con Huevo
 region: México DF
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/desayunos/chilaquiles-verdes-con-pollo/2018/05/'

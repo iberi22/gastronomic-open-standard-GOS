@@ -2,7 +2,7 @@
 title: Chana Masala
 region: Punjab
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%A8%E0%A4%BE_%E0%A4%AE%E0%A4%B8%E0%A4%BE%E0%A4%B2%E0%A4%BE

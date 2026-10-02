@@ -2,7 +2,7 @@
 title: Tacacho con Cecina
 region: Amazonía
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: tripadvisor.co
   url: >-

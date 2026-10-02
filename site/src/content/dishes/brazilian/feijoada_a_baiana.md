@@ -2,7 +2,7 @@
 title: Feijoada à Baiana
 region: Bahia, Brasil
 language: pt
-license: MIT
+license: Apache-2.0
 source:
   name: panelinha.com.br
   url: 'https://www.panelinha.com.br/receita/feijoada-completa'

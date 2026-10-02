@@ -2,7 +2,7 @@
 title: Mole Poblano
 region: Puebla
 language: es
-license: MIT
+license: Apache-2.0
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/'
