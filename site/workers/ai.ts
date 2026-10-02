@@ -63,11 +63,21 @@ export default {
     if (!prompt || typeof prompt !== 'string')
       return Response.json({ error: 'prompt required' }, { status: 400 })
 
+    // `in` consulta la cadena de prototipos, no solo las claves propias:
+    // 'constructor', 'toString' o '__proto__' dan true sobre cualquier
+    // objeto. Entonces TIERS[tierId] devuelve una Function, cuyo
+    // monthlyCredit es undefined, y `undefined === 0` es false, de modo que
+    // el tier inventado pasaba las DOS guardas. Se comprueba que sea una
+    // clave propia con Object.hasOwn y que tenga la forma de un tier.
     const tier =
-      typeof tierId === 'string' && tierId in TIERS
+      typeof tierId === 'string' && Object.hasOwn(TIERS, tierId)
         ? TIERS[tierId as SocioTier['id']]
         : undefined
-    if (!tier || tier.monthlyCredit === 0) {
+    if (
+      !tier ||
+      typeof tier.monthlyCredit !== 'number' ||
+      tier.monthlyCredit === 0
+    ) {
       return Response.json(
         { error: 'tier sin credito', tierId },
         { status: 402 },
