@@ -233,7 +233,9 @@ describe('?key= y secretos', () => {
           if (String(u).includes('billing.test')) {
             seen.push(
               String(
-                (init?.headers as Record<string, string>)['x-service-secret'],
+                (init?.headers as Record<string, string> | undefined)?.[
+                  'x-service-secret'
+                ],
               ),
             )
             return new Response(

@@ -211,12 +211,7 @@ export default {
     let swalRemaining = 0
 
     // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
-    if (
-      apiKey &&
-      apiKey.startsWith('swal_') &&
-      env.BILLING_URL &&
-      billingSecret(env)
-    ) {
+    if (apiKey?.startsWith('swal_') && env.BILLING_URL && billingSecret(env)) {
       const verdict = await verifySwalKey(
         env.BILLING_URL,
         billingSecret(env) as string,
