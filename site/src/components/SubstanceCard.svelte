@@ -125,7 +125,7 @@ const url = $derived(href ?? `/substances/${substance.slug}`)
   }
   .substance-link:hover :global(.substance-card) {
     border-color: color-mix(in srgb, var(--swal-accent) 30%, var(--swal-border));
-    box-shadow: 0 8px 32px rgba(139,92,246,0.12);
+    box-shadow: var(--swal-shadow-lg);
     transform: translateY(-2px);
   }
   .media { position: relative; height: 200px; overflow: hidden; background: var(--swal-bg); border-bottom: 1px solid var(--swal-border); }

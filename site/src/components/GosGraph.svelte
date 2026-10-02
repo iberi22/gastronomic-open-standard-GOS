@@ -165,25 +165,11 @@ function renderSigma(
   const imp = (id: string) => Math.sqrt(deg[id] || 0) / Math.sqrt(maxDeg)
 
   const inkRgb = () =>
-    getComputedStyle(el).getPropertyValue('--g-rgb').trim() || '23,23,23'
+    getComputedStyle(el).getPropertyValue('--g-rgb').trim() || '245,245,244'
   const rgba = (a: number) => `rgba(${inkRgb()},${a})`
   const paper = () =>
-    getComputedStyle(el).getPropertyValue('--g-paper').trim() || '#eaeae8'
+    getComputedStyle(el).getPropertyValue('--g-paper').trim() || '#faf9f5'
 
-  // sangrado exacto al ancho del cliente (sin el hueco de la barra de scroll).
-  // Se mide la propia caja: robusto a cualquier contenedor y a shifts del layout.
-  const applyBleed = () => {
-    const wrap = el.parentElement
-    if (!wrap?.isConnected) return
-    const vw = document.documentElement.clientWidth
-    if (!vw) return
-    const rect = wrap.getBoundingClientRect()
-    const ml = parseFloat(getComputedStyle(wrap).marginLeft) || 0
-    wrap.style.width = `${vw}px`
-    wrap.style.marginLeft = `${ml - rect.left}px`
-    wrap.style.marginRight = '0px'
-  }
-  applyBleed()
 
   const g = new Graph({ multi: true })
   subset.forEach((n, i) => {
@@ -389,7 +375,6 @@ function renderSigma(
   const el2 = el as HTMLElement & { _ro?: ResizeObserver }
   if (typeof ResizeObserver !== 'undefined') {
     el2._ro = new ResizeObserver(() => {
-      applyBleed()
       fitFromOriginal()
     })
     el2._ro.observe(el)
@@ -429,11 +414,9 @@ function renderSigma(
 
   // la página puede desplazarse al cargar fuentes/imágenes: re-sangra y re-encuadra
   window.addEventListener('load', () => {
-    applyBleed()
     fitFromOriginal()
   })
   document.fonts?.ready?.then(() => {
-    applyBleed()
     fitFromOriginal()
   })
 }
@@ -476,9 +459,11 @@ function renderSigma(
 
 <style>
   .gos-graph-wrap {
-    --g-paper: #eaeae8;
-    --g-ink: #171717;
-    --g-rgb: 23, 23, 23;
+    /* Papel y tinta salen del tema Bone (--swal-bg / --swal-text). --g-rgb es la
+       misma tinta en rgb para el canvas de sigma, que no entiende var(). */
+    --g-paper: var(--swal-bg);
+    --g-ink: var(--swal-text);
+    --g-rgb: 245, 245, 244;
     --g-hair: color-mix(in srgb, var(--g-ink) 16%, transparent);
     --g-muted: color-mix(in srgb, var(--g-ink) 82%, transparent);
     /* 60% daba 4.40:1 con el ink oscuro (#e5e5e5 sobre #0f0f10) y fallaba
@@ -487,18 +472,17 @@ function renderSigma(
     --g-sheet: color-mix(in srgb, var(--g-ink) 4%, var(--g-paper));
     --g-hover: color-mix(in srgb, var(--g-ink) 6%, transparent);
     position: relative;
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
+    border: 1px solid var(--swal-border);
+    border-radius: var(--swal-radius-lg);
     background: var(--g-paper);
     color: var(--g-ink);
     font-family: var(--swal-font-mono, monospace);
     overflow: hidden;
   }
-  :global([data-theme='antigravity']) .gos-graph-wrap {
-    --g-paper: #0b0b0c;
-    --g-ink: #dededa;
-    --g-rgb: 222, 222, 218;
+  :global([data-theme='light']) .gos-graph-wrap { --g-rgb: 28, 25, 23; }
+  @media (prefers-color-scheme: light) {
+    :global(:root:not([data-theme])) .gos-graph-wrap { --g-rgb: 28, 25, 23; }
   }
   .map-head {
     display: flex;
@@ -537,7 +521,7 @@ function renderSigma(
     letter-spacing: 0.16em;
     color: var(--g-faint);
   }
-  .map-state.error { color: var(--swal-danger, #b91c1c); }
+  .map-state.error { color: var(--swal-danger); }
   .bar { width: 130px; height: 1px; background: color-mix(in srgb, var(--g-ink) 10%, transparent); overflow: hidden; }
   .bar i { display: block; width: 40%; height: 100%; background: var(--g-ink); animation: sweep 1.4s ease-in-out infinite; }
   @keyframes sweep { 0% { transform: translateX(-110%); } 100% { transform: translateX(320%); } }

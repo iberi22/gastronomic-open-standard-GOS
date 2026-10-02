@@ -13,8 +13,7 @@
 //
 // Accesibilidad (WCAG AA): texto bajo 14px usa --swal-text-secondary (medido
 // 7.55:1 en surface oscuro, 7.63:1 en claro). NUNCA --swal-text-muted
-// (3.96:1 / 2.52:1 — falla 4.5:1). Acento: var(--swal-accent-text,
-// var(--swal-accent)) — 5.22:1 / 5.70:1.
+// (3.96:1 / 2.52:1 — falla 4.5:1). Acento: var(--swal-accent) (el propio texto del tema Bone).
 
 import type { DomainRecord, StorageAdapter } from '../lib/domain'
 import { IndexedDBStorageAdapter, isIndexedDBAvailable } from '../lib/indexeddb'
@@ -634,9 +633,9 @@ let visible = $derived(
   .btn.primary {
     background: var(--swal-accent);
     border-color: var(--swal-accent);
-    color: #fff;
+    color: var(--swal-on-accent);
   }
-  .btn.danger { color: var(--swal-accent-text, var(--swal-accent)); }
+  .btn.danger { color: var(--swal-accent); }
   .btn.sm { padding: 6px 10px; font-size: 12px; }
 
   .status {
@@ -653,7 +652,7 @@ let visible = $derived(
     border: 1px solid;
   }
   .msg.error {
-    color: var(--swal-accent-text, var(--swal-accent));
+    color: var(--swal-accent);
     border-color: color-mix(in srgb, var(--swal-accent) 40%, var(--swal-border));
     background: color-mix(in srgb, var(--swal-accent) 8%, transparent);
   }
@@ -715,7 +714,7 @@ let visible = $derived(
   .lg {
     font-size: 12px;
     font-weight: 700;
-    color: var(--swal-accent-text, var(--swal-accent));
+    color: var(--swal-accent);
     padding: 0 6px;
   }
 
@@ -749,7 +748,7 @@ let visible = $derived(
     color: var(--swal-text-secondary);
     background: var(--swal-surface);
   }
-  .chip.accent { color: var(--swal-accent-text, var(--swal-accent)); }
+  .chip.accent { color: var(--swal-accent); }
 
   .meta {
     margin: 0;

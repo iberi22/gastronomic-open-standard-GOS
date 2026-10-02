@@ -1,5 +1,7 @@
 ---
 import { Toaster } from '@swal/ui'
+import { THEME_BOOT_SCRIPT } from '@swal/ui/theme-boot'
+import GosShell from '../components/GosShell.svelte'
 import OfflineBanner from '../components/OfflineBanner.astro'
 import TranslateMenu from '../components/TranslateMenu.astro'
 import { ogMeta } from '../lib/images'
@@ -42,16 +44,22 @@ const canonicalUrl =
 // ogMeta() mapea cada SVG a su PNG de 1200x630, cae a og-default.png y deja
 // intactas las imagenes raster que el sitio ya emitia.
 const og = ogMeta(image, siteOrigin)
+
+// El item activo del menu sale de la URL, no de cada pagina.
+const currentPath = pathname.replace(/\/+$/, '') || '/'
 ---
 <!doctype html>
-<html lang="es" data-theme="antigravity">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
-    <meta name="theme-color" content="#050507" />
+    <!-- Color de la barra del navegador / PWA: el fondo del tema Bone. var() no
+         vale en <meta>, asi que el claro se resuelve con la media query. -->
+    <meta name="theme-color" content="#121211" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f5" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />
@@ -83,153 +91,71 @@ const og = ogMeta(image, siteOrigin)
 
     <link rel="manifest" href={`${baseClean}/manifest.json`} />
     <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Google+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Fuentes del sistema (--swal-font): sin CDN, la PWA funciona offline. -->
+    <!-- Tema sin destello: aplica ANTES de pintar solo la eleccion guardada
+         (swal-theme); sin eleccion el CSS sigue a prefers-color-scheme. -->
+    <script is:inline set:html={THEME_BOOT_SCRIPT}></script>
     <style is:global>
-      /* tokens + antigravity theme load via src/styles/global.css (tailwind v4) */
-      html { background: var(--swal-bg); color: var(--swal-text); scroll-behavior: smooth; }
-      body { margin: 0; font-family: var(--swal-font); -webkit-font-smoothing: antialiased; }
-      /* scrollbar antigravity */
-      * { scrollbar-width: thin; scrollbar-color: #27272A transparent; }
-      :root[data-theme="antigravity-light"] * { scrollbar-color: #D6D3D1 transparent; }
-
-      /* Accesibilidad: --swal-text-muted y --swal-accent vienen de @swal/ui con
-         valores que no llegan a WCAG AA. Medido contra los 4 fondos que usa el
-         tema (card #0f0f10, page #050507, elevated #1a1a1d, elevated-850):
-           muted  #6b7280 -> 3.45 a 4.21:1  (el peor, elevated-850)
-           accent #8b5cf6 -> 3.94 a 4.81:1  como texto
-         Se suben al primer tono que pasa 4.5:1 en los cuatro, sin tocar el
-         paquete. El acento se parte en dos usos: como texto necesita un tono
-         mas claro, como fondo de boton uno mas oscuro. Afecta a 12 archivos,
-         casi todos con texto de 9-12px. */
-      :root[data-theme="antigravity"] {
-        --swal-text-muted: #808790;
-        --swal-accent-text: #9a68f9;
-        --swal-btn-bg: #7c3aed;
+      :root { --font-sans: var(--swal-font, ui-sans-serif, system-ui, sans-serif); }
+      html { max-width: 100%; overflow-x: hidden; scroll-behavior: smooth; scroll-padding-block: 5rem; }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
+        background: var(--swal-bg);
+        background-image: var(--swal-mesh);
+        background-attachment: fixed;
+        color: var(--swal-text);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
       }
-      :root[data-theme="antigravity-light"] { --swal-text-muted: #6e6863; }
-
-      /* Boton primario de @swal/ui: blanco sobre --swal-accent da 4.23:1. */
-      .swal-btn.primary, .swal-btn.swal-btn-primary {
-        background: var(--swal-btn-bg, var(--swal-accent)) !important;
+      * { scrollbar-width: thin; scrollbar-color: var(--swal-border-strong) transparent; }
+      /* WCAG 2.4.7: anillo de foco con el acento del tema (marfil / grafito). */
+      :where(a, button, input, select, textarea, summary):focus-visible {
+        outline: 2px solid var(--swal-accent);
+        outline-offset: 2px;
       }
+      ::selection { background: var(--swal-accent-muted); }
     </style>
-    <script is:inline>
-      // dual theme persistence: antigravity | antigravity-light
-      (function(){
-        const k='gos-theme';
-        const saved = localStorage.getItem(k);
-        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        const theme = saved || (prefersLight ? 'antigravity-light' : 'antigravity');
-        document.documentElement.setAttribute('data-theme', theme);
-        document.documentElement.style.colorScheme = theme.includes('light') ? 'light' : 'dark';
-      })();
-    </script>
   </head>
-  <body class="min-h-screen relative overflow-x-hidden selection:bg-[rgba(139,92,246,0.3)] swal-scrollbar">
+  <body>
     <OfflineBanner />
-    <!-- Edge-hive / Antigravity topbar -->
-    <header class="sticky top-0 z-40 pt-2" style="background: var(--swal-bg); border-bottom: 1px solid var(--swal-border);">
-      <div class="mx-auto max-w-[1280px] px-4 sm:px-6 py-3 flex items-center justify-between gap-4 min-h-[56px]">
-        <a href={`${baseClean}/`} class="flex items-center gap-3 group">
-          <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-black text-[18px] shadow-lg" style="background: linear-gradient(135deg, var(--swal-accent), #06B6D4); box-shadow: 0 8px 24px rgba(139,92,246,0.35);">G</div>
-          <div class="leading-none">
-            <div class="font-bold tracking-tight" style="color: var(--swal-text); font-size: 16px;">GOS</div>
-            <div class="text-[10px] tracking-[0.14em] font-semibold" style="color: var(--swal-accent);">GASTRONOMIC OPEN STANDARD</div>
+    <GosShell client:load currentPath={currentPath} base={baseClean}>
+      <div slot="topbar"><TranslateMenu /></div>
+      <div class="gos-content">
+        <slot />
+
+        <footer class="gos-footer">
+          <div>
+            <div class="gos-footer-title">GOS · Gastronomic Open Standard v2.0</div>
+            <div class="gos-footer-line">Grafo abierto: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias.</div>
+            <div class="gos-footer-note">Datos abiertos · grafo interactivo · funciona sin conexión</div>
           </div>
-          <span class="hidden sm:inline-flex items-center gap-1.5 ml-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium border" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: color-mix(in srgb, var(--swal-accent) 30%, transparent);">
-            <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background: var(--swal-accent);"></span>
-            GRAFO · ONLINE
-          </span>
-        </a>
-        <nav class="hidden lg:flex items-center gap-1">
-          <a href={`${baseClean}/`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Explorar</a>
-          <a href={`${baseClean}/graph`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Grafo</a>
-          <a href={`${baseClean}/recipes`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Recetas</a>
-          <a href={`${baseClean}/ingredients`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Ingredientes</a>
-          <a href={`${baseClean}/scientific`} class="px-3 py-2 rounded-lg text-sm hover:opacity-90" style="color: var(--swal-text-secondary);">Ciencia</a>
-        </nav>
-        <div class="flex items-center gap-2">
-          <TranslateMenu />
-          <button id="gos-theme-toggle" class="w-9 h-9 rounded-lg border flex items-center justify-center hover:opacity-80 transition" style="background: var(--swal-surface); border-color: var(--swal-border); color: var(--swal-text-secondary);" aria-label="Toggle theme" title="Cambiar tema">
-            <span id="gos-theme-icon">◐</span>
-          </button>
-          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-btn-bg, var(--swal-accent));">Abrir Grafo</a>
-        </div>
+          <a href="https://github.com/iberi22/gastronomic-open-standard-GOS">GitHub · iberi22/GOS</a>
+        </footer>
       </div>
-      <!-- mobile nav -->
-      <div class="lg:hidden flex items-center gap-1 px-4 sm:px-6 pb-2 overflow-x-auto">
-        <a href={`${baseClean}/graph`} class="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border inline-flex items-center gap-1.5" style="background: var(--swal-accent-muted); color: var(--swal-accent); border-color: var(--swal-border);">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
-          Grafo
-        </a>
-        <a href={`${baseClean}/recipes`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
-          Recetas
-        </a>
-        <a href={`${baseClean}/ingredients`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
-          Ingredientes
-        </a>
-        <a href={`${baseClean}/scientific`} class="px-3 py-1.5 rounded-full text-xs whitespace-nowrap border inline-flex items-center gap-1.5" style="border-color: var(--swal-border); color: var(--swal-text-secondary);">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 002 2h12a2 2 0 002-2L15 8V2M9 2h6M7 14h10"/></svg>
-          Ciencia
-        </a>
-      </div>
-    </header>
-
-    <main class="mx-auto max-w-[1280px] px-4 py-6 md:py-8">
-      <slot />
-    </main>
-
-    <footer class="mt-12 py-8" style="border-top: 1px solid var(--swal-border); background: var(--swal-bg);">
-      <div class="mx-auto max-w-[1280px] px-4 flex flex-col md:flex-row gap-4 justify-between text-sm" style="color: var(--swal-text-muted);">
-        <div>
-          <div class="font-semibold" style="color: var(--swal-text);">GOS · Gastronomic Open Standard v2.0</div>
-          <div class="text-xs mt-1">Grafo abierto: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias.</div>
-          <div class="text-[11px] mt-2">Datos abiertos · grafo interactivo · funciona sin conexión</div>
-        </div>
-        <div class="text-xs flex flex-col gap-1">
-          <a href="https://github.com/iberi22/gastronomic-open-standard-GOS" class="hover:underline" style="color: var(--swal-accent);">GitHub · iberi22/GOS</a>
-          <span>Tema oscuro y claro</span>
-        </div>
-      </div>
-    </footer>
+    </GosShell>
 
     <Toaster client:load />
-    <script is:inline>
-      document.getElementById('gos-theme-toggle')?.addEventListener('click', () => {
-        const cur = document.documentElement.getAttribute('data-theme') || 'antigravity';
-        const next = cur === 'antigravity' ? 'antigravity-light' : 'antigravity';
-        document.documentElement.setAttribute('data-theme', next);
-        document.documentElement.style.colorScheme = next.includes('light') ? 'light' : 'dark';
-        localStorage.setItem('gos-theme', next);
-        const icon = document.getElementById('gos-theme-icon');
-        if(icon) icon.textContent = next.includes('light') ? '☀' : '◐';
-      });
-      // init icon
-      const cur0 = document.documentElement.getAttribute('data-theme') || 'antigravity';
-      const icon0 = document.getElementById('gos-theme-icon');
-      if(icon0) icon0.textContent = cur0.includes('light') ? '☀' : '◐';
-    </script>
     <style is:global>
-      /* subtle grid behind content for antigravity dark */
-      body::before {
-        content: '';
-        position: fixed; inset: 0;
-        background-image:
-          linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-        background-size: 40px 40px;
-        pointer-events: none;
-        z-index: -1;
+      .gos-content { max-width: 1280px; margin: 0 auto; }
+      .gos-footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--swal-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        font-size: 0.8125rem;
+        color: var(--swal-text-secondary);
       }
-      :root[data-theme="antigravity-light"] body::before {
-        background-image:
-          linear-gradient(rgba(28,25,23,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(28,25,23,0.04) 1px, transparent 1px);
-      }
+      .gos-footer-title { font-weight: 600; color: var(--swal-text); }
+      .gos-footer-line { font-size: 0.75rem; margin-top: 0.25rem; }
+      .gos-footer-note { font-size: 0.6875rem; margin-top: 0.5rem; color: var(--swal-text-muted); }
+      .gos-footer a { color: var(--swal-accent); font-size: 0.75rem; }
     </style>
     <script is:inline>
       // PWA: registrar el service worker. Sin esto /sw.js existe y sirve 200,
