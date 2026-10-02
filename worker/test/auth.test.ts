@@ -109,6 +109,51 @@ describe('bypass por substring: la clave de la CVE', () => {
     },
   )
 
+  it('rechaza un PREFIJO, SUFIJO o segmento de una key que SI esta en la DB', async () => {
+    // Este es el agujero que los tests de substring de arriba no cubren.
+    // Ellos siembran 'otra-key-legitima', que no contiene 'socio' ni 'paid',
+    // asi que una busqueda por substring (instr/LIKE) daria 0 y el test
+    // pasaria aunque el bypass volviera. Aqui la fila SI contiene el
+    // substring, que es el caso que el bypass real explotaba: la key del
+    // atacante es un fragmento de una key valida.
+    const fake = createFakeD1({ applySchema: true })
+    // La fila va en MAYUSCULAS a proposito: LIKE es case-insensitive en
+    // SQLite, asi que con LIKE '%sk_live%' una variante en minusculas
+    // casaria con una key guardada en mayusculas. `=` no tiene ese fallo.
+    fake.seed({ key: 'SK_LIVE_SOCIO_2026_PROD', tier: 'tiersocio' })
+    const REAL = 'SK_LIVE_SOCIO_2026_PROD'
+
+    for (const frag of [
+      REAL, // exacta
+      'socio', // sufijo
+      'SK_LIVE_SOCIO', // prefijo
+      'LIVE_SOCIO_2026', // segmento interno
+      '_SOCIO_', // segmento delimitado
+      'SOCIO_2026', // segmento con digitos
+      'sk_live_socio_2026_prod', // misma key, otra caja
+      'Sk_LiVe_SoCiO_2026_PrOd', // caja mixta
+    ]) {
+      const res = await fetchWorker('/api/all.json', frag, envWithDb(fake))
+      // solo la key exacta pasa; cualquier fragmento suyo es 401
+      expect(res.status, `fragmento ${frag}`).toBe(frag === REAL ? 200 : 401)
+      if (frag !== REAL) expect(tierOf(res)).not.toBe('tiersocio')
+    }
+  })
+
+  it('GOS_DEV_KEY es igualdad exacta, no un prefijo', async () => {
+    // La dev key tiene su propio camino de autenticacion, separado de la
+    // query a D1, asi que necesita su propio test: con startsWith en vez de
+    // ===, cualquier key que empiece por el secreto de dev pasaria.
+    const conDev = envNoDb({ GOS_DEV_KEY: 'dev-secret-2026' })
+    const status = async (key: string) =>
+      (await fetchWorker('/api/all.json', key, conDev)).status
+
+    expect(await status('dev-secret-2026-extra')).not.toBe(200)
+    expect(await status('dev-secret')).not.toBe(200)
+    expect(await status('dev-secret-202')).not.toBe(200)
+    expect(await status('dev-secret-2026')).toBe(200) // la exacta si pasa
+  })
+
   it('no concede tier de pago a una key de substring cuando NO hay binding DB', async () => {
     const res = await fetchWorker('/api/all.json', 'xyzpaidabc', envNoDb())
 
