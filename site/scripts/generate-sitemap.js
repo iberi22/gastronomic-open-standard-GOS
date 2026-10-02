@@ -53,6 +53,10 @@ for (const p of [
   '/substances',
   '/countries',
   '/api',
+  // Consola del agente de IA. Indexable a proposito: es la puerta de
+  // entrada para agentes humanos, y el verifier SEO falla (rc=1) si una
+  // pagina indexable no aparece en el sitemap.
+  '/agent',
 ]) {
   add(p, p === '/' ? '1.0' : '0.8')
 }

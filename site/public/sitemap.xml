@@ -5,6 +5,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://gos.swal.network/agent/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gos.swal.network/api/</loc>
     <priority>0.8</priority>
   </url>
