@@ -19,3 +19,15 @@ gos = "gos.cli:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["gos*"]
+
+[tool.pytest.ini_options]
+# Solo rutas con tests reales de pytest. scripts/ contiene scripts manuales
+# (test_gemini, test_qwen, test_translate...) que fallan en collection con
+# FileNotFoundError por rutas absolutas "E:/..." del portatil de un
+# desarrollador de Windows; no son tests y pytest los recolectaba igual.
+# CI corre los tests de verdad por su cuenta (vitest + worker vitest +
+# python -m gos.cli audit), no con pytest.
+testpaths = [
+    "automation/test_graph_edges.py",
+    "scripts/test_gos_compliance.py",
+]
