@@ -7,6 +7,7 @@ import {
   RECIPE_PLACEHOLDER,
   resolveDishHero,
 } from '../../lib/images'
+import { toIsoDuration } from '../../lib/iso-duration'
 import { recipeDescription } from '../../lib/meta-description'
 import { extractInstructionTexts } from '../../lib/recipe-instructions'
 import { getRecipeMarkdown } from '../../lib/recipe-markdown'
@@ -140,8 +141,15 @@ const jsonLd = recipeJsonLd({
   title: recipeTitle,
   description: metaDescription,
   image: heroImage,
-  prepTime: prep ? `PT${prep.replace(/\D/g, '')}M` : undefined,
-  cookTime: cook ? `PT${cook.replace(/\D/g, '')}M` : undefined,
+  // toIsoDuration en vez de concatenar los digitos del texto. Medido sobre
+  // los formatos reales del repo, `PT${texto.replace(/\D/g,'')}M` moria en
+  // 6 de 6: "2 horas" -> PT2M (2 minutos), "2 horas y 30 minutos" ->
+  // PT230M (3 h 50 min), "10-15 minutos" -> PT1015M. El JSON-LD mintia
+  // sobre el tiempo de practicamente todas las recetas, y ese es el campo
+  // que usa el rich result. Si el texto no es interpretable se omite el
+  // campo: no publicar es mejor que publicar una duracion falsa.
+  prepTime: toIsoDuration(prep),
+  cookTime: toIsoDuration(cook),
   recipeYield: servings ? `${servings} servings` : undefined,
   recipeIngredient: linked.map((l) => l.name),
   // 495/495 recetas emitian JSON-LD sin recipeInstructions (auditoria
