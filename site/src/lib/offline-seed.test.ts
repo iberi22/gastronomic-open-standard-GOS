@@ -172,9 +172,9 @@ describe('offline-seed: siembra de verdad', () => {
     // retirar el global: es la condición real que el módulo comprueba.
     const original = globalThis.indexedDB
     // Reflect.deleteProperty en vez de delete directo: `delete` sobre una
-      // propiedad no opcional de lib.dom dispara ts(2790) y obliga a una
-      // supresion que ademas queda sin usar cuando el tipado cambia.
-      Reflect.deleteProperty(globalThis, 'indexedDB')
+    // propiedad no opcional de lib.dom dispara ts(2790) y obliga a una
+    // supresion que ademas queda sin usar cuando el tipado cambia.
+    Reflect.deleteProperty(globalThis, 'indexedDB')
     const fetchSpy = vi.spyOn(globalThis, 'fetch')
     try {
       const result = await seedFromStaticBuild()
