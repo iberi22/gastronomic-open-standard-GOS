@@ -16,3 +16,11 @@ Antes de contribuir, te recomendamos leer el [Código de Conducta](./CODE_OF_CON
 - Sé respetuoso en los comentarios y revisiones.
 
 ¡Gracias por ayudar a mejorar este recetario colectivo!
+
+## Tests
+
+Para el desarrollo en Python (`gos/`), ejecuta la suite de tests usando `uv`:
+
+```bash
+uv sync && uv run pytest -q
+```
