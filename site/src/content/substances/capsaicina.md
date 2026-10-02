@@ -13,10 +13,10 @@ health_registry:
   evidence_level: High
   mechanism: TRPV1 agonist desensitization, substance P depletion
   studies:
-  - doi: 10.3390/molecules25092152
-    source: Molecules
-    title: 'Capsaicin for pain management: mechanisms and clinical uses'
-    year: 2020
+  - doi: 10.1016/j.ejphar.2013.10.053
+    source: Eur J Pharmacol
+    title: 'Mechanisms and clinical uses of capsaicin'
+    year: 2013
 - condition: Obesity / Metabolic syndrome
   evidence_level: Medium
   mechanism: TRPV1-mediated thermogenesis and satiety

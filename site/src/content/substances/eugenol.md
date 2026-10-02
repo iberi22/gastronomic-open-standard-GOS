@@ -22,10 +22,10 @@ health_registry:
   evidence_level: Medium
   mechanism: COX-2 and 5-LOX inhibition
   studies:
-  - doi: 10.1002/ptr.3711
-    source: Phytother Res
-    title: Eugenol anti-inflammatory review
-    year: 2012
+  - doi: 10.32598/rmm.13.2.1440.1
+    source: Res Mol Med
+    title: 'The Anti-inflammatory Effects of Eugenol and Its Derivatives: A Scoping Review of Preclinical Evidence'
+    year: 2025
 image_attribution: Pixabay — Syzygium aromaticum
 name: Eugenol
 sabor: Dulce picante alcanforado, anestésico local inmediato

@@ -14,10 +14,10 @@ health_registry:
   evidence_level: Medium
   mechanism: Insulin sensitivity via PPARδ/γ and TRPA1
   studies:
-  - doi: 10.1370/afm.1516
-    source: Ann Fam Med
-    title: 'Cinnamon and glucose: meta-analysis'
-    year: 2013
+  - doi: 10.1089/jmf.2010.0180
+    source: J Med Food
+    title: 'Cinnamon Intake Lowers Fasting Blood Glucose: Meta-Analysis'
+    year: 2011
 image_attribution: Pixabay — Cinnamomum verum
 name: Cinamaldehído
 sabor: Dulce picante cálido intenso, 60-80% aceite canela

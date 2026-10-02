@@ -22,9 +22,9 @@ health_registry:
   evidence_level: Medium
   mechanism: Amyloid aggregation inhibition, antioxidant
   studies:
-  - doi: 10.3390/ijms20030492
-    source: Int J Mol Sci
-    title: 'Curcumin in Alzheimer''s disease: review'
+  - doi: 10.1016/j.brainres.2019.146476
+    source: Brain Res
+    title: 'The effect of curcumin on cognition in Alzheimer''s disease and healthy aging: A systematic review of pre-clinical and clinical studies'
     year: 2019
 image_attribution: Pixabay — Curcuma longa rhizome
 name: Curcumina

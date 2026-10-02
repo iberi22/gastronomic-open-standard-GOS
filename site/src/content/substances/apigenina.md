@@ -14,10 +14,10 @@ health_registry:
   evidence_level: Medium
   mechanism: GABA-A benzodiazepine site modulator
   studies:
-  - doi: 10.1002/ptr.4895
-    source: Phytother Res
-    title: 'Apigenin and anxiety: review'
-    year: 2013
+  - doi: 10.5812/ijpr-167153
+    source: Iran J Pharm Res
+    title: 'Apigenin for Depression and Anxiety: A Systematic Review of Preclinical Studies'
+    year: 2026
 image_attribution: Pixabay — Matricaria chamomilla
 name: Apigenina
 sabor: Suave dulce amarga, soluble flavon glicosido
