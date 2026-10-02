@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro'
-import { creditStatus, TIERS } from '../../../lib/billing'
+import { creditStatus, isTierId, TIERS } from '../../../lib/billing'
 
 function json(
   body: unknown,
@@ -19,13 +19,14 @@ export const POST: APIRoute = async ({ request }) => {
       string,
       unknown
     >
-    const tierId = (body.tier as string) ?? 'socio'
+    const tierId = body.tier ?? 'socio'
     const estimatedTokens = Number(body.estimatedTokens ?? 0)
     const turnstileToken = body.turnstile as string | undefined
 
     // billing.ts tier check - source of truth, never hardcode Stripe keys
-    const tier = TIERS[tierId as keyof typeof TIERS] ?? TIERS.socio
-    if (!tier) return json({ error: 'unknown tier' }, 400)
+    // isTierId usa Object.hasOwn: 'constructor'/'__proto__' no son tiers.
+    if (!isTierId(tierId)) return json({ error: 'unknown tier' }, 400)
+    const tier = TIERS[tierId]
 
     // In production Cloudflare runtime: verify Turnstile via fetch to turnstile verify endpoint + KV/D1 ledger
     // Here in Astro static, we emulate: if turnstile missing but tier is socio, still return mock JWT when tokens fit credit

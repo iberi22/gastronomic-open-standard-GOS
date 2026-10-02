@@ -32,3 +32,14 @@ CREATE TABLE IF NOT EXISTS api_keys (
 -- orden por status y expires_at, no el acceso por key.
 CREATE INDEX IF NOT EXISTS idx_api_keys_key
   ON api_keys (key, status, expires_at);
+
+-- Ledger de credito de inferencia, indexado por la key AUTENTICADA (hash
+-- sha256 truncado calculado en servidor), nunca por un id del cliente. El
+-- incremento es una sola sentencia UPDATE ... WHERE used + ? <= cuota
+-- RETURNING used, por lo que es atomico en D1.
+CREATE TABLE IF NOT EXISTS credit_ledger (
+  key_id TEXT NOT NULL,
+  period TEXT NOT NULL,           -- YYYY-MM
+  used INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (key_id, period)
+);

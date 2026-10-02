@@ -3,15 +3,8 @@ export function getStaticPaths() {
 }
 
 import type { APIRoute } from 'astro'
-import { agentCreate, agentDelete, agentUpdate } from '../../../lib/agentDomain'
 import type { EntityName } from '../../../lib/domain'
-import {
-  createEntity,
-  deleteEntity,
-  getEntity,
-  listEntities,
-  updateEntity,
-} from '../../../lib/domain'
+import { getEntity, listEntities } from '../../../lib/domain'
 
 const ALLOWED = [
   'recipe',
@@ -63,64 +56,6 @@ export const GET: APIRoute = async ({ params, url }) => {
   return json({ entity, count: records.length, records })
 }
 
-export const POST: APIRoute = async ({ params, request }) => {
-  const entity = params.entity as string
-  if (!ALLOWED.includes(entity)) {
-    return json({ error: `Unknown entity '${entity}'` }, 400)
-  }
-  try {
-    const body = await request.json()
-    const inst = instanceId()
-    const record = await createEntity(entity as EntityName, body, inst)
-    // Sync to Xavier memory (best-effort, non-blocking)
-    try {
-      await agentCreate(entity as EntityName, body, inst)
-    } catch (xavierErr) {
-      console.warn('[xavier] sync failed (non-fatal):', xavierErr)
-    }
-    return json(record, 201)
-  } catch (err) {
-    return json({ error: String(err) }, 500)
-  }
-}
-
-export const PUT: APIRoute = async ({ params, url, request }) => {
-  const entity = params.entity as string
-  if (!ALLOWED.includes(entity)) {
-    return json({ error: `Unknown entity '${entity}'` }, 400)
-  }
-  const id = url.searchParams.get('id')
-  if (!id) return json({ error: 'Missing id param' }, 400)
-  try {
-    const patch = await request.json()
-    const inst = instanceId()
-    const record = await updateEntity(entity as EntityName, id, patch, inst)
-    if (!record) return json({ error: 'Not found' }, 404)
-    try {
-      await agentUpdate(entity as EntityName, id, patch, inst)
-    } catch (xavierErr) {
-      console.warn('[xavier] sync failed (non-fatal):', xavierErr)
-    }
-    return json(record)
-  } catch (err) {
-    return json({ error: String(err) }, 500)
-  }
-}
-
-export const DELETE: APIRoute = async ({ params, url }) => {
-  const entity = params.entity as string
-  if (!ALLOWED.includes(entity)) {
-    return json({ error: `Unknown entity '${entity}'` }, 400)
-  }
-  const id = url.searchParams.get('id')
-  if (!id) return json({ error: 'Missing id param' }, 400)
-  const inst = instanceId()
-  const ok = await deleteEntity(entity as EntityName, id, inst)
-  if (!ok) return json({ error: 'Not found' }, 404)
-  try {
-    await agentDelete(entity as EntityName, id, inst)
-  } catch (xavierErr) {
-    console.warn('[xavier] sync failed (non-fatal):', xavierErr)
-  }
-  return json({ deleted: true, entity, id })
-}
+// POST/PUT/DELETE retirados (2026-10-02): sin autenticacion, sin callers en el
+// sitio, y GOS despliega estatico. Las mutaciones solo existen, si hacen falta,
+// detras del gateway y con key de pago (worker/src/index.ts, seccion 2c).

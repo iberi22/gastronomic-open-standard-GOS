@@ -16,7 +16,15 @@ export interface Env {
   ORIGIN_URL?: string
   FREE_DAILY_LIMIT?: string
   BILLING_URL?: string
+  /** Secreto de servicio hacia swal-billing. Nombre canonico (wrangler.toml/docs). */
+  SERVICE_SHARED_SECRET?: string
+  /**
+   * @deprecated Nombre antiguo; solo lectura de compatibilidad. Usar
+   * SERVICE_SHARED_SECRET. Se retirara cuando el deploy ya no lo defina.
+   */
   BILLING_SERVICE_SECRET?: string
+  /** Fallos de auth por IP/prefijo y hora antes de cortar sin tocar D1. */
+  AUTH_FAIL_LIMIT?: string
 }
 
 import { reportSwalUsage, verifySwalKey } from './swal-billing'
@@ -40,6 +48,68 @@ function jsonResponse(
       ...headers,
     },
   })
+}
+
+function billingSecret(env: Env): string | undefined {
+  // BILLING_SERVICE_SECRET: compat deprecada, ver Env.
+  return env.SERVICE_SHARED_SECRET || env.BILLING_SERVICE_SECRET || undefined
+}
+
+// Forma valida de una key antes de gastar un lookup: sin esto, cualquier
+// cadena arbitraria (o gigante) llegaba a D1 / al billing.
+const KEY_SHAPE = /^[A-Za-z0-9_.-]{1,128}$/
+
+async function sha256Hex(text: string): Promise<string> {
+  const buf = await crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(text),
+  )
+  return [...new Uint8Array(buf)]
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+}
+
+/** Id de ledger derivado en servidor de la key autenticada (nunca del body). */
+async function ledgerKeyId(apiKey: string): Promise<string> {
+  return `key:${(await sha256Hex(apiKey)).slice(0, 32)}`
+}
+
+function hourKey(): string {
+  return new Date().toISOString().slice(0, 13)
+}
+
+async function authFailCount(
+  kv: KVNamespace | undefined,
+  keys: string[],
+): Promise<number> {
+  if (!kv) return 0
+  let max = 0
+  for (const k of keys) {
+    try {
+      const v = await kv.get(k)
+      max = Math.max(max, v ? parseInt(v, 10) || 0 : 0)
+    } catch (err) {
+      console.error('KV auth-fail get error:', err)
+    }
+  }
+  return max
+}
+
+async function recordAuthFail(
+  kv: KVNamespace | undefined,
+  keys: string[],
+): Promise<void> {
+  if (!kv) return
+  for (const k of keys) {
+    try {
+      const v = await kv.get(k)
+      await kv.put(k, String((v ? parseInt(v, 10) || 0 : 0) + 1), {
+        expirationTtl: 3600,
+      })
+    } catch (err) {
+      console.error('KV auth-fail put error:', err)
+    }
+  }
 }
 
 function getTodayKey(ip: string): string {
@@ -75,7 +145,6 @@ export default {
         },
         authentication: {
           header: 'x-api-key: <KEY>',
-          queryParam: 'key=<KEY>',
           bearer: 'Authorization: Bearer <KEY>',
         },
         routes: {
@@ -93,6 +162,8 @@ export default {
     }
 
     // 2. Authentication check for Paid Keys (D1)
+    // La key solo viaja por header (x-api-key / Authorization: Bearer). El
+    // `?key=` se descarta: acaba en logs/historial y se reenviaba al origen.
     let apiKey = request.headers.get('x-api-key')
     if (!apiKey) {
       const authHeader = request.headers.get('Authorization')
@@ -100,8 +171,38 @@ export default {
         ? authHeader.substring(7).trim()
         : null
     }
-    if (!apiKey) {
-      apiKey = url.searchParams.get('key')
+
+    const clientIp =
+      request.headers.get('cf-connecting-ip') ||
+      request.headers.get('x-forwarded-for') ||
+      '127.0.0.1'
+
+    // 2a. Rechazo barato ANTES de cualquier D1/billing: forma invalida y
+    // throttle de fallos por IP y por prefijo de key.
+    let failKeys: string[] = []
+    if (apiKey) {
+      if (!KEY_SHAPE.test(apiKey)) {
+        return jsonResponse(
+          {
+            error: 'Unauthorized: Invalid or inactive API key',
+            tier: 'invalid',
+          },
+          401,
+        )
+      }
+      const hour = hourKey()
+      failKeys = [
+        `authfail:ip:${clientIp}:${hour}`,
+        `authfail:pfx:${apiKey.slice(0, 8)}:${hour}`,
+      ]
+      const failLimit = parseInt(env.AUTH_FAIL_LIMIT || '20', 10)
+      if ((await authFailCount(env.RATE_LIMIT_KV, failKeys)) >= failLimit) {
+        return jsonResponse(
+          { error: 'Too many failed key attempts', tier: 'throttled' },
+          429,
+          { 'Retry-After': '3600' },
+        )
+      }
     }
 
     let isPaidKey = false
@@ -110,15 +211,10 @@ export default {
     let swalRemaining = 0
 
     // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
-    if (
-      apiKey &&
-      apiKey.startsWith('swal_') &&
-      env.BILLING_URL &&
-      env.BILLING_SERVICE_SECRET
-    ) {
+    if (apiKey?.startsWith('swal_') && env.BILLING_URL && billingSecret(env)) {
       const verdict = await verifySwalKey(
         env.BILLING_URL,
-        env.BILLING_SERVICE_SECRET,
+        billingSecret(env) as string,
         apiKey,
       )
       if (!verdict) {
@@ -128,6 +224,7 @@ export default {
         )
       }
       if (!verdict.active) {
+        await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
         return jsonResponse(
           {
             error: 'Unauthorized: Invalid or inactive API key',
@@ -155,6 +252,7 @@ export default {
             isPaidKey = true
             keyTier = result.tier || 'socio'
           } else {
+            await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
             return jsonResponse(
               {
                 error: 'Unauthorized: Invalid or inactive API key',
@@ -186,6 +284,7 @@ export default {
           isPaidKey = true
           keyTier = 'tiersocio'
         } else {
+          await recordAuthFail(env.RATE_LIMIT_KV, failKeys)
           return jsonResponse(
             {
               error: 'Unauthorized: no key store configured',
@@ -197,11 +296,19 @@ export default {
       }
     }
 
+    // 2c. Mutaciones de /api/entities/*: solo con key de pago valida.
+    const isReadMethod = request.method === 'GET' || request.method === 'HEAD'
+    if (path.startsWith('/api/entities/') && !isReadMethod && !isPaidKey) {
+      return jsonResponse(
+        {
+          error: 'Forbidden: entity mutations require a paid API key',
+          tier: 'free',
+        },
+        403,
+      )
+    }
+
     // 3. Rate Limiting for Free Tier (KV)
-    const clientIp =
-      request.headers.get('cf-connecting-ip') ||
-      request.headers.get('x-forwarded-for') ||
-      '127.0.0.1'
     let currentCount = 0
     const kvKey = getTodayKey(clientIp)
 
@@ -250,7 +357,7 @@ export default {
 
     // 3b. POST /api/ai/infer — inferencia socio via Workers AI (solo paid keys).
     // Fuente: site/workers/ai.ts adaptado a bindings del gateway (DB/RATE_LIMIT_KV,
-    // sin tablas nuevas: ledger en KV. Pricing = billing.ts calculatePrice inline).
+    // ledger en D1 tabla credit_ledger. Pricing = billing.ts calculatePrice inline).
     if (path === '/api/ai/infer') {
       if (request.method !== 'POST') {
         return jsonResponse({ error: 'method not allowed, use POST' }, 405)
@@ -271,37 +378,82 @@ export default {
           429,
         )
       }
-      let body: { prompt?: unknown; appId?: unknown }
+      let body: { prompt?: unknown }
       try {
         body = (await request.json()) as typeof body
       } catch {
         return jsonResponse({ error: 'invalid json' }, 400)
       }
       const prompt = typeof body.prompt === 'string' ? body.prompt : ''
-      const appId =
-        typeof body.appId === 'string' && body.appId ? body.appId : 'gos'
       if (!prompt) return jsonResponse({ error: 'prompt required' }, 400)
 
+      // El ledger se indexa por la key AUTENTICADA (hash en servidor). El
+      // `appId` del body se ignora: antes el cliente elegia su propio ledger.
+      const ledgerId = await ledgerKeyId(apiKey as string)
+      const period = new Date().toISOString().slice(0, 7)
       // TIERS socio/socio-managed comparten monthlyCredit 50000 (billing.ts)
       const monthlyCredit = 50000
-      const kvKey = `credits:${appId}`
-      let used = 0
-      try {
-        const cached = env.RATE_LIMIT_KV
-          ? await env.RATE_LIMIT_KV.get(kvKey)
-          : null
-        used = cached ? parseInt(cached, 10) : 0
-      } catch {
-        used = 0
-      }
       const estimated = Math.ceil(prompt.length / 4)
-      if (used + estimated > monthlyCredit) {
+      if (estimated > monthlyCredit) {
         return jsonResponse(
-          { error: 'credito agotado', used, limit: monthlyCredit },
+          { error: 'credito agotado', limit: monthlyCredit },
           402,
         )
       }
+      // Fail-closed: sin ledger no hay forma de contar credito (F-01).
+      if (!env.DB) {
+        return jsonResponse(
+          { error: 'ledger unavailable', tier: 'unavailable' },
+          503,
+        )
+      }
+      // Reserva ATOMICA: una sola sentencia comprueba cuota e incrementa.
+      let reserved: number | null
+      try {
+        await env.DB.prepare(
+          'INSERT OR IGNORE INTO credit_ledger (key_id, period, used) VALUES (?, ?, 0)',
+        )
+          .bind(ledgerId, period)
+          .run()
+        const row = await env.DB.prepare(
+          'UPDATE credit_ledger SET used = used + ? ' +
+            'WHERE key_id = ? AND period = ? AND used + ? <= ? RETURNING used',
+        )
+          .bind(estimated, ledgerId, period, estimated, monthlyCredit)
+          .first<{ used: number }>()
+        reserved = row ? row.used : null
+      } catch (err) {
+        console.error('D1 ledger error:', err)
+        return jsonResponse(
+          { error: 'ledger unavailable', tier: 'unavailable' },
+          503,
+        )
+      }
+      if (reserved === null) {
+        return jsonResponse(
+          { error: 'credito agotado', limit: monthlyCredit },
+          402,
+        )
+      }
+      // Ajuste del ledger tras el hecho (delta puede ser negativo = devolucion).
+      const adjust = async (delta: number): Promise<number | null> => {
+        if (delta === 0) return reserved
+        try {
+          const r = await (env.DB as D1Database)
+            .prepare(
+              'UPDATE credit_ledger SET used = MAX(0, used + ?) ' +
+                'WHERE key_id = ? AND period = ? RETURNING used',
+            )
+            .bind(delta, ledgerId, period)
+            .first<{ used: number }>()
+          return r ? r.used : null
+        } catch (err) {
+          console.error('D1 ledger adjust error:', err)
+          return null
+        }
+      }
       if (!env.AI) {
+        await adjust(-estimated)
         return jsonResponse({ error: 'AI binding no disponible' }, 501)
       }
       let text = ''
@@ -311,6 +463,7 @@ export default {
         })
         text = aiRes?.response ?? aiRes?.result ?? ''
       } catch (err) {
+        await adjust(-estimated)
         return jsonResponse(
           {
             error: 'Workers AI error',
@@ -320,21 +473,16 @@ export default {
         )
       }
       const tokensUsed = Math.ceil(text.length / 4) || estimated
-      const newUsed = used + tokensUsed
-      try {
-        await env.RATE_LIMIT_KV?.put(kvKey, String(newUsed), {
-          expirationTtl: 2592000,
-        })
-      } catch {}
+      const newUsed = (await adjust(tokensUsed - estimated)) ?? reserved
       // billing.ts: AI*1.10 margen, subtotal + 20% handling
       const aiWithMargin = tokensUsed * 0.00001 * 1.1
       const subtotal = 0.02 + aiWithMargin
       const handling = subtotal * 0.2
       // Reporta consumo al billing central (best-effort, no bloquea respuesta).
-      if (swalKey && env.BILLING_URL && env.BILLING_SERVICE_SECRET) {
+      if (swalKey && env.BILLING_URL && billingSecret(env)) {
         await reportSwalUsage(
           env.BILLING_URL,
-          env.BILLING_SERVICE_SECRET,
+          billingSecret(env) as string,
           swalKey,
         )
       }
@@ -358,10 +506,15 @@ export default {
     }
 
     // 4. Proxy Static Data
-    const targetUrl = `${originUrl}${path}${url.search}`
+    // Nunca se reenvia `key` al origen (credencial en query string).
+    const fwd = new URLSearchParams(url.search)
+    fwd.delete('key')
+    const fwdQs = fwd.toString()
+    const targetUrl = `${originUrl}${path}${fwdQs ? `?${fwdQs}` : ''}`
     try {
       const originRes = await fetch(targetUrl, {
         method: request.method,
+        body: isReadMethod ? undefined : await request.arrayBuffer(),
         headers: {
           'User-Agent': 'GOS-API-Gateway/1.0',
           Accept: 'application/json, text/plain, */*',
