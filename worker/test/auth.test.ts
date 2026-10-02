@@ -227,7 +227,7 @@ describe('una key real y activa SI pasa (el fix no rompio el camino feliz)', () 
     expect(tierOf(res)).toBe('enterprise')
   })
 
-  it('acepta la key via Authorization: Bearer y via ?key=', async () => {
+  it('acepta la key via Authorization: Bearer; ?key= ya NO autentica', async () => {
     const fake = createFakeD1({ applySchema: true })
     fake.seed({
       key: 'gs_multi_transporte',
@@ -256,7 +256,7 @@ describe('una key real y activa SI pasa (el fix no rompio el camino feliz)', () 
     expect(bearer.status).toBe(200)
     expect(tierOf(bearer)).toBe('tiersocio')
     expect(query.status).toBe(200)
-    expect(tierOf(query)).toBe('tiersocio')
+    expect(tierOf(query)).toBe('free')
   })
 })
 
@@ -445,7 +445,7 @@ describe('sin key, el comportamiento de free tier no cambia', () => {
       {
         ORIGIN_URL: 'https://origin.test',
         BILLING_URL: 'https://billing.test',
-        BILLING_SERVICE_SECRET: 'test-secret-placeholder',
+        SERVICE_SHARED_SECRET: 'test-secret-placeholder',
       } as never,
     )
     vi.unstubAllGlobals()

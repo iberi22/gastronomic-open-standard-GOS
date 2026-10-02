@@ -32,6 +32,11 @@ export const TIERS: Record<SocioTier['id'], SocioTier> = {
   },
 }
 
+/** Tier id valido. Object.hasOwn: `'constructor' in TIERS` era true (prototype chain). */
+export function isTierId(raw: unknown): raw is SocioTier['id'] {
+  return typeof raw === 'string' && Object.hasOwn(TIERS, raw)
+}
+
 // --- Pricing (20% handling + AI margin minimo) ---
 
 export const SWAL_HANDLING_PCT = 0.2 // 20% sobre (infra + AI)

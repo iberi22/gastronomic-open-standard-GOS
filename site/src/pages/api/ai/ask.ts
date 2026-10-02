@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
-import { creditStatus, type SocioTier, TIERS } from '../../../lib/billing'
+import { creditStatus, isTierId, type SocioTier } from '../../../lib/billing'
 import {
   askGrounded,
   type GosSource,
@@ -40,8 +40,7 @@ function json(data: unknown, status = 200): Response {
 }
 
 function normalizeTier(raw: unknown): SocioTier['id'] {
-  const s = String(raw ?? '')
-  return s in TIERS ? (s as SocioTier['id']) : 'free'
+  return isTierId(raw) ? raw : 'free'
 }
 
 function asArray(v: unknown): string[] {
