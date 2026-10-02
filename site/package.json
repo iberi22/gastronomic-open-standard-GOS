@@ -6,7 +6,7 @@
   "description": "GOS — Gastronomic Open Standard · grafo global recetas↔ingredientes↔vitaminas↔sabores↔afecciones↔dietas↔substancias — Astro 7 + Svelte 5 + @swal/ui antigravity",
   "scripts": {
     "dev": "astro dev",
-    "generate": "node scripts/copy-content.js && node scripts/generate-api.js && node scripts/generate-catalog.js && node scripts/enrich-ingredients.js && node scripts/generate-graph.js && node scripts/export-vectors.mjs && node scripts/generate-og-images.mjs && node scripts/generate-llms.mjs && node scripts/generate-sitemap.js && node scripts/generate-feed.mjs",
+    "generate": "node scripts/copy-content.js && node scripts/generate-api.js && node scripts/generate-catalog.js && node scripts/enrich-ingredients.js && node scripts/generate-graph.js && node scripts/export-vectors.mjs && node scripts/generate-og-images.mjs && node scripts/generate-llms.mjs && node scripts/generate-sitemap.js && node scripts/generate-feed.mjs && node ../scripts/export-v1.mjs",
     "prebuild": "pnpm run generate",
     "build": "pnpm run prebuild && astro check && astro build",
     "preview": "astro preview",
@@ -43,6 +43,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "26.6.3",
     "@vitest/coverage-v8": "5.0.2",
+    "ajv": "8.20.0",
     "autoprefixer": "10.6.1",
     "fake-indexeddb": "6.2.5",
     "jsdom": "30.1.1",

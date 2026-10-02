@@ -1,5 +1,6 @@
 packages:
   - "site"
+  - "packages/gos-client"
 
 allowBuilds:
   esbuild: set this to true or false

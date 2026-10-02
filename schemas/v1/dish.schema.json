@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "title": "GOS v1 dish",
+  "required": [
+    "id",
+    "slug",
+    "country",
+    "nutrition_source",
+    "aliases",
+    "tags",
+    "allergens",
+    "health_registry"
+  ],
+  "properties": {
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "properties": {
+        "es": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allergens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "health_registry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "type": "string"
+          },
+          "evidence_level": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          },
+          "compounds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "studies": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "doi": {
+                  "type": "string"
+                },
+                "doi_status": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "portions": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^gos:dish/[^/]+/.+$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[^/]+$"
+    },
+    "nutrition_source": {
+      "enum": ["computed", "declared", "unknown"]
+    },
+    "nutrition_per_serving": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "micronutrients_per_serving": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "main_ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sensory": {
+      "type": "object",
+      "properties": {
+        "flavor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "texture": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "aroma": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "presentation": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "ingredient_quantities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ingredientId", "grams"],
+        "properties": {
+          "ingredientId": {
+            "type": "string"
+          },
+          "grams": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
+      }
+    },
+    "prep_time": {
+      "type": ["string", "number"]
+    },
+    "cook_time": {
+      "type": ["string", "number"]
+    },
+    "servings": {
+      "type": ["string", "number"]
+    }
+  },
+  "$id": "https://gos.swal.network/schemas/v1/dish.schema.json"
+}
