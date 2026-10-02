@@ -1,0 +1,17 @@
+{
+  "schema": "swal.health/v1/dietary-profile",
+  "id": "01J00000000000000000000001",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2026-10-02T13:00:00-05:00",
+  "source": {
+    "app": "orionhealth",
+    "version": "0.1.0"
+  },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "allergens": [],
+    "diets": [],
+    "targets": {},
+    "expiresAt": "2026-11-02T18:00:00Z"
+  }
+}

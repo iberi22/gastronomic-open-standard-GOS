@@ -1,0 +1,34 @@
+{
+  "schema": "swal.health/v1/dietary-profile",
+  "id": "01J00000000000000000000002",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2024-02-29T12:30:20.123+01:00",
+  "source": {
+    "app": "orionhealth",
+    "version": "0.1.0"
+  },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "allergens": [
+      "gos:allergen/celery",
+      "gos:allergen/crustacean",
+      "gos:allergen/egg",
+      "gos:allergen/fish",
+      "gos:allergen/gluten",
+      "gos:allergen/lupin",
+      "gos:allergen/milk",
+      "gos:allergen/mollusc",
+      "gos:allergen/mustard",
+      "gos:allergen/peanut",
+      "gos:allergen/sesame",
+      "gos:allergen/soy",
+      "gos:allergen/sulphite",
+      "gos:allergen/tree-nut"
+    ],
+    "diets": ["gos:diet/mediterranean"],
+    "targets": {
+      "proteinGPerDay": 0
+    },
+    "expiresAt": "2026-11-02T18:00:00Z"
+  }
+}

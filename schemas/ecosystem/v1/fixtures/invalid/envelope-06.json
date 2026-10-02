@@ -1,0 +1,40 @@
+{
+  "schema": "swal.health/v1/meal-log",
+  "id": "01J00000000000000000000000",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2026-10-02T18:00:00Z",
+  "source": {
+    "app": "orionhealth",
+    "version": "0.1.0"
+  },
+  "gosDataset": "latest",
+  "data": {
+    "consumedAt": "2026-10-02T18:00:00Z",
+    "mealType": "lunch",
+    "items": [
+      {
+        "ref": "gos:dish/colombian/ajiaco",
+        "servings": 1
+      },
+      {
+        "ref": "gos:ingredient/aguacate",
+        "grams": 80
+      }
+    ],
+    "nutrition": {
+      "calories": 0,
+      "protein_g": 0,
+      "fat_g": 0,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "micros": {
+        "vitamin-c": 12
+      }
+    },
+    "nutritionSource": "computed",
+    "origin": {
+      "app": "fize"
+    }
+  }
+}

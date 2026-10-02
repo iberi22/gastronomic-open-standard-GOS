@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gos.swal.network/schemas/ecosystem/v1/workout-session.schema.json",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "properties": {
+        "schema": {
+          "const": "swal.health/v1/workout-session"
+        }
+      },
+      "type": "object"
+    }
+  ],
+  "$defs": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "startedAt": {
+          "$ref": "envelope.schema.json#/$defs/datetime"
+        },
+        "endedAt": {
+          "$ref": "envelope.schema.json#/$defs/datetime"
+        },
+        "routineId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exercises": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ref": {
+                "$ref": "envelope.schema.json#/$defs/exercise"
+              },
+              "sets": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "reps": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "weightKg": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "rpe": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 10
+                    },
+                    "durationS": {
+                      "type": "number",
+                      "minimum": 0,
+                      "exclusiveMinimum": 0
+                    },
+                    "distanceM": {
+                      "type": "number",
+                      "minimum": 0,
+                      "exclusiveMinimum": 0
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false,
+                  "anyOf": [
+                    {
+                      "required": ["reps"],
+                      "type": "object",
+                      "properties": {
+                        "reps": {}
+                      }
+                    },
+                    {
+                      "required": ["durationS"],
+                      "type": "object",
+                      "properties": {
+                        "durationS": {}
+                      }
+                    },
+                    {
+                      "required": ["distanceM"],
+                      "type": "object",
+                      "properties": {
+                        "distanceM": {}
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["ref", "sets"],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "energy": {
+          "type": "object",
+          "properties": {
+            "kcal": {
+              "type": "number",
+              "minimum": 0
+            },
+            "method": {
+              "type": "string",
+              "enum": ["met-estimate", "device", "declared", "unknown"]
+            }
+          },
+          "required": ["kcal", "method"],
+          "additionalProperties": false
+        },
+        "perceivedEffort": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": ["startedAt", "endedAt", "exercises"],
+      "additionalProperties": false
+    }
+  },
+  "type": "object"
+}

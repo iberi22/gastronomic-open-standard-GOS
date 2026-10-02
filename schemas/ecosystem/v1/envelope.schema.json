@@ -1,0 +1,167 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "enum": [
+        "swal.health/v1/meal-log",
+        "swal.health/v1/workout-session",
+        "swal.health/v1/dietary-profile"
+      ]
+    },
+    "id": {
+      "$ref": "envelope.schema.json#/$defs/ulid"
+    },
+    "subject": {
+      "type": "string",
+      "pattern": "^subj_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "createdAt": {
+      "$ref": "envelope.schema.json#/$defs/datetime"
+    },
+    "source": {
+      "$ref": "envelope.schema.json#/$defs/source"
+    },
+    "gosDataset": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?\\+sha256:[a-f0-9]{64}$"
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "subject",
+    "createdAt",
+    "source",
+    "gosDataset",
+    "data"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gos.swal.network/schemas/ecosystem/v1/envelope.schema.json",
+  "$defs": {
+    "datetime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])[Tt](?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:[Zz]|[+-](?:[01]\\d|2[0-3]):[0-5]\\d)$"
+    },
+    "ulid": {
+      "type": "string",
+      "pattern": "^[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+    },
+    "ingredient": {
+      "type": "string",
+      "pattern": "^gos:ingredient/[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+    },
+    "dish": {
+      "type": "string",
+      "pattern": "^gos:dish/[a-z0-9]+(?:[-_][a-z0-9]+)*/[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+    },
+    "diet": {
+      "type": "string",
+      "pattern": "^gos:diet/[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+    },
+    "allergen": {
+      "type": "string",
+      "pattern": "^gos:allergen/[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+      "enum": [
+        "gos:allergen/celery",
+        "gos:allergen/crustacean",
+        "gos:allergen/egg",
+        "gos:allergen/fish",
+        "gos:allergen/gluten",
+        "gos:allergen/lupin",
+        "gos:allergen/milk",
+        "gos:allergen/mollusc",
+        "gos:allergen/mustard",
+        "gos:allergen/peanut",
+        "gos:allergen/sesame",
+        "gos:allergen/soy",
+        "gos:allergen/sulphite",
+        "gos:allergen/tree-nut"
+      ]
+    },
+    "exercise": {
+      "type": "string",
+      "pattern": "^wg:[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "app": {
+          "type": "string",
+          "enum": ["fize", "training", "orionhealth", "gos"]
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+        }
+      },
+      "required": ["app", "version"],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/meal-log"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "meal-log.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/workout-session"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "workout-session.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/dietary-profile"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "dietary-profile.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

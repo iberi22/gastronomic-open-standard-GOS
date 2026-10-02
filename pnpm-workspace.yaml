@@ -1,6 +1,7 @@
 packages:
   - "site"
   - "packages/gos-client"
+  - "packages/health-contract"
 
 allowBuilds:
   esbuild: set this to true or false

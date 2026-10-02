@@ -1,0 +1,20 @@
+{
+  "schema": "swal.health/v1/dietary-profile",
+  "id": "01J00000000000000000000000",
+  "subject": "person@example.com",
+  "createdAt": "2026-10-02T18:00:00Z",
+  "source": {
+    "app": "orionhealth",
+    "version": "0.1.0"
+  },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "allergens": ["gos:allergen/peanut"],
+    "diets": ["gos:diet/mediterranean"],
+    "targets": {
+      "kcalPerDay": 2200,
+      "proteinGPerDay": 140
+    },
+    "expiresAt": "2026-11-02T18:00:00Z"
+  }
+}
