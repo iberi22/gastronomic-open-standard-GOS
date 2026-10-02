@@ -7,9 +7,26 @@ Run: python automation/test_graph_edges.py
 import json, sys
 from pathlib import Path
 
+# Este archivo corre de dos formas: bajo pytest, y directo con
+# `python automation/test_graph_edges.py` (ver main()). Sin pytest no hay
+# skipif ni fixture, asi que needs_graph degrada a un decorador inerte.
+try:
+    import pytest
+except ImportError:
+    pytest = None
+
+def _noop(fn):
+    return fn
+
 ROOT = Path(__file__).parent.parent
 GRAPH_FILE = ROOT / "site" / "graph-data.json"
-VALID_NODE_TYPES = {"recipe", "ingredient", "flavor", "texture", "aroma", "region", "nutrition", "category", "technique", "place"}
+# Sincronizado con site/scripts/generate-graph.js. El allowlist anterior era
+# mas viejo que el generador: le faltan condition, diet, nutrient, substance
+# y vitamin, y declaraba aroma/nutrition, que el generador ya no emite.
+VALID_NODE_TYPES = {
+    "recipe", "ingredient", "flavor", "texture", "region", "category",
+    "technique", "place", "condition", "diet", "nutrient", "substance", "vitamin",
+}
 VALID_EDGE_TYPES = {
     "HAS_RECIPE", "USES_INGREDIENT", "BELONGS_TO", "HAS_FLAVOR", "HAS_TEXTURE",
     "HAS_AROMA", "HAS_MACRO", "default", "USES", "FROM_REGION", "RELATED_DISHES",
@@ -23,10 +40,24 @@ def load_graph():
     with open(GRAPH_FILE, encoding="utf-8") as f:
         return json.load(f)
 
+# site/graph-data.json esta en .gitignore: lo genera site/scripts/generate-graph.js.
+# En un checkout limpio no existe, asi que sin este skip los 8 tests de este
+# modulo fallan por el artefacto ausente, no por el grafo.
+if pytest is None:
+    needs_graph = _noop
+else:
+    needs_graph = pytest.mark.skipif(
+        not GRAPH_FILE.exists(),
+        reason=f"{GRAPH_FILE} es un artefacto generado; correr node site/scripts/generate-graph.js",
+    )
+    data = pytest.fixture(scope="module")(lambda: load_graph())
+
+@needs_graph
 def test_file_exists():
     assert GRAPH_FILE.exists(), f"Graph file missing: {GRAPH_FILE}"
     print(f"[PASS] Graph file exists: {GRAPH_FILE}")
 
+@needs_graph
 def test_node_structure(data):
     nodes = data.get("nodes", [])
     assert len(nodes) > 0, "No nodes found in graph"
@@ -37,6 +68,7 @@ def test_node_structure(data):
         assert n["type"] in VALID_NODE_TYPES, f"Invalid node type '{n['type']}' for node {n['id']}"
     print(f"[PASS] All {len(nodes)} nodes have valid structure")
 
+@needs_graph
 def test_edge_structure(data):
     edges = data.get("edges", [])
     assert len(edges) > 0, "No edges found in graph"
@@ -46,6 +78,7 @@ def test_edge_structure(data):
         assert "target" in e, f"Edge missing 'target': {e}"
     print(f"[PASS] All {len(edges)} edges have valid structure")
 
+@needs_graph
 def test_recipe_has_edges(data):
     nodes = data.get("nodes", [])
     edges = data.get("edges", [])
@@ -70,6 +103,7 @@ def test_recipe_has_edges(data):
     else:
         print(f"[PASS] All {len(recipes)} recipes have at least one edge")
 
+@needs_graph
 def test_region_has_recipes(data):
     nodes = data.get("nodes", [])
     edges = data.get("edges", [])
@@ -85,6 +119,7 @@ def test_region_has_recipes(data):
         assert has_recipe, f"Region '{r['id']}' has no recipes"
     print(f"[PASS] All {len(regions)} regions have at least one recipe")
 
+@needs_graph
 def test_meta_counts(data):
     meta = data.get("meta", {})
     if not meta:
@@ -105,6 +140,7 @@ def test_meta_counts(data):
         assert meta["recipe_count"] == len(recipes), f"recipe_count mismatch"
         print(f"[PASS] recipe_count: {meta['recipe_count']}")
 
+@needs_graph
 def test_edge_type_coverage(data):
     edges = data.get("edges", [])
     type_counts = {}
@@ -122,6 +158,7 @@ def test_edge_type_coverage(data):
         assert t in type_counts, f"Missing required edge type: {t}"
     print(f"[PASS] All required edge types present")
 
+@needs_graph
 def test_ingredient_references(data):
     """Every ingredient used in recipes should be in the graph."""
     nodes = data.get("nodes", [])
