@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "title": "GOS v1 ingredient",
+  "required": [
+    "id",
+    "slug",
+    "names",
+    "group",
+    "nutrition_per_100g",
+    "micronutrients",
+    "allergens",
+    "aliases",
+    "tags",
+    "health_registry",
+    "portions"
+  ],
+  "properties": {
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "properties": {
+        "es": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allergens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "health_registry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "type": "string"
+          },
+          "evidence_level": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          },
+          "compounds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "studies": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "doi": {
+                  "type": "string"
+                },
+                "doi_status": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "portions": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^gos:ingredient/[^/]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[^/]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "scientific_name": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "names": {
+      "type": "object",
+      "required": ["es"],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "nutrition_per_100g": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "micronutrients": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "active_compounds": {
+      "type": "array"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$id": "https://gos.swal.network/schemas/v1/ingredient.schema.json"
+}

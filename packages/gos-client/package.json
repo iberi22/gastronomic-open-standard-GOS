@@ -1,0 +1,29 @@
+{
+  "name": "@swal/gos-client",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Cliente sin dependencias para el contrato GOS v1",
+  "license": "AGPL-3.0-only",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vitest": "5.0.2",
+    "fake-indexeddb": "6.2.5"
+  }
+}
