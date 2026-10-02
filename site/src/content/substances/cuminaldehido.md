@@ -1,5 +1,6 @@
 ---
 name: "Cuminaldehído"
+disclaimer: true
 formula: "C10H12O"
 discovery_year: 1837
 source_ingredient: "comino (Cuminum cyminum)"
@@ -49,7 +50,7 @@ health_registry:
 
 ## Descripción
 
-4-Isopropylbenzaldehyde (C10H12O), principal aldehído del aceite esencial de comino (25-35%), descrito en 1837. Responsable del aroma térreo-cálido característico de la cocina andina y caribe. Potente carminativo que estimula enzimas digestivas.
+4-Isopropylbenzaldehyde (C10H12O), principal aldehído del aceite esencial de comino (25-35%), descrito en 1837. Responsable del aroma térreo-cálido característico de la cocina andina y caribe. Tradicionalmente usado como carminativo; se le atribuye estimulación de enzimas digestivas (sin fuente verificada en esta carta).
 
 ## Sazón / Sabor / Textura
 
@@ -79,4 +80,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `comino (Cuminum cyminum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

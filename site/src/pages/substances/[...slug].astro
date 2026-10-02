@@ -57,6 +57,16 @@ const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-know
       {s.tags?.map(t => <span class="chip">{t}</span>)}
     </div>
 
+    {s.disclaimer !== false && (
+      <aside class="disclaimer" role="note" aria-label="Aviso de información divulgativa">
+        <strong>Aviso</strong>
+        <p>
+          Información divulgativa basada en la evidencia citada. No sustituye el consejo médico. Las
+          dosis culinarias no equivalen a dosis terapéuticas ni a suplementos.
+        </p>
+      </aside>
+    )}
+
     <div class="grid3">
       {s.sazon && (
         <div class="box">
@@ -156,6 +166,9 @@ const discussUrl = `https://github.com/iberi22/discussions/new?category=gos-know
     .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
     .chip{ font-size:11px; padding:5px 10px; border-radius:999px; background: var(--swal-bg); border:1px solid var(--swal-border); color: var(--swal-text-secondary); }
     .chip.mono{ font-family: var(--swal-font-mono); font-weight:700; color: var(--swal-text); border-color: color-mix(in srgb, var(--swal-accent) 25%, var(--swal-border)); }
+    .disclaimer{ margin-top:14px; display:flex; gap:10px; align-items:baseline; padding:11px 13px; border:1px solid var(--swal-border); border-left:3px solid var(--swal-accent); border-radius:12px; background: color-mix(in srgb, var(--swal-accent) 5%, var(--swal-bg)); }
+    .disclaimer strong{ flex:0 0 auto; font-size:10px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color: var(--swal-accent); }
+    .disclaimer p{ margin:0; color: var(--swal-text-secondary); font-size:12px; line-height:1.6; }
     .grid3{ display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:16px; }
     @media (max-width: 760px){ .grid3{ grid-template-columns: 1fr; } }
     .row{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px; }
