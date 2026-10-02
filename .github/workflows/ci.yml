@@ -37,6 +37,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
         env:
           npm_config_ignore_scripts: "true"
+      - name: Generate Knowledge Graph Artifact
+        run: node scripts/generate-graph.js
+        working-directory: ./site
       - run: pnpm --filter gos-site exec astro check
 
   vitest:
