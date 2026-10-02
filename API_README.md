@@ -1,6 +1,11 @@
 # 📡 gastronomic-open-standard-GOS Recipe API
 
-A RESTful JSON API serving **428 recipes** from multiple cuisines, automatically generated from markdown files.
+A RESTful JSON API serving **473 recipes** from multiple cuisines, automatically generated from markdown files.
+
+> **Note on scope**: `generate-api.js` skips the `dishes/china/` directory and any
+> file whose name contains CJK characters, so the legacy Chinese collection
+> (118 files) is **not** part of the served API. The site copy
+> (`copy-content.js`) applies the same filter.
 
 ## Quick Start
 
@@ -11,17 +16,20 @@ curl https://gos.swal.network/api/all.json
 # Get Colombian recipes
 curl https://gos.swal.network/api/spanish/colombia.json
 
-# Get Chinese recipes
-curl https://gos.swal.network/api/chinese/china.json
+# Get recipes by country
+curl https://gos.swal.network/api/by-country/colombia.json
 ```
 
 ## 📊 Statistics
 
-- **Total Recipes**: 428
-- **Languages**: Chinese (325), Spanish (103)
-- **Countries**: China (324), Colombia (101), Peru (1)
-- **With Metadata**: 103 recipes (Colombian & Peruvian)
-- **Without Metadata**: 325 recipes (Chinese)
+- **Total Recipes**: 473
+- **Languages**: Spanish (473)
+- **Countries**: Colombia (109), India (35), Japan (35), Mexico (35), United States (35), Brazil (25), and 13 more
+- **With Metadata**: 473 recipes (all scanned recipes carry YAML frontmatter)
+- **Without Metadata**: 0 recipes
+
+> **Endpoint paths**: countries are served under `/api/by-country/<slug>.json`
+> (not `/api/countries/`). Language buckets live under `/api/<language>/<country>.json`.
 
 ## 🌐 Endpoints
 
@@ -30,27 +38,28 @@ curl https://gos.swal.network/api/chinese/china.json
 | Endpoint | Description | Count |
 |----------|-------------|-------|
 | `/api/index.json` | API index with all available endpoints | - |
-| `/api/all.json` | All recipes | 428 |
-| `/api/with-metadata.json` | Recipes with YAML frontmatter | 103 |
-| `/api/without-metadata.json` | Recipes without metadata (Chinese) | 325 |
+| `/api/all.json` | All recipes | 473 |
+| `/api/with-metadata.json` | Recipes with YAML frontmatter | 473 |
+| `/api/without-metadata.json` | Recipes without metadata | 0 |
 
 ### By Language
 
 | Endpoint | Description | Count |
 |----------|-------------|-------|
-| `/api/spanish/index.json` | All Spanish recipes | 103 |
-| `/api/spanish/colombia.json` | Colombian recipes | 101 |
-| `/api/spanish/peru.json` | Peruvian recipes | 1 |
-| `/api/chinese/index.json` | All Chinese recipes | 325 |
-| `/api/chinese/china.json` | Chinese recipes | 324 |
+| `/api/spanish/index.json` | All Spanish recipes | 473 |
+| `/api/spanish/colombia.json` | Colombian recipes | 109 |
+| `/api/spanish/peru.json` | Peruvian recipes | 14 |
 
 ### By Country
 
 | Endpoint | Description | Count |
 |----------|-------------|-------|
-| `/api/countries/colombia.json` | All Colombian recipes | 101 |
-| `/api/countries/china.json` | All Chinese recipes | 324 |
-| `/api/countries/peru.json` | All Peruvian recipes | 1 |
+| `/api/by-country/colombia.json` | All Colombian recipes | 109 |
+| `/api/by-country/united-states.json` | All United States recipes | 35 |
+| `/api/by-country/india.json` | All Indian recipes | 35 |
+| `/api/by-country/japan.json` | All Japanese recipes | 35 |
+| `/api/by-country/mexico.json` | All Mexican recipes | 35 |
+| `/api/by-country/brazil.json` | All Brazilian recipes | 25 |
 
 ### Translation & i18n
 
@@ -78,14 +87,15 @@ GOS exports a bulk versioned embeddings snapshot of the entire database (ingredi
   "model": "Xenova/all-MiniLM-L6-v2",
   "dim": 384,
   "count": {
-    "total": 965,
+    "total": 1055,
     "ingredients": 552,
-    "dishes": 383,
+    "dishes": 473,
     "substances": 30
   },
   "shards": [
-    { "file": "vectors-1.json", "count": 500, "size_bytes": 5514104 },
-    { "file": "vectors-2.json", "count": 465, "size_bytes": 5339274 }
+    { "file": "vectors-1.json", "count": 500, "size_bytes": 5514286 },
+    { "file": "vectors-2.json", "count": 500, "size_bytes": 5754547 },
+    { "file": "vectors-3.json", "count": 55, "size_bytes": 631513 }
   ]
 }
 ```
@@ -189,7 +199,7 @@ const ajoEn = catalog.results.filter(
       "filePath": "dishes/colombian/nacionales/chuzo.md"
     }
   ],
-  "count": 101
+  "count": 109
 }
 ```
 
@@ -214,11 +224,11 @@ fetch('https://gos.swal.network/api/spanish/colombia.json')
 import requests
 
 response = requests.get(
-    'https://gos.swal.network/api/chinese/china.json'
+    'https://gos.swal.network/api/spanish/colombia.json'
 )
 data = response.json()
 
-print(f"Found {data['count']} Chinese recipes")
+print(f"Found {data['count']} Colombian recipes")
 for recipe in data['recipes']:
     print(f"- {recipe['title']}")
 ```
@@ -238,19 +248,21 @@ curl https://gos.swal.network/api/spanish/colombia.json | jq '.recipes[] | selec
 
 ## 🔧 How It Works
 
-1. **Scanning**: The `generate-api.js` script scans all `.md` files in `/dishes`
+1. **Scanning**: The `generate-api.js` script scans `.md` files in `/dishes`
+   (skipping `dishes/china/`, CJK-named files and `README.md`)
 2. **Detection**:
-   - Language detected by character patterns (Chinese vs Spanish)
+   - Language detected by character patterns (accents → Spanish)
    - Country inferred from directory structure
    - Metadata parsed using `gray-matter` (YAML frontmatter)
 3. **Grouping**: Recipes organized by language, country, and metadata presence
 4. **Generation**: Static JSON files created in `/public/api/`
-5. **Deployment**: Published with GitHub Pages
+5. **Deployment**: Published to Cloudflare Pages (`deploy-cloudflare.yml`)
 
 ## 📝 Notes
 
-- **Chinese recipes** don't have YAML frontmatter metadata (legacy format)
-- **Colombian & Peruvian recipes** have complete structured metadata
+- The legacy Chinese collection under `dishes/china/` is **excluded** from the
+  API (skipped by the generator), so there are no recipes without frontmatter
+- Every served recipe has complete structured metadata
 - All endpoints support **CORS** - use from any domain
 - Data is **static JSON** - fast and cacheable
 - Updated automatically on every deployment
