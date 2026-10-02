@@ -250,12 +250,13 @@ export default {
               401,
             )
           }
-        } catch (_dbErr) {
+        } catch (dbErr) {
           // Fail-closed. Si D1 no responde NO se puede saber si la key es
           // valida, y adivinar concede acceso a quien mande una key con la
           // palabra 'socio' o 'paid' en el cuerpo. Antes este catch hacia
           // justo eso: produccion sirve 404 a esas keys mientras D1 falla.
-
+          // biome-ignore lint/suspicious/noConsole: unico rastro en los logs de Workers cuando D1 falla
+          console.error('D1 key check error:', dbErr)
           return jsonResponse(
             {
               error: 'Service Unavailable: key validation unavailable',
@@ -347,8 +348,10 @@ export default {
             )
           }
           currentCount = row.n
-        } catch (_dbErr) {
+        } catch (dbErr) {
           // Fail-open: la rafaga del binding sigue protegiendo.
+          // biome-ignore lint/suspicious/noConsole: unico rastro en los logs de Workers cuando D1 falla
+          console.error('D1 free quota error:', dbErr)
         }
       }
     }
