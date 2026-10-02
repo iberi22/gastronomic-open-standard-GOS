@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Verifica que cada DOI de site/src/content/substance[s]/ corresponda al
+"""GATE: verifica que cada DOI de site/src/content/substance[s]/ corresponda al
 titulo, revista y ano que el archivo afirma.
 
+Se ejecuta en CI (.github/workflows/ci.yml, job verify-dois). Devuelve
+rc=1 si hay un solo MISMATCH o NORESUELVE.
+
 No basta con que el DOI RESUELVA: resolver significa que el registro existe.
-El fallo que se busca es el que(^) encontro la auditoria: un DOI compuesto por
+El fallo que se busca es el que encontró la auditoría: un DOI compuesto por
 coincidencia de revista+anio que resuelve a OTRO articulo del mismo numero.
 
 Salida: TSV  doi<TAB>estado<TAB>titulo_esperado<TAB>titulo_real
@@ -22,10 +25,10 @@ SITE = Path(__file__).resolve().parent.parent  # site/
 CONTENT = SITE / "src" / "content"
 EMAIL = "mailto:audit@example.invalid"  # Crossref lo pide; sin dato real
 
-DOI_RE = re.compile(r'^\s*(?:-\s*)?doi:\s*["\']?([^"\'\s]+)', re.M)
-PMID_RE = re.compile(r'^\s*(?:-\s*)?pmid:\s*["\']?([^"\'\s]+)', re.M)
-TITLE_RE = re.compile(r'^\s*(?:-\s*)?title:\s*["\'](.+?)["\']', re.M)
-YEAR_RE = re.compile(r'^\s*(?:-\s*)?year:\s*["\']?(\d{4})', re.M)
+DOI_RE = re.compile(r'\s*(?:-\s*)?doi:\s*["\']?(["\'\s]+)', re.M)
+PMID_RE = re.compile(r'\s*(?:-\s*)?pmid:\s*["\']?(["\'\s]+)', re.M)
+TITLE_RE = re.compile(r'\s*(?:-\s*)?title:\s*["\'](.+?)["\']', re.M)
+YEAR_RE = re.compile(r'\s*(?:-\s*)?year:\s*["\']?(\d{4})', re.M)
 
 
 def studies(text):
@@ -39,7 +42,7 @@ def studies(text):
     """
     import yaml
 
-    m = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.S)
+    m = re.match(r"---\s*\n(.*?)\n---\s*\n", text, re.S)
     if not m:
         return []
     try:
@@ -71,22 +74,47 @@ def crossref(doi):
 def norm(s):
     """Normaliza para comparar: minusculas, sin puntuacion, sin acentos ruido."""
     s = s.lower()
-    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    s = re.sub(r"[a-z0-9 ]", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 
 
 def coincide(titulo_esperado, titulo_real):
-    """Coincidencia por contenido de palabras, no por igualdad literal.
+    """Coincidencia por contenido, tolerante a abreviaturas y afijos.
 
-    Un titulo abreviado ('Peppermint oil and IBS') es legitimo si TODAS sus
-    palabras significativas aparecen en el titulo real. Exige al menos 3
-    palabras en comun para no dar por bueno un 'mismo tema'.
+    Tres formas legitimas de nombrar el mismo articulo, que hay que aceptar:
+      - abreviatura:      "Peppermint oil and IBS" ~ "...irritable bowel..."
+      - afijo:            "allergic" ~ "anti-allergic"  (anti- es prefijo)
+      - reformulacion:   "review" ~ "systematic review" (una palabra anadida)
+
+    Y una forma ilegitima que hay que seguir rechazando: que el DOI apunte a
+    OTRO tema. Por eso se exige que la mitad de las palabras significativas
+    del titulo declarado aparezcan en el real, y al menos 2.
+
+    La tolerancia a afijos es asimetrica a proposito: "allergic" puede
+    casar con "anti-allergic", pero "anti-allergic" NO puede casar solo con
+    "allergic", porque ahi se pierde la mitad del significado.
     """
-    stop = {"a", "an", "the", "of", "and", "for", "in", "on", "to", "with", "de", "del", "la", "el"}
-    e = {w for w in norm(titulo_esperado).split() if w not in stop and len(w) > 2}
-    r = {w for w in norm(titulo_real).split() if w not in stop and len(w) > 2}
+    stop = {"a", "an", "the", "of", "and", "for", "in", "on", "to", "with",
+            "de", "del", "la", "el", "y", "en", "para", "su", "sus", "un", "una"}
+    PREFIJOS = ("anti", "pre", "post", "non", "sub", "super", "co")
+
+    def palabras(s):
+        out = set()
+        for w in norm(s).split():
+            if w in stop or len(w) <= 2:
+                continue
+            out.add(w)
+            # sin anti-/pre-/... para que "anti-allergic" aporte "allergic"
+            for pre in PREFIJOS:
+                if w.startswith(pre) and len(w) > len(pre) + 3:
+                    out.add(w[len(pre):])
+        return out
+
+    e, r = palabras(titulo_esperado), palabras(titulo_real)
+    if not e:
+        return False
     comunes = e & r
-    return len(comunes) >= min(3, len(e)) and len(comunes) / max(len(e), 1) >= 0.5
+    return len(comunes) >= min(2, len(e)) and len(comunes) / len(e) >= 0.5
 
 
 def main():

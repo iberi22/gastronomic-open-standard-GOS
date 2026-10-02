@@ -87,6 +87,21 @@ jobs:
         working-directory: ./worker
         run: npm test
 
+  # Gate de evidencia: cada DOI debe CORRESPONDER al articulo que el archivo
+  # declara, no solo resolver. Se hallaron 22 DOI que resolvian a otro articulo
+  # del mismo numero por coincidencia de revista+anio. Falla mientras queden.
+  verify-dois:
+    name: evidence (DOI corresponde al artículo)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verificar DOI contra Crossref
+        working-directory: site
+        run: python3 scripts/verify-dois.py
+
   gos-audit:
     runs-on: ubuntu-latest
     continue-on-error: true
