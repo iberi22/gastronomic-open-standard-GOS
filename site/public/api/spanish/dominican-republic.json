@@ -1,0 +1,1046 @@
+{
+  "recipes": [
+    {
+      "id": "dominican/chimi_dominicano",
+      "title": "Chimichurri Dominicano (Chimi)",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chimichurri Dominicano (Chimi)",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/chimichurri-chimi-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Comida callejera",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Res",
+          "Pan",
+          "Sandwich",
+          "Chimi",
+          "Repollo",
+          "República Dominicana",
+          "Calle"
+        ],
+        "main_ingredients": [
+          "Carne de res molida (ground beef)",
+          "Pan de agua",
+          "Repollo blanco (col)",
+          "Salsa chimi (kétchup y mayonesa)",
+          "Cebolla roja",
+          "Ajo fresco",
+          "Ají gustoso o pimiento verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de res frita",
+            "Dulce sutil (salsa chimi)",
+            "Ácido (repollo al vinagre)"
+          ],
+          "texture": [
+            "Crujiente (pan de agua tostado)",
+            "Suave (carne de res jugosa)",
+            "Crujiente y jugoso (repollo frito)"
+          ],
+          "aroma": [
+            "Carne sazonada a la plancha",
+            "Pan caliente tostado",
+            "Sazón criollo de ajo y cebolla"
+          ],
+          "presentation": "Servido envuelto en papel encerado o papel de aluminio de forma rústica."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 44
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+            "description": "Hamburguesa dominicana chimi de carne jugosa a la plancha (Unsplash)"
+          }
+        ],
+        "description": "El Chimichurri dominicano es el emparedado o hamburguesa de comida callejera más famoso de la República Dominicana, rey de los puestos nocturnos urbanos. Consiste en una masa de carne de res molida sazonada con ajo, cebolla, perejil y ají gustoso."
+      },
+      "category": [
+        "Plato fuerte",
+        "Comida callejera",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Carne de res molida (ground beef)",
+        "Pan de agua",
+        "Repollo blanco (col)",
+        "Salsa chimi (kétchup y mayonesa)",
+        "Cebolla roja",
+        "Ajo fresco",
+        "Ají gustoso o pimiento verde"
+      ],
+      "tags": [
+        "Res",
+        "Pan",
+        "Sandwich",
+        "Chimi",
+        "Repollo",
+        "República Dominicana",
+        "Calle"
+      ],
+      "filePath": "dishes/dominican/chimi_dominicano.md"
+    },
+    {
+      "id": "dominican/habichuelas_con_dulce",
+      "title": "Habichuelas con Dulce Dominicanas",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Habichuelas con Dulce Dominicanas",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/habichuelas-con-dulce-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "12 horas",
+        "cook_time": "45 minutos",
+        "servings": 8,
+        "tags": [
+          "Postre",
+          "Dulce",
+          "Habichuelas",
+          "Cuaresma",
+          "Coco",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Habichuelas rojas (frijoles rojos)",
+          "Leche evaporada",
+          "Leche de coco",
+          "Azúcar blanca o morena",
+          "Batata (sweet potato/camote)",
+          "Pasas de uva",
+          "Canela en rama",
+          "Clavos de olor",
+          "Galletitas de leche dominicanas (guarina)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Extremadamente dulce",
+            "Lácteo (coco y leche)",
+            "Especiado (canela y clavo)",
+            "Sutilmente terroso (habichuelas)"
+          ],
+          "texture": [
+            "Cremosa",
+            "Espesa (sopa dulce densa)",
+            "Suave (trozos de batata cocida)"
+          ],
+          "aroma": [
+            "Canela y clavos de olor",
+            "Coco y leche condensada calientes",
+            "Pasas dulces"
+          ],
+          "presentation": "Servidas templadas o frías en tazas hondas, decoradas con galletitas de leche redondas con una cruz, y pasas de uva flotando de forma tradicional."
+        },
+        "nutrition": {
+          "calories": 390,
+          "macros": {
+            "protein_g": 9,
+            "fat_g": 11,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3",
+            "description": "Tazón de habichuelas con dulce dominicanas decorado con galletas (Unsplash)"
+          }
+        ],
+        "description": "Las Habichuelas con Dulce son un postre místico único en el mundo, exclusivo de la República Dominicana, consumido tradicionalmente durante la época de Cuaresma y Semana Santa. Consiste en una crema líquida, espesa y dulce de habichuelas rojas hervidas y licuadas con leche de coco, leche evaporada y azúcar de forma tradicional."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "12 horas",
+      "cookTime": "45 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Habichuelas rojas (frijoles rojos)",
+        "Leche evaporada",
+        "Leche de coco",
+        "Azúcar blanca o morena",
+        "Batata (sweet potato/camote)",
+        "Pasas de uva",
+        "Canela en rama",
+        "Clavos de olor",
+        "Galletitas de leche dominicanas (guarina)"
+      ],
+      "tags": [
+        "Postre",
+        "Dulce",
+        "Habichuelas",
+        "Cuaresma",
+        "Coco",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/habichuelas_con_dulce.md"
+    },
+    {
+      "id": "dominican/la_bandera_dominicana",
+      "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/la-bandera-dominicana-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Almuerzo",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "1 hora",
+        "servings": 6,
+        "tags": [
+          "Arroz",
+          "Habichuelas",
+          "Pollo",
+          "Almuerzo",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Arroz blanco de grano largo",
+          "Frijoles rojos (habichuelas rojas)",
+          "Pollo entero troceado",
+          "Orégano dominicano",
+          "Cilantro ancho",
+          "Pasta de tomate",
+          "Azúcar (para caramelizar el pollo)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de carne guisada",
+            "Terroso (habichuelas)",
+            "Dulzor sutil (tomate)"
+          ],
+          "texture": [
+            "Cremoso (habichuelas licuadas/espesas)",
+            "Graneado (arroz blanco)",
+            "Jugoso y desmenuzado (pollo)"
+          ],
+          "aroma": [
+            "Orégano dominicano y ajo",
+            "Arroz blanco caliente",
+            "Pollo guisado al cilantro"
+          ],
+          "presentation": "Dispuestos los tres componentes en un mismo plato de forma vistosa y colorida."
+        },
+        "nutrition": {
+          "calories": 690,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 18,
+            "carbs_g": 88
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Mesa dominicana con la tradicional Bandera Dominicana (Unsplash)"
+          }
+        ],
+        "description": "La Bandera Dominicana es el almuerzo diario nacional por excelencia de la República Dominicana. El nombre rinde homenaje a la bandera patria debido a que combina los tres colores de la identidad dominicana: el blanco (arroz), el rojo (habichuelas rojas) y la carne guisada (pollo o res)."
+      },
+      "category": [
+        "Plato fuerte",
+        "Almuerzo",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "1 hora",
+      "servings": 6,
+      "mainIngredients": [
+        "Arroz blanco de grano largo",
+        "Frijoles rojos (habichuelas rojas)",
+        "Pollo entero troceado",
+        "Orégano dominicano",
+        "Cilantro ancho",
+        "Pasta de tomate",
+        "Azúcar (para caramelizar el pollo)"
+      ],
+      "tags": [
+        "Arroz",
+        "Habichuelas",
+        "Pollo",
+        "Almuerzo",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/la_bandera_dominicana.md"
+    },
+    {
+      "id": "dominican/mangu",
+      "title": "Mangú Dominicano con Los Tres Golpes",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mangú Dominicano con Los Tres Golpes",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elfogondelulublog.com",
+          "url": "https://www.elfogondelulublog.com/receta-de-mangu-dominicano/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Desayuno",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Plátano",
+          "Puré",
+          "Desayuno",
+          "Tres Golpes",
+          "Salami",
+          "República Dominicana"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Cebolla roja (morada)",
+          "Vinagre blanco",
+          "Salami dominicano (salami para freír)",
+          "Queso para freír (queso blanco firme)",
+          "Huevos enteros",
+          "Mantequilla sin sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Sutilmente dulce (plátano)",
+            "Ácido (cebolla al vinagre)"
+          ],
+          "texture": [
+            "Cremoso (puré denso)",
+            "Crujiente (salami y queso frito)",
+            "Suave"
+          ],
+          "aroma": [
+            "Plátano hervido caliente",
+            "Cebollas al vinagre salteadas",
+            "Salami frito"
+          ],
+          "presentation": "Una base circular generosa de puré de plátano verde suave (mangú), coronada con abundante cebolla roja encurtida de color rosa brillante, rodeada de salami frito, queso frito y huevos fritos."
+        },
+        "nutrition": {
+          "calories": 580,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 34,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Mangú dominicano con cebolla morada por encima y acompañantes (Unsplash)"
+          }
+        ],
+        "description": "El Mangú es el desayuno nacional y el plato más emblemático de la República Dominicana. Consiste en un terso, cremoso y denso puré elaborado con plátanos verdes hervidos machacados con mantequilla, aceite y un poco de su agua fría de cocción para mantenerlo sumamente suave. Se sirve tradicionalmente coronado con cebollas rojas encurtidas en vinagre y acompañado de salami dominicano frito, queso frito y huevo frito, combinación conocida popularmente como \"Los Tres Golpes\"."
+      },
+      "category": [
+        "Plato fuerte",
+        "Desayuno",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Cebolla roja (morada)",
+        "Vinagre blanco",
+        "Salami dominicano (salami para freír)",
+        "Queso para freír (queso blanco firme)",
+        "Huevos enteros",
+        "Mantequilla sin sal"
+      ],
+      "tags": [
+        "Plátano",
+        "Puré",
+        "Desayuno",
+        "Tres Golpes",
+        "Salami",
+        "República Dominicana"
+      ],
+      "filePath": "dishes/dominican/mangu.md"
+    },
+    {
+      "id": "dominican/mofongo_dominicano",
+      "title": "Mofongo Dominicano Tradicional",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mofongo Dominicano Tradicional",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/mofongo-dominicano-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Snack",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 2,
+        "tags": [
+          "Plátano",
+          "Chicharrón",
+          "Ajo",
+          "Pilón",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Chicharrón de cerdo crujiente",
+          "Ajo fresco",
+          "Aceite de oliva",
+          "Sal de mesa",
+          "Caldo de carne para acompañar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de chicharrón",
+            "Ajo fuerte"
+          ],
+          "texture": [
+            "Crujiente (chicharrón de cerdo)",
+            "Denso (plátano machacado)",
+            "Seco pero tierno"
+          ],
+          "aroma": [
+            "Ajo machacado en aceite de oliva",
+            "Chicharrón frito crujiente",
+            "Plátano frito caliente"
+          ],
+          "presentation": "Moldeado en forma de domo, servido caliente en un plato hondo o tazón, acompañado de una taza pequeña de caldo de carne de res o pollo al ajo caliente."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 22,
+            "carbs_g": 44
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Mofongo dominicano servido en su pilón de madera tradicional (Unsplash)"
+          }
+        ],
+        "description": "El Mofongo es una de las preparaciones de plátano más icónicas del Caribe. Consiste en rodajas de plátano verde fritas que luego se machacan de forma enérgica dentro de un pilón de madera junto con abundante ajo fresco, sal, aceite de oliva y trozos crujientes de chicharrón de cerdo, sirviéndose con una taza de caldo de res caliente."
+      },
+      "category": [
+        "Plato fuerte",
+        "Snack",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Chicharrón de cerdo crujiente",
+        "Ajo fresco",
+        "Aceite de oliva",
+        "Sal de mesa",
+        "Caldo de carne para acompañar"
+      ],
+      "tags": [
+        "Plátano",
+        "Chicharrón",
+        "Ajo",
+        "Pilón",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/mofongo_dominicano.md"
+    },
+    {
+      "id": "dominican/morir_sonando",
+      "title": "Morir Soñando Dominicano",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Morir Soñando Dominicano",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/morir-sonando-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Bebida",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "5 minutos",
+        "cook_time": "0 minutos",
+        "servings": 2,
+        "tags": [
+          "Bebida",
+          "Naranja",
+          "Leche",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Jugo de naranja fresca",
+          "Leche evaporada",
+          "Azúcar blanca refinada",
+          "Esencia de vainilla",
+          "Hielo picado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Cítrico (naranja)",
+            "Lácteo cremoso"
+          ],
+          "texture": [
+            "Líquido",
+            "Espumoso",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Naranja fresca exprimida",
+            "Leche condensada y vainilla"
+          ],
+          "presentation": "Servido muy frío en vasos altos de vidrio con abundante hielo picado, decorado con una rodaja de naranja fresca en el borde."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 4.5,
+            "fat_g": 5,
+            "carbs_g": 38
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+            "description": "Vaso alto de Morir Soñando frío y espumoso con naranja (Unsplash)"
+          }
+        ],
+        "description": "El Morir Soñando es la bebida refrescante más famosa de la República Dominicana. Consiste en una deliciosa y espumosa mezcla de jugo de naranja fresca y leche evaporada dulce con vainilla y abundante hielo picado, mezclada de forma física muy específica para evitar que la acidez de la naranja corte la leche."
+      },
+      "category": [
+        "Bebida",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "5 minutos",
+      "cookTime": "0 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Jugo de naranja fresca",
+        "Leche evaporada",
+        "Azúcar blanca refinada",
+        "Esencia de vainilla",
+        "Hielo picado"
+      ],
+      "tags": [
+        "Bebida",
+        "Naranja",
+        "Leche",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/morir_sonando.md"
+    },
+    {
+      "id": "dominican/pescado_con_coco",
+      "title": "Pescado con Coco Estilo Samaná",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pescado con Coco Estilo Samaná",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/pescado-con-coco-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Mariscos",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Pescado",
+          "Coco",
+          "Samaná",
+          "Mariscos",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Pescado entero (chillo o pargo rojo)",
+          "Leche de coco fresca",
+          "Pimiento verde y rojo",
+          "Cebolla roja",
+          "Ajo fresco",
+          "Aceite de coco (o vegetal)",
+          "Cilantro ancho"
+        ],
+        "sensory": {
+          "flavor": [
+            "Lácteo (coco)",
+            "Salado",
+            "Sutilmente dulce"
+          ],
+          "texture": [
+            "Suave (pescado delicado)",
+            "Cremoso (salsa de coco espesa)"
+          ],
+          "aroma": [
+            "Coco dulce fresco",
+            "Pescado frito caliente",
+            "Pimientos y cilantro ancho"
+          ],
+          "presentation": "Servido de inmediato sobre un plato llano hondo, cubierto generosamente con la salsa de coco de color amarillo pálido brillante."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 28,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
+            "description": "Pescado entero bañado en salsa de coco cremosa (Unsplash)"
+          }
+        ],
+        "description": "El Pescado con Coco es la joya gastronómica de la península de Samaná, en la costa noreste de la República Dominicana. Consiste en filetes o pescados enteros frescos que se sazonan con limón, se sellan ligeramente y luego se cocinan a fuego lento en una exquisita y cremosa salsa de leche de coco."
+      },
+      "category": [
+        "Plato fuerte",
+        "Mariscos",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado entero (chillo o pargo rojo)",
+        "Leche de coco fresca",
+        "Pimiento verde y rojo",
+        "Cebolla roja",
+        "Ajo fresco",
+        "Aceite de coco (o vegetal)",
+        "Cilantro ancho"
+      ],
+      "tags": [
+        "Pescado",
+        "Coco",
+        "Samaná",
+        "Mariscos",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/pescado_con_coco.md"
+    },
+    {
+      "id": "dominican/pollo_guisado_dominicano",
+      "title": "Pollo Guisado Dominicano",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pollo Guisado Dominicano",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/pollo-guisado/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Pollo",
+          "Guisado",
+          "Caramelizado",
+          "Sofrito",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Pollo entero troceado",
+          "Azúcar blanca (para caramelizar)",
+          "Orégano dominicano",
+          "Cilantro ancho",
+          "Pasta de tomate",
+          "Pimiento verde cubanela",
+          "Aceitunas verdes"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de carne intenso",
+            "Sutilmente agridulce (azúcar caramelizada)"
+          ],
+          "texture": [
+            "Extremadamente tierno (se desprende del hueso)",
+            "Jugoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Orégano dominicano y cilantro ancho",
+            "Ajo y cebolla pochados",
+            "Salsa espesa de tomate"
+          ],
+          "presentation": "Servido caliente en un tazón o plato llano, bañado abundantemente con su salsa de color marrón rojizo brillante."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 34,
+            "fat_g": 18,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Pollo guisado dominicano jugoso de tono dorado intenso (Unsplash)"
+          }
+        ],
+        "description": "El Pollo Guisado es la preparación de carne más común de la República Dominicana, componente esencial del almuerzo diario \"La Bandera\". Destaca por su técnica de dorar el pollo utilizando azúcar blanca caramelizada directamente en el aceite caliente, seguida de una cocción lenta en una salsa criolla sumamente rica y aromática."
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "40 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo entero troceado",
+        "Azúcar blanca (para caramelizar)",
+        "Orégano dominicano",
+        "Cilantro ancho",
+        "Pasta de tomate",
+        "Pimiento verde cubanela",
+        "Aceitunas verdes"
+      ],
+      "tags": [
+        "Pollo",
+        "Guisado",
+        "Caramelizado",
+        "Sofrito",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/pollo_guisado_dominicano.md"
+    },
+    {
+      "id": "dominican/sancocho_dominicano",
+      "title": "Sancocho Dominicano de Siete Carnes",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Dominican Sancocho",
+            "7-Meat Stew"
+          ]
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "cook_time": "2 horas",
+        "description": "El Sancocho es el plato de celebración supremo de la República Dominicana, reservado para días de lluvia, reuniones de año nuevo o festividades de gran envergadura. Su versión más gloriosa es el \"Sancocho de Siete Carnes\", un guiso suntuoso y denso que combina múltiples carnes de res, cerdo y pollo con raíces tropicales.",
+        "difficulty": "★★★★★",
+        "images": [
+          {
+            "description": "Gran olla de sancocho dominicano espeso hirviendo (Unsplash)",
+            "url": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)",
+          "Plátano verde",
+          "Yuca",
+          "Yautía (blanca y amarilla)",
+          "Ñame",
+          "Calabaza (ahuyama)",
+          "Maíz tierno (mazorcas)",
+          "Naranja agria"
+        ],
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "carbs_g": 78,
+            "fat_g": 32,
+            "protein_g": 54
+          }
+        },
+        "prep_time": "45 minutos",
+        "region": "República Dominicana",
+        "sensory": {
+          "aroma": [
+            "Carnes mixtas estofadas",
+            "Orégano dominicano y cilantro ancho",
+            "Naranja agria fresca"
+          ],
+          "flavor": [
+            "Salado",
+            "Umami extremadamente intenso",
+            "Ácido (naranja agria)",
+            "Herbal (cilantro ancho)"
+          ],
+          "presentation": "Servido muy caliente en platos hondos de barro, acompañado tradicionalmente de arroz blanco graneado, aguacate maduro en rodajas y un chorrito de jugo de naranja agria adicional.",
+          "texture": [
+            "Caldo extremadamente espeso (consistencia espesa de crema)",
+            "Tubérculos sumamente suaves"
+          ]
+        },
+        "servings": 10,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/sancocho-dominicano-receta/"
+        },
+        "tags": [
+          "Sopa",
+          "Guiso",
+          "Carnes mixtas",
+          "Viandas",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "title": "Sancocho Dominicano de Siete Carnes"
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "45 minutos",
+      "cookTime": "2 horas",
+      "servings": 10,
+      "mainIngredients": [
+        "Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)",
+        "Plátano verde",
+        "Yuca",
+        "Yautía (blanca y amarilla)",
+        "Ñame",
+        "Calabaza (ahuyama)",
+        "Maíz tierno (mazorcas)",
+        "Naranja agria"
+      ],
+      "tags": [
+        "Sopa",
+        "Guiso",
+        "Carnes mixtas",
+        "Viandas",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/sancocho_dominicano.md"
+    },
+    {
+      "id": "dominican/tostones_dominicanos",
+      "title": "Tostones Dominicanos con Agua de Ajo",
+      "language": "spanish",
+      "country": "dominican-republic",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tostones Dominicanos con Agua de Ajo",
+        "region": "República Dominicana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "cocinadominicana.com",
+          "url": "https://www.cocinadominicana.com/tostones-receta/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Snack",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Plátano",
+          "Frito",
+          "Snack",
+          "Crujiente",
+          "República Dominicana",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Aceite vegetal para freír",
+          "Ajo fresco",
+          "Sal fina",
+          "Agua fría"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Almidonado",
+            "Ajo suave"
+          ],
+          "texture": [
+            "Extremadamente crujiente (exterior)",
+            "Suave (interior)"
+          ],
+          "aroma": [
+            "Plátano frito",
+            "Ajo fresco"
+          ],
+          "presentation": "Servidos calientes en un plato hondo o bandeja de mimbre cubiertos de papel absorbente, acompañados de mojo de ajo dominicano para mojar de inmediato."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 1.5,
+            "fat_g": 11,
+            "carbs_g": 31
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Tostones dominicanos crujientes y dorados (Unsplash)"
+          }
+        ],
+        "description": "Los Tostones dominicanos son el acompañamiento frito más popular de la República Dominicana. Consisten en rodajas gruesas de plátano verde que se fríen ligeramente para ablandarse, luego se aplastan y se sumergen brevemente en un baño de agua salada con ajo machacado antes de la segunda fritura rápida."
+      },
+      "category": [
+        "Acompañamiento",
+        "Snack",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Aceite vegetal para freír",
+        "Ajo fresco",
+        "Sal fina",
+        "Agua fría"
+      ],
+      "tags": [
+        "Plátano",
+        "Frito",
+        "Snack",
+        "Crujiente",
+        "República Dominicana",
+        "Tradicional"
+      ],
+      "filePath": "dishes/dominican/tostones_dominicanos.md"
+    }
+  ],
+  "count": 10
+}

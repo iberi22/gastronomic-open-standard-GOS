@@ -1,0 +1,3356 @@
+{
+  "recipes": [
+    {
+      "id": "japanese/agedashi_tofu",
+      "title": "Agedashi Tofu",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Agedashi Tofu",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/703632/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Izakaya"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "10 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tofu firme escurrido",
+          "Almidón de patata katakuriko",
+          "Caldo dashi",
+          "Salsa de soja clara",
+          "Mirin",
+          "Rábano Daikon rallado",
+          "Katsuobushi"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami de dashi caliente",
+            "Salado suave",
+            "Soya agridulce"
+          ],
+          "texture": [
+            "Capa exterior crujiente de almidón",
+            "Interior de tofu sedoso súper suave"
+          ],
+          "aroma": [
+            "Almidón de patata (katakuriko)",
+            "Tentsuyu hondo"
+          ],
+          "presentation": "Cubos de tofu fritos sumergidos a la mitad en caldo caliente dashi con rábano daikon y katsuobushi."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 15,
+            "carbs_g": 24
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Agedashi Tofu tradicional"
+          }
+        ],
+        "description": "El Agedashi Tofu consiste en cubos de tofu rebozados en almidón de patata y fritos hasta quedar dorados, servidos en un caldo caliente tentsuyu."
+      },
+      "category": [
+        "Entrante",
+        "Izakaya"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "10 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Tofu firme escurrido",
+        "Almidón de patata katakuriko",
+        "Caldo dashi",
+        "Salsa de soja clara",
+        "Mirin",
+        "Rábano Daikon rallado",
+        "Katsuobushi"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/agedashi_tofu.md"
+    },
+    {
+      "id": "japanese/asari_no_sakamushi",
+      "title": "Asari no Sakamushi",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Asari no Sakamushi",
+        "region": "Izakaya / Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B5%E3%83%AA",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Entrante",
+          "Izakaya"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "5 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "Izakaya",
+          "Clams",
+          "Sake",
+          "Seafood"
+        ],
+        "main_ingredients": [
+          "Almejas frescas en su concha (asari) purgadas en salmuera",
+          "Sake de cocina de alta calidad (junmai)",
+          "Jengibre fresco en juliana",
+          "Mantequilla sin sal",
+          "Cebolleta fina picada",
+          "Un chorrito sutil de salsa de soja"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salinidad marina pura suavizada con la dulzura del arroz del sake y mantequilla rica"
+          ],
+          "texture": [
+            "Almejas tiernas y jugosas en un consomé marino caliente"
+          ],
+          "aroma": [
+            "Vapor fragante de sake alcohólico suave combinado con brisa marina fresca"
+          ],
+          "presentation": "Cuenco hondo repleto de conchas abiertas de almejas bañadas en un fondo brillante de caldo claro con finos hilos de cebolleta verde."
+        },
+        "nutrition": {
+          "calories": 190,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 7,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600",
+            "description": "Asari no Sakamushi almejas al vapor de sake"
+          }
+        ],
+        "description": "El Asari no Sakamushi es una entrada indispensable en las tabernas izakaya compuestas por almejas frescas al vapor cocinadas rápidamente en sake purísimo de arroz, mantequilla y cebolleta."
+      },
+      "category": [
+        "Entrante",
+        "Izakaya"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "5 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Almejas frescas en su concha (asari) purgadas en salmuera",
+        "Sake de cocina de alta calidad (junmai)",
+        "Jengibre fresco en juliana",
+        "Mantequilla sin sal",
+        "Cebolleta fina picada",
+        "Un chorrito sutil de salsa de soja"
+      ],
+      "tags": [
+        "Japanese",
+        "Izakaya",
+        "Clams",
+        "Sake",
+        "Seafood"
+      ],
+      "filePath": "dishes/japanese/asari_no_sakamushi.md"
+    },
+    {
+      "id": "japanese/buri_daikon",
+      "title": "Buri Daikon",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Buri Daikon",
+        "region": "Toyama / Hokuriku",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%B6%E3%82%8A%E3%81%A0%E3%81%84%E3%81%93%E3%82%93",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Plato Principal",
+          "Nimono"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "40 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Toyama",
+          "Winter",
+          "Buri",
+          "Daikon"
+        ],
+        "main_ingredients": [
+          "Trozos de pez limón / ventresca de jurel gigante (buri) en hueso",
+          "Rábano daikon cortado en gruesas rodajas (3 cm)",
+          "Jengibre fresco en láminas",
+          "Caldo dashi de kombu",
+          "Salsa de soja oscura, sake, mirin y azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami intenso de pescado azul con dulzura profunda de soya y sake"
+          ],
+          "texture": [
+            "Daikon extremadamente tierno que se deshace en la boca cargado de jugos",
+            "Carne de buri jugosa y rica en colágeno"
+          ],
+          "aroma": [
+            "Guiso de invierno caliente de soya caramelizada y jengibre fresco"
+          ],
+          "presentation": "Ruedas altas de daikon barnizadas en un tono ámbar oscuro sirviendo de base a trozos jugosos de ventresca de buri glaseada."
+        },
+        "nutrition": {
+          "calories": 370,
+          "macros": {
+            "protein_g": 25,
+            "fat_g": 18,
+            "carbs_g": 22
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600",
+            "description": "Buri Daikon tradicional de invierno"
+          }
+        ],
+        "description": "El Buri Daikon es un plato invernal reconfortante por excelencia en el que finos trozos de pez limón (buri) graso y ruedas gruesas de rábano daikon se cocinan lentamente hasta que el daikon absorbe todo el rico caldo agridulce."
+      },
+      "category": [
+        "Plato Principal",
+        "Nimono"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "40 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Trozos de pez limón / ventresca de jurel gigante (buri) en hueso",
+        "Rábano daikon cortado en gruesas rodajas (3 cm)",
+        "Jengibre fresco en láminas",
+        "Caldo dashi de kombu",
+        "Salsa de soja oscura, sake, mirin y azúcar"
+      ],
+      "tags": [
+        "Japanese",
+        "Toyama",
+        "Winter",
+        "Buri",
+        "Daikon"
+      ],
+      "filePath": "dishes/japanese/buri_daikon.md"
+    },
+    {
+      "id": "japanese/chanchan_yaki",
+      "title": "Chanchan Yaki",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chanchan Yaki",
+        "region": "Hokkaido",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%A1%E3%82%83%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%84%BC%E3%81%8D",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Plato Principal",
+          "郷土料理"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Hokkaido",
+          "Kyodo Ryori",
+          "Seafood",
+          "Miso"
+        ],
+        "main_ingredients": [
+          "Lomo de salmón fresco con piel",
+          "Repollo cortado grueso",
+          "Cebolla cortada en juliana",
+          "Hongos shimeji",
+          "Miso rojo de Hokkaido",
+          "Mirin",
+          "Mantequilla sin sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Miso dulce salado y mantecoso",
+            "Umami de salmón graso",
+            "Dulzura natural de vegetales al vapor"
+          ],
+          "texture": [
+            "Lomo de salmón tierno y jugoso",
+            "Repollo y vegetales crujientes al vapor"
+          ],
+          "aroma": [
+            "Miso tostado con mantequilla derretida",
+            "Vapor marino fresco"
+          ],
+          "presentation": "Filete entero de salmón sobre una cama colorida de repollo, cebolla y hongos servido directamente sobre una plancha caliente teppan con trozos de mantequilla."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 34,
+            "fat_g": 22,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600",
+            "description": "Chanchan Yaki salmón con verduras y miso de Hokkaido"
+          }
+        ],
+        "description": "El Chanchan Yaki es un plato tradicional pesquero de Hokkaido que combina filetes de salmón fresco cocinados a la plancha teppan con abundante repollo, vegetales de estación y una rica salsa sazonada con miso rojo y mantequilla."
+      },
+      "category": [
+        "Plato Principal",
+        "郷土料理"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Lomo de salmón fresco con piel",
+        "Repollo cortado grueso",
+        "Cebolla cortada en juliana",
+        "Hongos shimeji",
+        "Miso rojo de Hokkaido",
+        "Mirin",
+        "Mantequilla sin sal"
+      ],
+      "tags": [
+        "Japanese",
+        "Hokkaido",
+        "Kyodo Ryori",
+        "Seafood",
+        "Miso"
+      ],
+      "filePath": "dishes/japanese/chanchan_yaki.md"
+    },
+    {
+      "id": "japanese/chashu_pork_slice",
+      "title": "Chashu de Cerdo para Ramen",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chashu de Cerdo para Ramen",
+        "region": "Fukuoka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://www.nhk.or.jp/lifestyle/kp/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Ramen Topping"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "2 horas 30 minutos",
+        "servings": 6,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Panceta de cerdo con piel",
+          "Salsa de soja",
+          "Sake",
+          "Mirin",
+          "Azúcar",
+          "Jengibre en rodajas",
+          "Ajo",
+          "Verdeo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami dulce salado profundo",
+            "Ajo y jengibre"
+          ],
+          "texture": [
+            "Panceta melosa deshecha y mantequillosa"
+          ],
+          "aroma": [
+            "Panceta enrollada atada",
+            "Salsa de soja y sake reducidos"
+          ],
+          "presentation": "Rodajas circulares de panceta enrollada caramelizadas superficialmente con soplete."
+        },
+        "nutrition": {
+          "calories": 740,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 68,
+            "carbs_g": 10
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chashu de Cerdo para Ramen tradicional"
+          }
+        ],
+        "description": "El Chashu es el infaltable topping de panceta de cerdo enrollada y guisada a fuego lento en un adobo concentrado de soja y sake hasta quedar fundente."
+      },
+      "category": [
+        "Acompañamiento",
+        "Ramen Topping"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "2 horas 30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Panceta de cerdo con piel",
+        "Salsa de soja",
+        "Sake",
+        "Mirin",
+        "Azúcar",
+        "Jengibre en rodajas",
+        "Ajo",
+        "Verdeo"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/chashu_pork_slice.md"
+    },
+    {
+      "id": "japanese/chawanmushi",
+      "title": "Chawanmushi (Flan Salado)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chawanmushi (Flan Salado)",
+        "region": "Kyoto",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/702781/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Kaiseki"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Huevos frescos",
+          "Dashi de primera extracción",
+          "Salsa de soja clara",
+          "Pollo picado",
+          "Langostino",
+          "Seta Shiitake",
+          "Mitsuba"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami sutil y limpio",
+            "Salado suave",
+            "Aroma marino"
+          ],
+          "texture": [
+            "Flan de huevo seda que se deshace instantáneamente"
+          ],
+          "aroma": [
+            "Dashi clarificado",
+            "Seta shiitake",
+            "Mirin"
+          ],
+          "presentation": "Servido caliente en cuenco de cerámica con tapa decorado con hoja de mitsuba."
+        },
+        "nutrition": {
+          "calories": 140,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 8,
+            "carbs_g": 6
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chawanmushi (Flan Salado) tradicional"
+          }
+        ],
+        "description": "El Chawanmushi es un natilla o flan salado al vapor preparado a partir de huevo y caldo dashi enriquecido con pollo, langostino y setas."
+      },
+      "category": [
+        "Entrante",
+        "Kaiseki"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Huevos frescos",
+        "Dashi de primera extracción",
+        "Salsa de soja clara",
+        "Pollo picado",
+        "Langostino",
+        "Seta Shiitake",
+        "Mitsuba"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/chawanmushi.md"
+    },
+    {
+      "id": "japanese/chicken_katsu_curry",
+      "title": "Chicken Katsu Curry",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken Katsu Curry",
+        "region": "Osaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%84%E3%82%AB%E3%83%AC%E3%83%BC",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Yoshoku"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pechuga de pollo",
+          "Panko (pan rallado japonés)",
+          "Arroz japonés",
+          "Pastilla de curry japonés",
+          "Zanahoria",
+          "Patata",
+          "Cebolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Curry especiado dulce",
+            "Umami de caldo",
+            "Salado"
+          ],
+          "texture": [
+            "Pollo empanado crujiente",
+            "Salsa densa y tersa"
+          ],
+          "aroma": [
+            "Polvo de curry japonés",
+            "Panko crujiente"
+          ],
+          "presentation": "Filete de pollo empanado en panko sobre arroz blanco, cubierto parcialmente con salsa de curry espeso."
+        },
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "protein_g": 34,
+            "fat_g": 28,
+            "carbs_g": 96
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chicken Katsu Curry tradicional"
+          }
+        ],
+        "description": "El Chicken Katsu Curry combina un crujiente filete de pollo empanado en panko con una salsa de curry japonesa espesa, suave y reconfortante."
+      },
+      "category": [
+        "Plato fuerte",
+        "Yoshoku"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pechuga de pollo",
+        "Panko (pan rallado japonés)",
+        "Arroz japonés",
+        "Pastilla de curry japonés",
+        "Zanahoria",
+        "Patata",
+        "Cebolla"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/chicken_katsu_curry.md"
+    },
+    {
+      "id": "japanese/chikuzenni",
+      "title": "Chikuzenni",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chikuzenni",
+        "region": "Fukuoka (Kyushu)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E5%89%8D%E7%85%AE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Plato Principal",
+          "Nimono"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Fukuoka",
+          "Kyushu",
+          "Nimono",
+          "Chicken"
+        ],
+        "main_ingredients": [
+          "Contramuslos de pollo deshuesados cortados en trozos",
+          "Raíz de loto (renkon) cortada en rodajas",
+          "Raíz de gobo (bardana)",
+          "Brotes de bambú (takenoko)",
+          "Zanahoria en corte de diamante (rangiri)",
+          "Hongos shiitake",
+          "Caldo dashi, salsa de soja, mirin, sake y azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salsa glaseada agridulce umami balanceada con notas de tierra fresca"
+          ],
+          "texture": [
+            "Pollo tierno, raíz de loto crujiente con brotes de bambú firmes"
+          ],
+          "aroma": [
+            "Glaseado dulzón caramelizado de soja y mirin con hongo shiitake"
+          ],
+          "presentation": "Montículo brillante de verduras cortadas simétricamente en rango junto a piezas doradas de pollo, decorado con vainas verdes de guisantes salteados."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 26,
+            "fat_g": 12,
+            "carbs_g": 28
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600",
+            "description": "Chikuzenni estofado de pollo y vegetales de raíz de Fukuoka"
+          }
+        ],
+        "description": "El Chikuzenni (Gametoni) es un guiso tradicional de la antigua provincia de Chikuzen en Fukuoka, en el cual el pollo se sofríe antes de cocerse a fuego lento con raíces como loto, bardana y bambú en una reducción brillante de dashi y soja."
+      },
+      "category": [
+        "Plato Principal",
+        "Nimono"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Contramuslos de pollo deshuesados cortados en trozos",
+        "Raíz de loto (renkon) cortada en rodajas",
+        "Raíz de gobo (bardana)",
+        "Brotes de bambú (takenoko)",
+        "Zanahoria en corte de diamante (rangiri)",
+        "Hongos shiitake",
+        "Caldo dashi, salsa de soja, mirin, sake y azúcar"
+      ],
+      "tags": [
+        "Japanese",
+        "Fukuoka",
+        "Kyushu",
+        "Nimono",
+        "Chicken"
+      ],
+      "filePath": "dishes/japanese/chikuzenni.md"
+    },
+    {
+      "id": "japanese/dorayaki",
+      "title": "Dorayaki",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dorayaki",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%A9%E3%82%89%E7%84%BC%E3%81%8D",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Postre",
+          "Wagashi"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Japanese",
+          "Wagashi",
+          "Dessert",
+          "Anko",
+          "Tokyo"
+        ],
+        "main_ingredients": [
+          "Pasta de judía roja dulce (anko / tsubuan)",
+          "Harina de trigo fluida",
+          "Huevos frescos",
+          "Azúcar fino y miel de abeja",
+          "Mirin",
+          "Bicarbonato de sodio disuelto en agua"
+        ],
+        "sensory": {
+          "flavor": [
+            "Miel dulce suave con el sabor denso y noble del anko artesanal"
+          ],
+          "texture": [
+            "Bizcochuelos esponjosos y jugosos envolviendo un relleno cremoso de judía entera"
+          ],
+          "aroma": [
+            "Panqueque caliente con miel y tostado de sartén tradicional"
+          ],
+          "presentation": "Dos bizcochuelos redondos de color dorado uniforme unídos sellando un Relleno generoso de anko en el centro."
+        },
+        "nutrition": {
+          "calories": 260,
+          "macros": {
+            "protein_g": 6,
+            "fat_g": 3,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600",
+            "description": "Dorayaki bizcocho japonés relleno de anko"
+          }
+        ],
+        "description": "El Dorayaki es uno de los wagashi más queridos de Japón, compuesto por dos pequeños panqueques esponjosos a base de huevo y miel estilo castella que sándwichan una generosa capa de pasta artesanal de judía roja dulce (anko)."
+      },
+      "category": [
+        "Postre",
+        "Wagashi"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Pasta de judía roja dulce (anko / tsubuan)",
+        "Harina de trigo fluida",
+        "Huevos frescos",
+        "Azúcar fino y miel de abeja",
+        "Mirin",
+        "Bicarbonato de sodio disuelto en agua"
+      ],
+      "tags": [
+        "Japanese",
+        "Wagashi",
+        "Dessert",
+        "Anko",
+        "Tokyo"
+      ],
+      "filePath": "dishes/japanese/dorayaki.md"
+    },
+    {
+      "id": "japanese/gyudon_beef_bowl",
+      "title": "Gyudon (Donburi de Res)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gyudon (Donburi de Res)",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/703314/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Donburi"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res cortada muy fina",
+          "Cebolla",
+          "Arroz japonés",
+          "Caldo dashi",
+          "Salsa de soja",
+          "Mirin",
+          "Sake de cocina",
+          "Beni shoga"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce salado (Shoyu + Mirin)",
+            "Umami de res",
+            "Cebolla pochada dulce"
+          ],
+          "texture": [
+            "Finas láminas de carne muy tiernas",
+            "Arroz impregnado de salsa"
+          ],
+          "aroma": [
+            "Mirin y dashi",
+            "Cebolla dulce"
+          ],
+          "presentation": "Cuenco de arroz caliente cubierto con fina carne de res y cebolla cocinada en dashi dulce."
+        },
+        "nutrition": {
+          "calories": 580,
+          "macros": {
+            "protein_g": 26,
+            "fat_g": 18,
+            "carbs_g": 78
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gyudon (Donburi de Res) tradicional"
+          }
+        ],
+        "description": "El Gyudon es un popular donburi japonés consistente en finísimas lonchas de res y cebolla cocidas a fuego lento en un dashi sazonado con soja y mirin."
+      },
+      "category": [
+        "Plato fuerte",
+        "Donburi"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Carne de res cortada muy fina",
+        "Cebolla",
+        "Arroz japonés",
+        "Caldo dashi",
+        "Salsa de soja",
+        "Mirin",
+        "Sake de cocina",
+        "Beni shoga"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/gyudon_beef_bowl.md"
+    },
+    {
+      "id": "japanese/hida_houba_miso",
+      "title": "Hida Houba Miso",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Hida Houba Miso",
+        "region": "Gifu (Takayama)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9C%B4%E8%90%89%E2%80%93%E3%81%BF%E3%81%9D",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Especialidad Local",
+          "Plato Principal"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "Gifu",
+          "Takayama",
+          "Miso",
+          "Wagyu"
+        ],
+        "main_ingredients": [
+          "Hoja seca de magnolia (Houba)",
+          "Miso de Takayama (miso oscuro de grano entero)",
+          "Ternera de Hida (Hida Wagyu) cortada fina",
+          "Hongos shiitake frescos",
+          "Cebolleta verde (negi) picada",
+          "Mirin y sake"
+        ],
+        "sensory": {
+          "flavor": [
+            "Miso dulce terroso profundo",
+            "Umami intenso de Wagyu caramelizado",
+            "Notas ahumadas herbales"
+          ],
+          "texture": [
+            "Ternera marmoleada suave que se derrite en la boca",
+            "Miso cremoso borboteante"
+          ],
+          "aroma": [
+            "Fragancia boscosa aromática de hoja de magnolia tostada",
+            "Miso ahumado caliente"
+          ],
+          "presentation": "Una hoja seca de magnolia reposando sobre un pequeño brasero shichirin conteniendo miso sazonado borboteante, tiras de ternera Hida y cebolleta."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 26,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600",
+            "description": "Hida Houba Miso asado sobre hoja de magnolia"
+          }
+        ],
+        "description": "El Hida Houba Miso es un plato tradicional de la región montañosa de Takayama en Gifu, donde el miso especiado se asa lentamente sobre una hoja seca de magnolia sobre un brasero de carbón, acompañado de finos cortes de ternera Hida y hongos."
+      },
+      "category": [
+        "Especialidad Local",
+        "Plato Principal"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Hoja seca de magnolia (Houba)",
+        "Miso de Takayama (miso oscuro de grano entero)",
+        "Ternera de Hida (Hida Wagyu) cortada fina",
+        "Hongos shiitake frescos",
+        "Cebolleta verde (negi) picada",
+        "Mirin y sake"
+      ],
+      "tags": [
+        "Japanese",
+        "Gifu",
+        "Takayama",
+        "Miso",
+        "Wagyu"
+      ],
+      "filePath": "dishes/japanese/hida_houba_miso.md"
+    },
+    {
+      "id": "japanese/ichigo_daifuku",
+      "title": "Ichigo Daifuku",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ichigo Daifuku",
+        "region": "Tokyo / Kansai",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%81%A1%E3%81%94%E5%A4%A7%E7%A6%8F",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Postre",
+          "Wagashi"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "10 minutos",
+        "servings": 6,
+        "tags": [
+          "Japanese",
+          "Wagashi",
+          "Mochi",
+          "Strawberry",
+          "Dessert"
+        ],
+        "main_ingredients": [
+          "Fresas frescas maduras y firmes (ichigo)",
+          "Pasta de judía roja dulce (shiroan o koshian)",
+          "Harina de arroz glutinoso mochiko (o shiratamako)",
+          "Azúcar refinado",
+          "Agua pura",
+          "Almidón de patata katakuriko para manipular"
+        ],
+        "sensory": {
+          "flavor": [
+            "Contraste refrescante ácido dulzón de la fresa jugosa con la dulzura suave del anko"
+          ],
+          "texture": [
+            "Mochi exterior elástico y suave, interior jugoso con explosión de fruta fresca"
+          ],
+          "aroma": [
+            "Aroma frutal silvestre de fresa fresca envuelto en vapor neutro de arroz glutinoso"
+          ],
+          "presentation": "Esfera blanca de mochi extremadamente suave de cuyo corte emerge una fresa roja brillante envuelta en una capa fina de anko."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 4,
+            "fat_g": 1,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600",
+            "description": "Ichigo Daifuku mochi relleno de fresa dulce"
+          }
+        ],
+        "description": "El Ichigo Daifuku es una concurrida innovación moderna de la dulcería wagashi que consiste en una fresa entera fresca envuelta en fina pasta de judía dulce y recubierta por una masa elástica de mochi de arroz glutinoso."
+      },
+      "category": [
+        "Postre",
+        "Wagashi"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "10 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Fresas frescas maduras y firmes (ichigo)",
+        "Pasta de judía roja dulce (shiroan o koshian)",
+        "Harina de arroz glutinoso mochiko (o shiratamako)",
+        "Azúcar refinado",
+        "Agua pura",
+        "Almidón de patata katakuriko para manipular"
+      ],
+      "tags": [
+        "Japanese",
+        "Wagashi",
+        "Mochi",
+        "Strawberry",
+        "Dessert"
+      ],
+      "filePath": "dishes/japanese/ichigo_daifuku.md"
+    },
+    {
+      "id": "japanese/imoni_yamagata",
+      "title": "Imoni Yamagata",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Imoni Yamagata",
+        "region": "Yamagata",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%82%82%E3%81%AB",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Estofado / Nimono",
+          "Kyodo Ryori"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Yamagata",
+          "Nimono",
+          "Satoimo",
+          "Beef"
+        ],
+        "main_ingredients": [
+          "Taro japonés (satoimo) pelado",
+          "Finas láminas de carne de ternera",
+          "Konjac (konnyaku) desmenuzado a mano",
+          "Cebolleta negi cortada en trozos",
+          "Caldo dashi de kombu",
+          "Salsa de soja oscura, sake y azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulzura sazonada de soya dulce estilo sukiyaki",
+            "Umami sustancioso de satoimo y ternera"
+          ],
+          "texture": [
+            "Satoimo extremadamente cremoso y viscoso",
+            "Konjac masticable y carne tierna"
+          ],
+          "aroma": [
+            "Soya agridulce caliente con fragancia de raíz de taro"
+          ],
+          "presentation": "Cuenco rústico hondo rebosante de tubérculos de satoimo lustrosos en caldo pardo brillante junto a tiras de ternera y trozos de cebolleta."
+        },
+        "nutrition": {
+          "calories": 360,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 14,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600",
+            "description": "Imoni de Yamagata estofado tradicional de taro"
+          }
+        ],
+        "description": "El Imoni es un estofado de otoño característico de Yamagata preparado con tubérculos de satoimo (taro), tiras de ternera jugosa, konjac y cebolleta cocidos en un caldo sazonado de soya, sake y azúcar."
+      },
+      "category": [
+        "Estofado / Nimono",
+        "Kyodo Ryori"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Taro japonés (satoimo) pelado",
+        "Finas láminas de carne de ternera",
+        "Konjac (konnyaku) desmenuzado a mano",
+        "Cebolleta negi cortada en trozos",
+        "Caldo dashi de kombu",
+        "Salsa de soja oscura, sake y azúcar"
+      ],
+      "tags": [
+        "Japanese",
+        "Yamagata",
+        "Nimono",
+        "Satoimo",
+        "Beef"
+      ],
+      "filePath": "dishes/japanese/imoni_yamagata.md"
+    },
+    {
+      "id": "japanese/ishikari_nabe",
+      "title": "Ishikari Nabe",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ishikari Nabe",
+        "region": "Hokkaido",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E2%80%93%E7%8B%A9%E9%80%85",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Sopa / Hotpot",
+          "Kyodo Ryori"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Hokkaido",
+          "Salmon",
+          "Miso",
+          "Nabemono"
+        ],
+        "main_ingredients": [
+          "Salmón entero fresco con espinas y piel cortado en trozos",
+          "Miso blanco y miso rojo de Hokkaido",
+          "Caldo dashi de kombu",
+          "Daikon cortado en medias lunas",
+          "Tofu firme",
+          "Pimienta japonesa sansho",
+          "Mantequilla de Hokkaido"
+        ],
+        "sensory": {
+          "flavor": [
+            "Rico umami graso de salmón realzado con miso suave",
+            "Toque cítrico picante de sansho"
+          ],
+          "texture": [
+            "Carne jugosa de salmón en hueso",
+            "Daikon suave cargado de caldo"
+          ],
+          "aroma": [
+            "Sopa dulce de miso marino con notas herbales de pimienta sansho"
+          ],
+          "presentation": "Cazuela hirviente llena de trozos de salmón de tono rosado intenso con cabeza y espinas, daikon blanco, tofu y destellos de pimienta verde sansho."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 36,
+            "fat_g": 20,
+            "carbs_g": 16
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600",
+            "description": "Ishikari Nabe cazuela de salmón y miso de Hokkaido"
+          }
+        ],
+        "description": "El Ishikari Nabe es una cazuela icónica de la desembocadura del río Ishikari en Hokkaido, preparada con trozos enteros de salmón silvestre, tubérculos y tofu simmered en un dashi sazonado con miso rico y terminado con pimienta sansho."
+      },
+      "category": [
+        "Sopa / Hotpot",
+        "Kyodo Ryori"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Salmón entero fresco con espinas y piel cortado en trozos",
+        "Miso blanco y miso rojo de Hokkaido",
+        "Caldo dashi de kombu",
+        "Daikon cortado en medias lunas",
+        "Tofu firme",
+        "Pimienta japonesa sansho",
+        "Mantequilla de Hokkaido"
+      ],
+      "tags": [
+        "Japanese",
+        "Hokkaido",
+        "Salmon",
+        "Miso",
+        "Nabemono"
+      ],
+      "filePath": "dishes/japanese/ishikari_nabe.md"
+    },
+    {
+      "id": "japanese/karaage_chicken",
+      "title": "Chicken Karaage",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken Karaage",
+        "region": "Japón Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/701831/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Izakaya",
+          "Snack"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "12 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Contramuslos de pollo deshuesados",
+          "Salsa de soja",
+          "Jengibre rallado",
+          "Ajo machacado",
+          "Almidón de patata (katakuriko)",
+          "Sake",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado jengibre",
+            "Umami de soja marinada",
+            "Ajo potente"
+          ],
+          "texture": [
+            "Exterior crujiente de almidón",
+            "Interior de pollo muy jugoso"
+          ],
+          "aroma": [
+            "Marinada de soja y jengibre",
+            "Aceite de sésamo"
+          ],
+          "presentation": "Bocadillos dorados crujientes servidos con gajos de limón fresco y mayonesa Kewpie."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 30,
+            "carbs_g": 32
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chicken Karaage tradicional"
+          }
+        ],
+        "description": "El Karaage es el pollo frito al estilo japonés: trozos de muslo marinados en soja, jengibre y sake, rebozados en almidón de patata para una crocancia ligera."
+      },
+      "category": [
+        "Izakaya",
+        "Snack"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "12 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Contramuslos de pollo deshuesados",
+        "Salsa de soja",
+        "Jengibre rallado",
+        "Ajo machacado",
+        "Almidón de patata (katakuriko)",
+        "Sake",
+        "Limón"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/karaage_chicken.md"
+    },
+    {
+      "id": "japanese/kenchin_jiru",
+      "title": "Kenchin Jiru",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kenchin Jiru",
+        "region": "Kamakura",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E3%81%A1%E3%82%93%E6%B1%81",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Sopa",
+          "Shojin Ryori"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Kamakura",
+          "Soup",
+          "Vegan",
+          "Root Vegetables"
+        ],
+        "main_ingredients": [
+          "Tofu firme desmenuzado a mano",
+          "Aceite de sésamo tostado",
+          "Raíz de gobo (bardana) raspada en finas virutas",
+          "Daikon y zanahoria picados",
+          "Konjac roto a mano",
+          "Hongos shiitake secos rehidratados y su agua",
+          "Caldo dashi de kombu y shiitake",
+          "Salsa de soja clara y sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Profundo umami vegetal terroso con rica nota de sésamo tostado"
+          ],
+          "texture": [
+            "Variedad de tubérculos firmes y crujientes con trozos esponjosos de tofu frito"
+          ],
+          "aroma": [
+            "Sésamo tostado, madera de gobo y hongo shiitake deshidratado"
+          ],
+          "presentation": "Cuenco de laca tradicional conteniendo una sopa clara pero brillante cargada de finas láminas multicolores de verduras de raíz salteadas."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 11,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600",
+            "description": "Kenchin Jiru sopa vegetal de Kamakura"
+          }
+        ],
+        "description": "El Kenchin Jiru es una sopa vegetal revitalizante proveniente del templo Kencho-ji en Kamakura, caracterizada por saltear primero verduras de raíz y tofu firme desmenuzado en aceite de sésamo antes de cocerlos en un dashi puro de shiitake y kombu."
+      },
+      "category": [
+        "Sopa",
+        "Shojin Ryori"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tofu firme desmenuzado a mano",
+        "Aceite de sésamo tostado",
+        "Raíz de gobo (bardana) raspada en finas virutas",
+        "Daikon y zanahoria picados",
+        "Konjac roto a mano",
+        "Hongos shiitake secos rehidratados y su agua",
+        "Caldo dashi de kombu y shiitake",
+        "Salsa de soja clara y sal"
+      ],
+      "tags": [
+        "Japanese",
+        "Kamakura",
+        "Soup",
+        "Vegan",
+        "Root Vegetables"
+      ],
+      "filePath": "dishes/japanese/kenchin_jiru.md"
+    },
+    {
+      "id": "japanese/kiriotanpo_nabe",
+      "title": "Kiriotanpo Nabe",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kiriotanpo Nabe",
+        "region": "Akita",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%BD",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Sopa / Hotpot",
+          "Kyodo Ryori"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Akita",
+          "Nabemono",
+          "Kiritanpo",
+          "Chicken"
+        ],
+        "main_ingredients": [
+          "Arroz de Akita recien cocido (Akita Komachi)",
+          "Pollo campero tipo Hinai-dori (o pollo de corral)",
+          "Caldo de carcasa de pollo y dashi",
+          "Cebolleta de Tokio (Tokyo negi)",
+          "Hongos maitake",
+          "Hojas de serbal/perejil japonés (seri)",
+          "Salsa de soja clara y mirin"
+        ],
+        "sensory": {
+          "flavor": [
+            "Caldo claro denso de umami de pollo avícola de alta calidad",
+            "Cereal tierno asado"
+          ],
+          "texture": [
+            "Cilindros de arroz firmes por fuera y masticables por dentro",
+            "Carne de pollo firme y sabrosa"
+          ],
+          "aroma": [
+            "Arroz asado a la leña",
+            "Hierba fresca de seri y caldo avícola rico"
+          ],
+          "presentation": "Cazuela donabe humeante repleta de caldo dorado, cilindros cortados en diagonal de kiritanpo asado, pollo jugoso y manojos verdes de seri."
+        },
+        "nutrition": {
+          "calories": 450,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 12,
+            "carbs_g": 58
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600",
+            "description": "Kiriotanpo Nabe en cazuela tradicional donabe"
+          }
+        ],
+        "description": "El Kiriotanpo Nabe es la cazuela caliente insignia de la prefectura de Akita, elaborada con cilindros de arroz macho majado y tostado al fuego, cocidos en un caldo sabroso de pollo Hinai-dori con vegetales frescos de montaña."
+      },
+      "category": [
+        "Sopa / Hotpot",
+        "Kyodo Ryori"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz de Akita recien cocido (Akita Komachi)",
+        "Pollo campero tipo Hinai-dori (o pollo de corral)",
+        "Caldo de carcasa de pollo y dashi",
+        "Cebolleta de Tokio (Tokyo negi)",
+        "Hongos maitake",
+        "Hojas de serbal/perejil japonés (seri)",
+        "Salsa de soja clara y mirin"
+      ],
+      "tags": [
+        "Japanese",
+        "Akita",
+        "Nabemono",
+        "Kiritanpo",
+        "Chicken"
+      ],
+      "filePath": "dishes/japanese/kiriotanpo_nabe.md"
+    },
+    {
+      "id": "japanese/matcha_miso_dengaku",
+      "title": "Matcha Miso Dengaku",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Matcha Miso Dengaku",
+        "region": "Aichi (Nagoya) / Kyoto",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E8%B1%86%E8%85%90%E7%94%B0%E4%B9%90",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Entrante",
+          "Yakimono"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "10 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "Dengaku",
+          "Matcha",
+          "Miso",
+          "Tofu"
+        ],
+        "main_ingredients": [
+          "Tofu firme cortado en rectángulos gruesos",
+          "Miso blanco Saikyo de Kyoto",
+          "Té verde matcha en polvo ceremonial",
+          "Mirin y sake",
+          "Azúcar fino",
+          "Semillas de sésamo blanco tostado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulzura sazonada del miso blanco balanceada con el amargor vegetativo del matcha ceremonial"
+          ],
+          "texture": [
+            "Tofu caliente de firmeza media con glaseado cremoso caramelizado"
+          ],
+          "aroma": [
+            "Fragancia herbal intensa de té verde matcha asado con nota dulzona de miso"
+          ],
+          "presentation": "Rectángulos de tofu dorado ensartados en brochetas dobles de bambú napados con un glaseado verde esmeralda denso gratina al fuego."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 12,
+            "fat_g": 8,
+            "carbs_g": 24
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Matcha Miso Dengaku tofu gratinado con glaze de té matcha"
+          }
+        ],
+        "description": "El Matcha Miso Dengaku es una sofisticada brocheta tradicional de tofu asado cubierta con una capa cremosa de miso blanco Saikyo infusionado con té matcha esmeralda y caramelizado suavemente a la parrilla."
+      },
+      "category": [
+        "Entrante",
+        "Yakimono"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "10 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tofu firme cortado en rectángulos gruesos",
+        "Miso blanco Saikyo de Kyoto",
+        "Té verde matcha en polvo ceremonial",
+        "Mirin y sake",
+        "Azúcar fino",
+        "Semillas de sésamo blanco tostado"
+      ],
+      "tags": [
+        "Japanese",
+        "Dengaku",
+        "Matcha",
+        "Miso",
+        "Tofu"
+      ],
+      "filePath": "dishes/japanese/matcha_miso_dengaku.md"
+    },
+    {
+      "id": "japanese/miso_soup_classic",
+      "title": "Sopa de Miso Clásica",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopa de Miso Clásica",
+        "region": "Japón Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/700810/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Sopa",
+          "Acompañamiento"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "5 minutos",
+        "cook_time": "10 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Caldo Dashi",
+          "Pasta de miso rojo o blanco",
+          "Tofu firme o sedoso",
+          "Alga Wakame deshidratada",
+          "Cebollín verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami terroso (Miso)",
+            "Salado delicado",
+            "Marino (Wakame)"
+          ],
+          "texture": [
+            "Caldo fluido y reconfortante",
+            "Tofu sedoso"
+          ],
+          "aroma": [
+            "Pasta de miso fermentado",
+            "Dashi de kombu y katsuobushi"
+          ],
+          "presentation": "Tazón pequeño de caldo tibio turbio con cubitos flotantes de tofu, algas wakame y cebollín."
+        },
+        "nutrition": {
+          "calories": 80,
+          "macros": {
+            "protein_g": 5,
+            "fat_g": 3,
+            "carbs_g": 7
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopa de Miso Clásica tradicional"
+          }
+        ],
+        "studies": [
+          {
+            "title": "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor",
+            "source": "Biomed Research International",
+            "year": 2015,
+            "doi": "10.1155/2015/189402",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26247011/"
+          },
+          {
+            "title": "Re-evaluation of glutamic acid (E 620), sodium glutamate (E 621), potassium glutamate (E 622) as food additives",
+            "source": "EFSA Journal",
+            "year": 2017,
+            "doi": "10.2903/j.efsa.2017.4910",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32625571/"
+          },
+          {
+            "title": "Monosodium Glutamate in the Diet Does Not Raise Brain Glutamate Concentrations or Disrupt Brain Functions",
+            "source": "Annals of Nutrition and Metabolism",
+            "year": 2018,
+            "doi": "10.1159/000494782",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30508818/"
+          }
+        ],
+        "description": "La Sopa de Miso es la espina dorsal de cualquier comida tradicional japonesa, combinando el poder probiótico de la pasta de soja con dashi aromático."
+      },
+      "category": [
+        "Sopa",
+        "Acompañamiento"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "5 minutos",
+      "cookTime": "10 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Caldo Dashi",
+        "Pasta de miso rojo o blanco",
+        "Tofu firme o sedoso",
+        "Alga Wakame deshidratada",
+        "Cebollín verde"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/miso_soup_classic.md"
+    },
+    {
+      "id": "japanese/nikujaga_home",
+      "title": "Nikujaga (Res con Patatas)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Nikujaga (Res con Patatas)",
+        "region": "Japón Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/701046/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Katei Riori (Casero)"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "35 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res en lonchas finas",
+          "Patatas cortadas en trozos",
+          "Cebollas en juliana",
+          "Guisantes",
+          "Dashi",
+          "Salsa de soja",
+          "Mirin",
+          "Azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce salado reconfortante",
+            "Umami suave"
+          ],
+          "texture": [
+            "Patatas tiernas impregnadas de caldo",
+            "Carne suave"
+          ],
+          "aroma": [
+            "Dashi casero",
+            "Cebolla caramelizada"
+          ],
+          "presentation": "Guiso casero cálido servido en tazón hondo con patatas redondeadas y finas tiras de res."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 20,
+            "fat_g": 16,
+            "carbs_g": 62
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Nikujaga (Res con Patatas) tradicional"
+          }
+        ],
+        "description": "Nikujaga literalmente significa 'carne y patatas', siendo el guiso casero por excelencia que evoca la calidez del hogar en la cocina japonesa."
+      },
+      "category": [
+        "Plato fuerte",
+        "Katei Riori (Casero)"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "35 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res en lonchas finas",
+        "Patatas cortadas en trozos",
+        "Cebollas en juliana",
+        "Guisantes",
+        "Dashi",
+        "Salsa de soja",
+        "Mirin",
+        "Azúcar"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/nikujaga_home.md"
+    },
+    {
+      "id": "japanese/okonomiyaki_osaka",
+      "title": "Okonomiyaki Estilo Osaka",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Okonomiyaki Estilo Osaka",
+        "region": "Osaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/703112/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Street Food"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Col rizada picada",
+          "Harina de trigo",
+          "Dashi",
+          "Huevos",
+          "Panceta de cerdo fina",
+          "Salsa Okonomiyaki",
+          "Mayonesa Kewpie",
+          "Katsuobushi"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami concentrado",
+            "Dulce picante de salsa okonomi",
+            "Salado de katsuobushi"
+          ],
+          "texture": [
+            "Exterior crujiente",
+            "Interior cremoso y tierno"
+          ],
+          "aroma": [
+            "Col salteada",
+            "Katsuobushi danzante"
+          ],
+          "presentation": "Tortilla gruesa de col y panceta decorada con mayonesa japonesa, salsa dulce y virutas de bonito ahumado."
+        },
+        "nutrition": {
+          "calories": 540,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 26,
+            "carbs_g": 54
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Okonomiyaki Estilo Osaka tradicional"
+          }
+        ],
+        "description": "El Okonomiyaki de Osaka es una sabrosa tortilla salada de col y harina cocinada a la plancha teppan con lonchas de cerdo y salsas umami."
+      },
+      "category": [
+        "Plato fuerte",
+        "Street Food"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Col rizada picada",
+        "Harina de trigo",
+        "Dashi",
+        "Huevos",
+        "Panceta de cerdo fina",
+        "Salsa Okonomiyaki",
+        "Mayonesa Kewpie",
+        "Katsuobushi"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/okonomiyaki_osaka.md"
+    },
+    {
+      "id": "japanese/ramen_shoyu",
+      "title": "Shoyu Ramen Tradicional",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Shoyu Ramen Tradicional",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E8%8D%80%E6%B2%B9%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopa de fideos"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "1 hora",
+        "cook_time": "4 horas",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos ramen alcalinos",
+          "Caldo chashu/dashi",
+          "Salsa de soja tare",
+          "Carne Chashu de cerdo",
+          "Huevo ajitama",
+          "Nori",
+          "Negi (cebollín)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami profundo (Salsa de soja)",
+            "Salado",
+            "Dashi rico"
+          ],
+          "texture": [
+            "Fideos al dente (katame)",
+            "Chashu meloso"
+          ],
+          "aroma": [
+            "Caldo de cerdo y pollo",
+            "Shoyu tare",
+            "Aceite de ajo molido"
+          ],
+          "presentation": "Tazón profundo de caldo oscuro brillante con fideos ondulados, chashu, ajitsuke tamago y nori."
+        },
+        "nutrition": {
+          "calories": 680,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 26,
+            "carbs_g": 78
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Shoyu Ramen Tradicional tradicional"
+          }
+        ],
+        "studies": [
+          {
+            "title": "The Importance of the Presence of a 5'-Ribonucleotide and the Contribution of the T1R1 + T1R3 Heterodimer in Taste Detection of l-Glutamate",
+            "source": "The Journal of Neuroscience",
+            "year": 2014,
+            "doi": "10.1523/JNEUROSCI.0417-14.2014",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25253867/"
+          },
+          {
+            "title": "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor",
+            "source": "Biomed Research International",
+            "year": 2015,
+            "doi": "10.1155/2015/189402",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26247011/"
+          }
+        ],
+        "description": "El Shoyu Ramen es el estilo clásico de Tokio con caldo claro a base de pollo, cerdo y dashi, sazonado con tare de salsa de soja fermentada."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopa de fideos"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "1 hora",
+      "cookTime": "4 horas",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos ramen alcalinos",
+        "Caldo chashu/dashi",
+        "Salsa de soja tare",
+        "Carne Chashu de cerdo",
+        "Huevo ajitama",
+        "Nori",
+        "Negi (cebollín)"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/ramen_shoyu.md"
+    },
+    {
+      "id": "japanese/saba_no_miso_ni",
+      "title": "Saba no Miso-ni",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Saba no Miso-ni",
+        "region": "Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%B0%E3%81%AE%E3%81%BF%E3%81%9D%E7%85%AE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Plato Principal",
+          "Washoku"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "Washoku",
+          "Miso",
+          "Fish",
+          "Saba"
+        ],
+        "main_ingredients": [
+          "Lomos de caballa fresca (saba) con piel",
+          "Jengibre fresco cortado en rodajas y juliana fina",
+          "Miso blanco salado (shinshu miso)",
+          "Caldo dashi de kombu",
+          "Sake de cocina, mirin y azúcar",
+          "Cebolleta negi"
+        ],
+        "sensory": {
+          "flavor": [
+            "Profundo contraste graso marino con la dulzura salada del miso y toque picante de jengibre"
+          ],
+          "texture": [
+            "Carne de caballa firme pero jugosa bañada en salsa espesa sedosa"
+          ],
+          "aroma": [
+            "Salsa dulce de miso caliente aromatizada con jengibre picante fresco"
+          ],
+          "presentation": "Lomo dorado de caballa napado con una reducción densa de miso pardo brillante, coronado con una pila elegante de agujas finas de jengibre (hari-shoga)."
+        },
+        "nutrition": {
+          "calories": 390,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 24,
+            "carbs_g": 14
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600",
+            "description": "Saba no Miso-ni caballa simmered en salsa dulce de miso"
+          }
+        ],
+        "description": "El Saba no Miso-ni es un clásico hogareño indispensable de la gastronomía japonesa, donde filetes grasos de caballa se cocinan suavemente en una reducción espesa de miso, sake, mirin y abundante jengibre fresco."
+      },
+      "category": [
+        "Plato Principal",
+        "Washoku"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Lomos de caballa fresca (saba) con piel",
+        "Jengibre fresco cortado en rodajas y juliana fina",
+        "Miso blanco salado (shinshu miso)",
+        "Caldo dashi de kombu",
+        "Sake de cocina, mirin y azúcar",
+        "Cebolleta negi"
+      ],
+      "tags": [
+        "Japanese",
+        "Washoku",
+        "Miso",
+        "Fish",
+        "Saba"
+      ],
+      "filePath": "dishes/japanese/saba_no_miso_ni.md"
+    },
+    {
+      "id": "japanese/soba_zaru",
+      "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
+        "region": "Nagano",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/704112/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "8 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos Soba (80% trigo sarraceno)",
+          "Caldo Mentsuyu concentrado",
+          "Alga nori cortada fina",
+          "Wasabi",
+          "Cebolleta picada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Nuez terrosa del trigo sarraceno",
+            "Umami de tsuyu helado"
+          ],
+          "texture": [
+            "Fideos firmes y elásticos"
+          ],
+          "aroma": [
+            "Trigo sarraceno tostado",
+            "Wasabi fresco"
+          ],
+          "presentation": "Fideos soba fríos presentados sobre estera de bambú (zaru) con tazón lateral de mentsuyu."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 2,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Zaru Soba (Fideos de Trigo Sarraceno) tradicional"
+          }
+        ],
+        "description": "El Zaru Soba consiste en fideos de trigo sarraceno servidos helados sobre bambú, diseñados para remojarse en un sabroso dashi frío sazonado con wasabi."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "8 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Fideos Soba (80% trigo sarraceno)",
+        "Caldo Mentsuyu concentrado",
+        "Alga nori cortada fina",
+        "Wasabi",
+        "Cebolleta picada"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/soba_zaru.md"
+    },
+    {
+      "id": "japanese/sukiyaki_beef",
+      "title": "Sukiyaki Nabemono",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sukiyaki Nabemono",
+        "region": "Kanto",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/702914/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Nabemono / Cazuela"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res para sukiyaki (wagyu)",
+          "Tofu frito",
+          "Fideos Shirataki",
+          "Col china",
+          "Setas enoki y shiitake",
+          "Warishita tare",
+          "Huevos frescos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce intenso (Warishita)",
+            "Umami rico",
+            "Cremoso de huevo crudo"
+          ],
+          "texture": [
+            "Carne de res marmolada suave",
+            "Vegetales crujientes"
+          ],
+          "aroma": [
+            "Warishita (soja + azúcar + mirin)",
+            "Carne marmolada"
+          ],
+          "presentation": "Cazuela de hierro en la mesa cocinando carne y verduras, que se mojan en tazón de huevo batido crudo."
+        },
+        "nutrition": {
+          "calories": 710,
+          "macros": {
+            "protein_g": 40,
+            "fat_g": 38,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sukiyaki Nabemono tradicional"
+          }
+        ],
+        "description": "El Sukiyaki es un plato de cazuela (nabemono) donde finas láminas de res de alta calidad se cocinan en la mesa en una salsa dulce y densa de soja y azúcar."
+      },
+      "category": [
+        "Plato fuerte",
+        "Nabemono / Cazuela"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res para sukiyaki (wagyu)",
+        "Tofu frito",
+        "Fideos Shirataki",
+        "Col china",
+        "Setas enoki y shiitake",
+        "Warishita tare",
+        "Huevos frescos"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/sukiyaki_beef.md"
+    },
+    {
+      "id": "japanese/sushi_nigiri_salmon",
+      "title": "Nigiri Sushi de Salmón",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Nigiri Sushi de Salmón",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E6%8F%A1%E3%82%8A%E5%BF%BF%E3%81%97",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "20 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz de grano corto para sushi",
+          "Vinagre de arroz",
+          "Salmón fresco de calidad sushi",
+          "Wasabi fresco",
+          "Salsa de soja shoyu"
+        ],
+        "sensory": {
+          "flavor": [
+            "Vinagre de arroz equilibrado",
+            "Grasa limpia de salmón",
+            "Umami de wasabi"
+          ],
+          "texture": [
+            "Arroz tibio y suelto",
+            "Pescado suave que se derrite"
+          ],
+          "aroma": [
+            "Arroz vinagrado",
+            "Salmón fresco grado sushi"
+          ],
+          "presentation": "Bocado individual de arroz moldeado a mano coronado con una lámina de salmón fresco brillante."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 20,
+            "fat_g": 10,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Nigiri Sushi de Salmón tradicional"
+          }
+        ],
+        "description": "El Nigiri Sushi es la máxima expresión de simplicidad japonesa: una bola de arroz sazonada con vinagre y moldeada a mano coronada con pescado fresco."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "20 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Arroz de grano corto para sushi",
+        "Vinagre de arroz",
+        "Salmón fresco de calidad sushi",
+        "Wasabi fresco",
+        "Salsa de soja shoyu"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/sushi_nigiri_salmon.md"
+    },
+    {
+      "id": "japanese/takoyaki_osaka",
+      "title": "Takoyaki de Osaka",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Takoyaki de Osaka",
+        "region": "Osaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/705112/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Street Food",
+          "Snack"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pulpo cocido en dados",
+          "Harina",
+          "Dashi",
+          "Tenkasu (copos fritos)",
+          "Jengibre encurtido red",
+          "Salsa Takoyaki",
+          "Ao-nori"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami de pulpo",
+            "Salado rico",
+            "Notas de gengibre tenkasu"
+          ],
+          "texture": [
+            "Exterior dorado y crocante",
+            "Interior líquido y muy cremoso"
+          ],
+          "aroma": [
+            "Dashi en masa",
+            "Pulpo cocido"
+          ],
+          "presentation": "Bolas doradas calientes coronadas con salsa okonomi, mayonesa, ao-nori y bonito seco bailando."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 18,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Takoyaki de Osaka tradicional"
+          }
+        ],
+        "description": "Los Takoyaki son famosísimas bolitas de masa de dashi rellenadas con un trozo de pulpo jugoso y cocinadas en moldes de hierro semiesféricos."
+      },
+      "category": [
+        "Street Food",
+        "Snack"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pulpo cocido en dados",
+        "Harina",
+        "Dashi",
+        "Tenkasu (copos fritos)",
+        "Jengibre encurtido red",
+        "Salsa Takoyaki",
+        "Ao-nori"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/takoyaki_osaka.md"
+    },
+    {
+      "id": "japanese/tamagoyaki_omelet",
+      "title": "Tamagoyaki (Tortilla Dulce)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tamagoyaki (Tortilla Dulce)",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/701230/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Bento"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "10 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Huevos frescos",
+          "Caldo Dashi",
+          "Mirin",
+          "Salsa de soja clara",
+          "Azúcar",
+          "Pizca de sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce sutil",
+            "Umami de dashi",
+            "Salado delicado"
+          ],
+          "texture": [
+            "Capas finas enrolladas súper jugosas y esponjosa"
+          ],
+          "aroma": [
+            "Mirin y dashi en huevo",
+            "Mantequilla o aceite salteado"
+          ],
+          "presentation": "Bloque rectangular cortado en rodajas mostrando finísimas capas enrolladas amarillas."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 12,
+            "fat_g": 14,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tamagoyaki (Tortilla Dulce) tradicional"
+          }
+        ],
+        "description": "El Tamagoyaki es la famosa tortilla enrollada japonesa hecha en sartén rectangular (makiyakinabe), superponiendo finas capas de huevo batido con dashi."
+      },
+      "category": [
+        "Acompañamiento",
+        "Bento"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "10 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Huevos frescos",
+        "Caldo Dashi",
+        "Mirin",
+        "Salsa de soja clara",
+        "Azúcar",
+        "Pizca de sal"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/tamagoyaki_omelet.md"
+    },
+    {
+      "id": "japanese/tempura_moriawase",
+      "title": "Tempura Moriawase",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tempura Moriawase",
+        "region": "Kyoto",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/702115/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Fritura"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Langostinos grandes",
+          "Calabaza kabocha",
+          "Berenjena",
+          "Harina de trigo fría",
+          "Huevo helado",
+          "Agua con hielo",
+          "Caldo dashi"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulzor natural de verdura/marisco",
+            "Salado suave",
+            "Umami de dashi"
+          ],
+          "texture": [
+            "Rebozado extremadamente crujiente y liviano"
+          ],
+          "aroma": [
+            "Aceite de sésamo caliente",
+            "Salsa tentsuyu"
+          ],
+          "presentation": "Langostinos y vegetales fritos en rebozado pálido y crujiente servidos con sal de sésamo o tentsuyu."
+        },
+        "nutrition": {
+          "calories": 450,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 22,
+            "carbs_g": 44
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tempura Moriawase tradicional"
+          }
+        ],
+        "description": "Tempura Moriawase es un variado de mariscos y verduras fritos en un rebozado helado que crea una capa crujiente casi transparente y no grasosa."
+      },
+      "category": [
+        "Entrante",
+        "Fritura"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Langostinos grandes",
+        "Calabaza kabocha",
+        "Berenjena",
+        "Harina de trigo fría",
+        "Huevo helado",
+        "Agua con hielo",
+        "Caldo dashi"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/tempura_moriawase.md"
+    },
+    {
+      "id": "japanese/tonkatsu_pork",
+      "title": "Tonkatsu de Cerdo",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tonkatsu de Cerdo",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/701982/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Yoshoku"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Lomo o solomillo de cerdo",
+          "Panko japonés",
+          "Harina",
+          "Huevo",
+          "Col blanca rallada finísima",
+          "Salsa Tonkatsu",
+          "Mostaza Karashi"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami de cerdo jugoso",
+            "Dulce ácido de salsa tonkatsu"
+          ],
+          "texture": [
+            "Empanado hiper crujiente de panko",
+            "Carne tierna"
+          ],
+          "aroma": [
+            "Panko dorado",
+            "Salsa tonkatsu especiada"
+          ],
+          "presentation": "Chuleta gruesa de cerdo empanada y cortada en tiras, servida con col fina picada y mostaza karashi."
+        },
+        "nutrition": {
+          "calories": 620,
+          "macros": {
+            "protein_g": 36,
+            "fat_g": 32,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tonkatsu de Cerdo tradicional"
+          }
+        ],
+        "description": "El Tonkatsu es una chuleta gruesa de cerdo rebozada en copos de panko crujientes y frita a la perfección, servida con abundante col rallada."
+      },
+      "category": [
+        "Plato fuerte",
+        "Yoshoku"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Lomo o solomillo de cerdo",
+        "Panko japonés",
+        "Harina",
+        "Huevo",
+        "Col blanca rallada finísima",
+        "Salsa Tonkatsu",
+        "Mostaza Karashi"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/tonkatsu_pork.md"
+    },
+    {
+      "id": "japanese/udon_kitsune",
+      "title": "Kitsune Udon",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kitsune Udon",
+        "region": "Osaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/703810/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopa de fideos"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos Udon frescos",
+          "Caldo Dashi estilo Kansai",
+          "Aburaage (tofu frito dulce)",
+          "Salsa de soja clara",
+          "Mirin",
+          "Cebollín picado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce salado equilibrado",
+            "Dashi limpio de Kansai"
+          ],
+          "texture": [
+            "Fideos udon gruesos y muy masticables (koshi)",
+            "Tofu frito jugoso"
+          ],
+          "aroma": [
+            "Aburaage agridulce",
+            "Dashi de alga kombu"
+          ],
+          "presentation": "Cuenco de caldo claro con fideos de 5mm de grosor cubiertos por una gran lámina dorada de aburaage."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 15,
+            "fat_g": 8,
+            "carbs_g": 82
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Kitsune Udon tradicional"
+          }
+        ],
+        "description": "El Kitsune Udon destaca por sus reconfortantes fideos gruesos de trigo servidos en un caldo ligero con un bolsillo de tofu frito (aburaage) guisado dulce."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopa de fideos"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Fideos Udon frescos",
+        "Caldo Dashi estilo Kansai",
+        "Aburaage (tofu frito dulce)",
+        "Salsa de soja clara",
+        "Mirin",
+        "Cebollín picado"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/udon_kitsune.md"
+    },
+    {
+      "id": "japanese/unadon_unagi",
+      "title": "Unadon (Anguila sobre Arroz)",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Unadon (Anguila sobre Arroz)",
+        "region": "Hamamatsu",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E9%B0%BB%E9%87%8D",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Filetes de anguila (Unagi)",
+          "Salsa Kabayaki (Soja, Mirin, Sake, Azúcar)",
+          "Arroz para sushi",
+          "Pimienta japonesa Sansho"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami dulce intenso",
+            "Ahumado rico",
+            "Especiado sutil de sansho"
+          ],
+          "texture": [
+            "Carne de anguila tierna y mantecosa"
+          ],
+          "aroma": [
+            "Salsa kabayaki caramelizada",
+            "Pimienta sansho"
+          ],
+          "presentation": "Filete de anguila glaseado y dorado sobre lecho de arroz caliente en caja de laca juzyu."
+        },
+        "nutrition": {
+          "calories": 650,
+          "macros": {
+            "protein_g": 30,
+            "fat_g": 28,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Unadon (Anguila sobre Arroz) tradicional"
+          }
+        ],
+        "description": "El Unadon es un lujoso tazón de arroz coronado con anguila de agua dulce abierta, ensartada y asada con un rico glaseado carmelizado (Kabayaki)."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Filetes de anguila (Unagi)",
+        "Salsa Kabayaki (Soja, Mirin, Sake, Azúcar)",
+        "Arroz para sushi",
+        "Pimienta japonesa Sansho"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/unadon_unagi.md"
+    },
+    {
+      "id": "japanese/unagi_no_kabayaki",
+      "title": "Unagi no Kabayaki",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Unagi no Kabayaki",
+        "region": "Shizuoka (Hamamatsu)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E8%92%B2%E7%84%BC",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Plato Principal",
+          "Yakimono"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "25 minutos",
+        "cook_time": "20 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "Unagi",
+          "Kabayaki",
+          "Yakimono",
+          "Tare"
+        ],
+        "main_ingredients": [
+          "Anguila de agua dulce (unagi) abierta y limpia",
+          "Salsa tare especial (salsa de soja reducida con mirin, sake y huesos de anguila)",
+          "Pimienta sansho en polvo",
+          "Arroz blanco de grano corto al vapor"
+        ],
+        "sensory": {
+          "flavor": [
+            "Caramelización intensa dulce y salada",
+            "Umami graso ahumado y nota cítrica resinosa de sansho"
+          ],
+          "texture": [
+            "Carne de anguila tierna que se deshace con piel dorada crujiente"
+          ],
+          "aroma": [
+            "Humo de carbón binchotan con caramelización dulce de salsa tare"
+          ],
+          "presentation": "Lomo entero de anguila de tono caoba brillante glaseado repetidamente, colocado sobre un lecho de arroz caliente en una caja tradicional de laca (jubako)."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 31,
+            "fat_g": 28,
+            "carbs_g": 38
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600",
+            "description": "Unagi no Kabayaki anguila glaseada sobre arroz"
+          }
+        ],
+        "description": "El Unagi no Kabayaki consiste en filet de anguila de agua dulce al vapor y asado repetidamente sobre carbón de encina, bañado en una reducción dulce e intensa de salsa tare y servido con pimienta sansho."
+      },
+      "category": [
+        "Plato Principal",
+        "Yakimono"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "25 minutos",
+      "cookTime": "20 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Anguila de agua dulce (unagi) abierta y limpia",
+        "Salsa tare especial (salsa de soja reducida con mirin, sake y huesos de anguila)",
+        "Pimienta sansho en polvo",
+        "Arroz blanco de grano corto al vapor"
+      ],
+      "tags": [
+        "Japanese",
+        "Unagi",
+        "Kabayaki",
+        "Yakimono",
+        "Tare"
+      ],
+      "filePath": "dishes/japanese/unagi_no_kabayaki.md"
+    },
+    {
+      "id": "japanese/yakitori_tare",
+      "title": "Yakitori de Pollo en Tare",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Yakitori de Pollo en Tare",
+        "region": "Tokyo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://park.ajinomoto.co.jp/recipe/card/702410/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Izakaya",
+          "Parrilla"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Japanese",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Muslo de pollo troceado",
+          "Cebolleta japonesa (Negi)",
+          "Salsa de soja",
+          "Mirin",
+          "Sake",
+          "Azúcar",
+          "Brochetas de bambú"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami glaseado",
+            "Dulce salado",
+            "Ahumado de carbón sumi"
+          ],
+          "texture": [
+            "Carne de pollo jugosa",
+            "Piel crujiente caramelizada"
+          ],
+          "aroma": [
+            "Carbón Binchotan",
+            "Salsa Tare reducida"
+          ],
+          "presentation": "Brochetas de bambú doradas al carbón con glaseado brillante de tare y cebolleta intercalada."
+        },
+        "nutrition": {
+          "calories": 390,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 16,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Yakitori de Pollo en Tare tradicional"
+          }
+        ],
+        "description": "El Yakitori en Tare son brochetas de pollo ensartadas con cebolleta, asadas a fuego vivo de carbón y sumergidas en un glaseado umami concentrado."
+      },
+      "category": [
+        "Izakaya",
+        "Parrilla"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Muslo de pollo troceado",
+        "Cebolleta japonesa (Negi)",
+        "Salsa de soja",
+        "Mirin",
+        "Sake",
+        "Azúcar",
+        "Brochetas de bambú"
+      ],
+      "tags": [
+        "Japanese",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/japanese/yakitori_tare.md"
+    },
+    {
+      "id": "japanese/yudofu_kyoto",
+      "title": "Yudofu Kyoto",
+      "language": "spanish",
+      "country": "japan",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Yudofu Kyoto",
+        "region": "Kyoto",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://ja.wikipedia.org/wiki/%E6%B9%AF%E2%80%93%E8%B1%86%E8%85%90",
+          "date_retrieved": "2026-09-03",
+          "notes": "Verified Japanese culinary research sources"
+        },
+        "categories": [
+          "Sopa / Hotpot",
+          "Shojin Ryori"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "10 minutos",
+        "servings": 2,
+        "tags": [
+          "Japanese",
+          "Kyoto",
+          "Tofu",
+          "Vegetarian",
+          "Dashi"
+        ],
+        "main_ingredients": [
+          "Tofu de seda (kinugoshi) de alta calidad",
+          "Alga kombu de Hokkaido (Rishiri kombu)",
+          "Agua pura de manantial",
+          "Ponzu (salsa de soja con cítrico yuzu/sudachi)",
+          "Cebolleta fina picada",
+          "Gomasio o jengibre rallado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Pureza dulce de la soja con umami sutil de kombu",
+            "Acidez fresca y salada de ponzu"
+          ],
+          "texture": [
+            "Tofu sedoso tembloroso y ultrasuave"
+          ],
+          "aroma": [
+            "Fragancia suave de mar mineral de alga kombu caliente"
+          ],
+          "presentation": "Bloques grandes de tofu blanco flotando suavemente en una olla donabe transparente de agua con un trozo rectangular de alga kombu en el fondo."
+        },
+        "nutrition": {
+          "calories": 180,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 10,
+            "carbs_g": 6
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Yudofu estilo Kyoto en olla de barro"
+          }
+        ],
+        "studies": [
+          {
+            "title": "Occurrence and role of umami molecules in foods",
+            "source": "International Journal of Food Sciences and Nutrition",
+            "year": 2012,
+            "doi": "10.3109/09637486.2012.676028",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22475013/"
+          },
+          {
+            "title": "Umami the Fifth Basic Taste: History of Studies on Receptor Mechanisms and Role as a Food Flavor",
+            "source": "Biomed Research International",
+            "year": 2015,
+            "doi": "10.1155/2015/189402",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26247011/"
+          }
+        ],
+        "description": "El Yudofu es una especialidad minimalista Zen originaria de los templos de Kyoto, que consiste en bloques de tofu artesanal de seda calentados en agua infusada con alga kombu de primera calidad y servidos con salsa ponzu fresca."
+      },
+      "category": [
+        "Sopa / Hotpot",
+        "Shojin Ryori"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "10 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Tofu de seda (kinugoshi) de alta calidad",
+        "Alga kombu de Hokkaido (Rishiri kombu)",
+        "Agua pura de manantial",
+        "Ponzu (salsa de soja con cítrico yuzu/sudachi)",
+        "Cebolleta fina picada",
+        "Gomasio o jengibre rallado"
+      ],
+      "tags": [
+        "Japanese",
+        "Kyoto",
+        "Tofu",
+        "Vegetarian",
+        "Dashi"
+      ],
+      "filePath": "dishes/japanese/yudofu_kyoto.md"
+    }
+  ],
+  "count": 35
+}

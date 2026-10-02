@@ -1,0 +1,1811 @@
+{
+  "recipes": [
+    {
+      "id": "spanish/bacalao_al_pil_pil",
+      "title": "Bacalao al Pil-Pil",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bacalao al Pil-Pil",
+        "region": "País Vasco",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Bacalao desalado",
+          "Aceite de oliva virgen extra",
+          "Ajo",
+          "Guindilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Bacalao al Pil-Pil"
+          ],
+          "presentation": "Bacalao al Pil-Pil presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Bacalao al Pil-Pil tradicional"
+          }
+        ],
+        "description": "Bacalao al Pil-Pil es uno de los platos más emblemáticos de la gastronomía de País Vasco, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Bacalao desalado",
+        "Aceite de oliva virgen extra",
+        "Ajo",
+        "Guindilla"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/bacalao_al_pil_pil.md"
+    },
+    {
+      "id": "spanish/calamares_en_su_tinta",
+      "title": "Calamares en su Tinta",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Squid in Ink",
+            "Calamari in Ink"
+          ]
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "cook_time": "30 minutos",
+        "description": "Calamares en su Tinta es uno de los platos más emblemáticos de la gastronomía de País Vasco, conocido por su equilibrio de sabores e ingredientes de alta calidad.",
+        "difficulty": "★★☆☆☆",
+        "images": [
+          {
+            "description": "Calamares en su Tinta tradicional",
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Calamares frescos",
+          "Tinta de calamar",
+          "Cebolla",
+          "Vino blanco",
+          "Tomate"
+        ],
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "carbs_g": 45,
+            "fat_g": 22,
+            "protein_g": 28
+          }
+        },
+        "prep_time": "20 minutos",
+        "region": "País Vasco",
+        "sensory": {
+          "aroma": [
+            "Aroma característico de Calamares en su Tinta"
+          ],
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "presentation": "Calamares en su Tinta presentado de forma vistosa tradicional.",
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ]
+        },
+        "servings": 4,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
+        },
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "title": "Calamares en su Tinta"
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Calamares frescos",
+        "Tinta de calamar",
+        "Cebolla",
+        "Vino blanco",
+        "Tomate"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/calamares_en_su_tinta.md"
+    },
+    {
+      "id": "spanish/churros_con_chocolate",
+      "title": "Churros con Chocolate",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Churros con Chocolate",
+        "region": "Madrid",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Agua",
+          "Sal",
+          "Aceite para freír",
+          "Chocolate espeso"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Churros con Chocolate"
+          ],
+          "presentation": "Churros con Chocolate presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Churros con Chocolate tradicional"
+          }
+        ],
+        "description": "Churros con Chocolate es uno de los platos más emblemáticos de la gastronomía de Madrid, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Agua",
+        "Sal",
+        "Aceite para freír",
+        "Chocolate espeso"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/churros_con_chocolate.md"
+    },
+    {
+      "id": "spanish/cocido_madrileno",
+      "title": "Cocido Madrileño",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cocido Madrileño",
+        "region": "Madrid",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Garbanzos",
+          "Morcillo de res",
+          "Tocino",
+          "Chorizo",
+          "Morcilla",
+          "Repollo",
+          "Patata"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Cocido Madrileño"
+          ],
+          "presentation": "Cocido Madrileño presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cocido Madrileño tradicional"
+          }
+        ],
+        "description": "Cocido Madrileño es uno de los platos más emblemáticos de la gastronomía de Madrid, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Garbanzos",
+        "Morcillo de res",
+        "Tocino",
+        "Chorizo",
+        "Morcilla",
+        "Repollo",
+        "Patata"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/cocido_madrileno.md"
+    },
+    {
+      "id": "spanish/crema_catalana",
+      "title": "Crema Catalana",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Crema Catalana",
+        "region": "Cataluña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Leche",
+          "Yemas de huevo",
+          "Azúcar",
+          "Almidón de maíz",
+          "Canela",
+          "Piel de limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Crema Catalana"
+          ],
+          "presentation": "Crema Catalana presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Crema Catalana tradicional"
+          }
+        ],
+        "description": "Crema Catalana es uno de los platos más emblemáticos de la gastronomía de Cataluña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Leche",
+        "Yemas de huevo",
+        "Azúcar",
+        "Almidón de maíz",
+        "Canela",
+        "Piel de limón"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/crema_catalana.md"
+    },
+    {
+      "id": "spanish/croquetas_de_jamon",
+      "title": "Croquetas de Jamón Ibérico",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Croquetas de Jamón Ibérico",
+        "region": "España Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Jamón ibérico picado",
+          "Salsa bechamel",
+          "Harina",
+          "Leche",
+          "Pan rallado",
+          "Huevo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Croquetas de Jamón Ibérico"
+          ],
+          "presentation": "Croquetas de Jamón Ibérico presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Croquetas de Jamón Ibérico tradicional"
+          }
+        ],
+        "description": "Croquetas de Jamón Ibérico es uno de los platos más emblemáticos de la gastronomía de España Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Jamón ibérico picado",
+        "Salsa bechamel",
+        "Harina",
+        "Leche",
+        "Pan rallado",
+        "Huevo"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/croquetas_de_jamon.md"
+    },
+    {
+      "id": "spanish/empanada_gallega",
+      "title": "Empanada Gallega de Atún",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Empanada Gallega de Atún",
+        "region": "Galicia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de empanada",
+          "Atún o bonito",
+          "Pimentón",
+          "Cebolla",
+          "Pimiento rojo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Empanada Gallega de Atún"
+          ],
+          "presentation": "Empanada Gallega de Atún presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Empanada Gallega de Atún tradicional"
+          }
+        ],
+        "description": "Empanada Gallega de Atún es uno de los platos más emblemáticos de la gastronomía de Galicia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de empanada",
+        "Atún o bonito",
+        "Pimentón",
+        "Cebolla",
+        "Pimiento rojo"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/empanada_gallega.md"
+    },
+    {
+      "id": "spanish/fabada_asturiana",
+      "title": "Fabada Asturiana",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Fabada Asturiana",
+        "region": "Asturias",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fabes asturianas (alubias)",
+          "Chorizo asturiano",
+          "Morcilla asturiana",
+          "Tocino"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Fabada Asturiana"
+          ],
+          "presentation": "Fabada Asturiana presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Fabada Asturiana tradicional"
+          }
+        ],
+        "description": "Fabada Asturiana es uno de los platos más emblemáticos de la gastronomía de Asturias, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fabes asturianas (alubias)",
+        "Chorizo asturiano",
+        "Morcilla asturiana",
+        "Tocino"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/fabada_asturiana.md"
+    },
+    {
+      "id": "spanish/gambas_al_ajillo",
+      "title": "Gambas al Ajillo",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gambas al Ajillo",
+        "region": "Andalucía",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Gambas peladas",
+          "Dientes de ajo",
+          "Guindilla",
+          "Aceite de oliva virgen extra",
+          "Perejil"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gambas al Ajillo"
+          ],
+          "presentation": "Gambas al Ajillo presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gambas al Ajillo tradicional"
+          }
+        ],
+        "description": "Gambas al Ajillo es uno de los platos más emblemáticos de la gastronomía de Andalucía, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Gambas peladas",
+        "Dientes de ajo",
+        "Guindilla",
+        "Aceite de oliva virgen extra",
+        "Perejil"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/gambas_al_ajillo.md"
+    },
+    {
+      "id": "spanish/gazpacho_andaluz",
+      "title": "Gazpacho Andaluz",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gazpacho Andaluz",
+        "region": "Andalucía",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tomate maduro",
+          "Pimiento verde",
+          "Pepino",
+          "Ajo",
+          "Aceite de oliva",
+          "Vinagre de Jerez"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gazpacho Andaluz"
+          ],
+          "presentation": "Gazpacho Andaluz presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gazpacho Andaluz tradicional"
+          }
+        ],
+        "description": "Gazpacho Andaluz es uno de los platos más emblemáticos de la gastronomía de Andalucía, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tomate maduro",
+        "Pimiento verde",
+        "Pepino",
+        "Ajo",
+        "Aceite de oliva",
+        "Vinagre de Jerez"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/gazpacho_andaluz.md"
+    },
+    {
+      "id": "spanish/jamon_iberico_tabla",
+      "title": "Jamón Ibérico de Bellota",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Jamón Ibérico de Bellota",
+        "region": "Extremadura / Jabugo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Jamón ibérico de bellota cortado a cuchillo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Jamón Ibérico de Bellota"
+          ],
+          "presentation": "Jamón Ibérico de Bellota presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Jamón Ibérico de Bellota tradicional"
+          }
+        ],
+        "description": "Jamón Ibérico de Bellota es uno de los platos más emblemáticos de la gastronomía de Extremadura / Jabugo, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Jamón ibérico de bellota cortado a cuchillo"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/jamon_iberico_tabla.md"
+    },
+    {
+      "id": "spanish/leche_frita",
+      "title": "Leche Frita Tradicional",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Leche Frita Tradicional",
+        "region": "Castilla y León",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Leche infusionada con canela y limón",
+          "Harina de maíz",
+          "Azúcar",
+          "Huevo",
+          "Canela en polvo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Leche Frita Tradicional"
+          ],
+          "presentation": "Leche Frita Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Leche Frita Tradicional tradicional"
+          }
+        ],
+        "description": "Leche Frita Tradicional es uno de los platos más emblemáticos de la gastronomía de Castilla y León, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Leche infusionada con canela y limón",
+        "Harina de maíz",
+        "Azúcar",
+        "Huevo",
+        "Canela en polvo"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/leche_frita.md"
+    },
+    {
+      "id": "spanish/paella_valenciana",
+      "title": "Paella Valenciana Tradicional",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Paella Valenciana Tradicional",
+        "region": "Comunidad Valenciana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz bomba",
+          "Pollo",
+          "Conejo",
+          "Bajoqueta (judía verde)",
+          "Garrofón",
+          "Azafrán"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Paella Valenciana Tradicional"
+          ],
+          "presentation": "Paella Valenciana Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Paella Valenciana Tradicional tradicional"
+          }
+        ],
+        "description": "Paella Valenciana Tradicional es uno de los platos más emblemáticos de la gastronomía de Comunidad Valenciana, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz bomba",
+        "Pollo",
+        "Conejo",
+        "Bajoqueta (judía verde)",
+        "Garrofón",
+        "Azafrán"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/paella_valenciana.md"
+    },
+    {
+      "id": "spanish/patatas_bravas",
+      "title": "Patatas Bravas",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Patatas Bravas",
+        "region": "Madrid",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Patatas en dados",
+          "Salsa brava picante (pimentón y caldo)",
+          "Alioli (opcional)",
+          "Aceite"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Patatas Bravas"
+          ],
+          "presentation": "Patatas Bravas presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Patatas Bravas tradicional"
+          }
+        ],
+        "description": "Patatas Bravas es uno de los platos más emblemáticos de la gastronomía de Madrid, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas en dados",
+        "Salsa brava picante (pimentón y caldo)",
+        "Alioli (opcional)",
+        "Aceite"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/patatas_bravas.md"
+    },
+    {
+      "id": "spanish/pimientos_del_padron",
+      "title": "Pimientos del Padrón",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pimientos del Padrón",
+        "region": "Galicia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pimientos del Padrón",
+          "Aceite de oliva",
+          "Sal escamada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pimientos del Padrón"
+          ],
+          "presentation": "Pimientos del Padrón presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pimientos del Padrón tradicional"
+          }
+        ],
+        "description": "Pimientos del Padrón es uno de los platos más emblemáticos de la gastronomía de Galicia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pimientos del Padrón",
+        "Aceite de oliva",
+        "Sal escamada"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/pimientos_del_padron.md"
+    },
+    {
+      "id": "spanish/pulpo_a_la_gallega",
+      "title": "Pulpo a la Gallega (Polbo á Feira)",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pulpo a la Gallega (Polbo á Feira)",
+        "region": "Galicia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pulpo cocido",
+          "Patatas cocidas (cachelos)",
+          "Pimentón dulce y picante",
+          "Aceite de oliva",
+          "Sal gorda"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pulpo a la Gallega (Polbo á Feira)"
+          ],
+          "presentation": "Pulpo a la Gallega (Polbo á Feira) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pulpo a la Gallega (Polbo á Feira) tradicional"
+          }
+        ],
+        "description": "Pulpo a la Gallega (Polbo á Feira) es uno de los platos más emblemáticos de la gastronomía de Galicia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pulpo cocido",
+        "Patatas cocidas (cachelos)",
+        "Pimentón dulce y picante",
+        "Aceite de oliva",
+        "Sal gorda"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/pulpo_a_la_gallega.md"
+    },
+    {
+      "id": "spanish/rabo_de_toro",
+      "title": "Rabo de Toro Estofado",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rabo de Toro Estofado",
+        "region": "Andalucía",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Rabo de toro",
+          "Vino tinto",
+          "Zanahoria",
+          "Cebolla",
+          "Puerro",
+          "Ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Rabo de Toro Estofado"
+          ],
+          "presentation": "Rabo de Toro Estofado presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Rabo de Toro Estofado tradicional"
+          }
+        ],
+        "description": "Rabo de Toro Estofado es uno de los platos más emblemáticos de la gastronomía de Andalucía, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Rabo de toro",
+        "Vino tinto",
+        "Zanahoria",
+        "Cebolla",
+        "Puerro",
+        "Ajo"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/rabo_de_toro.md"
+    },
+    {
+      "id": "spanish/salmorejo_cordobes",
+      "title": "Salmorejo Cordobés",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Salmorejo Cordobés",
+        "region": "Córdoba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tomate maduro",
+          "Pan de telera",
+          "Aceite de oliva virgen extra",
+          "Ajo",
+          "Huevos cocidos",
+          "Jamón ibérico"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Salmorejo Cordobés"
+          ],
+          "presentation": "Salmorejo Cordobés presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Salmorejo Cordobés tradicional"
+          }
+        ],
+        "description": "Salmorejo Cordobés es uno de los platos más emblemáticos de la gastronomía de Córdoba, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tomate maduro",
+        "Pan de telera",
+        "Aceite de oliva virgen extra",
+        "Ajo",
+        "Huevos cocidos",
+        "Jamón ibérico"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/salmorejo_cordobes.md"
+    },
+    {
+      "id": "spanish/tarta_de_santiago",
+      "title": "Tarta de Santiago",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tarta de Santiago",
+        "region": "Galicia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Almendra molida",
+          "Azúcar",
+          "Huevos",
+          "Ralladura de limón",
+          "Canela",
+          "Azúcar glas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tarta de Santiago"
+          ],
+          "presentation": "Tarta de Santiago presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tarta de Santiago tradicional"
+          }
+        ],
+        "description": "Tarta de Santiago es uno de los platos más emblemáticos de la gastronomía de Galicia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Almendra molida",
+        "Azúcar",
+        "Huevos",
+        "Ralladura de limón",
+        "Canela",
+        "Azúcar glas"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/tarta_de_santiago.md"
+    },
+    {
+      "id": "spanish/tortilla_de_patatas",
+      "title": "Tortilla de Patatas Española",
+      "language": "spanish",
+      "country": "spain",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tortilla de Patatas Española",
+        "region": "España Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Spanish",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Patatas",
+          "Huevos",
+          "Cebolla (opcional)",
+          "Aceite de oliva",
+          "Sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tortilla de Patatas Española"
+          ],
+          "presentation": "Tortilla de Patatas Española presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tortilla de Patatas Española tradicional"
+          }
+        ],
+        "description": "Tortilla de Patatas Española es uno de los platos más emblemáticos de la gastronomía de España Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas",
+        "Huevos",
+        "Cebolla (opcional)",
+        "Aceite de oliva",
+        "Sal"
+      ],
+      "tags": [
+        "Spanish",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/spanish/tortilla_de_patatas.md"
+    }
+  ],
+  "count": 20
+}

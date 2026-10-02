@@ -1,0 +1,1055 @@
+{
+  "recipes": [
+    {
+      "id": "argentinian/alfajores_de_maicena",
+      "title": "Alfajores de Maicena",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Alfajores de Maicena",
+        "region": "Buenos Aires / Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "12 minutos",
+        "servings": 12,
+        "tags": [
+          "Argentina",
+          "Alfajor",
+          "Maicena",
+          "Dulce de Leche",
+          "Coco",
+          "Postre"
+        ],
+        "main_ingredients": [
+          "Fécula de maíz (maicena)",
+          "Harina de trigo",
+          "Mantequilla",
+          "Yemas de huevo",
+          "Dulce de leche repostero",
+          "Coco rallado",
+          "Ralladura de limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Muy dulce",
+            "Lácteo intenso",
+            "Vainilla sutil"
+          ],
+          "texture": [
+            "Extremadamente quebradizo",
+            "Suave en boca",
+            "Pastosa"
+          ],
+          "aroma": [
+            "Dulce de leche",
+            "Mantequilla horneada",
+            "Coco rallado",
+            "Limón sutil"
+          ],
+          "presentation": "Se sirven fríos, espolvoreados con azúcar impalpable fina en su cara superior y acomodados de forma prolija en platos de postre o bandejas de té."
+        },
+        "nutrition": {
+          "calories": 320,
+          "macros": {
+            "protein_g": 4,
+            "fat_g": 14,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Alfajores de maicena argentinos espolvoreados con coco rallado"
+          }
+        ],
+        "description": "El Alfajor de Maicena es una de las delicias de repostería más queridas y populares de la Argentina. Consiste en dos tapas extremadamente tiernas y quebradizas hechas con una mezcla de fécula de maíz y mantequilla, unidas por un abundante relleno de dulce de leche repostero y decoradas en su borde circular con coco rallado fino."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "12 minutos",
+      "servings": 12,
+      "mainIngredients": [
+        "Fécula de maíz (maicena)",
+        "Harina de trigo",
+        "Mantequilla",
+        "Yemas de huevo",
+        "Dulce de leche repostero",
+        "Coco rallado",
+        "Ralladura de limón"
+      ],
+      "tags": [
+        "Argentina",
+        "Alfajor",
+        "Maicena",
+        "Dulce de Leche",
+        "Coco",
+        "Postre"
+      ],
+      "filePath": "dishes/argentinian/alfajores_de_maicena.md"
+    },
+    {
+      "id": "argentinian/asado_criollo",
+      "title": "Asado Criollo Argentino",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Asado Criollo Argentino",
+        "region": "La Pampa / Pampeana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Parrilla",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "2 horas y 30 minutos",
+        "servings": 6,
+        "tags": [
+          "Argentina",
+          "Asado",
+          "Parrilla",
+          "Carne",
+          "Chimichurri",
+          "Tradición"
+        ],
+        "main_ingredients": [
+          "Costillar de vacuno (tira de asado)",
+          "Vacío de vacuno",
+          "Chorizos criollos",
+          "Morcillas",
+          "Sal gruesa",
+          "Carbón vegetal o leña de quebracho"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ahumado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Suave interior",
+            "Masticable"
+          ],
+          "aroma": [
+            "Carne asada",
+            "Madera quemada",
+            "Ahumado"
+          ],
+          "presentation": "Se sirve caliente, directo de la parrilla sobre una tabla de madera gruesa, acompañado de salsa chimichurri y ensalada mixta de lechuga, tomate y cebolla."
+        },
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "protein_g": 52,
+            "fat_g": 64,
+            "carbs_g": 0
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Asado argentino criollo cocinado lentamente a las brasas"
+          }
+        ],
+        "description": "El Asado Criollo es la ceremonia culinaria y social por excelencia de la Argentina. Consiste en cortes seleccionados de carne de vacuno, achuras y embutidos cocinados lentamente a fuego indirecto sobre las brasas de leña o carbón vegetal, sazonados únicamente con sal gruesa."
+      },
+      "category": [
+        "Plato fuerte",
+        "Parrilla",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "2 horas y 30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Costillar de vacuno (tira de asado)",
+        "Vacío de vacuno",
+        "Chorizos criollos",
+        "Morcillas",
+        "Sal gruesa",
+        "Carbón vegetal o leña de quebracho"
+      ],
+      "tags": [
+        "Argentina",
+        "Asado",
+        "Parrilla",
+        "Carne",
+        "Chimichurri",
+        "Tradición"
+      ],
+      "filePath": "dishes/argentinian/asado_criollo.md"
+    },
+    {
+      "id": "argentinian/carbonada_criolla",
+      "title": "Carbonada Criolla",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Carbonada Criolla",
+        "region": "Pampeana / Noroeste",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "1 hora y 10 minutos",
+        "servings": 6,
+        "tags": [
+          "Argentina",
+          "Guiso",
+          "Zapallo",
+          "Carne",
+          "Duraznos",
+          "Invierno",
+          "Presentación"
+        ],
+        "main_ingredients": [
+          "Un zapallo criollo redondo entero (tipo plomo u hokkaido)",
+          "Carne de vacuno (lomo o nalga)",
+          "Zapallo amarillo en cubos",
+          "Papas",
+          "Choclo en rodajas",
+          "Duraznos deshidratados (orejones)",
+          "Cebolla",
+          "Vino tinto"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Dulce natural",
+            "Umami",
+            "Especiado sutil"
+          ],
+          "texture": [
+            "Espeso",
+            "Suave",
+            "Troceado tierno"
+          ],
+          "aroma": [
+            "Carne de vacuno sofrita",
+            "Zapallo horneado",
+            "Frutas dulces"
+          ],
+          "presentation": "Se sirve de manera espectacular dentro de un zapallo criollo entero previamente horneado, abriendo la tapa del zapallo en la mesa para servir el guiso humeante."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 14,
+            "carbs_g": 58
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Carbonada criolla argentina servida dentro de un zapallo entero horneado"
+          }
+        ],
+        "description": "La Carbonada Criolla es un guiso tradicional argentino, sabroso y sumamente pintoresco. Combina carne de vacuno picada con papas, zapallo amarillo, granos de maíz y trozos de orejones de durazno dulce, cocinado lentamente y servido de forma tradicional dentro de la corteza de un zapallo criollo grande previamente horneado."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "1 hora y 10 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Un zapallo criollo redondo entero (tipo plomo u hokkaido)",
+        "Carne de vacuno (lomo o nalga)",
+        "Zapallo amarillo en cubos",
+        "Papas",
+        "Choclo en rodajas",
+        "Duraznos deshidratados (orejones)",
+        "Cebolla",
+        "Vino tinto"
+      ],
+      "tags": [
+        "Argentina",
+        "Guiso",
+        "Zapallo",
+        "Carne",
+        "Duraznos",
+        "Invierno",
+        "Presentación"
+      ],
+      "filePath": "dishes/argentinian/carbonada_criolla.md"
+    },
+    {
+      "id": "argentinian/choripan",
+      "title": "Choripán Argentino",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Choripán Argentino",
+        "region": "Río de la Plata / Pampeana / Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sandwich",
+          "Tradicional",
+          "Parrilla"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Argentina",
+          "Choripan",
+          "Parrilla",
+          "Callejero",
+          "Chimichurri",
+          "Rápido"
+        ],
+        "main_ingredients": [
+          "Chorizos criollos frescos",
+          "Pan francés o pan de campo",
+          "Salsa chimichurri casera",
+          "Carbón vegetal o leña"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ahumado",
+            "Ácido sutil",
+            "Especiado"
+          ],
+          "texture": [
+            "Masa crujiente",
+            "Embutido firme",
+            "Extremadamente jugoso"
+          ],
+          "aroma": [
+            "Chorizo asado",
+            "Pan tostado",
+            "Ajo",
+            "Vinagre y especias"
+          ],
+          "presentation": "Se sirve caliente, colocando el chorizo criollo mariposa dentro del pan tostado crujiente con abundante salsa chimichurri untada en ambas caras."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 26,
+            "carbs_g": 38
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Choripán argentino con salsa chimichurri en pan francés tostado"
+          }
+        ],
+        "description": "El Choripán es el emparedado callejero y parrillero más popular de la Argentina. Consiste simplemente en un chorizo criollo de excelente calidad asado a la parrilla, cortado en sentido longitudinal (técnica 'mariposa') y servido caliente dentro de un trozo de pan francés crujiente con salsa chimichurri."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sandwich",
+        "Tradicional",
+        "Parrilla"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Chorizos criollos frescos",
+        "Pan francés o pan de campo",
+        "Salsa chimichurri casera",
+        "Carbón vegetal o leña"
+      ],
+      "tags": [
+        "Argentina",
+        "Choripan",
+        "Parrilla",
+        "Callejero",
+        "Chimichurri",
+        "Rápido"
+      ],
+      "filePath": "dishes/argentinian/choripan.md"
+    },
+    {
+      "id": "argentinian/empanadas_tucumanas",
+      "title": "Empanadas Tucumanas",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Empanadas Tucumanas",
+        "region": "Tucumán / Noroeste Argentino",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Entrada",
+          "Masa",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "20 minutos",
+        "servings": 8,
+        "tags": [
+          "Argentina",
+          "Empanada",
+          "Matambre",
+          "Horno",
+          "Tucumán",
+          "Noroeste"
+        ],
+        "main_ingredients": [
+          "Matambre de vacuno (falda de res)",
+          "Harina de trigo",
+          "Grasa de pella (manteca de vacuno)",
+          "Cebolla",
+          "Cebolla de verdeo (cebollín)",
+          "Comino molido",
+          "Pimentón dulce",
+          "Huevos duros"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado sutil"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Troceado tierno",
+            "Extremadamente jugoso"
+          ],
+          "aroma": [
+            "Masa horneada",
+            "Comino",
+            "Grasa de pella"
+          ],
+          "presentation": "Se sirven calientes, recién horneadas, acompañadas opcionalmente de un gajo de limón fresco para rociar sobre el relleno al momento de morder."
+        },
+        "nutrition": {
+          "calories": 360,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 18,
+            "carbs_g": 35
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Empanadas tucumanas auténticas horneadas y muy jugosas"
+          }
+        ],
+        "description": "La Empanada Tucumana es una de las joyas culinarias del norte argentino, celebrada por su relleno extremadamente jugoso de matambre de vacuno cortado a cuchillo, cocinado con grasa de pella, cebolla, comino y pimentón, y horneado a temperaturas muy altas."
+      },
+      "category": [
+        "Entrada",
+        "Masa",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "20 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Matambre de vacuno (falda de res)",
+        "Harina de trigo",
+        "Grasa de pella (manteca de vacuno)",
+        "Cebolla",
+        "Cebolla de verdeo (cebollín)",
+        "Comino molido",
+        "Pimentón dulce",
+        "Huevos duros"
+      ],
+      "tags": [
+        "Argentina",
+        "Empanada",
+        "Matambre",
+        "Horno",
+        "Tucumán",
+        "Noroeste"
+      ],
+      "filePath": "dishes/argentinian/empanadas_tucumanas.md"
+    },
+    {
+      "id": "argentinian/humita_en_chala",
+      "title": "Humita en Chala",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Humita en Chala",
+        "region": "Noroeste Argentino (Jujuy / Salta / Tucumán)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Maiz"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Argentina",
+          "Maíz",
+          "Humita",
+          "Chala",
+          "Noroeste",
+          "Tradición"
+        ],
+        "main_ingredients": [
+          "Maíz choclo fresco entero",
+          "Zapallo amarillo",
+          "Grasa de pella",
+          "Queso de cabra o queso fresco criollo",
+          "Cebolla",
+          "Comino y pimentón",
+          "Hojas de maíz (chalas)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce sutil",
+            "Salado",
+            "Especiado",
+            "Lácteo"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave",
+            "Blando con grumos"
+          ],
+          "aroma": [
+            "Maíz tierno",
+            "Queso derretido",
+            "Cebolla sofrita",
+            "Comino"
+          ],
+          "presentation": "Se sirve caliente en su propio paquete de chala de maíz amarrado con tiritas vegetales en forma de cruz, que se abre directamente en el plato al comer."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 15,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Humitas en chala tradicionales argentinas amarradas en cruz"
+          }
+        ],
+        "description": "La Humita en Chala es un plato emblemático del noroeste argentino. Consiste en una pasta untuosa de maíz choclo fresco rallado a mano cocinado con puré de zapallo dulce sofrito en grasa de pella con cebolla, comino y pimentón, con un trozo de queso fresco en su centro, envuelto en hojas tiernas de maíz (chalas) y hervido."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Maiz"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "40 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Maíz choclo fresco entero",
+        "Zapallo amarillo",
+        "Grasa de pella",
+        "Queso de cabra o queso fresco criollo",
+        "Cebolla",
+        "Comino y pimentón",
+        "Hojas de maíz (chalas)"
+      ],
+      "tags": [
+        "Argentina",
+        "Maíz",
+        "Humita",
+        "Chala",
+        "Noroeste",
+        "Tradición"
+      ],
+      "filePath": "dishes/argentinian/humita_en_chala.md"
+    },
+    {
+      "id": "argentinian/locro_criollo",
+      "title": "Locro Criollo Argentino",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Locro Criollo Argentino",
+        "region": "Noroeste / Pampeana / Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora (más remojo previo)",
+        "cook_time": "3 horas",
+        "servings": 8,
+        "tags": [
+          "Argentina",
+          "Locro",
+          "Maíz",
+          "Cerdo",
+          "Patrias",
+          "Invierno"
+        ],
+        "main_ingredients": [
+          "Maíz blanco partido",
+          "Porotos (frijoles) blancos",
+          "Zapallo criollo (plomo)",
+          "Pechito de cerdo",
+          "Panceta ahumada",
+          "Chorizo colorado",
+          "Falda de vacuno",
+          "Patitas y cuerito de cerdo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Dulce natural",
+            "Ahumado"
+          ],
+          "texture": [
+            "Espeso",
+            "Cremoso",
+            "Blando con trozos"
+          ],
+          "aroma": [
+            "Puerco cocido",
+            "Maíz blanco",
+            "Ají frito"
+          ],
+          "presentation": "Se sirve caliente en cazuelas de barro profundo, coronado con una cucharada de salsa quiquirimichi (salsa picante de aceite con pimentón, ají molido y cebolla de verdeo frita)."
+        },
+        "nutrition": {
+          "calories": 680,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 34,
+            "carbs_g": 56
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Locro criollo argentino espeso y humeante"
+          }
+        ],
+        "description": "El Locro Criollo es el guiso nacional argentino por excelencia, consumido masivamente durante las fechas patrias de invierno. Se elabora con una base de maíz blanco y porotos blancos cocidos lentamente junto a trozos de calabaza zapallo, carnes vacunas y porcinas (falda, patitas, cueritos, panceta y chorizo colorado) hasta lograr un guiso cremoso y espeso."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora (más remojo previo)",
+      "cookTime": "3 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Maíz blanco partido",
+        "Porotos (frijoles) blancos",
+        "Zapallo criollo (plomo)",
+        "Pechito de cerdo",
+        "Panceta ahumada",
+        "Chorizo colorado",
+        "Falda de vacuno",
+        "Patitas y cuerito de cerdo"
+      ],
+      "tags": [
+        "Argentina",
+        "Locro",
+        "Maíz",
+        "Cerdo",
+        "Patrias",
+        "Invierno"
+      ],
+      "filePath": "dishes/argentinian/locro_criollo.md"
+    },
+    {
+      "id": "argentinian/milanesa_a_la_napolitana",
+      "title": "Milanesa a la Napolitana",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Milanesa a la Napolitana",
+        "region": "Buenos Aires / Pampeana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Fritura",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Argentina",
+          "Milanesa",
+          "Napolitana",
+          "Queso",
+          "Carne",
+          "Clásico"
+        ],
+        "main_ingredients": [
+          "Carne de vacuno (bola de lomo o nalga)",
+          "Pan rallado",
+          "Huevos",
+          "Salsa de tomate para pizza",
+          "Jamón cocido",
+          "Queso mozzarella",
+          "Orégano seco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ácido sutil",
+            "Lácteo"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Tierno interior",
+            "Cremoso superior"
+          ],
+          "aroma": [
+            "Pan frito",
+            "Salsa de tomate picante",
+            "Queso derretido",
+            "Orégano"
+          ],
+          "presentation": "Se sirve caliente en plato plano amplio, acompañada de una abundante porción de papas fritas bastón recién hechas."
+        },
+        "nutrition": {
+          "calories": 620,
+          "macros": {
+            "protein_g": 45,
+            "fat_g": 32,
+            "carbs_g": 38
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Milanesa a la napolitana argentina clásica con jamón, salsa y queso"
+          }
+        ],
+        "description": "La Milanesa a la Napolitana es un clásico de la gastronomía urbana argentina, nacido en un restaurante porteño en los años 40. Consiste en un filete de carne de vacuno empanado y frito, cubierto con salsa de tomate condimentada, rebanadas de jamón cocido, abundante queso mozzarella derretido y un toque de orégano."
+      },
+      "category": [
+        "Plato fuerte",
+        "Fritura",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de vacuno (bola de lomo o nalga)",
+        "Pan rallado",
+        "Huevos",
+        "Salsa de tomate para pizza",
+        "Jamón cocido",
+        "Queso mozzarella",
+        "Orégano seco"
+      ],
+      "tags": [
+        "Argentina",
+        "Milanesa",
+        "Napolitana",
+        "Queso",
+        "Carne",
+        "Clásico"
+      ],
+      "filePath": "dishes/argentinian/milanesa_a_la_napolitana.md"
+    },
+    {
+      "id": "argentinian/pastelitos_criollos",
+      "title": "Pastelitos Criollos Argentinos",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pastelitos Criollos Argentinos",
+        "region": "Pampeana / Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional",
+          "Fritura"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora",
+        "cook_time": "20 minutos",
+        "servings": 8,
+        "tags": [
+          "Argentina",
+          "Pastelitos",
+          "Hojaldre",
+          "Membrillo",
+          "Fritura",
+          "Patrias"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Mantequilla o grasa de cerdo",
+          "Dulce de membrillo o dulce de batata",
+          "Azúcar granulada",
+          "Aceite vegetal o manteca de freír"
+        ],
+        "sensory": {
+          "flavor": [
+            "Muy dulce",
+            "Frutal denso",
+            "Grasoso agradable"
+          ],
+          "texture": [
+            "Masa hojaldrada crujiente",
+            "Blando interior",
+            "Almibarado"
+          ],
+          "aroma": [
+            "Masa frita caliente",
+            "Membrillo caramelizado",
+            "Almíbar de limón"
+          ],
+          "presentation": "Se sirven fríos o templados, recién fritos, pintados generosamente con almíbar brillante y espolvoreados con granas o chispas de azúcar de colores en su centro."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 5,
+            "fat_g": 19,
+            "carbs_g": 56
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pastelitos criollos argentinos de hojaldre fritos rellenos de membrillo"
+          }
+        ],
+        "description": "Los Pastelitos Criollos son una delicia dulce tradicional argentina de masa hojaldrada frita. Consisten en un relleno dulce de membrillo o batata encerrado entre dos láminas cuadradas de masa de hojaldre casera dispuestas en forma de estrella, fritas de manera especial para que las capas se abran en forma de pétalos, y bañadas en almíbar brillante."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional",
+        "Fritura"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora",
+      "cookTime": "20 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Mantequilla o grasa de cerdo",
+        "Dulce de membrillo o dulce de batata",
+        "Azúcar granulada",
+        "Aceite vegetal o manteca de freír"
+      ],
+      "tags": [
+        "Argentina",
+        "Pastelitos",
+        "Hojaldre",
+        "Membrillo",
+        "Fritura",
+        "Patrias"
+      ],
+      "filePath": "dishes/argentinian/pastelitos_criollos.md"
+    },
+    {
+      "id": "argentinian/provoleta",
+      "title": "Provoleta Argentina",
+      "language": "spanish",
+      "country": "argentina",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Provoleta Argentina",
+        "region": "Pampeana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetasargentinas.net",
+          "url": "https://www.recetasargentinas.net/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Entrada",
+          "Queso",
+          "Tradicional",
+          "Parrilla"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos (más tiempo de secado)",
+        "cook_time": "10 minutos",
+        "servings": 2,
+        "tags": [
+          "Argentina",
+          "Queso",
+          "Provoleta",
+          "Asado",
+          "Parrilla",
+          "Entrada"
+        ],
+        "main_ingredients": [
+          "Queso provolone hilado (en rodajas gruesas)",
+          "Harina de trigo o maicena",
+          "Orégano seco",
+          "Ají molido",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Lácteo intenso",
+            "Ahumado sutil"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Viscoso",
+            "Elástico interior"
+          ],
+          "aroma": [
+            "Queso tostado",
+            "Orégano",
+            "Aceite de oliva",
+            "Carbón"
+          ],
+          "presentation": "Se sirve extremadamente caliente en cazuela de hierro o directamente sobre una tabla de madera, espolvoreada con orégano, ají molido y un chorrito de aceite de oliva."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 31,
+            "carbs_g": 2
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Provoleta argentina gratinada a la parrilla crujiente"
+          }
+        ],
+        "description": "La Provoleta es una de las entradas calientes más tradicionales del asado argentino. Consiste en una rodaja gruesa de queso provolone hilado argentino, deshidratada ligeramente y cocinada a la parrilla de manera que forme una costra dorada y extremadamente crujiente por fuera mientras se mantiene fundida e hilada en su interior."
+      },
+      "category": [
+        "Entrada",
+        "Queso",
+        "Tradicional",
+        "Parrilla"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos (más tiempo de secado)",
+      "cookTime": "10 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Queso provolone hilado (en rodajas gruesas)",
+        "Harina de trigo o maicena",
+        "Orégano seco",
+        "Ají molido",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Argentina",
+        "Queso",
+        "Provoleta",
+        "Asado",
+        "Parrilla",
+        "Entrada"
+      ],
+      "filePath": "dishes/argentinian/provoleta.md"
+    }
+  ],
+  "count": 10
+}

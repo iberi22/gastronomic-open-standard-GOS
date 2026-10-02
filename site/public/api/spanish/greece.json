@@ -1,0 +1,1807 @@
+{
+  "recipes": [
+    {
+      "id": "greek/baklava_griego",
+      "title": "Baklava Griego con Nueces y Miel",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Baklava Griego con Nueces y Miel",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa filo",
+          "Nueces",
+          "Mantequilla",
+          "Miel",
+          "Canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Baklava Griego con Nueces y Miel"
+          ],
+          "presentation": "Baklava Griego con Nueces y Miel presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Baklava Griego con Nueces y Miel tradicional"
+          }
+        ],
+        "description": "Baklava Griego con Nueces y Miel es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa filo",
+        "Nueces",
+        "Mantequilla",
+        "Miel",
+        "Canela"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/baklava_griego.md"
+    },
+    {
+      "id": "greek/dolmades_hojas_de_parra",
+      "title": "Dolmades (Hojas de Parra Rellenas)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dolmades (Hojas de Parra Rellenas)",
+        "region": "Creta",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Hojas de parra",
+          "Arroz",
+          "Hierbabuena",
+          "Eneldo",
+          "Aceite de oliva",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Dolmades (Hojas de Parra Rellenas)"
+          ],
+          "presentation": "Dolmades (Hojas de Parra Rellenas) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Dolmades (Hojas de Parra Rellenas) tradicional"
+          }
+        ],
+        "description": "Dolmades (Hojas de Parra Rellenas) es uno de los platos más emblemáticos de la gastronomía de Creta, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Hojas de parra",
+        "Arroz",
+        "Hierbabuena",
+        "Eneldo",
+        "Aceite de oliva",
+        "Limón"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/dolmades_hojas_de_parra.md"
+    },
+    {
+      "id": "greek/falafel_griego",
+      "title": "Revithokeftedes (Croquetas de Garbanzo)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Revithokeftedes (Croquetas de Garbanzo)",
+        "region": "Sifnos",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Garbanzos",
+          "Cilantro",
+          "Perejil",
+          "Ajo",
+          "Comino"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Revithokeftedes (Croquetas de Garbanzo)"
+          ],
+          "presentation": "Revithokeftedes (Croquetas de Garbanzo) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Revithokeftedes (Croquetas de Garbanzo) tradicional"
+          }
+        ],
+        "description": "Revithokeftedes (Croquetas de Garbanzo) es uno de los platos más emblemáticos de la gastronomía de Sifnos, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Garbanzos",
+        "Cilantro",
+        "Perejil",
+        "Ajo",
+        "Comino"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/falafel_griego.md"
+    },
+    {
+      "id": "greek/fasolada_sopa",
+      "title": "Fasolada (Sopa de Alubias Blancas)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Fasolada (Sopa de Alubias Blancas)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Alubias blancas",
+          "Tomate",
+          "Zanahoria",
+          "Apio",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Fasolada (Sopa de Alubias Blancas)"
+          ],
+          "presentation": "Fasolada (Sopa de Alubias Blancas) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Fasolada (Sopa de Alubias Blancas) tradicional"
+          }
+        ],
+        "description": "Fasolada (Sopa de Alubias Blancas) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Alubias blancas",
+        "Tomate",
+        "Zanahoria",
+        "Apio",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/fasolada_sopa.md"
+    },
+    {
+      "id": "greek/galaktoboureko",
+      "title": "Galaktoboureko (Pastel de Semola y Miel)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Galaktoboureko (Pastel de Semola y Miel)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa filo",
+          "Sémola de trigo",
+          "Leche",
+          "Huevos",
+          "Jarabe de cítricos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Galaktoboureko (Pastel de Semola y Miel)"
+          ],
+          "presentation": "Galaktoboureko (Pastel de Semola y Miel) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Galaktoboureko (Pastel de Semola y Miel) tradicional"
+          }
+        ],
+        "description": "Galaktoboureko (Pastel de Semola y Miel) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa filo",
+        "Sémola de trigo",
+        "Leche",
+        "Huevos",
+        "Jarabe de cítricos"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/galaktoboureko.md"
+    },
+    {
+      "id": "greek/gigantes_plaki",
+      "title": "Gigantes Plaki (Alubias al Horno)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gigantes Plaki (Alubias al Horno)",
+        "region": "Macedonia Griega",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Garrofón / Alubias gigantes",
+          "Tomate",
+          "Ajo",
+          "Orégano",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gigantes Plaki (Alubias al Horno)"
+          ],
+          "presentation": "Gigantes Plaki (Alubias al Horno) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gigantes Plaki (Alubias al Horno) tradicional"
+          }
+        ],
+        "description": "Gigantes Plaki (Alubias al Horno) es uno de los platos más emblemáticos de la gastronomía de Macedonia Griega, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Garrofón / Alubias gigantes",
+        "Tomate",
+        "Ajo",
+        "Orégano",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/gigantes_plaki.md"
+    },
+    {
+      "id": "greek/gyros_de_pollo",
+      "title": "Gyros de Pollo en Pan Pita",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gyros de Pollo en Pan Pita",
+        "region": "Tesalónica",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo marinado",
+          "Pan pita",
+          "Salsa tzatziki",
+          "Tomate",
+          "Cebolla roja"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gyros de Pollo en Pan Pita"
+          ],
+          "presentation": "Gyros de Pollo en Pan Pita presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gyros de Pollo en Pan Pita tradicional"
+          }
+        ],
+        "description": "Gyros de Pollo en Pan Pita es uno de los platos más emblemáticos de la gastronomía de Tesalónica, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo marinado",
+        "Pan pita",
+        "Salsa tzatziki",
+        "Tomate",
+        "Cebolla roja"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/gyros_de_pollo.md"
+    },
+    {
+      "id": "greek/horiatiki_greek_salad",
+      "title": "Horiatiki (Ensalada Griega Tradicional)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Horiatiki (Ensalada Griega Tradicional)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tomate",
+          "Pepino",
+          "Queso Feta",
+          "Aceitunas Kalamata",
+          "Aceite de oliva",
+          "Orégano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Horiatiki (Ensalada Griega Tradicional)"
+          ],
+          "presentation": "Horiatiki (Ensalada Griega Tradicional) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Horiatiki (Ensalada Griega Tradicional) tradicional"
+          }
+        ],
+        "description": "Horiatiki (Ensalada Griega Tradicional) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tomate",
+        "Pepino",
+        "Queso Feta",
+        "Aceitunas Kalamata",
+        "Aceite de oliva",
+        "Orégano"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/horiatiki_greek_salad.md"
+    },
+    {
+      "id": "greek/keftedes_griegas",
+      "title": "Keftedes (Albóndigas Griegas de Menta)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Keftedes (Albóndigas Griegas de Menta)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne picada de ternera",
+          "Menta fresca",
+          "Orégano",
+          "Cebolla",
+          "Pan rallado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Keftedes (Albóndigas Griegas de Menta)"
+          ],
+          "presentation": "Keftedes (Albóndigas Griegas de Menta) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Keftedes (Albóndigas Griegas de Menta) tradicional"
+          }
+        ],
+        "description": "Keftedes (Albóndigas Griegas de Menta) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne picada de ternera",
+        "Menta fresca",
+        "Orégano",
+        "Cebolla",
+        "Pan rallado"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/keftedes_griegas.md"
+    },
+    {
+      "id": "greek/kleftiko_de_cordero",
+      "title": "Kleftiko de Cordero en Papel",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kleftiko de Cordero en Papel",
+        "region": "Grecia Central",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de cordero",
+          "Patatas",
+          "Ajo",
+          "Queso Feta",
+          "Orégano",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Kleftiko de Cordero en Papel"
+          ],
+          "presentation": "Kleftiko de Cordero en Papel presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Kleftiko de Cordero en Papel tradicional"
+          }
+        ],
+        "description": "Kleftiko de Cordero en Papel es uno de los platos más emblemáticos de la gastronomía de Grecia Central, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de cordero",
+        "Patatas",
+        "Ajo",
+        "Queso Feta",
+        "Orégano",
+        "Limón"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/kleftiko_de_cordero.md"
+    },
+    {
+      "id": "greek/kolokithokeftedes",
+      "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
+        "region": "Creta",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Calabacín rallado",
+          "Queso Feta",
+          "Eneldo",
+          "Menta",
+          "Harina"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Kolokithokeftedes (Buñuelos de Calabacín)"
+          ],
+          "presentation": "Kolokithokeftedes (Buñuelos de Calabacín) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Kolokithokeftedes (Buñuelos de Calabacín) tradicional"
+          }
+        ],
+        "description": "Kolokithokeftedes (Buñuelos de Calabacín) es uno de los platos más emblemáticos de la gastronomía de Creta, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Calabacín rallado",
+        "Queso Feta",
+        "Eneldo",
+        "Menta",
+        "Harina"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/kolokithokeftedes.md"
+    },
+    {
+      "id": "greek/loukoumades_miel",
+      "title": "Loukoumades con Miel y Canela",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Loukoumades con Miel y Canela",
+        "region": "Atenas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de levadura",
+          "Miel",
+          "Canela",
+          "Nueces picadas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Loukoumades con Miel y Canela"
+          ],
+          "presentation": "Loukoumades con Miel y Canela presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Loukoumades con Miel y Canela tradicional"
+          }
+        ],
+        "description": "Loukoumades con Miel y Canela es uno de los platos más emblemáticos de la gastronomía de Atenas, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de levadura",
+        "Miel",
+        "Canela",
+        "Nueces picadas"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/loukoumades_miel.md"
+    },
+    {
+      "id": "greek/moussaka_griega",
+      "title": "Moussaka Griega Tradicional",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Moussaka Griega Tradicional",
+        "region": "Atenas / Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Berenjena",
+          "Carne picada de cordero",
+          "Salsa bechamel",
+          "Tomate",
+          "Patata"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Moussaka Griega Tradicional"
+          ],
+          "presentation": "Moussaka Griega Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Moussaka Griega Tradicional tradicional"
+          }
+        ],
+        "description": "Moussaka Griega Tradicional es uno de los platos más emblemáticos de la gastronomía de Atenas / Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Berenjena",
+        "Carne picada de cordero",
+        "Salsa bechamel",
+        "Tomate",
+        "Patata"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/moussaka_griega.md"
+    },
+    {
+      "id": "greek/pastitsio_al_horno",
+      "title": "Pastitsio (Lasaña Griega)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pastitsio (Lasaña Griega)",
+        "region": "Atenas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pasta tubular",
+          "Carne picada con canela",
+          "Salsa bechamel",
+          "Queso rallado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pastitsio (Lasaña Griega)"
+          ],
+          "presentation": "Pastitsio (Lasaña Griega) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pastitsio (Lasaña Griega) tradicional"
+          }
+        ],
+        "description": "Pastitsio (Lasaña Griega) es uno de los platos más emblemáticos de la gastronomía de Atenas, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pasta tubular",
+        "Carne picada con canela",
+        "Salsa bechamel",
+        "Queso rallado"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/pastitsio_al_horno.md"
+    },
+    {
+      "id": "greek/saganaki_queso_frito",
+      "title": "Garides Saganaki (Camarones con Feta)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Garides Saganaki (Camarones con Feta)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Queso Kefalotyri",
+          "Harina",
+          "Aceite de oliva",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Garides Saganaki (Camarones con Feta)"
+          ],
+          "presentation": "Garides Saganaki (Camarones con Feta) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Garides Saganaki (Camarones con Feta) tradicional"
+          }
+        ],
+        "description": "Garides Saganaki (Camarones con Feta) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Queso Kefalotyri",
+        "Harina",
+        "Aceite de oliva",
+        "Limón"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/saganaki_queso_frito.md"
+    },
+    {
+      "id": "greek/souvlaki_de_cerdo",
+      "title": "Souvlaki de Cerdo con Pita",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Souvlaki de Cerdo con Pita",
+        "region": "Atenas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Brochetas de cerdo",
+          "Orégano",
+          "Aceite de oliva",
+          "Zumo de limón",
+          "Pan pita"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Souvlaki de Cerdo con Pita"
+          ],
+          "presentation": "Souvlaki de Cerdo con Pita presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Souvlaki de Cerdo con Pita tradicional"
+          }
+        ],
+        "description": "Souvlaki de Cerdo con Pita es uno de los platos más emblemáticos de la gastronomía de Atenas, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Brochetas de cerdo",
+        "Orégano",
+        "Aceite de oliva",
+        "Zumo de limón",
+        "Pan pita"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/souvlaki_de_cerdo.md"
+    },
+    {
+      "id": "greek/spanakopita_pastel",
+      "title": "Spanakopita (Pastel de Espinacas y Feta)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Spanakopita (Pastel de Espinacas y Feta)",
+        "region": "Epiro",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa filo",
+          "Espinacas",
+          "Queso Feta",
+          "Eneldo",
+          "Huevos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Spanakopita (Pastel de Espinacas y Feta)"
+          ],
+          "presentation": "Spanakopita (Pastel de Espinacas y Feta) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Spanakopita (Pastel de Espinacas y Feta) tradicional"
+          }
+        ],
+        "description": "Spanakopita (Pastel de Espinacas y Feta) es uno de los platos más emblemáticos de la gastronomía de Epiro, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa filo",
+        "Espinacas",
+        "Queso Feta",
+        "Eneldo",
+        "Huevos"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/spanakopita_pastel.md"
+    },
+    {
+      "id": "greek/stifado_de_ternera",
+      "title": "Stifado de Ternera con Cebollitas",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Stifado de Ternera con Cebollitas",
+        "region": "Peloponeso",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de ternera",
+          "Cebollitas chalotas",
+          "Tomate",
+          "Vino tinto",
+          "Canela",
+          "Clavo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Stifado de Ternera con Cebollitas"
+          ],
+          "presentation": "Stifado de Ternera con Cebollitas presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Stifado de Ternera con Cebollitas tradicional"
+          }
+        ],
+        "description": "Stifado de Ternera con Cebollitas es uno de los platos más emblemáticos de la gastronomía de Peloponeso, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de ternera",
+        "Cebollitas chalotas",
+        "Tomate",
+        "Vino tinto",
+        "Canela",
+        "Clavo"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/stifado_de_ternera.md"
+    },
+    {
+      "id": "greek/tiropita_pastel_de_queso",
+      "title": "Tiropita (Pastel Hojaldrado de Feta)",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tiropita (Pastel Hojaldrado de Feta)",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa filo",
+          "Queso Feta",
+          "Queso Ricotta",
+          "Huevos",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tiropita (Pastel Hojaldrado de Feta)"
+          ],
+          "presentation": "Tiropita (Pastel Hojaldrado de Feta) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tiropita (Pastel Hojaldrado de Feta) tradicional"
+          }
+        ],
+        "description": "Tiropita (Pastel Hojaldrado de Feta) es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa filo",
+        "Queso Feta",
+        "Queso Ricotta",
+        "Huevos",
+        "Mantequilla"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/tiropita_pastel_de_queso.md"
+    },
+    {
+      "id": "greek/tzatziki_casero",
+      "title": "Tzatziki Tradicional",
+      "language": "spanish",
+      "country": "greece",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tzatziki Tradicional",
+        "region": "Grecia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Greek",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Yogur griego",
+          "Pepino rallado",
+          "Ajo",
+          "Aceite de oliva",
+          "Eneldo o menta"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tzatziki Tradicional"
+          ],
+          "presentation": "Tzatziki Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tzatziki Tradicional tradicional"
+          }
+        ],
+        "description": "Tzatziki Tradicional es uno de los platos más emblemáticos de la gastronomía de Grecia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Yogur griego",
+        "Pepino rallado",
+        "Ajo",
+        "Aceite de oliva",
+        "Eneldo o menta"
+      ],
+      "tags": [
+        "Greek",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/greek/tzatziki_casero.md"
+    }
+  ],
+  "count": 20
+}

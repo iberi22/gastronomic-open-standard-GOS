@@ -1,0 +1,1809 @@
+{
+  "recipes": [
+    {
+      "id": "moroccan/baghrir_panqueques",
+      "title": "Baghrir (Panqueques de Mil Hoyos)",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Baghrir (Panqueques de Mil Hoyos)",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Sémola fina de trigo",
+          "Harina",
+          "Levadura",
+          "Miel",
+          "Mantequilla derretida"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Baghrir (Panqueques de Mil Hoyos)"
+          ],
+          "presentation": "Baghrir (Panqueques de Mil Hoyos) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Baghrir (Panqueques de Mil Hoyos) tradicional"
+          }
+        ],
+        "description": "Baghrir (Panqueques de Mil Hoyos) es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Sémola fina de trigo",
+        "Harina",
+        "Levadura",
+        "Miel",
+        "Mantequilla derretida"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/baghrir_panqueques.md"
+    },
+    {
+      "id": "moroccan/briouats_de_carne",
+      "title": "Briouats de Carne Picada Especiada",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Briouats de Carne Picada Especiada",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa warqa",
+          "Carne picada especiada",
+          "Cebolla",
+          "Comino",
+          "Perejil",
+          "Canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Briouats de Carne Picada Especiada"
+          ],
+          "presentation": "Briouats de Carne Picada Especiada presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Briouats de Carne Picada Especiada tradicional"
+          }
+        ],
+        "description": "Briouats de Carne Picada Especiada es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa warqa",
+        "Carne picada especiada",
+        "Cebolla",
+        "Comino",
+        "Perejil",
+        "Canela"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/briouats_de_carne.md"
+    },
+    {
+      "id": "moroccan/chebakia_miel",
+      "title": "Chebakia de Sésamo y Miel",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chebakia de Sésamo y Miel",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de sésamo y anís",
+          "Miel",
+          "Agua de azahar",
+          "Semillas de sésamo tostadas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Chebakia de Sésamo y Miel"
+          ],
+          "presentation": "Chebakia de Sésamo y Miel presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chebakia de Sésamo y Miel tradicional"
+          }
+        ],
+        "description": "Chebakia de Sésamo y Miel es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de sésamo y anís",
+        "Miel",
+        "Agua de azahar",
+        "Semillas de sésamo tostadas"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/chebakia_miel.md"
+    },
+    {
+      "id": "moroccan/couscous_sept_legumes",
+      "title": "Couscous Real aux Sept Légumes",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Couscous Real aux Sept Légumes",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Sémola de cuscús",
+          "Calabaza",
+          "Zanahoria",
+          "Calabacín",
+          "Nabo",
+          "Garbanzos",
+          "Carne de ternera"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Couscous Real aux Sept Légumes"
+          ],
+          "presentation": "Couscous Real aux Sept Légumes presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Couscous Real aux Sept Légumes tradicional"
+          }
+        ],
+        "description": "Couscous Real aux Sept Légumes es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Sémola de cuscús",
+        "Calabaza",
+        "Zanahoria",
+        "Calabacín",
+        "Nabo",
+        "Garbanzos",
+        "Carne de ternera"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/couscous_sept_legumes.md"
+    },
+    {
+      "id": "moroccan/ghriba_almond",
+      "title": "Ghriba de Almendra y Sésamo",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ghriba de Almendra y Sésamo",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Almendra molida",
+          "Azúcar",
+          "Huevos",
+          "Ralladura de limón",
+          "Azúcar glas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Ghriba de Almendra y Sésamo"
+          ],
+          "presentation": "Ghriba de Almendra y Sésamo presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Ghriba de Almendra y Sésamo tradicional"
+          }
+        ],
+        "description": "Ghriba de Almendra y Sésamo es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Almendra molida",
+        "Azúcar",
+        "Huevos",
+        "Ralladura de limón",
+        "Azúcar glas"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/ghriba_almond.md"
+    },
+    {
+      "id": "moroccan/harira_marroqui",
+      "title": "Sopa Harira Tradicional",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopa Harira Tradicional",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tomate",
+          "Lentejas",
+          "Garbanzos",
+          "Carne de cordero",
+          "Cilantro",
+          "Apio"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Sopa Harira Tradicional"
+          ],
+          "presentation": "Sopa Harira Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopa Harira Tradicional tradicional"
+          }
+        ],
+        "description": "Sopa Harira Tradicional es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tomate",
+        "Lentejas",
+        "Garbanzos",
+        "Carne de cordero",
+        "Cilantro",
+        "Apio"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/harira_marroqui.md"
+    },
+    {
+      "id": "moroccan/kefta_tagine_con_huevos",
+      "title": "Tajine de Kefta con Tomate y Huevos",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tajine de Kefta con Tomate y Huevos",
+        "region": "Marrakech",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne picada especiada (kefta)",
+          "Salsa de tomate",
+          "Huevos",
+          "Comino",
+          "Pimentón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tajine de Kefta con Tomate y Huevos"
+          ],
+          "presentation": "Tajine de Kefta con Tomate y Huevos presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tajine de Kefta con Tomate y Huevos tradicional"
+          }
+        ],
+        "description": "Tajine de Kefta con Tomate y Huevos es uno de los platos más emblemáticos de la gastronomía de Marrakech, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne picada especiada (kefta)",
+        "Salsa de tomate",
+        "Huevos",
+        "Comino",
+        "Pimentón"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/kefta_tagine_con_huevos.md"
+    },
+    {
+      "id": "moroccan/mechoui_de_cordero",
+      "title": "Mechoui de Cordero Asado",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mechoui de Cordero Asado",
+        "region": "Atlas / Marrakech",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Cordero entero o paletilla",
+          "Mantequilla (smen)",
+          "Comino",
+          "Sal gruesa"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Mechoui de Cordero Asado"
+          ],
+          "presentation": "Mechoui de Cordero Asado presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mechoui de Cordero Asado tradicional"
+          }
+        ],
+        "description": "Mechoui de Cordero Asado es uno de los platos más emblemáticos de la gastronomía de Atlas / Marrakech, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Cordero entero o paletilla",
+        "Mantequilla (smen)",
+        "Comino",
+        "Sal gruesa"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/mechoui_de_cordero.md"
+    },
+    {
+      "id": "moroccan/msemmen_pan",
+      "title": "Msemmen (Pan Hojaldrado Marroquí)",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Msemmen (Pan Hojaldrado Marroquí)",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Sémola fina",
+          "Mantequilla",
+          "Aceite vegetal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Msemmen (Pan Hojaldrado Marroquí)"
+          ],
+          "presentation": "Msemmen (Pan Hojaldrado Marroquí) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Msemmen (Pan Hojaldrado Marroquí) tradicional"
+          }
+        ],
+        "description": "Msemmen (Pan Hojaldrado Marroquí) es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Sémola fina",
+        "Mantequilla",
+        "Aceite vegetal"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/msemmen_pan.md"
+    },
+    {
+      "id": "moroccan/pastilla_de_pollo",
+      "title": "Pastilla (Bastilla) de Pollo y Almendras",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pastilla (Bastilla) de Pollo y Almendras",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa warqa",
+          "Pollo deshebrado",
+          "Almendras tostadas molidas",
+          "Canela",
+          "Azúcar glas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pastilla (Bastilla) de Pollo y Almendras"
+          ],
+          "presentation": "Pastilla (Bastilla) de Pollo y Almendras presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pastilla (Bastilla) de Pollo y Almendras tradicional"
+          }
+        ],
+        "description": "Pastilla (Bastilla) de Pollo y Almendras es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa warqa",
+        "Pollo deshebrado",
+        "Almendras tostadas molidas",
+        "Canela",
+        "Azúcar glas"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/pastilla_de_pollo.md"
+    },
+    {
+      "id": "moroccan/rfissa_de_pollo",
+      "title": "Rfissa de Pollo con Lentejas",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rfissa de Pollo con Lentejas",
+        "region": "Casablanca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pan msemmen troceado",
+          "Pollo campero",
+          "Lentejas",
+          "Fenogreco",
+          "Ras el hanout"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Rfissa de Pollo con Lentejas"
+          ],
+          "presentation": "Rfissa de Pollo con Lentejas presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Rfissa de Pollo con Lentejas tradicional"
+          }
+        ],
+        "description": "Rfissa de Pollo con Lentejas es uno de los platos más emblemáticos de la gastronomía de Casablanca, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pan msemmen troceado",
+        "Pollo campero",
+        "Lentejas",
+        "Fenogreco",
+        "Ras el hanout"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/rfissa_de_pollo.md"
+    },
+    {
+      "id": "moroccan/seffa_medfouna",
+      "title": "Seffa Medfouna con Pollo",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Seffa Medfouna con Pollo",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos finos al vapor",
+          "Pollo guisado",
+          "Almendras",
+          "Canela",
+          "Azúcar glas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Seffa Medfouna con Pollo"
+          ],
+          "presentation": "Seffa Medfouna con Pollo presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Seffa Medfouna con Pollo tradicional"
+          }
+        ],
+        "description": "Seffa Medfouna con Pollo es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos finos al vapor",
+        "Pollo guisado",
+        "Almendras",
+        "Canela",
+        "Azúcar glas"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/seffa_medfouna.md"
+    },
+    {
+      "id": "moroccan/sellou_marroqui",
+      "title": "Sellou (Sfouf) Tradicional",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sellou (Sfouf) Tradicional",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina tostada",
+          "Sésamo tostado",
+          "Almendras",
+          "Miel",
+          "Mantequilla clarificada",
+          "Anís"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Sellou (Sfouf) Tradicional"
+          ],
+          "presentation": "Sellou (Sfouf) Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sellou (Sfouf) Tradicional tradicional"
+          }
+        ],
+        "description": "Sellou (Sfouf) Tradicional es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina tostada",
+        "Sésamo tostado",
+        "Almendras",
+        "Miel",
+        "Mantequilla clarificada",
+        "Anís"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/sellou_marroqui.md"
+    },
+    {
+      "id": "moroccan/tajine_de_cordero_con_ciruelas",
+      "title": "Tajine de Cordero con Ciruelas y Almendras",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tajine de Cordero con Ciruelas y Almendras",
+        "region": "Marrakech",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Cordero",
+          "Ciruelas pasas",
+          "Almendras fritas",
+          "Canela",
+          "Sésamo",
+          "Azafrán"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tajine de Cordero con Ciruelas y Almendras"
+          ],
+          "presentation": "Tajine de Cordero con Ciruelas y Almendras presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tajine de Cordero con Ciruelas y Almendras tradicional"
+          }
+        ],
+        "description": "Tajine de Cordero con Ciruelas y Almendras es uno de los platos más emblemáticos de la gastronomía de Marrakech, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Cordero",
+        "Ciruelas pasas",
+        "Almendras fritas",
+        "Canela",
+        "Sésamo",
+        "Azafrán"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/tajine_de_cordero_con_ciruelas.md"
+    },
+    {
+      "id": "moroccan/tajine_de_pescado_chermoula",
+      "title": "Tajine de Pescado con Chermoula",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tajine de Pescado con Chermoula",
+        "region": "Essaouira",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pescado de roca",
+          "Salsa chermoula (cilantro, ajo, comino, limón)",
+          "Tomate",
+          "Pimentón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tajine de Pescado con Chermoula"
+          ],
+          "presentation": "Tajine de Pescado con Chermoula presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tajine de Pescado con Chermoula tradicional"
+          }
+        ],
+        "description": "Tajine de Pescado con Chermoula es uno de los platos más emblemáticos de la gastronomía de Essaouira, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado de roca",
+        "Salsa chermoula (cilantro, ajo, comino, limón)",
+        "Tomate",
+        "Pimentón"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/tajine_de_pescado_chermoula.md"
+    },
+    {
+      "id": "moroccan/tajine_de_pollo_con_limon",
+      "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
+        "region": "Casablanca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Limones encurtidos",
+          "Aceitunas verdes",
+          "Jengibre",
+          "Azafrán"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tajine de Pollo con Limón Encurtido y Aceitunas"
+          ],
+          "presentation": "Tajine de Pollo con Limón Encurtido y Aceitunas presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tajine de Pollo con Limón Encurtido y Aceitunas tradicional"
+          }
+        ],
+        "description": "Tajine de Pollo con Limón Encurtido y Aceitunas es uno de los platos más emblemáticos de la gastronomía de Casablanca, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Limones encurtidos",
+        "Aceitunas verdes",
+        "Jengibre",
+        "Azafrán"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/tajine_de_pollo_con_limon.md"
+    },
+    {
+      "id": "moroccan/tajine_de_ternera_con_membrillo",
+      "title": "Tajine de Ternera con Membrillo Caramelizado",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tajine de Ternera con Membrillo Caramelizado",
+        "region": "Meknes",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de ternera",
+          "Membrillo caramelizado",
+          "Miel",
+          "Canela",
+          "Jengibre"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tajine de Ternera con Membrillo Caramelizado"
+          ],
+          "presentation": "Tajine de Ternera con Membrillo Caramelizado presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tajine de Ternera con Membrillo Caramelizado tradicional"
+          }
+        ],
+        "description": "Tajine de Ternera con Membrillo Caramelizado es uno de los platos más emblemáticos de la gastronomía de Meknes, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de ternera",
+        "Membrillo caramelizado",
+        "Miel",
+        "Canela",
+        "Jengibre"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/tajine_de_ternera_con_membrillo.md"
+    },
+    {
+      "id": "moroccan/taktouka_de_pimientos",
+      "title": "Taktouka de Pimientos Asados",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Taktouka de Pimientos Asados",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pimientos rojos y verdes asados",
+          "Tomate",
+          "Ajo",
+          "Comino",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Taktouka de Pimientos Asados"
+          ],
+          "presentation": "Taktouka de Pimientos Asados presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Taktouka de Pimientos Asados tradicional"
+          }
+        ],
+        "description": "Taktouka de Pimientos Asados es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pimientos rojos y verdes asados",
+        "Tomate",
+        "Ajo",
+        "Comino",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/taktouka_de_pimientos.md"
+    },
+    {
+      "id": "moroccan/te_de_menta_marroqui",
+      "title": "Té Verde Marroquí con Menta Fresca",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Té Verde Marroquí con Menta Fresca",
+        "region": "Marruecos Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Té verde gunpowder",
+          "Menta fresca hierbabuena",
+          "Azúcar en pilón",
+          "Agua hirviendo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Té Verde Marroquí con Menta Fresca"
+          ],
+          "presentation": "Té Verde Marroquí con Menta Fresca presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Té Verde Marroquí con Menta Fresca tradicional"
+          }
+        ],
+        "description": "Té Verde Marroquí con Menta Fresca es uno de los platos más emblemáticos de la gastronomía de Marruecos Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Té verde gunpowder",
+        "Menta fresca hierbabuena",
+        "Azúcar en pilón",
+        "Agua hirviendo"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/te_de_menta_marroqui.md"
+    },
+    {
+      "id": "moroccan/zaalouk_de_berenjena",
+      "title": "Zaalouk de Berenjena y Tomate",
+      "language": "spanish",
+      "country": "morocco",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Zaalouk de Berenjena y Tomate",
+        "region": "Fez",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Moroccan",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Berenjena asada",
+          "Tomate",
+          "Ajo",
+          "Comino",
+          "Pimentón",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Zaalouk de Berenjena y Tomate"
+          ],
+          "presentation": "Zaalouk de Berenjena y Tomate presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Zaalouk de Berenjena y Tomate tradicional"
+          }
+        ],
+        "description": "Zaalouk de Berenjena y Tomate es uno de los platos más emblemáticos de la gastronomía de Fez, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Berenjena asada",
+        "Tomate",
+        "Ajo",
+        "Comino",
+        "Pimentón",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Moroccan",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/moroccan/zaalouk_de_berenjena.md"
+    }
+  ],
+  "count": 20
+}

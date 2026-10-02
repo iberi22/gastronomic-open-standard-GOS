@@ -1,0 +1,1896 @@
+{
+  "recipes": [
+    {
+      "id": "italian/arancini_siciliani",
+      "title": "Arancini Siciliani di Riso",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Arancini Siciliani di Riso",
+        "region": "Sicilia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Callejero",
+          "Fritura"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz para risotto con azafrán",
+          "Ragù de carne con guisantes",
+          "Mozzarella en dados",
+          "Pan rallado",
+          "Harina",
+          "Aceite para freír"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ragù de carne salado",
+            "Guisantes dulces",
+            "Mozzarella fundida"
+          ],
+          "texture": [
+            "Corteza frita ultra crujiente",
+            "Interior de arroz cremoso"
+          ],
+          "aroma": [
+            "Rebozado frito crujiente",
+            "Relleno salado de ragù"
+          ],
+          "presentation": "Bolas o conos de arroz dorados del tamaño de una naranja cortados para mostrar su relleno fundido."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 24,
+            "carbs_g": 58
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Arancini Siciliani di Riso tradicional"
+          }
+        ],
+        "description": "Los Arancini son el snack callejero rey de Sicilia: bolas de arroz aromatizadas con azafrán, rellenadas de ragù con guisantes y mozzarella, y fritas hasta dorar."
+      },
+      "category": [
+        "Callejero",
+        "Fritura"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz para risotto con azafrán",
+        "Ragù de carne con guisantes",
+        "Mozzarella en dados",
+        "Pan rallado",
+        "Harina",
+        "Aceite para freír"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/arancini_siciliani.md"
+    },
+    {
+      "id": "italian/cacio_e_pepe",
+      "title": "Spaghetti Cacio e Pepe",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Spaghetti Cacio e Pepe",
+        "region": "Lazio (Roma)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pasta Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "12 minutos",
+        "servings": 2,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Spaghetti o Tonnarelli",
+          "Queso Pecorino Romano DOP rallado muy fino",
+          "Pimienta negra en grano tostada",
+          "Sal gruesa"
+        ],
+        "sensory": {
+          "flavor": [
+            "Pecorino Romano salado picante",
+            "Pimienta negra tostada"
+          ],
+          "texture": [
+            "Pasta al dente envuelta en crema tersa de queso"
+          ],
+          "aroma": [
+            "Pecorino Romano",
+            "Pimienta negra tostada en seco",
+            "Agua de cocción de pasta"
+          ],
+          "presentation": "Spaghetti con una crema sedosa blanca salpicada de pimienta negra recién molida."
+        },
+        "nutrition": {
+          "calories": 510,
+          "macros": {
+            "protein_g": 20,
+            "fat_g": 18,
+            "carbs_g": 65
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Spaghetti Cacio e Pepe tradicional"
+          }
+        ],
+        "description": "Cacio e Pepe es una obra maestra de la simplicidad romana con solo tres ingredientes: pasta, queso Pecorino Romano y pimienta negra emulsionados con agua con almidón."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pasta Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "12 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Spaghetti o Tonnarelli",
+        "Queso Pecorino Romano DOP rallado muy fino",
+        "Pimienta negra en grano tostada",
+        "Sal gruesa"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/cacio_e_pepe.md"
+    },
+    {
+      "id": "italian/cannoli_siciliani",
+      "title": "Cannoli Siciliani al Pistacchio",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cannoli Siciliani al Pistacchio",
+        "region": "Sicilia (Palermo)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Vino Marsala",
+          "Manteca de cerdo",
+          "Ricotta de oveja fresca",
+          "Azúcar glass",
+          "Pistachos de Bronte picados",
+          "Gotas de chocolate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce de ricotta fresca",
+            "Cítrico de naranja",
+            "Cacao y vino en masa"
+          ],
+          "texture": [
+            "Cilindro crujiente frito",
+            "Relleno cremoso frío"
+          ],
+          "aroma": [
+            "Corteza frita con vino Marsala",
+            "Ricotta de oveja fresca majada"
+          ],
+          "presentation": "Tubo frito crujiente relleno de crema de ricotta en sus extremos espolvoreado con pistacho de Bronte."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 9,
+            "fat_g": 20,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cannoli Siciliani al Pistacchio tradicional"
+          }
+        ],
+        "description": "Los Cannoli Siciliani son tubos fritos de masa crujiente aromatizada con Marsala, rellenos al instante con dulce crema de ricotta de oveja y pistachos."
+      },
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Vino Marsala",
+        "Manteca de cerdo",
+        "Ricotta de oveja fresca",
+        "Azúcar glass",
+        "Pistachos de Bronte picados",
+        "Gotas de chocolate"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/cannoli_siciliani.md"
+    },
+    {
+      "id": "italian/caprese_salad",
+      "title": "Insalata Caprese Tradizionale",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Caprese Salad"
+          ]
+        },
+        "categories": [
+          "Entrante",
+          "Ensalada"
+        ],
+        "cook_time": "0 minutos",
+        "description": "La Insalata Caprese proviene de la isla de Capri, luciendo los colores italianos mediante rodajas de tomate maduro, mozzarella de búfala y albahaca fresca.",
+        "difficulty": "★☆☆☆☆",
+        "images": [
+          {
+            "description": "Insalata Caprese Tradizionale tradicional",
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Mozzarella de Búfala Campana DOP",
+          "Tomates maduros grandes (Cuore di Bue)",
+          "Hojas de albahaca fresca",
+          "Aceite de oliva virgen extra",
+          "Sal marina"
+        ],
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "carbs_g": 12,
+            "fat_g": 28,
+            "protein_g": 18
+          }
+        },
+        "prep_time": "10 minutos",
+        "region": "Campania (Capri)",
+        "sensory": {
+          "aroma": [
+            "Mozzarella di Bufala fresca",
+            "Aceite de oliva virgen extra de primera prensada"
+          ],
+          "flavor": [
+            "Lácteo fresco de mozzarella",
+            "Acidez dulce de tomate maduro",
+            "Herbal albahaca"
+          ],
+          "presentation": "Rodajas alternadas de tomate rojo y mozzarella blanca coronadas con albahaca verde.",
+          "texture": [
+            "Mozzarella jugosa",
+            "Tomate carnoso"
+          ]
+        },
+        "servings": 2,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "notes": "Derived from GOS Database",
+          "url": "pending"
+        },
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "title": "Insalata Caprese Tradizionale"
+      },
+      "category": [
+        "Entrante",
+        "Ensalada"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "0 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Mozzarella de Búfala Campana DOP",
+        "Tomates maduros grandes (Cuore di Bue)",
+        "Hojas de albahaca fresca",
+        "Aceite de oliva virgen extra",
+        "Sal marina"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/caprese_salad.md"
+    },
+    {
+      "id": "italian/focaccia_barese",
+      "title": "Focaccia Barese con Pomodorini",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Focaccia Barese con Pomodorini",
+        "region": "Puglia (Bari)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Panadería",
+          "Snack"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo de fuerza",
+          "Semola rimacinata",
+          "Patata cocida machacada",
+          "Tomates cherry maduros",
+          "Aceitunas de Bari",
+          "Orégano",
+          "Aceite de oliva extra virgen"
+        ],
+        "sensory": {
+          "flavor": [
+            "Aceite de oliva rico",
+            "Tomates cherry dulces asados",
+            "Orégano silvestre"
+          ],
+          "texture": [
+            "Exterior frito en bandeja crujiente",
+            "Miga interior alta esponjosa"
+          ],
+          "aroma": [
+            "Patata cocida en masa",
+            "Abundante aceite de oliva virgen extra"
+          ],
+          "presentation": "Pan rectangular alto con hendiduras cubierto de tomates cherry aplastados y aceitunas negras."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 18,
+            "carbs_g": 64
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Focaccia Barese con Pomodorini tradicional"
+          }
+        ],
+        "description": "La Focaccia Barese de Apulia incluye patata cocida en su masa para lograr una miga esponjosa con un exterior dorado frito en aceite de oliva y tomates asados."
+      },
+      "category": [
+        "Panadería",
+        "Snack"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Harina de trigo de fuerza",
+        "Semola rimacinata",
+        "Patata cocida machacada",
+        "Tomates cherry maduros",
+        "Aceitunas de Bari",
+        "Orégano",
+        "Aceite de oliva extra virgen"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/focaccia_barese.md"
+    },
+    {
+      "id": "italian/gnocchi_di_patate",
+      "title": "Gnocchi di Patate al Pesto",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gnocchi di Patate al Pesto",
+        "region": "Liguria (Génova)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pasta / Gnocchi"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Patatas harinosas",
+          "Harina de trigo",
+          "Huevo",
+          "Albahaca fresca de Génova",
+          "Piñones",
+          "Ajo",
+          "Parmigiano Reggiano",
+          "Aceite de oliva virgen extra"
+        ],
+        "sensory": {
+          "flavor": [
+            "Albahaca fresca herbal",
+            "Piñones tostados",
+            "Parmigiano salado"
+          ],
+          "texture": [
+            "Gnocchi extremadamente tiernos y ligeros"
+          ],
+          "aroma": [
+            "Pesto alla Genovese fresco",
+            "Patatas harinosas"
+          ],
+          "presentation": "Bocados de patata envueltos en pesto verde brillante con piñones integrados."
+        },
+        "nutrition": {
+          "calories": 580,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 26,
+            "carbs_g": 70
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gnocchi di Patate al Pesto tradicional"
+          }
+        ],
+        "description": "Los Gnocchi di Patate son delicadas bolitas de patata y harina servidas con Pesto alla Genovese majado en mortero con albahaca y piñones."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pasta / Gnocchi"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas harinosas",
+        "Harina de trigo",
+        "Huevo",
+        "Albahaca fresca de Génova",
+        "Piñones",
+        "Ajo",
+        "Parmigiano Reggiano",
+        "Aceite de oliva virgen extra"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/gnocchi_di_patate.md"
+    },
+    {
+      "id": "italian/lasagna_alla_bolognese",
+      "title": "Lasagna alla Bolognese",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Lasagna alla Bolognese",
+        "region": "Emilia-Romaña (Bolonia)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pasta al Forno"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "1 hora",
+        "cook_time": "2 horas",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Láminas de pasta al huevo",
+          "Carne picada de res y cerdo",
+          "Pancetta",
+          "Vino tinto",
+          "Concentrado de tomate",
+          "Leche entera",
+          "Mantequilla",
+          "Parmigiano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ragù espeso y cárnico",
+            "Bechamel cremosa láctea",
+            "Umami horneado"
+          ],
+          "texture": [
+            "Capas finas suaves de pasta",
+            "Corteza de queso gratinada crujiente"
+          ],
+          "aroma": [
+            "Ragù de cocción lenta (3h)",
+            "Bechamel recién hecha"
+          ],
+          "presentation": "Porción rectangular mostrando múltiples capas de pasta verde/huevo, ragù y bechamel dorada."
+        },
+        "nutrition": {
+          "calories": 820,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 44,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Lasagna alla Bolognese tradicional"
+          }
+        ],
+        "description": "La Lasagna alla Bolognese es un festín de Bolonia compuesto por finas capas de pasta al huevo intercaladas con ragù cárnico tradicional y salsa bechamel."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pasta al Forno"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "1 hora",
+      "cookTime": "2 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Láminas de pasta al huevo",
+        "Carne picada de res y cerdo",
+        "Pancetta",
+        "Vino tinto",
+        "Concentrado de tomate",
+        "Leche entera",
+        "Mantequilla",
+        "Parmigiano"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/lasagna_alla_bolognese.md"
+    },
+    {
+      "id": "italian/melanzane_alla_parmigiana",
+      "title": "Parmigiana di Melanzane",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Parmigiana di Melanzane",
+        "region": "Campania / Sicilia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Vegetariano"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Berenjenas grandes",
+          "Tomate triturado",
+          "Mozzarella de búfala",
+          "Parmigiano Reggiano",
+          "Albahaca fresca",
+          "Harina",
+          "Aceite de oliva para freír"
+        ],
+        "sensory": {
+          "flavor": [
+            "Berenjena frita terrosa",
+            "Salsa de tomate dulce",
+            "Queso derretido lácteo"
+          ],
+          "texture": [
+            "Melosa y tierna que se deshace en boca"
+          ],
+          "aroma": [
+            "Berenjenas fritas previo horneado",
+            "Mozzarella y Parmigiano"
+          ],
+          "presentation": "Pastel horneado de capas de berenjena dorada con salsa de tomate, mozzarella y albahaca."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 20,
+            "fat_g": 34,
+            "carbs_g": 32
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Parmigiana di Melanzane tradicional"
+          }
+        ],
+        "description": "La Parmigiana di Melanzane es un pastel del sur de Italia elaborado con capas de berenjenas fritas, salsa de tomate casera, albahaca y abundante mozzarella."
+      },
+      "category": [
+        "Plato fuerte",
+        "Vegetariano"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "40 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Berenjenas grandes",
+        "Tomate triturado",
+        "Mozzarella de búfala",
+        "Parmigiano Reggiano",
+        "Albahaca fresca",
+        "Harina",
+        "Aceite de oliva para freír"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/melanzane_alla_parmigiana.md"
+    },
+    {
+      "id": "italian/minestrone_alla_genovese",
+      "title": "Minestrone alla Genovese",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Minestrone alla Genovese",
+        "region": "Liguria",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Sopa",
+          "Casera"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Alubias blancas (Canellini)",
+          "Patatas",
+          "Calabacín",
+          "Zanahoria",
+          "Espinacas",
+          "Pasta corta (Ditalini)",
+          "Pesto de albahaca",
+          "Parmigiano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Vegetal fresco terroso",
+            "Pesto majado herbal",
+            "Legumbre suave"
+          ],
+          "texture": [
+            "Caldo reconfortante con trozos de verduras y pasta"
+          ],
+          "aroma": [
+            "Pesto alla Genovese añadido al final",
+            "Verduras de temporada"
+          ],
+          "presentation": "Sopa densa de vegetales multicolores terminada con una cucharada verde de pesto fresco."
+        },
+        "nutrition": {
+          "calories": 320,
+          "macros": {
+            "protein_g": 12,
+            "fat_g": 10,
+            "carbs_g": 46
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Minestrone alla Genovese tradicional"
+          }
+        ],
+        "description": "El Minestrone alla Genovese es una rica sopa de verduras de estación y alubias cuyo secreto radica en enriquecerse al final con auténtico pesto lígur."
+      },
+      "category": [
+        "Sopa",
+        "Casera"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Alubias blancas (Canellini)",
+        "Patatas",
+        "Calabacín",
+        "Zanahoria",
+        "Espinacas",
+        "Pasta corta (Ditalini)",
+        "Pesto de albahaca",
+        "Parmigiano"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/minestrone_alla_genovese.md"
+    },
+    {
+      "id": "italian/ossobuco_alla_milanese",
+      "title": "Ossobuco alla Milanese con Gremolata",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ossobuco alla Milanese con Gremolata",
+        "region": "Lombardía",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Estofado"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "2 horas",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Jarrete de ternera (Ossobuco)",
+          "Vino blanco seco",
+          "Caldo de carne",
+          "Cáscara de limón rallada",
+          "Ajo",
+          "Perejil fresco",
+          "Mantequilla",
+          "Harina"
+        ],
+        "sensory": {
+          "flavor": [
+            "Rico estofado de ternera",
+            "Cítrico de gremolata",
+            "Tuétano cremoso"
+          ],
+          "texture": [
+            "Carne melosa que se desprende del hueso"
+          ],
+          "aroma": [
+            "Gremolata (limón, ajo, perejil)",
+            "Vino blanco y caldo"
+          ],
+          "presentation": "Rodaja de jarrete de ternera con hueso central y tuétano sobre lecho de risotto o polenta."
+        },
+        "nutrition": {
+          "calories": 730,
+          "macros": {
+            "protein_g": 48,
+            "fat_g": 42,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Ossobuco alla Milanese con Gremolata tradicional"
+          }
+        ],
+        "description": "El Ossobuco alla Milanese es un corte transversal de jarrete de ternera estofado con vino blanco y coronado con gremolata fresca de limón, ajo y perejil."
+      },
+      "category": [
+        "Plato fuerte",
+        "Estofado"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "2 horas",
+      "servings": 4,
+      "mainIngredients": [
+        "Jarrete de ternera (Ossobuco)",
+        "Vino blanco seco",
+        "Caldo de carne",
+        "Cáscara de limón rallada",
+        "Ajo",
+        "Perejil fresco",
+        "Mantequilla",
+        "Harina"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/ossobuco_alla_milanese.md"
+    },
+    {
+      "id": "italian/panettone_tradizionale",
+      "title": "Panettone Artigianale",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Panettone Artigianale",
+        "region": "Lombardía (Milán)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Panadería",
+          "Navideño"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "2 horas",
+        "cook_time": "1 hora",
+        "servings": 10,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina panificable de gran fuerza",
+          "Lievito Madre (masa madre)",
+          "Mantequilla dulce",
+          "Yemas de huevo",
+          "Naranja confitada",
+          "Pasas Sultanas",
+          "Vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Mantequilla rica",
+            "Cítrico de naranja escarchada",
+            "Vainilla y pasas"
+          ],
+          "texture": [
+            "Miga alvéolada larguísima extremadamente esponjosa y suave"
+          ],
+          "aroma": [
+            "Masa madre viva (Lievito Madre)",
+            "Mantequilla de alta pureza"
+          ],
+          "presentation": "Pan cónico alto con cúpula dorada brillante y aroma complejo fermentado."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 8,
+            "fat_g": 18,
+            "carbs_g": 54
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Panettone Artigianale tradicional"
+          }
+        ],
+        "description": "El Panettone milanés es la joya de la repostería navideña italiana: un pan dulce de masa madre con 48h de fermentación, repleto de mantequilla y frutas confitadas."
+      },
+      "category": [
+        "Panadería",
+        "Navideño"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "2 horas",
+      "cookTime": "1 hora",
+      "servings": 10,
+      "mainIngredients": [
+        "Harina panificable de gran fuerza",
+        "Lievito Madre (masa madre)",
+        "Mantequilla dulce",
+        "Yemas de huevo",
+        "Naranja confitada",
+        "Pasas Sultanas",
+        "Vainilla"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/panettone_tradizionale.md"
+    },
+    {
+      "id": "italian/pizza_margherita",
+      "title": "Pizza Margherita Napoletana",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pizza Margherita Napoletana",
+        "region": "Campania (Nápoles)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pizza STG"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "2 minutos",
+        "servings": 2,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina Tipo 00",
+          "Agua",
+          "Levadura fresca",
+          "Tomate San Marzano DOP",
+          "Mozzarella de Búfala",
+          "Albahaca fresca",
+          "Aceite de oliva extra virgen"
+        ],
+        "sensory": {
+          "flavor": [
+            "Acidez fresca del tomate San Marzano",
+            "Lácteo de mozzarella",
+            "Albahaca herbal"
+          ],
+          "texture": [
+            "Masa con alveolado alto suave y masticable (cornicione)"
+          ],
+          "aroma": [
+            "Horno de leña 450°C",
+            "Albahaca fresca",
+            "Aceite de oliva virgen extra"
+          ],
+          "presentation": "Pizza circular de borde prominente moteado de tostado con tomate rojo, mozzarella melted y albahaca."
+        },
+        "nutrition": {
+          "calories": 750,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 110
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pizza Margherita Napoletana tradicional"
+          }
+        ],
+        "description": "La Pizza Margherita es el estandarte de Nápoles, creada en honor a la reina Margarita con los colores de la bandera italiana: tomate, mozzarella y albahaca."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pizza STG"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "2 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Harina Tipo 00",
+        "Agua",
+        "Levadura fresca",
+        "Tomate San Marzano DOP",
+        "Mozzarella de Búfala",
+        "Albahaca fresca",
+        "Aceite de oliva extra virgen"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/pizza_margherita.md"
+    },
+    {
+      "id": "italian/pollo_alla_cacciatora",
+      "title": "Pollo alla Cacciatora",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pollo alla Cacciatora",
+        "region": "Toscana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Estofado"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "45 minutos",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo entero troceado",
+          "Tomates triturados",
+          "Vino tinto seco",
+          "Aceitunas negras",
+          "Cebolla",
+          "Romero",
+          "Ajo",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Tomate guisado acido dulce",
+            "Vino tinto especiado",
+            "Hierbas silvestres (romero)"
+          ],
+          "texture": [
+            "Carne de pollo tierna jugosa"
+          ],
+          "aroma": [
+            "Romero y tomillo frescos",
+            "Aceitunas negras t interior"
+          ],
+          "presentation": "Trozos de pollo estofados en salsa roja espesa con aceitunas y hierbas leñosas."
+        },
+        "nutrition": {
+          "calories": 560,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 28,
+            "carbs_g": 20
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pollo alla Cacciatora tradicional"
+          }
+        ],
+        "description": "El Pollo alla Cacciatora ('al estilo del cazador') es un guiso toscano rústico de pollo dorado y estofado con vino tinto, tomates, romero y aceitunas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Estofado"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "45 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo entero troceado",
+        "Tomates triturados",
+        "Vino tinto seco",
+        "Aceitunas negras",
+        "Cebolla",
+        "Romero",
+        "Ajo",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/pollo_alla_cacciatora.md"
+    },
+    {
+      "id": "italian/porchetta_di_ariccia",
+      "title": "Porchetta di Ariccia",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Porchetta di Ariccia",
+        "region": "Lazio (Ariccia)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Street Food",
+          "Asado"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora",
+        "cook_time": "4 horas",
+        "servings": 10,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Cerdo entero deshuesado con piel",
+          "Romero fresco picado",
+          "Ajo granulado",
+          "Semillas de hinojo silvestre",
+          "Pimienta negra molida",
+          "Sal marina"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado especiado potente",
+            "Romero y romero",
+            "Pork fat rico"
+          ],
+          "texture": [
+            "Corteza (crosta) hiper crujiente sonora",
+            "Carne interior super suave"
+          ],
+          "aroma": [
+            "Piel tostada crujiente",
+            "Romero, pimienta y ajo en espiral"
+          ],
+          "presentation": "Rodajas gruesas servidas en pan rústico mostrando la espiral de carne sazonada y la corteza dorada."
+        },
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 56,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Porchetta di Ariccia tradicional"
+          }
+        ],
+        "description": "La Porchetta di Ariccia es un asado tradicional de cerdo entero deshuesado, condimentado con romero, hinojo y ajo, con una corteza crujiente legendaria."
+      },
+      "category": [
+        "Street Food",
+        "Asado"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora",
+      "cookTime": "4 horas",
+      "servings": 10,
+      "mainIngredients": [
+        "Cerdo entero deshuesado con piel",
+        "Romero fresco picado",
+        "Ajo granulado",
+        "Semillas de hinojo silvestre",
+        "Pimienta negra molida",
+        "Sal marina"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/porchetta_di_ariccia.md"
+    },
+    {
+      "id": "italian/risotto_alla_milanese",
+      "title": "Risotto alla Milanese",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Risotto alla Milanese",
+        "region": "Lombardía (Milán)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Risotto"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz Carnaroli o Arborio",
+          "Azafrán puro en hebras",
+          "Tuétano de res",
+          "Mantequilla de calidad",
+          "Parmigiano Reggiano DOP",
+          "Caldo de res",
+          "Vino blanco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Azafrán refinado terroso",
+            "Umami de Parmigiano",
+            "Mantequilla rica"
+          ],
+          "texture": [
+            "Textura mantecada al onda (fluida y cremosa)"
+          ],
+          "aroma": [
+            "Azafrán en hebras",
+            "Tuétano de res (midollo)",
+            "Vino blanco seco"
+          ],
+          "presentation": "Plato llano con risotto de color amarillo oro intenso y brillo de mantecatura."
+        },
+        "nutrition": {
+          "calories": 540,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 24,
+            "carbs_g": 66
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Risotto alla Milanese tradicional"
+          }
+        ],
+        "description": "El Risotto alla Milanese brilla por el color y aroma del azafrán puro, elaborado con arroz Carnaroli mantecado con mantequilla y Parmigiano Reggiano."
+      },
+      "category": [
+        "Plato fuerte",
+        "Risotto"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Carnaroli o Arborio",
+        "Azafrán puro en hebras",
+        "Tuétano de res",
+        "Mantequilla de calidad",
+        "Parmigiano Reggiano DOP",
+        "Caldo de res",
+        "Vino blanco"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/risotto_alla_milanese.md"
+    },
+    {
+      "id": "italian/saltimbocca_alla_romana",
+      "title": "Saltimbocca alla Romana",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Saltimbocca alla Romana",
+        "region": "Lazio (Roma)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "8 minutos",
+        "servings": 2,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Escalopes finos de ternera",
+          "Prosciutto di Parma",
+          "Hojas de salvia fresca",
+          "Vino blanco seco",
+          "Mantequilla",
+          "Harina ligera"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado de Prosciutto di Parma",
+            "Herbal fresco de Salvia",
+            "Acidez de Vino Blanco"
+          ],
+          "texture": [
+            "Escalope de ternera muy tierno"
+          ],
+          "aroma": [
+            "Salvia fresca sujetada con palillo",
+            "Prosciutto di Parma"
+          ],
+          "presentation": "Filetes finos de ternera cubiertos con loncha de prosciutto y hoja verde de salvia cocinados en mantequilla."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 24,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Saltimbocca alla Romana tradicional"
+          }
+        ],
+        "description": "Saltimbocca literalmente significa 'salta en la boca': finos filetes de ternera coronados con salvia y prosciutto, salteados rápidamente en vino y mantequilla."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "8 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Escalopes finos de ternera",
+        "Prosciutto di Parma",
+        "Hojas de salvia fresca",
+        "Vino blanco seco",
+        "Mantequilla",
+        "Harina ligera"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/saltimbocca_alla_romana.md"
+    },
+    {
+      "id": "italian/spaghetti_carbonara",
+      "title": "Spaghetti alla Carbonara",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Spaghetti alla Carbonara",
+        "region": "Lazio (Roma)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pasta Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Spaghetti de sémola",
+          "Guanciale de cerdo",
+          "Yemas de huevo frescas",
+          "Pecorino Romano DOP",
+          "Pimienta negra entera"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado curado (Guanciale)",
+            "Umami de Pecorino Romano",
+            "Pimienta negra picante"
+          ],
+          "texture": [
+            "Pasta al dente",
+            "Salsa cremosa emulsionada sin nata"
+          ],
+          "aroma": [
+            "Guanciale dorado",
+            "Pecorino Romano recién rallado",
+            "Pimienta recién molida"
+          ],
+          "presentation": "Spaghetti envueltos en crema dorada de yema y queso con trozos crujientes de guanciale."
+        },
+        "nutrition": {
+          "calories": 620,
+          "macros": {
+            "protein_g": 26,
+            "fat_g": 28,
+            "carbs_g": 66
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Spaghetti alla Carbonara tradicional"
+          }
+        ],
+        "description": "La auténtica Carbonara romana no lleva nata ni cebolla: se basa en la emulsión de yemas de huevo, queso Pecorino Romano, grasa de guanciale y abundante pimienta."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pasta Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Spaghetti de sémola",
+        "Guanciale de cerdo",
+        "Yemas de huevo frescas",
+        "Pecorino Romano DOP",
+        "Pimienta negra entera"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/spaghetti_carbonara.md"
+    },
+    {
+      "id": "italian/tagliatelle_al_ragu",
+      "title": "Tagliatelle al Ragù Bolognese",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tagliatelle al Ragù Bolognese",
+        "region": "Emilia-Romaña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Pasta Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "3 horas",
+        "servings": 4,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tagliatelle frescas al huevo",
+          "Carne picada de res",
+          "Magro de cerdo",
+          "Pancetta",
+          "Zanahoria",
+          "Apio",
+          "Cebolla",
+          "Vino blanco",
+          "Leche"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami cárnico complejo",
+            "Dulzor sutil de sofrito",
+            "Salado rico"
+          ],
+          "texture": [
+            "Pasta al huevo fresca porosa al dente"
+          ],
+          "aroma": [
+            "Ragù cocido a fuego lento",
+            "Pasta fresca recién estirada"
+          ],
+          "presentation": "Pasta cinta ancha impregnada uniformemente con ragù espeso de res y cerdo."
+        },
+        "nutrition": {
+          "calories": 690,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 30,
+            "carbs_g": 72
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tagliatelle al Ragù Bolognese tradicional"
+          }
+        ],
+        "description": "Las Tagliatelle al Ragù son la pareja perfecta en Bolonia: la porosidad de la pasta fresca al huevo retiene el espeso y sabroso estofado de carne."
+      },
+      "category": [
+        "Plato fuerte",
+        "Pasta Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "3 horas",
+      "servings": 4,
+      "mainIngredients": [
+        "Tagliatelle frescas al huevo",
+        "Carne picada de res",
+        "Magro de cerdo",
+        "Pancetta",
+        "Zanahoria",
+        "Apio",
+        "Cebolla",
+        "Vino blanco",
+        "Leche"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/tagliatelle_al_ragu.md"
+    },
+    {
+      "id": "italian/tiramisu_classico",
+      "title": "Tiramisù Classico",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tiramisù Classico",
+        "region": "Véneto (Treviso)",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "0 minutos",
+        "servings": 8,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Bizcochos Savoiardi (soletillas)",
+          "Queso Mascarpone",
+          "Huevos frescos",
+          "Azúcar",
+          "Café espresso fuerte",
+          "Cacao amargo en polvo",
+          "Licor Amaretto o Marsala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Café espresso amargo",
+            "Dulce cremoso de Mascarpone",
+            "Cacao amargo"
+          ],
+          "texture": [
+            "Bizcocho empapado suave",
+            "Crema sedosa aireada"
+          ],
+          "aroma": [
+            "Café espresso intenso",
+            "Queso Mascarpone",
+            "Cacao en polvo"
+          ],
+          "presentation": "Capa superior espolvoreada de cacao oscuro sobre crema suave de mascarpone."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 28,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tiramisù Classico tradicional"
+          }
+        ],
+        "description": "El Tiramisù es el postre italiano más famoso del mundo: bizcochos Savoiardi impregnados de espresso y licor, alternados con crema de mascarpone y cacao."
+      },
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "0 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Bizcochos Savoiardi (soletillas)",
+        "Queso Mascarpone",
+        "Huevos frescos",
+        "Azúcar",
+        "Café espresso fuerte",
+        "Cacao amargo en polvo",
+        "Licor Amaretto o Marsala"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/tiramisu_classico.md"
+    },
+    {
+      "id": "italian/vitello_tonnato",
+      "title": "Vitello Tonnato",
+      "language": "spanish",
+      "country": "italy",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Vitello Tonnato",
+        "region": "Piamonte",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Plato frío"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Italian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Peceto o redondo de ternera",
+          "Vino blanco",
+          "Atún en aceite de oliva",
+          "Alcaparras",
+          "Yemas de huevo (mayonesa casera)",
+          "Anchoas en aceite",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salsa de atún umami cremosa",
+            "Alcaparras ácidas saladas",
+            "Ternera fina delicada"
+          ],
+          "texture": [
+            "Láminas de carne finísimas suaves"
+          ],
+          "aroma": [
+            "Salsa de atún y alcaparras",
+            "Ternera hervida a la pimienta"
+          ],
+          "presentation": "Láminas finas de ternera dispuestas en plato cubiertas por crema tersa de atún y alcaparras."
+        },
+        "nutrition": {
+          "calories": 440,
+          "macros": {
+            "protein_g": 36,
+            "fat_g": 26,
+            "carbs_g": 6
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Vitello Tonnato tradicional"
+          }
+        ],
+        "description": "El Vitello Tonnato es un clásico refinado del Piamonte servido frío: finas lonchas de ternera hervida cubiertas por una delicada crema de atún, anchoas y alcaparras."
+      },
+      "category": [
+        "Entrante",
+        "Plato frío"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "40 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Peceto o redondo de ternera",
+        "Vino blanco",
+        "Atún en aceite de oliva",
+        "Alcaparras",
+        "Yemas de huevo (mayonesa casera)",
+        "Anchoas en aceite",
+        "Limón"
+      ],
+      "tags": [
+        "Italian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/italian/vitello_tonnato.md"
+    }
+  ],
+  "count": 20
+}

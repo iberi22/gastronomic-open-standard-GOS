@@ -1,0 +1,2338 @@
+{
+  "recipes": [
+    {
+      "id": "brazilian/acai_na_tigela",
+      "title": "Açaí na Tigela",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Açaí na Tigela",
+        "region": "Pará / Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/acai-na-tigela",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sobremesa",
+          "Café da manhã",
+          "Funcional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "0 minutos",
+        "servings": 2,
+        "tags": [
+          "Açaí",
+          "Banana",
+          "Amazônia",
+          "Antioxidantes",
+          "Frutas"
+        ],
+        "main_ingredients": [
+          "Polpa congelada de açaí puro",
+          "Banana madura congelada",
+          "Guaraná em pó ou xarope",
+          "Granola artesanal",
+          "Frutas frescas fatiadas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Doce",
+            "Terroso",
+            "Ácido",
+            "Frutado"
+          ],
+          "texture": [
+            "Cremoso",
+            "Gelado",
+            "Crocante (granola)"
+          ],
+          "aroma": [
+            "Frutado silvestre",
+            "Terroso característico"
+          ],
+          "presentation": "Servido em tigela funda, decorado simetricamente com fatias de banana, morangos, granola e polvilhado com guaraná."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590301157890-4810ed352733",
+            "description": "Tigela de açaí cremoso com banana e granola"
+          }
+        ],
+        "description": "O Açaí na Tigela é um preparado energizante feito com a polpa congelada do fruto da palmeira Euterpe oleracea, batida até atingir textura cremosa de sorvete, rico em antocianinas, gorduras saudáveis e minerais."
+      },
+      "category": [
+        "Sobremesa",
+        "Café da manhã",
+        "Funcional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "0 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Polpa congelada de açaí puro",
+        "Banana madura congelada",
+        "Guaraná em pó ou xarope",
+        "Granola artesanal",
+        "Frutas frescas fatiadas"
+      ],
+      "tags": [
+        "Açaí",
+        "Banana",
+        "Amazônia",
+        "Antioxidantes",
+        "Frutas"
+      ],
+      "filePath": "dishes/brazilian/acai_na_tigela.md"
+    },
+    {
+      "id": "brazilian/acaraje",
+      "title": "Acarajé Baiano",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Acarajé Baiano",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/23114-acaraje-da-bahia.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Entrada",
+          "Comida callejera",
+          "Afrobrasileño"
+        ],
+        "difficulty": "★★★★★",
+        "prep_time": "24 horas",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Frijol carilla",
+          "Dendê",
+          "Camarón seco",
+          "Bahía",
+          "Frito"
+        ],
+        "main_ingredients": [
+          "Frijol carilla (feijão fradinho)",
+          "Aceite de dendê (palma)",
+          "Cebolla picada",
+          "Camarones secos salados"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Picante",
+            "Marino",
+            "Afrutado (aceite de dendê)"
+          ],
+          "texture": [
+            "Extremadamente crujiente (exterior)",
+            "Cremoso y denso (interior)"
+          ],
+          "aroma": [
+            "Frito en dendê (aceite de palma)",
+            "Camarón seco",
+            "Cebolla y ajo tostados"
+          ],
+          "presentation": "Servido cortado por la mitad, relleno generosamente con vatapá, caruru (guiso de quingombó), camarones secos salteados y salsa de chile picante."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 28,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1563245372-f21724e3856d",
+            "description": "Acarajé frito en aceite de dendê caliente (Unsplash)"
+          }
+        ],
+        "description": "El Acarajé es el bocado de comida callejera más famoso del noreste brasileño. Se trata de un buñuelo crujiente y aireado elaborado a partir de una masa batida de frijol carilla y cebolla, frito en abundante aceite de dendê. Es un alimento sagrado del Candomblé y símbolo cultural de las Baianas de Acarajé."
+      },
+      "category": [
+        "Entrada",
+        "Comida callejera",
+        "Afrobrasileño"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "24 horas",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Frijol carilla (feijão fradinho)",
+        "Aceite de dendê (palma)",
+        "Cebolla picada",
+        "Camarones secos salados"
+      ],
+      "tags": [
+        "Frijol carilla",
+        "Dendê",
+        "Camarón seco",
+        "Bahía",
+        "Frito"
+      ],
+      "filePath": "dishes/brazilian/acaraje.md"
+    },
+    {
+      "id": "brazilian/baiao_de_dois",
+      "title": "Baião de Dois",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Baião de Dois",
+        "region": "Ceará / Nordeste, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/baiao-de-dois",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Acompanhamento",
+          "Culinária Nordestina"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "35 minutos",
+        "servings": 6,
+        "tags": [
+          "Feijão fradinho",
+          "Arroz",
+          "Queijo coalho",
+          "Carne de sol",
+          "Nordeste"
+        ],
+        "main_ingredients": [
+          "Feijão-de-corda ou fradinho",
+          "Arroz branco",
+          "Queijo coalho em cubos",
+          "Carne de sol desfiada",
+          "Coentro e manteiga de garrafa"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Umami",
+            "Lácteo (queijo assado)",
+            "Defumado"
+          ],
+          "texture": [
+            "Grãos soltos e úmidos",
+            "Queijo macio e derretido"
+          ],
+          "aroma": [
+            "Manteiga de garrafa",
+            "Carne de sol tostada",
+            "Coentro"
+          ],
+          "presentation": "Servido em travessa grande com cubos de queijo coalho grelhados dourados por cima e salpicado com bastante coentro e pimenta-biquinho."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+            "description": "Baião de dois tradicional com queijo coalho e carne de sol"
+          }
+        ],
+        "description": "O Baião de Dois é o prato mais emblemático do sertão nordestino brasileiro, misturando feijão-de-corda cozido e arroz cozidos no mesmo caldo, enriquecidos com carne de sol, queijo coalho, manteiga de garrafa e coentro."
+      },
+      "category": [
+        "Prato principal",
+        "Acompanhamento",
+        "Culinária Nordestina"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "35 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Feijão-de-corda ou fradinho",
+        "Arroz branco",
+        "Queijo coalho em cubos",
+        "Carne de sol desfiada",
+        "Coentro e manteiga de garrafa"
+      ],
+      "tags": [
+        "Feijão fradinho",
+        "Arroz",
+        "Queijo coalho",
+        "Carne de sol",
+        "Nordeste"
+      ],
+      "filePath": "dishes/brazilian/baiao_de_dois.md"
+    },
+    {
+      "id": "brazilian/bobo_de_camarao",
+      "title": "Bobó de Camarão",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bobó de Camarão",
+        "region": "Bahia, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/bobo-de-camarao",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Frutos do mar",
+          "Culinária Afro-brasileira"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "35 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Camarão",
+          "Mandioca",
+          "Dendê",
+          "Leite de coco",
+          "Bahia"
+        ],
+        "main_ingredients": [
+          "Camarões frescos limpos",
+          "Mandioca (aipim) cozida e batida",
+          "Leite de coco",
+          "Azeite de dendê",
+          "Pimentões e tomates"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Cremoso",
+            "Lácteo (coco)",
+            "Terroso (dendê)"
+          ],
+          "texture": [
+            "Velouté denso",
+            "Camarão firme e suculento"
+          ],
+          "aroma": [
+            "Dendê",
+            "Camarão salteado",
+            "Leite de coco"
+          ],
+          "presentation": "Servido em travessa de barro, decorado com camarões inteiros grelhados, folhas de coentro e um fio de azeite de dendê."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641",
+            "description": "Bobó de camarão cremoso servido em panela de barro"
+          }
+        ],
+        "description": "O Bobó de Camarão é um creme suntuoso de mandioca (aipim) cozida e batida com leite de coco, azeite de dendê e temperos frescos, enriquecido com camarões suculentos refogados. Um clássico afro-baiano incomparável."
+      },
+      "category": [
+        "Prato principal",
+        "Frutos do mar",
+        "Culinária Afro-brasileira"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "35 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Camarões frescos limpos",
+        "Mandioca (aipim) cozida e batida",
+        "Leite de coco",
+        "Azeite de dendê",
+        "Pimentões e tomates"
+      ],
+      "tags": [
+        "Camarão",
+        "Mandioca",
+        "Dendê",
+        "Leite de coco",
+        "Bahia"
+      ],
+      "filePath": "dishes/brazilian/bobo_de_camarao.md"
+    },
+    {
+      "id": "brazilian/bolo_de_rolo",
+      "title": "Bolo de Rolo Pernambucano",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bolo de Rolo Pernambucano",
+        "region": "Pernambuco, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/bolo-de-rolo",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sobremesa",
+          "Bolo tradicional",
+          "Patrimônio Imaterial"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "40 minutos",
+        "cook_time": "15 minutos",
+        "servings": 12,
+        "tags": [
+          "Goiabada",
+          "Bolo",
+          "Pernambuco",
+          "Sobremesa",
+          "Patrimônio"
+        ],
+        "main_ingredients": [
+          "Manteiga sem sal em ponto de pomada",
+          "Açúcar refinado",
+          "Gemas e ovos frescos",
+          "Farinha de trigo fina",
+          "Goiabada derretida em ponto de geleia"
+        ],
+        "sensory": {
+          "flavor": [
+            "Doce",
+            "Mantecoso",
+            "Levemente ácido (goiaba)",
+            "Delicado"
+          ],
+          "texture": [
+            "Camadas finíssimas e macias",
+            "Aveludado",
+            "Derrete na boca"
+          ],
+          "aroma": [
+            "Manteiga assada",
+            "Goiaba quente",
+            "Baunilha"
+          ],
+          "presentation": "Servido fatiado em rodelas muito finas mostrando o roredondilho espiral de dezenas de camadas finíssimas de massa e goiabada, polvilhado com açúcar refinado."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+            "description": "Bolo de rolo pernambucano fatiado mostrando as finas camadas de goiabada"
+          }
+        ],
+        "description": "O Bolo de Rolo é o patrimônio imaterial e símbolo gastronomico supremo de Pernambuco. Constitui-se de camadas finíssimas de massa amanteigada de pão de ló enroladas com goiabada derretida em uma espiral perfeita."
+      },
+      "category": [
+        "Sobremesa",
+        "Bolo tradicional",
+        "Patrimônio Imaterial"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "40 minutos",
+      "cookTime": "15 minutos",
+      "servings": 12,
+      "mainIngredients": [
+        "Manteiga sem sal em ponto de pomada",
+        "Açúcar refinado",
+        "Gemas e ovos frescos",
+        "Farinha de trigo fina",
+        "Goiabada derretida em ponto de geleia"
+      ],
+      "tags": [
+        "Goiabada",
+        "Bolo",
+        "Pernambuco",
+        "Sobremesa",
+        "Patrimônio"
+      ],
+      "filePath": "dishes/brazilian/bolo_de_rolo.md"
+    },
+    {
+      "id": "brazilian/brigadeiro",
+      "title": "Brigadeiro Tradicional Brasileiro",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Brigadeiro Tradicional Brasileiro",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/114-brigadeiro.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Festivo"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 12,
+        "tags": [
+          "Chocolate",
+          "Dulce",
+          "Leche condensada",
+          "Fiesta",
+          "Postre"
+        ],
+        "main_ingredients": [
+          "Leche condensada",
+          "Cacao en polvo",
+          "Mantequilla sin sal",
+          "Granillo de chocolate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Chocolate intenso",
+            "Lácteo (caramelo)"
+          ],
+          "texture": [
+            "Cremoso",
+            "Pegajoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Cacao tostado",
+            "Leche condensada cocida",
+            "Mantequilla"
+          ],
+          "presentation": "Servido en pequeños capacillos (pirotines) de papel de colores, cubierto uniformemente con chispas o granas de chocolate."
+        },
+        "nutrition": {
+          "calories": 90,
+          "macros": {
+            "protein_g": 1.5,
+            "fat_g": 3.5,
+            "carbs_g": 14
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838",
+            "description": "Trufas de brigadeiro decoradas con chispas de chocolate (Unsplash)"
+          }
+        ],
+        "description": "El Brigadeiro es el dulce de chocolate más emblemático de Brasil. Elaborado con solo tres ingredientes principales—leche condensada, cacao en polvo y mantequilla—este fudge suave se cocina hasta espesar, se enrolla en bolitas y se cubre con fideos de chocolate. Es indispensable en todos los cumpleaños brasileños."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Festivo"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 12,
+      "mainIngredients": [
+        "Leche condensada",
+        "Cacao en polvo",
+        "Mantequilla sin sal",
+        "Granillo de chocolate"
+      ],
+      "tags": [
+        "Chocolate",
+        "Dulce",
+        "Leche condensada",
+        "Fiesta",
+        "Postre"
+      ],
+      "filePath": "dishes/brazilian/brigadeiro.md"
+    },
+    {
+      "id": "brazilian/caipirinha",
+      "title": "Caipirinha Tradicional Brasileira",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Caipirinha Tradicional Brasileira",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/1220-caipirinha.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Bebida",
+          "Cóctel",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "5 minutos",
+        "cook_time": "0 minutos",
+        "servings": 1,
+        "tags": [
+          "Cachaça",
+          "Limón",
+          "Cóctel",
+          "Bebida",
+          "Refrescante"
+        ],
+        "main_ingredients": [
+          "Cachaça",
+          "Limón tahití (lima verde brasileña)",
+          "Azúcar blanca refinada",
+          "Hielo picado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Dulce",
+            "Alcohólico (cachaça)",
+            "Amargo (corteza de limón)"
+          ],
+          "texture": [
+            "Líquido",
+            "Refrescante"
+          ],
+          "aroma": [
+            "Limón fresco exprimido",
+            "Caña de azúcar",
+            "Alcohol de caña (cachaça)"
+          ],
+          "presentation": "Servido en un vaso corto (old fashioned o de caipirinha), decorado con rodajas o cuñas de limón machacadas y abundante hielo picado, con dos popotes cortos."
+        },
+        "nutrition": {
+          "calories": 180,
+          "macros": {
+            "protein_g": 0.1,
+            "fat_g": 0,
+            "carbs_g": 15
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+            "description": "Caipirinha brasileña fresca con rodajas de limón y hielo (Unsplash)"
+          }
+        ],
+        "description": "La Caipirinha es la bebida nacional de Brasil y su cóctel más famoso en todo el mundo. Elaborada de manera extremadamente sencilla utilizando únicamente cachaça (destilado de caña de azúcar brasileño), limón fresco machacado, azúcar blanca refinada y abundante hielo, destaca por su sabor cítrico, dulce y sumamente refrescante."
+      },
+      "category": [
+        "Bebida",
+        "Cóctel",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "5 minutos",
+      "cookTime": "0 minutos",
+      "servings": 1,
+      "mainIngredients": [
+        "Cachaça",
+        "Limón tahití (lima verde brasileña)",
+        "Azúcar blanca refinada",
+        "Hielo picado"
+      ],
+      "tags": [
+        "Cachaça",
+        "Limón",
+        "Cóctel",
+        "Bebida",
+        "Refrescante"
+      ],
+      "filePath": "dishes/brazilian/caipirinha.md"
+    },
+    {
+      "id": "brazilian/caruru",
+      "title": "Caruru Baiano",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Caruru Baiano",
+        "region": "Bahia, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/caruru",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Acompanhamento",
+          "Culinária Afro-brasileira",
+          "Candomblé"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 6,
+        "tags": [
+          "Quiabo",
+          "Camarão seco",
+          "Castanha de caju",
+          "Amendoim",
+          "Azeite de dendê"
+        ],
+        "main_ingredients": [
+          "Quiabo fresco cortado em rodelas",
+          "Camarão seco moído",
+          "Castanha de caju torrada e moída",
+          "Amendoim torrado e moído",
+          "Azeite de dendê"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salgado",
+            "Terroso (dendê e quiabo)",
+            "Oleaginoso (nozes)"
+          ],
+          "texture": [
+            "Mucinoso viscoso",
+            "Pastoso",
+            "Crocante (pedacinhos de castanha)"
+          ],
+          "aroma": [
+            "Dendê",
+            "Camarão seco",
+            "Castanha torrada"
+          ],
+          "presentation": "Servido em cuia de barro verde-brilhante salpicada com camarões secos inteiros por cima, como acompanhamento indispensável do acarajé ou vatapá."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999",
+            "description": "Caruru baiano cremoso de quiabo com camarão seco e dendê"
+          }
+        ],
+        "description": "O Caruru é um guisado cremoso feito com quiabos fatiados finamente, camarões secos, castanha de caju, amendoim e azeite de dendê. Prato ritual do Candomblé e elemento central do tabuleiro da baiana."
+      },
+      "category": [
+        "Acompanhamento",
+        "Culinária Afro-brasileira",
+        "Candomblé"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Quiabo fresco cortado em rodelas",
+        "Camarão seco moído",
+        "Castanha de caju torrada e moída",
+        "Amendoim torrado e moído",
+        "Azeite de dendê"
+      ],
+      "tags": [
+        "Quiabo",
+        "Camarão seco",
+        "Castanha de caju",
+        "Amendoim",
+        "Azeite de dendê"
+      ],
+      "filePath": "dishes/brazilian/caruru.md"
+    },
+    {
+      "id": "brazilian/churrasco",
+      "title": "Churrasco Gaúcho de Picanha",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Churrasco Gaúcho de Picanha",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/1897-churrasco-de-picanha.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Barbacoa"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 6,
+        "tags": [
+          "Res",
+          "Picanha",
+          "Asado",
+          "Gaúcho",
+          "Carbón"
+        ],
+        "main_ingredients": [
+          "Picanha (tapa de cuadril) de res",
+          "Sal gruesa (sal grosso)",
+          "Carbón vegetal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami intenso",
+            "Ahumado"
+          ],
+          "texture": [
+            "Jugoso",
+            "Firme",
+            "Tierno"
+          ],
+          "aroma": [
+            "Carne asada al carbón",
+            "Grasa de res tostada"
+          ],
+          "presentation": "Cortado en rodajas delgadas directamente desde la espada o espiedo sobre una tabla de madera, acompañado de farofa de mantequilla y salsa vinagreta brasileña."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 34,
+            "carbs_g": 0
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Cortes de picanha asándose al carbón en espadas (Unsplash)"
+          }
+        ],
+        "description": "El Churrasco es el legendario asado brasileño originario de la cultura gaúcha del sur del país. Su corte estrella es la Picanha (tapa de cuadril), famosa por su jugosidad y su gruesa capa de grasa exterior. Cocinada al carbón utilizando únicamente sal gruesa, conserva el sabor más puro e intenso de la carne de res."
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Barbacoa"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Picanha (tapa de cuadril) de res",
+        "Sal gruesa (sal grosso)",
+        "Carbón vegetal"
+      ],
+      "tags": [
+        "Res",
+        "Picanha",
+        "Asado",
+        "Gaúcho",
+        "Carbón"
+      ],
+      "filePath": "dishes/brazilian/churrasco.md"
+    },
+    {
+      "id": "brazilian/coxinha",
+      "title": "Coxinha de Frango Tradicional",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Coxinha de Frango Tradicional",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/1142-coxinha-de-frango-maravilhosa.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Snack",
+          "Comida callejera",
+          "Fritura"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Pollo",
+          "Frito",
+          "Snack",
+          "Catupiry",
+          "Salgadinho"
+        ],
+        "main_ingredients": [
+          "Pollo desmechado",
+          "Harina de trigo",
+          "Caldo de pollo concentrado",
+          "Queso Catupiry o requeijão",
+          "Pan rallado (farinha de rosca)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de pollo",
+            "Cremoso (queso requeijão)"
+          ],
+          "texture": [
+            "Muy crujiente (exterior)",
+            "Suave y blando (masa)",
+            "Desmechado (relleno)"
+          ],
+          "aroma": [
+            "Pollo sofrito",
+            "Ajo y cebolla",
+            "Masa frita caliente"
+          ],
+          "presentation": "Moldeadas en su forma característica de gota o muslo de pollo, servidas calientes sobre papel absorbente en bandejas de panadería."
+        },
+        "nutrition": {
+          "calories": 320,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 16,
+            "carbs_g": 30
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1585503415901-274e303bc869",
+            "description": "Coxinhas de frango crujientes servidas calientes (Unsplash)"
+          }
+        ],
+        "description": "La Coxinha de Frango es el bocadillo o \"salgadinho\" frito más popular de todo Brasil. Consiste en una masa suave hecha a base de caldo de pollo concentrado y harina de trigo, rellena de pechuga de pollo desmechada sazonada con sofrito de cebolla, ajo, tomate y opcionalmente queso Catupiry o requeijão, moldeada con forma de muslo de pollo, empanada y frita."
+      },
+      "category": [
+        "Snack",
+        "Comida callejera",
+        "Fritura"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "45 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo desmechado",
+        "Harina de trigo",
+        "Caldo de pollo concentrado",
+        "Queso Catupiry o requeijão",
+        "Pan rallado (farinha de rosca)"
+      ],
+      "tags": [
+        "Pollo",
+        "Frito",
+        "Snack",
+        "Catupiry",
+        "Salgadinho"
+      ],
+      "filePath": "dishes/brazilian/coxinha.md"
+    },
+    {
+      "id": "brazilian/creme_de_cupuacu",
+      "title": "Creme de Cupuaçu",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Creme de Cupuaçu",
+        "region": "Amazonas / Pará, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sobremesa",
+          "Culinária Amazônica",
+          "Doces"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "0 minutos",
+        "servings": 6,
+        "tags": [
+          "Cupuaçu",
+          "Amazônia",
+          "Sobremesa",
+          "Leite condensado",
+          "Frutas tropicais"
+        ],
+        "main_ingredients": [
+          "Polpa de cupuaçu fresca ou congelada",
+          "Leite condensado",
+          "Creme de leite",
+          "Raspas de chocolate amargo (opcional)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Doce",
+            "Lácteo",
+            "Aromático tropical"
+          ],
+          "texture": [
+            "Cremoso",
+            "Aveludado",
+            "Leve"
+          ],
+          "aroma": [
+            "Cupuaçu intenso",
+            "Lácteo doce"
+          ],
+          "presentation": "Servido em taças individuais de vidro, bem gelado, decorado com raspas de chocolate amargo ou castanha-do-pará picada."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+            "description": "Taça de creme de cupuaçu gelado decorado com chocolate"
+          }
+        ],
+        "description": "O Creme de Cupuaçu é uma das sobremesas mais aclamadas da Amazônia brasileira. Feito com a polpa ácida e intensamente aromática do fruto Theobroma grandiflorum, combina perfeitamente acidez exótica e doçura cremosa."
+      },
+      "category": [
+        "Sobremesa",
+        "Culinária Amazônica",
+        "Doces"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "0 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Polpa de cupuaçu fresca ou congelada",
+        "Leite condensado",
+        "Creme de leite",
+        "Raspas de chocolate amargo (opcional)"
+      ],
+      "tags": [
+        "Cupuaçu",
+        "Amazônia",
+        "Sobremesa",
+        "Leite condensado",
+        "Frutas tropicais"
+      ],
+      "filePath": "dishes/brazilian/creme_de_cupuacu.md"
+    },
+    {
+      "id": "brazilian/escondidinho_de_carne_de_sol",
+      "title": "Escondidinho de Carne de Sol",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Escondidinho de Carne de Sol",
+        "region": "Nordeste / Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Gratinado",
+          "Culinária Nordestina"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "35 minutos",
+        "servings": 6,
+        "tags": [
+          "Mandioca",
+          "Carne de sol",
+          "Queijo coalho",
+          "Gratinado",
+          "Nordeste"
+        ],
+        "main_ingredients": [
+          "Carne de sol desfiada",
+          "Purê de mandioca (aipim)",
+          "Queijo coalho ou catupiry",
+          "Manteiga de garrafa",
+          "Cebola roxa"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Umami",
+            "Lácteo",
+            "Amanteigado"
+          ],
+          "texture": [
+            "Purê cremoso",
+            "Carne desfiada macia",
+            "Crosta de queijo gratinado"
+          ],
+          "aroma": [
+            "Queijo tostado",
+            "Carne curada",
+            "Manteiga de garrafa"
+          ],
+          "presentation": "Servido em refratário de cerâmica individual ou grande, com superfície dourada e bolhas de queijo coalho gratinado."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Escondidinho gratinado dourado em refratário de cerâmica"
+          }
+        ],
+        "description": "O Escondidinho é uma das receitas mais queridas do Nordeste e de todo o Brasil. A carne de sol desfiada e refogada na manteiga de garrafa fica \"escondida\" sob uma camada aveludada de purê de mandioca e coberta de queijo gratinado."
+      },
+      "category": [
+        "Prato principal",
+        "Gratinado",
+        "Culinária Nordestina"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "35 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de sol desfiada",
+        "Purê de mandioca (aipim)",
+        "Queijo coalho ou catupiry",
+        "Manteiga de garrafa",
+        "Cebola roxa"
+      ],
+      "tags": [
+        "Mandioca",
+        "Carne de sol",
+        "Queijo coalho",
+        "Gratinado",
+        "Nordeste"
+      ],
+      "filePath": "dishes/brazilian/escondidinho_de_carne_de_sol.md"
+    },
+    {
+      "id": "brazilian/farofa_de_mandioca",
+      "title": "Farofa de Mandioca Tradicional",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Farofa de Mandioca Tradicional",
+        "region": "Brasil (Nacional)",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/farofa-de-mandioca",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Acompanhamento",
+          "Culinária Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Farofa",
+          "Mandioca",
+          "Manteiga",
+          "Bacon",
+          "Acompanhamento"
+        ],
+        "main_ingredients": [
+          "Farinha de mandioca torrada ou crua",
+          "Manteiga de boa qualidade",
+          "Bacon cortado em cubos",
+          "Cebola cortada em rodelas ou cubos",
+          "Alho picado e sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Amanteigado",
+            "Defumado",
+            "Crocante tostado"
+          ],
+          "texture": [
+            "Crocante",
+            "Granulada",
+            "Levemente úmida"
+          ],
+          "aroma": [
+            "Manteiga dourada",
+            "Bacon tostado",
+            "Mandioca assada"
+          ],
+          "presentation": "Servida em tigela de cerâmica, salpicada com salsinha fresca picada, sendo o acompanhamento perfeito para feijoada, churrasco e moquecas."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28",
+            "description": "Farofa de mandioca dourada e crocante na frigideira"
+          }
+        ],
+        "description": "A Farofa de Mandioca é o acompanhamento mais universal da culinária brasileira. Feita com farinha de mandioca torrada lentamente na manteiga com bacon e cebola, traz crocância, sabor e textura incomparáveis à refeição."
+      },
+      "category": [
+        "Acompanhamento",
+        "Culinária Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Farinha de mandioca torrada ou crua",
+        "Manteiga de boa qualidade",
+        "Bacon cortado em cubos",
+        "Cebola cortada em rodelas ou cubos",
+        "Alho picado e sal"
+      ],
+      "tags": [
+        "Farofa",
+        "Mandioca",
+        "Manteiga",
+        "Bacon",
+        "Acompanhamento"
+      ],
+      "filePath": "dishes/brazilian/farofa_de_mandioca.md"
+    },
+    {
+      "id": "brazilian/feijoada",
+      "title": "Feijoada Completa Brasileira",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Feijoada Completa Brasileira",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/2911-feijoada-completa.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "12 horas",
+        "cook_time": "3 horas",
+        "servings": 8,
+        "tags": [
+          "Frijoles negros",
+          "Cerdo",
+          "Ahumado",
+          "Bahía",
+          "Río de Janeiro"
+        ],
+        "main_ingredients": [
+          "Frijoles negros",
+          "Costilla de cerdo",
+          "Carne de sol",
+          "Chorizo calabresa",
+          "Tocino (bacon)",
+          "Laurel"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ahumado"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave",
+            "Espeso"
+          ],
+          "aroma": [
+            "Frijol negro cocido",
+            "Carnes ahumadas",
+            "Laurel y ajo"
+          ],
+          "presentation": "Servido en olla de barro, acompañado de arroz blanco, farofa, couve mineira (col rizada), gajos de naranja y vinagreta."
+        },
+        "nutrition": {
+          "calories": 850,
+          "macros": {
+            "protein_g": 52,
+            "fat_g": 38,
+            "carbs_g": 75
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea",
+            "description": "Feijoada tradicional servida en vasija de barro (Unsplash)"
+          }
+        ],
+        "description": "La Feijoada es el plato nacional de Brasil. Se trata de un guiso espeso de frijoles negros cocidos a fuego lento con una gran variedad de carnes saladas, ahumadas y frescas de cerdo y res. Es un plato festivo que celebra la unión y la diversidad cultural de Brasil."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "12 horas",
+      "cookTime": "3 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Frijoles negros",
+        "Costilla de cerdo",
+        "Carne de sol",
+        "Chorizo calabresa",
+        "Tocino (bacon)",
+        "Laurel"
+      ],
+      "tags": [
+        "Frijoles negros",
+        "Cerdo",
+        "Ahumado",
+        "Bahía",
+        "Río de Janeiro"
+      ],
+      "filePath": "dishes/brazilian/feijoada.md"
+    },
+    {
+      "id": "brazilian/feijoada_a_baiana",
+      "title": "Feijoada à Baiana",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Feijoada à Baiana",
+        "region": "Bahia, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/feijoada-completa",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Guisado de feijão",
+          "Culinária Baiana"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "3 horas",
+        "servings": 10,
+        "tags": [
+          "Feijão preto",
+          "Carnes curadas",
+          "Legumes",
+          "Bahia",
+          "Festivo"
+        ],
+        "main_ingredients": [
+          "Feijão preto cozido apurado",
+          "Carne-seca e lombo salgado",
+          "Paio e linguiça calabresa",
+          "Abóbora, abobrinha e repolho",
+          "Louro, alho e azeite de dendê"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami profundo",
+            "Salgado",
+            "Defumado",
+            "Terroso leve"
+          ],
+          "texture": [
+            "Caldo espesso e aveludado",
+            "Carnes macias",
+            "Legumes tenros"
+          ],
+          "aroma": [
+            "Carnes defumadas",
+            "Louro apurado",
+            "Feijão cozido lentamente"
+          ],
+          "presentation": "Servida em panelas fundas de barro separando o feijão com carnes das travessas de legumes cozidos, acompanhada de arroz branco, couve, farofa e laranja."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+            "description": "Feijoada baiana encorpada servida em caldeirão de barro"
+          }
+        ],
+        "description": "A Feijoada à Baiana é uma variação regional rica e perfumada da feijoada tradicional brasileira, enriquecida com vegetais como abóbora, maxixe, quiabo e repolho cozidos no próprio caldo aromático do feijão preto com carnes defumadas."
+      },
+      "category": [
+        "Prato principal",
+        "Guisado de feijão",
+        "Culinária Baiana"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "45 minutos",
+      "cookTime": "3 horas",
+      "servings": 10,
+      "mainIngredients": [
+        "Feijão preto cozido apurado",
+        "Carne-seca e lombo salgado",
+        "Paio e linguiça calabresa",
+        "Abóbora, abobrinha e repolho",
+        "Louro, alho e azeite de dendê"
+      ],
+      "tags": [
+        "Feijão preto",
+        "Carnes curadas",
+        "Legumes",
+        "Bahia",
+        "Festivo"
+      ],
+      "filePath": "dishes/brazilian/feijoada_a_baiana.md"
+    },
+    {
+      "id": "brazilian/galinhada",
+      "title": "Galinhada Mineira e Goiana",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Galinhada Mineira e Goiana",
+        "region": "Minas Gerais / Goiás, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/galinhada",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Guisado de arroz",
+          "Culinária Caipira"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Frango",
+          "Arroz",
+          "Pequi",
+          "Açafrão da terra",
+          "Minas Gerais"
+        ],
+        "main_ingredients": [
+          "Frango caipira em pedaços",
+          "Arroz branco",
+          "Açafrão-da-terra (cúrcuma) ou urucum",
+          "Pequi (opcional versão goiana)",
+          "Pimentão, tomate e cheiro-verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Umami",
+            "Herbal",
+            "Levemente cítrico"
+          ],
+          "texture": [
+            "Frango macio e suculento",
+            "Arroz solto e molhado"
+          ],
+          "aroma": [
+            "Açafrão cozido",
+            "Frango refogado",
+            "Pequi (na versão goiana)"
+          ],
+          "presentation": "Servida diretamente em panela grande de ferro fundido, polvilhada com bastante cheiro-verde fresco e pimenta-biquinho."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+            "description": "Galinhada caipira amarela em panela de ferro com cheiro-verde"
+          }
+        ],
+        "description": "A Galinhada é um guisado caipira reconfortante de arroz cozido junto com pedaços de frango marinado, colorido com açafrão-da-terra e enriquecido com legumes e ervas frescas. Um clássico de Goiás e Minas Gerais."
+      },
+      "category": [
+        "Prato principal",
+        "Guisado de arroz",
+        "Culinária Caipira"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Frango caipira em pedaços",
+        "Arroz branco",
+        "Açafrão-da-terra (cúrcuma) ou urucum",
+        "Pequi (opcional versão goiana)",
+        "Pimentão, tomate e cheiro-verde"
+      ],
+      "tags": [
+        "Frango",
+        "Arroz",
+        "Pequi",
+        "Açafrão da terra",
+        "Minas Gerais"
+      ],
+      "filePath": "dishes/brazilian/galinhada.md"
+    },
+    {
+      "id": "brazilian/moqueca_capixaba",
+      "title": "Moqueca Capixaba",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Moqueca Capixaba",
+        "region": "Espírito Santo, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/moqueca-capixaba",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Guisado de peixe",
+          "Culinária Capixaba"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Peixe",
+          "Coentro",
+          "Urucum",
+          "Espírito Santo",
+          "Frutos do mar"
+        ],
+        "main_ingredients": [
+          "Peixe fresco (robalo o namorado)",
+          "Tomate maduro",
+          "Cebola branca",
+          "Coentro fresco",
+          "Óleo de urucum (colorau)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Cítrico",
+            "Herbal",
+            "Levemente terroso"
+          ],
+          "texture": [
+            "Suave",
+            "Delicada",
+            "Caldo leve"
+          ],
+          "aroma": [
+            "Peixe fresco",
+            "Coentro",
+            "Tomate cozido"
+          ],
+          "presentation": "Servida fervilhando em panela de barro capixaba tradicional, acompanhada de pirão e arroz branco."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
+            "description": "Moqueca capixaba tradicional em panela de barro"
+          }
+        ],
+        "description": "A Moqueca Capixaba é o prato símbolo do Espírito Santo. Diferente da versão baiana, não leva azeite de dendê nem leite de coco, destacando o sabor natural do peixe fresco com urucum, coentro e tomate cozidos em panela de barro."
+      },
+      "category": [
+        "Prato principal",
+        "Guisado de peixe",
+        "Culinária Capixaba"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Peixe fresco (robalo o namorado)",
+        "Tomate maduro",
+        "Cebola branca",
+        "Coentro fresco",
+        "Óleo de urucum (colorau)"
+      ],
+      "tags": [
+        "Peixe",
+        "Coentro",
+        "Urucum",
+        "Espírito Santo",
+        "Frutos do mar"
+      ],
+      "filePath": "dishes/brazilian/moqueca_capixaba.md"
+    },
+    {
+      "id": "brazilian/moqueca_de_peixe",
+      "title": "Moqueca de Peixe Baiana",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Moqueca de Peixe Baiana",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso de pescado",
+          "Afrobrasileño"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Pescado",
+          "Coco",
+          "Dendê",
+          "Bahía",
+          "Mariscos"
+        ],
+        "main_ingredients": [
+          "Pescado blanco (lomo o postas)",
+          "Leche de coco",
+          "Aceite de dendê (palma)",
+          "Pimiento verde",
+          "Pimiento rojo",
+          "Tomates maduros",
+          "Cilantro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Lácteo (coco)",
+            "Salado",
+            "Cítrico",
+            "Terroso (aceite de dendê)"
+          ],
+          "texture": [
+            "Cremoso",
+            "Delicado"
+          ],
+          "aroma": [
+            "Pescado fresco",
+            "Coco dulce",
+            "Cilantro fresco",
+            "Aceite de palma (dendê)"
+          ],
+          "presentation": "Servido hirviendo en una cacerola de barro tradicional negra (panela de barro), espolvoreado con cilantro y cebollín fresco picado."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 26,
+            "carbs_g": 14
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
+            "description": "Moqueca hirviendo en olla tradicional de barro (Unsplash)"
+          }
+        ],
+        "description": "La Moqueca de Peixe es un aromático y cremoso guiso de pescado de origen indígena y afrobrasileño. En Bahía, se cocina lentamente en ollas de barro utilizando leche de coco fresca, pimientos, tomates, cebolla, cilantro y el indispensable aceite de dendê."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso de pescado",
+        "Afrobrasileño"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado blanco (lomo o postas)",
+        "Leche de coco",
+        "Aceite de dendê (palma)",
+        "Pimiento verde",
+        "Pimiento rojo",
+        "Tomates maduros",
+        "Cilantro"
+      ],
+      "tags": [
+        "Pescado",
+        "Coco",
+        "Dendê",
+        "Bahía",
+        "Mariscos"
+      ],
+      "filePath": "dishes/brazilian/moqueca_de_peixe.md"
+    },
+    {
+      "id": "brazilian/pao_de_queijo",
+      "title": "Pão de Queijo Mineiro",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pão de Queijo Mineiro",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/2228-pao-de-queijo-mineiro.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Snack",
+          "Panadería",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 6,
+        "tags": [
+          "Queso",
+          "Mandioca",
+          "Sin gluten",
+          "Minas Gerais",
+          "Pan"
+        ],
+        "main_ingredients": [
+          "Almidón de mandioca (polvilho)",
+          "Queso curado (Minas o Parmesano)",
+          "Leche entera",
+          "Aceite vegetal",
+          "Huevos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Queso madurado",
+            "Lácteo"
+          ],
+          "texture": [
+            "Crujiente (exterior)",
+            "Chicloso (interior)",
+            "Esponjoso"
+          ],
+          "aroma": [
+            "Queso tostado",
+            "Leche caliente",
+            "Mantequilla"
+          ],
+          "presentation": "Servidos calientes en una canasta de mimbre, envueltos en un paño de tela para mantener el calor."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 6,
+            "fat_g": 11,
+            "carbs_g": 22
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Pão de queijo calientes y crujientes (Unsplash)"
+          }
+        ],
+        "description": "El Pão de Queijo es un icónico panecillo de queso brasileño, originario de la región de Minas Gerais. Hecho con almidón de mandioca en lugar de harina de trigo, se caracteriza por tener una corteza crujiente y un interior elástico, chicloso y sumamente quesoso. Es un snack naturalmente libre de gluten."
+      },
+      "category": [
+        "Snack",
+        "Panadería",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Almidón de mandioca (polvilho)",
+        "Queso curado (Minas o Parmesano)",
+        "Leche entera",
+        "Aceite vegetal",
+        "Huevos"
+      ],
+      "tags": [
+        "Queso",
+        "Mandioca",
+        "Sin gluten",
+        "Minas Gerais",
+        "Pan"
+      ],
+      "filePath": "dishes/brazilian/pao_de_queijo.md"
+    },
+    {
+      "id": "brazilian/pastel_de_feira",
+      "title": "Pastel de Feira",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pastel de Feira",
+        "region": "São Paulo / Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/pastel-de-carne",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Lanche",
+          "Comida de rua",
+          "Petisco"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "15 minutos",
+        "servings": 8,
+        "tags": [
+          "Pastel",
+          "Carne",
+          "Comida de rua",
+          "Crocante",
+          "São Paulo"
+        ],
+        "main_ingredients": [
+          "Farinha de trigo",
+          "Cachaça ou vinagre (para crocância e bolhas)",
+          "Água morna e óleo",
+          "Carne moída refogada com azeitonas e ovo",
+          "Óleo para fritura profunda"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Umami",
+            "Frito crocante",
+            "Temperado"
+          ],
+          "texture": [
+            "Crosta muito crocante e leve com bolhas",
+            "Recheio suculento"
+          ],
+          "aroma": [
+            "Fritura quente",
+            "Carne refogada com cebola e alho"
+          ],
+          "presentation": "Servido quente em guardanapo de papel, acompanhado tradicionalmente de molho de pimenta caseiro e vinagrete fresco com copo de caldo de cana gelado."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+            "description": "Pastel de feira frito dourado com bolhas crocantes na massa"
+          }
+        ],
+        "description": "O Pastel de Feira é o rei incontestável da comida de rua de São Paulo e do Brasil. Uma massa fina e estaladiça repleta de bolhas crocantes produzidas pelo toque de cachaça, recheada com carne moída suculenta, queijo ou palmito e frita em óleo bem quente."
+      },
+      "category": [
+        "Lanche",
+        "Comida de rua",
+        "Petisco"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "15 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Farinha de trigo",
+        "Cachaça ou vinagre (para crocância e bolhas)",
+        "Água morna e óleo",
+        "Carne moída refogada com azeitonas e ovo",
+        "Óleo para fritura profunda"
+      ],
+      "tags": [
+        "Pastel",
+        "Carne",
+        "Comida de rua",
+        "Crocante",
+        "São Paulo"
+      ],
+      "filePath": "dishes/brazilian/pastel_de_feira.md"
+    },
+    {
+      "id": "brazilian/pato_no_tucupi",
+      "title": "Pato no Tucupi",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pato no Tucupi",
+        "region": "Pará, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "estadao.com.br",
+          "url": "https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Culinária Amazônica",
+          "Festivo"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora",
+        "cook_time": "2 horas",
+        "servings": 8,
+        "tags": [
+          "Pato",
+          "Tucupi",
+          "Jambu",
+          "Círio de Nazaré",
+          "Belém"
+        ],
+        "main_ingredients": [
+          "Pato inteiro assado",
+          "Tucupi fermentado",
+          "Folhas de jambu",
+          "Chicória da Amazônia",
+          "Alho e pimenta-de-cheiro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Umami",
+            "Salgado",
+            "Formigante (espilantol)"
+          ],
+          "texture": [
+            "Carne macia e suculenta",
+            "Caldo encorpado"
+          ],
+          "aroma": [
+            "Tucupi fervido",
+            "Pato assado",
+            "Ervas amazônicas"
+          ],
+          "presentation": "Servido em travessa funda com o caldo amarelo radiante do tucupi, coberto com folhas de jambu e acompanhado de farinha de mandioca d'água."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1514944288352-fffac99f0bdf",
+            "description": "Pato no tucupi tradicional com jambu e caldo amarelo"
+          }
+        ],
+        "description": "O Pato no Tucupi é o prato ápice do Círio de Nazaré em Belém do Pará. O pato é assado e depois cozido lentamente num caldo de tucupi temperado com jambu, chicória amazônica e pimentas regionais."
+      },
+      "category": [
+        "Prato principal",
+        "Culinária Amazônica",
+        "Festivo"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora",
+      "cookTime": "2 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Pato inteiro assado",
+        "Tucupi fermentado",
+        "Folhas de jambu",
+        "Chicória da Amazônia",
+        "Alho e pimenta-de-cheiro"
+      ],
+      "tags": [
+        "Pato",
+        "Tucupi",
+        "Jambu",
+        "Círio de Nazaré",
+        "Belém"
+      ],
+      "filePath": "dishes/brazilian/pato_no_tucupi.md"
+    },
+    {
+      "id": "brazilian/pudim_de_leite",
+      "title": "Pudim de Leite Condensado",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pudim de Leite Condensado",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "1 hora 15 minutos",
+        "servings": 8,
+        "tags": [
+          "Leche condensada",
+          "Caramelo",
+          "Postre",
+          "Dulce",
+          "Horno"
+        ],
+        "main_ingredients": [
+          "Leche condensada",
+          "Leche entera",
+          "Huevos",
+          "Azúcar refinada (para el caramelo)",
+          "Esencia de vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Extremadamente dulce",
+            "Lácteo (leche caramelizada)",
+            "Vainilla"
+          ],
+          "texture": [
+            "Sedoso",
+            "Extremadamente suave",
+            "Firme pero cremoso"
+          ],
+          "aroma": [
+            "Caramelo tostado",
+            "Vainilla y leche cocida"
+          ],
+          "presentation": "Servido frío en un plato hondo, bañado generosamente con su propio almíbar de caramelo ámbar brillante líquido."
+        },
+        "nutrition": {
+          "calories": 310,
+          "macros": {
+            "protein_g": 8,
+            "fat_g": 9,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3",
+            "description": "Pudim de leite condensado con caramelo líquido brillante (Unsplash)"
+          }
+        ],
+        "description": "El Pudim de Leite Condensado es el postre dominical por excelencia en todo hogar brasileño. A diferencia del flan tradicional europeo que usa crema de leche o leche evaporada, la versión brasileña destaca por utilizar leche condensada como base principal, resultando en un dulce sumamente denso, sedoso y suave que se hornea a baño María y se sirve bañado de caramelo."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "1 hora 15 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Leche condensada",
+        "Leche entera",
+        "Huevos",
+        "Azúcar refinada (para el caramelo)",
+        "Esencia de vainilla"
+      ],
+      "tags": [
+        "Leche condensada",
+        "Caramelo",
+        "Postre",
+        "Dulce",
+        "Horno"
+      ],
+      "filePath": "dishes/brazilian/pudim_de_leite.md"
+    },
+    {
+      "id": "brazilian/tacaca",
+      "title": "Tacacá Amazônico",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tacacá Amazônico",
+        "region": "Pará, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "folha.uol.com.br",
+          "url": "https://www1.folha.uol.com.br/comida/2021/10/tacaca-caldo-amazonico.shtml",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sopa",
+          "Caldo tradicional",
+          "Culinária Amazônica"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "40 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Tucupi",
+          "Jambu",
+          "Camarao",
+          "Pará",
+          "Amazônia"
+        ],
+        "main_ingredients": [
+          "Caldo de tucupi fermentado",
+          "Folhas de jambu",
+          "Goma de mandioca (polvilho)",
+          "Camarão seco salgado",
+          "Pimenta de cheiro amazônica"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Umami",
+            "Salgado",
+            "Formigante (espilantol)"
+          ],
+          "texture": [
+            "Caldo fluido",
+            "Goma viscosa",
+            "Camarão crocante"
+          ],
+          "aroma": [
+            "Fermentado",
+            "Herbal",
+            "Picante"
+          ],
+          "presentation": "Servido quentíssimo em uma cuia de cabaça tradicional, sem uso de talheres, tomado diretamente da cuia com auxílio de palito para os camarões."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1547592166-23ac45744acd",
+            "description": "Tacacá quente servido na cuia tradicional paraense"
+          }
+        ],
+        "description": "O Tacacá é uma iguaria icônica da Amazônia brasileira, feita com caldo de tucupi fermentado e temperado, goma de mandioca suave, camarões secos e folhas de jambu, proporcionando a famosa sensação anestésica e efervescente na boca."
+      },
+      "category": [
+        "Sopa",
+        "Caldo tradicional",
+        "Culinária Amazônica"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "40 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Caldo de tucupi fermentado",
+        "Folhas de jambu",
+        "Goma de mandioca (polvilho)",
+        "Camarão seco salgado",
+        "Pimenta de cheiro amazônica"
+      ],
+      "tags": [
+        "Tucupi",
+        "Jambu",
+        "Camarao",
+        "Pará",
+        "Amazônia"
+      ],
+      "filePath": "dishes/brazilian/tacaca.md"
+    },
+    {
+      "id": "brazilian/tutu_de_feijao",
+      "title": "Tutu de Feijão",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tutu de Feijão",
+        "region": "Minas Gerais, Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "panelinha.com.br",
+          "url": "https://www.panelinha.com.br/receita/tutu-de-feijao",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Prato principal",
+          "Acompanhamento",
+          "Culinária Mineira"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 6,
+        "tags": [
+          "Feijão preto",
+          "Farinha de mandioca",
+          "Bacon",
+          "Linguiça",
+          "Minas Gerais"
+        ],
+        "main_ingredients": [
+          "Feijão preto ou carioquinha cozido e batido",
+          "Farinha de mandioca crua",
+          "Bacon e linguiça calabresa",
+          "Alho e cebola",
+          "Ovos cozidos para decorar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salgado",
+            "Defumado",
+            "Umami",
+            "Terroso"
+          ],
+          "texture": [
+            "Purê denso",
+            "Cremoso",
+            "Pedacinhos crocantes de linguiça"
+          ],
+          "aroma": [
+            "Bacon e linguiça fritos",
+            "Alho dourado",
+            "Feijão caseiro"
+          ],
+          "presentation": "Servido em travessa de cerâmica ou ferro, coberto com rodelas de linguiça frita, bacon crocante, ovos cozidos fatiados e couve refogada ao lado."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+            "description": "Tutu de feijão mineiro tradicional com linguiça e ovo"
+          }
+        ],
+        "description": "O Tutu de Feijão é um clássico reconfortante da gastronomia de Minas Gerais. Trata-se de um purê espesso de feijão preto ou carioquinha batido e refogado com bacon, linguiça e farinha de mandioca, servido com ovos e couve."
+      },
+      "category": [
+        "Prato principal",
+        "Acompanhamento",
+        "Culinária Mineira"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Feijão preto ou carioquinha cozido e batido",
+        "Farinha de mandioca crua",
+        "Bacon e linguiça calabresa",
+        "Alho e cebola",
+        "Ovos cozidos para decorar"
+      ],
+      "tags": [
+        "Feijão preto",
+        "Farinha de mandioca",
+        "Bacon",
+        "Linguiça",
+        "Minas Gerais"
+      ],
+      "filePath": "dishes/brazilian/tutu_de_feijao.md"
+    },
+    {
+      "id": "brazilian/vatapa",
+      "title": "Vatapá Baiano Tradicional",
+      "language": "spanish",
+      "country": "brazil",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Vatapá Baiano Tradicional",
+        "region": "Brasil",
+        "language": "pt",
+        "license": "MIT",
+        "source": {
+          "name": "tudogostoso.com.br",
+          "url": "https://www.tudogostoso.com.br/receita/9605-vatapa.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Guiso",
+          "Afrobrasileño"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 6,
+        "tags": [
+          "Camarón",
+          "Coco",
+          "Maní",
+          "Dendê",
+          "Bahía",
+          "Crema"
+        ],
+        "main_ingredients": [
+          "Camarón seco deshidratado",
+          "Leche de coco",
+          "Pan de molde (o pan de agua)",
+          "Cacahuetes (maní) tostados",
+          "Nueces de la India (anacardos o caju)",
+          "Aceite de dendê (palma)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Nueces (maní y caju)",
+            "Lácteo (coco)",
+            "Sutilmente picante"
+          ],
+          "texture": [
+            "Cremoso",
+            "Espeso",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Camarón seco",
+            "Coco y dendê",
+            "Jengibre fresco"
+          ],
+          "presentation": "Servido templado en cazuelas de barro o como relleno indispensable del acarajé tradicional baiano."
+        },
+        "nutrition": {
+          "calories": 450,
+          "macros": {
+            "protein_g": 12,
+            "fat_g": 32,
+            "carbs_g": 28
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea",
+            "description": "Crema de vatapá servida en vasija con cilantro (Unsplash)"
+          }
+        ],
+        "description": "El Vatapá es una cremosa, espesa y aromática pasta de la cocina afrobrasileña, sumamente típica en Bahía. Se prepara licuando pan del día anterior remojado en leche de coco con camarones secos, cacahuetes, nueces de la India tostadas, jengibre y cebolla, cocinándolo todo a fuego lento con el indispensable aceite de dendê."
+      },
+      "category": [
+        "Acompañamiento",
+        "Guiso",
+        "Afrobrasileño"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Camarón seco deshidratado",
+        "Leche de coco",
+        "Pan de molde (o pan de agua)",
+        "Cacahuetes (maní) tostados",
+        "Nueces de la India (anacardos o caju)",
+        "Aceite de dendê (palma)"
+      ],
+      "tags": [
+        "Camarón",
+        "Coco",
+        "Maní",
+        "Dendê",
+        "Bahía",
+        "Crema"
+      ],
+      "filePath": "dishes/brazilian/vatapa.md"
+    }
+  ],
+  "count": 25
+}

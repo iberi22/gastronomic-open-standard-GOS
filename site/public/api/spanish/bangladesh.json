@@ -1,0 +1,1505 @@
+{
+  "recipes": [
+    {
+      "id": "bangladeshi/aloo_bhorta",
+      "title": "Aloo Bhorta",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Aloo Bhorta",
+        "region": "Barisal",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Tradicional",
+          "Vegetariano"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Bhorta",
+          "Patata",
+          "Comfort Food"
+        ],
+        "main_ingredients": [
+          "Patatas",
+          "Aceite de mostaza",
+          "Cebolla roja picada",
+          "Chiles rojos secos fritos",
+          "Cilantro fresco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Picante",
+            "Pungente",
+            "Ahumado"
+          ],
+          "texture": [
+            "Cremoso",
+            "Denso",
+            "Suave"
+          ],
+          "aroma": [
+            "Aroma rústico a patata caliente, chiles fritos y el toque pungente picante del aceite de mostaza."
+          ],
+          "presentation": "Moldeado a mano en esferas o montículos suaves en platos tradicionales de latón."
+        },
+        "nutrition": {
+          "calories": 180,
+          "macros": {
+            "protein_g": 4,
+            "fat_g": 7,
+            "carbs_g": 26
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Aloo Bhorta tradicional preparado con aceite de mostaza picante"
+          }
+        ],
+        "description": "Aloo Bhorta es la comida de confort por excelencia de Bangladesh: patatas hervidas machacadas a mano con cebolla cruda, chiles fritos crujientes y una dosis generosa de aceite de mostaza virgen."
+      },
+      "category": [
+        "Acompañamiento",
+        "Tradicional",
+        "Vegetariano"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas",
+        "Aceite de mostaza",
+        "Cebolla roja picada",
+        "Chiles rojos secos fritos",
+        "Cilantro fresco"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Bhorta",
+        "Patata",
+        "Comfort Food"
+      ],
+      "filePath": "dishes/bangladeshi/aloo_bhorta.md"
+    },
+    {
+      "id": "bangladeshi/begun_bhorta",
+      "title": "Begun Bhorta",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Begun Bhorta",
+        "region": "Khulna",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Tradicional",
+          "Vegetariano"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Begun",
+          "Bhorta",
+          "Vegetariano"
+        ],
+        "main_ingredients": [
+          "Berenjena negra grande",
+          "Aceite de mostaza virgen",
+          "Ajo picado",
+          "Cebolla roja cortada en brunoise",
+          "Chiles verdes picados"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Salado",
+            "Pungente",
+            "Umami vegetal"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Penetrante aroma ahumado de piel de berenjena asada a fuego directo combinado con el picante del aceite de mostaza."
+          ],
+          "presentation": "Servido en forma cónica o esférica sobre hoja de plátano o plato de arcilla, decorado con chiles fritos."
+        },
+        "nutrition": {
+          "calories": 150,
+          "macros": {
+            "protein_g": 3,
+            "fat_g": 8,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Begun Bhorta de berenjena asada al carbón"
+          }
+        ],
+        "description": "Begun Bhorta es una preparación tradicional bengalí elaborada asando berenjenas enteras directamente sobre fuego de carbón o hornilla hasta ahumar su pulpa, la cual se mezcla con ajo, cebolla picada y aceite de mostaza."
+      },
+      "category": [
+        "Acompañamiento",
+        "Tradicional",
+        "Vegetariano"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Berenjena negra grande",
+        "Aceite de mostaza virgen",
+        "Ajo picado",
+        "Cebolla roja cortada en brunoise",
+        "Chiles verdes picados"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Begun",
+        "Bhorta",
+        "Vegetariano"
+      ],
+      "filePath": "dishes/bangladeshi/begun_bhorta.md"
+    },
+    {
+      "id": "bangladeshi/bhapa_pitha",
+      "title": "Bhapa Pitha",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bhapa Pitha",
+        "region": "Mymensingh",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Bhapa_pitha",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional",
+          "Invernal"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Pitha",
+          "Dulce",
+          "Vapor"
+        ],
+        "main_ingredients": [
+          "Harina de arroz húmeda",
+          "Melaza de palma Gur",
+          "Coco fresco rallado",
+          "Sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce meloso",
+            "Tostado de coco",
+            "Suave"
+          ],
+          "texture": [
+            "Esponjoso",
+            "Tierno",
+            "Húmedo"
+          ],
+          "aroma": [
+            "Aroma reconfortante a vapor de arroz, caramelo profundo de melaza de palma nolen gur y coco."
+          ],
+          "presentation": "Pasteles circulares blancos envueltos tradicionalmente en gasa fina, recién salidos de la vaporera de barro."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 4,
+            "fat_g": 6,
+            "carbs_g": 56
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600",
+            "description": "Bhapa Pitha tradicional esponjoso al vapor"
+          }
+        ],
+        "description": "Bhapa Pitha es un pastelito de arroz tradicional de invierno en Bangladesh, elaborado al vapor con una mezcla aireada de harina de arroz húmeda, relleno de dulce melaza de palma de fecha (Khejur Gur) y coco rallado."
+      },
+      "category": [
+        "Postre",
+        "Tradicional",
+        "Invernal"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de arroz húmeda",
+        "Melaza de palma Gur",
+        "Coco fresco rallado",
+        "Sal"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Pitha",
+        "Dulce",
+        "Vapor"
+      ],
+      "filePath": "dishes/bangladeshi/bhapa_pitha.md"
+    },
+    {
+      "id": "bangladeshi/borhani",
+      "title": "Borhani",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Borhani",
+        "region": "Old Dhaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Borhani",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Bebida",
+          "Tradicional",
+          "Digestivo"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "0 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Borhani",
+          "Bebida",
+          "Digestivo"
+        ],
+        "main_ingredients": [
+          "Yogur agrio (Sour yogurt)",
+          "Hojas de menta fresca",
+          "Hojas de cilantro fresco",
+          "Comino tostado molido",
+          "Sal negra Kala Namak",
+          "Semillas de mostaza en polvo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Especia picante",
+            "Salado",
+            "Refrescante herbal"
+          ],
+          "texture": [
+            "Líquido denso",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Aroma herbal penetrante a menta fresca, azufre mineral de sal negra y comino tostado."
+          ],
+          "presentation": "Servido en vasos de cristal altos o jarras de arcilla tradicionales, decorado con una hoja de menta y una pizca de comino tostado encima."
+        },
+        "nutrition": {
+          "calories": 110,
+          "macros": {
+            "protein_g": 5,
+            "fat_g": 3,
+            "carbs_g": 16
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600",
+            "description": "Borhani bebida especiada tradicional de yogur"
+          }
+        ],
+        "description": "El Borhani es una bebida digestiva icónica de la gastronomía de Bangladesh, indispensable en bodas y banquetes pesados para equilibrar la digestión de biryanis y carnes condimentadas."
+      },
+      "category": [
+        "Bebida",
+        "Tradicional",
+        "Digestivo"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "0 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Yogur agrio (Sour yogurt)",
+        "Hojas de menta fresca",
+        "Hojas de cilantro fresco",
+        "Comino tostado molido",
+        "Sal negra Kala Namak",
+        "Semillas de mostaza en polvo"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Borhani",
+        "Bebida",
+        "Digestivo"
+      ],
+      "filePath": "dishes/bangladeshi/borhani.md"
+    },
+    {
+      "id": "bangladeshi/chingri_malai_curry",
+      "title": "Chingri Malai Curry",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chingri Malai Curry",
+        "region": "Khulna",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Chingri_malai_curry",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Festivo",
+          "Pescados y Mariscos"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Mariscos",
+          "Langostinos",
+          "Coco"
+        ],
+        "main_ingredients": [
+          "Langostinos Tigre",
+          "Leche de coco",
+          "Ghee",
+          "Garam masala bengalí",
+          "Jengibre rallado",
+          "Cardamomo verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce cremoso",
+            "Especiado",
+            "Umami",
+            "Suave"
+          ],
+          "texture": [
+            "Tierno",
+            "Cremoso",
+            "Veloz"
+          ],
+          "aroma": [
+            "Fragancia sutil de leche de coco dulce, cardamomo verde aromático y langostinos fritos en ghee."
+          ],
+          "presentation": "Langostinos enteros con cabeza presentados sobre un gravy suave de leche de coco de color marfil dorado."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 34,
+            "carbs_g": 14
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600",
+            "description": "Chingri Malai Curry con langostinos grandes y salsa de coco"
+          }
+        ],
+        "description": "Chingri Malai Curry es un plato clásico de banquetes en Bangladesh donde langostinos gigantes de agua dulce se sumergen en una salsa aterciopelada a base de leche de coco fresca infundida con especias suaves y aromáticas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Festivo",
+        "Pescados y Mariscos"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Langostinos Tigre",
+        "Leche de coco",
+        "Ghee",
+        "Garam masala bengalí",
+        "Jengibre rallado",
+        "Cardamomo verde"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Mariscos",
+        "Langostinos",
+        "Coco"
+      ],
+      "filePath": "dishes/bangladeshi/chingri_malai_curry.md"
+    },
+    {
+      "id": "bangladeshi/chitol_mach_kofta",
+      "title": "Chitol Macher Muitha",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chitol Macher Muitha",
+        "region": "Dhaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Chitala_chitala",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Pescados y Mariscos"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "35 minutos",
+        "cook_time": "35 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Pescado",
+          "Kofta",
+          "Curry"
+        ],
+        "main_ingredients": [
+          "Pescado Chitol",
+          "Patatas cocidas",
+          "Jengibre fresco",
+          "Ajo",
+          "Cúrcuma en polvo",
+          "Comino molido",
+          "Aceite de mostaza"
+        ],
+        "sensory": {
+          "flavor": [
+            "Especiado",
+            "Umami",
+            "Salado"
+          ],
+          "texture": [
+            "Firme",
+            "Elástico",
+            "Jugoso"
+          ],
+          "aroma": [
+            "Aroma rico a especias tostadas, caldo concentrado de pescado y jengibre."
+          ],
+          "presentation": "Bocados oblongos de pescado sumergidos en un curry dorado y espeso decorado con cilantro picado."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 22,
+            "carbs_g": 20
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Chitol Macher Muitha curry especiado de albóndigas de pescado"
+          }
+        ],
+        "description": "Chitol Macher Muitha es una técnica de alta cocina tradicional bengalí donde la pulpa del pescado Chitol se raspada hábilmente para separar las espinas, se moldea en albóndigas hervidas (muithas) y se cocina en un gravy especiado sofisticado."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Pescados y Mariscos"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "35 minutos",
+      "cookTime": "35 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado Chitol",
+        "Patatas cocidas",
+        "Jengibre fresco",
+        "Ajo",
+        "Cúrcuma en polvo",
+        "Comino molido",
+        "Aceite de mostaza"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Pescado",
+        "Kofta",
+        "Curry"
+      ],
+      "filePath": "dishes/bangladeshi/chitol_mach_kofta.md"
+    },
+    {
+      "id": "bangladeshi/kacchi_biryani",
+      "title": "Dhakai Kacchi Biryani",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dhakai Kacchi Biryani",
+        "region": "Old Dhaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Kacchi_biryani",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Festivo",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "90 minutos",
+        "servings": 6,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Biryani",
+          "Dhaka",
+          "Cordero"
+        ],
+        "main_ingredients": [
+          "Carne de cordero",
+          "Arroz basmati",
+          "Yogur natural",
+          "Ghee",
+          "Garam masala bengalí",
+          "Patatas",
+          "Ciruelas pasas Aloo bokhara"
+        ],
+        "sensory": {
+          "flavor": [
+            "Especiado",
+            "Salado",
+            "Dulce",
+            "Umami"
+          ],
+          "texture": [
+            "Esponjoso",
+            "Tierno",
+            "Meloso"
+          ],
+          "aroma": [
+            "Aroma complejo de azafrán, cardamomo, nuez moscada y carne de cordero marinada al vapor."
+          ],
+          "presentation": "Servido en una gran fuente colectiva de cobre, mostrando capas contrastantes de arroz blanco y amarillo junto con trozos jugosos de cordero y patatas doradas."
+        },
+        "nutrition": {
+          "calories": 750,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 32,
+            "carbs_g": 72
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600",
+            "description": "Dhakai Kacchi Biryani cocinado en olla de barro sellada"
+          }
+        ],
+        "description": "El Kacchi Biryani de la antigua Dhaka es una joya culinaria donde trozos crudos de cordero marinado en especias aromáticas y yogur se cocinan simultáneamente junto con arroz basmati parbolizado en un recipiente herméticamente sellado."
+      },
+      "category": [
+        "Plato fuerte",
+        "Festivo",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "45 minutos",
+      "cookTime": "90 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cordero",
+        "Arroz basmati",
+        "Yogur natural",
+        "Ghee",
+        "Garam masala bengalí",
+        "Patatas",
+        "Ciruelas pasas Aloo bokhara"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Biryani",
+        "Dhaka",
+        "Cordero"
+      ],
+      "filePath": "dishes/bangladeshi/kacchi_biryani.md"
+    },
+    {
+      "id": "bangladeshi/mishti_doi",
+      "title": "Mishti Doi",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mishti Doi",
+        "region": "Bogra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Mishti_doi",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional",
+          "Lácteo"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Mishti Doi",
+          "Yogur",
+          "Bogra"
+        ],
+        "main_ingredients": [
+          "Leche entera de vaca",
+          "Azúcar caramelizada",
+          "Cultivo de yogur activo",
+          "Semillas de cardamomo molidas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce caramelizado",
+            "Ligeramente ácido láctico",
+            "Rico cremoso"
+          ],
+          "texture": [
+            "Firme",
+            "Sedoso",
+            "Cremoso denso"
+          ],
+          "aroma": [
+            "Aroma envolvente a caramelo tostado, leche reducida y ligera nota fermentada dulce."
+          ],
+          "presentation": "Servido tradicionalmente en vasijas individuales de barro cocido sin esmaltar (matka) que absorben el exceso de humedad."
+        },
+        "nutrition": {
+          "calories": 240,
+          "macros": {
+            "protein_g": 7,
+            "fat_g": 8,
+            "carbs_g": 35
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600",
+            "description": "Mishti Doi en vasija artesanal de barro"
+          }
+        ],
+        "description": "El Mishti Doi de Bogra es el postre lácteo más famoso de Bangladesh. Se elabora reduciendo leche con azúcar caramelizada dorada y fermentándola lentamente en cazuelas de barro porosas que le otorgan su consistencia firme distintiva."
+      },
+      "category": [
+        "Postre",
+        "Tradicional",
+        "Lácteo"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Leche entera de vaca",
+        "Azúcar caramelizada",
+        "Cultivo de yogur activo",
+        "Semillas de cardamomo molidas"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Mishti Doi",
+        "Yogur",
+        "Bogra"
+      ],
+      "filePath": "dishes/bangladeshi/mishti_doi.md"
+    },
+    {
+      "id": "bangladeshi/morog_polao",
+      "title": "Dhakai Morog Polao",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dhakai Morog Polao",
+        "region": "Old Dhaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://www.dhakatribune.com/food/289123/dhaka-morog-polao-a-royal-heritage",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Festivo",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "45 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Polao",
+          "Pollo",
+          "Dhaka"
+        ],
+        "main_ingredients": [
+          "Pollo entero troceado",
+          "Arroz Kalijira aromático",
+          "Ghee puro",
+          "Leche evaporada",
+          "Pasas y almendras",
+          "Agua de kewra y azafrán"
+        ],
+        "sensory": {
+          "flavor": [
+            "Aromático",
+            "Mantecoso",
+            "Suave especiado",
+            "Ligeramente dulzón"
+          ],
+          "texture": [
+            "Granos sueltos",
+            "Pollo jugoso y tierno"
+          ],
+          "aroma": [
+            "Intenso aroma floral a agua de kewra, ghee clarificado y especias reales de la antigua corte Nawabi."
+          ],
+          "presentation": "Servido en bandeja amplia con presas de pollo enterradas en arroz blanco brillante, decorado con huevos duros y cebolla frita crocante."
+        },
+        "nutrition": {
+          "calories": 680,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 28,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600",
+            "description": "Dhakai Morog Polao especiado tradicional"
+          }
+        ],
+        "description": "El Dhakai Morog Polao es un suntuoso pilaf de pollo arraigado en la tradición mogol de la antigua Dhaka. Se distingue por la riqueza del arroz de grano corto Kalijira cocinado exclusivamente en ghee, leche y especias enteras sin cúrcuma."
+      },
+      "category": [
+        "Plato fuerte",
+        "Festivo",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "45 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo entero troceado",
+        "Arroz Kalijira aromático",
+        "Ghee puro",
+        "Leche evaporada",
+        "Pasas y almendras",
+        "Agua de kewra y azafrán"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Polao",
+        "Pollo",
+        "Dhaka"
+      ],
+      "filePath": "dishes/bangladeshi/morog_polao.md"
+    },
+    {
+      "id": "bangladeshi/panta_bhat",
+      "title": "Panta Bhat",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Panta Bhat",
+        "region": "Dhaka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Panta_bhat",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Fermentado"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "12 horas",
+        "cook_time": "10 minutos",
+        "servings": 2,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Fermentado",
+          "Pahela Baishakh",
+          "Pescado"
+        ],
+        "main_ingredients": [
+          "Arroz cocido fermentado",
+          "Pescado Hilsa frito",
+          "Chiles verdes frescos",
+          "Cebolla roja cruda",
+          "Aceite de mostaza"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ligeramente ácido",
+            "Salado",
+            "Picante",
+            "Frescura refrescante"
+          ],
+          "texture": [
+            "Acuoso",
+            "Crujiente",
+            "Suave"
+          ],
+          "aroma": [
+            "Aroma fermentado láctico suave combinado con la fragancia del pescado frito crujiente."
+          ],
+          "presentation": "Servido en plato hondo de barro con el líquido de fermentación, acompañado de una rodaja de Hilsa frito, chile verde picado y mostaza."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 14,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=600",
+            "description": "Panta Bhat tradicional de Pahela Baishakh con pescado frito"
+          }
+        ],
+        "description": "Panta Bhat es un plato ancestral bengalí elaborado sumergiendo arroz cocido en agua durante toda la noche para iniciar una fermentación láctica natural. Es el plato insigne de las celebraciones del Año Nuevo Bengalí (Pahela Baishakh)."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Fermentado"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "12 horas",
+      "cookTime": "10 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Arroz cocido fermentado",
+        "Pescado Hilsa frito",
+        "Chiles verdes frescos",
+        "Cebolla roja cruda",
+        "Aceite de mostaza"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Fermentado",
+        "Pahela Baishakh",
+        "Pescado"
+      ],
+      "filePath": "dishes/bangladeshi/panta_bhat.md"
+    },
+    {
+      "id": "bangladeshi/patishapta_pitha",
+      "title": "Patishapta Pitha",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Patishapta Pitha",
+        "region": "Rangpur",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Pitha",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional",
+          "Festivo"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Pitha",
+          "Dulce",
+          "Crepe"
+        ],
+        "main_ingredients": [
+          "Harina de arroz refinada",
+          "Sémola de trigo Suji",
+          "Relleno de kheer de leche reducida",
+          "Coco rallado",
+          "Semillas de cardamomo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce cremoso",
+            "Sabor lácteo concentrado",
+            "Aroma floral"
+          ],
+          "texture": [
+            "Crepe exterior suave y fino",
+            "Relleno denso cremoso interior"
+          ],
+          "aroma": [
+            "Deliciosa fragancia a leche reducida lentamente, cardamomo molido y coco dulce."
+          ],
+          "presentation": "Enrollados finos dorados presentados alineados en bandeja de servicio, espolvoreados opcionalmente con pistachos picados."
+        },
+        "nutrition": {
+          "calories": 310,
+          "macros": {
+            "protein_g": 6,
+            "fat_g": 9,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600",
+            "description": "Patishapta Pitha crepes rellenos de crema de leche y coco"
+          }
+        ],
+        "description": "Patishapta Pitha es una delicada crepa bengalí preparada con una fina masa de harina de arroz y sémola, rellenada enrollada con una mezcla espesa de leche reducida (Kheer) o dulce de coco y melaza."
+      },
+      "category": [
+        "Postre",
+        "Tradicional",
+        "Festivo"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de arroz refinada",
+        "Sémola de trigo Suji",
+        "Relleno de kheer de leche reducida",
+        "Coco rallado",
+        "Semillas de cardamomo"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Pitha",
+        "Dulce",
+        "Crepe"
+      ],
+      "filePath": "dishes/bangladeshi/patishapta_pitha.md"
+    },
+    {
+      "id": "bangladeshi/rui_mach_jhol",
+      "title": "Rui Macher Jhol",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rui Macher Jhol",
+        "region": "Rajshahi",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Rohu",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Pescados y Mariscos"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Rui",
+          "Fish Curry",
+          "Saludable"
+        ],
+        "main_ingredients": [
+          "Pescado Rohu (Rui)",
+          "Patatas troceadas",
+          "Cúrcuma en polvo",
+          "Comino en polvo",
+          "Tomates frescos",
+          "Aceite de mostaza"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ligero",
+            "Salado",
+            "Reconfortante",
+            "Suave especiado"
+          ],
+          "texture": [
+            "Caldo fluido",
+            "Pescado jugoso",
+            "Patatas tiernas"
+          ],
+          "aroma": [
+            "Aroma fresco a caldo de pescado frito en mostaza, comino y cilantro fresco."
+          ],
+          "presentation": "Servido en plato hondo de porcelana con el caldo ligero traslúcido de color amarillo dorado y rodajas de tomate entero."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 16,
+            "carbs_g": 22
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600",
+            "description": "Rui Macher Jhol caldo reconfortante de pescado Rohu"
+          }
+        ],
+        "description": "Rui Macher Jhol es el curry de pescado ligero de consumo cotidiano en los hogares de Bangladesh. Elaborado con el característico pez carpa Rohu de río, se cocina con patatas en un caldo dorado ligero fácil de digerir."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Pescados y Mariscos"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado Rohu (Rui)",
+        "Patatas troceadas",
+        "Cúrcuma en polvo",
+        "Comino en polvo",
+        "Tomates frescos",
+        "Aceite de mostaza"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Rui",
+        "Fish Curry",
+        "Saludable"
+      ],
+      "filePath": "dishes/bangladeshi/rui_mach_jhol.md"
+    },
+    {
+      "id": "bangladeshi/shorshe_ilish",
+      "title": "Shorshe Ilish",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Shorshe Ilish",
+        "region": "Barisal",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Shorshe_Ilish",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Pescados y Mariscos"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Pescado",
+          "Mustard",
+          "Hilsa"
+        ],
+        "main_ingredients": [
+          "Pescado Hilsa",
+          "Aceite de mostaza",
+          "Semillas de mostaza amarilla",
+          "Semillas de mostaza negra",
+          "Chiles verdes",
+          "Cúrcuma en polvo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Umami",
+            "Ácido",
+            "Amargo"
+          ],
+          "texture": [
+            "Tierno",
+            "Jugoso",
+            "Salsa cremosa"
+          ],
+          "aroma": [
+            "Aroma penetrante a mostaza recién molida y grasa de pescado noble."
+          ],
+          "presentation": "Servido en plato profundo de barro con rodajas de chile verde fresco y un hilo de aceite de mostaza crudo."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 34,
+            "fat_g": 38,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600",
+            "description": "Shorshe Ilish tradicional con salsa picante de mostaza"
+          }
+        ],
+        "studies": [
+          {
+            "title": "DHA and EPA Content and Fatty Acid Profile of 39 Food Fishes from India",
+            "source": "BioMed Research International",
+            "year": 2016,
+            "doi": "10.1155/2016/4027437",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27579313/"
+          },
+          {
+            "title": "Nutrigenomic studies on hilsa to evaluate flesh quality attributes and genes associated with fatty acid metabolism from the rivers Hooghly and Padma",
+            "source": "Food Research International",
+            "year": 2018,
+            "doi": "10.1016/j.foodres.2017.10.017",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29389608/"
+          },
+          {
+            "title": "Paradoxical Effects of Erucic Acid-A Fatty Acid With Two-Faced Implications",
+            "source": "Nutrition Reviews",
+            "year": 2025,
+            "doi": "10.1093/nutrit/nuaf032",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40202517/"
+          }
+        ],
+        "description": "Shorshe Ilish es el plato nacional por excelencia de Bangladesh, donde el majestuoso pescado Hilsa cocinado en una potente salsa de semillas de mostaza molidas y aceite de mostaza crudo encarna la identidad gastronómica bengalí."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Pescados y Mariscos"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado Hilsa",
+        "Aceite de mostaza",
+        "Semillas de mostaza amarilla",
+        "Semillas de mostaza negra",
+        "Chiles verdes",
+        "Cúrcuma en polvo"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Pescado",
+        "Mustard",
+        "Hilsa"
+      ],
+      "filePath": "dishes/bangladeshi/shorshe_ilish.md"
+    },
+    {
+      "id": "bangladeshi/shutki_bhorta",
+      "title": "Shutki Bhorta",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Shutki Bhorta",
+        "region": "Chittagong",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://www.prothomalo.com/lifestyle/recipe/dried-fish-bhorta-recipes",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Pescados y Mariscos"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Shutki",
+          "Picante",
+          "Chittagong"
+        ],
+        "main_ingredients": [
+          "Pescado seco Loitta Shutki",
+          "Dientes de ajo enteros",
+          "Cebolla roja picada",
+          "Chiles rojos secos enteros",
+          "Aceite de mostaza virgen"
+        ],
+        "sensory": {
+          "flavor": [
+            "Intensamente umami",
+            "Extremadamente picante",
+            "Salado",
+            "Pungente"
+          ],
+          "texture": [
+            "Pastoso rústico",
+            "Fibroso"
+          ],
+          "aroma": [
+            "Aroma intenso y penetrante característico del pescado curado al sol mezclado con ajo asado y chile."
+          ],
+          "presentation": "Presentado en pequeñas porciones esféricas intensamente rojas en platos tradicionales de terracota."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 10,
+            "carbs_g": 8
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600",
+            "description": "Shutki Bhorta picante de pescado seco"
+          }
+        ],
+        "description": "Shutki Bhorta es la cúspide de la cocina picante del sudeste de Bangladesh (Chittagong). Elaborado con pescado secado artesanalmente al sol, se sofrie intensamente con abundantes dientes de ajo, chiles rojos secos y aceite de mostaza."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Pescados y Mariscos"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado seco Loitta Shutki",
+        "Dientes de ajo enteros",
+        "Cebolla roja picada",
+        "Chiles rojos secos enteros",
+        "Aceite de mostaza virgen"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Shutki",
+        "Picante",
+        "Chittagong"
+      ],
+      "filePath": "dishes/bangladeshi/shutki_bhorta.md"
+    },
+    {
+      "id": "bangladeshi/vuna_khichuri",
+      "title": "Bhuna Khichuri",
+      "language": "spanish",
+      "country": "bangladesh",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bhuna Khichuri",
+        "region": "Sylhet",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://en.wikipedia.org/wiki/Khichdi",
+          "date_retrieved": "2026-03-30",
+          "notes": "Derived from GOS Database and Authentic Bangladeshi Recipes"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Comfort Food"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Bangladeshi",
+          "GOS Catalog",
+          "Khichuri",
+          "Lentejas",
+          "Comfort Food"
+        ],
+        "main_ingredients": [
+          "Arroz Chinigura",
+          "Lentejas moong dal tostadas",
+          "Ghee",
+          "Hojas de laurel Tejpatta",
+          "Comino en grano",
+          "Jengibre rallado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Especiado",
+            "Nuez tostada",
+            "Salado",
+            "Rico"
+          ],
+          "texture": [
+            "Granular meloso",
+            "Firme"
+          ],
+          "aroma": [
+            "Aroma irresistible a moong dal tostado en ghee, comino y jengibre fresco."
+          ],
+          "presentation": "Servido bien caliente en plato hondo de cerámica acompañado de tortilla de huevo frita o berenjena frita."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 18,
+            "carbs_g": 60
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Bhuna Khichuri especiado en mantequilla clarificada"
+          }
+        ],
+        "description": "Bhuna Khichuri es la versión seca y frita (bhuna) de la clásica combinación bengalí de arroz y lentejas. Es el plato por excelencia preparado en los días lluviosos de monzón en Bangladesh."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Comfort Food"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Chinigura",
+        "Lentejas moong dal tostadas",
+        "Ghee",
+        "Hojas de laurel Tejpatta",
+        "Comino en grano",
+        "Jengibre rallado"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "GOS Catalog",
+        "Khichuri",
+        "Lentejas",
+        "Comfort Food"
+      ],
+      "filePath": "dishes/bangladeshi/vuna_khichuri.md"
+    }
+  ],
+  "count": 15
+}

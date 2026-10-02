@@ -1,0 +1,1021 @@
+{
+  "recipes": [
+    {
+      "id": "puerto-rican/alcapurrias",
+      "title": "Alcapurrias de Masa Puertorriqueñas",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Alcapurrias de Masa Puertorriqueñas",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/alcapurrias.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Entrada",
+          "Fritura",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★★",
+        "prep_time": "45 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Fritura",
+          "Guineo verde",
+          "Picadillo",
+          "Achiote",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Guineos verdes (bananas verdes)",
+          "Yautía blanca",
+          "Aceite de achiote",
+          "Carne de res molida (picadillo boricua)",
+          "Sofrito puertorriqueño"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de carne intenso",
+            "Achiote y sofrito"
+          ],
+          "texture": [
+            "Extremadamente crujiente (exterior)",
+            "Suave (masa interior)",
+            "Desmenuzado (picadillo)"
+          ],
+          "aroma": [
+            "Fritura caliente en aceite de achiote",
+            "Carne sofrita de res con aceitunas"
+          ],
+          "presentation": "De forma alargada y cilíndrica, servidas calientes sobre papel absorbente, con la costra dorada de color naranja brillante."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 22,
+            "carbs_g": 34
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1585503415901-274e303bc869",
+            "description": "Alcapurria frita de masa crujiente dorada de Puerto Rico (Unsplash)"
+          }
+        ],
+        "description": "Las Alcapurrias son la fritura playera más icónica y popular de Puerto Rico. Consisten en un frito de masa alargado cuya masa se elabora rallando guineos verdes y yautía blanca, rellenas de un picadillo de carne de res."
+      },
+      "category": [
+        "Entrada",
+        "Fritura",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "45 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Guineos verdes (bananas verdes)",
+        "Yautía blanca",
+        "Aceite de achiote",
+        "Carne de res molida (picadillo boricua)",
+        "Sofrito puertorriqueño"
+      ],
+      "tags": [
+        "Fritura",
+        "Guineo verde",
+        "Picadillo",
+        "Achiote",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/alcapurrias.md"
+    },
+    {
+      "id": "puerto-rican/arroz_con_gandules",
+      "title": "Arroz con Gandules Puertorriqueño",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Arroz con Gandules Puertorriqueño",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/arrozcongandules.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Arroces",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "30 minutos",
+        "servings": 6,
+        "tags": [
+          "Arroz",
+          "Gandules",
+          "Sofrito",
+          "Puerto Rico",
+          "Navidad"
+        ],
+        "main_ingredients": [
+          "Arroz de grano medio",
+          "Gandules verdes (pigeon peas)",
+          "Sofrito puertorriqueño",
+          "Aceite de achiote",
+          "Tocino o jamón de cocinar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de cerdo",
+            "Herbal (sofrito)"
+          ],
+          "texture": [
+            "Graneado (suelto)",
+            "Al dente"
+          ],
+          "aroma": [
+            "Sofrito boricua (recaito)",
+            "Achiote y tocino",
+            "Laurel y gandules"
+          ],
+          "presentation": "Servido caliente en un tazón grande, de un característico color amarillo-naranja brillante, decorado con tiras de pimiento morrón y aceitunas verdes."
+        },
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 12,
+            "carbs_g": 65
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1536304997881-a372c179924b",
+            "description": "Arroz con gandules puertorriqueño tradicional en caldero (Unsplash)"
+          }
+        ],
+        "description": "El Arroz con Gandules es la obra maestra culinaria de Puerto Rico, protagonista indiscutible de las cenas navideñas y celebraciones festivas. Consiste en arroz de grano medio cocinado directamente en un caldo rico de gandules verdes saborizado con sofrito boricua."
+      },
+      "category": [
+        "Plato fuerte",
+        "Arroces",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Arroz de grano medio",
+        "Gandules verdes (pigeon peas)",
+        "Sofrito puertorriqueño",
+        "Aceite de achiote",
+        "Tocino o jamón de cocinar"
+      ],
+      "tags": [
+        "Arroz",
+        "Gandules",
+        "Sofrito",
+        "Puerto Rico",
+        "Navidad"
+      ],
+      "filePath": "dishes/puerto-rican/arroz_con_gandules.md"
+    },
+    {
+      "id": "puerto-rican/asopao_de_pollo",
+      "title": "Asopao de Pollo Puertorriqueño",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Asopao de Pollo Puertorriqueño",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/asopao.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopa",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "40 minutos",
+        "servings": 6,
+        "tags": [
+          "Sopa",
+          "Pollo",
+          "Arroz",
+          "Sofrito",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Pollo entero troceado",
+          "Arroz de grano medio",
+          "Sofrito puertorriqueño (recaito)",
+          "Salsa de tomate",
+          "Aceitunas verdes con alcaparras",
+          "Guisantes (arvejas) verdes",
+          "Pimientos morrones"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de pollo intenso",
+            "Herbal (recaito)",
+            "Sutilmente dulce"
+          ],
+          "texture": [
+            "Espeso (sopa de arroz cremosa)",
+            "Suave (pollo desmenuzado)"
+          ],
+          "aroma": [
+            "Recaito sofrito (culantro)",
+            "Pollo hervido caliente",
+            "Laurel y orégano"
+          ],
+          "presentation": "Servido muy caliente en platos hondos de barro, decorado con guisantes verdes y tiras de pimiento morrón rojo brillante."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 14,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea",
+            "description": "Cazuela de asopao de pollo caliente con pimientos por encima (Unsplash)"
+          }
+        ],
+        "description": "El Asopao de Pollo es la sopa reconfortante por excelencia de Puerto Rico. Consiste en un guiso o sopa de arroz de grano medio."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopa",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "40 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo entero troceado",
+        "Arroz de grano medio",
+        "Sofrito puertorriqueño (recaito)",
+        "Salsa de tomate",
+        "Aceitunas verdes con alcaparras",
+        "Guisantes (arvejas) verdes",
+        "Pimientos morrones"
+      ],
+      "tags": [
+        "Sopa",
+        "Pollo",
+        "Arroz",
+        "Sofrito",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/asopao_de_pollo.md"
+    },
+    {
+      "id": "puerto-rican/coquito",
+      "title": "Coquito Puertorriqueño Tradicional",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Coquito Puertorriqueño Tradicional",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/coquito.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Bebida",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "0 minutos",
+        "servings": 12,
+        "tags": [
+          "Bebida",
+          "Cóctel",
+          "Coco",
+          "Navidad",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Leche de coco (coconut milk)",
+          "Crema de coco (sweetened coconut cream)",
+          "Leche evaporada",
+          "Leche condensada",
+          "Ron blanco puertorriqueño",
+          "Canela molida y en rama",
+          "Esencia de vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Extremadamente dulce",
+            "Lácteo cremoso (coco)",
+            "Alcohólico (ron)",
+            "Especiado (canela y nuez moscada)"
+          ],
+          "texture": [
+            "Líquido espeso (consistencia cremosa)",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Coco dulce caliente",
+            "Ron puertorriqueño",
+            "Canela y vainilla"
+          ],
+          "presentation": "Servido muy frío en vasitos pequeños de chupito o copas cortas, espolvoreado con canela molida por encima y decorado con una ramita de canela entera dentro del vaso."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 4.5,
+            "fat_g": 11,
+            "carbs_g": 34
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+            "description": "Botellas de cristal con Coquito boricua navideño frío (Unsplash)"
+          }
+        ],
+        "description": "El Coquito es la bebida o ponche navideño más famoso e indispensable de Puerto Rico. Consiste en una cremosa, densa y dulce mezcla de crema de coco, leche de coco, leche condensada y leche evaporada batida con abundante ron blanco puertorriqueño de buena calidad, saborizada de forma espectacular con canela, nuez moscada y vainilla, sirviéndose sumamente frío."
+      },
+      "category": [
+        "Bebida",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "0 minutos",
+      "servings": 12,
+      "mainIngredients": [
+        "Leche de coco (coconut milk)",
+        "Crema de coco (sweetened coconut cream)",
+        "Leche evaporada",
+        "Leche condensada",
+        "Ron blanco puertorriqueño",
+        "Canela molida y en rama",
+        "Esencia de vainilla"
+      ],
+      "tags": [
+        "Bebida",
+        "Cóctel",
+        "Coco",
+        "Navidad",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/coquito.md"
+    },
+    {
+      "id": "puerto-rican/mofongo_puertorriqueno",
+      "title": "Mofongo Puertorriqueño de Camarones",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mofongo Puertorriqueño de Camarones",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/mofongo.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "25 minutos",
+        "servings": 2,
+        "tags": [
+          "Plátano",
+          "Chicharrón",
+          "Ajo",
+          "Camarones",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Chicharrón de cerdo crujiente",
+          "Ajo fresco",
+          "Aceite de oliva",
+          "Camarones limpios",
+          "Salsa criolla (tomate, pimiento, cebolla)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Ajo intenso",
+            "Marino (camarón)"
+          ],
+          "texture": [
+            "Crujiente (chicharrón de cerdo)",
+            "Denso (plátano machacado)",
+            "Suave (camarón cocido)"
+          ],
+          "aroma": [
+            "Ajo fresco machacado",
+            "Salsa criolla de mariscos"
+          ],
+          "presentation": "Servido caliente en un tazón grande de cerámica o plato hondo, moldeado en forma de domo y cubierto generosamente con camarones calientes en salsa criolla."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 20,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Mofongo puertorriqueño coronado con camarones al ajillo (Unsplash)"
+          }
+        ],
+        "description": "El Mofongo de Camarones es uno de los platos más populares y codiciados de Puerto Rico. Consiste en una base de mofongo tradicional coronado generosamente con camarones en salsa criolla boricua."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "25 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Chicharrón de cerdo crujiente",
+        "Ajo fresco",
+        "Aceite de oliva",
+        "Camarones limpios",
+        "Salsa criolla (tomate, pimiento, cebolla)"
+      ],
+      "tags": [
+        "Plátano",
+        "Chicharrón",
+        "Ajo",
+        "Camarones",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/mofongo_puertorriqueno.md"
+    },
+    {
+      "id": "puerto-rican/pasteles_puertorriquenos",
+      "title": "Pasteles Puertorriqueños de Masa",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pasteles Puertorriqueños de Masa",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/pasteles.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★★",
+        "prep_time": "1 hora 30 minutos",
+        "cook_time": "1 hora",
+        "servings": 8,
+        "tags": [
+          "Envoltura",
+          "Cerdo",
+          "Guineo verde",
+          "Achiote",
+          "Hoja de plátano",
+          "Puerto Rico",
+          "Navidad"
+        ],
+        "main_ingredients": [
+          "Guineos verdes (bananas verdes)",
+          "Yautía blanca",
+          "Aceite de achiote",
+          "Carne de cerdo (paleta)",
+          "Sofrito puertorriqueño (recaito)",
+          "Hojas de plátano",
+          "Hilo de cocina (para amarrar)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de cerdo",
+            "Herbal (recaito)",
+            "Achiote y oliva"
+          ],
+          "texture": [
+            "Suave (masa blanda húmeda)",
+            "Desmenuzado (cerdo guisado)"
+          ],
+          "aroma": [
+            "Hoja de plátano hervida",
+            "Cerdo sofrito con sofrito",
+            "Achiote y masa"
+          ],
+          "presentation": "Servidos calientes desenvueltos sobre un plato plano, de forma rectangular perfecta con la superficie de la masa de un color naranja-amarillo brillante, decorados con aceitunas verdes y pimientos."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 28,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1585503415901-274e303bc869",
+            "description": "Pastel puertorriqueño de masa desenvuelto caliente en plato (Unsplash)"
+          }
+        ],
+        "description": "Los Pasteles de Masa son el plato tradicional de Navidad más sagrado y complejo de Puerto Rico. Consisten en una masa elaborada rallando finamente guineos verdes y yautía blanca mezclada con aceite de achiote para darle suavidad y color, rellena de un guiso rico de cerdo sofrito, envuelto herméticamente en hojas de plátano soasadas y hervido en agua con sal."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "1 hora 30 minutos",
+      "cookTime": "1 hora",
+      "servings": 8,
+      "mainIngredients": [
+        "Guineos verdes (bananas verdes)",
+        "Yautía blanca",
+        "Aceite de achiote",
+        "Carne de cerdo (paleta)",
+        "Sofrito puertorriqueño (recaito)",
+        "Hojas de plátano",
+        "Hilo de cocina (para amarrar)"
+      ],
+      "tags": [
+        "Envoltura",
+        "Cerdo",
+        "Guineo verde",
+        "Achiote",
+        "Hoja de plátano",
+        "Puerto Rico",
+        "Navidad"
+      ],
+      "filePath": "dishes/puerto-rican/pasteles_puertorriquenos.md"
+    },
+    {
+      "id": "puerto-rican/pernil_asado",
+      "title": "Pernil Asado Puertorriqueño",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pernil Asado Puertorriqueño",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/pernil.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "24 horas",
+        "cook_time": "4 horas 30 minutos",
+        "servings": 8,
+        "tags": [
+          "Cerdo",
+          "Asado",
+          "Adobo",
+          "Navidad",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Pernil de cerdo (pork shoulder/picnic)",
+          "Ajo fresco",
+          "Orégano seco",
+          "Vinagre blanco",
+          "Aceite de oliva",
+          "Pimienta negra"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de cerdo intenso",
+            "Ajo y orégano",
+            "Sutilmente ácido (vinagre)"
+          ],
+          "texture": [
+            "Extremadamente tierno (se desmenuza)",
+            "Extremadamente crujiente (cuerito exterior)"
+          ],
+          "aroma": [
+            "Cerdo asado al horno",
+            "Adobo boricua picante"
+          ],
+          "presentation": "Cortado en lascas grandes de carne jugosa, coronado de forma vistosa con trozos grandes de cuerito dorado y soplado súper crujiente."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 44,
+            "fat_g": 32,
+            "carbs_g": 1
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Pernil asado boricua jugoso con cuerito crujiente (Unsplash)"
+          }
+        ],
+        "description": "El Pernil Asado es el plato de carne supremo de Puerto Rico, rey indiscutible de las cenas navideñas de la isla. Consiste en un pernil de cerdo con piel y hueso, sazonado con un adobo mojado tradicional boricua."
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "24 horas",
+      "cookTime": "4 horas 30 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Pernil de cerdo (pork shoulder/picnic)",
+        "Ajo fresco",
+        "Orégano seco",
+        "Vinagre blanco",
+        "Aceite de oliva",
+        "Pimienta negra"
+      ],
+      "tags": [
+        "Cerdo",
+        "Asado",
+        "Adobo",
+        "Navidad",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/pernil_asado.md"
+    },
+    {
+      "id": "puerto-rican/pinchos_de_pollo",
+      "title": "Pinchos de Pollo Puertorriqueños",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pinchos de Pollo Puertorriqueños",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/pinchos.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Snack",
+          "Comida callejera"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Pollo",
+          "Brocheta",
+          "Carbón",
+          "Barbacoa",
+          "Calle",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Muslos de pollo deshuesados",
+          "Adobo puertorriqueño",
+          "Salsa barbacoa (BBQ)",
+          "Pan de agua",
+          "Brochetas de madera"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de pollo frito",
+            "Dulce y ahumado (salsa BBQ)"
+          ],
+          "texture": [
+            "Jugosa (carne terna)",
+            "Crujiente (bordes asados)"
+          ],
+          "aroma": [
+            "Pollo asado al carbón",
+            "Salsa barbacoa caramelizada"
+          ],
+          "presentation": "Ensartados en brochetas largas de madera, coronados de forma vistosa con un trozo de pan de agua o tostada caliente en la punta del pincho."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 26,
+            "fat_g": 12,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Pinchos de pollo boricuas asados a la parrilla (Unsplash)"
+          }
+        ],
+        "description": "Los Pinchos de Pollo son el bocadillo de comida callejera de paso más común de todo Puerto Rico. Consisten en cubos de muslo de pollo deshuesados marinados en adobo boricua, asados al carbón con salsa BBQ."
+      },
+      "category": [
+        "Plato fuerte",
+        "Snack",
+        "Comida callejera"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Muslos de pollo deshuesados",
+        "Adobo puertorriqueño",
+        "Salsa barbacoa (BBQ)",
+        "Pan de agua",
+        "Brochetas de madera"
+      ],
+      "tags": [
+        "Pollo",
+        "Brocheta",
+        "Carbón",
+        "Barbacoa",
+        "Calle",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/pinchos_de_pollo.md"
+    },
+    {
+      "id": "puerto-rican/tembleque",
+      "title": "Tembleque de Coco Puertorriqueño",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tembleque de Coco Puertorriqueño",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/tembleque.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Postre",
+          "Dulce",
+          "Coco",
+          "Canela",
+          "Sin gluten",
+          "Vegano",
+          "Puerto Rico",
+          "Navidad"
+        ],
+        "main_ingredients": [
+          "Leche de coco (coconut milk)",
+          "Crema de coco",
+          "Azúcar blanca refinada",
+          "Fécula de maíz (cornstarch)",
+          "Canela en rama y en polvo",
+          "Una pizca de sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Coco cremoso",
+            "Especiado (canela)"
+          ],
+          "texture": [
+            "Sedoso",
+            "Tembloroso (gelatina suave)",
+            "Firme"
+          ],
+          "aroma": [
+            "Coco dulce cocido",
+            "Canela molida fresca"
+          ],
+          "presentation": "Moldeado en formas individuales circulares de bordes limpios, servido frío en platitos, espolvoreado con una línea fina de canela molida en forma de cruz."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 1.5,
+            "fat_g": 12,
+            "carbs_g": 28
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3",
+            "description": "Postre tradicional de tembleque de coco boricua (Unsplash)"
+          }
+        ],
+        "description": "El Tembleque es el postre frío de coco más famoso y consumido de Puerto Rico, protagonista de las festividades navideñas. Consiste en un budín o flan sumamente suave y tembloroso elaborado cocinando leche de coco y crema de coco con azúcar y fécula de maíz como espesante natural, aromatizado con canela y servido frío con canela en polvo. Es un postre naturalmente libre de gluten y vegano."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Leche de coco (coconut milk)",
+        "Crema de coco",
+        "Azúcar blanca refinada",
+        "Fécula de maíz (cornstarch)",
+        "Canela en rama y en polvo",
+        "Una pizca de sal"
+      ],
+      "tags": [
+        "Postre",
+        "Dulce",
+        "Coco",
+        "Canela",
+        "Sin gluten",
+        "Vegano",
+        "Puerto Rico",
+        "Navidad"
+      ],
+      "filePath": "dishes/puerto-rican/tembleque.md"
+    },
+    {
+      "id": "puerto-rican/trifongo",
+      "title": "Trifongo Puertorriqueño de Chicharrón",
+      "language": "spanish",
+      "country": "puerto-rico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Trifongo Puertorriqueño de Chicharrón",
+        "region": "Puerto Rico",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "elboricua.com",
+          "url": "https://www.elboricua.com/mofongo.html",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "servings": 2,
+        "tags": [
+          "Plátano verde",
+          "Plátano maduro",
+          "Yuca",
+          "Mofongo",
+          "Trifongo",
+          "Puerto Rico",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Plátano maduro (amarillo)",
+          "Yuca fresca",
+          "Chicharrón de cerdo crujiente",
+          "Ajo fresco",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de chicharrón intenso",
+            "Ajo fuerte",
+            "Sutil dulzor (plátano maduro)"
+          ],
+          "texture": [
+            "Crujiente (chicharrón de cerdo)",
+            "Denso pero suave (tres almidones)",
+            "Esponjoso"
+          ],
+          "aroma": [
+            "Ajo machacado en oliva",
+            "Plátano frito dulce y verde",
+            "Chicharrón caliente frito"
+          ],
+          "presentation": "Moldeado en forma de domo semiesférico, de un hermoso color dorado con destellos amarillos y naranjas, servido caliente con una taza de caldo de carne de res al ajo."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 24,
+            "carbs_g": 58
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Plato tradicional de trifongo puertorriqueño en pilón (Unsplash)"
+          }
+        ],
+        "description": "El Trifongo es una sofisticada y deliciosa variación puertorriqueña del mofongo tradicional. Destaca por combinar tres almidones y tubérculos tropicales fritos a partes iguales en su preparación en el pilón—plátano verde, plátano maduro (amarillo) y yuca fresca—machacándose de forma enérgica con ajo machacado, aceite de oliva y trozos crujientes de chicharrón de cerdo, logrando una masa cohesiva y densa de sabor sutilmente agridulce inigualable."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "25 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Plátano maduro (amarillo)",
+        "Yuca fresca",
+        "Chicharrón de cerdo crujiente",
+        "Ajo fresco",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "Plátano verde",
+        "Plátano maduro",
+        "Yuca",
+        "Mofongo",
+        "Trifongo",
+        "Puerto Rico",
+        "Tradicional"
+      ],
+      "filePath": "dishes/puerto-rican/trifongo.md"
+    }
+  ],
+  "count": 10
+}

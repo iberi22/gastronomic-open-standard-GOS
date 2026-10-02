@@ -1,0 +1,1007 @@
+{
+  "recipes": [
+    {
+      "id": "cuban/ajiaco_cubano",
+      "title": "Ajiaco Criollo Cubano",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ajiaco Criollo Cubano",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/ajiaco-criollo-cubano/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopa",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "12 horas",
+        "cook_time": "2 horas",
+        "servings": 8,
+        "tags": [
+          "Sopa",
+          "Viandas",
+          "Carnes mixtas",
+          "Cuba",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Tasajo (carne salada de res)",
+          "Carne de cerdo",
+          "Plátano verde",
+          "Plátano maduro",
+          "Yuca",
+          "Malanga",
+          "Maíz tierno (mazorca)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Terroso (viandas)",
+            "Umami de carnes mixtas",
+            "Ligeramente cítrico"
+          ],
+          "texture": [
+            "Espeso (caldo denso)",
+            "Suave (tubérculos cocidos)"
+          ],
+          "aroma": [
+            "Viandas hervidas (plátano y yuca)",
+            "Cerdo asado y tasajo",
+            "Limón y ajo"
+          ],
+          "presentation": "Servido muy caliente en cazuelas hondas de barro, con trozos de plátano, maíz y tubérculos sobresaliendo del caldo espeso."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 14,
+            "carbs_g": 64
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea",
+            "description": "Ajiaco criollo espeso servido en cazuela de barro (Unsplash)"
+          }
+        ],
+        "description": "El Ajiaco es el plato nacional e histórico más importante de Cuba, considerado por intelectuales como la metáfora de la identidad cubana. Es una sopa o guiso denso y espeso elaborado a partir de la cocción de carnes mixtas (tasajo, res, cerdo, gallina) combinadas con una gran variedad de raíces tropicales y \"viandas\" como yuca, malanga, ñame, plátanos verdes y maduros, maíz y calabaza, sazonada con un sofrito de ajo y limón."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopa",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "12 horas",
+      "cookTime": "2 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Tasajo (carne salada de res)",
+        "Carne de cerdo",
+        "Plátano verde",
+        "Plátano maduro",
+        "Yuca",
+        "Malanga",
+        "Maíz tierno (mazorca)"
+      ],
+      "tags": [
+        "Sopa",
+        "Viandas",
+        "Carnes mixtas",
+        "Cuba",
+        "Tradicional"
+      ],
+      "filePath": "dishes/cuban/ajiaco_cubano.md"
+    },
+    {
+      "id": "cuban/flan_de_huevo",
+      "title": "Flan de Huevo Tradicional Cubano",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Flan de Huevo Tradicional Cubano",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/flan-de-huevo/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Dulce",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "55 minutos",
+        "servings": 8,
+        "tags": [
+          "Postre",
+          "Dulce",
+          "Leche condensada",
+          "Horno",
+          "Cuba"
+        ],
+        "main_ingredients": [
+          "Huevos enteros",
+          "Leche condensada",
+          "Leche evaporada (o leche entera)",
+          "Azúcar blanca (para el caramelo)",
+          "Esencia de vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Extremadamente dulce",
+            "Lácteo (vainilla)",
+            "Huevo suave"
+          ],
+          "texture": [
+            "Cremoso",
+            "Extremadamente blando",
+            "Sedoso"
+          ],
+          "aroma": [
+            "Caramelo quemado",
+            "Vainilla dulce",
+            "Huevo y leche tibia"
+          ],
+          "presentation": "Servido frío en platitos de postre, bañado de forma abundante con el almíbar de caramelo líquido de tono ámbar oscuro brillante."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 7,
+            "fat_g": 8,
+            "carbs_g": 46
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3",
+            "description": "Flan de huevo cubano con caramelo líquido bañado (Unsplash)"
+          }
+        ],
+        "description": "El Flan de Huevo es el postre dulce más popular de Cuba. Elaborado tradicionalmente combinando huevos enteros frescos con leche condensada azucarada y leche evaporada, se aromatiza con vainilla y un toque de canela, horneándose lentamente a baño María."
+      },
+      "category": [
+        "Postre",
+        "Dulce",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "55 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Huevos enteros",
+        "Leche condensada",
+        "Leche evaporada (o leche entera)",
+        "Azúcar blanca (para el caramelo)",
+        "Esencia de vainilla"
+      ],
+      "tags": [
+        "Postre",
+        "Dulce",
+        "Leche condensada",
+        "Horno",
+        "Cuba"
+      ],
+      "filePath": "dishes/cuban/flan_de_huevo.md"
+    },
+    {
+      "id": "cuban/lechon_asado",
+      "title": "Lechón Asado Cubano",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Lechón Asado Cubano",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/lechon-asado/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "12 horas",
+        "cook_time": "4 horas",
+        "servings": 8,
+        "tags": [
+          "Cerdo",
+          "Asado",
+          "Cítrico",
+          "Mojo",
+          "Navidad",
+          "Cuba"
+        ],
+        "main_ingredients": [
+          "Pierna de cerdo (pork shoulder/leg)",
+          "Naranja agria (sour orange)",
+          "Ajo fresco",
+          "Orégano seco",
+          "Comino molido"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami de cerdo",
+            "Cítrico (naranja agria)",
+            "Ajo intenso"
+          ],
+          "texture": [
+            "Muy tierno (interior)",
+            "Extremadamente crujiente (cuerito exterior)"
+          ],
+          "aroma": [
+            "Cerdo asado",
+            "Mojo de ajo y cítricos",
+            "Laurel y comino"
+          ],
+          "presentation": "Servido en lascas o desmenuzado con abundante mojo caliente vertido por encima, acompañado de arroz congrí y yuca con mojo."
+        },
+        "nutrition": {
+          "calories": 450,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 28,
+            "carbs_g": 2
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Lechón asado con piel crujiente dorada (Unsplash)"
+          }
+        ],
+        "description": "El Lechón Asado es el plato festivo por excelencia de Cuba, protagonista indiscutible de las cenas de Nochebuena y fin de año. Consiste en una pierna o paleta de cerdo marinada durante horas en un mojo de abundante ajo machacado, jugo de naranja agria, comino, orégano y laurel, y luego asada lentamente al horno hasta que la carne quede extremadamente tierna y la piel exterior se transforme en un cuerito super crujiente."
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "12 horas",
+      "cookTime": "4 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Pierna de cerdo (pork shoulder/leg)",
+        "Naranja agria (sour orange)",
+        "Ajo fresco",
+        "Orégano seco",
+        "Comino molido"
+      ],
+      "tags": [
+        "Cerdo",
+        "Asado",
+        "Cítrico",
+        "Mojo",
+        "Navidad",
+        "Cuba"
+      ],
+      "filePath": "dishes/cuban/lechon_asado.md"
+    },
+    {
+      "id": "cuban/masitas_de_cerdo",
+      "title": "Masitas de Cerdo Fritas Cubanas",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Cuban Pork Chunks",
+            "Masitas de Cerdo"
+          ]
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Tradicional"
+        ],
+        "cook_time": "40 minutos",
+        "description": "Las Masitas de Cerdo Fritas son un pilar de la gastronomía cubana. Consisten en jugosos trozos de paleta de cerdo marinados en un mojo de ajo machacado y naranja agria, que luego se cocinan lentamente en una olla con agua hasta que esta se evapora por completo, permitiendo que la carne se fría de forma crujiente en su propia grasa natural derretida, quedando doradas por fuera pero tiernas y jugosas por dentro.",
+        "difficulty": "★★★☆☆",
+        "images": [
+          {
+            "description": "Masitas de cerdo fritas doradas y crujientes (Unsplash)",
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Carne de cerdo (paleta o pierna)",
+          "Naranja agria (sour orange)",
+          "Ajo fresco",
+          "Orégano seco",
+          "Comino molido"
+        ],
+        "nutrition": {
+          "calories": 410,
+          "macros": {
+            "carbs_g": 4,
+            "fat_g": 28,
+            "protein_g": 34
+          }
+        },
+        "prep_time": "4 horas",
+        "region": "Cuba",
+        "sensory": {
+          "aroma": [
+            "Carne de cerdo frita",
+            "Ajo tostado",
+            "Cebolla frita con naranja agria"
+          ],
+          "flavor": [
+            "Salado",
+            "Umami de cerdo intenso",
+            "Cítrico y ajo"
+          ],
+          "presentation": "Servidas calientes sobre una bandeja, decoradas con abundante mojo de cebollas en rodajas por encima, acompañadas de arroz congrí y tostones.",
+          "texture": [
+            "Extremadamente crujiente (exterior)",
+            "Sumamente tierno y jugoso (interior)"
+          ]
+        },
+        "servings": 4,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/masitas-de-cerdo-fritas/"
+        },
+        "tags": [
+          "Cerdo",
+          "Frito",
+          "Mojo",
+          "Crujiente",
+          "Cuba"
+        ],
+        "title": "Masitas de Cerdo Fritas Cubanas"
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "4 horas",
+      "cookTime": "40 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de cerdo (paleta o pierna)",
+        "Naranja agria (sour orange)",
+        "Ajo fresco",
+        "Orégano seco",
+        "Comino molido"
+      ],
+      "tags": [
+        "Cerdo",
+        "Frito",
+        "Mojo",
+        "Crujiente",
+        "Cuba"
+      ],
+      "filePath": "dishes/cuban/masitas_de_cerdo.md"
+    },
+    {
+      "id": "cuban/mojito",
+      "title": "Mojito Cubano Tradicional",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mojito Cubano Tradicional",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/mojito/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Bebida",
+          "Cóctel",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "5 minutos",
+        "cook_time": "0 minutos",
+        "servings": 1,
+        "tags": [
+          "Ron",
+          "Limón",
+          "Yerbabuena",
+          "Cóctel",
+          "Bebida",
+          "Cuba",
+          "Refrescante"
+        ],
+        "main_ingredients": [
+          "Ron blanco cubano (carta blanca)",
+          "Yerbabuena (o menta fresca)",
+          "Jugo de limón fresco",
+          "Azúcar blanca refinada",
+          "Agua con gas (soda o club soda)",
+          "Hielo en cubos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Cítrico",
+            "Dulce",
+            "Alcohólico (ron blanco)",
+            "Herbal (yerbabuena)"
+          ],
+          "texture": [
+            "Líquido",
+            "Refrescante"
+          ],
+          "aroma": [
+            "Menta fresca y yerbabuena machacadas",
+            "Ron de caña",
+            "Limón fresco exprimido"
+          ],
+          "presentation": "Servido en un vaso alto (highball) transparente, con abundante hielo en cubos medianos, decorado con una ramita frondosa de yerbabuena fresca en el borde y un popote."
+        },
+        "nutrition": {
+          "calories": 140,
+          "macros": {
+            "protein_g": 0.1,
+            "fat_g": 0,
+            "carbs_g": 9
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+            "description": "Mojito cubano frío y refrescante con yerbabuena y limón (Unsplash)"
+          }
+        ],
+        "description": "El Mojito es el cóctel cubano más famoso y consumido en todo el mundo, inmortalizado por celebridades como Ernest Hemingway en La Bodeguita del Medio en La Habana. Elaborado con ron blanco, jugo de limón fresco, azúcar blanca refinada, agua con gas, hielo y hojas de yerbabuena machacadas suavemente para liberar sus aromas herbales refrescantes, destaca por su carácter sumamente fresco y cítrico."
+      },
+      "category": [
+        "Bebida",
+        "Cóctel",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "5 minutos",
+      "cookTime": "0 minutos",
+      "servings": 1,
+      "mainIngredients": [
+        "Ron blanco cubano (carta blanca)",
+        "Yerbabuena (o menta fresca)",
+        "Jugo de limón fresco",
+        "Azúcar blanca refinada",
+        "Agua con gas (soda o club soda)",
+        "Hielo en cubos"
+      ],
+      "tags": [
+        "Ron",
+        "Limón",
+        "Yerbabuena",
+        "Cóctel",
+        "Bebida",
+        "Cuba",
+        "Refrescante"
+      ],
+      "filePath": "dishes/cuban/mojito.md"
+    },
+    {
+      "id": "cuban/moros_y_cristianos",
+      "title": "Moros y Cristianos Tradicionales",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Moros y Cristianos Tradicionales",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/moros-y-cristianos/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Arroces",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "12 horas",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Arroz",
+          "Frijoles",
+          "Tocino",
+          "Cuba",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Arroz blanco de grano largo",
+          "Frijoles negros",
+          "Tocino (bacon)",
+          "Pimiento verde",
+          "Comino molido",
+          "Orégano seco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Terroso (frijol negro)",
+            "Umami de tocino"
+          ],
+          "texture": [
+            "Graneado (suelto)",
+            "Al dente",
+            "Seco"
+          ],
+          "aroma": [
+            "Frijoles negros cocidos",
+            "Orégano y comino",
+            "Ajo frito"
+          ],
+          "presentation": "Servido como molde redondo o corona en el plato, de un característico color grisáceo-oscuro uniforme, decorado con chicharrones crujientes por encima."
+        },
+        "nutrition": {
+          "calories": 310,
+          "macros": {
+            "protein_g": 8,
+            "fat_g": 6,
+            "carbs_g": 54
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1536304997881-a372c179924b",
+            "description": "Plato de moros y cristianos cubanos con tostones (Unsplash)"
+          }
+        ],
+        "description": "Moros y Cristianos (también conocido simplemente como \"Moros\" o \"Congrí\") es el arroz clásico de Cuba. Consiste en cocinar arroz blanco de grano largo directamente en el caldo oscuro de los frijoles negros, sazonado con un sofrito de pimiento verde, cebolla, ajo, comino, orégano y tocino o tocino de cerdo, logrando que los granos de arroz absorban el color y el sabor terroso de los frijoles negros."
+      },
+      "category": [
+        "Acompañamiento",
+        "Arroces",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "12 horas",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Arroz blanco de grano largo",
+        "Frijoles negros",
+        "Tocino (bacon)",
+        "Pimiento verde",
+        "Comino molido",
+        "Orégano seco"
+      ],
+      "tags": [
+        "Arroz",
+        "Frijoles",
+        "Tocino",
+        "Cuba",
+        "Tradicional"
+      ],
+      "filePath": "dishes/cuban/moros_y_cristianos.md"
+    },
+    {
+      "id": "cuban/picadillo_a_la_habanera",
+      "title": "Picadillo a la Habanera",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Picadillo a la Habanera",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/picadillo-a-la-habanera/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Carnes",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Res",
+          "Agridulce",
+          "Sofrito",
+          "Cuba",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Carne de res molida (ground beef)",
+          "Pasas de uva (raisins)",
+          "Aceitunas verdes (olives)",
+          "Alcaparras (capers)",
+          "Vino seco (vino blanco seco de cocina)",
+          "Puré de tomate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Agridulce (pasas y aceitunas)",
+            "Umami de res",
+            "Sutilmente ácido (vino y tomate)"
+          ],
+          "texture": [
+            "Suave (grano fino de carne)",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Res guisada con sofrito",
+            "Dulzor de pasas calientes",
+            "Aceituna y comino"
+          ],
+          "presentation": "Servido caliente en un tazón o plato llano, acompañado de arroz blanco, frijoles negros, plátanos maduros fritos y un huevo frito por encima."
+        },
+        "nutrition": {
+          "calories": 320,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 16,
+            "carbs_g": 18
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Picadillo cubano guisado servido en plato hondo (Unsplash)"
+          }
+        ],
+        "description": "El Picadillo a la Habanera es uno de los platos más populares y queridos de Cuba. Consiste en carne de res molida de grano fino guisada a fuego lento en una salsa untuosa y agridulce. El perfil de sabor agridulce único de La Habana se logra combinando aceitunas verdes saladas, pasas dulces de uva, alcaparras ácidas, un sofrito abundante con comino, vino seco y tomate."
+      },
+      "category": [
+        "Plato fuerte",
+        "Carnes",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res molida (ground beef)",
+        "Pasas de uva (raisins)",
+        "Aceitunas verdes (olives)",
+        "Alcaparras (capers)",
+        "Vino seco (vino blanco seco de cocina)",
+        "Puré de tomate"
+      ],
+      "tags": [
+        "Res",
+        "Agridulce",
+        "Sofrito",
+        "Cuba",
+        "Tradicional"
+      ],
+      "filePath": "dishes/cuban/picadillo_a_la_habanera.md"
+    },
+    {
+      "id": "cuban/ropa_vieja",
+      "title": "Ropa Vieja Cubana",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ropa Vieja Cubana",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/ropa-vieja/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "1 hora 30 minutos",
+        "servings": 6,
+        "tags": [
+          "Res",
+          "Desmechado",
+          "Sofrito",
+          "Tradicional",
+          "Cuba"
+        ],
+        "main_ingredients": [
+          "Falda de res (flank steak)",
+          "Pimiento verde",
+          "Pimiento rojo",
+          "Cebolla",
+          "Vino seco (vino blanco de cocina)",
+          "Tomate triturado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami intenso",
+            "Dulce (pimiento)",
+            "Ácido (vino y tomate)"
+          ],
+          "texture": [
+            "Desmechado (hebras tiernas)",
+            "Jugoso",
+            "Suave"
+          ],
+          "aroma": [
+            "Carne estofada",
+            "Comino y orégano",
+            "Sofrito dulce"
+          ],
+          "presentation": "Servido en hebras largas y jugosas sobre un plato hondo o plano, acompañado tradicionalmente de arroz blanco, frijoles negros, tostones o maduros fritos."
+        },
+        "nutrition": {
+          "calories": 340,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 14,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544025162-d76694265947",
+            "description": "Carne de res desmechada guisada al estilo cubano (Unsplash)"
+          }
+        ],
+        "description": "La Ropa Vieja es el plato más emblemático de la gastronomía cubana. Consiste en carne de falda de res cocida hasta que esté sumamente tierna, desmechada en hebras finas y luego guisada a fuego lento en una salsa aromática a base de sofrito de ajo, cebolla, pimientos, tomate, vino seco, comino y orégano."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "1 hora 30 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Falda de res (flank steak)",
+        "Pimiento verde",
+        "Pimiento rojo",
+        "Cebolla",
+        "Vino seco (vino blanco de cocina)",
+        "Tomate triturado"
+      ],
+      "tags": [
+        "Res",
+        "Desmechado",
+        "Sofrito",
+        "Tradicional",
+        "Cuba"
+      ],
+      "filePath": "dishes/cuban/ropa_vieja.md"
+    },
+    {
+      "id": "cuban/tostones_cubanos",
+      "title": "Tostones Cubanos (Chatinos)",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tostones Cubanos (Chatinos)",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/tostones/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Snack",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Plátano",
+          "Frito",
+          "Snack",
+          "Crujiente",
+          "Cuba",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Plátano verde (plátano macho verde)",
+          "Aceite vegetal para freír",
+          "Sal marina"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Sutilmente dulce",
+            "Almidonado"
+          ],
+          "texture": [
+            "Extremadamente crujiente (exterior)",
+            "Sumamente suave y harinoso (interior)"
+          ],
+          "aroma": [
+            "Plátano frito caliente",
+            "Ajo machacado"
+          ],
+          "presentation": "Servidos calientes en un plato llano cubierto de papel absorbente, espolvoreados con sal gruesa y acompañados de mojo de ajo fresco de inmediato."
+        },
+        "nutrition": {
+          "calories": 190,
+          "macros": {
+            "protein_g": 1.5,
+            "fat_g": 9,
+            "carbs_g": 31
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Tostones crujientes dorados listos para comer (Unsplash)"
+          }
+        ],
+        "description": "Los Tostones (también conocidos en el oriente de Cuba como \"Chatinos\") son el acompañamiento frito más popular de la isla. Consisten en rodajas gruesas de plátano verde que se fríen ligeramente en aceite para ablandarlas por dentro, luego se aplastan de forma física para formar discos planos y se vuelven a freír a alta temperatura hasta lograr una costra dorada extremadamente crujiente y un interior suave y harinoso."
+      },
+      "category": [
+        "Acompañamiento",
+        "Snack",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Plátano verde (plátano macho verde)",
+        "Aceite vegetal para freír",
+        "Sal marina"
+      ],
+      "tags": [
+        "Plátano",
+        "Frito",
+        "Snack",
+        "Crujiente",
+        "Cuba",
+        "Tradicional"
+      ],
+      "filePath": "dishes/cuban/tostones_cubanos.md"
+    },
+    {
+      "id": "cuban/yuca_con_mojo",
+      "title": "Yuca con Mojo Cubana",
+      "language": "spanish",
+      "country": "cuba",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Yuca con Mojo Cubana",
+        "region": "Cuba",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetascubanas.org",
+          "url": "https://www.recetascubanas.org/yuca-con-mojo/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Vegetales",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Yuca",
+          "Mojo",
+          "Ajo",
+          "Cítrico",
+          "Cuba",
+          "Vegetales"
+        ],
+        "main_ingredients": [
+          "Yuca (mandioca o cassava) fresca",
+          "Naranja agria (sour orange)",
+          "Ajo fresco",
+          "Manteca de cerdo (o aceite de oliva)",
+          "Cebolla blanca"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Cítrico (naranja agria)",
+            "Ajo fuerte"
+          ],
+          "texture": [
+            "Harinosa (suave)",
+            "Cremosa",
+            "Ligeramente fibrosa"
+          ],
+          "aroma": [
+            "Ajo frito en manteca",
+            "Naranja agria fresca",
+            "Yuca hervida caliente"
+          ],
+          "presentation": "Dispuestas las yucas calientes en un platón hondo, bañadas generosamente con el mojo de ajo burbujeante y rodajas de cebolla pochada por encima."
+        },
+        "nutrition": {
+          "calories": 280,
+          "macros": {
+            "protein_g": 2.5,
+            "fat_g": 9,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+            "description": "Plato de yuca cocida bañada en salsa de ajo (Unsplash)"
+          }
+        ],
+        "description": "La Yuca con Mojo es el acompañamiento cubano por excelencia, compañero inseparable del lechón asado. Consiste en tubérculos de yuca (mandioca) hervidos hasta quedar sumamente suaves y harinosos, bañados en un espectacular aderezo o \"mojo\" caliente de ajo machacado frito en manteca de cerdo, jugo de naranja agria y rodajas finas de cebolla."
+      },
+      "category": [
+        "Acompañamiento",
+        "Vegetales",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Yuca (mandioca o cassava) fresca",
+        "Naranja agria (sour orange)",
+        "Ajo fresco",
+        "Manteca de cerdo (o aceite de oliva)",
+        "Cebolla blanca"
+      ],
+      "tags": [
+        "Yuca",
+        "Mojo",
+        "Ajo",
+        "Cítrico",
+        "Cuba",
+        "Vegetales"
+      ],
+      "filePath": "dishes/cuban/yuca_con_mojo.md"
+    }
+  ],
+  "count": 10
+}

@@ -1,0 +1,2904 @@
+{
+  "recipes": [
+    {
+      "id": "american/apple_pie_traditional",
+      "title": "Traditional American Apple Pie",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Traditional American Apple Pie",
+        "region": "EE.UU. Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Manzana",
+          "Masa para pie",
+          "Canela",
+          "Mantequilla",
+          "Azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Traditional American Apple Pie"
+          ],
+          "presentation": "Traditional American Apple Pie presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Traditional American Apple Pie tradicional"
+          }
+        ],
+        "description": "Traditional American Apple Pie es uno de los platos más emblemáticos de la gastronomía de EE.UU. Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Manzana",
+        "Masa para pie",
+        "Canela",
+        "Mantequilla",
+        "Azúcar"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/apple_pie_traditional.md"
+    },
+    {
+      "id": "american/bbq_pork_ribs",
+      "title": "St. Louis Style BBQ Pork Ribs",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "St. Louis Style BBQ Pork Ribs",
+        "region": "Missouri / Memphis",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://open.gastrostandard.org/dishes/american/bbq_pork_ribs",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Costillas de cerdo",
+          "Salsa BBQ",
+          "Pimentón",
+          "Ajo",
+          "Miel"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de St. Louis Style BBQ Pork Ribs"
+          ],
+          "presentation": "St. Louis Style BBQ Pork Ribs presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "St. Louis Style BBQ Pork Ribs tradicional"
+          }
+        ],
+        "description": "St. Louis Style BBQ Pork Ribs es uno de los platos más emblemáticos de la gastronomía de Missouri / Memphis, conocido por su equilibrio de sabores e ingredientes de alta calidad.",
+        "studies": [
+          {
+            "title": "Insight about methods used for polycyclic aromatic hydrocarbons reduction in smoked or grilled fishery and meat products for future re-engineering: A systematic review",
+            "source": "Food and Chemical Toxicology",
+            "year": 2020,
+            "doi": "10.1016/j.fct.2020.111372",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32334111/"
+          },
+          {
+            "title": "Effects of cooking methods and tea marinades on the formation of benzo[a]pyrene in grilled pork belly (Samgyeopsal)",
+            "source": "Meat Science",
+            "year": 2017,
+            "doi": "10.1016/j.meatsci.2017.02.012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28222328/"
+          }
+        ]
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Costillas de cerdo",
+        "Salsa BBQ",
+        "Pimentón",
+        "Ajo",
+        "Miel"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/bbq_pork_ribs.md"
+    },
+    {
+      "id": "american/biscuits_and_gravy",
+      "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
+        "region": "Sur de Estados Unidos",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Desayuno",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "25 min",
+        "servings": 6,
+        "main_ingredients": [
+          "Biscuits de mantequilla",
+          "Salchicha de cerdo suelta",
+          "Leche entera",
+          "Harina de trigo",
+          "Pimienta negra"
+        ],
+        "sensory": {
+          "flavor": [
+            "Creamy",
+            "Salado",
+            "Especiado",
+            "Mantequilloso"
+          ],
+          "texture": [
+            "Esponjosa",
+            "Cremosa",
+            "Crujiente"
+          ],
+          "aroma": [
+            "Salchicha dorada",
+            "Mantequilla horneada",
+            "Pimienta negra molida"
+          ],
+          "presentation": "Biscuits caseros esponjosos cortados por la mitad, bañados generosamente con una salsa blanca es pesada y cargada de trozos de salchicha sazonada."
+        },
+        "description": "Biscuits and Gravy es el desayuno reconfortante por excelencia de la región de los APALACHES y el Sur estadounidense. Combina bollos horneados de mantequilla con una densa salsa blanca a base de salchicha salteada, harina y leche."
+      },
+      "category": [
+        "Desayuno",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "25 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Biscuits de mantequilla",
+        "Salchicha de cerdo suelta",
+        "Leche entera",
+        "Harina de trigo",
+        "Pimienta negra"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/biscuits_and_gravy.md"
+    },
+    {
+      "id": "american/brisket_texas_style",
+      "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
+        "region": "Texas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/texas-smoked-brisket",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "30 min",
+        "cook_time": "12 horas",
+        "servings": 12,
+        "main_ingredients": [
+          "Pecho de ternera",
+          "Pimienta negra",
+          "Sal marina",
+          "Polvo de ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Tierna",
+            "Jugosa",
+            "Mantequillosa"
+          ],
+          "aroma": [
+            "Ahumado de roble",
+            "Pimienta tostada",
+            "Carne asada"
+          ],
+          "presentation": "Trinchado en lonchas gruesas perpendicularmente a la fibra muscular, revelando un anillo de humo rosado profundo y una corteza oscura salpimentada."
+        },
+        "description": "El Brisket Estilo Texas es la joya de la corona del barbacoa del centro de Texas. Se ahúma lentamente a baja temperatura utilizando madera de roble post oak, sazonado únicamente con sal gruesa, pimienta negra recién molida y ajo.",
+        "studies": [
+          {
+            "title": "Insight about methods used for polycyclic aromatic hydrocarbons reduction in smoked or grilled fishery and meat products for future re-engineering: A systematic review",
+            "source": "Food and Chemical Toxicology",
+            "year": 2020,
+            "doi": "10.1016/j.fct.2020.111372",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32334111/"
+          },
+          {
+            "title": "A review of hazards in meat products: Multiple pathways, hazards and mitigation of polycyclic aromatic hydrocarbons",
+            "source": "Food Chemistry",
+            "year": 2024,
+            "doi": "10.1016/j.foodchem.2024.138718",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38364501/"
+          }
+        ]
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "30 min",
+      "cookTime": "12 horas",
+      "servings": 12,
+      "mainIngredients": [
+        "Pecho de ternera",
+        "Pimienta negra",
+        "Sal marina",
+        "Polvo de ajo"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/brisket_texas_style.md"
+    },
+    {
+      "id": "american/brunswick_stew",
+      "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
+        "region": "Virginia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/brunswick-stew-recipe",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 min",
+        "cook_time": "1 hora 30 min",
+        "servings": 8,
+        "main_ingredients": [
+          "Pollo",
+          "Cerdo desmenuzado",
+          "Maíz",
+          "Habas (lima beans)",
+          "Tomate triturado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Dulce",
+            "Ácido",
+            "Ahumado"
+          ],
+          "texture": [
+            "Espesa",
+            "Tierna",
+            "Caldosa"
+          ],
+          "aroma": [
+            "Carne ahumada",
+            "Tomate dulce",
+            "Maíz tierno"
+          ],
+          "presentation": "Estofado espeso y reconfortante lleno de carnes desmenuzadas, granos de maíz dorados, habas y patatas en caldo rojo espeso."
+        },
+        "description": "El Brunswick Stew es un guiso espeso a base de carne y verduras autóctono del Sur de Estados Unidos (con disputas históricas entre Virginia y Georgia). Combina pollo y cerdo ahumado con maíz, habas (lima beans), patatas y tomate."
+      },
+      "category": [
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 min",
+      "cookTime": "1 hora 30 min",
+      "servings": 8,
+      "mainIngredients": [
+        "Pollo",
+        "Cerdo desmenuzado",
+        "Maíz",
+        "Habas (lima beans)",
+        "Tomate triturado"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/brunswick_stew.md"
+    },
+    {
+      "id": "american/buffalo_chicken_wings",
+      "title": "Buffalo Chicken Wings",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Buffalo Chicken Wings",
+        "region": "Buffalo, NY",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Alitas de pollo",
+          "Salsa picante Buffalo",
+          "Mantequilla",
+          "Ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Buffalo Chicken Wings"
+          ],
+          "presentation": "Buffalo Chicken Wings presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Buffalo Chicken Wings tradicional"
+          }
+        ],
+        "description": "Buffalo Chicken Wings es uno de los platos más emblemáticos de la gastronomía de Buffalo, NY, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Alitas de pollo",
+        "Salsa picante Buffalo",
+        "Mantequilla",
+        "Ajo"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/buffalo_chicken_wings.md"
+    },
+    {
+      "id": "american/chicken_and_waffles",
+      "title": "Chicken and Waffles (Pollo Frito con Waffles)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken and Waffles (Pollo Frito con Waffles)",
+        "region": "Sur de Estados Unidos",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/classic-chicken-and-waffles",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 min",
+        "cook_time": "30 min",
+        "servings": 4,
+        "main_ingredients": [
+          "Pollo",
+          "Suero de leche",
+          "Harina de trigo",
+          "Jarabe de arce",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Salado",
+            "Crujiente",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente",
+            "Esponjosa",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Pollo frito",
+            "Mantequilla tostada",
+            "Jarabe de arce caliente"
+          ],
+          "presentation": "Piezas de pollo frito crujiente apiladas sobre waffles dorados recién hechos, bañados con jarabe de arce tibia y mantequilla."
+        },
+        "description": "Chicken and Waffles es la combinación suprema entre dulce y salado en la cocina sureña de Estados Unidos. Surgida en la época del Renacimiento de Harlem y popularizada en el Sur, une pollo frito crujiente con waffles mantecosos y jarabe de arce."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 min",
+      "cookTime": "30 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Suero de leche",
+        "Harina de trigo",
+        "Jarabe de arce",
+        "Mantequilla"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/chicken_and_waffles.md"
+    },
+    {
+      "id": "american/chicken_fried_steak",
+      "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
+        "region": "Texas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/chicken-fried-steak",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 min",
+        "cook_time": "20 min",
+        "servings": 4,
+        "main_ingredients": [
+          "Carne de vacuno",
+          "Harina de trigo",
+          "Leche",
+          "Suero de leche",
+          "Pimienta negra"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Crujiente",
+            "Creamy",
+            "Umami"
+          ],
+          "texture": [
+            "Crocante",
+            "Tierna",
+            "Cremosa"
+          ],
+          "aroma": [
+            "Fritura dorada",
+            "Carne frita",
+            "Salsa de pimienta"
+          ],
+          "presentation": "Filete de ternera emparedado en rebozado crujiente dorado, totalmente cubierto por una espesa salsa de crema y pimienta negra."
+        },
+        "description": "El Chicken Fried Steak es una especialidad tejana donde un corte magro de vacuno ablandado se empanar y fríe exactamente como si fuera pollo frito, sirviéndose cubierto con una espesa salsa blanca de pimienta (pepper gravy)."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 min",
+      "cookTime": "20 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de vacuno",
+        "Harina de trigo",
+        "Leche",
+        "Suero de leche",
+        "Pimienta negra"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/chicken_fried_steak.md"
+    },
+    {
+      "id": "american/chili_verde_new_mexico",
+      "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
+        "region": "Nuevo México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "eater.com",
+          "url": "https://www.eater.com/2019/9/25/20882191/hatch-green-chile-season-new-mexico",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 min",
+        "cook_time": "2 horas",
+        "servings": 6,
+        "main_ingredients": [
+          "Cerdo",
+          "Chiles verdes Hatch",
+          "Tomatillos",
+          "Ajo",
+          "Caldo de carne"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Ácido",
+            "Umami",
+            "Ahumado"
+          ],
+          "texture": [
+            "Tierna",
+            "Caldosa",
+            "Espesa"
+          ],
+          "aroma": [
+            "Chiles asados",
+            "Cerdo estofado",
+            "Comino y ajo"
+          ],
+          "presentation": "Estofado verde espeso con tiernos dados de cerdo sumergidos en una salsa brillante de chiles verdes asados, servido con tortillas de harina tibias."
+        },
+        "description": "El Chile Verde de Nuevo México es la piedra angular de la cocina del Suroeste estadounidense. Se elabora estofando suavemente dados de paleta de cerdo con auténticos chiles verdes asados de Hatch, tomatillos y comino."
+      },
+      "category": [
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 min",
+      "cookTime": "2 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Cerdo",
+        "Chiles verdes Hatch",
+        "Tomatillos",
+        "Ajo",
+        "Caldo de carne"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/chili_verde_new_mexico.md"
+    },
+    {
+      "id": "american/clam_chowder_boston",
+      "title": "New England Clam Chowder",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "New England Clam Chowder",
+        "region": "Boston, MA",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Almejas",
+          "Patatas",
+          "Crema de leche",
+          "Tocineta",
+          "Cebolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de New England Clam Chowder"
+          ],
+          "presentation": "New England Clam Chowder presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "New England Clam Chowder tradicional"
+          }
+        ],
+        "description": "New England Clam Chowder es uno de los platos más emblemáticos de la gastronomía de Boston, MA, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Almejas",
+        "Patatas",
+        "Crema de leche",
+        "Tocineta",
+        "Cebolla"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/clam_chowder_boston.md"
+    },
+    {
+      "id": "american/clam_chowder_manhattan",
+      "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
+        "region": "Nueva York",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "nytimes.com",
+          "url": "https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sopa",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 min",
+        "cook_time": "45 min",
+        "servings": 6,
+        "main_ingredients": [
+          "Almejas frescas",
+          "Tomate triturado",
+          "Patatas",
+          "Apio",
+          "Tocineta"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Ácido",
+            "Marino",
+            "Ahumado"
+          ],
+          "texture": [
+            "Caldosa",
+            "Tierna",
+            "Crujiente"
+          ],
+          "aroma": [
+            "Caldo de almejas",
+            "Tomate cocido",
+            "Tocineta dorada"
+          ],
+          "presentation": "Sopa de caldo de tomate rojo vibrante repleta de almejas troceadas, patatas en cubos y verduras aromáticas."
+        },
+        "description": "A diferencia del chowder blanco lacteado de Nueva Inglaterra, el Manhattan Clam Chowder destaca por su caldo claro base de tomate, hierbas frescas y vegetales sofritos con almejas y tocineta."
+      },
+      "category": [
+        "Sopa",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 min",
+      "cookTime": "45 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Almejas frescas",
+        "Tomate triturado",
+        "Patatas",
+        "Apio",
+        "Tocineta"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/clam_chowder_manhattan.md"
+    },
+    {
+      "id": "american/classic_cheeseburger",
+      "title": "Classic American Cheeseburger",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Classic American Cheeseburger",
+        "region": "Texas / California",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res picada",
+          "Queso cheddar",
+          "Pan de hamburguesa",
+          "Lechuga",
+          "Tomate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Classic American Cheeseburger"
+          ],
+          "presentation": "Classic American Cheeseburger presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Classic American Cheeseburger tradicional"
+          }
+        ],
+        "description": "Classic American Cheeseburger es uno de los platos más emblemáticos de la gastronomía de Texas / California, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res picada",
+        "Queso cheddar",
+        "Pan de hamburguesa",
+        "Lechuga",
+        "Tomate"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/classic_cheeseburger.md"
+    },
+    {
+      "id": "american/cobbler_de_melocoton",
+      "title": "Georgia Peach Cobbler",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Georgia Peach Cobbler",
+        "region": "Georgia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Melocotón",
+          "Harina de trigo",
+          "Mantequilla",
+          "Azúcar",
+          "Canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Georgia Peach Cobbler"
+          ],
+          "presentation": "Georgia Peach Cobbler presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Georgia Peach Cobbler tradicional"
+          }
+        ],
+        "description": "Georgia Peach Cobbler es uno de los platos más emblemáticos de la gastronomía de Georgia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Melocotón",
+        "Harina de trigo",
+        "Mantequilla",
+        "Azúcar",
+        "Canela"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/cobbler_de_melocoton.md"
+    },
+    {
+      "id": "american/collard_greens_southern",
+      "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
+        "region": "Sur de Estados Unidos",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/southern-collard-greens",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "1 hora 30 min",
+        "servings": 6,
+        "main_ingredients": [
+          "Hojas de berza",
+          "Codillo de cerdo ahumado",
+          "Vinagre de sidra de manzana",
+          "Cebolla",
+          "Caldo de pollo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Ahumado",
+            "Ácido",
+            "Amargo"
+          ],
+          "texture": [
+            "Suave",
+            "Tierna",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Cerdo ahumado",
+            "Vinagre hervido",
+            "Hojas verdes estofadas"
+          ],
+          "presentation": "Hojas de berza verde oscuro estofadas y tiernas, servidas en tazón hondo con su reconfortante caldo (potlikker)."
+        },
+        "description": "Los Collard Greens son un pilar indiscutible de la cocina sureña y de la tradición soul food. Las hojas de berza se estofan a fuego lento durante horas con cerdo ahumado, vinagre y caldos ricos, generando el famoso caldo nutritivo conocido como \"potlikker\"."
+      },
+      "category": [
+        "Acompañamiento",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "1 hora 30 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Hojas de berza",
+        "Codillo de cerdo ahumado",
+        "Vinagre de sidra de manzana",
+        "Cebolla",
+        "Caldo de pollo"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/collard_greens_southern.md"
+    },
+    {
+      "id": "american/cornbread_southern",
+      "title": "Southern Skillet Cornbread",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Southern Skillet Cornbread",
+        "region": "Sur de EE.UU.",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de maíz",
+          "Harina de trigo",
+          "Mantequilla",
+          "Leche",
+          "Huevos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Southern Skillet Cornbread"
+          ],
+          "presentation": "Southern Skillet Cornbread presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Southern Skillet Cornbread tradicional"
+          }
+        ],
+        "description": "Southern Skillet Cornbread es uno de los platos más emblemáticos de la gastronomía de Sur de EE.UU., conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de maíz",
+        "Harina de trigo",
+        "Mantequilla",
+        "Leche",
+        "Huevos"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/cornbread_southern.md"
+    },
+    {
+      "id": "american/crawfish_boil_louisiana",
+      "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
+        "region": "Luisiana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "eater.com",
+          "url": "https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 min",
+        "cook_time": "30 min",
+        "servings": 10,
+        "main_ingredients": [
+          "Cangrejos de río",
+          "Patatas rojas",
+          "Maíz",
+          "Salchicha andouille",
+          "Especias cajún"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Citrico",
+            "Especiado",
+            "Salado"
+          ],
+          "texture": [
+            "Crujiente",
+            "Tierna",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Especias cajún",
+            "Limón hervido",
+            "Marisco especiado"
+          ],
+          "presentation": "Servido comunitariamente extendido sobre mesas cubiertas con papel de periódico, acompañado de rodajas de limón y mazorcas de maíz."
+        },
+        "description": "El Crawfish Boil es el ritual festivo por excelencia del sur de Luisiana. Se cuecen cangrejos de río vivos junto con patatas, maíz en mazorca, salchicha andouille y un concentrado blend de especias e hierbas aromáticas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 min",
+      "cookTime": "30 min",
+      "servings": 10,
+      "mainIngredients": [
+        "Cangrejos de río",
+        "Patatas rojas",
+        "Maíz",
+        "Salchicha andouille",
+        "Especias cajún"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/crawfish_boil_louisiana.md"
+    },
+    {
+      "id": "american/eggs_benedict",
+      "title": "Eggs Benedict",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Eggs Benedict",
+        "region": "Nueva York, NY",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Huevos",
+          "Muffin inglés",
+          "Lomo embuchado o jamón",
+          "Salsa holandesa",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Eggs Benedict"
+          ],
+          "presentation": "Eggs Benedict presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Eggs Benedict tradicional"
+          }
+        ],
+        "description": "Eggs Benedict es uno de los platos más emblemáticos de la gastronomía de Nueva York, NY, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Huevos",
+        "Muffin inglés",
+        "Lomo embuchado o jamón",
+        "Salsa holandesa",
+        "Mantequilla"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/eggs_benedict.md"
+    },
+    {
+      "id": "american/fried_chicken_southern",
+      "title": "Southern Crispy Fried Chicken",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Southern Crispy Fried Chicken",
+        "region": "Sur de EE.UU.",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Harina de trigo",
+          "Suero de leche",
+          "Especias",
+          "Aceite para freír"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Southern Crispy Fried Chicken"
+          ],
+          "presentation": "Southern Crispy Fried Chicken presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Southern Crispy Fried Chicken tradicional"
+          }
+        ],
+        "description": "Southern Crispy Fried Chicken es uno de los platos más emblemáticos de la gastronomía de Sur de EE.UU., conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Harina de trigo",
+        "Suero de leche",
+        "Especias",
+        "Aceite para freír"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/fried_chicken_southern.md"
+    },
+    {
+      "id": "american/gumbo_louisiana",
+      "title": "Louisiana Seafood Gumbo",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Louisiana Seafood Gumbo",
+        "region": "Nueva Orleans, LA",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Camarones",
+          "Salchicha andouille",
+          "Okra",
+          "Roux",
+          "Arroz"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Louisiana Seafood Gumbo"
+          ],
+          "presentation": "Louisiana Seafood Gumbo presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Louisiana Seafood Gumbo tradicional"
+          }
+        ],
+        "description": "Louisiana Seafood Gumbo es uno de los platos más emblemáticos de la gastronomía de Nueva Orleans, LA, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Camarones",
+        "Salchicha andouille",
+        "Okra",
+        "Roux",
+        "Arroz"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/gumbo_louisiana.md"
+    },
+    {
+      "id": "american/jambalaya_cajun",
+      "title": "Cajun Jambalaya",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cajun Jambalaya",
+        "region": "Nueva Orleans, LA",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz",
+          "Pollo",
+          "Salchicha andouille",
+          "Camarones",
+          "Pimentón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Cajun Jambalaya"
+          ],
+          "presentation": "Cajun Jambalaya presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cajun Jambalaya tradicional"
+          }
+        ],
+        "description": "Cajun Jambalaya es uno de los platos más emblemáticos de la gastronomía de Nueva Orleans, LA, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz",
+        "Pollo",
+        "Salchicha andouille",
+        "Camarones",
+        "Pimentón"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/jambalaya_cajun.md"
+    },
+    {
+      "id": "american/key_lime_pie",
+      "title": "Florida Key Lime Pie",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Florida Key Lime Pie",
+        "region": "Florida Keys",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Zumo de lima Key",
+          "Leche condensada",
+          "Yemas de huevo",
+          "Galleta Graham",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Florida Key Lime Pie"
+          ],
+          "presentation": "Florida Key Lime Pie presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Florida Key Lime Pie tradicional"
+          }
+        ],
+        "description": "Florida Key Lime Pie es uno de los platos más emblemáticos de la gastronomía de Florida Keys, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Zumo de lima Key",
+        "Leche condensada",
+        "Yemas de huevo",
+        "Galleta Graham",
+        "Mantequilla"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/key_lime_pie.md"
+    },
+    {
+      "id": "american/lobster_roll_maine",
+      "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
+        "region": "Maine",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "eater.com",
+          "url": "https://www.eater.com/maps/best-lobster-rolls-maine",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 min",
+        "cook_time": "15 min",
+        "servings": 4,
+        "main_ingredients": [
+          "Carne de langosta fresca",
+          "Pan para perrito caliente (split-top bun)",
+          "Mayonesa",
+          "Mantequilla",
+          "Cebollino"
+        ],
+        "sensory": {
+          "flavor": [
+            "Marino",
+            "Dulce",
+            "Mantequilloso",
+            "Fresco"
+          ],
+          "texture": [
+            "Tierna",
+            "Jugosa",
+            "Mantequillosa"
+          ],
+          "aroma": [
+            "Langosta al vapor",
+            "Mantequilla dorada",
+            "Pan tostado"
+          ],
+          "presentation": "Pan brioche tostado por ambos lados dorados rebozante de trozos grandes de carne roja y blanca de langosta de Maine."
+        },
+        "description": "El Maine Lobster Roll es el rey del verano en la costa de Nueva Inglaterra. Carne fresca y dulce de langosta cocida al vapor, sazonada ligeramente con mayonesa suave, jugo de limón y servida fría sobre un pan estilo New England tostado en mantequilla."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 min",
+      "cookTime": "15 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de langosta fresca",
+        "Pan para perrito caliente (split-top bun)",
+        "Mayonesa",
+        "Mantequilla",
+        "Cebollino"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/lobster_roll_maine.md"
+    },
+    {
+      "id": "american/macaroni_and_cheese",
+      "title": "Baked Macaroni and Cheese",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Baked Macaroni and Cheese",
+        "region": "Sur de EE.UU.",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Coditos de pasta",
+          "Queso Cheddar",
+          "Queso Gruyère",
+          "Mantequilla",
+          "Leche"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Baked Macaroni and Cheese"
+          ],
+          "presentation": "Baked Macaroni and Cheese presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Baked Macaroni and Cheese tradicional"
+          }
+        ],
+        "description": "Baked Macaroni and Cheese es uno de los platos más emblemáticos de la gastronomía de Sur de EE.UU., conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Coditos de pasta",
+        "Queso Cheddar",
+        "Queso Gruyère",
+        "Mantequilla",
+        "Leche"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/macaroni_and_cheese.md"
+    },
+    {
+      "id": "american/meatloaf_with_glaze",
+      "title": "Classic Glazed Meatloaf",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Classic Glazed Meatloaf",
+        "region": "EE.UU. Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne picada de res",
+          "Pan rallado",
+          "Huevo",
+          "Cebolla",
+          "Glaseado de kétchup"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Classic Glazed Meatloaf"
+          ],
+          "presentation": "Classic Glazed Meatloaf presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Classic Glazed Meatloaf tradicional"
+          }
+        ],
+        "description": "Classic Glazed Meatloaf es uno de los platos más emblemáticos de la gastronomía de EE.UU. Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne picada de res",
+        "Pan rallado",
+        "Huevo",
+        "Cebolla",
+        "Glaseado de kétchup"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/meatloaf_with_glaze.md"
+    },
+    {
+      "id": "american/pancakes_maple_syrup",
+      "title": "Fluffy Pancakes con Maple Syrup",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Fluffy Pancakes con Maple Syrup",
+        "region": "EE.UU. Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Leche",
+          "Huevo",
+          "Mantequilla",
+          "Sirope de arce"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Fluffy Pancakes con Maple Syrup"
+          ],
+          "presentation": "Fluffy Pancakes con Maple Syrup presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Fluffy Pancakes con Maple Syrup tradicional"
+          }
+        ],
+        "description": "Fluffy Pancakes con Maple Syrup es uno de los platos más emblemáticos de la gastronomía de EE.UU. Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Leche",
+        "Huevo",
+        "Mantequilla",
+        "Sirope de arce"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/pancakes_maple_syrup.md"
+    },
+    {
+      "id": "american/pecan_pie_traditional",
+      "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
+        "region": "Sur de Estados Unidos",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/southern-pecan-pie-recipe",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "50 min",
+        "servings": 8,
+        "main_ingredients": [
+          "Nueces pacanas",
+          "Jarabe de maíz",
+          "Huevos",
+          "Azúcar moreno",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Caramelizado",
+            "Mantecoso",
+            "Tostado"
+          ],
+          "texture": [
+            "Crujiente",
+            "Cremosa",
+            "Densamente suave"
+          ],
+          "aroma": [
+            "Nueces tostadas",
+            "Caramelo",
+            "Vainilla y mantequilla"
+          ],
+          "presentation": "Tarta horneada en molde clásico con una capa geométrica superior de nueces pacanas enteras doradas sobre un relleno de caramelo espeso."
+        },
+        "description": "El Pecan Pie es el postre insignia de las festividades en el Sur de Estados Unidos. Una masa quebrada crujiente sostiene un relleno rico de natilla de caramelo horneada coronada con nueces pacanas tostadas."
+      },
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "50 min",
+      "servings": 8,
+      "mainIngredients": [
+        "Nueces pacanas",
+        "Jarabe de maíz",
+        "Huevos",
+        "Azúcar moreno",
+        "Mantequilla"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/pecan_pie_traditional.md"
+    },
+    {
+      "id": "american/philly_cheesesteak",
+      "title": "Philly Cheesesteak",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Philly Cheesesteak",
+        "region": "Filadelfia, PA",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Ternera cortada fina",
+          "Queso Provolone o Cheez Whiz",
+          "Pan de bocadillo",
+          "Cebolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Philly Cheesesteak"
+          ],
+          "presentation": "Philly Cheesesteak presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Philly Cheesesteak tradicional"
+          }
+        ],
+        "description": "Philly Cheesesteak es uno de los platos más emblemáticos de la gastronomía de Filadelfia, PA, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Ternera cortada fina",
+        "Queso Provolone o Cheez Whiz",
+        "Pan de bocadillo",
+        "Cebolla"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/philly_cheesesteak.md"
+    },
+    {
+      "id": "american/po_boy_shrimp",
+      "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
+        "region": "Luisiana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "eater.com",
+          "url": "https://www.eater.com/maps/best-po-boys-new-orleans",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "15 min",
+        "servings": 4,
+        "main_ingredients": [
+          "Camarones frescos",
+          "Pan francés de Nueva Orleans",
+          "Harina de maíz",
+          "Salsa remoulade",
+          "Lechuga"
+        ],
+        "sensory": {
+          "flavor": [
+            "Crujiente",
+            "Picante",
+            "Ácido",
+            "Salado"
+          ],
+          "texture": [
+            "Crocante",
+            "Esponjosa",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Fritura marina",
+            "Pan horneado",
+            "Especias remoulade"
+          ],
+          "presentation": "Bocadillo abierto repleto de camarones fritos dorados, sobresaliendo de un pan baguette crujiente con lechuga, tomate y salsa."
+        },
+        "description": "El Shrimp Po' Boy es el sándwich emblemático de Nueva Orleans. Consiste en camarones fritos crujientes servidos en pan francés criollo con la clásica preparación \"dressed\": lechuga, tomate, pepinillos y salsa remoulade picante."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "15 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Camarones frescos",
+        "Pan francés de Nueva Orleans",
+        "Harina de maíz",
+        "Salsa remoulade",
+        "Lechuga"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/po_boy_shrimp.md"
+    },
+    {
+      "id": "american/pot_roast_american",
+      "title": "Classic American Pot Roast",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Classic American Pot Roast",
+        "region": "Medio Oeste",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res para estofar",
+          "Patatas",
+          "Zanahorias",
+          "Cebolla",
+          "Caldo de carne"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Classic American Pot Roast"
+          ],
+          "presentation": "Classic American Pot Roast presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Classic American Pot Roast tradicional"
+          }
+        ],
+        "description": "Classic American Pot Roast es uno de los platos más emblemáticos de la gastronomía de Medio Oeste, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res para estofar",
+        "Patatas",
+        "Zanahorias",
+        "Cebolla",
+        "Caldo de carne"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/pot_roast_american.md"
+    },
+    {
+      "id": "american/pulled_pork_sandwich",
+      "title": "Carolina Pulled Pork Sandwich",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Carolina Pulled Pork Sandwich",
+        "region": "Carolina del Norte",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://open.gastrostandard.org/dishes/american/pulled_pork_sandwich",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Paleta de cerdo deshilachada",
+          "Salsa BBQ",
+          "Pan de brioche",
+          "Ensalada coleslaw"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Carolina Pulled Pork Sandwich"
+          ],
+          "presentation": "Carolina Pulled Pork Sandwich presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Carolina Pulled Pork Sandwich tradicional"
+          }
+        ],
+        "description": "Carolina Pulled Pork Sandwich es uno de los platos más emblemáticos de la gastronomía de Carolina del Norte, conocido por su equilibrio de sabores e ingredientes de alta calidad.",
+        "studies": [
+          {
+            "title": "Insight about methods used for polycyclic aromatic hydrocarbons reduction in smoked or grilled fishery and meat products for future re-engineering: A systematic review",
+            "source": "Food and Chemical Toxicology",
+            "year": 2020,
+            "doi": "10.1016/j.fct.2020.111372",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32334111/"
+          }
+        ]
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Paleta de cerdo deshilachada",
+        "Salsa BBQ",
+        "Pan de brioche",
+        "Ensalada coleslaw"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/pulled_pork_sandwich.md"
+    },
+    {
+      "id": "american/reuben_sandwich",
+      "title": "Classic Reuben Sandwich",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Classic Reuben Sandwich",
+        "region": "Nueva York, NY",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Corned beef",
+          "Queso suizo",
+          "Chucrut",
+          "Salsa Rusa",
+          "Pan de centeno"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Classic Reuben Sandwich"
+          ],
+          "presentation": "Classic Reuben Sandwich presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Classic Reuben Sandwich tradicional"
+          }
+        ],
+        "description": "Classic Reuben Sandwich es uno de los platos más emblemáticos de la gastronomía de Nueva York, NY, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Corned beef",
+        "Queso suizo",
+        "Chucrut",
+        "Salsa Rusa",
+        "Pan de centeno"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/reuben_sandwich.md"
+    },
+    {
+      "id": "american/shrimp_and_grits",
+      "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
+        "region": "Carolina del Sur",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "nytimes.com",
+          "url": "https://cooking.nytimes.com/recipes/1018610-shrimp-and-grits",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 min",
+        "cook_time": "40 min",
+        "servings": 4,
+        "main_ingredients": [
+          "Camarones frescos",
+          "Sémola de maíz",
+          "Queso cheddar",
+          "Tocineta",
+          "Ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Creamy",
+            "Ahumado",
+            "Umami"
+          ],
+          "texture": [
+            "Cremosa",
+            "Tierna",
+            "Crujiente"
+          ],
+          "aroma": [
+            "Mantequilla",
+            "Tocineta dorada",
+            "Mariscos salteados"
+          ],
+          "presentation": "Servido en plato hondo con una base cremosa de grits de queso coronada por camarones jugosos en salsa de tocineta y limon."
+        },
+        "description": "El Shrimp and Grits es un plato emblemático de la región de Lowcountry en las Carolinas. Originalmente un desayuno de pescadores, combina camarones frescos salteados en grasa de tocineta con sémola de maíz cremosa cocida a fuego lento."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 min",
+      "cookTime": "40 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Camarones frescos",
+        "Sémola de maíz",
+        "Queso cheddar",
+        "Tocineta",
+        "Ajo"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/shrimp_and_grits.md"
+    },
+    {
+      "id": "american/st_louis_ribs_bbq",
+      "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
+        "region": "Misuri",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "eater.com",
+          "url": "https://www.eater.com/2016/6/17/11956792/st-louis-bbq-ribs-guide",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 min",
+        "cook_time": "5 horas",
+        "servings": 6,
+        "main_ingredients": [
+          "Costillar de cerdo",
+          "Rub de especias para barbacoa",
+          "Salsa barbacoa de San Luis",
+          "Vinagre de manzana",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Dulce",
+            "Ácido",
+            "Especiado"
+          ],
+          "texture": [
+            "Tierna",
+            "Jugosa",
+            "Mantequillosa"
+          ],
+          "aroma": [
+            "Humo de manzana",
+            "Caramelo y especias",
+            "Carne de cerdo asada"
+          ],
+          "presentation": "Costillar de corte rectangular perfecto con una brillante capa de glaseado de salsa barbacoa y corteza especiada caramelizada."
+        },
+        "description": "Las St. Louis Style BBQ Ribs son un clásico de la barbacoa del Medio Oeste. Un costillar de cerdo recortado en forma rectangular (spare ribs sin el esternón) ahumado a fuego lento y glaseado con una salsa agridulce a base de tomate y vinagre.",
+        "studies": [
+          {
+            "title": "A review of hazards in meat products: Multiple pathways, hazards and mitigation of polycyclic aromatic hydrocarbons",
+            "source": "Food Chemistry",
+            "year": 2024,
+            "doi": "10.1016/j.foodchem.2024.138718",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38364501/"
+          },
+          {
+            "title": "Effects of cooking methods and tea marinades on the formation of benzo[a]pyrene in grilled pork belly (Samgyeopsal)",
+            "source": "Meat Science",
+            "year": 2017,
+            "doi": "10.1016/j.meatsci.2017.02.012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28222328/"
+          }
+        ]
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 min",
+      "cookTime": "5 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Costillar de cerdo",
+        "Rub de especias para barbacoa",
+        "Salsa barbacoa de San Luis",
+        "Vinagre de manzana",
+        "Mantequilla"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/st_louis_ribs_bbq.md"
+    },
+    {
+      "id": "american/tennessee_pulled_chicken",
+      "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
+        "region": "Tennessee",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "southernliving.com",
+          "url": "https://www.southernliving.com/recipes/pulled-chicken-recipe",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "3 horas",
+        "servings": 8,
+        "main_ingredients": [
+          "Muslos de pollo",
+          "Salsa barbacoa de Memphis",
+          "Vinagre de manzana",
+          "Azúcar moreno",
+          "Pimentón ahumado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Dulce",
+            "Picante",
+            "Ácido"
+          ],
+          "texture": [
+            "Tierna",
+            "Jugosa",
+            "Mantequillosa"
+          ],
+          "aroma": [
+            "Humo de nogal",
+            "Salsa dulce barbacoa",
+            "Especias tostadas"
+          ],
+          "presentation": "Manojo de jugoso pollo desmenuzado en hebras impregnado de salsa barbacoa brillante, servido sobre bollos brioche tostados."
+        },
+        "description": "El Tennessee BBQ Pulled Chicken es una alternativa popular y jugosa al pulled pork. Muslos de pollo ahumados lentamente con madera de nogal americano (hickory), desmenuzados a mano y bañados en una dulce y ligeramente ácida salsa barbacoa estilo Memphis."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "3 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Muslos de pollo",
+        "Salsa barbacoa de Memphis",
+        "Vinagre de manzana",
+        "Azúcar moreno",
+        "Pimentón ahumado"
+      ],
+      "tags": [],
+      "filePath": "dishes/american/tennessee_pulled_chicken.md"
+    },
+    {
+      "id": "american/texas_chili_con_carne",
+      "title": "Texas Chili con Carne",
+      "language": "spanish",
+      "country": "united-states",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Texas Chili con Carne",
+        "region": "Texas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "American",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res en cubos",
+          "Chiles secos",
+          "Comino",
+          "Ajo",
+          "Caldo de res"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Texas Chili con Carne"
+          ],
+          "presentation": "Texas Chili con Carne presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Texas Chili con Carne tradicional"
+          }
+        ],
+        "description": "Texas Chili con Carne es uno de los platos más emblemáticos de la gastronomía de Texas, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res en cubos",
+        "Chiles secos",
+        "Comino",
+        "Ajo",
+        "Caldo de res"
+      ],
+      "tags": [
+        "American",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/american/texas_chili_con_carne.md"
+    }
+  ],
+  "count": 35
+}

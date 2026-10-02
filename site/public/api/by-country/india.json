@@ -1,0 +1,3198 @@
+{
+  "recipes": [
+    {
+      "id": "indian/aloo_gobi",
+      "title": "Aloo Gobi",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Aloo Gobi",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%B2%E0%A5%82_%E0%A4%97%E0%A5%8B%E0%A4%AD%E0%A5%80",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Patatas",
+          "Coliflor",
+          "Cúrcuma",
+          "Jengibre",
+          "Comino",
+          "Garam masala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Aloo Gobi"
+          ],
+          "presentation": "Aloo Gobi presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Aloo Gobi tradicional"
+          }
+        ],
+        "description": "Aloo Gobi es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas",
+        "Coliflor",
+        "Cúrcuma",
+        "Jengibre",
+        "Comino",
+        "Garam masala"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/aloo_gobi.md"
+    },
+    {
+      "id": "indian/baingan_bharta",
+      "title": "Baingan Bharta",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Baingan Bharta",
+        "region": "Punjab / Norte de la India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%97%E0%A4%A8_%E0%A4%95%E0%A4%BE_%E0%A4%AD%E0%A4%B0%E0%A4%A4%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Berenjena grande (Bhartay wala baingan)",
+          "Cebolla",
+          "Tomate",
+          "Jengibre",
+          "Chile verde",
+          "Garam masala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Salado",
+            "Especiado",
+            "Umami"
+          ],
+          "texture": [
+            "Puré rústico y suave"
+          ],
+          "aroma": [
+            "Pronunciado aroma ahumado a vegetal asado al fuego con especias"
+          ],
+          "presentation": "Puré de berenjena sazonado de color marrón rojizo decorado con hojas frescas de cilantro."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 5,
+            "fat_g": 11,
+            "carbs_g": 24
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Baingan Bharta ahumado punjabi"
+          }
+        ],
+        "description": "El Baingan Bharta es un clásico de la cocina punjabi preparado asando la berenjena directamente sobre fuego abierto para impregnarla de un sabor ahumado característico."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Berenjena grande (Bhartay wala baingan)",
+        "Cebolla",
+        "Tomate",
+        "Jengibre",
+        "Chile verde",
+        "Garam masala"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/baingan_bharta.md"
+    },
+    {
+      "id": "indian/biryani_hyderabadi",
+      "title": "Hyderabadi Biryani",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Hyderabadi Biryani",
+        "region": "Hyderabad",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-hyderabadi-biryani-218337",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz Basmati",
+          "Pollo o cordero marinado",
+          "Yogur",
+          "Azafrán",
+          "Cebolla frita",
+          "Especias enteras"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Hyderabadi Biryani"
+          ],
+          "presentation": "Hyderabadi Biryani presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Hyderabadi Biryani tradicional"
+          }
+        ],
+        "description": "Hyderabadi Biryani es uno de los platos más emblemáticos de la gastronomía de Hyderabad, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Basmati",
+        "Pollo o cordero marinado",
+        "Yogur",
+        "Azafrán",
+        "Cebolla frita",
+        "Especias enteras"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/biryani_hyderabadi.md"
+    },
+    {
+      "id": "indian/bisi_bele_bath",
+      "title": "Bisi Bele Bath",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bisi Bele Bath",
+        "region": "Karnataka",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B8%E0%A5%80_%E0%A4%AC%E0%A5%87%E0%A4%B2%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%A4",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "35 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Arroz Basmati",
+          "Lentejas toor dal",
+          "Verduras mixtas (zanahoria, guisantes, ejote)",
+          "Especias Bisi Bele Bath masala",
+          "Tamarindo",
+          "Ghee"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Ácido",
+            "Umami",
+            "Dulce tenue"
+          ],
+          "texture": [
+            "Melosa",
+            "Cremosa"
+          ],
+          "aroma": [
+            "Perfumado a canela, coco seco, ghee y tamarindo"
+          ],
+          "presentation": "Guiso cremoso de arroz y lentejas servido caliente en cuenco con marañones fritos encima."
+        },
+        "nutrition": {
+          "calories": 440,
+          "macros": {
+            "protein_g": 13,
+            "fat_g": 14,
+            "carbs_g": 66
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Bisi Bele Bath especiado de Karnataka"
+          }
+        ],
+        "description": "El Bisi Bele Bath es un plato reconfortante de Karnataka que traduce 'arroz con lentejas calientes', enriquecido con una distintiva mezcla de especias molidas con coco y tamarindo."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "35 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Basmati",
+        "Lentejas toor dal",
+        "Verduras mixtas (zanahoria, guisantes, ejote)",
+        "Especias Bisi Bele Bath masala",
+        "Tamarindo",
+        "Ghee"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/bisi_bele_bath.md"
+    },
+    {
+      "id": "indian/butter_chicken",
+      "title": "Butter Chicken (Murgh Makhani)",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Butter Chicken (Murgh Makhani)",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-butter-chicken-218228",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo marinado",
+          "Mantequilla",
+          "Nata fresca",
+          "Tomate",
+          "Garam masala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Butter Chicken (Murgh Makhani)"
+          ],
+          "presentation": "Butter Chicken (Murgh Makhani) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Butter Chicken (Murgh Makhani) tradicional"
+          }
+        ],
+        "description": "Butter Chicken (Murgh Makhani) es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo marinado",
+        "Mantequilla",
+        "Nata fresca",
+        "Tomate",
+        "Garam masala"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/butter_chicken.md"
+    },
+    {
+      "id": "indian/chana_masala",
+      "title": "Chana Masala",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chana Masala",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%A8%E0%A4%BE_%E0%A4%AE%E0%A4%B8%E0%A4%BE%E0%A4%B2%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Garbanzos",
+          "Tomate",
+          "Cebolla",
+          "Jengibre",
+          "Chana masala especias"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Chana Masala"
+          ],
+          "presentation": "Chana Masala presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chana Masala tradicional"
+          }
+        ],
+        "description": "Chana Masala es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Garbanzos",
+        "Tomate",
+        "Cebolla",
+        "Jengibre",
+        "Chana masala especias"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/chana_masala.md"
+    },
+    {
+      "id": "indian/chicken_korma",
+      "title": "Chicken Korma",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken Korma",
+        "region": "Mogolla",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-chicken-korma-218359",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Yogur",
+          "Pasta de anacardos",
+          "Nata",
+          "Especias suaves"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Chicken Korma"
+          ],
+          "presentation": "Chicken Korma presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chicken Korma tradicional"
+          }
+        ],
+        "description": "Chicken Korma es uno de los platos más emblemáticos de la gastronomía de Mogolla, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Yogur",
+        "Pasta de anacardos",
+        "Nata",
+        "Especias suaves"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/chicken_korma.md"
+    },
+    {
+      "id": "indian/chicken_tikka_masala",
+      "title": "Chicken Tikka Masala",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chicken Tikka Masala",
+        "region": "Punjab / U.K.",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-chicken-tikka-masala-218230",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo asado en tandoor",
+          "Salsa de tomate especiada",
+          "Nata",
+          "Comino",
+          "Cilantro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Chicken Tikka Masala"
+          ],
+          "presentation": "Chicken Tikka Masala presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chicken Tikka Masala tradicional"
+          }
+        ],
+        "description": "Chicken Tikka Masala es uno de los platos más emblemáticos de la gastronomía de Punjab / U.K., conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo asado en tandoor",
+        "Salsa de tomate especiada",
+        "Nata",
+        "Comino",
+        "Cilantro"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/chicken_tikka_masala.md"
+    },
+    {
+      "id": "indian/dal_makhani",
+      "title": "Dal Makhani",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dal Makhani",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-dal-makhani-218225",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Lentejas negras urad dal",
+          "Alubias rojas",
+          "Mantequilla",
+          "Nata",
+          "Tomate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Dal Makhani"
+          ],
+          "presentation": "Dal Makhani presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Dal Makhani tradicional"
+          }
+        ],
+        "description": "Dal Makhani es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Lentejas negras urad dal",
+        "Alubias rojas",
+        "Mantequilla",
+        "Nata",
+        "Tomate"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/dal_makhani.md"
+    },
+    {
+      "id": "indian/dhokla_gujarati",
+      "title": "Dhokla Gujarati",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Dhokla Gujarati",
+        "region": "Gujarat",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%A2%E0%A5%8B%E0%A4%95%E0%A4%B2%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Apetitivo",
+          "Snack",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Harina de garbanzo (Besan)",
+          "Yogur",
+          "Jengibre",
+          "Chile verde",
+          "Semillas de mostaza",
+          "Hojas de curry"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Ácido",
+            "Ligeramente picante"
+          ],
+          "texture": [
+            "Esponjosa",
+            "Jugosa"
+          ],
+          "aroma": [
+            "Fresco a mostaza templada y hojas de curry"
+          ],
+          "presentation": "Cubos amarillos esponjosos coronados con semillas de mostaza, ajonjolí y cilantro picado."
+        },
+        "nutrition": {
+          "calories": 240,
+          "macros": {
+            "protein_g": 10,
+            "fat_g": 8,
+            "carbs_g": 32
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+            "description": "Dhokla gujarati decorado con sésamo y chiles"
+          }
+        ],
+        "description": "El Dhokla es un aperitivo al vapor originario del estado de Gujarat, apreciado por su textura ligera y su perfil agridulce y especiado."
+      },
+      "category": [
+        "Apetitivo",
+        "Snack",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de garbanzo (Besan)",
+        "Yogur",
+        "Jengibre",
+        "Chile verde",
+        "Semillas de mostaza",
+        "Hojas de curry"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/dhokla_gujarati.md"
+    },
+    {
+      "id": "indian/dosa_masala",
+      "title": "Masala Dosa",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Masala Dosa",
+        "region": "Sur de India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%B8%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa fermentada de arroz y lenteja",
+          "Relleno de patata especiada",
+          "Chutney de coco",
+          "Sambar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Masala Dosa"
+          ],
+          "presentation": "Masala Dosa presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Masala Dosa tradicional"
+          }
+        ],
+        "description": "Masala Dosa es uno de los platos más emblemáticos de la gastronomía de Sur de India, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa fermentada de arroz y lenteja",
+        "Relleno de patata especiada",
+        "Chutney de coco",
+        "Sambar"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/dosa_masala.md"
+    },
+    {
+      "id": "indian/fish_amritsari",
+      "title": "Amritsari Fish Fry",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Amritsari Fish Fry",
+        "region": "Amritsar",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-amritsari-fish-218336",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pescado blanco en tacos",
+          "Harina de garbanzo (besan)",
+          "Semillas de carambola (ajwain)",
+          "Zumo de limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Amritsari Fish Fry"
+          ],
+          "presentation": "Amritsari Fish Fry presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Amritsari Fish Fry tradicional"
+          }
+        ],
+        "description": "Amritsari Fish Fry es uno de los platos más emblemáticos de la gastronomía de Amritsar, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado blanco en tacos",
+        "Harina de garbanzo (besan)",
+        "Semillas de carambola (ajwain)",
+        "Zumo de limón"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/fish_amritsari.md"
+    },
+    {
+      "id": "indian/gulab_jamun",
+      "title": "Gulab Jamun",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gulab Jamun",
+        "region": "Norte de India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%BE%E0%A4%AC_%E0%A4%9C%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%A8",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Sólidos de leche (khoya)",
+          "Harina",
+          "Jarabe de azahar o rosa",
+          "Cardamomo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gulab Jamun"
+          ],
+          "presentation": "Gulab Jamun presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gulab Jamun tradicional"
+          }
+        ],
+        "description": "Gulab Jamun es uno de los platos más emblemáticos de la gastronomía de Norte de India, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Sólidos de leche (khoya)",
+        "Harina",
+        "Jarabe de azahar o rosa",
+        "Cardamomo"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/gulab_jamun.md"
+    },
+    {
+      "id": "indian/hyderabadi_haleem",
+      "title": "Hyderabadi Haleem",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Hyderabadi Haleem",
+        "region": "Telangana / Hyderabad",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-hyderabadi-haleem-218340",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Festivo"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "45 minutos",
+        "cook_time": "180 minutos",
+        "servings": 6,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Carne de cordero",
+          "Trigo partido",
+          "Lentejas variadas",
+          "Ghee",
+          "Garam masala",
+          "Cebolla frita"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Especiado",
+            "Rico",
+            "Salado"
+          ],
+          "texture": [
+            "Viscosa",
+            "Sedosa",
+            "Densa"
+          ],
+          "aroma": [
+            "Intenso a especias perfumadas, ghee y carne cocida lentamente"
+          ],
+          "presentation": "Puré espeso decorado con cebollas crujientes doradas, menta fresca y un chorrito de limón."
+        },
+        "nutrition": {
+          "calories": 620,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 28,
+            "carbs_g": 54
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Hyderabadi Haleem tradicional decorado con cebolla frita"
+          }
+        ],
+        "description": "El Hyderabadi Haleem es una preparación sustanciosa de cocción lenta que combina carne, trigo y lentejas hasta lograr una textura suave y homogénea rica en nutrientes."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Festivo"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "45 minutos",
+      "cookTime": "180 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cordero",
+        "Trigo partido",
+        "Lentejas variadas",
+        "Ghee",
+        "Garam masala",
+        "Cebolla frita"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/hyderabadi_haleem.md"
+    },
+    {
+      "id": "indian/idli_sambar",
+      "title": "Idli Sambar",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Idli Sambar",
+        "region": "Tamil Nadu / Sur de la India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%87%E0%A4%A1%E0%A4%B2%E0%A5%80",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Desayuno",
+          "Tradicional",
+          "Plato fuerte"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Arroz",
+          "Lentejas de matpe (Urad dal)",
+          "Lentejas amarillas (Toor dal)",
+          "Tamarindo",
+          "Mezcla de especias sambar",
+          "Hojas de curry"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Ácido",
+            "Especiado",
+            "Umami"
+          ],
+          "texture": [
+            "Esponjosa",
+            "Líquida espesa"
+          ],
+          "aroma": [
+            "Aromático a especias tostadas y tamarindo"
+          ],
+          "presentation": "Bizcochuelos esponjosos de arroz al vapor sumergidos en guiso de lentejas caliente."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 6,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600",
+            "description": "Idli Sambar servido con chutney de coco"
+          }
+        ],
+        "description": "El Idli Sambar es un pilar fundamental de la cocina del sur de la India, compuesto por esponjosas tortas fermentadas de arroz y lentejas servidas en un guiso especiado a base de tamarindo."
+      },
+      "category": [
+        "Desayuno",
+        "Tradicional",
+        "Plato fuerte"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz",
+        "Lentejas de matpe (Urad dal)",
+        "Lentejas amarillas (Toor dal)",
+        "Tamarindo",
+        "Mezcla de especias sambar",
+        "Hojas de curry"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/idli_sambar.md"
+    },
+    {
+      "id": "indian/kathi_roll_kolkata",
+      "title": "Kathi Roll de Kolkata",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kathi Roll de Kolkata",
+        "region": "Bengala Occidental / Kolkata",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://thehindu.com/food/features/the-story-of-kolkatas-kathi-roll/article32567890.ece",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Callejero",
+          "Plato fuerte",
+          "Casual"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Pan Paratha",
+          "Carne de pollo marinado",
+          "Huevo",
+          "Cebolla morada",
+          "Chile verde",
+          "Jugo de limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Salado",
+            "Ácido",
+            "Especiado"
+          ],
+          "texture": [
+            "Crocante por fuera",
+            "Jugosa por dentro"
+          ],
+          "aroma": [
+            "A pollo asado a las brasas y pan hojaldrado caliente"
+          ],
+          "presentation": "Enrollado envuelto en papel manteca con extremos expuestos para comer con la mano."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 26,
+            "fat_g": 20,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600",
+            "description": "Kathi roll estilo Kolkata envuelto"
+          }
+        ],
+        "description": "El Kathi Roll de Kolkata nació como comida rápida para oficinistas en Bengala Occidental, consistente en brochetas de carne marinada envueltas en paratha con huevo frito."
+      },
+      "category": [
+        "Callejero",
+        "Plato fuerte",
+        "Casual"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pan Paratha",
+        "Carne de pollo marinado",
+        "Huevo",
+        "Cebolla morada",
+        "Chile verde",
+        "Jugo de limón"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/kathi_roll_kolkata.md"
+    },
+    {
+      "id": "indian/kheer_de_arroz",
+      "title": "Kheer de Arroz",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kheer de Arroz",
+        "region": "Pan-India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%96%E0%A5%80%E0%A4%B0",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional",
+          "Festivo"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "40 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Arroz Basmati",
+          "Leche entera",
+          "Azúcar",
+          "Cardamomo verde",
+          "Hebra de azafrán",
+          "Frutos secos (almendras, pistachos)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Cremoso",
+            "Aromático"
+          ],
+          "texture": [
+            "Espesa",
+            "Sedosa",
+            "Suave con granos tiernos"
+          ],
+          "aroma": [
+            "Rico aroma a leche reducida, azafrán perfumado y cardamomo"
+          ],
+          "presentation": "Pudín cremoso servido en cuenco de barro tradicional espolvoreado con pistachos picados y azafrán."
+        },
+        "nutrition": {
+          "calories": 330,
+          "macros": {
+            "protein_g": 8,
+            "fat_g": 11,
+            "carbs_g": 50
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600",
+            "description": "Kheer de arroz con azafrán y pistachos"
+          }
+        ],
+        "description": "El Kheer es el postre lácteo festivo más emblemático de la India, preparado reduciendo lentamente leche entera con arroz aromático, azafrán y frutos secos."
+      },
+      "category": [
+        "Postre",
+        "Tradicional",
+        "Festivo"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "40 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Basmati",
+        "Leche entera",
+        "Azúcar",
+        "Cardamomo verde",
+        "Hebra de azafrán",
+        "Frutos secos (almendras, pistachos)"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/kheer_de_arroz.md"
+    },
+    {
+      "id": "indian/litti_chokha",
+      "title": "Litti Chokha",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Litti Chokha",
+        "region": "Bihar",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A5%80_%E0%A4%9A%E0%A5%8B%E0%A4%96%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "40 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Harina de trigo integral",
+          "Sattu (harina de garbanzo tostado)",
+          "Berenjena asada",
+          "Tomate asado",
+          "Aceite de mostaza",
+          "Nigella (Kalonji)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Picante",
+            "Terroso",
+            "Ácido"
+          ],
+          "texture": [
+            "Masa horneada firme",
+            "Puré suave asado"
+          ],
+          "aroma": [
+            "Intenso a brasa de carbón y aceite de mostaza pungente"
+          ],
+          "presentation": "Esferas de trigo horneadas bañadas en ghee acompañadas de puré ahumado de berenjena y tomate."
+        },
+        "nutrition": {
+          "calories": 460,
+          "macros": {
+            "protein_g": 15,
+            "fat_g": 14,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Litti Chokha tradicional de Bihar"
+          }
+        ],
+        "description": "El Litti Chokha es el plato emblemático del estado de Bihar, compuesto por bolas de trigo rellenas de sattu especiado horneadas al carbón y servidas con puré ahumado de vegetales."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "40 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de trigo integral",
+        "Sattu (harina de garbanzo tostado)",
+        "Berenjena asada",
+        "Tomate asado",
+        "Aceite de mostaza",
+        "Nigella (Kalonji)"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/litti_chokha.md"
+    },
+    {
+      "id": "indian/malai_kofta",
+      "title": "Malai Kofta",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Malai Kofta",
+        "region": "Norte de India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-malai-kofta-218227",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Albóndigas de patata y paneer",
+          "Salsa de anacardos y tomate",
+          "Nata",
+          "Especias suaves"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Malai Kofta"
+          ],
+          "presentation": "Malai Kofta presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Malai Kofta tradicional"
+          }
+        ],
+        "description": "Malai Kofta es uno de los platos más emblemáticos de la gastronomía de Norte de India, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Albóndigas de patata y paneer",
+        "Salsa de anacardos y tomate",
+        "Nata",
+        "Especias suaves"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/malai_kofta.md"
+    },
+    {
+      "id": "indian/misal_pav",
+      "title": "Misal Pav",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Misal Pav",
+        "region": "Maharashtra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%B8%E0%A4%B2_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Callejero",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Brotes de judía moth (Matki)",
+          "Farsan (mezcla frita crujiente)",
+          "Cebolla",
+          "Tomate",
+          "Mezcla de especias kolhapuri",
+          "Pan dulce (Pav)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Extremadamente picante",
+            "Umami",
+            "Salado"
+          ],
+          "texture": [
+            "Crujiente y tierna en salsa líquida especiada"
+          ],
+          "aroma": [
+            "Intenso a chiles fritos, aceite perfumado y cebolla tostada"
+          ],
+          "presentation": "Guiso de brotes servido en cuenco cubierto de farsan crujiente, cebolla cruda y acompañado de bollos pav tostados."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 22,
+            "carbs_g": 64
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600",
+            "description": "Misal Pav especiado servido con pan pav"
+          }
+        ],
+        "description": "El Misal Pav es un plato callejero icónico de Maharashtra, compuesto por un curry picante de brotes de judía moth cubierto con farsan crujiente y servido con bollos suaves."
+      },
+      "category": [
+        "Plato fuerte",
+        "Callejero",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Brotes de judía moth (Matki)",
+        "Farsan (mezcla frita crujiente)",
+        "Cebolla",
+        "Tomate",
+        "Mezcla de especias kolhapuri",
+        "Pan dulce (Pav)"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/misal_pav.md"
+    },
+    {
+      "id": "indian/naan_de_ajo",
+      "title": "Ajo Naan (Pan Naan)",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ajo Naan (Pan Naan)",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-garlic-naan-218231",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Ajo picado",
+          "Cilantro fresco",
+          "Mantequilla o ghee",
+          "Yogur"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Ajo Naan (Pan Naan)"
+          ],
+          "presentation": "Ajo Naan (Pan Naan) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Ajo Naan (Pan Naan) tradicional"
+          }
+        ],
+        "description": "Ajo Naan (Pan Naan) es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Ajo picado",
+        "Cilantro fresco",
+        "Mantequilla o ghee",
+        "Yogur"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/naan_de_ajo.md"
+    },
+    {
+      "id": "indian/palak_paneer",
+      "title": "Palak Paneer",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Palak Paneer",
+        "region": "Norte de India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-palak-paneer-218229",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Queso Paneer",
+          "Puré de espinacas",
+          "Ajo",
+          "Jengibre",
+          "Garam masala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Palak Paneer"
+          ],
+          "presentation": "Palak Paneer presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Palak Paneer tradicional"
+          }
+        ],
+        "description": "Palak Paneer es uno de los platos más emblemáticos de la gastronomía de Norte de India, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Queso Paneer",
+        "Puré de espinacas",
+        "Ajo",
+        "Jengibre",
+        "Garam masala"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/palak_paneer.md"
+    },
+    {
+      "id": "indian/paneer_butter_masala",
+      "title": "Paneer Butter Masala",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Paneer Butter Masala",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-paneer-butter-masala-218226",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Queso Paneer",
+          "Mantequilla",
+          "Salsa de tomate",
+          "Anacardos",
+          "Especias"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Paneer Butter Masala"
+          ],
+          "presentation": "Paneer Butter Masala presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Paneer Butter Masala tradicional"
+          }
+        ],
+        "description": "Paneer Butter Masala es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Queso Paneer",
+        "Mantequilla",
+        "Salsa de tomate",
+        "Anacardos",
+        "Especias"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/paneer_butter_masala.md"
+    },
+    {
+      "id": "indian/pani_puri",
+      "title": "Pani Puri (Golgappa)",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pani Puri (Golgappa)",
+        "region": "Mumbai",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%80",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Esferas crujientes (puri)",
+          "Agua de menta y tamarindo",
+          "Patata cocida",
+          "Garbanzos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pani Puri (Golgappa)"
+          ],
+          "presentation": "Pani Puri (Golgappa) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pani Puri (Golgappa) tradicional"
+          }
+        ],
+        "description": "Pani Puri (Golgappa) es uno de los platos más emblemáticos de la gastronomía de Mumbai, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Esferas crujientes (puri)",
+        "Agua de menta y tamarindo",
+        "Patata cocida",
+        "Garbanzos"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/pani_puri.md"
+    },
+    {
+      "id": "indian/pav_bhaji",
+      "title": "Pav Bhaji",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pav Bhaji",
+        "region": "Mumbai",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B5_%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Puré de verduras especiado",
+          "Panecillos suaves (pav)",
+          "Mantequilla abundante",
+          "Cebolla picada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pav Bhaji"
+          ],
+          "presentation": "Pav Bhaji presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pav Bhaji tradicional"
+          }
+        ],
+        "description": "Pav Bhaji es uno de los platos más emblemáticos de la gastronomía de Mumbai, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Puré de verduras especiado",
+        "Panecillos suaves (pav)",
+        "Mantequilla abundante",
+        "Cebolla picada"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/pav_bhaji.md"
+    },
+    {
+      "id": "indian/poha_indori",
+      "title": "Indori Poha",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Indori Poha",
+        "region": "Madhya Pradesh / Indore",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8B%E0%A4%B9%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Desayuno",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Arroz aplanado (Poha)",
+          "Cebolla",
+          "Semillas de mostaza",
+          "Mani / Cacahuates",
+          "Polvo jeeravan",
+          "Sev (fideos fritos de garbanzo)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Ligeramente dulce",
+            "Cítrico",
+            "Especiado"
+          ],
+          "texture": [
+            "Tierno",
+            "Crujiente por toppings"
+          ],
+          "aroma": [
+            "Cálido a cúrcuma, semillas de mostaza tostadas y limón"
+          ],
+          "presentation": "Arroz aplanado de color amarillo brillante servido con sev crocante y granos de granada."
+        },
+        "nutrition": {
+          "calories": 290,
+          "macros": {
+            "protein_g": 7,
+            "fat_g": 9,
+            "carbs_g": 46
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600",
+            "description": "Indori Poha servido con sev y cebollas"
+          }
+        ],
+        "description": "El Indori Poha es una especialidad matutina de la ciudad de Indore en Madhya Pradesh, famoso por cocinarse al vapor y sazonarse con la mezcla especial de especias Jeeravan."
+      },
+      "category": [
+        "Desayuno",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz aplanado (Poha)",
+        "Cebolla",
+        "Semillas de mostaza",
+        "Mani / Cacahuates",
+        "Polvo jeeravan",
+        "Sev (fideos fritos de garbanzo)"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/poha_indori.md"
+    },
+    {
+      "id": "indian/rajma_chawal",
+      "title": "Rajma Chawal",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rajma Chawal",
+        "region": "Norte de la India / Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-rajma-chawal-218345",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "45 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Frijoles rojos (Rajma)",
+          "Arroz Basmati",
+          "Tomate",
+          "Cebolla",
+          "Garam masala",
+          "Jengibre y Ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Especiado",
+            "Rico",
+            "Umami"
+          ],
+          "texture": [
+            "Frijoles suaves en salsa espesa sobre arroz suelto"
+          ],
+          "aroma": [
+            "Cálido a garam masala, tomate frito y basmati al vapor"
+          ],
+          "presentation": "Curry espeso de frijoles rojos servido sobre una cama de arroz basmati blanco y fino."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 10,
+            "carbs_g": 84
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+            "description": "Rajma Chawal reconfortante"
+          }
+        ],
+        "description": "El Rajma Chawal es la comida de confort por excelencia en el norte de la India, consistente en frijoles rojos cocinados en una rica salsa de tomate y cebolla acompañados de arroz basmati."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "45 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Frijoles rojos (Rajma)",
+        "Arroz Basmati",
+        "Tomate",
+        "Cebolla",
+        "Garam masala",
+        "Jengibre y Ajo"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/rajma_chawal.md"
+    },
+    {
+      "id": "indian/rasam_de_tomate",
+      "title": "Rasam de Tomate",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rasam de Tomate",
+        "region": "Tamil Nadu / Sur de la India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%AE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Sopa",
+          "Entrante",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Tomates",
+          "Extracto de tamarindo",
+          "Pimienta negra",
+          "Comino",
+          "Ajo",
+          "Hojas de cilantro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido",
+            "Picante",
+            "Aromático"
+          ],
+          "texture": [
+            "Líquida",
+            "Caldo claro"
+          ],
+          "aroma": [
+            "Intenso a pimienta molida, ajo y tamarindo fresco"
+          ],
+          "presentation": "Caldo rojo transparente servido en cuenco tradicional con cilantrillo picado."
+        },
+        "nutrition": {
+          "calories": 110,
+          "macros": {
+            "protein_g": 3,
+            "fat_g": 4,
+            "carbs_g": 16
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600",
+            "description": "Caldo de Rasam de tomate aromático"
+          }
+        ],
+        "description": "El Rasam de Tomate es una sopa ligera y digestiva del sur de la India, preparada con tomates maduros, tamarindo y un tueste aromático de pimienta y comino."
+      },
+      "category": [
+        "Sopa",
+        "Entrante",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tomates",
+        "Extracto de tamarindo",
+        "Pimienta negra",
+        "Comino",
+        "Ajo",
+        "Hojas de cilantro"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/rasam_de_tomate.md"
+    },
+    {
+      "id": "indian/rasgulla",
+      "title": "Rasgulla",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rasgulla",
+        "region": "Bengala Occidental / Odisha",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 6,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Leche entera",
+          "Jugo de limón o suero",
+          "Azúcar",
+          "Agua de rosas",
+          "Cardamomo verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Delicado",
+            "Ligeramente floral"
+          ],
+          "texture": [
+            "Esponjosa",
+            "Jugosa",
+            "Elástica"
+          ],
+          "aroma": [
+            "Perfumado a cardamomo y esencia de rosas"
+          ],
+          "presentation": "Esferas blancas impecables flotando en almíbar claro perfumado."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 5,
+            "fat_g": 4,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=600",
+            "description": "Rasgullas esponjosas en jarabe de azúcar"
+          }
+        ],
+        "description": "El Rasgulla es uno de los dulces más renombrados de la India oriental, elaborado con bolitas suaves de queso fresco de leche (chhena) cocidas en almíbar de azúcar liviano."
+      },
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Leche entera",
+        "Jugo de limón o suero",
+        "Azúcar",
+        "Agua de rosas",
+        "Cardamomo verde"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/rasgulla.md"
+    },
+    {
+      "id": "indian/rogan_josh",
+      "title": "Rogan Josh de Cordero",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Rogan Josh de Cordero",
+        "region": "Cachemira",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-mutton-rogan-josh-218358",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de cordero",
+          "Chiles de Cachemira",
+          "Yogur",
+          "Hinojo en polvo",
+          "Jengibre seco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Rogan Josh de Cordero"
+          ],
+          "presentation": "Rogan Josh de Cordero presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Rogan Josh de Cordero tradicional"
+          }
+        ],
+        "description": "Rogan Josh de Cordero es uno de los platos más emblemáticos de la gastronomía de Cachemira, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de cordero",
+        "Chiles de Cachemira",
+        "Yogur",
+        "Hinojo en polvo",
+        "Jengibre seco"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/rogan_josh.md"
+    },
+    {
+      "id": "indian/samosa_de_patata",
+      "title": "Samosa de Patata y Guisantes",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Samosa de Patata y Guisantes",
+        "region": "Norte de India",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AE%E0%A5%8B%E0%A4%B8%E0%A4%BE",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa crujiente",
+          "Patatas",
+          "Guisantes",
+          "Comino",
+          "Cilantro",
+          "Garam masala"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Samosa de Patata y Guisantes"
+          ],
+          "presentation": "Samosa de Patata y Guisantes presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Samosa de Patata y Guisantes tradicional"
+          }
+        ],
+        "description": "Samosa de Patata y Guisantes es uno de los platos más emblemáticos de la gastronomía de Norte de India, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa crujiente",
+        "Patatas",
+        "Guisantes",
+        "Comino",
+        "Cilantro",
+        "Garam masala"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/samosa_de_patata.md"
+    },
+    {
+      "id": "indian/tandoori_chicken",
+      "title": "Tandoori Chicken",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tandoori Chicken",
+        "region": "Punjab",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-tandoori-chicken-218224",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo en cuartos",
+          "Yogur",
+          "Garam masala",
+          "Chile rojo",
+          "Zumo de limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tandoori Chicken"
+          ],
+          "presentation": "Tandoori Chicken presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tandoori Chicken tradicional"
+          }
+        ],
+        "description": "Tandoori Chicken es uno de los platos más emblemáticos de la gastronomía de Punjab, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo en cuartos",
+        "Yogur",
+        "Garam masala",
+        "Chile rojo",
+        "Zumo de limón"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/tandoori_chicken.md"
+    },
+    {
+      "id": "indian/thalipeeth",
+      "title": "Thalipeeth",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Thalipeeth",
+        "region": "Maharashtra",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%AA%E0%A5%80%E0%A4%A0",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Pan",
+          "Desayuno",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Harina multigrano (Bhajanee: garbanzo, trigo, mijo, sorgo)",
+          "Cebolla picada",
+          "Cilantro fresco",
+          "Semillas de ajonjolí",
+          "Ghee"
+        ],
+        "sensory": {
+          "flavor": [
+            "Tostado",
+            "Nuez",
+            "Salado",
+            "Ligeramente picante"
+          ],
+          "texture": [
+            "Crujiente en los bordes",
+            "Tierno en el centro"
+          ],
+          "aroma": [
+            "Rico a granos tostados, ghee y ajonjolí"
+          ],
+          "presentation": "Pan plano dorado multigrano con orificios característicos lleno de gotas de ghee."
+        },
+        "nutrition": {
+          "calories": 310,
+          "macros": {
+            "protein_g": 9,
+            "fat_g": 11,
+            "carbs_g": 44
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600",
+            "description": "Thalipeeth multigrano con mantequilla casera"
+          }
+        ],
+        "description": "El Thalipeeth es un pan plano salado y nutritivo de la región de Maharashtra elaborado con Bhajanee, una mezcla especial de granos y legumbres tostadas molidas."
+      },
+      "category": [
+        "Pan",
+        "Desayuno",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Harina multigrano (Bhajanee: garbanzo, trigo, mijo, sorgo)",
+        "Cebolla picada",
+        "Cilantro fresco",
+        "Semillas de ajonjolí",
+        "Ghee"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/thalipeeth.md"
+    },
+    {
+      "id": "indian/vada_pav",
+      "title": "Vada Pav",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Vada Pav",
+        "region": "Bombay / Mumbai",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Bola de patata frita especiada",
+          "Panecillo pav",
+          "Chutney de ajo seco",
+          "Guindilla verde frita"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Vada Pav"
+          ],
+          "presentation": "Vada Pav presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Vada Pav tradicional"
+          }
+        ],
+        "description": "Vada Pav es uno de los platos más emblemáticos de la gastronomía de Bombay / Mumbai, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Bola de patata frita especiada",
+        "Panecillo pav",
+        "Chutney de ajo seco",
+        "Guindilla verde frita"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/indian/vada_pav.md"
+    },
+    {
+      "id": "indian/vindaloo_de_cerdo",
+      "title": "Vindaloo de Cerdo",
+      "language": "spanish",
+      "country": "india",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Vindaloo de Cerdo",
+        "region": "Goa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "https://food.ndtv.com/recipe-goan-pork-vindaloo-218342",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database research"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "50 minutos",
+        "servings": 4,
+        "tags": [
+          "Indian",
+          "GOS Catalog",
+          "HI Wave-1"
+        ],
+        "main_ingredients": [
+          "Carne de cerdo",
+          "Vinagre de palma/vino",
+          "Chiles rojos secos Kashmiri",
+          "Ajo",
+          "Comino",
+          "Canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Ácido",
+            "Intenso",
+            "Especia compleja"
+          ],
+          "texture": [
+            "Carne tierna en salsa densa"
+          ],
+          "aroma": [
+            "Acre a vinagre de vino y especias secas tostadas"
+          ],
+          "presentation": "Trozos de cerdo tiernos bañados en una salsa roja profunda brillante."
+        },
+        "nutrition": {
+          "calories": 580,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 36,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600",
+            "description": "Vindaloo de cerdo picante de Goa"
+          }
+        ],
+        "description": "El Vindaloo de Cerdo es un plato emblemático de Goa con influencias portuguesas, caracterizado por su equilibrio picante y ácido aportado por vinagre y especias molidas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "50 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de cerdo",
+        "Vinagre de palma/vino",
+        "Chiles rojos secos Kashmiri",
+        "Ajo",
+        "Comino",
+        "Canela"
+      ],
+      "tags": [
+        "Indian",
+        "GOS Catalog",
+        "HI Wave-1"
+      ],
+      "filePath": "dishes/indian/vindaloo_de_cerdo.md"
+    }
+  ],
+  "count": 35
+}

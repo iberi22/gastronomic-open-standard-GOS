@@ -1,0 +1,3335 @@
+{
+  "recipes": [
+    {
+      "id": "mexican/agua_de_horchata_de_arroz",
+      "title": "Agua de Horchata de Arroz",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Agua de Horchata de Arroz",
+        "region": "Tradicional Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/bebidas/agua-de-horchata-de-arroz-tradicional/2018/03/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Bebidas",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "20 min (más 4h remojo)",
+        "cook_time": "0 min",
+        "servings": 8,
+        "tags": [
+          "Mexican",
+          "Bebida",
+          "Horchata",
+          "Arroz"
+        ],
+        "main_ingredients": [
+          "Arroz blanco",
+          "Canela en raja",
+          "Leche evaporada",
+          "Leche condensada",
+          "Extracto de vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce cremoso",
+            "Canela aromática",
+            "Vainilla suave"
+          ],
+          "texture": [
+            "Bebida sedosa y refrescante"
+          ],
+          "aroma": [
+            "Canela recién molida",
+            "Vainilla",
+            "Arroz dulce"
+          ],
+          "presentation": "Servida en jarra o vaso de vidrio repleto de hielo, espolvoreada con canela en polvo por encima."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Vaso de agua de horchata de arroz con canela"
+          }
+        ],
+        "description": "El Agua de Horchata de Arroz es una de las aguas frescas más populares y queridas de la gastronomía mexicana. Elaborada a partir de arroz remojado y molido con canela, leche y vainilla."
+      },
+      "category": [
+        "Bebidas",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "20 min (más 4h remojo)",
+      "cookTime": "0 min",
+      "servings": 8,
+      "mainIngredients": [
+        "Arroz blanco",
+        "Canela en raja",
+        "Leche evaporada",
+        "Leche condensada",
+        "Extracto de vainilla"
+      ],
+      "tags": [
+        "Mexican",
+        "Bebida",
+        "Horchata",
+        "Arroz"
+      ],
+      "filePath": "dishes/mexican/agua_de_horchata_de_arroz.md"
+    },
+    {
+      "id": "mexican/aguachile_verde",
+      "title": "Aguachile Verde de Camarón",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Aguachile Verde de Camarón",
+        "region": "Sinaloa",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/04/14/receta-aguachile-verde-de-camaron/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Marisco",
+          "Fresco"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "0 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "studies": [
+          {
+            "title": "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence",
+            "source": "Appetite",
+            "year": 2012,
+            "doi": "10.1016/j.appet.2012.05.015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22634197/"
+          },
+          {
+            "title": "Peppers and their constituents against obesity",
+            "source": "Biologia Futura",
+            "year": 2023,
+            "doi": "10.1007/s42977-023-00174-3",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37493973/"
+          }
+        ],
+        "main_ingredients": [
+          "Camarones frescos limpios",
+          "Jugo de lima fresco",
+          "Chile serrano",
+          "Cilantro",
+          "Pepino en rodajas",
+          "Cebolla morada en pluma"
+        ],
+        "sensory": {
+          "flavor": [
+            "Muy picante",
+            "Muy ácido (lima)",
+            "Salino y fresco"
+          ],
+          "texture": [
+            "Camarón firme y tierno",
+            "Pepino crujiente"
+          ],
+          "aroma": [
+            "Chile serrano machacado",
+            "Lima fresca",
+            "Cilantro"
+          ],
+          "presentation": "Camarones abiertos en mariposa marinados al instante en salsa verde de chile y lima con cebolla morada."
+        },
+        "nutrition": {
+          "calories": 210,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 3,
+            "carbs_g": 15
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Aguachile Verde de Camarón tradicional"
+          }
+        ],
+        "description": "El Aguachile Verde es un plato marinero del Pacífico mexicano donde los camarones se curtieron rápidamente en una mezcla viva de lima, chile serrano y cilantro."
+      },
+      "category": [
+        "Entrante",
+        "Marisco",
+        "Fresco"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "0 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Camarones frescos limpios",
+        "Jugo de lima fresco",
+        "Chile serrano",
+        "Cilantro",
+        "Pepino en rodajas",
+        "Cebolla morada en pluma"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/aguachile_verde.md"
+    },
+    {
+      "id": "mexican/albondigas_en_chipotle",
+      "title": "Albóndigas en Salsa de Chipotle",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Albóndigas en Salsa de Chipotle",
+        "region": "Centro de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/platos-fuertes/albondigas-en-salsa-de-chipotle/2019/04/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Casero"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "35 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "studies": [
+          {
+            "title": "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence",
+            "source": "Appetite",
+            "year": 2012,
+            "doi": "10.1016/j.appet.2012.05.015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22634197/"
+          },
+          {
+            "title": "Capsaicin and Related Food Ingredients Reducing Body Fat Through the Activation of TRP and Brown Fat Thermogenesis",
+            "source": "Advances in Food and Nutrition Research",
+            "year": 2015,
+            "doi": "10.1016/bs.afnr.2015.07.002",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26602570/"
+          }
+        ],
+        "main_ingredients": [
+          "Carne molida de res y cerdo",
+          "Arroz precocido",
+          "Chile chipotle en adobo",
+          "Jitomates maduros",
+          "Huevo",
+          "Hierbabuena picada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Jitomate dulce",
+            "Chipotle ahumado picante",
+            "Salado"
+          ],
+          "texture": [
+            "Albóndiga jugosa y blanda"
+          ],
+          "aroma": [
+            "Chipotle en adobo",
+            "Hierbabuena fresca"
+          ],
+          "presentation": "Albóndigas esponjosas cocidas en un guiso terso de jitomate y chile chipotle ahumado."
+        },
+        "nutrition": {
+          "calories": 540,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 26,
+            "carbs_g": 42
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Albóndigas en Salsa de Chipotle tradicional"
+          }
+        ],
+        "description": "Las Albóndigas en Chipotle son un clásico reconfortante del hogar mexicano, donde bolitas de carne sazonadas con hierbabuena se cocinan en salsa de chipotle."
+      },
+      "category": [
+        "Plato fuerte",
+        "Casero"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "35 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne molida de res y cerdo",
+        "Arroz precocido",
+        "Chile chipotle en adobo",
+        "Jitomates maduros",
+        "Huevo",
+        "Hierbabuena picada"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/albondigas_en_chipotle.md"
+    },
+    {
+      "id": "mexican/barbacoa_de_borrego",
+      "title": "Barbacoa de Borrego",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Barbacoa de Borrego",
+        "region": "Hidalgo",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2020/02/12/receta-de-barbacoa-estilo-hidalgo/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Festivo",
+          "Ancestral"
+        ],
+        "difficulty": "★★★★★",
+        "prep_time": "1 hora",
+        "cook_time": "6 horas",
+        "servings": 12,
+        "tags": [
+          "Mexican",
+          "Hidalgo",
+          "Maguey",
+          "Barbacoa"
+        ],
+        "main_ingredients": [
+          "Borrego entero troceado",
+          "Pencas de maguey",
+          "Chile garbanzo y arroz (para consome)",
+          "Chile pasilla (para salsa borracha)",
+          "Pulque"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami intenso",
+            "Ahumado por maguey",
+            "Jugoso salado"
+          ],
+          "texture": [
+            "Carne extremadamente suave que se deshace"
+          ],
+          "aroma": [
+            "Maguey tatemado",
+            "Grasa de borrego",
+            "Especias"
+          ],
+          "presentation": "Carne suave deshebrada servida sobre penca de maguey asada acompañada de un tazón de consomé con garbanzos y salsa borracha con pulque."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Barbacoa de borrego cocida en pencas de maguey"
+          }
+        ],
+        "description": "La Barbacoa de Borrego estilo Hidalgo es un método de cocción ancestral en horno de tierra (pib) envuelto en pencas de maguey asadas. Produce una carne jugosa e infundida con los aromas herbáceos de la cactácea."
+      },
+      "category": [
+        "Festivo",
+        "Ancestral"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "1 hora",
+      "cookTime": "6 horas",
+      "servings": 12,
+      "mainIngredients": [
+        "Borrego entero troceado",
+        "Pencas de maguey",
+        "Chile garbanzo y arroz (para consome)",
+        "Chile pasilla (para salsa borracha)",
+        "Pulque"
+      ],
+      "tags": [
+        "Mexican",
+        "Hidalgo",
+        "Maguey",
+        "Barbacoa"
+      ],
+      "filePath": "dishes/mexican/barbacoa_de_borrego.md"
+    },
+    {
+      "id": "mexican/birria_de_res",
+      "title": "Birria de Res con Consomé",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Beef Birria",
+            "Birria Stew"
+          ]
+        },
+        "categories": [
+          "Plato fuerte",
+          "Taquería",
+          "Tradicional"
+        ],
+        "cook_time": "3 horas",
+        "description": "La Birria de Res es un guiso tradicional jalisciense de carne adobada en especias y cocida lentamente hasta quedar suave, servida junto con su consomé aromático.",
+        "difficulty": "★★★☆☆",
+        "images": [
+          {
+            "description": "Birria de Res con Consomé tradicional",
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Carne de res (diezmillo/morcillo)",
+          "Chile guajillo",
+          "Chile ancho",
+          "Jitomate",
+          "Vinagre blanco",
+          "Comino",
+          "Orégano",
+          "Canela"
+        ],
+        "nutrition": {
+          "calories": 720,
+          "macros": {
+            "carbs_g": 50,
+            "fat_g": 35,
+            "protein_g": 48
+          }
+        },
+        "prep_time": "40 minutos",
+        "region": "Jalisco",
+        "sensory": {
+          "aroma": [
+            "Comino",
+            "Clavo",
+            "Chile ancho y guajillo"
+          ],
+          "flavor": [
+            "Concentrado de res",
+            "Especiado",
+            "Picante sabroso"
+          ],
+          "presentation": "Carne servida en tazón con consomé rojo, acompañada de tortillas frotadas en la grasa del caldo.",
+          "texture": [
+            "Carne melosa que se deshace",
+            "Consomé espeso"
+          ]
+        },
+        "servings": 6,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Animal Gourmet",
+          "notes": "Derived from GOS Database",
+          "url": "https://animalgourmet.com/2021/02/10/receta-de-birria-de-res-con-consome/"
+        },
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "title": "Birria de Res con Consomé"
+      },
+      "category": [
+        "Plato fuerte",
+        "Taquería",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "3 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de res (diezmillo/morcillo)",
+        "Chile guajillo",
+        "Chile ancho",
+        "Jitomate",
+        "Vinagre blanco",
+        "Comino",
+        "Orégano",
+        "Canela"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/birria_de_res.md"
+    },
+    {
+      "id": "mexican/carnitas_de_michoacan",
+      "title": "Carnitas de Michoacán",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Carnitas de Michoacán",
+        "region": "Michoacán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Taquería"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "2 horas",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de cerdo (costilla, lomo, maciza)",
+          "Manteca de cerdo",
+          "Jugo de naranja",
+          "Leche",
+          "Hojas de laurel",
+          "Sal de grano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami de cerdo frito",
+            "Salado",
+            "Dulzor sutil de naranja/coca"
+          ],
+          "texture": [
+            "Exterior crujiente dorado",
+            "Interior jugoso y tierno"
+          ],
+          "aroma": [
+            "Manteca de cerdo caliente",
+            "Cítricos y especias"
+          ],
+          "presentation": "Carne troceada dorada servida en tabla con tortillas calientes, salsas, cebolla y cilantro."
+        },
+        "nutrition": {
+          "calories": 820,
+          "macros": {
+            "protein_g": 44,
+            "fat_g": 58,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Carnitas de Michoacán tradicional"
+          }
+        ],
+        "description": "Las Carnitas son pedazos de cerdo confitados lentamente en su propia manteca dentro de coperos de cobre, logrando una carne suave por dentro y crujiente por fuera."
+      },
+      "category": [
+        "Plato fuerte",
+        "Taquería"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "2 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cerdo (costilla, lomo, maciza)",
+        "Manteca de cerdo",
+        "Jugo de naranja",
+        "Leche",
+        "Hojas de laurel",
+        "Sal de grano"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/carnitas_de_michoacan.md"
+    },
+    {
+      "id": "mexican/chilaquiles_verdes",
+      "title": "Chilaquiles Verdes con Huevo",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chilaquiles Verdes con Huevo",
+        "region": "México DF",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/desayunos/chilaquiles-verdes-con-pollo/2018/05/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Desayuno",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "15 minutos",
+        "servings": 2,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Totopos de maíz fritos",
+          "Tomatillos verdes",
+          "Chile jalapeño",
+          "Epazote",
+          "Huevos",
+          "Queso fresco",
+          "Crema agria"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante brillante",
+            "Ácido",
+            "Salado"
+          ],
+          "texture": [
+            "Totopos crujientes suavizados por la salsa"
+          ],
+          "aroma": [
+            "Tomatillo frito",
+            "Epazote",
+            "Cilantro"
+          ],
+          "presentation": "Totopos bañados en salsa verde caliente, coronados con huevo frito, crema, queso y cebolla."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 24,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chilaquiles Verdes con Huevo tradicional"
+          }
+        ],
+        "description": "Los Chilaquiles Verdes son el desayuno reconfortante definitivo en México: totopos de tortilla bañados en salsa verde hirviendo y acompañados de huevos o pollo."
+      },
+      "category": [
+        "Desayuno",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "15 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Totopos de maíz fritos",
+        "Tomatillos verdes",
+        "Chile jalapeño",
+        "Epazote",
+        "Huevos",
+        "Queso fresco",
+        "Crema agria"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/chilaquiles_verdes.md"
+    },
+    {
+      "id": "mexican/chiles_en_nogada",
+      "title": "Chiles en Nogada",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chiles en Nogada",
+        "region": "Puebla",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "El Universal Menú",
+          "url": "https://www.eluniversal.com.mx/menu/receta-de-chiles-en-nogada-tradicional-de-puebla/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Patrio",
+          "Estacional"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora 30 minutos",
+        "cook_time": "45 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Chiles poblanos",
+          "Carne picada de cerdo y res",
+          "Nuez de Castilla fresca",
+          "Queso de cabra",
+          "Granada roja",
+          "Durazno",
+          "Manzana criolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce salado",
+            "Nuez de Castilla",
+            "Especiado"
+          ],
+          "texture": [
+            "Textura suave del chile",
+            "Cremoso de la nogada",
+            "Crocante de granada"
+          ],
+          "aroma": [
+            "Nuez fresca",
+            "Jerez",
+            "Frutas salteadas"
+          ],
+          "presentation": "Chile poblano relleno cubierto con salsa blanca de nogada, decorado con granos de granada roja y perejil verde."
+        },
+        "nutrition": {
+          "calories": 850,
+          "macros": {
+            "protein_g": 35,
+            "fat_g": 42,
+            "carbs_g": 80
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chiles en Nogada tradicional"
+          }
+        ],
+        "description": "Los Chiles en Nogada son el plato patrio por excelencia de Puebla, luciendo los colores de la bandera mexicana con chile poblano, crema de nuez y granada."
+      },
+      "category": [
+        "Plato fuerte",
+        "Patrio",
+        "Estacional"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora 30 minutos",
+      "cookTime": "45 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Chiles poblanos",
+        "Carne picada de cerdo y res",
+        "Nuez de Castilla fresca",
+        "Queso de cabra",
+        "Granada roja",
+        "Durazno",
+        "Manzana criolla"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/chiles_en_nogada.md"
+    },
+    {
+      "id": "mexican/chiles_rellenos_de_queso",
+      "title": "Chiles Rellenos de Queso",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chiles Rellenos de Queso",
+        "region": "Puebla",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 min",
+        "cook_time": "35 min",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "Puebla",
+          "Poblano",
+          "Capeado"
+        ],
+        "main_ingredients": [
+          "Chile poblano",
+          "Queso oaxaca o panela",
+          "Huevo (para capeado)",
+          "Jitomate",
+          "Cebolla",
+          "Harina de trigo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami lacteo",
+            "Picante vegetal suave",
+            "Dulce ácido por caldillo"
+          ],
+          "texture": [
+            "Capeado esponjoso",
+            "Queso fundido suave"
+          ],
+          "aroma": [
+            "Chile poblano asado",
+            "Caldillo de jitomate"
+          ],
+          "presentation": "Chile poblano capeado bañado en caldillo rojo ligero de jitomate con orégano."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chile poblano relleno de queso capeado"
+          }
+        ],
+        "description": "Los Chiles Rellenos de Queso son un pilar de la cocina mestiza mexicana. Chiles poblanos asados y sudados, rellenos de queso derretido, capeados en una esponjosa nube de huevo batido y servidos en caldillo de jitomate."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 min",
+      "cookTime": "35 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Chile poblano",
+        "Queso oaxaca o panela",
+        "Huevo (para capeado)",
+        "Jitomate",
+        "Cebolla",
+        "Harina de trigo"
+      ],
+      "tags": [
+        "Mexican",
+        "Puebla",
+        "Poblano",
+        "Capeado"
+      ],
+      "filePath": "dishes/mexican/chiles_rellenos_de_queso.md"
+    },
+    {
+      "id": "mexican/chilpachole_de_jaiba",
+      "title": "Chilpachole de Jaiba",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chilpachole de Jaiba",
+        "region": "Veracruz",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "El Universal Menú",
+          "url": "https://www.eluniversal.com.mx/menu/receta-de-chilpachole-de-jaiba-tradicional-de-veracruz/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sopas y Caldos",
+          "Mariscos"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 min",
+        "cook_time": "45 min",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "Veracruz",
+          "Mariscos",
+          "Caldo"
+        ],
+        "main_ingredients": [
+          "Jaiba entera",
+          "Chile chilpaya",
+          "Chile ancho",
+          "Jitomate",
+          "Epazote",
+          "Masa de maíz"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante intenso",
+            "Umami marino",
+            "Herbal"
+          ],
+          "texture": [
+            "Caldo espeso terso"
+          ],
+          "aroma": [
+            "Mariscos frescos",
+            "Epazote",
+            "Chiles asados"
+          ],
+          "presentation": "Caldo rojo espeso servido en cazuela de barro con jaibas enteras partidas a la mitad y hojas de epazote fresco."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chilpachole de jaiba veracruzano"
+          }
+        ],
+        "description": "El Chilpachole de Jaiba es un espeso y picante caldo de mariscos tradicional de las costas de Veracruz, sazonado con chile ancho, chile chilpaya y aromatizado con epazote."
+      },
+      "category": [
+        "Sopas y Caldos",
+        "Mariscos"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 min",
+      "cookTime": "45 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Jaiba entera",
+        "Chile chilpaya",
+        "Chile ancho",
+        "Jitomate",
+        "Epazote",
+        "Masa de maíz"
+      ],
+      "tags": [
+        "Mexican",
+        "Veracruz",
+        "Mariscos",
+        "Caldo"
+      ],
+      "filePath": "dishes/mexican/chilpachole_de_jaiba.md"
+    },
+    {
+      "id": "mexican/cochinita_pibil",
+      "title": "Cochinita Pibil",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cochinita Pibil",
+        "region": "Yucatán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/01/27/cochinita-pibil-receta-tradicional-yucateca/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Ancestral"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "3 horas",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "studies": [
+          {
+            "title": "Peppers and their constituents against obesity",
+            "source": "Biologia Futura",
+            "year": 2023,
+            "doi": "10.1007/s42977-023-00174-3",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37493973/"
+          },
+          {
+            "title": "Capsaicin camphor and caffeic acid reduce adipogenesis and promote lipolysis with TRPV1 involvement",
+            "source": "Scientific Reports",
+            "year": 2025,
+            "doi": "10.1038/s41598-025-31073-3",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41331337/"
+          }
+        ],
+        "main_ingredients": [
+          "Carne de cerdo (cabeza de lomo)",
+          "Pasta de achiote",
+          "Jugo de naranja agria",
+          "Cebolla morada",
+          "Chile habanero",
+          "Hojas de plátano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ácido de naranja agria",
+            "Achiote terroso",
+            "Umami"
+          ],
+          "texture": [
+            "Carne deshilachada sumamente tierna"
+          ],
+          "aroma": [
+            "Naranja agria",
+            "Achiote",
+            "Hoja de plátano horneada"
+          ],
+          "presentation": "Carne de cerdo desmenuzada servida con cebolla morada encurtida en habanero y tortillas."
+        },
+        "nutrition": {
+          "calories": 680,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 36,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cochinita Pibil tradicional"
+          }
+        ],
+        "description": "La Cochinita Pibil es un orgullo yucateco de origen maya, donde el cerdo se marina en achiote y naranja agria para cocinarse lentamente en horno subterráneo (pib)."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Ancestral"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "3 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cerdo (cabeza de lomo)",
+        "Pasta de achiote",
+        "Jugo de naranja agria",
+        "Cebolla morada",
+        "Chile habanero",
+        "Hojas de plátano"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/cochinita_pibil.md"
+    },
+    {
+      "id": "mexican/enchiladas_verdes",
+      "title": "Enchiladas Verdes",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Enchiladas Verdes",
+        "region": "Centro de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/desayunos/enchiladas-verdes-de-pollo/2018/06/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tortillas de maíz",
+          "Pollo deshebrado",
+          "Tomatillos (tomate verde)",
+          "Chile jalapeño",
+          "Crema agria",
+          "Queso fresco",
+          "Cilantro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante medio",
+            "Ácido (tomatillo)",
+            "Salado"
+          ],
+          "texture": [
+            "Jugoso",
+            "Suave",
+            "Queso fundido"
+          ],
+          "aroma": [
+            "Tomatillo cocido",
+            "Cilantro",
+            "Tortilla frita"
+          ],
+          "presentation": "Tortillas rellenas de pollo gratinadas con queso fresco, crema agria y cebolla en rodajas."
+        },
+        "nutrition": {
+          "calories": 520,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 24,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Enchiladas Verdes tradicional"
+          }
+        ],
+        "description": "Las Enchiladas Verdes son tortillas de maíz ligeramente fritas, rellenas de pollo y bañadas en una salsa tibia de tomatillo y chiles verdes."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tortillas de maíz",
+        "Pollo deshebrado",
+        "Tomatillos (tomate verde)",
+        "Chile jalapeño",
+        "Crema agria",
+        "Queso fresco",
+        "Cilantro"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/enchiladas_verdes.md"
+    },
+    {
+      "id": "mexican/enmoladas_de_pollo",
+      "title": "Enmoladas de Pollo",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Enmoladas de Pollo",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/platos-fuertes/enmoladas-de-pollo-con-queso/2019/02/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tortillas de maíz",
+          "Pollo desmenuzado",
+          "Mole negro preparado",
+          "Queso fresco",
+          "Ajonjolí tostado",
+          "Cebolla morada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Sabor profundo a mole",
+            "Dulce picante",
+            "Salado"
+          ],
+          "texture": [
+            "Tortilla suave impregnada de mole",
+            "Relleno jugoso"
+          ],
+          "aroma": [
+            "Mole negro u oscuro",
+            "Ajonjolí tostado"
+          ],
+          "presentation": "Tortillas pasadas por aceite y sumergidas en mole caliente, dobladas sobre pollo y decoradas con ajonjolí."
+        },
+        "nutrition": {
+          "calories": 580,
+          "macros": {
+            "protein_g": 30,
+            "fat_g": 22,
+            "carbs_g": 64
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Enmoladas de Pollo tradicional"
+          }
+        ],
+        "description": "Las Enmoladas son primas de las enchiladas pero bañadas en un mole rico y complejo, representando la calidez de la cocina casera oaxaqueña."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tortillas de maíz",
+        "Pollo desmenuzado",
+        "Mole negro preparado",
+        "Queso fresco",
+        "Ajonjolí tostado",
+        "Cebolla morada"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/enmoladas_de_pollo.md"
+    },
+    {
+      "id": "mexican/esquites_con_epazote",
+      "title": "Esquites con Epazote",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Esquites con Epazote",
+        "region": "Centro de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/08/11/receta-de-esquites-tradicionales-con-epazote/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Botana",
+          "Calle"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 min",
+        "cook_time": "30 min",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "Callejero",
+          "Maíz",
+          "Epazote"
+        ],
+        "main_ingredients": [
+          "Granos de maíz blanco",
+          "Epazote fresco",
+          "Chile de árbol",
+          "Manteca de cerdo o mantequilla",
+          "Mayonesa",
+          "Queso cotija",
+          "Limón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Maíz tierno dulce",
+            "Herbal penetrante (epazote)",
+            "Umami cremoso",
+            "Picante ácido"
+          ],
+          "texture": [
+            "Granos jugosos y tiernos",
+            "Cremosa por mayonesa"
+          ],
+          "aroma": [
+            "Vapor de epazote",
+            "Elote tierno"
+          ],
+          "presentation": "Servido en vaso térmico con su caldo caliente, coronado con mayonesa, queso cotija desmoronado, chile en polvo y jugo de limón."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Esquites calientes servidos en vaso tradicional"
+          }
+        ],
+        "description": "Los Esquites (del náhuatl ízkitl, 'maíz tostado') son un antojito mexicano tradicional consistente en granos de elote hervidos y salteados con epazote y chile de árbol."
+      },
+      "category": [
+        "Botana",
+        "Calle"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 min",
+      "cookTime": "30 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Granos de maíz blanco",
+        "Epazote fresco",
+        "Chile de árbol",
+        "Manteca de cerdo o mantequilla",
+        "Mayonesa",
+        "Queso cotija",
+        "Limón"
+      ],
+      "tags": [
+        "Mexican",
+        "Callejero",
+        "Maíz",
+        "Epazote"
+      ],
+      "filePath": "dishes/mexican/esquites_con_epazote.md"
+    },
+    {
+      "id": "mexican/guacamole_tradicional",
+      "title": "Guacamole Tradicional",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Guacamole Tradicional",
+        "region": "Michoacán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/01/21/receta-de-guacamole-tradicional-mexicano/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Entrante",
+          "Dip",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "15 minutos",
+        "cook_time": "0 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Aguacate Hass",
+          "Cilantro fresco",
+          "Cebolla morada",
+          "Chile serrano",
+          "Jugo de lima",
+          "Sal de grano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Grado de acidez equilibrado",
+            "Salado",
+            "Fresco"
+          ],
+          "texture": [
+            "Cremoso",
+            "Crujiente (cebolla/totopos)"
+          ],
+          "aroma": [
+            "Aguacate fresco",
+            "Cilantro",
+            "Lima"
+          ],
+          "presentation": "Servido en molcajete de piedra volcánica acompañado de totopos de maíz recién fritos."
+        },
+        "nutrition": {
+          "calories": 250,
+          "macros": {
+            "protein_g": 3,
+            "fat_g": 22,
+            "carbs_g": 12
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Guacamole Tradicional tradicional"
+          }
+        ],
+        "description": "El Guacamole es una salsa/dip ancestral mexicana a base de aguacate machacado en molcajete con chile, cilantro, cebolla y lima."
+      },
+      "category": [
+        "Entrante",
+        "Dip",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "15 minutos",
+      "cookTime": "0 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Aguacate Hass",
+        "Cilantro fresco",
+        "Cebolla morada",
+        "Chile serrano",
+        "Jugo de lima",
+        "Sal de grano"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/guacamole_tradicional.md"
+    },
+    {
+      "id": "mexican/huarache_de_cecina",
+      "title": "Huarache de Cecina",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Huarache de Cecina",
+        "region": "Ciudad de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/huarache-de-cecina-con-frijoles/2020/09/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Antojito",
+          "Calle"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "25 min",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "CDMX",
+          "Antojito",
+          "Maíz"
+        ],
+        "main_ingredients": [
+          "Masa de maíz nixtamalizado",
+          "Frijoles refritos",
+          "Cecina de res",
+          "Salsa verde",
+          "Queso fresco",
+          "Crema de leche"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado ahumado",
+            "Umami",
+            "Picante fresco"
+          ],
+          "texture": [
+            "Base de maíz crujiente por fuera y suave por dentro",
+            "Cecina firme"
+          ],
+          "aroma": [
+            "Maíz tostado",
+            "Carne asada",
+            "Frijol frito"
+          ],
+          "presentation": "Base alargada de maíz en forma de huarache, cubierta de frijoles refritos, una sábana de cecina asada, salsa verde, queso rallado y crema."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Huarache preparado de cecina estilo CDMX"
+          }
+        ],
+        "description": "El huarache es un platillo popular originario de la Ciudad de México, nombrado por su similitud con la sandalia tradicional. Consiste en una gruesa base de maíz nixtamalizado rellena de frijol, coronada con cecina asada y salsas."
+      },
+      "category": [
+        "Antojito",
+        "Calle"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "25 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de maíz nixtamalizado",
+        "Frijoles refritos",
+        "Cecina de res",
+        "Salsa verde",
+        "Queso fresco",
+        "Crema de leche"
+      ],
+      "tags": [
+        "Mexican",
+        "CDMX",
+        "Antojito",
+        "Maíz"
+      ],
+      "filePath": "dishes/mexican/huarache_de_cecina.md"
+    },
+    {
+      "id": "mexican/mole_amarillo",
+      "title": "Mole Amarillo Oaxaqueño",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mole Amarillo Oaxaqueño",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2018/07/19/receta-mole-amarillo-oaxaca/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Ancestral"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 min",
+        "cook_time": "1 hora",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "Oaxaca",
+          "Mole",
+          "Chilhuacle"
+        ],
+        "main_ingredients": [
+          "Carne de res o pollo",
+          "Chile chilhuacle amarillo",
+          "Chile costeño",
+          "Jitomate",
+          "Hoja de santa (acuyo)",
+          "masa de maíz",
+          "Chayote",
+          "Ejotes"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante especiado",
+            "Terroso",
+            "Ácido suave"
+          ],
+          "texture": [
+            "Caldosa",
+            "Espesa con masa"
+          ],
+          "aroma": [
+            "Hoja santa",
+            "Chile ahumado amarillo"
+          ],
+          "presentation": "Caldo denso de color naranja amarillento con carne de res, trozos de chayote, papa y ejote fresco."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mole amarillo de Oaxaca"
+          }
+        ],
+        "description": "El Mole Amarillo es uno de los siete moles icónicos de Oaxaca. Se caracteriza por su tono ocre-anaranjado proveniente del chile chilhuacle amarillo y su aroma inconfundible a hoja santa."
+      },
+      "category": [
+        "Plato fuerte",
+        "Ancestral"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 min",
+      "cookTime": "1 hora",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de res o pollo",
+        "Chile chilhuacle amarillo",
+        "Chile costeño",
+        "Jitomate",
+        "Hoja de santa (acuyo)",
+        "masa de maíz",
+        "Chayote",
+        "Ejotes"
+      ],
+      "tags": [
+        "Mexican",
+        "Oaxaca",
+        "Mole",
+        "Chilhuacle"
+      ],
+      "filePath": "dishes/mexican/mole_amarillo.md"
+    },
+    {
+      "id": "mexican/mole_negro_oaxaqueno",
+      "title": "Mole Negro Oaxaqueño",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mole Negro Oaxaqueño",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/10/28/historia-y-receta-del-mole-negro-oaxaqueno/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Festivo",
+          "Ancestral"
+        ],
+        "difficulty": "★★★★★",
+        "prep_time": "2 horas",
+        "cook_time": "3 horas",
+        "servings": 8,
+        "tags": [
+          "Mexican",
+          "Oaxaca",
+          "Mole",
+          "Prehispánico"
+        ],
+        "main_ingredients": [
+          "Guajolote",
+          "Chile chilhuacle negro",
+          "Chile mulato",
+          "Chile pasilla oaxaqueño",
+          "Chocolate de Oaxaca",
+          "Plátano macho",
+          "Ajonjolí",
+          "Hoja de aguacate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumado",
+            "Dulce amargo",
+            "Especiado",
+            "Umami"
+          ],
+          "texture": [
+            "Tersa",
+            "Espesa",
+            "Terciopelo"
+          ],
+          "aroma": [
+            "Chiles tatemados",
+            "Cacao",
+            "Hoja de aguacate tostada"
+          ],
+          "presentation": "Pieza de guajolote o pollo sumergida en una densa y brillante salsa negra profunda, decorada con ajonjolí blanco tostado."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mole negro tradicional de Oaxaca"
+          }
+        ],
+        "description": "El Mole Negro Oaxaqueño es considerado el rey de los siete moles de Oaxaca. Su característico color azabache y sabor complejo provienen del tatemado profundo de las semillas de chile y la integración de ingrediente prehispánicos y coloniales."
+      },
+      "category": [
+        "Plato fuerte",
+        "Festivo",
+        "Ancestral"
+      ],
+      "difficulty": "★★★★★",
+      "prepTime": "2 horas",
+      "cookTime": "3 horas",
+      "servings": 8,
+      "mainIngredients": [
+        "Guajolote",
+        "Chile chilhuacle negro",
+        "Chile mulato",
+        "Chile pasilla oaxaqueño",
+        "Chocolate de Oaxaca",
+        "Plátano macho",
+        "Ajonjolí",
+        "Hoja de aguacate"
+      ],
+      "tags": [
+        "Mexican",
+        "Oaxaca",
+        "Mole",
+        "Prehispánico"
+      ],
+      "filePath": "dishes/mexican/mole_negro_oaxaqueno.md"
+    },
+    {
+      "id": "mexican/mole_poblano",
+      "title": "Mole Poblano",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mole Poblano",
+        "region": "Puebla",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Festivo",
+          "Ancestral"
+        ],
+        "difficulty": "★★★★☆",
+        "prep_time": "1 hora",
+        "cook_time": "2 horas",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo entero",
+          "Chile mulato",
+          "Chile pasilla",
+          "Chile ancho",
+          "Chocolate negro sin azúcar",
+          "Ajonjolí",
+          "Almendras",
+          "Canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Complejo",
+            "Dulce amargo (chocolate)",
+            "Picante especiado",
+            "Umami"
+          ],
+          "texture": [
+            "Salsa tersa y espesa",
+            "Carne tierna"
+          ],
+          "aroma": [
+            "Chocolate amargo",
+            "Chiles tostados",
+            "Especias dulces"
+          ],
+          "presentation": "Pollo bañado generosamente con mole oscuro brillante, espolvoreado con ajonjolí tostado."
+        },
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "protein_g": 45,
+            "fat_g": 38,
+            "carbs_g": 65
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mole Poblano tradicional"
+          }
+        ],
+        "description": "El Mole Poblano es la cúspide de la gastronomía barroca mexicana, combinando más de 20 ingredientes entre chiles secos, chocolate, frutos secos y especias."
+      },
+      "category": [
+        "Plato fuerte",
+        "Festivo",
+        "Ancestral"
+      ],
+      "difficulty": "★★★★☆",
+      "prepTime": "1 hora",
+      "cookTime": "2 horas",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo entero",
+        "Chile mulato",
+        "Chile pasilla",
+        "Chile ancho",
+        "Chocolate negro sin azúcar",
+        "Ajonjolí",
+        "Almendras",
+        "Canela"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/mole_poblano.md"
+    },
+    {
+      "id": "mexican/mole_verde_oaxaqueno",
+      "title": "Mole Verde Oaxaqueño",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mole Verde Oaxaqueño",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/mole-verde-oaxaqueno-tradicional/2021/05/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Ancestral"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 min",
+        "cook_time": "50 min",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "Oaxaca",
+          "Mole",
+          "Yerbas"
+        ],
+        "main_ingredients": [
+          "Carne de cerdo",
+          "Tomatillo verde",
+          "Chile verde serrano",
+          "Pepita de calabaza",
+          "Epazote",
+          "Hoja santa",
+          "Perejil",
+          "Masa de maíz"
+        ],
+        "sensory": {
+          "flavor": [
+            "Herbal",
+            "Levemente ácido",
+            "Picante fresco",
+            "Umami"
+          ],
+          "texture": [
+            "Ligera",
+            "Sedosa"
+          ],
+          "aroma": [
+            "Hoja santa",
+            "Epazote fresco",
+            "Tomatillo"
+          ],
+          "presentation": "Carne de cerdo bañada en un espeso mole verde brillante, acompañado de chayote y ejotes cocidos."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mole verde de Oaxaca preparado con hierbas frescas"
+          }
+        ],
+        "description": "El Mole Verde Oaxaqueño destaca por su frescura herbal aromática, lograda gracias al equilibrio entre la pepita de calabaza, el tomatillo verde y una rica mezcla de hierbas nativas como la hoja santa y el epazote."
+      },
+      "category": [
+        "Plato fuerte",
+        "Ancestral"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 min",
+      "cookTime": "50 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cerdo",
+        "Tomatillo verde",
+        "Chile verde serrano",
+        "Pepita de calabaza",
+        "Epazote",
+        "Hoja santa",
+        "Perejil",
+        "Masa de maíz"
+      ],
+      "tags": [
+        "Mexican",
+        "Oaxaca",
+        "Mole",
+        "Yerbas"
+      ],
+      "filePath": "dishes/mexican/mole_verde_oaxaqueno.md"
+    },
+    {
+      "id": "mexican/pambazo_de_papa_con_chorizo",
+      "title": "Pambazo de Papa con Chorizo",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pambazo de Papa con Chorizo",
+        "region": "Ciudad de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/pambazos-de-papa-con-chorizo-estilo-cdmx/2019/09/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Callejero",
+          "Antojito"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "25 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pan telera o pambazo",
+          "Chile guajillo",
+          "Papas cocidas machacadas",
+          "Chorizo de cerdo",
+          "Lechuga picada",
+          "Crema agria",
+          "Queso rallado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante de chile guajillo",
+            "Chorizo sabroso",
+            "Salado"
+          ],
+          "texture": [
+            "Pan suave adobado y dorado al comal"
+          ],
+          "aroma": [
+            "Chile guajillo frito",
+            "Chorizo salteado"
+          ],
+          "presentation": "Pan telera empapado en adobo rojo de guajillo, dorado en comal y relleno de papa con chorizo, lechuga y crema."
+        },
+        "nutrition": {
+          "calories": 610,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 28,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pambazo de Papa con Chorizo tradicional"
+          }
+        ],
+        "description": "El Pambazo es un emparedado popular capitalino cuyo pan se sumerge por completo en salsa de chile guajillo antes de dorarse a la plancha con papa y chorizo."
+      },
+      "category": [
+        "Callejero",
+        "Antojito"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "25 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pan telera o pambazo",
+        "Chile guajillo",
+        "Papas cocidas machacadas",
+        "Chorizo de cerdo",
+        "Lechuga picada",
+        "Crema agria",
+        "Queso rallado"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/pambazo_de_papa_con_chorizo.md"
+    },
+    {
+      "id": "mexican/panuchos_yucatecos",
+      "title": "Panuchos Yucatecos",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Panuchos Yucatecos",
+        "region": "Yucatán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/05/19/receta-de-panuchos-yucatecos-tradicionales/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Antojito",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de maíz",
+          "Frijoles negros colados",
+          "Pavo o pollo deshebrado",
+          "Cebolla morada encurtida",
+          "Aguacate",
+          "Tomate rodajas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Maíz frito",
+            "Frijol negro integrado",
+            "Cítrico de pavo/cebolla"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Relleno suave de frijol"
+          ],
+          "aroma": [
+            "Frijol colado frito",
+            "Cebolla morada encurtida"
+          ],
+          "presentation": "Tortilla frita inflada y rellenada con frijol negro colado, coronada con pavo o pollo y aguacate."
+        },
+        "nutrition": {
+          "calories": 490,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 20,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Panuchos Yucatecos tradicional"
+          }
+        ],
+        "description": "Los Panuchos son una delicia de Yucatán: tortillas de maíz hechas a mano que se abren para meter frijol negro colado y luego se fríen ligeramente."
+      },
+      "category": [
+        "Antojito",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de maíz",
+        "Frijoles negros colados",
+        "Pavo o pollo deshebrado",
+        "Cebolla morada encurtida",
+        "Aguacate",
+        "Tomate rodajas"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/panuchos_yucatecos.md"
+    },
+    {
+      "id": "mexican/pescado_a_la_veracruzana",
+      "title": "Pescado a la Veracruzana",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pescado a la Veracruzana",
+        "region": "Veracruz",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "El Universal Menú",
+          "url": "https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Pescados y Mariscos",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 min",
+        "cook_time": "30 min",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "Veracruz",
+          "Pescado",
+          "Mestizo"
+        ],
+        "main_ingredients": [
+          "Filete de huachinango o mero",
+          "Jitomate",
+          "Cebolla",
+          "Aceitunas verdes",
+          "Alcaparras",
+          "Chiles güeros en escabeche",
+          "Hoja de laurel"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce ácido por jitomate",
+            "Salado picante por aceitunas y alcaparras",
+            "Fresco marino"
+          ],
+          "texture": [
+            "Pescado suave y jugoso",
+            "Salsa espesa con tropiezos"
+          ],
+          "aroma": [
+            "Laurel y orégano",
+            "Aceituna y alcaparra sofrita"
+          ],
+          "presentation": "Filete blanco de pescado cubierto espléndidamente con un sofrito rojo de jitomate, aceitunas verdes entero, alcaparras y chiles güeros enteros."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pescado a la veracruzana en salsa de jitomate y aceitunas"
+          }
+        ],
+        "description": "El Pescado a la Veracruzana es un ejemplo supremo del mestizaje hispano-mexicano. Fusiona el huachinango del Golfo con aceitunas, alcaparras, hierbas del Mediterráneo y el jitomate y chile nativos."
+      },
+      "category": [
+        "Pescados y Mariscos",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Filete de huachinango o mero",
+        "Jitomate",
+        "Cebolla",
+        "Aceitunas verdes",
+        "Alcaparras",
+        "Chiles güeros en escabeche",
+        "Hoja de laurel"
+      ],
+      "tags": [
+        "Mexican",
+        "Veracruz",
+        "Pescado",
+        "Mestizo"
+      ],
+      "filePath": "dishes/mexican/pescado_a_la_veracruzana.md"
+    },
+    {
+      "id": "mexican/pipian_verde",
+      "title": "Pipián Verde",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pipián Verde",
+        "region": "Puebla",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/pipian-verde-con-pollo-receta-facil/2018/10/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Ancestral"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 min",
+        "cook_time": "45 min",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "Puebla",
+          "Pepita",
+          "Prehispánico"
+        ],
+        "main_ingredients": [
+          "Pollo en piezas",
+          "Pepita de calabaza verde",
+          "Tomatillo verde",
+          "Chile poblano",
+          "Hoja santa",
+          "Epazote"
+        ],
+        "sensory": {
+          "flavor": [
+            "Nuez terrosa",
+            "Herbal fresco",
+            "Levemente picante"
+          ],
+          "texture": [
+            "Salsa granulosa suave",
+            "Untuosa"
+          ],
+          "aroma": [
+            "Pepita tostada",
+            "Hoja santa"
+          ],
+          "presentation": "Piezas de pollo bañadas en una espesa salsa verde esmeralda con un sutil brillo de aceite de pepita."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pipián verde poblano servido con pollo"
+          }
+        ],
+        "description": "El Pipián Verde es una salsa ancestral mexicana cuya base protagónica es la pepita de calabaza tostada y molida, aromatizada con tomatillo verde, chile poblano y hierbas autóctonas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Ancestral"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 min",
+      "cookTime": "45 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo en piezas",
+        "Pepita de calabaza verde",
+        "Tomatillo verde",
+        "Chile poblano",
+        "Hoja santa",
+        "Epazote"
+      ],
+      "tags": [
+        "Mexican",
+        "Puebla",
+        "Pepita",
+        "Prehispánico"
+      ],
+      "filePath": "dishes/mexican/pipian_verde.md"
+    },
+    {
+      "id": "mexican/poc_chuc",
+      "title": "Poc Chuc",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Poc Chuc",
+        "region": "Yucatán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 min (más 2h marinado)",
+        "cook_time": "20 min",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "Yucatán",
+          "Cerdo",
+          "Carbón"
+        ],
+        "main_ingredients": [
+          "Lomo o pierna de cerdo",
+          "Naranja agria",
+          "Achiote en pasta",
+          "Cebolla morada",
+          "Cilantro",
+          "Frijol kabax (frijol colado)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Cítrico marcado",
+            "Ahumado a la leña",
+            "Salado especiado"
+          ],
+          "texture": [
+            "Carne asada jugosa con bordes crujientes"
+          ],
+          "aroma": [
+            "Carbón de leña",
+            "Naranja agria asada"
+          ],
+          "presentation": "Filetes de cerdo asados al carbón acompañados de cebolla morada curtida asada, chiltomate (salsa de tomate asado), frijoles colados y aguacate."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Poc chuc yucateco asado con cebolla morada"
+          }
+        ],
+        "description": "El Poc Chuc es un plato emblemático maya-yucateco (del maya poc, 'asara las brasas', y chuc, 'carbón'). Consiste en finas sabanas de cerdo marinadas en jugo de naranja agria y especias, asadas a fuego vivo."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 min (más 2h marinado)",
+      "cookTime": "20 min",
+      "servings": 4,
+      "mainIngredients": [
+        "Lomo o pierna de cerdo",
+        "Naranja agria",
+        "Achiote en pasta",
+        "Cebolla morada",
+        "Cilantro",
+        "Frijol kabax (frijol colado)"
+      ],
+      "tags": [
+        "Mexican",
+        "Yucatán",
+        "Cerdo",
+        "Carbón"
+      ],
+      "filePath": "dishes/mexican/poc_chuc.md"
+    },
+    {
+      "id": "mexican/pozole_rojo",
+      "title": "Pozole Rojo de Jalisco",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pozole Rojo de Jalisco",
+        "region": "Jalisco",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "El Universal Menú",
+          "url": "https://www.eluniversal.com.mx/menu/receta-de-pozole-rojo-tradicional-mexicano/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Sopa / Caldo",
+          "Festivo",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "2 horas 30 minutos",
+        "servings": 8,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Maíz cacahuazintle precocido",
+          "Cabeza y lomo de cerdo",
+          "Chile guajillo",
+          "Chile ancho",
+          "Rábanos",
+          "Lechuga",
+          "Orégano"
+        ],
+        "studies": [
+          {
+            "title": "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z",
+            "source": "Comprehensive Reviews in Food Science and Food Safety",
+            "year": 2016,
+            "doi": "10.1111/1541-4337.12216",
+            "url": "https://doi.org/10.1111/1541-4337.12216"
+          },
+          {
+            "title": "Mycotoxins during the Processes of Nixtamalization and Tortilla Production",
+            "source": "Toxins",
+            "year": 2019,
+            "doi": "10.3390/toxins11040227",
+            "url": "https://doi.org/10.3390/toxins11040227"
+          }
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami intenso",
+            "Chile guajillo",
+            "Maíz maíz cacahuazintle"
+          ],
+          "texture": [
+            "Maíz suave y florecido",
+            "Carne jugosa",
+            "Crujiente (rábanos/lechuga)"
+          ],
+          "aroma": [
+            "Caldo de cerdo especiado",
+            "Orégano seco"
+          ],
+          "presentation": "Caldo rojo abundante servido con lechuga picada, rábanos, orégano, chile en polvo y tostadas."
+        },
+        "nutrition": {
+          "calories": 590,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 22,
+            "carbs_g": 58
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pozole Rojo de Jalisco tradicional"
+          }
+        ],
+        "description": "El Pozole Rojo es una sopa festiva ancestral a base de granos de maíz cacahuazintle reventados en un caldo espeso sazonado con chiles secos y cerdo."
+      },
+      "category": [
+        "Sopa / Caldo",
+        "Festivo",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "2 horas 30 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Maíz cacahuazintle precocido",
+        "Cabeza y lomo de cerdo",
+        "Chile guajillo",
+        "Chile ancho",
+        "Rábanos",
+        "Lechuga",
+        "Orégano"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/pozole_rojo.md"
+    },
+    {
+      "id": "mexican/quesadillas_de_flor_de_calabaza",
+      "title": "Quesadillas de Flor de Calabaza",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Quesadillas de Flor de Calabaza",
+        "region": "Ciudad de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/07/08/receta-de-quesadillas-de-flor-de-calabaza/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Antojito",
+          "Vegetariano"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "15 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de maíz",
+          "Flores de calabaza frescas",
+          "Queso Oaxaca (hebra)",
+          "Epazote fresco",
+          "Cebolla",
+          "Chile verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Sutil vegetal",
+            "Salado",
+            "Epazote aromático"
+          ],
+          "texture": [
+            "Suave",
+            "Queso derretido elástico"
+          ],
+          "aroma": [
+            "Flor de calabaza salteada",
+            "Maíz azul o blanco"
+          ],
+          "presentation": "Tortillas dobladas a la mitad cocinadas al comal con queso Oaxaca y flores salteadas."
+        },
+        "nutrition": {
+          "calories": 320,
+          "macros": {
+            "protein_g": 12,
+            "fat_g": 14,
+            "carbs_g": 38
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Quesadillas de Flor de Calabaza tradicional"
+          }
+        ],
+        "description": "Las Quesadillas de Flor de Calabaza son un antojito de mercado típico del centro de México, destacando la delicada flor de calabaza con queso derretido y epazote."
+      },
+      "category": [
+        "Antojito",
+        "Vegetariano"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "15 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de maíz",
+        "Flores de calabaza frescas",
+        "Queso Oaxaca (hebra)",
+        "Epazote fresco",
+        "Cebolla",
+        "Chile verde"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/quesadillas_de_flor_de_calabaza.md"
+    },
+    {
+      "id": "mexican/sopa_de_lima",
+      "title": "Sopa de Lima",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopa de Lima",
+        "region": "Yucatán",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Sopas y Caldos",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 min",
+        "cook_time": "40 min",
+        "servings": 6,
+        "tags": [
+          "Mexican",
+          "Yucatán",
+          "Sopa",
+          "Cítrico"
+        ],
+        "main_ingredients": [
+          "Pollo deshebrado",
+          "Lima yucateca",
+          "Tortilla de maíz frita",
+          "Pimiento morrón",
+          "Jitomate",
+          "Oregano yucateco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Cítrico refrescante",
+            "Dulce ligero",
+            "Caldo salado herbal"
+          ],
+          "texture": [
+            "Caldo ligero",
+            "Crujiente por tortilla"
+          ],
+          "aroma": [
+            "Lima agria",
+            "Orégano",
+            "Caldo de ave"
+          ],
+          "presentation": "Caldo transparente servido en tazón profundo, repleto de tiras crujientes de tortilla frita y rodajas de lima agria flotando."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopa de lima yucateca tradicional"
+          }
+        ],
+        "description": "La Sopa de Lima es uno de los platillos más emblemáticos de la gastronomía yucateca. Su secreto reside en el uso de la lima agria yucateca, un cítrico aromático de sabor suave y ligeramente amargo."
+      },
+      "category": [
+        "Sopas y Caldos",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 min",
+      "cookTime": "40 min",
+      "servings": 6,
+      "mainIngredients": [
+        "Pollo deshebrado",
+        "Lima yucateca",
+        "Tortilla de maíz frita",
+        "Pimiento morrón",
+        "Jitomate",
+        "Oregano yucateco"
+      ],
+      "tags": [
+        "Mexican",
+        "Yucatán",
+        "Sopa",
+        "Cítrico"
+      ],
+      "filePath": "dishes/mexican/sopa_de_lima.md"
+    },
+    {
+      "id": "mexican/sopas_de_tortilla",
+      "title": "Sopa de Tortilla (Ateca)",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopa de Tortilla (Ateca)",
+        "region": "Ciudad de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/sopas-cremas-y-caldos/sopa-de-tortilla-tradicional-azteca/2018/01/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Sopa",
+          "Entrante"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Caldo de pollo",
+          "Jitomates asados",
+          "Chile pasilla seco",
+          "Tiras de tortilla de maíz",
+          "Aguacate",
+          "Queso fresco",
+          "Crema"
+        ],
+        "studies": [
+          {
+            "title": "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z",
+            "source": "Comprehensive Reviews in Food Science and Food Safety",
+            "year": 2016,
+            "doi": "10.1111/1541-4337.12216",
+            "url": "https://doi.org/10.1111/1541-4337.12216"
+          },
+          {
+            "title": "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas",
+            "source": "Plant Foods Hum Nutr",
+            "year": 2025,
+            "doi": "10.1007/s11130-024-01245-z",
+            "url": "https://doi.org/10.1007/s11130-024-01245-z"
+          }
+        ],
+        "sensory": {
+          "flavor": [
+            "Jitomate asado",
+            "Chile pasilla ahumado",
+            "Salado"
+          ],
+          "texture": [
+            "Tiras de tortilla crujientes",
+            "Caldo reconfortante",
+            "Cremoso de aguacate"
+          ],
+          "aroma": [
+            "Chile pasilla frito",
+            "Caldo de pollo frito"
+          ],
+          "presentation": "Caldo rojo servido hirviendo sobre tiras crujientes de tortilla frita, cubierto con aguacate, queso y crema."
+        },
+        "nutrition": {
+          "calories": 380,
+          "macros": {
+            "protein_g": 15,
+            "fat_g": 18,
+            "carbs_g": 40
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopa de Tortilla (Ateca) tradicional"
+          }
+        ],
+        "description": "La Sopa de Tortilla es una sopa tradicional mexicana cuyo caldo concentrado de jitomate y chile pasilla se vierte sobre crujientes tiras de tortilla de maíz."
+      },
+      "category": [
+        "Sopa",
+        "Entrante"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Caldo de pollo",
+        "Jitomates asados",
+        "Chile pasilla seco",
+        "Tiras de tortilla de maíz",
+        "Aguacate",
+        "Queso fresco",
+        "Crema"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/sopas_de_tortilla.md"
+    },
+    {
+      "id": "mexican/sopes_tradicionales",
+      "title": "Sopes Tradicionales",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopes Tradicionales",
+        "region": "Centro de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Cocina Vital",
+          "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Antojito",
+          "Cena",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "20 minutos",
+        "servings": 4,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de maíz nixtamalizado",
+          "Frijoles negros refritos",
+          "Lechuga picada",
+          "Queso Cotija",
+          "Crema fresca",
+          "Salsa verde"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Maíz tostado",
+            "Frijol refrito"
+          ],
+          "texture": [
+            "Base firme con bordes pellizcados",
+            "Cremoso de frijol"
+          ],
+          "aroma": [
+            "Maíz frito en manteca",
+            "Queso cotija"
+          ],
+          "presentation": "Tortillas gruesas con pellizco lateral rellenas de frijol, lechuga, crema, queso y salsa."
+        },
+        "nutrition": {
+          "calories": 440,
+          "macros": {
+            "protein_g": 14,
+            "fat_g": 18,
+            "carbs_g": 56
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopes Tradicionales tradicional"
+          }
+        ],
+        "description": "Los Sopes son pellizcadas de masa gruesa de maíz fritas en manteca, servidas con una capa base de frijoles refritos y coberturas tradicionales."
+      },
+      "category": [
+        "Antojito",
+        "Cena",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "20 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de maíz nixtamalizado",
+        "Frijoles negros refritos",
+        "Lechuga picada",
+        "Queso Cotija",
+        "Crema fresca",
+        "Salsa verde"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/sopes_tradicionales.md"
+    },
+    {
+      "id": "mexican/tacos_al_pastor",
+      "title": "Tacos al Pastor",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "aliases": {
+          "en": [
+            "Tacos al Pastor",
+            "Pork Tacos"
+          ]
+        },
+        "categories": [
+          "Plato fuerte",
+          "Taquería",
+          "Tradicional"
+        ],
+        "cook_time": "30 minutos",
+        "description": "Los Tacos al Pastor son un ícono gastronómico de la Ciudad de México con influencia libanesa (shawarma). Consisten en fina carne de cerdo marinada en achiote y chiles, asada en un trompo vertical y servida con piña.",
+        "difficulty": "★★★☆☆",
+        "images": [
+          {
+            "description": "Tacos al Pastor tradicional",
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+          }
+        ],
+        "language": "es",
+        "license": "MIT",
+        "main_ingredients": [
+          "Carne de cerdo",
+          "Adobo de achiote y chiles guajillo",
+          "Piña fresca",
+          "Tortillas de maíz",
+          "Cilantro",
+          "Cebolla picada"
+        ],
+        "nutrition": {
+          "calories": 650,
+          "macros": {
+            "carbs_g": 62,
+            "fat_g": 28,
+            "protein_g": 32
+          }
+        },
+        "prep_time": "40 minutos",
+        "region": "México DF / Puebla",
+        "sensory": {
+          "aroma": [
+            "Achiote",
+            "Carne asada",
+            "Cilantro y cebolla"
+          ],
+          "flavor": [
+            "Salado",
+            "Picante",
+            "Dulce de piña",
+            "Umami"
+          ],
+          "presentation": "Servido en tortillas de maíz calientes con piña asada, cebolla, cilantro y salsa verde o roja.",
+          "texture": [
+            "Suave (tortilla)",
+            "Tierna (carne)",
+            "Jugoso"
+          ]
+        },
+        "servings": 4,
+        "source": {
+          "date_retrieved": "2026-09-03",
+          "name": "Animal Gourmet",
+          "notes": "Derived from GOS Database",
+          "url": "https://animalgourmet.com/2021/01/15/receta-de-tacos-al-pastor-caseros/"
+        },
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "title": "Tacos al Pastor"
+      },
+      "category": [
+        "Plato fuerte",
+        "Taquería",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de cerdo",
+        "Adobo de achiote y chiles guajillo",
+        "Piña fresca",
+        "Tortillas de maíz",
+        "Cilantro",
+        "Cebolla picada"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/tacos_al_pastor.md"
+    },
+    {
+      "id": "mexican/tacos_de_canasta",
+      "title": "Tacos de Canasta",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tacos de Canasta",
+        "region": "Tlaxcala",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Antojito",
+          "Calle"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 min",
+        "cook_time": "30 min",
+        "servings": 10,
+        "tags": [
+          "Mexican",
+          "Tlaxcala",
+          "CDMX",
+          "Callejero"
+        ],
+        "main_ingredients": [
+          "Tortillas de maíz",
+          "Chicharrón en prensado",
+          "Papa con chorizo",
+          "Frijoles refritos",
+          "Aceite de chile guajillo",
+          "Cebolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami especiado",
+            "Salado",
+            "Suave ahumado"
+          ],
+          "texture": [
+            "Tortilla suave y sudada",
+            "Relleno cremoso"
+          ],
+          "aroma": [
+            "Guajolote frito",
+            "Cebolla desflemada",
+            "Maíz humectado"
+          ],
+          "presentation": "Tacos doblados y sudados envueltos en papel estraza dentro de una canasta de mimbre, acompañados de salsa verde cruda con aguacate."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tacos de canasta tradicionales sudados"
+          }
+        ],
+        "description": "Los Tacos de Canasta o tacos sudados son un clásico callejero mexicano originario de San Vicente Xiloxochitla, Tlaxcala. Destacan por su proceso de sudao al ser bañado en aceite hirviendo con chile guajillo y reposados en canasta."
+      },
+      "category": [
+        "Antojito",
+        "Calle"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 min",
+      "cookTime": "30 min",
+      "servings": 10,
+      "mainIngredients": [
+        "Tortillas de maíz",
+        "Chicharrón en prensado",
+        "Papa con chorizo",
+        "Frijoles refritos",
+        "Aceite de chile guajillo",
+        "Cebolla"
+      ],
+      "tags": [
+        "Mexican",
+        "Tlaxcala",
+        "CDMX",
+        "Callejero"
+      ],
+      "filePath": "dishes/mexican/tacos_de_canasta.md"
+    },
+    {
+      "id": "mexican/tamales_oaxaquenos",
+      "title": "Tamales Oaxaqueños",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tamales Oaxaqueños",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/01/29/tamales-oaxaquenos-de-mole-negro-receta/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Desayuno",
+          "Tradicional",
+          "Ancestral"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "1 hora 30 minutos",
+        "servings": 8,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de maíz nixtamalizado",
+          "Manteca de cerdo",
+          "Carne de cerdo o pollo",
+          "Mole negro o verde",
+          "Hojas de plátano"
+        ],
+        "studies": [
+          {
+            "title": "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas",
+            "source": "Plant Foods Hum Nutr",
+            "year": 2025,
+            "doi": "10.1007/s11130-024-01245-z",
+            "url": "https://doi.org/10.1007/s11130-024-01245-z"
+          },
+          {
+            "title": "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z",
+            "source": "Comprehensive Reviews in Food Science and Food Safety",
+            "year": 2016,
+            "doi": "10.1111/1541-4337.12216",
+            "url": "https://doi.org/10.1111/1541-4337.12216"
+          }
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Picante suave",
+            "Masa sazonada"
+          ],
+          "texture": [
+            "Masa esponjosa y húmeda",
+            "Carne tierna"
+          ],
+          "aroma": [
+            "Hoja de plátano tostada",
+            "Mole negro"
+          ],
+          "presentation": "Servido envuelto en la propia hoja de plátano humeante."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 16,
+            "fat_g": 22,
+            "carbs_g": 40
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tamales Oaxaqueños tradicional"
+          }
+        ],
+        "description": "Los Tamales Oaxaqueños se distinguen por estar envueltos en hoja de plátano en lugar de totomoxtle, manteniendo una masa de maíz sumamente húmeda y sabrosa."
+      },
+      "category": [
+        "Desayuno",
+        "Tradicional",
+        "Ancestral"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "1 hora 30 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Masa de maíz nixtamalizado",
+        "Manteca de cerdo",
+        "Carne de cerdo o pollo",
+        "Mole negro o verde",
+        "Hojas de plátano"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/tamales_oaxaquenos.md"
+    },
+    {
+      "id": "mexican/tlacoyos_de_alverjon",
+      "title": "Tlacoyos de Alverjón",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tlacoyos de Alverjón",
+        "region": "Centro de México",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "El Universal Menú",
+          "url": "https://www.eluniversal.com.mx/menu/receta-de-tlacoyos-de-alverjon-tradicionales/",
+          "date_retrieved": "2026-09-07"
+        },
+        "categories": [
+          "Antojito",
+          "Prehispánico"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 min",
+        "cook_time": "20 min",
+        "servings": 5,
+        "tags": [
+          "Mexican",
+          "Prehispánico",
+          "Maíz",
+          "Legumbres"
+        ],
+        "main_ingredients": [
+          "Masa de maíz azul nixtamalizada",
+          "Alverjón cocido y molido",
+          "Nopales asados",
+          "Queso cotija",
+          "Salsa roja martajada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Terroso",
+            "Salado herbal",
+            "Maíz tostado"
+          ],
+          "texture": [
+            "Base firme de maíz",
+            "Relleno cremoso de legumbre"
+          ],
+          "aroma": [
+            "Masa azul al comal",
+            "Nopal asado"
+          ],
+          "presentation": "Masa azul romboidal cocida al comal, rellena de alverjón y cubierta con ensalada de nopales, queso rallado y salsa."
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tlacoyos de maíz azul rellenos de alverjón"
+          }
+        ],
+        "description": "El Tlacoyo (del náhuatl tlatlaoyotl) es una preparación prehispánica consistente en una empanada gruesa y romboidal de masa de maíz nixtamalizado, rellena tradicionalmente de alverjón, frijol o requesón."
+      },
+      "category": [
+        "Antojito",
+        "Prehispánico"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 min",
+      "cookTime": "20 min",
+      "servings": 5,
+      "mainIngredients": [
+        "Masa de maíz azul nixtamalizada",
+        "Alverjón cocido y molido",
+        "Nopales asados",
+        "Queso cotija",
+        "Salsa roja martajada"
+      ],
+      "tags": [
+        "Mexican",
+        "Prehispánico",
+        "Maíz",
+        "Legumbres"
+      ],
+      "filePath": "dishes/mexican/tlacoyos_de_alverjon.md"
+    },
+    {
+      "id": "mexican/tlayuda_oaxaquena",
+      "title": "Tlayuda Oaxaqueña con Tasajo",
+      "language": "spanish",
+      "country": "mexico",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tlayuda Oaxaqueña con Tasajo",
+        "region": "Oaxaca",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Animal Gourmet",
+          "url": "https://animalgourmet.com/2021/03/10/tlayuda-oaxaquena-receta-tradicional/",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "20 minutos",
+        "servings": 2,
+        "tags": [
+          "Mexican",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tortilla tlayuda de maíz de 30cm",
+          "Asiento de cerdo",
+          "Frijoles negros refritos",
+          "Quesillo oaxaqueño",
+          "Tasajo de res",
+          "Aguacate",
+          "Repollo picado"
+        ],
+        "sensory": {
+          "flavor": [
+            "Ahumar de tasajo",
+            "Asiento salado",
+            "Quesillo terroso"
+          ],
+          "texture": [
+            "Tortilla gigante tostada y crocante"
+          ],
+          "aroma": [
+            "Asiento de cerdo",
+            "Tasajo a las brasas",
+            "Quesillo"
+          ],
+          "presentation": "Tortilla tostada gigante de 30 cm con asiento, frijoles refritos, quesillo deshebrado y tasajo asado."
+        },
+        "nutrition": {
+          "calories": 790,
+          "macros": {
+            "protein_g": 42,
+            "fat_g": 36,
+            "carbs_g": 75
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tlayuda Oaxaqueña con Tasajo tradicional"
+          }
+        ],
+        "description": "La Tlayuda es bautizada como la 'pizza oaxaqueña': una enorme tortilla tostada al carbón untada con asiento de cerdo, frijoles, quesillo y filete de tasajo."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "20 minutos",
+      "servings": 2,
+      "mainIngredients": [
+        "Tortilla tlayuda de maíz de 30cm",
+        "Asiento de cerdo",
+        "Frijoles negros refritos",
+        "Quesillo oaxaqueño",
+        "Tasajo de res",
+        "Aguacate",
+        "Repollo picado"
+      ],
+      "tags": [
+        "Mexican",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/mexican/tlayuda_oaxaquena.md"
+    }
+  ],
+  "count": 35
+}

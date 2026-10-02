@@ -9,9 +9,29 @@
   ],
   "countries": [
     {
-      "country": "unknown",
-      "count": 350,
-      "endpoint": "/api/by-country/unknown.json"
+      "country": "united-states",
+      "count": 35,
+      "endpoint": "/api/by-country/united-states.json"
+    },
+    {
+      "country": "argentina",
+      "count": 10,
+      "endpoint": "/api/by-country/argentina.json"
+    },
+    {
+      "country": "bangladesh",
+      "count": 15,
+      "endpoint": "/api/by-country/bangladesh.json"
+    },
+    {
+      "country": "brazil",
+      "count": 25,
+      "endpoint": "/api/by-country/brazil.json"
+    },
+    {
+      "country": "chile",
+      "count": 10,
+      "endpoint": "/api/by-country/chile.json"
     },
     {
       "country": "colombia",
@@ -19,9 +39,69 @@
       "endpoint": "/api/by-country/colombia.json"
     },
     {
+      "country": "cuba",
+      "count": 10,
+      "endpoint": "/api/by-country/cuba.json"
+    },
+    {
+      "country": "dominican-republic",
+      "count": 10,
+      "endpoint": "/api/by-country/dominican-republic.json"
+    },
+    {
+      "country": "france",
+      "count": 20,
+      "endpoint": "/api/by-country/france.json"
+    },
+    {
+      "country": "greece",
+      "count": 20,
+      "endpoint": "/api/by-country/greece.json"
+    },
+    {
+      "country": "india",
+      "count": 35,
+      "endpoint": "/api/by-country/india.json"
+    },
+    {
+      "country": "italy",
+      "count": 20,
+      "endpoint": "/api/by-country/italy.json"
+    },
+    {
+      "country": "japan",
+      "count": 35,
+      "endpoint": "/api/by-country/japan.json"
+    },
+    {
+      "country": "mexico",
+      "count": 35,
+      "endpoint": "/api/by-country/mexico.json"
+    },
+    {
+      "country": "morocco",
+      "count": 20,
+      "endpoint": "/api/by-country/morocco.json"
+    },
+    {
       "country": "peru",
       "count": 14,
       "endpoint": "/api/by-country/peru.json"
+    },
+    {
+      "country": "puerto-rico",
+      "count": 10,
+      "endpoint": "/api/by-country/puerto-rico.json"
+    },
+    {
+      "country": "spain",
+      "count": 20,
+      "endpoint": "/api/by-country/spain.json"
+    },
+    {
+      "country": "thailand",
+      "count": 20,
+      "endpoint": "/api/by-country/thailand.json"
     }
   ],
   "endpoints": {

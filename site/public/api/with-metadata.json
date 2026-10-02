@@ -4,7 +4,7 @@
       "id": "american/apple_pie_traditional",
       "title": "Traditional American Apple Pie",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Traditional American Apple Pie",
@@ -94,7 +94,7 @@
       "id": "american/bbq_pork_ribs",
       "title": "St. Louis Style BBQ Pork Ribs",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "St. Louis Style BBQ Pork Ribs",
@@ -200,7 +200,7 @@
       "id": "american/biscuits_and_gravy",
       "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
@@ -270,7 +270,7 @@
       "id": "american/brisket_texas_style",
       "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
@@ -354,7 +354,7 @@
       "id": "american/brunswick_stew",
       "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
@@ -424,7 +424,7 @@
       "id": "american/buffalo_chicken_wings",
       "title": "Buffalo Chicken Wings",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Buffalo Chicken Wings",
@@ -512,7 +512,7 @@
       "id": "american/chicken_and_waffles",
       "title": "Chicken and Waffles (Pollo Frito con Waffles)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken and Waffles (Pollo Frito con Waffles)",
@@ -582,7 +582,7 @@
       "id": "american/chicken_fried_steak",
       "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
@@ -652,7 +652,7 @@
       "id": "american/chili_verde_new_mexico",
       "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
@@ -722,7 +722,7 @@
       "id": "american/clam_chowder_boston",
       "title": "New England Clam Chowder",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "New England Clam Chowder",
@@ -812,7 +812,7 @@
       "id": "american/clam_chowder_manhattan",
       "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
@@ -882,7 +882,7 @@
       "id": "american/classic_cheeseburger",
       "title": "Classic American Cheeseburger",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Classic American Cheeseburger",
@@ -972,7 +972,7 @@
       "id": "american/cobbler_de_melocoton",
       "title": "Georgia Peach Cobbler",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Georgia Peach Cobbler",
@@ -1062,7 +1062,7 @@
       "id": "american/collard_greens_southern",
       "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
@@ -1132,7 +1132,7 @@
       "id": "american/cornbread_southern",
       "title": "Southern Skillet Cornbread",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Southern Skillet Cornbread",
@@ -1222,7 +1222,7 @@
       "id": "american/crawfish_boil_louisiana",
       "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
@@ -1292,7 +1292,7 @@
       "id": "american/eggs_benedict",
       "title": "Eggs Benedict",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Eggs Benedict",
@@ -1382,7 +1382,7 @@
       "id": "american/fried_chicken_southern",
       "title": "Southern Crispy Fried Chicken",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Southern Crispy Fried Chicken",
@@ -1472,7 +1472,7 @@
       "id": "american/gumbo_louisiana",
       "title": "Louisiana Seafood Gumbo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Louisiana Seafood Gumbo",
@@ -1562,7 +1562,7 @@
       "id": "american/jambalaya_cajun",
       "title": "Cajun Jambalaya",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Cajun Jambalaya",
@@ -1652,7 +1652,7 @@
       "id": "american/key_lime_pie",
       "title": "Florida Key Lime Pie",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Florida Key Lime Pie",
@@ -1742,7 +1742,7 @@
       "id": "american/lobster_roll_maine",
       "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
@@ -1812,7 +1812,7 @@
       "id": "american/macaroni_and_cheese",
       "title": "Baked Macaroni and Cheese",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Baked Macaroni and Cheese",
@@ -1902,7 +1902,7 @@
       "id": "american/meatloaf_with_glaze",
       "title": "Classic Glazed Meatloaf",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Classic Glazed Meatloaf",
@@ -1992,7 +1992,7 @@
       "id": "american/pancakes_maple_syrup",
       "title": "Fluffy Pancakes con Maple Syrup",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Fluffy Pancakes con Maple Syrup",
@@ -2082,7 +2082,7 @@
       "id": "american/pecan_pie_traditional",
       "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
@@ -2152,7 +2152,7 @@
       "id": "american/philly_cheesesteak",
       "title": "Philly Cheesesteak",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Philly Cheesesteak",
@@ -2240,7 +2240,7 @@
       "id": "american/po_boy_shrimp",
       "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
@@ -2310,7 +2310,7 @@
       "id": "american/pot_roast_american",
       "title": "Classic American Pot Roast",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Classic American Pot Roast",
@@ -2400,7 +2400,7 @@
       "id": "american/pulled_pork_sandwich",
       "title": "Carolina Pulled Pork Sandwich",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Carolina Pulled Pork Sandwich",
@@ -2497,7 +2497,7 @@
       "id": "american/reuben_sandwich",
       "title": "Classic Reuben Sandwich",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Classic Reuben Sandwich",
@@ -2587,7 +2587,7 @@
       "id": "american/shrimp_and_grits",
       "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
@@ -2657,7 +2657,7 @@
       "id": "american/st_louis_ribs_bbq",
       "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
@@ -2743,7 +2743,7 @@
       "id": "american/tennessee_pulled_chicken",
       "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
@@ -2813,7 +2813,7 @@
       "id": "american/texas_chili_con_carne",
       "title": "Texas Chili con Carne",
       "language": "spanish",
-      "country": "unknown",
+      "country": "united-states",
       "hasMetadata": true,
       "metadata": {
         "title": "Texas Chili con Carne",
@@ -2903,7 +2903,7 @@
       "id": "argentinian/alfajores_de_maicena",
       "title": "Alfajores de Maicena",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Alfajores de Maicena",
@@ -3008,7 +3008,7 @@
       "id": "argentinian/asado_criollo",
       "title": "Asado Criollo Argentino",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Asado Criollo Argentino",
@@ -3110,7 +3110,7 @@
       "id": "argentinian/carbonada_criolla",
       "title": "Carbonada Criolla",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Carbonada Criolla",
@@ -3219,7 +3219,7 @@
       "id": "argentinian/choripan",
       "title": "Choripán Argentino",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Choripán Argentino",
@@ -3322,7 +3322,7 @@
       "id": "argentinian/empanadas_tucumanas",
       "title": "Empanadas Tucumanas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Empanadas Tucumanas",
@@ -3428,7 +3428,7 @@
       "id": "argentinian/humita_en_chala",
       "title": "Humita en Chala",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Humita en Chala",
@@ -3534,7 +3534,7 @@
       "id": "argentinian/locro_criollo",
       "title": "Locro Criollo Argentino",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Locro Criollo Argentino",
@@ -3641,7 +3641,7 @@
       "id": "argentinian/milanesa_a_la_napolitana",
       "title": "Milanesa a la Napolitana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Milanesa a la Napolitana",
@@ -3747,7 +3747,7 @@
       "id": "argentinian/pastelitos_criollos",
       "title": "Pastelitos Criollos Argentinos",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Pastelitos Criollos Argentinos",
@@ -3849,7 +3849,7 @@
       "id": "argentinian/provoleta",
       "title": "Provoleta Argentina",
       "language": "spanish",
-      "country": "unknown",
+      "country": "argentina",
       "hasMetadata": true,
       "metadata": {
         "title": "Provoleta Argentina",
@@ -3953,7 +3953,7 @@
       "id": "bangladeshi/aloo_bhorta",
       "title": "Aloo Bhorta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Aloo Bhorta",
@@ -4051,7 +4051,7 @@
       "id": "bangladeshi/begun_bhorta",
       "title": "Begun Bhorta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Begun Bhorta",
@@ -4149,7 +4149,7 @@
       "id": "bangladeshi/bhapa_pitha",
       "title": "Bhapa Pitha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Bhapa Pitha",
@@ -4244,7 +4244,7 @@
       "id": "bangladeshi/borhani",
       "title": "Borhani",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Borhani",
@@ -4343,7 +4343,7 @@
       "id": "bangladeshi/chingri_malai_curry",
       "title": "Chingri Malai Curry",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Chingri Malai Curry",
@@ -4443,7 +4443,7 @@
       "id": "bangladeshi/chitol_mach_kofta",
       "title": "Chitol Macher Muitha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Chitol Macher Muitha",
@@ -4544,7 +4544,7 @@
       "id": "bangladeshi/kacchi_biryani",
       "title": "Dhakai Kacchi Biryani",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Dhakai Kacchi Biryani",
@@ -4646,7 +4646,7 @@
       "id": "bangladeshi/mishti_doi",
       "title": "Mishti Doi",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Mishti Doi",
@@ -4741,7 +4741,7 @@
       "id": "bangladeshi/morog_polao",
       "title": "Dhakai Morog Polao",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Dhakai Morog Polao",
@@ -4840,7 +4840,7 @@
       "id": "bangladeshi/panta_bhat",
       "title": "Panta Bhat",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Panta Bhat",
@@ -4938,7 +4938,7 @@
       "id": "bangladeshi/patishapta_pitha",
       "title": "Patishapta Pitha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Patishapta Pitha",
@@ -5034,7 +5034,7 @@
       "id": "bangladeshi/rui_mach_jhol",
       "title": "Rui Macher Jhol",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Rui Macher Jhol",
@@ -5134,7 +5134,7 @@
       "id": "bangladeshi/shorshe_ilish",
       "title": "Shorshe Ilish",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Shorshe Ilish",
@@ -5257,7 +5257,7 @@
       "id": "bangladeshi/shutki_bhorta",
       "title": "Shutki Bhorta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Shutki Bhorta",
@@ -5354,7 +5354,7 @@
       "id": "bangladeshi/vuna_khichuri",
       "title": "Bhuna Khichuri",
       "language": "spanish",
-      "country": "unknown",
+      "country": "bangladesh",
       "hasMetadata": true,
       "metadata": {
         "title": "Bhuna Khichuri",
@@ -5453,7 +5453,7 @@
       "id": "brazilian/acai_na_tigela",
       "title": "Açaí na Tigela",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Açaí na Tigela",
@@ -5543,7 +5543,7 @@
       "id": "brazilian/acaraje",
       "title": "Acarajé Baiano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Acarajé Baiano",
@@ -5639,7 +5639,7 @@
       "id": "brazilian/baiao_de_dois",
       "title": "Baião de Dois",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Baião de Dois",
@@ -5729,7 +5729,7 @@
       "id": "brazilian/bobo_de_camarao",
       "title": "Bobó de Camarão",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Bobó de Camarão",
@@ -5819,7 +5819,7 @@
       "id": "brazilian/bolo_de_rolo",
       "title": "Bolo de Rolo Pernambucano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Bolo de Rolo Pernambucano",
@@ -5910,7 +5910,7 @@
       "id": "brazilian/brigadeiro",
       "title": "Brigadeiro Tradicional Brasileiro",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Brigadeiro Tradicional Brasileiro",
@@ -6006,7 +6006,7 @@
       "id": "brazilian/caipirinha",
       "title": "Caipirinha Tradicional Brasileira",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Caipirinha Tradicional Brasileira",
@@ -6102,7 +6102,7 @@
       "id": "brazilian/caruru",
       "title": "Caruru Baiano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Caruru Baiano",
@@ -6193,7 +6193,7 @@
       "id": "brazilian/churrasco",
       "title": "Churrasco Gaúcho de Picanha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Churrasco Gaúcho de Picanha",
@@ -6286,7 +6286,7 @@
       "id": "brazilian/coxinha",
       "title": "Coxinha de Frango Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Coxinha de Frango Tradicional",
@@ -6384,7 +6384,7 @@
       "id": "brazilian/creme_de_cupuacu",
       "title": "Creme de Cupuaçu",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Creme de Cupuaçu",
@@ -6472,7 +6472,7 @@
       "id": "brazilian/escondidinho_de_carne_de_sol",
       "title": "Escondidinho de Carne de Sol",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Escondidinho de Carne de Sol",
@@ -6563,7 +6563,7 @@
       "id": "brazilian/farofa_de_mandioca",
       "title": "Farofa de Mandioca Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Farofa de Mandioca Tradicional",
@@ -6652,7 +6652,7 @@
       "id": "brazilian/feijoada",
       "title": "Feijoada Completa Brasileira",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Feijoada Completa Brasileira",
@@ -6752,7 +6752,7 @@
       "id": "brazilian/feijoada_a_baiana",
       "title": "Feijoada à Baiana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Feijoada à Baiana",
@@ -6843,7 +6843,7 @@
       "id": "brazilian/galinhada",
       "title": "Galinhada Mineira e Goiana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Galinhada Mineira e Goiana",
@@ -6933,7 +6933,7 @@
       "id": "brazilian/moqueca_capixaba",
       "title": "Moqueca Capixaba",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Moqueca Capixaba",
@@ -7024,7 +7024,7 @@
       "id": "brazilian/moqueca_de_peixe",
       "title": "Moqueca de Peixe Baiana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Moqueca de Peixe Baiana",
@@ -7127,7 +7127,7 @@
       "id": "brazilian/pao_de_queijo",
       "title": "Pão de Queijo Mineiro",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Pão de Queijo Mineiro",
@@ -7225,7 +7225,7 @@
       "id": "brazilian/pastel_de_feira",
       "title": "Pastel de Feira",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Pastel de Feira",
@@ -7314,7 +7314,7 @@
       "id": "brazilian/pato_no_tucupi",
       "title": "Pato no Tucupi",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Pato no Tucupi",
@@ -7404,7 +7404,7 @@
       "id": "brazilian/pudim_de_leite",
       "title": "Pudim de Leite Condensado",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Pudim de Leite Condensado",
@@ -7501,7 +7501,7 @@
       "id": "brazilian/tacaca",
       "title": "Tacacá Amazônico",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Tacacá Amazônico",
@@ -7592,7 +7592,7 @@
       "id": "brazilian/tutu_de_feijao",
       "title": "Tutu de Feijão",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Tutu de Feijão",
@@ -7683,7 +7683,7 @@
       "id": "brazilian/vatapa",
       "title": "Vatapá Baiano Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "brazil",
       "hasMetadata": true,
       "metadata": {
         "title": "Vatapá Baiano Tradicional",
@@ -7786,7 +7786,7 @@
       "id": "chilean/caldillo_de_congrio",
       "title": "Caldillo de Congrio",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Caldillo de Congrio",
@@ -7892,7 +7892,7 @@
       "id": "chilean/cazuela_de_vacuno",
       "title": "Cazuela de Vacuno",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Cazuela de Vacuno",
@@ -7994,7 +7994,7 @@
       "id": "chilean/charquican",
       "title": "Charquicán Chileno",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Charquicán Chileno",
@@ -8100,7 +8100,7 @@
       "id": "chilean/chorrillana",
       "title": "Chorrillana Chilena",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Chorrillana Chilena",
@@ -8200,7 +8200,7 @@
       "id": "chilean/empanada_de_pino",
       "title": "Empanada de Pino Chilena",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Empanada de Pino Chilena",
@@ -8304,7 +8304,7 @@
       "id": "chilean/humitas",
       "title": "Humitas Chilenas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Humitas Chilenas",
@@ -8404,7 +8404,7 @@
       "id": "chilean/mote_con_huesillos",
       "title": "Mote con Huesillos",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Mote con Huesillos",
@@ -8506,7 +8506,7 @@
       "id": "chilean/pastel_de_choclo",
       "title": "Pastel de Choclo Chileno",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Pastel de Choclo Chileno",
@@ -8608,7 +8608,7 @@
       "id": "chilean/porotos_con_riendas",
       "title": "Porotos con Riendas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Porotos con Riendas",
@@ -8708,7 +8708,7 @@
       "id": "chilean/sopaipillas",
       "title": "Sopaipillas Chilenas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "chile",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopaipillas Chilenas",
@@ -18309,7 +18309,7 @@
       "id": "cuban/ajiaco_cubano",
       "title": "Ajiaco Criollo Cubano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Ajiaco Criollo Cubano",
@@ -18411,7 +18411,7 @@
       "id": "cuban/flan_de_huevo",
       "title": "Flan de Huevo Tradicional Cubano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Flan de Huevo Tradicional Cubano",
@@ -18509,7 +18509,7 @@
       "id": "cuban/lechon_asado",
       "title": "Lechón Asado Cubano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Lechón Asado Cubano",
@@ -18609,7 +18609,7 @@
       "id": "cuban/masitas_de_cerdo",
       "title": "Masitas de Cerdo Fritas Cubanas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -18712,7 +18712,7 @@
       "id": "cuban/mojito",
       "title": "Mojito Cubano Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Mojito Cubano Tradicional",
@@ -18816,7 +18816,7 @@
       "id": "cuban/moros_y_cristianos",
       "title": "Moros y Cristianos Tradicionales",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Moros y Cristianos Tradicionales",
@@ -18916,7 +18916,7 @@
       "id": "cuban/picadillo_a_la_habanera",
       "title": "Picadillo a la Habanera",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Picadillo a la Habanera",
@@ -19016,7 +19016,7 @@
       "id": "cuban/ropa_vieja",
       "title": "Ropa Vieja Cubana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Ropa Vieja Cubana",
@@ -19117,7 +19117,7 @@
       "id": "cuban/tostones_cubanos",
       "title": "Tostones Cubanos (Chatinos)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Tostones Cubanos (Chatinos)",
@@ -19211,7 +19211,7 @@
       "id": "cuban/yuca_con_mojo",
       "title": "Yuca con Mojo Cubana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "cuba",
       "hasMetadata": true,
       "metadata": {
         "title": "Yuca con Mojo Cubana",
@@ -19311,7 +19311,7 @@
       "id": "dominican/chimi_dominicano",
       "title": "Chimichurri Dominicano (Chimi)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Chimichurri Dominicano (Chimi)",
@@ -19418,7 +19418,7 @@
       "id": "dominican/habichuelas_con_dulce",
       "title": "Habichuelas con Dulce Dominicanas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Habichuelas con Dulce Dominicanas",
@@ -19529,7 +19529,7 @@
       "id": "dominican/la_bandera_dominicana",
       "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
@@ -19634,7 +19634,7 @@
       "id": "dominican/mangu",
       "title": "Mangú Dominicano con Los Tres Golpes",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Mangú Dominicano con Los Tres Golpes",
@@ -19738,7 +19738,7 @@
       "id": "dominican/mofongo_dominicano",
       "title": "Mofongo Dominicano Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Mofongo Dominicano Tradicional",
@@ -19840,7 +19840,7 @@
       "id": "dominican/morir_sonando",
       "title": "Morir Soñando Dominicano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Morir Soñando Dominicano",
@@ -19935,7 +19935,7 @@
       "id": "dominican/pescado_con_coco",
       "title": "Pescado con Coco Estilo Samaná",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Pescado con Coco Estilo Samaná",
@@ -20038,7 +20038,7 @@
       "id": "dominican/pollo_guisado_dominicano",
       "title": "Pollo Guisado Dominicano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Pollo Guisado Dominicano",
@@ -20142,7 +20142,7 @@
       "id": "dominican/sancocho_dominicano",
       "title": "Sancocho Dominicano de Siete Carnes",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -20254,7 +20254,7 @@
       "id": "dominican/tostones_dominicanos",
       "title": "Tostones Dominicanos con Agua de Ajo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "dominican-republic",
       "hasMetadata": true,
       "metadata": {
         "title": "Tostones Dominicanos con Agua de Ajo",
@@ -20352,7 +20352,7 @@
       "id": "french/boeuf_bourguignon",
       "title": "Boeuf Bourguignon",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Boeuf Bourguignon",
@@ -20442,7 +20442,7 @@
       "id": "french/boeuf_en_daube",
       "title": "Daube Provençale",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Daube Provençale",
@@ -20532,7 +20532,7 @@
       "id": "french/bouillabaisse",
       "title": "Bouillabaisse de Marsella",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Bouillabaisse de Marsella",
@@ -20622,7 +20622,7 @@
       "id": "french/cassoulet_de_castelnaudary",
       "title": "Cassoulet de Castelnaudary",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Cassoulet de Castelnaudary",
@@ -20710,7 +20710,7 @@
       "id": "french/coq_au_vin",
       "title": "Coq au Vin",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Coq au Vin",
@@ -20800,7 +20800,7 @@
       "id": "french/creme_brulee",
       "title": "Crème Brûlée",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Crème Brûlée",
@@ -20888,7 +20888,7 @@
       "id": "french/crepes_suzette",
       "title": "Crêpes Suzette",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Crêpes Suzette",
@@ -20976,7 +20976,7 @@
       "id": "french/croque_monsieur",
       "title": "Croque Monsieur",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Croque Monsieur",
@@ -21064,7 +21064,7 @@
       "id": "french/duck_confit",
       "title": "Confit de Canard",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Confit de Canard",
@@ -21152,7 +21152,7 @@
       "id": "french/escargots_de_bourgogne",
       "title": "Escargots de Bourgogne",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Escargots de Bourgogne",
@@ -21240,7 +21240,7 @@
       "id": "french/gratin_dauphinois",
       "title": "Gratin Dauphinois",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Gratin Dauphinois",
@@ -21328,7 +21328,7 @@
       "id": "french/mousse_au_chocolat",
       "title": "Mousse au Chocolat",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Mousse au Chocolat",
@@ -21416,7 +21416,7 @@
       "id": "french/pot_au_feu",
       "title": "Pot-au-Feu Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Pot-au-Feu Tradicional",
@@ -21506,7 +21506,7 @@
       "id": "french/quiche_lorraine",
       "title": "Quiche Lorraine",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Quiche Lorraine",
@@ -21596,7 +21596,7 @@
       "id": "french/ratatouille_provencale",
       "title": "Ratatouille Provençale",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Ratatouille Provençale",
@@ -21686,7 +21686,7 @@
       "id": "french/salade_nicoise",
       "title": "Salade Niçoise",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Salade Niçoise",
@@ -21778,7 +21778,7 @@
       "id": "french/souffle_au_fromage",
       "title": "Soufflé au Fromage",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Soufflé au Fromage",
@@ -21868,7 +21868,7 @@
       "id": "french/soupe_a_l_oignon",
       "title": "Soupe à l'Oignon Gratinée",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Soupe à l'Oignon Gratinée",
@@ -21958,7 +21958,7 @@
       "id": "french/steak_frites_bernaise",
       "title": "Steak Frites con Salsa Béarnaise",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Steak Frites con Salsa Béarnaise",
@@ -22048,7 +22048,7 @@
       "id": "french/tarte_tatin",
       "title": "Tarte Tatin",
       "language": "spanish",
-      "country": "unknown",
+      "country": "france",
       "hasMetadata": true,
       "metadata": {
         "title": "Tarte Tatin",
@@ -22136,7 +22136,7 @@
       "id": "greek/baklava_griego",
       "title": "Baklava Griego con Nueces y Miel",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Baklava Griego con Nueces y Miel",
@@ -22226,7 +22226,7 @@
       "id": "greek/dolmades_hojas_de_parra",
       "title": "Dolmades (Hojas de Parra Rellenas)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Dolmades (Hojas de Parra Rellenas)",
@@ -22318,7 +22318,7 @@
       "id": "greek/falafel_griego",
       "title": "Revithokeftedes (Croquetas de Garbanzo)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Revithokeftedes (Croquetas de Garbanzo)",
@@ -22408,7 +22408,7 @@
       "id": "greek/fasolada_sopa",
       "title": "Fasolada (Sopa de Alubias Blancas)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Fasolada (Sopa de Alubias Blancas)",
@@ -22498,7 +22498,7 @@
       "id": "greek/galaktoboureko",
       "title": "Galaktoboureko (Pastel de Semola y Miel)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Galaktoboureko (Pastel de Semola y Miel)",
@@ -22588,7 +22588,7 @@
       "id": "greek/gigantes_plaki",
       "title": "Gigantes Plaki (Alubias al Horno)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Gigantes Plaki (Alubias al Horno)",
@@ -22678,7 +22678,7 @@
       "id": "greek/gyros_de_pollo",
       "title": "Gyros de Pollo en Pan Pita",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Gyros de Pollo en Pan Pita",
@@ -22768,7 +22768,7 @@
       "id": "greek/horiatiki_greek_salad",
       "title": "Horiatiki (Ensalada Griega Tradicional)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Horiatiki (Ensalada Griega Tradicional)",
@@ -22860,7 +22860,7 @@
       "id": "greek/keftedes_griegas",
       "title": "Keftedes (Albóndigas Griegas de Menta)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Keftedes (Albóndigas Griegas de Menta)",
@@ -22950,7 +22950,7 @@
       "id": "greek/kleftiko_de_cordero",
       "title": "Kleftiko de Cordero en Papel",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Kleftiko de Cordero en Papel",
@@ -23042,7 +23042,7 @@
       "id": "greek/kolokithokeftedes",
       "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
@@ -23132,7 +23132,7 @@
       "id": "greek/loukoumades_miel",
       "title": "Loukoumades con Miel y Canela",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Loukoumades con Miel y Canela",
@@ -23220,7 +23220,7 @@
       "id": "greek/moussaka_griega",
       "title": "Moussaka Griega Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Moussaka Griega Tradicional",
@@ -23310,7 +23310,7 @@
       "id": "greek/pastitsio_al_horno",
       "title": "Pastitsio (Lasaña Griega)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Pastitsio (Lasaña Griega)",
@@ -23398,7 +23398,7 @@
       "id": "greek/saganaki_queso_frito",
       "title": "Garides Saganaki (Camarones con Feta)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Garides Saganaki (Camarones con Feta)",
@@ -23486,7 +23486,7 @@
       "id": "greek/souvlaki_de_cerdo",
       "title": "Souvlaki de Cerdo con Pita",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Souvlaki de Cerdo con Pita",
@@ -23576,7 +23576,7 @@
       "id": "greek/spanakopita_pastel",
       "title": "Spanakopita (Pastel de Espinacas y Feta)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Spanakopita (Pastel de Espinacas y Feta)",
@@ -23666,7 +23666,7 @@
       "id": "greek/stifado_de_ternera",
       "title": "Stifado de Ternera con Cebollitas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Stifado de Ternera con Cebollitas",
@@ -23758,7 +23758,7 @@
       "id": "greek/tiropita_pastel_de_queso",
       "title": "Tiropita (Pastel Hojaldrado de Feta)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Tiropita (Pastel Hojaldrado de Feta)",
@@ -23848,7 +23848,7 @@
       "id": "greek/tzatziki_casero",
       "title": "Tzatziki Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "greece",
       "hasMetadata": true,
       "metadata": {
         "title": "Tzatziki Tradicional",
@@ -23938,7 +23938,7 @@
       "id": "indian/aloo_gobi",
       "title": "Aloo Gobi",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Aloo Gobi",
@@ -24030,7 +24030,7 @@
       "id": "indian/baingan_bharta",
       "title": "Baingan Bharta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Baingan Bharta",
@@ -24122,7 +24122,7 @@
       "id": "indian/biryani_hyderabadi",
       "title": "Hyderabadi Biryani",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Hyderabadi Biryani",
@@ -24214,7 +24214,7 @@
       "id": "indian/bisi_bele_bath",
       "title": "Bisi Bele Bath",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Bisi Bele Bath",
@@ -24307,7 +24307,7 @@
       "id": "indian/butter_chicken",
       "title": "Butter Chicken (Murgh Makhani)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Butter Chicken (Murgh Makhani)",
@@ -24397,7 +24397,7 @@
       "id": "indian/chana_masala",
       "title": "Chana Masala",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Chana Masala",
@@ -24487,7 +24487,7 @@
       "id": "indian/chicken_korma",
       "title": "Chicken Korma",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken Korma",
@@ -24577,7 +24577,7 @@
       "id": "indian/chicken_tikka_masala",
       "title": "Chicken Tikka Masala",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken Tikka Masala",
@@ -24667,7 +24667,7 @@
       "id": "indian/dal_makhani",
       "title": "Dal Makhani",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Dal Makhani",
@@ -24757,7 +24757,7 @@
       "id": "indian/dhokla_gujarati",
       "title": "Dhokla Gujarati",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Dhokla Gujarati",
@@ -24851,7 +24851,7 @@
       "id": "indian/dosa_masala",
       "title": "Masala Dosa",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Masala Dosa",
@@ -24939,7 +24939,7 @@
       "id": "indian/fish_amritsari",
       "title": "Amritsari Fish Fry",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Amritsari Fish Fry",
@@ -25027,7 +25027,7 @@
       "id": "indian/gulab_jamun",
       "title": "Gulab Jamun",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Gulab Jamun",
@@ -25115,7 +25115,7 @@
       "id": "indian/hyderabadi_haleem",
       "title": "Hyderabadi Haleem",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Hyderabadi Haleem",
@@ -25211,7 +25211,7 @@
       "id": "indian/idli_sambar",
       "title": "Idli Sambar",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Idli Sambar",
@@ -25306,7 +25306,7 @@
       "id": "indian/kathi_roll_kolkata",
       "title": "Kathi Roll de Kolkata",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Kathi Roll de Kolkata",
@@ -25401,7 +25401,7 @@
       "id": "indian/kheer_de_arroz",
       "title": "Kheer de Arroz",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Kheer de Arroz",
@@ -25496,7 +25496,7 @@
       "id": "indian/litti_chokha",
       "title": "Litti Chokha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Litti Chokha",
@@ -25589,7 +25589,7 @@
       "id": "indian/malai_kofta",
       "title": "Malai Kofta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Malai Kofta",
@@ -25677,7 +25677,7 @@
       "id": "indian/misal_pav",
       "title": "Misal Pav",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Misal Pav",
@@ -25770,7 +25770,7 @@
       "id": "indian/naan_de_ajo",
       "title": "Ajo Naan (Pan Naan)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Ajo Naan (Pan Naan)",
@@ -25860,7 +25860,7 @@
       "id": "indian/palak_paneer",
       "title": "Palak Paneer",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Palak Paneer",
@@ -25950,7 +25950,7 @@
       "id": "indian/paneer_butter_masala",
       "title": "Paneer Butter Masala",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Paneer Butter Masala",
@@ -26040,7 +26040,7 @@
       "id": "indian/pani_puri",
       "title": "Pani Puri (Golgappa)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Pani Puri (Golgappa)",
@@ -26128,7 +26128,7 @@
       "id": "indian/pav_bhaji",
       "title": "Pav Bhaji",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Pav Bhaji",
@@ -26216,7 +26216,7 @@
       "id": "indian/poha_indori",
       "title": "Indori Poha",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Indori Poha",
@@ -26309,7 +26309,7 @@
       "id": "indian/rajma_chawal",
       "title": "Rajma Chawal",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Rajma Chawal",
@@ -26401,7 +26401,7 @@
       "id": "indian/rasam_de_tomate",
       "title": "Rasam de Tomate",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Rasam de Tomate",
@@ -26495,7 +26495,7 @@
       "id": "indian/rasgulla",
       "title": "Rasgulla",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Rasgulla",
@@ -26586,7 +26586,7 @@
       "id": "indian/rogan_josh",
       "title": "Rogan Josh de Cordero",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Rogan Josh de Cordero",
@@ -26676,7 +26676,7 @@
       "id": "indian/samosa_de_patata",
       "title": "Samosa de Patata y Guisantes",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Samosa de Patata y Guisantes",
@@ -26768,7 +26768,7 @@
       "id": "indian/tandoori_chicken",
       "title": "Tandoori Chicken",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Tandoori Chicken",
@@ -26858,7 +26858,7 @@
       "id": "indian/thalipeeth",
       "title": "Thalipeeth",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Thalipeeth",
@@ -26951,7 +26951,7 @@
       "id": "indian/vada_pav",
       "title": "Vada Pav",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Vada Pav",
@@ -27039,7 +27039,7 @@
       "id": "indian/vindaloo_de_cerdo",
       "title": "Vindaloo de Cerdo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "india",
       "hasMetadata": true,
       "metadata": {
         "title": "Vindaloo de Cerdo",
@@ -27131,7 +27131,7 @@
       "id": "italian/arancini_siciliani",
       "title": "Arancini Siciliani di Riso",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Arancini Siciliani di Riso",
@@ -27224,7 +27224,7 @@
       "id": "italian/cacio_e_pepe",
       "title": "Spaghetti Cacio e Pepe",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Spaghetti Cacio e Pepe",
@@ -27312,7 +27312,7 @@
       "id": "italian/cannoli_siciliani",
       "title": "Cannoli Siciliani al Pistacchio",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Cannoli Siciliani al Pistacchio",
@@ -27407,7 +27407,7 @@
       "id": "italian/caprese_salad",
       "title": "Insalata Caprese Tradizionale",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -27503,7 +27503,7 @@
       "id": "italian/focaccia_barese",
       "title": "Focaccia Barese con Pomodorini",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Focaccia Barese con Pomodorini",
@@ -27598,7 +27598,7 @@
       "id": "italian/gnocchi_di_patate",
       "title": "Gnocchi di Patate al Pesto",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Gnocchi di Patate al Pesto",
@@ -27694,7 +27694,7 @@
       "id": "italian/lasagna_alla_bolognese",
       "title": "Lasagna alla Bolognese",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Lasagna alla Bolognese",
@@ -27791,7 +27791,7 @@
       "id": "italian/melanzane_alla_parmigiana",
       "title": "Parmigiana di Melanzane",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Parmigiana di Melanzane",
@@ -27885,7 +27885,7 @@
       "id": "italian/minestrone_alla_genovese",
       "title": "Minestrone alla Genovese",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Minestrone alla Genovese",
@@ -27981,7 +27981,7 @@
       "id": "italian/ossobuco_alla_milanese",
       "title": "Ossobuco alla Milanese con Gremolata",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Ossobuco alla Milanese con Gremolata",
@@ -28077,7 +28077,7 @@
       "id": "italian/panettone_tradizionale",
       "title": "Panettone Artigianale",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Panettone Artigianale",
@@ -28171,7 +28171,7 @@
       "id": "italian/pizza_margherita",
       "title": "Pizza Margherita Napoletana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Pizza Margherita Napoletana",
@@ -28266,7 +28266,7 @@
       "id": "italian/pollo_alla_cacciatora",
       "title": "Pollo alla Cacciatora",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Pollo alla Cacciatora",
@@ -28362,7 +28362,7 @@
       "id": "italian/porchetta_di_ariccia",
       "title": "Porchetta di Ariccia",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Porchetta di Ariccia",
@@ -28455,7 +28455,7 @@
       "id": "italian/risotto_alla_milanese",
       "title": "Risotto alla Milanese",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Risotto alla Milanese",
@@ -28550,7 +28550,7 @@
       "id": "italian/saltimbocca_alla_romana",
       "title": "Saltimbocca alla Romana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Saltimbocca alla Romana",
@@ -28642,7 +28642,7 @@
       "id": "italian/spaghetti_carbonara",
       "title": "Spaghetti alla Carbonara",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Spaghetti alla Carbonara",
@@ -28734,7 +28734,7 @@
       "id": "italian/tagliatelle_al_ragu",
       "title": "Tagliatelle al Ragù Bolognese",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Tagliatelle al Ragù Bolognese",
@@ -28832,7 +28832,7 @@
       "id": "italian/tiramisu_classico",
       "title": "Tiramisù Classico",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Tiramisù Classico",
@@ -28928,7 +28928,7 @@
       "id": "italian/vitello_tonnato",
       "title": "Vitello Tonnato",
       "language": "spanish",
-      "country": "unknown",
+      "country": "italy",
       "hasMetadata": true,
       "metadata": {
         "title": "Vitello Tonnato",
@@ -29022,7 +29022,7 @@
       "id": "japanese/agedashi_tofu",
       "title": "Agedashi Tofu",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Agedashi Tofu",
@@ -29117,7 +29117,7 @@
       "id": "japanese/asari_no_sakamushi",
       "title": "Asari no Sakamushi",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Asari no Sakamushi",
@@ -29210,7 +29210,7 @@
       "id": "japanese/buri_daikon",
       "title": "Buri Daikon",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Buri Daikon",
@@ -29302,7 +29302,7 @@
       "id": "japanese/chanchan_yaki",
       "title": "Chanchan Yaki",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chanchan Yaki",
@@ -29401,7 +29401,7 @@
       "id": "japanese/chashu_pork_slice",
       "title": "Chashu de Cerdo para Ramen",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chashu de Cerdo para Ramen",
@@ -29496,7 +29496,7 @@
       "id": "japanese/chawanmushi",
       "title": "Chawanmushi (Flan Salado)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chawanmushi (Flan Salado)",
@@ -29591,7 +29591,7 @@
       "id": "japanese/chicken_katsu_curry",
       "title": "Chicken Katsu Curry",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken Katsu Curry",
@@ -29686,7 +29686,7 @@
       "id": "japanese/chikuzenni",
       "title": "Chikuzenni",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chikuzenni",
@@ -29781,7 +29781,7 @@
       "id": "japanese/dorayaki",
       "title": "Dorayaki",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Dorayaki",
@@ -29874,7 +29874,7 @@
       "id": "japanese/gyudon_beef_bowl",
       "title": "Gyudon (Donburi de Res)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Gyudon (Donburi de Res)",
@@ -29971,7 +29971,7 @@
       "id": "japanese/hida_houba_miso",
       "title": "Hida Houba Miso",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Hida Houba Miso",
@@ -30068,7 +30068,7 @@
       "id": "japanese/ichigo_daifuku",
       "title": "Ichigo Daifuku",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Ichigo Daifuku",
@@ -30161,7 +30161,7 @@
       "id": "japanese/imoni_yamagata",
       "title": "Imoni Yamagata",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Imoni Yamagata",
@@ -30256,7 +30256,7 @@
       "id": "japanese/ishikari_nabe",
       "title": "Ishikari Nabe",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Ishikari Nabe",
@@ -30353,7 +30353,7 @@
       "id": "japanese/karaage_chicken",
       "title": "Chicken Karaage",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Chicken Karaage",
@@ -30448,7 +30448,7 @@
       "id": "japanese/kenchin_jiru",
       "title": "Kenchin Jiru",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Kenchin Jiru",
@@ -30545,7 +30545,7 @@
       "id": "japanese/kiriotanpo_nabe",
       "title": "Kiriotanpo Nabe",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Kiriotanpo Nabe",
@@ -30643,7 +30643,7 @@
       "id": "japanese/matcha_miso_dengaku",
       "title": "Matcha Miso Dengaku",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Matcha Miso Dengaku",
@@ -30736,7 +30736,7 @@
       "id": "japanese/miso_soup_classic",
       "title": "Sopa de Miso Clásica",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopa de Miso Clásica",
@@ -30850,7 +30850,7 @@
       "id": "japanese/nikujaga_home",
       "title": "Nikujaga (Res con Patatas)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Nikujaga (Res con Patatas)",
@@ -30946,7 +30946,7 @@
       "id": "japanese/okonomiyaki_osaka",
       "title": "Okonomiyaki Estilo Osaka",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Okonomiyaki Estilo Osaka",
@@ -31043,7 +31043,7 @@
       "id": "japanese/ramen_shoyu",
       "title": "Shoyu Ramen Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Shoyu Ramen Tradicional",
@@ -31155,7 +31155,7 @@
       "id": "japanese/saba_no_miso_ni",
       "title": "Saba no Miso-ni",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Saba no Miso-ni",
@@ -31248,7 +31248,7 @@
       "id": "japanese/soba_zaru",
       "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
@@ -31337,7 +31337,7 @@
       "id": "japanese/sukiyaki_beef",
       "title": "Sukiyaki Nabemono",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Sukiyaki Nabemono",
@@ -31432,7 +31432,7 @@
       "id": "japanese/sushi_nigiri_salmon",
       "title": "Nigiri Sushi de Salmón",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Nigiri Sushi de Salmón",
@@ -31523,7 +31523,7 @@
       "id": "japanese/takoyaki_osaka",
       "title": "Takoyaki de Osaka",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Takoyaki de Osaka",
@@ -31618,7 +31618,7 @@
       "id": "japanese/tamagoyaki_omelet",
       "title": "Tamagoyaki (Tortilla Dulce)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Tamagoyaki (Tortilla Dulce)",
@@ -31710,7 +31710,7 @@
       "id": "japanese/tempura_moriawase",
       "title": "Tempura Moriawase",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Tempura Moriawase",
@@ -31804,7 +31804,7 @@
       "id": "japanese/tonkatsu_pork",
       "title": "Tonkatsu de Cerdo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Tonkatsu de Cerdo",
@@ -31898,7 +31898,7 @@
       "id": "japanese/udon_kitsune",
       "title": "Kitsune Udon",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Kitsune Udon",
@@ -31990,7 +31990,7 @@
       "id": "japanese/unadon_unagi",
       "title": "Unadon (Anguila sobre Arroz)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Unadon (Anguila sobre Arroz)",
@@ -32078,7 +32078,7 @@
       "id": "japanese/unagi_no_kabayaki",
       "title": "Unagi no Kabayaki",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Unagi no Kabayaki",
@@ -32168,7 +32168,7 @@
       "id": "japanese/yakitori_tare",
       "title": "Yakitori de Pollo en Tare",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Yakitori de Pollo en Tare",
@@ -32263,7 +32263,7 @@
       "id": "japanese/yudofu_kyoto",
       "title": "Yudofu Kyoto",
       "language": "spanish",
-      "country": "unknown",
+      "country": "japan",
       "hasMetadata": true,
       "metadata": {
         "title": "Yudofu Kyoto",
@@ -32373,7 +32373,7 @@
       "id": "mexican/agua_de_horchata_de_arroz",
       "title": "Agua de Horchata de Arroz",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Agua de Horchata de Arroz",
@@ -32457,7 +32457,7 @@
       "id": "mexican/aguachile_verde",
       "title": "Aguachile Verde de Camarón",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Aguachile Verde de Camarón",
@@ -32569,7 +32569,7 @@
       "id": "mexican/albondigas_en_chipotle",
       "title": "Albóndigas en Salsa de Chipotle",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Albóndigas en Salsa de Chipotle",
@@ -32677,7 +32677,7 @@
       "id": "mexican/barbacoa_de_borrego",
       "title": "Barbacoa de Borrego",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Barbacoa de Borrego",
@@ -32761,7 +32761,7 @@
       "id": "mexican/birria_de_res",
       "title": "Birria de Res con Consomé",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -32867,7 +32867,7 @@
       "id": "mexican/carnitas_de_michoacan",
       "title": "Carnitas de Michoacán",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Carnitas de Michoacán",
@@ -32960,7 +32960,7 @@
       "id": "mexican/chilaquiles_verdes",
       "title": "Chilaquiles Verdes con Huevo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Chilaquiles Verdes con Huevo",
@@ -33055,7 +33055,7 @@
       "id": "mexican/chiles_en_nogada",
       "title": "Chiles en Nogada",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Chiles en Nogada",
@@ -33154,7 +33154,7 @@
       "id": "mexican/chiles_rellenos_de_queso",
       "title": "Chiles Rellenos de Queso",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Chiles Rellenos de Queso",
@@ -33240,7 +33240,7 @@
       "id": "mexican/chilpachole_de_jaiba",
       "title": "Chilpachole de Jaiba",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Chilpachole de Jaiba",
@@ -33326,7 +33326,7 @@
       "id": "mexican/cochinita_pibil",
       "title": "Cochinita Pibil",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Cochinita Pibil",
@@ -33437,7 +33437,7 @@
       "id": "mexican/enchiladas_verdes",
       "title": "Enchiladas Verdes",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Enchiladas Verdes",
@@ -33534,7 +33534,7 @@
       "id": "mexican/enmoladas_de_pollo",
       "title": "Enmoladas de Pollo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Enmoladas de Pollo",
@@ -33627,7 +33627,7 @@
       "id": "mexican/esquites_con_epazote",
       "title": "Esquites con Epazote",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Esquites con Epazote",
@@ -33716,7 +33716,7 @@
       "id": "mexican/guacamole_tradicional",
       "title": "Guacamole Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Guacamole Tradicional",
@@ -33812,7 +33812,7 @@
       "id": "mexican/huarache_de_cecina",
       "title": "Huarache de Cecina",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Huarache de Cecina",
@@ -33899,7 +33899,7 @@
       "id": "mexican/mole_amarillo",
       "title": "Mole Amarillo Oaxaqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Mole Amarillo Oaxaqueño",
@@ -33989,7 +33989,7 @@
       "id": "mexican/mole_negro_oaxaqueno",
       "title": "Mole Negro Oaxaqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Mole Negro Oaxaqueño",
@@ -34084,7 +34084,7 @@
       "id": "mexican/mole_poblano",
       "title": "Mole Poblano",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Mole Poblano",
@@ -34185,7 +34185,7 @@
       "id": "mexican/mole_verde_oaxaqueno",
       "title": "Mole Verde Oaxaqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Mole Verde Oaxaqueño",
@@ -34277,7 +34277,7 @@
       "id": "mexican/pambazo_de_papa_con_chorizo",
       "title": "Pambazo de Papa con Chorizo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pambazo de Papa con Chorizo",
@@ -34371,7 +34371,7 @@
       "id": "mexican/panuchos_yucatecos",
       "title": "Panuchos Yucatecos",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Panuchos Yucatecos",
@@ -34464,7 +34464,7 @@
       "id": "mexican/pescado_a_la_veracruzana",
       "title": "Pescado a la Veracruzana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pescado a la Veracruzana",
@@ -34552,7 +34552,7 @@
       "id": "mexican/pipian_verde",
       "title": "Pipián Verde",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pipián Verde",
@@ -34638,7 +34638,7 @@
       "id": "mexican/poc_chuc",
       "title": "Poc Chuc",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Poc Chuc",
@@ -34723,7 +34723,7 @@
       "id": "mexican/pozole_rojo",
       "title": "Pozole Rojo de Jalisco",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pozole Rojo de Jalisco",
@@ -34837,7 +34837,7 @@
       "id": "mexican/quesadillas_de_flor_de_calabaza",
       "title": "Quesadillas de Flor de Calabaza",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Quesadillas de Flor de Calabaza",
@@ -34930,7 +34930,7 @@
       "id": "mexican/sopa_de_lima",
       "title": "Sopa de Lima",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopa de Lima",
@@ -35017,7 +35017,7 @@
       "id": "mexican/sopas_de_tortilla",
       "title": "Sopa de Tortilla (Ateca)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopa de Tortilla (Ateca)",
@@ -35129,7 +35129,7 @@
       "id": "mexican/sopes_tradicionales",
       "title": "Sopes Tradicionales",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopes Tradicionales",
@@ -35224,7 +35224,7 @@
       "id": "mexican/tacos_al_pastor",
       "title": "Tacos al Pastor",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -35328,7 +35328,7 @@
       "id": "mexican/tacos_de_canasta",
       "title": "Tacos de Canasta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Tacos de Canasta",
@@ -35415,7 +35415,7 @@
       "id": "mexican/tamales_oaxaquenos",
       "title": "Tamales Oaxaqueños",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Tamales Oaxaqueños",
@@ -35524,7 +35524,7 @@
       "id": "mexican/tlacoyos_de_alverjon",
       "title": "Tlacoyos de Alverjón",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Tlacoyos de Alverjón",
@@ -35608,7 +35608,7 @@
       "id": "mexican/tlayuda_oaxaquena",
       "title": "Tlayuda Oaxaqueña con Tasajo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "mexico",
       "hasMetadata": true,
       "metadata": {
         "title": "Tlayuda Oaxaqueña con Tasajo",
@@ -35703,7 +35703,7 @@
       "id": "moroccan/baghrir_panqueques",
       "title": "Baghrir (Panqueques de Mil Hoyos)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Baghrir (Panqueques de Mil Hoyos)",
@@ -35793,7 +35793,7 @@
       "id": "moroccan/briouats_de_carne",
       "title": "Briouats de Carne Picada Especiada",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Briouats de Carne Picada Especiada",
@@ -35885,7 +35885,7 @@
       "id": "moroccan/chebakia_miel",
       "title": "Chebakia de Sésamo y Miel",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Chebakia de Sésamo y Miel",
@@ -35973,7 +35973,7 @@
       "id": "moroccan/couscous_sept_legumes",
       "title": "Couscous Real aux Sept Légumes",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Couscous Real aux Sept Légumes",
@@ -36067,7 +36067,7 @@
       "id": "moroccan/ghriba_almond",
       "title": "Ghriba de Almendra y Sésamo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Ghriba de Almendra y Sésamo",
@@ -36157,7 +36157,7 @@
       "id": "moroccan/harira_marroqui",
       "title": "Sopa Harira Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Sopa Harira Tradicional",
@@ -36249,7 +36249,7 @@
       "id": "moroccan/kefta_tagine_con_huevos",
       "title": "Tajine de Kefta con Tomate y Huevos",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Tajine de Kefta con Tomate y Huevos",
@@ -36339,7 +36339,7 @@
       "id": "moroccan/mechoui_de_cordero",
       "title": "Mechoui de Cordero Asado",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Mechoui de Cordero Asado",
@@ -36427,7 +36427,7 @@
       "id": "moroccan/msemmen_pan",
       "title": "Msemmen (Pan Hojaldrado Marroquí)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Msemmen (Pan Hojaldrado Marroquí)",
@@ -36515,7 +36515,7 @@
       "id": "moroccan/pastilla_de_pollo",
       "title": "Pastilla (Bastilla) de Pollo y Almendras",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Pastilla (Bastilla) de Pollo y Almendras",
@@ -36605,7 +36605,7 @@
       "id": "moroccan/rfissa_de_pollo",
       "title": "Rfissa de Pollo con Lentejas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Rfissa de Pollo con Lentejas",
@@ -36695,7 +36695,7 @@
       "id": "moroccan/seffa_medfouna",
       "title": "Seffa Medfouna con Pollo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Seffa Medfouna con Pollo",
@@ -36785,7 +36785,7 @@
       "id": "moroccan/sellou_marroqui",
       "title": "Sellou (Sfouf) Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Sellou (Sfouf) Tradicional",
@@ -36877,7 +36877,7 @@
       "id": "moroccan/tajine_de_cordero_con_ciruelas",
       "title": "Tajine de Cordero con Ciruelas y Almendras",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Tajine de Cordero con Ciruelas y Almendras",
@@ -36969,7 +36969,7 @@
       "id": "moroccan/tajine_de_pescado_chermoula",
       "title": "Tajine de Pescado con Chermoula",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Tajine de Pescado con Chermoula",
@@ -37057,7 +37057,7 @@
       "id": "moroccan/tajine_de_pollo_con_limon",
       "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
@@ -37147,7 +37147,7 @@
       "id": "moroccan/tajine_de_ternera_con_membrillo",
       "title": "Tajine de Ternera con Membrillo Caramelizado",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Tajine de Ternera con Membrillo Caramelizado",
@@ -37237,7 +37237,7 @@
       "id": "moroccan/taktouka_de_pimientos",
       "title": "Taktouka de Pimientos Asados",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Taktouka de Pimientos Asados",
@@ -37327,7 +37327,7 @@
       "id": "moroccan/te_de_menta_marroqui",
       "title": "Té Verde Marroquí con Menta Fresca",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Té Verde Marroquí con Menta Fresca",
@@ -37415,7 +37415,7 @@
       "id": "moroccan/zaalouk_de_berenjena",
       "title": "Zaalouk de Berenjena y Tomate",
       "language": "spanish",
-      "country": "unknown",
+      "country": "morocco",
       "hasMetadata": true,
       "metadata": {
         "title": "Zaalouk de Berenjena y Tomate",
@@ -38911,7 +38911,7 @@
       "id": "puerto-rican/alcapurrias",
       "title": "Alcapurrias de Masa Puertorriqueñas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Alcapurrias de Masa Puertorriqueñas",
@@ -39010,7 +39010,7 @@
       "id": "puerto-rican/arroz_con_gandules",
       "title": "Arroz con Gandules Puertorriqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Arroz con Gandules Puertorriqueño",
@@ -39107,7 +39107,7 @@
       "id": "puerto-rican/asopao_de_pollo",
       "title": "Asopao de Pollo Puertorriqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Asopao de Pollo Puertorriqueño",
@@ -39211,7 +39211,7 @@
       "id": "puerto-rican/coquito",
       "title": "Coquito Puertorriqueño Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Coquito Puertorriqueño Tradicional",
@@ -39315,7 +39315,7 @@
       "id": "puerto-rican/mofongo_puertorriqueno",
       "title": "Mofongo Puertorriqueño de Camarones",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Mofongo Puertorriqueño de Camarones",
@@ -39414,7 +39414,7 @@
       "id": "puerto-rican/pasteles_puertorriquenos",
       "title": "Pasteles Puertorriqueños de Masa",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pasteles Puertorriqueños de Masa",
@@ -39518,7 +39518,7 @@
       "id": "puerto-rican/pernil_asado",
       "title": "Pernil Asado Puertorriqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pernil Asado Puertorriqueño",
@@ -39619,7 +39619,7 @@
       "id": "puerto-rican/pinchos_de_pollo",
       "title": "Pinchos de Pollo Puertorriqueños",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Pinchos de Pollo Puertorriqueños",
@@ -39719,7 +39719,7 @@
       "id": "puerto-rican/tembleque",
       "title": "Tembleque de Coco Puertorriqueño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Tembleque de Coco Puertorriqueño",
@@ -39824,7 +39824,7 @@
       "id": "puerto-rican/trifongo",
       "title": "Trifongo Puertorriqueño de Chicharrón",
       "language": "spanish",
-      "country": "unknown",
+      "country": "puerto-rico",
       "hasMetadata": true,
       "metadata": {
         "title": "Trifongo Puertorriqueño de Chicharrón",
@@ -39927,7 +39927,7 @@
       "id": "spanish/bacalao_al_pil_pil",
       "title": "Bacalao al Pil-Pil",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Bacalao al Pil-Pil",
@@ -40015,7 +40015,7 @@
       "id": "spanish/calamares_en_su_tinta",
       "title": "Calamares en su Tinta",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "aliases": {
@@ -40111,7 +40111,7 @@
       "id": "spanish/churros_con_chocolate",
       "title": "Churros con Chocolate",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Churros con Chocolate",
@@ -40201,7 +40201,7 @@
       "id": "spanish/cocido_madrileno",
       "title": "Cocido Madrileño",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Cocido Madrileño",
@@ -40295,7 +40295,7 @@
       "id": "spanish/crema_catalana",
       "title": "Crema Catalana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Crema Catalana",
@@ -40387,7 +40387,7 @@
       "id": "spanish/croquetas_de_jamon",
       "title": "Croquetas de Jamón Ibérico",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Croquetas de Jamón Ibérico",
@@ -40479,7 +40479,7 @@
       "id": "spanish/empanada_gallega",
       "title": "Empanada Gallega de Atún",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Empanada Gallega de Atún",
@@ -40569,7 +40569,7 @@
       "id": "spanish/fabada_asturiana",
       "title": "Fabada Asturiana",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Fabada Asturiana",
@@ -40657,7 +40657,7 @@
       "id": "spanish/gambas_al_ajillo",
       "title": "Gambas al Ajillo",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Gambas al Ajillo",
@@ -40747,7 +40747,7 @@
       "id": "spanish/gazpacho_andaluz",
       "title": "Gazpacho Andaluz",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Gazpacho Andaluz",
@@ -40839,7 +40839,7 @@
       "id": "spanish/jamon_iberico_tabla",
       "title": "Jamón Ibérico de Bellota",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Jamón Ibérico de Bellota",
@@ -40921,7 +40921,7 @@
       "id": "spanish/leche_frita",
       "title": "Leche Frita Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Leche Frita Tradicional",
@@ -41011,7 +41011,7 @@
       "id": "spanish/paella_valenciana",
       "title": "Paella Valenciana Tradicional",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Paella Valenciana Tradicional",
@@ -41103,7 +41103,7 @@
       "id": "spanish/patatas_bravas",
       "title": "Patatas Bravas",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Patatas Bravas",
@@ -41191,7 +41191,7 @@
       "id": "spanish/pimientos_del_padron",
       "title": "Pimientos del Padrón",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Pimientos del Padrón",
@@ -41277,7 +41277,7 @@
       "id": "spanish/pulpo_a_la_gallega",
       "title": "Pulpo a la Gallega (Polbo á Feira)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Pulpo a la Gallega (Polbo á Feira)",
@@ -41367,7 +41367,7 @@
       "id": "spanish/rabo_de_toro",
       "title": "Rabo de Toro Estofado",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Rabo de Toro Estofado",
@@ -41459,7 +41459,7 @@
       "id": "spanish/salmorejo_cordobes",
       "title": "Salmorejo Cordobés",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Salmorejo Cordobés",
@@ -41551,7 +41551,7 @@
       "id": "spanish/tarta_de_santiago",
       "title": "Tarta de Santiago",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Tarta de Santiago",
@@ -41643,7 +41643,7 @@
       "id": "spanish/tortilla_de_patatas",
       "title": "Tortilla de Patatas Española",
       "language": "spanish",
-      "country": "unknown",
+      "country": "spain",
       "hasMetadata": true,
       "metadata": {
         "title": "Tortilla de Patatas Española",
@@ -41733,7 +41733,7 @@
       "id": "thai/boat_noodles",
       "title": "Kuay Teow Reua (Boat Noodles)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Kuay Teow Reua (Boat Noodles)",
@@ -41823,7 +41823,7 @@
       "id": "thai/curry_rojo_pato",
       "title": "Gaeng Phet Ped Yang",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Gaeng Phet Ped Yang",
@@ -41915,7 +41915,7 @@
       "id": "thai/gai_pad_med_mamuang",
       "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
@@ -42005,7 +42005,7 @@
       "id": "thai/green_curry_chicken",
       "title": "Gaeng Keow Wan (Curry Verde)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Gaeng Keow Wan (Curry Verde)",
@@ -42097,7 +42097,7 @@
       "id": "thai/khao_soi_gai",
       "title": "Khao Soi Gai",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Khao Soi Gai",
@@ -42185,7 +42185,7 @@
       "id": "thai/larb_gai",
       "title": "Larb Gai (Ensalada de Pollo)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Larb Gai (Ensalada de Pollo)",
@@ -42277,7 +42277,7 @@
       "id": "thai/mango_sticky_rice",
       "title": "Khao Niew Mamuang (Mango Sticky Rice)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Khao Niew Mamuang (Mango Sticky Rice)",
@@ -42367,7 +42367,7 @@
       "id": "thai/massaman_curry",
       "title": "Massaman Curry de Res",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Massaman Curry de Res",
@@ -42459,7 +42459,7 @@
       "id": "thai/pad_krapow_moo",
       "title": "Pad Krapow Moo (Cerdo con Albahaca)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Pad Krapow Moo (Cerdo con Albahaca)",
@@ -42551,7 +42551,7 @@
       "id": "thai/pad_see_ew",
       "title": "Pad See Ew",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Pad See Ew",
@@ -42641,7 +42641,7 @@
       "id": "thai/pad_thai_kung",
       "title": "Pad Thai Kung (con Camarones)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Pad Thai Kung (con Camarones)",
@@ -42733,7 +42733,7 @@
       "id": "thai/panang_curry",
       "title": "Panang Curry",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Panang Curry",
@@ -42823,7 +42823,7 @@
       "id": "thai/satay_gai",
       "title": "Satay Gai con Salsa de Cacahuete",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Satay Gai con Salsa de Cacahuete",
@@ -42911,7 +42911,7 @@
       "id": "thai/som_tum_papaya",
       "title": "Som Tum (Ensalada de Papaya)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Som Tum (Ensalada de Papaya)",
@@ -43005,7 +43005,7 @@
       "id": "thai/thai_fried_rice",
       "title": "Khao Pad Kung",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Khao Pad Kung",
@@ -43097,7 +43097,7 @@
       "id": "thai/thai_spring_rolls",
       "title": "Por Pia Tod (Rollitos Tailandeses)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Por Pia Tod (Rollitos Tailandeses)",
@@ -43187,7 +43187,7 @@
       "id": "thai/tod_mun_pla",
       "title": "Tod Mun Pla (Pasteles de Pescado)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Tod Mun Pla (Pasteles de Pescado)",
@@ -43275,7 +43275,7 @@
       "id": "thai/tom_kha_gai",
       "title": "Tom Kha Gai",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Tom Kha Gai",
@@ -43367,7 +43367,7 @@
       "id": "thai/tom_yum_goong",
       "title": "Tom Yum Goong",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Tom Yum Goong",
@@ -43459,7 +43459,7 @@
       "id": "thai/yam_nua",
       "title": "Yam Nua (Ensalada de Res Picante)",
       "language": "spanish",
-      "country": "unknown",
+      "country": "thailand",
       "hasMetadata": true,
       "metadata": {
         "title": "Yam Nua (Ensalada de Res Picante)",

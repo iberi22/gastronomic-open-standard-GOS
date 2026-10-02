@@ -1,0 +1,1825 @@
+{
+  "recipes": [
+    {
+      "id": "thai/boat_noodles",
+      "title": "Kuay Teow Reua (Boat Noodles)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Kuay Teow Reua (Boat Noodles)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos de arroz",
+          "Carne de res o cerdo",
+          "Caldo especiado oscuro",
+          "Brotes de soja",
+          "Albahaca thai"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Kuay Teow Reua (Boat Noodles)"
+          ],
+          "presentation": "Kuay Teow Reua (Boat Noodles) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Kuay Teow Reua (Boat Noodles) tradicional"
+          }
+        ],
+        "description": "Kuay Teow Reua (Boat Noodles) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos de arroz",
+        "Carne de res o cerdo",
+        "Caldo especiado oscuro",
+        "Brotes de soja",
+        "Albahaca thai"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/boat_noodles.md"
+    },
+    {
+      "id": "thai/curry_rojo_pato",
+      "title": "Gaeng Phet Ped Yang",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gaeng Phet Ped Yang",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pato asado",
+          "Pasta de curry rojo",
+          "Leche de coco",
+          "Piña",
+          "Tomates cherry",
+          "Albahaca thai"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gaeng Phet Ped Yang"
+          ],
+          "presentation": "Gaeng Phet Ped Yang presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gaeng Phet Ped Yang tradicional"
+          }
+        ],
+        "description": "Gaeng Phet Ped Yang es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pato asado",
+        "Pasta de curry rojo",
+        "Leche de coco",
+        "Piña",
+        "Tomates cherry",
+        "Albahaca thai"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/curry_rojo_pato.md"
+    },
+    {
+      "id": "thai/gai_pad_med_mamuang",
+      "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo en dados",
+          "Anacardos tostados",
+          "Pimientos",
+          "Salsa de ostras",
+          "Chiles secos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gai Pad Med Mamuang (Pollo con Anacardos)"
+          ],
+          "presentation": "Gai Pad Med Mamuang (Pollo con Anacardos) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gai Pad Med Mamuang (Pollo con Anacardos) tradicional"
+          }
+        ],
+        "description": "Gai Pad Med Mamuang (Pollo con Anacardos) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo en dados",
+        "Anacardos tostados",
+        "Pimientos",
+        "Salsa de ostras",
+        "Chiles secos"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/gai_pad_med_mamuang.md"
+    },
+    {
+      "id": "thai/green_curry_chicken",
+      "title": "Gaeng Keow Wan (Curry Verde)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gaeng Keow Wan (Curry Verde)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Pasta de curry verde",
+          "Leche de coco",
+          "Berenjena thai",
+          "Hojas de lima kaffir",
+          "Albahaca"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gaeng Keow Wan (Curry Verde)"
+          ],
+          "presentation": "Gaeng Keow Wan (Curry Verde) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gaeng Keow Wan (Curry Verde) tradicional"
+          }
+        ],
+        "description": "Gaeng Keow Wan (Curry Verde) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Pasta de curry verde",
+        "Leche de coco",
+        "Berenjena thai",
+        "Hojas de lima kaffir",
+        "Albahaca"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/green_curry_chicken.md"
+    },
+    {
+      "id": "thai/khao_soi_gai",
+      "title": "Khao Soi Gai",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Khao Soi Gai",
+        "region": "Chiang Mai",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos de huevo",
+          "Muslo de pollo",
+          "Caldo de curry amarillo y leche de coco",
+          "Fideos crujientes fritos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Khao Soi Gai"
+          ],
+          "presentation": "Khao Soi Gai presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Khao Soi Gai tradicional"
+          }
+        ],
+        "description": "Khao Soi Gai es uno de los platos más emblemáticos de la gastronomía de Chiang Mai, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos de huevo",
+        "Muslo de pollo",
+        "Caldo de curry amarillo y leche de coco",
+        "Fideos crujientes fritos"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/khao_soi_gai.md"
+    },
+    {
+      "id": "thai/larb_gai",
+      "title": "Larb Gai (Ensalada de Pollo)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Larb Gai (Ensalada de Pollo)",
+        "region": "Isan",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo picado",
+          "Zumo de lima",
+          "Salsa de pescado",
+          "Chiles secos",
+          "Menta",
+          "Pollo de arroz tostado (khao khua)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Larb Gai (Ensalada de Pollo)"
+          ],
+          "presentation": "Larb Gai (Ensalada de Pollo) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Larb Gai (Ensalada de Pollo) tradicional"
+          }
+        ],
+        "description": "Larb Gai (Ensalada de Pollo) es uno de los platos más emblemáticos de la gastronomía de Isan, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo picado",
+        "Zumo de lima",
+        "Salsa de pescado",
+        "Chiles secos",
+        "Menta",
+        "Pollo de arroz tostado (khao khua)"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/larb_gai.md"
+    },
+    {
+      "id": "thai/mango_sticky_rice",
+      "title": "Khao Niew Mamuang (Mango Sticky Rice)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Khao Niew Mamuang (Mango Sticky Rice)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz glutinoso",
+          "Mango maduro dulce",
+          "Leche de coco",
+          "Azúcar",
+          "Semillas de sésamo o judías sésamo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Khao Niew Mamuang (Mango Sticky Rice)"
+          ],
+          "presentation": "Khao Niew Mamuang (Mango Sticky Rice) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Khao Niew Mamuang (Mango Sticky Rice) tradicional"
+          }
+        ],
+        "description": "Khao Niew Mamuang (Mango Sticky Rice) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz glutinoso",
+        "Mango maduro dulce",
+        "Leche de coco",
+        "Azúcar",
+        "Semillas de sésamo o judías sésamo"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/mango_sticky_rice.md"
+    },
+    {
+      "id": "thai/massaman_curry",
+      "title": "Massaman Curry de Res",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Massaman Curry de Res",
+        "region": "Sur de Tailandia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res",
+          "Pasta de curry massaman",
+          "Leche de coco",
+          "Patatas",
+          "Cacahuetes",
+          "Cardamomo y canela"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Massaman Curry de Res"
+          ],
+          "presentation": "Massaman Curry de Res presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Massaman Curry de Res tradicional"
+          }
+        ],
+        "description": "Massaman Curry de Res es uno de los platos más emblemáticos de la gastronomía de Sur de Tailandia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res",
+        "Pasta de curry massaman",
+        "Leche de coco",
+        "Patatas",
+        "Cacahuetes",
+        "Cardamomo y canela"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/massaman_curry.md"
+    },
+    {
+      "id": "thai/pad_krapow_moo",
+      "title": "Pad Krapow Moo (Cerdo con Albahaca)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pad Krapow Moo (Cerdo con Albahaca)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Cerdo picado",
+          "Albahaca sagrada thai (krapow)",
+          "Ajo",
+          "Chiles thai",
+          "Salsa de soja",
+          "Huevo frito"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pad Krapow Moo (Cerdo con Albahaca)"
+          ],
+          "presentation": "Pad Krapow Moo (Cerdo con Albahaca) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pad Krapow Moo (Cerdo con Albahaca) tradicional"
+          }
+        ],
+        "description": "Pad Krapow Moo (Cerdo con Albahaca) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Cerdo picado",
+        "Albahaca sagrada thai (krapow)",
+        "Ajo",
+        "Chiles thai",
+        "Salsa de soja",
+        "Huevo frito"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/pad_krapow_moo.md"
+    },
+    {
+      "id": "thai/pad_see_ew",
+      "title": "Pad See Ew",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pad See Ew",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos de arroz anchos",
+          "Cerdo o pollo",
+          "Brócoli chino (gai lan)",
+          "Salsa de soja oscura",
+          "Huevo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pad See Ew"
+          ],
+          "presentation": "Pad See Ew presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pad See Ew tradicional"
+          }
+        ],
+        "description": "Pad See Ew es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos de arroz anchos",
+        "Cerdo o pollo",
+        "Brócoli chino (gai lan)",
+        "Salsa de soja oscura",
+        "Huevo"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/pad_see_ew.md"
+    },
+    {
+      "id": "thai/pad_thai_kung",
+      "title": "Pad Thai Kung (con Camarones)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pad Thai Kung (con Camarones)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Fideos de arroz",
+          "Camarones",
+          "Tofu",
+          "Brotes de soja",
+          "Pasta de tamarindo",
+          "Cacahuetes molidos"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pad Thai Kung (con Camarones)"
+          ],
+          "presentation": "Pad Thai Kung (con Camarones) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pad Thai Kung (con Camarones) tradicional"
+          }
+        ],
+        "description": "Pad Thai Kung (con Camarones) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Fideos de arroz",
+        "Camarones",
+        "Tofu",
+        "Brotes de soja",
+        "Pasta de tamarindo",
+        "Cacahuetes molidos"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/pad_thai_kung.md"
+    },
+    {
+      "id": "thai/panang_curry",
+      "title": "Panang Curry",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Panang Curry",
+        "region": "Central Thailand",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res o pollo",
+          "Pasta de curry panang",
+          "Crema de coco",
+          "Hojas de lima kaffir",
+          "Cacahuete"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Panang Curry"
+          ],
+          "presentation": "Panang Curry presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Panang Curry tradicional"
+          }
+        ],
+        "description": "Panang Curry es uno de los platos más emblemáticos de la gastronomía de Central Thailand, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res o pollo",
+        "Pasta de curry panang",
+        "Crema de coco",
+        "Hojas de lima kaffir",
+        "Cacahuete"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/panang_curry.md"
+    },
+    {
+      "id": "thai/satay_gai",
+      "title": "Satay Gai con Salsa de Cacahuete",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Satay Gai con Salsa de Cacahuete",
+        "region": "Sur de Tailandia",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Brochetas de pollo marinado",
+          "Cúrcuma",
+          "Leche de coco",
+          "Salsa de cacahuete picante"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Satay Gai con Salsa de Cacahuete"
+          ],
+          "presentation": "Satay Gai con Salsa de Cacahuete presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Satay Gai con Salsa de Cacahuete tradicional"
+          }
+        ],
+        "description": "Satay Gai con Salsa de Cacahuete es uno de los platos más emblemáticos de la gastronomía de Sur de Tailandia, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Brochetas de pollo marinado",
+        "Cúrcuma",
+        "Leche de coco",
+        "Salsa de cacahuete picante"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/satay_gai.md"
+    },
+    {
+      "id": "thai/som_tum_papaya",
+      "title": "Som Tum (Ensalada de Papaya)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Som Tum (Ensalada de Papaya)",
+        "region": "Isan",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Papaya verde rallada",
+          "Chiles",
+          "Ajo",
+          "Tomates cherry",
+          "Zumo de lima",
+          "Salsa de pescado",
+          "Cacahuetes"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Som Tum (Ensalada de Papaya)"
+          ],
+          "presentation": "Som Tum (Ensalada de Papaya) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Som Tum (Ensalada de Papaya) tradicional"
+          }
+        ],
+        "description": "Som Tum (Ensalada de Papaya) es uno de los platos más emblemáticos de la gastronomía de Isan, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Papaya verde rallada",
+        "Chiles",
+        "Ajo",
+        "Tomates cherry",
+        "Zumo de lima",
+        "Salsa de pescado",
+        "Cacahuetes"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/som_tum_papaya.md"
+    },
+    {
+      "id": "thai/thai_fried_rice",
+      "title": "Khao Pad Kung",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Khao Pad Kung",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Arroz Jasmine cocido",
+          "Camarones o pollo",
+          "Huevo",
+          "Cebolleta",
+          "Salsa de pescado",
+          "Lima"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Khao Pad Kung"
+          ],
+          "presentation": "Khao Pad Kung presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Khao Pad Kung tradicional"
+          }
+        ],
+        "description": "Khao Pad Kung es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Arroz Jasmine cocido",
+        "Camarones o pollo",
+        "Huevo",
+        "Cebolleta",
+        "Salsa de pescado",
+        "Lima"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/thai_fried_rice.md"
+    },
+    {
+      "id": "thai/thai_spring_rolls",
+      "title": "Por Pia Tod (Rollitos Tailandeses)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Por Pia Tod (Rollitos Tailandeses)",
+        "region": "Bangkok",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Obleas para rollito",
+          "Fideos de celofán",
+          "Col rallada",
+          "Zanahoria",
+          "Salsa agridulce"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Por Pia Tod (Rollitos Tailandeses)"
+          ],
+          "presentation": "Por Pia Tod (Rollitos Tailandeses) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Por Pia Tod (Rollitos Tailandeses) tradicional"
+          }
+        ],
+        "description": "Por Pia Tod (Rollitos Tailandeses) es uno de los platos más emblemáticos de la gastronomía de Bangkok, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Obleas para rollito",
+        "Fideos de celofán",
+        "Col rallada",
+        "Zanahoria",
+        "Salsa agridulce"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/thai_spring_rolls.md"
+    },
+    {
+      "id": "thai/tod_mun_pla",
+      "title": "Tod Mun Pla (Pasteles de Pescado)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tod Mun Pla (Pasteles de Pescado)",
+        "region": "Central Thailand",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pasta de pescado",
+          "Pasta de curry rojo",
+          "Judías aladas o verdes",
+          "Hojas de lima kaffir"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tod Mun Pla (Pasteles de Pescado)"
+          ],
+          "presentation": "Tod Mun Pla (Pasteles de Pescado) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tod Mun Pla (Pasteles de Pescado) tradicional"
+          }
+        ],
+        "description": "Tod Mun Pla (Pasteles de Pescado) es uno de los platos más emblemáticos de la gastronomía de Central Thailand, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pasta de pescado",
+        "Pasta de curry rojo",
+        "Judías aladas o verdes",
+        "Hojas de lima kaffir"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/tod_mun_pla.md"
+    },
+    {
+      "id": "thai/tom_kha_gai",
+      "title": "Tom Kha Gai",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tom Kha Gai",
+        "region": "Central Thailand",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Leche de coco",
+          "Galanga",
+          "Hierbaluisa (lemongrass)",
+          "Hojas de lima kaffir",
+          "Champiñones"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tom Kha Gai"
+          ],
+          "presentation": "Tom Kha Gai presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tom Kha Gai tradicional"
+          }
+        ],
+        "description": "Tom Kha Gai es uno de los platos más emblemáticos de la gastronomía de Central Thailand, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Leche de coco",
+        "Galanga",
+        "Hierbaluisa (lemongrass)",
+        "Hojas de lima kaffir",
+        "Champiñones"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/tom_kha_gai.md"
+    },
+    {
+      "id": "thai/tom_yum_goong",
+      "title": "Tom Yum Goong",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tom Yum Goong",
+        "region": "Central Thailand",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Camarones",
+          "Lemongrass",
+          "Galanga",
+          "Hojas de lima kaffir",
+          "Chile thai",
+          "Zumo de lima"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tom Yum Goong"
+          ],
+          "presentation": "Tom Yum Goong presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tom Yum Goong tradicional"
+          }
+        ],
+        "description": "Tom Yum Goong es uno de los platos más emblemáticos de la gastronomía de Central Thailand, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Camarones",
+        "Lemongrass",
+        "Galanga",
+        "Hojas de lima kaffir",
+        "Chile thai",
+        "Zumo de lima"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/tom_yum_goong.md"
+    },
+    {
+      "id": "thai/yam_nua",
+      "title": "Yam Nua (Ensalada de Res Picante)",
+      "language": "spanish",
+      "country": "thailand",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Yam Nua (Ensalada de Res Picante)",
+        "region": "Central Thailand",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Thai",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Tiras de ternera a la parrilla",
+          "Pepino",
+          "Tomate",
+          "Cebolla roja",
+          "Menta",
+          "Cilantro",
+          "Aliño de lima y chile"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Yam Nua (Ensalada de Res Picante)"
+          ],
+          "presentation": "Yam Nua (Ensalada de Res Picante) presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Yam Nua (Ensalada de Res Picante) tradicional"
+          }
+        ],
+        "description": "Yam Nua (Ensalada de Res Picante) es uno de los platos más emblemáticos de la gastronomía de Central Thailand, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Tiras de ternera a la parrilla",
+        "Pepino",
+        "Tomate",
+        "Cebolla roja",
+        "Menta",
+        "Cilantro",
+        "Aliño de lima y chile"
+      ],
+      "tags": [
+        "Thai",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/thai/yam_nua.md"
+    }
+  ],
+  "count": 20
+}

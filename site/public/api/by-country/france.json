@@ -1,0 +1,1789 @@
+{
+  "recipes": [
+    {
+      "id": "french/boeuf_bourguignon",
+      "title": "Boeuf Bourguignon",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Boeuf Bourguignon",
+        "region": "Borgoña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res",
+          "Vino tinto",
+          "Champiñones",
+          "Bacon",
+          "Zanahoria"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Boeuf Bourguignon"
+          ],
+          "presentation": "Boeuf Bourguignon presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Boeuf Bourguignon tradicional"
+          }
+        ],
+        "description": "Boeuf Bourguignon es uno de los platos más emblemáticos de la gastronomía de Borgoña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res",
+        "Vino tinto",
+        "Champiñones",
+        "Bacon",
+        "Zanahoria"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/boeuf_bourguignon.md"
+    },
+    {
+      "id": "french/boeuf_en_daube",
+      "title": "Daube Provençale",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Daube Provençale",
+        "region": "Provenza",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res",
+          "Vino tinto",
+          "Ajo",
+          "Hierbas de Provenza",
+          "Cebolla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Daube Provençale"
+          ],
+          "presentation": "Daube Provençale presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Daube Provençale tradicional"
+          }
+        ],
+        "description": "Daube Provençale es uno de los platos más emblemáticos de la gastronomía de Provenza, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res",
+        "Vino tinto",
+        "Ajo",
+        "Hierbas de Provenza",
+        "Cebolla"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/boeuf_en_daube.md"
+    },
+    {
+      "id": "french/bouillabaisse",
+      "title": "Bouillabaisse de Marsella",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Bouillabaisse de Marsella",
+        "region": "Marsella",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pescado variado",
+          "Mariscos",
+          "Azafrán",
+          "Hinojo",
+          "Tomate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Bouillabaisse de Marsella"
+          ],
+          "presentation": "Bouillabaisse de Marsella presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Bouillabaisse de Marsella tradicional"
+          }
+        ],
+        "description": "Bouillabaisse de Marsella es uno de los platos más emblemáticos de la gastronomía de Marsella, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pescado variado",
+        "Mariscos",
+        "Azafrán",
+        "Hinojo",
+        "Tomate"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/bouillabaisse.md"
+    },
+    {
+      "id": "french/cassoulet_de_castelnaudary",
+      "title": "Cassoulet de Castelnaudary",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cassoulet de Castelnaudary",
+        "region": "Languedoc",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Alubias blancas",
+          "Confit de pato",
+          "Salchicha",
+          "Tocino"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Cassoulet de Castelnaudary"
+          ],
+          "presentation": "Cassoulet de Castelnaudary presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cassoulet de Castelnaudary tradicional"
+          }
+        ],
+        "description": "Cassoulet de Castelnaudary es uno de los platos más emblemáticos de la gastronomía de Languedoc, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Alubias blancas",
+        "Confit de pato",
+        "Salchicha",
+        "Tocino"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/cassoulet_de_castelnaudary.md"
+    },
+    {
+      "id": "french/coq_au_vin",
+      "title": "Coq au Vin",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Coq au Vin",
+        "region": "Borgoña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pollo",
+          "Vino tinto",
+          "Champiñones",
+          "Bacon",
+          "Ajo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Coq au Vin"
+          ],
+          "presentation": "Coq au Vin presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Coq au Vin tradicional"
+          }
+        ],
+        "description": "Coq au Vin es uno de los platos más emblemáticos de la gastronomía de Borgoña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo",
+        "Vino tinto",
+        "Champiñones",
+        "Bacon",
+        "Ajo"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/coq_au_vin.md"
+    },
+    {
+      "id": "french/creme_brulee",
+      "title": "Crème Brûlée",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Crème Brûlée",
+        "region": "Francia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Yemas de huevo",
+          "Crema de leche",
+          "Azúcar",
+          "Vainilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Crème Brûlée"
+          ],
+          "presentation": "Crème Brûlée presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Crème Brûlée tradicional"
+          }
+        ],
+        "description": "Crème Brûlée es uno de los platos más emblemáticos de la gastronomía de Francia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Yemas de huevo",
+        "Crema de leche",
+        "Azúcar",
+        "Vainilla"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/creme_brulee.md"
+    },
+    {
+      "id": "french/crepes_suzette",
+      "title": "Crêpes Suzette",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Crêpes Suzette",
+        "region": "Costa Azul",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa de crepe",
+          "Mantequilla",
+          "Zumo de naranja",
+          "Licor Grand Marnier"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Crêpes Suzette"
+          ],
+          "presentation": "Crêpes Suzette presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Crêpes Suzette tradicional"
+          }
+        ],
+        "description": "Crêpes Suzette es uno de los platos más emblemáticos de la gastronomía de Costa Azul, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de crepe",
+        "Mantequilla",
+        "Zumo de naranja",
+        "Licor Grand Marnier"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/crepes_suzette.md"
+    },
+    {
+      "id": "french/croque_monsieur",
+      "title": "Croque Monsieur",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Croque Monsieur",
+        "region": "París",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Pan de molde",
+          "Jamón cocido",
+          "Queso Gruyère",
+          "Salsa bechamel"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Croque Monsieur"
+          ],
+          "presentation": "Croque Monsieur presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Croque Monsieur tradicional"
+          }
+        ],
+        "description": "Croque Monsieur es uno de los platos más emblemáticos de la gastronomía de París, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Pan de molde",
+        "Jamón cocido",
+        "Queso Gruyère",
+        "Salsa bechamel"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/croque_monsieur.md"
+    },
+    {
+      "id": "french/duck_confit",
+      "title": "Confit de Canard",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Confit de Canard",
+        "region": "Gascuña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Muslos de pato",
+          "Grasa de pato",
+          "Ajo",
+          "Tomillo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Confit de Canard"
+          ],
+          "presentation": "Confit de Canard presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Confit de Canard tradicional"
+          }
+        ],
+        "description": "Confit de Canard es uno de los platos más emblemáticos de la gastronomía de Gascuña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Muslos de pato",
+        "Grasa de pato",
+        "Ajo",
+        "Tomillo"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/duck_confit.md"
+    },
+    {
+      "id": "french/escargots_de_bourgogne",
+      "title": "Escargots de Bourgogne",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Escargots de Bourgogne",
+        "region": "Borgoña",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Caracoles",
+          "Mantequilla",
+          "Ajo",
+          "Perejil"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Escargots de Bourgogne"
+          ],
+          "presentation": "Escargots de Bourgogne presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Escargots de Bourgogne tradicional"
+          }
+        ],
+        "description": "Escargots de Bourgogne es uno de los platos más emblemáticos de la gastronomía de Borgoña, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Caracoles",
+        "Mantequilla",
+        "Ajo",
+        "Perejil"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/escargots_de_bourgogne.md"
+    },
+    {
+      "id": "french/gratin_dauphinois",
+      "title": "Gratin Dauphinois",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Gratin Dauphinois",
+        "region": "Delfinado",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Patatas",
+          "Crema de leche",
+          "Ajo",
+          "Nuez moscada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Gratin Dauphinois"
+          ],
+          "presentation": "Gratin Dauphinois presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Gratin Dauphinois tradicional"
+          }
+        ],
+        "description": "Gratin Dauphinois es uno de los platos más emblemáticos de la gastronomía de Delfinado, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Patatas",
+        "Crema de leche",
+        "Ajo",
+        "Nuez moscada"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/gratin_dauphinois.md"
+    },
+    {
+      "id": "french/mousse_au_chocolat",
+      "title": "Mousse au Chocolat",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mousse au Chocolat",
+        "region": "París",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Chocolate negro",
+          "Huevos",
+          "Mantequilla",
+          "Azúcar"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Mousse au Chocolat"
+          ],
+          "presentation": "Mousse au Chocolat presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mousse au Chocolat tradicional"
+          }
+        ],
+        "description": "Mousse au Chocolat es uno de los platos más emblemáticos de la gastronomía de París, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Chocolate negro",
+        "Huevos",
+        "Mantequilla",
+        "Azúcar"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/mousse_au_chocolat.md"
+    },
+    {
+      "id": "french/pot_au_feu",
+      "title": "Pot-au-Feu Tradicional",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pot-au-Feu Tradicional",
+        "region": "Francia Nacional",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Carne de res con hueso",
+          "Zanahorias",
+          "Puerro",
+          "Nabo",
+          "Patata"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Pot-au-Feu Tradicional"
+          ],
+          "presentation": "Pot-au-Feu Tradicional presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pot-au-Feu Tradicional tradicional"
+          }
+        ],
+        "description": "Pot-au-Feu Tradicional es uno de los platos más emblemáticos de la gastronomía de Francia Nacional, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de res con hueso",
+        "Zanahorias",
+        "Puerro",
+        "Nabo",
+        "Patata"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/pot_au_feu.md"
+    },
+    {
+      "id": "french/quiche_lorraine",
+      "title": "Quiche Lorraine",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Quiche Lorraine",
+        "region": "Lorena",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Masa quebrada",
+          "Bacon",
+          "Huevos",
+          "Crema de leche",
+          "Queso"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Quiche Lorraine"
+          ],
+          "presentation": "Quiche Lorraine presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Quiche Lorraine tradicional"
+          }
+        ],
+        "description": "Quiche Lorraine es uno de los platos más emblemáticos de la gastronomía de Lorena, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Masa quebrada",
+        "Bacon",
+        "Huevos",
+        "Crema de leche",
+        "Queso"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/quiche_lorraine.md"
+    },
+    {
+      "id": "french/ratatouille_provencale",
+      "title": "Ratatouille Provençale",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Ratatouille Provençale",
+        "region": "Niza / Provenza",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Berenjena",
+          "Calabacín",
+          "Pimentón",
+          "Tomate",
+          "Aceite de oliva"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Ratatouille Provençale"
+          ],
+          "presentation": "Ratatouille Provençale presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Ratatouille Provençale tradicional"
+          }
+        ],
+        "description": "Ratatouille Provençale es uno de los platos más emblemáticos de la gastronomía de Niza / Provenza, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Berenjena",
+        "Calabacín",
+        "Pimentón",
+        "Tomate",
+        "Aceite de oliva"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/ratatouille_provencale.md"
+    },
+    {
+      "id": "french/salade_nicoise",
+      "title": "Salade Niçoise",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Salade Niçoise",
+        "region": "Niza",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Atún",
+          "Huevos cocidos",
+          "Anchoas",
+          "Aceitunas",
+          "Judías verdes",
+          "Tomate"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Salade Niçoise"
+          ],
+          "presentation": "Salade Niçoise presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Salade Niçoise tradicional"
+          }
+        ],
+        "description": "Salade Niçoise es uno de los platos más emblemáticos de la gastronomía de Niza, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Atún",
+        "Huevos cocidos",
+        "Anchoas",
+        "Aceitunas",
+        "Judías verdes",
+        "Tomate"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/salade_nicoise.md"
+    },
+    {
+      "id": "french/souffle_au_fromage",
+      "title": "Soufflé au Fromage",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Soufflé au Fromage",
+        "region": "París",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Queso Gruyère",
+          "Huevos",
+          "Mantequilla",
+          "Harina",
+          "Leche"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Soufflé au Fromage"
+          ],
+          "presentation": "Soufflé au Fromage presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Soufflé au Fromage tradicional"
+          }
+        ],
+        "description": "Soufflé au Fromage es uno de los platos más emblemáticos de la gastronomía de París, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Queso Gruyère",
+        "Huevos",
+        "Mantequilla",
+        "Harina",
+        "Leche"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/souffle_au_fromage.md"
+    },
+    {
+      "id": "french/soupe_a_l_oignon",
+      "title": "Soupe à l'Oignon Gratinée",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Soupe à l'Oignon Gratinée",
+        "region": "París",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Cebolla",
+          "Caldo de res",
+          "Pan tostado",
+          "Queso Gruyère",
+          "Mantequilla"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Soupe à l'Oignon Gratinée"
+          ],
+          "presentation": "Soupe à l'Oignon Gratinée presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Soupe à l'Oignon Gratinée tradicional"
+          }
+        ],
+        "description": "Soupe à l'Oignon Gratinée es uno de los platos más emblemáticos de la gastronomía de París, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Cebolla",
+        "Caldo de res",
+        "Pan tostado",
+        "Queso Gruyère",
+        "Mantequilla"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/soupe_a_l_oignon.md"
+    },
+    {
+      "id": "french/steak_frites_bernaise",
+      "title": "Steak Frites con Salsa Béarnaise",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Steak Frites con Salsa Béarnaise",
+        "region": "París",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Filete de res",
+          "Patatas",
+          "Mantequilla",
+          "Yemas de huevo",
+          "Estragón"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Steak Frites con Salsa Béarnaise"
+          ],
+          "presentation": "Steak Frites con Salsa Béarnaise presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Steak Frites con Salsa Béarnaise tradicional"
+          }
+        ],
+        "description": "Steak Frites con Salsa Béarnaise es uno de los platos más emblemáticos de la gastronomía de París, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Filete de res",
+        "Patatas",
+        "Mantequilla",
+        "Yemas de huevo",
+        "Estragón"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/steak_frites_bernaise.md"
+    },
+    {
+      "id": "french/tarte_tatin",
+      "title": "Tarte Tatin",
+      "language": "spanish",
+      "country": "france",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Tarte Tatin",
+        "region": "Valle del Loira",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "Gastronomic Open Standard (GOS) Database",
+          "url": "pending",
+          "date_retrieved": "2026-09-03",
+          "notes": "Derived from GOS Database"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "French",
+          "GOS Catalog",
+          "Top 20"
+        ],
+        "main_ingredients": [
+          "Manzanas",
+          "Azúcar",
+          "Mantequilla",
+          "Masa hojaldrada"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Interior tierno"
+          ],
+          "aroma": [
+            "Aroma característico de Tarte Tatin"
+          ],
+          "presentation": "Tarte Tatin presentado de forma vistosa tradicional."
+        },
+        "nutrition": {
+          "calories": 550,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 22,
+            "carbs_g": 45
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Tarte Tatin tradicional"
+          }
+        ],
+        "description": "Tarte Tatin es uno de los platos más emblemáticos de la gastronomía de Valle del Loira, conocido por su equilibrio de sabores e ingredientes de alta calidad."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Manzanas",
+        "Azúcar",
+        "Mantequilla",
+        "Masa hojaldrada"
+      ],
+      "tags": [
+        "French",
+        "GOS Catalog",
+        "Top 20"
+      ],
+      "filePath": "dishes/french/tarte_tatin.md"
+    }
+  ],
+  "count": 20
+}

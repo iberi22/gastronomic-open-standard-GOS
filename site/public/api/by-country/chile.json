@@ -1,0 +1,1029 @@
+{
+  "recipes": [
+    {
+      "id": "chilean/caldillo_de_congrio",
+      "title": "Caldillo de Congrio",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Caldillo de Congrio",
+        "region": "Litoral / Coquimbo / Valparaíso",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopas",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "40 minutos",
+        "servings": 4,
+        "tags": [
+          "Chile",
+          "Pescado",
+          "Sopa",
+          "Neruda",
+          "Litoral"
+        ],
+        "main_ingredients": [
+          "Congrio dorado o negro",
+          "Papas",
+          "Cebolla",
+          "Tomates",
+          "Pimentón",
+          "Vino blanco",
+          "Crema de leche",
+          "Cilantro"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ácido sutil",
+            "Herbal"
+          ],
+          "texture": [
+            "Líquido",
+            "Suave",
+            "Troceado"
+          ],
+          "aroma": [
+            "Pescado fresco",
+            "Vino blanco",
+            "Cebolla sofrita",
+            "Cilantro"
+          ],
+          "presentation": "Se sirve extremadamente caliente en plato hondo de greda, decorado con una rodaja de limón, cilantro fresco espolvoreado y un chorrito de crema de leche fresca sobre el caldo hirviendo."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 32,
+            "fat_g": 18,
+            "carbs_g": 28
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Caldillo de Congrio tradicional servido en pocillo de greda"
+          }
+        ],
+        "description": "El Caldillo de Congrio es un plato marino emblemático de las costas chilenas, inmortalizado por el poeta Pablo Neruda en su famosa oda. Es una sopa rica y densa hecha con congrio (dorado o negro), papas cocidas, verduras sofritas y aromatizado con vino blanco y cilantro."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopas",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "40 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Congrio dorado o negro",
+        "Papas",
+        "Cebolla",
+        "Tomates",
+        "Pimentón",
+        "Vino blanco",
+        "Crema de leche",
+        "Cilantro"
+      ],
+      "tags": [
+        "Chile",
+        "Pescado",
+        "Sopa",
+        "Neruda",
+        "Litoral"
+      ],
+      "filePath": "dishes/chilean/caldillo_de_congrio.md"
+    },
+    {
+      "id": "chilean/cazuela_de_vacuno",
+      "title": "Cazuela de Vacuno",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Cazuela de Vacuno",
+        "region": "Andina / Central",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Sopa",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "1 hora",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Sopa",
+          "Carne",
+          "Invierno",
+          "Reconfortante"
+        ],
+        "main_ingredients": [
+          "Carne de vacuno con hueso",
+          "Papas",
+          "Zapallo amarillo",
+          "Maíz en mazorca",
+          "Zanahoria",
+          "Arroz",
+          "Cilantro fresco"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Herbal"
+          ],
+          "texture": [
+            "Líquido",
+            "Suave",
+            "Troceado"
+          ],
+          "aroma": [
+            "Caldo de carne",
+            "Zapallo cocido",
+            "Cilantro"
+          ],
+          "presentation": "Se sirve en plato hondo de greda bien caliente, colocando en el centro una presa de carne, una papa entera, un trozo de zapallo, una mazorca de maíz y abundante caldo espolvoreado con cilantro fresco."
+        },
+        "nutrition": {
+          "calories": 420,
+          "macros": {
+            "protein_g": 28,
+            "fat_g": 18,
+            "carbs_g": 36
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Cazuela de vacuno chilena clásica servida caliente"
+          }
+        ],
+        "description": "La Cazuela de Vacuno es un caldo reconfortante y nutritivo consumido en todo Chile. Se compone de un sustancioso caldo de carne con hueso cocido junto a papas enteras, trozos grandes de zapallo, mazorcas de maíz, verduras finas y un toque de arroz."
+      },
+      "category": [
+        "Plato fuerte",
+        "Sopa",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "1 hora",
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de vacuno con hueso",
+        "Papas",
+        "Zapallo amarillo",
+        "Maíz en mazorca",
+        "Zanahoria",
+        "Arroz",
+        "Cilantro fresco"
+      ],
+      "tags": [
+        "Chile",
+        "Sopa",
+        "Carne",
+        "Invierno",
+        "Reconfortante"
+      ],
+      "filePath": "dishes/chilean/cazuela_de_vacuno.md"
+    },
+    {
+      "id": "chilean/charquican",
+      "title": "Charquicán Chileno",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Charquicán Chileno",
+        "region": "Central / Sur",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "25 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Chile",
+          "Guiso",
+          "Zapallo",
+          "Papa",
+          "Huevo",
+          "Tradición"
+        ],
+        "main_ingredients": [
+          "Carne de vacuno",
+          "Papas",
+          "Zapallo amarillo",
+          "Maíz en grano",
+          "Arvejas (guisantes)",
+          "Cebolla",
+          "Comino y orégano",
+          "Huevo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Dulce sutil"
+          ],
+          "texture": [
+            "Cremoso",
+            "Pastoso",
+            "Troceado"
+          ],
+          "aroma": [
+            "Carne sofrita",
+            "Orégano",
+            "Zapallo"
+          ],
+          "presentation": "Se sirve caliente en plato hondo de arcilla, coronado con un huevo frito con la yema líquida y espolvoreado con perejil fresco o cebollín picado."
+        },
+        "nutrition": {
+          "calories": 390,
+          "macros": {
+            "protein_g": 22,
+            "fat_g": 14,
+            "carbs_g": 44
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Charquicán chileno servido con un huevo frito encima"
+          }
+        ],
+        "description": "El Charquicán es un guiso tradicional chileno, espeso y colorido, elaborado a base de papas y zapallo amarillo machacados, mezclados con carne de vacuno sofrita, cebolla, condimentos, choclo desgranado y arvejas. Se corona comúnmente con un huevo frito."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "25 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Carne de vacuno",
+        "Papas",
+        "Zapallo amarillo",
+        "Maíz en grano",
+        "Arvejas (guisantes)",
+        "Cebolla",
+        "Comino y orégano",
+        "Huevo"
+      ],
+      "tags": [
+        "Chile",
+        "Guiso",
+        "Zapallo",
+        "Papa",
+        "Huevo",
+        "Tradición"
+      ],
+      "filePath": "dishes/chilean/charquican.md"
+    },
+    {
+      "id": "chilean/chorrillana",
+      "title": "Chorrillana Chilena",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Chorrillana Chilena",
+        "region": "Valparaíso",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Para compartir",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "20 minutos",
+        "cook_time": "30 minutos",
+        "servings": 4,
+        "tags": [
+          "Chile",
+          "Papas Fritas",
+          "Carne",
+          "Compartir",
+          "Bar",
+          "Valparaíso"
+        ],
+        "main_ingredients": [
+          "Papas",
+          "Carne de vacuno (lomo o posta)",
+          "Cebolla",
+          "Huevos",
+          "Aceite vegetal (para freír)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Dulce sutil"
+          ],
+          "texture": [
+            "Crujiente",
+            "Blanda",
+            "Masticable"
+          ],
+          "aroma": [
+            "Papas fritas",
+            "Carne salteada",
+            "Cebolla frita"
+          ],
+          "presentation": "Se sirve típicamente en una gran fuente de metal o plato ovalado gigante al centro de la mesa, con todos los ingredientes apilados en capas abundantes y coronado con huevos fritos o revueltos."
+        },
+        "nutrition": {
+          "calories": 780,
+          "macros": {
+            "protein_g": 38,
+            "fat_g": 42,
+            "carbs_g": 64
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Chorrillana clásica de Valparaíso abundante con papas fritas y carne"
+          }
+        ],
+        "description": "La Chorrillana es un plato chileno abundante originario de la ciudad portuaria de Valparaíso, ideal para compartir entre amigos en bares tradicionales. Consiste en una base generosa de papas fritas crujientes cubiertas con carne de vacuno salteada, cebolla caramelizada y huevos fritos o revueltos."
+      },
+      "category": [
+        "Plato fuerte",
+        "Para compartir",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "20 minutos",
+      "cookTime": "30 minutos",
+      "servings": 4,
+      "mainIngredients": [
+        "Papas",
+        "Carne de vacuno (lomo o posta)",
+        "Cebolla",
+        "Huevos",
+        "Aceite vegetal (para freír)"
+      ],
+      "tags": [
+        "Chile",
+        "Papas Fritas",
+        "Carne",
+        "Compartir",
+        "Bar",
+        "Valparaíso"
+      ],
+      "filePath": "dishes/chilean/chorrillana.md"
+    },
+    {
+      "id": "chilean/empanada_de_pino",
+      "title": "Empanada de Pino Chilena",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Empanada de Pino Chilena",
+        "region": "Valparaíso / Metropolitana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Masa",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "50 minutos",
+        "cook_time": "35 minutos",
+        "servings": 8,
+        "tags": [
+          "Chile",
+          "Empanada",
+          "Pino",
+          "Horno",
+          "Fiestas Patrias"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Manteca de cerdo",
+          "Carne de vacuno",
+          "Cebolla",
+          "Comino molido",
+          "Huevos duros",
+          "Aceitunas negras",
+          "Pasas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente",
+            "Troceado",
+            "Jugoso"
+          ],
+          "aroma": [
+            "Masa horneada",
+            "Comino",
+            "Cebolla guisada"
+          ],
+          "presentation": "Se sirve caliente, recién sacada del horno, envuelta en una servilleta de tela para mantener el calor. Tradicionalmente consumida con la mano."
+        },
+        "nutrition": {
+          "calories": 480,
+          "macros": {
+            "protein_g": 18,
+            "fat_g": 22,
+            "carbs_g": 52
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Empanada de pino chilena dorada al horno"
+          }
+        ],
+        "description": "La Empanada de Pino es la reina de la gastronomía chilena, especialmente popular durante las Fiestas Patrias en septiembre. Consiste en una masa de trigo horneada y rellena de un guiso jugoso de carne de vacuno, cebolla, condimentos, huevo duro, aceituna y pasas."
+      },
+      "category": [
+        "Plato fuerte",
+        "Masa",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "50 minutos",
+      "cookTime": "35 minutos",
+      "servings": 8,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Manteca de cerdo",
+        "Carne de vacuno",
+        "Cebolla",
+        "Comino molido",
+        "Huevos duros",
+        "Aceitunas negras",
+        "Pasas"
+      ],
+      "tags": [
+        "Chile",
+        "Empanada",
+        "Pino",
+        "Horno",
+        "Fiestas Patrias"
+      ],
+      "filePath": "dishes/chilean/empanada_de_pino.md"
+    },
+    {
+      "id": "chilean/humitas",
+      "title": "Humitas Chilenas",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Humitas Chilenas",
+        "region": "Central / Valles Agrícolas",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional",
+          "Maiz"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "40 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Maíz",
+          "Humita",
+          "Verano",
+          "Tradicional"
+        ],
+        "main_ingredients": [
+          "Maíz choclo pastelero",
+          "Manteca de cerdo",
+          "Cebolla",
+          "Albahaca fresca",
+          "Leche entera",
+          "Hojas de maíz (chalas)"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce sutil",
+            "Salado",
+            "Herbal"
+          ],
+          "texture": [
+            "Suave",
+            "Cremosa",
+            "Pastosa"
+          ],
+          "aroma": [
+            "Maíz tierno",
+            "Albahaca",
+            "Manteca caliente"
+          ],
+          "presentation": "Se sirven calientes, envueltas en sus propias chalas (hojas de maíz) amarradas, acompañadas tradicionalmente de una ensalada chilena (tomate picado con cebolla y aceite)."
+        },
+        "nutrition": {
+          "calories": 350,
+          "macros": {
+            "protein_g": 8,
+            "fat_g": 14,
+            "carbs_g": 48
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Humitas chilenas calientes envueltas en chalas de maíz"
+          }
+        ],
+        "description": "Las Humitas son una preparación tradicional chilena de herencia andina, consumida principalmente durante el verano. Consisten en una pasta espesa de maíz choclo fresco molido con albahaca y cebolla frita en manteca, envuelta en hojas tiernas de maíz y hervida en agua con sal."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional",
+        "Maiz"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "40 minutos",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Maíz choclo pastelero",
+        "Manteca de cerdo",
+        "Cebolla",
+        "Albahaca fresca",
+        "Leche entera",
+        "Hojas de maíz (chalas)"
+      ],
+      "tags": [
+        "Chile",
+        "Maíz",
+        "Humita",
+        "Verano",
+        "Tradicional"
+      ],
+      "filePath": "dishes/chilean/humitas.md"
+    },
+    {
+      "id": "chilean/mote_con_huesillos",
+      "title": "Mote con Huesillos",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Mote con Huesillos",
+        "region": "Central / Metropolitana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Postre",
+          "Bebida",
+          "Tradicional"
+        ],
+        "difficulty": "★☆☆☆☆",
+        "prep_time": "10 minutos (más remojo de huesillos)",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Bebida",
+          "Dulce",
+          "Verano",
+          "Mote",
+          "Durazno"
+        ],
+        "main_ingredients": [
+          "Huesillos (duraznos deshidratados)",
+          "Mote de trigo (trigo cocido)",
+          "Chancaca (piloncillo)",
+          "Azúcar granulada",
+          "Canela en rama",
+          "Cáscara de naranja"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Especiado",
+            "Ácido sutil"
+          ],
+          "texture": [
+            "Líquido",
+            "Masticable",
+            "Suave"
+          ],
+          "aroma": [
+            "Caramelo",
+            "Canela",
+            "Durazno cocido"
+          ],
+          "presentation": "Se sirve extremadamente frío en vasos altos de vidrio transparentes, con una cuchara larga para poder comer el mote de trigo y los duraznos enteros al final."
+        },
+        "nutrition": {
+          "calories": 280,
+          "macros": {
+            "protein_g": 3,
+            "fat_g": 0.5,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Mote con huesillos chileno servido frío en vaso"
+          }
+        ],
+        "description": "El Mote con Huesillos es la bebida-postre tradicional de Chile. Consiste en una infusión dulce y fría a base de duraznos deshidratados (huesillos) cocidos en agua con canela, chancaca y azúcar, servido con trigo mote tierno cocido en el fondo del vaso."
+      },
+      "category": [
+        "Postre",
+        "Bebida",
+        "Tradicional"
+      ],
+      "difficulty": "★☆☆☆☆",
+      "prepTime": "10 minutos (más remojo de huesillos)",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Huesillos (duraznos deshidratados)",
+        "Mote de trigo (trigo cocido)",
+        "Chancaca (piloncillo)",
+        "Azúcar granulada",
+        "Canela en rama",
+        "Cáscara de naranja"
+      ],
+      "tags": [
+        "Chile",
+        "Bebida",
+        "Dulce",
+        "Verano",
+        "Mote",
+        "Durazno"
+      ],
+      "filePath": "dishes/chilean/mote_con_huesillos.md"
+    },
+    {
+      "id": "chilean/pastel_de_choclo",
+      "title": "Pastel de Choclo Chileno",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Pastel de Choclo Chileno",
+        "region": "Metropolitana",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "difficulty": "★★★☆☆",
+        "prep_time": "45 minutos",
+        "cook_time": "45 minutos",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Maíz",
+          "Greda",
+          "Pino",
+          "Otoño"
+        ],
+        "main_ingredients": [
+          "Maíz (choclo)",
+          "Carne de vacuno",
+          "Pechuga de pollo",
+          "Cebolla",
+          "Albahaca fresca",
+          "Huevos duros",
+          "Aceitunas negras",
+          "Pasas"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Salado",
+            "Umami"
+          ],
+          "texture": [
+            "Cremoso",
+            "Suave",
+            "Troceado"
+          ],
+          "aroma": [
+            "Maíz tierno",
+            "Albahaca",
+            "Carne asada"
+          ],
+          "presentation": "Se sirve tradicionalmente en pocillos de greda (arcilla) calientes, directo del horno, espolvoreado con una ligera capa de azúcar granulada dorada."
+        },
+        "nutrition": {
+          "calories": 650,
+          "macros": {
+            "protein_g": 35,
+            "fat_g": 28,
+            "carbs_g": 68
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Pastel de Choclo chileno servido en plato de greda tradicional"
+          }
+        ],
+        "description": "El Pastel de Choclo es uno de los platos más emblemáticos de la gastronomía chilena, combinando una base sabrosa de pino de carne con una cubierta dulce y cremosa de maíz tierno y albahaca cocida al horno."
+      },
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
+      "difficulty": "★★★☆☆",
+      "prepTime": "45 minutos",
+      "cookTime": "45 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Maíz (choclo)",
+        "Carne de vacuno",
+        "Pechuga de pollo",
+        "Cebolla",
+        "Albahaca fresca",
+        "Huevos duros",
+        "Aceitunas negras",
+        "Pasas"
+      ],
+      "tags": [
+        "Chile",
+        "Maíz",
+        "Greda",
+        "Pino",
+        "Otoño"
+      ],
+      "filePath": "dishes/chilean/pastel_de_choclo.md"
+    },
+    {
+      "id": "chilean/porotos_con_riendas",
+      "title": "Porotos con Riendas",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Porotos con Riendas",
+        "region": "Central",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Plato fuerte",
+          "Guiso",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "15 minutos (más remojo de porotos)",
+        "cook_time": "1 hora y 15 minutos",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Legumbres",
+          "Pasta",
+          "Chorizo",
+          "Invierno"
+        ],
+        "main_ingredients": [
+          "Porotos (frijoles) blancos",
+          "Tallarines (pasta)",
+          "Zapallo amarillo",
+          "Chorizo o longaniza",
+          "Cebolla",
+          "Comino y orégano"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Umami",
+            "Ahumado"
+          ],
+          "texture": [
+            "Cremoso",
+            "Al dente",
+            "Untuoso"
+          ],
+          "aroma": [
+            "Chorizo frito",
+            "Legumbres cocidas",
+            "Orégano"
+          ],
+          "presentation": "Se sirve caliente en plato hondo de arcilla, coronado con un trozo de chorizo frito crujiente y espolvoreado con color chilena (aceite de ají de color caliente)."
+        },
+        "nutrition": {
+          "calories": 540,
+          "macros": {
+            "protein_g": 24,
+            "fat_g": 19,
+            "carbs_g": 72
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Porotos con riendas chilenos tradicionales con un toque de color"
+          }
+        ],
+        "description": "Los Porotos con Riendas son un plato clásico del invierno chileno. Consiste en un guiso espeso de porotos blancos cocidos con zapallo que se sirve con tallarines (las 'riendas') y se corona con un trozo de chorizo o tocino dorado."
+      },
+      "category": [
+        "Plato fuerte",
+        "Guiso",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "15 minutos (más remojo de porotos)",
+      "cookTime": "1 hora y 15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Porotos (frijoles) blancos",
+        "Tallarines (pasta)",
+        "Zapallo amarillo",
+        "Chorizo o longaniza",
+        "Cebolla",
+        "Comino y orégano"
+      ],
+      "tags": [
+        "Chile",
+        "Legumbres",
+        "Pasta",
+        "Chorizo",
+        "Invierno"
+      ],
+      "filePath": "dishes/chilean/porotos_con_riendas.md"
+    },
+    {
+      "id": "chilean/sopaipillas",
+      "title": "Sopaipillas Chilenas",
+      "language": "spanish",
+      "country": "chile",
+      "hasMetadata": true,
+      "metadata": {
+        "title": "Sopaipillas Chilenas",
+        "region": "Central / Sur",
+        "language": "es",
+        "license": "MIT",
+        "source": {
+          "name": "recetaschilenas.cl",
+          "url": "https://www.recetaschilenas.cl/",
+          "date_retrieved": "2026-09-03"
+        },
+        "categories": [
+          "Acompañamiento",
+          "Pan",
+          "Tradicional"
+        ],
+        "difficulty": "★★☆☆☆",
+        "prep_time": "30 minutos",
+        "cook_time": "15 minutos",
+        "servings": 6,
+        "tags": [
+          "Chile",
+          "Fritura",
+          "Zapallo",
+          "Sopaipilla",
+          "Callejero",
+          "Lluvia"
+        ],
+        "main_ingredients": [
+          "Harina de trigo",
+          "Puré de zapallo amarillo",
+          "Manteca de cerdo",
+          "Aceite de freír",
+          "Levadura seca (opcional)",
+          "Sal"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado sutil",
+            "Dulce natural de calabaza",
+            "Grasoso agradable"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Suave interior",
+            "Masticable"
+          ],
+          "aroma": [
+            "Harina frita",
+            "Zapallo cocido",
+            "Manteca"
+          ],
+          "presentation": "Se sirven calientes, recién fritas, solas (secas) para untar con pebre (salsa de tomate, cebolla, ajo y cilantro picado con ají) o mostaza callejera, o bien pasadas por almíbar de chancaca caliente (sopaipillas pasadas)."
+        },
+        "nutrition": {
+          "calories": 220,
+          "macros": {
+            "protein_g": 4,
+            "fat_g": 10,
+            "carbs_g": 29
+          }
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+            "description": "Sopaipillas chilenas redondas y calientes, recién fritas"
+          }
+        ],
+        "description": "Las Sopaipillas son una de las preparaciones de masas fritas más populares de Chile, consumidas de forma masiva en carritos callejeros y hogares, especialmente en los días lluviosos de invierno. Se elaboran con una masa de harina de trigo enriquecida con puré de zapallo amarillo maduro cocido y manteca, cortada en discos circulares y frita en aceite caliente."
+      },
+      "category": [
+        "Acompañamiento",
+        "Pan",
+        "Tradicional"
+      ],
+      "difficulty": "★★☆☆☆",
+      "prepTime": "30 minutos",
+      "cookTime": "15 minutos",
+      "servings": 6,
+      "mainIngredients": [
+        "Harina de trigo",
+        "Puré de zapallo amarillo",
+        "Manteca de cerdo",
+        "Aceite de freír",
+        "Levadura seca (opcional)",
+        "Sal"
+      ],
+      "tags": [
+        "Chile",
+        "Fritura",
+        "Zapallo",
+        "Sopaipilla",
+        "Callejero",
+        "Lluvia"
+      ],
+      "filePath": "dishes/chilean/sopaipillas.md"
+    }
+  ],
+  "count": 10
+}

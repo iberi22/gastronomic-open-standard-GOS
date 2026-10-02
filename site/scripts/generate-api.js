@@ -19,9 +19,29 @@ const LANGUAGE_PATTERNS = {
 }
 
 // Country/region detection
+// Folder under dishes/ (demonym) -> country slug. Folders not listed here
+// fall back to the folder name itself, never to 'unknown'.
 const COUNTRY_MAPPING = {
+  american: 'united-states',
+  argentinian: 'argentina',
+  bangladeshi: 'bangladesh',
+  brazilian: 'brazil',
+  chilean: 'chile',
+  china: 'china',
   colombian: 'colombia',
+  cuban: 'cuba',
+  dominican: 'dominican-republic',
+  french: 'france',
+  greek: 'greece',
+  indian: 'india',
+  italian: 'italy',
+  japanese: 'japan',
+  mexican: 'mexico',
+  moroccan: 'morocco',
   peruvian: 'peru',
+  'puerto-rican': 'puerto-rico',
+  spanish: 'spain',
+  thai: 'thailand',
 }
 
 /**
@@ -40,8 +60,11 @@ function extractCountry(filePath) {
   const dishesIndex = parts.indexOf('dishes')
   if (dishesIndex === -1) return 'unknown'
 
+  // Only a folder directly containing recipes/subfolders counts, not a file
+  // sitting at the root of dishes/.
+  if (parts.length <= dishesIndex + 2) return 'unknown'
   const category = parts[dishesIndex + 1]
-  return COUNTRY_MAPPING[category] || 'unknown'
+  return COUNTRY_MAPPING[category] || category
 }
 
 /**
@@ -177,11 +200,27 @@ function generateAPI() {
   console.log(`   - With metadata: ${grouped.withMetadata.length}`)
   console.log(`   - Without metadata: ${grouped.withoutMetadata.length}`)
 
-  // Clean and create API directory
-  if (fs.existsSync(apiDir)) {
-    fs.rmSync(apiDir, { recursive: true, force: true })
-  }
+  // Clean only what this script owns. Other generators (catalog, vectors,
+  // ingredients) write into the same directory and must survive a re-run.
   fs.mkdirSync(apiDir, { recursive: true })
+  for (const f of [
+    'index.json',
+    'all.json',
+    'with-metadata.json',
+    'without-metadata.json',
+  ]) {
+    fs.rmSync(path.join(apiDir, f), { force: true })
+  }
+  for (const lang of Object.keys(LANGUAGE_PATTERNS)) {
+    fs.rmSync(path.join(apiDir, lang), { recursive: true, force: true })
+  }
+  const byCountryDir = path.join(apiDir, 'by-country')
+  if (fs.existsSync(byCountryDir)) {
+    for (const f of fs.readdirSync(byCountryDir)) {
+      if (f !== 'catalog.json')
+        fs.rmSync(path.join(byCountryDir, f), { force: true })
+    }
+  }
 
   console.log('\n📝 Generating API endpoints...')
 
