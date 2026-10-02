@@ -14,8 +14,7 @@ health_registry:
   evidence_level: High
   mechanism: NF-kB and COX-2 inhibition
   studies:
-  - doi: 10.1089/jmf.2020.0078
-    source: J Med Food
+  - source: J Med Food
     title: 'Curcumin and inflammation: systematic review'
     year: 2021
 - condition: Alzheimer / Cognitive decline

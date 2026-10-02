@@ -20,7 +20,6 @@ health_registry:
       - title: "Citral anxiolytic effect in rodents"
         source: "Phytomedicine"
         year: 2011
-        doi: "10.1016/j.phymed.2011.02.003"
 ---
 
 ![Citral](/images/substances/citral.jpg)

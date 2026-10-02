@@ -17,7 +17,7 @@ health_registry:
     mechanism: "Membrane disruption of Salmonella enterica (2x gentamicina)"
     evidence_level: "Medium"
     studies:
-      - title: "Dodecenal kills Salmonella: in vitro"
+      - title: "Antibacterial Activity of Coriander Volatile Compounds against Salmonella choleraesuis"
         source: "J Agric Food Chem"
         year: 2004
         doi: "10.1021/jf0354186"

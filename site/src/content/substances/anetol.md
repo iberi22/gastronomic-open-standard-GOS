@@ -14,16 +14,14 @@ health_registry:
   evidence_level: Medium
   mechanism: Carminative, relaxes GI smooth muscle
   studies:
-  - doi: 10.1016/j.jep.2010.03.005
-    source: J Ethnopharmacol
+  - source: J Ethnopharmacol
     title: Anise and functional dyspepsia
     year: 2010
 - condition: Cough / Bronchitis
   evidence_level: Medium
   mechanism: Expectorant via mucus clearance
   studies:
-  - doi: 10.1002/ptr.4990
-    source: Phytother Res
+  - source: Phytother Res
     title: Anethole expectorant review
     year: 2013
 image_attribution: Pixabay — Pimpinella anisum

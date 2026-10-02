@@ -14,8 +14,7 @@ health_registry:
   evidence_level: Medium
   mechanism: Phosphodiesterase inhibition, vasodilation
   studies:
-  - doi: 10.3389/fphar.2017.00460
-    source: Front Pharmacol
+  - source: Front Pharmacol
     title: 'Theobromine and blood pressure: review'
     year: 2017
 image_attribution: Pixabay — Theobroma cacao

@@ -20,7 +20,6 @@ health_registry:
       - title: "D-limonene for GERD: trial"
         source: "Alt Med Rev"
         year: 2007
-        doi: "10.1000/altmed.12.1.0"
         evidence_type: sin identificar
           # Low, no Medium: no hay NI UN ESTUDIO publicable que sostenga
           # GERD con limoneno. Una busqueda amplia en Crossref (limonene +

@@ -14,8 +14,7 @@ health_registry:
   evidence_level: Medium
   mechanism: Membrane permeabilization, ATP depletion
   studies:
-  - doi: 10.3389/fmicb.2014.00136
-    source: Front Microbiol
+  - source: Front Microbiol
     title: Carvacrol antimicrobial mechanisms
     year: 2014
 image_attribution: Pixabay — Origanum vulgare

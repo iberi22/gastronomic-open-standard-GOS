@@ -20,7 +20,6 @@ health_registry:
       - title: "Betaine and fatty liver: review"
         source: "Nutrients"
         year: 2021
-        doi: "10.3390/nu13041280"
 ---
 
 ![Betaína](/images/substances/betaina.jpg)

@@ -20,7 +20,6 @@ health_registry:
       - title: "Linalool anxiolytic via olfaction: review"
         source: "Front Behav Neurosci"
         year: 2017
-        doi: "10.3389/fnbeh.2017.00241"
 ---
 
 ![Linalool](/images/substances/linalool.jpg)

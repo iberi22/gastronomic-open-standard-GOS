@@ -14,8 +14,7 @@ health_registry:
   evidence_level: Medium
   mechanism: SIRT1 activation, endothelial NO
   studies:
-  - doi: 10.3390/nu11092147
-    source: Nutrients
+  - source: Nutrients
     title: 'Resveratrol and CVD: systematic review'
     year: 2019
 image_attribution: Pixabay — Vitis vinifera

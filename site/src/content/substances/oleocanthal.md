@@ -17,7 +17,7 @@ health_registry:
     mechanism: "COX-1/COX-2 inhibition (ibuprofen-like), tau anti-aggregation"
     evidence_level: "Medium"
     studies:
-      - title: "Oleocanthal and COX inhibition"
+      - title: "Ibuprofen-like activity in extra-virgin olive oil"
         source: "Nature"
         year: 2005
         doi: "10.1038/437045a"

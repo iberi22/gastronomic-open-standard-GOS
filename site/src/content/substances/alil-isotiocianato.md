@@ -14,8 +14,7 @@ health_registry:
   evidence_level: Medium
   mechanism: TRPA1 activation, mucus clearance
   studies:
-  - doi: 10.1021/jf903822e
-    source: J Agric Food Chem
+  - source: J Agric Food Chem
     title: Allyl isothiocyanate and airway clearance
     year: 2010
 image_attribution: Pixabay — Brassica nigra

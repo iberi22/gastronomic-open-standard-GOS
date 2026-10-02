@@ -14,8 +14,7 @@ health_registry:
   evidence_level: High
   mechanism: TRPV1 blockade and local anesthetic (Na+ channel)
   studies:
-  - doi: 10.1016/j.jdent.2015.03.010
-    source: J Dent
+  - source: J Dent
     title: 'Eugenol in dentistry: review'
     year: 2015
 - condition: Inflammation

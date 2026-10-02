@@ -14,8 +14,7 @@ health_registry:
   evidence_level: Low
   mechanism: Olfactory GABA potentiation
   studies:
-  - doi: 10.1016/j.appet.2014.03.010
-    source: Appetite
+  - source: Appetite
     title: 'Vanillin aroma and mood: pilot'
     year: 2014
 image_attribution: Pixabay — Vanilla planifolia

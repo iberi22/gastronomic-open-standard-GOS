@@ -22,8 +22,7 @@ health_registry:
   evidence_level: Medium
   mechanism: LDL oxidation inhibition
   studies:
-  - doi: 10.1016/j.atherosclerosis.2014.09.001
-    source: Atherosclerosis
+  - source: Atherosclerosis
     title: 'Lycopene and CVD risk: meta-analysis'
     year: 2014
 image_attribution: Pixabay — Solanum lycopersicum
