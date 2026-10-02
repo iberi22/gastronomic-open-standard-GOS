@@ -517,7 +517,7 @@ const EXAMPLES = $derived(
   }
   /* 12px en secondary (7.55:1), nunca muted (3.96:1 — falla AA). */
   .index-state { margin: 0; font-size: 12px; color: var(--swal-text-secondary); }
-  .index-state[data-state='failed'] { color: #d97706; }
+  .index-state[data-state='failed'] { color: var(--swal-warning); }
   .form { display: flex; gap: 8px; flex-wrap: wrap; }
   .input {
     flex: 1 1 260px;
@@ -529,14 +529,14 @@ const EXAMPLES = $derived(
     border: 1px solid var(--swal-border);
     border-radius: 10px;
   }
-  .input:focus-visible { outline: 2px solid var(--swal-accent-text, var(--swal-accent)); }
+  .input:focus-visible { outline: 2px solid var(--swal-accent); }
   .btn {
     min-height: 42px;
     padding: 10px 18px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
-    background: var(--swal-btn-bg, var(--swal-accent));
+    color: var(--swal-on-accent);
+    background: var(--swal-accent);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -566,7 +566,7 @@ const EXAMPLES = $derived(
     margin: 0;
   }
   .tier:has(.tier-radio:focus-visible) {
-    outline: 2px solid var(--swal-accent-text, var(--swal-accent));
+    outline: 2px solid var(--swal-accent);
     outline-offset: 2px;
   }
   .tier-name { font-size: 13px; font-weight: 700; color: var(--swal-text); }
@@ -605,7 +605,7 @@ const EXAMPLES = $derived(
     border-radius: 999px;
     cursor: pointer;
   }
-  .chip:hover { color: var(--swal-accent-text, var(--swal-accent)); }
+  .chip:hover { color: var(--swal-accent); }
   .note {
     margin: 0;
     padding: 8px 10px;
@@ -633,9 +633,9 @@ const EXAMPLES = $derived(
     border-radius: 999px;
     border: 1px solid var(--swal-border);
   }
-  .pill[data-cls='ok'] { color: var(--swal-accent-text, var(--swal-accent)); border-color: var(--swal-accent); }
-  .pill[data-cls='warn'] { color: #d97706; border-color: #d97706; }
-  .pill[data-cls='stop'] { color: #dc2626; border-color: #dc2626; }
+  .pill[data-cls='ok'] { color: var(--swal-accent); border-color: var(--swal-accent); }
+  .pill[data-cls='warn'] { color: var(--swal-warning); border-color: var(--swal-warning); }
+  .pill[data-cls='stop'] { color: var(--swal-danger); border-color: var(--swal-danger); }
   .model { font-size: 12px; color: var(--swal-text-secondary); font-family: var(--swal-font-mono, ui-monospace); }
   .hint { margin: 0; font-size: 12px; color: var(--swal-text-secondary); }
   .text {
@@ -653,7 +653,7 @@ const EXAMPLES = $derived(
   .cites h3 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--swal-text-secondary); }
   .cites ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
   .cites li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
-  .cites code { font-size: 12px; color: var(--swal-accent-text, var(--swal-accent)); overflow-wrap: anywhere; }
+  .cites code { font-size: 12px; color: var(--swal-accent); overflow-wrap: anywhere; }
   .c-label { font-size: 12px; color: var(--swal-text-secondary); }
   .sr {
     position: absolute;

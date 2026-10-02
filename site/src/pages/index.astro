@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content'
-import { Badge, Button, Card } from '@swal/ui'
+import { Badge, Button, Card, Icon } from '@swal/ui'
 import graphData from '../../public/graph-data.json'
 import GosGraph from '../components/GosGraph.svelte'
+import '../lib/gos-icons'
 import Layout from '../layouts/Layout.astro'
 import { clampDescription } from '../lib/meta-description'
 
@@ -245,98 +246,96 @@ const ev = {
   }),
 }
 
-const highlights = [
+// Cifras del grafo y puerta de entrada a cada seccion (composicion de la
+// landing de Fize: tarjetas con icono, insignia y una linea de descripcion).
+const features = [
   {
-    k: 'Nodos',
-    v: String(total),
-    desc: 'Recetas, ingredientes, ciencia y territorio en un solo grafo',
-    color: '#FF6B6B',
+    title: 'Grafo global',
+    badge: `${total} nodos`,
+    icon: 'graph',
+    href: `${base}/graph`,
+    desc: `Recetas, ingredientes, ciencia y territorio en un solo grafo, con ${edges.length} relaciones de ${relations.length} tipos, de USES a TREATS.`,
   },
   {
-    k: 'Relaciones',
-    v: String(edges.length),
-    desc: `${relations.length} tipos de arista distintos, de USES a TREATS`,
-    color: '#4ECDC4',
+    title: 'Recetas',
+    badge: String(byType('recipe') + byType('dish')),
+    icon: 'book',
+    href: `${base}/recipes`,
+    desc: 'Con perfil sensorial, técnica, región y dietas que admiten.',
   },
   {
-    k: 'Recetas',
-    v: String(byType('recipe') + byType('dish')),
-    desc: 'Con perfil sensorial, técnica y región',
-    color: '#F9C74F',
+    title: 'Ingredientes',
+    badge: `${ingFichas} fichas`,
+    icon: 'leaf',
+    href: `${base}/ingredients`,
+    desc: `${byType('ingredient')} ingredientes en el grafo; ${ingFichas} con ficha científica, el resto son los que citan las recetas.`,
   },
   {
-    k: 'Ingredientes',
-    v: String(byType('ingredient')),
-    desc: `${ingFichas} con ficha científica en el repositorio; el resto son los que citan las recetas`,
-    color: '#06D6A0',
-  },
-  {
-    k: 'Vitaminas',
-    v: String(byType('vitamin')),
-    desc: 'Micronutrientes conectados a los ingredientes que los contienen',
-    color: '#F94144',
-  },
-  {
-    k: 'Afecciones',
-    v: String(byType('condition')),
-    desc: 'Relacionadas con ingredientes y substancias',
-    color: '#9D4EDD',
+    title: 'Ciencia',
+    badge: `${byType('vitamin')} vitaminas`,
+    icon: 'flask',
+    href: `${base}/scientific`,
+    desc: `Micronutrientes, substancias bioactivas y ${byType('condition')} afecciones conectadas con los ingredientes que las respaldan.`,
   },
 ]
 ---
 
 <Layout title="GOS — Grafo Gastronómico Global" description={homeDescription}>
-  <section class="hero">
-    <div class="hero-card">
-      <div class="eyebrow">
-        <Badge variant="info" pulse>Grafo gastronómico abierto</Badge>
-        <span class="eyebrow-text">Recetas · ingredientes · ciencia</span>
-      </div>
-      <h1 class="h1">Grafo gastronómico <span class="accent">global</span>: recetas son nodos.</h1>
-      <p class="lead">
-        Presentación de <strong>recetas e ingredientes de todo el mundo</strong> interconectados en un grafo que une <strong>vitaminas, sabores, técnicas, substancias bioactivas</strong> y <strong>soluciones a afecciones</strong> — con capacidades alimenticias por <strong>dieta</strong> y hallazgos de investigaciones recientes.
-      </p>
-      <div class="cta">
-        <a href={`${base}/graph`} class="btn primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
-          Explorar grafo global
-        </a>
-        <a href={`${base}/recipes`} class="btn ghost">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
-          Ver recetas →
-        </a>
-        <a href={`${base}/ingredients`} class="btn ghost">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
-          Ingredientes científicos →
-        </a>
-      </div>
-      <div class="meta">
-        <span class="pill">Grafo interactivo · recetas ↔ ingredientes ↔ ciencia</span>
-        <span class="pill">Funciona sin conexión (PWA) · modo oscuro y claro</span>
-      </div>
+  <section class="hero" aria-labelledby="hero-title">
+    <Badge variant="neutral" size="md" dot>Grafo gastronómico abierto</Badge>
+    <h1 id="hero-title" class="hero-title">
+      <span class="brand">GOS</span>
+      <span class="headline">Grafo gastronómico global: las recetas son nodos</span>
+    </h1>
+    <p class="hero-subtitle">
+      Recetas e ingredientes de todo el mundo interconectados con <strong>vitaminas, sabores, técnicas, substancias bioactivas</strong> y <strong>afecciones</strong>, con las dietas que admite cada plato y los estudios que respaldan cada afirmación.
+    </p>
+    <div class="hero-ctas">
+      <Button href={`${base}/graph`} variant="primary" size="lg">
+        <Icon name="graph" size={18} />
+        Explorar grafo global
+      </Button>
+      <Button href={`${base}/recipes`} variant="secondary" size="lg">
+        <Icon name="book" size={18} />
+        Ver recetas
+      </Button>
+      <Button href={`${base}/ingredients`} variant="secondary" size="lg">
+        <Icon name="leaf" size={18} />
+        Ingredientes científicos
+      </Button>
     </div>
-
-    <div class="graph-shell">
-      <GosGraph client:load />
+    <div class="meta">
+      <span class="pill">Grafo interactivo · recetas ↔ ingredientes ↔ ciencia</span>
+      <span class="pill">Funciona sin conexión (PWA) · modo claro, oscuro o del sistema</span>
     </div>
   </section>
 
-  <section class="grid-highlights">
-    {highlights.map(h => (
-      <Card variant="surface" padding="md">
-        <div class="hl">
-          <div class="hl-head">
-            <span class="dot" style={`background:${h.color}`}></span>
-            <span class="hl-k">{h.k}</span>
-            <Badge variant="neutral">{h.v}</Badge>
-          </div>
-          <p class="hl-desc">{h.desc}</p>
-        </div>
-      </Card>
-    ))}
+  <section class="graph-shell" aria-label="Vista previa del grafo">
+    <GosGraph client:load />
   </section>
 
-  <section class="two-col">
+  <section class="features" aria-labelledby="features-title">
+    <header class="section-header">
+      <h2 id="features-title" class="section-title">Qué contiene GOS</h2>
+      <p class="section-subtitle">Cifras reales del grafo generado en cada build.</p>
+    </header>
+    <ul class="features-grid">
+      {features.map(f => (
+        <li>
+          <a href={f.href} class="feature">
+            <div class="feature-top">
+              <span class="feature-icon"><Icon name={f.icon} size={22} /></span>
+              <Badge variant="neutral">{f.badge}</Badge>
+            </div>
+            <h3 class="feature-title">{f.title}</h3>
+            <p class="feature-desc">{f.desc}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="model">
     <Card variant="elevated" padding="lg">
       <h2>Qué modela el grafo</h2>
       <p class="hint">
@@ -367,50 +366,10 @@ const highlights = [
         evidencia al respecto y citarla con su DOI.
       </p>
       <div class="actions">
-        <Button variant="primary" onclick={() => location.href = `${base}/graph`}>Abrir grafo interactivo</Button>
-        <Button variant="secondary" onclick={() => location.href = `${base}/scientific`}>Ver capa científica</Button>
+        <Button href={`${base}/graph`} variant="primary">Abrir grafo interactivo</Button>
+        <Button href={`${base}/scientific`} variant="secondary">Ver capa científica</Button>
       </div>
     </Card>
-    <Card variant="surface" padding="lg">
-      <h2>Modo oscuro y claro</h2>
-      <p class="hint">Elige entre tema oscuro y hueso (claro) con el interruptor del encabezado. Tu preferencia se guarda automáticamente.</p>
-      <div class="swatches">
-        <div class="swatch" style="background:#050507; color:#E5E5E5; border-color: rgba(255,255,255,0.06);">
-          <span>dark</span><code>#050507</code>
-        </div>
-        <div class="swatch" style="background:#FDFCF8; color:#1C1917; border-color: rgba(28,25,23,0.08);">
-          <span>hueso</span><code>#FDFCF8</code>
-        </div>
-        {/* Muestra de color: el texto va sobre el color que representa, asi que
-            blanco no sirve (4.23:1). Negro da 4.76:1 sobre #8B5CF6. */}
-        <div class="swatch" style="background:#8B5CF6; color:#0B0B0C;">
-          <span>accent</span><code>#8B5CF6</code>
-        </div>
-      </div>
-    </Card>
-  </section>
-
-  <section class="quick-links">
-    <a href={`${base}/recipes`} class="ql">
-      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c0-3 2-5 6-5s6 2 6 5v6H6v-6z"/><path d="M12 8V4"/></svg>
-      <strong>Recetas</strong>
-      <em>Recetas del mundo</em>
-    </a>
-    <a href={`${base}/ingredients`} class="ql">
-      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4 4 4 8 0 12M12 2c4 4 4 8 0 12-4 4-4 8 0 12"/></svg>
-      <strong>Ingredientes</strong>
-      <em>Fichas científicas</em>
-    </a>
-    <a href={`${base}/graph`} class="ql">
-      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="M6 6l4 4M18 4l-4 4M6 18l4-4M18 18l-4-4"/></svg>
-      <strong>Grafo</strong>
-      <em>Grafo interactivo</em>
-    </a>
-    <a href={`${base}/scientific`} class="ql">
-      <svg class="ql-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 002 2h12a2 2 0 002-2L15 8V2M9 2h6M7 14h10"/></svg>
-      <strong>Ciencia</strong>
-      <em>Vitaminas & substancias</em>
-    </a>
   </section>
 
   <section class="science">
@@ -426,7 +385,7 @@ const highlights = [
           para que no se confundan.
         </p>
       </div>
-      <a href={`${base}/api/evidence.json`} class="btn ghost small">Ver el índice completo →</a>
+      <Button href={`${base}/api/evidence.json`} variant="secondary" size="sm">Ver el índice completo</Button>
     </div>
 
     <div class="ev-grid">
@@ -472,9 +431,9 @@ const highlights = [
         si quieres el grafo entero ({total} nodos, {edges.length} aristas, 3.2 MB).
       </p>
       <div class="actions">
-        <a href={`${base}/api`} class="btn primary">Explorar la API →</a>
-        <a href={`${base}/llms.txt`} class="btn ghost" target="_blank" rel="noopener">llms.txt</a>
-        <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md" class="btn ghost" target="_blank" rel="noopener">Documentación</a>
+        <Button href={`${base}/api`} variant="primary">Explorar la API</Button>
+        <Button href={`${base}/llms.txt`} variant="secondary" target="_blank" rel="noopener">llms.txt</Button>
+        <Button href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md" variant="secondary" target="_blank" rel="noopener">Documentación</Button>
       </div>
     </div>
     <div class="api-code">
@@ -483,35 +442,45 @@ const highlights = [
   </section>
 
 <style>
-  .hero { display:grid; gap:18px; }
-  .hero-card { border:1px solid var(--swal-border); border-radius: 20px; padding: 22px; background: linear-gradient(180deg, color-mix(in srgb, var(--swal-surface) 92%, transparent), var(--swal-bg)); }
-  .eyebrow { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:10px; }
-  .eyebrow-text { font-size:12px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
-  .h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 850; letter-spacing:-0.02em; line-height:1.05; margin:8px 0 10px; color: var(--swal-text); }
-  .accent { color: var(--swal-accent); }
-  .lead { color: var(--swal-text-secondary); line-height:1.7; max-width: 880px; }
-  .lead strong { color: var(--swal-text); }
-  .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
-  .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid var(--swal-border); }
-  /* --swal-btn-bg lo define Layout.astro para todo el sitio (AA con texto
-     blanco en tema oscuro). Aqui solo se consume. */
-  .btn.primary { background: var(--swal-btn-bg, var(--swal-accent)); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
-  .btn.ghost { background: var(--swal-surface); color: var(--swal-text); }
-  .meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
-  .pill { font-size:11px; color: var(--swal-text-muted); background: var(--swal-surface); border:1px solid var(--swal-border); padding:5px 10px; border-radius:999px; font-family: var(--swal-font-mono); }
-  .graph-shell { border-radius: 20px; overflow:hidden; }
-  .grid-highlights { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:12px; margin-top:18px; }
-  .hl-head { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
-  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
-  .hl-k { font-weight:700; color: var(--swal-text); }
-  .hl-desc { color: var(--swal-text-secondary); font-size:13px; line-height:1.5; }
-  .two-col { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:12px; margin-top:18px; }
-  @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
+  /* Composicion de la landing de Fize: hero centrado, titular grande, CTAs y
+     rejilla de tarjetas con icono. Todo con tokens --swal-*. */
+  .hero { display:flex; flex-direction:column; align-items:center; text-align:center; gap:1.25rem; padding: clamp(0.5rem, 3vw, 2.5rem) 0 1.5rem; }
+  .hero-title { display:flex; flex-direction:column; align-items:center; gap:0.5rem; margin-top:0.25rem; }
+  .brand { font-size: clamp(3rem, 2rem + 5vw, 5rem); font-weight:700; line-height:1; letter-spacing:-0.04em; color: var(--swal-text); }
+  .headline { font-size: clamp(1.375rem, 1rem + 1.6vw, 2rem); font-weight:500; line-height:1.2; letter-spacing:-0.015em; color: var(--swal-text-secondary); max-width:24ch; text-wrap:balance; }
+  .hero-subtitle { font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem); line-height:1.6; color: var(--swal-text-secondary); max-width:62ch; text-wrap:pretty; }
+  .hero-subtitle strong { color: var(--swal-text); font-weight:600; }
+  .hero-ctas { display:flex; flex-wrap:wrap; justify-content:center; gap:0.75rem; margin-top:0.75rem; }
+  @media (max-width: 480px) {
+    .hero-ctas { flex-direction:column; align-self:stretch; }
+    .hero-ctas :global(.swal-btn) { width:100%; }
+  }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:0.5rem; }
+  .pill { font-size:11px; color: var(--swal-text-secondary); background: var(--swal-surface); border:1px solid var(--swal-border); padding:5px 10px; border-radius: var(--swal-radius-full); font-family: var(--swal-font-mono); }
+  .eyebrow-text { font-size:12px; color: var(--swal-text-secondary); font-family: var(--swal-font-mono); letter-spacing:0.08em; }
+  .graph-shell { margin-top: 1rem; }
+
+  .features { display:flex; flex-direction:column; gap:1.75rem; margin-top: clamp(2.5rem, 5vw, 4rem); container-type:inline-size; }
+  .section-header { display:flex; flex-direction:column; gap:0.5rem; text-align:center; }
+  .section-title { font-size: clamp(1.375rem, 1.1rem + 1vw, 1.75rem); font-weight:650; letter-spacing:-0.02em; color: var(--swal-text); text-wrap:balance; margin:0; }
+  .section-subtitle { font-size:1rem; color: var(--swal-text-secondary); margin:0; }
+  .features-grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:1rem; }
+  @container (min-width: 560px) { .features-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  @container (min-width: 960px) { .features-grid { grid-template-columns: repeat(4, minmax(0,1fr)); } }
+  .feature { display:flex; flex-direction:column; gap:0.75rem; height:100%; padding:1.5rem; background: var(--swal-surface); border:1px solid var(--swal-border); border-radius: var(--swal-radius-lg); box-shadow: var(--swal-shadow-sm); text-decoration:none; color: var(--swal-text); transition: border-color var(--swal-transition-fast), transform var(--swal-transition-fast); }
+  .feature:hover { border-color: var(--swal-border-strong); transform: translateY(-2px); }
+  .feature-top { display:flex; justify-content:space-between; align-items:center; gap:0.75rem; }
+  .feature-icon { display:grid; place-items:center; width:44px; height:44px; border-radius: var(--swal-radius); background: var(--swal-accent-muted); color: var(--swal-text); }
+  .feature-title { font-size:1.0625rem; font-weight:600; letter-spacing:-0.01em; color: var(--swal-text); margin:0.25rem 0 0; }
+  .feature-desc { font-size:0.9375rem; line-height:1.55; color: var(--swal-text-secondary); margin:0; }
+
+  .model { margin-top: clamp(2.5rem, 5vw, 4rem); }
+  .model h2 { margin:0; font-size:1.25rem; font-weight:650; letter-spacing:-0.01em; color: var(--swal-text); }
   .list { margin:10px 0 0 18px; color: var(--swal-text-secondary); line-height:1.9; font-size:14px; }
   .rels { width:100%; border-collapse:collapse; margin-top:12px; font-size:12.5px; }
   .rels th { text-align:left; font-weight:600; color: var(--swal-text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; padding:0 8px 7px 0; border-bottom:1px solid var(--swal-border); }
   .rels td { padding:7px 8px 7px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); vertical-align:top; }
-  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); white-space:nowrap; }
+  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); white-space:nowrap; }
   .rels td.path { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-secondary); white-space:nowrap; }
   .rels td.reads { color: var(--swal-text-secondary); line-height:1.5; }
   .rels td.num { text-align:right; font-variant-numeric: tabular-nums; color: var(--swal-text-muted); white-space:nowrap; }
@@ -534,7 +503,6 @@ const highlights = [
   .science-head { display:flex; gap:14px; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; }
   .science-head h2 { font-size:20px; font-weight:750; letter-spacing:-0.01em; margin:6px 0 0; color: var(--swal-text); }
   .science-head .hint { max-width:68ch; margin-top:6px; }
-  .btn.small { padding:6px 11px; font-size:12px; }
   .ev-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:12px; margin-top:16px; }
   .ev-card { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; }
   .ev-card-head { display:flex; align-items:baseline; justify-content:space-between; gap:8px; padding-bottom:9px; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 50%, transparent); }
@@ -548,18 +516,9 @@ const highlights = [
   .ev-more { display:block; margin-top:10px; font-size:11px; color: var(--swal-text-muted); }
   .evidence-note { margin-top:14px; padding:13px 15px; border:1px solid var(--swal-border); border-left:3px solid var(--swal-accent); border-radius:12px; background: var(--swal-surface); color: var(--swal-text-secondary); font-size:12.5px; line-height:1.65; }
   .evidence-note strong { color: var(--swal-text); }
-  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); }
+  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent); }
   .hint { color: var(--swal-text-secondary); font-size:12px; line-height:1.6; margin-top:10px; }
   .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-  .swatches { display:flex; gap:10px; margin-top:12px; }
-  .swatch { flex:1; border:1px solid; border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; font-family: var(--swal-font-mono); font-size:12px; }
-  .swatch span{ font-weight:700; text-transform:uppercase; letter-spacing:0.08em; font-family: var(--swal-font); }
-  .quick-links { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:10px; margin-top:18px; }
-  .ql { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:4px; text-decoration:none; color: var(--swal-text); transition: transform 0.15s; }
-  .ql:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--swal-accent) 40%, var(--swal-border)); }
-  .ql-icon { color: var(--swal-accent); margin-bottom: 4px; }
-  .ql strong{ font-size:14px; }
-  .ql em{ font-size:12px; color: var(--swal-text-muted); font-style:normal; }
   .api-banner { margin-top:18px; border:1px solid color-mix(in srgb, var(--swal-accent) 35%, var(--swal-border)); border-radius:20px; padding:22px; display:grid; grid-template-columns: 1.2fr 0.8fr; gap:18px; align-items:center; background: linear-gradient(135deg, color-mix(in srgb, var(--swal-accent) 10%, var(--swal-surface)), var(--swal-surface)); }
   @media (max-width: 900px){ .api-banner{ grid-template-columns: 1fr; } }
   .api-banner h2 { margin:8px 0 6px; font-size:22px; color: var(--swal-text); }

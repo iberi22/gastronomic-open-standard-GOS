@@ -18,6 +18,26 @@ declare module '@swal/ui' {
   export const DashboardLayout: any
   export const GlobalTicker: any
   export const Landing: any
+  export const Icon: any
+  export const MobileNav: any
+  export const AppShell: any
+  export const ICONS: Record<string, readonly string[]>
+  export function registerIcons(map: Record<string, readonly string[]>): void
+  export function getIcon(name: string): readonly string[] | undefined
+}
+declare module '@swal/ui/icons' {
+  export const ICONS: Record<string, readonly string[]>
+  export function registerIcons(map: Record<string, readonly string[]>): void
+  export function getIcon(name: string): readonly string[] | undefined
+}
+declare module '@swal/ui/nav' {
+  export function isNavActive(item: { href: string; exact?: boolean }, currentPath?: string): boolean
+  export function findCurrentNav<T extends { href: string; exact?: boolean }>(items: T[], currentPath?: string): T | undefined
+}
+declare module '@swal/ui/theme-boot' {
+  export const THEME_BOOT_SCRIPT: string
+  export function themeBootScript(opts?: { themeKey?: string; fontKey?: string; themes?: string[] }): string
+  export function setTheme(theme: 'light' | 'dark' | 'system', opts?: { themeKey?: string }): void
 }
 declare module '@swal/ui/tokens' {}
 declare module '@swal/ui/toast' {

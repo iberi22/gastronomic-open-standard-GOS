@@ -100,9 +100,9 @@ const scientificDesc = clampDescription(
   .sub code{ font-family: var(--swal-font-mono); font-size:11px; background: var(--swal-surface); border:1px solid var(--swal-border); padding:1px 5px; border-radius:6px; }
   .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:14px; margin-top:18px; }
   .card{ border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:20px; padding:18px; }
-  .card.accent{ border-color: color-mix(in srgb, #9D4EDD 30%, var(--swal-border)); }
-  .card.danger{ border-color: color-mix(in srgb, #F94144 30%, var(--swal-border)); }
-  .card.success{ border-color: color-mix(in srgb, #06D6A0 30%, var(--swal-border)); }
+  .card.accent{ border-color: var(--swal-border-strong); }
+  .card.danger{ border-color: color-mix(in srgb, var(--swal-danger) 45%, var(--swal-border)); }
+  .card.success{ border-color: color-mix(in srgb, var(--swal-success) 45%, var(--swal-border)); }
   .card h3{ margin:0 0 8px; font-size:14px; color: var(--swal-text); }
   .card p{ color: var(--swal-text-secondary); font-size:13px; line-height:1.6; }
   .card ul{ margin:8px 0 0 18px; color: var(--swal-text-secondary); font-size:13px; line-height:1.7; }
@@ -117,7 +117,7 @@ const scientificDesc = clampDescription(
   .mini-formula{ font-family: var(--swal-font-mono); font-size:11px; font-weight:700; color: var(--swal-accent); }
   .mini strong{ color: var(--swal-text); font-size:14px; }
   .mini span:last-child{ color: var(--swal-text-muted); font-size:11px; line-height:1.4; }
-  .mini-ev{ color: #06d6a0 !important; font-size:11px; font-weight:700; }
+  .mini-ev{ color: var(--swal-success) !important; font-size:11px; font-weight:700; }
   .sci-search{ width:100%; margin-top:12px; padding:10px 14px; border-radius:12px; border:1px solid var(--swal-border); background: var(--swal-bg); color: var(--swal-text); font-size:13px; }
 </style>
 </Layout>
