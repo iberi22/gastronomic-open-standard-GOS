@@ -21,12 +21,16 @@ where = ["."]
 include = ["gos*"]
 
 [tool.pytest.ini_options]
-# Solo rutas con tests reales de pytest. scripts/ contiene scripts manuales
-# (test_gemini, test_qwen, test_translate...) que fallan en collection con
-# FileNotFoundError por rutas absolutas "E:/..." del portatil de un
-# desarrollador de Windows; no son tests y pytest los recolectaba igual.
-# CI corre los tests de verdad por su cuenta (vitest + worker vitest +
-# python -m gos.cli audit), no con pytest.
+# Sin esto pytest recolecta scripts/test_*.py, que no son tests: son scripts
+# manuales del fork HowToCook con rutas absolutas "E:/scripts-python/..." de
+# un portatil Windows, que fallan en collection con FileNotFoundError.
+# testpaths deja la sesion en 9 tests recolectados en vez de abortar.
+#
+# Los dos modulos listados fallan por causas reales, no por la config:
+#   - test_graph_edges.py exige site/graph-data.json, artefacto generado
+#     que no existe en un checkout limpio (CI lo genera antes).
+#   - test_gos_compliance.py usa separadores de Windows en sus rutas.
+# CI no corre pytest: usa vitest (site + worker) y `python -m gos.cli audit`.
 testpaths = [
     "automation/test_graph_edges.py",
     "scripts/test_gos_compliance.py",
