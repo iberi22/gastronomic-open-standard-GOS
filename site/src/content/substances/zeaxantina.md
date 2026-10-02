@@ -1,5 +1,6 @@
 ---
 name: "Zeaxantina"
+disclaimer: true
 formula: "C40H56O2"
 discovery_year: 1938
 source_ingredient: "maíz amarillo (Zea mays)"
@@ -28,7 +29,7 @@ health_registry:
 
 ## Descripción
 
-3,3'-Dihydroxy-β-carotene (C40H56O2) aislada en 1938 por Kuhn y Grundmann del maíz. Carotenoide macular isómero de luteína (doble enlace desplazado). Filtro luz azul retina; estudio AREDS2 demostró protección AMD.
+3,3'-Dihydroxy-β-carotene (C40H56O2) aislada en 1938 por Kuhn y Grundmann del maíz. Carotenoide macular isómero de luteína (doble enlace desplazado). Filtro de luz azul en la retina; se cita el estudio AREDS2 como evidencia de protección frente a AMD (sin fuente verificable en esta carta).
 
 ## Sazón / Sabor / Textura
 
@@ -58,4 +59,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `maíz amarillo (Zea mays)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

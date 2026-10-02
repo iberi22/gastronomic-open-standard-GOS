@@ -6,6 +6,7 @@ benefit: Analgésico, termogénico, antiinflamatorio
 compuestos:
 - Dihydrocapsaicin
 - Nordihydrocapsaicin
+disclaimer: true
 discovery_year: 1816
 formula: C18H27NO3
 health_registry:
@@ -103,4 +104,4 @@ Resumen de evidencia científica sobre capsaicina, activación del receptor TRPV
 
 - **Conservación:** Mantener fuente `ají picante (Capsicum annuum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

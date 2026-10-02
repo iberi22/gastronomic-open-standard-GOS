@@ -7,6 +7,7 @@ compuestos:
 - Eugenol
 - Cinnamic acid
 - Coumarin
+disclaimer: true
 discovery_year: 1834
 formula: C9H8O
 health_registry:
@@ -72,4 +73,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `canela (Cinnamomum verum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

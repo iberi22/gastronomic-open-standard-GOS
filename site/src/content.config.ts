@@ -116,6 +116,9 @@ const substancesCollection = defineCollection({
       aliases: z.record(z.string(), z.array(z.string())).optional(),
       image: z.string().optional(),
       image_attribution: z.string().optional(),
+      // Bloque de descargo visible en la ficha de la sustancia. Activo por
+      // defecto: las cartas hacen afirmaciones de salud sin fuente propia.
+      disclaimer: z.boolean().default(true),
       health_registry: z
         .array(
           z

@@ -7,6 +7,7 @@ compuestos:
 - Phytoene
 - Phytofluene
 - Beta-carotene
+disclaimer: true
 discovery_year: 1873
 formula: C40H56
 health_registry:
@@ -49,7 +50,7 @@ vitaminas:
 
 ## Descripción
 
-Carotenoide acíclico C40H56 aislado en 1873 por Millardet y estructura elucidada en 1910 por Willstätter y Escher. Pigmento rojo del tomate; biodisponibilidad triplica al cocinar con aceite (isomerización cis). Antioxidante que apaga singlete oxígeno.
+Carotenoide acíclico C40H56 aislado en 1873 por Millardet y estructura elucidada en 1910 por Willstätter y Escher. Pigmento rojo del tomate; biodisponibilidad triplica al cocinar con aceite (isomerización cis). Descrito en la literatura comoioxidante que apaga singlete oxígeno (sin fuente verificada en esta carta).
 
 ## Sazón / Sabor / Textura
 
@@ -79,4 +80,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `tomate (Solanum lycopersicum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

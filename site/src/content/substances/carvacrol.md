@@ -7,6 +7,7 @@ compuestos:
 - Thymol
 - p-Cymene
 - Rosmarinic acid
+disclaimer: true
 discovery_year: 1880
 formula: C10H14O
 health_registry:
@@ -41,7 +42,7 @@ vitaminas:
 
 ## Descripción
 
-5-Isopropyl-2-methylphenol (C10H14O) isómero de timol, aislado y caracterizado en 1880s del orégano. Constituye 60-90% del aceite esencial de orégano griego. Uno de los antimicrobianos vegetales más potentes.
+5-Isopropyl-2-methylphenol (C10H14O) isómero de timol, aislado y caracterizado en 1880s del orégano. Constituye 60-90% del aceite esencial de orégano griego. Descrito en la literatura como uno de los antimicrobianos vegetales más potentes (sin fuente verificada en esta carta).
 
 ## Sazón / Sabor / Textura
 
@@ -53,7 +54,7 @@ Usado en GOS como nodo `substance` conectado a ingredientes vía `active_compoun
 
 ## Beneficio principal
 
-> Antibiótico natural, antifúngico, antioxidante
+> Antibiótico natural, antifúngico, antioxidante (afirmaciones sin fuente verificada en esta carta)
 
 ## Vitaminas asociadas
 
@@ -71,4 +72,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `orégano (Origanum vulgare)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.

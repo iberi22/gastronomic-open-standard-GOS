@@ -7,6 +7,7 @@ compuestos:
 - Estragole
 - Anisaldehyde
 - Linalool
+disclaimer: true
 discovery_year: 1846
 formula: C10H12O
 health_registry:
@@ -61,7 +62,7 @@ Usado en GOS como nodo `substance` conectado a ingredientes vía `active_compoun
 
 ## Beneficio principal
 
-> Digestivo, expectorante, carminativo
+> Digestivo, expectorante, carminativo (afirmaciones sin fuente verificada en esta carta)
 
 ## Vitaminas asociadas
 
@@ -79,4 +80,4 @@ Ver `health_registry` arriba — mecanismos moleculares con nivel de evidencia y
 
 - **Conservación:** Mantener fuente `anís (Pimpinella anisum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).
 - **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.
-- **Seguridad:** Dosis culinarias son seguras; extractos concentrados requieren evaluación. Ver `ingredients/` para protocolo científico.
+- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico.
