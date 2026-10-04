@@ -38,7 +38,7 @@ const groups = readdirSync(dir)
 
 const all = groups.flatMap((g) => g.exercises)
 
-// The half of the contract's exercise ref that follows `wg:` — enforced in
+// The half of the contract's exercise ref that follows its prefix (`wg:` or `ex:`) — enforced in
 // schemas/ecosystem/v1/envelope.schema.json#/$defs/exercise.
 const SLUG = /^[a-z0-9]+(?:[-_][a-z0-9]+)*$/
 
@@ -55,7 +55,7 @@ describe('exercise catalogue', () => {
 
   it('gives every exercise a unique slug the contract accepts', () => {
     for (const e of all)
-      expect(e.slug, `${e.slug} must match wg:<slug>`).toMatch(SLUG)
+      expect(e.slug, `${e.slug} must match <prefix>:<slug>`).toMatch(SLUG)
     expect(new Set(all.map((e) => e.slug)).size, 'duplicate slug').toBe(
       all.length,
     )

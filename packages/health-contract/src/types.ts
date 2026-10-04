@@ -18,7 +18,17 @@ export type AllergenRef = `gos:allergen/${(typeof ALLERGENS)[number]}`
 export type IngredientRef = `gos:ingredient/${string}`
 export type DishRef = `gos:dish/${string}/${string}`
 export type DietRef = `gos:diet/${string}`
-export type ExerciseRef = `wg:${string}`
+/**
+ * An exercise reference. Two vocabularies, two prefixes, one namespace:
+ *
+ * - `wg:` — the 302 curated exercises from `bryllim/workout-guide` (CC BY-SA 4.0), the ones with
+ *   artwork. This is the form BioHuman renders.
+ * - `ex:` — the 1,324 metadata records in `exercises/` (MIT). No artwork, richer fields.
+ *
+ * They were briefly the same prefix, which let one slug denote two different records and made a
+ * ref ambiguous in a way no validator could catch.
+ */
+export type ExerciseRef = `wg:${string}` | `ex:${string}`
 export type Subject = `subj_${string}`
 export interface Source {
   app: 'fize' | 'training' | 'orionhealth' | 'gos'

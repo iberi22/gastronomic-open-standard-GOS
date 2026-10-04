@@ -260,7 +260,7 @@ export function validateRecord(input: unknown): ValidationResult {
       )
     )
       return
-    string(v.ref, `${p}/ref`, new RegExp(`^wg:${SLUG}$`))
+    string(v.ref, `${p}/ref`, new RegExp(`^(?:wg|ex):${SLUG}$`))
     // A lower bound with no upper bound is not a range; it prescribes a floor and nothing else,
     // and every consumer downstream reads `reps` as the top of the range.
     if (own(v, 'repsMin') && !own(v, 'reps')) fail(p, 'repsMin requires reps')
@@ -452,7 +452,7 @@ export function validateRecord(input: unknown): ValidationResult {
           )
         )
           return
-        string(v.ref, `${p}/ref`, new RegExp(`^wg:${SLUG}$`))
+        string(v.ref, `${p}/ref`, new RegExp(`^(?:wg|ex):${SLUG}$`))
         if (own(v, 'notes')) string(v.notes, `${p}/notes`)
         if (own(v, 'topWeightKg')) number(v.topWeightKg, `${p}/topWeightKg`)
         array(v.sets, `${p}/sets`, exerciseSet, 1)

@@ -17,9 +17,24 @@ Apps: **GOS** (fuente de verdad de alimentos), **Fize** (hosteler-ia: carta, ped
 | Plato | `gos:dish/<pais>/<slug>` | GOS `dishes/<pais>/<slug>.md` |
 | Dieta | `gos:diet/<slug>` | GOS `site/src/content/diets` |
 | Alérgeno | `gos:allergen/<slug>` | tags de alérgeno de GOS (lista cerrada, a definir en schema v1) |
-| Ejercicio | `wg:<slug>` | `@bryllim/workout-guide@1.0.0` (vendorizado, CC BY-SA 4.0) |
+| Ejercicio (con arte) | `wg:<slug>` | `@bryllim/workout-guide@1.0.0` (vendorizado, CC BY-SA 4.0) |
+| Ejercicio (catálogo GOS) | `ex:<slug>` | `exercises/*.json`, 1.324 registros (MIT, vía openGym) |
 | Registro | ULID | generado en el dispositivo |
 | Sujeto | `subj_<ulid>` seudónimo local | nunca nombre, correo ni documento |
+
+### Los dos vocabularios de `Ejercicio`
+
+`wg:` y `ex:` son prefijos DISTINTOS y no intercambiables:
+
+- **`wg:`** — las 302 ejercicios curados de `bryllim/workout-guide` (CC BY-SA 4.0), los únicos con
+  ilustración. Es lo que la app dibuja.
+- **`ex:`** — los 1,324 registros de metadatos de `exercises/` (MIT), sin medio visual pero con
+  equipo, músculos e instrucciones.
+
+Compartieron prefijo durante un tiempo, lo que permitía que un mismo slug denotara DOS registros
+distintos y hacía la referencia ambigua de un modo que ningún validador podía detectar. El contrato
+valida el FORMATO de la referencia, no que el ejercicio exista: una referencia bien formada a un
+slug inexistente es válida, y esa comprobación corresponde al consumidor.
 
 ## Sobre común
 
@@ -65,7 +80,7 @@ is needed — nothing speculative.
   "startedAt": "…", "endedAt": "…",
   "routineId": "<opcional>",
   "exercises": [
-    { "ref": "wg:barbell-bench-press", "notes": "<opcional>", "topWeightKg": 62.5,
+    { "ref": "ex:barbell-bench-press", "notes": "<opcional>", "topWeightKg": 62.5,
       "sets": [
         { "reps": 8, "weightKg": 20, "phase": "warmup" },
         { "reps": 5, "weightKg": 60, "rir": 2 },
@@ -76,7 +91,7 @@ is needed — nothing speculative.
         { "durationS": 45 },
         { "distanceM": 5000, "durationS": 1500, "speedKph": 12 }
       ] },
-    { "ref": "wg:one-arm-row",
+    { "ref": "ex:dumbbell-single-arm-row",
       "sets": [ { "sides": { "L": { "weightKg": 40, "reps": 5, "weightOrigin": "manual" },
                                "R": { "weightKg": 32, "reps": 8 } } } ] }
   ],
@@ -116,7 +131,7 @@ reproducible.
   "name": "Push A",
   "progression": "off | linear | greyskull | double | time",
   "exercises": [
-    { "ref": "wg:barbell-bench-press", "sets": 4, "reps": 8, "repsMin": 6,
+    { "ref": "ex:barbell-bench-press", "sets": 4, "reps": 8, "repsMin": 6,
       "weightKg": 60, "inc": 2.5 },
     { "ref": "wg:push-up", "sets": 3, "reps": 15, "bodyweight": true, "inc": 2 }
   ]

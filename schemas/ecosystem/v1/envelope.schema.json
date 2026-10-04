@@ -92,7 +92,7 @@
     },
     "exercise": {
       "type": "string",
-      "pattern": "^wg:[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+      "pattern": "^(?:wg|ex):[a-z0-9]+(?:[-_][a-z0-9]+)*$"
     },
     "source": {
       "type": "object",

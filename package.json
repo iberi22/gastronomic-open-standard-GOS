@@ -22,7 +22,7 @@
     "prepare": "git config core.hooksPath .husky"
   },
   "author": "Brahyan Belalcazar <iberi22>",
-  "license": "Unlicense",
+  "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/iberi22/gastronomic-open-standard-GOS/issues"
   },

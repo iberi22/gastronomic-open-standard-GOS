@@ -3,20 +3,11 @@
   "id": "01J00000000000000000000040",
   "subject": "subj_01J00000000000000000000000",
   "createdAt": "2026-10-02T18:00:00Z",
-  "source": {
-    "app": "training",
-    "version": "0.1.0"
-  },
+  "source": { "app": "training", "version": "0.1.0" },
   "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
   "data": {
     "name": "Bad",
     "progression": "nonsense",
-    "exercises": [
-      {
-        "ref": "wg:squat",
-        "sets": 3,
-        "reps": 8
-      }
-    ]
+    "exercises": [{ "ref": "ex:barbell-squat", "sets": 3, "reps": 8 }]
   }
 }

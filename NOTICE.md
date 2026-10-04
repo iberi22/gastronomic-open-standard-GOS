@@ -1,7 +1,13 @@
 # Third-party notices
 
-GOS itself is licensed under **Apache-2.0** (see `LICENSE`). This file records the third-party
+GOS is licensed under **AGPL-3.0-or-later** (see `LICENSE`). This file records the third-party
 material that ships in this repository.
+
+The `health-contract` package additionally contains code ported from
+[`openGym`](https://github.com/DuarteSantos8/openGym), which is AGPL-3.0-or-later — the same licence,
+so the port carries no additional obligation beyond this one. What it did carry was a *contradiction*
+worth recording: the root `LICENSE` was AGPL while both `package.json` files declared `Unlicense`.
+Only one of those can be true of a package containing AGPL-derived code.
 
 ## Exercise catalogue metadata and instruction text
 

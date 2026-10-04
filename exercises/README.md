@@ -20,6 +20,16 @@ and a `gif` field. Those have **unresolved title** — openGym's own README says
 So the media is stripped from this catalogue and never vendored. Artwork for BioHuman comes from
 `bryllim/workout-guide` (CC BY-SA 4.0), which has a clear chain of title.
 
+## The ref form is `ex:`, not `wg:`
+
+The contract already bound `wg:<slug>` to `@bryllim/workout-guide` — the 302 curated exercises with
+CC BY-SA artwork, the ones BioHuman renders. This catalogue is a **different dataset with different
+provenance** (MIT metadata and instruction text, no media), so it takes its own prefix.
+
+Sharing one prefix let a single slug denote two different records — `wg:push-up` exists in both — and
+nothing in the validator could catch it, because the contract checks the *format* of a reference, not
+that the exercise exists. One slug, one meaning.
+
 ## Licensing of what remains
 
 - Metadata and instruction text: **MIT**. The content originates from ExerciseDB v1 by AscendAPI and
@@ -28,7 +38,7 @@ So the media is stripped from this catalogue and never vendored. Artwork for Bio
   being relied on is that dataset's, not ExerciseDB's** — ExerciseDB is the asserted originator of
   the content, not the party that granted the licence. The notice is reproduced in full in the
   repository's `NOTICE.md`, which is what the licence actually requires; a sentence here is not.
-- This file layout and the `swal.health/v1` ref form (`wg:<slug>`): ours.
+- This file layout and the `swal.health/v1` ref form (`ex:<slug>`): ours.
 
 ## `artRef`
 
@@ -45,7 +55,7 @@ lifter reads the picture as the exercise they are about to do.
 
 | Field | Meaning |
 |---|---|
-| `slug` | Stable id, the `wg:` half of the contract's exercise ref |
+| `slug` | Stable id, the `ex:` half of the contract's exercise ref |
 | `name` | English display name from the source dataset |
 | `bodyPart` | 10 groups: back, cardio, chest, lower arms, lower legs, neck, shoulders, upper arms, upper legs, waist |
 | `equipment` | 28 values, `body weight` (325) and `dumbbell` (294) the largest |

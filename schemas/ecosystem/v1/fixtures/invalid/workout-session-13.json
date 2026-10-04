@@ -3,30 +3,19 @@
   "id": "92J00000000000000000000000",
   "subject": "subj_01J00000000000000000000000",
   "createdAt": "2026-10-02T18:00:00Z",
-  "source": {
-    "app": "training",
-    "version": "0.1.0"
-  },
+  "source": { "app": "training", "version": "0.1.0" },
   "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
   "data": {
     "startedAt": "2026-10-02T18:00:00Z",
     "endedAt": "2026-10-02T19:00:00Z",
     "exercises": [
       {
-        "ref": "wg:row",
+        "ref": "ex:barbell-row",
         "sets": [
           {
             "sides": {
-              "L": {
-                "weightKg": 40,
-                "reps": 5
-              },
-              "R": {
-                "weightKg": 40,
-                "reps": 5,
-                "rir": 2,
-                "rpe": 8
-              }
+              "L": { "weightKg": 40, "reps": 5 },
+              "R": { "weightKg": 40, "reps": 5, "rir": 2, "rpe": 8 }
             }
           }
         ]

@@ -332,7 +332,7 @@ describe('regressions: the widened set surface (found by review)', () => {
     data: {
       startedAt: '2026-10-02T18:00:00Z',
       endedAt: '2026-10-02T19:00:00Z',
-      exercises: [{ ref: 'wg:bench-press', sets }],
+      exercises: [{ ref: 'ex:barbell-bench-press', sets }],
     },
   })
   const ok = (sets: unknown[]) => validateRecord(session(sets)).ok
@@ -390,7 +390,7 @@ describe('rules JSON Schema 2020-12 cannot express', () => {
       gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
       data: {
         name: 'Inverted range',
-        exercises: [{ ref: 'wg:squat', reps: 6, repsMin: 8 }],
+        exercises: [{ ref: 'ex:barbell-squat', reps: 6, repsMin: 8 }],
       },
     }
     const result = validateRecord(record)
@@ -408,9 +408,40 @@ describe('rules JSON Schema 2020-12 cannot express', () => {
       gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
       data: {
         name: 'Orphan bound',
-        exercises: [{ ref: 'wg:squat', repsMin: 8 }],
+        exercises: [{ ref: 'ex:barbell-squat', repsMin: 8 }],
       },
     }
     expect(validateRecord(record).ok).toBe(false)
+  })
+})
+
+describe('the two exercise vocabularies', () => {
+  const plan = (ref: string) => ({
+    schema: 'swal.health/v1/workout-plan',
+    id: '01J00000000000000000000050',
+    subject: 'subj_01J00000000000000000000000',
+    createdAt: '2026-10-02T18:00:00Z',
+    source: { app: 'training', version: '0.1.0' },
+    gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
+    data: { name: 'P', exercises: [{ ref, sets: 3, reps: 8 }] },
+  })
+
+  it('accepts both prefixes', () => {
+    expect(validateRecord(plan('wg:push-up')).ok).toBe(true)
+    expect(validateRecord(plan('ex:barbell-bench-press')).ok).toBe(true)
+  })
+
+  it('still rejects a malformed ref', () => {
+    expect(validateRecord(plan('push-up')).ok).toBe(false)
+    expect(validateRecord(plan('xx:push-up')).ok).toBe(false)
+    expect(validateRecord(plan('ex:Push Up')).ok).toBe(false)
+  })
+
+  it('does not claim to check that the exercise exists', () => {
+    // The contract validates the SHAPE of a reference. A well-formed ref to a slug no catalogue
+    // holds is still valid, and that is deliberate: the consumer resolves it. What it must never do
+    // is let one prefix mean two records, which is why the two vocabularies are separate prefixes.
+    expect(validateRecord(plan('ex:no-such-exercise-anywhere')).ok).toBe(true)
+    expect(validateRecord(plan('wg:no-such-exercise-anywhere')).ok).toBe(true)
   })
 })
