@@ -178,16 +178,19 @@ export function validateRecord(input: unknown): ValidationResult {
       ])
     // The drops/clusters belong to a named shape. Carrying them without saying which shape they
     // are leaves a reader unable to tell extra volume from a breakdown of the same total.
-    if (own(set, 'shape') && set.shape !== 'dropset' && own(set, 'drops'))
+    if (own(set, 'drops') && set.shape !== 'dropset')
       fail(`${path}/drops`, 'only valid when shape is dropset')
-    if (own(set, 'shape') && set.shape !== 'restpause' && own(set, 'clusters'))
+    if (own(set, 'clusters') && set.shape !== 'restpause')
       fail(`${path}/clusters`, 'only valid when shape is restpause')
     if (own(set, 'speedKph') && !own(set, 'distanceM'))
       fail(`${path}/speedKph`, 'only valid alongside distanceM')
     eachIntensifier(set, path)
-    if (own(set, 'sides')) {
-      // A per-side row holds its numbers on each limb, so it is exempt from the row-level
-      // reps/duration/distance requirement — that is what makes the asymmetry expressible.
+    // The row-level numbers are checked for EVERY set, per-side or not. They used to live after an
+    // early return on `sides`, which left a per-side row's own load, reps or distance unvalidated.
+    const hasSides = own(set, 'sides')
+    if (hasSides) {
+      // A per-side row holds its numbers on each limb, so it is exempt from the
+      // reps/duration/distance REQUIREMENT — that is what makes the asymmetry expressible.
       if (!object(set.sides, `${path}/sides`, ['L', 'R'])) return
       for (const side of ['L', 'R'] as const) {
         const s = (set.sides as Record<string, unknown>)[side]
@@ -220,11 +223,15 @@ export function validateRecord(input: unknown): ValidationResult {
         if (own(s, 'weightOrigin'))
           enumeration(s.weightOrigin, `${sp}/weightOrigin`, ['manual'])
         eachIntensifier(s, sp)
+        // A limb with no number on it is not a log of anything. The schema requires one of these
+        // on each limb, so the validator has to as well or the two disagree.
+        if (!['reps', 'durationS', 'weightKg'].some((k) => own(s, k)))
+          fail(sp, 'reps, durationS or weightKg required')
       }
-      return
-    }
-    if (!['reps', 'durationS', 'distanceM'].some((k) => own(set, k)))
+    } else if (!['reps', 'durationS', 'distanceM'].some((k) => own(set, k))) {
+      // Only a row WITHOUT sides needs the number at row level.
       fail(path, 'reps, durationS or distanceM required')
+    }
     for (const k of ['reps', 'durationS', 'distanceM', 'speedKph'])
       if (own(set, k))
         number(set[k], `${path}/${k}`, true, Infinity, k === 'reps')

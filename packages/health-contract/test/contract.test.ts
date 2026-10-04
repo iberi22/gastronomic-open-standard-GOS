@@ -320,3 +320,97 @@ describe('deep links', () => {
     await expect(decodeDeepLink(link)).rejects.toThrow(ContractValidationError)
   })
 })
+
+describe('regressions: the widened set surface (found by review)', () => {
+  const session = (sets: unknown[]) => ({
+    schema: 'swal.health/v1/workout-session',
+    id: '01J00000000000000000000000',
+    subject: 'subj_01J00000000000000000000000',
+    createdAt: '2026-10-02T18:00:00Z',
+    source: { app: 'training', version: '0.1.0' },
+    gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
+    data: {
+      startedAt: '2026-10-02T18:00:00Z',
+      endedAt: '2026-10-02T19:00:00Z',
+      exercises: [{ ref: 'wg:bench-press', sets }],
+    },
+  })
+  const ok = (sets: unknown[]) => validateRecord(session(sets)).ok
+
+  it('requires intensifiers to name their shape', () => {
+    // `drops`/`clusters` without `shape` used to pass: the guard that rejected them required
+    // `shape` to be present, so omitting it skipped the rule entirely. The schema always
+    // required it, so the two halves of the contract disagreed.
+    expect(ok([{ reps: 5, drops: [{ weightKg: 80, reps: 5 }] }])).toBe(false)
+    expect(ok([{ reps: 12, clusters: [{ reps: 6, restSec: 15 }] }])).toBe(false)
+    expect(
+      ok([{ reps: 5, shape: 'dropset', drops: [{ weightKg: 80, reps: 5 }] }]),
+    ).toBe(true)
+    expect(
+      ok([
+        { reps: 12, shape: 'restpause', clusters: [{ reps: 6, restSec: 15 }] },
+      ]),
+    ).toBe(true)
+  })
+
+  it('validates a per-side row own numbers', () => {
+    // the row-level checks sat after an early return on `sides`, so a string where a number
+    // belonged, or a negative distance, passed on a per-side set.
+    const sides = { L: { reps: 5 }, R: { reps: 5 } }
+    expect(ok([{ reps: 'abc', sides }])).toBe(false)
+    expect(ok([{ distanceM: -1, sides }])).toBe(false)
+    expect(ok([{ reps: 10, sides }])).toBe(true)
+  })
+
+  it('requires each limb to carry a number', () => {
+    expect(ok([{ sides: { L: {}, R: {} } }])).toBe(false)
+    expect(ok([{ sides: { L: {}, R: { reps: 5 } } }])).toBe(false)
+    expect(ok([{ sides: { L: { weightKg: 40 }, R: { reps: 5 } } }])).toBe(true)
+  })
+
+  it('still accepts every shape that was valid before', () => {
+    expect(ok([{ reps: 8, weightKg: 60, rpe: 8 }])).toBe(true)
+    expect(ok([{ durationS: 45 }])).toBe(true)
+    expect(ok([{ distanceM: 400, durationS: 120 }])).toBe(true)
+  })
+})
+
+describe('rules JSON Schema 2020-12 cannot express', () => {
+  // "repsMin below reps" compares two sibling properties, which 2020-12 has no way to do. The
+  // hand-written validator enforces it and the schema carries a $comment saying so. This case is
+  // therefore a validator-only assertion: putting it in fixtures/ would have the parity test
+  // comparing two validators that are supposed to disagree here.
+  it('rejects an inverted rep range', () => {
+    const record = {
+      schema: 'swal.health/v1/workout-plan',
+      id: '01J00000000000000000000046',
+      subject: 'subj_01J00000000000000000000000',
+      createdAt: '2026-10-02T18:00:00Z',
+      source: { app: 'training', version: '0.1.0' },
+      gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
+      data: {
+        name: 'Inverted range',
+        exercises: [{ ref: 'wg:squat', reps: 6, repsMin: 8 }],
+      },
+    }
+    const result = validateRecord(record)
+    expect(result.ok).toBe(false)
+    expect(result.errors.join(' ')).toContain('repsMin must be below reps')
+  })
+
+  it('rejects a rep range whose lower bound has no upper bound at all', () => {
+    const record = {
+      schema: 'swal.health/v1/workout-plan',
+      id: '01J00000000000000000000047',
+      subject: 'subj_01J00000000000000000000000',
+      createdAt: '2026-10-02T18:00:00Z',
+      source: { app: 'training', version: '0.1.0' },
+      gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
+      data: {
+        name: 'Orphan bound',
+        exercises: [{ ref: 'wg:squat', repsMin: 8 }],
+      },
+    }
+    expect(validateRecord(record).ok).toBe(false)
+  })
+})

@@ -22,8 +22,12 @@ So the media is stripped from this catalogue and never vendored. Artwork for Bio
 
 ## Licensing of what remains
 
-- Metadata and instruction text: **MIT**, from ExerciseDB v1, via openGym. Redistributable with
-  attribution.
+- Metadata and instruction text: **MIT**. The content originates from ExerciseDB v1 by AscendAPI and
+  reaches this repository through openGym, which takes it from
+  [`hasaneyldrm/exercises-dataset`](https://github.com/hasaneyldrm/exercises-dataset). **The MIT grant
+  being relied on is that dataset's, not ExerciseDB's** — ExerciseDB is the asserted originator of
+  the content, not the party that granted the licence. The notice is reproduced in full in the
+  repository's `NOTICE.md`, which is what the licence actually requires; a sentence here is not.
 - This file layout and the `swal.health/v1` ref form (`wg:<slug>`): ours.
 
 ## `artRef`
