@@ -15,6 +15,377 @@
     }
   ],
   "$defs": {
+    "drop": {
+      "type": "object",
+      "properties": {
+        "weightKg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reps": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "weightKg",
+        "reps"
+      ],
+      "additionalProperties": false
+    },
+    "cluster": {
+      "type": "object",
+      "properties": {
+        "reps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "restSec": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "reps",
+        "restSec"
+      ],
+      "additionalProperties": false
+    },
+    "side": {
+      "type": "object",
+      "properties": {
+        "weightKg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "durationS": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": 0
+        },
+        "rir": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "rpe": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "weightOrigin": {
+          "const": "manual"
+        },
+        "drops": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/drop"
+          },
+          "minItems": 1
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cluster"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false,
+      "not": {
+        "type": "object",
+        "properties": {
+          "rir": true,
+          "rpe": true
+        },
+        "required": [
+          "rir",
+          "rpe"
+        ]
+      }
+    },
+    "set": {
+      "type": "object",
+      "properties": {
+        "reps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "weightKg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "rir": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "rpe": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "durationS": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": 0
+        },
+        "distanceM": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": 0
+        },
+        "speedKph": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": 0
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "warmup",
+            "work"
+          ]
+        },
+        "shape": {
+          "type": "string",
+          "enum": [
+            "straight",
+            "dropset",
+            "restpause"
+          ]
+        },
+        "drops": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/drop"
+          },
+          "minItems": 1
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cluster"
+          },
+          "minItems": 1
+        },
+        "sides": {
+          "type": "object",
+          "properties": {
+            "L": {
+              "$ref": "#/$defs/side"
+            },
+            "R": {
+              "$ref": "#/$defs/side"
+            }
+          },
+          "required": [
+            "L",
+            "R"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [],
+      "additionalProperties": false,
+      "not": {
+        "type": "object",
+        "properties": {
+          "rir": true,
+          "rpe": true
+        },
+        "required": [
+          "rir",
+          "rpe"
+        ]
+      },
+      "allOf": [
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "speedKph": true
+            },
+            "required": [
+              "speedKph"
+            ]
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "distanceM": true
+            },
+            "required": [
+              "distanceM"
+            ]
+          }
+        },
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "drops": true
+            },
+            "required": [
+              "drops"
+            ]
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "shape": {
+                "const": "dropset"
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          }
+        },
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "clusters": true
+            },
+            "required": [
+              "clusters"
+            ]
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "shape": {
+                "const": "restpause"
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          }
+        },
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "sides": true
+            },
+            "required": [
+              "sides"
+            ]
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "sides": {
+                "type": "object",
+                "properties": {
+                  "L": {
+                    "type": "object",
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "reps": true
+                        },
+                        "required": [
+                          "reps"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "durationS": true
+                        },
+                        "required": [
+                          "durationS"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "weightKg": true
+                        },
+                        "required": [
+                          "weightKg"
+                        ]
+                      }
+                    ]
+                  },
+                  "R": {
+                    "type": "object",
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "reps": true
+                        },
+                        "required": [
+                          "reps"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "durationS": true
+                        },
+                        "required": [
+                          "durationS"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "weightKg": true
+                        },
+                        "required": [
+                          "weightKg"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "else": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "reps": true
+                },
+                "required": [
+                  "reps"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "durationS": true
+                },
+                "required": [
+                  "durationS"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "distanceM": true
+                },
+                "required": [
+                  "distanceM"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
     "data": {
       "type": "object",
       "properties": {
@@ -39,62 +410,22 @@
               "sets": {
                 "type": "array",
                 "items": {
-                  "type": "object",
-                  "properties": {
-                    "reps": {
-                      "type": "integer",
-                      "minimum": 1
-                    },
-                    "weightKg": {
-                      "type": "number",
-                      "minimum": 0
-                    },
-                    "rpe": {
-                      "type": "number",
-                      "minimum": 0,
-                      "maximum": 10
-                    },
-                    "durationS": {
-                      "type": "number",
-                      "minimum": 0,
-                      "exclusiveMinimum": 0
-                    },
-                    "distanceM": {
-                      "type": "number",
-                      "minimum": 0,
-                      "exclusiveMinimum": 0
-                    }
-                  },
-                  "required": [],
-                  "additionalProperties": false,
-                  "anyOf": [
-                    {
-                      "required": ["reps"],
-                      "type": "object",
-                      "properties": {
-                        "reps": {}
-                      }
-                    },
-                    {
-                      "required": ["durationS"],
-                      "type": "object",
-                      "properties": {
-                        "durationS": {}
-                      }
-                    },
-                    {
-                      "required": ["distanceM"],
-                      "type": "object",
-                      "properties": {
-                        "distanceM": {}
-                      }
-                    }
-                  ]
+                  "$ref": "#/$defs/set"
                 },
                 "minItems": 1
+              },
+              "notes": {
+                "type": "string"
+              },
+              "topWeightKg": {
+                "type": "number",
+                "minimum": 0
               }
             },
-            "required": ["ref", "sets"],
+            "required": [
+              "ref",
+              "sets"
+            ],
             "additionalProperties": false
           },
           "minItems": 1
@@ -108,10 +439,18 @@
             },
             "method": {
               "type": "string",
-              "enum": ["met-estimate", "device", "declared", "unknown"]
+              "enum": [
+                "met-estimate",
+                "device",
+                "declared",
+                "unknown"
+              ]
             }
           },
-          "required": ["kcal", "method"],
+          "required": [
+            "kcal",
+            "method"
+          ],
           "additionalProperties": false
         },
         "perceivedEffort": {
@@ -123,7 +462,11 @@
           "type": "string"
         }
       },
-      "required": ["startedAt", "endedAt", "exercises"],
+      "required": [
+        "startedAt",
+        "endedAt",
+        "exercises"
+      ],
       "additionalProperties": false
     }
   },

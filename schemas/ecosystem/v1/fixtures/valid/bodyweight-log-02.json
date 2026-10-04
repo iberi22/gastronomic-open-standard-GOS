@@ -1,0 +1,27 @@
+{
+  "schema": "swal.health/v1/bodyweight-log",
+  "id": "01J00000000000000000000032",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2026-10-02T18:00:00Z",
+  "source": {
+    "app": "training",
+    "version": "0.1.0"
+  },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "entries": [
+      {
+        "date": "2026-01-05",
+        "weightKg": 80.2
+      },
+      {
+        "date": "2026-02-02",
+        "weightKg": 79.8
+      },
+      {
+        "date": "2026-03-02",
+        "weightKg": 79.1
+      }
+    ]
+  }
+}

@@ -6,6 +6,8 @@
       "enum": [
         "swal.health/v1/meal-log",
         "swal.health/v1/workout-session",
+        "swal.health/v1/workout-plan",
+        "swal.health/v1/bodyweight-log",
         "swal.health/v1/dietary-profile"
       ]
     },
@@ -97,14 +99,22 @@
       "properties": {
         "app": {
           "type": "string",
-          "enum": ["fize", "training", "orionhealth", "gos"]
+          "enum": [
+            "fize",
+            "training",
+            "orionhealth",
+            "gos"
+          ]
         },
         "version": {
           "type": "string",
           "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
         }
       },
-      "required": ["app", "version"],
+      "required": [
+        "app",
+        "version"
+      ],
       "additionalProperties": false
     }
   },
@@ -158,6 +168,42 @@
         "properties": {
           "data": {
             "$ref": "dietary-profile.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/workout-plan"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "workout-plan.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/bodyweight-log"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "bodyweight-log.schema.json#/$defs/data"
           }
         },
         "type": "object"

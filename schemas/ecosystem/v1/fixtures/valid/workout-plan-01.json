@@ -1,0 +1,44 @@
+{
+  "schema": "swal.health/v1/workout-plan",
+  "id": "01J00000000000000000000000",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2026-10-02T18:00:00Z",
+  "source": {
+    "app": "training",
+    "version": "0.1.0"
+  },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "name": "Push A",
+    "progression": "double",
+    "exercises": [
+      {
+        "ref": "wg:barbell-bench-press",
+        "sets": 4,
+        "reps": 8,
+        "repsMin": 6,
+        "weightKg": 60,
+        "inc": 2.5
+      },
+      {
+        "ref": "wg:push-up",
+        "sets": 3,
+        "reps": 15,
+        "bodyweight": true,
+        "inc": 2
+      },
+      {
+        "ref": "wg:overhead-press",
+        "sets": 3,
+        "reps": 10,
+        "restSec": 150,
+        "side": false
+      },
+      {
+        "ref": "wg:plank",
+        "mode": "time",
+        "sets": 3
+      }
+    ]
+  }
+}

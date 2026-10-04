@@ -23,7 +23,14 @@ import {
 const root = fileURLToPath(
   new URL('../../../schemas/ecosystem/v1/', import.meta.url),
 )
-const types = ['envelope', 'meal-log', 'workout-session', 'dietary-profile']
+const types = [
+  'envelope',
+  'meal-log',
+  'workout-session',
+  'workout-plan',
+  'bodyweight-log',
+  'dietary-profile',
+]
 const ajv = new Ajv2020({ allErrors: true, strict: true })
 addFormats(ajv, { mode: 'full' })
 for (const type of types)

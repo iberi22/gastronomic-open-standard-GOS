@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gos.swal.network/schemas/ecosystem/v1/workout-plan.schema.json",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "properties": {
+        "schema": {
+          "const": "swal.health/v1/workout-plan"
+        }
+      },
+      "type": "object"
+    }
+  ],
+  "$defs": {
+    "plannedExercise": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "$ref": "envelope.schema.json#/$defs/exercise"
+        },
+        "sets": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "reps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "repsMin": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "weightKg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "inc": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "bodyweight": {
+          "type": "boolean"
+        },
+        "restSec": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "side": {
+          "type": "boolean"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "reps",
+            "time",
+            "cardio"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref"
+      ],
+      "additionalProperties": false,
+      "$comment": "repsMin below reps is a cross-field comparison JSON Schema 2020-12 cannot express; the hand-written validator rejects the inverted range and the TS type narrows it.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "repsMin": true,
+            "reps": true
+          },
+          "if": {
+            "type": "object",
+            "properties": {
+              "repsMin": true
+            },
+            "required": [
+              "repsMin"
+            ]
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "reps": true
+            },
+            "required": [
+              "reps"
+            ]
+          }
+        }
+      ]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "progression": {
+          "type": "string",
+          "enum": [
+            "off",
+            "linear",
+            "greyskull",
+            "double",
+            "time"
+          ]
+        },
+        "exercises": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/plannedExercise"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "exercises"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "type": "object"
+}
