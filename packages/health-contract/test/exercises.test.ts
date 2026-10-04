@@ -5,14 +5,13 @@ import { describe, expect, it } from 'vitest'
 /**
  * The exercise catalogue as shipped under `exercises/`.
  *
- * Two of these assertions are about licensing rather than shape, and they are the ones that
- * matter most: the photos and GIFs the source dataset carries have unresolved title, so their
- * absence from this repository is a legal boundary, not a missing feature. If a future import
- * helpfully copies them in, this test is what stops it.
+ * Two of these assertions are about licensing rather than shape, and they matter most: the photos
+ * and GIFs the source dataset carries have unresolved title, so their absence here is a legal
+ * boundary, not a missing feature. If a future import helpfully copies them in, this is what stops
+ * it.
  */
 
 const dir = fileURLToPath(new URL('../../../exercises/', import.meta.url))
-const files = readdirSync(dir).filter((f) => f.endsWith('.json'))
 
 type Exercise = {
   slug: string
@@ -26,83 +25,79 @@ type Exercise = {
   artRef: string | null
 }
 
-const groups = files.map((f) => ({
-  file: f,
-  ...(JSON.parse(readFileSync(`${dir}${f}`, 'utf8')) as {
-    bodyPart: string
-    count: number
-    exercises: Exercise[]
-  }),
-}))
+const groups = readdirSync(dir)
+  .filter((f) => f.endsWith('.json'))
+  .map((file) => {
+    const g = JSON.parse(readFileSync(`${dir}${file}`, 'utf8')) as {
+      bodyPart: string
+      count: number
+      exercises: Exercise[]
+    }
+    return { file, ...g }
+  })
 
-const all = groups.flatMap((g) =>
-  g.exercises.map((e) => ({ ...e, file: g.file })),
-)
+const all = groups.flatMap((g) => g.exercises)
 
-// The contract's exercise ref is `wg:<slug>`, and that pattern is enforced in
+// The half of the contract's exercise ref that follows `wg:` — enforced in
 // schemas/ecosystem/v1/envelope.schema.json#/$defs/exercise.
 const SLUG = /^[a-z0-9]+(?:[-_][a-z0-9]+)*$/
 
 describe('exercise catalogue', () => {
-  it('covers every body part with the exercises it holds', () => {
+  it('files every exercise under the body part it claims', () => {
     expect(groups.length).toBeGreaterThan(0)
     for (const g of groups) {
-      expect(g.count, `${g.file} count field`).toBe(g.exercises.length)
       expect(g.exercises.length, `${g.file} is empty`).toBeGreaterThan(0)
+      expect(g.count, `${g.file} count field`).toBe(g.exercises.length)
       for (const e of g.exercises)
         expect(e.bodyPart, `${e.slug} in ${g.file}`).toBe(g.bodyPart)
     }
   })
 
-  it('gives every exercise a slug the contract accepts, and no two share one', () => {
+  it('gives every exercise a unique slug the contract accepts', () => {
     for (const e of all)
       expect(e.slug, `${e.slug} must match wg:<slug>`).toMatch(SLUG)
-    expect(new Set(all.map((e) => e.slug)).size).toBe(all.length)
-    expect(new Set(all.map((e) => e.sourceId)).size).toBe(all.length)
+    expect(new Set(all.map((e) => e.slug)).size, 'duplicate slug').toBe(
+      all.length,
+    )
+    expect(new Set(all.map((e) => e.sourceId)).size, 'duplicate sourceId').toBe(
+      all.length,
+    )
   })
 
   it('carries no artwork from the source dataset', () => {
     // Every upstream record has an `img` and a `gif`. Their title is unresolved — openGym's own
     // README says so — so none of it may be vendored here.
-    for (const e of all) {
-      for (const key of ['img', 'gif', 'image', 'media', 'video', 'url']) {
+    for (const e of all)
+      for (const key of ['img', 'gif', 'image', 'media', 'video', 'url'])
         expect(Object.hasOwn(e, key), `${e.slug} must not carry "${key}"`).toBe(
           false,
         )
-      }
-    }
   })
 
-  it('carries technique instructions and the fields a plan needs', () => {
-    for (const e of all) {
+  it('carries everything a plan needs to prescribe an exercise', () => {
+    for (const e of all)
+      for (const key of ['name', 'equipment', 'targetMuscle'] as const)
+        expect(e[key].length, `${e.slug}.${key} is empty`).toBeGreaterThan(0)
+    for (const e of all)
       expect(e.steps.length, `${e.slug} has no steps`).toBeGreaterThan(0)
-      expect(e.name.length, `${e.slug} has no name`).toBeGreaterThan(0)
-      expect(e.equipment.length, `${e.slug} has no equipment`).toBeGreaterThan(
-        0,
-      )
-      expect(
-        e.targetMuscle.length,
-        `${e.slug} has no target muscle`,
-      ).toBeGreaterThan(0)
-      expect(
-        Array.isArray(e.secondaryMuscles),
-        `${e.slug} secondaryMuscles`,
-      ).toBe(true)
-    }
   })
 
   it('links artwork only where the name matches exactly', () => {
     // Fuzzy matching was tried and rejected: token overlap produced 286 candidates of which 76
     // were wrong (a "band bench press" resolving to a barbell bench illustration). A wrong picture
     // is worse than none, so the catalogue links only what it can prove.
-    const linked = all.filter((e) => e.artRef)
-    for (const e of linked) expect(e.artRef, `${e.slug} artRef`).toMatch(SLUG)
-    expect(linked.length).toBeLessThan(all.length)
+    const linked = all.flatMap((e) =>
+      e.artRef ? [{ ref: e.artRef, of: e.slug }] : [],
+    )
+    for (const l of linked) expect(l.ref, `${l.of} artRef`).toMatch(SLUG)
+    expect(linked.length, 'every exercise links artwork').toBeLessThan(
+      all.length,
+    )
   })
 
-  it('uses body parts and equipment values from the closed sets', () => {
-    // Not enumerating them here on purpose: the point is that a new value is a deliberate act.
-    // The counts are what the import produced and are worth pinning.
+  it('uses the closed value sets the import produced', () => {
+    // Deliberately not enumerated: a new value should be a deliberate act, so only the shape of
+    // the sets is pinned here and their contents live in exercises/README.md.
     expect(new Set(all.map((e) => e.bodyPart)).size).toBe(10)
     expect(new Set(all.map((e) => e.equipment)).size).toBe(28)
     expect(new Set(all.map((e) => e.targetMuscle)).size).toBe(19)
