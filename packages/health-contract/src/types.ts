@@ -110,10 +110,25 @@ export type ExerciseSet = SetEffort & {
   /** Per-limb sets for a unilateral exercise. */
   sides?: { L: SideSet; R: SideSet }
 } & (
-  | { reps: number; durationS?: number; distanceM?: number; speedKph?: number }
-  | { reps?: number; durationS: number; distanceM?: number; speedKph?: number }
-  | { reps?: number; durationS?: number; distanceM: number; speedKph?: number }
-)
+    | {
+        reps: number
+        durationS?: number
+        distanceM?: number
+        speedKph?: number
+      }
+    | {
+        reps?: number
+        durationS: number
+        distanceM?: number
+        speedKph?: number
+      }
+    | {
+        reps?: number
+        durationS?: number
+        distanceM: number
+        speedKph?: number
+      }
+  )
 
 /** One exercise as it was logged, with what the lifter said about it. */
 export interface LoggedExercise {
@@ -180,7 +195,12 @@ export interface PlannedExercise {
  * The policy is part of the record on purpose: the same history read under a different rule gives
  * a different next session, so a plan that did not carry its rule could not be reproduced.
  */
-export type ProgressionPolicy = 'off' | 'linear' | 'greyskull' | 'double' | 'time'
+export type ProgressionPolicy =
+  | 'off'
+  | 'linear'
+  | 'greyskull'
+  | 'double'
+  | 'time'
 
 /**
  * Body weight over time.

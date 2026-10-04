@@ -53,19 +53,13 @@
         },
         "mode": {
           "type": "string",
-          "enum": [
-            "reps",
-            "time",
-            "cardio"
-          ]
+          "enum": ["reps", "time", "cardio"]
         },
         "notes": {
           "type": "string"
         }
       },
-      "required": [
-        "ref"
-      ],
+      "required": ["ref"],
       "additionalProperties": false,
       "$comment": "repsMin below reps is a cross-field comparison JSON Schema 2020-12 cannot express; the hand-written validator rejects the inverted range and the TS type narrows it.",
       "allOf": [
@@ -80,18 +74,14 @@
             "properties": {
               "repsMin": true
             },
-            "required": [
-              "repsMin"
-            ]
+            "required": ["repsMin"]
           },
           "then": {
             "type": "object",
             "properties": {
               "reps": true
             },
-            "required": [
-              "reps"
-            ]
+            "required": ["reps"]
           }
         }
       ]
@@ -105,13 +95,7 @@
         },
         "progression": {
           "type": "string",
-          "enum": [
-            "off",
-            "linear",
-            "greyskull",
-            "double",
-            "time"
-          ]
+          "enum": ["off", "linear", "greyskull", "double", "time"]
         },
         "exercises": {
           "type": "array",
@@ -121,10 +105,7 @@
           }
         }
       },
-      "required": [
-        "name",
-        "exercises"
-      ],
+      "required": ["name", "exercises"],
       "additionalProperties": false
     }
   },

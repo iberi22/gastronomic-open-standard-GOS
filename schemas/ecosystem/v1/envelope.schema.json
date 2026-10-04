@@ -99,22 +99,14 @@
       "properties": {
         "app": {
           "type": "string",
-          "enum": [
-            "fize",
-            "training",
-            "orionhealth",
-            "gos"
-          ]
+          "enum": ["fize", "training", "orionhealth", "gos"]
         },
         "version": {
           "type": "string",
           "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
         }
       },
-      "required": [
-        "app",
-        "version"
-      ],
+      "required": ["app", "version"],
       "additionalProperties": false
     }
   },

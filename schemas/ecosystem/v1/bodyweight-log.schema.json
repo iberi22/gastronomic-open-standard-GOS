@@ -27,10 +27,7 @@
           "exclusiveMinimum": 0
         }
       },
-      "required": [
-        "date",
-        "weightKg"
-      ],
+      "required": ["date", "weightKg"],
       "additionalProperties": false
     },
     "data": {
@@ -44,9 +41,7 @@
           }
         }
       },
-      "required": [
-        "entries"
-      ],
+      "required": ["entries"],
       "additionalProperties": false
     }
   },

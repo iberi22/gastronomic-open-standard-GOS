@@ -112,6 +112,29 @@ export function validateRecord(input: unknown): ValidationResult {
     })
   }
   /**
+   * The drops or clusters attached to a row or to one limb. The two shapes carry different fields
+   * but are checked the same way, and both ride on a full set and on a per-side set — so this is
+   * the one place that knows how.
+   */
+  const intensifier = (kind: string, v: unknown, path: string) => {
+    const drops = kind === 'drops'
+    if (!object(v, path, drops ? ['weightKg', 'reps'] : ['reps', 'restSec']))
+      return
+    if (drops) {
+      number(v.weightKg, `${path}/weightKg`)
+      number(v.reps, `${path}/reps`, true, Infinity, true)
+    } else {
+      number(v.reps, `${path}/reps`, true, Infinity, true)
+      number(v.restSec, `${path}/restSec`, true, Infinity, true)
+    }
+  }
+  const eachIntensifier = (src: Obj, path: string) => {
+    for (const k of ['drops', 'clusters'])
+      if (own(src, k))
+        array(src[k], `${path}/${k}`, (v, p) => intensifier(k, v, p), 1)
+  }
+
+  /**
    * One logged set. `sides` is checked separately because a per-side row carries its numbers on
    * each limb rather than on the row, so the reps/duration/distance rule applies per side.
    */
@@ -140,13 +163,19 @@ export function validateRecord(input: unknown): ValidationResult {
       return
     // rir and rpe are the same judgement on two scales. A set keeps the one it was logged with, so
     // carrying both would leave every reader guessing which one it is meant to read.
-    if (own(set, 'rir') && own(set, 'rpe')) fail(path, 'rir and rpe are mutually exclusive')
+    if (own(set, 'rir') && own(set, 'rpe'))
+      fail(path, 'rir and rpe are mutually exclusive')
     for (const k of ['rir', 'rpe'])
       if (own(set, k)) number(set[k], `${path}/${k}`, false, 10)
     if (own(set, 'weightKg')) number(set.weightKg, `${path}/weightKg`)
-    if (own(set, 'phase')) enumeration(set.phase, `${path}/phase`, ['warmup', 'work'])
+    if (own(set, 'phase'))
+      enumeration(set.phase, `${path}/phase`, ['warmup', 'work'])
     if (own(set, 'shape'))
-      enumeration(set.shape, `${path}/shape`, ['straight', 'dropset', 'restpause'])
+      enumeration(set.shape, `${path}/shape`, [
+        'straight',
+        'dropset',
+        'restpause',
+      ])
     // The drops/clusters belong to a named shape. Carrying them without saying which shape they
     // are leaves a reader unable to tell extra volume from a breakdown of the same total.
     if (own(set, 'shape') && set.shape !== 'dropset' && own(set, 'drops'))
@@ -155,65 +184,42 @@ export function validateRecord(input: unknown): ValidationResult {
       fail(`${path}/clusters`, 'only valid when shape is restpause')
     if (own(set, 'speedKph') && !own(set, 'distanceM'))
       fail(`${path}/speedKph`, 'only valid alongside distanceM')
-    for (const k of ['drops', 'clusters'])
-      if (own(set, k))
-        array(
-          set[k],
-          `${path}/${k}`,
-          (v, p) => {
-            if (!object(v, p, k === 'drops' ? ['weightKg', 'reps'] : ['reps', 'restSec'])) return
-            if (k === 'drops') {
-              number(v.weightKg, `${p}/weightKg`)
-              number(v.reps, `${p}/reps`, true, Infinity, true)
-            } else {
-              number(v.reps, `${p}/reps`, true, Infinity, true)
-              number(v.restSec, `${p}/restSec`, true, Infinity, true)
-            }
-          },
-          1,
-        )
+    eachIntensifier(set, path)
     if (own(set, 'sides')) {
       // A per-side row holds its numbers on each limb, so it is exempt from the row-level
       // reps/duration/distance requirement — that is what makes the asymmetry expressible.
       if (!object(set.sides, `${path}/sides`, ['L', 'R'])) return
       for (const side of ['L', 'R'] as const) {
         const s = (set.sides as Record<string, unknown>)[side]
+        const sp = `${path}/sides/${side}`
         if (
           !object(
             s,
-            `${path}/sides/${side}`,
-            ['weightKg', 'reps', 'rir', 'rpe', 'durationS', 'weightOrigin', 'drops', 'clusters'],
+            sp,
+            [
+              'weightKg',
+              'reps',
+              'rir',
+              'rpe',
+              'durationS',
+              'weightOrigin',
+              'drops',
+              'clusters',
+            ],
             [],
           )
         )
           continue
         if (own(s, 'rir') && own(s, 'rpe'))
-          fail(`${path}/sides/${side}`, 'rir and rpe are mutually exclusive')
+          fail(sp, 'rir and rpe are mutually exclusive')
         for (const k of ['rir', 'rpe'])
-          if (own(s, k)) number(s[k], `${path}/sides/${side}/${k}`, false, 10)
-        if (own(s, 'weightKg')) number(s.weightKg, `${path}/sides/${side}/weightKg`)
-        if (own(s, 'reps'))
-          number(s.reps, `${path}/sides/${side}/reps`, true, Infinity, true)
-        if (own(s, 'durationS')) number(s.durationS, `${path}/sides/${side}/durationS`, true)
+          if (own(s, k)) number(s[k], `${sp}/${k}`, false, 10)
+        if (own(s, 'weightKg')) number(s.weightKg, `${sp}/weightKg`)
+        if (own(s, 'reps')) number(s.reps, `${sp}/reps`, true, Infinity, true)
+        if (own(s, 'durationS')) number(s.durationS, `${sp}/durationS`, true)
         if (own(s, 'weightOrigin'))
-          enumeration(s.weightOrigin, `${path}/sides/${side}/weightOrigin`, ['manual'])
-        for (const k of ['drops', 'clusters'])
-          if (own(s, k))
-            array(
-              s[k],
-              `${path}/sides/${side}/${k}`,
-              (v, p) => {
-                if (!object(v, p, k === 'drops' ? ['weightKg', 'reps'] : ['reps', 'restSec'])) return
-                if (k === 'drops') {
-                  number(v.weightKg, `${p}/weightKg`)
-                  number(v.reps, `${p}/reps`, true, Infinity, true)
-                } else {
-                  number(v.reps, `${p}/reps`, true, Infinity, true)
-                  number(v.restSec, `${p}/restSec`, true, Infinity, true)
-                }
-              },
-              1,
-            )
+          enumeration(s.weightOrigin, `${sp}/weightOrigin`, ['manual'])
+        eachIntensifier(s, sp)
       }
       return
     }
@@ -230,7 +236,19 @@ export function validateRecord(input: unknown): ValidationResult {
       !object(
         v,
         p,
-        ['ref', 'sets', 'reps', 'repsMin', 'weightKg', 'inc', 'bodyweight', 'restSec', 'side', 'mode', 'notes'],
+        [
+          'ref',
+          'sets',
+          'reps',
+          'repsMin',
+          'weightKg',
+          'inc',
+          'bodyweight',
+          'restSec',
+          'side',
+          'mode',
+          'notes',
+        ],
         ['ref'],
       )
     )
@@ -241,21 +259,29 @@ export function validateRecord(input: unknown): ValidationResult {
     if (own(v, 'repsMin') && !own(v, 'reps')) fail(p, 'repsMin requires reps')
     if (own(v, 'sets')) number(v.sets, `${p}/sets`, true, Infinity, true)
     if (own(v, 'reps')) number(v.reps, `${p}/reps`, true, Infinity, true)
-    if (own(v, 'repsMin')) number(v.repsMin, `${p}/repsMin`, true, Infinity, true)
+    if (own(v, 'repsMin'))
+      number(v.repsMin, `${p}/repsMin`, true, Infinity, true)
     // A range whose lower bound reaches its upper bound is not a range: it would ask the lifter
     // to hit a number they have already passed.
-    if (own(v, 'reps') && own(v, 'repsMin') && (v.repsMin as number) >= (v.reps as number))
+    if (
+      own(v, 'reps') &&
+      own(v, 'repsMin') &&
+      (v.repsMin as number) >= (v.reps as number)
+    )
       fail(p, 'repsMin must be below reps')
     if (own(v, 'weightKg')) number(v.weightKg, `${p}/weightKg`)
     if (own(v, 'inc')) number(v.inc, `${p}/inc`, true)
-    if (own(v, 'restSec')) number(v.restSec, `${p}/restSec`, true, Infinity, true)
+    if (own(v, 'restSec'))
+      number(v.restSec, `${p}/restSec`, true, Infinity, true)
     if (own(v, 'bodyweight')) {
-      if (typeof v.bodyweight !== 'boolean') fail(`${p}/bodyweight`, 'expected boolean')
+      if (typeof v.bodyweight !== 'boolean')
+        fail(`${p}/bodyweight`, 'expected boolean')
     }
     if (own(v, 'side')) {
       if (typeof v.side !== 'boolean') fail(`${p}/side`, 'expected boolean')
     }
-    if (own(v, 'mode')) enumeration(v.mode, `${p}/mode`, ['reps', 'time', 'cardio'])
+    if (own(v, 'mode'))
+      enumeration(v.mode, `${p}/mode`, ['reps', 'time', 'cardio'])
     if (own(v, 'notes')) string(v.notes, `${p}/notes`)
   }
 
@@ -410,7 +436,15 @@ export function validateRecord(input: unknown): ValidationResult {
       (v, p) => {
         // notes and topWeightKg are optional; without the empty required list `object` would
         // demand every allowed key.
-        if (!object(v, p, ['ref', 'sets', 'notes', 'topWeightKg'], ['ref', 'sets'])) return
+        if (
+          !object(
+            v,
+            p,
+            ['ref', 'sets', 'notes', 'topWeightKg'],
+            ['ref', 'sets'],
+          )
+        )
+          return
         string(v.ref, `${p}/ref`, new RegExp(`^wg:${SLUG}$`))
         if (own(v, 'notes')) string(v.notes, `${p}/notes`)
         if (own(v, 'topWeightKg')) number(v.topWeightKg, `${p}/topWeightKg`)
@@ -420,7 +454,12 @@ export function validateRecord(input: unknown): ValidationResult {
     )
   } else if (
     input.schema === 'swal.health/v1/workout-plan' &&
-    object(data, '/data', ['name', 'exercises', 'progression'], ['name', 'exercises'])
+    object(
+      data,
+      '/data',
+      ['name', 'exercises', 'progression'],
+      ['name', 'exercises'],
+    )
   ) {
     // A plan without a name cannot be told apart from another plan in a list or a picker.
     string(data.name, '/data/name', undefined, true)

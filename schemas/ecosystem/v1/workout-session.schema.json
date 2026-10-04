@@ -27,10 +27,7 @@
           "minimum": 1
         }
       },
-      "required": [
-        "weightKg",
-        "reps"
-      ],
+      "required": ["weightKg", "reps"],
       "additionalProperties": false
     },
     "cluster": {
@@ -45,10 +42,7 @@
           "minimum": 1
         }
       },
-      "required": [
-        "reps",
-        "restSec"
-      ],
+      "required": ["reps", "restSec"],
       "additionalProperties": false
     },
     "side": {
@@ -102,10 +96,7 @@
           "rir": true,
           "rpe": true
         },
-        "required": [
-          "rir",
-          "rpe"
-        ]
+        "required": ["rir", "rpe"]
       }
     },
     "set": {
@@ -146,18 +137,11 @@
         },
         "phase": {
           "type": "string",
-          "enum": [
-            "warmup",
-            "work"
-          ]
+          "enum": ["warmup", "work"]
         },
         "shape": {
           "type": "string",
-          "enum": [
-            "straight",
-            "dropset",
-            "restpause"
-          ]
+          "enum": ["straight", "dropset", "restpause"]
         },
         "drops": {
           "type": "array",
@@ -183,10 +167,7 @@
               "$ref": "#/$defs/side"
             }
           },
-          "required": [
-            "L",
-            "R"
-          ],
+          "required": ["L", "R"],
           "additionalProperties": false
         }
       },
@@ -198,10 +179,7 @@
           "rir": true,
           "rpe": true
         },
-        "required": [
-          "rir",
-          "rpe"
-        ]
+        "required": ["rir", "rpe"]
       },
       "allOf": [
         {
@@ -210,18 +188,14 @@
             "properties": {
               "speedKph": true
             },
-            "required": [
-              "speedKph"
-            ]
+            "required": ["speedKph"]
           },
           "then": {
             "type": "object",
             "properties": {
               "distanceM": true
             },
-            "required": [
-              "distanceM"
-            ]
+            "required": ["distanceM"]
           }
         },
         {
@@ -230,9 +204,7 @@
             "properties": {
               "drops": true
             },
-            "required": [
-              "drops"
-            ]
+            "required": ["drops"]
           },
           "then": {
             "type": "object",
@@ -241,9 +213,7 @@
                 "const": "dropset"
               }
             },
-            "required": [
-              "shape"
-            ]
+            "required": ["shape"]
           }
         },
         {
@@ -252,9 +222,7 @@
             "properties": {
               "clusters": true
             },
-            "required": [
-              "clusters"
-            ]
+            "required": ["clusters"]
           },
           "then": {
             "type": "object",
@@ -263,9 +231,7 @@
                 "const": "restpause"
               }
             },
-            "required": [
-              "shape"
-            ]
+            "required": ["shape"]
           }
         },
         {
@@ -274,9 +240,7 @@
             "properties": {
               "sides": true
             },
-            "required": [
-              "sides"
-            ]
+            "required": ["sides"]
           },
           "then": {
             "type": "object",
@@ -292,27 +256,21 @@
                         "properties": {
                           "reps": true
                         },
-                        "required": [
-                          "reps"
-                        ]
+                        "required": ["reps"]
                       },
                       {
                         "type": "object",
                         "properties": {
                           "durationS": true
                         },
-                        "required": [
-                          "durationS"
-                        ]
+                        "required": ["durationS"]
                       },
                       {
                         "type": "object",
                         "properties": {
                           "weightKg": true
                         },
-                        "required": [
-                          "weightKg"
-                        ]
+                        "required": ["weightKg"]
                       }
                     ]
                   },
@@ -324,27 +282,21 @@
                         "properties": {
                           "reps": true
                         },
-                        "required": [
-                          "reps"
-                        ]
+                        "required": ["reps"]
                       },
                       {
                         "type": "object",
                         "properties": {
                           "durationS": true
                         },
-                        "required": [
-                          "durationS"
-                        ]
+                        "required": ["durationS"]
                       },
                       {
                         "type": "object",
                         "properties": {
                           "weightKg": true
                         },
-                        "required": [
-                          "weightKg"
-                        ]
+                        "required": ["weightKg"]
                       }
                     ]
                   }
@@ -359,27 +311,21 @@
                 "properties": {
                   "reps": true
                 },
-                "required": [
-                  "reps"
-                ]
+                "required": ["reps"]
               },
               {
                 "type": "object",
                 "properties": {
                   "durationS": true
                 },
-                "required": [
-                  "durationS"
-                ]
+                "required": ["durationS"]
               },
               {
                 "type": "object",
                 "properties": {
                   "distanceM": true
                 },
-                "required": [
-                  "distanceM"
-                ]
+                "required": ["distanceM"]
               }
             ]
           }
@@ -422,10 +368,7 @@
                 "minimum": 0
               }
             },
-            "required": [
-              "ref",
-              "sets"
-            ],
+            "required": ["ref", "sets"],
             "additionalProperties": false
           },
           "minItems": 1
@@ -439,18 +382,10 @@
             },
             "method": {
               "type": "string",
-              "enum": [
-                "met-estimate",
-                "device",
-                "declared",
-                "unknown"
-              ]
+              "enum": ["met-estimate", "device", "declared", "unknown"]
             }
           },
-          "required": [
-            "kcal",
-            "method"
-          ],
+          "required": ["kcal", "method"],
           "additionalProperties": false
         },
         "perceivedEffort": {
@@ -462,11 +397,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "startedAt",
-        "endedAt",
-        "exercises"
-      ],
+      "required": ["startedAt", "endedAt", "exercises"],
       "additionalProperties": false
     }
   },
