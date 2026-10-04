@@ -445,3 +445,43 @@ describe('the two exercise vocabularies', () => {
     expect(validateRecord(plan('wg:no-such-exercise-anywhere')).ok).toBe(true)
   })
 })
+
+describe('a weigh-in lands on a day that exists', () => {
+  const log = (date: string) => ({
+    schema: 'swal.health/v1/bodyweight-log',
+    id: '01J00000000000000000000070',
+    subject: 'subj_01J00000000000000000000000',
+    createdAt: '2026-10-02T18:00:00Z',
+    source: { app: 'training', version: '0.1.0' },
+    gosDataset: '1.4.0+sha256:' + 'a'.repeat(64),
+    data: { entries: [{ date, weightKg: 82.4 }] },
+  })
+
+  it('rejects a day the month does not have', () => {
+    // The pattern bounded the day to 1-31, so 2026-02-30 and 2026-04-31 passed: a date that does
+    // not exist. The leap-year rule existed but only on the timestamp path.
+    expect(validateRecord(log('2026-02-30')).ok).toBe(false)
+    expect(validateRecord(log('2026-04-31')).ok).toBe(false)
+    expect(validateRecord(log('2026-06-31')).ok).toBe(false)
+  })
+
+  it('applies the leap rule in both directions', () => {
+    expect(validateRecord(log('2025-02-29')).ok).toBe(false)
+    expect(validateRecord(log('2024-02-29')).ok).toBe(true)
+    // 1900 is not a leap year (divisible by 100, not 400); 2000 is.
+    expect(validateRecord(log('1900-02-29')).ok).toBe(false)
+    expect(validateRecord(log('2000-02-29')).ok).toBe(true)
+  })
+
+  it('still accepts the last day of every month', () => {
+    for (const d of [
+      '2026-01-31',
+      '2026-04-30',
+      '2026-06-30',
+      '2026-09-30',
+      '2026-11-30',
+      '2026-12-31',
+    ])
+      expect(validateRecord(log(d)).ok, d).toBe(true)
+  })
+})

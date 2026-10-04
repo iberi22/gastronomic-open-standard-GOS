@@ -8,6 +8,21 @@ const VERSION = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/
 const DATASET = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?\+sha256:[a-f0-9]{64}$/
 type Obj = Record<string, unknown>
 const own = (x: Obj, k: string) => Object.hasOwn(x, k)
+/**
+ * Real days in a month, leap years included.
+ *
+ * Both date paths go through this: `isDate` for a full timestamp, and the bodyweight weigh-in for a
+ * bare YYYY-MM-DD. It used to be written out inline in `isDate` only, so the plain-date path bounded
+ * the day to 1-31 and accepted 2026-02-30, 2026-04-31 and 2025-02-29 — dates that do not exist.
+ * One rule, so the two paths cannot drift apart again.
+ */
+function daysInMonth(year: number, month: number): number {
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)
+  return (
+    [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1] ?? 0
+  )
+}
+
 function isDate(x: unknown): boolean {
   if (typeof x !== 'string') return false
   const m = DATE.exec(x)
@@ -20,13 +35,11 @@ function isDate(x: unknown): boolean {
     number,
     number,
   ]
-  const leap = y % 4 === 0 && (y % 100 !== 0 || y % 400 === 0)
-  const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
   return (
     month >= 1 &&
     month <= 12 &&
     day >= 1 &&
-    day <= (days[month - 1] ?? 0) &&
+    day <= daysInMonth(y, month) &&
     h <= 23 &&
     min <= 59 &&
     sec <= 59 &&
@@ -492,7 +505,9 @@ export function validateRecord(input: unknown): ValidationResult {
         // would let two apps disagree about what day the same weigh-in belongs to.
         if (
           typeof v.date !== 'string' ||
-          !/^\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])$/.test(v.date)
+          !/^\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])$/.test(v.date) ||
+          Number(v.date.slice(8, 10)) >
+            daysInMonth(Number(v.date.slice(0, 4)), Number(v.date.slice(5, 7)))
         )
           fail(`${p}/date`, 'invalid calendar date (YYYY-MM-DD)')
         number(v.weightKg, `${p}/weightKg`, true)
