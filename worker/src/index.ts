@@ -41,6 +41,17 @@ function getTodayKey(ip: string): string {
   return `rl:${ip}:${today}`
 }
 
+/** 503 de fail-closed: no se autentico a nadie porque no se pudo validar.
+ * Nunca degradar esto a 401 (afirmaria "credencial invalida" sin saberlo)
+ * ni a 200 (daria acceso de pago). Detalle opcional sin datos del backend. */
+function validationUnavailable(detail: string): Response {
+  return jsonResponse(
+    { error: 'Service Unavailable: API key validation unavailable', detail },
+    503,
+    { 'Retry-After': '60' },
+  )
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     if (request.method === 'OPTIONS') {
@@ -105,8 +116,7 @@ export default {
 
     // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
     if (
-      apiKey &&
-      apiKey.startsWith('swal_') &&
+      apiKey?.startsWith('swal_') &&
       env.BILLING_URL &&
       env.BILLING_SERVICE_SECRET
     ) {
@@ -138,44 +148,45 @@ export default {
       if (env.DB) {
         try {
           const stmt = env.DB.prepare(
-            'SELECT key, tier, status FROM api_keys WHERE key = ? AND status = "active"',
+            'SELECT key, tier, status, expires_at FROM api_keys ' +
+              'WHERE key = ? AND status = ? ' +
+              "AND (expires_at IS NULL OR datetime(expires_at) > datetime('now'))",
           )
-          const result = await stmt
-            .bind(apiKey)
-            .first<{ key: string; tier: string; status: string }>()
+          const result = await stmt.bind(apiKey, 'active').first<{
+            key: string
+            tier: string
+            status: string
+            expires_at: string | null
+          }>()
           if (result) {
             isPaidKey = true
             keyTier = result.tier || 'socio'
           } else {
             return jsonResponse(
               {
-                error: 'Unauthorized: Invalid or inactive API key',
+                error: 'Unauthorized: Invalid, expired or inactive API key',
                 tier: 'invalid',
               },
               401,
             )
           }
         } catch (dbErr) {
+          // FAIL CLOSED. Un fallo de D1 es indisponibilidad del servicio de
+          // validacion, nunca evidencia de que la key sea valida. Un bypass
+          // por substring vivio aqui y era el camino NORMAL en produccion,
+          // porque la tabla api_keys no existia: toda consulta lanzaba aqui.
           console.error('D1 key check error:', dbErr)
-          // If fallback match during testing/dev
-          if (apiKey.includes('socio') || apiKey.includes('paid')) {
-            isPaidKey = true
-            keyTier = 'tiersocio'
-          } else {
-            return jsonResponse(
-              { error: 'Unauthorized: Key validation failed' },
-              401,
-            )
-          }
+          return validationUnavailable(
+            'The key store could not be queried. This is a server-side failure.',
+          )
         }
       } else {
-        // Local dev fallback if DB binding not available
-        if (apiKey.includes('socio') || apiKey.includes('paid')) {
-          isPaidKey = true
-          keyTier = 'tiersocio'
-        } else {
-          return jsonResponse({ error: 'Unauthorized: Invalid API key' }, 401)
-        }
+        // Sin binding DB no hay fuente de verdad contra la que validar, asi
+        // que no se autentica a nadie. Fallar cerrado.
+        console.error('DB binding missing: refusing to authenticate any key')
+        return validationUnavailable(
+          'No key store is bound to this Worker, so no key can be validated.',
+        )
       }
     }
 

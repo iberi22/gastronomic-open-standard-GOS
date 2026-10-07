@@ -27,7 +27,40 @@ function openDB(): Promise<IDBDatabase> {
     }
     const req = indexedDB.open(DB_NAME, DB_VERSION)
     req.onerror = () => reject(req.error)
-    req.onsuccess = () => resolve(req.result)
+    req.onsuccess = () => {
+      const db = req.result
+      if (hasAllStores(db)) {
+        resolve(db)
+        return
+      }
+      // Fallback histórico: si la base existe en la VERSIÓN CORRECTA pero le
+      // faltan stores, `onupgradeneeded` NO se dispara (ya no hay upgrade que
+      // hacer) y toda operación posterior revienta con NotFoundError. El vault
+      // queda muerto y la UI culpa al navegador ("este navegador no expone
+      // IndexedDB"), que es un diagnóstico falso.
+      //
+      // Esa base no puede contener datos del vault —los stores son los únicos
+      // que guardan algo—, así que se reconstruye desde cero. Es la única forma
+      // de recuperarse sin subir DB_VERSION, y sube sola: no depende de que
+      // nadie recuerde migrar. Ver indexeddb-schema.test.ts.
+      const missing = STORES.filter((s) => !db.objectStoreNames.contains(s))
+      db.close()
+      console.warn(
+        `[gos] Base '${DB_NAME}' v${DB_VERSION} sin los object stores ${missing.join(', ')}. Se reconstruye.`,
+      )
+      const del = indexedDB.deleteDatabase(DB_NAME)
+      del.onerror = () => reject(del.error)
+      del.onblocked = () =>
+        reject(
+          new Error(
+            `No se puede reconstruir '${DB_NAME}': otra pestaña la tiene abierta.`,
+          ),
+        )
+      del.onsuccess = () => {
+        // Reabre: ahora sí dispara onupgradeneeded y crea el esquema completo.
+        openDB().then(resolve, reject)
+      }
+    }
     req.onupgradeneeded = (e) => {
       const db = (e.target as IDBOpenDBRequest).result
       for (const store of STORES) {
@@ -37,6 +70,11 @@ function openDB(): Promise<IDBDatabase> {
       }
     }
   })
+}
+
+/** ¿Están los 8 object stores? Un store de menos = base inutilizable. */
+function hasAllStores(db: IDBDatabase): boolean {
+  return STORES.every((store) => db.objectStoreNames.contains(store))
 }
 
 function promisifyRequest<T>(req: IDBRequest<T>): Promise<T> {

@@ -1,0 +1,295 @@
+---
+import { getCollection } from 'astro:content'
+import type { CatalogEntry } from '../../components/AgentAsk.svelte'
+import AgentAsk from '../../components/AgentAsk.svelte'
+import Layout from '../../layouts/Layout.astro'
+import type { GosSource } from '../../lib/llm'
+
+// site/src/pages/agent.astro — la página que cablea el agente de GOS.
+//
+// Por qué el catálogo va dentro del HTML y no en un fetch: el sitio se despliega
+// como output:'static' sin adapter SSR, así que /api/ai/ask devuelve 405 en
+// producción (medido contra gos.swal.network). Meter el catálogo en la página
+// permite que el agente funcione de verdad sin servidor: mismo
+// queryTerms()/rankEntries() que el endpoint, mismas reglas de citación.
+//
+// Las cifras que salen aquí (recetas, ingredientes, substancias…) se cuentan
+// sobre las colecciones reales, no sobre una constante inventada.
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const [dishes, ingredients, substances, vitamins, conditions, diets, mixtures] =
+  await Promise.all([
+    getCollection('dishes'),
+    getCollection('ingredients'),
+    getCollection('substances'),
+    getCollection('vitamins'),
+    getCollection('conditions'),
+    getCollection('diets'),
+    getCollection('mixtures'),
+  ])
+
+type Row = Record<string, unknown>
+function str(v: unknown): string {
+  return typeof v === 'string' ? v : v == null ? '' : String(v)
+}
+function arr(v: unknown): string[] {
+  if (Array.isArray(v)) return v.map((x) => String(x))
+  if (typeof v === 'string') return [v]
+  return []
+}
+function clip(t: unknown, max = 320): string {
+  const clean = String(t ?? '').replace(/\s+/g, ' ').trim()
+  if (clean.length <= max) return clean
+  return `${clean.slice(0, max).replace(/\s+\S*$/, '')}…`
+}
+
+const entries: CatalogEntry[] = []
+
+for (const e of dishes) {
+  const d = e.data as Row
+  const label = str(d.title) || e.id
+  entries.push({
+    kind: 'recipe' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/recipes/${e.id}`,
+    snippet: clip(d.description),
+    haystack: [label, str(d.region), arr(d.categories), arr(d.main_ingredients), str(d.description)].join(' '),
+    fields: {
+      region: str(d.region),
+      dificultad: str(d.difficulty),
+      preparacion: str(d.prep_time),
+      coccion: str(d.cook_time),
+      ingredientes: arr(d.main_ingredients).join(', '),
+    },
+  })
+}
+for (const e of ingredients) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'ingredient' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/ingredients/${e.id}`,
+    snippet: clip(d.description),
+    haystack: [label, str(d.scientific_name), str(d.group), arr(d.tags)].join(' '),
+    fields: {
+      nombre_científico: str(d.scientific_name),
+      grupo: str(d.group),
+    },
+  })
+}
+for (const e of substances) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'substance' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/substances/${e.id}`,
+    snippet: clip(d.benefit || d.description),
+    haystack: [label, str(d.formula), str(d.source_ingredient), arr(d.tags)].join(' '),
+    fields: {
+      formula: str(d.formula),
+      año: str(d.discovery_year),
+      origen: str(d.source_ingredient),
+      beneficio: str(d.benefit),
+      sabor: str(d.sabor),
+      textura: str(d.textura),
+    },
+  })
+}
+for (const e of vitamins) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'vitamin' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/scientific`,
+    snippet: clip(d.function),
+    haystack: [label, str(d.code), str(d.group), str(d.function)].join(' '),
+    fields: { codigo: str(d.code), unidad: str(d.unit), rda: str(d.rda), funcion: str(d.function) },
+  })
+}
+for (const e of conditions) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'condition' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/scientific`,
+    snippet: clip(d.description),
+    haystack: [label, str(d.category), str(d.mechanism), str(d.description)].join(' '),
+    fields: { categoria: str(d.category), evidencia: str(d.evidence_level) },
+  })
+}
+for (const e of diets) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'diet' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/scientific`,
+    snippet: clip(d.description),
+    haystack: [label, str(d.description), arr(d.rules)].join(' '),
+    fields: { reglas: arr(d.rules).join(' · ') },
+  })
+}
+for (const e of mixtures) {
+  const d = e.data as Row
+  const label = str(d.name) || e.id
+  entries.push({
+    kind: 'mixture' as GosSource['kind'],
+    id: e.id,
+    label,
+    url: `${base}/scientific`,
+    snippet: clip(d.synergy_mechanism || d.description),
+    haystack: [label, arr(d.ingredients), arr(d.active_compounds)].join(' '),
+    fields: {
+      ingredientes: arr(d.ingredients).join(', '),
+      compuestos: arr(d.active_compounds).join(', '),
+      contraindicaciones: arr(d.contraindications).join(', '),
+    },
+  })
+}
+
+const counts: Array<[string, number]> = [
+  ['recetas', dishes.length],
+  ['ingredientes', ingredients.length],
+  ['substancias', substances.length],
+  ['vitaminas', vitamins.length],
+  ['afecciones', conditions.length],
+  ['dietas', diets.length],
+  ['mezclas', mixtures.length],
+]
+
+// Sugerencias construidas con lo que existe: si disappears una receta, el chip
+// no puede seguir pidiendo por ella.
+const suggestions: string[] = []
+const alicina = substances.find((s) => s.id === 'alicina')
+if (alicina) suggestions.push(`¿Qué es la ${str((alicina.data as Row).name)}?`)
+for (const s of dishes) {
+  if (suggestions.length >= 4) break
+  const t = str((s.data as Row).title)
+  if (t && t.length > 3) suggestions.push(t)
+}
+
+const title = 'Agente GOS — consulta con fuentes verificables'
+const desc =
+  'Pregunta al agente de GOS. Cada respuesta cita la receta, ingrediente o sustancia real del repo de la que sale; sin fuente verificable, el agente dice que no lo sabe.'
+---
+
+<Layout title={title} description={desc}>
+  <div class="wrap">
+    <nav class="crumbs">
+      <a href={`${base}/`}>GOS</a>
+      <span aria-hidden="true">/</span>
+      <span>Agente</span>
+    </nav>
+
+    <h1 class="h1">Agente de consulta</h1>
+    <p class="lede">
+      El agente lee este mismo repo y responde citando la entrada de la que
+      saca cada dato. No da cifras nutricionales ni recomendaciones de salud
+      que no estén escritas en una ficha: si no encuentra la fuente, contesta
+      que no lo sabe.
+    </p>
+
+    <ul class="counts" aria-label="Contenido disponible para consultar">
+      {
+        counts.map(([label, n]) => (
+          <li>
+            <span class="n">{n}</span>
+            <span class="l">{label}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <AgentAsk client:load {entries} {suggestions} />
+
+    <section class="how">
+      <h2>Cómo decide qué se publica</h2>
+      <ol>
+        <li>
+          La pregunta se busca en {entries.length} entradas del contenido real
+          (las mismas que alimentan las fichas y el grafo).
+        </li>
+        <li>
+          En <strong>free</strong> no hay inferencia: se devuelve el texto
+          literal de las coincidencias, con su slug.
+        </li>
+        <li>
+          En <strong>socio</strong> el modelo resume esas mismas entradas, y
+          cada cita se valida contra la lista. Una cita a un slug que no
+          existe se descarta.
+        </li>
+        <li>
+          Si la respuesta no tiene ninguna cita válida —o el modelo declara
+          <code>NO_LO_SE</code>— no se publica: se dice que no hay fuente.
+        </li>
+      </ol>
+      <p class="foot">
+        Endpoint para consumidores: <code>POST /api/ai/ask</code> con
+        <code>{'{ question, tierId }'}</code>. Requiere runtime de servidor
+        (adapter SSR o Pages Function); en el deploy estático actual devuelve
+        <code>405</code> y la página resuelve en el navegador.
+      </p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .wrap { display: flex; flex-direction: column; gap: 18px; padding-bottom: 40px; }
+  .crumbs { display: flex; gap: 8px; font-size: 12px; color: var(--swal-text-secondary); }
+  .crumbs a { color: var(--swal-accent-text, var(--swal-accent)); text-decoration: none; }
+  .h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--swal-text);
+  }
+  .lede {
+    margin: 0;
+    max-width: 68ch;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--swal-text-secondary);
+  }
+  .counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .counts li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--swal-border);
+    border-radius: 999px;
+    background: var(--swal-surface);
+  }
+  .n { font-size: 14px; font-weight: 800; color: var(--swal-text); font-family: var(--swal-font-mono, ui-monospace); }
+  .l { font-size: 12px; color: var(--swal-text-secondary); }
+  .how {
+    padding: 18px;
+    border: 1px solid var(--swal-border);
+    border-radius: 16px;
+    background: var(--swal-surface);
+  }
+  .how h2 { margin: 0 0 10px; font-size: 16px; font-weight: 800; color: var(--swal-text); }
+  .how ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .how li { font-size: 13px; line-height: 1.55; color: var(--swal-text-secondary); }
+  .foot { margin: 12px 0 0; font-size: 12px; line-height: 1.6; color: var(--swal-text-secondary); }
+  code { font-family: var(--swal-font-mono, ui-monospace); font-size: 12px; color: var(--swal-accent-text, var(--swal-accent)); }
+</style>
