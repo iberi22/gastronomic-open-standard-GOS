@@ -4198,14 +4198,52 @@
         },
         "description": "El ají es el condimento estrella de la comida callejera y casera en Colombia. Existen muchas variantes, pero la base es una mezcla de ají fresco, cebolla, cilantro, tomate y vinagre. Es tendencia por su presencia en snacks, empanadas y fritos.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ají rojo picante",
+          "Cebolla larga",
+          "Tomate",
+          "Cilantro",
+          "Vinagre",
+          "Agua"
+        ],
+        "prep_time": 10,
+        "cook_time": 30,
+        "servings": 1,
+        "categories": [
+          "Salsa",
+          "Acompañamiento"
+        ],
+        "sensory": {
+          "flavor": [
+            "Picante",
+            "Ácido",
+            "Herbáceo"
+          ],
+          "texture": [
+            "Líquido con vegetales picados"
+          ],
+          "aroma": [
+            "Vinagre y cilantro fresco"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Salsa",
+        "Acompañamiento"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 1,
+      "mainIngredients": [
+        "Ají rojo picante",
+        "Cebolla larga",
+        "Tomate",
+        "Cilantro",
+        "Vinagre",
+        "Agua"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/condimentos/aji_picante/aji_picante.md"
     },
@@ -4236,14 +4274,52 @@
         },
         "description": "El guacamole colombiano es una salsa fresca y sencilla, diferente a la versión mexicana. Se prepara con aguacate, cebolla, tomate y cilantro, y es tendencia por su uso en asados, arepas y comidas rápidas.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Aguacate maduro",
+          "Tomate",
+          "Cebolla larga",
+          "Cilantro",
+          "Zumo de limón",
+          "Huevos cocidos (opcional)"
+        ],
+        "prep_time": 10,
+        "cook_time": 30,
+        "servings": 1,
+        "categories": [
+          "Salsa",
+          "Acompañamiento"
+        ],
+        "sensory": {
+          "flavor": [
+            "Suave",
+            "Cremoso",
+            "Cítrico"
+          ],
+          "texture": [
+            "Cremoso con trozos de vegetales"
+          ],
+          "aroma": [
+            "Aguacate fresco y cilantro"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Salsa",
+        "Acompañamiento"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 1,
+      "mainIngredients": [
+        "Aguacate maduro",
+        "Tomate",
+        "Cebolla larga",
+        "Cilantro",
+        "Zumo de limón",
+        "Huevos cocidos (opcional)"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/condimentos/guacamole_colombiano/guacamole_colombiano.md"
     },
@@ -4274,14 +4350,51 @@
         },
         "description": "El hogao es la salsa base por excelencia de la cocina colombiana. Se usa como acompañamiento de arepas, carnes, empanadas y muchos otros platos. Su mezcla de tomate, cebolla y especias es símbolo de hogar y tradición, y tendencia en recetas virales por su sabor casero.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Tomate maduro",
+          "Cebolla larga",
+          "Ajo",
+          "Comino",
+          "Aceite vegetal"
+        ],
+        "prep_time": 20,
+        "cook_time": 30,
+        "servings": 1,
+        "categories": [
+          "Salsa",
+          "Acompañamiento"
+        ],
+        "sensory": {
+          "flavor": [
+            "Umami",
+            "Salado",
+            "Dulce vegetal"
+          ],
+          "texture": [
+            "Espeso",
+            "Salsa suave"
+          ],
+          "aroma": [
+            "Sofrito de tomate y cebolla"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Salsa",
+        "Acompañamiento"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 1,
+      "mainIngredients": [
+        "Tomate maduro",
+        "Cebolla larga",
+        "Ajo",
+        "Comino",
+        "Aceite vegetal"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/condimentos/hogao/hogao.md"
     },
@@ -4312,14 +4425,48 @@
         },
         "description": "La salsa rosada es un aderezo básico y muy popular en Colombia, mezcla de mayonesa y kétchup, usada en salchipapas, hamburguesas, perros calientes y snacks. Es tendencia por su sabor suave y su presencia en la comida rápida urbana.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Mayonesa",
+          "Salsa de tomate (kétchup)",
+          "Zumo de limón",
+          "Gotas de brandy (opcional)"
+        ],
+        "prep_time": 2,
+        "cook_time": 30,
+        "servings": 1,
+        "categories": [
+          "Salsa",
+          "Acompañamiento"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce suave",
+            "Cremoso",
+            "Ligeramente ácido"
+          ],
+          "texture": [
+            "Cremoso suave"
+          ],
+          "aroma": [
+            "Mayonesa y tomate"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Salsa",
+        "Acompañamiento"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 2,
+      "cookTime": 30,
+      "servings": 1,
+      "mainIngredients": [
+        "Mayonesa",
+        "Salsa de tomate (kétchup)",
+        "Zumo de limón",
+        "Gotas de brandy (opcional)"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/condimentos/salsa_rosada/salsa_rosada.md"
     },
@@ -4350,14 +4497,45 @@
         },
         "description": "El suero costeño es un lácteo fermentado típico de la Costa Caribe colombiana, similar a la crema agria, con sabor ácido y textura cremosa. Es tendencia por su uso en arepas, mote de queso, yuca y comidas típicas de la región.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "cook_time": 30,
+        "sensory": {
+          "flavor": [
+            "Ácido láctico",
+            "Salado"
+          ],
+          "texture": [
+            "Cremoso untuoso"
+          ],
+          "aroma": [
+            "Lácteo fermentado"
+          ]
+        },
+        "servings": 1,
+        "prep_time": "48 horas (fermentación)",
+        "main_ingredients": [
+          "Leche entera",
+          "Cultivo láctico o vinagre",
+          "Sal"
+        ],
+        "categories": [
+          "Salsa",
+          "Acompañamiento"
+        ]
       },
-      "category": [],
+      "category": [
+        "Salsa",
+        "Acompañamiento"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": "48 horas (fermentación)",
+      "cookTime": 30,
+      "servings": 1,
+      "mainIngredients": [
+        "Leche entera",
+        "Cultivo láctico o vinagre",
+        "Sal"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/condimentos/suero_costeño/suero_costeño.md"
     },
@@ -4388,14 +4566,51 @@
         },
         "description": "Las Bolas de Pescado son un clásico de la cocina isleña de San Andrés y Providencia. Se preparan a partir de pescado fresco desmenuzado, sazonado con especias y vegetales, y luego se forman bolas que se fríen hasta dorar. Son ideales como entrada, acompañante o plato principal.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Carne de pescado blanco",
+          "Pan rallado",
+          "Cebolla",
+          "Pimentón",
+          "Especias"
+        ],
+        "prep_time": 25,
+        "cook_time": 20,
+        "servings": 6,
+        "categories": [
+          "Plato fuerte",
+          "Fritura"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Marino",
+            "Especiado"
+          ],
+          "texture": [
+            "Crujiente exterior",
+            "Pollo tierno"
+          ],
+          "aroma": [
+            "Fritura de pescado"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Fritura"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 25,
+      "cookTime": 20,
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de pescado blanco",
+        "Pan rallado",
+        "Cebolla",
+        "Pimentón",
+        "Especias"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/bolas_de_pescado/bolas_de_pescado.md"
     },
@@ -4517,14 +4732,49 @@
         },
         "description": "Las cocadas son uno de los dulces más tradicionales de la región Insular y de toda la costa Caribe colombiana. En San Andrés y Providencia, se preparan con coco fresco rallado, azúcar y, en ocasiones, leche condensada o frutas tropicales. Son ideales como postre o snack para compartir.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Coco rallado",
+          "Panela o azúcar",
+          "Agua de coco",
+          "Canela"
+        ],
+        "prep_time": 15,
+        "cook_time": 30,
+        "servings": 20,
+        "categories": [
+          "Dulce",
+          "Postre"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Acaramelado",
+            "Coco"
+          ],
+          "texture": [
+            "Masticable",
+            "Crujiente de coco"
+          ],
+          "aroma": [
+            "Coco tostado y panela"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Dulce",
+        "Postre"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 20,
+      "mainIngredients": [
+        "Coco rallado",
+        "Panela o azúcar",
+        "Agua de coco",
+        "Canela"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/cocadas/cocadas.md"
     },
@@ -4555,14 +4805,52 @@
         },
         "description": "Crab Backs es uno de los platos más representativos de San Andrés y Providencia. Consiste en cangrejo fresco desmenuzado, mezclado con especias, vegetales y pan rallado, luego rellenado en su propio caparazón y gratinado al horno. Es una delicia isleña que destaca por su sabor marino y su present...",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Carne de cangrejo",
+          "Pan rallado",
+          "Cebolla",
+          "Pimentón",
+          "Mantequilla",
+          "Caparazón de cangrejo"
+        ],
+        "prep_time": 40,
+        "cook_time": 30,
+        "servings": 6,
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Marino intenso",
+            "Especiado"
+          ],
+          "texture": [
+            "Gratinado suave interior"
+          ],
+          "aroma": [
+            "Cangrejo horneado"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 40,
+      "cookTime": 30,
+      "servings": 6,
+      "mainIngredients": [
+        "Carne de cangrejo",
+        "Pan rallado",
+        "Cebolla",
+        "Pimentón",
+        "Mantequilla",
+        "Caparazón de cangrejo"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/crab_backs/crab_backs.md"
     },
@@ -4593,14 +4881,53 @@
         },
         "description": "Las Crab Patties o empanadas de cangrejo son una delicia típica de San Andrés y Providencia. Consisten en una masa crujiente rellena de carne de cangrejo sazonada con especias, vegetales y, en ocasiones, un toque de coco. Son ideales como entrada, snack o acompañante en celebraciones isleñas.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Carne de cangrejo",
+          "Masa de harina",
+          "Cebolla",
+          "Pimentón",
+          "Tomillo",
+          "Chile picante"
+        ],
+        "prep_time": 40,
+        "cook_time": 30,
+        "servings": 10,
+        "categories": [
+          "Snack",
+          "Comida callejera"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Picante suave",
+            "Marino"
+          ],
+          "texture": [
+            "Masa crujiente",
+            "Relleno jugoso"
+          ],
+          "aroma": [
+            "Empanada de cangrejo frita"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Snack",
+        "Comida callejera"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 40,
+      "cookTime": 30,
+      "servings": 10,
+      "mainIngredients": [
+        "Carne de cangrejo",
+        "Masa de harina",
+        "Cebolla",
+        "Pimentón",
+        "Tomillo",
+        "Chile picante"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/crab_patty/crab_patty.md"
     },
@@ -4631,14 +4958,53 @@
         },
         "description": "Este plato es una de las recetas tradicionales de la región Insular, especialmente en San Andrés y Providencia. Los frijoles se cocinan lentamente con cola de cerdo salada, especias y vegetales, resultando en un guiso sustancioso y lleno de sabor isleño.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Frijoles rojos",
+          "Cola de cerdo (pig tail)",
+          "Plátano verde",
+          "Cebolla",
+          "Tomate",
+          "Ajo"
+        ],
+        "prep_time": 20,
+        "cook_time": 2,
+        "servings": 8,
+        "categories": [
+          "Plato fuerte",
+          "Guiso"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Sustancioso umami",
+            "Ahogado"
+          ],
+          "texture": [
+            "Frijoles cremosos",
+            "Carne melosa"
+          ],
+          "aroma": [
+            "Guiso de frijoles y cerdo"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Guiso"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 20,
+      "cookTime": 2,
+      "servings": 8,
+      "mainIngredients": [
+        "Frijoles rojos",
+        "Cola de cerdo (pig tail)",
+        "Plátano verde",
+        "Cebolla",
+        "Tomate",
+        "Ajo"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/frijoles_con_cola_de_cerdo/frijoles_con_cola_de_cerdo.md"
     },
@@ -5173,14 +5539,51 @@
         },
         "description": "La Torta de Calabaza es un postre tradicional de las islas de San Andrés y Providencia, apreciado por su textura húmeda y su sabor especiado. Se elabora con calabaza cocida, especias, azúcar y, en ocasiones, un toque de coco rallado. Es ideal para celebraciones y reuniones familiares.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Calabaza (pumpkin)",
+          "Harina de trigo",
+          "Huevos",
+          "Mantequilla",
+          "Azúcar",
+          "Canela"
+        ],
+        "prep_time": 30,
+        "cook_time": 1,
+        "servings": 10,
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce",
+            "Especiado"
+          ],
+          "texture": [
+            "Bizcocho suave humedecido"
+          ],
+          "aroma": [
+            "Calabaza horneada y canela"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 30,
+      "cookTime": 1,
+      "servings": 10,
+      "mainIngredients": [
+        "Calabaza (pumpkin)",
+        "Harina de trigo",
+        "Huevos",
+        "Mantequilla",
+        "Azúcar",
+        "Canela"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/insular/torta_de_calabaza/torta_de_calabaza.md"
     },
@@ -5233,14 +5636,39 @@
           "category": "Plato Principal"
         },
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Pollo desmechado",
+          "Arroz",
+          "Arvejas",
+          "Zanahoria",
+          "Habichuelas",
+          "Pimentón"
+        ],
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
+      "mainIngredients": [
+        "Pollo desmechado",
+        "Arroz",
+        "Arvejas",
+        "Zanahoria",
+        "Habichuelas",
+        "Pimentón"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/nacionales/arroz_con_pollo/arroz_con_pollo.md"
     },
@@ -5909,14 +6337,29 @@
         "image": "./images/1.png",
         "description": "El Arroz Llanero es un plato emblemático de la Orinoquía colombiana, preparado con arroz, carnes variadas (res, cerdo, pollo), verduras y condimentos locales. Es una receta festiva, ideal para grandes reuniones y celebraciones en los llanos.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ingredientes tradicionales"
+        ],
+        "prep_time": 30,
+        "cook_time": 1,
+        "servings": 10,
+        "categories": [
+          "Tradicional",
+          "Plato fuerte"
+        ]
       },
-      "category": [],
+      "category": [
+        "Tradicional",
+        "Plato fuerte"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 30,
+      "cookTime": 1,
+      "servings": 10,
+      "mainIngredients": [
+        "Ingredientes tradicionales"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/arroz_llanero/arroz_llanero.md"
     },
@@ -5972,14 +6415,29 @@
         "image": "./images/1.png",
         "description": "La Cachama Asada es un plato típico de la Orinoquía colombiana, preparado con cachama (pez de río) asada a la brasa y acompañada de yuca, plátano y ají llanero. Es muy apreciado en las zonas ribereñas y en festividades llaneras por su sabor suave y carne jugosa.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ingredientes tradicionales"
+        ],
+        "prep_time": 30,
+        "cook_time": 45,
+        "servings": 6,
+        "categories": [
+          "Tradicional",
+          "Plato fuerte"
+        ]
       },
-      "category": [],
+      "category": [
+        "Tradicional",
+        "Plato fuerte"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 6,
+      "mainIngredients": [
+        "Ingredientes tradicionales"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/cachama_asada/cachama_asada.md"
     },
@@ -6035,14 +6493,29 @@
         "image": "./images/1.png",
         "description": "La Carne a la Perra es un plato tradicional de los llanos orientales de Colombia, característico por su preparación rústica al fuego directo. Se trata de carne de res asada en grandes trozos sobre brasas, sazonada con hierbas y servida con yuca, plátano y ají llanero. Es símbolo de fraternidad y ...",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ingredientes tradicionales"
+        ],
+        "prep_time": 1,
+        "cook_time": 1,
+        "servings": 10,
+        "categories": [
+          "Tradicional",
+          "Plato fuerte"
+        ]
       },
-      "category": [],
+      "category": [
+        "Tradicional",
+        "Plato fuerte"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 1,
+      "servings": 10,
+      "mainIngredients": [
+        "Ingredientes tradicionales"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/carne_a_la_perra/carne_a_la_perra.md"
     },
@@ -6187,14 +6660,29 @@
         "image": "./images/1.png",
         "description": "El Chigüiro Asado es un plato tradicional y emblemático de la Orinoquía colombiana, preparado con carne de chigüiro (capibara), el roedor más grande del mundo. Su carne es apreciada por su sabor suave y textura jugosa, y suele asarse a la brasa y servirse con yuca, plátano y ají llanero.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ingredientes tradicionales"
+        ],
+        "prep_time": 1,
+        "cook_time": 1,
+        "servings": 8,
+        "categories": [
+          "Tradicional",
+          "Plato fuerte"
+        ]
       },
-      "category": [],
+      "category": [
+        "Tradicional",
+        "Plato fuerte"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 1,
+      "servings": 8,
+      "mainIngredients": [
+        "Ingredientes tradicionales"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/chiguiro_asado/chiguiro_asado.md"
     },
@@ -6250,14 +6738,29 @@
         "image": "./images/1.png",
         "description": "El Entreverado es un plato típico de la Orinoquía colombiana, especialmente en los llanos orientales. Es una mezcla de diferentes tipos de carnes (res, cerdo, pollo, chigüiro) asadas al carbón y servidas juntas, acompañadas de yuca, plátano y ají llanero. Es el plato estrella en celebraciones y r...",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Ingredientes tradicionales"
+        ],
+        "prep_time": 1,
+        "cook_time": 1,
+        "servings": 12,
+        "categories": [
+          "Tradicional",
+          "Plato fuerte"
+        ]
       },
-      "category": [],
+      "category": [
+        "Tradicional",
+        "Plato fuerte"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 1,
+      "servings": 12,
+      "mainIngredients": [
+        "Ingredientes tradicionales"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/entreverado/entreverado.md"
     },
@@ -6381,14 +6884,53 @@
         },
         "description": "El Hervido de Gumarra es una sopa tradicional de la Orinoquía colombiana, preparada con carne de gumarra (pez de río), tubérculos y verduras locales. Es un plato reconfortante, muy apreciado en las comunidades ribereñas de los llanos orientales.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Gallina criolla",
+          "Plátano verde",
+          "Yuca",
+          "Papa",
+          "Cilantro de monte",
+          "Ajo"
+        ],
+        "prep_time": 30,
+        "cook_time": 2,
+        "servings": 8,
+        "categories": [
+          "Sopa",
+          "Tradicional"
+        ],
+        "sensory": {
+          "flavor": [
+            "Caldo sustancioso",
+            "Salado",
+            "Herbáceo"
+          ],
+          "texture": [
+            "Caldo rico",
+            "Carne de gallina firme"
+          ],
+          "aroma": [
+            "Caldo de gallina de campo"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Sopa",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 30,
+      "cookTime": 2,
+      "servings": 8,
+      "mainIngredients": [
+        "Gallina criolla",
+        "Plátano verde",
+        "Yuca",
+        "Papa",
+        "Cilantro de monte",
+        "Ajo"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/hervido_de_gumarra/hervido_de_gumarra.md"
     },
@@ -6510,14 +7052,49 @@
         },
         "description": "El Pabellón Llanero es un plato representativo de la Orinoquía colombiana, inspirado en la cocina criolla de los llanos. Consiste en carne desmechada, arroz blanco, tajadas de plátano maduro, caraotas (frijoles negros) y queso rallado, todo dispuesto en un solo plato colorido y abundante.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Carne desmechada",
+          "Arroz blanco",
+          "Caraotas (frijoles negros)",
+          "Plátano maduro frito",
+          "Queso blanco"
+        ],
+        "prep_time": 1,
+        "cook_time": 2,
+        "servings": 8,
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ],
+        "sensory": {
+          "flavor": [
+            "Dulce y Salado",
+            "Umami"
+          ],
+          "texture": [
+            "Combinación de suave, crujiente y jugoso"
+          ],
+          "aroma": [
+            "Carne guisada y plátano frito"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 2,
+      "servings": 8,
+      "mainIngredients": [
+        "Carne desmechada",
+        "Arroz blanco",
+        "Caraotas (frijoles negros)",
+        "Plátano maduro frito",
+        "Queso blanco"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/pabellon_llanero/pabellon_llanero/pabellon_llanero.md"
     },
@@ -6548,14 +7125,48 @@
         },
         "description": "El Pan de Arroz es una delicia tradicional de la Orinoquía colombiana, especialmente popular en los Llanos Orientales. Se elabora con arroz molido, queso llanero y manteca, resultando en un panecillo crujiente por fuera y suave por dentro, perfecto para acompañar desayunos o meriendas.",
         "media": [],
-        "embedding_version": 1
+        "embedding_version": 1,
+        "main_ingredients": [
+          "Harina de arroz",
+          "Cuajada o queso fresco",
+          "Mantequilla",
+          "Huevos"
+        ],
+        "prep_time": 30,
+        "cook_time": 30,
+        "servings": 12,
+        "categories": [
+          "Pan",
+          "Amasijo"
+        ],
+        "sensory": {
+          "flavor": [
+            "Salado",
+            "Quesero",
+            "Tostado"
+          ],
+          "texture": [
+            "Crocante rosca horneada"
+          ],
+          "aroma": [
+            "Queso horneado y arroz tostado"
+          ]
+        }
       },
-      "category": [],
+      "category": [
+        "Pan",
+        "Amasijo"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 12,
+      "mainIngredients": [
+        "Harina de arroz",
+        "Cuajada o queso fresco",
+        "Mantequilla",
+        "Huevos"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/orinoquia/pan_de_arroz/pan_de_arroz.md"
     },
@@ -6827,14 +7438,35 @@
         ],
         "image": "https://www.misrecetas.com/fotos/photo/main/1368/cayeye.jpg",
         "description": "* 6-8 guineos verdes (bananos verdes pequeños)",
-        "yaml_validation": "https://yaml-online-parser.appspot.com/"
+        "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "main_ingredients": [
+          "Guineo verde (plátano verde)",
+          "Mantequilla",
+          "Queso costeño rallado",
+          "Refrito de hogao"
+        ],
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
+      "mainIngredients": [
+        "Guineo verde (plátano verde)",
+        "Mantequilla",
+        "Queso costeño rallado",
+        "Refrito de hogao"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/cayeye.md"
     },
@@ -6889,14 +7521,37 @@
         ],
         "image": "https://www.misrecetas.com/fotos/photo/main/1368/envueltos_de_mazorca.jpg",
         "description": "* 10 mazorcas tiernas y grandes",
-        "yaml_validation": "https://yaml-online-parser.appspot.com/"
+        "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "main_ingredients": [
+          "Maíz tierno choclo",
+          "Queso fresco",
+          "Mantequilla",
+          "Azúcar",
+          "Hojas de choclo"
+        ],
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Amasijo",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Amasijo",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
+      "mainIngredients": [
+        "Maíz tierno choclo",
+        "Queso fresco",
+        "Mantequilla",
+        "Azúcar",
+        "Hojas de choclo"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/envueltos.md"
     },
@@ -6955,13 +7610,23 @@
         ],
         "image": "https://www.misrecetas.com/fotos/photo/main/1368/mazamorra.jpg",
         "description": "* 1 libra de maíz blanco trillado",
-        "yaml_validation": "https://yaml-online-parser.appspot.com/"
+        "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
       "mainIngredients": [
         "maíz blanco",
         "leche",
@@ -7203,14 +7868,37 @@
         ],
         "image": "https://www.misrecetas.com/fotos/photo/main/1368/postre_de_natas.jpg",
         "description": "* 2 litros de leche entera",
-        "yaml_validation": "https://yaml-online-parser.appspot.com/"
+        "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "main_ingredients": [
+          "Natas de leche",
+          "Almíbar de azúcar",
+          "Yemas de huevo",
+          "Pasas",
+          "Aguardiente o ron"
+        ],
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Postre",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Postre",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
+      "mainIngredients": [
+        "Natas de leche",
+        "Almíbar de azúcar",
+        "Yemas de huevo",
+        "Pasas",
+        "Aguardiente o ron"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/postre_de_natas.md"
     },
@@ -7265,14 +7953,41 @@
         ],
         "image": "https://www.misrecetas.com/fotos/photo/main/1368/tamal_tolimense.jpg",
         "description": "* **Para la masa**:",
-        "yaml_validation": "https://yaml-online-parser.appspot.com/"
+        "yaml_validation": "https://yaml-online-parser.appspot.com/",
+        "main_ingredients": [
+          "Masa de maíz",
+          "Carne de cerdo",
+          "Pollo",
+          "Huevo cocido",
+          "Zanahoria",
+          "Arvejas",
+          "Hojas de plátano"
+        ],
+        "prep_time": 1,
+        "cook_time": 30,
+        "servings": 4,
+        "categories": [
+          "Plato fuerte",
+          "Tradicional"
+        ]
       },
-      "category": [],
+      "category": [
+        "Plato fuerte",
+        "Tradicional"
+      ],
       "difficulty": "★★☆☆☆",
-      "prepTime": null,
-      "cookTime": null,
-      "servings": null,
-      "mainIngredients": [],
+      "prepTime": 1,
+      "cookTime": 30,
+      "servings": 4,
+      "mainIngredients": [
+        "Masa de maíz",
+        "Carne de cerdo",
+        "Pollo",
+        "Huevo cocido",
+        "Zanahoria",
+        "Arvejas",
+        "Hojas de plátano"
+      ],
       "tags": [],
       "filePath": "dishes/colombian/otras_preparaciones/tamal_tolimense.md"
     },

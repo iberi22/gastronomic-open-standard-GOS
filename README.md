@@ -5,7 +5,7 @@ bioactive substances ↔ flavors ↔ techniques ↔ health conditions ↔ diets 
 The repo `.md` files ARE the database (405 dishes, 552 ingredients, 40 vitamins,
 35 conditions, 30 substances, 6 diets). Built with Astro 7 + Svelte 5 + Tailwind v4.
 
-Live: **https://gos-site.pages.dev** (Cloudflare Pages, single canonical deploy)
+Live: **https://gos.swal.network** (Cloudflare Pages, single canonical deploy)
 
 ## Purpose
 
@@ -35,7 +35,7 @@ Quality gates: `pnpm run lint` (Biome code + markdownlint content + manuallint),
 
 ## Free API (no key, fair use)
 
-Base `https://gos-site.pages.dev/api` — `index.json`, `all.json`,
+Base `https://gos.swal.network/api` — `index.json`, `all.json`,
 `countries` (18, top colombian 122), `by-country/<c>.json`, `spanish/*.json`,
 `ingredients/variants.json`, `substances.json`, `health`, `entities/*`.
 Full reference: [API_README.md](./API_README.md). Paid keyed tier: issue #237.
@@ -45,7 +45,7 @@ Full reference: [API_README.md](./API_README.md). Paid keyed tier: issue #237.
 Versioned snapshot over live collections (552 ingredients, 405 dishes,
 30 substances), regenerated each build by `site/scripts/export-vectors.mjs`:
 
-- Manifest: `https://gos-site.pages.dev/api/vectors/index.json`
+- Manifest: `https://gos.swal.network/api/vectors/index.json`
   (model, dim, counts, version)
 - Shards: `/api/vectors/vectors-1.json`, `vectors-2.json`
 - Record: `{ id, type: "ingredient"|"dish"|"substance", text, embedding }`

@@ -26,7 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       (github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
       (github.event_name == 'check_suite' && github.event.check_suite.conclusion == 'success') ||
       github.event_name == 'workflow_dispatch'
     
@@ -53,18 +52,38 @@ jobs:
         run: |
           PR_DATA=$(gh pr view ${{ steps.pr.outputs.number }} --repo ${{ github.repository }} --json mergeable,mergeStateStatus,reviewDecision,statusCheckRollup)
           
-          MERGEABLE=$(echo "$PR_DATA" | jq -r '.mergeable')
+          # GitHub devuelve mergeable=UNKNOWN mientras recalcula tras el ultimo
+          # push. Reintentar un momento evita descartar el PR por un dato que
+          # aun no esta listo.
+          for i in 1 2 3 4 5; do
+            MERGEABLE=$(echo "$PR_DATA" | jq -r '.mergeable')
+            [ "$MERGEABLE" != "UNKNOWN" ] && break
+            sleep 10
+            PR_DATA=$(gh pr view ${{ steps.pr.outputs.number }} --repo ${{ github.repository }} --json mergeable,mergeStateStatus,reviewDecision,statusCheckRollup)
+          done
+
           MERGE_STATE=$(echo "$PR_DATA" | jq -r '.mergeStateStatus')
-          REVIEW_DECISION=$(echo "$PR_DATA" | jq -r '.reviewDecision')
-          CHECKS=$(echo "$PR_DATA" | jq -r '.statusCheckRollup[].conclusion' | grep -v 'SUCCESS' | wc -l)
-          
+          REVIEW_DECISION=$(echo "$PR_DATA" | jq -r '.reviewDecision // "NONE"')
+
+          # Solo cuentan como fallo los checks realmente rojos. SKIPPED no es
+          # un fallo (este propio job entra como SKIPPED mientras decide), y
+          # PENDING/None tampoco: si se mergeara aqui, un check que aun no ha
+          # reportado contaria como OK.
+          FAILED=$(echo "$PR_DATA" | jq '[.statusCheckRollup[] | select(.conclusion == "FAILURE" or .conclusion == "CANCELLED" or .conclusion == "TIMED_OUT" or .conclusion == "ACTION_REQUIRED" or .conclusion == "STARTUP_FAILURE")] | length')
+          PENDING=$(echo "$PR_DATA" | jq '[.statusCheckRollup[] | select(.conclusion == null and .state == "PENDING")] | length')
+
           echo "mergeable=$MERGEABLE" >> $GITHUB_OUTPUT
           echo "merge_state=$MERGE_STATE" >> $GITHUB_OUTPUT
           echo "review_decision=$REVIEW_DECISION" >> $GITHUB_OUTPUT
-          echo "failed_checks=$CHECKS" >> $GITHUB_OUTPUT
-          
-          # Auto-merge si: mergeable, approved, CI passes
-          if [ "$MERGEABLE" == "MERGEABLE" ] && [ "$REVIEW_DECISION" == "APPROVED" ] && [ "$CHECKS" == "0" ]; then
+          echo "failed_checks=$FAILED" >> $GITHUB_OUTPUT
+          echo "pending_checks=$PENDING" >> $GITHUB_OUTPUT
+
+          # Auto-merge si: mergeable, CI verde, nada pendiente y sin bloqueo.
+          # El ruleset "main" ya no exige approving review (solo deletion y
+          # non_fast_forward), así que reviewDecision queda como informativo:
+          # exigir APPROVED aqui dejaba los PRs parados sin revision posible,
+          # porque GitHub no aprueba PRs del propio autor.
+          if [ "$MERGEABLE" == "MERGEABLE" ] && [ "$FAILED" == "0" ] && [ "$PENDING" == "0" ] && [ "$MERGE_STATE" != "BLOCKED" ]; then
             echo "should_merge=true" >> $GITHUB_OUTPUT
           else
             echo "should_merge=false" >> $GITHUB_OUTPUT

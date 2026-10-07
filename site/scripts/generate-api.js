@@ -6,7 +6,7 @@ import matter from 'gray-matter'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const ORIGIN = process.env.SITE_ORIGIN || 'https://gos-site.pages.dev'
+const ORIGIN = process.env.SITE_ORIGIN || 'https://gos.swal.network'
 
 const repoRoot = path.resolve(__dirname, '../../')
 const dishesDir = path.join(repoRoot, 'dishes')

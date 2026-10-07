@@ -5,11 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit --module esnext --moduleResolution bundler --target es2022 --types node --skipLibCheck src/cf-env.d.ts src/index.ts src/swal-billing.ts"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241205.0",
+    "@cloudflare/workers-types": "^5.20260911.1",
+    "@types/node": "26.6.4",
     "typescript": "^5.5.4",
-    "wrangler": "^4.128.0"
+    "vitest": "5.0.2",
+    "wrangler": "^4.146.0"
   }
 }

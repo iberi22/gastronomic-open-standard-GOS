@@ -164,3 +164,12 @@ El Cocido Boyacense es uno de los platos más emblemáticos de Boyacá y la regi
 - [Receta tradicional de cocido boyacense - El Tiempo](https://www.eltiempo.com/vida/receta-cocido-boyacense-13579)
 - [TripAdvisor: Opiniones sobre cocido boyacense](https://www.tripadvisor.com/ShowUserReviews-g1234567-d7654321-r123456789-Cocido_Boyacense.html)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/cocido-boyacense)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Terroso (Tubérculos), Ácido (Ibias), Ahumado (Longaniza), Dulce (Habas/Guatila)
+* **Textura:** Compleja (múltiples almidones), Harinoso, Suave
+* **Aroma:** Raíces andinas, Cerdo, Hierbas de páramo
+* **Presentación:** Cazuela de barro monumental. Los tubérculos deben servirse enteros o en trozos grandes para identificarlos. La salsa (el recado) es espesa por la desintegración de la papa criolla.

@@ -14,9 +14,9 @@ health_registry:
   evidence_level: Medium
   mechanism: Antioxidant, modulates cell cycle and apoptosis
   studies:
-  - doi: 10.1158/1055-9965.1503.13.4
+  - doi: 10.1158/1055-9965.340.13.3
     source: Cancer Epidemiol Biomarkers Prev
-    title: Tomato and lycopene in prostate cancer prevention
+    title: 'The Role of Tomato Products and Lycopene in the Prevention of Prostate Cancer'
     year: 2004
 - condition: Cardiovascular disease
   evidence_level: Medium

@@ -4,8 +4,8 @@ region: Centro de México
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Cocina Vital
+  url: 'https://www.cocinavital.mx/recetas/platos-fuertes/albondigas-en-salsa-de-chipotle/2019/04/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:
@@ -19,6 +19,17 @@ tags:
   - Mexican
   - GOS Catalog
   - Top 20
+studies:
+  - title: "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence"
+    source: "Appetite"
+    year: 2012
+    doi: "10.1016/j.appet.2012.05.015"
+    url: "https://pubmed.ncbi.nlm.nih.gov/22634197/"
+  - title: "Capsaicin and Related Food Ingredients Reducing Body Fat Through the Activation of TRP and Brown Fat Thermogenesis"
+    source: "Advances in Food and Nutrition Research"
+    year: 2015
+    doi: "10.1016/bs.afnr.2015.07.002"
+    url: "https://pubmed.ncbi.nlm.nih.gov/26602570/"
 main_ingredients:
   - Carne molida de res y cerdo
   - Arroz precocido

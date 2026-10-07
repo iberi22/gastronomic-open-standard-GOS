@@ -147,3 +147,12 @@ calificación: ★★★★★ 5/5
 
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/carne-a-la-perra)
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Fibroso, Jugoso, Tenaz
+* **Aroma:** Ahumado, Herbal, Carnoso
+* **Presentación:** Trozos grandes de carne con costra oscura, servidos rústicamente sobre hojas.

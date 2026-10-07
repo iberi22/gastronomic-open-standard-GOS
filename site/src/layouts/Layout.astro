@@ -2,6 +2,8 @@
 import { Toaster } from '@swal/ui'
 import OfflineBanner from '../components/OfflineBanner.astro'
 import TranslateMenu from '../components/TranslateMenu.astro'
+import { ogMeta } from '../lib/images'
+import { SITE_URL } from '../lib/seo'
 import '../styles/global.css'
 
 interface Props {
@@ -10,30 +12,36 @@ interface Props {
   image?: string
   canonical?: string
   type?: string
+  /** Saca la pagina del indice de buscadores. Para fichas sin datos aun. */
+  noindex?: boolean
 }
 
 const {
   title = 'GOS — Gastronomic Open Standard',
-  description = 'Grafo global: recetas ↔ ingredientes ↔ vitaminas ↔ sabores ↔ afecciones ↔ dietas ↔ substancias · Astro 7 + Svelte 5 + Antigravity',
+  // Default sin stack tecnico: el texto anterior ("· Astro 7 + Svelte 5 +
+  // Antigravity") no le dice nada a quien busca y empujaba a 576 paginas a
+  // compartir la misma description. Describe el sitio, no la tecnologia.
+  description = 'Base de conocimiento gastronomica abierta: recetas de todo el mundo conectadas con ingredientes, vitaminas, sabores, micronutrientes, afecciones y substancias bioactivas.',
   image,
   canonical,
   type = 'website',
+  noindex = false,
 } = Astro.props
+
+const robots = noindex ? 'noindex, follow' : 'index, follow'
 
 const base = import.meta.env.BASE_URL
 const baseClean = base.replace(/\/$/, '')
-const siteOrigin = 'https://gos-site.pages.dev'
+const siteOrigin = SITE_URL
 
 const pathname = Astro.url?.pathname || '/'
 const canonicalUrl =
   canonical ||
   `${siteOrigin}${pathname.startsWith('/') ? pathname : `/${pathname}`}`
-const defaultImage = `${siteOrigin}/favicon.svg`
-const imageUrl = image
-  ? image.startsWith('http')
-    ? image
-    : `${siteOrigin}${image.startsWith('/') ? image : `/${image}`}`
-  : defaultImage
+// Google y los crawlers sociales no aceptan SVG en og:image/twitter:image.
+// ogMeta() mapea cada SVG a su PNG de 1200x630, cae a og-default.png y deja
+// intactas las imagenes raster que el sitio ya emitia.
+const og = ogMeta(image, siteOrigin)
 ---
 <!doctype html>
 <html lang="es" data-theme="antigravity">
@@ -42,6 +50,7 @@ const imageUrl = image
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <meta name="theme-color" content="#050507" />
 
     <!-- Canonical URL -->
@@ -53,7 +62,16 @@ const imageUrl = image
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image" content={og.url} />
+    <meta property="og:image:type" content={og.type} />
+    {
+      og.width && (
+        <>
+          <meta property="og:image:width" content={String(og.width)} />
+          <meta property="og:image:height" content={String(og.height)} />
+        </>
+      )
+    }
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +79,7 @@ const imageUrl = image
     <meta name="twitter:url" content={canonicalUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image" content={og.url} />
 
     <link rel="manifest" href={`${baseClean}/manifest.json`} />
     <link rel="icon" type="image/svg+xml" href={`${baseClean}/favicon.svg`} />
@@ -75,6 +93,27 @@ const imageUrl = image
       /* scrollbar antigravity */
       * { scrollbar-width: thin; scrollbar-color: #27272A transparent; }
       :root[data-theme="antigravity-light"] * { scrollbar-color: #D6D3D1 transparent; }
+
+      /* Accesibilidad: --swal-text-muted y --swal-accent vienen de @swal/ui con
+         valores que no llegan a WCAG AA. Medido contra los 4 fondos que usa el
+         tema (card #0f0f10, page #050507, elevated #1a1a1d, elevated-850):
+           muted  #6b7280 -> 3.45 a 4.21:1  (el peor, elevated-850)
+           accent #8b5cf6 -> 3.94 a 4.81:1  como texto
+         Se suben al primer tono que pasa 4.5:1 en los cuatro, sin tocar el
+         paquete. El acento se parte en dos usos: como texto necesita un tono
+         mas claro, como fondo de boton uno mas oscuro. Afecta a 12 archivos,
+         casi todos con texto de 9-12px. */
+      :root[data-theme="antigravity"] {
+        --swal-text-muted: #808790;
+        --swal-accent-text: #9a68f9;
+        --swal-btn-bg: #7c3aed;
+      }
+      :root[data-theme="antigravity-light"] { --swal-text-muted: #6e6863; }
+
+      /* Boton primario de @swal/ui: blanco sobre --swal-accent da 4.23:1. */
+      .swal-btn.primary, .swal-btn.swal-btn-primary {
+        background: var(--swal-btn-bg, var(--swal-accent)) !important;
+      }
     </style>
     <script is:inline>
       // dual theme persistence: antigravity | antigravity-light
@@ -116,7 +155,7 @@ const imageUrl = image
           <button id="gos-theme-toggle" class="w-9 h-9 rounded-lg border flex items-center justify-center hover:opacity-80 transition" style="background: var(--swal-surface); border-color: var(--swal-border); color: var(--swal-text-secondary);" aria-label="Toggle theme" title="Cambiar tema">
             <span id="gos-theme-icon">◐</span>
           </button>
-          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-accent);">Abrir Grafo</a>
+          <a href={`${baseClean}/graph`} class="hidden sm:inline-flex px-4 py-2 rounded-xl text-sm font-semibold text-white" style="background: var(--swal-btn-bg, var(--swal-accent));">Abrir Grafo</a>
         </div>
       </div>
       <!-- mobile nav -->
@@ -192,5 +231,19 @@ const imageUrl = image
           linear-gradient(90deg, rgba(28,25,23,0.04) 1px, transparent 1px);
       }
     </style>
+    <script is:inline>
+      // PWA: registrar el service worker. Sin esto /sw.js existe y sirve 200,
+      // pero el navegador nunca lo instala (medido 2026-10-01 en produccion:
+      // 0 registros, 0 caches) y la app no funciona offline.
+      // vite-plugin-pwa genera dist/registerSW.js pero ningun layout lo
+      // importaba, asi que el snippet se replica aqui a proposito.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {
+            // Sin SW la app sigue usable online; no romper la carga.
+          })
+        })
+      }
+    </script>
   </body>
 </html>

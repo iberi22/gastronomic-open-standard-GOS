@@ -1,2 +1,25 @@
-pnpm exec biome ci .
-cd site && pnpm exec astro check
+#!/usr/bin/env sh
+# SWAL anti-leak gate — pre-commit (GitCore protocol 3.9.1)
+#
+# Installed as .husky/pre-commit (chmod +x required: git silently ignores
+# hooks without the executable bit).
+#
+# The workspace root is resolved from $SWAL_ROOT, falling back to
+# $HOME/proyectosSWAL. Never hardcode an absolute personal path here: this
+# file is published in PUBLIC repos and a literal /home/<user> is both a
+# leak and a portability bug.
+set -e
+
+SWAL_ROOT="${SWAL_ROOT:-$HOME/proyectosSWAL}"
+GATE="$SWAL_ROOT/periferia/GitCore/scripts/swal-leak-gate.mjs"
+SHIM="$SWAL_ROOT/scripts/swal-husky-guard.mjs"
+
+if command -v node >/dev/null 2>&1; then
+  if [ -f "$GATE" ]; then
+    node "$GATE" --staged || exit 1
+  elif [ -f "$SHIM" ]; then
+    node "$SHIM" --staged || exit 1
+  else
+    echo "⚠ SWAL leak gate not found at \$SWAL_ROOT; commit proceeding WITHOUT anti-leak checks." >&2
+  fi
+fi

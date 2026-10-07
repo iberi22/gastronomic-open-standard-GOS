@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { absUrl } from '../../lib/seo'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const endpoints = [
@@ -17,6 +18,11 @@ const endpoints = [
     m: 'GET',
     p: '/api/substances.json',
     d: 'Catálogo de substancias bioactivas.',
+  },
+  {
+    m: 'GET',
+    p: '/api/evidence.json',
+    d: 'Índice de evidencia científica con DOI: qué sostiene cada entrada y con qué nivel.',
   },
   {
     m: 'GET',
@@ -49,7 +55,7 @@ const endpoints = [
 
 <Layout
   title="API para desarrolladores — GOS"
-  description="Usa los datos abiertos de GOS en tu app: recetas, ingredientes, substancias, vectores. Plan gratuito para desarrollo."
+  description="Usa los datos abiertos de GOS en tu app: recetas, ingredientes, substancias, vectores y evidencia cientifica. Plan gratuito."
 >
   <a href={`${base}/`} class="back">← GOS</a>
   <h1 class="h1">API para desarrolladores</h1>
@@ -93,7 +99,7 @@ const endpoints = [
   </div>
 
   <p class="sub">
-    Base: <code>{`https://gos-site.pages.dev/api`}</code> ·
+    Base: <code>{absUrl('/api')}</code> ·
     Documentación completa en <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md">API_README.md</a>.
   </p>
 </Layout>

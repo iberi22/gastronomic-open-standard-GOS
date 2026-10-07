@@ -137,3 +137,12 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de chancacas del Pacífico - El Tiempo](https://www.eltiempo.com/vida/receta-chancacas-57944)
 - [Google Maps: Opiniones sobre chancacas Pacífico](https://www.google.com/maps/search/chancacas+pacifico)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/chancacas)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Aromático
+* **Textura:** Masticable, Fibroso
+* **Aroma:** Dulce (panela), Especiado (canela y clavo), Cítrico (limón)
+* **Presentación:** 'Pequeños montículos, ideales para fiestas, ferias y como snack tradicional.'

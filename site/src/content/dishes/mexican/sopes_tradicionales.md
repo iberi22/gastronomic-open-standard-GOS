@@ -4,8 +4,8 @@ region: Centro de México
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Cocina Vital
+  url: 'https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

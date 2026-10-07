@@ -11,4 +11,12 @@ key_components: ["<50g carbohidratos netos/día (cetosis)", "70-80% energía de 
 contraindications: |
   Insuficiencia renal avanzada (↑potasio), fenilcetonuria, pancreatitis, hepatopatía severa. Precaución en: historia de ECV (↑LDL en algunos subtypes). No para diabetes tipo 1 (riesgo cetoacidosis).
 sources: ["Bouss pigeon et al. Effects of low-carbohydrate diets. JAMA 2022;328:923-32.", "Diabetesrem Trial. Lancet 2019;394:496."]
+studies:
+  - title: 'The Effect of Low-Fat and Low-Carbohydrate Diets on Weight Loss in Adults: A Systematic Review and Meta-Analysis'
+    source: 'Nutrients'
+    year: 2020
+    doi: '10.3390/nu12123774'
+    pmid: '33317019'
+    url: 'https://doi.org/10.3390/nu12123774'
+
 ---

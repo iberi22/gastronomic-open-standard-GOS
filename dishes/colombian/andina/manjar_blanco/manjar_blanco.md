@@ -147,3 +147,12 @@ El Manjar Blanco es un postre tradicional de la región andina colombiana, espec
 - [Receta tradicional de manjar blanco - El Tiempo](https://www.eltiempo.com/vida/receta-manjar-blanco-57931)
 - [Google Maps: Opiniones sobre manjar blanco](https://www.google.com/maps/search/manjar+blanco)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/manjar-blanco)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce profundo, Lácteo caramelizado, Arroz tostado (residual)
+* **Textura:** Elástico, Arenoso fino (arroz), Denso
+* **Aroma:** Leche hervida, Canela, Vainilla
+* **Presentación:** Totuma de mate o recipiente de dulce. La superficie debe ser brillante y ligeramente más oscura (costra). Se come con cuchara o dedito, a menudo acompañado de brevas o queso cuajada.

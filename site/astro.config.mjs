@@ -3,10 +3,12 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// Deploy target: Cloudflare Pages (gos-site.pages.dev, base '/').
+// Deploy target: Cloudflare Pages (dominio canonico gos.swal.network, base '/').
 // GitHub Pages retired 2026-09-05 (unpublished): single canonical deploy.
 export default defineConfig({
-  site: 'https://gos-site.pages.dev',
+  // Debe coincidir con SITE_URL de src/lib/seo.ts. Con el host de Pages
+  // aqui, Astro generaba canonical/og:url/rss con gos-site.pages.dev.
+  site: 'https://gos.swal.network',
   base: '/',
   output: 'static',
   integrations: [svelte()],
@@ -31,10 +33,12 @@ export default defineConfig({
           globPatterns: ['**/*.{js,css,html,svg,png,woff2,webp}'],
           runtimeCaching: [
             {
-              urlPattern: /^https:\/\/api\.swal\.dev\/.*/i,
+              // API propia de GOS: NetworkFirst para que los datos frescos
+              // (evidence, grafo) no queden rancios offline.
+              urlPattern: /\/api\/.*/i,
               handler: 'NetworkFirst',
               options: {
-                cacheName: 'swal-api',
+                cacheName: 'gos-api',
                 expiration: { maxEntries: 100, maxAgeSeconds: 60 * 5 },
               },
             },

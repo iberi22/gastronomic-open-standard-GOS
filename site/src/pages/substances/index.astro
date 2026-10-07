@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content'
 import SubstanceCard from '../../components/SubstanceCard.svelte'
 import Layout from '../../layouts/Layout.astro'
+import { clampDescription } from '../../lib/meta-description'
 
 const substances = await getCollection('substances')
 // sort by discovery_year asc then name
@@ -14,7 +15,12 @@ substances.sort((a, b) => {
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
 const title = `Substances — Enciclopedia de Sustancias Bioactivas — GOS (${substances.length})`
-const description = `Enciclopedia GOS: ${substances.length} sustancias bioactivas con fórmula, sazón, sabor, textura, vitaminas y beneficios para la salud.`
+// Con solo 30 sustancias el texto base queda en 116 caracteres, 4 por debajo
+// del minimo SEO de 120. La frase final es informacion real de la pagina
+// (todas las fichas citan su evidencia), no relleno.
+const description = clampDescription(
+  `Enciclopedia GOS: ${substances.length} sustancias bioactivas con formula, sazon, sabor, textura, vitaminas y beneficios. Cada ficha cita su evidencia.`,
+)
 ---
 
 <Layout title={title} description={description}>

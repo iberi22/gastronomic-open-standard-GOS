@@ -15,6 +15,7 @@ export interface RecipeLDInput {
   prepTime?: string
   recipeYield?: string
   recipeIngredient?: string[]
+  recipeInstructions?: string[]
   nutrition?: Record<string, unknown>
 }
 
@@ -59,8 +60,10 @@ export interface SubstanceLDInput {
 }
 
 const SITE_URL = (
-  import.meta.env?.PUBLIC_SITE_URL || 'https://gos-site.pages.dev'
+  import.meta.env?.PUBLIC_SITE_URL || 'https://gos.swal.network'
 ).replace(/\/$/, '')
+
+export { SITE_URL }
 
 export function absUrl(path?: string): string {
   if (!path) return SITE_URL
@@ -91,6 +94,16 @@ export function recipeJsonLd(input: RecipeLDInput) {
     cookTime: input.cookTime,
     recipeYield: input.recipeYield,
     recipeIngredient: input.recipeIngredient ?? [],
+    // HowToStep con position: sin esto no hay rich result de receta, y el
+    // dato ya existe en dishes/*.md (seccion "Instrucciones", 444 recetas).
+    recipeInstructions:
+      input.recipeInstructions && input.recipeInstructions.length > 0
+        ? input.recipeInstructions.map((text, i) => ({
+            '@type': 'HowToStep',
+            position: i + 1,
+            text,
+          }))
+        : undefined,
     nutrition: input.nutrition
       ? { '@type': 'NutritionInformation', ...input.nutrition }
       : undefined,

@@ -1,28 +1,28 @@
 # GOS — Gastronomic Open Standard — Full Dataset & Agent Specification
 # appId: gos
-# Web: https://gos-site.pages.dev
+# Web: https://gos.swal.network
 # Repository: https://github.com/iberi22/gastronomic-open-standard-GOS
 
 ## Executive Overview
 The Gastronomic Open Standard (GOS) is an open-source, scientifically validated knowledge graph connecting world recipes, ingredients, micronutrients, bioactive chemical substances, sensory profiles (flavor/aroma/texture), medical health registries, and dietary fits.
 
 ## Live Graph Breakdown
-- Total Nodes: 3273
-- Total Edges: 21845
+- Total Nodes: 4499
+- Total Edges: 13075
 - Node Types Breakdown:
-  - recipe: 381
-  - ingredient: 1725
+  - diet: 6
+  - recipe: 510
+  - ingredient: 2460
   - category: 14
-  - flavor: 423
-  - texture: 388
-  - region: 157
+  - flavor: 572
+  - texture: 541
+  - region: 217
+  - technique: 15
   - place: 43
-  - technique: 14
   - vitamin: 23
   - nutrient: 4
-  - substance: 44
+  - substance: 43
   - condition: 51
-  - diet: 6
 
 ## Knowledge Graph Relational Schema
 GOS links entities via strictly typed edge relationships:
@@ -38,10 +38,10 @@ GOS links entities via strictly typed edge relationships:
 - RELATED_DISHES: Recipe -> Recipe (shared ingredients >= 3 or region)
 - SUBSTITUTE_FOR: Ingredient -> Ingredient
 
-## Country Recipe Catalog (18 Countries)
+## Country Recipe Catalog (19 Countries)
 
 ### Country: COLOMBIAN (122 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/colombian.json
+Endpoint: https://gos.swal.network/api/by-country/colombian.json
 Sample Dishes:
   - README (ID: colombian/README, Region: Nacional, Difficulty: ★★☆☆☆)
   - Achiras del Huila (ID: colombian/amasijos/achiras/achiras, Region: Andina (Huila), Difficulty: ★★★☆☆)
@@ -60,8 +60,108 @@ Sample Dishes:
   - Pirarucú Frito (ID: colombian/amazonia/pirarucu_frito/pirarucu_frito, Region: Amazonía, Difficulty: ★★☆☆☆)
   ... and 107 more dishes
 
+### Country: AMERICAN (35 recipes)
+Endpoint: https://gos.swal.network/api/by-country/american.json
+Sample Dishes:
+  - Traditional American Apple Pie (ID: american/apple_pie_traditional, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
+  - St. Louis Style BBQ Pork Ribs (ID: american/bbq_pork_ribs, Region: Missouri / Memphis, Difficulty: ★★☆☆☆)
+  - Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña) (ID: american/biscuits_and_gravy, Region: Sur de Estados Unidos, Difficulty: ★★☆☆☆)
+  - Brisket Estilo Texas (Punta de Pecho Ahumada) (ID: american/brisket_texas_style, Region: Texas, Difficulty: ★★★★☆)
+  - Brunswick Stew (Estofado Tradicional de Virginia) (ID: american/brunswick_stew, Region: Virginia, Difficulty: ★★☆☆☆)
+  - Buffalo Chicken Wings (ID: american/buffalo_chicken_wings, Region: Buffalo, NY, Difficulty: ★★☆☆☆)
+  - Chicken and Waffles (Pollo Frito con Waffles) (ID: american/chicken_and_waffles, Region: Sur de Estados Unidos, Difficulty: ★★★☆☆)
+  - Chicken Fried Steak (Filete Empanado con Salsa Blanca) (ID: american/chicken_fried_steak, Region: Texas, Difficulty: ★★★☆☆)
+  - Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch) (ID: american/chili_verde_new_mexico, Region: Nuevo México, Difficulty: ★★☆☆☆)
+  - New England Clam Chowder (ID: american/clam_chowder_boston, Region: Boston, MA, Difficulty: ★★☆☆☆)
+  - Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan) (ID: american/clam_chowder_manhattan, Region: Nueva York, Difficulty: ★★☆☆☆)
+  - Classic American Cheeseburger (ID: american/classic_cheeseburger, Region: Texas / California, Difficulty: ★★☆☆☆)
+  - Georgia Peach Cobbler (ID: american/cobbler_de_melocoton, Region: Georgia, Difficulty: ★★☆☆☆)
+  - Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo) (ID: american/collard_greens_southern, Region: Sur de Estados Unidos, Difficulty: ★★☆☆☆)
+  - Southern Skillet Cornbread (ID: american/cornbread_southern, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
+  ... and 20 more dishes
+
+### Country: INDIAN (35 recipes)
+Endpoint: https://gos.swal.network/api/by-country/indian.json
+Sample Dishes:
+  - Aloo Gobi (ID: indian/aloo_gobi, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Baingan Bharta (ID: indian/baingan_bharta, Region: Punjab / Norte de la India, Difficulty: ★★☆☆☆)
+  - Hyderabadi Biryani (ID: indian/biryani_hyderabadi, Region: Hyderabad, Difficulty: ★★☆☆☆)
+  - Bisi Bele Bath (ID: indian/bisi_bele_bath, Region: Karnataka, Difficulty: ★★★☆☆)
+  - Butter Chicken (Murgh Makhani) (ID: indian/butter_chicken, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Chana Masala (ID: indian/chana_masala, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Chicken Korma (ID: indian/chicken_korma, Region: Mogolla, Difficulty: ★★☆☆☆)
+  - Chicken Tikka Masala (ID: indian/chicken_tikka_masala, Region: Punjab / U.K., Difficulty: ★★☆☆☆)
+  - Dal Makhani (ID: indian/dal_makhani, Region: Punjab, Difficulty: ★★☆☆☆)
+  - Dhokla Gujarati (ID: indian/dhokla_gujarati, Region: Gujarat, Difficulty: ★★☆☆☆)
+  - Masala Dosa (ID: indian/dosa_masala, Region: Sur de India, Difficulty: ★★☆☆☆)
+  - Amritsari Fish Fry (ID: indian/fish_amritsari, Region: Amritsar, Difficulty: ★★☆☆☆)
+  - Gulab Jamun (ID: indian/gulab_jamun, Region: Norte de India, Difficulty: ★★☆☆☆)
+  - Hyderabadi Haleem (ID: indian/hyderabadi_haleem, Region: Telangana / Hyderabad, Difficulty: ★★★★☆)
+  - Idli Sambar (ID: indian/idli_sambar, Region: Tamil Nadu / Sur de la India, Difficulty: ★★☆☆☆)
+  ... and 20 more dishes
+
+### Country: JAPANESE (35 recipes)
+Endpoint: https://gos.swal.network/api/by-country/japanese.json
+Sample Dishes:
+  - Agedashi Tofu (ID: japanese/agedashi_tofu, Region: Tokyo, Difficulty: ★★☆☆☆)
+  - Asari no Sakamushi (ID: japanese/asari_no_sakamushi, Region: Izakaya / Nacional, Difficulty: ★☆☆☆☆)
+  - Buri Daikon (ID: japanese/buri_daikon, Region: Toyama / Hokuriku, Difficulty: ★★☆☆☆)
+  - Chanchan Yaki (ID: japanese/chanchan_yaki, Region: Hokkaido, Difficulty: ★★☆☆☆)
+  - Chashu de Cerdo para Ramen (ID: japanese/chashu_pork_slice, Region: Fukuoka, Difficulty: ★★★☆☆)
+  - Chawanmushi (Flan Salado) (ID: japanese/chawanmushi, Region: Kyoto, Difficulty: ★★★☆☆)
+  - Chicken Katsu Curry (ID: japanese/chicken_katsu_curry, Region: Osaka, Difficulty: ★★☆☆☆)
+  - Chikuzenni (ID: japanese/chikuzenni, Region: Fukuoka (Kyushu), Difficulty: ★★☆☆☆)
+  - Dorayaki (ID: japanese/dorayaki, Region: Tokyo, Difficulty: ★★☆☆☆)
+  - Gyudon (Donburi de Res) (ID: japanese/gyudon_beef_bowl, Region: Tokyo, Difficulty: ★☆☆☆☆)
+  - Hida Houba Miso (ID: japanese/hida_houba_miso, Region: Gifu (Takayama), Difficulty: ★★★☆☆)
+  - Ichigo Daifuku (ID: japanese/ichigo_daifuku, Region: Tokyo / Kansai, Difficulty: ★★★☆☆)
+  - Imoni Yamagata (ID: japanese/imoni_yamagata, Region: Yamagata, Difficulty: ★★☆☆☆)
+  - Ishikari Nabe (ID: japanese/ishikari_nabe, Region: Hokkaido, Difficulty: ★★☆☆☆)
+  - Chicken Karaage (ID: japanese/karaage_chicken, Region: Japón Nacional, Difficulty: ★★☆☆☆)
+  ... and 20 more dishes
+
+### Country: MEXICAN (35 recipes)
+Endpoint: https://gos.swal.network/api/by-country/mexican.json
+Sample Dishes:
+  - Agua de Horchata de Arroz (ID: mexican/agua_de_horchata_de_arroz, Region: Tradicional Nacional, Difficulty: ★☆☆☆☆)
+  - Aguachile Verde de Camarón (ID: mexican/aguachile_verde, Region: Sinaloa, Difficulty: ★★☆☆☆)
+  - Albóndigas en Salsa de Chipotle (ID: mexican/albondigas_en_chipotle, Region: Centro de México, Difficulty: ★★☆☆☆)
+  - Barbacoa de Borrego (ID: mexican/barbacoa_de_borrego, Region: Hidalgo, Difficulty: ★★★★★)
+  - Birria de Res con Consomé (ID: mexican/birria_de_res, Region: Jalisco, Difficulty: ★★★☆☆)
+  - Carnitas de Michoacán (ID: mexican/carnitas_de_michoacan, Region: Michoacán, Difficulty: ★★★☆☆)
+  - Chilaquiles Verdes con Huevo (ID: mexican/chilaquiles_verdes, Region: México DF, Difficulty: ★☆☆☆☆)
+  - Chiles en Nogada (ID: mexican/chiles_en_nogada, Region: Puebla, Difficulty: ★★★★☆)
+  - Chiles Rellenos de Queso (ID: mexican/chiles_rellenos_de_queso, Region: Puebla, Difficulty: ★★★☆☆)
+  - Chilpachole de Jaiba (ID: mexican/chilpachole_de_jaiba, Region: Veracruz, Difficulty: ★★★☆☆)
+  - Cochinita Pibil (ID: mexican/cochinita_pibil, Region: Yucatán, Difficulty: ★★★☆☆)
+  - Enchiladas Verdes (ID: mexican/enchiladas_verdes, Region: Centro de México, Difficulty: ★★☆☆☆)
+  - Enmoladas de Pollo (ID: mexican/enmoladas_de_pollo, Region: Oaxaca, Difficulty: ★★☆☆☆)
+  - Esquites con Epazote (ID: mexican/esquites_con_epazote, Region: Centro de México, Difficulty: ★☆☆☆☆)
+  - Guacamole Tradicional (ID: mexican/guacamole_tradicional, Region: Michoacán, Difficulty: ★☆☆☆☆)
+  ... and 20 more dishes
+
+### Country: BRAZILIAN (25 recipes)
+Endpoint: https://gos.swal.network/api/by-country/brazilian.json
+Sample Dishes:
+  - Açaí na Tigela (ID: brazilian/acai_na_tigela, Region: Pará / Brasil, Difficulty: ★☆☆☆☆)
+  - Acarajé Baiano (ID: brazilian/acaraje, Region: Brasil, Difficulty: ★★★★★)
+  - Baião de Dois (ID: brazilian/baiao_de_dois, Region: Ceará / Nordeste, Brasil, Difficulty: ★★☆☆☆)
+  - Bobó de Camarão (ID: brazilian/bobo_de_camarao, Region: Bahia, Brasil, Difficulty: ★★★☆☆)
+  - Bolo de Rolo Pernambucano (ID: brazilian/bolo_de_rolo, Region: Pernambuco, Brasil, Difficulty: ★★★★☆)
+  - Brigadeiro Tradicional Brasileiro (ID: brazilian/brigadeiro, Region: Brasil, Difficulty: ★☆☆☆☆)
+  - Caipirinha Tradicional Brasileira (ID: brazilian/caipirinha, Region: Brasil, Difficulty: ★☆☆☆☆)
+  - Caruru Baiano (ID: brazilian/caruru, Region: Bahia, Brasil, Difficulty: ★★★☆☆)
+  - Churrasco Gaúcho de Picanha (ID: brazilian/churrasco, Region: Brasil, Difficulty: ★★☆☆☆)
+  - Coxinha de Frango Tradicional (ID: brazilian/coxinha, Region: Brasil, Difficulty: ★★★★☆)
+  - Creme de Cupuaçu (ID: brazilian/creme_de_cupuacu, Region: Amazonas / Pará, Brasil, Difficulty: ★☆☆☆☆)
+  - Escondidinho de Carne de Sol (ID: brazilian/escondidinho_de_carne_de_sol, Region: Nordeste / Brasil, Difficulty: ★★☆☆☆)
+  - Farofa de Mandioca Tradicional (ID: brazilian/farofa_de_mandioca, Region: Brasil (Nacional), Difficulty: ★☆☆☆☆)
+  - Feijoada Completa Brasileira (ID: brazilian/feijoada, Region: Brasil, Difficulty: ★★★★☆)
+  - Feijoada à Baiana (ID: brazilian/feijoada_a_baiana, Region: Bahia, Brasil, Difficulty: ★★★★☆)
+  ... and 10 more dishes
+
 ### Country: PERUVIAN (23 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/peruvian.json
+Endpoint: https://gos.swal.network/api/by-country/peruvian.json
 Sample Dishes:
   - README (ID: peruvian/README, Region: Nacional, Difficulty: ★★☆☆☆)
   - Arroz con Pollo Peruano (ID: peruvian/arroz_con_pollo, Region: Costa/Sierra, Difficulty: ★★★☆☆)
@@ -80,28 +180,8 @@ Sample Dishes:
   - README (ID: peruvian/otras_preparaciones/README, Region: Nacional, Difficulty: ★★☆☆☆)
   ... and 8 more dishes
 
-### Country: AMERICAN (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/american.json
-Sample Dishes:
-  - Traditional American Apple Pie (ID: american/apple_pie_traditional, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
-  - St. Louis Style BBQ Pork Ribs (ID: american/bbq_pork_ribs, Region: Missouri / Memphis, Difficulty: ★★☆☆☆)
-  - Buffalo Chicken Wings (ID: american/buffalo_chicken_wings, Region: Buffalo, NY, Difficulty: ★★☆☆☆)
-  - New England Clam Chowder (ID: american/clam_chowder_boston, Region: Boston, MA, Difficulty: ★★☆☆☆)
-  - Classic American Cheeseburger (ID: american/classic_cheeseburger, Region: Texas / California, Difficulty: ★★☆☆☆)
-  - Georgia Peach Cobbler (ID: american/cobbler_de_melocoton, Region: Georgia, Difficulty: ★★☆☆☆)
-  - Southern Skillet Cornbread (ID: american/cornbread_southern, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
-  - Eggs Benedict (ID: american/eggs_benedict, Region: Nueva York, NY, Difficulty: ★★☆☆☆)
-  - Southern Crispy Fried Chicken (ID: american/fried_chicken_southern, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
-  - Louisiana Seafood Gumbo (ID: american/gumbo_louisiana, Region: Nueva Orleans, LA, Difficulty: ★★☆☆☆)
-  - Cajun Jambalaya (ID: american/jambalaya_cajun, Region: Nueva Orleans, LA, Difficulty: ★★☆☆☆)
-  - Florida Key Lime Pie (ID: american/key_lime_pie, Region: Florida Keys, Difficulty: ★★☆☆☆)
-  - Baked Macaroni and Cheese (ID: american/macaroni_and_cheese, Region: Sur de EE.UU., Difficulty: ★★☆☆☆)
-  - Classic Glazed Meatloaf (ID: american/meatloaf_with_glaze, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
-  - Fluffy Pancakes con Maple Syrup (ID: american/pancakes_maple_syrup, Region: EE.UU. Nacional, Difficulty: ★★☆☆☆)
-  ... and 5 more dishes
-
 ### Country: FRENCH (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/french.json
+Endpoint: https://gos.swal.network/api/by-country/french.json
 Sample Dishes:
   - Boeuf Bourguignon (ID: french/boeuf_bourguignon, Region: Borgoña, Difficulty: ★★☆☆☆)
   - Daube Provençale (ID: french/boeuf_en_daube, Region: Provenza, Difficulty: ★★☆☆☆)
@@ -121,7 +201,7 @@ Sample Dishes:
   ... and 5 more dishes
 
 ### Country: GREEK (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/greek.json
+Endpoint: https://gos.swal.network/api/by-country/greek.json
 Sample Dishes:
   - Baklava Griego con Nueces y Miel (ID: greek/baklava_griego, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
   - Dolmades (Hojas de Parra Rellenas) (ID: greek/dolmades_hojas_de_parra, Region: Creta, Difficulty: ★★☆☆☆)
@@ -140,28 +220,8 @@ Sample Dishes:
   - Garides Saganaki (Camarones con Feta) (ID: greek/saganaki_queso_frito, Region: Grecia Nacional, Difficulty: ★★☆☆☆)
   ... and 5 more dishes
 
-### Country: INDIAN (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/indian.json
-Sample Dishes:
-  - Aloo Gobi (ID: indian/aloo_gobi, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Hyderabadi Biryani (ID: indian/biryani_hyderabadi, Region: Hyderabad, Difficulty: ★★☆☆☆)
-  - Butter Chicken (Murgh Makhani) (ID: indian/butter_chicken, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Chana Masala (ID: indian/chana_masala, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Chicken Korma (ID: indian/chicken_korma, Region: Mogolla, Difficulty: ★★☆☆☆)
-  - Chicken Tikka Masala (ID: indian/chicken_tikka_masala, Region: Punjab / U.K., Difficulty: ★★☆☆☆)
-  - Dal Makhani (ID: indian/dal_makhani, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Masala Dosa (ID: indian/dosa_masala, Region: Sur de India, Difficulty: ★★☆☆☆)
-  - Amritsari Fish Fry (ID: indian/fish_amritsari, Region: Amritsar, Difficulty: ★★☆☆☆)
-  - Gulab Jamun (ID: indian/gulab_jamun, Region: Norte de India, Difficulty: ★★☆☆☆)
-  - Malai Kofta (ID: indian/malai_kofta, Region: Norte de India, Difficulty: ★★☆☆☆)
-  - Ajo Naan (Pan Naan) (ID: indian/naan_de_ajo, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Palak Paneer (ID: indian/palak_paneer, Region: Norte de India, Difficulty: ★★☆☆☆)
-  - Paneer Butter Masala (ID: indian/paneer_butter_masala, Region: Punjab, Difficulty: ★★☆☆☆)
-  - Pani Puri (Golgappa) (ID: indian/pani_puri, Region: Mumbai, Difficulty: ★★☆☆☆)
-  ... and 5 more dishes
-
 ### Country: ITALIAN (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/italian.json
+Endpoint: https://gos.swal.network/api/by-country/italian.json
 Sample Dishes:
   - Arancini Siciliani di Riso (ID: italian/arancini_siciliani, Region: Sicilia, Difficulty: ★★★☆☆)
   - Spaghetti Cacio e Pepe (ID: italian/cacio_e_pepe, Region: Lazio (Roma), Difficulty: ★★★☆☆)
@@ -180,48 +240,8 @@ Sample Dishes:
   - Risotto alla Milanese (ID: italian/risotto_alla_milanese, Region: Lombardía (Milán), Difficulty: ★★★☆☆)
   ... and 5 more dishes
 
-### Country: JAPANESE (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/japanese.json
-Sample Dishes:
-  - Agedashi Tofu (ID: japanese/agedashi_tofu, Region: Tokyo, Difficulty: ★★☆☆☆)
-  - Chashu de Cerdo para Ramen (ID: japanese/chashu_pork_slice, Region: Fukuoka, Difficulty: ★★★☆☆)
-  - Chawanmushi (Flan Salado) (ID: japanese/chawanmushi, Region: Kyoto, Difficulty: ★★★☆☆)
-  - Chicken Katsu Curry (ID: japanese/chicken_katsu_curry, Region: Osaka, Difficulty: ★★☆☆☆)
-  - Gyudon (Donburi de Res) (ID: japanese/gyudon_beef_bowl, Region: Tokyo, Difficulty: ★☆☆☆☆)
-  - Chicken Karaage (ID: japanese/karaage_chicken, Region: Japón Nacional, Difficulty: ★★☆☆☆)
-  - Sopa de Miso Clásica (ID: japanese/miso_soup_classic, Region: Japón Nacional, Difficulty: ★☆☆☆☆)
-  - Nikujaga (Res con Patatas) (ID: japanese/nikujaga_home, Region: Japón Nacional, Difficulty: ★☆☆☆☆)
-  - Okonomiyaki Estilo Osaka (ID: japanese/okonomiyaki_osaka, Region: Osaka, Difficulty: ★★☆☆☆)
-  - Shoyu Ramen Tradicional (ID: japanese/ramen_shoyu, Region: Tokyo, Difficulty: ★★★☆☆)
-  - Zaru Soba (Fideos de Trigo Sarraceno) (ID: japanese/soba_zaru, Region: Nagano, Difficulty: ★★☆☆☆)
-  - Sukiyaki Nabemono (ID: japanese/sukiyaki_beef, Region: Kanto, Difficulty: ★★★☆☆)
-  - Nigiri Sushi de Salmón (ID: japanese/sushi_nigiri_salmon, Region: Tokyo, Difficulty: ★★★☆☆)
-  - Takoyaki de Osaka (ID: japanese/takoyaki_osaka, Region: Osaka, Difficulty: ★★★☆☆)
-  - Tamagoyaki (Tortilla Dulce) (ID: japanese/tamagoyaki_omelet, Region: Tokyo, Difficulty: ★★☆☆☆)
-  ... and 5 more dishes
-
-### Country: MEXICAN (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/mexican.json
-Sample Dishes:
-  - Aguachile Verde de Camarón (ID: mexican/aguachile_verde, Region: Sinaloa, Difficulty: ★★☆☆☆)
-  - Albóndigas en Salsa de Chipotle (ID: mexican/albondigas_en_chipotle, Region: Centro de México, Difficulty: ★★☆☆☆)
-  - Birria de Res con Consomé (ID: mexican/birria_de_res, Region: Jalisco, Difficulty: ★★★☆☆)
-  - Carnitas de Michoacán (ID: mexican/carnitas_de_michoacan, Region: Michoacán, Difficulty: ★★★☆☆)
-  - Chilaquiles Verdes con Huevo (ID: mexican/chilaquiles_verdes, Region: México DF, Difficulty: ★☆☆☆☆)
-  - Chiles en Nogada (ID: mexican/chiles_en_nogada, Region: Puebla, Difficulty: ★★★★☆)
-  - Cochinita Pibil (ID: mexican/cochinita_pibil, Region: Yucatán, Difficulty: ★★★☆☆)
-  - Enchiladas Verdes (ID: mexican/enchiladas_verdes, Region: Centro de México, Difficulty: ★★☆☆☆)
-  - Enmoladas de Pollo (ID: mexican/enmoladas_de_pollo, Region: Oaxaca, Difficulty: ★★☆☆☆)
-  - Guacamole Tradicional (ID: mexican/guacamole_tradicional, Region: Michoacán, Difficulty: ★☆☆☆☆)
-  - Mole Poblano (ID: mexican/mole_poblano, Region: Puebla, Difficulty: ★★★★☆)
-  - Pambazo de Papa con Chorizo (ID: mexican/pambazo_de_papa_con_chorizo, Region: Ciudad de México, Difficulty: ★★☆☆☆)
-  - Panuchos Yucatecos (ID: mexican/panuchos_yucatecos, Region: Yucatán, Difficulty: ★★★☆☆)
-  - Pozole Rojo de Jalisco (ID: mexican/pozole_rojo, Region: Jalisco, Difficulty: ★★★☆☆)
-  - Quesadillas de Flor de Calabaza (ID: mexican/quesadillas_de_flor_de_calabaza, Region: Ciudad de México, Difficulty: ★★☆☆☆)
-  ... and 5 more dishes
-
 ### Country: MOROCCAN (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/moroccan.json
+Endpoint: https://gos.swal.network/api/by-country/moroccan.json
 Sample Dishes:
   - Baghrir (Panqueques de Mil Hoyos) (ID: moroccan/baghrir_panqueques, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
   - Briouats de Carne Picada Especiada (ID: moroccan/briouats_de_carne, Region: Marruecos Nacional, Difficulty: ★★☆☆☆)
@@ -241,7 +261,7 @@ Sample Dishes:
   ... and 5 more dishes
 
 ### Country: SPANISH (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/spanish.json
+Endpoint: https://gos.swal.network/api/by-country/spanish.json
 Sample Dishes:
   - Bacalao al Pil-Pil (ID: spanish/bacalao_al_pil_pil, Region: País Vasco, Difficulty: ★★☆☆☆)
   - Calamares en su Tinta (ID: spanish/calamares_en_su_tinta, Region: País Vasco, Difficulty: ★★☆☆☆)
@@ -261,7 +281,7 @@ Sample Dishes:
   ... and 5 more dishes
 
 ### Country: THAI (20 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/thai.json
+Endpoint: https://gos.swal.network/api/by-country/thai.json
 Sample Dishes:
   - Kuay Teow Reua (Boat Noodles) (ID: thai/boat_noodles, Region: Bangkok, Difficulty: ★★☆☆☆)
   - Gaeng Phet Ped Yang (ID: thai/curry_rojo_pato, Region: Bangkok, Difficulty: ★★☆☆☆)
@@ -280,8 +300,27 @@ Sample Dishes:
   - Khao Pad Kung (ID: thai/thai_fried_rice, Region: Bangkok, Difficulty: ★★☆☆☆)
   ... and 5 more dishes
 
+### Country: BANGLADESHI (15 recipes)
+Endpoint: https://gos.swal.network/api/by-country/bangladeshi.json
+Sample Dishes:
+  - Aloo Bhorta (ID: bangladeshi/aloo_bhorta, Region: Barisal, Difficulty: ★☆☆☆☆)
+  - Begun Bhorta (ID: bangladeshi/begun_bhorta, Region: Khulna, Difficulty: ★☆☆☆☆)
+  - Bhapa Pitha (ID: bangladeshi/bhapa_pitha, Region: Mymensingh, Difficulty: ★★★☆☆)
+  - Borhani (ID: bangladeshi/borhani, Region: Old Dhaka, Difficulty: ★☆☆☆☆)
+  - Chingri Malai Curry (ID: bangladeshi/chingri_malai_curry, Region: Khulna, Difficulty: ★★☆☆☆)
+  - Chitol Macher Muitha (ID: bangladeshi/chitol_mach_kofta, Region: Dhaka, Difficulty: ★★★☆☆)
+  - Dhakai Kacchi Biryani (ID: bangladeshi/kacchi_biryani, Region: Old Dhaka, Difficulty: ★★★★☆)
+  - Mishti Doi (ID: bangladeshi/mishti_doi, Region: Bogra, Difficulty: ★★☆☆☆)
+  - Dhakai Morog Polao (ID: bangladeshi/morog_polao, Region: Old Dhaka, Difficulty: ★★★☆☆)
+  - Panta Bhat (ID: bangladeshi/panta_bhat, Region: Dhaka, Difficulty: ★☆☆☆☆)
+  - Patishapta Pitha (ID: bangladeshi/patishapta_pitha, Region: Rangpur, Difficulty: ★★☆☆☆)
+  - Rui Macher Jhol (ID: bangladeshi/rui_mach_jhol, Region: Rajshahi, Difficulty: ★☆☆☆☆)
+  - Shorshe Ilish (ID: bangladeshi/shorshe_ilish, Region: Barisal, Difficulty: ★★☆☆☆)
+  - Shutki Bhorta (ID: bangladeshi/shutki_bhorta, Region: Chittagong, Difficulty: ★★☆☆☆)
+  - Bhuna Khichuri (ID: bangladeshi/vuna_khichuri, Region: Sylhet, Difficulty: ★★☆☆☆)
+
 ### Country: ARGENTINIAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/argentinian.json
+Endpoint: https://gos.swal.network/api/by-country/argentinian.json
 Sample Dishes:
   - Alfajores de Maicena (ID: argentinian/alfajores_de_maicena, Region: Buenos Aires / Nacional, Difficulty: ★★☆☆☆)
   - Asado Criollo Argentino (ID: argentinian/asado_criollo, Region: La Pampa / Pampeana, Difficulty: ★★★☆☆)
@@ -294,22 +333,8 @@ Sample Dishes:
   - Pastelitos Criollos Argentinos (ID: argentinian/pastelitos_criollos, Region: Pampeana / Nacional, Difficulty: ★★★★☆)
   - Provoleta Argentina (ID: argentinian/provoleta, Region: Pampeana, Difficulty: ★★☆☆☆)
 
-### Country: BRAZILIAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/brazilian.json
-Sample Dishes:
-  - Acarajé Baiano (ID: brazilian/acaraje, Region: Brasil, Difficulty: ★★★★★)
-  - Brigadeiro Tradicional Brasileiro (ID: brazilian/brigadeiro, Region: Brasil, Difficulty: ★☆☆☆☆)
-  - Caipirinha Tradicional Brasileira (ID: brazilian/caipirinha, Region: Brasil, Difficulty: ★☆☆☆☆)
-  - Churrasco Gaúcho de Picanha (ID: brazilian/churrasco, Region: Brasil, Difficulty: ★★☆☆☆)
-  - Coxinha de Frango Tradicional (ID: brazilian/coxinha, Region: Brasil, Difficulty: ★★★★☆)
-  - Feijoada Completa Brasileira (ID: brazilian/feijoada, Region: Brasil, Difficulty: ★★★★☆)
-  - Moqueca de Peixe Baiana (ID: brazilian/moqueca_de_peixe, Region: Brasil, Difficulty: ★★★☆☆)
-  - Pão de Queijo Mineiro (ID: brazilian/pao_de_queijo, Region: Brasil, Difficulty: ★★☆☆☆)
-  - Pudim de Leite Condensado (ID: brazilian/pudim_de_leite, Region: Brasil, Difficulty: ★★☆☆☆)
-  - Vatapá Baiano Tradicional (ID: brazilian/vatapa, Region: Brasil, Difficulty: ★★★★☆)
-
 ### Country: CHILEAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/chilean.json
+Endpoint: https://gos.swal.network/api/by-country/chilean.json
 Sample Dishes:
   - Caldillo de Congrio (ID: chilean/caldillo_de_congrio, Region: Litoral / Coquimbo / Valparaíso, Difficulty: ★★★☆☆)
   - Cazuela de Vacuno (ID: chilean/cazuela_de_vacuno, Region: Andina / Central, Difficulty: ★★☆☆☆)
@@ -323,7 +348,7 @@ Sample Dishes:
   - Sopaipillas Chilenas (ID: chilean/sopaipillas, Region: Central / Sur, Difficulty: ★★☆☆☆)
 
 ### Country: CUBAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/cuban.json
+Endpoint: https://gos.swal.network/api/by-country/cuban.json
 Sample Dishes:
   - Ajiaco Criollo Cubano (ID: cuban/ajiaco_cubano, Region: Cuba, Difficulty: ★★★★☆)
   - Flan de Huevo Tradicional Cubano (ID: cuban/flan_de_huevo, Region: Cuba, Difficulty: ★★☆☆☆)
@@ -337,7 +362,7 @@ Sample Dishes:
   - Yuca con Mojo Cubana (ID: cuban/yuca_con_mojo, Region: Cuba, Difficulty: ★★☆☆☆)
 
 ### Country: DOMINICAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/dominican.json
+Endpoint: https://gos.swal.network/api/by-country/dominican.json
 Sample Dishes:
   - Chimichurri Dominicano (Chimi) (ID: dominican/chimi_dominicano, Region: República Dominicana, Difficulty: ★★☆☆☆)
   - Habichuelas con Dulce Dominicanas (ID: dominican/habichuelas_con_dulce, Region: República Dominicana, Difficulty: ★☆☆☆☆)
@@ -351,7 +376,7 @@ Sample Dishes:
   - Tostones Dominicanos con Agua de Ajo (ID: dominican/tostones_dominicanos, Region: República Dominicana, Difficulty: ★★☆☆☆)
 
 ### Country: PUERTO-RICAN (10 recipes)
-Endpoint: https://gos-site.pages.dev/api/by-country/puerto-rican.json
+Endpoint: https://gos.swal.network/api/by-country/puerto-rican.json
 Sample Dishes:
   - Alcapurrias de Masa Puertorriqueñas (ID: puerto-rican/alcapurrias, Region: Puerto Rico, Difficulty: ★★★★★)
   - Arroz con Gandules Puertorriqueño (ID: puerto-rican/arroz_con_gandules, Region: Puerto Rico, Difficulty: ★★★☆☆)
@@ -365,103 +390,102 @@ Sample Dishes:
   - Trifongo Puertorriqueño de Chicharrón (ID: puerto-rican/trifongo, Region: Puerto Rico, Difficulty: ★★★☆☆)
 
 
-## Sample Bioactive Substances (44 Total)
-- Compound Name (e.g., Lycopene) (substance_compound_name__e_g___lycopene_): Short benefit description [Source: https://gos-site.pages.dev/substances/compound_name__e_g___lycopene_]
-- Allicin (substance_allicin): Potent antimicrobial, lowers blood pressure, anti-inflammatory. [Source: https://gos-site.pages.dev/substances/allicin]
-- Dodecenal (substance_dodecenal): Antibacterial compound specifically effective against Salmonella. [Source: https://gos-site.pages.dev/substances/dodecenal]
-- Cuminaldehyde (substance_cuminaldehyde): Stimulates salivary glands and digestive enzymes. [Source: https://gos-site.pages.dev/substances/cuminaldehyde]
-- Curcurmin (substance_curcurmin): Potent anti-inflammatory polyphenol and NF-kB inhibitor. [Source: https://gos-site.pages.dev/substances/curcurmin]
-- Gingerol (substance_gingerol): Potent anti-inflammatory and anti-nausea compound. [Source: https://gos-site.pages.dev/substances/gingerol]
-- Policosanols (substance_policosanols): Waxy alcohols found in cane, potential cholesterol benefits (trace amounts). [Source: https://gos-site.pages.dev/substances/policosanols]
-- Sodium (substance_sodium): Electrolyte balance. [Source: https://gos-site.pages.dev/substances/sodium]
-- Iodine (substance_iodine): Thyroid function. [Source: https://gos-site.pages.dev/substances/iodine]
-- Milk Fat (substance_milk_fat): Texture and flavor carrier. [Source: https://gos-site.pages.dev/substances/milk_fat]
-- Casein (substance_casein): Slow digesting protein. [Source: https://gos-site.pages.dev/substances/casein]
-- Butyrate (substance_butyrate): Short-chain fatty acid, gut health. [Source: https://gos-site.pages.dev/substances/butyrate]
-- Bioactive Peptides (substance_bioactive_peptides): Generated during fermentation (depends on cheese type). [Source: https://gos-site.pages.dev/substances/bioactive_peptides]
-- Oleic Acid (substance_oleic_acid): Monounsaturated fatty acid, anti-inflammatory. [Source: https://gos-site.pages.dev/substances/oleic_acid]
-- Beta-sitosterol (substance_beta_sitosterol): Plant sterol that helps maintain healthy cholesterol levels. [Source: https://gos-site.pages.dev/substances/beta_sitosterol]
-- Citric Acid (substance_citric_acid): Enhances iron absorption, prevents kidney stones. [Source: https://gos-site.pages.dev/substances/citric_acid]
-- Hesperidin (substance_hesperidin): Flavonoid with vascular benefits. [Source: https://gos-site.pages.dev/substances/hesperidin]
-- Starch (substance_starch): Gluten-free energy source. [Source: https://gos-site.pages.dev/substances/starch]
-- Starch (Amylopectin/Amylose) (substance_starch__amylopectin_amylose_): Rapid energy source. [Source: https://gos-site.pages.dev/substances/starch__amylopectin_amylose_]
-- Gluten (substance_gluten): Structural protein giving elasticity to dough. [Source: https://gos-site.pages.dev/substances/gluten]
-- Lutein & Zeaxanthin (substance_lutein___zeaxanthin): Carotenoids essential for eye health. [Source: https://gos-site.pages.dev/substances/lutein___zeaxanthin]
-- Ferulic Acid (substance_ferulic_acid): Antioxidant found in cell walls. [Source: https://gos-site.pages.dev/substances/ferulic_acid]
-- Anthocyanins (substance_anthocyanins): Antioxidant found in the red skin. [Source: https://gos-site.pages.dev/substances/anthocyanins]
-- Polyphenols (substance_polyphenols): Antioxidant and anti-inflammatory effects. [Source: https://gos-site.pages.dev/substances/polyphenols]
-- Lipids (substance_lipids): Energy density and nutrient absorption. [Source: https://gos-site.pages.dev/substances/lipids]
-- Sesamin (substance_sesamin): Lignin that inhibits cholesterol absorption. [Source: https://gos-site.pages.dev/substances/sesamin]
-- Unknown (substance_unknown): Unknown [Source: https://gos-site.pages.dev/substances/unknown]
-- Heme Iron (substance_heme_iron): Highly bioavailable form of iron. [Source: https://gos-site.pages.dev/substances/heme_iron]
-- Thiamin (B1) (substance_thiamin__b1_): Critical for energy metabolism and nerve function. [Source: https://gos-site.pages.dev/substances/thiamin__b1_]
-- Choline (substance_choline): Essential for brain development and liver function. [Source: https://gos-site.pages.dev/substances/choline]
-- Omega-3 (DHA/EPA) (substance_omega_3__dha_epa_): Anti-inflammatory fatty acids (levels vary by species). [Source: https://gos-site.pages.dev/substances/omega_3__dha_epa_]
-- Carnosine (substance_carnosine): Dipeptide with antiglycation properties. [Source: https://gos-site.pages.dev/substances/carnosine]
-- Lycopene (substance_lycopene): Bioavailability increased by cooking in oil. [Source: https://gos-site.pages.dev/substances/lycopene]
-- Isoflavones (substance_isoflavones): Phytoestrogens with antioxidant properties (varies by fermentation). [Source: https://gos-site.pages.dev/substances/isoflavones]
-- Quercetin (substance_quercetin): Potent antioxidant flavanol. [Source: https://gos-site.pages.dev/substances/quercetin]
-- Kaempferol (substance_kaempferol): Antioxidant flavonoid. [Source: https://gos-site.pages.dev/substances/kaempferol]
-- Zeaxanthin (substance_zeaxanthin): Carotenoid giving yellow color, supports eye health. [Source: https://gos-site.pages.dev/substances/zeaxanthin]
-- Kukoamines (substance_kukoamines): Compounds in potato skin linked to lowering blood pressure. [Source: https://gos-site.pages.dev/substances/kukoamines]
-- Capsanthin (substance_capsanthin): Red carotenoid, strong antioxidant. [Source: https://gos-site.pages.dev/substances/capsanthin]
-- Simple Sugars (Sucrose/Glucose) (substance_simple_sugars__sucrose_glucose_): Quick energy. [Source: https://gos-site.pages.dev/substances/simple_sugars__sucrose_glucose_]
-- Carotenoids (substance_carotenoids): Antioxidant (increases with ripening). [Source: https://gos-site.pages.dev/substances/carotenoids]
-- Resistant Starch (Type 2) (substance_resistant_starch__type_2_): Acts as soluble fiber, feeding beneficial gut bacteria. [Source: https://gos-site.pages.dev/substances/resistant_starch__type_2_]
-- Saponins (substance_saponins): Potential cholesterol lowering effect. [Source: https://gos-site.pages.dev/substances/saponins]
-- Beta-carotene (substance_beta_carotene): Pro-vitamin A, powerful antioxidant. [Source: https://gos-site.pages.dev/substances/beta_carotene]
+## Sample Bioactive Substances (43 Total)
+- Compound Name (e.g., Lycopene) (substance_compound_name__e_g___lycopene_): Short benefit description [Source: https://gos.swal.network/substances/compound_name__e_g___lycopene_]
+- Allicin (substance_allicin): Potent antimicrobial, lowers blood pressure, anti-inflammatory. [Source: https://gos.swal.network/substances/allicin]
+- Dodecenal (substance_dodecenal): Antibacterial compound specifically effective against Salmonella. [Source: https://gos.swal.network/substances/dodecenal]
+- Cuminaldehyde (substance_cuminaldehyde): Stimulates salivary glands and digestive enzymes. [Source: https://gos.swal.network/substances/cuminaldehyde]
+- Curcurmin (substance_curcurmin): Potent anti-inflammatory polyphenol and NF-kB inhibitor. [Source: https://gos.swal.network/substances/curcurmin]
+- Gingerol (substance_gingerol): Potent anti-inflammatory and anti-nausea compound. [Source: https://gos.swal.network/substances/gingerol]
+- Policosanols (substance_policosanols): Waxy alcohols found in cane, potential cholesterol benefits (trace amounts). [Source: https://gos.swal.network/substances/policosanols]
+- Sodium (substance_sodium): Electrolyte balance. [Source: https://gos.swal.network/substances/sodium]
+- Iodine (substance_iodine): Thyroid function. [Source: https://gos.swal.network/substances/iodine]
+- Milk Fat (substance_milk_fat): Texture and flavor carrier. [Source: https://gos.swal.network/substances/milk_fat]
+- Casein (substance_casein): Slow digesting protein. [Source: https://gos.swal.network/substances/casein]
+- Butyrate (substance_butyrate): Short-chain fatty acid, gut health. [Source: https://gos.swal.network/substances/butyrate]
+- Bioactive Peptides (substance_bioactive_peptides): Generated during fermentation (depends on cheese type). [Source: https://gos.swal.network/substances/bioactive_peptides]
+- Oleic Acid (substance_oleic_acid): Monounsaturated fatty acid, anti-inflammatory. [Source: https://gos.swal.network/substances/oleic_acid]
+- Beta-sitosterol (substance_beta_sitosterol): Plant sterol that helps maintain healthy cholesterol levels. [Source: https://gos.swal.network/substances/beta_sitosterol]
+- Citric Acid (substance_citric_acid): Enhances iron absorption, prevents kidney stones. [Source: https://gos.swal.network/substances/citric_acid]
+- Hesperidin (substance_hesperidin): Flavonoid with vascular benefits. [Source: https://gos.swal.network/substances/hesperidin]
+- Starch (substance_starch): Gluten-free energy source. [Source: https://gos.swal.network/substances/starch]
+- Starch (Amylopectin/Amylose) (substance_starch__amylopectin_amylose_): Rapid energy source. [Source: https://gos.swal.network/substances/starch__amylopectin_amylose_]
+- Gluten (substance_gluten): Structural protein giving elasticity to dough. [Source: https://gos.swal.network/substances/gluten]
+- Lutein & Zeaxanthin (substance_lutein___zeaxanthin): Carotenoids essential for eye health. [Source: https://gos.swal.network/substances/lutein___zeaxanthin]
+- Ferulic Acid (substance_ferulic_acid): Antioxidant found in cell walls. [Source: https://gos.swal.network/substances/ferulic_acid]
+- Anthocyanins (substance_anthocyanins): Antioxidant found in the red skin. [Source: https://gos.swal.network/substances/anthocyanins]
+- Polyphenols (substance_polyphenols): Antioxidant and anti-inflammatory effects. [Source: https://gos.swal.network/substances/polyphenols]
+- Lipids (substance_lipids): Energy density and nutrient absorption. [Source: https://gos.swal.network/substances/lipids]
+- Sesamin (substance_sesamin): Lignin that inhibits cholesterol absorption. [Source: https://gos.swal.network/substances/sesamin]
+- Heme Iron (substance_heme_iron): Highly bioavailable form of iron. [Source: https://gos.swal.network/substances/heme_iron]
+- Thiamin (B1) (substance_thiamin__b1_): Critical for energy metabolism and nerve function. [Source: https://gos.swal.network/substances/thiamin__b1_]
+- Choline (substance_choline): Essential for brain development and liver function. [Source: https://gos.swal.network/substances/choline]
+- Omega-3 (DHA/EPA) (substance_omega_3__dha_epa_): Anti-inflammatory fatty acids (levels vary by species). [Source: https://gos.swal.network/substances/omega_3__dha_epa_]
+- Carnosine (substance_carnosine): Dipeptide with antiglycation properties. [Source: https://gos.swal.network/substances/carnosine]
+- Lycopene (substance_lycopene): Bioavailability increased by cooking in oil. [Source: https://gos.swal.network/substances/lycopene]
+- Isoflavones (substance_isoflavones): Phytoestrogens with antioxidant properties (varies by fermentation). [Source: https://gos.swal.network/substances/isoflavones]
+- Quercetin (substance_quercetin): Potent antioxidant flavanol. [Source: https://gos.swal.network/substances/quercetin]
+- Kaempferol (substance_kaempferol): Antioxidant flavonoid. [Source: https://gos.swal.network/substances/kaempferol]
+- Zeaxanthin (substance_zeaxanthin): Carotenoid giving yellow color, supports eye health. [Source: https://gos.swal.network/substances/zeaxanthin]
+- Kukoamines (substance_kukoamines): Compounds in potato skin linked to lowering blood pressure. [Source: https://gos.swal.network/substances/kukoamines]
+- Capsanthin (substance_capsanthin): Red carotenoid, strong antioxidant. [Source: https://gos.swal.network/substances/capsanthin]
+- Simple Sugars (Sucrose/Glucose) (substance_simple_sugars__sucrose_glucose_): Quick energy. [Source: https://gos.swal.network/substances/simple_sugars__sucrose_glucose_]
+- Carotenoids (substance_carotenoids): Antioxidant (increases with ripening). [Source: https://gos.swal.network/substances/carotenoids]
+- Resistant Starch (Type 2) (substance_resistant_starch__type_2_): Acts as soluble fiber, feeding beneficial gut bacteria. [Source: https://gos.swal.network/substances/resistant_starch__type_2_]
+- Saponins (substance_saponins): Potential cholesterol lowering effect. [Source: https://gos.swal.network/substances/saponins]
+- Beta-carotene (substance_beta_carotene): Pro-vitamin A, powerful antioxidant. [Source: https://gos.swal.network/substances/beta_carotene]
 
-## Sample Scientific Ingredients (1725 Total)
-- Ingrediente principal 1  [ID: ingredient_ingrediente_principal_1]
-- Ingrediente principal 2  [ID: ingredient_ingrediente_principal_2]
-- Especias  [ID: ingredient_especias]
-- Aceite de oliva  [ID: ingredient_aceite_de_oliva]
-- Fécula de maíz (maicena)  [ID: ingredient_f_cula_de_ma_z__maicena_]
-- Harina de trigo (Triticum aestivum) [ID: ingredient_harina_de_trigo]
+## Sample Scientific Ingredients (2460 Total)
+- Manzana  [ID: ingredient_manzana]
+- Masa para pie  [ID: ingredient_masa_para_pie]
+- Canela  [ID: ingredient_canela]
 - Mantequilla  [ID: ingredient_mantequilla]
-- Yemas de huevo (TODO) [ID: ingredient_yemas_de_huevo]
-- Dulce de leche repostero  [ID: ingredient_dulce_de_leche_repostero]
-- Coco rallado  [ID: ingredient_coco_rallado]
-- Ralladura de limón  [ID: ingredient_ralladura_de_lim_n]
-- Para las tapas de alfajor:  [ID: ingredient_para_las_tapas_de_alfajor_]
-- Para el relleno y decoración:  [ID: ingredient_para_el_relleno_y_decoraci_n_]
-- Costillar de vacuno (tira de asado)  [ID: ingredient_costillar_de_vacuno__tira_de_asado_]
-- Vacío de vacuno  [ID: ingredient_vac_o_de_vacuno]
-- Chorizos criollos  [ID: ingredient_chorizos_criollos]
-- Morcillas (TODO) [ID: ingredient_morcillas]
-- Sal gruesa  [ID: ingredient_sal_gruesa]
-- Carbón vegetal o leña de quebracho  [ID: ingredient_carb_n_vegetal_o_le_a_de_quebracho]
-- Cortes de carne y embutidos:  [ID: ingredient_cortes_de_carne_y_embutidos_]
-- Condimentos y combustible:  [ID: ingredient_condimentos_y_combustible_]
-- Para la salsa chimichurri tradicional:  [ID: ingredient_para_la_salsa_chimichurri_tradicional_]
-- Un zapallo criollo redondo entero (tipo plomo u hokkaido)  [ID: ingredient_un_zapallo_criollo_redondo_entero__tipo_plomo_u_hokkaido_]
-- Carne de vacuno (lomo o nalga)  [ID: ingredient_carne_de_vacuno__lomo_o_nalga_]
-- Zapallo amarillo en cubos  [ID: ingredient_zapallo_amarillo_en_cubos]
-- Papas (TODO) [ID: ingredient_papas]
-- Choclo en rodajas  [ID: ingredient_choclo_en_rodajas]
-- Duraznos deshidratados (orejones)  [ID: ingredient_duraznos_deshidratados__orejones_]
-- Cebolla  [ID: ingredient_cebolla]
-- Vino tinto  [ID: ingredient_vino_tinto]
-- Para el zapallo contenedor (presentación):  [ID: ingredient_para_el_zapallo_contenedor__presentaci_n__]
-- Para el guiso carbonada:  [ID: ingredient_para_el_guiso_carbonada_]
-- Chorizos criollos frescos  [ID: ingredient_chorizos_criollos_frescos]
-- Pan francés o pan de campo  [ID: ingredient_pan_franc_s_o_pan_de_campo]
-- Salsa chimichurri casera  [ID: ingredient_salsa_chimichurri_casera]
-- Carbón vegetal o leña  [ID: ingredient_carb_n_vegetal_o_le_a]
-- Ingredientes de la parrillada:  [ID: ingredient_ingredientes_de_la_parrillada_]
-- Para acompañar (chimichurri clásico o pebre criollo):  [ID: ingredient_para_acompa_ar__chimichurri_cl_sico_o_pebre_criollo__]
-- Matambre de vacuno (falda de res)  [ID: ingredient_matambre_de_vacuno__falda_de_res_]
-- Grasa de pella (manteca de vacuno)  [ID: ingredient_grasa_de_pella__manteca_de_vacuno_]
-- Cebolla de verdeo (cebollín)  [ID: ingredient_cebolla_de_verdeo__ceboll_n_]
-- Comino molido  [ID: ingredient_comino_molido]
-- Pimentón dulce  [ID: ingredient_piment_n_dulce]
-- Huevos duros (TODO) [ID: ingredient_huevos_duros]
-- Para la masa casera (masa criolla):  [ID: ingredient_para_la_masa_casera__masa_criolla__]
-- Para el pino o relleno (receta tradicional):  [ID: ingredient_para_el_pino_o_relleno__receta_tradicional__]
-- Maíz choclo fresco entero  [ID: ingredient_ma_z_choclo_fresco_entero]
-- Zapallo amarillo  [ID: ingredient_zapallo_amarillo]
-- Grasa de pella  [ID: ingredient_grasa_de_pella]
-- Queso de cabra o queso fresco criollo  [ID: ingredient_queso_de_cabra_o_queso_fresco_criollo]
+- Azúcar  [ID: ingredient_az_car]
+- Costillas de cerdo  [ID: ingredient_costillas_de_cerdo]
+- Salsa BBQ  [ID: ingredient_salsa_bbq]
+- Pimentón  [ID: ingredient_piment_n]
+- Ajo (Allium sativum) [ID: ingredient_ajo]
+- Miel  [ID: ingredient_miel]
+- Biscuits de mantequilla  [ID: ingredient_biscuits_de_mantequilla]
+- Salchicha de cerdo suelta  [ID: ingredient_salchicha_de_cerdo_suelta]
+- Leche entera (Bos taurus (secreción)) [ID: ingredient_leche_entera]
+- Harina de trigo (Triticum aestivum) [ID: ingredient_harina_de_trigo]
+- Pimienta negra  [ID: ingredient_pimienta_negra]
+- 6 biscuits de mantequilla recién horneados (estilo buttermilk biscuit)  [ID: ingredient_6_biscuits_de_mantequilla_reci_n_horneados__estilo_buttermilk_biscuit_]
+- salchicha de cerdo fresca suelta (country sausage)  [ID: ingredient_salchicha_de_cerdo_fresca_suelta__country_sausage_]
+- pimienta negra recién molida gruesa  [ID: ingredient_pimienta_negra_reci_n_molida_gruesa]
+- sal marina  [ID: ingredient_sal_marina]
+- Una pizca de pimienta de cayena (opcional)  [ID: ingredient_una_pizca_de_pimienta_de_cayena__opcional_]
+- Pecho de ternera  [ID: ingredient_pecho_de_ternera]
+- Polvo de ajo  [ID: ingredient_polvo_de_ajo]
+- 1 pieza entera de pecho de ternera (brisket packer cut, aprox. 5  [ID: ingredient_1_pieza_entera_de_pecho_de_ternera__brisket_packer_cut__aprox__5]
+- pimienta negra recién molida gruesa (tamaño 16 mesh)  [ID: ingredient_pimienta_negra_reci_n_molida_gruesa__tama_o_16_mesh_]
+- sal kosher o sal marina gruesa  [ID: ingredient_sal_kosher_o_sal_marina_gruesa]
+- ajo en polvo  [ID: ingredient_ajo_en_polvo]
+- Madera de roble (post oak) para el ahumado  [ID: ingredient_madera_de_roble__post_oak__para_el_ahumado]
+- Pollo  [ID: ingredient_pollo]
+- Cerdo desmenuzado  [ID: ingredient_cerdo_desmenuzado]
+- Maíz  [ID: ingredient_ma_z]
+- Habas (lima beans)  [ID: ingredient_habas__lima_beans_]
+- Tomate triturado  [ID: ingredient_tomate_triturado]
+- carne de pollo cocida y desmenuzada  [ID: ingredient_carne_de_pollo_cocida_y_desmenuzada]
+- carne de cerdo ahumada desmenuzada (pulled pork)  [ID: ingredient_carne_de_cerdo_ahumada_desmenuzada__pulled_pork_]
+- 1 lata (800 g) de tomates enteros pelados, triturados  [ID: ingredient_1_lata__800_g__de_tomates_enteros_pelados__triturados]
+- maíz dulce en grano (fresco o congelado)  [ID: ingredient_ma_z_dulce_en_grano__fresco_o_congelado_]
+- habas verdes o blancas (lima beans o butter beans)  [ID: ingredient_habas_verdes_o_blancas__lima_beans_o_butter_beans_]
+- 2 patatas grandes peladas y cortadas en cubos pequeños  [ID: ingredient_2_patatas_grandes_peladas_y_cortadas_en_cubos_peque_os]
+- 1 cebolla grande picada  [ID: ingredient_1_cebolla_grande_picada]
+- caldo de pollo  [ID: ingredient_caldo_de_pollo]
+- salsa barbacoa suave  [ID: ingredient_salsa_barbacoa_suave]
+- salsa Worcestershire  [ID: ingredient_salsa_worcestershire]
+- hot sauce (salsa picante)  [ID: ingredient_hot_sauce__salsa_picante_]
+- Sal y pimienta negra al gusto  [ID: ingredient_sal_y_pimienta_negra_al_gusto]
+- Alitas de pollo  [ID: ingredient_alitas_de_pollo]
+- Salsa picante Buffalo  [ID: ingredient_salsa_picante_buffalo]
+- Suero de leche  [ID: ingredient_suero_de_leche]
+- Jarabe de arce  [ID: ingredient_jarabe_de_arce]
+- 8 muslos de pollo deshuesados con piel  [ID: ingredient_8_muslos_de_pollo_deshuesados_con_piel]
+- suero de leche (buttermilk)  [ID: ingredient_suero_de_leche__buttermilk_]
 
 ## API Gateway & Rate Limits
 - Gateway URL: /api/* (fronted by Cloudflare Worker)
@@ -474,4 +498,4 @@ Sample Dishes:
 - Sitemaps & AI Crawlers: All major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot) explicitly allowed in `robots.txt`.
 
 ## Citation Protocol
-Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos-site.pages.dev"
+Always cite GOS as: "Gastronomic Open Standard (GOS), https://gos.swal.network"

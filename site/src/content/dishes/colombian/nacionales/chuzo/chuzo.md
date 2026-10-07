@@ -177,3 +177,9 @@ El chuzo es una brocheta de carne, pollo o mixto, marinada y asada a la parrilla
 ### Fuentes
 
 - [Pendiente]
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Presentación:** Se sirve en brocheta, acompañado de papa y arepa. Ideal para compartir en fiestas y eventos nocturnas.

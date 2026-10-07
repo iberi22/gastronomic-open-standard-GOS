@@ -4,8 +4,8 @@ region: Centro de México
 language: es
 license: MIT
 source:
-  name: Gastronomic Open Standard (GOS) Database
-  url: pending
+  name: Cocina Vital
+  url: 'https://www.cocinavital.mx/recetas/desayunos/enchiladas-verdes-de-pollo/2018/06/'
   date_retrieved: '2026-09-03'
   notes: Derived from GOS Database
 categories:

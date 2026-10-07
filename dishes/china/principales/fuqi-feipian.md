@@ -89,3 +89,11 @@ nutrition:
 
 * 牛肉与牛肚富含高生物价蛋白质与铁元素。
 * 川味红油中的辣椒素（capsaicin）与花椒中的山椒素协同刺激味觉，诱发内啡呔释放，带来快感与食欲提升。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** spicy, numbing, savory, nutty, umami
+* **Textura:** chewy, tender, crunchy
+* **Aroma:** chili oil, roasted peanut, sichuan pepper, roasted sesame

@@ -1,0 +1,171 @@
+{
+  "desc": "Referencias verificadas para site/src/content/vitamins/. Cada DOI fue comprobado contra Crossref y el PMID contra PubMed; el titulo corresponde a la vitamina del code. B5 se omite a proposito: no existe revision general reciente y fiable. Las pseudos-vitaminas (B8-B17, K2-K7, F, L, N, P, Q, S, T, U, Bx) no tienen entry porque no tienen literatura clinica establecida.",
+  "verified_on": "2026-10-01",
+  "method": "PubMed esearch/esummary por code + comprobacion de DOI en Crossref (api.crossref.org/works?filter=doi:).",
+  "vitamins": [
+    {
+      "code": "A",
+      "file": "a-a.md",
+      "studies": [
+        {
+          "title": "Vitamin A supplementation for preventing morbidity and mortality in children",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2022,
+          "doi": "10.1002/14651858.CD008524.pub4"
+        }
+      ]
+    },
+    {
+      "code": "B1",
+      "file": "b1-b1.md",
+      "studies": [
+        {
+          "title": "Thiamine deficiency disorders: a clinical perspective",
+          "journal": "Annals of the New York Academy of Sciences",
+          "year": 2020,
+          "doi": "10.1111/nyas.14536",
+          "pmid": "33305487"
+        }
+      ]
+    },
+    {
+      "code": "B12",
+      "file": "b12-b12.md",
+      "studies": [
+        {
+          "title": "Efficacy of different routes of vitamin B12 supplementation for the treatment of vitamin B12 deficiency: a systematic review",
+          "journal": "Irish Journal of Medical Science",
+          "year": 2024,
+          "doi": "10.1007/s11845-023-03602-4",
+          "pmid": "38231320"
+        }
+      ]
+    },
+    {
+      "code": "B2",
+      "file": "b2-b2.md",
+      "studies": [
+        {
+          "title": "Causes and Clinical Sequelae of Riboflavin Deficiency",
+          "journal": "Annual Review of Nutrition",
+          "year": 2023,
+          "doi": "10.1146/annurev-nutr-061121-084407"
+        }
+      ]
+    },
+    {
+      "code": "B3",
+      "file": "b3-b3.md",
+      "studies": [
+        {
+          "title": "Definition of a tolerable upper intake level of niacin: a systematic review",
+          "journal": "Nutrition Reviews",
+          "year": 2017,
+          "doi": "10.1093/nutrit/nux011",
+          "pmid": "28541582"
+        }
+      ]
+    },
+    {
+      "code": "B6",
+      "file": "b6-b6.md",
+      "studies": [
+        {
+          "title": "Vitamin B6 in Health and Disease",
+          "journal": "Nutrients",
+          "year": 2021,
+          "doi": "10.3390/nu13093229"
+        }
+      ]
+    },
+    {
+      "code": "B7",
+      "file": "b7-b7.md",
+      "studies": [
+        {
+          "title": "Biotin: From Nutrition to Therapeutics",
+          "journal": "The Journal of Nutrition",
+          "year": 2017,
+          "doi": "10.3945/jn.116.238956"
+        }
+      ]
+    },
+    {
+      "code": "B9",
+      "file": "b9-b9.md",
+      "studies": [
+        {
+          "title": "Folic Acid Supplementation to Prevent Neural Tube Defects: US Preventive Services Task Force Recommendation Statement",
+          "journal": "JAMA",
+          "year": 2023,
+          "doi": "10.1001/jama.2023.9864",
+          "pmid": "37526714"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "file": "c-c.md",
+      "studies": [
+        {
+          "title": "Vitamin C reduces the severity of common colds: a meta-analysis of randomized controlled trials",
+          "journal": "BMC Public Health",
+          "year": 2023,
+          "doi": "10.1186/s12889-023-17229-8",
+          "pmid": "38082300"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "file": "d-d.md",
+      "studies": [
+        {
+          "title": "Calcium, vitamin D, or combined supplementation to prevent fractures in older adults: systematic review and meta-analysis",
+          "journal": "BMJ",
+          "year": 2026,
+          "doi": "10.1136/bmj-2025-088050",
+          "pmid": "42161415"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "file": "e-e.md",
+      "studies": [
+        {
+          "title": "Vitamin E Intake and Risk of Prostate Cancer: A Meta-Analysis",
+          "journal": "Nutrients",
+          "year": 2022,
+          "doi": "10.3390/nu15010014",
+          "pmid": "36615673"
+        }
+      ]
+    },
+    {
+      "code": "K",
+      "file": "k1-k1.md",
+      "studies": [
+        {
+          "title": "Vitamin K - sources, physiological role, kinetics, deficiency, detection, therapeutic use",
+          "journal": "Nutrition Reviews",
+          "year": 2021,
+          "doi": "10.1093/nutrit/nuab061",
+          "pmid": "34472618"
+        }
+      ]
+    },
+    {
+      "code": "OM3",
+      "file": "om3-om3.md",
+      "studies": [
+        {
+          "title": "Role of Omega-3 Fatty Acids in Improving Metabolic Dysfunctions",
+          "journal": "Nutrients",
+          "year": 2024,
+          "doi": "10.3390/nu16172961"
+        }
+      ]
+    }
+  ]
+}

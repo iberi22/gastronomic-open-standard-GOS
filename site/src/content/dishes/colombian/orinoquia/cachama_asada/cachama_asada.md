@@ -147,3 +147,12 @@ calificación: ★★★★★ 5/5
 
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/cachama-asada)
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Jugoso, Tierno, Crujiente (piel)
+* **Aroma:** Ahumado, Herbal, Cítrico
+* **Presentación:** Pescado entero asado con piel dorada, servido sobre hojas de bijao con acompañantes blancos y amarillos.

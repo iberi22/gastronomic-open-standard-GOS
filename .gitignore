@@ -2,21 +2,20 @@
 node_modules/
 .history
 .DS_Store
-
 .idea
 *.iml
 # ¡NO ignores .husky! Los hooks deben versionarse para Husky
 # .husky/
 mkdocs.yml
+# Índice de dificultad regenerado por .github/readme-generate.js en cada build
+starsystem/
 site/dist/
 site/node_modules/
 .cache/
-
 __pycache__/
 *.pyc
 *.egg-info/
 .pytest_cache/
-
 # Prune hygiene (2026-08-24)
 # Note: release evidence bundles MUST be committed. We use pathspec
 # rules so .gitcore/releases/*.log and *.md are excluded from the
@@ -24,7 +23,6 @@ __pycache__/
 #
 # Strategy: name the release files explicitly with `!` patterns
 # that override the broader patterns by being more specific.
-
 *.log
 !site/scripts/*.log
 !.gitcore/releases/**/*.log
@@ -33,22 +31,17 @@ __pycache__/
 bin/
 archive/site-cleanup/
 site_legacy_20260902/
-
 # Playwright artifacts
 test-results/
 playwright-report/
 playwright/.cache/
-
 dishes_backup/
-
 # Cloudflare Worker / Wrangler dev state
 .wrangler/
 worker/.wrangler/
-
 # Astro + Husky leftovers (2026-09-04)
 .astro/
 .husky/*.orig
-
 # Generated graph intermediates (regenerated every build by site/scripts/generate-graph.js)
 /graph.json
 docs/graph.json
@@ -63,3 +56,61 @@ site/src/content/ingredients/
 site/public/api/
 site/public/llms*.txt
 site/public/sitemap.xml
+
+# >>> GITCORE PUBLIC REPO HARDENING >>>
+# ─────────────────────────────────────────────────────────────────────────────
+# GitCore — fragmento para repos PÚBLICOS
+# Añadir al .gitignore del repo público. Bloquea el estado interno del
+# laboratorio que el protocolo GitCore crea en TODOS los repos.
+#
+# IMPORTANTE: ignorar un archivo ya trackeado NO lo despublica.
+# Para archivos ya commiteados hay que ejecutar:
+#   git rm -r --cached <ruta>
+#   git commit -m "chore: stop publishing internal lab state"
+# y, si ya se publicó, purgar el historial.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Planificación y estado de sesión (interno)
+.gitcore/planning/
+.gitcore/chronicles/
+.gitcore/waves/
+.gitcore/sdd/
+.gitcore/releases/
+.gitcore/issues/
+.gitcore/features.details/
+.gitcore/CONTEXT_LOG.md
+.gitcore/STATE.md
+.gitcore/TODO.md
+.gitcore/features-status.md
+.gitcore/implementation-score.json
+.gitcore/AGENT_INDEX.md
+.gitcore/ARCHITECTURE.md
+.gitcore/SRC.md
+.gitcore/skill-registry.json
+.gitcore/.skill-registry.cache.json
+.gitcore/_tmp_*
+
+# Estado del harness y agentes
+.hermes/
+.atl/
+.gestalt/
+.jules/
+.xavier/
+.xavier-backups/
+.skill-registry.cache.json
+
+# Planificación suelta en la raíz o en docs/
+PLANNING.md
+TASK.md
+tasks.json
+
+# Configuración local con rutas absolutas
+.mcp.json
+
+# Runtime y artefactos
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.profraw
+# <<< GITCORE PUBLIC REPO HARDENING <<<

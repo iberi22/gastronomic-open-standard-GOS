@@ -133,3 +133,12 @@ La Fariña es un alimento ancestral de la Amazonía, elaborado a partir de yuca 
 - [Selviva: Farofa y mañojo amazónico](https://selviva.com/index.php/2024/07/19/farofa-farina-o-manoco-alimento-emblematico-de-la-amazonia/)
 - [Tipishca Blog: Preparación de la fariña](https://tipishca.blogspot.com/2014/09/estampas-de-la-amazonia-2.html)
 - [TripAdvisor: Opiniones sobre comida amazónica](https://www.tripadvisor.co/ShowUserReviews-g317037-d3164418-r750285171-Tierras_Amazonicas-Leticia_Amazonas_Department.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Neutro, Ligeramente tostado
+* **Textura:** Crujiente, Arenosa
+* **Aroma:** Tostado, Terroso
+* **Presentación:** Se sirve en pequeños cuencos para espolvorear sobre sopas, caldos, pescados o para preparar bebidas refrescantes.

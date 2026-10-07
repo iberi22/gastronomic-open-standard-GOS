@@ -24,17 +24,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           lfs: true
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           version: 11.24.0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -54,14 +54,25 @@ jobs:
           node scripts/enrich-ingredients.js
           node scripts/generate-graph.js
           node scripts/export-vectors.mjs
+          node scripts/generate-og-images.mjs
           node scripts/generate-llms.mjs
+          node scripts/generate-feed.mjs
+          node scripts/generate-sitemap.js
 
       - name: Build Astro site
         working-directory: ./site
         run: pnpm exec astro build
 
+      - name: 🔍 Verificar invariantes SEO (canonical, sitemap, noindex)
+        working-directory: ./site
+        # Gate real: falla si el canonical no es el canonico, si el sitemap
+        # trae URLs huerfanas o duplicadas, si hreflang vuelve a aparecer, o
+        # si pending_review se cuela en el indice. Sin esto, un cambio de
+        # routing puede romper 1104 paginas y el build sigue en verde.
+        run: node scripts/verify-sitemap-seo.mjs
+
       - name: ⚡ Deploy to Cloudflare Pages (wrangler-action, patrón canónico worldexams/gara-g)
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}

@@ -148,3 +148,12 @@ calificación: ★★★★★ 5/5
 - [Receta tradicional de caldo de costilla - El Tiempo](https://www.eltiempo.com/vida/receta-caldo-de-costilla-35791)
 - [Google Maps: Opiniones sobre caldo de costilla](https://www.google.com/maps/search/caldo+de+costilla)
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/caldo-de-costilla)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Umami (hueso), Herbal (cilantro)
+* **Textura:** Líquido (Caldo claro), Suave (Papa/Carne)
+* **Aroma:** Res hervida, Cebolla larga, Cilantro
+* **Presentación:** Tazón grande y profundo. El caldo debe verse dorado y translúcido (no turbio). La costilla debe sobresalir y estar acompañada de papas enteras o en trozos grandes. Cilantro fresco esparcido encima al momento.

@@ -21,10 +21,10 @@ health_registry:
   evidence_level: Medium
   mechanism: Inhibits HMG-CoA reductase, lowers LDL
   studies:
-  - doi: 10.1111/j.1365-2796.1993.tb00630.x
-    source: J. R. Coll. Physicians
-    title: 'Garlic and serum lipids: A meta-analysis'
-    year: 1993
+  - doi: 10.1111/nure.12012
+    source: Nutrition Reviews
+    title: 'Effect of garlic on serum lipids: an updated meta-analysis'
+    year: 2013
 image_attribution: Wikimedia Commons / Pixabay — Allium sativum
 name: Alicina
 sabor: Picante umami, se degrada con calor (>70°C pierde alicina)

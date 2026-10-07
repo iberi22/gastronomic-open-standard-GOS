@@ -144,3 +144,11 @@ Las Crab Patties o empanadas de cangrejo son una delicia típica de San Andrés 
 
 - [ElRincónColombiano: Empanadas de cangrejo](https://elrinconcolombiano.com/empanadas-de-cangrejo-o-crab-patties/)
 - [ColombiaPais.com: Recetas isleñas](https://colombiapais.com/gastronomia-colombiana/gastronomia-san-andres/gastronomia-san-andres.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Picante suave, Marino
+* **Textura:** Masa crujiente, Relleno jugoso
+* **Aroma:** Empanada de cangrejo frita

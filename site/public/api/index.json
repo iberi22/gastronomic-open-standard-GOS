@@ -1,16 +1,16 @@
 {
-  "totalRecipes": 383,
+  "totalRecipes": 473,
   "languages": [
     {
       "language": "spanish",
-      "count": 383,
+      "count": 473,
       "endpoint": "/api/spanish/index.json"
     }
   ],
   "countries": [
     {
       "country": "unknown",
-      "count": 260,
+      "count": 350,
       "endpoint": "/api/by-country/unknown.json"
     },
     {

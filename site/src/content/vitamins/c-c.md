@@ -13,4 +13,12 @@ deficiency: |
   escorbuto (gingivitis, petequias, hemorrhagias subperiósticas, mala cicatrización)
 excess: |
   diarrea osmótica, cálculos renales en susceptible (>2000mg/día)
+studies:
+  - title: 'Vitamin C reduces the severity of common colds: a meta-analysis of randomized controlled trials'
+    source: 'BMC Public Health'
+    year: 2023
+    doi: '10.1186/s12889-023-17229-8'
+    pmid: '38082300'
+    url: 'https://doi.org/10.1186/s12889-023-17229-8'
+
 ---

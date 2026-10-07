@@ -153,3 +153,12 @@ calificación: ★★★★★ 5/5
 
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/entreverado)
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Ahumado
+* **Textura:** Variada, Jugosa, Crujiente
+* **Aroma:** Ahumado, Herbal, Carnoso mixto
+* **Presentación:** Gran bandeja con diversidad de cortes de carne asada, contrastando con el blanco de la yuca.

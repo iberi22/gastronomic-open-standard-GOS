@@ -149,3 +149,12 @@ calificación: ★★★★★ 5/5
 
 - [Foro gastronómico colombiano](https://www.gastronomiacolombiana.com/foro/chiguiro-asado)
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Terroso
+* **Textura:** Jugoso, Tierno, Ligeramente Fibroso
+* **Aroma:** Ahumado, Herbal, Almizclado
+* **Presentación:** Carne troceada con tonos tostados, servida sobre una base verde de hojas de bijao.

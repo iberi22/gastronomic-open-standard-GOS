@@ -26,7 +26,7 @@ export default defineConfig({
     ? {}
     : {
         webServer: {
-          command: 'pnpm exec astro preview --host 0.0.0.0 --port 4321',
+          command: 'npx astro preview --host 0.0.0.0 --port 4321',
           url: 'http://localhost:4321/',
           reuseExistingServer: !process.env.CI,
           timeout: 60_000,
@@ -39,5 +39,6 @@ export default defineConfig({
     },
     { name: 'production-coverage', testMatch: /production-coverage\.spec\.ts/ },
     { name: 'graph-paper', testMatch: /graph-paper-style\.spec\.ts/ },
+    { name: 'agent-grounding', testMatch: /agent-grounding\.spec\.ts/ },
   ],
 })

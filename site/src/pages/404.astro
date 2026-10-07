@@ -1,0 +1,125 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../layouts/Layout.astro'
+
+// Esta pagina existe por un motivo concreto y medido: sin un 404.html,
+// Cloudflare Pages sirve index.html con HTTP 200 para CUALQUIER ruta. Se
+// verifico en produccion que /esta-pagina-no-existe-xyz-123/ devolvia 200 y
+// el cuerpo entero del landing, y que /recipes/<p>/<r>/<slug>/ sin el slug
+// final devolvia tambien 200 con el landing. Para un buscador son paginas
+// duplicadas del home, y el sitemap declara 589 URLs que no son las que un
+// crawler encuentra reales.
+//
+// Con este archivo, Pages responde 404 y ademas ofrece salidas reales en vez
+// de un callejon sin salida.
+
+// Conteo real: si el link a /recipes/ existiera vacio, el 404 seria peor que
+// no existir. Sale de la misma content collection que usa el resto del sitio.
+//
+// El pais NO esta en dish.data: sale del path del id (el mismo truco que usa
+// countries/index.astro, `dish.id.split('/')[0]`). La primera version de este
+// archivo leia data.country, daba 0 paises y lo decia en la description.
+const dishes = await getCollection('dishes')
+const recipes = dishes.length
+const ingredients = (await getCollection('ingredients')).length
+const countryList = [
+  ...new Set(dishes.map((d) => d.id.split('/')[0]).filter(Boolean)),
+].sort()
+
+// El canonical se fija a mano en esta pagina. El de Layout sale de
+// Astro.url.pathname, que en build es /404/ -> "https://gos.swal.network/404/".
+// Canonizar una pagina de error hace que un buscador la indexe como si fuera
+// contenido real. Noindex + canonical al home es lo coherente.
+const desc = `Página no encontrada en GOS. El catálogo sigue disponible: ${recipes} recetas, ${ingredients} ingredientes y ${countryList.length} países en el grafo gastronómico abierto.`
+---
+
+<Layout
+  title="Página no encontrada (404) — GOS"
+  description={desc}
+  canonical="https://gos.swal.network/"
+  noindex
+>
+  <div class="wrap">
+    <p class="code">404</p>
+    <h1>Esta página no está en el grafo</h1>
+    <p class="lead">
+      La dirección que buscas no corresponde a ninguna receta, ingrediente o sustancia publicada.
+      No es un error de carga: esa entrada no existe.
+    </p>
+
+    <nav class="salidas" aria-label="Secciones del grafo">
+      <a href="/recipes/">
+        <strong>Recetas</strong>
+        <span>{recipes} recetas de {countryList.length} países</span>
+      </a>
+      <a href="/ingredients/">
+        <strong>Ingredientes</strong>
+        <span>{ingredients} fichas con composición</span>
+      </a>
+      <a href="/substances/">
+        <strong>Substancias</strong>
+        <span>Compuestos con evidencia científica</span>
+      </a>
+      <a href="/scientific/">
+        <strong>Científico</strong>
+        <span>Evidencia con DOI verificable</span>
+      </a>
+      <a href="/graph/">
+        <strong>Grafo</strong>
+        <span>Explorar todas las relaciones</span>
+      </a>
+      <a href="/">
+        <strong>Portada</strong>
+        <span>Volver al inicio</span>
+      </a>
+    </nav>
+  </div>
+</Layout>
+
+<style>
+  .wrap {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  .code {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--swal-accent-text, currentColor);
+    margin: 0 0 0.5rem;
+  }
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem;
+  }
+  .lead {
+    max-width: 42ch;
+    opacity: 0.85;
+    margin: 0 0 2.5rem;
+  }
+  .salidas {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .salidas a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--swal-border, currentColor);
+    border-radius: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .salidas a:hover,
+  .salidas a:focus-visible {
+    border-color: var(--swal-accent, currentColor);
+  }
+  .salidas span {
+    font-size: 0.85rem;
+    opacity: 0.75;
+  }
+</style>

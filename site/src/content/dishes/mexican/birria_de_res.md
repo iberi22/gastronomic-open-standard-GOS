@@ -51,9 +51,9 @@ sensory:
 servings: 6
 source:
   date_retrieved: '2026-09-03'
-  name: Gastronomic Open Standard (GOS) Database
+  name: Animal Gourmet
   notes: Derived from GOS Database
-  url: pending
+  url: 'https://animalgourmet.com/2021/02/10/receta-de-birria-de-res-con-consome/'
 tags:
 - Mexican
 - GOS Catalog

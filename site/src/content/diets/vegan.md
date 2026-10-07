@@ -11,4 +11,12 @@ key_components: ["Suplementar B12 250mcg/día (obligatorio)", "Fuentes de hierro
 contraindications: |
   Embarazo (si no hay supervisión: riesgo de B12 deficiency neonatal). Lactancia. Niños (requiere planificación). Fenilcetonuria.
 sources: ["Key TJ et al. Mortality in vegetarians and non-vegetarians. Am J Clin Nutr 2014;100:507S-13S.", "Satija A et al. Healthful and unhealthful plant-based diets. Am J Clin Nutr 2017;105:1038-48."]
+studies:
+  - title: 'Vegan Diet and Bone Health - Results from the Cross-Sectional NutriNet-Sante Study'
+    source: 'Nutrients'
+    year: 2021
+    doi: '10.3390/nu13020685'
+    pmid: '33669942'
+    url: 'https://doi.org/10.3390/nu13020685'
+
 ---

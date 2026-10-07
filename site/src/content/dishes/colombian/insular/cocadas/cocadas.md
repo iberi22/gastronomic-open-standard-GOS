@@ -136,3 +136,11 @@ Las cocadas son uno de los dulces más tradicionales de la región Insular y de 
 
 - [Foros de cocina y recetas familiares]
 - [TripAdvisor: Opiniones sobre cocadas en San Andrés](https://www.tripadvisor.com/ShowForum-g297482-i3902-San_Andres_Island_San_Andres_and_Providencia_Department.html)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Dulce, Acaramelado, Coco
+* **Textura:** Masticable, Crujiente de coco
+* **Aroma:** Coco tostado y panela

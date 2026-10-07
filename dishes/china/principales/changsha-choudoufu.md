@@ -88,3 +88,11 @@ nutrition:
 
 * 长沙臭豆腐卤水发酵过程中，厌氧微生物（如乳酸菌、拟杆菌与真菌）分解豆蛋白，产生游离氨基酸、短链脂肪酸与硫化物（硫化氢、甲硫醇等），形成独特臭味与极高的鲜味。
 * 油炸后，外壳水分剧烈蒸发形成微孔结构，能大量吸收蒜汁与高汤。
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** savory, spicy, pungently pungent, umami, salty
+* **Textura:** crispy exterior, juicy interior, tender
+* **Aroma:** fermented pungent, garlic, spicy chili

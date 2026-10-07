@@ -151,3 +151,12 @@ El Inchicapi es una sopa tradicional amazónica, muy apreciada en la región por
 - [Inforegion: Opiniones sobre Inchicapi](https://inforegion.pe/inchicapi-un-caldo-amazonico-ideal-para-calentarnos-en-invierno/)
 - [RecetasNestle: Versión tradicional](https://www.recetasnestle.com.pe/recetas/inchicapi-de-gallina)
 - [Comida Peruana: Receta de Inchicapi](https://www.comida-peruana.com/recetas/sopas/inchicapi)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Cremoso, Ligeramente dulce
+* **Textura:** Cremoso, Suave
+* **Aroma:** Herbal (cilantro), Maní, Cocido
+* **Presentación:** Se sirve en platos hondos, ideal para compartir en reuniones familiares o festividades.

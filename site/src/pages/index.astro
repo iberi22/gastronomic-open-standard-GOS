@@ -1,51 +1,291 @@
 ---
+import { getCollection } from 'astro:content'
 import { Badge, Button, Card } from '@swal/ui'
+import graphData from '../../public/graph-data.json'
 import GosGraph from '../components/GosGraph.svelte'
 import Layout from '../layouts/Layout.astro'
+import { clampDescription } from '../lib/meta-description'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-// stats will be hydrated via GosGraph; static fallback numbers approximate
+
+// Los numeros salen del grafo generado, no de aproximaciones: si el contenido
+// crece, la portada deja de mentir. Ver scripts/generate-graph.js.
+const nodes = graphData.nodes
+const edges = graphData.edges
+const byType = (t: string) => nodes.filter((n) => n.type === t).length
+
+const total = nodes.length
+
+// Ingredientes con ficha propia, contados desde la content collection (la
+// fuente real). El grafo tambien incluye los que solo citan las recetas, asi
+// que no son la misma cifra: 554 en disco vs 2460 nodos en el grafo.
+const ingFichas = (await getCollection('ingredients')).length
+
+// Las 16 relaciones del grafo, con su conteo real y su lectura en lenguaje claro.
+// El orden es por peso: primero lo que sostiene el grafo, despues la ciencia.
+const RELATIONS: { type: string; from: string; to: string; reads: string }[] = [
+  {
+    type: 'USES',
+    from: 'recipe',
+    to: 'ingredient',
+    reads: 'cada receta declara qué ingredientes usa',
+  },
+  {
+    type: 'RELATED_DISHES',
+    from: 'recipe',
+    to: 'recipe',
+    reads: 'recetas que comparten técnica o familia',
+  },
+  {
+    type: 'HAS_FLAVOR',
+    from: 'ingredient',
+    to: 'flavor',
+    reads: 'qué sabor aporta cada ingrediente',
+  },
+  {
+    type: 'BELONGS_TO',
+    from: 'dish*',
+    to: 'category',
+    reads: 'a qué categoría culinaria pertenece cada plato',
+  },
+  {
+    type: 'HAS_TEXTURE',
+    from: 'ingredient',
+    to: 'texture',
+    reads: 'la textura que aporta al plato',
+  },
+  {
+    type: 'OFTEN_TOGETHER',
+    from: 'ingredient',
+    to: 'ingredient',
+    reads: 'pares que aparecen juntos en las recetas',
+  },
+  {
+    type: 'FROM_REGION',
+    from: 'dish*',
+    to: 'region',
+    reads: 'de qué región es cada plato',
+  },
+  {
+    type: 'HAS_NUTRIENT',
+    from: 'ingredient',
+    to: 'nutrient',
+    reads: 'nutrientes que aporta',
+  },
+  {
+    type: 'CONTAINS_VITAMIN',
+    from: 'ingredient',
+    to: 'vitamin',
+    reads: 'vitaminas que contiene',
+  },
+  {
+    type: 'HELPS_CONDITION',
+    from: 'ingredient',
+    to: 'condition',
+    reads: 'afecciones que ayuda a aliviar',
+  },
+  {
+    type: 'HAS_SUBSTANCE',
+    from: 'ingredient',
+    to: 'substance',
+    reads: 'substancias bioactivas que contiene',
+  },
+  {
+    type: 'FOUND_IN',
+    from: 'substance',
+    to: 'ingredient',
+    reads: 'en qué ingredientes se hallan las substancias',
+  },
+  {
+    type: 'PLACE',
+    from: 'region',
+    to: 'place',
+    reads: 'dónde está la región en el mapa',
+  },
+  {
+    type: 'FITS_DIET',
+    from: 'dish*',
+    to: 'diet',
+    reads: 'qué dietas admite cada plato',
+  },
+  {
+    type: 'TREATS',
+    from: 'substance',
+    to: 'condition',
+    reads: 'qué sustancia actúa sobre qué afección',
+  },
+  {
+    type: 'USES_TECHNIQUE',
+    from: 'recipe',
+    to: 'technique',
+    reads: 'técnicas de cocción que requiere',
+  },
+]
+const edgeCount = (t: string) => edges.filter((e) => e.type === t).length
+const relations = RELATIONS.map((r) => ({
+  ...r,
+  count: edgeCount(r.type),
+})).sort((a, b) => b.count - a.count)
+
+// Capa científica. Leemos las mismas colecciones que usa /api/evidence.json,
+// para que la portada y el endpoint no puedan discrepar. Solo entran las
+// entradas que declaran al menos un estudio: una ficha sin estudio no es
+// evidencia, y no aporta nada en una sección que habla de evidencia.
+const KIND_META: Record<string, { label: string; route: string }> = {
+  vitamin: { label: 'Vitaminas', route: 'vitamins' },
+  substance: { label: 'Substancias bioactivas', route: 'substances' },
+  diet: { label: 'Dietas', route: 'diets' },
+}
+const SHOWN_PER_KIND = 5
+
+type EvStudy = {
+  title?: string
+  source?: string
+  year?: number
+  doi?: string
+  pmid?: string
+  status?: string
+}
+type EvEntry = { kind: string; id: string; name: string; study?: EvStudy }
+
+/** Extrae los estudios de una entrada, igual que hace /api/evidence.json.
+ *
+ *  Las vitaminas y dietas declaran `studies:` en el frontmatter; las
+ *  substancias los declaran anidados en `health_registry[].studies`. Leer solo
+ *  el primer caso dejaba 30 de las 48 entradas sin ver, que es justo lo que la
+ *  sección científica debe mostrar.
+ */
+function studiesOf(entry: unknown): EvStudy[] {
+  const data = (entry as { data?: Record<string, unknown> })?.data
+  if (!data) return []
+
+  const out: EvStudy[] = []
+  const collect = (raw: unknown) => {
+    if (!Array.isArray(raw)) return
+    for (const s of raw) {
+      if (!s || typeof s !== 'object') continue
+      const o = s as Record<string, unknown>
+      out.push({
+        title: typeof o.title === 'string' ? o.title : undefined,
+        source: typeof o.source === 'string' ? o.source : undefined,
+        year: typeof o.year === 'number' ? o.year : undefined,
+        doi: typeof o.doi === 'string' ? o.doi : undefined,
+        pmid: typeof o.pmid === 'string' ? o.pmid : undefined,
+        status: typeof o.doi_status === 'string' ? o.doi_status : undefined,
+      })
+    }
+  }
+
+  collect(data.studies)
+  const registry = data.health_registry
+  if (Array.isArray(registry)) {
+    for (const row of registry) {
+      if (row && typeof row === 'object')
+        collect((row as Record<string, unknown>).studies)
+    }
+  }
+  // `doi_status: unverified` marca un DOI que no resuelve: se conserva en la
+  // ficha pero no cuenta como verificado, igual que hace /api/evidence.json.
+  return out.filter((s) => s.doi && s.status !== 'unverified')
+}
+
+const COL_KINDS = [
+  { col: 'vitamins', kind: 'vitamin' },
+  { col: 'substances', kind: 'substance' },
+  { col: 'diets', kind: 'diet' },
+] as const
+
+const evEntries: EvEntry[] = (
+  await Promise.all(
+    COL_KINDS.map(async ({ col, kind }) => {
+      const entries = (await getCollection(col as never)) as unknown as {
+        id: string
+        data: Record<string, unknown>
+      }[]
+      return entries.map((e): EvEntry | null => {
+        const studies = studiesOf(e)
+        const withDoi = studies.find((s) => s.doi) ?? studies[0]
+        if (!withDoi) return null
+        return {
+          kind,
+          id: e.id,
+          name: String(e.data.name ?? e.id),
+          study: withDoi,
+        }
+      })
+    }),
+  )
+)
+  .flat()
+  .filter((x): x is EvEntry => x !== null)
+
+// Description de portada con las cifras REALES del grafo generado
+// (graph-data.json), no con numeros redondos inventados.
+const homeDescription = clampDescription(
+  `Grafo gastronomico abierto: ${byType('recipe')} recetas, ${ingFichas} ingredientes, ${byType('substance')} substancias y ${byType('condition')} afecciones, con ${nodes.length} nodos y ${edges.length} relaciones.`,
+)
+
+const ev = {
+  withStudies: evEntries.length,
+  withDoi: evEntries.filter((e) => e.study?.doi).length,
+  kinds: Object.entries(KIND_META).map(([kind, meta]) => {
+    const of = evEntries.filter((e) => e.kind === kind)
+    return {
+      ...meta,
+      count: of.length,
+      more: Math.max(0, of.length - SHOWN_PER_KIND),
+      samples: of.slice(0, SHOWN_PER_KIND).map((e) => ({
+        name: e.name,
+        href: e.study?.doi
+          ? `https://doi.org/${e.study.doi}`
+          : `${base}/${meta.route}/${e.id}`,
+        study: e.study,
+      })),
+    }
+  }),
+}
+
 const highlights = [
   {
-    k: 'Recetas',
-    v: '400+',
-    desc: 'De Colombia, Perú y mundo • con sensoria, técnica y región',
+    k: 'Nodos',
+    v: String(total),
+    desc: 'Recetas, ingredientes, ciencia y territorio en un solo grafo',
     color: '#FF6B6B',
   },
   {
-    k: 'Ingredientes',
-    v: '250+',
-    desc: 'Con ficha científica: nutrientes, compuestos y beneficios',
+    k: 'Relaciones',
+    v: String(edges.length),
+    desc: `${relations.length} tipos de arista distintos, de USES a TREATS`,
     color: '#4ECDC4',
   },
   {
-    k: 'Vitaminas',
-    v: '40+',
-    desc: 'Micronutrientes y vitaminas por ingrediente',
+    k: 'Recetas',
+    v: String(byType('recipe') + byType('dish')),
+    desc: 'Con perfil sensorial, técnica y región',
     color: '#F9C74F',
   },
   {
-    k: 'Afecciones',
-    v: '35+',
-    desc: 'Registro de salud: hipertensión, inflamación, digestión...',
+    k: 'Ingredientes',
+    v: String(byType('ingredient')),
+    desc: `${ingFichas} con ficha científica en el repositorio; el resto son los que citan las recetas`,
+    color: '#06D6A0',
+  },
+  {
+    k: 'Vitaminas',
+    v: String(byType('vitamin')),
+    desc: 'Micronutrientes conectados a los ingredientes que los contienen',
     color: '#F94144',
   },
   {
-    k: 'Substancias',
-    v: '30+',
-    desc: 'Alicina, gingerol, cuminaldehído, polifenoles...',
+    k: 'Afecciones',
+    v: String(byType('condition')),
+    desc: 'Relacionadas con ingredientes y substancias',
     color: '#9D4EDD',
-  },
-  {
-    k: 'Dietas',
-    v: '5',
-    desc: 'Vegana, vegetariana, sin gluten, keto, mediterránea',
-    color: '#06D6A0',
   },
 ]
 ---
 
-<Layout title="GOS — Grafo Gastronómico Global">
+<Layout title="GOS — Grafo Gastronómico Global" description={homeDescription}>
   <section class="hero">
     <div class="hero-card">
       <div class="eyebrow">
@@ -99,13 +339,33 @@ const highlights = [
   <section class="two-col">
     <Card variant="elevated" padding="lg">
       <h2>Qué modela el grafo</h2>
-      <ul class="list">
-        <li><strong>recipe —[USES]→ ingredient —[CONTAINS]→ vitamin/nutrient</strong></li>
-        <li><strong>ingredient —[HAS_SUBSTANCE]→ substance —[TREATS]→ condition</strong></li>
-        <li><strong>ingredient —[HAS_FLAVOR]→ flavor · —[HAS_TEXTURE]→ texture</strong></li>
-        <li><strong>recipe —[FITS]→ diet · —[USES_TECHNIQUE]→ technique · —[FROM_REGION]→ region → place</strong></li>
-      </ul>
-      <p class="hint">El grafo se genera desde las recetas y los ingredientes: cada ficha con vitaminas, compuestos activos y beneficios amplía el grafo automáticamente.</p>
+      <p class="hint">
+        Cada fila es una arista real del grafo, con el conteo que sale de
+        <code>graph-data.json</code>. En el explorador puedes recorrerlas: haz clic en un
+        nodo y verás a qué nodos conecta a dos saltos.
+      </p>
+      <table class="rels">
+        <thead>
+          <tr><th>Relación</th><th>De → a</th><th>Qué significa</th><th class="num">Aristas</th></tr>
+        </thead>
+        <tbody>
+          {relations.map(r => (
+            <tr>
+              <td data-lbl="Relación"><code>{r.type}</code></td>
+              <td data-lbl="Camino" class="path">{r.from} → {r.to}</td>
+              <td data-lbl="Qué significa" class="reads">{r.reads}</td>
+              <td data-lbl="Aristas" class="num">{r.count.toLocaleString('es-CO')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="hint">
+        <strong>Por qué importa:</strong> estas aristas son lo que convierte la base en
+        grafo. No son recetas sueltas en una tabla — el camino de un ingrediente a una
+        afección (ingrediente → sustancia → condición, con los estudios que lo sostienen)
+        es lo que permite preguntar, por ejemplo, qué platos con cúrcuma tienen
+        evidencia al respecto y citarla con su DOI.
+      </p>
       <div class="actions">
         <Button variant="primary" onclick={() => location.href = `${base}/graph`}>Abrir grafo interactivo</Button>
         <Button variant="secondary" onclick={() => location.href = `${base}/scientific`}>Ver capa científica</Button>
@@ -121,7 +381,9 @@ const highlights = [
         <div class="swatch" style="background:#FDFCF8; color:#1C1917; border-color: rgba(28,25,23,0.08);">
           <span>hueso</span><code>#FDFCF8</code>
         </div>
-        <div class="swatch" style="background:#8B5CF6; color:white;">
+        {/* Muestra de color: el texto va sobre el color que representa, asi que
+            blanco no sirve (4.23:1). Negro da 4.76:1 sobre #8B5CF6. */}
+        <div class="swatch" style="background:#8B5CF6; color:#0B0B0C;">
           <span>accent</span><code>#8B5CF6</code>
         </div>
       </div>
@@ -151,18 +413,72 @@ const highlights = [
     </a>
   </section>
 
+  <section class="science">
+    <div class="science-head">
+      <div>
+        <span class="eyebrow-text">LA CAPA CIENTÍFICA</span>
+        <h2>Qué sostiene cada afirmación, y con qué estudio</h2>
+        <p class="hint">
+          Cada vitamina, sustancia y dieta de GOS declara los estudios que la respaldan:
+          {ev.withStudies} entradas con evidencia, {ev.withDoi} de ellas apoyadas en un
+          estudio con DOI verificable. Ninguna se cita sin fuente. El nivel de evidencia
+          distingue un ensayo clínico de una revisión narrativa o de un estudio in vitro,
+          para que no se confundan.
+        </p>
+      </div>
+      <a href={`${base}/api/evidence.json`} class="btn ghost small">Ver el índice completo →</a>
+    </div>
+
+    <div class="ev-grid">
+      {ev.kinds.map(k => (
+        <div class="ev-card">
+          <div class="ev-card-head">
+            <span class="ev-kind">{k.label}</span>
+            <span class="ev-count">{k.count}</span>
+          </div>
+          <ul class="ev-list">
+            {k.samples.map(s => (
+              <li>
+                <a href={s.href} class="ev-name">{s.name}</a>
+                {s.study && (
+                  <span class="ev-study">
+                    {s.study.source}{s.study.year ? `, ${s.study.year}` : ''}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+          {k.more > 0 && <span class="ev-more">+{k.more} más en el índice</span>}
+        </div>
+      ))}
+    </div>
+
+    <div class="evidence-note">
+      <strong>Alcance de la evidencia.</strong> Un DOI verificado significa que el estudio
+      existe y trata del tema; no significa que GOS recomendene el consumo. Los niveles
+      <code>Low</code>, <code>Medium</code> y <code>High</code> corresponden al diseño del
+      estudio (in vitro, revisión narrativa, ensayo en humanos) y las fichas llevan la
+      nota que delimita el alcance. Ninguna afirmación de GOS sustituye consejo médico.
+    </div>
+  </section>
+
   <section class="api-banner">
     <div class="api-copy">
-      <span class="eyebrow-text">API PARA DESARROLLADORES</span>
+      <span class="eyebrow-text">PARA AGENTES Y DESARROLLADORES</span>
       <h2>Usa los datos de GOS en tu app</h2>
-      <p class="hint">Recetas, ingredientes, nutrientes, substancias y vectores en JSON + descargas masivas. Plan gratuito para desarrollo y pruebas con límite de peticiones; límites ampliados para producción.</p>
+      <p class="hint">
+        Todo el grafo en JSON, con IDs estables y relaciones tipadas. Empieza por
+        <code>llms.txt</code> para el mapa de endpoints, o por <code>graph-data.json</code>
+        si quieres el grafo entero ({total} nodos, {edges.length} aristas, 3.2 MB).
+      </p>
       <div class="actions">
         <a href={`${base}/api`} class="btn primary">Explorar la API →</a>
+        <a href={`${base}/llms.txt`} class="btn ghost" target="_blank" rel="noopener">llms.txt</a>
         <a href="https://github.com/iberi22/gastronomic-open-standard-GOS/blob/main/API_README.md" class="btn ghost" target="_blank" rel="noopener">Documentación</a>
       </div>
     </div>
     <div class="api-code">
-      <code>GET /api/recipes?limit=10<br />GET /api/ingredients/canela<br />GET /api/vectors/index.json</code>
+      <code>GET /llms.txt<br />GET /api/agent/knowledge.json<br />GET /api/evidence.json<br />GET /graph-data.json</code>
     </div>
   </section>
 
@@ -177,7 +493,9 @@ const highlights = [
   .lead strong { color: var(--swal-text); }
   .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
   .btn { padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid var(--swal-border); }
-  .btn.primary { background: var(--swal-accent); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
+  /* --swal-btn-bg lo define Layout.astro para todo el sitio (AA con texto
+     blanco en tema oscuro). Aqui solo se consume. */
+  .btn.primary { background: var(--swal-btn-bg, var(--swal-accent)); color:white; border-color: var(--swal-accent); box-shadow: 0 10px 30px rgba(139,92,246,0.35); }
   .btn.ghost { background: var(--swal-surface); color: var(--swal-text); }
   .meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
   .pill { font-size:11px; color: var(--swal-text-muted); background: var(--swal-surface); border:1px solid var(--swal-border); padding:5px 10px; border-radius:999px; font-family: var(--swal-font-mono); }
@@ -190,7 +508,48 @@ const highlights = [
   .two-col { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:12px; margin-top:18px; }
   @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
   .list { margin:10px 0 0 18px; color: var(--swal-text-secondary); line-height:1.9; font-size:14px; }
-  .hint { color: var(--swal-text-muted); font-size:12px; line-height:1.6; margin-top:10px; }
+  .rels { width:100%; border-collapse:collapse; margin-top:12px; font-size:12.5px; }
+  .rels th { text-align:left; font-weight:600; color: var(--swal-text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; padding:0 8px 7px 0; border-bottom:1px solid var(--swal-border); }
+  .rels td { padding:7px 8px 7px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); vertical-align:top; }
+  .rels td code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); white-space:nowrap; }
+  .rels td.path { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-text-secondary); white-space:nowrap; }
+  .rels td.reads { color: var(--swal-text-secondary); line-height:1.5; }
+  .rels td.num { text-align:right; font-variant-numeric: tabular-nums; color: var(--swal-text-muted); white-space:nowrap; }
+  .rels tr:last-child td { border-bottom:none; }
+  /* En movil la tabla de 4 columnas deja la descripcion en ~12 chars por
+     linea, ilegible. Cada fila se convierte en una ficha apilada: el nombre de
+     la columna va como etiqueta y el valor ocupa el ancho completo. */
+  @media (max-width: 720px) {
+    .rels thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path: inset(50%); }
+    .rels, .rels tbody, .rels tr, .rels td { display:block; width:auto; }
+    .rels tr { padding:11px 0; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 45%, transparent); }
+    .rels tr:last-child { border-bottom:none; }
+    .rels td { border:none; padding:2px 0; }
+    .rels td::before { content: attr(data-lbl) ": "; color: var(--swal-text-muted); font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; }
+    .rels td:first-child::before { content:none; }
+    .rels td.num { text-align:left; }
+    .rels td.path, .rels td code { white-space:normal; }
+  }
+  .science { margin-top:22px; }
+  .science-head { display:flex; gap:14px; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; }
+  .science-head h2 { font-size:20px; font-weight:750; letter-spacing:-0.01em; margin:6px 0 0; color: var(--swal-text); }
+  .science-head .hint { max-width:68ch; margin-top:6px; }
+  .btn.small { padding:6px 11px; font-size:12px; }
+  .ev-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:12px; margin-top:16px; }
+  .ev-card { border:1px solid var(--swal-border); background: var(--swal-surface); border-radius:16px; padding:14px; }
+  .ev-card-head { display:flex; align-items:baseline; justify-content:space-between; gap:8px; padding-bottom:9px; border-bottom:1px solid color-mix(in srgb, var(--swal-border) 50%, transparent); }
+  .ev-kind { font-size:12px; font-weight:650; color: var(--swal-text); }
+  .ev-count { font-family: var(--swal-font-mono); font-size:11px; color: var(--swal-accent); }
+  .ev-list { list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:9px; }
+  .ev-list li { display:flex; flex-direction:column; gap:2px; }
+  .ev-name { font-size:13px; color: var(--swal-text); text-decoration:none; font-weight:550; }
+  .ev-name:hover { color: var(--swal-accent); text-decoration:underline; }
+  .ev-study { font-size:11px; color: var(--swal-text-muted); font-family: var(--swal-font-mono); }
+  .ev-more { display:block; margin-top:10px; font-size:11px; color: var(--swal-text-muted); }
+  .evidence-note { margin-top:14px; padding:13px 15px; border:1px solid var(--swal-border); border-left:3px solid var(--swal-accent); border-radius:12px; background: var(--swal-surface); color: var(--swal-text-secondary); font-size:12.5px; line-height:1.65; }
+  .evidence-note strong { color: var(--swal-text); }
+  .evidence-note code { font-family: var(--swal-font-mono); font-size:11.5px; color: var(--swal-accent-text, var(--swal-accent)); }
+  .hint { color: var(--swal-text-secondary); font-size:12px; line-height:1.6; margin-top:10px; }
   .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
   .swatches { display:flex; gap:10px; margin-top:12px; }
   .swatch { flex:1; border:1px solid; border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; font-family: var(--swal-font-mono); font-size:12px; }

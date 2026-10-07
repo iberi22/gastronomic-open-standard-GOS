@@ -143,3 +143,11 @@ Este plato es una de las recetas tradicionales de la región Insular, especialme
 - [ComidaTipicaDeColombia.top: Frijoles con cola de cerdo](https://comidatipicadecolombia.top/frijoles-con-cola-de-cerdo-pig-tail/)
 - [Cookpad: Frijoles con cerdo](https://cookpad.com/es/recetas/17030561)
 - [RecetasNestle: Frijoles con cerdo](https://www.recetasnestlecam.com/recetas/frijoles-con-cerdo)
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Salado, Sustancioso umami, Ahogado
+* **Textura:** Frijoles cremosos, Carne melosa
+* **Aroma:** Guiso de frijoles y cerdo

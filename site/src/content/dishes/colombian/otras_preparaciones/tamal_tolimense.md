@@ -105,3 +105,12 @@ categories:
 
 - [Pendiente]
 \n
+
+---
+
+## 🔬 Perfil Sensorial Estandarizado
+
+* **Sabor:** Umami, Salado, Graso
+* **Textura:** Soft (masa), Fibrous (meats), Tender (vegetables)
+* **Aroma:** Banana leaf (steamed), Cumin, Pork fat
+* **Presentación:** Paquete esférico u ovalado envuelto en hojas verdes oscuras, amarrado en la parte superior.

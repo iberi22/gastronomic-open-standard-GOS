@@ -1,0 +1,180 @@
+---
+import { getCollection } from 'astro:content'
+import AgentAsk from '../components/AgentAsk.svelte'
+import Layout from '../layouts/Layout.astro'
+
+// site/src/pages/agent.astro — la página que cablea el agente de GOS.
+//
+// Dos rutas, porque el deploy es output:'static' sin adapter SSR: /api/ai/ask
+// devuelve 405 en producción (medido contra gos.swal.network) y la página
+// resuelve en el navegador. El catálogo se sirve aparte como archivo JSON
+// prerenderizado, que sí existe en ese deploy, y la isla indexa sobre él con
+// el mismo queryTerms()/rankEntries() del endpoint.
+//
+// Las cifras que salen aquí (recetas, ingredientes, substancias…) se cuentan
+// sobre las colecciones reales, no sobre una constante inventada.
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const [dishes, ingredients, substances, vitamins, conditions, diets, mixtures] =
+  await Promise.all([
+    getCollection('dishes'),
+    getCollection('ingredients'),
+    getCollection('substances'),
+    getCollection('vitamins'),
+    getCollection('conditions'),
+    getCollection('diets'),
+    getCollection('mixtures'),
+  ])
+
+// El catálogo completo NO va aquí como props del isla: serían ~900 KB de HTML
+// en una página que debe cargar rápido. Va a GET /api/agent/catalog.json
+// (prerenderizado a un archivo en el deploy estático) y la isla lo pide una
+// vez al montar. Ver src/pages/api/agent/catalog.json.ts.
+const totalEntries =
+  dishes.length +
+  ingredients.length +
+  substances.length +
+  vitamins.length +
+  conditions.length +
+  diets.length +
+  mixtures.length
+
+const counts: Array<[string, number]> = [
+  ['recetas', dishes.length],
+  ['ingredientes', ingredients.length],
+  ['substancias', substances.length],
+  ['vitaminas', vitamins.length],
+  ['afecciones', conditions.length],
+  ['dietas', diets.length],
+  ['mezclas', mixtures.length],
+]
+
+// Sugerencias construidas con lo que existe: si desaparece una receta, el chip
+// no puede seguir pidiendo por ella.
+const suggestions: string[] = []
+const alicina = substances.find((s) => s.id === 'alicina')
+if (alicina) {
+  const name = (alicina.data as Record<string, unknown>).name
+  suggestions.push(`¿Qué es la ${typeof name === 'string' ? name : 'alicina'}?`)
+}
+for (const s of dishes) {
+  if (suggestions.length >= 4) break
+  const t = (s.data as Record<string, unknown>).title
+  if (typeof t === 'string' && t.length > 3) suggestions.push(t)
+}
+
+const title = 'Agente GOS — consulta con fuentes verificables'
+const desc =
+  'Pregunta al agente de GOS. Cada respuesta cita la receta, ingrediente o sustancia real del repo de la que sale; sin fuente verificable, el agente dice que no lo sabe.'
+---
+
+<Layout title={title} description={desc}>
+  <div class="wrap">
+    <nav class="crumbs">
+      <a href={`${base}/`}>GOS</a>
+      <span aria-hidden="true">/</span>
+      <span>Agente</span>
+    </nav>
+
+    <h1 class="h1">Agente de consulta</h1>
+    <p class="lede">
+      El agente lee este mismo repo y responde citando la entrada de la que
+      saca cada dato. No da cifras nutricionales ni recomendaciones de salud
+      que no estén escritas en una ficha: si no encuentra la fuente, contesta
+      que no lo sabe.
+    </p>
+
+    <ul class="counts" aria-label="Contenido disponible para consultar">
+      {
+        counts.map(([label, n]) => (
+          <li>
+            <span class="n">{n}</span>
+            <span class="l">{label}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <AgentAsk client:load catalogUrl="/api/agent/catalog.json" {suggestions} />
+
+    <section class="how">
+      <h2>Cómo decide qué se publica</h2>
+      <ol>
+        <li>
+          La pregunta se busca en {totalEntries} entradas del contenido real
+          (las mismas que alimentan las fichas y el grafo).
+        </li>
+        <li>
+          En <strong>free</strong> no hay inferencia: se devuelve el texto
+          literal de las coincidencias, con su slug.
+        </li>
+        <li>
+          En <strong>socio</strong> el modelo resume esas mismas entradas, y
+          cada cita se valida contra la lista. Una cita a un slug que no
+          existe se descarta.
+        </li>
+        <li>
+          Si la respuesta no tiene ninguna cita válida —o el modelo declara
+          <code>NO_LO_SE</code>— no se publica: se dice que no hay fuente.
+        </li>
+      </ol>
+      <p class="foot">
+        Endpoint para consumidores: <code>POST /api/ai/ask</code> con
+        <code>{'{ question, tierId }'}</code>. Requiere runtime de servidor
+        (adapter SSR o Pages Function); en el deploy estático actual devuelve
+        <code>405</code> y la página resuelve en el navegador.
+      </p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .wrap { display: flex; flex-direction: column; gap: 18px; padding-bottom: 40px; }
+  .crumbs { display: flex; gap: 8px; font-size: 12px; color: var(--swal-text-secondary); }
+  .crumbs a { color: var(--swal-accent-text, var(--swal-accent)); text-decoration: none; }
+  .h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--swal-text);
+  }
+  .lede {
+    margin: 0;
+    max-width: 68ch;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--swal-text-secondary);
+  }
+  .counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .counts li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--swal-border);
+    border-radius: 999px;
+    background: var(--swal-surface);
+  }
+  .n { font-size: 14px; font-weight: 800; color: var(--swal-text); font-family: var(--swal-font-mono, ui-monospace); }
+  .l { font-size: 12px; color: var(--swal-text-secondary); }
+  .how {
+    padding: 18px;
+    border: 1px solid var(--swal-border);
+    border-radius: 16px;
+    background: var(--swal-surface);
+  }
+  .how h2 { margin: 0 0 10px; font-size: 16px; font-weight: 800; color: var(--swal-text); }
+  .how ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .how li { font-size: 13px; line-height: 1.55; color: var(--swal-text-secondary); }
+  .foot { margin: 12px 0 0; font-size: 12px; line-height: 1.6; color: var(--swal-text-secondary); }
+  code { font-family: var(--swal-font-mono, ui-monospace); font-size: 12px; color: var(--swal-accent-text, var(--swal-accent)); }
+</style>

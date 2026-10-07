@@ -1,6 +1,12 @@
 export interface Env {
   RATE_LIMIT_KV?: KVNamespace
   DB?: D1Database
+  /**
+   * Key de desarrollo, solo para local sin binding D1. NUNCA en produccion:
+   * si se define ahi, cualquiera que mande esa cadena obtiene tier de pago.
+   * Se carga con `wrangler secret put GOS_DEV_KEY` en local, o en .dev.vars.
+   */
+  GOS_DEV_KEY?: string
   AI?: {
     run: (
       model: string,
@@ -9,7 +15,11 @@ export interface Env {
   }
   ORIGIN_URL?: string
   FREE_DAILY_LIMIT?: string
+  BILLING_URL?: string
+  BILLING_SERVICE_SECRET?: string
 }
+
+import { reportSwalUsage, verifySwalKey } from './swal-billing'
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -96,12 +106,47 @@ export default {
 
     let isPaidKey = false
     let keyTier = 'free'
+    let swalKey: string | null = null
+    let swalRemaining = 0
 
-    if (apiKey) {
+    // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
+    if (
+      apiKey &&
+      apiKey.startsWith('swal_') &&
+      env.BILLING_URL &&
+      env.BILLING_SERVICE_SECRET
+    ) {
+      const verdict = await verifySwalKey(
+        env.BILLING_URL,
+        env.BILLING_SERVICE_SECRET,
+        apiKey,
+      )
+      if (!verdict) {
+        return jsonResponse(
+          { error: 'Billing unavailable: retry shortly' },
+          503,
+        )
+      }
+      if (!verdict.active) {
+        return jsonResponse(
+          {
+            error: 'Unauthorized: Invalid or inactive API key',
+            tier: 'invalid',
+          },
+          401,
+        )
+      }
+      isPaidKey = true
+      keyTier = `swal:${verdict.plan}`
+      swalKey = apiKey
+      swalRemaining = verdict.remaining
+    } else if (apiKey) {
       if (env.DB) {
         try {
           const stmt = env.DB.prepare(
-            'SELECT key, tier, status FROM api_keys WHERE key = ? AND status = "active"',
+            'SELECT key, tier, status FROM api_keys ' +
+              "WHERE key = ? AND status = 'active' " +
+              "AND (expires_at IS NULL OR datetime(expires_at) > datetime('now'))",
           )
           const result = await stmt
             .bind(apiKey)
@@ -119,25 +164,35 @@ export default {
             )
           }
         } catch (dbErr) {
+          // Fail-closed. Si D1 no responde NO se puede saber si la key es
+          // valida, y adivinar concede acceso a quien mande una key con la
+          // palabra 'socio' o 'paid' en el cuerpo. Antes este catch hacia
+          // justo eso: produccion sirve 404 a esas keys mientras D1 falla.
           console.error('D1 key check error:', dbErr)
-          // If fallback match during testing/dev
-          if (apiKey.includes('socio') || apiKey.includes('paid')) {
-            isPaidKey = true
-            keyTier = 'tiersocio'
-          } else {
-            return jsonResponse(
-              { error: 'Unauthorized: Key validation failed' },
-              401,
-            )
-          }
+          return jsonResponse(
+            {
+              error: 'Service Unavailable: key validation unavailable',
+              tier: 'unavailable',
+            },
+            503,
+          )
         }
       } else {
-        // Local dev fallback if DB binding not available
-        if (apiKey.includes('socio') || apiKey.includes('paid')) {
+        // Sin binding DB no hay ninguna fuente de verdad contra la que
+        // validar. En local se permite una key explicita de desarrollo
+        // (env.GOS_DEV_KEY); nunca una heuristica sobre el contenido.
+        const devKey = env.GOS_DEV_KEY
+        if (devKey && apiKey === devKey) {
           isPaidKey = true
           keyTier = 'tiersocio'
         } else {
-          return jsonResponse({ error: 'Unauthorized: Invalid API key' }, 401)
+          return jsonResponse(
+            {
+              error: 'Unauthorized: no key store configured',
+              tier: 'no-store',
+            },
+            401,
+          )
         }
       }
     }
@@ -209,6 +264,13 @@ export default {
           402,
         )
       }
+      // Cuota del billing central para keys swal_* (el plan free/legacy no llega aquí).
+      if (swalKey && swalRemaining <= 0) {
+        return jsonResponse(
+          { error: 'cuota diaria agotada', tier: keyTier, remaining: 0 },
+          429,
+        )
+      }
       let body: { prompt?: unknown; appId?: unknown }
       try {
         body = (await request.json()) as typeof body
@@ -268,6 +330,14 @@ export default {
       const aiWithMargin = tokensUsed * 0.00001 * 1.1
       const subtotal = 0.02 + aiWithMargin
       const handling = subtotal * 0.2
+      // Reporta consumo al billing central (best-effort, no bloquea respuesta).
+      if (swalKey && env.BILLING_URL && env.BILLING_SERVICE_SECRET) {
+        await reportSwalUsage(
+          env.BILLING_URL,
+          env.BILLING_SERVICE_SECRET,
+          swalKey,
+        )
+      }
       return jsonResponse({
         text,
         tokensUsed,

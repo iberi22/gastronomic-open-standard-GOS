@@ -1,53 +1,60 @@
-# 程序员做饭指南
+# GOS — Gastronomic Open Standard
 
-[![build](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml/badge.svg)](https://github.com/Anduin2017/HowToCook/actions/workflows/build.yml)
-[![License](https://img.shields.io/github/license/Anduin2017/HowToCook)](./LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/Anduin2017/HowToCook)](https://github.com/Anduin2017/HowToCook/graphs/contributors)
-[![npm](https://img.shields.io/npm/v/how-to-cook)](https://www.npmjs.com/package/how-to-cook)
-![Man hours](https://manhours.aiursoft.cn/r/github.com/anduin2017/howtocook.svg)
-[![Docker](https://img.shields.io/badge/docker-latest-blue?logo=docker)](https://github.com/Anduin2017/HowToCook/pkgs/container/how-to-cook)
-[![Join the AnduinOS Community on Revolt](https://img.shields.io/badge/Revolt-Join-fd6671?style=flat-square)](https://rvlt.gg/ndApqZEs)
+An open knowledge graph of world gastronomy: **recipes ↔ ingredients ↔ vitamins ↔
+bioactive substances ↔ flavors ↔ techniques ↔ health conditions ↔ diets ↔ regions**.
+The repo `.md` files ARE the database (405 dishes, 552 ingredients, 40 vitamins,
+35 conditions, 30 substances, 6 diets). Built with Astro 7 + Svelte 5 + Tailwind v4.
 
-最近宅在家做饭，作为程序员，我偶尔在网上找找菜谱和做法。但是这些菜谱往往写法千奇百怪，经常中间莫名出来一些材料。对于习惯了形式语言的程序员来说极其不友好。
+Live: **https://gos.swal.network** (Cloudflare Pages, single canonical deploy)
 
-所以，我计划自己搜寻菜谱并结合实际做菜的经验，准备用更清晰精准的描述来整理常见菜的做法，以方便程序员在家做饭。
+## Purpose
 
-同样，我希望它是一个由社区驱动和维护的开源项目，使更多人能够一起做一个有趣的仓库。所以非常欢迎大家贡献它~
+1. **Humans**: browse recipes/ingredients/science with an interactive graph
+   (`/graph`), PWA offline-first.
+2. **Agents & apps (business)**: consume the data as a free JSON API with rate
+   limit, or paid keyed tier for health/diet apps (see issue #237). AI-first SEO
+   (`llms.txt`, JSON-LD, sitemap) makes GOS the #1 extraction source.
 
-## 本地部署
-
-如果需要在本地部署菜谱 Web 服务，可以在安装 Docker 后运行下面命令：
+## Use
 
 ```bash
-docker pull ghcr.io/anduin2017/how-to-cook:latest
-docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
+pnpm install            # root (linters, hooks) + site deps
+cd site && pnpm dev     # local dev
 ```
 
-如需下载 PDF 版本，可以在浏览器中访问 [/document.pdf](https://cook.aiursoft.cn/document.pdf)
+Build + deploy (needs `CLOUDFLARE_API_TOKEN` in env or `~/.hermes/.env`):
 
-## 如何贡献
+```bash
+./scripts/deploy-cloudflare.sh            # build + deploy + smoke
+./scripts/deploy-cloudflare.sh --build-only
+```
 
-针对发现的问题，直接修改并提交 Pull request 即可。
+Quality gates: `pnpm run lint` (Biome code + markdownlint content + manuallint),
+`astro check` (0 err/0 warn), `vitest run` (34 tests), Playwright E2E
+(`site/tests/e2e`, incl. production coverage 35/35).
 
-在写新菜谱时，请复制并修改已有的菜谱模板: [示例菜](https://github.com/Anduin2017/HowToCook/blob/master/dishes/template/%E7%A4%BA%E4%BE%8B%E8%8F%9C/%E7%A4%BA%E4%BE%8B%E8%8F%9C.md?plain=1)。
+## Free API (no key, fair use)
 
-## 搭建环境
+Base `https://gos.swal.network/api` — `index.json`, `all.json`,
+`countries` (18, top colombian 122), `by-country/<c>.json`, `spanish/*.json`,
+`ingredients/variants.json`, `substances.json`, `health`, `entities/*`.
+Full reference: [API_README.md](./API_README.md). Paid keyed tier: issue #237.
 
-{{before}}
+## Vectors & embeddings (bulk download, live)
 
-## 菜谱
+Versioned snapshot over live collections (552 ingredients, 405 dishes,
+30 substances), regenerated each build by `site/scripts/export-vectors.mjs`:
 
-{{index_stars}}
+- Manifest: `https://gos.swal.network/api/vectors/index.json`
+  (model, dim, counts, version)
+- Shards: `/api/vectors/vectors-1.json`, `vectors-2.json`
+- Record: `{ id, type: "ingredient"|"dish"|"substance", text, embedding }`
+- Spot-check: cosine(ajo, garlic) > 0.8
 
-{{main}}
+## Contribute
 
-## 进阶知识学习
-
-如果你已经做了许多上面的菜，对于厨艺已经入门，并且想学习更加高深的烹饪技巧，请继续阅读下面的内容：
-
-{{after}}
-
-## 衍生作品推荐
-
-- [HowToCook-mcp 让 AI 助手变身私人大厨，为你的一日三餐出谋划策](https://github.com/worryzyy/HowToCook-mcp)
-- [HowToCook-py-mcp 让 AI 助手变身私人大厨，为你的一日三餐出谋划策 (Python)](https://github.com/DusKing1/howtocook-py-mcp)
+Content: copy a template, keep YAML front-matter schema
+(`docs/INGREDIENT_PROTOCOL.md`), run `pnpm run lint` before push.
+Pre-commit hook runs Biome + `astro check` (wired via `pnpm run prepare`).
+Small Jules-ready tasks live in GitHub issues (label `jules`).
+History preserves the HowToCook fork (thanks to its contributors).

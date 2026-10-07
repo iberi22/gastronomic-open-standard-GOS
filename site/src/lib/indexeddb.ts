@@ -25,17 +25,86 @@ function openDB(): Promise<IDBDatabase> {
       reject(new Error('IndexedDB not available (SSR or unsupported browser)'))
       return
     }
-    const req = indexedDB.open(DB_NAME, DB_VERSION)
-    req.onerror = () => reject(req.error)
-    req.onsuccess = () => resolve(req.result)
-    req.onupgradeneeded = (e) => {
-      const db = (e.target as IDBOpenDBRequest).result
-      for (const store of STORES) {
-        if (!db.objectStoreNames.contains(store)) {
-          db.createObjectStore(store, { keyPath: 'id' })
+
+    // Reparacion. Hay dos motivos por los que la version de apertura tiene
+    // que iterar:
+    //
+    //  1. La base existe en DB_VERSION pero le falta un store (creada por una
+    //     sonda, por una version vieja del esquema o por un borrado a medias).
+    //     onupgradeneeded solo corre al SUBIR de version, asi que no se
+    //     dispara nada y db.transaction('recipes') revienta con
+    //     "No objectStore named recipes". Ese fue el fallo que dejo el vault
+    //     roto en un navegador con los tests en verde. Medido con
+    //     fake-indexeddb: subir de version si crea lo que falte.
+    //
+    //  2. La base esta en una version MAYOR que DB_VERSION (otra pestana, o
+    //     una llamada previa de este mismo modulo que ya reparo). Pedir
+    //     DB_VERSION da VersionError. Medido: abrir v1 sobre v2 -> VersionError.
+    //
+    // Los dos casos se resuelven subiendo la version, asi que una sola ruta
+    // los cubre: se abre, se comprueba, y si hay que corregir se incrementa.
+    // El limite evita un bucle infinito si algo externo bajase la version.
+    const MAX_INTENTOS = STORES.length + 2
+
+    const intentarEn = (version: number, intentos: number): void => {
+      const req = indexedDB.open(DB_NAME, version)
+
+      req.onerror = () => {
+        // La base esta en una version mayor que la pedida: se sube y se
+        // reintenta. Medido con fake-indexeddb: abrir v1 sobre v2 ->
+        // VersionError.
+        if (req.error?.name === 'VersionError' && intentos > 0) {
+          intentarEn(version + 1, intentos - 1)
+          return
+        }
+        reject(req.error)
+      }
+
+      req.onsuccess = () => {
+        const db = req.result
+        const faltan = STORES.filter((s) => !db.objectStoreNames.contains(s))
+        if (faltan.length === 0) {
+          resolve(db)
+          return
+        }
+        if (intentos <= 0) {
+          db.close()
+          reject(
+            new Error(
+              `IndexedDB: no se pudieron crear los stores ` +
+                `[${faltan.join(', ')}] tras agotar los reintentos`,
+            ),
+          )
+          return
+        }
+        // Siguiente version: dispara onupgradeneeded, que si crea lo que
+        // falte. Se pide version + 1 y no db.version + 1 porque por spec
+        // req.result.version SIEMPRE es la version que se pidio (abrir por
+        // encima de la actual sube la base exactamente a esa): son
+        // equivalentes, y medido con fake-indexeddb las dos formulas dan
+        // el mismo resultado incluso arrancando desde DB_VERSION sobre una
+        // base en v3. La diferencia real la cubre el reintento de
+        // VersionError de arriba, no esta linea.
+        const destino = version + 1
+        console.warn(
+          `[indexeddb] faltan los stores ${faltan.join(', ')}; reparando ` +
+            `a v${destino}`,
+        )
+        db.close()
+        intentarEn(destino, intentos - 1)
+      }
+
+      req.onupgradeneeded = (e) => {
+        const db = (e.target as IDBOpenDBRequest).result
+        for (const store of STORES) {
+          if (!db.objectStoreNames.contains(store)) {
+            db.createObjectStore(store, { keyPath: 'id' })
+          }
         }
       }
     }
+
+    intentarEn(DB_VERSION, MAX_INTENTOS)
   })
 }
 

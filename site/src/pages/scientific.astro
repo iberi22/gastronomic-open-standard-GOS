@@ -1,13 +1,19 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
+import { clampDescription } from '../lib/meta-description'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const substances = (await getCollection('substances')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name, 'es'),
 )
+
+const scientificDesc = clampDescription(
+  `Capa cientifica de GOS: ${substances.length} subancias bioactivas con formula, sazon y sabor, y los micronutrientes y beneficios asociados a las afecciones que ayudan a tratar.`,
+)
 ---
-<Layout title="Ciencia — Vitaminas, substancias y afecciones — GOS">
+
+<Layout title="Ciencia — Vitaminas, substancias y afecciones — GOS" description={scientificDesc}>
   <h1 class="title">Capa científica</h1>
   <p class="sub">Micronutrientes, compuestos bioactivos y beneficios para la salud, conectados con las afecciones que ayudan a tratar. Cada ficha de ingrediente alimenta el grafo con vitaminas, nutrientes, substancias y afecciones.</p>
 
