@@ -27,30 +27,30 @@ export class AgentPolicyError extends Error {
     | 'workspace-mismatch'
     | 'read-only'
     | 'limit-exceeded'
-    | 'bad-input';
+    | 'bad-input'
 
   constructor(reason: AgentPolicyError['reason'], message: string) {
-    super(message);
-    this.name = 'AgentPolicyError';
-    this.reason = reason;
+    super(message)
+    this.name = 'AgentPolicyError'
+    this.reason = reason
   }
 }
 
 /** Why a call was refused, in the caller's own words. */
 export type Principal = {
   /** Stable identity of the caller, from the key store — never a guess. */
-  id: string;
+  id: string
   /** The tier the key store recorded. */
-  tier: string;
+  tier: string
   /** Private workspace this principal may read. Empty means public data only. */
-  workspace: string;
+  workspace: string
   /** Requests this principal has made today, as the gateway counts them. */
-  usedToday: number;
+  usedToday: number
   /** Daily ceiling for this principal. */
-  dailyLimit: number;
+  dailyLimit: number
   /** Every workspace this principal may read. */
-  workspaces: readonly string[];
-};
+  workspaces: readonly string[]
+}
 
 /**
  * What the gateway reports back to `capabilities.get`.
@@ -60,81 +60,80 @@ export type Principal = {
  * stale duplicate.
  */
 export interface GatewayFacts {
-  freeDailyLimit: number;
-  keyStoreConfigured: boolean;
-  routes: Record<string, string>;
+  freeDailyLimit: number
+  keyStoreConfigured: boolean
+  routes: Record<string, string>
 }
-
 
 /** A search over the public recipe catalogue. */
 export interface CatalogSearchInput {
   /** Free-text query matched against recipe names and descriptions. */
-  q?: string;
+  q?: string
   /** ISO country code to restrict to, e.g. `MX`. */
-  country?: string;
+  country?: string
   /** Maximum records to return. Hard-capped by `MAX_PAGE_SIZE`. */
-  limit?: number;
+  limit?: number
   /** Zero-based offset for pagination. */
-  offset?: number;
+  offset?: number
 }
 
 export interface CatalogSearchHit {
-  id: string;
-  name: string;
-  country?: string;
-  url?: string;
+  id: string
+  name: string
+  country?: string
+  url?: string
 }
 
 export interface CatalogSearchOutput {
-  hits: CatalogSearchHit[];
-  total: number;
-  offset: number;
-  limit: number;
+  hits: CatalogSearchHit[]
+  total: number
+  offset: number
+  limit: number
   /** True when the source route returned more than this page. */
-  hasMore: boolean;
+  hasMore: boolean
 }
 
 export interface CatalogGetInput {
   /** Recipe identifier from a `catalog.search` result. */
-  id: string;
+  id: string
 }
 
 export interface CatalogGetOutput {
-  id: string;
-  name: string;
-  country?: string;
+  id: string
+  name: string
+  country?: string
   /** Present only when the upstream record carries it. */
-  description?: string;
-  ingredients?: string[];
-  steps?: string[];
-  url?: string;
+  description?: string
+  ingredients?: string[]
+  steps?: string[]
+  url?: string
 }
 
 export interface CapabilitiesOutput {
   /** The three tools this pilot exposes. */
-  tools: string[];
+  tools: string[]
   /** Whether the pilot permits writes. Always false; stated so it can be asserted. */
-  readOnly: true;
+  readOnly: true
   authentication: {
     /** The header the gateway reads. */
-    header: string;
+    header: string
     /** How a principal is established. */
-    modes: string[];
+    modes: string[]
     /** What happens when the key store is unreachable. */
-    onKeyStoreUnavailable: string;
-  };
+    onKeyStoreUnavailable: string
+  }
   rateLimits: {
     /** Requests per day for the free tier, from the worker's own env read. */
-    freeDailyPerIp: number;
-    freeTierNote: string;
-    paidTierNote: string;
-  };
+    freeDailyPerIp: number
+    freeTierNote: string
+    paidTierNote: string
+  }
   /** True when the worker is serving real catalogue data rather than a stub. */
-  catalogAvailable: boolean;
+  catalogAvailable: boolean
   /** Claims this record does NOT make. */
-  notProvided: string[];
+  notProvided: string[]
   /** Anything still waiting on the owner, stated rather than guessed. */
-  status: Record<string, 'available' | 'awaiting-founder'>;
+  status: Record<string, 'available' | 'awaiting-founder'>
 }
 
 /**
@@ -143,7 +142,7 @@ export interface CapabilitiesOutput {
  * The gateway's free tier allows 100 requests a day per IP, so a single call
  * that could page through everything would make that limit meaningless.
  */
-export const MAX_PAGE_SIZE = 50;
+export const MAX_PAGE_SIZE = 50
 
 /** Default page when the caller does not ask for one. */
-export const DEFAULT_PAGE_SIZE = 10;
+export const DEFAULT_PAGE_SIZE = 10

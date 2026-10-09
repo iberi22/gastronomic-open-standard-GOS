@@ -32,7 +32,7 @@ import {
   DEFAULT_PAGE_SIZE,
   MAX_PAGE_SIZE,
   type Principal,
-} from './contract.js';
+} from './contract.js'
 
 /**
  * Tools that change state. Deliberately empty.
@@ -41,14 +41,14 @@ import {
  * a `disabled` flag: an empty list cannot be misconfigured, and the tests assert
  * it stays empty.
  */
-export const MUTATING_TOOLS: readonly string[] = [];
+export const MUTATING_TOOLS: readonly string[] = []
 
 /** The three tools this pilot exposes. */
 export const READ_ONLY_TOOLS = [
   'catalog.search',
   'catalog.get',
   'capabilities.get',
-] as const;
+] as const
 
 /**
  * Establish the principal for a call.
@@ -57,20 +57,22 @@ export const READ_ONLY_TOOLS = [
  * tool be called outside a request context and either throw on `undefined` or,
  * worse, fall back to something permissive.
  */
-export function requirePrincipal(principal: Principal | null | undefined): Principal {
+export function requirePrincipal(
+  principal: Principal | null | undefined,
+): Principal {
   if (!principal) {
     throw new AgentPolicyError(
       'unauthenticated',
       'no principal: the agent surface is never reachable without one',
-    );
+    )
   }
   if (!principal.id) {
     throw new AgentPolicyError(
       'unauthenticated',
       'the principal has no id, which means the key store did not resolve it',
-    );
+    )
   }
-  return principal;
+  return principal
 }
 
 /**
@@ -84,8 +86,8 @@ export function mayReadWorkspace(
   principal: Principal,
   workspace: string | undefined,
 ): boolean {
-  if (!workspace) return true; // public data
-  return principal.workspaces.includes(workspace);
+  if (!workspace) return true // public data
+  return principal.workspaces.includes(workspace)
 }
 
 export function assertWorkspace(
@@ -96,7 +98,7 @@ export function assertWorkspace(
     throw new AgentPolicyError(
       'workspace-mismatch',
       `principal ${principal.id} may not read workspace ${workspace}`,
-    );
+    )
   }
 }
 
@@ -113,36 +115,36 @@ export function assertBudget(principal: Principal, calls = 1): void {
       'limit-exceeded',
       `principal ${principal.id} used ${principal.usedToday} of ` +
         `${principal.dailyLimit} requests today`,
-    );
+    )
   }
 }
 
 /** Clamp a requested page to something the gateway can serve. */
-export function normalisePage(input: {
-  limit?: number;
-  offset?: number;
-}): { limit: number; offset: number } {
-  const requested = input.limit ?? DEFAULT_PAGE_SIZE;
+export function normalisePage(input: { limit?: number; offset?: number }): {
+  limit: number
+  offset: number
+} {
+  const requested = input.limit ?? DEFAULT_PAGE_SIZE
   if (!Number.isFinite(requested) || requested <= 0) {
     throw new AgentPolicyError(
       'bad-input',
       `limit must be a positive number, got ${String(input.limit)}`,
-    );
+    )
   }
   if (requested > MAX_PAGE_SIZE) {
     throw new AgentPolicyError(
       'bad-input',
       `limit ${requested} exceeds the maximum page of ${MAX_PAGE_SIZE}`,
-    );
+    )
   }
-  const offset = input.offset ?? 0;
+  const offset = input.offset ?? 0
   if (!Number.isInteger(offset) || offset < 0) {
     throw new AgentPolicyError(
       'bad-input',
       `offset must be a non-negative integer, got ${String(input.offset)}`,
-    );
+    )
   }
-  return { limit: requested, offset };
+  return { limit: requested, offset }
 }
 
 /**
@@ -159,7 +161,7 @@ export function assertKnownTool(name: string): void {
       MUTATING_TOOLS.includes(name)
         ? `${name} changes state and this pilot is read-only`
         : `${name} is not one of the pilot's tools: ${READ_ONLY_TOOLS.join(', ')}`,
-    );
+    )
   }
 }
 
@@ -174,8 +176,8 @@ export function authorise(
   principal: Principal | null | undefined,
   options: { workspace?: string; calls?: number } = {},
 ): Principal {
-  const p = requirePrincipal(principal);
-  assertWorkspace(p, options.workspace);
-  assertBudget(p, options.calls ?? 1);
-  return p;
+  const p = requirePrincipal(principal)
+  assertWorkspace(p, options.workspace)
+  assertBudget(p, options.calls ?? 1)
+  return p
 }
