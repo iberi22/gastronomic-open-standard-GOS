@@ -1,0 +1,3687 @@
+{
+  "bodyPart": "back",
+  "count": 203,
+  "exercises": [
+    {
+      "slug": "alternate-lateral-pulldown",
+      "name": "alternate lateral pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids"],
+      "steps": [
+        "Sit on the cable machine with your back straight and feet flat on the ground.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Lean back slightly and pull the handles towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0007",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "archer-pull-up",
+      "name": "archer pull up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Start by hanging from a pull-up bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Engage your core and pull your shoulder blades down and back.",
+        "As you pull yourself up, bend one arm and bring your elbow towards your side, while keeping the other arm straight.",
+        "Continue pulling until your chin is above the bar and your bent arm is fully flexed.",
+        "Lower yourself back down with control, straightening the bent arm and repeating the movement on the other side.",
+        "Alternate sides with each repetition."
+      ],
+      "sourceId": "3293",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "assisted-parallel-close-grip-pull-up",
+      "name": "assisted parallel close grip pull-up",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the machine to your desired weight and height.",
+        "Place your hands on the parallel bars with a close grip, palms facing each other.",
+        "Hang from the bars with your arms fully extended and your feet off the ground.",
+        "Engage your back muscles and pull your body up towards the bars, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bars.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0015",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "assisted-pull-up",
+      "name": "assisted pull-up",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the machine to your desired weight and height settings.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang with your arms fully extended and your feet off the ground.",
+        "Engage your back muscles and pull your body up towards the handles, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the handles.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0017",
+      "artRef": "assisted-pull-up",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "assisted-standing-chin-up",
+      "name": "assisted standing chin-up",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the machine to your desired assistance level.",
+        "Stand on the foot platform and grip the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your chest up and shoulders back, engage your core, and slightly bend your knees.",
+        "Pull your body up by flexing your elbows and driving your elbows down towards your sides.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1431",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "assisted-standing-pull-up",
+      "name": "assisted standing pull-up",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the machine to your desired weight and height settings.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Engage your lats and biceps, and pull yourself up towards the handles.",
+        "Pause for a moment at the top, squeezing your back muscles.",
+        "Slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1432",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "back-extension-on-exercise-ball",
+      "name": "back extension on exercise ball",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall or other stable surface.",
+        "Position your hands behind your head or crossed over your chest.",
+        "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your heels.",
+        "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1314",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "back-lever",
+      "name": "back lever",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms", "core"],
+      "steps": [
+        "Start by hanging from a pull-up bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Engage your core and pull your shoulder blades down and back.",
+        "Bend your knees and tuck them towards your chest.",
+        "Slowly lift your legs up, keeping them straight, until your body is parallel to the ground.",
+        "Hold this position for a few seconds, then slowly lower your legs back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3297",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "back-pec-stretch",
+      "name": "back pec stretch",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "chest"],
+      "steps": [
+        "Stand tall with your feet shoulder-width apart.",
+        "Extend your arms straight out in front of you, parallel to the ground.",
+        "Cross your arms in front of your body, with your right arm over your left arm.",
+        "Interlock your fingers and rotate your palms away from your body.",
+        "Slowly raise your arms up and away from your body, feeling a stretch in your back and chest.",
+        "Hold the stretch for 15-30 seconds, then release.",
+        "Repeat on the opposite side."
+      ],
+      "sourceId": "1405",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-assisted-pull-up",
+      "name": "band assisted pull-up",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach the band to a pull-up bar or sturdy anchor point.",
+        "Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart.",
+        "Hang with your arms fully extended, keeping your core engaged and your shoulders down and back.",
+        "Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips.",
+        "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0970",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-close-grip-pulldown",
+      "name": "band close-grip pulldown",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach the band to a high anchor point, such as a pull-up bar or sturdy beam.",
+        "Stand facing the anchor point and grab the band with an underhand grip, hands shoulder-width apart.",
+        "Step back to create tension in the band, keeping your feet hip-width apart.",
+        "Engage your core and keep your back straight as you pull the band down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the band back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0974",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-fixed-back-close-grip-pulldown",
+      "name": "band fixed back close grip pulldown",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach the band to a fixed point above you, such as a pull-up bar or sturdy beam.",
+        "Sit down on a bench or chair facing the band, with your feet flat on the ground and your knees bent.",
+        "Grasp the band with a close grip, palms facing towards you.",
+        "Keep your back straight and engage your core.",
+        "Pull the band down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, feeling the contraction in your lats.",
+        "Slowly release the band back to the starting position, maintaining control throughout the movement.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3117",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-fixed-back-underhand-pulldown",
+      "name": "band fixed back underhand pulldown",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Attach the band to a sturdy anchor point above your head.",
+        "Stand facing the anchor point with your feet shoulder-width apart.",
+        "Grasp the band with an underhand grip, hands slightly wider than shoulder-width apart.",
+        "Step back to create tension in the band, keeping your arms fully extended.",
+        "Engage your core and squeeze your shoulder blades together.",
+        "Pull the band down towards your chest, leading with your elbows.",
+        "Pause for a moment at the bottom of the movement, feeling the contraction in your lats.",
+        "Slowly release the tension in the band and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3116",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-kneeling-one-arm-pulldown",
+      "name": "band kneeling one arm pulldown",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids"],
+      "steps": [
+        "Attach the band to a sturdy anchor point above your head.",
+        "Kneel down and hold the band with one hand, palm facing down.",
+        "Extend your arm fully overhead, keeping your elbow slightly bent.",
+        "Engage your lat muscles and pull the band down towards your side, bringing your elbow towards your ribcage.",
+        "Pause for a moment at the bottom, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "0983",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-one-arm-standing-low-row",
+      "name": "band one arm standing low row",
+      "equipment": "band",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Attach the band to a stable anchor point at waist height.",
+        "Stand facing the anchor point with your feet shoulder-width apart.",
+        "Hold the band with one hand, palm facing inward, and step back to create tension in the band.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Pull the band towards your waist, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release the band back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "0988",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-one-arm-twisting-seated-row",
+      "name": "band one arm twisting seated row",
+      "equipment": "band",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground and your back straight.",
+        "Hold the band with one hand and extend your arm fully in front of you.",
+        "Keeping your back straight, pull the band towards your body by bending your elbow and squeezing your shoulder blades together.",
+        "At the same time, twist your torso towards the side of the pulling arm.",
+        "Pause for a moment at the top, then slowly release the tension in the band and return to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "0990",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-shrug",
+      "name": "band shrug",
+      "equipment": "band",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and place the band under your feet, holding the ends with your hands.",
+        "Keep your arms straight and relaxed, and let the band hang in front of your thighs.",
+        "Engage your traps by shrugging your shoulders upward, lifting the band as high as possible.",
+        "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1018",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-straight-leg-deadlift",
+      "name": "band straight leg deadlift",
+      "equipment": "band",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and place the band around your feet.",
+        "Hold the band with both hands, palms facing your body, and keep your arms straight.",
+        "Engage your core and maintain a slight bend in your knees.",
+        "Slowly hinge forward at your hips, keeping your back straight and chest lifted.",
+        "Lower the band towards the ground while keeping your legs straight.",
+        "Pause for a moment at the bottom, then squeeze your glutes and hamstrings to return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1010",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "band-underhand-pulldown",
+      "name": "band underhand pulldown",
+      "equipment": "band",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach the band to a high anchor point, such as a pull-up bar or sturdy beam.",
+        "Stand facing the anchor point with your feet shoulder-width apart.",
+        "Grasp the band with an underhand grip, hands slightly wider than shoulder-width apart.",
+        "Extend your arms fully overhead, keeping your elbows slightly bent.",
+        "Engage your lats and pull the band down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1013",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-bent-arm-pullover",
+      "name": "barbell bent arm pullover",
+      "equipment": "barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "chest"],
+      "steps": [
+        "Lie flat on a bench with your head at one end and your feet on the floor.",
+        "Hold a barbell with a shoulder-width grip and extend your arms straight above your chest.",
+        "Lower the barbell behind your head while keeping your arms slightly bent.",
+        "Pause for a moment, then raise the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1316",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-bent-over-row",
+      "name": "barbell bent over row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Bend forward at the hips while keeping your back straight and chest up.",
+        "Grasp the barbell with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Pull the barbell towards your lower chest by retracting your shoulder blades and squeezing your back muscles.",
+        "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0027",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-decline-bent-arm-pullover",
+      "name": "barbell decline bent arm pullover",
+      "equipment": "barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "chest"],
+      "steps": [
+        "Lie down on a decline bench with your head lower than your hips and your feet secured.",
+        "Hold a barbell with a pronated grip (palms facing away from you) and extend your arms straight above your chest.",
+        "Lower the barbell behind your head in a controlled manner, keeping your arms slightly bent.",
+        "Pause for a moment, then raise the barbell back to the starting position by contracting your lats.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0034",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-decline-wide-grip-pullover",
+      "name": "barbell decline wide-grip pullover",
+      "equipment": "barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "chest"],
+      "steps": [
+        "Lie on a decline bench with your head lower than your hips and your feet secured.",
+        "Hold a barbell with a wide grip and extend your arms straight above your chest.",
+        "Lower the barbell behind your head in a controlled manner, keeping your arms straight.",
+        "Pause for a moment, then raise the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0037",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-incline-row",
+      "name": "barbell incline row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle.",
+        "Lie face down on the bench with your chest against the pad and your feet flat on the ground.",
+        "Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your back straight and your core engaged.",
+        "Pull the barbell towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0049",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-one-arm-bent-over-row",
+      "name": "barbell one arm bent over row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a barbell with one hand using an overhand grip.",
+        "Bend forward at the hips, keeping your back straight and your head in a neutral position.",
+        "Pull the barbell up towards your chest, keeping your elbow close to your body and squeezing your shoulder blades together.",
+        "Lower the barbell back down to the starting position in a controlled manner.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "0064",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-pendlay-row",
+      "name": "barbell pendlay row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Bend forward at the hips, keeping your back straight and your chest up.",
+        "Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.",
+        "Pull the barbell towards your upper abdomen, squeezing your shoulder blades together.",
+        "Lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3017",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-pullover",
+      "name": "barbell pullover",
+      "equipment": "barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["chest", "triceps"],
+      "steps": [
+        "Lie flat on a bench with your head at one end and your feet on the floor.",
+        "Hold a barbell with a shoulder-width grip and extend your arms straight above your chest.",
+        "Keeping your arms straight, lower the barbell behind your head in a controlled manner until you feel a stretch in your lats.",
+        "Pause for a moment, then raise the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0073",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-pullover-to-press",
+      "name": "barbell pullover to press",
+      "equipment": "barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "chest", "shoulders"],
+      "steps": [
+        "Lie flat on a bench with your head at one end and your feet on the ground.",
+        "Hold the barbell with a pronated grip (palms facing away from you) and extend your arms straight above your chest.",
+        "Keeping your arms straight, lower the barbell behind your head in an arc-like motion until you feel a stretch in your lats.",
+        "Pause for a moment, then reverse the motion and press the barbell back to the starting position above your chest.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0022",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-reverse-grip-bent-over-row",
+      "name": "barbell reverse grip bent over row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Hold a barbell with an overhand grip, palms facing down, and hands slightly wider than shoulder-width apart.",
+        "Bend forward at the hips, keeping your back straight and chest up, until your torso is almost parallel to the floor.",
+        "Pull the barbell towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0118",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-reverse-grip-incline-bench-row",
+      "name": "barbell reverse grip incline bench row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle.",
+        "Sit on the bench facing the backrest with your chest against it.",
+        "Grab the barbell with a reverse grip (palms facing down) and hands slightly wider than shoulder-width apart.",
+        "Keep your back straight and core engaged.",
+        "Pull the barbell towards your upper abdomen, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement.",
+        "Slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1317",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "barbell-shrug",
+      "name": "barbell shrug",
+      "equipment": "barbell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold a barbell in front of you with an overhand grip.",
+        "Keep your arms straight and your back straight throughout the exercise.",
+        "Lift your shoulders up towards your ears as high as possible, squeezing your traps at the top.",
+        "Hold for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0095",
+      "artRef": "shrug",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bench-pull-ups",
+      "name": "bench pull-ups",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Position yourself under a bar or a sturdy horizontal surface that is at chest height.",
+        "Grab the bar or surface with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang with your arms fully extended and your body straight.",
+        "Pull your chest towards the bar or surface by squeezing your shoulder blades together and bending your elbows.",
+        "Continue pulling until your chin is above the bar or surface.",
+        "Lower yourself back down to the starting position with control.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3019",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-squatting-row",
+      "name": "bodyweight squatting row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding onto a sturdy object or suspension trainer with your arms extended.",
+        "Lower your body into a squat position, keeping your back straight and your knees behind your toes.",
+        "From the squat position, pull your body up towards the object or suspension trainer, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3168",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-squatting-row-with-towel",
+      "name": "bodyweight squatting row (with towel)",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a towel in front of you with your palms facing down.",
+        "Bend your knees and lower your body into a squat position, keeping your back straight and your chest up.",
+        "As you lower into the squat, simultaneously pull the towel towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the squat, then slowly return to the starting position while extending your arms.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3167",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-close-grip-one-arm-row",
+      "name": "bodyweight standing close-grip one arm row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in one hand with a neutral grip.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Pull the dumbbell up towards your chest, keeping your elbow close to your body and squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "3156",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-close-grip-row",
+      "name": "bodyweight standing close-grip row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Bend forward at the waist, keeping your back straight and your core engaged.",
+        "Extend your arms straight in front of you, gripping the bar or handles with a close grip.",
+        "Pull the bar or handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3158",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-one-arm-row",
+      "name": "bodyweight standing one arm row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in one hand.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Let the dumbbell hang straight down in front of you, with your arm fully extended.",
+        "Pull the dumbbell up towards your chest, keeping your elbow close to your body.",
+        "Squeeze your shoulder blades together at the top of the movement.",
+        "Lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "3162",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-one-arm-row-with-towel",
+      "name": "bodyweight standing one arm row (with towel)",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a towel with one hand.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Pull the towel towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the towel back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "3161",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-row",
+      "name": "bodyweight standing row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Grasp a bar or handles with an overhand grip, palms facing down.",
+        "Keep your back straight and core engaged.",
+        "Pull the bar or handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement.",
+        "Slowly release and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3166",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "bodyweight-standing-row-with-towel",
+      "name": "bodyweight standing row (with towel)",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold a towel in front of you with both hands.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Pull the towel towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3165",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-bar-lateral-pulldown",
+      "name": "cable bar lateral pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the cable pulley to a high position and attach a straight bar.",
+        "Sit facing the cable machine with your feet flat on the ground and your knees slightly bent.",
+        "Grasp the bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Lean back slightly and keep your chest up, maintaining a slight arch in your lower back.",
+        "Pull the bar down towards your chest, leading with your elbows and squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly return the bar to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0150",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-cross-over-lateral-pulldown",
+      "name": "cable cross-over lateral pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Attach a cable handle to each side of a cable machine at shoulder height.",
+        "Stand in the middle of the machine with your feet shoulder-width apart.",
+        "Grasp the handles with an overhand grip and step back to create tension in the cables.",
+        "Lean forward slightly from the hips, keeping your back straight and your chest up.",
+        "Pull the handles down and across your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0153",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-decline-seated-wide-grip-row",
+      "name": "cable decline seated wide-grip row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the decline bench facing the cable machine with your feet securely placed on the footrests.",
+        "Grasp the cable attachment with a wide overhand grip, palms facing down.",
+        "Lean back slightly, keeping your back straight and your core engaged.",
+        "Pull the cable towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the contraction, then slowly release the cable back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0159",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-floor-seated-wide-grip-row",
+      "name": "cable floor seated wide-grip row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the floor with your legs extended and your back straight.",
+        "Attach a cable handle to a low pulley and position the cable machine behind you.",
+        "Grasp the handle with a wide overhand grip, palms facing down.",
+        "Lean back slightly, keeping your back straight and your chest lifted.",
+        "Pull the handle towards your waist, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release the handle back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0160",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-high-row-kneeling",
+      "name": "cable high row (kneeling)",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Attach a straight bar to a cable machine at chest height.",
+        "Kneel down in front of the cable machine and grab the bar with an overhand grip, hands shoulder-width apart.",
+        "Sit back on your heels, keeping your back straight and your core engaged.",
+        "Pull the bar towards your upper abdomen, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release the bar back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0167",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-incline-bench-row",
+      "name": "cable incline bench row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "rear deltoids"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle and attach a cable handle to the low pulley.",
+        "Sit on the bench facing the cable machine with your feet flat on the floor and your knees slightly bent.",
+        "Grasp the cable handle with an overhand grip and extend your arms fully in front of you.",
+        "Lean forward from your hips while keeping your back straight and your core engaged.",
+        "Pull the cable handle towards your chest by retracting your shoulder blades and bending your elbows.",
+        "Squeeze your back muscles at the top of the movement, then slowly extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1318",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-incline-pushdown",
+      "name": "cable incline pushdown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "shoulders"],
+      "steps": [
+        "Attach a straight bar to a high pulley cable machine.",
+        "Stand facing away from the machine with your feet shoulder-width apart.",
+        "Grasp the bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Lean forward slightly and keep your back straight.",
+        "Pull the bar down towards your thighs by extending your elbows.",
+        "Pause for a moment at the bottom, then slowly return the bar to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0172",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-lat-pulldown-full-range-of-motion",
+      "name": "cable lat pulldown full range of motion",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Sit on the lat pulldown machine with your knees positioned under the pads.",
+        "Grasp the cable bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Lean back slightly and keep your chest up, maintaining a slight arch in your lower back.",
+        "Pull the bar down towards your upper chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the bar back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2330",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-lateral-pulldown-with-rope-attachment",
+      "name": "cable lateral pulldown (with rope attachment)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach a rope attachment to the cable machine at a high position.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the rope with an overhand grip, palms facing each other.",
+        "Keep your back straight and lean slightly back.",
+        "Pull the rope down towards your sides, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement.",
+        "Slowly release the tension and allow the rope to return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0177",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-lateral-pulldown-with-v-bar",
+      "name": "cable lateral pulldown with v-bar",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit down on the cable pulldown machine and grab the v-bar attachment with an overhand grip.",
+        "Adjust the knee pad so that your thighs are secured under it.",
+        "Keep your back straight and lean back slightly.",
+        "Pull the v-bar down towards your upper chest while keeping your elbows close to your body.",
+        "Squeeze your back muscles at the bottom of the movement.",
+        "Slowly return the v-bar to the starting position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2616",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-low-seated-row",
+      "name": "cable low seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the handles with an overhand grip, palms facing down.",
+        "Keep your back straight and lean slightly forward, maintaining a slight bend in your elbows.",
+        "Pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0180",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-lying-extension-pullover-with-rope-attachment",
+      "name": "cable lying extension pullover (with rope attachment)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "shoulders"],
+      "steps": [
+        "Attach a rope to a cable machine and set the pulley at the highest position.",
+        "Lie down on a bench with your head towards the cable machine.",
+        "Hold the rope with both hands and extend your arms straight up above your chest.",
+        "Keeping your arms straight, slowly lower the rope behind your head while maintaining control.",
+        "Pause for a moment at the bottom, then slowly raise the rope back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0184",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-one-arm-bent-over-row",
+      "name": "cable one arm bent over row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand facing a cable machine with your feet shoulder-width apart.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Grasp the cable handle with one hand, palm facing inward, and extend your arm fully.",
+        "Pull the cable handle towards your body, keeping your elbow close to your side, until your hand reaches your lower chest.",
+        "Pause for a moment, then slowly extend your arm back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "0189",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-one-arm-pulldown",
+      "name": "cable one arm pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach a single handle to a high pulley cable machine.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the handle with an overhand grip and extend your arm fully.",
+        "Keep your back straight and your core engaged.",
+        "Pull the handle down towards your side while keeping your elbow close to your body.",
+        "Pause for a moment at the bottom of the movement, squeezing your lat muscle.",
+        "Slowly release the handle back to the starting position.",
+        "Repeat for the desired number of repetitions.",
+        "Switch sides and repeat the exercise with the other arm."
+      ],
+      "sourceId": "3563",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-one-arm-straight-back-high-row-kneeling",
+      "name": "cable one arm straight back high row (kneeling)",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Attach a handle to a cable machine at waist height.",
+        "Kneel down facing the cable machine and grab the handle with one hand.",
+        "Keep your back straight and your core engaged.",
+        "Pull the handle towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement.",
+        "Slowly release the handle back to the starting position.",
+        "Repeat for the desired number of repetitions.",
+        "Switch sides and repeat the exercise with the other arm."
+      ],
+      "sourceId": "0193",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-palm-rotational-row",
+      "name": "cable palm rotational row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach a handle to a cable machine at waist height.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the handle with an overhand grip, palms facing down.",
+        "Step back to create tension on the cable, keeping your back straight and knees slightly bent.",
+        "Pull the handle towards your body, rotating your palms to face upwards as you do so.",
+        "Squeeze your shoulder blades together at the end of the movement.",
+        "Slowly release the handle back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1319",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-pulldown",
+      "name": "cable pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the cable pulldown machine so that the seat is at a comfortable height and the knee pad is secured.",
+        "Sit on the seat with your back straight and your feet flat on the ground.",
+        "Grasp the cable bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Lean back slightly and engage your core.",
+        "Pull the cable bar down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the bar back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0198",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-pulldown-pro-lat-bar",
+      "name": "cable pulldown (pro lat bar)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height so that your thighs are parallel to the ground and your feet are flat on the floor.",
+        "Grasp the lat bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Sit down and lean back slightly, keeping your chest up and your back straight.",
+        "Pull the bar down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0197",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-pushdown-straight-arm-v-2",
+      "name": "cable pushdown (straight arm) v. 2",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "shoulders"],
+      "steps": [
+        "Attach a straight bar to a high pulley cable machine.",
+        "Stand facing the machine with your feet shoulder-width apart and a slight bend in your knees.",
+        "Grasp the bar with an overhand grip, keeping your arms straight and your palms facing down.",
+        "Engage your core and keep your back straight as you exhale and push the bar down towards your thighs.",
+        "Pause for a moment at the bottom, then slowly return the bar to the starting position while inhaling.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0199",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-rear-pulldown",
+      "name": "cable rear pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the cable machine so that the pulley is at the highest position.",
+        "Sit facing the machine with your feet flat on the ground and your knees slightly bent.",
+        "Grasp the cable attachment with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Lean back slightly, keeping your back straight and your chest up.",
+        "Pull the cable attachment down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the cable back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0205",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-reverse-grip-straight-back-seated-high-row",
+      "name": "cable reverse-grip straight back seated high row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the seat facing the cable machine with your feet flat on the floor.",
+        "Grasp the cable attachment with an underhand grip, palms facing up, and your hands shoulder-width apart.",
+        "Keep your back straight and lean slightly forward from your hips.",
+        "Pull the cable towards your torso by retracting your shoulder blades and squeezing your back muscles.",
+        "Pause for a moment at the peak of the contraction, then slowly release the cable back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0208",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-rope-crossover-seated-row",
+      "name": "cable rope crossover seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the rowing machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the cable ropes with an overhand grip, palms facing each other.",
+        "Lean back slightly, keeping your back straight and your core engaged.",
+        "Pull the cable ropes towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1320",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-rope-elevated-seated-row",
+      "name": "cable rope elevated seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the elevated seat facing the cable machine.",
+        "Grab the cable rope handles with an overhand grip, palms facing each other.",
+        "Keep your back straight and lean slightly back, maintaining a slight bend in your knees.",
+        "Pull the cable towards your body by retracting your shoulder blades and squeezing your back muscles.",
+        "Pause for a moment at the fully contracted position.",
+        "Slowly release the tension and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1321",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-rope-extension-incline-bench-row",
+      "name": "cable rope extension incline bench row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle and attach a cable machine to the low pulley.",
+        "Attach a rope handle to the cable machine and sit on the incline bench facing the machine.",
+        "Grab the rope handle with an overhand grip and lean forward, keeping your back straight.",
+        "Extend your arms fully, pulling the rope towards your upper chest while keeping your elbows close to your body.",
+        "Squeeze your shoulder blades together at the end of the movement.",
+        "Slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1322",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-rope-seated-row",
+      "name": "cable rope seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the rowing machine with your feet flat on the footrests and knees slightly bent.",
+        "Grasp the cable ropes with an overhand grip, palms facing each other.",
+        "Keep your back straight and lean slightly forward, maintaining a slight bend in your elbows.",
+        "Pull the cable ropes towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1323",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-seated-high-row-v-bar",
+      "name": "cable seated high row (v-bar)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Sit on the cable machine with your feet flat on the floor and your knees slightly bent.",
+        "Grasp the v-bar attachment with an overhand grip, palms facing each other, and your hands shoulder-width apart.",
+        "Keep your back straight and lean slightly forward from the hips.",
+        "Pull the v-bar towards your torso by retracting your shoulder blades and squeezing your back muscles.",
+        "Pause for a moment at the peak of the contraction, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0213",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-seated-one-arm-alternate-row",
+      "name": "cable seated one arm alternate row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on a bench facing a cable machine with your feet flat on the ground and knees slightly bent.",
+        "Grasp the handle with one hand and keep your arm fully extended in front of you.",
+        "Pull the handle towards your body, retracting your shoulder blade and keeping your elbow close to your side.",
+        "Pause for a moment at the top of the movement, squeezing your back muscles.",
+        "Slowly release the handle back to the starting position.",
+        "Repeat with the other arm.",
+        "Alternate between arms for the desired number of repetitions."
+      ],
+      "sourceId": "0214",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-seated-row",
+      "name": "cable seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the handles with an overhand grip, keeping your back straight and your shoulders relaxed.",
+        "Pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0861",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-seated-wide-grip-row",
+      "name": "cable seated wide-grip row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the handle with a wide overhand grip, palms facing down.",
+        "Keep your back straight and lean slightly forward from the hips.",
+        "Pull the handle towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the contraction.",
+        "Slowly release the handle back to the starting position, fully extending your arms.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0218",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-shrug",
+      "name": "cable shrug",
+      "equipment": "cable",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand facing the cable machine with your feet shoulder-width apart.",
+        "Grasp the cable handles with an overhand grip and let your arms hang down in front of you.",
+        "Keeping your arms straight, shrug your shoulders up towards your ears.",
+        "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0220",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-squat-row-with-rope-attachment",
+      "name": "cable squat row (with rope attachment)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Attach a rope to a cable machine at waist height.",
+        "Stand facing the cable machine with your feet shoulder-width apart.",
+        "Bend your knees and lower your body into a squat position, keeping your back straight and chest up.",
+        "Grasp the rope with an overhand grip, with your hands shoulder-width apart.",
+        "Engage your core and pull the rope towards your body, squeezing your shoulder blades together.",
+        "Keep your elbows close to your body and continue pulling until your hands reach your chest.",
+        "Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1717",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-standing-row-v-bar",
+      "name": "cable standing row (v-bar)",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand facing the cable machine with your feet shoulder-width apart.",
+        "Grasp the v-bar attachment with an overhand grip, palms facing down.",
+        "Keep your back straight and your core engaged.",
+        "Pull the v-bar towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0234",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-standing-twist-row-v-bar",
+      "name": "cable standing twist row (v-bar)",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Attach a v-bar attachment to a cable machine at chest height.",
+        "Stand facing the cable machine with your feet shoulder-width apart.",
+        "Grasp the v-bar with an overhand grip, palms facing down.",
+        "Take a step back to create tension in the cable.",
+        "Keep your back straight and core engaged throughout the exercise.",
+        "Pull the v-bar towards your torso by retracting your shoulder blades and bending your elbows.",
+        "As you pull, twist your torso to one side, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, feeling the contraction in your upper back.",
+        "Slowly release the tension and return to the starting position, untwisting your torso.",
+        "Repeat the movement for the desired number of repetitions, alternating the twisting direction with each rep."
+      ],
+      "sourceId": "0236",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-straight-arm-pulldown",
+      "name": "cable straight arm pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "biceps"],
+      "steps": [
+        "Attach a straight bar to the high pulley of a cable machine.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the bar with an overhand grip, keeping your arms straight and your palms facing down.",
+        "Engage your lats and pull the bar down towards your thighs, keeping your arms straight throughout the movement.",
+        "Pause for a moment at the bottom, then slowly return the bar to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0238",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-straight-arm-pulldown-with-rope",
+      "name": "cable straight arm pulldown (with rope)",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Attach a rope to the cable machine at the highest setting.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the rope with both hands, palms facing down.",
+        "Extend your arms fully in front of you, keeping your elbows slightly bent.",
+        "Engage your lats and slowly pull the rope down towards your thighs, keeping your arms straight.",
+        "Pause for a moment at the bottom, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0237",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-straight-back-seated-row",
+      "name": "cable straight back seated row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms", "shoulders"],
+      "steps": [
+        "Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the cable handles with an overhand grip, palms facing down.",
+        "Keep your back straight and lean slightly forward from the hips.",
+        "Pull the cable handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0239",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-thibaudeau-kayak-row",
+      "name": "cable thibaudeau kayak row",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Attach a cable handle to a low pulley and sit facing the machine with your feet flat on the floor.",
+        "Grasp the handle with your right hand and extend your arm fully, keeping a slight bend in your elbow.",
+        "Lean forward from your hips, keeping your back straight and your abs engaged.",
+        "Pull the handle towards your torso by retracting your shoulder blade and bending your elbow, keeping your arm close to your body.",
+        "Squeeze your back muscles at the top of the movement, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides and perform with your left arm."
+      ],
+      "sourceId": "2464",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-twisting-pull",
+      "name": "cable twisting pull",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "biceps"],
+      "steps": [
+        "Attach a cable handle to a low pulley and stand facing the machine.",
+        "Grasp the handle with your left hand and step away from the machine, extending your arm fully.",
+        "Position your feet shoulder-width apart, with your knees slightly bent.",
+        "Keep your back straight and your core engaged throughout the exercise.",
+        "Pull the handle towards your body, rotating your torso to the right as you do so.",
+        "Squeeze your back muscles at the end of the movement.",
+        "Slowly return to the starting position, keeping tension on the cable.",
+        "Repeat for the desired number of repetitions, then switch sides and perform with your right hand."
+      ],
+      "sourceId": "0244",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-underhand-pulldown",
+      "name": "cable underhand pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the cable machine so that the pulldown bar is at a height above your head.",
+        "Sit down on the seat and grab the pulldown bar with an underhand grip, hands slightly wider than shoulder-width apart.",
+        "Keep your back straight and lean back slightly.",
+        "Pull the bar down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0245",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-upper-row",
+      "name": "cable upper row",
+      "equipment": "cable",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Attach a straight bar to a cable machine at chest height.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Keep your back straight and your core engaged.",
+        "Pull the bar towards your upper chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement.",
+        "Slowly release the bar back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1324",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cable-wide-grip-rear-pulldown-behind-neck",
+      "name": "cable wide grip rear pulldown behind neck",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the cable machine so that the pulldown bar is at a height above your head.",
+        "Sit down on the seat and grab the pulldown bar with a wide overhand grip.",
+        "Keep your back straight and your chest up as you lean back slightly.",
+        "Pull the bar down towards your upper chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1325",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "cambered-bar-lying-row",
+      "name": "cambered bar lying row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a barbell on the floor and lie face down on a bench with your chest just off the edge.",
+        "Reach down and grab the barbell with an overhand grip, slightly wider than shoulder-width apart.",
+        "With your legs straight and feet on the ground, lift the barbell off the floor by extending your arms.",
+        "Pull the barbell towards your chest, squeezing your shoulder blades together.",
+        "Lower the barbell back down to the starting position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0248",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "chin-up",
+      "name": "chin-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Hang from a pull-up bar with your palms facing towards you and your hands shoulder-width apart.",
+        "Engage your core and pull your body up towards the bar, leading with your chest.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1326",
+      "artRef": "chin-up",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "chin-ups-narrow-parallel-grip",
+      "name": "chin-ups (narrow parallel grip)",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Hang from a pull-up bar with a narrow parallel grip, palms facing towards you.",
+        "Engage your back muscles and pull your body up towards the bar, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0253",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "close-grip-chin-up",
+      "name": "close grip chin-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with your palms facing towards you and your hands shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your feet off the ground.",
+        "Engage your back muscles and pull your body up towards the bar, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1327",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-bent-over-row",
+      "name": "dumbbell bent over row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in each hand with your palms facing your body.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Let your arms hang straight down towards the floor, with your elbows slightly bent.",
+        "Pull the dumbbells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0293",
+      "artRef": "dumbbell-bent-over-row",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-decline-shrug",
+      "name": "dumbbell decline shrug",
+      "equipment": "dumbbell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders", "rhomboids"],
+      "steps": [
+        "Set up a decline bench at a 45-degree angle.",
+        "Lie face down on the bench with your chest and stomach resting against it.",
+        "Hold a dumbbell in each hand with your arms fully extended towards the floor.",
+        "Keeping your arms straight, raise your shoulders towards your ears as high as possible.",
+        "Hold the contraction for a moment, then slowly lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0305",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-decline-shrug-v-2",
+      "name": "dumbbell decline shrug v. 2",
+      "equipment": "dumbbell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders", "rhomboids"],
+      "steps": [
+        "Set up a decline bench at a 45-degree angle.",
+        "Lie face down on the bench with your chest and stomach resting on it.",
+        "Hold a dumbbell in each hand with your palms facing each other and your arms fully extended.",
+        "Keeping your arms straight, raise your shoulders as high as possible while squeezing your shoulder blades together.",
+        "Hold the contraction for a brief pause, then lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0304",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-incline-row",
+      "name": "dumbbell incline row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle.",
+        "Grab a dumbbell in each hand and sit on the bench with your chest against the incline.",
+        "Extend your arms fully, allowing the dumbbells to hang straight down from your shoulders.",
+        "Pull the dumbbells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0327",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-incline-shrug",
+      "name": "dumbbell incline shrug",
+      "equipment": "dumbbell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand.",
+        "Place your feet flat on the ground and let your arms hang straight down with your palms facing your body.",
+        "Keeping your arms straight, shrug your shoulders up towards your ears as high as possible.",
+        "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0329",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-incline-y-raise",
+      "name": "dumbbell incline y-raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "rear deltoids"],
+      "steps": [
+        "Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing inwards.",
+        "Lean forward slightly and let your arms hang straight down, keeping a slight bend in your elbows.",
+        "Raise your arms out to the sides and up in a Y shape until they are parallel to the ground.",
+        "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3541",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-lying-rear-delt-row",
+      "name": "dumbbell lying rear delt row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "biceps"],
+      "steps": [
+        "Lie face down on a flat bench with a dumbbell in each hand, palms facing inwards.",
+        "Extend your arms straight down towards the floor, keeping a slight bend in your elbows.",
+        "Engaging your back muscles, lift the dumbbells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1328",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-one-arm-bent-over-row",
+      "name": "dumbbell one arm bent-over row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a dumbbell in one hand with your palm facing your body.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight and your core engaged.",
+        "Let the dumbbell hang straight down towards the floor, with your arm fully extended.",
+        "Pull the dumbbell up towards your chest, keeping your elbow close to your body and squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "0292",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-palm-rotational-bent-over-row",
+      "name": "dumbbell palm rotational bent over row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a dumbbell in each hand with an overhand grip.",
+        "Bend forward at the hips, keeping your back straight and your knees slightly bent.",
+        "Let your arms hang straight down, palms facing your body.",
+        "Engage your core and pull the dumbbells up towards your chest, keeping your elbows close to your body.",
+        "As you pull the dumbbells up, rotate your palms so they face away from your body.",
+        "Squeeze your shoulder blades together at the top of the movement.",
+        "Slowly lower the dumbbells back down to the starting position, rotating your palms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1329",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-reverse-grip-incline-bench-one-arm-row",
+      "name": "dumbbell reverse grip incline bench one arm row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle.",
+        "Place a dumbbell on the floor next to the bench.",
+        "Stand facing the bench with your feet shoulder-width apart.",
+        "Bend at the waist and place your left knee and left hand on the bench for support.",
+        "Pick up the dumbbell with your right hand using a reverse grip (palm facing down).",
+        "Keep your back straight and your core engaged.",
+        "Pull the dumbbell up towards your chest, keeping your elbow close to your body.",
+        "Squeeze your back muscles at the top of the movement.",
+        "Lower the dumbbell back down to the starting position in a controlled manner.",
+        "Repeat for the desired number of repetitions.",
+        "Switch sides and repeat the exercise with your left arm."
+      ],
+      "sourceId": "1330",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-reverse-grip-incline-bench-two-arm-row",
+      "name": "dumbbell reverse grip incline bench two arm row",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up an incline bench at a 45-degree angle.",
+        "Sit on the bench with your chest against the backrest and your feet flat on the ground.",
+        "Hold a dumbbell in each hand with an underhand grip.",
+        "Lean forward and let your arms hang straight down, fully extended.",
+        "Pull the dumbbells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1331",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-reverse-grip-row-female",
+      "name": "dumbbell reverse grip row (female)",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Hold a dumbbell in each hand with an overhand grip, palms facing your body.",
+        "Bend forward at the waist, keeping your back straight and your core engaged.",
+        "Let your arms hang straight down, fully extended, with a slight bend in your elbows.",
+        "Pull the dumbbells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2327",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-shrug",
+      "name": "dumbbell shrug",
+      "equipment": "dumbbell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold a dumbbell in each hand with your palms facing your body.",
+        "Keep your arms straight and let the dumbbells hang by your sides.",
+        "Raise your shoulders as high as possible, as if you are trying to touch your ears with your shoulders.",
+        "Hold the contraction for a second, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0406",
+      "artRef": "dumbbell-shrug",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "dumbbell-side-plank-with-rear-fly",
+      "name": "dumbbell side plank with rear fly",
+      "equipment": "dumbbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "core"],
+      "steps": [
+        "Start by lying on your side with your legs extended and stacked on top of each other.",
+        "Place your forearm on the ground directly below your shoulder, keeping your elbow bent at a 90-degree angle.",
+        "Hold a dumbbell in your top hand, with your arm extended straight down towards the ground.",
+        "Engage your core and lift your hips off the ground, creating a straight line from your head to your heels.",
+        "While maintaining the side plank position, lift the dumbbell up towards the ceiling, squeezing your shoulder blades together.",
+        "Lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "3664",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "elbow-lift-reverse-push-up",
+      "name": "elbow lift - reverse push-up",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["triceps", "shoulders"],
+      "steps": [
+        "Start by lying face down on the ground with your legs extended and your hands placed directly under your shoulders.",
+        "Engage your core and press through your palms to lift your upper body off the ground, keeping your elbows close to your sides.",
+        "Pause at the top for a moment, squeezing your upper back muscles.",
+        "Slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1772",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "elevator",
+      "name": "elevator",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "trapezius"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Place your hands on your hips or cross them in front of your chest.",
+        "Keeping your back straight, slowly bend forward at the waist, lowering your upper body towards the ground.",
+        "Pause for a moment at the bottom, then slowly raise your upper body back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3292",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-alternating-arm-ups",
+      "name": "exercise ball alternating arm ups",
+      "equipment": "stability ball",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "core"],
+      "steps": [
+        "Sit on the stability ball with your feet flat on the ground and your back straight.",
+        "Hold a dumbbell in each hand with your palms facing inwards and your arms extended down by your sides.",
+        "Engage your core and slowly lift one arm up towards your shoulder, keeping your elbow slightly bent.",
+        "Pause for a moment at the top, then slowly lower your arm back down to the starting position.",
+        "Repeat the movement with the other arm.",
+        "Continue alternating arms for the desired number of repetitions."
+      ],
+      "sourceId": "1332",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-back-extension-with-arms-extended",
+      "name": "exercise ball back extension with arms extended",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall for stability.",
+        "Extend your arms straight out in front of you, with your palms facing down.",
+        "Engage your core and slowly lift your upper body off the ball, keeping your back straight and your neck in line with your spine.",
+        "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1333",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-back-extension-with-hands-behind-head",
+      "name": "exercise ball back extension with hands behind head",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Place the stability ball on the ground and lie face down on top of it with your hips resting on the ball.",
+        "Position your feet against a wall or other stable surface for support.",
+        "Cross your arms behind your head, with your hands touching the back of your head.",
+        "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your hips.",
+        "Pause for a moment at the top of the movement, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1334",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-back-extension-with-knees-off-ground",
+      "name": "exercise ball back extension with knees off ground",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall for stability.",
+        "Position your hands behind your head or crossed over your chest.",
+        "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your heels.",
+        "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1335",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-back-extension-with-rotation",
+      "name": "exercise ball back extension with rotation",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Start by lying face down on the stability ball with your hips resting on the ball and your feet firmly planted on the ground.",
+        "Place your hands behind your head or cross them over your chest.",
+        "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your heels.",
+        "Pause for a moment at the top, then slowly rotate your torso to one side, keeping your hips and legs stable.",
+        "Return to the center and repeat the rotation to the other side.",
+        "Lower your upper body back down to the starting position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1336",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-hug",
+      "name": "exercise ball hug",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["shoulders", "chest"],
+      "steps": [
+        "Sit on the stability ball with your feet flat on the ground and your back straight.",
+        "Hold the stability ball with both hands, hugging it close to your chest.",
+        "Engage your core muscles and slowly lean back, keeping your back straight and your feet planted on the ground.",
+        "Continue leaning back until you feel a stretch in your back muscles.",
+        "Hold the position for a few seconds, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1338",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-lat-stretch",
+      "name": "exercise ball lat stretch",
+      "equipment": "stability ball",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "triceps"],
+      "steps": [
+        "Sit on a stability ball with your feet flat on the ground and your back straight.",
+        "Hold a dumbbell in one hand and extend your arm straight up overhead.",
+        "Slowly lean to the opposite side, feeling a stretch in your lat muscle.",
+        "Hold the stretch for 20-30 seconds, then return to the starting position.",
+        "Repeat on the other side."
+      ],
+      "sourceId": "1339",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-lower-back-stretch-pyramid",
+      "name": "exercise ball lower back stretch (pyramid)",
+      "equipment": "stability ball",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Sit on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle.",
+        "Slowly walk your feet forward, rolling the ball down your back until your lower back is resting on the ball.",
+        "Place your hands behind your head or cross them over your chest.",
+        "Engage your core and slowly lower your upper body towards the ground, allowing your lower back to stretch over the ball.",
+        "Hold the stretch for a few seconds, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1341",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-lying-side-lat-stretch",
+      "name": "exercise ball lying side lat stretch",
+      "equipment": "stability ball",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "triceps"],
+      "steps": [
+        "Lie on your side with your legs extended and your head supported by the stability ball.",
+        "Place your top arm on the ball for stability.",
+        "Reach your top arm overhead and allow your torso to rotate slightly.",
+        "Feel the stretch in your lat muscles on the side of your body.",
+        "Hold the stretch for 20-30 seconds, then switch sides and repeat."
+      ],
+      "sourceId": "1342",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "exercise-ball-prone-leg-raise",
+      "name": "exercise ball prone leg raise",
+      "equipment": "stability ball",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["abdominals", "glutes"],
+      "steps": [
+        "Lie face down on a mat with your legs extended and your toes resting on top of the stability ball.",
+        "Place your hands on the ground, shoulder-width apart, and engage your core muscles.",
+        "Keeping your legs straight, slowly lift them off the ground, using your lower back and glutes to raise them as high as possible.",
+        "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1343",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "ez-bar-lying-bent-arms-pullover",
+      "name": "ez bar lying bent arms pullover",
+      "equipment": "ez barbell",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "chest"],
+      "steps": [
+        "Lie flat on a bench with your head at one end and your feet on the floor.",
+        "Hold the EZ barbell with a pronated grip (palms facing away from you) and your hands shoulder-width apart.",
+        "Extend your arms straight above your chest, keeping a slight bend in your elbows.",
+        "Lower the barbell in an arc motion behind your head, maintaining the slight bend in your elbows.",
+        "Pause for a moment, then return the barbell to the starting position by reversing the arc motion.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3010",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "ez-bar-reverse-grip-bent-over-row",
+      "name": "ez bar reverse grip bent over row",
+      "equipment": "ez barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Hold the ez barbell with an underhand grip, palms facing up, and hands shoulder-width apart.",
+        "Bend forward at the hips, keeping your back straight and chest up, until your torso is almost parallel to the floor.",
+        "Pull the ez barbell towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the ez barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1344",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "front-lever-reps",
+      "name": "front lever reps",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["core", "shoulders"],
+      "steps": [
+        "Hang from a pull-up bar with an overhand grip, palms facing away from you.",
+        "Engage your core and pull your shoulder blades down and back.",
+        "Keeping your body straight, lift your legs up until they are parallel to the ground.",
+        "Hold this position for as long as you can, aiming for 10-20 seconds.",
+        "Slowly lower your legs back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3295",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "gironda-sternum-chin",
+      "name": "gironda sternum chin",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Stand facing a high bar with your feet shoulder-width apart.",
+        "Reach up and grab the bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your lats and biceps to pull your chest up towards the bar, leading with your sternum.",
+        "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0466",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "hyperextension",
+      "name": "hyperextension",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Adjust the hyperextension bench so that your upper thighs are resting on the pad and your feet are secured.",
+        "Cross your arms over your chest or place your hands behind your head.",
+        "Lower your upper body towards the ground while keeping your back straight.",
+        "Pause for a moment at the bottom, then raise your upper body back up until it is in line with your legs.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0489",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "hyperextension-on-bench",
+      "name": "hyperextension (on bench)",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Adjust the hyperextension bench so that your hips are resting comfortably on the pad and your feet are secured.",
+        "Cross your arms over your chest or place your hands behind your head.",
+        "Slowly lower your upper body towards the ground while keeping your back straight.",
+        "Pause for a moment at the bottom, then raise your upper body back up until it is in line with your legs.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0488",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "inverted-row",
+      "name": "inverted row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a bar at waist height or use a suspension trainer.",
+        "Stand facing the bar or suspension trainer, with your feet shoulder-width apart.",
+        "Grab the bar or handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Lean back, keeping your body straight and your heels on the ground.",
+        "Pull your chest towards the bar or handles, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0499",
+      "artRef": "inverted-row",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "inverted-row-bent-knees",
+      "name": "inverted row bent knees",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a bar at waist height and lie underneath it.",
+        "Grab the bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Position your body so that your heels are on the ground and your body is straight.",
+        "Pull your chest up towards the bar by squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2300",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "inverted-row-on-bench",
+      "name": "inverted row on bench",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a bench at a height that allows your body to hang freely underneath it.",
+        "Lie face up on the ground with your head towards the bench.",
+        "Reach up and grab the bench with an overhand grip, slightly wider than shoulder-width apart.",
+        "Position your body so that your heels are on the ground and your arms are fully extended.",
+        "Engage your core and squeeze your shoulder blades together as you pull your chest up towards the bench.",
+        "Pause for a moment at the top of the movement, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2298",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "inverted-row-v-2",
+      "name": "inverted row v. 2",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a bar at waist height on a Smith machine or use a suspension trainer.",
+        "Stand facing the bar or suspension trainer and grab it with an overhand grip, hands shoulder-width apart.",
+        "Walk your feet forward, leaning back until your body is at a slight angle.",
+        "Keep your body straight and pull your chest up towards the bar or handles, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0497",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "inverted-row-with-straps",
+      "name": "inverted row with straps",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up a suspension trainer or straps at chest height.",
+        "Stand facing the anchor point and grab the handles with an overhand grip.",
+        "Walk your feet forward, leaning back until your body is at an angle.",
+        "Keep your body straight and engage your core.",
+        "Pull your chest towards the handles, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0498",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kettlebell-alternating-renegade-row",
+      "name": "kettlebell alternating renegade row",
+      "equipment": "kettlebell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["core", "shoulders"],
+      "steps": [
+        "Start in a high plank position with your hands gripping the kettlebells and your feet hip-width apart.",
+        "Engage your core and keep your body in a straight line from head to heels.",
+        "Pull one kettlebell up towards your chest, keeping your elbow close to your body.",
+        "Lower the kettlebell back down to the starting position and repeat with the other arm.",
+        "Continue alternating arms for the desired number of repetitions."
+      ],
+      "sourceId": "0521",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kettlebell-alternating-row",
+      "name": "kettlebell alternating row",
+      "equipment": "kettlebell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a kettlebell in each hand with your palms facing your body.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Pull one kettlebell up towards your chest, keeping your elbow close to your body and squeezing your shoulder blades together.",
+        "Lower the kettlebell back down to the starting position and repeat with the other arm.",
+        "Continue alternating arms for the desired number of repetitions."
+      ],
+      "sourceId": "0522",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kettlebell-one-arm-row",
+      "name": "kettlebell one arm row",
+      "equipment": "kettlebell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a kettlebell in one hand with an overhand grip.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight and your core engaged.",
+        "Pull the kettlebell up towards your chest, keeping your elbow close to your body and squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the kettlebell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch sides and repeat with the other arm."
+      ],
+      "sourceId": "0541",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kettlebell-sumo-high-pull",
+      "name": "kettlebell sumo high pull",
+      "equipment": "kettlebell",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders", "glutes", "hamstrings"],
+      "steps": [
+        "Stand with your feet wider than shoulder-width apart, toes pointing outwards.",
+        "Hold a kettlebell with both hands in front of your body, arms extended downwards.",
+        "Bend your knees and lower your hips into a squat position, keeping your back straight.",
+        "Drive through your heels and explosively extend your hips and knees, pulling the kettlebell up towards your chin.",
+        "As you pull the kettlebell up, keep your elbows high and wide, and squeeze your shoulder blades together.",
+        "Lower the kettlebell back down to the starting position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0548",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kettlebell-two-arm-row",
+      "name": "kettlebell two arm row",
+      "equipment": "kettlebell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a kettlebell in each hand with your palms facing your body.",
+        "Bend forward at the hips, keeping your back straight and your core engaged.",
+        "Pull the kettlebells up towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the kettlebells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1345",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kipping-muscle-up",
+      "name": "kipping muscle up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "triceps", "shoulders", "core"],
+      "steps": [
+        "Start by hanging from a pull-up bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Engage your core and use a swinging motion to generate momentum.",
+        "As you swing forward, pull your chest towards the bar, using your lats and biceps to initiate the movement.",
+        "Continue the upward motion until your chest reaches the bar, then transition into a dip position by pushing down on the bar and extending your arms.",
+        "Lower yourself back down to the starting position by bending your arms and controlling the descent.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0558",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "kneeling-lat-stretch",
+      "name": "kneeling lat stretch",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "triceps"],
+      "steps": [
+        "Kneel on the ground with your knees hip-width apart and your toes pointing back.",
+        "Extend your arms overhead and interlace your fingers.",
+        "Keeping your back straight, slowly lean to the right side, feeling a stretch in your left lat muscle.",
+        "Hold the stretch for 20-30 seconds, then return to the starting position.",
+        "Repeat the stretch on the left side, leaning to the left and feeling a stretch in your right lat muscle.",
+        "Continue alternating sides for the desired number of repetitions."
+      ],
+      "sourceId": "1346",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "l-pull-up",
+      "name": "l-pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang with your arms fully extended and your body straight.",
+        "Engage your lats and biceps to pull your body up towards the bar, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3418",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-alternating-narrow-grip-seated-row",
+      "name": "lever alternating narrow grip seated row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footplate position to ensure proper alignment.",
+        "Sit on the machine with your back straight and feet flat on the footplate.",
+        "Grasp the handles with a narrow grip, palms facing each other.",
+        "Keep your chest up and shoulders back throughout the exercise.",
+        "Pull one handle towards your torso while keeping the other handle stationary.",
+        "Squeeze your shoulder blades together at the end of the movement.",
+        "Slowly return the handle to the starting position and repeat with the other side.",
+        "Continue alternating sides for the desired number of repetitions."
+      ],
+      "sourceId": "0571",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-assisted-chin-up",
+      "name": "lever assisted chin-up",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the leverage machine to your desired resistance level.",
+        "Stand on the foot platform and grip the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang with your arms fully extended, keeping your body straight.",
+        "Engage your back muscles and pull your body up towards the handles, leading with your chest.",
+        "Continue pulling until your chin is above the handles.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0572",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-back-extension",
+      "name": "lever back extension",
+      "equipment": "leverage machine",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Adjust the machine to fit your body size and range of motion.",
+        "Sit on the machine with your back against the pad and your feet secured.",
+        "Place your hands on the handles or grip bars.",
+        "Engage your core and slowly lean forward, allowing your back to round slightly.",
+        "Pause for a moment at the bottom position, feeling a stretch in your lower back.",
+        "Using your back muscles, slowly raise your torso back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0573",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-bent-over-row",
+      "name": "lever bent over row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and knees slightly bent.",
+        "Hold the barbell with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Bend forward at the hips, keeping your back straight and chest up.",
+        "Pull the barbell towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0574",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-bent-over-row-with-v-bar",
+      "name": "lever bent-over row with v-bar",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself facing the machine.",
+        "Grasp the v-bar with an overhand grip, keeping your back straight and your knees slightly bent.",
+        "Pull the v-bar towards your abdomen, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release the weight back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3200",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-front-pulldown",
+      "name": "lever front pulldown",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your knees under the pads and your feet flat on the ground.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Sit upright with your chest lifted and your shoulders back, maintaining a slight arch in your lower back.",
+        "Engage your lats and pull the handles down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0579",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-gripless-shrug",
+      "name": "lever gripless shrug",
+      "equipment": "leverage machine",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself on the leverage machine.",
+        "Grasp the handles with your palms facing inwards and your arms fully extended.",
+        "Keeping your back straight, exhale and elevate your shoulders as high as possible.",
+        "Hold the contraction for a brief moment, then inhale and slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0580",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-gripless-shrug-v-2",
+      "name": "lever gripless shrug v. 2",
+      "equipment": "leverage machine",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your back against the pad.",
+        "Grasp the handles or bars with an overhand grip, keeping your arms straight.",
+        "Keeping your back straight, lift your shoulders up towards your ears as high as possible.",
+        "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1439",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-high-row",
+      "name": "lever high row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and foot platform to a comfortable position.",
+        "Sit on the machine with your chest against the pad and your feet flat on the foot platform.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your back straight and engage your core.",
+        "Pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0581",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-narrow-grip-seated-row",
+      "name": "lever narrow grip seated row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footrests to ensure proper form.",
+        "Sit on the machine with your feet flat on the footrests and your knees slightly bent.",
+        "Grasp the handles with a narrow grip, palms facing each other.",
+        "Keep your back straight and lean slightly forward.",
+        "Pull the handles towards your torso, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement.",
+        "Slowly release the handles and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0588",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-one-arm-bent-over-row",
+      "name": "lever one arm bent over row",
+      "equipment": "barbell",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a barbell with an overhand grip.",
+        "Bend forward at the hips, keeping your back straight and your head up.",
+        "Let the barbell hang in front of you with your arms fully extended.",
+        "Pull the barbell up towards your chest, keeping your elbows close to your body.",
+        "Squeeze your shoulder blades together at the top of the movement.",
+        "Lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0589",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-one-arm-lateral-high-row",
+      "name": "lever one arm lateral high row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Adjust the seat height and position yourself facing the machine.",
+        "Grasp the handle with one hand and keep your back straight.",
+        "Pull the handle towards your body, keeping your elbow close to your side.",
+        "Squeeze your back muscles at the top of the movement.",
+        "Slowly release the handle back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1356",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-one-arm-lateral-wide-pulldown",
+      "name": "lever one arm lateral wide pulldown",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your chest against the pad and your feet flat on the floor.",
+        "Grasp the handle with an overhand grip and fully extend your arm, keeping a slight bend in your elbow.",
+        "Pull the handle down and across your body towards your opposite hip, squeezing your lat muscle at the bottom of the movement.",
+        "Slowly return the handle to the starting position, fully extending your arm.",
+        "Repeat for the desired number of repetitions, then switch sides."
+      ],
+      "sourceId": "1347",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-pullover",
+      "name": "lever pullover",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["triceps", "shoulders"],
+      "steps": [
+        "Adjust the seat and handles of the leverage machine to a comfortable position.",
+        "Sit on the machine with your back against the pad and grasp the handles with an overhand grip.",
+        "Keep your arms slightly bent and your core engaged.",
+        "Slowly pull the handles towards your chest, squeezing your lats.",
+        "Pause for a moment at the peak contraction, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2285",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-reverse-grip-lateral-pulldown",
+      "name": "lever reverse grip lateral pulldown",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your knees under the pads and your feet flat on the ground.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Sit upright with your chest out and shoulders back, maintaining a slight arch in your lower back.",
+        "Pull the handles down towards your chest, leading with your elbows and squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2736",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-reverse-grip-vertical-row",
+      "name": "lever reverse grip vertical row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footplate position to ensure proper alignment.",
+        "Sit on the machine with your chest against the pad and your feet flat on the footplate.",
+        "Grasp the handles with an underhand grip, palms facing up.",
+        "Keep your back straight and engage your core.",
+        "Pull the handles towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1348",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-reverse-t-bar-row",
+      "name": "lever reverse t-bar row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footplate position on the leverage machine.",
+        "Sit on the machine with your chest against the pad and your feet flat on the footplate.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your back straight and engage your core.",
+        "Pull the handles towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1349",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-seated-row",
+      "name": "lever seated row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footrests to a comfortable position.",
+        "Sit on the machine with your chest against the pad and your feet on the footrests.",
+        "Grasp the handles with an overhand grip, shoulder-width apart.",
+        "Keep your back straight and your core engaged.",
+        "Pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement.",
+        "Slowly release the handles and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1350",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-shrug",
+      "name": "lever shrug",
+      "equipment": "leverage machine",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Adjust the seat height and position yourself on the leverage machine with your back against the pad.",
+        "Grasp the handles with an overhand grip and keep your arms straight.",
+        "Keeping your back straight, lift your shoulders up towards your ears as high as possible.",
+        "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0604",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-t-bar-row",
+      "name": "lever t bar row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and footplate position to ensure proper alignment.",
+        "Sit on the machine with your chest against the pad and your feet flat on the footplate.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your back straight and engage your core.",
+        "Pull the handles towards your torso, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak contraction, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0606",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-t-bar-reverse-grip-row",
+      "name": "lever t-bar reverse grip row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your chest against the pad and your feet flat on the floor.",
+        "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
+        "Keep your back straight and engage your core.",
+        "Pull the handles towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1351",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lever-unilateral-row",
+      "name": "lever unilateral row",
+      "equipment": "leverage machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself facing the machine.",
+        "Grasp the handles with an overhand grip and keep your back straight.",
+        "Pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release and extend your arms back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1313",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "london-bridge",
+      "name": "london bridge",
+      "equipment": "rope",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "biceps", "forearms"],
+      "steps": [
+        "Attach the rope to a high anchor point.",
+        "Stand facing away from the anchor point with your feet shoulder-width apart.",
+        "Grasp the rope with an overhand grip, palms facing down.",
+        "Lean forward slightly, keeping your back straight and core engaged.",
+        "Pull the rope towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0609",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "lower-back-curl",
+      "name": "lower back curl",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Lie flat on your stomach with your legs extended and your arms by your sides.",
+        "Engage your glutes and hamstrings, and slowly lift your upper body off the ground, curling your back upwards.",
+        "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1352",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "medicine-ball-catch-and-overhead-throw",
+      "name": "medicine ball catch and overhead throw",
+      "equipment": "medicine ball",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "core"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a medicine ball in both hands at chest level.",
+        "Bend your knees slightly and engage your core.",
+        "Lower your body into a squat position, keeping your back straight and chest up.",
+        "Explosively extend your hips and legs, while simultaneously throwing the medicine ball overhead.",
+        "Release the ball at the top of the movement and catch it on the way down.",
+        "Lower your body back into the squat position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1353",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "medicine-ball-overhead-slam",
+      "name": "medicine ball overhead slam",
+      "equipment": "medicine ball",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "core"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a medicine ball with both hands above your head.",
+        "Engage your core and keep your back straight.",
+        "Bend your knees slightly and forcefully slam the medicine ball down to the ground in front of you.",
+        "As you slam the ball down, use your entire body to generate power, including your shoulders and core.",
+        "Catch the ball on the bounce and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1354",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "mixed-grip-chin-up",
+      "name": "mixed grip chin-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an underhand grip (palms facing towards you) and your hands slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your feet off the ground.",
+        "Engage your back muscles and pull your body up towards the bar, leading with your chest.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position with control.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0627",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "muscle-up",
+      "name": "muscle up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "triceps", "shoulders", "chest"],
+      "steps": [
+        "Start by hanging from a pull-up bar with your palms facing away from you and your arms fully extended.",
+        "Engage your core and pull your body up towards the bar, leading with your chest.",
+        "As you reach the top of the movement, transition your grip so that your palms are facing towards you.",
+        "Continue pulling yourself up until your chest is above the bar and your arms are fully flexed.",
+        "Reverse the movement by slowly lowering yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0631",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "muscle-up-on-vertical-bar",
+      "name": "muscle-up (on vertical bar)",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "triceps", "forearms"],
+      "steps": [
+        "Start by hanging from a vertical bar with your palms facing away from you and your arms fully extended.",
+        "Engage your core and pull your body up towards the bar, leading with your chest.",
+        "As you pull yourself up, lean back slightly and bring your elbows towards your sides.",
+        "Continue pulling until your chest reaches the bar and your elbows are fully bent.",
+        "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1401",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "one-arm-against-wall",
+      "name": "one arm against wall",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "triceps"],
+      "steps": [
+        "Stand facing a wall with your feet shoulder-width apart.",
+        "Extend one arm straight out in front of you and place your palm against the wall.",
+        "Engage your core and lean your body forward, keeping your arm straight and your back flat.",
+        "Slowly push against the wall with your palm, activating your lat muscles.",
+        "Hold the position for a few seconds, then release and repeat with the other arm."
+      ],
+      "sourceId": "1355",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "one-arm-chin-up",
+      "name": "one arm chin-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand facing a pull-up bar with your feet shoulder-width apart.",
+        "Reach up and grab the bar with an underhand grip, with one hand gripping the bar and the other hand holding your wrist for support.",
+        "Hang from the bar with your arm fully extended, keeping your body straight and your core engaged.",
+        "Pull yourself up towards the bar by bending your elbow and squeezing your back muscles.",
+        "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch arms and repeat."
+      ],
+      "sourceId": "0638",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "one-arm-towel-row",
+      "name": "one arm towel row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, knees slightly bent, and hold a towel with one hand.",
+        "Bend forward at the waist, keeping your back straight and your core engaged.",
+        "Extend your arm fully, allowing the towel to hang in front of you.",
+        "Pull the towel towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the towel back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch arms."
+      ],
+      "sourceId": "1773",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "pull-up-neutral-grip",
+      "name": "pull up (neutral grip)",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Hang from a pull-up bar with a neutral grip (palms facing each other) and your arms fully extended.",
+        "Engage your core and squeeze your shoulder blades together.",
+        "Pull your body up towards the bar by bending your elbows and driving your elbows down towards your hips.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position with control.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0651",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "pull-up",
+      "name": "pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Hang from a pull-up bar with your palms facing away from you and your arms fully extended.",
+        "Engage your core and squeeze your shoulder blades together.",
+        "Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar.",
+        "Pause at the top of the movement, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0652",
+      "artRef": "pull-up",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "rear-pull-up",
+      "name": "rear pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your back muscles and pull your body up towards the bar, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0670",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "resistance-band-seated-straight-back-row",
+      "name": "resistance band seated straight back row",
+      "equipment": "resistance band",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Sit on the floor with your legs extended and loop the resistance band around your feet.",
+        "Hold the ends of the resistance band with your hands, palms facing each other.",
+        "Keep your back straight and lean slightly back, engaging your core.",
+        "Pull the resistance band towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3144",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "reverse-grip-machine-lat-pulldown",
+      "name": "reverse grip machine lat pulldown",
+      "equipment": "leverage machine",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your knees under the pads and your feet flat on the ground.",
+        "Grasp the handles with an underhand grip, slightly wider than shoulder-width apart.",
+        "Sit upright with your chest out and shoulders back, maintaining a slight arch in your lower back.",
+        "Pull the handles down towards your chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0673",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "reverse-grip-pull-up",
+      "name": "reverse grip pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an underhand grip, hands shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your back muscles and pull your body up towards the bar, leading with your chest.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0674",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "rocky-pull-up-pulldown",
+      "name": "rocky pull-up pulldown",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand in front of a pull-up bar with your feet shoulder-width apart.",
+        "Reach up and grab the bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your back muscles and pull your body up towards the bar, leading with your chest.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0678",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "roller-back-stretch",
+      "name": "roller back stretch",
+      "equipment": "roller",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Start by sitting on the ground with your legs extended in front of you.",
+        "Place the roller perpendicular to your body, just below your glutes.",
+        "Slowly roll your body backwards, allowing the roller to move up your back.",
+        "Continue rolling until the roller reaches your upper back.",
+        "Pause for a moment, then slowly roll back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2208",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "roller-side-lat-stretch",
+      "name": "roller side lat stretch",
+      "equipment": "roller",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "triceps"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold the roller with both hands in front of your body.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Extend your arms forward and roll the roller down towards your feet, feeling a stretch in your lats.",
+        "Hold the stretch for a few seconds, then slowly roll the roller back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2207",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "rope-climb",
+      "name": "rope climb",
+      "equipment": "rope",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["forearms", "biceps", "shoulders"],
+      "steps": [
+        "Stand facing the rope with your feet shoulder-width apart.",
+        "Grab the rope with both hands, palms facing towards you.",
+        "Bend your knees slightly and engage your core.",
+        "Begin pulling yourself up the rope by alternating hand-over-hand movements.",
+        "Use your legs to assist in the upward movement.",
+        "Continue climbing until you reach the desired height or the top of the rope.",
+        "To descend, reverse the hand-over-hand movement while controlling your descent.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0680",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "scapula-dips",
+      "name": "scapula dips",
+      "equipment": "body weight",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["rhomboids", "deltoids"],
+      "steps": [
+        "Start by standing with your feet shoulder-width apart and your arms extended in front of you.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Lower your body by bending your elbows and retracting your shoulder blades, as if you are trying to squeeze a pencil between them.",
+        "Pause for a moment at the bottom, then push through your hands to extend your elbows and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3012",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "scapular-pull-up",
+      "name": "scapular pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Start by hanging from a pull-up bar with your palms facing away from you and your arms fully extended.",
+        "Retract your shoulder blades by pulling them down and back.",
+        "Engage your back muscles and pull your body up towards the bar, focusing on squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0688",
+      "artRef": "scapular-pull-up",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "seated-lower-back-stretch",
+      "name": "seated lower back stretch",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Sit on the edge of a chair with your feet flat on the ground.",
+        "Place your hands on your thighs or on the sides of the chair for support.",
+        "Slowly lean forward from your hips, keeping your back straight.",
+        "Feel the stretch in your lower back and hold for 20-30 seconds.",
+        "Slowly return to the starting position and repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0690",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "shoulder-grip-pull-up",
+      "name": "shoulder grip pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with a shoulder-width grip, palms facing away from you.",
+        "Hang freely with your arms fully extended.",
+        "Engage your back muscles and pull your body up towards the bar until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1763",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "side-lying-floor-stretch",
+      "name": "side lying floor stretch",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["obliques", "glutes"],
+      "steps": [
+        "Lie on your side with your legs straight and your bottom arm extended straight overhead.",
+        "Bend your top knee and place your foot on the ground in front of your bottom leg.",
+        "Reach your top arm over your head and grab onto something stable, like a wall or a piece of furniture.",
+        "Slowly lift your bottom leg off the ground, keeping it straight, until you feel a stretch in your side.",
+        "Hold the stretch for 20-30 seconds, then slowly lower your leg back down.",
+        "Repeat on the other side."
+      ],
+      "sourceId": "1358",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "side-to-side-chin",
+      "name": "side-to-side chin",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Grasp a pull-up bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body relaxed.",
+        "Pull yourself up by bending your elbows and bringing your chin towards the bar, while keeping your body straight.",
+        "Once your chin is above the bar, lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0720",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "skin-the-cat",
+      "name": "skin the cat",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "core"],
+      "steps": [
+        "Start by hanging from a bar with your arms fully extended and your body relaxed.",
+        "Engage your core and lift your legs up, bringing your knees towards your chest.",
+        "Continue to lift your legs up and over your head, allowing your body to pass through the arms.",
+        "Once your legs are fully extended over your head, begin to lower them back down towards the starting position.",
+        "As you lower your legs, allow your body to pass back through the arms until you are hanging with your arms fully extended again.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3304",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-back-shrug",
+      "name": "smith back shrug",
+      "equipment": "smith machine",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Grasp the barbell with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Keep your arms straight and allow the barbell to hang in front of your thighs.",
+        "Lift your shoulders straight up towards your ears, squeezing your traps at the top.",
+        "Hold for a moment, then lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0746",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-bent-over-row",
+      "name": "smith bent over row",
+      "equipment": "smith machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up the smith machine with the bar at hip height.",
+        "Stand facing the bar with your feet shoulder-width apart.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Grasp the bar with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Pull the bar towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the bar back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1359",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-narrow-row",
+      "name": "smith narrow row",
+      "equipment": "smith machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and position yourself on the machine with your feet flat on the floor.",
+        "Grasp the handles with an overhand grip, slightly narrower than shoulder-width apart.",
+        "Keep your back straight and your chest up as you pull the handles towards your body, squeezing your shoulder blades together.",
+        "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0761",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-one-arm-row",
+      "name": "smith one arm row",
+      "equipment": "smith machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Adjust the height of the smith machine bar to waist level.",
+        "Stand facing the smith machine with your feet shoulder-width apart.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Grasp the bar with one hand using an overhand grip, with your palm facing down.",
+        "Keep your elbow close to your body and pull the bar towards your waist, squeezing your shoulder blades together.",
+        "Pause for a moment at the top of the movement, then slowly lower the bar back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "1360",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-reverse-grip-bent-over-row",
+      "name": "smith reverse grip bent over row",
+      "equipment": "smith machine",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Set up the smith machine with the bar at hip height.",
+        "Stand facing the bar with your feet shoulder-width apart.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+        "Grasp the bar with an underhand grip, hands shoulder-width apart.",
+        "Pull the bar towards your lower chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower the bar back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1361",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "smith-shrug",
+      "name": "smith shrug",
+      "equipment": "smith machine",
+      "targetMuscle": "traps",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Grasp the barbell with an overhand grip, hands slightly wider than shoulder-width apart.",
+        "Keep your arms straight and your shoulders relaxed.",
+        "Lift your shoulders up towards your ears, squeezing your traps at the top.",
+        "Hold for a moment, then slowly lower your shoulders back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0767",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "sphinx",
+      "name": "sphinx",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Lie face down on the ground with your forearms flat on the floor, elbows directly under your shoulders.",
+        "Engage your core and lift your chest off the ground, keeping your forearms and toes on the floor.",
+        "Hold this position for a few seconds, making sure to keep your neck in a neutral position.",
+        "Slowly lower your chest back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1362",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "spine-stretch",
+      "name": "spine stretch",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Sit on the ground with your legs extended in front of you.",
+        "Place your hands on the ground behind you, fingers pointing towards your body.",
+        "Engage your core and slowly lean back, keeping your back straight.",
+        "Continue leaning back until you feel a stretch in your spine.",
+        "Hold the stretch for a few seconds, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1363",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "standing-archer",
+      "name": "standing archer",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders", "biceps", "forearms"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Extend your arms straight out in front of you at shoulder height, parallel to the ground.",
+        "Rotate your torso to the right, keeping your arms extended and your back straight.",
+        "As you rotate, extend your right arm forward and your left arm back, mimicking the motion of drawing a bowstring.",
+        "Hold the position for a moment, then return to the starting position.",
+        "Repeat the motion, this time rotating your torso to the left and extending your left arm forward and your right arm back.",
+        "Continue alternating sides for the desired number of repetitions."
+      ],
+      "sourceId": "3669",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "standing-lateral-stretch",
+      "name": "standing lateral stretch",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["shoulders", "obliques"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Extend your arms straight out to the sides, parallel to the ground.",
+        "Slowly lean your upper body to one side, feeling a stretch in your side and lats.",
+        "Hold the stretch for 15-30 seconds.",
+        "Return to the starting position and repeat on the other side.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0794",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "standing-pelvic-tilt",
+      "name": "standing pelvic tilt",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["abdominals"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your knees slightly bent.",
+        "Place your hands on your hips or let them hang by your sides.",
+        "Engage your core muscles and tilt your pelvis forward, pushing your lower back towards the wall behind you.",
+        "Hold the position for a few seconds, then release and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1364",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "suspended-row",
+      "name": "suspended row",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Set up a suspension trainer at an appropriate height.",
+        "Stand facing the anchor point with your feet shoulder-width apart.",
+        "Hold the handles with an overhand grip, palms facing each other.",
+        "Lean back, keeping your body straight and your heels on the ground.",
+        "Pull your chest towards the handles, squeezing your shoulder blades together.",
+        "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0808",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "twin-handle-parallel-grip-lat-pulldown",
+      "name": "twin handle parallel grip lat pulldown",
+      "equipment": "cable",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "rhomboids", "rear deltoids"],
+      "steps": [
+        "Adjust the seat height and position yourself facing the cable machine.",
+        "Grasp the handles with an overhand grip, hands shoulder-width apart.",
+        "Sit down and position your thighs under the thigh pads, keeping your feet flat on the floor.",
+        "Lean back slightly and keep your chest up, maintaining a neutral spine.",
+        "Pull the handles down towards your upper chest, squeezing your shoulder blades together.",
+        "Pause for a moment at the bottom of the movement, feeling the contraction in your lats.",
+        "Slowly release the handles and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0818",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "two-toe-touch-male",
+      "name": "two toe touch (male)",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your arms extended out to the sides.",
+        "Bend forward at the waist, keeping your back straight and your knees slightly bent.",
+        "Reach down towards your toes with both hands, keeping your legs straight.",
+        "Pause for a moment at the bottom, then slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3231",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "upper-back-stretch",
+      "name": "upper back stretch",
+      "equipment": "body weight",
+      "targetMuscle": "upper back",
+      "secondaryMuscles": ["shoulders"],
+      "steps": [
+        "Stand up straight with your feet shoulder-width apart.",
+        "Extend your arms straight in front of you, parallel to the ground.",
+        "Interlace your fingers and rotate your palms away from your body.",
+        "Slowly raise your arms overhead, keeping them straight and parallel to each other.",
+        "As you raise your arms, squeeze your shoulder blades together.",
+        "Hold the stretch for 15-30 seconds, then release and repeat."
+      ],
+      "sourceId": "1365",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "upward-facing-dog",
+      "name": "upward facing dog",
+      "equipment": "body weight",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["shoulders", "chest"],
+      "steps": [
+        "Lie face down on the floor with your legs extended behind you.",
+        "Place your hands on the floor next to your lower ribs, fingers pointing forward.",
+        "Press your hands firmly into the floor and straighten your arms, lifting your torso and thighs off the ground.",
+        "Roll your shoulders back and down, opening your chest and lifting your gaze towards the ceiling.",
+        "Hold this position for a few breaths, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1366",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-close-grip-chin-up-on-dip-cage",
+      "name": "weighted close grip chin-up on dip cage",
+      "equipment": "weighted",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Stand in front of the dip cage and grab the parallel bars with an underhand grip, hands shoulder-width apart.",
+        "Hang from the bars with your arms fully extended, feet off the ground, and body straight.",
+        "Engage your back muscles and pull your body up towards the bars, keeping your elbows close to your sides.",
+        "Continue pulling until your chin is above the bars, then pause for a moment.",
+        "Slowly lower your body back down to the starting position, fully extending your arms.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2987",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-hyperextension-on-stability-ball",
+      "name": "weighted hyperextension (on stability ball)",
+      "equipment": "weighted",
+      "targetMuscle": "spine",
+      "secondaryMuscles": ["glutes", "hamstrings"],
+      "steps": [
+        "Position yourself face down on a stability ball with your hips resting on the ball and your feet against a wall for stability.",
+        "Place your hands behind your head or cross them over your chest.",
+        "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line.",
+        "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0835",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-muscle-up",
+      "name": "weighted muscle up",
+      "equipment": "weighted",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "triceps", "shoulders", "chest"],
+      "steps": [
+        "Start by hanging from a pull-up bar with your palms facing away from you and your hands slightly wider than shoulder-width apart.",
+        "Engage your core and pull your body up towards the bar, leading with your chest.",
+        "As you reach the top of the movement, transition your grip so that your palms are facing towards you.",
+        "Continue pulling yourself up until your chest reaches the bar, then pause for a moment.",
+        "Slowly lower yourself back down to the starting position, maintaining control throughout the movement.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3286",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-muscle-up-on-bar",
+      "name": "weighted muscle up (on bar)",
+      "equipment": "weighted",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "triceps", "shoulders", "forearms"],
+      "steps": [
+        "Start by hanging from a pull-up bar with your palms facing away from you and your hands slightly wider than shoulder-width apart.",
+        "Engage your core and pull your shoulder blades down and back.",
+        "Bend your elbows and pull your chest towards the bar, keeping your body straight.",
+        "Once your chest reaches the bar, push down with your hands and drive your elbows back, lifting your body above the bar.",
+        "Pause at the top of the movement, then slowly lower yourself back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3312",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-one-hand-pull-up",
+      "name": "weighted one hand pull up",
+      "equipment": "weighted",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arm fully extended and your body straight.",
+        "Engage your core and pull your body up towards the bar by bending your elbow and squeezing your back muscles.",
+        "Continue pulling until your chin is above the bar.",
+        "Lower your body back down to the starting position with control.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3290",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "weighted-pull-up",
+      "name": "weighted pull-up",
+      "equipment": "weighted",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your back muscles and pull your body up towards the bar, keeping your elbows close to your body.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0841",
+      "artRef": "weighted-pull-up",
+      "bodyPart": "back"
+    },
+    {
+      "slug": "wide-grip-pull-up",
+      "name": "wide grip pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Hang from a pull-up bar with your palms facing away from you and your hands wider than shoulder-width apart.",
+        "Engage your core and squeeze your shoulder blades together.",
+        "Pull your body up towards the bar until your chin is above the bar.",
+        "Lower your body back down to the starting position with control.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1429",
+      "artRef": null,
+      "bodyPart": "back"
+    },
+    {
+      "slug": "wide-grip-rear-pull-up",
+      "name": "wide grip rear pull-up",
+      "equipment": "body weight",
+      "targetMuscle": "lats",
+      "secondaryMuscles": ["biceps", "forearms"],
+      "steps": [
+        "Grab the pull-up bar with a wide overhand grip, hands slightly wider than shoulder-width apart.",
+        "Hang from the bar with your arms fully extended and your body straight.",
+        "Engage your back muscles and pull your body up towards the bar, leading with your chest.",
+        "Continue pulling until your chin is above the bar.",
+        "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1367",
+      "artRef": null,
+      "bodyPart": "back"
+    }
+  ]
+}

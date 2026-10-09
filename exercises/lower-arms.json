@@ -1,0 +1,648 @@
+{
+  "bodyPart": "lower arms",
+  "count": 37,
+  "exercises": [
+    {
+      "slug": "band-reverse-wrist-curl",
+      "name": "band reverse wrist curl",
+      "equipment": "band",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["forearms"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground.",
+        "Hold the band with an overhand grip, palms facing down, and wrap it around your fingers.",
+        "Rest your forearms on your thighs, with your wrists hanging off the edge.",
+        "Slowly curl your wrists upward, squeezing your forearms.",
+        "Pause for a moment at the top, then slowly lower your wrists back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0994",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "band-wrist-curl",
+      "name": "band wrist curl",
+      "equipment": "band",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground.",
+        "Hold the band with both hands, palms facing up, and rest your forearms on your thighs.",
+        "Slowly curl your wrists upward, squeezing your forearms.",
+        "Pause for a moment at the top, then slowly lower your wrists back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1016",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-palms-down-wrist-curl-over-a-bench",
+      "name": "barbell palms down wrist curl over a bench",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and your forearms resting on your thighs, palms facing down.",
+        "Hold a barbell with an overhand grip, hands shoulder-width apart.",
+        "Lower the barbell towards the ground by flexing your wrists, keeping your forearms stationary.",
+        "Pause for a moment at the bottom, then slowly raise the barbell back up by extending your wrists.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1411",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-palms-up-wrist-curl-over-a-bench",
+      "name": "barbell palms up wrist curl over a bench",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a barbell with an underhand grip, palms facing up.",
+        "Rest your forearms on the bench, allowing your wrists to hang off the edge.",
+        "Keeping your forearms stationary, exhale and curl your wrists upwards as far as possible.",
+        "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1412",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-revers-wrist-curl-v-2",
+      "name": "barbell revers wrist curl v. 2",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and your knees bent.",
+        "Hold a barbell with an overhand grip, palms facing down, and your hands shoulder-width apart.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Keeping your forearms stationary, exhale and curl your wrists upward as far as possible.",
+        "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0079",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-reverse-wrist-curl",
+      "name": "barbell reverse wrist curl",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a barbell with an overhand grip, palms facing down.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Slowly curl your wrists upward, bringing the barbell towards your body.",
+        "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0082",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-standing-back-wrist-curl",
+      "name": "barbell standing back wrist curl",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Stand up straight with your feet shoulder-width apart and hold a barbell with an overhand grip.",
+        "Rest the barbell on the back of your hands with your palms facing down and your fingers pointing towards your body.",
+        "Keeping your upper arms stationary, exhale and curl your wrists upwards as far as possible.",
+        "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0104",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-wrist-curl",
+      "name": "barbell wrist curl",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and your forearms resting on your thighs, holding a barbell with an underhand grip.",
+        "Allow the barbell to roll down to your fingertips, keeping your wrists straight.",
+        "Slowly curl the barbell up towards your forearms by flexing your wrists.",
+        "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0126",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "barbell-wrist-curl-v-2",
+      "name": "barbell wrist curl v. 2",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and your knees bent.",
+        "Hold a barbell with an underhand grip, palms facing up, and your hands shoulder-width apart.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Slowly curl your wrists upward, bringing the barbell towards your forearms.",
+        "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0125",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "cable-reverse-wrist-curl",
+      "name": "cable reverse wrist curl",
+      "equipment": "cable",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["forearms", "wrists"],
+      "steps": [
+        "Attach a cable to a low pulley and sit on a bench facing the cable machine.",
+        "Grasp the cable handle with an overhand grip, palms facing down.",
+        "Rest your forearms on your thighs, with your wrists hanging off the edge.",
+        "Keeping your forearms stationary, exhale and curl your wrists upward as far as possible.",
+        "Pause for a moment at the top, then inhale and slowly lower your wrists back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0210",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "cable-standing-back-wrist-curl",
+      "name": "cable standing back wrist curl",
+      "equipment": "cable",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Stand facing a cable machine with your feet shoulder-width apart.",
+        "Hold the cable handle with an overhand grip, palms facing down.",
+        "Keep your arms straight and your elbows close to your sides.",
+        "Slowly curl your wrists upward, bringing the cable handle towards your body.",
+        "Pause for a moment at the top, then slowly lower the cable handle back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0224",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "cable-wrist-curl",
+      "name": "cable wrist curl",
+      "equipment": "cable",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Attach a straight bar to a low pulley cable machine.",
+        "Stand facing the machine with your feet shoulder-width apart.",
+        "Grasp the bar with an underhand grip, palms facing up, and your hands shoulder-width apart.",
+        "Rest your forearms on a bench or pad, with your wrists hanging off the edge.",
+        "Keeping your forearms stationary, exhale and curl your wrists upward as far as possible.",
+        "Pause for a moment at the top, then inhale and slowly lower the bar back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0247",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-finger-curls",
+      "name": "dumbbell finger curls",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["wrist flexors", "wrist extensors"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground and your back straight.",
+        "Hold a dumbbell in one hand with an underhand grip, resting your forearm on your thigh, palm facing up.",
+        "Allow the dumbbell to roll down to your fingertips, then curl it back up by flexing your fingers.",
+        "Repeat for the desired number of repetitions, then switch to the other hand."
+      ],
+      "sourceId": "1437",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-lying-pronation",
+      "name": "dumbbell lying pronation",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Lie flat on a bench with your chest facing down and your arms extended straight down, holding a dumbbell in each hand.",
+        "Rotate your palms so they are facing up.",
+        "Keeping your upper arms stationary, exhale and curl the dumbbells as you rotate your palms to face down.",
+        "Inhale and slowly lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0347",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-lying-pronation-on-floor",
+      "name": "dumbbell lying pronation on floor",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Lie flat on the floor with your face down and your arms extended straight out in front of you, holding a dumbbell in each hand.",
+        "Rotate your palms so they are facing down towards the floor.",
+        "Keeping your arms straight, lift the dumbbells off the floor by contracting your forearms.",
+        "Continue lifting until your forearms are fully contracted and the dumbbells are at shoulder level.",
+        "Hold for a moment, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2705",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-lying-supination",
+      "name": "dumbbell lying supination",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Lie flat on a bench with your feet flat on the ground.",
+        "Hold a dumbbell in each hand with your palms facing up and your arms fully extended.",
+        "Keeping your upper arms stationary, curl the dumbbells towards your shoulders by contracting your forearms.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0349",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-lying-supination-on-floor",
+      "name": "dumbbell lying supination on floor",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Lie flat on your back on the floor with your legs extended and your arms by your sides, holding a dumbbell in each hand.",
+        "Rotate your palms to face up, keeping your elbows close to your sides.",
+        "Slowly curl the dumbbells towards your shoulders, squeezing your forearms.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2706",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-one-arm-reverse-wrist-curl",
+      "name": "dumbbell one arm reverse wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["wrist extensors"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground.",
+        "Hold a dumbbell in one hand with an overhand grip, palm facing down.",
+        "Rest your forearm on your thigh, with your wrist hanging off the edge.",
+        "Slowly lower the dumbbell towards the ground by flexing your wrist.",
+        "Pause for a moment at the bottom, then slowly curl your wrist back up towards your body.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "0358",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-one-arm-seated-neutral-wrist-curl",
+      "name": "dumbbell one arm seated neutral wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a dumbbell in one hand, palm facing up.",
+        "Rest your forearm on your thigh, allowing your wrist to hang off the edge.",
+        "Keeping your forearm stationary, curl your wrist upward as far as possible.",
+        "Pause for a moment at the top, then slowly lower your wrist back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other hand."
+      ],
+      "sourceId": "1415",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-one-arm-wrist-curl",
+      "name": "dumbbell one arm wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground.",
+        "Hold a dumbbell in one hand with an underhand grip, resting your forearm on your thigh.",
+        "Allow your wrist to extend, letting the dumbbell roll down towards your fingers.",
+        "Slowly curl your wrist back up, bringing the dumbbell towards your forearm.",
+        "Repeat for the desired number of repetitions, then switch to the other hand."
+      ],
+      "sourceId": "0364",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-over-bench-one-arm-reverse-wrist-curl",
+      "name": "dumbbell over bench one arm reverse wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a dumbbell in one hand, palm facing down.",
+        "Rest your forearm on the bench with your wrist hanging off the edge.",
+        "Slowly curl your wrist upwards, bringing the dumbbell towards your forearm.",
+        "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "1441",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-over-bench-one-arm-wrist-curl",
+      "name": "dumbbell over bench one arm wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a dumbbell in one hand, palm facing down.",
+        "Rest your forearm on the bench with your wrist hanging off the edge.",
+        "Slowly curl your wrist upwards, bringing the dumbbell towards your forearm.",
+        "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "0367",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-over-bench-revers-wrist-curl",
+      "name": "dumbbell over bench revers wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing down.",
+        "Rest your forearms on the bench, allowing your wrists to hang off the edge.",
+        "Slowly curl your wrists upward, bringing the dumbbells towards your body.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0368",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-over-bench-wrist-curl",
+      "name": "dumbbell over bench wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench with your forearms resting on the bench and your palms facing up, holding a dumbbell in each hand.",
+        "Allow your wrists to hang over the edge of the bench.",
+        "Slowly curl your wrists upward, squeezing your forearms at the top of the movement.",
+        "Pause for a moment, then slowly lower your wrists back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0369",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-reverse-wrist-curl",
+      "name": "dumbbell reverse wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground.",
+        "Hold a dumbbell in each hand with an overhand grip, palms facing down.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Slowly curl your wrists upward, bringing the dumbbells towards your body.",
+        "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0385",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-seated-one-arm-rotate",
+      "name": "dumbbell seated one arm rotate",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["shoulders", "biceps"],
+      "steps": [
+        "Sit on a bench with your back straight and hold a dumbbell in one hand, resting it on your thigh.",
+        "Raise the dumbbell up to shoulder height, keeping your elbow close to your body.",
+        "Rotate your forearm outward, away from your body, while keeping your upper arm stationary.",
+        "Pause for a moment at the top, then slowly rotate your forearm back to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other arm."
+      ],
+      "sourceId": "0399",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "dumbbell-seated-palms-up-wrist-curl",
+      "name": "dumbbell seated palms up wrist curl",
+      "equipment": "dumbbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "shoulders"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Slowly curl your wrists upward, squeezing your forearms at the top of the movement.",
+        "Pause for a moment, then lower your wrists back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0401",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "finger-curls",
+      "name": "finger curls",
+      "equipment": "barbell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["wrist flexors", "grip muscles"],
+      "steps": [
+        "Sit on a bench with your feet flat on the ground and hold a barbell with an underhand grip, palms facing up.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+        "Slowly curl your fingers towards your palms, squeezing the barbell tightly.",
+        "Hold the contraction for a moment, then slowly release your fingers back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0455",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "kettlebell-alternating-hang-clean",
+      "name": "kettlebell alternating hang clean",
+      "equipment": "kettlebell",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["shoulders", "traps", "core"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a kettlebell in each hand with an overhand grip.",
+        "Bend your knees slightly and hinge forward at the hips, keeping your back straight and chest up.",
+        "Allow the kettlebells to hang in front of your body with your arms fully extended.",
+        "In one fluid motion, explosively extend your hips, shrug your shoulders, and pull the kettlebells up towards your shoulders.",
+        "As the kettlebells reach shoulder height, rotate your wrists and catch the kettlebells in the rack position, with your palms facing inward and the kettlebells resting on the outside of your forearms.",
+        "Lower the kettlebells back down to the starting position and repeat the movement with the opposite arm.",
+        "Continue alternating arms for the desired number of repetitions."
+      ],
+      "sourceId": "0518",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "lever-gripper-hands",
+      "name": "lever gripper hands",
+      "equipment": "leverage machine",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Adjust the seat height and grip the handles of the leverage machine.",
+        "Keep your back straight and your feet flat on the ground.",
+        "Exhale and squeeze the handles, contracting your forearms.",
+        "Hold the contraction for a second, then slowly release and return to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2288",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "modified-push-up-to-lower-arms",
+      "name": "modified push up to lower arms",
+      "equipment": "body weight",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["triceps", "chest", "shoulders"],
+      "steps": [
+        "Start in a push-up position with your hands directly under your shoulders and your body in a straight line.",
+        "Lower your body down towards the ground by bending your elbows, keeping them close to your sides.",
+        "Once your elbows are at a 90-degree angle, lower your forearms to the ground, keeping your elbows directly under your shoulders.",
+        "Pause for a moment, then push through your palms to lift your forearms back up to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1421",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "side-wrist-pull-stretch",
+      "name": "side wrist pull stretch",
+      "equipment": "body weight",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["wrists", "hands"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your arms extended in front of you.",
+        "Extend your right arm out to the side, parallel to the ground, with your palm facing down.",
+        "With your left hand, grab your right hand and gently pull it towards your body, feeling a stretch in your right forearm.",
+        "Hold the stretch for 15-30 seconds, then release.",
+        "Repeat on the other side."
+      ],
+      "sourceId": "0721",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "smith-seated-wrist-curl",
+      "name": "smith seated wrist curl",
+      "equipment": "smith machine",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "brachialis"],
+      "steps": [
+        "Sit on a bench in front of a Smith machine with your feet flat on the ground.",
+        "Grasp the barbell with an underhand grip, hands shoulder-width apart.",
+        "Rest your forearms on your thighs, allowing your wrists to hang off.",
+        "Slowly curl your wrists upward, bringing the barbell towards your forearms.",
+        "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1426",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "smith-standing-back-wrist-curl",
+      "name": "smith standing back wrist curl",
+      "equipment": "smith machine",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Stand facing the smith machine with your feet shoulder-width apart.",
+        "Grasp the barbell with an overhand grip, hands shoulder-width apart.",
+        "Keep your back straight and your elbows close to your body.",
+        "Slowly curl your wrists upwards, bringing the barbell towards your body.",
+        "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0771",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "weighted-standing-hand-squeeze",
+      "name": "weighted standing hand squeeze",
+      "equipment": "weighted",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold a weight in each hand.",
+        "Extend your arms straight in front of you, palms facing each other.",
+        "Squeeze your hands together as hard as you can, engaging your forearms.",
+        "Hold the squeeze for a few seconds, then release.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0854",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "wrist-circles",
+      "name": "wrist circles",
+      "equipment": "body weight",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["hands", "wrists"],
+      "steps": [
+        "Extend your arms straight out in front of you.",
+        "Make a fist with both hands.",
+        "Rotate your wrists in a circular motion, keeping your arms still.",
+        "Continue the wrist circles for the desired number of repetitions."
+      ],
+      "sourceId": "1428",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    },
+    {
+      "slug": "wrist-rollerer",
+      "name": "wrist rollerer",
+      "equipment": "weighted",
+      "targetMuscle": "forearms",
+      "secondaryMuscles": ["biceps", "triceps"],
+      "steps": [
+        "Attach a weight to one end of a rope or bar.",
+        "Hold the other end of the rope or bar with both hands, palms facing down.",
+        "Stand with your feet shoulder-width apart and your arms fully extended in front of you.",
+        "Slowly roll the weight up towards your hands by flexing your wrists.",
+        "Pause for a moment at the top, then slowly lower the weight back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0859",
+      "artRef": null,
+      "bodyPart": "lower arms"
+    }
+  ]
+}

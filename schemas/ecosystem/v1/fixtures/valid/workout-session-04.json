@@ -1,0 +1,62 @@
+{
+  "schema": "swal.health/v1/workout-session",
+  "id": "01J00000000000000000000010",
+  "subject": "subj_01J00000000000000000000000",
+  "createdAt": "2026-10-02T18:00:00Z",
+  "source": { "app": "training", "version": "0.1.0" },
+  "gosDataset": "1.4.0+sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "data": {
+    "startedAt": "2026-10-02T18:00:00Z",
+    "endedAt": "2026-10-02T19:00:00Z",
+    "exercises": [
+      {
+        "ref": "ex:barbell-bench-press",
+        "notes": "felt strong",
+        "topWeightKg": 62.5,
+        "sets": [
+          { "reps": 8, "weightKg": 20, "phase": "warmup" },
+          { "reps": 5, "weightKg": 60, "rir": 2 },
+          { "reps": 8, "weightKg": 60, "rpe": 8 },
+          {
+            "reps": 5,
+            "weightKg": 100,
+            "shape": "dropset",
+            "drops": [
+              { "weightKg": 80, "reps": 5 },
+              { "weightKg": 60, "reps": 5 }
+            ]
+          },
+          {
+            "reps": 12,
+            "weightKg": 60,
+            "shape": "restpause",
+            "clusters": [
+              { "reps": 6, "restSec": 15 },
+              { "reps": 3, "restSec": 15 }
+            ]
+          },
+          { "durationS": 45 },
+          { "distanceM": 5000, "durationS": 1500, "speedKph": 12 }
+        ]
+      },
+      {
+        "ref": "ex:dumbbell-single-arm-row",
+        "sets": [
+          {
+            "sides": {
+              "L": {
+                "weightKg": 40,
+                "reps": 5,
+                "rir": 2,
+                "weightOrigin": "manual"
+              },
+              "R": { "weightKg": 32, "reps": 8, "rir": 3 }
+            }
+          }
+        ]
+      }
+    ],
+    "energy": { "kcal": 310, "method": "met-estimate" },
+    "perceivedEffort": 7
+  }
+}

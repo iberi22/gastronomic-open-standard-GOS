@@ -1,0 +1,1047 @@
+{
+  "bodyPart": "lower legs",
+  "count": 59,
+  "exercises": [
+    {
+      "slug": "ankle-circles",
+      "name": "ankle circles",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankle stabilizers"],
+      "steps": [
+        "Sit on the ground with your legs extended in front of you.",
+        "Lift one leg off the ground and rotate your ankle in a circular motion.",
+        "Perform the desired number of circles in one direction, then switch to the other direction.",
+        "Repeat with the other leg."
+      ],
+      "sourceId": "1368",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "assisted-lying-calves-stretch",
+      "name": "assisted lying calves stretch",
+      "equipment": "assisted",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Lie on your back with your legs extended.",
+        "Bend one knee and place your foot flat on the ground.",
+        "Using your hands or a towel, gently pull your toes towards your body, feeling a stretch in your calf.",
+        "Hold the stretch for 20-30 seconds.",
+        "Release the stretch and repeat on the other leg."
+      ],
+      "sourceId": "1708",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "band-single-leg-calf-raise",
+      "name": "band single leg calf raise",
+      "equipment": "band",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand with your feet hip-width apart and place the band around the ball of your left foot.",
+        "Hold onto a stable object for balance if needed.",
+        "Slowly raise your left heel off the ground, lifting your body weight onto the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your left heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the right leg."
+      ],
+      "sourceId": "0999",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "band-single-leg-reverse-calf-raise",
+      "name": "band single leg reverse calf raise",
+      "equipment": "band",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet hip-width apart and place the band around the ball of your foot.",
+        "Hold onto a stable object for balance.",
+        "Slowly raise your heel off the ground, lifting your body weight onto the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other leg."
+      ],
+      "sourceId": "1000",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "band-two-legs-calf-raise-band-under-both-legs-v-2",
+      "name": "band two legs calf raise - (band under both legs) v. 2",
+      "equipment": "band",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and place a resistance band under both feet.",
+        "Hold the ends of the band with your hands for stability.",
+        "Raise your heels off the ground as high as possible, using your calves.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1369",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-floor-calf-raise",
+      "name": "barbell floor calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Place a barbell on the floor in front of you.",
+        "Stand with the balls of your feet on the edge of the barbell, with your heels hanging off.",
+        "Hold onto a stable object for balance if needed.",
+        "Raise your heels as high as possible, using your calves to lift your body.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1370",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-seated-calf-raise",
+      "name": "barbell seated calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Sit on a bench with your feet flat on the floor and a barbell resting on your thighs.",
+        "Place the balls of your feet on a raised platform, such as a block or step.",
+        "Position the barbell across your thighs and hold it securely with your hands.",
+        "Keeping your back straight and your core engaged, lift your heels off the ground by extending your ankles.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0088",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-seated-calf-raise-1371",
+      "name": "barbell seated calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Sit on a bench with your feet flat on the floor and a barbell resting on your thighs.",
+        "Place the balls of your feet on a raised platform, such as a block or step.",
+        "Lower your heels as far as possible, feeling a stretch in your calves.",
+        "Raise your heels as high as possible, contracting your calves.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1371",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-standing-calf-raise",
+      "name": "barbell standing calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and place a barbell across your upper back.",
+        "Raise your heels off the ground as high as possible, using only your toes.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1372",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-standing-leg-calf-raise",
+      "name": "barbell standing leg calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and place a barbell across your upper back.",
+        "Raise your heels off the ground as high as possible, using your calves.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0108",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "barbell-standing-rocking-leg-calf-raise",
+      "name": "barbell standing rocking leg calf raise",
+      "equipment": "barbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and hold a barbell across your upper back.",
+        "Raise your heels off the ground as high as possible, balancing on the balls of your feet.",
+        "Slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0111",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "bodyweight-standing-calf-raise",
+      "name": "bodyweight standing calf raise",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, toes pointing forward.",
+        "Place your hands on a wall or stable surface for balance.",
+        "Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1373",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "box-jump-down-with-one-leg-stabilization",
+      "name": "box jump down with one leg stabilization",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["quadriceps", "hamstrings", "glutes"],
+      "steps": [
+        "Stand in front of a box or platform with your feet shoulder-width apart.",
+        "Bend your knees and jump onto the box, landing softly with one foot on the box and the other foot hanging off the edge.",
+        "Stabilize yourself on the box with the foot that is on it, while keeping the other foot off the ground.",
+        "Hold this position for a few seconds, engaging your calf muscles to maintain balance.",
+        "Slowly step down with the foot that is on the box, returning to the starting position.",
+        "Repeat the exercise with the other leg."
+      ],
+      "sourceId": "1374",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "cable-standing-calf-raise",
+      "name": "cable standing calf raise",
+      "equipment": "cable",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand facing a cable machine with your feet shoulder-width apart.",
+        "Hold onto the cable machine handles or attach a cable ankle strap to your ankles.",
+        "Raise your heels off the ground by extending your ankles as high as possible.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1375",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "cable-standing-one-leg-calf-raise",
+      "name": "cable standing one leg calf raise",
+      "equipment": "cable",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand facing a cable machine with your feet shoulder-width apart.",
+        "Hold onto the cable machine for support.",
+        "Lift one leg off the ground and balance on the other leg.",
+        "Slowly raise your heel off the ground, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch legs."
+      ],
+      "sourceId": "1376",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "calf-push-stretch-with-hands-against-wall",
+      "name": "calf push stretch with hands against wall",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Stand facing a wall with your feet hip-width apart.",
+        "Place your hands against the wall at shoulder height.",
+        "Step back with one foot, keeping your heel on the ground and your leg straight.",
+        "Bend your front knee slightly and lean forward, feeling a stretch in your calf.",
+        "Hold the stretch for 20-30 seconds.",
+        "Switch legs and repeat the stretch."
+      ],
+      "sourceId": "1407",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "calf-stretch-with-hands-against-wall",
+      "name": "calf stretch with hands against wall",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Stand facing a wall with your feet hip-width apart.",
+        "Place your hands against the wall at shoulder height.",
+        "Step your right foot back, keeping your heel on the ground and your leg straight.",
+        "Bend your left knee and lean forward, keeping your back leg straight and your heel on the ground.",
+        "Hold the stretch for 20-30 seconds.",
+        "Switch legs and repeat the stretch."
+      ],
+      "sourceId": "1377",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "calf-stretch-with-rope",
+      "name": "calf stretch with rope",
+      "equipment": "rope",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Stand facing a wall or sturdy object with your feet hip-width apart.",
+        "Hold the ends of the rope in each hand and place the middle of the rope around the ball of your right foot.",
+        "Step back with your left foot, keeping your heel on the ground and your leg straight.",
+        "Lean forward, keeping your back straight, and gently pull on the rope to stretch your calf.",
+        "Hold the stretch for 20-30 seconds, then release.",
+        "Repeat on the other leg."
+      ],
+      "sourceId": "1378",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "circles-knee-stretch",
+      "name": "circles knee stretch",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Stand with your feet shoulder-width apart and your hands on your hips.",
+        "Bend your knees slightly and lift your heels off the ground, balancing on the balls of your feet.",
+        "Keeping your knees bent, rotate your knees in a circular motion, first clockwise and then counterclockwise.",
+        "Perform the movement for the desired number of repetitions."
+      ],
+      "sourceId": "0257",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "donkey-calf-raise",
+      "name": "donkey calf raise",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your toes on an elevated surface, such as a step or block.",
+        "Place your hands on a stable support, such as a wall or railing, for balance.",
+        "Raise your heels as high as possible, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0284",
+      "artRef": "donkey-calf-raise",
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-seated-calf-raise",
+      "name": "dumbbell seated calf raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your thighs.",
+        "Place the balls of your feet on a raised surface such as a step or block, with your heels hanging off the edge.",
+        "Hold onto the dumbbell for stability.",
+        "Raise your heels as high as possible, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1379",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-seated-one-leg-calf-raise",
+      "name": "dumbbell seated one leg calf raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your right thigh.",
+        "Extend your left leg straight out in front of you, keeping your foot flexed.",
+        "Place the ball of your right foot on an elevated surface, such as a step or weight plate.",
+        "Using your calf muscles, raise your right heel as high as possible.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch legs."
+      ],
+      "sourceId": "0400",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-seated-one-leg-calf-raise-hammer-grip",
+      "name": "dumbbell seated one leg calf raise - hammer grip",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your thighs.",
+        "Place one foot on a raised surface, such as a step or block, with your heel hanging off the edge.",
+        "Hold the dumbbell with a hammer grip, meaning your palms are facing each other and your fingers are wrapped around the handle.",
+        "Keeping your core engaged and your back straight, slowly raise your heel as high as possible by pushing through the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch to the other leg."
+      ],
+      "sourceId": "1380",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-seated-one-leg-calf-raise-palm-up",
+      "name": "dumbbell seated one leg calf raise - palm up",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Sit on a bench or chair with your back straight and your feet flat on the ground.",
+        "Hold a dumbbell in one hand and place it on top of your thigh, palm facing up.",
+        "Lift one leg off the ground and extend it in front of you, keeping your knee slightly bent.",
+        "Raise your heel as high as possible by pushing through the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your heel back down.",
+        "Repeat for the desired number of repetitions, then switch legs and repeat."
+      ],
+      "sourceId": "1381",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-single-leg-calf-raise",
+      "name": "dumbbell single leg calf raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles"],
+      "steps": [
+        "Stand on the edge of a step or platform with your heels hanging off and your toes on the step.",
+        "Hold a dumbbell in one hand and place your other hand on a wall or railing for support.",
+        "Raise your heel as high as possible, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heel back down below the step.",
+        "Repeat for the desired number of repetitions, then switch to the other leg."
+      ],
+      "sourceId": "0409",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "dumbbell-standing-calf-raise",
+      "name": "dumbbell standing calf raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+        "Raise your heels off the ground as high as possible, using your calves.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0417",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "exercise-ball-on-the-wall-calf-raise",
+      "name": "exercise ball on the wall calf raise",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Stand with your back against a wall and place an exercise ball between your lower back and the wall.",
+        "Position your feet shoulder-width apart, with your toes pointing forward.",
+        "Hold a dumbbell in each hand, with your arms extended by your sides.",
+        "Raise your heels off the ground, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1382",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "exercise-ball-on-the-wall-calf-raise-tennis-ball-between-ankles",
+      "name": "exercise ball on the wall calf raise (tennis ball between ankles)",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Stand facing a wall with your feet shoulder-width apart.",
+        "Place an exercise ball between the wall and your lower back.",
+        "Hold a dumbbell in each hand, with your arms extended by your sides.",
+        "Place a tennis ball between your ankles.",
+        "Raise your heels off the ground, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3241",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "exercise-ball-on-the-wall-calf-raise-tennis-ball-between-knees",
+      "name": "exercise ball on the wall calf raise (tennis ball between knees)",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["quadriceps", "hamstrings"],
+      "steps": [
+        "Stand with your back against a wall and place an exercise ball between your lower back and the wall.",
+        "Position your feet shoulder-width apart and slightly in front of you.",
+        "Hold a dumbbell in each hand, with your arms extended by your sides.",
+        "Place a tennis ball between your knees.",
+        "Raise your heels off the ground, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "3240",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "hack-calf-raise",
+      "name": "hack calf raise",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the sled machine to a comfortable weight.",
+        "Stand on the sled machine with your toes on the platform and your heels hanging off.",
+        "Hold onto the handles for stability.",
+        "Raise your heels as high as possible by pushing through the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1383",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "hack-one-leg-calf-raise",
+      "name": "hack one leg calf raise",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the sled machine to an appropriate weight.",
+        "Stand on the sled machine with one foot, keeping the other foot off the ground.",
+        "Hold onto the handles for stability.",
+        "Raise your heel as high as possible, lifting your body up on the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions.",
+        "Switch legs and repeat the exercise."
+      ],
+      "sourceId": "1384",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-calf-press",
+      "name": "lever calf press",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Adjust the seat of the leverage machine so that your shoulders are aligned with the lever pad.",
+        "Place your toes on the lever pad, with your heels hanging off the edge.",
+        "Grasp the handles or side supports for stability.",
+        "Push the lever pad down by extending your ankles, contracting your calf muscles.",
+        "Pause for a moment at the bottom of the movement.",
+        "Slowly return to the starting position by allowing your heels to rise back up.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2289",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-donkey-calf-raise",
+      "name": "lever donkey calf raise",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the leverage machine to the appropriate height for your body.",
+        "Position yourself facing the machine, with your toes on the foot platform and your heels hanging off the edge.",
+        "Place your hands on the handles or the support bars for stability.",
+        "Engage your calves and lift your heels as high as possible, using the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1253",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-rotary-calf",
+      "name": "lever rotary calf",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["soleus", "ankle stabilizers"],
+      "steps": [
+        "Adjust the seat height so that your knees are slightly bent and your feet are flat on the footplate.",
+        "Place your toes on the footplate, with your heels hanging off the edge.",
+        "Grasp the handles or the sides of the machine for stability.",
+        "Push through the balls of your feet, raising your heels as high as possible.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2315",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-seated-calf-press",
+      "name": "lever seated calf press",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["soleus", "hamstrings"],
+      "steps": [
+        "Adjust the seat of the machine so that your shoulders are aligned with the lever pad.",
+        "Place your toes on the lower portion of the platform and position your knees under the lever pad.",
+        "Grasp the handles on the sides of the seat for stability.",
+        "Press the lever pad down by extending your ankles, lifting your heels as high as possible.",
+        "Pause for a moment at the top of the movement, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2335",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-seated-calf-raise",
+      "name": "lever seated calf raise",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["soleus", "ankle stabilizers"],
+      "steps": [
+        "Adjust the seat height so that your knees are slightly bent and your feet are flat on the footplate.",
+        "Place your toes on the footplate with your heels hanging off the edge.",
+        "Grasp the handles or the sides of the seat for stability.",
+        "Push through the balls of your feet to raise your heels as high as possible.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0594",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-seated-squat-calf-raise-on-leg-press-machine",
+      "name": "lever seated squat calf raise on leg press machine",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["quadriceps", "hamstrings", "glutes"],
+      "steps": [
+        "Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the footplate.",
+        "Sit on the machine with your back against the backrest and your feet flat on the footplate, shoulder-width apart.",
+        "Place your toes and the balls of your feet on the footplate, keeping your heels off the edge.",
+        "Release the safety handles and push the footplate away from you by extending your knees.",
+        "Once your knees are fully extended, slowly lower your heels by flexing your calves.",
+        "Pause for a moment at the bottom, then push the footplate back up by extending your calves.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1385",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "lever-standing-calf-raise",
+      "name": "lever standing calf raise",
+      "equipment": "leverage machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["soleus", "ankle stabilizers"],
+      "steps": [
+        "Adjust the machine to your height and stand with your feet shoulder-width apart.",
+        "Place your shoulders under the pads and hold onto the handles for stability.",
+        "Raise your heels as high as possible by extending your ankles.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0605",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "one-leg-donkey-calf-raise",
+      "name": "one leg donkey calf raise",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, toes pointing forward.",
+        "Place your hands on a stable surface for support, such as a wall or a bar.",
+        "Lift one leg off the ground, keeping your knee slightly bent.",
+        "Raise your heel as high as possible, using your calf muscles.",
+        "Pause for a moment at the top, then slowly lower your heel back down.",
+        "Repeat for the desired number of repetitions, then switch legs."
+      ],
+      "sourceId": "1386",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "one-leg-floor-calf-raise",
+      "name": "one leg floor calf raise",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance.",
+        "Lift one foot off the ground and balance on the other foot.",
+        "Slowly raise your heel off the ground, lifting your body up onto the ball of your foot.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch legs and repeat."
+      ],
+      "sourceId": "1387",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "peroneals-stretch",
+      "name": "peroneals stretch",
+      "equipment": "rope",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Sit on the ground with your legs extended in front of you.",
+        "Loop the rope around the ball of your foot and hold the ends of the rope with your hands.",
+        "Gently pull the rope towards you, flexing your foot and stretching your calf muscles.",
+        "Hold the stretch for 15-30 seconds.",
+        "Release the tension on the rope and repeat the stretch on the other leg.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1388",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "posterior-tibialis-stretch",
+      "name": "posterior tibialis stretch",
+      "equipment": "rope",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Sit on the ground with your legs extended in front of you.",
+        "Loop the rope around the ball of your foot and hold the ends of the rope with your hands.",
+        "Gently pull the rope towards you, flexing your foot and stretching your calf muscles.",
+        "Hold the stretch for 20-30 seconds.",
+        "Release the tension on the rope and relax your foot.",
+        "Repeat the stretch on the other leg."
+      ],
+      "sourceId": "1389",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "seated-calf-stretch-male",
+      "name": "seated calf stretch (male)",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Sit on the edge of a chair or bench with your feet flat on the ground.",
+        "Extend one leg straight out in front of you, keeping your heel on the ground.",
+        "Lean forward slightly, feeling a stretch in your calf muscle.",
+        "Hold the stretch for 20-30 seconds.",
+        "Switch legs and repeat the stretch."
+      ],
+      "sourceId": "1390",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "single-leg-calf-raise-on-a-dumbbell",
+      "name": "single leg calf raise (on a dumbbell)",
+      "equipment": "dumbbell",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand with your feet hip-width apart and hold a dumbbell in one hand.",
+        "Lift one foot off the ground and balance on the other foot.",
+        "Slowly raise your heel as high as possible, using your calf muscles.",
+        "Pause for a moment at the top, then slowly lower your heel back down.",
+        "Repeat for the desired number of repetitions, then switch to the other leg."
+      ],
+      "sourceId": "0727",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "sled-45-calf-press",
+      "name": "sled 45° calf press",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Adjust the sled machine to a 45-degree angle.",
+        "Place your feet on the sled platform with your toes pointing forward.",
+        "Push the sled platform away from you by extending your ankles and calves.",
+        "Pause for a moment at the top, then slowly lower the sled platform back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0738",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "sled-calf-press-on-leg-press",
+      "name": "sled calf press on leg press",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "quadriceps"],
+      "steps": [
+        "Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the sled.",
+        "Place your feet shoulder-width apart on the sled, with your toes pointing forward.",
+        "Release the safety handles and push the sled away from you by extending your knees and ankles.",
+        "Pause for a moment at the top of the movement, then slowly lower the sled back down by bending your knees and ankles.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1391",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "sled-forward-angled-calf-raise",
+      "name": "sled forward angled calf raise",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the sled machine to a comfortable weight and position yourself on the machine with your toes on the platform and your heels hanging off.",
+        "Place your hands on the handles or the sides of the machine for support.",
+        "Engage your calves and slowly raise your heels as high as possible, pushing against the resistance of the sled.",
+        "Pause for a moment at the top of the movement, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0742",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "sled-lying-calf-press",
+      "name": "sled lying calf press",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the sled machine to a comfortable weight.",
+        "Sit on the sled machine with your back against the pad and your feet on the platform.",
+        "Place your toes and the balls of your feet on the edge of the platform, with your heels hanging off.",
+        "Push the platform away from you by extending your ankles, keeping your knees slightly bent.",
+        "Continue pushing until your calves are fully contracted.",
+        "Hold the contraction for a moment, then slowly lower the platform back to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "2334",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "sled-one-leg-calf-press-on-leg-press",
+      "name": "sled one leg calf press on leg press",
+      "equipment": "sled machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the sled.",
+        "Sit on the machine with your back against the backrest and your feet on the sled, shoulder-width apart.",
+        "Place your toes and the balls of your feet on the sled, keeping your heels off.",
+        "Push the sled forward by extending your ankles, keeping your knees slightly bent.",
+        "Pause for a moment at the top, then slowly lower the sled back down by flexing your ankles.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1392",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-one-leg-floor-calf-raise",
+      "name": "smith one leg floor calf raise",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Position yourself on the floor under the smith machine bar, facing away from the machine.",
+        "Place the balls of your feet on a raised surface, such as a weight plate or block.",
+        "Position the smith machine bar across your lower legs, just above your ankles.",
+        "Hold onto the bar with your hands for stability.",
+        "Raise your heels off the ground by extending your ankles, lifting your body up.",
+        "Pause at the top of the movement, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1393",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-reverse-calf-raises",
+      "name": "smith reverse calf raises",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Adjust the smith machine bar to a height just below your shoulders.",
+        "Stand facing the bar with your feet hip-width apart and toes pointing forward.",
+        "Place the balls of your feet on the edge of a step or platform, with your heels hanging off.",
+        "Hold onto the bar for support, keeping your back straight and core engaged.",
+        "Raise your heels as high as possible, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0763",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-reverse-calf-raises-1394",
+      "name": "smith reverse calf raises",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Adjust the smith machine bar to a height just below your shoulders.",
+        "Stand facing the bar with your feet hip-width apart and toes pointing forward.",
+        "Place the balls of your feet on the edge of a step or platform, with your heels hanging off.",
+        "Hold onto the bar for support.",
+        "Raise your heels as high as possible, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1394",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-seated-one-leg-calf-raise",
+      "name": "smith seated one leg calf raise",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings"],
+      "steps": [
+        "Sit on the machine with your back against the pad and your feet on the footrest.",
+        "Place one leg on the footrest and keep the other leg off the footrest.",
+        "Using your calf muscles, raise your heel as high as possible.",
+        "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+        "Repeat for the desired number of repetitions, then switch legs and repeat."
+      ],
+      "sourceId": "1395",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-standing-leg-calf-raise",
+      "name": "smith standing leg calf raise",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Adjust the smith machine bar to a height that allows you to stand with your feet flat on the ground and your shoulders under the bar.",
+        "Position yourself under the bar with your feet shoulder-width apart and your toes pointing forward.",
+        "Place your hands on the bar for stability.",
+        "Engage your calves and slowly raise your heels off the ground, lifting your body up onto your toes.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0773",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "smith-toe-raise",
+      "name": "smith toe raise",
+      "equipment": "smith machine",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "shins"],
+      "steps": [
+        "Adjust the smith machine bar to a height that allows you to comfortably stand with your feet flat on the ground.",
+        "Position yourself under the bar with your shoulders directly below it and your feet shoulder-width apart.",
+        "Place the balls of your feet on a raised platform or weight plates, with your heels hanging off the edge.",
+        "Grasp the bar with an overhand grip, slightly wider than shoulder-width apart.",
+        "Engage your core and keep your back straight throughout the exercise.",
+        "Slowly raise your heels as high as possible, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1396",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "standing-calf-raise-on-a-staircase",
+      "name": "standing calf raise (on a staircase)",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["ankles", "feet"],
+      "steps": [
+        "Stand on the edge of a step or a sturdy platform with your heels hanging off and your toes on the step.",
+        "Hold onto a railing or wall for balance if needed.",
+        "Slowly raise your heels as high as possible, lifting your body weight onto the balls of your feet.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1490",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "standing-calves",
+      "name": "standing calves",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand with your feet shoulder-width apart, toes pointing forward.",
+        "Raise your heels off the ground as high as possible, standing on your toes.",
+        "Hold the position for a moment, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "1397",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "standing-calves-calf-stretch",
+      "name": "standing calves calf stretch",
+      "equipment": "body weight",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand facing a wall or sturdy object, about an arm's length away.",
+        "Place your hands on the wall or object at shoulder height.",
+        "Step back with one foot, keeping your heel flat on the ground.",
+        "Bend your front knee slightly and lean forward, keeping your back leg straight.",
+        "You should feel a stretch in your calf muscle.",
+        "Hold the stretch for 20-30 seconds.",
+        "Repeat on the other leg."
+      ],
+      "sourceId": "1398",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    },
+    {
+      "slug": "weighted-donkey-calf-raise",
+      "name": "weighted donkey calf raise",
+      "equipment": "weighted",
+      "targetMuscle": "calves",
+      "secondaryMuscles": ["hamstrings", "glutes"],
+      "steps": [
+        "Stand on a raised platform with your toes on the edge and your heels hanging off.",
+        "Hold onto a stable object for support.",
+        "Raise your heels as high as possible by extending your ankles.",
+        "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
+        "Repeat for the desired number of repetitions."
+      ],
+      "sourceId": "0833",
+      "artRef": null,
+      "bodyPart": "lower legs"
+    }
+  ]
+}

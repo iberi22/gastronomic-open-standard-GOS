@@ -6,6 +6,8 @@
       "enum": [
         "swal.health/v1/meal-log",
         "swal.health/v1/workout-session",
+        "swal.health/v1/workout-plan",
+        "swal.health/v1/bodyweight-log",
         "swal.health/v1/dietary-profile"
       ]
     },
@@ -90,7 +92,7 @@
     },
     "exercise": {
       "type": "string",
-      "pattern": "^wg:[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+      "pattern": "^(?:wg|ex):[a-z0-9]+(?:[-_][a-z0-9]+)*$"
     },
     "source": {
       "type": "object",
@@ -158,6 +160,42 @@
         "properties": {
           "data": {
             "$ref": "dietary-profile.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/workout-plan"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "workout-plan.schema.json#/$defs/data"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema": {
+            "const": "swal.health/v1/bodyweight-log"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "$ref": "bodyweight-log.schema.json#/$defs/data"
           }
         },
         "type": "object"

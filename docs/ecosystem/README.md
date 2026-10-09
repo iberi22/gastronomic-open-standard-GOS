@@ -9,7 +9,7 @@ GOS proporciona IDs de ingredientes, platos y dietas y el dataset nutricional ve
 | Consumidor | Produce | Recibe y utiliza |
 | --- | --- | --- |
 | Fize | `meal-log` del consumo confirmado, con referencias GOS, cantidades, nutrientes y origen del pedido | `dietary-profile` autorizado para filtrar la carta según alérgenos y dietas |
-| `swal-training` | `workout-session` con ejercicios `wg:…`, series, tiempos y estimación energética | `dietary-profile` autorizado para adaptar metas nutricionales |
+| `swal-training` | `workout-session` con ejercicios `wg:…` (con arte) o `ex:…` (catálogo GOS), series, tiempos y estimación energética | `dietary-profile` autorizado para adaptar metas nutricionales |
 | OrionHealth | `dietary-profile` con restricciones, metas y caducidad, tras consentimiento explícito | Comidas, entrenamientos y perfiles; historial local y eventual mapeo FHIR |
 
 Un pedido no confirma por sí solo que alguien consumió una comida: Fize obtiene esa confirmación antes de exportar. OrionHealth también puede registrar comidas manualmente. Los ejercicios usan IDs del catálogo vendorizado `@bryllim/workout-guide@1.0.0`; los adaptadores mantienen su atribución y licencia CC BY-SA 4.0.
