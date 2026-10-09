@@ -1,12 +1,19 @@
 ---
 active_compounds:
-- benefit: Energy density and nutrient absorption.
-  name: Lipids
-  scientific_ref: General Nutrition
+  - benefit: Energy density and nutrient absorption.
+    name: Lipids
+    scientific_ref: General Nutrition
 aliases:
+  es:
+    - aceite
+    - aceite vegetal
+    - aceite de cocina
+    - aceite de oliva
+    - aceite para freir
   en:
-  - cooking oil
-  - vegetable oil
+    - cooking oil
+    - vegetable oil
+    - oil
 group: Oil
 micronutrients:
   vitamin_e_mg: 15
@@ -22,10 +29,10 @@ portions:
   default_g: 14
 scientific_name: N/A
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- grasa
-- coccion
+  - grasa
+  - coccion
 ---
 
 # Scientific Analysis & Culinary Use

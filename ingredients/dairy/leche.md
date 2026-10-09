@@ -1,11 +1,18 @@
 ---
 active_compounds:
-- benefit: Slow digesting protein.
-  name: Casein
-  scientific_ref: General Nutrition
+  - benefit: Slow digesting protein.
+    name: Casein
+    scientific_ref: General Nutrition
 aliases:
+  es:
+    - leche
+    - leche entera
+    - leche de vaca
+    - leche liquida
   en:
-  - milk
+    - milk
+    - whole milk
+    - cow milk
 group: Dairy
 micronutrients:
   calcium_mg: 113
@@ -22,11 +29,20 @@ portions:
   default_g: 244
 scientific_name: Bos taurus (secreción)
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- bebida
-- postre
-- sopa
+  - bebida
+  - postre
+  - sopa
+substitutes:
+  - name: Crema de Leche
+    similarity_score: 0.85
+    notes: >-
+      Diluida con agua emula la consistencia y grasa de la leche entera. Fuente:
+      USDA.
+  - name: Mantequilla (Sin Sal)
+    similarity_score: 0.7
+    notes: Combinada con agua aporta base grasa láctea para purés y masas.
 ---
 
 # Scientific Analysis & Culinary Use

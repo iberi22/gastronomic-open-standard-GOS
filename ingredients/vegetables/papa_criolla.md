@@ -1,40 +1,48 @@
 ---
 active_compounds:
-- benefit: Carotenoid giving yellow color, supports eye health.
-  name: Zeaxanthin
-  scientific_ref: Agrosavia
+  - benefit: 'Carotenoid giving yellow color, supports eye health.'
+    name: Zeaxanthin
+    scientific_ref: Agrosavia
 aliases:
+  es:
+    - papa criolla
+    - papa amarilla
+    - papas criollas
   en:
-  - yellow potato
-  - creole potato
+    - yellow potato
+    - creole potato
+    - yellow potatoes
 group: Vegetable
 health_registry:
-- compounds:
-  - Potassium
-  condition: Hypertension / Cardiovascular Health
-  evidence_level: High
-  mechanism: High potassium content counters sodium effects, relaxing blood vessel
-    walls.
-  studies:
-  - doi: 10.1016/j.jacc.2010.09.070
-    source: Journal of the American College of Cardiology
-    title: 'Potassium intake, stroke, and cardiovascular disease: a meta-analysis
-      of prospective trials'
-    url: https://pubmed.ncbi.nlm.nih.gov/21371638/
-    year: 2011
-- compounds:
-  - Zeaxanthin
-  - Lutein
-  condition: Macular Degeneration
-  evidence_level: High
-  mechanism: Zeaxanthin accumulates in macular pigment, filtering damaging blue light
-    wavelengths.
-  studies:
-  - doi: 10.3390/nu5041169
-    source: Nutrients
-    title: Lutein and zeaxanthin in eye health and disease
-    url: https://pubmed.ncbi.nlm.nih.gov/23571649/
-    year: 2013
+  - compounds:
+      - Potassium
+    condition: Hypertension / Cardiovascular Health
+    evidence_level: High
+    mechanism: >-
+      High potassium content counters sodium effects, relaxing blood vessel
+      walls.
+    studies:
+      - doi: 10.1016/j.jacc.2010.09.070
+        source: Journal of the American College of Cardiology
+        title: >-
+          Potassium intake, stroke, and cardiovascular disease: a meta-analysis
+          of prospective trials
+        url: 'https://pubmed.ncbi.nlm.nih.gov/21371638/'
+        year: 2011
+  - compounds:
+      - Zeaxanthin
+      - Lutein
+    condition: Macular Degeneration
+    evidence_level: High
+    mechanism: >-
+      Zeaxanthin accumulates in macular pigment, filtering damaging blue light
+      wavelengths.
+    studies:
+      - doi: 10.3390/nu5041169
+        source: Nutrients
+        title: Lutein and zeaxanthin in eye health and disease
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23571649/'
+        year: 2013
 image: ../../images/papa_criolla.jpg
 micronutrients:
   potassium_mg: 440
@@ -51,12 +59,12 @@ portions:
   default_g: 100
 scientific_name: Solanum phureja
 sources:
-- ICBF Tabla de Composición
-- Agrosavia
+  - ICBF Tabla de Composición
+  - Agrosavia
 tags:
-- ajiaco
-- frita
-- esencial
+  - ajiaco
+  - frita
+  - esencial
 ---
 
 # Scientific Analysis & Culinary Use

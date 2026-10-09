@@ -1,39 +1,47 @@
 ---
 active_compounds:
-- benefit: Pro-vitamin A, powerful antioxidant.
-  name: Beta-carotene
-  scientific_ref: NIH
+  - benefit: 'Pro-vitamin A, powerful antioxidant.'
+    name: Beta-carotene
+    scientific_ref: NIH
 aliases:
+  es:
+    - zanahoria
+    - zanahorias
+    - zanahoria rallada
+    - zanahoria picada
   en:
-  - carrot
+    - carrot
+    - carrots
 group: Vegetable
 health_registry:
-- compounds:
-  - Beta-carotene
-  - Alpha-carotene
-  condition: Nyctalopia / Night Blindness
-  evidence_level: High
-  mechanism: Beta-carotene undergoes cleavage by BCO1 enzyme into retinaldehyde, essential
-    for rhodopsin regeneration in retinal rod cells.
-  studies:
-  - doi: 10.1001/archophthalmol.2011.121
-    source: Archives of Ophthalmology
-    title: 'Vitamin A and Vision: Physiology of Rhodopsin and Photoreceptors'
-    url: https://pubmed.ncbi.nlm.nih.gov/21670335/
-    year: 2011
-- compounds:
-  - Lutein
-  - Beta-carotene
-  condition: Age-Related Macular Degeneration (AMD)
-  evidence_level: High
-  mechanism: Carotenoid accumulation in macula lutea filters high-energy blue light
-    and quenches singlet oxygen.
-  studies:
-  - doi: 10.1001/jama.2015.12891
-    source: JAMA
-    title: Dietary carotenoids and age-related macular degeneration
-    url: https://pubmed.ncbi.nlm.nih.gov/26451821/
-    year: 2015
+  - compounds:
+      - Beta-carotene
+      - Alpha-carotene
+    condition: Nyctalopia / Night Blindness
+    evidence_level: High
+    mechanism: >-
+      Beta-carotene undergoes cleavage by BCO1 enzyme into retinaldehyde,
+      essential for rhodopsin regeneration in retinal rod cells.
+    studies:
+      - doi: 10.1001/archophthalmol.2011.121
+        source: Archives of Ophthalmology
+        title: 'Vitamin A and Vision: Physiology of Rhodopsin and Photoreceptors'
+        url: 'https://pubmed.ncbi.nlm.nih.gov/21670335/'
+        year: 2011
+  - compounds:
+      - Lutein
+      - Beta-carotene
+    condition: Age-Related Macular Degeneration (AMD)
+    evidence_level: High
+    mechanism: >-
+      Carotenoid accumulation in macula lutea filters high-energy blue light and
+      quenches singlet oxygen.
+    studies:
+      - doi: 10.1001/jama.2015.12891
+        source: JAMA
+        title: Dietary carotenoids and age-related macular degeneration
+        url: 'https://pubmed.ncbi.nlm.nih.gov/26451821/'
+        year: 2015
 image: ../../images/zanahoria.jpg
 micronutrients:
   potassium_mg: 320
@@ -51,11 +59,20 @@ portions:
   default_g: 61
 scientific_name: Daucus carota
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- sopa
-- ensalada
-- vision
+  - sopa
+  - ensalada
+  - vision
+substitutes:
+  - name: Pimentón Rojo (Pimiento)
+    similarity_score: 0.75
+    notes: >-
+      Aporta dulzor natural, textura y color brillante en cocciones y guisos.
+      Fuente: USDA.
+  - name: Papa Criolla (Amarilla)
+    similarity_score: 0.7
+    notes: Aporta consistencia y color amarillo en sopas y cremas.
 ---
 
 # Scientific Analysis & Culinary Use

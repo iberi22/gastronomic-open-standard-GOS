@@ -1,33 +1,44 @@
 ---
 active_compounds:
-- benefit: Essential for brain development and liver function.
-  name: Choline
-  scientific_ref: NIH
-- benefit: Carotenoids critical for eye health (accumulate in retina).
-  name: Lutein & Zeaxanthin
-  scientific_ref: PubMed
+  - benefit: Essential for brain development and liver function.
+    name: Choline
+    scientific_ref: NIH
+  - benefit: Carotenoids critical for eye health (accumulate in retina).
+    name: Lutein & Zeaxanthin
+    scientific_ref: PubMed
 aliases:
+  es:
+    - huevo
+    - huevos
+    - huevo entero
+    - yema de huevo
+    - clara de huevo
   en:
-  - egg
+    - egg
+    - eggs
+    - whole egg
 group: Protein
 health_registry:
-- compounds:
-  - Lutein
-  - Zeaxanthin
-  condition: Eye Health (AMD)
-  evidence_level: High
-  mechanism: Macular pigment optical density improvement via Lutein/Zeaxanthin absorption.
-  studies:
-  - doi: 10.1093/ajcn/83.4.880
-    source: American Journal of Clinical Nutrition
-    title: Egg consumption and risk of age-related macular degeneration
-    year: 2006
-- compounds:
-  - Choline
-  condition: Cognitive Function
-  evidence_level: Medium
-  mechanism: Choline is a precursor to acetylcholine, a neurotransmitter for memory
-    and muscle control.
+  - compounds:
+      - Lutein
+      - Zeaxanthin
+    condition: Eye Health (AMD)
+    evidence_level: High
+    mechanism: >-
+      Macular pigment optical density improvement via Lutein/Zeaxanthin
+      absorption.
+    studies:
+      - doi: 10.1093/ajcn/83.4.880
+        source: American Journal of Clinical Nutrition
+        title: Egg consumption and risk of age-related macular degeneration
+        year: 2006
+  - compounds:
+      - Choline
+    condition: Cognitive Function
+    evidence_level: Medium
+    mechanism: >-
+      Choline is a precursor to acetylcholine, a neurotransmitter for memory and
+      muscle control.
 micronutrients:
   choline_mg: 294
   selenium_ug: 30.8
@@ -44,11 +55,20 @@ portions:
   default_g: 50
 scientific_name: Gallus gallus domesticus
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- desayuno
-- cerebro
-- vision_saludable
+  - desayuno
+  - cerebro
+  - vision_saludable
+substitutes:
+  - name: Leche Entera
+    similarity_score: 0.6
+    notes: >-
+      Proporciona humedad y proteínas en mezclas para horneados y rebozados.
+      Fuente: Serious Eats.
+  - name: Crema de Leche
+    similarity_score: 0.65
+    notes: Aporta ligazón rica en emulsiones y salsas.
 ---
 
 # Scientific Analysis & Culinary Use

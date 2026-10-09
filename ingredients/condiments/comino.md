@@ -1,38 +1,50 @@
 ---
 active_compounds:
-- benefit: Stimulates salivary glands and digestive enzymes.
-  name: Cuminaldehyde
-  scientific_ref: PubMed
+  - benefit: Stimulates salivary glands and digestive enzymes.
+    name: Cuminaldehyde
+    scientific_ref: PubMed
 aliases:
+  es:
+    - comino
+    - comino molido
+    - comino en grano
+    - comino en polvo
   en:
-  - cumin
+    - cumin
+    - ground cumin
+    - cumin seeds
 group: Condiment
 health_registry:
-- compounds:
-  - Cuminaldehyde
-  - Cyminum polyphenols
-  condition: Dyspepsia / Indigestion
-  evidence_level: High
-  mechanism: Increases activity of digestive enzymes (pancreatic lipase, amylase,
-    trypsin, chymotrypsin) and bile secretion.
-  studies:
-  - doi: 10.1016/j.nutres.2004.04.008
-    source: Nutrition Research
-    title: Cumin extract stimulates digestive enzymes and bile acid secretion in animal
-      and clinical models
-    url: https://pubmed.ncbi.nlm.nih.gov/15283686/
-    year: 2004
-- compounds:
-  - Cuminaldehyde
-  condition: Irritable Bowel Syndrome (IBS)
-  evidence_level: Medium
-  mechanism: Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic
-    effects.
-  studies:
-  - source: Middle East Journal of Digestive Diseases
-    title: Cumin extract for symptom control in patients with irritable bowel syndrome
-    url: https://pubmed.ncbi.nlm.nih.gov/24829424/
-    year: 2013
+  - compounds:
+      - Cuminaldehyde
+      - Cyminum polyphenols
+    condition: Dyspepsia / Indigestion
+    evidence_level: High
+    mechanism: >-
+      Increases activity of digestive enzymes (pancreatic lipase, amylase,
+      trypsin, chymotrypsin) and bile secretion.
+    studies:
+      - doi: 10.1016/j.nutres.2004.04.008
+        source: Nutrition Research
+        title: >-
+          Cumin extract stimulates digestive enzymes and bile acid secretion in
+          animal and clinical models
+        url: 'https://pubmed.ncbi.nlm.nih.gov/15283686/'
+        year: 2004
+  - compounds:
+      - Cuminaldehyde
+    condition: Irritable Bowel Syndrome (IBS)
+    evidence_level: Medium
+    mechanism: >-
+      Reduces abdominal pain, bloating, and stool inconsistency via spasmolytic
+      effects.
+    studies:
+      - source: Middle East Journal of Digestive Diseases
+        title: >-
+          Cumin extract for symptom control in patients with irritable bowel
+          syndrome
+        url: 'https://pubmed.ncbi.nlm.nih.gov/24829424/'
+        year: 2013
 image: ../../images/comino.jpg
 micronutrients:
   iron_mg: 66
@@ -47,10 +59,19 @@ portions:
   default_g: 2
 scientific_name: Cuminum cyminum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- sazon
-- digestion
+  - sazon
+  - digestion
+substitutes:
+  - name: Cilantro
+    similarity_score: 0.7
+    notes: >-
+      Las semillas/hojas aportan perfil aromático cálido y terroso
+      complementario.
+  - name: Cúrcuma
+    similarity_score: 0.65
+    notes: Aporta color cálido y notas especiadas terrosas en sofritos.
 ---
 
 # Scientific Analysis & Culinary Use

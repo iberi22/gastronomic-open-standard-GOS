@@ -1,9 +1,9 @@
 ---
-name: "Plátano Verde (Macho/Hartón)"
-scientific_name: "Musa paradisiaca"
-group: "Vegetable"
+name: Plátano Verde (Macho/Hartón)
+scientific_name: Musa paradisiaca
+group: Vegetable
 portions:
-  default_g: 150 # portion
+  default_g: 150
 nutrition_per_100g:
   calories: 122
   protein_g: 1.3
@@ -17,28 +17,45 @@ micronutrients:
   vitamin_b6_mg: 0.3
   magnesium_mg: 41
 active_compounds:
-  - name: "Resistant Starch (Type 2)"
-    benefit: "Acts as soluble fiber, feeding beneficial gut bacteria."
-    scientific_ref: "PubMed"
+  - name: Resistant Starch (Type 2)
+    benefit: 'Acts as soluble fiber, feeding beneficial gut bacteria.'
+    scientific_ref: PubMed
 health_registry:
-  - condition: "Digestive Health"
-    mechanism: "Prebiotic effect: increases Short-Chain Fatty Acids (Butyrate) production in colon."
-    compounds: ["Resistant Starch"]
-    evidence_level: "High"
+  - condition: Digestive Health
+    mechanism: >-
+      Prebiotic effect: increases Short-Chain Fatty Acids (Butyrate) production
+      in colon.
+    compounds:
+      - Resistant Starch
+    evidence_level: High
     studies:
-      - title: "Resistant starch from green banana: A cost-effective prebiotic"
-        source: "Journal of Applied Microbiology"
+      - title: 'Resistant starch from green banana: A cost-effective prebiotic'
+        source: Journal of Applied Microbiology
         year: 2018
-  - condition: "Glycemic Control"
-    mechanism: "Reduces postprandial glucose response and insulin sensitivity due to indigestible fraction."
-    compounds: ["Resistant Starch"]
-    evidence_level: "Medium"
+  - condition: Glycemic Control
+    mechanism: >-
+      Reduces postprandial glucose response and insulin sensitivity due to
+      indigestible fraction.
+    compounds:
+      - Resistant Starch
+    evidence_level: Medium
 sources:
-  - "USDA FoodData Central"
+  - USDA FoodData Central
 tags:
   - patacon
   - prebiotico
   - salud_intestinal
+aliases:
+  es:
+    - platano verde
+    - plátano verde
+    - platano macho
+    - platano harton
+    - patacones
+  en:
+    - green plantain
+    - raw plantain
+    - plantain
 ---
 
 # Scientific Analysis & Culinary Use

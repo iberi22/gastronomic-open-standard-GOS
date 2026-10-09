@@ -1,11 +1,19 @@
 ---
 active_compounds:
-- benefit: Generated during fermentation (depends on cheese type).
-  name: Bioactive Peptides
-  scientific_ref: Dairy Science
+  - benefit: Generated during fermentation (depends on cheese type).
+    name: Bioactive Peptides
+    scientific_ref: Dairy Science
 aliases:
+  es:
+    - queso
+    - queso campesino
+    - cuajada
+    - queso costeño
+    - queso blanco
   en:
-  - cheese
+    - cheese
+    - white cheese
+    - farmer cheese
 group: Dairy
 micronutrients:
   calcium_mg: 500
@@ -20,11 +28,11 @@ portions:
   default_g: 30
 scientific_name: N/A
 sources:
-- ICBF Tabla de Composición
+  - ICBF Tabla de Composición
 tags:
-- arepa
-- chocolate
-- acompaniamiento
+  - arepa
+  - chocolate
+  - acompaniamiento
 ---
 
 # Scientific Analysis & Culinary Use

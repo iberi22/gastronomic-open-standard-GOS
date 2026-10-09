@@ -1,40 +1,50 @@
 ---
 active_compounds:
-- benefit: Antioxidant flavonoid.
-  name: Kaempferol
-  scientific_ref: PubMed
+  - benefit: Antioxidant flavonoid.
+    name: Kaempferol
+    scientific_ref: PubMed
 aliases:
+  es:
+    - cebolla larga
+    - cebolla junca
+    - cebollin
+    - cebollín
+    - cebolla de rama
+    - cebolla verde
   en:
-  - scallion
-  - green onion
+    - scallion
+    - green onion
+    - spring onion
 group: Vegetable
 health_registry:
-- compounds:
-  - Kaempferol
-  - Fistuloside
-  condition: Oxidative Stress / Cellular Aging
-  evidence_level: High
-  mechanism: Flavonoids kaempferol and quercetin neutralize hydroxyl and peroxyl radicals,
-    downregulating lipid peroxidation.
-  studies:
-  - doi: 10.1016/j.foodchem.2012.09.112
-    source: Food Chemistry
-    title: Antioxidant and anti-inflammatory properties of Allium fistulosum L.
-    url: https://pubmed.ncbi.nlm.nih.gov/23265512/
-    year: 2013
-- compounds:
-  - Organosulfur compounds
-  - Kaempferol
-  condition: Hypertension
-  evidence_level: Medium
-  mechanism: Inhibits angiotensin-converting enzyme (ACE) activity via organosulfur
-    volatiles.
-  studies:
-  - doi: 10.1016/j.jep.2011.02.015
-    source: Journal of Ethnopharmacology
-    title: Vasodilatory effect of Welsh onion (Allium fistulosum) extract
-    url: https://pubmed.ncbi.nlm.nih.gov/21356294/
-    year: 2011
+  - compounds:
+      - Kaempferol
+      - Fistuloside
+    condition: Oxidative Stress / Cellular Aging
+    evidence_level: High
+    mechanism: >-
+      Flavonoids kaempferol and quercetin neutralize hydroxyl and peroxyl
+      radicals, downregulating lipid peroxidation.
+    studies:
+      - doi: 10.1016/j.foodchem.2012.09.112
+        source: Food Chemistry
+        title: Antioxidant and anti-inflammatory properties of Allium fistulosum L.
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23265512/'
+        year: 2013
+  - compounds:
+      - Organosulfur compounds
+      - Kaempferol
+    condition: Hypertension
+    evidence_level: Medium
+    mechanism: >-
+      Inhibits angiotensin-converting enzyme (ACE) activity via organosulfur
+      volatiles.
+    studies:
+      - doi: 10.1016/j.jep.2011.02.015
+        source: Journal of Ethnopharmacology
+        title: Vasodilatory effect of Welsh onion (Allium fistulosum) extract
+        url: 'https://pubmed.ncbi.nlm.nih.gov/21356294/'
+        year: 2011
 micronutrients:
   vitamin_c_mg: 18.8
   vitamin_k_ug: 207
@@ -49,10 +59,10 @@ portions:
   default_g: 50
 scientific_name: Allium fistulosum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- guiso
-- sopa
+  - guiso
+  - sopa
 ---
 
 # Scientific Analysis & Culinary Use

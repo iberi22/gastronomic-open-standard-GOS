@@ -1,40 +1,51 @@
 ---
 active_compounds:
-- benefit: Compounds in potato skin linked to lowering blood pressure.
-  name: Kukoamines
-  scientific_ref: PubMed
+  - benefit: Compounds in potato skin linked to lowering blood pressure.
+    name: Kukoamines
+    scientific_ref: PubMed
 aliases:
+  es:
+    - papa pastusa
+    - papa sabanera
+    - papa blanca
+    - papa
+    - papas
   en:
-  - Andean potato
-  - pastusa potato
+    - Andean potato
+    - pastusa potato
+    - potato
+    - potatoes
 group: Vegetable
 health_registry:
-- compounds:
-  - Starch
-  - Protein (Patatin)
-  condition: Satiety & Weight Management
-  evidence_level: High
-  mechanism: High Satiety Index (highest of common foods) reduces subsequent calorie
-    intake.
-  studies:
-  - source: European Journal of Clinical Nutrition
-    title: A Satiety Index of common foods
-    url: https://pubmed.ncbi.nlm.nih.gov/7498104/
-    year: 1995
-- compounds:
-  - Kukoamines
-  - Potassium
-  condition: Hypertension
-  evidence_level: Medium
-  mechanism: Kukoamines found in potato skin may inhibit ACE enzyme (similar to BP
-    meds).
-  studies:
-  - doi: 10.1021/jf051475q
-    source: Journal of Agricultural and Food Chemistry
-    title: Identification of kukoamines in Solanum tuberosum and antihypertensive
-      effect
-    url: https://pubmed.ncbi.nlm.nih.gov/16128521/
-    year: 2005
+  - compounds:
+      - Starch
+      - Protein (Patatin)
+    condition: Satiety & Weight Management
+    evidence_level: High
+    mechanism: >-
+      High Satiety Index (highest of common foods) reduces subsequent calorie
+      intake.
+    studies:
+      - source: European Journal of Clinical Nutrition
+        title: A Satiety Index of common foods
+        url: 'https://pubmed.ncbi.nlm.nih.gov/7498104/'
+        year: 1995
+  - compounds:
+      - Kukoamines
+      - Potassium
+    condition: Hypertension
+    evidence_level: Medium
+    mechanism: >-
+      Kukoamines found in potato skin may inhibit ACE enzyme (similar to BP
+      meds).
+    studies:
+      - doi: 10.1021/jf051475q
+        source: Journal of Agricultural and Food Chemistry
+        title: >-
+          Identification of kukoamines in Solanum tuberosum and antihypertensive
+          effect
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16128521/'
+        year: 2005
 image: ../../images/papa_pastusa.jpg
 micronutrients:
   magnesium_mg: 23
@@ -47,16 +58,16 @@ nutrition_per_100g:
   carbs_g: 17.5
   fat_g: 0.1
   fiber_g: 2.2
-  protein_g: 2.0
+  protein_g: 2
   sugar_g: 0.8
 portions:
   default_g: 150
 scientific_name: Solanum tuberosum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- sopa
-- salada
+  - sopa
+  - salada
 ---
 
 # Scientific Analysis & Culinary Use

@@ -1,37 +1,47 @@
 ---
 active_compounds:
-- benefit: Potent antimicrobial, lowers blood pressure, anti-inflammatory.
-  name: Allicin
-  scientific_ref: NIH - Garlic (Allium sativum L.)
+  - benefit: 'Potent antimicrobial, lowers blood pressure, anti-inflammatory.'
+    name: Allicin
+    scientific_ref: NIH - Garlic (Allium sativum L.)
 aliases:
+  es:
+    - ajo
+    - ajos
+    - diente de ajo
+    - dientes de ajo
+    - ajo picado
+    - ajo molido
+    - ajo en polvo
   en:
-  - garlic
-  - allium
+    - garlic
+    - allium
+    - clove of garlic
+    - minced garlic
 group: Condiment
 health_registry:
-- compounds:
-  - Allicin
-  - S-allylcysteine
-  condition: Hypertension
-  evidence_level: High
-  mechanism: Promotes nitric oxide synthesis leading to vasodilation.
-  studies:
-  - doi: 10.1186/1471-2261-8-13
-    source: BMC Cardiovascular Disorders
-    title: 'Garlic for hypertension: A systematic review and meta-analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/18559017/
-    year: 2008
-- compounds:
-  - Ajoene
-  - Allicin
-  condition: Hyperlipidemia
-  evidence_level: Medium
-  mechanism: Inhibits cholesterol synthesis via HMG-CoA reductase inhibition.
-  studies:
-  - source: J. R. Coll. Physicians
-    title: 'Garlic and serum lipids: A meta-analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/8374089/
-    year: 1993
+  - compounds:
+      - Allicin
+      - S-allylcysteine
+    condition: Hypertension
+    evidence_level: High
+    mechanism: Promotes nitric oxide synthesis leading to vasodilation.
+    studies:
+      - doi: 10.1186/1471-2261-8-13
+        source: BMC Cardiovascular Disorders
+        title: 'Garlic for hypertension: A systematic review and meta-analysis'
+        url: 'https://pubmed.ncbi.nlm.nih.gov/18559017/'
+        year: 2008
+  - compounds:
+      - Ajoene
+      - Allicin
+    condition: Hyperlipidemia
+    evidence_level: Medium
+    mechanism: Inhibits cholesterol synthesis via HMG-CoA reductase inhibition.
+    studies:
+      - source: J. R. Coll. Physicians
+        title: 'Garlic and serum lipids: A meta-analysis'
+        url: 'https://pubmed.ncbi.nlm.nih.gov/8374089/'
+        year: 1993
 image: ../../images/ajo.jpg
 micronutrients:
   manganese_mg: 1.67
@@ -50,12 +60,21 @@ portions:
   default_g: 3
 scientific_name: Allium sativum
 sources:
-- USDA FoodData Central
-- NIH National Center for Complementary and Integrative Health
+  - USDA FoodData Central
+  - NIH National Center for Complementary and Integrative Health
 tags:
-- esencial
-- condimento
-- medicinal
+  - esencial
+  - condimento
+  - medicinal
+substitutes:
+  - name: Cebolla Larga (Junca)
+    similarity_score: 0.6
+    notes: >-
+      Proporciona perfil aromático aliáceo fresco en ausencia de ajo. Fuente:
+      Cook's Illustrated.
+  - name: Cebolla Cabezona Blanca
+    similarity_score: 0.65
+    notes: Sustituto aromático de base para sofritos y guisos.
 ---
 
 # Scientific Analysis & Culinary Use

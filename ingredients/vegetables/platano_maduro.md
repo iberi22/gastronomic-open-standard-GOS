@@ -1,41 +1,56 @@
 ---
-name: "Plátano Maduro"
-scientific_name: "Musa paradisiaca"
-group: "Fruit"
-image: "../../images/platano_maduro.jpg"
+name: Plátano Maduro
+scientific_name: Musa paradisiaca
+group: Fruit
+image: ../../images/platano_maduro.jpg
 portions:
-  default_g: 150 # Portion
+  default_g: 150
 nutrition_per_100g:
   calories: 122
   protein_g: 1.3
   fat_g: 0.4
   carbs_g: 32
   fiber_g: 2.3
-  sugar_g: 15 # Significantly higher than green
+  sugar_g: 15
 micronutrients:
   potassium_mg: 499
   vitamin_a_iu: 1127
   vitamin_b6_mg: 0.3
 active_compounds:
-  - name: "Simple Sugars (Sucrose/Glucose)"
-    benefit: "Quick energy."
-  - name: "Carotenoids"
-    benefit: "Antioxidant (increases with ripening)."
+  - name: Simple Sugars (Sucrose/Glucose)
+    benefit: Quick energy.
+  - name: Carotenoids
+    benefit: Antioxidant (increases with ripening).
 health_registry:
-  - condition: "Energy Boost"
-    mechanism: "As the plantain ripens, resistant starch converts to simple sugars, providing immediate energy."
-    compounds: ["Glucose", "Fructose"]
-    evidence_level: "High"
-  - condition: "Mood Regulation"
-    mechanism: "Vitamin B6 is a cofactor for serotonin and dopamine synthesis."
-    compounds: ["Vitamin B6"]
-    evidence_level: "Medium"
+  - condition: Energy Boost
+    mechanism: >-
+      As the plantain ripens, resistant starch converts to simple sugars,
+      providing immediate energy.
+    compounds:
+      - Glucose
+      - Fructose
+    evidence_level: High
+  - condition: Mood Regulation
+    mechanism: Vitamin B6 is a cofactor for serotonin and dopamine synthesis.
+    compounds:
+      - Vitamin B6
+    evidence_level: Medium
 sources:
-  - "USDA FoodData Central"
+  - USDA FoodData Central
 tags:
   - tajadas
   - dulce
   - aborrajado
+aliases:
+  es:
+    - platano maduro
+    - plátano maduro
+    - platano amarillo
+    - tajadas de platano
+  en:
+    - ripe plantain
+    - sweet plantain
+    - yellow plantain
 ---
 
 # Scientific Analysis & Culinary Use

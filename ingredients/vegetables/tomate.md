@@ -1,39 +1,54 @@
 ---
 active_compounds:
-- benefit: Carotenoid pigment, potent antioxidant.
-  name: Lycopene
-  scientific_ref: NIH
+  - benefit: 'Carotenoid pigment, potent antioxidant.'
+    name: Lycopene
+    scientific_ref: NIH
 aliases:
+  es:
+    - tomate
+    - tomates
+    - tomate chonto
+    - tomate rojo
+    - tomate maduro
+    - tomate picado
+    - jitomate
   en:
-  - tomato
+    - tomato
+    - tomatoes
+    - red tomato
 group: Vegetable
 health_registry:
-- compounds:
-  - Lycopene
-  condition: Prostate Cancer / Prostate Health
-  evidence_level: High
-  mechanism: Lycopene concentrates in prostatic tissue and scavenges reactive oxygen
-    species, downregulating androgen receptor expression.
-  studies:
-  - doi: 10.1097/MD.0000000000001351
-    source: Medicine (Baltimore)
-    title: 'Lycopene/tomato consumption and the risk of prostate cancer: a systematic
-      review and meta-analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/26222459/
-    year: 2015
-- compounds:
-  - Lycopene
-  - Beta-carotene
-  condition: Atherosclerosis / Endothelial Dysfunction
-  evidence_level: High
-  mechanism: Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion molecules.
-  studies:
-  - doi: 10.1016/j.atherosclerosis.2017.03.004
-    source: Atherosclerosis
-    title: 'Tomato and lycopene supplementation and cardiovascular risk factors: A
-      systematic review and meta-analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/28351743/
-    year: 2017
+  - compounds:
+      - Lycopene
+    condition: Prostate Cancer / Prostate Health
+    evidence_level: High
+    mechanism: >-
+      Lycopene concentrates in prostatic tissue and scavenges reactive oxygen
+      species, downregulating androgen receptor expression.
+    studies:
+      - doi: 10.1097/MD.0000000000001351
+        source: Medicine (Baltimore)
+        title: >-
+          Lycopene/tomato consumption and the risk of prostate cancer: a
+          systematic review and meta-analysis
+        url: 'https://pubmed.ncbi.nlm.nih.gov/26222459/'
+        year: 2015
+  - compounds:
+      - Lycopene
+      - Beta-carotene
+    condition: Atherosclerosis / Endothelial Dysfunction
+    evidence_level: High
+    mechanism: >-
+      Inhibits LDL oxidation and reduces plasma ICAM-1 vascular adhesion
+      molecules.
+    studies:
+      - doi: 10.1016/j.atherosclerosis.2017.03.004
+        source: Atherosclerosis
+        title: >-
+          Tomato and lycopene supplementation and cardiovascular risk factors: A
+          systematic review and meta-analysis
+        url: 'https://pubmed.ncbi.nlm.nih.gov/28351743/'
+        year: 2017
 image: ../../images/tomate.jpg
 micronutrients:
   potassium_mg: 237
@@ -51,11 +66,20 @@ portions:
   default_g: 120
 scientific_name: Solanum lycopersicum
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- guiso
-- licopeno
-- salud_prostata
+  - guiso
+  - licopeno
+  - salud_prostata
+substitutes:
+  - name: Pimentón Rojo (Pimiento)
+    similarity_score: 0.65
+    notes: >-
+      Aporta color, dulzor y acidez suave en sofritos y guisos. Fuente: USDA /
+      Cook's Illustrated.
+  - name: Hogao (Guiso Criollo)
+    similarity_score: 0.85
+    notes: Base sazonada con alta concentración de tomate cocido y cebolla.
 ---
 
 # Scientific Analysis & Culinary Use

@@ -1,46 +1,60 @@
 ---
 active_compounds:
-- benefit: Antioxidant found in the red skin.
-  name: Anthocyanins
-  scientific_ref: PubMed
+  - benefit: Antioxidant found in the red skin.
+    name: Anthocyanins
+    scientific_ref: PubMed
 aliases:
+  es:
+    - frijol
+    - fríjol
+    - frijoles
+    - frijol cargamanto
+    - frijol bola roja
+    - caraota
   en:
-  - common bean
-  - kidney bean
+    - common bean
+    - kidney bean
+    - beans
+    - red beans
 group: Legume
 health_registry:
-- compounds:
-  - Soluble Fiber
-  - Resistant Starch
-  - Alpha-amylase inhibitors
-  condition: Type 2 Diabetes
-  evidence_level: High
-  mechanism: High fiber and resistant starch lower glycemic response and improve insulin
-    sensitivity.
-  studies:
-  - doi: 10.1017/s1368980009990273
-    source: Public Health Nutrition
-    title: 'Legume consumption and risk of coronary heart disease and stroke: a meta-analysis'
-    url: https://pubmed.ncbi.nlm.nih.gov/19712523/
-    year: 2009
-  - source: Nutrition Reviews
-    title: Glycemic response to beans
-    url: https://pubmed.ncbi.nlm.nih.gov/25227183/
-    year: 2014
-- compounds:
-  - Resistant Starch
-  - Oligosaccharides
-  condition: Gut Health
-  evidence_level: Medium
-  mechanism: Prebiotic fermentation produces Short-Chain Fatty Acids (SCFAs) like
-    butyrate.
-  studies:
-  - doi: 10.3389/fnut.2019.00145
-    source: Frontiers in Nutrition
-    title: Fermentation of resistant starch and gut microbiota short-chain fatty acid
-      production
-    url: https://pubmed.ncbi.nlm.nih.gov/31572733/
-    year: 2019
+  - compounds:
+      - Soluble Fiber
+      - Resistant Starch
+      - Alpha-amylase inhibitors
+    condition: Type 2 Diabetes
+    evidence_level: High
+    mechanism: >-
+      High fiber and resistant starch lower glycemic response and improve
+      insulin sensitivity.
+    studies:
+      - doi: 10.1017/s1368980009990273
+        source: Public Health Nutrition
+        title: >-
+          Legume consumption and risk of coronary heart disease and stroke: a
+          meta-analysis
+        url: 'https://pubmed.ncbi.nlm.nih.gov/19712523/'
+        year: 2009
+      - source: Nutrition Reviews
+        title: Glycemic response to beans
+        url: 'https://pubmed.ncbi.nlm.nih.gov/25227183/'
+        year: 2014
+  - compounds:
+      - Resistant Starch
+      - Oligosaccharides
+    condition: Gut Health
+    evidence_level: Medium
+    mechanism: >-
+      Prebiotic fermentation produces Short-Chain Fatty Acids (SCFAs) like
+      butyrate.
+    studies:
+      - doi: 10.3389/fnut.2019.00145
+        source: Frontiers in Nutrition
+        title: >-
+          Fermentation of resistant starch and gut microbiota short-chain fatty
+          acid production
+        url: 'https://pubmed.ncbi.nlm.nih.gov/31572733/'
+        year: 2019
 image: ../../images/frijol.jpg
 micronutrients:
   folate_ug: 394
@@ -59,11 +73,11 @@ portions:
   default_g: 100
 scientific_name: Phaseolus vulgaris
 sources:
-- USDA FoodData Central
+  - USDA FoodData Central
 tags:
-- bandeja_paisa
-- fibra
-- diabetes_friendly
+  - bandeja_paisa
+  - fibra
+  - diabetes_friendly
 ---
 
 # Scientific Analysis & Culinary Use
