@@ -2,8 +2,8 @@
 
 An open knowledge graph of world gastronomy: **recipes ↔ ingredients ↔ vitamins ↔
 bioactive substances ↔ flavors ↔ techniques ↔ health conditions ↔ diets ↔ regions**.
-The repo `.md` files ARE the database (405 dishes, 552 ingredients, 40 vitamins,
-35 conditions, 30 substances, 6 diets). Built with Astro 7 + Svelte 5 + Tailwind v4.
+The repo `.md` files ARE the database (495 dishes, 552 ingredients, 40 vitamins,
+35 conditions, 30 substances, 6 diets) as verified by `python3 docs/corpus-stats.py` in `docs/stats.json`. Built with Astro 7 + Svelte 5 + Tailwind v4.
 
 Live: **https://gos.swal.network** (Cloudflare Pages, single canonical deploy)
 
@@ -42,7 +42,7 @@ Full reference: [API_README.md](./API_README.md). Paid keyed tier: issue #237.
 
 ## Vectors & embeddings (bulk download, live)
 
-Versioned snapshot over live collections (552 ingredients, 405 dishes,
+Versioned snapshot over live collections (552 ingredients, 495 dishes,
 30 substances), regenerated each build by `site/scripts/export-vectors.mjs`:
 
 - Manifest: `https://gos.swal.network/api/vectors/index.json`

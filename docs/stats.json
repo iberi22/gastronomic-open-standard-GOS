@@ -1,0 +1,18 @@
+{
+  "source": "site/src/content",
+  "counts": {
+    "conditions": 35,
+    "diets": 6,
+    "dishes": 495,
+    "ingredients": 552,
+    "mixtures": 45,
+    "substances": 30,
+    "tips": 18,
+    "vitamins": 40
+  },
+  "root_mirror": {
+    "dishes_md": 613,
+    "dishes_recetas_index": 6,
+    "ingredients_md": 555
+  }
+}
