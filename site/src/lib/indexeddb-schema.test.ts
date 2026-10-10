@@ -232,6 +232,68 @@ describe('Contrato del esquema de IndexedDB (IndexedDB real vía fake-indexeddb)
   })
 })
 
+// ---------------------------------------------------------------------------
+// Contrato de dos pestañas (informe docs/audit/ROBUSTEZ-AGENTE-PWA.md §1.4)
+//
+// Las cinco rutas del adaptador (create/list/get/update/del) hacen
+// `await openDB()` y ninguna cerraba la conexión: cada operación abría una
+// nueva y la filtraba. Con otra pestaña pidiendo una subida de versión, el
+// evento `versionchange` llega a esas conexiones y nadie las cierra, así que
+// la subida queda bloqueada para siempre. No es un error: es un cuelgue, y la
+// segunda pestaña se queda en spinner sin decir nada.
+//
+// Estos tests miden el contrato al revés de como lo medía la auditoría: aquí
+// la pestaña nueva TIENE que llegar a abrir.
+// ---------------------------------------------------------------------------
+
+describe('Dos pestañas: las conexiones de este módulo no bloquean a los demás', () => {
+  beforeEach(() => {
+    globalThis.indexedDB = new IDBFactory()
+  })
+
+  /** Abre 'gos-domain' en `version` sin crear stores, como haría otra pestaña. */
+  function otraPestanaSube(version: number): Promise<string> {
+    return new Promise((resolve) => {
+      const req = indexedDB.open(DB_NAME, version)
+      req.onupgradeneeded = () => {
+        // Sin stores: solo importa subir la versión.
+      }
+      req.onsuccess = () => {
+        req.result.close()
+        resolve('onsuccess')
+      }
+      req.onerror = () => resolve(`onerror:${req.error?.name}`)
+      req.onblocked = () => resolve('onblocked')
+      setTimeout(() => resolve('PENDIENTE-SIN-RESOLVER'), 1000)
+    })
+  }
+
+  it('la conexión que abre el vault se cierra y deja subir a la otra pestaña', async () => {
+    const adapter = new IndexedDBStorageAdapter()
+    await vaultCreate(adapter, VAULT_INSTANCE, VALID_RECIPE)
+
+    // Sin cerrar, la subida de versión de la otra pestaña se bloquea.
+    expect(await otraPestanaSube(DB_VERSION + 2)).toBe('onsuccess')
+  })
+
+  it('después de que otra pestaña suba la versión, el vault sigue funcionando', async () => {
+    const adapter = new IndexedDBStorageAdapter()
+    await vaultCreate(adapter, VAULT_INSTANCE, VALID_RECIPE)
+    expect(await otraPestanaSube(DB_VERSION + 1)).toBe('onsuccess')
+
+    // La base está ahora en v2. Abrir pidiendo DB_VERSION da VersionError y
+    // openDB() debe subir, no quedarse colgado ni fallar.
+    await expect(vaultList(adapter, VAULT_INSTANCE)).resolves.toHaveLength(1)
+    const updated = await vaultUpdate(
+      adapter,
+      VAULT_INSTANCE,
+      (await vaultList(adapter, VAULT_INSTANCE))[0].id,
+      VALID_RECIPE,
+    )
+    expect(updated.ok).toBe(true)
+  })
+})
+
 describe('Regresión singular/plural: el nombre que pide el código es el que existe', () => {
   beforeEach(() => {
     globalThis.indexedDB = new IDBFactory()
