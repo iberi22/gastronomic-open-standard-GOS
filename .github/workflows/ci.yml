@@ -93,17 +93,35 @@ jobs:
   # Gate de evidencia: cada DOI debe CORRESPONDER al articulo que el archivo
   # declara, no solo resolver. Se hallaron 22 DOI que resolvian a otro articulo
   # del mismo numero por coincidencia de revista+anio. Falla mientras queden.
+  #
+  # El job lleva los dos controles que le faltaban: sin control negativo un
+  # gate nunca visto fallar es decorado. verify-dois.py commiteado una vez con
+  # norm() roto (N-01) y nadie lo noto hasta la auditoria.
+  #   1. --self-test           offline: norm(), coincide() y exit codes con fixtures
+  #   2. --negative-control    con Crossref real: DOI falseado -> rc 1
   verify-dois:
     name: evidence (DOI corresponde al artículo)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: 22
-      - name: Verificar DOI contra Crossref
+          python-version: '3.12'
+      - name: Instalar PyYAML (sin ella el gate no puede leer el frontmatter)
+        run: python3 -m pip install --quiet pyyaml
+      - name: Control negativo offline (norm, coincide, exit codes)
         working-directory: site
-        run: python3 scripts/verify-dois.py
+        run: python3 scripts/verify-dois.py --self-test
+      - name: Verificar DOI contra Crossref (control positivo)
+        working-directory: site
+        run: |
+          python3 scripts/verify-dois.py | tee /tmp/dois.txt
+          # Un DOI publicado debe seguir saliendo OK: si esto falta, el gate
+          # rompe TODO y deja de distinguir un DOI bueno de uno falso.
+          grep -E '^OK[[:space:]].*quercetina\.md' /tmp/dois.txt
+      - name: Control negativo end-to-end (DOI falseado -> rc 1)
+        working-directory: site
+        run: python3 scripts/verify-dois.py --negative-control
 
   # Gate de evidencia: todo evidence_level debe ser High, Medium o Low.
   # Antes de este gate, 43 de 175 estaban fuera de rango (texto libre en
