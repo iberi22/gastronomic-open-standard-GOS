@@ -94,7 +94,7 @@ describe('AUDIT A · el peaje por tier se puede falsear desde el body', () => {
 // B) offline-seed: store equivocado en isSeeded() + módulo muerto.
 // ---------------------------------------------------------------------------
 
-describe('AUDIT B · isSeeded() consulta un store que no existe', () => {
+describe('AUDIT B · isSeeded() verifica el store recipes', () => {
   it("'recipe' no está en STORES: la consulta SIEMPRE lanza NotFoundError", async () => {
     // STORES real, leído de la fuente para que el test no dependa de mi memoria.
     const src = await import('node:fs').then((fs) =>
@@ -125,7 +125,7 @@ describe('AUDIT B · isSeeded() consulta un store que no existe', () => {
         r.onsuccess = () => res(r.result)
         r.onerror = () => rej(r.error)
       })
-      // Esto es EXACTAMENTE lo que hace isSeeded() -> adapter.list('recipe', ...)
+      // Esto es lo que hacía isSeeded() -> adapter.list('recipe', ...)
       let thrown: string | null = null
       try {
         db.transaction('recipe' as never, 'readonly')
@@ -142,13 +142,13 @@ describe('AUDIT B · isSeeded() consulta un store que no existe', () => {
     }
   })
 
-  it('isSeeded() devuelve false aunque la base esté llena (el catch lo traga)', async () => {
+  it('isSeeded() es un contrato con el store gos-domain y la colección recipes', async () => {
     const f = new IDBFactory()
     const prev = globalThis.indexedDB
     globalThis.indexedDB = f
     try {
       const db = await new Promise<IDBDatabase>((res, rej) => {
-        const r = f.open('audit-b2', 1)
+        const r = f.open('gos-domain', 1)
         r.onupgradeneeded = () =>
           r.result.createObjectStore('recipes', { keyPath: 'id' })
         r.onsuccess = () => res(r.result)
@@ -164,8 +164,7 @@ describe('AUDIT B · isSeeded() consulta un store que no existe', () => {
       db.close()
 
       const { isSeeded } = await import('./offline-seed')
-      // Retorna false: el error NotFoundError lo captura el try/catch vacío.
-      expect(await isSeeded()).toBe(false)
+      expect(await isSeeded()).toBe(true)
     } finally {
       globalThis.indexedDB = prev
     }
