@@ -110,4 +110,25 @@ describe('workers/ai.ts billing', () => {
     const res = await worker.fetch(req, env)
     expect(res.status).toBe(400)
   })
+
+  it('no llama a SWAL_KV para get o put', async () => {
+    const { env } = mockEnv()
+    env.SWAL_KV.get = vi.fn()
+    env.SWAL_KV.put = vi.fn()
+
+    const req = new Request('http://localhost/api/ai/infer', {
+      method: 'POST',
+      body: JSON.stringify({
+        prompt: 'hola',
+        tierId: 'socio',
+        appId: 'my-app',
+      }),
+      headers: { 'Content-Type': 'application/json' },
+    })
+
+    const res = await worker.fetch(req, env)
+    expect(res.status).toBe(200)
+    expect(env.SWAL_KV.get).not.toHaveBeenCalled()
+    expect(env.SWAL_KV.put).not.toHaveBeenCalled()
+  })
 })
