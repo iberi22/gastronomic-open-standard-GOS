@@ -89,6 +89,14 @@ class FakeDb {
   objectStoreNames = {
     contains: (n: string) => (REAL_STORES as readonly string[]).includes(n),
   } as unknown as { contains: (n: string) => boolean }
+  // Contrato real de IDBDatabase: el adaptador cierra la conexion que abre (y
+  // la cerraria antes si otra pestana pidiera subir la version). Sin close()
+  // el doble reventaba con "db.close is not a function".
+  onversionchange: (() => void) | null = null
+  closeCount = 0
+  close() {
+    this.closeCount += 1
+  }
   transaction(name: string) {
     if (!this.objectStoreNames.contains(name)) {
       const err = new Error(
@@ -107,9 +115,11 @@ class FakeDb {
 }
 
 let netCalls: string[]
+let fakeDb: FakeDb
 
 function installFakeIDB(): void {
   const db = new FakeDb()
+  fakeDb = db
   vi.stubGlobal('indexedDB', {
     open: () => {
       const q = new FakeReq<FakeDb>()
@@ -157,6 +167,18 @@ describe('RecipeVault store — 100% offline (red trampeada)', () => {
     installFakeIDB()
     trapNetwork()
     adapter = new IndexedDBStorageAdapter()
+  })
+
+  it('no deja conexiones de IndexedDB abiertas', async () => {
+    // Cada ruta del adaptador hace `await openDB()`. Si no cierra, cada
+    // operacion deja una conexion abierta: otra pestana que pida subir la
+    // version se queda bloqueada para siempre (ROBUSTEZ §1.4).
+    const id = (await vaultCreate(adapter, VAULT_INSTANCE, VALID)).records?.[0]
+      .id as string
+    await vaultList(adapter, VAULT_INSTANCE)
+    await vaultUpdate(adapter, VAULT_INSTANCE, id, VALID)
+    await vaultDelete(adapter, VAULT_INSTANCE, id)
+    expect(fakeDb.closeCount).toBe(4)
   })
 
   // Guard de singular/plural. El fake IndexedDB lanza NotFoundError ante un
