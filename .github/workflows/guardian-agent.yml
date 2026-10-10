@@ -61,14 +61,33 @@ jobs:
 
       - name: 🔢 Resolve PR Number
         id: pr
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER_INPUT: ${{ inputs.pr_number }}
+          HEAD_BRANCH: ${{ github.event.check_suite.head_branch }}
+          PR_FROM_REVIEW: ${{ github.event.pull_request.number }}
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "number=${{ inputs.pr_number }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" == "check_suite" ]; then
-            PR=$(gh pr list --head "${{ github.event.check_suite.head_branch }}" --json number --jq '.[0].number')
-            echo "number=$PR" >> $GITHUB_OUTPUT
+          if [ "$EVENT_NAME" == "workflow_dispatch" ]; then
+            case "$PR_NUMBER_INPUT" in
+              ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *) echo "number=$PR_NUMBER_INPUT" >> $GITHUB_OUTPUT ;;
+            esac
+          elif [ "$EVENT_NAME" == "check_suite" ]; then
+            case "$HEAD_BRANCH" in
+              ''|*[!A-Za-z0-9._/-]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *)
+                PR=$(gh pr list --head "$HEAD_BRANCH" --json number --jq '.[0].number')
+                case "$PR" in
+                  ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+                  *) echo "number=$PR" >> $GITHUB_OUTPUT ;;
+                esac
+                ;;
+            esac
           else
-            echo "number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+            case "$PR_FROM_REVIEW" in
+              ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *) echo "number=$PR_FROM_REVIEW" >> $GITHUB_OUTPUT ;;
+            esac
           fi
 
       - name: 🛡️ Run Guardian Core (PowerShell)
@@ -76,13 +95,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
         shell: pwsh
         run: |
           # Check if PowerShell script exists
           if (Test-Path "./scripts/guardian-core.ps1") {
             Write-Host "✅ Running Guardian Agent (PowerShell)"
             ./scripts/guardian-core.ps1 `
-              -PrNumber ${{ steps.pr.outputs.number }} `
+              -PrNumber $env:PR_NUMBER `
               -CiMode `
               -DryRun:$false
           } else {
