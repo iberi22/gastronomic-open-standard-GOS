@@ -115,7 +115,14 @@ jobs:
       - name: Verificar DOI contra Crossref (control positivo)
         working-directory: site
         run: |
+          # `bash -e` sin pipefail: `tee` sale 0 aunque el verificador falle, asi
+          # que el estado hay que guardarlo con PIPESTATUS. Sin esto el paso
+          # podia salir verde con el gate roto (MISMATCH + rc 1 = step verde).
+          set +e
           python3 scripts/verify-dois.py | tee /tmp/dois.txt
+          status=${PIPESTATUS[0]}
+          set -e
+          test "$status" -eq 0
           # Un DOI publicado debe seguir saliendo OK: si esto falta, el gate
           # rompe TODO y deja de distinguir un DOI bueno de uno falso.
           grep -E '^OK[[:space:]].*quercetina\.md' /tmp/dois.txt

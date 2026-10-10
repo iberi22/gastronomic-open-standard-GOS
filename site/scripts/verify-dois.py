@@ -332,6 +332,25 @@ def fallos_exit_codes() -> list:
         if rc_de(sucio) == 0:
             malos.append("con un DOI falseado el gate devolvio rc=0: no muerde")
 
+        # Aislamiento: un directorio que SOLO tiene el DOI sin titulo. Con la
+        # fixture mixta de arriba, quitar SIN_TITULO de ESTADOS_DE_FALLO sigue
+        # dando rc 1 (muerde el MISMATCH), asi que la regresion pasaba
+        # desapercibida. Aqui no hay nada mas que la esconda.
+        solo_sin_titulo = base / "solo-sin-titulo"
+        solo_sin_titulo.mkdir()
+        escribir_fixture(solo_sin_titulo / "sin-titulo.md", *FIXTURAS["sin-titulo.md"])
+        aislado = verificar(solo_sin_titulo, crossref_fn=CROSSREF_STUB.get, pausa=0)
+        if estado_de(aislado).get("SIN_TITULO", 0) != 1:
+            malos.append(
+                "un directorio con solo el DOI sin titulo no dio 1 SIN_TITULO: "
+                f"{dict(estado_de(aislado))}"
+            )
+        if rc_de(aislado) != 1:
+            malos.append(
+                "un directorio con solo el DOI sin titulo dio rc="
+                f"{rc_de(aislado)}: SIN_TITULO no rompe el gate por si solo"
+            )
+
         (base / "mismatch.md").unlink()
         (base / "sin-titulo.md").unlink()
         limpio = verificar(base, crossref_fn=CROSSREF_STUB.get, pausa=0)
