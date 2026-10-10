@@ -1,58 +1,124 @@
-# Dependabot configuration for Git-Core Protocol
-# Integrated with Context Research Agent for intelligent adoption
-
+# Grouped monthly Dependabot configuration (SWAL wave pi-1, S7).
+# One pull request per ecosystem per month instead of one PR per bump.
 version: 2
 updates:
-  # Rust dependencies
-  - package-ecosystem: "cargo"
-    directory: "/"
-    schedule:
-      interval: "daily"
-      time: "06:00"
-      timezone: "Etc/UTC"
-    open-pull-requests-limit: 10
-    labels:
-      - "dependencies"
-      - "quarantine"  # All new deps go to quarantine first
-    commit-message:
-      prefix: "chore(deps)"
-    # Group minor/patch updates to reduce noise
-    groups:
-      rust-minor:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
-
-  # Node.js dependencies
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
-      time: "06:00"
-      timezone: "Etc/UTC"
-    open-pull-requests-limit: 10
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
     labels:
       - "dependencies"
-      - "quarantine"
-    commit-message:
-      prefix: "chore(deps)"
     groups:
-      npm-minor:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
-
-  # GitHub Actions
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
+  - package-ecosystem: "npm"
+    directory: "/packages/gos-client"
+    schedule:
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+    groups:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
+  - package-ecosystem: "npm"
+    directory: "/packages/health-contract"
+    schedule:
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+    groups:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
+  - package-ecosystem: "npm"
+    directory: "/site"
+    schedule:
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+    groups:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
+  - package-ecosystem: "npm"
+    directory: "/worker"
+    schedule:
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+    groups:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    # One grouped PR per ecosystem instead of one per bump.
+    open-pull-requests-limit: 2
     labels:
       - "dependencies"
-      - "ci"
-    commit-message:
-      prefix: "ci(deps)"
+    groups:
+      # Version updates: everything into a single PR.
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # Security updates keep their own single PR so an
+      # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
