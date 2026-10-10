@@ -32,19 +32,35 @@ jobs:
     steps:
       - name: Get PR Number
         id: pr
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "number=${{ inputs.pr_number }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" == "check_suite" ]; then
-            PR=$(gh pr list --head "${{ github.event.check_suite.head_branch }}" --json number --jq '.[0].number' --repo ${{ github.repository }})
-            echo "number=$PR" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" == "pull_request_review" ]; then
-            echo "number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
-          else
-            echo "number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
-          fi
         env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER_INPUT: ${{ inputs.pr_number }}
+          HEAD_BRANCH: ${{ github.event.check_suite.head_branch }}
+          PR_FROM_REVIEW: ${{ github.event.pull_request.number }}
           GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$EVENT_NAME" == "workflow_dispatch" ]; then
+            case "$PR_NUMBER_INPUT" in
+              ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *) echo "number=$PR_NUMBER_INPUT" >> $GITHUB_OUTPUT ;;
+            esac
+          elif [ "$EVENT_NAME" == "check_suite" ]; then
+            case "$HEAD_BRANCH" in
+              ''|*[!A-Za-z0-9._/-]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *)
+                PR=$(gh pr list --head "$HEAD_BRANCH" --json number --jq '.[0].number' --repo "$GITHUB_REPOSITORY")
+                case "$PR" in
+                  ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+                  *) echo "number=$PR" >> $GITHUB_OUTPUT ;;
+                esac
+                ;;
+            esac
+          else
+            case "$PR_FROM_REVIEW" in
+              ''|*[!0-9]*) echo "number=" >> $GITHUB_OUTPUT ;;
+              *) echo "number=$PR_FROM_REVIEW" >> $GITHUB_OUTPUT ;;
+            esac
+          fi
 
       - name: Check PR Status
         id: check
