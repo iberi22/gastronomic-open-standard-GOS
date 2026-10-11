@@ -7,6 +7,9 @@ A RESTful JSON API serving **473 recipes** from multiple cuisines, automatically
 > (118 files) is **not** part of the served API. The site copy
 > (`copy-content.js`) applies the same filter.
 
+
+> **Note on counts**: The full dataset counts can be verified via `python3 docs/corpus-stats.py` in `docs/stats.json` (e.g., 495 dishes in `site/src/content`, or 613 root `dishes/**/*.md`). However, every `473` count below specifically reflects the API scan of root `dishes/` (which skips `china`, CJK names, and `README.md`).
+
 ## Quick Start
 
 ```bash

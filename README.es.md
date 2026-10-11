@@ -2,8 +2,8 @@
 
 Grafo de conocimiento abierto de la gastronomía mundial: **recetas ↔ ingredientes ↔
 vitaminas ↔ sustancias bioactivas ↔ sabores ↔ técnicas ↔ afecciones ↔ dietas ↔ regiones**.
-Los `.md` del repo SON la base de datos (405 platos, 552 ingredientes, 40 vitaminas,
-35 afecciones, 30 sustancias, 6 dietas). Astro 7 + Svelte 5 + Tailwind v4.
+Los `.md` del repo SON la base de datos (495 platos, 552 ingredientes, 40 vitaminas,
+35 afecciones, 30 sustancias, 6 dietas) según lo verificado por `python3 docs/corpus-stats.py` en `docs/stats.json`. Astro 7 + Svelte 5 + Tailwind v4.
 
 En vivo: **https://gos.swal.network** (Cloudflare Pages, único deploy canónico)
 
@@ -34,7 +34,7 @@ regenerado en cada build por `site/scripts/export-vectors.mjs`).
 
 ## 🧠 Snapshots de Vectores y Embeddings (Descarga Masiva GOS DB)
 
-GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 383 platos, 30 substancias**).
+GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 495 platos, 30 substancias**).
 
 - **Manifiesto**: [`/api/vectors/index.json`](https://gos.swal.network/api/vectors/index.json)
 - **Vectores Fragmentados**: `/api/vectors/vectors-1.json`, `vectors-2.json` (<10MB cada archivo)

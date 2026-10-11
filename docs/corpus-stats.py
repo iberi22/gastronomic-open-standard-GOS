@@ -71,6 +71,31 @@ def main():
             sys.stderr.write("README.md still contains '405 dishes'\n")
             sys.exit(1)
 
+        readme_es_path = repo_root / 'README.es.md'
+        with open(readme_es_path, 'r', encoding='utf-8') as f:
+            readme_es = f.read()
+
+        dishes_es_str = f"{counts['dishes']} platos"
+        if dishes_es_str not in readme_es:
+            sys.stderr.write(f"README.es.md missing expected string: '{dishes_es_str}'\n")
+            sys.exit(1)
+
+        if "405 platos" in readme_es:
+            sys.stderr.write("README.es.md still contains '405 platos'\n")
+            sys.exit(1)
+
+        if "383 platos" in readme_es:
+            sys.stderr.write("README.es.md still contains '383 platos'\n")
+            sys.exit(1)
+
+        api_readme_path = repo_root / 'API_README.md'
+        with open(api_readme_path, 'r', encoding='utf-8') as f:
+            api_readme = f.read()
+
+        if "docs/stats.json" not in api_readme:
+            sys.stderr.write("API_README.md missing literal 'docs/stats.json'\n")
+            sys.exit(1)
+
         sys.exit(0)
     else:
         with open(stats_file, 'w', encoding='utf-8') as f:
