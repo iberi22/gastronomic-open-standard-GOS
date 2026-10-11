@@ -36,7 +36,7 @@ There are specific historical and derivative-work exceptions within the monorepo
 The monorepo root and the underlying data corpus are licensed permissively.
 
 *   **Workspace Root**: The root `package.json` specifies `Apache-2.0`. The root `LICENSE` file contains the full Apache License 2.0 text. This covers the overall workspace metadata, scripts, and generic repository scaffolding.
-*   **Corpus Data**: The markdown files representing dishes, ingredients, vitamins, etc., declare `license: Apache-2.0` in their frontmatter. This ensures the GOS dataset remains openly accessible and usable without copyleft restrictions.
+*   **Corpus Data**: The root `LICENSE` file (Apache-2.0, 201 lines) covers the corpus. Dish cards in `site/src/content/dishes` also declare `license: Apache-2.0` (495/495). Ingredient, vitamin, condition, diet, mixture, substance, and tip cards do not declare a `license:` field (0 files). This PR does not add those fields. This ensures the GOS dataset remains openly accessible and usable without copyleft restrictions.
 
 ## Further Information
 
