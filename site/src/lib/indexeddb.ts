@@ -62,6 +62,16 @@ function openDB(): Promise<IDBDatabase> {
 
       req.onsuccess = () => {
         const db = req.result
+        // Otra pestaña puede pedir una subida de version en cualquier momento
+        // (reparacion, o un build con un store nuevo). Si esta conexion se queda
+        // abierta, esa subida se bloquea para siempre: la otra pestaña recibe
+        // `blocked`, no un error, y se queda en spinner sin decir nada. Las
+        // cinco rutas del adaptador dejan la conexion abierta, asi que hay dos
+        // defensas: cerrarla al terminar cada operacion, y cerrarla en cuanto
+        // alguien la necesite. Medido con fake-indexeddb: sin esto, una subida
+        // desde otra pestaña queda bloqueada y no resuelve nunca (test
+        // 'Dos pestañas' de indexeddb-schema.test.ts).
+        db.onversionchange = () => db.close()
         const faltan = STORES.filter((s) => !db.objectStoreNames.contains(s))
         if (faltan.length === 0) {
           resolve(db)
@@ -118,22 +128,30 @@ function promisifyRequest<T>(req: IDBRequest<T>): Promise<T> {
 export class IndexedDBStorageAdapter implements StorageAdapter {
   async create(entity: string, record: DomainRecord): Promise<DomainRecord> {
     const db = await openDB()
-    const tx = db.transaction(entity as EntityStore, 'readwrite')
-    const store = tx.objectStore(entity as EntityStore)
-    await promisifyRequest(
-      store.put({ ...record, updated_at: new Date().toISOString() }),
-    )
-    return record
+    try {
+      const tx = db.transaction(entity as EntityStore, 'readwrite')
+      const store = tx.objectStore(entity as EntityStore)
+      await promisifyRequest(
+        store.put({ ...record, updated_at: new Date().toISOString() }),
+      )
+      return record
+    } finally {
+      db.close()
+    }
   }
 
   async list(entity: string, instanceId: string): Promise<DomainRecord[]> {
     const db = await openDB()
-    const tx = db.transaction(entity as EntityStore, 'readonly')
-    const store = tx.objectStore(entity as EntityStore)
-    const all = await promisifyRequest<DomainRecord[]>(
-      store.getAll() as IDBRequest<DomainRecord[]>,
-    )
-    return (all || []).filter((r) => r.instance_id === instanceId)
+    try {
+      const tx = db.transaction(entity as EntityStore, 'readonly')
+      const store = tx.objectStore(entity as EntityStore)
+      const all = await promisifyRequest<DomainRecord[]>(
+        store.getAll() as IDBRequest<DomainRecord[]>,
+      )
+      return (all || []).filter((r) => r.instance_id === instanceId)
+    } finally {
+      db.close()
+    }
   }
 
   async get(
@@ -142,14 +160,18 @@ export class IndexedDBStorageAdapter implements StorageAdapter {
     instanceId: string,
   ): Promise<DomainRecord | null> {
     const db = await openDB()
-    const tx = db.transaction(entity as EntityStore, 'readonly')
-    const store = tx.objectStore(entity as EntityStore)
-    const record = await promisifyRequest<DomainRecord | undefined>(
-      store.get(id),
-    )
-    if (!record) return null
-    if (record.instance_id !== instanceId) return null
-    return record
+    try {
+      const tx = db.transaction(entity as EntityStore, 'readonly')
+      const store = tx.objectStore(entity as EntityStore)
+      const record = await promisifyRequest<DomainRecord | undefined>(
+        store.get(id),
+      )
+      if (!record) return null
+      if (record.instance_id !== instanceId) return null
+      return record
+    } finally {
+      db.close()
+    }
   }
 
   async update(
@@ -159,23 +181,35 @@ export class IndexedDBStorageAdapter implements StorageAdapter {
     instanceId: string,
   ): Promise<DomainRecord | null> {
     const db = await openDB()
-    const tx = db.transaction(entity as EntityStore, 'readwrite')
-    const store = tx.objectStore(entity as EntityStore)
-    const cur = await promisifyRequest<DomainRecord | undefined>(store.get(id))
-    if (!cur || cur.instance_id !== instanceId) return null
-    const next = { ...cur, ...patch, updated_at: new Date().toISOString() }
-    await promisifyRequest(store.put(next))
-    return next
+    try {
+      const tx = db.transaction(entity as EntityStore, 'readwrite')
+      const store = tx.objectStore(entity as EntityStore)
+      const cur = await promisifyRequest<DomainRecord | undefined>(
+        store.get(id),
+      )
+      if (!cur || cur.instance_id !== instanceId) return null
+      const next = { ...cur, ...patch, updated_at: new Date().toISOString() }
+      await promisifyRequest(store.put(next))
+      return next
+    } finally {
+      db.close()
+    }
   }
 
   async del(entity: string, id: string, instanceId: string): Promise<boolean> {
     const db = await openDB()
-    const tx = db.transaction(entity as EntityStore, 'readwrite')
-    const store = tx.objectStore(entity as EntityStore)
-    const cur = await promisifyRequest<DomainRecord | undefined>(store.get(id))
-    if (!cur || cur.instance_id !== instanceId) return false
-    await promisifyRequest(store.delete(id))
-    return true
+    try {
+      const tx = db.transaction(entity as EntityStore, 'readwrite')
+      const store = tx.objectStore(entity as EntityStore)
+      const cur = await promisifyRequest<DomainRecord | undefined>(
+        store.get(id),
+      )
+      if (!cur || cur.instance_id !== instanceId) return false
+      await promisifyRequest(store.delete(id))
+      return true
+    } finally {
+      db.close()
+    }
   }
 }
 

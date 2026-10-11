@@ -68,14 +68,26 @@ class FakeIDBDatabase {
   objectStoreNames = {
     contains: () => true,
   } as unknown as { contains: (name: string) => boolean }
+  // El adaptador cierra la conexion que abre (y la cierra antes si otra
+  // pestana pide subir la version). Sin estos dos miembros el fake dejaba
+  // pasar cualquier cosa y `db.close()` reventaba con "not a function":
+  // el doble estaba por debajo del contrato real de IDBDatabase.
+  onversionchange: (() => void) | null = null
+  closeCount = 0
+  close() {
+    this.closeCount += 1
+  }
 }
 
 interface FakeIndexedDB {
   open: () => FakeIDBRequest<FakeIDBDatabase>
 }
 
+let fakeDb: FakeIDBDatabase
+
 function setupFakeIDB() {
   const db = new FakeIDBDatabase()
+  fakeDb = db
   ;(globalThis as unknown as { indexedDB: FakeIndexedDB }).indexedDB = {
     open: () => {
       const req = new FakeIDBRequest<FakeIDBDatabase>()
@@ -93,6 +105,23 @@ describe('IndexedDBStorageAdapter', () => {
 
   it('isIndexedDBAvailable returns true when indexedDB is defined', () => {
     expect(isIndexedDBAvailable()).toBe(true)
+  })
+
+  it('cierra la conexion que abre en cada operacion (no filtra conexiones)', async () => {
+    // Cada ruta del adaptador hace `await openDB()`. Si no cierra, cada
+    // operacion deja una conexion abierta y otra pestana que pida subir la
+    // version se queda bloqueada para siempre (informe ROBUSTEZ §1.4).
+    const adapter = new IndexedDBStorageAdapter()
+    await adapter.create('ingredient', {
+      id: 'ing-c1',
+      instance_id: 'inst1',
+      name: 'Tomato',
+      created_at: '2026-01-01T00:00:00Z',
+      updated_at: '2026-01-01T00:00:00Z',
+    })
+    await adapter.get('ingredient', 'ing-c1', 'inst1')
+    await adapter.update('ingredient', 'ing-c1', { name: 'Cherry' }, 'inst1')
+    expect(fakeDb.closeCount).toBe(3)
   })
 
   it('create returns record with id and timestamps', async () => {
