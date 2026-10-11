@@ -54,7 +54,7 @@ def audit_provenance():
                         content = f.read()
                         if "license:" not in content or "date_retrieved:" not in content:
                             missing += 1
-                except:
+                except (OSError, UnicodeDecodeError):
                     pass
     print(f"provenance-missing: {missing}")
 

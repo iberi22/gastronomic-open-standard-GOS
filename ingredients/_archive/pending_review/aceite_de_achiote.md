@@ -2,86 +2,86 @@
 license: Apache-2.0
 date_retrieved: 2026-10-11
 name: "Aceite De Achiote"
-scientific_name: "TBD"
+scientific_name: "TODO"
 group: "Uncategorized"
 image: "../../images/placeholder.jpg"
 
 # --- Internationalization ---
 i18n:
   en:
-    common_name: "TBD"
+    common_name: "TODO"
     other_names: []
   es:
     common_name: "Aceite De Achiote"
     other_names: []
   zh:
-    common_name: "TBD"
+    common_name: "TODO"
     other_names: []
 
 # --- Scientific Registry ---
 scientific_registry:
-  family: "TBD"
-  genus: "TBD"
+  family: "TODO"
+  genus: "TODO"
   synonyms: []
   cultivars: []
 
 # --- Popularidad y Uso Global ---
 global_popularity:
-  tier: "TBD" # High, Medium, Niche
-  culinary_importance: "TBD" # Essential, Common, Rare
+  tier: "Unknown" # High, Medium, Niche
+  culinary_importance: "Unknown" # Essential, Common, Rare
   regional_prevalence: []
 
 # --- Nutrition (per 100g) ---
 portions:
   default_g: 100
 nutrition_per_100g:
-  calories: "TBD"
-  protein_g: "TBD"
-  fat_g: "TBD"
-  carbs_g: "TBD"
-  fiber_g: "TBD"
-  sugar_g: "TBD"
+  calories: 0
+  protein_g: 0
+  fat_g: 0
+  carbs_g: 0
+  fiber_g: 0
+  sugar_g: 0
 
 # --- Micronutrients ---
 micronutrients:
-  vitamin_c_mg: "TBD"
-  potassium_mg: "TBD"
-  magnesium_mg: "TBD"
+  vitamin_c_mg: 0
+  potassium_mg: 0
+  magnesium_mg: 0
 
 # --- Composición Química y Compuestos Activos ---
 active_compounds:
-  - name: "TBD"
-    type: "TBD"
-    approximate_content_percent: "TBD"
-    role: "TBD"
-    benefit: "TBD"
+  - name: "Unknown"
+    type: "Unknown"
+    approximate_content_percent: 0
+    role: "Unknown"
+    benefit: "Unknown"
 
 # --- Perfil de Seguridad y Alergias ---
 safety_profile:
   safety_score: 50
-  consumption_limit: "TBD"
+  consumption_limit: "Unknown"
   concerns: []
 
 allergy_profile:
-  risk_level: "TBD"
+  risk_level: "Unknown"
   allergens: []
   cross_reactivity: []
-  prevalence_percent: "TBD"
+  prevalence_percent: 0
 
 # --- Perfil Sensorial y Organoléptico ---
 sensory_profile:
-  visual_color: "TBD"
+  visual_color: "Unknown"
   aroma_notes: []
   flavor_notes: []
   texture_notes: []
-  mouthfeel: "TBD"
-  spice_level: "TBD"
+  mouthfeel: "Unknown"
+  spice_level: 0
 
 # --- Sustitutos y Relacionados ---
 substitutes:
-  - name: "TBD"
-    similarity_score: "TBD"
-    notes: "TBD"
+  - name: "Unknown"
+    similarity_score: 0.0
+    notes: "Unknown"
 
 embedding_version: 2
 last_updated: "2025-12-16"
