@@ -21,4 +21,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           yaml-file: .github/labels.yml
-          sync-delete: true
+          exclude: |
+            needs-human
+            high-stakes
+            quarantine
