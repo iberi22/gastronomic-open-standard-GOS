@@ -1,4 +1,6 @@
 ---
+license: Apache-2.0
+date_retrieved: 2026-10-11
 name: "Aceite De Achiote"
 scientific_name: "TODO"
 group: "Uncategorized"

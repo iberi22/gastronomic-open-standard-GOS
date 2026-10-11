@@ -28,8 +28,8 @@ def load_known_ingredients():
                             data = yaml.safe_load(fm.group(1))
                             if 'name' in data:
                                 KNOWN_INGREDIENTS.add(data['name'].lower())
-                except:
-                    pass
+                except (OSError, UnicodeDecodeError, yaml.YAMLError) as e:
+                    print(f"Error reading {file}: {e}")
 
 def clean_line(line):
     # Remove bullets
@@ -40,6 +40,23 @@ def clean_line(line):
     line = re.sub(r'\s*\(.*?\)', '', line)
     # Lowercase
     return line.strip().lower()
+
+def audit_provenance():
+    missing = 0
+    search_dir = "ingredients/_archive/pending_review"
+    if not os.path.exists(search_dir):
+        search_dir = INGREDIENTS_DIR
+    for root, dirs, files in os.walk(search_dir):
+        for file in files:
+            if file.endswith(".md") and not file.startswith("_"):
+                try:
+                    with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        if "license:" not in content or "date_retrieved:" not in content:
+                            missing += 1
+                except (OSError, UnicodeDecodeError) as e:
+                    print(f"Error reading {file}: {e}")
+    print(f"provenance-missing: {missing}")
 
 def scan_recipes():
     print(f"Scanning recipes in {DISHES_DIR}...")
@@ -85,3 +102,4 @@ def scan_recipes():
 if __name__ == "__main__":
     load_known_ingredients()
     scan_recipes()
+    audit_provenance()
