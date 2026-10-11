@@ -33,7 +33,14 @@ health_registry:
 - **Medium**: RCTs pequeños, estudios de cohorte, estudios in vivo robustos.
 - **Low**: Estudios in vitro, uso tradicional sin validación clínica moderna, correlaciones observacionales.
 
-## 3. Fuentes Aceptadas
+## 3. Procedencia mínima
+
+- Nuevas fichas o fichas editadas deben incluir a nivel superior `license` y `source.date_retrieved`.
+- La lista antigua de texto `sources:` (legacy) se mantiene, ya que varias fichas existentes la usan y el esquema de Astro la permite.
+- Una URL de Unsplash no es una fuente documental. No coloque URLs de Unsplash en `source.url` ni en `sources:`. Las URLs de imágenes en platos están fuera del alcance de este requerimiento.
+- Este cambio no edita las más de 500 fichas existentes. El comprobador reporta la brecha (gap) pero no la rellena.
+
+## 4. Fuentes Aceptadas
 
 Priorizar fuentes de acceso abierto pero alta calidad:
 
@@ -42,14 +49,14 @@ Priorizar fuentes de acceso abierto pero alta calidad:
 3. **Google Scholar** (Filtrar por últimos 10 años)
 4. **USDA FoodData Central** (Para macros/micros)
 
-## 4. Proceso de Actualización
+## 5. Proceso de Actualización
 
 1. **Identificar el Ingrediente**: Seleccionar un ingrediente común (ej. Cebolla).
 2. **Búsqueda Bibliográfica**: Buscar `[Ingrediente] clinical trial health benefits` o `[Bioactive compound] mechanism`.
 3. **Sítesis**: Redactar la sección `scientific_analysis` y rellenar el `health_registry`.
 4. **Verificación**: Asegurar que las porciones (`default_g`) sean realistas para el consumo humano (no usar dosis de extractos concentrados inalcanzables con la dieta).
 
-## 5. Ejemplo de Checklist de Calidad
+## 6. Ejemplo de Checklist de Calidad
 
 - [ ] ¿Tiene DOI o enlace a la fuente?
 - [ ] ¿El mecanismo explica el "por qué"?

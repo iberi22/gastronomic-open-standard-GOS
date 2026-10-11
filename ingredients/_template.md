@@ -30,6 +30,11 @@ health_registry:
         source: "Journal/Source"
         year: 2024
         doi: "DOI or Link"
+license: Apache-2.0
+source:
+  name: "Publisher or database name"
+  url: "https://example.org/record"
+  date_retrieved: "YYYY-MM-DD"
 sources:
   - "Source 1"
   - "Source 2"
