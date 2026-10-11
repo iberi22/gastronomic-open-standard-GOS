@@ -1,6 +1,6 @@
 // workers/ai.ts — Cloudflare Worker real para POST /api/ai/infer
 // Desplegable como Worker separado o como Pages Function (functions/api/ai/infer.ts).
-// Usa bindings: AI (Workers AI), SWAL_D1 (D1), SWAL_KV (KV), SWAL_R2 (R2).
+// Usa bindings: AI (Workers AI), SWAL_D1 (D1). (KV y R2 no se usan en esta petición).
 // Modelo negocio: ver src/lib/billing.ts calculatePrice (infra 100% + AI*1.10 + 20% handling).
 
 import { calculatePrice, type SocioTier, TIERS } from '../src/lib/billing'
@@ -26,6 +26,8 @@ export interface Env {
       }
     }
   }
+  // Se mantienen SWAL_KV y SWAL_R2 en la interfaz para no romper tipos en infer.ts o tests,
+  // pero el handler fetch no debe llamarlos (ahorrando operaciones KV free tier).
   SWAL_KV: {
     get: (key: string) => Promise<string | null>
     put: (key: string, val: string) => Promise<void>
@@ -96,22 +98,17 @@ export default {
       )
     }
 
-    // 1. Leer credito usado (KV cache primero, luego D1)
-    const kvKey = `credits:${appId}`
+    // 1. Leer credito usado (desde D1)
     let used = 0
     try {
-      const cached = await env.SWAL_KV?.get(kvKey)
-      if (cached !== null && cached !== undefined) used = parseInt(cached, 10)
-      else {
-        const row = await env.SWAL_D1.prepare(
-          'SELECT used FROM credits WHERE appId = ?',
-        )
-          .bind(appId)
-          .first()
-        used = row?.used ?? 0
-      }
+      const row = await env.SWAL_D1.prepare(
+        'SELECT used FROM credits WHERE appId = ?',
+      )
+        .bind(appId)
+        .first()
+      used = row?.used ?? 0
     } catch {
-      used = 0 // si D1/KV no provisionado en dev, fallback 0
+      used = 0 // si D1 no provisionado en dev, fallback 0
     }
 
     if (used >= tier.monthlyCredit) {
@@ -150,7 +147,7 @@ export default {
       tokensUsed = estimated
     }
 
-    // 3. Actualizar ledger D1 + KV
+    // 3. Actualizar ledger D1
     const newUsed = used + tokensUsed
     try {
       await env.SWAL_D1.prepare(
@@ -158,7 +155,6 @@ export default {
       )
         .bind(appId, newUsed, tierId, new Date().toISOString())
         .run()
-      await env.SWAL_KV?.put(kvKey, String(newUsed))
     } catch {}
 
     // 4. Costo (ejemplo pricing Workers AI; reemplazar con billing real Cloudflare GraphQL)
