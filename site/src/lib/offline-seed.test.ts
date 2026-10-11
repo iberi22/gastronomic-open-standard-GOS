@@ -188,10 +188,11 @@ describe('offline-seed: siembra de verdad', () => {
 })
 
 describe('offline-seed: isSeeded consulta el store correcto', () => {
-  it('consulta el store recipe, no ingredient', () => {
+  it('consulta el store recipes, no ingredient ni recipe', () => {
     // isSeeded() pedía 'ingredient' mientras sembraba en 'recipes'/'substances':
     // nunca podía confirmar la siembra.
-    expect(SEED_SOURCE).toMatch(/adapter\.list\('recipe'/)
+    expect(SEED_SOURCE).toMatch(/adapter\.list\('recipes'/)
+    expect(SEED_SOURCE).not.toMatch(/adapter\.list\('recipe'/)
     expect(SEED_SOURCE).not.toMatch(/adapter\.list\('ingredient'/)
   })
 

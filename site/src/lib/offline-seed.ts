@@ -85,7 +85,7 @@ export async function isSeeded(): Promise<boolean> {
   if (typeof indexedDB === 'undefined') return false
   try {
     const adapter = new IndexedDBStorageAdapter()
-    const records = await adapter.list('recipe', 'seed-default')
+    const records = await adapter.list('recipes', 'seed-default')
     return records.length > 0
   } catch {
     return false
