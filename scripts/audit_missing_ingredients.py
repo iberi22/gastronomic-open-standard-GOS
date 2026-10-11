@@ -28,8 +28,8 @@ def load_known_ingredients():
                             data = yaml.safe_load(fm.group(1))
                             if 'name' in data:
                                 KNOWN_INGREDIENTS.add(data['name'].lower())
-                except:
-                    pass
+                except (OSError, UnicodeDecodeError, yaml.YAMLError) as e:
+                    print(f"Error reading {file}: {e}")
 
 def clean_line(line):
     # Remove bullets
@@ -54,8 +54,8 @@ def audit_provenance():
                         content = f.read()
                         if "license:" not in content or "date_retrieved:" not in content:
                             missing += 1
-                except (OSError, UnicodeDecodeError):
-                    pass
+                except (OSError, UnicodeDecodeError) as e:
+                    print(f"Error reading {file}: {e}")
     print(f"provenance-missing: {missing}")
 
 def scan_recipes():
