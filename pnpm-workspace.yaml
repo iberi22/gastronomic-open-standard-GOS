@@ -24,7 +24,7 @@ overrides:
   # Quitar el pin cuando 4.6.7+ envejezca (ver chore/deps-2026-10-13).
   zod: "4.6.6"
   rolldown: "1.2.6"
-  "@types/node": "26.4.0"
+  "@types/node": "26.6.5"
   electron-to-chromium: "1.5.418"
   fast-uri: "3.1.6"
 strictDepBuilds: false
