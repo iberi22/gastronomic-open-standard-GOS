@@ -20,6 +20,9 @@ overrides:
   gray-matter>js-yaml: "^3.15.0"
   front-matter>js-yaml: "^3.15.0"
   # pines temporales: versiones publicadas <24h violan minimumReleaseAge en CI (liberar 2026-09-03+)
+  # zod 4.6.6: astro 7.3.8 pide ^4.6.5 pero 4.6.7 salio 2026-10-12 (<24h).
+  # Quitar el pin cuando 4.6.7+ envejezca (ver chore/deps-2026-10-13).
+  zod: "4.6.6"
   rolldown: "1.2.6"
   "@types/node": "26.4.0"
   electron-to-chromium: "1.5.418"

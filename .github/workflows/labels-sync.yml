@@ -9,6 +9,13 @@ permissions:
   contents: read
   issues: write
 
+# Serialize runs: two pushes within seconds (e.g. #369 + #370 on
+# 2026-10-13) raced to delete the same stale label and the loser failed
+# with `Cannot delete "workflow" label: Not Found`.
+concurrency:
+  group: sync-labels
+  cancel-in-progress: false
+
 jobs:
   labels:
     runs-on: ubuntu-latest

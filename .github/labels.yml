@@ -10,3 +10,6 @@
 - name: embeddings
   color: "fbca04"
   description: "Embeddings/Vector updates"
+- name: workflow
+  color: "0E8A16"
+  description: "Workflow improvements"
