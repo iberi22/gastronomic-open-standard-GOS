@@ -10,6 +10,17 @@ updates:
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
+    # Deferred majors (2026-10-13 integration PR chore/deps-2026-10-13):
+    # - typescript 5.9 -> 7.0 breaks `astro check` ("astro check does not
+    #   currently support TypeScript 7.0") and violates @astrojs/svelte
+    #   peer range (^5 || ^6). Revisit when Astro supports TS7.
+    # - sigma 3.0.3 -> 4.0.0 needs runtime/visual verification of the
+    #   Sigma graph renderers (GraphExplorer.astro, GosGraph.svelte).
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "sigma"
+        update-types: ["version-update:semver-major"]
     groups:
       # Version updates: everything into a single PR.
       all-dependencies:
@@ -30,6 +41,10 @@ updates:
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
+    # Deferred: typescript major (see "/" entry reason, 2026-10-13).
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       # Version updates: everything into a single PR.
       all-dependencies:
@@ -50,6 +65,10 @@ updates:
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
+    # Deferred: typescript major (see "/" entry reason, 2026-10-13).
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       # Version updates: everything into a single PR.
       all-dependencies:
@@ -70,6 +89,13 @@ updates:
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
+    # Deferred majors (see "/" entry reason, 2026-10-13): typescript 7
+    # breaks astro check; sigma 4 needs graph renderer verification.
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "sigma"
+        update-types: ["version-update:semver-major"]
     groups:
       # Version updates: everything into a single PR.
       all-dependencies:
@@ -90,6 +116,11 @@ updates:
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
+    # Deferred: typescript 7 turns the explicit-file `tsc` typecheck
+    # invocation into hard error TS5112 (see "/" entry, 2026-10-13).
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       # Version updates: everything into a single PR.
       all-dependencies:
