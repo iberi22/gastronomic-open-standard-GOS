@@ -103,8 +103,8 @@ jobs:
     name: evidence (DOI corresponde al artículo)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Instalar PyYAML (sin ella el gate no puede leer el frontmatter)
@@ -138,8 +138,8 @@ jobs:
     name: evidence (nivel High/Medium/Low)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Verificar evidence_level
