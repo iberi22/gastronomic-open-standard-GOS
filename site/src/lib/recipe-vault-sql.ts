@@ -12,7 +12,7 @@ function escapeSqlString(val: string): string {
 
 export function buildVaultSqlDump(
   records: DomainRecord[],
-  exportedAt: string = new Date().toISOString()
+  exportedAt: string = new Date().toISOString(),
 ): string {
   const lines: string[] = []
 
@@ -21,31 +21,31 @@ export function buildVaultSqlDump(
 
   // _export_meta table
   lines.push(
-    'CREATE TABLE IF NOT EXISTS "_export_meta" (key TEXT PRIMARY KEY, value TEXT NOT NULL);'
+    'CREATE TABLE IF NOT EXISTS "_export_meta" (key TEXT PRIMARY KEY, value TEXT NOT NULL);',
   )
   lines.push(
     `INSERT INTO "_export_meta" (key, value) VALUES ('format', '${escapeSqlString(
-      VAULT_EXPORT_FORMAT
-    )}');`
+      VAULT_EXPORT_FORMAT,
+    )}');`,
   )
   lines.push(
     `INSERT INTO "_export_meta" (key, value) VALUES ('app_id', '${escapeSqlString(
-      'gastronomic-open-standard-GOS'
-    )}');`
+      'gastronomic-open-standard-GOS',
+    )}');`,
   )
   lines.push(
     `INSERT INTO "_export_meta" (key, value) VALUES ('exported_at', '${escapeSqlString(
-      exportedAt
-    )}');`
+      exportedAt,
+    )}');`,
   )
   lines.push(
-    `INSERT INTO "_export_meta" (key, value) VALUES ('schema_version', '${VAULT_EXPORT_VERSION}');`
+    `INSERT INTO "_export_meta" (key, value) VALUES ('schema_version', '${VAULT_EXPORT_VERSION}');`,
   )
 
   // recipe table
   const recipeTable = 'recipe'
   lines.push(
-    `CREATE TABLE IF NOT EXISTS "${recipeTable}" (id TEXT PRIMARY KEY, instance_id TEXT, created_at TEXT, updated_at TEXT, deleted_at TEXT, data TEXT NOT NULL);`
+    `CREATE TABLE IF NOT EXISTS "${recipeTable}" (id TEXT PRIMARY KEY, instance_id TEXT, created_at TEXT, updated_at TEXT, deleted_at TEXT, data TEXT NOT NULL);`,
   )
 
   for (const record of records) {
@@ -60,7 +60,7 @@ export function buildVaultSqlDump(
     const deletedAtSql = deletedAt ? `'${escapeSqlString(deletedAt)}'` : 'NULL'
 
     lines.push(
-      `INSERT INTO "${recipeTable}" (id, instance_id, created_at, updated_at, deleted_at, data) VALUES ('${idEscaped}', '${instanceIdEscaped}', '${createdAtEscaped}', '${updatedAtEscaped}', ${deletedAtSql}, '${escapeSqlString(dataJson)}');`
+      `INSERT INTO "${recipeTable}" (id, instance_id, created_at, updated_at, deleted_at, data) VALUES ('${idEscaped}', '${instanceIdEscaped}', '${createdAtEscaped}', '${updatedAtEscaped}', ${deletedAtSql}, '${escapeSqlString(dataJson)}');`,
     )
   }
 

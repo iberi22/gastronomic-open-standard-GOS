@@ -26,10 +26,7 @@ import {
   vaultList,
   vaultUpdate,
 } from '../lib/recipe-vault'
-import {
-  buildVaultSqlDump,
-  vaultSqlFilename,
-} from '../lib/recipe-vault-sql'
+import { buildVaultSqlDump, vaultSqlFilename } from '../lib/recipe-vault-sql'
 
 type Mode = 'create' | 'edit' | null
 

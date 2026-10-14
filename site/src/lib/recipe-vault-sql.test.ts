@@ -1,8 +1,13 @@
-import { describe, expect, it, vi, afterEach, beforeEach } from 'vitest'
 import initSqlJs from 'sql.js'
-import { buildVaultSqlDump } from './recipe-vault-sql'
-import { serializeVaultExport, parseVaultExport, VAULT_INSTANCE, VAULT_EXPORT_FORMAT } from './recipe-vault'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import type { DomainRecord } from './domain'
+import {
+  parseVaultExport,
+  serializeVaultExport,
+  VAULT_EXPORT_FORMAT,
+  VAULT_INSTANCE,
+} from './recipe-vault'
+import { buildVaultSqlDump } from './recipe-vault-sql'
 
 // Same valid recipe structure used in recipe-vault tests
 const validRecipe: DomainRecord = {
@@ -66,7 +71,10 @@ describe('recipe-vault-sql', () => {
     // Check _export_meta
     const metaRes = db.exec('SELECT key, value FROM _export_meta')
     expect(metaRes[0].values).toContainEqual(['format', VAULT_EXPORT_FORMAT])
-    expect(metaRes[0].values).toContainEqual(['app_id', 'gastronomic-open-standard-GOS'])
+    expect(metaRes[0].values).toContainEqual([
+      'app_id',
+      'gastronomic-open-standard-GOS',
+    ])
     expect(metaRes[0].values).toContainEqual(['exported_at', exportedAt])
 
     // Check recipe table
