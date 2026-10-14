@@ -63,17 +63,12 @@ export function translateEntity(
   catalog: CatalogItem[],
 ) {
   const { entity, locale, type } = options
-
-  if (!entity || entity.trim() === '') {
-    return { error: 'Empty or invalid query', status: 400 }
-  }
   const targetLocale = locale ? locale.toLowerCase() : undefined
 
   if (targetLocale && !SUPPORTED_LOCALES.includes(targetLocale)) {
     return {
       error: `Unsupported locale '${locale}'. Supported locales: ${SUPPORTED_LOCALES.join(', ')}`,
       supported_locales: SUPPORTED_LOCALES,
-      status: 400,
     }
   }
 
@@ -114,10 +109,6 @@ export function translateEntity(
         all_aliases: item.aliases,
       })
     }
-  }
-
-  if (term && results.length === 0) {
-    return { error: `Entity '${entity}' not found`, status: 404 }
   }
 
   return {
