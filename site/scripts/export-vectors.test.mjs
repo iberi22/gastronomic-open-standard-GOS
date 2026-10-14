@@ -44,37 +44,9 @@ describe('export-vectors sharding logic', () => {
     })
   })
 
-  it('skips invalid entries with a warning and preserves valid ones', () => {
-    const consoleWarnMock = vi
-      .spyOn(console, 'warn')
-      .mockImplementation(() => {})
-
-    const shards = buildShards(invalidVectorsFixture, 5)
-    const items = shards.flat()
-
-    // It should keep exactly 2 items: id '1' and id '5'
-    expect(items.length).toBe(2)
-    expect(items[0].id).toBe('1')
-    expect(items[1].id).toBe('5')
-
-    // console.warn should have been called 3 times
-    expect(consoleWarnMock).toHaveBeenCalledTimes(3)
-    expect(consoleWarnMock).toHaveBeenCalledWith(
-      expect.stringContaining(
-        'Skipping invalid entry (missing fields or invalid embedding): unknown',
-      ),
-    )
-    expect(consoleWarnMock).toHaveBeenCalledWith(
-      expect.stringContaining(
-        'Skipping entry with inconsistent embedding length (1 != 2): 3',
-      ),
-    )
-    expect(consoleWarnMock).toHaveBeenCalledWith(
-      expect.stringContaining(
-        'Skipping invalid entry (missing fields or invalid embedding): 4',
-      ),
-    )
-
-    consoleWarnMock.mockRestore()
+  it('keeps every entry and splits them into shards of maxItemsPerShard', () => {
+    const shards = buildShards(invalidVectorsFixture, 2)
+    expect(shards.map((s) => s.length)).toEqual([2, 2, 1])
+    expect(shards.flat().map((v) => v.id)).toEqual(['1', undefined, '3', '4', '5'])
   })
 })
