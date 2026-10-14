@@ -26,6 +26,7 @@ import {
   vaultList,
   vaultUpdate,
 } from '../lib/recipe-vault'
+import { buildAllDataJson, buildVaultSqlDump, vaultSqlFilename } from '../lib/recipe-vault-sql'
 
 type Mode = 'create' | 'edit' | null
 
@@ -261,7 +262,8 @@ function exportVault(): void {
   error = ''
   notice = ''
   try {
-    const { json, filename } = vaultExport(records)
+    const json = buildAllDataJson(records)
+    const { filename } = vaultExport(records)
     const blob = new Blob([json], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -272,6 +274,27 @@ function exportVault(): void {
     document.body.removeChild(a)
     URL.revokeObjectURL(url)
     notice = `Exportadas ${records.length} receta(s). El archivo es tuyo, no se envía a ningún servidor.`
+  } catch (err) {
+    error = `No se pudo exportar: ${String(err)}`
+  }
+}
+
+function exportSqlVault(): void {
+  error = ''
+  notice = ''
+  try {
+    const sql = buildVaultSqlDump(records)
+    const filename = vaultSqlFilename()
+    const blob = new Blob([sql], { type: 'application/sql' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = filename
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    notice = `Exportadas ${records.length} receta(s) en SQL. El archivo es tuyo, no se envía a ningún servidor.`
   } catch (err) {
     error = `No se pudo exportar: ${String(err)}`
   }
@@ -349,9 +372,15 @@ let visible = $derived(
     <button type="button" class="btn primary" onclick={startCreate}>
       + Nueva receta
     </button>
-    <button type="button" class="btn" onclick={exportVault} disabled={records.length === 0}>
-      Exportar JSON
-    </button>
+    <div class="export-group">
+      <span class="lbl-export">Exportar mis datos:</span>
+      <button type="button" class="btn" onclick={exportVault} disabled={records.length === 0}>
+        JSON
+      </button>
+      <button type="button" class="btn" onclick={exportSqlVault} disabled={records.length === 0}>
+        SQL
+      </button>
+    </div>
     <button type="button" class="btn" onclick={pickFile} disabled={unsupported}>
       Importar JSON
     </button>
@@ -600,6 +629,8 @@ let visible = $derived(
   }
 
   .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .export-group { display: flex; align-items: center; gap: 6px; }
+  .lbl-export { font-size: 13px; font-weight: 600; color: var(--swal-text-secondary); margin-right: 4px; }
   .file-input {
     position: absolute;
     width: 1px;
