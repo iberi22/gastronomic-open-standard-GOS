@@ -34,7 +34,7 @@ export const GET: APIRoute = async ({ url }) => {
   })
   const result = translateEntity({ entity, locale, type }, catalog)
 
-  const status = 'error' in result ? 400 : 200
+  const status = 'error' in result ? (result.status || 400) : 200
 
   return new Response(JSON.stringify(result, null, 2), {
     status,
