@@ -23,9 +23,11 @@ jobs:
     # otro workflow, asi que la unica forma de que el deploy dependa de los
     # tests es correrlos en este mismo job, antes del paso de despliegue.
     #
-    # El gateway es la superficie que quedo expuesta por el bypass de
-    # autenticacion y este workflow despliega en CADA push a worker/**. Sin
-    # este gate, reintroducir el fallback por substring se desplegaba solo.
+    # El gateway fue la superficie que quedo expuesta por el bypass de
+    # autenticacion y este workflow despliega en CADA push a worker/**. El gate
+    # se mantiene: hoy ya no hay auth que romper (GOS es abierto desde
+    # 2026-10-15), pero si que un limite anonimo o la garantia de solo lectura
+    # se desactiven sin que nadie lo note.
     steps:
       - name: Checkout
         uses: actions/checkout@v7

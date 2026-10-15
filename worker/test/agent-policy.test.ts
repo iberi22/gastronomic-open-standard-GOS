@@ -34,7 +34,6 @@ import {
 function principal(over: Partial<Principal> = {}): Principal {
   return {
     id: 'key-abc',
-    tier: 'socio',
     workspace: 'priv-a',
     usedToday: 0,
     dailyLimit: 100,
@@ -49,8 +48,8 @@ describe('agent policy — the six rules, each with its refusal', () => {
     // takes it as an argument precisely so there is nothing to reach for.
     expect(() => requirePrincipal(null)).toThrow(/no principal/)
     expect(() => requirePrincipal(undefined)).toThrow(/no principal/)
-    // A principal without an id means the key store did not resolve it, which is
-    // a different failure and gets a different reason.
+    // A principal without an id means the embedding app did not identify the
+    // caller, which is a different failure and gets a different reason.
     expect(reasonOf(() => requirePrincipal(principal({ id: '' })))).toBe(
       'unauthenticated',
     )
@@ -102,8 +101,8 @@ describe('agent policy — the six rules, each with its refusal', () => {
       limit: 25,
       offset: 50,
     })
-    // The free tier allows 100 requests a day; a 10,000-record page would make
-    // that limit meaningless, so it is refused rather than served.
+    // The gateway allows 100 anonymous requests a day; a 10,000-record page would
+    // make that limit meaningless, so it is refused rather than served.
     for (const bad of [
       { limit: 0 },
       { limit: -5 },

@@ -267,6 +267,9 @@ curl https://gos.swal.network/api/spanish/colombia.json | jq '.recipes[] | selec
   API (skipped by the generator), so there are no recipes without frontmatter
 - Every served recipe has complete structured metadata
 - All endpoints support **CORS** - use from any domain
+- The API gateway is **keyless**: no API keys, no tiers, no paid access. The only
+  limit is an anonymous one: a 30 req/min burst per IP on every route, plus 100 requests/day per IP on non-static routes (open static data is not counted daily)
+  (owner decision, 2026-10-15). AI inference (`/api/ai/infer`) was removed.
 - Data is **static JSON** - fast and cacheable
 - Updated automatically on every deployment
 - No authentication required - free and open
@@ -279,4 +282,4 @@ curl https://gos.swal.network/api/spanish/colombia.json | jq '.recipes[] | selec
 
 ## 📄 License
 
-MIT - Same as the recipe collection
+AGPL-3.0-or-later — same as the rest of the GOS repository. See [LICENSE](./LICENSE).

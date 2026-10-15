@@ -3,6 +3,14 @@
 Estado: **corregido en codigo, pendiente de despliegue**.
 Worker afectado: `gos-api-gateway` (`https://gos-api-gateway.iberi22.workers.dev`).
 
+> **[2026-10-15] Historico / ya no aplicable.** GOS dejo de vender acceso: el
+> gateway ya no lee `x-api-key` ni valida nada contra D1, `/api/ai/infer` responde
+> 404 y las tablas `api_keys` / `credit_ledger` quedaron sin uso (no se borran).
+> Toda la ruta de autenticacion, su suite (`worker/test/auth.test.ts`) y el gate de
+> mutacion (`worker/test/mutation-check.sh`, `mutations.py`) fueron eliminados en
+> la rama `refactor/gateway-open-data-2026-10-15`. Este documento se conserva como
+> registro del incidente; los comandos de despliegue de abajo ya no proceden.
+
 ## Que pasaba
 
 Cualquier valor de `x-api-key` que contuviera la subcadena `socio` o `paid`

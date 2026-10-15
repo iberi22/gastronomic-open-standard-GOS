@@ -1,38 +1,66 @@
-export interface Env {
-  /** Workers Rate Limiting binding: rafaga free por IP (30/60s). */
-  RL_FREE_BURST?: RateLimit
-  /** Workers Rate Limiting binding: compuerta de intentos con key (ip / prefijo). */
-  RL_AUTH?: RateLimit
-  DB?: D1Database
-  /**
-   * Key de desarrollo, solo para local sin binding D1. NUNCA en produccion:
-   * si se define ahi, cualquiera que mande esa cadena obtiene tier de pago.
-   * Se carga con `wrangler secret put GOS_DEV_KEY` en local, o en .dev.vars.
-   */
-  GOS_DEV_KEY?: string
-  AI?: {
-    run: (
-      model: string,
-      opts: { prompt: string },
-    ) => Promise<{ response?: string; result?: string }>
-  }
-  ORIGIN_URL?: string
-  FREE_DAILY_LIMIT?: string
-  BILLING_URL?: string
-  /** Secreto de servicio hacia swal-billing. Nombre canonico (wrangler.toml/docs). */
-  SERVICE_SHARED_SECRET?: string
-  /**
-   * @deprecated Nombre antiguo; solo lectura de compatibilidad. Usar
-   * SERVICE_SHARED_SECRET. Se retirara cuando el deploy ya no lo defina.
-   */
-  BILLING_SERVICE_SECRET?: string
-}
+/**
+ * GOS Open Data API gateway.
+ *
+ * Owner decision (2026-10-15): GOS stops selling access. This Worker is now a
+ * keyless, read-only proxy in front of the static open dataset published on
+ * Cloudflare Pages: catalog, by-country recipes, all recipes, metadata, graph
+ * data and llms.txt.
+ *
+ * What is deliberately absent, so it cannot come back by accident:
+ *
+ *   - No API keys, tiers or plans. There is no credential to validate, so no
+ *     request can be privileged. The `x-api-key` / `Authorization` headers are
+ *     still accepted by CORS preflight (existing clients keep working) and are
+ *     ignored: they grant nothing.
+ *   - No `/api/ai/infer`, no Workers AI binding, no credit ledger, no pricing.
+ *     The endpoint existed only for paid keys; it answers 404 with a reason.
+ *   - No entity mutations. The gateway is read-only: every non-GET/HEAD request
+ *     is refused with 405 before it reaches the origin.
+ *
+ * What remains: CORS, Cache API, the proxy to the static origin, and one
+ * ANONYMOUS abuse limit that applies equally to everyone (per-IP burst via a
+ * Workers Rate Limiting binding, plus a per-IP daily quota in D1).
+ *
+ * Hardening (review round 2, 2026-10-15) — the abuse limit is FAIL-CLOSED:
+ *
+ *   - The burst limiter (`RL_FREE_BURST`) runs on EVERY route, antes de servir
+ *     de cache, incluidas las OPEN_ROUTES. Sin esa rafaga, los datos abiertos
+ *     solo tenian el limite de 30/min del binding y ningun tope diario.
+ *   - Si el limiter falta o lanza, la respuesta es 503 (no fail-open): el
+ *     gateway no puede prometer el limite, asi que no sirve.
+ *   - La identidad es SOLO `CF-Connecting-IP` (cabecera del edge, no
+ *     falsificable). `X-Forwarded-For` ya no se lee: rotarla renovaba el cubo.
+ *     Si falta `CF-Connecting-IP`, todas esas peticiones comparten un unico
+ *     cubo conservador (`anon:no-ip`).
+ *   - La cuota diaria en D1 sigue aplicandose SOLO a rutas no estaticas (ver
+ *     comentario en el paso 6): escribir en D1 en cada peticion de datos
+ *     abiertos quemaria el cupo compartido del free tier.
+ */
 
-import { reportSwalUsage, verifySwalKey } from './swal-billing'
+export interface Env {
+  /**
+   * Workers Rate Limiting binding: rafaga anonima por IP (30/60s).
+   * Obligatorio: si falta, el gateway responde 503 (fail-closed).
+   */
+  RL_FREE_BURST?: RateLimit
+  /**
+   * D1: cuota diaria anonima por IP (tabla free_quota, no keys).
+   * Obligatorio en las rutas no estaticas; si falta, 503 (fail-closed).
+   */
+  DB?: D1Database
+  ORIGIN_URL?: string
+  /**
+   * Nombre historico de la variable; hoy es el cupo diario ANONIMO por IP.
+   * El nombre se conserva porque ya esta desplegado en el Worker.
+   */
+  FREE_DAILY_LIMIT?: string
+}
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+  // Estas dos cabeceras siguen permitidas para no romper el preflight de
+  // clientes antiguos; el gateway ya NO las lee ni las valida.
   'Access-Control-Allow-Headers': 'Content-Type, x-api-key, Authorization',
 }
 
@@ -51,15 +79,6 @@ function jsonResponse(
   })
 }
 
-function billingSecret(env: Env): string | undefined {
-  // BILLING_SERVICE_SECRET: compat deprecada, ver Env.
-  return env.SERVICE_SHARED_SECRET || env.BILLING_SERVICE_SECRET || undefined
-}
-
-// Forma valida de una key antes de gastar un lookup: sin esto, cualquier
-// cadena arbitraria (o gigante) llegaba a D1 / al billing.
-const KEY_SHAPE = /^[A-Za-z0-9_.-]{1,128}$/
-
 async function sha256Hex(text: string): Promise<string> {
   const buf = await crypto.subtle.digest(
     'SHA-256',
@@ -70,26 +89,51 @@ async function sha256Hex(text: string): Promise<string> {
     .join('')
 }
 
-/** Id de ledger derivado en servidor de la key autenticada (nunca del body). */
-async function ledgerKeyId(apiKey: string): Promise<string> {
-  return `key:${(await sha256Hex(apiKey)).slice(0, 32)}`
+/**
+ * Identidad del cliente para el limite anonimo.
+ *
+ * Solo se confia en `CF-Connecting-IP`: la inyecta Cloudflare en el edge y el
+ * cliente no puede falsificarla. `X-Forwarded-For` NO se usa (es una cabecera
+ * arbitraria: rotarla renovaba el cubo y anulaba el limite).
+ *
+ * Si aun asi falta `CF-Connecting-IP` (no deberia pasar detras de Cloudflare),
+ * todas esas peticiones comparten UN cubo conservador en lugar de recibir una
+ * identidad nueva y gratuita en cada intento.
+ */
+function identityKey(request: Request): string {
+  const ip = request.headers.get('cf-connecting-ip')
+  return ip ? `ip:${ip}` : 'anon:no-ip'
 }
 
+/** Veredicto del limiter de rafaga. `unavailable` => fail-closed (503). */
+type LimitVerdict = 'ok' | 'exceeded' | 'unavailable'
+
 /**
- * Consulta un Rate Limiting binding. Fail-open si falta o falla: el limiter
- * es defensa en profundidad, no puede tumbar el servicio.
+ * Consulta el Rate Limiting binding. FAIL-CLOSED: si el binding no existe o
+ * lanza, devuelve `unavailable` para que el gateway responda 503. Un limiter
+ * que no puede garantizar el cupo no puede dejar pasar la peticion.
  */
-async function allowed(
+async function checkBurst(
   rl: RateLimit | undefined,
   key: string,
-): Promise<boolean> {
-  if (!rl) return true
+): Promise<LimitVerdict> {
+  if (!rl) {
+    console.error('RL_FREE_BURST binding missing: failing closed (503)')
+    return 'unavailable'
+  }
   try {
-    return (await rl.limit({ key })).success
+    return (await rl.limit({ key })).success ? 'ok' : 'exceeded'
   } catch (err) {
     console.error('rate limit binding error:', err)
-    return true
+    return 'unavailable'
   }
+}
+
+/** 503 cuando no se puede garantizar el limite (mismo cuerpo en ambos casos). */
+function limiterUnavailable(retryAfter: string): Response {
+  return jsonResponse({ error: 'rate limiter unavailable' }, 503, {
+    'Retry-After': retryAfter,
+  })
 }
 
 /**
@@ -106,12 +150,24 @@ function isStaticCacheable(path: string, method: string): boolean {
 
 const STATIC_TTL = 3600
 
+/** Rutas de datos abiertos que el gateway sirve. Unica fuente de verdad. */
+const OPEN_ROUTES = {
+  catalog: '/api/by-country/catalog.json',
+  countryRecipes: '/api/by-country/:country.json',
+  allRecipes: '/api/all.json',
+  withMetadata: '/api/with-metadata.json',
+  graphData: '/graph-data.json',
+  llmsSummary: '/llms.txt',
+  llmsFull: '/llms-full.txt',
+} as const
+
 export default {
   async fetch(
     request: Request,
     env: Env,
     ctx?: { waitUntil(p: Promise<unknown>): void },
   ): Promise<Response> {
+    // 1. Preflight: no cuenta para el limite ni toca origen/cache/D1.
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: CORS_HEADERS })
     }
@@ -122,391 +178,137 @@ export default {
       /\/$/,
       '',
     )
-    const freeDailyLimit = parseInt(env.FREE_DAILY_LIMIT || '100', 10)
+    const dailyLimit = parseInt(env.FREE_DAILY_LIMIT || '100', 10)
 
-    // 1. Documented Route Map endpoint
-    if (path === '/api' || path === '/api/' || path === '/api/routes') {
-      return jsonResponse({
-        name: 'GOS API Gateway',
-        version: '2.0.0',
-        description:
-          'Monetizable rate-limited API gateway for Gastronomic Open Standard dataset',
-        rateLimits: {
-          freeTier: `${freeDailyLimit} requests/day per IP`,
-          paidTier:
-            'Unlimited / high capacity (tier socio via x-api-key header)',
-        },
-        authentication: {
-          header: 'x-api-key: <KEY>',
-          bearer: 'Authorization: Bearer <KEY>',
-        },
-        routes: {
-          catalog: '/api/by-country/catalog.json',
-          countryRecipes: '/api/by-country/:country.json',
-          allRecipes: '/api/all.json',
-          withMetadata: '/api/with-metadata.json',
-          graphData: '/graph-data.json',
-          llmsSummary: '/llms.txt',
-          llmsFull: '/llms-full.txt',
-        },
-        documentation: `${originUrl}/llms-full.txt`,
-      })
+    // 2. Rafaga anonima, FAIL-CLOSED, en TODAS las rutas y ANTES de la cache.
+    //
+    //    Se aplica aqui arriba a proposito: cubre el mapa de rutas, el 404 de
+    //    /api/ai/infer, las OPEN_ROUTES (aunque vengan de Cache API) y el
+    //    proxy. Antes, las rutas estaticas solo tenian esta rafaga y ningun
+    //    tope diario, de modo que una IP podia pasar de 100 peticiones/dia
+    //    (30/min) sin que nada lo impidiera. No se anade una escritura D1 por
+    //    peticion para arreglarlo (ver paso 6).
+    const identity = identityKey(request)
+    const verdict = await checkBurst(env.RL_FREE_BURST, identity)
+    if (verdict === 'unavailable') {
+      // El limiter no responde: no podemos garantizar el cupo => no se sirve.
+      return limiterUnavailable('60')
     }
-
-    // 2. Authentication check for Paid Keys (D1)
-    // La key solo viaja por header (x-api-key / Authorization: Bearer). El
-    // `?key=` se descarta: acaba en logs/historial y se reenviaba al origen.
-    let apiKey = request.headers.get('x-api-key')
-    if (!apiKey) {
-      const authHeader = request.headers.get('Authorization')
-      apiKey = authHeader?.startsWith('Bearer ')
-        ? authHeader.substring(7).trim()
-        : null
-    }
-
-    const clientIp =
-      request.headers.get('cf-connecting-ip') ||
-      request.headers.get('x-forwarded-for') ||
-      '127.0.0.1'
-
-    // 2a. Rechazo barato ANTES de cualquier D1/billing: forma invalida y
-    // throttle de fallos por IP y por prefijo de key.
-    if (apiKey) {
-      if (!KEY_SHAPE.test(apiKey)) {
-        return jsonResponse(
-          {
-            error: 'Unauthorized: Invalid or inactive API key',
-            tier: 'invalid',
-          },
-          401,
-        )
-      }
-      // Compuerta de intentos por IP y por prefijo de key (binding, sin
-      // KV ni D1). Cuenta intentos, no solo fallos: un binding no se puede
-      // consultar sin incrementarlo.
-      const okIp = await allowed(env.RL_AUTH, `ip:${clientIp}`)
-      const okPfx = await allowed(env.RL_AUTH, `pfx:${apiKey.slice(0, 8)}`)
-      if (!okIp || !okPfx) {
-        return jsonResponse(
-          { error: 'Too many key attempts', tier: 'throttled' },
-          429,
-          { 'Retry-After': '60' },
-        )
-      }
-    }
-
-    let isPaidKey = false
-    let keyTier = 'free'
-    let swalKey: string | null = null
-    let swalRemaining = 0
-
-    // 2b. Keys swal_* → billing central (si configurado). Si no, rige legacy.
-    if (apiKey?.startsWith('swal_') && env.BILLING_URL && billingSecret(env)) {
-      const verdict = await verifySwalKey(
-        env.BILLING_URL,
-        billingSecret(env) as string,
-        apiKey,
-      )
-      if (!verdict) {
-        return jsonResponse(
-          { error: 'Billing unavailable: retry shortly' },
-          503,
-        )
-      }
-      if (!verdict.active) {
-        return jsonResponse(
-          {
-            error: 'Unauthorized: Invalid or inactive API key',
-            tier: 'invalid',
-          },
-          401,
-        )
-      }
-      isPaidKey = true
-      keyTier = `swal:${verdict.plan}`
-      swalKey = apiKey
-      swalRemaining = verdict.remaining
-    } else if (apiKey) {
-      if (env.DB) {
-        try {
-          const stmt = env.DB.prepare(
-            'SELECT key, tier, status FROM api_keys ' +
-              "WHERE key = ? AND status = 'active' " +
-              "AND (expires_at IS NULL OR datetime(expires_at) > datetime('now'))",
-          )
-          const result = await stmt
-            .bind(apiKey)
-            .first<{ key: string; tier: string; status: string }>()
-          if (result) {
-            isPaidKey = true
-            keyTier = result.tier || 'socio'
-          } else {
-            return jsonResponse(
-              {
-                error: 'Unauthorized: Invalid or inactive API key',
-                tier: 'invalid',
-              },
-              401,
-            )
-          }
-        } catch (dbErr) {
-          // Fail-closed. Si D1 no responde NO se puede saber si la key es
-          // valida, y adivinar concede acceso a quien mande una key con la
-          // palabra 'socio' o 'paid' en el cuerpo. Antes este catch hacia
-          // justo eso: produccion sirve 404 a esas keys mientras D1 falla.
-          // biome-ignore lint/suspicious/noConsole: unico rastro en los logs de Workers cuando D1 falla
-          console.error('D1 key check error:', dbErr)
-          return jsonResponse(
-            {
-              error: 'Service Unavailable: key validation unavailable',
-              tier: 'unavailable',
-            },
-            503,
-          )
-        }
-      } else {
-        // Sin binding DB no hay ninguna fuente de verdad contra la que
-        // validar. En local se permite una key explicita de desarrollo
-        // (env.GOS_DEV_KEY); nunca una heuristica sobre el contenido.
-        const devKey = env.GOS_DEV_KEY
-        if (devKey && apiKey === devKey) {
-          isPaidKey = true
-          keyTier = 'tiersocio'
-        } else {
-          return jsonResponse(
-            {
-              error: 'Unauthorized: no key store configured',
-              tier: 'no-store',
-            },
-            401,
-          )
-        }
-      }
-    }
-
-    // 2c. Mutaciones de /api/entities/*: solo con key de pago valida.
-    const isReadMethod = request.method === 'GET' || request.method === 'HEAD'
-    if (path.startsWith('/api/entities/') && !isReadMethod && !isPaidKey) {
+    if (verdict === 'exceeded') {
       return jsonResponse(
         {
-          error: 'Forbidden: entity mutations require a paid API key',
-          tier: 'free',
+          error: 'Rate limit exceeded: too many requests, slow down.',
+          message: 'Burst limit: 30 requests/minute per IP.',
         },
-        403,
+        429,
+        { 'Retry-After': '60' },
       )
     }
 
-    // 3. Rate limiting del tier free: rafaga por binding (30/60s por IP) y
-    // cuota diaria en D1 con UN UPSERT atomico, solo en rutas no estaticas.
-    // Las estaticas se sirven de Cache API y no tocan D1 ni KV.
-    const staticRoute = isStaticCacheable(path, request.method)
-    let currentCount = 0
-
-    if (!isPaidKey) {
-      if (!(await allowed(env.RL_FREE_BURST, `ip:${clientIp}`))) {
-        return jsonResponse(
-          {
-            error: 'Rate limit exceeded: too many requests, slow down.',
-            tier: 'free',
-            message: 'Burst limit: 30 requests/minute per IP.',
-          },
-          429,
-          { 'Retry-After': '60', 'X-RateLimit-Tier': 'free' },
-        )
-      }
-
-      if (!staticRoute && env.DB) {
-        const day = new Date().toISOString().slice(0, 10)
-        try {
-          const ipKey = `ip:${(await sha256Hex(clientIp)).slice(0, 32)}`
-          // Sin fila RETURNING = cuota agotada (el WHERE del DO UPDATE falla).
-          const row = await env.DB.prepare(
-            'INSERT INTO free_quota (ip_key, day, n) VALUES (?, ?, 1) ' +
-              'ON CONFLICT(ip_key, day) DO UPDATE SET n = n + 1 WHERE n < ? ' +
-              'RETURNING n',
-          )
-            .bind(ipKey, day, freeDailyLimit)
-            .first<{ n: number }>()
-          if (!row) {
-            return jsonResponse(
-              {
-                error: `Rate limit exceeded: ${freeDailyLimit} req/day for free tier.`,
-                tier: 'free',
-                limit: freeDailyLimit,
-                remaining: 0,
-                message:
-                  'Provide a valid paid key in header x-api-key for unlimited access.',
-              },
-              429,
-              {
-                'Retry-After': '86400',
-                'X-RateLimit-Limit': String(freeDailyLimit),
-                'X-RateLimit-Remaining': '0',
-                'X-RateLimit-Tier': 'free',
-              },
-            )
-          }
-          currentCount = row.n
-        } catch (dbErr) {
-          // Fail-open: la rafaga del binding sigue protegiendo.
-          // biome-ignore lint/suspicious/noConsole: unico rastro en los logs de Workers cuando D1 falla
-          console.error('D1 free quota error:', dbErr)
-        }
-      }
-    }
-
-    // 3b. POST /api/ai/infer — inferencia socio via Workers AI (solo paid keys).
-    // Fuente: site/workers/ai.ts adaptado a bindings del gateway (DB,
-    // ledger en D1 tabla credit_ledger. Pricing = billing.ts calculatePrice inline).
-    if (path === '/api/ai/infer') {
-      if (request.method !== 'POST') {
-        return jsonResponse({ error: 'method not allowed, use POST' }, 405)
-      }
-      if (!isPaidKey) {
-        return jsonResponse(
-          {
-            error: 'tier sin credito: inferencia requiere x-api-key de socio',
-            tier: 'free',
-          },
-          402,
-        )
-      }
-      // Cuota del billing central para keys swal_* (el plan free/legacy no llega aquí).
-      if (swalKey && swalRemaining <= 0) {
-        return jsonResponse(
-          { error: 'cuota diaria agotada', tier: keyTier, remaining: 0 },
-          429,
-        )
-      }
-      let body: { prompt?: unknown }
-      try {
-        body = (await request.json()) as typeof body
-      } catch {
-        return jsonResponse({ error: 'invalid json' }, 400)
-      }
-      const prompt = typeof body.prompt === 'string' ? body.prompt : ''
-      if (!prompt) return jsonResponse({ error: 'prompt required' }, 400)
-
-      // El ledger se indexa por la key AUTENTICADA (hash en servidor). El
-      // `appId` del body se ignora: antes el cliente elegia su propio ledger.
-      const ledgerId = await ledgerKeyId(apiKey as string)
-      const period = new Date().toISOString().slice(0, 7)
-      // TIERS socio/socio-managed comparten monthlyCredit 50000 (billing.ts)
-      const monthlyCredit = 50000
-      const estimated = Math.ceil(prompt.length / 4)
-      if (estimated > monthlyCredit) {
-        return jsonResponse(
-          { error: 'credito agotado', limit: monthlyCredit },
-          402,
-        )
-      }
-      // Fail-closed: sin ledger no hay forma de contar credito (F-01).
-      if (!env.DB) {
-        return jsonResponse(
-          { error: 'ledger unavailable', tier: 'unavailable' },
-          503,
-        )
-      }
-      // Reserva ATOMICA: una sola sentencia comprueba cuota e incrementa.
-      let reserved: number | null
-      try {
-        await env.DB.prepare(
-          'INSERT OR IGNORE INTO credit_ledger (key_id, period, used) VALUES (?, ?, 0)',
-        )
-          .bind(ledgerId, period)
-          .run()
-        const row = await env.DB.prepare(
-          'UPDATE credit_ledger SET used = used + ? ' +
-            'WHERE key_id = ? AND period = ? AND used + ? <= ? RETURNING used',
-        )
-          .bind(estimated, ledgerId, period, estimated, monthlyCredit)
-          .first<{ used: number }>()
-        reserved = row ? row.used : null
-      } catch (err) {
-        console.error('D1 ledger error:', err)
-        return jsonResponse(
-          { error: 'ledger unavailable', tier: 'unavailable' },
-          503,
-        )
-      }
-      if (reserved === null) {
-        return jsonResponse(
-          { error: 'credito agotado', limit: monthlyCredit },
-          402,
-        )
-      }
-      // Ajuste del ledger tras el hecho (delta puede ser negativo = devolucion).
-      const adjust = async (delta: number): Promise<number | null> => {
-        if (delta === 0) return reserved
-        try {
-          const r = await (env.DB as D1Database)
-            .prepare(
-              'UPDATE credit_ledger SET used = MAX(0, used + ?) ' +
-                'WHERE key_id = ? AND period = ? RETURNING used',
-            )
-            .bind(delta, ledgerId, period)
-            .first<{ used: number }>()
-          return r ? r.used : null
-        } catch (err) {
-          console.error('D1 ledger adjust error:', err)
-          return null
-        }
-      }
-      if (!env.AI) {
-        await adjust(-estimated)
-        return jsonResponse({ error: 'AI binding no disponible' }, 501)
-      }
-      let text = ''
-      try {
-        const aiRes = await env.AI.run('@cf/meta/llama-3-8b-instruct', {
-          prompt,
-        })
-        text = aiRes?.response ?? aiRes?.result ?? ''
-      } catch (err) {
-        await adjust(-estimated)
-        return jsonResponse(
-          {
-            error: 'Workers AI error',
-            details: String(err instanceof Error ? err.message : err),
-          },
-          502,
-        )
-      }
-      const tokensUsed = Math.ceil(text.length / 4) || estimated
-      const newUsed = (await adjust(tokensUsed - estimated)) ?? reserved
-      // billing.ts: AI*1.10 margen, subtotal + 20% handling
-      const aiWithMargin = tokensUsed * 0.00001 * 1.1
-      const subtotal = 0.02 + aiWithMargin
-      const handling = subtotal * 0.2
-      // Reporta consumo al billing central (best-effort, no bloquea respuesta).
-      if (swalKey && env.BILLING_URL && billingSecret(env)) {
-        await reportSwalUsage(
-          env.BILLING_URL,
-          billingSecret(env) as string,
-          swalKey,
-        )
-      }
+    // 3. Mapa de rutas documentado: lista SOLO lo que existe.
+    if (path === '/api' || path === '/api/' || path === '/api/routes') {
       return jsonResponse({
-        text,
-        tokensUsed,
-        cost: subtotal + handling,
-        breakdown: {
-          infra: 0.02,
-          aiBase: tokensUsed * 0.00001,
-          aiWithMargin,
-          handling,
-          total: subtotal + handling,
+        name: 'GOS Open Data API',
+        version: '3.0.0',
+        description:
+          'Keyless, read-only access to the Gastronomic Open Standard open dataset.',
+        authentication:
+          'none: this API is open and no credential is required or read',
+        rateLimits: {
+          burst: '30 requests/minute per IP',
+          daily: `${dailyLimit} requests/day per IP (non-static routes)`,
         },
-        credit: {
-          used: newUsed,
-          limit: monthlyCredit,
-          remaining: monthlyCredit - newUsed,
-        },
+        routes: OPEN_ROUTES,
+        documentation: `${originUrl}/llms-full.txt`,
+        source: 'https://github.com/iberi22/gastronomic-open-standard-GOS',
       })
     }
 
-    // 4. Proxy Static Data
-    // Nunca se reenvia `key` al origen (credencial en query string).
+    // 4. /api/ai/infer se retiro el 2026-10-15 (solo existia para keys de
+    // pago). 404 explicito: no se reenvia al origen, asi que ningun despliegue
+    // del sitio puede reactivarlo por accidente.
+    if (path === '/api/ai/infer') {
+      return jsonResponse(
+        {
+          error:
+            'Not Found: AI inference was removed on 2026-10-15. GOS serves open data only.',
+        },
+        404,
+      )
+    }
+
+    // 5. Sin autenticacion: el gateway es de solo lectura. Cualquier metodo de
+    // escritura se rechaza ANTES de tocar el origen o la cuota.
+    const isReadMethod = request.method === 'GET' || request.method === 'HEAD'
+    if (!isReadMethod) {
+      return jsonResponse(
+        {
+          error:
+            'Method Not Allowed: the GOS gateway is read-only (no mutations).',
+        },
+        405,
+        { Allow: 'GET, HEAD, OPTIONS' },
+      )
+    }
+
+    // 6. Cuota diaria anonima en D1, SOLO en rutas no estaticas y FAIL-CLOSED.
+    //
+    //    Por que los datos abiertos estaticos NO se cuentan en D1 (decision del
+    //    orquestador, 2026-10-15): el free tier concede 100.000 escrituras
+    //    D1/dia COMPARTIDAS entre todos los proyectos SWAL. Un UPSERT por
+    //    peticion de datos abiertos (catalog, all.json, graph-data, llms...)
+    //    quemaria ese cupo en horas. Esas rutas ya estan protegidas por la
+    //    rafaga del paso 2, que se aplica antes de servir de cache y no gasta
+    //    escrituras D1. La cuota diaria se conserva donde ya existia: rutas no
+    //    estaticas (/api/entities, /api/agent, /api/v1 no cacheable, etc.).
+    //    Si D1 falta o lanza, no se puede garantizar la cuota => 503.
+    const staticRoute = isStaticCacheable(path, request.method)
+    let counted = false
+    let currentCount = 0
+
+    if (!staticRoute) {
+      if (!env.DB) {
+        console.error('D1 DB binding missing: failing closed (503)')
+        return limiterUnavailable('60')
+      }
+      const day = new Date().toISOString().slice(0, 10)
+      try {
+        const ipKey = `ip:${(await sha256Hex(identity)).slice(0, 32)}`
+        // Sin fila RETURNING = cuota agotada (el WHERE del DO UPDATE falla).
+        const row = await env.DB.prepare(
+          'INSERT INTO free_quota (ip_key, day, n) VALUES (?, ?, 1) ' +
+            'ON CONFLICT(ip_key, day) DO UPDATE SET n = n + 1 WHERE n < ? ' +
+            'RETURNING n',
+        )
+          .bind(ipKey, day, dailyLimit)
+          .first<{ n: number }>()
+        if (!row) {
+          return jsonResponse(
+            {
+              error: `Rate limit exceeded: ${dailyLimit} req/day per IP.`,
+              limit: dailyLimit,
+              remaining: 0,
+            },
+            429,
+            {
+              'Retry-After': '86400',
+              'X-RateLimit-Limit': String(dailyLimit),
+              'X-RateLimit-Remaining': '0',
+            },
+          )
+        }
+        counted = true
+        currentCount = row.n
+      } catch (dbErr) {
+        // Fail-closed: sin D1 la cuota diaria no esta garantizada.
+        console.error('D1 free quota error:', dbErr)
+        return limiterUnavailable('60')
+      }
+    }
+
+    // 7. Proxy Static Data
+    // `key` es una forma heredada de credencial que ya no autentica nada; no se
+    // reenvia al origen para que no acabe en sus logs.
     const fwd = new URLSearchParams(url.search)
     fwd.delete('key')
     const fwdQs = fwd.toString()
@@ -528,7 +330,6 @@ export default {
       if (!originRes) {
         originRes = await fetch(targetUrl, {
           method: request.method,
-          body: isReadMethod ? undefined : await request.arrayBuffer(),
           headers: {
             'User-Agent': 'GOS-API-Gateway/1.0',
             Accept: 'application/json, text/plain, */*',
@@ -553,17 +354,11 @@ export default {
 
       const resHeaders = new Headers(originRes.headers)
       for (const [k, v] of Object.entries(CORS_HEADERS)) resHeaders.set(k, v)
-
-      if (isPaidKey) {
-        resHeaders.set('X-RateLimit-Tier', keyTier)
-        resHeaders.set('X-RateLimit-Limit', 'unlimited')
-        resHeaders.set('X-RateLimit-Remaining', 'unlimited')
-      } else {
-        resHeaders.set('X-RateLimit-Tier', 'free')
-        resHeaders.set('X-RateLimit-Limit', String(freeDailyLimit))
+      resHeaders.set('X-RateLimit-Limit', String(dailyLimit))
+      if (counted) {
         resHeaders.set(
           'X-RateLimit-Remaining',
-          String(Math.max(0, freeDailyLimit - currentCount)),
+          String(Math.max(0, dailyLimit - currentCount)),
         )
       }
 

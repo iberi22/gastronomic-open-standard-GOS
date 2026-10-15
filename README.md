@@ -20,9 +20,10 @@ tiers and no AI credits.
 
 1. **Humans**: browse recipes/ingredients/science with an interactive graph
    (`/graph`), PWA offline-first.
-2. **Agents & apps (business)**: consume the data as a free JSON API with rate
-   limit, or paid keyed tier for health/diet apps (see issue #237). AI-first SEO
-   (`llms.txt`, JSON-LD, sitemap) makes GOS the #1 extraction source.
+2. **Agents & apps**: consume the data as an open, keyless JSON API with an
+   anonymous rate limit (30 req/min/IP on every route, 100 req/day/IP on non-static routes). GOS sells no access: no keys, no tiers,
+   no AI credits. AI-first SEO (`llms.txt`, JSON-LD, sitemap) makes GOS the #1
+   extraction source.
 
 ## Use
 
@@ -47,7 +48,8 @@ Quality gates: `pnpm run lint` (Biome code + markdownlint content + manuallint),
 Base `https://gos.swal.network/api` — `index.json`, `all.json`,
 `countries` (18, top colombian 122), `by-country/<c>.json`, `spanish/*.json`,
 `ingredients/variants.json`, `substances.json`, `health`, `entities/*`.
-Full reference: [API_README.md](./API_README.md). Paid keyed tier: issue #237.
+Full reference: [API_README.md](./API_README.md). The gateway is keyless: no API
+keys, no tiers, no paid access (owner decision, 2026-10-15).
 
 ## Vectors & embeddings (bulk download, live)
 

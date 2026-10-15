@@ -4,7 +4,7 @@
  * Every fetch goes through an injected `fetchRoutes`, so a test can drive all of
  * this without a network and without inventing a data path. The default reads the
  * catalogue from the routes the gateway already declares in its own root response
- * (`src/index.ts` L81-90) — the worker is a gateway, not a database.
+ * (`OPEN_ROUTES` in `src/index.ts`) — the worker is a gateway, not a database.
  */
 
 import type {
@@ -189,37 +189,32 @@ export function createTools(fetchRoutes: RouteFetcher): AgentTools {
     'capabilities.get'(facts, principal) {
       // Authenticating this too keeps the surface uniform: an agent that cannot
       // call `capabilities.get` cannot discover what it is allowed to do.
-      const p = authorise(principal, { calls: 0 })
+      authorise(principal, { calls: 0 })
 
       return {
         tools: [...READ_ONLY_TOOLS],
         readOnly: true,
         authentication: {
-          header: 'x-api-key',
+          header: 'none',
           modes: [
-            'D1 api_keys table (tier and expiry checked)',
-            'GOS_DEV_KEY when no key store is configured',
+            'anonymous: the gateway reads no credential and grants no privileges',
           ],
-          onKeyStoreUnavailable:
-            'fail-closed with 503; a key is never guessed from its own contents',
         },
         rateLimits: {
-          freeDailyPerIp: facts.freeDailyLimit,
-          freeTierNote: `${facts.freeDailyLimit} requests/day per IP for callers without a paid key`,
-          paidTierNote: `tier ${p.tier}: rate limited by the gateway, not by this pilot`,
+          dailyPerIp: facts.freeDailyLimit,
+          note: `${facts.freeDailyLimit} requests/day per IP, identical for every caller`,
         },
-        catalogAvailable:
-          facts.keyStoreConfigured || facts.routes.allRecipes !== undefined,
+        catalogAvailable: facts.routes.allRecipes !== undefined,
         notProvided: [
           'any write, purchase or configuration change',
           "access to another workspace's private records",
           'medical or clinical data of any kind',
-          'payments: the subscription is settled by swal-billing, not by these tools',
+          'paid access: GOS sells nothing; it is the open information repository',
         ],
         status: {
           catalog: facts.routes.allRecipes ? 'available' : 'awaiting-founder',
           'mcp-endpoint': 'awaiting-founder',
-          'paid-tier-enforcement': 'available',
+          'open-data-gateway': 'available',
         },
       }
     },

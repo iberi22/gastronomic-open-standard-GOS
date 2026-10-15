@@ -1,5 +1,9 @@
-// Hardening del gateway (N-03, N-04, F-01, F-02, entities, ?key=, secretos).
-// Cada caso falla contra la version anterior de src/index.ts.
+// Hardening del gateway ABIERTO de GOS.
+//
+// Este archivo ya no prueba autenticacion de keys (el gateway dejo de leerlas el
+// 2026-10-15). Lo que queda blindado es lo que SI sigue siendo necesario una vez
+// que la API es publica: el limite anonimo antiabuso (rafaga + cuota diaria) no
+// se puede saltar, el cache no toca D1, y las mutaciones no llegan al origen.
 
 import { describe, expect, it, vi } from 'vitest'
 import worker from '../src/index'
@@ -35,158 +39,21 @@ function countingDb(fake: FakeD1) {
   return { db, c }
 }
 
-function setup(opts: { aiChars?: number } = {}) {
+function setup() {
   const fake = createFakeD1({ applySchema: true })
-  fake.seed({ key: 'gs_key_alpha', tier: 'socio' })
-  fake.seed({ key: 'gs_key_beta', tier: 'socio' })
   const { db, c } = countingDb(fake)
+  // Limiter de rafaga permisivo por defecto: el gateway es fail-closed, asi
+  // que sin binding TODA peticion seria 503. Cada test que quiera medir la
+  // rafaga lo sobreescribe con su propio fakeRL.
   const env = {
     ORIGIN_URL: 'https://origin.test',
     DB: db,
-    AI: {
-      run: async () => ({ response: 'x'.repeat(opts.aiChars ?? 40) }),
-    },
+    RL_FREE_BURST: fakeRL(1000),
   }
   return { fake, env, c }
 }
 
-function infer(
-  key: string,
-  prompt: string,
-  extra: Record<string, unknown> = {},
-) {
-  return new Request(`${GW}/api/ai/infer`, {
-    method: 'POST',
-    headers: { 'x-api-key': key, 'content-type': 'application/json' },
-    body: JSON.stringify({ prompt, ...extra }),
-  })
-}
-
-async function ledger(fake: FakeD1) {
-  const r = await fake.db
-    .prepare('SELECT key_id, used FROM credit_ledger')
-    .all<{
-      key_id: string
-      used: number
-    }>()
-  return r.results ?? []
-}
-
-describe('N-03: ledger por key autenticada, no por appId del cliente', () => {
-  it('cambiar appId en el body NO abre un ledger nuevo', async () => {
-    const { fake, env } = setup()
-    const prompt = 'a'.repeat(4000) // 1000 tokens estimados
-    for (const appId of ['a1', 'a2', 'a3']) {
-      const res = await worker.fetch(
-        infer('gs_key_alpha', prompt, { appId }),
-        env as never,
-      )
-      expect(res.status).toBe(200)
-    }
-    const rows = await ledger(fake)
-    expect(rows).toHaveLength(1)
-    expect(rows[0].key_id).toMatch(/^key:[0-9a-f]{32}$/)
-    expect(rows[0].key_id).not.toContain('gs_key_alpha')
-    expect(rows[0].used).toBe(30) // 3 x 10 tokens reales, acumulados en UN ledger
-  })
-
-  it('dos keys distintas tienen ledgers independientes', async () => {
-    const { fake, env } = setup()
-    await worker.fetch(infer('gs_key_alpha', 'hola'), env as never)
-    await worker.fetch(infer('gs_key_beta', 'hola'), env as never)
-    expect(await ledger(fake)).toHaveLength(2)
-  })
-
-  it('sin D1 el ledger falla cerrado (503), no concede credito', async () => {
-    const { env } = setup()
-    const res = await worker.fetch(infer('gs_key_alpha', 'hola'), {
-      ...env,
-      DB: undefined,
-      GOS_DEV_KEY: 'gs_key_alpha',
-    } as never)
-    expect(res.status).toBe(503)
-  })
-})
-
-describe('atomicidad del contador', () => {
-  it('5 peticiones concurrentes de 20000 tokens: caben exactamente 2 (cuota 50000)', async () => {
-    const { fake, env } = setup({ aiChars: 80000 })
-    const prompt = 'p'.repeat(80000) // 20000 tokens
-    const results = await Promise.all(
-      Array.from({ length: 5 }, () =>
-        worker.fetch(infer('gs_key_alpha', prompt), env as never),
-      ),
-    )
-    const statuses = results.map((r) => r.status).sort()
-    expect(statuses).toEqual([200, 200, 402, 402, 402])
-    const rows = await ledger(fake)
-    expect(rows[0].used).toBeLessThanOrEqual(50000)
-  })
-})
-
-describe('N-04: throttle antes de D1', () => {
-  it('key malformada: 401 sin tocar D1', async () => {
-    const { env, c } = setup()
-    for (const bad of ['a b', "x'; DROP--", 'k'.repeat(500), 'ñandú']) {
-      const res = await worker.fetch(
-        new Request(`${GW}/api/all.json`, { headers: { 'x-api-key': bad } }),
-        env as never,
-      )
-      expect(res.status).toBe(401)
-    }
-    expect(c.prepares).toBe(0)
-  })
-
-  it('tras agotar el binding RL_AUTH, la IP recibe 429 y D1 deja de consultarse', async () => {
-    const { env, c } = setup()
-    const e = { ...env, RL_AUTH: fakeRL(3) }
-    const hit = (key: string) =>
-      worker.fetch(
-        new Request(`${GW}/api/all.json`, {
-          headers: { 'x-api-key': key, 'cf-connecting-ip': '9.9.9.9' },
-        }),
-        e as never,
-      )
-    // El gate cuenta ip y prefijo; claves con prefijo distinto aislan la IP.
-    for (let i = 0; i < 3; i++)
-      expect((await hit(`bad${i}_key_x`)).status).toBe(401)
-    const before = c.prepares
-    expect(before).toBe(3)
-    for (let i = 10; i < 20; i++)
-      expect((await hit(`bad${i}_key_x`)).status).toBe(429)
-    expect(c.prepares).toBe(before)
-  })
-
-  it('throttle por prefijo de key aunque cambie la IP', async () => {
-    const { env, c } = setup()
-    const e = { ...env, RL_AUTH: fakeRL(2) }
-    const hit = (ip: string) =>
-      worker.fetch(
-        new Request(`${GW}/api/all.json`, {
-          headers: { 'x-api-key': 'prefixAA_guess', 'cf-connecting-ip': ip },
-        }),
-        e as never,
-      )
-    await hit('1.1.1.1')
-    await hit('2.2.2.2')
-    const before = c.prepares
-    expect((await hit('3.3.3.3')).status).toBe(429)
-    expect(c.prepares).toBe(before)
-  })
-
-  it('sin binding RL_AUTH falla abierto (no tumba el servicio)', async () => {
-    const { env } = setup()
-    const res = await worker.fetch(
-      new Request(`${GW}/api/all.json`, {
-        headers: { 'x-api-key': 'nope_key1' },
-      }),
-      env as never,
-    )
-    expect(res.status).toBe(401)
-  })
-})
-
-describe('rate limit free: binding + D1, sin KV', () => {
+describe('limite anonimo: rafaga por IP (binding), sin D1 ni KV', () => {
   const origin = () =>
     vi.stubGlobal(
       'fetch',
@@ -211,7 +78,8 @@ describe('rate limit free: binding + D1, sin KV', () => {
     })
     origin()
     const kv = { get: vi.fn(), put: vi.fn() }
-    const e = { ...env, RATE_LIMIT_KV: kv, RL_FREE_BURST: fakeRL(1000) }
+    const rl = fakeRL(1000)
+    const e = { ...env, RATE_LIMIT_KV: kv, RL_FREE_BURST: rl }
     for (const p of [
       '/api/all.json',
       '/api/by-country/mx.json',
@@ -229,6 +97,71 @@ describe('rate limit free: binding + D1, sin KV', () => {
     expect(c.prepares).toBe(0)
     expect(kv.get).not.toHaveBeenCalled()
     expect(kv.put).not.toHaveBeenCalled()
+    // La rafaga SI cubre cada peticion, incluida la que se sirve de cache:
+    // 4 rutas + la lectura cacheada = 5 peticiones, 5 consultas al limiter.
+    expect(rl.calls.length).toBe(5)
+  })
+
+  it('ruta abierta estatica sin binding DB sigue 200 (no se cuenta en D1)', async () => {
+    origin()
+    const e = { ORIGIN_URL: 'https://origin.test', RL_FREE_BURST: fakeRL(10) }
+    const r = await get('/api/all.json', e)
+    vi.unstubAllGlobals()
+    expect(r.status).toBe(200)
+  })
+
+  it('la rafaga cubre TODOS los datos abiertos (OPEN_ROUTES), tambien sin D1', async () => {
+    origin()
+    const e = { ORIGIN_URL: 'https://origin.test', RL_FREE_BURST: fakeRL(2) }
+    const st: number[] = []
+    for (const p of [
+      '/api/all.json',
+      '/api/by-country/mx.json',
+      '/graph-data.json',
+    ]) {
+      st.push((await get(p, e)).status)
+    }
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const originCalls = f.mock.calls.length
+    vi.unstubAllGlobals()
+    expect(st).toEqual([200, 200, 429])
+    // La tercera no llego al origen: la rafaga corto antes de la cache/proxy.
+    expect(originCalls).toBe(2)
+  })
+
+  it('fail-closed: sin RL_FREE_BURST responde 503 y no toca el origen', async () => {
+    const { env } = setup()
+    origin()
+    const e: Record<string, unknown> = { ...env }
+    delete e.RL_FREE_BURST
+    for (const p of ['/api/all.json', '/api/entities/recipe']) {
+      const r = await get(p, e)
+      expect(r.status).toBe(503)
+      expect(await r.json()).toEqual({ error: 'rate limiter unavailable' })
+      expect(r.headers.get('retry-after')).toBe('60')
+    }
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const originCalls = f.mock.calls.length
+    vi.unstubAllGlobals()
+    expect(originCalls).toBe(0)
+  })
+
+  it('fail-closed: RL_FREE_BURST que lanza responde 503 (no fail-open)', async () => {
+    const { env } = setup()
+    origin()
+    const boom = {
+      async limit(): Promise<{ success: boolean }> {
+        throw new Error('RL_ERROR: injected failure (test)')
+      },
+    }
+    const r = await get('/api/all.json', { ...env, RL_FREE_BURST: boom })
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const originCalls = f.mock.calls.length
+    vi.unstubAllGlobals()
+    expect(r.status).toBe(503)
+    expect(await r.json()).toEqual({ error: 'rate limiter unavailable' })
+    expect(r.headers.get('retry-after')).toBe('60')
+    expect(originCalls).toBe(0)
   })
 
   it('rafaga: superado el limite del binding responde 429 sin D1 ni origen', async () => {
@@ -244,7 +177,7 @@ describe('rate limit free: binding + D1, sin KV', () => {
     expect(c.prepares).toBe(0)
   })
 
-  it('rafaga: es por IP', async () => {
+  it('rafaga: es por IP y no por credencial (todos son anonimos)', async () => {
     const { env } = setup()
     origin()
     const e = { ...env, RL_FREE_BURST: fakeRL(1) }
@@ -252,6 +185,26 @@ describe('rate limit free: binding + D1, sin KV', () => {
     expect((await get('/api/all.json', e, '1.1.1.1')).status).toBe(429)
     expect((await get('/api/all.json', e, '2.2.2.2')).status).toBe(200)
     vi.unstubAllGlobals()
+  })
+
+  it('una cabecera x-api-key no cambia NADA: misma rafaga, mismo 200', async () => {
+    const { env, c } = setup()
+    origin()
+    const rl = fakeRL(1)
+    const e = { ...env, RL_FREE_BURST: rl }
+    const withKey = await worker.fetch(
+      new Request(`${GW}/api/all.json`, { headers: { 'x-api-key': 'socio' } }),
+      e as never,
+    )
+    const anonymous = await worker.fetch(
+      new Request(`${GW}/api/all.json`),
+      e as never,
+    )
+    vi.unstubAllGlobals()
+    expect(withKey.status).toBe(200)
+    expect(anonymous.status).toBe(429)
+    // El claim de una key no se consulta en ningun sitio (ni D1 ni billing).
+    expect(c.sqls.some((q) => q.includes('api_keys'))).toBe(false)
   })
 
   it('cuota diaria en D1: un UPSERT por peticion no estatica y 429 al agotarse', async () => {
@@ -287,70 +240,159 @@ describe('rate limit free: binding + D1, sin KV', () => {
     expect(rs.filter((r) => r.status === 200)).toHaveLength(4)
   })
 
-  it('una key de pago no cuenta cuota ni rafaga free', async () => {
-    const { env, c } = setup()
-    origin()
-    const rl = fakeRL(0)
-    const e = { ...env, RL_FREE_BURST: rl, FREE_DAILY_LIMIT: '1' }
-    const r = await worker.fetch(
-      new Request(`${GW}/api/entities/recipe`, {
-        headers: { 'x-api-key': 'gs_key_alpha' },
-      }),
-      e as never,
-    )
-    vi.unstubAllGlobals()
-    expect(r.status).toBe(200)
-    expect(rl.calls).toHaveLength(0)
-    expect(c.sqls.some((q) => q.includes('free_quota'))).toBe(false)
-  })
-
-  it('D1 caida en la cuota free: falla abierto, la rafaga sigue protegiendo', async () => {
+  it('D1 caida en la cuota free: fail-closed, 503 y el dato no se sirve', async () => {
     const { env } = setup()
     origin()
     const bad = createFakeD1({ mode: 'throws', applySchema: true })
     const r = await get('/api/entities/recipe', { ...env, DB: bad.db })
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const originCalls = f.mock.calls.length
     vi.unstubAllGlobals()
-    expect(r.status).toBe(200)
+    expect(r.status).toBe(503)
+    expect(await r.json()).toEqual({ error: 'rate limiter unavailable' })
+    expect(r.headers.get('retry-after')).toBe('60')
+    expect(originCalls).toBe(0)
+  })
+
+  it('sin binding DB las rutas no estaticas fallan cerrado (503); la rafaga sigue', async () => {
+    origin()
+    const e = { ORIGIN_URL: 'https://origin.test', RL_FREE_BURST: fakeRL(2) }
+    const st: number[] = []
+    for (let i = 0; i < 4; i++)
+      st.push((await get('/api/entities/x', e)).status)
+    const f = globalThis.fetch as ReturnType<typeof vi.fn>
+    const originCalls = f.mock.calls.length
+    vi.unstubAllGlobals()
+    expect(st).toEqual([503, 503, 429, 429])
+    expect(originCalls).toBe(0)
   })
 })
 
-describe('/api/entities/*: mutaciones solo con key de pago', () => {
-  it('POST sin key -> 403, no llega al origen', async () => {
-    const { env } = setup()
-    const f = vi.fn(async () => new Response('{}', { status: 200 }))
-    vi.stubGlobal('fetch', f)
-    const res = await worker.fetch(
-      new Request(`${GW}/api/entities/recipe`, { method: 'POST', body: '{}' }),
-      env as never,
+describe('identidad del limite: solo CF-Connecting-IP', () => {
+  const origin = () =>
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('{"ok":true}', { status: 200 })),
     )
+
+  it('sin CF-Connecting-IP, rotar X-Forwarded-For NO renueva el cubo', async () => {
+    const { env } = setup()
+    origin()
+    const rl = fakeRL(2)
+    const e = { ...env, RL_FREE_BURST: rl }
+    const call = (xff: string) =>
+      worker.fetch(
+        new Request(`${GW}/api/all.json`, {
+          headers: { 'x-forwarded-for': xff },
+        }),
+        e as never,
+      )
+    const st = [
+      (await call('1.1.1.1')).status,
+      (await call('2.2.2.2')).status,
+      (await call('3.3.3.3')).status,
+    ]
     vi.unstubAllGlobals()
-    expect(res.status).toBe(403)
-    expect(f).not.toHaveBeenCalled()
+    expect(st).toEqual([200, 200, 429])
+    // Todas comparten el unico cubo conservador, sin importar la XFF.
+    expect(new Set(rl.calls)).toEqual(new Set(['anon:no-ip']))
   })
 
-  it('DELETE con key de pago valida se reenvia; GET libre sigue igual', async () => {
+  it('con CF-Connecting-IP presente, X-Forwarded-For se ignora', async () => {
     const { env } = setup()
-    const f = vi.fn(async () => new Response('{}', { status: 200 }))
-    vi.stubGlobal('fetch', f)
-    const del = await worker.fetch(
-      new Request(`${GW}/api/entities/recipe?id=1`, {
-        method: 'DELETE',
-        headers: { 'x-api-key': 'gs_key_alpha' },
-      }),
-      env as never,
+    origin()
+    const rl = fakeRL(1)
+    const e = { ...env, RL_FREE_BURST: rl }
+    const call = (ip: string, xff: string) =>
+      worker.fetch(
+        new Request(`${GW}/api/all.json`, {
+          headers: { 'cf-connecting-ip': ip, 'x-forwarded-for': xff },
+        }),
+        e as never,
+      )
+    expect((await call('9.9.9.9', '1.1.1.1')).status).toBe(200)
+    // Misma IP, XFF distinta: mismo cubo => 429.
+    expect((await call('9.9.9.9', '2.2.2.2')).status).toBe(429)
+    // IP distinta: cubo distinto.
+    expect((await call('8.8.8.8', '2.2.2.2')).status).toBe(200)
+    vi.unstubAllGlobals()
+    expect(rl.calls).toEqual(['ip:9.9.9.9', 'ip:9.9.9.9', 'ip:8.8.8.8'])
+  })
+
+  it('sin ninguna IP, la XFF rotada tampoco crea cubos nuevos en D1', async () => {
+    const { fake, env } = setup()
+    origin()
+    const e = { ...env, FREE_DAILY_LIMIT: '2' }
+    const call = (xff: string) =>
+      worker.fetch(
+        new Request(`${GW}/api/entities/recipe`, {
+          headers: { 'x-forwarded-for': xff },
+        }),
+        e as never,
+      )
+    for (const xff of ['1.1.1.1', '2.2.2.2', '3.3.3.3']) await call(xff)
+    vi.unstubAllGlobals()
+    const rows = await fake.db
+      .prepare('SELECT ip_key, n FROM free_quota')
+      .all<{ ip_key: string; n: number }>()
+    // Una sola fila (bucket compartido), y el contador refleja los 3 intentos.
+    expect(rows.results).toHaveLength(1)
+    expect(rows.results?.[0].n).toBe(2)
+    const expected = `ip:${(await sha256HexForTest('anon:no-ip')).slice(0, 32)}`
+    expect(rows.results?.[0].ip_key).toBe(expected)
+    expect(rows.results?.[0].ip_key).not.toContain('1.1.1.1')
+  })
+})
+
+/** Espejo del hash del gateway: prueba que la clave D1 no guarda IPs crudas. */
+async function sha256HexForTest(text: string): Promise<string> {
+  const buf = await crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(text),
+  )
+  return [...new Uint8Array(buf)]
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+}
+
+describe('solo lectura: ninguna mutacion llega al origen', () => {
+  it.each(['POST', 'PUT', 'PATCH', 'DELETE'])(
+    '%s se rechaza con 405 y el origen no se llama',
+    async (method) => {
+      const { env } = setup()
+      const f = vi.fn(async () => new Response('{}', { status: 200 }))
+      vi.stubGlobal('fetch', f)
+      const res = await worker.fetch(
+        new Request(`${GW}/api/entities/recipe?id=1`, {
+          method,
+          body: method === 'DELETE' ? undefined : '{}',
+        }),
+        env as never,
+      )
+      vi.unstubAllGlobals()
+      expect(res.status).toBe(405)
+      expect(res.headers.get('allow')).toBe('GET, HEAD, OPTIONS')
+      expect(f).not.toHaveBeenCalled()
+    },
+  )
+
+  it('GET sigue sirviendo datos abiertos', async () => {
+    const { env } = setup()
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('{}', { status: 200 })),
     )
-    const get = await worker.fetch(
+    const res = await worker.fetch(
       new Request(`${GW}/api/entities/recipe`),
       env as never,
     )
     vi.unstubAllGlobals()
-    expect(del.status).toBe(200)
-    expect(get.status).toBe(200)
+    expect(res.status).toBe(200)
   })
 })
 
-describe('?key= y secretos', () => {
-  it('?key= no se reenvia al origen ni autentica', async () => {
+describe('?key= heredado', () => {
+  it('?key= no se reenvia al origen ni cambia el tratamiento', async () => {
     const { env } = setup()
     const f = vi.fn(async (_u: string) => new Response('{}', { status: 200 }))
     vi.stubGlobal('fetch', f)
@@ -359,53 +401,10 @@ describe('?key= y secretos', () => {
       env as never,
     )
     vi.unstubAllGlobals()
-    expect(res.headers.get('x-ratelimit-tier')).toBe('free')
+    expect(res.status).toBe(200)
+    expect(f).toHaveBeenCalledTimes(1)
     const url = String(f.mock.calls[0][0])
     expect(url).not.toContain('key=')
     expect(url).toContain('x=1')
-  })
-
-  it('acepta SERVICE_SHARED_SECRET y el nombre antiguo BILLING_SERVICE_SECRET', async () => {
-    for (const name of ['SERVICE_SHARED_SECRET', 'BILLING_SERVICE_SECRET']) {
-      const seen: string[] = []
-      vi.stubGlobal(
-        'fetch',
-        vi.fn(async (u: string, init?: RequestInit) => {
-          if (String(u).includes('billing.test')) {
-            seen.push(
-              String(
-                (init?.headers as Record<string, string> | undefined)?.[
-                  'x-service-secret'
-                ],
-              ),
-            )
-            return new Response(
-              JSON.stringify({
-                active: true,
-                plan: 'socio',
-                quota: 1,
-                used: 0,
-                remaining: 1,
-              }),
-              { status: 200 },
-            )
-          }
-          return new Response('{}', { status: 200 })
-        }),
-      )
-      const res = await worker.fetch(
-        new Request(`${GW}/api/all.json`, {
-          headers: { 'x-api-key': 'swal_abcdef12' },
-        }),
-        {
-          ORIGIN_URL: 'https://origin.test',
-          BILLING_URL: 'https://billing.test',
-          [name]: 's3',
-        } as never,
-      )
-      vi.unstubAllGlobals()
-      expect(res.status).toBe(200)
-      expect(seen).toEqual(['s3'])
-    }
   })
 })

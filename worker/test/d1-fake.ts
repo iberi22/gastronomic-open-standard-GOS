@@ -1,12 +1,10 @@
 // Adaptador D1 minimo para tests, respaldado por SQLite REAL (node:sqlite).
 //
-// Por que SQLite real y no un mock que devuelve filas fijas: el bug que
-// motivó esta suite se Manifiesto en produccion justamente porque la tabla
-// `api_keys` NO existia, de modo que la consulta lanzaba y el worker caia en
-// su rama de error. Un doble de test que devuelve exito/filas a pedido
-// reproducia justo el escenario que NO ocurre en produccion y habria dado
-// verde con el bug presente. Aqui la consulta se ejecuta de verdad: si la
-// tabla falta, `first()` lanza, que es el comportamiento de D1 real.
+// Por que SQLite real y no un mock que devuelve filas fijas: el gateway delega
+// en D1 el contador de cuota anonima (free_quota), y un doble que simulara la
+// fila en vez de ejecutar el UPSERT escondería un ON CONFLICT mal escrito o una
+// columna que no existe. Aqui la consulta se ejecuta de verdad: si el esquema no
+// esta aplicado, `first()`/`run()` lanzan, que es el comportamiento de D1 real.
 
 import { DatabaseSync } from 'node:sqlite'
 
@@ -32,15 +30,8 @@ export interface FakeD1 {
   /** Ultimo SQL ejecutado, para aserciones sobre la consulta. */
   lastSql: string | null
   lastBound: unknown[]
-  /** Crea el esquema real de schema.sql (tabla api_keys e indices). */
+  /** Crea el esquema real de schema.sql (free_quota + tablas heredadas). */
   applySchema(): void
-  /** Inserta una fila de api_keys. */
-  seed(row: {
-    key: string
-    tier?: string
-    status?: string
-    expires_at?: string | null
-  }): void
   /** Inserta SQL arbitrario (para simular estado corrupto / ausente). */
   execRaw(sql: string): void
 }
@@ -50,8 +41,7 @@ interface D1DatabaseLike {
 }
 
 /**
- * Crea una DB en memoria. Por defecto SIN esquema: este es el estado real de
- * la DB de produccion cuando el bug estaba vivo, y obliga a que cada test
+ * Crea una DB en memoria. Por defecto SIN esquema: obliga a que cada test
  * declare explicitamente que esquema esta aplicado.
  */
 export function createFakeD1(
@@ -64,18 +54,6 @@ export function createFakeD1(
     lastBound: [],
     applySchema() {
       sqlite.exec(SCHEMA_SQL)
-    },
-    seed(row) {
-      sqlite
-        .prepare(
-          'INSERT OR REPLACE INTO api_keys (key, tier, status, expires_at) VALUES (?, ?, ?, ?)',
-        )
-        .run(
-          row.key,
-          row.tier ?? 'tiersocio',
-          row.status ?? 'active',
-          row.expires_at ?? null,
-        )
     },
     execRaw(sql) {
       sqlite.exec(sql)
@@ -156,7 +134,10 @@ function makeBrokenStatement(err: unknown): D1Statement {
 }
 
 // Esquema espejo de worker/schema.sql. Debe mantenerse en sync con ese archivo;
-// el test `schema.sql` de este repo verifica que las columnas claves existan.
+// test/schema.test.ts verifica que las tablas y columnas existan.
+//
+// api_keys y credit_ledger se conservan SOLO por historia de migraciones (no se
+// borran tablas que pudieron tener datos). El gateway ya no las usa.
 export const SCHEMA_SQL = `
 CREATE TABLE IF NOT EXISTS api_keys (
   key        TEXT PRIMARY KEY NOT NULL,

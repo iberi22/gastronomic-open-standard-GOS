@@ -2,6 +2,11 @@
 
 Estado: **cerrado en producción**. Deploy `0914910c-b293-468d-843a-ca393e09db0d`.
 
+> **[2026-10-15] Ya no aplicable.** GOS dejo de vender acceso: el gateway no lee
+> ninguna key, no hay `api_keys` que sembrar y `/api/ai/infer` responde 404. El
+> runbook se conserva como registro historico; no ejecutar sus pasos. Ver
+> `docs/security/gos-gateway-auth-substring-bypass.md`.
+
 ## Orden de las dos piezas (importante)
 
 El fix del código y el esquema D1 son **inseparables**: sin la tabla `api_keys`
