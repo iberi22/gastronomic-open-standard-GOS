@@ -10,10 +10,26 @@ const GW = 'https://gos-api-gateway.test'
 
 const ORIGIN_JSON = JSON.stringify({ recipes: [], count: 0 })
 
+/**
+ * Limiter de rafaga permisivo: el gateway es fail-closed, asi que sin binding
+ * RL_FREE_BURST toda peticion seria 503. Estos tests no miden la rafaga.
+ */
+function permissiveRL(limit = 1000) {
+  const m = new Map<string, number>()
+  return {
+    async limit({ key }: { key: string }) {
+      const n = (m.get(key) ?? 0) + 1
+      m.set(key, n)
+      return { success: n <= limit }
+    },
+  }
+}
+
 function env(overrides: Record<string, unknown> = {}) {
   return {
     ORIGIN_URL: 'https://origin.test',
     DB: createFakeD1({ applySchema: true }).db,
+    RL_FREE_BURST: permissiveRL(),
     ...overrides,
   }
 }
