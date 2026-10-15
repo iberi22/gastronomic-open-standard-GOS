@@ -1,4 +1,12 @@
 -- D1 billing ledger — Fase 3
+--
+-- OBSOLETO desde 2026-10-15: la membresia es global (un solo plan SWAL para
+-- todas las apps) y la cuota de IA la gestiona la plataforma, no cada app.
+-- Las tablas `credits` e `invoices` ya no las escribe ni lee ningun codigo de
+-- GOS (site/src/lib/billing.ts y site/workers/ai.ts fueron eliminados).
+-- Se conserva esta migracion porque ya fue aplicada: no se borra una migracion
+-- aplicada. Antes de reutilizarlas, definir el nuevo dueno del ledger.
+--
 -- R2/KV son bindings Cloudflare, no tablas; AI es binding Workers AI.
 -- Ejecutar: wrangler d1 execute swal-billing --file=./migrations/001_billing.sql
 

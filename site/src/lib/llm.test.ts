@@ -5,7 +5,6 @@ import {
   fetchGroundedAnswer,
   type GosSource,
   type GroundedAskResponse,
-  type LLMRequest,
   llmComplete,
   parseCitations,
   queryTerms,
@@ -33,25 +32,6 @@ const ACHIRAS: GosSource = {
   fields: { region: 'Andina (Huila)', dificultad: '★★★☆☆' },
 }
 const FUENTES: GosSource[] = [ALICINA, ACHIRAS]
-
-/**
- * llmComplete simulado.
- *
- * Deliberadamente NO es "siempre devuelve éxito con texto plausible": cada
- * escenario devuelve la respuesta que un modelo real podría dar, incluidos
- * los casos malos. Un fake que solo sabe decir la verdad no detecta que el
- * grounding esté roto — que es justo el fallo que estos tests cubren.
- *
- * El parámetro se tipa explícitamente porque con strictNullChecks:false
- * (tsconfig del repo) `vi.fn(async () => …)` infiere una tupla vacía y
- * `.mock.calls[0][0]` no compila.
- */
-function fakeLLM(text: string, model = 'llama-3-8b') {
-  return vi.fn(async (req: LLMRequest) => {
-    void req
-    return { text, model, via: 'cf' as const }
-  })
-}
 
 /**
  * Lee el campo de un resultado fallido sin depender del narrowing por
@@ -172,16 +152,12 @@ describe('unsupportedClaims', () => {
   })
 })
 
-describe('askGrounded · tier free', () => {
-  it('responde con el texto literal del repo y NO llama al LLM', async () => {
-    const llm = fakeLLM('no debería llamarse')
+describe('askGrounded · lectura del repo', () => {
+  it('responde con el texto literal del repo, sin inferencia', async () => {
     const res = await askGrounded({
       question: '¿Qué es la alicina?',
       sources: [ALICINA],
-      tierId: 'free',
-      llm,
     })
-    expect(llm).not.toHaveBeenCalled()
     expect(res.status).toBe('answered')
     expect(res.model).toBe('retrieval-free')
     // cita el slug literal y el texto del repo
@@ -194,7 +170,6 @@ describe('askGrounded · tier free', () => {
     const res = await askGrounded({
       question: 'dime la receta de la解决这个问题',
       sources: [],
-      tierId: 'free',
     })
     expect(res.status).toBe('no-sources')
     expect(res.citations).toEqual([])
@@ -205,179 +180,9 @@ describe('askGrounded · tier free', () => {
     const res = await askGrounded({
       question: '   ',
       sources: [ALICINA],
-      tierId: 'free',
     })
     expect(res.status).toBe('no-sources')
     expect(res.reason).toBe('empty-question')
-  })
-})
-
-describe('askGrounded · tier socio con crédito', () => {
-  it('publica la respuesta si cita una fuente real', async () => {
-    const llm = fakeLLM(
-      'La alicina se descubrió en 1944 [substance:alicina] y se degrada con calor [substance:alicina].',
-    )
-    const res = await askGrounded({
-      question: '¿Cuándo se descubrió la alicina?',
-      sources: [ALICINA],
-      tierId: 'socio',
-      used: 100,
-      llm,
-    })
-    expect(llm).toHaveBeenCalledTimes(1)
-    expect(res.status).toBe('answered')
-    expect(res.reason).toBeUndefined()
-    expect(res.citations.map((c) => c.id)).toEqual(['alicina'])
-    expect(res.credit).toMatchObject({ used: 100, limit: 50000 })
-  })
-
-  it('el prompt que se manda lleva los marcadores de cada fuente', async () => {
-    const llm = fakeLLM('[substance:alicina]')
-    await askGrounded({
-      question: 'alicina',
-      sources: FUENTES,
-      tierId: 'socio',
-      llm,
-    })
-    const req = llm.mock.calls[0]?.[0] as LLMRequest
-    expect(req).toBeDefined()
-    expect(req.prompt).toContain('[substance:alicina]')
-    expect(req.prompt).toContain('[recipe:colombian/amasijos/achiras/achiras]')
-    expect(req.tierId).toBe('socio')
-  })
-})
-
-describe('askGrounded · respuestas sin fuente (el caso que NO puede pasar)', () => {
-  it('RECHAZA una respuesta con texto plausible y cero citas', async () => {
-    const llm = fakeLLM(
-      'La alicina tiene 40 mg de alicina por 100 g y cura la hipertensión con una dosis diaria de 200 mg.',
-    )
-    const res = await askGrounded({
-      question: '¿cuánta alicina tiene el ajo?',
-      sources: [ALICINA],
-      tierId: 'socio',
-      llm,
-    })
-    expect(res.status).toBe('ungrounded')
-    expect(res.reason).toBe('no-valid-citation')
-    expect(res.citations).toEqual([])
-    // el texto inventado NO sale en la respuesta publicable
-    expect(res.answer).not.toContain('40 mg')
-    expect(res.answer).not.toContain('cura la hipertensión')
-    // pero sí queda registrado para poder auditarlo
-    expect(res.unsupported?.length).toBeGreaterThan(0)
-  })
-
-  it('RECHAZA cuando la única cita es a un slug inventado', async () => {
-    const llm = fakeLLM('Según [substance:cafeina] el ajo cura la anemia.')
-    const res = await askGrounded({
-      question: 'anemia',
-      sources: [ALICINA],
-      tierId: 'socio',
-      llm,
-    })
-    expect(res.status).toBe('ungrounded')
-    expect(res.reason).toBe('no-valid-citation')
-    expect(res.answer).not.toContain('cura la anemia')
-  })
-
-  it('respeta NO_LO_SE del modelo como "no lo sé", no como fallo', async () => {
-    const llm = fakeLLM('NO_LO_SE')
-    const res = await askGrounded({
-      question: 'dosis diaria de alicina',
-      sources: [ALICINA],
-      tierId: 'socio',
-      llm,
-    })
-    expect(res.status).toBe('ungrounded')
-    expect(res.reason).toBe('model-declined')
-    expect(res.answer).toMatch(/no la va a inventar/i)
-  })
-
-  it('CON citas recorta las afirmaciones sueltas sin respaldo', async () => {
-    const llm = fakeLLM(
-      [
-        'La alicina se descubrió en 1944 [substance:alicina].',
-        'Tiene 40 mg por 100 g.',
-        'Cura la hipertensión con 200 mg diarios.',
-      ].join(' '),
-    )
-    const res = await askGrounded({
-      question: 'alicina',
-      sources: [ALICINA],
-      tierId: 'socio',
-      llm,
-    })
-    expect(res.status).toBe('answered')
-    expect(res.reason).toBe('trimmed-unsupported-claims')
-    // la frase citada sobrevive, las dos inventadas no
-    expect(res.answer).toContain('1944')
-    expect(res.answer).not.toContain('40 mg')
-    expect(res.answer).not.toContain('cura la hipertensión')
-    expect(res.unsupported).toHaveLength(2)
-  })
-})
-
-describe('askGrounded · crédito agotado', () => {
-  it('tier free sin crédito: no llama al LLM y no se rompe', async () => {
-    const llm = fakeLLM('nada')
-    const res = await askGrounded({
-      question: 'alicina',
-      sources: [ALICINA],
-      tierId: 'free',
-      used: 0,
-      llm,
-    })
-    // free nunca entra por el gate de crédito: monthlyCredit es 0 pero
-    // tampoco hay inferencia que pagar.
-    expect(llm).not.toHaveBeenCalled()
-    expect(res.status).toBe('answered')
-  })
-
-  it('tier socio con crédito agotado lo explica en vez de romperse', async () => {
-    // El LLM real devuelve 'billing-blocked' cuando canAffordInference falla.
-    const llm = vi.fn(async () => ({
-      text: '[billing] credito socio agotado (50000/50000). Upgrade a socio o espera reset.',
-      model: 'billing-blocked',
-      via: 'local' as const,
-    }))
-    const res = await askGrounded({
-      question: 'alicina',
-      sources: [ALICINA],
-      tierId: 'socio',
-      used: 50000,
-      llm,
-    })
-    expect(res.status).toBe('credit-exhausted')
-    expect(res.reason).toBe('billing-blocked')
-    expect(res.citations).toEqual([])
-    expect(res.credit).toMatchObject({ used: 50000, remaining: 0 })
-    expect(res.answer).toMatch(/agotado/i)
-    // y ofrece la salida: el modo lectura no gasta
-    expect(res.answer).toMatch(/tier free/i)
-  })
-
-  it('el crédito agotado NO se confunde con respuesta sin fuente', async () => {
-    const blocked = await askGrounded({
-      question: 'alicina',
-      sources: [ALICINA],
-      tierId: 'socio',
-      used: 50000,
-      llm: vi.fn(async () => ({
-        text: 'x',
-        model: 'billing-blocked',
-        via: 'local' as const,
-      })),
-    })
-    const ungrounded = await askGrounded({
-      question: 'alicina',
-      sources: [ALICINA],
-      tierId: 'socio',
-      used: 0,
-      llm: fakeLLM('sin citas ni fuente'),
-    })
-    expect(blocked.status).toBe('credit-exhausted')
-    expect(ungrounded.status).toBe('ungrounded')
   })
 })
 
@@ -388,10 +193,9 @@ describe('revalidación de la respuesta del endpoint (bug encontrado en navegado
   // citas inventadas, la pantalla enseñaba "40 mg por 100 g" y
   // "[substance:cafeina-magica]" como si fueran datos de GOS.
   //
-  // La revalidación NO puede pasar por askGrounded({tierId:'free'}): esa rama
-  // hace recuperación pura y nunca invoca al LLM inyectado, así que daría
-  // 'answered' con cualquier texto. Por eso se comprueba con
-  // resolveCitations + unsupportedClaims directamente.
+  // La revalidación no puede delegar en askGrounded(): esa función solo hace
+  // recuperación pura del repo, así que daría 'answered' con cualquier texto.
+  // Por eso se comprueba con resolveCitations + unsupportedClaims directamente.
 
   const MENTIRA =
     'La alicina tiene 40 mg por 100 g y cura la hipertension con 200 mg diarios. ' +
@@ -515,7 +319,6 @@ describe('fetchGroundedAnswer · degradación de la página', () => {
       const again = await askGrounded({
         question: 'alicina',
         sources: [ALICINA],
-        tierId: 'free',
       })
       expect(again.status).toBe('answered')
       expect(again.citations[0].id).toBe('alicina')
@@ -551,21 +354,16 @@ describe('queryTerms / rankEntries (matching compartido)', () => {
 })
 
 describe('integración con llmComplete real (sin mock)', () => {
-  it('el gate de crédito de llm.ts sigue bloqueando en free', async () => {
-    // No lo reescribimos: verificamos que el comportamiento original sigue.
-    const res = await llmComplete({
-      prompt: 'hola',
-      tierId: 'free',
-      estimatedTokens: 1,
-    })
-    expect(res.model).toBe('billing-blocked')
+  it('llmComplete devuelve el stub local, sin gate de crédito', async () => {
+    const res = await llmComplete({ prompt: 'hola' })
+    expect(res.model).toBe('stub')
+    expect(res.via).toBe('local')
   })
 
-  it('y askGrounded en free no depende de ese gate', async () => {
+  it('askGrounded devuelve el texto literal sin depender de inferencia', async () => {
     const res = await askGrounded({
       question: 'alicina',
       sources: [ALICINA],
-      tierId: 'free',
     })
     expect(res.status).toBe('answered')
     expect(res.model).toBe('retrieval-free')

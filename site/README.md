@@ -83,7 +83,7 @@ Verificado: pnpm install 622 + build 1.39s (cloudflare), check 0 errors.
 - Template es isla autonoma: todo se implementa para replicar (directiva core-isla Belal 2026-08-03).
 - Futuro: extraer `swal-agent-runner` LLM router a `cores/swal-llm` para que template y runner compartan codigo (ahora duplicado como stub).
 
-## AUI + Billing
+## AUI
 
 - **AUI:** `AuiRenderer.svelte` + `src/lib/aui.ts` (ver USAGE.md). Whitelist Card/Button/Badge/Input/Table/Tabs/Modal/StatusBadge/Skeleton. Demo en `src/pages/index.astro` con `demoAui`.
-- **Billing:** `src/lib/billing.ts` — TIERS socio/socio-managed, 20% handling SWAL sobre infra 100% + AI 10% min (Workers AI power by Cloudflare). Ver `USAGE.md` y `src/lib/worker-ai.example.ts`.
+- **Billing:** eliminado el 2026-10-15. La membresia es global (un plan SWAL) y la cuota de IA la gestiona la plataforma; la app no lleva tiers, creditos ni paywall propios.

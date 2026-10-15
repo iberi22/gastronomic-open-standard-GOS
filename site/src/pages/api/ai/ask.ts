@@ -1,6 +1,5 @@
 import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
-import { creditStatus, isTierId, type SocioTier } from '../../../lib/billing'
 import {
   askGrounded,
   type GosSource,
@@ -18,7 +17,7 @@ import {
 //
 // Sigue el patrón de api/entities/[entity].ts: mismo json(), mismo status de
 // error. El 200 se reserva para cuando el agente pudo responder, e incluye
-// los casos "no lo sé" y "crédito agotado": son respuestas, no fallos de red.
+// el caso "no lo sé": es una respuesta, no un fallo de red.
 //
 // OJO — estático: GOS despliega con output:'static' y sin adapter SSR, así que
 // en Cloudflare Pages este POST devuelve 405 salvo que se añada el adapter o
@@ -37,10 +36,6 @@ function json(data: unknown, status = 200): Response {
       'Cache-Control': 'no-store',
     },
   })
-}
-
-function normalizeTier(raw: unknown): SocioTier['id'] {
-  return isTierId(raw) ? raw : 'free'
 }
 
 function asArray(v: unknown): string[] {
@@ -297,19 +292,12 @@ export const POST: APIRoute = async ({ request }) => {
   const question = str(body.question).slice(0, MAX_QUESTION)
   if (!question) return json({ error: 'question required' }, 400)
 
-  const tierId = normalizeTier(body.tierId)
-  // El crédito lo lee llm.ts de su ledger (localStorage → D1 en prod). Aquí no
-  // se inventa: si no viene en el body, cero.
-  const used = Number.isFinite(Number(body.used)) ? Number(body.used) : 0
-
   try {
     const sources = await collectSources(question)
-    const data = await askGrounded({ question, sources, tierId, used })
+    const data = await askGrounded({ question, sources })
     return json({
       ok: true,
       question,
-      tierId,
-      ledger: creditStatus(used, tierId),
       data,
     })
   } catch (err) {
@@ -331,11 +319,9 @@ export const GET: APIRoute = async () =>
         method: 'POST',
         body: {
           question: 'string (requerido)',
-          tierId: 'free | socio | socio-managed',
         },
         notes: [
-          'tier free: no llama al LLM, devuelve el texto literal de las fuentes.',
-          'tier socio: llama a llmComplete y solo publica citas que existen en el repo.',
+          'Devuelve el texto literal de las fuentes del repo, sin inferencia.',
           'GOS es output:static sin adapter: sin runtime de servidor este POST da 405.',
         ],
       },

@@ -170,9 +170,5 @@ export const domainConfig = {
     enabled: true,
     allowAgentTheme: true,
   },
-  billing: {
-    tier: 'socio' as const,
-    mode: 'swal-managed' as const,
-  },
 } as const
 export type DomainConfig = typeof domainConfig

@@ -21,12 +21,3 @@ test('AUI whitelisteada renderiza Card/Button/Badge', async () => {
   const aui = fs.readFileSync(path.resolve('src/lib/aui.ts'), 'utf8')
   expect(aui).toContain('AUI_COMPONENTS')
 })
-
-test('billing 20% breakdown visible en docs', async () => {
-  const doc = fs.readFileSync(
-    path.resolve('docs/PLAN_AUI_BILLING_20PCT.md'),
-    'utf8',
-  )
-  expect(doc).toContain('20%')
-  expect(doc).toContain('Cloudflare')
-})

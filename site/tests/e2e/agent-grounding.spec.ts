@@ -43,7 +43,7 @@ test.describe('Agente GOS — grounding en navegador', () => {
     await expect(page.locator('button[type=submit]')).toBeEnabled()
   })
 
-  test('tier free responde con el texto literal y cita un slug real', async ({
+  test('la consulta responde con el texto literal y cita un slug real', async ({
     page,
   }) => {
     await page.goto('/agent/')
@@ -55,7 +55,7 @@ test.describe('Agente GOS — grounding en navegador', () => {
     const answer = page.getByTestId('answer')
     await expect(answer).toHaveAttribute('data-status', 'answered')
 
-    // Sin inferencia en free: el modelo lo dice.
+    // Sin inferencia: la respuesta sale del repo, no de un modelo.
     await expect(page.getByTestId('model')).toContainText('retrieval-free')
 
     // Y cita el slug real de la sustancia, que es la garantía central.
@@ -72,8 +72,8 @@ test.describe('Agente GOS — grounding en navegador', () => {
 
     // Sin términos que existan en el catálogo. No se usa "beneficios" porque
     // sí aparece en recetas reales (colombian/.../garulla), y el matching por
-    // substring del tier free lo encontraría: el test comprobaba una cosa que
-    // no era.
+    // substring de la recuperación literal lo encontraría: el test comprobaba
+    // una cosa que no era.
     await page.fill('#gos-question', 'xqjxvb kwyvbn zzzzq')
     await page.click('button[type=submit]')
 
@@ -82,40 +82,6 @@ test.describe('Agente GOS — grounding en navegador', () => {
       'no-sources',
     )
     await expect(page.getByTestId('citations')).toHaveCount(0)
-  })
-
-  test('tier socio con crédito agotado lo explica y no se rompe', async ({
-    page,
-  }) => {
-    await page.goto('/agent/')
-    await waitForCatalog(page)
-
-    // Llena el ledger hasta el límite de socio (50000), el mismo key que lee
-    // llmComplete(): `credits:{appId}:{tier}`.
-    await page.evaluate(() => {
-      localStorage.setItem('credits:gos:socio', '50000')
-    })
-    await page.reload()
-    await waitForCatalog(page)
-
-    // Cambia a tier socio.
-    await page.locator('input[name=gos-tier][value=socio]').check()
-    await expect(page.getByTestId('credit-meter')).toContainText('50000')
-
-    await page.fill('#gos-question', 'alicina')
-    await page.click('button[type=submit]')
-
-    await expect(page.getByTestId('answer')).toHaveAttribute(
-      'data-status',
-      'credit-exhausted',
-    )
-    // Explica el motivo y ofrece la salida, no se queda mudo ni lanza.
-    await expect(page.getByTestId('answer-text')).toContainText(/agotado/i)
-    await expect(page.getByTestId('answer-text')).toContainText(/tier free/i)
-    await expect(page.getByTestId('citations')).toHaveCount(0)
-
-    // Y la página sigue viva: se puede volver a preguntar.
-    await expect(page.locator('button[type=submit]')).toBeEnabled()
   })
 
   test('si el endpoint devuelve texto sin fuentes, la página NO lo publica', async ({
@@ -148,10 +114,6 @@ test.describe('Agente GOS — grounding en navegador', () => {
       }),
     )
 
-    await page.evaluate(() => {
-      localStorage.setItem('credits:gos:socio', '10')
-    })
-    await page.locator('input[name=gos-tier][value=socio]').check()
     await page.fill('#gos-question', 'alicina')
     await page.click('button[type=submit]')
 
@@ -192,10 +154,6 @@ test.describe('Agente GOS — grounding en navegador', () => {
       }),
     )
 
-    await page.evaluate(() => {
-      localStorage.setItem('credits:gos:socio', '10')
-    })
-    await page.locator('input[name=gos-tier][value=socio]').check()
     await page.fill('#gos-question', 'alicina')
     await page.click('button[type=submit]')
 

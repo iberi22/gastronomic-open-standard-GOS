@@ -148,7 +148,6 @@ export default {
           graphData: '/graph-data.json',
           llmsSummary: '/llms.txt',
           llmsFull: '/llms-full.txt',
-          paywall: '/api/agent/pay',
         },
         documentation: `${originUrl}/llms-full.txt`,
       })

@@ -1,6 +1,6 @@
 # @swal/app-template — Uso
 
-Template canonico SWAL (Astro 7 + Svelte 5 + @swal/ui + vite-pwa + Cloudflare + Xavier + mesh + LLM + AUI + Socio 20%).
+Template canonico SWAL (Astro 7 + Svelte 5 + @swal/ui + vite-pwa + Cloudflare + Xavier + mesh + LLM + AUI).
 
 ## Crear una app
 
@@ -49,39 +49,19 @@ Whitelist: `Card, Button, Badge, Input, Table, Tabs, Modal, StatusBadge, Skeleto
 
 Fallback: si no hay LLM, usa UI estatica.
 
-### Billing — Socio + Cloudflare 20%
+### Billing
 
-```ts
-import { calculatePrice, canAffordInference, formatPriceBreakdown } from '../lib/billing';
-
-// infra 100% Cloudflare + AI base*1.10 + handling 20%
-const { total, handling } = calculatePrice(infraCost, aiCostBase);
-console.log(formatPriceBreakdown(0.5, 0.3)); // Infra $0.50 + AI $0.33 ... total $1.00
-
-// credito
-canAffordInference(tokens, used, 'socio'); // true/false (402 si agotado)
-// inferencia via Worker
-import { cfAiInfer } from '../lib/billing';
-const res = await cfAiInfer(prompt, { tierId:'socio', mode:'swal-managed' });
-```
-
-Wrangler bindings (descomentar en `wrangler.toml` al provisionar):
-
-```toml
-[[r2_buckets]] binding="SWAL_R2" bucket_name="swal-mi-tienda-r2"
-[[d1_databases]] binding="SWAL_D1" database_name="swal-billing"
-[[kv_namespaces]] binding="SWAL_KV" id="..."
-[ai] binding="AI"
-```
-
-Ver `src/lib/billing.ts` y `src/lib/worker-ai.example.ts`.
+Obsoleto desde 2026-10-15: la membresia es global (un plan SWAL para todas
+las apps) y la cuota de IA la gestiona la plataforma. Esta app no lleva tiers,
+creditos ni paywall propios; `src/lib/billing.ts` y `src/lib/worker-ai.example.ts`
+se eliminaron.
 
 ### Xavier + Mesh + LLM
 
 ```ts
 import { xavierSearch, xavierAdd } from '../lib/xavier'; // ns app/{appId}/instance/{id}
 import { meshPublish } from '../lib/mesh'; // room swal/{appId}/{id}
-import { llmComplete } from '../lib/llm'; // Router local->opencode->openrouter->gemini + cfAiInfer si socio
+import { llmComplete } from '../lib/llm'; // Router local->opencode->openrouter->gemini
 ```
 
 ## Comandos
@@ -101,13 +81,8 @@ src/layouts/Layout.astro  (@swal/ui/tokens + Toaster)
 src/pages/index.astro     (demo AUI + stats + instrucciones)
 src/components/AuiRenderer.svelte
 src/lib/domain.config.ts  <- unico obligatorio
-src/lib/aui.ts / billing.ts / xavier.ts / mesh.ts / llm.ts / worker-ai.example.ts
+src/lib/aui.ts / xavier.ts / mesh.ts / llm.ts
 public/manifest.json (192/512 maskable)
 wrangler.toml (cloudflare pages)
 ```
 
-## Tipos de tier
-
-- `free`: 0 credito, 1GB R2, 0$
-- `socio`: 50k credito, 10GB, 9$ + infra+AI*1.10+20% handling (Cloudflare power)
-- `socio-managed`: 50k, 50GB, 29$ + mismo handling pero SWAL gestiona infra (mismo sub)
