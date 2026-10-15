@@ -154,6 +154,26 @@ function Test-IsTestPath([string]$p) {
     return $p -match '(?i)(/|\\)(tests?|__tests__|spec|cypress|e2e)(/|\\)|\.(spec|test)\.(ts|tsx|js|jsx|rs|py)$'
 }
 
+# Directory evidence is expanded to the files inside it (line counts + keyword hits).
+$script:DirectoryEvidenceFileCap = 50
+$script:DirectoryEvidenceIgnoreRegex = '[\\/](node_modules|dist|\.git)([\\/]|$)'
+
+function Get-NormalizedEvidenceKey([string]$PathText) {
+    if ([string]::IsNullOrWhiteSpace($PathText)) { return "" }
+    $t = ($PathText -replace '\\', '/').Trim().TrimEnd('/')
+    while ($t.StartsWith("./")) { $t = $t.Substring(2) }
+    return $t.ToLowerInvariant()
+}
+
+function Get-RelPathFromRoot([string]$Root, [string]$Full) {
+    $r = ($Root -replace '\\', '/').TrimEnd('/')
+    $f = ($Full -replace '\\', '/')
+    if ($f.StartsWith($r, [System.StringComparison]::OrdinalIgnoreCase)) {
+        return $f.Substring($r.Length).TrimStart('/')
+    }
+    return $f
+}
+
 # Precompute selection
 $selected = @()
 foreach ($f in $features) {
@@ -221,6 +241,15 @@ function Invoke-FeatureAnalysis {
     $f = $Row.Feature
     $fid = $Row.Id
     $evidenceRels = @(Get-FeatureEvidencePaths $f)
+    # dedupe declared paths by normalized key: coverage can never exceed 100%
+    $declaredKeys = @{}
+    $evidenceRels = @(foreach ($er in $evidenceRels) {
+        $k = Get-NormalizedEvidenceKey $er
+        if (-not $k) { continue }
+        if ($declaredKeys.ContainsKey($k)) { continue }
+        $declaredKeys[$k] = $true
+        $er
+    })
     $resolved = @()
     $missing = @()
     $excerpts = @()
@@ -244,62 +273,124 @@ function Invoke-FeatureAnalysis {
     $fileCount = 0
     $totalCodeLines = 0
     $testFileCount = 0
+    $seenTargets = @{}
+    # denominator is the full deduped declared list: the per-feature analysis cap must not change it
+    $declared = $evidenceRels.Count
 
     foreach ($rel in $evidenceRels) {
         if ($fileCount -ge $MaxFilesPerFeature) { break }
         $abs = Resolve-ProjectPath $root $rel
+
+        # exactly ONE evidence record per path: dedupe by resolved target (or normalized rel)
+        $targetKey = if ($abs) { "abs:" + $abs.ToLowerInvariant() } else { "rel:" + (Get-NormalizedEvidenceKey $rel) }
+        if ($seenTargets.ContainsKey($targetKey)) { continue }
+        $seenTargets[$targetKey] = $true
+
         if (-not $abs) {
             $missing += $rel
-            $resolved += [pscustomobject]@{ Rel = $rel; Abs = $null; Exists = $false; TotalLines = 0; IsTest = $false }
+            $resolved += [pscustomobject]@{
+                Rel = $rel; Abs = $null; Exists = $false; Kind = "missing"; Empty = $false; ReadFailed = $false
+                TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
+                ExcerptOf = "not found"
+            }
             continue
         }
+
         $fileCount++
         $meta = Get-Item -LiteralPath $abs -ErrorAction SilentlyContinue
+        $isDir = -not (Test-Path -LiteralPath $abs -PathType Leaf)
 
-        # Check if directory
-        if (-not (Test-Path -LiteralPath $abs -PathType Leaf)) {
+        if ($isDir) {
+            $inner = @(Get-ChildItem -LiteralPath $abs -Recurse -File -ErrorAction SilentlyContinue |
+                Where-Object { $_.FullName -notmatch $DirectoryEvidenceIgnoreRegex })
+            $innerTotal = $inner.Count
+            if ($innerTotal -eq 0) {
+                # an empty directory is an existence claim with no content: zero credit
+                $resolved += [pscustomobject]@{
+                    Rel = $rel; Abs = $abs; Exists = $false; Kind = "directory"; Empty = $true; ReadFailed = $false
+                    TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
+                    ExcerptOf = "empty directory"
+                }
+                continue
+            }
+            $filesCapped = $innerTotal -gt $DirectoryEvidenceFileCap
+            if ($filesCapped) { $inner = @($inner | Select-Object -First $DirectoryEvidenceFileCap) }
+            $dirLines = 0
+            $dirBytes = 0
+            $dirTestFiles = 0
+            $dirReadFailed = 0
+            foreach ($innerFile in $inner) {
+                $innerRel = Get-RelPathFromRoot $root $innerFile.FullName
+                $innerIsTest = Test-IsTestPath $innerFile.FullName
+                $dirBytes += [int]$innerFile.Length
+                $exInner = $null
+                try { $exInner = Get-FileExcerpt -Path $innerFile.FullName -Mode "head" -Lines 1 -StartLine 1 -EndLine 0 -MaxChars 2 } catch { $exInner = $null }
+                if ($null -eq $exInner -or -not $exInner.Ok) { $dirReadFailed++; continue }
+                $innerLines = [int]$exInner.TotalLines
+                if ($innerIsTest) { $dirTestFiles++; $dirLines += [int]([math]::Min($innerLines, 100)) }
+                else { $dirLines += $innerLines }
+                if ($kw.Count -gt 0) {
+                    try {
+                        $innerHits = Search-FileKeywordHits -Path $innerFile.FullName -Keywords $kw -Context 2 -MaxHits 5
+                        foreach ($h in $innerHits) {
+                            $hitBlocks += [pscustomobject]@{
+                                Path    = $innerRel
+                                Keyword = $h.Keyword
+                                Line    = $h.Line
+                                Snippet = $h.Snippet
+                            }
+                        }
+                    } catch { }
+                }
+            }
+            $totalCodeLines += $dirLines
+            $testFileCount += $dirTestFiles
             $resolved += [pscustomobject]@{
-                Rel        = $rel
-                Abs        = $abs
-                Exists     = $true
-                Kind       = "directory"
-                TotalLines = 0
-                Bytes      = 0
-                IsTest     = $false
-                ExcerptOf  = "directory"
+                Rel = $rel; Abs = $abs; Exists = $true; Kind = "directory"; Empty = $false; ReadFailed = $false
+                TotalLines = $dirLines; Bytes = $dirBytes; IsTest = $false
+                FileCount = $inner.Count; FileCountTotal = $innerTotal; FilesCapped = $filesCapped; ReadFailures = $dirReadFailed
+                ExcerptOf = ("directory: {0} file(s){1}" -f $inner.Count, $(if ($filesCapped) { " (capped at $DirectoryEvidenceFileCap of $innerTotal)" } else { "" }))
             }
             continue
         }
 
         $isTest = Test-IsTestPath $abs
-        if ($isTest) { $testFileCount++ }
-
+        $ex = $null
         try {
             $ex = Get-FileExcerpt -Path $abs -Mode $Mode -Lines $Lines -StartLine $StartLine -EndLine $EndLine -MaxChars $MaxChars
-            if (-not $isTest) { $totalCodeLines += [int]$ex.TotalLines }
-            else { $totalCodeLines += [int]([math]::Min($ex.TotalLines, 100)) }
+        } catch { $ex = $null }
 
+        if ($null -eq $ex -or -not $ex.Ok) {
+            # unreadable file: ONE record, zero line/test/keyword credit
             $resolved += [pscustomobject]@{
-                Rel        = $rel
-                Abs        = $abs
-                Exists     = $true
-                Kind       = "file"
-                TotalLines = $ex.TotalLines
-                Bytes      = if ($meta) { $meta.Length } else { 0 }
-                IsTest     = $isTest
-                ExcerptOf  = "{0}-{1}" -f $ex.Start, $ex.End
+                Rel = $rel; Abs = $abs; Exists = $true; Kind = "file"; Empty = $false; ReadFailed = $true
+                TotalLines = 0; Bytes = if ($meta) { $meta.Length } else { 0 }; IsTest = $isTest
+                FileCount = 1; FileCountTotal = 1; FilesCapped = $false
+                ExcerptOf = "read failed"
             }
-            $excerpts += [pscustomobject]@{
-                Path       = $rel
-                Abs        = $abs
-                Mode       = $Mode
-                Start      = $ex.Start
-                End        = $ex.End
-                TotalLines = $ex.TotalLines
-                IsTest     = $isTest
-                Text       = $ex.Text
-            }
-            if ($kw.Count -gt 0) {
+            continue
+        }
+
+        $resolved += [pscustomobject]@{
+            Rel = $rel; Abs = $abs; Exists = $true; Kind = "file"; Empty = $false; ReadFailed = $false
+            TotalLines = $ex.TotalLines; Bytes = if ($meta) { $meta.Length } else { 0 }; IsTest = $isTest
+            FileCount = 1; FileCountTotal = 1; FilesCapped = $false
+            ExcerptOf = "{0}-{1}" -f $ex.Start, $ex.End
+        }
+        if ($isTest) { $testFileCount++; $totalCodeLines += [int]([math]::Min($ex.TotalLines, 100)) }
+        else { $totalCodeLines += [int]$ex.TotalLines }
+        $excerpts += [pscustomobject]@{
+            Path       = $rel
+            Abs        = $abs
+            Mode       = $Mode
+            Start      = $ex.Start
+            End        = $ex.End
+            TotalLines = $ex.TotalLines
+            IsTest     = $isTest
+            Text       = $ex.Text
+        }
+        if ($kw.Count -gt 0) {
+            try {
                 $hits = Search-FileKeywordHits -Path $abs -Keywords $kw -Context 2 -MaxHits 5
                 foreach ($h in $hits) {
                     $hitBlocks += [pscustomobject]@{
@@ -309,25 +400,15 @@ function Invoke-FeatureAnalysis {
                         Snippet = $h.Snippet
                     }
                 }
-            }
-        } catch {
-            $resolved += [pscustomobject]@{
-                Rel        = $rel
-                Abs        = $abs
-                Exists     = $true
-                Kind       = "file"
-                TotalLines = 0
-                Bytes      = if ($meta) { $meta.Length } else { 0 }
-                IsTest     = $isTest
-                ExcerptOf  = "error reading file"
-            }
+            } catch { }
         }
     }
 
-    $existsN = @($resolved | Where-Object Exists).Count
-    $missN = $missing.Count
-    $declared = $evidenceRels.Count
-    $evidenceScore = if ($declared -eq 0) { 0 } else { [math]::Round(100.0 * $existsN / $declared, 1) }
+    $existsN = @($resolved | Where-Object { $_.Exists -and -not $_.ReadFailed -and -not $_.Empty }).Count
+    $readFailedN = @($resolved | Where-Object { $_.ReadFailed }).Count
+    $emptyN = @($resolved | Where-Object { $_.Empty }).Count
+    $missN = [math]::Max(0, $declared - $existsN)
+    $evidenceScore = if ($declared -eq 0) { 0 } else { [math]::Min(100, [math]::Round(100.0 * $existsN / $declared, 1)) }
 
     $hasGaps = $false
     if ($f.gaps) {
@@ -362,6 +443,8 @@ function Invoke-FeatureAnalysis {
         Keywords       = $kw
         ExistsN        = $existsN
         MissN          = $missN
+        ReadFailedN    = $readFailedN
+        EmptyN         = $emptyN
         Declared       = $declared
         EvidenceScore  = $evidenceScore
         TotalCodeLines = $totalCodeLines
@@ -473,6 +556,10 @@ foreach ($row in $selected) {
         evidence_paths     = $a.EvidenceRels
         evidence_resolved  = $a.Resolved
         evidence_score_pct = $a.EvidenceScore
+        evidence_exists      = $a.ExistsN
+        evidence_missing     = $a.MissN
+        evidence_read_failed = $a.ReadFailedN
+        evidence_empty_dirs  = $a.EmptyN
         keywords           = $a.Keywords
         keyword_hits       = $a.HitBlocks
         excerpts           = $a.Excerpts
@@ -507,7 +594,7 @@ foreach ($row in $selected) {
         [void]$sb.AppendLine(("delta_pct: {0:+0.##;-0.##;0}" -f $a.Delta))
     }
     [void]$sb.AppendLine("auto_verdict: $($a.Verdict)")
-    [void]$sb.AppendLine("evidence_score_pct: $($a.EvidenceScore) (exists=$($a.ExistsN) missing=$($a.MissN) declared=$($a.Declared))")
+    [void]$sb.AppendLine("evidence_score_pct: $($a.EvidenceScore) (exists=$($a.ExistsN) missing=$($a.MissN) declared=$($a.Declared) read_failed=$($a.ReadFailedN) empty_dirs=$($a.EmptyN))")
     [void]$sb.AppendLine("code_lines≈$($a.TotalCodeLines) test_files=$($a.TestFileCount)")
     if (-not $AgentBrief -and $f.description) {
         [void]$sb.AppendLine("description: $([string]$f.description)")
@@ -545,9 +632,16 @@ foreach ($row in $selected) {
     }
     foreach ($r in $a.Resolved) {
         if ($r.Exists) {
-            $tag = if ($r.IsTest) { "TEST" } else { "CODE" }
-            [void]$sb.AppendLine("- OK  [$tag] $($r.Rel)  lines=$($r.TotalLines)  excerpt=$($r.ExcerptOf)")
+            $tag = if ($r.IsTest) { "TEST" } elseif ($r.Kind -eq "directory") { "DIR" } else { "CODE" }
+            $extra = ""
+            if ($r.ReadFailed) { $extra = "  READ_FAILED (zero credit)" }
+            elseif ($r.Kind -eq "directory") {
+                $extra = "  files=$($r.FileCount)/$($r.FileCountTotal)$(if ($r.FilesCapped) { ' (capped)' })$(if ($r.ReadFailures) { " unreadable=$($r.ReadFailures)" })"
+            }
+            [void]$sb.AppendLine("- OK  [$tag] $($r.Rel)  lines=$($r.TotalLines)  excerpt=$($r.ExcerptOf)$extra")
             [void]$sb.AppendLine("      abs=$($r.Abs)")
+        } elseif ($r.Empty) {
+            [void]$sb.AppendLine("- EMPTY_DIR $($r.Rel) (zero credit)")
         } else {
             [void]$sb.AppendLine("- MISS $($r.Rel)")
         }

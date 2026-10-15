@@ -278,18 +278,15 @@ function Resolve-ProjectPath {
 
     if ([System.IO.Path]::IsPathRooted($RelOrAbs)) {
         if (Test-Path -LiteralPath $RelOrAbs) { return (Resolve-Path -LiteralPath $RelOrAbs).Path }
-        if (Test-Path $RelOrAbs) { return (Resolve-Path $RelOrAbs).Path }
     }
 
     $joined = Join-Path $ProjectRoot ($RelOrAbs -replace '/', '\')
     if (Test-Path -LiteralPath $joined) { return (Resolve-Path -LiteralPath $joined).Path }
-    if (Test-Path $joined) { return (Resolve-Path $joined).Path }
 
     # try without leading ./
     $clean = $RelOrAbs -replace '^\./', '' -replace '^\.\\', ''
     $joined2 = Join-Path $ProjectRoot ($clean -replace '/', '\')
     if (Test-Path -LiteralPath $joined2) { return (Resolve-Path -LiteralPath $joined2).Path }
-    if (Test-Path $joined2) { return (Resolve-Path $joined2).Path }
 
     # Fuzzy: evidence often listed as tests/foo but lives under apps/*/tests/foo
     $leaf = Split-Path $clean -Leaf
@@ -302,11 +299,15 @@ function Resolve-ProjectPath {
         $ProjectRoot
     )
     foreach ($sr in $searchRoots) {
-        if (-not (Test-Path $sr)) { continue }
+        if (-not (Test-Path -LiteralPath $sr)) { continue }
+        # glob/bracket leaves are never resolved by wildcard: Test-Path/Get-ChildItem would
+        # match a sibling file instead of the declared path (review round 2, P2)
+        if ($leaf -match '[\*\?\[]') { break }
         # exact relative under apps/*
-        $hits = @(Get-ChildItem -Path $sr -Recurse -File -Filter $leaf -ErrorAction SilentlyContinue |
+        $hits = @(Get-ChildItem -LiteralPath $sr -Recurse -File -Filter $leaf -ErrorAction SilentlyContinue |
             Where-Object {
                 $full = $_.FullName
+                if ($_.Name -ne $leaf) { return $false }
                 if ($parentLeaf -and $parentLeaf -ne '.' -and $parentLeaf -ne '') {
                     $full -match [regex]::Escape(($parentLeaf -replace '/', '\'))
                 } else { $true }
@@ -340,9 +341,7 @@ function Get-FileExcerpt {
         [int]$MaxChars = 12000
     )
     if (-not (Test-Path -LiteralPath $Path)) {
-        if (-not (Test-Path $Path)) {
-            return @{ Ok = $false; Error = "missing"; Lines = @(); Text = "" }
-        }
+        return @{ Ok = $false; Error = "missing"; Lines = @(); Text = "" }
     }
     $all = Get-Content -LiteralPath $Path -ErrorAction Stop
     $total = $all.Count
@@ -398,10 +397,10 @@ function Search-FileKeywordHits {
         [int]$Context = 2,
         [int]$MaxHits = 8
     )
-    if (-not (Test-Path $Path) -or -not $Keywords -or $Keywords.Count -eq 0) {
+    if (-not (Test-Path -LiteralPath $Path) -or -not $Keywords -or $Keywords.Count -eq 0) {
         return @()
     }
-    $all = Get-Content $Path -ErrorAction SilentlyContinue
+    $all = Get-Content -LiteralPath $Path -ErrorAction SilentlyContinue
     if (-not $all) { return @() }
     $hits = @()
     for ($i = 0; $i -lt $all.Count -and $hits.Count -lt $MaxHits; $i++) {
