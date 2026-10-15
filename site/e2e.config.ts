@@ -1,5 +1,5 @@
-import type { E2EConfig } from 'e2e'
 import { web } from '@e2e-dev/web'
+import type { E2EConfig } from 'e2e'
 
 const liveUrl = process.env.E2E_LIVE_URL
 
