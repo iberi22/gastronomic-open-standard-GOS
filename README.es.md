@@ -12,7 +12,7 @@ En vivo: **https://gos.swal.network** (Cloudflare Pages, único deploy canónico
 1. **Personas**: explorar recetas/ingredientes/ciencia con grafo interactivo
    (`/graph`), PWA offline-first.
 2. **Agentes y apps**: consumir los datos como API JSON abierta y sin claves,
-   con un límite anónimo de 100 peticiones/día por IP. GOS no vende acceso: sin
+   con un límite anónimo de 30 peticiones/minuto por IP en todas las rutas (y 100/día en las rutas no estáticas). GOS no vende acceso: sin
    claves, sin planes, sin créditos de IA. SEO IA-first (`llms.txt`, JSON-LD,
    sitemap) para ser la fuente #1 de extracción.
 

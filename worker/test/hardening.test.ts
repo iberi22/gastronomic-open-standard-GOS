@@ -338,9 +338,7 @@ describe('identidad del limite: solo CF-Connecting-IP', () => {
     // Una sola fila (bucket compartido), y el contador refleja los 3 intentos.
     expect(rows.results).toHaveLength(1)
     expect(rows.results?.[0].n).toBe(2)
-    const expected = `ip:${(
-      await sha256HexForTest('anon:no-ip')
-    ).slice(0, 32)}`
+    const expected = `ip:${(await sha256HexForTest('anon:no-ip')).slice(0, 32)}`
     expect(rows.results?.[0].ip_key).toBe(expected)
     expect(rows.results?.[0].ip_key).not.toContain('1.1.1.1')
   })
