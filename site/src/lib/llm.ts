@@ -76,7 +76,7 @@ export interface GosSource {
   url?: string
   /**
    * Texto VERBATIM extraido del contenido, nunca redactado por el modelo.
-   * En tier free es lo unico que se muestra: cita literal, sin inferencia.
+   * Es lo unico que se muestra: cita literal, sin inferencia.
    */
   snippet?: string
   /** Detalle del contenido (p.ej. años de descubrimiento, evidencia, DOI). */
@@ -334,7 +334,7 @@ export interface CatalogEntry extends GosSource {
   haystack: string
 }
 
-/** Respuesta de tier free: recuperacion pura, sin inferencia, 100% citada. */
+/** Respuesta por recuperacion pura: sin inferencia, 100% citada. */
 function retrievalOnlyAnswer(
   question: string,
   sources: GosSource[],
@@ -365,7 +365,7 @@ function retrievalOnlyAnswer(
     status: 'answered',
     answer: [
       `Encontré ${sources.length} ${sources.length === 1 ? 'entrada' : 'entradas'} de GOS que coinciden con «${question}».`,
-      'Lo que hay en el repo, citado literalmente (tier free: sin inferencia del modelo):',
+      'Lo que hay en el repo, citado literalmente (sin inferencia del modelo):',
       '',
       ...blocks,
     ].join('\n'),
