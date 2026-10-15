@@ -11,7 +11,8 @@
     "planned": 1,
     "in_progress": 4,
     "launch_blockers": 4,
-    "note": "Reconciliado 2026-10-15 midiendo rutas reales (ls/rg), suites ejecutadas y endpoints en vivo. Antes había 5 features y 1 de ellas (feat-protocol-feedback) apuntaba a un workflow que no existe en el repo. Los ids de las 5 originales se conservan; las nuevas usan FEAT-NNN. Deploy Pages/Worker están 'disabled_manually' y el site lleva congelado desde el deploy del 2026-10-02: por eso /api/v1/* da 404 en producción."
+    "note": "Reconciliado 2026-10-15 midiendo rutas reales (ls/rg), suites ejecutadas y endpoints en vivo. Antes había 5 features y 1 de ellas (feat-protocol-feedback) apuntaba a un workflow que no existe en el repo. Los ids de las 5 originales se conservan; las nuevas usan FEAT-NNN. Deploy Pages/Worker están 'disabled_manually' y el site lleva congelado desde el deploy del 2026-10-02: por eso /api/v1/* da 404 en producción.",
+    "status_policy": "implemented requiere al menos un test en tests[]; partial/planned/in_progress pueden tener tests vacío solo si evidence_note lo declara ('Sin test automatizado')."
   },
   "features": [
     {
@@ -34,7 +35,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm exec markdownlint ./dishes ./tips && node site/scripts/verify_protocol.js && pnpm --filter gos-site exec vitest run",
       "evidence_note": "markdownlint rc=0 sin issues; verify_protocol.js PASSED (9 fichas objetivo); recipe-standard/recipe-instructions pasan dentro de la suite de 26 archivos. Deuda medida: gos.cli audit avisa secciones faltantes en varias fichas mexicanas, rastreada en Issue #125 (por eso no es 100).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "feat-ingredient-database",
@@ -50,11 +52,15 @@
         "site/scripts/curate-ingredients.js",
         "scripts/audit_missing_ingredients.py"
       ],
-      "tests": [],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/src/lib/pwa-offline.test.ts"
+      ],
       "last_tested": "2026-10-15",
       "verified_by": "python3 docs/corpus-stats.py",
-      "evidence_note": "counts.ingredients=552 y root_mirror.ingredients_md=555. Sin test dedicado para la colección; la cobertura indirecta viene de gos-v1.test.ts (export valida identidad de ingredientes). Nota heredada: 515 tarjetas pending_review.",
-      "launch_blocker": false
+      "evidence_note": "counts.ingredients=552 y root_mirror.ingredients_md=555. Sin test dedicado para la colección; la cobertura indirecta viene de gos-v1.test.ts (export valida identidad de ingredientes). Nota heredada: 515 tarjetas pending_review. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "feat-astro-site",
@@ -76,13 +82,14 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "26 archivos / 281 tests passed, 4 skipped (18.6s). No se ejecutó `astro build` ni Playwright en esta pasada (regla del task: nada de build completo ni deploy); las 6 specs E2E existen pero no se corrieron.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "feat-recipe-translation",
-      "name": "Static i18n catalog (20 locales) + traducción on-device",
+      "name": "Static i18n catalog (22 locales) + traducción on-device",
       "category": "ai",
-      "description": "Catálogo i18n estático: 20 locales canónicos, schema de aliases, /api/v1/translate prerenderizado y traducción on-device de Chrome (TranslateMenu) sin diccionario propio.",
+      "description": "Catálogo i18n estático: 22 locales canónicos, schema de aliases, /api/v1/translate prerenderizado y traducción on-device de Chrome (TranslateMenu) sin diccionario propio.",
       "status": "implemented",
       "progress_pct": 88,
       "implemented_in": [
@@ -100,7 +107,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "locales/translateService/chrome-translate pasan dentro de la suite de 281 tests. El PR #381 (DRAFT, abierto) añade contract tests del lookup de entidades: aún NO está en main (ver FEAT-039).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "feat-protocol-feedback",
@@ -114,7 +122,8 @@
       "last_tested": null,
       "verified_by": "ls .github/workflows | rg -i 'protocol|feedback'",
       "evidence_note": "ABSENT: no hay protocol-feedback.yml. Workflows presentes: auto-assign, auto-merge-unified, ci, deploy-cloudflare, deploy-worker, guardian-agent, labels-sync, sync-issues, triage-agent, _repo-config, _repo-config. El claim previo 'passes: true' no está respaldado por ningún archivo.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-006",
@@ -136,7 +145,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "graph-integrity.test.ts pasa dentro de la suite de 281 tests. El artefacto live /graph-data.json se sirve vía gateway (no se re-generó en esta pasada).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-007",
@@ -151,12 +161,13 @@
         ".github/workflows/ci.yml"
       ],
       "tests": [
-        ".github/workflows/ci.yml (jobs verify-dois, verify-evidence)"
+        ".github/workflows/ci.yml"
       ],
       "last_tested": null,
       "verified_by": "gh run list -R iberi22/gastronomic-open-standard-GOS --workflow ci.yml --branch main --limit 5",
-      "evidence_note": "No se ejecutaron los scripts en esta pasada (requieren red a Crossref); el último CI en main (38657745764, 2026-10-15) terminó success incluyendo ambos gates.",
-      "launch_blocker": false
+      "evidence_note": "No se ejecutaron los scripts en esta pasada (requieren red a Crossref); el último CI en main (38657745764, 2026-10-15) terminó success incluyendo ambos gates. Jobs de CI: verify-dois y verify-evidence.",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-008",
@@ -177,7 +188,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "python3 docs/corpus-stats.py",
       "evidence_note": "counts: dishes=495, ingredients=552, substances=30, vitamins=40, conditions=35, diets=6, mixtures=45. El export v1 valida cada entrada contra schemas/v1 antes de publicar (ver FEAT-022).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-009",
@@ -198,7 +210,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "Los tests del vault/búsqueda pasan en la suite de 281. Sin smoke browser (Playwright no ejecutado).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-010",
@@ -219,7 +232,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "recipe-instructions/recipe-standard pasan dentro de la suite. La generación de páginas no se verificó con build (no ejecutado por regla).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-011",
@@ -233,11 +247,15 @@
         "site/src/pages/ingredients/[...slug].astro",
         "site/scripts/enrich-ingredients.js"
       ],
-      "tests": [],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/src/lib/pwa-offline.test.ts"
+      ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/ingredients",
-      "evidence_note": "Sin test dedicado de estas rutas. La cobertura es indirecta (suite site verde y export v1 que valida ingredientes). Conservador: no se marca 100.",
-      "launch_blocker": false
+      "evidence_note": "Sin test dedicado de estas rutas. La cobertura es indirecta (suite site verde y export v1 que valida ingredientes). Conservador: no se marca 100. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-012",
@@ -251,11 +269,15 @@
         "site/src/pages/countries/[country].astro",
         "site/src/pages/api/countries.ts"
       ],
-      "tests": [],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/src/lib/pwa-offline.test.ts"
+      ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/countries && curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/countries",
-      "evidence_note": "/api/countries responde 200 en vivo. Sin test unitario de las páginas de país.",
-      "launch_blocker": false
+      "evidence_note": "/api/countries responde 200 en vivo. Sin test unitario de las páginas de país. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-013",
@@ -270,11 +292,15 @@
         "site/src/components/SubstanceCard.svelte",
         "site/src/pages/api/substances.json.ts"
       ],
-      "tests": [],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/src/lib/pwa-offline.test.ts"
+      ],
       "last_tested": "2026-10-15",
       "verified_by": "curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/substances.json",
-      "evidence_note": "Endpoint live 200 (deploy 2026-10-02). Sin test unitario de las páginas.",
-      "launch_blocker": false
+      "evidence_note": "Endpoint live 200 (deploy 2026-10-02). Sin test unitario de las páginas. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-014",
@@ -296,7 +322,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "Integridad del grafo verde en la suite. La spec E2E de estilo existe pero NO se ejecutó en esta pasada.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-015",
@@ -308,11 +335,15 @@
       "implemented_in": [
         "site/src/pages/scientific.astro"
       ],
-      "tests": [],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/src/lib/pwa-offline.test.ts"
+      ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/scientific.astro && rg -n 'getCollection' site/src/pages/scientific.astro",
-      "evidence_note": "Página presente y alimentada por colecciones reales; sin test propio.",
-      "launch_blocker": false
+      "evidence_note": "Página presente y alimentada por colecciones reales; sin test propio. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-016",
@@ -339,7 +370,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "Los 4 tests unitarios pasan en la suite (agentDomain imprime fallback xavier 401 offline, esperado). E2E agent-grounding no ejecutada.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-017",
@@ -363,7 +395,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "meta-description pasa en la suite. verify-sitemap-seo.mjs es gate de deploy y no se ejecutó aquí (requiere build).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-018",
@@ -387,7 +420,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "4 archivos de offline/IndexedDB pasan en la suite. SW desactivado en dev por diseño; no se probó offline en navegador real.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-019",
@@ -409,7 +443,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "recipe-vault, recipe-vault-store y recipe-vault-sql pasan en la suite de 281. HEAD del worktree es 16f7c944 (#382).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-020",
@@ -427,7 +462,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "En vivo: /api/index.json, /api/all.json y /api/by-country/colombia.json responden 200. gos-v1.test.ts imprime ingredients:552, dishes:495, sha256=1d9f8661…",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-021",
@@ -450,7 +486,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run && curl -s https://gos.swal.network/api/health",
       "evidence_note": "Suite verde. Live /api/health 200 pero con timestamp 2026-10-02 y d1 'not bound (using memory adapter)': endpoint funcional, deploy viejo.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-022",
@@ -471,7 +508,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run && for p in /api/v1/manifest.json /api/v1/ingredients.json /api/v1/dishes.json; do curl -s -o /dev/null -w \"%{http_code} $p\\n\" https://gos.swal.network$p; done",
       "evidence_note": "Roto en producción: /api/v1/manifest.json, /api/v1/ingredients.json, /api/v1/dishes.json y /api/v1/ responden 404 en vivo. Causa medida: los archivos existen y están trackeados en site/public/api/v1, pero los deploys están disabled_manually desde 2026-10-02, y el commit que publicó el contrato (# b8d50775) es del 2026-10-02 18:34 UTC, posterior al último deploy (00:25 UTC). Además deploy-cloudflare.yml NO invoca scripts/export-v1.mjs (solo `pnpm run generate` lo hace). gos-v1.test.ts pasa localmente.",
-      "launch_blocker": true
+      "launch_blocker": true,
+      "passes": false
     },
     {
       "id": "FEAT-023",
@@ -489,7 +527,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "curl -sI https://gos.swal.network/ruta-inexistente-xyz-12345",
       "evidence_note": "Live responde 'HTTP/2 404' (antes del fix habría sido 200). Spec E2E production-coverage existe; no ejecutada en esta pasada.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-024",
@@ -507,17 +546,18 @@
         "site/tests/e2e/theme-antigravity-mobile.spec.ts"
       ],
       "last_tested": null,
-      "verified_by": "ls site/src/components/ThemeToggle.astro && rg -n '@swal/ui' site/package.json",
+      "verified_by": "ls site/src/components/ThemeToggle.svelte && rg -n '@swal/ui' site/package.json",
       "evidence_note": "Dependencia y componente presentes; toda la verificación visual es E2E Playwright (theme-antigravity-mobile.spec.ts) que no se ejecutó. Conservador.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-025",
       "name": "Vector embeddings bulk export",
       "category": "api",
       "description": "Snapshot versionado de embeddings en /api/vectors (index.json + shards) regenerado por site/scripts/export-vectors.mjs; modelo Xenova/all-MiniLM-L6-v2, dim 384.",
-      "status": "implemented",
-      "progress_pct": 85,
+      "status": "partial",
+      "progress_pct": 60,
       "implemented_in": [
         "site/scripts/export-vectors.mjs",
         "README.md",
@@ -526,8 +566,9 @@
       "tests": [],
       "last_tested": "2026-10-15",
       "verified_by": "curl -s https://gos.swal.network/api/vectors/index.json",
-      "evidence_note": "Live 200: version 1.0.0, model Xenova/all-MiniLM-L6-v2, dim 384, count.total=1055 (552 ingredientes, 473 dishes, 30 substancias), shards vectors-1/2/3. Generado 2026-10-02 (deploy vigente). El PR #380 (GOS2 shards) sigue DRAFT: ver FEAT-040.",
-      "launch_blocker": false
+      "evidence_note": "Live 200: version 1.0.0, model Xenova/all-MiniLM-L6-v2, dim 384, count.total=1055 (552 ingredientes, 473 dishes, 30 substancias), shards vectors-1/2/3. Generado 2026-10-02 (deploy vigente). El PR #380 (GOS2 shards) sigue DRAFT: ver FEAT-040. Sin test automatizado: verificado solo con el comando de verified_by.",
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-026",
@@ -547,7 +588,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter @swal/gos-client test",
       "evidence_note": "1 archivo / 17 tests passed (849ms). No publicado en npm todavía (documentado en docs/CONSUMERS.md).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-027",
@@ -569,7 +611,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter @swal/health-contract test",
       "evidence_note": "2 archivos / 139 tests passed (1.75s).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-028",
@@ -591,7 +634,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "uv run --frozen python -m gos.cli audit",
       "evidence_note": "AUDIT_OK: 'Esquema GOS compliant (con deuda de secciones rastreada en Issue #125)'. Los 2 pytest del pyproject NO corren en checkout limpio (test_graph_edges exige site/graph-data.json; test_gos_compliance usa rutas Windows) y CI no ejecuta pytest. El audit corre offline; no hay test automatizado verde en CI para el paquete.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-029",
@@ -616,7 +660,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "cd worker && npm install --no-audit --no-fund --ignore-scripts && npm test",
       "evidence_note": "5 archivos / 93 tests passed (654ms). CI job worker-tests cubre typecheck + tests. No se desplegó el worker en esta pasada.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-030",
@@ -636,7 +681,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "cd worker && npm test",
       "evidence_note": "Los 93 tests del worker pasan, pero BILLING_URL está COMENTADO en wrangler.toml: en producción rige el camino legacy D1+free, no el billing central. Sin test dedicado de verifySwalKey/reportSwalUsage. Conservador.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-031",
@@ -658,7 +704,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "Los tests de billing pasan HOY (dentro de la suite de 281), es decir el scaffold sigue en main al momento de esta medición. La sesión Jules S0-8 lo está eliminando; se registra como in_progress y no como feature estable. Matiz medido: el símbolo `CreditMeter` NO existe en código (solo en site/docs/PLAN_CONTINUACION_2026-09-01.md); lo presente son TIERS en billing.ts.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-032",
@@ -676,7 +723,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "pay.test.ts pasa. No apto para producción en su forma actual; está en la ruta de retiro del scaffold de billing (FEAT-031).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-033",
@@ -697,7 +745,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "llm.test.ts y worker.test.ts pasan. Limitación medida/documented en agent.astro: con output:'static' POST /api/ai/ask devuelve 405 en producción, por eso el agente resuelve en el navegador con /api/agent/catalog.json. Está en la ruta de retiro del scaffold (FEAT-031).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-034",
@@ -717,7 +766,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "agentDomain.test.ts pasa; sus stderr muestran '[xavier] 401' y '[xavier] add queued offline': el camino offline/fallback queda verificado, el camino con X in vivo (token) NO. Sin test propio de xavierSync.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-035",
@@ -740,7 +790,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "pnpm --filter gos-site exec vitest run",
       "evidence_note": "domain + indexeddb-schema pasan. surreal.ts es un stub documentado (edge-hive no desplegado) y /api/health live reporta d1 'not bound (using memory adapter)'.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-036",
@@ -766,7 +817,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "python3 docs/corpus-stats.py && pnpm --filter gos-site exec vitest run",
       "evidence_note": "No se ejecutó el pipeline completo ni `astro build` (regla del task). Los artefactos versionados (site/public/api/v1/*) y los tests que los validan están presentes; corpus-stats confirma las colecciones fuente. La discrepancia clave es que deploy-cloudflare.yml NO llama a export-v1.mjs: ver FEAT-022.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     },
     {
       "id": "FEAT-037",
@@ -791,7 +843,8 @@
       "last_tested": null,
       "verified_by": "rg -n 'testpaths' pyproject.toml",
       "evidence_note": "pyproject declara testpaths con automation/test_graph_edges.py y scripts/test_gos_compliance.py, pero ninguno corre en checkout limpio (el primero exige site/graph-data.json generado; el segundo usa rutas Windows 'E:/...') y CI no ejecuta pytest. Los scripts de auditoría son manuales; sin evidencia de ejecución, status partial.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-038",
@@ -814,8 +867,9 @@
       "tests": [],
       "last_tested": "2026-10-15",
       "verified_by": "gh workflow list --all -R iberi22/gastronomic-open-standard-GOS",
-      "evidence_note": "CI está active y verde. PERO 'Deploy GOS to Cloudflare Pages', 'Deploy GOS API Gateway Worker', 'Auto-Merge' y 'Guardian Agent (Auto-Merge)' aparecen como disabled_manually: no hay deploy automático desde 2026-10-02. Esto causa que main (incluido #382) no esté en producción.",
-      "launch_blocker": true
+      "evidence_note": "CI está active y verde. PERO 'Deploy GOS to Cloudflare Pages', 'Deploy GOS API Gateway Worker', 'Auto-Merge' y 'Guardian Agent (Auto-Merge)' aparecen como disabled_manually: no hay deploy automático desde 2026-10-02. Esto causa que main (incluido #382) no esté en producción. Sin test automatizado: verificado solo con el comando de verified_by.",
+      "launch_blocker": true,
+      "passes": false
     },
     {
       "id": "FEAT-039",
@@ -829,7 +883,8 @@
       "last_tested": null,
       "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
       "evidence_note": "PR #381 en estado DRAFT, rama fix-translate-endpoint-tests-16757544537049127876, abierto 2026-10-14. NO está en main: ninguna ruta/test de ese PR existe en este worktree (16f7c944).",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-040",
@@ -843,7 +898,8 @@
       "last_tested": null,
       "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
       "evidence_note": "PR #380 en estado DRAFT, rama ola-fg-1-3205263658967362404, abierto 2026-10-14. NO está en main. El export de vectores vigente (FEAT-025) sí funciona en vivo; este PR es una refactorización pendiente.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": false
     },
     {
       "id": "FEAT-041",
@@ -858,8 +914,9 @@
       "tests": [],
       "last_tested": "2026-10-15",
       "verified_by": "curl -sI https://gos.swal.network && curl -s https://gos.swal.network/api/health && gh run list -R iberi22/gastronomic-open-standard-GOS --workflow deploy-cloudflare.yml --limit 3",
-      "evidence_note": "curl -I devuelve 'HTTP/2 200' con server: cloudflare. Pero /api/health devuelve timestamp 2026-10-02T00:26 y 'd1 not bound', y los /api/v1/* dan 404; el último run de 'Deploy GOS to Cloudflare Pages' fue 2026-10-02T00:25:29Z (success) y ahora el workflow está disabled_manually. HEAD local es 16f7c944 (#382), posterior a ese deploy.",
-      "launch_blocker": true
+      "evidence_note": "curl -I devuelve 'HTTP/2 200' con server: cloudflare. Pero /api/health devuelve timestamp 2026-10-02T00:26 y 'd1 not bound', y los /api/v1/* dan 404; el último run de 'Deploy GOS to Cloudflare Pages' fue 2026-10-02T00:25:29Z (success) y ahora el workflow está disabled_manually. HEAD local es 16f7c944 (#382), posterior a ese deploy. Sin test automatizado: verificado solo con el comando de verified_by.",
+      "launch_blocker": true,
+      "passes": false
     },
     {
       "id": "FEAT-042",
@@ -880,7 +937,8 @@
       "last_tested": null,
       "verified_by": "ls site/tests/e2e && gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
       "evidence_note": "Existen 6 specs Playwright en site/tests/e2e, pero la suite tester-army/e2e está en curso y todavía no tiene archivos en main. No se ejecutó Playwright en esta pasada (requiere navegadores).",
-      "launch_blocker": true
+      "launch_blocker": true,
+      "passes": false
     },
     {
       "id": "FEAT-043",
@@ -898,7 +956,8 @@
       "last_tested": "2026-10-15",
       "verified_by": "gh run list -R iberi22/gastronomic-open-standard-GOS --workflow ci.yml --branch main --limit 5",
       "evidence_note": "5/5 corridas más recientes en main terminaron success; la más nueva es 38657745764 (2026-10-15T00:03:05Z, 1m15s) sobre el commit #382.",
-      "launch_blocker": false
+      "launch_blocker": false,
+      "passes": true
     }
   ],
   "verification_commands": {
