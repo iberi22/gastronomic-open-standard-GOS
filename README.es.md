@@ -1,11 +1,20 @@
 # GOS — Estándar Gastronómico Abierto
 
+[![Licencia: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)](./LICENSE)
+
 Grafo de conocimiento abierto de la gastronomía mundial: **recetas ↔ ingredientes ↔
 vitaminas ↔ sustancias bioactivas ↔ sabores ↔ técnicas ↔ afecciones ↔ dietas ↔ regiones**.
 Los `.md` del repo SON la base de datos (495 platos, 552 ingredientes, 40 vitaminas,
 35 afecciones, 30 sustancias, 6 dietas) según lo verificado por `python3 docs/corpus-stats.py` en `docs/stats.json`. Astro 7 + Svelte 5 + Tailwind v4.
 
 En vivo: **https://gos.swal.network** (Cloudflare Pages, único deploy canónico)
+
+## Rol en el ecosistema SWAL
+
+GOS es el repositorio abierto de información del ecosistema SWAL: datos y
+esquemas abiertos que leen las apps SWAL (Fize, GARA-G, BioHuman,
+OrionHealth...). Los modelos de negocio viven en esas apps, no aquí: GOS no
+vende acceso, ni claves, ni planes, ni créditos de IA.
 
 ## Finalidad
 
@@ -47,3 +56,16 @@ Ver documentación detallada de la API en [API_README.md](./API_README.md).
 
 Copia una plantilla, respeta el front-matter (`docs/INGREDIENT_PROTOCOL.md`),
 corre `pnpm run lint` antes del push. El historial preserva el fork HowToCook.
+
+## Licencia
+
+AGPL-3.0-or-later (GNU Affero General Public License v3 o posterior) — ver
+[LICENSE](./LICENSE). Aplica a todo el repositorio desde el 2026-10-15: datos
+(recetas, ingredientes, esquemas), sitio, worker y paquetes.
+
+El contenido de terceros conserva su propia licencia y aparece con su aviso
+completo en [NOTICE.md](./NOTICE.md): los metadatos del catálogo de ejercicios de
+`hasaneyldrm/exercises-dataset` (MIT) y las ilustraciones de
+`bryllim/workout-guide` (CC BY-SA 4.0). [NOTICE](./NOTICE) registra el linaje de
+licencias: el proyecto nació de HowToCook (Unlicense / dominio público), luego
+MIT (2025-07), CC BY-NC 4.0 (2025-12), Apache-2.0 y ahora AGPL-3.0-or-later.

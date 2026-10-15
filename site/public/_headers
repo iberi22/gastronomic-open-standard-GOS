@@ -1,0 +1,30 @@
+# Cloudflare Pages security headers (consumed at deploy; not served as a file).
+#
+# Inventario de origenes externos del sitio construido (medido en sitio fuente y
+# en dist/ real de 1106 paginas; ver docs/LICENSING.md y el informe del cambio):
+#   - scripts: NINGUNO externo. Solo /_astro/*.js (mismo origen) + scripts
+#     inline de hidratacion de Astro (1106/1106 paginas) -> script-src
+#     'unsafe-inline' es obligatorio en un host estatico (no hay nonce posible).
+#   - estilos: NINGUNO externo (se usan fuentes del sistema, sin CDN) + <style>
+#     inline y atributos style= (1106/1106) -> style-src 'unsafe-inline'.
+#   - imagenes: /images locales, data: (un SVG en graph.css) y, por el
+#     front-matter del corpus, https://images.unsplash.com (368 refs) y
+#     https://www.misrecetas.com (10 refs con extension de imagen).
+#   - fuentes: ninguna remota (font-src 'self' data:).
+#   - conexiones: /api/* y /api/ai/ask SIEMPRE mismo origen -> connect-src 'self'.
+#     Si algun dia se activa PUBLIC_EDGE_HIVE_URL (edge-hive/SurrealDB WS) hay
+#     que anadir ese origen y wss: aqui.
+#   - sin iframes, sin video/audio, sin WebSocket, sin .wasm.
+#   - el unico blob: del sitio es un <a download href=blob:> de exportacion
+#     (RecipeVault); CSP no restringe descargas, asi que no hace falta blob:.
+#
+# Trade-off explicito: 'unsafe-inline' en script-src debilita la CSP frente a
+# XSS. Es la opcion conservadora para no romper la hidratacion de Astro; la
+# alternativa (hashes/nonces) exige un build con SSR o un paso que reescriba
+# 1106 HTML, y no existe en output:'static'.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com https://www.misrecetas.com; font-src 'self' data:; connect-src 'self'; media-src 'self'; manifest-src 'self'; worker-src 'self'; frame-src 'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests

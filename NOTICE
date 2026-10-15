@@ -1,9 +1,28 @@
 Gastronomic Open Standard (GOS)
 Copyright 2024-2026 SouthWest AI Labs (SWAL) and GOS contributors
 
-This product (code and data: recipes, ingredients, nutrition, mixtures,
-substances and schemas) is licensed under the Apache License, Version 2.0.
-See the LICENSE file.
+Since 2026-10-15 the repository — code and data: recipes, ingredients,
+nutrition, mixtures, substances and schemas, plus the site and the worker — is
+licensed under the GNU Affero General Public License, version 3 or (at your
+option) any later version (SPDX: AGPL-3.0-or-later). See the LICENSE file for
+the complete text.
 
-Third-party content keeps its own license and attribution where stated
-(e.g. exercise identifiers from @bryllim/workout-guide, CC BY-SA 4.0).
+Third-party content keeps its own licence and attribution where stated; the
+full notices are in NOTICE.md. These are the ones that are not AGPL:
+
+  * Exercise catalogue metadata and instruction text derived from
+    hasaneyldrm/exercises-dataset (via openGym) — MIT, notice reproduced in
+    NOTICE.md.
+  * Artwork from bryllim/workout-guide — CC BY-SA 4.0, with the credit its own
+    licence requires.
+
+Lineage of this repository's licence (each step verified in git history):
+
+  * HowToCook (Anduin2017/HowToCook), released into the public domain under
+    the Unlicense — the project started as a fork of it.
+  * MIT — 2025-07.
+  * CC BY-NC 4.0 — 2025-12.
+  * AGPL-3.0 — 2026-08.
+  * Apache-2.0 — 2026-10-02.
+  * AGPL-3.0-or-later — 2026-10-15 (owner decision: GOS is open data; the
+    business models live in the SWAL apps that read it, not here).
