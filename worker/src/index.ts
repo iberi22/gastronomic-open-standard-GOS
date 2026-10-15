@@ -130,6 +130,31 @@ async function checkBurst(
 }
 
 /** 503 cuando no se puede garantizar el limite (mismo cuerpo en ambos casos). */
+// The daily quota table is created by the Worker itself through its D1 binding
+// (CI tokens have no D1 write permission). One idempotent DDL per isolate.
+const QUOTA_TABLE_DDL =
+  'CREATE TABLE IF NOT EXISTS free_quota (ip_key TEXT NOT NULL, day TEXT NOT NULL, ' +
+  'n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (ip_key, day))'
+let quotaTableReady: Promise<void> | null = null
+function ensureQuotaTable(db: D1Database): Promise<void> {
+  if (!quotaTableReady) {
+    quotaTableReady = db
+      .prepare(QUOTA_TABLE_DDL)
+      .run()
+      .then(() => undefined)
+      .catch((err: unknown) => {
+        quotaTableReady = null
+        throw err
+      })
+  }
+  return quotaTableReady
+}
+
+/** Test hook: forget the per-isolate DDL cache. */
+export function __resetQuotaTableCacheForTests(): void {
+  quotaTableReady = null
+}
+
 function limiterUnavailable(retryAfter: string): Response {
   return jsonResponse({ error: 'rate limiter unavailable' }, 503, {
     'Retry-After': retryAfter,
@@ -273,6 +298,7 @@ export default {
       }
       const day = new Date().toISOString().slice(0, 10)
       try {
+        await ensureQuotaTable(env.DB)
         const ipKey = `ip:${(await sha256Hex(identity)).slice(0, 32)}`
         // Sin fila RETURNING = cuota agotada (el WHERE del DO UPDATE falla).
         const row = await env.DB.prepare(
