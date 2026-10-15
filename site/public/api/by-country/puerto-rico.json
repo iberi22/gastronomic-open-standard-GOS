@@ -10,7 +10,7 @@
         "title": "Alcapurrias de Masa Puertorriqueñas",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/alcapurrias.html",
@@ -109,7 +109,7 @@
         "title": "Arroz con Gandules Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/arrozcongandules.html",
@@ -206,7 +206,7 @@
         "title": "Asopao de Pollo Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/asopao.html",
@@ -310,7 +310,7 @@
         "title": "Coquito Puertorriqueño Tradicional",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/coquito.html",
@@ -414,7 +414,7 @@
         "title": "Mofongo Puertorriqueño de Camarones",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/mofongo.html",
@@ -513,7 +513,7 @@
         "title": "Pasteles Puertorriqueños de Masa",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pasteles.html",
@@ -617,7 +617,7 @@
         "title": "Pernil Asado Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pernil.html",
@@ -718,7 +718,7 @@
         "title": "Pinchos de Pollo Puertorriqueños",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pinchos.html",
@@ -818,7 +818,7 @@
         "title": "Tembleque de Coco Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/tembleque.html",
@@ -923,7 +923,7 @@
         "title": "Trifongo Puertorriqueño de Chicharrón",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/mofongo.html",

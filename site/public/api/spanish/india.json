@@ -10,7 +10,7 @@
         "title": "Aloo Gobi",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%B2%E0%A5%82_%E0%A4%97%E0%A5%8B%E0%A4%AD%E0%A5%80",
@@ -102,7 +102,7 @@
         "title": "Baingan Bharta",
         "region": "Punjab / Norte de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%97%E0%A4%A8_%E0%A4%95%E0%A4%BE_%E0%A4%AD%E0%A4%B0%E0%A4%A4%E0%A4%BE",
@@ -194,7 +194,7 @@
         "title": "Hyderabadi Biryani",
         "region": "Hyderabad",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-hyderabadi-biryani-218337",
@@ -286,7 +286,7 @@
         "title": "Bisi Bele Bath",
         "region": "Karnataka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B8%E0%A5%80_%E0%A4%AC%E0%A5%87%E0%A4%B2%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%A4",
@@ -379,7 +379,7 @@
         "title": "Butter Chicken (Murgh Makhani)",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-butter-chicken-218228",
@@ -469,7 +469,7 @@
         "title": "Chana Masala",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%A8%E0%A4%BE_%E0%A4%AE%E0%A4%B8%E0%A4%BE%E0%A4%B2%E0%A4%BE",
@@ -559,7 +559,7 @@
         "title": "Chicken Korma",
         "region": "Mogolla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-chicken-korma-218359",
@@ -649,7 +649,7 @@
         "title": "Chicken Tikka Masala",
         "region": "Punjab / U.K.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-chicken-tikka-masala-218230",
@@ -739,7 +739,7 @@
         "title": "Dal Makhani",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-dal-makhani-218225",
@@ -829,7 +829,7 @@
         "title": "Dhokla Gujarati",
         "region": "Gujarat",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A2%E0%A5%8B%E0%A4%95%E0%A4%B2%E0%A4%BE",
@@ -923,7 +923,7 @@
         "title": "Masala Dosa",
         "region": "Sur de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%B8%E0%A4%BE",
@@ -1011,7 +1011,7 @@
         "title": "Amritsari Fish Fry",
         "region": "Amritsar",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-amritsari-fish-218336",
@@ -1099,7 +1099,7 @@
         "title": "Gulab Jamun",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%BE%E0%A4%AC_%E0%A4%9C%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%A8",
@@ -1187,7 +1187,7 @@
         "title": "Hyderabadi Haleem",
         "region": "Telangana / Hyderabad",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-hyderabadi-haleem-218340",
@@ -1283,7 +1283,7 @@
         "title": "Idli Sambar",
         "region": "Tamil Nadu / Sur de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%87%E0%A4%A1%E0%A4%B2%E0%A5%80",
@@ -1378,7 +1378,7 @@
         "title": "Kathi Roll de Kolkata",
         "region": "Bengala Occidental / Kolkata",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://thehindu.com/food/features/the-story-of-kolkatas-kathi-roll/article32567890.ece",
@@ -1473,7 +1473,7 @@
         "title": "Kheer de Arroz",
         "region": "Pan-India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%96%E0%A5%80%E0%A4%B0",
@@ -1568,7 +1568,7 @@
         "title": "Litti Chokha",
         "region": "Bihar",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A5%80_%E0%A4%9A%E0%A5%8B%E0%A4%96%E0%A4%BE",
@@ -1661,7 +1661,7 @@
         "title": "Malai Kofta",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-malai-kofta-218227",
@@ -1749,7 +1749,7 @@
         "title": "Misal Pav",
         "region": "Maharashtra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%B8%E0%A4%B2_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
@@ -1842,7 +1842,7 @@
         "title": "Ajo Naan (Pan Naan)",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-garlic-naan-218231",
@@ -1932,7 +1932,7 @@
         "title": "Palak Paneer",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-palak-paneer-218229",
@@ -2022,7 +2022,7 @@
         "title": "Paneer Butter Masala",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-paneer-butter-masala-218226",
@@ -2112,7 +2112,7 @@
         "title": "Pani Puri (Golgappa)",
         "region": "Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%80",
@@ -2200,7 +2200,7 @@
         "title": "Pav Bhaji",
         "region": "Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B5_%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80",
@@ -2288,7 +2288,7 @@
         "title": "Indori Poha",
         "region": "Madhya Pradesh / Indore",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8B%E0%A4%B9%E0%A4%BE",
@@ -2381,7 +2381,7 @@
         "title": "Rajma Chawal",
         "region": "Norte de la India / Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-rajma-chawal-218345",
@@ -2473,7 +2473,7 @@
         "title": "Rasam de Tomate",
         "region": "Tamil Nadu / Sur de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%AE",
@@ -2567,7 +2567,7 @@
         "title": "Rasgulla",
         "region": "Bengala Occidental / Odisha",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BE",
@@ -2658,7 +2658,7 @@
         "title": "Rogan Josh de Cordero",
         "region": "Cachemira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-mutton-rogan-josh-218358",
@@ -2748,7 +2748,7 @@
         "title": "Samosa de Patata y Guisantes",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AE%E0%A5%8B%E0%A4%B8%E0%A4%BE",
@@ -2840,7 +2840,7 @@
         "title": "Tandoori Chicken",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-tandoori-chicken-218224",
@@ -2930,7 +2930,7 @@
         "title": "Thalipeeth",
         "region": "Maharashtra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%AA%E0%A5%80%E0%A4%A0",
@@ -3023,7 +3023,7 @@
         "title": "Vada Pav",
         "region": "Bombay / Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
@@ -3111,7 +3111,7 @@
         "title": "Vindaloo de Cerdo",
         "region": "Goa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-goan-pork-vindaloo-218342",

@@ -7,12 +7,12 @@
 The Gastronomic Open Standard (GOS) is an open-source, scientifically validated knowledge graph connecting world recipes, ingredients, micronutrients, bioactive chemical substances, sensory profiles (flavor/aroma/texture), medical health registries, and dietary fits.
 
 ## Live Graph Breakdown
-- Total Nodes: 4499
-- Total Edges: 13075
+- Total Nodes: 4437
+- Total Edges: 13147
 - Node Types Breakdown:
   - diet: 6
   - recipe: 510
-  - ingredient: 2460
+  - ingredient: 2398
   - category: 14
   - flavor: 572
   - texture: 541
@@ -435,15 +435,15 @@ Sample Dishes:
 - Saponins (substance_saponins): Potential cholesterol lowering effect. [Source: https://gos.swal.network/substances/saponins]
 - Beta-carotene (substance_beta_carotene): Pro-vitamin A, powerful antioxidant. [Source: https://gos.swal.network/substances/beta_carotene]
 
-## Sample Scientific Ingredients (2460 Total)
+## Sample Scientific Ingredients (2398 Total)
 - Manzana  [ID: ingredient_manzana]
 - Masa para pie  [ID: ingredient_masa_para_pie]
 - Canela  [ID: ingredient_canela]
-- Mantequilla  [ID: ingredient_mantequilla]
-- Azúcar  [ID: ingredient_az_car]
+- Mantequilla (Bos taurus) [ID: ingredient_mantequilla__sin_sal_]
+- Azúcar (Saccharum officinarum (derivado)) [ID: ingredient_panela__piloncillo_papel_n_]
 - Costillas de cerdo  [ID: ingredient_costillas_de_cerdo]
 - Salsa BBQ  [ID: ingredient_salsa_bbq]
-- Pimentón  [ID: ingredient_piment_n]
+- Pimentón (Capsicum annuum) [ID: ingredient_piment_n_rojo__pimiento_]
 - Ajo (Allium sativum) [ID: ingredient_ajo]
 - Miel  [ID: ingredient_miel]
 - Biscuits de mantequilla  [ID: ingredient_biscuits_de_mantequilla]
@@ -454,18 +454,17 @@ Sample Dishes:
 - 6 biscuits de mantequilla recién horneados (estilo buttermilk biscuit)  [ID: ingredient_6_biscuits_de_mantequilla_reci_n_horneados__estilo_buttermilk_biscuit_]
 - salchicha de cerdo fresca suelta (country sausage)  [ID: ingredient_salchicha_de_cerdo_fresca_suelta__country_sausage_]
 - pimienta negra recién molida gruesa  [ID: ingredient_pimienta_negra_reci_n_molida_gruesa]
-- sal marina  [ID: ingredient_sal_marina]
+- sal marina (NaCl) [ID: ingredient_sal__cloruro_de_sodio_]
 - Una pizca de pimienta de cayena (opcional)  [ID: ingredient_una_pizca_de_pimienta_de_cayena__opcional_]
 - Pecho de ternera  [ID: ingredient_pecho_de_ternera]
 - Polvo de ajo  [ID: ingredient_polvo_de_ajo]
 - 1 pieza entera de pecho de ternera (brisket packer cut, aprox. 5  [ID: ingredient_1_pieza_entera_de_pecho_de_ternera__brisket_packer_cut__aprox__5]
 - pimienta negra recién molida gruesa (tamaño 16 mesh)  [ID: ingredient_pimienta_negra_reci_n_molida_gruesa__tama_o_16_mesh_]
 - sal kosher o sal marina gruesa  [ID: ingredient_sal_kosher_o_sal_marina_gruesa]
-- ajo en polvo  [ID: ingredient_ajo_en_polvo]
 - Madera de roble (post oak) para el ahumado  [ID: ingredient_madera_de_roble__post_oak__para_el_ahumado]
-- Pollo  [ID: ingredient_pollo]
+- Pollo (Gallus gallus domesticus) [ID: ingredient_pollo__pechuga_sin_piel_]
 - Cerdo desmenuzado  [ID: ingredient_cerdo_desmenuzado]
-- Maíz  [ID: ingredient_ma_z]
+- Maíz (Zea mays) [ID: ingredient_ma_z__mazorca_grano_]
 - Habas (lima beans)  [ID: ingredient_habas__lima_beans_]
 - Tomate triturado  [ID: ingredient_tomate_triturado]
 - carne de pollo cocida y desmenuzada  [ID: ingredient_carne_de_pollo_cocida_y_desmenuzada]
@@ -486,6 +485,7 @@ Sample Dishes:
 - Jarabe de arce  [ID: ingredient_jarabe_de_arce]
 - 8 muslos de pollo deshuesados con piel  [ID: ingredient_8_muslos_de_pollo_deshuesados_con_piel]
 - suero de leche (buttermilk)  [ID: ingredient_suero_de_leche__buttermilk_]
+- pimentón dulce  [ID: ingredient_piment_n_dulce]
 
 ## API Gateway & Rate Limits
 - Gateway URL: /api/* (fronted by Cloudflare Worker)

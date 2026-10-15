@@ -10,7 +10,7 @@
         "title": "Agua de Horchata de Arroz",
         "region": "Tradicional Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/bebidas/agua-de-horchata-de-arroz-tradicional/2018/03/",
@@ -94,7 +94,7 @@
         "title": "Aguachile Verde de Camarón",
         "region": "Sinaloa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/04/14/receta-aguachile-verde-de-camaron/",
@@ -206,7 +206,7 @@
         "title": "Albóndigas en Salsa de Chipotle",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/albondigas-en-salsa-de-chipotle/2019/04/",
@@ -314,7 +314,7 @@
         "title": "Barbacoa de Borrego",
         "region": "Hidalgo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/02/12/receta-de-barbacoa-estilo-hidalgo/",
@@ -416,7 +416,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res (diezmillo/morcillo)",
           "Chile guajillo",
@@ -504,7 +504,7 @@
         "title": "Carnitas de Michoacán",
         "region": "Michoacán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/",
@@ -597,7 +597,7 @@
         "title": "Chilaquiles Verdes con Huevo",
         "region": "México DF",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/desayunos/chilaquiles-verdes-con-pollo/2018/05/",
@@ -692,7 +692,7 @@
         "title": "Chiles en Nogada",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-chiles-en-nogada-tradicional-de-puebla/",
@@ -791,7 +791,7 @@
         "title": "Chiles Rellenos de Queso",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/",
@@ -877,7 +877,7 @@
         "title": "Chilpachole de Jaiba",
         "region": "Veracruz",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-chilpachole-de-jaiba-tradicional-de-veracruz/",
@@ -963,7 +963,7 @@
         "title": "Cochinita Pibil",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/27/cochinita-pibil-receta-tradicional-yucateca/",
@@ -1074,7 +1074,7 @@
         "title": "Enchiladas Verdes",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/desayunos/enchiladas-verdes-de-pollo/2018/06/",
@@ -1171,7 +1171,7 @@
         "title": "Enmoladas de Pollo",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/enmoladas-de-pollo-con-queso/2019/02/",
@@ -1264,7 +1264,7 @@
         "title": "Esquites con Epazote",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/08/11/receta-de-esquites-tradicionales-con-epazote/",
@@ -1353,7 +1353,7 @@
         "title": "Guacamole Tradicional",
         "region": "Michoacán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/21/receta-de-guacamole-tradicional-mexicano/",
@@ -1449,7 +1449,7 @@
         "title": "Huarache de Cecina",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/huarache-de-cecina-con-frijoles/2020/09/",
@@ -1536,7 +1536,7 @@
         "title": "Mole Amarillo Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2018/07/19/receta-mole-amarillo-oaxaca/",
@@ -1626,7 +1626,7 @@
         "title": "Mole Negro Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/10/28/historia-y-receta-del-mole-negro-oaxaqueno/",
@@ -1721,7 +1721,7 @@
         "title": "Mole Poblano",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/",
@@ -1822,7 +1822,7 @@
         "title": "Mole Verde Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/mole-verde-oaxaqueno-tradicional/2021/05/",
@@ -1914,7 +1914,7 @@
         "title": "Pambazo de Papa con Chorizo",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/pambazos-de-papa-con-chorizo-estilo-cdmx/2019/09/",
@@ -2008,7 +2008,7 @@
         "title": "Panuchos Yucatecos",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/05/19/receta-de-panuchos-yucatecos-tradicionales/",
@@ -2101,7 +2101,7 @@
         "title": "Pescado a la Veracruzana",
         "region": "Veracruz",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/",
@@ -2189,7 +2189,7 @@
         "title": "Pipián Verde",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/pipian-verde-con-pollo-receta-facil/2018/10/",
@@ -2275,7 +2275,7 @@
         "title": "Poc Chuc",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/",
@@ -2360,7 +2360,7 @@
         "title": "Pozole Rojo de Jalisco",
         "region": "Jalisco",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-pozole-rojo-tradicional-mexicano/",
@@ -2474,7 +2474,7 @@
         "title": "Quesadillas de Flor de Calabaza",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/07/08/receta-de-quesadillas-de-flor-de-calabaza/",
@@ -2567,7 +2567,7 @@
         "title": "Sopa de Lima",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/",
@@ -2654,7 +2654,7 @@
         "title": "Sopa de Tortilla (Ateca)",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/sopas-cremas-y-caldos/sopa-de-tortilla-tradicional-azteca/2018/01/",
@@ -2766,7 +2766,7 @@
         "title": "Sopes Tradicionales",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/",
@@ -2879,7 +2879,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de cerdo",
           "Adobo de achiote y chiles guajillo",
@@ -2965,7 +2965,7 @@
         "title": "Tacos de Canasta",
         "region": "Tlaxcala",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/",
@@ -3052,7 +3052,7 @@
         "title": "Tamales Oaxaqueños",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/29/tamales-oaxaquenos-de-mole-negro-receta/",
@@ -3161,7 +3161,7 @@
         "title": "Tlacoyos de Alverjón",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-tlacoyos-de-alverjon-tradicionales/",
@@ -3245,7 +3245,7 @@
         "title": "Tlayuda Oaxaqueña con Tasajo",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/03/10/tlayuda-oaxaquena-receta-tradicional/",

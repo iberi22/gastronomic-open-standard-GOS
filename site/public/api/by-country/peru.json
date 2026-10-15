@@ -10,7 +10,7 @@
         "title": "Arroz con Pollo Peruano",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "yanuq.com",
           "url": "https://www.yanuq.com/",
@@ -106,7 +106,7 @@
         "title": "Chicha Morada",
         "region": "Sierra/Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -204,7 +204,7 @@
         "title": "Ají de Gallina",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -303,7 +303,7 @@
         "title": "Anticuchos de Corazón",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -402,7 +402,7 @@
         "title": "Carapulcra Limeña",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -501,7 +501,7 @@
         "title": "Causa Limeña",
         "region": "Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -618,7 +618,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Pescado blanco (Lenguado o Corvina)",
           "Limón sutil (Lima verde)",
@@ -725,7 +725,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res (Lomo fino)",
           "Papas amarillas (para freír)",
@@ -832,7 +832,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa blanca y papa amarilla",
           "Carne de res molida o picada",
@@ -919,7 +919,7 @@
         "title": "Seco de Cabrito",
         "region": "Costa (Norte)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1018,7 +1018,7 @@
         "title": "Juane de Gallina",
         "region": "Selva",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1117,7 +1117,7 @@
         "title": "Chupe de Camarones",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1216,7 +1216,7 @@
         "title": "Papa a la Huancaína",
         "region": "Sierra/Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1315,7 +1315,7 @@
         "title": "Rocoto Relleno",
         "region": "Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

@@ -10,7 +10,7 @@
         "title": "Agedashi Tofu",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703632/",
@@ -105,7 +105,7 @@
         "title": "Asari no Sakamushi",
         "region": "Izakaya / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B5%E3%83%AA",
@@ -198,7 +198,7 @@
         "title": "Buri Daikon",
         "region": "Toyama / Hokuriku",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%B6%E3%82%8A%E3%81%A0%E3%81%84%E3%81%93%E3%82%93",
@@ -290,7 +290,7 @@
         "title": "Chanchan Yaki",
         "region": "Hokkaido",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%A1%E3%82%83%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%84%BC%E3%81%8D",
@@ -389,7 +389,7 @@
         "title": "Chashu de Cerdo para Ramen",
         "region": "Fukuoka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.nhk.or.jp/lifestyle/kp/",
@@ -484,7 +484,7 @@
         "title": "Chawanmushi (Flan Salado)",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702781/",
@@ -579,7 +579,7 @@
         "title": "Chicken Katsu Curry",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%84%E3%82%AB%E3%83%AC%E3%83%BC",
@@ -674,7 +674,7 @@
         "title": "Chikuzenni",
         "region": "Fukuoka (Kyushu)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E5%89%8D%E7%85%AE",
@@ -769,7 +769,7 @@
         "title": "Dorayaki",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%A9%E3%82%89%E7%84%BC%E3%81%8D",
@@ -862,7 +862,7 @@
         "title": "Gyudon (Donburi de Res)",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703314/",
@@ -959,7 +959,7 @@
         "title": "Hida Houba Miso",
         "region": "Gifu (Takayama)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%9C%B4%E8%90%89%E2%80%93%E3%81%BF%E3%81%9D",
@@ -1056,7 +1056,7 @@
         "title": "Ichigo Daifuku",
         "region": "Tokyo / Kansai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%81%A1%E3%81%94%E5%A4%A7%E7%A6%8F",
@@ -1149,7 +1149,7 @@
         "title": "Imoni Yamagata",
         "region": "Yamagata",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%82%82%E3%81%AB",
@@ -1244,7 +1244,7 @@
         "title": "Ishikari Nabe",
         "region": "Hokkaido",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E2%80%93%E7%8B%A9%E9%80%85",
@@ -1341,7 +1341,7 @@
         "title": "Chicken Karaage",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701831/",
@@ -1436,7 +1436,7 @@
         "title": "Kenchin Jiru",
         "region": "Kamakura",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E3%81%A1%E3%82%93%E6%B1%81",
@@ -1533,7 +1533,7 @@
         "title": "Kiriotanpo Nabe",
         "region": "Akita",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%BD",
@@ -1631,7 +1631,7 @@
         "title": "Matcha Miso Dengaku",
         "region": "Aichi (Nagoya) / Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%B1%86%E8%85%90%E7%94%B0%E4%B9%90",
@@ -1724,7 +1724,7 @@
         "title": "Sopa de Miso Clásica",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/700810/",
@@ -1838,7 +1838,7 @@
         "title": "Nikujaga (Res con Patatas)",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701046/",
@@ -1934,7 +1934,7 @@
         "title": "Okonomiyaki Estilo Osaka",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703112/",
@@ -2031,7 +2031,7 @@
         "title": "Shoyu Ramen Tradicional",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%8D%80%E6%B2%B9%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
@@ -2143,7 +2143,7 @@
         "title": "Saba no Miso-ni",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%B0%E3%81%AE%E3%81%BF%E3%81%9D%E7%85%AE",
@@ -2236,7 +2236,7 @@
         "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
         "region": "Nagano",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/704112/",
@@ -2325,7 +2325,7 @@
         "title": "Sukiyaki Nabemono",
         "region": "Kanto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702914/",
@@ -2420,7 +2420,7 @@
         "title": "Nigiri Sushi de Salmón",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%8F%A1%E3%82%8A%E5%BF%BF%E3%81%97",
@@ -2511,7 +2511,7 @@
         "title": "Takoyaki de Osaka",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/705112/",
@@ -2606,7 +2606,7 @@
         "title": "Tamagoyaki (Tortilla Dulce)",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701230/",
@@ -2698,7 +2698,7 @@
         "title": "Tempura Moriawase",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702115/",
@@ -2792,7 +2792,7 @@
         "title": "Tonkatsu de Cerdo",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701982/",
@@ -2886,7 +2886,7 @@
         "title": "Kitsune Udon",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703810/",
@@ -2978,7 +2978,7 @@
         "title": "Unadon (Anguila sobre Arroz)",
         "region": "Hamamatsu",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E9%B0%BB%E9%87%8D",
@@ -3066,7 +3066,7 @@
         "title": "Unagi no Kabayaki",
         "region": "Shizuoka (Hamamatsu)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%92%B2%E7%84%BC",
@@ -3156,7 +3156,7 @@
         "title": "Yakitori de Pollo en Tare",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702410/",
@@ -3251,7 +3251,7 @@
         "title": "Yudofu Kyoto",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%B9%AF%E2%80%93%E8%B1%86%E8%85%90",

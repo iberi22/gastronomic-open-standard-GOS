@@ -10,7 +10,7 @@
         "title": "Caldillo de Congrio",
         "region": "Litoral / Coquimbo / Valparaíso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -116,7 +116,7 @@
         "title": "Cazuela de Vacuno",
         "region": "Andina / Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -218,7 +218,7 @@
         "title": "Charquicán Chileno",
         "region": "Central / Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -324,7 +324,7 @@
         "title": "Chorrillana Chilena",
         "region": "Valparaíso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -424,7 +424,7 @@
         "title": "Empanada de Pino Chilena",
         "region": "Valparaíso / Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -528,7 +528,7 @@
         "title": "Humitas Chilenas",
         "region": "Central / Valles Agrícolas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -628,7 +628,7 @@
         "title": "Mote con Huesillos",
         "region": "Central / Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -730,7 +730,7 @@
         "title": "Pastel de Choclo Chileno",
         "region": "Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -832,7 +832,7 @@
         "title": "Porotos con Riendas",
         "region": "Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -932,7 +932,7 @@
         "title": "Sopaipillas Chilenas",
         "region": "Central / Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",

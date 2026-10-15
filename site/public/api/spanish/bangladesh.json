@@ -10,7 +10,7 @@
         "title": "Aloo Bhorta",
         "region": "Barisal",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
@@ -108,7 +108,7 @@
         "title": "Begun Bhorta",
         "region": "Khulna",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
@@ -206,7 +206,7 @@
         "title": "Bhapa Pitha",
         "region": "Mymensingh",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Bhapa_pitha",
@@ -301,7 +301,7 @@
         "title": "Borhani",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Borhani",
@@ -400,7 +400,7 @@
         "title": "Chingri Malai Curry",
         "region": "Khulna",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Chingri_malai_curry",
@@ -500,7 +500,7 @@
         "title": "Chitol Macher Muitha",
         "region": "Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Chitala_chitala",
@@ -601,7 +601,7 @@
         "title": "Dhakai Kacchi Biryani",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Kacchi_biryani",
@@ -703,7 +703,7 @@
         "title": "Mishti Doi",
         "region": "Bogra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Mishti_doi",
@@ -798,7 +798,7 @@
         "title": "Dhakai Morog Polao",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/289123/dhaka-morog-polao-a-royal-heritage",
@@ -897,7 +897,7 @@
         "title": "Panta Bhat",
         "region": "Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Panta_bhat",
@@ -995,7 +995,7 @@
         "title": "Patishapta Pitha",
         "region": "Rangpur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Pitha",
@@ -1091,7 +1091,7 @@
         "title": "Rui Macher Jhol",
         "region": "Rajshahi",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Rohu",
@@ -1191,7 +1191,7 @@
         "title": "Shorshe Ilish",
         "region": "Barisal",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Shorshe_Ilish",
@@ -1314,7 +1314,7 @@
         "title": "Shutki Bhorta",
         "region": "Chittagong",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.prothomalo.com/lifestyle/recipe/dried-fish-bhorta-recipes",
@@ -1411,7 +1411,7 @@
         "title": "Bhuna Khichuri",
         "region": "Sylhet",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Khichdi",

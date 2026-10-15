@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-01T06:35:51.139Z",
+  "generated_at": "2026-10-15T16:24:03.312Z",
   "model": "Xenova/all-MiniLM-L6-v2",
   "dim": 384,
   "count": {
@@ -23,7 +23,7 @@
     {
       "file": "vectors-3.json",
       "count": 55,
-      "size_bytes": 631513
+      "size_bytes": 631614
     }
   ]
 }

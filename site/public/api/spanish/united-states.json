@@ -10,7 +10,7 @@
         "title": "Traditional American Apple Pie",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "St. Louis Style BBQ Pork Ribs",
         "region": "Missouri / Memphis",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://open.gastrostandard.org/dishes/american/bbq_pork_ribs",
@@ -206,7 +206,7 @@
         "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits",
@@ -276,7 +276,7 @@
         "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/texas-smoked-brisket",
@@ -360,7 +360,7 @@
         "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
         "region": "Virginia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/brunswick-stew-recipe",
@@ -430,7 +430,7 @@
         "title": "Buffalo Chicken Wings",
         "region": "Buffalo, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -518,7 +518,7 @@
         "title": "Chicken and Waffles (Pollo Frito con Waffles)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/classic-chicken-and-waffles",
@@ -588,7 +588,7 @@
         "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/chicken-fried-steak",
@@ -658,7 +658,7 @@
         "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
         "region": "Nuevo México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2019/9/25/20882191/hatch-green-chile-season-new-mexico",
@@ -728,7 +728,7 @@
         "title": "New England Clam Chowder",
         "region": "Boston, MA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -818,7 +818,7 @@
         "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
         "region": "Nueva York",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "nytimes.com",
           "url": "https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder",
@@ -888,7 +888,7 @@
         "title": "Classic American Cheeseburger",
         "region": "Texas / California",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -978,7 +978,7 @@
         "title": "Georgia Peach Cobbler",
         "region": "Georgia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1068,7 +1068,7 @@
         "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-collard-greens",
@@ -1138,7 +1138,7 @@
         "title": "Southern Skillet Cornbread",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1228,7 +1228,7 @@
         "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
         "region": "Luisiana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide",
@@ -1298,7 +1298,7 @@
         "title": "Eggs Benedict",
         "region": "Nueva York, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1388,7 +1388,7 @@
         "title": "Southern Crispy Fried Chicken",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1478,7 +1478,7 @@
         "title": "Louisiana Seafood Gumbo",
         "region": "Nueva Orleans, LA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1568,7 +1568,7 @@
         "title": "Cajun Jambalaya",
         "region": "Nueva Orleans, LA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1658,7 +1658,7 @@
         "title": "Florida Key Lime Pie",
         "region": "Florida Keys",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1748,7 +1748,7 @@
         "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
         "region": "Maine",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/maps/best-lobster-rolls-maine",
@@ -1818,7 +1818,7 @@
         "title": "Baked Macaroni and Cheese",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1908,7 +1908,7 @@
         "title": "Classic Glazed Meatloaf",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1998,7 +1998,7 @@
         "title": "Fluffy Pancakes con Maple Syrup",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2088,7 +2088,7 @@
         "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-pecan-pie-recipe",
@@ -2158,7 +2158,7 @@
         "title": "Philly Cheesesteak",
         "region": "Filadelfia, PA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2246,7 +2246,7 @@
         "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
         "region": "Luisiana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/maps/best-po-boys-new-orleans",
@@ -2316,7 +2316,7 @@
         "title": "Classic American Pot Roast",
         "region": "Medio Oeste",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2406,7 +2406,7 @@
         "title": "Carolina Pulled Pork Sandwich",
         "region": "Carolina del Norte",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://open.gastrostandard.org/dishes/american/pulled_pork_sandwich",
@@ -2503,7 +2503,7 @@
         "title": "Classic Reuben Sandwich",
         "region": "Nueva York, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2593,7 +2593,7 @@
         "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
         "region": "Carolina del Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "nytimes.com",
           "url": "https://cooking.nytimes.com/recipes/1018610-shrimp-and-grits",
@@ -2663,7 +2663,7 @@
         "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
         "region": "Misuri",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2016/6/17/11956792/st-louis-bbq-ribs-guide",
@@ -2749,7 +2749,7 @@
         "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
         "region": "Tennessee",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/pulled-chicken-recipe",
@@ -2819,7 +2819,7 @@
         "title": "Texas Chili con Carne",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

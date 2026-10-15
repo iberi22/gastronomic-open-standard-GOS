@@ -10,7 +10,7 @@
         "title": "Bacalao al Pil-Pil",
         "region": "País Vasco",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -115,7 +115,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Calamares frescos",
           "Tinta de calamar",
@@ -194,7 +194,7 @@
         "title": "Churros con Chocolate",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -284,7 +284,7 @@
         "title": "Cocido Madrileño",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -378,7 +378,7 @@
         "title": "Crema Catalana",
         "region": "Cataluña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -470,7 +470,7 @@
         "title": "Croquetas de Jamón Ibérico",
         "region": "España Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -562,7 +562,7 @@
         "title": "Empanada Gallega de Atún",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -652,7 +652,7 @@
         "title": "Fabada Asturiana",
         "region": "Asturias",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -740,7 +740,7 @@
         "title": "Gambas al Ajillo",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -830,7 +830,7 @@
         "title": "Gazpacho Andaluz",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -922,7 +922,7 @@
         "title": "Jamón Ibérico de Bellota",
         "region": "Extremadura / Jabugo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1004,7 +1004,7 @@
         "title": "Leche Frita Tradicional",
         "region": "Castilla y León",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1094,7 +1094,7 @@
         "title": "Paella Valenciana Tradicional",
         "region": "Comunidad Valenciana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1186,7 +1186,7 @@
         "title": "Patatas Bravas",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1274,7 +1274,7 @@
         "title": "Pimientos del Padrón",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1360,7 +1360,7 @@
         "title": "Pulpo a la Gallega (Polbo á Feira)",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1450,7 +1450,7 @@
         "title": "Rabo de Toro Estofado",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1542,7 +1542,7 @@
         "title": "Salmorejo Cordobés",
         "region": "Córdoba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1634,7 +1634,7 @@
         "title": "Tarta de Santiago",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1726,7 +1726,7 @@
         "title": "Tortilla de Patatas Española",
         "region": "España Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

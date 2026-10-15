@@ -10,7 +10,7 @@
         "title": "Achiras del Huila",
         "region": "Andina (Huila)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -102,7 +102,7 @@
         "title": "Almojábana (Boyacense/Bogotana)",
         "region": "Andina (Cundiboyacense)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -194,7 +194,7 @@
         "title": "Buñuelo Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -288,7 +288,7 @@
         "title": "Garulla Soachuna",
         "region": "Andina (Soacha / Cundinamarca)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -381,7 +381,7 @@
         "title": "Ají Negro (Salsa Amazónica Fermentada)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elpais.com",
           "url": "https://elpais.com/elpais/2016/01/21/estilo/1453414376_467974.html",
@@ -464,7 +464,7 @@
         "title": "Casabe (Pan de Yuca Amazónico)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "delamazonas.com",
           "url": "https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/",
@@ -541,7 +541,7 @@
         "title": "Fariña (Farofa Amazónica)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "vecinavegetariana.com",
           "url": "https://vecinavegetariana.com/es/farina-de-yuca-de-la-amazonia-colombiana/",
@@ -619,7 +619,7 @@
         "title": "Inchicapi (Sopa de Gallina con Maní)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "jameaperu.com",
           "url": "https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/",
@@ -705,7 +705,7 @@
         "title": "Juanes de Yuca",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elcomercio.pe",
           "url": "https://elcomercio.pe/provecho/recetas/receta-de-juanes-de-yuca-y-paiche-noticia/",
@@ -790,7 +790,7 @@
         "title": "Mojojoy (Larva de Palma)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -881,7 +881,7 @@
         "title": "Patarasca (Pescado en Hojas)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "contarproteinas.com",
           "url": "https://www.contarproteinas.com/recetas_resultado/ver/Patarasca-amazonica-26326",
@@ -969,7 +969,7 @@
         "title": "Pescado Moqueado",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elespectador.com",
           "url": "https://www.elespectador.com/gastronomia-y-recetas/pescado-muquiado-un-plato-que-resalta-los-sabores-de-la-etnias-del-guaviare/",
@@ -1045,7 +1045,7 @@
         "title": "Pirarucú Frito",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "colombia.gastronomia.com",
           "url": "https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu",
@@ -1145,7 +1145,7 @@
         "title": "10 recetas más emblemáticas de la región Amazónica de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1183,7 +1183,7 @@
         "title": "Tacacho con Cecina",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tripadvisor.co",
           "url": "https://www.tripadvisor.co/ShowUserReviews-g294316-d6385585-r488085052-La_Choza_de_La_Anaconda-Lima_Lima_Region.html",
@@ -1288,7 +1288,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa criolla",
           "Papa pastusa",
@@ -1395,7 +1395,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Frijol bola roja (o Cargamanto)",
           "Arroz blanco",
@@ -1490,7 +1490,7 @@
         "title": "Caldo de Costilla",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1586,7 +1586,7 @@
         "title": "Changua",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1687,7 +1687,7 @@
         "title": "Cocido Boyacense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1791,7 +1791,7 @@
         "title": "Empanadas Andinas",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1906,7 +1906,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Cerdo (pulpa y costilla)",
           "Cuero de cerdo",
@@ -1997,7 +1997,7 @@
         "title": "Manjar Blanco",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2092,7 +2092,7 @@
         "title": "Mondongo Antioqueño",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2198,7 +2198,7 @@
         "title": "Mute Santandereano",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2304,7 +2304,7 @@
         "title": "10 recetas más emblemáticas de la región Andina de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2342,7 +2342,7 @@
         "title": "Tamal Tolimense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2445,7 +2445,7 @@
         "title": "Avena Colombiana (Bebida Fría)",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/avena/",
@@ -2529,7 +2529,7 @@
         "title": "Champús Valluno",
         "region": "Suroccidente (Valle, Nariño, Cauca)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2624,7 +2624,7 @@
         "title": "Chicha de Maíz Ancestral",
         "region": "Nacional (Andina / Altiplano)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2717,7 +2717,7 @@
         "title": "Chocolate Santafereño",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o",
@@ -2800,7 +2800,7 @@
         "title": "Guarapo (Elixir de Caña)",
         "region": "Nacional (Andina / Cafetera)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2892,7 +2892,7 @@
         "title": "Lulada",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/lulada/",
@@ -2977,7 +2977,7 @@
         "title": "Refajo Colombiano",
         "region": "Andina / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3068,7 +3068,7 @@
         "title": "Salpicón Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/salpicon/",
@@ -3172,7 +3172,7 @@
         "title": "Alegrías",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-alegrias-57934",
@@ -3281,7 +3281,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Maíz Amarillo (Masa)",
           "Huevo (AAA)",
@@ -3365,7 +3365,7 @@
         "title": "Arroz con Coco (Titoté)",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3462,7 +3462,7 @@
         "title": "Butifarra Soledeña",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3557,7 +3557,7 @@
         "title": "Carimañolas",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3652,7 +3652,7 @@
         "title": "Cazuela de Mariscos",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3751,7 +3751,7 @@
         "title": "Ceviche de Camarón Costeño",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3850,7 +3850,7 @@
         "title": "Mote de Queso",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3949,7 +3949,7 @@
         "title": "10 recetas más emblemáticas de la región Caribe de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -3987,7 +3987,7 @@
         "title": "Sancocho Costeño",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4086,7 +4086,7 @@
         "title": "Viudo de Pescado",
         "region": "Caribe/Magdalena",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4181,7 +4181,7 @@
         "title": "Ají Picante Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4257,7 +4257,7 @@
         "title": "Guacamole Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4333,7 +4333,7 @@
         "title": "Hogao Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4408,7 +4408,7 @@
         "title": "Salsa Rosada Colombiana",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4480,7 +4480,7 @@
         "title": "Suero Costeño",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4549,7 +4549,7 @@
         "title": "Bolas de Pescado (Fish Balls)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4624,7 +4624,7 @@
         "title": "Caracol Guisado (Conch Stew)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4715,7 +4715,7 @@
         "title": "Cocadas",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4788,7 +4788,7 @@
         "title": "Crab Backs (Cangrejo Relleno)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4864,7 +4864,7 @@
         "title": "Crab Patty (Empanada de Cangrejo)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -4941,7 +4941,7 @@
         "title": "Frijoles con Cola de Cerdo (Pig Tail Beans)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5018,7 +5018,7 @@
         "title": "Ginger Beer (Cerveza de Jengibre Ancestral)",
         "region": "Insular (San Andrés y Providencia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5111,7 +5111,7 @@
         "title": "Pan de Coco (Coconut Bread)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5206,7 +5206,7 @@
         "title": "Pollo Guisado con Dumplings",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "comidadecolombia.blogspot.com",
           "url": "https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html",
@@ -5296,7 +5296,7 @@
         "title": "10 recetas más emblemáticas de la región Insular de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5334,7 +5334,7 @@
         "title": "Rondón (Run Down)",
         "region": "Insular (San Andrés y Providencia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5429,7 +5429,7 @@
         "title": "Sopa de Cangrejo (Crab Soup)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5522,7 +5522,7 @@
         "title": "Torta de Calabaza (Pumpkin Cake)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5597,7 +5597,7 @@
         "title": "Arroz con Pollo Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -5705,7 +5705,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res",
           "Pollo",
@@ -5785,7 +5785,7 @@
         "title": "Fritanga Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/fritanga",
@@ -5894,7 +5894,7 @@
         "title": "Hamburguesa Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/hamburguesa-colombiana",
@@ -6000,7 +6000,7 @@
         "title": "Papas Aborrajadas",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/papas-aborrajadas",
@@ -6092,7 +6092,7 @@
         "title": "Papas Rellenas Colombianas",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/papas-rellenas",
@@ -6213,7 +6213,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa frita",
           "Salchicha",
@@ -6297,7 +6297,7 @@
         "title": "Arroz Llanero",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6373,7 +6373,7 @@
         "title": "Cachama Asada",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6451,7 +6451,7 @@
         "title": "Carne a la Perra",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6529,7 +6529,7 @@
         "title": "Casabe (El Pan de la Selva)",
         "region": "Amazonía / Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6618,7 +6618,7 @@
         "title": "Chigüiro Asado",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6696,7 +6696,7 @@
         "title": "Entreverado",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6774,7 +6774,7 @@
         "title": "Hayaca Llanera",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6867,7 +6867,7 @@
         "title": "Hervido de Gumarra",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -6944,7 +6944,7 @@
         "title": "Mamona (Ternera a la Llanera)",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7035,7 +7035,7 @@
         "title": "Pabellón Llanero",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7108,7 +7108,7 @@
         "title": "Pan de Arroz",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7180,7 +7180,7 @@
         "title": "Recetas de la Orinoquía",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7218,7 +7218,7 @@
         "title": "Tungos Llaneros",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7311,7 +7311,7 @@
         "title": "Arequipe",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7399,7 +7399,7 @@
         "title": "Cayeye",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/cayeye-colombiano/",
@@ -7480,7 +7480,7 @@
         "title": "Envueltos de Mazorca",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/envueltos-de-mazorca/",
@@ -7565,7 +7565,7 @@
         "title": "Mazamorra Antioqueña",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/mazamorra-antioquena/",
@@ -7646,7 +7646,7 @@
         "title": "Mote de Queso",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7732,7 +7732,7 @@
         "title": "Natilla Colombiana",
         "region": "Andina / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -7828,7 +7828,7 @@
         "title": "Postre de Natas",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/postre-de-natas/",
@@ -7912,7 +7912,7 @@
         "title": "Tamal Tolimense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/tamales-tolimenses/",
@@ -8001,7 +8001,7 @@
         "title": "Aborrajado Valluno",
         "region": "Pacífica / Valle del Cauca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8097,7 +8097,7 @@
         "title": "Aborrajados de Pescado",
         "region": "Pacífica/Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8192,7 +8192,7 @@
         "title": "Arroz Atollado con Mariscos",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8287,7 +8287,7 @@
         "title": "Cazuela de Mariscos Pacífica",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935",
@@ -8386,7 +8386,7 @@
         "title": "Chancacas (Cocadas del Pacífico)",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-chancacas-57944",
@@ -8467,7 +8467,7 @@
         "title": "Empanadas de Jaiba",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941",
@@ -8543,7 +8543,7 @@
         "title": "Encocado de Pescado",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8638,7 +8638,7 @@
         "title": "Pusandao (Sopa de Identidad)",
         "region": "Pacífica / Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8733,7 +8733,7 @@
         "title": "10 recetas más emblemáticas de la región Pacífica de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8771,7 +8771,7 @@
         "title": "Sancocho de Pescado Pacífico",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936",
@@ -8857,7 +8857,7 @@
         "title": "Tapao de Pescado",
         "region": "Pacífica / Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8952,7 +8952,7 @@
         "title": "Tollo Ahumado",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9047,7 +9047,7 @@
         "title": "Pan Aliñado Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/pan-ali%C3%B1ado/",
@@ -9140,7 +9140,7 @@
         "title": "Pandebono Valluno",
         "region": "Valle del Cauca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9233,7 +9233,7 @@
         "title": "Pandeyuca (Pan de Yuca)",
         "region": "Andina / Sur de Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9325,7 +9325,7 @@
         "title": "Deditos de Queso",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/deditos-de-queso/",
@@ -9416,7 +9416,7 @@
         "title": "Empanada Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/empanadas",

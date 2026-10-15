@@ -10,7 +10,7 @@
         "title": "Açaí na Tigela",
         "region": "Pará / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/acai-na-tigela",
@@ -100,7 +100,7 @@
         "title": "Acarajé Baiano",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/23114-acaraje-da-bahia.html",
@@ -196,7 +196,7 @@
         "title": "Baião de Dois",
         "region": "Ceará / Nordeste, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/baiao-de-dois",
@@ -286,7 +286,7 @@
         "title": "Bobó de Camarão",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/bobo-de-camarao",
@@ -376,7 +376,7 @@
         "title": "Bolo de Rolo Pernambucano",
         "region": "Pernambuco, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/bolo-de-rolo",
@@ -467,7 +467,7 @@
         "title": "Brigadeiro Tradicional Brasileiro",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/114-brigadeiro.html",
@@ -563,7 +563,7 @@
         "title": "Caipirinha Tradicional Brasileira",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1220-caipirinha.html",
@@ -659,7 +659,7 @@
         "title": "Caruru Baiano",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/caruru",
@@ -750,7 +750,7 @@
         "title": "Churrasco Gaúcho de Picanha",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1897-churrasco-de-picanha.html",
@@ -843,7 +843,7 @@
         "title": "Coxinha de Frango Tradicional",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1142-coxinha-de-frango-maravilhosa.html",
@@ -941,7 +941,7 @@
         "title": "Creme de Cupuaçu",
         "region": "Amazonas / Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html",
@@ -1029,7 +1029,7 @@
         "title": "Escondidinho de Carne de Sol",
         "region": "Nordeste / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol",
@@ -1120,7 +1120,7 @@
         "title": "Farofa de Mandioca Tradicional",
         "region": "Brasil (Nacional)",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/farofa-de-mandioca",
@@ -1209,7 +1209,7 @@
         "title": "Feijoada Completa Brasileira",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2911-feijoada-completa.html",
@@ -1309,7 +1309,7 @@
         "title": "Feijoada à Baiana",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/feijoada-completa",
@@ -1400,7 +1400,7 @@
         "title": "Galinhada Mineira e Goiana",
         "region": "Minas Gerais / Goiás, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/galinhada",
@@ -1490,7 +1490,7 @@
         "title": "Moqueca Capixaba",
         "region": "Espírito Santo, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/moqueca-capixaba",
@@ -1581,7 +1581,7 @@
         "title": "Moqueca de Peixe Baiana",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html",
@@ -1684,7 +1684,7 @@
         "title": "Pão de Queijo Mineiro",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2228-pao-de-queijo-mineiro.html",
@@ -1782,7 +1782,7 @@
         "title": "Pastel de Feira",
         "region": "São Paulo / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/pastel-de-carne",
@@ -1871,7 +1871,7 @@
         "title": "Pato no Tucupi",
         "region": "Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "estadao.com.br",
           "url": "https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234",
@@ -1961,7 +1961,7 @@
         "title": "Pudim de Leite Condensado",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html",
@@ -2058,7 +2058,7 @@
         "title": "Tacacá Amazônico",
         "region": "Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "folha.uol.com.br",
           "url": "https://www1.folha.uol.com.br/comida/2021/10/tacaca-caldo-amazonico.shtml",
@@ -2149,7 +2149,7 @@
         "title": "Tutu de Feijão",
         "region": "Minas Gerais, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/tutu-de-feijao",
@@ -2240,7 +2240,7 @@
         "title": "Vatapá Baiano Tradicional",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/9605-vatapa.html",

@@ -10,7 +10,7 @@
         "title": "Boeuf Bourguignon",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "Daube Provençale",
         "region": "Provenza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -190,7 +190,7 @@
         "title": "Bouillabaisse de Marsella",
         "region": "Marsella",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -280,7 +280,7 @@
         "title": "Cassoulet de Castelnaudary",
         "region": "Languedoc",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -368,7 +368,7 @@
         "title": "Coq au Vin",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -458,7 +458,7 @@
         "title": "Crème Brûlée",
         "region": "Francia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -546,7 +546,7 @@
         "title": "Crêpes Suzette",
         "region": "Costa Azul",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -634,7 +634,7 @@
         "title": "Croque Monsieur",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -722,7 +722,7 @@
         "title": "Confit de Canard",
         "region": "Gascuña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -810,7 +810,7 @@
         "title": "Escargots de Bourgogne",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -898,7 +898,7 @@
         "title": "Gratin Dauphinois",
         "region": "Delfinado",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -986,7 +986,7 @@
         "title": "Mousse au Chocolat",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1074,7 +1074,7 @@
         "title": "Pot-au-Feu Tradicional",
         "region": "Francia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1164,7 +1164,7 @@
         "title": "Quiche Lorraine",
         "region": "Lorena",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1254,7 +1254,7 @@
         "title": "Ratatouille Provençale",
         "region": "Niza / Provenza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1344,7 +1344,7 @@
         "title": "Salade Niçoise",
         "region": "Niza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1436,7 +1436,7 @@
         "title": "Soufflé au Fromage",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1526,7 +1526,7 @@
         "title": "Soupe à l'Oignon Gratinée",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1616,7 +1616,7 @@
         "title": "Steak Frites con Salsa Béarnaise",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1706,7 +1706,7 @@
         "title": "Tarte Tatin",
         "region": "Valle del Loira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

@@ -10,7 +10,7 @@
         "title": "Kuay Teow Reua (Boat Noodles)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "Gaeng Phet Ped Yang",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -192,7 +192,7 @@
         "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -282,7 +282,7 @@
         "title": "Gaeng Keow Wan (Curry Verde)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -374,7 +374,7 @@
         "title": "Khao Soi Gai",
         "region": "Chiang Mai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -462,7 +462,7 @@
         "title": "Larb Gai (Ensalada de Pollo)",
         "region": "Isan",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -554,7 +554,7 @@
         "title": "Khao Niew Mamuang (Mango Sticky Rice)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -644,7 +644,7 @@
         "title": "Massaman Curry de Res",
         "region": "Sur de Tailandia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -736,7 +736,7 @@
         "title": "Pad Krapow Moo (Cerdo con Albahaca)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -828,7 +828,7 @@
         "title": "Pad See Ew",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -918,7 +918,7 @@
         "title": "Pad Thai Kung (con Camarones)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1010,7 +1010,7 @@
         "title": "Panang Curry",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1100,7 +1100,7 @@
         "title": "Satay Gai con Salsa de Cacahuete",
         "region": "Sur de Tailandia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1188,7 +1188,7 @@
         "title": "Som Tum (Ensalada de Papaya)",
         "region": "Isan",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1282,7 +1282,7 @@
         "title": "Khao Pad Kung",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1374,7 +1374,7 @@
         "title": "Por Pia Tod (Rollitos Tailandeses)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1464,7 +1464,7 @@
         "title": "Tod Mun Pla (Pasteles de Pescado)",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1552,7 +1552,7 @@
         "title": "Tom Kha Gai",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1644,7 +1644,7 @@
         "title": "Tom Yum Goong",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1736,7 +1736,7 @@
         "title": "Yam Nua (Ensalada de Res Picante)",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

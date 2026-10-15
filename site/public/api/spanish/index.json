@@ -10,7 +10,7 @@
         "title": "Traditional American Apple Pie",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "St. Louis Style BBQ Pork Ribs",
         "region": "Missouri / Memphis",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://open.gastrostandard.org/dishes/american/bbq_pork_ribs",
@@ -206,7 +206,7 @@
         "title": "Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits",
@@ -276,7 +276,7 @@
         "title": "Brisket Estilo Texas (Punta de Pecho Ahumada)",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/texas-smoked-brisket",
@@ -360,7 +360,7 @@
         "title": "Brunswick Stew (Estofado Tradicional de Virginia)",
         "region": "Virginia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/brunswick-stew-recipe",
@@ -430,7 +430,7 @@
         "title": "Buffalo Chicken Wings",
         "region": "Buffalo, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -518,7 +518,7 @@
         "title": "Chicken and Waffles (Pollo Frito con Waffles)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/classic-chicken-and-waffles",
@@ -588,7 +588,7 @@
         "title": "Chicken Fried Steak (Filete Empanado con Salsa Blanca)",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/chicken-fried-steak",
@@ -658,7 +658,7 @@
         "title": "Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)",
         "region": "Nuevo México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2019/9/25/20882191/hatch-green-chile-season-new-mexico",
@@ -728,7 +728,7 @@
         "title": "New England Clam Chowder",
         "region": "Boston, MA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -818,7 +818,7 @@
         "title": "Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)",
         "region": "Nueva York",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "nytimes.com",
           "url": "https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder",
@@ -888,7 +888,7 @@
         "title": "Classic American Cheeseburger",
         "region": "Texas / California",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -978,7 +978,7 @@
         "title": "Georgia Peach Cobbler",
         "region": "Georgia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1068,7 +1068,7 @@
         "title": "Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-collard-greens",
@@ -1138,7 +1138,7 @@
         "title": "Southern Skillet Cornbread",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1228,7 +1228,7 @@
         "title": "Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)",
         "region": "Luisiana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide",
@@ -1298,7 +1298,7 @@
         "title": "Eggs Benedict",
         "region": "Nueva York, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1388,7 +1388,7 @@
         "title": "Southern Crispy Fried Chicken",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1478,7 +1478,7 @@
         "title": "Louisiana Seafood Gumbo",
         "region": "Nueva Orleans, LA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1568,7 +1568,7 @@
         "title": "Cajun Jambalaya",
         "region": "Nueva Orleans, LA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1658,7 +1658,7 @@
         "title": "Florida Key Lime Pie",
         "region": "Florida Keys",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1748,7 +1748,7 @@
         "title": "Maine Lobster Roll (Bocadillo de Langosta de Maine)",
         "region": "Maine",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/maps/best-lobster-rolls-maine",
@@ -1818,7 +1818,7 @@
         "title": "Baked Macaroni and Cheese",
         "region": "Sur de EE.UU.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1908,7 +1908,7 @@
         "title": "Classic Glazed Meatloaf",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1998,7 +1998,7 @@
         "title": "Fluffy Pancakes con Maple Syrup",
         "region": "EE.UU. Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2088,7 +2088,7 @@
         "title": "Pecan Pie Tradicional (Tarta de Nueces Pacanas)",
         "region": "Sur de Estados Unidos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/southern-pecan-pie-recipe",
@@ -2158,7 +2158,7 @@
         "title": "Philly Cheesesteak",
         "region": "Filadelfia, PA",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2246,7 +2246,7 @@
         "title": "Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)",
         "region": "Luisiana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/maps/best-po-boys-new-orleans",
@@ -2316,7 +2316,7 @@
         "title": "Classic American Pot Roast",
         "region": "Medio Oeste",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2406,7 +2406,7 @@
         "title": "Carolina Pulled Pork Sandwich",
         "region": "Carolina del Norte",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://open.gastrostandard.org/dishes/american/pulled_pork_sandwich",
@@ -2503,7 +2503,7 @@
         "title": "Classic Reuben Sandwich",
         "region": "Nueva York, NY",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2593,7 +2593,7 @@
         "title": "Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)",
         "region": "Carolina del Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "nytimes.com",
           "url": "https://cooking.nytimes.com/recipes/1018610-shrimp-and-grits",
@@ -2663,7 +2663,7 @@
         "title": "St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)",
         "region": "Misuri",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eater.com",
           "url": "https://www.eater.com/2016/6/17/11956792/st-louis-bbq-ribs-guide",
@@ -2749,7 +2749,7 @@
         "title": "Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)",
         "region": "Tennessee",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "southernliving.com",
           "url": "https://www.southernliving.com/recipes/pulled-chicken-recipe",
@@ -2819,7 +2819,7 @@
         "title": "Texas Chili con Carne",
         "region": "Texas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -2909,7 +2909,7 @@
         "title": "Alfajores de Maicena",
         "region": "Buenos Aires / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3014,7 +3014,7 @@
         "title": "Asado Criollo Argentino",
         "region": "La Pampa / Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3116,7 +3116,7 @@
         "title": "Carbonada Criolla",
         "region": "Pampeana / Noroeste",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3225,7 +3225,7 @@
         "title": "Choripán Argentino",
         "region": "Río de la Plata / Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3328,7 +3328,7 @@
         "title": "Empanadas Tucumanas",
         "region": "Tucumán / Noroeste Argentino",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3434,7 +3434,7 @@
         "title": "Humita en Chala",
         "region": "Noroeste Argentino (Jujuy / Salta / Tucumán)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3540,7 +3540,7 @@
         "title": "Locro Criollo Argentino",
         "region": "Noroeste / Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3647,7 +3647,7 @@
         "title": "Milanesa a la Napolitana",
         "region": "Buenos Aires / Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3753,7 +3753,7 @@
         "title": "Pastelitos Criollos Argentinos",
         "region": "Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3855,7 +3855,7 @@
         "title": "Provoleta Argentina",
         "region": "Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -3959,7 +3959,7 @@
         "title": "Aloo Bhorta",
         "region": "Barisal",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
@@ -4057,7 +4057,7 @@
         "title": "Begun Bhorta",
         "region": "Khulna",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/312015/bhorta-the-heart-of-bangladeshi-comfort-food",
@@ -4155,7 +4155,7 @@
         "title": "Bhapa Pitha",
         "region": "Mymensingh",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Bhapa_pitha",
@@ -4250,7 +4250,7 @@
         "title": "Borhani",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Borhani",
@@ -4349,7 +4349,7 @@
         "title": "Chingri Malai Curry",
         "region": "Khulna",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Chingri_malai_curry",
@@ -4449,7 +4449,7 @@
         "title": "Chitol Macher Muitha",
         "region": "Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Chitala_chitala",
@@ -4550,7 +4550,7 @@
         "title": "Dhakai Kacchi Biryani",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Kacchi_biryani",
@@ -4652,7 +4652,7 @@
         "title": "Mishti Doi",
         "region": "Bogra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Mishti_doi",
@@ -4747,7 +4747,7 @@
         "title": "Dhakai Morog Polao",
         "region": "Old Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.dhakatribune.com/food/289123/dhaka-morog-polao-a-royal-heritage",
@@ -4846,7 +4846,7 @@
         "title": "Panta Bhat",
         "region": "Dhaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Panta_bhat",
@@ -4944,7 +4944,7 @@
         "title": "Patishapta Pitha",
         "region": "Rangpur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Pitha",
@@ -5040,7 +5040,7 @@
         "title": "Rui Macher Jhol",
         "region": "Rajshahi",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Rohu",
@@ -5140,7 +5140,7 @@
         "title": "Shorshe Ilish",
         "region": "Barisal",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Shorshe_Ilish",
@@ -5263,7 +5263,7 @@
         "title": "Shutki Bhorta",
         "region": "Chittagong",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.prothomalo.com/lifestyle/recipe/dried-fish-bhorta-recipes",
@@ -5360,7 +5360,7 @@
         "title": "Bhuna Khichuri",
         "region": "Sylhet",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://en.wikipedia.org/wiki/Khichdi",
@@ -5459,7 +5459,7 @@
         "title": "Açaí na Tigela",
         "region": "Pará / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/acai-na-tigela",
@@ -5549,7 +5549,7 @@
         "title": "Acarajé Baiano",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/23114-acaraje-da-bahia.html",
@@ -5645,7 +5645,7 @@
         "title": "Baião de Dois",
         "region": "Ceará / Nordeste, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/baiao-de-dois",
@@ -5735,7 +5735,7 @@
         "title": "Bobó de Camarão",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/bobo-de-camarao",
@@ -5825,7 +5825,7 @@
         "title": "Bolo de Rolo Pernambucano",
         "region": "Pernambuco, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/bolo-de-rolo",
@@ -5916,7 +5916,7 @@
         "title": "Brigadeiro Tradicional Brasileiro",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/114-brigadeiro.html",
@@ -6012,7 +6012,7 @@
         "title": "Caipirinha Tradicional Brasileira",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1220-caipirinha.html",
@@ -6108,7 +6108,7 @@
         "title": "Caruru Baiano",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/caruru",
@@ -6199,7 +6199,7 @@
         "title": "Churrasco Gaúcho de Picanha",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1897-churrasco-de-picanha.html",
@@ -6292,7 +6292,7 @@
         "title": "Coxinha de Frango Tradicional",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1142-coxinha-de-frango-maravilhosa.html",
@@ -6390,7 +6390,7 @@
         "title": "Creme de Cupuaçu",
         "region": "Amazonas / Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html",
@@ -6478,7 +6478,7 @@
         "title": "Escondidinho de Carne de Sol",
         "region": "Nordeste / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol",
@@ -6569,7 +6569,7 @@
         "title": "Farofa de Mandioca Tradicional",
         "region": "Brasil (Nacional)",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/farofa-de-mandioca",
@@ -6658,7 +6658,7 @@
         "title": "Feijoada Completa Brasileira",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2911-feijoada-completa.html",
@@ -6758,7 +6758,7 @@
         "title": "Feijoada à Baiana",
         "region": "Bahia, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/feijoada-completa",
@@ -6849,7 +6849,7 @@
         "title": "Galinhada Mineira e Goiana",
         "region": "Minas Gerais / Goiás, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/galinhada",
@@ -6939,7 +6939,7 @@
         "title": "Moqueca Capixaba",
         "region": "Espírito Santo, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/moqueca-capixaba",
@@ -7030,7 +7030,7 @@
         "title": "Moqueca de Peixe Baiana",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html",
@@ -7133,7 +7133,7 @@
         "title": "Pão de Queijo Mineiro",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/2228-pao-de-queijo-mineiro.html",
@@ -7231,7 +7231,7 @@
         "title": "Pastel de Feira",
         "region": "São Paulo / Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/pastel-de-carne",
@@ -7320,7 +7320,7 @@
         "title": "Pato no Tucupi",
         "region": "Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "estadao.com.br",
           "url": "https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234",
@@ -7410,7 +7410,7 @@
         "title": "Pudim de Leite Condensado",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html",
@@ -7507,7 +7507,7 @@
         "title": "Tacacá Amazônico",
         "region": "Pará, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "folha.uol.com.br",
           "url": "https://www1.folha.uol.com.br/comida/2021/10/tacaca-caldo-amazonico.shtml",
@@ -7598,7 +7598,7 @@
         "title": "Tutu de Feijão",
         "region": "Minas Gerais, Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "panelinha.com.br",
           "url": "https://www.panelinha.com.br/receita/tutu-de-feijao",
@@ -7689,7 +7689,7 @@
         "title": "Vatapá Baiano Tradicional",
         "region": "Brasil",
         "language": "pt",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tudogostoso.com.br",
           "url": "https://www.tudogostoso.com.br/receita/9605-vatapa.html",
@@ -7792,7 +7792,7 @@
         "title": "Caldillo de Congrio",
         "region": "Litoral / Coquimbo / Valparaíso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -7898,7 +7898,7 @@
         "title": "Cazuela de Vacuno",
         "region": "Andina / Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8000,7 +8000,7 @@
         "title": "Charquicán Chileno",
         "region": "Central / Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8106,7 +8106,7 @@
         "title": "Chorrillana Chilena",
         "region": "Valparaíso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8206,7 +8206,7 @@
         "title": "Empanada de Pino Chilena",
         "region": "Valparaíso / Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8310,7 +8310,7 @@
         "title": "Humitas Chilenas",
         "region": "Central / Valles Agrícolas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8410,7 +8410,7 @@
         "title": "Mote con Huesillos",
         "region": "Central / Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8512,7 +8512,7 @@
         "title": "Pastel de Choclo Chileno",
         "region": "Metropolitana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8614,7 +8614,7 @@
         "title": "Porotos con Riendas",
         "region": "Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8714,7 +8714,7 @@
         "title": "Sopaipillas Chilenas",
         "region": "Central / Sur",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetaschilenas.cl",
           "url": "https://www.recetaschilenas.cl/",
@@ -8816,7 +8816,7 @@
         "title": "Achiras del Huila",
         "region": "Andina (Huila)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -8908,7 +8908,7 @@
         "title": "Almojábana (Boyacense/Bogotana)",
         "region": "Andina (Cundiboyacense)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9000,7 +9000,7 @@
         "title": "Buñuelo Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9094,7 +9094,7 @@
         "title": "Garulla Soachuna",
         "region": "Andina (Soacha / Cundinamarca)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9187,7 +9187,7 @@
         "title": "Ají Negro (Salsa Amazónica Fermentada)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elpais.com",
           "url": "https://elpais.com/elpais/2016/01/21/estilo/1453414376_467974.html",
@@ -9270,7 +9270,7 @@
         "title": "Casabe (Pan de Yuca Amazónico)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "delamazonas.com",
           "url": "https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/",
@@ -9347,7 +9347,7 @@
         "title": "Fariña (Farofa Amazónica)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "vecinavegetariana.com",
           "url": "https://vecinavegetariana.com/es/farina-de-yuca-de-la-amazonia-colombiana/",
@@ -9425,7 +9425,7 @@
         "title": "Inchicapi (Sopa de Gallina con Maní)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "jameaperu.com",
           "url": "https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/",
@@ -9511,7 +9511,7 @@
         "title": "Juanes de Yuca",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elcomercio.pe",
           "url": "https://elcomercio.pe/provecho/recetas/receta-de-juanes-de-yuca-y-paiche-noticia/",
@@ -9596,7 +9596,7 @@
         "title": "Mojojoy (Larva de Palma)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9687,7 +9687,7 @@
         "title": "Patarasca (Pescado en Hojas)",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "contarproteinas.com",
           "url": "https://www.contarproteinas.com/recetas_resultado/ver/Patarasca-amazonica-26326",
@@ -9775,7 +9775,7 @@
         "title": "Pescado Moqueado",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elespectador.com",
           "url": "https://www.elespectador.com/gastronomia-y-recetas/pescado-muquiado-un-plato-que-resalta-los-sabores-de-la-etnias-del-guaviare/",
@@ -9851,7 +9851,7 @@
         "title": "Pirarucú Frito",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "colombia.gastronomia.com",
           "url": "https://colombia.gastronomia.com/noticia/8498/joya-amazonica-pirarucu",
@@ -9951,7 +9951,7 @@
         "title": "10 recetas más emblemáticas de la región Amazónica de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -9989,7 +9989,7 @@
         "title": "Tacacho con Cecina",
         "region": "Amazonía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "tripadvisor.co",
           "url": "https://www.tripadvisor.co/ShowUserReviews-g294316-d6385585-r488085052-La_Choza_de_La_Anaconda-Lima_Lima_Region.html",
@@ -10094,7 +10094,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa criolla",
           "Papa pastusa",
@@ -10201,7 +10201,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Frijol bola roja (o Cargamanto)",
           "Arroz blanco",
@@ -10296,7 +10296,7 @@
         "title": "Caldo de Costilla",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -10392,7 +10392,7 @@
         "title": "Changua",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -10493,7 +10493,7 @@
         "title": "Cocido Boyacense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -10597,7 +10597,7 @@
         "title": "Empanadas Andinas",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -10712,7 +10712,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Cerdo (pulpa y costilla)",
           "Cuero de cerdo",
@@ -10803,7 +10803,7 @@
         "title": "Manjar Blanco",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -10898,7 +10898,7 @@
         "title": "Mondongo Antioqueño",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11004,7 +11004,7 @@
         "title": "Mute Santandereano",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11110,7 +11110,7 @@
         "title": "10 recetas más emblemáticas de la región Andina de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11148,7 +11148,7 @@
         "title": "Tamal Tolimense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11251,7 +11251,7 @@
         "title": "Avena Colombiana (Bebida Fría)",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/avena/",
@@ -11335,7 +11335,7 @@
         "title": "Champús Valluno",
         "region": "Suroccidente (Valle, Nariño, Cauca)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11430,7 +11430,7 @@
         "title": "Chicha de Maíz Ancestral",
         "region": "Nacional (Andina / Altiplano)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11523,7 +11523,7 @@
         "title": "Chocolate Santafereño",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/chocolate-santafere%C3%B1o",
@@ -11606,7 +11606,7 @@
         "title": "Guarapo (Elixir de Caña)",
         "region": "Nacional (Andina / Cafetera)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11698,7 +11698,7 @@
         "title": "Lulada",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/lulada/",
@@ -11783,7 +11783,7 @@
         "title": "Refajo Colombiano",
         "region": "Andina / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -11874,7 +11874,7 @@
         "title": "Salpicón Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/salpicon/",
@@ -11978,7 +11978,7 @@
         "title": "Alegrías",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-alegrias-57934",
@@ -12087,7 +12087,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Maíz Amarillo (Masa)",
           "Huevo (AAA)",
@@ -12171,7 +12171,7 @@
         "title": "Arroz con Coco (Titoté)",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12268,7 +12268,7 @@
         "title": "Butifarra Soledeña",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12363,7 +12363,7 @@
         "title": "Carimañolas",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12458,7 +12458,7 @@
         "title": "Cazuela de Mariscos",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12557,7 +12557,7 @@
         "title": "Ceviche de Camarón Costeño",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12656,7 +12656,7 @@
         "title": "Mote de Queso",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12755,7 +12755,7 @@
         "title": "10 recetas más emblemáticas de la región Caribe de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12793,7 +12793,7 @@
         "title": "Sancocho Costeño",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12892,7 +12892,7 @@
         "title": "Viudo de Pescado",
         "region": "Caribe/Magdalena",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -12987,7 +12987,7 @@
         "title": "Ají Picante Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13063,7 +13063,7 @@
         "title": "Guacamole Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13139,7 +13139,7 @@
         "title": "Hogao Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13214,7 +13214,7 @@
         "title": "Salsa Rosada Colombiana",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13286,7 +13286,7 @@
         "title": "Suero Costeño",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13355,7 +13355,7 @@
         "title": "Bolas de Pescado (Fish Balls)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13430,7 +13430,7 @@
         "title": "Caracol Guisado (Conch Stew)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13521,7 +13521,7 @@
         "title": "Cocadas",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13594,7 +13594,7 @@
         "title": "Crab Backs (Cangrejo Relleno)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13670,7 +13670,7 @@
         "title": "Crab Patty (Empanada de Cangrejo)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13747,7 +13747,7 @@
         "title": "Frijoles con Cola de Cerdo (Pig Tail Beans)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13824,7 +13824,7 @@
         "title": "Ginger Beer (Cerveza de Jengibre Ancestral)",
         "region": "Insular (San Andrés y Providencia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -13917,7 +13917,7 @@
         "title": "Pan de Coco (Coconut Bread)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14012,7 +14012,7 @@
         "title": "Pollo Guisado con Dumplings",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "comidadecolombia.blogspot.com",
           "url": "https://comidadecolombia.blogspot.com/2011/02/pollo-guisado-con-dumpling.html",
@@ -14102,7 +14102,7 @@
         "title": "10 recetas más emblemáticas de la región Insular de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14140,7 +14140,7 @@
         "title": "Rondón (Run Down)",
         "region": "Insular (San Andrés y Providencia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14235,7 +14235,7 @@
         "title": "Sopa de Cangrejo (Crab Soup)",
         "region": "Insular",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14328,7 +14328,7 @@
         "title": "Torta de Calabaza (Pumpkin Cake)",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14403,7 +14403,7 @@
         "title": "Arroz con Pollo Colombiano",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -14511,7 +14511,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res",
           "Pollo",
@@ -14591,7 +14591,7 @@
         "title": "Fritanga Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/fritanga",
@@ -14700,7 +14700,7 @@
         "title": "Hamburguesa Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/hamburguesa-colombiana",
@@ -14806,7 +14806,7 @@
         "title": "Papas Aborrajadas",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/papas-aborrajadas",
@@ -14898,7 +14898,7 @@
         "title": "Papas Rellenas Colombianas",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/papas-rellenas",
@@ -15019,7 +15019,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa frita",
           "Salchicha",
@@ -15103,7 +15103,7 @@
         "title": "Arroz Llanero",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15179,7 +15179,7 @@
         "title": "Cachama Asada",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15257,7 +15257,7 @@
         "title": "Carne a la Perra",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15335,7 +15335,7 @@
         "title": "Casabe (El Pan de la Selva)",
         "region": "Amazonía / Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15424,7 +15424,7 @@
         "title": "Chigüiro Asado",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15502,7 +15502,7 @@
         "title": "Entreverado",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15580,7 +15580,7 @@
         "title": "Hayaca Llanera",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15673,7 +15673,7 @@
         "title": "Hervido de Gumarra",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15750,7 +15750,7 @@
         "title": "Mamona (Ternera a la Llanera)",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15841,7 +15841,7 @@
         "title": "Pabellón Llanero",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15914,7 +15914,7 @@
         "title": "Pan de Arroz",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -15986,7 +15986,7 @@
         "title": "Recetas de la Orinoquía",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16024,7 +16024,7 @@
         "title": "Tungos Llaneros",
         "region": "Orinoquía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16117,7 +16117,7 @@
         "title": "Arequipe",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16205,7 +16205,7 @@
         "title": "Cayeye",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/cayeye-colombiano/",
@@ -16286,7 +16286,7 @@
         "title": "Envueltos de Mazorca",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/envueltos-de-mazorca/",
@@ -16371,7 +16371,7 @@
         "title": "Mazamorra Antioqueña",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/mazamorra-antioquena/",
@@ -16452,7 +16452,7 @@
         "title": "Mote de Queso",
         "region": "Caribe",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16538,7 +16538,7 @@
         "title": "Natilla Colombiana",
         "region": "Andina / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16634,7 +16634,7 @@
         "title": "Postre de Natas",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/postre-de-natas/",
@@ -16718,7 +16718,7 @@
         "title": "Tamal Tolimense",
         "region": "Andina",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "mycolombianrecipes.com",
           "url": "https://www.mycolombianrecipes.com/es/tamales-tolimenses/",
@@ -16807,7 +16807,7 @@
         "title": "Aborrajado Valluno",
         "region": "Pacífica / Valle del Cauca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16903,7 +16903,7 @@
         "title": "Aborrajados de Pescado",
         "region": "Pacífica/Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -16998,7 +16998,7 @@
         "title": "Arroz Atollado con Mariscos",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17093,7 +17093,7 @@
         "title": "Cazuela de Mariscos Pacífica",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-cazuela-de-mariscos-57935",
@@ -17192,7 +17192,7 @@
         "title": "Chancacas (Cocadas del Pacífico)",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-chancacas-57944",
@@ -17273,7 +17273,7 @@
         "title": "Empanadas de Jaiba",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941",
@@ -17349,7 +17349,7 @@
         "title": "Encocado de Pescado",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17444,7 +17444,7 @@
         "title": "Pusandao (Sopa de Identidad)",
         "region": "Pacífica / Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17539,7 +17539,7 @@
         "title": "10 recetas más emblemáticas de la región Pacífica de Colombia",
         "region": "Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17577,7 +17577,7 @@
         "title": "Sancocho de Pescado Pacífico",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "eltiempo.com",
           "url": "https://www.eltiempo.com/vida/receta-sancocho-de-pescado-57936",
@@ -17663,7 +17663,7 @@
         "title": "Tapao de Pescado",
         "region": "Pacífica / Nariño",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17758,7 +17758,7 @@
         "title": "Tollo Ahumado",
         "region": "Pacífica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -17853,7 +17853,7 @@
         "title": "Pan Aliñado Colombiano",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/pan-ali%C3%B1ado/",
@@ -17946,7 +17946,7 @@
         "title": "Pandebono Valluno",
         "region": "Valle del Cauca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -18039,7 +18039,7 @@
         "title": "Pandeyuca (Pan de Yuca)",
         "region": "Andina / Sur de Colombia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -18131,7 +18131,7 @@
         "title": "Deditos de Queso",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elgourmet.com",
           "url": "https://elgourmet.com/recetas/deditos-de-queso/",
@@ -18222,7 +18222,7 @@
         "title": "Empanada Colombiana",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasdecolombia.com",
           "url": "https://www.recetasdecolombia.com/empanadas",
@@ -18315,7 +18315,7 @@
         "title": "Ajiaco Criollo Cubano",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/ajiaco-criollo-cubano/",
@@ -18417,7 +18417,7 @@
         "title": "Flan de Huevo Tradicional Cubano",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/flan-de-huevo/",
@@ -18515,7 +18515,7 @@
         "title": "Lechón Asado Cubano",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/lechon-asado/",
@@ -18633,7 +18633,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de cerdo (paleta o pierna)",
           "Naranja agria (sour orange)",
@@ -18718,7 +18718,7 @@
         "title": "Mojito Cubano Tradicional",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/mojito/",
@@ -18822,7 +18822,7 @@
         "title": "Moros y Cristianos Tradicionales",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/moros-y-cristianos/",
@@ -18922,7 +18922,7 @@
         "title": "Picadillo a la Habanera",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/picadillo-a-la-habanera/",
@@ -19022,7 +19022,7 @@
         "title": "Ropa Vieja Cubana",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/ropa-vieja/",
@@ -19123,7 +19123,7 @@
         "title": "Tostones Cubanos (Chatinos)",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/tostones/",
@@ -19217,7 +19217,7 @@
         "title": "Yuca con Mojo Cubana",
         "region": "Cuba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetascubanas.org",
           "url": "https://www.recetascubanas.org/yuca-con-mojo/",
@@ -19317,7 +19317,7 @@
         "title": "Chimichurri Dominicano (Chimi)",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/chimichurri-chimi-receta/",
@@ -19424,7 +19424,7 @@
         "title": "Habichuelas con Dulce Dominicanas",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/habichuelas-con-dulce-receta/",
@@ -19535,7 +19535,7 @@
         "title": "La Bandera Dominicana (Arroz, Habichuelas y Carne)",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/la-bandera-dominicana-receta/",
@@ -19640,7 +19640,7 @@
         "title": "Mangú Dominicano con Los Tres Golpes",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elfogondelulublog.com",
           "url": "https://www.elfogondelulublog.com/receta-de-mangu-dominicano/",
@@ -19744,7 +19744,7 @@
         "title": "Mofongo Dominicano Tradicional",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/mofongo-dominicano-receta/",
@@ -19846,7 +19846,7 @@
         "title": "Morir Soñando Dominicano",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/morir-sonando-receta/",
@@ -19941,7 +19941,7 @@
         "title": "Pescado con Coco Estilo Samaná",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/pescado-con-coco-receta/",
@@ -20044,7 +20044,7 @@
         "title": "Pollo Guisado Dominicano",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/pollo-guisado/",
@@ -20166,7 +20166,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carnes mixtas (pollo, cerdo, res, chuleta, longaniza)",
           "Plátano verde",
@@ -20260,7 +20260,7 @@
         "title": "Tostones Dominicanos con Agua de Ajo",
         "region": "República Dominicana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "cocinadominicana.com",
           "url": "https://www.cocinadominicana.com/tostones-receta/",
@@ -20358,7 +20358,7 @@
         "title": "Boeuf Bourguignon",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20448,7 +20448,7 @@
         "title": "Daube Provençale",
         "region": "Provenza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20538,7 +20538,7 @@
         "title": "Bouillabaisse de Marsella",
         "region": "Marsella",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20628,7 +20628,7 @@
         "title": "Cassoulet de Castelnaudary",
         "region": "Languedoc",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20716,7 +20716,7 @@
         "title": "Coq au Vin",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20806,7 +20806,7 @@
         "title": "Crème Brûlée",
         "region": "Francia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20894,7 +20894,7 @@
         "title": "Crêpes Suzette",
         "region": "Costa Azul",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -20982,7 +20982,7 @@
         "title": "Croque Monsieur",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21070,7 +21070,7 @@
         "title": "Confit de Canard",
         "region": "Gascuña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21158,7 +21158,7 @@
         "title": "Escargots de Bourgogne",
         "region": "Borgoña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21246,7 +21246,7 @@
         "title": "Gratin Dauphinois",
         "region": "Delfinado",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21334,7 +21334,7 @@
         "title": "Mousse au Chocolat",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21422,7 +21422,7 @@
         "title": "Pot-au-Feu Tradicional",
         "region": "Francia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21512,7 +21512,7 @@
         "title": "Quiche Lorraine",
         "region": "Lorena",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21602,7 +21602,7 @@
         "title": "Ratatouille Provençale",
         "region": "Niza / Provenza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21692,7 +21692,7 @@
         "title": "Salade Niçoise",
         "region": "Niza",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21784,7 +21784,7 @@
         "title": "Soufflé au Fromage",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21874,7 +21874,7 @@
         "title": "Soupe à l'Oignon Gratinée",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -21964,7 +21964,7 @@
         "title": "Steak Frites con Salsa Béarnaise",
         "region": "París",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22054,7 +22054,7 @@
         "title": "Tarte Tatin",
         "region": "Valle del Loira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22142,7 +22142,7 @@
         "title": "Baklava Griego con Nueces y Miel",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22232,7 +22232,7 @@
         "title": "Dolmades (Hojas de Parra Rellenas)",
         "region": "Creta",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22324,7 +22324,7 @@
         "title": "Revithokeftedes (Croquetas de Garbanzo)",
         "region": "Sifnos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22414,7 +22414,7 @@
         "title": "Fasolada (Sopa de Alubias Blancas)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22504,7 +22504,7 @@
         "title": "Galaktoboureko (Pastel de Semola y Miel)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22594,7 +22594,7 @@
         "title": "Gigantes Plaki (Alubias al Horno)",
         "region": "Macedonia Griega",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22684,7 +22684,7 @@
         "title": "Gyros de Pollo en Pan Pita",
         "region": "Tesalónica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22774,7 +22774,7 @@
         "title": "Horiatiki (Ensalada Griega Tradicional)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22866,7 +22866,7 @@
         "title": "Keftedes (Albóndigas Griegas de Menta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -22956,7 +22956,7 @@
         "title": "Kleftiko de Cordero en Papel",
         "region": "Grecia Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23048,7 +23048,7 @@
         "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
         "region": "Creta",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23138,7 +23138,7 @@
         "title": "Loukoumades con Miel y Canela",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23226,7 +23226,7 @@
         "title": "Moussaka Griega Tradicional",
         "region": "Atenas / Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23316,7 +23316,7 @@
         "title": "Pastitsio (Lasaña Griega)",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23404,7 +23404,7 @@
         "title": "Garides Saganaki (Camarones con Feta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23492,7 +23492,7 @@
         "title": "Souvlaki de Cerdo con Pita",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23582,7 +23582,7 @@
         "title": "Spanakopita (Pastel de Espinacas y Feta)",
         "region": "Epiro",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23672,7 +23672,7 @@
         "title": "Stifado de Ternera con Cebollitas",
         "region": "Peloponeso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23764,7 +23764,7 @@
         "title": "Tiropita (Pastel Hojaldrado de Feta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23854,7 +23854,7 @@
         "title": "Tzatziki Tradicional",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -23944,7 +23944,7 @@
         "title": "Aloo Gobi",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%B2%E0%A5%82_%E0%A4%97%E0%A5%8B%E0%A4%AD%E0%A5%80",
@@ -24036,7 +24036,7 @@
         "title": "Baingan Bharta",
         "region": "Punjab / Norte de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%97%E0%A4%A8_%E0%A4%95%E0%A4%BE_%E0%A4%AD%E0%A4%B0%E0%A4%A4%E0%A4%BE",
@@ -24128,7 +24128,7 @@
         "title": "Hyderabadi Biryani",
         "region": "Hyderabad",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-hyderabadi-biryani-218337",
@@ -24220,7 +24220,7 @@
         "title": "Bisi Bele Bath",
         "region": "Karnataka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B8%E0%A5%80_%E0%A4%AC%E0%A5%87%E0%A4%B2%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%A4",
@@ -24313,7 +24313,7 @@
         "title": "Butter Chicken (Murgh Makhani)",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-butter-chicken-218228",
@@ -24403,7 +24403,7 @@
         "title": "Chana Masala",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%A8%E0%A4%BE_%E0%A4%AE%E0%A4%B8%E0%A4%BE%E0%A4%B2%E0%A4%BE",
@@ -24493,7 +24493,7 @@
         "title": "Chicken Korma",
         "region": "Mogolla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-chicken-korma-218359",
@@ -24583,7 +24583,7 @@
         "title": "Chicken Tikka Masala",
         "region": "Punjab / U.K.",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-chicken-tikka-masala-218230",
@@ -24673,7 +24673,7 @@
         "title": "Dal Makhani",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-dal-makhani-218225",
@@ -24763,7 +24763,7 @@
         "title": "Dhokla Gujarati",
         "region": "Gujarat",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A2%E0%A5%8B%E0%A4%95%E0%A4%B2%E0%A4%BE",
@@ -24857,7 +24857,7 @@
         "title": "Masala Dosa",
         "region": "Sur de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%B8%E0%A4%BE",
@@ -24945,7 +24945,7 @@
         "title": "Amritsari Fish Fry",
         "region": "Amritsar",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-amritsari-fish-218336",
@@ -25033,7 +25033,7 @@
         "title": "Gulab Jamun",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%BE%E0%A4%AC_%E0%A4%9C%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%A8",
@@ -25121,7 +25121,7 @@
         "title": "Hyderabadi Haleem",
         "region": "Telangana / Hyderabad",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-hyderabadi-haleem-218340",
@@ -25217,7 +25217,7 @@
         "title": "Idli Sambar",
         "region": "Tamil Nadu / Sur de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%87%E0%A4%A1%E0%A4%B2%E0%A5%80",
@@ -25312,7 +25312,7 @@
         "title": "Kathi Roll de Kolkata",
         "region": "Bengala Occidental / Kolkata",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://thehindu.com/food/features/the-story-of-kolkatas-kathi-roll/article32567890.ece",
@@ -25407,7 +25407,7 @@
         "title": "Kheer de Arroz",
         "region": "Pan-India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%96%E0%A5%80%E0%A4%B0",
@@ -25502,7 +25502,7 @@
         "title": "Litti Chokha",
         "region": "Bihar",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A5%80_%E0%A4%9A%E0%A5%8B%E0%A4%96%E0%A4%BE",
@@ -25595,7 +25595,7 @@
         "title": "Malai Kofta",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-malai-kofta-218227",
@@ -25683,7 +25683,7 @@
         "title": "Misal Pav",
         "region": "Maharashtra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%B8%E0%A4%B2_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
@@ -25776,7 +25776,7 @@
         "title": "Ajo Naan (Pan Naan)",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-garlic-naan-218231",
@@ -25866,7 +25866,7 @@
         "title": "Palak Paneer",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-palak-paneer-218229",
@@ -25956,7 +25956,7 @@
         "title": "Paneer Butter Masala",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-paneer-butter-masala-218226",
@@ -26046,7 +26046,7 @@
         "title": "Pani Puri (Golgappa)",
         "region": "Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%80",
@@ -26134,7 +26134,7 @@
         "title": "Pav Bhaji",
         "region": "Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B5_%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80",
@@ -26222,7 +26222,7 @@
         "title": "Indori Poha",
         "region": "Madhya Pradesh / Indore",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8B%E0%A4%B9%E0%A4%BE",
@@ -26315,7 +26315,7 @@
         "title": "Rajma Chawal",
         "region": "Norte de la India / Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-rajma-chawal-218345",
@@ -26407,7 +26407,7 @@
         "title": "Rasam de Tomate",
         "region": "Tamil Nadu / Sur de la India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%AE",
@@ -26501,7 +26501,7 @@
         "title": "Rasgulla",
         "region": "Bengala Occidental / Odisha",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%B8%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BE",
@@ -26592,7 +26592,7 @@
         "title": "Rogan Josh de Cordero",
         "region": "Cachemira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-mutton-rogan-josh-218358",
@@ -26682,7 +26682,7 @@
         "title": "Samosa de Patata y Guisantes",
         "region": "Norte de India",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AE%E0%A5%8B%E0%A4%B8%E0%A4%BE",
@@ -26774,7 +26774,7 @@
         "title": "Tandoori Chicken",
         "region": "Punjab",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-tandoori-chicken-218224",
@@ -26864,7 +26864,7 @@
         "title": "Thalipeeth",
         "region": "Maharashtra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%AA%E0%A5%80%E0%A4%A0",
@@ -26957,7 +26957,7 @@
         "title": "Vada Pav",
         "region": "Bombay / Mumbai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%AA%E0%A4%BE%E0%A4%B5",
@@ -27045,7 +27045,7 @@
         "title": "Vindaloo de Cerdo",
         "region": "Goa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://food.ndtv.com/recipe-goan-pork-vindaloo-218342",
@@ -27137,7 +27137,7 @@
         "title": "Arancini Siciliani di Riso",
         "region": "Sicilia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27230,7 +27230,7 @@
         "title": "Spaghetti Cacio e Pepe",
         "region": "Lazio (Roma)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27318,7 +27318,7 @@
         "title": "Cannoli Siciliani al Pistacchio",
         "region": "Sicilia (Palermo)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27429,7 +27429,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Mozzarella de Búfala Campana DOP",
           "Tomates maduros grandes (Cuore di Bue)",
@@ -27509,7 +27509,7 @@
         "title": "Focaccia Barese con Pomodorini",
         "region": "Puglia (Bari)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27604,7 +27604,7 @@
         "title": "Gnocchi di Patate al Pesto",
         "region": "Liguria (Génova)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27700,7 +27700,7 @@
         "title": "Lasagna alla Bolognese",
         "region": "Emilia-Romaña (Bolonia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27797,7 +27797,7 @@
         "title": "Parmigiana di Melanzane",
         "region": "Campania / Sicilia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27891,7 +27891,7 @@
         "title": "Minestrone alla Genovese",
         "region": "Liguria",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -27987,7 +27987,7 @@
         "title": "Ossobuco alla Milanese con Gremolata",
         "region": "Lombardía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28083,7 +28083,7 @@
         "title": "Panettone Artigianale",
         "region": "Lombardía (Milán)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28177,7 +28177,7 @@
         "title": "Pizza Margherita Napoletana",
         "region": "Campania (Nápoles)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28272,7 +28272,7 @@
         "title": "Pollo alla Cacciatora",
         "region": "Toscana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28368,7 +28368,7 @@
         "title": "Porchetta di Ariccia",
         "region": "Lazio (Ariccia)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28461,7 +28461,7 @@
         "title": "Risotto alla Milanese",
         "region": "Lombardía (Milán)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28556,7 +28556,7 @@
         "title": "Saltimbocca alla Romana",
         "region": "Lazio (Roma)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28648,7 +28648,7 @@
         "title": "Spaghetti alla Carbonara",
         "region": "Lazio (Roma)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28740,7 +28740,7 @@
         "title": "Tagliatelle al Ragù Bolognese",
         "region": "Emilia-Romaña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28838,7 +28838,7 @@
         "title": "Tiramisù Classico",
         "region": "Véneto (Treviso)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -28934,7 +28934,7 @@
         "title": "Vitello Tonnato",
         "region": "Piamonte",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -29028,7 +29028,7 @@
         "title": "Agedashi Tofu",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703632/",
@@ -29123,7 +29123,7 @@
         "title": "Asari no Sakamushi",
         "region": "Izakaya / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B5%E3%83%AA",
@@ -29216,7 +29216,7 @@
         "title": "Buri Daikon",
         "region": "Toyama / Hokuriku",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%B6%E3%82%8A%E3%81%A0%E3%81%84%E3%81%93%E3%82%93",
@@ -29308,7 +29308,7 @@
         "title": "Chanchan Yaki",
         "region": "Hokkaido",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%A1%E3%82%83%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%84%BC%E3%81%8D",
@@ -29407,7 +29407,7 @@
         "title": "Chashu de Cerdo para Ramen",
         "region": "Fukuoka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://www.nhk.or.jp/lifestyle/kp/",
@@ -29502,7 +29502,7 @@
         "title": "Chawanmushi (Flan Salado)",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702781/",
@@ -29597,7 +29597,7 @@
         "title": "Chicken Katsu Curry",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%84%E3%82%AB%E3%83%AC%E3%83%BC",
@@ -29692,7 +29692,7 @@
         "title": "Chikuzenni",
         "region": "Fukuoka (Kyushu)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E5%89%8D%E7%85%AE",
@@ -29787,7 +29787,7 @@
         "title": "Dorayaki",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%A9%E3%82%89%E7%84%BC%E3%81%8D",
@@ -29880,7 +29880,7 @@
         "title": "Gyudon (Donburi de Res)",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703314/",
@@ -29977,7 +29977,7 @@
         "title": "Hida Houba Miso",
         "region": "Gifu (Takayama)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%9C%B4%E8%90%89%E2%80%93%E3%81%BF%E3%81%9D",
@@ -30074,7 +30074,7 @@
         "title": "Ichigo Daifuku",
         "region": "Tokyo / Kansai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%81%A1%E3%81%94%E5%A4%A7%E7%A6%8F",
@@ -30167,7 +30167,7 @@
         "title": "Imoni Yamagata",
         "region": "Yamagata",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%82%82%E3%81%AB",
@@ -30262,7 +30262,7 @@
         "title": "Ishikari Nabe",
         "region": "Hokkaido",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E2%80%93%E7%8B%A9%E9%80%85",
@@ -30359,7 +30359,7 @@
         "title": "Chicken Karaage",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701831/",
@@ -30454,7 +30454,7 @@
         "title": "Kenchin Jiru",
         "region": "Kamakura",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E3%81%A1%E3%82%93%E6%B1%81",
@@ -30551,7 +30551,7 @@
         "title": "Kiriotanpo Nabe",
         "region": "Akita",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%BD",
@@ -30649,7 +30649,7 @@
         "title": "Matcha Miso Dengaku",
         "region": "Aichi (Nagoya) / Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%B1%86%E8%85%90%E7%94%B0%E4%B9%90",
@@ -30742,7 +30742,7 @@
         "title": "Sopa de Miso Clásica",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/700810/",
@@ -30856,7 +30856,7 @@
         "title": "Nikujaga (Res con Patatas)",
         "region": "Japón Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701046/",
@@ -30952,7 +30952,7 @@
         "title": "Okonomiyaki Estilo Osaka",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703112/",
@@ -31049,7 +31049,7 @@
         "title": "Shoyu Ramen Tradicional",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%8D%80%E6%B2%B9%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
@@ -31161,7 +31161,7 @@
         "title": "Saba no Miso-ni",
         "region": "Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%B0%E3%81%AE%E3%81%BF%E3%81%9D%E7%85%AE",
@@ -31254,7 +31254,7 @@
         "title": "Zaru Soba (Fideos de Trigo Sarraceno)",
         "region": "Nagano",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/704112/",
@@ -31343,7 +31343,7 @@
         "title": "Sukiyaki Nabemono",
         "region": "Kanto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702914/",
@@ -31438,7 +31438,7 @@
         "title": "Nigiri Sushi de Salmón",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%8F%A1%E3%82%8A%E5%BF%BF%E3%81%97",
@@ -31529,7 +31529,7 @@
         "title": "Takoyaki de Osaka",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/705112/",
@@ -31624,7 +31624,7 @@
         "title": "Tamagoyaki (Tortilla Dulce)",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701230/",
@@ -31716,7 +31716,7 @@
         "title": "Tempura Moriawase",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702115/",
@@ -31810,7 +31810,7 @@
         "title": "Tonkatsu de Cerdo",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/701982/",
@@ -31904,7 +31904,7 @@
         "title": "Kitsune Udon",
         "region": "Osaka",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/703810/",
@@ -31996,7 +31996,7 @@
         "title": "Unadon (Anguila sobre Arroz)",
         "region": "Hamamatsu",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E9%B0%BB%E9%87%8D",
@@ -32084,7 +32084,7 @@
         "title": "Unagi no Kabayaki",
         "region": "Shizuoka (Hamamatsu)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E8%92%B2%E7%84%BC",
@@ -32174,7 +32174,7 @@
         "title": "Yakitori de Pollo en Tare",
         "region": "Tokyo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://park.ajinomoto.co.jp/recipe/card/702410/",
@@ -32269,7 +32269,7 @@
         "title": "Yudofu Kyoto",
         "region": "Kyoto",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "https://ja.wikipedia.org/wiki/%E6%B9%AF%E2%80%93%E8%B1%86%E8%85%90",
@@ -32379,7 +32379,7 @@
         "title": "Agua de Horchata de Arroz",
         "region": "Tradicional Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/bebidas/agua-de-horchata-de-arroz-tradicional/2018/03/",
@@ -32463,7 +32463,7 @@
         "title": "Aguachile Verde de Camarón",
         "region": "Sinaloa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/04/14/receta-aguachile-verde-de-camaron/",
@@ -32575,7 +32575,7 @@
         "title": "Albóndigas en Salsa de Chipotle",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/albondigas-en-salsa-de-chipotle/2019/04/",
@@ -32683,7 +32683,7 @@
         "title": "Barbacoa de Borrego",
         "region": "Hidalgo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/02/12/receta-de-barbacoa-estilo-hidalgo/",
@@ -32785,7 +32785,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res (diezmillo/morcillo)",
           "Chile guajillo",
@@ -32873,7 +32873,7 @@
         "title": "Carnitas de Michoacán",
         "region": "Michoacán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/",
@@ -32966,7 +32966,7 @@
         "title": "Chilaquiles Verdes con Huevo",
         "region": "México DF",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/desayunos/chilaquiles-verdes-con-pollo/2018/05/",
@@ -33061,7 +33061,7 @@
         "title": "Chiles en Nogada",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-chiles-en-nogada-tradicional-de-puebla/",
@@ -33160,7 +33160,7 @@
         "title": "Chiles Rellenos de Queso",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/",
@@ -33246,7 +33246,7 @@
         "title": "Chilpachole de Jaiba",
         "region": "Veracruz",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-chilpachole-de-jaiba-tradicional-de-veracruz/",
@@ -33332,7 +33332,7 @@
         "title": "Cochinita Pibil",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/27/cochinita-pibil-receta-tradicional-yucateca/",
@@ -33443,7 +33443,7 @@
         "title": "Enchiladas Verdes",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/desayunos/enchiladas-verdes-de-pollo/2018/06/",
@@ -33540,7 +33540,7 @@
         "title": "Enmoladas de Pollo",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/platos-fuertes/enmoladas-de-pollo-con-queso/2019/02/",
@@ -33633,7 +33633,7 @@
         "title": "Esquites con Epazote",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/08/11/receta-de-esquites-tradicionales-con-epazote/",
@@ -33722,7 +33722,7 @@
         "title": "Guacamole Tradicional",
         "region": "Michoacán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/21/receta-de-guacamole-tradicional-mexicano/",
@@ -33818,7 +33818,7 @@
         "title": "Huarache de Cecina",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/huarache-de-cecina-con-frijoles/2020/09/",
@@ -33905,7 +33905,7 @@
         "title": "Mole Amarillo Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2018/07/19/receta-mole-amarillo-oaxaca/",
@@ -33995,7 +33995,7 @@
         "title": "Mole Negro Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/10/28/historia-y-receta-del-mole-negro-oaxaqueno/",
@@ -34090,7 +34090,7 @@
         "title": "Mole Poblano",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/",
@@ -34191,7 +34191,7 @@
         "title": "Mole Verde Oaxaqueño",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/mole-verde-oaxaqueno-tradicional/2021/05/",
@@ -34283,7 +34283,7 @@
         "title": "Pambazo de Papa con Chorizo",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/pambazos-de-papa-con-chorizo-estilo-cdmx/2019/09/",
@@ -34377,7 +34377,7 @@
         "title": "Panuchos Yucatecos",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/05/19/receta-de-panuchos-yucatecos-tradicionales/",
@@ -34470,7 +34470,7 @@
         "title": "Pescado a la Veracruzana",
         "region": "Veracruz",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/",
@@ -34558,7 +34558,7 @@
         "title": "Pipián Verde",
         "region": "Puebla",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/salsas-y-moles/pipian-verde-con-pollo-receta-facil/2018/10/",
@@ -34644,7 +34644,7 @@
         "title": "Poc Chuc",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/",
@@ -34729,7 +34729,7 @@
         "title": "Pozole Rojo de Jalisco",
         "region": "Jalisco",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-pozole-rojo-tradicional-mexicano/",
@@ -34843,7 +34843,7 @@
         "title": "Quesadillas de Flor de Calabaza",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/07/08/receta-de-quesadillas-de-flor-de-calabaza/",
@@ -34936,7 +34936,7 @@
         "title": "Sopa de Lima",
         "region": "Yucatán",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/",
@@ -35023,7 +35023,7 @@
         "title": "Sopa de Tortilla (Ateca)",
         "region": "Ciudad de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/sopas-cremas-y-caldos/sopa-de-tortilla-tradicional-azteca/2018/01/",
@@ -35135,7 +35135,7 @@
         "title": "Sopes Tradicionales",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Cocina Vital",
           "url": "https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/",
@@ -35248,7 +35248,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de cerdo",
           "Adobo de achiote y chiles guajillo",
@@ -35334,7 +35334,7 @@
         "title": "Tacos de Canasta",
         "region": "Tlaxcala",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/",
@@ -35421,7 +35421,7 @@
         "title": "Tamales Oaxaqueños",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/01/29/tamales-oaxaquenos-de-mole-negro-receta/",
@@ -35530,7 +35530,7 @@
         "title": "Tlacoyos de Alverjón",
         "region": "Centro de México",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "El Universal Menú",
           "url": "https://www.eluniversal.com.mx/menu/receta-de-tlacoyos-de-alverjon-tradicionales/",
@@ -35614,7 +35614,7 @@
         "title": "Tlayuda Oaxaqueña con Tasajo",
         "region": "Oaxaca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Animal Gourmet",
           "url": "https://animalgourmet.com/2021/03/10/tlayuda-oaxaquena-receta-tradicional/",
@@ -35709,7 +35709,7 @@
         "title": "Baghrir (Panqueques de Mil Hoyos)",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -35799,7 +35799,7 @@
         "title": "Briouats de Carne Picada Especiada",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -35891,7 +35891,7 @@
         "title": "Chebakia de Sésamo y Miel",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -35979,7 +35979,7 @@
         "title": "Couscous Real aux Sept Légumes",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36073,7 +36073,7 @@
         "title": "Ghriba de Almendra y Sésamo",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36163,7 +36163,7 @@
         "title": "Sopa Harira Tradicional",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36255,7 +36255,7 @@
         "title": "Tajine de Kefta con Tomate y Huevos",
         "region": "Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36345,7 +36345,7 @@
         "title": "Mechoui de Cordero Asado",
         "region": "Atlas / Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36433,7 +36433,7 @@
         "title": "Msemmen (Pan Hojaldrado Marroquí)",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36521,7 +36521,7 @@
         "title": "Pastilla (Bastilla) de Pollo y Almendras",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36611,7 +36611,7 @@
         "title": "Rfissa de Pollo con Lentejas",
         "region": "Casablanca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36701,7 +36701,7 @@
         "title": "Seffa Medfouna con Pollo",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36791,7 +36791,7 @@
         "title": "Sellou (Sfouf) Tradicional",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36883,7 +36883,7 @@
         "title": "Tajine de Cordero con Ciruelas y Almendras",
         "region": "Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -36975,7 +36975,7 @@
         "title": "Tajine de Pescado con Chermoula",
         "region": "Essaouira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37063,7 +37063,7 @@
         "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
         "region": "Casablanca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37153,7 +37153,7 @@
         "title": "Tajine de Ternera con Membrillo Caramelizado",
         "region": "Meknes",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37243,7 +37243,7 @@
         "title": "Taktouka de Pimientos Asados",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37333,7 +37333,7 @@
         "title": "Té Verde Marroquí con Menta Fresca",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37421,7 +37421,7 @@
         "title": "Zaalouk de Berenjena y Tomate",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37513,7 +37513,7 @@
         "title": "Arroz con Pollo Peruano",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "yanuq.com",
           "url": "https://www.yanuq.com/",
@@ -37609,7 +37609,7 @@
         "title": "Chicha Morada",
         "region": "Sierra/Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37707,7 +37707,7 @@
         "title": "Ají de Gallina",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37806,7 +37806,7 @@
         "title": "Anticuchos de Corazón",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -37905,7 +37905,7 @@
         "title": "Carapulcra Limeña",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38004,7 +38004,7 @@
         "title": "Causa Limeña",
         "region": "Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38121,7 +38121,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Pescado blanco (Lenguado o Corvina)",
           "Limón sutil (Lima verde)",
@@ -38228,7 +38228,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Carne de res (Lomo fino)",
           "Papas amarillas (para freír)",
@@ -38335,7 +38335,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Papa blanca y papa amarilla",
           "Carne de res molida o picada",
@@ -38422,7 +38422,7 @@
         "title": "Seco de Cabrito",
         "region": "Costa (Norte)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38521,7 +38521,7 @@
         "title": "Juane de Gallina",
         "region": "Selva",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38620,7 +38620,7 @@
         "title": "Chupe de Camarones",
         "region": "Costa/Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38719,7 +38719,7 @@
         "title": "Papa a la Huancaína",
         "region": "Sierra/Costa",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38818,7 +38818,7 @@
         "title": "Rocoto Relleno",
         "region": "Sierra",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -38917,7 +38917,7 @@
         "title": "Alcapurrias de Masa Puertorriqueñas",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/alcapurrias.html",
@@ -39016,7 +39016,7 @@
         "title": "Arroz con Gandules Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/arrozcongandules.html",
@@ -39113,7 +39113,7 @@
         "title": "Asopao de Pollo Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/asopao.html",
@@ -39217,7 +39217,7 @@
         "title": "Coquito Puertorriqueño Tradicional",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/coquito.html",
@@ -39321,7 +39321,7 @@
         "title": "Mofongo Puertorriqueño de Camarones",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/mofongo.html",
@@ -39420,7 +39420,7 @@
         "title": "Pasteles Puertorriqueños de Masa",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pasteles.html",
@@ -39524,7 +39524,7 @@
         "title": "Pernil Asado Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pernil.html",
@@ -39625,7 +39625,7 @@
         "title": "Pinchos de Pollo Puertorriqueños",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/pinchos.html",
@@ -39725,7 +39725,7 @@
         "title": "Tembleque de Coco Puertorriqueño",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/tembleque.html",
@@ -39830,7 +39830,7 @@
         "title": "Trifongo Puertorriqueño de Chicharrón",
         "region": "Puerto Rico",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "elboricua.com",
           "url": "https://www.elboricua.com/mofongo.html",
@@ -39933,7 +39933,7 @@
         "title": "Bacalao al Pil-Pil",
         "region": "País Vasco",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40038,7 +40038,7 @@
           }
         ],
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "main_ingredients": [
           "Calamares frescos",
           "Tinta de calamar",
@@ -40117,7 +40117,7 @@
         "title": "Churros con Chocolate",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40207,7 +40207,7 @@
         "title": "Cocido Madrileño",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40301,7 +40301,7 @@
         "title": "Crema Catalana",
         "region": "Cataluña",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40393,7 +40393,7 @@
         "title": "Croquetas de Jamón Ibérico",
         "region": "España Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40485,7 +40485,7 @@
         "title": "Empanada Gallega de Atún",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40575,7 +40575,7 @@
         "title": "Fabada Asturiana",
         "region": "Asturias",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40663,7 +40663,7 @@
         "title": "Gambas al Ajillo",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40753,7 +40753,7 @@
         "title": "Gazpacho Andaluz",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40845,7 +40845,7 @@
         "title": "Jamón Ibérico de Bellota",
         "region": "Extremadura / Jabugo",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -40927,7 +40927,7 @@
         "title": "Leche Frita Tradicional",
         "region": "Castilla y León",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41017,7 +41017,7 @@
         "title": "Paella Valenciana Tradicional",
         "region": "Comunidad Valenciana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41109,7 +41109,7 @@
         "title": "Patatas Bravas",
         "region": "Madrid",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41197,7 +41197,7 @@
         "title": "Pimientos del Padrón",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41283,7 +41283,7 @@
         "title": "Pulpo a la Gallega (Polbo á Feira)",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41373,7 +41373,7 @@
         "title": "Rabo de Toro Estofado",
         "region": "Andalucía",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41465,7 +41465,7 @@
         "title": "Salmorejo Cordobés",
         "region": "Córdoba",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41557,7 +41557,7 @@
         "title": "Tarta de Santiago",
         "region": "Galicia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41649,7 +41649,7 @@
         "title": "Tortilla de Patatas Española",
         "region": "España Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41739,7 +41739,7 @@
         "title": "Kuay Teow Reua (Boat Noodles)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41829,7 +41829,7 @@
         "title": "Gaeng Phet Ped Yang",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -41921,7 +41921,7 @@
         "title": "Gai Pad Med Mamuang (Pollo con Anacardos)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42011,7 +42011,7 @@
         "title": "Gaeng Keow Wan (Curry Verde)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42103,7 +42103,7 @@
         "title": "Khao Soi Gai",
         "region": "Chiang Mai",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42191,7 +42191,7 @@
         "title": "Larb Gai (Ensalada de Pollo)",
         "region": "Isan",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42283,7 +42283,7 @@
         "title": "Khao Niew Mamuang (Mango Sticky Rice)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42373,7 +42373,7 @@
         "title": "Massaman Curry de Res",
         "region": "Sur de Tailandia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42465,7 +42465,7 @@
         "title": "Pad Krapow Moo (Cerdo con Albahaca)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42557,7 +42557,7 @@
         "title": "Pad See Ew",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42647,7 +42647,7 @@
         "title": "Pad Thai Kung (con Camarones)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42739,7 +42739,7 @@
         "title": "Panang Curry",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42829,7 +42829,7 @@
         "title": "Satay Gai con Salsa de Cacahuete",
         "region": "Sur de Tailandia",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -42917,7 +42917,7 @@
         "title": "Som Tum (Ensalada de Papaya)",
         "region": "Isan",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43011,7 +43011,7 @@
         "title": "Khao Pad Kung",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43103,7 +43103,7 @@
         "title": "Por Pia Tod (Rollitos Tailandeses)",
         "region": "Bangkok",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43193,7 +43193,7 @@
         "title": "Tod Mun Pla (Pasteles de Pescado)",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43281,7 +43281,7 @@
         "title": "Tom Kha Gai",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43373,7 +43373,7 @@
         "title": "Tom Yum Goong",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -43465,7 +43465,7 @@
         "title": "Yam Nua (Ensalada de Res Picante)",
         "region": "Central Thailand",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

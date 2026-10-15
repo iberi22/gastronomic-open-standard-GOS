@@ -1,6 +1,6 @@
 # GOS — Gastronomic Open Standard — AI Agent Protocol
 # appId: gos
-# Graph: /graph-data.json (4499 nodes, 13075 edges)
+# Graph: /graph-data.json (4437 nodes, 13147 edges)
 # Catalog: /api/by-country/catalog.json (19 countries cataloged)
 # Full Document: /llms-full.txt
 # API Gateway Rate Limit: 100 req/day/IP free, paid keys in D1 (tier socio) via x-api-key header
@@ -13,10 +13,10 @@
 - Full Specification: https://gos.swal.network/llms-full.txt
 
 ## Live Statistics
-- Total Graph Nodes: 4499
-- Total Graph Edges: 13075
+- Total Graph Nodes: 4437
+- Total Graph Edges: 13147
 - Recipes (Dishes): 510
-- Scientific Ingredients: 2460
+- Scientific Ingredients: 2398
 - Bioactive Substances: 43
 - Vitamins/Nutrients: 23
 - Medical Conditions (Health Registry): 51

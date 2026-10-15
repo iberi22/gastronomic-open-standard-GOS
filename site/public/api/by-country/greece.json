@@ -10,7 +10,7 @@
         "title": "Baklava Griego con Nueces y Miel",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "Dolmades (Hojas de Parra Rellenas)",
         "region": "Creta",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -192,7 +192,7 @@
         "title": "Revithokeftedes (Croquetas de Garbanzo)",
         "region": "Sifnos",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -282,7 +282,7 @@
         "title": "Fasolada (Sopa de Alubias Blancas)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -372,7 +372,7 @@
         "title": "Galaktoboureko (Pastel de Semola y Miel)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -462,7 +462,7 @@
         "title": "Gigantes Plaki (Alubias al Horno)",
         "region": "Macedonia Griega",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -552,7 +552,7 @@
         "title": "Gyros de Pollo en Pan Pita",
         "region": "Tesalónica",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -642,7 +642,7 @@
         "title": "Horiatiki (Ensalada Griega Tradicional)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -734,7 +734,7 @@
         "title": "Keftedes (Albóndigas Griegas de Menta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -824,7 +824,7 @@
         "title": "Kleftiko de Cordero en Papel",
         "region": "Grecia Central",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -916,7 +916,7 @@
         "title": "Kolokithokeftedes (Buñuelos de Calabacín)",
         "region": "Creta",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1006,7 +1006,7 @@
         "title": "Loukoumades con Miel y Canela",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1094,7 +1094,7 @@
         "title": "Moussaka Griega Tradicional",
         "region": "Atenas / Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1184,7 +1184,7 @@
         "title": "Pastitsio (Lasaña Griega)",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1272,7 +1272,7 @@
         "title": "Garides Saganaki (Camarones con Feta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1360,7 +1360,7 @@
         "title": "Souvlaki de Cerdo con Pita",
         "region": "Atenas",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1450,7 +1450,7 @@
         "title": "Spanakopita (Pastel de Espinacas y Feta)",
         "region": "Epiro",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1540,7 +1540,7 @@
         "title": "Stifado de Ternera con Cebollitas",
         "region": "Peloponeso",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1632,7 +1632,7 @@
         "title": "Tiropita (Pastel Hojaldrado de Feta)",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1722,7 +1722,7 @@
         "title": "Tzatziki Tradicional",
         "region": "Grecia Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

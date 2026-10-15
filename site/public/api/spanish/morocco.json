@@ -10,7 +10,7 @@
         "title": "Baghrir (Panqueques de Mil Hoyos)",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -100,7 +100,7 @@
         "title": "Briouats de Carne Picada Especiada",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -192,7 +192,7 @@
         "title": "Chebakia de Sésamo y Miel",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -280,7 +280,7 @@
         "title": "Couscous Real aux Sept Légumes",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -374,7 +374,7 @@
         "title": "Ghriba de Almendra y Sésamo",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -464,7 +464,7 @@
         "title": "Sopa Harira Tradicional",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -556,7 +556,7 @@
         "title": "Tajine de Kefta con Tomate y Huevos",
         "region": "Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -646,7 +646,7 @@
         "title": "Mechoui de Cordero Asado",
         "region": "Atlas / Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -734,7 +734,7 @@
         "title": "Msemmen (Pan Hojaldrado Marroquí)",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -822,7 +822,7 @@
         "title": "Pastilla (Bastilla) de Pollo y Almendras",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -912,7 +912,7 @@
         "title": "Rfissa de Pollo con Lentejas",
         "region": "Casablanca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1002,7 +1002,7 @@
         "title": "Seffa Medfouna con Pollo",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1092,7 +1092,7 @@
         "title": "Sellou (Sfouf) Tradicional",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1184,7 +1184,7 @@
         "title": "Tajine de Cordero con Ciruelas y Almendras",
         "region": "Marrakech",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1276,7 +1276,7 @@
         "title": "Tajine de Pescado con Chermoula",
         "region": "Essaouira",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1364,7 +1364,7 @@
         "title": "Tajine de Pollo con Limón Encurtido y Aceitunas",
         "region": "Casablanca",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1454,7 +1454,7 @@
         "title": "Tajine de Ternera con Membrillo Caramelizado",
         "region": "Meknes",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1544,7 +1544,7 @@
         "title": "Taktouka de Pimientos Asados",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1634,7 +1634,7 @@
         "title": "Té Verde Marroquí con Menta Fresca",
         "region": "Marruecos Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",
@@ -1722,7 +1722,7 @@
         "title": "Zaalouk de Berenjena y Tomate",
         "region": "Fez",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "Gastronomic Open Standard (GOS) Database",
           "url": "pending",

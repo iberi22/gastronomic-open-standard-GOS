@@ -10,7 +10,7 @@
         "title": "Alfajores de Maicena",
         "region": "Buenos Aires / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -115,7 +115,7 @@
         "title": "Asado Criollo Argentino",
         "region": "La Pampa / Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -217,7 +217,7 @@
         "title": "Carbonada Criolla",
         "region": "Pampeana / Noroeste",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -326,7 +326,7 @@
         "title": "Choripán Argentino",
         "region": "Río de la Plata / Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -429,7 +429,7 @@
         "title": "Empanadas Tucumanas",
         "region": "Tucumán / Noroeste Argentino",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -535,7 +535,7 @@
         "title": "Humita en Chala",
         "region": "Noroeste Argentino (Jujuy / Salta / Tucumán)",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -641,7 +641,7 @@
         "title": "Locro Criollo Argentino",
         "region": "Noroeste / Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -748,7 +748,7 @@
         "title": "Milanesa a la Napolitana",
         "region": "Buenos Aires / Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -854,7 +854,7 @@
         "title": "Pastelitos Criollos Argentinos",
         "region": "Pampeana / Nacional",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
@@ -956,7 +956,7 @@
         "title": "Provoleta Argentina",
         "region": "Pampeana",
         "language": "es",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "source": {
           "name": "recetasargentinas.net",
           "url": "https://www.recetasargentinas.net/",
