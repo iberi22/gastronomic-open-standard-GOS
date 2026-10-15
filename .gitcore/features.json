@@ -1,108 +1,917 @@
 {
   "protocol": "3.8.0",
-  "_comment": "Feature tracking file inspired by Anthropic's long-running agent research. JSON is used because LLMs are less likely to accidentally modify JSON compared to Markdown.",
+  "_comment": "Feature tracking file inspired by Anthropic's long-running agent research. JSON is used because LLMs are less likely to accidentally modify JSON compared to Markdown. Reconciled 2026-10-15 against the real code (not against intent).",
   "metadata": {
     "project": "Gastronomic Open Standard (GOS)",
     "created": "2026-01-20",
-    "last_verified": "2026-09-04",
-    "total_features": 5,
-    "passing": 4,
-    "failing": 1,
-    "note": "Re-verified 2026-09-04. feat-recipe-translation marked failing (script exists, never executed)."
+    "last_verified": "2026-10-15",
+    "total_features": 43,
+    "implemented": 28,
+    "partial": 10,
+    "planned": 1,
+    "in_progress": 4,
+    "launch_blockers": 4,
+    "note": "Reconciliado 2026-10-15 midiendo rutas reales (ls/rg), suites ejecutadas y endpoints en vivo. Antes había 5 features y 1 de ellas (feat-protocol-feedback) apuntaba a un workflow que no existe en el repo. Los ids de las 5 originales se conservan; las nuevas usan FEAT-NNN. Deploy Pages/Worker están 'disabled_manually' y el site lleva congelado desde el deploy del 2026-10-02: por eso /api/v1/* da 404 en producción."
   },
   "features": [
     {
       "id": "feat-recipe-schema",
+      "name": "Recipe content schema & protocol validation",
       "category": "data",
-      "description": "Structured recipe format with YAML frontmatter validation",
-      "steps": [
-        "Recipe files follow YAML + Markdown structure",
-        "Metadata includes: title, difficulty, time, servings, ingredients",
-        "Validation runs on commit via markdownlint"
+      "description": "Recetas como Markdown con YAML frontmatter. 613 .md en dishes/ (495 publicadas a site/src/content). El protocolo científico se valida con verify_protocol.js y markdownlint.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "dishes/",
+        "site/src/content.config.ts",
+        "site/scripts/verify_protocol.js",
+        "schemas/v1/dish.schema.json"
       ],
-      "passes": true,
-      "verified_by": "npm run lint",
-      "github_issue": null,
-      "last_tested": "2026-01-20",
-      "notes": "Colombian and Peruvian recipes implemented",
-      "status": "passing",
-      "last_verified": "2026-09-02"
+      "tests": [
+        "site/src/lib/recipe-standard.test.ts",
+        "site/src/lib/recipe-instructions.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm exec markdownlint ./dishes ./tips && node site/scripts/verify_protocol.js && pnpm --filter gos-site exec vitest run",
+      "evidence_note": "markdownlint rc=0 sin issues; verify_protocol.js PASSED (9 fichas objetivo); recipe-standard/recipe-instructions pasan dentro de la suite de 26 archivos. Deuda medida: gos.cli audit avisa secciones faltantes en varias fichas mexicanas, rastreada en Issue #125 (por eso no es 100).",
+      "launch_blocker": false
     },
     {
       "id": "feat-ingredient-database",
+      "name": "Scientific ingredient database",
       "category": "data",
-      "description": "Scientific ingredient metadata with nutritional information",
-      "steps": [
-        "Each ingredient has: scientific name, nutrition facts, aliases",
-        "Template available at ingredients/_template.md",
-        "Images stored in ingredients/images/"
+      "description": "Base de ingredientes con metadatos científicos. docs/corpus-stats.py mide 552 ingredientes publicados y 555 .md en la raíz.",
+      "status": "implemented",
+      "progress_pct": 90,
+      "implemented_in": [
+        "ingredients/",
+        "site/src/content/",
+        "site/scripts/enrich-ingredients.js",
+        "site/scripts/curate-ingredients.js",
+        "scripts/audit_missing_ingredients.py"
       ],
-      "passes": true,
-      "verified_by": "manual | scripts/audit_missing_ingredients.py",
-      "github_issue": null,
-      "last_tested": "2026-01-20",
-      "notes": "300+ ingredients catalogued",
-      "status": "passing",
-      "last_verified": "2026-09-02"
+      "tests": [],
+      "last_tested": "2026-10-15",
+      "verified_by": "python3 docs/corpus-stats.py",
+      "evidence_note": "counts.ingredients=552 y root_mirror.ingredients_md=555. Sin test dedicado para la colección; la cobertura indirecta viene de gos-v1.test.ts (export valida identidad de ingredientes). Nota heredada: 515 tarjetas pending_review.",
+      "launch_blocker": false
     },
     {
       "id": "feat-astro-site",
+      "name": "Astro 7 + Svelte 5 static site",
       "category": "frontend",
-      "description": "Static site generation with Astro 5.x + Svelte",
-      "steps": [
-        "Site configured in site/ directory",
-        "Astro reads from dishes/ and ingredients/",
-        "Deploys to GitHub Pages automatically"
+      "description": "Sitio estático output:'static' en site/ con páginas index, graph, agent, scientific, 404, recipes/, ingredients/, countries/, substances/, api/.",
+      "status": "implemented",
+      "progress_pct": 90,
+      "implemented_in": [
+        "site/astro.config.mjs",
+        "site/src/pages/",
+        "site/src/components/",
+        "site/src/layouts/"
       ],
-      "passes": true,
-      "verified_by": "npm run build (in site/)",
-      "github_issue": 33,
-      "last_tested": "2026-01-21",
-      "notes": "Build successful: 130 pages generated, 103 recipes indexed",
-      "status": "passing",
-      "last_verified": "2026-09-02"
+      "tests": [
+        "site/src/lib/*.test.ts",
+        "site/tests/e2e/*.spec.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "26 archivos / 281 tests passed, 4 skipped (18.6s). No se ejecutó `astro build` ni Playwright en esta pasada (regla del task: nada de build completo ni deploy); las 6 specs E2E existen pero no se corrieron.",
+      "launch_blocker": false
     },
     {
       "id": "feat-recipe-translation",
+      "name": "Static i18n catalog (20 locales) + traducción on-device",
       "category": "ai",
-      "description": "Static i18n catalog: 20 canonical locales, aliases schema, sitemap hreflang, /api/v1/translate prerendered (no SSR)",
-      "steps": [
-        "site/src/lib/locales.ts defines 20 canonical locales + aliases schema",
-        "site/src/pages/api/v1/translate.ts prerenders full catalog at build (output static)",
-        "sitemap.xml exposes hreflang en/es/x-default; consumers filter client-side",
-        "Supersedes Gemini batch approach (#250 static catalog, #251 honest docs, PR #238-#251)"
+      "description": "Catálogo i18n estático: 20 locales canónicos, schema de aliases, /api/v1/translate prerenderizado y traducción on-device de Chrome (TranslateMenu) sin diccionario propio.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/lib/locales.ts",
+        "site/src/lib/translateService.ts",
+        "site/src/lib/chrome-translate.ts",
+        "site/src/pages/api/v1/translate.ts",
+        "site/src/components/TranslateMenu.astro"
       ],
-      "passes": true,
-      "verified_by": "vitest translateService+locales + dist/api/v1/translate content check",
-      "github_issue": 32,
-      "last_tested": "2026-09-06",
-      "notes": "Verified 2026-09-06: dist/api/v1/translate holds 987 entities, 20 supported_locales; src/lib/translateService.test.ts + locales.test.ts pass (39/39 vitest). Full-recipe Gemini batch abandoned by design (static-first, no SSR).",
-      "status": "passing",
-      "last_verified": "2026-09-06"
+      "tests": [
+        "site/src/lib/locales.test.ts",
+        "site/src/lib/translateService.test.ts",
+        "site/src/lib/chrome-translate.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "locales/translateService/chrome-translate pasan dentro de la suite de 281 tests. El PR #381 (DRAFT, abierto) añade contract tests del lookup de entidades: aún NO está en main (ver FEAT-039).",
+      "launch_blocker": false
     },
     {
       "id": "feat-protocol-feedback",
+      "name": "Automatic protocol-improvement reporting to upstream",
       "category": "devops",
-      "description": "Automatic reporting of protocol improvements to upstream repo",
-      "steps": [
-        "Weekly workflow scans for protocol-improvement label",
-        "Creates summary issue in iberi22/GitCore",
-        "Manual trigger available via workflow_dispatch"
+      "description": "El ledger afirmaba un workflow semanal que escanea la label protocol-improvement y abre issue en iberi22/GitCore. Ese workflow NO existe en el repositorio.",
+      "status": "planned",
+      "progress_pct": 0,
+      "implemented_in": [],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "ls .github/workflows | rg -i 'protocol|feedback'",
+      "evidence_note": "ABSENT: no hay protocol-feedback.yml. Workflows presentes: auto-assign, auto-merge-unified, ci, deploy-cloudflare, deploy-worker, guardian-agent, labels-sync, sync-issues, triage-agent, _repo-config, _repo-config. El claim previo 'passes: true' no está respaldado por ningún archivo.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-006",
+      "name": "Knowledge graph data model & integrity",
+      "category": "data",
+      "description": "Grafo global recetas↔ingredientes↔vitaminas↔substancias↔condiciones↔dietas. graph-data.json se genera en cada build por site/scripts/generate-graph.js.",
+      "status": "implemented",
+      "progress_pct": 92,
+      "implemented_in": [
+        "site/scripts/generate-graph.js",
+        "site/src/lib/domain.config.ts",
+        "scripts/build_graph.py",
+        "scripts/build_graph_full.py",
+        "docs/GRAPH_INVARIANTS.md"
       ],
-      "passes": true,
-      "verified_by": ".github/workflows/protocol-feedback.yml",
-      "github_issue": null,
-      "last_tested": "2026-01-20",
-      "notes": "Just implemented - ready to test",
-      "status": "passing",
-      "last_verified": "2026-09-02"
+      "tests": [
+        "site/src/lib/graph-integrity.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "graph-integrity.test.ts pasa dentro de la suite de 281 tests. El artefacto live /graph-data.json se sirve vía gateway (no se re-generó en esta pasada).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-007",
+      "name": "Scientific evidence gates (DOI + evidence_level)",
+      "category": "data",
+      "description": "Gate de CI que verifica que cada DOI corresponde al artículo declarado (self-test + control negativo) y que todo evidence_level es High/Medium/Low.",
+      "status": "implemented",
+      "progress_pct": 90,
+      "implemented_in": [
+        "site/scripts/verify-dois.py",
+        "site/scripts/verify-evidence.py",
+        ".github/workflows/ci.yml"
+      ],
+      "tests": [
+        ".github/workflows/ci.yml (jobs verify-dois, verify-evidence)"
+      ],
+      "last_tested": null,
+      "verified_by": "gh run list -R iberi22/gastronomic-open-standard-GOS --workflow ci.yml --branch main --limit 5",
+      "evidence_note": "No se ejecutaron los scripts en esta pasada (requieren red a Crossref); el último CI en main (38657745764, 2026-10-15) terminó success incluyendo ambos gates.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-008",
+      "name": "Content schemas & corpus statistics",
+      "category": "data",
+      "description": "JSON Schema 2020-12 en schemas/v1 (dish, ingredient, dataset-manifest) y schemas/ecosystem/v1; conteos canónicos en docs/stats.json.",
+      "status": "implemented",
+      "progress_pct": 92,
+      "implemented_in": [
+        "schemas/v1/",
+        "schemas/ecosystem/v1/",
+        "docs/corpus-stats.py",
+        "docs/stats.json"
+      ],
+      "tests": [
+        "packages/health-contract/test/contract.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "python3 docs/corpus-stats.py",
+      "evidence_note": "counts: dishes=495, ingredients=552, substances=30, vitamins=40, conditions=35, diets=6, mixtures=45. El export v1 valida cada entrada contra schemas/v1 antes de publicar (ver FEAT-022).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-009",
+      "name": "Recipe catalog & faceted search",
+      "category": "frontend",
+      "description": "Catálogo /recipes con búsqueda y facetas (RecipeVault.svelte + SearchBar.astro, fuse.js).",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/pages/recipes/index.astro",
+        "site/src/components/RecipeVault.svelte",
+        "site/src/components/SearchBar.astro"
+      ],
+      "tests": [
+        "site/src/lib/recipe-vault.test.ts",
+        "site/src/lib/recipe-vault-store.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "Los tests del vault/búsqueda pasan en la suite de 281. Sin smoke browser (Playwright no ejecutado).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-010",
+      "name": "Recipe detail pages",
+      "category": "frontend",
+      "description": "Fichas /recipes/[...slug] con rendering de markdown de receta, instrucciones y perfil científico/sensorial.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/pages/recipes/[...slug].astro",
+        "site/src/lib/recipe-markdown.ts",
+        "site/src/lib/recipe-instructions.ts"
+      ],
+      "tests": [
+        "site/src/lib/recipe-instructions.test.ts",
+        "site/src/lib/recipe-standard.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "recipe-instructions/recipe-standard pasan dentro de la suite. La generación de páginas no se verificó con build (no ejecutado por regla).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-011",
+      "name": "Ingredient catalog & detail pages",
+      "category": "frontend",
+      "description": "Catálogo /ingredients y fichas /ingredients/[...slug] con nutrientes, compuestos y health registry.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/src/pages/ingredients/index.astro",
+        "site/src/pages/ingredients/[...slug].astro",
+        "site/scripts/enrich-ingredients.js"
+      ],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "ls site/src/pages/ingredients",
+      "evidence_note": "Sin test dedicado de estas rutas. La cobertura es indirecta (suite site verde y export v1 que valida ingredientes). Conservador: no se marca 100.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-012",
+      "name": "Country browsing (index + detail)",
+      "category": "frontend",
+      "description": "Exploración por país: /countries, /countries/[country] y el agregado /api/countries.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/src/pages/countries/index.astro",
+        "site/src/pages/countries/[country].astro",
+        "site/src/pages/api/countries.ts"
+      ],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "ls site/src/pages/countries && curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/countries",
+      "evidence_note": "/api/countries responde 200 en vivo. Sin test unitario de las páginas de país.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-013",
+      "name": "Bioactive substances catalog & detail",
+      "category": "frontend",
+      "description": "Catálogo /substances, fichas /substances/[...slug] y /api/substances.json (30 substancias).",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/src/pages/substances/index.astro",
+        "site/src/pages/substances/[...slug].astro",
+        "site/src/components/SubstanceCard.svelte",
+        "site/src/pages/api/substances.json.ts"
+      ],
+      "tests": [],
+      "last_tested": "2026-10-15",
+      "verified_by": "curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/substances.json",
+      "evidence_note": "Endpoint live 200 (deploy 2026-10-02). Sin test unitario de las páginas.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-014",
+      "name": "Interactive knowledge graph explorer (/graph)",
+      "category": "frontend",
+      "description": "Explorador interactivo del grafo (sigma + graphology, carga dinámica SSR-safe) en /graph.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/pages/graph.astro",
+        "site/src/components/GraphExplorer.astro",
+        "site/src/components/GosGraph.svelte",
+        "docs/graph-explorer.md"
+      ],
+      "tests": [
+        "site/src/lib/graph-integrity.test.ts",
+        "site/tests/e2e/graph-paper-style.spec.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "Integridad del grafo verde en la suite. La spec E2E de estilo existe pero NO se ejecutó en esta pasada.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-015",
+      "name": "Scientific data page",
+      "category": "frontend",
+      "description": "Página /scientific que agrega el corpus científico (vitaminas, condiciones, dietas, substancias).",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/src/pages/scientific.astro"
+      ],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "ls site/src/pages/scientific.astro && rg -n 'getCollection' site/src/pages/scientific.astro",
+      "evidence_note": "Página presente y alimentada por colecciones reales; sin test propio.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-016",
+      "name": "GOS Agent grounded Q&A (/agent)",
+      "category": "frontend",
+      "description": "Página /agent con agente que solo responde citando fuentes del repo (llm.ts + agentDomain.ts + AUI). El catálogo se sirve como JSON prerenderizado.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/src/pages/agent.astro",
+        "site/src/components/AgentAsk.svelte",
+        "site/src/components/AuiRenderer.svelte",
+        "site/src/lib/llm.ts",
+        "site/src/lib/agentDomain.ts",
+        "site/src/lib/aui.ts"
+      ],
+      "tests": [
+        "site/src/lib/llm.test.ts",
+        "site/src/lib/agentDomain.test.ts",
+        "site/src/lib/aui.test.ts",
+        "site/src/lib/llmBilling.test.ts",
+        "site/tests/e2e/agent-grounding.spec.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "Los 4 tests unitarios pasan en la suite (agentDomain imprime fallback xavier 401 offline, esperado). E2E agent-grounding no ejecutada.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-017",
+      "name": "SEO & AI-first discovery",
+      "category": "frontend",
+      "description": "Sitemap con hreflang, llms.txt/llms-full.txt, JSON-LD por entidad, RSS feed, OG images y descriptions en rango.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/lib/seo.ts",
+        "site/src/lib/meta-description.ts",
+        "site/scripts/generate-sitemap.js",
+        "site/scripts/generate-llms.mjs",
+        "site/scripts/generate-feed.mjs",
+        "site/scripts/generate-og-images.mjs",
+        "site/scripts/verify-sitemap-seo.mjs"
+      ],
+      "tests": [
+        "site/src/lib/meta-description.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "meta-description pasa en la suite. verify-sitemap-seo.mjs es gate de deploy y no se ejecutó aquí (requiere build).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-018",
+      "name": "PWA offline-first",
+      "category": "frontend",
+      "description": "Service worker vía vite-plugin-pwa con NetworkFirst para /api y fallback IndexedDB; banner offline.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/astro.config.mjs",
+        "site/src/components/OfflineBanner.astro",
+        "site/src/lib/offline-seed.ts",
+        "site/src/lib/indexeddb.ts"
+      ],
+      "tests": [
+        "site/src/lib/offline-seed.test.ts",
+        "site/src/lib/pwa-offline.test.ts",
+        "site/src/lib/indexeddb.test.ts",
+        "site/src/lib/indexeddb-schema.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "4 archivos de offline/IndexedDB pasan en la suite. SW desactivado en dev por diseño; no se probó offline en navegador real.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-019",
+      "name": "Recipe Vault (datos privados) + SQL export",
+      "category": "frontend",
+      "description": "Vault 100% local en IndexedDB: crear/leer/borrar/importar/exportar sin red. El export SQL se mergeó en #382 (16f7c944).",
+      "status": "implemented",
+      "progress_pct": 95,
+      "implemented_in": [
+        "site/src/components/RecipeVault.svelte",
+        "site/src/lib/recipe-vault.ts",
+        "site/src/lib/recipe-vault-sql.ts"
+      ],
+      "tests": [
+        "site/src/lib/recipe-vault.test.ts",
+        "site/src/lib/recipe-vault-store.test.ts",
+        "site/src/lib/recipe-vault-sql.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "recipe-vault, recipe-vault-store y recipe-vault-sql pasan en la suite de 281. HEAD del worktree es 16f7c944 (#382).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-020",
+      "name": "Static JSON API generation",
+      "category": "api",
+      "description": "generate-api.js produce /api/index.json, all.json, with/without-metadata.json, by-country/<c>.json y <lang>/<c>.json (473 recetas tras filtrar china/CJK).",
+      "status": "implemented",
+      "progress_pct": 92,
+      "implemented_in": [
+        "site/scripts/generate-api.js"
+      ],
+      "tests": [
+        "site/src/lib/gos-v1.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "En vivo: /api/index.json, /api/all.json y /api/by-country/colombia.json responden 200. gos-v1.test.ts imprime ingredients:552, dishes:495, sha256=1d9f8661…",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-021",
+      "name": "Site API endpoints (health, evidence, entities, agent catalog)",
+      "category": "api",
+      "description": "Endpoints Astro prerenderizados: /api/health, /api/evidence.json (índice DOI), /api/entities/[entity] (6+7 entidades), /api/agent/catalog.json y /api/agent/knowledge.json.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/src/pages/api/health.ts",
+        "site/src/pages/api/evidence.json.ts",
+        "site/src/pages/api/entities/[entity].ts",
+        "site/src/pages/api/agent/catalog.json.ts",
+        "site/src/pages/api/agent/knowledge.json.ts"
+      ],
+      "tests": [
+        "site/src/lib/domain.test.ts",
+        "site/src/lib/gos-v1.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run && curl -s https://gos.swal.network/api/health",
+      "evidence_note": "Suite verde. Live /api/health 200 pero con timestamp 2026-10-02 y d1 'not bound (using memory adapter)': endpoint funcional, deploy viejo.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-022",
+      "name": "Versioned public API v1 contract",
+      "category": "api",
+      "description": "Contrato estático /api/v1 (manifest.json, ingredients.json, dishes.json, ingredients.min.json) generado por scripts/export-v1.mjs y validado contra schemas/v1. Documentado en docs/CONSUMERS.md.",
+      "status": "partial",
+      "progress_pct": 70,
+      "implemented_in": [
+        "scripts/export-v1.mjs",
+        "schemas/v1/",
+        "site/public/api/v1/manifest.json",
+        "docs/CONSUMERS.md"
+      ],
+      "tests": [
+        "site/src/lib/gos-v1.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run && for p in /api/v1/manifest.json /api/v1/ingredients.json /api/v1/dishes.json; do curl -s -o /dev/null -w \"%{http_code} $p\\n\" https://gos.swal.network$p; done",
+      "evidence_note": "Roto en producción: /api/v1/manifest.json, /api/v1/ingredients.json, /api/v1/dishes.json y /api/v1/ responden 404 en vivo. Causa medida: los archivos existen y están trackeados en site/public/api/v1, pero los deploys están disabled_manually desde 2026-10-02, y el commit que publicó el contrato (# b8d50775) es del 2026-10-02 18:34 UTC, posterior al último deploy (00:25 UTC). Además deploy-cloudflare.yml NO invoca scripts/export-v1.mjs (solo `pnpm run generate` lo hace). gos-v1.test.ts pasa localmente.",
+      "launch_blocker": true
+    },
+    {
+      "id": "FEAT-023",
+      "name": "404 route handling for Cloudflare Pages",
+      "category": "frontend",
+      "description": "404.astro explícito: sin él Cloudflare Pages sirve index.html con HTTP 200 para rutas inexistentes.",
+      "status": "implemented",
+      "progress_pct": 95,
+      "implemented_in": [
+        "site/src/pages/404.astro"
+      ],
+      "tests": [
+        "site/tests/e2e/production-coverage.spec.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "curl -sI https://gos.swal.network/ruta-inexistente-xyz-12345",
+      "evidence_note": "Live responde 'HTTP/2 404' (antes del fix habría sido 200). Spec E2E production-coverage existe; no ejecutada en esta pasada.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-024",
+      "name": "Theme & UI kit (@swal/ui antigravity)",
+      "category": "frontend",
+      "description": "Uso del kit @swal/ui (github:iberi22/swal-ui) con ThemeToggle claro/oscuro y tokens antigravity.",
+      "status": "implemented",
+      "progress_pct": 82,
+      "implemented_in": [
+        "site/src/components/ThemeToggle.svelte",
+        "site/package.json",
+        "site/src/lib/gos-icons.ts"
+      ],
+      "tests": [
+        "site/tests/e2e/theme-antigravity-mobile.spec.ts"
+      ],
+      "last_tested": null,
+      "verified_by": "ls site/src/components/ThemeToggle.astro && rg -n '@swal/ui' site/package.json",
+      "evidence_note": "Dependencia y componente presentes; toda la verificación visual es E2E Playwright (theme-antigravity-mobile.spec.ts) que no se ejecutó. Conservador.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-025",
+      "name": "Vector embeddings bulk export",
+      "category": "api",
+      "description": "Snapshot versionado de embeddings en /api/vectors (index.json + shards) regenerado por site/scripts/export-vectors.mjs; modelo Xenova/all-MiniLM-L6-v2, dim 384.",
+      "status": "implemented",
+      "progress_pct": 85,
+      "implemented_in": [
+        "site/scripts/export-vectors.mjs",
+        "README.md",
+        "API_README.md"
+      ],
+      "tests": [],
+      "last_tested": "2026-10-15",
+      "verified_by": "curl -s https://gos.swal.network/api/vectors/index.json",
+      "evidence_note": "Live 200: version 1.0.0, model Xenova/all-MiniLM-L6-v2, dim 384, count.total=1055 (552 ingredientes, 473 dishes, 30 substancias), shards vectors-1/2/3. Generado 2026-10-02 (deploy vigente). El PR #380 (GOS2 shards) sigue DRAFT: ver FEAT-040.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-026",
+      "name": "@swal/gos-client TypeScript client",
+      "category": "package",
+      "description": "Paquete ESM sin dependencias de runtime para consumir el contrato v1 publicado.",
+      "status": "implemented",
+      "progress_pct": 95,
+      "implemented_in": [
+        "packages/gos-client/src/index.ts",
+        "packages/gos-client/src/cache.ts",
+        "packages/gos-client/src/types.ts"
+      ],
+      "tests": [
+        "packages/gos-client/tests/client.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter @swal/gos-client test",
+      "evidence_note": "1 archivo / 17 tests passed (849ms). No publicado en npm todavía (documentado en docs/CONSUMERS.md).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-027",
+      "name": "@swal/health-contract",
+      "category": "package",
+      "description": "Contrato y validadores de datos de salud/ejercicio (dietary profile, meal log, workout, bodyweight) con fixtures válidos e inválidos.",
+      "status": "implemented",
+      "progress_pct": 95,
+      "implemented_in": [
+        "packages/health-contract/src/index.ts",
+        "packages/health-contract/src/types.ts",
+        "packages/health-contract/src/validate.ts",
+        "schemas/ecosystem/v1/"
+      ],
+      "tests": [
+        "packages/health-contract/test/contract.test.ts",
+        "packages/health-contract/test/exercises.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter @swal/health-contract test",
+      "evidence_note": "2 archivos / 139 tests passed (1.75s).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-028",
+      "name": "Python gos package & CLI audit",
+      "category": "data",
+      "description": "Paquete `gos` (pydantic/yaml/click) con CLI `gos audit` que audita cumplimiento del esquema de fichas.",
+      "status": "partial",
+      "progress_pct": 78,
+      "implemented_in": [
+        "gos/cli.py",
+        "gos/io.py",
+        "gos/schemas.py",
+        "pyproject.toml"
+      ],
+      "tests": [
+        "automation/test_graph_edges.py",
+        "scripts/test_gos_compliance.py"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "uv run --frozen python -m gos.cli audit",
+      "evidence_note": "AUDIT_OK: 'Esquema GOS compliant (con deuda de secciones rastreada en Issue #125)'. Los 2 pytest del pyproject NO corren en checkout limpio (test_graph_edges exige site/graph-data.json; test_gos_compliance usa rutas Windows) y CI no ejecuta pytest. El audit corre offline; no hay test automatizado verde en CI para el paquete.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-029",
+      "name": "API gateway worker (gos-api-gateway)",
+      "category": "api",
+      "description": "Worker Cloudflare que actúa de puerta del dataset: CORS, rate limiting por binding + cuota diaria en D1, cache API para rutas estáticas y keys de pago.",
+      "status": "implemented",
+      "progress_pct": 93,
+      "implemented_in": [
+        "worker/src/index.ts",
+        "worker/src/swal-billing.ts",
+        "worker/wrangler.toml",
+        "worker/schema.sql"
+      ],
+      "tests": [
+        "worker/test/auth.test.ts",
+        "worker/test/hardening.test.ts",
+        "worker/test/schema.test.ts",
+        "worker/test/agent-domain.test.ts",
+        "worker/test/agent-policy.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "cd worker && npm install --no-audit --no-fund --ignore-scripts && npm test",
+      "evidence_note": "5 archivos / 93 tests passed (654ms). CI job worker-tests cubre typecheck + tests. No se desplegó el worker en esta pasada.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-030",
+      "name": "Central SWAL billing integration (swal-billing)",
+      "category": "api",
+      "description": "Verificación de keys swal_* contra el billing central SWAL y reporte de uso; degrada a legacy (D1 + cuota free) si no está configurado.",
+      "status": "partial",
+      "progress_pct": 70,
+      "implemented_in": [
+        "worker/src/swal-billing.ts",
+        "worker/src/index.ts",
+        "worker/wrangler.toml"
+      ],
+      "tests": [
+        "worker/test/auth.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "cd worker && npm test",
+      "evidence_note": "Los 93 tests del worker pasan, pero BILLING_URL está COMENTADO en wrangler.toml: en producción rige el camino legacy D1+free, no el billing central. Sin test dedicado de verifySwalKey/reportSwalUsage. Conservador.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-031",
+      "name": "Per-app billing scaffold (siendo retirado por Jules)",
+      "category": "api",
+      "description": "Scaffold de billing/tiers dentro del site (billing.ts con TIERS, workers/ai.ts y /api/agent/pay). Una sesión Jules (GOS S0-8) está retirando este scaffold, así que NO es una feature a conservar.",
+      "status": "in_progress",
+      "progress_pct": 20,
+      "implemented_in": [
+        "site/src/lib/billing.ts",
+        "site/workers/ai.ts",
+        "site/src/pages/api/agent/pay.ts"
+      ],
+      "tests": [
+        "site/src/lib/billing.test.ts",
+        "site/src/lib/llmBilling.test.ts",
+        "site/src/pages/api/agent/pay.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "Los tests de billing pasan HOY (dentro de la suite de 281), es decir el scaffold sigue en main al momento de esta medición. La sesión Jules S0-8 lo está eliminando; se registra como in_progress y no como feature estable. Matiz medido: el símbolo `CreditMeter` NO existe en código (solo en site/docs/PLAN_CONTINUACION_2026-09-01.md); lo presente son TIERS en billing.ts.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-032",
+      "name": "Agent pay endpoint + Turnstile (mock)",
+      "category": "api",
+      "description": "POST /api/agent/pay valida Turnstile + tier socio y devuelve un JWT de acceso al grafo.",
+      "status": "partial",
+      "progress_pct": 55,
+      "implemented_in": [
+        "site/src/pages/api/agent/pay.ts"
+      ],
+      "tests": [
+        "site/src/pages/api/agent/pay.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "pay.test.ts pasa. No apto para producción en su forma actual; está en la ruta de retiro del scaffold de billing (FEAT-031).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-033",
+      "name": "AI ask / infer endpoints",
+      "category": "api",
+      "description": "POST /api/ai/ask (respuesta grounded con fuentes) y /api/ai/infer (reusa el Worker site/workers/ai.ts).",
+      "status": "partial",
+      "progress_pct": 55,
+      "implemented_in": [
+        "site/src/pages/api/ai/ask.ts",
+        "site/src/pages/api/ai/infer.ts",
+        "site/workers/ai.ts"
+      ],
+      "tests": [
+        "site/src/lib/llm.test.ts",
+        "site/src/lib/worker.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "llm.test.ts y worker.test.ts pasan. Limitación medida/documented en agent.astro: con output:'static' POST /api/ai/ask devuelve 405 en producción, por eso el agente resuelve en el navegador con /api/agent/catalog.json. Está en la ruta de retiro del scaffold (FEAT-031).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-034",
+      "name": "Xavier memory sync (heartbeat + cola offline)",
+      "category": "api",
+      "description": "Memoria agentica SWAL: xavier.ts (HTTP :8006 + fallback IndexedDB) y xavierSync.ts (heartbeat 60s + cola offline).",
+      "status": "partial",
+      "progress_pct": 68,
+      "implemented_in": [
+        "site/src/lib/xavier.ts",
+        "site/src/lib/xavierSync.ts",
+        "site/src/lib/agentDomain.ts"
+      ],
+      "tests": [
+        "site/src/lib/agentDomain.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "agentDomain.test.ts pasa; sus stderr muestran '[xavier] 401' y '[xavier] add queued offline': el camino offline/fallback queda verificado, el camino con X in vivo (token) NO. Sin test propio de xavierSync.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-035",
+      "name": "Domain / instance storage abstraction",
+      "category": "api",
+      "description": "Helpers CRUD genéricos con aislamiento por instance_id: adapters Memory (tests) → IndexedDB (PWA) → D1 → SurrealDB/edge-hive (stub).",
+      "status": "partial",
+      "progress_pct": 72,
+      "implemented_in": [
+        "site/src/lib/domain.ts",
+        "site/src/lib/domain.config.ts",
+        "site/src/lib/storage-d1.ts",
+        "site/src/lib/surreal.ts",
+        "site/src/lib/indexeddb.ts"
+      ],
+      "tests": [
+        "site/src/lib/domain.test.ts",
+        "site/src/lib/indexeddb-schema.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "pnpm --filter gos-site exec vitest run",
+      "evidence_note": "domain + indexeddb-schema pasan. surreal.ts es un stub documentado (edge-hive no desplegado) y /api/health live reporta d1 'not bound (using memory adapter)'.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-036",
+      "name": "Content generation pipeline",
+      "category": "devops",
+      "description": "Pipeline de build: copy-content, generate-api, generate-catalog, enrich-ingredients, generate-graph, export-vectors, generate-og-images, generate-llms, generate-feed, generate-sitemap y export-v1.",
+      "status": "implemented",
+      "progress_pct": 88,
+      "implemented_in": [
+        "site/scripts/copy-content.js",
+        "site/scripts/generate-catalog.js",
+        "site/scripts/enrich-ingredients.js",
+        "site/scripts/generate-og-images.mjs",
+        "site/scripts/generate-llms.mjs",
+        "site/scripts/generate-feed.mjs",
+        "site/scripts/generate-sitemap.js",
+        "scripts/export-v1.mjs"
+      ],
+      "tests": [
+        "site/src/lib/gos-v1.test.ts",
+        "site/src/lib/graph-integrity.test.ts"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "python3 docs/corpus-stats.py && pnpm --filter gos-site exec vitest run",
+      "evidence_note": "No se ejecutó el pipeline completo ni `astro build` (regla del task). Los artefactos versionados (site/public/api/v1/*) y los tests que los validan están presentes; corpus-stats confirma las colecciones fuente. La discrepancia clave es que deploy-cloudflare.yml NO llama a export-v1.mjs: ver FEAT-022.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-037",
+      "name": "Automation & content audit scripts",
+      "category": "devops",
+      "description": "Scripts de auditoría en automation/ (graph, recipes, colombian, samples) y scripts/ de contenido (audit_content, audit_missing_ingredients, audit_sensory_data).",
+      "status": "partial",
+      "progress_pct": 60,
+      "implemented_in": [
+        "automation/audit_graph.py",
+        "automation/audit_graph2.py",
+        "automation/audit_recipes.py",
+        "automation/check_colombian.py",
+        "automation/check_samples.py",
+        "scripts/audit_content.py",
+        "scripts/audit_missing_ingredients.py",
+        "scripts/audit_sensory_data.py"
+      ],
+      "tests": [
+        "automation/test_graph_edges.py"
+      ],
+      "last_tested": null,
+      "verified_by": "rg -n 'testpaths' pyproject.toml",
+      "evidence_note": "pyproject declara testpaths con automation/test_graph_edges.py y scripts/test_gos_compliance.py, pero ninguno corre en checkout limpio (el primero exige site/graph-data.json generado; el segundo usa rutas Windows 'E:/...') y CI no ejecuta pytest. Los scripts de auditoría son manuales; sin evidencia de ejecución, status partial.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-038",
+      "name": "Deploy & GitHub automation workflows",
+      "category": "devops",
+      "description": "Workflows de CI, deploy Pages/Worker, auto-merge, triage/guardian, labels y sync de issues.",
+      "status": "partial",
+      "progress_pct": 65,
+      "implemented_in": [
+        ".github/workflows/ci.yml",
+        ".github/workflows/deploy-cloudflare.yml",
+        ".github/workflows/deploy-worker.yml",
+        ".github/workflows/auto-merge-unified.yml",
+        ".github/workflows/triage-agent.yml",
+        ".github/workflows/guardian-agent.yml",
+        ".github/workflows/labels-sync.yml",
+        ".github/workflows/sync-issues.yml",
+        ".github/workflows/auto-assign.yml"
+      ],
+      "tests": [],
+      "last_tested": "2026-10-15",
+      "verified_by": "gh workflow list --all -R iberi22/gastronomic-open-standard-GOS",
+      "evidence_note": "CI está active y verde. PERO 'Deploy GOS to Cloudflare Pages', 'Deploy GOS API Gateway Worker', 'Auto-Merge' y 'Guardian Agent (Auto-Merge)' aparecen como disabled_manually: no hay deploy automático desde 2026-10-02. Esto causa que main (incluido #382) no esté en producción.",
+      "launch_blocker": true
+    },
+    {
+      "id": "FEAT-039",
+      "name": "Translate endpoint contract tests (PR #381, sin mergear)",
+      "category": "api",
+      "description": "PR #381 'test(api): add contract tests for translate entity lookup branches' añade tests de contrato del lookup de entidades del endpoint de traducción.",
+      "status": "in_progress",
+      "progress_pct": 35,
+      "implemented_in": [],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
+      "evidence_note": "PR #381 en estado DRAFT, rama fix-translate-endpoint-tests-16757544537049127876, abierto 2026-10-14. NO está en main: ninguna ruta/test de ese PR existe en este worktree (16f7c944).",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-040",
+      "name": "GOS2 vector export shards (PR #380, sin mergear)",
+      "category": "api",
+      "description": "PR #380 'Refactor and test GOS2 Vector Export Script Shards' refactoriza los shards de export de vectores.",
+      "status": "in_progress",
+      "progress_pct": 25,
+      "implemented_in": [],
+      "tests": [],
+      "last_tested": null,
+      "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
+      "evidence_note": "PR #380 en estado DRAFT, rama ola-fg-1-3205263658967362404, abierto 2026-10-14. NO está en main. El export de vectores vigente (FEAT-025) sí funciona en vivo; este PR es una refactorización pendiente.",
+      "launch_blocker": false
+    },
+    {
+      "id": "FEAT-041",
+      "name": "Public deployment gos.swal.network",
+      "category": "launch",
+      "description": "Sitio canónico publicado en Cloudflare Pages. Responde 200, pero el artefacto servido es del deploy del 2026-10-02: los merges posteriores de main no están en vivo.",
+      "status": "partial",
+      "progress_pct": 70,
+      "implemented_in": [
+        ".github/workflows/deploy-cloudflare.yml"
+      ],
+      "tests": [],
+      "last_tested": "2026-10-15",
+      "verified_by": "curl -sI https://gos.swal.network && curl -s https://gos.swal.network/api/health && gh run list -R iberi22/gastronomic-open-standard-GOS --workflow deploy-cloudflare.yml --limit 3",
+      "evidence_note": "curl -I devuelve 'HTTP/2 200' con server: cloudflare. Pero /api/health devuelve timestamp 2026-10-02T00:26 y 'd1 not bound', y los /api/v1/* dan 404; el último run de 'Deploy GOS to Cloudflare Pages' fue 2026-10-02T00:25:29Z (success) y ahora el workflow está disabled_manually. HEAD local es 16f7c944 (#382), posterior a ese deploy.",
+      "launch_blocker": true
+    },
+    {
+      "id": "FEAT-042",
+      "name": "tester-army / e2e smoke suite",
+      "category": "launch",
+      "description": "Suite de smoke E2E automatizada que una sesión Jules está añadiendo. El repo tiene 6 specs Playwright preexistentes, pero la suite tester-army como tal no existe.",
+      "status": "in_progress",
+      "progress_pct": 30,
+      "implemented_in": [],
+      "tests": [
+        "site/tests/e2e/agent-grounding.spec.ts",
+        "site/tests/e2e/aui-render.spec.ts",
+        "site/tests/e2e/catalog-top20.spec.ts",
+        "site/tests/e2e/graph-paper-style.spec.ts",
+        "site/tests/e2e/production-coverage.spec.ts",
+        "site/tests/e2e/theme-antigravity-mobile.spec.ts"
+      ],
+      "last_tested": null,
+      "verified_by": "ls site/tests/e2e && gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
+      "evidence_note": "Existen 6 specs Playwright en site/tests/e2e, pero la suite tester-army/e2e está en curso y todavía no tiene archivos en main. No se ejecutó Playwright en esta pasada (requiere navegadores).",
+      "launch_blocker": true
+    },
+    {
+      "id": "FEAT-043",
+      "name": "CI on main",
+      "category": "launch",
+      "description": "Pipeline de CI (markdown-lint, astro-check, vitest, worker-tests, verify-dois, verify-evidence, gos-audit, build-graph) activo en main.",
+      "status": "implemented",
+      "progress_pct": 100,
+      "implemented_in": [
+        ".github/workflows/ci.yml"
+      ],
+      "tests": [
+        ".github/workflows/ci.yml"
+      ],
+      "last_tested": "2026-10-15",
+      "verified_by": "gh run list -R iberi22/gastronomic-open-standard-GOS --workflow ci.yml --branch main --limit 5",
+      "evidence_note": "5/5 corridas más recientes en main terminaron success; la más nueva es 38657745764 (2026-10-15T00:03:05Z, 1m15s) sobre el commit #382.",
+      "launch_blocker": false
     }
   ],
   "verification_commands": {
-    "all": "npm run lint && npm run build",
-    "lint": "npm run lint",
-    "build": "npm run build",
-    "recipe-validation": "npm run markdownlint",
-    "ingredient-audit": "python scripts/audit_missing_ingredients.py"
+    "site-unit": "pnpm --filter gos-site exec vitest run",
+    "client": "pnpm --filter @swal/gos-client test",
+    "health-contract": "pnpm --filter @swal/health-contract test",
+    "worker": "cd worker && npm install --no-audit --no-fund --ignore-scripts && npm test",
+    "content-protocol": "pnpm exec markdownlint ./dishes ./tips && node site/scripts/verify_protocol.js",
+    "corpus": "python3 docs/corpus-stats.py",
+    "gos-cli": "uv run --frozen python -m gos.cli audit",
+    "live": "curl -sI https://gos.swal.network",
+    "ci": "gh run list -R iberi22/gastronomic-open-standard-GOS --workflow ci.yml --branch main --limit 5",
+    "deploys": "gh workflow list --all -R iberi22/gastronomic-open-standard-GOS",
+    "json-validate": "python3 -m json.tool .gitcore/features.json > /dev/null && echo JSON_OK"
   }
 }

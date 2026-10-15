@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- docs: reconcile feature ledger with measured state (2026-10-15)
+
 ## [1.0.0] — 2026-09-04
 
 Final stable release of GOS. Promoted from `v1.0.0-rc.1` after re-running the complete `~/.hermes/skills/swal-tag-protocol` checklist. All 9 gates passed.
