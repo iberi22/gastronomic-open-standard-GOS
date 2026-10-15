@@ -275,14 +275,20 @@ function Get-FeatureEvidencePaths {
 function Resolve-ProjectPath {
     param([string]$ProjectRoot, [string]$RelOrAbs)
     if ([string]::IsNullOrWhiteSpace($RelOrAbs)) { return $null }
-    if ([System.IO.Path]::IsPathRooted($RelOrAbs) -and (Test-Path $RelOrAbs)) {
-        return (Resolve-Path $RelOrAbs).Path
+
+    if ([System.IO.Path]::IsPathRooted($RelOrAbs)) {
+        if (Test-Path -LiteralPath $RelOrAbs) { return (Resolve-Path -LiteralPath $RelOrAbs).Path }
+        if (Test-Path $RelOrAbs) { return (Resolve-Path $RelOrAbs).Path }
     }
+
     $joined = Join-Path $ProjectRoot ($RelOrAbs -replace '/', '\')
+    if (Test-Path -LiteralPath $joined) { return (Resolve-Path -LiteralPath $joined).Path }
     if (Test-Path $joined) { return (Resolve-Path $joined).Path }
+
     # try without leading ./
     $clean = $RelOrAbs -replace '^\./', '' -replace '^\.\\', ''
     $joined2 = Join-Path $ProjectRoot ($clean -replace '/', '\')
+    if (Test-Path -LiteralPath $joined2) { return (Resolve-Path -LiteralPath $joined2).Path }
     if (Test-Path $joined2) { return (Resolve-Path $joined2).Path }
 
     # Fuzzy: evidence often listed as tests/foo but lives under apps/*/tests/foo
@@ -333,10 +339,12 @@ function Get-FileExcerpt {
         [int]$EndLine = 0,
         [int]$MaxChars = 12000
     )
-    if (-not (Test-Path $Path)) {
-        return @{ Ok = $false; Error = "missing"; Lines = @(); Text = "" }
+    if (-not (Test-Path -LiteralPath $Path)) {
+        if (-not (Test-Path $Path)) {
+            return @{ Ok = $false; Error = "missing"; Lines = @(); Text = "" }
+        }
     }
-    $all = Get-Content -Path $Path -ErrorAction Stop
+    $all = Get-Content -LiteralPath $Path -ErrorAction Stop
     $total = $all.Count
     if ($total -eq 0) {
         return @{ Ok = $true; TotalLines = 0; Start = 0; End = 0; Lines = @(); Text = "(empty file)" }

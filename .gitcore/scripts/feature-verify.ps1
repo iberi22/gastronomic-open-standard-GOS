@@ -254,42 +254,72 @@ function Invoke-FeatureAnalysis {
             continue
         }
         $fileCount++
-        $meta = Get-Item $abs
+        $meta = Get-Item -LiteralPath $abs -ErrorAction SilentlyContinue
+
+        # Check if directory
+        if (-not (Test-Path -LiteralPath $abs -PathType Leaf)) {
+            $resolved += [pscustomobject]@{
+                Rel        = $rel
+                Abs        = $abs
+                Exists     = $true
+                Kind       = "directory"
+                TotalLines = 0
+                Bytes      = 0
+                IsTest     = $false
+                ExcerptOf  = "directory"
+            }
+            continue
+        }
+
         $isTest = Test-IsTestPath $abs
         if ($isTest) { $testFileCount++ }
 
-        $ex = Get-FileExcerpt -Path $abs -Mode $Mode -Lines $Lines -StartLine $StartLine -EndLine $EndLine -MaxChars $MaxChars
-        if (-not $isTest) { $totalCodeLines += [int]$ex.TotalLines }
-        else { $totalCodeLines += [int]([math]::Min($ex.TotalLines, 100)) }
+        try {
+            $ex = Get-FileExcerpt -Path $abs -Mode $Mode -Lines $Lines -StartLine $StartLine -EndLine $EndLine -MaxChars $MaxChars
+            if (-not $isTest) { $totalCodeLines += [int]$ex.TotalLines }
+            else { $totalCodeLines += [int]([math]::Min($ex.TotalLines, 100)) }
 
-        $resolved += [pscustomobject]@{
-            Rel        = $rel
-            Abs        = $abs
-            Exists     = $true
-            TotalLines = $ex.TotalLines
-            Bytes      = $meta.Length
-            IsTest     = $isTest
-            ExcerptOf  = "{0}-{1}" -f $ex.Start, $ex.End
-        }
-        $excerpts += [pscustomobject]@{
-            Path       = $rel
-            Abs        = $abs
-            Mode       = $Mode
-            Start      = $ex.Start
-            End        = $ex.End
-            TotalLines = $ex.TotalLines
-            IsTest     = $isTest
-            Text       = $ex.Text
-        }
-        if ($kw.Count -gt 0) {
-            $hits = Search-FileKeywordHits -Path $abs -Keywords $kw -Context 2 -MaxHits 5
-            foreach ($h in $hits) {
-                $hitBlocks += [pscustomobject]@{
-                    Path    = $rel
-                    Keyword = $h.Keyword
-                    Line    = $h.Line
-                    Snippet = $h.Snippet
+            $resolved += [pscustomobject]@{
+                Rel        = $rel
+                Abs        = $abs
+                Exists     = $true
+                Kind       = "file"
+                TotalLines = $ex.TotalLines
+                Bytes      = if ($meta) { $meta.Length } else { 0 }
+                IsTest     = $isTest
+                ExcerptOf  = "{0}-{1}" -f $ex.Start, $ex.End
+            }
+            $excerpts += [pscustomobject]@{
+                Path       = $rel
+                Abs        = $abs
+                Mode       = $Mode
+                Start      = $ex.Start
+                End        = $ex.End
+                TotalLines = $ex.TotalLines
+                IsTest     = $isTest
+                Text       = $ex.Text
+            }
+            if ($kw.Count -gt 0) {
+                $hits = Search-FileKeywordHits -Path $abs -Keywords $kw -Context 2 -MaxHits 5
+                foreach ($h in $hits) {
+                    $hitBlocks += [pscustomobject]@{
+                        Path    = $rel
+                        Keyword = $h.Keyword
+                        Line    = $h.Line
+                        Snippet = $h.Snippet
+                    }
                 }
+            }
+        } catch {
+            $resolved += [pscustomobject]@{
+                Rel        = $rel
+                Abs        = $abs
+                Exists     = $true
+                Kind       = "file"
+                TotalLines = 0
+                Bytes      = if ($meta) { $meta.Length } else { 0 }
+                IsTest     = $isTest
+                ExcerptOf  = "error reading file"
             }
         }
     }
