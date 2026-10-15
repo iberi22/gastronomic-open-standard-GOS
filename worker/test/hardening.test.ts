@@ -6,7 +6,7 @@
 // se puede saltar, el cache no toca D1, y las mutaciones no llegan al origen.
 
 import { describe, expect, it, vi } from 'vitest'
-import worker from '../src/index'
+import worker, { __resetQuotaTableCacheForTests } from '../src/index'
 import { createFakeD1, type FakeD1 } from './d1-fake'
 
 const GW = 'https://gos-api-gateway.test'
@@ -220,7 +220,14 @@ describe('limite anonimo: rafaga por IP (binding), sin D1 ni KV', () => {
     vi.unstubAllGlobals()
     expect(st).toEqual([200, 200, 200, 429, 429])
     expect(last?.headers.get('retry-after')).toBe('86400')
-    expect(c.sqls.filter((q) => q.includes('free_quota'))).toHaveLength(5)
+    expect(
+      c.sqls.filter((q) => q.includes('INSERT INTO free_quota')),
+    ).toHaveLength(5)
+    // The quota table DDL runs at most once per isolate (lazy, idempotent).
+    expect(
+      c.sqls.filter((q) => q.includes('CREATE TABLE IF NOT EXISTS free_quota'))
+        .length,
+    ).toBeLessThanOrEqual(1)
     const row = await fake.db
       .prepare('SELECT ip_key, n FROM free_quota')
       .all<{ ip_key: string; n: number }>()
@@ -406,5 +413,32 @@ describe('?key= heredado', () => {
     const url = String(f.mock.calls[0][0])
     expect(url).not.toContain('key=')
     expect(url).toContain('x=1')
+  })
+})
+
+describe('cuota diaria: la tabla se crea desde el binding D1', () => {
+  it('sin tabla free_quota en D1, la primera ruta no estatica la crea y responde 200 (no 503)', async () => {
+    __resetQuotaTableCacheForTests()
+    const fake = createFakeD1({ applySchema: false })
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('{"ok":true}', { status: 200 })),
+    )
+    const env = {
+      ORIGIN_URL: 'https://origin.test',
+      DB: fake.db,
+      RL_FREE_BURST: fakeRL(1000),
+    }
+    const res = await worker.fetch(
+      new Request(`${GW}/api/health`, {
+        headers: { 'cf-connecting-ip': '9.9.9.9' },
+      }),
+      env as never,
+    )
+    expect(res.status).toBe(200)
+    const row = await fake.db
+      .prepare('SELECT n FROM free_quota')
+      .first<{ n: number }>()
+    expect(row?.n).toBe(1)
   })
 })

@@ -49,16 +49,6 @@ jobs:
         working-directory: ./worker
         run: npm test
 
-      - name: 🗄️ Ensure D1 quota table exists (idempotent)
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: 'worker'
-          # The gateway fails closed (503) when the daily quota table is missing.
-          # CREATE TABLE IF NOT EXISTS is safe to run on every deploy.
-          command: d1 execute gos-billing --remote --command "CREATE TABLE IF NOT EXISTS free_quota (ip_key TEXT NOT NULL, day TEXT NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (ip_key, day))"
-
       - name: ⚡ Deploy API Gateway Worker (dry-run primero en PRs)
         uses: cloudflare/wrangler-action@v4
         with:
