@@ -6,8 +6,8 @@
     "created": "2026-01-20",
     "last_verified": "2026-10-15",
     "total_features": 43,
-    "implemented": 28,
-    "partial": 10,
+    "implemented": 25,
+    "partial": 13,
     "planned": 1,
     "in_progress": 4,
     "launch_blockers": 4,
@@ -58,7 +58,7 @@
       ],
       "last_tested": "2026-10-15",
       "verified_by": "python3 docs/corpus-stats.py",
-      "evidence_note": "counts.ingredients=552 y root_mirror.ingredients_md=555. Sin test dedicado para la colección; la cobertura indirecta viene de gos-v1.test.ts (export valida identidad de ingredientes). Nota heredada: 515 tarjetas pending_review. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "evidence_note": "counts.ingredients=552 y root_mirror.ingredients_md=555. Sin test dedicado para la colección; la cobertura indirecta viene de gos-v1.test.ts (export valida identidad de ingredientes). Nota heredada: 515 tarjetas pending_review. Tests: production-coverage.spec.ts (E2E: pide la página índice; no visita fichas individuales; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
       "launch_blocker": false,
       "passes": true
     },
@@ -121,7 +121,7 @@
       "tests": [],
       "last_tested": null,
       "verified_by": "ls .github/workflows | rg -i 'protocol|feedback'",
-      "evidence_note": "ABSENT: no hay protocol-feedback.yml. Workflows presentes: auto-assign, auto-merge-unified, ci, deploy-cloudflare, deploy-worker, guardian-agent, labels-sync, sync-issues, triage-agent, _repo-config, _repo-config. El claim previo 'passes: true' no está respaldado por ningún archivo.",
+      "evidence_note": "Sin test automatizado. ABSENT: no hay protocol-feedback.yml. Workflows presentes: auto-assign, auto-merge-unified, ci, deploy-cloudflare, deploy-worker, guardian-agent, labels-sync, sync-issues, triage-agent, _repo-config, _repo-config. El claim previo 'passes: true' no está respaldado por ningún archivo.",
       "launch_blocker": false,
       "passes": false
     },
@@ -253,7 +253,7 @@
       ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/ingredients",
-      "evidence_note": "Sin test dedicado de estas rutas. La cobertura es indirecta (suite site verde y export v1 que valida ingredientes). Conservador: no se marca 100. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "evidence_note": "Sin test dedicado de estas rutas. La cobertura es indirecta (suite site verde y export v1 que valida ingredientes). Conservador: no se marca 100. Tests: production-coverage.spec.ts (E2E: pide la página índice; no visita fichas individuales; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
       "launch_blocker": false,
       "passes": true
     },
@@ -262,22 +262,21 @@
       "name": "Country browsing (index + detail)",
       "category": "frontend",
       "description": "Exploración por país: /countries, /countries/[country] y el agregado /api/countries.",
-      "status": "implemented",
-      "progress_pct": 85,
+      "status": "partial",
+      "progress_pct": 70,
       "implemented_in": [
         "site/src/pages/countries/index.astro",
         "site/src/pages/countries/[country].astro",
         "site/src/pages/api/countries.ts"
       ],
       "tests": [
-        "site/tests/e2e/production-coverage.spec.ts",
-        "site/src/lib/pwa-offline.test.ts"
+        "site/tests/e2e/production-coverage.spec.ts"
       ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/countries && curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/countries",
-      "evidence_note": "/api/countries responde 200 en vivo. Sin test unitario de las páginas de país. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "evidence_note": "/api/countries responde 200 en vivo y production-coverage.spec.ts:144 lo prueba. Cobertura indirecta: ninguna spec visita /countries ni /countries/[country]; pwa-offline.test.ts solo verifica que estén en el precache.",
       "launch_blocker": false,
-      "passes": true
+      "passes": false
     },
     {
       "id": "FEAT-013",
@@ -298,7 +297,7 @@
       ],
       "last_tested": "2026-10-15",
       "verified_by": "curl -s -o /dev/null -w '%{http_code}' https://gos.swal.network/api/substances.json",
-      "evidence_note": "Endpoint live 200 (deploy 2026-10-02). Sin test unitario de las páginas. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "evidence_note": "Endpoint live 200 (deploy 2026-10-02). Sin test unitario de las páginas. Tests: production-coverage.spec.ts (E2E: pide la página índice; no visita fichas individuales; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
       "launch_blocker": false,
       "passes": true
     },
@@ -341,7 +340,7 @@
       ],
       "last_tested": null,
       "verified_by": "ls site/src/pages/scientific.astro && rg -n 'getCollection' site/src/pages/scientific.astro",
-      "evidence_note": "Página presente y alimentada por colecciones reales; sin test propio. Tests: production-coverage.spec.ts (E2E, cubre la ruta; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
+      "evidence_note": "Página presente y alimentada por colecciones reales; sin test propio. Tests: production-coverage.spec.ts (E2E: pide la página índice; no visita fichas individuales; no se ejecutó en esta pasada) y pwa-offline.test.ts (verde).",
       "launch_blocker": false,
       "passes": true
     },
@@ -516,19 +515,17 @@
       "name": "404 route handling for Cloudflare Pages",
       "category": "frontend",
       "description": "404.astro explícito: sin él Cloudflare Pages sirve index.html con HTTP 200 para rutas inexistentes.",
-      "status": "implemented",
-      "progress_pct": 95,
+      "status": "partial",
+      "progress_pct": 70,
       "implemented_in": [
         "site/src/pages/404.astro"
       ],
-      "tests": [
-        "site/tests/e2e/production-coverage.spec.ts"
-      ],
+      "tests": [],
       "last_tested": "2026-10-15",
       "verified_by": "curl -sI https://gos.swal.network/ruta-inexistente-xyz-12345",
-      "evidence_note": "Live responde 'HTTP/2 404' (antes del fix habría sido 200). Spec E2E production-coverage existe; no ejecutada en esta pasada.",
+      "evidence_note": "Sin test automatizado: ninguna spec pide una ruta inexistente ni espera 404. Verificado solo en vivo: curl a una ruta inexistente devuelve HTTP 404 con la página 404 de GOS.",
       "launch_blocker": false,
-      "passes": true
+      "passes": false
     },
     {
       "id": "FEAT-024",
@@ -882,7 +879,7 @@
       "tests": [],
       "last_tested": null,
       "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
-      "evidence_note": "PR #381 en estado DRAFT, rama fix-translate-endpoint-tests-16757544537049127876, abierto 2026-10-14. NO está en main: ninguna ruta/test de ese PR existe en este worktree (16f7c944).",
+      "evidence_note": "Sin test automatizado. PR #381 en estado DRAFT, rama fix-translate-endpoint-tests-16757544537049127876, abierto 2026-10-14. NO está en main: ninguna ruta/test de ese PR existe en este worktree (16f7c944).",
       "launch_blocker": false,
       "passes": false
     },
@@ -897,7 +894,7 @@
       "tests": [],
       "last_tested": null,
       "verified_by": "gh pr list -R iberi22/gastronomic-open-standard-GOS --state open",
-      "evidence_note": "PR #380 en estado DRAFT, rama ola-fg-1-3205263658967362404, abierto 2026-10-14. NO está en main. El export de vectores vigente (FEAT-025) sí funciona en vivo; este PR es una refactorización pendiente.",
+      "evidence_note": "Sin test automatizado. PR #380 en estado DRAFT, rama ola-fg-1-3205263658967362404, abierto 2026-10-14. NO está en main. El export de vectores vigente (FEAT-025) sí funciona en vivo; este PR es una refactorización pendiente.",
       "launch_blocker": false,
       "passes": false
     },
