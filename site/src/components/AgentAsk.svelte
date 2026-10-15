@@ -13,7 +13,6 @@
 // y cae a la ruta local si falla. La página nunca se rompe por el endpoint.
 
 import { onMount, untrack } from 'svelte'
-import { creditStatus, type SocioTier } from '../lib/billing'
 import {
   askGrounded,
   type CatalogEntry,
@@ -41,59 +40,11 @@ let {
   suggestions = [],
 }: Props = $props()
 
-const TIERS: Array<{ id: SocioTier['id']; label: string; blurb: string }> = [
-  {
-    id: 'free',
-    label: 'Free',
-    blurb: 'Solo lectura del repo. Sin inferencia.',
-  },
-  {
-    id: 'socio',
-    label: 'Socio',
-    blurb: 'El modelo resume las fuentes y cita cada dato.',
-  },
-]
-
 let question = $state(defaultQuestion)
-let tierId = $state<SocioTier['id']>('free')
 let answer = $state<GroundedAnswer | null>(null)
 let busy = $state(false)
 let transport = $state<'local' | 'endpoint' | null>(null)
 let endpointNote = $state('')
-
-function creditKey(t: SocioTier['id']): string {
-  return `credits:gos:${t}`
-}
-
-/**
- * Crédito consumido, leído del MISMO sitio que usa llmComplete()
- * (`credits:{appId}:{tierId}` en localStorage, D1/KV en el Worker).
- *
- * Vive en un $state y no en una función suelta porque el medidor tiene que
- * redibujarse cuando cambia el tier o cuando otro consumo escribe el ledger.
- */
-let usedTokens = $state(0)
-$effect(() => {
-  void tierId
-  try {
-    if (typeof localStorage === 'undefined') {
-      usedTokens = 0
-      return
-    }
-    const raw = localStorage.getItem(creditKey(tierId))
-    const n = raw ? parseInt(raw, 10) : 0
-    usedTokens = Number.isFinite(n) ? n : 0
-  } catch {
-    usedTokens = 0
-  }
-})
-
-const ledger = $derived(creditStatus(usedTokens, tierId))
-const limitPct = $derived(
-  ledger.limit === 0
-    ? 0
-    : Math.min(100, Math.round((ledger.used / ledger.limit) * 100)),
-)
 
 /**
  * Índice de entradas, cargado una vez desde catalogUrl.
@@ -195,7 +146,7 @@ async function ask() {
     const res = await fetch('/api/ai/ask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question: q, tierId, used: usedTokens }),
+      body: JSON.stringify({ question: q }),
     }).catch(() => null)
 
     if (res?.ok) {
@@ -209,10 +160,9 @@ async function ask() {
         // endpoint mal desplegado), la página lo mostraría tal cual. Medido en
         // navegador: así entraban "40 mg por 100 g" y "[substance:cafeina-magica]".
         //
-        // No se revalida llamando a askGrounded con tier 'free' a propósito: esa
-        // rama hace recuperación pura y nunca invoca al LLM inyectado, así que
-        // aceptaría cualquier texto como válido. La comprobación es directa
-        // sobre el texto del endpoint, contra las fuentes que ya tenemos.
+        // No se revalida volviendo a pedir la respuesta al endpoint: la
+        // comprobación es directa sobre el texto que devolvió, contra las
+        // fuentes que ya tenemos en el catálogo.
         const sources = findSources(q)
         const { valid, unknownKeys } = resolveCitations(
           body.data.answer,
@@ -243,16 +193,11 @@ async function ask() {
             `Se responde con el texto literal del repo.`
           : `La respuesta de /api/ai/ask tenía ${bad.length} afirmación(es) sin fuente ` +
             `y no se publica íntegra. Se responde con el texto literal del repo.`
-        // El fallback va en tier 'free' a propósito, aunque el usuario sea
-        // socio: es recuperación pura, verificable por construcción y no gasta
-        // crédito. Pasarlo por 'socio' volvería a meter al LLM, que es justo
-        // lo que acaba de mentir — y en dev su stub no cita nada, así que el
-        // usuario se quedaría sin respuesta en vez de recibir el texto real.
+        // El fallback es recuperación pura del repo: verificable por
+        // construcción, sin pasar por ningún modelo.
         answer = await askGrounded({
           question: q,
           sources,
-          tierId: 'free',
-          used: usedTokens,
         })
         transport = 'local'
         busy = false
@@ -273,8 +218,6 @@ async function ask() {
     answer = await askGrounded({
       question: q,
       sources: findSources(q),
-      tierId,
-      used: usedTokens,
     })
     transport = 'local'
   } catch (e) {
@@ -310,11 +253,6 @@ const STATUS_UI: Record<
     label: 'Sin fuente verificable',
     cls: 'warn',
     hint: 'La respuesta del modelo se descartó: no citaba una entrada real de GOS.',
-  },
-  'credit-exhausted': {
-    label: 'Crédito agotado',
-    cls: 'stop',
-    hint: 'Se puede volver a consultar en modo lectura (free), que no gasta crédito.',
   },
   'no-sources': {
     label: 'Sin coincidencias',
@@ -375,56 +313,6 @@ const EXAMPLES = $derived(
       {busy ? 'Consultando…' : 'Consultar'}
     </button>
   </form>
-
-  <div class="tiers" role="radiogroup" aria-label="Tier de consulta">
-    {#each TIERS as t (t.id)}
-      <label class="tier" class:on={tierId === t.id}>
-        <!--
-          El radio va oculto visualmente pero NO con width/height 0: si lo
-         UCE fuera, Playwright no lo puede marcar y el lector de pantalla lo
-          anuncia sin posición. Se mantiene en 1px y el label es el control
-          pulsable; el foco visible se pinta en el label con :focus-within.
-        -->
-        <input
-          class="tier-radio"
-          type="radio"
-          name="gos-tier"
-          value={t.id}
-          checked={tierId === t.id}
-          onchange={() => {
-            tierId = t.id
-            answer = null
-          }}
-        />
-        <span class="tier-name">{t.label}</span>
-        <span class="tier-blurb">{t.blurb}</span>
-      </label>
-    {/each}
-  </div>
-
-  {#if tierId !== 'free'}
-    <div class="meter" data-testid="credit-meter">
-      <div class="meter-row">
-        <span class="meter-label">Crédito de inferencia</span>
-        <span class="meter-value"
-          >{ledger.used} / {ledger.limit} tokens · quedan {ledger.remaining}</span
-        >
-      </div>
-      <div
-        class="bar"
-        role="progressbar"
-        aria-valuenow={ledger.used}
-        aria-valuemin="0"
-        aria-valuemax={ledger.limit}
-      >
-        <span class="fill" style={`width: ${limitPct}%`}></span>
-      </div>
-      <p class="meter-note">
-        El ledger se lee del mismo sitio que usa <code>llmComplete()</code>
-        (localStorage en el navegador, D1/KV en el Worker).
-      </p>
-    </div>
-  {/if}
 
   <ul class="examples">
     {#each EXAMPLES as ex (ex)}
@@ -542,59 +430,6 @@ const EXAMPLES = $derived(
     cursor: pointer;
   }
   .btn:disabled { opacity: 0.55; cursor: not-allowed; }
-  .tiers { display: flex; gap: 8px; flex-wrap: wrap; }
-  .tier {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 8px 12px;
-    border: 1px solid var(--swal-border);
-    border-radius: 10px;
-    cursor: pointer;
-    background: var(--swal-bg);
-  }
-  .tier.on {
-    border-color: var(--swal-accent);
-    background: var(--swal-accent-muted, var(--swal-surface));
-  }
-  /* 1px, no 0: mantiene el input enfocable y marcable por pruebas. */
-  .tier-radio {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    margin: 0;
-  }
-  .tier:has(.tier-radio:focus-visible) {
-    outline: 2px solid var(--swal-accent);
-    outline-offset: 2px;
-  }
-  .tier-name { font-size: 13px; font-weight: 700; color: var(--swal-text); }
-  /* 12px en secondary (7.55:1), nunca muted (3.96:1 — falla AA). */
-  .tier-blurb { font-size: 12px; color: var(--swal-text-secondary); }
-  .meter {
-    padding: 10px 12px;
-    border: 1px solid var(--swal-border);
-    border-radius: 10px;
-    background: var(--swal-bg);
-  }
-  .meter-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    font-size: 12px;
-    color: var(--swal-text-secondary);
-  }
-  .meter-value { font-family: var(--swal-font-mono, ui-monospace); }
-  .bar {
-    margin-top: 6px;
-    height: 6px;
-    border-radius: 999px;
-    background: var(--swal-border);
-    overflow: hidden;
-  }
-  .fill { display: block; height: 100%; background: var(--swal-accent); }
-  .meter-note { margin: 6px 0 0; font-size: 12px; color: var(--swal-text-secondary); }
   .examples { display: flex; gap: 6px; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
   .chip {
     padding: 5px 10px;
@@ -635,7 +470,6 @@ const EXAMPLES = $derived(
   }
   .pill[data-cls='ok'] { color: var(--swal-accent); border-color: var(--swal-accent); }
   .pill[data-cls='warn'] { color: var(--swal-warning); border-color: var(--swal-warning); }
-  .pill[data-cls='stop'] { color: var(--swal-danger); border-color: var(--swal-danger); }
   .model { font-size: 12px; color: var(--swal-text-secondary); font-family: var(--swal-font-mono, ui-monospace); }
   .hint { margin: 0; font-size: 12px; color: var(--swal-text-secondary); }
   .text {

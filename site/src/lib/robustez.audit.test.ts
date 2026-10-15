@@ -1,15 +1,17 @@
 // Tests de AUDITORIA (no forman parte del contrato de la ola anterior).
-// Objetivo: medir con evidencia, no por lectura, tres sospechas concretas
+// Objetivo: medir con evidencia, no por lectura, dos sospechas concretas
 // del informe docs/audit/ROBUSTEZ-AGENTE-PWA.md:
 //
-//  A) /api/ai/ask toma `used` y `tierId` del body del cliente -> se puede
-//     saltar el corte de cuota y declararse un tier superior al que
-//     corresponde.
 //  B) offline-seed.ts: isSeeded() consulta el store 'recipe', que NO existe
 //     en STORES ('recipes'), y seedFromStaticBuild() no tiene ningún
 //     llamador en producción.
 //  C) indexeddb.ts: el bucle de reparación no asigna onblocked, y openDB()
 //     devuelve una conexión que nadie cierra.
+//
+// El hallazgo A (el peaje de cuota falseable desde el body) se resolvió el
+// 2026-10-15 eliminando la facturación por app: ask.ts ya no acepta cuota del
+// cliente y el módulo de facturación se borró. Sus tests se retiraron con el
+// código.
 //
 // Estos tests NO se tocan en la revisión adversarial: son la línea base del
 // hallazgo. Si uno falla, el hallazgo es más fuerte, no más débil.
@@ -17,78 +19,6 @@
 import { join } from 'node:path'
 import { IDBFactory } from 'fake-indexeddb'
 import { describe, expect, it } from 'vitest'
-import { canAffordInference, creditStatus } from './billing'
-import { askGrounded, type GosSource } from './llm'
-
-const ALICINA: GosSource = {
-  kind: 'substance',
-  id: 'alicina',
-  label: 'Alicina',
-  snippet: 'Picante umami, se degrada con calor',
-}
-
-// ---------------------------------------------------------------------------
-// A) El peaje por tier: used y tierId viajan en el body del cliente.
-// ---------------------------------------------------------------------------
-
-/**
- * Réplica exacta de la línea 304 de site/src/pages/api/ai/ask.ts:
- *   const used = Number.isFinite(Number(body.used)) ? Number(body.used) : 0
- * Si esto no filtra, el endpoint acepta cualquier ledger que el cliente
- * mande, incluidos negativos.
- */
-function usedFromClientBody(body: { used?: unknown }): number {
-  return Number.isFinite(Number(body.used)) ? Number(body.used) : 0
-}
-
-describe('AUDIT A · el peaje por tier se puede falsear desde el body', () => {
-  it('acepta un `used` negativo (no hay clamp a >= 0)', () => {
-    const used = usedFromClientBody({ used: -1_000_000_000 })
-    expect(used).toBe(-1_000_000_000)
-    // Con crédito negativo, el "restante" es ilimitado:
-    expect(creditStatus(used, 'socio').remaining).toBe(1_000_050_000)
-    expect(canAffordInference(10_000_000, used, 'socio')).toBe(true)
-  })
-
-  it('acepta un `used` de NaN-ish que cae a 0 y `used` como string numérico', () => {
-    expect(usedFromClientBody({ used: 'abc' })).toBe(0)
-    expect(usedFromClientBody({ used: '49999' })).toBe(49999)
-  })
-
-  it('un cliente free puede declararse socio-managed y obtener el tier máximo', async () => {
-    // normalizeTier() en ask.ts: `s in TIERS ? s : 'free'` — no hay sesión,
-    // no hay cookie, no hay nada que ate el tier a una identidad. Lo único
-    // que decide el tier es el string que llegue en el body.
-    const free = await askGrounded({
-      question: 'alicia',
-      sources: [ALICINA],
-      tierId: 'free',
-    })
-    let llmWasCalled = false
-    const escalated = await askGrounded({
-      question: 'alicia',
-      sources: [ALICINA],
-      tierId: 'socio-managed',
-      llm: async () => {
-        llmWasCalled = true
-        return {
-          text: 'La alicina se degrada con calor. [substance:alicina]',
-          model: 'stub',
-          via: 'local',
-        }
-      },
-    })
-    // free nunca llega a la rama que rellena `credit` (retorna antes):
-    expect(free.status).toBe('answered')
-    expect(free.model).toBe('retrieval-free') // NO se llamó al LLM
-    // El MISMO cliente, cambiando solo el string del body, sí llega a la
-    // inferencia y consume el ledger del tier más caro:
-    expect(llmWasCalled).toBe(true)
-    expect(escalated.status).toBe('answered')
-    expect(escalated.credit?.limit).toBe(50_000)
-    expect(escalated.credit?.used).toBe(0)
-  })
-})
 
 // ---------------------------------------------------------------------------
 // B) offline-seed: store equivocado en isSeeded() + módulo muerto.

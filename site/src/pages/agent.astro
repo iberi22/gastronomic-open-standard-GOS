@@ -106,22 +106,21 @@ const desc =
           (las mismas que alimentan las fichas y el grafo).
         </li>
         <li>
-          En <strong>free</strong> no hay inferencia: se devuelve el texto
-          literal de las coincidencias, con su slug.
+          El agente no infiere: devuelve el texto literal de las coincidencias
+          del repo, cada una con su slug.
         </li>
         <li>
-          En <strong>socio</strong> el modelo resume esas mismas entradas, y
-          cada cita se valida contra la lista. Una cita a un slug que no
-          existe se descarta.
+          Cada cita se valida contra la lista de entradas reales. Una cita a un
+          slug que no existe se descarta.
         </li>
         <li>
-          Si la respuesta no tiene ninguna cita válida —o el modelo declara
-          <code>NO_LO_SE</code>— no se publica: se dice que no hay fuente.
+          Si la respuesta no tiene ninguna cita válida, no se publica: se dice
+          que no hay fuente.
         </li>
       </ol>
       <p class="foot">
         Endpoint para consumidores: <code>POST /api/ai/ask</code> con
-        <code>{'{ question, tierId }'}</code>. Requiere runtime de servidor
+        <code>{'{ question }'}</code>. Requiere runtime de servidor
         (adapter SSR o Pages Function); en el deploy estático actual devuelve
         <code>405</code> y la página resuelve en el navegador.
       </p>

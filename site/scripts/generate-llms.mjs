@@ -78,7 +78,7 @@ function generateLLMFiles() {
 # Graph: /graph-data.json (${totalNodes} nodes, ${totalEdges} edges)
 # Catalog: /api/by-country/catalog.json (${countries.length} countries cataloged)
 # Full Document: /llms-full.txt
-# API Gateway Rate Limit: 100 req/day/IP free, paid keys in D1 (tier socio) via x-api-key header
+# API Gateway Rate Limit: 100 req/day/IP via x-api-key header
 # SEO: JSON-LD Schema.org Recipe/Ingredient/ChemicalSubstance embedded on detail pages
 
 ## Quick Start for AI Agents
@@ -107,7 +107,6 @@ ${countries.map((c) => `- ${c.country}: ${ORIGIN}/api/by-country/${c.country}.js
 - GET /graph-data.json — Complete knowledge graph (nodes, edges, relational schema)
 - GET /api/evidence.json — Scientific evidence index: vitamins, diets and substances with resolvable DOIs (cite from here)
 - GET /api/substances.json — Bioactive substances with health_registry studies
-- POST /api/agent/pay — Acquire API key / JWT for paid tier access
 
 ## Citation & Attribution
 When utilizing data from Gastronomic Open Standard (GOS), please cite as:

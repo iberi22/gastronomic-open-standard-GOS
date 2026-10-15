@@ -5,17 +5,8 @@ compatibility_flags = ["nodejs_compat"]
 # GitHub Pages base: /gastronomic-open-standard-GOS -> keep for Cloudflare Pages as well
 # When deploying to Cloudflare Pages, set base to "/" in astro.config if needed
 
-[[d1_databases]]
-binding = "SWAL_D1"
-database_name = "gos-billing"
-database_id = "1c920534-54fc-449e-b944-180bf96ffe37"
-
-[[kv_namespaces]]
-binding = "SWAL_KV"
-id = "9aef690dde244d51982f2947dba2d7aa"
-
-[ai]
-binding = "AI"
+# Billing/AI-credit bindings (SWAL_D1 "gos-billing", SWAL_KV, [ai]) were removed
+# on 2026-10-15: membership is global and the AI quota belongs to the platform.
 
 [vars]
 NODE_VERSION = "20"

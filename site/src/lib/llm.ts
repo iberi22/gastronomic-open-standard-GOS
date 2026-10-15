@@ -1,9 +1,8 @@
 // llm.ts — capa agentica LLM SWAL
 // Reusa ProviderRouter + Clavis + xavier-gpud de cores/swal-agent-runner/src/services/llm/
-// El modelo de negocio no habla directo a OpenAI — pasa por este router con memoria RAG + billing socio.
+// Router local con memoria RAG. La cuota de inferencia la gestiona la plataforma
+// SWAL: esta app no lleva tiers, creditos ni peaje propio (decision 2026-10-15).
 
-import { canAffordInference, creditStatus, type SocioTier } from './billing'
-import { domainConfig } from './domain.config'
 import { xavierSearch } from './xavier'
 
 export type LLMRequest = {
@@ -11,8 +10,6 @@ export type LLMRequest = {
   system?: string
   model?: string
   useMemory?: boolean
-  tierId?: 'free' | 'socio' | 'socio-managed'
-  estimatedTokens?: number
 }
 export type LLMResponse = {
   text: string
@@ -22,53 +19,8 @@ export type LLMResponse = {
 }
 
 export async function llmComplete(req: LLMRequest): Promise<LLMResponse> {
-  // 1. Billing: verifica credito socio antes de inferencia (100% agentico no gasta si no puede pagar)
-  const tierId = (req.tierId ??
-    domainConfig.billing?.tier ??
-    'socio') as NonNullable<LLMRequest['tierId']>
-  const estimated = req.estimatedTokens ?? Math.ceil(req.prompt.length / 4)
-  // Lee used desde localStorage (mock D1) — en prod D1/KV via Worker
-  let used = 0
-  try {
-    if (typeof localStorage !== 'undefined') {
-      const raw = localStorage.getItem(
-        `credits:${domainConfig.appId}:${tierId}`,
-      )
-      used = raw ? parseInt(raw, 10) : 0
-    }
-  } catch {}
-  if (!canAffordInference(estimated, used, tierId)) {
-    return {
-      text: `[billing] credito socio agotado (${used}/${creditStatus(used, tierId).limit}). Upgrade a socio o espera reset.`,
-      model: 'billing-blocked',
-      via: 'local',
-    }
-  }
-
-  // 2. Si hay tier socio y estamos en browser con Cloudflare, intenta Workers AI via cfAiInfer (20% handling)
-  if (tierId !== 'free' && typeof window !== 'undefined') {
-    try {
-      const { cfAiInfer } = await import('./billing')
-      const cf = await cfAiInfer(req.prompt, {
-        tierId,
-        mode: domainConfig.billing?.mode ?? 'swal-managed',
-        estimatedTokens: estimated,
-      })
-      if (cf) {
-        // actualiza used local para proximo canAfford
-        try {
-          if (typeof localStorage !== 'undefined')
-            localStorage.setItem(
-              `credits:${domainConfig.appId}:${tierId}`,
-              String(used + cf.tokensUsed),
-            )
-        } catch {}
-        return { text: cf.text, model: 'cf-workers-ai', via: 'cf' }
-      }
-    } catch {}
-  }
-
-  // 3. Fallback local: RAG + stub (xavier-gpud / opencode en prod)
+  // RAG opcional + stub local (xavier-gpud / opencode en prod). Sin peaje de
+  // creditos: la cuota de IA la aplica la plataforma SWAL, no esta app.
   let context = ''
   if (req.useMemory) {
     const mem = await xavierSearch(req.prompt, 3)
@@ -131,15 +83,11 @@ export interface GosSource {
   fields?: Record<string, string>
 }
 
-export type GroundedStatus =
-  | 'answered'
-  | 'ungrounded'
-  | 'credit-exhausted'
-  | 'no-sources'
+export type GroundedStatus = 'answered' | 'ungrounded' | 'no-sources'
 
 export interface GroundedAnswer {
   status: GroundedStatus
-  /** Texto publicable. En 'ungrounded' y 'credit-exhausted' es la explicacion. */
+  /** Texto publicable. En 'ungrounded' es la explicacion. */
   answer: string
   /** Citas validas que respaldan la respuesta (subconjunto de `sources`). */
   citations: GosSource[]
@@ -151,7 +99,6 @@ export interface GroundedAnswer {
   reason?: string
   /** Sentencias del modelo que afirmaban algo sin cita. Solo si hubo rechazo. */
   unsupported?: string[]
-  credit?: { used: number; limit: number; remaining: number }
 }
 
 /** Marcador de cita que el modelo debe emitir: [recipe:colombian/xxx]. */
@@ -432,30 +379,20 @@ function retrievalOnlyAnswer(
 export interface GroundedAskOptions {
   question: string
   sources: GosSource[]
-  /** 'free' nunca llama al LLM: responde con el texto literal del repo. */
-  tierId?: SocioTier['id']
-  model?: string
-  /** Inyectable para tests. Por defecto la ruta real de este archivo. */
-  llm?: typeof llmComplete
-  used?: number
   maxSources?: number
 }
 
 /**
  * Punto de entrada unico de la consulta con grounding.
  *
- * - tier free: sin inferencia. Devuelve el texto literal de las fuentes.
- * - tier socio: llama a llmComplete y valida cada cita contra las fuentes.
- * - credito agotado: devuelve status 'credit-exhausted' con el ledger, para que
- *   la pagina lo explique en vez de romperse.
+ * Devuelve el texto literal del repo, citado al 100% (recuperacion pura, sin
+ * inferencia ni gasto). La cuota de IA la aplica la plataforma SWAL, no esta app.
  */
 export async function askGrounded(
   opts: GroundedAskOptions,
 ): Promise<GroundedAnswer> {
   const question = (opts.question ?? '').trim()
-  const tierId = opts.tierId ?? 'free'
   const sources = (opts.sources ?? []).slice(0, opts.maxSources ?? 6)
-  const used = opts.used ?? 0
 
   if (!question) {
     return {
@@ -467,120 +404,7 @@ export async function askGrounded(
       reason: 'empty-question',
     }
   }
-  if (!sources.length) return retrievalOnlyAnswer(question, sources)
-
-  // Tier free: cero inferencia, cero gasto, respuesta citada al 100%.
-  if (tierId === 'free') return retrievalOnlyAnswer(question, sources)
-
-  const ledger = creditStatus(used, tierId)
-  const run = opts.llm ?? llmComplete
-  const res = await run({
-    prompt: buildGroundedPrompt(question, sources),
-    system: GROUNDED_SYSTEM,
-    model: opts.model,
-    tierId,
-    estimatedTokens: Math.ceil(
-      (question.length +
-        sources.reduce((n, s) => n + (s.snippet?.length ?? 0), 0)) /
-        4,
-    ),
-  })
-
-  if (res.model === 'billing-blocked') {
-    return {
-      status: 'credit-exhausted',
-      answer:
-        'Tu crédito de inferencia está agotado, así que el agente no ha generado nada. ' +
-        `Llevas ${ledger.used} de ${ledger.limit} tokens. La consulta se puede volver a hacer en modo lectura (tier free), que devuelve el texto literal del repo sin gastar crédito.`,
-      citations: [],
-      consulted: sources,
-      model: res.model,
-      via: res.via,
-      reason: 'billing-blocked',
-      credit: ledger,
-    }
-  }
-
-  const text = (res.text ?? '').trim()
-  // El propio modelo puede declarar que no sabe: es una respuesta valida, no
-  // un fallo. Se devuelve con las fuentes para que el usuario abra la ficha.
-  if (/^NO_LO_SE\b/.test(text) || text.includes('NO_LO_SE')) {
-    return {
-      status: 'ungrounded',
-      answer:
-        'El agente no encontró esa respuesta en GOS y no la va a inventar. ' +
-        `Leí ${sources.length} ${sources.length === 1 ? 'entrada' : 'entradas'} sin datos que respondieran a la pregunta.`,
-      citations: [],
-      consulted: sources,
-      model: res.model,
-      via: res.via,
-      reason: 'model-declined',
-    }
-  }
-
-  const { valid, unknownKeys } = resolveCitations(text, sources)
-  const validKeys = valid.map((s) => sourceKey(s.kind, s.id))
-  const unsupported = unsupportedClaims(text, validKeys)
-
-  // Sin una sola cita valida no hay nada publicable: el modelo escribio texto
-  // sin respaldo y GOS no permite afirmaciones sin fuente.
-  if (!valid.length) {
-    return {
-      status: 'ungrounded',
-      answer:
-        'El agente respondió sin citar ninguna fuente de GOS, así que su respuesta no se publica. ' +
-        'Un dato de GOS solo vale si apunta a una receta, ingrediente o sustancia real del repo.',
-      citations: [],
-      consulted: sources,
-      model: res.model,
-      via: res.via,
-      reason: 'no-valid-citation',
-      unsupported: unsupported.slice(0, 5),
-    }
-  }
-  // Con citas pero con afirmaciones sueltas sin respaldo, se recorta el texto
-  // a las frases que si estan citadas en vez de dejar pasar el resto.
-  if (unsupported.length) {
-    const keep = text
-      .split(/(?<=[.!?;])\s+|\n+/)
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .filter(
-        (s) =>
-          parseCitations(s).some((c) =>
-            validKeys.includes(sourceKey(c.kind, c.id)),
-          ) ||
-          (!/\d/.test(s) && !HEALTH_CLAIM_RE.test(s)),
-      )
-    return {
-      status: 'answered',
-      answer: [
-        ...keep,
-        '',
-        `_${unsupported.length} afirmación(es) del modelo sin cita se descartaron: GOS solo publica lo que apunta a una fuente real._`,
-      ].join('\n'),
-      citations: valid,
-      consulted: sources,
-      model: res.model,
-      via: res.via,
-      reason: 'trimmed-unsupported-claims',
-      unsupported: unsupported.slice(0, 5),
-      credit: ledger,
-    }
-  }
-
-  return {
-    status: 'answered',
-    answer: text,
-    citations: valid,
-    consulted: sources,
-    model: res.model,
-    via: res.via,
-    credit: ledger,
-    ...(unknownKeys.length
-      ? { reason: `ignored-citations:${unknownKeys.join(',')}` }
-      : {}),
-  }
+  return retrievalOnlyAnswer(question, sources)
 }
 
 export type GroundedAskResponse =
@@ -591,7 +415,6 @@ export async function fetchGroundedAnswer(
   question: string,
   opts: {
     endpoint?: string
-    tierId?: SocioTier['id']
     signal?: AbortSignal
     fetchImpl?: typeof fetch
   } = {},
@@ -601,7 +424,7 @@ export async function fetchGroundedAnswer(
     const res = await doFetch(opts.endpoint ?? '/api/ai/ask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question, tierId: opts.tierId ?? 'free' }),
+      body: JSON.stringify({ question }),
       signal: opts.signal,
     })
     const body = (await res.json().catch(() => null)) as {
