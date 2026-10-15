@@ -1,10 +1,25 @@
 # Third-party notices
 
-The repository root (recipes, ingredients, schemas, site, worker) is licensed under **Apache-2.0** (see
-`LICENSE` and `NOTICE`). The `packages/health-contract` package is the exception: it contains code ported
-from [`openGym`](https://github.com/DuarteSantos8/openGym), which is **AGPL-3.0-or-later**, so that package
-is licensed **AGPL-3.0-or-later** (see `packages/health-contract/LICENSE`). Code derived from AGPL material
-cannot be relicensed as Apache-2.0.
+Since 2026-10-15 the repository root and every package in it (recipes, ingredients, schemas,
+exercises, site, worker, `packages/gos-client`, `packages/health-contract`) are licensed under
+**AGPL-3.0-or-later** (see `LICENSE` and `NOTICE`). `packages/health-contract` contains code ported
+from [`openGym`](https://github.com/DuarteSantos8/openGym), which was already
+**AGPL-3.0-or-later** — the same licence, now repo-wide, so there is no longer a package that is the
+exception. Third-party content below keeps its own licence exactly as stated; those notices are not
+relicensed by the change above.
+
+## Licence lineage
+
+Each step is verifiable in git history:
+
+| Date | Licence | Evidence |
+|------|---------|----------|
+| 2020-03-16 | Unlicense (public domain) | `5cd6be07` — this repository started from [HowToCook](https://github.com/Anduin2017/HowToCook), released into the public domain under the Unlicense |
+| 2025-07-08 | MIT | `37110486` |
+| 2025-12-11 | CC BY-NC 4.0 | `716cd84c` |
+| 2026-08-24 | AGPL-3.0 | `eefae003` |
+| 2026-10-02 | Apache-2.0 | `ac33f89b` |
+| 2026-10-15 | **AGPL-3.0-or-later** | owner decision (Belal): GOS stops selling access and becomes the open information repository of the SWAL ecosystem |
 
 ## Exercise catalogue metadata and instruction text
 

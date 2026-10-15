@@ -17,6 +17,13 @@ Antes de contribuir, te recomendamos leer el [Código de Conducta](./CODE_OF_CON
 
 ¡Gracias por ayudar a mejorar este recetario colectivo!
 
+## Licencia
+
+Al enviar una contribución aceptas que tu aporte (código, datos y
+documentación) se publique bajo **AGPL-3.0-or-later**, la misma licencia del
+repositorio desde el 2026-10-15 (ver [LICENSE](./LICENSE)). El contenido de
+terceros que incluyas debe traer su propia licencia y atribución.
+
 ## Tests
 
 Para el desarrollo en Python (`gos/`), ejecuta la suite de tests usando `uv`:
