@@ -91,4 +91,4 @@ Third-party content keeps its own licence and is listed with its full notice in
 `hasaneyldrm/exercises-dataset` (MIT) and artwork from `bryllim/workout-guide`
 (CC BY-SA 4.0). [NOTICE](./NOTICE) records the licence lineage: the project
 started from HowToCook (Unlicense / public domain), later MIT (2025-07),
-CC BY-NC 4.0 (2025-12), Apache-2.0, and now AGPL-3.0-or-later.
+CC BY-NC 4.0 (2025-12), AGPL-3.0 (2026-08), Apache-2.0 (2026-10-02), and now AGPL-3.0-or-later.

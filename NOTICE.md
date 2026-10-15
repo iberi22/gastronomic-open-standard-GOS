@@ -15,7 +15,7 @@ Each step is verifiable in git history:
 | Date | Licence | Evidence |
 |------|---------|----------|
 | 2020-03-16 | Unlicense (public domain) | `5cd6be07` — this repository started from [HowToCook](https://github.com/Anduin2017/HowToCook), released into the public domain under the Unlicense |
-| 2025-07-10 | MIT | `525ae36c` |
+| 2025-07-08 | MIT | `37110486` |
 | 2025-12-11 | CC BY-NC 4.0 | `716cd84c` |
 | 2026-08-24 | AGPL-3.0 | `eefae003` |
 | 2026-10-02 | Apache-2.0 | `ac33f89b` |

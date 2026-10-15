@@ -68,4 +68,4 @@ completo en [NOTICE.md](./NOTICE.md): los metadatos del catálogo de ejercicios 
 `hasaneyldrm/exercises-dataset` (MIT) y las ilustraciones de
 `bryllim/workout-guide` (CC BY-SA 4.0). [NOTICE](./NOTICE) registra el linaje de
 licencias: el proyecto nació de HowToCook (Unlicense / dominio público), luego
-MIT (2025-07), CC BY-NC 4.0 (2025-12), Apache-2.0 y ahora AGPL-3.0-or-later.
+MIT (2025-07), CC BY-NC 4.0 (2025-12), AGPL-3.0 (2026-08), Apache-2.0 (2026-10-02) y ahora AGPL-3.0-or-later.
