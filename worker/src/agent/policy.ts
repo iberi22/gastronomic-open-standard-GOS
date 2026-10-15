@@ -3,13 +3,15 @@
  *
  * # The rules, and why each exists
  *
- * 1. **Authentication is injected, never read from a global.** The gateway resolves
- *    the principal from `x-api-key` against the key store and passes it in. A tool
- *    that read the key itself would be a second, divergent auth path — and the
- *    gateway's own history shows why that is dangerous: `src/index.ts` L166-178
- *    documents a fail-open catch that granted access to any key whose body merely
- *    contained the word "socio". One path, fail-closed, is the property worth
- *    keeping.
+ * 1. **Identity is injected, never read from a global.** The embedding app passes
+ *    the principal in. This pilot authenticates nothing itself: the GOS gateway is
+ *    keyless and open (since 2026-10-15 it reads no credential at all), so a
+ *    principal here carries budget and workspace scope only.
+ *
+ *    Reading an ambient principal would create a second, divergent path — and the
+ *    gateway's own history shows why that is dangerous: a fail-open catch once
+ *    granted privileged access to any key whose body merely contained the word
+ *    "socio". One path, fail-closed, is the property worth keeping.
  *
  * 2. **Workspace isolation is checked on every call, not once per session.** Cheap,
  *    and it survives a bug that hands a tool the wrong principal.
@@ -69,7 +71,7 @@ export function requirePrincipal(
   if (!principal.id) {
     throw new AgentPolicyError(
       'unauthenticated',
-      'the principal has no id, which means the key store did not resolve it',
+      'the principal has no id: the embedding app did not identify the caller',
     )
   }
   return principal

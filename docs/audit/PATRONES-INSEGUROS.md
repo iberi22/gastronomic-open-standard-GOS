@@ -629,10 +629,16 @@ $ grep -c 'worker' .github/workflows/ci.yml
 ```
 
 `worker/` no aparece en ningún job. Los tests que protegen el fix de C-01
-(`worker/test/auth.test.ts`, `test/schema.test.ts`, `test/mutations.py`) solo corren si alguien se
+(`worker/test/*.test.ts`) solo corren si alguien se
 acuerda localmente. `worker/package-lock.json` existe y es válido: añadir el job es trivial.
 Severidad alta porque el precedente es directo: C-01 entró en `main` y *hubo que escribir un
 informe de vulnerabilidad después*, precisamente porque nada lo verificó automáticamente.
+
+> **[2026-10-15]** Resuelto: `ci.yml` y `deploy-worker.yml` ya corren `worker/`
+> (typecheck + vitest). Ademas GOS dejo de vender acceso, asi que la suite de auth
+> (`auth.test.ts`, `mutations.py`, `mutation-check.sh`) fue eliminada junto con el
+> codigo que protegia; hoy el job blinda el limite anonimo y la garantia de solo
+> lectura del gateway abierto.
 
 ### 🟡 F-05 — MEDIA · `pay.ts`: tier desconocido cae a `socio`, JWT sin firmar, captcha por longitud
 **Clasificación: SOSPECHOSO / 405 medido.**

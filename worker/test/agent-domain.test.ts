@@ -12,7 +12,6 @@ import {
 function principal(over: Partial<Principal> = {}): Principal {
   return {
     id: 'key-abc',
-    tier: 'socio',
     workspace: 'priv-a',
     usedToday: 3,
     dailyLimit: 100,
@@ -23,7 +22,6 @@ function principal(over: Partial<Principal> = {}): Principal {
 
 const facts: GatewayFacts = {
   freeDailyLimit: 100,
-  keyStoreConfigured: true,
   routes: {
     allRecipes: '/api/all.json',
     catalog: '/api/by-country/catalog.json',
@@ -147,13 +145,13 @@ describe('agent domain — malformed input is rejected with a stable reason', ()
     })
   })
 
-  it('reports the real free-tier limit rather than a remembered one', () => {
+  it('reports the real anonymous daily limit rather than a remembered one', () => {
     const out = tools['capabilities.get'](
       { ...facts, freeDailyLimit: 42 },
       principal(),
     )
-    expect(out.rateLimits.freeDailyPerIp).toBe(42)
-    expect(out.rateLimits.freeTierNote).toContain('42')
+    expect(out.rateLimits.dailyPerIp).toBe(42)
+    expect(out.rateLimits.note).toContain('42')
   })
 })
 

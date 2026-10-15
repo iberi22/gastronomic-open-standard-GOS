@@ -1,19 +1,19 @@
--- site/../worker/schema.sql — esquema D1 del gateway de agentes.
+-- site/../worker/schema.sql — esquema D1 del gateway de datos abiertos GOS.
+--
+-- ESTADO 2026-10-15: "api_keys" y "credit_ledger" YA NO SE USAN. GOS dejo de
+-- vender acceso: el gateway no lee ninguna key, no valida tiers y no lleva
+-- credito de inferencia (/api/ai/infer responde 404). Las tablas se conservan
+-- SIN BORRAR porque pudieron tener datos aplicados en produccion y un DROP no
+-- es una migracion. La unica tabla viva es free_quota.
 --
 -- SEGURIDAD: este archivo NO debe contener credenciales. Una key sembrada
 -- aqui queda en el historial de git de un repositorio PUBLICO para siempre
 -- (se isla en https://github.com/iberi22/gastronomic-open-standard-GOS
 -- desde el commit e0ecaa91) y no hay forma de "borrarla" del historial sin
--- reescribir toda la historia.
---
--- El seed de una key de pago se hace por variable de entorno en el deploy:
---   wrangler secret put GOS_PAID_KEY
--- y se carga en runtime. Para desarrollo local, un valor descartable aqui
--- es aceptable SOLO si nunca se despliega.
+-- reescribir toda la historia. Ya no deberia existir ninguna key que sembrar.
 
--- Tabla de keys. Sin ella el gateway no puede validar nada y falla cerrado
--- con 503 para todas las peticiones con key: ese es el comportamiento
--- correcto, no un bug.
+-- Tabla de keys — SIN USO desde 2026-10-15 (ver cabecera). Se conserva por
+-- historia de migraciones; el gateway no la consulta.
 CREATE TABLE IF NOT EXISTS api_keys (
   key TEXT PRIMARY KEY,
   tier TEXT NOT NULL,
@@ -25,18 +25,12 @@ CREATE TABLE IF NOT EXISTS api_keys (
   status TEXT DEFAULT 'active'
 );
 
--- La consulta de auth filtra por key + status + expires_at, asi que el indice
--- debe cubrir los tres: sin el, cada peticion con key recorre la tabla entera.
--- El nombre lo exige test/schema.test.ts (idx_api_keys_key), aunque key ya es
--- PRIMARY KEY y sqlite ya le crea un autoindice: lo que aporta este es el
--- orden por status y expires_at, no el acceso por key.
+-- Indice historico de api_keys (sin uso desde 2026-10-15).
 CREATE INDEX IF NOT EXISTS idx_api_keys_key
   ON api_keys (key, status, expires_at);
 
--- Ledger de credito de inferencia, indexado por la key AUTENTICADA (hash
--- sha256 truncado calculado en servidor), nunca por un id del cliente. El
--- incremento es una sola sentencia UPDATE ... WHERE used + ? <= cuota
--- RETURNING used, por lo que es atomico en D1.
+-- Ledger de credito de inferencia — SIN USO desde 2026-10-15: no hay
+-- inferencia ni credito. Se conserva por historia de migraciones.
 CREATE TABLE IF NOT EXISTS credit_ledger (
   key_id TEXT NOT NULL,
   period TEXT NOT NULL,           -- YYYY-MM
@@ -44,9 +38,10 @@ CREATE TABLE IF NOT EXISTS credit_ledger (
   PRIMARY KEY (key_id, period)
 );
 
--- Cuota diaria del tier free por IP (hash sha256 truncado, nunca la IP en
--- claro). Se incrementa con UN solo UPSERT atomico por peticion NO estatica.
--- Los dias viejos no se leen; se pueden purgar con:
+-- Cuota diaria ANONIMA por IP (hash sha256 truncado, nunca la IP en
+-- claro). Unica tabla viva del gateway. Se incrementa con UN solo UPSERT
+-- atomico por peticion NO estatica. Los dias viejos no se leen; se pueden
+-- purgar con:
 --   DELETE FROM free_quota WHERE day < date('now', '-2 day');
 CREATE TABLE IF NOT EXISTS free_quota (
   ip_key TEXT NOT NULL,

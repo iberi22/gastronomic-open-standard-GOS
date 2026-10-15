@@ -8,13 +8,15 @@
  * and nothing else. There is no mutating tool here, and adding one is a decision
  * the owner has to make explicitly rather than a refactor.
  *
+ * Since 2026-10-15 GOS sells nothing: the gateway reads no credential at all, so
+ * the `Principal` below carries only budget and workspace scope, never a tier.
+ *
  * # Why `catalog.search` is a contract over HTTP and not a database query
  *
  * The worker itself holds no catalogue. It is a gateway: the data lives at the
- * routes declared in its own root response (`/api/by-country/catalog.json`,
- * `/api/all.json`, `/api/with-metadata.json`, see `src/index.ts` L81-90). So the
- * search tool fetches those routes rather than inventing a second data path, and
- * every failure mode here is a fetch failure or a shape mismatch.
+ * routes declared in its own root response (`OPEN_ROUTES` in `src/index.ts`). So
+ * the search tool fetches those routes rather than inventing a second data path,
+ * and every failure mode here is a fetch failure or a shape mismatch.
  *
  * `capabilities.get` reports what the worker actually
  * enforces today, including the parts that are configuration rather than code.
@@ -38,10 +40,8 @@ export class AgentPolicyError extends Error {
 
 /** Why a call was refused, in the caller's own words. */
 export type Principal = {
-  /** Stable identity of the caller, from the key store — never a guess. */
+  /** Stable identity of the caller, as its embedding app resolved it. */
   id: string
-  /** The tier the key store recorded. */
-  tier: string
   /** Private workspace this principal may read. Empty means public data only. */
   workspace: string
   /** Requests this principal has made today, as the gateway counts them. */
@@ -56,12 +56,11 @@ export type Principal = {
  * What the gateway reports back to `capabilities.get`.
  *
  * Read from `src/index.ts` rather than restated, so a change in the gateway's
- * fail-closed behaviour or its rate-limit wiring shows up here rather than in a
- * stale duplicate.
+ * routes or its anonymous rate-limit wiring shows up here rather than in a stale
+ * duplicate.
  */
 export interface GatewayFacts {
   freeDailyLimit: number
-  keyStoreConfigured: boolean
   routes: Record<string, string>
 }
 
@@ -115,18 +114,15 @@ export interface CapabilitiesOutput {
   /** Whether the pilot permits writes. Always false; stated so it can be asserted. */
   readOnly: true
   authentication: {
-    /** The header the gateway reads. */
-    header: string
-    /** How a principal is established. */
+    /** No header carries a credential: the API is open. */
+    header: 'none'
+    /** How a caller is identified. Empty when nothing is required. */
     modes: string[]
-    /** What happens when the key store is unreachable. */
-    onKeyStoreUnavailable: string
   }
   rateLimits: {
-    /** Requests per day for the free tier, from the worker's own env read. */
-    freeDailyPerIp: number
-    freeTierNote: string
-    paidTierNote: string
+    /** Requests per day per IP, from the worker's own env read. */
+    dailyPerIp: number
+    note: string
   }
   /** True when the worker is serving real catalogue data rather than a stub. */
   catalogAvailable: boolean
@@ -139,8 +135,8 @@ export interface CapabilitiesOutput {
 /**
  * Largest page a caller may request.
  *
- * The gateway's free tier allows 100 requests a day per IP, so a single call
- * that could page through everything would make that limit meaningless.
+ * The gateway allows 100 anonymous requests a day per IP, so a single call that
+ * could page through everything would make that limit meaningless.
  */
 export const MAX_PAGE_SIZE = 50
 

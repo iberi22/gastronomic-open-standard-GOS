@@ -1,5 +1,10 @@
 # GOS — Peaje para agentes IA
 
+> **[2026-10-15] Diseno descartado.** El owner decidio que GOS deja de vender
+> acceso: no hay peaje, ni keys de pago, ni `/api/ai/infer`, ni creditos. GOS es el
+> repositorio abierto de informacion del ecosistema SWAL; los modelos de negocio
+> viven en las apps que leen estos datos. Documento historico.
+
 Auditoría + diseño. **No es código de producción.** Fecha 2026-10-01 · dominio canónico `https://gos.swal.network` · base `main@2fcec13c`.
 
 ## 0. Hallazgos que condicionan todo

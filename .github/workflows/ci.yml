@@ -62,14 +62,14 @@ jobs:
       # TODO(wave-C.05): python3 scripts/audit_content.py --check
       - run: pnpm --filter gos-site test
 
-  # Tests del gateway de agentes.
+  # Tests del gateway de datos abiertos.
   #
   # Este job no existia y su ausencia era el agujero por el que volvio el
   # bypass de autenticacion: deploy-worker.yml despliega en cada push a
-  # worker/** y nunca ejecutaba estos tests, asi que un cambio que
-  # reintrodujera el fallback por substring habria llegado a produccion
-  # sin que nadie lo notara. Los 54 tests de worker/test/ son lo unico que
-  # detecta esa regresion.
+  # worker/** y nunca ejecutaba estos tests. Desde el 2026-10-15 el gateway es
+  # abierto y no lee keys, asi que la suite ya no cubre autenticacion: blinda el
+  # limite anonimo antiabuso (rafaga + cuota diaria), el cache y la garantia de
+  # solo lectura, y verifica que /api/ai/infer siga respondiendo 404.
   worker-tests:
     runs-on: ubuntu-latest
     steps:

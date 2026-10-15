@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
-# Verificaciones previas al deploy del gateway. NO despliega ni escribe en
-# remoto: solo lee (whoami, d1 list, secret list) e imprime el comando de
-# esquema para que lo ejecute una persona.
+# Verificaciones previas al deploy del gateway ABIERTO de GOS. NO despliega ni
+# escribe en remoto: solo lee (whoami, d1 list, secret list) e imprime el
+# comando de esquema para que lo ejecute una persona.
+#
 #   uso: worker/scripts/predeploy-check.sh   (desde cualquier directorio)
+#
+# 2026-10-15: GOS dejo de vender acceso. Ya no hay secretos de negocio
+# (SERVICE_SHARED_SECRET / GOS_DEV_KEY) ni binding RL_AUTH: este chequeo los
+# reporta como FALLO solo si reaparecen, no como requisito.
+
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
 WR="npx --no-install wrangler"
-REQUIRED_SECRETS=()
-# SERVICE_SHARED_SECRET solo hace falta si BILLING_URL esta activo (sin
-# comentar) en wrangler.toml.
-grep -q '^BILLING_URL' wrangler.toml && REQUIRED_SECRETS=(SERVICE_SHARED_SECRET)
-OPTIONAL_SECRETS=(BILLING_SERVICE_SECRET GOS_DEV_KEY)  # compat/dev: no deben ser necesarios
+# Nombres que NO deben existir mientras GOS sea abierto.
+FORBIDDEN_SECRETS=(SERVICE_SHARED_SECRET BILLING_SERVICE_SECRET GOS_DEV_KEY GOS_PAID_KEY)
 fail=0
 ok()   { echo "OK    $*"; }
 bad()  { echo "FALLA $*"; fail=1; }
@@ -41,30 +44,36 @@ else
   bad "no se pudo listar D1 (wrangler d1 list)"
 fi
 
-echo "== secretos del worker"
+echo "== secretos del worker (no debe quedar ninguno de cobro)"
 if secrets=$($WR secret list 2>/dev/null); then
-  [ ${#REQUIRED_SECRETS[@]} -eq 0 ] && echo "INFO  BILLING_URL inactivo: ningun secreto obligatorio"
-  for s in "${REQUIRED_SECRETS[@]}"; do
-    grep -q "\"$s\"" <<<"$secrets" && ok "secreto $s" || bad "falta el secreto $s (wrangler secret put $s)"
-  done
-  for s in "${OPTIONAL_SECRETS[@]}"; do
-    grep -q "\"$s\"" <<<"$secrets" && echo "AVISO secreto opcional/legacy presente: $s"
+  for s in "${FORBIDDEN_SECRETS[@]}"; do
+    if grep -q "\"$s\"" <<<"$secrets"; then
+      bad "secreto de cobro todavia presente: $s (wrangler secret delete $s)"
+    else
+      ok "sin secreto $s"
+    fi
   done
 else
-  bad "no se pudo listar secretos (wrangler secret list)"
+  ok "no se pudo listar secretos (opcional: el gateway abierto no usa ninguno)"
 fi
 
-echo "== bindings de rate limit en wrangler.toml"
-for b in RL_FREE_BURST RL_AUTH; do
-  grep -q "name = \"$b\"" wrangler.toml && ok "$b" || bad "falta [[ratelimits]] $b"
+echo "== bindings en wrangler.toml"
+grep -q 'name = "RL_FREE_BURST"' wrangler.toml && ok "RL_FREE_BURST" || bad "falta [[ratelimits]] RL_FREE_BURST"
+for b in RL_AUTH AI; do
+  if grep -qE "name = \"$b\"|^binding = \"$b\"|^\[ai\]" wrangler.toml; then
+    bad "binding de cobro todavia declarado: $b"
+  else
+    ok "sin binding $b"
+  fi
 done
 grep -q 'kv_namespaces' wrangler.toml && bad "wrangler.toml aun declara KV" || ok "sin KV"
+grep -q '^BILLING_URL' wrangler.toml && bad "wrangler.toml aun declara BILLING_URL" || ok "sin BILLING_URL"
 
 echo "== esquema (idempotente: solo CREATE ... IF NOT EXISTS)"
 if grep -iE '^\s*(CREATE (TABLE|INDEX)|CREATE UNIQUE INDEX)' schema.sql | grep -viq 'IF NOT EXISTS'; then
   bad "schema.sql tiene CREATE sin IF NOT EXISTS"
 else ok "schema.sql idempotente"; fi
-echo "Aplicar a mano ANTES del deploy (crea free_quota):"
+echo "Aplicar a mano ANTES del deploy (crea/actualiza free_quota):"
 echo "  npx wrangler d1 execute DB --remote --file=schema.sql   # desde worker/ (DB = binding; el nombre del toml no coincide con la cuenta)"
 
 [ "$fail" = 0 ] && echo "RESULTADO: listo para deploy" || echo "RESULTADO: HAY FALLAS"
