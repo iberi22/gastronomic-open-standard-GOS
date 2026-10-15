@@ -25,7 +25,6 @@ export const domainConfig = {
   instanceId: 'default',
   entities: [{ name:'product', label:'Producto', fields:['name','price'], xavierKind:'product' }],
   aui: { enabled:true, allowAgentTheme:true },
-  billing: { tier:'socio', mode:'swal-managed' },
 } as const;
 ```
 
@@ -37,7 +36,7 @@ export const domainConfig = {
 import { generateAui } from '../lib/aui';
 import AuiRenderer from '../components/AuiRenderer.svelte';
 
-// si hay LLM + credito socio, el agente genera JSON whitelisteado
+// si hay un LLM disponible, el agente genera JSON whitelisteado
 const spec = await generateAui("muestra productos con stock bajo", true);
 ```
 
