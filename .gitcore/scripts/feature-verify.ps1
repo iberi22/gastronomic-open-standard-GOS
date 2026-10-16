@@ -281,12 +281,22 @@ function Invoke-FeatureAnalysis {
         if ($fileCount -ge $MaxFilesPerFeature) { break }
         $abs = Resolve-ProjectPath $root $rel
 
+        # Declared * / ? evidence is expanded only when nothing literal exists for it
+        # (literal always wins); brackets in the pattern stay literal (round 3, P2).
+        $globInfo = $null
+        if (-not $abs -and (Test-ContainsGlobWildcard $rel)) {
+            $globInfo = Expand-ProjectGlobPath -ProjectRoot $root -RelOrAbs $rel -MaxFiles $DirectoryEvidenceFileCap -IgnoreRegex $DirectoryEvidenceIgnoreRegex
+            if (-not $globInfo.Matched) { $globInfo = $null }
+        }
+
         # exactly ONE evidence record per path: dedupe by resolved target (or normalized rel)
-        $targetKey = if ($abs) { "abs:" + $abs.ToLowerInvariant() } else { "rel:" + (Get-NormalizedEvidenceKey $rel) }
+        $targetKey = if ($abs) { "abs:" + $abs.ToLowerInvariant() }
+        elseif ($globInfo) { "glob:" + (Get-NormalizedEvidenceKey $rel) }
+        else { "rel:" + (Get-NormalizedEvidenceKey $rel) }
         if ($seenTargets.ContainsKey($targetKey)) { continue }
         $seenTargets[$targetKey] = $true
 
-        if (-not $abs) {
+        if (-not $abs -and -not $globInfo) {
             $missing += $rel
             $resolved += [pscustomobject]@{
                 Rel = $rel; Abs = $null; Exists = $false; Kind = "missing"; Empty = $false; ReadFailed = $false
@@ -297,14 +307,36 @@ function Invoke-FeatureAnalysis {
         }
 
         $fileCount++
-        $meta = Get-Item -LiteralPath $abs -ErrorAction SilentlyContinue
-        $isDir = -not (Test-Path -LiteralPath $abs -PathType Leaf)
+        $meta = $null
 
-        if ($isDir) {
-            $inner = @(Get-ChildItem -LiteralPath $abs -Recurse -File -ErrorAction SilentlyContinue |
-                Where-Object { $_.FullName -notmatch $DirectoryEvidenceIgnoreRegex })
-            $innerTotal = $inner.Count
-            if ($innerTotal -eq 0) {
+        # Directory and glob evidence are aggregated into ONE record: the file set is
+        # collected here, the credit below only counts files that were actually read.
+        $aggFiles = @()
+        $aggKind = ""
+        $aggTotal = 0
+        $aggCapped = $false
+        $aggAbs = $abs
+        if ($globInfo) {
+            $aggKind = "glob"
+            $aggFiles = @($globInfo.Files)
+            $aggTotal = $globInfo.Total
+            $aggCapped = $globInfo.Capped
+            $aggAbs = $globInfo.Pattern
+        } else {
+            $meta = Get-Item -LiteralPath $abs -ErrorAction SilentlyContinue
+            if (-not (Test-Path -LiteralPath $abs -PathType Leaf)) {
+                $inner = @(Get-ChildItem -LiteralPath $abs -Recurse -File -ErrorAction SilentlyContinue |
+                    Where-Object { $_.FullName -notmatch $DirectoryEvidenceIgnoreRegex })
+                $aggKind = "directory"
+                $aggTotal = $inner.Count
+                $aggCapped = $aggTotal -gt $DirectoryEvidenceFileCap
+                if ($aggCapped) { $inner = @($inner | Select-Object -First $DirectoryEvidenceFileCap) }
+                $aggFiles = @($inner)
+            }
+        }
+
+        if ($aggKind) {
+            if ($aggTotal -eq 0) {
                 # an empty directory is an existence claim with no content: zero credit
                 $resolved += [pscustomobject]@{
                     Rel = $rel; Abs = $abs; Exists = $false; Kind = "directory"; Empty = $true; ReadFailed = $false
@@ -313,22 +345,22 @@ function Invoke-FeatureAnalysis {
                 }
                 continue
             }
-            $filesCapped = $innerTotal -gt $DirectoryEvidenceFileCap
-            if ($filesCapped) { $inner = @($inner | Select-Object -First $DirectoryEvidenceFileCap) }
-            $dirLines = 0
-            $dirBytes = 0
-            $dirTestFiles = 0
-            $dirReadFailed = 0
-            foreach ($innerFile in $inner) {
+            $aggLines = 0
+            $aggBytes = 0
+            $aggTestFiles = 0
+            $aggReadFailed = 0
+            $aggRead = 0
+            foreach ($innerFile in $aggFiles) {
                 $innerRel = Get-RelPathFromRoot $root $innerFile.FullName
                 $innerIsTest = Test-IsTestPath $innerFile.FullName
-                $dirBytes += [int]$innerFile.Length
                 $exInner = $null
                 try { $exInner = Get-FileExcerpt -Path $innerFile.FullName -Mode "head" -Lines 1 -StartLine 1 -EndLine 0 -MaxChars 2 } catch { $exInner = $null }
-                if ($null -eq $exInner -or -not $exInner.Ok) { $dirReadFailed++; continue }
+                if ($null -eq $exInner -or -not $exInner.Ok) { $aggReadFailed++; continue }
+                $aggRead++
+                $aggBytes += [int]$innerFile.Length
                 $innerLines = [int]$exInner.TotalLines
-                if ($innerIsTest) { $dirTestFiles++; $dirLines += [int]([math]::Min($innerLines, 100)) }
-                else { $dirLines += $innerLines }
+                if ($innerIsTest) { $aggTestFiles++; $aggLines += [int]([math]::Min($innerLines, 100)) }
+                else { $aggLines += $innerLines }
                 if ($kw.Count -gt 0) {
                     try {
                         $innerHits = Search-FileKeywordHits -Path $innerFile.FullName -Keywords $kw -Context 2 -MaxHits 5
@@ -343,13 +375,21 @@ function Invoke-FeatureAnalysis {
                     } catch { }
                 }
             }
-            $totalCodeLines += $dirLines
-            $testFileCount += $dirTestFiles
+
+            # not one contained file could be read -> the claim is unverifiable: zero credit
+            # (idempotent equivalent of a read failure for the whole directory/glob)
+            $noneRead = ($aggRead -eq 0)
+            $capTxt = if ($aggCapped) { " (capped at $DirectoryEvidenceFileCap of $aggTotal)" } else { "" }
+            $failTxt = if ($aggReadFailed -gt 0) { " unreadable=$aggReadFailed" } else { "" }
+            if (-not $noneRead) {
+                $totalCodeLines += $aggLines
+                $testFileCount += $aggTestFiles
+            }
             $resolved += [pscustomobject]@{
-                Rel = $rel; Abs = $abs; Exists = $true; Kind = "directory"; Empty = $false; ReadFailed = $false
-                TotalLines = $dirLines; Bytes = $dirBytes; IsTest = $false
-                FileCount = $inner.Count; FileCountTotal = $innerTotal; FilesCapped = $filesCapped; ReadFailures = $dirReadFailed
-                ExcerptOf = ("directory: {0} file(s){1}" -f $inner.Count, $(if ($filesCapped) { " (capped at $DirectoryEvidenceFileCap of $innerTotal)" } else { "" }))
+                Rel = $rel; Abs = $aggAbs; Exists = $true; Kind = $aggKind; Empty = $false; ReadFailed = $noneRead
+                TotalLines = $aggLines; Bytes = $aggBytes; IsTest = $false
+                FileCount = $aggRead; FileCountTotal = $aggTotal; FilesCapped = $aggCapped; ReadFailures = $aggReadFailed
+                ExcerptOf = ("{0}: {1}/{2} file(s) read{3}{4}{5}" -f $aggKind, $aggRead, $aggTotal, $capTxt, $failTxt, $(if ($noneRead) { " - zero credit" } else { "" }))
             }
             continue
         }
@@ -632,12 +672,12 @@ foreach ($row in $selected) {
     }
     foreach ($r in $a.Resolved) {
         if ($r.Exists) {
-            $tag = if ($r.IsTest) { "TEST" } elseif ($r.Kind -eq "directory") { "DIR" } else { "CODE" }
+            $tag = if ($r.IsTest) { "TEST" } elseif ($r.Kind -eq "directory") { "DIR" } elseif ($r.Kind -eq "glob") { "GLOB" } else { "CODE" }
             $extra = ""
-            if ($r.ReadFailed) { $extra = "  READ_FAILED (zero credit)" }
-            elseif ($r.Kind -eq "directory") {
+            if ($r.Kind -eq "directory" -or $r.Kind -eq "glob") {
                 $extra = "  files=$($r.FileCount)/$($r.FileCountTotal)$(if ($r.FilesCapped) { ' (capped)' })$(if ($r.ReadFailures) { " unreadable=$($r.ReadFailures)" })"
             }
+            if ($r.ReadFailed) { $extra += "  READ_FAILED (zero credit)" }
             [void]$sb.AppendLine("- OK  [$tag] $($r.Rel)  lines=$($r.TotalLines)  excerpt=$($r.ExcerptOf)$extra")
             [void]$sb.AppendLine("      abs=$($r.Abs)")
         } elseif ($r.Empty) {

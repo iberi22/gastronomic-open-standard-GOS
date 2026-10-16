@@ -13,7 +13,11 @@
     POPULATED-DIR  populated directory -> line + keyword credit, node_modules ignored
     DIR-CAP        >50 files under a directory -> capped at 50 and reported
     UNREADABLE     unreadable files -> one record per path, zero credit
+    UNREADABLE-DIR directory with only unreadable files -> zero credit, counted as failed
     BRACKET        file literally named [entity].ts -> its own hits, no sibling leak
+    GLOB           dir/*.test.ts matching 2 files -> credited as one aggregated entry
+    GLOB-MISS      glob matching nothing -> missing
+    BRACKET-GLOB   pages/[entity]/*.ts -> brackets literal, no char-class expansion
     COVERAGE       duplicate declared paths -> deduped, coverage <= 100
 
   Exits 1 if any case fails, 0 when all pass. Prints PASS/FAIL per case.
@@ -91,6 +95,16 @@ function New-FixtureFile {
     if ($parent) { New-Item -ItemType Directory -Force -Path $parent | Out-Null }
     Set-Content -LiteralPath $full -Value $Content -Encoding UTF8
     return $full
+}
+
+function Test-IsRootUser {
+    try {
+        if ([System.Environment]::UserName -eq "root") { return $true }
+        if ($null -ne (Get-Command "id" -ErrorAction SilentlyContinue)) {
+            return ((& id -u 2>$null) -eq "0")
+        }
+    } catch { }
+    return $false
 }
 
 function Set-FixtureFileUnreadable {
@@ -188,6 +202,10 @@ Invoke-Case "DIR_CAP caps expansion at 50 files and reports it" {
 # --------------------------------------------------------------- CASE: unreadable
 Invoke-Case "UNREADABLE files count once with zero credit" {
     param($Problems)
+    if (Test-IsRootUser) {
+        Write-Host "        (note: running as root; chmod 000 does not block root)" -ForegroundColor Yellow
+        return
+    }
     $dir = New-Fixture "unreadable"
     $f1 = New-FixtureFile $dir "src/secret.ts" "export const secret = 1;"
     $f2 = New-FixtureFile $dir "tests/secret.test.ts" "test('secret', () => {});"
@@ -206,6 +224,32 @@ Invoke-Case "UNREADABLE files count once with zero credit" {
     Assert-True ($r.suggested_pct -le 55) "unreadable evidence must not confirm a 100% claim (suggested=$($r.suggested_pct))" $Problems
 }
 
+# -------------------------------------------------------- CASE: unreadable dir
+Invoke-Case "UNREADABLE_DIR earns zero credit and counts as failed" {
+    param($Problems)
+    if (Test-IsRootUser) {
+        Write-Host "        (note: running as root; chmod 000 does not block root)" -ForegroundColor Yellow
+        return
+    }
+    $dir = New-Fixture "unreadable-dir"
+    $f1 = New-FixtureFile $dir "src/impl/a.ps1" "export const a = 1;"
+    $f2 = New-FixtureFile $dir "src/impl/b.ps1" "export const b = 2;"
+    Set-FixtureFileUnreadable $f1
+    Set-FixtureFileUnreadable $f2
+    New-FeatureFixture $dir "ST-UNREADABLE-DIR" @("src/impl")
+    $r = Invoke-Verifier $dir "ST-UNREADABLE-DIR"
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 1) "expected exactly 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "directory") "record Kind should be directory, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].ReadFailed) "a directory whose files cannot be read must carry ReadFailed=true" $Problems
+    Assert-True ($recs[0].TotalLines -eq 0) "unreadable dir must credit no lines, got $($recs[0].TotalLines)" $Problems
+    Assert-True ($r.evidence_exists -eq 0) "unreadable dir must give no evidence credit, got exists=$($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 0) "evidence_score_pct should be 0, got $($r.evidence_score_pct)" $Problems
+    Assert-True ($r.evidence_read_failed -eq 1) "the directory must be counted as failed, got $($r.evidence_read_failed)" $Problems
+    Assert-True ($r.suggest_breakdown.tests -match "test_files=0") "unreadable dir must not earn test credit ($($r.suggest_breakdown.tests))" $Problems
+    Assert-True ($r.suggested_pct -le 55) "unreadable dir must not confirm a 100% claim (suggested=$($r.suggested_pct))" $Problems
+}
+
 # ------------------------------------------------------------------ CASE: bracket
 Invoke-Case "BRACKET file gets its own keyword hits, no sibling leak" {
     param($Problems)
@@ -222,6 +266,67 @@ Invoke-Case "BRACKET file gets its own keyword hits, no sibling leak" {
     Assert-True (@($hits | Where-Object { $_.Snippet -match "ENTITYMARK" }).Count -ge 1) "expected an ENTITYMARK hit from [entity].ts" $Problems
     Assert-True (@($hits | Where-Object { $_.Snippet -match "LEAKONLY" }).Count -eq 0) "sibling e.ts leaked its content into the hits" $Problems
     Assert-True (@($hits | Where-Object { $_.Path -ne "src/[entity].ts" }).Count -eq 0) "hits must be reported for the declared path" $Problems
+}
+
+# ----------------------------------------------------------------- CASE: coverage
+Invoke-Case "GLOB dir/*.test.ts matching 2 files is credited" {
+    param($Problems)
+    $dir = New-Fixture "glob-match"
+    $a = @(1..20 | ForEach-Object { "expect($_).toBe($_);" }) -join "`n"
+    $b = @(1..12 | ForEach-Object { "expect($_).not.toBe(0);" }) -join "`n"
+    New-FixtureFile $dir "src/lib/a.test.ts" $a | Out-Null
+    New-FixtureFile $dir "src/lib/b.test.ts" $b | Out-Null
+    # must NOT match the declared pattern
+    New-FixtureFile $dir "src/lib/c.ts" "export const c = 1;" | Out-Null
+    New-FeatureFixture $dir "ST-GLOB" @("src/lib/*.test.ts")
+    $r = Invoke-Verifier $dir "ST-GLOB"
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 1) "expected exactly 1 aggregated record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "glob") "record Kind should be glob, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].Rel -eq "src/lib/*.test.ts") "record Rel mismatch: $($recs[0].Rel)" $Problems
+    Assert-True ($recs[0].Exists) "glob match must be Exists=true" $Problems
+    Assert-True (-not $recs[0].ReadFailed) "readable glob match must not be ReadFailed" $Problems
+    Assert-True ($recs[0].FileCount -eq 2) "expected 2 matched files, got $($recs[0].FileCount)" $Problems
+    Assert-True ($recs[0].FileCountTotal -eq 2) "expected FileCountTotal=2, got $($recs[0].FileCountTotal)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 32) "lines must come from the 2 matched files only (20+12), got $($recs[0].TotalLines)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 100) "glob match must earn credit, got $($r.evidence_score_pct)" $Problems
+    Assert-True ($r.evidence_exists -eq 1) "glob match must count as existing evidence, got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "glob match must not be missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.suggest_breakdown.tests -match "test_files=2") "glob tests must earn test credit ($($r.suggest_breakdown.tests))" $Problems
+}
+
+Invoke-Case "GLOB with no match stays missing" {
+    param($Problems)
+    $dir = New-Fixture "glob-miss"
+    New-FeatureFixture $dir "ST-GLOB-MISS" @("src/lib/*.test.ts")
+    $r = Invoke-Verifier $dir "ST-GLOB-MISS"
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 1) "expected exactly 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True (-not $recs[0].Exists) "unmatched glob must not be Exists" $Problems
+    Assert-True (-not $recs[0].Empty) "unmatched glob must not be an empty-dir record" $Problems
+    Assert-True (-not $recs[0].ReadFailed) "unmatched glob must not be read-failed" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "unmatched glob must count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 0) "unmatched glob gives no credit, got $($r.evidence_score_pct)" $Problems
+    Assert-True ($r.evidence_read_failed -eq 0) "unmatched glob must not count as read-failed, got $($r.evidence_read_failed)" $Problems
+}
+
+Invoke-Case "GLOB keeps brackets literal (pages/[entity]/*.ts)" {
+    param($Problems)
+    $dir = New-Fixture "bracket-glob"
+    $literal = @(1..5 | ForEach-Object { "export const literal$_ = $_;" }) -join "`n"
+    $charclass = @(1..7 | ForEach-Object { "export const sibling$_ = $_;" }) -join "`n"
+    New-FixtureFile $dir "pages/[entity]/index.ts" $literal | Out-Null
+    # would match if [entity] were read as a wildcard character class
+    New-FixtureFile $dir "pages/e/index.ts" $charclass | Out-Null
+    New-FeatureFixture $dir "ST-BRACKET-GLOB" @("pages/[entity]/*.ts")
+    $r = Invoke-Verifier $dir "ST-BRACKET-GLOB"
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 1) "expected exactly 1 aggregated record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "glob") "record Kind should be glob, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].Exists) "bracket glob must be Exists=true" $Problems
+    Assert-True ($recs[0].FileCount -eq 1) "brackets are literal: expected exactly 1 match, got $($recs[0].FileCount)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 5) "must read pages/[entity]/index.ts (5 lines), got $($recs[0].TotalLines)" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "bracket glob must not be missing, got $($r.evidence_missing)" $Problems
 }
 
 # ----------------------------------------------------------------- CASE: coverage

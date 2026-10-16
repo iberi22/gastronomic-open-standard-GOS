@@ -300,8 +300,10 @@ function Resolve-ProjectPath {
     )
     foreach ($sr in $searchRoots) {
         if (-not (Test-Path -LiteralPath $sr)) { continue }
-        # glob/bracket leaves are never resolved by wildcard: Test-Path/Get-ChildItem would
-        # match a sibling file instead of the declared path (review round 2, P2)
+        # glob/bracket leaves are never resolved by wildcard here: Test-Path/Get-ChildItem would
+        # match a sibling file instead of the declared path (review round 2, P2).
+        # A declared * / ? pattern is expanded later by Expand-ProjectGlobPath, which escapes
+        # brackets so they stay literal (review round 3, P2).
         if ($leaf -match '[\*\?\[]') { break }
         # exact relative under apps/*
         $hits = @(Get-ChildItem -LiteralPath $sr -Recurse -File -Filter $leaf -ErrorAction SilentlyContinue |
@@ -324,6 +326,90 @@ function Resolve-ProjectPath {
         }
     }
     return $null
+}
+
+function Test-ContainsGlobWildcard {
+    <#
+    .SYNOPSIS
+      True when a declared evidence path uses * or ?. Brackets ([ ]) are always literal.
+    #>
+    param([string]$PathText)
+    if ([string]::IsNullOrWhiteSpace($PathText)) { return $false }
+    return [bool]($PathText -match '[\*\?]')
+}
+
+function ConvertTo-LiteralBracketWildcard {
+    <#
+    .SYNOPSIS
+      Escape [ ] and ` so a wildcard pattern keeps * and ? active while brackets stay literal.
+      Uses [System.Management.Automation.WildcardPattern]::Escape on the bracket parts.
+    #>
+    param([string]$PatternText)
+    if ([string]::IsNullOrEmpty($PatternText)) { return "" }
+    $sb = New-Object System.Text.StringBuilder
+    foreach ($ch in $PatternText.ToCharArray()) {
+        if ($ch -eq '[') { [void]$sb.Append([System.Management.Automation.WildcardPattern]::Escape('[')) }
+        elseif ($ch -eq ']') { [void]$sb.Append([System.Management.Automation.WildcardPattern]::Escape(']')) }
+        elseif ($ch -eq '`') { [void]$sb.Append('``') }
+        else { [void]$sb.Append($ch) }
+    }
+    return $sb.ToString()
+}
+
+function Expand-ProjectGlobPath {
+    <#
+    .SYNOPSIS
+      Expand an evidence path that declares * or ? into the files it matches.
+
+    .DESCRIPTION
+      Only called AFTER literal resolution failed (literal evidence always wins). Brackets
+      are never treated as wildcards: they are escaped before expansion. The caller
+      aggregates the returned files as ONE evidence entry (credit from files read,
+      cap reported). No match -> Matched=false, i.e. missing evidence.
+    #>
+    param(
+        [string]$ProjectRoot,
+        [string]$RelOrAbs,
+        [int]$MaxFiles = 50,
+        [string]$IgnoreRegex = ""
+    )
+    $none = [pscustomobject]@{ IsGlob = $false; Matched = $false; Files = @(); Total = 0; Capped = $false; Pattern = "" }
+    if ([string]::IsNullOrWhiteSpace($RelOrAbs)) { return $none }
+    if (-not (Test-ContainsGlobWildcard $RelOrAbs)) { return $none }
+
+    $sep = [System.IO.Path]::DirectorySeparatorChar
+    $absPattern = if ([System.IO.Path]::IsPathRooted($RelOrAbs)) {
+        ($RelOrAbs -replace '[\\/]', $sep)
+    } elseif ($ProjectRoot) {
+        Join-Path $ProjectRoot ($RelOrAbs -replace '[\\/]', $sep)
+    } else {
+        ($RelOrAbs -replace '[\\/]', $sep)
+    }
+
+    $wildcard = ConvertTo-LiteralBracketWildcard $absPattern
+    $hits = @()
+    try { $hits = @(Get-ChildItem -Path $wildcard -File -ErrorAction SilentlyContinue) } catch { $hits = @() }
+    if ($IgnoreRegex) { $hits = @($hits | Where-Object { $_.FullName -notmatch $IgnoreRegex }) }
+    $hits = @($hits | Sort-Object -Property FullName -Unique)
+
+    if ($MaxFiles -gt 0 -and $hits.Count -gt $MaxFiles) {
+        return [pscustomobject]@{
+            IsGlob  = $true
+            Matched = $true
+            Files   = @($hits | Select-Object -First $MaxFiles)
+            Total   = $hits.Count
+            Capped  = $true
+            Pattern = $absPattern
+        }
+    }
+    return [pscustomobject]@{
+        IsGlob  = $true
+        Matched = ($hits.Count -gt 0)
+        Files   = @($hits)
+        Total   = $hits.Count
+        Capped  = $false
+        Pattern = $absPattern
+    }
 }
 
 function Get-FileExcerpt {
