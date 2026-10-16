@@ -447,7 +447,8 @@ function Invoke-FeatureAnalysis {
     $existsN = @($resolved | Where-Object { $_.Exists -and -not $_.ReadFailed -and -not $_.Empty }).Count
     $readFailedN = @($resolved | Where-Object { $_.ReadFailed }).Count
     $emptyN = @($resolved | Where-Object { $_.Empty }).Count
-    $missN = [math]::Max(0, $declared - $existsN)
+    # Missing must only count unresolvable declared paths, avoiding inflation when caps skip files
+    $missN = @($resolved | Where-Object { $_.Kind -eq "missing" }).Count
     $evidenceScore = if ($declared -eq 0) { 0 } else { [math]::Min(100, [math]::Round(100.0 * $existsN / $declared, 1)) }
 
     $hasGaps = $false
