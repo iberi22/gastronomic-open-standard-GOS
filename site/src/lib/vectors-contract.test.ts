@@ -13,12 +13,39 @@ const repoRoot = path.resolve(
 const vectorsDir = path.join(repoRoot, 'site/public/api/vectors')
 const indexFile = path.join(vectorsDir, 'index.json')
 const indexContent = fs.readFileSync(indexFile, 'utf8')
-const index = JSON.parse(indexContent)
+const index = JSON.parse(indexContent) as {
+  version: string
+  model: string
+  dim: number
+  count: {
+    total: number
+    ingredients: number
+    dishes: number
+    substances: number
+  }
+  shards: IndexShard[]
+}
 
-let allEntries: any[] = []
+interface VectorEntry {
+  id: string
+  type: string
+  text: string
+  embedding: number[]
+}
+
+interface IndexShard {
+  file: string
+  count: number
+  size_bytes: number
+}
+
+let allEntries: VectorEntry[] = []
 for (const shard of index.shards) {
-  const shardContent = fs.readFileSync(path.join(vectorsDir, shard.file), 'utf8')
-  allEntries = allEntries.concat(JSON.parse(shardContent))
+  const shardContent = fs.readFileSync(
+    path.join(vectorsDir, shard.file),
+    'utf8',
+  )
+  allEntries = allEntries.concat(JSON.parse(shardContent) as VectorEntry[])
 }
 
 describe('Vector embeddings contract test', () => {
@@ -37,7 +64,10 @@ describe('Vector embeddings contract test', () => {
   })
 
   it('sum(shards[].count) === count.total', () => {
-    const shardsCount = index.shards.reduce((sum: number, shard: any) => sum + shard.count, 0)
+    const shardsCount = index.shards.reduce(
+      (sum: number, shard: IndexShard) => sum + shard.count,
+      0,
+    )
     expect(shardsCount).toBe(index.count.total)
   })
 
@@ -54,7 +84,7 @@ describe('Vector embeddings contract test', () => {
   })
 
   it('every id across all shards is a unique non-empty string', () => {
-    const ids = allEntries.map(e => e.id)
+    const ids = allEntries.map((e) => e.id)
     const idSet = new Set(ids)
     expect(idSet.size).toBe(index.count.total)
     for (const id of idSet) {
