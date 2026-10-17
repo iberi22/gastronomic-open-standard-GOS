@@ -26,11 +26,11 @@ include = ["gos*"]
 # un portatil Windows, que fallan en collection con FileNotFoundError.
 # testpaths deja la sesion en 9 tests recolectados en vez de abortar.
 #
-# Los dos modulos listados fallan por causas reales, no por la config:
-#   - test_graph_edges.py exige site/graph-data.json, artefacto generado
-#     que no existe en un checkout limpio (CI lo genera antes).
-#   - test_gos_compliance.py usa separadores de Windows en sus rutas.
-# CI no corre pytest: usa vitest (site + worker) y `python -m gos.cli audit`.
+# Los dos modulos listados pasan cuando se cumplen sus condiciones:
+#   - automation/test_graph_edges.py omite sus 8 tests (con skipif needs_graph)
+#     en un checkout limpio porque falta site/graph-data.json, y pasan cuando
+#     se ejecuta site/scripts/generate-graph.js antes.
+#   - scripts/test_gos_compliance.py usa Path(...) para rutas portables.
 testpaths = [
     "automation/test_graph_edges.py",
     "scripts/test_gos_compliance.py",
