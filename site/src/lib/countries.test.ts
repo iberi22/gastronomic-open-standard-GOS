@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import { execSync } from 'node:child_process'
+import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
@@ -19,9 +19,9 @@ describe('countryCounts', () => {
   })
 
   it('groups and lowercases ids from nested paths (country root)', () => {
-    const ids = ['Colombian/Caribe/x.md']
+    const ids = ['Colombian/Caribe/x.md', 'colombian/Andina/y.md']
     const result = countryCounts(ids)
-    expect(result).toEqual([{ country: 'colombian', count: 1 }])
+    expect(result).toEqual([{ country: 'colombian', count: 2 }])
   })
 
   it('becomes unknown if an id has no segment', () => {
@@ -75,22 +75,30 @@ describe('countryCounts', () => {
   })
 
   it('processes the real corpus from the dishes directory', () => {
-    // There are 122 total MD files in the colombian folder on disk including READMEs and other files not tracked by git ls-tree.
-    // Since we are reading directly from the fs, let's execute `git ls-tree` to match exactly what is in version control,
-    // which gives 114.
-    const gitLs = execSync('git ls-tree -r HEAD --name-only dishes', {
-      cwd: repoRoot,
-    }).toString()
-    const gitIds = gitLs
-      .split('\n')
-      .filter((line: string) => line.endsWith('.md'))
-      .map((line: string) => line.replace('dishes/', ''))
+    const getMarkdownFiles = (dir: string): string[] => {
+      let results: string[] = []
+      const list = fs.readdirSync(dir)
+      for (const file of list) {
+        const filePath = path.join(dir, file)
+        const stat = fs.statSync(filePath)
+        if (stat?.isDirectory()) {
+          results = results.concat(getMarkdownFiles(filePath))
+        } else if (file.endsWith('.md')) {
+          results.push(filePath)
+        }
+      }
+      return results
+    }
 
-    const result = countryCounts(gitIds)
+    const dishesDir = path.join(repoRoot, 'dishes')
+    const allFiles = getMarkdownFiles(dishesDir)
+    const relativeIds = allFiles.map((f) => path.relative(dishesDir, f))
+
+    const result = countryCounts(relativeIds)
 
     // Exactly 20 top-level country directories based on current state
     expect(result.length).toBe(20)
-    // The largest is colombian with 114 files
-    expect(result[0]).toEqual({ country: 'colombian', count: 114 })
+    // The largest is colombian with 122 files
+    expect(result[0]).toEqual({ country: 'colombian', count: 122 })
   })
 })
