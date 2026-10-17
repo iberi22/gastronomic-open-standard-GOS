@@ -397,6 +397,14 @@ async function getProvider() {
   return provider
 }
 
+export function buildShards(vectors, maxItemsPerShard = 500) {
+  const shards = []
+  for (let i = 0; i < vectors.length; i += maxItemsPerShard) {
+    shards.push(vectors.slice(i, i + maxItemsPerShard))
+  }
+  return shards
+}
+
 export async function exportVectors() {
   console.log('🚀 Starting GOS Vector Embeddings Snapshot Export...')
 
@@ -472,10 +480,11 @@ export async function exportVectors() {
   fs.mkdirSync(sitePublicVectorsDir, { recursive: true })
 
   const maxItemsPerShard = 500
+  const shardsList = buildShards(vectors, maxItemsPerShard)
   const shards = []
 
-  for (let i = 0; i < vectors.length; i += maxItemsPerShard) {
-    const shardItems = vectors.slice(i, i + maxItemsPerShard)
+  for (let i = 0; i < shardsList.length; i++) {
+    const shardItems = shardsList[i]
     const shardFileName = `vectors-${shards.length + 1}.json`
     const shardFilePath = path.join(sitePublicVectorsDir, shardFileName)
 
