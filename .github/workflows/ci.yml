@@ -148,6 +148,34 @@ jobs:
           python3 -m pip install --quiet pyyaml
           python3 scripts/verify-evidence.py
 
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install package and dependencies
+        run: |
+          pip install pydantic pyyaml click pytest
+          pip install -e .
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.24.0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+      - name: Install JS dependencies
+        run: pnpm install --frozen-lockfile
+        env:
+          npm_config_ignore_scripts: "true"
+      - name: Generate Knowledge Graph Artifact
+        run: node scripts/generate-graph.js
+        working-directory: ./site
+      - name: Run Python Tests
+        run: python -m pytest -q
+
   gos-audit:
     runs-on: ubuntu-latest
     continue-on-error: true
