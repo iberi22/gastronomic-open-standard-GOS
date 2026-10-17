@@ -3,7 +3,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, beforeAll } from 'vitest'
 import { buildDataset } from '../../../scripts/export-v1.mjs'
 
 const repoRoot = path.resolve(
@@ -12,22 +12,47 @@ const repoRoot = path.resolve(
 )
 
 describe('v1 manifest drift gate', () => {
-  it('matches a fresh build of the corpus', () => {
-    const manifestPath = path.join(repoRoot, 'site/public/api/v1/manifest.json')
-    const manifestContent = fs.readFileSync(manifestPath, 'utf8')
-    const trackedManifest = JSON.parse(manifestContent)
+  let manifestPath: string
+  let manifestContent: string
+  // biome-ignore lint/suspicious/noExplicitAny: simple object schema
+  let trackedManifest: any
+  // biome-ignore lint/suspicious/noExplicitAny: dataset is dynamically typed
+  let freshManifest: any
 
+  beforeAll(() => {
+    manifestPath = path.join(repoRoot, 'site/public/api/v1/manifest.json')
+    manifestContent = fs.readFileSync(manifestPath, 'utf8')
+    trackedManifest = JSON.parse(manifestContent)
+
+    const freshDataset = buildDataset({
+      generatedAt: trackedManifest.generatedAt,
+    })
+    freshManifest = freshDataset.manifest
+  })
+
+  it('has a trailing newline and parses as JSON', () => {
     expect(manifestContent.endsWith('\n')).toBe(true)
+    expect(() => JSON.parse(manifestContent)).not.toThrow()
+  })
 
-    const freshDataset = buildDataset({ generatedAt: trackedManifest.generatedAt })
-    const freshManifest = freshDataset.manifest
-
+  it('matches schemaVersion and version of a fresh build', () => {
     expect(trackedManifest.schemaVersion).toBe(freshManifest.schemaVersion)
     expect(trackedManifest.version).toBe(freshManifest.version)
-    expect(trackedManifest.license).toBe(freshManifest.license)
-    expect(trackedManifest.counts).toEqual(freshManifest.counts)
-    expect(trackedManifest.contentHash).toBe(freshManifest.contentHash)
+  })
 
+  it('matches the license of a fresh build', () => {
+    expect(trackedManifest.license).toBe(freshManifest.license)
+  })
+
+  it('matches counts of a fresh build', () => {
+    expect(trackedManifest.counts).toEqual(freshManifest.counts)
+  })
+
+  it('matches the contentHash of a fresh build', () => {
+    expect(trackedManifest.contentHash).toBe(freshManifest.contentHash)
+  })
+
+  it('declares existing and non-empty data files', () => {
     const v1Dir = path.dirname(manifestPath)
     for (const filename of Object.values(trackedManifest.files) as string[]) {
       const filePath = path.join(v1Dir, filename)
