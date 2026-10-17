@@ -42,6 +42,13 @@ New-Item -ItemType Directory -Force -Path $script:Root | Out-Null
 
 $script:Total = 0
 $script:Failed = 0
+$script:Skipped = 0
+
+function Skip-Case {
+    param([string]$Reason)
+    $script:CaseSkipped = $true
+    Write-Host ("        (note: {0})" -f $Reason) -ForegroundColor Yellow
+}
 
 function Assert-True {
     param($Condition, [string]$Message, $Problems)
@@ -53,11 +60,15 @@ function Invoke-Case {
     $script:Total++
     $problems = New-Object System.Collections.Generic.List[string]
     try {
+        $script:CaseSkipped = $false
         & $Body $problems
     } catch {
         $problems.Add("exception: $($_.Exception.Message)")
     }
-    if ($problems.Count -eq 0) {
+    if ($script:CaseSkipped) {
+        $script:Skipped++
+        Write-Host ("SKIP  {0}" -f $Name) -ForegroundColor Yellow
+    } elseif ($problems.Count -eq 0) {
         Write-Host ("PASS  {0}" -f $Name) -ForegroundColor Green
     } else {
         $script:Failed++
@@ -98,6 +109,7 @@ function New-FixtureFile {
 }
 
 function Test-IsRootUser {
+    if ($env:FV_SELFTEST_FORCE_ROOT -eq "1") { return $true } # test seam
     try {
         if ([System.Environment]::UserName -eq "root") { return $true }
         if ($null -ne (Get-Command "id" -ErrorAction SilentlyContinue)) {
@@ -203,7 +215,7 @@ Invoke-Case "DIR_CAP caps expansion at 50 files and reports it" {
 Invoke-Case "UNREADABLE files count once with zero credit" {
     param($Problems)
     if (Test-IsRootUser) {
-        Write-Host "        (note: running as root; chmod 000 does not block root)" -ForegroundColor Yellow
+        Skip-Case "running as root; chmod 000 does not block root"
         return
     }
     $dir = New-Fixture "unreadable"
@@ -228,7 +240,7 @@ Invoke-Case "UNREADABLE files count once with zero credit" {
 Invoke-Case "UNREADABLE_DIR earns zero credit and counts as failed" {
     param($Problems)
     if (Test-IsRootUser) {
-        Write-Host "        (note: running as root; chmod 000 does not block root)" -ForegroundColor Yellow
+        Skip-Case "running as root; chmod 000 does not block root"
         return
     }
     $dir = New-Fixture "unreadable-dir"
@@ -354,7 +366,7 @@ Invoke-Case "COVERAGE stays <= 100 with duplicate declared paths" {
 }
 
 Write-Host ""
-Write-Host ("{0}/{1} cases passed" -f ($script:Total - $script:Failed), $script:Total)
+Write-Host ("{0}/{1} cases passed, {2} skipped" -f ($script:Total - $script:Failed - $script:Skipped), $script:Total, $script:Skipped)
 Remove-Item -LiteralPath $script:Root -Recurse -Force -ErrorAction SilentlyContinue
 if ($script:Failed -gt 0) { exit 1 }
 exit 0
