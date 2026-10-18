@@ -5,17 +5,11 @@
 
 import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
+import { countryCounts } from '../../lib/countries'
 
 export const GET: APIRoute = async () => {
   const dishes = await getCollection('dishes')
-  const counts = new Map<string, number>()
-  for (const d of dishes) {
-    const country = (d.id.split('/')[0] || 'unknown').toLowerCase()
-    counts.set(country, (counts.get(country) || 0) + 1)
-  }
-  const body = [...counts.entries()]
-    .map(([country, count]) => ({ country, count }))
-    .sort((a, b) => b.count - a.count)
+  const body = countryCounts(dishes.map((d) => d.id))
   return new Response(JSON.stringify(body), {
     status: 200,
     headers: {
