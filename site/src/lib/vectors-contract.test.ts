@@ -108,14 +108,19 @@ describe('Vector embeddings contract test', () => {
   })
 
   it('every entry has embedding.length === dim, is finite, and text is a non-empty string', () => {
+    const problems: string[] = []
     for (const entry of allEntries) {
-      expect(entry.embedding.length).toBe(index.dim)
-      for (const val of entry.embedding) {
-        expect(Number.isFinite(val)).toBe(true)
+      if (entry.embedding.length !== index.dim) {
+        problems.push(`${entry.id}: length ${entry.embedding.length}`)
       }
-      expect(typeof entry.text).toBe('string')
-      expect(entry.text.length).toBeGreaterThan(0)
+      if (!entry.embedding.every(Number.isFinite)) {
+        problems.push(`${entry.id}: non-finite value`)
+      }
+      if (typeof entry.text !== 'string' || entry.text.length === 0) {
+        problems.push(`${entry.id}: empty text`)
+      }
     }
+    expect(problems).toEqual([])
   })
 
   it('the artifact set under site/public/api/vectors contains exactly 4 files', () => {
