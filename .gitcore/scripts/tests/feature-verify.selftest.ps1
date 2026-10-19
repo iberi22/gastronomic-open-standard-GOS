@@ -175,6 +175,16 @@ Invoke-Case "CAP_MISSING reports absent evidence beyond the 6-file analysis cap"
     Assert-True ($recs[7].Kind -eq "unanalyzed") "8th record Kind should be unanalyzed, got $($recs[7].Kind)" $Problems
     Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6, got $($r.evidence_exists)" $Problems
     Assert-True ($r.evidence_score_pct -eq 75) "evidence_score_pct should be 75, got $($r.evidence_score_pct)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-CAP-MISSING.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- MISS src/f7_absent.ps1") "7th file should be reported as MISS in markdown" $Problems
+        Assert-True ($mdText -match "- UNANALYZED src/f8.ps1 \(beyond analysis cap, exists, zero credit\)") "8th file should be reported as UNANALYZED in markdown" $Problems
+        Assert-True ($mdText -notmatch "- MISS src/f8.ps1") "8th file must not be reported as MISS in markdown" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
 }
 
 # ---------------------------------------------------------------- CASE: empty dir

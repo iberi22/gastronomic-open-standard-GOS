@@ -286,7 +286,8 @@ function Invoke-FeatureAnalysis {
         # (literal always wins); brackets in the pattern stay literal (round 3, P2).
         $globInfo = $null
         if (-not $abs -and (Test-ContainsGlobWildcard $rel)) {
-            $globInfo = Expand-ProjectGlobPath -ProjectRoot $root -RelOrAbs $rel -MaxFiles $DirectoryEvidenceFileCap -IgnoreRegex $DirectoryEvidenceIgnoreRegex
+            $maxToExpand = if ($capReached) { 1 } else { $DirectoryEvidenceFileCap }
+            $globInfo = Expand-ProjectGlobPath -ProjectRoot $root -RelOrAbs $rel -MaxFiles $maxToExpand -IgnoreRegex $DirectoryEvidenceIgnoreRegex
             if (-not $globInfo.Matched) { $globInfo = $null }
         }
 
@@ -695,6 +696,8 @@ foreach ($row in $selected) {
             [void]$sb.AppendLine("      abs=$($r.Abs)")
         } elseif ($r.Empty) {
             [void]$sb.AppendLine("- EMPTY_DIR $($r.Rel) (zero credit)")
+        } elseif ($r.Kind -eq "unanalyzed") {
+            [void]$sb.AppendLine("- UNANALYZED $($r.Rel) (beyond analysis cap, exists, zero credit)")
         } else {
             [void]$sb.AppendLine("- MISS $($r.Rel)")
         }
