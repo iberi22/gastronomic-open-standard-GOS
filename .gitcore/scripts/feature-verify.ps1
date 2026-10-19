@@ -278,7 +278,8 @@ function Invoke-FeatureAnalysis {
     $declared = $evidenceRels.Count
 
     foreach ($rel in $evidenceRels) {
-        if ($fileCount -ge $MaxFilesPerFeature) { break }
+        $capReached = ($fileCount -ge $MaxFilesPerFeature)
+
         $abs = Resolve-ProjectPath $root $rel
 
         # Declared * / ? evidence is expanded only when nothing literal exists for it
@@ -302,6 +303,17 @@ function Invoke-FeatureAnalysis {
                 Rel = $rel; Abs = $null; Exists = $false; Kind = "missing"; Empty = $false; ReadFailed = $false
                 TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
                 ExcerptOf = "not found"
+            }
+            continue
+        }
+
+        if ($capReached) {
+            $aggAbs = $abs
+            if ($globInfo) { $aggAbs = $globInfo.Pattern }
+            $resolved += [pscustomobject]@{
+                Rel = $rel; Abs = $aggAbs; Exists = $false; Kind = "unanalyzed"; Empty = $false; ReadFailed = $false
+                TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
+                ExcerptOf = "unanalyzed"
             }
             continue
         }

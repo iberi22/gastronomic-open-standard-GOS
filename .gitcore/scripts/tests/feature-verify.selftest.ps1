@@ -150,6 +150,33 @@ function Invoke-Verifier {
     return (Get-Content -LiteralPath $pack -Raw | ConvertFrom-Json)
 }
 
+# ------------------------------------------------------------- CASE: cap missing
+Invoke-Case "CAP_MISSING reports absent evidence beyond the 6-file analysis cap" {
+    param($Problems)
+    $dir = New-Fixture "cap-missing"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/f{0}.ps1" -f $i) "export const n$i = $i;" | Out-Null
+    }
+    New-FixtureFile $dir "src/f8.ps1" "export const n8 = 8;" | Out-Null
+
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/f$i.ps1" }
+    $declared += "src/f7_absent.ps1"
+    $declared += "src/f8.ps1"
+
+    New-FeatureFixture $dir "ST-CAP-MISSING" $declared
+    $r = Invoke-Verifier $dir "ST-CAP-MISSING"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($r.evidence_paths.Count -eq 8) "expected 8 declared paths, got $($r.evidence_paths.Count)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "the absent 7th path must count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($recs.Count -eq 8) "expected exactly 8 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "missing") "7th record Kind should be missing, got $($recs[6].Kind)" $Problems
+    Assert-True ($recs[7].Kind -eq "unanalyzed") "8th record Kind should be unanalyzed, got $($recs[7].Kind)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6, got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 75) "evidence_score_pct should be 75, got $($r.evidence_score_pct)" $Problems
+}
+
 # ---------------------------------------------------------------- CASE: empty dir
 Invoke-Case "EMPTY_DIR gives zero credit" {
     param($Problems)
