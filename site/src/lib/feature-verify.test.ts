@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import { existsSync, readFileSync } from 'node:fs'
-import { resolve, join, sep, relative } from 'node:path'
+import { existsSync } from 'node:fs'
+import { relative, resolve, sep } from 'node:path'
+import { describe, expect, it } from 'vitest'
 
 /**
  * Pruebas unitarias de la lógica del verificador de features (GitCore feature-verify).
@@ -22,7 +22,10 @@ interface EvidenceRecord {
   empty?: boolean
 }
 
-function normalizeEvidencePath(projectRoot: string, relPath: string): { abs: string | null; exists: boolean } {
+function normalizeEvidencePath(
+  projectRoot: string,
+  relPath: string,
+): { abs: string | null; exists: boolean } {
   const normalized = relPath.replace(/[\\/]/g, sep).replace(/^\.[\\/]/, '')
   const full = resolve(projectRoot, normalized)
   if (existsSync(full)) {
@@ -99,7 +102,9 @@ describe('GitCore feature-verify logic & markdown reporting', () => {
     expect(existingLine).not.toContain('- MISS site/src/lib/domain.ts')
 
     // Archivo ausente
-    expect(absentLine).toContain('- MISS site/src/lib/absent-file-xyz.ts (not found under project root)')
+    expect(absentLine).toContain(
+      '- MISS site/src/lib/absent-file-xyz.ts (not found under project root)',
+    )
   })
 
   it('el informe .md marca UNANALYZED en archivos más allá del cap de 6 archivos y nunca MISS', () => {
@@ -113,7 +118,9 @@ describe('GitCore feature-verify logic & markdown reporting', () => {
 
     const line = formatMarkdownEvidenceLine(root, unanalyzedRec)
 
-    expect(line).toContain('- UNANALYZED site/src/lib/extra-file.ts (beyond analysis cap, exists, zero credit)')
+    expect(line).toContain(
+      '- UNANALYZED site/src/lib/extra-file.ts (beyond analysis cap, exists, zero credit)',
+    )
     expect(line).not.toContain('- MISS site/src/lib/extra-file.ts')
   })
 })
