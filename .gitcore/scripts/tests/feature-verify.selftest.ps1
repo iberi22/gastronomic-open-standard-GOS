@@ -19,6 +19,10 @@
     GLOB-MISS      glob matching nothing -> missing
     BRACKET-GLOB   pages/[entity]/*.ts -> brackets literal, no char-class expansion
     COVERAGE       duplicate declared paths -> deduped, coverage <= 100
+    EXISTING       nested relative path that exists -> OK, never MISS (separator
+                   normalization: the old code forced `\`, so on Linux every
+                   path deeper than one directory was MISS with the file on disk)
+    ABSENT         a path that exists nowhere under the root -> MISS
 
   Exits 1 if any case fails, 0 when all pass. Prints PASS/FAIL per case.
 
@@ -185,6 +189,84 @@ Invoke-Case "CAP_MISSING reports absent evidence beyond the 6-file analysis cap"
     } else {
         Assert-True $false "markdown report file missing" $Problems
     }
+}
+
+# ------------------------------------------- CASE: existing nested rel path
+# The regression this repo actually had: 170 of 221 declared evidence paths were
+# printed as MISS while the files were on disk, because the resolver rewrote
+# `/` to `\` and then filtered candidates with a backslash literal that no
+# Linux path contains. One existing file and one absent file, side by side.
+Invoke-Case "EXISTING nested relative evidence is OK and the absent one is MISS" {
+    param($Problems)
+    $dir = New-Fixture "existing-nested"
+    New-FixtureFile $dir "site/src/lib/thing.ts" (((1..12 | ForEach-Object { "export const thing = $_;" }) -join "`n")) | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-NESTED" @("site/src/lib/thing.ts", "site/src/lib/absent.ts")
+    $r = Invoke-Verifier $dir "ST-EXISTING-NESTED"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 2) "expected 2 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Exists) "the existing nested file must be Exists=true, got $($recs[0].Exists)" $Problems
+    Assert-True ($recs[0].Kind -eq "file") "existing nested file Kind should be file, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 12) "existing nested file must be read (12 lines), got $($recs[0].TotalLines)" $Problems
+    Assert-True ($recs[1].Kind -eq "missing") "the absent file must be Kind=missing, got $($recs[1].Kind)" $Problems
+    Assert-True ($r.evidence_exists -eq 1) "evidence_exists should be 1, got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "evidence_missing should be 1, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 50) "evidence_score_pct should be 50 (1 of 2), got $($r.evidence_score_pct)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-EXISTING-NESTED.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- OK  \[CODE\] site/src/lib/thing.ts") "the existing file must be reported OK" $Problems
+        Assert-True ($mdText -notmatch "- MISS site/src/lib/thing.ts") "an existing file must never be reported MISS" $Problems
+        Assert-True ($mdText -match "- MISS site/src/lib/absent.ts \(not found under project root\)") "the absent file must be reported MISS" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------------------- CASE: separator spelling is normalized
+Invoke-Case "EXISTING evidence spelled with backslashes resolves on any host" {
+    param($Problems)
+    $dir = New-Fixture "existing-backslash"
+    New-FixtureFile $dir "site/src/lib/thing.ts" (((1..12 | ForEach-Object { "export const thing = $_;" }) -join "`n")) | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-BSLASH" @("site\src\lib\thing.ts")
+    $r = Invoke-Verifier $dir "ST-EXISTING-BSLASH"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Exists) "backslash-spelled evidence must resolve, got Exists=$($recs[0].Exists)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 12) "must read the file behind the backslash spelling, got $($recs[0].TotalLines) lines" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "backslash spelling must not count as missing, got $($r.evidence_missing)" $Problems
+}
+
+# ------------------------------------------- CASE: directory evidence is found
+Invoke-Case "EXISTING directory evidence is OK, not MISS" {
+    param($Problems)
+    $dir = New-Fixture "existing-dir"
+    New-FixtureFile $dir "site/src/pages/index.ts" "export const page = 1;" | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-DIR" @("site/src/pages/")
+    $r = Invoke-Verifier $dir "ST-EXISTING-DIR"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "directory") "declared directory must be a directory record, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].Exists) "an existing directory must not be MISS, got Exists=$($recs[0].Exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "an existing directory must not count as missing, got $($r.evidence_missing)" $Problems
+}
+
+# ------------------------------ CASE: MISS stays MISS when only the leaf matches
+Invoke-Case "MISS stays MISS when the leaf exists under another parent" {
+    param($Problems)
+    $dir = New-Fixture "wrong-parent"
+    New-FixtureFile $dir "site/src/lib/thing.ts" "export const thing = 1;" | Out-Null
+    New-FeatureFixture $dir "ST-WRONG-PARENT" @("worker/src/thing.ts")
+    $r = Invoke-Verifier $dir "ST-WRONG-PARENT"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "missing") "a path whose parent does not exist must stay missing, got $($recs[0].Kind)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "it must count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 0) "a same-named file elsewhere must not be credited, got $($r.evidence_exists)" $Problems
 }
 
 # ---------------------------------------------------------------- CASE: empty dir

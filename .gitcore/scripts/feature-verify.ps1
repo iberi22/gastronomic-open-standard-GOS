@@ -694,12 +694,28 @@ foreach ($row in $selected) {
             if ($r.ReadFailed) { $extra += "  READ_FAILED (zero credit)" }
             [void]$sb.AppendLine("- OK  [$tag] $($r.Rel)  lines=$($r.TotalLines)  excerpt=$($r.ExcerptOf)$extra")
             [void]$sb.AppendLine("      abs=$($r.Abs)")
+            # The path the verifier ACTUALLY read, normalized and relative to the
+            # project root. `Rel` keeps the spelling from features.json (which may
+            # carry `./`, `\` or `..`), so without this line a reader cannot tell
+            # whether the declared path and the opened file are the same one.
+            if ($r.Abs) {
+                $readRel = Get-RelPathFromRoot $root $r.Abs
+                if ($readRel -and $readRel -ne $r.Rel) {
+                    [void]$sb.AppendLine("      rel=$readRel")
+                }
+            }
         } elseif ($r.Empty) {
             [void]$sb.AppendLine("- EMPTY_DIR $($r.Rel) (zero credit)")
         } elseif ($r.Kind -eq "unanalyzed") {
+            # Beyond the analysis cap: the path exists (or is a glob that matched),
+            # it just was not opened. It is NOT missing evidence, and it must never
+            # be printed as MISS: that is what made the report claim files were
+            # absent while they were on disk.
             [void]$sb.AppendLine("- UNANALYZED $($r.Rel) (beyond analysis cap, exists, zero credit)")
         } else {
-            [void]$sb.AppendLine("- MISS $($r.Rel)")
+            # MISS means one thing only: nothing with that name was found under the
+            # project root (literal, normalized or fuzzy).
+            [void]$sb.AppendLine("- MISS $($r.Rel) (not found under project root)")
         }
     }
 
