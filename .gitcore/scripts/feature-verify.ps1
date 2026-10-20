@@ -168,7 +168,8 @@ function Get-NormalizedEvidenceKey([string]$PathText) {
 function Get-RelPathFromRoot([string]$Root, [string]$Full) {
     $r = ($Root -replace '\\', '/').TrimEnd('/')
     $f = ($Full -replace '\\', '/')
-    if ($f.StartsWith($r, [System.StringComparison]::OrdinalIgnoreCase)) {
+    # Require a path-segment boundary: root `/a/proj` must not claim `/a/proj2/x`.
+    if ($f.StartsWith("$r/", [System.StringComparison]::OrdinalIgnoreCase)) {
         return $f.Substring($r.Length).TrimStart('/')
     }
     return $f
@@ -278,14 +279,19 @@ function Invoke-FeatureAnalysis {
     $declared = $evidenceRels.Count
 
     foreach ($rel in $evidenceRels) {
-        if ($fileCount -ge $MaxFilesPerFeature) { break }
-        $abs = Resolve-ProjectPath $root $rel
+        $capReached = ($fileCount -ge $MaxFilesPerFeature)
+
+        # The resolver throws for a path that climbs above the root. That must not abort
+        # the whole report: such a path is simply not found (MISS).
+        $abs = $null
+        try { $abs = Resolve-ProjectPath $root $rel } catch { $abs = $null }
 
         # Declared * / ? evidence is expanded only when nothing literal exists for it
         # (literal always wins); brackets in the pattern stay literal (round 3, P2).
         $globInfo = $null
         if (-not $abs -and (Test-ContainsGlobWildcard $rel)) {
-            $globInfo = Expand-ProjectGlobPath -ProjectRoot $root -RelOrAbs $rel -MaxFiles $DirectoryEvidenceFileCap -IgnoreRegex $DirectoryEvidenceIgnoreRegex
+            $maxToExpand = if ($capReached) { 1 } else { $DirectoryEvidenceFileCap }
+            $globInfo = Expand-ProjectGlobPath -ProjectRoot $root -RelOrAbs $rel -MaxFiles $maxToExpand -IgnoreRegex $DirectoryEvidenceIgnoreRegex
             if (-not $globInfo.Matched) { $globInfo = $null }
         }
 
@@ -302,6 +308,17 @@ function Invoke-FeatureAnalysis {
                 Rel = $rel; Abs = $null; Exists = $false; Kind = "missing"; Empty = $false; ReadFailed = $false
                 TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
                 ExcerptOf = "not found"
+            }
+            continue
+        }
+
+        if ($capReached) {
+            $aggAbs = $abs
+            if ($globInfo) { $aggAbs = $globInfo.Pattern }
+            $resolved += [pscustomobject]@{
+                Rel = $rel; Abs = $aggAbs; Exists = $false; Kind = "unanalyzed"; Empty = $false; ReadFailed = $false
+                TotalLines = 0; Bytes = 0; IsTest = $false; FileCount = 0; FileCountTotal = 0; FilesCapped = $false
+                ExcerptOf = "unanalyzed"
             }
             continue
         }
@@ -681,10 +698,31 @@ foreach ($row in $selected) {
             if ($r.ReadFailed) { $extra += "  READ_FAILED (zero credit)" }
             [void]$sb.AppendLine("- OK  [$tag] $($r.Rel)  lines=$($r.TotalLines)  excerpt=$($r.ExcerptOf)$extra")
             [void]$sb.AppendLine("      abs=$($r.Abs)")
+            # The path the verifier ACTUALLY read, normalized and relative to the
+            # project root. `Rel` keeps the spelling from features.json (which may
+            # carry `./`, `\` or `..`), so without this line a reader cannot tell
+            # whether the declared path and the opened file are the same one.
+            if ($r.Abs) {
+                $readRel = Get-RelPathFromRoot $root $r.Abs
+                # Only print paths that are really inside the root; an outside path
+                # (absolute or `..`) is never echoed as rel=.
+                $insideRoot = $readRel -and -not [System.IO.Path]::IsPathRooted($readRel) -and -not $readRel.StartsWith("..")
+                if ($insideRoot -and $readRel -ne $r.Rel) {
+                    [void]$sb.AppendLine("      rel=$readRel")
+                }
+            }
         } elseif ($r.Empty) {
             [void]$sb.AppendLine("- EMPTY_DIR $($r.Rel) (zero credit)")
+        } elseif ($r.Kind -eq "unanalyzed") {
+            # Beyond the analysis cap: the path exists (or is a glob that matched),
+            # it just was not opened. It is NOT missing evidence, and it must never
+            # be printed as MISS: that is what made the report claim files were
+            # absent while they were on disk.
+            [void]$sb.AppendLine("- UNANALYZED $($r.Rel) (beyond analysis cap, exists, zero credit)")
         } else {
-            [void]$sb.AppendLine("- MISS $($r.Rel)")
+            # MISS means one thing only: nothing with that name was found under the
+            # project root (literal, normalized or fuzzy).
+            [void]$sb.AppendLine("- MISS $($r.Rel) (no literal or fuzzy match under project root)")
         }
     }
 

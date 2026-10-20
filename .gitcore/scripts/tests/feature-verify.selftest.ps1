@@ -19,6 +19,13 @@
     GLOB-MISS      glob matching nothing -> missing
     BRACKET-GLOB   pages/[entity]/*.ts -> brackets literal, no char-class expansion
     COVERAGE       duplicate declared paths -> deduped, coverage <= 100
+    EXISTING       nested relative path that exists -> OK, never MISS (regression
+                   guard for separator handling; passes against origin/main)
+    ABSENT         a path that exists nowhere under the root -> MISS
+    CAP_ABSENT_BEYOND  absent paths past the 6-file cap -> MISS (never OK); existing
+                   ones past the cap -> UNANALYZED (never MISS)
+    GLOB_BEYOND_CAP    glob past the cap: matching -> UNANALYZED and not read; no match -> MISS
+    SEPARATORS     ./ and mixed \ and / spellings of existing files -> OK
 
   Exits 1 if any case fails, 0 when all pass. Prints PASS/FAIL per case.
 
@@ -142,12 +149,128 @@ function Invoke-Verifier {
         "-OutDir", $out
     )
     $raw = & $script:PwshExe @argList 2>&1 | Out-String
+    $script:LastVerifierExit = $LASTEXITCODE
     $safe = ($Id -replace '[^\w\-]', '_')
     $pack = Join-Path $out "feature-$safe.json"
     if (-not (Test-Path -LiteralPath $pack)) {
-        throw "verifier produced no pack ($pack); output: $raw"
+        throw "verifier produced no pack ($pack), exit=$($script:LastVerifierExit); output: $raw"
     }
     return (Get-Content -LiteralPath $pack -Raw | ConvertFrom-Json)
+}
+
+# ------------------------------------------------------------- CASE: cap missing
+Invoke-Case "CAP_MISSING reports absent evidence beyond the 6-file analysis cap" {
+    param($Problems)
+    $dir = New-Fixture "cap-missing"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/f{0}.ps1" -f $i) "export const n$i = $i;" | Out-Null
+    }
+    New-FixtureFile $dir "src/f8.ps1" "export const n8 = 8;" | Out-Null
+
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/f$i.ps1" }
+    $declared += "src/f7_absent.ps1"
+    $declared += "src/f8.ps1"
+
+    New-FeatureFixture $dir "ST-CAP-MISSING" $declared
+    $r = Invoke-Verifier $dir "ST-CAP-MISSING"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($r.evidence_paths.Count -eq 8) "expected 8 declared paths, got $($r.evidence_paths.Count)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "the absent 7th path must count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($recs.Count -eq 8) "expected exactly 8 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "missing") "7th record Kind should be missing, got $($recs[6].Kind)" $Problems
+    Assert-True ($recs[7].Kind -eq "unanalyzed") "8th record Kind should be unanalyzed, got $($recs[7].Kind)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6, got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 75) "evidence_score_pct should be 75, got $($r.evidence_score_pct)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-CAP-MISSING.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- MISS src/f7_absent.ps1") "7th file should be reported as MISS in markdown" $Problems
+        Assert-True ($mdText -match "- UNANALYZED src/f8.ps1 \(beyond analysis cap, exists, zero credit\)") "8th file should be reported as UNANALYZED in markdown" $Problems
+        Assert-True ($mdText -notmatch "- MISS src/f8.ps1") "8th file must not be reported as MISS in markdown" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------------------------- CASE: existing nested rel path
+# Regression guard: an existing nested file and an absent file, side by side.
+# Against origin/main's resolver on pwsh 7.5 Linux this passes; it guards the
+# separator handling in Resolve-ProjectPath (the PR commit history reports the
+# earlier `/`-to-`\` rewrite as the cause of MISS on existing files).
+Invoke-Case "EXISTING nested relative evidence is OK and the absent one is MISS" {
+    param($Problems)
+    $dir = New-Fixture "existing-nested"
+    New-FixtureFile $dir "site/src/lib/thing.ts" (((1..12 | ForEach-Object { "export const thing = $_;" }) -join "`n")) | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-NESTED" @("site/src/lib/thing.ts", "site/src/lib/absent.ts")
+    $r = Invoke-Verifier $dir "ST-EXISTING-NESTED"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 2) "expected 2 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Exists) "the existing nested file must be Exists=true, got $($recs[0].Exists)" $Problems
+    Assert-True ($recs[0].Kind -eq "file") "existing nested file Kind should be file, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 12) "existing nested file must be read (12 lines), got $($recs[0].TotalLines)" $Problems
+    Assert-True ($recs[1].Kind -eq "missing") "the absent file must be Kind=missing, got $($recs[1].Kind)" $Problems
+    Assert-True ($r.evidence_exists -eq 1) "evidence_exists should be 1, got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "evidence_missing should be 1, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_score_pct -eq 50) "evidence_score_pct should be 50 (1 of 2), got $($r.evidence_score_pct)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-EXISTING-NESTED.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- OK  \[CODE\] site/src/lib/thing.ts") "the existing file must be reported OK" $Problems
+        Assert-True ($mdText -notmatch "- MISS site/src/lib/thing.ts") "an existing file must never be reported MISS" $Problems
+        Assert-True ($mdText -match "- MISS site/src/lib/absent.ts \(no literal or fuzzy match under project root\)") "the absent file must be reported MISS" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------------------- CASE: separator spelling is normalized
+Invoke-Case "EXISTING evidence spelled with backslashes resolves on any host" {
+    param($Problems)
+    $dir = New-Fixture "existing-backslash"
+    New-FixtureFile $dir "site/src/lib/thing.ts" (((1..12 | ForEach-Object { "export const thing = $_;" }) -join "`n")) | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-BSLASH" @("site\src\lib\thing.ts")
+    $r = Invoke-Verifier $dir "ST-EXISTING-BSLASH"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Exists) "backslash-spelled evidence must resolve, got Exists=$($recs[0].Exists)" $Problems
+    Assert-True ($recs[0].TotalLines -eq 12) "must read the file behind the backslash spelling, got $($recs[0].TotalLines) lines" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "backslash spelling must not count as missing, got $($r.evidence_missing)" $Problems
+}
+
+# ------------------------------------------- CASE: directory evidence is found
+Invoke-Case "EXISTING directory evidence is OK, not MISS" {
+    param($Problems)
+    $dir = New-Fixture "existing-dir"
+    New-FixtureFile $dir "site/src/pages/index.ts" "export const page = 1;" | Out-Null
+    New-FeatureFixture $dir "ST-EXISTING-DIR" @("site/src/pages/")
+    $r = Invoke-Verifier $dir "ST-EXISTING-DIR"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "directory") "declared directory must be a directory record, got $($recs[0].Kind)" $Problems
+    Assert-True ($recs[0].Exists) "an existing directory must not be MISS, got Exists=$($recs[0].Exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "an existing directory must not count as missing, got $($r.evidence_missing)" $Problems
+}
+
+# ------------------------------ CASE: MISS stays MISS when only the leaf matches
+Invoke-Case "MISS stays MISS when the leaf exists under another parent" {
+    param($Problems)
+    $dir = New-Fixture "wrong-parent"
+    New-FixtureFile $dir "site/src/lib/thing.ts" "export const thing = 1;" | Out-Null
+    New-FeatureFixture $dir "ST-WRONG-PARENT" @("worker/src/thing.ts")
+    $r = Invoke-Verifier $dir "ST-WRONG-PARENT"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 1) "expected 1 evidence record, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Kind -eq "missing") "a path whose parent does not exist must stay missing, got $($recs[0].Kind)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "it must count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 0) "a same-named file elsewhere must not be credited, got $($r.evidence_exists)" $Problems
 }
 
 # ---------------------------------------------------------------- CASE: empty dir
@@ -363,6 +486,163 @@ Invoke-Case "COVERAGE stays <= 100 with duplicate declared paths" {
     Assert-True ($rB.evidence_score_pct -le 100) "coverage must never exceed 100, got $($rB.evidence_score_pct)" $Problems
     Assert-True (@($rB.evidence_resolved).Count -eq 1) "expected exactly 1 record for same-target spellings, got $(@($rB.evidence_resolved).Count)" $Problems
     Assert-True ($rB.evidence_exists -eq 1) "the target must be credited exactly once, got $($rB.evidence_exists)" $Problems
+}
+
+# ------------------------------------- CASE: absent paths beyond the cap stay MISS
+# Guards against a false OK: past the 6-file analysis cap, a path that does not
+# exist must still be reported missing (no credit, never Exists/OK), while a path
+# that exists but was not opened is UNANALYZED (never MISS).
+Invoke-Case "CAP_ABSENT_BEYOND absent paths past the cap are MISS, never OK" {
+    param($Problems)
+    $dir = New-Fixture "cap-absent-beyond"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/g{0}.ps1" -f $i) "export const g$i = $i;" | Out-Null
+    }
+    New-FixtureFile $dir "src/g9.ps1" "export const g9 = 9;" | Out-Null
+
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/g$i.ps1" }
+    $declared += "src/absent-b.ps1"
+    $declared += "src/absent-c.ps1"
+    $declared += "src/g9.ps1"
+
+    New-FeatureFixture $dir "ST-CAP-ABSENT" $declared
+    $r = Invoke-Verifier $dir "ST-CAP-ABSENT"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 9) "expected 9 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "missing" -and -not $recs[6].Exists) "absent path beyond cap must be Kind=missing and not Exists, got Kind=$($recs[6].Kind) Exists=$($recs[6].Exists)" $Problems
+    Assert-True ($recs[7].Kind -eq "missing" -and -not $recs[7].Exists) "second absent path beyond cap must be Kind=missing and not Exists, got Kind=$($recs[7].Kind) Exists=$($recs[7].Exists)" $Problems
+    Assert-True ($recs[8].Kind -eq "unanalyzed" -and -not $recs[8].Exists) "existing path beyond cap must be Kind=unanalyzed, got $($recs[8].Kind)" $Problems
+    Assert-True ($r.evidence_missing -eq 2) "evidence_missing should be 2 (the two absent paths), got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6 (no credit beyond cap), got $($r.evidence_exists)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-CAP-ABSENT.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- MISS src/absent-b.ps1 \(no literal or fuzzy match under project root\)") "absent-b must be MISS in markdown" $Problems
+        Assert-True ($mdText -match "- MISS src/absent-c.ps1 \(no literal or fuzzy match under project root\)") "absent-c must be MISS in markdown" $Problems
+        Assert-True ($mdText -notmatch "- OK  \[[A-Z]+\] src/absent") "an absent path must never be OK in markdown" $Problems
+        Assert-True ($mdText -match "- UNANALYZED src/g9.ps1 \(beyond analysis cap, exists, zero credit\)") "existing g9 must be UNANALYZED in markdown" $Problems
+        Assert-True ($mdText -notmatch "- MISS src/g9.ps1") "existing g9 must never be MISS in markdown" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: glob past the cap is unanalyzed, not expanded or credited
+Invoke-Case "GLOB_BEYOND_CAP a matching glob past the cap is UNANALYZED, a non-matching one MISS" {
+    param($Problems)
+    $dir = New-Fixture "glob-beyond-cap"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/h{0}.ps1" -f $i) "export const h$i = $i;" | Out-Null
+    }
+    New-FixtureFile $dir "src/lib/a.test.ts" ("expect(1).toBe(1);`n" * 20) | Out-Null
+    New-FixtureFile $dir "src/lib/b.test.ts" ("expect(2).toBe(2);`n" * 12) | Out-Null
+
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/h$i.ps1" }
+    $declared += "src/lib/*.test.ts"
+    $declared += "src/none/*.ts"
+
+    New-FeatureFixture $dir "ST-GLOB-BEYOND" $declared
+    $r = Invoke-Verifier $dir "ST-GLOB-BEYOND"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 8) "expected 8 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "unanalyzed" -and -not $recs[6].Exists) "matching glob past the cap must be Kind=unanalyzed and not Exists, got Kind=$($recs[6].Kind)" $Problems
+    Assert-True ($recs[6].FileCount -eq 0 -and $recs[6].TotalLines -eq 0) "matching glob past the cap must not be read (FileCount=$($recs[6].FileCount), TotalLines=$($recs[6].TotalLines))" $Problems
+    Assert-True ($recs[7].Kind -eq "missing" -and -not $recs[7].Exists) "non-matching glob past the cap must be Kind=missing, got $($recs[7].Kind)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6 (no credit beyond cap), got $($r.evidence_exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "evidence_missing should be 1 (only the non-matching glob), got $($r.evidence_missing)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-GLOB-BEYOND.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- UNANALYZED src/lib/\*.test.ts \(beyond analysis cap, exists, zero credit\)") "matching glob past the cap must be UNANALYZED in markdown" $Problems
+        Assert-True ($mdText -match "- MISS src/none/\*.ts") "non-matching glob past the cap must be MISS in markdown" $Problems
+        Assert-True ($mdText -notmatch "- MISS src/lib/\*.test.ts") "matching glob must never be MISS in markdown" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: mixed and ./ separator spellings resolve, never MISS
+Invoke-Case "SEPARATORS mixed and ./ spellings of existing nested files resolve OK" {
+    param($Problems)
+    $dir = New-Fixture "separators-mixed"
+    New-FixtureFile $dir "site/src/lib/thing.ts" (((1..12 | ForEach-Object { "export const thing = $_;" }) -join "`n")) | Out-Null
+    New-FixtureFile $dir "site/src/lib/other.ts" (((1..9 | ForEach-Object { "export const other = $_;" }) -join "`n")) | Out-Null
+    New-FeatureFixture $dir "ST-SEPARATORS" @("./site/src/lib/thing.ts", "site\src/lib/other.ts")
+    $r = Invoke-Verifier $dir "ST-SEPARATORS"
+    $recs = @($r.evidence_resolved)
+
+    Assert-True ($recs.Count -eq 2) "expected 2 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[0].Exists -and $recs[0].TotalLines -eq 12) "./-prefixed path must resolve and be read (12 lines), got Exists=$($recs[0].Exists) lines=$($recs[0].TotalLines)" $Problems
+    Assert-True ($recs[1].Exists -and $recs[1].TotalLines -eq 9) "mixed-separator path must resolve and be read (9 lines), got Exists=$($recs[1].Exists) lines=$($recs[1].TotalLines)" $Problems
+    Assert-True ($r.evidence_missing -eq 0) "neither spelling may count as missing, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 2) "evidence_exists should be 2, got $($r.evidence_exists)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-SEPARATORS.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -notmatch "- MISS ") "no evidence line may be MISS for existing files" $Problems
+        Assert-True ($mdText -match "(?m)^      rel=site/src/lib/thing\.ts\r?$") "./-spelled path must print the normalized rel= line (site/src/lib/thing.ts)" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: traversal above the root must not abort the verifier
+# A declared path past the 6-file cap that climbs above the project root used to
+# make the resolver throw ("outside the base"), which exited 1 before any report
+# was written. The verifier must finish (exit 0) and report it as missing.
+Invoke-Case "TRAVERSAL_ABOVE_ROOT a path past the cap that climbs above the root exits 0 and is missing" {
+    param($Problems)
+    $dir = New-Fixture "traversal-above-root"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/t{0}.ps1" -f $i) "export const t$i = $i;" | Out-Null
+    }
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/t$i.ps1" }
+    $declared += "../../../../../../etc/hostname"
+
+    New-FeatureFixture $dir "ST-TRAVERSAL" $declared
+    $r = Invoke-Verifier $dir "ST-TRAVERSAL"
+    Assert-True ($script:LastVerifierExit -eq 0) "verifier must exit 0, got $($script:LastVerifierExit)" $Problems
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 7) "expected 7 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "missing" -and -not $recs[6].Exists) "path above the root must be Kind=missing and not Exists, got Kind=$($recs[6].Kind) Exists=$($recs[6].Exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "evidence_missing should be 1, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6, got $($r.evidence_exists)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-TRAVERSAL.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- MISS \.\./\.\./\.\./\.\./\.\./\.\./etc/hostname") "traversal path must be MISS in markdown" $Problems
+        Assert-True ($mdText -notmatch "rel=/") "no absolute path may be printed as rel= for paths outside the root" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: a relative path that resolves outside the root is not echoed as rel=
+Invoke-Case "OUTSIDE_ROOT a ../ path that resolves outside the root gets no rel= line" {
+    param($Problems)
+    $dir = New-Fixture "outside-root"
+    $outside = Join-Path $script:Root "outside-root-file.ts"
+    Set-Content -LiteralPath $outside -Value (((1..5 | ForEach-Object { "export const o = $_;" }) -join "`n")) -Encoding UTF8
+    New-FeatureFixture $dir "ST-OUTSIDE" @("../outside-root-file.ts")
+    $r = Invoke-Verifier $dir "ST-OUTSIDE"
+    Assert-True ($script:LastVerifierExit -eq 0) "verifier must exit 0, got $($script:LastVerifierExit)" $Problems
+    $mdFile = Join-Path $dir "verify-out/feature-ST-OUTSIDE.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "(?m)^- OK  \[CODE\] \.\./outside-root-file\.ts") "the ../ path must still be read and reported OK" $Problems
+        Assert-True ($mdText -notmatch "(?m)^      rel=") "an outside-root path must not print a rel= line" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
 }
 
 Write-Host ""
