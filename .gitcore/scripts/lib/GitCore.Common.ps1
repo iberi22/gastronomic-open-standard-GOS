@@ -276,40 +276,21 @@ function Resolve-ProjectPath {
     param([string]$ProjectRoot, [string]$RelOrAbs)
     if ([string]::IsNullOrWhiteSpace($RelOrAbs)) { return $null }
 
-    # ---- normalize separators to the separator of THIS host ----
-    #
-    # features.json declares evidence with `/` (`site/src/lib/x.ts`), but a
-    # contributor on Windows may write `\`. Both spellings name the same file,
-    # so the path is rewritten to the separator of the host before it touches
-    # the filesystem.
-    #
-    # Why this is not cosmetic: the previous code forced `\`
-    # (`$RelOrAbs -replace '/', '\'`). On Linux a backslash is a legal file
-    # name character, NOT a separator, so `site/src/lib/x.ts` became the single
-    # (nonexistent) file `site\src\lib\x.ts`; the fuzzy fallback below then
-    # filtered its candidates with that same backslash literal, which no Linux
-    # path contains. Every declared path with more than one directory level was
-    # reported MISS with the file sitting on disk: 170 of the 221 evidence
-    # paths of this repo. `Expand-ProjectGlobPath` already normalized this way.
-    $sep = [System.IO.Path]::DirectorySeparatorChar
-    $norm = ($RelOrAbs -replace '[\\/]', $sep).Trim()
-    while ($norm.StartsWith(".$sep")) { $norm = $norm.Substring(2) }
-
     if ([System.IO.Path]::IsPathRooted($RelOrAbs)) {
-        if (Test-Path -LiteralPath $norm) { return (Resolve-Path -LiteralPath $norm).Path }
+        if (Test-Path -LiteralPath $RelOrAbs) { return (Resolve-Path -LiteralPath $RelOrAbs).Path }
     }
 
-    if ($ProjectRoot) {
-        $joined = Join-Path $ProjectRoot $norm
-        if (Test-Path -LiteralPath $joined) { return (Resolve-Path -LiteralPath $joined).Path }
-    } elseif (Test-Path -LiteralPath $norm) {
-        return (Resolve-Path -LiteralPath $norm).Path
-    }
+    $joined = Join-Path $ProjectRoot ($RelOrAbs -replace '/', '\')
+    if (Test-Path -LiteralPath $joined) { return (Resolve-Path -LiteralPath $joined).Path }
+
+    # try without leading ./
+    $clean = $RelOrAbs -replace '^\./', '' -replace '^\.\\', ''
+    $joined2 = Join-Path $ProjectRoot ($clean -replace '/', '\')
+    if (Test-Path -LiteralPath $joined2) { return (Resolve-Path -LiteralPath $joined2).Path }
 
     # Fuzzy: evidence often listed as tests/foo but lives under apps/*/tests/foo
-    $trimmed = $norm.TrimEnd($sep)
-    $leaf = Split-Path $trimmed -Leaf
-    $parentLeaf = Split-Path $trimmed -Parent
+    $leaf = Split-Path $clean -Leaf
+    $parentLeaf = Split-Path $clean -Parent
     $searchRoots = @(
         (Join-Path $ProjectRoot "apps"),
         (Join-Path $ProjectRoot "packages"),
@@ -324,33 +305,22 @@ function Resolve-ProjectPath {
         # A declared * / ? pattern is expanded later by Expand-ProjectGlobPath, which escapes
         # brackets so they stay literal (review round 3, P2).
         if ($leaf -match '[\*\?\[]') { break }
-        # The parent filter compares against the separator of THIS host. With a
-        # hardcoded `\` it matched nothing on Linux, so the whole fuzzy pass
-        # returned $null for `site/src/lib/x.ts` even though the file exists.
-        $parentPattern = if ($parentLeaf -and $parentLeaf -ne '.' -and $parentLeaf -ne '') {
-            [regex]::Escape(($parentLeaf -replace '[\\/]', $sep))
-        } else { $null }
-        $keepCandidate = {
-            if ($_.Name -ne $leaf) { return $false }
-            if (-not $parentPattern) { return $true }
-            return $_.FullName -match $parentPattern
-        }
-        # Files first: a declared path is a file far more often than a directory.
+        # exact relative under apps/*
         $hits = @(Get-ChildItem -LiteralPath $sr -Recurse -File -Filter $leaf -ErrorAction SilentlyContinue |
-            Where-Object $keepCandidate | Sort-Object -Property FullName | Select-Object -First 3)
-        if ($hits.Count -eq 0) {
-            # A declared directory (`site/src/pages/`) is evidence too, and the
-            # file-only search above can never find one.
-            $hits = @(Get-ChildItem -LiteralPath $sr -Recurse -Directory -Filter $leaf -ErrorAction SilentlyContinue |
-                Where-Object $keepCandidate | Sort-Object -Property FullName | Select-Object -First 3)
-        }
+            Where-Object {
+                $full = $_.FullName
+                if ($_.Name -ne $leaf) { return $false }
+                if ($parentLeaf -and $parentLeaf -ne '.' -and $parentLeaf -ne '') {
+                    $full -match [regex]::Escape(($parentLeaf -replace '/', '\'))
+                } else { $true }
+            } | Select-Object -First 3)
         if ($hits.Count -eq 1) {
             return $hits[0].FullName
         }
         if ($hits.Count -gt 1) {
             # prefer path that ends with the declared relative
-            $declaredNorm = ($trimmed -replace '[\\/]', $sep).ToLowerInvariant()
-            $best = $hits | Where-Object { $_.FullName.ToLowerInvariant().EndsWith($declaredNorm) } | Select-Object -First 1
+            $norm = ($clean -replace '/', '\').ToLowerInvariant()
+            $best = $hits | Where-Object { $_.FullName.ToLowerInvariant().EndsWith($norm) } | Select-Object -First 1
             if ($best) { return $best.FullName }
             return $hits[0].FullName
         }
