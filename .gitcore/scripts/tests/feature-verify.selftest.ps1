@@ -19,9 +19,8 @@
     GLOB-MISS      glob matching nothing -> missing
     BRACKET-GLOB   pages/[entity]/*.ts -> brackets literal, no char-class expansion
     COVERAGE       duplicate declared paths -> deduped, coverage <= 100
-    EXISTING       nested relative path that exists -> OK, never MISS (separator
-                   normalization: the old code forced `\`, so on Linux every
-                   path deeper than one directory was MISS with the file on disk)
+    EXISTING       nested relative path that exists -> OK, never MISS (regression
+                   guard for separator handling; passes against origin/main)
     ABSENT         a path that exists nowhere under the root -> MISS
     CAP_ABSENT_BEYOND  absent paths past the 6-file cap -> MISS (never OK); existing
                    ones past the cap -> UNANALYZED (never MISS)
@@ -150,10 +149,11 @@ function Invoke-Verifier {
         "-OutDir", $out
     )
     $raw = & $script:PwshExe @argList 2>&1 | Out-String
+    $script:LastVerifierExit = $LASTEXITCODE
     $safe = ($Id -replace '[^\w\-]', '_')
     $pack = Join-Path $out "feature-$safe.json"
     if (-not (Test-Path -LiteralPath $pack)) {
-        throw "verifier produced no pack ($pack); output: $raw"
+        throw "verifier produced no pack ($pack), exit=$($script:LastVerifierExit); output: $raw"
     }
     return (Get-Content -LiteralPath $pack -Raw | ConvertFrom-Json)
 }
@@ -196,10 +196,10 @@ Invoke-Case "CAP_MISSING reports absent evidence beyond the 6-file analysis cap"
 }
 
 # ------------------------------------------- CASE: existing nested rel path
-# The regression this repo actually had: 170 of 221 declared evidence paths were
-# printed as MISS while the files were on disk, because the resolver rewrote
-# `/` to `\` and then filtered candidates with a backslash literal that no
-# Linux path contains. One existing file and one absent file, side by side.
+# Regression guard: an existing nested file and an absent file, side by side.
+# Against origin/main's resolver on pwsh 7.5 Linux this passes; it guards the
+# separator handling in Resolve-ProjectPath (the PR commit history reports the
+# earlier `/`-to-`\` rewrite as the cause of MISS on existing files).
 Invoke-Case "EXISTING nested relative evidence is OK and the absent one is MISS" {
     param($Problems)
     $dir = New-Fixture "existing-nested"
@@ -222,7 +222,7 @@ Invoke-Case "EXISTING nested relative evidence is OK and the absent one is MISS"
         $mdText = Get-Content $mdFile -Raw
         Assert-True ($mdText -match "- OK  \[CODE\] site/src/lib/thing.ts") "the existing file must be reported OK" $Problems
         Assert-True ($mdText -notmatch "- MISS site/src/lib/thing.ts") "an existing file must never be reported MISS" $Problems
-        Assert-True ($mdText -match "- MISS site/src/lib/absent.ts \(not found under project root\)") "the absent file must be reported MISS" $Problems
+        Assert-True ($mdText -match "- MISS site/src/lib/absent.ts \(no literal or fuzzy match under project root\)") "the absent file must be reported MISS" $Problems
     } else {
         Assert-True $false "markdown report file missing" $Problems
     }
@@ -520,8 +520,8 @@ Invoke-Case "CAP_ABSENT_BEYOND absent paths past the cap are MISS, never OK" {
     $mdFile = Join-Path $dir "verify-out/feature-ST-CAP-ABSENT.md"
     if (Test-Path $mdFile) {
         $mdText = Get-Content $mdFile -Raw
-        Assert-True ($mdText -match "- MISS src/absent-b.ps1 \(not found under project root\)") "absent-b must be MISS in markdown" $Problems
-        Assert-True ($mdText -match "- MISS src/absent-c.ps1 \(not found under project root\)") "absent-c must be MISS in markdown" $Problems
+        Assert-True ($mdText -match "- MISS src/absent-b.ps1 \(no literal or fuzzy match under project root\)") "absent-b must be MISS in markdown" $Problems
+        Assert-True ($mdText -match "- MISS src/absent-c.ps1 \(no literal or fuzzy match under project root\)") "absent-c must be MISS in markdown" $Problems
         Assert-True ($mdText -notmatch "- OK  \[[A-Z]+\] src/absent") "an absent path must never be OK in markdown" $Problems
         Assert-True ($mdText -match "- UNANALYZED src/g9.ps1 \(beyond analysis cap, exists, zero credit\)") "existing g9 must be UNANALYZED in markdown" $Problems
         Assert-True ($mdText -notmatch "- MISS src/g9.ps1") "existing g9 must never be MISS in markdown" $Problems
@@ -587,6 +587,59 @@ Invoke-Case "SEPARATORS mixed and ./ spellings of existing nested files resolve 
     if (Test-Path $mdFile) {
         $mdText = Get-Content $mdFile -Raw
         Assert-True ($mdText -notmatch "- MISS ") "no evidence line may be MISS for existing files" $Problems
+        Assert-True ($mdText -match "(?m)^      rel=site/src/lib/thing\.ts\r?$") "./-spelled path must print the normalized rel= line (site/src/lib/thing.ts)" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: traversal above the root must not abort the verifier
+# A declared path past the 6-file cap that climbs above the project root used to
+# make the resolver throw ("outside the base"), which exited 1 before any report
+# was written. The verifier must finish (exit 0) and report it as missing.
+Invoke-Case "TRAVERSAL_ABOVE_ROOT a path past the cap that climbs above the root exits 0 and is missing" {
+    param($Problems)
+    $dir = New-Fixture "traversal-above-root"
+    for ($i = 1; $i -le 6; $i++) {
+        New-FixtureFile $dir ("src/t{0}.ps1" -f $i) "export const t$i = $i;" | Out-Null
+    }
+    $declared = @()
+    for ($i = 1; $i -le 6; $i++) { $declared += "src/t$i.ps1" }
+    $declared += "../../../../../../etc/hostname"
+
+    New-FeatureFixture $dir "ST-TRAVERSAL" $declared
+    $r = Invoke-Verifier $dir "ST-TRAVERSAL"
+    Assert-True ($script:LastVerifierExit -eq 0) "verifier must exit 0, got $($script:LastVerifierExit)" $Problems
+    $recs = @($r.evidence_resolved)
+    Assert-True ($recs.Count -eq 7) "expected 7 evidence records, got $($recs.Count)" $Problems
+    Assert-True ($recs[6].Kind -eq "missing" -and -not $recs[6].Exists) "path above the root must be Kind=missing and not Exists, got Kind=$($recs[6].Kind) Exists=$($recs[6].Exists)" $Problems
+    Assert-True ($r.evidence_missing -eq 1) "evidence_missing should be 1, got $($r.evidence_missing)" $Problems
+    Assert-True ($r.evidence_exists -eq 6) "evidence_exists should be 6, got $($r.evidence_exists)" $Problems
+
+    $mdFile = Join-Path $dir "verify-out/feature-ST-TRAVERSAL.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "- MISS \.\./\.\./\.\./\.\./\.\./\.\./etc/hostname") "traversal path must be MISS in markdown" $Problems
+        Assert-True ($mdText -notmatch "rel=/") "no absolute path may be printed as rel= for paths outside the root" $Problems
+    } else {
+        Assert-True $false "markdown report file missing" $Problems
+    }
+}
+
+# ------------------------- CASE: a relative path that resolves outside the root is not echoed as rel=
+Invoke-Case "OUTSIDE_ROOT a ../ path that resolves outside the root gets no rel= line" {
+    param($Problems)
+    $dir = New-Fixture "outside-root"
+    $outside = Join-Path $script:Root "outside-root-file.ts"
+    Set-Content -LiteralPath $outside -Value (((1..5 | ForEach-Object { "export const o = $_;" }) -join "`n")) -Encoding UTF8
+    New-FeatureFixture $dir "ST-OUTSIDE" @("../outside-root-file.ts")
+    $r = Invoke-Verifier $dir "ST-OUTSIDE"
+    Assert-True ($script:LastVerifierExit -eq 0) "verifier must exit 0, got $($script:LastVerifierExit)" $Problems
+    $mdFile = Join-Path $dir "verify-out/feature-ST-OUTSIDE.md"
+    if (Test-Path $mdFile) {
+        $mdText = Get-Content $mdFile -Raw
+        Assert-True ($mdText -match "(?m)^- OK  \[CODE\] \.\./outside-root-file\.ts") "the ../ path must still be read and reported OK" $Problems
+        Assert-True ($mdText -notmatch "(?m)^      rel=") "an outside-root path must not print a rel= line" $Problems
     } else {
         Assert-True $false "markdown report file missing" $Problems
     }

@@ -168,7 +168,8 @@ function Get-NormalizedEvidenceKey([string]$PathText) {
 function Get-RelPathFromRoot([string]$Root, [string]$Full) {
     $r = ($Root -replace '\\', '/').TrimEnd('/')
     $f = ($Full -replace '\\', '/')
-    if ($f.StartsWith($r, [System.StringComparison]::OrdinalIgnoreCase)) {
+    # Require a path-segment boundary: root `/a/proj` must not claim `/a/proj2/x`.
+    if ($f.StartsWith("$r/", [System.StringComparison]::OrdinalIgnoreCase)) {
         return $f.Substring($r.Length).TrimStart('/')
     }
     return $f
@@ -280,7 +281,10 @@ function Invoke-FeatureAnalysis {
     foreach ($rel in $evidenceRels) {
         $capReached = ($fileCount -ge $MaxFilesPerFeature)
 
-        $abs = Resolve-ProjectPath $root $rel
+        # The resolver throws for a path that climbs above the root. That must not abort
+        # the whole report: such a path is simply not found (MISS).
+        $abs = $null
+        try { $abs = Resolve-ProjectPath $root $rel } catch { $abs = $null }
 
         # Declared * / ? evidence is expanded only when nothing literal exists for it
         # (literal always wins); brackets in the pattern stay literal (round 3, P2).
@@ -700,7 +704,10 @@ foreach ($row in $selected) {
             # whether the declared path and the opened file are the same one.
             if ($r.Abs) {
                 $readRel = Get-RelPathFromRoot $root $r.Abs
-                if ($readRel -and $readRel -ne $r.Rel) {
+                # Only print paths that are really inside the root; an outside path
+                # (absolute or `..`) is never echoed as rel=.
+                $insideRoot = $readRel -and -not [System.IO.Path]::IsPathRooted($readRel) -and -not $readRel.StartsWith("..")
+                if ($insideRoot -and $readRel -ne $r.Rel) {
                     [void]$sb.AppendLine("      rel=$readRel")
                 }
             }
@@ -715,7 +722,7 @@ foreach ($row in $selected) {
         } else {
             # MISS means one thing only: nothing with that name was found under the
             # project root (literal, normalized or fuzzy).
-            [void]$sb.AppendLine("- MISS $($r.Rel) (not found under project root)")
+            [void]$sb.AppendLine("- MISS $($r.Rel) (no literal or fuzzy match under project root)")
         }
     }
 
