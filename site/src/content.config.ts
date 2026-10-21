@@ -18,6 +18,8 @@ const dishesCollection = defineCollection({
       image: z.string().optional(),
       aliases: z.record(z.string(), z.array(z.string())).optional(),
       main_ingredients: z.array(z.string()).optional(),
+      // Acepta ambas claves; `nutrition` es la canónica (ver transform abajo).
+      nutrition: z.record(z.string(), z.unknown()).optional(),
       nutrition_per_serving: z.record(z.string(), z.unknown()).optional(),
       images: z
         .array(
@@ -37,7 +39,11 @@ const dishesCollection = defineCollection({
         .passthrough()
         .optional(),
     })
-    .passthrough(),
+    .passthrough()
+    .transform((dish) => ({
+      ...dish,
+      nutrition: dish.nutrition ?? dish.nutrition_per_serving,
+    })),
 })
 
 const tipsCollection = defineCollection({
