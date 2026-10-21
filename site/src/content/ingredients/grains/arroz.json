@@ -77,7 +77,9 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169756)"
+    "USDA FoodData Central SR Legacy (fdc:169756)",
+    "Wikidata (Q161426)",
+    "Wikidata (Q5090)"
   ],
   "tags": [
     "base",
@@ -101,6 +103,42 @@
       "id": "fdc:169756",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q161426",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q5090",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Poaceae",
+    "genus": "Oryza"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "rice"
+    },
+    "es": {
+      "common_name": "arroz"
+    },
+    "fr": {
+      "common_name": "riz"
+    },
+    "ja": {
+      "common_name": "米"
+    },
+    "pt": {
+      "common_name": "arroz"
+    },
+    "zh": {
+      "common_name": "稻"
+    }
+  }
 }

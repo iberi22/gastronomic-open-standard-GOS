@@ -69,7 +69,9 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:171016)"
+    "USDA FoodData Central SR Legacy (fdc:171016)",
+    "Wikidata (Q2763698)",
+    "Wikidata (Q212317)"
   ],
   "tags": [
     "aroma",
@@ -77,6 +79,12 @@
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aceite de ajonjolí tostado es un aceite \"de finalización\", no de cocción (debido a su bajo punto de humo). Aporta un aroma a nuez intenso.\n\n## Culinary Uses\n- **Finalizador:** Unas gotas sobre sopas o salteados al apagar el fuego.\n- **Aderezos:** Mezclado con soya y vinagre.\n\n## Health Benefits\n### Salud Arterial\nLos lignanos del sésamo ayudan a reducir la oxidación del colesterol LDL.",
   "aliases": {
+    "es": [
+      "aceite de ajónjoli"
+    ],
+    "fr": [
+      "8008-74-0"
+    ],
     "zh": [
       "芝麻油",
       "芝麻香油",
@@ -90,6 +98,42 @@
       "id": "fdc:171016",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q2763698",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q212317",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Pedaliaceae",
+    "genus": "Sesamum"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "sesame oil"
+    },
+    "es": {
+      "common_name": "aceite de sésamo"
+    },
+    "fr": {
+      "common_name": "huile de sésame"
+    },
+    "ja": {
+      "common_name": "ごま油"
+    },
+    "pt": {
+      "common_name": "Óleo de gergelim"
+    },
+    "zh": {
+      "common_name": "芝麻油"
+    }
+  }
 }

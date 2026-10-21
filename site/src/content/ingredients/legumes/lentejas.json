@@ -9,6 +9,9 @@
   "aliases": {
     "en": [
       "lentils"
+    ],
+    "es": [
+      "lentejas"
     ]
   },
   "group": "Legume",
@@ -90,7 +93,9 @@
   },
   "scientific_name": "Lens culinaris",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:172420)"
+    "USDA FoodData Central SR Legacy (fdc:172420)",
+    "Wikidata (Q131226)",
+    "Wikidata (Q61505177)"
   ],
   "tags": [
     "almuerzo",
@@ -105,6 +110,42 @@
       "id": "fdc:172420",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q131226",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q61505177",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Fabaceae",
+    "genus": "Lens"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "lentil"
+    },
+    "es": {
+      "common_name": "lenteja"
+    },
+    "fr": {
+      "common_name": "lentile"
+    },
+    "ja": {
+      "common_name": "レンズマメ"
+    },
+    "pt": {
+      "common_name": "lentilha"
+    },
+    "zh": {
+      "common_name": "小扁豆"
+    }
+  }
 }

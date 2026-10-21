@@ -13,6 +13,9 @@
     "es": [
       "harina de trigo"
     ],
+    "fr": [
+      "Farine de froment"
+    ],
     "zh": [
       "面粉"
     ]
@@ -73,7 +76,9 @@
   },
   "scientific_name": "Triticum aestivum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:168894)"
+    "USDA FoodData Central SR Legacy (fdc:168894)",
+    "Wikidata (Q161098)",
+    "Wikidata (Q2249305)"
   ],
   "tags": [
     "pan",
@@ -87,6 +92,42 @@
       "id": "fdc:168894",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q161098",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q2249305",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Poaceae",
+    "genus": "Triticum"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "wheat flour"
+    },
+    "es": {
+      "common_name": "harina de trigo"
+    },
+    "fr": {
+      "common_name": "farine de blé"
+    },
+    "ja": {
+      "common_name": "小麦粉"
+    },
+    "pt": {
+      "common_name": "farinha de trigo"
+    },
+    "zh": {
+      "common_name": "麵粉"
+    }
+  }
 }

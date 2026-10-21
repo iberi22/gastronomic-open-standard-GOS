@@ -8,7 +8,8 @@
   ],
   "aliases": {
     "en": [
-      "chicken"
+      "chicken",
+      "chick meat"
     ],
     "es": [
       "pechuga de pollo",
@@ -16,6 +17,12 @@
       "Pollo Entero Troceado",
       "presas de pollo",
       "repollo"
+    ],
+    "fr": [
+      "coq (viande)"
+    ],
+    "pt": [
+      "carne de galinha"
     ],
     "zh": [
       "鸡腿"
@@ -66,12 +73,52 @@
   },
   "scientific_name": "Gallus gallus domesticus",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    "Wikidata (Q780)",
+    "Wikidata (Q864693)"
   ],
   "tags": [
     "proteina_magra",
     "ajiaco",
     "dieta"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa pechuga de pollo es la proteína magra estándar de oro. Baja en grasa saturada y alta en niacina (Vit B3), esencial para el metabolismo energético.\n\n## Culinary Uses\n- **Ajiaco:** Desmechada.\n- **Arroz con Pollo:** Troceada y cocida con el arroz.\n- **Sudado:** Cocción húmeda que preserva la jugosidad.\n\n## Health Benefits\n### Metabolismo\nSu alto contenido de Vitaminas del complejo B facilita la conversión de carbohidratos en energía utilizable."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa pechuga de pollo es la proteína magra estándar de oro. Baja en grasa saturada y alta en niacina (Vit B3), esencial para el metabolismo energético.\n\n## Culinary Uses\n- **Ajiaco:** Desmechada.\n- **Arroz con Pollo:** Troceada y cocida con el arroz.\n- **Sudado:** Cocción húmeda que preserva la jugosidad.\n\n## Health Benefits\n### Metabolismo\nSu alto contenido de Vitaminas del complejo B facilita la conversión de carbohidratos en energía utilizable.",
+  "scientific_registry": {
+    "family": "Phasianidae",
+    "genus": "Gallus"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "chicken as food"
+    },
+    "es": {
+      "common_name": "carne de pollo"
+    },
+    "fr": {
+      "common_name": "poulet"
+    },
+    "ja": {
+      "common_name": "鶏肉"
+    },
+    "pt": {
+      "common_name": "carne de frango"
+    },
+    "zh": {
+      "common_name": "雞肉"
+    }
+  },
+  "data_sources": [
+    {
+      "name": "Wikidata",
+      "id": "Q780",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q864693",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }

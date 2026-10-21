@@ -9,11 +9,15 @@
   "aliases": {
     "en": [
       "garlic",
-      "allium"
+      "allium",
+      "bulb of garlic"
     ],
     "es": [
       "cabezas de ajo",
       "Dientes De Ajo"
+    ],
+    "fr": [
+      "ail"
     ],
     "zh": [
       "大蒜",
@@ -117,7 +121,9 @@
   "scientific_name": "Allium sativum",
   "sources": [
     "NIH National Center for Complementary and Integrative Health",
-    "USDA FoodData Central SR Legacy (fdc:169230)"
+    "USDA FoodData Central SR Legacy (fdc:169230)",
+    "Wikidata (Q23400)",
+    "Wikidata (Q21546392)"
   ],
   "tags": [
     "esencial",
@@ -131,6 +137,42 @@
       "id": "fdc:169230",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q23400",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q21546392",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Alliaceae",
+    "genus": "Allium"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "garlic"
+    },
+    "es": {
+      "common_name": "ajo"
+    },
+    "fr": {
+      "common_name": "tête d'ail"
+    },
+    "ja": {
+      "common_name": "ニンニク"
+    },
+    "pt": {
+      "common_name": "alho"
+    },
+    "zh": {
+      "common_name": "大蒜"
+    }
+  }
 }

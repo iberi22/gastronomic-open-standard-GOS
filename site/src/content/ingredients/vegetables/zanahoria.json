@@ -8,10 +8,14 @@
   ],
   "aliases": {
     "en": [
-      "carrot"
+      "carrot",
+      "carrot taproot"
     ],
     "es": [
       "Zanahorias"
+    ],
+    "fr": [
+      "carotte cultivée"
     ],
     "zh": [
       "胡萝卜"
@@ -107,7 +111,9 @@
   },
   "scientific_name": "Daucus carota",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170393)"
+    "USDA FoodData Central SR Legacy (fdc:170393)",
+    "Wikidata (Q30056)",
+    "Wikidata (Q81)"
   ],
   "tags": [
     "sopa",
@@ -121,6 +127,42 @@
       "id": "fdc:170393",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q30056",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q81",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Apiaceae",
+    "genus": "Daucus"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "carrot"
+    },
+    "es": {
+      "common_name": "zanahoria"
+    },
+    "fr": {
+      "common_name": "carotte"
+    },
+    "ja": {
+      "common_name": "ニンジン"
+    },
+    "pt": {
+      "common_name": "cenoura"
+    },
+    "zh": {
+      "common_name": "胡萝卜"
+    }
+  }
 }

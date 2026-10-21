@@ -86,7 +86,9 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170108)"
+    "USDA FoodData Central SR Legacy (fdc:170108)",
+    "Wikidata (Q1380)",
+    "Wikidata (Q1548030)"
   ],
   "tags": [
     "hogao",
@@ -95,11 +97,21 @@
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl pimentón rojo es fundamental para el color y dulzor del \"Guiso\" o \"Hogao\" en algunas regiones. Aporta más Vitamina C que los cítricos.\n\n## Culinary Uses\n- **Guisos:** Picado fino junto a cebolla y tomate.\n- **Asado:** Piel quemada para sabor ahumado.\n\n## Health Benefits\n### Supercarga de Vitamina C\nEs una de las fuentes vegetales más ricas en vitamina C, esencial para la síntesis de colágeno y la inmunidad.",
   "aliases": {
+    "en": [
+      "pepper"
+    ],
     "es": [
       "pimentones",
       "pimenton",
       "pimiento dulce",
-      "pimiento rojo cortado"
+      "pimiento rojo cortado",
+      "chile morron"
+    ],
+    "fr": [
+      "piment doux"
+    ],
+    "pt": [
+      "pimentão"
     ],
     "zh": [
       "红椒"
@@ -111,6 +123,42 @@
       "id": "fdc:170108",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q1380",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q1548030",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Solanaceae",
+    "genus": "Capsicum"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "bell pepper"
+    },
+    "es": {
+      "common_name": "morrón"
+    },
+    "fr": {
+      "common_name": "poivron"
+    },
+    "ja": {
+      "common_name": "ピーマン"
+    },
+    "pt": {
+      "common_name": "pimento"
+    },
+    "zh": {
+      "common_name": "菜椒"
+    }
+  }
 }

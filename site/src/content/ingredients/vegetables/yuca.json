@@ -13,7 +13,14 @@
     ],
     "es": [
       "yuca amarga",
-      "yucas"
+      "yucas",
+      "mandioca"
+    ],
+    "fr": [
+      "manioc"
+    ],
+    "pt": [
+      "mandioca"
     ]
   },
   "group": "Vegetable",
@@ -82,7 +89,9 @@
   },
   "scientific_name": "Manihot esculenta",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169985)"
+    "USDA FoodData Central SR Legacy (fdc:169985)",
+    "Wikidata (Q83124)",
+    "Wikidata (Q43304555)"
   ],
   "tags": [
     "sancocho",
@@ -96,6 +105,39 @@
       "id": "fdc:169985",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q83124",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q43304555",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Euphorbiaceae",
+    "genus": "Manihot"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "cassava root"
+    },
+    "es": {
+      "common_name": "raíz de yuca"
+    },
+    "fr": {
+      "common_name": "racine de manioc"
+    },
+    "ja": {
+      "common_name": "キャッサバの根"
+    },
+    "pt": {
+      "common_name": "raiz de mandioca"
+    }
+  }
 }

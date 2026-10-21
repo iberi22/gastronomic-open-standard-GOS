@@ -8,13 +8,18 @@
   ],
   "aliases": {
     "en": [
-      "tomato"
+      "tomato",
+      "love apple"
     ],
     "es": [
       "Tomate Maduro",
       "Tomates Maduros",
       "tomates",
-      "tomates rojos"
+      "tomates rojos",
+      "jitomate"
+    ],
+    "fr": [
+      "tomates"
     ],
     "zh": [
       "番茄",
@@ -130,7 +135,9 @@
   },
   "scientific_name": "Solanum lycopersicum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170457)"
+    "USDA FoodData Central SR Legacy (fdc:170457)",
+    "Wikidata (Q23501)",
+    "Wikidata (Q20638126)"
   ],
   "tags": [
     "guiso",
@@ -144,6 +151,42 @@
       "id": "fdc:170457",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q23501",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q20638126",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Solanaceae",
+    "genus": "Solanum"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "tomato"
+    },
+    "es": {
+      "common_name": "tomate"
+    },
+    "fr": {
+      "common_name": "tomate"
+    },
+    "ja": {
+      "common_name": "トマト"
+    },
+    "pt": {
+      "common_name": "tomate"
+    },
+    "zh": {
+      "common_name": "番茄"
+    }
+  }
 }

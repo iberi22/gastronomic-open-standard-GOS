@@ -1806,3 +1806,36 @@ ingredients:
   zanahoria:
     fdc_id: 170393
     confidence: high
+wikidata_retrieved: '2026-10-21'
+wikidata:
+  aceite_ajonjoli: {taxon_qid: Q2763698, food_qid: Q212317, confidence: high}
+  ajo: {taxon_qid: Q23400, food_qid: Q21546392, confidence: high}
+  arroz: {taxon_qid: Q161426, food_qid: Q5090, confidence: high}
+  cebolla_cabezona: {taxon_qid: Q23485, food_qid: Q3406628, confidence: high}
+  cebolla_larga: {taxon_qid: Q27938, confidence: high}
+  cerdo: {taxon_qid: Q787, food_qid: Q191768, confidence: high}
+  cilantro: {taxon_qid: Q41611, food_qid: Q65523167, confidence: high}
+  comino: {taxon_qid: Q132624, food_qid: Q57328174, confidence: high}
+  frijol: {taxon_qid: Q42339, food_qid: Q74662248, confidence: high}
+  harina_trigo: {taxon_qid: Q161098, food_qid: Q2249305, confidence: high}
+  jengibre: {taxon_qid: Q35625, food_qid: Q15046077, confidence: high}
+  lentejas: {taxon_qid: Q131226, food_qid: Q61505177, confidence: high}
+  maiz: {taxon_qid: Q11575, food_qid: Q25618328, confidence: high}
+  papa_criolla: {taxon_qid: Q2277249, confidence: high}
+  papa_pastusa: {taxon_qid: Q10998, food_qid: Q16587531, confidence: high}
+  pimenton_rojo: {taxon_qid: Q1380, food_qid: Q1548030, confidence: high}
+  pollo: {taxon_qid: Q780, food_qid: Q864693, confidence: high}
+  tomate: {taxon_qid: Q23501, food_qid: Q20638126, confidence: high}
+  yuca: {taxon_qid: Q83124, food_qid: Q43304555, confidence: high}
+  zanahoria: {taxon_qid: Q30056, food_qid: Q81, confidence: high}
+  asparagus_raw: {taxon_qid: Q2853420, food_qid: Q23041045, confidence: medium}
+  borage_raw: {taxon_qid: Q147075, confidence: medium}
+  breadfruit_raw: {taxon_qid: Q14677, food_qid: Q5869893, confidence: medium}
+  broccoli_raw: {taxon_qid: Q47722, food_qid: Q57544960, confidence: medium}
+  cassava_raw: {taxon_qid: Q83124, food_qid: Q43304555, confidence: medium}
+  celeriac_raw: {taxon_qid: Q575174, food_qid: Q103765549, confidence: medium}
+  celtuce_raw: {taxon_qid: Q574172, confidence: medium}
+  kohlrabi_raw: {taxon_qid: Q147202, confidence: medium}
+  rhubarb_raw: {taxon_qid: Q7535, confidence: medium}
+  spinach_raw: {taxon_qid: Q1421117, food_qid: Q36814998, confidence: medium}
+  watermelon_raw: {taxon_qid: Q17507129, food_qid: Q38645, confidence: medium}

@@ -9,7 +9,8 @@
   "aliases": {
     "en": [
       "onion",
-      "bulb onion"
+      "bulb onion",
+      "onion as food"
     ],
     "zh": [
       "洋葱"
@@ -125,7 +126,9 @@
   },
   "scientific_name": "Allium cepa",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170000)"
+    "USDA FoodData Central SR Legacy (fdc:170000)",
+    "Wikidata (Q23485)",
+    "Wikidata (Q3406628)"
   ],
   "tags": [
     "base",
@@ -139,6 +142,42 @@
       "id": "fdc:170000",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q23485",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q3406628",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Alliaceae",
+    "genus": "Allium"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "onion"
+    },
+    "es": {
+      "common_name": "cebolla"
+    },
+    "fr": {
+      "common_name": "oignon"
+    },
+    "ja": {
+      "common_name": "玉ねぎ"
+    },
+    "pt": {
+      "common_name": "cebola"
+    },
+    "zh": {
+      "common_name": "洋葱"
+    }
+  }
 }

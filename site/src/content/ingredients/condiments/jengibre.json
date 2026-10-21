@@ -8,7 +8,11 @@
   ],
   "aliases": {
     "en": [
-      "ginger"
+      "ginger",
+      "ginger rhizome"
+    ],
+    "es": [
+      "kion"
     ],
     "zh": [
       "姜末",
@@ -96,7 +100,9 @@
   },
   "scientific_name": "Zingiber officinale",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169231)"
+    "USDA FoodData Central SR Legacy (fdc:169231)",
+    "Wikidata (Q35625)",
+    "Wikidata (Q15046077)"
   ],
   "tags": [
     "te",
@@ -110,6 +116,42 @@
       "id": "fdc:169231",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q35625",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q15046077",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Zingiberaceae",
+    "genus": "Zingiber"
+  },
+  "i18n": {
+    "en": {
+      "common_name": "ginger"
+    },
+    "es": {
+      "common_name": "jengibre"
+    },
+    "fr": {
+      "common_name": "gingembre"
+    },
+    "ja": {
+      "common_name": "ショウガ"
+    },
+    "pt": {
+      "common_name": "gengibre"
+    },
+    "zh": {
+      "common_name": "生姜"
+    }
+  }
 }

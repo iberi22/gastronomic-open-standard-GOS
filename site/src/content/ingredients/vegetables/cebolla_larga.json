@@ -81,7 +81,8 @@
   },
   "scientific_name": "Allium fistulosum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170005)"
+    "USDA FoodData Central SR Legacy (fdc:170005)",
+    "Wikidata (Q27938)"
   ],
   "tags": [
     "guiso",
@@ -94,6 +95,16 @@
       "id": "fdc:170005",
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
+    },
+    {
+      "name": "Wikidata",
+      "id": "Q27938",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "scientific_registry": {
+    "family": "Alliaceae",
+    "genus": "Allium"
+  }
 }
