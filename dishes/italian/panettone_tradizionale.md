@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Panettone Artigianale
 region: Lombardía (Milán)
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- milk
+- unknown
 title: Sopa de Tortilla (Ateca)
 region: Ciudad de México
 language: es

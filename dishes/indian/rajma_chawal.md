@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Rajma Chawal
 region: Norte de la India / Punjab
 language: es

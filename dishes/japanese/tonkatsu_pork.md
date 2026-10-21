@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- mustard
+- unknown
 title: Tonkatsu de Cerdo
 region: Tokyo
 language: es

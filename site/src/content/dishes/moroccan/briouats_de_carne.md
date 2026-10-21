@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Briouats de Carne Picada Especiada
 region: Marruecos Nacional
 language: es

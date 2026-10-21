@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Lechón Asado Cubano
 region: Cuba
 language: es

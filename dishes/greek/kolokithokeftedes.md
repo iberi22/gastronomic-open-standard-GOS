@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Kolokithokeftedes (Buñuelos de Calabacín)
 region: Creta
 language: es

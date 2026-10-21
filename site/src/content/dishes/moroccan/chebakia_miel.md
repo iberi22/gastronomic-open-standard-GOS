@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Chebakia de Sésamo y Miel
 region: Marruecos Nacional
 language: es

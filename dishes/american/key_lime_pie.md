@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Florida Key Lime Pie
 region: Florida Keys
 language: es

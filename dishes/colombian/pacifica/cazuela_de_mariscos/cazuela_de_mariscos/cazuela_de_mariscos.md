@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- fish
+- molluscs
+- unknown
 title: Cazuela de Mariscos Pacífica
 region: Pacífica
 language: es

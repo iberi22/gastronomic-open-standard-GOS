@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- fish
+- unknown
 title: Bolas de Pescado (Fish Balls)
 region: Colombia
 language: es

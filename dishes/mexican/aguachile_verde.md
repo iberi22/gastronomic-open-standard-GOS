@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Aguachile Verde de Camarón
 region: Sinaloa
 language: es

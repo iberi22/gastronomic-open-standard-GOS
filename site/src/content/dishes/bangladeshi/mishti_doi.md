@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mishti Doi
 region: Bogra
 language: es

@@ -3,6 +3,10 @@ aliases:
   en:
   - Squid in Ink
   - Calamari in Ink
+allergens:
+- molluscs
+- sulphites
+- unknown
 categories:
 - Plato fuerte
 - Tradicional

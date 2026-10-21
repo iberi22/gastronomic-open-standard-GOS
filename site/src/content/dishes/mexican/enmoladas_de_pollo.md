@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- sesame
+- unknown
 title: Enmoladas de Pollo
 region: Oaxaca
 language: es

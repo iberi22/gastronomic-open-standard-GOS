@@ -3,6 +3,7 @@ aliases:
   en:
   - Colombian Chuzo
   - Street Skewer
+allergens: []
 categories:
 - Snack
 - Comida callejera

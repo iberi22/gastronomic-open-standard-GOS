@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mojito Cubano Tradicional
 region: Cuba
 language: es

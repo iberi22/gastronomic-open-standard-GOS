@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Danggui Yangrou Tang (Angelica Root and Mutton Medicinal Soup)
 region: China
 language: zh

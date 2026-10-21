@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Gambas al Ajillo
 region: Andalucía
 language: es

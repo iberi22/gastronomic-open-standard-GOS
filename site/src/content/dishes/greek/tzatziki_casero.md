@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tzatziki Tradicional
 region: Grecia Nacional
 language: es

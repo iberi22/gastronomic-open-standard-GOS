@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- peanuts
+- tree_nuts
+- unknown
 title: Vatapá Baiano Tradicional
 region: Brasil
 language: pt

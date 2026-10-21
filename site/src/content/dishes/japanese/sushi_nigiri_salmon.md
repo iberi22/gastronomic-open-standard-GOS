@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- fish
+- soybeans
+- unknown
 title: Nigiri Sushi de Salmón
 region: Tokyo
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- celery
+- unknown
 title: Sopa Harira Tradicional
 region: Marruecos Nacional
 language: es

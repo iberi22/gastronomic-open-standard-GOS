@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz con Gandules Puertorriqueño
 region: Puerto Rico
 language: es

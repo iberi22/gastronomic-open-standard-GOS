@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cocido Madrileño
 region: Madrid
 language: es

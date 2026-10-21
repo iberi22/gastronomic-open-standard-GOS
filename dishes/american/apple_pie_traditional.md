@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Traditional American Apple Pie
 region: EE.UU. Nacional
 language: es

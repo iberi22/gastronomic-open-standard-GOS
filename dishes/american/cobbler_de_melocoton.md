@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Georgia Peach Cobbler
 region: Georgia
 language: es

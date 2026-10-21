@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz con Coco (Titoté)
 region: Caribe
 language: es

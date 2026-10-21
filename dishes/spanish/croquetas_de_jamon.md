@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Croquetas de Jamón Ibérico
 region: España Nacional
 language: es

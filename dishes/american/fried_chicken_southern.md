@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Southern Crispy Fried Chicken
 region: Sur de EE.UU.
 language: es

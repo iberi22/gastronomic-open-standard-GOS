@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Deditos de Queso
 region: Nacional
 language: es

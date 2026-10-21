@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- molluscs
+- soybeans
+- unknown
 title: Asari no Sakamushi
 region: Izakaya / Nacional
 language: es

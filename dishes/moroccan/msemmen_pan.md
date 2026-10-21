@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Msemmen (Pan Hojaldrado Marroquí)
 region: Marruecos Nacional
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: 10 recetas más emblemáticas de la región Insular de Colombia
 region: Colombia
 language: es

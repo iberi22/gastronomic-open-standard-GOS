@@ -1,4 +1,7 @@
 ---
+allergens:
+- mustard
+- unknown
 title: Begun Bhorta
 region: Khulna
 language: es

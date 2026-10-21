@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Carolina Pulled Pork Sandwich
 region: Carolina del Norte
 language: es

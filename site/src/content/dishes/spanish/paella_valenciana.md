@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Paella Valenciana Tradicional
 region: Comunidad Valenciana
 language: es

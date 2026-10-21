@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- sulphites
+- unknown
 title: Risotto alla Milanese
 region: Lombardía (Milán)
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Garulla Soachuna
 region: Andina (Soacha / Cundinamarca)
 language: es

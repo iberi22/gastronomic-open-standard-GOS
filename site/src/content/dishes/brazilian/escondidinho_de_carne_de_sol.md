@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Escondidinho de Carne de Sol
 region: Nordeste / Brasil
 language: pt

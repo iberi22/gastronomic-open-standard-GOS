@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Baghrir (Panqueques de Mil Hoyos)
 region: Marruecos Nacional
 language: es

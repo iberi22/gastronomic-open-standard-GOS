@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Inchicapi (Sopa de Gallina con Maní)
 region: Amazonía
 language: es

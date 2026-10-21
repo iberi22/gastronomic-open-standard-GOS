@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Almojábana (Boyacense/Bogotana)
 region: Andina (Cundiboyacense)
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Empanada Gallega de Atún
 region: Galicia
 language: es

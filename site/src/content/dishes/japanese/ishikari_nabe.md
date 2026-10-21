@@ -1,4 +1,9 @@
 ---
+allergens:
+- fish
+- milk
+- soybeans
+- unknown
 title: Ishikari Nabe
 region: Hokkaido
 language: es

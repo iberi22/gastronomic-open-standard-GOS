@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Pastilla (Bastilla) de Pollo y Almendras
 region: Fez
 language: es

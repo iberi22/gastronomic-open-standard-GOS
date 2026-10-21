@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Dal Makhani
 region: Punjab
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Patarasca (Pescado en Hojas)
 region: Amazonía
 language: es

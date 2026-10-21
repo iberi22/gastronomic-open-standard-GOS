@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Mapo Doufu (Mapo Tofu)
 region: China
 language: zh

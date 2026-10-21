@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Yakitori de Pollo en Tare
 region: Tokyo
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pimientos del Padrón
 region: Galicia
 language: es

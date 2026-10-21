@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Huiguo Rou (Twice-Cooked Pork)
 region: China
 language: zh

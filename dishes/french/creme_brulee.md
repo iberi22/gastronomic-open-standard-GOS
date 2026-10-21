@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- milk
 title: Crème Brûlée
 region: Francia Nacional
 language: es

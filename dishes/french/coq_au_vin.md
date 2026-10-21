@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Coq au Vin
 region: Borgoña
 language: es

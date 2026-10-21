@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Carapulcra Limeña
 region: Costa/Sierra
 language: es

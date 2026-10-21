@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Hayaca Llanera
 region: Orinoquía
 language: es

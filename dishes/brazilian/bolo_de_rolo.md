@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Bolo de Rolo Pernambucano
 region: Pernambuco, Brasil
 language: pt

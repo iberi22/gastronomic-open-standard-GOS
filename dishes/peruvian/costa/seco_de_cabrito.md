@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Seco de Cabrito
 region: Costa (Norte)
 language: es

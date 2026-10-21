@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Chikuzenni
 region: Fukuoka (Kyushu)
 language: es

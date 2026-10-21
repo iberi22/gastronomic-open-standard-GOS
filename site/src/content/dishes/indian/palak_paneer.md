@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Palak Paneer
 region: Norte de India
 language: es

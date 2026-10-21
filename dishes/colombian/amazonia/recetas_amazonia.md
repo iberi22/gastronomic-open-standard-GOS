@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: 10 recetas más emblemáticas de la región Amazónica de Colombia
 region: Colombia
 language: es

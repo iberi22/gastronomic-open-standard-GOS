@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Seffa Medfouna con Pollo
 region: Fez
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- mustard
+- unknown
 title: Borhani
 region: Old Dhaka
 language: es

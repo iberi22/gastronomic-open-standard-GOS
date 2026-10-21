@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tungos Llaneros
 region: Orinoquía
 language: es

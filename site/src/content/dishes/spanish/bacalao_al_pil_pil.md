@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Bacalao al Pil-Pil
 region: País Vasco
 language: es

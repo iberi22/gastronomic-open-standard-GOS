@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Carimañolas
 region: Caribe
 language: es

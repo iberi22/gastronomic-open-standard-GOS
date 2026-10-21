@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Pao Cai Yu (Sichuan Pickled Vegetable Fish)
 region: China
 language: zh

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Soupe à l'Oignon Gratinée
 region: París
 language: es

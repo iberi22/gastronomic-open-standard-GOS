@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Tamagoyaki (Tortilla Dulce)
 region: Tokyo
 language: es

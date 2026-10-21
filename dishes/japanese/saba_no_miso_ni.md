@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- soybeans
+- unknown
 title: Saba no Miso-ni
 region: Nacional
 language: es

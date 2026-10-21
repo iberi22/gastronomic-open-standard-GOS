@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- tree_nuts
+- unknown
 title: Ghriba de Almendra y Sésamo
 region: Fez
 language: es

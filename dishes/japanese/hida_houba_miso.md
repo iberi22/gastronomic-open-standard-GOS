@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Hida Houba Miso
 region: Gifu (Takayama)
 language: es

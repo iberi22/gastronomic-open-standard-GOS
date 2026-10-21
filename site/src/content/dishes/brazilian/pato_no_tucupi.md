@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pato no Tucupi
 region: Pará, Brasil
 language: pt

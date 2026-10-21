@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Mousse au Chocolat
 region: París
 language: es

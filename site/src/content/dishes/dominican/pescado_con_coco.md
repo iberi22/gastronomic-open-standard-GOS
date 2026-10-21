@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Pescado con Coco Estilo Samaná
 region: República Dominicana
 language: es

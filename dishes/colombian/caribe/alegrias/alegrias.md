@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Alegrías
 region: Caribe
 language: es

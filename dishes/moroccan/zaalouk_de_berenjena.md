@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Zaalouk de Berenjena y Tomate
 region: Fez
 language: es

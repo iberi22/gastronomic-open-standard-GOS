@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Sopaipillas Chilenas
 region: Central / Sur
 language: es

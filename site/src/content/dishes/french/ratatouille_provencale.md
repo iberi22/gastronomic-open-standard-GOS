@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ratatouille Provençale
 region: Niza / Provenza
 language: es

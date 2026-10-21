@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Gratin Dauphinois
 region: Delfinado
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Choripán Argentino
 region: Río de la Plata / Pampeana / Nacional
 language: es

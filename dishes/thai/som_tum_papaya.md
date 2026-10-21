@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- peanuts
+- unknown
 title: Som Tum (Ensalada de Papaya)
 region: Isan
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Buffalo Chicken Wings
 region: 'Buffalo, NY'
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Horiatiki (Ensalada Griega Tradicional)
 region: Grecia Nacional
 language: es

@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Fariña (Farofa Amazónica)
 region: Amazonía
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Achiras del Huila
 region: Andina (Huila)
 language: es

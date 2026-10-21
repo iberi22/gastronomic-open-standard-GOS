@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Champús Valluno
 region: 'Suroccidente (Valle, Nariño, Cauca)'
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- celery
+- molluscs
+- unknown
 title: Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)
 region: Nueva York
 language: es

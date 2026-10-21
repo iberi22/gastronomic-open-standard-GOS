@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Khao Niew Mamuang (Mango Sticky Rice)
 region: Bangkok
 language: es

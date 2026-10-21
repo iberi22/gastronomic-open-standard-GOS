@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Shorshe Ilish
 region: Barisal
 language: es

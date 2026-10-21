@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Morir Soñando Dominicano
 region: República Dominicana
 language: es

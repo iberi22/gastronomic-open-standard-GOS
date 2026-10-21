@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Humita en Chala
 region: Noroeste Argentino (Jujuy / Salta / Tucumán)
 language: es

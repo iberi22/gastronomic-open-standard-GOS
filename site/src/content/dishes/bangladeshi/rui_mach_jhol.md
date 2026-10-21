@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Rui Macher Jhol
 region: Rajshahi
 language: es

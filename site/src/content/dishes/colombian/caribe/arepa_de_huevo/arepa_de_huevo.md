@@ -3,6 +3,9 @@ aliases:
   en:
   - Arepa with Egg
   - Egg Arepa
+allergens:
+- eggs
+- unknown
 categories:
 - Fritura
 - Desayuno

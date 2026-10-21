@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Okonomiyaki Estilo Osaka
 region: Osaka
 language: es

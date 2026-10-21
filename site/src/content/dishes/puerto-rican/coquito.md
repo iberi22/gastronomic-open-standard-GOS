@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Coquito Puertorriqueño Tradicional
 region: Puerto Rico
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Sancocho Costeño
 region: Caribe
 language: es

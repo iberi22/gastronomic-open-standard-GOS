@@ -1,4 +1,10 @@
 ---
+allergens:
+- celery
+- eggs
+- milk
+- sulphites
+- unknown
 title: Tagliatelle al Ragù Bolognese
 region: Emilia-Romaña
 language: es

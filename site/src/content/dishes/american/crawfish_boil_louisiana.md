@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)
 region: Luisiana
 language: es

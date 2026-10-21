@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- fish
+- molluscs
+- unknown
 title: Arroz Atollado con Mariscos
 region: Pacífica
 language: es

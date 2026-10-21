@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Lulada
 region: Pacífica
 language: es

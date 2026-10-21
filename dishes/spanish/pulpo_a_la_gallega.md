@@ -1,4 +1,7 @@
 ---
+allergens:
+- molluscs
+- unknown
 title: Pulpo a la Gallega (Polbo á Feira)
 region: Galicia
 language: es

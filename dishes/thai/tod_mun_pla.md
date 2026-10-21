@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Tod Mun Pla (Pasteles de Pescado)
 region: Central Thailand
 language: es

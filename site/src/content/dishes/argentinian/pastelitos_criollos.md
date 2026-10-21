@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Pastelitos Criollos Argentinos
 region: Pampeana / Nacional
 language: es

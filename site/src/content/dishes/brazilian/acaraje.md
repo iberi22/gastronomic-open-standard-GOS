@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Acarajé Baiano
 region: Brasil
 language: pt

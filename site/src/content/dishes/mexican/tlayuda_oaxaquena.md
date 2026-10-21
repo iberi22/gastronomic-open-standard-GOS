@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tlayuda Oaxaqueña con Tasajo
 region: Oaxaca
 language: es

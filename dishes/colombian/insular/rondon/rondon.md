@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- fish
+- milk
+- molluscs
+- unknown
 title: Rondón (Run Down)
 region: Insular (San Andrés y Providencia)
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Aloo Gobi
 region: Punjab
 language: es

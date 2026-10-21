@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Vindaloo de Cerdo
 region: Goa
 language: es

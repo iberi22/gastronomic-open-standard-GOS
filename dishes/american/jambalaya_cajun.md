@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Cajun Jambalaya
 region: 'Nueva Orleans, LA'
 language: es

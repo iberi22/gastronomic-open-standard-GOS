@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tajine de Ternera con Membrillo Caramelizado
 region: Meknes
 language: es

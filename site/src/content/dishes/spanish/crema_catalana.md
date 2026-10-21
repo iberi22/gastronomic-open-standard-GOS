@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Crema Catalana
 region: Cataluña
 language: es

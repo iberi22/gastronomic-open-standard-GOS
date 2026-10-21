@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Hervido de Gumarra
 region: Colombia
 language: es

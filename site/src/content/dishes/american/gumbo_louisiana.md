@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Louisiana Seafood Gumbo
 region: 'Nueva Orleans, LA'
 language: es

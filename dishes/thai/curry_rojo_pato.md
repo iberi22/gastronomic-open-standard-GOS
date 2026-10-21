@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gaeng Phet Ped Yang
 region: Bangkok
 language: es

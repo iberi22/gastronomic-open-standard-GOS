@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Pescado Moqueado
 region: Amazonía
 language: es

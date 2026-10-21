@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Torta de Calabaza (Pumpkin Cake)
 region: Colombia
 language: es

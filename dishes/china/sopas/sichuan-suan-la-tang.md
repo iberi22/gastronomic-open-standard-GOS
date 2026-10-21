@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- soybeans
+- unknown
 title: Sichuan Suan La Tang (Sichuan Hot and Sour Soup)
 region: China
 language: zh

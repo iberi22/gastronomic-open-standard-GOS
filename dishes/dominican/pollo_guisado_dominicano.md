@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pollo Guisado Dominicano
 region: República Dominicana
 language: es

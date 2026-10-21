@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gyros de Pollo en Pan Pita
 region: Tesalónica
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pizza Margherita Napoletana
 region: Campania (Nápoles)
 language: es

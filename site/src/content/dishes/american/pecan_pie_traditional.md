@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- milk
+- tree_nuts
+- unknown
 title: Pecan Pie Tradicional (Tarta de Nueces Pacanas)
 region: Sur de Estados Unidos
 language: es

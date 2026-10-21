@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Ajo Naan (Pan Naan)
 region: Punjab
 language: es

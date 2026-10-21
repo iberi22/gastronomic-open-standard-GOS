@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Juane de Gallina
 region: Selva
 language: es

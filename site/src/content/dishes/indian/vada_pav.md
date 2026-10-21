@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Vada Pav
 region: Bombay / Mumbai
 language: es

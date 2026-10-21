@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Dolmades (Hojas de Parra Rellenas)
 region: Creta
 language: es

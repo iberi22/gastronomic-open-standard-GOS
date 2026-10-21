@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Idli Sambar
 region: Tamil Nadu / Sur de la India
 language: es

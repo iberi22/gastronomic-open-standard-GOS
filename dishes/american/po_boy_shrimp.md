@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)
 region: Luisiana
 language: es

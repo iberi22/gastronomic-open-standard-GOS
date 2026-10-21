@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Chiles Rellenos de Queso
 region: Puebla
 language: es

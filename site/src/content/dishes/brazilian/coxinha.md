@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Coxinha de Frango Tradicional
 region: Brasil
 language: pt

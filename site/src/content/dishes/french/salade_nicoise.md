@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- fish
+- unknown
 title: Salade Niçoise
 region: Niza
 language: es

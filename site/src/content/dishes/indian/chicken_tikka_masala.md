@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Chicken Tikka Masala
 region: Punjab / U.K.
 language: es

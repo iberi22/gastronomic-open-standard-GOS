@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Pastel de Feira
 region: São Paulo / Brasil
 language: pt

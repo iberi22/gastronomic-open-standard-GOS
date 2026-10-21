@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Picadillo a la Habanera
 region: Cuba
 language: es

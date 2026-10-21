@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Tiropita (Pastel Hojaldrado de Feta)
 region: Grecia Nacional
 language: es

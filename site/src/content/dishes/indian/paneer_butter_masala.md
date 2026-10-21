@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Paneer Butter Masala
 region: Punjab
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Viudo de Pescado
 region: Caribe/Magdalena
 language: es

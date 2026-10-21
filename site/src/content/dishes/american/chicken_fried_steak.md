@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Chicken Fried Steak (Filete Empanado con Salsa Blanca)
 region: Texas
 language: es

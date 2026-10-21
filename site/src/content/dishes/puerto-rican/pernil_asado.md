@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pernil Asado Puertorriqueño
 region: Puerto Rico
 language: es

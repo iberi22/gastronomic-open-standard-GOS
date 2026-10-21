@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- milk
+- unknown
 title: Chupe de Camarones
 region: Costa/Sierra
 language: es

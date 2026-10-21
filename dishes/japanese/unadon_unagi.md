@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Unadon (Anguila sobre Arroz)
 region: Hamamatsu
 language: es

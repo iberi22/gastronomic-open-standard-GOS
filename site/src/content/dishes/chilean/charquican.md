@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Charquicán Chileno
 region: Central / Sur
 language: es

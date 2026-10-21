@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mofongo Dominicano Tradicional
 region: República Dominicana
 language: es

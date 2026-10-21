@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Yuca con Mojo Cubana
 region: Cuba
 language: es

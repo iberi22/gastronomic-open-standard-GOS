@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- milk
+- unknown
 title: Chingri Malai Curry
 region: Khulna
 language: es

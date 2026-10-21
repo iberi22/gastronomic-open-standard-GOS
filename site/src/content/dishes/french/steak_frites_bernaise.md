@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Steak Frites con Salsa Béarnaise
 region: París
 language: es

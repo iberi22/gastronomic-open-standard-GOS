@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mole Amarillo Oaxaqueño
 region: Oaxaca
 language: es

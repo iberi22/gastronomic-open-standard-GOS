@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ginger Beer (Cerveza de Jengibre Ancestral)
 region: Insular (San Andrés y Providencia)
 language: es

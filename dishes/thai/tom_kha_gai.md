@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tom Kha Gai
 region: Central Thailand
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Mangú Dominicano con Los Tres Golpes
 region: República Dominicana
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- molluscs
+- unknown
 title: Takoyaki de Osaka
 region: Osaka
 language: es

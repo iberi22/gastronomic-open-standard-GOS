@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Kitsune Udon
 region: Osaka
 language: es

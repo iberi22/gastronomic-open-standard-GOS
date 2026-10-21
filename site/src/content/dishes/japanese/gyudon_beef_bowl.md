@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Gyudon (Donburi de Res)
 region: Tokyo
 language: es

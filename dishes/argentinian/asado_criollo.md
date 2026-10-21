@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Asado Criollo Argentino
 region: La Pampa / Pampeana
 language: es

@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Aborrajado Valluno
 region: Pacífica / Valle del Cauca
 language: es

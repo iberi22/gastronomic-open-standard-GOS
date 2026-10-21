@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Kiriotanpo Nabe
 region: Akita
 language: es

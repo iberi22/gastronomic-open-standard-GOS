@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Stifado de Ternera con Cebollitas
 region: Peloponeso
 language: es

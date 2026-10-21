@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Arequipe
 region: Nacional
 language: es

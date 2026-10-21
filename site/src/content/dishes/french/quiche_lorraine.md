@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Quiche Lorraine
 region: Lorena
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Enchiladas Verdes
 region: Centro de México
 language: es

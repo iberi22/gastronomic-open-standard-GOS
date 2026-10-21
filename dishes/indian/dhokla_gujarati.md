@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- mustard
+- unknown
 title: Dhokla Gujarati
 region: Gujarat
 language: es

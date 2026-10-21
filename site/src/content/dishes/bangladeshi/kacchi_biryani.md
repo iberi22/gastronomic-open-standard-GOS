@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Dhakai Kacchi Biryani
 region: Old Dhaka
 language: es

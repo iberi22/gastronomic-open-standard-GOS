@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pani Puri (Golgappa)
 region: Mumbai
 language: es

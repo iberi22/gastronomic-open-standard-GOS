@@ -3,6 +3,10 @@ aliases:
   en:
   - Stuffed Potato
   - Peruvian Potato Croquette
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 categories:
 - Entrada
 - Criollo

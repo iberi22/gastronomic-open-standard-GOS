@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Couscous Real aux Sept Légumes
 region: Fez
 language: es

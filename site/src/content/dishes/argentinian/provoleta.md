@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Provoleta Argentina
 region: Pampeana
 language: es

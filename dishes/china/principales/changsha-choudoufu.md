@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Changsha Choudoufu (Changsha Stinky Tofu)
 region: China
 language: zh

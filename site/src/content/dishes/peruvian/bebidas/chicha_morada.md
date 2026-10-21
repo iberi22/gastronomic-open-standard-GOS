@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chicha Morada
 region: Sierra/Costa
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Carne a la Perra
 region: Colombia
 language: es

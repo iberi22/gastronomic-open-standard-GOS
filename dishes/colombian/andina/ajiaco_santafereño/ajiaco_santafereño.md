@@ -3,6 +3,8 @@ aliases:
   en:
   - Ajiaco
   - Bogota Chicken Corn Soup
+allergens:
+- milk
 categories:
 - Sopas
 - Plato Fuerte

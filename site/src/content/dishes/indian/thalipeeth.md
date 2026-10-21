@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- sesame
+- unknown
 title: Thalipeeth
 region: Maharashtra
 language: es

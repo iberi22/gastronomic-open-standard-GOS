@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Caipirinha Tradicional Brasileira
 region: Brasil
 language: pt

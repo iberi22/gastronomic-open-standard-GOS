@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz con Pollo Peruano
 region: Costa/Sierra
 language: es

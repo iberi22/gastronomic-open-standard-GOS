@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Souvlaki de Cerdo con Pita
 region: Atenas
 language: es

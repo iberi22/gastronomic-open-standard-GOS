@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- fish
+- sulphites
+- unknown
 title: Vitello Tonnato
 region: Piamonte
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Fritanga Colombiana
 region: Nacional
 language: es

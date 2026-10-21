@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Esquites con Epazote
 region: Centro de México
 language: es

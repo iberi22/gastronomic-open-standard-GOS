@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Salsa Rosada Colombiana
 region: Colombia
 language: es

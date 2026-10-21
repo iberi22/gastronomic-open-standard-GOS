@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Ají de Gallina
 region: Costa/Sierra
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Hogao Colombiano
 region: Colombia
 language: es

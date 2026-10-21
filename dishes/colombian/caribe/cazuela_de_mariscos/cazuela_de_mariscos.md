@@ -1,4 +1,11 @@
 ---
+allergens:
+- crustaceans
+- fish
+- milk
+- molluscs
+- sulphites
+- unknown
 title: Cazuela de Mariscos
 region: Caribe
 language: es

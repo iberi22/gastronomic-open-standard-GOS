@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tostones Dominicanos con Agua de Ajo
 region: República Dominicana
 language: es

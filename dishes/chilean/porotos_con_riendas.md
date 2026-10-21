@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Porotos con Riendas
 region: Central
 language: es

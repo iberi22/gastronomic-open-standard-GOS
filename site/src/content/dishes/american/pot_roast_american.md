@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Classic American Pot Roast
 region: Medio Oeste
 language: es

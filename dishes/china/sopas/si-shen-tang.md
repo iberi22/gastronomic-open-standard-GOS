@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Si Shen Tang (Four Herbs Tonic Soup)
 region: China
 language: zh

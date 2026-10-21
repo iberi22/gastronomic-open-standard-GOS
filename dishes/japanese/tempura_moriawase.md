@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- eggs
+- unknown
 title: Tempura Moriawase
 region: Kyoto
 language: es

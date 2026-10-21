@@ -3,6 +3,10 @@ aliases:
   en:
   - Salchipapa
   - Sausage and Fries
+allergens:
+- eggs
+- milk
+- unknown
 categories:
 - Snack
 - Comida rápida

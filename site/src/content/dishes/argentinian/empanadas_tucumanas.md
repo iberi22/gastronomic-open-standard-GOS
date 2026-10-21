@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Empanadas Tucumanas
 region: Tucumán / Noroeste Argentino
 language: es

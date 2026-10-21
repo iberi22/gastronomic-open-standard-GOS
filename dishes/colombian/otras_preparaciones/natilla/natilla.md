@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Natilla Colombiana
 region: Andina / Nacional
 language: es

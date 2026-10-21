@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Dorayaki
 region: Tokyo
 language: es

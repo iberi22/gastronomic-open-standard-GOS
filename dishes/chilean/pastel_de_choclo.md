@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Pastel de Choclo Chileno
 region: Metropolitana
 language: es

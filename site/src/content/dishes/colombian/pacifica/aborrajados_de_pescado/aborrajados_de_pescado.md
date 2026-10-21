@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- fish
+- milk
+- unknown
 title: Aborrajados de Pescado
 region: Pacífica/Nariño
 language: es

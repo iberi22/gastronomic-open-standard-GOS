@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Salpicón Colombiano
 region: Nacional
 language: es

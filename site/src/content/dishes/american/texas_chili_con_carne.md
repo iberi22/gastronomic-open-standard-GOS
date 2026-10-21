@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Texas Chili con Carne
 region: Texas
 language: es

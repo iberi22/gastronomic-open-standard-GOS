@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pot-au-Feu Tradicional
 region: Francia Nacional
 language: es

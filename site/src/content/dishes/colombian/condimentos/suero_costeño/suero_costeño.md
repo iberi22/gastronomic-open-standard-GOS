@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Suero Costeño
 region: Colombia
 language: es

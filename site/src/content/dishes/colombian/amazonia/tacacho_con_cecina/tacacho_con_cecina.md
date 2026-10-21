@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacacho con Cecina
 region: Amazonía
 language: es

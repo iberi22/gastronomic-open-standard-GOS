@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Baião de Dois
 region: Ceará / Nordeste, Brasil
 language: pt

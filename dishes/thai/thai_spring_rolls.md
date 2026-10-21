@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Por Pia Tod (Rollitos Tailandeses)
 region: Bangkok
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Frijoles con Cola de Cerdo (Pig Tail Beans)
 region: Colombia
 language: es

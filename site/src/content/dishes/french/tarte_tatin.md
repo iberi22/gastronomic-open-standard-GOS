@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tarte Tatin
 region: Valle del Loira
 language: es

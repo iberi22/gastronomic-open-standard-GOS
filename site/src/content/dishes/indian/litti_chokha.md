@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- mustard
+- unknown
 title: Litti Chokha
 region: Bihar
 language: es

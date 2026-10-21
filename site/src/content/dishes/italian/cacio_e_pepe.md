@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Spaghetti Cacio e Pepe
 region: Lazio (Roma)
 language: es

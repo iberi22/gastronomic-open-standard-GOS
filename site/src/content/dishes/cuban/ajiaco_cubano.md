@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ajiaco Criollo Cubano
 region: Cuba
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Porchetta di Ariccia
 region: Lazio (Ariccia)
 language: es

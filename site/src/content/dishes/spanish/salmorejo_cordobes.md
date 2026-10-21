@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Salmorejo Cordobés
 region: Córdoba
 language: es

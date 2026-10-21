@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Arancini Siciliani di Riso
 region: Sicilia
 language: es

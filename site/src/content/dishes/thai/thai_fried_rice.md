@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- fish
+- unknown
 title: Khao Pad Kung
 region: Bangkok
 language: es

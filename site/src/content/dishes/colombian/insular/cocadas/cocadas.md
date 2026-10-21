@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cocadas
 region: Colombia
 language: es

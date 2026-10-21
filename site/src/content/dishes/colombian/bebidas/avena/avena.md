@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Avena Colombiana (Bebida Fría)
 region: Nacional
 language: es

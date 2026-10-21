@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Eggs Benedict
 region: 'Nueva York, NY'
 language: es

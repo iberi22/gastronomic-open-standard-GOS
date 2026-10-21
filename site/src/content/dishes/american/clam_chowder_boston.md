@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- molluscs
+- unknown
 title: New England Clam Chowder
 region: 'Boston, MA'
 language: es

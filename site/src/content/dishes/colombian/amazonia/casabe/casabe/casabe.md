@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Casabe (Pan de Yuca Amazónico)
 region: Amazonía
 language: es

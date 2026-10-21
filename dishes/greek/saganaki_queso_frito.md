@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Garides Saganaki (Camarones con Feta)
 region: Grecia Nacional
 language: es

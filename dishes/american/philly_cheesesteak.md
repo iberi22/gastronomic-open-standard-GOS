@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Philly Cheesesteak
 region: 'Filadelfia, PA'
 language: es

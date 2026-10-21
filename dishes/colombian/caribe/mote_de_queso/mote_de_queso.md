@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mote de Queso
 region: Caribe
 language: es

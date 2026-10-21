@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Crab Patty (Empanada de Cangrejo)
 region: Colombia
 language: es

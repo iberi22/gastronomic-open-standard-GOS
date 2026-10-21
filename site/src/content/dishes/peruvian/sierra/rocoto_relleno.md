@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- peanuts
+- unknown
 title: Rocoto Relleno
 region: Sierra
 language: es

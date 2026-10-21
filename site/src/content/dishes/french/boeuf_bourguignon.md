@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Boeuf Bourguignon
 region: Borgoña
 language: es

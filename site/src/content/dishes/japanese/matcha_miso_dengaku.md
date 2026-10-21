@@ -1,4 +1,8 @@
 ---
+allergens:
+- sesame
+- soybeans
+- unknown
 title: Matcha Miso Dengaku
 region: Aichi (Nagoya) / Kyoto
 language: es

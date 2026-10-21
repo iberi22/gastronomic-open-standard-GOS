@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- molluscs
+- unknown
 title: Escargots de Bourgogne
 region: Borgoña
 language: es

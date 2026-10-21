@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tajine de Pollo con Limón Encurtido y Aceitunas
 region: Casablanca
 language: es

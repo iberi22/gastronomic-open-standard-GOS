@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tlacoyos de Alverjón
 region: Centro de México
 language: es

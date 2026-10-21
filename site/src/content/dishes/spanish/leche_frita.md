@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Leche Frita Tradicional
 region: Castilla y León
 language: es

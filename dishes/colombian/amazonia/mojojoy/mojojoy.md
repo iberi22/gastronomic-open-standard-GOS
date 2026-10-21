@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mojojoy (Larva de Palma)
 region: Amazonía
 language: es

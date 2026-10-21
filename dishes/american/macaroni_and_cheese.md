@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Baked Macaroni and Cheese
 region: Sur de EE.UU.
 language: es

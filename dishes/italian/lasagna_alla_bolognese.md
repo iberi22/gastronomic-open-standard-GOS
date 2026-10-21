@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- milk
+- sulphites
+- unknown
 title: Lasagna alla Bolognese
 region: Emilia-Romaña (Bolonia)
 language: es

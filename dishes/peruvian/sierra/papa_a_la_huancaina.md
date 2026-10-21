@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Papa a la Huancaína
 region: Sierra/Costa
 language: es

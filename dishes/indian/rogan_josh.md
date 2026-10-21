@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Rogan Josh de Cordero
 region: Cachemira
 language: es

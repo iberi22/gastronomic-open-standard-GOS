@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- eggs
+- soybeans
+- unknown
 title: Chawanmushi (Flan Salado)
 region: Kyoto
 language: es

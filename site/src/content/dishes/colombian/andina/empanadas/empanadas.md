@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Empanadas Andinas
 region: Andina
 language: es

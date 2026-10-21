@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Malai Kofta
 region: Norte de India
 language: es

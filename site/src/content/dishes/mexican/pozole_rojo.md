@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pozole Rojo de Jalisco
 region: Jalisco
 language: es

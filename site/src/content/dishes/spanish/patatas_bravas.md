@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Patatas Bravas
 region: Madrid
 language: es

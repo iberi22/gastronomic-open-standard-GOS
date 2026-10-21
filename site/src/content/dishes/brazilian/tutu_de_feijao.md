@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tutu de Feijão
 region: Minas Gerais, Brasil
 language: pt

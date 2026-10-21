@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Brisket Estilo Texas (Punta de Pecho Ahumada)
 region: Texas
 language: es

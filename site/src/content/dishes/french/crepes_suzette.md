@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Crêpes Suzette
 region: Costa Azul
 language: es

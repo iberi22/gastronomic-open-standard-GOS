@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Parmigiana di Melanzane
 region: Campania / Sicilia
 language: es

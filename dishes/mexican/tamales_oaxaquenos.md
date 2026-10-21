@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tamales Oaxaqueños
 region: Oaxaca
 language: es

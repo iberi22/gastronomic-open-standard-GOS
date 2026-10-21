@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pescado a la Veracruzana
 region: Veracruz
 language: es

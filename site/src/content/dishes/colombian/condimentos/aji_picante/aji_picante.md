@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ají Picante Colombiano
 region: Colombia
 language: es

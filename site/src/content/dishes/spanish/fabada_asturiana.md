@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Fabada Asturiana
 region: Asturias
 language: es

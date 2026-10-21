@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Gnocchi di Patate al Pesto
 region: Liguria (Génova)
 language: es

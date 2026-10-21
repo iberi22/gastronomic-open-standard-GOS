@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- fish
+- unknown
 title: Pusandao (Sopa de Identidad)
 region: Pacífica / Nariño
 language: es

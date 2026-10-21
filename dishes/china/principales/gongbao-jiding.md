@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Gongbao Jiding (Kung Pao Chicken)
 region: China
 language: zh
