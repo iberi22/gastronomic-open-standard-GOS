@@ -1,3 +1,9 @@
+---
+title: "Learning Pickling (Meat)"
+description: "The pickling described here is the step of processing ingredients before cooking, not making salted meat or pickled sausages, etc."
+tags: ["tips","learn"]
+language: "en"
+---
 # Learning Pickling (Meat)
 
 ## Note

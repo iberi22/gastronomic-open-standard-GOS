@@ -1,3 +1,9 @@
+---
+title: "Unveiling the Wisdom of Food Pairings: These Foods Should Not Be Eaten Together"
+description: "In daily cooking, we all hope to make delicious and healthy home-cooked dishes. However, some seemingly ordinary ingredients may hide \"mysteries\" when paired together, not only affecting the color,…"
+tags: ["tips","general"]
+language: "en"
+---
 # Unveiling the Wisdom of Food Pairings: These Foods Should Not Be Eaten Together
 
 In daily cooking, we all hope to make delicious and healthy home-cooked dishes. However, some seemingly ordinary ingredients may hide "mysteries" when paired together, not only affecting the color, aroma, and taste of the food, but also possibly hindering nutrient absorption, or even subtly affecting physical health. Understanding these "food incompatibilities" and "eating taboos" is an important step in improving dietary wisdom and protecting family health.

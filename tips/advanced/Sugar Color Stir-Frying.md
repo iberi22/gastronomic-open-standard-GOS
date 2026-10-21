@@ -1,3 +1,9 @@
+---
+title: "Sugar Color Stir-Frying"
+description: "Principle: Sugar melts when heated, and presents different states after heating for different times."
+tags: ["tips","advanced"]
+language: "en"
+---
 # Sugar Color Stir-Frying
 
 Principle: Sugar melts when heated, and presents different states after heating for different times.

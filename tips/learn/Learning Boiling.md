@@ -1,3 +1,9 @@
+---
+title: "Learning Boiling"
+description: "Pour water into pot——turn on fire, place pot on fire to heat——after water boils (water rolls, lots of bubbles come out) put in ingredients."
+tags: ["tips","learn"]
+language: "en"
+---
 # Learning Boiling
 
 ## Process
