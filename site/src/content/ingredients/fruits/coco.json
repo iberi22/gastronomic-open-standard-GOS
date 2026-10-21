@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Coco",
   "group": "Fruit",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Coco",
   "aliases": {
     "es": [
       "cocos"
     ]
-  },
-  "body_md": "# Coco"
+  }
 }

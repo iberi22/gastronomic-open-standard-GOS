@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Ñame",
   "group": "Vegetable",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Ñame",
   "aliases": {
     "es": [
       "names"
     ]
-  },
-  "body_md": "# Ñame"
+  }
 }

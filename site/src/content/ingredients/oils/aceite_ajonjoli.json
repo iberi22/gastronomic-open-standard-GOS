@@ -1,58 +1,19 @@
 {
-  "allergens": [
-    "sesame"
-  ],
   "name": "Aceite de Ajonjolí (Sésamo)",
   "scientific_name": "Sesamum indicum",
   "group": "Oil",
   "portions": {
-    "default_g": 5,
-    "household": [
-      {
-        "description": "1 tablespoon",
-        "grams": 13.6
-      },
-      {
-        "description": "1 cup",
-        "grams": 218.0
-      },
-      {
-        "description": "1 tsp",
-        "grams": 4.5
-      }
-    ]
+    "default_g": 5
   },
   "nutrition_per_100g": {
-    "calories": 884.0,
-    "carbs_g": 0.0,
-    "fat_g": 100.0,
-    "fiber_g": 0.0,
-    "protein_g": 0.0,
-    "saturated_fat_g": 14.2,
-    "sugar_g": 0.0
+    "calories": 884,
+    "protein_g": 0,
+    "fat_g": 100,
+    "carbs_g": 0
   },
   "micronutrients": {
-    "calcium_mg": 0.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.0,
-    "folate_ug": 0.0,
-    "iron_mg": 0.0,
-    "magnesium_mg": 0.0,
-    "niacin_mg": 0.0,
-    "phosphorus_mg": 0.0,
-    "potassium_mg": 0.0,
-    "riboflavin_mg": 0.0,
-    "selenium_ug": 0.0,
-    "sodium_mg": 0.0,
-    "thiamin_mg": 0.0,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.0,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 1.4,
     "vitamin_k_ug": 13.6,
-    "zinc_mg": 0.0
+    "vitamin_e_mg": 1.4
   },
   "active_compounds": [
     {
@@ -72,71 +33,11 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:171016)",
-    "Wikidata (Q2763698)",
-    "Wikidata (Q212317)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "aroma",
     "asiatico"
   ],
-  "aliases": {
-    "es": [
-      "aceite de ajónjoli"
-    ],
-    "fr": [
-      "8008-74-0"
-    ],
-    "zh": [
-      "芝麻油",
-      "芝麻香油",
-      "香油",
-      "麻油"
-    ]
-  },
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:171016",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q2763698",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q212317",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Pedaliaceae",
-    "genus": "Sesamum"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "sesame oil"
-    },
-    "es": {
-      "common_name": "aceite de sésamo"
-    },
-    "fr": {
-      "common_name": "huile de sésame"
-    },
-    "ja": {
-      "common_name": "ごま油"
-    },
-    "pt": {
-      "common_name": "Óleo de gergelim"
-    },
-    "zh": {
-      "common_name": "芝麻油"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aceite de ajonjolí tostado es un aceite \"de finalización\", no de cocción (debido a su bajo punto de humo). Aporta un aroma a nuez intenso.\n\n## Culinary Uses\n- **Finalizador:** Unas gotas sobre sopas o salteados al apagar el fuego.\n- **Aderezos:** Mezclado con soya y vinagre.\n\n## Health Benefits\n### Salud Arterial\nLos lignanos del sésamo ayudan a reducir la oxidación del colesterol LDL."
 }

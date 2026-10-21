@@ -9,12 +9,8 @@
   "aliases": {
     "en": [
       "lentils"
-    ],
-    "es": [
-      "lentejas"
     ]
   },
-  "allergens": [],
   "group": "Legume",
   "health_registry": [
     {
@@ -46,57 +42,26 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 35.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.75,
-    "folate_ug": 479.0,
-    "iron_mg": 6.51,
-    "magnesium_mg": 47.0,
-    "manganese_mg": 1.39,
-    "niacin_mg": 2.6,
-    "phosphorus_mg": 281.0,
-    "potassium_mg": 677.0,
-    "riboflavin_mg": 0.21,
-    "selenium_ug": 0.1,
-    "sodium_mg": 6.0,
-    "thiamin_mg": 0.87,
-    "vitamin_a_rae_ug": 2.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.54,
-    "vitamin_c_mg": 4.5,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.49,
-    "vitamin_k_ug": 5.0,
-    "zinc_mg": 3.27
+    "folate_ug": 479,
+    "iron_mg": 7.5,
+    "potassium_mg": 955,
+    "thiamin_mg": 0.87
   },
   "name": "Lentejas (Secas)",
   "nutrition_per_100g": {
-    "calories": 352.0,
-    "carbs_g": 63.35,
-    "fat_g": 1.06,
-    "fiber_g": 10.7,
-    "protein_g": 24.63,
-    "saturated_fat_g": 0.15,
-    "sugar_g": 2.03
+    "calories": 353,
+    "carbs_g": 60,
+    "fat_g": 1,
+    "fiber_g": 30,
+    "protein_g": 26,
+    "sugar_g": 2
   },
   "portions": {
-    "default_g": 100,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 192.0
-      },
-      {
-        "description": "1 tablespoon",
-        "grams": 12.0
-      }
-    ]
+    "default_g": 100
   },
   "scientific_name": "Lens culinaris",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:172420)",
-    "Wikidata (Q131226)",
-    "Wikidata (Q61505177)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "almuerzo",
@@ -104,49 +69,5 @@
     "corazon_sano",
     "hierro"
   ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:172420",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q131226",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q61505177",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Fabaceae",
-    "genus": "Lens"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "lentil"
-    },
-    "es": {
-      "common_name": "lenteja"
-    },
-    "fr": {
-      "common_name": "lentile"
-    },
-    "ja": {
-      "common_name": "レンズマメ"
-    },
-    "pt": {
-      "common_name": "lentilha"
-    },
-    "zh": {
-      "common_name": "小扁豆"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLas lentejas son una de las fuentes de proteína vegetal más antiguas y densas. A diferencia de los frijoles, no requieren remojo prolongado y son más fáciles de digerir.\n\n## Culinary Uses\n- **Lentejas Guisadas:** Plato clásico de almuerzo (\"Lunes de lentejas\" en muchas familias).\n- **Arroz de Lentejas:** Combinación que completa el perfil de aminoácidos (Metionina del arroz + Lisina de la lenteja).\n\n## Health Benefits\n### Salud Cardiovascular\nEl consumo regular de lentejas reduce significativamente el colesterol LDL y mejora la flexibilidad arterial gracias a su aporte de folato y magnesio."
 }

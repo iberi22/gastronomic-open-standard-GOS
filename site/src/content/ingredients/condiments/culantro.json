@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Culantro (Cilantro Cimarrón)",
   "group": "Condiment",
   "i18n": {
@@ -9,11 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Culantro (Cilantro Cimarrón)",
   "aliases": {
     "es": [
       "cilantro cimarron",
       "culantro licuado"
     ]
-  },
-  "body_md": "# Culantro (Cilantro Cimarrón)"
+  }
 }

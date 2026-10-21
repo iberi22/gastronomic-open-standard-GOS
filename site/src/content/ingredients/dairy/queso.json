@@ -9,18 +9,8 @@
   "aliases": {
     "en": [
       "cheese"
-    ],
-    "es": [
-      "queso costeno",
-      "queso llanero",
-      "queso costeno duro",
-      "queso doble crema",
-      "Queso Rallado"
     ]
   },
-  "allergens": [
-    "milk"
-  ],
   "group": "Dairy",
   "micronutrients": {
     "calcium_mg": 500

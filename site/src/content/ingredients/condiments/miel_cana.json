@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Miel de Caña",
   "group": "Sugar",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Miel de Caña",
   "aliases": {
     "es": [
       "miel de cana"
     ]
-  },
-  "body_md": "# Miel de Caña"
+  }
 }

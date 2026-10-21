@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Amaranto",
   "group": "Grain",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Amaranto",
   "aliases": {
     "es": [
       "semillas de amaranto"
     ]
-  },
-  "body_md": "# Amaranto"
+  }
 }

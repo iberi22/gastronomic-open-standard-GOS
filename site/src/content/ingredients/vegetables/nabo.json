@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Nabo",
   "group": "Vegetable",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Nabo",
   "aliases": {
     "es": [
       "Nabo"
     ]
-  },
-  "body_md": "# Nabo"
+  }
 }

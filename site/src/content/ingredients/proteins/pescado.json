@@ -1,7 +1,4 @@
 {
-  "allergens": [
-    "fish"
-  ],
   "name": "Pescado Blanco (Bagre/Mojarra/Tilapia)",
   "scientific_name": "Oreochromis niloticus / Pseudoplatystoma",
   "group": "Protein",
@@ -52,18 +49,5 @@
     "frito",
     "mar"
   ],
-  "aliases": {
-    "es": [
-      "cachamas",
-      "carne de gumarra",
-      "filete de pirarucu",
-      "pescado blanco"
-    ],
-    "zh": [
-      "巴沙鱼",
-      "鱼头一个",
-      "黑鳕鱼"
-    ]
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl pescado de río (Bagre) o cultivo (Tilapia) es fundamental en la dieta de las costas y riberas colombianas. Es una proteína de muy fácil digestión.\n\n## Culinary Uses\n- **Sancocho de Pescado:** Plato insignia de la costa.\n- **Frito:** Mojarra frita con patacón.\n- **Sudado:** Bagre en salsa criolla.\n\n## Health Benefits\n### Digestibilidad\nIdeal para niños y adultos mayores debido a su baja cantidad de tejido conectivo en comparación con las carnes rojas."
 }

@@ -4,7 +4,6 @@
 
 import { describe, expect, it, vi } from 'vitest'
 import worker from '../src/index'
-import { createFakeD1 } from './d1-fake'
 
 const GW = 'https://gos-api-gateway.test'
 
@@ -28,7 +27,6 @@ function permissiveRL(limit = 1000) {
 function env(overrides: Record<string, unknown> = {}) {
   return {
     ORIGIN_URL: 'https://origin.test',
-    DB: createFakeD1({ applySchema: true }).db,
     RL_FREE_BURST: permissiveRL(),
     ...overrides,
   }
@@ -100,9 +98,9 @@ describe('endpoints de datos abiertos: responden sin ninguna key', () => {
     }
   })
 
-  it('el rate limit anonimo se anuncia en cabeceras, sin mencion a tiers', async () => {
+  it('no anuncia cuota diaria ni cabeceras de tier (solo rafaga)', async () => {
     const { res } = await call('/api/all.json')
-    expect(res.headers.get('x-ratelimit-limit')).toBe('100')
+    expect(res.headers.get('x-ratelimit-limit')).toBeNull()
     expect(res.headers.get('x-ratelimit-tier')).toBeNull()
   })
 })

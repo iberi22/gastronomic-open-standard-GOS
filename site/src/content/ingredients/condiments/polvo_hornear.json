@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Polvo de Hornear",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Polvo de Hornear",
   "aliases": {
     "es": [
       "polvo de hornear"
     ]
-  },
-  "body_md": "# Polvo de Hornear"
+  }
 }

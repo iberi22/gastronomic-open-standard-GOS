@@ -78,7 +78,7 @@ function generateLLMFiles() {
 # Graph: /graph-data.json (${totalNodes} nodes, ${totalEdges} edges)
 # Catalog: /api/by-country/catalog.json (${countries.length} countries cataloged)
 # Full Document: /llms-full.txt
-# API Gateway Rate Limit: 100 req/day/IP, anonymous: no key required
+# API Gateway Rate Limit: 30 req/min/IP, anonymous: no key required
 # SEO: JSON-LD Schema.org Recipe/Ingredient/ChemicalSubstance embedded on detail pages
 
 ## Quick Start for AI Agents
@@ -175,7 +175,7 @@ ${ingredientNodes.map((i) => `- ${i.label} ${i.scientific_name ? `(${i.scientifi
 
 ## API Gateway & Rate Limits
 - Gateway URL: /api/* (fronted by Cloudflare Worker)
-- Anonymous: 30 requests per minute per IP on every route; non-static routes also have 100 requests per day per IP (HTTP 429 on either limit)
+- Anonymous: 30 requests per minute per IP on every route (HTTP 429 with Retry-After when exceeded)
 - No keys, no tiers, no paid access: the API is open and keyless. GOS is the open
   information repository of the SWAL ecosystem; the business models live in the
   apps that read it (Fize, GARA-G, OrionHealth...), not here.

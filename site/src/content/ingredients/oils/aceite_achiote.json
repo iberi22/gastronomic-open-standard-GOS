@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Aceite de Achiote",
   "group": "Oil",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Aceite de Achiote",
   "aliases": {
     "es": [
       "Aceite De Achiote"
     ]
-  },
-  "body_md": "# Aceite de Achiote"
+  }
 }

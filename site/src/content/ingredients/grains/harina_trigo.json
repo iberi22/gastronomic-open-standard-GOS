@@ -9,20 +9,8 @@
   "aliases": {
     "en": [
       "wheat flour"
-    ],
-    "es": [
-      "harina de trigo"
-    ],
-    "fr": [
-      "Farine de froment"
-    ],
-    "zh": [
-      "面粉"
     ]
   },
-  "allergens": [
-    "cereals_gluten"
-  ],
   "group": "Grain",
   "health_registry": [
     {
@@ -35,102 +23,29 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 15.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.14,
-    "folate_ug": 183.0,
-    "iron_mg": 4.64,
-    "magnesium_mg": 22.0,
-    "manganese_mg": 0.68,
-    "niacin_mg": 5.9,
-    "phosphorus_mg": 108.0,
-    "potassium_mg": 107.0,
-    "riboflavin_mg": 0.49,
-    "selenium_ug": 33.9,
-    "sodium_mg": 2.0,
-    "thiamin_mg": 0.79,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.04,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.06,
-    "vitamin_k_ug": 0.3,
-    "zinc_mg": 0.7
+    "folate_ug": 120,
+    "iron_mg": 4.6,
+    "thiamin_mg": 0.8
   },
   "name": "Harina de Trigo",
   "nutrition_per_100g": {
-    "calories": 364.0,
-    "carbs_g": 76.31,
-    "fat_g": 0.98,
+    "calories": 364,
+    "carbs_g": 76,
+    "fat_g": 1,
     "fiber_g": 2.7,
-    "protein_g": 10.33,
-    "saturated_fat_g": 0.15,
-    "sugar_g": 0.27
+    "protein_g": 10
   },
   "portions": {
-    "default_g": 125,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 125.0
-      }
-    ]
+    "default_g": 125
   },
   "scientific_name": "Triticum aestivum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:168894)",
-    "Wikidata (Q161098)",
-    "Wikidata (Q2249305)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "pan",
     "arepa_harina",
     "espesante"
   ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:168894",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q161098",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q2249305",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Poaceae",
-    "genus": "Triticum"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "wheat flour"
-    },
-    "es": {
-      "common_name": "harina de trigo"
-    },
-    "fr": {
-      "common_name": "farine de blé"
-    },
-    "ja": {
-      "common_name": "小麦粉"
-    },
-    "pt": {
-      "common_name": "farinha de trigo"
-    },
-    "zh": {
-      "common_name": "麵粉"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa harina de trigo es la base de la panadería y de muchos fritos (rebozados). En Colombia, la harina suele estar fortificada por ley con hierro y ácido fólico.\n\n## Culinary Uses\n- **Amasijos:** Almojábanas, Pandebonos (mezclada con almidones).\n- **Salsas:** Base de bechamel o para espesar.\n- **Fritos:** Rebozado de chuletas o pescado.\n\n## Health Benefits\n### Fortificación\nGracias a la fortificación obligatoria, es una fuente importante de ácido fólico y hierro en la dieta general."
 }

@@ -8,20 +8,9 @@
   ],
   "aliases": {
     "en": [
-      "carrot",
-      "carrot taproot"
-    ],
-    "es": [
-      "Zanahorias"
-    ],
-    "fr": [
-      "carotte cultivée"
-    ],
-    "zh": [
-      "胡萝卜"
+      "carrot"
     ]
   },
-  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -40,130 +29,30 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 33.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.04,
-    "folate_ug": 19.0,
-    "iron_mg": 0.3,
-    "magnesium_mg": 12.0,
-    "manganese_mg": 0.14,
-    "niacin_mg": 0.98,
-    "phosphorus_mg": 35.0,
-    "potassium_mg": 320.0,
-    "riboflavin_mg": 0.06,
-    "selenium_ug": 0.1,
-    "sodium_mg": 69.0,
-    "thiamin_mg": 0.07,
-    "vitamin_a_rae_ug": 835.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.14,
-    "vitamin_c_mg": 5.9,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.66,
-    "vitamin_k_ug": 13.2,
-    "zinc_mg": 0.24
+    "potassium_mg": 320,
+    "vitamin_a_iu": 16706,
+    "vitamin_k_ug": 13.2
   },
   "name": "Zanahoria",
   "nutrition_per_100g": {
-    "calories": 41.0,
-    "carbs_g": 9.58,
-    "fat_g": 0.24,
+    "calories": 41,
+    "carbs_g": 9.6,
+    "fat_g": 0.2,
     "fiber_g": 2.8,
-    "protein_g": 0.93,
-    "saturated_fat_g": 0.03,
-    "sugar_g": 4.74
+    "protein_g": 0.9,
+    "sugar_g": 4.7
   },
   "portions": {
-    "default_g": 61,
-    "household": [
-      {
-        "description": "1 cup chopped",
-        "grams": 128.0
-      },
-      {
-        "description": "1 cup grated",
-        "grams": 110.0
-      },
-      {
-        "description": "1 cup strips or slices",
-        "grams": 122.0
-      },
-      {
-        "description": "1 large (7-1/4\" to 8-/1/2\" long)",
-        "grams": 72.0
-      },
-      {
-        "description": "1 medium",
-        "grams": 61.0
-      },
-      {
-        "description": "1 small (5-1/2\" long)",
-        "grams": 50.0
-      },
-      {
-        "description": "1 slice",
-        "grams": 3.0
-      },
-      {
-        "description": "1 strip large (3\" long)",
-        "grams": 7.0
-      }
-    ]
+    "default_g": 61
   },
   "scientific_name": "Daucus carota",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170393)",
-    "Wikidata (Q30056)",
-    "Wikidata (Q81)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "sopa",
     "ensalada",
     "vision"
   ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:170393",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q30056",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q81",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Apiaceae",
-    "genus": "Daucus"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "carrot"
-    },
-    "es": {
-      "common_name": "zanahoria"
-    },
-    "fr": {
-      "common_name": "carotte"
-    },
-    "ja": {
-      "common_name": "ニンジン"
-    },
-    "pt": {
-      "common_name": "cenoura"
-    },
-    "zh": {
-      "common_name": "胡萝卜"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa zanahoria aporta dulzor natural y color vibrante a sopas y arroces. Su contenido de Vitamina A es excepcional.\n\n## Culinary Uses\n- **Rallada:** En ensaladas o arroces (arroz con zanahoria).\n- **Cubos:** En sancochos y sudados.\n\n## Health Benefits\n### Piel y Ojos\nEl betacaroteno se deposita en la piel ofreciendo fotoprotección leve y mejora la adaptación visual a la oscuridad."
 }

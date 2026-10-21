@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Chigüiro",
   "group": "Protein",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Chigüiro",
   "aliases": {
     "es": [
       "carne de chiguiro"
     ]
-  },
-  "body_md": "# Chigüiro"
+  }
 }

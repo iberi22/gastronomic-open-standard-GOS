@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Bicarbonato de Sodio",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Bicarbonato de Sodio",
   "aliases": {
     "es": [
       "bicarbonato de sodio"
     ]
-  },
-  "body_md": "# Bicarbonato de Sodio"
+  }
 }

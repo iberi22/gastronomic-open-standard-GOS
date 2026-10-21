@@ -1,7 +1,4 @@
 {
-  "allergens": [
-    "molluscs"
-  ],
   "name": "Caracol de Mar",
   "group": "Protein",
   "i18n": {
@@ -11,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Caracol de Mar",
   "aliases": {
     "es": [
       "caracol de mar"
     ]
-  },
-  "body_md": "# Caracol de Mar"
+  }
 }
