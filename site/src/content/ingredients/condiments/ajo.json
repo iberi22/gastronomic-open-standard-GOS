@@ -26,6 +26,7 @@
       "蒜瓣"
     ]
   },
+  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -130,7 +131,6 @@
     "condimento",
     "medicinal"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su principal bioactivo, la **alicina**, es un compuesto azufrado inestable que se forma solo cuando el ajo se tritura o mastica, degradándose rápidamente con el calor excesivo. Por eso, para beneficios de salud, se recomienda machacarlo y dejarlo reposar 10 minutos antes de cocinar (o comerlo crudo).\n\n## Culinary Uses\n- **Adobos:** Base para marinar carnes y pescados.\n- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).\n- **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.\n\n## Health Benefits\n### Salud Cardiovascular\nEstudios clínicos han demostrado que el consumo regular de ajo puede reducir la presión arterial sistólica y diastólica en personas hipertensas, con efectos comparables a medicamentos estándar como el atenolol en algunos ensayos.\n\n### Propiedades Antimicrobianas\nLa alicina tiene actividad antibacteriana, antiviral (incluyendo cepas de influenza) y antifúngica demostrada in vitro.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -174,5 +174,6 @@
     "zh": {
       "common_name": "大蒜"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su principal bioactivo, la **alicina**, es un compuesto azufrado inestable que se forma solo cuando el ajo se tritura o mastica, degradándose rápidamente con el calor excesivo. Por eso, para beneficios de salud, se recomienda machacarlo y dejarlo reposar 10 minutos antes de cocinar (o comerlo crudo).\n\n## Culinary Uses\n- **Adobos:** Base para marinar carnes y pescados.\n- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).\n- **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.\n\n## Health Benefits\n### Salud Cardiovascular\nEstudios clínicos han demostrado que el consumo regular de ajo puede reducir la presión arterial sistólica y diastólica en personas hipertensas, con efectos comparables a medicamentos estándar como el atenolol en algunos ensayos.\n\n### Propiedades Antimicrobianas\nLa alicina tiene actividad antibacteriana, antiviral (incluyendo cepas de influenza) y antifúngica demostrada in vitro."
 }

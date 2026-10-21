@@ -19,6 +19,7 @@
       "aguacates"
     ]
   },
+  "allergens": [],
   "group": "Fruit",
   "health_registry": [
     {
@@ -108,7 +109,6 @@
     "ajiaco",
     "bandeja_paisa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aguacate es botánicamente una fruta, pero nutricionalmente una fuente de grasa saludable. En Colombia acompaña casi todos los platos fuertes (Ajiaco, Bandeja Paisa, Sancochos).\n\n## Culinary Uses\n- **Acompañante:** Rodajas frescas con sal.\n- **Guacamole:** Triturado con cilantro, cebolla y limón.\n\n## Health Benefits\n### Protector Cardíaco\nSustituir grasas saturadas por aguacate reduce significativamente los marcadores de inflamación y colesterol.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -116,5 +116,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aguacate es botánicamente una fruta, pero nutricionalmente una fuente de grasa saludable. En Colombia acompaña casi todos los platos fuertes (Ajiaco, Bandeja Paisa, Sancochos).\n\n## Culinary Uses\n- **Acompañante:** Rodajas frescas con sal.\n- **Guacamole:** Triturado con cilantro, cebolla y limón.\n\n## Health Benefits\n### Protector Cardíaco\nSustituir grasas saturadas por aguacate reduce significativamente los marcadores de inflamación y colesterol."
 }

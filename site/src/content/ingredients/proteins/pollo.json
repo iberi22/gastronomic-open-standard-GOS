@@ -28,6 +28,7 @@
       "鸡腿"
     ]
   },
+  "allergens": [],
   "group": "Protein",
   "health_registry": [
     {
@@ -82,7 +83,6 @@
     "ajiaco",
     "dieta"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa pechuga de pollo es la proteína magra estándar de oro. Baja en grasa saturada y alta en niacina (Vit B3), esencial para el metabolismo energético.\n\n## Culinary Uses\n- **Ajiaco:** Desmechada.\n- **Arroz con Pollo:** Troceada y cocida con el arroz.\n- **Sudado:** Cocción húmeda que preserva la jugosidad.\n\n## Health Benefits\n### Metabolismo\nSu alto contenido de Vitaminas del complejo B facilita la conversión de carbohidratos en energía utilizable.",
   "scientific_registry": {
     "family": "Phasianidae",
     "genus": "Gallus"
@@ -120,5 +120,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa pechuga de pollo es la proteína magra estándar de oro. Baja en grasa saturada y alta en niacina (Vit B3), esencial para el metabolismo energético.\n\n## Culinary Uses\n- **Ajiaco:** Desmechada.\n- **Arroz con Pollo:** Troceada y cocida con el arroz.\n- **Sudado:** Cocción húmeda que preserva la jugosidad.\n\n## Health Benefits\n### Metabolismo\nSu alto contenido de Vitaminas del complejo B facilita la conversión de carbohidratos en energía utilizable."
 }

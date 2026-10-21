@@ -26,6 +26,7 @@
       "西红柿"
     ]
   },
+  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -144,7 +145,6 @@
     "licopeno",
     "salud_prostata"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl tomate rojo es la fuente dietaria principal de **licopeno**. A diferencia de otros nutrientes, la biodisponibilidad del licopeno **aumenta con la cocción** y la presencia de grasa (aceite), lo que hace que el \"Hogao\" sea una bomba nutricional superior al tomate crudo para este propósito específico.\n\n## Culinary Uses\n- **Hogao/Guiso:** Cocido con aceite (Maximiza licopeno).\n- **Crudo:** Ensaladas (Maximiza Vitamina C).\n\n## Health Benefits\n### Protección del ADN\nEl licopeno protege las células del estrés oxidativo, con evidencia fuerte en la prevención de problemas prostáticos.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -188,5 +188,6 @@
     "zh": {
       "common_name": "番茄"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl tomate rojo es la fuente dietaria principal de **licopeno**. A diferencia de otros nutrientes, la biodisponibilidad del licopeno **aumenta con la cocción** y la presencia de grasa (aceite), lo que hace que el \"Hogao\" sea una bomba nutricional superior al tomate crudo para este propósito específico.\n\n## Culinary Uses\n- **Hogao/Guiso:** Cocido con aceite (Maximiza licopeno).\n- **Crudo:** Ensaladas (Maximiza Vitamina C).\n\n## Health Benefits\n### Protección del ADN\nEl licopeno protege las células del estrés oxidativo, con evidencia fuerte en la prevención de problemas prostáticos."
 }

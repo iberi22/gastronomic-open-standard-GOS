@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "milk"
+  ],
   "name": "Suero Costeño",
   "group": "Dairy",
   "i18n": {

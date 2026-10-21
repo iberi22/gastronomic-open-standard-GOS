@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "sesame"
+  ],
   "name": "Pasta de Ajonjolí (Tahini)",
   "group": "Condiment",
   "i18n": {

@@ -33,6 +33,7 @@
       "肉馅"
     ]
   },
+  "allergens": [],
   "group": "Protein",
   "health_registry": [
     {
@@ -77,7 +78,6 @@
     "plato_fuerte",
     "proteina"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cerdo (especialmente el lomo) es una proteína magra eficiente. En Colombia se consume frito (chicharrón - corte graso) o sudado/asado (lomo - corte magro). Esta ficha se enfoca en la pulpa magra.\n\n## Culinary Uses\n- **Chuleta Valluna:** Empanizada y frita.\n- **Lechona:** Piel y carne cocida con arroz y arvejas.\n- **Frijoles:** La pezuña o el tocino dan sabor.\n\n## Health Benefits\n### Energía (Vitamina B1)\nEl cerdo contiene hasta 10 veces más Tiamina que la res, siendo vital para sistemas nerviosos activos.",
   "scientific_registry": {
     "family": "Suidae",
     "genus": "Sus"
@@ -115,5 +115,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cerdo (especialmente el lomo) es una proteína magra eficiente. En Colombia se consume frito (chicharrón - corte graso) o sudado/asado (lomo - corte magro). Esta ficha se enfoca en la pulpa magra.\n\n## Culinary Uses\n- **Chuleta Valluna:** Empanizada y frita.\n- **Lechona:** Piel y carne cocida con arroz y arvejas.\n- **Frijoles:** La pezuña o el tocino dan sabor.\n\n## Health Benefits\n### Energía (Vitamina B1)\nEl cerdo contiene hasta 10 veces más Tiamina que la res, siendo vital para sistemas nerviosos activos."
 }

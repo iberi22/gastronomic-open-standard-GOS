@@ -19,6 +19,7 @@
       "香葱"
     ]
   },
+  "allergens": [],
   "group": "Vegetable",
   "micronutrients": {
     "calcium_mg": 72.0,
@@ -88,7 +89,6 @@
     "guiso",
     "sopa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla larga es distinta a la cabezona; crece en tallos verdes y largos y tiene un sabor más suave y herbal. Es insustituible en el guiso criollo y sancochos.\n\n## Culinary Uses\n- **Guiso:** Picada finamente con tomate.\n- **Sopas:** Se usa la parte blanca y verde para saborizar caldos.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -106,5 +106,6 @@
   "scientific_registry": {
     "family": "Alliaceae",
     "genus": "Allium"
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla larga es distinta a la cabezona; crece en tallos verdes y largos y tiene un sabor más suave y herbal. Es insustituible en el guiso criollo y sancochos.\n\n## Culinary Uses\n- **Guiso:** Picada finamente con tomate.\n- **Sopas:** Se usa la parte blanca y verde para saborizar caldos."
 }

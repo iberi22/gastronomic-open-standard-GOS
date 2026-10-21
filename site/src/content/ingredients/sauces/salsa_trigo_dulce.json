@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "cereals_gluten"
+  ],
   "name": "Salsa Dulce de Trigo",
   "group": "Sauce",
   "i18n": {

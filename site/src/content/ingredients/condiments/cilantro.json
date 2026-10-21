@@ -23,6 +23,7 @@
       "香菜"
     ]
   },
+  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -108,7 +109,6 @@
     "sopa",
     "detox"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cilantro es la firma olfativa de Colombia. Rico en aceites esenciales volátiles (dodecenal, linalool) que se destruyen con el calor, por lo que su uso es estrictamente al final de la preparación.\n\n## Culinary Uses\n- **Finalizador:** Se esparce sobre Sancochos, Ajiacos y Caldos justo antes de servir.\n- **Pico de Gallo:** Aporta frescura herbal que corta la grasa.\n\n## Health Benefits\n### Quelación de Metales\nEstudios en animales sugieren que el cilantro puede ayudar a eliminar metales pesados acumulados en tejidos, una propiedad única entre las hierbas culinarias.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -149,5 +149,6 @@
     "pt": {
       "common_name": "coentro"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cilantro es la firma olfativa de Colombia. Rico en aceites esenciales volátiles (dodecenal, linalool) que se destruyen con el calor, por lo que su uso es estrictamente al final de la preparación.\n\n## Culinary Uses\n- **Finalizador:** Se esparce sobre Sancochos, Ajiacos y Caldos justo antes de servir.\n- **Pico de Gallo:** Aporta frescura herbal que corta la grasa.\n\n## Health Benefits\n### Quelación de Metales\nEstudios en animales sugieren que el cilantro puede ayudar a eliminar metales pesados acumulados en tejidos, una propiedad única entre las hierbas culinarias."
 }

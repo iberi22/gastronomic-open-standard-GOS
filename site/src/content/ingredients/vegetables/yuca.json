@@ -23,6 +23,7 @@
       "mandioca"
     ]
   },
+  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -98,7 +99,6 @@
     "energia",
     "sin_gluten"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa yuca es un tubérculo rústico resistente a la sequía. Es una fuente de carbohidratos densa. Debe cocinarse siempre para eliminar compuestos cianogénicos residuales (en variedades dulces el riesgo es mínimo, pero la cocción es mandatoria).\n\n## Culinary Uses\n- **Sancochos:** Aporta cuerpo y espesor al caldo al desatarse un poco.\n- **Frita:** Acompañante crocante.\n- **Cocida:** Guarnición suave (yuca harinosa).\n\n## Health Benefits\n### Energía Sostenible\nAporta energía densa libre de gluten y con una carga significativa de Vitamina C (si no se sobrecocina en exceso).",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -139,5 +139,6 @@
     "pt": {
       "common_name": "raiz de mandioca"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa yuca es un tubérculo rústico resistente a la sequía. Es una fuente de carbohidratos densa. Debe cocinarse siempre para eliminar compuestos cianogénicos residuales (en variedades dulces el riesgo es mínimo, pero la cocción es mandatoria).\n\n## Culinary Uses\n- **Sancochos:** Aporta cuerpo y espesor al caldo al desatarse un poco.\n- **Frita:** Acompañante crocante.\n- **Cocida:** Guarnición suave (yuca harinosa).\n\n## Health Benefits\n### Energía Sostenible\nAporta energía densa libre de gluten y con una carga significativa de Vitamina C (si no se sobrecocina en exceso)."
 }

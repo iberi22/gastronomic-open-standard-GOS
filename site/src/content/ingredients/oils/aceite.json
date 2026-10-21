@@ -24,6 +24,9 @@
       "食用油"
     ]
   },
+  "allergens": [
+    "unknown"
+  ],
   "group": "Oil",
   "micronutrients": {
     "vitamin_e_mg": 15

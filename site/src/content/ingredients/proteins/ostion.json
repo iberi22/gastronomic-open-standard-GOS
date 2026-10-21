@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "molluscs"
+  ],
   "name": "Ostión",
   "group": "Protein",
   "i18n": {

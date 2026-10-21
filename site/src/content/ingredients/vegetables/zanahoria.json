@@ -21,6 +21,7 @@
       "胡萝卜"
     ]
   },
+  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -120,7 +121,6 @@
     "ensalada",
     "vision"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa zanahoria aporta dulzor natural y color vibrante a sopas y arroces. Su contenido de Vitamina A es excepcional.\n\n## Culinary Uses\n- **Rallada:** En ensaladas o arroces (arroz con zanahoria).\n- **Cubos:** En sancochos y sudados.\n\n## Health Benefits\n### Piel y Ojos\nEl betacaroteno se deposita en la piel ofreciendo fotoprotección leve y mejora la adaptación visual a la oscuridad.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -164,5 +164,6 @@
     "zh": {
       "common_name": "胡萝卜"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa zanahoria aporta dulzor natural y color vibrante a sopas y arroces. Su contenido de Vitamina A es excepcional.\n\n## Culinary Uses\n- **Rallada:** En ensaladas o arroces (arroz con zanahoria).\n- **Cubos:** En sancochos y sudados.\n\n## Health Benefits\n### Piel y Ojos\nEl betacaroteno se deposita en la piel ofreciendo fotoprotección leve y mejora la adaptación visual a la oscuridad."
 }

@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "milk"
+  ],
   "name": "Leche Condensada",
   "group": "Dairy",
   "i18n": {

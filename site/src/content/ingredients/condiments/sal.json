@@ -21,6 +21,7 @@
       "食盐"
     ]
   },
+  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -97,7 +98,6 @@
     "esencial",
     "sabor"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa sal es el potenciador de sabor universal. En Colombia, la sal de Zipaquirá o Manaure es famosas. Es vital para la vida pero debe moderarse.\n\n## Culinary Uses\n- **Sazón:** Todo plato salado.\n- **Papa Salada:** Técnica de saturación para cristalizar sal en la piel.\n\n## Health Benefits\n### Yodo\nLa sal yodada es la principal defensa de salud pública contra el bocio y problemas de tiroides.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -105,5 +105,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa sal es el potenciador de sabor universal. En Colombia, la sal de Zipaquirá o Manaure es famosas. Es vital para la vida pero debe moderarse.\n\n## Culinary Uses\n- **Sazón:** Todo plato salado.\n- **Papa Salada:** Técnica de saturación para cristalizar sal en la piel.\n\n## Health Benefits\n### Yodo\nLa sal yodada es la principal defensa de salud pública contra el bocio y problemas de tiroides."
 }

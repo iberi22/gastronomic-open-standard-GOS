@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "celery"
+  ],
   "name": "Apio",
   "group": "Vegetable",
   "i18n": {

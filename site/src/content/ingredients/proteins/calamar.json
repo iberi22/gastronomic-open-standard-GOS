@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "molluscs"
+  ],
   "name": "Calamar",
   "group": "Protein",
   "i18n": {
@@ -8,10 +11,10 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Calamar",
   "aliases": {
     "es": [
       "calamares"
     ]
-  }
+  },
+  "body_md": "# Calamar"
 }

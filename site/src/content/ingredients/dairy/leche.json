@@ -17,6 +17,9 @@
       "牛奶"
     ]
   },
+  "allergens": [
+    "milk"
+  ],
   "group": "Dairy",
   "micronutrients": {
     "calcium_mg": 113.0,
@@ -83,7 +86,6 @@
     "postre",
     "sopa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa leche es base de bebidas calientes (chocolate, café), postres (arroz con leche) y algunas sopas (changua).\n\n## Culinary Uses\n- **Chocolate Santafereño:** Preparado con leche.\n- **Changua:** Caldo de leche con huevo.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -91,5 +93,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa leche es base de bebidas calientes (chocolate, café), postres (arroz con leche) y algunas sopas (changua).\n\n## Culinary Uses\n- **Chocolate Santafereño:** Preparado con leche.\n- **Changua:** Caldo de leche con huevo."
 }

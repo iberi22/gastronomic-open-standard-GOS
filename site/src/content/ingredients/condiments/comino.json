@@ -20,6 +20,7 @@
       "孜然粉"
     ]
   },
+  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -61,7 +62,6 @@
     "sazon",
     "digestion"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl comino es la especia \"tierra\" de la cocina colombiana. Se usa en guisos, empanadas y para adobar carnes.\n\n## Culinary Uses\n- **Adobos:** Mezclado con color (achiote) y sal.\n- **Empanadas:** El sabor característico del relleno de carne.\n\n## Health Benefits\n### Digestión\nEs un potente carminativo (reduce gases) y estimulante de la digestión, ideal para acompañar platos pesados como frijoles.",
   "scientific_registry": {
     "family": "Apiaceae",
     "genus": "Cuminum"
@@ -96,5 +96,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl comino es la especia \"tierra\" de la cocina colombiana. Se usa en guisos, empanadas y para adobar carnes.\n\n## Culinary Uses\n- **Adobos:** Mezclado con color (achiote) y sal.\n- **Empanadas:** El sabor característico del relleno de carne.\n\n## Health Benefits\n### Digestión\nEs un potente carminativo (reduce gases) y estimulante de la digestión, ideal para acompañar platos pesados como frijoles."
 }

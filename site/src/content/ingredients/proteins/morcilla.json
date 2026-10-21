@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "unknown"
+  ],
   "name": "Morcilla",
   "group": "Protein",
   "i18n": {
@@ -8,10 +11,10 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Morcilla",
   "aliases": {
     "es": [
       "Morcillas"
     ]
-  }
+  },
+  "body_md": "# Morcilla"
 }

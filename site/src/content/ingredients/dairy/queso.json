@@ -18,6 +18,9 @@
       "Queso Rallado"
     ]
   },
+  "allergens": [
+    "milk"
+  ],
   "group": "Dairy",
   "micronutrients": {
     "calcium_mg": 500

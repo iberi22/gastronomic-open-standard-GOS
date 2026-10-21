@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "milk"
+  ],
   "name": "Crema de Leche",
   "scientific_name": "Bos taurus",
   "group": "Dairy",
@@ -29,7 +32,6 @@
     "ajiaco",
     "postre"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa crema de leche es la grasa láctea concentrada. Es el toque final obligatorio del Ajiaco Santafereño y base de postres.\n\n## Culinary Uses\n- **Ajiaco:** Se añade en la mesa.\n- **Postres:** Fresas con crema.",
   "aliases": {
     "es": [
       "Crema De Leche"
@@ -37,5 +39,6 @@
     "zh": [
       "淡奶油"
     ]
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa crema de leche es la grasa láctea concentrada. Es el toque final obligatorio del Ajiaco Santafereño y base de postres.\n\n## Culinary Uses\n- **Ajiaco:** Se añade en la mesa.\n- **Postres:** Fresas con crema."
 }

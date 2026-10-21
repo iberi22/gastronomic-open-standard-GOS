@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "soybeans"
+  ],
   "name": "Pasta de Soya",
   "group": "Sauce",
   "i18n": {

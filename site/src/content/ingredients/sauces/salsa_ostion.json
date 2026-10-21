@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "molluscs"
+  ],
   "name": "Salsa de Ostión",
   "group": "Sauce",
   "i18n": {

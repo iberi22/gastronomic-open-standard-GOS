@@ -21,6 +21,7 @@
       "老姜"
     ]
   },
+  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -109,7 +110,6 @@
     "asiatico",
     "antiinflamatorio"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl jengibre es un rizoma picante y aromático. Esencial en la cocina china y la medicina tradicional.\n\n## Culinary Uses\n- **Salteados:** Junto al ajo y cebollín.\n- **Té:** Infusión para la gripa o náuseas.\n\n## Health Benefits\n### Antiemético Natural\nEs el remedio no farmacológico más validado para las náuseas del embarazo y mareo por movimiento.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -153,5 +153,6 @@
     "zh": {
       "common_name": "生姜"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl jengibre es un rizoma picante y aromático. Esencial en la cocina china y la medicina tradicional.\n\n## Culinary Uses\n- **Salteados:** Junto al ajo y cebollín.\n- **Té:** Infusión para la gripa o náuseas.\n\n## Health Benefits\n### Antiemético Natural\nEs el remedio no farmacológico más validado para las náuseas del embarazo y mareo por movimiento."
 }

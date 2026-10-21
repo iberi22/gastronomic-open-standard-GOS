@@ -12,6 +12,7 @@
       "creole potato"
     ]
   },
+  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -64,7 +65,6 @@
     "frita",
     "esencial"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa papa criolla (*Solanum phureja*) es un tubérculo diploide nativo de los Andes colombianos. Su piel fina y su pulpa amarilla intensa (debido a la zeaxantina) la distinguen de otras papas. Se cocina muy rápido y tiende a deshacerse, propiedad explotada para espesar caldos.\n\n## Culinary Uses\n- **Ajiaco Santafereño:** Indispensable. Se deja cocinar hasta disolverse para dar el espesor característico.\n- **Frita:** Se fríe entera con cáscara (\"papa criolla frita\"), un clásico de piqueteaderos.\n\n## Health Benefits\n### Antioxidantes\nA diferencia de la papa blanca, la criolla es rica en carotenoides (zeaxantina), protegiendo contra el daño celular.",
   "scientific_registry": {
     "family": "Solanaceae",
     "genus": "Solanum"
@@ -76,5 +76,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa papa criolla (*Solanum phureja*) es un tubérculo diploide nativo de los Andes colombianos. Su piel fina y su pulpa amarilla intensa (debido a la zeaxantina) la distinguen de otras papas. Se cocina muy rápido y tiende a deshacerse, propiedad explotada para espesar caldos.\n\n## Culinary Uses\n- **Ajiaco Santafereño:** Indispensable. Se deja cocinar hasta disolverse para dar el espesor característico.\n- **Frita:** Se fríe entera con cáscara (\"papa criolla frita\"), un clásico de piqueteaderos.\n\n## Health Benefits\n### Antioxidantes\nA diferencia de la papa blanca, la criolla es rica en carotenoides (zeaxantina), protegiendo contra el daño celular."
 }

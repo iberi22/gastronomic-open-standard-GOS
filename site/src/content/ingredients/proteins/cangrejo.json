@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "crustaceans"
+  ],
   "name": "Cangrejo (Jaiba/Langosta)",
   "group": "Protein",
   "i18n": {

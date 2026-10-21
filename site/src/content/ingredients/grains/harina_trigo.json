@@ -20,6 +20,9 @@
       "面粉"
     ]
   },
+  "allergens": [
+    "cereals_gluten"
+  ],
   "group": "Grain",
   "health_registry": [
     {
@@ -85,7 +88,6 @@
     "arepa_harina",
     "espesante"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa harina de trigo es la base de la panadería y de muchos fritos (rebozados). En Colombia, la harina suele estar fortificada por ley con hierro y ácido fólico.\n\n## Culinary Uses\n- **Amasijos:** Almojábanas, Pandebonos (mezclada con almidones).\n- **Salsas:** Base de bechamel o para espesar.\n- **Fritos:** Rebozado de chuletas o pescado.\n\n## Health Benefits\n### Fortificación\nGracias a la fortificación obligatoria, es una fuente importante de ácido fólico y hierro en la dieta general.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -129,5 +131,6 @@
     "zh": {
       "common_name": "麵粉"
     }
-  }
+  },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa harina de trigo es la base de la panadería y de muchos fritos (rebozados). En Colombia, la harina suele estar fortificada por ley con hierro y ácido fólico.\n\n## Culinary Uses\n- **Amasijos:** Almojábanas, Pandebonos (mezclada con almidones).\n- **Salsas:** Base de bechamel o para espesar.\n- **Fritos:** Rebozado de chuletas o pescado.\n\n## Health Benefits\n### Fortificación\nGracias a la fortificación obligatoria, es una fuente importante de ácido fólico y hierro en la dieta general."
 }

@@ -14,6 +14,9 @@
       "黄油"
     ]
   },
+  "allergens": [
+    "milk"
+  ],
   "group": "Dairy",
   "micronutrients": {
     "calcium_mg": 24.0,
@@ -78,7 +81,6 @@
     "grasa",
     "reposteria"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa mantequilla es la grasa láctea batida. Se usa en panadería y para finalizar salsas.\n\n## Culinary Uses\n- **Arepas:** Untada encima.\n- **Panadería:** Pandebonos, tortas.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -86,5 +88,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa mantequilla es la grasa láctea batida. Se usa en panadería y para finalizar salsas.\n\n## Culinary Uses\n- **Arepas:** Untada encima.\n- **Panadería:** Pandebonos, tortas."
 }

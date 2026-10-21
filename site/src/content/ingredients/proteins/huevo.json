@@ -25,6 +25,9 @@
       "鸡蛋"
     ]
   },
+  "allergens": [
+    "eggs"
+  ],
   "group": "Protein",
   "health_registry": [
     {
@@ -127,7 +130,6 @@
     "cerebro",
     "vision_saludable"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl huevo es considerado una proteína de referencia (valor biológico 100). La yema contiene la mayoría de los nutrientes, incluyendo colina y carotenoides.\n\n## Culinary Uses\n- **Pericos:** Revueltos con cebolla y tomate (aumenta absorción de licopeno del tomate gracias a la grasa del huevo).\n- **Cocido:** La mejor forma de preservar nutrientes sensibles al calor excesivo (como la fritura profunda).\n\n## Health Benefits\n### Sinergia Nutricional\nComer huevo con vegetales (como en los huevos pericos) aumenta la absorción de vitaminas liposolubles (A, D, E, K) de los vegetales de 3 a 9 veces.",
   "data_sources": [
     {
       "name": "USDA FoodData Central SR Legacy",
@@ -135,5 +137,6 @@
       "licence": "CC0-1.0",
       "retrieved": "2026-10-21"
     }
-  ]
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl huevo es considerado una proteína de referencia (valor biológico 100). La yema contiene la mayoría de los nutrientes, incluyendo colina y carotenoides.\n\n## Culinary Uses\n- **Pericos:** Revueltos con cebolla y tomate (aumenta absorción de licopeno del tomate gracias a la grasa del huevo).\n- **Cocido:** La mejor forma de preservar nutrientes sensibles al calor excesivo (como la fritura profunda).\n\n## Health Benefits\n### Sinergia Nutricional\nComer huevo con vegetales (como en los huevos pericos) aumenta la absorción de vitaminas liposolubles (A, D, E, K) de los vegetales de 3 a 9 veces."
 }

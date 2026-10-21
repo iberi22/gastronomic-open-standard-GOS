@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "peanuts"
+  ],
   "name": "Maní",
   "group": "Legume",
   "i18n": {

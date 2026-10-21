@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "fish"
+  ],
   "name": "Caldo",
   "group": "Sauce",
   "i18n": {

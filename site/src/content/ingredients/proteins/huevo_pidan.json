@@ -1,4 +1,7 @@
 {
+  "allergens": [
+    "eggs"
+  ],
   "name": "Huevo Centenario (Pidan)",
   "group": "Protein",
   "i18n": {
