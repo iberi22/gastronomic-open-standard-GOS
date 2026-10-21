@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Guascas",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Guascas",
   "aliases": {
     "es": [
       "grande de guascas"
     ]
-  },
-  "body_md": "# Guascas"
+  }
 }

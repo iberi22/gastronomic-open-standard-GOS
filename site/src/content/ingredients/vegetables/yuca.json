@@ -10,20 +10,8 @@
     "en": [
       "cassava",
       "yuca"
-    ],
-    "es": [
-      "yuca amarga",
-      "yucas",
-      "mandioca"
-    ],
-    "fr": [
-      "manioc"
-    ],
-    "pt": [
-      "mandioca"
     ]
   },
-  "allergens": [],
   "group": "Vegetable",
   "health_registry": [
     {
@@ -42,103 +30,30 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 16.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.1,
-    "folate_ug": 27.0,
-    "iron_mg": 0.27,
-    "magnesium_mg": 21.0,
-    "manganese_mg": 0.38,
-    "niacin_mg": 0.85,
-    "phosphorus_mg": 27.0,
-    "potassium_mg": 271.0,
-    "riboflavin_mg": 0.05,
-    "selenium_ug": 0.7,
-    "sodium_mg": 14.0,
-    "thiamin_mg": 0.09,
-    "vitamin_a_rae_ug": 1.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.09,
-    "vitamin_c_mg": 20.6,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.19,
-    "vitamin_k_ug": 1.9,
-    "zinc_mg": 0.34
+    "folate_ug": 27,
+    "potassium_mg": 271,
+    "vitamin_c_mg": 20.6
   },
   "name": "Yuca (Mandioca)",
   "nutrition_per_100g": {
-    "calories": 160.0,
-    "carbs_g": 38.06,
-    "fat_g": 0.28,
+    "calories": 160,
+    "carbs_g": 38,
+    "fat_g": 0.3,
     "fiber_g": 1.8,
-    "protein_g": 1.36,
-    "saturated_fat_g": 0.07,
+    "protein_g": 1.4,
     "sugar_g": 1.7
   },
   "portions": {
-    "default_g": 150,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 206.0
-      },
-      {
-        "description": "1 root",
-        "grams": 408.0
-      }
-    ]
+    "default_g": 150
   },
   "scientific_name": "Manihot esculenta",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169985)",
-    "Wikidata (Q83124)",
-    "Wikidata (Q43304555)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "sancocho",
     "energia",
     "sin_gluten"
   ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:169985",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q83124",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q43304555",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Euphorbiaceae",
-    "genus": "Manihot"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "cassava root"
-    },
-    "es": {
-      "common_name": "raíz de yuca"
-    },
-    "fr": {
-      "common_name": "racine de manioc"
-    },
-    "ja": {
-      "common_name": "キャッサバの根"
-    },
-    "pt": {
-      "common_name": "raiz de mandioca"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa yuca es un tubérculo rústico resistente a la sequía. Es una fuente de carbohidratos densa. Debe cocinarse siempre para eliminar compuestos cianogénicos residuales (en variedades dulces el riesgo es mínimo, pero la cocción es mandatoria).\n\n## Culinary Uses\n- **Sancochos:** Aporta cuerpo y espesor al caldo al desatarse un poco.\n- **Frita:** Acompañante crocante.\n- **Cocida:** Guarnición suave (yuca harinosa).\n\n## Health Benefits\n### Energía Sostenible\nAporta energía densa libre de gluten y con una carga significativa de Vitamina C (si no se sobrecocina en exceso)."
 }

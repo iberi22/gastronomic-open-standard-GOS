@@ -10,23 +10,8 @@
     "en": [
       "cooking oil",
       "vegetable oil"
-    ],
-    "es": [
-      "Aceite Para Freír",
-      "Aceite Vegetal Para Freír",
-      "aceite vegetal"
-    ],
-    "zh": [
-      "植物油",
-      "花生油",
-      "菜油",
-      "菜籽油",
-      "食用油"
     ]
   },
-  "allergens": [
-    "unknown"
-  ],
   "group": "Oil",
   "micronutrients": {
     "vitamin_e_mg": 15

@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Harina de Maíz",
   "group": "Grain",
   "i18n": {
@@ -9,11 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Harina de Maíz",
   "aliases": {
     "es": [
       "harina de maiz",
       "masa de maiz"
     ]
-  },
-  "body_md": "# Harina de Maíz"
+  }
 }

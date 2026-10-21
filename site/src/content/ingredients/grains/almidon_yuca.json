@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Almidón de Yuca (Tapioca)",
   "scientific_name": "Manihot esculenta (Starch)",
   "group": "Grain",
@@ -31,10 +30,5 @@
     "panaderia",
     "sin_gluten"
   ],
-  "aliases": {
-    "es": [
-      "almidon de yuca"
-    ]
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl almidón de yuca (o yuca agria) es el polvo extraído de la raíz. Es fundamental para la panadería colombiana (pandebono, pandeyuca, buñuelo), aportando elasticidad y textura \"chiclosa\" sin gluten.\n\n## Culinary Uses\n- **Pandebono:** Ingrediente base.\n- **Buñuelo:** Mezclado con fécula de maíz."
 }

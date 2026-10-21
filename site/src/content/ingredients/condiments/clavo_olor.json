@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Clavo de Olor",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Clavo de Olor",
   "aliases": {
     "es": [
       "Clavos De Olor"
     ]
-  },
-  "body_md": "# Clavo de Olor"
+  }
 }

@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Habichuela",
   "group": "Vegetable",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Habichuela",
   "aliases": {
     "es": [
       "habichuelas"
     ]
-  },
-  "body_md": "# Habichuela"
+  }
 }

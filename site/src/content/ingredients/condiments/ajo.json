@@ -9,24 +9,9 @@
   "aliases": {
     "en": [
       "garlic",
-      "allium",
-      "bulb of garlic"
-    ],
-    "es": [
-      "cabezas de ajo",
-      "Dientes De Ajo"
-    ],
-    "fr": [
-      "ail"
-    ],
-    "zh": [
-      "大蒜",
-      "蒜末",
-      "蒜水",
-      "蒜瓣"
+      "allium"
     ]
   },
-  "allergens": [],
   "group": "Condiment",
   "health_registry": [
     {
@@ -65,115 +50,32 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 181.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.3,
-    "folate_ug": 3.0,
-    "iron_mg": 1.7,
-    "magnesium_mg": 25.0,
     "manganese_mg": 1.67,
-    "niacin_mg": 0.7,
-    "phosphorus_mg": 153.0,
-    "potassium_mg": 401.0,
-    "riboflavin_mg": 0.11,
     "selenium_ug": 14.2,
-    "sodium_mg": 17.0,
-    "thiamin_mg": 0.2,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 1.24,
-    "vitamin_c_mg": 31.2,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.08,
-    "vitamin_k_ug": 1.7,
-    "zinc_mg": 1.16
+    "vitamin_b6_mg": 1.2,
+    "vitamin_c_mg": 31
   },
   "name": "Ajo",
   "nutrition_per_100g": {
-    "calories": 149.0,
-    "carbs_g": 33.06,
+    "calories": 149,
+    "carbs_g": 33,
     "fat_g": 0.5,
     "fiber_g": 2.1,
-    "protein_g": 6.36,
-    "saturated_fat_g": 0.09,
-    "sugar_g": 1.0
+    "protein_g": 6.4,
+    "sugar_g": 1
   },
   "portions": {
-    "default_g": 3,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 136.0
-      },
-      {
-        "description": "1 tsp",
-        "grams": 2.8
-      },
-      {
-        "description": "1 clove",
-        "grams": 3.0
-      },
-      {
-        "description": "3 cloves",
-        "grams": 9.0
-      }
-    ]
+    "default_g": 3
   },
   "scientific_name": "Allium sativum",
   "sources": [
-    "NIH National Center for Complementary and Integrative Health",
-    "USDA FoodData Central SR Legacy (fdc:169230)",
-    "Wikidata (Q23400)",
-    "Wikidata (Q21546392)"
+    "USDA FoodData Central",
+    "NIH National Center for Complementary and Integrative Health"
   ],
   "tags": [
     "esencial",
     "condimento",
     "medicinal"
   ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:169230",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q23400",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q21546392",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Alliaceae",
-    "genus": "Allium"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "garlic"
-    },
-    "es": {
-      "common_name": "ajo"
-    },
-    "fr": {
-      "common_name": "tête d'ail"
-    },
-    "ja": {
-      "common_name": "ニンニク"
-    },
-    "pt": {
-      "common_name": "alho"
-    },
-    "zh": {
-      "common_name": "大蒜"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su principal bioactivo, la **alicina**, es un compuesto azufrado inestable que se forma solo cuando el ajo se tritura o mastica, degradándose rápidamente con el calor excesivo. Por eso, para beneficios de salud, se recomienda machacarlo y dejarlo reposar 10 minutos antes de cocinar (o comerlo crudo).\n\n## Culinary Uses\n- **Adobos:** Base para marinar carnes y pescados.\n- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).\n- **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.\n\n## Health Benefits\n### Salud Cardiovascular\nEstudios clínicos han demostrado que el consumo regular de ajo puede reducir la presión arterial sistólica y diastólica en personas hipertensas, con efectos comparables a medicamentos estándar como el atenolol en algunos ensayos.\n\n### Propiedades Antimicrobianas\nLa alicina tiene actividad antibacteriana, antiviral (incluyendo cepas de influenza) y antifúngica demostrada in vitro."
 }

@@ -9,85 +9,30 @@
   "aliases": {
     "en": [
       "butter"
-    ],
-    "zh": [
-      "黄油"
     ]
   },
-  "allergens": [
-    "milk"
-  ],
   "group": "Dairy",
   "micronutrients": {
-    "calcium_mg": 24.0,
-    "cholesterol_mg": 215.0,
-    "copper_mg": 0.0,
-    "folate_ug": 3.0,
-    "iron_mg": 0.02,
-    "magnesium_mg": 2.0,
-    "manganese_mg": 0.0,
-    "niacin_mg": 0.04,
-    "phosphorus_mg": 24.0,
-    "potassium_mg": 24.0,
-    "riboflavin_mg": 0.03,
-    "selenium_ug": 1.0,
-    "sodium_mg": 643.0,
-    "thiamin_mg": 0.01,
-    "vitamin_a_rae_ug": 684.0,
-    "vitamin_b12_ug": 0.17,
-    "vitamin_b6_mg": 0.0,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 2.32,
-    "vitamin_k_ug": 7.0,
-    "zinc_mg": 0.09
+    "vitamin_a_iu": 2499
   },
   "name": "Mantequilla (Sin Sal)",
   "nutrition_per_100g": {
-    "calories": 717.0,
-    "carbs_g": 0.06,
-    "fat_g": 81.11,
-    "fiber_g": 0.0,
-    "protein_g": 0.85,
-    "saturated_fat_g": 51.37,
-    "sugar_g": 0.06
+    "calories": 717,
+    "carbs_g": 0.1,
+    "fat_g": 81,
+    "fiber_g": 0,
+    "protein_g": 0.9
   },
   "portions": {
-    "default_g": 14,
-    "household": [
-      {
-        "description": "1 pat (1\" sq, 1/3\" high)",
-        "grams": 5.0
-      },
-      {
-        "description": "1 tbsp",
-        "grams": 14.2
-      },
-      {
-        "description": "1 cup",
-        "grams": 227.0
-      },
-      {
-        "description": "1 stick",
-        "grams": 113.0
-      }
-    ]
+    "default_g": 14
   },
   "scientific_name": "Bos taurus",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:173410)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "grasa",
     "reposteria"
-  ],
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:173410",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa mantequilla es la grasa láctea batida. Se usa en panadería y para finalizar salsas.\n\n## Culinary Uses\n- **Arepas:** Untada encima.\n- **Panadería:** Pandebonos, tortas."
 }

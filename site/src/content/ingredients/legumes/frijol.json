@@ -9,22 +9,9 @@
   "aliases": {
     "en": [
       "common bean",
-      "kidney bean",
-      "bean"
-    ],
-    "es": [
-      "frijoles rojos",
-      "caraotas",
-      "alubia"
-    ],
-    "fr": [
-      "grain de haricot"
-    ],
-    "pt": [
-      "feijão"
+      "kidney bean"
     ]
   },
-  "allergens": [],
   "group": "Legume",
   "health_registry": [
     {
@@ -80,46 +67,12 @@
   },
   "scientific_name": "Phaseolus vulgaris",
   "sources": [
-    "USDA FoodData Central",
-    "Wikidata (Q42339)",
-    "Wikidata (Q74662248)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "bandeja_paisa",
     "fibra",
     "diabetes_friendly"
-  ],
-  "scientific_registry": {
-    "family": "Fabaceae",
-    "genus": "Phaseolus"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "common bean"
-    },
-    "es": {
-      "common_name": "frijol común"
-    },
-    "fr": {
-      "common_name": "haricot commun"
-    },
-    "pt": {
-      "common_name": "feijão comum"
-    }
-  },
-  "data_sources": [
-    {
-      "name": "Wikidata",
-      "id": "Q42339",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q74662248",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl frijol bola roja es una potencia nutricional. Su combinación de fibra soluble y proteína lo convierte en un alimento de bajo índice glucémico, ideal para el manejo de energía sostenida.\n\n## Culinary Uses\n- **Cazuela de Frijoles:** Plato principal denso en nutrientes.\n- **Calentado:** Frijol reposado (aumenta el almidón resistente).\n\n## Health Benefits\n### Control Glucémico\nA pesar de ser alto en carbohidratos, su estructura compleja evita picos de azúcar en sangre, siendo excelente para diabéticos o pre-diabéticos."
 }

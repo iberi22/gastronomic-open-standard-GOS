@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Arepa",
   "group": "Grain",
   "i18n": {
@@ -9,11 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Arepa",
   "aliases": {
     "es": [
       "arepas antioquenas",
       "arepas"
     ]
-  },
-  "body_md": "# Arepa"
+  }
 }

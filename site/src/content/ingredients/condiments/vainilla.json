@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Vainilla (Esencia)",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Vainilla (Esencia)",
   "aliases": {
     "es": [
       "esencia de vainilla"
     ]
-  },
-  "body_md": "# Vainilla (Esencia)"
+  }
 }

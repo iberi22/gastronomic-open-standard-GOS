@@ -1,7 +1,4 @@
 {
-  "allergens": [
-    "molluscs"
-  ],
   "name": "Mejillón",
   "group": "Protein",
   "i18n": {
@@ -11,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Mejillón",
   "aliases": {
     "es": [
       "mejillones"
     ]
-  },
-  "body_md": "# Mejillón"
+  }
 }

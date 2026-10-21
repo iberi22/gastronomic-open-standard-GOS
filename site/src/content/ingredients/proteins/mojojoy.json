@@ -1,7 +1,4 @@
 {
-  "allergens": [
-    "unknown"
-  ],
   "name": "Mojojoy",
   "group": "Protein",
   "i18n": {
@@ -11,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Mojojoy",
   "aliases": {
     "es": [
       "mojojoys"
     ]
-  },
-  "body_md": "# Mojojoy"
+  }
 }

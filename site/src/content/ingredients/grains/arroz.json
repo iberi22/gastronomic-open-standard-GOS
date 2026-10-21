@@ -1,49 +1,23 @@
 {
-  "allergens": [],
   "name": "Arroz Blanco",
   "scientific_name": "Oryza sativa",
   "group": "Grain",
   "portions": {
-    "default_g": 50,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 185.0
-      }
-    ]
+    "default_g": 50
   },
   "nutrition_per_100g": {
-    "calories": 365.0,
-    "carbs_g": 79.95,
-    "fat_g": 0.66,
+    "calories": 365,
+    "protein_g": 7.1,
+    "fat_g": 0.7,
+    "carbs_g": 80,
     "fiber_g": 1.3,
-    "protein_g": 7.13,
-    "saturated_fat_g": 0.18,
-    "sugar_g": 0.12
+    "sugar_g": 0.1
   },
   "micronutrients": {
-    "calcium_mg": 28.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.22,
-    "folate_ug": 8.0,
-    "iron_mg": 0.8,
-    "magnesium_mg": 25.0,
-    "manganese_mg": 1.09,
-    "niacin_mg": 1.6,
-    "phosphorus_mg": 115.0,
-    "potassium_mg": 115.0,
-    "riboflavin_mg": 0.05,
+    "manganese_mg": 1.1,
     "selenium_ug": 15.1,
-    "sodium_mg": 5.0,
-    "thiamin_mg": 0.07,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.16,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.11,
-    "vitamin_k_ug": 0.1,
-    "zinc_mg": 1.09
+    "thiamin_mg": 0.6,
+    "niacin_mg": 1.6
   },
   "active_compounds": [
     {
@@ -78,68 +52,12 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169756)",
-    "Wikidata (Q161426)",
-    "Wikidata (Q5090)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "base",
     "energia",
     "sin_gluten"
   ],
-  "aliases": {
-    "es": [
-      "Arroz Blanco"
-    ],
-    "zh": [
-      "冷饭",
-      "大米",
-      "米饭"
-    ]
-  },
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:169756",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q161426",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q5090",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Poaceae",
-    "genus": "Oryza"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "rice"
-    },
-    "es": {
-      "common_name": "arroz"
-    },
-    "fr": {
-      "common_name": "riz"
-    },
-    "ja": {
-      "common_name": "米"
-    },
-    "pt": {
-      "common_name": "arroz"
-    },
-    "zh": {
-      "common_name": "稻"
-    }
-  },
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl arroz blanco es la fuente de energía primaria en Colombia. Aunque el proceso de refinado elimina la cáscara (fibra), lo convierte en una fuente de energía rápida y fácil digestión.\n\n## Culinary Uses\n- **Arroz Blanco:** Acompañante universal.\n- **Arroz con Pollo/Coco:** Base estructural que absorbe sabores.\n\n## Health Benefits\n### Energía Rápida\nIdeal para deportistas o recuperación nutricional donde se requiere densidad calórica sin exceso de fibra."
 }

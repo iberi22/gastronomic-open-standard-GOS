@@ -1,42 +1,23 @@
 {
-  "allergens": [],
   "name": "Plátano Verde (Macho/Hartón)",
   "scientific_name": "Musa paradisiaca",
   "group": "Vegetable",
   "portions": {
-    "default_g": 150,
-    "household": [
-      {
-        "description": "1 plantain",
-        "grams": 267.0
-      }
-    ]
+    "default_g": 150
   },
   "nutrition_per_100g": {
-    "calories": 152.0,
-    "carbs_g": 36.66,
-    "fat_g": 0.07,
-    "fiber_g": 2.2,
-    "protein_g": 1.25,
-    "saturated_fat_g": 0.12,
-    "sugar_g": 2.29
+    "calories": 122,
+    "protein_g": 1.3,
+    "fat_g": 0.4,
+    "carbs_g": 31,
+    "fiber_g": 2.3,
+    "sugar_g": 1.5
   },
   "micronutrients": {
-    "calcium_mg": 2.0,
-    "copper_mg": 0.12,
-    "folate_ug": 28.0,
-    "iron_mg": 0.75,
-    "magnesium_mg": 41.0,
-    "manganese_mg": 0.11,
-    "niacin_mg": 0.55,
-    "phosphorus_mg": 31.0,
-    "potassium_mg": 431.0,
-    "riboflavin_mg": 0.1,
-    "sodium_mg": 2.0,
-    "thiamin_mg": 0.1,
-    "vitamin_b6_mg": 0.07,
-    "vitamin_c_mg": 20.2,
-    "zinc_mg": 0.18
+    "potassium_mg": 499,
+    "vitamin_a_iu": 1127,
+    "vitamin_b6_mg": 0.3,
+    "magnesium_mg": 41
   },
   "active_compounds": [
     {
@@ -71,26 +52,12 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:168215)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "patacon",
     "prebiotico",
     "salud_intestinal"
-  ],
-  "aliases": {
-    "es": [
-      "Plátano Verde",
-      "platanos verdes"
-    ]
-  },
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:168215",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl plátano verde crudo o cocido (y luego enfriado) es una de las fuentes más ricas de **Almidón Resistente Tipo 2**. Este almidón resiste la digestión en el intestino delgado y llega al colon, donde alimenta a la microbiota.\n\n## Culinary Uses\n- **Patacones:** Aunque fritos, conservan fibra.\n- **Sopa de Plátano:** Espesante natural rico en potasio.\n- **Harina de Plátano Verde:** Suplemento prebiótico emergente.\n\n## Health Benefits\n### Efecto Prebiótico\nEl almidón resistente del plátano verde es un \"superalimento\" para las bacterias productoras de butirato, cruciales para la integridad de la barrera intestinal."
 }

@@ -1,64 +1,20 @@
 {
-  "allergens": [
-    "cereals_gluten",
-    "soybeans"
-  ],
   "name": "Salsa de Soya (Sillao)",
   "scientific_name": "Glycine max (fermented)",
   "group": "Sauce",
   "portions": {
-    "default_g": 15,
-    "household": [
-      {
-        "description": "1 tbsp",
-        "grams": 16.0
-      },
-      {
-        "description": "1 tsp",
-        "grams": 5.3
-      },
-      {
-        "description": "1 cup",
-        "grams": 255.0
-      },
-      {
-        "description": "1 individual packet",
-        "grams": 8.9
-      }
-    ]
+    "default_g": 15
   },
   "nutrition_per_100g": {
-    "calories": 53.0,
-    "carbs_g": 4.93,
-    "fat_g": 0.57,
-    "fiber_g": 0.8,
-    "protein_g": 8.14,
-    "saturated_fat_g": 0.07,
-    "sugar_g": 0.4
+    "calories": 53,
+    "protein_g": 8,
+    "fat_g": 0.6,
+    "carbs_g": 4.9,
+    "fiber_g": 0.8
   },
   "micronutrients": {
-    "calcium_mg": 33.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.04,
-    "folate_ug": 14.0,
-    "iron_mg": 1.45,
-    "magnesium_mg": 74.0,
-    "manganese_mg": 1.02,
-    "niacin_mg": 2.2,
-    "phosphorus_mg": 166.0,
-    "potassium_mg": 435.0,
-    "riboflavin_mg": 0.17,
-    "selenium_ug": 0.5,
-    "sodium_mg": 5493.0,
-    "thiamin_mg": 0.03,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.15,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.0,
-    "vitamin_k_ug": 0.0,
-    "zinc_mg": 0.87
+    "sodium_mg": 5493,
+    "manganese_mg": 1
   },
   "active_compounds": [
     {
@@ -78,27 +34,12 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:174277)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "china",
     "adobo",
     "umami"
-  ],
-  "aliases": {
-    "zh": [
-      "生抽",
-      "老抽",
-      "酱油"
-    ]
-  },
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:174277",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
   ],
   "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa salsa de soya es el pilar del sabor en la cocina asiática. Es rica en glutamato natural (Umami).\n\n## Culinary Uses\n- **Arroz Chino:** Sabor y color oscuro.\n- **Marinados:** Ablanda carnes por su acidez y enzimas.\n\n## Health Benefits\n### Umami y Apetito\nEl sabor Umami estimula la salivación y el apetito, útil en dietas para adultos mayores con anorexia, aunque debe controlarse por el sodio."
 }

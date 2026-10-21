@@ -1,5 +1,4 @@
 {
-  "allergens": [],
   "name": "Laurel",
   "group": "Condiment",
   "i18n": {
@@ -9,10 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
+  "body_md": "# Laurel",
   "aliases": {
     "es": [
       "Hoja De Laurel"
     ]
-  },
-  "body_md": "# Laurel"
+  }
 }

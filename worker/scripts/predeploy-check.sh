@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Verificaciones previas al deploy del gateway ABIERTO de GOS. NO despliega ni
-# escribe en remoto: solo lee (whoami, d1 list, secret list) e imprime el
-# comando de esquema para que lo ejecute una persona.
+# escribe en remoto: solo lee (whoami, secret list).
 #
 #   uso: worker/scripts/predeploy-check.sh   (desde cualquier directorio)
 #
@@ -26,23 +25,8 @@ else
   bad "wrangler no autenticado (wrangler login / CLOUDFLARE_API_TOKEN)"
 fi
 
-echo "== binding D1"
-db_name=$(sed -n '/^\[\[d1_databases\]\]/,/^\[/{s/^database_name *= *"\(.*\)"/\1/p}' wrangler.toml | head -1)
-db_id=$(sed -n '/^\[\[d1_databases\]\]/,/^\[/{s/^database_id *= *"\(.*\)"/\1/p}' wrangler.toml | head -1)
-echo "wrangler.toml: $db_name ($db_id)"
-if list=$($WR d1 list --json 2>/dev/null); then
-  remote_name=$(python3 -c '
-import json,sys
-i=sys.argv[1]
-for d in json.load(sys.stdin):
-    if (d.get("uuid") or d.get("id"))==i: print(d.get("name")); break
-' "$db_id" <<<"$list")
-  if [ -z "$remote_name" ]; then bad "database_id $db_id no existe en la cuenta"
-  elif [ "$remote_name" = "$db_name" ]; then ok "database_id coincide ($remote_name)"
-  else ok "database_id existe, pero se llama '$remote_name' en la cuenta (toml: '$db_name'); el id manda"; fi
-else
-  bad "no se pudo listar D1 (wrangler d1 list)"
-fi
+echo "== sin base de datos (el gateway no usa D1)"
+grep -q '^\[\[d1_databases\]\]' wrangler.toml && bad "wrangler.toml aun declara D1" || ok "sin binding D1"
 
 echo "== secretos del worker (no debe quedar ninguno de cobro)"
 if secrets=$($WR secret list 2>/dev/null); then
@@ -68,13 +52,6 @@ for b in RL_AUTH AI; do
 done
 grep -q 'kv_namespaces' wrangler.toml && bad "wrangler.toml aun declara KV" || ok "sin KV"
 grep -q '^BILLING_URL' wrangler.toml && bad "wrangler.toml aun declara BILLING_URL" || ok "sin BILLING_URL"
-
-echo "== esquema (idempotente: solo CREATE ... IF NOT EXISTS)"
-if grep -iE '^\s*(CREATE (TABLE|INDEX)|CREATE UNIQUE INDEX)' schema.sql | grep -viq 'IF NOT EXISTS'; then
-  bad "schema.sql tiene CREATE sin IF NOT EXISTS"
-else ok "schema.sql idempotente"; fi
-echo "Aplicar a mano ANTES del deploy (crea/actualiza free_quota):"
-echo "  npx wrangler d1 execute DB --remote --file=schema.sql   # desde worker/ (DB = binding; el nombre del toml no coincide con la cuenta)"
 
 [ "$fail" = 0 ] && echo "RESULTADO: listo para deploy" || echo "RESULTADO: HAY FALLAS"
 exit "$fail"
