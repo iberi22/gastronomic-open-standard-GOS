@@ -645,7 +645,7 @@
         "worker/src/index.ts",
         "worker/src/swal-billing.ts",
         "worker/wrangler.toml",
-        "worker/schema.sql"
+        "worker/legacy/schema.sql"
       ],
       "tests": [
         "worker/test/auth.test.ts",

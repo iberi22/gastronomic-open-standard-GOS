@@ -190,7 +190,7 @@ export default {
           'none: this API is open and no credential is required or read',
         rateLimits: {
           burst: '30 requests/minute per IP',
-          },
+        },
         routes: OPEN_ROUTES,
         documentation: `${originUrl}/llms-full.txt`,
         source: 'https://github.com/iberi22/gastronomic-open-standard-GOS',
