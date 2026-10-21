@@ -29,6 +29,7 @@ main_ingredients:
   - Chicharrón de cerdo crujiente
   - Ajo fresco
   - Aceite de oliva
+main_ingredient_slugs: [platano_verde, platano_maduro, yuca, null, ajo, null]
 sensory:
   flavor:
     - Salado

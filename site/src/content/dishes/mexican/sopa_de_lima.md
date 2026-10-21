@@ -26,6 +26,7 @@ main_ingredients:
   - Pimiento morrón
   - Jitomate
   - Oregano yucateco
+main_ingredient_slugs: [null, null, null, null, tomate, null]
 sensory:
   flavor:
     - Cítrico refrescante

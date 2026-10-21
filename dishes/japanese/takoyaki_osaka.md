@@ -27,6 +27,7 @@ main_ingredients:
   - Jengibre encurtido red
   - Salsa Takoyaki
   - Ao-nori
+main_ingredient_slugs: [null, harina_trigo, null, null, null, null, null]
 sensory:
   flavor:
     - Umami de pulpo

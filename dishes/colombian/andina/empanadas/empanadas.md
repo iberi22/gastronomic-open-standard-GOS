@@ -27,6 +27,7 @@ main_ingredients:
   - Guiso (Hogao)
   - Aceite vegetal
   - Color (Achiote)
+main_ingredient_slugs: [null, carne_res, papa_pastusa, null, aceite, achiote]
 sensory:
   flavor:
     - Maíz tostado

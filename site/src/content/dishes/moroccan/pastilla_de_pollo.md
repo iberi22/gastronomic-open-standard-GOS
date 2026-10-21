@@ -25,6 +25,7 @@ main_ingredients:
   - Almendras tostadas molidas
   - Canela
   - Azúcar glas
+main_ingredient_slugs: [null, null, null, canela, null]
 sensory:
   flavor:
     - Salado

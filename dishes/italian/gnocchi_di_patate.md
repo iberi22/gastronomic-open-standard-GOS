@@ -28,6 +28,7 @@ main_ingredients:
   - Ajo
   - Parmigiano Reggiano
   - Aceite de oliva virgen extra
+main_ingredient_slugs: [null, harina_trigo, huevo, null, null, ajo, null, null]
 sensory:
   flavor:
     - Albahaca fresca herbal

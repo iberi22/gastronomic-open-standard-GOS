@@ -20,6 +20,7 @@ main_ingredients:
   - Tomatillos
   - Ajo
   - Caldo de carne
+main_ingredient_slugs: [cerdo, null, null, ajo, null]
 sensory:
   flavor:
     - Picante

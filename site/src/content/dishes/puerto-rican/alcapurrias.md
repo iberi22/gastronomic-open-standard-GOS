@@ -28,6 +28,7 @@ main_ingredients:
   - Aceite de achiote
   - Carne de res molida (picadillo boricua)
   - Sofrito puertorriqueño
+main_ingredient_slugs: [null, null, aceite_achiote, carne_res, null]
 sensory:
   flavor:
     - Salado

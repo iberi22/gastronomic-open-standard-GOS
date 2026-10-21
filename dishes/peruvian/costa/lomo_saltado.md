@@ -25,6 +25,7 @@ main_ingredients:
 - Salsa de soya (Sillao)
 - Vinagre tinto
 - Ají amarillo
+main_ingredient_slugs: [carne_res, null, cebolla_cabezona, tomate, salsa_soya, null, aji_amarillo]
 nutrition:
   calories: 680
   macros:

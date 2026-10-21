@@ -25,6 +25,7 @@ main_ingredients:
   - Caldo especiado oscuro
   - Brotes de soja
   - Albahaca thai
+main_ingredient_slugs: [null, carne_res, null, null, null]
 sensory:
   flavor:
     - Salado

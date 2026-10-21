@@ -25,6 +25,7 @@ main_ingredients:
   - Miel
   - Canela
   - Jengibre
+main_ingredient_slugs: [carne_res, null, miel, canela, jengibre]
 sensory:
   flavor:
     - Salado

@@ -25,6 +25,7 @@ main_ingredients:
   - Champiñones
   - Bacon
   - Zanahoria
+main_ingredient_slugs: [carne_res, null, champinon, null, zanahoria]
 sensory:
   flavor:
     - Salado

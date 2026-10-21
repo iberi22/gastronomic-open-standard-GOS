@@ -24,6 +24,7 @@ main_ingredients:
   - Mantequilla
   - Ajo
   - Perejil
+main_ingredient_slugs: [caracol, mantequilla, ajo, null]
 sensory:
   flavor:
     - Salado

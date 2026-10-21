@@ -28,6 +28,7 @@ main_ingredients:
 - Mazorca
 - Alcaparras
 - Crema de leche
+main_ingredient_slugs: [papa_criolla, papa_pastusa, papa_pastusa, pollo, guascas, maiz, vinagre, crema_leche]
 nutrition:
   calories: 580
   macros:

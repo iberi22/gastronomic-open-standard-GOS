@@ -28,6 +28,7 @@ main_ingredients:
   - Canela en rama
   - Clavo de olor entero
   - Limón sutil (lima verde)
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce-Ácido (Maíz morado y limón)

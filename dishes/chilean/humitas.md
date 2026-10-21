@@ -28,6 +28,7 @@ main_ingredients:
   - Albahaca fresca
   - Leche entera
   - Hojas de maíz (chalas)
+main_ingredient_slugs: [null, manteca_cerdo, cebolla_cabezona, null, leche, null]
 sensory:
   flavor:
     - Dulce sutil

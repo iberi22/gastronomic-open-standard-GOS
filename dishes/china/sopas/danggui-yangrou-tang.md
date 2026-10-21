@@ -22,6 +22,7 @@ main_ingredients:
   - 生姜 (Ginger)
   - 黄芪 (Astragalus membranaceus)
   - 红枣 (Jujube / Red Dates)
+main_ingredient_slugs: [null, null, jengibre, null, jujuba]
 sensory:
   flavor:
     - rich

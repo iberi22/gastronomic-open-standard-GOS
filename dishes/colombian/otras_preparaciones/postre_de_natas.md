@@ -39,6 +39,7 @@ main_ingredients:
   - Yemas de huevo
   - Pasas
   - Aguardiente o ron
+main_ingredient_slugs: [null, null, huevo, null, null]
 prep_time: 1
 cook_time: 30
 servings: 4

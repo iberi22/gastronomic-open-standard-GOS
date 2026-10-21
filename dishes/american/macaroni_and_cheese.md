@@ -25,6 +25,7 @@ main_ingredients:
   - Queso Gruyère
   - Mantequilla
   - Leche
+main_ingredient_slugs: [null, null, null, mantequilla, leche]
 sensory:
   flavor:
     - Salado

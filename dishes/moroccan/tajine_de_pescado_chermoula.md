@@ -24,6 +24,7 @@ main_ingredients:
   - Salsa chermoula (cilantro, ajo, comino, limón)
   - Tomate
   - Pimentón
+main_ingredient_slugs: [null, null, tomate, pimenton_rojo]
 sensory:
   flavor:
     - Salado

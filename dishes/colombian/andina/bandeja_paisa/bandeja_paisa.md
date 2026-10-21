@@ -27,6 +27,7 @@ main_ingredients:
 - Plátano maduro
 - Arepa
 - Aguacate
+main_ingredient_slugs: [frijol, arroz, carne_res, chicharron, chorizo, morcilla, null, platano_maduro, arepa, aguacate]
 nutrition:
   calories: 1800
   macros:

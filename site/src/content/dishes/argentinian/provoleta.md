@@ -29,6 +29,7 @@ main_ingredients:
   - Orégano seco
   - Ají molido
   - Aceite de oliva
+main_ingredient_slugs: [null, harina_trigo, oregano, aji_picante, null]
 sensory:
   flavor:
     - Salado

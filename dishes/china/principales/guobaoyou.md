@@ -23,6 +23,7 @@ main_ingredients:
   - 米醋 (Rice Vinegar)
   - 香菜 (Cilantro)
   - 胡萝卜丝 (Julienned Carrot)
+main_ingredient_slugs: [null, null, azucar, null, cilantro, null]
 sensory:
   flavor:
     - sweet

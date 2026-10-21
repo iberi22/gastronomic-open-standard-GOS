@@ -24,6 +24,7 @@ main_ingredients:
   - Aceite de oliva virgen extra
   - Ajo
   - Guindilla
+main_ingredient_slugs: [null, null, ajo, null]
 sensory:
   flavor:
     - Salado

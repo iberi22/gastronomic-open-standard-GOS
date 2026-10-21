@@ -20,6 +20,7 @@ main_ingredients:
   - Patatas
   - Apio
   - Tocineta
+main_ingredient_slugs: [null, null, null, apio, null]
 sensory:
   flavor:
     - Salado

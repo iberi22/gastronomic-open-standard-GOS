@@ -24,6 +24,7 @@ main_ingredients:
   - Pasta de curry rojo
   - Judías aladas o verdes
   - Hojas de lima kaffir
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

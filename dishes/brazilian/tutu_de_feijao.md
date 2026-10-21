@@ -27,6 +27,7 @@ main_ingredients:
   - Bacon e linguiça calabresa
   - Alho e cebola
   - Ovos cozidos para decorar
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

@@ -26,6 +26,7 @@ main_ingredients:
   - Cacao en polvo
   - Mantequilla sin sal
   - Granillo de chocolate
+main_ingredient_slugs: [leche_condensada, null, mantequilla, null]
 sensory:
   flavor:
     - Dulce

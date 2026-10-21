@@ -26,6 +26,7 @@ main_ingredients:
   - Queso fresco
   - Ajonjolí tostado
   - Cebolla morada
+main_ingredient_slugs: [null, null, null, queso, null, cebolla_cabezona]
 sensory:
   flavor:
     - Sabor profundo a mole

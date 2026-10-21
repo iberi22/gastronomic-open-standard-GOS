@@ -26,6 +26,7 @@ main_ingredients:
   - Jengibre
   - Comino
   - Garam masala
+main_ingredient_slugs: [null, null, null, jengibre, comino, null]
 sensory:
   flavor:
     - Salado

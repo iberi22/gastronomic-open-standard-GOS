@@ -17,6 +17,7 @@ cook_time: 1 hora
 servings: 20
 main_ingredients:
   - Yuca amarga
+main_ingredient_slugs: [yuca]
 sensory:
   flavor:
     - Neutro

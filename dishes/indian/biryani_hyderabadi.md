@@ -26,6 +26,7 @@ main_ingredients:
   - Azafrán
   - Cebolla frita
   - Especias enteras
+main_ingredient_slugs: [arroz, pollo, null, null, null, null]
 sensory:
   flavor:
     - Salado

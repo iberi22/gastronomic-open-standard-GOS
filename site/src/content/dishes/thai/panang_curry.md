@@ -25,6 +25,7 @@ main_ingredients:
   - Crema de coco
   - Hojas de lima kaffir
   - Cacahuete
+main_ingredient_slugs: [carne_res, null, null, null, null]
 sensory:
   flavor:
     - Salado

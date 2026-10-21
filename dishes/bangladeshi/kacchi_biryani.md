@@ -30,6 +30,7 @@ main_ingredients:
   - Garam masala bengalí
   - Patatas
   - Ciruelas pasas Aloo bokhara
+main_ingredient_slugs: [null, arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Especiado

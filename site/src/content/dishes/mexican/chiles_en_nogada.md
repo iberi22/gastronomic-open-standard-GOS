@@ -28,6 +28,7 @@ main_ingredients:
   - Granada roja
   - Durazno
   - Manzana criolla
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce salado

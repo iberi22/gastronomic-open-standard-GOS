@@ -27,6 +27,7 @@ main_ingredients:
   - Mantequilla
   - Canela
   - Coco (Opcional)
+main_ingredient_slugs: [maiz, leche, panela, mantequilla, canela, coco]
 sensory:
   flavor:
     - Maíz Dulce

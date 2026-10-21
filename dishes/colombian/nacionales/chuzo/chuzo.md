@@ -26,6 +26,7 @@ main_ingredients:
 - Pollo
 - Papa salada
 - Arepa
+main_ingredient_slugs: [carne_res, pollo, papa_pastusa, arepa]
 nutrition:
   calories: 1832
   macros:

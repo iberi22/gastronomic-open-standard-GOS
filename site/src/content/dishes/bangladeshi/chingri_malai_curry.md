@@ -29,6 +29,7 @@ main_ingredients:
   - Garam masala bengalí
   - Jengibre rallado
   - Cardamomo verde
+main_ingredient_slugs: [null, leche_coco, null, null, jengibre, null]
 sensory:
   flavor:
     - Dulce cremoso

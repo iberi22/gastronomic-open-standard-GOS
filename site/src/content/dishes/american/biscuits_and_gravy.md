@@ -20,6 +20,7 @@ main_ingredients:
   - Leche entera
   - Harina de trigo
   - Pimienta negra
+main_ingredient_slugs: [null, null, leche, harina_trigo, pimienta_negra]
 sensory:
   flavor:
     - Creamy

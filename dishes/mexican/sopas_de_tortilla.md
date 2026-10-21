@@ -27,6 +27,7 @@ main_ingredients:
   - Aguacate
   - Queso fresco
   - Crema
+main_ingredient_slugs: [caldo, null, null, null, aguacate, queso, null]
 studies:
   - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
     source: "Comprehensive Reviews in Food Science and Food Safety"

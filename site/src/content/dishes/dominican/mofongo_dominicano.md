@@ -29,6 +29,7 @@ main_ingredients:
   - Aceite de oliva
   - Sal de mesa
   - Caldo de carne para acompañar
+main_ingredient_slugs: [platano_verde, null, ajo, null, null, null]
 sensory:
   flavor:
     - Salado

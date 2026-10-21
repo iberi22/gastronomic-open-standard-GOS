@@ -25,6 +25,7 @@ main_ingredients:
 - Cilantro fresco
 - Choclo (Maíz)
 - Camote (Batata)
+main_ingredient_slugs: [pescado, null, null, cebolla_cabezona, cilantro, maiz, null]
 nutrition:
   calories: 220
   macros:

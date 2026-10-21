@@ -26,6 +26,7 @@ main_ingredients:
   - Especias Bisi Bele Bath masala
   - Tamarindo
   - Ghee
+main_ingredient_slugs: [arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Picante

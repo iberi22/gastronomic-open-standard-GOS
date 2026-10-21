@@ -25,6 +25,7 @@ main_ingredients:
   - Queso Feta
   - Eneldo
   - Huevos
+main_ingredient_slugs: [null, null, null, null, huevo]
 sensory:
   flavor:
     - Salado

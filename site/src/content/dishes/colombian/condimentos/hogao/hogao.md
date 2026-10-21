@@ -27,6 +27,7 @@ main_ingredients:
   - Ajo
   - Comino
   - Aceite vegetal
+main_ingredient_slugs: [tomate, cebolla_larga, ajo, comino, aceite]
 prep_time: 20
 cook_time: 30
 servings: 1

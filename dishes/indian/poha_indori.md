@@ -26,6 +26,7 @@ main_ingredients:
   - Mani / Cacahuates
   - Polvo jeeravan
   - Sev (fideos fritos de garbanzo)
+main_ingredient_slugs: [null, cebolla_cabezona, null, mani, null, null]
 sensory:
   flavor:
     - Salado

@@ -25,6 +25,7 @@ main_ingredients:
   - Cuajada Fresca (con punto de acidez)
   - Mantequilla
   - Yema de Huevo
+main_ingredient_slugs: [null, null, mantequilla, huevo]
 sensory:
   flavor:
     - Cuajada Tostada

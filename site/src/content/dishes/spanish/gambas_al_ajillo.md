@@ -25,6 +25,7 @@ main_ingredients:
   - Guindilla
   - Aceite de oliva virgen extra
   - Perejil
+main_ingredient_slugs: [null, ajo, null, null, null]
 sensory:
   flavor:
     - Salado

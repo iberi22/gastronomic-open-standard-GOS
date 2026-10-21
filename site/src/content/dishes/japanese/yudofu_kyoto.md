@@ -28,6 +28,7 @@ main_ingredients:
   - Ponzu (salsa de soja con cítrico yuzu/sudachi)
   - Cebolleta fina picada
   - Gomasio o jengibre rallado
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Pureza dulce de la soja con umami sutil de kombu

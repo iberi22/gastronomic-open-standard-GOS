@@ -20,6 +20,7 @@ main_ingredients:
   - Salsa barbacoa de San Luis
   - Vinagre de manzana
   - Mantequilla
+main_ingredient_slugs: [null, null, null, null, mantequilla]
 sensory:
   flavor:
     - Ahumado

@@ -26,6 +26,7 @@ main_ingredients:
   - Ralladura de limón
   - Canela
   - Azúcar glas
+main_ingredient_slugs: [null, azucar, huevo, limon, canela, null]
 sensory:
   flavor:
     - Salado

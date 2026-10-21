@@ -26,6 +26,7 @@ main_ingredients:
   - Jengibre
   - Chile verde
   - Garam masala
+main_ingredient_slugs: [null, cebolla_cabezona, tomate, jengibre, null, null]
 sensory:
   flavor:
     - Ahumado

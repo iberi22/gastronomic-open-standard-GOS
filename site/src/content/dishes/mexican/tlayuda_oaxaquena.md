@@ -27,6 +27,7 @@ main_ingredients:
   - Tasajo de res
   - Aguacate
   - Repollo picado
+main_ingredient_slugs: [null, null, null, null, null, aguacate, pollo]
 sensory:
   flavor:
     - Ahumar de tasajo

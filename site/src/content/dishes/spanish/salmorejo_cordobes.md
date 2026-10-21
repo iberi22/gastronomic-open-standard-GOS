@@ -26,6 +26,7 @@ main_ingredients:
   - Ajo
   - Huevos cocidos
   - Jamón ibérico
+main_ingredient_slugs: [tomate, null, null, ajo, huevo, null]
 sensory:
   flavor:
     - Salado

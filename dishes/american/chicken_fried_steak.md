@@ -20,6 +20,7 @@ main_ingredients:
   - Leche
   - Suero de leche
   - Pimienta negra
+main_ingredient_slugs: [carne_res, harina_trigo, leche, null, pimienta_negra]
 sensory:
   flavor:
     - Salado

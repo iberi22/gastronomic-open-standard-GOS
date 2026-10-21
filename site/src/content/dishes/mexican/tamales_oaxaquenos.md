@@ -26,6 +26,7 @@ main_ingredients:
   - Carne de cerdo o pollo
   - Mole negro o verde
   - Hojas de plátano
+main_ingredient_slugs: [null, manteca_cerdo, cerdo, null, null]
 studies:
   - title: "Effect of Calcium Hydroxide and Nixtamalization Time on the In Vitro Starch and Protein Digestibility of Traditional Maize Tortillas"
     source: "Plant Foods Hum Nutr"

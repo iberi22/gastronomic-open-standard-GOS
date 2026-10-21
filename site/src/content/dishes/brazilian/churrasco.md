@@ -25,6 +25,7 @@ main_ingredients:
   - Picanha (tapa de cuadril) de res
   - Sal gruesa (sal grosso)
   - Carbón vegetal
+main_ingredient_slugs: [null, null, null]
 sensory:
   flavor:
     - Salado

@@ -24,6 +24,7 @@ main_ingredients:
   - Miel
   - Agua de azahar
   - Semillas de sésamo tostadas
+main_ingredient_slugs: [null, miel, null, null]
 sensory:
   flavor:
     - Salado

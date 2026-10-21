@@ -26,6 +26,7 @@ main_ingredients:
   - Ñame / Yuca / Plátano / Ahuyama
   - Hogao Criollo
   - Cilantro Cimarrón
+main_ingredient_slugs: [null, null, ñame, null, culantro]
 sensory:
   flavor:
     - Terroso (Natural)

@@ -19,6 +19,7 @@ main_ingredients:
   - Pimienta negra
   - Sal marina
   - Polvo de ajo
+main_ingredient_slugs: [null, pimienta_negra, sal, null]
 sensory:
   flavor:
     - Ahumado

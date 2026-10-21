@@ -24,6 +24,7 @@ main_ingredients:
   - Huevos
   - Mantequilla
   - Azúcar
+main_ingredient_slugs: [null, huevo, mantequilla, azucar]
 sensory:
   flavor:
     - Salado

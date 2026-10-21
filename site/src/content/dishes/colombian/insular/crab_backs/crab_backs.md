@@ -28,6 +28,7 @@ main_ingredients:
   - Pimentón
   - Mantequilla
   - Caparazón de cangrejo
+main_ingredient_slugs: [cangrejo, null, cebolla_cabezona, pimenton_rojo, mantequilla, cangrejo]
 prep_time: 40
 cook_time: 30
 servings: 6

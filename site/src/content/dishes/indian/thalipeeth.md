@@ -26,6 +26,7 @@ main_ingredients:
   - Cilantro fresco
   - Semillas de ajonjolí
   - Ghee
+main_ingredient_slugs: [null, cebolla_cabezona, cilantro, null, null]
 sensory:
   flavor:
     - Tostado

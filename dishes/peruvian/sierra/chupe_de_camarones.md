@@ -28,6 +28,7 @@ main_ingredients:
   - Queso fresco paria (andino)
   - Arroz blanco
   - Huacatay fresco (Minthostachys mollis)
+main_ingredient_slugs: [null, null, null, null, arroz, null]
 sensory:
   flavor:
     - Umami Profundo (Camarón y coral)

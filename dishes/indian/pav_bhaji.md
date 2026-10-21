@@ -24,6 +24,7 @@ main_ingredients:
   - Panecillos suaves (pav)
   - Mantequilla abundante
   - Cebolla picada
+main_ingredient_slugs: [null, null, null, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

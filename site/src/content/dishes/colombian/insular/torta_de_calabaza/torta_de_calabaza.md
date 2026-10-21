@@ -28,6 +28,7 @@ main_ingredients:
   - Mantequilla
   - Azúcar
   - Canela
+main_ingredient_slugs: [ahuyama, harina_trigo, huevo, mantequilla, azucar, canela]
 prep_time: 30
 cook_time: 1
 servings: 10

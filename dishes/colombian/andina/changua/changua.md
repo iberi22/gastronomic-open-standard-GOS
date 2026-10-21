@@ -29,6 +29,7 @@ main_ingredients:
   - Sal
   - Pan Calado (tostada)
   - Mantequilla (opcional)
+main_ingredient_slugs: [leche, null, huevo, cebolla_larga, cilantro, sal, null, mantequilla]
 sensory:
   flavor:
     - Lácteo (neutro)

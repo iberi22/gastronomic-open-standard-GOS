@@ -25,6 +25,7 @@ main_ingredients:
   - Aceite de oliva
   - Zumo de limón
   - Pan pita
+main_ingredient_slugs: [null, oregano, null, limon, null]
 sensory:
   flavor:
     - Salado

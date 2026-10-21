@@ -24,6 +24,7 @@ main_ingredients:
   - Mantequilla (smen)
   - Comino
   - Sal gruesa
+main_ingredient_slugs: [null, mantequilla, comino, null]
 sensory:
   flavor:
     - Salado

@@ -29,6 +29,7 @@ main_ingredients:
   - Hongos maitake
   - Hojas de serbal/perejil japonés (seri)
   - Salsa de soja clara y mirin
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Caldo claro denso de umami de pollo avícola de alta calidad

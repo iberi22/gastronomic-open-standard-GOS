@@ -26,6 +26,7 @@ main_ingredients:
   - Comino
   - Pimentón
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, ajo, comino, pimenton_rojo, null]
 sensory:
   flavor:
     - Salado

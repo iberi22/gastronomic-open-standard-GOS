@@ -28,6 +28,7 @@ main_ingredients:
   - Pasta corta (Ditalini)
   - Pesto de albahaca
   - Parmigiano
+main_ingredient_slugs: [null, null, null, zanahoria, null, null, null, null]
 sensory:
   flavor:
     - Vegetal fresco terroso

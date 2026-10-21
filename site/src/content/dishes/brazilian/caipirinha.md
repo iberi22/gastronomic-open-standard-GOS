@@ -26,6 +26,7 @@ main_ingredients:
   - Limón tahití (lima verde brasileña)
   - Azúcar blanca refinada
   - Hielo picado
+main_ingredient_slugs: [null, null, azucar, null]
 sensory:
   flavor:
     - Ácido

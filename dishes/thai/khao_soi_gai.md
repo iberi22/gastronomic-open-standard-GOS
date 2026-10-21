@@ -24,6 +24,7 @@ main_ingredients:
   - Muslo de pollo
   - Caldo de curry amarillo y leche de coco
   - Fideos crujientes fritos
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

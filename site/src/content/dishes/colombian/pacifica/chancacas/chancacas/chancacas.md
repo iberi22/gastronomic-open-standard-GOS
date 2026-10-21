@@ -20,6 +20,7 @@ main_ingredients:
   - Panela
   - Canela
   - Clavo de olor
+main_ingredient_slugs: [coco, panela, canela, clavo_olor]
 sensory:
   flavor:
     - Dulce

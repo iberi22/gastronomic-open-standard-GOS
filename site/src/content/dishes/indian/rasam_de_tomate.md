@@ -27,6 +27,7 @@ main_ingredients:
   - Comino
   - Ajo
   - Hojas de cilantro
+main_ingredient_slugs: [tomate, null, pimienta_negra, comino, ajo, null]
 sensory:
   flavor:
     - Ácido

@@ -26,6 +26,7 @@ main_ingredients:
   - Salsa verde
   - Queso fresco
   - Crema de leche
+main_ingredient_slugs: [null, null, null, null, queso, crema_leche]
 sensory:
   flavor:
     - Salado ahumado

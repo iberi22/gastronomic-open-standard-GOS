@@ -24,6 +24,7 @@ main_ingredients:
   - Harina
   - Aceite de oliva
   - Limón
+main_ingredient_slugs: [null, harina_trigo, null, limon]
 sensory:
   flavor:
     - Salado

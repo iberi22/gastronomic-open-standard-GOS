@@ -25,6 +25,7 @@ main_ingredients:
   - Azafrán
   - Hinojo
   - Tomate
+main_ingredient_slugs: [null, null, null, null, tomate]
 sensory:
   flavor:
     - Salado

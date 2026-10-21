@@ -24,6 +24,7 @@ main_ingredients:
   - 鸡蛋 (Egg)
   - 四川保宁醋/陈醋 (Sichuan Vinegar)
   - 白胡椒粉 (White Pepper Powder)
+main_ingredient_slugs: [null, null, null, null, huevo, null, pimienta_blanca]
 sensory:
   flavor:
     - sour

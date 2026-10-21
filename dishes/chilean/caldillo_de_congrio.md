@@ -30,6 +30,7 @@ main_ingredients:
   - Vino blanco
   - Crema de leche
   - Cilantro
+main_ingredient_slugs: [null, papa_pastusa, cebolla_cabezona, tomate, pimenton_rojo, null, crema_leche, cilantro]
 sensory:
   flavor:
     - Salado

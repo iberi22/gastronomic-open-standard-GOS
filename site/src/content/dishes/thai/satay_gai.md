@@ -24,6 +24,7 @@ main_ingredients:
   - Cúrcuma
   - Leche de coco
   - Salsa de cacahuete picante
+main_ingredient_slugs: [null, null, leche_coco, null]
 sensory:
   flavor:
     - Salado

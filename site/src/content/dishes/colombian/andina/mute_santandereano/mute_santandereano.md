@@ -31,6 +31,7 @@ main_ingredients:
   - Ahuyama
   - Berenjena (regional)
   - Garbanzo
+main_ingredient_slugs: [null, carne_res, cerdo, null, null, papa_criolla, papa_pastusa, ahuyama, null, null]
 sensory:
   flavor:
     - Umami

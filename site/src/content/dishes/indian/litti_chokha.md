@@ -26,6 +26,7 @@ main_ingredients:
   - Tomate asado
   - Aceite de mostaza
   - Nigella (Kalonji)
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Ahumado

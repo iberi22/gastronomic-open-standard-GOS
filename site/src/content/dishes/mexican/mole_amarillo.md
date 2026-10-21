@@ -28,6 +28,7 @@ main_ingredients:
   - masa de maíz
   - Chayote
   - Ejotes
+main_ingredient_slugs: [carne_res, null, null, tomate, null, harina_maiz, null, null]
 sensory:
   flavor:
     - Picante especiado

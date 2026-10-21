@@ -25,6 +25,7 @@ main_ingredients:
   - Nata fresca
   - Tomate
   - Garam masala
+main_ingredient_slugs: [null, mantequilla, crema_leche, tomate, null]
 sensory:
   flavor:
     - Salado

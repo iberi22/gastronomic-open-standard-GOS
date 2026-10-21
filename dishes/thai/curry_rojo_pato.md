@@ -26,6 +26,7 @@ main_ingredients:
   - Piña
   - Tomates cherry
   - Albahaca thai
+main_ingredient_slugs: [null, null, leche_coco, pina, null, null]
 sensory:
   flavor:
     - Salado

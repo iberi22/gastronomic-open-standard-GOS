@@ -42,6 +42,7 @@ main_ingredients:
   - Mantequilla
   - Azúcar
   - Hojas de choclo
+main_ingredient_slugs: [null, queso, mantequilla, azucar, null]
 prep_time: 1
 cook_time: 30
 servings: 4

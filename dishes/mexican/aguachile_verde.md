@@ -38,6 +38,7 @@ main_ingredients:
   - Cilantro
   - Pepino en rodajas
   - Cebolla morada en pluma
+main_ingredient_slugs: [null, null, null, cilantro, null, null]
 sensory:
   flavor:
     - Muy picante

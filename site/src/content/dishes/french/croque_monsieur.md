@@ -24,6 +24,7 @@ main_ingredients:
   - Jamón cocido
   - Queso Gruyère
   - Salsa bechamel
+main_ingredient_slugs: [null, jamon, null, null]
 sensory:
   flavor:
     - Salado

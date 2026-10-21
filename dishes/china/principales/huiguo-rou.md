@@ -23,6 +23,7 @@ main_ingredients:
   - 郫县豆瓣酱 (Pixian Doubanjiang)
   - 甜面酱 (Sweet Bean Sauce)
   - 豆豉 (Douchi)
+main_ingredient_slugs: [null, null, null, salsa_trigo_dulce, null]
 sensory:
   flavor:
     - savory

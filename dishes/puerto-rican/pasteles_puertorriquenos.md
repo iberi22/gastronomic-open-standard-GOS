@@ -30,6 +30,7 @@ main_ingredients:
   - Sofrito puertorriqueño (recaito)
   - Hojas de plátano
   - Hilo de cocina (para amarrar)
+main_ingredient_slugs: [null, null, aceite_achiote, cerdo, null, null, null]
 sensory:
   flavor:
     - Salado

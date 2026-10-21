@@ -26,6 +26,7 @@ main_ingredients:
   - Limón
   - Ajo
   - Aceite vegetal
+main_ingredient_slugs: [pescado, harina_yuca, limon, ajo, aceite]
 sensory:
   flavor:
     - Umami (intenso)

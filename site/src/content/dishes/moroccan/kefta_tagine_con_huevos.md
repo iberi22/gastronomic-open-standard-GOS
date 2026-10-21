@@ -25,6 +25,7 @@ main_ingredients:
   - Huevos
   - Comino
   - Pimentón
+main_ingredient_slugs: [null, salsa_tomate, huevo, comino, pimenton_rojo]
 sensory:
   flavor:
     - Salado

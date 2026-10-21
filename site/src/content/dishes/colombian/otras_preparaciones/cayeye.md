@@ -39,6 +39,7 @@ main_ingredients:
   - Mantequilla
   - Queso costeño rallado
   - Refrito de hogao
+main_ingredient_slugs: [null, mantequilla, queso, null]
 prep_time: 1
 cook_time: 30
 servings: 4

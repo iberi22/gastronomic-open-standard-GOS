@@ -31,6 +31,7 @@ main_ingredients:
   - Comino molido
   - Pimentón dulce
   - Huevos duros
+main_ingredient_slugs: [null, harina_trigo, null, cebolla_cabezona, null, comino, null, huevo]
 sensory:
   flavor:
     - Salado

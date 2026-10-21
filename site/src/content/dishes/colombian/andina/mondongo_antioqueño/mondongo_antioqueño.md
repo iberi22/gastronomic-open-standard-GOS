@@ -30,6 +30,7 @@ main_ingredients:
   - Arveja verde
   - Hogao (Tomate/Cebolla)
   - Comino
+main_ingredient_slugs: [null, cerdo, null, papa_criolla, null, yuca, arveja, hogao, comino]
 sensory:
   flavor:
     - Cárnico

@@ -24,6 +24,7 @@ main_ingredients:
   - 老抽 (Dark Soy Sauce)
   - 葱 (Scallions)
   - 姜 (Ginger)
+main_ingredient_slugs: [null, null, azucar, salsa_soya, salsa_soya, cebolla_larga, jengibre]
 sensory:
   flavor:
     - savory

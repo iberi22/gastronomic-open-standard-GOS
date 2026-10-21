@@ -24,6 +24,7 @@ main_ingredients:
 - Tortillas de maíz
 - Cilantro
 - Cebolla picada
+main_ingredient_slugs: [cerdo, null, pina, null, cilantro, cebolla_cabezona]
 nutrition:
   calories: 650
   macros:

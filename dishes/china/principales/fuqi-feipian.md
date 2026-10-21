@@ -24,6 +24,7 @@ main_ingredients:
   - 熟花生碎 (Crushed Peanuts)
   - 四川红油 (Sichuan Chili Oil)
   - 花椒粉 (Sichuan Peppercorn Powder)
+main_ingredient_slugs: [carne_res, null, null, null, null, null]
 sensory:
   flavor:
     - spicy

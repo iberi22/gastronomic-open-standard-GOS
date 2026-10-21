@@ -29,6 +29,7 @@ main_ingredients:
   - Zanahoria en corte de diamante (rangiri)
   - Hongos shiitake
   - Caldo dashi, salsa de soja, mirin, sake y azúcar
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Salsa glaseada agridulce umami balanceada con notas de tierra fresca

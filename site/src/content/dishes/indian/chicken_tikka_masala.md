@@ -25,6 +25,7 @@ main_ingredients:
   - Nata
   - Comino
   - Cilantro
+main_ingredient_slugs: [null, null, crema_leche, comino, cilantro]
 sensory:
   flavor:
     - Salado

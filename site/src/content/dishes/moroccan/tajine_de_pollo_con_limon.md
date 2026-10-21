@@ -25,6 +25,7 @@ main_ingredients:
   - Aceitunas verdes
   - Jengibre
   - Azafrán
+main_ingredient_slugs: [pollo, null, null, jengibre, null]
 sensory:
   flavor:
     - Salado

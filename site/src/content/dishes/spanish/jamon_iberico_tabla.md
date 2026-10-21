@@ -21,6 +21,7 @@ tags:
   - Top 20
 main_ingredients:
   - Jamón ibérico de bellota cortado a cuchillo
+main_ingredient_slugs: [null]
 sensory:
   flavor:
     - Salado

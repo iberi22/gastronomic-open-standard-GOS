@@ -26,6 +26,7 @@ main_ingredients:
   - Eneldo
   - Aceite de oliva
   - Limón
+main_ingredient_slugs: [null, arroz, null, null, null, limon]
 sensory:
   flavor:
     - Salado

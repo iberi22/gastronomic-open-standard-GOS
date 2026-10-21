@@ -25,6 +25,7 @@ main_ingredients:
   - Yemas de huevo frescas
   - Pecorino Romano DOP
   - Pimienta negra entera
+main_ingredient_slugs: [null, null, huevo, null, null]
 sensory:
   flavor:
     - Salado curado (Guanciale)

@@ -30,6 +30,7 @@ main_ingredients:
   - Queso para freír (queso blanco firme)
   - Huevos enteros
   - Mantequilla sin sal
+main_ingredient_slugs: [platano_verde, cebolla_cabezona, vinagre, null, null, null, mantequilla]
 sensory:
   flavor:
     - Salado

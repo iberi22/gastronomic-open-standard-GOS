@@ -28,6 +28,7 @@ main_ingredients:
   - Perejil fresco
   - Mantequilla
   - Harina
+main_ingredient_slugs: [null, null, null, null, ajo, null, mantequilla, harina_trigo]
 sensory:
   flavor:
     - Rico estofado de ternera

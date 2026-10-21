@@ -25,6 +25,7 @@ main_ingredients:
   - Pimientos
   - Salsa de ostras
   - Chiles secos
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

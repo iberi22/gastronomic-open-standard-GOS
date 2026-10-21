@@ -27,6 +27,7 @@ main_ingredients:
   - Morcilla
   - Repollo
   - Patata
+main_ingredient_slugs: [null, null, tocino, chorizo, morcilla, pollo, null]
 sensory:
   flavor:
     - Salado

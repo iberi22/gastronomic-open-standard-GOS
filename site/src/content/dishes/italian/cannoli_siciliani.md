@@ -27,6 +27,7 @@ main_ingredients:
   - Azúcar glass
   - Pistachos de Bronte picados
   - Gotas de chocolate
+main_ingredient_slugs: [harina_trigo, null, manteca_cerdo, null, null, null, null]
 sensory:
   flavor:
     - Dulce de ricotta fresca

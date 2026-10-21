@@ -29,6 +29,7 @@ main_ingredients:
   - Zanahoria
   - Arroz
   - Cilantro fresco
+main_ingredient_slugs: [null, papa_pastusa, null, null, zanahoria, arroz, cilantro]
 sensory:
   flavor:
     - Salado

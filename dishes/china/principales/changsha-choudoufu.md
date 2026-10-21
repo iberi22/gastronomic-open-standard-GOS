@@ -23,6 +23,7 @@ main_ingredients:
   - 蒜汁 (Garlic Juice)
   - 香菜 (Cilantro)
   - 榨菜/酸豆角 (Pickled Vegetables)
+main_ingredient_slugs: [null, null, null, cilantro, null]
 sensory:
   flavor:
     - savory

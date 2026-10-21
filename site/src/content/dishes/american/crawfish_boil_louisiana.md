@@ -20,6 +20,7 @@ main_ingredients:
   - Maíz
   - Salchicha andouille
   - Especias cajún
+main_ingredient_slugs: [null, null, maiz, null, null]
 sensory:
   flavor:
     - Picante

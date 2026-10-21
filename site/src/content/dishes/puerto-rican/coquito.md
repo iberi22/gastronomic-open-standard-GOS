@@ -30,6 +30,7 @@ main_ingredients:
   - Ron blanco puertorriqueño
   - Canela molida y en rama
   - Esencia de vainilla
+main_ingredient_slugs: [leche_coco, null, null, leche_condensada, null, null, vainilla]
 sensory:
   flavor:
     - Extremadamente dulce

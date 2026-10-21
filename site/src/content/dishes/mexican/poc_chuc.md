@@ -26,6 +26,7 @@ main_ingredients:
   - Cebolla morada
   - Cilantro
   - Frijol kabax (frijol colado)
+main_ingredient_slugs: [null, null, null, cebolla_cabezona, cilantro, null]
 sensory:
   flavor:
     - Cítrico marcado

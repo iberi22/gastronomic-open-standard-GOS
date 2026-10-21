@@ -26,6 +26,7 @@ main_ingredients:
   - Queso Feta
   - Orégano
   - Limón
+main_ingredient_slugs: [null, null, ajo, null, oregano, limon]
 sensory:
   flavor:
     - Salado

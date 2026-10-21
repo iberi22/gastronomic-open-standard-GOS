@@ -30,6 +30,7 @@ main_ingredients:
   - Arveja verde
   - Huevo duro
   - Hoja de plátano
+main_ingredient_slugs: [harina_maiz, pollo, cerdo, tocino, papa_pastusa, zanahoria, arveja, huevo, null]
 sensory:
   flavor:
     - Salado

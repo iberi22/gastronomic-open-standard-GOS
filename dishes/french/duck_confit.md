@@ -24,6 +24,7 @@ main_ingredients:
   - Grasa de pato
   - Ajo
   - Tomillo
+main_ingredient_slugs: [null, null, ajo, tomillo]
 sensory:
   flavor:
     - Salado

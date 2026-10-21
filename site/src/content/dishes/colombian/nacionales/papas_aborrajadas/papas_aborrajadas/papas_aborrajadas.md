@@ -26,6 +26,7 @@ main_ingredients:
   - Harina de trigo
   - Huevo
   - Aceite
+main_ingredient_slugs: [papa_pastusa, harina_trigo, huevo, aceite]
 sensory:
   flavor:
     - Salado

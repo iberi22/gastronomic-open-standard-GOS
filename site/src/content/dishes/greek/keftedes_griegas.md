@@ -25,6 +25,7 @@ main_ingredients:
   - Orégano
   - Cebolla
   - Pan rallado
+main_ingredient_slugs: [carne_res, null, oregano, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

@@ -26,6 +26,7 @@ main_ingredients:
   - Patatas
   - Cacahuetes
   - Cardamomo y canela
+main_ingredient_slugs: [carne_res, null, leche_coco, null, null, null]
 sensory:
   flavor:
     - Salado

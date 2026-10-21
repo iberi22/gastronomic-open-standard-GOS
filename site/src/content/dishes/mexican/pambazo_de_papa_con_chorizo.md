@@ -27,6 +27,7 @@ main_ingredients:
   - Lechuga picada
   - Crema agria
   - Queso rallado
+main_ingredient_slugs: [null, null, null, null, lechuga, null, queso]
 sensory:
   flavor:
     - Picante de chile guajillo

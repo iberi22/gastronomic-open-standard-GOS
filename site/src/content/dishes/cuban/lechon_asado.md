@@ -28,6 +28,7 @@ main_ingredients:
   - Ajo fresco
   - Orégano seco
   - Comino molido
+main_ingredient_slugs: [null, null, ajo, oregano, comino]
 sensory:
   flavor:
     - Salado

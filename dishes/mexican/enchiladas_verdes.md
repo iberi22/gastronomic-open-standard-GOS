@@ -27,6 +27,7 @@ main_ingredients:
   - Crema agria
   - Queso fresco
   - Cilantro
+main_ingredient_slugs: [null, null, null, null, null, queso, cilantro]
 sensory:
   flavor:
     - Picante medio

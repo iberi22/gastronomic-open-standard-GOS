@@ -20,6 +20,7 @@ main_ingredients:
   - Queso cheddar
   - Tocineta
   - Ajo
+main_ingredient_slugs: [camaron, null, null, null, ajo]
 sensory:
   flavor:
     - Salado

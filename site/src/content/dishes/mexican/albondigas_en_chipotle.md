@@ -37,6 +37,7 @@ main_ingredients:
   - Jitomates maduros
   - Huevo
   - Hierbabuena picada
+main_ingredient_slugs: [null, null, null, null, huevo, null]
 sensory:
   flavor:
     - Jitomate dulce

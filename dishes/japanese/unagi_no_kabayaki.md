@@ -26,6 +26,7 @@ main_ingredients:
   - Salsa tare especial (salsa de soja reducida con mirin, sake y huesos de anguila)
   - Pimienta sansho en polvo
   - Arroz blanco de grano corto al vapor
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Caramelización intensa dulce y salada

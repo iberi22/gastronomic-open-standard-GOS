@@ -30,6 +30,7 @@ main_ingredients:
   - Cebolla
   - Comino y pimentón
   - Hojas de maíz (chalas)
+main_ingredient_slugs: [null, null, null, null, cebolla_cabezona, null, null]
 sensory:
   flavor:
     - Dulce sutil

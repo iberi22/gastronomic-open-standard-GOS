@@ -30,6 +30,7 @@ main_ingredients:
   - Hongos shiitake secos rehidratados y su agua
   - Caldo dashi de kombu y shiitake
   - Salsa de soja clara y sal
+main_ingredient_slugs: [null, aceite_ajonjoli, null, null, null, null, null, null]
 sensory:
   flavor:
     - Profundo umami vegetal terroso con rica nota de sésamo tostado

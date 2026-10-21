@@ -26,6 +26,7 @@ main_ingredients:
   - Hojas de lima kaffir
   - Chile thai
   - Zumo de lima
+main_ingredient_slugs: [camaron, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

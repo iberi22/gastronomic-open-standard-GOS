@@ -20,6 +20,7 @@ main_ingredients:
   - Vinagre de manzana
   - Azúcar moreno
   - Pimentón ahumado
+main_ingredient_slugs: [pollo, null, null, null, null]
 sensory:
   flavor:
     - Ahumado

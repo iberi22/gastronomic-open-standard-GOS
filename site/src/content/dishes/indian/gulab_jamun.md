@@ -24,6 +24,7 @@ main_ingredients:
   - Harina
   - Jarabe de azahar o rosa
   - Cardamomo
+main_ingredient_slugs: [null, harina_trigo, null, null]
 sensory:
   flavor:
     - Salado

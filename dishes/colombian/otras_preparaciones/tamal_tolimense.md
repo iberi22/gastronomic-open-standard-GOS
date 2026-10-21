@@ -44,6 +44,7 @@ main_ingredients:
   - Zanahoria
   - Arvejas
   - Hojas de plátano
+main_ingredient_slugs: [harina_maiz, cerdo, pollo, huevo, zanahoria, arveja, null]
 prep_time: 1
 cook_time: 30
 servings: 4

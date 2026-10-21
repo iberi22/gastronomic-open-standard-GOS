@@ -24,6 +24,7 @@ main_ingredients:
   - Miel
   - Canela
   - Nueces picadas
+main_ingredient_slugs: [null, miel, canela, null]
 sensory:
   flavor:
     - Salado

@@ -20,6 +20,7 @@ main_ingredients:
   - Vinagre de sidra de manzana
   - Cebolla
   - Caldo de pollo
+main_ingredient_slugs: [null, null, null, cebolla_cabezona, caldo]
 sensory:
   flavor:
     - Umami

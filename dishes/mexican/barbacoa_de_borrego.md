@@ -25,6 +25,7 @@ main_ingredients:
   - Chile garbanzo y arroz (para consome)
   - Chile pasilla (para salsa borracha)
   - Pulque
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami intenso

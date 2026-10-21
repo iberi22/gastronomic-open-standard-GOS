@@ -25,6 +25,7 @@ main_ingredients:
   - Pasta de anacardos
   - Nata
   - Especias suaves
+main_ingredient_slugs: [pollo, null, null, crema_leche, null]
 sensory:
   flavor:
     - Salado

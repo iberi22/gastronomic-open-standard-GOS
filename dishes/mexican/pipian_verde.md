@@ -26,6 +26,7 @@ main_ingredients:
   - Chile poblano
   - Hoja santa
   - Epazote
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Nuez terrosa

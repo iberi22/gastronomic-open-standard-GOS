@@ -20,6 +20,7 @@ main_ingredients:
   - Maíz
   - Habas (lima beans)
   - Tomate triturado
+main_ingredient_slugs: [pollo, null, maiz, null, null]
 sensory:
   flavor:
     - Umami

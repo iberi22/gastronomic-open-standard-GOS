@@ -26,6 +26,7 @@ main_ingredients:
   - Pig Tail (Cola de cerdo salada)
   - Leche de Coco natural
   - Dumplings (Harina de trigo)
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Cremoso de Coco

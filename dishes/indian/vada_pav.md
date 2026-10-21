@@ -24,6 +24,7 @@ main_ingredients:
   - Panecillo pav
   - Chutney de ajo seco
   - Guindilla verde frita
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

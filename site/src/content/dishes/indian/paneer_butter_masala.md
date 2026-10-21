@@ -25,6 +25,7 @@ main_ingredients:
   - Salsa de tomate
   - Anacardos
   - Especias
+main_ingredient_slugs: [null, mantequilla, salsa_tomate, null, null]
 sensory:
   flavor:
     - Salado

@@ -25,6 +25,7 @@ main_ingredients:
   - Lomo embuchado o jamón
   - Salsa holandesa
   - Mantequilla
+main_ingredient_slugs: [huevo, null, null, null, mantequilla]
 sensory:
   flavor:
     - Salado

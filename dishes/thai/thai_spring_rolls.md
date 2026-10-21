@@ -25,6 +25,7 @@ main_ingredients:
   - Col rallada
   - Zanahoria
   - Salsa agridulce
+main_ingredient_slugs: [null, null, null, zanahoria, null]
 sensory:
   flavor:
     - Salado

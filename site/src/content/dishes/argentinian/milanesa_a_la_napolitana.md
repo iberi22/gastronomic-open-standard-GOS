@@ -30,6 +30,7 @@ main_ingredients:
   - Jamón cocido
   - Queso mozzarella
   - Orégano seco
+main_ingredient_slugs: [carne_res, null, huevo, null, jamon, null, oregano]
 sensory:
   flavor:
     - Salado

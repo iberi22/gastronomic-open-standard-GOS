@@ -51,6 +51,7 @@ main_ingredients:
   - Zanahoria
   - Habichuelas
   - Pimentón
+main_ingredient_slugs: [null, arroz, arveja, zanahoria, habichuela, pimenton_rojo]
 prep_time: 1
 cook_time: 30
 servings: 4

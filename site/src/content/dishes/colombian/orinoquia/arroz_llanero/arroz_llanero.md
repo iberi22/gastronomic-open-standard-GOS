@@ -41,6 +41,7 @@ media: []
 embedding_version: 1
 main_ingredients:
   - Ingredientes tradicionales
+main_ingredient_slugs: [null]
 prep_time: 30
 cook_time: 1
 servings: 10

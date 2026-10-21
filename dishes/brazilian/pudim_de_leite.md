@@ -27,6 +27,7 @@ main_ingredients:
   - Huevos
   - Azúcar refinada (para el caramelo)
   - Esencia de vainilla
+main_ingredient_slugs: [leche_condensada, leche, huevo, null, vainilla]
 sensory:
   flavor:
     - Extremadamente dulce

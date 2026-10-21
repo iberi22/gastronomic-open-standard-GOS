@@ -29,6 +29,7 @@ main_ingredients:
   - Hojas de laurel Tejpatta
   - Comino en grano
   - Jengibre rallado
+main_ingredient_slugs: [null, null, null, null, null, jengibre]
 sensory:
   flavor:
     - Especiado

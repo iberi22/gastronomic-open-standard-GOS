@@ -27,6 +27,7 @@ main_ingredients:
   - Langostino
   - Seta Shiitake
   - Mitsuba
+main_ingredient_slugs: [huevo, null, null, pollo, null, null, null]
 sensory:
   flavor:
     - Umami sutil y limpio

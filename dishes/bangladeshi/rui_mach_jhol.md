@@ -29,6 +29,7 @@ main_ingredients:
   - Comino en polvo
   - Tomates frescos
   - Aceite de mostaza
+main_ingredient_slugs: [null, null, null, null, tomate, null]
 sensory:
   flavor:
     - Ligero
