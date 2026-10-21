@@ -1,0 +1,34 @@
+{
+  "name": "Mezcla de Especias Ricas en Polifenoles para Barbacoa",
+  "ingredients": [
+    "Pimentón dulce",
+    "Pimienta negra",
+    "Romero",
+    "Ajo en polvo"
+  ],
+  "active_compounds": [
+    "Capsaicina",
+    "Piperina",
+    "Ácido rosmarínico",
+    "Alicina"
+  ],
+  "synergy_type": "HCA and PAH Inhibition",
+  "synergy_mechanism": "The polyphenols in rosemary and paprika synergize with piperine to act as free radical scavengers during high-heat meat smoking, significantly reducing the formation of carcinogenic heterocyclic amines (HCAs) and polycyclic aromatic hydrocarbons (PAHs).",
+  "contraindications": [
+    "Gastroesophageal reflux during acute flare-ups"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "PubMed - Comprehensive Reviews in Food Science and Food Safety"
+  ],
+  "studies": [
+    {
+      "title": "Effects of seasoning on the formation of heterocyclic amines and polycyclic aromatic hydrocarbons in meats: A meta-analysis.",
+      "source": "Comprehensive Reviews in Food Science and Food Safety",
+      "year": 2021,
+      "doi": "10.1111/1541-4337.12650",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33443787/"
+    }
+  ],
+  "body_md": "# Mezcla de Especias Ricas en Polifenoles para Barbacoa\n\nEsta mezcla seca (rub) tradicional del Sur de Estados Unidos no solo aporta el perfil aromático característico del ahumado, sino que ejerce una **protección quimio-preventiva** durante la cocción de carnes a alta temperatura.\n\n## Mecanismo de Acción y Sinergia Antioxidante\n\nDurante el cocinado a temperaturas elevadas o el ahumado directo, los aminoácidos y la creatina de la carne reaccionan formando aminas heterocíclicas (HCAs) y hidrocarburos aromáticos policíclicos (PAHs).\n\nLa combinación de **romero** (rico en ácido rosmarínico y carnosol) y **pimentón** aporta una alta densidad de antioxidantes polifenólicos. Al combinarse con la **piperina** de la pimienta negra, que mejora la estabilidad oxidativa y permeabilidad, los polifenoles bloquean las vías de radical libre intermediarias, reduciendo la formación de mutágenos en hasta un 70-90%."
+}

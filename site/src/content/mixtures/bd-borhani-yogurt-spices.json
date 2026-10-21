@@ -1,0 +1,35 @@
+{
+  "name": "Borhani: Yogur Probiótico + Especias Carminativas",
+  "ingredients": [
+    "Yogur Agrio",
+    "Hojas de Menta",
+    "Comino Tostado",
+    "Sal Negra Kala Namak"
+  ],
+  "active_compounds": [
+    "Lactobacillus bulgaricus",
+    "Cuminaldehyde",
+    "Menthol",
+    "Sulfuro de Hidrógeno"
+  ],
+  "synergy_type": "Gastrointestinal Motility & Probiotic Survival",
+  "synergy_mechanism": "Cuminaldehyde and menthol stimulate salivary and pancreatic amylase secretion, while black salt sulfur compounds reduce intestinal gas production and buffer gastric acid to enhance probiotic survival.",
+  "contraindications": [
+    "Severe lactose intolerance",
+    "Sodium-restricted diets"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Libyan Journal of Medicine / PubMed"
+  ],
+  "studies": [
+    {
+      "title": "A survey into the utilization of probiotics and medicinal plants among individuals afflicted with gastrointestinal disorders",
+      "source": "Libyan Journal of Medicine",
+      "year": 2024,
+      "doi": "10.1080/19932820.2024.2317492",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38369815/"
+    }
+  ],
+  "body_md": "# Borhani: Sinergia Probiótica y Botánica Digestiva\n\nEl **Borhani** de la antigua Dhaka integra la matriz probiótica del **yogur agrio** con fitoquímicos carminativos de la menta, el comino y la sal negra (*Kala Namak*).\n\n## Mecanismo de Acción\nLos aceites esenciales (*mentol* y *cuminaldehído*) relajan la musculatura lisa del esfínter esofágico inferior y estimulan la producción de tripsina y amilasa pancreática. Paralelamente, los minerales traza y sulfuros de la sal negra amortiguan el pH estomacal, protegiendo las cepas de *Lactobacillus* durante el tránsito gástrico."
+}

@@ -52,10 +52,11 @@ const tipsCollection = defineCollection({
 })
 
 const ingredientsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/ingredients' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/ingredients' }),
   schema: z
     .object({
       name: z.string().optional(),
+      body_md: z.string().optional(),
       scientific_name: z.string().optional(),
       group: z.string().optional(),
       image: z.string().optional(),
@@ -72,9 +73,10 @@ const ingredientsCollection = defineCollection({
 })
 
 const vitaminsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/vitamins' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/vitamins' }),
   schema: z
     .object({
+      body_md: z.string().optional(),
       code: z.string().optional(),
       name: z.string().optional(),
       group: z.string().optional(),
@@ -84,9 +86,10 @@ const vitaminsCollection = defineCollection({
 })
 
 const conditionsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/conditions' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/conditions' }),
   schema: z
     .object({
+      body_md: z.string().optional(),
       name: z.string(),
       category: z.string().optional(),
       evidence_level: z.string().optional(),
@@ -95,9 +98,10 @@ const conditionsCollection = defineCollection({
 })
 
 const dietsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/diets' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/diets' }),
   schema: z
     .object({
+      body_md: z.string().optional(),
       name: z.string(),
       description: z.string().optional(),
     })
@@ -105,9 +109,10 @@ const dietsCollection = defineCollection({
 })
 
 const substancesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/substances' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/substances' }),
   schema: z
     .object({
+      body_md: z.string().optional(),
       name: z.string(),
       formula: z.string().optional(),
       discovery_year: z.number().optional(),
@@ -155,9 +160,10 @@ const substancesCollection = defineCollection({
 })
 
 const mixturesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/mixtures' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/mixtures' }),
   schema: z
     .object({
+      body_md: z.string().optional(),
       name: z.string(),
       ingredients: z.array(z.string()),
       active_compounds: z.array(z.string()).optional(),

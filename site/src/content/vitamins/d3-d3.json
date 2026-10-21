@@ -1,0 +1,14 @@
+{
+  "code": "D3",
+  "name": "Vitamina D3",
+  "aliases": "colecalciferol",
+  "unit": "mcg",
+  "rda": 20,
+  "ul": 100,
+  "sources": "salmón, caballa, yolk, hígado, exposición solar UVB (síntesis cutánea)",
+  "functions": "Homeostasis del calcio/fósforo, función immune (Th1/Th2), diferenciación celular, salud ósea",
+  "deficiency": "raquitismo (niños), osteomalacia (adultos), osteoporosis, Inmunosupresión, depresión",
+  "excess": "hipercalcemia, nephrocalcinosis, debilidad, Constipation, confusión mental",
+  "type": "vitamin",
+  "body_md": "Vitamina D3 (colecalciferol) es una vitamina con RDA de 20 mcg.\n\n## Funciones\n\nHomeostasis del calcio/fósforo, función immune (Th1/Th2), diferenciación celular, salud ósea\n\n## Fuentes alimentarias\n\nsalmón, caballa, yolk, hígado, exposición solar UVB (síntesis cutánea)\n\n## Deficiencia\n\nraquitismo (niños), osteomalacia (adultos), osteoporosis, Inmunosupresión, depresión\n\n## Exceso\n\nhipercalcemia, nephrocalcinosis, debilidad, Constipation, confusión mental"
+}

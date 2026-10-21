@@ -1,0 +1,49 @@
+{
+  "name": "Mentol",
+  "disclaimer": true,
+  "formula": "C10H20O",
+  "discovery_year": 1771,
+  "source_ingredient": "menta/yerbabuena (Mentha piperita)",
+  "benefit": "Refrescante, analgésico tópico, descongestionante",
+  "sazon": "Menta fresca helada, base mojito y chupetas",
+  "sabor": "Fresco helado activa TRPM8 (frío), dulzor mentolado",
+  "textura": "Monoterpeno cristalino, sublimable, 30-55% aceite menta",
+  "vitaminas": [
+    "Vitamin A",
+    "Iron",
+    "Manganese"
+  ],
+  "compuestos": [
+    "Menthone",
+    "Menthofuran",
+    "Limonene"
+  ],
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "refrescante",
+    "menta",
+    "analgesico"
+  ],
+  "image_attribution": "Pixabay — Mentha piperita",
+  "health_registry": [
+    {
+      "condition": "IBS pain",
+      "mechanism": "TRPM8 activation, Ca2+ channel blockade, antispasmodic",
+      "evidence_level": "High",
+      "studies": [
+        {
+          "title": "Peppermint oil for the treatment of irritable bowel syndrome: a systematic review and meta-analysis",
+          "source": "J Clin Gastroenterol",
+          "year": 2014,
+          "doi": "10.1097/mcg.0b013e3182a88357",
+          "url": "https://doi.org/10.1097/mcg.0b013e3182a88357",
+          "pmid": "24100754"
+        }
+      ]
+    }
+  ],
+  "body_md": "![Mentol](/images/substances/mentol.jpg)\n*Foto: Pixabay — Mentha piperita — placeholder real photo path `public/images/substances/mentol.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\n(-)-Menthol (C10H20O) aislado en 1771 por Hieronymus David Gaubius y estructura por Oppenheim 1862. Monoterpeno que activa TRPM8 (frío): sensación helada sin bajar temperatura. 30-55% aceite menta piperita.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Menta fresca helada, base mojito y chupetas\n- **Sabor:** Fresco helado activa TRPM8 (frío), dulzor mentolado\n- **Textura:** Monoterpeno cristalino, sublimable, 30-55% aceite menta\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:mentol`.\n\n## Beneficio principal\n\n> Refrescante, analgésico tópico, descongestionante\n\n## Vitaminas asociadas\n\nVitamin A, Iron, Manganese\n\n## Compuestos relacionados\n\nMenthone, Menthofuran, Limonene\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `menta/yerbabuena (Mentha piperita)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

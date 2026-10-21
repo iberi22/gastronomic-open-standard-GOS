@@ -1,0 +1,14 @@
+{
+  "code": "B8",
+  "name": "Vitamina B8",
+  "aliases": "inositol, mioinositol",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "cereales integrales, frutas cítricas, nueces, semillas, legumbres",
+  "functions": "Señalización celular (segundo mensajero), salud mental (GABA, serotonina), metabolismo de grasas",
+  "deficiency": "muy rara; estreñimiento, eczemas, alteraciones del ánimo, resistencia a insulina",
+  "excess": "muy raro; molestias GI a dosis >12g/día",
+  "type": "vitamin",
+  "body_md": "Vitamina B8 (inositol, mioinositol) es una vitamina con RDA de null mg.\n\n## Funciones\n\nSeñalización celular (segundo mensajero), salud mental (GABA, serotonina), metabolismo de grasas\n\n## Fuentes alimentarias\n\ncereales integrales, frutas cítricas, nueces, semillas, legumbres\n\n## Deficiencia\n\nmuy rara; estreñimiento, eczemas, alteraciones del ánimo, resistencia a insulina\n\n## Exceso\n\nmuy raro; molestias GI a dosis >12g/día"
+}

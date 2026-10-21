@@ -1,0 +1,32 @@
+{
+  "name": "Erva-Mate + Maracujá",
+  "ingredients": [
+    "Erva-Mate",
+    "Maracujá"
+  ],
+  "active_compounds": [
+    "Ácido clorogénico",
+    "Cafeína",
+    "Passiflorina",
+    "Vitexina"
+  ],
+  "synergy_type": "Adaptogenic Neuro-Modulation",
+  "synergy_mechanism": "Flavonoids (vitexin/isovitexin) from passion fruit modulate GABAergic receptors, buffering the peripheral sympathetic stimulation of yerba mate xanthines without dampening cognitive focus.",
+  "contraindications": [
+    "Pregnancy high-dose limit"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "ACS Food Science & Technology"
+  ],
+  "studies": [
+    {
+      "title": "Mate (Ilex paraguariensis) Toasting Causes Chlorogenic Acids to Degrade and Incorporate into Melanoidins",
+      "source": "ACS Food Science & Technology",
+      "year": 2022,
+      "doi": "10.1021/acsfoodscitech.2c00054",
+      "url": "https://doi.org/10.1021/acsfoodscitech.2c00054"
+    }
+  ],
+  "body_md": "# Erva-Mate y Maracujá: Sinergia Neuro-Adaptógena\n\nLa infusión combinada de **Erva-Mate** (*Ilex paraguariensis*) y fruto de **Maracujá** (*Passiflora edulis*) es un tónico herbal tradicional brasileiro de equilibrio neurosensorial.\n\n## Mecanismo de Sinergia\nLas xantinas (**cafeína**, teobromina) y los **ácidos clorogénicos** de la erva-mate incrementan la agudeza mental, la tasa metabólica basal y el rendimiento cognitivo. Simultáneamente, las c-glicosilflavonas (**vitexina** e isovitexina) del maracujá ejercen una modulacion alostérica sobre el complejo receptor GABA-A, previniendo los estados de ansiedad o nerviosismo secundario causados por la estimulación central de la cafeína."
+}

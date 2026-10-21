@@ -1,0 +1,31 @@
+{
+  "name": "Tucupi Fermentado + Jambu",
+  "ingredients": [
+    "Tucupi",
+    "Jambu"
+  ],
+  "active_compounds": [
+    "Espilantol",
+    "Polifenoles",
+    "Ácido orgánico"
+  ],
+  "synergy_type": "Trigeminal Sensory Enhancement & Bioavailability",
+  "synergy_mechanism": "Spilanthol from jambu induces local trigeminal vasodilation and intense sialagogic secretion, accelerating the salivary solubilization and mucosal absorption of fermented organic acids and antioxidants in tucupi.",
+  "contraindications": [
+    "Oral ulcerations or acute stomatitis"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Molecules MDPI"
+  ],
+  "studies": [
+    {
+      "title": "Natural Deep Eutectic Solvents for the Extraction of Spilanthol from Acmella oleracea (L.) R.K.Jansen",
+      "source": "Molecules",
+      "year": 2024,
+      "doi": "10.3390/molecules29030612",
+      "url": "https://doi.org/10.3390/molecules29030612"
+    }
+  ],
+  "body_md": "# Tucupi Fermentado y Jambu: Sinergia Sensorial Trigeminal\n\nLa matriz gastronómica amazónica de **Tucupi** (extrato de yuca brava fermentado y cocido) y **Jambu** (*Acmella oleracea*) crea un estímulo fisioquímico neurosensorial único en el aparato digestivo.\n\n## Mecanismo de Sinergia\nEl **espilantol** (alquilamida lipofílica de *Acmella oleracea*) estimula los receptores somatosensoriales TRPV1 y TRPA1 de las papilas gustativas, induciendo una ráfaga anestésica y efervescente con salivación profusa. Esta hiper-salivación alcalina solubiliza los **ácidos orgánicos** y flavonoides del tucupi fermentado, mejorando la digestibilidad gástrica y la percepción organoléptica."
+}

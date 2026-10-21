@@ -1,0 +1,47 @@
+{
+  "name": "Oleocanthal",
+  "disclaimer": true,
+  "formula": "C17H20O5",
+  "discovery_year": 1992,
+  "source_ingredient": "aceite de oliva (Olea europaea)",
+  "benefit": "Antiinflamatorio ibuprofeno-like, neuroprotector",
+  "sazon": "Oliva pungente garganta, picor que raspa garganta",
+  "sabor": "Pungente garganta tipo ibuprofeno, activa TRPA1 garganta",
+  "textura": "Secoiridoide dialdehído, 0.2-0.9mg/mL aceite extra virgen",
+  "vitaminas": [
+    "Vitamin E",
+    "Vitamin K",
+    "Polyphenols"
+  ],
+  "compuestos": [
+    "Oleuropein",
+    "Hydroxytyrosol",
+    "Oleacein"
+  ],
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "oliva",
+    "ibuprofeno",
+    "mediterraneo"
+  ],
+  "image_attribution": "Pixabay — Olea europaea",
+  "health_registry": [
+    {
+      "condition": "Alzheimer / Inflammation",
+      "mechanism": "COX-1/COX-2 inhibition (ibuprofen-like), tau anti-aggregation",
+      "evidence_level": "Medium",
+      "studies": [
+        {
+          "title": "Ibuprofen-like activity in extra-virgin olive oil",
+          "source": "Nature",
+          "year": 2005,
+          "doi": "10.1038/437045a"
+        }
+      ]
+    }
+  ],
+  "body_md": "![Oleocanthal](/images/substances/oleocanthal.jpg)\n*Foto: Pixabay — Olea europaea — placeholder real photo path `public/images/substances/oleocanthal.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\nDialdehído secoiridoide (C17H20O5) aislado en 1992 por Montedoro y asociado en 2005 por Beauchamp (Nature) a picor garganta idéntico a ibuprofeno. Inhibe COX como ibuprofeno; marcador aceite oliva extra virgen de calidad.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Oliva pungente garganta, picor que raspa garganta\n- **Sabor:** Pungente garganta tipo ibuprofeno, activa TRPA1 garganta\n- **Textura:** Secoiridoide dialdehído, 0.2-0.9mg/mL aceite extra virgen\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:oleocanthal`.\n\n## Beneficio principal\n\n> Antiinflamatorio ibuprofeno-like, neuroprotector\n\n## Vitaminas asociadas\n\nVitamin E, Vitamin K, Polyphenols\n\n## Compuestos relacionados\n\nOleuropein, Hydroxytyrosol, Oleacein\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `aceite de oliva (Olea europaea)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

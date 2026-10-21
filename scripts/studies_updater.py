@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Añade un bloque `studies:` a fichas markdown desde un catálogo curado.
+"""Añade un bloque `studies:` a fichas JSON desde un catálogo curado.
 
 Compartido por vitaminas y dietas: ambos leen `research/<t>_studies.json`
-—donde cada DOI ya está comprobado contra Crossref— y solo formatean el bloque
-dentro del frontmatter. Ningún script busca ni decide una referencia; la
+—donde cada DOI ya está comprobado contra Crossref— y solo añaden el bloque
+dentro del registro JSON. Ningún script busca ni decide una referencia; la
 decisión editorial vive en el catálogo, que es revisable.
 
 Uso:
@@ -19,23 +19,20 @@ import os
 import re
 import sys
 
-STUDIES_KEY = re.compile(r"^studies:", re.M)
-
-
-def render_studies(entry: dict) -> list[str]:
-    """Bloque YAML `studies:` a partir de las entradas del catálogo."""
-    out = ["studies:"]
+def render_studies(entry: dict) -> list[dict]:
+    """Lista `studies` a partir de las entradas del catálogo."""
+    out = []
     for s in entry["studies"]:
-        q = lambda v: str(v).replace("'", "''")  # noqa: E731
-        out += [
-            f"  - title: '{q(s['title'])}'",
-            f"    source: '{q(s['journal'])}'",
-            f"    year: {s['year']}",
-            f"    doi: '{s['doi']}'",
-        ]
+        study = {
+            "title": str(s["title"]),
+            "source": str(s["journal"]),
+            "year": s["year"],
+            "doi": str(s["doi"]),
+        }
         if s.get("pmid"):
-            out.append(f"    pmid: '{s['pmid']}'")
-        out.append(f"    url: 'https://doi.org/{s['doi']}'")
+            study["pmid"] = str(s["pmid"])
+        study["url"] = f"https://doi.org/{s['doi']}"
+        out.append(study)
     return out
 
 
@@ -51,29 +48,35 @@ def update(catalog_path: str, content_dir: str, collection_key: str, apply: bool
 
     changed = skipped = missing = 0
     for entry in sorted(entries, key=lambda e: e[id_key]):
-        path = os.path.join(content_dir, entry["file"])
+        # El catálogo nombra el archivo .md; el registro vive ahora en .json.
+        name = re.sub(r"\.md$", ".json", entry["file"])
+        path = os.path.join(content_dir, name)
         if not os.path.exists(path):
-            print(f"  ? {entry['file']} no existe")
+            print(f"  ? {name} no existe")
             missing += 1
             continue
 
-        text = open(path, encoding="utf-8").read()
-        end = text.find("\n---", 3) if text.startswith("---") else -1
-        if end == -1:
-            print(f"  ? {path} sin frontmatter válido")
+        try:
+            record = json.load(open(path, encoding="utf-8"))
+        except ValueError:
+            print(f"  ? {path} JSON inválido")
             missing += 1
             continue
 
-        fm, rest = text[3:end], text[end:]
-        if STUDIES_KEY.search(fm):
+        if "studies" in record:
             skipped += 1
             continue
 
         changed += 1
         if apply:
-            block = "\n".join(render_studies(entry))
-            # fm empieza con "\n"; se conserva para no perder el blanco tras ---.
-            open(path, "w", encoding="utf-8").write(f"---{fm.rstrip()}\n{block}\n{rest}")
+            # Mismo formato que scripts/md_to_json.mjs; `studies` va al final
+            # de los campos de datos, antes de `body_md`.
+            body = record.pop("body_md", None)
+            record["studies"] = render_studies(entry)
+            if body is not None:
+                record["body_md"] = body
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
 
     verb = "written" if apply else "would update"
     print(f"{collection_key}: {changed} {verb}, {skipped} ya tenían studies, {missing} sin archivo")

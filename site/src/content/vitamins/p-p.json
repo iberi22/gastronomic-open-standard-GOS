@@ -1,0 +1,14 @@
+{
+  "code": "P",
+  "name": "Vitamina P",
+  "aliases": "bioflavonoides, flavonas",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "cítricos (hesperidina), bayas (quercetina), té verde (EGCG)",
+  "functions": "Fortalece paredes capilares, antioxidante sinérgico con vitamina C, anti-inflamatorio",
+  "deficiency": "capilar fragility, petequias, bleeding gums, bruising",
+  "excess": "muy raro; GI discomfort a dosis muy altas",
+  "type": "vitamin",
+  "body_md": "Vitamina P (bioflavonoides, flavonas) es una vitamina con RDA de null mg.\n\n## Funciones\n\nFortalece paredes capilares, antioxidante sinérgico con vitamina C, anti-inflamatorio\n\n## Fuentes alimentarias\n\ncítricos (hesperidina), bayas (quercetina), té verde (EGCG)\n\n## Deficiencia\n\ncapilar fragility, petequias, bleeding gums, bruising\n\n## Exceso\n\nmuy raro; GI discomfort a dosis muy altas"
+}

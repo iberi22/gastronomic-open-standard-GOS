@@ -1,0 +1,14 @@
+{
+  "code": "Q",
+  "name": "Vitamina Q",
+  "aliases": "coenzima Q10, ubiquinona",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "carnes de órganos (corazón > hígado > riñón), sardinas, maní, aceite de soja",
+  "functions": "Cadena respiratoria mitocondrial (complejo I-II), antioxidante lipídico, función cardíaca",
+  "deficiency": "fatiga, mialgia, insuficiencia cardíaca, migraine",
+  "excess": "muy raro; insomnio, náuseas en dosis >1200mg/día",
+  "type": "vitamin",
+  "body_md": "Vitamina Q (coenzima Q10, ubiquinona) es una vitamina con RDA de null mg.\n\n## Funciones\n\nCadena respiratoria mitocondrial (complejo I-II), antioxidante lipídico, función cardíaca\n\n## Fuentes alimentarias\n\ncarnes de órganos (corazón > hígado > riñón), sardinas, maní, aceite de soja\n\n## Deficiencia\n\nfatiga, mialgia, insuficiencia cardíaca, migraine\n\n## Exceso\n\nmuy raro; insomnio, náuseas en dosis >1200mg/día"
+}

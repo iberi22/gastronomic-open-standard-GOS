@@ -333,24 +333,10 @@ async function main() {
   await mkdir(OUT, { recursive: true })
 
   for (const v of VITAMINS) {
-    // Skip duplicate c-c.md (vitamina-c) and placeholder
+    // Skip duplicate c-c.json (vitamina-c) and placeholder
     const safeCode = v.code.toLowerCase().replace(/[^a-z0-9-]/g, '-')
-    const filename = join(OUT, `${safeCode}-${safeCode}.md`)
-    const content = `---
-code: "${v.code}"
-name: "${v.name}"
-aliases: "${v.aliases}"
-unit: "${v.unit}"
-rda: ${v.rda ?? 'null'}
-ul: ${v.ul ?? 'null'}
-sources: "${v.sources}"
-functions: "${v.function}"
-deficiency: "${v.deficiency}"
-excess: "${v.excess}"
-type: "vitamin"
----
-
-${v.name} (${v.aliases}) es una ${v.unit !== 'null' ? `vitamina con RDA de ${v.rda} ${v.unit}` : 'vitamina sin RDA establecida'}.
+    const filename = join(OUT, `${safeCode}-${safeCode}.json`)
+    const body_md = `${v.name} (${v.aliases}) es una ${v.unit !== 'null' ? `vitamina con RDA de ${v.rda} ${v.unit}` : 'vitamina sin RDA establecida'}.
 
 ## Funciones
 
@@ -366,8 +352,26 @@ ${v.deficiency}
 
 ## Exceso
 
-${v.excess}
-`
+${v.excess}`
+    // JSON record (repo-as-database); same format as scripts/md_to_json.mjs
+    const content = `${JSON.stringify(
+      {
+        code: v.code,
+        name: v.name,
+        aliases: v.aliases,
+        unit: v.unit,
+        rda: v.rda ?? null,
+        ul: v.ul ?? null,
+        sources: v.sources,
+        functions: v.function,
+        deficiency: v.deficiency,
+        excess: v.excess,
+        type: 'vitamin',
+        body_md,
+      },
+      null,
+      2,
+    )}\n`
     await writeFile(filename, content, 'utf8')
     console.log(`Created: ${filename}`)
   }

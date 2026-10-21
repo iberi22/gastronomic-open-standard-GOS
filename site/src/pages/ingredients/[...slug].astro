@@ -1,5 +1,6 @@
 ---
-import { getCollection, render } from 'astro:content'
+import { getCollection } from 'astro:content'
+import { marked } from 'marked'
 import Layout from '../../layouts/Layout.astro'
 import {
   INGREDIENT_OG_PLACEHOLDER,
@@ -13,7 +14,9 @@ export async function getStaticPaths() {
   return col.map((entry) => ({ params: { slug: entry.id }, props: { entry } }))
 }
 const { entry } = Astro.props
-const { Content } = await render(entry)
+const bodyHtml = marked.parse(String(entry.data.body_md || ''), {
+  async: false,
+}) as string
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const data = entry.data
 // Hero: image del frontmatter o placeholder (0/552 ingredientes traen
@@ -121,7 +124,7 @@ const metaDescription = ingredientDescription({
         ))}
       </div>
     )}
-    <div class="prose"><Content /></div>
+    <div class="prose" set:html={bodyHtml} />
   </article>
   <script is:inline>
     // Si el hero falla, cae al placeholder en vez de mostrar icono roto.

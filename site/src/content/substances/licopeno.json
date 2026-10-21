@@ -1,0 +1,64 @@
+{
+  "aliases": {
+    "en": [
+      "lycopene"
+    ]
+  },
+  "benefit": "Antioxidante, cardioprotector, fotoprotector",
+  "compuestos": [
+    "Phytoene",
+    "Phytofluene",
+    "Beta-carotene"
+  ],
+  "disclaimer": true,
+  "discovery_year": 1873,
+  "formula": "C40H56",
+  "health_registry": [
+    {
+      "condition": "Prostate cancer",
+      "evidence_level": "Medium",
+      "mechanism": "Antioxidant, modulates cell cycle and apoptosis",
+      "studies": [
+        {
+          "doi": "10.1158/1055-9965.340.13.3",
+          "source": "Cancer Epidemiol Biomarkers Prev",
+          "title": "The Role of Tomato Products and Lycopene in the Prevention of Prostate Cancer",
+          "year": 2004
+        }
+      ]
+    },
+    {
+      "condition": "Cardiovascular disease",
+      "evidence_level": "Medium",
+      "mechanism": "LDL oxidation inhibition",
+      "studies": [
+        {
+          "source": "Atherosclerosis",
+          "title": "Lycopene and CVD risk: meta-analysis",
+          "year": 2014
+        }
+      ]
+    }
+  ],
+  "image_attribution": "Pixabay — Solanum lycopersicum",
+  "name": "Licopeno",
+  "sabor": "Umami suave dulce, sin picor, biodisponible cocido > crudo",
+  "sazon": "Base sofritos mediterráneos, potenciado con cocción y aceite",
+  "source_ingredient": "tomate (Solanum lycopersicum)",
+  "sources": [
+    "NIH",
+    "PubMed"
+  ],
+  "tags": [
+    "antioxidante",
+    "cardioprotector",
+    "mediterraneo"
+  ],
+  "textura": "Carotenoide lipofílico cristalino rojo, isomeriza con calor (trans→cis)",
+  "vitaminas": [
+    "Vitamin A",
+    "Vitamin C",
+    "Potassium"
+  ],
+  "body_md": "![Licopeno](/images/substances/licopeno.jpg)\n*Foto: Pixabay — Solanum lycopersicum — placeholder real photo path `public/images/substances/licopeno.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\nCarotenoide acíclico C40H56 aislado en 1873 por Millardet y estructura elucidada en 1910 por Willstätter y Escher. Pigmento rojo del tomate; biodisponibilidad triplica al cocinar con aceite (isomerización cis). Descrito en la literatura comoioxidante que apaga singlete oxígeno (sin fuente verificada en esta carta).\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Base sofritos mediterráneos, potenciado con cocción y aceite\n- **Sabor:** Umami suave dulce, sin picor, biodisponible cocido > crudo\n- **Textura:** Carotenoide lipofílico cristalino rojo, isomeriza con calor (trans→cis)\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:licopeno`.\n\n## Beneficio principal\n\n> Antioxidante, cardioprotector, fotoprotector\n\n## Vitaminas asociadas\n\nVitamin A, Vitamin C, Potassium\n\n## Compuestos relacionados\n\nPhytoene, Phytofluene, Beta-carotene\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `tomate (Solanum lycopersicum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

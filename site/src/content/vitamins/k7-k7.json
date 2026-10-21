@@ -1,0 +1,14 @@
+{
+  "code": "K7",
+  "name": "Vitamina K7",
+  "aliases": "filoquinona marina",
+  "unit": "mcg",
+  "rda": null,
+  "ul": null,
+  "sources": "algas marinas (kelp, nori, kombu)",
+  "functions": "Función anticoagulante (similar a K1/K2), salud vascular",
+  "deficiency": "no establecido",
+  "excess": "puede interferir con warfarina",
+  "type": "vitamin",
+  "body_md": "Vitamina K7 (filoquinona marina) es una vitamina con RDA de null mcg.\n\n## Funciones\n\nFunción anticoagulante (similar a K1/K2), salud vascular\n\n## Fuentes alimentarias\n\nalgas marinas (kelp, nori, kombu)\n\n## Deficiencia\n\nno establecido\n\n## Exceso\n\npuede interferir con warfarina"
+}

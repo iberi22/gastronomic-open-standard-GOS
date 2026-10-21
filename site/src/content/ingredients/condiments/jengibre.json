@@ -1,0 +1,64 @@
+{
+  "active_compounds": [
+    {
+      "benefit": "Potent anti-inflammatory and anti-nausea compound.",
+      "name": "Gingerol",
+      "scientific_ref": "PubMed"
+    }
+  ],
+  "aliases": {
+    "en": [
+      "ginger"
+    ]
+  },
+  "group": "Condiment",
+  "health_registry": [
+    {
+      "compounds": [
+        "6-Gingerol"
+      ],
+      "condition": "Nausea / Motion Sickness",
+      "evidence_level": "High",
+      "mechanism": "Gingerols antagonize 5-HT3 receptors in the gut, reducing nausea without CNS side effects.",
+      "studies": [
+        {
+          "source": "British Journal of Anaesthesia",
+          "title": "Efficacy of ginger for nausea and vomiting"
+        }
+      ]
+    },
+    {
+      "compounds": [
+        "Gingerol",
+        "Shogaol"
+      ],
+      "condition": "Inflammation",
+      "evidence_level": "Medium",
+      "mechanism": "Inhibits COX-2 enzyme similarly to NSAIDs."
+    }
+  ],
+  "micronutrients": {
+    "potassium_mg": 415
+  },
+  "name": "Jengibre",
+  "nutrition_per_100g": {
+    "calories": 80,
+    "carbs_g": 17,
+    "fat_g": 0.7,
+    "fiber_g": 2,
+    "protein_g": 1.8
+  },
+  "portions": {
+    "default_g": 5
+  },
+  "scientific_name": "Zingiber officinale",
+  "sources": [
+    "USDA FoodData Central"
+  ],
+  "tags": [
+    "te",
+    "asiatico",
+    "antiinflamatorio"
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl jengibre es un rizoma picante y aromático. Esencial en la cocina china y la medicina tradicional.\n\n## Culinary Uses\n- **Salteados:** Junto al ajo y cebollín.\n- **Té:** Infusión para la gripa o náuseas.\n\n## Health Benefits\n### Antiemético Natural\nEs el remedio no farmacológico más validado para las náuseas del embarazo y mareo por movimiento."
+}

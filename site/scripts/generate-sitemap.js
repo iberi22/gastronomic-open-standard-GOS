@@ -14,7 +14,7 @@ const publicDir = path.resolve(__dirname, '../public')
 const contentDir = path.resolve(__dirname, '../src/content')
 
 // OJO: corre tras copy-content.js (el contenido vive en src/content)
-function collectMd(base) {
+function collectMd(base, ext = '.md') {
   if (!fs.existsSync(base)) return []
   const out = []
   function walk(dir, rel) {
@@ -22,10 +22,10 @@ function collectMd(base) {
       const full = path.join(dir, ent.name)
       const r = rel ? `${rel}/${ent.name}` : ent.name
       if (ent.isDirectory()) walk(full, r)
-      else if (ent.name.endsWith('.md') && ent.name !== 'placeholder.md') {
+      else if (ent.name.endsWith(ext) && ent.name !== `placeholder${ext}`) {
         // Astro minusculiza los ids (README.md -> .../readme): espejarlo
         // para que el sitemap no liste URLs 404.
-        out.push(r.replace(/\.md$/, '').replace(/\/README$/, '/readme'))
+        out.push(r.slice(0, -ext.length).replace(/\/README$/, '/readme'))
       }
     }
   }
@@ -62,7 +62,7 @@ for (const p of [
 }
 
 // substances (30)
-for (const id of collectMd(path.join(contentDir, 'substances')))
+for (const id of collectMd(path.join(contentDir, 'substances'), '.json'))
   add(`/substances/${id}`, '0.7')
 
 // ingredients (todos, con subdirectorios) MENOS pending_review.
@@ -72,7 +72,7 @@ for (const id of collectMd(path.join(contentDir, 'substances')))
 // /ingredients/[...slug].astro, asi que listarlas aqui seria contradecir la
 // propia pagina (un sitemap manda "indexame"). No se borran: siguen
 // accesibles por URL directa para el pipeline de revision.
-for (const id of collectMd(path.join(contentDir, 'ingredients'))) {
+for (const id of collectMd(path.join(contentDir, 'ingredients'), '.json')) {
   if (id.startsWith('pending_review/')) continue
   add(`/ingredients/${id}`, '0.6')
 }

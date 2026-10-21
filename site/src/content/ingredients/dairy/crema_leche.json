@@ -1,0 +1,33 @@
+{
+  "name": "Crema de Leche",
+  "scientific_name": "Bos taurus",
+  "group": "Dairy",
+  "portions": {
+    "default_g": 15
+  },
+  "nutrition_per_100g": {
+    "calories": 340,
+    "protein_g": 2.8,
+    "fat_g": 36,
+    "carbs_g": 2.7,
+    "fiber_g": 0
+  },
+  "micronutrients": {
+    "vitamin_a_iu": 1470
+  },
+  "active_compounds": [
+    {
+      "name": "Milk Fat",
+      "benefit": "Texture and flavor carrier.",
+      "scientific_ref": "Culinary Science"
+    }
+  ],
+  "sources": [
+    "USDA FoodData Central"
+  ],
+  "tags": [
+    "ajiaco",
+    "postre"
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa crema de leche es la grasa láctea concentrada. Es el toque final obligatorio del Ajiaco Santafereño y base de postres.\n\n## Culinary Uses\n- **Ajiaco:** Se añade en la mesa.\n- **Postres:** Fresas con crema."
+}

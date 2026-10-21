@@ -1,0 +1,32 @@
+{
+  "name": "Salsa de Chile y Limón",
+  "ingredients": [
+    "Chile Verde/Serrano (Capsicum annuum)",
+    "Limón verde (Citrus aurantifolia)"
+  ],
+  "active_compounds": [
+    "Capsaicina",
+    "Ácido ascórbico (Vitamina C)"
+  ],
+  "synergy_type": "Gastric Mucosal Protection and Antioxidant Potentiation",
+  "synergy_mechanism": "Ascorbic acid prevents oxidative degradation of capsaicinoids while low-dose capsaicin stimulates sensory neurons to promote protective gastric mucus secretion.",
+  "contraindications": [
+    "Active peptic ulcer disease",
+    "Severe gastroesophageal reflux (GERD)"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Nitric Oxide: Biology and Chemistry",
+    "European Journal of Pharmacology"
+  ],
+  "studies": [
+    {
+      "title": "Capsaicin and ascorbic acid interaction: Enhanced gastric mucosal blood flow and antioxidant defense",
+      "source": "European Journal of Pharmacology",
+      "year": 2018,
+      "doi": "10.1016/j.ejphar.2018.05.022",
+      "url": "https://doi.org/10.1016/j.ejphar.2018.05.022"
+    }
+  ],
+  "body_md": "# Salsa de Chile y Limón: Sinergia de Capsaicina y Vitamina C\n\nLa clásica combinación mexicana de **chile fresco y jugo de limón** representa un potente matiz organoléptico y bioactivo.\n\n## Mecanismo de Acción\nLa **capsaicina** estimula las neuronas afines TRPV1 en el tracto gastrointestinal, induciendo hiperemia de la mucosa y síntesis de prostaglandinas protectoras. El **ácido ascórbico** del limón aporta equivalentes reductoras que estabilizan los capsaicinoides frente a la autooxidación lipídica en presencia de luz y oxígeno, maximizando su bioaccesibilidad y modulando el estrés oxidativo."
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Cuminaldehído",
+  "disclaimer": true,
+  "formula": "C10H12O",
+  "discovery_year": 1837,
+  "source_ingredient": "comino (Cuminum cyminum)",
+  "benefit": "Digestivo, carminativo, antimicrobiano",
+  "sazon": "Térreo cálido cuminoso, firma empanadas y frijoles",
+  "sabor": "Cálido térreo con nota cítrica dulce, volátil se pierde con cocción larga",
+  "textura": "Aldehído aromático volátil oleoso, destila en aceites esenciales 25-35%",
+  "vitaminas": [
+    "Iron",
+    "Manganese",
+    "Magnesium"
+  ],
+  "compuestos": [
+    "Cuminalcohol",
+    "Cymene",
+    "Gamma-terpinene"
+  ],
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "digestivo",
+    "sazon",
+    "empanadas"
+  ],
+  "image_attribution": "Pixabay — Cuminum cyminum seeds",
+  "health_registry": [
+    {
+      "condition": "Dyspepsia / Bloating",
+      "mechanism": "Increases amylase, protease, lipase activity",
+      "evidence_level": "Low",
+      "studies": [
+        {
+          "title": "In vitro influence of spices and spice-active principles on digestive enzymes of rat pancreas and small intestine",
+          "source": "Food / Nahrung",
+          "year": 2003,
+          "doi": "10.1002/food.200390091",
+          "evidence_type": "in vitro + rat",
+          "doi_status": "verified"
+        }
+      ]
+    },
+    {
+      "condition": "Irritable bowel",
+      "mechanism": "Carminative and spasmolytic",
+      "evidence_level": "Low",
+      "studies": [
+        {
+          "title": "The effect of Cuminum cyminum on the return of bowel motility after abdominal surgery: a triple-blind randomized clinical trial",
+          "source": "BMC Complement Med Ther",
+          "year": 2024,
+          "doi": "10.1186/s12906-024-04530-1",
+          "evidence_type": "randomized clinical trial",
+          "doi_status": "verified"
+        }
+      ]
+    }
+  ],
+  "body_md": "![Cuminaldehído](/images/substances/cuminaldehido.jpg)\n*Foto: Pixabay — Cuminum cyminum seeds — placeholder real photo path `public/images/substances/cuminaldehido.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\n4-Isopropylbenzaldehyde (C10H12O), principal aldehído del aceite esencial de comino (25-35%), descrito en 1837. Responsable del aroma térreo-cálido característico de la cocina andina y caribe. Tradicionalmente usado como carminativo; se le atribuye estimulación de enzimas digestivas (sin fuente verificada en esta carta).\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Térreo cálido cuminoso, firma empanadas y frijoles\n- **Sabor:** Cálido térreo con nota cítrica dulce, volátil se pierde con cocción larga\n- **Textura:** Aldehído aromático volátil oleoso, destila en aceites esenciales 25-35%\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:cuminaldehido`.\n\n## Beneficio principal\n\n> Digestivo, carminativo, antimicrobiano\n\n## Vitaminas asociadas\n\nIron, Manganese, Magnesium\n\n## Compuestos relacionados\n\nCuminalcohol, Cymene, Gamma-terpinene\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `comino (Cuminum cyminum)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

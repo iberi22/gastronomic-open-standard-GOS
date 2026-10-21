@@ -1,0 +1,53 @@
+{
+  "name": "Pescado Blanco (Bagre/Mojarra/Tilapia)",
+  "scientific_name": "Oreochromis niloticus / Pseudoplatystoma",
+  "group": "Protein",
+  "portions": {
+    "default_g": 200
+  },
+  "nutrition_per_100g": {
+    "calories": 96,
+    "protein_g": 20,
+    "fat_g": 1.7,
+    "carbs_g": 0,
+    "fiber_g": 0
+  },
+  "micronutrients": {
+    "vitamin_d_iu": 124,
+    "selenium_ug": 41.8,
+    "phosphorus_mg": 204
+  },
+  "active_compounds": [
+    {
+      "name": "Omega-3 (DHA/EPA)",
+      "benefit": "Anti-inflammatory fatty acids (levels vary by species).",
+      "scientific_ref": "PubMed"
+    }
+  ],
+  "health_registry": [
+    {
+      "condition": "Brain Health",
+      "mechanism": "DHA is a major structural component of the brain.",
+      "compounds": [
+        "DHA",
+        "Vitamin D"
+      ],
+      "evidence_level": "High",
+      "studies": [
+        {
+          "title": "Fish consumption and cognitive decline",
+          "source": "Neurology"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "USDA FoodData Central"
+  ],
+  "tags": [
+    "sancocho",
+    "frito",
+    "mar"
+  ],
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl pescado de río (Bagre) o cultivo (Tilapia) es fundamental en la dieta de las costas y riberas colombianas. Es una proteína de muy fácil digestión.\n\n## Culinary Uses\n- **Sancocho de Pescado:** Plato insignia de la costa.\n- **Frito:** Mojarra frita con patacón.\n- **Sudado:** Bagre en salsa criolla.\n\n## Health Benefits\n### Digestibilidad\nIdeal para niños y adultos mayores debido a su baja cantidad de tejido conectivo en comparación con las carnes rojas."
+}

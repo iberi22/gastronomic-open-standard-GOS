@@ -1,0 +1,14 @@
+{
+  "code": "S",
+  "name": "Vitamina S",
+  "aliases": "ácido salicílico (natural)",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "sauzgatillo (Vitex), sauce blanco (aspirina natural), meadowsweet",
+  "functions": "Anti-inflamatorio natural, antiagregante plaquetario, antipirético",
+  "deficiency": "no establecido (precursor de aspirina)",
+  "excess": "irritación GI, sangrado",
+  "type": "vitamin",
+  "body_md": "Vitamina S (ácido salicílico (natural)) es una vitamina con RDA de null mg.\n\n## Funciones\n\nAnti-inflamatorio natural, antiagregante plaquetario, antipirético\n\n## Fuentes alimentarias\n\nsauzgatillo (Vitex), sauce blanco (aspirina natural), meadowsweet\n\n## Deficiencia\n\nno establecido (precursor de aspirina)\n\n## Exceso\n\nirritación GI, sangrado"
+}

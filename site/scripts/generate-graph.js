@@ -586,6 +586,19 @@ function isPlaceholderName(text) {
 // se podaban en silencio. El catálogo /ingredients sí puede seguir usándola.
 const PENDING_REVIEW_DIRNAME = 'pending_review'
 
+// Data collections live as JSON (repo-as-database); root ingredients/ and
+// prose documents are still Markdown. Read both transparently.
+const isDataFile = (name) =>
+  (name.endsWith('.md') && name !== 'README.md') || name.endsWith('.json')
+function readFm(file) {
+  const raw = fs.readFileSync(file, 'utf8')
+  if (file.endsWith('.json')) {
+    const { body_md = '', ...data } = JSON.parse(raw)
+    return { data, content: body_md }
+  }
+  return matter(raw)
+}
+
 function autoCategorizeIngredient(ingredientLabel) {
   const ingLower = ingredientLabel.toLowerCase()
   for (const [category, keywords] of Object.entries(INGREDIENT_CATEGORIES)) {
@@ -717,12 +730,10 @@ export function generateGraph() {
         scanAliases(fullPath)
       } else if (
         entry.isFile() &&
-        entry.name.endsWith('.md') &&
-        entry.name !== 'README.md'
+        isDataFile(entry.name)
       ) {
         try {
-          const content = fs.readFileSync(fullPath, 'utf8')
-          const parsed = matter(content)
+          const parsed = readFm(fullPath)
           const fm = parsed.data
           if (!fm.name || !isLatinText(fm.name) || isPlaceholderName(fm.name))
             continue
@@ -795,15 +806,15 @@ export function generateGraph() {
         if (e.isDirectory()) {
           if (e.name === PENDING_REVIEW_DIRNAME) {
             for (const f of fs.readdirSync(p)) {
-              if (f.endsWith('.md')) pendingFilesSkipped.add(f) // basename: dedupe entre copias
+              if (f.endsWith('.md') || f.endsWith('.json'))
+              pendingFilesSkipped.add(f.replace(/\.json$/, '.md')) // basename: dedupe entre copias
             }
             continue
           }
           walk(p)
-        } else if (e.isFile() && e.name.endsWith('.md')) {
+        } else if (e.isFile() && isDataFile(e.name)) {
           try {
-            const raw = fs.readFileSync(p, 'utf8')
-            const pm = matter(raw)
+            const pm = readFm(p)
             const fm = pm.data
             // MISMO criterio que scanIngredients(): si el archivo no va a tener
             // nodo (sin name latino), no se emiten aristas hacia un id fantasma.
@@ -1263,19 +1274,18 @@ export function generateGraph() {
       if (entry.isDirectory()) {
         if (entry.name === PENDING_REVIEW_DIRNAME) {
           for (const f of fs.readdirSync(fullPath)) {
-            if (f.endsWith('.md')) pendingFilesSkipped.add(f) // basename: dedupe entre copias
+            if (f.endsWith('.md') || f.endsWith('.json'))
+              pendingFilesSkipped.add(f.replace(/\.json$/, '.md')) // basename: dedupe entre copias
           }
           continue
         }
         scanIngredients(fullPath)
       } else if (
         entry.isFile() &&
-        entry.name.endsWith('.md') &&
-        entry.name !== 'README.md'
+        isDataFile(entry.name)
       ) {
         try {
-          const content = fs.readFileSync(fullPath, 'utf8')
-          const parsed = matter(content)
+          const parsed = readFm(fullPath)
           const fm = parsed.data
           if (!fm.name || !isLatinText(fm.name)) {
             excludedSkips.noLatin++

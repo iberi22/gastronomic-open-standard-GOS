@@ -1,0 +1,32 @@
+{
+  "name": "Sufu (Fermented Tofu Bioactive Peptides)",
+  "ingredients": [
+    "Tofu (Soy Curd)",
+    "Actinomucor elegans ferment"
+  ],
+  "active_compounds": [
+    "Antioxidant soybean peptides",
+    "GABA (gamma-aminobutyric acid)",
+    "Isoflavone aglycones"
+  ],
+  "synergy_type": "Proteolytic Cleavage & Neuro-Metabolic Modulation",
+  "synergy_mechanism": "Fungal proteases from Actinomucor and Mucor mold strains extensively hydrolyze tofu insoluble proteins into hydrophobic short-chain peptides and GABA, delivering enhanced free radical scavenging capacity.",
+  "contraindications": [
+    "Histamine intolerance",
+    "Strict low-sodium diets"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "PubMed - Critical Reviews in Food Science and Nutrition"
+  ],
+  "studies": [
+    {
+      "title": "Traditional fermented soybean products: processing, flavor formation, nutritional and biological activities",
+      "source": "Critical Reviews in Food Science and Nutrition",
+      "year": 2022,
+      "doi": "10.1080/10408398.2020.1848792",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33226273/"
+    }
+  ],
+  "body_md": "# Sufu (腐乳): Sinergia Peptídica en Queso de Soja Fermentado\n\n## Biotransformación Micelial del Tofu\nEl **Sufu** (腐乳 o 豆腐乳), históricamente conocido como el \"queso de soja tradicional\", es una matriz alimentaria altamente nutritiva que se obtiene mediante la fermentación y maduración del tofu utilizando mohos filamentosos (*Actinomucor elegans*, *Mucor sufu* o *Rhizopus* spp.). Durante la fase de cultivo del moho (pehtze) y el posterior envejecimiento en salmuera con licor de arroz, las enzimas miceliales transforman por completo las propiedades fisicoquímicas de la coagulación de la soja.\n\n## Mecanismo de Acción Bioactiva y Textura Culinaria\n\n* **Hidrólisis Proteica e Inmunomodulación:** La intensa actividad proteolítica fragmenta la red proteica densa e insoluble del tofu, convirtiéndola en una crema suave e untuosa rica en aminoácidos esenciales y péptidos bioactivos de bajo peso molecular (< 1 kDa), con potentes efectos de barrido de radicales libres e inhibición de la oxidación lipídica.\n* **Síntesis Enzimática de Ácido Gamma-Aminobutírico (GABA):** La decarboxilación microbiana del glutamato durante la fase de salado y maduración eleva considerablemente la concentración de GABA, un neurotransmisor inhibidor que apoya la modulación de la presión arterial y la relajación vascular.\n* **Estabilización de Lípidos y Aportes Aromáticos:** Los ácidos grasos libres liberados reaccionan lentamente con los alcoholes del licor de maceración, generando ésteres aromáticos complejos (como etil hexanoato) que enmascaran el sabor leguminoso y aportan una complejidad sensorial única.\n\n## Uso Gastronómico Tradicional\nEl Sufu rojo (con levadura de arroz rojo *Monascus*) y el Sufu blanco se emplean habitualmente como condimento en salteados de verduras de hoja verde (como la espinaca de agua) y en marinados de carnes estofadas, enriqueciendo los platillos con una textura untuosa y sabrosa.\n\n## Sinergia de Maduración y Conservación\nEl proceso de salado (12-15% NaCl) y la adición de alcohol inactivan la proliferación fúngica activa mientras permiten que las endopeptidasas continúen madurando lentamente la matriz proteica."
+}

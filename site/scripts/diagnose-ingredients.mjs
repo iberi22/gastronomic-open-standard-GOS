@@ -3,7 +3,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import matter from 'gray-matter'
 
 const repoRoot = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -26,9 +25,9 @@ const walk = (dir) => {
       walk(p)
       continue
     }
-    if (!e.isFile() || !e.name.endsWith('.md')) continue
-    const fm = matter(fs.readFileSync(p, 'utf8')).data
-    const fallback = path.basename(p, '.md')
+    if (!e.isFile() || !e.name.endsWith('.json')) continue
+    const fm = JSON.parse(fs.readFileSync(p, 'utf8'))
+    const fallback = path.basename(p, '.json')
     const name = fm.name
     const nodeId =
       name && isLatinText(name) ? `ingredient_${sanitizeId(name)}` : null // nodo que SÍ existe
