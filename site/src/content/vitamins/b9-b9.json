@@ -4,10 +4,10 @@
   "aliases": "folato, ácido fólico",
   "group": "vitamin",
   "unit": "mcg DFE",
-  "rda": "400",
-  "ul": "1000",
+  "rda": 400,
+  "ul": 1000,
   "sources": "legumbres, hojas verdes, aguacate, hígado, naranja",
-  "function": "Síntesis de purinas/pirimidinas, metilación del ADN, formación de eritrocitos\n",
+  "functions": "Síntesis de purinas/pirimidinas, metilación del ADN, formación de eritrocitos\n",
   "deficiency": "anemia megaloblástica, defectos del tubo neural (espina bífida, anencefalia), hipometilación del ADN\n",
   "studies": [
     {

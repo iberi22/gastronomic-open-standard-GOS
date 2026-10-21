@@ -4,9 +4,9 @@
   "aliases": "biotina, vitamina H",
   "group": "vitamin",
   "unit": "mcg",
-  "rda": "30",
+  "rda": 30,
   "sources": "yema de huevo, hígado, nueces, almendras, batata, espinaca",
-  "function": "Carboxilasas (metabolismo de ácidos grasos, gluconeogénesis), regulación génica\n",
+  "functions": "Carboxilasas (metabolismo de ácidos grasos, gluconeogénesis), regulación génica\n",
   "deficiency": "muy rara; rash facial eritematoso, alopecia, paroniquia, acidosis metabólica\n",
   "excess": "no documentado (excreción urinaria rápida)",
   "studies": [

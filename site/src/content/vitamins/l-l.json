@@ -3,8 +3,6 @@
   "name": "Vitamina L",
   "aliases": "carnitina, vitamina Bt",
   "unit": "mg",
-  "rda": null,
-  "ul": null,
   "sources": "carnes rojas (corazón > hígado > riñón), pollo, lácteos, aguacate, tempeh, espirulina",
   "functions": "Transporte de ácidos grasos al interior de mitocondrias (beta-oxidación), producción de energía aeróbica, función cardíaca y muscular",
   "deficiency": "Fatiga, debilidad muscular, intolerancia al ejercicio, cardiomiopatía, hipoglucemia en niños",

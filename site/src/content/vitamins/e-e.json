@@ -4,10 +4,10 @@
   "aliases": "tocoferol, tocoTRIENOL",
   "group": "vitamin",
   "unit": "mg α-TE",
-  "rda": "15",
-  "ul": "1000",
+  "rda": 15,
+  "ul": 1000,
   "sources": "aceites vegetales (germen de trigo, girasol, oliva), almendras, aguacate, semillas\n",
-  "function": "Antioxidante lipofílico (protege membranas celulares LDL de peroxidación), regulación de señalización celular\n",
+  "functions": "Antioxidante lipofílico (protege membranas celulares LDL de peroxidación), regulación de señalización celular\n",
   "deficiency": "rara (malabsorción, ataxia con areflexia - AVED por mutaciones TTPA), anemia hemolítica en neonatos\n",
   "studies": [
     {

@@ -4,10 +4,10 @@
   "aliases": "piridoxina, piridoxal, piridoxamina",
   "group": "vitamin",
   "unit": "mg",
-  "rda": "1.7",
-  "ul": "100",
+  "rda": 1.7,
+  "ul": 100,
   "sources": "cereales integrales, garbanzos, hígado, pollo, pisang",
-  "function": "Transaminación, decarboxilación, metabolismo de neurotransmisores (serotonina, GABA), hemoglobina\n",
+  "functions": "Transaminación, decarboxilación, metabolismo de neurotransmisores (serotonina, GABA), hemoglobina\n",
   "deficiency": "anemia sideroblástica, convulsiones, neuropatía periférica, dermatitis\n",
   "studies": [
     {
