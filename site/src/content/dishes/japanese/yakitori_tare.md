@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Yakitori de Pollo en Tare
 region: Tokyo
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Sake
   - Azúcar
   - Brochetas de bambú
+main_ingredient_slugs: [null, null, salsa_soya, null, null, azucar, null]
 sensory:
   flavor:
     - Umami glaseado

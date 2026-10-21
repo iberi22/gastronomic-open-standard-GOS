@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Spaghetti Cacio e Pepe
 region: Lazio (Roma)
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Queso Pecorino Romano DOP rallado muy fino
   - Pimienta negra en grano tostada
   - Sal gruesa
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Pecorino Romano salado picante

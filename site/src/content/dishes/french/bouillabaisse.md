@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Bouillabaisse de Marsella
 region: Marsella
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Azafrán
   - Hinojo
   - Tomate
+main_ingredient_slugs: [null, null, null, null, tomate]
 sensory:
   flavor:
     - Salado

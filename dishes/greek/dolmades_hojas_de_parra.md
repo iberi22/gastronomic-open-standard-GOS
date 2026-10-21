@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Dolmades (Hojas de Parra Rellenas)
 region: Creta
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Eneldo
   - Aceite de oliva
   - Limón
+main_ingredient_slugs: [null, arroz, null, null, null, limon]
 sensory:
   flavor:
     - Salado

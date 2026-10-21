@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- molluscs
+- unknown
 title: Escargots de Bourgogne
 region: Borgoña
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Mantequilla
   - Ajo
   - Perejil
+main_ingredient_slugs: [caracol, mantequilla, ajo, null]
 sensory:
   flavor:
     - Salado

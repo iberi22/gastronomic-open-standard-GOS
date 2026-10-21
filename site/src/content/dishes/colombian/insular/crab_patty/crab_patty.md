@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Crab Patty (Empanada de Cangrejo)
 region: Colombia
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Pimentón
   - Tomillo
   - Chile picante
+main_ingredient_slugs: [cangrejo, null, cebolla_cabezona, pimenton_rojo, tomillo, aji_picante]
 prep_time: 40
 cook_time: 30
 servings: 10

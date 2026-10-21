@@ -1,0 +1,17 @@
+{
+  "name": "Bicarbonato de Sodio",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Bicarbonato de Sodio",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Bicarbonato de Sodio",
+  "aliases": {
+    "es": [
+      "bicarbonato de sodio"
+    ]
+  }
+}

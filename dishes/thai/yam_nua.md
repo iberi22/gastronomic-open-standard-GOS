@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Yam Nua (Ensalada de Res Picante)
 region: Central Thailand
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Menta
   - Cilantro
   - Aliño de lima y chile
+main_ingredient_slugs: [null, pepino, tomate, cebolla_cabezona, null, cilantro, null]
 sensory:
   flavor:
     - Salado

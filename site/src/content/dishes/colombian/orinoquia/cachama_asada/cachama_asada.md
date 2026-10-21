@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cachama Asada
 region: Colombia
 language: es
@@ -43,6 +45,7 @@ media: []
 embedding_version: 1
 main_ingredients:
   - Ingredientes tradicionales
+main_ingredient_slugs: [null]
 prep_time: 30
 cook_time: 45
 servings: 6

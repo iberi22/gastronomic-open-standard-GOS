@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- fish
+- unknown
 title: Bolas de Pescado (Fish Balls)
 region: Colombia
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Cebolla
   - Pimentón
   - Especias
+main_ingredient_slugs: [null, null, cebolla_cabezona, pimenton_rojo, null]
 prep_time: 25
 cook_time: 20
 servings: 6

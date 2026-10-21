@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Pastilla (Bastilla) de Pollo y Almendras
 region: Fez
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Almendras tostadas molidas
   - Canela
   - Azúcar glas
+main_ingredient_slugs: [null, null, null, canela, null]
 sensory:
   flavor:
     - Salado

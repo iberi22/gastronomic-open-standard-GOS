@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Garides Saganaki (Camarones con Feta)
 region: Grecia Nacional
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Harina
   - Aceite de oliva
   - Limón
+main_ingredient_slugs: [null, harina_trigo, null, limon]
 sensory:
   flavor:
     - Salado

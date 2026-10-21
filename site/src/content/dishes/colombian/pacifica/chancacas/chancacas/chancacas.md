@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Chancacas (Cocadas del Pacífico)
 region: Pacífica
 language: es
@@ -20,6 +21,7 @@ main_ingredients:
   - Panela
   - Canela
   - Clavo de olor
+main_ingredient_slugs: [coco, panela, canela, clavo_olor]
 sensory:
   flavor:
     - Dulce

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Mousse au Chocolat
 region: París
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Huevos
   - Mantequilla
   - Azúcar
+main_ingredient_slugs: [null, huevo, mantequilla, azucar]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ichigo Daifuku
 region: Tokyo / Kansai
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Azúcar refinado
   - Agua pura
   - Almidón de patata katakuriko para manipular
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Contraste refrescante ácido dulzón de la fresa jugosa con la dulzura suave del anko

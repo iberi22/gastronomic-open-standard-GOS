@@ -1,0 +1,17 @@
+{
+  "name": "Ostión",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Ostión",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "生蚝"
+    ]
+  },
+  "body_md": "# Ostión"
+}

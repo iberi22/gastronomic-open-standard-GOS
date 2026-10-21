@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tajine de Ternera con Membrillo Caramelizado
 region: Meknes
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Miel
   - Canela
   - Jengibre
+main_ingredient_slugs: [carne_res, null, miel, canela, jengibre]
 sensory:
   flavor:
     - Salado

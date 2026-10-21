@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Seco de Cabrito
 region: Costa (Norte)
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Pasta de ají amarillo
   - Pasta de ají mirasol
   - Loche (zapallo loche norteño)
+main_ingredient_slugs: [null, cilantro, null, null, null, null]
 sensory:
   flavor:
     - Ácido (Chicha de Jora)

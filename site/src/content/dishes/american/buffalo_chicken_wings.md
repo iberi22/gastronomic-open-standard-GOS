@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Buffalo Chicken Wings
 region: 'Buffalo, NY'
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Salsa picante Buffalo
   - Mantequilla
   - Ajo
+main_ingredient_slugs: [null, null, mantequilla, ajo]
 sensory:
   flavor:
     - Salado

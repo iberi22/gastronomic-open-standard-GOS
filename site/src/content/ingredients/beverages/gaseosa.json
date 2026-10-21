@@ -1,0 +1,20 @@
+{
+  "name": "Gaseosa",
+  "group": "Beverage",
+  "i18n": {
+    "es": {
+      "common_name": "Gaseosa",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "可乐"
+    ],
+    "es": [
+      "gaseosa roja"
+    ]
+  },
+  "body_md": "# Gaseosa"
+}

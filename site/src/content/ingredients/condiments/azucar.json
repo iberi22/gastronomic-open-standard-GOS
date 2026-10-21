@@ -1,0 +1,22 @@
+{
+  "name": "Azúcar",
+  "group": "Sugar",
+  "i18n": {
+    "es": {
+      "common_name": "Azúcar",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "白糖",
+      "冰糖"
+    ],
+    "es": [
+      "Azúcar",
+      "azucar morena"
+    ]
+  },
+  "body_md": "# Azúcar"
+}

@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- fish
+- molluscs
+- unknown
 title: Arroz Atollado con Mariscos
 region: Pacífica
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Piangua (*Anadara tuberculosa*)
   - Leche de Coco (Matrices grasas)
   - 'Refrito de la Costa (Cebolla, Pimentón, Achiote)'
+main_ingredient_slugs: [arroz, null, piangua, leche_coco, null]
 sensory:
   flavor:
     - Umami Marino Intenso

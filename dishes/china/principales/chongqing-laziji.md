@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Chongqing Laziji (Firecracker Spicy Chicken)
 region: China
 language: zh
@@ -21,6 +24,7 @@ main_ingredients:
   - 四川干辣椒 (Sichuan Dried Red Chilies)
   - 青花椒 (Green Sichuan Peppercorns)
   - 熟芝麻 (Toasted Sesame Seeds)
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - fiery

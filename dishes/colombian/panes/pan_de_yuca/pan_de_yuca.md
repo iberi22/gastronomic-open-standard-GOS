@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- milk
 title: Pandeyuca (Pan de Yuca)
 region: Andina / Sur de Colombia
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Queso Campesino o Cuajada
   - Mantequilla
   - Huevo
+main_ingredient_slugs: [almidon_yuca, queso, mantequilla, huevo]
 sensory:
   flavor:
     - Queso Intenso

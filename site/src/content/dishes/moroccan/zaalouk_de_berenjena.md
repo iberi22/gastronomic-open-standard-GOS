@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Zaalouk de Berenjena y Tomate
 region: Fez
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Comino
   - Pimentón
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, ajo, comino, pimenton_rojo, null]
 sensory:
   flavor:
     - Salado

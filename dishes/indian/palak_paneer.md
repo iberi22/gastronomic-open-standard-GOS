@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Palak Paneer
 region: Norte de India
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Ajo
   - Jengibre
   - Garam masala
+main_ingredient_slugs: [null, null, ajo, jengibre, null]
 sensory:
   flavor:
     - Salado

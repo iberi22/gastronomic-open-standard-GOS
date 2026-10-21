@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Confit de Canard
 region: Gascuña
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Grasa de pato
   - Ajo
   - Tomillo
+main_ingredient_slugs: [null, null, ajo, tomillo]
 sensory:
   flavor:
     - Salado

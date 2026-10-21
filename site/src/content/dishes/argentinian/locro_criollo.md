@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Locro Criollo Argentino
 region: Noroeste / Pampeana / Nacional
 language: es
@@ -31,6 +33,7 @@ main_ingredients:
   - Chorizo colorado
   - Falda de vacuno
   - Patitas y cuerito de cerdo
+main_ingredient_slugs: [null, null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

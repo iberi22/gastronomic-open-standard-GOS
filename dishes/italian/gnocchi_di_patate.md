@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Gnocchi di Patate al Pesto
 region: Liguria (Génova)
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Ajo
   - Parmigiano Reggiano
   - Aceite de oliva virgen extra
+main_ingredient_slugs: [null, harina_trigo, huevo, null, null, ajo, null, null]
 sensory:
   flavor:
     - Albahaca fresca herbal

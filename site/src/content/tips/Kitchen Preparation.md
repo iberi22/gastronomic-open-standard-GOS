@@ -1,3 +1,9 @@
+---
+title: "Kitchen Preparation"
+description: "Before reading and referencing recipes, imagine you have already prepared the following items in the kitchen. These items will not be mentioned in the raw materials and tools sections."
+tags: ["tips","general"]
+language: "en"
+---
 # Kitchen Preparation
 
 Before reading and referencing recipes, imagine you have already prepared the following items in the kitchen. These items will not be mentioned in the raw materials and tools sections.

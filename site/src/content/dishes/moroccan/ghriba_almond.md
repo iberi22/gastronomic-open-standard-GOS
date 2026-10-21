@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- tree_nuts
+- unknown
 title: Ghriba de Almendra y Sésamo
 region: Fez
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Huevos
   - Ralladura de limón
   - Azúcar glas
+main_ingredient_slugs: [null, azucar, huevo, limon, null]
 sensory:
   flavor:
     - Salado

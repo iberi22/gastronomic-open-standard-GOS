@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tandoori Chicken
 region: Punjab
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Garam masala
   - Chile rojo
   - Zumo de limón
+main_ingredient_slugs: [null, null, null, null, limon]
 sensory:
   flavor:
     - Salado

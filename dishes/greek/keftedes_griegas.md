@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Keftedes (Albóndigas Griegas de Menta)
 region: Grecia Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Orégano
   - Cebolla
   - Pan rallado
+main_ingredient_slugs: [carne_res, null, oregano, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

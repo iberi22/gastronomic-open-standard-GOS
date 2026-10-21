@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pandebono Valluno
 region: Valle del Cauca
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Masato de Maíz o Harina de Maíz
   - Queso Costeño (Salado)
   - Queso Fresco (Cuajada)
+main_ingredient_slugs: [null, null, queso, queso]
 sensory:
   flavor:
     - Queso Salado

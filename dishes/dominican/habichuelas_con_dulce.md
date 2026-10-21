@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Habichuelas con Dulce Dominicanas
 region: República Dominicana
 language: es
@@ -33,6 +36,7 @@ main_ingredients:
   - Canela en rama
   - Clavos de olor
   - Galletitas de leche dominicanas (guarina)
+main_ingredient_slugs: [null, null, leche_coco, azucar, papa_pastusa, null, null, clavo_olor, null]
 sensory:
   flavor:
     - Extremadamente dulce

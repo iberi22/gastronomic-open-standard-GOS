@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Crêpes Suzette
 region: Costa Azul
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Mantequilla
   - Zumo de naranja
   - Licor Grand Marnier
+main_ingredient_slugs: [null, mantequilla, null, null]
 sensory:
   flavor:
     - Salado

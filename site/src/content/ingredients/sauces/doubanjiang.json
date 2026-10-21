@@ -1,0 +1,18 @@
+{
+  "name": "Pasta de Haba Picante (Doubanjiang)",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Pasta de Haba Picante (Doubanjiang)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "豆瓣酱",
+      "红油豆瓣酱"
+    ]
+  },
+  "body_md": "# Pasta de Haba Picante (Doubanjiang)"
+}

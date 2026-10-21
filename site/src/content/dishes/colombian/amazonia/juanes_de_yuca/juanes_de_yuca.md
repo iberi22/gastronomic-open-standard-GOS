@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- fish
+- unknown
 title: Juanes de Yuca
 region: Amazonía
 language: es
@@ -21,6 +25,7 @@ main_ingredients:
   - Carne de pollo/cerdo/pescado
   - Huevo
   - Hojas de bijao
+main_ingredient_slugs: [yuca, null, huevo, null]
 sensory:
   flavor:
     - Suave

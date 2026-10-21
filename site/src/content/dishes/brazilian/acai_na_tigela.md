@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Açaí na Tigela
 region: Pará / Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Guaraná em pó ou xarope
   - Granola artesanal
   - Frutas frescas fatiadas
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Doce

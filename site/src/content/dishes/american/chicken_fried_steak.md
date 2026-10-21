@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Chicken Fried Steak (Filete Empanado con Salsa Blanca)
 region: Texas
 language: es
@@ -20,6 +24,7 @@ main_ingredients:
   - Leche
   - Suero de leche
   - Pimienta negra
+main_ingredient_slugs: [carne_res, harina_trigo, leche, null, pimienta_negra]
 sensory:
   flavor:
     - Salado

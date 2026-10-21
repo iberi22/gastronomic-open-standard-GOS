@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mishti Doi
 region: Bogra
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Azúcar caramelizada
   - Cultivo de yogur activo
   - Semillas de cardamomo molidas
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Dulce caramelizado

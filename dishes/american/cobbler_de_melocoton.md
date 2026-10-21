@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Georgia Peach Cobbler
 region: Georgia
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Mantequilla
   - Azúcar
   - Canela
+main_ingredient_slugs: [null, harina_trigo, mantequilla, azucar, canela]
 sensory:
   flavor:
     - Salado

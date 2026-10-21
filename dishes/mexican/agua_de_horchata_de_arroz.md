@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Agua de Horchata de Arroz
 region: Tradicional Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Leche evaporada
   - Leche condensada
   - Extracto de vainilla
+main_ingredient_slugs: [arroz, null, null, leche_condensada, null]
 sensory:
   flavor:
     - Dulce cremoso

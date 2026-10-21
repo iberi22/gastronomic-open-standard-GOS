@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Baingan Bharta
 region: Punjab / Norte de la India
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Jengibre
   - Chile verde
   - Garam masala
+main_ingredient_slugs: [null, cebolla_cabezona, tomate, jengibre, null, null]
 sensory:
   flavor:
     - Ahumado

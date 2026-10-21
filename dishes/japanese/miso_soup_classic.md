@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Sopa de Miso Clásica
 region: Japón Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Tofu firme o sedoso
   - Alga Wakame deshidratada
   - Cebollín verde
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami terroso (Miso)

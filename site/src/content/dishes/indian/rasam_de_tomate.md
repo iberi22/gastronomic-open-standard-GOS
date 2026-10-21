@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Rasam de Tomate
 region: Tamil Nadu / Sur de la India
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Comino
   - Ajo
   - Hojas de cilantro
+main_ingredient_slugs: [tomate, null, pimienta_negra, comino, ajo, null]
 sensory:
   flavor:
     - Ácido

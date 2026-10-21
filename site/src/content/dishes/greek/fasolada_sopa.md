@@ -1,4 +1,7 @@
 ---
+allergens:
+- celery
+- unknown
 title: Fasolada (Sopa de Alubias Blancas)
 region: Grecia Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Zanahoria
   - Apio
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, zanahoria, apio, null]
 sensory:
   flavor:
     - Salado

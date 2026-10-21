@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Papas Rellenas Colombianas
 region: Nacional
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Huevo
   - Harina de trigo
   - Aceite
+main_ingredient_slugs: [papa_pastusa, carne_res, huevo, harina_trigo, aceite]
 sensory:
   flavor:
     - Salado

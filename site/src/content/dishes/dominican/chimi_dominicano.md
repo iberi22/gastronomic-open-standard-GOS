@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Chimichurri Dominicano (Chimi)
 region: República Dominicana
 language: es
@@ -31,6 +34,7 @@ main_ingredients:
   - Cebolla roja
   - Ajo fresco
   - Ají gustoso o pimiento verde
+main_ingredient_slugs: [carne_res, null, null, null, cebolla_cabezona, ajo, null]
 sensory:
   flavor:
     - Salado

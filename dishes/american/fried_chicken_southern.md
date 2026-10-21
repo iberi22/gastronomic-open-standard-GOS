@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Southern Crispy Fried Chicken
 region: Sur de EE.UU.
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Suero de leche
   - Especias
   - Aceite para freír
+main_ingredient_slugs: [pollo, harina_trigo, null, null, aceite]
 sensory:
   flavor:
     - Salado

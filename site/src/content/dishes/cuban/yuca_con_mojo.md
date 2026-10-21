@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Yuca con Mojo Cubana
 region: Cuba
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Ajo fresco
   - Manteca de cerdo (o aceite de oliva)
   - Cebolla blanca
+main_ingredient_slugs: [yuca, null, ajo, manteca_cerdo, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

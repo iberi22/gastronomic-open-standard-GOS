@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Soufflé au Fromage
 region: París
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Mantequilla
   - Harina
   - Leche
+main_ingredient_slugs: [null, huevo, mantequilla, harina_trigo, leche]
 sensory:
   flavor:
     - Salado

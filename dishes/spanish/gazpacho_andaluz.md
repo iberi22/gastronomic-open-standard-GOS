@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gazpacho Andaluz
 region: Andalucía
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Ajo
   - Aceite de oliva
   - Vinagre de Jerez
+main_ingredient_slugs: [tomate, pimenton_verde, pepino, ajo, null, null]
 sensory:
   flavor:
     - Salado

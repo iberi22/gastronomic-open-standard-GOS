@@ -2,6 +2,8 @@
 aliases:
   en:
   - Caprese Salad
+allergens:
+- unknown
 categories:
 - Entrante
 - Ensalada
@@ -20,6 +22,7 @@ main_ingredients:
 - Hojas de albahaca fresca
 - Aceite de oliva virgen extra
 - Sal marina
+main_ingredient_slugs: [null, tomate, null, null, sal]
 nutrition:
   calories: 380
   macros:

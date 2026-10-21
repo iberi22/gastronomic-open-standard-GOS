@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Buri Daikon
 region: Toyama / Hokuriku
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Jengibre fresco en láminas
   - Caldo dashi de kombu
   - Salsa de soja oscura, sake, mirin y azúcar
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami intenso de pescado azul con dulzura profunda de soya y sake

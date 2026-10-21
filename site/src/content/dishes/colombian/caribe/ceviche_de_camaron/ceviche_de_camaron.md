@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- unknown
 title: Ceviche de Camarón Costeño
 region: Caribe
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Cebolla Roja (Desflemada)
   - Ajo
   - Cilantro
+main_ingredient_slugs: [camaron, null, salsa_tomate, mayonesa, cebolla_cabezona, ajo, cilantro]
 sensory:
   flavor:
     - Ácido-Dulce (Equilibrado)

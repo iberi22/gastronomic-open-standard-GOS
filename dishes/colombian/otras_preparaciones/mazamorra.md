@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mazamorra Antioqueña
 region: Andina
 language: es
@@ -13,6 +16,7 @@ main_ingredients:
   - leche
   - panela
   - bocadillo de guayaba
+main_ingredient_slugs: [null, leche, panela, null]
 sensory:
   flavor:
     - Sweet (panela)

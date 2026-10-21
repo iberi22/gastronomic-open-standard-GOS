@@ -1,4 +1,8 @@
 ---
+allergens:
+- sesame
+- tree_nuts
+- unknown
 title: Tajine de Cordero con Ciruelas y Almendras
 region: Marrakech
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Canela
   - Sésamo
   - Azafrán
+main_ingredient_slugs: [null, null, null, canela, null, null]
 sensory:
   flavor:
     - Salado

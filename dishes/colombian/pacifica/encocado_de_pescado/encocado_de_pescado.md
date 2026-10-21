@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Encocado de Pescado
 region: Pacífica
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - 'Recao de Azotea (Cimarrón, Albahaca, Orégano)'
   - Aceite de Achiote (Pigmento lipofílico)
   - Ají Dulce / Chombo
+main_ingredient_slugs: [null, leche_coco, null, aceite_achiote, null]
 sensory:
   flavor:
     - Umami Marino

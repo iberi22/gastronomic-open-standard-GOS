@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Quiche Lorraine
 region: Lorena
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Huevos
   - Crema de leche
   - Queso
+main_ingredient_slugs: [null, null, huevo, crema_leche, queso]
 sensory:
   flavor:
     - Salado

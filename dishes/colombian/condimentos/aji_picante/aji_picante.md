@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ají Picante Colombiano
 region: Colombia
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Cilantro
   - Vinagre
   - Agua
+main_ingredient_slugs: [null, cebolla_larga, tomate, cilantro, vinagre, null]
 prep_time: 10
 cook_time: 30
 servings: 1

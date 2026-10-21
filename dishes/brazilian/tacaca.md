@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacacá Amazônico
 region: Pará, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Goma de mandioca (polvilho)
   - Camarão seco salgado
   - Pimenta de cheiro amazônica
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Ácido

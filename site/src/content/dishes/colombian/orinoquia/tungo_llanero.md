@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tungos Llaneros
 region: Orinoquía
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Leche Agria / Suero
   - Panela o Azúcar
   - Clavos y Canela
+main_ingredient_slugs: [arroz, null, panela, null]
 sensory:
   flavor:
     - Ligeramente Ácido (Láctico)

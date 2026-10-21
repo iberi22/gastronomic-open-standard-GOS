@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gyros de Pollo en Pan Pita
 region: Tesalónica
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Salsa tzatziki
   - Tomate
   - Cebolla roja
+main_ingredient_slugs: [null, null, null, tomate, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

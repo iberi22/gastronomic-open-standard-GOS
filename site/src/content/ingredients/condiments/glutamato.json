@@ -1,0 +1,17 @@
+{
+  "name": "Glutamato Monosódico",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Glutamato Monosódico",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "味素"
+    ]
+  },
+  "body_md": "# Glutamato Monosódico"
+}

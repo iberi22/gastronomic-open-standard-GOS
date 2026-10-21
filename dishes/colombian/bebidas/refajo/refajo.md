@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Refajo Colombiano
 region: Andina / Nacional
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Soda Roja (Colombiana)
   - Hielo
   - Aguardiente (Opcional)
+main_ingredient_slugs: [cerveza, null, null, null]
 sensory:
   flavor:
     - Dulce (Cola)

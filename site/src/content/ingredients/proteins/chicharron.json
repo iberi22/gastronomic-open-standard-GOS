@@ -1,0 +1,17 @@
+{
+  "name": "Chicharrón",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Chicharrón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "猪油渣"
+    ]
+  },
+  "body_md": "# Chicharrón"
+}

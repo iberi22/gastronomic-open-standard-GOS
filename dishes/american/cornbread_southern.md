@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Southern Skillet Cornbread
 region: Sur de EE.UU.
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Mantequilla
   - Leche
   - Huevos
+main_ingredient_slugs: [harina_maiz, harina_trigo, mantequilla, leche, huevo]
 sensory:
   flavor:
     - Salado

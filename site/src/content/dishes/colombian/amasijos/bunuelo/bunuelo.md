@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Buñuelo Colombiano
 region: Nacional
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Almidón de Yuca
   - Azúcar
   - Huevo
+main_ingredient_slugs: [queso, null, almidon_yuca, azucar, huevo]
 sensory:
   flavor:
     - Queso Salado

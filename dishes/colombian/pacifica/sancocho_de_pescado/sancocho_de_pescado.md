@@ -1,4 +1,6 @@
 ---
+allergens:
+- fish
 title: Sancocho de Pescado Pacífico
 region: Pacífica
 language: es
@@ -20,6 +22,7 @@ main_ingredients:
   - Leche de coco
   - Yuca
   - Plátano verde
+main_ingredient_slugs: [pescado, leche_coco, yuca, platano_verde]
 sensory:
   flavor:
     - Umami

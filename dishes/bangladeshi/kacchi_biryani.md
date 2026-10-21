@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Dhakai Kacchi Biryani
 region: Old Dhaka
 language: es
@@ -30,6 +33,7 @@ main_ingredients:
   - Garam masala bengalí
   - Patatas
   - Ciruelas pasas Aloo bokhara
+main_ingredient_slugs: [null, arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Especiado

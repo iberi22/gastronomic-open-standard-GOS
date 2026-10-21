@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Soupe à l'Oignon Gratinée
 region: París
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Pan tostado
   - Queso Gruyère
   - Mantequilla
+main_ingredient_slugs: [cebolla_cabezona, null, null, null, mantequilla]
 sensory:
   flavor:
     - Salado

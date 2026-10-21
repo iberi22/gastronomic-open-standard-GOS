@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ratatouille Provençale
 region: Niza / Provenza
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Pimentón
   - Tomate
   - Aceite de oliva
+main_ingredient_slugs: [null, null, pimenton_rojo, tomate, null]
 sensory:
   flavor:
     - Salado

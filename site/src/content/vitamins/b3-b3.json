@@ -4,10 +4,10 @@
   "aliases": "niacina, ácido nicotínico",
   "group": "vitamin",
   "unit": "mg NE",
-  "rda": 16,
-  "ul": 35,
+  "rda": "16",
+  "ul": "35",
   "sources": "pollo, atún, hígado, cereales integrales, champignons",
-  "functions": "NAD+/NADP+ en reacciones redox, metabolísmo de energía, reparación de ADN\n",
+  "function": "NAD+/NADP+ en reacciones redox, metabolísmo de energía, reparación de ADN\n",
   "deficiency": "pelagra (dermatitis photosensitive + diarrhea + dementia, \"las 3 D\")\n",
   "excess": "flushing, hepatotoxicidad con dosis >500mg/día, hiperuricemia\n",
   "studies": [

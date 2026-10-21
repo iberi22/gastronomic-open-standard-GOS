@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Deditos de Queso
 region: Nacional
 language: es
@@ -25,6 +27,7 @@ tags:
 main_ingredients:
   - Queso
   - Masa de hojaldre
+main_ingredient_slugs: [queso, masa_hojaldre]
 sensory:
   flavor:
     - Lácteo

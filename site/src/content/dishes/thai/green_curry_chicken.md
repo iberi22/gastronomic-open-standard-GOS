@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gaeng Keow Wan (Curry Verde)
 region: Bangkok
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Berenjena thai
   - Hojas de lima kaffir
   - Albahaca
+main_ingredient_slugs: [pollo, null, leche_coco, null, null, null]
 sensory:
   flavor:
     - Salado

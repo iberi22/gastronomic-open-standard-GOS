@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Tom Yum Goong
 region: Central Thailand
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Hojas de lima kaffir
   - Chile thai
   - Zumo de lima
+main_ingredient_slugs: [camaron, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

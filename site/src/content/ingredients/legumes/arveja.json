@@ -1,0 +1,23 @@
+{
+  "name": "Arveja",
+  "group": "Legume",
+  "i18n": {
+    "es": {
+      "common_name": "Arveja",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "青豆"
+    ],
+    "es": [
+      "arveja amarilla pelada",
+      "arveja verde",
+      "arvejas",
+      "arveja amarilla"
+    ]
+  },
+  "body_md": "# Arveja"
+}

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Torta de Calabaza (Pumpkin Cake)
 region: Colombia
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Mantequilla
   - Azúcar
   - Canela
+main_ingredient_slugs: [ahuyama, harina_trigo, huevo, mantequilla, azucar, canela]
 prep_time: 30
 cook_time: 1
 servings: 10

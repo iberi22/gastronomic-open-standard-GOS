@@ -1,4 +1,7 @@
 ---
+allergens:
+- mustard
+- unknown
 title: Aloo Bhorta
 region: Barisal
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Cebolla roja picada
   - Chiles rojos secos fritos
   - Cilantro fresco
+main_ingredient_slugs: [null, null, cebolla_cabezona, null, cilantro]
 sensory:
   flavor:
     - Salado

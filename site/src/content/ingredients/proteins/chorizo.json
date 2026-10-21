@@ -1,0 +1,21 @@
+{
+  "name": "Chorizo",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Chorizo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "es": [
+      "longaniza",
+      "chorizo llanero",
+      "chorizos",
+      "chorizos santandereanos",
+      "onganiza boyacense"
+    ]
+  },
+  "body_md": "# Chorizo"
+}

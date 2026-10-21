@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Douchi Zheng Paigu (Steamed Pork Ribs with Fermented Black Beans)
 region: China
 language: zh
@@ -23,6 +27,7 @@ main_ingredients:
   - 蒜蓉 (Garlic)
   - 极级生抽 (Soy Sauce)
   - 玉米淀粉 (Cornstarch)
+main_ingredient_slugs: [cerdo, null, null, null, null]
 sensory:
   flavor:
     - savory

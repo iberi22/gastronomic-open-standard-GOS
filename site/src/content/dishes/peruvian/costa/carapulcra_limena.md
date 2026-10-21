@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Carapulcra Limeña
 region: Costa/Sierra
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Maní tostado molido
   - Canela y clavo de olor
   - Cerveza negra o Oporto
+main_ingredient_slugs: [null, cerdo, null, mani, null, cerveza]
 sensory:
   flavor:
     - Umami Profundo (Pork and poultry)

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Porchetta di Ariccia
 region: Lazio (Ariccia)
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Semillas de hinojo silvestre
   - Pimienta negra molida
   - Sal marina
+main_ingredient_slugs: [null, null, null, null, pimienta_negra, sal]
 sensory:
   flavor:
     - Salado especiado potente

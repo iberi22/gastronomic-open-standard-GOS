@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Souvlaki de Cerdo con Pita
 region: Atenas
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Aceite de oliva
   - Zumo de limón
   - Pan pita
+main_ingredient_slugs: [null, oregano, null, limon, null]
 sensory:
   flavor:
     - Salado

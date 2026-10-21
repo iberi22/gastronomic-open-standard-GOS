@@ -3,6 +3,9 @@ aliases:
   en:
   - Arepa with Egg
   - Egg Arepa
+allergens:
+- eggs
+- unknown
 categories:
 - Fritura
 - Desayuno
@@ -23,6 +26,7 @@ main_ingredients:
 - Carne molida (opcional)
 - Aceite vegetal (fritura profunda)
 - Sal
+main_ingredient_slugs: [null, huevo, carne_res, aceite, sal]
 nutrition:
   calories: 350
   macros:

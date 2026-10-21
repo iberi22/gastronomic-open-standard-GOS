@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Escondidinho de Carne de Sol
 region: Nordeste / Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Queijo coalho ou catupiry
   - Manteiga de garrafa
   - Cebola roxa
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

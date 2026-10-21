@@ -1,0 +1,1841 @@
+# slug -> USDA FDC id. Human-reviewed; confidence high|medium|none. Only high/medium are imported.
+datasets:
+  sr_legacy:
+    release: 2018-04
+    url: https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip
+  foundation:
+    release: '2025-04-24'
+    url: https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2025-04-24.zip
+licence: CC0-1.0
+retrieved: '2026-10-21'
+ingredients:
+  abiyuch_raw:
+    fdc_id: 167782
+    confidence: high
+    name: Abiyuch, raw
+    group: Fruit
+  aceite:
+    fdc_id: null
+    confidence: none
+    note: oil type unspecified
+  aceite_ajonjoli:
+    fdc_id: 171016
+    confidence: high
+  acerola_juice_raw:
+    fdc_id: 171687
+    confidence: high
+    name: Acerola juice, raw
+    group: Fruit
+  acerola_west_indian_cherry_raw:
+    fdc_id: 171686
+    confidence: high
+    name: Acerola, (west indian cherry), raw
+    group: Fruit
+  aguacate:
+    fdc_id: 171706
+    confidence: high
+  ajo:
+    fdc_id: 169230
+    confidence: high
+  alfalfa_seeds_sprouted_raw:
+    fdc_id: 168384
+    confidence: high
+    name: Alfalfa seeds, sprouted, raw
+    group: Vegetable
+  almidon_yuca:
+    fdc_id: null
+    confidence: none
+    note: no FDC match
+  amaranth_leaves_raw:
+    fdc_id: 168385
+    confidence: high
+    name: Amaranth leaves, raw
+    group: Vegetable
+  apricots_raw:
+    fdc_id: 171697
+    confidence: high
+    name: Apricots, raw
+    group: Fruit
+  arrowhead_raw:
+    fdc_id: 169203
+    confidence: high
+    name: Arrowhead, raw
+    group: Vegetable
+  arrowroot_raw:
+    fdc_id: 168490
+    confidence: high
+    name: Arrowroot, raw
+    group: Vegetable
+  arroz:
+    fdc_id: 169756
+    confidence: high
+  artichokes_globe_or_french_raw:
+    fdc_id: 169205
+    confidence: high
+    name: Artichokes, (globe or french), raw
+    group: Vegetable
+  arugula_raw:
+    fdc_id: 169387
+    confidence: high
+    name: Arugula, raw
+    group: Vegetable
+  asparagus_raw:
+    fdc_id: 168389
+    confidence: high
+    name: Asparagus, raw
+    group: Vegetable
+  balsam_pear_bitter_gourd_leafy_tips_raw:
+    fdc_id: 168391
+    confidence: high
+    name: Balsam-pear (bitter gourd), leafy tips, raw
+    group: Vegetable
+  balsam_pear_bitter_gourd_pods_raw:
+    fdc_id: 168393
+    confidence: high
+    name: Balsam-pear (bitter gourd), pods, raw
+    group: Vegetable
+  bamboo_shoots_raw:
+    fdc_id: 169210
+    confidence: high
+    name: Bamboo shoots, raw
+    group: Vegetable
+  bananas_raw:
+    fdc_id: 173944
+    confidence: high
+    name: Bananas, raw
+    group: Fruit
+  barley_pearled_raw:
+    fdc_id: 170284
+    confidence: high
+    name: Barley, pearled, raw
+    group: Grain
+  beet_greens_raw:
+    fdc_id: 170375
+    confidence: high
+    name: Beet greens, raw
+    group: Vegetable
+  beets_raw:
+    fdc_id: 169145
+    confidence: high
+    name: Beets, raw
+    group: Vegetable
+  blackberries_raw:
+    fdc_id: 173946
+    confidence: high
+    name: Blackberries, raw
+    group: Fruit
+  blueberries_raw:
+    fdc_id: 171711
+    confidence: high
+    name: Blueberries, raw
+    group: Fruit
+  borage_raw:
+    fdc_id: 170481
+    confidence: high
+    name: Borage, raw
+    group: Vegetable
+  breadfruit_raw:
+    fdc_id: 171714
+    confidence: high
+    name: Breadfruit, raw
+    group: Fruit
+  broadbeans_fava_beans_mature_seeds_raw:
+    fdc_id: 175205
+    confidence: high
+    name: Broadbeans (fava beans), mature seeds, raw
+    group: Legume
+  broadbeans_immature_seeds_raw:
+    fdc_id: 170377
+    confidence: high
+    name: Broadbeans, immature seeds, raw
+    group: Vegetable
+  broccoli_chinese_raw:
+    fdc_id: 169404
+    confidence: high
+    name: Broccoli, chinese, raw
+    group: Vegetable
+  broccoli_flower_clusters_raw:
+    fdc_id: 169330
+    confidence: high
+    name: Broccoli, flower clusters, raw
+    group: Vegetable
+  broccoli_leaves_raw:
+    fdc_id: 169329
+    confidence: high
+    name: Broccoli, leaves, raw
+    group: Vegetable
+  broccoli_raab_raw:
+    fdc_id: 170381
+    confidence: high
+    name: Broccoli raab, raw
+    group: Vegetable
+  broccoli_raw:
+    fdc_id: 170379
+    confidence: high
+    name: Broccoli, raw
+    group: Vegetable
+  broccoli_stalks_raw:
+    fdc_id: 169331
+    confidence: high
+    name: Broccoli, stalks, raw
+    group: Vegetable
+  brussels_sprouts_raw:
+    fdc_id: 170383
+    confidence: high
+    name: Brussels sprouts, raw
+    group: Vegetable
+  burdock_root_raw:
+    fdc_id: 169974
+    confidence: high
+    name: Burdock root, raw
+    group: Vegetable
+  butterbur_fuki_raw:
+    fdc_id: 170385
+    confidence: high
+    name: Butterbur, (fuki), raw
+    group: Vegetable
+  cabbage_chinese_pak_choi_raw:
+    fdc_id: 170390
+    confidence: high
+    name: Cabbage, chinese (pak-choi), raw
+    group: Vegetable
+  cabbage_chinese_pe_tsai_raw:
+    fdc_id: 169979
+    confidence: high
+    name: Cabbage, chinese (pe-tsai), raw
+    group: Vegetable
+  cabbage_raw:
+    fdc_id: 169975
+    confidence: high
+    name: Cabbage, raw
+    group: Vegetable
+  cabbage_red_raw:
+    fdc_id: 169977
+    confidence: high
+    name: Cabbage, red, raw
+    group: Vegetable
+  cabbage_savoy_raw:
+    fdc_id: 170388
+    confidence: high
+    name: Cabbage, savoy, raw
+    group: Vegetable
+  carambola_starfruit_raw:
+    fdc_id: 171715
+    confidence: high
+    name: Carambola, (starfruit), raw
+    group: Fruit
+  cardoon_raw:
+    fdc_id: 169981
+    confidence: high
+    name: Cardoon, raw
+    group: Vegetable
+  carissa_natal_plum_raw:
+    fdc_id: 173952
+    confidence: high
+    name: Carissa, (natal-plum), raw
+    group: Fruit
+  carne_res:
+    fdc_id: null
+    confidence: none
+    note: cut unspecified
+  carrots_baby_raw:
+    fdc_id: 168568
+    confidence: high
+    name: Carrots, baby, raw
+    group: Vegetable
+  carrots_raw:
+    fdc_id: 170393
+    confidence: high
+    name: Carrots, raw
+    group: Vegetable
+  cassava_raw:
+    fdc_id: 169985
+    confidence: high
+    name: Cassava, raw
+    group: Vegetable
+  cauliflower_green_raw:
+    fdc_id: 169389
+    confidence: high
+    name: Cauliflower, green, raw
+    group: Vegetable
+  cauliflower_raw:
+    fdc_id: 169986
+    confidence: high
+    name: Cauliflower, raw
+    group: Vegetable
+  cebolla_cabezona:
+    fdc_id: 170000
+    confidence: high
+  cebolla_larga:
+    fdc_id: 170005
+    confidence: high
+  celeriac_raw:
+    fdc_id: 170400
+    confidence: high
+    name: Celeriac, raw
+    group: Vegetable
+  celery_raw:
+    fdc_id: 169988
+    confidence: high
+    name: Celery, raw
+    group: Vegetable
+  celtuce_raw:
+    fdc_id: 169990
+    confidence: high
+    name: Celtuce, raw
+    group: Vegetable
+  cerdo:
+    fdc_id: null
+    confidence: none
+    note: cut unspecified
+  chard_swiss_raw:
+    fdc_id: 169991
+    confidence: high
+    name: Chard, swiss, raw
+    group: Vegetable
+  chayote_fruit_raw:
+    fdc_id: 170402
+    confidence: high
+    name: Chayote, fruit, raw
+    group: Vegetable
+  cherimoya_raw:
+    fdc_id: 173953
+    confidence: high
+    name: Cherimoya, raw
+    group: Fruit
+  cherries_sweet_raw:
+    fdc_id: 171719
+    confidence: high
+    name: Cherries, sweet, raw
+    group: Fruit
+  chicken_ground_raw:
+    fdc_id: 171116
+    confidence: high
+    name: Chicken, ground, raw
+    group: Protein
+  chicken_skin_drumsticks_and_thighs_raw:
+    fdc_id: 172855
+    confidence: high
+    name: Chicken, skin (drumsticks and thighs), raw
+    group: Protein
+  chicory_greens_raw:
+    fdc_id: 169992
+    confidence: high
+    name: Chicory greens, raw
+    group: Vegetable
+  chicory_roots_raw:
+    fdc_id: 169993
+    confidence: high
+    name: Chicory roots, raw
+    group: Vegetable
+  chicory_witloof_raw:
+    fdc_id: 170404
+    confidence: high
+    name: Chicory, witloof, raw
+    group: Vegetable
+  chives_raw:
+    fdc_id: 169994
+    confidence: high
+    name: Chives, raw
+    group: Vegetable
+  chrysanthemum_garland_raw:
+    fdc_id: 169995
+    confidence: high
+    name: Chrysanthemum, garland, raw
+    group: Vegetable
+  chrysanthemum_leaves_raw:
+    fdc_id: 168491
+    confidence: high
+    name: Chrysanthemum leaves, raw
+    group: Vegetable
+  cilantro:
+    fdc_id: 169997
+    confidence: high
+  clementines_raw:
+    fdc_id: 168195
+    confidence: high
+    name: Clementines, raw
+    group: Fruit
+  collards_raw:
+    fdc_id: 170406
+    confidence: high
+    name: Collards, raw
+    group: Vegetable
+  comino:
+    fdc_id: 170923
+    confidence: high
+  coriander_cilantro_leaves_raw:
+    fdc_id: 169997
+    confidence: high
+    name: Coriander (cilantro) leaves, raw
+    group: Vegetable
+  cornsalad_raw:
+    fdc_id: 169219
+    confidence: high
+    name: Cornsalad, raw
+    group: Vegetable
+  cowpeas_blackeyes_immature_seeds_raw:
+    fdc_id: 169220
+    confidence: high
+    name: Cowpeas (blackeyes), immature seeds, raw
+    group: Vegetable
+  cowpeas_leafy_tips_raw:
+    fdc_id: 169224
+    confidence: high
+    name: Cowpeas, leafy tips, raw
+    group: Vegetable
+  cowpeas_young_pods_with_seeds_raw:
+    fdc_id: 168405
+    confidence: high
+    name: Cowpeas, young pods with seeds, raw
+    group: Vegetable
+  crabapples_raw:
+    fdc_id: 171721
+    confidence: high
+    name: Crabapples, raw
+    group: Fruit
+  cranberries_raw:
+    fdc_id: 171722
+    confidence: high
+    name: Cranberries, raw
+    group: Fruit
+  crema_leche:
+    fdc_id: null
+    confidence: none
+    note: fat % unspecified
+  cress_garden_raw:
+    fdc_id: 168407
+    confidence: high
+    name: Cress, garden, raw
+    group: Vegetable
+  crustaceans_shrimp_raw:
+    fdc_id: 175179
+    confidence: high
+    name: Crustaceans, shrimp, raw
+    group: Protein
+  cucumber_peeled_raw:
+    fdc_id: 169225
+    confidence: high
+    name: Cucumber, peeled, raw
+    group: Vegetable
+  cucumber_with_peel_raw:
+    fdc_id: 168409
+    confidence: high
+    name: Cucumber, with peel, raw
+    group: Vegetable
+  currants_european_black_raw:
+    fdc_id: 173963
+    confidence: high
+    name: Currants, european black, raw
+    group: Fruit
+  currants_red_and_white_raw:
+    fdc_id: 173964
+    confidence: high
+    name: Currants, red and white, raw
+    group: Fruit
+  custard_apple_bullock_s_heart_raw:
+    fdc_id: 171725
+    confidence: high
+    name: Custard-apple, (bullock's-heart), raw
+    group: Fruit
+  dandelion_greens_raw:
+    fdc_id: 169226
+    confidence: high
+    name: Dandelion greens, raw
+    group: Vegetable
+  dock_raw:
+    fdc_id: 170076
+    confidence: high
+    name: Dock, raw
+    group: Vegetable
+  drumstick_leaves_raw:
+    fdc_id: 168416
+    confidence: high
+    name: Drumstick leaves, raw
+    group: Vegetable
+  drumstick_pods_raw:
+    fdc_id: 170483
+    confidence: high
+    name: Drumstick pods, raw
+    group: Vegetable
+  eggplant_raw:
+    fdc_id: 169228
+    confidence: high
+    name: Eggplant, raw
+    group: Vegetable
+  elderberries_raw:
+    fdc_id: 171727
+    confidence: high
+    name: Elderberries, raw
+    group: Fruit
+  emu_fan_fillet_raw:
+    fdc_id: 174476
+    confidence: high
+    name: Emu, fan fillet, raw
+    group: Protein
+  emu_flat_fillet_raw:
+    fdc_id: 174478
+    confidence: high
+    name: Emu, flat fillet, raw
+    group: Protein
+  emu_full_rump_raw:
+    fdc_id: 174479
+    confidence: high
+    name: Emu, full rump, raw
+    group: Protein
+  emu_ground_raw:
+    fdc_id: 172832
+    confidence: high
+    name: Emu, ground, raw
+    group: Protein
+  emu_inside_drum_raw:
+    fdc_id: 172835
+    confidence: high
+    name: Emu, inside drum, raw
+    group: Protein
+  emu_outside_drum_raw:
+    fdc_id: 172837
+    confidence: high
+    name: Emu, outside drum, raw
+    group: Protein
+  emu_oyster_raw:
+    fdc_id: 172838
+    confidence: high
+    name: Emu, oyster, raw
+    group: Protein
+  endive_raw:
+    fdc_id: 168412
+    confidence: high
+    name: Endive, raw
+    group: Vegetable
+  epazote_raw:
+    fdc_id: 169398
+    confidence: high
+    name: Epazote, raw
+    group: Vegetable
+  eppaw_raw:
+    fdc_id: 170078
+    confidence: high
+    name: Eppaw, raw
+    group: Vegetable
+  feijoa_raw:
+    fdc_id: 168176
+    confidence: high
+    name: Feijoa, raw
+    group: Fruit
+  fennel_bulb_raw:
+    fdc_id: 169385
+    confidence: high
+    name: Fennel, bulb, raw
+    group: Vegetable
+  fiddlehead_ferns_raw:
+    fdc_id: 169405
+    confidence: high
+    name: Fiddlehead ferns, raw
+    group: Vegetable
+  figs_raw:
+    fdc_id: 173021
+    confidence: high
+    name: Figs, raw
+    group: Fruit
+  fireweed_leaves_raw:
+    fdc_id: 169399
+    confidence: high
+    name: Fireweed, leaves, raw
+    group: Vegetable
+  fish_bluefish_raw:
+    fdc_id: 171949
+    confidence: high
+    name: Fish, bluefish, raw
+    group: Protein
+  fish_burbot_raw:
+    fdc_id: 171950
+    confidence: high
+    name: Fish, burbot, raw
+    group: Protein
+  fish_butterfish_raw:
+    fdc_id: 171951
+    confidence: high
+    name: Fish, butterfish, raw
+    group: Protein
+  fish_carp_raw:
+    fdc_id: 171952
+    confidence: high
+    name: Fish, carp, raw
+    group: Protein
+  fish_cisco_raw:
+    fdc_id: 171953
+    confidence: high
+    name: Fish, cisco, raw
+    group: Protein
+  fish_cusk_raw:
+    fdc_id: 171958
+    confidence: high
+    name: Fish, cusk, raw
+    group: Protein
+  fish_flatfish_flounder_and_sole_species_raw:
+    fdc_id: 174196
+    confidence: high
+    name: Fish, flatfish (flounder and sole species), raw
+    group: Protein
+  fish_haddock_raw:
+    fdc_id: 171964
+    confidence: high
+    name: Fish, haddock, raw
+    group: Protein
+  fish_ling_raw:
+    fdc_id: 173670
+    confidence: high
+    name: Fish, ling, raw
+    group: Protein
+  fish_lingcod_raw:
+    fdc_id: 173671
+    confidence: high
+    name: Fish, lingcod, raw
+    group: Protein
+  fish_mahimahi_raw:
+    fdc_id: 171959
+    confidence: high
+    name: Fish, mahimahi, raw
+    group: Protein
+  fish_milkfish_raw:
+    fdc_id: 173675
+    confidence: high
+    name: Fish, milkfish, raw
+    group: Protein
+  fish_monkfish_raw:
+    fdc_id: 173676
+    confidence: high
+    name: Fish, monkfish, raw
+    group: Protein
+  fish_sablefish_raw:
+    fdc_id: 175134
+    confidence: high
+    name: Fish, sablefish, raw
+    group: Protein
+  fish_scup_raw:
+    fdc_id: 175141
+    confidence: high
+    name: Fish, scup, raw
+    group: Protein
+  fish_sheepshead_raw:
+    fdc_id: 175144
+    confidence: high
+    name: Fish, sheepshead, raw
+    group: Protein
+  fish_spot_raw:
+    fdc_id: 173700
+    confidence: high
+    name: Fish, spot, raw
+    group: Protein
+  fish_swordfish_raw:
+    fdc_id: 173703
+    confidence: high
+    name: Fish, swordfish, raw
+    group: Protein
+  fish_tilapia_raw:
+    fdc_id: 175176
+    confidence: high
+    name: Fish, tilapia, raw
+    group: Protein
+  fish_tilefish_raw:
+    fdc_id: 173705
+    confidence: high
+    name: Fish, tilefish, raw
+    group: Protein
+  frijol:
+    fdc_id: null
+    confidence: none
+    note: variety unspecified
+  frog_legs_raw:
+    fdc_id: 168148
+    confidence: high
+    name: Frog legs, raw
+    group: Protein
+  game_meat_antelope_raw:
+    fdc_id: 175292
+    confidence: high
+    name: Game meat, antelope, raw
+    group: Protein
+  game_meat_bear_raw:
+    fdc_id: 173845
+    confidence: high
+    name: Game meat, bear, raw
+    group: Protein
+  game_meat_beaver_raw:
+    fdc_id: 175294
+    confidence: high
+    name: Game meat, beaver, raw
+    group: Protein
+  game_meat_caribou_raw:
+    fdc_id: 173853
+    confidence: high
+    name: Game meat, caribou, raw
+    group: Protein
+  game_meat_deer_raw:
+    fdc_id: 173855
+    confidence: high
+    name: Game meat, deer, raw
+    group: Protein
+  game_meat_elk_raw:
+    fdc_id: 175301
+    confidence: high
+    name: Game meat, elk, raw
+    group: Protein
+  game_meat_goat_raw:
+    fdc_id: 175303
+    confidence: high
+    name: Game meat, goat, raw
+    group: Protein
+  game_meat_horse_raw:
+    fdc_id: 175086
+    confidence: high
+    name: Game meat, horse, raw
+    group: Protein
+  game_meat_moose_raw:
+    fdc_id: 174344
+    confidence: high
+    name: Game meat, moose, raw
+    group: Protein
+  game_meat_muskrat_raw:
+    fdc_id: 172518
+    confidence: high
+    name: Game meat, muskrat, raw
+    group: Protein
+  game_meat_squirrel_raw:
+    fdc_id: 172523
+    confidence: high
+    name: Game meat, squirrel, raw
+    group: Protein
+  garlic_raw:
+    fdc_id: 169230
+    confidence: high
+    name: Garlic, raw
+    group: Vegetable
+  ginger_root_raw:
+    fdc_id: 169231
+    confidence: high
+    name: Ginger root, raw
+    group: Vegetable
+  goose_liver_raw:
+    fdc_id: 172415
+    confidence: high
+    name: Goose, liver, raw
+    group: Protein
+  gooseberries_raw:
+    fdc_id: 173030
+    confidence: high
+    name: Gooseberries, raw
+    group: Fruit
+  gourd_dishcloth_towelgourd_raw:
+    fdc_id: 168414
+    confidence: high
+    name: Gourd, dishcloth (towelgourd), raw
+    group: Vegetable
+  gourd_white_flowered_calabash_raw:
+    fdc_id: 169232
+    confidence: high
+    name: Gourd, white-flowered (calabash), raw
+    group: Vegetable
+  grape_leaves_raw:
+    fdc_id: 168575
+    confidence: high
+    name: Grape leaves, raw
+    group: Vegetable
+  grapefruit_juice_pink_raw:
+    fdc_id: 167774
+    confidence: high
+    name: Grapefruit juice, pink, raw
+    group: Fruit
+  grapefruit_juice_white_raw:
+    fdc_id: 173039
+    confidence: high
+    name: Grapefruit juice, white, raw
+    group: Fruit
+  grapes_american_type_slip_skin_raw:
+    fdc_id: 174682
+    confidence: high
+    name: Grapes, american type (slip skin), raw
+    group: Fruit
+  grapes_muscadine_raw:
+    fdc_id: 173040
+    confidence: high
+    name: Grapes, muscadine, raw
+    group: Fruit
+  groundcherries_cape_gooseberries_or_poha_raw:
+    fdc_id: 173043
+    confidence: high
+    name: Groundcherries, (cape-gooseberries or poha), raw
+    group: Fruit
+  guavas_common_raw:
+    fdc_id: 173044
+    confidence: high
+    name: Guavas, common, raw
+    group: Fruit
+  guavas_strawberry_raw:
+    fdc_id: 173045
+    confidence: high
+    name: Guavas, strawberry, raw
+    group: Fruit
+  guinea_hen_meat_and_skin_raw:
+    fdc_id: 172416
+    confidence: high
+    name: Guinea hen, meat and skin, raw
+    group: Protein
+  guinea_hen_meat_only_raw:
+    fdc_id: 174471
+    confidence: high
+    name: Guinea hen, meat only, raw
+    group: Protein
+  harina_trigo:
+    fdc_id: 168894
+    confidence: high
+  hearts_of_palm_raw:
+    fdc_id: 167714
+    confidence: high
+    name: Hearts of palm, raw
+    group: Vegetable
+  huevo:
+    fdc_id: 171287
+    confidence: high
+  hyacinth_beans_immature_seeds_raw:
+    fdc_id: 169234
+    confidence: high
+    name: Hyacinth-beans, immature seeds, raw
+    group: Vegetable
+  hyacinth_beans_mature_seeds_raw:
+    fdc_id: 175210
+    confidence: high
+    name: Hyacinth beans, mature seeds, raw
+    group: Legume
+  jackfruit_raw:
+    fdc_id: 174687
+    confidence: high
+    name: Jackfruit, raw
+    group: Fruit
+  java_plum_jambolan_raw:
+    fdc_id: 168150
+    confidence: high
+    name: Java-plum, (jambolan), raw
+    group: Fruit
+  jengibre:
+    fdc_id: 169231
+    confidence: high
+  jerusalem_artichokes_raw:
+    fdc_id: 169236
+    confidence: high
+    name: Jerusalem-artichokes, raw
+    group: Vegetable
+  jew_s_ear_pepeao_raw:
+    fdc_id: 169237
+    confidence: high
+    name: Jew's ear, (pepeao), raw
+    group: Vegetable
+  jujube_raw:
+    fdc_id: 168151
+    confidence: high
+    name: Jujube, raw
+    group: Fruit
+  jute_potherb_raw:
+    fdc_id: 168419
+    confidence: high
+    name: Jute, potherb, raw
+    group: Vegetable
+  kale_raw:
+    fdc_id: 168421
+    confidence: high
+    name: Kale, raw
+    group: Vegetable
+  kiwifruit_green_raw:
+    fdc_id: 168153
+    confidence: high
+    name: Kiwifruit, green, raw
+    group: Fruit
+  kiwifruit_zespri_sungold_raw:
+    fdc_id: 168211
+    confidence: high
+    name: Kiwifruit, ZESPRI SunGold, raw
+    group: Fruit
+  kohlrabi_raw:
+    fdc_id: 168424
+    confidence: high
+    name: Kohlrabi, raw
+    group: Vegetable
+  kumquats_raw:
+    fdc_id: 168154
+    confidence: high
+    name: Kumquats, raw
+    group: Fruit
+  lamb_ground_raw:
+    fdc_id: 174370
+    confidence: high
+    name: Lamb, ground, raw
+    group: Protein
+  lambsquarters_raw:
+    fdc_id: 169244
+    confidence: high
+    name: Lambsquarters, raw
+    group: Vegetable
+  leche:
+    fdc_id: 171265
+    confidence: high
+  leeks_bulb_and_lower_leaf_portion_raw:
+    fdc_id: 169246
+    confidence: high
+    name: Leeks, (bulb and lower leaf-portion), raw
+    group: Vegetable
+  lemon_grass_citronella_raw:
+    fdc_id: 168573
+    confidence: high
+    name: Lemon grass (citronella), raw
+    group: Vegetable
+  lemon_juice_raw:
+    fdc_id: 167747
+    confidence: high
+    name: Lemon juice, raw
+    group: Fruit
+  lemon_peel_raw:
+    fdc_id: 167749
+    confidence: high
+    name: Lemon peel, raw
+    group: Fruit
+  lentejas:
+    fdc_id: 172420
+    confidence: high
+  lentils_pink_or_red_raw:
+    fdc_id: 174284
+    confidence: high
+    name: Lentils, pink or red, raw
+    group: Legume
+  lentils_raw:
+    fdc_id: 172420
+    confidence: high
+    name: Lentils, raw
+    group: Legume
+  lentils_sprouted_raw:
+    fdc_id: 168427
+    confidence: high
+    name: Lentils, sprouted, raw
+    group: Vegetable
+  lettuce_butterhead_includes_boston_and_bibb_types_raw:
+    fdc_id: 168429
+    confidence: high
+    name: Lettuce, butterhead (includes boston and bibb types), raw
+    group: Vegetable
+  lettuce_cos_or_romaine_raw:
+    fdc_id: 169247
+    confidence: high
+    name: Lettuce, cos or romaine, raw
+    group: Vegetable
+  lettuce_green_leaf_raw:
+    fdc_id: 169249
+    confidence: high
+    name: Lettuce, green leaf, raw
+    group: Vegetable
+  lettuce_iceberg_includes_crisphead_types_raw:
+    fdc_id: 169248
+    confidence: high
+    name: Lettuce, iceberg (includes crisphead types), raw
+    group: Vegetable
+  lettuce_red_leaf_raw:
+    fdc_id: 168431
+    confidence: high
+    name: Lettuce, red leaf, raw
+    group: Vegetable
+  lima_beans_immature_seeds_raw:
+    fdc_id: 168396
+    confidence: high
+    name: Lima beans, immature seeds, raw
+    group: Vegetable
+  lime_juice_raw:
+    fdc_id: 168156
+    confidence: high
+    name: Lime juice, raw
+    group: Fruit
+  limes_raw:
+    fdc_id: 168155
+    confidence: high
+    name: Limes, raw
+    group: Fruit
+  limon:
+    fdc_id: 167746
+    confidence: high
+  litchis_raw:
+    fdc_id: 169086
+    confidence: high
+    name: Litchis, raw
+    group: Fruit
+  longans_raw:
+    fdc_id: 169089
+    confidence: high
+    name: Longans, raw
+    group: Fruit
+  loquats_raw:
+    fdc_id: 169908
+    confidence: high
+    name: Loquats, raw
+    group: Fruit
+  lotus_root_raw:
+    fdc_id: 169250
+    confidence: high
+    name: Lotus root, raw
+    group: Vegetable
+  lupins_mature_seeds_raw:
+    fdc_id: 172423
+    confidence: high
+    name: Lupins, mature seeds, raw
+    group: Legume
+  maiz:
+    fdc_id: 169998
+    confidence: high
+  mammy_apple_mamey_raw:
+    fdc_id: 169909
+    confidence: high
+    name: Mammy-apple, (mamey), raw
+    group: Fruit
+  mangos_raw:
+    fdc_id: 169910
+    confidence: high
+    name: Mangos, raw
+    group: Fruit
+  mantequilla:
+    fdc_id: 173410
+    confidence: high
+  melons_cantaloupe_raw:
+    fdc_id: 169092
+    confidence: high
+    name: Melons, cantaloupe, raw
+    group: Fruit
+  melons_casaba_raw:
+    fdc_id: 169093
+    confidence: high
+    name: Melons, casaba, raw
+    group: Fruit
+  melons_honeydew_raw:
+    fdc_id: 169911
+    confidence: high
+    name: Melons, honeydew, raw
+    group: Fruit
+  millet_raw:
+    fdc_id: 169702
+    confidence: high
+    name: Millet, raw
+    group: Grain
+  mollusks_snail_raw:
+    fdc_id: 167744
+    confidence: high
+    name: Mollusks, snail, raw
+    group: Protein
+  mothbeans_mature_seeds_raw:
+    fdc_id: 172425
+    confidence: high
+    name: Mothbeans, mature seeds, raw
+    group: Legume
+  mountain_yam_hawaii_raw:
+    fdc_id: 168432
+    confidence: high
+    name: Mountain yam, hawaii, raw
+    group: Vegetable
+  mulberries_raw:
+    fdc_id: 169913
+    confidence: high
+    name: Mulberries, raw
+    group: Fruit
+  mung_beans_mature_seeds_raw:
+    fdc_id: 174256
+    confidence: high
+    name: Mung beans, mature seeds, raw
+    group: Legume
+  mungo_beans_mature_seeds_raw:
+    fdc_id: 174259
+    confidence: high
+    name: Mungo beans, mature seeds, raw
+    group: Legume
+  mushrooms_chanterelle_raw:
+    fdc_id: 168422
+    confidence: high
+    name: Mushrooms, Chanterelle, raw
+    group: Vegetable
+  mushrooms_enoki_raw:
+    fdc_id: 169382
+    confidence: high
+    name: Mushrooms, enoki, raw
+    group: Vegetable
+  mushrooms_maitake_raw:
+    fdc_id: 169403
+    confidence: high
+    name: Mushrooms, maitake, raw
+    group: Vegetable
+  mushrooms_morel_raw:
+    fdc_id: 168423
+    confidence: high
+    name: Mushrooms, morel, raw
+    group: Vegetable
+  mushrooms_oyster_raw:
+    fdc_id: 168580
+    confidence: high
+    name: Mushrooms, oyster, raw
+    group: Vegetable
+  mushrooms_portabella_raw:
+    fdc_id: 169255
+    confidence: high
+    name: Mushrooms, portabella, raw
+    group: Vegetable
+  mushrooms_shiitake_raw:
+    fdc_id: 169242
+    confidence: high
+    name: Mushrooms, shiitake, raw
+    group: Vegetable
+  mushrooms_white_raw:
+    fdc_id: 169251
+    confidence: high
+    name: Mushrooms, white, raw
+    group: Vegetable
+  mustard_greens_raw:
+    fdc_id: 169256
+    confidence: high
+    name: Mustard greens, raw
+    group: Vegetable
+  mustard_spinach_tendergreen_raw:
+    fdc_id: 168438
+    confidence: high
+    name: Mustard spinach, (tendergreen), raw
+    group: Vegetable
+  nectarines_raw:
+    fdc_id: 169914
+    confidence: high
+    name: Nectarines, raw
+    group: Fruit
+  new_zealand_spinach_raw:
+    fdc_id: 168440
+    confidence: high
+    name: New Zealand spinach, raw
+    group: Vegetable
+  nopales_raw:
+    fdc_id: 168571
+    confidence: high
+    name: Nopales, raw
+    group: Vegetable
+  nuts_acorns_raw:
+    fdc_id: 170157
+    confidence: high
+    name: Nuts, acorns, raw
+    group: Nut
+  nuts_cashew_nuts_raw:
+    fdc_id: 170162
+    confidence: high
+    name: Nuts, cashew nuts, raw
+    group: Nut
+  nuts_coconut_meat_raw:
+    fdc_id: 170169
+    confidence: high
+    name: Nuts, coconut meat, raw
+    group: Nut
+  nuts_ginkgo_nuts_raw:
+    fdc_id: 170584
+    confidence: high
+    name: Nuts, ginkgo nuts, raw
+    group: Nut
+  nuts_macadamia_nuts_raw:
+    fdc_id: 170178
+    confidence: high
+    name: Nuts, macadamia nuts, raw
+    group: Nut
+  nuts_pistachio_nuts_raw:
+    fdc_id: 170184
+    confidence: high
+    name: Nuts, pistachio nuts, raw
+    group: Nut
+  oat_bran_raw:
+    fdc_id: 168872
+    confidence: high
+    name: Oat bran, raw
+    group: Grain
+  oheloberries_raw:
+    fdc_id: 169915
+    confidence: high
+    name: Oheloberries, raw
+    group: Fruit
+  okra_raw:
+    fdc_id: 169260
+    confidence: high
+    name: Okra, raw
+    group: Vegetable
+  onions_raw:
+    fdc_id: 170000
+    confidence: high
+    name: Onions, raw
+    group: Vegetable
+  onions_spring_or_scallions_includes_tops_and_bulb_raw:
+    fdc_id: 170005
+    confidence: high
+    name: Onions, spring or scallions (includes tops and bulb), raw
+    group: Vegetable
+  onions_sweet_raw:
+    fdc_id: 170008
+    confidence: high
+    name: Onions, sweet, raw
+    group: Vegetable
+  onions_welsh_raw:
+    fdc_id: 170007
+    confidence: high
+    name: Onions, welsh, raw
+    group: Vegetable
+  orange_peel_raw:
+    fdc_id: 169103
+    confidence: high
+    name: Orange peel, raw
+    group: Fruit
+  ostrich_fan_raw:
+    fdc_id: 174483
+    confidence: high
+    name: Ostrich, fan, raw
+    group: Protein
+  ostrich_ground_raw:
+    fdc_id: 174481
+    confidence: high
+    name: Ostrich, ground, raw
+    group: Protein
+  ostrich_inside_leg_raw:
+    fdc_id: 172839
+    confidence: high
+    name: Ostrich, inside leg, raw
+    group: Protein
+  ostrich_inside_strip_raw:
+    fdc_id: 172841
+    confidence: high
+    name: Ostrich, inside strip, raw
+    group: Protein
+  ostrich_outside_leg_raw:
+    fdc_id: 174484
+    confidence: high
+    name: Ostrich, outside leg, raw
+    group: Protein
+  ostrich_outside_strip_raw:
+    fdc_id: 174485
+    confidence: high
+    name: Ostrich, outside strip, raw
+    group: Protein
+  ostrich_oyster_raw:
+    fdc_id: 174487
+    confidence: high
+    name: Ostrich, oyster, raw
+    group: Protein
+  ostrich_round_raw:
+    fdc_id: 172844
+    confidence: high
+    name: Ostrich, round, raw
+    group: Protein
+  ostrich_tenderloin_raw:
+    fdc_id: 172845
+    confidence: high
+    name: Ostrich, tenderloin, raw
+    group: Protein
+  ostrich_tip_trimmed_raw:
+    fdc_id: 172846
+    confidence: high
+    name: Ostrich, tip trimmed, raw
+    group: Protein
+  ostrich_top_loin_raw:
+    fdc_id: 174489
+    confidence: high
+    name: Ostrich, top loin, raw
+    group: Protein
+  panela:
+    fdc_id: null
+    confidence: none
+    note: no unambiguous FDC equivalent
+  papayas_raw:
+    fdc_id: 169926
+    confidence: high
+    name: Papayas, raw
+    group: Fruit
+  parsnips_raw:
+    fdc_id: 170417
+    confidence: high
+    name: Parsnips, raw
+    group: Vegetable
+  passion_fruit_juice_purple_raw:
+    fdc_id: 169109
+    confidence: high
+    name: Passion-fruit juice, purple, raw
+    group: Fruit
+  passion_fruit_juice_yellow_raw:
+    fdc_id: 169110
+    confidence: high
+    name: Passion-fruit juice, yellow, raw
+    group: Fruit
+  peaches_yellow_raw:
+    fdc_id: 169928
+    confidence: high
+    name: Peaches, yellow, raw
+    group: Fruit
+  peanuts_all_types_raw:
+    fdc_id: 172430
+    confidence: high
+    name: Peanuts, all types, raw
+    group: Legume
+  peanuts_spanish_raw:
+    fdc_id: 174263
+    confidence: high
+    name: Peanuts, spanish, raw
+    group: Legume
+  peanuts_valencia_raw:
+    fdc_id: 172432
+    confidence: high
+    name: Peanuts, valencia, raw
+    group: Legume
+  peanuts_virginia_raw:
+    fdc_id: 172434
+    confidence: high
+    name: Peanuts, virginia, raw
+    group: Legume
+  pears_asian_raw:
+    fdc_id: 168177
+    confidence: high
+    name: Pears, asian, raw
+    group: Fruit
+  pears_raw:
+    fdc_id: 169118
+    confidence: high
+    name: Pears, raw
+    group: Fruit
+  peas_edible_podded_raw:
+    fdc_id: 170010
+    confidence: high
+    name: Peas, edible-podded, raw
+    group: Vegetable
+  peas_green_raw:
+    fdc_id: 170419
+    confidence: high
+    name: Peas, green, raw
+    group: Vegetable
+  pepper_banana_raw:
+    fdc_id: 169394
+    confidence: high
+    name: Pepper, banana, raw
+    group: Vegetable
+  peppers_hungarian_raw:
+    fdc_id: 168578
+    confidence: high
+    name: Peppers, hungarian, raw
+    group: Vegetable
+  peppers_jalapeno_raw:
+    fdc_id: 168576
+    confidence: high
+    name: Peppers, jalapeno, raw
+    group: Vegetable
+  peppers_serrano_raw:
+    fdc_id: 169395
+    confidence: high
+    name: Peppers, serrano, raw
+    group: Vegetable
+  persimmons_japanese_raw:
+    fdc_id: 169941
+    confidence: high
+    name: Persimmons, japanese, raw
+    group: Fruit
+  persimmons_native_raw:
+    fdc_id: 169943
+    confidence: high
+    name: Persimmons, native, raw
+    group: Fruit
+  pescado:
+    fdc_id: null
+    confidence: none
+    note: species unspecified
+  pigeon_peas_red_gram_mature_seeds_raw:
+    fdc_id: 172436
+    confidence: high
+    name: Pigeon peas (red gram), mature seeds, raw
+    group: Legume
+  pigeonpeas_immature_seeds_raw:
+    fdc_id: 170025
+    confidence: high
+    name: Pigeonpeas, immature seeds, raw
+    group: Vegetable
+  pimenton_rojo:
+    fdc_id: 170108
+    confidence: high
+  pitanga_surinam_cherry_raw:
+    fdc_id: 169129
+    confidence: high
+    name: Pitanga, (surinam-cherry), raw
+    group: Fruit
+  plantains_green_raw:
+    fdc_id: 168215
+    confidence: high
+    name: Plantains, green, raw
+    group: Fruit
+  plantains_yellow_raw:
+    fdc_id: 169130
+    confidence: high
+    name: Plantains, yellow, raw
+    group: Fruit
+  platano_maduro:
+    fdc_id: 169130
+    confidence: high
+  platano_verde:
+    fdc_id: 168215
+    confidence: high
+  plums_raw:
+    fdc_id: 169949
+    confidence: high
+    name: Plums, raw
+    group: Fruit
+  pokeberry_shoots_poke_raw:
+    fdc_id: 170432
+    confidence: high
+    name: Pokeberry shoots, (poke), raw
+    group: Vegetable
+  pollo:
+    fdc_id: null
+    confidence: none
+    note: cut unspecified
+  pomegranates_raw:
+    fdc_id: 169134
+    confidence: high
+    name: Pomegranates, raw
+    group: Fruit
+  potatoes_flesh_and_skin_raw:
+    fdc_id: 170026
+    confidence: high
+    name: Potatoes, flesh and skin, raw
+    group: Vegetable
+  prickly_pears_raw:
+    fdc_id: 167750
+    confidence: high
+    name: Prickly pears, raw
+    group: Fruit
+  pummelo_raw:
+    fdc_id: 167754
+    confidence: high
+    name: Pummelo, raw
+    group: Fruit
+  pumpkin_flowers_raw:
+    fdc_id: 169270
+    confidence: high
+    name: Pumpkin flowers, raw
+    group: Vegetable
+  pumpkin_leaves_raw:
+    fdc_id: 169272
+    confidence: high
+    name: Pumpkin leaves, raw
+    group: Vegetable
+  pumpkin_raw:
+    fdc_id: 168448
+    confidence: high
+    name: Pumpkin, raw
+    group: Vegetable
+  purslane_raw:
+    fdc_id: 169274
+    confidence: high
+    name: Purslane, raw
+    group: Vegetable
+  quail_meat_and_skin_raw:
+    fdc_id: 172418
+    confidence: high
+    name: Quail, meat and skin, raw
+    group: Protein
+  quail_meat_only_raw:
+    fdc_id: 172419
+    confidence: high
+    name: Quail, meat only, raw
+    group: Protein
+  queso:
+    fdc_id: null
+    confidence: none
+    note: 'generic: many cheese types'
+  quinces_raw:
+    fdc_id: 168163
+    confidence: high
+    name: Quinces, raw
+    group: Fruit
+  radicchio_raw:
+    fdc_id: 168564
+    confidence: high
+    name: Radicchio, raw
+    group: Vegetable
+  radish_seeds_sprouted_raw:
+    fdc_id: 170095
+    confidence: high
+    name: Radish seeds, sprouted, raw
+    group: Vegetable
+  radishes_oriental_raw:
+    fdc_id: 168451
+    confidence: high
+    name: Radishes, oriental, raw
+    group: Vegetable
+  radishes_raw:
+    fdc_id: 169276
+    confidence: high
+    name: Radishes, raw
+    group: Vegetable
+  radishes_white_icicle_raw:
+    fdc_id: 170081
+    confidence: high
+    name: Radishes, white icicle, raw
+    group: Vegetable
+  raspberries_raw:
+    fdc_id: 167755
+    confidence: high
+    name: Raspberries, raw
+    group: Fruit
+  rhubarb_raw:
+    fdc_id: 167758
+    confidence: high
+    name: Rhubarb, raw
+    group: Fruit
+  rose_apples_raw:
+    fdc_id: 168171
+    confidence: high
+    name: Rose-apples, raw
+    group: Fruit
+  roselle_raw:
+    fdc_id: 168170
+    confidence: high
+    name: Roselle, raw
+    group: Fruit
+  rowal_raw:
+    fdc_id: 167783
+    confidence: high
+    name: Rowal, raw
+    group: Fruit
+  rutabagas_raw:
+    fdc_id: 168454
+    confidence: high
+    name: Rutabagas, raw
+    group: Vegetable
+  sal:
+    fdc_id: 173468
+    confidence: high
+  salsa_soya:
+    fdc_id: 174277
+    confidence: high
+  salsify_vegetable_oyster_raw:
+    fdc_id: 169277
+    confidence: high
+    name: Salsify, (vegetable oyster), raw
+    group: Vegetable
+  sapodilla_raw:
+    fdc_id: 167759
+    confidence: high
+    name: Sapodilla, raw
+    group: Fruit
+  sapote_mamey_raw:
+    fdc_id: 167760
+    confidence: high
+    name: Sapote, mamey, raw
+    group: Fruit
+  seaweed_agar_raw:
+    fdc_id: 169280
+    confidence: high
+    name: Seaweed, agar, raw
+    group: Vegetable
+  seaweed_irishmoss_raw:
+    fdc_id: 168456
+    confidence: high
+    name: Seaweed, irishmoss, raw
+    group: Vegetable
+  seaweed_kelp_raw:
+    fdc_id: 168457
+    confidence: high
+    name: Seaweed, kelp, raw
+    group: Vegetable
+  seaweed_laver_raw:
+    fdc_id: 168458
+    confidence: high
+    name: Seaweed, laver, raw
+    group: Vegetable
+  seaweed_spirulina_raw:
+    fdc_id: 170091
+    confidence: high
+    name: Seaweed, spirulina, raw
+    group: Vegetable
+  seaweed_wakame_raw:
+    fdc_id: 170496
+    confidence: high
+    name: Seaweed, wakame, raw
+    group: Vegetable
+  seeds_breadfruit_seeds_raw:
+    fdc_id: 170144
+    confidence: high
+    name: Seeds, breadfruit seeds, raw
+    group: Nut
+  seeds_breadnut_tree_seeds_raw:
+    fdc_id: 170552
+    confidence: high
+    name: Seeds, breadnut tree seeds, raw
+    group: Nut
+  seeds_lotus_seeds_raw:
+    fdc_id: 168591
+    confidence: high
+    name: Seeds, lotus seeds, raw
+    group: Nut
+  sesbania_flower_raw:
+    fdc_id: 168459
+    confidence: high
+    name: Sesbania flower, raw
+    group: Vegetable
+  shallots_raw:
+    fdc_id: 170499
+    confidence: high
+    name: Shallots, raw
+    group: Vegetable
+  soursop_raw:
+    fdc_id: 167761
+    confidence: high
+    name: Soursop, raw
+    group: Fruit
+  soy_flour_full_fat_raw:
+    fdc_id: 174273
+    confidence: high
+    name: Soy flour, full-fat, raw
+    group: Legume
+  soy_meal_defatted_raw:
+    fdc_id: 172445
+    confidence: high
+    name: Soy meal, defatted, raw
+    group: Legume
+  soybeans_green_raw:
+    fdc_id: 169282
+    confidence: high
+    name: Soybeans, green, raw
+    group: Vegetable
+  soybeans_mature_seeds_raw:
+    fdc_id: 174270
+    confidence: high
+    name: Soybeans, mature seeds, raw
+    group: Legume
+  spinach_raw:
+    fdc_id: 168462
+    confidence: high
+    name: Spinach, raw
+    group: Vegetable
+  strawberries_raw:
+    fdc_id: 167762
+    confidence: high
+    name: Strawberries, raw
+    group: Fruit
+  succotash_corn_and_limas_raw:
+    fdc_id: 169300
+    confidence: high
+    name: Succotash, (corn and limas), raw
+    group: Vegetable
+  sugar_apples_sweetsop_raw:
+    fdc_id: 168175
+    confidence: high
+    name: Sugar-apples, (sweetsop), raw
+    group: Fruit
+  sweet_potato_leaves_raw:
+    fdc_id: 169303
+    confidence: high
+    name: Sweet potato leaves, raw
+    group: Vegetable
+  tamarinds_raw:
+    fdc_id: 167763
+    confidence: high
+    name: Tamarinds, raw
+    group: Fruit
+  tangerine_juice_raw:
+    fdc_id: 169925
+    confidence: high
+    name: Tangerine juice, raw
+    group: Fruit
+  tangerines_mandarin_oranges_raw:
+    fdc_id: 169105
+    confidence: high
+    name: Tangerines, (mandarin oranges), raw
+    group: Fruit
+  taro_leaves_raw:
+    fdc_id: 168487
+    confidence: high
+    name: Taro leaves, raw
+    group: Vegetable
+  taro_raw:
+    fdc_id: 169308
+    confidence: high
+    name: Taro, raw
+    group: Vegetable
+  taro_shoots_raw:
+    fdc_id: 168489
+    confidence: high
+    name: Taro shoots, raw
+    group: Vegetable
+  taro_tahitian_raw:
+    fdc_id: 169310
+    confidence: high
+    name: Taro, tahitian, raw
+    group: Vegetable
+  tomate:
+    fdc_id: 170457
+    confidence: high
+  tomatillos_raw:
+    fdc_id: 168566
+    confidence: high
+    name: Tomatillos, raw
+    group: Vegetable
+  tomatoes_green_raw:
+    fdc_id: 170456
+    confidence: high
+    name: Tomatoes, green, raw
+    group: Vegetable
+  tomatoes_orange_raw:
+    fdc_id: 170502
+    confidence: high
+    name: Tomatoes, orange, raw
+    group: Vegetable
+  tomatoes_yellow_raw:
+    fdc_id: 170096
+    confidence: high
+    name: Tomatoes, yellow, raw
+    group: Vegetable
+  turkey_ground_raw:
+    fdc_id: 171505
+    confidence: high
+    name: Turkey, Ground, raw
+    group: Protein
+  turnip_greens_raw:
+    fdc_id: 170061
+    confidence: high
+    name: Turnip greens, raw
+    group: Vegetable
+  turnips_raw:
+    fdc_id: 170465
+    confidence: high
+    name: Turnips, raw
+    group: Vegetable
+  turtle_green_raw:
+    fdc_id: 167745
+    confidence: high
+    name: Turtle, green, raw
+    group: Protein
+  veal_external_fat_only_raw:
+    fdc_id: 174882
+    confidence: high
+    name: Veal, external fat only, raw
+    group: Protein
+  veal_ground_raw:
+    fdc_id: 175290
+    confidence: high
+    name: Veal, ground, raw
+    group: Protein
+  veal_seam_fat_only_raw:
+    fdc_id: 174884
+    confidence: high
+    name: Veal, seam fat only, raw
+    group: Protein
+  vinespinach_basella_raw:
+    fdc_id: 170474
+    confidence: high
+    name: Vinespinach, (basella), raw
+    group: Vegetable
+  wasabi_root_raw:
+    fdc_id: 168583
+    confidence: high
+    name: Wasabi, root, raw
+    group: Vegetable
+  watercress_raw:
+    fdc_id: 170068
+    confidence: high
+    name: Watercress, raw
+    group: Vegetable
+  watermelon_raw:
+    fdc_id: 167765
+    confidence: high
+    name: Watermelon, raw
+    group: Fruit
+  waxgourd_chinese_preserving_melon_raw:
+    fdc_id: 170069
+    confidence: high
+    name: Waxgourd, (chinese preserving melon), raw
+    group: Vegetable
+  wild_rice_raw:
+    fdc_id: 169726
+    confidence: high
+    name: Wild rice, raw
+    group: Grain
+  winged_bean_leaves_raw:
+    fdc_id: 170478
+    confidence: high
+    name: Winged bean leaves, raw
+    group: Vegetable
+  winged_bean_tuber_raw:
+    fdc_id: 170070
+    confidence: high
+    name: Winged bean tuber, raw
+    group: Vegetable
+  winged_beans_immature_seeds_raw:
+    fdc_id: 170476
+    confidence: high
+    name: Winged beans, immature seeds, raw
+    group: Vegetable
+  winged_beans_mature_seeds_raw:
+    fdc_id: 174283
+    confidence: high
+    name: Winged beans, mature seeds, raw
+    group: Legume
+  yam_raw:
+    fdc_id: 170071
+    confidence: high
+    name: Yam, raw
+    group: Vegetable
+  yambean_jicama_raw:
+    fdc_id: 170073
+    confidence: high
+    name: Yambean (jicama), raw
+    group: Vegetable
+  yardlong_bean_raw:
+    fdc_id: 169222
+    confidence: high
+    name: Yardlong bean, raw
+    group: Vegetable
+  yardlong_beans_mature_seeds_raw:
+    fdc_id: 174281
+    confidence: high
+    name: Yardlong beans, mature seeds, raw
+    group: Legume
+  yautia_tannier_raw:
+    fdc_id: 169401
+    confidence: high
+    name: Yautia (tannier), raw
+    group: Vegetable
+  yuca:
+    fdc_id: 169985
+    confidence: high
+  zanahoria:
+    fdc_id: 170393
+    confidence: high
+wikidata_retrieved: '2026-10-21'
+wikidata:
+  aceite_ajonjoli: {taxon_qid: Q2763698, food_qid: Q212317, confidence: high}
+  ajo: {taxon_qid: Q23400, food_qid: Q21546392, confidence: high}
+  arroz: {taxon_qid: Q161426, food_qid: Q5090, confidence: high}
+  cebolla_cabezona: {taxon_qid: Q23485, food_qid: Q3406628, confidence: high}
+  cebolla_larga: {taxon_qid: Q27938, confidence: high}
+  cerdo: {taxon_qid: Q787, food_qid: Q191768, confidence: high}
+  cilantro: {taxon_qid: Q41611, food_qid: Q65523167, confidence: high}
+  comino: {taxon_qid: Q132624, food_qid: Q57328174, confidence: high}
+  frijol: {taxon_qid: Q42339, food_qid: Q74662248, confidence: high}
+  harina_trigo: {taxon_qid: Q161098, food_qid: Q2249305, confidence: high}
+  jengibre: {taxon_qid: Q35625, food_qid: Q15046077, confidence: high}
+  lentejas: {taxon_qid: Q131226, food_qid: Q61505177, confidence: high}
+  maiz: {taxon_qid: Q11575, food_qid: Q25618328, confidence: high}
+  papa_criolla: {taxon_qid: Q2277249, confidence: high}
+  papa_pastusa: {taxon_qid: Q10998, food_qid: Q16587531, confidence: high}
+  pimenton_rojo: {taxon_qid: Q1380, food_qid: Q1548030, confidence: high}
+  pollo: {taxon_qid: Q780, food_qid: Q864693, confidence: high}
+  tomate: {taxon_qid: Q23501, food_qid: Q20638126, confidence: high}
+  yuca: {taxon_qid: Q83124, food_qid: Q43304555, confidence: high}
+  zanahoria: {taxon_qid: Q30056, food_qid: Q81, confidence: high}
+  asparagus_raw: {taxon_qid: Q2853420, food_qid: Q23041045, confidence: medium}
+  borage_raw: {taxon_qid: Q147075, confidence: medium}
+  breadfruit_raw: {taxon_qid: Q14677, food_qid: Q5869893, confidence: medium}
+  broccoli_raw: {taxon_qid: Q47722, food_qid: Q57544960, confidence: medium}
+  cassava_raw: {taxon_qid: Q83124, food_qid: Q43304555, confidence: medium}
+  celeriac_raw: {taxon_qid: Q575174, food_qid: Q103765549, confidence: medium}
+  celtuce_raw: {taxon_qid: Q574172, confidence: medium}
+  kohlrabi_raw: {taxon_qid: Q147202, confidence: medium}
+  rhubarb_raw: {taxon_qid: Q7535, confidence: medium}
+  spinach_raw: {taxon_qid: Q1421117, food_qid: Q36814998, confidence: medium}
+  watermelon_raw: {taxon_qid: Q17507129, food_qid: Q38645, confidence: medium}

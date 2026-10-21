@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Recetas de la Orinoquía
 region: Colombia
 language: es

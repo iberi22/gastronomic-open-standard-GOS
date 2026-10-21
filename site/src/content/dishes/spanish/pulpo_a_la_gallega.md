@@ -1,4 +1,7 @@
 ---
+allergens:
+- molluscs
+- unknown
 title: Pulpo a la Gallega (Polbo á Feira)
 region: Galicia
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Pimentón dulce y picante
   - Aceite de oliva
   - Sal gorda
+main_ingredient_slugs: [pulpo, null, null, null, null]
 sensory:
   flavor:
     - Salado

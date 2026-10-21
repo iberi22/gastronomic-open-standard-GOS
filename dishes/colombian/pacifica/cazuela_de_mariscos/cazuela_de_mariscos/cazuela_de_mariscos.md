@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- fish
+- molluscs
+- unknown
 title: Cazuela de Mariscos Pacífica
 region: Pacífica
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Jaiba
   - Pescado blanco
   - Leche de coco
+main_ingredient_slugs: [camaron, piangua, calamar, cangrejo, pescado, leche_coco]
 sensory:
   flavor:
     - Umami

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ginger Beer (Cerveza de Jengibre Ancestral)
 region: Insular (San Andrés y Providencia)
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Azúcar Morena o Panela
   - Limón Criollo
   - Agua de Lluvia o filtrada
+main_ingredient_slugs: [jengibre, azucar, null, null]
 sensory:
   flavor:
     - Pungente / Picante

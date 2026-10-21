@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Samosa de Patata y Guisantes
 region: Norte de India
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Comino
   - Cilantro
   - Garam masala
+main_ingredient_slugs: [null, null, null, comino, cilantro, null]
 sensory:
   flavor:
     - Salado

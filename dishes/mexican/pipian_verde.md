@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pipián Verde
 region: Puebla
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Chile poblano
   - Hoja santa
   - Epazote
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Nuez terrosa

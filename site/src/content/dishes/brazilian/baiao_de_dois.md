@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Baião de Dois
 region: Ceará / Nordeste, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Queijo coalho em cubos
   - Carne de sol desfiada
   - Coentro e manteiga de garrafa
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Aloo Gobi
 region: Punjab
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Jengibre
   - Comino
   - Garam masala
+main_ingredient_slugs: [null, null, null, jengibre, comino, null]
 sensory:
   flavor:
     - Salado

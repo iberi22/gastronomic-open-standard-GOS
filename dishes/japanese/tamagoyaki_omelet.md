@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Tamagoyaki (Tortilla Dulce)
 region: Tokyo
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Salsa de soja clara
   - Azúcar
   - Pizca de sal
+main_ingredient_slugs: [huevo, null, null, null, azucar, sal]
 sensory:
   flavor:
     - Dulce sutil

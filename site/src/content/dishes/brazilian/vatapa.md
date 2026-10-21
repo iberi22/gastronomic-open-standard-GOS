@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- peanuts
+- tree_nuts
+- unknown
 title: Vatapá Baiano Tradicional
 region: Brasil
 language: pt
@@ -29,6 +34,7 @@ main_ingredients:
   - Cacahuetes (maní) tostados
   - Nueces de la India (anacardos o caju)
   - Aceite de dendê (palma)
+main_ingredient_slugs: [null, leche_coco, null, null, null, null]
 sensory:
   flavor:
     - Salado

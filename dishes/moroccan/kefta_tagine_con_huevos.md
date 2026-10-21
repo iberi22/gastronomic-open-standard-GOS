@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Tajine de Kefta con Tomate y Huevos
 region: Marrakech
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Huevos
   - Comino
   - Pimentón
+main_ingredient_slugs: [null, salsa_tomate, huevo, comino, pimenton_rojo]
 sensory:
   flavor:
     - Salado

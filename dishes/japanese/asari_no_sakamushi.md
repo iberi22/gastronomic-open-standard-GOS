@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- molluscs
+- soybeans
+- unknown
 title: Asari no Sakamushi
 region: Izakaya / Nacional
 language: es
@@ -28,6 +34,7 @@ main_ingredients:
   - Mantequilla sin sal
   - Cebolleta fina picada
   - Un chorrito sutil de salsa de soja
+main_ingredient_slugs: [null, null, null, mantequilla, null, null]
 sensory:
   flavor:
     - Salinidad marina pura suavizada con la dulzura del arroz del sake y mantequilla rica

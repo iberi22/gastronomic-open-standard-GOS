@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Bacalao al Pil-Pil
 region: País Vasco
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Aceite de oliva virgen extra
   - Ajo
   - Guindilla
+main_ingredient_slugs: [null, null, ajo, null]
 sensory:
   flavor:
     - Salado

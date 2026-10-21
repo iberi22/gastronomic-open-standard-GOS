@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- tree_nuts
+- unknown
 title: Tarta de Santiago
 region: Galicia
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Ralladura de limón
   - Canela
   - Azúcar glas
+main_ingredient_slugs: [null, azucar, huevo, limon, canela, null]
 sensory:
   flavor:
     - Salado

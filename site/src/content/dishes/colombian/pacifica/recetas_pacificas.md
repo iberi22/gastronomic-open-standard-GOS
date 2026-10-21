@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: 10 recetas más emblemáticas de la región Pacífica de Colombia
 region: Colombia
 language: es

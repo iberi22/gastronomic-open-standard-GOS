@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Sopaipillas Chilenas
 region: Central / Sur
 language: es
@@ -29,6 +32,7 @@ main_ingredients:
   - Aceite de freír
   - Levadura seca (opcional)
   - Sal
+main_ingredient_slugs: [harina_trigo, null, manteca_cerdo, null, null, sal]
 sensory:
   flavor:
     - Salado sutil

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Revithokeftedes (Croquetas de Garbanzo)
 region: Sifnos
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Perejil
   - Ajo
   - Comino
+main_ingredient_slugs: [null, cilantro, null, ajo, comino]
 sensory:
   flavor:
     - Salado

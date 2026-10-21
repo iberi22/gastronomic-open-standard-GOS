@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- eggs
+- soybeans
+- unknown
 title: Chawanmushi (Flan Salado)
 region: Kyoto
 language: es
@@ -27,6 +33,7 @@ main_ingredients:
   - Langostino
   - Seta Shiitake
   - Mitsuba
+main_ingredient_slugs: [huevo, null, null, pollo, null, null, null]
 sensory:
   flavor:
     - Umami sutil y limpio

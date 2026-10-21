@@ -4,9 +4,9 @@
   "aliases": "cobalamina, cianocobalamina",
   "group": "vitamin",
   "unit": "mcg",
-  "rda": 2.4,
+  "rda": "2.4",
   "sources": "hígado, ostras, carne roja, pollo, huevos, lácteos",
-  "functions": "Metabolismo de ácidos grasos, mielina (síntesis de metionina), eritropoyesis\n",
+  "function": "Metabolismo de ácidos grasos, mielina (síntesis de metionina), eritropoyesis\n",
   "deficiency": "anemia perniciosa (megaloblástica + neuropatía subaguda combinada), daño neurológico irreversible\n",
   "excess": "no tóxico (exceso excretado; riesgo en ciertos pacientes con OPT)\n",
   "studies": [

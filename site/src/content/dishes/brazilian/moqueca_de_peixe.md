@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Moqueca de Peixe Baiana
 region: Brasil
 language: pt
@@ -29,6 +32,7 @@ main_ingredients:
   - Pimiento rojo
   - Tomates maduros
   - Cilantro
+main_ingredient_slugs: [pescado, leche_coco, null, pimenton_verde, pimenton_rojo, tomate, cilantro]
 sensory:
   flavor:
     - Lácteo (coco)

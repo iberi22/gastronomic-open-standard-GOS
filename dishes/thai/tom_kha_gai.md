@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tom Kha Gai
 region: Central Thailand
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Hierbaluisa (lemongrass)
   - Hojas de lima kaffir
   - Champiñones
+main_ingredient_slugs: [pollo, leche_coco, null, null, null, champinon]
 sensory:
   flavor:
     - Salado

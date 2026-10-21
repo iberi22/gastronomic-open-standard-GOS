@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Kheer de Arroz
 region: Pan-India
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Cardamomo verde
   - Hebra de azafrán
   - Frutos secos (almendras, pistachos)
+main_ingredient_slugs: [arroz, leche, azucar, null, null, null]
 sensory:
   flavor:
     - Dulce

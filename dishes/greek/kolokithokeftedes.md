@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Kolokithokeftedes (Buñuelos de Calabacín)
 region: Creta
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Eneldo
   - Menta
   - Harina
+main_ingredient_slugs: [null, null, null, null, harina_trigo]
 sensory:
   flavor:
     - Salado

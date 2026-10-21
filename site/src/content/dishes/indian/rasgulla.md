@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Rasgulla
 region: Bengala Occidental / Odisha
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Azúcar
   - Agua de rosas
   - Cardamomo verde
+main_ingredient_slugs: [leche, limon, azucar, null, null]
 sensory:
   flavor:
     - Dulce

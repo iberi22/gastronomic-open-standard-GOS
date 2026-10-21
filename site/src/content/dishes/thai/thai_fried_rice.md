@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- fish
+- unknown
 title: Khao Pad Kung
 region: Bangkok
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Cebolleta
   - Salsa de pescado
   - Lima
+main_ingredient_slugs: [null, camaron, huevo, cebolla_larga, null, null]
 sensory:
   flavor:
     - Salado

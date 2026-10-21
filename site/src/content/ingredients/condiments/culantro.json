@@ -1,0 +1,18 @@
+{
+  "name": "Culantro (Cilantro Cimarrón)",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Culantro (Cilantro Cimarrón)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Culantro (Cilantro Cimarrón)",
+  "aliases": {
+    "es": [
+      "cilantro cimarron",
+      "culantro licuado"
+    ]
+  }
+}

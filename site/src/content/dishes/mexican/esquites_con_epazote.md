@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Esquites con Epazote
 region: Centro de México
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Mayonesa
   - Queso cotija
   - Limón
+main_ingredient_slugs: [null, null, null, manteca_cerdo, mayonesa, null, limon]
 sensory:
   flavor:
     - Maíz tierno dulce

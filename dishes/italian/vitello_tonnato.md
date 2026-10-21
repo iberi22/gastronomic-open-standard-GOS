@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- fish
+- sulphites
+- unknown
 title: Vitello Tonnato
 region: Piamonte
 language: es
@@ -27,6 +32,7 @@ main_ingredients:
   - Yemas de huevo (mayonesa casera)
   - Anchoas en aceite
   - Limón
+main_ingredient_slugs: [null, null, null, vinagre, huevo, null, limon]
 sensory:
   flavor:
     - Salsa de atún umami cremosa

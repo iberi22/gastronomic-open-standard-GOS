@@ -1,0 +1,17 @@
+{
+  "name": "Ahuyama (Calabaza)",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Ahuyama (Calabaza)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "es": [
+      "calabaza"
+    ]
+  },
+  "body_md": "# Ahuyama (Calabaza)"
+}

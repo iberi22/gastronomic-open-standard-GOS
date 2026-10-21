@@ -3,6 +3,8 @@ aliases:
   en:
   - Cuban Pork Chunks
   - Masitas de Cerdo
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Carnes
@@ -25,6 +27,7 @@ main_ingredients:
 - Ajo fresco
 - Orégano seco
 - Comino molido
+main_ingredient_slugs: [cerdo, null, ajo, oregano, comino]
 nutrition:
   calories: 410
   macros:

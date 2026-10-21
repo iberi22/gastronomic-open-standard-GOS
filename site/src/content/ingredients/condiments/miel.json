@@ -1,0 +1,17 @@
+{
+  "name": "Miel",
+  "group": "Sugar",
+  "i18n": {
+    "es": {
+      "common_name": "Miel",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "蜂蜜"
+    ]
+  },
+  "body_md": "# Miel"
+}

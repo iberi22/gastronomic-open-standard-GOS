@@ -1,4 +1,8 @@
 ---
+allergens:
+- celery
+- molluscs
+- unknown
 title: Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)
 region: Nueva York
 language: es
@@ -20,6 +24,7 @@ main_ingredients:
   - Patatas
   - Apio
   - Tocineta
+main_ingredient_slugs: [null, null, null, apio, null]
 sensory:
   flavor:
     - Salado

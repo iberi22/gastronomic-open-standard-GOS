@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Pastitsio (Lasaña Griega)
 region: Atenas
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Carne picada con canela
   - Salsa bechamel
   - Queso rallado
+main_ingredient_slugs: [null, null, null, queso]
 sensory:
   flavor:
     - Salado

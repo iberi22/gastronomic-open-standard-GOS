@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Hervido de Gumarra
 region: Colombia
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Papa
   - Cilantro de monte
   - Ajo
+main_ingredient_slugs: [null, platano_verde, yuca, papa_pastusa, null, ajo]
 prep_time: 30
 cook_time: 2
 servings: 8

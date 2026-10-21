@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pav Bhaji
 region: Mumbai
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Panecillos suaves (pav)
   - Mantequilla abundante
   - Cebolla picada
+main_ingredient_slugs: [null, null, null, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

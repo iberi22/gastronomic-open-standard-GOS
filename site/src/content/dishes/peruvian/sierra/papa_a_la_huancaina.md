@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Papa a la Huancaína
 region: Sierra/Costa
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Leche evaporada entera
   - Galletas de soda clásicas
   - Aceite vegetal neutro
+main_ingredient_slugs: [null, aji_amarillo, null, null, null, null]
 sensory:
   flavor:
     - Lácteo-Salado (Queso fresco)

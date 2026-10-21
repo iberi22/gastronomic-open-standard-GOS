@@ -3,6 +3,10 @@ aliases:
   en:
   - Stuffed Potato
   - Peruvian Potato Croquette
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 categories:
 - Entrada
 - Criollo
@@ -25,6 +29,7 @@ main_ingredients:
 - Pasta de ají panca
 - Huevo duro picado
 - Harina de trigo
+main_ingredient_slugs: [null, carne_res, cebolla_cabezona, null, huevo, harina_trigo]
 nutrition:
   calories: 390
   macros:

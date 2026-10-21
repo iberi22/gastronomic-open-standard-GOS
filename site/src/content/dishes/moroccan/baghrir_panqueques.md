@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Baghrir (Panqueques de Mil Hoyos)
 region: Marruecos Nacional
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Levadura
   - Miel
   - Mantequilla derretida
+main_ingredient_slugs: [null, harina_trigo, levadura, miel, null]
 sensory:
   flavor:
     - Salado

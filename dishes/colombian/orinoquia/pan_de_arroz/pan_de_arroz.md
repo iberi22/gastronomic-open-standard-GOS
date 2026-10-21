@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Pan de Arroz
 region: Colombia
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Cuajada o queso fresco
   - Mantequilla
   - Huevos
+main_ingredient_slugs: [null, null, mantequilla, huevo]
 prep_time: 30
 cook_time: 30
 servings: 12

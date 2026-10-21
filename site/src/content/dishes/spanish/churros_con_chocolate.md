@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Churros con Chocolate
 region: Madrid
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Sal
   - Aceite para freír
   - Chocolate espeso
+main_ingredient_slugs: [harina_trigo, null, sal, aceite, null]
 sensory:
   flavor:
     - Salado

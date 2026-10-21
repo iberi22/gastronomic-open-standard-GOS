@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Pastel de Feira
 region: São Paulo / Brasil
 language: pt
@@ -27,6 +30,7 @@ main_ingredients:
   - Água morna e óleo
   - Carne moída refogada com azeitonas e ovo
   - Óleo para fritura profunda
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

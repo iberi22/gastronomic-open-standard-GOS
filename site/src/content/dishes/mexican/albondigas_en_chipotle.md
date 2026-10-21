@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Albóndigas en Salsa de Chipotle
 region: Centro de México
 language: es
@@ -37,6 +40,7 @@ main_ingredients:
   - Jitomates maduros
   - Huevo
   - Hierbabuena picada
+main_ingredient_slugs: [null, null, null, null, huevo, null]
 sensory:
   flavor:
     - Jitomate dulce

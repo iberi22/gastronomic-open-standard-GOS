@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guacamole Tradicional
 region: Michoacán
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Chile serrano
   - Jugo de lima
   - Sal de grano
+main_ingredient_slugs: [null, cilantro, cebolla_cabezona, null, null, null]
 sensory:
   flavor:
     - Grado de acidez equilibrado

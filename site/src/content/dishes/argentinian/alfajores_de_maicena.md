@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Alfajores de Maicena
 region: Buenos Aires / Nacional
 language: es
@@ -30,6 +35,7 @@ main_ingredients:
   - Dulce de leche repostero
   - Coco rallado
   - Ralladura de limón
+main_ingredient_slugs: [null, harina_trigo, mantequilla, huevo, null, coco, limon]
 sensory:
   flavor:
     - Muy dulce

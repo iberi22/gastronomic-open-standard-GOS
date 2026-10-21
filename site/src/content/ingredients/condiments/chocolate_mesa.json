@@ -1,0 +1,12 @@
+{
+  "name": "Chocolate de Mesa",
+  "group": "Sugar",
+  "i18n": {
+    "es": {
+      "common_name": "Chocolate de Mesa",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Chocolate de Mesa"
+}

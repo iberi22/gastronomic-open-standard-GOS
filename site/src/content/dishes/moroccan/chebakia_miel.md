@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Chebakia de Sésamo y Miel
 region: Marruecos Nacional
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Miel
   - Agua de azahar
   - Semillas de sésamo tostadas
+main_ingredient_slugs: [null, miel, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,0 +1,17 @@
+{
+  "name": "Alga Nori",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Alga Nori",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "紫菜"
+    ]
+  },
+  "body_md": "# Alga Nori"
+}

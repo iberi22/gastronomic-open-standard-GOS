@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Shorshe Ilish
 region: Barisal
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Semillas de mostaza negra
   - Chiles verdes
   - Cúrcuma en polvo
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Picante

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gigantes Plaki (Alubias al Horno)
 region: Macedonia Griega
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Ajo
   - Orégano
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, ajo, oregano, null]
 sensory:
   flavor:
     - Salado

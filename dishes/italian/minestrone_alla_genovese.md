@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Minestrone alla Genovese
 region: Liguria
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Pasta corta (Ditalini)
   - Pesto de albahaca
   - Parmigiano
+main_ingredient_slugs: [null, null, null, zanahoria, null, null, null, null]
 sensory:
   flavor:
     - Vegetal fresco terroso

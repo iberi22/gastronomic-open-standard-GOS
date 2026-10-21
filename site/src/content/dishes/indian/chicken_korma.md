@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Chicken Korma
 region: Mogolla
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Pasta de anacardos
   - Nata
   - Especias suaves
+main_ingredient_slugs: [pollo, null, null, crema_leche, null]
 sensory:
   flavor:
     - Salado

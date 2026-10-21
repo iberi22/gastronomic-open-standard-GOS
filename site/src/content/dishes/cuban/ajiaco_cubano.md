@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ajiaco Criollo Cubano
 region: Cuba
 language: es
@@ -29,6 +31,7 @@ main_ingredients:
   - Yuca
   - Malanga
   - Maíz tierno (mazorca)
+main_ingredient_slugs: [null, cerdo, platano_verde, platano_maduro, yuca, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Classic Glazed Meatloaf
 region: EE.UU. Nacional
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Huevo
   - Cebolla
   - Glaseado de kétchup
+main_ingredient_slugs: [carne_res, null, huevo, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Croque Monsieur
 region: París
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Jamón cocido
   - Queso Gruyère
   - Salsa bechamel
+main_ingredient_slugs: [null, jamon, null, null]
 sensory:
   flavor:
     - Salado

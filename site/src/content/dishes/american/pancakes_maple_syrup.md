@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Fluffy Pancakes con Maple Syrup
 region: EE.UU. Nacional
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Huevo
   - Mantequilla
   - Sirope de arce
+main_ingredient_slugs: [harina_trigo, leche, huevo, mantequilla, null]
 sensory:
   flavor:
     - Salado

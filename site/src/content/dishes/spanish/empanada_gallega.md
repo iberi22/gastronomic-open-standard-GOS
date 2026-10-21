@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Empanada Gallega de Atún
 region: Galicia
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Pimentón
   - Cebolla
   - Pimiento rojo
+main_ingredient_slugs: [null, null, pimenton_rojo, cebolla_cabezona, pimenton_rojo]
 sensory:
   flavor:
     - Salado

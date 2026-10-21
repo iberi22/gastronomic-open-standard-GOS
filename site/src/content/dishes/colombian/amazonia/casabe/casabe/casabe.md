@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Casabe (Pan de Yuca Amazónico)
 region: Amazonía
 language: es
@@ -17,6 +18,7 @@ cook_time: 30 minutos
 servings: 10
 main_ingredients:
   - Yuca amarga
+main_ingredient_slugs: [yuca]
 sensory:
   flavor:
     - Neutro

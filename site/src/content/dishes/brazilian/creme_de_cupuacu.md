@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Creme de Cupuaçu
 region: Amazonas / Pará, Brasil
 language: pt
@@ -26,6 +28,7 @@ main_ingredients:
   - Leite condensado
   - Creme de leite
   - Raspas de chocolate amargo (opcional)
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Ácido

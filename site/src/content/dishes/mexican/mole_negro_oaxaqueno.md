@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Mole Negro Oaxaqueño
 region: Oaxaca
 language: es
@@ -29,6 +32,7 @@ main_ingredients:
   - Plátano macho
   - Ajonjolí
   - Hoja de aguacate
+main_ingredient_slugs: [null, null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Ahumado

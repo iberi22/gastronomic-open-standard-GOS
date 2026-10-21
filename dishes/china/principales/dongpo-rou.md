@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- sulphites
+- unknown
 title: Dongpo Rou (Dongpo Pork)
 region: China
 language: zh
@@ -24,6 +29,7 @@ main_ingredients:
   - 老抽 (Dark Soy Sauce)
   - 葱 (Scallions)
   - 姜 (Ginger)
+main_ingredient_slugs: [null, null, azucar, salsa_soya, salsa_soya, cebolla_larga, jengibre]
 sensory:
   flavor:
     - savory

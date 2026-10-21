@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mote de Queso
 region: Caribe
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Ajo
   - Bleo de Chupa (opcional/tradicional)
   - Jugo de limón (secreto)
+main_ingredient_slugs: [null, queso, suero_costeno, cebolla_cabezona, ajo, null, limon]
 sensory:
   flavor:
     - Alcalino (Queso)

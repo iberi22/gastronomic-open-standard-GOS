@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Pan de Coco (Coconut Bread)
 region: Insular
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Coco rallado fresco
   - Mantequilla o Aceite de Coco
   - Levadura
+main_ingredient_slugs: [null, null, coco, mantequilla, levadura]
 sensory:
   flavor:
     - Dulzor Suave

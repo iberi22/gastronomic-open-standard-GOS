@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Masala Dosa
 region: Sur de India
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Relleno de patata especiada
   - Chutney de coco
   - Sambar
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

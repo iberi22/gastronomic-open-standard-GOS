@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Por Pia Tod (Rollitos Tailandeses)
 region: Bangkok
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Col rallada
   - Zanahoria
   - Salsa agridulce
+main_ingredient_slugs: [null, null, null, zanahoria, null]
 sensory:
   flavor:
     - Salado

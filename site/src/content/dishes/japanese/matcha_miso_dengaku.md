@@ -1,4 +1,8 @@
 ---
+allergens:
+- sesame
+- soybeans
+- unknown
 title: Matcha Miso Dengaku
 region: Aichi (Nagoya) / Kyoto
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Mirin y sake
   - Azúcar fino
   - Semillas de sésamo blanco tostado
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulzura sazonada del miso blanco balanceada con el amargor vegetativo del matcha ceremonial

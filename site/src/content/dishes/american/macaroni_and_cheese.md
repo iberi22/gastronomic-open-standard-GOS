@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Baked Macaroni and Cheese
 region: Sur de EE.UU.
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Queso Gruyère
   - Mantequilla
   - Leche
+main_ingredient_slugs: [null, null, null, mantequilla, leche]
 sensory:
   flavor:
     - Salado

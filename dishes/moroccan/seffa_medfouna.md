@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Seffa Medfouna con Pollo
 region: Fez
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Almendras
   - Canela
   - Azúcar glas
+main_ingredient_slugs: [null, null, null, canela, null]
 sensory:
   flavor:
     - Salado

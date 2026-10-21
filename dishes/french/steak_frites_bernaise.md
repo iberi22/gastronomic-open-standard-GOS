@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Steak Frites con Salsa Béarnaise
 region: París
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Mantequilla
   - Yemas de huevo
   - Estragón
+main_ingredient_slugs: [null, null, mantequilla, huevo, null]
 sensory:
   flavor:
     - Salado

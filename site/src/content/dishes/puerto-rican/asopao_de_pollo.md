@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Asopao de Pollo Puertorriqueño
 region: Puerto Rico
 language: es
@@ -30,6 +32,7 @@ main_ingredients:
   - Aceitunas verdes con alcaparras
   - Guisantes (arvejas) verdes
   - Pimientos morrones
+main_ingredient_slugs: [pollo, null, null, salsa_tomate, null, null, null]
 sensory:
   flavor:
     - Salado

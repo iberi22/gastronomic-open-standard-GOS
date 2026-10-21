@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Gulab Jamun
 region: Norte de India
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Harina
   - Jarabe de azahar o rosa
   - Cardamomo
+main_ingredient_slugs: [null, harina_trigo, null, null]
 sensory:
   flavor:
     - Salado

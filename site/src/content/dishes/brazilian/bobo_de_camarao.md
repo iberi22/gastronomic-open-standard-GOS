@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Bobó de Camarão
 region: Bahia, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Leite de coco
   - Azeite de dendê
   - Pimentões e tomates
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

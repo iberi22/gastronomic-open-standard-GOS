@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pernil Asado Puertorriqueño
 region: Puerto Rico
 language: es
@@ -29,6 +31,7 @@ main_ingredients:
   - Vinagre blanco
   - Aceite de oliva
   - Pimienta negra
+main_ingredient_slugs: [null, ajo, oregano, vinagre, null, pimienta_negra]
 sensory:
   flavor:
     - Salado

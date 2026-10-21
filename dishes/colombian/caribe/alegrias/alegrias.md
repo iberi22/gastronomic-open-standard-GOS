@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Alegrías
 region: Caribe
 language: es
@@ -24,6 +25,7 @@ main_ingredients:
   - Panela
   - Coco fresco
   - Miel de caña
+main_ingredient_slugs: [amaranto, panela, coco, miel_cana]
 sensory:
   flavor:
     - Dulce

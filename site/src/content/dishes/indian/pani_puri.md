@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pani Puri (Golgappa)
 region: Mumbai
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Agua de menta y tamarindo
   - Patata cocida
   - Garbanzos
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

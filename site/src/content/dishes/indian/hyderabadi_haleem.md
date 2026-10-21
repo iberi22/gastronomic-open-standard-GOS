@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Hyderabadi Haleem
 region: Telangana / Hyderabad
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Ghee
   - Garam masala
   - Cebolla frita
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Umami

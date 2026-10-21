@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Hyderabadi Biryani
 region: Hyderabad
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Azafrán
   - Cebolla frita
   - Especias enteras
+main_ingredient_slugs: [arroz, pollo, null, null, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Okonomiyaki Estilo Osaka
 region: Osaka
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Salsa Okonomiyaki
   - Mayonesa Kewpie
   - Katsuobushi
+main_ingredient_slugs: [null, harina_trigo, null, huevo, null, null, null, null]
 sensory:
   flavor:
     - Umami concentrado

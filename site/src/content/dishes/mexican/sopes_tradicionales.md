@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Sopes Tradicionales
 region: Centro de México
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Queso Cotija
   - Crema fresca
   - Salsa verde
+main_ingredient_slugs: [null, null, lechuga, null, null, null]
 sensory:
   flavor:
     - Salado

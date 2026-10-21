@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Dorayaki
 region: Tokyo
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Azúcar fino y miel de abeja
   - Mirin
   - Bicarbonato de sodio disuelto en agua
+main_ingredient_slugs: [null, null, huevo, null, null, null]
 sensory:
   flavor:
     - Miel dulce suave con el sabor denso y noble del anko artesanal

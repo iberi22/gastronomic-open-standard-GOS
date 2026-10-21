@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Traditional American Apple Pie
 region: EE.UU. Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Canela
   - Mantequilla
   - Azúcar
+main_ingredient_slugs: [null, null, canela, mantequilla, azucar]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- mustard
+- unknown
 title: Borhani
 region: Old Dhaka
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Comino tostado molido
   - Sal negra Kala Namak
   - Semillas de mostaza en polvo
+main_ingredient_slugs: [null, null, null, comino, null, null]
 sensory:
   flavor:
     - Ácido

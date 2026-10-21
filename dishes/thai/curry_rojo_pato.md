@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gaeng Phet Ped Yang
 region: Bangkok
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Piña
   - Tomates cherry
   - Albahaca thai
+main_ingredient_slugs: [null, null, leche_coco, pina, null, null]
 sensory:
   flavor:
     - Salado

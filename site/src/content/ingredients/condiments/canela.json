@@ -1,0 +1,12 @@
+{
+  "name": "Canela",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Canela",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Canela"
+}

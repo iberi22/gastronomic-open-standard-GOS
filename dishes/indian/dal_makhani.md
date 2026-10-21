@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Dal Makhani
 region: Punjab
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Mantequilla
   - Nata
   - Tomate
+main_ingredient_slugs: [null, null, mantequilla, crema_leche, tomate]
 sensory:
   flavor:
     - Salado

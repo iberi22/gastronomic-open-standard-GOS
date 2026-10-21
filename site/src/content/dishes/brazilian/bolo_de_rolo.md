@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Bolo de Rolo Pernambucano
 region: Pernambuco, Brasil
 language: pt
@@ -27,6 +30,7 @@ main_ingredients:
   - Gemas e ovos frescos
   - Farinha de trigo fina
   - Goiabada derretida em ponto de geleia
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Doce

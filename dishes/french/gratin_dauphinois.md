@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Gratin Dauphinois
 region: Delfinado
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Crema de leche
   - Ajo
   - Nuez moscada
+main_ingredient_slugs: [null, crema_leche, ajo, nuez_moscada]
 sensory:
   flavor:
     - Salado

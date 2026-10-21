@@ -1,4 +1,9 @@
 ---
+allergens:
+- fish
+- milk
+- soybeans
+- unknown
 title: Chanchan Yaki
 region: Hokkaido
 language: es
@@ -29,6 +34,7 @@ main_ingredients:
   - Miso rojo de Hokkaido
   - Mirin
   - Mantequilla sin sal
+main_ingredient_slugs: [null, null, null, null, null, null, mantequilla]
 sensory:
   flavor:
     - Miso dulce salado y mantecoso

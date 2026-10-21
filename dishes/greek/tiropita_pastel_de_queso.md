@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Tiropita (Pastel Hojaldrado de Feta)
 region: Grecia Nacional
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Queso Ricotta
   - Huevos
   - Mantequilla
+main_ingredient_slugs: [null, null, null, huevo, mantequilla]
 sensory:
   flavor:
     - Salado

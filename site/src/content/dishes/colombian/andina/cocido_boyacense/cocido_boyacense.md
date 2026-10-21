@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cocido Boyacense
 region: Andina
 language: es
@@ -30,6 +32,7 @@ main_ingredients:
   - Costilla de cerdo
   - Longaniza
   - Gallina (opcional)
+main_ingredient_slugs: [cubio, null, null, papa_pastusa, papa_criolla, null, cerdo, chorizo, null]
 sensory:
   flavor:
     - Terroso (Tubérculos)

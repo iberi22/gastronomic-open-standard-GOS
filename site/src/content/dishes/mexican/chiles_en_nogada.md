@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Chiles en Nogada
 region: Puebla
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Granada roja
   - Durazno
   - Manzana criolla
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- sulphites
+- unknown
 title: Risotto alla Milanese
 region: Lombardía (Milán)
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Parmigiano Reggiano DOP
   - Caldo de res
   - Vino blanco
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Azafrán refinado terroso

@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- sulphites
+- unknown
 title: Ossobuco alla Milanese con Gremolata
 region: Lombardía
 language: es
@@ -28,6 +33,7 @@ main_ingredients:
   - Perejil fresco
   - Mantequilla
   - Harina
+main_ingredient_slugs: [null, null, null, null, ajo, null, mantequilla, harina_trigo]
 sensory:
   flavor:
     - Rico estofado de ternera

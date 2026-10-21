@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Chilaquiles Verdes con Huevo
 region: México DF
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Huevos
   - Queso fresco
   - Crema agria
+main_ingredient_slugs: [null, null, null, null, huevo, queso, null]
 sensory:
   flavor:
     - Picante brillante

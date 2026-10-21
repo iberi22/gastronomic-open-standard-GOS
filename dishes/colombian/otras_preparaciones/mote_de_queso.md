@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mote de Queso
 region: Caribe
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Queso costeño
   - Suero
   - Hogao
+main_ingredient_slugs: [ñame, queso, null, hogao]
 sensory:
   flavor:
     - Salado

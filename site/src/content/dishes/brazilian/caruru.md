@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Caruru Baiano
 region: Bahia, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Castanha de caju torrada e moída
   - Amendoim torrado e moído
   - Azeite de dendê
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami

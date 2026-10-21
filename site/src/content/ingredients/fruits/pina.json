@@ -1,0 +1,12 @@
+{
+  "name": "Piña",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Piña",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Piña"
+}

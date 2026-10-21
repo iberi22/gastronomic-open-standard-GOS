@@ -1,0 +1,18 @@
+{
+  "name": "Harina de Maíz",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Harina de Maíz",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Harina de Maíz",
+  "aliases": {
+    "es": [
+      "harina de maiz",
+      "masa de maiz"
+    ]
+  }
+}

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Asado Criollo Argentino
 region: La Pampa / Pampeana
 language: es
@@ -29,6 +31,7 @@ main_ingredients:
   - Morcillas
   - Sal gruesa
   - Carbón vegetal o leña de quebracho
+main_ingredient_slugs: [null, null, null, morcilla, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,0 +1,17 @@
+{
+  "name": "Salsa de Chile Crujiente",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Salsa de Chile Crujiente",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "老干妈"
+    ]
+  },
+  "body_md": "# Salsa de Chile Crujiente"
+}

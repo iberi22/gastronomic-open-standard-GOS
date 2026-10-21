@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Moussaka Griega Tradicional
 region: Atenas / Grecia Nacional
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Salsa bechamel
   - Tomate
   - Patata
+main_ingredient_slugs: [null, null, null, tomate, null]
 sensory:
   flavor:
     - Salado

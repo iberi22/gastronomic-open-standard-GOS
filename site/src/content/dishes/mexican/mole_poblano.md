@@ -1,4 +1,8 @@
 ---
+allergens:
+- sesame
+- tree_nuts
+- unknown
 title: Mole Poblano
 region: Puebla
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Ajonjolí
   - Almendras
   - Canela
+main_ingredient_slugs: [null, null, null, null, null, null, null, canela]
 sensory:
   flavor:
     - Complejo

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Larb Gai (Ensalada de Pollo)
 region: Isan
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Chiles secos
   - Menta
   - Pollo de arroz tostado (khao khua)
+main_ingredient_slugs: [pollo, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

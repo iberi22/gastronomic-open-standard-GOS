@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Patishapta Pitha
 region: Rangpur
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Relleno de kheer de leche reducida
   - Coco rallado
   - Semillas de cardamomo
+main_ingredient_slugs: [null, null, null, coco, null]
 sensory:
   flavor:
     - Dulce cremoso

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Empanada de Pino Chilena
 region: Valparaíso / Metropolitana
 language: es
@@ -30,6 +34,7 @@ main_ingredients:
   - Huevos duros
   - Aceitunas negras
   - Pasas
+main_ingredient_slugs: [harina_trigo, manteca_cerdo, carne_res, cebolla_cabezona, comino, huevo, null, null]
 sensory:
   flavor:
     - Salado

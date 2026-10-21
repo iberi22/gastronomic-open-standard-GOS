@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Empanadas de Jaiba
 region: Pacífica
 language: es
@@ -21,6 +24,7 @@ main_ingredients:
   - Harina de maíz
   - Cilantro cimarrón
   - Ají
+main_ingredient_slugs: [null, harina_maiz, culantro, aji_picante]
 sensory:
   flavor:
     - Umami

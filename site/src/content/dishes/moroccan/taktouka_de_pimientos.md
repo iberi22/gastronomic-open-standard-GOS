@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Taktouka de Pimientos Asados
 region: Fez
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Ajo
   - Comino
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, ajo, comino, null]
 sensory:
   flavor:
     - Salado

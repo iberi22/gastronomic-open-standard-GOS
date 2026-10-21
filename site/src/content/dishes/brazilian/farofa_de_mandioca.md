@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Farofa de Mandioca Tradicional
 region: Brasil (Nacional)
 language: pt
@@ -26,6 +28,7 @@ main_ingredients:
   - Bacon cortado em cubos
   - Cebola cortada em rodelas ou cubos
   - Alho picado e sal
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

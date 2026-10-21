@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Chocolate Santafereño
 region: Andina
 language: es
@@ -19,6 +21,7 @@ main_ingredients:
   - Chocolate de mesa
   - Leche
   - Queso fresco
+main_ingredient_slugs: [chocolate_mesa, leche, queso]
 sensory:
   flavor:
     - Dulce

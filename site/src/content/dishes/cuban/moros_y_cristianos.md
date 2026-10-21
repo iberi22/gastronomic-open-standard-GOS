@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Moros y Cristianos Tradicionales
 region: Cuba
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Pimiento verde
   - Comino molido
   - Orégano seco
+main_ingredient_slugs: [null, null, tocino, pimenton_verde, comino, oregano]
 sensory:
   flavor:
     - Salado

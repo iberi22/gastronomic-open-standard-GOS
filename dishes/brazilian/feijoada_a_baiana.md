@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Feijoada à Baiana
 region: Bahia, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Paio e linguiça calabresa
   - Abóbora, abobrinha e repolho
   - Louro, alho e azeite de dendê
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami profundo

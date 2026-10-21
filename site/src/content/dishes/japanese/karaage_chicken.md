@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Chicken Karaage
 region: Japón Nacional
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Almidón de patata (katakuriko)
   - Sake
   - Limón
+main_ingredient_slugs: [null, salsa_soya, jengibre, null, null, null, limon]
 sensory:
   flavor:
     - Salado jengibre

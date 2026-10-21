@@ -3,6 +3,7 @@
   "name": "Omega-3 (EPA/DHA)",
   "aliases": "ácidos grasos omega-3, ácido eicosapentaenoico (EPA), ácido docosahexaenoico (DHA)",
   "unit": "g",
+  "rda": null,
   "ul": 3,
   "sources": "salmón, sardina, caballa, anchoa, aceite de linaza, chia, walnuts, algas marinas (DHA directo)",
   "functions": "Antiinflamatorio (resolvinas/protectinas), salud cardiovascular (reduce TG, antiarrítmico), función neurológica (DHA componente neuronal), desarrollo cerebral fetal",

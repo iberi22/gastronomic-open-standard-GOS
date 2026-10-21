@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pinchos de Pollo Puertorriqueños
 region: Puerto Rico
 language: es
@@ -29,6 +31,7 @@ main_ingredients:
   - Salsa barbacoa (BBQ)
   - Pan de agua
   - Brochetas de madera
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Focaccia Barese con Pomodorini
 region: Puglia (Bari)
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Aceitunas de Bari
   - Orégano
   - Aceite de oliva extra virgen
+main_ingredient_slugs: [null, null, null, null, null, oregano, null]
 sensory:
   flavor:
     - Aceite de oliva rico

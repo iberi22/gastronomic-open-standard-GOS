@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tlacoyos de Alverjón
 region: Centro de México
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Nopales asados
   - Queso cotija
   - Salsa roja martajada
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Terroso

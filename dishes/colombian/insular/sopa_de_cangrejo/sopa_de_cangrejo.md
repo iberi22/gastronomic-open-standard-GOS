@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- milk
+- unknown
 title: Sopa de Cangrejo (Crab Soup)
 region: Insular
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Leche de Coco espesa
   - Pigtail (Rabo de cerdo) - Opcional para fondo
   - Albahaca salvaje y Tomillo
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Umami Terroso

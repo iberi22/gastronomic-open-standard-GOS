@@ -1,0 +1,17 @@
+{
+  "name": "Maní",
+  "group": "Legume",
+  "i18n": {
+    "es": {
+      "common_name": "Maní",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "花生"
+    ]
+  },
+  "body_md": "# Maní"
+}

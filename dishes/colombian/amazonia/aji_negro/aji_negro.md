@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Ají Negro (Salsa Amazónica Fermentada)
 region: Amazonía
 language: es
@@ -18,6 +19,7 @@ servings: 20
 main_ingredients:
   - Ají amazónico
   - Yuca amarga
+main_ingredient_slugs: [aji_picante, yuca]
 sensory:
   flavor:
     - Picante

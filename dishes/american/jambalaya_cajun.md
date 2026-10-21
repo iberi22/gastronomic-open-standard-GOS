@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Cajun Jambalaya
 region: 'Nueva Orleans, LA'
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Salchicha andouille
   - Camarones
   - Pimentón
+main_ingredient_slugs: [arroz, pollo, null, camaron, pimenton_rojo]
 sensory:
   flavor:
     - Salado

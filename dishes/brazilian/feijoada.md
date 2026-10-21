@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Feijoada Completa Brasileira
 region: Brasil
 language: pt
@@ -28,6 +30,7 @@ main_ingredients:
   - Chorizo calabresa
   - Tocino (bacon)
   - Laurel
+main_ingredient_slugs: [null, cerdo, null, null, tocino, laurel]
 sensory:
   flavor:
     - Salado

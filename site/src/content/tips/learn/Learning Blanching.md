@@ -1,3 +1,9 @@
+---
+title: "Learning Blanching"
+description: "Blanching is a cooking process, pronounced chāo shuǐ."
+tags: ["tips","learn"]
+language: "en"
+---
 # Learning Blanching
 
 Blanching is a cooking process, pronounced chāo shuǐ.

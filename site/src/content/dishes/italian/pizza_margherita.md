@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pizza Margherita Napoletana
 region: Campania (Nápoles)
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Mozzarella de Búfala
   - Albahaca fresca
   - Aceite de oliva extra virgen
+main_ingredient_slugs: [null, null, levadura, null, null, null, null]
 sensory:
   flavor:
     - Acidez fresca del tomate San Marzano

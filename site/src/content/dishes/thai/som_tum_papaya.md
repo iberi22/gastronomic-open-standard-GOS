@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- peanuts
+- unknown
 title: Som Tum (Ensalada de Papaya)
 region: Isan
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Zumo de lima
   - Salsa de pescado
   - Cacahuetes
+main_ingredient_slugs: [null, null, ajo, null, null, null, null]
 sensory:
   flavor:
     - Salado

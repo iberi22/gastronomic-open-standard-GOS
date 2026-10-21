@@ -3,6 +3,8 @@ aliases:
   en:
   - Dominican Sancocho
   - 7-Meat Stew
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Guiso
@@ -27,6 +29,7 @@ main_ingredients:
 - Calabaza (ahuyama)
 - Maíz tierno (mazorcas)
 - Naranja agria
+main_ingredient_slugs: [null, platano_verde, yuca, null, ñame, ahuyama, null, null]
 nutrition:
   calories: 780
   macros:

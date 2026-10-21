@@ -1,0 +1,20 @@
+{
+  "name": "Leche de Coco",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Leche de Coco",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "椰浆"
+    ],
+    "es": [
+      "leche de coco"
+    ]
+  },
+  "body_md": "# Leche de Coco"
+}

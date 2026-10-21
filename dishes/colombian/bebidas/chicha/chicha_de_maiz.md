@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chicha de Maíz Ancestral
 region: Nacional (Andina / Altiplano)
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Panela (Miel de caña)
   - Clavos y Canela
   - Hojas de Arrayán (Tradicional)
+main_ingredient_slugs: [null, panela, null, null]
 sensory:
   flavor:
     - Ácido Láctico

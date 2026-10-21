@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Chicken and Waffles (Pollo Frito con Waffles)
 region: Sur de Estados Unidos
 language: es
@@ -20,6 +24,7 @@ main_ingredients:
   - Harina de trigo
   - Jarabe de arce
   - Mantequilla
+main_ingredient_slugs: [pollo, null, harina_trigo, null, mantequilla]
 sensory:
   flavor:
     - Dulce

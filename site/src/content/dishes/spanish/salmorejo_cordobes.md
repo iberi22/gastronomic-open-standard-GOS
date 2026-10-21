@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Salmorejo Cordobés
 region: Córdoba
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Ajo
   - Huevos cocidos
   - Jamón ibérico
+main_ingredient_slugs: [tomate, null, null, ajo, huevo, null]
 sensory:
   flavor:
     - Salado

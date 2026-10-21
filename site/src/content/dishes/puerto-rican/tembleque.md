@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tembleque de Coco Puertorriqueño
 region: Puerto Rico
 language: es
@@ -31,6 +34,7 @@ main_ingredients:
   - Fécula de maíz (cornstarch)
   - Canela en rama y en polvo
   - Una pizca de sal
+main_ingredient_slugs: [leche_coco, null, azucar, null, null, null]
 sensory:
   flavor:
     - Dulce

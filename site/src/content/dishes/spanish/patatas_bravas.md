@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Patatas Bravas
 region: Madrid
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Salsa brava picante (pimentón y caldo)
   - Alioli (opcional)
   - Aceite
+main_ingredient_slugs: [null, null, null, aceite]
 sensory:
   flavor:
     - Salado

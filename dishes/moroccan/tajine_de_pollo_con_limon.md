@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tajine de Pollo con Limón Encurtido y Aceitunas
 region: Casablanca
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Aceitunas verdes
   - Jengibre
   - Azafrán
+main_ingredient_slugs: [pollo, null, null, jengibre, null]
 sensory:
   flavor:
     - Salado

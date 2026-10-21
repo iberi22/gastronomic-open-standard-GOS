@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Milanesa a la Napolitana
 region: Buenos Aires / Pampeana
 language: es
@@ -30,6 +35,7 @@ main_ingredients:
   - Jamón cocido
   - Queso mozzarella
   - Orégano seco
+main_ingredient_slugs: [carne_res, null, huevo, null, jamon, null, oregano]
 sensory:
   flavor:
     - Salado

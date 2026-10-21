@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- tree_nuts
+- unknown
 title: Baklava Griego con Nueces y Miel
 region: Grecia Nacional
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Mantequilla
   - Miel
   - Canela
+main_ingredient_slugs: [null, null, mantequilla, miel, canela]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Pescado Moqueado
 region: Amazonía
 language: es
@@ -20,6 +23,7 @@ main_ingredients:
   - Pescado de río
   - Hojas de plátano/bijao
   - Sal
+main_ingredient_slugs: [null, null, sal]
 sensory:
   flavor:
     - Ahumado

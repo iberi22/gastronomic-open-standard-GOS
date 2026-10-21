@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Kleftiko de Cordero en Papel
 region: Grecia Central
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Queso Feta
   - Orégano
   - Limón
+main_ingredient_slugs: [null, null, ajo, null, oregano, limon]
 sensory:
   flavor:
     - Salado

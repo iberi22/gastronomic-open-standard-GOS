@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Chashu de Cerdo para Ramen
 region: Fukuoka
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Jengibre en rodajas
   - Ajo
   - Verdeo
+main_ingredient_slugs: [null, salsa_soya, null, null, azucar, null, ajo, null]
 sensory:
   flavor:
     - Umami dulce salado profundo

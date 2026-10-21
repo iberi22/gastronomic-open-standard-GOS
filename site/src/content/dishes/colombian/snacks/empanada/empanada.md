@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Empanada Colombiana
 region: Nacional
 language: es
@@ -26,6 +27,7 @@ main_ingredients:
   - Harina de maíz
   - Papa
   - Carne molida
+main_ingredient_slugs: [harina_maiz, papa_pastusa, carne_res]
 sensory:
   flavor:
     - Salado

@@ -1,0 +1,17 @@
+{
+  "name": "Pimienta de Sichuan",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Pimienta de Sichuan",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "花椒"
+    ]
+  },
+  "body_md": "# Pimienta de Sichuan"
+}

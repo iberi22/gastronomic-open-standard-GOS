@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Inchicapi (Sopa de Gallina con Maní)
 region: Amazonía
 language: es
@@ -20,6 +23,7 @@ main_ingredients:
   - Maní
   - Maíz
   - Yuca
+main_ingredient_slugs: [null, mani, maiz, yuca]
 sensory:
   flavor:
     - Umami

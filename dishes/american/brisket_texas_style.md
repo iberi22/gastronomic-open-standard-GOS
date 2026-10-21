@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Brisket Estilo Texas (Punta de Pecho Ahumada)
 region: Texas
 language: es
@@ -19,6 +21,7 @@ main_ingredients:
   - Pimienta negra
   - Sal marina
   - Polvo de ajo
+main_ingredient_slugs: [null, pimienta_negra, sal, null]
 sensory:
   flavor:
     - Ahumado

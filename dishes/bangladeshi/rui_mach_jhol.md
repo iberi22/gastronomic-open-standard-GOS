@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Rui Macher Jhol
 region: Rajshahi
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Comino en polvo
   - Tomates frescos
   - Aceite de mostaza
+main_ingredient_slugs: [null, null, null, null, tomate, null]
 sensory:
   flavor:
     - Ligero

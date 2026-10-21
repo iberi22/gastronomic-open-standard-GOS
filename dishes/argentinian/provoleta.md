@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Provoleta Argentina
 region: Pampeana
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Orégano seco
   - Ají molido
   - Aceite de oliva
+main_ingredient_slugs: [null, harina_trigo, oregano, aji_picante, null]
 sensory:
   flavor:
     - Salado

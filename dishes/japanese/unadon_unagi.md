@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Unadon (Anguila sobre Arroz)
 region: Hamamatsu
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - 'Salsa Kabayaki (Soja, Mirin, Sake, Azúcar)'
   - Arroz para sushi
   - Pimienta japonesa Sansho
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Umami dulce intenso

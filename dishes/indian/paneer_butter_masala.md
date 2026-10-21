@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Paneer Butter Masala
 region: Punjab
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Salsa de tomate
   - Anacardos
   - Especias
+main_ingredient_slugs: [null, mantequilla, salsa_tomate, null, null]
 sensory:
   flavor:
     - Salado

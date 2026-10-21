@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Churrasco Gaúcho de Picanha
 region: Brasil
 language: pt
@@ -25,6 +27,7 @@ main_ingredients:
   - Picanha (tapa de cuadril) de res
   - Sal gruesa (sal grosso)
   - Carbón vegetal
+main_ingredient_slugs: [null, null, null]
 sensory:
   flavor:
     - Salado

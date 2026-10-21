@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Panta Bhat
 region: Dhaka
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Chiles verdes frescos
   - Cebolla roja cruda
   - Aceite de mostaza
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Ligeramente ácido

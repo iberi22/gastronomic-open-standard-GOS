@@ -1,0 +1,18 @@
+{
+  "name": "Banano (Guineo)",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Banano (Guineo)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "es": [
+      "guineo",
+      "-8 guineos verdes"
+    ]
+  },
+  "body_md": "# Banano (Guineo)"
+}

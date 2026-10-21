@@ -1,0 +1,12 @@
+{
+  "name": "Arracacha",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Arracacha",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Arracacha"
+}

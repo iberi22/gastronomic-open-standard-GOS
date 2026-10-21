@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Misal Pav
 region: Maharashtra
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Tomate
   - Mezcla de especias kolhapuri
   - Pan dulce (Pav)
+main_ingredient_slugs: [null, null, cebolla_cabezona, tomate, null, null]
 sensory:
   flavor:
     - Extremadamente picante

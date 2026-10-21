@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Natilla Colombiana
 region: Andina / Nacional
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Mantequilla
   - Canela
   - Coco (Opcional)
+main_ingredient_slugs: [maiz, leche, panela, mantequilla, canela, coco]
 sensory:
   flavor:
     - Maíz Dulce

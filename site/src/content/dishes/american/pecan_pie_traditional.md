@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- milk
+- tree_nuts
+- unknown
 title: Pecan Pie Tradicional (Tarta de Nueces Pacanas)
 region: Sur de Estados Unidos
 language: es
@@ -20,6 +25,7 @@ main_ingredients:
   - Huevos
   - Azúcar moreno
   - Mantequilla
+main_ingredient_slugs: [null, null, huevo, null, mantequilla]
 sensory:
   flavor:
     - Dulce

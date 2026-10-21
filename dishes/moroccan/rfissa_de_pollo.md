@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Rfissa de Pollo con Lentejas
 region: Casablanca
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - Lentejas
   - Fenogreco
   - Ras el hanout
+main_ingredient_slugs: [null, null, lentejas, null, null]
 sensory:
   flavor:
     - Salado

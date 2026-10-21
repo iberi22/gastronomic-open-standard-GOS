@@ -3,6 +3,8 @@
   "name": "Vitamina K4",
   "aliases": "menadiol diacetato",
   "unit": "mg",
+  "rda": null,
+  "ul": null,
   "sources": "sintético",
   "functions": "Forma soluble en agua de vitamina K3, pródroga convertida a K3 en el cuerpo",
   "deficiency": "bleeding disorders",

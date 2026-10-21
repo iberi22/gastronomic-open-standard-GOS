@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Patarasca (Pescado en Hojas)
 region: Amazonía
 language: es
@@ -22,6 +25,7 @@ main_ingredients:
   - Cilantro
   - Ajo
   - Limón
+main_ingredient_slugs: [null, null, cilantro, ajo, limon]
 sensory:
   flavor:
     - Umami

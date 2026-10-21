@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Coxinha de Frango Tradicional
 region: Brasil
 language: pt
@@ -28,6 +32,7 @@ main_ingredients:
   - Caldo de pollo concentrado
   - Queso Catupiry o requeijão
   - Pan rallado (farinha de rosca)
+main_ingredient_slugs: [null, harina_trigo, null, null, null]
 sensory:
   flavor:
     - Salado

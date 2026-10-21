@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tzatziki Tradicional
 region: Grecia Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Ajo
   - Aceite de oliva
   - Eneldo o menta
+main_ingredient_slugs: [null, pepino, ajo, null, null]
 sensory:
   flavor:
     - Salado

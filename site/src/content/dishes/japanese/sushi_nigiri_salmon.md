@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- fish
+- soybeans
+- unknown
 title: Nigiri Sushi de Salmón
 region: Tokyo
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Salmón fresco de calidad sushi
   - Wasabi fresco
   - Salsa de soja shoyu
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Vinagre de arroz equilibrado

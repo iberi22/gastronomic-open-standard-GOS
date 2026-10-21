@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Chitol Macher Muitha
 region: Dhaka
 language: es
@@ -30,6 +34,7 @@ main_ingredients:
   - Cúrcuma en polvo
   - Comino molido
   - Aceite de mostaza
+main_ingredient_slugs: [null, null, jengibre, ajo, null, comino, null]
 sensory:
   flavor:
     - Especiado

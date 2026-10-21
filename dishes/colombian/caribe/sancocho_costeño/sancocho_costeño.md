@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Sancocho Costeño
 region: Caribe
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Plátano Verde
   - Mazorca de Maíz
   - Cilantro y Cebolla
+main_ingredient_slugs: [carne_res, cerdo, null, null, platano_verde, maiz, null]
 sensory:
   flavor:
     - Salado profundo

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Pan Aliñado Colombiano
 region: Nacional
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Harina de trigo
   - Mantequilla
   - Huevo
+main_ingredient_slugs: [harina_trigo, mantequilla, huevo]
 sensory:
   flavor:
     - Dulce

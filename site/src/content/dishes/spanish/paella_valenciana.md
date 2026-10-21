@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Paella Valenciana Tradicional
 region: Comunidad Valenciana
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Bajoqueta (judía verde)
   - Garrofón
   - Azafrán
+main_ingredient_slugs: [null, pollo, null, null, null, null]
 sensory:
   flavor:
     - Salado

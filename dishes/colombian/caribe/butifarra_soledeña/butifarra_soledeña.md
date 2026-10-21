@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Butifarra Soledeña
 region: Caribe
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Tripa de Cerdo (Capa serosa natural)
   - Pimienta Picante 'Ojo de Pájaro' (o similar)
   - Ajo y Sal
+main_ingredient_slugs: [carne_res, null, null, null, null]
 sensory:
   flavor:
     - Salado/Especiado (Intenso)

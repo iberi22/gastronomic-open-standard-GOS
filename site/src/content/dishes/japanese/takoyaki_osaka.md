@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- molluscs
+- unknown
 title: Takoyaki de Osaka
 region: Osaka
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Jengibre encurtido red
   - Salsa Takoyaki
   - Ao-nori
+main_ingredient_slugs: [null, harina_trigo, null, null, null, null, null]
 sensory:
   flavor:
     - Umami de pulpo

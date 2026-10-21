@@ -3,6 +3,10 @@ aliases:
   en:
   - Salchipapa
   - Sausage and Fries
+allergens:
+- eggs
+- milk
+- unknown
 categories:
 - Snack
 - Comida rápida
@@ -27,6 +31,7 @@ main_ingredients:
 - Queso rallado
 - Salsas
 - Huevo
+main_ingredient_slugs: [null, salchicha, queso, null, huevo]
 nutrition:
   calories: 1028
   macros:

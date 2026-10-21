@@ -3,6 +3,8 @@
   "name": "Vitamina Q",
   "aliases": "coenzima Q10, ubiquinona",
   "unit": "mg",
+  "rda": null,
+  "ul": null,
   "sources": "carnes de órganos (corazón > hígado > riñón), sardinas, maní, aceite de soja",
   "functions": "Cadena respiratoria mitocondrial (complejo I-II), antioxidante lipídico, función cardíaca",
   "deficiency": "fatiga, mialgia, insuficiencia cardíaca, migraine",

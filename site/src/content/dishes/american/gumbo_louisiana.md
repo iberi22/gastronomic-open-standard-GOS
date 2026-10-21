@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Louisiana Seafood Gumbo
 region: 'Nueva Orleans, LA'
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Okra
   - Roux
   - Arroz
+main_ingredient_slugs: [camaron, null, null, null, arroz]
 sensory:
   flavor:
     - Salado

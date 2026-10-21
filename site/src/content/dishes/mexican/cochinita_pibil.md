@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cochinita Pibil
 region: Yucatán
 language: es
@@ -38,6 +40,7 @@ main_ingredients:
   - Cebolla morada
   - Chile habanero
   - Hojas de plátano
+main_ingredient_slugs: [cerdo, null, null, cebolla_cabezona, null, null]
 sensory:
   flavor:
     - Ácido de naranja agria

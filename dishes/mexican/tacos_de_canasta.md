@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacos de Canasta
 region: Tlaxcala
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Frijoles refritos
   - Aceite de chile guajillo
   - Cebolla
+main_ingredient_slugs: [null, null, null, null, null, cebolla_cabezona]
 sensory:
   flavor:
     - Umami especiado

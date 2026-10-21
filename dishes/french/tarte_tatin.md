@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tarte Tatin
 region: Valle del Loira
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Azúcar
   - Mantequilla
   - Masa hojaldrada
+main_ingredient_slugs: [null, azucar, mantequilla, null]
 sensory:
   flavor:
     - Salado

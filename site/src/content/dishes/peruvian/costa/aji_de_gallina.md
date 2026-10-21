@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Ají de Gallina
 region: Costa/Sierra
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Leche evaporada
   - Nueces (Pecanas)
   - Queso Parmesano
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce-Picante (Ají Amarillo)

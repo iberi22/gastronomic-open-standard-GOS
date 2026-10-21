@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Bhapa Pitha
 region: Mymensingh
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Melaza de palma Gur
   - Coco fresco rallado
   - Sal
+main_ingredient_slugs: [null, null, coco, sal]
 sensory:
   flavor:
     - Dulce meloso

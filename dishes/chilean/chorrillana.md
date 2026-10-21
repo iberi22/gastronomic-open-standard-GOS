@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Chorrillana Chilena
 region: Valparaíso
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Cebolla
   - Huevos
   - Aceite vegetal (para freír)
+main_ingredient_slugs: [papa_pastusa, carne_res, cebolla_cabezona, huevo, aceite]
 sensory:
   flavor:
     - Salado

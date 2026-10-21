@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Croquetas de Jamón Ibérico
 region: España Nacional
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Leche
   - Pan rallado
   - Huevo
+main_ingredient_slugs: [null, null, harina_trigo, leche, null, huevo]
 sensory:
   flavor:
     - Salado

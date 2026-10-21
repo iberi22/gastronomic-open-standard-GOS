@@ -1,3 +1,9 @@
+---
+title: "Stir-Frying/Pan-Frying"
+description: "Ordinary metal (iron/stainless steel/aluminum) wok or non-stick pan can be used."
+tags: ["tips","learn"]
+language: "en"
+---
 # Stir-Frying/Pan-Frying
 
 ## Utensils

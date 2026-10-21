@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Pollo alla Cacciatora
 region: Toscana
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Romero
   - Ajo
   - Aceite de oliva
+main_ingredient_slugs: [pollo, null, null, null, cebolla_cabezona, null, ajo, null]
 sensory:
   flavor:
     - Tomate guisado acido dulce

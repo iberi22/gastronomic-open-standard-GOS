@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Causa Limeña
 region: Costa
 language: es
@@ -28,6 +31,7 @@ main_ingredients:
   - Pechuga de pollo (o atún)
   - Palta (Aguacate)
   - Mayonesa casera
+main_ingredient_slugs: [null, null, null, pollo, null, null]
 sensory:
   flavor:
     - Ácido (Limón)

@@ -1,4 +1,9 @@
 ---
+allergens:
+- eggs
+- milk
+- sulphites
+- unknown
 title: Lasagna alla Bolognese
 region: Emilia-Romaña (Bolonia)
 language: es
@@ -28,6 +33,7 @@ main_ingredients:
   - Leche entera
   - Mantequilla
   - Parmigiano
+main_ingredient_slugs: [null, null, null, null, null, leche, mantequilla, null]
 sensory:
   flavor:
     - Ragù espeso y cárnico

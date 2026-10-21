@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Mote con Huesillos
 region: Central / Metropolitana
 language: es
@@ -29,6 +32,7 @@ main_ingredients:
   - Azúcar granulada
   - Canela en rama
   - Cáscara de naranja
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce

@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Chicken Katsu Curry
 region: Osaka
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Zanahoria
   - Patata
   - Cebolla
+main_ingredient_slugs: [pollo, null, null, null, zanahoria, null, cebolla_cabezona]
 sensory:
   flavor:
     - Curry especiado dulce

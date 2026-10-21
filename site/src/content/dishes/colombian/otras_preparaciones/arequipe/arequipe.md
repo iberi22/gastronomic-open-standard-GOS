@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Arequipe
 region: Nacional
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Leche entera
   - Azúcar
   - Bicarbonato
+main_ingredient_slugs: [leche, azucar, bicarbonato]
 sensory:
   flavor:
     - Caramelo

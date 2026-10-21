@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Loukoumades con Miel y Canela
 region: Atenas
 language: es
@@ -24,6 +27,7 @@ main_ingredients:
   - Miel
   - Canela
   - Nueces picadas
+main_ingredient_slugs: [null, miel, canela, null]
 sensory:
   flavor:
     - Salado

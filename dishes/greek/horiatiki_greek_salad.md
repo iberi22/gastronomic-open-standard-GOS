@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Horiatiki (Ensalada Griega Tradicional)
 region: Grecia Nacional
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Aceitunas Kalamata
   - Aceite de oliva
   - Orégano
+main_ingredient_slugs: [tomate, pepino, null, null, null, oregano]
 sensory:
   flavor:
     - Salado

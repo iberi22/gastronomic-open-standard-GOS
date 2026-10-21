@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Shoyu Ramen Tradicional
 region: Tokyo
 language: es
@@ -27,6 +32,7 @@ main_ingredients:
   - Huevo ajitama
   - Nori
   - Negi (cebollín)
+main_ingredient_slugs: [null, null, null, null, null, nori, null]
 sensory:
   flavor:
     - Umami profundo (Salsa de soja)

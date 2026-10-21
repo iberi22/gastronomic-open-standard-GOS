@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Aborrajado Valluno
 region: Pacífica / Valle del Cauca
 language: es
@@ -27,6 +32,7 @@ main_ingredients:
   - Harina de Trigo
   - Huevo
   - Leche
+main_ingredient_slugs: [platano_maduro, queso, null, harina_trigo, huevo, leche]
 sensory:
   flavor:
     - Plátano Maduro (Dulce)

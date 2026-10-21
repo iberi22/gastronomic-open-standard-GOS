@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Guacamole Colombiano
 region: Colombia
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Cilantro
   - Zumo de limón
   - Huevos cocidos (opcional)
+main_ingredient_slugs: [null, tomate, cebolla_larga, cilantro, limon, huevo]
 prep_time: 10
 cook_time: 30
 servings: 1

@@ -1,0 +1,17 @@
+{
+  "name": "Caracol de Mar",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Caracol de Mar",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Caracol de Mar",
+  "aliases": {
+    "es": [
+      "caracol de mar"
+    ]
+  }
+}

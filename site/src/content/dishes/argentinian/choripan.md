@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Choripán Argentino
 region: Río de la Plata / Pampeana / Nacional
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Pan francés o pan de campo
   - Salsa chimichurri casera
   - Carbón vegetal o leña
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

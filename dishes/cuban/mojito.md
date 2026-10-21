@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mojito Cubano Tradicional
 region: Cuba
 language: es
@@ -30,6 +32,7 @@ main_ingredients:
   - Azúcar blanca refinada
   - Agua con gas (soda o club soda)
   - Hielo en cubos
+main_ingredient_slugs: [null, null, limon, azucar, null, null]
 sensory:
   flavor:
     - Cítrico

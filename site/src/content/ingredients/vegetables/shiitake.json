@@ -1,0 +1,17 @@
+{
+  "name": "Shiitake",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Shiitake",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "香菇"
+    ]
+  },
+  "body_md": "# Shiitake"
+}

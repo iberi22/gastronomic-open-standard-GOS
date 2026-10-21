@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Crema Catalana
 region: Cataluña
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Almidón de maíz
   - Canela
   - Piel de limón
+main_ingredient_slugs: [leche, huevo, azucar, null, canela, null]
 sensory:
   flavor:
     - Salado

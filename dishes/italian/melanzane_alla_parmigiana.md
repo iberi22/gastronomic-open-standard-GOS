@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Parmigiana di Melanzane
 region: Campania / Sicilia
 language: es
@@ -27,6 +30,7 @@ main_ingredients:
   - Albahaca fresca
   - Harina
   - Aceite de oliva para freír
+main_ingredient_slugs: [null, null, null, null, null, harina_trigo, null]
 sensory:
   flavor:
     - Berenjena frita terrosa

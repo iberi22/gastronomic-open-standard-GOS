@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Pescado con Coco Estilo Samaná
 region: República Dominicana
 language: es
@@ -30,6 +33,7 @@ main_ingredients:
   - Ajo fresco
   - Aceite de coco (o vegetal)
   - Cilantro ancho
+main_ingredient_slugs: [null, leche_coco, null, cebolla_cabezona, ajo, null, null]
 sensory:
   flavor:
     - Lácteo (coco)

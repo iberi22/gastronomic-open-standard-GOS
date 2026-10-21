@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pato no Tucupi
 region: Pará, Brasil
 language: pt
@@ -27,6 +29,7 @@ main_ingredients:
   - Folhas de jambu
   - Chicória da Amazônia
   - Alho e pimenta-de-cheiro
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Ácido

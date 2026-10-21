@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Pao Cai Yu (Sichuan Pickled Vegetable Fish)
 region: China
 language: zh
@@ -23,6 +27,7 @@ main_ingredients:
   - 野山椒 (Pickled Wild Chilies)
   - 泡姜 (Pickled Ginger)
   - 花椒 (Sichuan Peppercorns)
+main_ingredient_slugs: [null, null, null, null, pimienta_sichuan]
 sensory:
   flavor:
     - sour

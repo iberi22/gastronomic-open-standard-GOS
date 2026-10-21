@@ -1,0 +1,17 @@
+{
+  "name": "Guascas",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Guascas",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Guascas",
+  "aliases": {
+    "es": [
+      "grande de guascas"
+    ]
+  }
+}

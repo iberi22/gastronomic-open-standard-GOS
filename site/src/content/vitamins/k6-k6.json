@@ -3,6 +3,8 @@
   "name": "Vitamina K6",
   "aliases": "metiltironaftokinona",
   "unit": "mg",
+  "rda": null,
+  "ul": null,
   "sources": "vegetales de hoja verde",
   "functions": "Similar a K1, posible función como cofactor de carboxilasas",
   "deficiency": "no establecido",

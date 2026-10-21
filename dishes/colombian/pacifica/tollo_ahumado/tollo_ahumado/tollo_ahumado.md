@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tollo Ahumado
 region: Pacífica
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - 'Recao de Azotea (Cimarrón, Poleo, Albahaca)'
   - Achiote
   - Vinagre de plátano (opcional tradicional)
+main_ingredient_slugs: [null, leche_coco, null, achiote, null]
 sensory:
   flavor:
     - Ahumado Terroso

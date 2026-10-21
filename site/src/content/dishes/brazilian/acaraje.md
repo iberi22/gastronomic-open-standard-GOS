@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Acarajé Baiano
 region: Brasil
 language: pt
@@ -26,6 +29,7 @@ main_ingredients:
   - Aceite de dendê (palma)
   - Cebolla picada
   - Camarones secos salados
+main_ingredient_slugs: [null, null, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

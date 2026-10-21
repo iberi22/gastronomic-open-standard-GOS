@@ -1,0 +1,21 @@
+{
+  "name": "Fideos",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Fideos",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "面条",
+      "干面条",
+      "鲜面条",
+      "方便面",
+      "泡面"
+    ]
+  },
+  "body_md": "# Fideos"
+}

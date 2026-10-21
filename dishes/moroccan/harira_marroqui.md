@@ -1,4 +1,7 @@
 ---
+allergens:
+- celery
+- unknown
 title: Sopa Harira Tradicional
 region: Marruecos Nacional
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Carne de cordero
   - Cilantro
   - Apio
+main_ingredient_slugs: [tomate, lentejas, null, null, cilantro, apio]
 sensory:
   flavor:
     - Salado

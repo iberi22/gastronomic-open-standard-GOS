@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Chiles Rellenos de Queso
 region: Puebla
 language: es
@@ -26,6 +31,7 @@ main_ingredients:
   - Jitomate
   - Cebolla
   - Harina de trigo
+main_ingredient_slugs: [null, null, huevo, tomate, cebolla_cabezona, harina_trigo]
 sensory:
   flavor:
     - Umami lacteo

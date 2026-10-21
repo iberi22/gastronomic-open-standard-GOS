@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Bisi Bele Bath
 region: Karnataka
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Especias Bisi Bele Bath masala
   - Tamarindo
   - Ghee
+main_ingredient_slugs: [arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Picante

@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Khao Niew Mamuang (Mango Sticky Rice)
 region: Bangkok
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Leche de coco
   - Azúcar
   - Semillas de sésamo o judías sésamo
+main_ingredient_slugs: [arroz_glutinoso, null, leche_coco, azucar, null]
 sensory:
   flavor:
     - Salado

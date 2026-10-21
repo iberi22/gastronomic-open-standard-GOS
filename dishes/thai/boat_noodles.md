@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Kuay Teow Reua (Boat Noodles)
 region: Bangkok
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Caldo especiado oscuro
   - Brotes de soja
   - Albahaca thai
+main_ingredient_slugs: [null, carne_res, null, null, null]
 sensory:
   flavor:
     - Salado

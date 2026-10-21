@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Hayaca Llanera
 region: Orinoquía
 language: es
@@ -25,6 +27,7 @@ main_ingredients:
   - 'Carnes (Res, Cerdo, Gallina)'
   - 'Guiso (Cebolla, Pimentón, Achiote, Alcaparras)'
   - Hojas de Plátano soasadas
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Complejo (Dulce/Salado)

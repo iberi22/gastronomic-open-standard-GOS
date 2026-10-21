@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Sichuan Shuizhu Niurou (Water-Boiled Beef)
 region: China
 language: zh
@@ -23,6 +25,7 @@ main_ingredients:
   - 豆芽 (Bean Sprouts)
   - 四川红油 (Sichuan Chili Oil)
   - 刀口辣椒花椒 (Toasted Chili & Peppercorn Powder)
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - fiery

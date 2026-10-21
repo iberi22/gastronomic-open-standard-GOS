@@ -3,6 +3,8 @@ aliases:
   en:
   - Tacos al Pastor
   - Pork Tacos
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Taquería
@@ -24,6 +26,7 @@ main_ingredients:
 - Tortillas de maíz
 - Cilantro
 - Cebolla picada
+main_ingredient_slugs: [cerdo, null, pina, null, cilantro, cebolla_cabezona]
 nutrition:
   calories: 650
   macros:

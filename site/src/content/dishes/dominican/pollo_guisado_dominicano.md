@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pollo Guisado Dominicano
 region: República Dominicana
 language: es
@@ -30,6 +32,7 @@ main_ingredients:
   - Pasta de tomate
   - Pimiento verde cubanela
   - Aceitunas verdes
+main_ingredient_slugs: [pollo, azucar, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Shutki Bhorta
 region: Chittagong
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Cebolla roja picada
   - Chiles rojos secos enteros
   - Aceite de mostaza virgen
+main_ingredient_slugs: [null, null, cebolla_cabezona, null, null]
 sensory:
   flavor:
     - Intensamente umami

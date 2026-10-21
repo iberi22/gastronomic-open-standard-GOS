@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Kitsune Udon
 region: Osaka
 language: es
@@ -26,6 +30,7 @@ main_ingredients:
   - Salsa de soja clara
   - Mirin
   - Cebollín picado
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce salado equilibrado

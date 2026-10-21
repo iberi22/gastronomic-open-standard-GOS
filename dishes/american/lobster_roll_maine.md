@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- milk
+- unknown
 title: Maine Lobster Roll (Bocadillo de Langosta de Maine)
 region: Maine
 language: es
@@ -20,6 +25,7 @@ main_ingredients:
   - Mayonesa
   - Mantequilla
   - Cebollino
+main_ingredient_slugs: [null, null, mayonesa, mantequilla, null]
 sensory:
   flavor:
     - Marino

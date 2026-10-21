@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Flan de Huevo Tradicional Cubano
 region: Cuba
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Leche evaporada (o leche entera)
   - Azúcar blanca (para el caramelo)
   - Esencia de vainilla
+main_ingredient_slugs: [null, leche_condensada, null, azucar, vainilla]
 sensory:
   flavor:
     - Extremadamente dulce

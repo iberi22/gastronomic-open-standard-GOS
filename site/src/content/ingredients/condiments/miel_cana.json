@@ -1,0 +1,17 @@
+{
+  "name": "Miel de Caña",
+  "group": "Sugar",
+  "i18n": {
+    "es": {
+      "common_name": "Miel de Caña",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Miel de Caña",
+  "aliases": {
+    "es": [
+      "miel de cana"
+    ]
+  }
+}

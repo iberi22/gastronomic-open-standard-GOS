@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacacho con Cecina
 region: Amazonía
 language: es
@@ -20,6 +22,7 @@ main_ingredients:
   - Plátano verde
   - Cecina (cerdo ahumado)
   - Manteca de cerdo
+main_ingredient_slugs: [platano_verde, cecina, manteca_cerdo]
 sensory:
   flavor:
     - Ahumado

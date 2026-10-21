@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Frijoles con Cola de Cerdo (Pig Tail Beans)
 region: Colombia
 language: es
@@ -28,6 +30,7 @@ main_ingredients:
   - Cebolla
   - Tomate
   - Ajo
+main_ingredient_slugs: [frijol, null, platano_verde, cebolla_cabezona, tomate, ajo]
 prep_time: 20
 cook_time: 2
 servings: 8

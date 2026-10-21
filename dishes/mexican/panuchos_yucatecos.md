@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Panuchos Yucatecos
 region: Yucatán
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Cebolla morada encurtida
   - Aguacate
   - Tomate rodajas
+main_ingredient_slugs: [harina_maiz, null, null, null, aguacate, null]
 sensory:
   flavor:
     - Maíz frito

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 language: es
 license: Apache-2.0
 source:

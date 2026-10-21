@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Avena Colombiana (Bebida Fría)
 region: Nacional
 language: es
@@ -20,6 +24,7 @@ main_ingredients:
   - Leche
   - Canela
   - Azúcar
+main_ingredient_slugs: [null, leche, canela, azucar]
 sensory:
   flavor:
     - Dulce

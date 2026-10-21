@@ -1,0 +1,17 @@
+{
+  "name": "Arroz Glutinoso",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Arroz Glutinoso",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "糯米"
+    ]
+  },
+  "body_md": "# Arroz Glutinoso"
+}

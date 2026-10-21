@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Dhakai Morog Polao
 region: Old Dhaka
 language: es
@@ -29,6 +33,7 @@ main_ingredients:
   - Leche evaporada
   - Pasas y almendras
   - Agua de kewra y azafrán
+main_ingredient_slugs: [pollo, null, null, null, null, null]
 sensory:
   flavor:
     - Aromático

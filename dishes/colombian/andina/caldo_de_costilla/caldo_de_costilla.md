@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Caldo de Costilla
 region: Andina
 language: es
@@ -27,6 +29,7 @@ main_ingredients:
   - Ajo
   - Cilantro
   - Agua
+main_ingredient_slugs: [carne_res, papa_pastusa, cebolla_larga, ajo, cilantro, null]
 sensory:
   flavor:
     - Salado

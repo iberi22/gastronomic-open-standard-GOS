@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Stifado de Ternera con Cebollitas
 region: Peloponeso
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Vino tinto
   - Canela
   - Clavo
+main_ingredient_slugs: [carne_res, null, tomate, null, canela, null]
 sensory:
   flavor:
     - Salado

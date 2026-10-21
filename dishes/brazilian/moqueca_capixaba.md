@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Moqueca Capixaba
 region: Espírito Santo, Brasil
 language: pt
@@ -27,6 +30,7 @@ main_ingredients:
   - Cebola branca
   - Coentro fresco
   - Óleo de urucum (colorau)
+main_ingredient_slugs: [null, tomate, null, null, null]
 sensory:
   flavor:
     - Salgado

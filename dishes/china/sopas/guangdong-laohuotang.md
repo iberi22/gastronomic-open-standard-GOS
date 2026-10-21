@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guangdong Laohuotang (Cantonese Slow-Cooked Herbal Pork Soup)
 region: China
 language: zh
@@ -23,6 +25,7 @@ main_ingredients:
   - 枸杞 (Goji Berries)
   - 玉竹 (Polygonatum odoratum)
   - 胡萝卜/无花果 (Carrots or Dried Figs)
+main_ingredient_slugs: [null, null, goji, null, zanahoria]
 sensory:
   flavor:
     - sweet

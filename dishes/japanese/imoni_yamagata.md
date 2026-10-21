@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Imoni Yamagata
 region: Yamagata
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Cebolleta negi cortada en trozos
   - Caldo dashi de kombu
   - Salsa de soja oscura, sake y azúcar
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulzura sazonada de soya dulce estilo sukiyaki

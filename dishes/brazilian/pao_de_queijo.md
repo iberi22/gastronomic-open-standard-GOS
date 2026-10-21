@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Pão de Queijo Mineiro
 region: Brasil
 language: pt
@@ -27,6 +31,7 @@ main_ingredients:
   - Leche entera
   - Aceite vegetal
   - Huevos
+main_ingredient_slugs: [null, null, leche, aceite, huevo]
 sensory:
   flavor:
     - Salado

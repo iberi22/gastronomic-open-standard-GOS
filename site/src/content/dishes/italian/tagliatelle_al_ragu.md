@@ -1,4 +1,10 @@
 ---
+allergens:
+- celery
+- eggs
+- milk
+- sulphites
+- unknown
 title: Tagliatelle al Ragù Bolognese
 region: Emilia-Romaña
 language: es
@@ -29,6 +35,7 @@ main_ingredients:
   - Cebolla
   - Vino blanco
   - Leche
+main_ingredient_slugs: [null, carne_res, null, null, zanahoria, apio, cebolla_cabezona, null, leche]
 sensory:
   flavor:
     - Umami cárnico complejo

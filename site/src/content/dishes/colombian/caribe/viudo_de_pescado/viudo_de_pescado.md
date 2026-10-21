@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Viudo de Pescado
 region: Caribe/Magdalena
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Ñame / Yuca / Plátano / Ahuyama
   - Hogao Criollo
   - Cilantro Cimarrón
+main_ingredient_slugs: [null, null, ñame, null, culantro]
 sensory:
   flavor:
     - Terroso (Natural)

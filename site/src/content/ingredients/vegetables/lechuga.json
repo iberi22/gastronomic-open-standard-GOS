@@ -1,0 +1,22 @@
+{
+  "name": "Lechuga",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Lechuga",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "生菜",
+      "生菜菠菜油麦菜",
+      "青菜"
+    ],
+    "es": [
+      "Lechuga"
+    ]
+  },
+  "body_md": "# Lechuga"
+}

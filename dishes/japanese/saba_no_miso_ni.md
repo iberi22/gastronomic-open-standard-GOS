@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- soybeans
+- unknown
 title: Saba no Miso-ni
 region: Nacional
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Caldo dashi de kombu
   - Sake de cocina, mirin y azúcar
   - Cebolleta negi
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Profundo contraste graso marino con la dulzura salada del miso y toque picante de jengibre

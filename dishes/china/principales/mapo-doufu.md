@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Mapo Doufu (Mapo Tofu)
 region: China
 language: zh
@@ -23,6 +26,7 @@ main_ingredients:
   - 郫县豆瓣酱 (Pixian Doubanjiang)
   - 花椒粉 (Sichuan Peppercorn Powder)
   - 豆豉 (Douchi)
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - numbing

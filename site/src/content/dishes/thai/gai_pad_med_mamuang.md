@@ -1,4 +1,8 @@
 ---
+allergens:
+- molluscs
+- tree_nuts
+- unknown
 title: Gai Pad Med Mamuang (Pollo con Anacardos)
 region: Bangkok
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Pimientos
   - Salsa de ostras
   - Chiles secos
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

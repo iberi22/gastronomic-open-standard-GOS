@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Chilpachole de Jaiba
 region: Veracruz
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Jitomate
   - Epazote
   - Masa de maíz
+main_ingredient_slugs: [null, null, null, tomate, null, harina_maiz]
 sensory:
   flavor:
     - Picante intenso

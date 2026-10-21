@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Pastel de Choclo Chileno
 region: Metropolitana
 language: es
@@ -29,6 +32,7 @@ main_ingredients:
   - Huevos duros
   - Aceitunas negras
   - Pasas
+main_ingredient_slugs: [maiz, carne_res, pollo, cebolla_cabezona, null, huevo, null, null]
 sensory:
   flavor:
     - Dulce

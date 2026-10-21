@@ -1,0 +1,17 @@
+{
+  "name": "Pasta de Soya",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Pasta de Soya",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "黄豆酱"
+    ]
+  },
+  "body_md": "# Pasta de Soya"
+}

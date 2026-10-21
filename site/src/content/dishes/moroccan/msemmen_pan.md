@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Msemmen (Pan Hojaldrado Marroquí)
 region: Marruecos Nacional
 language: es
@@ -24,6 +28,7 @@ main_ingredients:
   - Sémola fina
   - Mantequilla
   - Aceite vegetal
+main_ingredient_slugs: [harina_trigo, null, mantequilla, aceite]
 sensory:
   flavor:
     - Salado

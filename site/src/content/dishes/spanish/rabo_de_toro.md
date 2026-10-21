@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Rabo de Toro Estofado
 region: Andalucía
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Cebolla
   - Puerro
   - Ajo
+main_ingredient_slugs: [null, null, zanahoria, cebolla_cabezona, null, ajo]
 sensory:
   flavor:
     - Salado

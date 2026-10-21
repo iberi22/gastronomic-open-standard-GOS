@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- peanuts
+- unknown
 title: Rocoto Relleno
 region: Sierra
 language: es
@@ -28,6 +32,7 @@ main_ingredients:
   - Maní tostado molido
   - Pasas negras
   - Queso fresco serrano (paria o similar)
+main_ingredient_slugs: [null, carne_res, cebolla_cabezona, mani, null, null]
 sensory:
   flavor:
     - Dulce-Picante (Rocoto desalado)

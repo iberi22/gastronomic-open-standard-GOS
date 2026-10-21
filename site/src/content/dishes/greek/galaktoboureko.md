@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Galaktoboureko (Pastel de Semola y Miel)
 region: Grecia Nacional
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Leche
   - Huevos
   - Jarabe de cítricos
+main_ingredient_slugs: [null, null, leche, huevo, null]
 sensory:
   flavor:
     - Salado

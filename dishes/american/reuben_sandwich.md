@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Classic Reuben Sandwich
 region: 'Nueva York, NY'
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Chucrut
   - Salsa Rusa
   - Pan de centeno
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

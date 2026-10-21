@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mojojoy (Larva de Palma)
 region: Amazonía
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Larva de Mojojoy (*Rhynchophorus palmarum*)
   - Sal de Selva
   - Limón Criollo
+main_ingredient_slugs: [null, null, null]
 sensory:
   flavor:
     - Graso-Manteca

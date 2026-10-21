@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Fabada Asturiana
 region: Asturias
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Chorizo asturiano
   - Morcilla asturiana
   - Tocino
+main_ingredient_slugs: [null, null, null, tocino]
 sensory:
   flavor:
     - Salado

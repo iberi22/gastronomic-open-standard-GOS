@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz con Pollo Peruano
 region: Costa/Sierra
 language: es
@@ -26,6 +28,7 @@ main_ingredients:
   - Ají Amarillo
   - Cerveza Negra
   - Arvejas
+main_ingredient_slugs: [pollo, arroz, cilantro, aji_amarillo, cerveza, arveja]
 sensory:
   flavor:
     - Herbal (Culantro)

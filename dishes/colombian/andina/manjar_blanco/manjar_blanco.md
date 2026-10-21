@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Manjar Blanco
 region: Andina
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Arroz (remojado y molido/licuado)
   - Canela
   - Pasas (opcional/variante)
+main_ingredient_slugs: [leche, azucar, arroz, canela, null]
 sensory:
   flavor:
     - Dulce profundo

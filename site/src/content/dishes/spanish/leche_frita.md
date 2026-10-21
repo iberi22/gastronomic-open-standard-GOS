@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Leche Frita Tradicional
 region: Castilla y León
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Azúcar
   - Huevo
   - Canela en polvo
+main_ingredient_slugs: [null, harina_maiz, azucar, huevo, null]
 sensory:
   flavor:
     - Salado

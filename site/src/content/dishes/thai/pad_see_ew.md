@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Pad See Ew
 region: Bangkok
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Brócoli chino (gai lan)
   - Salsa de soja oscura
   - Huevo
+main_ingredient_slugs: [null, cerdo, null, null, huevo]
 sensory:
   flavor:
     - Salado

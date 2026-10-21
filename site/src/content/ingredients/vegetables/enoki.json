@@ -1,0 +1,17 @@
+{
+  "name": "Enoki",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Enoki",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "金针菇"
+    ]
+  },
+  "body_md": "# Enoki"
+}

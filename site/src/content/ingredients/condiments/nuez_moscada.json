@@ -1,0 +1,12 @@
+{
+  "name": "Nuez Moscada",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Nuez Moscada",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Nuez Moscada"
+}

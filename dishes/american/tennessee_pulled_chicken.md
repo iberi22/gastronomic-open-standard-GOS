@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)
 region: Tennessee
 language: es
@@ -20,6 +22,7 @@ main_ingredients:
   - Vinagre de manzana
   - Azúcar moreno
   - Pimentón ahumado
+main_ingredient_slugs: [pollo, null, null, null, null]
 sensory:
   flavor:
     - Ahumado

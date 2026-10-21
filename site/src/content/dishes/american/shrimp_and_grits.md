@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- milk
+- unknown
 title: Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)
 region: Carolina del Sur
 language: es
@@ -20,6 +25,7 @@ main_ingredients:
   - Queso cheddar
   - Tocineta
   - Ajo
+main_ingredient_slugs: [camaron, null, null, null, ajo]
 sensory:
   flavor:
     - Salado

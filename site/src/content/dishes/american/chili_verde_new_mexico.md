@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)
 region: Nuevo México
 language: es
@@ -20,6 +22,7 @@ main_ingredients:
   - Tomatillos
   - Ajo
   - Caldo de carne
+main_ingredient_slugs: [cerdo, null, null, ajo, null]
 sensory:
   flavor:
     - Picante

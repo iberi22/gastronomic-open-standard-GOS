@@ -3,6 +3,8 @@
   "name": "Vitamina B17",
   "aliases": "laetrilo, amigdalina",
   "unit": "mg",
+  "rda": null,
+  "ul": null,
   "sources": "semillas de albaricoque/melon amargo, almendras amargas, bayas de saúco",
   "functions": "CONTROVERSIAL - claimed cytotoxic a células cancerosas, fuente de cianuro (PELIGRO)",
   "deficiency": "no establecido",

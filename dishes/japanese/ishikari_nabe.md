@@ -1,4 +1,9 @@
 ---
+allergens:
+- fish
+- milk
+- soybeans
+- unknown
 title: Ishikari Nabe
 region: Hokkaido
 language: es
@@ -29,6 +34,7 @@ main_ingredients:
   - Tofu firme
   - Pimienta japonesa sansho
   - Mantequilla de Hokkaido
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Rico umami graso de salmón realzado con miso suave

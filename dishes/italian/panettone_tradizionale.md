@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Panettone Artigianale
 region: Lombardía (Milán)
 language: es
@@ -27,6 +31,7 @@ main_ingredients:
   - Naranja confitada
   - Pasas Sultanas
   - Vainilla
+main_ingredient_slugs: [null, null, null, huevo, null, null, vainilla]
 sensory:
   flavor:
     - Mantequilla rica

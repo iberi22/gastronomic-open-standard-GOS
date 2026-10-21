@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Coq au Vin
 region: Borgoña
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Champiñones
   - Bacon
   - Ajo
+main_ingredient_slugs: [pollo, null, champinon, null, ajo]
 sensory:
   flavor:
     - Salado

@@ -4,10 +4,10 @@
   "aliases": "ácido ascórbico",
   "group": "vitamin",
   "unit": "mg",
-  "rda": 90,
-  "ul": 2000,
+  "rda": "90",
+  "ul": "2000",
   "sources": "pimiento rojo, kiwi, naranja, limón, fresa, brócoli, perejil",
-  "functions": "Antioxidante hidrofílico, síntesis de colágeno (hidroxilación de prolina/lisina), biodisponibilidad del hierro no hem, función inmune\n",
+  "function": "Antioxidante hidrofílico, síntesis de colágeno (hidroxilación de prolina/lisina), biodisponibilidad del hierro no hem, función inmune\n",
   "deficiency": "escorbuto (gingivitis, petequias, hemorrhagias subperiósticas, mala cicatrización)\n",
   "excess": "diarrea osmótica, cálculos renales en susceptible (>2000mg/día)\n",
   "studies": [

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Almojábana (Boyacense/Bogotana)
 region: Andina (Cundiboyacense)
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Cuajada Fresca (Queso no prensado)
   - Huevo
   - Polvo de Hornear / Bicarbonato
+main_ingredient_slugs: [harina_maiz, null, huevo, polvo_hornear]
 sensory:
   flavor:
     - Maíz Dulce

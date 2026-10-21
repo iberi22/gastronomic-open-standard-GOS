@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Florida Key Lime Pie
 region: Florida Keys
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Yemas de huevo
   - Galleta Graham
   - Mantequilla
+main_ingredient_slugs: [null, leche_condensada, huevo, null, mantequilla]
 sensory:
   flavor:
     - Salado

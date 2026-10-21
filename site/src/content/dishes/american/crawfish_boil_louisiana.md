@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)
 region: Luisiana
 language: es
@@ -20,6 +23,7 @@ main_ingredients:
   - Maíz
   - Salchicha andouille
   - Especias cajún
+main_ingredient_slugs: [null, null, maiz, null, null]
 sensory:
   flavor:
     - Picante

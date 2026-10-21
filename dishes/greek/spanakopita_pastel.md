@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Spanakopita (Pastel de Espinacas y Feta)
 region: Epiro
 language: es
@@ -25,6 +30,7 @@ main_ingredients:
   - Queso Feta
   - Eneldo
   - Huevos
+main_ingredient_slugs: [null, null, null, null, huevo]
 sensory:
   flavor:
     - Salado

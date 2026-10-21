@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Tortilla de Patatas Española
 region: España Nacional
 language: es
@@ -25,6 +28,7 @@ main_ingredients:
   - Cebolla (opcional)
   - Aceite de oliva
   - Sal
+main_ingredient_slugs: [null, huevo, cebolla_cabezona, null, sal]
 sensory:
   flavor:
     - Salado

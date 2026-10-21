@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Garulla Soachuna
 region: Andina (Soacha / Cundinamarca)
 language: es
@@ -25,6 +29,7 @@ main_ingredients:
   - Cuajada Fresca
   - Manteca de Cerdo
   - Huevo
+main_ingredient_slugs: [null, null, manteca_cerdo, huevo]
 sensory:
   flavor:
     - Maíz Tostado

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Carolina Pulled Pork Sandwich
 region: Carolina del Norte
 language: es
@@ -24,6 +26,7 @@ main_ingredients:
   - Salsa BBQ
   - Pan de brioche
   - Ensalada coleslaw
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

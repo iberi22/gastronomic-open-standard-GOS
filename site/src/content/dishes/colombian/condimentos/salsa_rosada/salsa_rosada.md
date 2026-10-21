@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Salsa Rosada Colombiana
 region: Colombia
 language: es
@@ -26,6 +29,7 @@ main_ingredients:
   - Salsa de tomate (kétchup)
   - Zumo de limón
   - Gotas de brandy (opcional)
+main_ingredient_slugs: [mayonesa, salsa_tomate, limon, null]
 prep_time: 2
 cook_time: 30
 servings: 1

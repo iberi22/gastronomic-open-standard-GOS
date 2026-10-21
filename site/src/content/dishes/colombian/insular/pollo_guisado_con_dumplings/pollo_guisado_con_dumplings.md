@@ -1,4 +1,6 @@
 ---
+allergens:
+- cereals_gluten
 title: Pollo Guisado con Dumplings
 region: Insular
 language: es
@@ -22,6 +24,7 @@ main_ingredients:
   - Leche de coco
   - Cebolla
   - Tomillo
+main_ingredient_slugs: [pollo, harina_trigo, leche_coco, cebolla_cabezona, tomillo]
 sensory:
   flavor:
     - Umami

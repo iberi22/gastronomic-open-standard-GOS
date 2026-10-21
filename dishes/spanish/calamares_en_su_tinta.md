@@ -3,6 +3,10 @@ aliases:
   en:
   - Squid in Ink
   - Calamari in Ink
+allergens:
+- molluscs
+- sulphites
+- unknown
 categories:
 - Plato fuerte
 - Tradicional
@@ -21,6 +25,7 @@ main_ingredients:
   - Cebolla
   - Vino blanco
   - Tomate
+main_ingredient_slugs: [calamar, null, cebolla_cabezona, null, tomate]
 nutrition:
   calories: 550
   macros:
