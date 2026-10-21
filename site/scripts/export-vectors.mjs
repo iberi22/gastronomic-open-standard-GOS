@@ -208,7 +208,8 @@ function scanDishesCollection() {
       if (seenIds.has(id)) continue
       seenIds.add(id)
 
-      const title = data.title || path.basename(file).replace(/\.(md|json)$/, '')
+      const title =
+        data.title || path.basename(file).replace(/\.(md|json)$/, '')
       const region = data.region || ''
       const categories = Array.isArray(data.categories)
         ? data.categories.join(', ')
