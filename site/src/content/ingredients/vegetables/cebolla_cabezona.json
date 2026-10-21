@@ -10,9 +10,6 @@
     "en": [
       "onion",
       "bulb onion"
-    ],
-    "zh": [
-      "洋葱"
     ]
   },
   "group": "Vegetable",
@@ -53,92 +50,30 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 23.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.04,
-    "folate_ug": 19.0,
-    "iron_mg": 0.21,
-    "magnesium_mg": 10.0,
-    "manganese_mg": 0.13,
-    "niacin_mg": 0.12,
-    "phosphorus_mg": 29.0,
-    "potassium_mg": 146.0,
-    "riboflavin_mg": 0.03,
-    "selenium_ug": 0.5,
-    "sodium_mg": 4.0,
-    "thiamin_mg": 0.05,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.12,
-    "vitamin_c_mg": 7.4,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.02,
-    "vitamin_k_ug": 0.4,
-    "zinc_mg": 0.17
+    "folate_ug": 19,
+    "potassium_mg": 146,
+    "vitamin_c_mg": 7.4
   },
   "name": "Cebolla Cabezona Blanca",
   "nutrition_per_100g": {
-    "calories": 40.0,
-    "carbs_g": 9.34,
+    "calories": 40,
+    "carbs_g": 9.3,
     "fat_g": 0.1,
     "fiber_g": 1.7,
     "protein_g": 1.1,
-    "saturated_fat_g": 0.04,
-    "sugar_g": 4.24
+    "sugar_g": 4.2
   },
   "portions": {
-    "default_g": 100,
-    "household": [
-      {
-        "description": "1 cup, chopped",
-        "grams": 160.0
-      },
-      {
-        "description": "1 cup, sliced",
-        "grams": 115.0
-      },
-      {
-        "description": "1 tbsp chopped",
-        "grams": 10.0
-      },
-      {
-        "description": "1 large",
-        "grams": 150.0
-      },
-      {
-        "description": "1 slice, large (1/4\" thick)",
-        "grams": 38.0
-      },
-      {
-        "description": "1 medium (2-1/2\" dia)",
-        "grams": 110.0
-      },
-      {
-        "description": "1 slice, medium (1/8\" thick)",
-        "grams": 14.0
-      },
-      {
-        "description": "1 small",
-        "grams": 70.0
-      }
-    ]
+    "default_g": 100
   },
   "scientific_name": "Allium cepa",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170000)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "base",
     "guiso",
     "antiinflamatorio"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla blanca es la base aromática por excelencia. Rica en flavonoides, especialmente **quercetina**, que se concentra en las capas externas.\n\n## Culinary Uses\n- **Guiso/Hogao:** Sofrita con tomate.\n- **Cruda:** En ensaladas o ceviches (aporta máxima actividad enzimática).\n- **Caramelizada:** Libera azúcares naturales pero degrada algunos compuestos azufrados.\n\n## Health Benefits\n### Antiinflamatorio\nLa quercetina es uno de los antiinflamatorios naturales más estudiados, útil para condiciones crónicas.\n\n### Salud Metabólica\nEl consumo regular se asocia con mejor control glucémico.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:170000",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla blanca es la base aromática por excelencia. Rica en flavonoides, especialmente **quercetina**, que se concentra en las capas externas.\n\n## Culinary Uses\n- **Guiso/Hogao:** Sofrita con tomate.\n- **Cruda:** En ensaladas o ceviches (aporta máxima actividad enzimática).\n- **Caramelizada:** Libera azúcares naturales pero degrada algunos compuestos azufrados.\n\n## Health Benefits\n### Antiinflamatorio\nLa quercetina es uno de los antiinflamatorios naturales más estudiados, útil para condiciones crónicas.\n\n### Salud Metabólica\nEl consumo regular se asocia con mejor control glucémico."
 }

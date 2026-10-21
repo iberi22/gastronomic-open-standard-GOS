@@ -9,20 +9,6 @@
   "aliases": {
     "en": [
       "pork"
-    ],
-    "es": [
-      "carne de cerdo",
-      "costilla de cerdo",
-      "cuero de cerdo"
-    ],
-    "zh": [
-      "排骨",
-      "猪五花肉",
-      "猪肉末",
-      "瘦肉",
-      "肉丁肉末",
-      "肉末",
-      "肉馅"
     ]
   },
   "group": "Protein",
