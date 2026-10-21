@@ -1,3 +1,9 @@
+---
+title: "How to Decide What to Eat"
+description: "Deciding what to eat is also a big problem for me before cooking. So I can only describe it mathematically."
+tags: ["tips","general"]
+language: "en"
+---
 # How to Decide What to Eat
 
 Deciding what to eat is also a big problem for me before cooking. So I can only describe it mathematically.

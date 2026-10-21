@@ -1,3 +1,9 @@
+---
+title: "Learning Cold Dishes"
+description: "Cold mixing is a way to make a dish by stirring and mixing main ingredients with auxiliary ingredients."
+tags: ["tips","learn"]
+language: "en"
+---
 # Learning Cold Dishes
 
 ## What is Cold Mixing

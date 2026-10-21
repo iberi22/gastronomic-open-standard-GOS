@@ -1,3 +1,9 @@
+---
+title: "Ingredient Techniques"
+description: "The order of adding auxiliary ingredients is basically as follows: First put ginger, then put scallion and garlic, chili, then put dry ingredients (star anise/peppercorns/Sichuan pepper), then put…"
+tags: ["tips","advanced"]
+language: "en"
+---
 # Ingredient Techniques
 
 * The order of adding auxiliary ingredients is basically as follows: First put ginger, then put scallion and garlic, chili, then put dry ingredients (star anise/peppercorns/Sichuan pepper), then put dried chili. For each of the above steps, depending on the dish being made, unnecessary auxiliary ingredients can be removed from the queue.

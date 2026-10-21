@@ -1,3 +1,9 @@
+---
+title: "Food Safety"
+description: "The following foods have risk of causing poisoning:"
+tags: ["tips","learn"]
+language: "en"
+---
 # Food Safety
 
 ## Poisoning

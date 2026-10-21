@@ -1,3 +1,9 @@
+---
+title: "Steaming (Rice)/Stewing (Using Rice Cooker/Pressure Cooker/Electric Pressure Cooker)"
+description: "Pressure cooker is actually a general pot plus a lockable semi-sealed lid, lid has valve, can be used to control pressure inside pot."
+tags: ["tips","learn"]
+language: "en"
+---
 # Steaming (Rice)/Stewing (Using Rice Cooker/Pressure Cooker/Electric Pressure Cooker)
 
 ## What is Pressure Cooker

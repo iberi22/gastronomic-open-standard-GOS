@@ -1,3 +1,9 @@
+---
+title: "Removing Fishy Smell"
+description: "Removing fishy smell is a process in cooking."
+tags: ["tips","learn"]
+language: "en"
+---
 # Removing Fishy Smell
 
 Removing fishy smell is a process in cooking.

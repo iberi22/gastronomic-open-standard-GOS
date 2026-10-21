@@ -1,3 +1,9 @@
+---
+title: "Using Microwave Oven"
+description: "Microwave oven was invented in 1945 by Percy LeBaron Spencer."
+tags: ["tips","learn"]
+language: "en"
+---
 # Using Microwave Oven
 
 ## What is Microwave Oven

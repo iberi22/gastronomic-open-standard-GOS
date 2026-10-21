@@ -1,3 +1,9 @@
+---
+title: "Advanced Professional Terminology"
+description: "Cooking is like learning programming, first you need to recognize professional terminology just like learning basic syntax, only through the combination of terminology can a dish be completed."
+tags: ["tips","advanced"]
+language: "en"
+---
 # Advanced Professional Terminology
 
 Cooking is like learning programming, first you need to recognize professional terminology just like learning basic syntax, only through the combination of terminology can a dish be completed.

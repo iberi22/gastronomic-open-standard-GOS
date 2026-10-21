@@ -1,3 +1,9 @@
+---
+title: "Using Air Fryer"
+description: "Air fryer is an electronic cooker, using air instead of hot oil to heat, making food cooked, allowing ingredients to achieve similar deep-fry effect without encountering oil."
+tags: ["tips","learn"]
+language: "en"
+---
 # Using Air Fryer
 
 ## What is Air Fryer

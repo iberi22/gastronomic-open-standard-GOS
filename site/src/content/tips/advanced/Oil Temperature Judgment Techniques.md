@@ -1,3 +1,9 @@
+---
+title: "Oil Temperature Judgment Techniques and Common Temperature and Unit Conversion Table"
+description: "Oil temperature between 120°C-140°C: Suitable for soft frying[^1], stir-frying[^2]. Put chopsticks into the oil pot, basically no bubbles around, no blue smoke, no sound, oil temperature calm."
+tags: ["tips","advanced"]
+language: "en"
+---
 # Oil Temperature Judgment Techniques and Common Temperature and Unit Conversion Table
 
 * Oil temperature between 120°C-140°C: Suitable for soft frying[^1], stir-frying[^2]. Put chopsticks into the oil pot, basically no bubbles around, no blue smoke, no sound, oil temperature calm.
