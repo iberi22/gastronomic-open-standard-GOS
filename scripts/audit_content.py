@@ -12,6 +12,7 @@ Options:
   --json PATH                 Path to write JSON output report
   --md PATH                   Path to write Markdown output report
   --check                     Exit non-zero if threshold metrics are violated
+  --report                    Print per-field fill rates (frontmatter) for dishes/ and ingredients/
   --quiet                     Suppress output to console
   --allow-missing-graph       Do not fail --check if site/public/graph-data.json is missing
   --max-missing-sensorial N   Max allowed recipes missing sensory section (default: 211)
@@ -347,6 +348,81 @@ def build_scorecard(recipes: dict, ingredients: dict, graph: dict) -> list:
     return scorecard
 
 
+RECIPE_FILL_FIELDS = [
+    "title", "region", "description", "categories", "prep_time", "cook_time",
+    "servings", "main_ingredients", "sensory", "nutrition", "tags", "images", "aliases",
+]
+INGREDIENT_FILL_FIELDS = [
+    "name", "group", "scientific_name", "image", "nutrition_per_100g", "micronutrients",
+    "portions", "sources", "data_sources", "tags", "aliases", "health_registry", "substitutes",
+]
+
+# Canonical trees (copy-content.js regenerates site/src/content/dishes from root dishes/;
+# ingredients are canonical under site/src/content/ingredients, root ingredients/ is a legacy mirror).
+CANONICAL_DISHES_REL = Path("dishes")
+CANONICAL_INGREDIENTS_REL = Path("site") / "src" / "content" / "ingredients"
+
+
+def canonical_dirs(root_dir: Path) -> tuple:
+    """Returns (dishes_dir, ingredients_dir) of the canonical trees under root_dir."""
+    return root_dir / CANONICAL_DISHES_REL, root_dir / CANONICAL_INGREDIENTS_REL
+
+
+def count_sources(records: list) -> dict:
+    """Counts records with non-empty `sources`, non-empty `data_sources`, or either."""
+    counts = {"total": len(records), "sources": 0, "data_sources": 0, "any": 0}
+    for fm in records:
+        has_s = _is_filled(fm.get("sources"))
+        has_d = _is_filled(fm.get("data_sources"))
+        counts["sources"] += has_s
+        counts["data_sources"] += has_d
+        counts["any"] += has_s or has_d
+    return counts
+
+
+def _is_filled(value) -> bool:
+    """None, blank strings and empty lists/dicts are unfilled; 0 and False are real values."""
+    if value is None:
+        return False
+    if isinstance(value, str):
+        return value.strip() != ""
+    if isinstance(value, (list, dict)):
+        return len(value) > 0
+    return True
+
+
+def collect_frontmatters(directory: Path) -> list:
+    """Returns the parsed frontmatter of every content file (same file set as the audit)."""
+    if not directory.exists():
+        return []
+    records = []
+    for p in sorted(directory.rglob("*.md")):
+        if p.name in ("README.md", "_template.md"):
+            continue
+        records.append(parse_frontmatter(p.read_text(encoding="utf-8", errors="ignore")))
+    return records
+
+
+def compute_fill_rates(records: list, fields: list) -> dict:
+    """Per-field fill rate: {field: {filled, total, pct}}. pct is 0.0 when there are no records."""
+    total = len(records)
+    rates = {}
+    for field in fields:
+        filled = sum(1 for fm in records if _is_filled(fm.get(field)))
+        rates[field] = {
+            "filled": filled,
+            "total": total,
+            "pct": round(filled * 100 / total, 2) if total else 0.0,
+        }
+    return rates
+
+
+def print_fill_report(title: str, rates: dict) -> None:
+    print(f"📈 Fill rates — {title}")
+    for field, r in rates.items():
+        print(f"  • {field:<20} {r['filled']:>5}/{r['total']:<5} {r['pct']:6.2f}%")
+
+
 def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
     """Generates the Markdown audit report (CONTENT_AUDIT.md)."""
     lines = []
@@ -408,11 +484,11 @@ def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
         lines.append(f"| {reg} | {cnt} |")
 
     lines.append("")
-    lines.append("## 🥕 Ingredientes (`ingredients/`)")
+    lines.append("## 🥕 Ingredientes (`site/src/content/ingredients/`)")
     lines.append("")
-    lines.append(f"- **Curados (`ingredients/<categoria>/`):** {ing['curated']}")
-    lines.append(f"- **Pendientes (`ingredients/pending_review/`):** {ing['pending_review']}")
-    lines.append(f"- **Archivados (`ingredients/_archive/`):** {ing['archive']}")
+    lines.append(f"- **Curados (`{CANONICAL_INGREDIENTS_REL}/<categoria>/`):** {ing['curated']}")
+    lines.append(f"- **Pendientes (`{CANONICAL_INGREDIENTS_REL}/pending_review/`):** {ing['pending_review']}")
+    lines.append(f"- **Archivados (`{CANONICAL_INGREDIENTS_REL}/_archive/`):** {ing['archive']}")
     lines.append(f"- **Archivos con nombre no latino (CJK/Otros):** {ing['non_latin_name']}")
     lines.append(f"- **Archivos con valores data 'Unknown':** {ing['data_values_unknown']}")
     lines.append(f"- **Cobertura de Aliases:** {ing['aliases_coverage']['count']} ({ing['aliases_coverage']['percentage']}%)")
@@ -491,6 +567,84 @@ def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
     return "\n".join(lines)
 
 
+def run_self_test() -> int:
+    """Offline checks for canonical paths and source counting (no repo content needed)."""
+    import tempfile
+
+    failures = []
+
+    def expect(cond: bool, msg: str) -> None:
+        if not cond:
+            failures.append(msg)
+
+    root = Path("/__root__")
+    dishes_dir, ingredients_dir = canonical_dirs(root)
+    expect(dishes_dir == root / "dishes", f"dishes canonical path wrong: {dishes_dir}")
+    expect(
+        ingredients_dir == root / "site" / "src" / "content" / "ingredients",
+        f"ingredients canonical path wrong: {ingredients_dir}",
+    )
+
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        (t / "a.md").write_text("---\nname: A\nsources:\n  - name: USDA\n    id: 1\n---\n", encoding="utf-8")
+        (t / "b.md").write_text("---\nname: B\ndata_sources:\n  - name: USDA\n    id: 2\n---\n", encoding="utf-8")
+        (t / "c.md").write_text("---\nname: C\nsources: []\ndata_sources: []\n---\n", encoding="utf-8")
+        (t / "d.md").write_text("---\nname: D\n---\n", encoding="utf-8")
+        counts = count_sources(collect_frontmatters(t))
+        expect(
+            counts == {"total": 4, "sources": 1, "data_sources": 1, "any": 2},
+            f"source counts wrong: {counts}",
+        )
+
+    # main() must audit the canonical ingredients tree (site/src/content/ingredients), never the
+    # legacy root ingredients/ mirror. Fixture sizes differ (1 legacy vs 3 canonical) so the count tells them apart.
+    import contextlib
+    import io
+    import os
+
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        (t / "ingredients" / "legacy").mkdir(parents=True)
+        (t / "ingredients" / "legacy" / "x.md").write_text("---\nname: X\n---\n", encoding="utf-8")
+        canon = t / "site" / "src" / "content" / "ingredients" / "frutas"
+        canon.mkdir(parents=True)
+        for name in ("a", "b", "c"):
+            (canon / f"{name}.md").write_text(f"---\nname: {name}\n---\n", encoding="utf-8")
+        out_json = t / "out.json"
+        out_md = t / "out.md"
+        prev_cwd, prev_argv = os.getcwd(), sys.argv
+        buf = io.StringIO()
+        try:
+            os.chdir(t)
+            sys.argv = ["audit_content.py", "--quiet", "--report", "--json", str(out_json), "--md", str(out_md)]
+            with contextlib.redirect_stdout(buf):
+                try:
+                    main()
+                except SystemExit as e:
+                    expect(e.code == 0, f"main() exit code was {e.code}, expected 0")
+        finally:
+            os.chdir(prev_cwd)
+            sys.argv = prev_argv
+
+        if out_json.exists():
+            ing_total = json.loads(out_json.read_text(encoding="utf-8"))["ingredients"]["total"]
+            expect(ing_total == 3, f"main() counted {ing_total} ingredients, expected 3 from site/src/content/ingredients")
+        else:
+            failures.append("main() did not write the JSON report")
+        expect(f"ingredientes ({CANONICAL_INGREDIENTS_REL}, 3)" in buf.getvalue(), f"--report title does not show the canonical ingredients dir: {buf.getvalue()!r}")
+        md_text = out_md.read_text(encoding="utf-8") if out_md.exists() else ""
+        expect(f"`{CANONICAL_INGREDIENTS_REL}/<categoria>/`" in md_text, "markdown curated label does not use the canonical path")
+        expect(f"`{CANONICAL_INGREDIENTS_REL}/pending_review/`" in md_text, "markdown pending label does not use the canonical path")
+
+    for msg in failures:
+        print(f"FAIL: {msg}", file=sys.stderr)
+    if failures:
+        return 1
+    print("self-test OK")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="GOS Content & Interconnection Audit Tool"
@@ -500,6 +654,8 @@ def main():
     parser.add_argument("--check", action="store_true", help="Validate metrics against thresholds and exit non-zero on failure")
     parser.add_argument("--quiet", action="store_true", help="Suppress console log output")
     parser.add_argument("--allow-missing-graph", action="store_true", help="Do not fail --check if graph-data.json is missing")
+    parser.add_argument("--report", action="store_true", help="Print per-field fill rates for dishes/ and ingredients/")
+    parser.add_argument("--self-test", action="store_true", help="Run offline self-tests (canonical paths, source counts) and exit")
 
     # Threshold flags
     parser.add_argument("--max-missing-sensorial", type=int, default=211, help="Max missing sensory recipes allowed (default: 211)")
@@ -510,9 +666,11 @@ def main():
 
     args = parser.parse_args()
 
+    if args.self_test:
+        raise SystemExit(run_self_test())
+
     root_dir = Path(".")
-    dishes_dir = root_dir / "dishes"
-    ingredients_dir = root_dir / "ingredients"
+    dishes_dir, ingredients_dir = canonical_dirs(root_dir)
     graph_json_path = root_dir / "site" / "public" / "graph-data.json"
 
     if not args.quiet:
@@ -537,6 +695,19 @@ def main():
             print(f"  • Graph: {graph_data['nodes']} nodes | {graph_data['edges']} edges | {graph_data['isolated_count']} isolated | {graph_data['orphan_count']} orphans | {graph_data['edge_vocabulary_count']} edge types")
         else:
             print(f"  • Graph: ⚠️ {graph_data.get('message')}")
+
+    if args.report:
+        print_fill_report(
+            f"recetas (dishes/, {recipes_data['total']})",
+            compute_fill_rates(collect_frontmatters(dishes_dir), RECIPE_FILL_FIELDS),
+        )
+        ing_records = collect_frontmatters(ingredients_dir)
+        print_fill_report(
+            f"ingredientes ({ingredients_dir}, {ingredients_data['total']})",
+            compute_fill_rates(ing_records, INGREDIENT_FILL_FIELDS),
+        )
+        src = count_sources(ing_records)
+        print(f"  • with sources: {src['sources']}/{src['total']} | with data_sources: {src['data_sources']}/{src['total']} | with any source: {src['any']}/{src['total']}")
 
     # Write JSON output if requested
     if args.json:

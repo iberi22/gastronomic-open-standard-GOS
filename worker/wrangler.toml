@@ -8,29 +8,20 @@ compatibility_flags = ["nodejs_compat"]
 # gateway servia gos-site.pages.dev, que ya no es el sitio publicado: todo
 # canonical/og:url que emitia el proxy apuntaba al host viejo.
 ORIGIN_URL = "https://gos.swal.network"
-# Cupo diario ANONIMO por IP (la variable conserva el nombre historico; ya no
-# existe ningun tier de pago).
-FREE_DAILY_LIMIT = "100"
 
-# Sin KV: el namespace compartido (SWAL_KV del sitio) superaba las 1000
-# escrituras/dia del free tier. El limiter anonimo va por Rate Limiting
-# bindings (sin cuota de KV) y la cuota diaria por un UPSERT en D1.
-# namespace_id: entero propio de esta cuenta, unico por limiter.
+# Sin KV ni D1: el gateway no tiene base de datos (decision del owner,
+# 2026-10-21). El unico limite anonimo es la rafaga por IP (30/60 s) sobre el
+# Rate Limiting binding. namespace_id: entero propio de esta cuenta, unico por
+# limiter.
 [[ratelimits]]
 name = "RL_FREE_BURST"
 namespace_id = "7101"
 simple = { limit = 30, period = 60 }
 
-# D1 se conserva SOLO para free_quota (contador diario anonimo por IP).
-# api_keys y credit_ledger siguen en el esquema por historia de migraciones,
-# pero el gateway ya no las consulta (ver worker/schema.sql).
-[[d1_databases]]
-binding = "DB"
-database_name = "gos-billing"
-database_id = "1c920534-54fc-449e-b944-180bf96ffe37"
-
 # Eliminado el 2026-10-15 junto con el resto del cobro:
 #   [ai] binding = "AI"           -> sin inferencia; /api/ai/infer responde 404
 #   [[ratelimits]] RL_AUTH         -> solo existia para throttlear intentos de key
 #   BILLING_URL / SERVICE_SHARED_SECRET -> sin keys no hay nada que validar
-# No se borran tablas D1 ni migraciones que pudieron aplicarse.
+# Eliminados el 2026-10-21: binding D1 "DB" (gos-billing) y la cuota diaria.
+# La base D1 NO se borra desde el repo; la retira el owner en Cloudflare.
+# El esquema historico vive en worker/legacy/schema.sql (no desplegado).

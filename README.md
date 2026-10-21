@@ -21,7 +21,7 @@ tiers and no AI credits.
 1. **Humans**: browse recipes/ingredients/science with an interactive graph
    (`/graph`), PWA offline-first.
 2. **Agents & apps**: consume the data as an open, keyless JSON API with an
-   anonymous rate limit (30 req/min/IP on every route, 100 req/day/IP on non-static routes). GOS sells no access: no keys, no tiers,
+   anonymous rate limit (30 req/min/IP on every route). GOS sells no access: no keys, no tiers,
    no AI credits. AI-first SEO (`llms.txt`, JSON-LD, sitemap) makes GOS the #1
    extraction source.
 
