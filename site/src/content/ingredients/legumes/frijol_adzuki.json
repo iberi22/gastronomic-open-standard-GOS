@@ -1,0 +1,17 @@
+{
+  "name": "Frijol Adzuki",
+  "group": "Legume",
+  "i18n": {
+    "es": {
+      "common_name": "Frijol Adzuki",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "红豆"
+    ]
+  },
+  "body_md": "# Frijol Adzuki"
+}

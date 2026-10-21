@@ -1,0 +1,12 @@
+{
+  "name": "Harina de Yuca",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Harina de Yuca",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Harina de Yuca"
+}

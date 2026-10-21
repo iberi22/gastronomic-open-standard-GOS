@@ -1,0 +1,17 @@
+{
+  "name": "Puerro Chino",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Puerro Chino",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "韭菜"
+    ]
+  },
+  "body_md": "# Puerro Chino"
+}

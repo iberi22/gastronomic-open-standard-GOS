@@ -1,0 +1,17 @@
+{
+  "name": "Pimentón Verde",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Pimentón Verde",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "青椒"
+    ]
+  },
+  "body_md": "# Pimentón Verde"
+}

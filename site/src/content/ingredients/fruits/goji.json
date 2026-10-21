@@ -1,0 +1,17 @@
+{
+  "name": "Goji",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Goji",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "枸杞"
+    ]
+  },
+  "body_md": "# Goji"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Aceite de Achiote",
+  "group": "Oil",
+  "i18n": {
+    "es": {
+      "common_name": "Aceite de Achiote",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Aceite de Achiote",
+  "aliases": {
+    "es": [
+      "Aceite De Achiote"
+    ]
+  }
+}

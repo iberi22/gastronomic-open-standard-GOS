@@ -1,0 +1,22 @@
+{
+  "name": "Caldo",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Caldo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "牛肉高汤",
+      "蔬菜高汤"
+    ],
+    "es": [
+      "caldo de pescado",
+      "caldo de pollo"
+    ]
+  },
+  "body_md": "# Caldo"
+}

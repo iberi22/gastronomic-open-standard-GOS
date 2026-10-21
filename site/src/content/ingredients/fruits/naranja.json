@@ -1,0 +1,12 @@
+{
+  "name": "Naranja",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Naranja",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Naranja"
+}

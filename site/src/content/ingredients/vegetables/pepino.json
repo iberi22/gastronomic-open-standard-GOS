@@ -1,0 +1,17 @@
+{
+  "name": "Pepino",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Pepino",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "黄瓜"
+    ]
+  },
+  "body_md": "# Pepino"
+}

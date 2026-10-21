@@ -1,0 +1,17 @@
+{
+  "name": "Achiote",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Achiote",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "es": [
+      "color"
+    ]
+  },
+  "body_md": "# Achiote"
+}

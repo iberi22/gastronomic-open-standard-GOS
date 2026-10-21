@@ -1,0 +1,17 @@
+{
+  "name": "Azufaifo (Jujuba)",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Azufaifo (Jujuba)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "红枣"
+    ]
+  },
+  "body_md": "# Azufaifo (Jujuba)"
+}

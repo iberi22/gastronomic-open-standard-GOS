@@ -41,5 +41,12 @@
     "adobo",
     "umami"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa salsa de soya es el pilar del sabor en la cocina asiática. Es rica en glutamato natural (Umami).\n\n## Culinary Uses\n- **Arroz Chino:** Sabor y color oscuro.\n- **Marinados:** Ablanda carnes por su acidez y enzimas.\n\n## Health Benefits\n### Umami y Apetito\nEl sabor Umami estimula la salivación y el apetito, útil en dietas para adultos mayores con anorexia, aunque debe controlarse por el sodio."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa salsa de soya es el pilar del sabor en la cocina asiática. Es rica en glutamato natural (Umami).\n\n## Culinary Uses\n- **Arroz Chino:** Sabor y color oscuro.\n- **Marinados:** Ablanda carnes por su acidez y enzimas.\n\n## Health Benefits\n### Umami y Apetito\nEl sabor Umami estimula la salivación y el apetito, útil en dietas para adultos mayores con anorexia, aunque debe controlarse por el sodio.",
+  "aliases": {
+    "zh": [
+      "生抽",
+      "老抽",
+      "酱油"
+    ]
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "Mijo",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Mijo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "小米"
+    ]
+  },
+  "body_md": "# Mijo"
+}

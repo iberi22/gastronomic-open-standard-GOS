@@ -1,0 +1,12 @@
+{
+  "name": "Pulpo",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Pulpo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Pulpo"
+}

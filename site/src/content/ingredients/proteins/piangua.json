@@ -1,0 +1,12 @@
+{
+  "name": "Piangua",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Piangua",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Piangua"
+}

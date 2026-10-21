@@ -1,0 +1,24 @@
+{
+  "name": "Cangrejo (Jaiba/Langosta)",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Cangrejo (Jaiba/Langosta)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "螃蟹",
+      "肉蟹",
+      "青蟹"
+    ],
+    "es": [
+      "caparazones de cangrejo",
+      "carne de cangrejo",
+      "jaiba"
+    ]
+  },
+  "body_md": "# Cangrejo (Jaiba/Langosta)"
+}

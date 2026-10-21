@@ -39,5 +39,13 @@
     "aroma",
     "asiatico"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aceite de ajonjolí tostado es un aceite \"de finalización\", no de cocción (debido a su bajo punto de humo). Aporta un aroma a nuez intenso.\n\n## Culinary Uses\n- **Finalizador:** Unas gotas sobre sopas o salteados al apagar el fuego.\n- **Aderezos:** Mezclado con soya y vinagre.\n\n## Health Benefits\n### Salud Arterial\nLos lignanos del sésamo ayudan a reducir la oxidación del colesterol LDL."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aceite de ajonjolí tostado es un aceite \"de finalización\", no de cocción (debido a su bajo punto de humo). Aporta un aroma a nuez intenso.\n\n## Culinary Uses\n- **Finalizador:** Unas gotas sobre sopas o salteados al apagar el fuego.\n- **Aderezos:** Mezclado con soya y vinagre.\n\n## Health Benefits\n### Salud Arterial\nLos lignanos del sésamo ayudan a reducir la oxidación del colesterol LDL.",
+  "aliases": {
+    "zh": [
+      "芝麻油",
+      "芝麻香油",
+      "香油",
+      "麻油"
+    ]
+  }
 }

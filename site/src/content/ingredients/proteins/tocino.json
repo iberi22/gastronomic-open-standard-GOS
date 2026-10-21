@@ -1,0 +1,17 @@
+{
+  "name": "Tocino",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Tocino",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "咸肉"
+    ]
+  },
+  "body_md": "# Tocino"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Manteca de Cerdo",
+  "group": "Oil",
+  "i18n": {
+    "es": {
+      "common_name": "Manteca de Cerdo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "猪油"
+    ],
+    "es": [
+      "manteca de cerdo",
+      "grasa de cerdo"
+    ]
+  },
+  "body_md": "# Manteca de Cerdo"
+}

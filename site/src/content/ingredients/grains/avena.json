@@ -1,0 +1,12 @@
+{
+  "name": "Avena",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Avena",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Avena"
+}

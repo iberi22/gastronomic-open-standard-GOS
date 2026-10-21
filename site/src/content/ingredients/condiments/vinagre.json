@@ -1,0 +1,21 @@
+{
+  "name": "Vinagre",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Vinagre",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "香醋"
+    ],
+    "es": [
+      "alcaparras",
+      "vinagre blanco"
+    ]
+  },
+  "body_md": "# Vinagre"
+}

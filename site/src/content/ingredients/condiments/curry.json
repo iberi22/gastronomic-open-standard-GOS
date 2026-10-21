@@ -1,0 +1,17 @@
+{
+  "name": "Curry",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Curry",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "咖喱块"
+    ]
+  },
+  "body_md": "# Curry"
+}

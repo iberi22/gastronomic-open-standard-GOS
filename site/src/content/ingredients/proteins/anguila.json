@@ -1,0 +1,17 @@
+{
+  "name": "Anguila",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Anguila",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "鳝丝"
+    ]
+  },
+  "body_md": "# Anguila"
+}

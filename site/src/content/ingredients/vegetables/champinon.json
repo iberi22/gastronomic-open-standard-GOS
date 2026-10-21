@@ -1,0 +1,17 @@
+{
+  "name": "Champiñón",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Champiñón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "白蘑菇"
+    ]
+  },
+  "body_md": "# Champiñón"
+}

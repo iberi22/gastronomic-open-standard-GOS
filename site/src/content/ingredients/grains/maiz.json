@@ -130,5 +130,18 @@
     "vision",
     "nixtamalization"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl maíz es nativo de América y fundamental en la dieta andina y mesoamericana. El maíz amarillo es notablemente rico en carotenoides antioxidantes, mientras que el proceso tradicional de nixtamalización desbloquea un perfil nutricional superior.\n\n## Culinary Uses\n- **Mazorca:** Cocida en sopas (Ajiaco, Sancocho).\n- **Desgranado:** En ensaladas o arroces.\n- **Masa Nixtamalizada:** Base de tortillas, tamales, pozole, sopes y tlacoyos.\n\n## Health Benefits\n### Salud Visual\nEs uno de los pocos granos que contiene niveles significativos de luteína y zeaxantina, protegiendo los ojos del daño oxidativo.\n\n### Bioquímica de la Nixtamalización\nLa cocción alcalina con hidróxido de calcio (*cal*) altera la matriz lipídica y proteica del grano de maíz:\n1. **Liberación de Niacina:** Descompone las hemicelulosas y libera la niacina ligada (*niacitina*), haciéndola asimilable por el intestino humano.\n2. **Aporte de Calcio e Inhibición de Fitatos:** Incrementa sustancialmente el contenido de calcio biodisponible y reduce fitatos que inhiben la absorción mineral.\n3. **Reducción de Micotoxinas:** Neutraliza e hidroliza aflatoxinas y fumonisinas solubilizándolas en el agua de cocción (*nejayote*)."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl maíz es nativo de América y fundamental en la dieta andina y mesoamericana. El maíz amarillo es notablemente rico en carotenoides antioxidantes, mientras que el proceso tradicional de nixtamalización desbloquea un perfil nutricional superior.\n\n## Culinary Uses\n- **Mazorca:** Cocida en sopas (Ajiaco, Sancocho).\n- **Desgranado:** En ensaladas o arroces.\n- **Masa Nixtamalizada:** Base de tortillas, tamales, pozole, sopes y tlacoyos.\n\n## Health Benefits\n### Salud Visual\nEs uno de los pocos granos que contiene niveles significativos de luteína y zeaxantina, protegiendo los ojos del daño oxidativo.\n\n### Bioquímica de la Nixtamalización\nLa cocción alcalina con hidróxido de calcio (*cal*) altera la matriz lipídica y proteica del grano de maíz:\n1. **Liberación de Niacina:** Descompone las hemicelulosas y libera la niacina ligada (*niacitina*), haciéndola asimilable por el intestino humano.\n2. **Aporte de Calcio e Inhibición de Fitatos:** Incrementa sustancialmente el contenido de calcio biodisponible y reduce fitatos que inhiben la absorción mineral.\n3. **Reducción de Micotoxinas:** Neutraliza e hidroliza aflatoxinas y fumonisinas solubilizándolas en el agua de cocción (*nejayote*).",
+  "aliases": {
+    "es": [
+      "choclo",
+      "maiz trillado",
+      "maiz blanco trillado",
+      "mazorca de maiz",
+      "mazorcas de maiz",
+      "mazorcas"
+    ],
+    "zh": [
+      "玉米粒"
+    ]
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "Brote de Bambú",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Brote de Bambú",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "冬笋"
+    ]
+  },
+  "body_md": "# Brote de Bambú"
+}

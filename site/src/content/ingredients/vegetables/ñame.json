@@ -1,0 +1,17 @@
+{
+  "name": "Ñame",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Ñame",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Ñame",
+  "aliases": {
+    "es": [
+      "names"
+    ]
+  }
+}

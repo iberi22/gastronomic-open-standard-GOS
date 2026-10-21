@@ -9,6 +9,12 @@
   "aliases": {
     "en": [
       "wheat flour"
+    ],
+    "es": [
+      "harina de trigo"
+    ],
+    "zh": [
+      "面粉"
     ]
   },
   "group": "Grain",

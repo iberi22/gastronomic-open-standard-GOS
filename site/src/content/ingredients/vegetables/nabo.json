@@ -1,0 +1,17 @@
+{
+  "name": "Nabo",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Nabo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Nabo",
+  "aliases": {
+    "es": [
+      "Nabo"
+    ]
+  }
+}

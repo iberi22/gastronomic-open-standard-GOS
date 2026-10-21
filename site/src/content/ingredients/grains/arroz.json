@@ -59,5 +59,15 @@
     "energia",
     "sin_gluten"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl arroz blanco es la fuente de energía primaria en Colombia. Aunque el proceso de refinado elimina la cáscara (fibra), lo convierte en una fuente de energía rápida y fácil digestión.\n\n## Culinary Uses\n- **Arroz Blanco:** Acompañante universal.\n- **Arroz con Pollo/Coco:** Base estructural que absorbe sabores.\n\n## Health Benefits\n### Energía Rápida\nIdeal para deportistas o recuperación nutricional donde se requiere densidad calórica sin exceso de fibra."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl arroz blanco es la fuente de energía primaria en Colombia. Aunque el proceso de refinado elimina la cáscara (fibra), lo convierte en una fuente de energía rápida y fácil digestión.\n\n## Culinary Uses\n- **Arroz Blanco:** Acompañante universal.\n- **Arroz con Pollo/Coco:** Base estructural que absorbe sabores.\n\n## Health Benefits\n### Energía Rápida\nIdeal para deportistas o recuperación nutricional donde se requiere densidad calórica sin exceso de fibra.",
+  "aliases": {
+    "es": [
+      "Arroz Blanco"
+    ],
+    "zh": [
+      "冷饭",
+      "大米",
+      "米饭"
+    ]
+  }
 }

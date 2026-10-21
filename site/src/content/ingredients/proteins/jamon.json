@@ -1,0 +1,18 @@
+{
+  "name": "Jamón",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Jamón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "火腿",
+      "火腿肠"
+    ]
+  },
+  "body_md": "# Jamón"
+}

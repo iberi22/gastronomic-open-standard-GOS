@@ -12,6 +12,13 @@
   "aliases": {
     "en": [
       "salt"
+    ],
+    "es": [
+      "Pizca De Sal"
+    ],
+    "zh": [
+      "食用盐",
+      "食盐"
     ]
   },
   "group": "Condiment",

@@ -1,0 +1,23 @@
+{
+  "name": "Pimienta Negra",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Pimienta Negra",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "胡椒粉",
+      "黑胡椒碎",
+      "黑椒粉",
+      "黑椒碎"
+    ],
+    "es": [
+      "pimienta"
+    ]
+  },
+  "body_md": "# Pimienta Negra"
+}

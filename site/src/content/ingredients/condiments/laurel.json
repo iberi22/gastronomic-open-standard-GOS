@@ -1,0 +1,17 @@
+{
+  "name": "Laurel",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Laurel",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Laurel",
+  "aliases": {
+    "es": [
+      "Hoja De Laurel"
+    ]
+  }
+}

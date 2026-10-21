@@ -1,0 +1,25 @@
+{
+  "name": "Ají Picante",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Ají Picante",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "干辣椒",
+      "小米辣",
+      "干红椒"
+    ],
+    "es": [
+      "-4 ajies picantes",
+      "Ají Amazónico",
+      "ajies amazonicos",
+      "Chile Picante"
+    ]
+  },
+  "body_md": "# Ají Picante"
+}

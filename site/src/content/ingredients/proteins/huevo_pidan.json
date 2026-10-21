@@ -1,0 +1,17 @@
+{
+  "name": "Huevo Centenario (Pidan)",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Huevo Centenario (Pidan)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "皮蛋"
+    ]
+  },
+  "body_md": "# Huevo Centenario (Pidan)"
+}

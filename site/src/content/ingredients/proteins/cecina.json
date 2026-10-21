@@ -1,0 +1,12 @@
+{
+  "name": "Cecina",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Cecina",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Cecina"
+}
