@@ -8,5 +8,8 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Ají Amarillo (Pasta)"
+  "body_md": "# Ají Amarillo (Pasta)",
+  "substitutes": [
+    "Paprika"
+  ]
 }

@@ -8,5 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Mostaza"
+  "body_md": "# Mostaza",
+  "aliases": {
+    "es": [
+      "mostaza (opcional)",
+      "Mostaza Karashi"
+    ]
+  }
 }

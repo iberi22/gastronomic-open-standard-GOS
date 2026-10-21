@@ -8,5 +8,12 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Naranja"
+  "body_md": "# Naranja",
+  "aliases": {
+    "es": [
+      "Jugo de naranja",
+      "Zumo de naranja",
+      "Jugo de naranja fresca"
+    ]
+  }
 }

@@ -8,5 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Arracacha"
+  "body_md": "# Arracacha",
+  "aliases": {
+    "es": [
+      "1 arracacha"
+    ]
+  }
 }
