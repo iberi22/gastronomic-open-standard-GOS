@@ -14,15 +14,6 @@
   "aliases": {
     "en": [
       "egg"
-    ],
-    "es": [
-      "Huevos",
-      "Huevos Cocidos",
-      "Huevos Duros",
-      "Yemas De Huevo"
-    ],
-    "zh": [
-      "鸡蛋"
     ]
   },
   "group": "Protein",
@@ -54,86 +45,30 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 56.0,
-    "cholesterol_mg": 372.0,
     "choline_mg": 294,
-    "copper_mg": 0.07,
-    "folate_ug": 47.0,
-    "iron_mg": 1.75,
-    "magnesium_mg": 12.0,
-    "manganese_mg": 0.03,
-    "niacin_mg": 0.07,
-    "phosphorus_mg": 198.0,
-    "potassium_mg": 138.0,
-    "riboflavin_mg": 0.46,
-    "selenium_ug": 30.7,
-    "sodium_mg": 142.0,
-    "thiamin_mg": 0.04,
-    "vitamin_a_rae_ug": 160.0,
-    "vitamin_b12_ug": 0.89,
-    "vitamin_b6_mg": 0.17,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_iu": 87,
-    "vitamin_d_ug": 2.0,
-    "vitamin_e_mg": 1.05,
-    "vitamin_k_ug": 0.3,
-    "zinc_mg": 1.29
+    "selenium_ug": 30.8,
+    "vitamin_a_iu": 520,
+    "vitamin_d_iu": 87
   },
   "name": "Huevo",
   "nutrition_per_100g": {
-    "calories": 143.0,
-    "carbs_g": 0.72,
-    "fat_g": 9.51,
-    "fiber_g": 0.0,
-    "protein_g": 12.56,
-    "saturated_fat_g": 3.13,
-    "sugar_g": 0.37
+    "calories": 155,
+    "carbs_g": 1.1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "protein_g": 13
   },
   "portions": {
-    "default_g": 50,
-    "household": [
-      {
-        "description": "1 large",
-        "grams": 50.0
-      },
-      {
-        "description": "1 extra large",
-        "grams": 56.0
-      },
-      {
-        "description": "1 jumbo",
-        "grams": 63.0
-      },
-      {
-        "description": "1 cup (4.86 large eggs)",
-        "grams": 243.0
-      },
-      {
-        "description": "1 medium",
-        "grams": 44.0
-      },
-      {
-        "description": "1 small",
-        "grams": 38.0
-      }
-    ]
+    "default_g": 50
   },
   "scientific_name": "Gallus gallus domesticus",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:171287)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "desayuno",
     "cerebro",
     "vision_saludable"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl huevo es considerado una proteína de referencia (valor biológico 100). La yema contiene la mayoría de los nutrientes, incluyendo colina y carotenoides.\n\n## Culinary Uses\n- **Pericos:** Revueltos con cebolla y tomate (aumenta absorción de licopeno del tomate gracias a la grasa del huevo).\n- **Cocido:** La mejor forma de preservar nutrientes sensibles al calor excesivo (como la fritura profunda).\n\n## Health Benefits\n### Sinergia Nutricional\nComer huevo con vegetales (como en los huevos pericos) aumenta la absorción de vitaminas liposolubles (A, D, E, K) de los vegetales de 3 a 9 veces.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:171287",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl huevo es considerado una proteína de referencia (valor biológico 100). La yema contiene la mayoría de los nutrientes, incluyendo colina y carotenoides.\n\n## Culinary Uses\n- **Pericos:** Revueltos con cebolla y tomate (aumenta absorción de licopeno del tomate gracias a la grasa del huevo).\n- **Cocido:** La mejor forma de preservar nutrientes sensibles al calor excesivo (como la fritura profunda).\n\n## Health Benefits\n### Sinergia Nutricional\nComer huevo con vegetales (como en los huevos pericos) aumenta la absorción de vitaminas liposolubles (A, D, E, K) de los vegetales de 3 a 9 veces."
 }

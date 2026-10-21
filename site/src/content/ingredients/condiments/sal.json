@@ -12,13 +12,6 @@
   "aliases": {
     "en": [
       "salt"
-    ],
-    "es": [
-      "Pizca De Sal"
-    ],
-    "zh": [
-      "食用盐",
-      "食盐"
     ]
   },
   "group": "Condiment",
@@ -33,77 +26,26 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 24.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.03,
-    "folate_ug": 0.0,
     "iodine_ug": 4000,
-    "iron_mg": 0.33,
-    "magnesium_mg": 1.0,
-    "manganese_mg": 0.1,
-    "niacin_mg": 0.0,
-    "phosphorus_mg": 0.0,
-    "potassium_mg": 8.0,
-    "riboflavin_mg": 0.0,
-    "selenium_ug": 0.1,
-    "sodium_mg": 38758.0,
-    "thiamin_mg": 0.0,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.0,
-    "vitamin_c_mg": 0.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.0,
-    "vitamin_k_ug": 0.0,
-    "zinc_mg": 0.1
+    "sodium_mg": 38758
   },
   "name": "Sal (Cloruro de Sodio)",
   "nutrition_per_100g": {
-    "calories": 0.0,
-    "carbs_g": 0.0,
-    "fat_g": 0.0,
-    "fiber_g": 0.0,
-    "protein_g": 0.0,
-    "saturated_fat_g": 0.0,
-    "sugar_g": 0.0
+    "calories": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "protein_g": 0
   },
   "portions": {
-    "default_g": 1,
-    "household": [
-      {
-        "description": "1 tsp",
-        "grams": 6.0
-      },
-      {
-        "description": "1 tbsp",
-        "grams": 18.0
-      },
-      {
-        "description": "1 cup",
-        "grams": 292.0
-      },
-      {
-        "description": "1 dash",
-        "grams": 0.4
-      }
-    ]
+    "default_g": 1
   },
   "scientific_name": "NaCl",
   "sources": [
-    "USDA",
-    "USDA FoodData Central SR Legacy (fdc:173468)"
+    "USDA"
   ],
   "tags": [
     "esencial",
     "sabor"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa sal es el potenciador de sabor universal. En Colombia, la sal de Zipaquirá o Manaure es famosas. Es vital para la vida pero debe moderarse.\n\n## Culinary Uses\n- **Sazón:** Todo plato salado.\n- **Papa Salada:** Técnica de saturación para cristalizar sal en la piel.\n\n## Health Benefits\n### Yodo\nLa sal yodada es la principal defensa de salud pública contra el bocio y problemas de tiroides.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:173468",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa sal es el potenciador de sabor universal. En Colombia, la sal de Zipaquirá o Manaure es famosas. Es vital para la vida pero debe moderarse.\n\n## Culinary Uses\n- **Sazón:** Todo plato salado.\n- **Papa Salada:** Técnica de saturación para cristalizar sal en la piel.\n\n## Health Benefits\n### Yodo\nLa sal yodada es la principal defensa de salud pública contra el bocio y problemas de tiroides."
 }

@@ -3,59 +3,21 @@
   "scientific_name": "Zea mays",
   "group": "Grain",
   "portions": {
-    "default_g": 100,
-    "household": [
-      {
-        "description": "1 cup",
-        "grams": 145.0
-      },
-      {
-        "description": "1 ear, large (7-3/4\" to 9\" long) yields",
-        "grams": 143.0
-      },
-      {
-        "description": "1 ear, medium (6-3/4\" to 7-1/2\" long) yields",
-        "grams": 102.0
-      },
-      {
-        "description": "1 ear, small (5-1/2\" to 6-1/2\" long)",
-        "grams": 73.0
-      }
-    ]
+    "default_g": 100
   },
   "nutrition_per_100g": {
-    "calories": 86.0,
-    "carbs_g": 18.7,
-    "fat_g": 1.35,
-    "fiber_g": 2.0,
-    "protein_g": 3.27,
-    "saturated_fat_g": 0.33,
-    "sugar_g": 6.26
+    "calories": 86,
+    "protein_g": 3.2,
+    "fat_g": 1.2,
+    "carbs_g": 19,
+    "fiber_g": 2.7,
+    "sugar_g": 3.2
   },
   "micronutrients": {
-    "calcium_mg": 2.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.05,
-    "folate_ug": 42.0,
-    "iron_mg": 0.52,
     "lutein_zeaxanthin_ug": 644,
-    "magnesium_mg": 37.0,
-    "manganese_mg": 0.16,
-    "niacin_mg": 1.77,
-    "phosphorus_mg": 89.0,
-    "potassium_mg": 270.0,
-    "riboflavin_mg": 0.06,
-    "selenium_ug": 0.6,
-    "sodium_mg": 15.0,
-    "thiamin_mg": 0.15,
-    "vitamin_a_rae_ug": 9.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.09,
-    "vitamin_c_mg": 6.8,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.07,
-    "vitamin_k_ug": 0.3,
-    "zinc_mg": 0.46
+    "thiamin_mg": 0.2,
+    "folate_ug": 46,
+    "magnesium_mg": 37
   },
   "active_compounds": [
     {
@@ -159,10 +121,8 @@
     }
   ],
   "sources": [
-    "PubMed - Nixtamalization Research Collection",
-    "USDA FoodData Central SR Legacy (fdc:169998)",
-    "Wikidata (Q11575)",
-    "Wikidata (Q25618328)"
+    "USDA FoodData Central",
+    "PubMed - Nixtamalization Research Collection"
   ],
   "tags": [
     "ajiaco",
@@ -170,68 +130,5 @@
     "vision",
     "nixtamalization"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl maíz es nativo de América y fundamental en la dieta andina y mesoamericana. El maíz amarillo es notablemente rico en carotenoides antioxidantes, mientras que el proceso tradicional de nixtamalización desbloquea un perfil nutricional superior.\n\n## Culinary Uses\n- **Mazorca:** Cocida en sopas (Ajiaco, Sancocho).\n- **Desgranado:** En ensaladas o arroces.\n- **Masa Nixtamalizada:** Base de tortillas, tamales, pozole, sopes y tlacoyos.\n\n## Health Benefits\n### Salud Visual\nEs uno de los pocos granos que contiene niveles significativos de luteína y zeaxantina, protegiendo los ojos del daño oxidativo.\n\n### Bioquímica de la Nixtamalización\nLa cocción alcalina con hidróxido de calcio (*cal*) altera la matriz lipídica y proteica del grano de maíz:\n1. **Liberación de Niacina:** Descompone las hemicelulosas y libera la niacina ligada (*niacitina*), haciéndola asimilable por el intestino humano.\n2. **Aporte de Calcio e Inhibición de Fitatos:** Incrementa sustancialmente el contenido de calcio biodisponible y reduce fitatos que inhiben la absorción mineral.\n3. **Reducción de Micotoxinas:** Neutraliza e hidroliza aflatoxinas y fumonisinas solubilizándolas en el agua de cocción (*nejayote*).",
-  "aliases": {
-    "en": [
-      "corn"
-    ],
-    "es": [
-      "choclo",
-      "maiz trillado",
-      "maiz blanco trillado",
-      "mazorca de maiz",
-      "mazorcas de maiz",
-      "mazorcas"
-    ],
-    "fr": [
-      "blé d’Inde"
-    ],
-    "zh": [
-      "玉米粒"
-    ]
-  },
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:169998",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q11575",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q25618328",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Poaceae",
-    "genus": "Zea"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "maize"
-    },
-    "es": {
-      "common_name": "maíz"
-    },
-    "fr": {
-      "common_name": "maïs"
-    },
-    "ja": {
-      "common_name": "トウモロコシ"
-    },
-    "pt": {
-      "common_name": "milho"
-    },
-    "zh": {
-      "common_name": "玉米"
-    }
-  }
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl maíz es nativo de América y fundamental en la dieta andina y mesoamericana. El maíz amarillo es notablemente rico en carotenoides antioxidantes, mientras que el proceso tradicional de nixtamalización desbloquea un perfil nutricional superior.\n\n## Culinary Uses\n- **Mazorca:** Cocida en sopas (Ajiaco, Sancocho).\n- **Desgranado:** En ensaladas o arroces.\n- **Masa Nixtamalizada:** Base de tortillas, tamales, pozole, sopes y tlacoyos.\n\n## Health Benefits\n### Salud Visual\nEs uno de los pocos granos que contiene niveles significativos de luteína y zeaxantina, protegiendo los ojos del daño oxidativo.\n\n### Bioquímica de la Nixtamalización\nLa cocción alcalina con hidróxido de calcio (*cal*) altera la matriz lipídica y proteica del grano de maíz:\n1. **Liberación de Niacina:** Descompone las hemicelulosas y libera la niacina ligada (*niacitina*), haciéndola asimilable por el intestino humano.\n2. **Aporte de Calcio e Inhibición de Fitatos:** Incrementa sustancialmente el contenido de calcio biodisponible y reduce fitatos que inhiben la absorción mineral.\n3. **Reducción de Micotoxinas:** Neutraliza e hidroliza aflatoxinas y fumonisinas solubilizándolas en el agua de cocción (*nejayote*)."
 }

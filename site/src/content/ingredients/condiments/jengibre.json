@@ -8,17 +8,7 @@
   ],
   "aliases": {
     "en": [
-      "ginger",
-      "ginger rhizome"
-    ],
-    "es": [
-      "kion"
-    ],
-    "zh": [
-      "姜末",
-      "生姜",
-      "生姜末",
-      "老姜"
+      "ginger"
     ]
   },
   "group": "Condiment",
@@ -48,110 +38,27 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 16.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.23,
-    "folate_ug": 11.0,
-    "iron_mg": 0.6,
-    "magnesium_mg": 43.0,
-    "manganese_mg": 0.23,
-    "niacin_mg": 0.75,
-    "phosphorus_mg": 34.0,
-    "potassium_mg": 415.0,
-    "riboflavin_mg": 0.03,
-    "selenium_ug": 0.7,
-    "sodium_mg": 13.0,
-    "thiamin_mg": 0.03,
-    "vitamin_a_rae_ug": 0.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.16,
-    "vitamin_c_mg": 5.0,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.26,
-    "vitamin_k_ug": 0.1,
-    "zinc_mg": 0.34
+    "potassium_mg": 415
   },
   "name": "Jengibre",
   "nutrition_per_100g": {
-    "calories": 80.0,
-    "carbs_g": 17.77,
-    "fat_g": 0.75,
-    "fiber_g": 2.0,
-    "protein_g": 1.82,
-    "saturated_fat_g": 0.2,
-    "sugar_g": 1.7
+    "calories": 80,
+    "carbs_g": 17,
+    "fat_g": 0.7,
+    "fiber_g": 2,
+    "protein_g": 1.8
   },
   "portions": {
-    "default_g": 5,
-    "household": [
-      {
-        "description": "1 tsp",
-        "grams": 2.0
-      },
-      {
-        "description": "0.25 cup slices (1\" dia)",
-        "grams": 24.0
-      },
-      {
-        "description": "5 slices (1\" dia)",
-        "grams": 11.0
-      }
-    ]
+    "default_g": 5
   },
   "scientific_name": "Zingiber officinale",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:169231)",
-    "Wikidata (Q35625)",
-    "Wikidata (Q15046077)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "te",
     "asiatico",
     "antiinflamatorio"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl jengibre es un rizoma picante y aromático. Esencial en la cocina china y la medicina tradicional.\n\n## Culinary Uses\n- **Salteados:** Junto al ajo y cebollín.\n- **Té:** Infusión para la gripa o náuseas.\n\n## Health Benefits\n### Antiemético Natural\nEs el remedio no farmacológico más validado para las náuseas del embarazo y mareo por movimiento.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:169231",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q35625",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q15046077",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Zingiberaceae",
-    "genus": "Zingiber"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "ginger"
-    },
-    "es": {
-      "common_name": "jengibre"
-    },
-    "fr": {
-      "common_name": "gingembre"
-    },
-    "ja": {
-      "common_name": "ショウガ"
-    },
-    "pt": {
-      "common_name": "gengibre"
-    },
-    "zh": {
-      "common_name": "生姜"
-    }
-  }
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl jengibre es un rizoma picante y aromático. Esencial en la cocina china y la medicina tradicional.\n\n## Culinary Uses\n- **Salteados:** Junto al ajo y cebollín.\n- **Té:** Infusión para la gripa o náuseas.\n\n## Health Benefits\n### Antiemético Natural\nEs el remedio no farmacológico más validado para las náuseas del embarazo y mareo por movimiento."
 }

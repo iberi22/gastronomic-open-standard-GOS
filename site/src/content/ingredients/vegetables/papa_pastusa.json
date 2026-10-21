@@ -9,22 +9,7 @@
   "aliases": {
     "en": [
       "Andean potato",
-      "pastusa potato",
-      "spud"
-    ],
-    "es": [
-      "papa sabanera",
-      "papa",
-      "Papas",
-      "papas sabaneras",
-      "papas saladas",
-      "batata"
-    ],
-    "fr": [
-      "patate"
-    ],
-    "zh": [
-      "土豆"
+      "pastusa potato"
     ]
   },
   "group": "Vegetable",
@@ -74,51 +59,11 @@
   },
   "scientific_name": "Solanum tuberosum",
   "sources": [
-    "USDA FoodData Central",
-    "Wikidata (Q10998)",
-    "Wikidata (Q16587531)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "sopa",
     "salada"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLas papas \"de año\" (pastusa, sabanera) son pilares de la dieta andina. Aunque a menudo demonizadas por los carbohidratos, son increíblemente saciantes y ricas en potasio si se comen cocidas y con piel.\n\n## Culinary Uses\n- **Sopas:** Mantienen su forma mejor que la criolla.\n- **Papa Salada:** Cocida con abundante sal, acompañante clásico de asados.\n\n## Health Benefits\n### Saciendad\nLa papa cocida es el alimento #1 en el índice de saciedad, superando al arroz y la pasta, lo que ayuda al control de peso a largo plazo.",
-  "scientific_registry": {
-    "family": "Solanaceae",
-    "genus": "Solanum"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "potato"
-    },
-    "es": {
-      "common_name": "papa"
-    },
-    "fr": {
-      "common_name": "pomme de terre"
-    },
-    "ja": {
-      "common_name": "ジャガイモ"
-    },
-    "pt": {
-      "common_name": "batata"
-    },
-    "zh": {
-      "common_name": "馬鈴薯"
-    }
-  },
-  "data_sources": [
-    {
-      "name": "Wikidata",
-      "id": "Q10998",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q16587531",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLas papas \"de año\" (pastusa, sabanera) son pilares de la dieta andina. Aunque a menudo demonizadas por los carbohidratos, son increíblemente saciantes y ricas en potasio si se comen cocidas y con piel.\n\n## Culinary Uses\n- **Sopas:** Mantienen su forma mejor que la criolla.\n- **Papa Salada:** Cocida con abundante sal, acompañante clásico de asados.\n\n## Health Benefits\n### Saciendad\nLa papa cocida es el alimento #1 en el índice de saciedad, superando al arroz y la pasta, lo que ayuda al control de peso a largo plazo."
 }

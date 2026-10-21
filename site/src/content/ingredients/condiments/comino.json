@@ -9,15 +9,6 @@
   "aliases": {
     "en": [
       "cumin"
-    ],
-    "es": [
-      "comino"
-    ],
-    "fr": [
-      "cumin"
-    ],
-    "zh": [
-      "孜然粉"
     ]
   },
   "group": "Condiment",
@@ -53,48 +44,11 @@
   },
   "scientific_name": "Cuminum cyminum",
   "sources": [
-    "USDA FoodData Central",
-    "Wikidata (Q132624)",
-    "Wikidata (Q57328174)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "sazon",
     "digestion"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl comino es la especia \"tierra\" de la cocina colombiana. Se usa en guisos, empanadas y para adobar carnes.\n\n## Culinary Uses\n- **Adobos:** Mezclado con color (achiote) y sal.\n- **Empanadas:** El sabor característico del relleno de carne.\n\n## Health Benefits\n### Digestión\nEs un potente carminativo (reduce gases) y estimulante de la digestión, ideal para acompañar platos pesados como frijoles.",
-  "scientific_registry": {
-    "family": "Apiaceae",
-    "genus": "Cuminum"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "cumin seed"
-    },
-    "es": {
-      "common_name": "semilla de comino"
-    },
-    "fr": {
-      "common_name": "graines de cumin"
-    },
-    "ja": {
-      "common_name": "クミンシード"
-    },
-    "pt": {
-      "common_name": "sementes de cominhos"
-    }
-  },
-  "data_sources": [
-    {
-      "name": "Wikidata",
-      "id": "Q132624",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q57328174",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl comino es la especia \"tierra\" de la cocina colombiana. Se usa en guisos, empanadas y para adobar carnes.\n\n## Culinary Uses\n- **Adobos:** Mezclado con color (achiote) y sal.\n- **Empanadas:** El sabor característico del relleno de carne.\n\n## Health Benefits\n### Digestión\nEs un potente carminativo (reduce gases) y estimulante de la digestión, ideal para acompañar platos pesados como frijoles."
 }
