@@ -12,6 +12,7 @@ Options:
   --json PATH                 Path to write JSON output report
   --md PATH                   Path to write Markdown output report
   --check                     Exit non-zero if threshold metrics are violated
+  --report                    Print per-field fill rates (frontmatter) for dishes/ and ingredients/
   --quiet                     Suppress output to console
   --allow-missing-graph       Do not fail --check if site/public/graph-data.json is missing
   --max-missing-sensorial N   Max allowed recipes missing sensory section (default: 211)
@@ -346,6 +347,59 @@ def build_scorecard(recipes: dict, ingredients: dict, graph: dict) -> list:
     return scorecard
 
 
+RECIPE_FILL_FIELDS = [
+    "title", "region", "description", "categories", "prep_time", "cook_time",
+    "servings", "main_ingredients", "sensory", "nutrition", "tags", "images", "aliases",
+]
+INGREDIENT_FILL_FIELDS = [
+    "name", "group", "scientific_name", "image", "nutrition_per_100g", "micronutrients",
+    "portions", "sources", "tags", "aliases", "health_registry", "substitutes",
+]
+
+
+def _is_filled(value) -> bool:
+    """None, blank strings and empty lists/dicts are unfilled; 0 and False are real values."""
+    if value is None:
+        return False
+    if isinstance(value, str):
+        return value.strip() != ""
+    if isinstance(value, (list, dict)):
+        return len(value) > 0
+    return True
+
+
+def collect_frontmatters(directory: Path) -> list:
+    """Returns the parsed frontmatter of every content file (same file set as the audit)."""
+    if not directory.exists():
+        return []
+    records = []
+    for p in sorted(directory.rglob("*.md")):
+        if p.name in ("README.md", "_template.md"):
+            continue
+        records.append(parse_frontmatter(p.read_text(encoding="utf-8", errors="ignore")))
+    return records
+
+
+def compute_fill_rates(records: list, fields: list) -> dict:
+    """Per-field fill rate: {field: {filled, total, pct}}. pct is 0.0 when there are no records."""
+    total = len(records)
+    rates = {}
+    for field in fields:
+        filled = sum(1 for fm in records if _is_filled(fm.get(field)))
+        rates[field] = {
+            "filled": filled,
+            "total": total,
+            "pct": round(filled * 100 / total, 2) if total else 0.0,
+        }
+    return rates
+
+
+def print_fill_report(title: str, rates: dict) -> None:
+    print(f"📈 Fill rates — {title}")
+    for field, r in rates.items():
+        print(f"  • {field:<20} {r['filled']:>5}/{r['total']:<5} {r['pct']:6.2f}%")
+
+
 def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
     """Generates the Markdown audit report (CONTENT_AUDIT.md)."""
     lines = []
@@ -499,6 +553,7 @@ def main():
     parser.add_argument("--check", action="store_true", help="Validate metrics against thresholds and exit non-zero on failure")
     parser.add_argument("--quiet", action="store_true", help="Suppress console log output")
     parser.add_argument("--allow-missing-graph", action="store_true", help="Do not fail --check if graph-data.json is missing")
+    parser.add_argument("--report", action="store_true", help="Print per-field fill rates for dishes/ and ingredients/")
 
     # Threshold flags
     parser.add_argument("--max-missing-sensorial", type=int, default=211, help="Max missing sensory recipes allowed (default: 211)")
@@ -536,6 +591,16 @@ def main():
             print(f"  • Graph: {graph_data['nodes']} nodes | {graph_data['edges']} edges | {graph_data['isolated_count']} isolated | {graph_data['orphan_count']} orphans | {graph_data['edge_vocabulary_count']} edge types")
         else:
             print(f"  • Graph: ⚠️ {graph_data.get('message')}")
+
+    if args.report:
+        print_fill_report(
+            f"recetas (dishes/, {recipes_data['total']})",
+            compute_fill_rates(collect_frontmatters(dishes_dir), RECIPE_FILL_FIELDS),
+        )
+        print_fill_report(
+            f"ingredientes (ingredients/, {ingredients_data['total']})",
+            compute_fill_rates(collect_frontmatters(ingredients_dir), INGREDIENT_FILL_FIELDS),
+        )
 
     # Write JSON output if requested
     if args.json:

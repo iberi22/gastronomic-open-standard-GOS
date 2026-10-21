@@ -59,7 +59,14 @@ jobs:
       - name: Generate Knowledge Graph Artifact
         run: node scripts/generate-graph.js
         working-directory: ./site
-      # TODO(wave-C.05): python3 scripts/audit_content.py --check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PyYAML for content audit
+        run: python3 -m pip install --quiet pyyaml==6.0.3
+      # Gate de contenido (C.05): falla si se superan los umbrales; --report imprime fill rates.
+      - name: Content audit
+        run: python3 scripts/audit_content.py --check --report
       - run: pnpm --filter gos-site test
 
   # Tests del gateway de datos abiertos.
