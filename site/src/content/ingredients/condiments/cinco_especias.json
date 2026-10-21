@@ -1,0 +1,17 @@
+{
+  "name": "Cinco Especias Chinas",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Cinco Especias Chinas",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "五香粉"
+    ]
+  },
+  "body_md": "# Cinco Especias Chinas"
+}

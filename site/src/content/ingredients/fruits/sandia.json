@@ -1,0 +1,12 @@
+{
+  "name": "Sandía",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Sandía",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Sandía"
+}

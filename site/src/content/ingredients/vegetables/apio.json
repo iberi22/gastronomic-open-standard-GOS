@@ -1,0 +1,17 @@
+{
+  "name": "Apio",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Apio",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "芹菜"
+    ]
+  },
+  "body_md": "# Apio"
+}

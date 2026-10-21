@@ -1,0 +1,17 @@
+{
+  "name": "Salsa Dulce de Trigo",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Salsa Dulce de Trigo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "甜面酱"
+    ]
+  },
+  "body_md": "# Salsa Dulce de Trigo"
+}

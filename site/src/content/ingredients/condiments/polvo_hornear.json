@@ -1,0 +1,17 @@
+{
+  "name": "Polvo de Hornear",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Polvo de Hornear",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Polvo de Hornear",
+  "aliases": {
+    "es": [
+      "polvo de hornear"
+    ]
+  }
+}

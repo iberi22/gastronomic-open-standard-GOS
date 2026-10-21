@@ -1,0 +1,17 @@
+{
+  "name": "Habichuela",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Habichuela",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Habichuela",
+  "aliases": {
+    "es": [
+      "habichuelas"
+    ]
+  }
+}

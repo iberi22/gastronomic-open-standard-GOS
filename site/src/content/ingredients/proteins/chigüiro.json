@@ -1,0 +1,17 @@
+{
+  "name": "Chigüiro",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Chigüiro",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Chigüiro",
+  "aliases": {
+    "es": [
+      "carne de chiguiro"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Salsa Hoisin",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Salsa Hoisin",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "海鲜酱"
+    ]
+  },
+  "body_md": "# Salsa Hoisin"
+}

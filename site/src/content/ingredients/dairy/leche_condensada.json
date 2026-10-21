@@ -1,0 +1,12 @@
+{
+  "name": "Leche Condensada",
+  "group": "Dairy",
+  "i18n": {
+    "es": {
+      "common_name": "Leche Condensada",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Leche Condensada"
+}

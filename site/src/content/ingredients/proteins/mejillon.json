@@ -1,0 +1,17 @@
+{
+  "name": "Mejillón",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Mejillón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Mejillón",
+  "aliases": {
+    "es": [
+      "mejillones"
+    ]
+  }
+}

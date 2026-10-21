@@ -1,0 +1,17 @@
+{
+  "name": "Pan al Vapor (Mantou)",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Pan al Vapor (Mantou)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "馒头"
+    ]
+  },
+  "body_md": "# Pan al Vapor (Mantou)"
+}

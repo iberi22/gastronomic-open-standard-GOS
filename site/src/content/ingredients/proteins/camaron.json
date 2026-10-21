@@ -1,0 +1,20 @@
+{
+  "name": "Camarón",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Camarón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "虾仁"
+    ],
+    "es": [
+      "camarones"
+    ]
+  },
+  "body_md": "# Camarón"
+}

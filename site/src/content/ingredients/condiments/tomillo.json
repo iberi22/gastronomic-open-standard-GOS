@@ -1,0 +1,12 @@
+{
+  "name": "Tomillo",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Tomillo",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Tomillo"
+}

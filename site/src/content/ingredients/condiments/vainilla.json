@@ -1,0 +1,17 @@
+{
+  "name": "Vainilla (Esencia)",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Vainilla (Esencia)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Vainilla (Esencia)",
+  "aliases": {
+    "es": [
+      "esencia de vainilla"
+    ]
+  }
+}

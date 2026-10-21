@@ -1,0 +1,17 @@
+{
+  "name": "Mojojoy",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Mojojoy",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Mojojoy",
+  "aliases": {
+    "es": [
+      "mojojoys"
+    ]
+  }
+}

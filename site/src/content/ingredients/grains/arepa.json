@@ -1,0 +1,18 @@
+{
+  "name": "Arepa",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Arepa",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Arepa",
+  "aliases": {
+    "es": [
+      "arepas antioquenas",
+      "arepas"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Cerveza",
+  "group": "Beverage",
+  "i18n": {
+    "es": {
+      "common_name": "Cerveza",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "啤酒"
+    ],
+    "es": [
+      "cerveza negra",
+      "cerveza rubia"
+    ]
+  },
+  "body_md": "# Cerveza"
+}

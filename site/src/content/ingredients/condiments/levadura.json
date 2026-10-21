@@ -1,0 +1,12 @@
+{
+  "name": "Levadura",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Levadura",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Levadura"
+}

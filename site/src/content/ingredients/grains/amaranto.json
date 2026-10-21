@@ -1,0 +1,17 @@
+{
+  "name": "Amaranto",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Amaranto",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Amaranto",
+  "aliases": {
+    "es": [
+      "semillas de amaranto"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Masa de Hojaldre",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Masa de Hojaldre",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Masa de Hojaldre"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Pastel de Arroz (Nian Gao)",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Pastel de Arroz (Nian Gao)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "年糕",
+      "年糕白粿"
+    ]
+  },
+  "body_md": "# Pastel de Arroz (Nian Gao)"
+}

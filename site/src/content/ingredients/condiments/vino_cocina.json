@@ -1,0 +1,17 @@
+{
+  "name": "Vino de Cocina",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Vino de Cocina",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "料酒"
+    ]
+  },
+  "body_md": "# Vino de Cocina"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Brócoli",
+  "group": "Vegetable",
+  "i18n": {
+    "es": {
+      "common_name": "Brócoli",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "西兰花"
+    ]
+  },
+  "body_md": "# Brócoli"
+}

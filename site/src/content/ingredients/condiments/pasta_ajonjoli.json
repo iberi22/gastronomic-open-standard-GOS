@@ -1,0 +1,17 @@
+{
+  "name": "Pasta de Ajonjolí (Tahini)",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Pasta de Ajonjolí (Tahini)",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "芝麻酱"
+    ]
+  },
+  "body_md": "# Pasta de Ajonjolí (Tahini)"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Salsa de Ostión",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Salsa de Ostión",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "蚝油"
+    ]
+  },
+  "body_md": "# Salsa de Ostión"
+}

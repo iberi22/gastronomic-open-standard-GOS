@@ -1,0 +1,21 @@
+{
+  "name": "Salsa de Tomate",
+  "group": "Sauce",
+  "i18n": {
+    "es": {
+      "common_name": "Salsa de Tomate",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "番茄酱"
+    ],
+    "es": [
+      "ketchup",
+      "Salsa De Tomate"
+    ]
+  },
+  "body_md": "# Salsa de Tomate"
+}

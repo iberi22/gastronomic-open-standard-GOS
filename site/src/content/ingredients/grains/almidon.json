@@ -1,0 +1,18 @@
+{
+  "name": "Almidón",
+  "group": "Grain",
+  "i18n": {
+    "es": {
+      "common_name": "Almidón",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "淀粉",
+      "生粉"
+    ]
+  },
+  "body_md": "# Almidón"
+}

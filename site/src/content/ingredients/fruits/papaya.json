@@ -1,0 +1,12 @@
+{
+  "name": "Papaya",
+  "group": "Fruit",
+  "i18n": {
+    "es": {
+      "common_name": "Papaya",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Papaya"
+}

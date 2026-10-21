@@ -1,0 +1,12 @@
+{
+  "name": "Suero Costeño",
+  "group": "Dairy",
+  "i18n": {
+    "es": {
+      "common_name": "Suero Costeño",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Suero Costeño"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Pimienta Blanca",
+  "group": "Condiment",
+  "i18n": {
+    "es": {
+      "common_name": "Pimienta Blanca",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "aliases": {
+    "zh": [
+      "白胡椒粉"
+    ]
+  },
+  "body_md": "# Pimienta Blanca"
+}

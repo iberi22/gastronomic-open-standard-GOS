@@ -1,0 +1,17 @@
+{
+  "name": "Calamar",
+  "group": "Protein",
+  "i18n": {
+    "es": {
+      "common_name": "Calamar",
+      "other_names": []
+    }
+  },
+  "nutrition_per_100g": {},
+  "body_md": "# Calamar",
+  "aliases": {
+    "es": [
+      "calamares"
+    ]
+  }
+}
