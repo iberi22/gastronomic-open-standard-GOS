@@ -353,8 +353,30 @@ RECIPE_FILL_FIELDS = [
 ]
 INGREDIENT_FILL_FIELDS = [
     "name", "group", "scientific_name", "image", "nutrition_per_100g", "micronutrients",
-    "portions", "sources", "tags", "aliases", "health_registry", "substitutes",
+    "portions", "sources", "data_sources", "tags", "aliases", "health_registry", "substitutes",
 ]
+
+# Canonical trees (copy-content.js regenerates site/src/content/dishes from root dishes/;
+# ingredients are canonical under site/src/content/ingredients, root ingredients/ is a legacy mirror).
+CANONICAL_DISHES_REL = Path("dishes")
+CANONICAL_INGREDIENTS_REL = Path("site") / "src" / "content" / "ingredients"
+
+
+def canonical_dirs(root_dir: Path) -> tuple:
+    """Returns (dishes_dir, ingredients_dir) of the canonical trees under root_dir."""
+    return root_dir / CANONICAL_DISHES_REL, root_dir / CANONICAL_INGREDIENTS_REL
+
+
+def count_sources(records: list) -> dict:
+    """Counts records with non-empty `sources`, non-empty `data_sources`, or either."""
+    counts = {"total": len(records), "sources": 0, "data_sources": 0, "any": 0}
+    for fm in records:
+        has_s = _is_filled(fm.get("sources"))
+        has_d = _is_filled(fm.get("data_sources"))
+        counts["sources"] += has_s
+        counts["data_sources"] += has_d
+        counts["any"] += has_s or has_d
+    return counts
 
 
 def _is_filled(value) -> bool:
@@ -461,7 +483,7 @@ def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
         lines.append(f"| {reg} | {cnt} |")
 
     lines.append("")
-    lines.append("## 🥕 Ingredientes (`ingredients/`)")
+    lines.append("## 🥕 Ingredientes (`site/src/content/ingredients/`)")
     lines.append("")
     lines.append(f"- **Curados (`ingredients/<categoria>/`):** {ing['curated']}")
     lines.append(f"- **Pendientes (`ingredients/pending_review/`):** {ing['pending_review']}")
@@ -544,6 +566,44 @@ def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
     return "\n".join(lines)
 
 
+def run_self_test() -> int:
+    """Offline checks for canonical paths and source counting (no repo content needed)."""
+    import tempfile
+
+    failures = []
+
+    def expect(cond: bool, msg: str) -> None:
+        if not cond:
+            failures.append(msg)
+
+    root = Path("/__root__")
+    dishes_dir, ingredients_dir = canonical_dirs(root)
+    expect(dishes_dir == root / "dishes", f"dishes canonical path wrong: {dishes_dir}")
+    expect(
+        ingredients_dir == root / "site" / "src" / "content" / "ingredients",
+        f"ingredients canonical path wrong: {ingredients_dir}",
+    )
+
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        (t / "a.md").write_text("---\nname: A\nsources:\n  - name: USDA\n    id: 1\n---\n", encoding="utf-8")
+        (t / "b.md").write_text("---\nname: B\ndata_sources:\n  - name: USDA\n    id: 2\n---\n", encoding="utf-8")
+        (t / "c.md").write_text("---\nname: C\nsources: []\ndata_sources: []\n---\n", encoding="utf-8")
+        (t / "d.md").write_text("---\nname: D\n---\n", encoding="utf-8")
+        counts = count_sources(collect_frontmatters(t))
+        expect(
+            counts == {"total": 4, "sources": 1, "data_sources": 1, "any": 2},
+            f"source counts wrong: {counts}",
+        )
+
+    for msg in failures:
+        print(f"FAIL: {msg}", file=sys.stderr)
+    if failures:
+        return 1
+    print("self-test OK")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="GOS Content & Interconnection Audit Tool"
@@ -554,6 +614,7 @@ def main():
     parser.add_argument("--quiet", action="store_true", help="Suppress console log output")
     parser.add_argument("--allow-missing-graph", action="store_true", help="Do not fail --check if graph-data.json is missing")
     parser.add_argument("--report", action="store_true", help="Print per-field fill rates for dishes/ and ingredients/")
+    parser.add_argument("--self-test", action="store_true", help="Run offline self-tests (canonical paths, source counts) and exit")
 
     # Threshold flags
     parser.add_argument("--max-missing-sensorial", type=int, default=211, help="Max missing sensory recipes allowed (default: 211)")
@@ -564,9 +625,11 @@ def main():
 
     args = parser.parse_args()
 
+    if args.self_test:
+        raise SystemExit(run_self_test())
+
     root_dir = Path(".")
-    dishes_dir = root_dir / "dishes"
-    ingredients_dir = root_dir / "ingredients"
+    dishes_dir, ingredients_dir = canonical_dirs(root_dir)
     graph_json_path = root_dir / "site" / "public" / "graph-data.json"
 
     if not args.quiet:
@@ -597,10 +660,13 @@ def main():
             f"recetas (dishes/, {recipes_data['total']})",
             compute_fill_rates(collect_frontmatters(dishes_dir), RECIPE_FILL_FIELDS),
         )
+        ing_records = collect_frontmatters(ingredients_dir)
         print_fill_report(
-            f"ingredientes (ingredients/, {ingredients_data['total']})",
-            compute_fill_rates(collect_frontmatters(ingredients_dir), INGREDIENT_FILL_FIELDS),
+            f"ingredientes (site/src/content/ingredients, {ingredients_data['total']})",
+            compute_fill_rates(ing_records, INGREDIENT_FILL_FIELDS),
         )
+        src = count_sources(ing_records)
+        print(f"  • with sources: {src['sources']}/{src['total']} | with data_sources: {src['data_sources']}/{src['total']} | with any source: {src['any']}/{src['total']}")
 
     # Write JSON output if requested
     if args.json:

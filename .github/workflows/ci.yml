@@ -65,6 +65,8 @@ jobs:
       - name: Install PyYAML for content audit
         run: python3 -m pip install --quiet pyyaml==6.0.3
       # Gate de contenido (C.05): falla si se superan los umbrales; --report imprime fill rates.
+      - name: Content audit self-test (rutas canonicas, conteo de fuentes)
+        run: python3 scripts/audit_content.py --self-test
       - name: Content audit
         run: python3 scripts/audit_content.py --check --report
       - run: pnpm --filter gos-site test
