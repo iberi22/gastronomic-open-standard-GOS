@@ -8,22 +8,7 @@
   ],
   "aliases": {
     "en": [
-      "tomato",
-      "love apple"
-    ],
-    "es": [
-      "Tomate Maduro",
-      "Tomates Maduros",
-      "tomates",
-      "tomates rojos",
-      "jitomate"
-    ],
-    "fr": [
-      "tomates"
-    ],
-    "zh": [
-      "番茄",
-      "西红柿"
+      "tomato"
     ]
   },
   "group": "Vegetable",
@@ -63,130 +48,30 @@
     }
   ],
   "micronutrients": {
-    "calcium_mg": 10.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.06,
-    "folate_ug": 15.0,
-    "iron_mg": 0.27,
-    "magnesium_mg": 11.0,
-    "manganese_mg": 0.11,
-    "niacin_mg": 0.59,
-    "phosphorus_mg": 24.0,
-    "potassium_mg": 237.0,
-    "riboflavin_mg": 0.02,
-    "selenium_ug": 0.0,
-    "sodium_mg": 5.0,
-    "thiamin_mg": 0.04,
-    "vitamin_a_rae_ug": 42.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.08,
+    "potassium_mg": 237,
     "vitamin_c_mg": 13.7,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.54,
-    "vitamin_k_ug": 7.9,
-    "zinc_mg": 0.17
+    "vitamin_k_ug": 7.9
   },
   "name": "Tomate Rojo (Maduro)",
   "nutrition_per_100g": {
-    "calories": 18.0,
-    "carbs_g": 3.89,
+    "calories": 18,
+    "carbs_g": 3.9,
     "fat_g": 0.2,
     "fiber_g": 1.2,
-    "protein_g": 0.88,
-    "saturated_fat_g": 0.03,
-    "sugar_g": 2.63
+    "protein_g": 0.9,
+    "sugar_g": 2.6
   },
   "portions": {
-    "default_g": 120,
-    "household": [
-      {
-        "description": "1 cup cherry tomatoes",
-        "grams": 149.0
-      },
-      {
-        "description": "1 cup, chopped or sliced",
-        "grams": 180.0
-      },
-      {
-        "description": "1 Italian tomato",
-        "grams": 62.0
-      },
-      {
-        "description": "1 cherry",
-        "grams": 17.0
-      },
-      {
-        "description": "1 large whole (3\" dia)",
-        "grams": 182.0
-      },
-      {
-        "description": "1 medium whole (2-3/5\" dia)",
-        "grams": 123.0
-      },
-      {
-        "description": "1 slice, medium (1/4\" thick)",
-        "grams": 20.0
-      },
-      {
-        "description": "1 plum tomato",
-        "grams": 62.0
-      }
-    ]
+    "default_g": 120
   },
   "scientific_name": "Solanum lycopersicum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170457)",
-    "Wikidata (Q23501)",
-    "Wikidata (Q20638126)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "guiso",
     "licopeno",
     "salud_prostata"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl tomate rojo es la fuente dietaria principal de **licopeno**. A diferencia de otros nutrientes, la biodisponibilidad del licopeno **aumenta con la cocción** y la presencia de grasa (aceite), lo que hace que el \"Hogao\" sea una bomba nutricional superior al tomate crudo para este propósito específico.\n\n## Culinary Uses\n- **Hogao/Guiso:** Cocido con aceite (Maximiza licopeno).\n- **Crudo:** Ensaladas (Maximiza Vitamina C).\n\n## Health Benefits\n### Protección del ADN\nEl licopeno protege las células del estrés oxidativo, con evidencia fuerte en la prevención de problemas prostáticos.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:170457",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q23501",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q20638126",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Solanaceae",
-    "genus": "Solanum"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "tomato"
-    },
-    "es": {
-      "common_name": "tomate"
-    },
-    "fr": {
-      "common_name": "tomate"
-    },
-    "ja": {
-      "common_name": "トマト"
-    },
-    "pt": {
-      "common_name": "tomate"
-    },
-    "zh": {
-      "common_name": "番茄"
-    }
-  }
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl tomate rojo es la fuente dietaria principal de **licopeno**. A diferencia de otros nutrientes, la biodisponibilidad del licopeno **aumenta con la cocción** y la presencia de grasa (aceite), lo que hace que el \"Hogao\" sea una bomba nutricional superior al tomate crudo para este propósito específico.\n\n## Culinary Uses\n- **Hogao/Guiso:** Cocido con aceite (Maximiza licopeno).\n- **Crudo:** Ensaladas (Maximiza Vitamina C).\n\n## Health Benefits\n### Protección del ADN\nEl licopeno protege las células del estrés oxidativo, con evidencia fuerte en la prevención de problemas prostáticos."
 }

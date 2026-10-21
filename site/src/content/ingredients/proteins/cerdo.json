@@ -8,29 +8,7 @@
   ],
   "aliases": {
     "en": [
-      "pork",
-      "pig meat"
-    ],
-    "es": [
-      "carne de cerdo",
-      "costilla de cerdo",
-      "cuero de cerdo",
-      "carne de porcino"
-    ],
-    "fr": [
-      "porc (viande)"
-    ],
-    "pt": [
-      "Carne suína"
-    ],
-    "zh": [
-      "排骨",
-      "猪五花肉",
-      "猪肉末",
-      "瘦肉",
-      "肉丁肉末",
-      "肉末",
-      "肉馅"
+      "pork"
     ]
   },
   "group": "Protein",
@@ -69,51 +47,11 @@
   },
   "scientific_name": "Sus scrofa domesticus",
   "sources": [
-    "USDA FoodData Central",
-    "Wikidata (Q787)",
-    "Wikidata (Q191768)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "plato_fuerte",
     "proteina"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cerdo (especialmente el lomo) es una proteína magra eficiente. En Colombia se consume frito (chicharrón - corte graso) o sudado/asado (lomo - corte magro). Esta ficha se enfoca en la pulpa magra.\n\n## Culinary Uses\n- **Chuleta Valluna:** Empanizada y frita.\n- **Lechona:** Piel y carne cocida con arroz y arvejas.\n- **Frijoles:** La pezuña o el tocino dan sabor.\n\n## Health Benefits\n### Energía (Vitamina B1)\nEl cerdo contiene hasta 10 veces más Tiamina que la res, siendo vital para sistemas nerviosos activos.",
-  "scientific_registry": {
-    "family": "Suidae",
-    "genus": "Sus"
-  },
-  "i18n": {
-    "en": {
-      "common_name": "pork"
-    },
-    "es": {
-      "common_name": "carne de cerdo"
-    },
-    "fr": {
-      "common_name": "viande de porc"
-    },
-    "ja": {
-      "common_name": "豚肉"
-    },
-    "pt": {
-      "common_name": "carne de porco"
-    },
-    "zh": {
-      "common_name": "豬肉"
-    }
-  },
-  "data_sources": [
-    {
-      "name": "Wikidata",
-      "id": "Q787",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q191768",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ]
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cerdo (especialmente el lomo) es una proteína magra eficiente. En Colombia se consume frito (chicharrón - corte graso) o sudado/asado (lomo - corte magro). Esta ficha se enfoca en la pulpa magra.\n\n## Culinary Uses\n- **Chuleta Valluna:** Empanizada y frita.\n- **Lechona:** Piel y carne cocida con arroz y arvejas.\n- **Frijoles:** La pezuña o el tocino dan sabor.\n\n## Health Benefits\n### Energía (Vitamina B1)\nEl cerdo contiene hasta 10 veces más Tiamina que la res, siendo vital para sistemas nerviosos activos."
 }

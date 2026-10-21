@@ -10,101 +10,31 @@
     "en": [
       "scallion",
       "green onion"
-    ],
-    "zh": [
-      "小葱",
-      "葱末",
-      "葱花",
-      "青葱",
-      "香葱"
     ]
   },
   "group": "Vegetable",
   "micronutrients": {
-    "calcium_mg": 72.0,
-    "cholesterol_mg": 0.0,
-    "copper_mg": 0.08,
-    "folate_ug": 64.0,
-    "iron_mg": 1.48,
-    "magnesium_mg": 20.0,
-    "manganese_mg": 0.16,
-    "niacin_mg": 0.53,
-    "phosphorus_mg": 37.0,
-    "potassium_mg": 276.0,
-    "riboflavin_mg": 0.08,
-    "selenium_ug": 0.6,
-    "sodium_mg": 16.0,
-    "thiamin_mg": 0.06,
-    "vitamin_a_rae_ug": 50.0,
-    "vitamin_b12_ug": 0.0,
-    "vitamin_b6_mg": 0.06,
     "vitamin_c_mg": 18.8,
-    "vitamin_d_ug": 0.0,
-    "vitamin_e_mg": 0.55,
-    "vitamin_k_ug": 207.0,
-    "zinc_mg": 0.39
+    "vitamin_k_ug": 207
   },
   "name": "Cebolla Larga (Junca)",
   "nutrition_per_100g": {
-    "calories": 32.0,
-    "carbs_g": 7.34,
-    "fat_g": 0.19,
+    "calories": 32,
+    "carbs_g": 7.3,
+    "fat_g": 0.2,
     "fiber_g": 2.6,
-    "protein_g": 1.83,
-    "saturated_fat_g": 0.03,
-    "sugar_g": 2.33
+    "protein_g": 1.8
   },
   "portions": {
-    "default_g": 50,
-    "household": [
-      {
-        "description": "1 cup, chopped",
-        "grams": 100.0
-      },
-      {
-        "description": "1 tbsp chopped",
-        "grams": 6.0
-      },
-      {
-        "description": "1 large",
-        "grams": 25.0
-      },
-      {
-        "description": "1 medium (4-1/8\" long)",
-        "grams": 15.0
-      },
-      {
-        "description": "1 small (3\" long)",
-        "grams": 5.0
-      }
-    ]
+    "default_g": 50
   },
   "scientific_name": "Allium fistulosum",
   "sources": [
-    "USDA FoodData Central SR Legacy (fdc:170005)",
-    "Wikidata (Q27938)"
+    "USDA FoodData Central"
   ],
   "tags": [
     "guiso",
     "sopa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla larga es distinta a la cabezona; crece en tallos verdes y largos y tiene un sabor más suave y herbal. Es insustituible en el guiso criollo y sancochos.\n\n## Culinary Uses\n- **Guiso:** Picada finamente con tomate.\n- **Sopas:** Se usa la parte blanca y verde para saborizar caldos.",
-  "data_sources": [
-    {
-      "name": "USDA FoodData Central SR Legacy",
-      "id": "fdc:170005",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    },
-    {
-      "name": "Wikidata",
-      "id": "Q27938",
-      "licence": "CC0-1.0",
-      "retrieved": "2026-10-21"
-    }
-  ],
-  "scientific_registry": {
-    "family": "Alliaceae",
-    "genus": "Allium"
-  }
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa cebolla larga es distinta a la cabezona; crece en tallos verdes y largos y tiene un sabor más suave y herbal. Es insustituible en el guiso criollo y sancochos.\n\n## Culinary Uses\n- **Guiso:** Picada finamente con tomate.\n- **Sopas:** Se usa la parte blanca y verde para saborizar caldos."
 }
