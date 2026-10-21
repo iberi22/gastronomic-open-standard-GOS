@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Panuchos Yucatecos
 region: Yucatán
 language: es

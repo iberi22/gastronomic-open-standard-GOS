@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacos de Canasta
 region: Tlaxcala
 language: es

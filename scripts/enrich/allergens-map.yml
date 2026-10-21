@@ -1,0 +1,175 @@
+# EU-14 allergen map (reviewed, hand-curated). Used by scripts/enrich/allergens.py.
+# Category keys follow Regulation (EU) 1169/2011 Annex II:
+#   celery, cereals_gluten, crustaceans, eggs, fish, lupin, milk, molluscs,
+#   mustard, tree_nuts, peanuts, sesame, soybeans, sulphites
+# Not a numeric dataset: no nutrient values live here. Rules are matched on
+# normalised text (lowercase, accents removed, punctuation -> space, whole words).
+# Resolution order for an ingredient:
+#   1. slug_overrides (exact slug)          -> fixed list (first match)
+#   2. phrase_overrides (whole phrase)      -> fixed list (first match, list order)
+#   3. keywords per category (union)        -> if any match
+#   4. none_keywords (reviewed no-EU-14)    -> []
+#   5. group_defaults[group]                -> list, or null = unknown
+#   6. otherwise                            -> ['unknown'] (never implied 'none')
+# 'unknown' is written explicitly so that an unreviewed item is never read as allergen-free.
+
+categories:
+  - celery
+  - cereals_gluten
+  - crustaceans
+  - eggs
+  - fish
+  - lupin
+  - milk
+  - molluscs
+  - mustard
+  - tree_nuts
+  - peanuts
+  - sesame
+  - soybeans
+  - sulphites
+
+slug_overrides:
+  emu_oyster_raw: []            # meat cut (testicle), not a mollusc
+  ostrich_oyster_raw: []        # meat cut, not a mollusc
+  nuts_coconut_meat_raw: []     # coconut is not in the EU-14 nut list
+  mustard_greens_raw: []        # leafy vegetable, not mustard seed/prepared mustard
+  mustard_spinach_tendergreen_raw: []
+  salsa_soya: [cereals_gluten, soybeans]  # brewed soy sauce usually contains wheat
+  nuts_acorns_raw: null         # not reviewed -> unknown
+  seeds_lotus_seeds_raw: null
+
+phrase_overrides:
+  - phrase: leche de coco
+    allergens: []
+  - phrase: coconut milk
+    allergens: []
+  - phrase: crema de coco
+    allergens: []
+  - phrase: coconut cream
+    allergens: []
+  - phrase: mantequilla de cacao
+    allergens: []
+  - phrase: cocoa butter
+    allergens: []
+  - phrase: coconut
+    allergens: []
+  - phrase: nuez moscada
+    allergens: []
+  - phrase: nutmeg
+    allergens: []
+  - phrase: trigo sarraceno
+    allergens: []
+  - phrase: buckwheat
+    allergens: []
+  - phrase: wild rice
+    allergens: []
+  - phrase: mustard greens
+    allergens: []
+  - phrase: mustard spinach
+    allergens: []
+  - phrase: leche de almendra
+    allergens: [tree_nuts]
+  - phrase: almond milk
+    allergens: [tree_nuts]
+  - phrase: leche de soya
+    allergens: [soybeans]
+  - phrase: leche de soja
+    allergens: [soybeans]
+  - phrase: soy milk
+    allergens: [soybeans]
+  - phrase: leche de avena
+    allergens: [cereals_gluten]
+  - phrase: oat milk
+    allergens: [cereals_gluten]
+  - phrase: mantequilla de mani
+    allergens: [peanuts]
+  - phrase: mantequilla de cacahuate
+    allergens: [peanuts]
+  - phrase: peanut butter
+    allergens: [peanuts]
+  - phrase: mantequilla de almendra
+    allergens: [tree_nuts]
+  - phrase: mantequilla de ajonjoli
+    allergens: [sesame]
+  - phrase: salsa de soya
+    allergens: [cereals_gluten, soybeans]
+  - phrase: salsa de soja
+    allergens: [cereals_gluten, soybeans]
+  - phrase: soy sauce
+    allergens: [cereals_gluten, soybeans]
+  - phrase: pan rallado
+    allergens: [cereals_gluten]
+  - phrase: masa filo
+    allergens: [cereals_gluten]
+  - phrase: bechamel
+    allergens: [cereals_gluten, milk]
+  - phrase: salsa bechamel
+    allergens: [cereals_gluten, milk]
+  - phrase: mayonesa
+    allergens: [eggs]
+  - phrase: mayonnaise
+    allergens: [eggs]
+  - phrase: ghee
+    allergens: [milk]
+  - phrase: vino tinto
+    allergens: [sulphites]
+  - phrase: vino blanco
+    allergens: [sulphites]
+  - phrase: wine
+    allergens: [sulphites]
+  - phrase: vino
+    allergens: [sulphites]
+  - phrase: coco
+    allergens: []
+  - phrase: kombu
+    allergens: []
+  - phrase: dashi de kombu
+    allergens: []
+  - phrase: harina de maiz
+    allergens: []
+  - phrase: harina de arroz
+    allergens: []
+  - phrase: aceite de oliva
+    allergens: []
+  - phrase: olive oil
+    allergens: []
+  - phrase: aceite de dende
+    allergens: []
+  - phrase: aceite de palma
+    allergens: []
+  - phrase: aceite de achiote
+    allergens: []
+
+keywords:
+  celery: [celery, celeriac, apio, celeri]
+  cereals_gluten: [trigo, wheat, cebada, barley, centeno, rye, avena, oat, oats, espelta, spelt, kamut, triticale, semola, semolina, farro, bulgur, cuscus, couscous, seitan, malta, malt, gluten]
+  crustaceans: [camaron, camarones, shrimp, prawn, prawns, langostino, langostinos, langosta, lobster, cangrejo, cangrejos, crab, crabs, jaiba, centolla, necora, krill, gamba, gambas, crayfish, crawfish, crustacean, crustaceans]
+  eggs: [huevo, huevos, egg, eggs, yema, yolk, albumen, albumina]
+  fish: [pescado, pescados, fish, atun, tuna, salmon, bacalao, cod, merluza, hake, sardina, sardine, anchoa, anchoas, anchovy, trucha, trout, tilapia, bagre, catfish, mojarra, corvina, robalo, pargo, bonito, caballa, mackerel, arenque, herring, bluefish, burbot, butterfish, carp, carpa, cisco, cusk, flounder, haddock, ling, lingcod, mahimahi, milkfish, monkfish, sablefish, scup, sheepshead, swordfish, tilefish, sole, lenguado, halibut, snapper]
+  lupin: [lupin, lupins, lupino, lupinos, lupini, altramuz, altramuces]
+  milk: [leche, milk, lacteo, lacteos, dairy, queso, cheese, mantequilla, butter, crema, cream, yogur, yogurt, yoghurt, nata, suero, whey, cuajada, requeson, ricotta, kefir, caseina, casein]
+  molluscs: [almeja, almejas, clam, clams, mejillon, mejillones, mussel, mussels, ostra, ostras, oyster, oysters, ostion, pulpo, octopus, calamar, calamares, squid, calamari, sepia, cuttlefish, caracol, caracoles, snail, snails, vieira, scallop, scallops, abalone, mollusk, mollusks, mollusc, molluscs, choco]
+  mustard: [mostaza, mostazas, mustard]
+  tree_nuts: [almendra, almendras, almond, almonds, avellana, avellanas, hazelnut, hazelnuts, nuez, nueces, walnut, walnuts, anacardo, anacardos, marañon, cashew, cashews, pecana, pecanas, pecan, pecans, pistacho, pistachio, pistachios, macadamia, macadamias, castana]
+  peanuts: [mani, cacahuate, cacahuates, cacahuete, cacahuetes, peanut, peanuts, groundnut, groundnuts]
+  sesame: [sesamo, ajonjoli, tahini, sesame, benne]
+  soybeans: [soy, soya, soja, soybean, soybeans, tofu, tempeh, edamame, miso]
+  sulphites: [sulfito, sulfitos, sulphite, sulphites, sulfur, metabisulfito, metabisulfitos]
+
+none_keywords: [agua, water, sal, salt, azucar, sugar, panela, piloncillo, papelon, cebolla, onion, ajo, garlic, tomate, tomato, papa, patata, potato, yuca, cassava, platano, banana, plantain, arroz, rice, maiz, corn, aguacate, avocado, limon, lime, lemon, naranja, orange, cilantro, comino, cumin, jengibre, ginger, pimenton, pimiento, pepper, chile, aji, zanahoria, carrot, pollo, chicken, cerdo, pork, carne, beef, res, cordero, lamb, pato, duck, pavo, turkey, ternera, veal, emu, ostrich, goose, quail, guinea, frog, turtle, game, frijol, frijoles, bean, beans, lenteja, lentejas, lentil, lentils, garbanzo, garbanzos, chickpea, chickpeas, arveja, arvejas, pea, peas, lima, limas, canela, cinnamon, oregano, perejil, parsley, azafran, saffron, pimienta, menta, mint, eneldo, dill, tomillo, thyme, albahaca, basil, cardamomo, cardamom, curcuma, turmeric, vainilla, vanilla, pepino, cucumber, lechuga, lettuce, berenjena, calabacin, zapallo, champinones, mushroom, mushrooms, aceitunas, olive, olives, alcaparras, capers, pasas, raisin, raisins, patatas, papas, jitomate, miel, honey, chiles, dende, achiote, tocino, chicharron, epazote]
+
+# null = unknown. Groups not listed are unknown.
+group_defaults:
+  Vegetable: []
+  Fruit: []
+  Legume: []
+  Condiment: []
+  Sugar: []
+  Grain: []
+  Protein: null
+  Dairy: null
+  Nut: null
+  Oil: null
+  Sauce: null
+  Uncategorized: null

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Bouillabaisse de Marsella
 region: Marsella
 language: es

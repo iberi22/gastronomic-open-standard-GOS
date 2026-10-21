@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cocido Boyacense
 region: Andina
 language: es

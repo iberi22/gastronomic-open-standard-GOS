@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Yam Nua (Ensalada de Res Picante)
 region: Central Thailand
 language: es

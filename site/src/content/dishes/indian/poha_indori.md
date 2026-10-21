@@ -1,4 +1,8 @@
 ---
+allergens:
+- mustard
+- peanuts
+- unknown
 title: Indori Poha
 region: Madhya Pradesh / Indore
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Chicken and Waffles (Pollo Frito con Waffles)
 region: Sur de Estados Unidos
 language: es

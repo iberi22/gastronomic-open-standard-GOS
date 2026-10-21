@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Sichuan Shuizhu Niurou (Water-Boiled Beef)
 region: China
 language: zh

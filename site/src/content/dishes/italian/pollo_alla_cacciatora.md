@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Pollo alla Cacciatora
 region: Toscana
 language: es

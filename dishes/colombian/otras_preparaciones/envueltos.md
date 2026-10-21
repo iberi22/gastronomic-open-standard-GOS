@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Envueltos de Mazorca
 region: Andina
 language: es

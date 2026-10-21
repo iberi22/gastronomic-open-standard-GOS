@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Satay Gai con Salsa de Cacahuete
 region: Sur de Tailandia
 language: es

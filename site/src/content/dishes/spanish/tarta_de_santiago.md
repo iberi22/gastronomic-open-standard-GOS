@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- tree_nuts
+- unknown
 title: Tarta de Santiago
 region: Galicia
 language: es

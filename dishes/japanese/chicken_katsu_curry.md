@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Chicken Katsu Curry
 region: Osaka
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Fuqi Feipian (Sliced Beef and Offal in Chili Oil)
 region: China
 language: zh

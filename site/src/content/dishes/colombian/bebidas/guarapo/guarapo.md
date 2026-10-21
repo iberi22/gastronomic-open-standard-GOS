@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guarapo (Elixir de Caña)
 region: Nacional (Andina / Cafetera)
 language: es

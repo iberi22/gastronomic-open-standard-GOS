@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Albóndigas en Salsa de Chipotle
 region: Centro de México
 language: es

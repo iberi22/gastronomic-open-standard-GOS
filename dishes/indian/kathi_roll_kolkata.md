@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Kathi Roll de Kolkata
 region: Bengala Occidental / Kolkata
 language: es

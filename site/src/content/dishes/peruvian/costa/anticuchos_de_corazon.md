@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Anticuchos de Corazón
 region: Costa/Sierra
 language: es

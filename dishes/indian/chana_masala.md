@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chana Masala
 region: Punjab
 language: es

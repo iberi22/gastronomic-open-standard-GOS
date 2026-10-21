@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chigüiro Asado
 region: Colombia
 language: es

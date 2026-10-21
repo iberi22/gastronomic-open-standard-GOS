@@ -1,4 +1,6 @@
 ---
+allergens:
+- milk
 title: Chocolate Santafereño
 region: Andina
 language: es

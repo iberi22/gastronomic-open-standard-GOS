@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Focaccia Barese con Pomodorini
 region: Puglia (Bari)
 language: es

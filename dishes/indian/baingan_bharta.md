@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Baingan Bharta
 region: Punjab / Norte de la India
 language: es

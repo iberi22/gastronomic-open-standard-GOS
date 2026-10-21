@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Pirarucú Frito
 region: Amazonía
 language: es

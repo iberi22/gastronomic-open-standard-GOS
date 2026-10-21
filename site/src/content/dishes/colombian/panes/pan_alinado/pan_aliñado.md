@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Pan Aliñado Colombiano
 region: Nacional
 language: es

@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Tiramisù Classico
 region: Véneto (Treviso)
 language: es

@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Ají Negro (Salsa Amazónica Fermentada)
 region: Amazonía
 language: es

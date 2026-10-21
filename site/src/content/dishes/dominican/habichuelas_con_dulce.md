@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Habichuelas con Dulce Dominicanas
 region: República Dominicana
 language: es

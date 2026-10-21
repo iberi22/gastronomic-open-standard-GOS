@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Classic Glazed Meatloaf
 region: EE.UU. Nacional
 language: es

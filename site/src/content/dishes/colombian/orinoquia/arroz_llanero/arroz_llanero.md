@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz Llanero
 region: Colombia
 language: es

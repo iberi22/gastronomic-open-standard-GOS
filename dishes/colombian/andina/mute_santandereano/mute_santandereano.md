@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mute Santandereano
 region: Andina
 language: es

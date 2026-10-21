@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Carnitas de Michoacán
 region: Michoacán
 language: es

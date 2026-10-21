@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Larb Gai (Ensalada de Pollo)
 region: Isan
 language: es

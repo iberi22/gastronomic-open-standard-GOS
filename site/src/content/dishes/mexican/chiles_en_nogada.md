@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Chiles en Nogada
 region: Puebla
 language: es

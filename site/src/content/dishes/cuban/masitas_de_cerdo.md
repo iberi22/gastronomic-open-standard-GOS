@@ -3,6 +3,8 @@ aliases:
   en:
   - Cuban Pork Chunks
   - Masitas de Cerdo
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Carnes

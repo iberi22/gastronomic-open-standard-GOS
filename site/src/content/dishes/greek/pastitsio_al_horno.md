@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Pastitsio (Lasaña Griega)
 region: Atenas
 language: es

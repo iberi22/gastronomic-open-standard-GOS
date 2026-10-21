@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Galinhada Mineira e Goiana
 region: Minas Gerais / Goiás, Brasil
 language: pt

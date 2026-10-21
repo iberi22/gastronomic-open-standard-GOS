@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Rabo de Toro Estofado
 region: Andalucía
 language: es

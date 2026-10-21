@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Manjar Blanco
 region: Andina
 language: es

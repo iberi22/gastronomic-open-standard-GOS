@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- sesame
+- soybeans
+- unknown
 title: Kenchin Jiru
 region: Kamakura
 language: es

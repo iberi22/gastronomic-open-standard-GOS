@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pambazo de Papa con Chorizo
 region: Ciudad de México
 language: es

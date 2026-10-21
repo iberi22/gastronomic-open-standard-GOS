@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Tamal Tolimense
 region: Andina
 language: es

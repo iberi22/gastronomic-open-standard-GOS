@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Churros con Chocolate
 region: Madrid
 language: es

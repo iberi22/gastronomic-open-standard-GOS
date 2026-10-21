@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Douchi Zheng Paigu (Steamed Pork Ribs with Fermented Black Beans)
 region: China
 language: zh

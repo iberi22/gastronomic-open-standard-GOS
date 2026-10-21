@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Locro Criollo Argentino
 region: Noroeste / Pampeana / Nacional
 language: es

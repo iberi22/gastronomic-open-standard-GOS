@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- milk
+- unknown
 title: Crab Backs (Cangrejo Relleno)
 region: Colombia
 language: es

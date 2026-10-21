@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guacamole Tradicional
 region: Michoacán
 language: es

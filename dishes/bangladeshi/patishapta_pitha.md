@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Patishapta Pitha
 region: Rangpur
 language: es

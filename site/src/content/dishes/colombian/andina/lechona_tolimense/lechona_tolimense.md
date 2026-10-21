@@ -3,6 +3,7 @@ aliases:
   en:
   - Lechona Tolimense
   - Colombian Stuffed Roast Pork
+allergens: []
 categories:
 - Plato Fuerte
 - Festivo

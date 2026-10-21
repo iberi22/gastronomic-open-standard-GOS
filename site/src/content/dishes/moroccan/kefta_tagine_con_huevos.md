@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Tajine de Kefta con Tomate y Huevos
 region: Marrakech
 language: es

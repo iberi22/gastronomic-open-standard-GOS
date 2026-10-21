@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Yudofu Kyoto
 region: Kyoto
 language: es

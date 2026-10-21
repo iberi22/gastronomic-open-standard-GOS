@@ -3,6 +3,8 @@ aliases:
   en:
   - Beef Birria
   - Birria Stew
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Taquería

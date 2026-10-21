@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pipián Verde
 region: Puebla
 language: es

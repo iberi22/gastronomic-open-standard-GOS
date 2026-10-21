@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Chitol Macher Muitha
 region: Dhaka
 language: es

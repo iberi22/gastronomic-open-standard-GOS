@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Farofa de Mandioca Tradicional
 region: Brasil (Nacional)
 language: pt

@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Causa Limeña
 region: Costa
 language: es

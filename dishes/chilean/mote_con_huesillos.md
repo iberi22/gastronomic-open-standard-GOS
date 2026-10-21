@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Mote con Huesillos
 region: Central / Metropolitana
 language: es

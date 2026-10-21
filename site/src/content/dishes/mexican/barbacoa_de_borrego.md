@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Barbacoa de Borrego
 region: Hidalgo
 language: es

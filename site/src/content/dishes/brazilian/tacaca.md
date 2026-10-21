@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tacacá Amazônico
 region: Pará, Brasil
 language: pt

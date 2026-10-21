@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Moqueca Capixaba
 region: Espírito Santo, Brasil
 language: pt

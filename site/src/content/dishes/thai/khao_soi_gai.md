@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Khao Soi Gai
 region: Chiang Mai
 language: es

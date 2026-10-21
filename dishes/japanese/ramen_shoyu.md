@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Shoyu Ramen Tradicional
 region: Tokyo
 language: es

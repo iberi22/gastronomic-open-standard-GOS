@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Kheer de Arroz
 region: Pan-India
 language: es

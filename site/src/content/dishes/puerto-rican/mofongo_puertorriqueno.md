@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Mofongo Puertorriqueño de Camarones
 region: Puerto Rico
 language: es

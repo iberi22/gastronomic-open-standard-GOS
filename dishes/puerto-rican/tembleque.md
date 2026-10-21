@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tembleque de Coco Puertorriqueño
 region: Puerto Rico
 language: es

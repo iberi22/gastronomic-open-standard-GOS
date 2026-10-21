@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Zaru Soba (Fideos de Trigo Sarraceno)
 region: Nagano
 language: es

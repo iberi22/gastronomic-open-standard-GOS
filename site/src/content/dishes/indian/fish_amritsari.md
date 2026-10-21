@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Amritsari Fish Fry
 region: Amritsar
 language: es

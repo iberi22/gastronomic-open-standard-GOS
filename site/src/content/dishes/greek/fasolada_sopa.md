@@ -1,4 +1,7 @@
 ---
+allergens:
+- celery
+- unknown
 title: Fasolada (Sopa de Alubias Blancas)
 region: Grecia Nacional
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)
 region: Sur de Estados Unidos
 language: es

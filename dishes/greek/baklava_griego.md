@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- tree_nuts
+- unknown
 title: Baklava Griego con Nueces y Miel
 region: Grecia Nacional
 language: es

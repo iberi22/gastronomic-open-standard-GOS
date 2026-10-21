@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Chongqing Laziji (Firecracker Spicy Chicken)
 region: China
 language: zh

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Agua de Horchata de Arroz
 region: Tradicional Nacional
 language: es

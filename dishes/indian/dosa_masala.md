@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Masala Dosa
 region: Sur de India
 language: es

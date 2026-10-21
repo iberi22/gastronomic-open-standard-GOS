@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Sopes Tradicionales
 region: Centro de México
 language: es

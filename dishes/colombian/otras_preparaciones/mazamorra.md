@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mazamorra Antioqueña
 region: Andina
 language: es

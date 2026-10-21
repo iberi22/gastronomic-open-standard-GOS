@@ -1,4 +1,7 @@
 ---
+allergens:
+- cereals_gluten
+- unknown
 title: Keftedes (Albóndigas Griegas de Menta)
 region: Grecia Nacional
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Churrasco Gaúcho de Picanha
 region: Brasil
 language: pt

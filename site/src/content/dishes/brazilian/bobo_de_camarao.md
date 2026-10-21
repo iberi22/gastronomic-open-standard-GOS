@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Bobó de Camarão
 region: Bahia, Brasil
 language: pt

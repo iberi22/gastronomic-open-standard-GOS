@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gigantes Plaki (Alubias al Horno)
 region: Macedonia Griega
 language: es

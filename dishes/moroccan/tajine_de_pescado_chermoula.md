@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Tajine de Pescado con Chermoula
 region: Essaouira
 language: es

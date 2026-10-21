@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Trifongo Puertorriqueño de Chicharrón
 region: Puerto Rico
 language: es

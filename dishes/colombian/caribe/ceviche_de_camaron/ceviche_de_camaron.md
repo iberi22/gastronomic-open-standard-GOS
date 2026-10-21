@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- unknown
 title: Ceviche de Camarón Costeño
 region: Caribe
 language: es

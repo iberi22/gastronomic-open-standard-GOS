@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Bhapa Pitha
 region: Mymensingh
 language: es

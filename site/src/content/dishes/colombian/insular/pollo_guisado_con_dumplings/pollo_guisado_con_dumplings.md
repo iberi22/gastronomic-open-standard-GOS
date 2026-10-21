@@ -1,4 +1,6 @@
 ---
+allergens:
+- cereals_gluten
 title: Pollo Guisado con Dumplings
 region: Insular
 language: es

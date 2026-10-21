@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cachama Asada
 region: Colombia
 language: es

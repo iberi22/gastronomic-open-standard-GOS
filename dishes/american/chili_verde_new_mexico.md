@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)
 region: Nuevo México
 language: es

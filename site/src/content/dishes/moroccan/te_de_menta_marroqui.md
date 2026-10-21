@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Té Verde Marroquí con Menta Fresca
 region: Marruecos Nacional
 language: es

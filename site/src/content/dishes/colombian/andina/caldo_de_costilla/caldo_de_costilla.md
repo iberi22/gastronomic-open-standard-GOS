@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Caldo de Costilla
 region: Andina
 language: es

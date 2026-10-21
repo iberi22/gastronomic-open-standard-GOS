@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- sulphites
+- unknown
 title: Cannoli Siciliani al Pistacchio
 region: Sicilia (Palermo)
 language: es

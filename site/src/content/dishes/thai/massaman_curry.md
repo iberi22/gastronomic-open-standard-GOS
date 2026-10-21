@@ -1,4 +1,7 @@
 ---
+allergens:
+- peanuts
+- unknown
 title: Massaman Curry de Res
 region: Sur de Tailandia
 language: es

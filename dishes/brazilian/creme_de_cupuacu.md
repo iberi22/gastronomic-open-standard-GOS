@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Creme de Cupuaçu
 region: Amazonas / Pará, Brasil
 language: pt

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Chashu de Cerdo para Ramen
 region: Fukuoka
 language: es

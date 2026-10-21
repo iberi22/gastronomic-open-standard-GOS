@@ -1,4 +1,7 @@
 ---
+allergens:
+- molluscs
+- unknown
 title: Caracol Guisado (Conch Stew)
 region: Insular
 language: es

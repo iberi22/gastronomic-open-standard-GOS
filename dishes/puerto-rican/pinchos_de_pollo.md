@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pinchos de Pollo Puertorriqueños
 region: Puerto Rico
 language: es

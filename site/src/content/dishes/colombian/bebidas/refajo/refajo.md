@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Refajo Colombiano
 region: Andina / Nacional
 language: es

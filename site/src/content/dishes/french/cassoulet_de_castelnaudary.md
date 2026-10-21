@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cassoulet de Castelnaudary
 region: Languedoc
 language: es

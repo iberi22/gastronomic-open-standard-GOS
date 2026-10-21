@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Pan de Arroz
 region: Colombia
 language: es

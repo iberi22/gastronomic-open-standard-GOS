@@ -3,6 +3,8 @@ aliases:
   en:
   - Dominican Sancocho
   - 7-Meat Stew
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Guiso

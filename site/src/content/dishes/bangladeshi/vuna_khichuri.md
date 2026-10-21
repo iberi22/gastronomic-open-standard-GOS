@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Bhuna Khichuri
 region: Sylhet
 language: es

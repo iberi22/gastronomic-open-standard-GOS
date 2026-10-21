@@ -3,6 +3,9 @@ aliases:
   en:
   - Lima Ceviche
   - Peruvian Ceviche
+allergens:
+- fish
+- unknown
 categories:
 - Plato fuerte
 - Marino

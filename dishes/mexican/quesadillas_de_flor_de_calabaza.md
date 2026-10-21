@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Quesadillas de Flor de Calabaza
 region: Ciudad de México
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Feijoada à Baiana
 region: Bahia, Brasil
 language: pt

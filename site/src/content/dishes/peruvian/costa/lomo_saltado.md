@@ -3,6 +3,10 @@ aliases:
   en:
   - Lomo Saltado
   - Peruvian Beef Stir-Fry
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 categories:
 - Plato fuerte
 - Criollo

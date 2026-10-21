@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Chorrillana Chilena
 region: Valparaíso
 language: es

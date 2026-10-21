@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mole Verde Oaxaqueño
 region: Oaxaca
 language: es

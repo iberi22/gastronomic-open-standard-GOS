@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Moussaka Griega Tradicional
 region: Atenas / Grecia Nacional
 language: es

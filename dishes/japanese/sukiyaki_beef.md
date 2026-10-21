@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- soybeans
+- unknown
 title: Sukiyaki Nabemono
 region: Kanto
 language: es

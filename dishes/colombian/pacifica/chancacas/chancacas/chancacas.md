@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Chancacas (Cocadas del Pacífico)
 region: Pacífica
 language: es

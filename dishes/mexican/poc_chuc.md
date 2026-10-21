@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Poc Chuc
 region: Yucatán
 language: es

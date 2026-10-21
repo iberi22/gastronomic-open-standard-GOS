@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pandebono Valluno
 region: Valle del Cauca
 language: es

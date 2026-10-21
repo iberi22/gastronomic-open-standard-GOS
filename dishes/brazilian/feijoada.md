@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Feijoada Completa Brasileira
 region: Brasil
 language: pt

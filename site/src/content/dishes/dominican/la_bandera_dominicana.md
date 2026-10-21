@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: 'La Bandera Dominicana (Arroz, Habichuelas y Carne)'
 region: República Dominicana
 language: es

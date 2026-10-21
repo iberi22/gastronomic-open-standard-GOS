@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Unagi no Kabayaki
 region: Shizuoka (Hamamatsu)
 language: es

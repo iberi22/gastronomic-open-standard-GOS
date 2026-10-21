@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Classic Reuben Sandwich
 region: 'Nueva York, NY'
 language: es

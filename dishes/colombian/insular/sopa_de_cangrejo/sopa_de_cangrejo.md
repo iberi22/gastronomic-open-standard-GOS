@@ -1,4 +1,8 @@
 ---
+allergens:
+- crustaceans
+- milk
+- unknown
 title: Sopa de Cangrejo (Crab Soup)
 region: Insular
 language: es

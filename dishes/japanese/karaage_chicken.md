@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Chicken Karaage
 region: Japón Nacional
 language: es

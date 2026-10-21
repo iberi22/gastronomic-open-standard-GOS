@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Rasgulla
 region: Bengala Occidental / Odisha
 language: es

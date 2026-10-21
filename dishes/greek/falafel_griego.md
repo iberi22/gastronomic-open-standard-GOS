@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Revithokeftedes (Croquetas de Garbanzo)
 region: Sifnos
 language: es

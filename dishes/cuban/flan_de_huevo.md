@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Flan de Huevo Tradicional Cubano
 region: Cuba
 language: es

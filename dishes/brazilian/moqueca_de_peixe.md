@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Moqueca de Peixe Baiana
 region: Brasil
 language: pt

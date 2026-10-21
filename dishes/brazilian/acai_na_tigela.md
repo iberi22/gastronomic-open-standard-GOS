@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Açaí na Tigela
 region: Pará / Brasil
 language: pt

@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Buri Daikon
 region: Toyama / Hokuriku
 language: es

@@ -1,4 +1,9 @@
 ---
+allergens:
+- fish
+- milk
+- soybeans
+- unknown
 title: Chanchan Yaki
 region: Hokkaido
 language: es

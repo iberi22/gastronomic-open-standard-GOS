@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- crustaceans
+- milk
+- unknown
 title: Shrimp and Grits de Charleston (Camarones con Sémola de Maíz)
 region: Carolina del Sur
 language: es

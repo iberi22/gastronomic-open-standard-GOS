@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Humitas Chilenas
 region: Central / Valles Agrícolas
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Brigadeiro Tradicional Brasileiro
 region: Brasil
 language: pt

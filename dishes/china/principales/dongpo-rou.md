@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- sulphites
+- unknown
 title: Dongpo Rou (Dongpo Pork)
 region: China
 language: zh

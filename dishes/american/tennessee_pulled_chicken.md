@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tennessee BBQ Pulled Chicken (Pollo Desmenuzado a la Barbacoa)
 region: Tennessee
 language: es

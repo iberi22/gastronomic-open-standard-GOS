@@ -3,6 +3,8 @@ aliases:
   en:
   - Tacos al Pastor
   - Pork Tacos
+allergens:
+- unknown
 categories:
 - Plato fuerte
 - Taquería

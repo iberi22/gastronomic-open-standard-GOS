@@ -1,4 +1,10 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- sesame
+- tree_nuts
+- unknown
 title: Sellou (Sfouf) Tradicional
 region: Marruecos Nacional
 language: es

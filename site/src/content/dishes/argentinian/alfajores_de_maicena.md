@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Alfajores de Maicena
 region: Buenos Aires / Nacional
 language: es

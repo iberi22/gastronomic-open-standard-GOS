@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Pasteles Puertorriqueños de Masa
 region: Puerto Rico
 language: es

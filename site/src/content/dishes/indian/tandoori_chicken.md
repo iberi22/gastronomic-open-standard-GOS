@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Tandoori Chicken
 region: Punjab
 language: es

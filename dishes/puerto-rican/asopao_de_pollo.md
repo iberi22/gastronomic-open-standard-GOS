@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Asopao de Pollo Puertorriqueño
 region: Puerto Rico
 language: es

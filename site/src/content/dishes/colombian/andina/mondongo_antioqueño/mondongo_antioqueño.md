@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mondongo Antioqueño
 region: Andina
 language: es

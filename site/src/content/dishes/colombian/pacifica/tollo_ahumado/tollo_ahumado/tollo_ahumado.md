@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tollo Ahumado
 region: Pacífica
 language: es

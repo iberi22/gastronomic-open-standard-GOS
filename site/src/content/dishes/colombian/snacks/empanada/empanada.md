@@ -1,4 +1,5 @@
 ---
+allergens: []
 title: Empanada Colombiana
 region: Nacional
 language: es

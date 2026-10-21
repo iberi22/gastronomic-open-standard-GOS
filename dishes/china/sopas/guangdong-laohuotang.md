@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guangdong Laohuotang (Cantonese Slow-Cooked Herbal Pork Soup)
 region: China
 language: zh

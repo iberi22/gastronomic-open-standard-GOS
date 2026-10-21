@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Spanakopita (Pastel de Espinacas y Feta)
 region: Epiro
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Classic American Cheeseburger
 region: Texas / California
 language: es

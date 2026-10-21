@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Chilaquiles Verdes con Huevo
 region: México DF
 language: es

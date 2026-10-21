@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Entreverado
 region: Colombia
 language: es

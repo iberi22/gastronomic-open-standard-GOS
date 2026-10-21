@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Empanadas de Jaiba
 region: Pacífica
 language: es

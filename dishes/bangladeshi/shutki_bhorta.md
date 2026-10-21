@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Shutki Bhorta
 region: Chittagong
 language: es

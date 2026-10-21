@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Jamón Ibérico de Bellota
 region: Extremadura / Jabugo
 language: es

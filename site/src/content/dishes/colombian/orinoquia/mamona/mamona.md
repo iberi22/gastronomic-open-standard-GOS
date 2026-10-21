@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Mamona (Ternera a la Llanera)
 region: Orinoquía
 language: es

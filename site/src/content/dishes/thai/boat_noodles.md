@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Kuay Teow Reua (Boat Noodles)
 region: Bangkok
 language: es

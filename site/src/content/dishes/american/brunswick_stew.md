@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Brunswick Stew (Estofado Tradicional de Virginia)
 region: Virginia
 language: es

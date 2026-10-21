@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Chimichurri Dominicano (Chimi)
 region: República Dominicana
 language: es

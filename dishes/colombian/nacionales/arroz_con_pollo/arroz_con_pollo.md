@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Arroz con Pollo Colombiano
 region: Colombia
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Daube Provençale
 region: Provenza
 language: es

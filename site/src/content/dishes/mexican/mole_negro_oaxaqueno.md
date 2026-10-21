@@ -1,4 +1,7 @@
 ---
+allergens:
+- sesame
+- unknown
 title: Mole Negro Oaxaqueño
 region: Oaxaca
 language: es

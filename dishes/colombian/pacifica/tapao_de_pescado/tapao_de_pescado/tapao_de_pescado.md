@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Tapao de Pescado
 region: Pacífica / Nariño
 language: es

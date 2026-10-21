@@ -1,4 +1,7 @@
 ---
+allergens:
+- mustard
+- unknown
 title: Aloo Bhorta
 region: Barisal
 language: es

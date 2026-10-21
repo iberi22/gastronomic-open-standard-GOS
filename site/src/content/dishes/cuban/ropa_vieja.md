@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Ropa Vieja Cubana
 region: Cuba
 language: es

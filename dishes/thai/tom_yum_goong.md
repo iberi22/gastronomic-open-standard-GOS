@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Tom Yum Goong
 region: Central Thailand
 language: es

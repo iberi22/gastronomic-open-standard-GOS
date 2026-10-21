@@ -1,4 +1,7 @@
 ---
+allergens:
+- fish
+- unknown
 title: Encocado de Pescado
 region: Pacífica
 language: es

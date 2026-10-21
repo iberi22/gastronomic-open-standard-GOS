@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)
 region: Sur de Estados Unidos
 language: es

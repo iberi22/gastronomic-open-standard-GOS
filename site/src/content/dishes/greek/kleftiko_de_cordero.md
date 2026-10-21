@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Kleftiko de Cordero en Papel
 region: Grecia Central
 language: es

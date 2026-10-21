@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Rasam de Tomate
 region: Tamil Nadu / Sur de la India
 language: es

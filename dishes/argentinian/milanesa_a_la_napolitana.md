@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Milanesa a la Napolitana
 region: Buenos Aires / Pampeana
 language: es

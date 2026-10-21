@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Pan de Coco (Coconut Bread)
 region: Insular
 language: es

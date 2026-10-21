@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Guobao Rou (东北锅包肉 / Crispy Sweet and Sour Pork)
 region: China
 language: zh

@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pav Bhaji
 region: Mumbai
 language: es

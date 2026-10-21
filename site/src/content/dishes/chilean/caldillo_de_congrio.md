@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- sulphites
+- unknown
 title: Caldillo de Congrio
 region: Litoral / Coquimbo / Valparaíso
 language: es

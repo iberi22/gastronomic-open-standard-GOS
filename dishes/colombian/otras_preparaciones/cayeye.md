@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Cayeye
 region: Caribe
 language: es

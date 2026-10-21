@@ -3,6 +3,9 @@ aliases:
   en:
   - Bandeja Paisa
   - Paisa Tray
+allergens:
+- eggs
+- unknown
 categories:
 - Plato Fuerte
 - Hipercalórico

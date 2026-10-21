@@ -1,4 +1,8 @@
 ---
+allergens:
+- sesame
+- tree_nuts
+- unknown
 title: Mole Poblano
 region: Puebla
 language: es

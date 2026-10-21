@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Empanada de Pino Chilena
 region: Valparaíso / Metropolitana
 language: es

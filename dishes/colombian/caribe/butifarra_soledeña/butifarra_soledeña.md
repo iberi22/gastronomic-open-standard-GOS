@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Butifarra Soledeña
 region: Caribe
 language: es

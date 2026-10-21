@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Rfissa de Pollo con Lentejas
 region: Casablanca
 language: es

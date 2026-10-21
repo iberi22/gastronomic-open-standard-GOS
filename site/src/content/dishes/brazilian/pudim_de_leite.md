@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Pudim de Leite Condensado
 region: Brasil
 language: pt

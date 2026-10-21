@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: St. Louis Style BBQ Ribs (Costillas de Cerdo Estilo San Luis)
 region: Misuri
 language: es

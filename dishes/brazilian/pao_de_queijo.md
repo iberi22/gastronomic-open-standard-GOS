@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Pão de Queijo Mineiro
 region: Brasil
 language: pt

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Moros y Cristianos Tradicionales
 region: Cuba
 language: es

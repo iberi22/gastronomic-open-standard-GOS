@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Guacamole Colombiano
 region: Colombia
 language: es

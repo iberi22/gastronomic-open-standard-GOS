@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Pabellón Llanero
 region: Colombia
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Casabe (El Pan de la Selva)
 region: Amazonía / Orinoquía
 language: es

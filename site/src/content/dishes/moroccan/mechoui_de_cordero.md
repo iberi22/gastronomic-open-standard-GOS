@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Mechoui de Cordero Asado
 region: Atlas / Marrakech
 language: es

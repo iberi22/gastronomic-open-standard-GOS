@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cazuela de Vacuno
 region: Andina / Central
 language: es

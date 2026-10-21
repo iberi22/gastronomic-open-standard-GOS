@@ -1,4 +1,7 @@
 ---
+allergens:
+- sulphites
+- unknown
 title: Carbonada Criolla
 region: Pampeana / Noroeste
 language: es

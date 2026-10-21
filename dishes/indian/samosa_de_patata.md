@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Samosa de Patata y Guisantes
 region: Norte de India
 language: es

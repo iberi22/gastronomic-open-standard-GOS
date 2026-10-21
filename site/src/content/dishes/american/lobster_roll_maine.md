@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- eggs
+- milk
+- unknown
 title: Maine Lobster Roll (Bocadillo de Langosta de Maine)
 region: Maine
 language: es

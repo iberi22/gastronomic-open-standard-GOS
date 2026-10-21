@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Caruru Baiano
 region: Bahia, Brasil
 language: pt

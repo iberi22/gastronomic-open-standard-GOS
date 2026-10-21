@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Spaghetti alla Carbonara
 region: Lazio (Roma)
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- milk
 title: Pandeyuca (Pan de Yuca)
 region: Andina / Sur de Colombia
 language: es

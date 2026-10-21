@@ -1,4 +1,7 @@
 ---
+allergens:
+- tree_nuts
+- unknown
 title: Loukoumades con Miel y Canela
 region: Atenas
 language: es

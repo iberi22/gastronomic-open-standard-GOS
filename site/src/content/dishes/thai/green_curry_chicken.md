@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gaeng Keow Wan (Curry Verde)
 region: Bangkok
 language: es

@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Galaktoboureko (Pastel de Semola y Miel)
 region: Grecia Nacional
 language: es

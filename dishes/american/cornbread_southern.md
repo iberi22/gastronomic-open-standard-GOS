@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
 title: Southern Skillet Cornbread
 region: Sur de EE.UU.
 language: es

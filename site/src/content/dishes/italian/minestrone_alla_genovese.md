@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Minestrone alla Genovese
 region: Liguria
 language: es

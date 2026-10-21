@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Tostones Cubanos (Chatinos)
 region: Cuba
 language: es

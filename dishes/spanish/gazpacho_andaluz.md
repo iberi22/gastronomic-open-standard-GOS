@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Gazpacho Andaluz
 region: Andalucía
 language: es

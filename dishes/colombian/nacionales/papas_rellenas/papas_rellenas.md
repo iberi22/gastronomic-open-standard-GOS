@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- unknown
 title: Papas Rellenas Colombianas
 region: Nacional
 language: es

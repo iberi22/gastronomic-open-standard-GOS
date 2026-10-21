@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- milk
+- unknown
 title: Buñuelo Colombiano
 region: Nacional
 language: es

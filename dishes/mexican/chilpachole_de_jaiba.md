@@ -1,4 +1,7 @@
 ---
+allergens:
+- crustaceans
+- unknown
 title: Chilpachole de Jaiba
 region: Veracruz
 language: es

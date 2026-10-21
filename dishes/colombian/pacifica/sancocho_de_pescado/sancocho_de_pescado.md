@@ -1,4 +1,6 @@
 ---
+allergens:
+- fish
 title: Sancocho de Pescado Pacífico
 region: Pacífica
 language: es

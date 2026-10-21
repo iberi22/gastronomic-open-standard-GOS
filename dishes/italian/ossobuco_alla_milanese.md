@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- sulphites
+- unknown
 title: Ossobuco alla Milanese con Gremolata
 region: Lombardía
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Confit de Canard
 region: Gascuña
 language: es

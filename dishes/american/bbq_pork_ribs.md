@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: St. Louis Style BBQ Pork Ribs
 region: Missouri / Memphis
 language: es

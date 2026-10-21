@@ -1,4 +1,8 @@
 ---
+allergens:
+- fish
+- mustard
+- unknown
 title: Panta Bhat
 region: Dhaka
 language: es

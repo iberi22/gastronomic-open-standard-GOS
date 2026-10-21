@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Huarache de Cecina
 region: Ciudad de México
 language: es

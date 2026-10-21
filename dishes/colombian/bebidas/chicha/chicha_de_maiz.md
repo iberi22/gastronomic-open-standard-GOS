@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Chicha de Maíz Ancestral
 region: Nacional (Andina / Altiplano)
 language: es

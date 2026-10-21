@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Pad See Ew
 region: Bangkok
 language: es

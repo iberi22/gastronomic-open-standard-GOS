@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Hyderabadi Biryani
 region: Hyderabad
 language: es

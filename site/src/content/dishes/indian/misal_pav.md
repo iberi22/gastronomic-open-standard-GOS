@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Misal Pav
 region: Maharashtra
 language: es

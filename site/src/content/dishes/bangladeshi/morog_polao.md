@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- tree_nuts
+- unknown
 title: Dhakai Morog Polao
 region: Old Dhaka
 language: es

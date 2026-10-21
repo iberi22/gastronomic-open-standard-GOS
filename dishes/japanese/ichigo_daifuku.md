@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Ichigo Daifuku
 region: Tokyo / Kansai
 language: es

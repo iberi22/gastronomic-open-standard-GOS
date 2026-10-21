@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- peanuts
+- unknown
 title: Panang Curry
 region: Central Thailand
 language: es

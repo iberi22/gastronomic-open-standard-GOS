@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Butter Chicken (Murgh Makhani)
 region: Punjab
 language: es

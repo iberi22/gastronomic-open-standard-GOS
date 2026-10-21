@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- milk
+- unknown
 title: Fluffy Pancakes con Maple Syrup
 region: EE.UU. Nacional
 language: es

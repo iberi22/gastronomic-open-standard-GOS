@@ -1,4 +1,7 @@
 ---
+allergens:
+- soybeans
+- unknown
 title: Sopa de Miso Clásica
 region: Japón Nacional
 language: es

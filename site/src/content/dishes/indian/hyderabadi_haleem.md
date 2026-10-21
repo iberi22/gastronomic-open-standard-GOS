@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- milk
+- unknown
 title: Hyderabadi Haleem
 region: Telangana / Hyderabad
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Cochinita Pibil
 region: Yucatán
 language: es

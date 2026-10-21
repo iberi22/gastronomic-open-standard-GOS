@@ -1,4 +1,8 @@
 ---
+allergens:
+- cereals_gluten
+- soybeans
+- unknown
 title: Nikujaga (Res con Patatas)
 region: Japón Nacional
 language: es

@@ -1,4 +1,7 @@
 ---
+allergens:
+- eggs
+- unknown
 title: Tortilla de Patatas Española
 region: España Nacional
 language: es

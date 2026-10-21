@@ -1,4 +1,8 @@
 ---
+allergens:
+- eggs
+- fish
+- unknown
 title: Juanes de Yuca
 region: Amazonía
 language: es

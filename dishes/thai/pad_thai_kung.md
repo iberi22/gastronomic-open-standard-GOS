@@ -1,4 +1,9 @@
 ---
+allergens:
+- crustaceans
+- peanuts
+- soybeans
+- unknown
 title: Pad Thai Kung (con Camarones)
 region: Bangkok
 language: es

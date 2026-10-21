@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Sopa de Lima
 region: Yucatán
 language: es

@@ -1,4 +1,9 @@
 ---
+allergens:
+- cereals_gluten
+- eggs
+- soybeans
+- unknown
 title: Pad Krapow Moo (Cerdo con Albahaca)
 region: Bangkok
 language: es

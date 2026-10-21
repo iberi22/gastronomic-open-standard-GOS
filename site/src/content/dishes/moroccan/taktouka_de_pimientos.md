@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Taktouka de Pimientos Asados
 region: Fez
 language: es

@@ -1,4 +1,6 @@
 ---
+allergens:
+- unknown
 title: Alcapurrias de Masa Puertorriqueñas
 region: Puerto Rico
 language: es

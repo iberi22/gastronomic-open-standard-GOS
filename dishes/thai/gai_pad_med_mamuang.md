@@ -1,4 +1,8 @@
 ---
+allergens:
+- molluscs
+- tree_nuts
+- unknown
 title: Gai Pad Med Mamuang (Pollo con Anacardos)
 region: Bangkok
 language: es

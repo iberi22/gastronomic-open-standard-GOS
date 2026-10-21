@@ -1,4 +1,8 @@
 ---
+allergens:
+- milk
+- sulphites
+- unknown
 title: Saltimbocca alla Romana
 region: Lazio (Roma)
 language: es

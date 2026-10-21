@@ -1,4 +1,7 @@
 ---
+allergens:
+- milk
+- unknown
 title: Bisi Bele Bath
 region: Karnataka
 language: es

@@ -2,6 +2,8 @@
 aliases:
   en:
   - Caprese Salad
+allergens:
+- unknown
 categories:
 - Entrante
 - Ensalada
