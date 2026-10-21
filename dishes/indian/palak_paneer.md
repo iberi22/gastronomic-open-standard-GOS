@@ -25,6 +25,7 @@ main_ingredients:
   - Ajo
   - Jengibre
   - Garam masala
+main_ingredient_slugs: [null, null, ajo, jengibre, null]
 sensory:
   flavor:
     - Salado

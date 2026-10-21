@@ -27,6 +27,7 @@ main_ingredients:
   - Açafrão-da-terra (cúrcuma) ou urucum
   - Pequi (opcional versão goiana)
   - Pimentão, tomate e cheiro-verde
+main_ingredient_slugs: [null, null, null, null, pimenton_rojo]
 sensory:
   flavor:
     - Salgado

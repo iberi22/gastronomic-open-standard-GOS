@@ -25,6 +25,7 @@ main_ingredients:
 - Ajo fresco
 - Orégano seco
 - Comino molido
+main_ingredient_slugs: [cerdo, null, ajo, oregano, comino]
 nutrition:
   calories: 410
   macros:

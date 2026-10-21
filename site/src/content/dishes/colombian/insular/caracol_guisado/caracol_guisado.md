@@ -24,6 +24,7 @@ main_ingredients:
   - Leche de Coco fresca
   - Ají Chirel (picante local)
   - 'Vegetales (Cebolla, Pimentón, Ajo)'
+main_ingredient_slugs: [null, leche_coco, null, null]
 sensory:
   flavor:
     - Marino Profundo

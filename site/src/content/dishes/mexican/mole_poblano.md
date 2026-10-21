@@ -29,6 +29,7 @@ main_ingredients:
   - Ajonjolí
   - Almendras
   - Canela
+main_ingredient_slugs: [null, null, null, null, null, null, null, canela]
 sensory:
   flavor:
     - Complejo

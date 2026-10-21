@@ -31,6 +31,7 @@ main_ingredients:
   - Yuca
   - Plátano
   - Arepa
+main_ingredient_slugs: [chicharron, chorizo, morcilla, cerdo, papa_criolla, yuca, platano_maduro, arepa]
 sensory:
   flavor:
     - Salado

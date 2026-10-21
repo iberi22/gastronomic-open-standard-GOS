@@ -24,6 +24,7 @@ main_ingredients:
   - Salsa de anacardos y tomate
   - Nata
   - Especias suaves
+main_ingredient_slugs: [null, null, crema_leche, null]
 sensory:
   flavor:
     - Salado

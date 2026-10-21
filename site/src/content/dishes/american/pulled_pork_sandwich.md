@@ -24,6 +24,7 @@ main_ingredients:
   - Salsa BBQ
   - Pan de brioche
   - Ensalada coleslaw
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

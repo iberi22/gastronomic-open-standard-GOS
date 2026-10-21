@@ -26,6 +26,7 @@ main_ingredients:
   - Aceitunas
   - Judías verdes
   - Tomate
+main_ingredient_slugs: [null, huevo, null, null, null, tomate]
 sensory:
   flavor:
     - Salado

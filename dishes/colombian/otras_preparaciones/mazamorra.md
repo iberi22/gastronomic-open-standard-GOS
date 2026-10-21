@@ -13,6 +13,7 @@ main_ingredients:
   - leche
   - panela
   - bocadillo de guayaba
+main_ingredient_slugs: [null, leche, panela, null]
 sensory:
   flavor:
     - Sweet (panela)

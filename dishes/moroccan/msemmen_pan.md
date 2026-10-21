@@ -24,6 +24,7 @@ main_ingredients:
   - Sémola fina
   - Mantequilla
   - Aceite vegetal
+main_ingredient_slugs: [harina_trigo, null, mantequilla, aceite]
 sensory:
   flavor:
     - Salado

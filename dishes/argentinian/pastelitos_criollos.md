@@ -29,6 +29,7 @@ main_ingredients:
   - Dulce de membrillo o dulce de batata
   - Azúcar granulada
   - Aceite vegetal o manteca de freír
+main_ingredient_slugs: [harina_trigo, mantequilla, null, null, aceite]
 sensory:
   flavor:
     - Muy dulce

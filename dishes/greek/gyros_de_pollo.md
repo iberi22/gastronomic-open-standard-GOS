@@ -25,6 +25,7 @@ main_ingredients:
   - Salsa tzatziki
   - Tomate
   - Cebolla roja
+main_ingredient_slugs: [null, null, null, tomate, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

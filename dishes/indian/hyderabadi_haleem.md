@@ -27,6 +27,7 @@ main_ingredients:
   - Ghee
   - Garam masala
   - Cebolla frita
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Umami

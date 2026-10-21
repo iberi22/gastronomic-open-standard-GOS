@@ -28,6 +28,7 @@ main_ingredients:
   - Alcaparras (capers)
   - Vino seco (vino blanco seco de cocina)
   - Puré de tomate
+main_ingredient_slugs: [carne_res, null, null, vinagre, null, null]
 sensory:
   flavor:
     - Salado

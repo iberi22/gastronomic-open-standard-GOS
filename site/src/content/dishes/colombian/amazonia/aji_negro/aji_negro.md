@@ -18,6 +18,7 @@ servings: 20
 main_ingredients:
   - Ají amazónico
   - Yuca amarga
+main_ingredient_slugs: [aji_picante, yuca]
 sensory:
   flavor:
     - Picante

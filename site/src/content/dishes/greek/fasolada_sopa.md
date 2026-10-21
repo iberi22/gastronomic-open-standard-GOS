@@ -25,6 +25,7 @@ main_ingredients:
   - Zanahoria
   - Apio
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, zanahoria, apio, null]
 sensory:
   flavor:
     - Salado

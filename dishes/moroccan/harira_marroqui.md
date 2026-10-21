@@ -26,6 +26,7 @@ main_ingredients:
   - Carne de cordero
   - Cilantro
   - Apio
+main_ingredient_slugs: [tomate, lentejas, null, null, cilantro, apio]
 sensory:
   flavor:
     - Salado

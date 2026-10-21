@@ -26,6 +26,7 @@ main_ingredients:
   - Leche
   - Pan rallado
   - Huevo
+main_ingredient_slugs: [null, null, harina_trigo, leche, null, huevo]
 sensory:
   flavor:
     - Salado

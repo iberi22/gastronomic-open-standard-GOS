@@ -27,6 +27,7 @@ main_ingredients:
   - Café espresso fuerte
   - Cacao amargo en polvo
   - Licor Amaretto o Marsala
+main_ingredient_slugs: [null, null, huevo, azucar, null, null, null]
 sensory:
   flavor:
     - Café espresso amargo

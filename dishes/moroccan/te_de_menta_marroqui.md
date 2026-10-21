@@ -24,6 +24,7 @@ main_ingredients:
   - Menta fresca hierbabuena
   - Azúcar en pilón
   - Agua hirviendo
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

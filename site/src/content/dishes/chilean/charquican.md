@@ -31,6 +31,7 @@ main_ingredients:
   - Cebolla
   - Comino y orégano
   - Huevo
+main_ingredient_slugs: [carne_res, papa_pastusa, null, null, arveja, cebolla_cabezona, null, huevo]
 sensory:
   flavor:
     - Salado

@@ -25,6 +25,7 @@ main_ingredients:
   - Zanahorias
   - Cebolla
   - Caldo de carne
+main_ingredient_slugs: [null, null, zanahoria, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

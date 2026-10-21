@@ -25,6 +25,7 @@ main_ingredients:
   - Cilantro fresco
   - Mantequilla o ghee
   - Yogur
+main_ingredient_slugs: [harina_trigo, ajo, cilantro, mantequilla, null]
 sensory:
   flavor:
     - Salado

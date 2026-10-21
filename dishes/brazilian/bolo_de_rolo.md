@@ -27,6 +27,7 @@ main_ingredients:
   - Gemas e ovos frescos
   - Farinha de trigo fina
   - Goiabada derretida em ponto de geleia
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Doce

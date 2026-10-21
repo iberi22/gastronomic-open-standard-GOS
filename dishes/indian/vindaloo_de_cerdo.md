@@ -26,6 +26,7 @@ main_ingredients:
   - Ajo
   - Comino
   - Canela
+main_ingredient_slugs: [cerdo, null, null, ajo, comino, canela]
 sensory:
   flavor:
     - Picante

@@ -20,6 +20,7 @@ main_ingredients:
   - Maní
   - Maíz
   - Yuca
+main_ingredient_slugs: [null, mani, maiz, yuca]
 sensory:
   flavor:
     - Umami

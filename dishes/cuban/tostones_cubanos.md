@@ -26,6 +26,7 @@ main_ingredients:
   - Plátano verde (plátano macho verde)
   - Aceite vegetal para freír
   - Sal marina
+main_ingredient_slugs: [platano_verde, aceite, sal]
 sensory:
   flavor:
     - Salado

@@ -28,6 +28,7 @@ main_ingredients:
   - Aceite de oliva
   - Camarones limpios
   - 'Salsa criolla (tomate, pimiento, cebolla)'
+main_ingredient_slugs: [platano_verde, null, ajo, null, null, null]
 sensory:
   flavor:
     - Salado

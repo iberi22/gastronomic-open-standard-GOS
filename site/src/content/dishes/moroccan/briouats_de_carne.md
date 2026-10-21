@@ -26,6 +26,7 @@ main_ingredients:
   - Comino
   - Perejil
   - Canela
+main_ingredient_slugs: [null, null, cebolla_cabezona, comino, null, canela]
 sensory:
   flavor:
     - Salado

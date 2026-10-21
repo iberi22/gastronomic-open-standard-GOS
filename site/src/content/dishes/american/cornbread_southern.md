@@ -25,6 +25,7 @@ main_ingredients:
   - Mantequilla
   - Leche
   - Huevos
+main_ingredient_slugs: [harina_maiz, harina_trigo, mantequilla, leche, huevo]
 sensory:
   flavor:
     - Salado

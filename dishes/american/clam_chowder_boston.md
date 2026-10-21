@@ -25,6 +25,7 @@ main_ingredients:
   - Crema de leche
   - Tocineta
   - Cebolla
+main_ingredient_slugs: [null, null, crema_leche, null, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

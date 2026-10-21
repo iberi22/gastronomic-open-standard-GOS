@@ -30,6 +30,7 @@ main_ingredients:
   - Huevos duros
   - Aceitunas negras
   - Pasas
+main_ingredient_slugs: [harina_trigo, manteca_cerdo, carne_res, cebolla_cabezona, comino, huevo, null, null]
 sensory:
   flavor:
     - Salado

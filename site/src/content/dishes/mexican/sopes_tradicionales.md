@@ -27,6 +27,7 @@ main_ingredients:
   - Queso Cotija
   - Crema fresca
   - Salsa verde
+main_ingredient_slugs: [null, null, lechuga, null, null, null]
 sensory:
   flavor:
     - Salado

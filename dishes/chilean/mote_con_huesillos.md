@@ -29,6 +29,7 @@ main_ingredients:
   - Azúcar granulada
   - Canela en rama
   - Cáscara de naranja
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce

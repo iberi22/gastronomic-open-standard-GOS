@@ -24,6 +24,7 @@ main_ingredients:
   - Harina de garbanzo (besan)
   - Semillas de carambola (ajwain)
   - Zumo de limón
+main_ingredient_slugs: [null, null, null, limon]
 sensory:
   flavor:
     - Salado

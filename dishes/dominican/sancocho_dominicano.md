@@ -27,6 +27,7 @@ main_ingredients:
 - Calabaza (ahuyama)
 - Maíz tierno (mazorcas)
 - Naranja agria
+main_ingredient_slugs: [null, platano_verde, yuca, null, ñame, ahuyama, null, null]
 nutrition:
   calories: 780
   macros:

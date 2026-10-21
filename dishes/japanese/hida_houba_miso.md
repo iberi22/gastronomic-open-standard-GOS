@@ -28,6 +28,7 @@ main_ingredients:
   - Hongos shiitake frescos
   - Cebolleta verde (negi) picada
   - Mirin y sake
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Miso dulce terroso profundo

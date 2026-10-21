@@ -25,6 +25,7 @@ main_ingredients:
   - Panela (Miel de caña)
   - Clavos y Canela
   - Hojas de Arrayán (Tradicional)
+main_ingredient_slugs: [null, panela, null, null]
 sensory:
   flavor:
     - Ácido Láctico

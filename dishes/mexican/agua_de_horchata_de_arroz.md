@@ -25,6 +25,7 @@ main_ingredients:
   - Leche evaporada
   - Leche condensada
   - Extracto de vainilla
+main_ingredient_slugs: [arroz, null, null, leche_condensada, null]
 sensory:
   flavor:
     - Dulce cremoso

@@ -27,6 +27,7 @@ main_ingredients:
   - Nabo
   - Garbanzos
   - Carne de ternera
+main_ingredient_slugs: [null, ahuyama, zanahoria, null, nabo, null, carne_res]
 sensory:
   flavor:
     - Salado

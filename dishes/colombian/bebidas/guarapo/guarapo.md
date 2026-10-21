@@ -25,6 +25,7 @@ main_ingredients:
   - Agua potabilizada
   - Hojas de Limonaria (opcional)
   - Jugo de Limón (opcional)
+main_ingredient_slugs: [panela, null, null, limon]
 sensory:
   flavor:
     - Dulce-Ácido

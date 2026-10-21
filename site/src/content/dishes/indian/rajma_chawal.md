@@ -26,6 +26,7 @@ main_ingredients:
   - Cebolla
   - Garam masala
   - Jengibre y Ajo
+main_ingredient_slugs: [frijol, arroz, tomate, cebolla_cabezona, null, null]
 sensory:
   flavor:
     - Salado

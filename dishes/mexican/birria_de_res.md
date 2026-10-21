@@ -26,6 +26,7 @@ main_ingredients:
 - Comino
 - Orégano
 - Canela
+main_ingredient_slugs: [carne_res, null, null, tomate, vinagre, comino, oregano, canela]
 nutrition:
   calories: 720
   macros:

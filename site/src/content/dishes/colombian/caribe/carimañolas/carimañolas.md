@@ -26,6 +26,7 @@ main_ingredients:
   - Aceite vegetal
   - Sal
   - Color (Achiote) para el relleno
+main_ingredient_slugs: [null, carne_res, aceite, sal, null]
 sensory:
   flavor:
     - Yuca frita (Neutro)

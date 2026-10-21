@@ -24,6 +24,7 @@ main_ingredients:
   - Crema de leche
   - Azúcar
   - Vainilla
+main_ingredient_slugs: [huevo, crema_leche, azucar, vainilla]
 sensory:
   flavor:
     - Salado

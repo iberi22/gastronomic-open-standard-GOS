@@ -26,6 +26,7 @@ main_ingredients:
   - Jitomate
   - Epazote
   - Masa de maíz
+main_ingredient_slugs: [null, null, null, tomate, null, harina_maiz]
 sensory:
   flavor:
     - Picante intenso

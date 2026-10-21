@@ -25,6 +25,7 @@ main_ingredients:
   - Azúcar Morena o Panela
   - Limón Criollo
   - Agua de Lluvia o filtrada
+main_ingredient_slugs: [jengibre, azucar, null, null]
 sensory:
   flavor:
     - Pungente / Picante

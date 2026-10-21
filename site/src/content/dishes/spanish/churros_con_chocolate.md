@@ -25,6 +25,7 @@ main_ingredients:
   - Sal
   - Aceite para freír
   - Chocolate espeso
+main_ingredient_slugs: [harina_trigo, null, sal, aceite, null]
 sensory:
   flavor:
     - Salado

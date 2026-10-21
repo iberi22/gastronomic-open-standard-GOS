@@ -25,6 +25,7 @@ main_ingredients:
   - Leche
   - Huevos
   - Jarabe de cítricos
+main_ingredient_slugs: [null, null, leche, huevo, null]
 sensory:
   flavor:
     - Salado

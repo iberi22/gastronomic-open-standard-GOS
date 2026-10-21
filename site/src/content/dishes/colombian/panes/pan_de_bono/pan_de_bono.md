@@ -25,6 +25,7 @@ main_ingredients:
   - Masato de Maíz o Harina de Maíz
   - Queso Costeño (Salado)
   - Queso Fresco (Cuajada)
+main_ingredient_slugs: [null, null, queso, queso]
 sensory:
   flavor:
     - Queso Salado

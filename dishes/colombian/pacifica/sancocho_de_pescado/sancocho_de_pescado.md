@@ -20,6 +20,7 @@ main_ingredients:
   - Leche de coco
   - Yuca
   - Plátano verde
+main_ingredient_slugs: [pescado, leche_coco, yuca, platano_verde]
 sensory:
   flavor:
     - Umami

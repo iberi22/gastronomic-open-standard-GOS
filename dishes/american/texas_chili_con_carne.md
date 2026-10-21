@@ -25,6 +25,7 @@ main_ingredients:
   - Comino
   - Ajo
   - Caldo de res
+main_ingredient_slugs: [null, null, comino, ajo, null]
 sensory:
   flavor:
     - Salado

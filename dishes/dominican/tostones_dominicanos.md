@@ -28,6 +28,7 @@ main_ingredients:
   - Ajo fresco
   - Sal fina
   - Agua fría
+main_ingredient_slugs: [platano_verde, aceite, ajo, sal, null]
 sensory:
   flavor:
     - Salado

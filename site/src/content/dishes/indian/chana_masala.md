@@ -25,6 +25,7 @@ main_ingredients:
   - Cebolla
   - Jengibre
   - Chana masala especias
+main_ingredient_slugs: [null, tomate, cebolla_cabezona, jengibre, null]
 sensory:
   flavor:
     - Salado

@@ -28,6 +28,7 @@ main_ingredients:
   - Vinagre tinto
   - Orégano seco
   - Cerveza rubia (o chicha de jora)
+main_ingredient_slugs: [null, null, ajo, null, oregano, cerveza]
 sensory:
   flavor:
     - Umami Profundo (Carne de corazón)

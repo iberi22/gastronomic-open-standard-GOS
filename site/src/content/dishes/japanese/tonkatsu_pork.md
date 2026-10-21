@@ -27,6 +27,7 @@ main_ingredients:
   - Col blanca rallada finísima
   - Salsa Tonkatsu
   - Mostaza Karashi
+main_ingredient_slugs: [null, null, harina_trigo, huevo, null, null, null]
 sensory:
   flavor:
     - Umami de cerdo jugoso

@@ -24,6 +24,7 @@ main_ingredients:
   - Queso costeño
   - Suero
   - Hogao
+main_ingredient_slugs: [ñame, queso, null, hogao]
 sensory:
   flavor:
     - Salado

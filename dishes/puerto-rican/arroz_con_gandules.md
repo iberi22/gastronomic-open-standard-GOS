@@ -27,6 +27,7 @@ main_ingredients:
   - Sofrito puertorriqueño
   - Aceite de achiote
   - Tocino o jamón de cocinar
+main_ingredient_slugs: [null, null, null, aceite_achiote, tocino]
 sensory:
   flavor:
     - Salado

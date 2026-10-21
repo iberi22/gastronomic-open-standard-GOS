@@ -27,6 +27,7 @@ main_ingredients:
   - Sake
   - Azúcar
   - Brochetas de bambú
+main_ingredient_slugs: [null, null, salsa_soya, null, null, azucar, null]
 sensory:
   flavor:
     - Umami glaseado

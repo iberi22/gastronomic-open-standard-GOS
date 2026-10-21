@@ -23,6 +23,7 @@ tags:
 main_ingredients:
   - Yuca Amarga (*Manihot esculenta* - Cultivares ricos en cianuro)
   - Agua (Solo para procesamiento)
+main_ingredient_slugs: [yuca, null]
 sensory:
   flavor:
     - Neutro / Tostado

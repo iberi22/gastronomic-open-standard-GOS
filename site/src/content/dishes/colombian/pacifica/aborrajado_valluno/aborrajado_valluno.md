@@ -27,6 +27,7 @@ main_ingredients:
   - Harina de Trigo
   - Huevo
   - Leche
+main_ingredient_slugs: [platano_maduro, queso, null, harina_trigo, huevo, leche]
 sensory:
   flavor:
     - Plátano Maduro (Dulce)

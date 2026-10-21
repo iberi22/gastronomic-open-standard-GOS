@@ -32,6 +32,7 @@ main_ingredients:
   - Duraznos deshidratados (orejones)
   - Cebolla
   - Vino tinto
+main_ingredient_slugs: [null, carne_res, null, papa_pastusa, null, null, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

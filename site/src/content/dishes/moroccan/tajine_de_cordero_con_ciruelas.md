@@ -26,6 +26,7 @@ main_ingredients:
   - Canela
   - Sésamo
   - Azafrán
+main_ingredient_slugs: [null, null, null, canela, null, null]
 sensory:
   flavor:
     - Salado

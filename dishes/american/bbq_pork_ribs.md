@@ -25,6 +25,7 @@ main_ingredients:
   - Pimentón
   - Ajo
   - Miel
+main_ingredient_slugs: [cerdo, null, pimenton_rojo, ajo, miel]
 sensory:
   flavor:
     - Salado

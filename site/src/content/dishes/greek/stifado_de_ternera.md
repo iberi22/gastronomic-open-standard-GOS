@@ -26,6 +26,7 @@ main_ingredients:
   - Vino tinto
   - Canela
   - Clavo
+main_ingredient_slugs: [carne_res, null, tomate, null, canela, null]
 sensory:
   flavor:
     - Salado

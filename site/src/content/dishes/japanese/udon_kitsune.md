@@ -26,6 +26,7 @@ main_ingredients:
   - Salsa de soja clara
   - Mirin
   - Cebollín picado
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulce salado equilibrado

@@ -26,6 +26,7 @@ main_ingredients:
   - Harina de Trigo (para el wrap)
   - Huevo y Leche (Aparejo)
   - Aceite vegetal (Fritura profunda)
+main_ingredient_slugs: [platano_maduro, pescado, harina_trigo, null, aceite]
 sensory:
   flavor:
     - Dulce-Salado (Contraste)

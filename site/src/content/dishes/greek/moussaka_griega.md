@@ -25,6 +25,7 @@ main_ingredients:
   - Salsa bechamel
   - Tomate
   - Patata
+main_ingredient_slugs: [null, null, null, tomate, null]
 sensory:
   flavor:
     - Salado

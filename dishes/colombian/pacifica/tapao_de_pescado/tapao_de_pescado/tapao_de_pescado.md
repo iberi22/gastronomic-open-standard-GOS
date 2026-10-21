@@ -26,6 +26,7 @@ main_ingredients:
   - Hojas de Plátano (Sello térmico)
   - Cilantro Cimarrón
   - Poleo / Orégano de Azotea
+main_ingredient_slugs: [null, platano_verde, null, culantro, null]
 sensory:
   flavor:
     - Salinidad Limpia

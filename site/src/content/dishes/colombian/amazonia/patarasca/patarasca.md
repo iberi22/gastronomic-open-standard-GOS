@@ -22,6 +22,7 @@ main_ingredients:
   - Cilantro
   - Ajo
   - Limón
+main_ingredient_slugs: [null, null, cilantro, ajo, limon]
 sensory:
   flavor:
     - Umami

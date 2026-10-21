@@ -26,6 +26,7 @@ main_ingredients:
   - Leche
   - Hojas de laurel
   - Sal de grano
+main_ingredient_slugs: [cerdo, manteca_cerdo, null, leche, laurel, null]
 sensory:
   flavor:
     - Umami de cerdo frito

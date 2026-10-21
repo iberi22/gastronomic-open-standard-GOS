@@ -26,6 +26,7 @@ main_ingredients:
   - Coco rallado fresco
   - Mantequilla o Aceite de Coco
   - Levadura
+main_ingredient_slugs: [null, null, coco, mantequilla, levadura]
 sensory:
   flavor:
     - Dulzor Suave

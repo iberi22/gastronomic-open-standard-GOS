@@ -27,6 +27,7 @@ main_ingredients:
   - Setas enoki y shiitake
   - Warishita tare
   - Huevos frescos
+main_ingredient_slugs: [null, null, null, null, null, null, huevo]
 sensory:
   flavor:
     - Dulce intenso (Warishita)

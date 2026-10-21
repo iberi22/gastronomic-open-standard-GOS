@@ -25,6 +25,7 @@ main_ingredients:
 - Pasta de ají panca
 - Huevo duro picado
 - Harina de trigo
+main_ingredient_slugs: [null, carne_res, cebolla_cabezona, null, huevo, harina_trigo]
 nutrition:
   calories: 390
   macros:

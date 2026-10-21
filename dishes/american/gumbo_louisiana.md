@@ -25,6 +25,7 @@ main_ingredients:
   - Okra
   - Roux
   - Arroz
+main_ingredient_slugs: [camaron, null, null, null, arroz]
 sensory:
   flavor:
     - Salado

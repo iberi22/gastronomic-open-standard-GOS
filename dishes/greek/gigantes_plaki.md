@@ -25,6 +25,7 @@ main_ingredients:
   - Ajo
   - Orégano
   - Aceite de oliva
+main_ingredient_slugs: [null, tomate, ajo, oregano, null]
 sensory:
   flavor:
     - Salado

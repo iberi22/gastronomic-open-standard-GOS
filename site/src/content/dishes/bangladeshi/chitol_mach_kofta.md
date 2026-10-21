@@ -30,6 +30,7 @@ main_ingredients:
   - Cúrcuma en polvo
   - Comino molido
   - Aceite de mostaza
+main_ingredient_slugs: [null, null, jengibre, ajo, null, comino, null]
 sensory:
   flavor:
     - Especiado

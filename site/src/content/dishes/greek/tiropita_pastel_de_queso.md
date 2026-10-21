@@ -25,6 +25,7 @@ main_ingredients:
   - Queso Ricotta
   - Huevos
   - Mantequilla
+main_ingredient_slugs: [null, null, null, huevo, mantequilla]
 sensory:
   flavor:
     - Salado

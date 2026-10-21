@@ -28,6 +28,7 @@ main_ingredients:
   - Hojas de bijao (para envolver)
   - Sacha culantro (cilantro silvestre amazónico)
   - Huevos duros enteros
+main_ingredient_slugs: [arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Herbal-Aromático (Mishquina y sacha culantro)

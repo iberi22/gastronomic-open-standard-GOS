@@ -26,6 +26,7 @@ main_ingredients:
   - Leche de Coco (Matrices grasas)
   - 'Papa, Yuca y Plátano'
   - Huevo cocido (tradicional en algunas zonas)
+main_ingredient_slugs: [null, pescado, leche_coco, papa_pastusa, huevo]
 sensory:
   flavor:
     - Salinidad Compleja (Cárnica/Marida)

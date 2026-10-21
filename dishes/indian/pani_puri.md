@@ -24,6 +24,7 @@ main_ingredients:
   - Agua de menta y tamarindo
   - Patata cocida
   - Garbanzos
+main_ingredient_slugs: [null, null, null, null]
 sensory:
   flavor:
     - Salado

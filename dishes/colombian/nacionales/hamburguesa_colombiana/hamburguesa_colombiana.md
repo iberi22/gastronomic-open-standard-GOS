@@ -29,6 +29,7 @@ main_ingredients:
   - Papa frita
   - Huevo
   - Salsas
+main_ingredient_slugs: [null, carne_res, queso, jamon, null, huevo, null]
 sensory:
   flavor:
     - Umami

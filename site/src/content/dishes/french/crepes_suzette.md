@@ -24,6 +24,7 @@ main_ingredients:
   - Mantequilla
   - Zumo de naranja
   - Licor Grand Marnier
+main_ingredient_slugs: [null, mantequilla, null, null]
 sensory:
   flavor:
     - Salado

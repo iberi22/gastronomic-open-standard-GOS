@@ -27,6 +27,7 @@ main_ingredients:
   - Cardamomo verde
   - Hebra de azafrán
   - Frutos secos (almendras, pistachos)
+main_ingredient_slugs: [arroz, leche, azucar, null, null, null]
 sensory:
   flavor:
     - Dulce

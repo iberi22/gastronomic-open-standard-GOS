@@ -20,6 +20,7 @@ main_ingredients:
   - Leche
   - Canela
   - Azúcar
+main_ingredient_slugs: [null, leche, canela, azucar]
 sensory:
   flavor:
     - Dulce

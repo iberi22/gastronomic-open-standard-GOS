@@ -25,6 +25,7 @@ main_ingredients:
   - Puerro
   - Nabo
   - Patata
+main_ingredient_slugs: [null, zanahoria, null, nabo, null]
 sensory:
   flavor:
     - Salado

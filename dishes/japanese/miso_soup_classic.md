@@ -25,6 +25,7 @@ main_ingredients:
   - Tofu firme o sedoso
   - Alga Wakame deshidratada
   - Cebollín verde
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Umami terroso (Miso)

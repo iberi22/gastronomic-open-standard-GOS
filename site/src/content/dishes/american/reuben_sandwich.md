@@ -25,6 +25,7 @@ main_ingredients:
   - Chucrut
   - Salsa Rusa
   - Pan de centeno
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

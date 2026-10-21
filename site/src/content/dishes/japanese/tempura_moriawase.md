@@ -27,6 +27,7 @@ main_ingredients:
   - Huevo helado
   - Agua con hielo
   - Caldo dashi
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Dulzor natural de verdura/marisco

@@ -24,6 +24,7 @@ main_ingredients:
   - Queso Provolone o Cheez Whiz
   - Pan de bocadillo
   - Cebolla
+main_ingredient_slugs: [null, null, null, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

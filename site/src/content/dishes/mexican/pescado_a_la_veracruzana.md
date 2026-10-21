@@ -27,6 +27,7 @@ main_ingredients:
   - Alcaparras
   - Chiles güeros en escabeche
   - Hoja de laurel
+main_ingredient_slugs: [null, tomate, cebolla_cabezona, null, vinagre, null, laurel]
 sensory:
   flavor:
     - Dulce ácido por jitomate

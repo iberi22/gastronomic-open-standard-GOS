@@ -28,6 +28,7 @@ main_ingredients:
   - Ajo picado
   - Cebolla roja cortada en brunoise
   - Chiles verdes picados
+main_ingredient_slugs: [null, null, ajo, null, null]
 sensory:
   flavor:
     - Ahumado

@@ -26,6 +26,7 @@ main_ingredients:
   - Azúcar blanca refinada
   - Esencia de vainilla
   - Hielo picado
+main_ingredient_slugs: [null, null, azucar, vainilla, null]
 sensory:
   flavor:
     - Dulce

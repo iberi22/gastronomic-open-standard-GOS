@@ -22,6 +22,7 @@ main_ingredients:
   - 干辣椒 (Dried Red Chilies)
   - 花椒 (Sichuan Peppercorns)
   - 葱 (Scallions)
+main_ingredient_slugs: [null, null, aji_picante, pimienta_sichuan, cebolla_larga]
 sensory:
   flavor:
     - spicy

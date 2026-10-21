@@ -25,6 +25,7 @@ main_ingredients:
   - Mantequilla
   - Miel
   - Canela
+main_ingredient_slugs: [null, null, mantequilla, miel, canela]
 sensory:
   flavor:
     - Salado

@@ -26,6 +26,7 @@ main_ingredients:
   - Piangua (*Anadara tuberculosa*)
   - Leche de Coco (Matrices grasas)
   - 'Refrito de la Costa (Cebolla, Pimentón, Achiote)'
+main_ingredient_slugs: [arroz, null, piangua, leche_coco, null]
 sensory:
   flavor:
     - Umami Marino Intenso

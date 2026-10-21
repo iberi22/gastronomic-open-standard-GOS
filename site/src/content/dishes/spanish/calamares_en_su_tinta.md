@@ -21,6 +21,7 @@ main_ingredients:
   - Cebolla
   - Vino blanco
   - Tomate
+main_ingredient_slugs: [calamar, null, cebolla_cabezona, null, tomate]
 nutrition:
   calories: 550
   macros:

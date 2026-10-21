@@ -26,6 +26,7 @@ main_ingredients:
   - Pan rallado
   - Harina
   - Aceite para freír
+main_ingredient_slugs: [null, null, null, null, harina_trigo, aceite]
 sensory:
   flavor:
     - Ragù de carne salado

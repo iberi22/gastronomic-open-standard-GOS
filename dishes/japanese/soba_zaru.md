@@ -25,6 +25,7 @@ main_ingredients:
   - Alga nori cortada fina
   - Wasabi
   - Cebolleta picada
+main_ingredient_slugs: [null, null, null, null, cebolla_larga]
 sensory:
   flavor:
     - Nuez terrosa del trigo sarraceno

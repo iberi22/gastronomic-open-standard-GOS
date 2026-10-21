@@ -25,6 +25,7 @@ main_ingredients:
   - Soda Roja (Colombiana)
   - Hielo
   - Aguardiente (Opcional)
+main_ingredient_slugs: [cerveza, null, null, null]
 sensory:
   flavor:
     - Dulce (Cola)

@@ -29,6 +29,7 @@ main_ingredients:
   - Banano
   - Mango
   - Gaseosa roja
+main_ingredient_slugs: [sandia, papaya, pina, banano, mango, gaseosa]
 sensory:
   flavor:
     - Dulce

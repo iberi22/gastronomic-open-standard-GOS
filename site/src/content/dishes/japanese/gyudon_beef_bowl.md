@@ -28,6 +28,7 @@ main_ingredients:
   - Mirin
   - Sake de cocina
   - Beni shoga
+main_ingredient_slugs: [null, cebolla_cabezona, null, null, salsa_soya, null, null, null]
 sensory:
   flavor:
     - Dulce salado (Shoyu + Mirin)

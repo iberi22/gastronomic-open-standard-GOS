@@ -27,6 +27,7 @@ main_ingredients:
   - Panela/Azúcar (agente caramelizante)
   - Pasas (opcional controversial)
   - Sal (catalizador de sabor)
+main_ingredient_slugs: [leche_coco, null, arroz, panela, null, sal]
 sensory:
   flavor:
     - Dulce-Salado (Balanceado)

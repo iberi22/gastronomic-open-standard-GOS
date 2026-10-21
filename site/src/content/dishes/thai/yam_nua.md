@@ -27,6 +27,7 @@ main_ingredients:
   - Menta
   - Cilantro
   - Aliño de lima y chile
+main_ingredient_slugs: [null, pepino, tomate, cebolla_cabezona, null, cilantro, null]
 sensory:
   flavor:
     - Salado

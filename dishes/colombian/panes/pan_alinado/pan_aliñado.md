@@ -25,6 +25,7 @@ main_ingredients:
   - Harina de trigo
   - Mantequilla
   - Huevo
+main_ingredient_slugs: [harina_trigo, mantequilla, huevo]
 sensory:
   flavor:
     - Dulce

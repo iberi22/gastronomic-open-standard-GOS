@@ -27,6 +27,7 @@ main_ingredients:
   - Mirin
   - Rábano Daikon rallado
   - Katsuobushi
+main_ingredient_slugs: [null, null, null, null, null, null, null]
 sensory:
   flavor:
     - Umami de dashi caliente

@@ -25,6 +25,7 @@ main_ingredients:
   - Ajo
   - Hierbas de Provenza
   - Cebolla
+main_ingredient_slugs: [carne_res, null, ajo, null, cebolla_cabezona]
 sensory:
   flavor:
     - Salado

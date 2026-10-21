@@ -25,6 +25,7 @@ main_ingredients:
   - Perejil
   - Ajo
   - Comino
+main_ingredient_slugs: [null, cilantro, null, ajo, comino]
 sensory:
   flavor:
     - Salado

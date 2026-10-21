@@ -26,6 +26,7 @@ main_ingredients:
   - Bajoqueta (judía verde)
   - Garrofón
   - Azafrán
+main_ingredient_slugs: [null, pollo, null, null, null, null]
 sensory:
   flavor:
     - Salado

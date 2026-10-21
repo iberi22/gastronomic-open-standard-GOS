@@ -27,6 +27,7 @@ main_ingredients:
   - Tamarindo
   - Mezcla de especias sambar
   - Hojas de curry
+main_ingredient_slugs: [arroz, null, null, null, null, null]
 sensory:
   flavor:
     - Salado

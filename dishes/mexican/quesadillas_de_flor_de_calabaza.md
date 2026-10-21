@@ -26,6 +26,7 @@ main_ingredients:
   - Epazote fresco
   - Cebolla
   - Chile verde
+main_ingredient_slugs: [harina_maiz, null, null, null, cebolla_cabezona, null]
 sensory:
   flavor:
     - Sutil vegetal

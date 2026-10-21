@@ -26,6 +26,7 @@ main_ingredients:
   - Vino blanco seco
   - Mantequilla
   - Harina ligera
+main_ingredient_slugs: [null, null, null, null, mantequilla, null]
 sensory:
   flavor:
     - Salado de Prosciutto di Parma

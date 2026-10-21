@@ -20,6 +20,7 @@ main_ingredients:
   - Huevos
   - Azúcar moreno
   - Mantequilla
+main_ingredient_slugs: [null, null, huevo, null, mantequilla]
 sensory:
   flavor:
     - Dulce

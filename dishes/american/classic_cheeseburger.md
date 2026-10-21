@@ -25,6 +25,7 @@ main_ingredients:
   - Pan de hamburguesa
   - Lechuga
   - Tomate
+main_ingredient_slugs: [carne_res, null, null, lechuga, tomate]
 sensory:
   flavor:
     - Salado

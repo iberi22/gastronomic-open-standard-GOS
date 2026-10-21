@@ -23,6 +23,7 @@ main_ingredients:
   - Pimientos del Padrón
   - Aceite de oliva
   - Sal escamada
+main_ingredient_slugs: [null, null, null]
 sensory:
   flavor:
     - Salado

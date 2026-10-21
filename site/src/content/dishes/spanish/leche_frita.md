@@ -25,6 +25,7 @@ main_ingredients:
   - Azúcar
   - Huevo
   - Canela en polvo
+main_ingredient_slugs: [null, harina_maiz, azucar, huevo, null]
 sensory:
   flavor:
     - Salado

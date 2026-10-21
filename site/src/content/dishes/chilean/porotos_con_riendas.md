@@ -28,6 +28,7 @@ main_ingredients:
   - Chorizo o longaniza
   - Cebolla
   - Comino y orégano
+main_ingredient_slugs: [null, null, null, chorizo, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

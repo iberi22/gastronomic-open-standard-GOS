@@ -20,6 +20,7 @@ main_ingredients:
   - Mayonesa
   - Mantequilla
   - Cebollino
+main_ingredient_slugs: [null, null, mayonesa, mantequilla, null]
 sensory:
   flavor:
     - Marino

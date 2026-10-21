@@ -25,6 +25,7 @@ main_ingredients:
   - Huevo
   - Mantequilla
   - Sirope de arce
+main_ingredient_slugs: [harina_trigo, leche, huevo, mantequilla, null]
 sensory:
   flavor:
     - Salado

@@ -27,6 +27,7 @@ main_ingredients:
   - Cebolla morada
   - Chile verde
   - Jugo de limón
+main_ingredient_slugs: [null, null, huevo, cebolla_cabezona, null, limon]
 sensory:
   flavor:
     - Ahumado

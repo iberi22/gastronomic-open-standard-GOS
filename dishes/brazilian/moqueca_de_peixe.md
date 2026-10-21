@@ -29,6 +29,7 @@ main_ingredients:
   - Pimiento rojo
   - Tomates maduros
   - Cilantro
+main_ingredient_slugs: [pescado, leche_coco, null, pimenton_verde, pimenton_rojo, tomate, cilantro]
 sensory:
   flavor:
     - Lácteo (coco)

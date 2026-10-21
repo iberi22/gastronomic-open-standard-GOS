@@ -27,6 +27,7 @@ main_ingredients:
   - Água morna e óleo
   - Carne moída refogada com azeitonas e ovo
   - Óleo para fritura profunda
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salgado

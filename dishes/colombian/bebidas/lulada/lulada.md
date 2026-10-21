@@ -20,6 +20,7 @@ main_ingredients:
   - Azúcar
   - Hielo
   - Limón
+main_ingredient_slugs: [null, azucar, null, limon]
 sensory:
   flavor:
     - Ácido

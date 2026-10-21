@@ -24,6 +24,7 @@ main_ingredients:
   - 芡实 (Euryale ferox Seeds)
   - 茯苓 (Poria cocos)
   - 薏仁 (Coix Seeds)
+main_ingredient_slugs: [null, null, null, null, null, null]
 sensory:
   flavor:
     - mild

@@ -28,6 +28,7 @@ main_ingredients:
   - Salsa de soja
   - Mirin
   - Azúcar
+main_ingredient_slugs: [null, null, null, null, null, salsa_soya, null, azucar]
 sensory:
   flavor:
     - Dulce salado reconfortante

@@ -25,6 +25,7 @@ main_ingredients:
   - Yogur
   - Hinojo en polvo
   - Jengibre seco
+main_ingredient_slugs: [null, null, null, null, null]
 sensory:
   flavor:
     - Salado

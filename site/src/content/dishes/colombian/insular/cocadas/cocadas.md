@@ -26,6 +26,7 @@ main_ingredients:
   - Panela o azúcar
   - Agua de coco
   - Canela
+main_ingredient_slugs: [coco, panela, null, canela]
 prep_time: 15
 cook_time: 30
 servings: 20

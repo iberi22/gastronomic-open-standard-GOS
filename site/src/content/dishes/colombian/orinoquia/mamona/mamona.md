@@ -24,6 +24,7 @@ main_ingredients:
   - 'Ternera Hembra (Joven, ~18 meses)'
   - Sal de grano grueso
   - Leña (Maderas duras regionales)
+main_ingredient_slugs: [null, null, null]
 sensory:
   flavor:
     - Umami Intenso

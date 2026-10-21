@@ -26,6 +26,7 @@ main_ingredients:
   - Salsa de soja clara
   - Azúcar
   - Pizca de sal
+main_ingredient_slugs: [huevo, null, null, null, azucar, sal]
 sensory:
   flavor:
     - Dulce sutil

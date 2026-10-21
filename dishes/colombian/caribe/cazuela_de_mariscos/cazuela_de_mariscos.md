@@ -28,6 +28,7 @@ main_ingredients:
   - Crema de leche
   - Pescado blanco (Mero/Pargo)
   - Brandy o Vino Blanco (Desglasado)
+main_ingredient_slugs: [camaron, calamar, pulpo, leche_coco, crema_leche, pescado, null]
 sensory:
   flavor:
     - Umami Marino (Intenso)

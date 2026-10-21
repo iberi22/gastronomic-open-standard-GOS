@@ -25,6 +25,7 @@ main_ingredients:
   - Queso Campesino o Cuajada
   - Mantequilla
   - Huevo
+main_ingredient_slugs: [almidon_yuca, queso, mantequilla, huevo]
 sensory:
   flavor:
     - Queso Intenso

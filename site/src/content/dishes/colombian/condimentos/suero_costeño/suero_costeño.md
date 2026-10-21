@@ -35,6 +35,7 @@ main_ingredients:
   - Leche entera
   - Cultivo láctico o vinagre
   - Sal
+main_ingredient_slugs: [leche, null, sal]
 categories:
   - Salsa
   - Acompañamiento

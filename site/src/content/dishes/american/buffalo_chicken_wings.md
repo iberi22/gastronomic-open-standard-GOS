@@ -24,6 +24,7 @@ main_ingredients:
   - Salsa picante Buffalo
   - Mantequilla
   - Ajo
+main_ingredient_slugs: [null, null, mantequilla, ajo]
 sensory:
   flavor:
     - Salado

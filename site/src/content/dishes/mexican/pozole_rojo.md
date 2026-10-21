@@ -28,6 +28,7 @@ main_ingredients:
   - Rábanos
   - Lechuga
   - Orégano
+main_ingredient_slugs: [null, null, null, null, null, lechuga, oregano]
 studies:
   - title: "Effects of Different Processing Methods on the Micronutrient and Phytochemical Contents of Maize: From A to Z"
     source: "Comprehensive Reviews in Food Science and Food Safety"

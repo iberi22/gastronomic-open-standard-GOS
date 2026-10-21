@@ -29,6 +29,7 @@ main_ingredients:
   - Leche evaporada
   - Pasas y almendras
   - Agua de kewra y azafrán
+main_ingredient_slugs: [pollo, null, null, null, null, null]
 sensory:
   flavor:
     - Aromático

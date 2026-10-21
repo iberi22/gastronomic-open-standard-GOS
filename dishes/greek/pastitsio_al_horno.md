@@ -24,6 +24,7 @@ main_ingredients:
   - Carne picada con canela
   - Salsa bechamel
   - Queso rallado
+main_ingredient_slugs: [null, null, null, queso]
 sensory:
   flavor:
     - Salado

@@ -26,6 +26,7 @@ main_ingredients:
   - Brotes de soja
   - Pasta de tamarindo
   - Cacahuetes molidos
+main_ingredient_slugs: [null, camaron, null, null, null, null]
 sensory:
   flavor:
     - Salado

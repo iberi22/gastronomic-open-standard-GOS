@@ -27,6 +27,7 @@ main_ingredients:
 - Cebolla larga
 - Ajo
 - Comino
+main_ingredient_slugs: [cerdo, cerdo, arveja, arroz, manteca_cerdo, cebolla_larga, ajo, comino]
 nutrition:
   calories: 850
   macros:

@@ -26,6 +26,7 @@ main_ingredients:
   - Chiles thai
   - Salsa de soja
   - Huevo frito
+main_ingredient_slugs: [cerdo, null, ajo, null, salsa_soya, null]
 sensory:
   flavor:
     - Salado

@@ -24,6 +24,7 @@ main_ingredients:
   - Confit de pato
   - Salchicha
   - Tocino
+main_ingredient_slugs: [null, null, salchicha, tocino]
 sensory:
   flavor:
     - Salado

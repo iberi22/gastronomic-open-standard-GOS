@@ -25,6 +25,7 @@ main_ingredients:
   - Lentejas
   - Fenogreco
   - Ras el hanout
+main_ingredient_slugs: [null, null, lentejas, null, null]
 sensory:
   flavor:
     - Salado

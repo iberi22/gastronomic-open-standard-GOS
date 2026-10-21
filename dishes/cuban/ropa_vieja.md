@@ -28,6 +28,7 @@ main_ingredients:
   - Cebolla
   - Vino seco (vino blanco de cocina)
   - Tomate triturado
+main_ingredient_slugs: [null, pimenton_verde, pimenton_rojo, cebolla_cabezona, null, null]
 sensory:
   flavor:
     - Salado

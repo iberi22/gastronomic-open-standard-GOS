@@ -27,6 +27,7 @@ main_ingredients:
   - Chile verde
   - Semillas de mostaza
   - Hojas de curry
+main_ingredient_slugs: [null, null, jengibre, null, null, null]
 sensory:
   flavor:
     - Dulce

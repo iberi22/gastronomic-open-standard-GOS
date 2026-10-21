@@ -20,6 +20,7 @@ main_ingredients:
   - Harina de maíz
   - Salsa remoulade
   - Lechuga
+main_ingredient_slugs: [camaron, null, harina_maiz, null, lechuga]
 sensory:
   flavor:
     - Crujiente

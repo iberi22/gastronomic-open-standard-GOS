@@ -26,6 +26,7 @@ main_ingredients:
   - Hierbaluisa (lemongrass)
   - Hojas de lima kaffir
   - Champiñones
+main_ingredient_slugs: [pollo, leche_coco, null, null, null, champinon]
 sensory:
   flavor:
     - Salado

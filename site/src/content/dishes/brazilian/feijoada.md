@@ -28,6 +28,7 @@ main_ingredients:
   - Chorizo calabresa
   - Tocino (bacon)
   - Laurel
+main_ingredient_slugs: [null, cerdo, null, null, tocino, laurel]
 sensory:
   flavor:
     - Salado

@@ -27,6 +27,7 @@ main_ingredients:
   - Leche entera
   - Aceite vegetal
   - Huevos
+main_ingredient_slugs: [null, null, leche, aceite, huevo]
 sensory:
   flavor:
     - Salado

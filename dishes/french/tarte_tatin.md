@@ -24,6 +24,7 @@ main_ingredients:
   - Azúcar
   - Mantequilla
   - Masa hojaldrada
+main_ingredient_slugs: [null, azucar, mantequilla, null]
 sensory:
   flavor:
     - Salado

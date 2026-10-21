@@ -26,6 +26,7 @@ main_ingredients:
   - Piña de Castilla
   - Panela
   - Hojas de Naranjo Agrio
+main_ingredient_slugs: [maiz, null, null, panela, null]
 sensory:
   flavor:
     - Agrio-Dulce Cítrico

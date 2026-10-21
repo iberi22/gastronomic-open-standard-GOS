@@ -26,6 +26,7 @@ main_ingredients:
   - Miel
   - Mantequilla clarificada
   - Anís
+main_ingredient_slugs: [harina_trigo, null, null, miel, null, null]
 sensory:
   flavor:
     - Salado

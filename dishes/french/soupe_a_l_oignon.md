@@ -25,6 +25,7 @@ main_ingredients:
   - Pan tostado
   - Queso Gruyère
   - Mantequilla
+main_ingredient_slugs: [cebolla_cabezona, null, null, null, mantequilla]
 sensory:
   flavor:
     - Salado

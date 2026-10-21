@@ -28,6 +28,7 @@ main_ingredients:
   - Hoja santa
   - Perejil
   - Masa de maíz
+main_ingredient_slugs: [cerdo, null, null, null, null, null, null, harina_maiz]
 sensory:
   flavor:
     - Herbal

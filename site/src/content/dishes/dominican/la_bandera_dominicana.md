@@ -30,6 +30,7 @@ main_ingredients:
   - Cilantro ancho
   - Pasta de tomate
   - Azúcar (para caramelizar el pollo)
+main_ingredient_slugs: [null, frijol, pollo, null, null, null, azucar]
 sensory:
   flavor:
     - Salado

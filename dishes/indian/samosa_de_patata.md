@@ -26,6 +26,7 @@ main_ingredients:
   - Comino
   - Cilantro
   - Garam masala
+main_ingredient_slugs: [null, null, null, comino, cilantro, null]
 sensory:
   flavor:
     - Salado

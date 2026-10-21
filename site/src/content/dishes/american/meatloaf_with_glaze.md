@@ -25,6 +25,7 @@ main_ingredients:
   - Huevo
   - Cebolla
   - Glaseado de kétchup
+main_ingredient_slugs: [carne_res, null, huevo, cebolla_cabezona, null]
 sensory:
   flavor:
     - Salado

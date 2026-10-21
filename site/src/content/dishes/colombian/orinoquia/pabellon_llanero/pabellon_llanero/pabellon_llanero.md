@@ -27,6 +27,7 @@ main_ingredients:
   - Caraotas (frijoles negros)
   - Plátano maduro frito
   - Queso blanco
+main_ingredient_slugs: [null, arroz, frijol, null, null]
 prep_time: 1
 cook_time: 2
 servings: 8
