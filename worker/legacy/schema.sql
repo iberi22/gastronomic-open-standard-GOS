@@ -1,3 +1,7 @@
+-- NO DESPLEGADO. Historico: el gateway GOS no usa base de datos desde 2026-10-21.
+-- Este esquema D1 (free_quota, api_keys, credit_ledger) ya no se aplica ni lo lee el Worker.
+-- Se conserva solo como referencia de migraciones antiguas. No ejecutar contra produccion.
+
 -- site/../worker/schema.sql — esquema D1 del gateway de datos abiertos GOS.
 --
 -- ESTADO 2026-10-15: "api_keys" y "credit_ledger" YA NO SE USAN. GOS dejo de
