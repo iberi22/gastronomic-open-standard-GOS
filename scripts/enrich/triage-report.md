@@ -1,4 +1,4 @@
-# Triage of `pending_review` ingredient stubs (gos-d1-02)
+# Triage of `pending_review` ingredient stubs (gos-d2-05)
 
 - Stubs before: 515
 - Merged as alias of an existing canonical: 218
@@ -6,6 +6,7 @@
 - Deleted as garbage: 86
 - Kept (unresolved): 1
 - Canonical ingredients after: 144
+- Multi-food aliases dropped (e.g. `aceite o mantequilla`): none
 
 New canonical files carry name/group/es i18n/aliases and an empty `nutrition_per_100g`; no nutrition or scientific values were written (data honesty).
 
