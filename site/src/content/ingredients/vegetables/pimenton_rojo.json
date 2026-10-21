@@ -3,19 +3,70 @@
   "scientific_name": "Capsicum annuum",
   "group": "Vegetable",
   "portions": {
-    "default_g": 50
+    "default_g": 50,
+    "household": [
+      {
+        "description": "1 cup, chopped",
+        "grams": 149.0
+      },
+      {
+        "description": "1 cup, sliced",
+        "grams": 92.0
+      },
+      {
+        "description": "1 tablespoon",
+        "grams": 9.3
+      },
+      {
+        "description": "1 large (2-1/4 per pound, approx 3-3/4\" long, 3\" dia.)",
+        "grams": 164.0
+      },
+      {
+        "description": "1 medium (approx 2-3/4\" long, 2-1/2 dia.)",
+        "grams": 119.0
+      },
+      {
+        "description": "1 small",
+        "grams": 74.0
+      },
+      {
+        "description": "1 ring (3\" dia., 1/4\" thick)",
+        "grams": 10.0
+      }
+    ]
   },
   "nutrition_per_100g": {
-    "calories": 26,
-    "protein_g": 1,
+    "calories": 26.0,
+    "carbs_g": 6.03,
     "fat_g": 0.3,
-    "carbs_g": 6,
     "fiber_g": 2.1,
+    "protein_g": 0.99,
+    "saturated_fat_g": 0.06,
     "sugar_g": 4.2
   },
   "micronutrients": {
-    "vitamin_c_mg": 127,
-    "vitamin_a_iu": 3131
+    "calcium_mg": 7.0,
+    "cholesterol_mg": 0.0,
+    "copper_mg": 0.02,
+    "folate_ug": 46.0,
+    "iron_mg": 0.43,
+    "magnesium_mg": 12.0,
+    "manganese_mg": 0.11,
+    "niacin_mg": 0.98,
+    "phosphorus_mg": 26.0,
+    "potassium_mg": 211.0,
+    "riboflavin_mg": 0.09,
+    "selenium_ug": 0.1,
+    "sodium_mg": 4.0,
+    "thiamin_mg": 0.05,
+    "vitamin_a_rae_ug": 157.0,
+    "vitamin_b12_ug": 0.0,
+    "vitamin_b6_mg": 0.29,
+    "vitamin_c_mg": 127.7,
+    "vitamin_d_ug": 0.0,
+    "vitamin_e_mg": 1.58,
+    "vitamin_k_ug": 4.9,
+    "zinc_mg": 0.25
   },
   "active_compounds": [
     {
@@ -35,7 +86,7 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central SR Legacy (fdc:170108)"
   ],
   "tags": [
     "hogao",
@@ -53,5 +104,13 @@
     "zh": [
       "红椒"
     ]
-  }
+  },
+  "data_sources": [
+    {
+      "name": "USDA FoodData Central SR Legacy",
+      "id": "fdc:170108",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }

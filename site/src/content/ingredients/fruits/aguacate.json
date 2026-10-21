@@ -49,31 +49,72 @@
     }
   ],
   "micronutrients": {
-    "folate_ug": 81,
-    "potassium_mg": 485,
-    "vitamin_e_mg": 2.1,
-    "vitamin_k_ug": 21
+    "calcium_mg": 13.0,
+    "cholesterol_mg": 0.0,
+    "copper_mg": 0.17,
+    "folate_ug": 89.0,
+    "iron_mg": 0.61,
+    "magnesium_mg": 29.0,
+    "manganese_mg": 0.15,
+    "niacin_mg": 1.91,
+    "phosphorus_mg": 54.0,
+    "potassium_mg": 507.0,
+    "riboflavin_mg": 0.14,
+    "selenium_ug": 0.4,
+    "sodium_mg": 8.0,
+    "thiamin_mg": 0.07,
+    "vitamin_a_rae_ug": 7.0,
+    "vitamin_b12_ug": 0.0,
+    "vitamin_b6_mg": 0.29,
+    "vitamin_c_mg": 8.8,
+    "vitamin_d_ug": 0.0,
+    "vitamin_e_mg": 1.97,
+    "vitamin_k_ug": 21.0,
+    "zinc_mg": 0.68
   },
   "name": "Aguacate (Hass/Papelillo)",
   "nutrition_per_100g": {
-    "calories": 160,
-    "carbs_g": 9,
-    "fat_g": 15,
-    "fiber_g": 7,
-    "protein_g": 2,
-    "sugar_g": 0.7
+    "calories": 167.0,
+    "carbs_g": 8.64,
+    "fat_g": 15.41,
+    "fiber_g": 6.8,
+    "protein_g": 1.96,
+    "saturated_fat_g": 2.13,
+    "sugar_g": 0.3
   },
   "portions": {
-    "default_g": 100
+    "default_g": 100,
+    "household": [
+      {
+        "description": "1 cup, pureed",
+        "grams": 230.0
+      },
+      {
+        "description": "1 fruit, without skin and seed",
+        "grams": 136.0
+      },
+      {
+        "description": "1 NLEA serving",
+        "grams": 50.0
+      }
+    ]
   },
   "scientific_name": "Persea americana",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central SR Legacy (fdc:171706)"
   ],
   "tags": [
     "grasa_saludable",
     "ajiaco",
     "bandeja_paisa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aguacate es botánicamente una fruta, pero nutricionalmente una fuente de grasa saludable. En Colombia acompaña casi todos los platos fuertes (Ajiaco, Bandeja Paisa, Sancochos).\n\n## Culinary Uses\n- **Acompañante:** Rodajas frescas con sal.\n- **Guacamole:** Triturado con cilantro, cebolla y limón.\n\n## Health Benefits\n### Protector Cardíaco\nSustituir grasas saturadas por aguacate reduce significativamente los marcadores de inflamación y colesterol."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl aguacate es botánicamente una fruta, pero nutricionalmente una fuente de grasa saludable. En Colombia acompaña casi todos los platos fuertes (Ajiaco, Bandeja Paisa, Sancochos).\n\n## Culinary Uses\n- **Acompañante:** Rodajas frescas con sal.\n- **Guacamole:** Triturado con cilantro, cebolla y limón.\n\n## Health Benefits\n### Protector Cardíaco\nSustituir grasas saturadas por aguacate reduce significativamente los marcadores de inflamación y colesterol.",
+  "data_sources": [
+    {
+      "name": "USDA FoodData Central SR Legacy",
+      "id": "fdc:171706",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }

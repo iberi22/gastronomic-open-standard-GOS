@@ -3,21 +3,59 @@
   "scientific_name": "Zea mays",
   "group": "Grain",
   "portions": {
-    "default_g": 100
+    "default_g": 100,
+    "household": [
+      {
+        "description": "1 cup",
+        "grams": 145.0
+      },
+      {
+        "description": "1 ear, large (7-3/4\" to 9\" long) yields",
+        "grams": 143.0
+      },
+      {
+        "description": "1 ear, medium (6-3/4\" to 7-1/2\" long) yields",
+        "grams": 102.0
+      },
+      {
+        "description": "1 ear, small (5-1/2\" to 6-1/2\" long)",
+        "grams": 73.0
+      }
+    ]
   },
   "nutrition_per_100g": {
-    "calories": 86,
-    "protein_g": 3.2,
-    "fat_g": 1.2,
-    "carbs_g": 19,
-    "fiber_g": 2.7,
-    "sugar_g": 3.2
+    "calories": 86.0,
+    "carbs_g": 18.7,
+    "fat_g": 1.35,
+    "fiber_g": 2.0,
+    "protein_g": 3.27,
+    "saturated_fat_g": 0.33,
+    "sugar_g": 6.26
   },
   "micronutrients": {
+    "calcium_mg": 2.0,
+    "cholesterol_mg": 0.0,
+    "copper_mg": 0.05,
+    "folate_ug": 42.0,
+    "iron_mg": 0.52,
     "lutein_zeaxanthin_ug": 644,
-    "thiamin_mg": 0.2,
-    "folate_ug": 46,
-    "magnesium_mg": 37
+    "magnesium_mg": 37.0,
+    "manganese_mg": 0.16,
+    "niacin_mg": 1.77,
+    "phosphorus_mg": 89.0,
+    "potassium_mg": 270.0,
+    "riboflavin_mg": 0.06,
+    "selenium_ug": 0.6,
+    "sodium_mg": 15.0,
+    "thiamin_mg": 0.15,
+    "vitamin_a_rae_ug": 9.0,
+    "vitamin_b12_ug": 0.0,
+    "vitamin_b6_mg": 0.09,
+    "vitamin_c_mg": 6.8,
+    "vitamin_d_ug": 0.0,
+    "vitamin_e_mg": 0.07,
+    "vitamin_k_ug": 0.3,
+    "zinc_mg": 0.46
   },
   "active_compounds": [
     {
@@ -121,8 +159,8 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central",
-    "PubMed - Nixtamalization Research Collection"
+    "PubMed - Nixtamalization Research Collection",
+    "USDA FoodData Central SR Legacy (fdc:169998)"
   ],
   "tags": [
     "ajiaco",
@@ -143,5 +181,13 @@
     "zh": [
       "玉米粒"
     ]
-  }
+  },
+  "data_sources": [
+    {
+      "name": "USDA FoodData Central SR Legacy",
+      "id": "fdc:169998",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }

@@ -47,31 +47,68 @@
     }
   ],
   "micronutrients": {
-    "manganese_mg": 0.4,
-    "vitamin_a_iu": 6748,
-    "vitamin_c_mg": 27,
-    "vitamin_k_ug": 310
+    "calcium_mg": 67.0,
+    "cholesterol_mg": 0.0,
+    "copper_mg": 0.23,
+    "folate_ug": 62.0,
+    "iron_mg": 1.77,
+    "magnesium_mg": 26.0,
+    "manganese_mg": 0.43,
+    "niacin_mg": 1.11,
+    "phosphorus_mg": 48.0,
+    "potassium_mg": 521.0,
+    "riboflavin_mg": 0.16,
+    "selenium_ug": 0.9,
+    "sodium_mg": 46.0,
+    "thiamin_mg": 0.07,
+    "vitamin_a_rae_ug": 337.0,
+    "vitamin_b12_ug": 0.0,
+    "vitamin_b6_mg": 0.15,
+    "vitamin_c_mg": 27.0,
+    "vitamin_d_ug": 0.0,
+    "vitamin_e_mg": 2.5,
+    "vitamin_k_ug": 310.0,
+    "zinc_mg": 0.5
   },
   "name": "Cilantro",
   "nutrition_per_100g": {
-    "calories": 23,
-    "carbs_g": 3.7,
-    "fat_g": 0.5,
+    "calories": 23.0,
+    "carbs_g": 3.67,
+    "fat_g": 0.52,
     "fiber_g": 2.8,
-    "protein_g": 2.1,
-    "sugar_g": 0.8
+    "protein_g": 2.13,
+    "saturated_fat_g": 0.01,
+    "sugar_g": 0.87
   },
   "portions": {
-    "default_g": 15
+    "default_g": 15,
+    "household": [
+      {
+        "description": "0.25 cup",
+        "grams": 4.0
+      },
+      {
+        "description": "9 sprigs",
+        "grams": 20.0
+      }
+    ]
   },
   "scientific_name": "Coriandrum sativum",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central SR Legacy (fdc:169997)"
   ],
   "tags": [
     "finalizador",
     "sopa",
     "detox"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cilantro es la firma olfativa de Colombia. Rico en aceites esenciales volátiles (dodecenal, linalool) que se destruyen con el calor, por lo que su uso es estrictamente al final de la preparación.\n\n## Culinary Uses\n- **Finalizador:** Se esparce sobre Sancochos, Ajiacos y Caldos justo antes de servir.\n- **Pico de Gallo:** Aporta frescura herbal que corta la grasa.\n\n## Health Benefits\n### Quelación de Metales\nEstudios en animales sugieren que el cilantro puede ayudar a eliminar metales pesados acumulados en tejidos, una propiedad única entre las hierbas culinarias."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl cilantro es la firma olfativa de Colombia. Rico en aceites esenciales volátiles (dodecenal, linalool) que se destruyen con el calor, por lo que su uso es estrictamente al final de la preparación.\n\n## Culinary Uses\n- **Finalizador:** Se esparce sobre Sancochos, Ajiacos y Caldos justo antes de servir.\n- **Pico de Gallo:** Aporta frescura herbal que corta la grasa.\n\n## Health Benefits\n### Quelación de Metales\nEstudios en animales sugieren que el cilantro puede ayudar a eliminar metales pesados acumulados en tejidos, una propiedad única entre las hierbas culinarias.",
+  "data_sources": [
+    {
+      "name": "USDA FoodData Central SR Legacy",
+      "id": "fdc:169997",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }

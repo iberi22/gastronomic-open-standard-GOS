@@ -19,29 +19,77 @@
   },
   "group": "Dairy",
   "micronutrients": {
-    "calcium_mg": 113,
-    "vitamin_d_iu": 44
+    "calcium_mg": 113.0,
+    "cholesterol_mg": 10.0,
+    "copper_mg": 0.03,
+    "folate_ug": 5.0,
+    "iron_mg": 0.03,
+    "magnesium_mg": 10.0,
+    "manganese_mg": 0.0,
+    "niacin_mg": 0.09,
+    "phosphorus_mg": 84.0,
+    "potassium_mg": 132.0,
+    "riboflavin_mg": 0.17,
+    "selenium_ug": 3.7,
+    "sodium_mg": 43.0,
+    "thiamin_mg": 0.05,
+    "vitamin_a_rae_ug": 46.0,
+    "vitamin_b12_ug": 0.45,
+    "vitamin_b6_mg": 0.04,
+    "vitamin_c_mg": 0.0,
+    "vitamin_d_iu": 44,
+    "vitamin_d_ug": 1.3,
+    "vitamin_e_mg": 0.07,
+    "vitamin_k_ug": 0.3,
+    "zinc_mg": 0.37
   },
   "name": "Leche Entera",
   "nutrition_per_100g": {
-    "calories": 61,
+    "calories": 61.0,
     "carbs_g": 4.8,
-    "fat_g": 3.3,
-    "fiber_g": 0,
-    "protein_g": 3.2,
-    "sugar_g": 5
+    "fat_g": 3.25,
+    "fiber_g": 0.0,
+    "protein_g": 3.15,
+    "saturated_fat_g": 1.86,
+    "sugar_g": 5.05
   },
   "portions": {
-    "default_g": 244
+    "default_g": 244,
+    "household": [
+      {
+        "description": "1 cup",
+        "grams": 244.0
+      },
+      {
+        "description": "1 fl oz",
+        "grams": 30.5
+      },
+      {
+        "description": "1 tbsp",
+        "grams": 15.0
+      },
+      {
+        "description": "1 quart",
+        "grams": 976.0
+      }
+    ]
   },
   "scientific_name": "Bos taurus (secreción)",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central SR Legacy (fdc:171265)"
   ],
   "tags": [
     "bebida",
     "postre",
     "sopa"
   ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa leche es base de bebidas calientes (chocolate, café), postres (arroz con leche) y algunas sopas (changua).\n\n## Culinary Uses\n- **Chocolate Santafereño:** Preparado con leche.\n- **Changua:** Caldo de leche con huevo."
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nLa leche es base de bebidas calientes (chocolate, café), postres (arroz con leche) y algunas sopas (changua).\n\n## Culinary Uses\n- **Chocolate Santafereño:** Preparado con leche.\n- **Changua:** Caldo de leche con huevo.",
+  "data_sources": [
+    {
+      "name": "USDA FoodData Central SR Legacy",
+      "id": "fdc:171265",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-10-21"
+    }
+  ]
 }
