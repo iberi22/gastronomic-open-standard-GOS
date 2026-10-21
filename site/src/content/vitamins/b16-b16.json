@@ -1,0 +1,14 @@
+{
+  "code": "B16",
+  "name": "Vitamina B16",
+  "aliases": "ácido dimetilaminoisobutírico",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "remolacha, huevos, pescado, legumbres",
+  "functions": "Metabolismo aminoacídico, función hepática, soporte inmunológico",
+  "deficiency": "no establecido",
+  "excess": "no tóxico documentado",
+  "type": "vitamin",
+  "body_md": "Vitamina B16 (ácido dimetilaminoisobutírico) es una vitamina con RDA de null mg.\n\n## Funciones\n\nMetabolismo aminoacídico, función hepática, soporte inmunológico\n\n## Fuentes alimentarias\n\nremolacha, huevos, pescado, legumbres\n\n## Deficiencia\n\nno establecido\n\n## Exceso\n\nno tóxico documentado"
+}

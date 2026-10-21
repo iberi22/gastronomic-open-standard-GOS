@@ -85,13 +85,23 @@ function walkDir(dir) {
       results = results.concat(walkDir(fullPath))
     } else if (
       entry.isFile() &&
-      entry.name.endsWith('.md') &&
-      entry.name !== 'README.md'
+      ((entry.name.endsWith('.md') && entry.name !== 'README.md') ||
+        entry.name.endsWith('.json'))
     ) {
       results.push(fullPath)
     }
   }
   return results
+}
+
+// Data collections are JSON (repo-as-database); prose stays Markdown.
+function readFm(file) {
+  const raw = fs.readFileSync(file, 'utf8')
+  if (file.endsWith('.json')) {
+    const { body_md = '', ...data } = JSON.parse(raw)
+    return { data, content: body_md }
+  }
+  return matter(raw)
 }
 
 function cleanText(markdown) {
@@ -121,18 +131,17 @@ function scanIngredientsCollection() {
 
   for (const file of files) {
     try {
-      const raw = fs.readFileSync(file, 'utf8')
-      const { data, content } = matter(raw)
+      const { data, content } = readFm(file)
       const rel = path
         .relative(targetDir, file)
         .replace(/\\/g, '/')
-        .replace(/\.md$/, '')
+        .replace(/\.(md|json)$/, '')
       const id = rel
 
       if (seenIds.has(id)) continue
       seenIds.add(id)
 
-      const name = data.name || path.basename(file, '.md')
+      const name = data.name || path.basename(file).replace(/\.(md|json)$/, '')
       const translation = getTranslation(name)
       const sciName = data.scientific_name || ''
       const group = data.group || ''
@@ -189,18 +198,17 @@ function scanDishesCollection() {
 
   for (const file of files) {
     try {
-      const raw = fs.readFileSync(file, 'utf8')
-      const { data, content } = matter(raw)
+      const { data, content } = readFm(file)
       const rel = path
         .relative(targetDir, file)
         .replace(/\\/g, '/')
-        .replace(/\.md$/, '')
+        .replace(/\.(md|json)$/, '')
       const id = rel
 
       if (seenIds.has(id)) continue
       seenIds.add(id)
 
-      const title = data.title || path.basename(file, '.md')
+      const title = data.title || path.basename(file).replace(/\.(md|json)$/, '')
       const region = data.region || ''
       const categories = Array.isArray(data.categories)
         ? data.categories.join(', ')
@@ -250,18 +258,17 @@ function scanSubstancesCollection() {
 
   for (const file of files) {
     try {
-      const raw = fs.readFileSync(file, 'utf8')
-      const { data, content } = matter(raw)
+      const { data, content } = readFm(file)
       const rel = path
         .relative(targetDir, file)
         .replace(/\\/g, '/')
-        .replace(/\.md$/, '')
+        .replace(/\.(md|json)$/, '')
       const id = rel
 
       if (seenIds.has(id)) continue
       seenIds.add(id)
 
-      const name = data.name || path.basename(file, '.md')
+      const name = data.name || path.basename(file).replace(/\.(md|json)$/, '')
       const formula = data.formula || ''
       const sourceIng = data.source_ingredient || ''
       const benefit = data.benefit || ''

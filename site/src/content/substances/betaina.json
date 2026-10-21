@@ -1,0 +1,46 @@
+{
+  "name": "Betaína",
+  "disclaimer": true,
+  "formula": "C5H11NO2",
+  "discovery_year": 1866,
+  "source_ingredient": "remolacha (Beta vulgaris)",
+  "benefit": "Osmolito, metilador, hepato-protector",
+  "sazon": "Remolacha dulce térrea, base ensaladas y jugos",
+  "sabor": "Dulce térreo suave, N-trimetilglicina, osmoprotector",
+  "textura": "Aminoácido cristal, betaína anhidra estable",
+  "vitaminas": [
+    "Folate",
+    "Manganese",
+    "Potassium"
+  ],
+  "compuestos": [
+    "Choline",
+    "Glycine",
+    "Betaine aldehyde"
+  ],
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "remolacha",
+    "osmolito",
+    "hepatico"
+  ],
+  "image_attribution": "Pixabay — Beta vulgaris",
+  "health_registry": [
+    {
+      "condition": "NAFLD / Fatty liver",
+      "mechanism": "Methyl donor, homocysteine→methionine, lipotropic",
+      "evidence_level": "Medium",
+      "studies": [
+        {
+          "title": "Betaine and fatty liver: review",
+          "source": "Nutrients",
+          "year": 2021
+        }
+      ]
+    }
+  ],
+  "body_md": "![Betaína](/images/substances/betaina.jpg)\n*Foto: Pixabay — Beta vulgaris — placeholder real photo path `public/images/substances/betaina.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\nN,N,N-trimethylglycine (C5H11NO2) descubierta en 1866 por Scheibler en remolacha azucarera (*Beta vulgaris*). Osmolito y donador metilo: convierte homocisteína en metionina. Lipotrópico hepático demostrado.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Remolacha dulce térrea, base ensaladas y jugos\n- **Sabor:** Dulce térreo suave, N-trimetilglicina, osmoprotector\n- **Textura:** Aminoácido cristal, betaína anhidra estable\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:betaina`.\n\n## Beneficio principal\n\n> Osmolito, metilador, hepato-protector\n\n## Vitaminas asociadas\n\nFolate, Manganese, Potassium\n\n## Compuestos relacionados\n\nCholine, Glycine, Betaine aldehyde\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `remolacha (Beta vulgaris)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

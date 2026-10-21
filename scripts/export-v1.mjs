@@ -18,11 +18,20 @@ const numericRecord = (value) =>
   !Array.isArray(value) &&
   Object.values(value).every(isNumber)
 
-function filesIn(dir) {
+function filesIn(dir, ext = '.md') {
   return fs
     .readdirSync(dir, { recursive: true })
-    .filter((file) => file.endsWith('.md'))
+    .filter((file) => file.endsWith(ext))
     .sort()
+}
+
+function readJsonEntries(dir) {
+  return filesIn(dir, '.json').map((file) => {
+    const { body_md = '', ...data } = JSON.parse(
+      fs.readFileSync(path.join(dir, file), 'utf8'),
+    )
+    return { file: file.replaceAll(path.sep, '/'), data, content: body_md }
+  })
 }
 
 function readEntries(dir) {
@@ -33,7 +42,7 @@ function readEntries(dir) {
 }
 
 export function ingredientRecord(data, file) {
-  const slug = path.posix.basename(file, '.md')
+  const slug = path.posix.basename(file).replace(/\.(md|json)$/, '')
   const aliases = { es: [], en: [], ...data.aliases }
   const names = { es: data.name || slug }
   for (const [lang, translation] of Object.entries(data.i18n || {})) {
@@ -244,7 +253,7 @@ export function buildDataset({
   contentDir = path.join(repoRoot, 'site/src/content'),
   generatedAt = new Date().toISOString(),
 } = {}) {
-  const ingredients = readEntries(path.join(contentDir, 'ingredients')).map(
+  const ingredients = readJsonEntries(path.join(contentDir, 'ingredients')).map(
     ({ data, file }) => ingredientRecord(data, file),
   )
   const dishes = readEntries(path.join(contentDir, 'dishes')).map(

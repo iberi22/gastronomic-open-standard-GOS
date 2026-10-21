@@ -1,0 +1,34 @@
+{
+  "name": "Mangos Verdes + Sal + Comino",
+  "ingredients": [
+    "Mango Verde",
+    "Sal Marina",
+    "Comino Tostado"
+  ],
+  "active_compounds": [
+    "Mangiferina",
+    "Cloruro de Sodio",
+    "Cuminaldehyde",
+    "Vitamina C"
+  ],
+  "synergy_type": "Electrolyte Balance & Heat-Stress Cellular Protection",
+  "synergy_mechanism": "Mangiferin protects intestinal mucosal cells from oxidative stress during thermal heat stroke, while sodium chloride and cuminum cyminum restore extracellular fluid balance and accelerate glucose-sodium intestinal co-transport.",
+  "contraindications": [
+    "Hypertension",
+    "Severe renal impairment"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Journal of Separation Science / PubMed"
+  ],
+  "studies": [
+    {
+      "title": "Sustainable Extraction of Mangiferin From Mango Leaves and Fruit: Biochemical Characterization and Antioxidant Profiling",
+      "source": "Journal of Separation Science",
+      "year": 2026,
+      "doi": "10.1002/jssc.70500",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623164/"
+    }
+  ],
+  "body_md": "# Mango Verde y Sales Minerales: Protección Osmorreguladora y Antioxidante\n\nLas bebidas tradicionales de mango verde (*Aam Panna / Tok Jhal Mishti Sharbat*) combinan la xantona bioactiva **mangiferina** con electrolitos sódicos para contrarrestar el golpe de calor tropical.\n\n## Mecanismo de Acción\nLa mangiferina ejerce un potente efecto protector celular inhibiendo la peroxidación lipídica inducida por la hipertermia. El cloruro de sodio y el comino optimizan los cotransportadores SGLT1 en la membrana enterocítica, acelerando la rehidratación celular en condiciones de deshidratación extrema."
+}

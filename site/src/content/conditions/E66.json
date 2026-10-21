@@ -1,0 +1,17 @@
+{
+  "name": "Síndrome Metabólico",
+  "category": "Enfermedades metabólicas",
+  "icd10": "E66",
+  "icd10_name": "Obesity and overweight",
+  "evidence_level": "High",
+  "prevalence": ">1B adultos globalmente con sobrepeso; 650M con obesidad (OMS 2022)",
+  "description": "Constelación de factores de riesgo cardiovascular: obesidad central, hipertensión, hiperglucemia, dislipidemia. Definición IDF: cintura >94cm (M) / >80cm (F) + 2 de: TG≥150, HDL<40/50, PA≥130/85, FG≥100mg/dL.\n",
+  "mechanisms": [
+    "Resistencia a insulina (adiposidad visceral)",
+    "Estado proinflamatorio crónico (TNF-α, IL-6)",
+    "Disfunción endotelial y estado protrombótico"
+  ],
+  "sources": [
+    "Alberti KG et al. IDF Consensus Definition of Metabolic Syndrome. 2006."
+  ]
+}

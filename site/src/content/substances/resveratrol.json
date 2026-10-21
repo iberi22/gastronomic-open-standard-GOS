@@ -1,0 +1,51 @@
+{
+  "aliases": {
+    "en": [
+      "resveratrol"
+    ]
+  },
+  "benefit": "Antioxidante, cardioprotector, mimético restricción calórica",
+  "compuestos": [
+    "Pterostilbene",
+    "Piceid",
+    "Quercetin"
+  ],
+  "disclaimer": true,
+  "discovery_year": 1939,
+  "formula": "C14H12O3",
+  "health_registry": [
+    {
+      "condition": "Cardiovascular disease",
+      "evidence_level": "Medium",
+      "mechanism": "SIRT1 activation, endothelial NO",
+      "studies": [
+        {
+          "source": "Nutrients",
+          "title": "Resveratrol and CVD: systematic review",
+          "year": 2019
+        }
+      ]
+    }
+  ],
+  "image_attribution": "Pixabay — Vitis vinifera",
+  "name": "Resveratrol",
+  "sabor": "Astringente tanino suave, trans-resveratrol activo",
+  "sazon": "Vino tinto astringente, hollejo uva isabela",
+  "source_ingredient": "uva (Vitis vinifera)",
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "vino",
+    "cardioprotector",
+    "longevidad"
+  ],
+  "textura": "Estilbeno polifenol cristal, trans-isómero activo",
+  "vitaminas": [
+    "Vitamin C",
+    "Vitamin K",
+    "Potassium"
+  ],
+  "body_md": "![Resveratrol](/images/substances/resveratrol.jpg)\n*Foto: Pixabay — Vitis vinifera — placeholder real photo path `public/images/substances/resveratrol.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\nTrans-3,5,4'-trihydroxystilbene (C14H12O3) aislado en 1939 por Michio Takaoka de *Veratrum*. Estilbeno del hollejo de uva (0.2-5mg/L vino tinto). Activador SIRT1: mimético restricción calórica.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Vino tinto astringente, hollejo uva isabela\n- **Sabor:** Astringente tanino suave, trans-resveratrol activo\n- **Textura:** Estilbeno polifenol cristal, trans-isómero activo\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:resveratrol`.\n\n## Beneficio principal\n\n> Antioxidante, cardioprotector, mimético restricción calórica (afirmaciones sin fuente verificada en esta carta)\n\n## Vitaminas asociadas\n\nVitamin C, Vitamin K, Potassium\n\n## Compuestos relacionados\n\nPterostilbene, Piceid, Quercetin\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `uva (Vitis vinifera)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

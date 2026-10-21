@@ -116,7 +116,7 @@ def audit_recipes(dishes_dir: Path) -> dict:
 
 
 def audit_ingredients(ingredients_dir: Path) -> dict:
-    """Audits all ingredient markdown files under ingredients/ directory."""
+    """Audits all ingredient files (JSON or markdown) under ingredients/ directory."""
     curated_count = 0
     pending_count = 0
     archive_count = 0
@@ -128,8 +128,9 @@ def audit_ingredients(ingredients_dir: Path) -> dict:
 
     all_ing_files = []
     if ingredients_dir.exists():
+        # Data collections are JSON (repo-as-database); legacy .md still read.
         all_ing_files = sorted([
-            p for p in ingredients_dir.rglob("*.md")
+            p for ext in ("*.md", "*.json") for p in ingredients_dir.rglob(ext)
             if p.name not in ("README.md", "_template.md")
         ])
 
@@ -144,7 +145,7 @@ def audit_ingredients(ingredients_dir: Path) -> dict:
             curated_count += 1
 
         content = p.read_text(encoding="utf-8", errors="ignore")
-        fm = parse_frontmatter(content)
+        fm = json.loads(content) if p.suffix == ".json" else parse_frontmatter(content)
 
         name = str(fm.get("name", p.stem)).strip()
         if any(c not in LATIN_CHARSET for c in name):

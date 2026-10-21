@@ -1,0 +1,14 @@
+{
+  "code": "N",
+  "name": "Vitamina N",
+  "aliases": "ácido alfa-lipoico, ALA (no confundir con omega-3)",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "espinaca, brócoli, tomate, guisante, salvado de arroz, hígado",
+  "functions": "Antioxidante hidrosoluble + liposoluble, regenera otros antioxidantes (C, E, glutathione), chelación de metales pesados",
+  "deficiency": "fatiga, muscle cramps, daño neurológico periférico (raro)",
+  "excess": "rash cutaneous, GI upset, hipoglucemia en diabéticos",
+  "type": "vitamin",
+  "body_md": "Vitamina N (ácido alfa-lipoico, ALA (no confundir con omega-3)) es una vitamina con RDA de null mg.\n\n## Funciones\n\nAntioxidante hidrosoluble + liposoluble, regenera otros antioxidantes (C, E, glutathione), chelación de metales pesados\n\n## Fuentes alimentarias\n\nespinaca, brócoli, tomate, guisante, salvado de arroz, hígado\n\n## Deficiencia\n\nfatiga, muscle cramps, daño neurológico periférico (raro)\n\n## Exceso\n\nrash cutaneous, GI upset, hipoglucemia en diabéticos"
+}

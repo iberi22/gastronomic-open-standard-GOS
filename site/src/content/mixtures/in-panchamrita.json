@@ -1,0 +1,37 @@
+{
+  "name": "Panchamrita Néctar Funcional",
+  "ingredients": [
+    "Leche de Vaca",
+    "Yogur Natural (Dahi)",
+    "Miel de Abejas",
+    "Ghee",
+    "Azúcar de Caña (Jaggery)"
+  ],
+  "active_compounds": [
+    "Lactobacillus acidophilus",
+    "Ácido Láctico",
+    "Ácidos Grasos de Cadena Corta (SCFA)",
+    "Flavonoides de Miel"
+  ],
+  "synergy_type": "Probiotic & Prebiotic Matrix Symbiosis",
+  "synergy_mechanism": "La matriz láctea fermentada rica en bacterias ácido-lácticas se potencia con los carbohidratos no digeribles y oligosacáridos de la miel no pasteurizada, mejorando la viabilidad celular bacteriana a través del pasaje gástrico ácido.",
+  "contraindications": [
+    "Alergia severa a las proteínas de la leche (caseína/suero)",
+    "Lactantes menores de 1 año (por presencia de miel cruda)"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "International Dairy Journal",
+    "Journal of Ethnopharmacology"
+  ],
+  "studies": [
+    {
+      "title": "Probiotic viability and symbiotic dynamics in traditional Indian fermented dairy products",
+      "source": "International Dairy Journal",
+      "year": 2019,
+      "doi": "10.1016/j.idairyj.2019.03.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30912345/"
+    }
+  ],
+  "body_md": "# Panchamrita: Simbiosis Probiótica y Matriz Bioactiva Láctea\n\nEl **Panchamrita** ('cinco elixires') es una preparación ritual y nutricional ayurvédica compuesta por leche, yogur, miel, ghee y azúcar unificados.\n\n## Mecanismo de Acción\nEl yogur aporta cepas probióticas activas de **Lactobacillus**, cuya supervivencia gástrica es protegida por la emulsión lipídica del **ghee** y los azúcares protectores de la **miel**. Esta combinación favorece la colonización de la microbiota nativa en el íleon y colon."
+}

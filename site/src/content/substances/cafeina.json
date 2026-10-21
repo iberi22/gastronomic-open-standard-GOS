@@ -1,0 +1,54 @@
+{
+  "aliases": {
+    "en": [
+      "caffeine"
+    ]
+  },
+  "benefit": "Estimulante, termogénico, neuroprotector",
+  "compuestos": [
+    "Theobromine",
+    "Theophylline",
+    "Chlorogenic acid"
+  ],
+  "disclaimer": true,
+  "discovery_year": 1819,
+  "formula": "C8H10N4O2",
+  "health_registry": [
+    {
+      "condition": "Fatigue / Alertness",
+      "evidence_level": "Medium",
+      "mechanism": "Adenosine A1/A2A receptor antagonism",
+      "studies": [
+        {
+          "doi": "10.1007/s00213-012-2917-4",
+          "source": "Psychopharmacology",
+          "title": "Caffeine as an attention enhancer: reviewing existing assumptions",
+          "year": 2012,
+          "evidence_type": "narrative review",
+          "doi_status": "verified"
+        }
+      ]
+    }
+  ],
+  "image_attribution": "Pixabay — Coffea arabica",
+  "name": "Cafeína",
+  "sabor": "Amarga intensa, soluble agua caliente, bloquea adenosina",
+  "sazon": "Amarga estimulante, base tinto colombiano",
+  "source_ingredient": "café (Coffea arabica)",
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "estimulante",
+    "cafe",
+    "neuroprotector"
+  ],
+  "textura": "Alcaloide cristal blanco inodoro, sublimable",
+  "vitaminas": [
+    "Potassium",
+    "Magnesium",
+    "Vitamin B3"
+  ],
+  "body_md": "![Cafeína](/images/substances/cafeina.jpg)\n*Foto: Pixabay — Coffea arabica — placeholder real photo path `public/images/substances/cafeina.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\n1,3,7-Trimethylxanthine (C8H10N4O2) aislada en 1819 por Friedlieb Ferdinand Runge. Alcaloide purínico del café (1-2%); antagonista adenosina que aumenta dopamina y adrenalina. Dosis colombiana típica 80-120mg por tinto.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Amarga estimulante, base tinto colombiano\n- **Sabor:** Amarga intensa, soluble agua caliente, bloquea adenosina\n- **Textura:** Alcaloide cristal blanco inodoro, sublimable\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:cafeina`.\n\n## Beneficio principal\n\n> Estimulante, termogénico, neuroprotector\n\n## Vitaminas asociadas\n\nPotassium, Magnesium, Vitamin B3\n\n## Compuestos relacionados\n\nTheobromine, Theophylline, Chlorogenic acid\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `café (Coffea arabica)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

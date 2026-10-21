@@ -1,0 +1,14 @@
+{
+  "code": "Bx",
+  "name": "Vitamina Bx",
+  "aliases": "ácido para-aminobenzoico, PABA",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "hígado, melaza, yogurt, espinaca, tomates",
+  "functions": " Cofactor en síntesis de folato, antioxidante, protector UV tópico (crema solar)",
+  "deficiency": "fatiga, irritability, cabello graso, estrés",
+  "excess": "náuseas, anorexia, febrícula",
+  "type": "vitamin",
+  "body_md": "Vitamina Bx (ácido para-aminobenzoico, PABA) es una vitamina con RDA de null mg.\n\n## Funciones\n\n Cofactor en síntesis de folato, antioxidante, protector UV tópico (crema solar)\n\n## Fuentes alimentarias\n\nhígado, melaza, yogurt, espinaca, tomates\n\n## Deficiencia\n\nfatiga, irritability, cabello graso, estrés\n\n## Exceso\n\nnáuseas, anorexia, febrícula"
+}

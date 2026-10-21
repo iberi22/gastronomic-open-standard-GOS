@@ -561,21 +561,14 @@ function slugify(str) {
     .replace(/^-|-$/g, '')
 }
 
+// JSON record (repo-as-database); same format as scripts/md_to_json.mjs
 function frontmatter(data) {
-  const lines = Object.entries(data)
-    .filter(([, v]) => v !== null && v !== undefined && v !== '')
-    .map(([k, v]) => {
-      if (typeof v === 'string' && (v.includes('\n') || v.length > 60)) {
-        return `${k}: |\n${v
-          .split('\n')
-          .map((l) => `  ${l}`)
-          .join('\n')}`
-      }
-      if (Array.isArray(v))
-        return `${k}: [${v.map((x) => `"${x}"`).join(', ')}]`
-      return `${k}: "${v}"`
-    })
-  return `---\n${lines.join('\n')}\n---\n`
+  const record = Object.fromEntries(
+    Object.entries(data).filter(
+      ([, v]) => v !== null && v !== undefined && v !== '',
+    ),
+  )
+  return `${JSON.stringify(record, null, 2)}\n`
 }
 
 async function ensureDir(dir) {
@@ -604,9 +597,9 @@ async function main() {
   console.log('\n=== VITAMINS ===')
   for (const v of VITAMINS) {
     const id = slugify(`${v.code}-${v.name.split(' ')[1]}`)
-    const file = join(vitaminsDir, `${id}.md`)
+    const file = join(vitaminsDir, `${id}.json`)
     if (await fileExists(file)) {
-      console.log(`  SKIP (exists): ${id}.md`)
+      console.log(`  SKIP (exists): ${id}.json`)
       continue
     }
     const content = frontmatter({
@@ -624,15 +617,15 @@ async function main() {
       excess: v.excess,
     })
     await writeFile(file, content, 'utf-8')
-    console.log(`  CREATED: ${id}.md`)
+    console.log(`  CREATED: ${id}.json`)
   }
 
   // --- Conditions ---
   console.log('\n=== CONDITIONS ===')
   for (const c of CONDITIONS) {
-    const file = join(conditionsDir, `${c.id}.md`)
+    const file = join(conditionsDir, `${c.id}.json`)
     if (await fileExists(file)) {
-      console.log(`  SKIP (exists): ${c.id}.md`)
+      console.log(`  SKIP (exists): ${c.id}.json`)
       continue
     }
     const content = frontmatter({
@@ -647,15 +640,15 @@ async function main() {
       sources: c.sources,
     })
     await writeFile(file, content, 'utf-8')
-    console.log(`  CREATED: ${c.id}.md`)
+    console.log(`  CREATED: ${c.id}.json`)
   }
 
   // --- Diets ---
   console.log('\n=== DIETS ===')
   for (const d of DIETS) {
-    const file = join(dietsDir, `${d.id}.md`)
+    const file = join(dietsDir, `${d.id}.json`)
     if (await fileExists(file)) {
-      console.log(`  SKIP (exists): ${d.id}.md`)
+      console.log(`  SKIP (exists): ${d.id}.json`)
       continue
     }
     const content = frontmatter({
@@ -669,7 +662,7 @@ async function main() {
       sources: d.sources,
     })
     await writeFile(file, content, 'utf-8')
-    console.log(`  CREATED: ${d.id}.md`)
+    console.log(`  CREATED: ${d.id}.json`)
   }
 
   console.log('\n✅ Seed complete.')

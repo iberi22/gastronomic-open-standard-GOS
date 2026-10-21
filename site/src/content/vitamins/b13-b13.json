@@ -1,0 +1,14 @@
+{
+  "code": "B13",
+  "name": "Vitamina B13",
+  "aliases": "ácido orótico, ácido pirimidina-4-carboxílico",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "raíz de bardana, suero de leche, algunos vegetales de raíz",
+  "functions": "Metabolismo del ácido fólico, síntesis de pirimidinas, función hepática",
+  "deficiency": "no establecido; raro",
+  "excess": "no tóxico documentado",
+  "type": "vitamin",
+  "body_md": "Vitamina B13 (ácido orótico, ácido pirimidina-4-carboxílico) es una vitamina con RDA de null mg.\n\n## Funciones\n\nMetabolismo del ácido fólico, síntesis de pirimidinas, función hepática\n\n## Fuentes alimentarias\n\nraíz de bardana, suero de leche, algunos vegetales de raíz\n\n## Deficiencia\n\nno establecido; raro\n\n## Exceso\n\nno tóxico documentado"
+}

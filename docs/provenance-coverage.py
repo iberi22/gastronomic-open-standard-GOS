@@ -2,6 +2,7 @@ import os
 import sys
 from pathlib import Path
 import re
+import json
 
 def count_provenance():
     base_dir = Path("site/src/content/ingredients")
@@ -14,15 +15,15 @@ def count_provenance():
     unsplash_in_ingredient_files = 0
 
     # regexes
-    license_re = re.compile(r'^license:', re.MULTILINE)
-    date_retrieved_re = re.compile(r'date_retrieved:')
+    license_re = re.compile(r'^  "license":', re.MULTILINE)
+    date_retrieved_re = re.compile(r'"date_retrieved":')
     unsplash_re = re.compile(r'unsplash', re.IGNORECASE)
 
     for root, _, files in os.walk(base_dir):
         for file in files:
-            if not file.endswith(".md"):
+            if not file.endswith(".json"):
                 continue
-            if file == "README.md" or file == "_template.md":
+            if file in ("README.json", "_template.json"):
                 continue
 
             file_path = Path(root) / file
@@ -31,12 +32,11 @@ def count_provenance():
             try:
                 content = file_path.read_text(encoding='utf-8')
 
-                # We need to extract frontmatter for accurate checking
-                parts = content.split('---')
-                if len(parts) >= 3:
-                    frontmatter = parts[1]
-                else:
-                    frontmatter = content
+                # Records are JSON; the Markdown body (body_md) is excluded
+                # from the provenance keys, like the old frontmatter split.
+                record = json.loads(content)
+                record.pop("body_md", None)
+                frontmatter = json.dumps(record, indent=2, ensure_ascii=False)
 
                 if license_re.search(frontmatter):
                     ingredients_with_license += 1
@@ -61,9 +61,9 @@ def count_provenance():
             else:
                 frontmatter = template_content
 
-            if license_re.search(frontmatter):
+            if re.search(r'^license:', frontmatter, re.MULTILINE):
                 template_has_license = 1
-            if date_retrieved_re.search(frontmatter):
+            if re.search(r'date_retrieved:', frontmatter):
                 template_has_date_retrieved = 1
         except Exception:
             pass

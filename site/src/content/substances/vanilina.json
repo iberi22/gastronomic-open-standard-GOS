@@ -1,0 +1,51 @@
+{
+  "aliases": {
+    "en": [
+      "vanillin"
+    ]
+  },
+  "benefit": "Aroma, ansiolítico suave, antioxidante",
+  "compuestos": [
+    "Vanillic acid",
+    "Vanillyl alcohol",
+    "Ethylvanillin"
+  ],
+  "disclaimer": true,
+  "discovery_year": 1858,
+  "formula": "C8H8O3",
+  "health_registry": [
+    {
+      "condition": "Anxiety / Appetite",
+      "evidence_level": "Low",
+      "mechanism": "Olfactory GABA potentiation",
+      "studies": [
+        {
+          "source": "Appetite",
+          "title": "Vanillin aroma and mood: pilot",
+          "year": 2014
+        }
+      ]
+    }
+  ],
+  "image_attribution": "Pixabay — Vanilla planifolia",
+  "name": "Vanilina",
+  "sabor": "Dulce balsámica cremosa, 2% vainilla curada",
+  "sazon": "Vainilla dulce balsámica, base postres y arequipe",
+  "source_ingredient": "vainilla (Vanilla planifolia)",
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "vainilla",
+    "dulce",
+    "aroma"
+  ],
+  "textura": "Aldehído fenólico cristal, vanillina 2% peso seco",
+  "vitaminas": [
+    "Manganese",
+    "Magnesium",
+    "Potassium"
+  ],
+  "body_md": "![Vanilina](/images/substances/vanilina.jpg)\n*Foto: Pixabay — Vanilla planifolia — placeholder real photo path `public/images/substances/vanilina.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\n4-Hydroxy-3-methoxybenzaldehyde (C8H8O3) aislada en 1858 por Gobley y sintetizada en 1874 por Reimer/Tiemann. Aldehído fenólico 2% de vaina curada; aroma vainilla. Base postres.\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Vainilla dulce balsámica, base postres y arequipe\n- **Sabor:** Dulce balsámica cremosa, 2% vainilla curada\n- **Textura:** Aldehído fenólico cristal, vanillina 2% peso seco\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:vanilina`.\n\n## Beneficio principal\n\n> Aroma, ansiolítico suave, antioxidante (afirmaciones sin fuente verificada en esta carta)\n\n## Vitaminas asociadas\n\nManganese, Magnesium, Potassium\n\n## Compuestos relacionados\n\nVanillic acid, Vanillyl alcohol, Ethylvanillin\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `vainilla (Vanilla planifolia)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

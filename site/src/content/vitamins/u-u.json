@@ -1,0 +1,14 @@
+{
+  "code": "U",
+  "name": "Vitamina U",
+  "aliases": "S-metilmetionina",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "jugo de col, apio, zanahoria, espinaca, pineapple",
+  "functions": "Gastroprotectivo (cicatrización de úlceras gástricas), reducción de secreción ácida",
+  "deficiency": "no establecido; riesgo de gastritis/ulcus",
+  "excess": "no documentado",
+  "type": "vitamin",
+  "body_md": "Vitamina U (S-metilmetionina) es una vitamina con RDA de null mg.\n\n## Funciones\n\nGastroprotectivo (cicatrización de úlceras gástricas), reducción de secreción ácida\n\n## Fuentes alimentarias\n\njugo de col, apio, zanahoria, espinaca, pineapple\n\n## Deficiencia\n\nno establecido; riesgo de gastritis/ulcus\n\n## Exceso\n\nno documentado"
+}

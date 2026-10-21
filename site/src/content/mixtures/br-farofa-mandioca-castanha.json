@@ -1,0 +1,32 @@
+{
+  "name": "Farofa de Mandioca + Castanha-do-Pará",
+  "ingredients": [
+    "Farofa de Mandioca",
+    "Castanha-do-Pará"
+  ],
+  "active_compounds": [
+    "Selenio",
+    "Ácido oleico",
+    "Almidón resistente",
+    "Tocoferoles"
+  ],
+  "synergy_type": "Lipid Matrix Micronutrient Protection",
+  "synergy_mechanism": "Unsaturated fatty acids and lipid matrix from Brazil nuts encapsulate essential dietary selenium and hydrophobic vitamin E, increasing intestinal uptake while starch matrices regulate gastric transit.",
+  "contraindications": [
+    "Excessive intake (> 4 nuts daily to avoid selenosis)"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Journal of Nutrition"
+  ],
+  "studies": [
+    {
+      "title": "Selenium status in preschool children receiving a Brazil nut–enriched diet",
+      "source": "Nutrition",
+      "year": 2015,
+      "doi": "10.1016/j.nut.2015.05.005",
+      "url": "https://doi.org/10.1016/j.nut.2015.05.005"
+    }
+  ],
+  "body_md": "# Farofa de Mandioca Enriquecida con Castanha-do-Pará: Sinergia Lipídica Antioxidante\n\nLa enriquecimiento de la **farofa de mandioca** (*Manihot esculenta*) con **Castanha-do-Pará** (*Bertholletia excelsa*) une carbohidratos complejos de absorción gradual con el alimento más rico en selenio del planeta.\n\n## Mecanismo de Sinergia\nLa castanha-do-pará contiene niveles excepcionales de **selenio orgánico** (selenometionina) integrado en matriz lipídica rica en ácido oleico y linoleico. La tostación suave junto a la harina de mandioca protege los tocoferoles contra la oxidación térmica, mientras que el almidón de la mandioca modula el tránsito intestinal, facilitando la micelarización enterocítica del selenio y la vitamina E."
+}

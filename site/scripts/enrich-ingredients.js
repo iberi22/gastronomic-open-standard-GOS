@@ -1,7 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import matter from 'gray-matter'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
@@ -13,7 +12,7 @@ function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name)
     if (e.isDirectory()) files = files.concat(walk(p))
-    else if (e.name.endsWith('.md')) files.push(p)
+    else if (e.name.endsWith('.json')) files.push(p)
   }
   return files
 }
@@ -25,11 +24,11 @@ for (const file of walk(ingredientsDir)) {
   const raw = fs.readFileSync(file, 'utf-8')
   let data
   try {
-    data = matter(raw).data || {}
+    data = JSON.parse(raw) || {}
   } catch {
     continue
   }
-  const rel = path.relative(ingredientsDir, file).replace(/\.md$/, '')
+  const rel = path.relative(ingredientsDir, file).replace(/\.json$/, '')
   const slug = rel.split(path.sep).join('/')
   const id = slug.split('/').pop()
   const group = slug.split('/')[0] || 'otro'

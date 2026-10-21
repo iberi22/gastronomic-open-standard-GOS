@@ -39,7 +39,9 @@ describe('GOS v1 published contract', () => {
         .readdirSync(path.join(repoRoot, 'site/src/content', kind), {
           recursive: true,
         })
-        .filter((f) => String(f).endsWith('.md'))
+        .filter((f) =>
+          String(f).endsWith(kind === 'ingredients' ? '.json' : '.md'),
+        )
       expect(dataset[kind]).toHaveLength(files.length)
       expect(
         new Set(dataset[kind].map((entry: { id: string }) => entry.id)).size,
@@ -76,7 +78,9 @@ describe('GOS v1 published contract', () => {
       buildDataset({ generatedAt: '2026-10-03T00:00:00.000Z' }).manifest
         .contentHash,
     ).toBe(dataset.manifest.contentHash)
-  })
+    // Rebuilds the whole dataset (~0.7s idle, same on base); explicit timeout
+    // because heavy machine load pushed it past vitest's 5s default.
+  }, 30_000)
   it('exports compact bundles with exactly the specified fields', () => {
     expect(Object.keys(dataset.ingredientsMin[0]).sort()).toEqual(
       ['id', 'names', 'group', 'nutrition_per_100g', 'allergens'].sort(),

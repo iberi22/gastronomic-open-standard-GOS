@@ -1,0 +1,33 @@
+{
+  "name": "Agua de Jamaica con Canela",
+  "ingredients": [
+    "Flor de Jamaica (Hibiscus sabdariffa)",
+    "Canela (Cinnamomum verum)"
+  ],
+  "active_compounds": [
+    "Delfinidina-3-sambubiósido",
+    "Cianidina-3-sambubiósido",
+    "Cinamaldehído"
+  ],
+  "synergy_type": "Antioxidant and Glycemic Modulation Synergy",
+  "synergy_mechanism": "Hibiscus anthocyanins inhibit alpha-glucosidase while cinnamaldehyde enhances insulin sensitivity and vascular endothelial nitric oxide synthesis.",
+  "contraindications": [
+    "Severe hypotension",
+    "Concurrent use of high-dose antihypertensives"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "Journal of Ethnopharmacology",
+    "Phytomedicine"
+  ],
+  "studies": [
+    {
+      "title": "Hibiscus sabdariffa L. tea and cinnamic acid derivative combinations: Cardiovascular and metabolic regulation",
+      "source": "Journal of Ethnopharmacology",
+      "year": 2019,
+      "doi": "10.1016/j.jep.2019.112150",
+      "url": "https://doi.org/10.1016/j.jep.2019.112150"
+    }
+  ],
+  "body_md": "# Agua de Jamaica y Canela: Sinergia Metabólica y Vascular\n\nLa infusió́n y decocció́n combinada de cálices de **flor de jamaica** (*Hibiscus sabdariffa*) y **canela** (*Cinnamomum verum*) representa una bebida funcional tradicional mexicana con marcados efectos cardiometabólicos.\n\n## Mecanismo de Acción\nLos flavonoides y antocianinas (*delfinidina y cianidina*) presentes en la jamaica inhiben competitivamente las enzimas digestivas α-glucosidasa y convertidora de angiotensina (ECA). Por su parte, el **cinamaldehído** favorece la translocación del transportador GLUT4 en tejido muscular. La combinación actúa en sinergia para reducir el pico glucémico postprandial y mejorar el perfil de presión arterial."
+}

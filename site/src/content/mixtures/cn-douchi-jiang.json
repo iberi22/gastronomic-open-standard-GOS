@@ -1,0 +1,32 @@
+{
+  "name": "Douchi + Isoflavone Aglycones",
+  "ingredients": [
+    "Douchi (Fermented Black Soybeans)",
+    "Soybean Isoflavones"
+  ],
+  "active_compounds": [
+    "Genistein aglycone",
+    "Daidzein aglycone",
+    "Soybean bioactive peptides"
+  ],
+  "synergy_type": "Fermentation Enzymatic Bioavailability Enhancement",
+  "synergy_mechanism": "Fungal beta-glucosidases during Aspergillus oryzae koji fermentation cleave glucose moieties from isoflavone glycosides, converting them into lipophilic aglycones (genistein, daidzein) with superior intestinal absorption and antioxidant potential.",
+  "contraindications": [
+    "Soy allergy",
+    "Severe kidney disease with sodium restriction"
+  ],
+  "evidence_level": "High",
+  "sources": [
+    "PubMed - Food Chemistry"
+  ],
+  "studies": [
+    {
+      "title": "Untargeted metabolomics analysis of non-volatile metabolites and dynamic changes of antioxidant capacity in Douchi with edible mushroom by-products",
+      "source": "Food Chemistry",
+      "year": 2024,
+      "doi": "10.1016/j.foodchem.2023.137066",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37572484/"
+    }
+  ],
+  "body_md": "# Douchi (豆豉): Fermentación y Bioaccesibilidad de Isoflavonas\n\n## Química y Fermentación Culinaria\nEl **Douchi** (豆豉) es un ingrediente clave de la gastronomía china tradicional (Sichuan, Cantón, Hunan) elaborado mediante la fermentación de soja negra con hongos de superficie como *Aspergillus oryzae* o bacterias esporuladas del género *Bacillus subtilis*. Durante este prolongado proceso postbiótico de maduración, la potente actividad de la enzima beta-glucosidasa fúngica rompe los enlaces glucosídicos de las isoflavonas nativas (genistina, daidzina, glicitina), transformándolas cuantitativamente en sus formas agliconas libres (genisteína, daidzeína y gliciteína).\n\n## Mecanismo de Sinergia Nutricional\n\n* **Mayor Bioaccesibilidad Digestiva:** Las isoflavonas agliconas presentan un peso molecular significativamente menor y una lipofilicitud optimizada. Esto permite una absorción intestinal más rápida y eficiente por difusión pasiva a nivel del yeyuno, superando las limitaciones metabólicas de las moléculas glucosiladas precursoras.\n* **Potenciación de Peptídeos Bioactivos:** La proteólisis fúngica intensiva degrada las proteínas complejas de la soja en oligapéptidos pequeños con capacidad comprobada de inhibición de la ECA (enzima convertidora de angiotensina) y alta neutralización de especies reactivas de oxígeno (ROS).\n* **Perfil de Sabor Umami y Dispersión Aromática:** La acumulación de L-glutamato libre y nucleótidos (IMP/GMP) durante la fermentación potencia exponencialmente el sabor umami en salteados y estofados tradicionales, facilitando además la digestión proteica gástrica.\n\n## Aplicaciones en la Gastronomía de Sichuan y Cantón\nEn la cocina de Sichuan, el Douchi se saltea junto con la carne de cerdo y el chile para aportar una profundidad salada y fermentada. En la cocina cantonesa, se prensa junto con ajo fresco para marinados al vapor en pescados y costillas de cerdo, maximizando la liberación de notas umami.\n\n## Impacto Microbiológico y Conservación Culinaria\nAdemás de sus virtudes organolépticas, las bacteriocinas producidas por *Bacillus* durante la elaboración del Douchi inhiben el crecimiento de bacterias patógenas en salmueras y marinados."
+}

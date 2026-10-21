@@ -1,0 +1,47 @@
+{
+  "name": "Dodecenal",
+  "disclaimer": true,
+  "formula": "C12H22O",
+  "discovery_year": 1968,
+  "source_ingredient": "cilantro (Coriandrum sativum hojas)",
+  "benefit": "Antibacteriano Salmonella-específico, antifúngico",
+  "sazon": "Cilantro fresco verde jabonoso, firma sancocho",
+  "sabor": "Verde jabonoso cilantro, 9% aceite hoja, OR6A2 genético",
+  "textura": "Aldehído alifático monoinsaturado, trans-2-dodecenal 6-9%",
+  "vitaminas": [
+    "Vitamin K",
+    "Vitamin A",
+    "Vitamin C"
+  ],
+  "compuestos": [
+    "Dodecanal",
+    "Decenal",
+    "Linalool"
+  ],
+  "sources": [
+    "PubMed",
+    "NIH"
+  ],
+  "tags": [
+    "cilantro",
+    "antibacteriano",
+    "salmonella"
+  ],
+  "image_attribution": "Pixabay — Coriandrum sativum",
+  "health_registry": [
+    {
+      "condition": "Salmonellosis",
+      "mechanism": "Membrane disruption of Salmonella enterica (2x gentamicina)",
+      "evidence_level": "Medium",
+      "studies": [
+        {
+          "title": "Antibacterial Activity of Coriander Volatile Compounds against Salmonella choleraesuis",
+          "source": "J Agric Food Chem",
+          "year": 2004,
+          "doi": "10.1021/jf0354186"
+        }
+      ]
+    }
+  ],
+  "body_md": "![Dodecenal](/images/substances/dodecenal.jpg)\n*Foto: Pixabay — Coriandrum sativum — placeholder real photo path `public/images/substances/dodecenal.jpg` (800×600 webp/jpg, atribución en frontmatter).*\n\n## Descripción\n\nTrans-2-dodecenal (C12H22O) aldehído alifático del cilantro hoja (6-9% aceite), caracterizado en 1960s y actividad anti-Salmonella publicada 2004 (J Agric Food Chem): 2x más potente que gentamicina in vitro. Responsable nota verde jabonosa (gen OR6A2).\n\n## Sazón / Sabor / Textura\n\n- **Sazón:** Cilantro fresco verde jabonoso, firma sancocho\n- **Sabor:** Verde jabonoso cilantro, 9% aceite hoja, OR6A2 genético\n- **Textura:** Aldehído alifático monoinsaturado, trans-2-dodecenal 6-9%\n\nUsado en GOS como nodo `substance` conectado a ingredientes vía `active_compounds` y a afecciones vía `health_registry`. Ver grafo filtrado: `/graph?filter=substance:dodecenal`.\n\n## Beneficio principal\n\n> Antibacteriano Salmonella-específico, antifúngico\n\n## Vitaminas asociadas\n\nVitamin K, Vitamin A, Vitamin C\n\n## Compuestos relacionados\n\nDodecanal, Decenal, Linalool\n\n## Health registry\n\nVer `health_registry` arriba — mecanismos moleculares con nivel de evidencia y DOI PubMed.\n\n## Almacenamiento y uso culinario\n\n- **Conservación:** Mantener fuente `cilantro (Coriandrum sativum hojas)` fresca; los compuestos volátiles se degradan con calor excesivo y con el tiempo (ideal moler/ triturar al momento).\n- **Técnica GOS:** Triturar o macerar para activar enzimas (aliinasa/mirosinasa) y reposar 10 min antes de calentar cuando aplique.\n- **Seguridad:** Se considera generalmente seguro en dosis culinarias según la evidencia disponible (sin fuente verificada en esta carta); los extractos concentrados requieren evaluación médica. Ver `ingredients/` para protocolo científico."
+}

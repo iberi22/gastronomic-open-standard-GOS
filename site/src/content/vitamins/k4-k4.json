@@ -1,0 +1,14 @@
+{
+  "code": "K4",
+  "name": "Vitamina K4",
+  "aliases": "menadiol diacetato",
+  "unit": "mg",
+  "rda": null,
+  "ul": null,
+  "sources": "sintético",
+  "functions": "Forma soluble en agua de vitamina K3, pródroga convertida a K3 en el cuerpo",
+  "deficiency": "bleeding disorders",
+  "excess": "hyperbilirubinemia neonatal, kernicterus risk",
+  "type": "vitamin",
+  "body_md": "Vitamina K4 (menadiol diacetato) es una vitamina con RDA de null mg.\n\n## Funciones\n\nForma soluble en agua de vitamina K3, pródroga convertida a K3 en el cuerpo\n\n## Fuentes alimentarias\n\nsintético\n\n## Deficiencia\n\nbleeding disorders\n\n## Exceso\n\nhyperbilirubinemia neonatal, kernicterus risk"
+}

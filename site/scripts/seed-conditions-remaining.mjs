@@ -437,25 +437,23 @@ async function main() {
 
   let created = 0
   for (const c of CONDITIONS) {
-    const filename = join(OUT, `${c.code}.md`)
-    const yamlMechanisms = c.mechanisms.map((m) => `  - "${m}"`).join('\n')
-    const yamlSources = c.sources.map((s) => `  - "${s}"`).join('\n')
-
-    const content = `---
-name: "${c.name}"
-category: "${c.category}"
-icd10: "${c.icd10}"
-icd10_name: "${c.icd10_name}"
-evidence_level: "${c.evidence_level}"
-prevalence: "${c.prevalence}"
-description: |
-  ${c.description}
-mechanisms:
-${yamlMechanisms}
-sources:
-${yamlSources}
----
-`
+    const filename = join(OUT, `${c.code}.json`)
+    // JSON record (repo-as-database); same format as scripts/md_to_json.mjs
+    const content = `${JSON.stringify(
+      {
+        name: c.name,
+        category: c.category,
+        icd10: c.icd10,
+        icd10_name: c.icd10_name,
+        evidence_level: c.evidence_level,
+        prevalence: c.prevalence,
+        description: c.description,
+        mechanisms: c.mechanisms,
+        sources: c.sources,
+      },
+      null,
+      2,
+    )}\n`
     await writeFile(filename, content, 'utf8')
     console.log(`Created: ${filename}`)
     created++

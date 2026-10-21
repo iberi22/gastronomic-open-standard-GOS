@@ -30,6 +30,7 @@
     "graphology-layout-forceatlas2": "0.10.1",
     "gray-matter": "^4.0.3",
     "idb": "8.0.4",
+    "marked": "18.1.1",
     "sharp": "^0.35.5",
     "sigma": "3.0.3",
     "y-indexeddb": "9.0.12",

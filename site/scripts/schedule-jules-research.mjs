@@ -41,7 +41,7 @@ function bodyFor(e) {
 
 - Queue entry: \`${e.id}\` — ${e.topic} (${e.lang} sources).
 - Collections: \`dishes/\` (ROOT canonical), \`site/src/content/mixtures/\`, \`site/src/content/substances/\`.
-- Gold mixture (studies shape): \`site/src/content/mixtures/curcuma-pimienta-negra.md\`.
+- Gold mixture (studies shape): \`site/src/content/mixtures/curcuma-pimienta-negra.json\`.
 - Strategy: \`docs/CONTENT_EXPANSION_STRATEGY.md\` §1 (native sources), §5 (sources policy).
 
 ## Desired State (DELTA)
@@ -68,7 +68,7 @@ function bodyFor(e) {
 
 ## Existing Code Patterns (MUST follow)
 
-- \`site/src/content/mixtures/curcuma-pimienta-negra.md\` → studies[] {title, source, year, doi, url}
+- \`site/src/content/mixtures/curcuma-pimienta-negra.json\` → studies[] {title, source, year, doi, url}
 - \`docs/CONTENT_EXPANSION_STRATEGY.md\` §5 → source hierarchy
 
 ## Acceptance Criteria (VERIFICABLES POR COMANDO)
