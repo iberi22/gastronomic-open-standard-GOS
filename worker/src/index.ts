@@ -19,7 +19,8 @@
  *
  * What remains: CORS, Cache API, the proxy to the static origin, and one
  * ANONYMOUS abuse limit that applies equally to everyone (per-IP burst via a
- * Workers Rate Limiting binding, plus a per-IP daily quota in D1).
+ * Workers Rate Limiting binding). The gateway has NO database (owner decision
+ * 2026-10-21): no D1 binding, no daily quota, no SQL.
  *
  * Hardening (review round 2, 2026-10-15) — the abuse limit is FAIL-CLOSED:
  *
@@ -32,9 +33,6 @@
  *     falsificable). `X-Forwarded-For` ya no se lee: rotarla renovaba el cubo.
  *     Si falta `CF-Connecting-IP`, todas esas peticiones comparten un unico
  *     cubo conservador (`anon:no-ip`).
- *   - La cuota diaria en D1 sigue aplicandose SOLO a rutas no estaticas (ver
- *     comentario en el paso 6): escribir en D1 en cada peticion de datos
- *     abiertos quemaria el cupo compartido del free tier.
  */
 
 export interface Env {
@@ -43,17 +41,7 @@ export interface Env {
    * Obligatorio: si falta, el gateway responde 503 (fail-closed).
    */
   RL_FREE_BURST?: RateLimit
-  /**
-   * D1: cuota diaria anonima por IP (tabla free_quota, no keys).
-   * Obligatorio en las rutas no estaticas; si falta, 503 (fail-closed).
-   */
-  DB?: D1Database
   ORIGIN_URL?: string
-  /**
-   * Nombre historico de la variable; hoy es el cupo diario ANONIMO por IP.
-   * El nombre se conserva porque ya esta desplegado en el Worker.
-   */
-  FREE_DAILY_LIMIT?: string
 }
 
 const CORS_HEADERS = {
@@ -77,16 +65,6 @@ function jsonResponse(
       ...headers,
     },
   })
-}
-
-async function sha256Hex(text: string): Promise<string> {
-  const buf = await crypto.subtle.digest(
-    'SHA-256',
-    new TextEncoder().encode(text),
-  )
-  return [...new Uint8Array(buf)]
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('')
 }
 
 /**
@@ -130,31 +108,6 @@ async function checkBurst(
 }
 
 /** 503 cuando no se puede garantizar el limite (mismo cuerpo en ambos casos). */
-// The daily quota table is created by the Worker itself through its D1 binding
-// (CI tokens have no D1 write permission). One idempotent DDL per isolate.
-const QUOTA_TABLE_DDL =
-  'CREATE TABLE IF NOT EXISTS free_quota (ip_key TEXT NOT NULL, day TEXT NOT NULL, ' +
-  'n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (ip_key, day))'
-let quotaTableReady: Promise<void> | null = null
-function ensureQuotaTable(db: D1Database): Promise<void> {
-  if (!quotaTableReady) {
-    quotaTableReady = db
-      .prepare(QUOTA_TABLE_DDL)
-      .run()
-      .then(() => undefined)
-      .catch((err: unknown) => {
-        quotaTableReady = null
-        throw err
-      })
-  }
-  return quotaTableReady
-}
-
-/** Test hook: forget the per-isolate DDL cache. */
-export function __resetQuotaTableCacheForTests(): void {
-  quotaTableReady = null
-}
-
 function limiterUnavailable(retryAfter: string): Response {
   return jsonResponse({ error: 'rate limiter unavailable' }, 503, {
     'Retry-After': retryAfter,
@@ -163,7 +116,7 @@ function limiterUnavailable(retryAfter: string): Response {
 
 /**
  * Datos estaticos cacheables: JSON de /api (excepto rutas dinamicas) y los
- * archivos del sitio. Se sirven desde Cache API y no tocan D1.
+ * archivos del sitio. Se sirven desde Cache API.
  */
 function isStaticCacheable(path: string, method: string): boolean {
   if (method !== 'GET' && method !== 'HEAD') return false
@@ -192,7 +145,7 @@ export default {
     env: Env,
     ctx?: { waitUntil(p: Promise<unknown>): void },
   ): Promise<Response> {
-    // 1. Preflight: no cuenta para el limite ni toca origen/cache/D1.
+    // 1. Preflight: no cuenta para el limite ni toca origen/cache.
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: CORS_HEADERS })
     }
@@ -203,16 +156,12 @@ export default {
       /\/$/,
       '',
     )
-    const dailyLimit = parseInt(env.FREE_DAILY_LIMIT || '100', 10)
 
     // 2. Rafaga anonima, FAIL-CLOSED, en TODAS las rutas y ANTES de la cache.
     //
     //    Se aplica aqui arriba a proposito: cubre el mapa de rutas, el 404 de
     //    /api/ai/infer, las OPEN_ROUTES (aunque vengan de Cache API) y el
-    //    proxy. Antes, las rutas estaticas solo tenian esta rafaga y ningun
-    //    tope diario, de modo que una IP podia pasar de 100 peticiones/dia
-    //    (30/min) sin que nada lo impidiera. No se anade una escritura D1 por
-    //    peticion para arreglarlo (ver paso 6).
+    //    proxy. Es el unico limite anonimo: el gateway no tiene base de datos.
     const identity = identityKey(request)
     const verdict = await checkBurst(env.RL_FREE_BURST, identity)
     if (verdict === 'unavailable') {
@@ -241,8 +190,7 @@ export default {
           'none: this API is open and no credential is required or read',
         rateLimits: {
           burst: '30 requests/minute per IP',
-          daily: `${dailyLimit} requests/day per IP (non-static routes)`,
-        },
+          },
         routes: OPEN_ROUTES,
         documentation: `${originUrl}/llms-full.txt`,
         source: 'https://github.com/iberi22/gastronomic-open-standard-GOS',
@@ -276,63 +224,9 @@ export default {
       )
     }
 
-    // 6. Cuota diaria anonima en D1, SOLO en rutas no estaticas y FAIL-CLOSED.
-    //
-    //    Por que los datos abiertos estaticos NO se cuentan en D1 (decision del
-    //    orquestador, 2026-10-15): el free tier concede 100.000 escrituras
-    //    D1/dia COMPARTIDAS entre todos los proyectos SWAL. Un UPSERT por
-    //    peticion de datos abiertos (catalog, all.json, graph-data, llms...)
-    //    quemaria ese cupo en horas. Esas rutas ya estan protegidas por la
-    //    rafaga del paso 2, que se aplica antes de servir de cache y no gasta
-    //    escrituras D1. La cuota diaria se conserva donde ya existia: rutas no
-    //    estaticas (/api/entities, /api/agent, /api/v1 no cacheable, etc.).
-    //    Si D1 falta o lanza, no se puede garantizar la cuota => 503.
+    // 6. Proxy Static Data
+    // Solo las rutas estaticas cacheables pasan por Cache API.
     const staticRoute = isStaticCacheable(path, request.method)
-    let counted = false
-    let currentCount = 0
-
-    if (!staticRoute) {
-      if (!env.DB) {
-        console.error('D1 DB binding missing: failing closed (503)')
-        return limiterUnavailable('60')
-      }
-      const day = new Date().toISOString().slice(0, 10)
-      try {
-        await ensureQuotaTable(env.DB)
-        const ipKey = `ip:${(await sha256Hex(identity)).slice(0, 32)}`
-        // Sin fila RETURNING = cuota agotada (el WHERE del DO UPDATE falla).
-        const row = await env.DB.prepare(
-          'INSERT INTO free_quota (ip_key, day, n) VALUES (?, ?, 1) ' +
-            'ON CONFLICT(ip_key, day) DO UPDATE SET n = n + 1 WHERE n < ? ' +
-            'RETURNING n',
-        )
-          .bind(ipKey, day, dailyLimit)
-          .first<{ n: number }>()
-        if (!row) {
-          return jsonResponse(
-            {
-              error: `Rate limit exceeded: ${dailyLimit} req/day per IP.`,
-              limit: dailyLimit,
-              remaining: 0,
-            },
-            429,
-            {
-              'Retry-After': '86400',
-              'X-RateLimit-Limit': String(dailyLimit),
-              'X-RateLimit-Remaining': '0',
-            },
-          )
-        }
-        counted = true
-        currentCount = row.n
-      } catch (dbErr) {
-        // Fail-closed: sin D1 la cuota diaria no esta garantizada.
-        console.error('D1 free quota error:', dbErr)
-        return limiterUnavailable('60')
-      }
-    }
-
-    // 7. Proxy Static Data
     // `key` es una forma heredada de credencial que ya no autentica nada; no se
     // reenvia al origen para que no acabe en sus logs.
     const fwd = new URLSearchParams(url.search)
@@ -380,13 +274,6 @@ export default {
 
       const resHeaders = new Headers(originRes.headers)
       for (const [k, v] of Object.entries(CORS_HEADERS)) resHeaders.set(k, v)
-      resHeaders.set('X-RateLimit-Limit', String(dailyLimit))
-      if (counted) {
-        resHeaders.set(
-          'X-RateLimit-Remaining',
-          String(Math.max(0, dailyLimit - currentCount)),
-        )
-      }
 
       return new Response(originRes.body, {
         status: originRes.status,
