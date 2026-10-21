@@ -59,7 +59,7 @@ jobs:
       - name: Generate Knowledge Graph Artifact
         run: node scripts/generate-graph.js
         working-directory: ./site
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Install PyYAML for content audit

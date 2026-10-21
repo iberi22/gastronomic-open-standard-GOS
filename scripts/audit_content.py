@@ -485,9 +485,9 @@ def generate_markdown(audit_data: dict, generated_at: str = None) -> str:
     lines.append("")
     lines.append("## 🥕 Ingredientes (`site/src/content/ingredients/`)")
     lines.append("")
-    lines.append(f"- **Curados (`ingredients/<categoria>/`):** {ing['curated']}")
-    lines.append(f"- **Pendientes (`ingredients/pending_review/`):** {ing['pending_review']}")
-    lines.append(f"- **Archivados (`ingredients/_archive/`):** {ing['archive']}")
+    lines.append(f"- **Curados (`{CANONICAL_INGREDIENTS_REL}/<categoria>/`):** {ing['curated']}")
+    lines.append(f"- **Pendientes (`{CANONICAL_INGREDIENTS_REL}/pending_review/`):** {ing['pending_review']}")
+    lines.append(f"- **Archivados (`{CANONICAL_INGREDIENTS_REL}/_archive/`):** {ing['archive']}")
     lines.append(f"- **Archivos con nombre no latino (CJK/Otros):** {ing['non_latin_name']}")
     lines.append(f"- **Archivos con valores data 'Unknown':** {ing['data_values_unknown']}")
     lines.append(f"- **Cobertura de Aliases:** {ing['aliases_coverage']['count']} ({ing['aliases_coverage']['percentage']}%)")
@@ -596,6 +596,46 @@ def run_self_test() -> int:
             f"source counts wrong: {counts}",
         )
 
+    # main() must audit the canonical ingredients tree (site/src/content/ingredients), never the
+    # legacy root ingredients/ mirror. Fixture sizes differ (1 legacy vs 3 canonical) so the count tells them apart.
+    import contextlib
+    import io
+    import os
+
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        (t / "ingredients" / "legacy").mkdir(parents=True)
+        (t / "ingredients" / "legacy" / "x.md").write_text("---\nname: X\n---\n", encoding="utf-8")
+        canon = t / "site" / "src" / "content" / "ingredients" / "frutas"
+        canon.mkdir(parents=True)
+        for name in ("a", "b", "c"):
+            (canon / f"{name}.md").write_text(f"---\nname: {name}\n---\n", encoding="utf-8")
+        out_json = t / "out.json"
+        out_md = t / "out.md"
+        prev_cwd, prev_argv = os.getcwd(), sys.argv
+        buf = io.StringIO()
+        try:
+            os.chdir(t)
+            sys.argv = ["audit_content.py", "--quiet", "--report", "--json", str(out_json), "--md", str(out_md)]
+            with contextlib.redirect_stdout(buf):
+                try:
+                    main()
+                except SystemExit as e:
+                    expect(e.code == 0, f"main() exit code was {e.code}, expected 0")
+        finally:
+            os.chdir(prev_cwd)
+            sys.argv = prev_argv
+
+        if out_json.exists():
+            ing_total = json.loads(out_json.read_text(encoding="utf-8"))["ingredients"]["total"]
+            expect(ing_total == 3, f"main() counted {ing_total} ingredients, expected 3 from site/src/content/ingredients")
+        else:
+            failures.append("main() did not write the JSON report")
+        expect(f"ingredientes ({CANONICAL_INGREDIENTS_REL}, 3)" in buf.getvalue(), f"--report title does not show the canonical ingredients dir: {buf.getvalue()!r}")
+        md_text = out_md.read_text(encoding="utf-8") if out_md.exists() else ""
+        expect(f"`{CANONICAL_INGREDIENTS_REL}/<categoria>/`" in md_text, "markdown curated label does not use the canonical path")
+        expect(f"`{CANONICAL_INGREDIENTS_REL}/pending_review/`" in md_text, "markdown pending label does not use the canonical path")
+
     for msg in failures:
         print(f"FAIL: {msg}", file=sys.stderr)
     if failures:
@@ -662,7 +702,7 @@ def main():
         )
         ing_records = collect_frontmatters(ingredients_dir)
         print_fill_report(
-            f"ingredientes (site/src/content/ingredients, {ingredients_data['total']})",
+            f"ingredientes ({ingredients_dir}, {ingredients_data['total']})",
             compute_fill_rates(ing_records, INGREDIENT_FILL_FIELDS),
         )
         src = count_sources(ing_records)
