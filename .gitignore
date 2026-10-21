@@ -108,9 +108,5 @@ tasks.json
 *.profraw
 # <<< GITCORE PUBLIC REPO HARDENING <<<
 
-# Generated content / public API build artifacts
-site/src/content/dishes/
-site/src/content/ingredients/
-site/public/api/
 site/public/llms*.txt
 site/public/sitemap.xml
