@@ -8,5 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Cubio"
+  "body_md": "# Cubio",
+  "aliases": {
+    "es": [
+      "Cubios (Tropaeolum tuberosum)",
+      "1 cubio"
+    ]
+  }
 }

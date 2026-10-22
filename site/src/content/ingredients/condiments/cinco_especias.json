@@ -13,5 +13,8 @@
       "五香粉"
     ]
   },
-  "body_md": "# Cinco Especias Chinas"
+  "body_md": "# Cinco Especias Chinas",
+  "substitutes": [
+    "Canela"
+  ]
 }

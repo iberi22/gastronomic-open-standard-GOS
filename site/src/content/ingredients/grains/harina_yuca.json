@@ -8,5 +8,8 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Harina de Yuca"
+  "body_md": "# Harina de Yuca",
+  "substitutes": [
+    "Harina de maíz"
+  ]
 }

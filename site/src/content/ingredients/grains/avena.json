@@ -8,5 +8,10 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Avena"
+  "body_md": "# Avena",
+  "aliases": {
+    "es": [
+      "Avena en hojuelas"
+    ]
+  }
 }

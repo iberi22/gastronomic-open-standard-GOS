@@ -8,5 +8,11 @@
     }
   },
   "nutrition_per_100g": {},
-  "body_md": "# Cecina"
+  "body_md": "# Cecina",
+  "aliases": {
+    "es": [
+      "Cecina (cerdo ahumado)",
+      "Cecina de res"
+    ]
+  }
 }

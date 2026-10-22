@@ -13,5 +13,8 @@
       "白胡椒粉"
     ]
   },
-  "body_md": "# Pimienta Blanca"
+  "body_md": "# Pimienta Blanca",
+  "substitutes": [
+    "Pimienta Negra"
+  ]
 }
