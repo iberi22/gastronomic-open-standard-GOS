@@ -64,12 +64,21 @@ def studies(text):
             "puede leer el frontmatter y el gate no verifica nada"
         ) from exc
 
-    m = re.match(r"---\s*\n(.*?)\n---\s*\n", text, re.S)
-    if not m:
-        return []
-    try:
-        data = yaml.safe_load(m.group(1)) or {}
-    except Exception:
+    if text.lstrip().startswith("{"):
+        # Las colecciones se guardan como JSON desde #408 (sin frontmatter).
+        try:
+            data = json.loads(text)
+        except Exception:
+            return []
+    else:
+        m = re.match(r"---\s*\n(.*?)\n---\s*\n", text, re.S)
+        if not m:
+            return []
+        try:
+            data = yaml.safe_load(m.group(1)) or {}
+        except Exception:
+            return []
+    if not isinstance(data, dict):
         return []
     out = []
     for entrada in data.get("health_registry") or []:
@@ -161,7 +170,7 @@ ESTADOS_DE_FALLO = ("MISMATCH", "NORESUELVE", "SIN_TITULO")
 def verificar(base: Path, crossref_fn=crossref, pausa: float = 0.15) -> list:
     """Recorre base/ (dir con .md de sustancias) y devuelve una fila por DOI."""
     filas = []
-    for md in sorted(base.glob("*.md")):
+    for md in sorted([*base.glob("*.md"), *base.glob("*.json")]):
         texto = md.read_text(encoding="utf-8", errors="replace")
         try:
             nombre = str(md.relative_to(SITE))
@@ -351,6 +360,17 @@ def fallos_exit_codes() -> list:
                 f"{rc_de(aislado)}: SIN_TITULO no rompe el gate por si solo"
             )
 
+        # Formato JSON (el real desde #408): debe leerse igual que el .md.
+        solo_json = base / "solo-json"
+        solo_json.mkdir()
+        (solo_json / "ok.json").write_text(json.dumps({"name": "Q", "health_registry": [
+            {"studies": [{"doi": "10.3390/molecules21050623",
+                          "title": "Quercetin and allergic diseases", "year": 2016}]}]}),
+            encoding="utf-8")
+        filas_json = verificar(solo_json, crossref_fn=CROSSREF_STUB.get, pausa=0)
+        if estado_de(filas_json).get("OK", 0) != 1:
+            malos.append(f"una ficha .json no se leyo: {dict(estado_de(filas_json))}")
+
         (base / "mismatch.md").unlink()
         (base / "sin-titulo.md").unlink()
         limpio = verificar(base, crossref_fn=CROSSREF_STUB.get, pausa=0)
@@ -388,7 +408,8 @@ def primer_doi_real() -> tuple[str | None, str]:
     que tampoco puede dejar una en el repo.
     """
     base = CONTENT / "substances"
-    candidatos = [base / "quercetina.md"] + sorted(base.glob("*.md"))
+    candidatos = ([base / "quercetina.json", base / "quercetina.md"]
+                  + sorted(base.glob("*.json")) + sorted(base.glob("*.md")))
     for md in candidatos:
         if not md.exists():
             continue
@@ -454,6 +475,11 @@ def main() -> int:
         return negative_control()
 
     filas = verificar(CONTENT / "substances")
+    if not filas:
+        # Un gate que no verifica nada no puede salir verde (regresion: las
+        # fichas pasaron a JSON y el gate dio total=0 sin avisar).
+        print("verify-dois: 0 DOI encontrados en substances/: el gate no verifica nada")
+        return 1
 
     if "--json" in sys.argv:
         print(json.dumps(filas, ensure_ascii=False, indent=2))
