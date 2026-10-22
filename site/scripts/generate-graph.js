@@ -728,10 +728,7 @@ export function generateGraph() {
         if (entry.name === PENDING_REVIEW_DIRNAME || entry.name === '_archive')
           continue
         scanAliases(fullPath)
-      } else if (
-        entry.isFile() &&
-        isDataFile(entry.name)
-      ) {
+      } else if (entry.isFile() && isDataFile(entry.name)) {
         try {
           const parsed = readFm(fullPath)
           const fm = parsed.data
@@ -807,7 +804,7 @@ export function generateGraph() {
           if (e.name === PENDING_REVIEW_DIRNAME) {
             for (const f of fs.readdirSync(p)) {
               if (f.endsWith('.md') || f.endsWith('.json'))
-              pendingFilesSkipped.add(f.replace(/\.json$/, '.md')) // basename: dedupe entre copias
+                pendingFilesSkipped.add(f.replace(/\.json$/, '.md')) // basename: dedupe entre copias
             }
             continue
           }
@@ -1280,10 +1277,7 @@ export function generateGraph() {
           continue
         }
         scanIngredients(fullPath)
-      } else if (
-        entry.isFile() &&
-        isDataFile(entry.name)
-      ) {
+      } else if (entry.isFile() && isDataFile(entry.name)) {
         try {
           const parsed = readFm(fullPath)
           const fm = parsed.data

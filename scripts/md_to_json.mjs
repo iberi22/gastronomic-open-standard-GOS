@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import assert from 'node:assert/strict'
 // Deterministic Markdown+frontmatter -> JSON converter for the GOS data
 // collections (repo-as-database). See docs/DATA-STORAGE.md.
 //   node scripts/md_to_json.mjs          convert every .md and delete it
@@ -7,7 +8,6 @@ import fs from 'node:fs'
 import { createRequire } from 'node:module'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import assert from 'node:assert/strict'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const require = createRequire(path.join(root, 'site/package.json'))
@@ -65,9 +65,7 @@ function convert() {
 }
 
 async function check() {
-  const { z } = await import(
-    pathToFileURL(require.resolve('astro/zod')).href
-  )
+  const { z } = await import(pathToFileURL(require.resolve('astro/zod')).href)
   const required = {
     conditions: { name: z.string() },
     diets: { name: z.string() },
