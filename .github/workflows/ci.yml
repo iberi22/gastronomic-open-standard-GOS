@@ -134,7 +134,7 @@ jobs:
           test "$status" -eq 0
           # Un DOI publicado debe seguir saliendo OK: si esto falta, el gate
           # rompe TODO y deja de distinguir un DOI bueno de uno falso.
-          grep -E '^OK[[:space:]].*quercetina\.md' /tmp/dois.txt
+          grep -E '^OK[[:space:]].*quercetina\.(md|json)' /tmp/dois.txt
       - name: Control negativo end-to-end (DOI falseado -> rc 1)
         working-directory: site
         run: python3 scripts/verify-dois.py --negative-control
