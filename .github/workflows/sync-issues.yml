@@ -107,14 +107,16 @@ jobs:
         if: steps.check_rust.outputs.rust_available == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_ACTION: ${{ github.event.inputs.action }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           # Determine action based on trigger
           ACTION="sync"
-          if [[ "${{ github.event.inputs.action }}" == "push-only" ]]; then
+          if [[ "${INPUT_ACTION}" == "push-only" ]]; then
             ACTION="push"
-          elif [[ "${{ github.event.inputs.action }}" == "pull-only" ]]; then
+          elif [[ "${INPUT_ACTION}" == "pull-only" ]]; then
             ACTION="pull"
-          elif [[ "${{ github.event_name }}" == "issues" ]]; then
+          elif [[ "${EVENT_NAME}" == "issues" ]]; then
             ACTION="pull"  # Only clean when issue closed
           fi
 
