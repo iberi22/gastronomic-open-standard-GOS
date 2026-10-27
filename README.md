@@ -1,5 +1,6 @@
 # GOS — Gastronomic Open Standard
 
+[![CI](https://github.com/iberi22/gastronomic-open-standard-GOS/actions/workflows/ci.yml/badge.svg)](https://github.com/iberi22/gastronomic-open-standard-GOS/actions/workflows/ci.yml)
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)](./LICENSE)
 
 An open knowledge graph of world gastronomy: **recipes ↔ ingredients ↔ vitamins ↔
@@ -42,6 +43,10 @@ Build + deploy (needs `CLOUDFLARE_API_TOKEN` in env or `~/.hermes/.env`):
 Quality gates: `pnpm run lint` (Biome code + markdownlint content + manuallint),
 `astro check` (0 err/0 warn), `vitest run` (34 tests), Playwright E2E
 (`site/tests/e2e`, incl. production coverage 35/35).
+
+## Security
+
+Please see our [Security Policy](./SECURITY.md) for information on supported versions and how to report vulnerabilities privately.
 
 ## Free API (no key, fair use)
 
