@@ -20,7 +20,7 @@
     "e2e:ta:live": "E2E_TELEMETRY_DISABLED=1 E2E_LIVE_URL=https://gos.swal.network e2e run"
   },
   "dependencies": {
-    "@swal/ui": "github:iberi22/swal-ui",
+    "@swal/ui": "^0.2.0",
     "@xenova/transformers": "^2.17.2",
     "astro": "^7.3.8",
     "diff": "^9.0.0",
