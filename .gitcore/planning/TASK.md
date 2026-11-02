@@ -1,8 +1,8 @@
 # TASK: GOS — gaps del informe 2026-11-02
 
 **Last updated:** 2026-11-02
-**Branch:** `develop`. El fetch de `origin` antes de editar midió `5` atrás y `0` adelante en `e956abf2`. Este archivo entra en el commit local de honestidad. La integración con `origin/main` todavía no está hecha.
-**Working tree:** el commit de este archivo incluye el pase de honestidad, `skills/` y esta lista. No hay pull request de este pase.
+**Branch:** `develop` está 0 commits detrás de `origin/main`. El commit de honestidad sigue alcanzable desde HEAD. No hay pull request de este pase.
+**Working tree:** el pase de honestidad, `skills/` y esta lista ya están en commits locales. No hay pull request de este pase.
 **Gate:** `python3 skills/gos-audit-gate/scripts/audit_gate.py` → `CORRECTIONS_HOLD`, salida 0
 **Índice de skills:** `skills/README.md`
 
@@ -37,7 +37,7 @@ Cada ID tiene una sola palabra terminal.
 | F13 | blocked | Cola sin mezclar. `skills/gos-review-queue`. No mezclar #414, #381, #380 ni Dependabot. |
 | F14 | confirmed | 69 stems de `dishes/china/` no están en el sitio. Mismo camino que F2, de a un plato. |
 | P1 | done | Commit local del pase de honestidad, de `skills/` y de esta lista. Sin push y sin pull request. |
-| P2 | blocked | Sigue pendiente integrar `origin/main` en `develop` sin force-push y sin pull request. |
+| P2 | done | `develop` incorpora `origin/main`. Queda 0 atrás. Sin force-push y sin pull request. |
 | P3 | blocked | 510 stubs de `pending_review` no se promueven sin fuente real. |
 | P4 | needs-owner | Los 1.324 JSON de `exercises/` siguen en el árbol, en MIT, sin imágenes. No se relicencian ni se borra el directorio. |
 | P5 | deferred | `docs/CONTENT_EXPANSION_STRATEGY.md` no se ejecuta en este pase. `starsystem/` no es el roadmap. |
