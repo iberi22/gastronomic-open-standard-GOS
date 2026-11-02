@@ -5,9 +5,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     # Deferred majors (2026-10-13 integration PR chore/deps-2026-10-13):
@@ -27,6 +27,9 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
       security-dependencies:
@@ -36,9 +39,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/packages/gos-client"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     # Deferred: typescript major (see "/" entry reason, 2026-10-13).
@@ -51,6 +54,9 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
       security-dependencies:
@@ -60,9 +66,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/packages/health-contract"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     # Deferred: typescript major (see "/" entry reason, 2026-10-13).
@@ -75,6 +81,9 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
       security-dependencies:
@@ -84,9 +93,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/site"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     # Deferred majors (see "/" entry reason, 2026-10-13): typescript 7
@@ -102,6 +111,9 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
       security-dependencies:
@@ -111,9 +123,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/worker"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     # Deferred: typescript 7 turns the explicit-file `tsc` typecheck
@@ -127,6 +139,9 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
       security-dependencies:
@@ -136,9 +151,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     # One grouped PR per ecosystem instead of one per bump.
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
     groups:
@@ -147,8 +162,31 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
       # Security updates keep their own single PR so an
       # advisory patch is never buried in a monthly batch.
+      security-dependencies:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
       security-dependencies:
         applies-to: security-updates
         patterns:
