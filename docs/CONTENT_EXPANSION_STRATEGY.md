@@ -1,8 +1,22 @@
 # GOS Content Expansion Strategy — i18n + research por país + pipeline científico
 
 > Sesión expansión 2026-09-07/08 (BELA). Idioma del doc: español (decisión de usuario).
-> Estado: ESTRATEGIA VIVA — este archivo manda sobre TRANSLATION_GUIDE.md (zh→es, parcial)
-> y RECIPE_COMPLETENESS_REPORT.md (superseded por scoring 2026-09-07: 273/405 12/12).
+> Estado: ESTRATEGIA VIVA — este archivo manda sobre TRANSLATION_GUIDE.md (zh→es, parcial).
+> El scoring 273/405 del 2026-09-07 no es el corpus medido. Las cifras vivas salen de `docs/corpus-stats.py`.
+
+## 0. Decisiones vigentes (2026-11-02)
+
+Estas decisiones mandan sobre las secciones de 2026-09 cuando chocan.
+
+1. **Los ejercicios se quedan.** `exercises/` son 10 JSON con 1324 registros de metadatos MIT. Las imágenes no están y no se vendorizan.
+2. **No hay oleada de países en este paso.** Crear ≥15 platos por idioma sin URL real incumpliría la sección 1. Esas oleadas siguen bloqueadas.
+3. **China no se publica en bloque.** `site/scripts/copy-content.js` borra `site/src/content/dishes` y copia `dishes/`, y salta cualquier directorio llamado `china`. Un plato chino revisado solo entra si ese salto se abre para ese único archivo en el mismo cambio. `skills/gos-publish-reviewed-dish` es el procedimiento.
+4. **La nutrición no se rellena de memoria.** Una fuente cuenta con `org`, `id` y `url` copiados del publicador. Los 510 `pending_review` no se promueven sin eso.
+5. **La cola de GitHub no se mezcla** desde el roadmap. #414, #381, #380 y Dependabot siguen fuera de este trabajo.
+6. **No se borra documentación histórica** para “limpiar” la sección 8. Un archivo se archiva solo cuando se demuestra que nada lo lee.
+7. **No se instala el cron de issues.** `site/scripts/schedule-jules-research.mjs` no se enciende: abriría issues en GitHub sin un pedido explícito.
+8. **`starsystem/` no es el roadmap.** Este archivo lo es.
+9. **`SRC.md` describe el árbol medido** y el protocolo sigue en 3.8.0. REQ-001 permanece en `draft`. REQ-003 en adelante no se marcan.
 
 ## 1. Enfoque (decisiones BELA, no supuestas)
 

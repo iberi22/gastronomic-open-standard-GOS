@@ -17,7 +17,7 @@ El repositorio cumple GitCore 3.8.0: lectura de agentes, planning local, SRC y S
 - [x] `.git-core-protocol-version` = 3.8.0
 - [x] `AGENTS.md` define orden de lectura
 - [x] `.gitcore/planning/PLANNING.md` y `TASK.md` existen
-- [ ] `SRC.md` completo (secciones obligatorias)
+- [x] `SRC.md` completo (secciones obligatorias)
 - [x] `docs/SRS/{index,REQUIREMENTS,ARCHITECTURE}.md` existen
 
 ---
@@ -33,9 +33,9 @@ El repositorio cumple GitCore 3.8.0: lectura de agentes, planning local, SRC y S
 SRC.md describe árbol real, build/test, y enlaces a SRS/.gitcore.
 
 ### Criterios de aceptación
-- [ ] Tree refleja módulos reales
-- [ ] Comandos build/test documentados
-- [ ] Cross-links a docs/SRS y AGENTS.md
+- [x] Tree refleja módulos reales
+- [x] Comandos build/test documentados
+- [x] Cross-links a docs/SRS y AGENTS.md
 
 ---
 

@@ -32,6 +32,7 @@ Esta skill es la única salida del bloqueo F2 y del espejo raíz. Publica un pla
 ## Pitfalls
 
 - El sitio y la raíz no tienen los mismos stems. La diferencia no se cierra moviendo los 118 archivos.
+- `site/scripts/copy-content.js` borra `site/src/content/dishes` al generar y no copia un directorio `china`. Un archivo puesto solo en el sitio no sobrevive a `pnpm --dir site run generate`. Para que un plato chino revisado dure, el mismo cambio tiene que abrir ese salto para ese único archivo.
 - `docs/PROJECT_GOALS.md` ya dice que China no está en el sitio. Actualiza esa frase solo cuando el plato revisado esté publicado, y nombra el archivo.
 - Un README dentro de la carpeta de cocina no es un plato.
 

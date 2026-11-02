@@ -56,9 +56,9 @@ FIXED_STATUS = {
     "C1": "done", "C2": "done", "C3": "done", "C4": "done", "C5": "done",
     "C6": "done", "C7": "done", "C8": "done", "C9": "done", "P1": "done",
     "F1": "confirmed", "F14": "confirmed",
-    "F2": "blocked", "F3": "blocked", "F13": "blocked", "P3": "blocked", "P6": "blocked",
-    "P4": "needs-owner",
-    "P5": "deferred",
+    "F2": "blocked", "F3": "blocked", "F13": "blocked", "P3": "blocked", "P5": "blocked",
+    "P4": "done",
+    "P6": "done",
 }
 READING_TARGETS = (
     "skills/README.md",
@@ -162,6 +162,103 @@ def source_object_hits(record):
     return hits
 
 
+def exercise_catalogue_errors():
+    errors = []
+    root = REPO / "exercises"
+    readme = read_text(root / "README.md")
+    if readme.startswith("__UNREADABLE__") or "MIT" not in readme:
+        errors.append("exercises/README.md no longer records the MIT metadata catalogue")
+    if "NOT in here" not in readme and "no están" not in readme.lower():
+        errors.append("exercises/README.md no longer says the artwork is absent")
+    count = 0
+    json_files = list(root.glob("*.json"))
+    if len(json_files) != 10:
+        errors.append(f"exercises JSON files are {len(json_files)}, expected 10")
+    for path in json_files:
+        record = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(record, list):
+            count += len(record)
+        elif isinstance(record, dict):
+            found = False
+            for key in ("exercises", "data", "items"):
+                if isinstance(record.get(key), list):
+                    count += len(record[key])
+                    found = True
+                    break
+            if not found:
+                count += 1
+    if count != 1324:
+        errors.append(f"exercise metadata records are {count}, expected 1324")
+    return errors
+
+
+def src_document_errors(text):
+    if text.startswith("__UNREADABLE__"):
+        return [f"SRC.md unreadable: {text}"]
+    errors = []
+    required = (
+        "## 1. Overview",
+        "## 2. Directory structure",
+        "## 3. Core components",
+        "## 4. Build / run / test",
+        "## 5. Environment",
+        "## 6. SWAL integration",
+        "## 7. Cross-references",
+        "site/src/content",
+        "dishes/china",
+        "AGENTS.md",
+        "docs/SRS/",
+        ".gitcore/planning/TASK.md",
+        "3.8.0",
+        "vitest",
+        "astro check",
+        "CLOUDFLARE_API_TOKEN",
+        "copy-content.js",
+    )
+    for needle in required:
+        if needle not in text:
+            errors.append(f"SRC.md is missing {needle}")
+    for stale in ("Supabase", "GraphQL", "Docker", "POST /recipes", "111+"):
+        if stale in text:
+            errors.append(f"SRC.md still claims {stale}")
+    return errors
+
+
+def req002_errors(text, src):
+    match = re.search(r"(?ms)^## REQ-002:.*?(?=^## REQ-|\Z)", text)
+    section = match.group(0) if match else ""
+    if not section:
+        return ["REQ-002 section is missing"]
+    errors = []
+    boxes = re.findall(r"(?m)^- \[([ xX])\] (.+)$", section)
+    seen = set()
+    for mark, label in boxes:
+        if "módulos" in label:
+            kind = "tree"
+        elif "build/test" in label:
+            kind = "commands"
+        elif "Cross-links" in label:
+            kind = "links"
+        else:
+            if mark.lower() == "x":
+                errors.append(f"REQ-002 checked an unknown box: {label}")
+            continue
+        seen.add(kind)
+        if mark.lower() != "x":
+            errors.append(f"REQ-002 box is unchecked: {label}")
+            continue
+        if kind == "tree" and ("site/src/content" not in src or "dishes/" not in src):
+            errors.append("REQ-002 tree box checked but SRC.md does not name the real modules")
+        elif kind == "commands" and ("vitest" not in src or "astro check" not in src):
+            errors.append("REQ-002 command box checked but SRC.md does not document build/test")
+        elif kind == "links" and ("AGENTS.md" not in src or "docs/SRS/" not in src):
+            errors.append("REQ-002 link box checked but SRC.md does not cross-link")
+    for kind in ("tree", "commands", "links"):
+        if kind not in seen:
+            errors.append(f"REQ-002 is missing the {kind} acceptance box")
+    return errors
+
+
 def req001_errors():
     text = read_text(REPO / "docs" / "SRS" / "REQUIREMENTS.md")
     if text.startswith("__UNREADABLE__"):
@@ -187,11 +284,15 @@ def req001_errors():
         if kind is None and checked:
             errors.append(f"REQ-001 checked an unknown box: {label}")
             continue
+        if kind == "src":
+            src = read_text(REPO / "SRC.md")
+            errors.extend(src_document_errors(src))
+            if not checked:
+                errors.append("SRC.md REQ-001 box is unchecked")
+            continue
         if not checked:
             continue
-        if kind == "src":
-            errors.append("SRC.md marked complete")
-        elif kind == "protocol":
+        if kind == "protocol":
             version = read_text(REPO / ".git-core-protocol-version").strip()
             if version != "3.8.0":
                 errors.append(f"protocol box checked but version file is {version!r}")
@@ -223,9 +324,11 @@ def req001_errors():
             for name in ("index.md", "REQUIREMENTS.md", "ARCHITECTURE.md"):
                 if not (REPO / "docs" / "SRS" / name).is_file():
                     errors.append(f"SRS trio box checked but docs/SRS/{name} is missing")
-    tail = re.split(r"(?m)^## REQ-002:", text, maxsplit=1)
+    src = read_text(REPO / "SRC.md")
+    errors.extend(req002_errors(text, src))
+    tail = re.split(r"(?m)^## REQ-003:", text, maxsplit=1)
     if len(tail) == 2 and re.search(r"(?m)^- \[[xX]\]", tail[1]):
-        errors.append("REQ-002 or later has a checked acceptance box")
+        errors.append("REQ-003 or later has a checked acceptance box")
     return errors
 
 
@@ -371,6 +474,10 @@ def main():
     if "Esos archivos de ilustración no están en este repositorio." not in readme_es:
         errors.append("README.es.md license section lost the artwork absence sentence")
 
+    copy_script = read_text(REPO / "site" / "scripts" / "copy-content.js")
+    if "toLowerCase() === 'china'" not in copy_script:
+        errors.append("copy-content.js no longer skips the china directory")
+    errors.extend(exercise_catalogue_errors())
     errors.extend(nutrition_table_errors(nutri))
     errors.extend(task_status_errors(read_text(REPO / ".gitcore" / "planning" / "TASK.md")))
     errors.extend(planning_errors(read_text(REPO / ".gitcore" / "planning" / "PLANNING.md")))

@@ -39,9 +39,9 @@ Cada ID tiene una sola palabra terminal.
 | P1 | done | Commit local del pase de honestidad, de `skills/` y de esta lista. Sin push y sin pull request. |
 | P2 | done | `develop` incorpora `origin/main`. Queda 0 atrás. Sin force-push y sin pull request. |
 | P3 | blocked | 510 stubs de `pending_review` no se promueven sin fuente real. |
-| P4 | needs-owner | Los 1.324 JSON de `exercises/` siguen en el árbol, en MIT, sin imágenes. No se relicencian ni se borra el directorio. |
-| P5 | deferred | `docs/CONTENT_EXPANSION_STRATEGY.md` no se ejecuta en este pase. `starsystem/` no es el roadmap. |
-| P6 | blocked | REQ-001 marca solo las casillas que el árbol cumple. La casilla de `SRC.md` completo sigue abierta. SRS Estado sigue en `draft`. REQ-002 en adelante siguen sin marcar. |
+| P4 | done | Los ejercicios se quedan. Son 10 JSON y 1324 registros MIT, sin imágenes. No se relicencian ni se borra el directorio. |
+| P5 | blocked | El roadmap es `docs/CONTENT_EXPANSION_STRATEGY.md`. La fase 0 quedó decidida. Las oleadas de países siguen bloqueadas: hace falta fuente real, y China no se copia. `starsystem/` no es el roadmap. |
+| P6 | done | `SRC.md` tiene las secciones obligatorias del árbol medido. REQ-002 marca árbol, comandos y enlaces. SRS Estado de REQ-001 sigue en `draft`. REQ-003 en adelante siguen sin marcar. |
 
 ## Cola
 
