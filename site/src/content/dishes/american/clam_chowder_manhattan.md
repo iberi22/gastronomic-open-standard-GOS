@@ -6,7 +6,7 @@ allergens:
 title: Manhattan Clam Chowder (Sopa Roja de Almejas de Manhattan)
 region: Nueva York
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: nytimes.com
   url: 'https://cooking.nytimes.com/recipes/1016838-manhattan-clam-chowder'

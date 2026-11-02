@@ -5,7 +5,7 @@ allergens:
 title: Dhakai Kacchi Biryani
 region: Old Dhaka
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://en.wikipedia.org/wiki/Kacchi_biryani

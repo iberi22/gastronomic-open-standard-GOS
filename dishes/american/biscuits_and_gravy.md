@@ -6,7 +6,7 @@ allergens:
 title: Biscuits and Gravy (Biscuits con Salsa de Salchicha Sureña)
 region: Sur de Estados Unidos
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/southern-sausage-gravy-and-biscuits'

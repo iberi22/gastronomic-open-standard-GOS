@@ -1,15 +1,17 @@
 # Proyecto Gastronomic Open Standard
 
-Este proyecto es una iniciativa de preservación culinaria de código abierto. Nuestro objetivo es documentar, estandarizar y enriquecer científicamente recetas de todo el mundo, comenzando con un foco en América Latina y China.
+Este proyecto es una iniciativa de preservación culinaria de código abierto. Nuestro objetivo es documentar, estandarizar y enriquecer científicamente recetas, comenzando con un foco en América Latina y China.
 
 ## 🎯 Misión
 
-Crear la base de datos gastronómica más completa, libre y científicamente rigurosa del mundo.
+Crear la base de datos gastronómica libre y científicamente rigurosa de las cocinas de América Latina y de China, con el corpus actual como punto de partida y la comunidad ampliándola.
+
+El corpus publicado se centra en América Latina (Colombia: 109 platos) en 19 cocinas; China existe en el repositorio como archivos markdown bajo `dishes/china/` y aún no se publica en el sitio.
 
 ## 🧱 Pilares del Proyecto
 
-1.  **Código Abierto (MIT)**: El conocimiento culinario pertenece a la humanidad. Todas las recetas son libres para usar, modificar y distribuir.
-2.  **Rigor Científico**: No solo "cómo" cocinar, sino "por qué". Incluimos análisis de química culinaria, perfiles sensoriales estandarizados y datos nutricionales precisos.
+1.  **Código Abierto (AGPL-3.0-or-later)**: El conocimiento culinario pertenece a la humanidad. Desde el 2026-10-15 el repositorio se publica bajo la **AGPL-3.0-or-later** (GNU Affero General Public License v3.0 o posterior; ver `LICENSE` y `docs/LICENSING.md`). Todas las recetas son libres para usar, modificar y distribuir.
+2.  **Rigor Científico**: No solo "cómo" cocinar, sino "por qué": química culinaria y perfiles sensoriales cuando el registro los tiene. La nutrición publicada es parcial. En el conteo de `docs/stats.json`, 36 ingredientes publicados tienen algún valor mayor que cero y ninguno trae una tabla de varias organizaciones.
 3.  **Preservación Cultural**: Respetamos el origen, la historia y los nombres locales de cada preparación.
 4.  **Colaboración Global**: Una comunidad de desarrolladores, cocineros y científicos trabajando juntos.
 

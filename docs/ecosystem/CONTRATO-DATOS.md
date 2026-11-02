@@ -17,7 +17,7 @@ Apps: **GOS** (fuente de verdad de alimentos), **Fize** (hosteler-ia: carta, ped
 | Plato | `gos:dish/<pais>/<slug>` | GOS `dishes/<pais>/<slug>.md` |
 | Dieta | `gos:diet/<slug>` | GOS `site/src/content/diets` |
 | Alérgeno | `gos:allergen/<slug>` | tags de alérgeno de GOS (lista cerrada, a definir en schema v1) |
-| Ejercicio (con arte) | `wg:<slug>` | `@bryllim/workout-guide@1.0.0` (vendorizado, CC BY-SA 4.0) |
+| Ejercicio (con arte) | `wg:<slug>` | `@bryllim/workout-guide@1.0.0` (CC BY-SA 4.0, no vendorizado en este repositorio) |
 | Ejercicio (catálogo GOS) | `ex:<slug>` | `exercises/*.json`, 1.324 registros (MIT, vía openGym) |
 | Registro | ULID | generado en el dispositivo |
 | Sujeto | `subj_<ulid>` seudónimo local | nunca nombre, correo ni documento |
@@ -27,7 +27,8 @@ Apps: **GOS** (fuente de verdad de alimentos), **Fize** (hosteler-ia: carta, ped
 `wg:` y `ex:` son prefijos DISTINTOS y no intercambiables:
 
 - **`wg:`** — las 302 ejercicios curados de `bryllim/workout-guide` (CC BY-SA 4.0), los únicos con
-  ilustración. Es lo que la app dibuja.
+  ilustración. El paquete no está vendorizado en este repositorio: la app que dibuja `wg:` lo trae
+  por su cuenta y conserva la atribución.
 - **`ex:`** — los 1,324 registros de metadatos de `exercises/` (MIT), sin medio visual pero con
   equipo, músculos e instrucciones.
 

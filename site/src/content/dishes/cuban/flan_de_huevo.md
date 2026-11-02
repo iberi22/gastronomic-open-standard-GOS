@@ -6,7 +6,7 @@ allergens:
 title: Flan de Huevo Tradicional Cubano
 region: Cuba
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: recetascubanas.org
   url: 'https://www.recetascubanas.org/flan-de-huevo/'

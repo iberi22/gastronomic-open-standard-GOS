@@ -7,7 +7,7 @@ allergens:
 title: Thalipeeth
 region: Maharashtra
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%AA%E0%A5%80%E0%A4%A0

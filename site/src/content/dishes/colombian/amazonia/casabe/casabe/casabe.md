@@ -3,7 +3,7 @@ allergens: []
 title: Casabe (Pan de Yuca Amazónico)
 region: Amazonía
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: delamazonas.com
   url: 'https://delamazonas.com/platos-tipicos/casabe-pan-de-la-amazonia/'

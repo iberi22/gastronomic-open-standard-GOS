@@ -44,17 +44,16 @@ licence requires it:
   [`hasaneyldrm/exercises-dataset`](https://github.com/hasaneyldrm/exercises-dataset)
   (via openGym) — **MIT**, full text reproduced in `NOTICE.md`.
 - Exercise artwork from [`bryllim/workout-guide`](https://github.com/bryllim/workout-guide)
-  — **CC BY-SA 4.0**.
+  — **CC BY-SA 4.0**. The illustration files themselves are **not** vendored in this
+  repository; no artwork from that source is shipped here, so the attribution
+  applies to the source only.
 
-## Pending content work (recorded, not done here)
+## Dish front matter
 
-Recipe cards (`dishes/**/*.md`, mirrored in `site/src/content/dishes/**`) still
-carry `license: Apache-2.0` in their YAML front matter (495/495 at the time of
-writing). Relicensing a recipe corpus is a content pass with its own review, so
-those fields were deliberately left untouched by the licence change; until that
-pass runs, the front-matter value is a per-recipe legacy field, not the
-repository licence. The repository licence is this document and the root
-`LICENSE`.
+Recipe cards (`dishes/**/*.md`, mirrored in `site/src/content/dishes/**`) now
+carry `license: AGPL-3.0-or-later` in their YAML front matter as of
+2026-11-02, matching the repository licence. The dishes are repository content,
+not a separate Apache grant.
 
 ## Further Information
 

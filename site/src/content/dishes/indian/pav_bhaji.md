@@ -5,7 +5,7 @@ allergens:
 title: Pav Bhaji
 region: Mumbai
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B5_%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80

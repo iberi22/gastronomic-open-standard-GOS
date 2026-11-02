@@ -6,7 +6,7 @@ allergens:
 title: Chingri Malai Curry
 region: Khulna
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://en.wikipedia.org/wiki/Chingri_malai_curry

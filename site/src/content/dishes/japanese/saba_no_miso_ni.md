@@ -6,7 +6,7 @@ allergens:
 title: Saba no Miso-ni
 region: Nacional
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%B0%E3%81%AE%E3%81%BF%E3%81%9D%E7%85%AE

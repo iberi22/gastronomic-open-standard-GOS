@@ -57,12 +57,12 @@ See `exercises/README.md` for what was and was not taken from that dataset.
 
 ## Exercise artwork
 
-**None.** The source dataset's photographs and animated GIFs are deliberately excluded and are not
-present in this repository in any form. Their ownership is disputed — openGym's own `NOTICE.md`
-records that Gym Visual and ExerciseDB/AscendAPI make conflicting claims and that openGym cannot
-sublicense them. Artwork used by the apps comes from
+**None in this repository.** The source dataset's photographs and animated GIFs are deliberately
+excluded and are not present in this repository in any form. Their ownership is disputed — openGym's
+own `NOTICE.md` records that Gym Visual and ExerciseDB/AscendAPI make conflicting claims and that
+openGym cannot sublicense them. Artwork used by the apps comes from
 [`bryllim/workout-guide`](https://github.com/bryllim/workout-guide) under **CC BY-SA 4.0**, with the
-credit its own licence requires.
+credit its own licence requires; the illustration files behind those refs are not vendored here.
 
 ## Body diagram geometry
 

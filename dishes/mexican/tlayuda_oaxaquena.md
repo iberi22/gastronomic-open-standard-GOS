@@ -4,7 +4,7 @@ allergens:
 title: Tlayuda Oaxaqueña con Tasajo
 region: Oaxaca
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/03/10/tlayuda-oaxaquena-receta-tradicional/'

@@ -4,7 +4,7 @@ allergens:
 title: Pato no Tucupi
 region: Pará, Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: estadao.com.br
   url: 'https://paladar.estadao.com.br/noticias/comida,pato-no-tucupi-tradicao-do-cirio-de-nazare,70003461234'

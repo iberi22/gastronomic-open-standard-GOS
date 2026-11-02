@@ -6,7 +6,7 @@ allergens:
 title: Chicken Fried Steak (Filete Empanado con Salsa Blanca)
 region: Texas
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/chicken-fried-steak'

@@ -1,5 +1,17 @@
 # AGENTS.md
 
+Repo skills live in `skills/` at the repository root. The index is `skills/README.md`. Run `python3 skills/gos-audit-gate/scripts/audit_gate.py` before calling an audit finding fixed. Blocked gaps (China unpublished, nutrition without a real publisher id, the open review queue) stay blocked.
+
+## Orden de lectura
+
+Este es el orden de lectura de los agentes. Cada ruta existe en este repositorio.
+
+1. `skills/README.md`
+2. `.gitcore/planning/PLANNING.md`
+3. `.gitcore/planning/TASK.md`
+4. `docs/SRS/REQUIREMENTS.md`
+5. `skills/gos-audit-gate/SKILL.md`
+
 This repository is automated by two agents:
 
 - Gemini CLI (via GitHub Actions): edits recipes in small batches following `GEMINI.md`.
@@ -160,7 +172,7 @@ Following improved practices, created:
 
 <!-- SWAL-REGISTRY-START -->
 ## Skill Registry + Xavier Indexer (F1b)
-> Skills viven FUERA de `.gitcore` (global `~/.hermes/skills` + proyecto `.skills/`). GitCore solo referencia via `.atl/skill-registry.md` + cache `.skill-registry.cache.json` y opcional `.gitcore/skill-registry.json`.
+> Skills de este repo viven en `skills/` (índice `skills/README.md`). El registro global sigue en `~/.hermes/skills`. GitCore solo referencia via `.atl/skill-registry.md` + cache `.skill-registry.cache.json` y opcional `.gitcore/skill-registry.json`.
 > - Refresh: `~/.hermes/scripts/skill-registry-refresh.sh --cwd <proyecto>`
 > - Index: `~/.hermes/scripts/xavier-index-skills.sh --cwd <proyecto>` (Xavier tags [skill])
 > - Antes de delegar: `xavier_search(tags=[skill]) -> skill_view(paths)`

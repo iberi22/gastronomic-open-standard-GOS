@@ -4,7 +4,7 @@ allergens:
 title: Ichigo Daifuku
 region: Tokyo / Kansai
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E3%81%84%E3%81%A1%E3%81%94%E5%A4%A7%E7%A6%8F

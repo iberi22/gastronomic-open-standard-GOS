@@ -6,7 +6,7 @@ allergens:
 title: Dorayaki
 region: Tokyo
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E3%81%A9%E3%82%89%E7%84%BC%E3%81%8D

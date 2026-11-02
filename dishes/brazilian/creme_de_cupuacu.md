@@ -4,7 +4,7 @@ allergens:
 title: Creme de Cupuaçu
 region: Amazonas / Pará, Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/2311-creme-de-cupuacu.html'

@@ -5,7 +5,7 @@ allergens:
 title: Bisi Bele Bath
 region: Karnataka
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B8%E0%A5%80_%E0%A4%AC%E0%A5%87%E0%A4%B2%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%A4

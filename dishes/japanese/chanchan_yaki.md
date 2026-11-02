@@ -7,7 +7,7 @@ allergens:
 title: Chanchan Yaki
 region: Hokkaido
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E3%81%A1%E3%82%83%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%84%BC%E3%81%8D

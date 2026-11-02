@@ -6,7 +6,7 @@ allergens:
 title: Hyderabadi Haleem
 region: Telangana / Hyderabad
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://food.ndtv.com/recipe-hyderabadi-haleem-218340

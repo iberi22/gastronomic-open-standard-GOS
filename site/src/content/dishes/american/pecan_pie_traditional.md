@@ -7,7 +7,7 @@ allergens:
 title: Pecan Pie Tradicional (Tarta de Nueces Pacanas)
 region: Sur de Estados Unidos
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/southern-pecan-pie-recipe'

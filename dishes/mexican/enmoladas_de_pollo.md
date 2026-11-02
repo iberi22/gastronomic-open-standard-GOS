@@ -6,7 +6,7 @@ allergens:
 title: Enmoladas de Pollo
 region: Oaxaca
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/platos-fuertes/enmoladas-de-pollo-con-queso/2019/02/'

@@ -4,7 +4,7 @@ allergens:
 title: Pescado a la Veracruzana
 region: Veracruz
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: El Universal Menú
   url: 'https://www.eluniversal.com.mx/menu/receta-de-pescado-a-la-veracruzana-paso-a-paso/'

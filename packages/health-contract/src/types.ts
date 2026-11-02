@@ -22,7 +22,7 @@ export type DietRef = `gos:diet/${string}`
  * An exercise reference. Two vocabularies, two prefixes, one namespace:
  *
  * - `wg:` — the 302 curated exercises from `bryllim/workout-guide` (CC BY-SA 4.0), the ones with
- *   artwork. This is the form BioHuman renders.
+ *   artwork. That package is not vendored in this repository. This is the form BioHuman renders.
  * - `ex:` — the 1,324 metadata records in `exercises/` (MIT). No artwork, richer fields.
  *
  * They were briefly the same prefix, which let one slug denote two different records and made a

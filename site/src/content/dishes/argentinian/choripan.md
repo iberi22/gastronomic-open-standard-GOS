@@ -4,7 +4,7 @@ allergens:
 title: Choripán Argentino
 region: Río de la Plata / Pampeana / Nacional
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: recetasargentinas.net
   url: 'https://www.recetasargentinas.net/'

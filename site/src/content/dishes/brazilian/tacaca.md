@@ -4,7 +4,7 @@ allergens:
 title: Tacacá Amazônico
 region: Pará, Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: folha.uol.com.br
   url: 'https://www1.folha.uol.com.br/comida/2021/10/tacaca-caldo-amazonico.shtml'

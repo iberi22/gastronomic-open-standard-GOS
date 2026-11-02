@@ -5,7 +5,7 @@ allergens:
 title: Unadon (Anguila sobre Arroz)
 region: Hamamatsu
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E9%B0%BB%E9%87%8D

@@ -4,7 +4,7 @@ allergens:
 title: Poc Chuc
 region: Yucatán
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/03/24/poc-chuc-yucateco-receta/'

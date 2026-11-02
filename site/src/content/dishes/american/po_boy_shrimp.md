@@ -5,7 +5,7 @@ allergens:
 title: Shrimp Po' Boy (Bocadillo Tradicional de Nueva Orleans)
 region: Luisiana
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: eater.com
   url: 'https://www.eater.com/maps/best-po-boys-new-orleans'

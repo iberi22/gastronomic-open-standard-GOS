@@ -5,7 +5,7 @@ allergens:
 title: Cayeye
 region: Caribe
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: mycolombianrecipes.com
   url: 'https://www.mycolombianrecipes.com/es/cayeye-colombiano/'

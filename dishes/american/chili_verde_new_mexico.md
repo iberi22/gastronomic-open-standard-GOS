@@ -4,7 +4,7 @@ allergens:
 title: Chile Verde de Nuevo México (Estofado de Cerdo con Chiles Hatch)
 region: Nuevo México
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: eater.com
   url: 'https://www.eater.com/2019/9/25/20882191/hatch-green-chile-season-new-mexico'

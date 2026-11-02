@@ -1,10 +1,20 @@
 {
   "source": "site/src/content",
+  "count_basis": {
+    "conditions": "json",
+    "diets": "json",
+    "dishes": "md",
+    "ingredients": "published_json",
+    "mixtures": "json",
+    "substances": "json",
+    "tips": "md",
+    "vitamins": "json"
+  },
   "counts": {
     "conditions": 35,
     "diets": 6,
     "dishes": 495,
-    "ingredients": 552,
+    "ingredients": 144,
     "mixtures": 45,
     "substances": 30,
     "tips": 18,
@@ -14,5 +24,10 @@
     "dishes_md": 613,
     "dishes_recetas_index": 6,
     "ingredients_md": 555
+  },
+  "ingredients_json": {
+    "published": 144,
+    "pending_review": 510,
+    "nonzero_nutrition": 36
   }
 }

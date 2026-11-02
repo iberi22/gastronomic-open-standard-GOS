@@ -7,7 +7,7 @@ allergens:
 title: Chiles Rellenos de Queso
 region: Puebla
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/platos-fuertes/chiles-rellenos-de-queso-capeados/2019/08/'

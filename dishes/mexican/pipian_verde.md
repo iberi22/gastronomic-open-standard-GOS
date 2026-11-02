@@ -4,7 +4,7 @@ allergens:
 title: Pipián Verde
 region: Puebla
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/salsas-y-moles/pipian-verde-con-pollo-receta-facil/2018/10/'

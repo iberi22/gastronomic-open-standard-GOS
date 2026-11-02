@@ -4,10 +4,29 @@
 
 An open knowledge graph of world gastronomy: **recipes ↔ ingredients ↔ vitamins ↔
 bioactive substances ↔ flavors ↔ techniques ↔ health conditions ↔ diets ↔ regions**.
-The repo `.md` files ARE the database (495 dishes, 552 ingredients, 40 vitamins,
-35 conditions, 30 substances, 6 diets) as verified by `python3 docs/corpus-stats.py` in `docs/stats.json`. Built with Astro 7 + Svelte 5 + Tailwind v4.
+The repo files are the database, with measured counts: **495 dishes** in Markdown, and
+ingredients as JSON — **144 published ingredients**, **510 pending review** stubs kept
+out of the published collection, and **36 with non-zero nutrition** (published records
+whose `nutrition_per_100g` carries at least one value above zero) — verified by
+`python3 docs/corpus-stats.py` into `docs/stats.json`. Built with Astro 7 + Svelte 5 + Tailwind v4.
 
 Live: **https://gos.swal.network** (Cloudflare Pages, single canonical deploy)
+
+## Agent skills
+
+Repo skills live in [`skills/`](skills/README.md) at the repository root. That file is the index. Run the gate before calling an audit finding fixed:
+
+```bash
+python3 skills/gos-audit-gate/scripts/audit_gate.py
+```
+
+| Skill | Use |
+|---|---|
+| `gos-audit-gate` | Fail if a corrected finding regresses. Blocked gaps stay printed. |
+| `gos-nutrition-source` | Add nutrition only with a real publisher id. |
+| `gos-publish-reviewed-dish` | Publish one reviewed dish. Do not copy `dishes/china/`. |
+| `gos-license-corpus` | Keep dish front matter and third-party notices aligned. |
+| `gos-review-queue` | Re-read pull requests and issues. Do not merge them. |
 
 ## Role in the SWAL ecosystem
 
@@ -54,7 +73,8 @@ keys, no tiers, no paid access (owner decision, 2026-10-15).
 ## Vectors & embeddings (bulk download, live)
 
 Versioned snapshot over live collections (552 ingredients, 495 dishes,
-30 substances), regenerated each build by `site/scripts/export-vectors.mjs`:
+30 substances), regenerated each build by `site/scripts/export-vectors.mjs`.
+These figures are the export snapshot, not measured nutrition coverage:
 
 - Manifest: `https://gos.swal.network/api/vectors/index.json`
   (model, dim, counts, version)
@@ -91,6 +111,7 @@ AGPL-3.0-or-later (GNU Affero General Public License v3 or later) — see
 Third-party content keeps its own licence and is listed with its full notice in
 [NOTICE.md](./NOTICE.md): the exercise catalogue metadata from
 `hasaneyldrm/exercises-dataset` (MIT) and artwork from `bryllim/workout-guide`
-(CC BY-SA 4.0). [NOTICE](./NOTICE) records the licence lineage: the project
+(CC BY-SA 4.0). The illustration files are not in this repository.
+[NOTICE](./NOTICE) records the licence lineage: the project
 started from HowToCook (Unlicense / public domain), later MIT (2025-07),
 CC BY-NC 4.0 (2025-12), AGPL-3.0 (2026-08), Apache-2.0 (2026-10-02), and now AGPL-3.0-or-later.

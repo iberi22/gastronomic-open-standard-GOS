@@ -24,7 +24,7 @@ images:
 - description: Variaciones de salchipapa en Unsplash
   url: https://unsplash.com/s/photos/salchipapa
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 main_ingredients:
 - Papa frita
 - Salchicha

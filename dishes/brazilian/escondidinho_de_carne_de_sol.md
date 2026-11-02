@@ -4,7 +4,7 @@ allergens:
 title: Escondidinho de Carne de Sol
 region: Nordeste / Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: panelinha.com.br
   url: 'https://www.panelinha.com.br/receita/escondidinho-de-carne-de-sol'

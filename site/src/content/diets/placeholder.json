@@ -1,4 +1,4 @@
 {
-  "name": "placeholder",
-  "body_md": "placeholder"
+  "name": "Borrador vacío (no es una dieta)",
+  "body_md": "Este registro es un borrador vacío que se conserva únicamente para que la ruta `/diets/placeholder` no devuelva 404.\n\nNo es una dieta: no describe reglas, alimentos permitidos o excluidos, ni valores nutricionales."
 }

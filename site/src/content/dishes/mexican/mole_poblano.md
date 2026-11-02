@@ -6,7 +6,7 @@ allergens:
 title: Mole Poblano
 region: Puebla
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/05/05/receta-de-mole-poblano-tradicional/'

@@ -5,7 +5,7 @@ allergens:
 title: Sopes Tradicionales
 region: Centro de México
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/antojitos-mexicanos/sopes-tradicionales-con-frijoles/2018/09/'

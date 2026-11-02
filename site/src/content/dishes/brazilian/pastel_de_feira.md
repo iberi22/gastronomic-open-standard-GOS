@@ -5,7 +5,7 @@ allergens:
 title: Pastel de Feira
 region: São Paulo / Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: panelinha.com.br
   url: 'https://www.panelinha.com.br/receita/pastel-de-carne'

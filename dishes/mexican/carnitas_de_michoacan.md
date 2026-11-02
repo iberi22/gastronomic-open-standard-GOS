@@ -5,7 +5,7 @@ allergens:
 title: Carnitas de Michoacán
 region: Michoacán
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2020/11/17/receta-carnitas-estilo-michoacan/'

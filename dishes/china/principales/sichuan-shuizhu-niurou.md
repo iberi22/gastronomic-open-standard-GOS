@@ -4,7 +4,7 @@ allergens:
 title: Sichuan Shuizhu Niurou (Water-Boiled Beef)
 region: China
 language: zh
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Xiachufang Food Recipes
   url: 'https://www.xiachufang.com/recipe/1000187/'

@@ -7,7 +7,7 @@ allergens:
 title: Milanesa a la Napolitana
 region: Buenos Aires / Pampeana
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: recetasargentinas.net
   url: 'https://www.recetasargentinas.net/'

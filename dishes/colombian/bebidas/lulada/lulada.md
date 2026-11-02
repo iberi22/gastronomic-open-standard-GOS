@@ -4,7 +4,7 @@ allergens:
 title: Lulada
 region: Pacífica
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: elgourmet.com
   url: 'https://elgourmet.com/recetas/lulada/'

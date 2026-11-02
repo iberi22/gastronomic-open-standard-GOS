@@ -6,7 +6,7 @@ allergens:
 title: Pudim de Leite Condensado
 region: Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/988-pudim-de-leite-condensado.html'

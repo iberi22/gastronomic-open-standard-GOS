@@ -1,0 +1,7 @@
+{
+  "note": "REQ-001 names these two files. They record the honesty phase and the terminal status of each gap. The rest of the internal planning tree stays unpublished.",
+  "allow": [
+    ".gitcore/planning/PLANNING.md",
+    ".gitcore/planning/TASK.md"
+  ]
+}

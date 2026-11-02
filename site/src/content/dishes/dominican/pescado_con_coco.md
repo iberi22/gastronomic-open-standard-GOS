@@ -5,7 +5,7 @@ allergens:
 title: Pescado con Coco Estilo Samaná
 region: República Dominicana
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: cocinadominicana.com
   url: 'https://www.cocinadominicana.com/pescado-con-coco-receta/'

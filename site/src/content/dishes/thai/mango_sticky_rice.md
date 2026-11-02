@@ -5,7 +5,7 @@ allergens:
 title: Khao Niew Mamuang (Mango Sticky Rice)
 region: Bangkok
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

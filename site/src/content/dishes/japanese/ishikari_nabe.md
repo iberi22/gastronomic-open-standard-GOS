@@ -7,7 +7,7 @@ allergens:
 title: Ishikari Nabe
 region: Hokkaido
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E7%9F%B3%E2%80%93%E7%8B%A9%E9%80%85

@@ -63,8 +63,11 @@ site/public/graph-data.json
 # y, si ya se publicó, purgar el historial.
 # ─────────────────────────────────────────────────────────────────────────────
 
-# Planificación y estado de sesión (interno)
-.gitcore/planning/
+# Planificación y estado de sesión (interno).
+# REQ-001 nombra estos dos archivos; el resto de la carpeta sigue fuera del repo.
+.gitcore/planning/*
+!.gitcore/planning/PLANNING.md
+!.gitcore/planning/TASK.md
 .gitcore/chronicles/
 .gitcore/waves/
 .gitcore/sdd/
@@ -92,10 +95,13 @@ site/public/graph-data.json
 .xavier-backups/
 .skill-registry.cache.json
 
-# Planificación suelta en la raíz o en docs/
+# Planificación suelta en la raíz o en docs/.
+# Los dos archivos de .gitcore/planning/ que nombra REQ-001 sí se versionan.
 PLANNING.md
 TASK.md
 tasks.json
+!.gitcore/planning/PLANNING.md
+!.gitcore/planning/TASK.md
 
 # Configuración local con rutas absolutas
 .mcp.json

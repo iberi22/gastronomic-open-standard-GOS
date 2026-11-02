@@ -4,10 +4,29 @@
 
 Grafo de conocimiento abierto de la gastronomía mundial: **recetas ↔ ingredientes ↔
 vitaminas ↔ sustancias bioactivas ↔ sabores ↔ técnicas ↔ afecciones ↔ dietas ↔ regiones**.
-Los `.md` del repo SON la base de datos (495 platos, 552 ingredientes, 40 vitaminas,
-35 afecciones, 30 sustancias, 6 dietas) según lo verificado por `python3 docs/corpus-stats.py` en `docs/stats.json`. Astro 7 + Svelte 5 + Tailwind v4.
+Los archivos del repo son la base de datos, con cifras medidas: **495 platos** en Markdown y
+los ingredientes en JSON — **144 ingredientes publicados**, **510 pendientes de revisión**
+fuera de la colección publicada, y **36 con nutrición no nula** (registros publicados cuyo
+`nutrition_per_100g` tiene al menos un valor mayor que cero) — verificado por
+`python3 docs/corpus-stats.py` en `docs/stats.json`. Astro 7 + Svelte 5 + Tailwind v4.
 
 En vivo: **https://gos.swal.network** (Cloudflare Pages, único deploy canónico)
+
+## Skills de agentes
+
+Las skills del repo están en [`skills/`](skills/README.md), en la raíz. Ese archivo es el índice. Corre la compuerta antes de dar un hallazgo por cerrado:
+
+```bash
+python3 skills/gos-audit-gate/scripts/audit_gate.py
+```
+
+| Skill | Uso |
+|---|---|
+| `gos-audit-gate` | Falla si una corrección se revierte. Lo bloqueado se imprime y sigue abierto. |
+| `gos-nutrition-source` | Añade nutrición solo con un identificador real del publicador. |
+| `gos-publish-reviewed-dish` | Publica un plato revisado. No copies `dishes/china/`. |
+| `gos-license-corpus` | Mantiene el front matter y los avisos de terceros. |
+| `gos-review-queue` | Relee pull requests e issues. No los mezcla. |
 
 ## Rol en el ecosistema SWAL
 
@@ -44,7 +63,7 @@ regenerado en cada build por `site/scripts/export-vectors.mjs`).
 
 ## 🧠 Snapshots de Vectores y Embeddings (Descarga Masiva GOS DB)
 
-GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 495 platos, 30 substancias**).
+GOS exporta un snapshot de embeddings en vectores con versión de las colecciones activas (**552 ingredientes, 495 platos, 30 substancias**); esas cifras son el snapshot de exportación, no cobertura nutricional medida.
 
 - **Manifiesto**: [`/api/vectors/index.json`](https://gos.swal.network/api/vectors/index.json)
 - **Vectores Fragmentados**: `/api/vectors/vectors-1.json`, `vectors-2.json` (<10MB cada archivo)
@@ -67,6 +86,7 @@ AGPL-3.0-or-later (GNU Affero General Public License v3 o posterior) — ver
 El contenido de terceros conserva su propia licencia y aparece con su aviso
 completo en [NOTICE.md](./NOTICE.md): los metadatos del catálogo de ejercicios de
 `hasaneyldrm/exercises-dataset` (MIT) y las ilustraciones de
-`bryllim/workout-guide` (CC BY-SA 4.0). [NOTICE](./NOTICE) registra el linaje de
+`bryllim/workout-guide` (CC BY-SA 4.0). Esos archivos de ilustración no están en este repositorio.
+[NOTICE](./NOTICE) registra el linaje de
 licencias: el proyecto nació de HowToCook (Unlicense / dominio público), luego
 MIT (2025-07), CC BY-NC 4.0 (2025-12), AGPL-3.0 (2026-08), Apache-2.0 (2026-10-02) y ahora AGPL-3.0-or-later.

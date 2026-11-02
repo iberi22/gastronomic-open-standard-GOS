@@ -8,7 +8,7 @@ allergens:
 title: Asari no Sakamushi
 region: Izakaya / Nacional
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B5%E3%83%AA

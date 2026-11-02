@@ -12,7 +12,7 @@ GOS proporciona IDs de ingredientes, platos y dietas y el dataset nutricional ve
 | `swal-training` | `workout-session` con ejercicios `wg:…` (con arte) o `ex:…` (catálogo GOS), series, tiempos y estimación energética | `dietary-profile` autorizado para adaptar metas nutricionales |
 | OrionHealth | `dietary-profile` con restricciones, metas y caducidad, tras consentimiento explícito | Comidas, entrenamientos y perfiles; historial local y eventual mapeo FHIR |
 
-Un pedido no confirma por sí solo que alguien consumió una comida: Fize obtiene esa confirmación antes de exportar. OrionHealth también puede registrar comidas manualmente. Los ejercicios usan IDs del catálogo vendorizado `@bryllim/workout-guide@1.0.0`; los adaptadores mantienen su atribución y licencia CC BY-SA 4.0.
+Un pedido no confirma por sí solo que alguien consumió una comida: Fize obtiene esa confirmación antes de exportar. OrionHealth también puede registrar comidas manualmente. Los ids `wg:` apuntan a `@bryllim/workout-guide@1.0.0` (CC BY-SA 4.0). Ese paquete no está vendorizado en este repositorio; `exercises/` solo guarda metadatos MIT. La app que dibuja esas ilustraciones trae el paquete por su cuenta y conserva la atribución.
 
 Los registros permanecen en el dispositivo y viajan directamente entre dispositivos. Ningún backend SWAL almacena datos de salud de usuarios. `subject` es un seudónimo local `subj_<ULID>`: nunca nombre, correo o documento. Cada receptor confirma a qué sujeto local corresponde la importación; el ID no demuestra identidad ni consentimiento. OrionHealth solo comparte el perfil dietético autorizado y no exporta condiciones, vitales ni historial clínico. El consumidor muestra qué va a compartir, con quién y hasta cuándo.
 

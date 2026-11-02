@@ -4,7 +4,7 @@ allergens:
 title: Sopa de Lima
 region: Yucatán
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2019/11/14/sopa-de-lima-yucateca-receta/'

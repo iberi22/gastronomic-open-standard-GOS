@@ -4,7 +4,7 @@ allergens:
 title: 10 recetas más emblemáticas de la región Pacífica de Colombia
 region: Colombia
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: pending

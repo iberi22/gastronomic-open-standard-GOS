@@ -5,7 +5,7 @@ allergens:
 title: Mole Negro Oaxaqueño
 region: Oaxaca
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2021/10/28/historia-y-receta-del-mole-negro-oaxaqueno/'

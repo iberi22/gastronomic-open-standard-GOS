@@ -6,7 +6,7 @@ allergens:
 title: Matcha Miso Dengaku
 region: Aichi (Nagoya) / Kyoto
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E8%B1%86%E8%85%90%E7%94%B0%E4%B9%90

@@ -5,7 +5,7 @@ allergens:
 title: Inchicapi (Sopa de Gallina con Maní)
 region: Amazonía
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: jameaperu.com
   url: 'https://jameaperu.com/recetas/sopas/inchicapi-de-gallina/'

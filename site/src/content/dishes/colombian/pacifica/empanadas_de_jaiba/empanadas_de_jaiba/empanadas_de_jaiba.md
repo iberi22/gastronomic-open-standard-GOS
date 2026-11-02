@@ -5,7 +5,7 @@ allergens:
 title: Empanadas de Jaiba
 region: Pacífica
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: eltiempo.com
   url: 'https://www.eltiempo.com/vida/receta-empanadas-de-jaiba-57941'

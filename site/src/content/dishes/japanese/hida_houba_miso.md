@@ -5,7 +5,7 @@ allergens:
 title: Hida Houba Miso
 region: Gifu (Takayama)
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://ja.wikipedia.org/wiki/%E6%9C%B4%E8%90%89%E2%80%93%E3%81%BF%E3%81%9D

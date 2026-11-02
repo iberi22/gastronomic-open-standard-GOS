@@ -5,7 +5,7 @@ allergens:
 title: Collard Greens Sureños (Hojas de Berza Estofadas con Cerdo)
 region: Sur de Estados Unidos
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: southernliving.com
   url: 'https://www.southernliving.com/recipes/southern-collard-greens'

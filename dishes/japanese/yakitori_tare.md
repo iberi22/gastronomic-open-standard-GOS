@@ -6,7 +6,7 @@ allergens:
 title: Yakitori de Pollo en Tare
 region: Tokyo
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://park.ajinomoto.co.jp/recipe/card/702410/

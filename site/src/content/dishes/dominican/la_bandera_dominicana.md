@@ -4,7 +4,7 @@ allergens:
 title: 'La Bandera Dominicana (Arroz, Habichuelas y Carne)'
 region: República Dominicana
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: cocinadominicana.com
   url: 'https://www.cocinadominicana.com/la-bandera-dominicana-receta/'

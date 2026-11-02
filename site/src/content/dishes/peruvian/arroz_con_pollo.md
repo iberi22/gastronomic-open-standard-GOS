@@ -4,7 +4,7 @@ allergens:
 title: Arroz con Pollo Peruano
 region: Costa/Sierra
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: yanuq.com
   url: 'https://www.yanuq.com/'

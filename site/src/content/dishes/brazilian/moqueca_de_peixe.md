@@ -5,7 +5,7 @@ allergens:
 title: Moqueca de Peixe Baiana
 region: Brasil
 language: pt
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: tudogostoso.com.br
   url: 'https://www.tudogostoso.com.br/receita/1141-moqueca-de-peixe.html'

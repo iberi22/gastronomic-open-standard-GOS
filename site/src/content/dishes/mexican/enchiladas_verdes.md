@@ -5,7 +5,7 @@ allergens:
 title: Enchiladas Verdes
 region: Centro de México
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/desayunos/enchiladas-verdes-de-pollo/2018/06/'

@@ -14,11 +14,11 @@
 El repositorio cumple GitCore 3.8.0: lectura de agentes, planning local, SRC y SRS presentes.
 
 ### Criterios de aceptación
-- [ ] `.git-core-protocol-version` = 3.8.0
-- [ ] `AGENTS.md` define orden de lectura
-- [ ] `.gitcore/planning/PLANNING.md` y `TASK.md` existen
+- [x] `.git-core-protocol-version` = 3.8.0
+- [x] `AGENTS.md` define orden de lectura
+- [x] `.gitcore/planning/PLANNING.md` y `TASK.md` existen
 - [ ] `SRC.md` completo (secciones obligatorias)
-- [ ] `docs/SRS/{index,REQUIREMENTS,ARCHITECTURE}.md` existen
+- [x] `docs/SRS/{index,REQUIREMENTS,ARCHITECTURE}.md` existen
 
 ---
 

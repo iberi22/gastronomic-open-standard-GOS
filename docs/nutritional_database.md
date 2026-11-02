@@ -2,7 +2,9 @@
 
 ## Top 50 Common Ingredients - Nutritional Data per 100g
 
-**Source:** USDA FoodData Central | **Design:** Brutalist black/white | **Font:** Space Mono
+**Nota:** Tabla manual de alimentos comunes elaborada a mano. Los valores por 100 g son una referencia inicial para cocina, no un corpus nutricional respaldado por varias organizaciones.
+
+**Source:** Una única fuente por ingrediente donde está registrada (p. ej. `USDA FoodData Central`) | **Design:** Brutalist black/white | **Font:** Space Mono | **Last Updated:** 2026-03-19
 
 ---
 
@@ -121,8 +123,7 @@
 ---
 
 **Data Sources:**
-- USDA FoodData Central (fooddatacentral.al展现了美国农业部提供的营养数据)
-- FAO/INFOODS Database
-- Colombian INS Nutritional Tables
+- Tabla manual de alimentos comunes: por ingrediente, donde consta una fuente, esa es la única fuente registrada (p. ej. `USDA FoodData Central`).
+- No se presenta como respaldo de un corpus multi-organización: las menciones a FAO/INFOODS y al INS/ICBF no forman parte de la cadena de fuentes de esta tabla.
 
 **Last Updated:** 2026-03-19

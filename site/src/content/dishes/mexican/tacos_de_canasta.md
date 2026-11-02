@@ -4,7 +4,7 @@ allergens:
 title: Tacos de Canasta
 region: Tlaxcala
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Animal Gourmet
   url: 'https://animalgourmet.com/2020/09/02/tacos-de-canasta-historia-y-receta/'

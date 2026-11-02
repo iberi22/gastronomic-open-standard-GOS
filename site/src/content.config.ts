@@ -52,7 +52,10 @@ const tipsCollection = defineCollection({
 })
 
 const ingredientsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/ingredients' }),
+  loader: glob({
+    pattern: ['**/*.json', '!**/pending_review/**'],
+    base: './src/content/ingredients',
+  }),
   schema: z
     .object({
       name: z.string().optional(),

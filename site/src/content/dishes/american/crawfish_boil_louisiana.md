@@ -5,7 +5,7 @@ allergens:
 title: Crawfish Boil de Luisiana (Hervido de Cangrejos de Río)
 region: Luisiana
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: eater.com
   url: 'https://www.eater.com/2017/3/21/14983350/louisiana-crawfish-boil-guide'

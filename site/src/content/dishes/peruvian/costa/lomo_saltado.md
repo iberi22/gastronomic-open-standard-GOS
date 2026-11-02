@@ -20,7 +20,7 @@ images:
 - description: Lomo Saltado servido con arroz y papas fritas
   url: https://images.unsplash.com/photo-1544025162-d76694265947
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 main_ingredients:
 - Carne de res (Lomo fino)
 - Papas amarillas (para freír)

@@ -5,7 +5,7 @@ allergens:
 title: Pambazo de Papa con Chorizo
 region: Ciudad de México
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Cocina Vital
   url: 'https://www.cocinavital.mx/recetas/antojitos-mexicanos/pambazos-de-papa-con-chorizo-estilo-cdmx/2019/09/'

@@ -4,7 +4,7 @@ allergens:
 title: Pinchos de Pollo Puertorriqueños
 region: Puerto Rico
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: elboricua.com
   url: 'https://www.elboricua.com/pinchos.html'

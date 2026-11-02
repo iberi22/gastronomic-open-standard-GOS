@@ -4,7 +4,7 @@ allergens:
 title: Masala Dosa
 region: Sur de India
 language: es
-license: Apache-2.0
+license: AGPL-3.0-or-later
 source:
   name: Gastronomic Open Standard (GOS) Database
   url: https://hi.wikipedia.org/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%B8%E0%A4%BE
