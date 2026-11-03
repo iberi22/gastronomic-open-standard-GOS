@@ -40,7 +40,7 @@ Cada ID tiene una sola palabra terminal.
 | P2 | done | `develop` incorpora `origin/main`. Queda 0 atrás. Sin force-push y sin pull request. |
 | P3 | blocked | 510 stubs de `pending_review` no se promueven sin fuente real. |
 | P4 | done | Los ejercicios se quedan. Son 10 JSON y 1324 registros MIT, sin imágenes. No se relicencian ni se borra el directorio. |
-| P5 | blocked | El roadmap es `docs/CONTENT_EXPANSION_STRATEGY.md`. La fase 0 quedó decidida. México tiene 22 platos nuevos en `dishes/mexican/` y en `site/src/content/dishes/mexican/`, uno por cada URL de `docs/research/wave1-mexico-urls.md`. Siguen sin escribirse las otras seis lenguas de la oleada 1 y no hay mezclas nuevas. China no se copia. `starsystem/` no es el roadmap. |
+| P5 | blocked | El roadmap es `docs/CONTENT_EXPANSION_STRATEGY.md`. La fase 0 quedó decidida. México tiene 22 platos nuevos y Estados Unidos tiene 22 platos nuevos, uno por cada URL de `docs/research/wave1-mexico-urls.md` y `docs/research/wave1-us-urls.md`. Siguen sin escribirse Brasil, China, India, Bangladesh y Japón, y no hay mezclas nuevas. China no se copia. `starsystem/` no es el roadmap. |
 | P6 | done | `SRC.md` tiene las secciones obligatorias del árbol medido. REQ-002 marca árbol, comandos y enlaces. SRS Estado de REQ-001 sigue en `draft`. REQ-003 en adelante siguen sin marcar. |
 
 ## Cola

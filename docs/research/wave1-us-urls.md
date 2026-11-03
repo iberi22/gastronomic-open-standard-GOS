@@ -2,7 +2,7 @@
 
 Date: 2026-11-02.
 
-These URLs are not dishes yet. This change does not add dish Markdown. P5 stays blocked. The cards, when written, go in `dishes/american/`. The 35 stems already there stay untouched.
+Each row now has one card. The Markdown is `dishes/american/<stem>.md` and the same bytes are in `site/src/content/dishes/american/`. The 35 older stems stay untouched. The new cards paraphrase the English article in Spanish. They do not carry cook times, nutrition, photos, or `url: pending`. P5 stays blocked: five wave-1 languages and the mixtures are still unwritten.
 
 The sources are English-language articles on `en.wikipedia.org`. Automatic translation is not a source. Each row is one dish article. None is a category page, a disambiguation page, or a site homepage.
 
