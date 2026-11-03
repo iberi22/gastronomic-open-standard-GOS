@@ -5,7 +5,7 @@
 
 An open knowledge graph of world gastronomy: **recipes ↔ ingredients ↔ vitamins ↔
 bioactive substances ↔ flavors ↔ techniques ↔ health conditions ↔ diets ↔ regions**.
-The repo files are the database, with measured counts: **497 dishes** in Markdown, and
+The repo files are the database, with measured counts: **519 dishes** in Markdown, and
 ingredients as JSON — **144 published ingredients**, **510 pending review** stubs kept
 out of the published collection, and **36 with non-zero nutrition** (published records
 whose `nutrition_per_100g` carries at least one value above zero) — verified by

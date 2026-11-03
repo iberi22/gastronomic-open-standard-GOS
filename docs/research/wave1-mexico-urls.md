@@ -2,7 +2,7 @@
 
 Date: 2026-11-02.
 
-These URLs are not dishes yet. This change does not add dish Markdown, frontmatter, or `url: pending`. P5 stays blocked until each dish is written from its URL in a later change.
+Each row now has one card. The Markdown is `dishes/mexican/<stem>.md` and the same bytes are in `site/src/content/dishes/mexican/`. The stems are `manchamanteles`, `mole_de_caderas`, `mole_blanco`, `mole_de_olla`, `mole_prieto`, `encacahuatado`, `relleno_negro`, `atapakua`, `memela`, `enchilada_potosina`, `salbut`, `papadzul`, `pan_de_cazon`, `corunda`, `guajolota`, `cafe_de_olla`, `champurrado`, `pozol`, `tejate`, `tascalate`, `tepache`, and `mixiote`. Those cards paraphrase the article. They do not carry cook times, nutrition, photos, or `url: pending`. P5 stays blocked: wave 1 is seven languages, and this list added no mixtures.
 
 The sources are Spanish-language articles on `es.wikipedia.org`. Automatic translation is not a source. Each row is one dish article. None is a category page, a disambiguation page, or a site homepage.
 
