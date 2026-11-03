@@ -32,15 +32,15 @@ Cada ID tiene una sola palabra terminal.
 | C8 | done | Avisos de arte alineados. `exercises/` no tiene imágenes. |
 | C9 | done | Cinco skills en `skills/`. `AGENTS.md` ya no apunta a `.skills/`. |
 | F1 | confirmed | 20 cocinas publicadas. Colombia tiene 109 platos. La cobertura mundial sigue siendo falsa. |
-| F2 | blocked | 118 Markdown en `dishes/china/`. En el sitio solo `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Salida del resto: `skills/gos-publish-reviewed-dish`, un plato. Prohibido copiar el árbol. |
+| F2 | blocked | 118 Markdown en `dishes/china/`. En el sitio solo `site/src/content/dishes/china/principales/mapo-doufu.md`, `site/src/content/dishes/china/principales/gongbao-jiding.md` y `site/src/content/dishes/china/principales/huiguo-rou.md`. El resto de `dishes/china/` sigue sin publicar. Salida del resto: `skills/gos-publish-reviewed-dish`, un plato. Prohibido copiar el árbol. |
 | F3 | blocked | Una fuente revisada en `site/src/content/ingredients/vegetables/tomate.json`: USDA FoodData Central, FDC 170457, `https://fdc.nal.usda.gov/food-details/170457/nutrients`. Histograma de fuentes 617 con 0, 33 con 1, 4 con 2, 0 con 5 o más. Sigue abierto: un registro necesita cinco fuentes. Salida: `skills/gos-nutrition-source`. |
 | F13 | blocked | Cola sin mezclar. `skills/gos-review-queue`. No mezclar #414, #381, #380 ni Dependabot. |
-| F14 | confirmed | 67 stems de `dishes/china/` no están en el sitio. `mapo-doufu` y `gongbao-jiding` sí, en `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Mismo camino que F2, de a un plato. |
+| F14 | confirmed | 66 stems de `dishes/china/` no están en el sitio. `mapo-doufu`, `gongbao-jiding` y `huiguo-rou` sí, en `site/src/content/dishes/china/principales/`. El resto de `dishes/china/` sigue sin publicar. Mismo camino que F2, de a un plato. |
 | P1 | done | Commit local del pase de honestidad, de `skills/` y de esta lista. Sin push y sin pull request. |
 | P2 | done | `develop` incorpora `origin/main`. Queda 0 atrás. Sin force-push y sin pull request. |
 | P3 | blocked | 510 stubs de `pending_review` no se promueven sin fuente real. |
 | P4 | done | Los ejercicios se quedan. Son 10 JSON y 1324 registros MIT, sin imágenes. No se relicencian ni se borra el directorio. |
-| P5 | blocked | El roadmap es `docs/CONTENT_EXPANSION_STRATEGY.md`. La fase 0 quedó decidida. México tiene 22 platos nuevos, Estados Unidos tiene 22 platos nuevos y Brasil tiene 22 platos nuevos, uno por cada URL de `docs/research/wave1-mexico-urls.md`, `docs/research/wave1-us-urls.md` y `docs/research/wave1-brazil-urls.md`. Siguen sin escribirse China, India, Bangladesh y Japón, y no hay mezclas nuevas. China no se copia. `starsystem/` no es el roadmap. |
+| P5 | blocked | El roadmap es `docs/CONTENT_EXPANSION_STRATEGY.md`. La fase 0 quedó decidida. México tiene 22 platos nuevos, Estados Unidos tiene 22 platos nuevos y Brasil tiene 22 platos nuevos, uno por cada URL de `docs/research/wave1-mexico-urls.md`, `docs/research/wave1-us-urls.md` y `docs/research/wave1-brazil-urls.md`. Siguen sin escribirse las oleadas nuevas de China, India, Bangladesh y Japón, y no hay mezclas nuevas. China no se copia en bloque: el tercer plato revisado es huiguo rou. `starsystem/` no es el roadmap. |
 | P6 | done | `SRC.md` tiene las secciones obligatorias del árbol medido. REQ-002 marca árbol, comandos y enlaces. SRS Estado de REQ-001 sigue en `draft`. REQ-003 en adelante siguen sin marcar. |
 
 ## Cola

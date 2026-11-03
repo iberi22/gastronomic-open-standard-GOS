@@ -27,6 +27,7 @@ const baseUrl =
 const REVIEWED_CHINA_DISHES = [
   'china/principales/mapo-doufu.md',
   'china/principales/gongbao-jiding.md',
+  'china/principales/huiguo-rou.md',
 ]
 
 function isReviewedChinaDishPath(relativePath, tree) {

@@ -6,7 +6,7 @@ Este proyecto es una iniciativa de preservación culinaria de código abierto. N
 
 Crear la base de datos gastronómica libre y científicamente rigurosa de las cocinas de América Latina y de China, con el corpus actual como punto de partida y la comunidad ampliándola.
 
-El corpus publicado se centra en América Latina (Colombia: 109 platos) en 20 cocinas. Los platos chinos en el sitio son `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`, copiados de `dishes/china/principales/mapo-doufu.md` y `dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar.
+El corpus publicado se centra en América Latina (Colombia: 109 platos) en 20 cocinas. Los platos chinos en el sitio son `site/src/content/dishes/china/principales/mapo-doufu.md`, `site/src/content/dishes/china/principales/gongbao-jiding.md` y `site/src/content/dishes/china/principales/huiguo-rou.md`, copiados de los mismos archivos en `dishes/china/principales/`. El resto de `dishes/china/` sigue sin publicar.
 
 ## 🧱 Pilares del Proyecto
 

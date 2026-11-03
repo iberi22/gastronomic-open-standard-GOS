@@ -13,6 +13,12 @@ test('gongbao jiding is published', async ({ app, screen }) => {
   await expect(screen.getByRole('heading', { name: /宫保鸡丁/ }).first()).toBeVisible()
 })
 
+test('huiguo rou is published', async ({ app, screen }) => {
+  await app.open('/recipes/china/principales/huiguo-rou')
+  await expect(screen.getByRole('heading', { name: 'Huiguo Rou (Twice-Cooked Pork)' }).first()).toBeVisible()
+  await expect(screen.getByRole('heading', { name: /回锅肉/ }).first()).toBeVisible()
+})
+
 test('an unlisted china dish stays off the site', async ({ app, screen }) => {
   await app.open('/recipes/china/principales/dongpo-rou')
   await expect(screen.getByRole('heading', { name: /esta página no está/i }).first()).toBeVisible()

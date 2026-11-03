@@ -10,6 +10,7 @@ import audit_gate
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 REVIEWED = (
     "principales/gongbao-jiding.md",
+    "principales/huiguo-rou.md",
     "principales/mapo-doufu.md",
 )
 SCRIPT = ROOT / "site" / "scripts" / "copy-content.js"
@@ -41,7 +42,7 @@ class ChinaGateTests(unittest.TestCase):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(self.sources[relative] if body is None else body)
 
-    def test_shipped_copier_allows_the_two_reviewed_files(self):
+    def test_shipped_copier_allows_the_reviewed_files(self):
         self.publish()
         errors = audit_gate.china_publication_errors(
             self.dishes, self.script(), self.root_china

@@ -16,10 +16,12 @@ SITE = REPO / "site" / "src" / "content"
 ING = SITE / "ingredients"
 REVIEWED_CHINA_REL = (
     "principales/gongbao-jiding.md",
+    "principales/huiguo-rou.md",
     "principales/mapo-doufu.md",
 )
 REVIEWED_CHINA_FROM_DISHES = (
     "china/principales/gongbao-jiding.md",
+    "china/principales/huiguo-rou.md",
     "china/principales/mapo-doufu.md",
 )
 CHINA_SKIP = "toLowerCase() === 'china'"
@@ -359,9 +361,9 @@ def req001_errors():
 
 
 def china_publication_errors(site_dishes, copy_script, root_china):
-    """Allow two reviewed China dishes and reject every other China publication.
+    """Allow the reviewed China dishes and reject every other China publication.
 
-    The general china skip must stay in copy-content.js. A third dish
+    The general china skip must stay in copy-content.js. Another dish
     Markdown, a chinese/ directory, a missing file, a cuisine README, or a
     body that is not the root twin are regressions.
     """
@@ -581,8 +583,9 @@ def main():
     china_md = len(list((REPO / "dishes" / "china").rglob("*.md")))
     blocked.append(f"F1 world coverage is false; published cuisine folders={len(cuisines)}")
     blocked.append(
-        "F2 two reviewed dishes are on the site "
-        "(china/principales/mapo-doufu.md, china/principales/gongbao-jiding.md); "
+        "F2 three reviewed dishes are on the site "
+        "(china/principales/mapo-doufu.md, china/principales/gongbao-jiding.md, "
+        "china/principales/huiguo-rou.md); "
         f"the other root dishes/china markdown files stay off ({china_md})"
     )
     if reviewed_publisher_sources == 1:

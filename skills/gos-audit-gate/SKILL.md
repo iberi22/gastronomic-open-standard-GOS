@@ -37,14 +37,14 @@ Esta skill vuelve a medir el corpus publicado y falla solo si una corrección ya
 - `site/src/content/diets/placeholder.json` dice que no es una dieta.
 - `docs/PROJECT_GOALS.md` no dice MIT ni «la base más completa del mundo».
 - `docs/nutritional_database.md` no presenta la tabla manual como corpus de varias organizaciones.
-- El sitio tiene dos platos chinos: `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. No hay directorio `chinese`. Cualquier otro Markdown bajo `china/` es una regresión. El resto de `dishes/china/` sigue sin publicar.
+- El sitio tiene tres platos chinos: `site/src/content/dishes/china/principales/mapo-doufu.md`, `site/src/content/dishes/china/principales/gongbao-jiding.md` y `site/src/content/dishes/china/principales/huiguo-rou.md`. No hay directorio `chinese`. Cualquier otro Markdown bajo `china/` es una regresión. El resto de `dishes/china/` sigue sin publicar.
 - `exercises/` no contiene imágenes, y los avisos dicen que el arte no está vendorizado aquí.
 - Cada ID de `.gitcore/planning/TASK.md` (C1–C9, F1, F2, F3, F13, F14, P1–P6) tiene una palabra terminal. F2, F3, F13, P3 y P5 se quedan en `blocked`.
 - `.gitcore/planning/PLANNING.md` nombra el pase de honestidad, los huecos bloqueados y apunta a `TASK.md`. No vuelve al stub de una línea.
 - Una casilla marcada de REQ-001 tiene que ser verdad. `SRC.md` completo sigue sin marcar. REQ-002 en adelante siguen sin marcar. SRS Estado de REQ-001 sigue en `draft`.
 - Solo `site/src/content/ingredients/vegetables/tomate.json` puede traer un objeto `sources` con `org`, `id` y `url`. Otro objeto es una regresión. Las filas numéricas de `docs/nutritional_database.md` siguen igual que en `e956abf2`.
 - `SRC.md` tiene las siete secciones y no revive el mapa viejo. `exercises/` sigue en 10 JSON y 1324 registros, sin imágenes.
-- `site/scripts/copy-content.js` sigue saltando el directorio `china`, salvo `china/principales/mapo-doufu.md` y `china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar.
+- `site/scripts/copy-content.js` sigue saltando el directorio `china`, salvo `china/principales/mapo-doufu.md`, `china/principales/gongbao-jiding.md` y `china/principales/huiguo-rou.md`. El resto de `dishes/china/` sigue sin publicar.
 
 ## Pitfalls
 
