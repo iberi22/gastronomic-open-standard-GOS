@@ -33,7 +33,7 @@ Cada ID tiene una sola palabra terminal.
 | C9 | done | Cinco skills en `skills/`. `AGENTS.md` ya no apunta a `.skills/`. |
 | F1 | confirmed | 20 cocinas publicadas. Colombia tiene 109 platos. La cobertura mundial sigue siendo falsa. |
 | F2 | blocked | 118 Markdown en `dishes/china/`. En el sitio solo `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Salida del resto: `skills/gos-publish-reviewed-dish`, un plato. Prohibido copiar el árbol. |
-| F3 | blocked | Histograma de fuentes 617 con 0, 34 con 1, 3 con 2, 0 con 5 o más. Salida: `skills/gos-nutrition-source` con org, id y url del publicador. |
+| F3 | blocked | Una fuente revisada en `site/src/content/ingredients/vegetables/tomate.json`: USDA FoodData Central, FDC 170457, `https://fdc.nal.usda.gov/food-details/170457/nutrients`. Histograma de fuentes 617 con 0, 33 con 1, 4 con 2, 0 con 5 o más. Sigue abierto: un registro necesita cinco fuentes. Salida: `skills/gos-nutrition-source`. |
 | F13 | blocked | Cola sin mezclar. `skills/gos-review-queue`. No mezclar #414, #381, #380 ni Dependabot. |
 | F14 | confirmed | 67 stems de `dishes/china/` no están en el sitio. `mapo-doufu` y `gongbao-jiding` sí, en `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Mismo camino que F2, de a un plato. |
 | P1 | done | Commit local del pase de honestidad, de `skills/` y de esta lista. Sin push y sin pull request. |
