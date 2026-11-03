@@ -33,4 +33,4 @@ No Nordeste do Brasil, a buchada de bode é um guiso de miúdos; no falar da reg
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Buchada_de_bode
+<https://pt.wikipedia.org/wiki/Buchada_de_bode>

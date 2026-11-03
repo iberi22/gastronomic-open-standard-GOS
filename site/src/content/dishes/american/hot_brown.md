@@ -37,4 +37,4 @@ Fred K. Schmidt lo creó en 1926 en el hotel Brown de Louisville, Kentucky, como
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Hot_Brown
+<https://en.wikipedia.org/wiki/Hot_Brown>

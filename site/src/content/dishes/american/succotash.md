@@ -39,4 +39,4 @@ El succotash es un plato de verdura de América del Norte. El artículo le marca
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Succotash
+<https://en.wikipedia.org/wiki/Succotash>

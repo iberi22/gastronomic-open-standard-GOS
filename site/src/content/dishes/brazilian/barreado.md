@@ -41,4 +41,4 @@ O barreado, nome que o artigo alterna com carne barreada, é a preparação que 
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Barreado
+<https://pt.wikipedia.org/wiki/Barreado>

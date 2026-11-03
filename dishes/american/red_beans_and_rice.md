@@ -41,4 +41,4 @@ La cocina criolla de Luisiana lo tiene por plato propio, y el artículo lo separ
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Red_beans_and_rice
+<https://en.wikipedia.org/wiki/Red_beans_and_rice>

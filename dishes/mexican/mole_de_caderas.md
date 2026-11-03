@@ -50,4 +50,4 @@ Este guiso usa la cadera y el espinazo del chivo, piezas ligadas a la matanza de
 
 ## Fuente
 
-https://es.wikipedia.org/wiki/Mole_de_caderas
+<https://es.wikipedia.org/wiki/Mole_de_caderas>

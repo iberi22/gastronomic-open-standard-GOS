@@ -41,4 +41,4 @@ O artigo usa sarapatel como nome comum de vários cozidos feitos com vísceras d
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Sarapatel
+<https://pt.wikipedia.org/wiki/Sarapatel>

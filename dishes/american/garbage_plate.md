@@ -41,4 +41,4 @@ En Rochester, Nueva York, este plato del restaurante Nick Tahou Hots deja la car
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Garbage_Plate
+<https://en.wikipedia.org/wiki/Garbage_Plate>

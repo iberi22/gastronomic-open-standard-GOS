@@ -168,7 +168,22 @@
     "sources": {
       "type": "array",
       "items": {
-        "type": "string"
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["org", "id", "url"],
+            "properties": {
+              "org": { "type": "string", "minLength": 1 },
+              "id": { "type": "string", "minLength": 1 },
+              "url": { "type": "string", "minLength": 1 }
+            }
+          }
+        ]
       }
     }
   },

@@ -33,4 +33,4 @@ A paçoca é um prato indígena do Brasil feito de carne seca socada com farinha
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Pa%C3%A7oca
+<https://pt.wikipedia.org/wiki/Pa%C3%A7oca>

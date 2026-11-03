@@ -35,4 +35,4 @@ A vaca atolada é um cozido da comida caipira. O artigo localiza a origem em Sã
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Vaca_atolada
+<https://pt.wikipedia.org/wiki/Vaca_atolada>

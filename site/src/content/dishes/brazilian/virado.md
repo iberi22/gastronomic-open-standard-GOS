@@ -41,4 +41,4 @@ O virado, também chamado virado à paulista, é um prato de São Paulo, surgido
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Virado
+<https://pt.wikipedia.org/wiki/Virado>

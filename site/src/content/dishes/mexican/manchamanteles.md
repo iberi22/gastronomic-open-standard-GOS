@@ -44,4 +44,4 @@ En la cocina mexicana este mole se arma con carnes, verduras y frutas en un solo
 
 ## Fuente
 
-https://es.wikipedia.org/wiki/Manchamanteles
+<https://es.wikipedia.org/wiki/Manchamanteles>

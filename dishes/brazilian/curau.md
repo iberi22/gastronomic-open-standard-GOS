@@ -35,4 +35,4 @@ O curau é um creme doce de milho da cozinha brasileira, típico das festas juni
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Curau
+<https://pt.wikipedia.org/wiki/Curau>

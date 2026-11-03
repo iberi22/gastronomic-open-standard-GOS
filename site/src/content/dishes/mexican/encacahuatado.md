@@ -52,4 +52,4 @@ La página lo describe como un mole cuya salsa espesa de cacahuate, jitomate, ch
 
 ## Fuente
 
-https://es.wikipedia.org/wiki/Encacahuatado
+<https://es.wikipedia.org/wiki/Encacahuatado>

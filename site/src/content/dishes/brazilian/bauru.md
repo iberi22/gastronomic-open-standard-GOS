@@ -39,4 +39,4 @@ O bauru nasceu como sanduíche na cidade de São Paulo, no Ponto Chic do Largo d
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Bauru_(sandu%C3%ADche)
+<https://pt.wikipedia.org/wiki/Bauru_(sandu%C3%ADche)>

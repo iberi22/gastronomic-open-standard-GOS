@@ -41,4 +41,4 @@ O arroz carreteiro sai do Rio Grande do Sul e o artigo já o vê incorporado ao 
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Arroz_carreteiro
+<https://pt.wikipedia.org/wiki/Arroz_carreteiro>

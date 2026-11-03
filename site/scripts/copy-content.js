@@ -159,7 +159,8 @@ async function copyDir(
         (entry.name.toLowerCase() === 'china' &&
           !isReviewedChinaDishPath(newRelativePath, urlSegment)) ||
         (urlSegment === 'dishes' &&
-          (newRelativePath === 'china' || newRelativePath.startsWith('china/')) &&
+          (newRelativePath === 'china' ||
+            newRelativePath.startsWith('china/')) &&
           !isReviewedChinaDishPath(newRelativePath, urlSegment))
       ) {
         return

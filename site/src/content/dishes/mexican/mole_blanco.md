@@ -52,4 +52,4 @@ El artículo lo presenta como un mole de la cocina de México, una salsa espesa 
 
 ## Fuente
 
-https://es.wikipedia.org/wiki/Mole_blanco
+<https://es.wikipedia.org/wiki/Mole_blanco>

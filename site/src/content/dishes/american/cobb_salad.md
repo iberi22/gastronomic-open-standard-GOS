@@ -41,4 +41,4 @@ La ensalada Cobb junta, en hileras y sin revolver, hojas de lechuga iceberg y ro
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Cobb_salad
+<https://en.wikipedia.org/wiki/Cobb_salad>

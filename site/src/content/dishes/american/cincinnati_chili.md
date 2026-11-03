@@ -47,4 +47,4 @@ El chili de Cincinnati es una salsa de carne picada, de consistencia caldosa y e
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Cincinnati_chili
+<https://en.wikipedia.org/wiki/Cincinnati_chili>

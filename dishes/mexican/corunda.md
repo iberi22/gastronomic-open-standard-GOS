@@ -41,4 +41,4 @@ La corunda es un tamal de masa de maíz del norte y de la zona de lagos de Micho
 
 ## Fuente
 
-https://es.wikipedia.org/wiki/Corunda
+<https://es.wikipedia.org/wiki/Corunda>

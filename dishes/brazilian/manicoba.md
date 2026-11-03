@@ -41,4 +41,4 @@ No Pará, na Bahia e em Sergipe, a maniçoba é um guiso de raiz indígena. Pela
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Mani%C3%A7oba
+<https://pt.wikipedia.org/wiki/Mani%C3%A7oba>

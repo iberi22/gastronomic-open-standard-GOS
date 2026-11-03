@@ -39,4 +39,4 @@ O mocotó é o guiso brasileiro da pata do boi cozida, o pé sem o casco, com a 
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/Mocot%C3%B3
+<https://pt.wikipedia.org/wiki/Mocot%C3%B3>

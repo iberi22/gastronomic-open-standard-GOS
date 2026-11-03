@@ -31,4 +31,4 @@ O pé de moleque mistura amendoim torrado e rapadura. É doce da cozinha caipira
 
 ## Fonte
 
-https://pt.wikipedia.org/wiki/P%C3%A9_de_moleque
+<https://pt.wikipedia.org/wiki/P%C3%A9_de_moleque>

@@ -43,4 +43,4 @@ El pollo picante de Nashville es un frito local de pechuga, muslo o ala. Se mari
 
 ## Fuente
 
-https://en.wikipedia.org/wiki/Hot_chicken
+<https://en.wikipedia.org/wiki/Hot_chicken>
