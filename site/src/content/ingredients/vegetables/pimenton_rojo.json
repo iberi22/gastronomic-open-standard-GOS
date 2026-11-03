@@ -7,9 +7,9 @@
   },
   "nutrition_per_100g": {
     "calories": 26,
-    "protein_g": 1,
+    "protein_g": 0.99,
     "fat_g": 0.3,
-    "carbs_g": 6,
+    "carbs_g": 6.03,
     "fiber_g": 2.1,
     "sugar_g": 4.2
   },
@@ -35,7 +35,12 @@
     }
   ],
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 170108",
+      "url": "https://fdc.nal.usda.gov/food-details/170108/nutrients"
+    }
   ],
   "tags": [
     "hogao",
