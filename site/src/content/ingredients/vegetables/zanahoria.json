@@ -36,18 +36,23 @@
   "name": "Zanahoria",
   "nutrition_per_100g": {
     "calories": 41,
-    "carbs_g": 9.6,
-    "fat_g": 0.2,
+    "carbs_g": 9.58,
+    "fat_g": 0.24,
     "fiber_g": 2.8,
-    "protein_g": 0.9,
-    "sugar_g": 4.7
+    "protein_g": 0.93,
+    "sugar_g": 4.74
   },
   "portions": {
     "default_g": 61
   },
   "scientific_name": "Daucus carota",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 170393",
+      "url": "https://fdc.nal.usda.gov/food-details/170393/nutrients"
+    }
   ],
   "tags": [
     "sopa",
