@@ -48,18 +48,23 @@
   "name": "Cilantro",
   "nutrition_per_100g": {
     "calories": 23,
-    "carbs_g": 3.7,
-    "fat_g": 0.5,
+    "carbs_g": 3.67,
+    "fat_g": 0.52,
     "fiber_g": 2.8,
-    "protein_g": 2.1,
-    "sugar_g": 0.8
+    "protein_g": 2.13,
+    "sugar_g": 0.87
   },
   "portions": {
     "default_g": 15
   },
   "scientific_name": "Coriandrum sativum",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 169997",
+      "url": "https://fdc.nal.usda.gov/food-details/169997/nutrients"
+    }
   ],
   "tags": [
     "finalizador",
