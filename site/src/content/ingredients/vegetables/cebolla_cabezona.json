@@ -57,18 +57,23 @@
   "name": "Cebolla Cabezona Blanca",
   "nutrition_per_100g": {
     "calories": 40,
-    "carbs_g": 9.3,
+    "carbs_g": 9.34,
     "fat_g": 0.1,
     "fiber_g": 1.7,
     "protein_g": 1.1,
-    "sugar_g": 4.2
+    "sugar_g": 4.24
   },
   "portions": {
     "default_g": 100
   },
   "scientific_name": "Allium cepa",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 170000",
+      "url": "https://fdc.nal.usda.gov/food-details/170000/nutrients"
+    }
   ],
   "tags": [
     "base",
