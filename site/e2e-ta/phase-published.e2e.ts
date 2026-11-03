@@ -4,13 +4,13 @@ import { expect } from 'e2e'
 test('mapo doufu is published', async ({ app, screen }) => {
   await app.open('/recipes/china/principales/mapo-doufu')
   await expect(screen.getByRole('heading', { name: 'Mapo Doufu (Mapo Tofu)' }).first()).toBeVisible()
-  await expect(screen.getByText('麻婆豆腐').first()).toBeVisible()
+  await expect(screen.getByRole('heading', { name: /麻婆豆腐/ }).first()).toBeVisible()
 })
 
 test('gongbao jiding is published', async ({ app, screen }) => {
   await app.open('/recipes/china/principales/gongbao-jiding')
   await expect(screen.getByRole('heading', { name: 'Gongbao Jiding (Kung Pao Chicken)' }).first()).toBeVisible()
-  await expect(screen.getByText('宫保鸡丁').first()).toBeVisible()
+  await expect(screen.getByRole('heading', { name: /宫保鸡丁/ }).first()).toBeVisible()
 })
 
 test('an unlisted china dish stays off the site', async ({ app, screen }) => {
