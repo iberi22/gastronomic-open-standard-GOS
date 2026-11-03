@@ -9,3 +9,5 @@ La fase actual es el pase de honestidad del corpus publicado, más los huecos de
 El estado terminal de cada gap está en `.gitcore/planning/TASK.md`.
 
 Esos huecos bloqueados siguen abiertos: el resto de `dishes/china/` no está en el sitio (solo `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`), una sola fuente de publicador está en `site/src/content/ingredients/vegetables/tomate.json` (USDA FoodData Central, FDC 170457) y ningún registro llega a cinco fuentes, y la cola de revisión no se mezcla en este pase. México ya tiene 22 fichas nuevas, una por URL de `docs/research/wave1-mexico-urls.md`, en `dishes/mexican/` y en el sitio. La oleada 1 sigue bloqueada: faltan las otras seis lenguas y no hay mezclas nuevas.
+
+El porcentaje medido en `0e8838a7` está en `docs/research/implementation-percent-2026-11-02.md`. La siguiente lengua es inglés, Estados Unidos. Las 22 URLs vivas están en `docs/research/wave1-us-urls.md`. Las fichas de esa lista todavía no están escritas.
