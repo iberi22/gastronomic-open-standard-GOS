@@ -20,17 +20,22 @@
   "nutrition_per_100g": {
     "calories": 61,
     "carbs_g": 4.8,
-    "fat_g": 3.3,
+    "fat_g": 3.25,
     "fiber_g": 0,
-    "protein_g": 3.2,
-    "sugar_g": 5
+    "protein_g": 3.15,
+    "sugar_g": 5.05
   },
   "portions": {
     "default_g": 244
   },
   "scientific_name": "Bos taurus (secreción)",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 171265",
+      "url": "https://fdc.nal.usda.gov/food-details/171265/nutrients"
+    }
   ],
   "tags": [
     "bebida",
