@@ -52,18 +52,24 @@
   },
   "name": "Huevo",
   "nutrition_per_100g": {
-    "calories": 155,
-    "carbs_g": 1.1,
-    "fat_g": 11,
+    "calories": 143,
+    "carbs_g": 0.72,
+    "fat_g": 9.51,
     "fiber_g": 0,
-    "protein_g": 13
+    "protein_g": 12.56,
+    "sugar_g": 0.37
   },
   "portions": {
     "default_g": 50
   },
   "scientific_name": "Gallus gallus domesticus",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 171287",
+      "url": "https://fdc.nal.usda.gov/food-details/171287/nutrients"
+    }
   ],
   "tags": [
     "desayuno",
