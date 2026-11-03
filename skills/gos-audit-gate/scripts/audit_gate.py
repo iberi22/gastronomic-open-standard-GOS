@@ -171,6 +171,23 @@ def source_object_hits(record):
     return hits
 
 
+REVIEWED_PUBLISHER_SOURCE = "vegetables/tomate.json"
+
+
+def publisher_source_allowed(path, record):
+    """Accept org/id/url source objects only on the one reviewed ingredient."""
+    if source_object_hits(record) < 1:
+        return False
+    candidate = pathlib.Path(path)
+    if not candidate.is_absolute():
+        candidate = REPO / candidate
+    try:
+        relative = candidate.resolve().relative_to(ING.resolve()).as_posix()
+    except (OSError, ValueError):
+        return False
+    return relative == REVIEWED_PUBLISHER_SOURCE
+
+
 def exercise_catalogue_errors():
     errors = []
     root = REPO / "exercises"
@@ -444,6 +461,7 @@ def main():
     ge5_sources = 0
     ge5_langs = 0
     invented_sources = 0
+    reviewed_publisher_sources = 0
     for path in published:
         record = json.loads(path.read_text(encoding="utf-8"))
         if isinstance(record, dict) and has_positive(record.get("nutrition_per_100g")):
@@ -456,7 +474,11 @@ def main():
             ge5_sources += 1
         if lang_count(record) >= 5:
             ge5_langs += 1
-        invented_sources += source_object_hits(record)
+        hits = source_object_hits(record)
+        if publisher_source_allowed(path, record):
+            reviewed_publisher_sources += hits
+        else:
+            invented_sources += hits
     if invented_sources:
         errors.append(f"ingredient sources include org/id/url objects: {invented_sources}")
 
@@ -563,7 +585,13 @@ def main():
         "(china/principales/mapo-doufu.md, china/principales/gongbao-jiding.md); "
         f"the other root dishes/china markdown files stay off ({china_md})"
     )
-    blocked.append(f"F3 sources>=5 is {ge5_sources}; languages>=5 is {ge5_langs}")
+    if reviewed_publisher_sources == 1:
+        f3_reviewed = "one reviewed source exists"
+    else:
+        f3_reviewed = f"reviewed publisher sources={reviewed_publisher_sources}"
+    blocked.append(
+        f"F3 {f3_reviewed}; sources>=5 is {ge5_sources}; languages>=5 is {ge5_langs}"
+    )
     blocked.append("F13 review queue is not merged by this gate")
     blocked.append(f"measured published={len(published)} pending_review={len(pending)} nonzero_nutrition={nonzero}")
 

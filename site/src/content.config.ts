@@ -68,7 +68,18 @@ const ingredientsCollection = defineCollection({
       micronutrients: z.any().optional(),
       active_compounds: z.array(z.any()).optional(),
       health_registry: z.array(z.any()).optional(),
-      sources: z.array(z.string()).optional(),
+      sources: z
+        .array(
+          z.union([
+            z.string().min(1),
+            z.object({
+              org: z.string().min(1),
+              id: z.string().min(1),
+              url: z.string().min(1),
+            }),
+          ]),
+        )
+        .optional(),
       tags: z.array(z.string()).optional(),
       aliases: z.record(z.string(), z.array(z.string())).optional(),
     })

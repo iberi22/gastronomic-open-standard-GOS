@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Drive the shipped China and source checks. Not a reimplementation."""
+import json
 import pathlib
 import tempfile
 import unittest
@@ -90,6 +91,24 @@ class ChinaGateTests(unittest.TestCase):
             audit_gate.source_object_hits({"sources": [{"name": "USDA FoodData Central"}]}),
             0,
         )
+
+
+class PublisherSourceAllowlistTests(unittest.TestCase):
+    def test_reviewed_ingredient_is_accepted_and_another_path_is_rejected(self):
+        reviewed = ROOT / "site/src/content/ingredients/vegetables/tomate.json"
+        other = ROOT / "site/src/content/ingredients/vegetables/zanahoria.json"
+        reviewed_record = json.loads(reviewed.read_text(encoding="utf-8"))
+        invented = {
+            "sources": [
+                {
+                    "org": "USDA FoodData Central",
+                    "id": "FDC 999999",
+                    "url": "https://example.test/not-a-record",
+                }
+            ]
+        }
+        self.assertTrue(audit_gate.publisher_source_allowed(reviewed, reviewed_record))
+        self.assertFalse(audit_gate.publisher_source_allowed(other, invented))
 
 
 class GateEntryTests(unittest.TestCase):

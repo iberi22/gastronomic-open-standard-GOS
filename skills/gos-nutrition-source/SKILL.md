@@ -48,3 +48,5 @@ Cinco cadenas con el mismo nombre no son cinco fuentes. Cinco idiomas no son el 
 ## Verification
 
 El JSON modificado contiene al menos un objeto `sources` con `org`, `id` y `url` no vacíos, y los números coinciden con la página citada. La compuerta sigue en 0.
+
+El ingrediente revisado es `site/src/content/ingredients/vegetables/tomate.json`, con id `FDC 170457` y URL `https://fdc.nal.usda.gov/food-details/170457/nutrients`.
