@@ -22,3 +22,5 @@ En `0e733bad`, antes de huiguo rou, el mismo cálculo daba 55.0%. En `6c44ae9a`,
 P5 sigue `blocked`. F2, F3, F13 y P3 siguen `blocked`. F1 y F14 siguen `confirmed`.
 
 La ficha viva del mismo cálculo está en `~/proyectosSWAL/docs/private/goals/goal-2026-11-02-gos-roadmap.json`.
+
+El 2026-11-03, `docs/research/wave1-india-urls.md` lista 22 artículos vivos (14 en hindi, 8 en inglés porque no había langlink al hindi). No añade fichas. El porcentaje sigue en 55.2%.
