@@ -19,7 +19,7 @@ Esta skill vuelve a medir el corpus publicado y falla solo si una corrección ya
 
 - Antes de decir que un hallazgo del informe del 2026-11-02 quedó resuelto.
 - Después de editar ingredientes, platos, licencias, `docs/stats.json`, `README.md` o `README.es.md`.
-- No la uses para inventar nutrición, copiar `dishes/china/` al sitio, ni mezclar pull requests.
+- No la uses para inventar nutrición, copiar el árbol `dishes/china/` al sitio, ni mezclar pull requests.
 
 ## Procedure
 
@@ -37,14 +37,14 @@ Esta skill vuelve a medir el corpus publicado y falla solo si una corrección ya
 - `site/src/content/diets/placeholder.json` dice que no es una dieta.
 - `docs/PROJECT_GOALS.md` no dice MIT ni «la base más completa del mundo».
 - `docs/nutritional_database.md` no presenta la tabla manual como corpus de varias organizaciones.
-- No hay directorio `china` ni `chinese` en `site/src/content/dishes/`.
+- El sitio tiene un solo plato chino: `site/src/content/dishes/china/principales/mapo-doufu.md`. No hay directorio `chinese`. Cualquier otro Markdown bajo `china/` es una regresión.
 - `exercises/` no contiene imágenes, y los avisos dicen que el arte no está vendorizado aquí.
-- Cada ID de `.gitcore/planning/TASK.md` (C1–C9, F1, F2, F3, F13, F14, P1–P6) tiene una palabra terminal. F2, F3, F13 y P3 se quedan en `blocked`. P5 se queda en `deferred`.
+- Cada ID de `.gitcore/planning/TASK.md` (C1–C9, F1, F2, F3, F13, F14, P1–P6) tiene una palabra terminal. F2, F3, F13, P3 y P5 se quedan en `blocked`.
 - `.gitcore/planning/PLANNING.md` nombra el pase de honestidad, los huecos bloqueados y apunta a `TASK.md`. No vuelve al stub de una línea.
 - Una casilla marcada de REQ-001 tiene que ser verdad. `SRC.md` completo sigue sin marcar. REQ-002 en adelante siguen sin marcar. SRS Estado de REQ-001 sigue en `draft`.
 - Ningún objeto `sources` trae `org`, `id` o `url`. Las filas numéricas de `docs/nutritional_database.md` siguen igual que en `e956abf2`.
 - `SRC.md` tiene las siete secciones y no revive el mapa viejo. `exercises/` sigue en 10 JSON y 1324 registros, sin imágenes.
-- `site/scripts/copy-content.js` sigue saltando el directorio `china`.
+- `site/scripts/copy-content.js` sigue saltando el directorio `china`, salvo `china/principales/mapo-doufu.md`.
 
 ## Pitfalls
 

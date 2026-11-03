@@ -4,7 +4,7 @@
 
 Grafo de conocimiento abierto de la gastronomía mundial: **recetas ↔ ingredientes ↔
 vitaminas ↔ sustancias bioactivas ↔ sabores ↔ técnicas ↔ afecciones ↔ dietas ↔ regiones**.
-Los archivos del repo son la base de datos, con cifras medidas: **495 platos** en Markdown y
+Los archivos del repo son la base de datos, con cifras medidas: **496 platos** en Markdown y
 los ingredientes en JSON — **144 ingredientes publicados**, **510 pendientes de revisión**
 fuera de la colección publicada, y **36 con nutrición no nula** (registros publicados cuyo
 `nutrition_per_100g` tiene al menos un valor mayor que cero) — verificado por

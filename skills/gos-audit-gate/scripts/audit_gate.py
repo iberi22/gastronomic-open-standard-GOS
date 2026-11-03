@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Fail when a corrected GOS audit invariant regresses.
 
-Blocked gaps (China unpublished, fewer than five real sources, the review
-queue) are printed and do not fail this command. Inventing nutrition numbers
-or copying dishes/china is not a way to turn those lines green.
+Blocked gaps (the rest of dishes/china, fewer than five real sources, the
+review queue) are printed and do not fail this command. Inventing nutrition
+numbers or copying dishes/china is not a way to turn those lines green.
 """
 import json
 import pathlib
@@ -14,6 +14,9 @@ import sys
 REPO = pathlib.Path(__file__).resolve().parents[3]
 SITE = REPO / "site" / "src" / "content"
 ING = SITE / "ingredients"
+REVIEWED_CHINA_REL = "principales/mapo-doufu.md"
+REVIEWED_CHINA_FROM_DISHES = "china/principales/mapo-doufu.md"
+CHINA_SKIP = "toLowerCase() === 'china'"
 
 
 def has_positive(value):
@@ -332,6 +335,59 @@ def req001_errors():
     return errors
 
 
+def china_publication_errors(site_dishes, copy_script, root_china):
+    """Allow one reviewed China dish and reject every other China publication.
+
+    The general china skip must stay in copy-content.js. A second dish
+    Markdown, a chinese/ directory, a cuisine README, or a body that is not
+    the root file are regressions.
+    """
+    errors = []
+    if copy_script.count(CHINA_SKIP) != 3:
+        errors.append("copy-content.js no longer skips the china directory")
+    if REVIEWED_CHINA_FROM_DISHES not in copy_script:
+        errors.append("copy-content.js is missing the single reviewed China dish path")
+
+    chinese = site_dishes / "chinese"
+    if chinese.exists():
+        errors.append("chinese cuisine directory appeared on the published site")
+
+    china = site_dishes / "china"
+    site_file = china / REVIEWED_CHINA_REL
+    if not china.is_dir() or not site_file.is_file():
+        errors.append(
+            "reviewed China dish missing: site/src/content/dishes/china/"
+            + REVIEWED_CHINA_REL
+        )
+        return errors
+
+    md = sorted(
+        path.relative_to(china).as_posix()
+        for path in china.rglob("*.md")
+        if path.is_file()
+    )
+    if md != [REVIEWED_CHINA_REL]:
+        errors.append(
+            "China site dishes must be exactly "
+            f"{REVIEWED_CHINA_REL}; found {md}"
+        )
+    readmes = [
+        path.name
+        for path in china.rglob("*")
+        if path.is_file() and path.name.lower().startswith("readme")
+    ]
+    if readmes:
+        errors.append("China cuisine README is not a reviewed dish")
+
+    root_file = root_china / REVIEWED_CHINA_REL
+    if root_file.is_file() and site_file.read_bytes() != root_file.read_bytes():
+        errors.append("reviewed China dish bytes differ from dishes/china source")
+    text = site_file.read_text(encoding="utf-8")
+    if not re.search(r"(?m)^license:\s*AGPL-3.0-or-later\s*$", text):
+        errors.append("reviewed China dish front matter is not AGPL-3.0-or-later")
+    return errors
+
+
 def license_hits(base):
     apache = agpl = 0
     for path in base.rglob("*.md"):
@@ -443,13 +499,6 @@ def main():
     if "展现了" in nutri or "\n- FAO/INFOODS" in nutri:
         errors.append("hand nutrition table again claims a multi-organization corpus")
 
-    china_site = [
-        path.name for path in (SITE / "dishes").iterdir()
-        if path.is_dir() and path.name.lower() in {"china", "chinese"}
-    ]
-    if china_site:
-        errors.append("China cuisine directory appeared on the published site without the one-dish review skill")
-
     images = [
         path for path in (REPO / "exercises").rglob("*")
         if path.suffix.lower() in {".gif", ".png", ".jpg", ".jpeg", ".webp", ".svg"}
@@ -475,8 +524,13 @@ def main():
         errors.append("README.es.md license section lost the artwork absence sentence")
 
     copy_script = read_text(REPO / "site" / "scripts" / "copy-content.js")
-    if "toLowerCase() === 'china'" not in copy_script:
-        errors.append("copy-content.js no longer skips the china directory")
+    errors.extend(
+        china_publication_errors(
+            SITE / "dishes",
+            copy_script,
+            REPO / "dishes" / "china",
+        )
+    )
     errors.extend(exercise_catalogue_errors())
     errors.extend(nutrition_table_errors(nutri))
     errors.extend(task_status_errors(read_text(REPO / ".gitcore" / "planning" / "TASK.md")))
@@ -486,7 +540,9 @@ def main():
     cuisines = [path.name for path in (SITE / "dishes").iterdir() if path.is_dir()]
     china_md = len(list((REPO / "dishes" / "china").rglob("*.md")))
     blocked.append(f"F1 world coverage is false; published cuisine folders={len(cuisines)}")
-    blocked.append(f"F2 China stays off the site; root dishes/china markdown files={china_md}")
+    blocked.append(
+        f"F2 one reviewed dish is on the site; the other root dishes/china markdown files stay off ({china_md})"
+    )
     blocked.append(f"F3 sources>=5 is {ge5_sources}; languages>=5 is {ge5_langs}")
     blocked.append("F13 review queue is not merged by this gate")
     blocked.append(f"measured published={len(published)} pending_review={len(pending)} nonzero_nutrition={nonzero}")

@@ -23,6 +23,17 @@ const baseUrl =
     ? '/gastronomic-open-standard-GOS'
     : '/'
 
+// One reviewed dish. The china directory stays skipped except this path.
+const REVIEWED_CHINA_DISH = 'china/principales/mapo-doufu.md'
+
+function isReviewedChinaDishPath(relativePath, tree) {
+  if (tree !== 'dishes') return false
+  const norm = String(relativePath).replace(/\\/g, '/')
+  return (
+    norm === REVIEWED_CHINA_DISH || REVIEWED_CHINA_DISH.startsWith(`${norm}/`)
+  )
+}
+
 // Clean existing directories
 async function cleanDirs() {
   const dirs = [
@@ -140,8 +151,12 @@ async function copyDir(
         : entry.name
 
       if (
-        entry.name.toLowerCase() === 'china' ||
-        /[\u4e00-\u9fa5]/.test(entry.name)
+        /[\u4e00-\u9fa5]/.test(entry.name) ||
+        (entry.name.toLowerCase() === 'china' &&
+          !isReviewedChinaDishPath(newRelativePath, urlSegment)) ||
+        (urlSegment === 'dishes' &&
+          (newRelativePath === 'china' || newRelativePath.startsWith('china/')) &&
+          !isReviewedChinaDishPath(newRelativePath, urlSegment))
       ) {
         return
       }
@@ -222,8 +237,9 @@ async function copyDir(
       })
       for (const entry of entries) {
         if (
-          entry.name.toLowerCase() === 'china' ||
-          /[\u4e00-\u9fa5]/.test(entry.name)
+          /[\u4e00-\u9fa5]/.test(entry.name) ||
+          (entry.name.toLowerCase() === 'china' &&
+            !isReviewedChinaDishPath(entry.name, 'dishes'))
         ) {
           continue
         }
@@ -254,8 +270,9 @@ async function copyDir(
       const entries = await fsPromises.readdir(tipsDir, { withFileTypes: true })
       for (const entry of entries) {
         if (
-          entry.name.toLowerCase() === 'china' ||
-          /[\u4e00-\u9fa5]/.test(entry.name)
+          /[\u4e00-\u9fa5]/.test(entry.name) ||
+          (entry.name.toLowerCase() === 'china' &&
+            !isReviewedChinaDishPath(entry.name, 'tips'))
         ) {
           continue
         }

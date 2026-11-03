@@ -18,7 +18,7 @@ Esta skill es la única salida del bloqueo F2 y del espejo raíz. Publica un pla
 ## When to Use
 
 - Un plato de `dishes/` debe aparecer en `site/src/content/dishes/`.
-- El caso China: 118 Markdown bajo `dishes/china/` y ninguna carpeta `china` en el sitio.
+- El caso China: 118 Markdown bajo `dishes/china/`. El sitio tiene un solo archivo, `site/src/content/dishes/china/principales/mapo-doufu.md`. El resto no se copia.
 - No la uses para un `cp -a`, un script de lote, ni para «poner China al día».
 
 ## Procedure
@@ -27,13 +27,13 @@ Esta skill es la única salida del bloqueo F2 y del espejo raíz. Publica un pla
 2. Confirma `license: AGPL-3.0-or-later` en el front matter. Si dice otra cosa, aplica `gos-license-corpus` a ese archivo antes de copiarlo.
 3. Crea el destino `site/src/content/dishes/<cocina>/<stem>.md` con el mismo cuerpo. Para el primer plato chino revisado, la carpeta `china` se crea con ese único archivo.
 4. No añadas nutrición, fuentes ni una traducción que no esté ya en el archivo de origen.
-5. Corre `python3 skills/gos-audit-gate/scripts/audit_gate.py`. Si la carpeta publicada se llama `china` o `chinese`, la compuerta actual falla a propósito: antes de dejarla verde, cambia esa aserción en el mismo cambio y documenta el plato único revisado.
+5. Corre `python3 skills/gos-audit-gate/scripts/audit_gate.py`. La compuerta permite solo `site/src/content/dishes/china/principales/mapo-doufu.md`. Un segundo Markdown, un directorio `chinese`, o quitar el salto general de `china` es una regresión.
 
 ## Pitfalls
 
 - El sitio y la raíz no tienen los mismos stems. La diferencia no se cierra moviendo los 118 archivos.
 - `site/scripts/copy-content.js` borra `site/src/content/dishes` al generar y no copia un directorio `china`. Un archivo puesto solo en el sitio no sobrevive a `pnpm --dir site run generate`. Para que un plato chino revisado dure, el mismo cambio tiene que abrir ese salto para ese único archivo.
-- `docs/PROJECT_GOALS.md` ya dice que China no está en el sitio. Actualiza esa frase solo cuando el plato revisado esté publicado, y nombra el archivo.
+- `docs/PROJECT_GOALS.md` nombra `site/src/content/dishes/china/principales/mapo-doufu.md` y dice que el resto de `dishes/china/` sigue sin publicar.
 - Un README dentro de la carpeta de cocina no es un plato.
 
 ## Verification
