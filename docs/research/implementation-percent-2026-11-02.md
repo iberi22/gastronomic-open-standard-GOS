@@ -1,8 +1,8 @@
 # Porcentaje de implementación
 
-Medido el 2026-11-02, con las 22 fichas nuevas de México y las 22 de Estados Unidos ya en el sitio.
+Medido el 2026-11-02, con las 22 fichas nuevas de México, las 22 de Estados Unidos y las 22 de Brasil ya en el sitio.
 
-**50.8%**
+**55.0%**
 
 El cálculo es el de `compute_progress` en `goal-report`: un ítem `done` vale 1, `in_progress` vale 0.5, `owner` y `todo` valen 0. El peso de un ítem es su `count` o 1. El porcentaje del componente es el promedio ponderado de sus ítems. El total es el promedio ponderado de los componentes. La cola de GitHub (F13) no entra: mezclarla sigue prohibido.
 
@@ -12,12 +12,12 @@ El cálculo es el de `compute_progress` en `goal-report`: un ítem `done` vale 1
 | China en el sitio (F2) | 15 | 2 de 69 tallos | 2.9 | 0.4 |
 | Cinco fuentes en un registro (F3) | 10 | 1 de 5, tomate FDC 170457 | 20 | 2 |
 | Promover `pending_review` (P3) | 10 | 0 de 510 | 0 | 0 |
-| Oleada 1, platos nuevos | 20 | 44 de 105 | 41.9 | 8.4 |
+| Oleada 1, platos nuevos | 20 | 66 de 105 | 62.9 | 12.6 |
 | Oleada 1, mezclas | 5 | 0 de 35 | 0 | 0 |
 
-105 platos = 7 lenguas × 15. 35 mezclas = 7 lenguas × 5. Los 44 platos son 22 de México y 22 de Estados Unidos. Ese conteo mete dentro de los 105 las fichas que pasan de 15 en esas dos lenguas. Con el mínimo de 15, México y Estados Unidos ya cumplen. Brasil, China, India, Bangladesh y Japón siguen en cero platos nuevos. China publicada sigue siendo solo mapo doufu y gongbao jiding. No hay mezclas nuevas.
+105 platos = 7 lenguas × 15. 35 mezclas = 7 lenguas × 5. Los 66 platos son 22 de México, 22 de Estados Unidos y 22 de Brasil. Ese conteo mete dentro de los 105 las fichas que pasan de 15 en esas tres lenguas. Con el mínimo de 15, México, Estados Unidos y Brasil ya cumplen. China, India, Bangladesh y Japón siguen en cero platos nuevos. China publicada sigue siendo solo mapo doufu y gongbao jiding. No hay mezclas nuevas.
 
-En `0e8838a7`, antes de Estados Unidos, el mismo cálculo daba 46.6%.
+En `6c44ae9a`, antes de Brasil, el mismo cálculo daba 50.8%. En `0e8838a7`, antes de Estados Unidos, daba 46.6%.
 
 P5 sigue `blocked`. F2, F3, F13 y P3 siguen `blocked`. F1 y F14 siguen `confirmed`.
 

@@ -2,7 +2,7 @@
 
 Date: 2026-11-02.
 
-These rows are sources. They are not dish cards. No file under `dishes/brazilian/` was added for this list. The 25 older stems stay untouched. P5 stays blocked.
+Each row now has one card. The Markdown is `dishes/brazilian/<stem>.md` and the same bytes are in `site/src/content/dishes/brazilian/`. The 25 older stems stay untouched. The new cards paraphrase the Portuguese article in Portuguese. They do not carry cook times, nutrition, photos, or `url: pending`. P5 stays blocked: four wave-1 languages and the mixtures are still unwritten.
 
 The sources are Portuguese-language articles on `pt.wikipedia.org`. Automatic translation is not a source. Each row is one dish article. None is a category page, a disambiguation page, or a site homepage.
 
