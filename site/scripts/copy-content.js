@@ -23,14 +23,17 @@ const baseUrl =
     ? '/gastronomic-open-standard-GOS'
     : '/'
 
-// One reviewed dish. The china directory stays skipped except this path.
-const REVIEWED_CHINA_DISH = 'china/principales/mapo-doufu.md'
+// Reviewed dishes. The china directory stays skipped except these paths.
+const REVIEWED_CHINA_DISHES = [
+  'china/principales/mapo-doufu.md',
+  'china/principales/gongbao-jiding.md',
+]
 
 function isReviewedChinaDishPath(relativePath, tree) {
   if (tree !== 'dishes') return false
   const norm = String(relativePath).replace(/\\/g, '/')
-  return (
-    norm === REVIEWED_CHINA_DISH || REVIEWED_CHINA_DISH.startsWith(`${norm}/`)
+  return REVIEWED_CHINA_DISHES.some(
+    (allowed) => norm === allowed || allowed.startsWith(`${norm}/`),
   )
 }
 

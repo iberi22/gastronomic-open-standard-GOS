@@ -7,7 +7,10 @@ import unittest
 import audit_gate
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-REVIEWED = "principales/mapo-doufu.md"
+REVIEWED = (
+    "principales/gongbao-jiding.md",
+    "principales/mapo-doufu.md",
+)
 SCRIPT = ROOT / "site" / "scripts" / "copy-content.js"
 
 
@@ -17,28 +20,34 @@ class ChinaGateTests(unittest.TestCase):
         self.addCleanup(tmp.cleanup)
         self.dishes = pathlib.Path(tmp.name) / "dishes"
         self.root_china = pathlib.Path(tmp.name) / "root-china"
-        source = (ROOT / "dishes" / "china" / REVIEWED).read_bytes()
-        dest = self.root_china / REVIEWED
-        dest.parent.mkdir(parents=True)
-        dest.write_bytes(source)
-        self.source = source
+        self.sources = {}
+        for relative in REVIEWED:
+            source = (ROOT / "dishes" / "china" / relative).read_bytes()
+            dest = self.root_china / relative
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(source)
+            self.sources[relative] = source
 
     def script(self):
         return SCRIPT.read_text(encoding="utf-8")
 
-    def publish(self, relative=REVIEWED, body=None):
+    def publish(self, relative=None, body=None):
+        if relative is None:
+            for item in REVIEWED:
+                self.publish(item)
+            return
         path = self.dishes / "china" / relative
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(self.source if body is None else body)
+        path.write_bytes(self.sources[relative] if body is None else body)
 
-    def test_shipped_copier_allows_the_one_reviewed_file(self):
+    def test_shipped_copier_allows_the_two_reviewed_files(self):
         self.publish()
         errors = audit_gate.china_publication_errors(
             self.dishes, self.script(), self.root_china
         )
         self.assertEqual(errors, [])
 
-    def test_second_china_dish_is_rejected(self):
+    def test_third_china_dish_is_rejected(self):
         self.publish()
         self.publish("sopas/other.md", b"---\nlicense: AGPL-3.0-or-later\n---\n# Other\n")
         errors = audit_gate.china_publication_errors(

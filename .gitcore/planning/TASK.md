@@ -32,10 +32,10 @@ Cada ID tiene una sola palabra terminal.
 | C8 | done | Avisos de arte alineados. `exercises/` no tiene imágenes. |
 | C9 | done | Cinco skills en `skills/`. `AGENTS.md` ya no apunta a `.skills/`. |
 | F1 | confirmed | 20 cocinas publicadas. Colombia tiene 109 platos. La cobertura mundial sigue siendo falsa. |
-| F2 | blocked | 118 Markdown en `dishes/china/`. En el sitio solo `site/src/content/dishes/china/principales/mapo-doufu.md`. Salida del resto: `skills/gos-publish-reviewed-dish`, un plato. Prohibido copiar el árbol. |
+| F2 | blocked | 118 Markdown en `dishes/china/`. En el sitio solo `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Salida del resto: `skills/gos-publish-reviewed-dish`, un plato. Prohibido copiar el árbol. |
 | F3 | blocked | Histograma de fuentes 617 con 0, 34 con 1, 3 con 2, 0 con 5 o más. Salida: `skills/gos-nutrition-source` con org, id y url del publicador. |
 | F13 | blocked | Cola sin mezclar. `skills/gos-review-queue`. No mezclar #414, #381, #380 ni Dependabot. |
-| F14 | confirmed | 68 stems de `dishes/china/` no están en el sitio. `mapo-doufu` sí, en `site/src/content/dishes/china/principales/mapo-doufu.md`. Mismo camino que F2, de a un plato. |
+| F14 | confirmed | 67 stems de `dishes/china/` no están en el sitio. `mapo-doufu` y `gongbao-jiding` sí, en `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de `dishes/china/` sigue sin publicar. Mismo camino que F2, de a un plato. |
 | P1 | done | Commit local del pase de honestidad, de `skills/` y de esta lista. Sin push y sin pull request. |
 | P2 | done | `develop` incorpora `origin/main`. Queda 0 atrás. Sin force-push y sin pull request. |
 | P3 | blocked | 510 stubs de `pending_review` no se promueven sin fuente real. |
