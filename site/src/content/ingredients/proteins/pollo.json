@@ -45,18 +45,23 @@
   },
   "name": "Pollo (Pechuga sin piel)",
   "nutrition_per_100g": {
-    "calories": 110,
+    "calories": 120,
     "carbs_g": 0,
-    "fat_g": 1.2,
+    "fat_g": 2.62,
     "fiber_g": 0,
-    "protein_g": 23
+    "protein_g": 22.5
   },
   "portions": {
     "default_g": 150
   },
   "scientific_name": "Gallus gallus domesticus",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 171077",
+      "url": "https://fdc.nal.usda.gov/food-details/171077/nutrients"
+    }
   ],
   "tags": [
     "proteina_magra",
