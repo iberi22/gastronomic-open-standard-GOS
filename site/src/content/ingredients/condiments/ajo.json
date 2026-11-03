@@ -12,6 +12,7 @@
       "allium"
     ]
   },
+  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su principal bioactivo, la **alicina**, es un compuesto azufrado inestable que se forma solo cuando el ajo se tritura o mastica, degradándose rápidamente con el calor excesivo. Por eso, para beneficios de salud, se recomienda machacarlo y dejarlo reposar 10 minutos antes de cocinar (o comerlo crudo).\n\n## Culinary Uses\n- **Adobos:** Base para marinar carnes y pescados.\n- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).\n- **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.\n\n## Health Benefits\n### Salud Cardiovascular\nEstudios clínicos han demostrado que el consumo regular de ajo puede reducir la presión arterial sistólica y diastólica en personas hipertensas, con efectos comparables a medicamentos estándar como el atenolol en algunos ensayos.\n\n### Propiedades Antimicrobianas\nLa alicina tiene actividad antibacteriana, antiviral (incluyendo cepas de influenza) y antifúngica demostrada in vitro.",
   "group": "Condiment",
   "health_registry": [
     {
@@ -58,10 +59,10 @@
   "name": "Ajo",
   "nutrition_per_100g": {
     "calories": 149,
-    "carbs_g": 33,
+    "carbs_g": 33.06,
     "fat_g": 0.5,
     "fiber_g": 2.1,
-    "protein_g": 6.4,
+    "protein_g": 6.36,
     "sugar_g": 1
   },
   "portions": {
@@ -70,12 +71,16 @@
   "scientific_name": "Allium sativum",
   "sources": [
     "USDA FoodData Central",
-    "NIH National Center for Complementary and Integrative Health"
+    "NIH National Center for Complementary and Integrative Health",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 169230",
+      "url": "https://fdc.nal.usda.gov/food-details/169230/nutrients"
+    }
   ],
   "tags": [
     "esencial",
     "condimento",
     "medicinal"
-  ],
-  "body_md": "# Scientific Analysis & Culinary Use\n\n## Description\nEl ajo (*Allium sativum*) es un bulbo medicinal y culinario fundamental. Su principal bioactivo, la **alicina**, es un compuesto azufrado inestable que se forma solo cuando el ajo se tritura o mastica, degradándose rápidamente con el calor excesivo. Por eso, para beneficios de salud, se recomienda machacarlo y dejarlo reposar 10 minutos antes de cocinar (o comerlo crudo).\n\n## Culinary Uses\n- **Adobos:** Base para marinar carnes y pescados.\n- **Arroces:** Se sofrie en el aceite antes de añadir el arroz (arroz de ajo).\n- **Remedios:** Usado tradicionalmente para la presión alta y gripe, a menudo macerado en limón.\n\n## Health Benefits\n### Salud Cardiovascular\nEstudios clínicos han demostrado que el consumo regular de ajo puede reducir la presión arterial sistólica y diastólica en personas hipertensas, con efectos comparables a medicamentos estándar como el atenolol en algunos ensayos.\n\n### Propiedades Antimicrobianas\nLa alicina tiene actividad antibacteriana, antiviral (incluyendo cepas de influenza) y antifúngica demostrada in vitro."
+  ]
 }
