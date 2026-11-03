@@ -55,18 +55,23 @@
   "name": "Tomate Rojo (Maduro)",
   "nutrition_per_100g": {
     "calories": 18,
-    "carbs_g": 3.9,
+    "carbs_g": 3.89,
     "fat_g": 0.2,
     "fiber_g": 1.2,
-    "protein_g": 0.9,
-    "sugar_g": 2.6
+    "protein_g": 0.88,
+    "sugar_g": 2.63
   },
   "portions": {
     "default_g": 120
   },
   "scientific_name": "Solanum lycopersicum",
   "sources": [
-    "USDA FoodData Central"
+    "USDA FoodData Central",
+    {
+      "org": "USDA FoodData Central",
+      "id": "FDC 170457",
+      "url": "https://fdc.nal.usda.gov/food-details/170457/nutrients"
+    }
   ],
   "tags": [
     "guiso",
