@@ -8,7 +8,7 @@
 
 GOS es un grafo abierto de gastronomía. El repositorio público es la base: recetas, ingredientes, vitaminas, sustancias, dietas y condiciones. La licencia del proyecto es AGPL-3.0-or-later desde 2026-10-15.
 
-No es una base mundial cerrada. Las cifras vivas salen de `python3 docs/corpus-stats.py` y quedan en `docs/stats.json`. El titular de `README.md` las repite. A 2026-11-02 el sitio publica 20 cocinas, con peso en Colombia. El único archivo de `dishes/china/` en el sitio es `site/src/content/dishes/china/principales/mapo-doufu.md`. El resto de ese árbol sigue sin publicar.
+No es una base mundial cerrada. Las cifras vivas salen de `python3 docs/corpus-stats.py` y quedan en `docs/stats.json`. El titular de `README.md` las repite. A 2026-11-02 el sitio publica 20 cocinas, con peso en Colombia. Los archivos de `dishes/china/` en el sitio son `site/src/content/dishes/china/principales/mapo-doufu.md` y `site/src/content/dishes/china/principales/gongbao-jiding.md`. El resto de ese árbol sigue sin publicar.
 
 | Field | Value |
 |-------|--------|
@@ -37,7 +37,7 @@ gastronomic-open-standard-GOS/
 │   │   └── ARCHITECTURE.md
 │   ├── corpus-stats.py
 │   └── CONTENT_EXPANSION_STRATEGY.md
-├── dishes/                         # espejo raíz; de dishes/china/ entra solo principales/mapo-doufu.md
+├── dishes/                         # espejo raíz; de dishes/china/ entran solo principales/mapo-doufu.md y principales/gongbao-jiding.md
 ├── ingredients/
 ├── tips/
 ├── exercises/                      # 10 JSON, 1324 registros MIT, sin imágenes
@@ -46,20 +46,20 @@ gastronomic-open-standard-GOS/
 │   ├── src/content/                # corpus que el sitio lee
 │   │   ├── dishes/
 │   │   └── ingredients/
-│   └── scripts/copy-content.js     # borra site dishes/tips y copia la raíz; salta china salvo un plato
+│   └── scripts/copy-content.js     # borra site dishes/tips y copia la raíz; salta china salvo dos platos revisados
 ├── packages/
 ├── worker/                         # gateway en el origen canónico, sin base propia
 └── scripts/
 ```
 
-`site/src/content.config.ts` carga ingredientes con `**/*.json` y excluye `pending_review`. Los platos del sitio salen de `site/src/content/dishes`. `pnpm --dir site run generate` ejecuta `site/scripts/copy-content.js`, que primero borra `site/src/content/dishes` y luego copia `dishes/`. Un directorio cuyo nombre es `china` no se copia, salvo `dishes/china/principales/mapo-doufu.md`.
+`site/src/content.config.ts` carga ingredientes con `**/*.json` y excluye `pending_review`. Los platos del sitio salen de `site/src/content/dishes`. `pnpm --dir site run generate` ejecuta `site/scripts/copy-content.js`, que primero borra `site/src/content/dishes` y luego copia `dishes/`. Un directorio cuyo nombre es `china` no se copia, salvo `dishes/china/principales/mapo-doufu.md` y `dishes/china/principales/gongbao-jiding.md`.
 
 ## 3. Core components
 
 | Component | Path | Purpose |
 |-----------|------|---------|
 | Corpus publicado | `site/src/content/` | Colecciones que Astro carga |
-| Espejo de platos | `dishes/` | Origen del copiado. Entra solo `dishes/china/principales/mapo-doufu.md`; el resto de China sigue sin publicar |
+| Espejo de platos | `dishes/` | Origen del copiado. Entran solo `dishes/china/principales/mapo-doufu.md` y `dishes/china/principales/gongbao-jiding.md`; el resto de `dishes/china/` sigue sin publicar |
 | Ingredientes | `site/src/content/ingredients/` | JSON publicado y stubs en `pending_review/` |
 | Estadísticas | `docs/corpus-stats.py` | Recuento que `docs/stats.json` debe igualar |
 | Compuerta | `skills/gos-audit-gate/scripts/audit_gate.py` | Falla si una corrección se revierte |

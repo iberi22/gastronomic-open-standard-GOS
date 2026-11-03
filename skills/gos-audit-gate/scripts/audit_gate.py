@@ -14,8 +14,14 @@ import sys
 REPO = pathlib.Path(__file__).resolve().parents[3]
 SITE = REPO / "site" / "src" / "content"
 ING = SITE / "ingredients"
-REVIEWED_CHINA_REL = "principales/mapo-doufu.md"
-REVIEWED_CHINA_FROM_DISHES = "china/principales/mapo-doufu.md"
+REVIEWED_CHINA_REL = (
+    "principales/gongbao-jiding.md",
+    "principales/mapo-doufu.md",
+)
+REVIEWED_CHINA_FROM_DISHES = (
+    "china/principales/gongbao-jiding.md",
+    "china/principales/mapo-doufu.md",
+)
 CHINA_SKIP = "toLowerCase() === 'china'"
 
 
@@ -336,28 +342,33 @@ def req001_errors():
 
 
 def china_publication_errors(site_dishes, copy_script, root_china):
-    """Allow one reviewed China dish and reject every other China publication.
+    """Allow two reviewed China dishes and reject every other China publication.
 
-    The general china skip must stay in copy-content.js. A second dish
-    Markdown, a chinese/ directory, a cuisine README, or a body that is not
-    the root file are regressions.
+    The general china skip must stay in copy-content.js. A third dish
+    Markdown, a chinese/ directory, a missing file, a cuisine README, or a
+    body that is not the root twin are regressions.
     """
     errors = []
     if copy_script.count(CHINA_SKIP) != 3:
         errors.append("copy-content.js no longer skips the china directory")
-    if REVIEWED_CHINA_FROM_DISHES not in copy_script:
-        errors.append("copy-content.js is missing the single reviewed China dish path")
+    for rel in REVIEWED_CHINA_FROM_DISHES:
+        if rel not in copy_script:
+            errors.append("copy-content.js is missing a reviewed China dish path: " + rel)
 
     chinese = site_dishes / "chinese"
     if chinese.exists():
         errors.append("chinese cuisine directory appeared on the published site")
 
     china = site_dishes / "china"
-    site_file = china / REVIEWED_CHINA_REL
-    if not china.is_dir() or not site_file.is_file():
+    missing = [
+        rel
+        for rel in REVIEWED_CHINA_REL
+        if not china.is_dir() or not (china / rel).is_file()
+    ]
+    if missing:
         errors.append(
-            "reviewed China dish missing: site/src/content/dishes/china/"
-            + REVIEWED_CHINA_REL
+            "reviewed China dish missing: "
+            + ", ".join("site/src/content/dishes/china/" + rel for rel in missing)
         )
         return errors
 
@@ -366,10 +377,11 @@ def china_publication_errors(site_dishes, copy_script, root_china):
         for path in china.rglob("*.md")
         if path.is_file()
     )
-    if md != [REVIEWED_CHINA_REL]:
+    expected = sorted(REVIEWED_CHINA_REL)
+    if md != expected:
         errors.append(
             "China site dishes must be exactly "
-            f"{REVIEWED_CHINA_REL}; found {md}"
+            f"{expected}; found {md}"
         )
     readmes = [
         path.name
@@ -379,12 +391,18 @@ def china_publication_errors(site_dishes, copy_script, root_china):
     if readmes:
         errors.append("China cuisine README is not a reviewed dish")
 
-    root_file = root_china / REVIEWED_CHINA_REL
-    if root_file.is_file() and site_file.read_bytes() != root_file.read_bytes():
-        errors.append("reviewed China dish bytes differ from dishes/china source")
-    text = site_file.read_text(encoding="utf-8")
-    if not re.search(r"(?m)^license:\s*AGPL-3.0-or-later\s*$", text):
-        errors.append("reviewed China dish front matter is not AGPL-3.0-or-later")
+    for rel in REVIEWED_CHINA_REL:
+        site_file = china / rel
+        root_file = root_china / rel
+        if root_file.is_file() and site_file.read_bytes() != root_file.read_bytes():
+            errors.append(
+                "reviewed China dish bytes differ from dishes/china source: " + rel
+            )
+        text = site_file.read_text(encoding="utf-8")
+        if not re.search(r"(?m)^license:\s*AGPL-3.0-or-later\s*$", text):
+            errors.append(
+                "reviewed China dish front matter is not AGPL-3.0-or-later: " + rel
+            )
     return errors
 
 
@@ -541,7 +559,9 @@ def main():
     china_md = len(list((REPO / "dishes" / "china").rglob("*.md")))
     blocked.append(f"F1 world coverage is false; published cuisine folders={len(cuisines)}")
     blocked.append(
-        f"F2 one reviewed dish is on the site; the other root dishes/china markdown files stay off ({china_md})"
+        "F2 two reviewed dishes are on the site "
+        "(china/principales/mapo-doufu.md, china/principales/gongbao-jiding.md); "
+        f"the other root dishes/china markdown files stay off ({china_md})"
     )
     blocked.append(f"F3 sources>=5 is {ge5_sources}; languages>=5 is {ge5_langs}")
     blocked.append("F13 review queue is not merged by this gate")
